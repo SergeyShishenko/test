@@ -1,0 +1,318 @@
+<?php
+// переменные на странице 
+// $item_bloki_dvernye_Class = 'active';
+// $item_mebel_korpusnaya_Class = '';
+// $item_paneli_stenovye_Class = '';
+// $item_karnizy_i_frizy_Class = '';
+// $item_plintusy_i_moldingi_Class = '';
+// $item_ekrany_Class = '';
+// $item_pilyastry_Class = '';
+// $item_potolki_Class = '';
+?>
+<?php echo'
+<article itemscope="" itemtype="http://schema.org/WebPage">   
+<div class="container bs-docs-container" >
+    <div class="row">                
+         <!-- левое боковое меню начало -->
+         <div class="col-md-2">
+            <div class="list-group  bs-sidebar hidden-print affix vertical-menu nav bs-sidenav " id="navsub">
+                <ul class="list-group">
+                    <!-- menu -->
+                    <li class="menu">                                
+                        <a href="izdeliya-bloki-dvernye.php" class="list-group-item '.$item_bloki_dvernye_Class.'">БЛОКИ ДВЕРНЫЕ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <ul class="list-group sub_menu">
+                            <li class="menu2">
+                                <a  class="list-group-item sub"  href="izdeliya-bloki-dvernye.php#dveri-konstrukcii">КОНСТРУКЦИЯ ДВЕРНЫХ БЛОКОВ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#polotno-bloka-dvernogo-gluhoe-pco" >Полотно блока дверного глухое ПЦО</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#polotno-bloka-dvernogo-so-steklom-pco" >Полотно блока дверного со стеклом ПЦО</a>
+                                    </li>  
+                                    <li><a class="list-group-item sub" href="#polotno-bloka-dvernogo-so-steklomfacet-pco" >Полотно блока дверного со стеклом(фацет) ПЦО</a>
+                                    </li> 
+                                    <li><a class="list-group-item sub" href="#polotno-bloka-dvernogo-s-zerkalom-pco" >Полотно блока дверного с зеркалом ПЦО</a>
+                                    </li> 
+                                    <li><a class="list-group-item sub" href="#polotno-bloka-dvernogo-s-zerkalomfacet-pco" >Полотно блока дверного с зеркалом(фацет) ПЦО</a>
+                                    </li>                                     
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#polotna">ДВЕРНЫЕ БЛОКИ С РАСПАШНЫМИ ПОЛОТНАМИ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#polotna-bez-falca">Полотна без фальца</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#polotna-s-falcem" >Полотна с фальцем</a>
+                                    </li>                                         
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna" >ДВЕРНЫЕ БЛОКИ С РАЗДВИЖНЫМИ ПОЛОТНАМИ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna-po-stene" >Полотна без складывания — раздвижение по стене</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna-v-penal">Полотна без складывания — раздвижение в пенал</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna-v-proeme">Полотна без складывания — раздвижение в проеме</a>
+                                    </li>                                           
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#mayatnikovye-polotna" >ДВЕРНЫЕ БЛОКИ С МАЯТНИКОВЫМИ (БАРНЫМИ) ПОЛОТНАМИ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#" >...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#" >...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#" >...</a>
+                                    </li>                                           
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#portaly">ДВЕРНЫЕ БЛОКИ БЕЗ ПОЛОТНН (ПОРТАЛЫ)</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#" >...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                        
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#sborochnye-shemy-polotna">СБОРОЧНО МОНТАЖНЫЕ СХЕМЫ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                       
+                                </ul>
+                            </li>                                    
+                        </ul>
+                    </li>
+                    <!-- menu -->
+                    <li class="menu">
+                        <a href="izdeliya-mebel-korpusnaya.php" class="list-group-item '.$item_mebel_korpusnaya_Class.'">МЕБЕЛЬ КОРПУСНАЯ</a>
+                        <ul class="list-group sub_menu">
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                      
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady">ШКАФЫ С РАСПАШНЫМИ ФАСАДАМИ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady-nakladnye" >Накладные</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady-vkladnye">Вкладные</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady-otkidnye">Откидные (секретерные)</a>
+                                    </li>                                        
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady">ШКАФЫ С РАЗДВИЖНЫМИ ФАСАДАМИ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady-kupe">Фасады купе</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady-komplanarnye">Фасады компланарные</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                           
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-stellazhi">ШКАФЫ БЕЗ ФАСАДОВ (СТЕЛЛАЖИ)</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                         
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-stoly">СТОЛЫ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                         
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#sborochnye-shemy-mebel-korpusnaya">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                         
+                                </ul>
+                            </li>                                   
+                        </ul>
+                    </li>
+                    <!-- menu -->
+                    <li class="menu">
+                        <a href="izdeliya-paneli-stenovye.php" class="list-group-item '.$item_paneli_stenovye_Class.'">ПАНЕЛИ СТЕНОВЫЕ</a>
+                        <ul class="list-group sub_menu">
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                          
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#sborochnye-shemy-paneli-stenovye">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                       
+                                </ul>
+                            </li>                    
+                        </ul>
+                    </li>
+                    <!-- menu -->
+                    <li class="menu">
+                        <a href="izdeliya-karnizy-i-frizy.php" class="list-group-item '.$item_karnizy_i_frizy_Class.'">КАРНИЗЫ И ФРИЗЫ</a>
+                        <ul class="list-group sub_menu">
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-karnizy-i-frizy.php#izdeliya-karnizy-i-frizy-konstrukcii">КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                         
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-karnizy-i-frizy.php#sborochnye-shemy-karnizy-i-frizy">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                   
+                                </ul>
+                            </li>     
+                        </ul>
+                    </li>
+                    <!-- menu -->
+                    <li class="menu">
+                        <a href="izdeliya-plintusy-i-moldingi.php" class="list-group-item '.$item_plintusy_i_moldingi_Class.'">ПЛИНТУСЫ И МОЛДИНГИ</a>
+                        <ul class="list-group sub_menu">
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-plintusy-i-moldingi.php#plintusy-i-moldingi-konstrukcii">КОНСТРУКЦИИ ПЛИНТУСОВ И МОЛДИНГОВ ТИПОВЫХ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                        
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-plintusy-i-moldingi.php#sborochnye-shemy-plintusy-i-moldingi">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                      
+                                </ul>
+                            </li>                                
+                        </ul>
+                    </li>
+                    <!-- menu -->
+                    <li class="menu">
+                        <a href="izdeliya-ekrany-radiatorov.php" class="list-group-item  '.$item_ekrany_Class.'">ЭКРАНЫ РАДИАТОРОВ</a>
+                        <ul class="list-group sub_menu">
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-ekrany-radiatorov.php#ekrany-radiatorov-konstrukcii">КОНСТРУКЦИИ ЭКРАНОВ РАДИАТОРОВ ТИПОВЫХ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                       
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-ekrany-radiatorov.php#sborochnye-shemy-ekrany-radiatorov">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                      
+                                </ul>
+                            </li>                                
+                        </ul>
+                    </li>
+                    <!-- menu -->
+                    <li class="menu">
+                        <a href="izdeliya-pilyastry.php" class="list-group-item '.$item_pilyastry_Class.'">ПИЛЯСТРЫ</a>
+                        <ul class="list-group sub_menu">
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-pilyastry.php#pilyastry-konstrukcii">КОНСТРУКЦИИ ПИЛЯСТР ТИПОВЫХ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                           
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-pilyastry.php#sborochnye-shemy-pilyastry">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                    
+                                </ul>
+                            </li>                                   
+                        </ul>
+                    </li>
+                    <!-- menu -->
+                    <li class="menu">
+                        <a href="izdeliya-potolki.php" class="list-group-item  '.$item_potolki_Class.'">ПОТОЛКИ</a>
+                        <ul class="list-group sub_menu">
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#potolki-kessonirovannye">ПОТОЛКИ КЕССОНИРОВАННЫЕ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                            
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#sborochnye-shemy-potolki">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub"href="#"> ...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                           
+                                </ul>
+                            </li>                                   
+                        </ul>
+                    </li>                           
+                </ul>
+            </div>
+        </div>
+        <!-- левое боковое меню конец -->
+';?>
+              
