@@ -1976,7 +1976,7 @@
                                                                                 <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                                 <TR>
                                                                                     <TD class="mapsite">
-                                                                                        <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
+                                                                                        <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>arhiv-profiley</span></p>
                                                                                     </TD>                                                                         
                                                                                 </TR>
                                                                                 <TR><TD></TD></TR> <!--end LEVEL4-->          
