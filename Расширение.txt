@@ -1,1 +1,2 @@
 Visual Studio Team Services Extension for Visual Studio Code
+https://www.visualstudio.com/ru/learn/set-up-a-git-repository/
