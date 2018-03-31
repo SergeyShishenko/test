@@ -24,15 +24,14 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div>
                         <h2 id="list-titulnyy-dp">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000301_01_001 лист титульный ДП</h4>
-                            <p>Д - 1 или 2 фрезеровки по Длине</p>
-                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                            
+                                                       
                             <p> <a>
-                                <img src="./dist/images/mdf-nakladka-050-dsh.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001 лист титульный ДП.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="МДФ_НАКЛАДКА_№050/ДШ"                               
-                                 alt="МДФ_НАКЛАДКА_№050/ДШ"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№050_ДШ.dwg"
+                                 data-content="5000301_01_001 лист титульный ДП"                               
+                                 alt="5000301_01_001 лист титульный ДП"
+                                 data-xls="./dist/files/5000301-01-001 лист титульный ДП.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -41,15 +40,14 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
 
                         <h2 id="pasport-izdeliy-zakaza-dp">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>паспорт изделий заказа ДП</h4>
-                            <p>Д - 1 или 2 фрезеровки по Длине</p>
-                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                            
+                                                   
                             <p> <a>
-                                <img src="./dist/images/mdf-nakladka-050-dsh.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001 паспорт изделий заказа ДП.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="МДФ_НАКЛАДКА_№050/ДШ"                               
-                                 alt="МДФ_НАКЛАДКА_№050/ДШ"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№050_ДШ.dwg"
+                                 data-content="паспорт изделий заказа ДП"                               
+                                 alt="паспорт изделий заказа ДП"
+                                 data-xls="./dist/files/5000301-01-001 лист титульный ДП.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -57,15 +55,14 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
 
                         <h2 id="reestr-razdelov-dp">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>реестр разделов ДП</h4>
-                            <p>Д - 1 или 2 фрезеровки по Длине</p>
-                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                            
+                                                     
                             <p> <a>
-                                <img src="./dist/images/mdf-nakladka-050-dsh.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001 реестр разделов ДП.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="МДФ_НАКЛАДКА_№050/ДШ"                               
-                                 alt="МДФ_НАКЛАДКА_№050/ДШ"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№050_ДШ.dwg"
+                                 data-content="реестр разделов ДП"                               
+                                 alt="реестр разделов ДП"
+                                 data-xls="./dist/files/5000301-01-001 лист титульный ДП.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -83,15 +80,14 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div>                      
                         <h2 id="list-titulnyy-kd">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000301_02_000 лист титульный КД<</h4>
-                            <p>Д - 1 или 2 фрезеровки по Длине</p>
-                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                            
+                                                  
                             <p> <a>
-                                <img src="./dist/images/mdf-nakladka-050-dsh.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-02-000 лист титульный КД.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="МДФ_НАКЛАДКА_№050/ДШ"                               
-                                 alt="МДФ_НАКЛАДКА_№050/ДШ"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№050_ДШ.dwg"
+                                 data-content="5000301_02_000 лист титульный КД"                               
+                                 alt="5000301_02_000 лист титульный КД"
+                                 data-xls="./dist/files/5000301-02-000 лист титульный КД.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -100,15 +96,14 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
 
                         <h2 id="pasport-izdeliy-zakaza-kd">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>паспорт изделий заказа КД</h4>
-                            <p>Д - 1 или 2 фрезеровки по Длине</p>
-                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                            
+                                                   
                             <p> <a>
-                                <img src="./dist/images/mdf-nakladka-050-dsh.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001 паспорт изделий заказа ДП.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="МДФ_НАКЛАДКА_№050/ДШ"                               
-                                 alt="МДФ_НАКЛАДКА_№050/ДШ"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№050_ДШ.dwg"
+                                 data-content="5000301-01-001 паспорт изделий заказа ДП"                               
+                                 alt="5000301-01-001 паспорт изделий заказа ДП"
+                                 data-xls="./dist/files/5000301-02-000 лист титульный КД.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -116,15 +111,14 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
 
                         <h2 id="reestr-razdelov-kd">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>реестр разделов КД</h4>
-                            <p>Д - 1 или 2 фрезеровки по Длине</p>
-                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                            
+                                                     
                             <p> <a>
-                                <img src="./dist/images/mdf-nakladka-050-dsh.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001 реестр разделов ДП.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="МДФ_НАКЛАДКА_№050/ДШ"                               
-                                 alt="МДФ_НАКЛАДКА_№050/ДШ"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№050_ДШ.dwg"
+                                 data-content="5000301-01-001 реестр разделов ДП"                               
+                                 alt="5000301-01-001 реестр разделов ДП"
+                                 data-xls="./dist/files/5000301-02-000 лист титульный КД.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>

@@ -1,21 +1,4 @@
-// $(".zbz-input-clearable").click(function () {
-    // $(".navbar-link").hide();
-    // $(this).css('width', '50%');
-    // $(".navbar-toggle-search").show();
-  
-    // $(".search_result").css('margin-right', '-230px');
-    // margin-right: -240px;
-    //#bs-example-navbar-collapse-1 > form > button    margin-bottom: 70px;
-// });
 
-// $(".search_result").hide();
-
-// $(".navbar-toggle-search").click(function () {
-//     // $(".navbar-link").show();
-//     $(".navbar-toggle-search").hide();
-  
-//     $(".search_result").hide();
-// });
 window.onresize = function(){ getPositionSearch();nvfn(); };
 
 function getPositionSearch(){
@@ -44,19 +27,7 @@ function getClientWidth(){
   !window.opera?document.documentElement.clientHeight:document.body.clientHeight;
   }
   
-//   $( document ).ready(function() {
-//     $(function getPositionSearch(){
-//  var w = getClientWidth();// текущая ширина экрана                
-// //  var c= $('div.container').css('width');
-//  var c= $('#main-page').css('width');
- 
-//   c = c.replace("px", "")-30; //удалить латинские символы        
-//  c=(w-c)/2+5;
- 
-// //   $('.navbar-form.navbar-right:last-child').css({'right': c});
-// });
-//      getClientWidth();
-//  });
+
  $( document ).ready(function() {
     $(function getPositionSearch(){
         var w = getClientWidth();// текущая ширина экрана                
@@ -221,30 +192,40 @@ $(function() {
 
 
 // кнопки при наведении на изображение
-//$('#navsub  li.menu2 ul').hide();
- //   $('#navsub  li.menu ul').hide();
-
-$(function () {
-    // $('#navsub  li.menu2 ul').hide();
-    // $('#navsub  li.menu ul').hide();
+$(function () {   
     $('.cont').hover(
         function () {
             $(this).find(".overlay .btn").remove();
              // получить кнопку, которая его открыло
             var button = $(this).find("img"); 
-            // извлечь информацию из атрибута data-content
-            // var content = button.data('content'); 
-            // var content = button.attr('alt'); 
-            // alert(content)
-            // var im = button.data('im'); 
+            // извлечь информацию из атрибута data-content           
             var im = button.attr('src');
             var dwg = button.data('dwg');
-         
+            var xls = button.data('xls');
+            // console.log(xls);
+            // var pos = xls.lastIndexOf("/") + 1;
+            // console.log(pos);
+            //    var loge = xls.slice(xls.lastIndexOf("/") + 1);
+            //    console.log(loge);
+            // alert( log);
             
-            $(this).find('.overlay').append('<a href="'+im+'"  type="button" class="btn btn-info im-download"download="'+im+'"  id="im-download1"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>');
-            if (dwg !== "non")
+            $(this).find('.overlay').append(
+                // '<a href="'+im+'"  type="button" class="btn btn-info im-download"download="'+im+'"  id="im-download1"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
+                '<a href="'+im+'"  type="button" class="btn btn-info im-download" download="'+im.slice(im.lastIndexOf("/") + 1)+'"  ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
+            );
+            if (dwg !== "non" && typeof(dwg) != "undefined" && dwg !== "")
             {
-                 $(this).find('.overlay').append('<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'); 
+                 $(this).find('.overlay').append(
+                    //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+                     '<a href="'+dwg+'"  type="button" class="btn btn-info im-download" download="'+dwg.slice(dwg.lastIndexOf("/") + 1)+'" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+                    ); 
+            }
+            if (xls !== "non" && typeof(xls) != "undefined" && xls !== "")
+            {
+                 $(this).find('.overlay').append(
+                    //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+                     '<a href="'+xls+'"  type="button" class="btn btn-info im-download" download="'+xls.slice(xls.lastIndexOf("/") + 1)+'" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
+                    ); 
             }
           
 
@@ -252,9 +233,7 @@ $(function () {
         },
         function () {
             $(this).find(".overlay .btn").fadeOut(600);
-            
-
-            // $(".btn").find(".btn");
+           
             
         }
     );
