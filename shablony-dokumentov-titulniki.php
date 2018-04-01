@@ -79,7 +79,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                           <h1 itemprop="name" id="listy-titulnye-konstruktorskoy-dokumentacii">Листы титульные конструкторской документации</h1>
                         </div>                      
                         <h2 id="list-titulnyy-kd">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>5000301_02_000 лист титульный КД<</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000301_02_000 лист титульный КД</h4>
                                                   
                             <p> <a>
                                 <img src="./dist/images/5000301-02-000 лист титульный КД.png" class="center-block img-rounded img-thumbnail"
@@ -121,6 +121,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-xls="./dist/files/5000301-02-000 лист титульный КД.xlsx"
                                    ></a>
                              </p>
+                             <!-- <div id='hovertitle'></div> -->
                              <div class="overlay"></div>
                         </div>
                       
