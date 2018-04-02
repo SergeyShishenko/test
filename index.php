@@ -2592,19 +2592,19 @@
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" >                                                                            
-                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki#list-titulnyy-dp">5000301_01_001 лист титульный ДП<span> <br>list-titulnyy-dp</span></p>
+                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#list-titulnyy-dp">5000301_01_001 лист титульный ДП<span> <br>list-titulnyy-dp</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" >                                                                            
-                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki#pasport-izdeliy-zakaza-dp">паспорт изделий заказа ДП<span> <br>pasport-izdeliy-zakaza-dp</span></p>
+                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#pasport-izdeliy-zakaza-dp">паспорт изделий заказа ДП<span> <br>pasport-izdeliy-zakaza-dp</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" >                                                                            
-                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki#reestr-razdelov-dp">реестр разделов ДП<span> <br>reestr-razdelov-dp</span></p>
+                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#reestr-razdelov-dp">реестр разделов ДП<span> <br>reestr-razdelov-dp</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2615,26 +2615,26 @@
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ" class="hover mapsite" id="footer107">
-                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating108">ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОР<wbr>СКОЙ ДОКУМЕНТА<wbr>ЦИИ<span> <br>-katalog-lepniny</span></p>
-                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">ЛИСТЫ ТИТУЛЬНЫЕ КД</p> 
+                                                                    <p data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating108">ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОР<wbr>СКОЙ ДОКУМЕНТА<wbr>ЦИИ<span> <br>-katalog-lepniny</span></p>
+                                                                    <p data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">ЛИСТЫ ТИТУЛЬНЫЕ КД</p> 
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" >                                                                            
-                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki#list-titulnyy-kd">5000301_02_000 лист титульный КД<span> <br>list-titulnyy-kd</span></p>
+                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd">5000301_02_000 лист титульный КД<span> <br>list-titulnyy-kd</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" >                                                                            
-                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki#pasport-izdeliy-zakaza-kd">паспорт изделий заказа КД<span> <br>pasport-izdeliy-zakaza-kd</span></p>
+                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#pasport-izdeliy-zakaza-kd">паспорт изделий заказа КД<span> <br>pasport-izdeliy-zakaza-kd</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" >                                                                            
-                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki#reestr-razdelov-kd">реестр разделов КД<span> <br>reestr-razdelov-kd</span></p>
+                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#reestr-razdelov-kd">реестр разделов КД<span> <br>reestr-razdelov-kd</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 

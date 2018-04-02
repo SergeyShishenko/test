@@ -1,3 +1,15 @@
 Visual Studio Team Services Extension for Visual Studio Code
 https://www.visualstudio.com/ru/learn/set-up-a-git-repository/
 https://git-scm.com/book/ru/v1/Введение-Первоначальная-настройка-Git
+
+Для получения обновлений с удаленного репозитория воспользуйтесь командой:
+
+git pull
+
+Следующей командой вы занесете все изменения, которые были сделаны в локальном репозитории на Github.
+
+git push -u github master
+
+Ключ -u используется для того, чтобы установить связь между удаленным репозиторием github и вашей веткой master. Все дальнейшие изменения вы можете переносить на удаленный репозиторий упрощенной командой.
+
+git push

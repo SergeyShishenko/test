@@ -1,21 +1,4 @@
-// $(".zbz-input-clearable").click(function () {
-    // $(".navbar-link").hide();
-    // $(this).css('width', '50%');
-    // $(".navbar-toggle-search").show();
-  
-    // $(".search_result").css('margin-right', '-230px');
-    // margin-right: -240px;
-    //#bs-example-navbar-collapse-1 > form > button    margin-bottom: 70px;
-// });
 
-// $(".search_result").hide();
-
-// $(".navbar-toggle-search").click(function () {
-//     // $(".navbar-link").show();
-//     $(".navbar-toggle-search").hide();
-  
-//     $(".search_result").hide();
-// });
 window.onresize = function(){ getPositionSearch();nvfn(); };
 
 function getPositionSearch(){
@@ -44,19 +27,7 @@ function getClientWidth(){
   !window.opera?document.documentElement.clientHeight:document.body.clientHeight;
   }
   
-//   $( document ).ready(function() {
-//     $(function getPositionSearch(){
-//  var w = getClientWidth();// текущая ширина экрана                
-// //  var c= $('div.container').css('width');
-//  var c= $('#main-page').css('width');
- 
-//   c = c.replace("px", "")-30; //удалить латинские символы        
-//  c=(w-c)/2+5;
- 
-// //   $('.navbar-form.navbar-right:last-child').css({'right': c});
-// });
-//      getClientWidth();
-//  });
+
  $( document ).ready(function() {
     $(function getPositionSearch(){
         var w = getClientWidth();// текущая ширина экрана                
@@ -221,40 +192,53 @@ $(function() {
 
 
 // кнопки при наведении на изображение
-//$('#navsub  li.menu2 ul').hide();
- //   $('#navsub  li.menu ul').hide();
-
-$(function () {
-    // $('#navsub  li.menu2 ul').hide();
-    // $('#navsub  li.menu ul').hide();
+$(function () {   
     $('.cont').hover(
         function () {
             $(this).find(".overlay .btn").remove();
              // получить кнопку, которая его открыло
             var button = $(this).find("img"); 
-            // извлечь информацию из атрибута data-content
-            // var content = button.data('content'); 
-            // var content = button.attr('alt'); 
-            // alert(content)
-            // var im = button.data('im'); 
+            // извлечь информацию из атрибута data-content           
             var im = button.attr('src');
             var dwg = button.data('dwg');
-         
+            var xls = button.data('xls');
+            // console.log(xls);
+            // var pos = xls.lastIndexOf("/") + 1;
+            // console.log(pos);
+            //    var loge = xls.slice(xls.lastIndexOf("/") + 1);
+            //    console.log(loge);
+            // alert( log);
             
-            $(this).find('.overlay').append('<a href="'+im+'"  type="button" class="btn btn-info im-download"download="'+im+'"  id="im-download1"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>');
-            if (dwg !== "non")
+            $(this).find('.overlay').append(
+                // '<a href="'+im+'"  type="button" class="btn btn-info im-download"download="'+im+'"  id="im-download1"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
+                '<a href="'+im+'"  type="button" class="btn btn-info im-download" download="'+im.slice(im.lastIndexOf("/") + 1)+'"  ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
+            );
+            if (dwg !== "non" && typeof(dwg) != "undefined" && dwg !== "")
             {
-                 $(this).find('.overlay').append('<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'); 
+                 $(this).find('.overlay').append(
+                    //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+                     '<a href="'+dwg+'"  type="button" class="btn btn-info im-download" download="'+dwg.slice(dwg.lastIndexOf("/") + 1)+'" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+                    ); 
             }
+            if (xls !== "non" && typeof(xls) != "undefined" && xls !== "")
+            {
+                 $(this).find('.overlay').append(
+                    //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+                     '<a href="'+xls+'"  type="button" class="btn btn-info im-download" download="'+xls.slice(xls.lastIndexOf("/") + 1)+'" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
+                    ); 
+            }
+            $(this).find('.overlay').append( 
+                // '<button  onclick="print('+im.slice(im.lastIndexOf("/") + 1)+')">Печать картинки</button>'
+                "<a href='javascript:PrintImg(\""+im+"\"); void 0;' type='button' class='btn btn-info im-download ' title='Размер бумаги Letter' ><i class='glyphicon glyphicon-print 'aria-hidden='true'></i> Печать</a>" 
+                /* '<button class="btn btn-info im-download" onclick="PrintImg('+im.slice(im.lastIndexOf("/") + 1)+');" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i>Печать</button>' */
+             ); 
           
 
             $(this ).find(".overlay .btn").fadeIn(600);
         },
         function () {
             $(this).find(".overlay .btn").fadeOut(600);
-            
-
-            // $(".btn").find(".btn");
+           
             
         }
     );
@@ -262,6 +246,123 @@ $(function () {
 
 });
 
+
+
+
+
+
+
+
+
+
+// Печать 
+function PrintImg(src){
+    
+    // var win = window.open('','','left=0,top=0,right=0,bottom=0,width=800,height=640,toolbar=0,scrollbars=0,status=0');
+    var win = window.open();
+		win.document.write('<img src="'+src+'"  style="width: 100%;">'); 
+		win.print();
+		win.close();
+  }
+
+
+//   $(".im-download").mousemove(function(e) {
+//     var hovertext = $(this).attr("data-tooltip");
+//     $("#hovertitle").text(hovertext).show();
+//     $("#hovertitle").css('top', e.clientY+12+$(window).scrollTop()).css('left', e.clientX+12);
+//     }).mouseout(function() {$("#hovertitle").hide();});
+
+
+// function CallPrint(strid) {
+//      var prtContent = document.getElementById(strid);
+//      var prtCSS = '<link rel="stylesheet" href="/templates/css/template.css" type="text/css" />';
+//       var WinPrint = window.open('','','left=50,top=50,width=800,height=640,toolbar=0,scrollbars=1,status=0');
+//        WinPrint.document.write('<div id="print" class="contentpane">'); WinPrint.document.write(prtCSS);
+//         WinPrint.document.write(prtContent.innerHTML); WinPrint.document.write('</div>'); WinPrint.document.close();
+//          WinPrint.focus(); WinPrint.print(); WinPrint.close(); prtContent.innerHTML=strOldOne;
+// }
+
+// function makepage(src) {
+//     // We break the closing script tag in half to prevent
+//     // the HTML parser from seeing it as a part of
+//     // the *main* page.
+//     var win = window.open();
+//     win.document.write(
+//     "<html>\n" +
+//       "<head>\n" +
+//       "<title>Temporary Printing Window</title>\n" +
+//       "<script>\n" +
+//       "function step1() {\n" +
+//       "  setTimeout('step2()', 10);\n" +
+//       "}\n" +
+//       "function step2() {\n" +
+//       "  window.print();\n" +
+//       "  window.close();\n" +
+//       "}\n" +
+//       "</scr" + "ipt>\n" +
+//       "</head>\n" +
+//       "<body onLoad='step1()'>\n" +
+//       "<img src='" + src + "'/>\n" +
+//       "</body>\n" +
+//       "</html>\n"
+//     );
+//       win.print();
+// 		win.close();
+//   }
+
+
+
+//   function atoprint(src) {
+//     var atext = '<img src="' + src + '">';
+//     var captext = window.document.title;
+//     var alink = window.document.location;
+//     var prwin = open('');
+//     //prwin.document.open();
+//     prwin.document.writeln(htmls.text3);
+//     prwin.document.writeln('<h1>'+captext+'<\/h1>');
+//     prwin.document.writeln('<div style="position: absolute; height: 600px; top: 150px; width: 700px;">'+atext+'<\/div>');
+//     prwin.document.writeln('<hr><div style="font-size:8pt;margin-top:20px;">© site.ru<\/div>');
+//     prwin.document.writeln('<div style="font-size:8pt;">Страница материала: '+alink+'<\/div>');
+//     prwin.document.writeln('<\/div><\/body><\/html>');
+//     prwin.print();
+//     prwin.close();
+// }
+
+//   <!DOCTYPE html>
+// <meta charset="utf-8" />
+// <button onclick="printImage()">Печать</button>
+// <div id="image"><img src="http://ikeep.ws/uploads/posts/2011-08/1313657478_1235508295_vo_iguasu_br_3.jpg" /></div>
+// <script>
+// function printImage() {
+//     printHTML(document.getElementById('image').innerHTML);
+// }
+
+// function printHTML(html) {
+//     var frame = document.createElement('iframe');
+// 	frame.style.cssText = 'border:none;position:fixed;left:100%;';
+// 	frame.onload = function() {
+// 		var cssText = 'body{display:none} @media print{body{display:block}}';
+// 		var style = this.contentDocument.createElement('style');
+// 		if (style.readyState == 'loading') {
+// 			style.onreadystatechange = function() {
+// 				alert(this.readyState);
+// 				if (this.readyState = 'complete') {
+// 					this.sheet.cssText = cssText;
+// 				}
+// 			}
+// 		} else {
+// 			style.textContent = cssText;
+// 		}
+// 		this.contentDocument.getElementsByTagName('head')[0].appendChild(style);
+// 		this.contentDocument.body.innerHTML = html;
+// 		this.contentWindow.print();
+// 		setTimeout(function(){
+// 			frame.parentNode.removeChild(frame);
+// 		}, 0);
+// 	}
+// 	document.body.appendChild(frame);
+// }
+// </script>
 
 
 // свернуть поиск
@@ -281,6 +382,9 @@ jQuery(function($){
 		}
 	});
 });
+
+
+
 
 
 // кнопка очистки поиска
