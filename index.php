@@ -2661,28 +2661,11 @@
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" >                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;">                                                                            
+                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Нет информации<span> <br></span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                        <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
+                                                                      
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->          
                                                                     </TABLE>
                                                                 </TD>
@@ -2690,34 +2673,17 @@
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОРСКОГО БЮРО" class="hover mapsite" id="footer109">
-                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating110">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОР<wbr>СКОГО БЮРО<span> <br>-katalog-lepniny</span></p>
-                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ КБ</p> 
+                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating110">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОР<wbr>СКОГО БЮРО<span> <br></span></p>
+                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ КБ</p> 
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" >                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;">                                                                            
+                                                                                <p  data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd">5000302-02-001 штам основной надписи чертежей КД<span> <br>shtam-osnovnoy-nadpisi-chertezhey-kd</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                        <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
+                                                                       
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->          
                                                                     </TABLE>
                                                                 </TD>
@@ -2735,69 +2701,42 @@
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ" class="hover mapsite" id="footer110" >
-                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating111">СПЕЦИФИКА<wbr>ЦИЯ КОНСТРУКТОР<wbr>СКАЯ<span> <br>-katalog-rezby</span></p>
+                                                                    <p data-href="shablony-dokumentov-specifikacii.php" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating111">СПЕЦИФИКА<wbr>ЦИЯ КОНСТРУКТОР<wbr>СКАЯ<span> <br>-katalog-rezby</span></p>
                                                                     <!-- <p data-href="" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ АБ</p> -->
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" >                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <TD class="mapsite" colspan="2" style="padding: 25px 0;">                                                                            
+                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">5000303-01-001 спецификация конструкторская<span> <br>specifikaciya-konstruktorskaya</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                        <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
+                                                                       
+                                                                              
                                                                     </TABLE>
                                                                 </TD>
                                                             </TR>
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ" class="hover mapsite" id="footer111">
-                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating112">СПЕЦИФИКА<wbr>ЦИЯ ТЕХНОЛОГИЧЕС<wbr>КАЯ<span> <br>-katalog-lepniny</span></p>
-                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ КБ</p> 
+                                                                    <p data-href="shablony-dokumentov-specifikacii.php" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating112">СПЕЦИФИКА<wbr>ЦИЯ ТЕХНОЛОГИЧЕС<wbr>КАЯ<span> <br>-katalog-lepniny</span></p>
+                                                                    <!-- <p data-href="" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ КБ</p>  -->
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" >                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <TD class="mapsite" colspan="2"style="padding: 10px 0;" >                                                                            
+                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-tehnologichesaya">5000303-02-001 спецификация<span> <br>specifikaciya-tehnologichesaya</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
+                                                                            <TD class="mapsite" style="padding: 10px 0;">
+                                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-dlya-korrekcii">5000303-02-002 спецификация для коррекции<span> <br>specifikaciya-dlya-korrekcii</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                        <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite">
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
+                                                                       
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->          
                                                                     </TABLE>
                                                                 </TD>
@@ -2818,13 +2757,13 @@
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="ЛИСТ ТИТУЛЬНЫЙ ВПИ" class="hover mapsite" id="footer112">
-                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating113">ЛИСТ ТИТУЛЬНЫЙ ВПИ<span> <br>-shablony-dokumentov-list-titulnyy-vpi</span></p>
+                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating113">ЛИСТ ТИТУЛЬНЫЙ ВПИ<span> <br>-shablony-dokumentov-list-titulnyy-vpi</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" style="padding: 20px 0;" >                                                                            
-                                                                            <p data-href="#list-titulnyy-vpi" data-img="./dist/images/no-175x0.jpg">5000304_01_000 лист титульный ВПИ<span> <br>list-titulnyy-vpi</span></p>
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi">5000304_01_000 лист титульный ВПИ<span> <br>list-titulnyy-vpi</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2835,33 +2774,16 @@
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ВЕДОМОСТЬ ФУРНИТУРЫ" class="hover mapsite" id="footer113">
-                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating114">ВЕДОМОСТЬ ФУРНИТУРЫ <span> <br>-shablony-dokumentov-vedomost-furnitury</span></p>
+                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating114">ВЕДОМОСТЬ ФУРНИТУРЫ <span> <br>-shablony-dokumentov-vedomost-furnitury</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" >                                                                            
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                        <TD class="mapsite" colspan="2"  style="padding: 25px 0;" >                                                                            
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury">5000304-01-001 ведомость фурнитуры<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
+                                                                   
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->          
                                                                 </TABLE>
                                                             </TD>
@@ -2869,33 +2791,16 @@
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ" class="hover mapsite" id="footer114">
-                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating115">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ <span> <br>-shablony-dokumentov-vedomost-stekol-i-zerkal</span></p>
+                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating115">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ <span> <br>-shablony-dokumentov-vedomost-stekol-i-zerkal</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" >                                                                            
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                        <TD class="mapsite" colspan="2"  style="padding: 25px 0;" >                                                                            
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-stekol-i-zerkal">5000304-02-001 ведомость стекол и зеркал<span> <br>vedomost-stekol-i-zerkal</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
+                                                                  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->          
                                                                 </TABLE>
                                                             </TD>
@@ -2903,34 +2808,17 @@
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ" class="hover mapsite" id="footer115">
-                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating116">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ<span> <br>-shablony-dokumentov-vedomost-materialy-prochie</span></p>
+                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-materialy-prochie" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating116">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ<span> <br>-shablony-dokumentov-vedomost-materialy-prochie</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" >                                                                            
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                        <TD class="mapsite" colspan="2"   style="padding: 35px 0;">                                                                            
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-materialy-prochie">5000304-03-001 ведомость материалы прочие<span> <br>vedomost-materialy-prochie</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->          
+                                                                            
                                                                 </TABLE>
                                                             </TD>
                                                         </TR>
