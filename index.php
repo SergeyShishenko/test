@@ -335,12 +335,12 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>- shtapik-prizhimnoy-dlya-fasada</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-shtapik-prizhimnoy-dlya-fasada">
+                                                                            <p data-href="#shtapik-prizhimnoy-dlya-fasada" data-img="./dist/images/no-175x0.jpg">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>shtapik-prizhimnoy-dlya-fasada</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-">
                                                                             <p data-href="" data-img="./dist/images/no-175x0.jpg">Пр_№101/26/17 штапик <span><br>-pr-1012617-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>
@@ -735,12 +735,12 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" >
+                                                                        <TD class="mapsite" colspan="2" id="flo-">
                                                                             <p data-href="" data-img="./dist/images/no-175x0.jpg">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>- shtapik-prizhimnoy-dlya-fasada</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite"id="flo-">
                                                                             <p data-href="" data-img="./dist/images/no-175x0.jpg">Пр_№101/26/17 штапик <span><br>-pr-1012617-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>
@@ -823,13 +823,13 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" >                                                                          
+                                                                        <TD class="mapsite" colspan="2" id="flo-">                                                                          
                                                                             <p data-href="detali-profili.php#profili-nakladki-50" >МДФ накладка №050/ДШ <span> <br>-profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite"id="flo-">
                                                                             <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
@@ -1592,32 +1592,32 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite"  colspan="2" >                                                                            
-                                                                            <p data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-gluhoe-pco" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                        <TD class="mapsite"  colspan="2" id="flo-polotno-bloka-dvernogo-gluhoe-pco">                                                                            
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-gluhoe-pco">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklom-pco" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.11 полотно блока дверного со стеклом ПЦО <span> <br>polotno-bloka-dvernogo-so-steklom-pco</span></p>
+                                                                        <TD class="mapsite" id="flo-polotno-bloka-dvernogo-so-steklom-pco">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklom-pco">5000201_00_100_01.11 полотно блока дверного со стеклом ПЦО <span> <br>polotno-bloka-dvernogo-so-steklom-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklomfacet-pco" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.13 полотно блока дверного со стеклом(фацет) ПЦО<span> <br>-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" id="flo-polotno-bloka-dvernogo-so-steklomfacet-pco">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklomfacet-pco">5000201_00_100_01.13 полотно блока дверного со стеклом(фацет) ПЦО<span> <br>-arhiv-profiley</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalom-pco" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.21 полотно блока дверного с зеркалом ПЦО<span> <br>polotno-bloka-dvernogo-s-zerkalom-pco</span></p>
+                                                                        <TD class="mapsite" id="flo-polotno-bloka-dvernogo-s-zerkalom-pco">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalom-pco">5000201_00_100_01.21 полотно блока дверного с зеркалом ПЦО<span> <br>polotno-bloka-dvernogo-s-zerkalom-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
-                                                                        <TD class="mapsite">
-                                                                            <p data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalomfacet-pco" data-img="./dist/images/no-175x0.jpg">5000201_00_100_01.23 полотно блока дверного с зеркалом(фацет) ПЦО<span> <br>polotno-bloka-dvernogo-s-zerkalomfacet-pco</span></p>
+                                                                        <TD class="mapsite" id="flo-polotno-bloka-dvernogo-s-zerkalomfacet-pco">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalomfacet-pco">5000201_00_100_01.23 полотно блока дверного с зеркалом(фацет) ПЦО<span> <br>polotno-bloka-dvernogo-s-zerkalomfacet-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->         
@@ -2591,19 +2591,19 @@
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" >                                                                            
+                                                                            <TD class="mapsite" colspan="2"  id="flo-list-titulnyy-dp">                                                                            
                                                                                 <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#list-titulnyy-dp">5000301_01_001 лист титульный ДП<span> <br>list-titulnyy-dp</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" >                                                                            
+                                                                            <TD class="mapsite" colspan="2"  id="flo-pasport-izdeliy-zakaza-dp">                                                                            
                                                                                 <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#pasport-izdeliy-zakaza-dp">паспорт изделий заказа ДП<span> <br>pasport-izdeliy-zakaza-dp</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" >                                                                            
+                                                                            <TD class="mapsite" colspan="2"  id="flo-reestr-razdelov-dp">                                                                            
                                                                                 <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#reestr-razdelov-dp">реестр разделов ДП<span> <br>reestr-razdelov-dp</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
@@ -2621,19 +2621,19 @@
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" >                                                                            
+                                                                            <TD class="mapsite" colspan="2"  id="flo-list-titulnyy-kd">                                                                            
                                                                                 <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd">5000301_02_000 лист титульный КД<span> <br>list-titulnyy-kd</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" >                                                                            
+                                                                            <TD class="mapsite" colspan="2"  id="flo-pasport-izdeliy-zakaza-kd">                                                                            
                                                                                 <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#pasport-izdeliy-zakaza-kd">паспорт изделий заказа КД<span> <br>pasport-izdeliy-zakaza-kd</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" >                                                                            
+                                                                            <TD class="mapsite" colspan="2"  id="flo-reestr-razdelov-kd">                                                                            
                                                                                 <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-titulniki.php#reestr-razdelov-kd">реестр разделов КД<span> <br>reestr-razdelov-kd</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
@@ -2661,7 +2661,7 @@
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;">                                                                            
+                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-net-informacii-1">                                                                            
                                                                                 <p data-href="" data-img="./dist/images/no-175x0.jpg">Нет информации<span> <br></span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
@@ -2679,7 +2679,7 @@
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;">                                                                            
+                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-shtam-osnovnoy-nadpisi-chertezhey-kd">                                                                            
                                                                                 <p  data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd">5000302-02-001 штам основной надписи чертежей КД<span> <br>shtam-osnovnoy-nadpisi-chertezhey-kd</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
@@ -2707,7 +2707,7 @@
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" style="padding: 25px 0;">                                                                            
+                                                                            <TD class="mapsite" colspan="2" style="padding: 25px 0;" id="flo-specifikaciya-konstruktorskaya">                                                                            
                                                                                 <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">5000303-01-001 спецификация конструкторская<span> <br>specifikaciya-konstruktorskaya</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
@@ -2726,13 +2726,13 @@
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2"style="padding: 10px 0;" >                                                                            
+                                                                            <TD class="mapsite" colspan="2"style="padding: 10px 0;"  id="flo-specifikaciya-tehnologichesaya">                                                                            
                                                                                 <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-tehnologichesaya">5000303-02-001 спецификация<span> <br>specifikaciya-tehnologichesaya</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" style="padding: 10px 0;">
+                                                                            <TD class="mapsite" style="padding: 10px 0;" id="flo-specifikaciya-dlya-korrekcii">
                                                                                 <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-dlya-korrekcii">5000303-02-002 спецификация для коррекции<span> <br>specifikaciya-dlya-korrekcii</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
@@ -2762,7 +2762,7 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" style="padding: 20px 0;" >                                                                            
+                                                                        <TD class="mapsite" colspan="2" style="padding: 20px 0;"  id="flo-list-titulnyy-vpi">                                                                            
                                                                             <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi">5000304_01_000 лист титульный ВПИ<span> <br>list-titulnyy-vpi</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
@@ -2779,7 +2779,7 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2"  style="padding: 25px 0;" >                                                                            
+                                                                        <TD class="mapsite" colspan="2"  style="padding: 25px 0;" id="flo-vedomost-furnitury" >                                                                            
                                                                             <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury">5000304-01-001 ведомость фурнитуры<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
@@ -2796,7 +2796,7 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2"  style="padding: 25px 0;" >                                                                            
+                                                                        <TD class="mapsite" colspan="2"  style="padding: 25px 0;"  id="flo-vedomost-stekol-i-zerkal">                                                                            
                                                                             <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-stekol-i-zerkal">5000304-02-001 ведомость стекол и зеркал<span> <br>vedomost-stekol-i-zerkal</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
@@ -2813,7 +2813,7 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2"   style="padding: 35px 0;">                                                                            
+                                                                        <TD class="mapsite" colspan="2"   style="padding: 35px 0;" id="flo-vedomost-materialy-prochie">                                                                            
                                                                             <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-materialy-prochie">5000304-03-001 ведомость материалы прочие<span> <br>vedomost-materialy-prochie</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
@@ -2859,67 +2859,67 @@
                                                         </TR> 
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="" class="hover mapsite">
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-tablica-dlin-shirin-tolshchin-dlya-specifikacii">
                                                                 <p data-href="metodichki-dokument-117.php#tablica-dlin-shirin-tolshchin-dlya-specifikacii"  data-img="./dist/images/no-175x0.jpg">117.01.Таблица длин, ширин, толщин (для спецификации)<span><br>-11701tablica-dlin-shirin-tolshchin-dlya-specifikacii</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="" class="hover mapsite">
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
                                                                 <p data-href="metodichki-dokument-117.php#poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">117.02. Порядок изготовления МДФ_ШАБЛОНОВ для производства<span><br>poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="" class="hover mapsite">
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-steklaperechen-tolshchina-facet">
                                                                 <p data-href="metodichki-dokument-117.php#steklaperechen-tolshchina-facet">117.03. Стекла:перечень, толщина, фацет<span><br>steklaperechen-tolshchina-facet</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="" class="hover mapsite">
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-varianty-sborki-sostavnyh-se-pri-raznyh-parametrah-obrazca-cveta">
                                                                 <p data-href="metodichki-dokument-117.php#varianty-sborki-sostavnyh-se-pri-raznyh-parametrah-obrazca-cveta">117.04. Варианты сборки составных СЕ при разных параметрах "Образца цвета"<span><br>varianty-sborki-sostavnyh-se-pri-raznyh-parametrah-obrazca-cveta</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="" class="hover mapsite">
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-varianty-standartny-obrazcov-otdelki">
                                                                 <p data-href="metodichki-dokument-117.php#varianty-standartny-obrazcov-otdelki">117.05. Варианты стандартны образцов отделки<span><br>varianty-standartny-obrazcov-otdelki</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="" class="hover mapsite">
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-perechen-shtampov-kdz-i-kdp">
                                                                 <p data-href="metodichki-dokument-117.php#perechen-shtampov-kdz-i-kdp">117.06. Перечень штампов КДЗ и КДП<span><br>-11706-perechen-shtampov-kdz-i-kdp</span></p>
                                                             </TD>                                                             
                                                         </TR> 
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="" class="hover mapsite">
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-perechen-tipov-i-cvetov-zamkov">
                                                                 <p data-href="metodichki-dokument-117.php#perechen-tipov-i-cvetov-zamkov">117.07 Перечень типов и цветов замков<span><br>-11707-perechen-tipov-i-cvetov-zamkov</span></p>
                                                             </TD>                                                             
                                                         </TR> 
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="" class="hover mapsite">
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-obmery">
                                                                 <p data-href="metodichki-dokument-117.php#obmery">117.08 Обмеры<span><br>-11708-obmery</span></p>
                                                             </TD>                                                             
                                                         </TR> 
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="" class="hover mapsite">
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-algoritm-po-stykam">
                                                                 <p data-href="metodichki-dokument-117.php#algoritm-po-stykam">117.09 Алгоритм по стыкам<span><br>-11709-algoritm-po-stykam</span></p>
                                                             </TD>                                                             
                                                         </TR> 
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="" class="hover mapsite">
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-varianty-standartnyh-obrazcov-otdelki">
                                                                 <p data-href="metodichki-dokument-117.php#varianty-standartnyh-obrazcov-otdelki">117.051 Варианты стандартных образцов отделки<span><br>-117051-varianty-standartnyh-obrazcov-otdelki</span></p>
                                                             </TD>                                                             
                                                         </TR> 
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="" class="hover mapsite">
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-domi">
                                                                 <p data-href="metodichki-dokument-117.php#domi">ДОМИ<span><br>-domi</span></p>
                                                             </TD>                                                             
                                                         </TR>   
@@ -3333,13 +3333,13 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" >
+                                                                        <TD class="mapsite" colspan="2"  id="flo-list-titulnyy">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#list-titulnyy">1.1 ЛИСТ ТИТУЛЬНЫЙ<span> <br>-11-list-titulnyy</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-sostav-proekta">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#sostav-proekta">1.2 СОСТАВ ПРОЕКТА<span> <br>-12-sostav-proekta</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
@@ -3356,13 +3356,13 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" >
+                                                                        <TD class="mapsite" colspan="2"  id="flo-rendery">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#rendery">2.1 РЕНДЕРЫ<span> <br>-21-rendery</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-3d-pdf">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#3d-pdf">2.2 3D-PDF<span> <br>-22-3d-pdf</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
@@ -3379,13 +3379,13 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-plany-poetazhnye">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#plany-poetazhnye">3.1 планы поэтажные<span> <br>-katalog-rezby-rezba1</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-plan-pomeshcheniya-obmerochnyy">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-pomeshcheniya-obmerochnyy">3.2 план помещения обмерочный (на нескольких уровнях в случае необходимости)<span> <br>-katalog-rezby-rezba2</span></p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-pomeshcheniya-obmerochnyy" class="KEYWORDS">3.2.1 экспликация помещений</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-pomeshcheniya-obmerochnyy" class="KEYWORDS">3.2.2 габаритные размеры и размещение несущих плоскостей в помещении (размещение стен, размещение дверных и оконных проемов)</p>
@@ -3396,7 +3396,7 @@
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-razvertka-pomeshcheniya-po-stenam-obmerochnaya">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-obmerochnaya">3.3 развертка помещения по стенам обмерочная<span> <br>-katalog-rezby-rezba3</span></p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-obmerochnaya" class="KEYWORDS">3.3.1 сведения о типе пола и типе потолка (чистовые, черновые)</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-obmerochnaya" class="KEYWORDS">3.3.2 сведения о типе отделки несущих плоскостей (чистовая (штукатурка, плитка и т.п.), черновая (без отделки))</p>
@@ -3418,13 +3418,13 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-plan-poetazhnyy-s-ukazaniem-nomerov-izdeliy">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-poetazhnyy-s-ukazaniem-nomerov-izdeliy">4.1 план поэтажный с указанием номеров изделий и месторасположения изделий<span> <br>-katalog-rezby-rezba1</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-plan-pomeshcheniya-s-ukazaniem-nomerov-izdeliy">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-pomeshcheniya-s-ukazaniem-nomerov-izdeliy">4.2 план помещения с указанием номеров изделий и месторасположения установленных изделий (на нескольких уровнях в случае необходимости)<span> <br>-katalog-rezby-rezba2</span></p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-pomeshcheniya-s-ukazaniem-nomerov-izdeliy" class="KEYWORDS">4.2.1 нумерация изделий по док. «приложение №1» согласно СТП </p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-pomeshcheniya-s-ukazaniem-nomerov-izdeliy" class="KEYWORDS">4.2.2 месторасположение всех изделий с обязательной привязкой к геометрии несущих плоскостей</p>
@@ -3435,7 +3435,7 @@
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami">4.3 развертка помещения по стенам с установленными изделиями<span> <br>-katalog-rezby-rezba3</span></p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.1 нумерация изделий по док. «приложение №1» согласно СТП</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.2 сведения о типе пола, потолка, несущих плоскостей</p>
@@ -3452,7 +3452,7 @@
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-tablica-rezbovyh-elementov-svodnaya-dok-36501">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-rezbovyh-elementov-svodnaya-dok-36501">4.4 таблица резьбовых элементов сводная, док. №365.01 <span> <br>-katalog-rezby-rezba1</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
@@ -3469,7 +3469,7 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-svodnaya-tablica-soglasovannyh-obrazcov-prilozhenie-2">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#svodnaya-tablica-soglasovannyh-obrazcov-prilozhenie-2">5.1 сводная таблица согласованных образцов цвета и формы для изделий заказа (выборка из док. «приложения №2»)<span> <br>-katalog-rezby-rezba1</span></p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#svodnaya-tablica-soglasovannyh-obrazcov-prilozhenie-2" class="KEYWORDS">5.1.1 порядковый номер образца цвета и формы</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#svodnaya-tablica-soglasovannyh-obrazcov-prilozhenie-2" class="KEYWORDS">5.1.2 материал основы (МДФ, ЛДСП, стекло, металл и т.д.)</p>
@@ -3480,14 +3480,14 @@
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-foto-soglasovannyh-obrazcov-cveta-i-formy">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#foto-soglasovannyh-obrazcov-cveta-i-formy">5.2 фото согласованных образцов цвета и формы<span> <br>-katalog-rezby-rezba2</span></p>
                                                                             
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-chertezhi-soglasovannyh-obrazcov-cveta-i-formy">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#chertezhi-soglasovannyh-obrazcov-cveta-i-formy">5.3 чертежи согласованных образцов цвета и формы<span> <br>-katalog-rezby-rezba3</span></p>
                                                                            
                                                                         </TD>                                                                         
@@ -3505,7 +3505,7 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" >
+                                                                        <TD class="mapsite" colspan="2"  id="flo-tehnicheskoe-zadanie-dlya-zakazchika-tipovoe">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#tehnicheskoe-zadanie-dlya-zakazchika-tipovoe">6.1 техническое задание для заказчика типовое<span> <br>-katalog-rezby-rezba1</span></p>
                                                                             
                                                                             
@@ -3513,7 +3513,7 @@
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-tehnicheskoe-zadanie-dlya-zakazchika-netipovoe">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#tehnicheskoe-zadanie-dlya-zakazchika-netipovoe">6.2 техническое задание для заказчика нетиповое<span> <br>-katalog-rezby-rezba2</span></p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#tehnicheskoe-zadanie-dlya-zakazchika-netipovoe" class="KEYWORDS">6.2.1 информационная часть</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#tehnicheskoe-zadanie-dlya-zakazchika-netipovoe" class="KEYWORDS">6.2.1 графическая часть</p>
@@ -3522,7 +3522,7 @@
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->
                                                                     <TR>
-                                                                        <TD class="mapsite">
+                                                                        <TD class="mapsite" id="flo-informacionnyy-list-o-smezhnyh-organizaciyah">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#informacionnyy-list-o-smezhnyh-organizaciyah">6.3 информационный лист о смежных организациях (в случае необходимости)<span> <br>-katalog-rezby-rezba3</span></p>
                                                                            
                                                                         </TD>                                                                         
@@ -3541,91 +3541,91 @@
                                                             <TD>
                                                                 <TABLE >
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite"  colspan="2" >
+                                                                        <TD data-tooltip="" class="hover mapsite"  colspan="2" id="flo-shema-etapov-proetirovaniya-izdeliya" >
                                                                                 <p data-href="metodichki-stp-po-proektnoy-rabote.php#shema-etapov-proetirovaniya-izdeliya">Схема этапов проетирования изделия<span><br>-5000404-01_000 </span></p> 
                                                                         </TD>
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-sostav-komplekta-tipovogo-dp">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#sostav-komplekta-tipovogo-dp">Состав комплекта типового ДП<span><br>-5000404-01_001 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-sostav-komplekta-tipovoy-kd">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#sostav-komplekta-tipovoy-kd">Состав комплекта типовой КД<span><br>-5000404-01_002 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-ierarhicheskaya-struktura-izdeliy">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#ierarhicheskaya-struktura-izdeliy">Иерархическая структура изделий<span><br>-5000404-01_003 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-tablica-tipovyh-tolshchin-plitnyh-materialov">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-tipovyh-tolshchin-plitnyh-materialov">Таблица типовых толщин плитных материалов<span><br>-5000404-01_005 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-prisvoeniya-nomerov-detalyam">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#poryadok-prisvoeniya-nomerov-detalyam">Порядок присвоения номеров деталям<span><br>-5000404-01_006 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-vedomost-tipovyh-naimenovaniy-sepsedetaley">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#vedomost-tipovyh-naimenovaniy-sepsedetaley">Ведомость типовых наименований СЕ.ПСЕ.деталей<span><br>-5000404-01_010 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-tablica-kodov-operaciy">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-kodov-operaciy">Таблица кодов операций<span><br>-5000404-01_011 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-mp-po-kd-s-raznorodnymi-materialami">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#mp-po-kd-s-raznorodnymi-materialami">МП по КД с разнородными материалами<span><br>-5000404-01_012 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-algoritm-raboty-s-shablonami">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#algoritm-raboty-s-shablonami">Алгоритм по работе с шаблонами<span><br>-5000404-01_015 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">Алгоритм по работе с поступающей от Заказчика информацией о смежных организациях<span><br>-5000404-01_017 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-otstupleniy-ot-trebovaniy-ergonomiki-i-bezopasnosti">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#otstupleniy-ot-trebovaniy-ergonomiki-i-bezopasnosti">Алгоритм согласования с заказчиком отступлений от требований эргономики и безопасности<span><br>-5000404-01_018 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-shema-rascheta-gabaritov-stekla-i-zerkala-v-sostave-se">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#shema-rascheta-gabaritov-stekla-i-zerkala-v-sostave-se">Схема расчета габаритов стекла и зеркала в составе СЕ<span><br>-5000404-01_050 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-ierarhicheskaya-struktura-katalogov-proekt-i-zakaz">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#ierarhicheskaya-struktura-katalogov-proekt-i-zakaz">Иерархическая структура каталогов ПРОЕКТ и ЗАКАЗ<span><br>-5000404-01_075 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-ierarhicheskaya-struktura-kataloga-500stp">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#ierarhicheskaya-struktura-kataloga-500stp">Иерархическая структура каталога 500.СТП<span><br>-5000404-01-500 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>   
@@ -3640,80 +3640,80 @@
                                                             <TD>
                                                                 <TABLE >
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite"  colspan="2" >
+                                                                        <TD data-tooltip="" class="hover mapsite"  colspan="2"  id="flo-obrazec-zapolneniya-dok-vedomost-furnitury">
                                                                                 <p data-href="metodichki-stp-po-proektnoy-rabote.php#obrazec-zapolneniya-dok-vedomost-furnitury">Образец заполнения док. ВЕДОМОСТЬ ФУРНИТУРЫ<span><br>-5000404-02-005 5000304-01_001 </span></p> 
                                                                         </TD>
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-obrazec-zapolneniya-dok-vedomost-stekol-i-zerkal">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#obrazec-zapolneniya-dok-vedomost-stekol-i-zerkal">Образец заполнения док. ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ<span><br>-5000404-02-006  5000304-02-001</span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-obrazec-ukazaniya-na-chertezhe-parametrov-shponirovaniya">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#obrazec-ukazaniya-na-chertezhe-parametrov-shponirovaniya">Образец указания на чертеже параметров шпонирования<span><br>-5000404-02-007 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3--> 
                                                                                                                                            
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-obrazec-ukazaniya-na-chertezhe-obrazcov-cveta">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#obrazec-ukazaniya-na-chertezhe-obrazcov-cveta">Образец указания на чертеже образцов цвета<span><br>-5000404-02-008 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-obrazec-ukazaniya-na-chertezhe-parametrov-stekla">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#obrazec-ukazaniya-na-chertezhe-parametrov-stekla">Образец указания на чертеже параметров стекла<span><br>-5000404-02-009 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-obrazec-ukazaniya-v-kd-kodov-sborochno-otdelochnyh-operaciy">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#obrazec-ukazaniya-v-kd-kodov-sborochno-otdelochnyh-operaciy">Образец указания в КД кодов сборочно-отделочных операций<span><br>-5000404-02-011 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-smo">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-smo">План по карнизу с обозначением римскими цифрами СМ операций<span><br>-5000404-02-015 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-smo">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-smo">План по молдингу с обозначением римскими цифрами СМ операций<span><br>-5000404-02-016 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-smo">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-smo">План по плинтусу с обозначением римскими цифрами СМ операций<span><br>-5000404-02-017 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-obrazec-ukazaniya-na-chertezhe-kolichestva-detaley">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#obrazec-ukazaniya-na-chertezhe-kolichestva-detaley">Образец указания на чертеже количества деталей<span><br>-5000404-02-025 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-obrazec-ukazaniya-na-chertezhe-nomerov-povtornyh-prilozheniy">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#obrazec-ukazaniya-na-chertezhe-nomerov-povtornyh-prilozheniy">Образец указания на чертеже номеров повторных приложений<span><br>-5000404-02-027 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-obrazec-tz-stroitelyam-zakazchika">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#obrazec-tz-stroitelyam-zakazchika">Образец ТЗ строителям Заказчика<span><br>-5000404-02-030  </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
-                                                                        <TD data-tooltip="" class="hover mapsite">
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom">КД на ДБ с распашным одностворчатым глухим полотном<span><br>-5000404-02-101 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
