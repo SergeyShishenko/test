@@ -1,2 +1,2 @@
-# https://sergeyshishenko.github.io/test/
-500stp
+https://sergeyshishenko.github.io
+
