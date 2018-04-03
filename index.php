@@ -21,6 +21,16 @@
     <link href="./dist/css/docs.css?v=10" rel="stylesheet">
     <link href="./dist/css/grid.css?v=10" rel="stylesheet">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+   
+<!-- <style>
+/* запрет перехода по ссылкам */ 
+ * {
+  pointer-events: none;
+} -->
+
+</style>
+
+   
 </head> 
 
 <body>
@@ -2580,7 +2590,7 @@
                                         <TABLE >
                                             <TR>
                                                 <TD class="hover mapsite" id="footer23">
-                                                    <p data-href="shablony-dokumentov-titulniki.php"  data-img="./dist/images/no-175x0.jpg" id="floating24">ЛИСТЫ ТИТУЛЬНЫЕ<span><br>- shablony-dokumentov-titulniki</span></p></TD>
+                                                    <p data-href="shablony-dokumentov-titulniki.php"  data-img="./dist/images/no-175x0.jpg" id="floating24">ЛИСТЫ ТИТУЛЬНЫЕ<span><br>shablony-dokumentov-titulniki</span></p></TD>
                                                     <TD>
                                                         <TABLE >
                                                             <TR>
@@ -2655,14 +2665,14 @@
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО" class="hover mapsite" id="footer108" >
-                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating109">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУР<wbr>НОГО БЮРО<span> <br>-katalog-rezby</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating109">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУР<wbr>НОГО БЮРО<span> <br>katalog-rezby</span></p>
                                                                     <p data-href="" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ АБ</p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-net-informacii-1">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Нет информации<span> <br></span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Нет информации<span> <br>net-informacii-1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                       
@@ -2780,7 +2790,7 @@
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2"  style="padding: 25px 0;" id="flo-vedomost-furnitury" >                                                                            
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury">5000304-01-001 ведомость фурнитуры<span> <br>-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury">5000304-01-001 ведомость фурнитуры<span> <br>vedomost-furnitury</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                    
@@ -2854,13 +2864,13 @@
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="footer116" >
-                                                                    <p data-href="metodichki-dokument-117.php#metodicheskoe-posobie-po-izdeliyam"  data-img="./dist/images/no-175x0.jpg">117. Методическое пособие по изделиям<span><br>-117-metodicheskoe-posobie-po-izdeliyam</span></p> 
+                                                                    <p data-href="metodichki-dokument-117.php#metodicheskoe-posobie-po-izdeliyam"  data-img="./dist/images/no-175x0.jpg">117. Методическое пособие по изделиям<span><br>metodicheskoe-posobie-po-izdeliyam</span></p> 
                                                             </TD>
                                                         </TR> 
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="flo-tablica-dlin-shirin-tolshchin-dlya-specifikacii">
-                                                                <p data-href="metodichki-dokument-117.php#tablica-dlin-shirin-tolshchin-dlya-specifikacii"  data-img="./dist/images/no-175x0.jpg">117.01.Таблица длин, ширин, толщин (для спецификации)<span><br>-11701tablica-dlin-shirin-tolshchin-dlya-specifikacii</span></p>
+                                                                <p data-href="metodichki-dokument-117.php#tablica-dlin-shirin-tolshchin-dlya-specifikacii"  data-img="./dist/images/no-175x0.jpg">117.01.Таблица длин, ширин, толщин (для спецификации)<span><br>tablica-dlin-shirin-tolshchin-dlya-specifikacii</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
@@ -4858,7 +4868,13 @@
     <script src="./dist/js/script.js?v=8"></script>   
     <script src="./dist/js/floating.js?v=10"></script> 
     <script>
-
+//   addEventListener("click", function() {
+//     events.preventDefault();
+//     return false;
+//   });
+  $('*').on('click', function() {
+    return false;
+});
 </script>
     
 </body>

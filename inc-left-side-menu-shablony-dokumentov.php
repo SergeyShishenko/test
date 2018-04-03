@@ -45,14 +45,10 @@
                         <li class="menu">
                             <a href="shablony-dokumentov-shtampy-chertezhey.php" class="list-group-item  '.$item_shtampy_chertezhey_Class.'">ШТАМПЫ ЧЕРТЕЖЕЙ</a>
                             <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
+                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                      
+                                        <li><a class="list-group-item sub" href="#">Нет информации</a>
+                                        </li>                                                                            
                                     </ul>
                                 </li>
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady">ШКАФЫ С РАСПАШНЫМИ ФАСАДАМИ</a>

@@ -1,5 +1,5 @@
 /* !!!!!!!! убрать транслит И КЛЮЧЕВЫЕ СЛОВА!!!!!*/
-.KEYWORDS,.mapsite>p>span{ display: none;}
+/* .KEYWORDS,.mapsite>p>span{ display: none;} */
 
 #search > ul > li > a.flo{
   /* content: "\2693"; */
