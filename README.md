@@ -1,2 +1,2 @@
-https://sergeyshishenko.github.io
+https://sergeyshishenko/test.github.io
 
