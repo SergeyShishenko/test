@@ -45,88 +45,36 @@
                         <li class="menu">
                             <a href="shablony-dokumentov-shtampy-chertezhey.php" class="list-group-item  '.$item_shtampy_chertezhey_Class.'">ШТАМПЫ ЧЕРТЕЖЕЙ</a>
                             <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО</a>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">Нет информации</a>
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#net-informacii-1">Нет информации</a>
                                         </li>                                                                            
                                     </ul>
                                 </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady">ШКАФЫ С РАСПАШНЫМИ ФАСАДАМИ</a>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОРСКОГО БЮРО</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady-nakladnye" >Накладные</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady-vkladnye">Вкладные</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady-otkidnye">Откидные (секретерные)</a>
-                                        </li>                                        
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd" >5000302-02-001 штам основной надписи чертежей КД </a>
+                                        </li>                                                                                                                      
                                     </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady">ШКАФЫ С РАЗДВИЖНЫМИ ФАСАДАМИ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady-kupe">Фасады купе</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady-komplanarnye">Фасады компланарные</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                           
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-stellazhi">ШКАФЫ БЕЗ ФАСАДОВ (СТЕЛЛАЖИ)</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                         
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-stoly">СТОЛЫ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                         
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#sborochnye-shemy-mebel-korpusnaya">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                         
-                                    </ul>
-                                </li>                                   
+                                </li>                                                                
                             </ul>
                         </li>
                         <!-- menu -->
                         <li class="menu">
                             <a href="shablony-dokumentov-specifikacii.php" class="list-group-item  '.$item_specifikacii_Class.'">СПЕЦИФИКАЦИИ</a>
                             <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                          
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">5000303-01-001 спецификация конструкторская</a>
+                                        </li>                                                                                
                                     </ul>
                                 </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#sborochnye-shemy-paneli-stenovye">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-tehnologichesaya">СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
+                                        <li><a class="list-group-item sub" href="#shablony-dokumentov-specifikacii.php#specifikaciya-tehnologichesaya">5000303-02-001 спецификация</a>
                                         </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                       
+                                        <li><a class="list-group-item sub" href="#shablony-dokumentov-specifikacii.php#specifikaciya-dlya-korrekcii">5000303-02-002 спецификация для коррекции </a>
+                                        </li>                                                                               
                                     </ul>
                                 </li>                    
                             </ul>
@@ -135,7 +83,7 @@
                         <li class="menu">
                             <a href="shablony-dokumentov-pokupnye-izdeliya.php" class="list-group-item  '.$item_pokupnye_izdeliya_Class.'">ПОКУПНЫЕ ИЗДЕЛИЯ</a>
                             <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-karnizy-i-frizy.php#izdeliya-karnizy-i-frizy-konstrukcii">КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ</a>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
                                     <ul class="list-group sub_menu2">
                                         <li><a class="list-group-item sub" href="#">...</a>
                                         </li>
@@ -145,18 +93,27 @@
                                         </li>                                         
                                     </ul>
                                 </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-karnizy-i-frizy.php#sborochnye-shemy-karnizy-i-frizy">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php">ВЕДОМОСТЬ ФУРНИТУРЫ</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                   
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury">5000304-01-001 ведомость фурнитуры </a>
+                                        </li>                                                                         
                                     </ul>
-                                </li>     
+                                </li> 
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php">ВЕДОМОСТЬ СТЕКОЛ И ЗЕРКАЛ</a>
+                                    <ul class="list-group sub_menu2">
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-stekol-i-zerkal">5000304-02-001 ведомость стекол и зеркал </a>
+                                        </li>                                                                         
+                                    </ul>
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ</a>
+                                    <ul class="list-group sub_menu2">
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-materialy-prochie">5000304-03-001 ведомость материалы прочие </a>
+                                        </li>                                                                        
+                                    </ul>
+                                </li>      
                             </ul>
-                        </li>                                                     
+                        </li>
+                                                                            
                     </ul>
                 </div>
             </div>
