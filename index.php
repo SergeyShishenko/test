@@ -2660,19 +2660,19 @@
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->      
                                             <TR>
                                                 <TD data-tooltip="ШТАМПЫ ЧЕРТЕЖЕЙ" class="hover mapsite" id="footer24">
-                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php"  data-img="./dist/images/no-175x0.jpg" id="floating25">ШТАМПЫ ЧЕРТЕЖЕЙ<span><br>-shablony-dokumentov-shtampy-chertezhey</span></p></TD>
+                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php"  data-img="./dist/images/no-175x0.jpg" id="floating25">ШТАМПЫ ЧЕРТЕЖЕЙ<span><br>shablony-dokumentov-shtampy-chertezhey</span></p></TD>
                                                     <TD>
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО" class="hover mapsite" id="footer108" >
-                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating109">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУР<wbr>НОГО БЮРО<span> <br>katalog-rezby</span></p>
-                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ АБ</p>
+                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating109">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУР<wbr>НОГО БЮРО<span> <br>shtampy-chertezhey-arhitekturnogo-byuro</span></p>
+                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ АБ</p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-net-informacii-1">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg">Нет информации<span> <br>net-informacii-1</span></p>
+                                                                                <p data-href="shablony-dokumentov-shtampy-chertezhey.php" data-img="./dist/images/no-175x0.jpg">Нет информации<span> <br>net-informacii-1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                       
@@ -2690,7 +2690,7 @@
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-shtam-osnovnoy-nadpisi-chertezhey-kd">                                                                            
-                                                                                <p  data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd">5000302-02-001 штам основной надписи чертежей КД<span> <br>shtam-osnovnoy-nadpisi-chertezhey-kd</span></p>
+                                                                                <p  data-img="./dist/images/no-175x0.jpg" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd">5000302-02-001 штамп основной надписи чертежей КД<span> <br>shtam-osnovnoy-nadpisi-chertezhey-kd</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                        
