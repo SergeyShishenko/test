@@ -28,11 +28,11 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>Нет информации</h4>
                                                     
                             <p> <a>
-                                <img src="./dist/images/mdf-nakladka-050-dsh.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/test.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="МДФ_НАКЛАДКА_№050/ДШ"                               
-                                 alt="МДФ_НАКЛАДКА_№050/ДШ"
+                                 data-content="test"                               
+                                 alt="test"
                                  data-dwg="./dist/files/МДФ_НАКЛАДКА_№050_ДШ.dwg"
                                    ></a>
                              </p>
@@ -50,11 +50,11 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000302-02-001 штамп основной надписи чертежей КД</h4>
                                                     
                             <p> <a>
-                                <img src="./dist/images/mdf-nakladka-050-dsh.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/test.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="МДФ_НАКЛАДКА_№050/ДШ"                               
-                                 alt="МДФ_НАКЛАДКА_№050/ДШ"
+                                 data-content="test"                               
+                                 alt="test"
                                  data-dwg="./dist/files/МДФ_НАКЛАДКА_№050_ДШ.dwg"
                                    ></a>
                              </p>

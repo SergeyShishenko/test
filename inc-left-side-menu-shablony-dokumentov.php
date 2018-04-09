@@ -83,14 +83,10 @@
                         <li class="menu">
                             <a href="shablony-dokumentov-pokupnye-izdeliya.php" class="list-group-item  '.$item_pokupnye_izdeliya_Class.'">ПОКУПНЫЕ ИЗДЕЛИЯ</a>
                             <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php#">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                         
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi">5000304_01_000 лист титульный ВПИ</a>
+                                        </li>                                                                          
                                     </ul>
                                 </li>
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php">ВЕДОМОСТЬ ФУРНИТУРЫ</a>
