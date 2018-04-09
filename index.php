@@ -4868,13 +4868,13 @@
     <script src="./dist/js/script.js?v=8"></script>   
     <script src="./dist/js/floating.js?v=10"></script> 
     <script>
-//   addEventListener("click", function() {
-//     events.preventDefault();
+// запретить клик
+/* !!!!!!!! убрать транслит И КЛЮЧЕВЫЕ СЛОВА!!!!!
+ ЗАКОМЕНТИРОВАТЬ В grid.css*/
+/* .KEYWORDS,.mapsite>p>span{ display: none;} */
+//   $('*').on('click', function() {
 //     return false;
-//   });
-  $('*').on('click', function() {
-    return false;
-});
+// });
 </script>
     
 </body>
