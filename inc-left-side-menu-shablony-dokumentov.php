@@ -45,9 +45,9 @@
                         <li class="menu">
                             <a href="shablony-dokumentov-shtampy-chertezhey.php" class="list-group-item  '.$item_shtampy_chertezhey_Class.'">ШТАМПЫ ЧЕРТЕЖЕЙ</a>
                             <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО</a>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">Нет информации</a>
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#net-informacii-1">Нет информации</a>
                                         </li>                                                                            
                                     </ul>
                                 </li>
