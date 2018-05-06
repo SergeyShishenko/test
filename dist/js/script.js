@@ -157,8 +157,8 @@ $(function() {
           var result = $(this).text().replace(/^\s*(.*)\s*$/, "$1");
           result = result.replace(/-\d+/g, ""); //удалить
           result = result.replace(/[b]/g, "").replace(str.match(search_str),"<b>" + str.match(search_str) + "</b>" );
-          result = result.replace(/[a]/g, "");
-          result = result.replace(/[c-z]/g, ""); //удалить латинские символы
+        //   result = result.replace(/[a]/g, "");
+        //   result = result.replace(/[c-z]/g, ""); //удалить латинские символы
           result = result.replace(/[-]+/g, ""); //удалить
           var aimg="./dist/images/no-175x0.jpg";
           var aref = $(this).data("href");

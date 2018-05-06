@@ -86,11 +86,18 @@ $(function() {
         if (str.match(search_str) !== null) {
           // если совпадает строка с подстрокой    
           var result = $(this).text().replace(/^\s*(.*)\s*$/, "$1");
-          result = result.replace(/-\d+/g, ""); //удалить
-          result = result.replace(/[b]/g, "").replace(str.match(search_str),"<b>" + str.match(search_str) + "</b>" );
-          result = result.replace(/[a]/g, "");
-          result = result.replace(/[c-z]/g, ""); //удалить латинские символы
-          result = result.replace(/[-]+/g, ""); //удалить
+        //   result = result.replace(/-\d+/g, ""); //удалить
+        result = result.replace(str.match(search_str),"<b>" + str.match(search_str) + "</b>" );
+        //   result = result.replace(/[b]/g, "").replace(str.match(search_str),"<b>" + str.match(search_str) + "</b>" );
+        //   result = result.replace(/[a]/g, "");
+        //   result = result.replace(/[c-z]/g, ""); //удалить латинские символы
+        //   result = result.replace(/[-]+/g, ""); //удалить
+        // text = text.replace(/<script[^>]*>(?:(?!<\/script>)[^])*<\/script>/g, "")
+        //   result = result.replace(/<span>(.*)<\/span>/ig,""); //удалить
+          result = result.replace(/~(.*)/ig,""); //удалить
+        //   result=result[1]
+        //   result = result.replace(/<script[^>]*>(?:(?!<\/script>)[^])*<\/script>/ig,""); //удалить
+          
           var aref = $(this).data("href");          
           var flo = $(this).parent().attr('id');
           // flo = flo.replace(/.*\#/, '');// id элемента
