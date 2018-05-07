@@ -4,9 +4,11 @@ $('table td').on('click', function () {
     // alert(this.innerHTML);
     // var ref = $(this).find('p').data('href'); 
     var ref = $(this).find(':first-child').data('href'); 
-    if(typeof ref != "undefined")
+    if(typeof ref != "undefined" && ref != null)
     
-    {   window.location=ref;
+    {  
+        // alert(ref);
+        window.location=ref;
    
     }
 else  

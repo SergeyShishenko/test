@@ -4054,97 +4054,185 @@
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="04 МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ" class="hover mapsite" id="footer140">
-                                                                <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating141">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ<span><br>~- profili-reznye</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating141" data-href="furnitura-dlya-mebeli.php#mekhanizmy-vydvizheniya-dlya-yashchikov">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ<span><br>~mekhanizmy-vydvizheniya-dlya-yashchikov</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2"  id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-101-movento-blumotion-napravlyayushchie-250">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-101-movento-blumotion-napravlyayushchie-250">5000502-04-101 MOVENTO BLUMOTION направляющие 250<span> <br>~5000502-04-101-movento-blumotion-napravlyayushchie-250</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-103-movento-blumotion-napravlyayushchie-300">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-103-movento-blumotion-napravlyayushchie-300">5000502-04-103 MOVENTO BLUMOTION направляющие 300<span> <br>~5000502-04-103-movento-blumotion-napravlyayushchie-300</span></p>
                                                                         </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-105-movento-blumotion-napravlyayushchie-350">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-105-movento-blumotion-napravlyayushchie-350">5000502-04-105 MOVENTO BLUMOTION направляющие 350<span> <br>~5000502-04-105-movento-blumotion-napravlyayushchie-350</span></p>
                                                                         </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-107-movento-blumotion-napravlyayushchie-400">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-107-movento-blumotion-napravlyayushchie-400">5000502-04-107 MOVENTO BLUMOTION направляющие 400<span> <br>~5000502-04-107-movento-blumotion-napravlyayushchie-400</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-109-movento-blumotion-napravlyayushchie-450">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-109-movento-blumotion-napravlyayushchie-450">5000502-04-109 MOVENTO BLUMOTION направляющие 450<span> <br>~5000502-04-109-movento-blumotion-napravlyayushchie-450</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-111-movento-blumotion-napravlyayushchie-500">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-111-movento-blumotion-napravlyayushchie-500">5000502-04-111 MOVENTO BLUMOTION направляющие 500<span> <br>~5000502-04-111-movento-blumotion-napravlyayushchie-500</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-113-movento-blumotion-napravlyayushchie-550">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-113-movento-blumotion-napravlyayushchie-550">5000502-04-113 MOVENTO BLUMOTION направляющие 550<span> <br>~5000502-04-113-movento-blumotion-napravlyayushchie-550</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-114-movento-blumotion-napravlyayushchie-600">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-114-movento-blumotion-napravlyayushchie-600">5000502-04-114 MOVENTO BLUMOTION направляющие 600<span> <br>~5000502-04-114-movento-blumotion-napravlyayushchie-600</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-121-movento-tipon-napravlyayushchie-250">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-121-movento-tipon-napravlyayushchie-250">5000502-04-121 MOVENTO TIPON направляющие 250<span> <br>~5000502-04-121-movento-tipon-napravlyayushchie-250</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-125-movento-tipon-napravlyayushchie-300">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-125-movento-tipon-napravlyayushchie-300">5000502-04-125 MOVENTO TIPON направляющие 300<span> <br>~5000502-04-125-movento-tipon-napravlyayushchie-300</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-128-movento-tipon-napravlyayushchie-350">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-128-movento-tipon-napravlyayushchie-350">5000502-04-128 MOVENTO TIPON направляющие 350<span> <br>~5000502-04-128-movento-tipon-napravlyayushchie-350</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-133-movento-tipon-napravlyayushchie-400">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-133-movento-tipon-napravlyayushchie-400">5000502-04-133 MOVENTO TIPON направляющие 400<span> <br>~5000502-04-133-movento-tipon-napravlyayushchie-400</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-139-movento-tipon-napravlyayushchie-450">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-139-movento-tipon-napravlyayushchie-450">5000502-04-139 MOVENTO TIPON направляющие 450<span> <br>~5000502-04-139-movento-tipon-napravlyayushchie-450</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-141-movento-tipon-napravlyayushchie-500">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-141-movento-tipon-napravlyayushchie-500">5000502-04-141 MOVENTO TIPON направляющие 500<span> <br>~5000502-04-141-movento-tipon-napravlyayushchie-500</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-143-movento-tipon-napravlyayushchie-550">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-143-movento-tipon-napravlyayushchie-550">5000502-04-143 MOVENTO TIPON направляющие 550<span> <br>~5000502-04-143-movento-tipon-napravlyayushchie-550</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-04-145-movento-tipon-napravlyayushchie-600">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-04-145-movento-tipon-napravlyayushchie-600">5000502-04-145 MOVENTO TIPON направляющие 600<span> <br>~5000502-04-145-movento-tipon-napravlyayushchie-600</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-tekhnicheskaya-informaciya-po-napravlyayushchim">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#tekhnicheskaya-informaciya-po-napravlyayushchim">техническая информация по направляющим<span> <br>~tekhnicheskaya-informaciya-po-napravlyayushchim</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                  
+                                                                           
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="ОПОРЫ" class="hover mapsite" id="footer141">
-                                                                <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating142">ОПОРЫ<span><br>~- profili-reznye</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating142" data-href="furnitura-dlya-mebeli.php#opory">ОПОРЫ<span><br>~opory</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-" >
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-05-501-opora-reguliruemaya-universalnaya" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-05-501-opora-reguliruemaya-universalnaya">5000502-05-501 опора регулируемая универсальная<span> <br>~5000502-05-501-opora-reguliruemaya-universalnaya</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-05-502-opora-reguliruemaya-s-podderzhkoy-bokoviny" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-05-502-opora-reguliruemaya-s-podderzhkoy-bokoviny">5000502-05-502 опора регулируемая с поддержкой боковины<span> <br>~5000502-05-502-opora-reguliruemaya-s-podderzhkoy-bokoviny</span></p>
                                                                         </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-05-511-opora-reguliruemaya-malaya" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-05-511-opora-reguliruemaya-malaya">5000502-05-511 опора регулируемая малая<span> <br>~5000502-05-511-opora-reguliruemaya-malaya</span></p>
                                                                         </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy">5000502-05-512 опора регулируемая малая с цокольной клипсой<span> <br>~5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                           
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="ЗАЩЕЛКИ МЕБЕЛЬНЫЕ" class="hover mapsite" id="footer142">
-                                                                <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating143">ЗАЩЕЛКИ МЕБЕЛЬНЫЕ<span><br>~- profili-reznye</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating143" data-href="furnitura-dlya-mebeli.php#zashchelki-mebelnye">ЗАЩЕЛКИ МЕБЕЛЬНЫЕ<span><br>~zashchelki-mebelnye</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2"  id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-06-100-zashchelka-tipon">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-06-100-zashchelka-tipon" >5000502-06-100 защелка - TIPON<span><br>~5000502-06-100-zashchelka-tipon</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" id="flo-5000502-06-106-zashchelka-mebelnaya-magnitnaya">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-06-106-zashchelka-mebelnaya-magnitnaya">5000502-06-106 защелка мебельная магнитная<span> <br>~5000502-06-106-zashchelka-mebelnaya-magnitnaya</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                          
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="СТЯЖКИ" class="hover mapsite" id="footer143">
-                                                                <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating144">СТЯЖКИ<span><br>~- profili-reznye</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating144" data-href="furnitura-dlya-mebeli.php#styazhki">СТЯЖКИ<span><br>~styazhki</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-" >
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000502-07-701 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 16 мм<span> <br>~-profili-gladkie-standartnye</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
