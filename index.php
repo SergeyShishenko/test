@@ -4231,104 +4231,113 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-" >
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000502-07-701 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 16 мм<span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-16-mm" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-16-mm">5000502-07-701 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 16 мм<span> <br>~-5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-16-mm</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-16-mm" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-16-mm">5000502-07-702 стяжка эксцентриковая двухсторонняя MINIFIX, толщина плиты 16 мм<span> <br>~5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-16-mm</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm">5000502-07-703 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 24 мм<span> <br>~5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm</span></p>
                                                                         </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm">5000502-07-704 стяжка эксцентриковая двухсторонняя MINIFIX, толщина плиты 24 мм<span> <br>~5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm</span></p>
                                                                         </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm">5000502-07-707 стяжка эксцентриковая усиленная RAFIX, толщина плиты 16 мм<span> <br>~5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-750-konfirmat-70h50" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-07-750-konfirmat-70h50">5000502-07-750 конфирмат 7.0Х50<span> <br>~5000502-07-750-konfirmat-70h50</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-752-konfirmat-70h70" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-07-752-konfirmat-70h70">5000502-07-752 конфирмат 7.0Х70<span> <br>~5000502-07-752-konfirmat-70h70</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
+                                                                             
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ПОЛКОДЕРЖАТЕЛИ" class="hover mapsite" id="footer144"  >
-                                                                    <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating145">ПОЛКОДЕРЖА<wbr>ТЕЛИ<span><br>~- profili-gladkie</span></p> 
+                                                                    <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating145" data-href="furnitura-dlya-mebeli.php#polkoderzhateli">ПОЛКОДЕРЖА<wbr>ТЕЛИ<span><br>~polkoderzhateli</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2"  id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki" style="padding: 35px 0;">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki">5000502-08-101 PK2 полкодержатель с фиксацией полки<span> <br>~5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                          
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="ШТАНГИ МЕБЕЛЬНЫЕ" class="hover mapsite" id="footer145">
-                                                                <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating146">ШТАНГИ МЕБЕЛЬНЫЕ<span><br>~- profili-reznye</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating146" data-href="furnitura-dlya-mebeli.php#shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ<span><br>~shtangi-mebelnye</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-" >
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-10-300-shtanga-kruglaya-dlya-veshala" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-10-300-shtanga-kruglaya-dlya-veshala">5000502-10-300 штанга круглая для вешала<span> <br>~5000502-10-300-shtanga-kruglaya-dlya-veshala</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala">5000502-10-301 штанга круглая с проходным держателем для вешала<span> <br>~5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala</span></p>
                                                                         </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                           
                                                                 </TABLE>
                                                             </TD>
                                                         </TR>
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip=" ПАНТОГРАФЫ" class="hover mapsite" id="footer146">
-                                                                <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating147"> ПАНТОГРАФЫ<span><br>~- profili-reznye</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating147" data-href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ<span><br>~pantografy</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-?01">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" id="flo-?02">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" id="flo-?03">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->           
@@ -4338,25 +4347,25 @@
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="РУЧКИ" class="hover mapsite" id="footer147">
-                                                                <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating148">РУЧКИ<span><br>~- profili-reznye</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating148" data-href="furnitura-dlya-mebeli.php#ruchki">РУЧКИ<span><br>~ruchki</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-?08">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" id="flo-?09">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" id="flo-?010">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->           
@@ -4365,29 +4374,24 @@
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для СТОЛОВ" class="hover mapsite" id="footer148">
-                                                                <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating149">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для СТОЛОВ<span><br>~- profili-reznye</span></p>
+                                                            <TD data-tooltip="Механизмы для раздвижных столов" class="hover mapsite" id="footer148">
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating149" data-href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ<span><br>~mekhanizmy-dlya-razdvizhnyh-stolov</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-??01">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" id="flo-??32">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                            
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 
@@ -4399,51 +4403,35 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-pivot-tn-103-2329-02" style="padding: 35px 0;">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#pivot-tn-103-2329-02">Pivot TN 103.2329.02<span> <br>~pivot-tn-103-2329-02</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                          
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="МЕХАНИЗМЫ для ОБУВНИЦ" class="hover mapsite" id="footer150">
-                                                                <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating151">МЕХАНИЗМЫ для ОБУВНИЦ<span><br>~- profili-reznye</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating151" data-href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ<span><br>~mekhanizmy-dlya-obuvnic/span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-razdvizhnoy-derzhatel-dlya-obuvi-560-1000-mm-chernyy-892-11-300">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#razdvizhnoy-derzhatel-dlya-obuvi-560-1000-mm-chernyy-892-11-300">Раздвижной держатель для обуви 560-1000 мм черный 892.11.300<span> <br>~razdvizhnoy-derzhatel-dlya-obuvi-560-1000-mm-chernyy-892-11-300</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                        <TD class="mapsite" id="flo-razdvizhnoy-derzhatel-dlya-obuvi-460-750-mm-stal-hromirovannyy-892-12-906">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#razdvizhnoy-derzhatel-dlya-obuvi-460-750-mm-stal-hromirovannyy-892-12-906">Раздвижной держатель для обуви 460-750 мм сталь, хромированный 892.12.906<span> <br>~razdvizhnoy-derzhatel-dlya-obuvi-460-750-mm-stal-hromirovannyy-892-12-906</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                           
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 
@@ -4453,58 +4441,41 @@
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
                                                 <TD data-tooltip="УНИВЕРСАЛЬНАЯ" class="hover mapsite" id="footer33">
-                                                    <p data-href="furnitura-universalnaya.php"  data-img="./dist/images/no-175x0.jpg" id="floating34">ФУРНИТУРА УНИВЕРСАЛЬ<wbr>НАЯ<span><br>~-universalnaya</span></p></TD>
+                                                    <p data-href="furnitura-universalnaya.php#universalnaya"  data-img="./dist/images/no-175x0.jpg" id="floating34">ФУРНИТУРА УНИВЕРСАЛЬ<wbr>НАЯ<span><br>~universalnaya</span></p></TD>
                                                 <TD>
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="ЗАЩЕЛКИ УНИВЕРСАЛЬНЫЕ" class="hover mapsite" id="footer151" >
-                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating152">ЗАЩЕЛКИ УНИВЕРСАЛЬ<wbr>НЫЕ<span> <br>~-katalog-rezby</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating152" data-href="furnitura-universalnaya.php#zashchelki-universalnye">ЗАЩЕЛКИ УНИВЕРСАЛЬ<wbr>НЫЕ<span> <br>~zashchelki-universalnye</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Столб проходной №1 <span> <br>~-tokarki-ctolb-prohodnoy-1</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000590-06-901-zashchelka-universalnaya" style="padding: 35px 0;">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-universalnaya.php#5000590-06-901-zashchelka-universalnaya">5000590-06-901 защелка универсальная<span> <br>~5000590-06-901-zashchelka-universalnaya</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Столб проходной №1 спецификация <span> <br>~-tokarki-ctolb-prohodnoy-1-specifikaciya</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Столб проходной №1 спецификация <span> <br>~-tokarki-ctolb-prohodnoy-1-specifikaciya</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Столб проходной №1 спецификация <span> <br>~-tokarki-ctolb-prohodnoy-1-specifikaciya</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->                                                                              
+                                                                                                                                                
                                                                 </TABLE>
                                                             </TD>
                                                         </TR>
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА" class="hover mapsite" id="footer152" >
-                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating153">КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА<span> <br>~-katalog-lepniny</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating153" data-href="furnitura-universalnaya.php#komplekty-furnitury-dlya-montazha">КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА<span> <br>~komplekty-furnitury-dlya-montazha</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Столб проходной №1 <span> <br>~-tokarki-ctolb-prohodnoy-1</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-universalnaya.php#kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">КФДМ блоков дверных (1 комплект на 1 дверной блок)<span> <br>~kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Столб проходной №1 спецификация <span> <br>~-tokarki-ctolb-prohodnoy-1-specifikaciya</span></p>
+                                                                        <TD class="mapsite" id="flo-kfdm-plintusov-1-komplekt-na-10-mp-plintusa">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-universalnaya.php#kfdm-plintusov-1-komplekt-na-10-mp-plintusa">КФДМ плинтусов (1 комплект на 10 м.п. плинтуса)<span> <br>~kfdm-plintusov-1-komplekt-na-10-mp-plintusa</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->                                                                            
@@ -4522,47 +4493,17 @@
                                                 <TD>
                                                     <TABLE >
                                                         <TR>
-                                                            <TD data-tooltip="HAFELE" class="hover mapsite" id="footer153" >
-                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating154">HAFELE<span> <br>~-ctolb-prohodnoy-1</span></p>
+                                                            <TD data-tooltip="HAFELE" class="hover mapsite" id="footer153" colspan="2">
+                                                                <p onclick='window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")' data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating154">HAFELE<span> <br>~-ctolb-prohodnoy-1</span></p>
                                                             </TD>                                                                            
-                                                            <TD>
-                                                                <TABLE >                                                                                          
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Столб проходной №1 <span> <br>~-tokarki-ctolb-prohodnoy-1</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Столб проходной №1 спецификация <span> <br>~-tokarki-ctolb-prohodnoy-1-specifikaciya</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->                                                                            
-                                                                </TABLE>
-                                                            </TD>
+                                                            
                                                         </TR>
-                                                        <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->
                                                         <TR>
                                                             <TD data-tooltip="Blum" class="hover mapsite" id="footer154" >
-                                                                <p data-href="" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating155">Blum<span> <br>~-ctolb-prohodnoy-1</span></p>
+                                                                <p  onclick='window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")' data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating155">Blum<span> <br>~-ctolb-prohodnoy-1</span></p>
                                                             </TD>                                                                            
-                                                            <TD>
-                                                                <TABLE >                                                                                          
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Столб проходной №1 <span> <br>~-tokarki-ctolb-prohodnoy-1</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-175x0.jpg">Столб проходной №1 спецификация <span> <br>~-tokarki-ctolb-prohodnoy-1-specifikaciya</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->                                                                            
-                                                                </TABLE>
-                                                            </TD>
+                                                            
                                                         </TR>
                                                             
                                                     </TABLE>
@@ -4845,8 +4786,7 @@
                                                                 <TD data-tooltip="" class="hover mapsite">
                                                                     <p data-href="" data-img="./dist/images/no-175x0.jpg">Зеркала и стекла - таблица стандартных образцов<span><br>~-11701tablica-dlin-shirin-tolshchin-dlya-specifikacii</span></p>
                                                                 </TD>                                                             
-                                                            </TR>
-                                                            
+                                                            </TR>                                                            
                                                             
                                                         </TABLE>
                                                     </TD>
@@ -4917,7 +4857,7 @@
                                                             <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                             <TR>
                                                                 <TD data-tooltip="сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART" class="hover mapsite" colspan="2">
-                                                                    <p data-href="" data-img="./dist/images/no-175x0.jpg">рекомендатсии по выбору и устроиству современныкх конструктсии окон<span><br>~- profili-reznye</span></p>
+                                                                    <p data-href="#rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon" data-img="./dist/images/no-175x0.jpg">рекомендации по выбору и устройству современных конструкций окон<span><br>~rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon</span></p>
                                                                 </TD>                                                         
                                                             </TR> 
                                                         </TABLE>
