@@ -3840,7 +3840,7 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2"  id="flo-planet-ft"   5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-planet-ft"   style="padding: 35px 0;">
                                                                             <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#planet-ft">Planet_FT<span> <br>~planet-ft</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
@@ -4380,17 +4380,12 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-??01">
+                                                                        <TD class="mapsite" colspan="2" id="flo-??01" style="padding: 35px 0;">
                                                                             <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-??32">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
+                                                                   
                                                                             
                                                                 </TABLE>
                                                             </TD>
