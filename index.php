@@ -3807,7 +3807,7 @@
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ" class="hover mapsite" id="footer132">
-                                                                <p data-href="furnitura-dlya-dvernyh-blokov.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating133">ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ<span><br>~zamki-dlya-poloten-dvernyh</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating133" data-href="furnitura-dlya-dvernyh-blokov.php#zamki-dlya-poloten-dvernyh">ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ<span><br>~zamki-dlya-poloten-dvernyh</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -3857,20 +3857,20 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-?" >
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#rigeli-shpingalety-dlya-poloten-dvernyh">???<span> <br>~???</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-rigel1" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#rigel1">???<span> <br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-??">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#rigeli-shpingalety-dlya-poloten-dvernyh">???<span> <br>~???</span></p>
+                                                                        <TD class="mapsite" id="flo-rigel2">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#rigel2">???<span> <br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-???">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#rigeli-shpingalety-dlya-poloten-dvernyh">???<span> <br>~???</span></p>
+                                                                        <TD class="mapsite" id="flo-rigel3">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#rigel3">???<span> <br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->           
@@ -3885,20 +3885,20 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2"  id="flo-????">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#dovodchiki-dlya-poloten-dvernyh">???<span> <br>~?</span></p>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-dovodchik1">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#dovodchik1">???<span> <br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-??????">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#dovodchiki-dlya-poloten-dvernyh">???<span> <br>~?</span></p>
+                                                                        <TD class="mapsite" id="flo-dovodchik2">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#dovodchik2">???<span> <br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-??????">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#dovodchiki-dlya-poloten-dvernyh">???<span> <br>~?</span></p>
+                                                                        <TD class="mapsite" id="flo-dovodchik3">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#dovodchik3">???<span> <br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->           
@@ -3913,20 +3913,20 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2"  id="flo-???????">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#upory-napolnye-i-nastennye">??? <span> <br>~?</span></p>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-upor1">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#upor1">??? <span> <br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-???????">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#upory-napolnye-i-nastennye">???<span> <br>~?</span></p>
+                                                                        <TD class="mapsite" id="flo-upor2">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#upor2">???<span> <br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-????????">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#upory-napolnye-i-nastennye">???<span> <br>~?</span></p>
+                                                                        <TD class="mapsite" id="flo-upor3">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#upor3">???<span> <br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->           
@@ -3935,10 +3935,28 @@
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART" class="hover mapsite" colspan="2" id="footer137">
-                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart">Сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART<span><br>~svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart</span></p>
+                                                            <TD data-tooltip="сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART" class="hover mapsite"  id="footer137">
+                                                                <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart">СВОДНАЯ ТАБЛИЦА ФУРНИТУРЫ ДВЕРЕЙ РАСПАШНЫХ<span><br>~svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart</span></p>
+                                                            </TD>
+                                                            <TD>
+                                                                <TABLE >                                                                                          
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-klass-lyuks">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#klass-lyuks">класс ЛЮКС<span> <br>~klass-lyuks</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-klass-standart">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#klass-standart">класс STANDART<span> <br>~klass-standart</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
+                                                                             
+                                                                </TABLE>
                                                             </TD>                                                         
-                                                        </TR>  
+                                                        </TR> 
+                                                        <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->   
                                                     </TABLE>
                                                 </TD>
                                             </TR>                     
@@ -4026,7 +4044,7 @@
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov"  style="padding: 35px 0;" >
-                                                                            <p data-href="furnitura-dlya-mebeli.php#5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov" data-img="./dist/images/no-175x0.jpg">5000502-02-110 система раздвижения и складывания фасадов<span> <br>~5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov</span></p>
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov">5000502-02-110 система раздвижения и складывания фасадов<span> <br>~5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -4042,8 +4060,8 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-?1"  style="padding: 35px 0;" >
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~?</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-mehanizmy-podemny1"  style="padding: 35px 0;" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#mehanizmy-podemny1">???<span> <br>~mehanizmy-podemny1</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
