@@ -207,85 +207,74 @@
                                             </li>                                                                                    
                                         </ul>
                                      </li> 
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#zashchelki-mebelnye">ЗАЩ</a>
+                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#polkoderzhateli">ПОЛКОДЕРЖАТЕЛИ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-100-zashchelka-tipon" >5000502-06-100 защелка - TIPON</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki">5000502-08-101 PK2 полкодержатель с фиксацией полки</a>
+                                            </li>                                                                                                                                
+                                        </ul>
+                                     </li>
+                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ</a>
+                                        <ul class="list-group sub_menu2">
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-10-300-shtanga-kruglaya-dlya-veshala">5000502-10-300 штанга круглая для вешала</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-106-zashchelka-mebelnaya-magnitnaya">5000502-06-106 защелка мебельная магнитная</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala">5000502-10-301 штанга круглая с проходным держателем</a>
                                             </li>                                                                                    
                                         </ul>
                                      </li>
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#zashchelki-mebelnye">ЗАЩ</a>
+                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-100-zashchelka-tipon" >5000502-06-100 защелка - TIPON</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantograf1">...</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-106-zashchelka-mebelnaya-magnitnaya">5000502-06-106 защелка мебельная магнитная</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantograf2">...</a>
                                             </li>                                                                                    
                                         </ul>
                                      </li>
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#zashchelki-mebelnye">ЗАЩ</a>
+                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#ruchki">РУЧКИ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-100-zashchelka-tipon" >5000502-06-100 защелка - TIPON</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#ruchka1" >...</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-106-zashchelka-mebelnaya-magnitnaya">5000502-06-106 защелка мебельная магнитная</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#ruchka2">...</a>
                                             </li>                                                                                    
                                         </ul>
                                      </li>
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#zashchelki-mebelnye">ЗАЩ</a>
+                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-100-zashchelka-tipon" >5000502-06-100 защелка - TIPON</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-106-zashchelka-mebelnaya-magnitnaya">5000502-06-106 защелка мебельная магнитная</a>
-                                            </li>                                                                                    
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mekhanizmy1" >...</a>
+                                            </li>                                                                                                                              
                                         </ul>
                                      </li>
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#zashchelki-mebelnye">ЗАЩ</a>
+                                   
+                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#natyazhiteli-dlya-fasadov">НАТЯЖИТЕЛИ для ФАСАДОВ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-100-zashchelka-tipon" >5000502-06-100 защелка - TIPON</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-106-zashchelka-mebelnaya-magnitnaya">5000502-06-106 защелка мебельная магнитная</a>
-                                            </li>                                                                                    
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pivot-tn-103-2329-02">Pivot TN 103.2329.02</a>
+                                            </li>                                                                                                                               
                                         </ul>
-                                     </li>
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#zashchelki-mebelnye">ЗАЩ</a>
-                                        <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-100-zashchelka-tipon" >5000502-06-100 защелка - TIPON</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-106-zashchelka-mebelnaya-magnitnaya">5000502-06-106 защелка мебельная магнитная</a>
-                                            </li>                                                                                    
-                                        </ul>
-                                     </li>
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#zashchelki-mebelnye">ЗАЩ</a>
-                                        <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-100-zashchelka-tipon" >5000502-06-100 защелка - TIPON</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-106-zashchelka-mebelnaya-magnitnaya">5000502-06-106 защелка мебельная магнитная</a>
-                                            </li>                                                                                    
-                                        </ul>
-                                     </li>                                 
+                                     </li> 
+                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ</a>
+                                     <ul class="list-group sub_menu2">
+                                         <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#razdvizhnoy-derzhatel-dlya-obuvi-560-1000-mm-chernyy-892-11-300">Раздвижной держатель для обуви 560-1000 мм черный </a>
+                                         </li>
+                                         <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#razdvizhnoy-derzhatel-dlya-obuvi-460-750-mm-stal-hromirovannyy-892-12-906">Раздвижной держатель для обуви 460-750 мм хромированный </a>
+                                         </li>                                                                                    
+                                     </ul>
+                                  </li>                                
                                 </ul>
                             </li>
                             <li class="menu">
                                 <a href="furnitura-universalnaya.php" class="list-group-item '.$item_universalnaya_Class.'">УНИВЕРСАЛЬНАЯ</a>
                                 <ul class="list-group sub_menu">
-                                    <li class="menu2"><a href="izdeliya-paneli-stenovye.php#" class="list-group-item sub">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
+                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-universalnaya.php#zashchelki-universalnye">ЗАЩЕЛКИ УНИВЕРСАЛЬНЫЕ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a href="#" class="list-group-item sub">...</a>
-                                            </li>
-                                            <li><a href="#" class="list-group-item sub">...</a>
-                                            </li>
-                                            <li><a href="#" class="list-group-item sub">...</a>
-                                            </li>                                          
+                                            <li><a class="list-group-item sub" href="furnitura-universalnaya.php#5000590-06-901-zashchelka-universalnaya">5000590-06-901 защелка универсальная</a>
+                                            </li>                                                                                   
                                         </ul>
                                     </li>
-                                    <li class="menu2"><a href="izdeliya-paneli-stenovye.php#sborochnye-shemy-paneli-stenovye" class="list-group-item sub">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-universalnaya.php#komplekty-furnitury-dlya-montazha">КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a href="#" class="list-group-item sub">...</a>
+                                            <li><a class="list-group-item sub" href="furnitura-universalnaya.php#kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">КФДМ блоков дверных (1 комплект на 1 дверной блок)</a>
                                             </li>
-                                            <li><a href="#" class="list-group-item sub">...</a>
-                                            </li>
-                                            <li><a href="#" class="list-group-item sub">...</a>
-                                            </li>                                       
+                                            <li><a class="list-group-item sub" href="furnitura-universalnaya.php#kfdm-plintusov-1-komplekt-na-10-mp-plintusa">КФДМ плинтусов (1 комплект на 10 м.п. плинтуса)</a>
+                                            </li>                                                                                 
                                         </ul>
                                     </li>                    
                                 </ul>
@@ -293,26 +282,10 @@
                             <li class="menu">
                                 <a href="furnitura-katalogi.php" class="list-group-item '.$item_katalogi_Class.'">КАТАЛОГИ</a>
                                 <ul class="list-group sub_menu">
-                                    <li class="menu2"><a href="izdeliya-karnizy-i-frizy.php#" class="list-group-item sub">КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ</a>
-                                        <ul class="list-group sub_menu2">
-                                            <li><a href="#" class="list-group-item sub">...</a>
-                                            </li>
-                                            <li><a href="#" class="list-group-item sub">...</a>
-                                            </li>
-                                            <li><a href="#" class="list-group-item sub">...</a>
-                                            </li>                                         
-                                        </ul>
+                                    <li class="menu2"><a href="https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html" target="_blank" class="list-group-item sub">HAFELE</a>                                       
                                     </li>
-                                    <li class="menu2"><a href="izdeliya-karnizy-i-frizy.php#sborochnye-shemy-karnizy-i-frizy" class="list-group-item sub">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
-                                        <ul class="list-group sub_menu2">
-                                            <li><a href="#" class="list-group-item sub">...</a>
-                                            </li>
-                                            <li><a href="#" class="list-group-item sub">...</a>
-                                            </li>
-                                            <li><a href="#" class="list-group-item sub">...</a>
-                                            </li>                                   
-                                        </ul>
-                                    </li>     
+                                    <li class="menu2"><a href="http://publications.blum.com/2016/catalogue/ru/" target="_blank" class="list-group-item sub">BLUM</a>                                       
+                                    </li>                                        
                                 </ul>
                             </li>                                                      
                         </ul>

@@ -4342,23 +4342,18 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-?01">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-pantograf1">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#pantograf1">???<span> <br>~pantograf1</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-?02">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
+                                                                        <TD class="mapsite" id="flo-pantograf2">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#pantograf2">???<span> <br>~pantograf2</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-?03">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                           
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 
@@ -4370,23 +4365,18 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-?08">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-ruchka1">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#ruchka1">???<span> <br>~ruchka1</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-?09">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
+                                                                        <TD class="mapsite" id="flo-ruchka2">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#ruchka2">???<span> <br>~ruchka2</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-?010">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                            
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 
@@ -4398,8 +4388,8 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-??01" style="padding: 35px 0;">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#">???<span> <br>~???</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-mekhanizmy1" style="padding: 35px 0;">
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#mekhanizmy1">???<span> <br>~mekhanizmy1</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -4411,7 +4401,7 @@
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="НАТЯЖИТЕЛИ для ФАСАДОВ" class="hover mapsite" id="footer149">
-                                                                <p data-href="furnitura-dlya-mebeli.php#" data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating150">НАТЯЖИТЕЛИ для ФАСАДОВ<span><br>~- profili-reznye</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating150" data-href="furnitura-dlya-mebeli.php#natyazhiteli-dlya-fasadov">НАТЯЖИТЕЛИ для ФАСАДОВ<span><br>~- profili-reznye</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4507,14 +4497,14 @@
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="HAFELE" class="hover mapsite" id="footer153" colspan="2">
-                                                                <p onclick='window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")' data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating154">HAFELE<span> <br>~-ctolb-prohodnoy-1</span></p>
+                                                                <p onclick='window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")' data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating154">HAFELE<span> <br>~HAFELE</span></p>
                                                             </TD>                                                                            
                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->
                                                         <TR>
                                                             <TD data-tooltip="Blum" class="hover mapsite" id="footer154" >
-                                                                <p  onclick='window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")' data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating155">Blum<span> <br>~-ctolb-prohodnoy-1</span></p>
+                                                                <p  onclick='window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")' data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating155">Blum<span> <br>~Blum</span></p>
                                                             </TD>                                                                            
                                                             
                                                         </TR>
