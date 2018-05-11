@@ -20,7 +20,7 @@ include 'inc-left-side-menu-metodichki.php';
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" >
                         <div class="page-header">
-                          <h1 itemprop="name" id="vyhodnye-svedeniya">Выходные сведения</h1>
+                          <h1 itemprop="name" id="vyhodnye-svedeniya">ВЫХОДНЫЕ СВЕДЕНИЯ</h1>
                         </div>
 
                         
@@ -46,8 +46,8 @@ include 'inc-left-side-menu-metodichki.php';
                           <h1 itemprop="name" id="vizualnaya-chast-proekta">ВИЗУАЛЬНАЯ ЧАСТЬ ПРОЕКТА</h1>
                         </div>  
                         <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt harum minus possimus, tempore suscipit fugit nostrum enim hic illum tempora assumenda nemo, vero officiis asperiores, fuga aut. Ex, ratione!</p>
-                        <object data="./dist/files/5000404-00_02 раздел 03 ВИЗУАЛИЗАЦИЯ.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/5000404-00_02 раздел 03 ВИЗУАЛИЗАЦИЯ.pdf"></a>
+                        <object data="./dist/files/5000404-00_02 раздел 03 ВИЗУАЛИЗАЦИЯ2.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/5000404-00_02 раздел 03 ВИЗУАЛИЗАЦИЯ2.pdf"></a>
                             </object>
                        
                     </article>
@@ -426,7 +426,7 @@ include 'inc-left-side-menu-metodichki.php';
                 <div class="col-md-2" id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
                         <ul class="nav bs-sidenav">
-                            <li><a href="#vyhodnye-svedeniya">Выходные сведения</a>
+                            <li><a href="#vyhodnye-svedeniya">ВЫХОДНЫЕ СВЕДЕНИЯ</a>
                                 <ul class="nav">
                                     <li><a href="#list-titulnyy">Лист титульный</a>
                                     </li>

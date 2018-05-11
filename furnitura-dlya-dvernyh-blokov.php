@@ -18,18 +18,37 @@ include 'inc-left-side-menu-furnitura.php';
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main">
                     <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                      <section itemprop="articleBody" >
                         <div class="page-header">
-                          <h1 itemprop="name" id="dveri-konstrukcii">Петли для полотен дверных</h1>
-                        </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-               
+                          <h1 itemprop="name" id="petli-dlya-poloten-dvernyh">ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ</h1>
+                        </div>                        
+                        <h2 id="petli-vvertnye-chetyrehshtyrkovye-otlav">петли ввертные четырехштырьковые OTLAV 14 мм</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/петли ввертные четырехштырьковые OTLAV 14 мм.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/петли ввертные четырехштырьковые OTLAV 14 мм.pdf"></a>
+                            </object>
+                            <!-- <h2 >&nbsp;</h2> -->
+                        <h2 id="otlav2">петли ввертные четырехштырьковые OTLAV</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/петли ввертные четырехштырьковые OTLAV.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/петли ввертные четырехштырьковые OTLAV.pdf"></a>
+                            </object>
+                        <h2 id="otlav3">петли дверные разные</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/петли дверные разные.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/петли дверные разные.pdf"></a>
+                            </object>
+
+                             <h2 id="petli-kartochnye-dvernye-fs">петли карточные дверные FS</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/артикулы петель карточных дверных FS.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/артикулы петель карточных дверных FS.pdf"></a>
+                            </object>
+
                       </section>
                     </article>
+
+                    
 
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
@@ -140,14 +159,18 @@ include 'inc-left-side-menu-furnitura.php';
                 <div class="col-md-2" id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
                         <ul class="nav bs-sidenav">
-                            <li><a href="#dveri-konstrukcii">Конструкции дверных блоков</a>
-                            </li>
-                            <li><a href="#polotna">Дверные блоки с распашными полотнами </a>
+                            
+                            <li><a href="#petli-dlya-poloten-dvernyh">ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ</a>
                                 <ul class="nav">
-                                    <li><a href="#polotna-bez-falca">Полотна без фальца</a>
+                                    <li><a href="#petli-vvertnye-chetyrehshtyrkovye-otlav">петли ввертные четырехштырьковые OTLAV 14 мм</a>
                                     </li>
-                                    <li><a href="#polotna-s-falcem">Полотна с фальцем</a>
-                                    </li>                                   
+                                    <li><a href="#otlav2">петли ввертные четырехштырьковые OTLAV</a>
+                                    </li>
+                                    <li><a href="#otlav3">петли дверные разные</a>
+                                    </li>
+                                    <li><a href="#petli-kartochnye-dvernye-fs">петли карточные дверные FS</a>
+                                    </li>
+                                                                       
                                 </ul>
                             </li>
                             <li>
