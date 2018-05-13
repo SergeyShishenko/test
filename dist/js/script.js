@@ -93,7 +93,8 @@ $('#myModal').on('show.bs.modal', function (event) {
 // index.html
 var menu_selector = ".top-menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
 var nv;
-function nvfn(){ nv =parseInt($("div.navbar").css('height').replace("px", "")) + 20;}
+// function nvfn(){ nv =parseInt($("div.navbar").css('height').replace("px", "")) + 20;}
+function nvfn(){ nv =parseInt($("div.navbar").css('height').replace("px", "")) + 0;}
 function onScroll(){
     nvfn();
     // nv = nv;

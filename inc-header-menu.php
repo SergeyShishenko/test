@@ -38,7 +38,7 @@
                             <a href="metodichki-dokument-117.php">МЕТОДИЧКИ</a>
                         </li>
                         <li '.$furnituraClass.'>
-                            <a href="furnitura-katalogi.php">ФУРНИТУРА</a>
+                            <a href="furnitura-dlya-dvernyh-blokov.php">ФУРНИТУРА</a>
                         </li>
                         <li '.$materialyClass.'>
                             <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>

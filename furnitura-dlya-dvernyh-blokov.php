@@ -21,28 +21,42 @@ include 'inc-left-side-menu-furnitura.php';
                       <section itemprop="articleBody" >
                         <div class="page-header">
                           <h1 itemprop="name" id="petli-dlya-poloten-dvernyh">ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ</h1>
-                        </div>                        
-                        <h2 id="petli-vvertnye-chetyrehshtyrkovye-otlav">петли ввертные четырехштырьковые OTLAV 14 мм</h2>
+                        </div> 
+                        <h2 id="petli-vvertnye-chetyrehshtyrkovye-otlav" >&nbsp;</h2>                   
+                        <h2 >Петли ввертные четырехштырьковые OTLAV 14 мм</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/петли ввертные четырехштырьковые OTLAV 14 мм.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/петли ввертные четырехштырьковые OTLAV 14 мм.pdf"></a>
                             </object>
-                            <!-- <h2 >&nbsp;</h2> -->
-                        <h2 id="otlav2">петли ввертные четырехштырьковые OTLAV</h2>
+                            <h2 id="otlav2" >&nbsp;</h2>
+                        <h2>Петли ввертные четырехштырьковые OTLAV</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/петли ввертные четырехштырьковые OTLAV.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/петли ввертные четырехштырьковые OTLAV.pdf"></a>
                             </object>
-                        <h2 id="otlav3">петли дверные разные</h2>
+                            <h2 id="otlav3">&nbsp;</h2>
+                        <h2 >Петли дверные разные</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/петли дверные разные.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/петли дверные разные.pdf"></a>
                             </object>
-
-                             <h2 id="petli-kartochnye-dvernye-fs">петли карточные дверные FS</h2>
+                          <h2  id="petli-kartochnye-dvernye-fs">&nbsp;</h2> 
+                             <h2>Петли карточные дверные FS</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/артикулы петель карточных дверных FS.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/артикулы петель карточных дверных FS.pdf"></a>
+                            </object>
+                            <h2  id="petli-skrytogo-montazha-tectus">&nbsp;</h2> 
+                             <h2 >Петли скрытого монтажа TECTUS TE_240_3D</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/TE_240_3D.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/TE_240_3D.pdf"></a>
+                            </object>
+                            <h2  id="petli-skrytogo-montazha-tectus-TE_340_3D">&nbsp;</h2> 
+                             <h2 >Петли скрытого монтажа TECTUS TE_340_3D</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/TE_340_3D.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/TE_340_3D.pdf"></a>
                             </object>
 
                       </section>
@@ -162,13 +176,17 @@ include 'inc-left-side-menu-furnitura.php';
                             
                             <li><a href="#petli-dlya-poloten-dvernyh">ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ</a>
                                 <ul class="nav">
-                                    <li><a href="#petli-vvertnye-chetyrehshtyrkovye-otlav">петли ввертные четырехштырьковые OTLAV 14 мм</a>
+                                    <li><a href="#petli-vvertnye-chetyrehshtyrkovye-otlav">Петли ввертные четырехштырьковые OTLAV 14 мм</a>
                                     </li>
-                                    <li><a href="#otlav2">петли ввертные четырехштырьковые OTLAV</a>
+                                    <li><a href="#otlav2">Петли ввертные четырехштырьковые OTLAV</a>
                                     </li>
-                                    <li><a href="#otlav3">петли дверные разные</a>
+                                    <li><a href="#otlav3">Петли дверные разные</a>
                                     </li>
-                                    <li><a href="#petli-kartochnye-dvernye-fs">петли карточные дверные FS</a>
+                                    <li><a href="#petli-kartochnye-dvernye-fs">Петли карточные дверные FS</a>
+                                    </li>
+                                    <li><a href="#petli-skrytogo-montazha-tectus">Петли скрытого монтажа TECTUS TE_240_3D</a>
+                                    </li>
+                                    <li><a href="#petli-skrytogo-montazha-tectus-TE_340_3D">Петли скрытого монтажа TECTUS TE_340_3D</a>
                                     </li>
                                                                        
                                 </ul>
