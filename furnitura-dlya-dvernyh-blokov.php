@@ -62,7 +62,36 @@ include 'inc-left-side-menu-furnitura.php';
                       </section>
                     </article>
 
-                    
+
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" >
+                        <div class="page-header">
+                          <h1 itemprop="name" id="mehanizmy-razdvizheniya-dlya-poloten-dvernyh">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ПОЛОТЕН ДВЕРНЫХ</h1>
+                        </div> 
+                        <h2 id="sistema-razdvizheniya-laguna-standart">&nbsp;</h2>                   
+                        <h2 >Система раздвижения Laguna Standart</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/Система раздвижения Laguna Standart.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/Система раздвижения Laguna Standart.pdf"></a>
+                            </object>
+
+                      </section>
+                    </article>
+
+                     <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" >
+                        <div class="page-header">
+                          <h1 itemprop="name" id="zamki-dlya-poloten-dvernyh">ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ</h1>
+                        </div> 
+                        <h2 id="zamki-agb-dlya-razdvizhnyh-dverey">&nbsp;</h2>                   
+                        <h2 >Замки AGB для раздвижных дверей</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/Scivola Tre.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/Scivola Tre.pdf"></a>
+                            </object>
+
+                      </section>
+                    </article>
 
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
@@ -126,6 +155,7 @@ include 'inc-left-side-menu-furnitura.php';
 
                       </section>
                     </article>
+
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header">
@@ -137,6 +167,7 @@ include 'inc-left-side-menu-furnitura.php';
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
                       </section>
                     </article>
+
                     <article itemscope="" itemtype="http://schema.org/Article">
                         <section itemprop="articleBody" id="bs-docs-section">
                           <div class="page-header">
@@ -147,7 +178,8 @@ include 'inc-left-side-menu-furnitura.php';
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
                         </section>
-                      </article>
+                    </article>
+
                     <article itemscope="" itemtype="http://schema.org/Article">
                         <section itemprop="articleBody" id="bs-docs-section">
                           <div class="page-header">
@@ -168,6 +200,7 @@ include 'inc-left-side-menu-furnitura.php';
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
                         </section>
                     </article>
+
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
@@ -192,17 +225,18 @@ include 'inc-left-side-menu-furnitura.php';
                                 </ul>
                             </li>
                             <li>
-                                <a href="#razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</a>
+                                <a href="#mehanizmy-razdvizheniya-dlya-poloten-dvernyh">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ПОЛОТЕН ДВЕРНЫХ</a>
                                 <ul class="nav">
-                                    <li><a href="#razdvizhnye-polotna-po-stene">Полотна без складывания — раздвижение по стене</a>
-                                    </li>
-                                    <li><a href="#razdvizhnye-polotna-v-penal">Полотна без складывания — раздвижение в пенал</a>
-                                    </li>
-                                    <li><a href="#razdvizhnye-polotna-v-proeme">Полотна без складывания — раздвижение в проеме</a>
-                                  </li>
+                                    <li><a href="#sistema-razdvizheniya-laguna-standart">Система раздвижения Laguna Standart</a>
+                                    </li>                                  
                                 </ul>
                             </li>
-                            <li><a href="#mayatnikovye-polotna">Дверные блоки с маятниковыми (барными) полотнами</a>
+
+                            <li><a href="#zamki-dlya-poloten-dvernyh">ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ</a>
+                                <ul class="nav">
+                                    <li><a href="#zamki-agb-dlya-razdvizhnyh-dverey">Замки AGB для раздвижных дверей</a>
+                                    </li>                                  
+                                </ul>
                             </li>
                             <li><a href="#portaly">Дверные блоки без полотен (порталы)</a>
                             </li>

@@ -28,7 +28,7 @@
                                     </li>
                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-dvernyh-blokov.php#mehanizmy-razdvizheniya-dlya-poloten-dvernyh">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ПОЛОТЕН ДВЕРНЫХ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href=""furnitura-dlya-dvernyh-blokov.php#sistema-razdvizheniya-laguna-standart">система раздвижения Lbaguna Standart</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-dvernyh-blokov.php#sistema-razdvizheniya-laguna-standart">система раздвижения Laguna Standart</a>
                                             </li>
                                                                                     
                                         </ul>

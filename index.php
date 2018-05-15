@@ -3811,7 +3811,7 @@ if (isset($_SESSION['sess_login']) && isset($_SESSION['sess_pass'])) {
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" style="padding: 35px 0;" id="flo-sistema-razdvizheniya-laguna-standart">
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#sistema-razdvizheniya-laguna-standart">система раздвижения Lbaguna Standart<span> <br>~sistema-razdvizheniya-laguna-standart</span></p>
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-dvernyh-blokov.php#sistema-razdvizheniya-laguna-standart">система раздвижения Laguna Standart<span> <br>~sistema-razdvizheniya-laguna-standart</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
