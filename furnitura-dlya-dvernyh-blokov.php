@@ -14,6 +14,7 @@ $item_katalogi_Class = '';
 include 'inc-head.php';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-furnitura.php';
+
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main">
@@ -83,13 +84,31 @@ include 'inc-left-side-menu-furnitura.php';
                         <div class="page-header">
                           <h1 itemprop="name" id="zamki-dlya-poloten-dvernyh">ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
+
                         <h2 id="zamki-agb-dlya-razdvizhnyh-dverey">&nbsp;</h2>                   
                         <h2 >Замки AGB для раздвижных дверей</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/Scivola Tre.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/Scivola Tre.pdf"></a>
                             </object>
-
+                            
+                        <h2 id="zamki-i-otvetnye-planki-agb">&nbsp;</h2>                   
+                        <h2 >Замки и ответные планки AGB</h2>
+                        <p>Mediana Evolution</p>
+                        <object data="./dist/files/замки AGB Mediana Evolution.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/замки AGB Mediana Evolution.pdf"></a>
+                            </object>
+                            <p>Mediana Polaris</p>
+                        <object data="./dist/files/Z9003802X2_fd_progettoXT_ita.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/Z9003802X2_fd_progettoXT_ita.pdf"></a>
+                            </object>
+                               
+                        <h2 id="zamki-i-otvetnye-planki-ces">&nbsp;</h2>                   
+                        <h2 >Замки и ответные планки CES</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/габаритные размеры замков и ответных планок CES.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/габаритные размеры замков и ответных планок CES.pdf"></a>
+                            </object>
                       </section>
                     </article>
 
@@ -235,7 +254,11 @@ include 'inc-left-side-menu-furnitura.php';
                             <li><a href="#zamki-dlya-poloten-dvernyh">ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ</a>
                                 <ul class="nav">
                                     <li><a href="#zamki-agb-dlya-razdvizhnyh-dverey">Замки AGB для раздвижных дверей</a>
-                                    </li>                                  
+                                    </li> 
+                                    <li><a href="#zamki-i-otvetnye-planki-agb">Замки и ответные планки AGB</a>
+                                    </li>
+                                    <li><a href="#zamki-i-otvetnye-planki-ces">Замки и ответные планки CES</a>
+                                    </li>                                 
                                 </ul>
                             </li>
                             <li><a href="#portaly">Дверные блоки без полотен (порталы)</a>
@@ -245,5 +268,7 @@ include 'inc-left-side-menu-furnitura.php';
                             </li>                         
                         </ul>
                     </div>
+                     
                 </div><!-- боковое меню блоки дверные конец -->
+                
 <?php include 'inc-footer.php'; ?>

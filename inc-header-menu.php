@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php">500.СТП</a >
+                    <a class="navbar-brand" href="index.php">500.СТП</a >                    
                 </div>                
                 <div class="navbar-collapse collapse top-menu">
                     <ul class="nav navbar-nav navbar-link " id="navmain">
