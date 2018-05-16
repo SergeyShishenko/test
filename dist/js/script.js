@@ -1,4 +1,5 @@
 
+
 window.onresize = function(){ getPositionSearch();nvfn(); };
 
 function getPositionSearch(){
@@ -99,6 +100,7 @@ function onScroll(){
     nvfn();
     // nv = nv;
     console.log(nv);
+    $(".search_result").hide();
 	var scroll_top = $(document).scrollTop();
 	$(menu_selector + " a").each(function(){
         var hash = $(this).attr("href");
@@ -383,7 +385,6 @@ jQuery(function($){
 		}
 	});
 });
-
 
 
 
