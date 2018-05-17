@@ -158,11 +158,13 @@ $(function() {
         if (str.match(search_str) !== null) {
           // если совпадает строка с подстрокой    
           var result = $(this).text().replace(/^\s*(.*)\s*$/, "$1");
-          result = result.replace(/-\d+/g, ""); //удалить
+        //   result = result.replace(/-\d+/g, ""); //удалить
           result = result.replace(/[b]/g, "").replace(str.match(search_str),"<b>" + str.match(search_str) + "</b>" );
         //   result = result.replace(/[a]/g, "");
         //   result = result.replace(/[c-z]/g, ""); //удалить латинские символы
-          result = result.replace(/[-]+/g, ""); //удалить
+        //   result = result.replace(/[-]+/g, ""); //удалить
+          result = result.replace(/~(.*)/ig,""); //удалить
+
           var aimg="./dist/images/no-175x0.jpg";
           var aref = $(this).data("href");
            if (typeof $(this).data("img") !== "undefined") {aimg = $(this).data("img");    
@@ -192,6 +194,61 @@ $(function() {
   $(".search_result").on("click", "li", function() {  $(".search_result").fadeOut(); });
 });
 
+
+//Живой поиск index
+ 
+// $(function() {
+//     var  db_search = $("table p");
+    
+//      $(".who").bind("change keyup input click", function() {
+//        $(".search_result").empty();
+//        if (this.value.length >= 2) {
+//          var search_str = new RegExp(this.value, "i");      
+//          db_search.each(function() {
+//            var str = $(this).text(); // получаем текст с каждого элемента
+//            if (str.match(search_str) !== null) {
+//              // если совпадает строка с подстрокой    
+//              var result = $(this).text().replace(/^\s*(.*)\s*$/, "$1");
+//            //   result = result.replace(/-\d+/g, ""); //удалить
+//            result = result.replace(str.match(search_str),"<b>" + str.match(search_str) + "</b>" );
+//            //   result = result.replace(/[b]/g, "").replace(str.match(search_str),"<b>" + str.match(search_str) + "</b>" );
+//            //   result = result.replace(/[a]/g, "");
+//            //   result = result.replace(/[c-z]/g, ""); //удалить латинские символы
+//            //   result = result.replace(/[-]+/g, ""); //удалить
+//            // text = text.replace(/<script[^>]*>(?:(?!<\/script>)[^])*<\/script>/g, "")
+//            //   result = result.replace(/<span>(.*)<\/span>/ig,""); //удалить
+//              result = result.replace(/~(.*)/ig,""); //удалить
+//            //   result=result[1]
+//            //   result = result.replace(/<script[^>]*>(?:(?!<\/script>)[^])*<\/script>/ig,""); //удалить
+             
+//              var aref = $(this).data("href");          
+//              var flo = $(this).parent().attr('id');
+//              // flo = flo.replace(/.*\#/, '');// id элемента
+//              if (flo == undefined){flo='';}else{flo='#'+ flo;}
+   
+//              var aimg = $(this).data("img");
+//              if (typeof aimg == "undefined") { aimg = "./dist/images/mdf-nakladka-053-dsh.png"; }     
+//              $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + '</a><a class="flo" href="' + flo + '">&#9875;</a></li>');
+//            //   $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + '</a></li>');
+//            //   $( "#search  ul  li" ).after( '<a class="flo" href="#' + flo + '">&#9875;</a>' );
+//            }
+//          });
+//        } else {
+//          $(".search_result").fadeOut();
+//        }
+//        if ($(".search_result li").length < 1) {    
+//          $(".search_result").fadeOut();
+//        } else {
+//          $(".search_result").show();
+//        }
+//      });
+//      $(".search_result").hover(function() {
+//        $(".who").blur(); //Убираем фокус с input
+//      });
+//      //При выборе результата поиска, прячем список и заносим выбранный результат в input
+//      $(".search_result").on("click", "li", function() {  $(".search_result").fadeOut(); });
+// });
+   
 
 
 // кнопки при наведении на изображение

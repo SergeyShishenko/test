@@ -38,7 +38,7 @@ include 'inc-left-side-menu-metodichki.php';
                             <object data="./dist/files/5000404-01-002 состав комплекта типовой КД.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000404-01-002 состав комплекта типовой КД.pdf"></a>
                             </object>
-                            <a href="./dist/files/Комплект документов КД.xlsx" type="button" class="btn btn-primary"download="Комплект документов КД">Скачать - Комплект документов КД.xlsx</a>
+                            <a href="./dist/files/Комплект документов КД.xlsx" type="button" class="btn btn-primary"download="Комплект документов КД.xlsx">Скачать - Комплект документов КД.xlsx</a>
 
 
                       </section>
@@ -67,8 +67,8 @@ include 'inc-left-side-menu-metodichki.php';
                             </object>
 
 
-                        <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                        <h2 id="plany-poetazhnye">Планы поэтажные</h2>
+                        <h2 id="plany-poetazhnye">&nbsp;</h2>
+                        <h2 >Планы поэтажные</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/5000404-00_03.01 план_помещений.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000404-00_03.01 план_помещений.pdf"></a>
@@ -125,9 +125,17 @@ include 'inc-left-side-menu-metodichki.php';
                           <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
                           <h2 id="tablica-rezbovyh-elementov-svodnaya-dok-36501">Таблица резьбовых элементов сводная, док. №365.01</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                          <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                              alt: <a href="./dist/files/test.pdf"></a>
+                          <object data="./dist/files/365.01 и 365.02 Таблица резных элементов на заказ.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/365.01 и 365.02 Таблица резных элементов на заказ.pdf"></a>
                               </object>
+
+                              <a href="./dist/files/365.01 и 365.02 Таблица резных элементов на заказ.xlsx" type="button" class="btn btn-primary"download="365.01 и 365.02 Таблица резных элементов на заказ.xlsx">365.01 и 365.02 Таблица резных элементов на заказ.xlsx</a>
+
+                              <object data="./dist/files/Сводная таблица рез.эл._№договора_изд.№.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/Сводная таблица рез.эл._№договора_изд.№.pdf"></a>
+                              </object>
+
+                              <a href="./dist/files/Сводная таблица рез.эл._№договора_изд.№.xlsx" type="button" class="btn btn-primary"download="Сводная таблица рез.эл._№договора_изд.№.xlsx">Скачать - Сводная таблица рез.эл._№договора_изд.№-.xlsx</a>
   
                             </section>
                       </article>
