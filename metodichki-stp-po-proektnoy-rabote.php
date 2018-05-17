@@ -26,15 +26,19 @@ include 'inc-left-side-menu-metodichki.php';
                         
                         <h2 id="list-titulnyy">Лист титульный</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/test.pdf"></a>
+                        <object data="./dist/files/Листы титульные.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/Листы титульные.pdf"></a>
                             </object>
                             <!-- <h2 >&nbsp;</h2> -->
                         <h2 id="sostav-proekta">Состав проекта</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/test.pdf"></a>
+                        <object data="./dist/files/5000404-01-001 состав комплекта типового ДП.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/5000404-01-001 состав комплекта типового ДП.pdf"></a>
                             </object>
+                            <object data="./dist/files/5000404-01-002 состав комплекта типовой КД.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/5000404-01-002 состав комплекта типовой КД.pdf"></a>
+                            </object>
+                            <a href="./dist/files/Комплект документов КД.xlsx" type="button" class="btn btn-primary"download="Комплект документов КД">Скачать - Комплект документов КД.xlsx</a>
 
 
                       </section>
@@ -100,8 +104,8 @@ include 'inc-left-side-menu-metodichki.php';
                           <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
                           <h2 id="plan-poetazhnyy-s-ukazaniem-nomerov-izdeliy">План поэтажный с указанием номеров изделий</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                          <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                              alt: <a href="./dist/files/test.pdf"></a>
+                          <object data="./dist/files/5000404-00_04.02 план_с_изделиями.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/5000404-00_04.02 план_с_изделиями.pdf"></a>
                               </object>
   
                           <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
