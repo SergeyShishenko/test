@@ -117,18 +117,19 @@ include 'inc-left-side-menu-furnitura.php';
                       <section itemprop="articleBody" >
                         <div class="page-header">
                           <h1 itemprop="name" id="porogi-avtomaticheskie-dlya-poloten-dvernyh">ПОРОГИ АВТОМАТИЧЕСКИЕ для ПОЛОТЕН ДВЕРНЫХ</h1>
-                        </div> 
-
-                        <h2 id="planet-ft">&nbsp;</h2>                   
+                        </div>                         
+                        <h2 id="planet-ft">&nbsp;</h2>
+                                         
                         <h2 >Planet_FT</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                         <a href="./dist/files/Planet_FT_CAD-drawing_2D.dwg" type="button" class="btn btn-primary"download="Planet_FT_CAD-drawing_2D.dwg">Скачать - Planet_FT_CAD-drawing_2D.dwg</a> 
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p> -->
                         <object data="./dist/files/Planet_FT.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/Planet_FT.pdf"></a>
                             </object>
                             <object data="./dist/files/Planet_FT_Installation_instructions.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/Planet_FT_Installation_instructions.pdf"></a>
                             </object>
-                            <a href="./dist/files/Planet_FT_CAD-drawing_2D.dwg" type="button" class="btn btn-primary"download="Planet_FT_CAD-drawing_2D.dwg">Скачать - Planet_FT_CAD-drawing_2D.dwg</a>
+                            
                       </section>
                     </article>
 
@@ -220,6 +221,30 @@ include 'inc-left-side-menu-furnitura.php';
                       </section>
                     </article>
 
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" >
+                        <div class="page-header">
+                          <h1 itemprop="name" id="svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart">Сводная таблица фурнитуры дверей распашных</h1>
+                        </div> 
+                        <a href="./dist/files/сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx" type="button" class="btn btn-primary"download="сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx">Скачать - сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx</a> 
+                        <h2 id="klass-lyuks">&nbsp;</h2>                   
+                        <h2 >класс ЛЮКС</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/сводная таблица фурнитуры дверей распашных, класс ЛЮКС.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/сводная таблица фурнитуры дверей распашных, класс ЛЮКС.pdf"></a>
+                        </object>
+
+                        <h2 id="klass-standart">&nbsp;</h2>                   
+                        <h2 >класс STANDART</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/сводная таблица фурнитуры дверей распашных, класс STANDART.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/сводная таблица фурнитуры дверей распашных, класс STANDART.pdf"></a>
+                        </object> 
+                        
+                                            
+                      </section>
+                    </article>
+
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
@@ -300,7 +325,17 @@ include 'inc-left-side-menu-furnitura.php';
                                     <li><a href="#upor3">upor3</a>
                                     </li>                                                                  
                                 </ul>
-                            </li>                          
+                            </li>  
+
+                            <li><a href="#svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart">Сводная таблица фурнитуры дверей распашных</a>
+                                <ul class="nav">
+                                    <li><a href="#klass-lyuks">класс ЛЮКС</a>
+                                    </li> 
+                                    <li><a href="#klass-standart">класс STANDART</a>
+                                    </li>
+                                                                                                     
+                                </ul>
+                            </li>                         
                         </ul>
                     </div>
                      
