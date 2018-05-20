@@ -117,9 +117,9 @@
                                             </li>                                      
                                         </ul>
                                     </li>
-                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mehanizmy-razdvizheniya-dlya-fasadov">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ</a>
+                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mehanizmy-razdvizheniya-dlya-fasadov-Cinetto-PS23">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov">5000502-02-110 система раздвижения и складывания фасадов>Накладные</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov-Cinetto-PS23">5000502-02-110 система раздвижения и складывания фасадов Cinetto PS23</a>
                                             </li>                                                                                   
                                         </ul>
                                     </li>
@@ -133,39 +133,39 @@
                                     </li>
                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mekhanizmy-vydvizheniya-dlya-yashchikov">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-101-movento-blumotion-napravlyayushchie-250">5000502-04-101 MOVENTO BLUMOTION направляющие 250</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-101-movento-blumotion-napravlyayushchie-250">5000502-04-101 MOVENTO BLUMOTION направляющие 250 мм</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-103-movento-blumotion-napravlyayushchie-300">5000502-04-103 MOVENTO BLUMOTION направляющие 300</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-103-movento-blumotion-napravlyayushchie-300">5000502-04-103 MOVENTO BLUMOTION направляющие 300 мм</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-105-movento-blumotion-napravlyayushchie-350">5000502-04-105 MOVENTO BLUMOTION направляющие 350</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-105-movento-blumotion-napravlyayushchie-350">5000502-04-105 MOVENTO BLUMOTION направляющие 350 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-107-movento-blumotion-napravlyayushchie-400">5000502-04-107 MOVENTO BLUMOTION направляющие 400</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-107-movento-blumotion-napravlyayushchie-400">5000502-04-107 MOVENTO BLUMOTION направляющие 400 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-109-movento-blumotion-napravlyayushchie-450">5000502-04-109 MOVENTO BLUMOTION направляющие 450</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-109-movento-blumotion-napravlyayushchie-450">5000502-04-109 MOVENTO BLUMOTION направляющие 450 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-111-movento-blumotion-napravlyayushchie-500">5000502-04-111 MOVENTO BLUMOTION направляющие 500</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-111-movento-blumotion-napravlyayushchie-500">5000502-04-111 MOVENTO BLUMOTION направляющие 500 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-113-movento-blumotion-napravlyayushchie-550">5000502-04-113 MOVENTO BLUMOTION направляющие 550</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-113-movento-blumotion-napravlyayushchie-550">5000502-04-113 MOVENTO BLUMOTION направляющие 550 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-114-movento-blumotion-napravlyayushchie-600">5000502-04-114 MOVENTO BLUMOTION направляющие 600</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-114-movento-blumotion-napravlyayushchie-600">5000502-04-114 MOVENTO BLUMOTION направляющие 600 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-121-movento-tipon-napravlyayushchie-250">5000502-04-121 MOVENTO TIPON направляющие 250</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-121-movento-tipon-napravlyayushchie-250">5000502-04-121 MOVENTO TIPON направляющие 250 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-125-movento-tipon-napravlyayushchie-300">5000502-04-125 MOVENTO TIPON направляющие 300</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-125-movento-tipon-napravlyayushchie-300">5000502-04-125 MOVENTO TIPON направляющие 300 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-128-movento-tipon-napravlyayushchie-350">5000502-04-128 MOVENTO TIPON направляющие 350</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-128-movento-tipon-napravlyayushchie-350">5000502-04-128 MOVENTO TIPON направляющие 350 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-133-movento-tipon-napravlyayushchie-400">5000502-04-133 MOVENTO TIPON направляющие 400</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-133-movento-tipon-napravlyayushchie-400">5000502-04-133 MOVENTO TIPON направляющие 400 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-139-movento-tipon-napravlyayushchie-450">5000502-04-139 MOVENTO TIPON направляющие 450</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-139-movento-tipon-napravlyayushchie-450">5000502-04-139 MOVENTO TIPON направляющие 450 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-141-movento-tipon-napravlyayushchie-500">5000502-04-141 MOVENTO TIPON направляющие 500</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-141-movento-tipon-napravlyayushchie-500">5000502-04-141 MOVENTO TIPON направляющие 500 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-143-movento-tipon-napravlyayushchie-550">5000502-04-143 MOVENTO TIPON направляющие 550</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-143-movento-tipon-napravlyayushchie-550">5000502-04-143 MOVENTO TIPON направляющие 550 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-145-movento-tipon-napravlyayushchie-600">5000502-04-145 MOVENTO TIPON направляющие 600</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-145-movento-tipon-napravlyayushchie-600">5000502-04-145 MOVENTO TIPON направляющие 600 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#tekhnicheskaya-informaciya-po-napravlyayushchim">техническая информация по направляющим</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#tekhnicheskaya-informaciya-po-napravlyayushchim">Техническая информация по направляющим</a>
                                             </li>                                         
                                         </ul>
                                     </li>

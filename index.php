@@ -4044,8 +4044,8 @@
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov"  style="padding: 35px 0;" >
-                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov">5000502-02-110 система раздвижения и складывания фасадов<span> <br>~5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov-Cinetto-PS23"  style="padding: 35px 0;" >
+                                                                            <p data-img="./dist/images/no-175x0.jpg" data-href="furnitura-dlya-mebeli.php#5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov-Cinetto-PS23">5000502-02-110 система раздвижения и складывания фасадов Cinetto PS23<span> <br>~5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
