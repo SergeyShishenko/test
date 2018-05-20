@@ -141,6 +141,7 @@ $(function() {
             }, 500 // скорость прокрутки
             );
         }
+        $(".search_result").hide();
         return false;
     });
 // $(".search_result a.flo").click(function(e){
