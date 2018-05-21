@@ -1,4 +1,6 @@
 $(window, document, undefined).ready(function() {
+  // alert($( "input[name~='login']" ).val());
+  // alert($( "input[name~='passw']" ).val());
 
   $('input').blur(function() {
     var $this = $(this);

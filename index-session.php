@@ -43,7 +43,8 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
 <head>
   <meta charset="UTF-8">
   <title>Авторизация</title>   
-      <link rel="stylesheet" href="./dist/css/style-form.css">  
+      <link rel="stylesheet" href="./dist/css/style-form.css">
+      <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">  
 </head>
 <body>
   <hgroup>
@@ -53,11 +54,11 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
 </hgroup>
 <form action="index-session.php" method="POST">
   <div class="group">
-    <input type="text" name="login" autocomplete=​"" ><span class="highlight"></span><span class="bar"></span>
+    <input type="text" name="login" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
     <label>Логин</label>
   </div>
   <div class="group">
-    <input type="password" name="passw" autocomplete=​""><span class="highlight"></span><span class="bar"></span>
+    <input type="password" name="passw" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
     <label>Пароль</label>
   </div>
   
