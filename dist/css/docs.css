@@ -7,6 +7,10 @@ body {
   line-height: 1.428571429;
   
 }
+.center{  
+  display: block; 
+  margin: 0 auto; 
+  }
 a[title]:hover{cursor: help}
 .overlay{height: 25px;}
 .overlay a:not(:first-child){margin-left: 15px;}
