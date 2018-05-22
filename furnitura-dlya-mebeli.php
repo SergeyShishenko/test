@@ -431,7 +431,104 @@ include 'inc-left-side-menu-furnitura.php';
                         </object> 
                         
                     </article>
+
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="pantografy"> ПАНТОГРАФЫ</h1>
+                        </div>
+
+                        <h2 id="pantograf1">&nbsp;</h2>                   
+                        <h2 >pantograf1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/test.pdf"></a>
+                        </object> 
+
+                        <h2 id="pantograf2">&nbsp;</h2>                   
+                        <h2 >pantograf2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/test.pdf"></a>
+                        </object> 
+                        
+                    </article>
                     
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="ruchki">РУЧКИ</h1>
+                        </div>
+
+                        <h2 id="ruchka1">&nbsp;</h2>                   
+                        <h2 >ruchka1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/test.pdf"></a>
+                        </object> 
+
+                        <h2 id="ruchka2">&nbsp;</h2>                   
+                        <h2 >ruchka2</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/test.pdf"></a>
+                        </object> 
+                        
+                    </article>
+
+                     <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ</h1>
+                        </div>
+
+                        <h2 id="mekhanizmy1">&nbsp;</h2>                   
+                        <h2 >mekhanizmy1</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/test.pdf"></a>
+                        </object> 
+
+                        
+                        
+                    </article>
+
+                     <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="natyazhiteli-dlya-fasadov">НАТЯЖИТЕЛИ для ФАСАДОВ</h1>
+                        </div>
+
+                        <h2 id="pivot-tn-103-2329-02">&nbsp;</h2>                   
+                        <h2 >Pivot TN 103.2329.02</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/Pivot TN103.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/Pivot TN103.pdf"></a>
+                        </object>                        
+                        
+                    </article>
+
+                     <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ</h1>
+                        </div>
+
+                        <h2 id="razdvizhnoy-derzhatel-dlya-obuvi-560-1000-mm-chernyy-892-11-300">&nbsp;</h2>                   
+                        <h2 >Раздвижной держатель для обуви 560-1000 мм черный </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/test.pdf"></a>
+                        </object> 
+
+                        <h2 id="razdvizhnoy-derzhatel-dlya-obuvi-460-750-mm-stal-hromirovannyy-892-12-906">&nbsp;</h2>                   
+                        <h2 >Раздвижной держатель для обуви 460-750 мм хромированный </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/test.pdf"></a>
+                        </object> 
+                        
+                    </article>
 
                     
                 </div> <!-- main  -->
@@ -578,6 +675,52 @@ include 'inc-left-side-menu-furnitura.php';
                                     <li><a href="#5000502-10-300-shtanga-kruglaya-dlya-veshala">&#9733;&nbsp;5000502-10-300 штанга круглая для вешала</a>
                                     </li>
                                     <li><a href="#5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala">&#9733;&nbsp;5000502-10-301 штанга круглая с проходным держателем</a>
+                                    </li>                                                                 
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#pantografy"> ПАНТОГРАФЫ</a>
+                                <ul class="nav">
+                                    <li><a href="#pantograf1">&#9733;&nbsp;pantograf1</a>
+                                    </li>
+                                    <li><a href="#pantograf2">&#9733;&nbsp;pantograf2</a>
+                                    </li>                                                                 
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#ruchki">РУЧКИ</a>
+                                <ul class="nav">
+                                    <li><a href="#ruchka1">&#9733;&nbsp;ruchka1</a>
+                                    </li>
+                                    <li><a href="#ruchka2">&#9733;&nbsp;ruchka2</a>
+                                    </li>                                                                 
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ</a>
+                                <ul class="nav">
+                                    <li><a href="#mekhanizmy1">&#9733;&nbsp;mekhanizmy1</a>
+                                    </li>                                                                                                    
+                                </ul>
+                            </li>
+
+                             <li>
+                                <a href="#natyazhiteli-dlya-fasadov">НАТЯЖИТЕЛИ для ФАСАДОВ</a>
+                                <ul class="nav">
+                                    <li><a href="#pivot-tn-103-2329-02">&#9733;&nbsp;Pivot TN 103.2329.02</a>
+                                    </li>                                                                                                    
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ</a>
+                                <ul class="nav">
+                                    <li><a href="#razdvizhnoy-derzhatel-dlya-obuvi-560-1000-mm-chernyy-892-11-300">&#9733;&nbsp;Раздвижной держатель для обуви 560-1000 мм черный </a>
+                                    </li>
+                                    <li><a href="#razdvizhnoy-derzhatel-dlya-obuvi-460-750-mm-stal-hromirovannyy-892-12-906">&#9733;&nbsp;Раздвижной держатель для обуви 460-750 мм хромированный </a>
                                     </li>                                                                 
                                 </ul>
                             </li>
