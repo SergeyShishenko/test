@@ -1,3 +1,9 @@
+<?php
+session_start();
+require_once('data.php');
+if (!isset($_SESSION['sess_login']) || !isset($_SESSION['sess_pass'])) { header('Location:index-session.php');    exit();}
+if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_passw) {header('Location:index-session.php');    exit();}
+?> 
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">
 <head>
@@ -3957,7 +3963,7 @@
                                                                 </TABLE>
                                                             </TD>                                                         
                                                         </TR> 
-                                                        <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->   
+                                                        
                                                     </TABLE>
                                                 </TD>
                                             </TR>                     

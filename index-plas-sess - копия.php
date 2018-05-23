@@ -1,22 +1,15 @@
 <?php
 session_start();
 require_once('data.php');
-if (!isset($_SESSION['sess_login']) || !isset($_SESSION['sess_pass'])) { header('Location:index-session.php');    exit();}
-if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_passw) {header('Location:index-session.php');    exit();}
-    // echo '    
+if (isset($_SESSION['sess_login']) && isset($_SESSION['sess_pass'])) {
+   if ($_SESSION['sess_login']===$enter_login && 
+         $_SESSION['sess_pass']===$enter_passw) {
+    echo '    
     
-    // ';
-// }
-// else {
-//    header('Location:index-session.php');
-//    exit();
-// }
-// }
-// else {
-// header('Location: index-session.php');
-// exit();
-// }
-?> 
+
+    
+
+
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">
 <head>
@@ -124,7 +117,9 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
             <div class="row" id="main-page">
                 <div class="page-header">
                     <h1>Карта сайта</h1> 
-               
+                ';
+                    echo "<a href=\"exit.php\">Выйти из системы</a>\n";  
+                echo'
                 </div>
   
 
@@ -4517,14 +4512,14 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="HAFELE" class="hover mapsite" id="footer153" colspan="2">
-                                                                <p onclick='window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")' data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating154">HAFELE<span> <br>~HAFELE</span></p>
+                                                                <p onclick=\'window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")\' data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating154">HAFELE<span> <br>~HAFELE</span></p>
                                                             </TD>                                                                            
                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->
                                                         <TR>
                                                             <TD data-tooltip="Blum" class="hover mapsite" id="footer154" >
-                                                                <p  onclick='window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")' data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating155">Blum<span> <br>~Blum</span></p>
+                                                                <p  onclick=\'window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")\' data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating155">Blum<span> <br>~Blum</span></p>
                                                             </TD>                                                                            
                                                             
                                                         </TR>
@@ -4931,3 +4926,15 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
 </html>
 
 
+';
+   }
+   else {
+      header('Location:index-session.php');
+      exit();
+   }
+}
+else {
+   header('Location: index-session.php');
+   exit();
+}
+?>

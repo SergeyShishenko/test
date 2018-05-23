@@ -1,4 +1,10 @@
 <?php
+session_start();
+require_once('data.php');
+if (!isset($_SESSION['sess_login']) || !isset($_SESSION['sess_pass'])) { header('Location:index-session.php');    exit();}
+if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_passw) {header('Location:index-session.php');    exit();}
+?> 
+<?php
 $detaliClass = '';
 $izdeliyaClass = '';
 $shablonyClass = 'class="active"';
