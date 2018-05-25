@@ -142,6 +142,19 @@ $(function() {
             );
         }
         $(".search_result").hide();
+        dest=dest.replace(/[#]/g, "");
+        // alert(dest);
+        document.getElementById(dest).animate([
+            // {color: "black"},
+            // {color: "red"}
+            {fontWeight: "500"},
+            {fontWeight: "700"}
+          ], {
+            duration: 3000,
+            iteration: 2,
+           delay: 200
+          });
+          
         return false;
     });
 // $(".search_result a.flo").click(function(e){

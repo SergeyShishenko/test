@@ -130,7 +130,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                     <TD>
                                         <TABLE > <!-- LEVEL2 --> 
                                             <TR>
-                                                <TD  class="hover mapsite ">
+                                                <TD  class="hover mapsite " id="init-click">
                                                     <p data-href="detali-profili.php"  data-img="./dist/images/no-175x0.jpg" id="floating8">ПРОФИЛИ ГЛАДКИЕ <span><br>~- profili-gladkie ghjabkb ukflrbt</span></p></TD>
                                                 <TD>
                                                     <TABLE > <!-- LEVEL3--> 
@@ -4904,9 +4904,10 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script>
     <script src="./dist/js/application.js"></script> 
-    <script src="./dist/js/script.js?v=8"></script>   
-    <script src="./dist/js/floating.js?v=10"></script> 
-    <script>
+    <script src="./dist/js/script.js?"></script>   
+    <script src="./dist/js/floating.js"></script> 
+    <!-- <script src="./dist/js/jquery.color.js"></script>  -->
+    <!-- <script>
 // запретить клик
 /* !!!!!!!! убрать транслит И КЛЮЧЕВЫЕ СЛОВА!!!!!
  ЗАКОМЕНТИРОВАТЬ В grid.css*/
@@ -4914,7 +4915,30 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
 //   $(\'*\').on(\'click\', function() {
 //     return false;
 // });
-</script>
+// jQuery(function(){
+
+// jQuery("td.mapsite").animate({ backgroundColor: "red"}, 400);
+// // alert();
+
+// // var element = document.getElementById('floating8'); // Получаем объект необходимого элемента ПРОФИЛИ ГЛАДКИЕ
+// // var o = document.createEvent('MouseEvents');  // Создаём объект события, выбран модуль событий мыши
+// // o.initMouseEvent( 'click', true, true, window, 1, 12, 345, 7, 220, false, false, true, false, 0, null ); // Инициализируем объект события
+// // element.dispatchEvent(o);  // Запускаем событие на элементе
+
+
+// });
+
+document.getElementById("flo-profili-nakladki-50").animate([
+  {color: "black"},
+  {color: "red"}
+], {
+  duration: 1000,
+  iteration: 2,
+//   delay: 1000
+});
+
+</script> -->
+
     
 </body>
 
