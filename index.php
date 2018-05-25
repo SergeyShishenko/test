@@ -4194,6 +4194,8 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <TR>
                                                             <TD data-tooltip="ОПОРЫ" class="hover mapsite" id="footer141">
                                                                 <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating142" data-href="furnitura-dlya-mebeli.php#opory">ОПОРЫ<span><br>~opory</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg"  data-href="furnitura-dlya-mebeli.php#opory" class="KEYWORDS">нога<span><br>~hjuf</span></p>
+                                                                <!-- <p data-href="" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">Дверные блоки</p> -->
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
