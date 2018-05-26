@@ -32,26 +32,26 @@ include 'inc-left-side-menu-furnitura.php';
                         <h2 id="petli-vvertnye-chetyrehshtyrkovye-otlav" >&nbsp;</h2>                   
                         <h2 >Петли ввертные четырехштырьковые OTLAV 14 мм</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/петли ввертные четырехштырьковые OTLAV 14 мм.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/петли ввертные четырехштырьковые OTLAV 14 мм.pdf"></a>
+                        <object data="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm.pdf"></a>
                             </object>
                             <h2 id="otlav2" >&nbsp;</h2>
                         <h2>Петли ввертные четырехштырьковые OTLAV</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/петли ввертные четырехштырьковые OTLAV.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/петли ввертные четырехштырьковые OTLAV.pdf"></a>
+                        <object data="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav.pdf"></a>
                             </object>
                             <h2 id="otlav3">&nbsp;</h2>
                         <h2 >Петли дверные разные</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/петли дверные разные.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/петли дверные разные.pdf"></a>
+                        <object data="./dist/files/petli-dvernye-raznye.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/petli-dvernye-raznye.pdf"></a>
                             </object>
                           <h2  id="petli-kartochnye-dvernye-fs">&nbsp;</h2> 
                              <h2>Петли карточные дверные FS</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/артикулы петель карточных дверных FS.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/артикулы петель карточных дверных FS.pdf"></a>
+                        <object data="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf"></a>
                             </object>
                             <h2  id="petli-skrytogo-montazha-tectus">&nbsp;</h2> 
                              <h2 >Петли скрытого монтажа TECTUS TE_240_3D</h2>
@@ -78,8 +78,8 @@ include 'inc-left-side-menu-furnitura.php';
                         <h2 id="sistema-razdvizheniya-laguna-standart">&nbsp;</h2>                   
                         <h2 >Система раздвижения Laguna Standart</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/Система раздвижения Laguna Standart.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/Система раздвижения Laguna Standart.pdf"></a>
+                        <object data="./dist/files/sistema-razdvizheniya-laguna-standart.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/sistema-razdvizheniya-laguna-standart.pdf"></a>
                             </object>
 
                       </section>
@@ -101,8 +101,8 @@ include 'inc-left-side-menu-furnitura.php';
                         <h2 id="zamki-i-otvetnye-planki-agb">&nbsp;</h2>                   
                         <h2 >Замки и ответные планки AGB</h2>
                         <p>Mediana Evolution</p>
-                        <object data="./dist/files/замки AGB Mediana Evolution.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/замки AGB Mediana Evolution.pdf"></a>
+                        <object data="./dist/files/zamki-agb-mediana-evolution.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/zamki-agb-mediana-evolution.pdf"></a>
                             </object>
                             <p>Mediana Polaris</p>
                         <object data="./dist/files/Z9003802X2_fd_progettoXT_ita.pdf" type="application/pdf" width="100%" height="720px">
@@ -112,8 +112,8 @@ include 'inc-left-side-menu-furnitura.php';
                         <h2 id="zamki-i-otvetnye-planki-ces">&nbsp;</h2>                   
                         <h2 >Замки и ответные планки CES</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/габаритные размеры замков и ответных планок CES.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/габаритные размеры замков и ответных планок CES.pdf"></a>
+                        <object data="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"></a>
                             </object>
                       </section>
                     </article>
@@ -232,12 +232,12 @@ include 'inc-left-side-menu-furnitura.php';
                         <div class="page-header">
                           <h1 itemprop="name" id="svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart">Сводная таблица фурнитуры дверей распашных</h1>
                         </div> 
-                        <a href="./dist/files/сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx" type="button" class="btn btn-primary"download="сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx">Скачать - сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx</a> 
+                        <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart.xlsx" type="button" class="btn btn-primary"download="svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart.xlsx">Скачать - сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx</a> 
                         <h2 id="klass-lyuks">&nbsp;</h2>                   
                         <h2 >класс ЛЮКС</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/сводная таблица фурнитуры дверей распашных, класс ЛЮКС.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/сводная таблица фурнитуры дверей распашных, класс ЛЮКС.pdf"></a>
+                        <object data="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks.pdf"></a>
                         </object>
 
                         <h2 id="klass-standart">&nbsp;</h2>                   

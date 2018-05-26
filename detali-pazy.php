@@ -41,7 +41,7 @@ include 'inc-left-side-menu-detali.php';
                                  data-target="#myModal"
                                  data-content="МДФ_НАКЛАДКА_№050/ДШ"                               
                                  alt="МДФ_НАКЛАДКА_№050/ДШ"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№050_ДШ.dwg"
+                                 data-dwg="./dist/files/mdf-nakladka-050-dsh.dwg"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -59,7 +59,7 @@ include 'inc-left-side-menu-detali.php';
                                  data-target="#myModal"
                                  data-content="МДФ_НАКЛАДКА_№051/ДШ"                             
                                  alt="МДФ_НАКЛАДКА_№051/ДШ"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№051_ДШ.dwg"
+                                 data-dwg="./dist/files/mdf-nakladka-051-dsh.dwg"
                                    ></a>
                             </p>
                              <div class="overlay"></div>
@@ -77,7 +77,7 @@ include 'inc-left-side-menu-detali.php';
                                  data-target="#myModal"
                                  data-content="МДФ_НАКЛАДКА_№052/ДШ"                             
                                  alt="МДФ_НАКЛАДКА_№052/ДШ"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№052_ДШ.dwg"
+                                 data-dwg="./dist/files/mdf-nakladka-052-dsh.dwg"
                                    ></a>
                             </p>
                              <div class="overlay"></div>
@@ -94,7 +94,7 @@ include 'inc-left-side-menu-detali.php';
                                  data-target="#myModal"
                                  data-content="МДФ_НАКЛАДКА_№053/ДШ"                            
                                  alt="МДФ_НАКЛАДКА_№053/ДШ"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№053_ДШ.dwg"
+                                 data-dwg="./dist/files/mdf-nakladka-053-dsh.dwg"
                                    ></a>
                              </p>
                              <div class="overlay"></div>

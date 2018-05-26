@@ -32,50 +32,50 @@ include 'inc-left-side-menu-furnitura.php';
                         <h2 id="5000502-01-100-petlya-vkladnaya">&nbsp;</h2>                   
                         <h2 >5000502-01-100 петля вкладная</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/5000502-01-100 петля вкладная.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/5000502-01-100 петля вкладная.pdf"></a>
+                        <object data="./dist/files/5000502-01-100-petlya-vkladnaya.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/5000502-01-100-petlya-vkladnaya.pdf"></a>
                         </object> 
 
                         <h2 id="5000502-01-101-petlya-nakladnaya">&nbsp;</h2>                   
                         <h2 >5000502-01-101 петля накладная</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/5000502-01-101 петля накладная.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/5000502-01-101 петля накладная.pdf"></a>
+                        <object data="./dist/files/5000502-01-101-petlya-nakladnaya.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/5000502-01-101-petlya-nakladnaya.pdf"></a>
                         </object>  
 
                         <h2 id="5000502-01-102-petlya-polunakladnaya">&nbsp;</h2>                   
                         <h2 >5000502-01-102 петля полунакладная</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/5000502-01-102 петля полунакладная.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/5000502-01-102 петля полунакладная.pdf"></a>
+                        <object data="./dist/files/5000502-01-102-petlya-polunakladnaya.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/5000502-01-102-petlya-polunakladnaya.pdf"></a>
                         </object> 
 
                         <h2 id="5000502-01-103-petlya-vkladnaya-falshfasadnaya">&nbsp;</h2>                   
                         <h2 >5000502-01-103 петля вкладная фальшфасадная</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/5000502-01-103 петля вкладная фальшфасадная.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/5000502-01-103 петля вкладная фальшфасадная.pdf"></a>
+                        <object data="./dist/files/5000502-01-103-petlya-vkladnaya-falshfasadnaya.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/5000502-01-103-petlya-vkladnaya-falshfasadnaya.pdf"></a>
                         </object> 
 
                         <h2 id="5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya">&nbsp;</h2>                   
                         <h2 >5000502-01-104 петля накладная нулевого вхождения</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/5000502-01-104 петля накладная нулевого вхождения.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/5000502-01-104 петля накладная нулевого вхождения.pdf"></a>
+                        <object data="./dist/files/5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya.pdf"></a>
                         </object> 
 
                          <h2 id="5000502-01-110-petlya-vkladnaya-bez-pruzhiny">&nbsp;</h2>                   
                         <h2 >5000502-01-110 петля вкладная без пружины</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/5000502-01-110 петля вкладная без пружины.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/5000502-01-110 петля вкладная без пружины.pdf"></a>
+                        <object data="./dist/files/5000502-01-110-petlya-vkladnaya-bez-pruzhiny.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/5000502-01-110-petlya-vkladnaya-bez-pruzhiny.pdf"></a>
                         </object> 
 
                         <h2 id="5000502-01-111-petlya-nakladnaya-bez-pruzhiny">&nbsp;</h2>                   
                         <h2 >5000502-01-111 петля накладная без пружины</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/5000502-01-111 петля накладная без пружины.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/5000502-01-111 петля накладная без пружины.pdf"></a>
+                        <object data="./dist/files/5000502-01-111-petlya-nakladnaya-bez-pruzhiny.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/5000502-01-111-petlya-nakladnaya-bez-pruzhiny.pdf"></a>
                         </object> 
 
                         <h2 id="5000502-01-112-petlya-polunakladnaya-bez-pruzhiny">&nbsp;</h2>                   
