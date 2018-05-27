@@ -107,7 +107,7 @@ $(function() {
 
           var aimg = $(this).data("img");
           if (typeof aimg == "undefined") { aimg = "./dist/images/mdf-nakladka-053-dsh.png"; }     
-          $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + '</a><a class="flo" href="' + flo + '">&#9875;</a></li>');
+          $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + '</a><a class="flo" href="' + flo + '">&#10059;</a></li>');
         //   $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + '</a></li>');
         //   $( "#search  ul  li" ).after( '<a class="flo" href="#' + flo + '">&#9875;</a>' );
         }
@@ -150,7 +150,7 @@ $(function() {
             {fontWeight: "500"},
             {fontWeight: "700"}
           ], {
-            duration: 3000,
+            duration: 6000,
             iteration: 2,
            delay: 200
           });

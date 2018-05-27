@@ -14,7 +14,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
       exit();
    }
    else {
-      $err = '<div style="color: red;text-align: center;margin-bottom: -37px"><b>';
+      $err = '<div style="color: red;text-align: center;margin-bottom: -30px;"><b>';
       $err .= 'Логин или пароль введены неверно!';
       $err .= '</b></div>';
    }
@@ -43,31 +43,59 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
 <head>
   <meta charset="UTF-8">
   <title>Авторизация</title>   
+      
+      <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="./dist/css/cover.css" rel="stylesheet">
       <link rel="stylesheet" href="./dist/css/style-form.css">
       <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">  
 </head>
 <body>
-  <hgroup>
-  <h1>Вход на сайт</h1>
-  <h3>Здравствуйте! Авторизируйтесь пожалуйста.</h3>
-  <?php echo $err; ?>
-</hgroup>
-<form action="index-session.php" method="POST">
-  <div class="group">
-    <input type="text" name="login" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
-    <label>Логин</label>
+
+
+
+   <div class="site-wrapper">
+
+   <div class="site-wrapper-inner">
+
+  <div class="cover-container">
+
+    
+
+    <div class="inner cover">
+       <hgroup>
+      <h1>Вход на сайт</h1>
+      <h3>Здравствуйте! Авторизируйтесь пожалуйста.</h3>
+      <?php echo $err; ?>
+      </hgroup>
+      <form action="index-session.php" method="POST">
+      <div class="group">
+        <input type="text" name="login" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
+        <label>Логин</label>
+      </div>
+      <div class="group">
+        <input type="password" name="passw" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
+        <label>Пароль</label>
+      </div>
+
+      <button  class="button buttonBlue" type="submit" value="Войти">Вход
+        <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+      </button>  
+      </form>
+    </div>
+
+    
+
   </div>
-  <div class="group">
-    <input type="password" name="passw" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
-    <label>Пароль</label>
-  </div>
+
+</div>
+
+</div>
+
+
+
   
-  <button  class="button buttonBlue" type="submit" value="Войти">Вход
-    <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-  </button>
-  
-  
-</form>
+   
+
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
     <script  src="./dist/js/index-form.js"></script>

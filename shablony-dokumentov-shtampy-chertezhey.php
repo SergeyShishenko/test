@@ -39,7 +39,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="test"                               
                                  alt="test"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№050_ДШ.dwg"
+                                 data-dwg="./dist/files/mdf-nakladka-050-dsh.dwg"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -61,7 +61,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="test"                               
                                  alt="test"
-                                 data-dwg="./dist/files/МДФ_НАКЛАДКА_№050_ДШ.dwg"
+                                 data-dwg="./dist/files/mdf-nakladka-050-dsh.dwg"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -77,13 +77,13 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                             
                             <li><a href="#shtampy-chertezhey-arhitekturnogo-byuro">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО</a>
                                 <ul class="nav">
-                                    <li><a href="#net-informacii-1">Нет информации</a>
+                                    <li><a href="#net-informacii-1">&#9733;&nbsp;Нет информации</a>
                                     </li>                                                                       
                                 </ul>
                             </li>
                             <li><a href="#shtam-osnovnoy-nadpisi-chertezhey-kd">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОРСКОГО БЮРО</a>
                                 <ul class="nav">
-                                    <li><a href="#shtam-osnovnoy-nadpisi-chertezhey-kd">5000302-02-001 штам основной надписи чертежей КД</a>
+                                    <li><a href="#shtam-osnovnoy-nadpisi-chertezhey-kd">&#9733;&nbsp;5000302-02-001 штам основной надписи чертежей КД</a>
                                     </li>                                  
                                 </ul>
                             </li>

@@ -243,8 +243,8 @@ include 'inc-left-side-menu-furnitura.php';
                         <h2 id="klass-standart">&nbsp;</h2>                   
                         <h2 >класс STANDART</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/сводная таблица фурнитуры дверей распашных, класс STANDART.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/сводная таблица фурнитуры дверей распашных, класс STANDART.pdf"></a>
+                        <object data="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart.pdf"></a>
                         </object> 
                         
                                             

@@ -73,7 +73,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                     <a href="#metodichki-dokument-117">МЕТОДИЧКИ</a >
                                 </li>
                                 <li>
-                                    <a href="#furnitura-katalogi">ФУРНИТУРА</a >
+                                    <a href="#furnitura-dlya-dvernyh-blokov">ФУРНИТУРА</a >
                                 </li>
                                 <li>
                                     <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>
@@ -3753,9 +3753,9 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
 
 
                     <!-- ФУРНИТУРА --> 
-                    <TR id="furnitura-katalogi">
+                    <TR id="furnitura-dlya-dvernyh-blokov">
                         <TD  data-tooltip="ФУРНИТУРА" class="hover mapsite first-main" id="footer4">
-                                <p data-href="furnitura-katalogi.php"  data-img="./dist/images/no-175x0.jpg" id="floating5">ФУРНИТУРА <span><br>~furnitura-katalogi</span></p>
+                                <p data-href="furnitura-dlya-dvernyh-blokov.php"  data-img="./dist/images/no-175x0.jpg" id="floating5">ФУРНИТУРА <span><br>~furnitura-katalogi</span></p>
                         </TD>
                         <TD>
                             <TABLE >                               

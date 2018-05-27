@@ -32,12 +32,12 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000301_01_001 лист титульный ДП</h4>
                                                        
                             <p> <a>
-                                <img src="./dist/images/5000301-01-001 лист титульный ДП.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001-list-titulnyy-dp.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="5000301_01_001 лист титульный ДП"                               
                                  alt="5000301_01_001 лист титульный ДП"
-                                 data-xls="./dist/files/5000301-01-001 лист титульный ДП.xlsx"
+                                 data-xls="./dist/files/5000301-01-001-list-titulnyy-dp.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -48,12 +48,12 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>паспорт изделий заказа ДП</h4>
                                                    
                             <p> <a>
-                                <img src="./dist/images/5000301-01-001 паспорт изделий заказа ДП.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001-pasport-izdeliy-zakaza-dp.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="паспорт изделий заказа ДП"                               
                                  alt="паспорт изделий заказа ДП"
-                                 data-xls="./dist/files/5000301-01-001 лист титульный ДП.xlsx"
+                                 data-xls="./dist/files/5000301-01-001-list-titulnyy-dp.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -63,12 +63,12 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>реестр разделов ДП</h4>
                                                      
                             <p> <a>
-                                <img src="./dist/images/5000301-01-001 реестр разделов ДП.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001-reestr-razdelov-dp.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="реестр разделов ДП"                               
                                  alt="реестр разделов ДП"
-                                 data-xls="./dist/files/5000301-01-001 лист титульный ДП.xlsx"
+                                 data-xls="./dist/files/5000301-01-001-list-titulnyy-dp.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -88,12 +88,12 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000301_02_000 лист титульный КД</h4>
                                                   
                             <p> <a>
-                                <img src="./dist/images/5000301-02-000 лист титульный КД.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-02-000-list-titulnyy-kd.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="5000301_02_000 лист титульный КД"                               
                                  alt="5000301_02_000 лист титульный КД"
-                                 data-xls="./dist/files/5000301-02-000 лист титульный КД.xlsx"
+                                 data-xls="./dist/files/5000301-02-000-list-titulnyy-kd.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -104,12 +104,12 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>паспорт изделий заказа КД</h4>
                                                    
                             <p> <a>
-                                <img src="./dist/images/5000301-01-001 паспорт изделий заказа ДП.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001-pasport-izdeliy-zakaza-dp.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="5000301-01-001 паспорт изделий заказа ДП"                               
                                  alt="5000301-01-001 паспорт изделий заказа ДП"
-                                 data-xls="./dist/files/5000301-02-000 лист титульный КД.xlsx"
+                                 data-xls="./dist/files/5000301-02-000-list-titulnyy-kd.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -119,12 +119,12 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>реестр разделов КД</h4>
                                                      
                             <p> <a>
-                                <img src="./dist/images/5000301-01-001 реестр разделов ДП.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001-reestr-razdelov-dp.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="5000301-01-001 реестр разделов ДП"                               
                                  alt="5000301-01-001 реестр разделов ДП"
-                                 data-xls="./dist/files/5000301-02-000 лист титульный КД.xlsx"
+                                 data-xls="./dist/files/5000301-02-000-list-titulnyy-kd.xlsx"
                                    ></a>
                              </p>
                              <!-- <div id='hovertitle'></div> -->
@@ -145,22 +145,22 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <ul class="nav bs-sidenav">
                             <li><a href="#listy-titulnye-dizayn-proekta">Листы титульные дизайн-проекта</a>
                             <ul class="nav">
-                                    <li><a href="#list-titulnyy-dp">5000301_01_001 лист титульный ДП</a>
+                                    <li><a href="#list-titulnyy-dp">&#9733;&nbsp;5000301_01_001 лист титульный ДП</a>
                                     </li>
-                                    <li><a href="#pasport-izdeliy-zakaza-dp">паспорт изделий заказа ДП</a>
+                                    <li><a href="#pasport-izdeliy-zakaza-dp">&#9733;&nbsp;паспорт изделий заказа ДП</a>
                                     </li>
-                                    <li><a href="#reestr-razdelov-dp">реестр разделов ДП</a>
+                                    <li><a href="#reestr-razdelov-dp">&#9733;&nbsp;реестр разделов ДП</a>
                                     </li>                                    
                                 </ul>
                             </li>                           
                             <li>
                                 <a href="#listy-titulnye-konstruktorskoy-dokumentacii">Листы титульные конструкторской документации</a>
                                 <ul class="nav">
-                                    <li><a href="#list-titulnyy-kd">5000301_02_000 лист титульный КД</a>
+                                    <li><a href="#list-titulnyy-kd">&#9733;&nbsp;5000301_02_000 лист титульный КД</a>
                                     </li>
-                                    <li><a href="#pasport-izdeliy-zakaza-kd">паспорт изделий заказа КД</a>
+                                    <li><a href="#pasport-izdeliy-zakaza-kd">&#9733;&nbsp;паспорт изделий заказа КД</a>
                                     </li>
-                                    <li><a href="#reestr-razdelov-kd">реестр разделов КД</a>
+                                    <li><a href="#reestr-razdelov-kd">&#9733;&nbsp;реестр разделов КД</a>
                                   </li>
                                 </ul>
                             </li>
