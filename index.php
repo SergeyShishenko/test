@@ -24,8 +24,8 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <meta name="yandex-verification" content="07a17e6c1df2c2b2" />
     <title>500.СТП</title>
     <link href="./dist/css/bootstrap.css" rel="stylesheet">
-    <link href="./dist/css/docs.css?v=10" rel="stylesheet">
-    <link href="./dist/css/grid.css?v=10" rel="stylesheet">
+    <link href="./dist/css/docs.css" rel="stylesheet">
+    <link href="./dist/css/grid.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
    
 <!-- <style>
@@ -122,7 +122,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                     <!-- ДЕТАЛИ -->                  
                     <TR id="detali-profili">
                         <TD  data-tooltip="ДЕТАЛИ" class="hover mapsite first-main" >
-                            <p data-href="detali-profili.php"  data-img="./dist/images/no-175x0.jpg" id="floating1">ДЕТАЛИ <span><br>~- detali ltnfkb</span></p>       
+                            <p data-href="detali-profili.php"  data-img="./dist/images/nofoto_big160.gif" id="floating1">ДЕТАЛИ <span><br>~- detali ltnfkb</span></p>       
                         </TD>
                         <TD>
                             <TABLE >   <!-- LEVEL1 -->                            
@@ -131,12 +131,12 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                         <TABLE > <!-- LEVEL2 --> 
                                             <TR>
                                                 <TD  class="hover mapsite " id="init-click">
-                                                    <p data-href="detali-profili.php"  data-img="./dist/images/no-175x0.jpg" id="floating8">ПРОФИЛИ ГЛАДКИЕ <span><br>~- profili-gladkie ghjabkb ukflrbt</span></p></TD>
+                                                    <p data-href="detali-profili.php"  data-img="./dist/images/nofoto_big160.gif" id="floating8">ПРОФИЛИ ГЛАДКИЕ <span><br>~- profili-gladkie ghjabkb ukflrbt</span></p></TD>
                                                 <TD>
                                                     <TABLE > <!-- LEVEL3--> 
                                                         <TR>
                                                             <TD   class="hover mapsite" >
-                                                                <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-175x0.jpg" id="floating46">Накладки <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/nofoto_big160.gif" id="floating46">Накладки <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >  <!--LEVEL4-->                                                                                        
@@ -3458,13 +3458,13 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.2 сведения о типе пола, потолка, несущих плоскостей</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.3 основные габаритные размеры изделий с обязательным выделением тех из них, которые являются </p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.4 стандартные либо специальные номера деталей согласно док. «5000404-01_006 порядок присвоения номеров </p>
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.5 материалы шпона и направление шпонирования, параметры руста согласно док. «5000404-02-007 образец указания на чертеже параметров шпонирования»</p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.5 материалы шпона и направление шпонирования, параметры руста </p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.6 иформация о виде, типе, цвете, принципе действия фурнитуры</p>
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.7 обозначение двух или более номеров образца цвета в составе одного изделия согласно док. «5000404-02-008 образец указания на чертеже образцов формы и цвета»</p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.7 обозначение двух или более номеров образца цвета в составе одного изделия </p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.8 записи о полученной/неполученной от Заказчика информации о смежных организациях (в случае необходимости)</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.9 чертежи на отдельные изделия (В СЛУЧАЕ НЕОБХОДИМОСТИ)</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.10 чертежи деталей (В СЛУЧАЕ НЕОБХОДИМОСТИ)</p>
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.11 информация о параметрах стекла, зеркала, витража согласно док. «5000404-02-009 образец указания на чертеже параметров стекла»</p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.11 информация о параметрах стекла, зеркала, витража </p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -3602,6 +3602,8 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-tablica-kodov-operaciy">
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-kodov-operaciy">Таблица кодов операций<span><br>~-5000404-01_011 </span></p>
+                                                                            <p data-img="./dist/images/no-175x0.jpg"   data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-kodov-operaciy" class="KEYWORDS">Код операции 2/0<span><br>~</span></p>
+                                                                            <p data-img="./dist/images/no-175x0.jpg"   data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-kodov-operaciy" class="KEYWORDS">Код операции 2/5<span><br>~</span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
@@ -4193,8 +4195,8 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="ОПОРЫ" class="hover mapsite" id="footer141">
-                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg" id="floating142" data-href="furnitura-dlya-mebeli.php#opory">ОПОРЫ<span><br>~opory</span></p>
-                                                                <p data-img="./dist/images/no-175x0.jpg"  data-img="./dist/images/no-175x0.jpg"  data-href="furnitura-dlya-mebeli.php#opory" class="KEYWORDS">нога<span><br>~hjuf</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"  id="floating142" data-href="furnitura-dlya-mebeli.php#opory">ОПОРЫ<span><br>~opory</span></p>
+                                                                <p data-img="./dist/images/no-175x0.jpg"    data-href="furnitura-dlya-mebeli.php#opory" class="KEYWORDS">нога<span><br>~hjuf</span></p>
                                                                 <!-- <p data-href="" data-img="./dist/images/no-175x0.jpg" class="KEYWORDS">Дверные блоки</p> -->
                                                             </TD> 
                                                             <TD>
