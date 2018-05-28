@@ -35,8 +35,8 @@ include 'inc-left-side-menu-metodichki.php';
                         <object data="./dist/files/listy-titulnye.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/listy-titulnye.pdf"></a>
                             </object>
-                            <!-- <h2 >&nbsp;</h2> -->
-                        <h2 id="sostav-proekta">Состав проекта</h2>
+                            <h2 id="sostav-proekta">&nbsp;</h2>
+                        <h2 >Состав проекта</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/5000404-01-001-sostav-komplekta-tipovogo-dp.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000404-01-001-sostav-komplekta-tipovogo-dp.pdf"></a>
@@ -80,15 +80,15 @@ include 'inc-left-side-menu-metodichki.php';
                             alt: <a href="./dist/files/5000404-00-0301-plan-pomeshcheniy.pdf"></a>
                             </object>
 
-                        <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                        <h2 id="plan-pomeshcheniya-obmerochnyy" >План помещения обмерочный</h2>
+                        <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2>
+                        <h2  >План помещения обмерочный</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/5000404-00-0302-plan-obmernyy.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000404-00-0302-plan-obmernyy.pdf"></a>
                             </object>
 
-                        <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                        <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">Развертка помещения по стенам обмерочная</h2>
+                        <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2>
+                        <h2 >Развертка помещения по стенам обмерочная</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/5000404-00-0303-razvertki-obmernye.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000404-00-0303-razvertki-obmernye.pdf"></a>
@@ -107,23 +107,23 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
   
   
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="plan-poetazhnyy-s-ukazaniem-nomerov-izdeliy">План поэтажный с указанием номеров изделий</h2>
+                          <h2 id="plan-poetazhnyy-s-ukazaniem-nomerov-izdeliy">&nbsp;</h2>
+                          <h2 >План поэтажный с указанием номеров изделий</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-00-0402-plan-s-izdeliyami.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-00-0402-plan-s-izdeliyami.pdf"></a>
                               </object>  
                         
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami">Развертка помещения по стенам с установленными изделиями</h2>
+                          <h2 id="razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami">&nbsp;</h2>
+                          <h2 >Развертка помещения по стенам с установленными изделиями</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-00-0403-razvertki-dizayn-proekta.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-00-0403-razvertki-dizayn-proekta.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="tablica-rezbovyh-elementov-svodnaya-dok-36501">Таблица резьбовых элементов сводная, док. №365.01</h2>
+                          <h2 id="tablica-rezbovyh-elementov-svodnaya-dok-36501">&nbsp;</h2>
+                          <h2 >Таблица резьбовых элементов сводная, док. №365.01</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/36501-i-36502-tablica-reznyh-elementov-na-zakaz.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/36501-i-36502-tablica-reznyh-elementov-na-zakaz.pdf"></a>
@@ -151,22 +151,22 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
   
   
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="svodnaya-tablica-soglasovannyh-obrazcov-prilozhenie-2">Сводная таблица согласованных образцов («приложение №2»)</h2>
+                          <h2 id="svodnaya-tablica-soglasovannyh-obrazcov-prilozhenie-2">&nbsp;</h2>
+                          <h2 >Сводная таблица согласованных образцов («приложение №2»)</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/test.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                          <h2 id="foto-soglasovannyh-obrazcov-cveta-i-formy">Фото согласованных образцов цвета и формы</h2>
+                          <h2 id="foto-soglasovannyh-obrazcov-cveta-i-formy">&nbsp;</h2>
+                          <h2 >Фото согласованных образцов цвета и формы</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/test.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="chertezhi-soglasovannyh-obrazcov-cveta-i-formy">Чертежи согласованных образцов цвета и формы</h2>
+                          <h2 id="chertezhi-soglasovannyh-obrazcov-cveta-i-formy">&nbsp;</h2>
+                          <h2 >Чертежи согласованных образцов цвета и формы</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/test.pdf"></a>
@@ -186,22 +186,22 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
   
   
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="tehnicheskoe-zadanie-dlya-zakazchika-tipovoe">Техническое задание для заказчика типовое</h2>
+                          <h2 id="tehnicheskoe-zadanie-dlya-zakazchika-tipovoe">&nbsp;</h2>
+                          <h2 >Техническое задание для заказчика типовое</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/test.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                          <h2 id="tehnicheskoe-zadanie-dlya-zakazchika-netipovoe">Техническое задание для заказчика нетиповое</h2>
+                          <h2 id="tehnicheskoe-zadanie-dlya-zakazchika-netipovoe">&nbsp;</h2>
+                          <h2 >Техническое задание для заказчика нетиповое</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/test.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="informacionnyy-list-o-smezhnyh-organizaciyah">Информационный лист о смежных организациях</h2>
+                          <h2 id="informacionnyy-list-o-smezhnyh-organizaciyah">&nbsp;</h2>
+                          <h2 >Информационный лист о смежных организациях</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/test.pdf"></a>
@@ -217,8 +217,8 @@ include 'inc-left-side-menu-metodichki.php';
                          
   
   
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="shema-etapov-proetirovaniya-izdeliya">Схема этапов проетирования изделия</h2>
+                          <h2 id="shema-etapov-proetirovaniya-izdeliya">&nbsp;</h2>
+                          <h2 >Схема этапов проетирования изделия</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-000-shema-etapov-proetirovaniya-izdeliya-titul.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-000-shema-etapov-proetirovaniya-izdeliya-titul.pdf"></a>
@@ -228,61 +228,61 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                               
   
-                          <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                          <h2 id="sostav-komplekta-tipovogo-dp">Состав комплекта типового ДП</h2>
+                          <h2 id="sostav-komplekta-tipovogo-dp">&nbsp;</h2>
+                          <h2 >Состав комплекта типового ДП</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/test.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="sostav-komplekta-tipovoy-kd">Состав комплекта типовой КД</h2>
+                          <h2 id="sostav-komplekta-tipovoy-kd">&nbsp;</h2>
+                          <h2 >Состав комплекта типовой КД</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/test.pdf"></a>
                           </object>
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="ierarhicheskaya-struktura-izdeliy">Иерархическая структура изделий</h2>
+                          <h2 id="ierarhicheskaya-struktura-izdeliy">&nbsp;</h2>
+                          <h2 >Иерархическая структура изделий</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/test.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                          <h2 id="tablica-tipovyh-tolshchin-plitnyh-materialov">Таблица типовых толщин плитных материалов</h2>
+                          <h2 id="tablica-tipovyh-tolshchin-plitnyh-materialov">&nbsp;</h2>
+                          <h2 >Таблица типовых толщин плитных материалов</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-005-tablica-tipovyh-tolshchin-plitnyh-materialov.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-005-tablica-tipovyh-tolshchin-plitnyh-materialov.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="poryadok-prisvoeniya-nomerov-detalyam">Порядок присвоения номеров деталям</h2>
+                          <h2 id="poryadok-prisvoeniya-nomerov-detalyam">&nbsp;</h2>
+                          <h2 >Порядок присвоения номеров деталям</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-006-poryadok-prisvoeniya-nomerov-detalyam.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-006-poryadok-prisvoeniya-nomerov-detalyam.pdf"></a>
                           </object>
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="vedomost-tipovyh-naimenovaniy-sepsedetaley">Ведомость типовых наименований СЕ.ПСЕ.деталей</h2>
+                          <h2 id="vedomost-tipovyh-naimenovaniy-sepsedetaley">&nbsp;</h2>
+                          <h2 >Ведомость типовых наименований СЕ.ПСЕ.деталей</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-010-vedomost-tipovyh-naimenovaniy-sepsedetaley.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-010-vedomost-tipovyh-naimenovaniy-sepsedetaley.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                          <h2 id="tablica-kodov-operaciy">Таблица кодов операций</h2>
+                          <h2 id="tablica-kodov-operaciy">&nbsp;</h2>
+                          <h2 >Таблица кодов операций</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-011-tablica-kodov-operaciy.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-011-tablica-kodov-operaciy.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="mp-po-kd-s-raznorodnymi-materialami">МП по КД с разнородными материалами</h2>
+                          <h2 id="mp-po-kd-s-raznorodnymi-materialami">&nbsp;</h2>
+                          <h2 >МП по КД с разнородными материалами</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-012-mp-po-kd-s-raznorodnymi-materialami.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-012-mp-po-kd-s-raznorodnymi-materialami.pdf"></a>
                           </object>
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="algoritm-raboty-s-shablonami">Алгоритм работы с шаблонами</h2>
+                          <h2 id="algoritm-raboty-s-shablonami">&nbsp;</h2>
+                          <h2 >Алгоритм работы с шаблонами</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-015-algoritm-po-rabote-s-shablonami-titul.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-015-algoritm-po-rabote-s-shablonami-titul.pdf"></a>
@@ -291,28 +291,28 @@ include 'inc-left-side-menu-metodichki.php';
                               alt: <a href="./dist/files/5000404-01-015-algoritm-po-rabote-s-shablonami.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                          <h2 id="algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">Алгоритм по работе с поступающей от Заказчика информацией о смежных организациях</h2>
+                          <h2 id="algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">&nbsp;</h2>
+                          <h2 >Алгоритм по работе с поступающей от Заказчика информацией о смежных организациях</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-017-algoritm-po-rabote-s-postupayushchey-ot-zakazchika-informaciey-o-smezhnyh-organizaciyah.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-017-algoritm-po-rabote-s-postupayushchey-ot-zakazchika-informaciey-o-smezhnyh-organizaciyah.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="otstupleniy-ot-trebovaniy-ergonomiki-i-bezopasnosti">Алгоритм согласования с заказчиком отступлений от требований эргономики и безопасности</h2>
+                          <h2 id="otstupleniy-ot-trebovaniy-ergonomiki-i-bezopasnosti">&nbsp;</h2>
+                          <h2 >Алгоритм согласования с заказчиком отступлений от требований эргономики и безопасности</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-018-algoritm-soglasovaniya-s-zakazchikom-otstupleniy-ot-trebovaniy-ergonomiki-i-bezopasnosti.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-018-algoritm-soglasovaniya-s-zakazchikom-otstupleniy-ot-trebovaniy-ergonomiki-i-bezopasnosti.pdf"></a>
                           </object>
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="shema-rascheta-gabaritov-stekla-i-zerkala-v-sostave-se">Схема расчета габаритов стекла и зеркала в составе СЕ</h2>
+                          <h2 id="shema-rascheta-gabaritov-stekla-i-zerkala-v-sostave-se">&nbsp;</h2>
+                          <h2 >Схема расчета габаритов стекла и зеркала в составе СЕ</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-050-shema-rascheta-gabaritov-stekla-i-zerkala-v-sostave-se.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-050-shema-rascheta-gabaritov-stekla-i-zerkala-v-sostave-se.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                          <h2 id="ierarhicheskaya-struktura-katalogov-proekt-i-zakaz">Иерархическая структура каталогов ПРОЕКТ и ЗАКАЗ</h2>
+                          <h2 id="ierarhicheskaya-struktura-katalogov-proekt-i-zakaz">&nbsp;</h2>
+                          <h2 >Иерархическая структура каталогов ПРОЕКТ и ЗАКАЗ</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-075-ierarhicheskaya-struktura-katalogov-proekt-i-zakaz-chast1.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-075-ierarhicheskaya-struktura-katalogov-proekt-i-zakaz-chast1.pdf"></a>
@@ -321,8 +321,8 @@ include 'inc-left-side-menu-metodichki.php';
                               alt: <a href="./dist/files/5000404-01-075-ierarhicheskaya-struktura-katalogov-proekt-i-zakaz-chast2.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="ierarhicheskaya-struktura-kataloga-500stp">Иерархическая структура каталога 500.СТП</h2>
+                          <h2 id="ierarhicheskaya-struktura-kataloga-500stp">&nbsp;</h2>
+                          <h2 >Иерархическая структура каталога 500.СТП</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-01-500-ierarhicheskaya-struktura-kataloga-500stp.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-01-500-ierarhicheskaya-struktura-kataloga-500stp.pdf"></a>
@@ -338,88 +338,88 @@ include 'inc-left-side-menu-metodichki.php';
                           </div>                         
   
   
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="obrazec-zapolneniya-dok-vedomost-furnitury">Образец заполнения док. ВЕДОМОСТЬ ФУРНИТУРЫ</h2>
+                          <h2 id="obrazec-zapolneniya-dok-vedomost-furnitury">&nbsp;</h2>
+                          <h2 >Образец заполнения док. ВЕДОМОСТЬ ФУРНИТУРЫ</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-005-obrazec-zapolneniya-dok-5000304-01-001-vedomost-furnitury.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-005-obrazec-zapolneniya-dok-5000304-01-001-vedomost-furnitury.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                          <h2 id="obrazec-zapolneniya-dok-vedomost-stekol-i-zerkal">Образец заполнения док. ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ</h2>
+                          <h2  id="obrazec-zapolneniya-dok-vedomost-stekol-i-zerkal">&nbsp;</h2>
+                          <h2>Образец заполнения док. ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-006-obrazec-zapolneniya-dok-5000304-02-001-vedomost-stekol-i-zerkal.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-006-obrazec-zapolneniya-dok-5000304-02-001-vedomost-stekol-i-zerkal.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="obrazec-ukazaniya-na-chertezhe-parametrov-shponirovaniya">Образец указания на чертеже параметров шпонирования</h2>
+                          <h2 id="obrazec-ukazaniya-na-chertezhe-parametrov-shponirovaniya">&nbsp;</h2>
+                          <h2 >Образец указания на чертеже параметров шпонирования</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-007-obrazec-ukazaniya-na-chertezhe-parametrov-shponirovaniya.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-007-obrazec-ukazaniya-na-chertezhe-parametrov-shponirovaniya.pdf"></a>
                           </object>
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="obrazec-ukazaniya-na-chertezhe-obrazcov-cveta">Образец указания на чертеже образцов цвета</h2>
+                          <h2 id="obrazec-ukazaniya-na-chertezhe-obrazcov-cveta">&nbsp;</h2>
+                          <h2 >Образец указания на чертеже образцов цвета</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-008-obrazec-ukazaniya-na-chertezhe-obrazcov-cveta.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-008-obrazec-ukazaniya-na-chertezhe-obrazcov-cveta.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                          <h2 id="obrazec-ukazaniya-na-chertezhe-parametrov-stekla">Образец указания на чертеже параметров стекла</h2>
+                          <h2 id="obrazec-ukazaniya-na-chertezhe-parametrov-stekla">&nbsp;</h2>
+                          <h2 >Образец указания на чертеже параметров стекла</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-009-obrazec-ukazaniya-na-chertezhe-parametrov-stekla.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-009-obrazec-ukazaniya-na-chertezhe-parametrov-stekla.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="obrazec-ukazaniya-v-kd-kodov-sborochno-otdelochnyh-operaciy">Образец указания в КД кодов сборочно-отделочных операций</h2>
+                          <h2 id="obrazec-ukazaniya-v-kd-kodov-sborochno-otdelochnyh-operaciy">&nbsp;</h2>
+                          <h2 >Образец указания в КД кодов сборочно-отделочных операций</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-011-obrazec-ukazaniya-v-kd-kodov-sborochno-otdelochnyh-operaciy.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-011-obrazec-ukazaniya-v-kd-kodov-sborochno-otdelochnyh-operaciy.pdf"></a>
                           </object>
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-smo">План по карнизу с обозначением римскими цифрами СМО</h2>
+                          <h2 id="plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-smo">&nbsp;</h2>
+                          <h2 >План по карнизу с обозначением римскими цифрами сборочно-монтажных операций</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-015-plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-sm-operaciy.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-015-plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-sm-operaciy.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                          <h2 id="plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-smo">План по молдингу с обозначением римскими цифрами СМО</h2>
+                          <h2 id="plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-smo">&nbsp;</h2>
+                          <h2 >План по молдингу с обозначением римскими цифрами сборочно-монтажных операций</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-016-plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-sm-operaciy.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-016-plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-sm-operaciy.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-smo">План по плинтусу с обозначением римскими цифрами СМО</h2>
+                          <h2 id="plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-smo">&nbsp;</h2>
+                          <h2 >План по плинтусу с обозначением римскими цифрами сборочно-монтажных операций</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-017-plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-sm-operaciy.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-017-plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-sm-operaciy.pdf"></a>
                           </object>
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="obrazec-ukazaniya-na-chertezhe-kolichestva-detaley">Образец указания на чертеже количества деталей</h2>
+                          <h2 id="obrazec-ukazaniya-na-chertezhe-kolichestva-detaley">&nbsp;</h2>
+                          <h2 >Образец указания на чертеже количества деталей</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-025-obrazec-ukazaniya-na-chertezhe-kolichestva-detaley.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-025-obrazec-ukazaniya-na-chertezhe-kolichestva-detaley.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="plan-pomeshcheniya-obmerochnyy">&nbsp;</h2> -->
-                          <h2 id="obrazec-ukazaniya-na-chertezhe-nomerov-povtornyh-prilozheniy">Образец указания на чертеже номеров повторных приложений</h2>
+                          <h2 id="obrazec-ukazaniya-na-chertezhe-nomerov-povtornyh-prilozheniy">&nbsp;</h2>
+                          <h2 >Образец указания на чертеже номеров повторных приложений</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-027-obrazec-ukazaniya-na-chertezhe-nomerov-povtornyh-prilozheniy.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-027-obrazec-ukazaniya-na-chertezhe-nomerov-povtornyh-prilozheniy.pdf"></a>
                               </object>
   
-                          <!-- <h2 id="razvertka-pomeshcheniya-po-stenam-obmerochnaya">&nbsp;</h2> -->
-                          <h2 id="obrazec-tz-stroitelyam-zakazchika">Образец ТЗ строителям Заказчика</h2>
+                          <h2 id="obrazec-tz-stroitelyam-zakazchika">&nbsp;</h2>
+                          <h2 >Образец ТЗ строителям Заказчика</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-030-obrazec-tz-stroitelyam-zakazchika.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-030-obrazec-tz-stroitelyam-zakazchika.pdf"></a>
                           </object>
-                          <!-- <h2 id="plany-poetazhnye">&nbsp;</h2> -->
-                          <h2 id="kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom">КД на ДБ с распашным одностворчатым глухим полотном</h2>
+                          <h2 id="kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom">&nbsp;</h2>
+                          <h2 >КД на ДБ с распашным одностворчатым глухим полотном</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                           <object data="./dist/files/5000404-02-101-kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/5000404-02-101-kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom.pdf"></a>
@@ -549,11 +549,11 @@ include 'inc-left-side-menu-metodichki.php';
                                     </li>
                                     <li><a href="#obrazec-ukazaniya-v-kd-kodov-sborochno-otdelochnyh-operaciy">&#9733;&nbsp;Образец указания в КД кодов сборочно-отделочных операций</a>
                                     </li>
-                                    <li><a href="#plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-smo">&#9733;&nbsp;План по карнизу с обозначением римскими цифрами СМО</a>
+                                    <li><a href="#plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-smo">&#9733;&nbsp;План по карнизу с обозначением римскими цифрами сборочно-монтажных операций</a>
                                     </li>
-                                    <li><a href="#plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-smo">&#9733;&nbsp;План по молдингу с обозначением римскими цифрами СМО</a>
+                                    <li><a href="#plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-smo">&#9733;&nbsp;План по молдингу с обозначением римскими цифрами сборочно-монтажных операций</a>
                                     </li>
-                                    <li><a href="#plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-smo">&#9733;&nbsp;План по плинтусу с обозначением римскими цифрами СМО</a>
+                                    <li><a href="#plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-smo">&#9733;&nbsp;План по плинтусу с обозначением римскими цифрами сборочно-монтажных операций</a>
                                     </li>
                                     <li><a href="#obrazec-ukazaniya-na-chertezhe-kolichestva-detaley">&#9733;&nbsp;Образец указания на чертеже количества деталей</a>
                                     </li>

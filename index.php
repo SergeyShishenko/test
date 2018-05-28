@@ -3461,7 +3461,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.5 материалы шпона и направление шпонирования, параметры руста </p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.6 иформация о виде, типе, цвете, принципе действия фурнитуры</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.7 обозначение двух или более номеров образца цвета в составе одного изделия </p>
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.8 записи о полученной/неполученной от Заказчика информации о смежных организациях (в случае необходимости)</p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.8 записи о полученной/неполученной от Заказчика информации о сборочно-монтажныхежных организациях (в случае необходимости)</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.9 чертежи на отдельные изделия (В СЛУЧАЕ НЕОБХОДИМОСТИ)</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.10 чертежи деталей (В СЛУЧАЕ НЕОБХОДИМОСТИ)</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.11 информация о параметрах стекла, зеркала, витража </p>
@@ -3540,7 +3540,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-informacionnyy-list-o-smezhnyh-organizaciyah">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#informacionnyy-list-o-smezhnyh-organizaciyah">6.3 информационный лист о смежных организациях (в случае необходимости)<span> <br>~-katalog-rezby-rezba3</span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#informacionnyy-list-o-smezhnyh-organizaciyah">6.3 информационный лист о сборочно-монтажныхежных организациях (в случае необходимости)<span> <br>~-katalog-rezby-rezba3</span></p>
                                                                            
                                                                         </TD>                                                                         
                                                                     </TR>
@@ -3621,7 +3621,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">Алгоритм по работе с поступающей от Заказчика информацией о смежных организациях<span><br>~-5000404-01_017 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">Алгоритм по работе с поступающей от Заказчика информацией о сборочно-монтажныхежных организациях<span><br>~-5000404-01_017 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
@@ -3697,19 +3697,19 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-smo">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-smo">План по карнизу с обозначением римскими цифрами СМ операций<span><br>~-5000404-02-015 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-smo">План по карнизу с обозначением римскими цифрами сборочно-монтажных операций<span><br>~-5000404-02-015 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-smo">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-smo">План по молдингу с обозначением римскими цифрами СМ операций<span><br>~-5000404-02-016 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-smo">План по молдингу с обозначением римскими цифрами сборочно-монтажных операций<span><br>~-5000404-02-016 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-smo">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-smo">План по плинтусу с обозначением римскими цифрами СМ операций<span><br>~-5000404-02-017 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-smo">План по плинтусу с обозначением римскими цифрами сборочно-монтажных операций<span><br>~-5000404-02-017 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        

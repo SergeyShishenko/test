@@ -1528,10 +1528,12 @@ a.navbar-brand{text-align: center;}
 ul.search_result {
   max-height: 340px;
   max-width: 1200px;
+  /* max-width: 1400px; */
   background-color: #fff;  
   overflow-y: auto;
   overflow-x: hidden;
   margin-left: -1178px;
+  /* margin-left: -1378px; */
   border: 1px solid #eee;
   border-radius: 4px;
   box-shadow: 0.5em 0.5em  10px rgba(100,100,100,0.3), 0 -0.5em  10px rgba(100,100,100,0.3);
