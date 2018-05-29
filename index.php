@@ -4,6 +4,10 @@ require_once('data.php');
 if (!isset($_SESSION['sess_login']) || !isset($_SESSION['sess_pass'])) { header('Location:index-session.php');    exit();}
 if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_passw) {header('Location:index-session.php');    exit();}
 ?> 
+<?php 
+// https://phpclub.ru/detail/article/mail#part_1 Отправка почты средствами PHP
+//  mail("info@500stp.website", "Login to the site", "Line 1\nLine 2\nLine 3"); 
+?>
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">
 <head>

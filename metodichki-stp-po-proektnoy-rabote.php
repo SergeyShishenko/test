@@ -244,8 +244,8 @@ include 'inc-left-side-menu-metodichki.php';
                           <h2 id="ierarhicheskaya-struktura-izdeliy">&nbsp;</h2>
                           <h2 >Иерархическая структура изделий</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                          <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                              alt: <a href="./dist/files/test.pdf"></a>
+                          <object data="./dist/files/5000404-01-003-ierarhicheskaya-struktura-izdeliy.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/5000404-01-003-ierarhicheskaya-struktura-izdeliy.pdf"></a>
                               </object>
   
                           <h2 id="tablica-tipovyh-tolshchin-plitnyh-materialov">&nbsp;</h2>
