@@ -28,8 +28,8 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <meta name="yandex-verification" content="07a17e6c1df2c2b2" />
     <title>500.СТП</title>
     <link href="./dist/css/bootstrap.css" rel="stylesheet">
-    <link href="./dist/css/docs.css" rel="stylesheet">
-    <link href="./dist/css/grid.css" rel="stylesheet">
+    <link href="./dist/css/docs.css?v=2" rel="stylesheet">
+    <link href="./dist/css/grid.css?v=1" rel="stylesheet">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
    
 <!-- <style>
