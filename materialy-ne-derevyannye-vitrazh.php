@@ -174,20 +174,20 @@ include 'inc-left-side-menu-materialy-ne-derevyannye.php';
                             </li>
                             <li><a href="#zerkala-i-stekla-tablica-standartnyh-obrazcov">Зеркала и стекла - таблица стандартных образцов </a>
                                 <ul class="nav">
-                                    <li><a href="#polotna-bez-falca">Полотна без фальца</a>
+                                    <li><a href="#polotna-bez-falca">&#9999;&nbsp;Полотна без фальца</a>
                                     </li>
-                                    <li><a href="#polotna-s-falcem">Полотна с фальцем</a>
+                                    <li><a href="#polotna-s-falcem">&#9999;&nbsp;Полотна с фальцем</a>
                                     </li>                                   
                                 </ul>
                             </li>
                             <li>
                                 <a href="#razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</a>
                                 <ul class="nav">
-                                    <li><a href="#razdvizhnye-polotna-po-stene">Полотна без складывания — раздвижение по стене</a>
+                                    <li><a href="#razdvizhnye-polotna-po-stene">&#9999;&nbsp;Полотна без складывания — раздвижение по стене</a>
                                     </li>
-                                    <li><a href="#razdvizhnye-polotna-v-penal">Полотна без складывания — раздвижение в пенал</a>
+                                    <li><a href="#razdvizhnye-polotna-v-penal">&#9999;&nbsp;Полотна без складывания — раздвижение в пенал</a>
                                     </li>
-                                    <li><a href="#razdvizhnye-polotna-v-proeme">Полотна без складывания — раздвижение в проеме</a>
+                                    <li><a href="#razdvizhnye-polotna-v-proeme">&#9999;&nbsp;Полотна без складывания — раздвижение в проеме</a>
                                   </li>
                                 </ul>
                             </li>

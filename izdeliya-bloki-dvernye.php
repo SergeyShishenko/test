@@ -293,34 +293,34 @@ include 'inc-left-side-menu-izdeliya.php';
                         <ul class="nav bs-sidenav">
                             <li><a href="#dveri-konstrukcii">Конструкции дверных блоков</a>
                                 <ul class="nav">
-                                    <li><a href="#polotno-bloka-dvernogo-gluhoe-pco" >5000201-00_100_01.01 Полотно блока дверного глухое ПЦО</a>
+                                    <li><a href="#polotno-bloka-dvernogo-gluhoe-pco" >&#9999;&nbsp;5000201-00_100_01.01 Полотно блока дверного глухое ПЦО</a>
                                     </li>
-                                    <li><a href="#polotno-bloka-dvernogo-so-steklom-pco" >5000201-00_100_01.11 Полотно блока дверного со стеклом ПЦО</a>
+                                    <li><a href="#polotno-bloka-dvernogo-so-steklom-pco" >&#9999;&nbsp;5000201-00_100_01.11 Полотно блока дверного со стеклом ПЦО</a>
                                     </li>
-                                    <li><a href="#polotno-bloka-dvernogo-so-steklomfacet-pco" >5000201-00_100_01.13 Полотно блока дверного со стеклом(фацет) ПЦО</a>
+                                    <li><a href="#polotno-bloka-dvernogo-so-steklomfacet-pco" >&#9999;&nbsp;5000201-00_100_01.13 Полотно блока дверного со стеклом(фацет) ПЦО</a>
                                     </li>
-                                    <li><a href="#polotno-bloka-dvernogo-s-zerkalom-pco" >5000201-00_100_01.21 Полотно блока дверного с зеркалом ПЦО</a>
+                                    <li><a href="#polotno-bloka-dvernogo-s-zerkalom-pco" >&#9999;&nbsp;5000201-00_100_01.21 Полотно блока дверного с зеркалом ПЦО</a>
                                     </li>
-                                    <li><a href="#polotno-bloka-dvernogo-s-zerkalomfacet-pco" >5000201-00_100_01.23 Полотно блока дверного с зеркалом(фацет) ПЦО</a>
+                                    <li><a href="#polotno-bloka-dvernogo-s-zerkalomfacet-pco" >&#9999;&nbsp;5000201-00_100_01.23 Полотно блока дверного с зеркалом(фацет) ПЦО</a>
                                     </li>                                   
                                 </ul>
                             </li>
                             <li><a href="#polotna">Дверные блоки с распашными полотнами </a>
                                 <ul class="nav">
-                                    <li><a href="#polotna-bez-falca">Полотна без фальца</a>
+                                    <li><a href="#polotna-bez-falca">&#9999;&nbsp;Полотна без фальца</a>
                                     </li>
-                                    <li><a href="#polotna-s-falcem">Полотна с фальцем</a>
+                                    <li><a href="#polotna-s-falcem">&#9999;&nbsp;Полотна с фальцем</a>
                                     </li>                                   
                                 </ul>
                             </li>
                             <li>
                                 <a href="#razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</a>
                                 <ul class="nav">
-                                    <li><a href="#razdvizhnye-polotna-po-stene">Полотна без складывания — раздвижение по стене</a>
+                                    <li><a href="#razdvizhnye-polotna-po-stene">&#9999;&nbsp;Полотна без складывания — раздвижение по стене</a>
                                     </li>
-                                    <li><a href="#razdvizhnye-polotna-v-penal">Полотна без складывания — раздвижение в пенал</a>
+                                    <li><a href="#razdvizhnye-polotna-v-penal">&#9999;&nbsp;Полотна без складывания — раздвижение в пенал</a>
                                     </li>
-                                    <li><a href="#razdvizhnye-polotna-v-proeme">Полотна без складывания — раздвижение в проеме</a>
+                                    <li><a href="#razdvizhnye-polotna-v-proeme">&#9999;&nbsp;Полотна без складывания — раздвижение в проеме</a>
                                   </li>
                                 </ul>
                             </li>

@@ -443,9 +443,9 @@ include 'inc-left-side-menu-metodichki.php';
                         <ul class="nav bs-sidenav">
                             <li><a href="#vyhodnye-svedeniya">ВЫХОДНЫЕ СВЕДЕНИЯ</a>
                                 <ul class="nav">
-                                    <li><a href="#list-titulnyy">&#9733;&nbsp;Лист титульный</a>
+                                    <li><a href="#list-titulnyy">&#9999;&nbsp;Лист титульный</a>
                                     </li>
-                                    <li><a href="#sostav-proekta">&#9733;&nbsp;Состав проекта</a>
+                                    <li><a href="#sostav-proekta">&#9999;&nbsp;Состав проекта</a>
                                     </li>                                   
                                 </ul> 
                             </li>
@@ -460,108 +460,108 @@ include 'inc-left-side-menu-metodichki.php';
                             <li>
                                 <a href="#obmery-inzhenerno-stroitelnaya-chast">ОБМЕРЫ (ИНЖЕНЕРНО-СТРОИТЕЛЬНАЯ ЧАСТЬ)</a>
                                 <ul class="nav">
-                                    <li><a href="#plany-poetazhnye">&#9733;&nbsp;Планы поэтажные</a>
+                                    <li><a href="#plany-poetazhnye">&#9999;&nbsp;Планы поэтажные</a>
                                     </li>
-                                    <li><a href="#plan-pomeshcheniya-obmerochnyy">&#9733;&nbsp;План помещения обмерочный</a>
+                                    <li><a href="#plan-pomeshcheniya-obmerochnyy">&#9999;&nbsp;План помещения обмерочный</a>
                                     </li>
-                                    <li><a href="#razvertka-pomeshcheniya-po-stenam-obmerochnaya">&#9733;&nbsp;Развертка помещения по стенам обмерочная</a>
+                                    <li><a href="#razvertka-pomeshcheniya-po-stenam-obmerochnaya">&#9999;&nbsp;Развертка помещения по стенам обмерочная</a>
                                   </li>
                                 </ul>
                             </li>
                             <li><a href="#dizayn-proekt-inzhenerno-graficheskaya-chast">ДИЗАЙН-ПРОЕКТ (ИНЖЕНЕРНО-ГРАФИЧЕСКАЯ ЧАСТЬ)</a>
                                 <ul class="nav">
-                                    <li><a href="#plan-poetazhnyy-s-ukazaniem-nomerov-izdeliy">&#9733;&nbsp;План поэтажный с указанием номеров изделий</a>
+                                    <li><a href="#plan-poetazhnyy-s-ukazaniem-nomerov-izdeliy">&#9999;&nbsp;План поэтажный с указанием номеров изделий</a>
                                     </li>
-                                    <li><a href="#plan-pomeshcheniya-s-ukazaniem-nomerov-izdeliy">&#9733;&nbsp;План помещения с указанием номеров изделий</a>
+                                    <li><a href="#plan-pomeshcheniya-s-ukazaniem-nomerov-izdeliy">&#9999;&nbsp;План помещения с указанием номеров изделий</a>
                                     </li>
-                                    <li><a href="#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami">&#9733;&nbsp;Развертка помещения по стенам с установленными изделиями</a>                                        
+                                    <li><a href="#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami">&#9999;&nbsp;Развертка помещения по стенам с установленными изделиями</a>                                        
                                      </li>
-                                    <li><a href="#tablica-rezbovyh-elementov-svodnaya-dok-36501">&#9733;&nbsp;Таблица резьбовых элементов сводная, док. №365.01</a>
+                                    <li><a href="#tablica-rezbovyh-elementov-svodnaya-dok-36501">&#9999;&nbsp;Таблица резьбовых элементов сводная, док. №365.01</a>
                                         
                                     </li>
                                 </ul>
                             </li>
                             <li><a href="#albom-obrazcov-cveta-i-formy">АЛЬБОМ ОБРАЗЦОВ ЦВЕТА И ФОРМЫ</a>
                                 <ul class="nav">
-                                    <li><a href="#svodnaya-tablica-soglasovannyh-obrazcov-prilozhenie-2">&#9733;&nbsp;Сводная таблица согласованных образцов («приложение №2»)</a>
+                                    <li><a href="#svodnaya-tablica-soglasovannyh-obrazcov-prilozhenie-2">&#9999;&nbsp;Сводная таблица согласованных образцов («приложение №2»)</a>
                                     </li>
-                                    <li><a href="#foto-soglasovannyh-obrazcov-cveta-i-formy">&#9733;&nbsp;Фото согласованных образцов цвета и формы</a>
+                                    <li><a href="#foto-soglasovannyh-obrazcov-cveta-i-formy">&#9999;&nbsp;Фото согласованных образцов цвета и формы</a>
                                     </li>
-                                    <li><a href="#chertezhi-soglasovannyh-obrazcov-cveta-i-formy">&#9733;&nbsp;Чертежи согласованных образцов цвета и формы</a>
+                                    <li><a href="#chertezhi-soglasovannyh-obrazcov-cveta-i-formy">&#9999;&nbsp;Чертежи согласованных образцов цвета и формы</a>
                                   </li>
                                 </ul>
                             </li>
                             <li><a href="#tehnicheskoe-zadanie-dlya-zakazchika">ТЕХНИЧЕСКОЕ ЗАДАНИЕ ДЛЯ ЗАКАЗЧИКА</a>
                                 <ul class="nav">
-                                    <li><a href="#tehnicheskoe-zadanie-dlya-zakazchika-tipovoe">&#9733;&nbsp;Техническое задание для заказчика типовое</a>
+                                    <li><a href="#tehnicheskoe-zadanie-dlya-zakazchika-tipovoe">&#9999;&nbsp;Техническое задание для заказчика типовое</a>
                                     </li>
-                                    <li><a href="#tehnicheskoe-zadanie-dlya-zakazchika-netipovoe">&#9733;&nbsp;Техническое задание для заказчика нетиповое</a>
+                                    <li><a href="#tehnicheskoe-zadanie-dlya-zakazchika-netipovoe">&#9999;&nbsp;Техническое задание для заказчика нетиповое</a>
                                     </li>
-                                    <li><a href="#informacionnyy-list-o-smezhnyh-organizaciyah">&#9733;&nbsp;Информационный лист о смежных организациях</a>
+                                    <li><a href="#informacionnyy-list-o-smezhnyh-organizaciyah">&#9999;&nbsp;Информационный лист о смежных организациях</a>
                                   </li>
                                 </ul>
                             </li>
                             <li><a href="#obshchie-trebovaniya-po-proektirovaniyu">ОБЩИЕ ТРЕБОВАНИЯ ПО ПРОЕКТИРОВАНИЮ</a>
                                 <ul class="nav">
-                                    <li><a href="#shema-etapov-proetirovaniya-izdeliya">&#9733;&nbsp;Схема этапов проетирования изделия</a>
+                                    <li><a href="#shema-etapov-proetirovaniya-izdeliya">&#9999;&nbsp;Схема этапов проетирования изделия</a>
                                     </li>
-                                    <li><a href="#sostav-komplekta-tipovogo-dp">&#9733;&nbsp;Состав комплекта типового ДП</a>
+                                    <li><a href="#sostav-komplekta-tipovogo-dp">&#9999;&nbsp;Состав комплекта типового ДП</a>
                                     </li>
-                                    <li><a href="#sostav-komplekta-tipovoy-kd">&#9733;&nbsp;Состав комплекта типовой КД</a>
+                                    <li><a href="#sostav-komplekta-tipovoy-kd">&#9999;&nbsp;Состав комплекта типовой КД</a>
                                     </li>                                    
-                                    <li><a href="#ierarhicheskaya-struktura-izdeliy">&#9733;&nbsp;Иерархическая структура изделий</a>
+                                    <li><a href="#ierarhicheskaya-struktura-izdeliy">&#9999;&nbsp;Иерархическая структура изделий</a>
                                     </li>
-                                    <li><a href="#tablica-tipovyh-tolshchin-plitnyh-materialov">&#9733;&nbsp;Таблица типовых толщин плитных материалов</a>
+                                    <li><a href="#tablica-tipovyh-tolshchin-plitnyh-materialov">&#9999;&nbsp;Таблица типовых толщин плитных материалов</a>
                                     </li>
-                                    <li><a href="#poryadok-prisvoeniya-nomerov-detalyam">&#9733;&nbsp;Порядок присвоения номеров деталям</a>
+                                    <li><a href="#poryadok-prisvoeniya-nomerov-detalyam">&#9999;&nbsp;Порядок присвоения номеров деталям</a>
                                     </li>
-                                    <li><a href="#vedomost-tipovyh-naimenovaniy-sepsedetaley">&#9733;&nbsp;Ведомость типовых наименований СЕ.ПСЕ.деталей</a>
+                                    <li><a href="#vedomost-tipovyh-naimenovaniy-sepsedetaley">&#9999;&nbsp;Ведомость типовых наименований СЕ.ПСЕ.деталей</a>
                                     </li>
-                                    <li><a href="#tablica-kodov-operaciy">&#9733;&nbsp;Таблица кодов операций</a>
+                                    <li><a href="#tablica-kodov-operaciy">&#9999;&nbsp;Таблица кодов операций</a>
                                     </li>
-                                    <li><a href="#mp-po-kd-s-raznorodnymi-materialami">&#9733;&nbsp;МП по КД с разнородными материалами</a>
+                                    <li><a href="#mp-po-kd-s-raznorodnymi-materialami">&#9999;&nbsp;МП по КД с разнородными материалами</a>
                                     </li>
-                                    <li><a href="#algoritm-raboty-s-shablonami">&#9733;&nbsp;Алгоритм работы с шаблонами</a>
+                                    <li><a href="#algoritm-raboty-s-shablonami">&#9999;&nbsp;Алгоритм работы с шаблонами</a>
                                     </li>
-                                    <li><a href="#algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">&#9733;&nbsp;Алгоритм работы с информацией о смежных организациях</a>
+                                    <li><a href="#algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">&#9999;&nbsp;Алгоритм работы с информацией о смежных организациях</a>
                                     </li>
-                                    <li><a href="#otstupleniy-ot-trebovaniy-ergonomiki-i-bezopasnosti">&#9733;&nbsp;Отступлений от требований эргономики и безопасности</a>
+                                    <li><a href="#otstupleniy-ot-trebovaniy-ergonomiki-i-bezopasnosti">&#9999;&nbsp;Отступлений от требований эргономики и безопасности</a>
                                     </li>
-                                    <li><a href="#shema-rascheta-gabaritov-stekla-i-zerkala-v-sostave-se">&#9733;&nbsp;Схема расчета габаритов стекла и зеркала в составе СЕ</a>
+                                    <li><a href="#shema-rascheta-gabaritov-stekla-i-zerkala-v-sostave-se">&#9999;&nbsp;Схема расчета габаритов стекла и зеркала в составе СЕ</a>
                                     </li>
-                                    <li><a href="#ierarhicheskaya-struktura-katalogov-proekt-i-zakaz">&#9733;&nbsp;Иерархическая структура каталогов ПРОЕКТ и ЗАКАЗ</a>
+                                    <li><a href="#ierarhicheskaya-struktura-katalogov-proekt-i-zakaz">&#9999;&nbsp;Иерархическая структура каталогов ПРОЕКТ и ЗАКАЗ</a>
                                     </li>
-                                    <li><a href="#ierarhicheskaya-struktura-kataloga-500stp">&#9733;&nbsp;Иерархическая структура каталога 500.СТП</a>
+                                    <li><a href="#ierarhicheskaya-struktura-kataloga-500stp">&#9999;&nbsp;Иерархическая структура каталога 500.СТП</a>
                                     </li>
                                 </ul>
                             </li>
                             <li><a href="#obrazcy-zapolneniya-dokumentov">ОБРАЗЦЫ ЗАПОЛНЕНИЯ ДОКУМЕНТОВ</a>
                                 <ul class="nav">
-                                    <li><a href="#obrazec-zapolneniya-dok-vedomost-furnitury">&#9733;&nbsp;Образец заполнения док. ВЕДОМОСТЬ ФУРНИТУРЫ</a>
+                                    <li><a href="#obrazec-zapolneniya-dok-vedomost-furnitury">&#9999;&nbsp;Образец заполнения док. ВЕДОМОСТЬ ФУРНИТУРЫ</a>
                                     </li>
-                                    <li><a href="#obrazec-zapolneniya-dok-vedomost-stekol-i-zerkal">&#9733;&nbsp;Образец заполнения док. ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ</a>
+                                    <li><a href="#obrazec-zapolneniya-dok-vedomost-stekol-i-zerkal">&#9999;&nbsp;Образец заполнения док. ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ</a>
                                     </li>
-                                    <li><a href="#obrazec-ukazaniya-na-chertezhe-parametrov-shponirovaniya">&#9733;&nbsp;Образец указания на чертеже параметров шпонирования</a>
+                                    <li><a href="#obrazec-ukazaniya-na-chertezhe-parametrov-shponirovaniya">&#9999;&nbsp;Образец указания на чертеже параметров шпонирования</a>
                                     </li>                                    
-                                    <li><a href="#obrazec-ukazaniya-na-chertezhe-obrazcov-cveta">&#9733;&nbsp;Образец указания на чертеже образцов цвета</a>
+                                    <li><a href="#obrazec-ukazaniya-na-chertezhe-obrazcov-cveta">&#9999;&nbsp;Образец указания на чертеже образцов цвета</a>
                                     </li>
-                                    <li><a href="#obrazec-ukazaniya-na-chertezhe-parametrov-stekla">&#9733;&nbsp;Образец указания на чертеже параметров стекла</a>
+                                    <li><a href="#obrazec-ukazaniya-na-chertezhe-parametrov-stekla">&#9999;&nbsp;Образец указания на чертеже параметров стекла</a>
                                     </li>
-                                    <li><a href="#obrazec-ukazaniya-v-kd-kodov-sborochno-otdelochnyh-operaciy">&#9733;&nbsp;Образец указания в КД кодов сборочно-отделочных операций</a>
+                                    <li><a href="#obrazec-ukazaniya-v-kd-kodov-sborochno-otdelochnyh-operaciy">&#9999;&nbsp;Образец указания в КД кодов сборочно-отделочных операций</a>
                                     </li>
-                                    <li><a href="#plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-smo">&#9733;&nbsp;План по карнизу с обозначением римскими цифрами сборочно-монтажных операций</a>
+                                    <li><a href="#plan-po-karnizu-s-oboznacheniem-rimskimi-ciframi-smo">&#9999;&nbsp;План по карнизу с обозначением римскими цифрами сборочно-монтажных операций</a>
                                     </li>
-                                    <li><a href="#plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-smo">&#9733;&nbsp;План по молдингу с обозначением римскими цифрами сборочно-монтажных операций</a>
+                                    <li><a href="#plan-po-moldingu-s-oboznacheniem-rimskimi-ciframi-smo">&#9999;&nbsp;План по молдингу с обозначением римскими цифрами сборочно-монтажных операций</a>
                                     </li>
-                                    <li><a href="#plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-smo">&#9733;&nbsp;План по плинтусу с обозначением римскими цифрами сборочно-монтажных операций</a>
+                                    <li><a href="#plan-po-plintusu-s-oboznacheniem-rimskimi-ciframi-smo">&#9999;&nbsp;План по плинтусу с обозначением римскими цифрами сборочно-монтажных операций</a>
                                     </li>
-                                    <li><a href="#obrazec-ukazaniya-na-chertezhe-kolichestva-detaley">&#9733;&nbsp;Образец указания на чертеже количества деталей</a>
+                                    <li><a href="#obrazec-ukazaniya-na-chertezhe-kolichestva-detaley">&#9999;&nbsp;Образец указания на чертеже количества деталей</a>
                                     </li>
-                                    <li><a href="#obrazec-ukazaniya-na-chertezhe-nomerov-povtornyh-prilozheniy">&#9733;&nbsp;Образец указания на чертеже номеров повторных приложений</a>
+                                    <li><a href="#obrazec-ukazaniya-na-chertezhe-nomerov-povtornyh-prilozheniy">&#9999;&nbsp;Образец указания на чертеже номеров повторных приложений</a>
                                     </li>
-                                    <li><a href="#obrazec-tz-stroitelyam-zakazchika">&#9733;&nbsp;Образец ТЗ строителям Заказчика</a>
+                                    <li><a href="#obrazec-tz-stroitelyam-zakazchika">&#9999;&nbsp;Образец ТЗ строителям Заказчика</a>
                                     </li>
-                                    <li><a href="#kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom">&#9733;&nbsp;КД на ДБ с распашным одностворчатым глухим полотном</a>
+                                    <li><a href="#kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom">&#9999;&nbsp;КД на ДБ с распашным одностворчатым глухим полотном</a>
                                     </li>
                                     
                                 </ul>

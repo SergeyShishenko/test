@@ -145,22 +145,22 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <ul class="nav bs-sidenav">
                             <li><a href="#listy-titulnye-dizayn-proekta">Листы титульные дизайн-проекта</a>
                             <ul class="nav">
-                                    <li><a href="#list-titulnyy-dp">&#9733;&nbsp;5000301_01_001 лист титульный ДП</a>
+                                    <li><a href="#list-titulnyy-dp">&#9999;&nbsp;5000301_01_001 лист титульный ДП</a>
                                     </li>
-                                    <li><a href="#pasport-izdeliy-zakaza-dp">&#9733;&nbsp;паспорт изделий заказа ДП</a>
+                                    <li><a href="#pasport-izdeliy-zakaza-dp">&#9999;&nbsp;паспорт изделий заказа ДП</a>
                                     </li>
-                                    <li><a href="#reestr-razdelov-dp">&#9733;&nbsp;реестр разделов ДП</a>
+                                    <li><a href="#reestr-razdelov-dp">&#9999;&nbsp;реестр разделов ДП</a>
                                     </li>                                    
                                 </ul>
                             </li>                           
                             <li>
                                 <a href="#listy-titulnye-konstruktorskoy-dokumentacii">Листы титульные конструкторской документации</a>
                                 <ul class="nav">
-                                    <li><a href="#list-titulnyy-kd">&#9733;&nbsp;5000301_02_000 лист титульный КД</a>
+                                    <li><a href="#list-titulnyy-kd">&#9999;&nbsp;5000301_02_000 лист титульный КД</a>
                                     </li>
-                                    <li><a href="#pasport-izdeliy-zakaza-kd">&#9733;&nbsp;паспорт изделий заказа КД</a>
+                                    <li><a href="#pasport-izdeliy-zakaza-kd">&#9999;&nbsp;паспорт изделий заказа КД</a>
                                     </li>
-                                    <li><a href="#reestr-razdelov-kd">&#9733;&nbsp;реестр разделов КД</a>
+                                    <li><a href="#reestr-razdelov-kd">&#9999;&nbsp;реестр разделов КД</a>
                                   </li>
                                 </ul>
                             </li>

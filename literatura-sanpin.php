@@ -160,11 +160,11 @@ include 'inc-left-side-menu-literatura.php';
                             <li>
                                 <a href="#razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</a>
                                 <ul class="nav">
-                                    <li><a href="#razdvizhnye-polotna-po-stene">Полотна без складывания — раздвижение по стене</a>
+                                    <li><a href="#razdvizhnye-polotna-po-stene">&#9999;&nbsp;Полотна без складывания — раздвижение по стене</a>
                                     </li>
-                                    <li><a href="#razdvizhnye-polotna-v-penal">Полотна без складывания — раздвижение в пенал</a>
+                                    <li><a href="#razdvizhnye-polotna-v-penal">&#9999;&nbsp;Полотна без складывания — раздвижение в пенал</a>
                                     </li>
-                                    <li><a href="#razdvizhnye-polotna-v-proeme">Полотна без складывания — раздвижение в проеме</a>
+                                    <li><a href="#razdvizhnye-polotna-v-proeme">&#9999;&nbsp;Полотна без складывания — раздвижение в проеме</a>
                                   </li>
                                 </ul>
                             </li>
