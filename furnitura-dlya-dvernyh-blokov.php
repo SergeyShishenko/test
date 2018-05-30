@@ -55,13 +55,13 @@ include 'inc-left-side-menu-furnitura.php';
                             </object>
                             <h2  id="petli-skrytogo-montazha-tectus-TE_240_3D">&nbsp;</h2> 
                              <h2 >Петли скрытого монтажа TECTUS TE_240_3D</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <p>Артикулы цвета накладок на 3 странице.</p>
                         <object data="./dist/files/TE_240_3D.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/TE_240_3D.pdf"></a>
                             </object>
                             <h2  id="petli-skrytogo-montazha-tectus-TE_340_3D">&nbsp;</h2> 
                              <h2 >Петли скрытого монтажа TECTUS TE_340_3D</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <p>Артикулы цвета накладок на 3 странице.</p>
                         <object data="./dist/files/TE_340_3D.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/TE_340_3D.pdf"></a>
                             </object>

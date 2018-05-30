@@ -3800,8 +3800,8 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->   
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-petli-skrytogo-montazha-tectus-TE_340_3D">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus-TE_340_3D">петли скрытого монтажа TECTUS TE 340 3D<span> <br>~petli-skrytogo-montazha-tectus-TE_340_3D</span></p>
-                                                                            <p data-img="./dist/images/no-foto.png"    data-href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus-TE_340_3D" class="KEYWORDS">петля для нефальцованных межкомнатных и объектных дверей TE_340_3D<span><br>~</span></p>
+                                                                            <p data-img="./dist/images/TE-340-3D.png" data-href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus-TE_340_3D">петли скрытого монтажа TECTUS TE 340 3D<span> <br>~petli-skrytogo-montazha-tectus-TE_340_3D</span></p>
+                                                                            <p data-img="./dist/images/TE-340-3D.png"    data-href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus-TE_340_3D" class="KEYWORDS">петля для нефальцованных межкомнатных и объектных дверей TE_340_3D<span><br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->            
