@@ -53,7 +53,7 @@ include 'inc-left-side-menu-furnitura.php';
                         <object data="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf"></a>
                             </object>
-                            <h2  id="petli-skrytogo-montazha-tectus">&nbsp;</h2> 
+                            <h2  id="petli-skrytogo-montazha-tectus-TE_240_3D">&nbsp;</h2> 
                              <h2 >Петли скрытого монтажа TECTUS TE_240_3D</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/TE_240_3D.pdf" type="application/pdf" width="100%" height="720px">
@@ -267,7 +267,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     </li>
                                     <li><a href="#petli-kartochnye-dvernye-fs">&#9999;&nbsp;Петли карточные дверные FS</a>
                                     </li>
-                                    <li><a href="#petli-skrytogo-montazha-tectus">&#9999;&nbsp;Петли скрытого монтажа TECTUS TE_240_3D</a>
+                                    <li><a href="#petli-skrytogo-montazha-tectus-TE_240_3D">&#9999;&nbsp;Петли скрытого монтажа TECTUS TE_240_3D</a>
                                     </li>
                                     <li><a href="#petli-skrytogo-montazha-tectus-TE_340_3D">&#9999;&nbsp;Петли скрытого монтажа TECTUS TE_340_3D</a>
                                     </li>

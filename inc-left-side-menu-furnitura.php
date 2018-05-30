@@ -22,7 +22,10 @@
                                             </li>
                                             <li><a class="list-group-item sub" href="furnitura-dlya-dvernyh-blokov.php#petli-kartochnye-dvernye-fs">петли карточные дверные FS</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus">петли скрытого монтажа TECTUS</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus-TE_240_3D">петли скрытого монтажа TECTUS TE 240 3D</a>
+                                            </li> 
+                                            </li>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus-TE_240_3D">петли скрытого монтажа TECTUS TE 240 3D</a>
                                             </li>                                      
                                         </ul>
                                     </li>
