@@ -172,21 +172,21 @@ include 'inc-left-side-menu-detali.php';
                         <ul class="nav bs-sidenav">
                             <li><a href="#kamni-gladkie">Камни гладкие</a>
                                 <ul class="nav">
-                                    <li><a href="#profili-nakladki-50" >МДФ накладка №050/ДШ</a>
+                                    <li><a href="#profili-nakladki-50" >&#9999;&nbsp;МДФ накладка №050/ДШ</a>
                                     </li>
-                                    <li><a href="#profili-nakladki-51" >МДФ накладка №051/ДШ</a>
+                                    <li><a href="#profili-nakladki-51" >&#9999;&nbsp;МДФ накладка №051/ДШ</a>
                                     </li> 
-                                    <li><a href="#profili-nakladki-52" >МДФ накладка №052/ДШ</a>
+                                    <li><a href="#profili-nakladki-52" >&#9999;&nbsp;МДФ накладка №052/ДШ</a>
                                     </li>
-                                    <li><a href="#profili-nakladki-53" >МДФ накладка №053/ДШ</a>
+                                    <li><a href="#profili-nakladki-53" >&#9999;&nbsp;МДФ накладка №053/ДШ</a>
                                     </li>                                    
                                 </ul>
                             </li>
                             <li><a href="#kamni-reznye">Камни резные </a>
                                 <ul class="nav">
-                                    <li><a href="#polotna-bez-falca">Полотна без фальца</a>
+                                    <li><a href="#polotna-bez-falca">&#9999;&nbsp;Полотна без фальца</a>
                                     </li>
-                                    <li><a href="#polotna-s-falcem">Полотна с фальцем</a>
+                                    <li><a href="#polotna-s-falcem">&#9999;&nbsp;Полотна с фальцем</a>
                                     </li>                                   
                                 </ul>
                             </li>

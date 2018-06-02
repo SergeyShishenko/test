@@ -4,6 +4,10 @@ require_once('data.php');
 if (!isset($_SESSION['sess_login']) || !isset($_SESSION['sess_pass'])) { header('Location:index-session.php');    exit();}
 if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_passw) {header('Location:index-session.php');    exit();}
 ?> 
+<?php 
+// https://phpclub.ru/detail/article/mail#part_1 Отправка почты средствами PHP
+//  mail("info@500stp.website", "Login to the site", "Line 1\nLine 2\nLine 3"); 
+?>
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">
 <head>
@@ -24,8 +28,8 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <meta name="yandex-verification" content="07a17e6c1df2c2b2" />
     <title>500.СТП</title>
     <link href="./dist/css/bootstrap.css" rel="stylesheet">
-    <link href="./dist/css/docs.css" rel="stylesheet">
-    <link href="./dist/css/grid.css" rel="stylesheet">
+    <link href="./dist/css/docs.css?v=2" rel="stylesheet">
+    <link href="./dist/css/grid.css?v=1" rel="stylesheet">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
    
 <!-- <style>
@@ -3788,11 +3792,19 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-petli-skrytogo-montazha-tectus">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus">петли скрытого монтажа TECTUS<span> <br>~petli-skrytogo-montazha-tectus</span></p>
+                                                                        <TD class="mapsite" id="flo-petli-skrytogo-montazha-tectus-TE_240_3D">
+                                                                            <p data-img="./dist/images/TE-240-3D.png" data-href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus-TE_240_3D">петли скрытого монтажа TECTUS TE 240 3D<span> <br>~petli-skrytogo-montazha-tectus-TE_240_3D</span></p>
+                                                                            <p data-img="./dist/images/TE-240-3D.png"    data-href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus-TE_240_3D" class="KEYWORDS">петля для нефальцованных межкомнатных и объектных дверей TE_240_3D<span><br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->           
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->   
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-petli-skrytogo-montazha-tectus-TE_340_3D">
+                                                                            <p data-img="./dist/images/TE-340-3D.png" data-href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus-TE_340_3D">петли скрытого монтажа TECTUS TE 340 3D<span> <br>~petli-skrytogo-montazha-tectus-TE_340_3D</span></p>
+                                                                            <p data-img="./dist/images/TE-340-3D.png"    data-href="furnitura-dlya-dvernyh-blokov.php#petli-skrytogo-montazha-tectus-TE_340_3D" class="KEYWORDS">петля для нефальцованных межкомнатных и объектных дверей TE_340_3D<span><br>~</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->            
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 

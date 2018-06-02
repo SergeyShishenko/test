@@ -53,15 +53,15 @@ include 'inc-left-side-menu-furnitura.php';
                         <object data="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf"></a>
                             </object>
-                            <h2  id="petli-skrytogo-montazha-tectus">&nbsp;</h2> 
+                            <h2  id="petli-skrytogo-montazha-tectus-TE_240_3D">&nbsp;</h2> 
                              <h2 >Петли скрытого монтажа TECTUS TE_240_3D</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <p>Артикулы цвета накладок на 3 странице.</p>
                         <object data="./dist/files/TE_240_3D.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/TE_240_3D.pdf"></a>
                             </object>
                             <h2  id="petli-skrytogo-montazha-tectus-TE_340_3D">&nbsp;</h2> 
                              <h2 >Петли скрытого монтажа TECTUS TE_340_3D</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <p>Артикулы цвета накладок на 3 странице.</p>
                         <object data="./dist/files/TE_340_3D.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/TE_340_3D.pdf"></a>
                             </object>
@@ -259,17 +259,17 @@ include 'inc-left-side-menu-furnitura.php';
                             
                             <li><a href="#petli-dlya-poloten-dvernyh">ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ</a>
                                 <ul class="nav">
-                                    <li><a href="#petli-vvertnye-chetyrehshtyrkovye-otlav">&#9733;&nbsp;Петли ввертные четырехштырьковые OTLAV 14 мм</a>
+                                    <li><a href="#petli-vvertnye-chetyrehshtyrkovye-otlav">&#9999;&nbsp;Петли ввертные четырехштырьковые OTLAV 14 мм</a>
                                     </li>
-                                    <li><a href="#otlav2">&#9733;&nbsp;Петли ввертные четырехштырьковые OTLAV</a>
+                                    <li><a href="#otlav2">&#9999;&nbsp;Петли ввертные четырехштырьковые OTLAV</a>
                                     </li>
-                                    <li><a href="#otlav3">&#9733;&nbsp;Петли дверные разные</a>
+                                    <li><a href="#otlav3">&#9999;&nbsp;Петли дверные разные</a>
                                     </li>
-                                    <li><a href="#petli-kartochnye-dvernye-fs">&#9733;&nbsp;Петли карточные дверные FS</a>
+                                    <li><a href="#petli-kartochnye-dvernye-fs">&#9999;&nbsp;Петли карточные дверные FS</a>
                                     </li>
-                                    <li><a href="#petli-skrytogo-montazha-tectus">&#9733;&nbsp;Петли скрытого монтажа TECTUS TE_240_3D</a>
+                                    <li><a href="#petli-skrytogo-montazha-tectus-TE_240_3D">&#9999;&nbsp;Петли скрытого монтажа TECTUS TE_240_3D</a>
                                     </li>
-                                    <li><a href="#petli-skrytogo-montazha-tectus-TE_340_3D">&#9733;&nbsp;Петли скрытого монтажа TECTUS TE_340_3D</a>
+                                    <li><a href="#petli-skrytogo-montazha-tectus-TE_340_3D">&#9999;&nbsp;Петли скрытого монтажа TECTUS TE_340_3D</a>
                                     </li>
                                                                        
                                 </ul>
@@ -277,46 +277,46 @@ include 'inc-left-side-menu-furnitura.php';
                             <li>
                                 <a href="#mehanizmy-razdvizheniya-dlya-poloten-dvernyh">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ПОЛОТЕН ДВЕРНЫХ</a>
                                 <ul class="nav">
-                                    <li><a href="#sistema-razdvizheniya-laguna-standart">&#9733;&nbsp;Система раздвижения Laguna Standart</a>
+                                    <li><a href="#sistema-razdvizheniya-laguna-standart">&#9999;&nbsp;Система раздвижения Laguna Standart</a>
                                     </li>                                  
                                 </ul>
                             </li>
 
                             <li><a href="#zamki-dlya-poloten-dvernyh">ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ</a>
                                 <ul class="nav">
-                                    <li><a href="#zamki-agb-dlya-razdvizhnyh-dverey">&#9733;&nbsp;Замки AGB для раздвижных дверей</a>
+                                    <li><a href="#zamki-agb-dlya-razdvizhnyh-dverey">&#9999;&nbsp;Замки AGB для раздвижных дверей</a>
                                     </li> 
-                                    <li><a href="#zamki-i-otvetnye-planki-agb">&#9733;&nbsp;Замки и ответные планки AGB</a>
+                                    <li><a href="#zamki-i-otvetnye-planki-agb">&#9999;&nbsp;Замки и ответные планки AGB</a>
                                     </li>
-                                    <li><a href="#zamki-i-otvetnye-planki-ces">&#9733;&nbsp;Замки и ответные планки CES</a>
+                                    <li><a href="#zamki-i-otvetnye-planki-ces">&#9999;&nbsp;Замки и ответные планки CES</a>
                                     </li>                                 
                                 </ul>
                             </li>
                             <li><a href="#porogi-avtomaticheskie-dlya-poloten-dvernyh">ПОРОГИ АВТОМАТИЧЕСКИЕ для ПОЛОТЕН ДВЕРНЫХ</a>
                                 <ul class="nav">
-                                    <li><a href="#planet-ft">&#9733;&nbsp;Planet_FT</a>
+                                    <li><a href="#planet-ft">&#9999;&nbsp;Planet_FT</a>
                                     </li>                                                                   
                                 </ul>
                             </li>
                             
                             <li><a href="#rigeli-shpingalety-dlya-poloten-dvernyh">РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ</a>
                                 <ul class="nav">
-                                    <li><a href="#rigel1">&#9733;&nbsp;rigel1</a>
+                                    <li><a href="#rigel1">&#9999;&nbsp;rigel1</a>
                                     </li> 
-                                    <li><a href="#rigel2">&#9733;&nbsp;rigel2</a>
+                                    <li><a href="#rigel2">&#9999;&nbsp;rigel2</a>
                                     </li>
-                                    <li><a href="#rigel3">&#9733;&nbsp;rigel3</a>
+                                    <li><a href="#rigel3">&#9999;&nbsp;rigel3</a>
                                     </li>                                                                  
                                 </ul>
                             </li> 
 
                             <li><a href="#dovodchiki-dlya-poloten-dvernyh">ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ</a>
                                 <ul class="nav">
-                                    <li><a href="#dovodchik1">&#9733;&nbsp;dovodchik1</a>
+                                    <li><a href="#dovodchik1">&#9999;&nbsp;dovodchik1</a>
                                     </li> 
-                                    <li><a href="#dovodchik2">&#9733;&nbsp;dovodchik2</a>
+                                    <li><a href="#dovodchik2">&#9999;&nbsp;dovodchik2</a>
                                     </li>
-                                    <li><a href="#dovodchik3">&#9733;&nbsp;dovodchik3</a>
+                                    <li><a href="#dovodchik3">&#9999;&nbsp;dovodchik3</a>
                                     </li>                                                                  
                                 </ul>
                             </li> 
@@ -324,20 +324,20 @@ include 'inc-left-side-menu-furnitura.php';
                             
                             <li><a href="#upory-napolnye-i-nastennye">УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ</a>
                                 <ul class="nav">
-                                    <li><a href="#upor1">&#9733;&nbsp;upor1</a>
+                                    <li><a href="#upor1">&#9999;&nbsp;upor1</a>
                                     </li> 
-                                    <li><a href="#upor2">&#9733;&nbsp;upor2</a>
+                                    <li><a href="#upor2">&#9999;&nbsp;upor2</a>
                                     </li>
-                                    <li><a href="#upor3">&#9733;&nbsp;upor3</a>
+                                    <li><a href="#upor3">&#9999;&nbsp;upor3</a>
                                     </li>                                                                  
                                 </ul>
                             </li>  
 
                             <li><a href="#svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart">Сводная таблица фурнитуры дверей распашных</a>
                                 <ul class="nav">
-                                    <li><a href="#klass-lyuks">&#9733;&nbsp;класс ЛЮКС</a>
+                                    <li><a href="#klass-lyuks">&#9999;&nbsp;класс ЛЮКС</a>
                                     </li> 
-                                    <li><a href="#klass-standart">&#9733;&nbsp;класс STANDART</a>
+                                    <li><a href="#klass-standart">&#9999;&nbsp;класс STANDART</a>
                                     </li>
                                                                                                      
                                 </ul>

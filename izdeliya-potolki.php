@@ -86,9 +86,9 @@ include 'inc-left-side-menu-izdeliya.php';
                         <ul class="nav bs-sidenav">
                             <li><a href="#potolki-kessonirovannye">ПОТОЛКИ КЕССОНИРОВАННЫЕ</a>
                                 <ul class="nav">
-                                        <li><a href="#potolki-kessony-tipovye">5000211-00_100 кессоны типовые</a>
+                                        <li><a href="#potolki-kessony-tipovye">&#9999;&nbsp;5000211-00_100 кессоны типовые</a>
                                         </li>
-                                        <li><a href="#potolki-potolok-kessonirovannyy">5000211-00_101 потолок кессонированный</a>
+                                        <li><a href="#potolki-potolok-kessonirovannyy">&#9999;&nbsp;5000211-00_101 потолок кессонированный</a>
                                         </li>                                   
                                     </ul>
                             </li>               

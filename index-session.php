@@ -41,13 +41,26 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
 <!DOCTYPE html>
 <html  >
 <head>
-  <meta charset="UTF-8">
-  <title>Авторизация</title>   
-      
+<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta property="og:title" content="СТАНДАРТЫ ПРЕДПРИЯТИЯ" />
+    <meta property="og:image" content="https://www.500stp.website/dist/css/prew500stp.jpg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="СТАНДАРТЫ ПРЕДПРИЯТИЯ">
+    <meta property="og:description" content="Стандарт предприятия (СТП) необходим для организации четкой и качественной работы, для поддержания успешного и эффективного функционирования компании" />
+    <meta property="og:url" content= "https://500stp.website" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:locale" content="ru_RU" />
+    <link rel="image_src" href="https://www.500stp.website/dist/css/prew500stp.jpg"/>
+    <meta name="yandex-verification" content="07a17e6c1df2c2b2" />
+    <title>500.СТП</title>
       <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
       <link href="./dist/css/cover.css" rel="stylesheet">
       <link rel="stylesheet" href="./dist/css/style-form.css">
-      <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">  
+      <link rel="shortcut icon" href="Lock-Icon.png" type="image/x-icon">  
 </head>
 <body>
 
@@ -64,7 +77,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
     <div class="inner cover">
        <hgroup>
       <h1>Вход на сайт</h1>
-      <h3>Здравствуйте! Авторизируйтесь пожалуйста.</h3>
+      <h3>Здравствуйте! Авторизируйтесь, пожалуйста.</h3>
       <?php echo $err; ?>
       </hgroup>
       <form action="index-session.php" method="POST">
