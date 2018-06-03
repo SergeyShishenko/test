@@ -117,7 +117,9 @@
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-01-113-petlya-vkladnaya-falshfasadnaya-bez-pruzhiny">5000502-01-113 петля вкладная фальшфасадная без пружины</a>
                                             </li>
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny">5000502-01-114 петля накладная нулевого вхождения без пружины</a>
-                                            </li>                                      
+                                            </li> 
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#petli-dlya-fasadov-podbor-po-vesu">ПЕТЛИ для ФАСАДОВ (подбор по весу)</a>
+                                            </li>                                     
                                         </ul>
                                     </li>
                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mehanizmy-razdvizheniya-dlya-fasadov-Cinetto-PS23">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ</a>

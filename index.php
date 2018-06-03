@@ -4052,7 +4052,13 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                             <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny">5000502-01-114 петля накладная нулевого вхождения без пружины<span> <br>~5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->            
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-petli-dlya-fasadov-podbor-po-vesu">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#petli-dlya-fasadov-podbor-po-vesu">ПЕТЛИ для ФАСАДОВ (подбор по весу)<span> <br>~petli-dlya-fasadov-podbor-po-vesu</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->             
                                                                 </TABLE>
                                                             </TD>
                                                         </TR> 
