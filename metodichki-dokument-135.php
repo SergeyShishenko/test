@@ -26,119 +26,91 @@ include 'inc-left-side-menu-metodichki.php';
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header">
-                          <h1 itemprop="name" id="list-trebovaniya-detaleykamni">Лист требования деталей(Камни)</h1>
+                          <h1 itemprop="name" id="list-trebovaniy-detaley---kamen">Лист требования деталей по камням</h1>
                         </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-               
+                        <p>&nbsp;</p>
+                        <object data="./dist/files/list-trebovaniy-detaley---kamen.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/list-trebovaniy-detaley---kamen.pdf"></a>
+                              </object>
                       </section>
                     </article>
 
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header">
-                          <h1 itemprop="name" id="polotna">Дверные блоки с распашными полотнами</h1>
+                          <h1 itemprop="name" id="list-trebovaniy-detaley---tokarke-i-rezbe">Лист требования деталей по Токарке Резьбе</h1>
                         </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt harum minus possimus, tempore suscipit fugit nostrum enim hic illum tempora assumenda nemo, vero officiis asperiores, fuga aut. Ex, ratione!</p>
-                        <div class="bs-callout bs-callout-warning" id="jquery-required">
-                          <h4>Lorem ipsum dolor</h4>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
-
-                        <h2 id="polotna-bez-falca">&nbsp;</h2>
-                        <h2 >Полотна без фальца</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
-
-                        <h2 id="polotna-s-falcem">&nbsp;</h2>
-                        <h2 >Полотна c фальцем</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
+                        <p>&nbsp;</p>
+                        <object data="./dist/files/list-trebovaniy-detaley---tokarke-i-rezbe.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/list-trebovaniy-detaley---tokarke-i-rezbe.pdf"></a>
+                              </object>
                     </article>
 
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header">
-                          <h1 itemprop="name" id="razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</h1>
+                          <h1 itemprop="name" id="135-metodichka-po-detalyam-obshcheemdf">Общие требования + МДФ</h1>
                         </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sed cum vero facere quisquam iure veritatis laboriosam soluta optio quis ratione quam magni rerum aliquid doloremque commodi, possimus, sit incidunt.</p>
-                        
-                        <h2 id="razdvizhnye-polotna-po-stene">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение по стене</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                         
-                        <h2 id="razdvizhnye-polotna-v-penal">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение в пенал</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
-                        <h2 id="razdvizhnye-polotna-v-proeme">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение в проеме</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
+                        <p>&nbsp;</p>
+                        <object data="./dist/files/135-metodichka-po-detalyam-obshcheemdf.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/135-metodichka-po-detalyam-obshcheemdf.pdf"></a>
+                              </object>
                       </section>
                     </article>
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header">
-                          <h1 itemprop="name" id="mayatnikovye-polotna">Дверные блоки с маятниковыми (барными) полотнами</h1>
+                          <h1 itemprop="name" id="13507-algoritm-po-kompensacii-po-tolshchine">135.07 Алгоритм по компенсации по толщине</h1>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
+                        <p>&nbsp;</p>
+                        <object data="./dist/files/13507-algoritm-po-kompensacii-po-tolshchine.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/13507-algoritm-po-kompensacii-po-tolshchine.pdf"></a>
+                              </object>
                       </section>
                     </article>
                     <article itemscope="" itemtype="http://schema.org/Article">
                         <section itemprop="articleBody" id="bs-docs-section">
                           <div class="page-header">
-                            <h1 itemprop="name" id="portaly">Дверные блоки без полотен (порталы)</h1>
+                            <h1 itemprop="name" id="metodichka-po-detalyamprofili">Профили методичка</h1>
                           </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
+                          <p>&nbsp;</p>
+                        <object data="./dist/files/metodichka-po-detalyamprofili.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/metodichka-po-detalyamprofili.pdf"></a>
+                              </object>
+
                         </section>
                       </article>
                     <article itemscope="" itemtype="http://schema.org/Article">
                         <section itemprop="articleBody" id="bs-docs-section">
                           <div class="page-header">
-                            <h1 itemprop="name" id="sborochnye-shemy-polotna">Сборочно-монтажные схемы</h1>
+                            <h1 itemprop="name" id="metodichka-po-detalyam-ramki">Рамки методичка</h1>
                           </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
+                          <p>&nbsp;</p>
+                        <object data="./dist/files/metodichka-po-detalyam-ramki.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/metodichka-po-detalyam-ramki.pdf"></a>
+                              </object>
+                        </section>
+                    </article>
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                        <section itemprop="articleBody" id="bs-docs-section">
+                          <div class="page-header">
+                            <h1 itemprop="name" id="13508-shema-izgotovleniya-detaley-i-se">Схемы изготовления</h1>
+                          </div>
+                          <p>&nbsp;</p>
+                        <object data="./dist/files/13508-shema-izgotovleniya-detaley-i-se.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/13508-shema-izgotovleniya-detaley-i-se.pdf"></a>
+                              </object>
+                        </section>
+                    </article>
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                        <section itemprop="articleBody" id="bs-docs-section">
+                          <div class="page-header">
+                            <h1 itemprop="name" id="metodichka-po-detalyam-fanera">Фанера методичка</h1>
+                          </div>
+                          <p>&nbsp;</p>
+                        <object data="./dist/files/metodichka-po-detalyam-fanera.pdf" type="application/pdf" width="100%" height="720px">
+                              alt: <a href="./dist/files/metodichka-po-detalyam-fanera.pdf"></a>
+                              </object>
                         </section>
                     </article>
                 </div> <!-- main  -->
@@ -147,34 +119,25 @@ include 'inc-left-side-menu-metodichki.php';
                 <div class="col-md-2" id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
                         <ul class="nav bs-sidenav">
-                            <li><a href="#list-trebovaniya-detaleykamni">Лист требования деталей(Камни)</a>
+                            <li><a href="#list-trebovaniy-detaley---kamen">Лист требования деталей по камням</a>
                             </li>
-                            <li><a href="#polotna">Дверные блоки с распашными полотнами </a>
-                                <ul class="nav">
-                                    <li><a href="#polotna-bez-falca">&#9999;&nbsp;Полотна без фальца</a>
-                                    </li>
-                                    <li><a href="#polotna-s-falcem">&#9999;&nbsp;Полотна с фальцем</a>
-                                    </li>                                   
-                                </ul>
+                            <li><a href="#list-trebovaniy-detaley---tokarke-i-rezbe">Лист требования деталей по Токарке Резьбе</a>
+                                
                             </li>
-                            <li>
-                                <a href="#razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</a>
-                                <ul class="nav">
-                                    <li><a href="#razdvizhnye-polotna-po-stene">&#9999;&nbsp;Полотна без складывания — раздвижение по стене</a>
-                                    </li>
-                                    <li><a href="#razdvizhnye-polotna-v-penal">&#9999;&nbsp;Полотна без складывания — раздвижение в пенал</a>
-                                    </li>
-                                    <li><a href="#razdvizhnye-polotna-v-proeme">&#9999;&nbsp;Полотна без складывания — раздвижение в проеме</a>
-                                  </li>
-                                </ul>
+                            <li><a href="#135-metodichka-po-detalyam-obshcheemdf">Общие требования + МДФ</a>
+                                
                             </li>
-                            <li><a href="#mayatnikovye-polotna">Дверные блоки с маятниковыми (барными) полотнами</a>
+                            <li><a href="#13507-algoritm-po-kompensacii-po-tolshchine">135.07 Алгоритм по компенсации по толщине</a>
                             </li>
-                            <li><a href="#portaly">Дверные блоки без полотен (порталы)</a>
+                            <li><a href="#metodichka-po-detalyamprofili">Профили методичка</a>
                             </li>
                             
-                            <li><a href="#sborochnye-shemy-polotna">Сборочно-монтажные схемы</a>
-                            </li>                         
+                            <li><a href="#metodichka-po-detalyam-ramki">Рамки методичка</a>
+                            </li> 
+                            <li><a href="#13508-shema-izgotovleniya-detaley-i-se">Схемы изготовления</a>
+                            </li>
+                            <li><a href="#metodichka-po-detalyam-fanera">Фанера методичка</a>
+                            </li>                        
                         </ul>
                     </div>
                 </div><!-- боковое меню блоки дверные конец -->

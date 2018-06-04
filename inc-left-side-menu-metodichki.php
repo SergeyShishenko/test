@@ -18,29 +18,29 @@
                     <a href="metodichki-dokument-117.php" class="list-group-item '.$item_dokument_117_Class.'">ДОКУМЕНТ 117 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
                     <ul class="list-group sub_menu">
                         <li class="menu2">
-                            <a  class="list-group-item sub"  href="#metodicheskoe-posobie-po-izdeliyam">117. Методическое пособие по изделиям</a>                                        
+                            <a  class="list-group-item sub"  href="metodichki-dokument-117.php#metodicheskoe-posobie-po-izdeliyam">117. Методическое пособие по изделиям</a>                                        
                         </li>
-                        <li class="menu2"><a class="list-group-item sub" href="#tablica-dlin-shirin-tolshchin-dlya-specifikacii">117.01.Таблица длин, ширин, толщин</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-117.php#tablica-dlin-shirin-tolshchin-dlya-specifikacii">117.01.Таблица длин, ширин, толщин</a>
                         </li>
-                        <li class="menu2"><a class="list-group-item sub" href="#poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva" >117.02. Порядок изготовления МДФ_ШАБЛОНОВ</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-117.php#poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva" >117.02. Порядок изготовления МДФ_ШАБЛОНОВ</a>
                         </li>
-                        <li class="menu2"><a class="list-group-item sub" href="#steklaperechen-tolshchina-facet">117.03. Стекла:перечень, толщина, фацет</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-117.php#steklaperechen-tolshchina-facet">117.03. Стекла:перечень, толщина, фацет</a>
                         </li>
-                        <li class="menu2"><a class="list-group-item sub" href="#varianty-sborki-sostavnyh-se-pri-raznyh-parametrah-obrazca-cveta">117.04. Составные СЕ при разных параметрах "Цвета"</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-117.php#varianty-sborki-sostavnyh-se-pri-raznyh-parametrah-obrazca-cveta">117.04. Составные СЕ при разных параметрах "Цвета"</a>
                         </li>
-                        <li class="menu2"><a class="list-group-item sub" href="#varianty-standartny-obrazcov-otdelki">117.05. Варианты стандартны образцов отделки</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-117.php#varianty-standartny-obrazcov-otdelki">117.05. Варианты стандартны образцов отделки</a>
                         </li>
-                        <li class="menu2"><a class="list-group-item sub" href="#perechen-shtampov-kdz-i-kdp">117.06. Перечень штампов КДЗ и КДП</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-117.php#perechen-shtampov-kdz-i-kdp">117.06. Перечень штампов КДЗ и КДП</a>
                         </li> 
-                        <li class="menu2"><a class="list-group-item sub" href="#perechen-tipov-i-cvetov-zamkov">117.07 Перечень типов и цветов замков</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-117.php#perechen-tipov-i-cvetov-zamkov">117.07 Перечень типов и цветов замков</a>
                         </li> 
-                        <li class="menu2"><a class="list-group-item sub" href="#obmery">117.08 Обмеры</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-117.php#obmery">117.08 Обмеры</a>
                         </li> 
-                        <li class="menu2"><a class="list-group-item sub" href="#algoritm-po-stykam">117.09 Алгоритм по стыкам</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-117.php#algoritm-po-stykam">117.09 Алгоритм по стыкам</a>
                         </li> 
-                        <li class="menu2"><a class="list-group-item sub" href="#varianty-standartnyh-obrazcov-otdelki">117.051 Варианты стандартных образцов отделки</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-117.php#varianty-standartnyh-obrazcov-otdelki">117.051 Варианты стандартных образцов отделки</a>
                         </li> 
-                        <li class="menu2"><a class="list-group-item sub" href="#domi">ДОМИ</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-117.php#domi">ДОМИ</a>
                         </li>                                     
                     </ul>
                 </li>
@@ -48,68 +48,30 @@
                 <li class="menu">
                     <a href="metodichki-dokument-135.php" class="list-group-item '.$item_dokument_135_Class.'">ДОКУМЕНТ 135</a>
                     <ul class="list-group sub_menu">
-                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
-                            <ul class="list-group sub_menu2">
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>                                      
-                            </ul>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#list-trebovaniy-detaley---kamen">Лист требования деталей по камням</a>
+                           
                         </li>
-                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#mebel-korpusnaya-shkafy-raspashnye-fasady">ШКАФЫ С РАСПАШНЫМИ ФАСАДАМИ</a>
-                            <ul class="list-group sub_menu2">
-                                <li><a class="list-group-item sub" href="metodichki-dokument-135.php#mebel-korpusnaya-shkafy-raspashnye-fasady-nakladnye" >Накладные</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="metodichki-dokument-135.php#mebel-korpusnaya-shkafy-raspashnye-fasady-vkladnye">Вкладные</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="metodichki-dokument-135.php#mebel-korpusnaya-shkafy-raspashnye-fasady-otkidnye">Откидные (секретерные)</a>
-                                </li>                                        
-                            </ul>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#list-trebovaniy-detaley---tokarke-i-rezbe">Лист требования деталей по Токарке Резьбе</a>
+                           
                         </li>
-                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady">ШКАФЫ С РАЗДВИЖНЫМИ ФАСАДАМИ</a>
-                            <ul class="list-group sub_menu2">
-                                <li><a class="list-group-item sub" href="metodichki-dokument-135.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady-kupe">Фасады купе</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="metodichki-dokument-135.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady-komplanarnye">Фасады компланарные</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>                                           
-                            </ul>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#135-metodichka-po-detalyam-obshcheemdf">Общие требования + МДФ</a>
+                           
                         </li>
-                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#mebel-korpusnaya-stellazhi">ШКАФЫ БЕЗ ФАСАДОВ (СТЕЛЛАЖИ)</a>
-                            <ul class="list-group sub_menu2">
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>                                         
-                            </ul>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#13507-algoritm-po-kompensacii-po-tolshchine">135.07 Алгоритм по компенсации по толщине</a>
+                            
                         </li>
-                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#mebel-korpusnaya-stoly">СТОЛЫ</a>
-                            <ul class="list-group sub_menu2">
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>                                         
-                            </ul>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#metodichka-po-detalyamprofili">Профили методичка</a>
+                            
                         </li>
-                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#sborochnye-shemy-mebel-korpusnaya">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
-                            <ul class="list-group sub_menu2">
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>                                         
-                            </ul>
-                        </li>                                   
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#metodichka-po-detalyam-ramki">Рамки методичка</a>
+                            
+                        </li>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#13508-shema-izgotovleniya-detaley-i-se">Схемы изготовления</a>
+                            
+                        </li> 
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-dokument-135.php#metodichka-po-detalyam-fanera">Фанера методичка</a>
+                            
+                        </li>                                  
                     </ul>
                 </li>
                 <!-- menu -->
