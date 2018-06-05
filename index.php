@@ -2589,24 +2589,108 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <TABLE >
                                                             <TR>
                                                                 <TD  class="hover mapsite"  id="footer106" >
-                                                                    <p data-img="./dist/images/no-foto.png" data-href="" >УЗЕЛ1<span> <br>~</span></p>
+                                                                    <p data-img="./dist/images/no-foto.png"  id="floating623" data-href="" >УЗЕЛ1<span> <br>~</span></p>
+                                                                </TD>
+                                                                <TD>
+                                                                    <TABLE >                                                                                          
+                                                                        <TR>
+                                                                            <TD class="mapsite" colspan="2" id="flo-">                                                                            
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>  
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                        <TR>
+                                                                            <TD class="mapsite" id="flo-">
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->  
+                                                                        <TR>
+                                                                            <TD class="mapsite" id="flo-">
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                        <TR>
+                                                                            <TD class="mapsite" id="flo-">
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
+                                                                    </TABLE>
                                                                 </TD>                                                                            
                                                                 
                                                             </TR>
-                                                            <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->  
+                                                            <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->  
                                                             <TR>
-                                                                <TD class="hover mapsite" id="flo-">
-                                                                    <p data-img="./dist/images/no-foto.png" data-href="" >УЗЕЛ2<span> <br>~</span></p>
-                                                                </TD>                                                                            
+                                                                <TD class="hover mapsite" id="footer623">
+                                                                    <p data-img="./dist/images/no-foto.png" id="floating624" data-href="" >УЗЕЛ2<span> <br>~</span></p>
+                                                                </TD> 
+                                                                <TD>
+                                                                    <TABLE >                                                                                          
+                                                                        <TR>
+                                                                            <TD class="mapsite" colspan="2" id="flo-">                                                                            
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>  
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                        <TR>
+                                                                            <TD class="mapsite" id="flo-">
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->  
+                                                                        <TR>
+                                                                            <TD class="mapsite" id="flo-">
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                        <TR>
+                                                                            <TD class="mapsite" id="flo-">
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
+                                                                    </TABLE>
+                                                                </TD>                                                                           
                                                                 
                                                             </TR>
-                                                            <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->  
+                                                            <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->  
                                                             <TR>
-                                                                <TD class="hover mapsite" id="flo-">
-                                                                    <p data-img="./dist/images/no-foto.png" data-href="" >УЗЕЛ3<span> <br>~</span></p>
-                                                                </TD>                                                                            
+                                                                <TD class="hover mapsite" id="footer624">
+                                                                    <p data-img="./dist/images/no-foto.png" id="floating6106" data-href="" >УЗЕЛ3 последний<span> <br>~</span></p>
+                                                                </TD> 
+                                                                <TD>
+                                                                    <TABLE >                                                                                          
+                                                                        <TR>
+                                                                            <TD class="mapsite" colspan="2" id="flo-">                                                                            
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>  
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                        <TR>
+                                                                            <TD class="mapsite" id="flo-">
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->  
+                                                                        <TR>
+                                                                            <TD class="mapsite" id="flo-">
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                        <TR>
+                                                                            <TD class="mapsite" id="flo-">
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Узел №...<span> <br>~</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
+                                                                    </TABLE>
+                                                                </TD>                                                                           
                                                                 
-                                                            </TR>                                                         
+                                                            </TR>                                                                                                                  
                                                                 
                                                         </TABLE>
                                                     </TD>
@@ -2636,7 +2720,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TD>
                                                         <TABLE >
                                                             <TR>
-                                                                <TD  class="hover mapsite" id="footer106" >
+                                                                <TD  class="hover mapsite" id="footer6106" >
                                                                     <p data-href="shablony-dokumentov-titulniki.php#listy-titulnye-dizayn-proekta" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating107">ЛИСТЫ ТИТУЛЬНЫЕ ДИЗАЙН&ndash;ПРОЕКТА<span> <br>~-katalog-rezby</span></p>                                                                    
                                                                     <p data-href="shablony-dokumentov-titulniki.php#listy-titulnye-dizayn-proekta" data-img="./dist/images/no-foto.png" class="KEYWORDS">ЛИСТЫ ТИТУЛЬНЫЕ ДП</p>  
                                                                 </TD>                                                                            

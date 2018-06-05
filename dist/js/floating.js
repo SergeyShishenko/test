@@ -491,6 +491,49 @@ $(function(){ // лестницы
     else {$('#floating23').removeClass('fixed-div');}
     });
   });
+  $(function(){ // стандартные узлы
+    var num = 623;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num; 
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+    
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
+  $(function(){ // стандартные узлы
+    var num = 624;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num; 
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+    
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
+  $(function(){ // стандартные узлы последний
+    var topPos = $('#floating6106').offset().top-55;// текущая позиция блока-f
+    
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $('#footer6106').offset().top-55;  // текущая позиция нижнего блока
+        height = $('#floating6106').outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$('#floating6106').addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$('#floating6106').removeClass('fixed-div');}
+    else {$('#floating6106').removeClass('fixed-div');}
+    });
+  });
+
   ///////
   $(function(){ // листы титульные
     var num = 24;  
