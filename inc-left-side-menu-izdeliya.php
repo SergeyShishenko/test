@@ -8,6 +8,10 @@
 // $item_ekrany_Class = '';
 // $item_pilyastry_Class = '';
 // $item_potolki_Class = '';
+// $item_lestnicy_Class = '';
+// $item_standartnye_uzly_Class = '';
+
+
 ?>
 <?php echo'
 <article itemscope="" itemtype="http://schema.org/WebPage">   
@@ -309,7 +313,46 @@
                                 </ul>
                             </li>                                   
                         </ul>
-                    </li>                           
+                    </li>
+                    <!-- menu -->
+                    <li class="menu">
+                        <a href="izdeliya-lestnicy.php" class="list-group-item  '.$item_lestnicy_Class.'">ЛЕСТНИЦЫ</a>
+                        <ul class="list-group sub_menu">
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-lestnicy.php#">КОНСТРУКЦИИ ЛЕСТНИЦ ТИПОВЫХ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                            
+                                </ul>
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-lestnicy.php#">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub"href="#"> ...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    </li>                                           
+                                </ul>
+                            </li>                                   
+                        </ul>
+                    </li>
+                    <!-- menu -->
+                    <li class="menu">
+                        <a href="standartnye-uzly.php" class="list-group-item  '.$item_standartnye_uzly_Class.'">СТАНДАРТНЫЕ УЗЛЫ</a>
+                        <ul class="list-group sub_menu">
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#">УЗЕЛ1</a>                               
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#">УЗЕЛ2</a>                                
+                            </li> 
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#">УЗЕЛ3</a>                                
+                            </li>                                  
+                        </ul>
+                    </li>
+
                 </ul>
             </div>
         </div>

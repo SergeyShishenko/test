@@ -2507,7 +2507,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2--> 
                                             <TR>
                                                 <TD data-tooltip="ЛЕСТНИЦЫ" class="hover mapsite" id="footer22">
-                                                    <p data-href="izdeliya-lestnicy.php"  data-img="./dist/images/no-foto.png" id="floating23">ЛЕСТНИЦЫ<span><br>~-izdeliya-lestnicy</span></p></TD>
+                                                    <p data-href="izdeliya-lestnicy.php"  data-img="./dist/images/no-foto.png" id="floating523">ЛЕСТНИЦЫ<span><br>~-izdeliya-lestnicy</span></p></TD>
                                                     <TD>
                                                         <TABLE >
                                                             <TR>
@@ -2580,7 +2580,38 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                 
                                                         </TABLE>
                                                     </TD>
-                                            </TR>                                                                     
+                                            </TR>
+                                            <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2--> 
+                                            <TR>
+                                                <TD data-tooltip="СТАНДАРТНЫЕ УЗЛЫ" class="hover mapsite" id="footer523">
+                                                    <p data-href="standartnye-uzly.php"  data-img="./dist/images/no-foto.png" id="floating23">СТАНДАРТНЫЕ УЗЛЫ<span><br>~-izdeliya-lestnicy</span></p></TD>
+                                                    <TD>
+                                                        <TABLE >
+                                                            <TR>
+                                                                <TD  class="hover mapsite"  id="footer106" >
+                                                                    <p data-img="./dist/images/no-foto.png" data-href="" >УЗЕЛ1<span> <br>~</span></p>
+                                                                </TD>                                                                            
+                                                                
+                                                            </TR>
+                                                            <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->  
+                                                            <TR>
+                                                                <TD class="hover mapsite" id="flo-">
+                                                                    <p data-img="./dist/images/no-foto.png" data-href="" >УЗЕЛ2<span> <br>~</span></p>
+                                                                </TD>                                                                            
+                                                                
+                                                            </TR>
+                                                            <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->  
+                                                            <TR>
+                                                                <TD class="hover mapsite" id="flo-">
+                                                                    <p data-img="./dist/images/no-foto.png" data-href="" >УЗЕЛ3<span> <br>~</span></p>
+                                                                </TD>                                                                            
+                                                                
+                                                            </TR>                                                         
+                                                                
+                                                        </TABLE>
+                                                    </TD>
+                                            </TR>  
+
                                         </TABLE>
                                     </TD>   
                                 </TR>                                           
