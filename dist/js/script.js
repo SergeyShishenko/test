@@ -167,12 +167,12 @@ $(function() {
         //   result = result.replace(/[-]+/g, ""); //удалить
           result = result.replace(/~(.*)/ig,""); //удалить
 
-          var aimg="./dist/images/no-175x0.jpg";
+          var aimg="./dist/images/no-foto.png";
           var aref = $(this).data("href");
            if (typeof $(this).data("img") !== "undefined") {aimg = $(this).data("img");    
            }
            else
-           { aimg = "./dist/images/no-175x0.jpg";        
+           { aimg = "./dist/images/no-foto.png";        
            }   
            $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + "</a></li>"  );         
         }
@@ -193,7 +193,13 @@ $(function() {
     $(".who").blur(); //Убираем фокус с input
   });
   //При выборе результата поиска, прячем список и заносим выбранный результат в input
-  $(".search_result").on("click", "li", function() {  $(".search_result").fadeOut(); });
+  $(".search_result").on("click", "li", function() {
+        
+    
+        window.location = $(this).find("a").attr("href");
+    
+        $(".search_result").fadeOut();
+     });
 });
 
 
