@@ -342,14 +342,51 @@
                     </li>
                     <!-- menu -->
                     <li class="menu">
-                        <a href="standartnye-uzly.php" class="list-group-item  '.$item_standartnye_uzly_Class.'">СТАНДАРТНЫЕ УЗЛЫ</a>
+                        <a href="izdeliya-standartnye-uzly.php" class="list-group-item  '.$item_standartnye_uzly_Class.'">СТАНДАРТНЫЕ УЗЛЫ</a>
                         <ul class="list-group sub_menu">
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#">УЗЕЛ1</a>                               
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzly-ekrany" >УЗЛЫ ЭКРАНЫ</a>  
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--e1-700">Узел № Э1/700</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--e1-600">Узел № Э1/600</a>
+                                    </li>                                                                               
+                                </ul>                             
                             </li>
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#">УЗЕЛ2</a>                                
-                            </li> 
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#">УЗЕЛ3</a>                                
-                            </li>                                  
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzly-pilyastry" >УЗЛЫ ПИЛЯСТРЫ</a>  
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_1</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_2</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    </li>
+                                                                                                                   
+                                </ul>                             
+                            </li>                                 
                         </ul>
                     </li>
 

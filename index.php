@@ -2584,24 +2584,24 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2--> 
                                             <TR>
                                                 <TD data-tooltip="СТАНДАРТНЫЕ УЗЛЫ" class="hover mapsite" id="footer523">
-                                                    <p data-href="standartnye-uzly.php"  data-img="./dist/images/uzel--e1-700.png" id="floating23">СТАНДАРТНЫЕ УЗЛЫ<span><br>~standartnye-uzly</span></p></TD>
+                                                    <p data-href="izdeliya-standartnye-uzly.php"  data-img="./dist/images/uzel--e1-700.png" id="floating23">СТАНДАРТНЫЕ УЗЛЫ<span><br>~standartnye-uzly</span></p></TD>
                                                     <TD>
                                                         <TABLE >
                                                             <TR>
                                                                 <TD  class="hover mapsite"  id="footer106" >
-                                                                    <p data-img="./dist/images/uzel--e1-700.png"  id="floating623" data-href="standartnye-uzly.php#uzly-ekrany" >УЗЛЫ ЭКРАНЫ<span> <br>~uzly-ekrany</span></p>
+                                                                    <p data-img="./dist/images/uzel--e1-700.png"  id="floating623" data-href="izdeliya-standartnye-uzly.php#uzly-ekrany" >УЗЛЫ ЭКРАНЫ<span> <br>~uzly-ekrany</span></p>
                                                                 </TD>
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--e1-700">                                                                            
-                                                                                <p data-img="./dist/images/uzel--e1-700.png" data-href="standartnye-uzly.php#uzel--e1-700">Узел № Э1/700<span> <br>~uzel--e1-700</span></p>
+                                                                                <p data-img="./dist/images/uzel--e1-700.png" data-href="izdeliya-standartnye-uzly.php#uzel--e1-700">Узел № Э1/700<span> <br>~uzel--e1-700</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--e1-600">
-                                                                                <p data-img="./dist/images/uzel--e1-600.png" data-href="standartnye-uzly.php#uzel--e1-600">Узел № Э1/600<span> <br>~uzel--e1-600</span></p>
+                                                                                <p data-img="./dist/images/uzel--e1-600.png" data-href="izdeliya-standartnye-uzly.php#uzel--e1-600">Узел № Э1/600<span> <br>~uzel--e1-600</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
@@ -2613,97 +2613,97 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->  
                                                             <TR>
                                                                 <TD class="hover mapsite" id="footer623">
-                                                                    <p data-img="./dist/images/uzel--pl1-1-h.png" id="floating624" data-href="standartnye-uzly.php#" >УЗЛЫ ПИЛЯСТРЫ<span> <br>~</span></p>
+                                                                    <p data-img="./dist/images/uzel--pl1-1-h.png" id="floating624" data-href="izdeliya-standartnye-uzly.php#uzly-pilyastry" >УЗЛЫ ПИЛЯСТРЫ<span> <br>~</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--pl1-1-h1">                                                                            
-                                                                                <p data-img="./dist/images/uzel--pl1-1-h1.png" data-href="standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_1<span> <br>~uzel--pl1-1-h1</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl1-1-h1.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_1<span> <br>~uzel--pl1-1-h1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--pl1-1-h2">                                                                            
-                                                                                <p data-img="./dist/images/uzel--pl1-1-h2.png" data-href="standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_2<span> <br>~uzel--pl1-1-h2</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl1-1-h2.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_2<span> <br>~uzel--pl1-1-h2</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--pl1-1-h3">                                                                            
-                                                                                <p data-img="./dist/images/uzel--pl1-1-h3.png" data-href="standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_3<span> <br>~uzel--pl1-1-h3</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl1-1-h3.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_3<span> <br>~uzel--pl1-1-h3</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--pl1-1-h4">                                                                            
-                                                                                <p data-img="./dist/images/uzel--pl1-1-h4.png" data-href="standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_4<span> <br>~uzel--pl1-1-h4</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl1-1-h4.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_4<span> <br>~uzel--pl1-1-h4</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--pl1-2-h1">
-                                                                                <p data-img="./dist/images/uzel--pl1-2-h1.png" data-href="standartnye-uzly.php#uzel--pl1-2-h1">Узел № Пл1/2/Х_1<span> <br>~uzel--pl1-2-h1</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl1-2-h1.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-2-h1">Узел № Пл1/2/Х_1<span> <br>~uzel--pl1-2-h1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--pl1-2-h2">
-                                                                                <p data-img="./dist/images/uzel--pl1-2-h2.png" data-href="standartnye-uzly.php#uzel--pl1-2-h2">Узел № Пл1/2/Х_2<span> <br>~uzel--pl1-2-h2</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl1-2-h2.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-2-h2">Узел № Пл1/2/Х_2<span> <br>~uzel--pl1-2-h2</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--pl1-2-h3">
-                                                                                <p data-img="./dist/images/uzel--pl1-2-h3.png" data-href="standartnye-uzly.php#uzel--pl1-2-h3">Узел № Пл1/2/Х_3<span> <br>~uzel--pl1-2-h3</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl1-2-h3.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-2-h3">Узел № Пл1/2/Х_3<span> <br>~uzel--pl1-2-h3</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--pl1-2-h4">
-                                                                                <p data-img="./dist/images/uzel--pl1-2-h4.png" data-href="standartnye-uzly.php#uzel--pl1-2-h4">Узел № Пл1/2/Х_4<span> <br>~uzel--pl1-2-h4</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl1-2-h4.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-2-h4">Узел № Пл1/2/Х_4<span> <br>~uzel--pl1-2-h4</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--pl2-h">
-                                                                                <p data-img="./dist/images/uzel--pl2-h.png" data-href="standartnye-uzly.php#uzel--pl2-h">Узел № Пл2/Х<span> <br>~uzel--pl2-h</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl2-h.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl2-h">Узел № Пл2/Х<span> <br>~uzel--pl2-h</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--pl3-1-1">
-                                                                                <p data-img="./dist/images/uzel--pl3-1-1.png" data-href="standartnye-uzly.php#uzel--pl3-1-1">Узел № Пл3/1_1<span> <br>~uzel--pl3-1-1</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl3-1-1.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl3-1-1">Узел № Пл3/1_1<span> <br>~uzel--pl3-1-1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--pl3-1-2">
-                                                                                <p data-img="./dist/images/uzel--pl3-1-2.png" data-href="standartnye-uzly.php#uzel--pl3-1-2">Узел № Пл3/1_2<span> <br>~uzel--pl3-1-2</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl3-1-2.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl3-1-2">Узел № Пл3/1_2<span> <br>~uzel--pl3-1-2</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--pl3-2-1">
-                                                                                <p data-img="./dist/images/uzel--pl3-2-1.png" data-href="standartnye-uzly.php#uzel--pl3-2-1">Узел № Пл3/2_1<span> <br>~uzel--pl3-2-1</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl3-2-1.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl3-2-1">Узел № Пл3/2_1<span> <br>~uzel--pl3-2-1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--pl3-2-2">
-                                                                                <p data-img="./dist/images/uzel--pl3-2-2.png" data-href="standartnye-uzly.php#uzel--pl3-2-2">Узел № Пл3/2_2<span> <br>~uzel--pl3-2-2</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl3-2-2.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl3-2-2">Узел № Пл3/2_2<span> <br>~uzel--pl3-2-2</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->    
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--pl4-1">
-                                                                                <p data-img="./dist/images/uzel--pl4-1.png" data-href="standartnye-uzly.php#uzel--pl4-1">Узел № Пл4_1<span> <br>~uzel--pl4-1</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl4-1.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl4-1">Узел № Пл4_1<span> <br>~uzel--pl4-1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--pl4-2">
-                                                                                <p data-img="./dist/images/uzel--pl4-2.png" data-href="standartnye-uzly.php#uzel--pl4-2">Узел № Пл4_2<span> <br>~uzel--pl4-2</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl4-2.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl4-2">Узел № Пл4_2<span> <br>~uzel--pl4-2</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->       
@@ -2714,25 +2714,25 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->  
                                                             <TR>
                                                                 <TD class="hover mapsite" id="footer624">
-                                                                    <p data-img="./dist/images/uzel--shp1-10-16-24.png" id="floating625" data-href="standartnye-uzly.php#uzly-shponki" >УЗЛЫ ШПОНКИ<span> <br>~uzly-shponki</span></p>
+                                                                    <p data-img="./dist/images/uzel--shp1-10-16-24.png" id="floating625" data-href="izdeliya-standartnye-uzly.php#uzly-shponki" >УЗЛЫ ШПОНКИ<span> <br>~uzly-shponki</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--shp1-10-16-24">                                                                            
-                                                                                <p data-img="./dist/images/uzel--shp1-10-16-24.png" data-href="standartnye-uzly.php#uzel--shp1-10-16-24">Узел № Шп1/24<span> <br>~uzel--shp1-10-16-24</span></p>
+                                                                                <p data-img="./dist/images/uzel--shp1-10-16-24.png" data-href="izdeliya-standartnye-uzly.php#uzel--shp1-10-16-24">Узел № Шп1/24<span> <br>~uzel--shp1-10-16-24</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-uzel--shp1-10-16-24">                                                                            
-                                                                                <p data-img="./dist/images/uzel--shp1-10-16-24.png" data-href="standartnye-uzly.php#uzel--shp1-10-16-24">Узел № Шп1/16<span> <br>~uzel--shp1-10-16-24</span></p>
+                                                                                <p data-img="./dist/images/uzel--shp1-10-16-24.png" data-href="izdeliya-standartnye-uzly.php#uzel--shp1-10-16-24">Узел № Шп1/16<span> <br>~uzel--shp1-10-16-24</span></p>
                                                                             </TD>                                                                          
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-uzel--shp1-10-16-24">                                                                            
-                                                                                <p data-img="./dist/images/uzel--shp1-10-16-24.png" data-href="standartnye-uzly.php#uzel--shp1-10-16-24">Узел № Шп1/10<span> <br>~uzel--shp1-10-16-24</span></p>
+                                                                                <p data-img="./dist/images/uzel--shp1-10-16-24.png" data-href="izdeliya-standartnye-uzly.php#uzel--shp1-10-16-24">Узел № Шп1/10<span> <br>~uzel--shp1-10-16-24</span></p>
                                                                             </TD>                                                                          
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2744,43 +2744,43 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->  
                                                             <TR>
                                                                 <TD class="hover mapsite" id="footer625">
-                                                                    <p data-img="./dist/images/uzel--p-4-6-8.png" id="floating626" data-href="standartnye-uzly.php#" >УЗЛЫ ПОЛКИ<span> <br>~uzly-polki</span></p>
+                                                                    <p data-img="./dist/images/uzel--p-4-6-8.png" id="floating626" data-href="izdeliya-standartnye-uzly.php#" >УЗЛЫ ПОЛКИ<span> <br>~uzly-polki</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--p-4">                                                                            
-                                                                                <p data-img="./dist/images/uzel--p-4-6-8.png" data-href="standartnye-uzly.php#uzel--p-4-6-8">Узел № П/4<span> <br>~uzel--p-4-6-8</span></p>
+                                                                                <p data-img="./dist/images/uzel--p-4-6-8.png" data-href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8">Узел № П/4<span> <br>~uzel--p-4-6-8</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                         <TD class="mapsite"  id="flo-uzel--p-6">                                                                            
-                                                                                <p data-img="./dist/images/uzel--p-4-6-8.png" data-href="standartnye-uzly.php#uzel--p-4-6-8">Узел № П/6<span> <br>~uzel--p-4-6-8</span></p>
+                                                                                <p data-img="./dist/images/uzel--p-4-6-8.png" data-href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8">Узел № П/6<span> <br>~uzel--p-4-6-8</span></p>
                                                                             </TD>                                                                           
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                             <TD class="mapsite"  id="flo-uzel--p-8">                                                                            
-                                                                                <p data-img="./dist/images/uzel--p-4-6-8.png" data-href="standartnye-uzly.php#uzel--p-4-6-8">Узел № П/8<span> <br>~uzel--p-4-6-8</span></p>
+                                                                                <p data-img="./dist/images/uzel--p-4-6-8.png" data-href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8">Узел № П/8<span> <br>~uzel--p-4-6-8</span></p>
                                                                             </TD>                                                                          
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                         <TD class="mapsite"  id="flo-uzel--p-4perf">                                                                            
-                                                                                <p data-img="./dist/images/uzel--p-4-6-8perf.png" data-href="standartnye-uzly.php#uzel--p-4-6-8perf">Узел № П/4/перф.<span> <br>~uzel--p-4-6-8perf</span></p>
+                                                                                <p data-img="./dist/images/uzel--p-4-6-8perf.png" data-href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8perf">Узел № П/4/перф.<span> <br>~uzel--p-4-6-8perf</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                         <TD class="mapsite"  id="flo-uzel--p-6perf">                                                                            
-                                                                                <p data-img="./dist/images/uzel--p-4-6-8perf.png" data-href="standartnye-uzly.php#uzel--p-4-6-8perf">Узел № П/6/перф.<span> <br>~uzel--p-4-6-8perf</span></p>
+                                                                                <p data-img="./dist/images/uzel--p-4-6-8perf.png" data-href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8perf">Узел № П/6/перф.<span> <br>~uzel--p-4-6-8perf</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                         <TD class="mapsite"  id="flo-uzel--p-8perf">                                                                            
-                                                                                <p data-img="./dist/images/uzel--p-4-6-8perf.png" data-href="standartnye-uzly.php#uzel--p-4-6-8perf">Узел № П/8/перф.<span> <br>~uzel--p-4-6-8perf</span></p>
+                                                                                <p data-img="./dist/images/uzel--p-4-6-8perf.png" data-href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8perf">Узел № П/8/перф.<span> <br>~uzel--p-4-6-8perf</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->          
@@ -2792,19 +2792,19 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                              <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->  
                                                             <TR>
                                                                 <TD class="hover mapsite" id="footer626">
-                                                                    <p data-img="./dist/images/uzel--shd1-shd2.png" id="floating627" data-href="standartnye-uzly.php#uzly-shtangoderzhateli" >УЗЛЫ ШТАНГОДЕРЖАТЕЛИ<span> <br>~uzly-shtangoderzhateli</span></p>
+                                                                    <p data-img="./dist/images/uzel--shd1-shd2.png" id="floating627" data-href="izdeliya-standartnye-uzly.php#uzly-shtangoderzhateli" >УЗЛЫ ШТАНГОДЕРЖАТЕЛИ<span> <br>~uzly-shtangoderzhateli</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--shd1">                                                                            
-                                                                                <p data-img="./dist/images/uzel--shd1-shd2.png" data-href="standartnye-uzly.php#uzel--shd1-shd2">Узел № ШД1<span> <br>~uzel--shd1-shd2</span></p>
+                                                                                <p data-img="./dist/images/uzel--shd1-shd2.png" data-href="izdeliya-standartnye-uzly.php#uzel--shd1-shd2">Узел № ШД1<span> <br>~uzel--shd1-shd2</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--shd2">
-                                                                                <p data-img="./dist/images/uzel--shd1-shd2.png" data-href="standartnye-uzly.php#uzel--shd1-shd2">Узел № ШД2<span> <br>~uzel--shd1-shd2</span></p>
+                                                                                <p data-img="./dist/images/uzel--shd1-shd2.png" data-href="izdeliya-standartnye-uzly.php#uzel--shd1-shd2">Узел № ШД2<span> <br>~uzel--shd1-shd2</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
@@ -2817,43 +2817,43 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                              <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->  
                                                             <TR>
                                                                 <TD class="hover mapsite" id="footer627">
-                                                                    <p data-img="./dist/images/uzel--e1-evr.png" id="floating628" data-href="standartnye-uzly.php#uzly-ekscentrikovye-styazhki-evrovinty" >УЗЛЫ ЭКСЦЕНТРИКОВЫЕ СТЯЖКИ, ЕВРОВИНТЫ<span> <br>~uzly-ekscentrikovye-styazhki-evrovinty</span></p>
+                                                                    <p data-img="./dist/images/uzel--e1-evr.png" id="floating628" data-href="izdeliya-standartnye-uzly.php#uzly-ekscentrikovye-styazhki-evrovinty" >УЗЛЫ ЭКСЦЕНТРИКОВЫЕ СТЯЖКИ, ЕВРОВИНТЫ<span> <br>~uzly-ekscentrikovye-styazhki-evrovinty</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--e1-16">                                                                            
-                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="standartnye-uzly.php#uzel--e1-evr">Узел № Э1/16<span> <br>~uzel--e1-evr</span></p>
+                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел № Э1/16<span> <br>~uzel--e1-evr</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--e1-24">
-                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="standartnye-uzly.php#uzel--e1-evr">Узел № Э1/24<span> <br>~uzel--e1-evr</span></p>
+                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел № Э1/24<span> <br>~uzel--e1-evr</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--e2-16">
-                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="standartnye-uzly.php#uzel--e1-evr">Узел № Э2/16<span> <br>~uzel--e1-evr</span></p>
+                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел № Э2/16<span> <br>~uzel--e1-evr</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--e2-24">
-                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="standartnye-uzly.php#uzel--e1-evr">Узел № Э2/24<span> <br>~uzel--e1-evr</span></p>
+                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел № Э2/24<span> <br>~uzel--e1-evr</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--evr16">
-                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="standartnye-uzly.php#uzel--e1-evr">Узел №Евр/16<span> <br>~uzel--e1-evr</span></p>
+                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел №Евр/16<span> <br>~uzel--e1-evr</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--evr24">
-                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="standartnye-uzly.php#uzel--e1-evr">Узел №Евр/24<span> <br>~uzel--e1-evr</span></p>
+                                                                                <p data-img="./dist/images/uzel--e1-evr.png" data-href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел №Евр/24<span> <br>~uzel--e1-evr</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->           
@@ -2865,13 +2865,13 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                              <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->  
                                                             <TR>
                                                                 <TD class="hover mapsite" id="footer628">
-                                                                    <p data-img="./dist/images/uzel--polup-15-30gr.png" id="floating629" data-href="standartnye-uzly.php#" >ПАНЕЛИ ПОЯСА<span> <br>~paneli-poyasa</span></p>
+                                                                    <p data-img="./dist/images/uzel--polup-15-30gr.png" id="floating629" data-href="izdeliya-standartnye-uzly.php#" >ПАНЕЛИ ПОЯСА<span> <br>~paneli-poyasa</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" style="padding: 35px 0;" id="flo-uzel--polup-15-30gr">                                                                            
-                                                                                <p data-img="./dist/images/uzel--polup-15-30gr.png" data-href="standartnye-uzly.php#uzel--polup-15-30gr">Узел № Полуп/15*30гр<span> <br>~uzel--polup-15-30gr</span></p>
+                                                                                <p data-img="./dist/images/uzel--polup-15-30gr.png" data-href="izdeliya-standartnye-uzly.php#uzel--polup-15-30gr">Узел № Полуп/15*30гр<span> <br>~uzel--polup-15-30gr</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2885,19 +2885,19 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                              <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->  
                                                             <TR>
                                                                 <TD class="hover mapsite" id="footer629">
-                                                                    <p data-img="./dist/images/uzly-ustanovki-ruchki.png" id="floating630" data-href="standartnye-uzly.php#uzly-ustanovki-ruchki" >УЗЛЫ УСТАНОВКИ РУЧКИ<span> <br>~uzly-ustanovki-ruchki</span></p>
+                                                                    <p data-img="./dist/images/uzly-ustanovki-ruchki.png" id="floating630" data-href="izdeliya-standartnye-uzly.php#uzly-ustanovki-ruchki" >УЗЛЫ УСТАНОВКИ РУЧКИ<span> <br>~uzly-ustanovki-ruchki</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--ruch-1">                                                                            
-                                                                                <p data-img="./dist/images/uzel--ruch-1.png" data-href="standartnye-uzly.php#uzel--ruch-1">Узел № Руч/1<span> <br>~uzel--ruch-1</span></p>
+                                                                                <p data-img="./dist/images/uzel--ruch-1.png" data-href="izdeliya-standartnye-uzly.php#uzel--ruch-1">Узел № Руч/1<span> <br>~uzel--ruch-1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-uzel--ruch-2">
-                                                                                <p data-img="./dist/images/uzel--ruch-2.png" data-href="standartnye-uzly.php#uzel--ruch-2">Узел № Руч/2<span> <br>~uzel--ruch-2</span></p>
+                                                                                <p data-img="./dist/images/uzel--ruch-2.png" data-href="izdeliya-standartnye-uzly.php#uzel--ruch-2">Узел № Руч/2<span> <br>~uzel--ruch-2</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
@@ -2911,13 +2911,13 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
 
                                                             <TR>
                                                                 <TD class="hover mapsite" id="footer630">
-                                                                    <p data-img="./dist/images/uzel--pm-1.png" id="floating631" data-href="standartnye-uzly.php#uzly-podlozhka-montazhnaya" >УЗЛЫ ПОДЛОЖКА МОНТАЖНАЯ<span> <br>~uzly-podlozhka-montazhnaya</span></p>
+                                                                    <p data-img="./dist/images/uzel--pm-1.png" id="floating631" data-href="izdeliya-standartnye-uzly.php#uzly-podlozhka-montazhnaya" >УЗЛЫ ПОДЛОЖКА МОНТАЖНАЯ<span> <br>~uzly-podlozhka-montazhnaya</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" style="padding: 35px 0;" id="flo-uzel--pm-1">                                                                            
-                                                                                <p data-img="./dist/images/uzel--pm-1.png" data-href="standartnye-uzly.php#uzel--pm-1">Узел № ПМ/1<span> <br>~uzel--pm-1</span></p>
+                                                                                <p data-img="./dist/images/uzel--pm-1.png" data-href="izdeliya-standartnye-uzly.php#uzel--pm-1">Узел № ПМ/1<span> <br>~uzel--pm-1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2930,13 +2930,13 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEV EL3-->
                                                             <TR>
                                                                 <TD class="hover mapsite" id="footer631">
-                                                                    <p data-img="./dist/images/uzel--ppp-1.png" id="floating632" data-href="standartnye-uzly.php#uzel-po-prisadke-paneli-poyasa-pod-samorez" >Узел по присадке панели пояса под саморез<span> <br>~uzel-po-prisadke-paneli-poyasa-pod-samorez</span></p>
+                                                                    <p data-img="./dist/images/uzel--ppp-1.png" id="floating632" data-href="izdeliya-standartnye-uzly.php#uzel-po-prisadke-paneli-poyasa-pod-samorez" >Узел по присадке панели пояса под саморез<span> <br>~uzel-po-prisadke-paneli-poyasa-pod-samorez</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" style="padding: 35px 0;"  id="flo-uzel--ppp-1">                                                                            
-                                                                                <p data-img="./dist/images/uzel--ppp-1.png" data-href="standartnye-uzly.php#uzel--ppp-1">Узел № ППП/1<span> <br>~uzel--ppp-1</span></p>
+                                                                                <p data-img="./dist/images/uzel--ppp-1.png" data-href="izdeliya-standartnye-uzly.php#uzel--ppp-1">Узел № ППП/1<span> <br>~uzel--ppp-1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2952,13 +2952,13 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
 
                                                             <TR>
                                                                 <TD class="hover mapsite" id="footer632">
-                                                                    <p data-img="./dist/images/no-foto.png" id="floating6106" data-href="standartnye-uzly.php#paz-nizhniy-razdvizhnaya-dver" >ПАЗ НИЖНИЙ РАЗДВИЖНАЯ ДВЕРЬ<span> <br>~paz-nizhniy-razdvizhnaya-dver</span></p>
+                                                                    <p data-img="./dist/images/no-foto.png" id="floating6106" data-href="izdeliya-standartnye-uzly.php#paz-nizhniy-razdvizhnaya-dver" >ПАЗ НИЖНИЙ РАЗДВИЖНАЯ ДВЕРЬ<span> <br>~paz-nizhniy-razdvizhnaya-dver</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" style="padding: 35px 0;"  id="flo-uzel--pnrd-1">                                                                            
-                                                                                <p data-img="./dist/images/uzel--pnrd-1.png" data-href="standartnye-uzly.php#uzel--pnrd-1">Узел № ПНРД/1<span> <br>~uzel--pnrd-1</span></p>
+                                                                                <p data-img="./dist/images/uzel--pnrd-1.png" data-href="izdeliya-standartnye-uzly.php#uzel--pnrd-1">Узел № ПНРД/1<span> <br>~uzel--pnrd-1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
