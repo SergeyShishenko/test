@@ -358,35 +358,132 @@
                                     </li>
                                     <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_2</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_3</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_4</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-2-h1">Узел № Пл1/2/Х_1</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-2-h2">Узел № Пл1/2/Х_2</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-2-h3">Узел № Пл1/2/Х_3</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-2-h4">Узел № Пл1/2/Х_4</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl2-h">Узел № Пл2/Х</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl3-1-1">Узел № Пл3/1_1</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl3-1-2">Узел № Пл3/1_2</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl3-2-1">Узел № Пл3/2_1</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl3-2-2">Узел № Пл3/2_2</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl4-1">Узел № Пл4_1</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href=" ">Узел № </a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl4-2">Узел № Пл4_2</a>
                                     </li>
                                                                                                                    
                                 </ul>                             
-                            </li>                                 
+                            </li> 
+                            
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzly-shponki" >УЗЛЫ ШПОНКИ</a>  
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--shp1-10-16-24">Узел № Шп1/24</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--shp1-10-16-24">Узел № Шп1/16</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--shp1-10-16-24">Узел № Шп1/10</a>
+                                    </li>                                                                         
+                                </ul>                             
+                            </li>
+
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#" >УЗЛЫ ПОЛКИ</a>  
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8">Узел № П/4</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8">Узел № П/6</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8">Узел № П/8</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8perf">Узел № П/4/перф.</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8perf">Узел № П/6/перф.</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8perf">Узел № П/8/перф.</a>
+                                    </li>                                                                          
+                                </ul>                             
+                           </li>
+
+                           <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzly-shtangoderzhateli" >УЗЛЫ ШТАНГОДЕРЖАТЕЛИ</a>  
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--shd1-shd2">Узел № ШД1</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--shd1-shd2">Узел № ШД2</a>
+                                    </li>                                                                                                            
+                                </ul>                             
+                           </li>
+
+                           <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzly-ekscentrikovye-styazhki-evrovinty" >УЗЛЫ ЭКСЦЕНТРИКОВЫЕ СТЯЖКИ, ЕВРОВИНТЫ</a>  
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел № Э1/16</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел № Э1/24</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел № Э2/16</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел № Э2/24</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел №Евр/16</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--e1-evr">Узел №Евр/24</a>
+                                    </li>                                                                          
+                                </ul>                             
+                           </li>
+
+                           <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#paneli-poyasa" >ПАНЕЛИ ПОЯСА</a>  
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--polup-15-30gr">Узел № Полуп/15*30гр</a>
+                                    </li>
+                                                                                                             
+                                </ul>                             
+                           </li>
+
+                           <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzly-ustanovki-ruchki" >УЗЛЫ УСТАНОВКИ РУЧКИ</a>  
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--ruch-1">Узел № Руч/1</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--ruch-2">Узел № Руч/2</a>
+                                    </li>
+                                                                                                             
+                                </ul>                             
+                           </li>
+
+                           <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzly-podlozhka-montazhnaya" >УЗЛЫ ПОДЛОЖКА МОНТАЖНАЯ</a>  
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pm-1">Узел № ПМ/1</a>
+                                    </li>
+                                                                                                            
+                                </ul>                             
+                           </li>
+
+                           <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel-po-prisadke-paneli-poyasa-pod-samorez" >Узел по присадке панели пояса под саморез</a>  
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--ppp-1">Узел № ППП/1</a>
+                                    </li>
+                                                                                                             
+                                </ul>                             
+                           </li>
+
+                           <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#paz-nizhniy-razdvizhnaya-dver" >ПАЗ НИЖНИЙ РАЗДВИЖНАЯ ДВЕРЬ</a>  
+                                <ul class="list-group sub_menu2">
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pnrd-1">Узел № ПНРД/1</a>
+                                    </li>
+                                                                                                             
+                                </ul>                             
+                           </li>
+
                         </ul>
                     </li>
 

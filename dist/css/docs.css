@@ -106,7 +106,7 @@ abbr { text-decoration: none; }
   /* overflow:hidden; */
   /* visibility: hidden; */
 }
-.sub_menu2{height: 442px;
+.sub_menu2{height: 200px;  /* высота скролла суб меню */
    overflow-y: auto ;
    /* overflow-y: hidden; */
   }
