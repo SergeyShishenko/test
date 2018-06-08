@@ -82,7 +82,11 @@ abbr { text-decoration: none; }
 
 .sub_menu{
   position: absolute;
-  /* top: 10px; */
+  
+  /* поднять список вверх кратно 40px !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+  /* bottom: -40px; */
+
+
   list-style: none;
   text-decoration: none;
   left: 100%;
@@ -106,10 +110,10 @@ abbr { text-decoration: none; }
   /* overflow:hidden; */
   /* visibility: hidden; */
 }
-.sub_menu2{height: 200px;  /* высота скролла суб меню */
-   overflow-y: auto ;
-   /* overflow-y: hidden; */
-  }
+ /* высота скролла суб меню !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.sub_menu2 {height: 200px; overflow-y: auto ;}
+
+
   #navmain-izdeliya > div{max-height: 650px;overflow: auto;}
 
 

@@ -49,6 +49,8 @@ $(function () {
     $('#navsub  li.menu ul').hide();
     $('#navsub  li.menu').hover(
         function () {
+           var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+           alert(col) ;
            // $(this).find('ul.sub_menu').delay(200).show(200);
             $(this).find('ul.sub_menu').show();            
         },
