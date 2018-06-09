@@ -111,7 +111,7 @@ abbr { text-decoration: none; }
   /* visibility: hidden; */
 }
  /* высота скролла суб меню !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
-.sub_menu2 {height: 200px; overflow-y: auto ;}
+/* .sub_menu2 {height: 200px; overflow-y: auto ;} */
 
 
   #navmain-izdeliya > div{max-height: 650px;overflow: auto;}

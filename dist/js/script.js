@@ -50,7 +50,9 @@ $(function () {
     $('#navsub  li.menu').hover(
         function () {
            var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-           alert(col) ;
+        //    alert(col) ;
+           console.log("номер по порядку выбранного элемента списка - "+col);
+        //    console.log(col);
            // $(this).find('ul.sub_menu').delay(200).show(200);
             $(this).find('ul.sub_menu').show();            
         },
