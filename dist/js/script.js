@@ -49,25 +49,58 @@ $(function () {
     $('#navsub  li.menu ul').hide();
     $('#navsub  li.menu').hover(
         function () {
+           var colLeftMenu = $(this).parent().children().length; 
            var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        //    alert(col) ;
-           console.log("номер по порядку выбранного элемента списка - "+col);
-        //    console.log(col);
-           // $(this).find('ul.sub_menu').delay(200).show(200);
-            $(this).find('ul.sub_menu').show();            
+           var UlSubMenu = $(this ).children('ul').children();
+           var child1 =UlSubMenu.length;
+           var bottomUl = (colLeftMenu-col)*40;
+           if (child1>col){bottomUl=bottomUl-(child1-col)*40;}       
+           console.log("количество левое меню - "+colLeftMenu);
+           console.log("номер по порядку выбранного элемента списка - "+col);      
+           console.log("количество дочерних элементов - "+child1);   
+           $(this).find('ul.sub_menu').show();              
+           UlSubMenu.parent().css("bottom", bottomUl+"px"); 
+           $(this).find('ul.sub_menu > li:nth-child(1)').addClass('triangle');           
+           var triangle = (child1-1)*40+11;
+           if (child1>col){triangle = (col-1)*40+11;}
+           $('head').append('<style id="triangle">.triangle::before{top:'+triangle+'px !important;}.triangle::after{top:'+triangle+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
         },
         function () {
-            $(this).find('ul.sub_menu').hide();           
+            $(this).find('ul.sub_menu').hide();   
+            $(this).find('ul.sub_menu > li:nth-child(1)').removeClass('triangle');            
+            $('#triangle').remove();      
         }
     );
+
     $('#navsub  li.menu2').hover(
         function () {
-            //$(this).find('ul.sub_menu2').delay(200).show(200);
+           var colLeftMenu = $(this).parent().children().length; 
+           var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+           var UlSubMenu = $(this ).children('ul').children();
+           var child1 =UlSubMenu.length;
+           var bottomUl = (colLeftMenu-col)*40+11;
+           if (child1==col){bottomUl=bottomUl-(child1-col)*40+20;}
+           if (child1<col){bottomUl=30+(colLeftMenu-col)*40;}   
+           if (child1>col){bottomUl=bottomUl-(child1-col)*40+20;}       
+           console.log("количество левое меню2 - "+colLeftMenu);
+           console.log("номер по порядку выбранного элемента списка2 - "+col);      
+           console.log("количество дочерних элементов2 - "+child1);  
+            
             $(this).find('ul.sub_menu2').show();
+
+            UlSubMenu.parent().css("bottom", bottomUl+"px"); 
+           $(this).find('ul.sub_menu2 > li:nth-child(1)').addClass('triangle2');           
+           var triangle = (child1-1)*40+11;
+          
+           if (child1>col){triangle = (col-1)*40+11;}
+           $('head').append('<style id="triangle2">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');  
+           
         },
         function () {
             console.log($(this));
             $(this).find('ul.sub_menu2').hide();
+            $(this).find('ul.sub_menu2 > li:nth-child(1)').removeClass('triangle2');            
+            $('#triangle2').remove();  
         }
     );
 });

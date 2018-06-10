@@ -119,54 +119,55 @@ abbr { text-decoration: none; }
 
 .menu2 .list-group-item,.menu2 .list-group,.menu .list-group{
   width: 489PX;/*ширина submenu*/
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 
-.sub_menu > li:nth-child(1)::after {
+/* .sub_menu > li:nth-child(1)::after {
   content: ''; 
-  position: absolute; /* Абсолютное позиционирование */
-  /* Положение треугольника */
+  position: absolute; 
+ 
   left: -18px; 
   top: 11px;
   border: 10px solid transparent;
-    /* border-right: 10px solid rgb(238, 238, 238); */
+   
     
   border-right: 10px solid rgb(238, 238, 238);
   
-}
-object{
-  border: 1px solid rgb(219, 219, 219);
-}
-.sub_menu2 > li:nth-child(1)::after {
+} */
+/* .sub_menu > li:nth-child(1)::before {
+  content: ''; 
+  position: absolute; 
+ 
+  left: -20px; 
+  top: 11px;
+ 
+  border: 10px solid transparent;
+    border-right: 10px solid rgb(189, 189, 189);
+    
+  
+} */
+/* .triangle{top: 11px;} */
+
+  .triangle::after{
   content: ''; 
   position: absolute; /* Абсолютное позиционирование */
   /* Положение треугольника */
   left: -18px; 
   top: 11px;
- 
-  border: 10px solid transparent;	border-right: 10px solid rgb(238, 238, 238);
-  /* border-right: 10px solid rgb(253, 249, 213); */
-  
+  /* top: 51px; */
+  border: 10px solid transparent;
+    /* border-right: 10px solid rgb(238, 238, 238); */
+    
+  border-right: 10px solid rgb(253, 249, 213);
+  z-index: 1001; 
 }
-
-.sub_menu2 > li:nth-child(1)::before {
+.triangle::before {
   content: ''; 
   position: absolute; /* Абсолютное позиционирование */
   /* Положение треугольника */
   left: -20px; 
   top: 11px;
-  /* border: 10px solid transparent;	border-right: 10px solid rgb(230, 230, 230); */
-  border: 10px solid transparent;	border-right: 10px solid rgb(189, 189, 189);
-  /* z-index: 9999; */
-  /* z-index: 1001; */
-  /* border: 10px solid transparent;	border-right: 10px solid #eee; */
-}
-.sub_menu > li:nth-child(1)::before {
-  content: ''; 
-  position: absolute; /* Абсолютное позиционирование */
-  /* Положение треугольника */
-  left: -20px; 
-  top: 11px;
+  /* top: 51px; */
   /* border: 10px solid transparent;	border-right: 10px solid rgb(230, 230, 230); */
   border: 10px solid transparent;
     border-right: 10px solid rgb(189, 189, 189);
@@ -176,16 +177,59 @@ object{
   /* border: 10px solid transparent;	border-right: 10px solid #eee; */
 }
 
-.sub_menu > li:nth-child(1):hover::after {
- /* border-right: 10px solid rgb(245, 245, 245); */
- border-right: 10px solid rgb(253, 249, 213);
+.triangle2::after {
+  content: ''; 
+  position: absolute;  
+  left: -18px; 
+  top: 11px; 
+  /* border: 10px solid transparent;	border-right: 10px solid rgb(238, 238, 238);  */
+  border: 10px solid transparent;	border-right: 10px solid rgb(253, 249, 213); 
+  z-index: 1001;  
 }
-.sub_menu2 > li:nth-child(1):hover::after {
+
+.triangle2::before {
+  content: ''; 
+  position: absolute;   
+  left: -20px; 
+  top: 11px;
+  border: 10px solid transparent;
+  border-right: 10px solid rgb(189, 189, 189);
+}
+
+object{
+  border: 1px solid rgb(219, 219, 219);
+}
+
+
+/* .sub_menu2 > li:nth-child(1)::after {
+  content: ''; 
+  position: absolute;  
+  left: -18px; 
+  top: 11px; 
+  border: 10px solid transparent;	border-right: 10px solid rgb(238, 238, 238);  
+}
+
+.sub_menu2 > li:nth-child(1)::before {
+  content: ''; 
+  position: absolute;   
+  left: -20px; 
+  top: 11px;
+  border: 10px solid transparent;	border-right: 10px solid rgb(189, 189, 189);
+} */
+
+
+/* .sub_menu > li:nth-child(1):hover::after { */
+  /* .sub_menu > li:hover::after { */
  /* border-right: 10px solid rgb(245, 245, 245); */
- border-right: 10px solid rgb(253, 249, 213);/*#eee;*/
+ /* border-right: 10px solid rgb(253, 249, 213); */
+/* } */
+/* .sub_menu2 > li:nth-child(1):hover::after { */
+  /* .sub_menu2 > li:hover::after { */
+ /* border-right: 10px solid rgb(245, 245, 245); */
+ /* border-right: 10px solid rgb(253, 249, 213); */
  
- z-index: 1001;
-}
+ /* z-index: 1001; */
+/* } */
 .list-group-item{
   /* background-color: rgb(238, 238, 238); */
   background-color: rgb(225, 249, 255);
@@ -331,7 +375,7 @@ a.list-group-item.active::after {
   right: -1px; 
   top: 10px; 
   /* border: 10px solid transparent;	border-right: 10px solid rgba(221, 221, 221, 0.884); */
-  border: 10px solid transparent;	border-right: 10px solid rgb(194, 194, 194);/*#eee;*/
+  border: 10px solid transparent;	border-right: 10px solid rgb(194, 194, 194);
  }
 
 /* .list-group-item a{
