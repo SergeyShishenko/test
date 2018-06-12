@@ -2625,19 +2625,19 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--pl1-1-h2">                                                                            
-                                                                                <p data-img="./dist/images/uzel--pl1-1-h2.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_2<span> <br>~uzel--pl1-1-h2 2</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl1-1-h2.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h2">Узел № Пл1/1/Х_2<span> <br>~uzel--pl1-1-h2 2</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--pl1-1-h3">                                                                            
-                                                                                <p data-img="./dist/images/uzel--pl1-1-h3.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_3<span> <br>~uzel--pl1-1-h3 3</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl1-1-h3.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h3">Узел № Пл1/1/Х_3<span> <br>~uzel--pl1-1-h3 3</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-uzel--pl1-1-h4">                                                                            
-                                                                                <p data-img="./dist/images/uzel--pl1-1-h4.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_4<span> <br>~uzel--pl1-1-h4 4</span></p>
+                                                                                <p data-img="./dist/images/uzel--pl1-1-h4.png" data-href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h4">Узел № Пл1/1/Х_4<span> <br>~uzel--pl1-1-h4 4</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
@@ -2744,7 +2744,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->  
                                                             <TR>
                                                                 <TD class="hover mapsite" id="footer625">
-                                                                    <p data-img="./dist/images/uzel--p-4-6-8.png" id="floating626" data-href="izdeliya-standartnye-uzly.php#" >УЗЛЫ ПОЛКИ<span> <br>~uzly-polki</span></p>
+                                                                    <p data-img="./dist/images/uzel--p-4-6-8.png" id="floating626" data-href="izdeliya-standartnye-uzly.php#uzly-polki" >УЗЛЫ ПОЛКИ<span> <br>~uzly-polki</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          

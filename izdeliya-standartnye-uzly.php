@@ -32,12 +32,12 @@ include 'inc-left-side-menu-izdeliya.php';
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header">
-                          <h1 itemprop="name" id="profili-nakladki">Узлы экранов</h1>
+                          <h1 itemprop="name" id="uzly-ekrany">УЗЛЫ ЭКРАНЫ</h1>
                         </div>                     
-                        <h2 id="profili-nakladki-50">&nbsp;</h2>
+                        <h2 id="uzel--e1-700">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Узел № Э1/700</h4>
-                            <p>Д - 1 или 2 фрезеровки по Длине</p>
-                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                            
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
                                 <img src="./dist/images/uzel--e1-700.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
@@ -50,216 +50,659 @@ include 'inc-left-side-menu-izdeliya.php';
                              <div class="overlay"></div>
                         </div>
                       
-                        <h2 id="profili-nakladki-51">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>МДФ НАКЛАДКА №051/ДШ</h4>
-                            <p>Д - 1 или 2 фрезеровки по Длине</p>
-                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>
+                        <h2 id="uzel--e1-600">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" ><h4 >Узел № Э1/600</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p> -->
                             <!-- <a href=""><img  src="img.jpg" alt="" style="width:200px; height:200px;" data-toggle="modal" data-target="#myModal"class="img-rounded img-thumbnail"></a> -->
                            
                             <p> <a>
-                                <img src="./dist/images/mdf-nakladka-051-dsh.png" class="center-block   img-rounded img-thumbnail"
+                                <img src="./dist/images/uzel--e1-600.png" class="center-block   img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="МДФ_НАКЛАДКА_№051/ДШ"                             
-                                 alt="МДФ_НАКЛАДКА_№051/ДШ"
-                                 data-dwg="./dist/files/mdf-nakladka-051-dsh.dwg"
+                                 data-content="Узел № Э1/600"                             
+                                 alt="Узел № Э1/600"
+                                 data-dwg=""
                                    ></a>
                             </p>
-                             <div class="overlay"></div>
+                            <div class="overlay"></div>
                         </div>
 
-                        <h2 id="profili-nakladki-52">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>МДФ НАКЛАДКА №052/ДШ</h4>
-                            <p>Д - 1 или 2 фрезеровки по Длине</p>
-                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>
-                            <!-- <a href=""><img  src="img.jpg" alt="" style="width:200px; height:200px;" data-toggle="modal" data-target="#myModal"class="img-rounded img-thumbnail"></a> -->
-                           
-                            <p> <a>
-                                <img src="./dist/images/mdf-nakladka-052-dsh.png" class="center-block   img-rounded img-thumbnail"
-                                 data-toggle="modal"
-                                 data-target="#myModal"
-                                 data-content="МДФ_НАКЛАДКА_№052/ДШ"                             
-                                 alt="МДФ_НАКЛАДКА_№052/ДШ"
-                                 data-dwg="./dist/files/mdf-nakladka-052-dsh.dwg"
-                                   ></a>
-                            </p>
-                             <div class="overlay"></div>
+                        
+                      </section>
+                    </article>
+
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="uzly-pilyastry">УЗЛЫ ПИЛЯСТРЫ</h1>
                         </div>
-                        <h2 id="profili-nakladki-53">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>МДФ НАКЛАДКА №053/ДШ</h4>
-                            <p>Д - 1 или 2 фрезеровки по Длине</p>
-                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>
-                            <!-- <a href=""><img  src="img.jpg" alt="" style="width:200px; height:200px;" data-toggle="modal" data-target="#myModal"class="img-rounded img-thumbnail"></a> -->
-                            
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl1-1-h1">Узел № Пл1/1/Х_1</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img src="./dist/images/mdf-nakladka-053-dsh.png" class="center-block   img-rounded img-thumbnail"
+                                <img src="./dist/images/uzel--pl1-1-h1.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="МДФ_НАКЛАДКА_№053/ДШ"                            
-                                 alt="МДФ_НАКЛАДКА_№053/ДШ"
-                                 data-dwg="./dist/files/mdf-nakladka-053-dsh.dwg"
+                                 data-content="Узел № Пл1/1/Х_1"                               
+                                 alt="Узел № Пл1/1/Х_1"
+                                 data-dwg=""
                                    ></a>
                              </p>
                              <div class="overlay"></div>
                         </div>
-                        
-                      </section>
-                    </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
-                        <div class="page-header">
-                          <h1 itemprop="name" id="polotna">Дверные блоки с распашными полотнами</h1>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl1-1-h2">Узел № Пл1/1/Х_2</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl1-1-h2.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл1/1/Х_2"                               
+                                 alt="Узел № Пл1/1/Х_2"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
                         </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt harum minus possimus, tempore suscipit fugit nostrum enim hic illum tempora assumenda nemo, vero officiis asperiores, fuga aut. Ex, ratione!</p>
-                        <div class="bs-callout bs-callout-warning" id="jquery-required">
-                          <h4>Lorem ipsum dolor</h4>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
 
-
-                        <h2 id="polotna-bez-falca">&nbsp;</h2>
-                        <h2 >Полотна без фальца</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
-
-                        <h2 id="polotna-s-falcem">&nbsp;</h2>
-                        <h2 >Полотна c фальцем</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                    </article>
-
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
-                        <div class="page-header">
-                          <h1 itemprop="name" id="razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</h1>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl1-1-h3">Узел № Пл1/1/Х_3</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl1-1-h3.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл1/1/Х_3"                               
+                                 alt="Узел № Пл1/1/Х_3"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
                         </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sed cum vero facere quisquam iure veritatis laboriosam soluta optio quis ratione quam magni rerum aliquid doloremque commodi, possimus, sit incidunt.</p>
-                        
-                        <h2 id="razdvizhnye-polotna-po-stene">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение по стене</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl1-1-h4">Узел № Пл1/1/Х_4</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl1-1-h4.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл1/1/Х_4"                               
+                                 alt="Узел № Пл1/1/Х_4"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl1-2-h1">Узел № Пл1/2/Х_1</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl1-2-h1.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл1/2/Х_1"                               
+                                 alt="Узел № Пл1/2/Х_1"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl1-2-h2">Узел № Пл1/2/Х_2</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl1-2-h2.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл1/2/Х_2"                               
+                                 alt="Узел № Пл1/2/Х_2"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl1-2-h3">Узел № Пл1/2/Х_3</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl1-2-h3.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл1/2/Х_3"                               
+                                 alt="Узел № Пл1/2/Х_3"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl1-2-h4">Узел № Пл1/2/Х_4</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl1-2-h4.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл1/2/Х_4"                               
+                                 alt="Узел № Пл1/2/Х_4"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl2-h">Узел № Пл2/Х</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl2-h.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл2/Х"                               
+                                 alt="Узел № Пл2/Х"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl3-1-1">Узел № Пл3/1_1</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl3-1-1.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл3/1_1"                               
+                                 alt="Узел № Пл3/1_1"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl3-1-2">Узел № Пл3/1_2</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl3-1-2.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл3/1_2"                               
+                                 alt="Узел № Пл3/1_2"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl3-2-1">Узел № Пл3/2_1</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl3-2-1.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл3/2_1"                               
+                                 alt="Узел № Пл3/2_1"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl3-2-2">Узел № Пл3/2_2</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl3-2-2.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл3/2_2"                               
+                                 alt="Узел № Пл3/2_2"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl4-1">Узел № Пл4_1</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl4-1.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл4_1"                               
+                                 alt="Узел № Пл4_1"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pl4-2">Узел № Пл4_2</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pl4-2.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Пл4_2"                               
+                                 alt="Узел № Пл4_2"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
                          
-                        <h2 id="razdvizhnye-polotna-v-penal">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение в пенал</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                       </section>
+                    </article>
 
-                        <h2 id="razdvizhnye-polotna-v-proeme">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение в проеме</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="uzly-shponki" >УЗЛЫ ШПОНКИ</h1>
+                        </div>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--shp1-10-16-24">Узел № Шп1/24; Узел № Шп1/16; Узел № Шп1/10 </h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--shp1-10-16-24.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Шп1/24; Узел № Шп1/16; Узел № Шп1/10"                               
+                                 alt="Узел № Шп1/24; Узел № Шп1/16; Узел № Шп1/10"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
                       </section>
                     </article>
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header">
-                          <h1 itemprop="name" id="mayatnikovye-polotna">Дверные блоки с маятниковыми (барными) полотнами</h1>
+                          <h1 itemprop="name" id="uzly-polki" >УЗЛЫ ПОЛКИ</h1>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--p-4-6-8">Узел № П/4; Узел № П/6; Узел № П/8 </h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--p-4-6-8.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № П/4; Узел № П/6; Узел № П/8 "                               
+                                 alt="Узел № П/4; Узел № П/6; Узел № П/8 "
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--p-4-6-8perf">Узел № П/4/перф.; Узел № П/6/перф.; Узел № П/8/перф. </h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--p-4-6-8perf.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № П/4/перф.; Узел № П/6/перф.; Узел № П/8/перф. "                               
+                                 alt="Узел № П/4/перф.; Узел № П/6/перф.; Узел № П/8/перф. "
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
+                      </section>
+                    </article>
+
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="uzly-shtangoderzhateli" >УЗЛЫ ШТАНГОДЕРЖАТЕЛИ</h1>
+                        </div>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--shd1-shd2">Узел № ШД1; Узел № ШД2</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--shd1-shd2.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № ШД1; Узел № ШД2"                               
+                                 alt="Узел № ШД1; Узел № ШД2"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>                      
+                      </section>
+                    </article>
+
+                     <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="uzly-ekscentrikovye-styazhki-evrovinty" >УЗЛЫ ЭКСЦЕНТРИКОВЫЕ СТЯЖКИ, ЕВРОВИНТЫ</h1>
+                        </div>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--e1-evr">Узел № Э1/16; Узел № Э1/24; Узел № Э2/16; Узел № Э2/24; Узел №Евр/16; Узел №Евр/24</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--e1-evr.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Э1/16; Узел № Э1/24; Узел № Э2/16; Узел № Э2/24; Узел №Евр/16; Узел №Евр/24"                               
+                                 alt="Узел № Э1/16; Узел № Э1/24; Узел № Э2/16; Узел № Э2/24; Узел №Евр/16; Узел №Евр/24"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>                      
+                      </section>
+                    </article>
+
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="paneli-poyasa" >ПАНЕЛИ ПОЯСА</h1>
+                        </div>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--polup-15-30gr">Узел № Полуп/15*30гр</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--polup-15-30gr.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Полуп/15*30гр"                               
+                                 alt="Узел № Полуп/15*30гр"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>                      
+                      </section>
+                    </article>
+
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="УЗЛЫ УСТАНОВКИ РУЧКИ"</h1>
+                        </div>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--ruch-1">Узел № Руч/1</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--ruch-1.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Руч/1"                               
+                                 alt="Узел № Руч/1"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div> 
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--ruch-2">Узел № Руч/2</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--ruch-2.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № Руч/2"                               
+                                 alt="Узел № Руч/2"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>                      
+                      </section>
+                    </article>
+
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="uzly-podlozhka-montazhnaya" >УЗЛЫ ПОДЛОЖКА МОНТАЖНАЯ</h1>
+                        </div>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pm-1">Узел № ПМ/1</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pm-1.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № ПМ/1"                               
+                                 alt="Узел № ПМ/1"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>                      
+                      </section>
+                    </article>
+
+                    <article itemscope="" itemtype="http://schema.org/Article">
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="uzel-po-prisadke-paneli-poyasa-pod-samorez" >УЗЕЛ ПО ПРИСАДКЕ ПАНЕЛИ ПОЯСА ПОД САМОРЕЗ</h1>
+                        </div>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--ppp-1">Узел № ППП/1</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--ppp-1.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № ППП/1"                               
+                                 alt="Узел № ППП/1"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>                      
                       </section>
                     </article>
                     <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
-                          <div class="page-header">
-                            <h1 itemprop="name" id="portaly">Дверные блоки без полотен (порталы)</h1>
-                          </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        </section>
-                      </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
-                          <div class="page-header">
-                            <h1 itemprop="name" id="sborochnye-shemy-polotna">Сборочно-монтажные схемы</h1>
-                          </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        </section>
+                      <section itemprop="articleBody" id="bs-docs-section">
+                        <div class="page-header">
+                          <h1 itemprop="name" id="paz-nizhniy-razdvizhnaya-dver" >ПАЗ НИЖНИЙ РАЗДВИЖНАЯ ДВЕРЬ</h1>
+                        </div>
+                        <h2 >&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <h4  id="uzel--pnrd-1">Узел № ПНРД/1</h4>
+                            <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
+                            <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
+                            <p> <a>
+                                <img src="./dist/images/uzel--pnrd-1.png" class="center-block img-rounded img-thumbnail"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Узел № ПНРД/1"                               
+                                 alt="Узел № ПНРД/1"
+                                 data-dwg=""
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>                      
+                      </section>
                     </article>
+                   
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary"  id="main-page">
                         <ul class="nav bs-sidenav">
-                            <li><a href="#profili-nakladki">Накладки</a>
+                            <li><a href="#uzly-ekrany" >УЗЛЫ ЭКРАНЫ</a>
                                 <ul class="nav">
-                                    <li><a href="#profili-nakladki-50" >&#9999;&nbsp;МДФ накладка №050/ДШ</a>
+                                    <li><a href="#uzel--e1-700">&#9999;&nbsp;Узел № Э1/700</a>
                                     </li>
-                                    <li><a href="#profili-nakladki-51" >&#9999;&nbsp;МДФ накладка №051/ДШ</a>
+                                    <li><a href="#uzel--e1-600">&#9999;&nbsp;Узел № Э1/600</a>
                                     </li> 
-                                    <li><a href="#profili-nakladki-52" >&#9999;&nbsp;МДФ накладка №052/ДШ</a>
-                                    </li>
-                                    <li><a href="#profili-nakladki-53" >&#9999;&nbsp;МДФ накладка №053/ДШ</a>
-                                    </li>                                    
+                                                                      
                                 </ul>
                             </li>
-                            <li><a href="#polotna">Дверные блоки с распашными полотнами </a>
+                            <li><a href="#uzly-pilyastry" >УЗЛЫ ПИЛЯСТРЫ</a>
                                 <ul class="nav">
-                                    <li><a href="#polotna-bez-falca">&#9999;&nbsp;Полотна без фальца</a>
+                                    <li><a href="#uzel--pl1-1-h1">&#9999;&nbsp;Узел № Пл1/1/Х_1</a>
                                     </li>
-                                    <li><a href="#polotna-s-falcem">&#9999;&nbsp;Полотна с фальцем</a>
+                                    <li><a href="#uzel--pl1-1-h2">&#9999;&nbsp;Узел № Пл1/1/Х_2</a>
+                                    </li>
+                                    <li><a href="#uzel--pl1-1-h3">&#9999;&nbsp;Узел № Пл1/1/Х_3</a>
+                                    </li>
+                                    <li><a href="#uzel--pl1-1-h4">&#9999;&nbsp;Узел № Пл1/1/Х_4</a>
+                                    </li>
+                                    <li><a href="#uzel--pl1-2-h1">&#9999;&nbsp;Узел № Пл1/2/Х_1</a>
+                                    </li>
+                                    <li><a href="#uzel--pl1-2-h2">&#9999;&nbsp;Узел № Пл1/2/Х_2</a>
+                                    </li>
+                                    <li><a href="#uzel--pl1-2-h3">&#9999;&nbsp;Узел № Пл1/2/Х_3</a>
+                                    </li>
+                                    <li><a href="#uzel--pl1-2-h4">&#9999;&nbsp;Узел № Пл1/2/Х_4</a>
+                                    </li>
+                                    <li><a href="#uzel--pl2-h">&#9999;&nbsp;Узел № Пл2/Х</a>
+                                    </li>
+                                    <li><a href="#uzel--pl3-1-1">&#9999;&nbsp;Узел № Пл3/1_1</a>
+                                    </li>
+                                    <li><a href="#uzel--pl3-1-2">&#9999;&nbsp;Узел № Пл3/1_2</a>
+                                    </li>
+                                    <li><a href="#uzel--pl3-2-1">&#9999;&nbsp;Узел № Пл3/2_1</a>
+                                    </li>
+                                    <li><a href="#uzel--pl3-2-2">&#9999;&nbsp;Узел № Пл3/2_2</a>
+                                    </li>
+                                    <li><a href="#uzel--pl4-1">&#9999;&nbsp;Узел № Пл4_1</a>
+                                    </li>
+                                    <li><a href="#uzel--pl4-2">&#9999;&nbsp;Узел № Пл4_2</a>
                                     </li>                                   
                                 </ul>
                             </li>
                             <li>
-                                <a href="#razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</a>
+                                <a href="#uzly-shponki" >УЗЛЫ ШПОНКИ</a>
                                 <ul class="nav">
-                                    <li><a href="#razdvizhnye-polotna-po-stene">&#9999;&nbsp;Полотна без складывания — раздвижение по стене</a>
+                                    <li><a href="#uzel--shp1-10-16-24">&#9999;&nbsp;Узел № Шп1/24;<br>Узел № Шп1/16;<br>Узел № Шп1/10 </a>
                                     </li>
-                                    <li><a href="#razdvizhnye-polotna-v-penal">&#9999;&nbsp;Полотна без складывания — раздвижение в пенал</a>
-                                    </li>
-                                    <li><a href="#razdvizhnye-polotna-v-proeme">&#9999;&nbsp;Полотна без складывания — раздвижение в проеме</a>
-                                  </li>
+                                  
                                 </ul>
                             </li>
-                            <li><a href="#mayatnikovye-polotna">Дверные блоки с маятниковыми (барными) полотнами</a>
+                            <li>
+                                <a href="#uzly-polki" >УЗЛЫ ПОЛКИ</a>
+                                <ul class="nav">
+                                <li><a href="#uzel--p-4-6-8">&#9999;&nbsp;Узел № П/4;<br>Узел № П/6;<br>Узел № П/8 </a>
+                                    </li>
+                                    <li><a href="#uzel--p-4-6-8perf">&#9999;&nbsp;Узел № П/4/перф.;<br>Узел № П/6/перф.;<br>Узел № П/8/перф. </a>
+                                    </li>
+                                  
+                                </ul>
                             </li>
-                            <li><a href="#portaly">Дверные блоки без полотен (порталы)</a>
+                            <li>
+                                <a href="#uzly-shtangoderzhateli" >УЗЛЫ ШТАНГОДЕРЖАТЕЛИ</a>
+                                <ul class="nav">
+                                    <li><a href="#uzel--shd1-shd2">&#9999;&nbsp;Узел № ШД1;<br>Узел № ШД2; </a>
+                                    </li>
+                                  
+                                </ul>
                             </li>
-                            
-                            <li><a href="#sborochnye-shemy-polotna">Сборочно-монтажные схемы</a>
-                            </li>                         
+                            <li>
+                                <a href="#uzly-ekscentrikovye-styazhki-evrovinty" >УЗЛЫ ЭКСЦЕНТРИКОВЫЕ СТЯЖКИ, ЕВРОВИНТЫ</a>
+                                <ul class="nav">
+                                    <li><a href="#uzel--e1-evr">&#9999;&nbsp;Узел № Э1/16;<br>Узел № Э1/24;<br>Узел № Э2/16;<br>Узел № Э2/24;<br>Узел №Евр/16;<br>Узел №Евр/24</a>
+                                    </li>
+                                  
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#paneli-poyasa" >ПАНЕЛИ ПОЯСА</a>
+                                <ul class="nav">
+                                    <li><a href="#uzel--polup-15-30gr">&#9999;&nbsp;Узел № Полуп/15*30гр</a>
+                                    </li>
+                                  
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#uzly-ustanovki-ruchki" >УЗЛЫ УСТАНОВКИ РУЧКИ</a>
+                                <ul class="nav">
+                                    <li><a href="#uzel--ruch-1">&#9999;&nbsp;Узел № Руч/1</a>
+                                    </li>
+                                    <li><a href="#uzel--ruch-2">&#9999;&nbsp;Узел № Руч/2</a>
+                                    </li>
+                                  
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#uzly-podlozhka-montazhnaya" >УЗЛЫ ПОДЛОЖКА МОНТАЖНАЯ</a>
+                                <ul class="nav">
+                                    <li><a href="#uzel--pm-1">&#9999;&nbsp;Узел № ПМ/1</a>
+                                    </li> 
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#uzel-po-prisadke-paneli-poyasa-pod-samorez" >УЗЕЛ ПО ПРИСАДКЕ ПАНЕЛИ ПОЯСА ПОД САМОРЕЗ</a>
+                                <ul class="nav">
+                                    <li><a href="#uzel--ppp-1">&#9999;&nbsp;Узел № ППП/1</a>
+                                    </li> 
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#paz-nizhniy-razdvizhnaya-dver" >ПАЗ НИЖНИЙ РАЗДВИЖНАЯ ДВЕРЬ</a>
+                                <ul class="nav">
+                                    <li><a href="#uzel--pnrd-1">&#9999;&nbsp;Узел № ПНРД/1</a>
+                                    </li> 
+                                </ul>
+                            </li>
+                                                    
                         </ul>
                     </div>
                 </div><!-- боковое меню блоки дверные конец -->

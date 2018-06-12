@@ -356,11 +356,11 @@
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_1</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_2</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h2">Узел № Пл1/1/Х_2</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_3</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h3">Узел № Пл1/1/Х_3</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h1">Узел № Пл1/1/Х_4</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-1-h4">Узел № Пл1/1/Х_4</a>
                                     </li>
                                     <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--pl1-2-h1">Узел № Пл1/2/Х_1</a>
                                     </li>
@@ -399,7 +399,7 @@
                                 </ul>                             
                             </li>
 
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#" >УЗЛЫ ПОЛКИ</a>  
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzly-polki" >УЗЛЫ ПОЛКИ</a>  
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--p-4-6-8">Узел № П/4</a>
                                     </li>
@@ -468,7 +468,7 @@
                                 </ul>                             
                            </li>
 
-                           <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel-po-prisadke-paneli-poyasa-pod-samorez" >Узел по присадке панели пояса под саморез</a>  
+                           <li class="menu2"><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel-po-prisadke-paneli-poyasa-pod-samorez" >УЗЕЛ ПО ПРИСАДКЕ ПАНЕЛИ ПОЯСА ПОД САМОРЕЗ</a>  
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="izdeliya-standartnye-uzly.php#uzel--ppp-1">Узел № ППП/1</a>
                                     </li>
