@@ -28,8 +28,8 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <meta name="yandex-verification" content="07a17e6c1df2c2b2" />
     <title>500.СТП</title>
     <link href="./dist/css/bootstrap.css" rel="stylesheet">
-    <link href="./dist/css/docs.css?v=2" rel="stylesheet">
-    <link href="./dist/css/grid.css?v=1" rel="stylesheet">
+    <link href="./dist/css/docs.css?v=3" rel="stylesheet">
+    <link href="./dist/css/grid.css?v=3" rel="stylesheet">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
    
 <!-- <style>
@@ -5132,8 +5132,8 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script>
     <script src="./dist/js/application.js"></script> 
-    <script src="./dist/js/script.js?"></script>   
-    <script src="./dist/js/floating.js"></script> 
+    <script src="./dist/js/script.js?v=3"></script>   
+    <script src="./dist/js/floating.js?v=3"></script> 
     <!-- <script src="./dist/js/jquery.color.js"></script>  -->
     <!-- <script>
 // запретить клик
