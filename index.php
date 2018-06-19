@@ -1655,19 +1655,19 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-5000201-00-101-blok-dvernoy-tipovoy">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#">5000201-00_101 блок_дверной_типовой<span> <br>~5000201-00-101-blok-dvernoy-tipovoy</span></p>
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-blok-dvernoy-tipovoy">5000201-00_101 блок_дверной_типовой<span> <br>~5000201-00-101-blok-dvernoy-tipovoy</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-5000201-00-101-0201-korobka-bloka-dvernogo">
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#"><span>5000201-00_101_02.01 коробка_блока_дверного<br>~5000201-00-101-0201-korobka-bloka-dvernogo</span></p>
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-0201-korobka-bloka-dvernogo">5000201-00_101_02.01 коробка_блока_дверного<span><br>~5000201-00-101-0201-korobka-bloka-dvernogo</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-5000201-00-101-1001-dobor-bloka-dvernogo">
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#">5000201-00_101_10.01 добор_блока_дверного<span> <br>~5000201-00-101-1001-dobor-bloka-dvernogoм</span></p>
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-1001-dobor-bloka-dvernogoм">5000201-00_101_10.01 добор_блока_дверного<span> <br>~5000201-00-101-1001-dobor-bloka-dvernogoм</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1684,29 +1684,18 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite"  colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <TD class="mapsite"  colspan="2" id="flo-5000201-00-111-polotno-razdvizhnoe">                                                                            
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-111-polotno-razdvizhnoe">5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)<span> <br>~-5000201-00-111-polotno-razdvizhnoe</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                            <TD class="mapsite" id="flo-5000201-00-115-polotno-razdvizhnoe">
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-115-polotno-razdvizhnoe">5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)<span> <br>~5000201-00-115-polotno-razdvizhnoe</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                        <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
+                                                                               
                                                                     </TABLE>
                                                                 </TD>
                                                         </TR> 
@@ -1720,28 +1709,16 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p  data-img="./dist/images/no-foto.png"data-href="izdeliya-bloki-dvernye.php#">...<span> <br>~</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#">...<span> <br>~</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                        <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->    
                                                                     </TABLE>
                                                                 </TD>
                                                         </TR> 

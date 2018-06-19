@@ -198,20 +198,29 @@ include 'inc-left-side-menu-izdeliya.php';
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
 
 
-                        <h2 id="polotna-bez-falca">&nbsp;</h2>
-                        <h2 >Полотна без фальца</h2>
+                        <h2 id="5000201-00-101-blok-dvernoy-tipovoy">&nbsp;</h2>
+                        <h2 >5000201-00_101 блок_дверной_типовой</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
 
 
-                        <h2 id="polotna-s-falcem">&nbsp;</h2>
-                        <h2 >Полотна c фальцем</h2>
+                        <h2 id="5000201-00-101-0201-korobka-bloka-dvernogo">&nbsp;</h2>
+                        <h2 >5000201-00_101_02.01 коробка_блока_дверного</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
+
+                        <h2 id="5000201-00-101-1001-dobor-bloka-dvernogoм">&nbsp;</h2>
+                        <h2 >5000201-00_101_10.01 добор_блока_дверного</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
+                        
+
                     </article>
 
                     <article itemscope="" itemtype="http://schema.org/Article">
@@ -221,15 +230,15 @@ include 'inc-left-side-menu-izdeliya.php';
                         </div>
                         <p itemprop="description" class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sed cum vero facere quisquam iure veritatis laboriosam soluta optio quis ratione quam magni rerum aliquid doloremque commodi, possimus, sit incidunt.</p>
                         
-                        <h2 id="razdvizhnye-polotna-po-stene">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение по стене</h2>
+                        <h2 id="5000201-00-111-polotno-razdvizhnoe">&nbsp;</h2>
+                        <h2 >5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                          
-                        <h2 id="razdvizhnye-polotna-v-penal">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение в пенал</h2>
+                        <h2 id="5000201-00-115-polotno-razdvizhnoe">&nbsp;</h2>
+                        <h2 >5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
@@ -246,8 +255,9 @@ include 'inc-left-side-menu-izdeliya.php';
                     </article>
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
-                        <div class="page-header">
-                          <h1 itemprop="name" id="mayatnikovye-polotna">Дверные блоки с маятниковыми (барными) полотнами</h1>
+                        <div class="page-header" >
+                          <h2 id="mayatnikovye-polotna">&nbsp;</h2>
+                          <h1 itemprop="name">Дверные блоки с маятниковыми (барными) полотнами</h1>
                         </div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
@@ -307,21 +317,23 @@ include 'inc-left-side-menu-izdeliya.php';
                             </li>
                             <li><a href="#polotna">Дверные блоки с распашными полотнами </a>
                                 <ul class="nav">
-                                    <li><a href="#polotna-bez-falca">&#9999;&nbsp;Полотна без фальца</a>
+                                    <li><a href="#5000201-00-101-blok-dvernoy-tipovoy">&#9999;&nbsp;5000201-00_101 блок_дверной_типовой</a>
                                     </li>
-                                    <li><a href="#polotna-s-falcem">&#9999;&nbsp;Полотна с фальцем</a>
-                                    </li>                                   
+                                    <li><a href="#5000201-00-101-0201-korobka-bloka-dvernogo">&#9999;&nbsp;5000201-00_101_02.01 коробка_блока_дверного</a>
+                                    </li> 
+                                    <li><a href="#5000201-00-101-1001-dobor-bloka-dvernogoм">&#9999;&nbsp;5000201-00_101_10.01 добор_блока_дверного</a>
+                                    </li>                                  
                                 </ul>
                             </li>
                             <li>
                                 <a href="#razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</a>
                                 <ul class="nav">
-                                    <li><a href="#razdvizhnye-polotna-po-stene">&#9999;&nbsp;Полотна без складывания — раздвижение по стене</a>
+                                    <li><a href="#5000201-00-111-polotno-razdvizhnoe">&#9999;&nbsp;5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)</a>
                                     </li>
-                                    <li><a href="#razdvizhnye-polotna-v-penal">&#9999;&nbsp;Полотна без складывания — раздвижение в пенал</a>
+                                    <li><a href="#5000201-00-115-polotno-razdvizhnoe">&#9999;&nbsp;5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</a>
                                     </li>
-                                    <li><a href="#razdvizhnye-polotna-v-proeme">&#9999;&nbsp;Полотна без складывания — раздвижение в проеме</a>
-                                  </li>
+                                    <!-- <li><a href="#razdvizhnye-polotna-v-proeme">&#9999;&nbsp;Полотна без складывания — раздвижение в проеме</a>
+                                  </li> -->
                                 </ul>
                             </li>
                             <li><a href="#mayatnikovye-polotna">Дверные блоки с маятниковыми (барными) полотнами</a>

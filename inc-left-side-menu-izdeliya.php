@@ -42,20 +42,21 @@
                             </li>
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#polotna">ДВЕРНЫЕ БЛОКИ С РАСПАШНЫМИ ПОЛОТНАМИ</a>
                                 <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#polotna-bez-falca">Полотна без фальца</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-00-101-blok-dvernoy-tipovoy">5000201-00_101 блок_дверной_типовой</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#polotna-s-falcem" >Полотна с фальцем</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-00-101-0201-korobka-bloka-dvernogo">5000201-00_101_02.01 коробка_блока_дверного</a>
+                                    </li>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-00-101-1001-dobor-bloka-dvernogoм">5000201-00_101_10.01 добор_блока_дверного</a>
                                     </li>                                         
                                 </ul>
                             </li>
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna" >ДВЕРНЫЕ БЛОКИ С РАЗДВИЖНЫМИ ПОЛОТНАМИ</a>
                                 <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna-po-stene" >Полотна без складывания — раздвижение по стене</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-00-111-polotno-razdvizhnoe">С раздвижным полотном (раздвижение в пенал)</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna-v-penal">Полотна без складывания — раздвижение в пенал</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-00-115-polotno-razdvizhnoe">С раздвижным полотном (раздвижение по стене)</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna-v-proeme">Полотна без складывания — раздвижение в проеме</a>
-                                    </li>                                           
+                                                                              
                                 </ul>
                             </li>
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#mayatnikovye-polotna" >ДВЕРНЫЕ БЛОКИ С МАЯТНИКОВЫМИ (БАРНЫМИ) ПОЛОТНАМИ</a>
@@ -63,9 +64,7 @@
                                     <li><a class="list-group-item sub" href="#" >...</a>
                                     </li>
                                     <li><a class="list-group-item sub" href="#" >...</a>
-                                    </li>
-                                    <li><a class="list-group-item sub" href="#" >...</a>
-                                    </li>                                           
+                                    </li>                                                                               
                                 </ul>
                             </li>
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#portaly">ДВЕРНЫЕ БЛОКИ БЕЗ ПОЛОТНН (ПОРТАЛЫ)</a>

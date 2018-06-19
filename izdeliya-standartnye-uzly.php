@@ -473,10 +473,12 @@ include 'inc-left-side-menu-izdeliya.php';
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header">
-                          <h1 itemprop="name" id="УЗЛЫ УСТАНОВКИ РУЧКИ"</h1>
+                        
+                          <h1 itemprop="name" id="uzly-ustanovki-ruchki" >УЗЛЫ УСТАНОВКИ РУЧКИ</h1>
                         </div>
                         <h2 >&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" >
+                        
                         <h4  id="uzel--ruch-1">Узел № Руч/1</h4>
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
