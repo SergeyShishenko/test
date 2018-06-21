@@ -166,6 +166,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                 </p>
                                 <div class="overlay"></div>
                         </div>
+
                         <div class="bs-callout bs-callout-warning cont" ><h4>Полотно блока дверного с зеркалом(фацет)
                                 <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr> виды-DE</h4>
                                                         
@@ -184,96 +185,233 @@ include 'inc-left-side-menu-izdeliya.php';
 
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
-                        <div class="page-header">
+                        <div class="page-header cont">
                           <h1 itemprop="name" id="polotna">Дверные блоки с распашными полотнами</h1>
-                        </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt harum minus possimus, tempore suscipit fugit nostrum enim hic illum tempora assumenda nemo, vero officiis asperiores, fuga aut. Ex, ratione!</p>
-                        <div class="bs-callout bs-callout-warning" id="jquery-required">
-                          <h4>Lorem ipsum dolor</h4>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
-
+                        
+                         </div>
                         <h2 id="5000201-00-101-blok-dvernoy-tipovoy">&nbsp;</h2>
-                        <h2 >5000201-00_101 блок_дверной_типовой</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101 блок_дверной_типовой</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_1.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_101 блок_дверной_типовой"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101 блок_дверной_типовой</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_2.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_101 блок_дверной_типовой"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
+                        
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101 блок_дверной_типовой</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_3.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_101 блок_дверной_типовой"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
 
                         <h2 id="5000201-00-101-0201-korobka-bloka-dvernogo">&nbsp;</h2>
-                        <h2 >5000201-00_101_02.01 коробка_блока_дверного</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101_02.01 коробка_блока_дверного</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-101-0201-korobka-bloka-dvernogo_1.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_101_02.01 коробка_блока_дверного"
+                                    data-dwg="non"
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
 
-                        <h2 id="5000201-00-101-1001-dobor-bloka-dvernogoм">&nbsp;</h2>
-                        <h2 >5000201-00_101_10.01 добор_блока_дверного</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        
-
+                        <h2 id="5000201-00-101-1001-dobor-bloka-dvernogo">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101_10.01 добор_блока_дверного</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-101-1001-dobor-bloka-dvernogo_1.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_101_10.01 добор_блока_дверного"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101_10.01 добор_блока_дверного</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-101-1001-dobor-bloka-dvernogo_2.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_101_10.01 добор_блока_дверного"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>                     
+                    
+                      </section>
                     </article>
+
+                  
 
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</h1>
                         </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sed cum vero facere quisquam iure veritatis laboriosam soluta optio quis ratione quam magni rerum aliquid doloremque commodi, possimus, sit incidunt.</p>
                         
                         <h2 id="5000201-00-111-polotno-razdvizhnoe">&nbsp;</h2>
-                        <h2 >5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                       
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-111-polotno-razdvizhnoe_1.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-111-polotno-razdvizhnoe_2.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>  
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-111-polotno-razdvizhnoe_3.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>   
                          
                         <h2 id="5000201-00-115-polotno-razdvizhnoe">&nbsp;</h2>
-                        <h2 >5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
-                        <h2 id="razdvizhnye-polotna-v-proeme">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение в проеме</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-115-polotno-razdvizhnoe_1.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-115-polotno-razdvizhnoe_2.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-115-polotno-razdvizhnoe_3.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-115-polotno-razdvizhnoe_4.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>                        
 
                       </section>
                     </article>
+
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header" >
                           <h2 id="mayatnikovye-polotna">&nbsp;</h2>
                           <h1 itemprop="name">Дверные блоки с маятниковыми (барными) полотнами</h1>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
                       </section>
                     </article>
+
                     <article itemscope="" itemtype="http://schema.org/Article">
                         <section itemprop="articleBody" id="bs-docs-section">
                           <div class="page-header">
                             <h1 itemprop="name" id="portaly">Дверные блоки без полотен (порталы)</h1>
                           </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
+                          <h2 id="5000201-00-105-portal-tipovoy">&nbsp;</h2>
+                        
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_105 портал типовой</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-105-portal-tipovoy_1.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_105 портал типовой"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_105 портал типовой</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-00-105-portal-tipovoy_2.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-00_105 портал типовой"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div> 
                         </section>
                       </article>
                     <article itemscope="" itemtype="http://schema.org/Article">
@@ -281,19 +419,114 @@ include 'inc-left-side-menu-izdeliya.php';
                           <div class="page-header">
                             <h1 itemprop="name" id="sborochnye-shemy-polotna">Сборочно-монтажные схемы</h1>
                           </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
+
+                          <h2 id="5000201-99-101-shema-montazha-dvernogo-bloka">&nbsp;</h2>
+                        
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_101 схема монтажа дверного блока</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-99-101-shema-montazha-dvernogo-bloka_1.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-99_101 схема монтажа дверного блока"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_101 схема монтажа дверного блока</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-99-101-shema-montazha-dvernogo-bloka_2.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-99_101 схема монтажа дверного блока"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
+
+                         <h2 id="5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal">&nbsp;</h2>
+                        
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_1.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_2.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_3.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_4.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
+
+                         <h2 id="5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene">&nbsp;</h2>
+                        
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_105 схема монтажа ДБ полотно раздвижное по стене</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene_1.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-99_105 схема монтажа ДБ полотно раздвижное по стене"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
+                        <h2 id="5000201-99-107-shema-montazha-sandrikov-i-framug">&nbsp;</h2>
+                        
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_107 схема монтажа сандриков и фрамуг</h4>
+                                                        
+                            <p><a>
+                                <img src="./dist/images/5000201-99-107-shema-montazha-sandrikov-i-framug_1.png" class="center-block img-rounded img-thumbnail"
+                                    data-toggle="modal"
+                                    data-target="#myModal"                                                     
+                                    alt="5000201-99_107 схема монтажа сандриков и фрамуг"
+                                    data-dwg=""
+                                    ></a>
+                                </p>
+                                <div class="overlay"></div>
+                        </div>
+                          
                         </section>
                     </article>
                 </div> <!-- main  -->
@@ -321,7 +554,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                     </li>
                                     <li><a href="#5000201-00-101-0201-korobka-bloka-dvernogo">&#9999;&nbsp;5000201-00_101_02.01 коробка_блока_дверного</a>
                                     </li> 
-                                    <li><a href="#5000201-00-101-1001-dobor-bloka-dvernogoм">&#9999;&nbsp;5000201-00_101_10.01 добор_блока_дверного</a>
+                                    <li><a href="#5000201-00-101-1001-dobor-bloka-dvernogo">&#9999;&nbsp;5000201-00_101_10.01 добор_блока_дверного</a>
                                     </li>                                  
                                 </ul>
                             </li>
@@ -331,17 +564,38 @@ include 'inc-left-side-menu-izdeliya.php';
                                     <li><a href="#5000201-00-111-polotno-razdvizhnoe">&#9999;&nbsp;5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)</a>
                                     </li>
                                     <li><a href="#5000201-00-115-polotno-razdvizhnoe">&#9999;&nbsp;5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</a>
+                                    </li>                                   
+                                </ul>
+                            </li>
+                            <li><a href="#mayatnikovye-polotna">Дверные блоки с маятниковыми (барными) полотнами</a>
+                                <!-- <ul class="nav">
+                                    <li><a href="#">&#9999;&nbsp;...</a>
+                                    </li>  
+                                </ul> -->
+                            </li>
+                            <li><a href="#portaly">Дверные блоки без полотен (порталы)</a>
+                            <ul class="nav">
+                                    <li><a href="#5000201-00-105-portal-tipovoy">&#9999;&nbsp;5000201-00_105 портал типовой</a>
                                     </li>
+                                    
                                     <!-- <li><a href="#razdvizhnye-polotna-v-proeme">&#9999;&nbsp;Полотна без складывания — раздвижение в проеме</a>
                                   </li> -->
                                 </ul>
                             </li>
-                            <li><a href="#mayatnikovye-polotna">Дверные блоки с маятниковыми (барными) полотнами</a>
-                            </li>
-                            <li><a href="#portaly">Дверные блоки без полотен (порталы)</a>
-                            </li>
                             
                             <li><a href="#sborochnye-shemy-polotna">Сборочно-монтажные схемы</a>
+                            <ul class="nav">
+                                    <li><a href="#5000201-99-101-shema-montazha-dvernogo-bloka">&#9999;&nbsp;5000201-99_101 схема монтажа дверного блока</a>
+                                    </li>
+                                    <li><a href="#5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal">&#9999;&nbsp;5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал</a>
+                                    </li>
+                                    <li><a href="#5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene">&#9999;&nbsp;5000201-99_105 схема монтажа ДБ полотно раздвижное по стене</a>
+                                    </li>
+                                    <li><a href="#5000201-99-107-shema-montazha-sandrikov-i-framug">&#9999;&nbsp;5000201-99_107 схема монтажа сандриков и фрамуг</a>
+                                    </li>
+                                    <!-- <li><a href="#razdvizhnye-polotna-v-proeme">&#9999;&nbsp;Полотна без складывания — раздвижение в проеме</a>
+                                  </li> -->
+                                </ul>
                             </li>                         
                         </ul>
                     </div>

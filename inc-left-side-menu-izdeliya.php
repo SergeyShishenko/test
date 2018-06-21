@@ -46,7 +46,7 @@
                                     </li>
                                     <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-00-101-0201-korobka-bloka-dvernogo">5000201-00_101_02.01 коробка_блока_дверного</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-00-101-1001-dobor-bloka-dvernogoм">5000201-00_101_10.01 добор_блока_дверного</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-00-101-1001-dobor-bloka-dvernogo">5000201-00_101_10.01 добор_блока_дверного</a>
                                     </li>                                         
                                 </ul>
                             </li>
@@ -63,28 +63,26 @@
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="#" >...</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="#" >...</a>
-                                    </li>                                                                               
+                                                                                                                  
                                 </ul>
                             </li>
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#portaly">ДВЕРНЫЕ БЛОКИ БЕЗ ПОЛОТНН (ПОРТАЛЫ)</a>
                                 <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-00-105-portal-tipovoy">5000201-00_105 портал типовой</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="#" >...</a>
-                                    </li>
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>                                        
+                                                                         
                                 </ul>
                             </li>
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#sborochnye-shemy-polotna">СБОРОЧНО МОНТАЖНЫЕ СХЕМЫ</a>
                                 <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-99-101-shema-montazha-dvernogo-bloka">5000201-99_101 схема монтажа дверного блока</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal">5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>                                       
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene">5000201-99_105 схема монтажа ДБ полотно раздвижное по стене</a>
+                                    </li> 
+                                    <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#5000201-99-107-shema-montazha-sandrikov-i-framug">5000201-99_107 схема монтажа сандриков и фрамуг</a>
+                                    </li>                                      
                                 </ul>
                             </li>                                    
                         </ul>

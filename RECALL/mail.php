@@ -50,9 +50,9 @@ $mail->Subject = 'Сообщение с сайта 500СТП';
 $mail->Body = $message;
 
 if( $mail->send() ){
-	echo '<p style="color: green;padding: 6px;">Ваше сообщение отправлено</p>';
+	echo '<p style="color: green; ">Ваше сообщение отправлено!</p>';
 }else{
-	echo '<p style="color: red;">Ошибка!</p>';
+	echo '<p style="color: red; padding: 6px;">Ошибка!</p>';
 	echo '<p style="color: red;">'.$mail->ErrorInfo.'</p>';
 	
 }

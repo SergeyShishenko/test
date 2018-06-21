@@ -22,7 +22,7 @@
              </div>
              <div class="modal-footer">
                   <button type="submit" id="submit" class="btn btn-primary " style="float:left;">Отправить</button>                         
-                  <div style="float:left;"></div> 
+                  <div style="float:left; padding: 6px;"></div> 
                  <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
                  
              </div>
