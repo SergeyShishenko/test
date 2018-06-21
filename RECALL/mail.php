@@ -1,7 +1,9 @@
 <?php
 
-$message = "Имя: {$_POST['name']}<br>"; // добавляем имя в текст
-$message .= "Телефон: {$_POST['phone']}"; // добавляем телефон в текст
+// $message = "Имя: {$_POST['name']}<br>"; // добавляем имя в текст
+// $message .= "Телефон: {$_POST['phone']}<br><br>"; // добавляем телефон в текст
+// $message .= "{$_POST['message']}"; // добавляем сообщение в текст
+$message = "{$_POST['message']}"; // добавляем сообщение в текст
 
  require 'phpmailer/PHPMailerAutoload.php';
 //require 'class.phpmailer.php';
@@ -20,7 +22,7 @@ $mail->SMTPSecure = 'ssl'; //'tls'; //
 $mail->Port = '465';
 $mail->CharSet = 'UTF-8';
 $mail->From = 'info@500stp.website';//Ваш Email
-//$mail->FromName = 'Сергей';
+$mail->FromName = '500СТП';
 $mail->addAddress('serge-meb@mail.ru');// Email получателя
 
 $mail->SMTPOptions = array(
@@ -44,11 +46,11 @@ $mail->SMTPOptions = array(
 
 // Письмо
 $mail->isHTML(true);
-$mail->Subject = 'Заказ обратного звонка';
+$mail->Subject = 'Сообщение с сайта 500СТП';
 $mail->Body = $message;
 
 if( $mail->send() ){
-	echo '<p style="color: green;">Ваше сообщение отправлено</p>';
+	echo '<p style="color: green;padding: 6px;">Ваше сообщение отправлено</p>';
 }else{
 	echo '<p style="color: red;">Ошибка!</p>';
 	echo '<p style="color: red;">'.$mail->ErrorInfo.'</p>';

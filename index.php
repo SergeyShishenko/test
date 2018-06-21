@@ -32,12 +32,12 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <link href="./dist/css/grid.css?v=3" rel="stylesheet">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
    
-<!-- <style>
+<style>
 /* запрет перехода по ссылкам */ 
- * {`
+ /* * {
   pointer-events: none;
-} -->
-
+}  */
+.modal-open{overflow:auto;}
 </style>
 
    
@@ -103,7 +103,16 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                     
                   </div> <!-- /container -->
     </header>
-
+    <?php 
+    include 'inc-header-send-modal.php';
+    ?>
+    <div class="" style="position:fixed; left:0; top:150px; ">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
+                        <span class=" glyphicon glyphicon-envelope" style="color: #46b8da; "></span>
+                    </button>
+               </div>
+               
     <article itemscope="" itemtype="http://schema.org/WebPage" id="main-izdeliya">
 
         <div class="container bs-docs-container">
@@ -117,6 +126,8 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                     <h1>Карта сайта</h1> 
             
                 </div>
+
+                
   
 
 
@@ -5106,6 +5117,29 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <script src="./dist/js/application.js"></script> 
     <script src="./dist/js/script.js?v=3"></script>   
     <script src="./dist/js/floating.js?v=3"></script> 
+    <!-- <script>
+$(function(){
+	$('#recall').submit(function(e){
+		e.preventDefault();
+		var data = $(this).serialize();
+		$.ajax({
+			url: './RECALL/mail.php',
+			type: 'POST',
+			data: data,
+			beforeSend: function(){
+				$('#submit').next().text('Отправляю...');
+			},
+			success: function(res){
+				$('#recall').find('input').val('');
+				$('#submit').next().html(res);
+			},
+			error: function(){
+				alert('Ошибка!');
+			}
+		});
+	});
+});
+	</script> -->
     <!-- <script src="./dist/js/jquery.color.js"></script>  -->
     <!-- <script>
 // запретить клик
