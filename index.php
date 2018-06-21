@@ -103,16 +103,16 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                     
                   </div> <!-- /container -->
     </header>
+  
+    <div  style="position:fixed; left:0; top:150px; ">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
+            <span class=" glyphicon glyphicon-envelope" style="color: #46b8da; "></span>
+        </button>
+    </div>
     <?php 
     include 'inc-header-send-modal.php';
-    ?>
-    <div class="" style="position:fixed; left:0; top:150px; ">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
-                        <span class=" glyphicon glyphicon-envelope" style="color: #46b8da; "></span>
-                    </button>
-               </div>
-               
+    ?>        
     <article itemscope="" itemtype="http://schema.org/WebPage" id="main-izdeliya">
 
         <div class="container bs-docs-container">
@@ -5108,14 +5108,14 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <footer class="bs-footer"  id="footer7">
         <div class="container">
             <p class="text-center">Сайт был создан проектным подразделением компании "София-Декор" <a href="http://www.sofia-decor.ru">(http://www.sofia-decor.ru)</a> под руководством Черкашина Д.В.</p>
-            <p class="text-center">Разработчик Шишенко С.В. <a href="mailto:serge-meb@mail.ru?subject=Сайт 500.СТП"> (отправить вопрос или предложение)</a></p>
+            <p class="text-center">Разработчик Шишенко С.В. </p>
             <p><button type="button" class="btn btn-default center" onclick="location.href='exit.php';">  <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Выйти</button></p>
         </div>
     </footer> 
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script>
     <script src="./dist/js/application.js"></script> 
-    <script src="./dist/js/script.js?v=3"></script>   
+    <script src="./dist/js/script.js?v=4"></script>   
     <script src="./dist/js/floating.js?v=3"></script> 
     <!-- <script>
 $(function(){

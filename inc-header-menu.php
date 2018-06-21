@@ -82,4 +82,13 @@
         </div><!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
-';?>
+    <div  style="position:fixed; left:0; top:150px; ">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
+            <span class=" glyphicon glyphicon-envelope" style="color: #46b8da; "></span>
+        </button>
+    </div>
+';
+include 'inc-header-send-modal.php';
+?>
+
