@@ -182,6 +182,16 @@ $(function() {
 // });
 
 
+// $(function(){
+    $('[data-href*=".php"]').not(":contains(???)").each(function(){
+        // выведем содержимое текущего элемента в консоль
+        // console.log($(this).parent().text());
+        $(this).parent().css( "color", "Blue" );
+      });
+    
+//   });
+
+
 
 
 $(function(){

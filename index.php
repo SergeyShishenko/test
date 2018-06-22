@@ -192,12 +192,12 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-shtapik-prizhimnoy-dlya-fasada">
-                                                                            <p data-img="./dist/images/no-foto.png"  data-href="detali-profili.php#shtapiki">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~- shtapik-prizhimnoy-dlya-fasada</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png"  data-href="">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~- shtapik-prizhimnoy-dlya-fasada</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-shtapik">
-                                                                            <p data-img="./dist/images/no-foto.png"  data-href="detali-profili.php#shtapiki">Пр_№101/26/17 штапик <span><br>~-pr-1012617-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png"  data-href="">Пр_№101/26/17 штапик <span><br>~-pr-1012617-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
@@ -207,152 +207,152 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki" >Пр_№101/30/20 штапик <span><br>~-pr-1013020-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="" >Пр_№101/30/20 штапик <span><br>~-pr-1013020-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki" >Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~-pr-1012314-shtapik-dlya-fasadov-steklovitrazh</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="" >Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~-pr-1012314-shtapik-dlya-fasadov-steklovitrazh</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№102/19/10.5  штапик 1<span><br>~-pr-10219105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№102/19/10.5  штапик 1<span><br>~-pr-10219105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№103 штапик 2<span><br>~-pr-103-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№103 штапик 2<span><br>~-pr-103-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№104/7/5 штапик 3<span><br>~-pr-10475-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№104/7/5 штапик 3<span><br>~-pr-10475-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№105/13/10.5 штапик 4<span><br>~-pr-10513105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№105/13/10.5 штапик 4<span><br>~-pr-10513105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№105/19.5/17 штапик 5<span><br>~-pr-10519517-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№105/19.5/17 штапик 5<span><br>~-pr-10519517-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№106 раскладка 6<span><br>~-pr-106-raskladka</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№106 раскладка 6<span><br>~-pr-106-raskladka</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№108 раскладка 7<span><br>~-pr-108-raskladka</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№108 раскладка 7<span><br>~-pr-108-raskladka</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№111 монтажный 8<span><br>~-pr-111-montazhnyy</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№111 монтажный 8<span><br>~-pr-111-montazhnyy</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№112 штапик 9<span><br>~-pr-112-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№112 штапик 9<span><br>~-pr-112-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№113 штапик 10<span><br>~-pr-113-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№113 штапик 10<span><br>~-pr-113-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№126 нащельник на двустворчатую дверь 11<span><br>~-pr-126-nashchelnik-na-dvustvorchatuyu-dver</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№126 нащельник на двустворчатую дверь 11<span><br>~-pr-126-nashchelnik-na-dvustvorchatuyu-dver</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№157 раскладка 12<span><br>~-pr-157-raskladka</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№157 раскладка 12<span><br>~-pr-157-raskladka</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">Пр_№157/МЕТ раскладка 13<span><br>~-pr-157met-raskladka</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№157/МЕТ раскладка 13<span><br>~-pr-157met-raskladka</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <!-- <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?14??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?14??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?15??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?15??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?16??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?16??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?17??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?17??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?18??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?18??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?19??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?19??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?20??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?20??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?21??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?21??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?22??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?22??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?23??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?23??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?24??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?24??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?25??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?25??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?26??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?26??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="detali-profili.php#shtapiki">?27??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?27??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
                                                                     </TR>                                                                       -->
                                                                                        
@@ -1720,13 +1720,13 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-">                                                                            
-                                                                                <p  data-img="./dist/images/no-foto.png"data-href="izdeliya-bloki-dvernye.php#">...<span> <br>~</span></p>
+                                                                                <p  data-img="./dist/images/no-foto.png"data-href="izdeliya-bloki-dvernye.php#">???<span> <br>~</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-">
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#">...<span> <br>~</span></p>
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#">???<span> <br>~</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->    
@@ -3047,7 +3047,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-net-informacii-1">                                                                            
-                                                                                <p data-href="shablony-dokumentov-shtampy-chertezhey.php" data-img="./dist/images/no-foto.png">Нет информации<span> <br>~net-informacii-1</span></p>
+                                                                                <p data-href="shablony-dokumentov-shtampy-chertezhey.php" data-img="./dist/images/no-foto.png">???<span> <br>~net-informacii-1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                       
@@ -5103,7 +5103,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <script src="./dist/js/bootstrap.js"></script>
     <script src="./dist/js/application.js"></script> 
     <script src="./dist/js/script.js?v=6"></script>   
-    <script src="./dist/js/floating.js?v=3"></script> 
+    <script src="./dist/js/floating.js?v=4"></script> 
    
     <!-- <script src="./dist/js/jquery.color.js"></script>  -->
     <!-- <script>
