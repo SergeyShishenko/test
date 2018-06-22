@@ -1218,7 +1218,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="Камни гладкие" class="hover mapsite" id="footer68" >
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating69">Камни гладкие <span><br>~- kamni-gladkie</span></p> 
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating69">Камни гладкие <span><br>~- kamni-gladkie</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -1270,7 +1270,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="Каталог резьбы" class="hover mapsite" id="footer70">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating71">Каталог резьбы <span> <br>~-katalog-rezby</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating71">Каталог резьбы <span> <br>~-katalog-rezby</span></p>
                                                             </TD>                                                                            
                                                             <TD >
                                                                 <TABLE >                                                                                          
@@ -1304,7 +1304,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="Каталог лепнины" class="hover mapsite" id="footer71" >
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating72">Каталог лепнины <span> <br>~-katalog-lepniny</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating72">Каталог лепнины <span> <br>~-katalog-lepniny</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -1338,7 +1338,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="Модели, УП, наработки" class="hover mapsite" id="footer72">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating73">Модели, УП, наработки <span> <br>~-modeli-up-narabotki</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating73">Модели, УП, наработки <span> <br>~-modeli-up-narabotki</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -1372,7 +1372,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="Старый архив резьб" class="hover mapsite" id="footer73">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating74">Старый архив резьб <span> <br>~-staryy-arhiv-rezb</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating74">Старый архив резьб <span> <br>~-staryy-arhiv-rezb</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -1417,7 +1417,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="Столб проходной №1" class="hover mapsite" id="footer74">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating75">Столб проходной №1 <span> <br>~-ctolb-prohodnoy-1</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating75">Столб проходной №1 <span> <br>~-ctolb-prohodnoy-1</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -1439,7 +1439,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->  
                                                         <TR>
                                                             <TD data-tooltip="Столб проходной №2" class="hover mapsite" id="footer75">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating76">Столб проходной №2 <span> <br>~-ctolb-prohodnoy-2</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating76">Столб проходной №2 <span> <br>~-ctolb-prohodnoy-2</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -1469,7 +1469,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="Каталог фрез" class="hover mapsite" id="footer76">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating77">Каталог фрез<span> <br>~-katalog-frez</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating77">Каталог фрез<span> <br>~-katalog-frez</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -1497,7 +1497,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ПРАВИЛО НУМЕРОВАНИЯ-ИМЕНОВАНИЯ ФРЕЗ" class="hover mapsite" id="footer77">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating78">ПРАВИЛО НУМЕРОВАНИЯ-ИМЕНОВАНИЯ ФРЕЗ<span> <br>~-pravilo-numerovaniya-imenovaniya-frez</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating78">ПРАВИЛО НУМЕРОВАНИЯ-ИМЕНОВАНИЯ ФРЕЗ<span> <br>~-pravilo-numerovaniya-imenovaniya-frez</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -1534,7 +1534,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="Каталог типовых пазов" class="hover mapsite" id="footer78">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating79">Каталог типовых пазов<span> <br>~-katalog-tipovyh-pazov</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating79">Каталог типовых пазов<span> <br>~-katalog-tipovyh-pazov</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -1562,7 +1562,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="Пазы стандартные" class="hover mapsite" id="footer79">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating80">Пазы стандартные<span> <br>~-pazy-standartnye</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating80">Пазы стандартные<span> <br>~-pazy-standartnye</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -1612,44 +1612,44 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                             <TR>
                                                 <TD data-tooltip="БЛОКИ ДВЕРНЫЕ" class="hover mapsite " id="footer14">
                                                     
-                                                    <p data-href="izdeliya-bloki-dvernye.php"  data-img="./dist/images/no-foto.png" id="floating15">БЛОКИ ДВЕРНЫЕ <span><br>~- izdeliya-bloki-dvernye</span></p></TD>
+                                                    <p data-href="izdeliya-bloki-dvernye.php"  data-img="./dist/images/spisok-poloten-dvernyh-blokov-tipovyh-0.png" id="floating15">БЛОКИ ДВЕРНЫЕ <span><br>~- izdeliya-bloki-dvernye</span></p></TD>
                                                 <TD>
                                                     <TABLE >
                                                                                                                             
                                                         <TR>
                                                             <TD data-tooltip="Конструкции дверных блоков" class="hover mapsite" id="footer80" >
-                                                                    <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating81" data-href="izdeliya-bloki-dvernye.php#dveri-konstrukcii">Конструкции дверных блоков <span><br>~- dveri-konstrukcii</span></p>
-                                                                    <p data-href="izdeliya-bloki-dvernye.php#dveri-konstrukcii" data-img="./dist/images/no-foto.png" class="KEYWORDS">Дверные блоки</p> 
+                                                                    <p  data-img="./dist/images/spisok-poloten-dvernyh-blokov-tipovyh-0.png" id="floating81" data-href="izdeliya-bloki-dvernye.php#dveri-konstrukcii">Конструкции дверных блоков <span><br>~- dveri-konstrukcii</span></p>
+                                                                    <p data-href="izdeliya-bloki-dvernye.php#dveri-konstrukcii" data-img="./dist/images/spisok-poloten-dvernyh-blokov-tipovyh-0.png" class="KEYWORDS">Дверные блоки</p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite"  colspan="2" id="flo-polotno-bloka-dvernogo-gluhoe-pco">                                                                            
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-gluhoe-pco">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-gluhoe-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-gluhoe-pco">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-polotno-bloka-dvernogo-so-steklom-pco">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklom-pco">5000201_00_100_01.11 полотно блока дверного со стеклом ПЦО <span> <br>~polotno-bloka-dvernogo-so-steklom-pco</span></p>
+                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-so-steklom-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklom-pco">5000201_00_100_01.11 полотно блока дверного со стеклом ПЦО <span> <br>~polotno-bloka-dvernogo-so-steklom-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-polotno-bloka-dvernogo-so-steklomfacet-pco">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklomfacet-pco">5000201_00_100_01.13 полотно блока дверного со стеклом(фацет) ПЦО<span> <br>~-arhiv-profiley</span></p>
+                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-so-steklomfacet-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklomfacet-pco">5000201_00_100_01.13 полотно блока дверного со стеклом(фацет) ПЦО<span> <br>~-arhiv-profiley</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-polotno-bloka-dvernogo-s-zerkalom-pco">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalom-pco">5000201_00_100_01.21 полотно блока дверного с зеркалом ПЦО<span> <br>~polotno-bloka-dvernogo-s-zerkalom-pco</span></p>
+                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-s-zerkalom-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalom-pco">5000201_00_100_01.21 полотно блока дверного с зеркалом ПЦО<span> <br>~polotno-bloka-dvernogo-s-zerkalom-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-polotno-bloka-dvernogo-s-zerkalomfacet-pco">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalomfacet-pco">5000201_00_100_01.23 полотно блока дверного с зеркалом(фацет) ПЦО<span> <br>~polotno-bloka-dvernogo-s-zerkalomfacet-pco</span></p>
+                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-s-zerkalomfacet-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalomfacet-pco">5000201_00_100_01.23 полотно блока дверного с зеркалом(фацет) ПЦО<span> <br>~polotno-bloka-dvernogo-s-zerkalomfacet-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->         
@@ -1659,26 +1659,26 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="С РАСПАШНЫМИ ПОЛОТНАМИ" class="hover mapsite" id="footer81" >
-                                                                    <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating82" data-href="izdeliya-bloki-dvernye.php#polotna">С РАСПАШНЫМИ ПОЛОТНАМИ<span><br>~polotna</span></p>
+                                                                    <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_1.png" id="floating82" data-href="izdeliya-bloki-dvernye.php#polotna">С РАСПАШНЫМИ ПОЛОТНАМИ<span><br>~polotna</span></p>
                                                                     <!-- <p data-img="./dist/images/no-foto.png" class="KEYWORDS" data-href="">Дверные блоки</p>   -->
                                                             </TD>                                                                            
                                                             <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-5000201-00-101-blok-dvernoy-tipovoy">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-blok-dvernoy-tipovoy">5000201-00_101 блок_дверной_типовой<span> <br>~5000201-00-101-blok-dvernoy-tipovoy</span></p>
+                                                                                <p data-img="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-blok-dvernoy-tipovoy">5000201-00_101 блок_дверной_типовой<span> <br>~5000201-00-101-blok-dvernoy-tipovoy</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-5000201-00-101-0201-korobka-bloka-dvernogo">
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-0201-korobka-bloka-dvernogo">5000201-00_101_02.01 коробка_блока_дверного<span><br>~5000201-00-101-0201-korobka-bloka-dvernogo</span></p>
+                                                                                <p data-img="./dist/images/5000201-00-101-0201-korobka-bloka-dvernogo_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-0201-korobka-bloka-dvernogo">5000201-00_101_02.01 коробка_блока_дверного<span><br>~5000201-00-101-0201-korobka-bloka-dvernogo</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-5000201-00-101-1001-dobor-bloka-dvernogo">
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-1001-dobor-bloka-dvernogoм">5000201-00_101_10.01 добор_блока_дверного<span> <br>~5000201-00-101-1001-dobor-bloka-dvernogoм</span></p>
+                                                                                <p data-img="./dist/images/5000201-00-101-1001-dobor-bloka-dvernogo_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-1001-dobor-bloka-dvernogoм">5000201-00_101_10.01 добор_блока_дверного<span> <br>~5000201-00-101-1001-dobor-bloka-dvernogoм</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1689,20 +1689,20 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="С РАЗДВИЖНЫМИ ПОЛОТНАМИ" class="hover mapsite" id="footer82" >
-                                                                    <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating83" data-href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna">С РАЗДВИЖНЫМИ ПОЛОТНАМИ<span><br>~razdvizhnye-polotna</span></p>
+                                                                    <p   data-img="./dist/images/5000201-00-111-polotno-razdvizhnoe_1.png" id="floating83" data-href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna">С РАЗДВИЖНЫМИ ПОЛОТНАМИ<span><br>~razdvizhnye-polotna</span></p>
                                                                     <!-- <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png" class="KEYWORDS">Дверные блоки</p>   -->
                                                             </TD>                                                                            
                                                             <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-5000201-00-111-polotno-razdvizhnoe">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-111-polotno-razdvizhnoe">5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)<span> <br>~-5000201-00-111-polotno-razdvizhnoe</span></p>
+                                                                                <p data-img="./dist/images/5000201-00-111-polotno-razdvizhnoe_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-111-polotno-razdvizhnoe">5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)<span> <br>~-5000201-00-111-polotno-razdvizhnoe</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-5000201-00-115-polotno-razdvizhnoe">
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-115-polotno-razdvizhnoe">5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)<span> <br>~5000201-00-115-polotno-razdvizhnoe</span></p>
+                                                                                <p data-img="./dist/images/5000201-00-115-polotno-razdvizhnoe_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-115-polotno-razdvizhnoe">5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)<span> <br>~5000201-00-115-polotno-razdvizhnoe</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
@@ -1713,7 +1713,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="С МАЯТНИКОВЫМИ ПОЛОТНАМИ" class="hover mapsite" id="footer83" >
-                                                                    <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating84" data-href="izdeliya-bloki-dvernye.php#mayatnikovye-polotna">С МАЯТНИКО<wbr>ВЫМИ ПОЛОТНАМИ<span><br>~mayatnikovye-polotna</span></p>
+                                                                    <p data-img="./dist/images/no-foto.png" id="floating84" data-href="izdeliya-bloki-dvernye.php#mayatnikovye-polotna">С МАЯТНИКО<wbr>ВЫМИ ПОЛОТНАМИ<span><br>~mayatnikovye-polotna</span></p>
                                                                     <!-- <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png" class="KEYWORDS">Дверные блоки</p>   -->
                                                             </TD>                                                                            
                                                             <TD>
@@ -1736,70 +1736,57 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="БЕЗ ПОЛОТЕН (ПОРТАЛЫ)" class="hover mapsite" id="footer84" >
-                                                                    <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating85" data-href="izdeliya-bloki-dvernye.php#portaly">БЕЗ ПОЛОТЕН (ПОРТАЛЫ)<span><br>~portaly</span></p>
+                                                                    <p   data-img="./dist/images/5000201-00-105-portal-tipovoy_1.png" id="floating85" data-href="izdeliya-bloki-dvernye.php#portaly">БЕЗ ПОЛОТЕН (ПОРТАЛЫ)<span><br>~portaly</span></p>
                                                                     <!-- <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png" class="KEYWORDS">Дверные блоки</p>   -->
                                                             </TD>                                                                            
                                                             <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite"  colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <TD class="mapsite"  colspan="2" id="flo-5000201-00-105-portal-tipovoy">                                                                            
+                                                                                <p data-href="izdeliya-bloki-dvernye.php#5000201-00-105-portal-tipovoy" data-img="./dist/images/5000201-00-105-portal-tipovoy_1.png">5000201-00_105 портал типовой<span> <br>~5000201-00-105-portal-tipovoy</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                        <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
+                                                                        
+                                                                               
                                                                     </TABLE>
                                                                 </TD>
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ" class="hover mapsite" id="footer85" >
-                                                                    <p data-href="izdeliya-bloki-dvernye.php#sborochnye-shemy-polotna" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating86">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span><br>~sborochnye-shemy-polotna</span></p> 
+                                                                    <p data-href="izdeliya-bloki-dvernye.php#sborochnye-shemy-polotna" data-img="./dist/images/5000201-99-101-shema-montazha-dvernogo-bloka_1.png" id="floating86">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span><br>~sborochnye-shemy-polotna</span></p> 
                                                                     <!-- <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png" class="KEYWORDS">Дверные блоки</p>  -->
                                                             </TD>                                                                            
                                                             <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite"  colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <TD class="mapsite"  colspan="2" id="flo-5000201-99-101-shema-montazha-dvernogo-bloka">                                                                            
+                                                                                <p data-img="./dist/images/5000201-99-101-shema-montazha-dvernogo-bloka_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-101-shema-montazha-dvernogo-bloka">5000201-99_101 схема монтажа дверного блока<span> <br>~5000201-99-101-shema-montazha-dvernogo-bloka</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                            <TD class="mapsite"  colspan="2" id="flo-5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal">                                                                            
+                                                                                <p data-img="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal">5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал<span> <br>~5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal</span></p>
                                                                             </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                        <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
+                                                                        </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                            <TD class="mapsite"  colspan="2" id="flo-5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene">                                                                            
+                                                                                <p data-img="./dist/images/5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene">5000201-99_105 схема монтажа ДБ полотно раздвижное по стене<span> <br>~5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene</span></p>
                                                                             </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
+                                                                        </TR>  
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                        <TR>
+                                                                            <TD class="mapsite"  colspan="2" id="flo-5000201-99-107-shema-montazha-sandrikov-i-framug">                                                                            
+                                                                                <p data-img="./dist/images/5000201-99-107-shema-montazha-sandrikov-i-framug_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-107-shema-montazha-sandrikov-i-framug">5000201-99_107 схема монтажа сандриков и фрамуг<span> <br>~5000201-99-107-shema-montazha-sandrikov-i-framug</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>  
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                        
+                                                                        
+                                                                              
                                                                     </TABLE>
                                                                 </TD>
                                                         </TR> 
@@ -1815,7 +1802,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                                                                                     
                                                                 <TR>
                                                                     <TD data-tooltip="КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ" class="hover mapsite" id="footer86" >
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating87">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ <span><br>~- dveri-konstrukcii</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png" id="floating87">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ <span><br>~- dveri-konstrukcii</span></p>
                                                                             <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">МЕБЕЛЬ КОРПУСНАЯ</p> 
                                                                     </TD>                                                                            
                                                                     <TD>
@@ -1850,7 +1837,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                 <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                                 <TR>
                                                                     <TD data-tooltip="ШКАФЫ С РАСПАШНЫМИ ФАСАДАМИ" class="hover mapsite" id="footer87" >
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating88">ШКАФЫ С РАСПАШНЫМИ ФАСАДАМИ<span><br>~- dveri-konstrukcii</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png" id="floating88">ШКАФЫ С РАСПАШНЫМИ ФАСАДАМИ<span><br>~- dveri-konstrukcii</span></p>
                                                                             <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">МЕБЕЛЬ КОРПУСНАЯ</p>  
                                                                     </TD>                                                                            
                                                                     <TD>
@@ -1885,7 +1872,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                 <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                                 <TR>
                                                                     <TD data-tooltip="ШКАФЫ С РАЗДВИЖНЫМИ ФАСАДАМИ" class="hover mapsite" id="footer88" >
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating89">ШКАФЫ С РАЗДВИЖНЫМИ ФАСАДАМИ<span><br>~- dveri-konstrukcii</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png" id="floating89">ШКАФЫ С РАЗДВИЖНЫМИ ФАСАДАМИ<span><br>~- dveri-konstrukcii</span></p>
                                                                             <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">МЕБЕЛЬ КОРПУСНАЯ</p>  
                                                                     </TD>                                                                            
                                                                     <TD>
@@ -1920,7 +1907,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                 <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                                 <TR>
                                                                     <TD data-tooltip="ШКАФЫ БЕЗ ФАСАДОВ (СТЕЛЛАЖИ)" class="hover mapsite" id="footer89" >
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating90">ШКАФЫ БЕЗ ФАСАДОВ (СТЕЛЛАЖИ)<span><br>~- dveri-konstrukcii</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png" id="floating90">ШКАФЫ БЕЗ ФАСАДОВ (СТЕЛЛАЖИ)<span><br>~- dveri-konstrukcii</span></p>
                                                                             <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">МЕБЕЛЬ КОРПУСНАЯ</p>  
                                                                     </TD>                                                                            
                                                                     <TD>
@@ -1955,7 +1942,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                 <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                                 <TR>
                                                                     <TD data-tooltip="СТОЛЫ" class="hover mapsite" id="footer90" >
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating91">СТОЛЫ<span><br>~- dveri-konstrukcii</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png" id="floating91">СТОЛЫ<span><br>~- dveri-konstrukcii</span></p>
                                                                             <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">МЕБЕЛЬ КОРПУСНАЯ</p>  
                                                                     </TD>                                                                            
                                                                     <TD>
@@ -1990,7 +1977,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                                 <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                                 <TR>
                                                                     <TD data-tooltip="СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ" class="hover mapsite" id="footer91" >
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating92">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span><br>~- dveri-konstrukcii</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png" id="floating92">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span><br>~- dveri-konstrukcii</span></p> 
                                                                             <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">МЕБЕЛЬ КОРПУСНАЯ</p> 
                                                                     </TD>                                                                            
                                                                     <TD>
@@ -2033,7 +2020,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ ТИПОВЫХ" class="hover mapsite" id="footer92" >
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating93">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ ТИПОВЫХ <span> <br>~-katalog-rezby</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating93">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ ТИПОВЫХ <span> <br>~-katalog-rezby</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -2067,7 +2054,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ" class="hover mapsite" id="footer93">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating94">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating94">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -2110,7 +2097,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ" class="hover mapsite" id="footer94" >
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating95">КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ <span> <br>~-katalog-rezby</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating95">КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ <span> <br>~-katalog-rezby</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -2144,7 +2131,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ" class="hover mapsite" id="footer95">
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating96">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating96">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -2187,7 +2174,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ" class="hover mapsite" id="footer96" >
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating97">КОНСТРУКЦИИ ПЛИНТУСОВ И МОЛДИНГОВ ТИПОВЫХ <span> <br>~-katalog-rezby</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating97">КОНСТРУКЦИИ ПЛИНТУСОВ И МОЛДИНГОВ ТИПОВЫХ <span> <br>~-katalog-rezby</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -2221,7 +2208,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ" class="hover mapsite" id="footer97">
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating98">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating98">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -2264,7 +2251,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="КОНСТРУКЦИИ ЭКРАНОВ РАДИАТОРОВ ТИПОВЫХ" class="hover mapsite" id="footer98" >
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating99">КОНСТРУКЦИИ ЭКРАНОВ РАДИАТОРОВ ТИПОВЫХ <span> <br>~-katalog-rezby</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating99">КОНСТРУКЦИИ ЭКРАНОВ РАДИАТОРОВ ТИПОВЫХ <span> <br>~-katalog-rezby</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -2298,7 +2285,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ" class="hover mapsite" id="footer99">
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating100">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating100">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -2341,7 +2328,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="КОНСТРУКЦИИ ПИЛЯСТР ТИПОВЫХ" class="hover mapsite" id="footer100" >
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating101">КОНСТРУКЦИИ ПИЛЯСТР ТИПОВЫХ<span> <br>~-katalog-rezby</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating101">КОНСТРУКЦИИ ПИЛЯСТР ТИПОВЫХ<span> <br>~-katalog-rezby</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -2375,7 +2362,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ" class="hover mapsite" id="footer101">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating102">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating102">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -2418,7 +2405,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="КОНСТРУКЦИИ ПОТОЛКОВ КЕССОНИРОВАННЫХ ТИПОВЫХ" class="hover mapsite" id="footer102" >
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating103">КОНСТРУКЦИИ ПОТОЛКОВ КЕССОНИРО<wbr>ВАННЫХ ТИПОВЫХ<span> <br>~-katalog-rezby</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating103">КОНСТРУКЦИИ ПОТОЛКОВ КЕССОНИРО<wbr>ВАННЫХ ТИПОВЫХ<span> <br>~-katalog-rezby</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -2452,7 +2439,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ" class="hover mapsite" id="footer103">
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating104">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating104">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -2495,7 +2482,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="КОНСТРУКЦИИ ЛЕСТНИЦ ТИПОВЫХ" class="hover mapsite" id="footer104" >
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating105">КОНСТРУКЦИИ ЛЕСТНИЦ ТИПОВЫХ<span> <br>~-katalog-rezby</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating105">КОНСТРУКЦИИ ЛЕСТНИЦ ТИПОВЫХ<span> <br>~-katalog-rezby</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -2529,7 +2516,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ" class="hover mapsite" id="footer105">
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating106">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating106">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -2983,7 +2970,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <TABLE >
                                                             <TR>
                                                                 <TD  class="hover mapsite" id="footer6106" >
-                                                                    <p data-href="shablony-dokumentov-titulniki.php#listy-titulnye-dizayn-proekta" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating107">ЛИСТЫ ТИТУЛЬНЫЕ ДИЗАЙН&ndash;ПРОЕКТА<span> <br>~-katalog-rezby</span></p>                                                                    
+                                                                    <p data-href="shablony-dokumentov-titulniki.php#listy-titulnye-dizayn-proekta" data-img="./dist/images/no-foto.png" id="floating107">ЛИСТЫ ТИТУЛЬНЫЕ ДИЗАЙН&ndash;ПРОЕКТА<span> <br>~-katalog-rezby</span></p>                                                                    
                                                                     <p data-href="shablony-dokumentov-titulniki.php#listy-titulnye-dizayn-proekta" data-img="./dist/images/no-foto.png" class="KEYWORDS">ЛИСТЫ ТИТУЛЬНЫЕ ДП</p>  
                                                                 </TD>                                                                            
                                                                 <TD>
@@ -3013,7 +3000,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ" class="hover mapsite" id="footer107">
-                                                                    <p data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating108">ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОР<wbr>СКОЙ ДОКУМЕНТА<wbr>ЦИИ<span> <br>~-katalog-lepniny</span></p>
+                                                                    <p data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd" data-img="./dist/images/no-foto.png" id="floating108">ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОР<wbr>СКОЙ ДОКУМЕНТА<wbr>ЦИИ<span> <br>~-katalog-lepniny</span></p>
                                                                     <p data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd" data-img="./dist/images/no-foto.png" class="KEYWORDS">ЛИСТЫ ТИТУЛЬНЫЕ КД</p> 
                                                                 </TD>                                                                            
                                                                 <TD>
@@ -3053,7 +3040,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО" class="hover mapsite" id="footer108" >
-                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating109">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУР<wbr>НОГО БЮРО<span> <br>~shtampy-chertezhey-arhitekturnogo-byuro</span></p>
+                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro" data-img="./dist/images/no-foto.png" id="floating109">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУР<wbr>НОГО БЮРО<span> <br>~shtampy-chertezhey-arhitekturnogo-byuro</span></p>
                                                                     <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro" data-img="./dist/images/no-foto.png" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ АБ</p>
                                                                 </TD>                                                                            
                                                                 <TD>
@@ -3071,7 +3058,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОРСКОГО БЮРО" class="hover mapsite" id="footer109">
-                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating110">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОР<wbr>СКОГО БЮРО<span> <br>~</span></p>
+                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd" data-img="./dist/images/no-foto.png" id="floating110">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОР<wbr>СКОГО БЮРО<span> <br>~</span></p>
                                                                     <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd" data-img="./dist/images/no-foto.png" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ КБ</p> 
                                                                 </TD>                                                                            
                                                                 <TD>
@@ -3099,7 +3086,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ" class="hover mapsite" id="footer110" >
-                                                                    <p data-href="shablony-dokumentov-specifikacii.php" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating111">СПЕЦИФИКА<wbr>ЦИЯ КОНСТРУКТОР<wbr>СКАЯ<span> <br>~-katalog-rezby</span></p>
+                                                                    <p data-href="shablony-dokumentov-specifikacii.php" data-img="./dist/images/no-foto.png" id="floating111">СПЕЦИФИКА<wbr>ЦИЯ КОНСТРУКТОР<wbr>СКАЯ<span> <br>~-katalog-rezby</span></p>
                                                                     <!-- <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ АБ</p> -->
                                                                 </TD>                                                                            
                                                                 <TD>
@@ -3118,7 +3105,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ" class="hover mapsite" id="footer111">
-                                                                    <p data-href="shablony-dokumentov-specifikacii.php" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating112">СПЕЦИФИКА<wbr>ЦИЯ ТЕХНОЛОГИЧЕС<wbr>КАЯ<span> <br>~-katalog-lepniny</span></p>
+                                                                    <p data-href="shablony-dokumentov-specifikacii.php" data-img="./dist/images/no-foto.png" id="floating112">СПЕЦИФИКА<wbr>ЦИЯ ТЕХНОЛОГИЧЕС<wbr>КАЯ<span> <br>~-katalog-lepniny</span></p>
                                                                     <!-- <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ КБ</p>  -->
                                                                 </TD>                                                                            
                                                                 <TD>
@@ -3155,7 +3142,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="ЛИСТ ТИТУЛЬНЫЙ ВПИ" class="hover mapsite" id="footer112">
-                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating113">ЛИСТ ТИТУЛЬНЫЙ ВПИ<span> <br>~-shablony-dokumentov-list-titulnyy-vpi</span></p>
+                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi" data-img="./dist/images/no-foto.png" id="floating113">ЛИСТ ТИТУЛЬНЫЙ ВПИ<span> <br>~-shablony-dokumentov-list-titulnyy-vpi</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -3172,7 +3159,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ВЕДОМОСТЬ ФУРНИТУРЫ" class="hover mapsite" id="footer113">
-                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating114">ВЕДОМОСТЬ ФУРНИТУРЫ <span> <br>~-shablony-dokumentov-vedomost-furnitury</span></p>
+                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury" data-img="./dist/images/no-foto.png" id="floating114">ВЕДОМОСТЬ ФУРНИТУРЫ <span> <br>~-shablony-dokumentov-vedomost-furnitury</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -3189,7 +3176,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ" class="hover mapsite" id="footer114">
-                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating115">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ <span> <br>~-shablony-dokumentov-vedomost-stekol-i-zerkal</span></p>
+                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php" data-img="./dist/images/no-foto.png" id="floating115">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ <span> <br>~-shablony-dokumentov-vedomost-stekol-i-zerkal</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -3206,7 +3193,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ" class="hover mapsite" id="footer115">
-                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-materialy-prochie" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating116">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ<span> <br>~-shablony-dokumentov-vedomost-materialy-prochie</span></p>
+                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-materialy-prochie" data-img="./dist/images/no-foto.png" id="floating116">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ<span> <br>~-shablony-dokumentov-vedomost-materialy-prochie</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -3390,7 +3377,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="ПРИМЕРЫ ЭРГОНОМИЧЕСКИХ РЕШЕНИЙ" class="hover mapsite" id="footer123" >
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating124">ПРИМЕРЫ ЭРГОНОМИ<wbr>ЧЕСКИХ РЕШЕНИЙ<span> <br>~-katalog-rezby</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating124">ПРИМЕРЫ ЭРГОНОМИ<wbr>ЧЕСКИХ РЕШЕНИЙ<span> <br>~-katalog-rezby</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -3424,7 +3411,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="Библиотека вещей" class="hover mapsite" id="footer124" >
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating125">Библиотека вещей<span> <br>~-katalog-lepniny</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating125">Библиотека вещей<span> <br>~-katalog-lepniny</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -3458,7 +3445,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="Библиотека людей" class="hover mapsite" id="footer125" >
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating126">Библиотека людей <span> <br>~-modeli-up-narabotki</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating126">Библиотека людей <span> <br>~-modeli-up-narabotki</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -3492,7 +3479,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="Библиотека вещей, мебели" class="hover mapsite" id="footer126">
-                                                                <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating127">Библиотека вещей, мебели <span> <br>~-staryy-arhiv-rezb</span></p>
+                                                                <p data-href="" data-img="./dist/images/no-foto.png" id="floating127">Библиотека вещей, мебели <span> <br>~-staryy-arhiv-rezb</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -3964,7 +3951,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ" class="hover mapsite" id="footer130"  >
-                                                                    <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating131" data-href="furnitura-dlya-dvernyh-blokov.php#petli-dlya-poloten-dvernyh">ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ<span><br>~petli-dlya-poloten-dvernyh</span></p> 
+                                                                    <p data-img="./dist/images/no-foto.png" id="floating131" data-href="furnitura-dlya-dvernyh-blokov.php#petli-dlya-poloten-dvernyh">ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ<span><br>~petli-dlya-poloten-dvernyh</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4000,7 +3987,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ПОЛОТЕН ДВЕРНЫХ" class="hover mapsite" id="footer131">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating132" data-href="furnitura-dlya-dvernyh-blokov.php#mehanizmy-razdvizheniya-dlya-poloten-dvernyh">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ПОЛОТЕН ДВЕРНЫХ<span><br>~mehanizmy-razdvizheniya-dlya-poloten-dvernyh</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating132" data-href="furnitura-dlya-dvernyh-blokov.php#mehanizmy-razdvizheniya-dlya-poloten-dvernyh">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ПОЛОТЕН ДВЕРНЫХ<span><br>~mehanizmy-razdvizheniya-dlya-poloten-dvernyh</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4017,7 +4004,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ" class="hover mapsite" id="footer132">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating133" data-href="furnitura-dlya-dvernyh-blokov.php#zamki-dlya-poloten-dvernyh">ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ<span><br>~zamki-dlya-poloten-dvernyh</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating133" data-href="furnitura-dlya-dvernyh-blokov.php#zamki-dlya-poloten-dvernyh">ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ<span><br>~zamki-dlya-poloten-dvernyh</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4045,7 +4032,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="ПОРОГИ АВТОМАТИЧЕСКИЕ для ПОЛОТЕН ДВЕРНЫХ" class="hover mapsite" id="footer133">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating134" data-href="furnitura-dlya-dvernyh-blokov.php#porogi-avtomaticheskie-dlya-poloten-dvernyh">ПОРОГИ АВТОМАТИЧЕС<wbr>КИЕ для ПОЛОТЕН ДВЕРНЫХ<span><br>~porogi-avtomaticheskie-dlya-poloten-dvernyh</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating134" data-href="furnitura-dlya-dvernyh-blokov.php#porogi-avtomaticheskie-dlya-poloten-dvernyh">ПОРОГИ АВТОМАТИЧЕС<wbr>КИЕ для ПОЛОТЕН ДВЕРНЫХ<span><br>~porogi-avtomaticheskie-dlya-poloten-dvernyh</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4062,7 +4049,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ" class="hover mapsite" id="footer134">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating135" data-href="furnitura-dlya-dvernyh-blokov.php#rigeli-shpingalety-dlya-poloten-dvernyh">РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ<span><br>~rigeli-shpingalety-dlya-poloten-dvernyh</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating135" data-href="furnitura-dlya-dvernyh-blokov.php#rigeli-shpingalety-dlya-poloten-dvernyh">РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ<span><br>~rigeli-shpingalety-dlya-poloten-dvernyh</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4090,7 +4077,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ" class="hover mapsite" id="footer135">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating136" data-href="furnitura-dlya-dvernyh-blokov.php#dovodchiki-dlya-poloten-dvernyh">ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ<span><br>~dovodchiki-dlya-poloten-dvernyh</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating136" data-href="furnitura-dlya-dvernyh-blokov.php#dovodchiki-dlya-poloten-dvernyh">ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ<span><br>~dovodchiki-dlya-poloten-dvernyh</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4118,7 +4105,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ" class="hover mapsite" id="footer136">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating137" data-href="furnitura-dlya-dvernyh-blokov.php#upory-napolnye-i-nastennye">УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ<span><br>~upory-napolnye-i-nastennye</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating137" data-href="furnitura-dlya-dvernyh-blokov.php#upory-napolnye-i-nastennye">УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ<span><br>~upory-napolnye-i-nastennye</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4178,7 +4165,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="ПЕТЛИ для ФАСАДОВ" class="hover mapsite"  id="flo-petli-dlya-fasadov" >
-                                                                    <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating138" data-href="furnitura-dlya-mebeli.php#petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ<span><br>~petli-dlya-fasadov</span></p> 
+                                                                    <p data-img="./dist/images/no-foto.png" id="floating138" data-href="furnitura-dlya-mebeli.php#petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ<span><br>~petli-dlya-fasadov</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4254,7 +4241,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ" class="hover mapsite" id="footer138">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating139" data-href="furnitura-dlya-mebeli.php#mehanizmy-razdvizheniya-dlya-fasadov">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ<span><br>~- profili-reznye</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating139" data-href="furnitura-dlya-mebeli.php#mehanizmy-razdvizheniya-dlya-fasadov">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ<span><br>~- profili-reznye</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4271,7 +4258,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="МЕХАНИЗМЫ ПОДЪЕМНЫЕ для ФАСАДОВ" class="hover mapsite" id="footer139">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating140" data-href="furnitura-dlya-mebeli.php#mehanizmy-podemnye-dlya-fasadov">МЕХАНИЗМЫ ПОДЪЕМНЫЕ для ФАСАДОВ<span><br>~mehanizmy-podemnye-dlya-fasadov</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating140" data-href="furnitura-dlya-mebeli.php#mehanizmy-podemnye-dlya-fasadov">МЕХАНИЗМЫ ПОДЪЕМНЫЕ для ФАСАДОВ<span><br>~mehanizmy-podemnye-dlya-fasadov</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4288,7 +4275,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="04 МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ" class="hover mapsite" id="footer140">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating141" data-href="furnitura-dlya-mebeli.php#mekhanizmy-vydvizheniya-dlya-yashchikov">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ<span><br>~mekhanizmy-vydvizheniya-dlya-yashchikov</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating141" data-href="furnitura-dlya-mebeli.php#mekhanizmy-vydvizheniya-dlya-yashchikov">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ<span><br>~mekhanizmy-vydvizheniya-dlya-yashchikov</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4439,7 +4426,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="ЗАЩЕЛКИ МЕБЕЛЬНЫЕ" class="hover mapsite" id="footer142">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating143" data-href="furnitura-dlya-mebeli.php#zashchelki-mebelnye">ЗАЩЕЛКИ МЕБЕЛЬНЫЕ<span><br>~zashchelki-mebelnye</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating143" data-href="furnitura-dlya-mebeli.php#zashchelki-mebelnye">ЗАЩЕЛКИ МЕБЕЛЬНЫЕ<span><br>~zashchelki-mebelnye</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4462,7 +4449,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="СТЯЖКИ" class="hover mapsite" id="footer143">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating144" data-href="furnitura-dlya-mebeli.php#styazhki">СТЯЖКИ<span><br>~styazhki</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating144" data-href="furnitura-dlya-mebeli.php#styazhki">СТЯЖКИ<span><br>~styazhki</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4515,7 +4502,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ПОЛКОДЕРЖАТЕЛИ" class="hover mapsite" id="footer144"  >
-                                                                    <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating145" data-href="furnitura-dlya-mebeli.php#polkoderzhateli">ПОЛКОДЕРЖА<wbr>ТЕЛИ<span><br>~polkoderzhateli</span></p> 
+                                                                    <p data-img="./dist/images/no-foto.png" id="floating145" data-href="furnitura-dlya-mebeli.php#polkoderzhateli">ПОЛКОДЕРЖА<wbr>ТЕЛИ<span><br>~polkoderzhateli</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4532,7 +4519,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="ШТАНГИ МЕБЕЛЬНЫЕ" class="hover mapsite" id="footer145">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating146" data-href="furnitura-dlya-mebeli.php#shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ<span><br>~shtangi-mebelnye</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating146" data-href="furnitura-dlya-mebeli.php#shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ<span><br>~shtangi-mebelnye</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4555,7 +4542,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip=" ПАНТОГРАФЫ" class="hover mapsite" id="footer146">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating147" data-href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ<span><br>~pantografy</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating147" data-href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ<span><br>~pantografy</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4578,7 +4565,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="РУЧКИ" class="hover mapsite" id="footer147">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating148" data-href="furnitura-dlya-mebeli.php#ruchki">РУЧКИ<span><br>~ruchki</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating148" data-href="furnitura-dlya-mebeli.php#ruchki">РУЧКИ<span><br>~ruchki</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4601,7 +4588,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="Механизмы для раздвижных столов" class="hover mapsite" id="footer148">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating149" data-href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ<span><br>~mekhanizmy-dlya-razdvizhnyh-stolov</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating149" data-href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ<span><br>~mekhanizmy-dlya-razdvizhnyh-stolov</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4619,7 +4606,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="НАТЯЖИТЕЛИ для ФАСАДОВ" class="hover mapsite" id="footer149">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating150" data-href="furnitura-dlya-mebeli.php#natyazhiteli-dlya-fasadov">НАТЯЖИТЕЛИ для ФАСАДОВ<span><br>~- profili-reznye</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating150" data-href="furnitura-dlya-mebeli.php#natyazhiteli-dlya-fasadov">НАТЯЖИТЕЛИ для ФАСАДОВ<span><br>~- profili-reznye</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4636,7 +4623,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="МЕХАНИЗМЫ для ОБУВНИЦ" class="hover mapsite" id="footer150">
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating151" data-href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ<span><br>~mekhanizmy-dlya-obuvnic/span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating151" data-href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ<span><br>~mekhanizmy-dlya-obuvnic/span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4667,7 +4654,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="ЗАЩЕЛКИ УНИВЕРСАЛЬНЫЕ" class="hover mapsite" id="footer151" >
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating152" data-href="furnitura-universalnaya.php#zashchelki-universalnye">ЗАЩЕЛКИ УНИВЕРСАЛЬ<wbr>НЫЕ<span> <br>~zashchelki-universalnye</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating152" data-href="furnitura-universalnaya.php#zashchelki-universalnye">ЗАЩЕЛКИ УНИВЕРСАЛЬ<wbr>НЫЕ<span> <br>~zashchelki-universalnye</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4684,7 +4671,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА" class="hover mapsite" id="footer152" >
-                                                                <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating153" data-href="furnitura-universalnaya.php#komplekty-furnitury-dlya-montazha">КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА<span> <br>~komplekty-furnitury-dlya-montazha</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating153" data-href="furnitura-universalnaya.php#komplekty-furnitury-dlya-montazha">КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА<span> <br>~komplekty-furnitury-dlya-montazha</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
@@ -4715,16 +4702,16 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="HAFELE" class="hover mapsite" id="footer153" colspan="2">
-                                                                <!-- <p onclick=\'window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")\' data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating154">HAFELE<span> <br>~HAFELE</span></p> -->
-                                                                <p onclick='window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")' data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating154">HAFELE<span> <br>~HAFELE</span></p>
+                                                                <!-- <p onclick=\'window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")\' data-img="./dist/images/no-foto.png" id="floating154">HAFELE<span> <br>~HAFELE</span></p> -->
+                                                                <p onclick='window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")' data-img="./dist/images/no-foto.png" id="floating154">HAFELE<span> <br>~HAFELE</span></p>
                                                             </TD>                                                                            
                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->
                                                         <TR>
                                                             <TD data-tooltip="Blum" class="hover mapsite" id="footer154" >
-                                                                <!-- <p  onclick=\'window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")\' data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating155">Blum<span> <br>~Blum</span></p> -->
-                                                                <p  onclick='window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")' data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating155">Blum<span> <br>~Blum</span></p>
+                                                                <!-- <p  onclick=\'window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")\' data-img="./dist/images/no-foto.png" id="floating155">Blum<span> <br>~Blum</span></p> -->
+                                                                <p  onclick='window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")' data-img="./dist/images/no-foto.png" id="floating155">Blum<span> <br>~Blum</span></p>
                                                             </TD>                                                                            
                                                             
                                                         </TR>
@@ -5023,7 +5010,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="Анурьев Справочник" class="hover mapsite">
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating300">Анурьев Справочник<span><br>~- profili-reznye</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating300">Анурьев Справочник<span><br>~- profili-reznye</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -5051,7 +5038,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                                                             <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                             <TR>
                                                                 <TD data-tooltip="ГКЛ-конструкции RNAUFF (ПОСОБИЕ)" class="hover mapsite">
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png"  data-img="./dist/images/no-foto.png" id="floating301">ГКЛ-конструкции RNAUFF (ПОСОБИЕ)<span><br>~- profili-reznye</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating301">ГКЛ-конструкции RNAUFF (ПОСОБИЕ)<span><br>~- profili-reznye</span></p>
                                                                 </TD> 
                                                                 <TD>
                                                                     <TABLE >                                                                                          
@@ -5117,29 +5104,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <script src="./dist/js/application.js"></script> 
     <script src="./dist/js/script.js?v=4"></script>   
     <script src="./dist/js/floating.js?v=3"></script> 
-    <!-- <script>
-$(function(){
-	$('#recall').submit(function(e){
-		e.preventDefault();
-		var data = $(this).serialize();
-		$.ajax({
-			url: './RECALL/mail.php',
-			type: 'POST',
-			data: data,
-			beforeSend: function(){
-				$('#submit').next().text('Отправляю...');
-			},
-			success: function(res){
-				$('#recall').find('input').val('');
-				$('#submit').next().html(res);
-			},
-			error: function(){
-				alert('Ошибка!');
-			}
-		});
-	});
-});
-	</script> -->
+   
     <!-- <script src="./dist/js/jquery.color.js"></script>  -->
     <!-- <script>
 // запретить клик
