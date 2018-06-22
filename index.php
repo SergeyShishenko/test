@@ -90,7 +90,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
                      
                       <div class="navbar-form navbar-right " id="search">
                             <div class="form-group">                                
-                                <span class="glyphicon glyphicon-search "></span><input type="text" class="form-control who zbz-input-clearable" placeholder="Поиск">                               
+                                <span class="glyphicon glyphicon-search zbz"></span><input type="text" class="form-control who zbz-input-clearable" placeholder="Поиск">                               
                             </div>                            
                             <ul class="search_result" style="display: none;"></ul>
                      </div>
@@ -5102,7 +5102,7 @@ if ($_SESSION['sess_login']!==$enter_login ||   $_SESSION['sess_pass']!==$enter_
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script>
     <script src="./dist/js/application.js"></script> 
-    <script src="./dist/js/script.js?v=4"></script>   
+    <script src="./dist/js/script.js?v=6"></script>   
     <script src="./dist/js/floating.js?v=3"></script> 
    
     <!-- <script src="./dist/js/jquery.color.js"></script>  -->

@@ -50,7 +50,7 @@
                 </div>
                 <div class="navbar-form navbar-right " id="search">
                     <div class="form-group">                                
-                        <span class="glyphicon glyphicon-search"></span>
+                        <span class="glyphicon glyphicon-search zbz"></span>
                         <input type="text" class="form-control who zbz-input-clearable" placeholder="Поиск">                               
                     </div>                            
                     <ul class="search_result" style="display: none;"></ul>

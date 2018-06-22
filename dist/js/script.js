@@ -215,10 +215,10 @@ $(function() {
         }
       });
     }
-     else if(this.value.length ==1){$('span.glyphicon').css('visibility','hidden');}    
+     else if(this.value.length ==1){$('span.zbz').css('visibility','hidden');}    
     else {
       $(".search_result").fadeOut();
-      $('span.glyphicon').css('visibility','visible');
+      $('span.zbz').css('visibility','visible');
     }
     if ($(".search_result li").length < 1) {    
       $(".search_result").fadeOut();
@@ -488,7 +488,7 @@ jQuery(function($){
 
     $(document).on('click', input_selector_x_over, function () {
         $(this).removeClass([input_class_x, input_class_x_over].join(' ')).val('').trigger('input');
-        $('span.glyphicon').css('visibility','visible');
+        $('span.zbz').css('visibility','visible');
     });
 
     $(function () {
