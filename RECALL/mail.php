@@ -5,9 +5,9 @@
 // $message .= "{$_POST['message']}"; // добавляем сообщение в текст
 $message = "{$_POST['message']}"; // добавляем сообщение в текст
 
- require 'phpmailer/PHPMailerAutoload.php';
-//require 'class.phpmailer.php';
-//require 'class.smtp.php';
+//  require 'phpmailer/PHPMailerAutoload.php';
+require 'class.phpmailer.php';
+require 'class.smtp.php';
 
 $mail = new PHPMailer;
 $mail->isSMTP();
@@ -25,6 +25,7 @@ $mail->From = 'info@500stp.website';//Ваш Email
 $mail->FromName = '500СТП';
 $mail->addAddress('serge-meb@mail.ru');// Email получателя
 
+// исправление ошибки отправления
 $mail->SMTPOptions = array(
 'ssl' => array(
 'verify_peer' => false,
