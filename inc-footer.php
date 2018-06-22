@@ -5,7 +5,7 @@
     <footer class="bs-footer" role="contentinfo">
         <div class="container">
             <p class="text-center">Сайт был создан проектным подразделением компании "София-Декор" <a href="http://www.sofia-decor.ru">(http://www.sofia-decor.ru)</a> под руководством Черкашина Д.В.</p>
-            <p class="text-center">Разработчик Шишенко С.В. </p>
+            <p class="text-center">Разработчик: Шишенко С.В. </p>
             <p><button type="button" class="btn btn-default center" onclick="location.href=\'exit.php\';">  <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Выйти</button></p>
         </div>
     </footer> 

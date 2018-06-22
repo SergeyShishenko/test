@@ -103,7 +103,7 @@ $(function() {
           var aref = $(this).data("href");          
           var flo = $(this).parent().attr('id');
           // flo = flo.replace(/.*\#/, '');// id элемента
-          if (flo == undefined){flo='';}else{flo='#'+ flo;}
+          if (flo == 'undefined'){flo='';}else{flo='#'+ flo;}
 
           var aimg = $(this).data("img");
           if (typeof aimg == "undefined") { aimg = "./dist/images/mdf-nakladka-053-dsh.png"; }     

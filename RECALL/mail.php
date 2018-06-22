@@ -15,7 +15,7 @@ $mail->isSMTP();
 $mail->Host = 'mail.500stp.website';//'mail.500stp.website';//
 $mail->SMTPAuth = true;
 $mail->Username = 'info@500stp.website'; // логин от вашей почты
-$mail->Password = '_MnExd3G'; // пароль от почтового ящика
+$mail->Password = '_MnExd3G2'; // пароль от почтового ящика
 // $mail->Username = 'info'; // логин от вашей почты
 // $mail->Password = '_MnExd3G'; // пароль от почтового ящика info@500stp.website
 $mail->SMTPSecure = 'ssl'; //'tls'; //
