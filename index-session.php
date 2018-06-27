@@ -1,16 +1,25 @@
 <?php
+session_start();
 require_once('data.php');
 $err = '';
+if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
+
+// if (strpos($_SERVER['HTTP_REFERER'], 'index-session.php')=== false){$ref = $_SERVER['HTTP_REFERER']; }
+
+//    echo $_SERVER['REQUEST_URI'] . '<br>';
+//  echo $_SESSION['ref'];
 if (isset($_POST['login']) && isset($_POST['passw'])) {
    $_POST['passw'] = md5($_POST['passw']);
    if ($_POST['login']===$enter_login && 
       $_POST['passw']===$enter_passw) {
-      session_start();
+      // session_start();
       $_SESSION['sess_login'] = $_POST['login'];
       $_SESSION['sess_pass'] = $_POST['passw'];
 
       // header('Location: secure.php');
-      header('Location: index.php');
+      // header('Location: index.php');
+      header('Location:'.$_SESSION['ref']);
+      unset($_SESSION['ref']);
       exit();
    }
    else {
@@ -89,7 +98,9 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
         <input type="password" name="passw" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
         <label>Пароль</label>
       </div>
-
+      <!-- <input type="hidden" name="ref" value=""> -->
+      <!-- <input type="text" name="ref" value=""> -->
+      <?php echo $_SESSION['ref']; ?>
       <button  class="button buttonBlue" type="submit" value="Войти">Вход
         <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
       </button>  
