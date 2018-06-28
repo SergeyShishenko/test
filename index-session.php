@@ -1,4 +1,7 @@
 <?php
+ini_set('session.gc_maxlifetime', 86400);// 24 часа
+ini_set('session.cookie_lifetime', 0);
+session_set_cookie_params(0);
 session_start();
 require_once('data.php');
 $err = '';
