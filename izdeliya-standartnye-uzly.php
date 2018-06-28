@@ -1,12 +1,5 @@
 <?php
-session_start();
-$_SESSION['ref'] = $_SERVER['REQUEST_URI'].$_SERVER['HTTP_REFERER'];
-// alert($_SESSION['ref']);
-require_once('data.php');
-if (!isset($_SESSION['sess_login']) || !isset($_SESSION['sess_pass']) || $_SESSION['sess_login']!==$enter_login || $_SESSION['sess_pass']!==$enter_passw) { header('Location:index-session.php');    exit();}
-//if ($_SESSION['sess_login']!==$enter_login || $_SESSION['sess_pass']!==$enter_passw) {header('Location:index-session.php');    exit();}
-?> 
-<?php
+include 'inc-session-start.php';
 $detaliClass = '';
 $izdeliyaClass = 'class="active"';
 $shablonyClass = '';

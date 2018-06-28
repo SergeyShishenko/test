@@ -97,10 +97,10 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
       <div class="group">
         <input type="password" name="passw" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
         <label>Пароль</label>
-      </div>
-      <!-- <input type="hidden" name="ref" value=""> -->
-      <!-- <input type="text" name="ref" value=""> -->
-      <?php echo $_SESSION['ref']; ?>
+      </div>     
+      <?php
+      //  echo $_SESSION['ref'];
+        ?>
       <button  class="button buttonBlue" type="submit" value="Войти">Вход
         <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
       </button>  
