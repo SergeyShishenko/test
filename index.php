@@ -278,7 +278,7 @@ include 'inc-session-start.php';
                                                                             <p data-img="./dist/images/no-foto.png" data-href="">Пр_№157/МЕТ раскладка 13<span><br>~-pr-157met-raskladka</span></p>
                                                                         </TD>  
                                                                     </TR>  
-                                                                    <!-- <TR>
+                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
                                                                             <p data-img="./dist/images/no-foto.png" data-href="">?14??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
@@ -347,7 +347,7 @@ include 'inc-session-start.php';
                                                                         <TD class="mapsite" id="flo-">
                                                                             <p data-img="./dist/images/no-foto.png" data-href="">?27??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
                                                                         </TD>  
-                                                                    </TR>                                                                       -->
+                                                                    </TR>                                                                       
                                                                                        
                                                                 </TABLE>
                                                             </TD>
