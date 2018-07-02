@@ -184,170 +184,166 @@ include 'inc-session-start.php';
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-shtapik-prizhimnoy-dlya-fasada">
-                                                                            <p data-img="./dist/images/no-foto.png"  data-href="">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~- shtapik-prizhimnoy-dlya-fasada</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-pr-100-hh-yy-zz">
+                                                                            <p data-img="./dist/images/pr-100-hh-yy-zz.png"  data-href="">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~pr-100-hh-yy-zz</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-shtapik">
-                                                                            <p data-img="./dist/images/no-foto.png"  data-href="">Пр_№101/26/17 штапик <span><br>~-pr-1012617-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-101-26-17">
+                                                                            <p data-img="./dist/images/pr-101-26-17.png"  data-href="">Пр_№101/26/17 штапик <span><br>~pr-101-26-17</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="" >Пр_№101/26/15 для карниза <span><br>~-pr-1012615-dlya-karniza</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-101-26-15">
+                                                                            <p data-img="./dist/images/pr-101-26-15.png" data-href="" >Пр_№101/26/15 для карниза <span><br>~-pr-101-26-15</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="" >Пр_№101/30/20 штапик <span><br>~-pr-1013020-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-101-30-20">
+                                                                            <p data-img="./dist/images/pr-101-30-20.png" data-href="" >Пр_№101/30/20 штапик <span><br>~pr-101-30-20</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="" >Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~-pr-1012314-shtapik-dlya-fasadov-steklovitrazh</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-101-23-14">
+                                                                            <p data-img="./dist/images/pr-101-23-14.png" data-href="" >Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~pr-101-23-14</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-101-20-105">
+                                                                            <p data-img="./dist/images/pr-101-20-105.png" data-href="">Пр_№101/20/10.5 штапик<span><br>~pr-101-20-105</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№102/19/10.5  штапик 1<span><br>~-pr-10219105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-102-19-105">
+                                                                            <p data-img="./dist/images/pr-102-19-105.png" data-href="">Пр_№102/19/10.5  штапик<span><br>~-pr-102-19-105</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№103 штапик 2<span><br>~-pr-103-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-103">
+                                                                            <p data-img="./dist/images/pr-103.png" data-href="">Пр_№103 штапик<span><br>~pr-103</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№104/7/5 штапик 3<span><br>~-pr-10475-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-104-7-5">
+                                                                            <p data-img="./dist/images/pr-104-7-5.png" data-href="">Пр_№104/7/5 штапик<span><br>~pr-104-7-5</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№105/13/10.5 штапик 4<span><br>~-pr-10513105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-105-13-105">
+                                                                            <p data-img="./dist/images/pr-105-13-105.png" data-href="">Пр_№105/13/10.5 штапик<span><br>~pr-105-13-105</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№105/19.5/17 штапик 5<span><br>~-pr-10519517-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-105-195-17">
+                                                                            <p data-img="./dist/images/pr-105-195-17.png" data-href="">Пр_№105/19.5/17 штапик<span><br>~pr-105-195-17</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№106 раскладка 6<span><br>~-pr-106-raskladka</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-106">
+                                                                            <p data-img="./dist/images/pr-106.png" data-href="">Пр_№106 раскладка<span><br>~pr-106</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№108 раскладка 7<span><br>~-pr-108-raskladka</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-108">
+                                                                            <p data-img="./dist/images/pr-108.png" data-href="">Пр_№108 раскладка<span><br>~pr-108</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№111 монтажный 8<span><br>~-pr-111-montazhnyy</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-111">
+                                                                            <p data-img="./dist/images/pr-111.png" data-href="">Пр_№111 монтажный<span><br>~pr-111</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№112 штапик 9<span><br>~-pr-112-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-112">
+                                                                            <p data-img="./dist/images/pr-112.png" data-href="">Пр_№112 штапик<span><br>~pr-112</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№113 штапик 10<span><br>~-pr-113-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-113">
+                                                                            <p data-img="./dist/images/pr-113.png" data-href="">Пр_№113 штапик<span><br>~pr-113</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№126 нащельник на двустворчатую дверь 11<span><br>~-pr-126-nashchelnik-na-dvustvorchatuyu-dver</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-126">
+                                                                            <p data-img="./dist/images/pr-126.png" data-href="">Пр_№126 нащельник на двустворчатую дверь<span><br>~pr-126</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№157 раскладка 12<span><br>~-pr-157-raskladka</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-157">
+                                                                            <p data-img="./dist/images/pr-157.png" data-href="">Пр_№157 раскладка<span><br>~pr-157</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№157/МЕТ раскладка 13<span><br>~-pr-157met-raskladka</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-157-met">
+                                                                            <p data-img="./dist/images/pr-157-met.png" data-href="">Пр_№157/МЕТ раскладка<span><br>~pr-157-met</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                      <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?14??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-158-19-105-1">
+                                                                            <p data-img="./dist/images/pr-158-19-105-1.png" data-href="">Пр_№158/19/10.5/1 штапик <span><br>~pr-158-19-105-1</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?15??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-158-28-19-1">
+                                                                            <p data-img="./dist/images/pr-158-28-19-1.png" data-href="">Пр_№158/28/19/1 штапик <span><br>~pr-158-28-19-1</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?16??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-158-2">
+                                                                            <p data-img="./dist/images/pr-158-2.png" data-href="">Пр_№158/2 штапик<span><br>~pr-158-2</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?17??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-159">
+                                                                            <p data-img="./dist/images/pr-159.png" data-href="">Пр_№159 штапик<span><br>~pr-159</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?18??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-160">
+                                                                            <p data-img="./dist/images/pr-160.png" data-href="">Пр_№160 раскладка<span><br>~pr-160</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?19??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-161-16-105">
+                                                                            <p data-img="./dist/images/pr-161-16-105.png" data-href="">Пр_№161/16/10.5 штапик<span><br>~pr-161-16-105</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?20??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-162">
+                                                                            <p data-img="./dist/images/pr-162.png" data-href="">Пр_№162 штапик<span><br>~pr-162</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?21??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-163">
+                                                                            <p data-img="./dist/images/pr-163.png" data-href="">Пр_№163 штапик <span><br>~pr-163</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?22??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-180-18-105">
+                                                                            <p data-img="./dist/images/pr-180-18-105.png" data-href="">Пр_№180/18/10.5 штапик <span><br>~pr-180-18-105</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?23??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-181-18-105">
+                                                                            <p data-img="./dist/images/pr-181-18-105.png" data-href="">Пр_№181/18/10.5 штапик <span><br>~pr-181-18-105</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?24??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-185-18-105">
+                                                                            <p data-img="./dist/images/pr-185-18-105.png" data-href="">Пр_№185/18/10.5 штапик <span><br>~pr-185-18-105</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?25??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-190">
+                                                                            <p data-img="./dist/images/pr-190.png" data-href="">Пр_№190 штапик <span><br>~pr-190</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?26??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-199">
+                                                                            <p data-img="./dist/images/pr-199.png" data-href="">Пр_№199 штапик <span><br>~pr-199</span></p>
                                                                         </TD>  
                                                                     </TR>  
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">?27??Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR>                                                                       
+                                                                                                                                        
                                                                                        
                                                                 </TABLE>
                                                             </TD>
