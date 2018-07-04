@@ -704,98 +704,98 @@ include 'inc-session-start.php';
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№400/ХХ<span><br>~</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-pr-400-hh">
+                                                                            <p data-img="./dist/images/pr-400-hh.png" data-href="">Пр_№400/ХХ<span><br>~pr-400-hh</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№401/ХХ (плинтус)<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-401-hh">
+                                                                            <p data-img="./dist/images/pr-401-hh.png" data-href="">Пр_№401/ХХ (плинтус)<span><br>~pr-401-hh</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№413<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-413">
+                                                                            <p data-img="./dist/images/pr-413.png" data-href="">Пр_№413<span><br>~pr-413</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№418/90 (плинтус)<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-418-90">
+                                                                            <p data-img="./dist/images/pr-418-90.png" data-href="">Пр_№418/90 (плинтус)<span><br>~pr-418-90</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№418/1 (плинтус)<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-418-1">
+                                                                            <p data-img="./dist/images/pr-418-1.png" data-href="">Пр_№418/1 (плинтус)<span><br>~pr-418-1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№418Ф (плинтус)<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-418f">
+                                                                            <p data-img="./dist/images/pr-418f.png" data-href="">Пр_№418Ф (плинтус)<span><br>~pr-418f</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№418/ПАЗ плинтус на экраны радиатора<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-418-paz">
+                                                                            <p data-img="./dist/images/pr-418-paz.png" data-href="">Пр_№418/ПАЗ плинтус на экраны радиатора<span><br>~pr-418-paz</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№422/14 (полуперила)<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-422-14">
+                                                                            <p data-img="./dist/images/pr-422-14.png" data-href="">Пр_№422/14 (полуперила)<span><br>~pr-422-14</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№422/25 (полуперила)<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-422-25">
+                                                                            <p data-img="./dist/images/pr-422-25.png" data-href="">Пр_№422/25 (полуперила)<span><br>~pr-422-25</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№427 (полуперила)<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-427">
+                                                                            <p data-img="./dist/images/pr-427.png" data-href="">Пр_№427 (полуперила)<span><br>~pr-427</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№476 (плинтус)<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-476">
+                                                                            <p data-img="./dist/images/pr-476.png" data-href="">Пр_№476 (плинтус)<span><br>~pr-476</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№476/1 (плинтус)<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-476-1">
+                                                                            <p data-img="./dist/images/pr-476-1.png" data-href="">Пр_№476/1 (плинтус)<span><br>~pr-476-1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№476Ф (плинтус)<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-476f">
+                                                                            <p data-img="./dist/images/pr-476f.png" data-href="">Пр_№476Ф (плинтус)<span><br>~pr-476f</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№476/ПАЗ плинтус на экраны радиатора<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-476-paz">
+                                                                            <p data-img="./dist/images/pr-476-paz.png" data-href="">Пр_№476/ПАЗ плинтус на экраны радиатора<span><br>~pr-476-paz</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№477/31<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-477-31">
+                                                                            <p data-img="./dist/images/pr-477-31.png" data-href="">Пр_№477/31<span><br>~pr-477-31</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№477/40<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-477-40">
+                                                                            <p data-img="./dist/images/pr-477-40.png" data-href="">Пр_№477/40<span><br>~pr-477-40</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№477/59<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-477-59">
+                                                                            <p data-img="./dist/images/pr-477-59.png" data-href="">Пр_№477/59<span><br>~pr-477-59</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№478/115 (плинтус)<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-478-115">
+                                                                            <p data-img="./dist/images/pr-478-115.png" data-href="">Пр_№478/115 (плинтус)<span><br>~pr-478-115</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№480<span><br>~</span></p>
+                                                                        <TD class="mapsite" id="flo-pr-480">
+                                                                            <p data-img="./dist/images/pr-480.png" data-href="">Пр_№480<span><br>~pr-480</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                                      
@@ -805,318 +805,280 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="Дверные коробки" class="hover mapsite" id="footer50">
-                                                                <p data-href="detali-profili.php#dvernye-korobki"  data-img="./dist/images/no-foto.png" id="floating51">Дверные коробки<span><br>~-dvernye-korobki</span></p>
+                                                                <p data-href="detali-profili.php#dvernye-korobki"  data-img="./dist/images/no-foto.png" id="floating51">Другие<span><br>~-dvernye-korobki</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~- shtapik-prizhimnoy-dlya-fasada</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№515<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/17 штапик <span><br>~-pr-1012617-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№536<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/15 для карниза <span><br>~-pr-1012615-dlya-karniza</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№546<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR> 
+                                                                    </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/30/20 штапик <span><br>~-pr-1013020-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№549<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR> 
+                                                                    </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~-pr-1012314-shtapik-dlya-fasadov-steklovitrazh</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№550<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR> 
+                                                                    </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№551<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR>                   
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№552<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№555<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№556<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                                      
                                                                 </TABLE>
                                                             </TD>
                                                         </TR>  
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="Плинтусы" class="hover mapsite" id="footer51">
-                                                                <p data-href="detali-profili.php#plintusy"  data-img="./dist/images/no-foto.png" id="floating52">Плинтусы<span><br>~-plintusy</span></p>
+                                                                <p data-href="detali-profili.php#plintusy"  data-img="./dist/images/no-foto.png" id="floating52">Поручни, лестницы<span><br>~-plintusy</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~- shtapik-prizhimnoy-dlya-fasada</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№601 (Пр_лестницы)<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/17 штапик <span><br>~-pr-1012617-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№627/1 (перила)<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/15 для карниза <span><br>~-pr-1012615-dlya-karniza</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№627/2 (подперильная доска)<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR> 
+                                                                    </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/30/20 штапик <span><br>~-pr-1013020-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№628/1 (перила)<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR> 
+                                                                    </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~-pr-1012314-shtapik-dlya-fasadov-steklovitrazh</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№628/2 (подперильная доска)<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR> 
+                                                                    </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№630/1 (перила)<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR>                   
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№630/2 (подперильная доска)<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№631/1 (перила)<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№631/2 (подперильная доска)<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№629 (Пр_на косоур)<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№629/1 (Пр_на косоур)<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№629/2 (Пр_на косоур)<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№647/1 (подушка под балясину)<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№647/2 (подушка под балясину)<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+
+                                                                                  
                                                                 </TABLE>
                                                             </TD>
                                                         </TR>  
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="Другие" class="hover mapsite" id="footer52">
-                                                                <p data-href="detali-profili.php#drugie"  data-img="./dist/images/no-foto.png" id="floating53">Другие<span><br>~-drugie</span></p>
+                                                                <p data-href="detali-profili.php#drugie"  data-img="./dist/images/no-foto.png" id="floating53">Под ротанговую сетку<span><br>~</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~- shtapik-prizhimnoy-dlya-fasada</span></p>
+                                                                        <TD class="mapsite" colspan="2" style="padding: 35px 0;" id="flo-">
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№762 (дуб, бук под ротанговую сетку, крашеный)<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR>
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/17 штапик <span><br>~-pr-1012617-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR>
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/15 для карниза <span><br>~-pr-1012615-dlya-karniza</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/30/20 штапик <span><br>~-pr-1013020-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~-pr-1012314-shtapik-dlya-fasadov-steklovitrazh</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR>                   
+                                                                                    
                                                                 </TABLE>
                                                             </TD>
                                                         </TR>  
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="Поручни, лестницы" class="hover mapsite" id="footer53">
-                                                                <p data-href="detali-profili.php#poruchni-lestnicy"  data-img="./dist/images/no-foto.png" id="floating54">Поручни, лестницы<span><br>~-poruchni-lestnicy</span></p>
+                                                                <p  data-img="./dist/images/no-foto.png" id="floating54" data-href="detali-profili.php#poruchni-lestnicy">Раскладки<span><br>~</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~- shtapik-prizhimnoy-dlya-fasada</span></p>
+                                                                        <TD class="mapsite" colspan="2" style="padding: 35px 0;" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_МДФ_№8XX/1 или Пр_МДФ_№8XX/2<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR>
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/17 штапик <span><br>~-pr-1012617-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR>
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/15 для карниза <span><br>~-pr-1012615-dlya-karniza</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/30/20 штапик <span><br>~-pr-1013020-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~-pr-1012314-shtapik-dlya-fasadov-steklovitrazh</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR>                   
+                                                                                 
                                                                 </TABLE>
                                                             </TD>
                                                         </TR>  
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="Под ротанговую сетку" class="hover mapsite" id="footer54">
-                                                                <p data-href="detali-profili.php#pod-rotangovuyu-setku"  data-img="./dist/images/no-foto.png" id="floating55">Под ротанговую сетку<span><br>~-pod-rotangovuyu-setku</span></p>
+                                                                <p  data-img="./dist/images/no-foto.png" id="floating55" data-href="detali-profili.php#pod-rotangovuyu-setku">Для каркасов<span><br>~</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~- shtapik-prizhimnoy-dlya-fasada</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_КАРКАС_№9XX/YY (массив:сосна)<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/17 штапик <span><br>~-pr-1012617-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_КАРКАС_№9XX/YY Раскрой реечного щита для изготовления<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/15 для карниза <span><br>~-pr-1012615-dlya-karniza</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№928/24<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR> 
+                                                                    </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/30/20 штапик <span><br>~-pr-1013020-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№932/30<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR> 
+                                                                    </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~-pr-1012314-shtapik-dlya-fasadov-steklovitrazh</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№933<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR> 
+                                                                    </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№940/ХХХ<span><br>~</span></p>
                                                                         </TD>  
-                                                                    </TR>                   
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№964<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№925<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№925/601<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№925/602<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№925/701<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                    <TR>
+                                                                        <TD class="mapsite" id="flo-">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№925/702<span><br>~</span></p>
+                                                                        </TD>  
+                                                                    </TR>
+                                                                                    
                                                                 </TABLE>
                                                             </TD>
                                                         </TR>  
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
+                                                                                                                          
                                                         <TR>
-                                                            <TD data-tooltip="Раскладки" class="hover mapsite" id="footer55">
-                                                                <p data-href="detali-profili.php#raskladki"  data-img="./dist/images/no-foto.png" id="floating56">Раскладки<span><br>~-raskladki</span></p>
-                                                            </TD> 
-                                                            <TD>
-                                                                <TABLE >                                                                                          
-                                                                    <TR>
-                                                                        <TD class="mapsite"  colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~- shtapik-prizhimnoy-dlya-fasada</span></p>
-                                                                        </TD>  
-                                                                    </TR>
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/17 штапик <span><br>~-pr-1012617-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR>
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/15 для карниза <span><br>~-pr-1012615-dlya-karniza</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/30/20 штапик <span><br>~-pr-1013020-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~-pr-1012314-shtapik-dlya-fasadov-steklovitrazh</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR>                   
-                                                                </TABLE>
-                                                            </TD>
-                                                        </TR>  
-                                                        <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
-                                                        <TR>
-                                                            <TD data-tooltip="Для каркасов" class="hover mapsite" id="footer56">
-                                                                <p data-href="detali-profili.php#dlya-karkasov"  data-img="./dist/images/no-foto.png" id="floating57">Для каркасов<span><br>~- dlya-karkasov</span></p>
-                                                            </TD> 
-                                                            <TD>
-                                                                <TABLE >                                                                                          
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~- shtapik-prizhimnoy-dlya-fasada</span></p>
-                                                                        </TD>  
-                                                                    </TR>
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/17 штапик <span><br>~-pr-1012617-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR>
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/15 для карниза <span><br>~-pr-1012615-dlya-karniza</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/30/20 штапик <span><br>~-pr-1013020-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~-pr-1012314-shtapik-dlya-fasadov-steklovitrazh</span></p>
-                                                                        </TD>  
-                                                                    </TR> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
-                                                                        </TD>  
-                                                                    </TR>                   
-                                                                </TABLE>
-                                                            </TD>
-                                                        </TR>  
-                                                        <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
-                                                        <TR>
-                                                            <TD data-tooltip="Для столов" class="hover mapsite" id="footer57">
+                                                            <TD data-tooltip="Для столов" class="hover mapsite" id="footer55">
                                                                 <p data-href="detali-profili.php#dlya-stolov"  data-img="./dist/images/no-foto.png" id="floating58">Для столов<span><br>~-dlya-stolov</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~- shtapik-prizhimnoy-dlya-fasada</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№СТОЛ1  || обкладка_столешницы<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/17 штапик <span><br>~-pr-1012617-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№СТОЛ2  || над_плинтусом_пилястры<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/26/15 для карниза <span><br>~-pr-1012615-dlya-karniza</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№СТОЛ3/60/3/БФ  || пилястра<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/30/20 штапик <span><br>~-pr-1013020-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№СТОЛ4  || поясок_верхний_уровень<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~-pr-1012314-shtapik-dlya-fasadov-steklovitrazh</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№СТОЛ5  || обкладка_столешницы<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">Пр_№101/20/10.5 штапик <span><br>~-pr-10120105-shtapik</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="">Пр_№СТОЛ6  || обкладка_столешницы<span><br>~</span></p>
                                                                         </TD>  
                                                                     </TR>                   
                                                                 </TABLE>
