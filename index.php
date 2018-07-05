@@ -144,31 +144,31 @@ include 'inc-session-start.php';
                                                     <TABLE > <!-- LEVEL3--> 
                                                         <TR>
                                                             <TD   class="hover mapsite" >
-                                                                <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-foto.png" id="floating46">Накладки <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                <p  data-img="./dist/images/no-foto.png" id="floating46" data-href="detali-profili.php#profili-nakladki">Накладки <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >  <!--LEVEL4-->                                                                                        
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-profili-nakladki-50">                                                                          
-                                                                            <p data-href="detali-profili.php#profili-nakladki-50" data-img="./dist/images/mdf-nakladka-050-dsh.png">МДФ накладка №050/ДШ <span> <br>~profili-nakladki-50</span></p>
+                                                                            <p data-img="./dist/images/mdf-nakladka-050-dsh.png" data-href="detali-profili.php#profili-nakladki-50">МДФ накладка №050/ДШ <span> <br>~profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-profili-nakladki-51">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-51"   data-img="./dist/images/mdf-nakladka-051-dsh.png">МДФ накладка №051/ДШ <span> <br>~profili-nakladki-51</span></p>
+                                                                            <p   data-img="./dist/images/mdf-nakladka-051-dsh.png" data-href="detali-profili.php#profili-nakladki-51">МДФ накладка №051/ДШ <span> <br>~profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite"  colspan="2" id="flo-profili-nakladki-52">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-52"  data-img="./dist/images/mdf-nakladka-052-dsh.png">МДФ накладка №052/ДШ <span> <br>~profili-nakladki-52</span></p>
+                                                                            <p  data-img="./dist/images/mdf-nakladka-052-dsh.png" data-href="detali-profili.php#profili-nakladki-52">МДФ накладка №052/ДШ <span> <br>~profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite"  colspan="2" id="floprofili-nakladki-53">
-                                                                            <p data-img="./dist/images/no-foto.png"   data-href="detali-profili.php#profili-nakladki-53">МДФ накладка №053/ДШ <span> <br>~profili-nakladki-53</span></p>
+                                                                            <p data-img="./dist/images/profili-nakladki-53.png"   data-href="detali-profili.php#profili-nakladki-53">МДФ накладка №053/ДШ <span> <br>~profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -179,168 +179,168 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                                                                                
                                                         <TR>
                                                             <TD data-tooltip="Штапики" class="hover mapsite" id="footer46">
-                                                                <p data-href="detali-profili.php#shtapiki"  data-img="./dist/images/no-foto.png" id="floating47">Штапики <span><br>~shtapiki</span></p>
+                                                                <p  data-img="./dist/images/no-foto.png" id="floating47" data-href="detali-profili.php#shtapiki">Штапики <span><br>~shtapiki</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-pr-100-hh-yy-zz">
-                                                                            <p data-img="./dist/images/pr-100-hh-yy-zz.png"  data-href="">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~pr-100-hh-yy-zz</span></p>
+                                                                            <p data-img="./dist/images/pr-100-hh-yy-zz.png"  data-href="detali-profili.php#pr-100-hh-yy-zz">Пр_№100/XX/YY/ZZ штапик прижимной для фасада<span><br>~pr-100-hh-yy-zz</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-101-26-17">
-                                                                            <p data-img="./dist/images/pr-101-26-17.png"  data-href="">Пр_№101/26/17 штапик <span><br>~pr-101-26-17</span></p>
+                                                                            <p data-img="./dist/images/pr-101-26-17.png"  data-href="detali-profili.php#pr-101-26-17">Пр_№101/26/17 штапик <span><br>~pr-101-26-17</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-101-26-15">
-                                                                            <p data-img="./dist/images/pr-101-26-15.png" data-href="" >Пр_№101/26/15 для карниза <span><br>~-pr-101-26-15</span></p>
+                                                                            <p data-img="./dist/images/pr-101-26-15.png" data-href="detali-profili.php#pr-101-26-15" >Пр_№101/26/15 для карниза <span><br>~pr-101-26-15</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-101-30-20">
-                                                                            <p data-img="./dist/images/pr-101-30-20.png" data-href="" >Пр_№101/30/20 штапик <span><br>~pr-101-30-20</span></p>
+                                                                            <p data-img="./dist/images/pr-101-30-20.png" data-href="detali-profili.php#pr-101-30-20" >Пр_№101/30/20 штапик <span><br>~pr-101-30-20</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-101-23-14">
-                                                                            <p data-img="./dist/images/pr-101-23-14.png" data-href="" >Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~pr-101-23-14</span></p>
+                                                                            <p data-img="./dist/images/pr-101-23-14.png" data-href="detali-profili.php#pr-101-23-14" >Пр_№101/23/14 (штапик для фасадов стекло/витраж)<span><br>~pr-101-23-14</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-101-20-105">
-                                                                            <p data-img="./dist/images/pr-101-20-105.png" data-href="">Пр_№101/20/10.5 штапик<span><br>~pr-101-20-105</span></p>
+                                                                            <p data-img="./dist/images/pr-101-20-105.png" data-href="detali-profili.php#pr-101-20-105">Пр_№101/20/10.5 штапик<span><br>~pr-101-20-105</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-102-19-105">
-                                                                            <p data-img="./dist/images/pr-102-19-105.png" data-href="">Пр_№102/19/10.5  штапик<span><br>~-pr-102-19-105</span></p>
+                                                                            <p data-img="./dist/images/pr-102-19-105.png" data-href="detali-profili.php#pr-102-19-105">Пр_№102/19/10.5 штапик<span><br>~pr-102-19-105</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-103">
-                                                                            <p data-img="./dist/images/pr-103.png" data-href="">Пр_№103 штапик<span><br>~pr-103</span></p>
+                                                                            <p data-img="./dist/images/pr-103.png" data-href="detali-profili.php#pr-103">Пр_№103 штапик<span><br>~pr-103</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-104-7-5">
-                                                                            <p data-img="./dist/images/pr-104-7-5.png" data-href="">Пр_№104/7/5 штапик<span><br>~pr-104-7-5</span></p>
+                                                                            <p data-img="./dist/images/pr-104-7-5.png" data-href="detali-profili.php#pr-104-7-5">Пр_№104/7/5 штапик<span><br>~pr-104-7-5</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-105-13-105">
-                                                                            <p data-img="./dist/images/pr-105-13-105.png" data-href="">Пр_№105/13/10.5 штапик<span><br>~pr-105-13-105</span></p>
+                                                                            <p data-img="./dist/images/pr-105-13-105.png" data-href="detali-profili.php#pr-105-13-105">Пр_№105/13/10.5 штапик<span><br>~pr-105-13-105</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-105-195-17">
-                                                                            <p data-img="./dist/images/pr-105-195-17.png" data-href="">Пр_№105/19.5/17 штапик<span><br>~pr-105-195-17</span></p>
+                                                                            <p data-img="./dist/images/pr-105-195-17.png" data-href="detali-profili.php#pr-105-195-17">Пр_№105/19.5/17 штапик<span><br>~pr-105-195-17</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-106">
-                                                                            <p data-img="./dist/images/pr-106.png" data-href="">Пр_№106 раскладка<span><br>~pr-106</span></p>
+                                                                            <p data-img="./dist/images/pr-106.png" data-href="detali-profili.php#pr-106">Пр_№106 раскладка<span><br>~pr-106</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-108">
-                                                                            <p data-img="./dist/images/pr-108.png" data-href="">Пр_№108 раскладка<span><br>~pr-108</span></p>
+                                                                            <p data-img="./dist/images/pr-108.png" data-href="detali-profili.php#pr-108">Пр_№108 раскладка<span><br>~pr-108</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-111">
-                                                                            <p data-img="./dist/images/pr-111.png" data-href="">Пр_№111 монтажный<span><br>~pr-111</span></p>
+                                                                            <p data-img="./dist/images/pr-111.png" data-href="detali-profili.php#pr-111">Пр_№111 монтажный<span><br>~pr-111</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-112">
-                                                                            <p data-img="./dist/images/pr-112.png" data-href="">Пр_№112 штапик<span><br>~pr-112</span></p>
+                                                                            <p data-img="./dist/images/pr-112.png" data-href="detali-profili.php#pr-112">Пр_№112 штапик<span><br>~pr-112</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-113">
-                                                                            <p data-img="./dist/images/pr-113.png" data-href="">Пр_№113 штапик<span><br>~pr-113</span></p>
+                                                                            <p data-img="./dist/images/pr-113.png" data-href="detali-profili.php#pr-113">Пр_№113 штапик<span><br>~pr-113</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-126">
-                                                                            <p data-img="./dist/images/pr-126.png" data-href="">Пр_№126 нащельник на двустворчатую дверь<span><br>~pr-126</span></p>
+                                                                            <p data-img="./dist/images/pr-126.png" data-href="detali-profili.php#pr-126">Пр_№126 нащельник на двустворчатую дверь<span><br>~pr-126</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-157">
-                                                                            <p data-img="./dist/images/pr-157.png" data-href="">Пр_№157 раскладка<span><br>~pr-157</span></p>
+                                                                            <p data-img="./dist/images/pr-157.png" data-href="detali-profili.php#pr-157">Пр_№157 раскладка<span><br>~pr-157</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-157-met">
-                                                                            <p data-img="./dist/images/pr-157-met.png" data-href="">Пр_№157/МЕТ раскладка<span><br>~pr-157-met</span></p>
+                                                                            <p data-img="./dist/images/pr-157-met.png" data-href="detali-profili.php#pr-157-met">Пр_№157/МЕТ раскладка<span><br>~pr-157-met</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                      <TR>
                                                                         <TD class="mapsite" id="flo-pr-158-19-105-1">
-                                                                            <p data-img="./dist/images/pr-158-19-105-1.png" data-href="">Пр_№158/19/10.5/1 штапик <span><br>~pr-158-19-105-1</span></p>
+                                                                            <p data-img="./dist/images/pr-158-19-105-1.png" data-href="detali-profili.php#pr-158-19-105-1">Пр_№158/19/10.5/1 штапик <span><br>~pr-158-19-105-1</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-158-28-19-1">
-                                                                            <p data-img="./dist/images/pr-158-28-19-1.png" data-href="">Пр_№158/28/19/1 штапик <span><br>~pr-158-28-19-1</span></p>
+                                                                            <p data-img="./dist/images/pr-158-28-19-1.png" data-href="detali-profili.php#pr-158-28-19-1">Пр_№158/28/19/1 штапик <span><br>~pr-158-28-19-1</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-158-2">
-                                                                            <p data-img="./dist/images/pr-158-2.png" data-href="">Пр_№158/2 штапик<span><br>~pr-158-2</span></p>
+                                                                            <p data-img="./dist/images/pr-158-2.png" data-href="detali-profili.php#pr-158-2">Пр_№158/2 штапик<span><br>~pr-158-2</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-159">
-                                                                            <p data-img="./dist/images/pr-159.png" data-href="">Пр_№159 штапик<span><br>~pr-159</span></p>
+                                                                            <p data-img="./dist/images/pr-159.png" data-href="detali-profili.php#pr-159">Пр_№159 штапик<span><br>~pr-159</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-160">
-                                                                            <p data-img="./dist/images/pr-160.png" data-href="">Пр_№160 раскладка<span><br>~pr-160</span></p>
+                                                                            <p data-img="./dist/images/pr-160.png" data-href="detali-profili.php#pr-160">Пр_№160 раскладка<span><br>~pr-160</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-161-16-105">
-                                                                            <p data-img="./dist/images/pr-161-16-105.png" data-href="">Пр_№161/16/10.5 штапик<span><br>~pr-161-16-105</span></p>
+                                                                            <p data-img="./dist/images/pr-161-16-105.png" data-href="detali-profili.php#pr-161-16-105">Пр_№161/16/10.5 штапик<span><br>~pr-161-16-105</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-162">
-                                                                            <p data-img="./dist/images/pr-162.png" data-href="">Пр_№162 штапик<span><br>~pr-162</span></p>
+                                                                            <p data-img="./dist/images/pr-162.png" data-href="detali-profili.php#pr-162">Пр_№162 штапик<span><br>~pr-162</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-163">
-                                                                            <p data-img="./dist/images/pr-163.png" data-href="">Пр_№163 штапик <span><br>~pr-163</span></p>
+                                                                            <p data-img="./dist/images/pr-163.png" data-href="detali-profili.php#pr-163">Пр_№163 штапик <span><br>~pr-163</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-180-18-105">
-                                                                            <p data-img="./dist/images/pr-180-18-105.png" data-href="">Пр_№180/18/10.5 штапик <span><br>~pr-180-18-105</span></p>
+                                                                            <p data-img="./dist/images/pr-180-18-105.png" data-href="detali-profili.php#pr-180-18-105">Пр_№180/18/10.5 штапик <span><br>~pr-180-18-105</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-181-18-105">
-                                                                            <p data-img="./dist/images/pr-181-18-105.png" data-href="">Пр_№181/18/10.5 штапик <span><br>~pr-181-18-105</span></p>
+                                                                            <p data-img="./dist/images/pr-181-18-105.png" data-href="detali-profili.php#pr-181-18-105">Пр_№181/18/10.5 штапик <span><br>~pr-181-18-105</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-185-18-105">
-                                                                            <p data-img="./dist/images/pr-185-18-105.png" data-href="">Пр_№185/18/10.5 штапик <span><br>~pr-185-18-105</span></p>
+                                                                            <p data-img="./dist/images/pr-185-18-105.png" data-href="detali-profili.php#pr-185-18-105">Пр_№185/18/10.5 штапик <span><br>~pr-185-18-105</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-190">
-                                                                            <p data-img="./dist/images/pr-190.png" data-href="">Пр_№190 штапик <span><br>~pr-190</span></p>
+                                                                            <p data-img="./dist/images/pr-190.png" data-href="detali-profili.php#pr-190">Пр_№190 штапик <span><br>~pr-190</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-199">
-                                                                            <p data-img="./dist/images/pr-199.png" data-href="">Пр_№199 штапик <span><br>~pr-199</span></p>
+                                                                            <p data-img="./dist/images/pr-199.png" data-href="detali-profili.php#pr-199">Пр_№199 штапик <span><br>~pr-199</span></p>
                                                                         </TD>  
                                                                     </TR>  
                                                                                                                                         
@@ -351,143 +351,143 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="Для карнизов" class="hover mapsite" id="footer47">
-                                                                <p data-href="detali-profili.php#dlya-karnizov"  data-img="./dist/images/no-foto.png" id="floating48">Для карнизов <span><br>~- dlya-karnizov</span></p>
+                                                                <p  data-img="./dist/images/no-foto.png" id="floating48" data-href="detali-profili.php#dlya-karnizov">Для карнизов <span><br>~dlya-karnizov</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-pr-204m">
-                                                                            <p data-img="./dist/images/pr-204m.png" data-href="">Пр_№204м (карнизный)<span><br>~pr-204m</span></p>
+                                                                            <p data-img="./dist/images/pr-204m.png" data-href="detali-profili.php#pr-204m">Пр_№204м (карнизный)<span><br>~pr-204m</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-214">
-                                                                            <p data-img="./dist/images/pr-214.png" data-href="">Пр_№214<span><br>~pr-214</span></p>
+                                                                            <p data-img="./dist/images/pr-214.png" data-href="detali-profili.php#pr-214">Пр_№214<span><br>~pr-214</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-214-k">
-                                                                            <p data-img="./dist/images/pr-214-k.png" data-href="">Пр_№214/К<span><br>~pr-214-k</span></p>
+                                                                            <p data-img="./dist/images/pr-214-k.png" data-href="detali-profili.php#pr-214-k">Пр_№214/К<span><br>~pr-214-k</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-221">
-                                                                            <p data-img="./dist/images/pr-221.png" data-href="">Пр_№221<span><br>~pr-221</span></p>
+                                                                            <p data-img="./dist/images/pr-221.png" data-href="detali-profili.php#pr-221">Пр_№221<span><br>~pr-221</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-221-k">
-                                                                            <p data-img="./dist/images/pr-221-k.png" data-href="">Пр_№221/К<span><br>~pr-221-k</span></p>
+                                                                            <p data-img="./dist/images/pr-221-k.png" data-href="detali-profili.php#pr-221-k">Пр_№221/К<span><br>~pr-221-k</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-221-1k">
-                                                                            <p data-img="./dist/images/pr-221-1k.png" data-href="">Пр_№221/1К<span><br>~pr-221-1k</span></p>
+                                                                            <p data-img="./dist/images/pr-221-1k.png" data-href="detali-profili.php#pr-221-1k">Пр_№221/1К<span><br>~pr-221-1k</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-221-2k">
-                                                                            <p data-img="./dist/images/pr-221-2k.png" data-href="">Пр_№221/2К<span><br>~pr-221-2k</span></p>
+                                                                            <p data-img="./dist/images/pr-221-2k.png" data-href="detali-profili.php#pr-221-2k">Пр_№221/2К<span><br>~pr-221-2k</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-234">
-                                                                            <p data-img="./dist/images/pr-234.png" data-href="">Пр_№234<span><br>~pr-234</span></p>
+                                                                            <p data-img="./dist/images/pr-234.png" data-href="detali-profili.php#pr-234">Пр_№234<span><br>~pr-234</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-235">
-                                                                            <p data-img="./dist/images/pr-235.png" data-href="">Пр_№235<span><br>~pr-235</span></p>
+                                                                            <p data-img="./dist/images/pr-235.png" data-href="detali-profili.php#pr-235">Пр_№235<span><br>~pr-235</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-238">
-                                                                            <p data-img="./dist/images/pr-238.png" data-href="">Пр_№238 (карниз)<span><br>~pr-238</span></p>
+                                                                            <p data-img="./dist/images/pr-238.png" data-href="detali-profili.php#pr-238">Пр_№238 (карниз)<span><br>~pr-238</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-251">
-                                                                            <p data-img="./dist/images/pr-251.png" data-href="">Пр_№251 (карниз)<span><br>~pr-251</span></p>
+                                                                            <p data-img="./dist/images/pr-251.png" data-href="detali-profili.php#pr-251">Пр_№251 (карниз)<span><br>~pr-251</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-252">
-                                                                            <p data-img="./dist/images/pr-252.png" data-href="">Пр_№252 (карниз)<span><br>~pr-252</span></p>
+                                                                            <p data-img="./dist/images/pr-252.png" data-href="detali-profili.php#pr-252">Пр_№252 (карниз)<span><br>~pr-252</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-263">
-                                                                            <p data-img="./dist/images/pr-263.png" data-href="">Пр_№263<span><br>~pr-263</span></p>
+                                                                            <p data-img="./dist/images/pr-263.png" data-href="detali-profili.php#pr-263">Пр_№263<span><br>~pr-263</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-263-k">
-                                                                            <p data-img="./dist/images/pr-263-k.png" data-href="">Пр_№263/К<span><br>~pr-263-k</span></p>
+                                                                            <p data-img="./dist/images/pr-263-k.png" data-href="detali-profili.php#pr-263-k">Пр_№263/К<span><br>~pr-263-k</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-264">
-                                                                            <p data-img="./dist/images/pr-264.png" data-href="">Пр_№264<span><br>~pr-264</span></p>
+                                                                            <p data-img="./dist/images/pr-264.png" data-href="detali-profili.php#pr-264">Пр_№264<span><br>~pr-264</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-265">
-                                                                            <p data-img="./dist/images/pr-265.png" data-href="">Пр_№265<span><br>~pr-265</span></p>
+                                                                            <p data-img="./dist/images/pr-265.png" data-href="detali-profili.php#pr-265">Пр_№265<span><br>~pr-265</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-266">
-                                                                            <p data-img="./dist/images/pr-266.png" data-href="">Пр_№266<span><br>~pr-266</span></p>
+                                                                            <p data-img="./dist/images/pr-266.png" data-href="detali-profili.php#pr-266">Пр_№266<span><br>~pr-266</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-270">
-                                                                            <p data-img="./dist/images/pr-270.png" data-href="">Пр_№270<span><br>~pr-270</span></p>
+                                                                            <p data-img="./dist/images/pr-270.png" data-href="detali-profili.php#pr-270">Пр_№270<span><br>~pr-270</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-271">
-                                                                            <p data-img="./dist/images/pr-271.png" data-href="">Пр_№271<span><br>~pr-271</span></p>
+                                                                            <p data-img="./dist/images/pr-271.png" data-href="detali-profili.php#pr-271">Пр_№271<span><br>~pr-271</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-272">
-                                                                            <p data-img="./dist/images/pr-272.png" data-href="">Пр_№272<span><br>~pr-272</span></p>
+                                                                            <p data-img="./dist/images/pr-272.png" data-href="detali-profili.php#pr-272">Пр_№272<span><br>~pr-272</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-273">
-                                                                            <p data-img="./dist/images/pr-273.png" data-href="">Пр_№273<span><br>~pr-273</span></p>
+                                                                            <p data-img="./dist/images/pr-273.png" data-href="detali-profili.php#pr-273">Пр_№273<span><br>~pr-273</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-274">
-                                                                            <p data-img="./dist/images/pr-274.png" data-href="">Пр_№274<span><br>~pr-274</span></p>
+                                                                            <p data-img="./dist/images/pr-274.png" data-href="detali-profili.php#pr-274">Пр_№274<span><br>~pr-274</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-275">
-                                                                            <p data-img="./dist/images/pr-275.png" data-href="">Пр_№275<span><br>~pr-275</span></p>
+                                                                            <p data-img="./dist/images/pr-275.png" data-href="detali-profili.php#pr-275">Пр_№275<span><br>~pr-275</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-277">
-                                                                            <p data-img="./dist/images/pr-277.png" data-href="">Пр_№277<span><br>~pr-277</span></p>
+                                                                            <p data-img="./dist/images/pr-277.png" data-href="detali-profili.php#pr-277">Пр_№277<span><br>~pr-277</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-278">
-                                                                            <p data-img="./dist/images/pr-278.png" data-href="">Пр_№278<span><br>~pr-278</span></p>
+                                                                            <p data-img="./dist/images/pr-278.png" data-href="detali-profili.php#pr-278">Пр_№278<span><br>~pr-278</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-279">
-                                                                            <p data-img="./dist/images/pr-279.png" data-href="">Пр_№279<span><br>~pr-279</span></p>
+                                                                            <p data-img="./dist/images/pr-279.png" data-href="detali-profili.php#pr-279">Пр_№279<span><br>~pr-279</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-280">
-                                                                            <p data-img="./dist/images/pr-280.png" data-href="">Пр_№280<span><br>~pr-280</span></p>
+                                                                            <p data-img="./dist/images/pr-280.png" data-href="detali-profili.php#pr-280">Пр_№280<span><br>~pr-280</span></p>
                                                                         </TD>  
                                                                     </TR>                    
                                                                 </TABLE>
@@ -496,199 +496,199 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="Для обрамления" class="hover mapsite" id="footer48">
-                                                                <p data-href="detali-profili.php#dlya-obramleniya"  data-img="./dist/images/no-foto.png" id="floating49">Для обрамления<span><br>~-dlya-obramleniya</span></p>
+                                                                <p  data-img="./dist/images/no-foto.png" id="floating49" data-href="detali-profili.php#dlya-obramleniya">Для обрамления<span><br>~dlya-obramleniya</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-pr-301">
-                                                                            <p data-img="./dist/images/pr-301.png" data-href="">Пр_№301<span><br>~pr-301</span></p>
+                                                                            <p data-img="./dist/images/pr-301.png" data-href="detali-profili.php#pr-301">Пр_№301<span><br>~pr-301</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-302">
-                                                                            <p data-img="./dist/images/pr-302.png" data-href="">Пр_№302/СОСТАВНОЙ используется совместно с Пр_РЕЗНОЙ_№1011 <span><br>~pr-302</span></p>
+                                                                            <p data-img="./dist/images/pr-302.png" data-href="detali-profili.php#pr-302">Пр_№302/СОСТАВНОЙ используется совместно с Пр_РЕЗНОЙ_№1011 <span><br>~pr-302</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-303">
-                                                                            <p data-img="./dist/images/pr-303.png" data-href="">Пр_№303<span><br>~pr-303</span></p>
+                                                                            <p data-img="./dist/images/pr-303.png" data-href="detali-profili.php#pr-303">Пр_№303<span><br>~pr-303</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-319-60-3">
-                                                                            <p data-img="./dist/images/pr-319-60-3.png" data-href="">Пр_№319/60/3/ХХ_YY<span><br>~pr-319-60-3</span></p>
+                                                                            <p data-img="./dist/images/pr-319-60-3.png" data-href="detali-profili.php#pr-319-60-3">Пр_№319/60/3/ХХ_YY<span><br>~pr-319-60-3</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-319-80-3">
-                                                                            <p data-img="./dist/images/pr-319-80-3.png" data-href="">Пр_№319/80/3/ХХ_YY<span><br>~pr-319-80-3</span></p>
+                                                                            <p data-img="./dist/images/pr-319-80-3.png" data-href="detali-profili.php#pr-319-80-3">Пр_№319/80/3/ХХ_YY<span><br>~pr-319-80-3</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-319-100-4">
-                                                                            <p data-img="./dist/images/pr-319-100-4.png" data-href="">Пр_№319/100/4/ХХ_YY<span><br>~pr-319-100-4</span></p>
+                                                                            <p data-img="./dist/images/pr-319-100-4.png" data-href="detali-profili.php#pr-319-100-4">Пр_№319/100/4/ХХ_YY<span><br>~pr-319-100-4</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-319-120-4">
-                                                                            <p data-img="./dist/images/pr-319-120-4.png" data-href="">Пр_№319/120/4/ХХ_YY<span><br>~pr-319-120-4</span></p>
+                                                                            <p data-img="./dist/images/pr-319-120-4.png" data-href="detali-profili.php#pr-319-120-4">Пр_№319/120/4/ХХ_YY<span><br>~pr-319-120-4</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-319-120-6">
-                                                                            <p data-img="./dist/images/pr-319-120-6.png" data-href="">Пр_№319/120/6/ХХ_YY<span><br>~pr-319-120-6</span></p>
+                                                                            <p data-img="./dist/images/pr-319-120-6.png" data-href="detali-profili.php#pr-319-120-6">Пр_№319/120/6/ХХ_YY<span><br>~pr-319-120-6</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-320-60">
-                                                                            <p data-img="./dist/images/pr-320-60.png" data-href="">Пр_№320/60<span><br>~pr-320-60</span></p>
+                                                                            <p data-img="./dist/images/pr-320-60.png" data-href="detali-profili.php#pr-320-60">Пр_№320/60<span><br>~pr-320-60</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-320-80">
-                                                                            <p data-img="./dist/images/pr-320-80.png" data-href="">Пр_№320/80<span><br>~pr-320-80</span></p>
+                                                                            <p data-img="./dist/images/pr-320-80.png" data-href="detali-profili.php#pr-320-80">Пр_№320/80<span><br>~pr-320-80</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-320-100">
-                                                                            <p data-img="./dist/images/pr-320-100.png" data-href="">Пр_№320/100<span><br>~pr-320-100</span></p>
+                                                                            <p data-img="./dist/images/pr-320-100.png" data-href="detali-profili.php#pr-320-100">Пр_№320/100<span><br>~pr-320-100</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-320-120">
-                                                                            <p data-img="./dist/images/pr-320-120.png" data-href="">Пр_№320/120<span><br>~pr-320-120</span></p>
+                                                                            <p data-img="./dist/images/pr-320-120.png" data-href="detali-profili.php#pr-320-120">Пр_№320/120<span><br>~pr-320-120</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-323">
-                                                                            <p data-img="./dist/images/pr-323.png" data-href="">Пр_№323<span><br>~pr-323</span></p>
+                                                                            <p data-img="./dist/images/pr-323.png" data-href="detali-profili.php#pr-323">Пр_№323<span><br>~pr-323</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-324">
-                                                                            <p data-img="./dist/images/pr-324.png" data-href="">Пр_№324<span><br>~pr-324</span></p>
+                                                                            <p data-img="./dist/images/pr-324.png" data-href="detali-profili.php#pr-324">Пр_№324<span><br>~pr-324</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-60-2">
-                                                                            <p data-img="./dist/images/pr-345-60-2.png" data-href="">Пр_№345/60/2/ХХ_YY<span><br>~pr-345-60-2</span></p>
+                                                                            <p data-img="./dist/images/pr-345-60-2.png" data-href="detali-profili.php#pr-345-60-2">Пр_№345/60/2/ХХ_YY<span><br>~pr-345-60-2</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-80-3">
-                                                                            <p data-img="./dist/images/pr-345-80-3.png" data-href="">Пр_№345/80/3/ХХ_YY<span><br>~pr-345-80-3</span></p>
+                                                                            <p data-img="./dist/images/pr-345-80-3.png" data-href="detali-profili.php#pr-345-80-3">Пр_№345/80/3/ХХ_YY<span><br>~pr-345-80-3</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-100-4">
-                                                                            <p data-img="./dist/images/pr-345-100-4.png" data-href="">Пр_№345/100/4/ХХ_YY<span><br>~pr-345-100-4</span></p>
+                                                                            <p data-img="./dist/images/pr-345-100-4.png" data-href="detali-profili.php#pr-345-100-4">Пр_№345/100/4/ХХ_YY<span><br>~pr-345-100-4</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-120-4">
-                                                                            <p data-img="./dist/images/pr-345-120-4.png" data-href="">Пр_№345/120/4/ХХ_YY<span><br>~pr-345-120-4</span></p>
+                                                                            <p data-img="./dist/images/pr-345-120-4.png" data-href="detali-profili.php#pr-345-120-4">Пр_№345/120/4/ХХ_YY<span><br>~pr-345-120-4</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-120-6">
-                                                                            <p data-img="./dist/images/pr-345-120-6.png" data-href="">Пр_№345/120/6/ХХ_YY<span><br>~pr-345-120-6</span></p>
+                                                                            <p data-img="./dist/images/pr-345-120-6.png" data-href="detali-profili.php#pr-345-120-6">Пр_№345/120/6/ХХ_YY<span><br>~pr-345-120-6</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-168-6">
-                                                                            <p data-img="./dist/images/pr-345-168-6.png" data-href="">Пр_№345/168/6/ХХ_YY<span><br>~pr-345-168-6</span></p>
+                                                                            <p data-img="./dist/images/pr-345-168-6.png" data-href="detali-profili.php#pr-345-168-6">Пр_№345/168/6/ХХ_YY<span><br>~pr-345-168-6</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-60-2-hh-yy-bf">
-                                                                            <p data-img="./dist/images/pr-345-60-2-hh-yy-bf.png" data-href="">Пр_№345/60/2/ХХ_YY/БФ<span><br>~pr-345-60-2-hh-yy-bf</span></p>
+                                                                            <p data-img="./dist/images/pr-345-60-2-hh-yy-bf.png" data-href="detali-profili.php#pr-345-60-2-hh-yy-bf">Пр_№345/60/2/ХХ_YY/БФ<span><br>~pr-345-60-2-hh-yy-bf</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-80-3-hh-yy-bf">
-                                                                            <p data-img="./dist/images/pr-345-80-3-hh-yy-bf.png" data-href="">Пр_№345/80/3/ХХ_YY/БФ<span><br>~pr-345-80-3-hh-yy-bf</span></p>
+                                                                            <p data-img="./dist/images/pr-345-80-3-hh-yy-bf.png" data-href="detali-profili.php#pr-345-80-3-hh-yy-bf">Пр_№345/80/3/ХХ_YY/БФ<span><br>~pr-345-80-3-hh-yy-bf</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-100-4-hh-yy-bf">
-                                                                            <p data-img="./dist/images/pr-345-100-4-hh-yy-bf.png" data-href="">Пр_№345/100/4/ХХ_YY/БФ<span><br>~pr-345-100-4-hh-yy-bf</span></p>
+                                                                            <p data-img="./dist/images/pr-345-100-4-hh-yy-bf.png" data-href="detali-profili.php#pr-345-100-4-hh-yy-bf">Пр_№345/100/4/ХХ_YY/БФ<span><br>~pr-345-100-4-hh-yy-bf</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-120-4-hh-yy-bf">
-                                                                            <p data-img="./dist/images/pr-345-120-4-hh-yy-bf.png" data-href="">Пр_№345/120/4/ХХ_YY/БФ<span><br>~pr-345-120-4-hh-yy-bf</span></p>
+                                                                            <p data-img="./dist/images/pr-345-120-4-hh-yy-bf.png" data-href="detali-profili.php#pr-345-120-4-hh-yy-bf">Пр_№345/120/4/ХХ_YY/БФ<span><br>~pr-345-120-4-hh-yy-bf</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-120-6-hh-yy-bf">
-                                                                            <p data-img="./dist/images/pr-345-120-6-hh-yy-bf.png" data-href="">Пр_№345/120/6/ХХ_YY/БФ<span><br>~pr-345-120-6-hh-yy-bf</span></p>
+                                                                            <p data-img="./dist/images/pr-345-120-6-hh-yy-bf.png" data-href="detali-profili.php#pr-345-120-6-hh-yy-bf">Пр_№345/120/6/ХХ_YY/БФ<span><br>~pr-345-120-6-hh-yy-bf</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-345-168-6-hh-yy-bf">
-                                                                            <p data-img="./dist/images/pr-345-168-6-hh-yy-bf.png" data-href="">Пр_№345/168/6/ХХ_YY/БФ<span><br>~pr-345-168-6-hh-yy-bf</span></p>
+                                                                            <p data-img="./dist/images/pr-345-168-6-hh-yy-bf.png" data-href="detali-profili.php#pr-345-168-6-hh-yy-bf">Пр_№345/168/6/ХХ_YY/БФ<span><br>~pr-345-168-6-hh-yy-bf</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-322-80">
-                                                                            <p data-img="./dist/images/pr-322-80.png" data-href="">Пр_№322/80<span><br>~pr-322-80</span></p>
+                                                                            <p data-img="./dist/images/pr-322-80.png" data-href="detali-profili.php#pr-322-80">Пр_№322/80<span><br>~pr-322-80</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-359">
-                                                                            <p data-img="./dist/images/pr-359.png" data-href="">Пр_№359<span><br>~pr-359</span></p>
+                                                                            <p data-img="./dist/images/pr-359.png" data-href="detali-profili.php#pr-359">Пр_№359<span><br>~pr-359</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-361">
-                                                                            <p data-img="./dist/images/pr-361.png" data-href="">Пр_№361<span><br>~pr-361</span></p>
+                                                                            <p data-img="./dist/images/pr-361.png" data-href="detali-profili.php#pr-361">Пр_№361<span><br>~pr-361</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-366">
-                                                                            <p data-img="./dist/images/pr-366.png" data-href="">Пр_№366<span><br>~pr-366</span></p>
+                                                                            <p data-img="./dist/images/pr-366.png" data-href="detali-profili.php#pr-366">Пр_№366<span><br>~pr-366</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-374-120">
-                                                                            <p data-img="./dist/images/pr-374-120.png" data-href="">Пр_№374/120<span><br>~pr-374-120</span></p>
+                                                                            <p data-img="./dist/images/pr-374-120.png" data-href="detali-profili.php#pr-374-120">Пр_№374/120<span><br>~pr-374-120</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-375">
-                                                                            <p data-img="./dist/images/pr-375.png" data-href="">Пр_№375<span><br>~pr-375</span></p>
+                                                                            <p data-img="./dist/images/pr-375.png" data-href="detali-profili.php#pr-375">Пр_№375<span><br>~pr-375</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-379">
-                                                                            <p data-img="./dist/images/pr-379.png" data-href="">Пр_№379<span><br>~pr-379</span></p>
+                                                                            <p data-img="./dist/images/pr-379.png" data-href="detali-profili.php#pr-379">Пр_№379<span><br>~pr-379</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-380">
-                                                                            <p data-img="./dist/images/pr-380.png" data-href="">Пр_№380<span><br>~pr-380</span></p>
+                                                                            <p data-img="./dist/images/pr-380.png" data-href="detali-profili.php#pr-380">Пр_№380<span><br>~pr-380</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-381">
-                                                                            <p data-img="./dist/images/pr-381.png" data-href="">Пр_№381<span><br>~pr-381</span></p>
+                                                                            <p data-img="./dist/images/pr-381.png" data-href="detali-profili.php#pr-381">Пр_№381<span><br>~pr-381</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-382">
-                                                                            <p data-img="./dist/images/pr-382.png" data-href="">Пр_№382<span><br>~pr-382</span></p>
+                                                                            <p data-img="./dist/images/pr-382.png" data-href="detali-profili.php#pr-382">Пр_№382<span><br>~pr-382</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-383">
-                                                                            <p data-img="./dist/images/pr-383.png" data-href="">Пр_№383<span><br>~pr-383</span></p>
+                                                                            <p data-img="./dist/images/pr-383.png" data-href="detali-profili.php#pr-383">Пр_№383<span><br>~pr-383</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-384">
-                                                                            <p data-img="./dist/images/pr-384.png" data-href="">Пр_№384<span><br>~pr-384</span></p>
+                                                                            <p data-img="./dist/images/pr-384.png" data-href="detali-profili.php#pr-384">Пр_№384<span><br>~pr-384</span></p>
                                                                         </TD>  
                                                                     </TR>
 
@@ -699,103 +699,103 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="Пилястры" class="hover mapsite" id="footer49">
-                                                                <p data-href="detali-profili.php#plintus-moldingi"  data-img="./dist/images/no-foto.png" id="floating50">Плинтус, молдинги<span><br>~plintus-moldingi</span></p>
+                                                                <p  data-img="./dist/images/no-foto.png" id="floating50" data-href="detali-profili.php#plintus-moldingi">Плинтус, молдинги<span><br>~plintus-moldingi</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-pr-400-hh">
-                                                                            <p data-img="./dist/images/pr-400-hh.png" data-href="">Пр_№400/ХХ<span><br>~pr-400-hh</span></p>
+                                                                            <p data-img="./dist/images/pr-400-hh.png" data-href="detali-profili.php#pr-400-hh">Пр_№400/ХХ<span><br>~pr-400-hh</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-401-hh">
-                                                                            <p data-img="./dist/images/pr-401-hh.png" data-href="">Пр_№401/ХХ (плинтус)<span><br>~pr-401-hh</span></p>
+                                                                            <p data-img="./dist/images/pr-401-hh.png" data-href="detali-profili.php#pr-401-hh">Пр_№401/ХХ (плинтус)<span><br>~pr-401-hh</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-413">
-                                                                            <p data-img="./dist/images/pr-413.png" data-href="">Пр_№413<span><br>~pr-413</span></p>
+                                                                            <p data-img="./dist/images/pr-413.png" data-href="detali-profili.php#pr-413">Пр_№413<span><br>~pr-413</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-418-90">
-                                                                            <p data-img="./dist/images/pr-418-90.png" data-href="">Пр_№418/90 (плинтус)<span><br>~pr-418-90</span></p>
+                                                                            <p data-img="./dist/images/pr-418-90.png" data-href="detali-profili.php#pr-418-90">Пр_№418/90 (плинтус)<span><br>~pr-418-90</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-418-1">
-                                                                            <p data-img="./dist/images/pr-418-1.png" data-href="">Пр_№418/1 (плинтус)<span><br>~pr-418-1</span></p>
+                                                                            <p data-img="./dist/images/pr-418-1.png" data-href="detali-profili.php#pr-418-1">Пр_№418/1 (плинтус)<span><br>~pr-418-1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-418f">
-                                                                            <p data-img="./dist/images/pr-418f.png" data-href="">Пр_№418Ф (плинтус)<span><br>~pr-418f</span></p>
+                                                                            <p data-img="./dist/images/pr-418f.png" data-href="detali-profili.php#pr-418f">Пр_№418Ф (плинтус)<span><br>~pr-418f</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-418-paz">
-                                                                            <p data-img="./dist/images/pr-418-paz.png" data-href="">Пр_№418/ПАЗ плинтус на экраны радиатора<span><br>~pr-418-paz</span></p>
+                                                                            <p data-img="./dist/images/pr-418-paz.png" data-href="detali-profili.php#pr-418-paz">Пр_№418/ПАЗ плинтус на экраны радиатора<span><br>~pr-418-paz</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-422-14">
-                                                                            <p data-img="./dist/images/pr-422-14.png" data-href="">Пр_№422/14 (полуперила)<span><br>~pr-422-14</span></p>
+                                                                            <p data-img="./dist/images/pr-422-14.png" data-href="detali-profili.php#pr-422-14">Пр_№422/14 (полуперила)<span><br>~pr-422-14</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-422-25">
-                                                                            <p data-img="./dist/images/pr-422-25.png" data-href="">Пр_№422/25 (полуперила)<span><br>~pr-422-25</span></p>
+                                                                            <p data-img="./dist/images/pr-422-25.png" data-href="detali-profili.php#pr-422-25">Пр_№422/25 (полуперила)<span><br>~pr-422-25</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-427">
-                                                                            <p data-img="./dist/images/pr-427.png" data-href="">Пр_№427 (полуперила)<span><br>~pr-427</span></p>
+                                                                            <p data-img="./dist/images/pr-427.png" data-href="detali-profili.php#pr-427">Пр_№427 (полуперила)<span><br>~pr-427</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-476">
-                                                                            <p data-img="./dist/images/pr-476.png" data-href="">Пр_№476 (плинтус)<span><br>~pr-476</span></p>
+                                                                            <p data-img="./dist/images/pr-476.png" data-href="detali-profili.php#pr-476">Пр_№476 (плинтус)<span><br>~pr-476</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-476-1">
-                                                                            <p data-img="./dist/images/pr-476-1.png" data-href="">Пр_№476/1 (плинтус)<span><br>~pr-476-1</span></p>
+                                                                            <p data-img="./dist/images/pr-476-1.png" data-href="detali-profili.php#pr-476-1">Пр_№476/1 (плинтус)<span><br>~pr-476-1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-476f">
-                                                                            <p data-img="./dist/images/pr-476f.png" data-href="">Пр_№476Ф (плинтус)<span><br>~pr-476f</span></p>
+                                                                            <p data-img="./dist/images/pr-476f.png" data-href="detali-profili.php#pr-476f">Пр_№476Ф (плинтус)<span><br>~pr-476f</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-476-paz">
-                                                                            <p data-img="./dist/images/pr-476-paz.png" data-href="">Пр_№476/ПАЗ плинтус на экраны радиатора<span><br>~pr-476-paz</span></p>
+                                                                            <p data-img="./dist/images/pr-476-paz.png" data-href="detali-profili.php#pr-476-paz">Пр_№476/ПАЗ плинтус на экраны радиатора<span><br>~pr-476-paz</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-477-31">
-                                                                            <p data-img="./dist/images/pr-477-31.png" data-href="">Пр_№477/31<span><br>~pr-477-31</span></p>
+                                                                            <p data-img="./dist/images/pr-477-31.png" data-href="detali-profili.php#pr-477-31">Пр_№477/31<span><br>~pr-477-31</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-477-40">
-                                                                            <p data-img="./dist/images/pr-477-40.png" data-href="">Пр_№477/40<span><br>~pr-477-40</span></p>
+                                                                            <p data-img="./dist/images/pr-477-40.png" data-href="detali-profili.php#pr-477-40">Пр_№477/40<span><br>~pr-477-40</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-477-59">
-                                                                            <p data-img="./dist/images/pr-477-59.png" data-href="">Пр_№477/59<span><br>~pr-477-59</span></p>
+                                                                            <p data-img="./dist/images/pr-477-59.png" data-href="detali-profili.php#pr-477-59">Пр_№477/59<span><br>~pr-477-59</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-478-115">
-                                                                            <p data-img="./dist/images/pr-478-115.png" data-href="">Пр_№478/115 (плинтус)<span><br>~pr-478-115</span></p>
+                                                                            <p data-img="./dist/images/pr-478-115.png" data-href="detali-profili.php#pr-478-115">Пр_№478/115 (плинтус)<span><br>~pr-478-115</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-480">
-                                                                            <p data-img="./dist/images/pr-480.png" data-href="">Пр_№480<span><br>~pr-480</span></p>
+                                                                            <p data-img="./dist/images/pr-480.png" data-href="detali-profili.php#pr-480">Пр_№480<span><br>~pr-480</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                                      
@@ -805,53 +805,53 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="footer50">
-                                                                <p data-href="detali-profili.php#drugie"  data-img="./dist/images/no-foto.png" id="floating51">Другие<span><br>~drugie</span></p>
+                                                                <p  data-img="./dist/images/no-foto.png" id="floating51" data-href="detali-profili.php#drugie">Другие<span><br>~drugie</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-pr-515">
-                                                                            <p data-img="./dist/images/pr-515.png" data-href="">Пр_№515<span><br>~pr-515</span></p>
+                                                                            <p data-img="./dist/images/pr-515.png" data-href="detali-profili.php#pr-515">Пр_№515<span><br>~pr-515</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-536">
-                                                                            <p data-img="./dist/images/pr-536.png" data-href="">Пр_№536<span><br>~pr-536</span></p>
+                                                                            <p data-img="./dist/images/pr-536.png" data-href="detali-profili.php#pr-536">Пр_№536<span><br>~pr-536</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-546">
-                                                                            <p data-img="./dist/images/pr-546.png" data-href="">Пр_№546<span><br>~pr-546</span></p>
+                                                                            <p data-img="./dist/images/pr-546.png" data-href="detali-profili.php#pr-546">Пр_№546<span><br>~pr-546</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-549">
-                                                                            <p data-img="./dist/images/pr-549.png" data-href="">Пр_№549<span><br>~pr-549</span></p>
+                                                                            <p data-img="./dist/images/pr-549.png" data-href="detali-profili.php#pr-549">Пр_№549<span><br>~pr-549</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-550">
-                                                                            <p data-img="./dist/images/pr-550.png" data-href="">Пр_№550<span><br>~pr-550</span></p>
+                                                                            <p data-img="./dist/images/pr-550.png" data-href="detali-profili.php#pr-550">Пр_№550<span><br>~pr-550</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-551">
-                                                                            <p data-img="./dist/images/pr-551.png" data-href="">Пр_№551<span><br>~pr-551</span></p>
+                                                                            <p data-img="./dist/images/pr-551.png" data-href="detali-profili.php#pr-551">Пр_№551<span><br>~pr-551</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-552">
-                                                                            <p data-img="./dist/images/pr-552.png" data-href="">Пр_№552<span><br>~pr-552</span></p>
+                                                                            <p data-img="./dist/images/pr-552.png" data-href="detali-profili.php#pr-552">Пр_№552<span><br>~pr-552</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-555">
-                                                                            <p data-img="./dist/images/pr-555.png" data-href="">Пр_№555<span><br>~pr-555</span></p>
+                                                                            <p data-img="./dist/images/pr-555.png" data-href="detali-profili.php#pr-555">Пр_№555<span><br>~pr-555</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-556">
-                                                                            <p data-img="./dist/images/pr-556.png" data-href="">Пр_№556<span><br>~pr-556</span></p>
+                                                                            <p data-img="./dist/images/pr-556.png" data-href="detali-profili.php#pr-556">Пр_№556<span><br>~pr-556</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                                       
@@ -861,79 +861,79 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="footer51">
-                                                                <p data-href="detali-profili.php#plintusy"  data-img="./dist/images/no-foto.png" id="floating52">Поручни, лестницы<span><br>~poruchni-lestnicy</span></p>
+                                                                <p  data-img="./dist/images/no-foto.png" id="floating52" data-href="detali-profili.php#poruchni-lestnicy">Поручни, лестницы<span><br>~poruchni-lestnicy</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-pr-601">
-                                                                            <p data-img="./dist/images/pr-601.png" data-href="">Пр_№601 (Пр_лестницы)<span><br>~pr-601</span></p>
+                                                                            <p data-img="./dist/images/pr-601.png" data-href="detali-profili.php#pr-601">Пр_№601 (Пр_лестницы)<span><br>~pr-601</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-627-1">
-                                                                            <p data-img="./dist/images/pr-627-1.png" data-href="">Пр_№627/1 (перила)<span><br>~pr-627-1</span></p>
+                                                                            <p data-img="./dist/images/pr-627-1.png" data-href="detali-profili.php#pr-627-1">Пр_№627/1 (перила)<span><br>~pr-627-1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-627-2">
-                                                                            <p data-img="./dist/images/pr-627-2.png" data-href="">Пр_№627/2 (подперильная доска)<span><br>~pr-627-2</span></p>
+                                                                            <p data-img="./dist/images/pr-627-2.png" data-href="detali-profili.php#pr-627-2">Пр_№627/2 (подперильная доска)<span><br>~pr-627-2</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-628-1">
-                                                                            <p data-img="./dist/images/pr-628-1.png" data-href="">Пр_№628/1 (перила)<span><br>~pr-628-1</span></p>
+                                                                            <p data-img="./dist/images/pr-628-1.png" data-href="detali-profili.php#pr-628-1">Пр_№628/1 (перила)<span><br>~pr-628-1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-628-2">
-                                                                            <p data-img="./dist/images/pr-628-2.png" data-href="">Пр_№628/2 (подперильная доска)<span><br>~pr-628-2</span></p>
+                                                                            <p data-img="./dist/images/pr-628-2.png" data-href="detali-profili.php#pr-628-2">Пр_№628/2 (подперильная доска)<span><br>~pr-628-2</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-629">
-                                                                            <p data-img="./dist/images/pr-629.png" data-href="">Пр_№629 (Пр_на косоур)<span><br>~pr-629</span></p>
+                                                                            <p data-img="./dist/images/pr-629.png" data-href="detali-profili.php#pr-629">Пр_№629 (Пр_на косоур)<span><br>~pr-629</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-629-1">
-                                                                            <p data-img="./dist/images/pr-629-1.png" data-href="">Пр_№629/1 (Пр_на косоур)<span><br>~pr-629-1</span></p>
+                                                                            <p data-img="./dist/images/pr-629-1.png" data-href="detali-profili.php#pr-629-1">Пр_№629/1 (Пр_на косоур)<span><br>~pr-629-1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-629-2">
-                                                                            <p data-img="./dist/images/pr-629-2.png" data-href="">Пр_№629/2 (Пр_на косоур)<span><br>~pr-629-2</span></p>
+                                                                            <p data-img="./dist/images/pr-629-2.png" data-href="detali-profili.php#pr-629-2">Пр_№629/2 (Пр_на косоур)<span><br>~pr-629-2</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-630-1">
-                                                                            <p data-img="./dist/images/pr-630-1.png" data-href="">Пр_№630/1 (перила)<span><br>~pr-630-1</span></p>
+                                                                            <p data-img="./dist/images/pr-630-1.png" data-href="detali-profili.php#pr-630-1">Пр_№630/1 (перила)<span><br>~pr-630-1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-630-2">
-                                                                            <p data-img="./dist/images/pr-630-2.png" data-href="">Пр_№630/2 (подперильная доска)<span><br>~pr-630-2</span></p>
+                                                                            <p data-img="./dist/images/pr-630-2.png" data-href="detali-profili.php#pr-630-2">Пр_№630/2 (подперильная доска)<span><br>~pr-630-2</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-631-1">
-                                                                            <p data-img="./dist/images/pr-631-1.png" data-href="">Пр_№631/1 (перила)<span><br>~pr-631-1</span></p>
+                                                                            <p data-img="./dist/images/pr-631-1.png" data-href="detali-profili.php#pr-631-1">Пр_№631/1 (перила)<span><br>~pr-631-1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-631-2">
-                                                                            <p data-img="./dist/images/pr-631-2.png" data-href="">Пр_№631/2 (подперильная доска)<span><br>~pr-631-2</span></p>
+                                                                            <p data-img="./dist/images/pr-631-2.png" data-href="detali-profili.php#pr-631-2">Пр_№631/2 (подперильная доска)<span><br>~pr-631-2</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                    
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-647-1">
-                                                                            <p data-img="./dist/images/pr-647-1.png" data-href="">Пр_№647/1 (подушка под балясину)<span><br>~pr-647-1</span></p>
+                                                                            <p data-img="./dist/images/pr-647-1.png" data-href="detali-profili.php#pr-647-1">Пр_№647/1 (подушка под балясину)<span><br>~pr-647-1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-647-2">
-                                                                            <p data-img="./dist/images/pr-647-2.png" data-href="">Пр_№647/2 (подушка под балясину)<span><br>~pr-647-2</span></p>
+                                                                            <p data-img="./dist/images/pr-647-2.png" data-href="detali-profili.php#pr-647-2">Пр_№647/2 (подушка под балясину)<span><br>~pr-647-2</span></p>
                                                                         </TD>  
                                                                     </TR>
 
@@ -944,13 +944,13 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="footer52">
-                                                                <p data-href="detali-profili.php#pod-rotangovuyu-setku"  data-img="./dist/images/no-foto.png" id="floating53">Под ротанговую сетку<span><br>~pod-rotangovuyu-setku</span></p>
+                                                                <p  data-img="./dist/images/no-foto.png" id="floating53" data-href="detali-profili.php#pod-rotangovuyu-setku">Под ротанговую сетку<span><br>~pod-rotangovuyu-setku</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" style="padding: 35px 0;" id="flo-pr-762">
-                                                                            <p data-img="./dist/images/pr-762.png" data-href="">Пр_№762 (дуб, бук под ротанговую сетку, крашеный)<span><br>~pr-762</span></p>
+                                                                            <p data-img="./dist/images/pr-762.png" data-href="detali-profili.php#pr-762">Пр_№762 (дуб, бук под ротанговую сетку, крашеный)<span><br>~pr-762</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                                     
@@ -966,7 +966,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" style="padding: 35px 0;" id="flo-pr-mdf-8">
-                                                                            <p data-img="./dist/images/pr-mdf-8.png" data-href="">Пр_МДФ_№8XX/1 или Пр_МДФ_№8XX/2<span><br>~pr-mdf-8</span></p>
+                                                                            <p data-img="./dist/images/pr-mdf-8.png" data-href="detali-profili.php#pr-mdf-8">Пр_МДФ_№8XX/1 или Пр_МДФ_№8XX/2<span><br>~pr-mdf-8</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                                  
@@ -982,63 +982,63 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-pr-karkas-9">
-                                                                            <p data-img="./dist/images/pr-karkas-9.png" data-href="">Пр_КАРКАС_№9XX/YY (массив:сосна)<span><br>~pr-karkas-9</span></p>
+                                                                            <p data-img="./dist/images/pr-karkas-9.png" data-href="detali-profili.php#pr-karkas-9">Пр_КАРКАС_№9XX/YY (массив:сосна)<span><br>~pr-karkas-9</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-karkas-9-1">
-                                                                            <p data-img="./dist/images/pr-karkas-9-1.png" data-href="">Пр_КАРКАС_№9XX/YY Раскрой реечного щита для изготовления<span><br>~pr-karkas-9-1</span></p>
+                                                                            <p data-img="./dist/images/pr-karkas-9-1.png" data-href="detali-profili.php#pr-karkas-9-1">Пр_КАРКАС_№9XX/YY Раскрой реечного щита для изготовления<span><br>~pr-karkas-9-1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-925">
-                                                                            <p data-img="./dist/images/pr-925.png" data-href="">Пр_№925<span><br>~pr-925</span></p>
+                                                                            <p data-img="./dist/images/pr-925.png" data-href="detali-profili.php#pr-925">Пр_№925<span><br>~pr-925</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-925-601">
-                                                                            <p data-img="./dist/images/pr-925-601.png" data-href="">Пр_№925/601<span><br>~pr-925-601</span></p>
+                                                                            <p data-img="./dist/images/pr-925-601.png" data-href="detali-profili.php#pr-925-601">Пр_№925/601<span><br>~pr-925-601</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-925-602">
-                                                                            <p data-img="./dist/images/pr-925-602.png" data-href="">Пр_№925/602<span><br>~pr-925-602</span></p>
+                                                                            <p data-img="./dist/images/pr-925-602.png" data-href="detali-profili.php#pr-925-602">Пр_№925/602<span><br>~pr-925-602</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-925-701">
-                                                                            <p data-img="./dist/images/pr-925-701.png" data-href="">Пр_№925/701<span><br>~pr-925-701</span></p>
+                                                                            <p data-img="./dist/images/pr-925-701.png" data-href="detali-profili.php#pr-925-701">Пр_№925/701<span><br>~pr-925-701</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-925-702">
-                                                                            <p data-img="./dist/images/pr-925-702.png" data-href="">Пр_№925/702<span><br>~pr-925-702</span></p>
+                                                                            <p data-img="./dist/images/pr-925-702.png" data-href="detali-profili.php#pr-925-702">Пр_№925/702<span><br>~pr-925-702</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-928-24">
-                                                                            <p data-img="./dist/images/pr-928-24.png" data-href="">Пр_№928/24<span><br>~pr-928-24</span></p>
+                                                                            <p data-img="./dist/images/pr-928-24.png" data-href="detali-profili.php#pr-928-24">Пр_№928/24<span><br>~pr-928-24</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-932-30">
-                                                                            <p data-img="./dist/images/pr-932-30.png" data-href="">Пр_№932/30<span><br>~pr-932-30</span></p>
+                                                                            <p data-img="./dist/images/pr-932-30.png" data-href="detali-profili.php#pr-932-30">Пр_№932/30<span><br>~pr-932-30</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-933">
-                                                                            <p data-img="./dist/images/pr-933.png" data-href="">Пр_№933<span><br>~pr-933</span></p>
+                                                                            <p data-img="./dist/images/pr-933.png" data-href="detali-profili.php#pr-933">Пр_№933<span><br>~pr-933</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-940">
-                                                                            <p data-img="./dist/images/pr-940.png" data-href="">Пр_№940/ХХХ<span><br>~pr-940</span></p>
+                                                                            <p data-img="./dist/images/pr-940.png" data-href="detali-profili.php#pr-940">Пр_№940/ХХХ<span><br>~pr-940</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-964">
-                                                                            <p data-img="./dist/images/pr-964.png" data-href="">Пр_№964<span><br>~pr-964</span></p>
+                                                                            <p data-img="./dist/images/pr-964.png" data-href="detali-profili.php#pr-964">Пр_№964<span><br>~pr-964</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                    
@@ -1050,38 +1050,38 @@ include 'inc-session-start.php';
                                                                                                                           
                                                         <TR>
                                                             <TD data-tooltip="Для столов" class="hover mapsite" id="footer55">
-                                                                <p data-href="detali-profili.php#dlya-stolov"  data-img="./dist/images/no-foto.png" id="floating58">Для столов<span><br>~dlya-stolov</span></p>
+                                                                <p  data-img="./dist/images/no-foto.png" id="floating58" data-href="detali-profili.php#dlya-stolov">Для столов<span><br>~dlya-stolov</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-pr-stol1">
-                                                                            <p data-img="./dist/images/pr-stol1.png" data-href="">Пр_№СТОЛ1  || обкладка_столешницы<span><br>~pr-stol1</span></p>
+                                                                            <p data-img="./dist/images/pr-stol1.png" data-href="detali-profili.php#pr-stol1">Пр_№СТОЛ1  || обкладка_столешницы<span><br>~pr-stol1</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"id="flo-pr-stol2">
-                                                                            <p data-img="./dist/images/pr-stol2.png" data-href="">Пр_№СТОЛ2  || над_плинтусом_пилястры<span><br>~pr-stol2</span></p>
+                                                                            <p data-img="./dist/images/pr-stol2.png" data-href="detali-profili.php#pr-stol2">Пр_№СТОЛ2  || над_плинтусом_пилястры<span><br>~pr-stol2</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-stol3-60-3-bf">
-                                                                            <p data-img="./dist/images/pr-stol3-60-3-bf.png" data-href="">Пр_№СТОЛ3/60/3/БФ  || пилястра<span><br>~pr-stol3-60-3-bf</span></p>
+                                                                            <p data-img="./dist/images/pr-stol3-60-3-bf.png" data-href="detali-profili.php#pr-stol3-60-3-bf">Пр_№СТОЛ3/60/3/БФ  || пилястра<span><br>~pr-stol3-60-3-bf</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-stol4">
-                                                                            <p data-img="./dist/images/pr-stol4.png" data-href="">Пр_№СТОЛ4  || поясок_верхний_уровень<span><br>~pr-stol4</span></p>
+                                                                            <p data-img="./dist/images/pr-stol4.png" data-href="detali-profili.php#pr-stol4">Пр_№СТОЛ4  || поясок_верхний_уровень<span><br>~pr-stol4</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-stol5">
-                                                                            <p data-img="./dist/images/pr-stol5.png" data-href="">Пр_№СТОЛ5  || обкладка_столешницы<span><br>~pr-stol5</span></p>
+                                                                            <p data-img="./dist/images/pr-stol5.png" data-href="detali-profili.php#pr-stol5">Пр_№СТОЛ5  || обкладка_столешницы<span><br>~pr-stol5</span></p>
                                                                         </TD>  
                                                                     </TR> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-pr-stol6">
-                                                                            <p data-img="./dist/images/pr-stol6.png" data-href="">Пр_№СТОЛ6  || обкладка_столешницы<span><br>~pr-stol6</span></p>
+                                                                            <p data-img="./dist/images/pr-stol6.png" data-href="detali-profili.php#pr-stol6">Пр_№СТОЛ6  || обкладка_столешницы<span><br>~pr-stol6</span></p>
                                                                         </TD>  
                                                                     </TR>                   
                                                                 </TABLE>
