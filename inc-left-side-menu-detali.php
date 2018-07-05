@@ -103,7 +103,7 @@
 
                                     </ul>
                                 </li>
-                                <li class="menu2"><a class="list-group-item sub" href="#dlya-karnizov" >Для карнизов</a>
+                                <li class="menu2"><a class="list-group-item sub" href="detali-profili.php#dlya-karnizov" >Для карнизов</a>
                                     <ul class="list-group sub_menu2">
                                         <li><a class="list-group-item sub" href="detali-profili.php#pr-204m">Пр_№204м (карнизный)</a>
                                         </li>
