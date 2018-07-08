@@ -2512,4 +2512,47 @@ include 'inc-left-side-menu-detali.php';
                         </ul>
                     </div>
                 </div><!-- боковое меню блоки дверные конец -->
+
+<!-- <script>
+    //  var elem = document.getElementsByClassName('sub');
+    // if (elem.addEventListener) {
+    //   if ('onwheel' in document) {
+    //     // IE9+, FF17+, Ch31+
+    //     elem.addEventListener("wheel", onWheel);
+    //   } else if ('onmousewheel' in document) {
+    //     // устаревший вариант события
+    //     elem.addEventListener("mousewheel", onWheel);
+    //   } else {
+    //     // Firefox < 17
+    //     elem.addEventListener("MozMousePixelScroll", onWheel);
+    //   }
+    // } else { // IE8-
+    //   elem.attachEvent("onmousewheel", onWheel);
+    // }
+
+
+
+    document.onwheel = function(e) {
+        e = e || window.event;
+        // wheelDelta не дает возможность узнать количество пикселей
+        // alert(e.target.className);
+    if (e.target.className != "list-group-item sub") {
+        //   alert(e.target.className);
+        return;
+        }
+    var area = e.target;
+
+    var delta = e.deltaY || e.detail || e.wheelDelta;
+
+    if (delta < 0 && area.scrollTop == 0) {
+        e.preventDefault();
+    }
+
+    if (delta > 0 && area.scrollHeight - area.clientHeight - area.scrollTop <= 1) {
+        e.preventDefault();
+    }
+    e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+    }; 
+</script> -->
+
 <?php include 'inc-footer.php'; ?>
