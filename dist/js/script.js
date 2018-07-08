@@ -43,7 +43,7 @@ function getClientWidth(){
      });
      getClientWidth();
  });
-
+//  var delta =0;
 $(function () {
     $('#navsub  li.menu2 ul').hide();
     $('#navsub  li.menu ul').hide();
@@ -58,7 +58,12 @@ $(function () {
            console.log("количество левое меню - "+colLeftMenu);
            console.log("номер по порядку выбранного элемента списка - "+col);      
            console.log("количество дочерних элементов - "+child1);   
-           $(this).find('ul.sub_menu').show();              
+           $(this).find('ul.sub_menu').show();
+           
+        //    var d = getMouseWeel();
+        //    console.log(d);
+        // console.log(dy);
+
            UlSubMenu.parent().css("bottom", bottomUl+"px"); 
            $(this).find('ul.sub_menu > li:nth-child(1)').addClass('triangle');           
            var triangle = (child1-1)*40+11;
@@ -88,6 +93,10 @@ $(function () {
             
             $(this).find('ul.sub_menu2').show();
 
+        //     var d = getMouseWeel();
+        //    console.log(d);
+        //   console.log(dy);
+
             UlSubMenu.parent().css("bottom", bottomUl+"px"); 
            $(this).find('ul.sub_menu2 > li:nth-child(1)').addClass('triangle2');           
            var triangle = (child1-1)*40+11;
@@ -104,6 +113,59 @@ $(function () {
         }
     );
 });
+
+// прокрутка колеса мыши sub
+// var delta = 0;
+
+// $('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){
+
+// var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
+
+// if(dy > 0) {
+   
+//      delta =  1  + delta ;
+//     console.log('up1');
+//     console.log(delta); 
+//     e.preventDefault();  
+// }
+// else{    
+//      delta =  delta - 1;
+//     console.log('down1');
+//     console.log(delta);
+//     e.preventDefault();    
+// }
+
+// });
+
+   // прокрутка колеса мыши sub2 
+    var delta2 = 0;    
+    $('.sub_menu2').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){   
+    var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;    
+    var UlSubMenu = $(this ).children();
+    var child1 =UlSubMenu.length;
+    console.log('child1 ' + child1);
+    console.log('bottom ' + $(this ).css('bottom'));
+    if(dy > 0) {       
+         delta2 =  1  + delta2 ;
+        console.log('up2');
+        console.log(delta2);        
+        e.preventDefault();      
+    }
+    else{      
+         delta2 =  delta2 - 1 ;
+        console.log('down2');
+        console.log(delta2);
+        e.preventDefault();        
+    }
+
+    });
+
+
+
+
+
+
+
 
 // при открытии модального окна
 $('#myModal').on('show.bs.modal', function (event) {
@@ -137,21 +199,26 @@ var nv;
 function nvfn(){ nv =parseInt($("div.navbar").css('height').replace("px", "")) + 0;}
 function onScroll(){
     nvfn();
-    // nv = nv;
-    console.log(nv);
+    // console.log("nv");
+    // console.log(nv);
     // $(".search_result").hide();
 	var scroll_top = $(document).scrollTop();
 	$(menu_selector + " a").each(function(){
         var hash = $(this).attr("href");
         // alert(hash);
-		var target = $(hash);
-		if (target.position().top-nv <= scroll_top && target.position().top  + target.outerHeight() > scroll_top) {
-            $(menu_selector + " li.active").removeClass("active");
-            // alert(this);
-			$(this).parent().addClass("active");
-		} else {
-			$(this).parent().removeClass("active");
-		}
+        var target = $(hash);
+        // console.log(typeof target.position());
+        if (typeof target.position() !== 'undefined') {
+            // Теперь мы знаем, что foo определено.                
+
+                if (target.position().top-nv <= scroll_top && target.position().top  + target.outerHeight() > scroll_top) {
+                    $(menu_selector + " li.active").removeClass("active");
+                    // alert(this);
+                    $(this).parent().addClass("active");
+                } else {
+                    $(this).parent().removeClass("active");
+                }
+        }
 	});
 }
 

@@ -13,48 +13,8 @@
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script> 
     <script src="./dist/js/application.js"></script> 
-   <script src="./dist/js/script.js?v=6"></script>
-   <script>
-   var delta = 0;
-//    onWheel onwheel MozMousePixelScroll onmousewheel
-$(\'.sub\').bind(\'mousewheel DOMMouseScroll \', function(e){
+   <script src="./dist/js/script.js?v=10"></script>
 
-    // var dat = $(e.delegateTarget).data(); //in case you have set some, read it here.
-    // var datx = dat.x || 0; // just to show how to get specific out of jq-data object
-  
-    // var eo = e.originalEvent;
-    // var xy = eo.wheelDelta || -eo.detail; //shortest possible code
-    // var x = eo.wheelDeltaX || (eo.axis==1?xy:0);
-    // var y = eo.wheelDeltaY || (eo.axis==2?xy:0); // () necessary!
-    // console.log(x,y);
-
-    // e = e || window.event;
-    // var delta = e.deltaY || e.detail || e.wheelDelta;
-    // e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-    if(e.originalEvent.wheelDelta /120 > 0) {
-        // alert(\'up\');
-        // e.preventDefault();
-        // console.log(e.originalEvent.wheelDelta);
-        delta = parseInt(e.originalEvent.wheelDelta/120, 10) +  delta;
-        console.log(\'up\');
-         console.log(delta);
-        //  alert(delta);
-        e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-    }
-    else{
-        // alert(\'down\');
-        // e.preventDefault();
-        // console.log(e.originalEvent.wheelDelta);
-        // console.log(delta);
-        delta = parseInt(e.originalEvent.wheelDelta/120, 10) +  delta;
-        console.log(\'down\');
-        console.log(delta);
-        
-        // alert(delta);
-        e.preventDefault ? e.preventDefault() : (e.returnValue = false);
-    }
-   
-});</script>
     </body>
 </html>
 ';?>
