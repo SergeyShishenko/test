@@ -143,18 +143,29 @@ $(function () {
     var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;    
     var UlSubMenu = $(this ).children();
     var child1 =UlSubMenu.length;
+    var bottomUl = parseInt($(this ).css('bottom'));
+     var triangle =$('head.triangle2::before').css('top');
+    console.log('triangle ' + triangle);
     console.log('child1 ' + child1);
     console.log('bottom ' + $(this ).css('bottom'));
     if(dy > 0) {       
          delta2 =  1  + delta2 ;
         console.log('up2');
-        console.log(delta2);        
+        console.log(delta2); 
+        bottomUl= bottomUl + 40;
+        // $('head').append('<style id="triangle2">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>'); 
+        // .triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;
+        console.log('bottomUl ' + bottomUl); 
+        $(this ).css("bottom", bottomUl+"px");        
         e.preventDefault();      
     }
     else{      
          delta2 =  delta2 - 1 ;
         console.log('down2');
         console.log(delta2);
+        bottomUl = bottomUl - 40;
+        console.log('bottomUl ' + bottomUl); 
+        $(this ).css("bottom", bottomUl+"px");   
         e.preventDefault();        
     }
 
