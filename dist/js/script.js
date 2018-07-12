@@ -102,7 +102,7 @@ $(function () {
            var triangle = (child1-1)*40+11;
           
            if (child1>col){triangle = (col-1)*40+11;}
-           $('head').append('<style id="triangle2">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');  
+           $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');  
            
         },
         function () {
@@ -144,8 +144,9 @@ $(function () {
     var UlSubMenu = $(this ).children();
     var child1 =UlSubMenu.length;
     var bottomUl = parseInt($(this ).css('bottom'));
-     var triangle =$('head.triangle2::before').css('top');
+     var triangle =$('#triangle2').data('top');
     console.log('triangle ' + triangle);
+    //  console.log('triangle2 ' + $('#triangle2').html());
     console.log('child1 ' + child1);
     console.log('bottom ' + $(this ).css('bottom'));
     if(dy > 0) {       
@@ -153,10 +154,13 @@ $(function () {
         console.log('up2');
         console.log(delta2); 
         bottomUl= bottomUl + 40;
+        triangle = triangle + 40;
         // $('head').append('<style id="triangle2">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>'); 
         // .triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;
         console.log('bottomUl ' + bottomUl); 
-        $(this ).css("bottom", bottomUl+"px");        
+        $(this ).css("bottom", bottomUl+"px"); 
+        $('#triangle2').remove();
+        $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');       
         e.preventDefault();      
     }
     else{      
@@ -164,8 +168,11 @@ $(function () {
         console.log('down2');
         console.log(delta2);
         bottomUl = bottomUl - 40;
+        triangle = triangle - 40;
         console.log('bottomUl ' + bottomUl); 
-        $(this ).css("bottom", bottomUl+"px");   
+        $(this ).css("bottom", bottomUl+"px"); 
+        $('#triangle2').remove();
+        $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');   
         e.preventDefault();        
     }
 
