@@ -45,8 +45,15 @@ background-size: 1.382rem; */
   -o-transition: background .4s;
   transition: background .4s;
   width: 213px;
+  visibility: hidden;
   /* padding-right: 27px */
 }
+
+#navsub  li.menu2 ul{display: none;}
+#navsub  li.menu ul{display: none;}
+span.zbz{visibility: hidden;}
+
+
 /* @media (max-width: 767px) {
 
  .navbar-brand {

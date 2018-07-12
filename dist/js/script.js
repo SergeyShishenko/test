@@ -15,6 +15,9 @@ function getPositionSearch(){
         // c=(w-c)/2+5;
         //    console.log(c);
          $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
+         $('.zbz-input-clearable').css({'visibility': 'visible'});
+         $('span.zbz').css('visibility','visible');
+        
         //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
      }
 // текущая ширина экрана   
@@ -39,14 +42,16 @@ function getClientWidth(){
         // console.log(pos);
         console.log(c); 
          $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
+         $('.zbz-input-clearable').css({'visibility': 'visible'});
+         $('span.zbz').css('visibility','visible');
         //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
      });
      getClientWidth();
  });
 //  var delta =0;
 $(function () {
-    $('#navsub  li.menu2 ul').hide();
-    $('#navsub  li.menu ul').hide();
+    // $('#navsub  li.menu2 ul').hide();
+    // $('#navsub  li.menu ul').hide();
     $('#navsub  li.menu').hover(
         function () {
             // delta2 = 0; // счетчик прокрутки колеса sub_menu2
