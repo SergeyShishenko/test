@@ -155,14 +155,7 @@ $(function () {
     console.log('bottom ' + $(this ).css('bottom'));
     if(dy > 0) { 
 
-                // delta2 =  1  + delta2 ;
-                // console.log('up2');
-                // console.log(delta2); 
-                // console.log(bottomMIN);
-                // bottomUl= bottomUl + 40;
-                // triangle = triangle + 40;
-              
-                
+           
                 if (bottomUl < bottomMIN ) { 
                     delta2 =  1  + delta2 ;
                     console.log('up2');
