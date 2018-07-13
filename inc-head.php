@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>500.СТП</title>
         <link href="./dist/css/bootstrap.css" rel="stylesheet">
-        <link href="./dist/css/docs.css?v=4" rel="stylesheet">
+        <link href="./dist/css/docs.css?v=5" rel="stylesheet">
         <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">    
     </head>
     <body>

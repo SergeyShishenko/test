@@ -13,7 +13,7 @@
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script> 
     <script src="./dist/js/application.js"></script> 
-   <script src="./dist/js/script.js?v=10"></script>
+   <script src="./dist/js/script.js?v=11"></script>
 
     </body>
 </html>

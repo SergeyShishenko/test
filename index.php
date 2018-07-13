@@ -4991,7 +4991,7 @@ include 'inc-session-start.php';
                                                         <TR>
                                                             <TD data-tooltip="HAFELE" class="hover mapsite" id="footer153" colspan="2">
                                                                 <!-- <p onclick=\'window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")\' data-img="./dist/images/no-foto.png" id="floating154">HAFELE<span> <br>~HAFELE</span></p> -->
-                                                                <p onclick='window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")' data-img="./dist/images/no-foto.png" id="floating154">HAFELE<span> <br>~HAFELE</span></p>
+                                                                <p data-href="https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html" onclick='window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")' data-img="./dist/images/no-foto.png" id="floating154">HAFELE<span> <br>~HAFELE</span></p>
                                                             </TD>                                                                            
                                                             
                                                         </TR>
@@ -4999,7 +4999,7 @@ include 'inc-session-start.php';
                                                         <TR>
                                                             <TD data-tooltip="Blum" class="hover mapsite" id="footer154" >
                                                                 <!-- <p  onclick=\'window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")\' data-img="./dist/images/no-foto.png" id="floating155">Blum<span> <br>~Blum</span></p> -->
-                                                                <p  onclick='window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")' data-img="./dist/images/no-foto.png" id="floating155">Blum<span> <br>~Blum</span></p>
+                                                                <p data-href="http://publications.blum.com/2016/catalogue/ru/"  onclick='window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")' data-img="./dist/images/no-foto.png" id="floating155">BLUM<span> <br>~Blum</span></p>
                                                             </TD>                                                                            
                                                             
                                                         </TR>
