@@ -28,7 +28,7 @@ include 'inc-left-side-menu-izdeliya.php';
                           <h1 itemprop="name" id="dveri-konstrukcii">Конструкции дверных блоков</h1>
                         
                          <p> <a>
-                            <img src="./dist/images/spisok-poloten-dvernyh-blokov-tipovyh-0.png" class="center-block img-rounded img-thumbnail"
+                            <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/spisok-poloten-dvernyh-blokov-tipovyh-0.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                              data-toggle="modal"
                              data-target="#myModal"                                                         
                              alt="Список полотен дверных блоков типовых"
@@ -42,7 +42,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr></h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/polotno-bloka-dvernogo-gluhoe-pco.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/polotno-bloka-dvernogo-gluhoe-pco.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного глухое ПЦО"
@@ -55,7 +55,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                 <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr> виды-DE</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/polotno-bloka-dvernogo-gluhoe-pco-DE.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/polotno-bloka-dvernogo-gluhoe-pco-DE.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного глухое ПЦО виды-DE"
@@ -70,7 +70,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr></h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/polotno-bloka-dvernogo-so-steklom-pco.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/polotno-bloka-dvernogo-so-steklom-pco.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                    
                                     alt="Полотно блока дверного со стеклом ПЦО"
@@ -83,7 +83,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                 <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr> виды-DE</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/polotno-bloka-dvernogo-so-steklom-pco-DE.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/polotno-bloka-dvernogo-so-steklom-pco-DE.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного глухое ПЦО виды-DE"
@@ -98,7 +98,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr></h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/polotno-bloka-dvernogo-so-steklomfacet-pco.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/polotno-bloka-dvernogo-so-steklomfacet-pco.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного со стеклом(фацет) ПЦО"
@@ -111,7 +111,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                 <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr> виды-DE</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/polotno-bloka-dvernogo-so-steklomfacet-pco-DE.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/polotno-bloka-dvernogo-so-steklomfacet-pco-DE.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного со стеклом(фацет) ПЦО виды-DE"
@@ -125,7 +125,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr></h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/polotno-bloka-dvernogo-s-zerkalom-pco.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/polotno-bloka-dvernogo-s-zerkalom-pco.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного с зеркалом ПЦО"
@@ -138,7 +138,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                 <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr> виды-DE</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/polotno-bloka-dvernogo-s-zerkalom-pco-DE.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/polotno-bloka-dvernogo-s-zerkalom-pco-DE.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного с зеркалом ПЦО виды-DE"
@@ -152,7 +152,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr></h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/polotno-bloka-dvernogo-s-zerkalomfacet-pco.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/polotno-bloka-dvernogo-s-zerkalomfacet-pco.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного с зеркалом(фацет) ПЦО"
@@ -166,7 +166,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                 <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr> виды-DE</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/polotno-bloka-dvernogo-s-zerkalomfacet-pco-DE.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/polotno-bloka-dvernogo-s-zerkalomfacet-pco-DE.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного с зеркалом(фацет) ПЦО виды-DE"
@@ -188,7 +188,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101 блок_дверной_типовой</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_1.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_101 блок_дверной_типовой"
@@ -200,7 +200,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101 блок_дверной_типовой</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_2.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_101 блок_дверной_типовой"
@@ -213,7 +213,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101 блок_дверной_типовой</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_3.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_3.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_101 блок_дверной_типовой"
@@ -227,7 +227,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101_02.01 коробка_блока_дверного</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-101-0201-korobka-bloka-dvernogo_1.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-101-0201-korobka-bloka-dvernogo_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_101_02.01 коробка_блока_дверного"
@@ -241,7 +241,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101_10.01 добор_блока_дверного</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-101-1001-dobor-bloka-dvernogo_1.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-101-1001-dobor-bloka-dvernogo_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_101_10.01 добор_блока_дверного"
@@ -253,7 +253,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_101_10.01 добор_блока_дверного</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-101-1001-dobor-bloka-dvernogo_2.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-101-1001-dobor-bloka-dvernogo_2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_101_10.01 добор_блока_дверного"
@@ -279,7 +279,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-111-polotno-razdvizhnoe_1.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-111-polotno-razdvizhnoe_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)"
@@ -291,7 +291,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-111-polotno-razdvizhnoe_2.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-111-polotno-razdvizhnoe_2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)"
@@ -303,7 +303,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-111-polotno-razdvizhnoe_3.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-111-polotno-razdvizhnoe_3.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)"
@@ -318,7 +318,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-115-polotno-razdvizhnoe_1.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-115-polotno-razdvizhnoe_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)"
@@ -330,7 +330,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-115-polotno-razdvizhnoe_2.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-115-polotno-razdvizhnoe_2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)"
@@ -342,7 +342,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-115-polotno-razdvizhnoe_3.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-115-polotno-razdvizhnoe_3.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)"
@@ -354,7 +354,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-115-polotno-razdvizhnoe_4.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-115-polotno-razdvizhnoe_4.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)"
@@ -386,7 +386,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_105 портал типовой</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-105-portal-tipovoy_1.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-105-portal-tipovoy_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_105 портал типовой"
@@ -398,7 +398,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-00_105 портал типовой</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-00-105-portal-tipovoy_2.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-00-105-portal-tipovoy_2.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-00_105 портал типовой"
@@ -420,7 +420,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_101 схема монтажа дверного блока</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-99-101-shema-montazha-dvernogo-bloka_1.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-99-101-shema-montazha-dvernogo-bloka_1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-99_101 схема монтажа дверного блока"
@@ -432,7 +432,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_101 схема монтажа дверного блока</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-99-101-shema-montazha-dvernogo-bloka_2.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-99-101-shema-montazha-dvernogo-bloka_2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-99_101 схема монтажа дверного блока"
@@ -447,7 +447,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_1.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал"
@@ -459,7 +459,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_2.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_2.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал"
@@ -471,7 +471,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_3.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_3.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал"
@@ -483,7 +483,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_4.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_4.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал"
@@ -498,7 +498,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_105 схема монтажа ДБ полотно раздвижное по стене</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene_1.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-99_105 схема монтажа ДБ полотно раздвижное по стене"
@@ -512,7 +512,7 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000201-99_107 схема монтажа сандриков и фрамуг</h4>
                                                         
                             <p><a>
-                                <img src="./dist/images/5000201-99-107-shema-montazha-sandrikov-i-framug_1.png" class="center-block img-rounded img-thumbnail"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000201-99-107-shema-montazha-sandrikov-i-framug_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="5000201-99_107 схема монтажа сандриков и фрамуг"

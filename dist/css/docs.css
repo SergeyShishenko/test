@@ -12,9 +12,10 @@ body {
   margin: 0 auto; 
   }
  
-  .b-lazy{
-    height:1280px;
-  }
+  /* менять приизменении окна */
+  .img-book {height:1280px;}
+  .img-album {height:640px;}
+
   /* .b-lazy, video{
     display:inline-block;
     position:absolute;

@@ -34,7 +34,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--e1-700.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--e1-700.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Э1/700"                               
@@ -49,10 +49,10 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4 >Узел № Э1/600</h4>
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p> -->
-                            <!-- <a href=""><img  src="img.jpg" alt="" style="width:200px; height:200px;" data-toggle="modal" data-target="#myModal"class="img-rounded img-thumbnail b-lazy"></a> -->
+                            <!-- <a href=""><img  src="img.jpg" alt="" style="width:200px; height:200px;" data-toggle="modal" data-target="#myModal"class="img-rounded img-thumbnail b-lazy img-book"></a> -->
                            
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--e1-600.png" class="center-block   img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--e1-600.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Э1/600"                             
@@ -78,7 +78,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-1-h1.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-1-h1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл1/1/Х_1"                               
@@ -95,7 +95,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-1-h2.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-1-h2.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл1/1/Х_2"                               
@@ -112,7 +112,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-1-h3.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-1-h3.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл1/1/Х_3"                               
@@ -129,7 +129,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-1-h4.png" class="center-block img-rounded img-thumbnail b-lazy"  
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-1-h4.png" class="center-block img-rounded img-thumbnail b-lazy img-book"  
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл1/1/Х_4"                               
@@ -146,7 +146,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-2-h1.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-2-h1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл1/2/Х_1"                               
@@ -163,7 +163,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-2-h2.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-2-h2.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл1/2/Х_2"                               
@@ -180,7 +180,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-2-h3.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-2-h3.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл1/2/Х_3"                               
@@ -197,7 +197,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-2-h4.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl1-2-h4.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл1/2/Х_4"                               
@@ -214,7 +214,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl2-h.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl2-h.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл2/Х"                               
@@ -231,7 +231,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl3-1-1.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl3-1-1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл3/1_1"                               
@@ -248,7 +248,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl3-1-2.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl3-1-2.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл3/1_2"                               
@@ -265,7 +265,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl3-2-1.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl3-2-1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл3/2_1"                               
@@ -282,7 +282,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl3-2-2.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl3-2-2.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл3/2_2"                               
@@ -299,7 +299,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl4-1.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl4-1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл4_1"                               
@@ -316,7 +316,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl4-2.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pl4-2.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Пл4_2"                               
@@ -341,7 +341,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--shp1-10-16-24.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--shp1-10-16-24.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Шп1/24; Узел № Шп1/16; Узел № Шп1/10"                               
@@ -364,7 +364,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--p-4-6-8.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--p-4-6-8.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № П/4; Узел № П/6; Узел № П/8 "                               
@@ -380,7 +380,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--p-4-6-8perf.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--p-4-6-8perf.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № П/4/перф.; Узел № П/6/перф.; Узел № П/8/перф. "                               
@@ -404,7 +404,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--shd1-shd2.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--shd1-shd2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № ШД1; Узел № ШД2"                               
@@ -428,7 +428,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--e1-evr.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--e1-evr.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Э1/16; Узел № Э1/24; Узел № Э2/16; Узел № Э2/24; Узел №Евр/16; Узел №Евр/24"                               
@@ -452,7 +452,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--polup-15-30gr.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--polup-15-30gr.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Полуп/15*30гр"                               
@@ -478,7 +478,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--ruch-1.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--ruch-1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Руч/1"                               
@@ -494,7 +494,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--ruch-2.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--ruch-2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № Руч/2"                               
@@ -518,7 +518,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pm-1.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pm-1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № ПМ/1"                               
@@ -542,7 +542,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--ppp-1.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--ppp-1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № ППП/1"                               
@@ -565,7 +565,7 @@ include 'inc-left-side-menu-izdeliya.php';
                             <!-- <p>Д - 1 или 2 фрезеровки по Длине</p>
                             <p>Ш - 1 или 2 фрезеровки по Ширине</p>                             -->
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pnrd-1.png" class="center-block img-rounded img-thumbnail b-lazy"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel--pnrd-1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Узел № ПНРД/1"                               
