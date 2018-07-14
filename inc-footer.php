@@ -15,6 +15,18 @@
     <script src="./dist/js/application.js"></script> 
    <script src="./dist/js/script.js?v=11"></script>
 
+   <script src="./dist/js/closest.js"></script>
+	<script src="./dist/js/blazy.min.js"></script>
+	<script>
+    window.bLazy = new Blazy({
+        //container: \'.container\',
+        //validateDelay: 500,
+		success: function(element){
+			console.log("Element loaded: ", element.nodeName);
+		}
+	});
+	</script>
+
     </body>
 </html>
 ';?>
