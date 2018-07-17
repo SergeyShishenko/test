@@ -25,14 +25,16 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="petli-dlya-poloten-dvernyh">ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
 
-                        <h2 id="petli-vvertnye-chetyrehshtyrkovye-otlav" >&nbsp;</h2>                   
+                                          
                         <!-- <h2 >Петли ввертные четырехштырьковые OTLAV 14 мм</h2>
 
                         <object data="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm.pdf"></a>
                         </object> -->
 
-                        <div class="bs-callout bs-callout-warning cont" ><h2 >Петли ввертные четырехштырьковые OTLAV 14 мм</h2>   
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <h2 id="petli-vvertnye-chetyrehshtyrkovye-otlav" >&nbsp;</h2> 
+                            <h2 >Петли ввертные четырехштырьковые OTLAV 14 мм</h2>   
                             <p> 
                                 <a>
                                     <img  
@@ -51,33 +53,140 @@ include 'inc-left-side-menu-furnitura.php';
 
 
 
-                            <h2 id="otlav2" >&nbsp;</h2>
+                            <!-- <h2 id="otlav2" >&nbsp;</h2>
                         <h2>Петли ввертные четырехштырьковые OTLAV</h2>
                         <object data="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav.pdf"></a>
-                            </object>
-                            <h2 id="otlav3">&nbsp;</h2>
-                        <h2 >Петли дверные разные</h2>
+                            </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <h2 id="otlav2" >&nbsp;</h2> 
+                            <h2 >Петли ввертные четырехштырьковые OTLAV</h2>   
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/petli-vvertnye-chetyrehshtyrkovye-otlav_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Петли ввертные четырехштырьковые OTLAV"
+                                        data-pdf="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+
+                            <!-- <h2 id="otlav3">&nbsp;</h2>
+                        <h2 >Петля ввёртная ELEMENTIS четырёхштыревая универсальная регулируемая 14 мм</h2>
                         <object data="./dist/files/petli-dvernye-raznye.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/petli-dvernye-raznye.pdf"></a>
-                            </object>
-                          <h2  id="petli-kartochnye-dvernye-fs">&nbsp;</h2> 
+                            </object> -->
+
+
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <h2 id="otlav3" >&nbsp;</h2> 
+                            <h2 >Петля ввёртная ELEMENTIS четырёхштыревая универсальная регулируемая 14 мм</h2>   
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/petlya-vvyortnaya-elementis-chetyryohshtyrevaya-universalnaya-reguliruemaya-14-mm_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Петля ввёртная ELEMENTIS четырёхштыревая универсальная регулируемая 14 мм"
+                                        data-pdf="./dist/files/petlya-vvyortnaya-elementis-chetyryohshtyrevaya-universalnaya-reguliruemaya-14-mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+
+                          <!-- <h2  id="petli-kartochnye-dvernye-fs">&nbsp;</h2> 
                              <h2>Петли карточные дверные FS</h2>
                         <object data="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf"></a>
-                            </object>
-                            <h2  id="petli-skrytogo-montazha-tectus-TE_240_3D">&nbsp;</h2> 
+                            </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <h2 id="petli-kartochnye-dvernye-fs" >&nbsp;</h2> 
+                            <h2 >Петли карточные дверные FS</h2>   
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/artikuly-petel-kartochnyh-dvernyh-fs_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Петли карточные дверные FS"
+                                        data-pdf="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+
+                            <!-- <h2  id="petli-skrytogo-montazha-tectus-TE_240_3D">&nbsp;</h2> 
                              <h2 >Петли скрытого монтажа TECTUS TE_240_3D</h2>
-                        <p>Артикулы цвета накладок на 3 странице.</p>
+                        <p>Артикулы цвета накладок на 3 странице PDF</p>
                         <object data="./dist/files/TE_240_3D.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/TE_240_3D.pdf"></a>
-                            </object>
-                            <h2  id="petli-skrytogo-montazha-tectus-TE_340_3D">&nbsp;</h2> 
+                            </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <h2 id="petli-skrytogo-montazha-tectus-TE_240_3D" >&nbsp;</h2> 
+                            <h2 >Петли скрытого монтажа TECTUS TE_240_3D</h2> 
+                            <p>Артикулы цвета накладок на 3 странице PDF</p>  
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/TE_240_3D_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Петли скрытого монтажа TECTUS TE_240_3D"
+                                        data-pdf="./dist/files/TE_240_3D.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>    
+
+
+                            <!-- <h2  id="petli-skrytogo-montazha-tectus-TE_340_3D">&nbsp;</h2> 
                              <h2 >Петли скрытого монтажа TECTUS TE_340_3D</h2>
-                        <p>Артикулы цвета накладок на 3 странице.</p>
+                        <p>Артикулы цвета накладок на 3 странице PDF</p>
                         <object data="./dist/files/TE_340_3D.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/TE_340_3D.pdf"></a>
-                            </object>
+                            </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <h2 id="petli-skrytogo-montazha-tectus-TE_340_3D" >&nbsp;</h2> 
+                            <h2 >Петли скрытого монтажа TECTUS TE_340_3D</h2>
+                            <p>Артикулы цвета накладок на 3 странице PDF</p>   
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/TE_340_3D_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Петли скрытого монтажа TECTUS TE_340_3D"
+                                        data-pdf="./dist/files/TE_340_3D.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>     
+
 
                       </section>
                     </article>
@@ -88,11 +197,50 @@ include 'inc-left-side-menu-furnitura.php';
                         <div class="page-header">
                           <h1 itemprop="name" id="mehanizmy-razdvizheniya-dlya-poloten-dvernyh">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
-                        <h2 id="sistema-razdvizheniya-laguna-standart">&nbsp;</h2>                   
+
+
+                        <!-- <h2 id="sistema-razdvizheniya-laguna-standart">&nbsp;</h2>                   
                         <h2 >Система раздвижения Laguna Standart</h2>
                         <object data="./dist/files/sistema-razdvizheniya-laguna-standart.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/sistema-razdvizheniya-laguna-standart.pdf"></a>
-                            </object>
+                            </object> -->
+
+                            <div class="bs-callout bs-callout-warning cont" >
+                            <h2 id="sistema-razdvizheniya-laguna-standart" >&nbsp;</h2> 
+                            <h2 >Схемы для расчетов и сборки системы STANDART</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/sistema-razdvizheniya-laguna-standart_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Схемы для расчетов и сборки системы STANDART"
+                                        data-pdf="./dist/files/sistema-razdvizheniya-laguna-standart.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <h2  >&nbsp;</h2> 
+                            <h2 >Элементы системы STANDART</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/sistema-razdvizheniya-laguna-standart_set_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Элементы системы STANDART"
+                                        data-pdf="./dist/files/sistema-razdvizheniya-laguna-standart_set.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
 
                       </section>
                     </article>
@@ -262,7 +410,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     </li>
                                     <li><a href="#otlav2">&#9999;&nbsp;Петли ввертные четырехштырьковые OTLAV</a>
                                     </li>
-                                    <li><a href="#otlav3">&#9999;&nbsp;Петли дверные разные</a>
+                                    <li><a href="#otlav3">&#9999;&nbsp;Петля ввёртная ELEMENTIS четырёхштыревая универсальная регулируемая 14 мм</a>
                                     </li>
                                     <li><a href="#petli-kartochnye-dvernye-fs">&#9999;&nbsp;Петли карточные дверные FS</a>
                                     </li>
