@@ -24,27 +24,45 @@ include 'inc-left-side-menu-furnitura.php';
                         <div class="page-header">
                           <h1 itemprop="name" id="petli-dlya-poloten-dvernyh">ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
+
                         <h2 id="petli-vvertnye-chetyrehshtyrkovye-otlav" >&nbsp;</h2>                   
-                        <h2 >Петли ввертные четырехштырьковые OTLAV 14 мм</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+                        <!-- <h2 >Петли ввертные четырехштырьковые OTLAV 14 мм</h2>
+
                         <object data="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm.pdf"></a>
-                            </object>
+                        </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" ><h2 >Петли ввертные четырехштырьковые OTLAV 14 мм</h2>   
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Петли ввертные четырехштырьковые OTLAV 14 мм"
+                                        data-pdf="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+
+
                             <h2 id="otlav2" >&nbsp;</h2>
                         <h2>Петли ввертные четырехштырьковые OTLAV</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav.pdf"></a>
                             </object>
                             <h2 id="otlav3">&nbsp;</h2>
                         <h2 >Петли дверные разные</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/petli-dvernye-raznye.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/petli-dvernye-raznye.pdf"></a>
                             </object>
                           <h2  id="petli-kartochnye-dvernye-fs">&nbsp;</h2> 
                              <h2>Петли карточные дверные FS</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf"></a>
                             </object>
@@ -72,7 +90,6 @@ include 'inc-left-side-menu-furnitura.php';
                         </div> 
                         <h2 id="sistema-razdvizheniya-laguna-standart">&nbsp;</h2>                   
                         <h2 >Система раздвижения Laguna Standart</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/sistema-razdvizheniya-laguna-standart.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/sistema-razdvizheniya-laguna-standart.pdf"></a>
                             </object>
@@ -88,7 +105,6 @@ include 'inc-left-side-menu-furnitura.php';
 
                         <h2 id="zamki-agb-dlya-razdvizhnyh-dverey">&nbsp;</h2>                   
                         <h2 >Замки AGB для раздвижных дверей</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/Scivola Tre.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/Scivola Tre.pdf"></a>
                             </object>
@@ -106,7 +122,6 @@ include 'inc-left-side-menu-furnitura.php';
                                
                         <h2 id="zamki-i-otvetnye-planki-ces">&nbsp;</h2>                   
                         <h2 >Замки и ответные планки CES</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"></a>
                             </object>
@@ -143,21 +158,18 @@ include 'inc-left-side-menu-furnitura.php';
 
                         <h2 id="rigel1">&nbsp;</h2>                   
                         <h2 >rigel1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
                         </object>
 
                         <h2 id="rigel2">&nbsp;</h2>                   
                         <h2 >rigel2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
                         </object> 
 
                         <h2 id="rigel3">&nbsp;</h2>                   
                         <h2 >rigel3</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
                         </object>                        
@@ -172,21 +184,18 @@ include 'inc-left-side-menu-furnitura.php';
 
                         <h2 id="dovodchik1">&nbsp;</h2>                   
                         <h2 >dovodchik1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
                         </object>
 
                         <h2 id="dovodchik2">&nbsp;</h2>                   
                         <h2 >dovodchik2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
                         </object> 
 
                         <h2 id="dovodchik3">&nbsp;</h2>                   
                         <h2 >dovodchik3</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
                         </object>                        
@@ -201,21 +210,18 @@ include 'inc-left-side-menu-furnitura.php';
 
                         <h2 id="upor1">&nbsp;</h2>                   
                         <h2 >upor1</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
                         </object>
 
                         <h2 id="upor2">&nbsp;</h2>                   
                         <h2 >upor2</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
                         </object> 
 
                         <h2 id="upor3">&nbsp;</h2>                   
                         <h2 >upor3</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
                         </object>                        
@@ -230,14 +236,12 @@ include 'inc-left-side-menu-furnitura.php';
                         <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart.xlsx" type="button" class="btn btn-primary"download="svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart.xlsx">Скачать - сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx</a> 
                         <h2 id="klass-lyuks">&nbsp;</h2>                   
                         <h2 >класс ЛЮКС</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks.pdf"></a>
                         </object>
 
                         <h2 id="klass-standart">&nbsp;</h2>                   
                         <h2 >класс STANDART</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
                         <object data="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart.pdf"></a>
                         </object> 
