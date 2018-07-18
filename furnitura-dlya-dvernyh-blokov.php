@@ -251,28 +251,166 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="zamki-dlya-poloten-dvernyh">ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
 
-                        <h2 id="zamki-agb-dlya-razdvizhnyh-dverey">&nbsp;</h2>                   
+
+                        <!-- <h2 id="zamki-agb-dlya-razdvizhnyh-dverey">&nbsp;</h2>                   
                         <h2 >Замки AGB для раздвижных дверей</h2>
                         <object data="./dist/files/Scivola Tre.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/Scivola Tre.pdf"></a>
-                            </object>
+                            </object> -->
+
+
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <h2 id="zamki-agb-dlya-razdvizhnyh-dverey" >&nbsp;</h2> 
+                            <h2 >Замки AGB для раздвижных дверей</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/Scivola Tre_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Замки AGB для раздвижных дверей"
+                                        data-pdf="./dist/files/Scivola Tre.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
                             
-                        <h2 id="zamki-i-otvetnye-planki-agb">&nbsp;</h2>                   
+                        <!-- <h2 id="zamki-i-otvetnye-planki-agb">&nbsp;</h2>                   
                         <h2 >Замки и ответные планки AGB</h2>
                         <p>Mediana Evolution</p>
                         <object data="./dist/files/zamki-agb-mediana-evolution.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/zamki-agb-mediana-evolution.pdf"></a>
-                            </object>
-                            <p>Mediana Polaris</p>
+                            </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <h2 id="zamki-i-otvetnye-planki-agb" >&nbsp;</h2> 
+                            <h2 >Замки и ответные планки AGB</h2>
+                            <p>Mediana Evolution</p>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/zamki-agb-mediana-evolution_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Замки и ответные планки AGB"
+                                        data-pdf="./dist/files/zamki-agb-mediana-evolution.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+
+                            <!-- <p>Mediana Polaris</p>
                         <object data="./dist/files/Z9003802X2_fd_progettoXT_ita.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/Z9003802X2_fd_progettoXT_ita.pdf"></a>
-                            </object>
+                            </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" >                             
+                            
+                            <p>Mediana Polaris</p>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/Z9003802X2_fd_progettoXT_ita_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Mediana Polaris"
+                                        data-pdf="./dist/files/Z9003802X2_fd_progettoXT_ita.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+
                                
-                        <h2 id="zamki-i-otvetnye-planki-ces">&nbsp;</h2>                   
+                        <!-- <h2 id="zamki-i-otvetnye-planki-ces">&nbsp;</h2>                   
                         <h2 >Замки и ответные планки CES</h2>
                         <object data="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"></a>
-                            </object>
+                            </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <h2 id="zamki-i-otvetnye-planki-ces" >&nbsp;</h2> 
+                            <h2 >Замки и ответные планки CES</h2>
+                                                          
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Замки и ответные планки CES"
+                                        data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <div class="bs-callout bs-callout-warning cont" >                               
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Замки и ответные планки CES"
+                                        data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <div class="bs-callout bs-callout-warning cont" >                               
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces_3.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Замки и ответные планки CES"
+                                        data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <div class="bs-callout bs-callout-warning cont" >                               
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces_4.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Замки и ответные планки CES"
+                                        data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+
                       </section>
                     </article>
 
@@ -281,18 +419,63 @@ include 'inc-left-side-menu-furnitura.php';
                       <section itemprop="articleBody" >
                         <div class="page-header">
                           <h1 itemprop="name" id="porogi-avtomaticheskie-dlya-poloten-dvernyh">ПОРОГИ АВТОМАТИЧЕСКИЕ для ПОЛОТЕН ДВЕРНЫХ</h1>
-                        </div>                         
-                        <h2 id="planet-ft">&nbsp;</h2>
+                        </div>  
+                        
+                        
+                        <!-- <h2 id="planet-ft">&nbsp;</h2>
                                          
                         <h2 >Planet_FT</h2>
                          <a href="./dist/files/Planet_FT_CAD-drawing_2D.dwg" type="button" class="btn btn-primary"download="Planet_FT_CAD-drawing_2D.dwg">Скачать - Planet_FT_CAD-drawing_2D.dwg</a> 
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p> -->
+
+
                         <object data="./dist/files/Planet_FT.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/Planet_FT.pdf"></a>
-                            </object>
-                            <object data="./dist/files/Planet_FT_Installation_instructions.pdf" type="application/pdf" width="100%" height="720px">
+                            </object> -->
+
+
+                         <div class="bs-callout bs-callout-warning cont" >
+                            <h2 id="planet-ft" >&nbsp;</h2> 
+                            <h2 >Planet FT</h2>
+                                                          
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/Planet_FT_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Planet FT"
+                                        data-pdf="./dist/files/Planet_FT.pdf"
+                                        data-dwg="./dist/files/Planet_FT_CAD-drawing_2D.dwg"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>   
+
+
+                            <!-- <object data="./dist/files/Planet_FT_Installation_instructions.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/Planet_FT_Installation_instructions.pdf"></a>
-                            </object>
+                            </object> -->
+
+                            <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 >Planet FT Инструкция по установке</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/Planet_FT_Installation_instructions_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Planet FT Инструкция по установке"
+                                        data-pdf="./dist/files/Planet_FT_Installation_instructions.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
                             
                       </section>
                     </article>
