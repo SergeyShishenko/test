@@ -240,7 +240,7 @@ function onScroll(){
     // console.log(nv);
     // $(".search_result").hide();
 	var scroll_top = $(document).scrollTop();
-	$(menu_selector + " a").each(function(){
+	$(menu_selector + " a").not("ul.dropdown-menu li a").each(function(){
         var hash = $(this).attr("href");
         // alert(hash);
         var target = $(hash);
@@ -259,7 +259,8 @@ function onScroll(){
 	});
 }
 
-	$(document).on("scroll", onScroll);
+    $(document).on("scroll", onScroll);
+    
 	$("a[href^=#]").click(function(e){
         // alert();
         e.preventDefault();
@@ -359,7 +360,8 @@ $(function () {
             var dwg = button.data('dwg');
             var xls = button.data('xls');
             var pdf = button.data('pdf');
-             console.log(pdf);
+            var alt = button.attr('alt');
+            //  console.log(pdf);
             // var pos = xls.lastIndexOf("/") + 1;
             // console.log(pos);
             //    var loge = xls.slice(xls.lastIndexOf("/") + 1);
@@ -368,20 +370,20 @@ $(function () {
             
             $(this).find('.overlay').append(
                 // '<a href="'+im+'"  type="button" class="btn btn-info im-download"download="'+im+'"  id="im-download1"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
-                '<a href="'+im+'"  type="button" class="btn btn-info im-download" download="'+im.slice(im.lastIndexOf("/") + 1)+'" title= "Скачать" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
+                '<a href="'+im+'"  type="button" class="btn btn-info im-download" download="'+alt+'" title= "Скачать" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
             );
             if (dwg !== "non" && typeof(dwg) != "undefined" && dwg !== "")
             {
                  $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
-                     '<a href="'+dwg+'"  type="button" class="btn btn-info im-download" download="'+dwg.slice(dwg.lastIndexOf("/") + 1)+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+                     '<a href="'+dwg+'"  type="button" class="btn btn-info im-download" download="'+alt+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                     ); 
             }
             if (xls !== "non" && typeof(xls) != "undefined" && xls !== "")
             {
                  $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
-                     '<a href="'+xls+'"  type="button" class="btn btn-info im-download" download="'+xls.slice(xls.lastIndexOf("/") + 1)+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
+                     '<a href="'+xls+'"  type="button" class="btn btn-info im-download" download="'+alt+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
                     ); 
             }
             if (pdf !== "non" && typeof(pdf) != "undefined" && pdf !== "")

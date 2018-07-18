@@ -351,7 +351,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         class="center-block   img-rounded img-thumbnail b-lazy img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
-                                        alt="Замки и ответные планки CES"
+                                        alt="Замки и ответные планки CES_1"
                                         data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
                                     >
                                 </a>
@@ -368,7 +368,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         class="center-block   img-rounded img-thumbnail b-lazy img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
-                                        alt="Замки и ответные планки CES"
+                                        alt="Замки и ответные планки CES_2"
                                         data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
                                     >
                                 </a>
@@ -385,7 +385,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         class="center-block   img-rounded img-thumbnail b-lazy img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
-                                        alt="Замки и ответные планки CES"
+                                        alt="Замки и ответные планки CES_3"
                                         data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
                                     >
                                 </a>
@@ -402,7 +402,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         class="center-block   img-rounded img-thumbnail b-lazy img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
-                                        alt="Замки и ответные планки CES"
+                                        alt="Замки и ответные планки CES_4"
                                         data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
                                     >
                                 </a>
@@ -436,6 +436,7 @@ include 'inc-left-side-menu-furnitura.php';
                          <div class="bs-callout bs-callout-warning cont" >
                             <h2 id="planet-ft" >&nbsp;</h2> 
                             <h2 >Planet FT</h2>
+                            <a href="./dist/files/Planet_FT_CAD-drawing_2D.dwg" type="button" class="btn btn-primary"download="Планета ft CAD чертеж 2D.dwg">Скачать - Planet_FT_CAD-drawing_2D.dwg</a> 
                                                           
                             <p> 
                                 <a>

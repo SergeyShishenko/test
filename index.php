@@ -58,25 +58,140 @@ include 'inc-session-start.php';
 
                             <ul class="nav navbar-nav " id="navmain">
                                 <li>
-                                    <a href="#detali-profili">ДЕТАЛИ</a>                            
+                                    <a href="#detali-profili">ДЕТАЛИ</a> 
+                                    <ul class="dropdown-menu">
+                                        <li><a class="" href="#floating8" >ПРОФИЛИ ГЛАДКИЕ</a>
+                                        </li>
+                                        <li><a class="" href="#floating9" >ПРОФИЛИ РЕЗНЫЕ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating10" >КАМНИ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating11" >РЕЗЬБЫ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating12" >ТОКАРКА</a>
+                                        </li>
+                                        <li><a class="" href="#floating13" >ФРЕЗЫ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating14" >ПАЗЫ</a>
+                                        </li>                                                                              
+                                    </ul>                           
                                 </li>
                                 <li>
-                                    <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a >                            
+                                    <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a >
+                                    <ul class="dropdown-menu">
+                                        <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
+                                        </li>
+                                        <li><a class="" href="#floating16" >МЕБЕЛЬ КОРПУСНАЯ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating17" >ПАНЕЛИ СТЕНОВЫЕ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating18" >КАРНИЗЫ И ФРИЗЫ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating19" >ПЛИНТУСЫ И МОЛДИНГИ</a>
+                                        </li>
+                                        <li><a class="" href="#floating20" >ЭКРАНЫ РАДИАТОРОВ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating21" >ПИЛЯСТРЫ</a>
+                                        </li>
+                                        <li><a class="" href="#floating22" >ПОТОЛКИ</a>
+                                        </li>
+                                        <li><a class="" href="#floating523" >ЛЕСТНИЦЫ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating23" >СТАНДАРТНЫЕ УЗЛЫ</a>
+                                        </li>                                                                               
+                                    </ul>                             
                                 </li>
                                 <li>                            
                                     <a href="#shablony-dokumentov-titulniki">ШАБЛОНЫ ДОКУМЕНТОВ</a >
+                                    <ul class="dropdown-menu">
+                                        <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
+                                        </li>
+                                        <li><a class="" href="#floating16" >МЕБЕЛЬ КОРПУСНАЯ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating17" >ПАНЕЛИ СТЕНОВЫЕ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating18" >КАРНИЗЫ И ФРИЗЫ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating19" >ПЛИНТУСЫ И МОЛДИНГИ</a>
+                                        </li>
+                                        <li><a class="" href="#floating20" >ЭКРАНЫ РАДИАТОРОВ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating21" >ПИЛЯСТРЫ</a>
+                                        </li>
+                                        <li><a class="" href="#floating22" >ПОТОЛКИ</a>
+                                        </li>
+                                        <li><a class="" href="#floating523" >ЛЕСТНИЦЫ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating23" >СТАНДАРТНЫЕ УЗЛЫ</a>
+                                        </li>                                                                               
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#metodichki-dokument-117">МЕТОДИЧКИ</a >
+                                    <ul class="dropdown-menu">
+                                        <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
+                                        </li>
+                                        <li><a class="" href="#floating16" >МЕБЕЛЬ КОРПУСНАЯ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating17" >ПАНЕЛИ СТЕНОВЫЕ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating18" >КАРНИЗЫ И ФРИЗЫ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating19" >ПЛИНТУСЫ И МОЛДИНГИ</a>
+                                        </li>
+                                        <li><a class="" href="#floating20" >ЭКРАНЫ РАДИАТОРОВ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating21" >ПИЛЯСТРЫ</a>
+                                        </li>
+                                        <li><a class="" href="#floating22" >ПОТОЛКИ</a>
+                                        </li>
+                                        <li><a class="" href="#floating523" >ЛЕСТНИЦЫ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating23" >СТАНДАРТНЫЕ УЗЛЫ</a>
+                                        </li>                                                                               
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#furnitura-dlya-dvernyh-blokov">ФУРНИТУРА</a >
+                                    <ul class="dropdown-menu">
+                                        <li><a class="" href="#floating32" >ДЛЯ ДВЕРНЫХ БЛОКОВ</a>
+                                        </li>
+                                        <li><a class="" href="#floating33" >ДЛЯ МЕБЕЛИ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating34" >УНИВЕРСАЛЬНАЯ</a>
+                                        </li> 
+                                        <li  ><a class="" href="#floating35" >КАТАЛОГИ</a>
+                                        </li> 
+                                                                                                                     
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="" href="#floating36" >СТЕКЛО, ЗЕРКАЛО</a>
+                                        </li>
+                                        <li><a class="" href="#floating37" >ВИТРАЖ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating38" >МЕТАЛЛ</a>
+                                        </li> 
+                                        <li><a class="" href="#floating39" >ТКАНЬ, КОЖА</a>
+                                        </li>                                                                                                                       
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#literatura-gost">ЛИТЕРАТУРА</a >
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#floating41" >ГОСТ</a>
+                                        </li>
+                                        <li><a href="#floating42" >СНиП</a>
+                                        </li> 
+                                        <li><a href="#floating43" >СанПиН</a>
+                                        </li> 
+                                        <li><a href="#floating44" >СП (Свод Правил)</a>
+                                        </li> 
+                                        <li><a  href="#floating45" >СПРАВОЧНИКИ</a>
+                                        </li>                                                                                                                       
+                                    </ul>
                                 </li>
                             </ul>   
                       </div>
@@ -3258,7 +3373,7 @@ include 'inc-session-start.php';
                                                         <TABLE >
                                                             <TR>
                                                                 <TD  class="hover mapsite" id="footer6106" >
-                                                                    <p data-href="shablony-dokumentov-titulniki.php#listy-titulnye-dizayn-proekta" data-img="./dist/images/no-foto.png" id="floating107">ЛИСТЫ ТИТУЛЬНЫЕ ДИЗАЙН&ndash;ПРОЕКТА<span> <br>~-katalog-rezby</span></p>                                                                    
+                                                                    <p data-href="shablony-dokumentov-titulniki.php#listy-titulnye-dizayn-proekta" data-img="./dist/images/no-foto.png" id="floating1078">ЛИСТЫ ТИТУЛЬНЫЕ ДИЗАЙН&ndash;ПРОЕКТА<span> <br>~-katalog-rezby</span></p>                                                                    
                                                                     <p data-href="shablony-dokumentov-titulniki.php#listy-titulnye-dizayn-proekta" data-img="./dist/images/no-foto.png" class="KEYWORDS">ЛИСТЫ ТИТУЛЬНЫЕ ДП</p>  
                                                                 </TD>                                                                            
                                                                 <TD>
@@ -3285,6 +3400,37 @@ include 'inc-session-start.php';
                                                                     </TABLE>
                                                                 </TD>
                                                             </TR>
+                                                            <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
+                                                            <TR>
+                                                                <TD data-tooltip="ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ" class="hover mapsite" id="footer1078">
+                                                                    <p data-img="./dist/images/no-foto.png" id="floating107" data-href="">ЛИСТЫ ТИТУЛЬНЫЕ АЛЬБОМА ОБРАЗЦОВ ЦВЕТА И ФОРМЫ<span> <br>~titulnyy-list-na-obrazec-komplekt</span></p>
+                                                                    <p data-img="./dist/images/no-foto.png" class="KEYWORDS" data-href="">ЛИСТЫ ТИТУЛЬНЫЕ ОБР</p> 
+                                                                </TD>                                                                            
+                                                                <TD>
+                                                                    <TABLE >                                                                                          
+                                                                        <TR>
+                                                                            <TD class="mapsite" colspan="2"  id="flo-list-titulnyy-kd">                                                                            
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="">Лист титульный ОБР<span> <br>~titulnyy-list-na-obrazec</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>  
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->
+                                                                        <TR>
+                                                                            <TD class="mapsite" colspan="2"  id="flo-pasport-izdeliy-zakaza-kd">                                                                            
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="">паспорт изделий заказа ОБР<span> <br>~pasport-izdeliy-zakaza-obrazec</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>  
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                        <TR>
+                                                                            <TD class="mapsite" colspan="2"  id="flo-reestr-razdelov-kd">                                                                            
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="">реестр разделов ОБР<span> <br>~reestr-razdelov-obrazec</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>  
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                         
+                                                                           
+                                                                    </TABLE>
+                                                                </TD>
+                                                            </TR> 
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ" class="hover mapsite" id="footer107">
@@ -5391,7 +5537,7 @@ include 'inc-session-start.php';
     <script src="./dist/js/bootstrap.js"></script>
     <script src="./dist/js/application.js"></script> 
     <script src="./dist/js/script.js?v=6"></script>   
-    <script src="./dist/js/floating.js?v=4"></script> 
+    <script src="./dist/js/floating.js?v=5"></script> 
    
     <!-- <script src="./dist/js/jquery.color.js"></script>  -->
     <!-- <script>
