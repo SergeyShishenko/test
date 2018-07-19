@@ -24,82 +24,293 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</h1>
                         </div> 
                         <!-- <a href="./dist/files/сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx" type="button" class="btn btn-primary"download="сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx">Скачать - сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx</a>  -->
-                        <h2 id="5000502-01-100-petlya-vkladnaya">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-01-100-petlya-vkladnaya">&nbsp;</h2>                   
                         <h2 >5000502-01-100 петля вкладная</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-01-100-petlya-vkladnaya.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-01-100-petlya-vkladnaya.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-01-101-petlya-nakladnaya">&nbsp;</h2>                   
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-01-100-petlya-vkladnaya" >&nbsp;</h2> 
+                            <h2 >5000502-01-100 петля вкладная</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-01-100-petlya-vkladnaya_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-01-100 петля вкладная"
+                                        data-pdf="./dist/files/5000502-01-100-petlya-vkladnaya.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+
+                        <!-- <h2 id="5000502-01-101-petlya-nakladnaya">&nbsp;</h2>                   
                         <h2 >5000502-01-101 петля накладная</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-01-101-petlya-nakladnaya.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-01-101-petlya-nakladnaya.pdf"></a>
-                        </object>  
+                        </object>  -->
 
-                        <h2 id="5000502-01-102-petlya-polunakladnaya">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-01-101-petlya-nakladnaya" >&nbsp;</h2> 
+                            <h2 >5000502-01-101 петля накладная</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-01-101-petlya-nakladnaya_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-01-101 петля накладная"
+                                        data-pdf="./dist/files/5000502-01-101-petlya-nakladnaya.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-01-102-petlya-polunakladnaya">&nbsp;</h2>                   
                         <h2 >5000502-01-102 петля полунакладная</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-01-102-petlya-polunakladnaya.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-01-102-petlya-polunakladnaya.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-01-103-petlya-vkladnaya-falshfasadnaya">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-01-102-petlya-polunakladnaya" >&nbsp;</h2> 
+                            <h2 >5000502-01-102 петля полунакладная</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-01-102-petlya-polunakladnaya_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-01-102 петля полунакладная"
+                                        data-pdf="./dist/files/5000502-01-102-petlya-polunakladnaya.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-01-103-petlya-vkladnaya-falshfasadnaya">&nbsp;</h2>                   
                         <h2 >5000502-01-103 петля вкладная фальшфасадная</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-01-103-petlya-vkladnaya-falshfasadnaya.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-01-103-petlya-vkladnaya-falshfasadnaya.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-01-103-petlya-vkladnaya-falshfasadnaya" >&nbsp;</h2> 
+                            <h2 >5000502-01-103 петля вкладная фальшфасадная</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-01-103-petlya-vkladnaya-falshfasadnaya_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-01-103 петля вкладная фальшфасадная"
+                                        data-pdf="./dist/files/5000502-01-103-petlya-vkladnaya-falshfasadnaya.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya">&nbsp;</h2>                   
                         <h2 >5000502-01-104 петля накладная нулевого вхождения</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                         <h2 id="5000502-01-110-petlya-vkladnaya-bez-pruzhiny">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya" >&nbsp;</h2> 
+                            <h2 >5000502-01-104 петля накладная нулевого вхождения</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-01-104 петля накладная нулевого вхождения"
+                                        data-pdf="./dist/files/5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                         <!-- <h2 id="5000502-01-110-petlya-vkladnaya-bez-pruzhiny">&nbsp;</h2>                   
                         <h2 >5000502-01-110 петля вкладная без пружины</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-01-110-petlya-vkladnaya-bez-pruzhiny.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-01-110-petlya-vkladnaya-bez-pruzhiny.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="5000502-01-111-petlya-nakladnaya-bez-pruzhiny">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-01-110-petlya-vkladnaya-bez-pruzhiny" >&nbsp;</h2> 
+                            <h2 >5000502-01-110 петля вкладная без пружины</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-01-110-petlya-vkladnaya-bez-pruzhiny_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-01-110 петля вкладная без пружины"
+                                        data-pdf="./dist/files/5000502-01-110-petlya-vkladnaya-bez-pruzhiny.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-01-111-petlya-nakladnaya-bez-pruzhiny">&nbsp;</h2>                   
                         <h2 >5000502-01-111 петля накладная без пружины</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-01-111-petlya-nakladnaya-bez-pruzhiny.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-01-111-petlya-nakladnaya-bez-pruzhiny.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="5000502-01-112-petlya-polunakladnaya-bez-pruzhiny">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-01-111-petlya-nakladnaya-bez-pruzhiny" >&nbsp;</h2> 
+                            <h2 >5000502-01-111 петля накладная без пружины</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-01-111-petlya-nakladnaya-bez-pruzhiny_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-01-111 петля накладная без пружины"
+                                        data-pdf="./dist/files/5000502-01-111-petlya-nakladnaya-bez-pruzhiny.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>  
+
+                        <!-- <h2 id="5000502-01-112-petlya-polunakladnaya-bez-pruzhiny">&nbsp;</h2>                   
                         <h2 >5000502-01-112 петля полунакладная без пружины</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-01-112-petlya-polunakladnaya-bez-pruzhiny.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-01-112-petlya-polunakladnaya-bez-pruzhiny.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-01-113-petlya-vkladnaya-falshfasadnaya-bez-pruzhiny">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-01-112-petlya-polunakladnaya-bez-pruzhiny" >&nbsp;</h2> 
+                            <h2 >5000502-01-112 петля полунакладная без пружины</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-01-112-petlya-polunakladnaya-bez-pruzhiny_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-01-112 петля полунакладная без пружины"
+                                        data-pdf="./dist/files/5000502-01-112-petlya-polunakladnaya-bez-pruzhiny.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="5000502-01-113-petlya-vkladnaya-falshfasadnaya-bez-pruzhiny">&nbsp;</h2>                   
                         <h2 >5000502-01-113 петля вкладная фальшфасадная без пружины</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-01-113-petlya-vkladnaya-falshfasadnaya-bez-pruzhiny.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-01-113-petlya-vkladnaya-falshfasadnaya-bez-pruzhiny.pdf"></a>
-                        </object> 
+                        </object>  -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-01-113-petlya-vkladnaya-falshfasadnaya-bez-pruzhiny" >&nbsp;</h2> 
+                            <h2 >5000502-01-113 петля вкладная фальшфасадная без пружины</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-01-113-petlya-vkladnaya-falshfasadnaya-bez-pruzhiny_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-01-113 петля вкладная фальшфасадная без пружины"
+                                        data-pdf="./dist/files/5000502-01-113-petlya-vkladnaya-falshfasadnaya-bez-pruzhiny.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
 
                         <h2 id="5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny">&nbsp;</h2>                   
                         <h2 >5000502-01-114 петля накладная нулевого вхождения без пружины</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny.pdf"></a>
-                        </object>  
+                        </object>
 
-                        <h2 id="petli-dlya-fasadov-podbor-po-vesu">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny" >&nbsp;</h2> 
+                            <h2 >5000502-01-114 петля накладная нулевого вхождения без пружины</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-01-114 петля накладная нулевого вхождения без пружины"
+                                        data-pdf="./dist/files/5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>  
+
+                        <!-- <h2 id="petli-dlya-fasadov-podbor-po-vesu">&nbsp;</h2>                   
                         <h2 >ПЕТЛИ для ФАСАДОВ (подбор по весу)</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/petli-dlya-fasadov-podbor-po-vesu.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/petli-dlya-fasadov-podbor-po-vesu.pdf"></a>
-                        </object>            
+                        </object>  -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="petli-dlya-fasadov-podbor-po-vesu" >&nbsp;</h2> 
+                            <h2 >ПЕТЛИ для ФАСАДОВ (подбор по весу)</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/petli-dlya-fasadov-podbor-po-vesu_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="ПЕТЛИ для ФАСАДОВ (подбор по весу)"
+                                        data-pdf="./dist/files/petli-dlya-fasadov-podbor-po-vesu.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>           
                                                                     
                       </section>
                     </article>
@@ -110,12 +321,31 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="mehanizmy-razdvizheniya-dlya-fasadov-Cinetto-PS23">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ</h1>
                         </div>
 
-                        <h2 id="5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov-Cinetto-PS23">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov-Cinetto-PS23">&nbsp;</h2>                   
                         <h2 >5000502-02-110 система раздвижения и складывания фасадов Cinetto PS23</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/PS23_sch.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/PS23_sch.pdf"></a>
-                        </object> 
+                        </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov-Cinetto-PS23" >&nbsp;</h2> 
+                            <h2 >5000502-02-110 система раздвижения и складывания фасадов Cinetto PS23</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/PS23_sch_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-02-110 система раздвижения и складывания фасадов Cinetto PS23"
+                                        data-pdf="./dist/files/PS23_sch.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
 
                     </article>
 
@@ -141,19 +371,57 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="mekhanizmy-vydvizheniya-dlya-yashchikov">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ</h1>
                         </div> 
                         <!-- <a href="./dist/files/сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx" type="button" class="btn btn-primary"download="сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx">Скачать - сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx</a>  -->
-                        <h2 id="5000502-04-101-movento-blumotion-napravlyayushchie-250">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-04-101-movento-blumotion-napravlyayushchie-250">&nbsp;</h2>                   
                         <h2 >5000502-04-101 MOVENTO BLUMOTION 40 КГ 250 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-101 MOVENTO BLUMOTION 40 kg 250 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-101 MOVENTO BLUMOTION 40 kg 250 mm.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-04-103-movento-blumotion-napravlyayushchie-300">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-04-101-movento-blumotion-napravlyayushchie-250" >&nbsp;</h2> 
+                            <h2 >5000502-04-101 MOVENTO BLUMOTION 40 КГ 250 мм</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-101 MOVENTO BLUMOTION 40 kg 250 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-101 MOVENTO BLUMOTION 40 КГ 250 мм"
+                                        data-pdf="./dist/files/5000502-04-101 MOVENTO BLUMOTION 40 kg 250 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="5000502-04-103-movento-blumotion-napravlyayushchie-300">&nbsp;</h2>                   
                         <h2 >5000502-04-103 MOVENTO BLUMOTION 40 КГ 300 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-103 MOVENTO BLUMOTION 40 kg 300 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-103 MOVENTO BLUMOTION 40 kg 300 mm.pdf"></a>
-                        </object>  
+                        </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-04-103-movento-blumotion-napravlyayushchie-300" >&nbsp;</h2> 
+                            <h2 >5000502-04-103 MOVENTO BLUMOTION 40 КГ 300 мм</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-103 MOVENTO BLUMOTION 40 kg 300 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-103 MOVENTO BLUMOTION 40 КГ 300 мм"
+                                        data-pdf="./dist/files/5000502-04-103 MOVENTO BLUMOTION 40 kg 300 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>  
 
                         <h2 id="5000502-04-105-movento-blumotion-napravlyayushchie-350">&nbsp;</h2>                   
                         <h2 >5000502-04-105 MOVENTO BLUMOTION 40 КГ 350 мм</h2>
