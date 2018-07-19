@@ -40,7 +40,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-01-100-petlya-vkladnaya_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-01-100 петля вкладная"
@@ -67,7 +67,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-01-101-petlya-nakladnaya_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar   img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-01-101 петля накладная"
@@ -93,7 +93,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-01-102-petlya-polunakladnaya_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-01-102 петля полунакладная"
@@ -119,7 +119,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-01-103-petlya-vkladnaya-falshfasadnaya_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-01-103 петля вкладная фальшфасадная"
@@ -145,7 +145,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-01-104 петля накладная нулевого вхождения"
@@ -171,7 +171,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-01-110-petlya-vkladnaya-bez-pruz_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-01-110 петля вкладная без пружины"
@@ -197,7 +197,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-01-111-petlya-nakladnaya-bez-pruzhiny_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-01-111 петля накладная без пружины"
@@ -223,7 +223,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-01-112-petlya-polunakladnaya-bez-pruzhiny_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-01-112 петля полунакладная без пружины"
@@ -249,7 +249,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-01-113-petlya-vkladnaya-falshfasadnaya-bez-pruzhiny_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-01-113 петля вкладная фальшфасадная без пружины"
@@ -275,7 +275,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-01-114 петля накладная нулевого вхождения без пружины"
@@ -301,7 +301,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/petli-dlya-fasadov-podbor-po-vesu_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="ПЕТЛИ для ФАСАДОВ (подбор по весу)"
@@ -336,7 +336,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/PS23_sch_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-02-110 система раздвижения и складывания фасадов Cinetto PS23"
@@ -370,7 +370,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="mehanizmy-podemny1"
@@ -405,7 +405,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-101 MOVENTO BLUMOTION 40 kg 250 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-101 MOVENTO BLUMOTION 40 КГ 250 мм"
@@ -431,7 +431,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-103 MOVENTO BLUMOTION 40 kg 300 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-103 MOVENTO BLUMOTION 40 КГ 300 мм"
@@ -457,7 +457,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-105 MOVENTO BLUMOTION 40 kg 350 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-105 MOVENTO BLUMOTION 40 КГ 350 мм"
@@ -484,7 +484,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-107 MOVENTO BLUMOTION 40 kg 400 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-107 MOVENTO BLUMOTION 40 КГ 400 мм"
@@ -513,7 +513,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-108 MOVENTO BLUMOTION 40 kg 450 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-108 MOVENTO BLUMOTION 40 КГ 450 мм"
@@ -539,7 +539,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-110 MOVENTO BLUMOTION 40 kg 500 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-110 MOVENTO BLUMOTION 40 КГ 500 мм"
@@ -565,7 +565,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-113 MOVENTO BLUMOTION 40 kg 550 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-113 MOVENTO BLUMOTION 40 КГ 550 мм"
@@ -591,7 +591,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-114 MOVENTO BLUMOTION 40 kg 600 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-114 MOVENTO BLUMOTION 40 КГ 600 мм"
@@ -617,7 +617,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-121 MOVENTO TIPON 40 kg 250 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-121 MOVENTO TIPON 40 КГ 250 мм"
@@ -643,7 +643,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-125 MOVENTO TIPON 40 kg 300 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-125 MOVENTO TIPON 40 КГ 300 мм"
@@ -669,7 +669,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-128 MOVENTO TIPON 40 kg 350 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-128 MOVENTO TIPON 40 КГ 350 мм"
@@ -695,7 +695,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-128 MOVENTO TIPON 40 kg 400 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-128 MOVENTO TIPON 40 КГ 400 мм"
@@ -721,7 +721,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-139 MOVENTO TIPON 40 kg 450 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-139 MOVENTO TIPON 40 КГ 450 мм"
@@ -747,7 +747,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-141 MOVENTO TIPON 40 kg 500 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-141 MOVENTO TIPON 40 КГ 500 мм"
@@ -773,7 +773,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-143 MOVENTO TIPON 40 kg 550 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-143 MOVENTO TIPON 40 КГ 550 мм"
@@ -799,7 +799,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/5000502-04-145 MOVENTO TIPON 40 kg 600 mm_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-04-145 MOVENTO TIPON 40 КГ 600 мм"
@@ -827,7 +827,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/blum-movento---instrukciya-po-ustanovke-tip-on-blumotion_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="blum MOVENTO - инструкция по установке TIP-ON BLUMOTION"
@@ -851,7 +851,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/blum-movento---instrukciya-po-ustanovke-bokovogo-sinhronizatora_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="blum MOVENTO - инструкция по установке БОКОВОГО СИНХРОНИЗАТОРА"
@@ -875,7 +875,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/blum-movento---instrukciya-po-ustanovke-sinhronizatora-dlya-tip-on_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="blum MOVENTO - инструкция по установке СИНХРОНИЗАТОРА ДЛЯ TIP-ON"
@@ -899,7 +899,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/blum-movento---listovka-montazh-ko-dnu_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="blum MOVENTO - листовка МОНТАЖ КО ДНУ"
@@ -923,7 +923,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/blum-movento---listovka-regulirovka-po-glubine_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="blum MOVENTO - листовка РЕГУЛИРОВКА ПО ГЛУБИНЕ"
@@ -947,7 +947,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/blum-movento---opisanie-produkcii_16.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="blum MOVENTO - ОПИСАНИЕ ПРОДУКЦИИ"

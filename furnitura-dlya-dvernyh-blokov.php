@@ -40,7 +40,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петли ввертные четырехштырьковые OTLAV 14 мм"
@@ -67,7 +67,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/petli-vvertnye-chetyrehshtyrkovye-otlav_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петли ввертные четырехштырьковые OTLAV"
@@ -94,7 +94,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/petlya-vvyortnaya-elementis-chetyryohshtyrevaya-universalnaya-reguliruemaya-14-mm_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петля ввёртная ELEMENTIS четырёхштыревая универсальная регулируемая 14 мм"
@@ -120,7 +120,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/artikuly-petel-kartochnyh-dvernyh-fs_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петли карточные дверные FS"
@@ -148,7 +148,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/TE_240_3D_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петли скрытого монтажа TECTUS TE_240_3D"
@@ -176,7 +176,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/TE_340_3D_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петли скрытого монтажа TECTUS TE_340_3D"
@@ -213,7 +213,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/sistema-razdvizheniya-laguna-standart_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Схемы для расчетов и сборки системы STANDART"
@@ -231,7 +231,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/sistema-razdvizheniya-laguna-standart_set_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Элементы системы STANDART"
@@ -267,7 +267,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/Scivola Tre_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки AGB для раздвижных дверей"
@@ -295,7 +295,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/zamki-agb-mediana-evolution_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки и ответные планки AGB"
@@ -320,7 +320,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/Z9003802X2_fd_progettoXT_ita_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Mediana Polaris"
@@ -348,7 +348,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки и ответные планки CES_1"
@@ -365,7 +365,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки и ответные планки CES_2"
@@ -382,7 +382,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces_3.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки и ответные планки CES_3"
@@ -399,7 +399,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces_4.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки и ответные планки CES_4"
@@ -443,7 +443,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/Planet_FT_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Planet FT"
@@ -467,7 +467,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/Planet_FT_Installation_instructions_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Planet FT Инструкция по установке"
@@ -502,7 +502,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="rigel1"
@@ -528,7 +528,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="rigel2"
@@ -553,7 +553,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="rigel3"
@@ -586,7 +586,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="dovodchik1"
@@ -611,7 +611,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="dovodchik2"
@@ -636,7 +636,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="dovodchik3"
@@ -670,7 +670,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="upor1"
@@ -695,7 +695,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="upor2"
@@ -720,7 +720,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="upor3"
@@ -755,7 +755,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Cводная таблица фурнитуры дверей распашных - класс ЛЮКС"
@@ -773,7 +773,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks_2.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Cводная таблица фурнитуры дверей распашных - класс ЛЮКС"
@@ -798,7 +798,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
                                         data-src="./dist/images/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart_1.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar  img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Cводная таблица фурнитуры дверей распашных - класс STANDART"

@@ -11,7 +11,11 @@ body {
   display: block; 
   margin: 0 auto; 
   }
- 
+.bar{
+  background-image: url('./bx_loader.gif'); /* Путь к фоновому рисунку */
+  background-position: 50% 10%; /* Положение фона */
+  background-repeat: no-repeat; /* Отменяем повторение фона */
+ }
   /* менять приизменении окна */
   .img-book {height:1280px;}
   .img-album {height:640px;}
