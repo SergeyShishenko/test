@@ -355,8 +355,11 @@ $(function () {
             $(this).find(".overlay .btn").remove();
              // получить кнопку, которая его открыло
             var button = $(this).find("img"); 
-            // извлечь информацию из атрибута data-content           
+            // извлечь информацию из атрибута data-content 
             var im = button.attr('src');
+            //  im = button.attr('src');
+                   
+                
             var dwg = button.data('dwg');
             var xls = button.data('xls');
             var pdf = button.data('pdf');
@@ -396,7 +399,7 @@ $(function () {
 
             $(this).find('.overlay').append( 
                 // '<button  onclick="print('+im.slice(im.lastIndexOf("/") + 1)+')">Печать картинки</button>'
-                "<a href='javascript:PrintImg(\""+im+"\"); void 0;' type='button' class='btn btn-info im-download ' title='Размер бумаги Letter' ><i class='glyphicon glyphicon-print 'aria-hidden='true'></i> Печать</a>" 
+                "<a href='javascript:PrintImg(\""+im+"\",\""+alt+"\"); void 0;' type='button' class='btn btn-info im-download '  ><i class='glyphicon glyphicon-print 'aria-hidden='true'></i> Печать</a>" 
                 /* '<button class="btn btn-info im-download" onclick="PrintImg('+im.slice(im.lastIndexOf("/") + 1)+');" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i>Печать</button>' */
              ); 
           
@@ -415,19 +418,18 @@ $(function () {
 
 
 
-
-
-
-
-
-
-
 // Печать 
-function PrintImg(src){
+function PrintImg(src,alt){
     
     // var win = window.open('','','left=0,top=0,right=0,bottom=0,width=800,height=640,toolbar=0,scrollbars=0,status=0');
-    var win = window.open();
-		win.document.write('<img src="'+src+'"  style="width: 100%;">'); 
+    var win = window.open("about:blank","_new");
+        win.document.open();
+		win.document.write(
+            '<html>\n<head>\n<title>'+alt+'</title>\n</head>\n'+
+            '<body>\n'+
+            '<img src="'+src+'"  style="width: 100%;">'+
+            '</body>\n</html>\n'
+        ); 
 		win.print();
 		win.close();
   }
