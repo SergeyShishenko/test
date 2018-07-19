@@ -104,51 +104,27 @@ include 'inc-session-start.php';
                                 <li>                            
                                     <a href="#shablony-dokumentov-titulniki">ШАБЛОНЫ ДОКУМЕНТОВ</a >
                                     <ul class="dropdown-menu">
-                                        <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
+                                        <li><a class="" href="#floating24" >ЛИСТЫ ТИТУЛЬНЫЕ</a>
                                         </li>
-                                        <li><a class="" href="#floating16" >МЕБЕЛЬ КОРПУСНАЯ</a>
+                                        <li><a class="" href="#floating25" >ШТАМПЫ ЧЕРТЕЖЕЙ</a>
                                         </li> 
-                                        <li><a class="" href="#floating17" >ПАНЕЛИ СТЕНОВЫЕ</a>
+                                        <li><a class="" href="#floating26" >СПЕЦИФИКАЦИИ</a>
                                         </li> 
-                                        <li><a class="" href="#floating18" >КАРНИЗЫ И ФРИЗЫ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating19" >ПЛИНТУСЫ И МОЛДИНГИ</a>
-                                        </li>
-                                        <li><a class="" href="#floating20" >ЭКРАНЫ РАДИАТОРОВ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating21" >ПИЛЯСТРЫ</a>
-                                        </li>
-                                        <li><a class="" href="#floating22" >ПОТОЛКИ</a>
-                                        </li>
-                                        <li><a class="" href="#floating523" >ЛЕСТНИЦЫ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating23" >СТАНДАРТНЫЕ УЗЛЫ</a>
-                                        </li>                                                                               
+                                        <li><a class="" href="#floating27" >ПОКУПНЫЕ ИЗДЕЛИЯ</a>
+                                        </li>                                                                                                                       
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#metodichki-dokument-117">МЕТОДИЧКИ</a >
                                     <ul class="dropdown-menu">
-                                        <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
+                                        <li><a class="" href="#floating28" >ДОКУМЕНТ 117</a>
                                         </li>
-                                        <li><a class="" href="#floating16" >МЕБЕЛЬ КОРПУСНАЯ</a>
+                                        <li><a class="" href="#floating29" >ДОКУМЕНТ 135</a>
                                         </li> 
-                                        <li><a class="" href="#floating17" >ПАНЕЛИ СТЕНОВЫЕ</a>
+                                        <li><a class="" href="#floating30" >ЭРГОНОМИКА</a>
                                         </li> 
-                                        <li><a class="" href="#floating18" >КАРНИЗЫ И ФРИЗЫ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating19" >ПЛИНТУСЫ И МОЛДИНГИ</a>
-                                        </li>
-                                        <li><a class="" href="#floating20" >ЭКРАНЫ РАДИАТОРОВ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating21" >ПИЛЯСТРЫ</a>
-                                        </li>
-                                        <li><a class="" href="#floating22" >ПОТОЛКИ</a>
-                                        </li>
-                                        <li><a class="" href="#floating523" >ЛЕСТНИЦЫ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating23" >СТАНДАРТНЫЕ УЗЛЫ</a>
-                                        </li>                                                                               
+                                        <li><a class="" href="#floating31" >ПРОЕКТНАЯ РАБОТА</a>
+                                        </li>                                                                                                                     
                                     </ul>
                                 </li>
                                 <li>
@@ -175,6 +151,8 @@ include 'inc-session-start.php';
                                         <li><a class="" href="#floating38" >МЕТАЛЛ</a>
                                         </li> 
                                         <li><a class="" href="#floating39" >ТКАНЬ, КОЖА</a>
+                                        </li> 
+                                        <li><a class="" href="#floating40" >СВЕТ</a>
                                         </li>                                                                                                                       
                                     </ul>
                                 </li>
