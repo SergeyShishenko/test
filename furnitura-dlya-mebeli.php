@@ -170,12 +170,12 @@ include 'inc-left-side-menu-furnitura.php';
                                 <a>
                                     <img  
                                         src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
-                                        data-src="./dist/images/5000502-01-110-petlya-vkladnaya-bez-pruzhiny_2.png"
+                                        data-src="./dist/images/5000502-01-110-petlya-vkladnaya-bez-pruz_2.png"
                                         class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="5000502-01-110 петля вкладная без пружины"
-                                        data-pdf="./dist/files/5000502-01-110-petlya-vkladnaya-bez-pruzhiny.pdf"
+                                        data-pdf="./dist/files/5000502-01-110-petlya-vkladnaya-bez-pruz.pdf"
                                     >
                                 </a>
                             </p>
@@ -260,12 +260,12 @@ include 'inc-left-side-menu-furnitura.php';
                             <div class="overlay"></div>
                         </div>
 
-                        <h2 id="5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny">&nbsp;</h2>                   
                         <h2 >5000502-01-114 петля накладная нулевого вхождения без пружины</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny.pdf"></a>
-                        </object>
+                        </object> -->
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny" >&nbsp;</h2> 
@@ -355,12 +355,31 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="mehanizmy-podemnye-dlya-fasadov">МЕХАНИЗМЫ ПОДЪЕМНЫЕ для ФАСАДОВ</h1>
                         </div>
 
-                        <h2 id="mehanizmy-podemny1">&nbsp;</h2>                   
+                        <!-- <h2 id="mehanizmy-podemny1">&nbsp;</h2>                   
                         <h2 >mehanizmy-podemny1</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object>  -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="mehanizmy-podemny1" >&nbsp;</h2> 
+                            <h2 >mehanizmy-podemny1</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="mehanizmy-podemny1"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
                         
                     </article>
 
@@ -423,130 +442,521 @@ include 'inc-left-side-menu-furnitura.php';
                             <div class="overlay"></div>
                         </div>  
 
-                        <h2 id="5000502-04-105-movento-blumotion-napravlyayushchie-350">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-04-105-movento-blumotion-napravlyayushchie-350">&nbsp;</h2>                   
                         <h2 >5000502-04-105 MOVENTO BLUMOTION 40 КГ 350 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-105 MOVENTO BLUMOTION 40 kg 350 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-105 MOVENTO BLUMOTION 40 kg 350 mm.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-04-107-movento-blumotion-napravlyayushchie-400">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-04-105-movento-blumotion-napravlyayushchie-350" >&nbsp;</h2> 
+                            <h2 >5000502-04-105 MOVENTO BLUMOTION 40 КГ 350 мм</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-105 MOVENTO BLUMOTION 40 kg 350 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-105 MOVENTO BLUMOTION 40 КГ 350 мм"
+                                        data-pdf="./dist/files/5000502-04-105 MOVENTO BLUMOTION 40 kg 350 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="5000502-04-107-movento-blumotion-napravlyayushchie-400">&nbsp;</h2>                   
                         <h2 >5000502-04-107 MOVENTO BLUMOTION 40 КГ 400 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-107 MOVENTO BLUMOTION 40 kg 400 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-107 MOVENTO BLUMOTION 40 kg 400 mm.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="5000502-04-109-movento-blumotion-napravlyayushchie-450">&nbsp;</h2>                   
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-04-107-movento-blumotion-napravlyayushchie-400" >&nbsp;</h2> 
+                            <h2 >5000502-04-107 MOVENTO BLUMOTION 40 КГ 400 мм</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-107 MOVENTO BLUMOTION 40 kg 400 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-107 MOVENTO BLUMOTION 40 КГ 400 мм"
+                                        data-pdf="./dist/files/5000502-04-107 MOVENTO BLUMOTION 40 kg 400 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        
+                         
+
+                        <!-- <h2 id="5000502-04-109-movento-blumotion-napravlyayushchie-450">&nbsp;</h2>                   
                         <h2 >5000502-04-108 MOVENTO BLUMOTION 40 КГ 450 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-108 MOVENTO BLUMOTION 40 kg 450 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-108 MOVENTO BLUMOTION 40 kg 450 mm.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                         <h2 id="5000502-04-111-movento-blumotion-napravlyayushchie-500">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-04-109-movento-blumotion-napravlyayushchie-450" >&nbsp;</h2> 
+                            <h2 >5000502-04-108 MOVENTO BLUMOTION 40 КГ 450 мм</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-108 MOVENTO BLUMOTION 40 kg 450 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-108 MOVENTO BLUMOTION 40 КГ 450 мм"
+                                        data-pdf="./dist/files/5000502-04-108 MOVENTO BLUMOTION 40 kg 450 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                         <!-- <h2 id="5000502-04-111-movento-blumotion-napravlyayushchie-500">&nbsp;</h2>                   
                         <h2 >5000502-04-110 MOVENTO BLUMOTION 40 КГ 500 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-110 MOVENTO BLUMOTION 40 kg 500 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-110 MOVENTO BLUMOTION 40 kg 500 mm.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-04-113-movento-blumotion-napravlyayushchie-550">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-04-111-movento-blumotion-napravlyayushchie-500" >&nbsp;</h2> 
+                            <h2 >5000502-04-110 MOVENTO BLUMOTION 40 КГ 500 мм</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-110 MOVENTO BLUMOTION 40 kg 500 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-110 MOVENTO BLUMOTION 40 КГ 500 мм"
+                                        data-pdf="./dist/files/5000502-04-110 MOVENTO BLUMOTION 40 kg 500 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-04-113-movento-blumotion-napravlyayushchie-550">&nbsp;</h2>                   
                         <h2 >5000502-04-113 MOVENTO BLUMOTION 40 КГ 550 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-113 MOVENTO BLUMOTION 40 kg 550 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-113 MOVENTO BLUMOTION 40 kg 550 mm.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="5000502-04-114-movento-blumotion-napravlyayushchie-600">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-04-113-movento-blumotion-napravlyayushchie-550" >&nbsp;</h2> 
+                            <h2 >5000502-04-113 MOVENTO BLUMOTION 40 КГ 550 мм</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-113 MOVENTO BLUMOTION 40 kg 550 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-113 MOVENTO BLUMOTION 40 КГ 550 мм"
+                                        data-pdf="./dist/files/5000502-04-113 MOVENTO BLUMOTION 40 kg 550 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-04-114-movento-blumotion-napravlyayushchie-600">&nbsp;</h2>                   
                         <h2 >5000502-04-114 MOVENTO BLUMOTION 40 КГ 600 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-114 MOVENTO BLUMOTION 40 kg 600 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-114 MOVENTO BLUMOTION 40 kg 600 mm.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-04-121-movento-tipon-napravlyayushchie-250">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-04-114-movento-blumotion-napravlyayushchie-600" >&nbsp;</h2> 
+                            <h2 >5000502-04-114 MOVENTO BLUMOTION 40 КГ 600 мм</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-114 MOVENTO BLUMOTION 40 kg 600 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-114 MOVENTO BLUMOTION 40 КГ 600 мм"
+                                        data-pdf="./dist/files/5000502-04-114 MOVENTO BLUMOTION 40 kg 600 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-04-121-movento-tipon-napravlyayushchie-250">&nbsp;</h2>                   
                         <h2 >5000502-04-121 MOVENTO TIPON 40 КГ 250 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-121 MOVENTO TIPON 40 kg 250 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-121 MOVENTO TIPON 40 kg 250 mm.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="5000502-04-125-movento-tipon-napravlyayushchie-300">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-04-121-movento-tipon-napravlyayushchie-250" >&nbsp;</h2> 
+                            <h2 >5000502-04-121 MOVENTO TIPON 40 КГ 250 мм</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-121 MOVENTO TIPON 40 kg 250 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-121 MOVENTO TIPON 40 КГ 250 мм"
+                                        data-pdf="./dist/files/5000502-04-121 MOVENTO TIPON 40 kg 250 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-04-125-movento-tipon-napravlyayushchie-300">&nbsp;</h2>                   
                         <h2 >5000502-04-125 MOVENTO TIPON 40 КГ 300 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-125 MOVENTO TIPON 40 kg 300 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-125 MOVENTO TIPON 40 kg 300 mm.pdf"></a>
-                        </object>  
+                        </object> -->
 
-                        <h2 id="5000502-04-128-movento-tipon-napravlyayushchie-350">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-04-125-movento-tipon-napravlyayushchie-300" >&nbsp;</h2> 
+                            <h2 >5000502-04-125 MOVENTO TIPON 40 КГ 300 мм</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-125 MOVENTO TIPON 40 kg 300 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-125 MOVENTO TIPON 40 КГ 300 мм"
+                                        data-pdf="./dist/files/5000502-04-125 MOVENTO TIPON 40 kg 300 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>  
+
+                        <!-- <h2 id="5000502-04-128-movento-tipon-napravlyayushchie-350">&nbsp;</h2>                   
                         <h2 >5000502-04-128 MOVENTO TIPON 40 КГ 350 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-128 MOVENTO TIPON 40 kg 350 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-128 MOVENTO TIPON 40 kg 350 mm.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-04-133-movento-tipon-napravlyayushchie-400">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-04-128-movento-tipon-napravlyayushchie-350">&nbsp;</h2>                   
+                        <h2 >5000502-04-128 MOVENTO TIPON 40 КГ 350 мм</h2>                             
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-128 MOVENTO TIPON 40 kg 350 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-128 MOVENTO TIPON 40 КГ 350 мм"
+                                        data-pdf="./dist/files/5000502-04-128 MOVENTO TIPON 40 kg 350 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-04-133-movento-tipon-napravlyayushchie-400">&nbsp;</h2>                   
                         <h2 >5000502-04-128 MOVENTO TIPON 40 КГ 400 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-128 MOVENTO TIPON 40 kg 400 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-128 MOVENTO TIPON 40 kg 400 mm.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="5000502-04-139-movento-tipon-napravlyayushchie-450">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-04-133-movento-tipon-napravlyayushchie-400">&nbsp;</h2>                   
+                        <h2 >5000502-04-128 MOVENTO TIPON 40 КГ 400 мм</h2>                             
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-128 MOVENTO TIPON 40 kg 400 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-128 MOVENTO TIPON 40 КГ 400 мм"
+                                        data-pdf="./dist/files/5000502-04-128 MOVENTO TIPON 40 kg 400 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-04-139-movento-tipon-napravlyayushchie-450">&nbsp;</h2>                   
                         <h2 >5000502-04-139 MOVENTO TIPON 40 КГ 450 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-139 MOVENTO TIPON 40 kg 450 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-139 MOVENTO TIPON 40 kg 450 mm.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="5000502-04-141-movento-tipon-napravlyayushchie-500">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-04-139-movento-tipon-napravlyayushchie-450">&nbsp;</h2>                   
+                        <h2 >5000502-04-139 MOVENTO TIPON 40 КГ 450 мм</h2>                             
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-139 MOVENTO TIPON 40 kg 450 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-139 MOVENTO TIPON 40 КГ 450 мм"
+                                        data-pdf="./dist/files/5000502-04-139 MOVENTO TIPON 40 kg 450 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-04-141-movento-tipon-napravlyayushchie-500">&nbsp;</h2>                   
                         <h2 >5000502-04-141 MOVENTO TIPON 40 КГ 500 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-141 MOVENTO TIPON 40 kg 500 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-141 MOVENTO TIPON 40 kg 500 mm.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-04-143-movento-tipon-napravlyayushchie-550">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-04-141-movento-tipon-napravlyayushchie-500">&nbsp;</h2>                   
+                        <h2 >5000502-04-141 MOVENTO TIPON 40 КГ 500 мм</h2>                            
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-141 MOVENTO TIPON 40 kg 500 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-141 MOVENTO TIPON 40 КГ 500 мм"
+                                        data-pdf="./dist/files/5000502-04-141 MOVENTO TIPON 40 kg 500 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-04-143-movento-tipon-napravlyayushchie-550">&nbsp;</h2>                   
                         <h2 >5000502-04-143 MOVENTO TIPON 40 КГ 550 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-143 MOVENTO TIPON 40 kg 550 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-143 MOVENTO TIPON 40 kg 550 mm.pdf"></a>
-                        </object> 
+                        </object> -->
+                        
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-04-143-movento-tipon-napravlyayushchie-550">&nbsp;</h2>                   
+                        <h2 >5000502-04-143 MOVENTO TIPON 40 КГ 550 мм</h2>                            
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-143 MOVENTO TIPON 40 kg 550 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-143 MOVENTO TIPON 40 КГ 550 мм"
+                                        data-pdf="./dist/files/5000502-04-143 MOVENTO TIPON 40 kg 550 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
 
-                        <h2 id="5000502-04-145-movento-tipon-napravlyayushchie-600">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-04-145-movento-tipon-napravlyayushchie-600">&nbsp;</h2>                   
                         <h2 >5000502-04-145 MOVENTO TIPON 40 КГ 600 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-04-145 MOVENTO TIPON 40 kg 600 mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-04-145 MOVENTO TIPON 40 kg 600 mm.pdf"></a>
-                        </object> 
+                        </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-04-145-movento-tipon-napravlyayushchie-600">&nbsp;</h2>                   
+                        <h2 >5000502-04-145 MOVENTO TIPON 40 КГ 600 мм</h2>                           
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-04-145 MOVENTO TIPON 40 kg 600 mm_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-04-145 MOVENTO TIPON 40 КГ 600 мм"
+                                        data-pdf="./dist/files/5000502-04-145 MOVENTO TIPON 40 kg 600 mm.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
 
                         <h2 id="tekhnicheskaya-informaciya-po-napravlyayushchim">&nbsp;</h2>                   
                         <h2 >Техническая информация по направляющим</h2>
-                        <p>&nbsp;</p>
-                        <object data="./dist/files/blum-movento---instrukciya-po-ustanovke-tip-on-blumotion.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/blum-movento---instrukciya-po-ustanovke-tip-on-blumotion.pdf"></a>
-                        </object> 
-                        <p>&nbsp;</p>
-                        <object data="./dist/files/blum-movento---instrukciya-po-ustanovke-bokovogo-sinhronizatora.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/blum-movento---instrukciya-po-ustanovke-bokovogo-sinhronizatora.pdf"></a>
-                        </object> 
-                        <p>&nbsp;</p>
-                        <object data="./dist/files/blum-movento---instrukciya-po-ustanovke-sinhronizatora-dlya-tip-on.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/blum-movento---instrukciya-po-ustanovke-sinhronizatora-dlya-tip-on.pdf"></a>
-                        </object>
-                        <p>&nbsp;</p>
-                        <object data="./dist/files/blum-movento---listovka-montazh-ko-dnu.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/blum-movento---listovka-montazh-ko-dnu.pdf"></a>
-                        </object> 
-                        <p>&nbsp;</p>
-                        <object data="./dist/files/blum-movento---listovka-regulirovka-po-glubine.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/blum-movento---listovka-regulirovka-po-glubine.pdf"></a>
-                        </object>
-                        <p>&nbsp;</p>
-                        <object data="./dist/files/blum-movento---opisanie-produkcii.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/blum-movento---opisanie-produkcii.pdf"></a>
-                        </object>           
+
+                        <!-- <p>&nbsp;</p>
+                        <object data="./dist/files/blum-movento-instrukciya-po-ustanovke-tip-on-blumotion.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/blum-movento-instrukciya-po-ustanovke-tip-on-blumotion.pdf"></a>
+                        </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 >&nbsp;</h2>                   
+                        <h2 >blum MOVENTO - инструкция по установке TIP-ON BLUMOTION</h2>                           
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/blum-movento---instrukciya-po-ustanovke-tip-on-blumotion_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="blum MOVENTO - инструкция по установке TIP-ON BLUMOTION"
+                                        data-pdf="./dist/files/blum-movento---instrukciya-po-ustanovke-tip-on-blumotion.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <p>&nbsp;</p>
+                        <object data="./dist/files/blum-movento-instrukciya-po-ustanovke-bokovogo-sinhronizatora.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/blum-movento-instrukciya-po-ustanovke-bokovogo-sinhronizatora.pdf"></a>
+                        </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 >&nbsp;</h2>                   
+                        <h2 >blum MOVENTO - инструкция по установке БОКОВОГО СИНХРОНИЗАТОРА</h2>                           
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/blum-movento---instrukciya-po-ustanovke-bokovogo-sinhronizatora_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="blum MOVENTO - инструкция по установке БОКОВОГО СИНХРОНИЗАТОРА"
+                                        data-pdf="./dist/files/blum-movento---instrukciya-po-ustanovke-bokovogo-sinhronizatora.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <p>&nbsp;</p>
+                        <object data="./dist/files/blum-movento-instrukciya-po-ustanovke-sinhronizatora-dlya-tip-on.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/blum-movento-instrukciya-po-ustanovke-sinhronizatora-dlya-tip-on.pdf"></a>
+                        </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 >&nbsp;</h2>                   
+                        <h2 >blum MOVENTO - инструкция по установке СИНХРОНИЗАТОРА ДЛЯ TIP-ON</h2>                           
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/blum-movento---instrukciya-po-ustanovke-sinhronizatora-dlya-tip-on_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="blum MOVENTO - инструкция по установке СИНХРОНИЗАТОРА ДЛЯ TIP-ON"
+                                        data-pdf="./dist/files/blum-movento---instrukciya-po-ustanovke-sinhronizatora-dlya-tip-on.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <p>&nbsp;</p>
+                        <object data="./dist/files/blum-movento-listovka-montazh-ko-dnu.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/blum-movento-listovka-montazh-ko-dnu.pdf"></a>
+                        </object>  -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 >&nbsp;</h2>                   
+                        <h2 >blum MOVENTO - листовка МОНТАЖ КО ДНУ</h2>                           
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/blum-movento---listovka-montazh-ko-dnu_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="blum MOVENTO - листовка МОНТАЖ КО ДНУ"
+                                        data-pdf="./dist/files/blum-movento---listovka-montazh-ko-dnu.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <p>&nbsp;</p>
+                        <object data="./dist/files/blum-movento-listovka-regulirovka-po-glubine.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/blum-movento-listovka-regulirovka-po-glubine.pdf"></a>
+                        </object> -->
+
+                         <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 >&nbsp;</h2>                   
+                        <h2 >blum MOVENTO - листовка РЕГУЛИРОВКА ПО ГЛУБИНЕ</h2>                           
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/blum-movento---listovka-regulirovka-po-glubine_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="blum MOVENTO - листовка РЕГУЛИРОВКА ПО ГЛУБИНЕ"
+                                        data-pdf="./dist/files/blum-movento---listovka-regulirovka-po-glubine.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <p>&nbsp;</p>
+                        <object data="./dist/files/blum-movento-opisanie-produkcii.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/blum-movento-opisanie-produkcii.pdf"></a>
+                        </object>  -->
+
+                         <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 >&nbsp;</h2>                   
+                        <h2 >blum MOVENTO - ОПИСАНИЕ ПРОДУКЦИИ</h2>                           
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/blum-movento---opisanie-produkcii_16.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="blum MOVENTO - ОПИСАНИЕ ПРОДУКЦИИ"
+                                        data-pdf="./dist/files/blum-movento---opisanie-produkcii.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>           
                                                                     
                       </section>
                     </article>
