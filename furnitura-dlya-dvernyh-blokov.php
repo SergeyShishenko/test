@@ -460,7 +460,7 @@ include 'inc-left-side-menu-furnitura.php';
                             alt: <a href="./dist/files/Planet_FT_Installation_instructions.pdf"></a>
                             </object> -->
 
-                            <div class="bs-callout bs-callout-warning cont" > 
+                        <div class="bs-callout bs-callout-warning cont" > 
                             <h2 >Planet FT Инструкция по установке</h2>                              
                             <p> 
                                 <a>
@@ -488,23 +488,81 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="rigeli-shpingalety-dlya-poloten-dvernyh">РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
 
-                        <h2 id="rigel1">&nbsp;</h2>                   
+                        <!-- <h2 id="rigel1">&nbsp;</h2>                   
                         <h2 >rigel1</h2>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object>
+                        </object> -->
 
-                        <h2 id="rigel2">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="rigel1" >&nbsp;</h2> 
+                            <h2 >rigel1</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="rigel1"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+
+                        <!-- <h2 id="rigel2">&nbsp;</h2>                   
                         <h2 >rigel2</h2>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="rigel3">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="rigel2" >&nbsp;</h2> 
+                            <h2 >rigel2</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="rigel2"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="rigel3">&nbsp;</h2>                   
                         <h2 >rigel3</h2>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object>                        
+                        </object>  -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="rigel3" >&nbsp;</h2> 
+                            <h2 >rigel3</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="rigel3"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>                       
                       </section>
                     </article>
 
@@ -514,23 +572,81 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="dovodchiki-dlya-poloten-dvernyh">ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
 
-                        <h2 id="dovodchik1">&nbsp;</h2>                   
+                        <!-- <h2 id="dovodchik1">&nbsp;</h2>                   
                         <h2 >dovodchik1</h2>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object>
+                        </object> -->
 
-                        <h2 id="dovodchik2">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="dovodchik1" >&nbsp;</h2> 
+                            <h2 >dovodchik1</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="dovodchik1"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="dovodchik2">&nbsp;</h2>                   
                         <h2 >dovodchik2</h2>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="dovodchik3">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="dovodchik2" >&nbsp;</h2> 
+                            <h2 >dovodchik2</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="dovodchik2"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="dovodchik3">&nbsp;</h2>                   
                         <h2 >dovodchik3</h2>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object>                        
+                        </object>  -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="dovodchik3" >&nbsp;</h2> 
+                            <h2 >dovodchik3</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="dovodchik3"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
                       </section>
                     </article>
 
@@ -540,23 +656,81 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="upory-napolnye-i-nastennye">УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ</h1>
                         </div> 
 
-                        <h2 id="upor1">&nbsp;</h2>                   
+                        <!-- <h2 id="upor1">&nbsp;</h2>                   
                         <h2 >upor1</h2>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object>
+                        </object> -->
 
-                        <h2 id="upor2">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="upor1" >&nbsp;</h2> 
+                            <h2 >upor1</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="upor1"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="upor2">&nbsp;</h2>                   
                         <h2 >upor2</h2>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="upor3">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="upor2" >&nbsp;</h2> 
+                            <h2 >upor2</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="upor2"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="upor3">&nbsp;</h2>                   
                         <h2 >upor3</h2>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object>                        
+                        </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="upor3" >&nbsp;</h2> 
+                            <h2 >upor3</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="upor3"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
                       </section>
                     </article>
 
@@ -565,18 +739,75 @@ include 'inc-left-side-menu-furnitura.php';
                         <div class="page-header">
                           <h1 itemprop="name" id="svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart">Сводная таблица фурнитуры дверей распашных</h1>
                         </div> 
-                        <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart.xlsx" type="button" class="btn btn-primary"download="svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart.xlsx">Скачать - сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx</a> 
-                        <h2 id="klass-lyuks">&nbsp;</h2>                   
+                        <!-- <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart.xlsx" type="button" class="btn btn-primary"download="svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart.xlsx">Скачать - сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx</a>  -->
+                        <!-- сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART -->
+                        <!-- <h2 id="klass-lyuks">&nbsp;</h2> 
                         <h2 >класс ЛЮКС</h2>
                         <object data="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks.pdf"></a>
-                        </object>
+                        </object> -->
 
-                        <h2 id="klass-standart">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="klass-lyuks" >&nbsp;</h2> 
+                            <h2 >Класс ЛЮКС</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Cводная таблица фурнитуры дверей распашных - класс ЛЮКС"
+                                        data-pdf="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            
+                                                          
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Cводная таблица фурнитуры дверей распашных - класс ЛЮКС"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="klass-standart">&nbsp;</h2>                   
                         <h2 >класс STANDART</h2>
                         <object data="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart.pdf"></a>
-                        </object> 
+                        </object>  -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="klass-standart" >&nbsp;</h2> 
+                            <h2 >Класс STANDART</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Cводная таблица фурнитуры дверей распашных - класс STANDART"
+                                        data-pdf="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
                         
                                             
                       </section>
