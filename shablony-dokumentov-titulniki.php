@@ -125,7 +125,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              <!-- <div id='hovertitle'></div> -->
                              <div class="overlay"></div>
                         </div>
-                      
+                        </section>
                     </article>
 
                    

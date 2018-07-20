@@ -35,6 +35,7 @@ include 'inc-left-side-menu-izdeliya.php';
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
                         </div>
+                        </section>
                     </article>
 
                     <article itemscope="" itemtype="http://schema.org/Article">

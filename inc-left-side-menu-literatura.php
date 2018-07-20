@@ -147,7 +147,7 @@
                             </li>
                             <!-- menu -->
                             <li class="menu">
-                                <a href="literatura-sanpin.php" class="list-group-item '.$item_sanpin_Class.'"style="text-transform:none;">СанПиН</a>
+                                <a href="literatura-sanpin.php" class="list-group-item '.$item_sanpin_Class.'" style="text-transform:none;">СанПиН</a>
                                 <ul class="list-group sub_menu">
                                     <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
                                         <ul class="list-group sub_menu2">

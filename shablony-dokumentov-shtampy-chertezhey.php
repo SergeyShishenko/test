@@ -1,6 +1,6 @@
 <?php
 include 'inc-session-start.php';
-<?php
+
 $detaliClass = '';
 $izdeliyaClass = '';
 $shablonyClass = 'class="active"';

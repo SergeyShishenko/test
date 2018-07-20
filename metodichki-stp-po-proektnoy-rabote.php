@@ -39,7 +39,7 @@ include 'inc-left-side-menu-metodichki.php';
                             <object data="./dist/files/5000404-01-002-sostav-komplekta-tipovoy-kd.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000404-01-002-sostav-komplekta-tipovoy-kd.pdf"></a>
                             </object>
-                            <a href="./dist/files/komplekt-dokumentov-kd.xlsx" type="button" class="btn btn-primary"download="komplekt-dokumentov-kd.xlsx">Скачать - Комплект документов КД.xlsx</a>
+                            <a href="./dist/files/komplekt-dokumentov-kd.xlsx" type="button" class="btn btn-primary"  download="komplekt-dokumentov-kd.xlsx">Скачать - Комплект документов КД.xlsx</a>
 
 
                       </section>
@@ -54,7 +54,7 @@ include 'inc-left-side-menu-metodichki.php';
                         <object data="./dist/files/5000404-00-02-razdel-03-vizualizaciya2.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000404-00-02-razdel-03-vizualizaciya2.pdf"></a>
                             </object>
-                       
+                            </section>
                     </article>
 
                     <article itemscope="" itemtype="http://schema.org/Article">
@@ -124,13 +124,13 @@ include 'inc-left-side-menu-metodichki.php';
                               alt: <a href="./dist/files/36501-i-36502-tablica-reznyh-elementov-na-zakaz.pdf"></a>
                               </object>
 
-                              <a href="./dist/files/36501-i-36502-tablica-reznyh-elementov-na-zakaz.xlsx" type="button" class="btn btn-primary"download="36501-i-36502-tablica-reznyh-elementov-na-zakaz.xlsx">365.01 и 365.02 Таблица резных элементов на заказ.xlsx</a>
+                              <a href="./dist/files/36501-i-36502-tablica-reznyh-elementov-na-zakaz.xlsx" type="button" class="btn btn-primary" download="36501-i-36502-tablica-reznyh-elementov-na-zakaz.xlsx">365.01 и 365.02 Таблица резных элементов на заказ.xlsx</a>
 
                               <object data="./dist/files/svodnaya-tablica-rezel-dogovora-izd.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/svodnaya-tablica-rezel-dogovora-izd.pdf"></a>
                               </object>
 
-                              <a href="./dist/files/svodnaya-tablica-rezel-dogovora-izd.xlsx" type="button" class="btn btn-primary"download="svodnaya-tablica-rezel-dogovora-izd.xlsx">Скачать - Сводная таблица рез.эл._№договора_изд.№-.xlsx</a>
+                              <a href="./dist/files/svodnaya-tablica-rezel-dogovora-izd.xlsx" type="button" class="btn btn-primary" download="svodnaya-tablica-rezel-dogovora-izd.xlsx">Скачать - Сводная таблица рез.эл._№договора_изд.№-.xlsx</a>
   
                             </section>
                       </article>
