@@ -994,7 +994,7 @@ include 'inc-left-side-menu-furnitura.php';
                         <h2 >5000502-05-512 опора регулируемая малая с цокольной клипсой</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy.pdf"></a>
+                             alt: <a href="./dist/files/5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy.pdf"></a> <!-- _2 -->
                         </object> 
 
                     </article>
@@ -1102,19 +1102,57 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ</h1>
                         </div>
 
-                        <h2 id="5000502-10-300-shtanga-kruglaya-dlya-veshala">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-10-300-shtanga-kruglaya-dlya-veshala">&nbsp;</h2>                   
                         <h2 >5000502-10-300 штанга круглая для вешала</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-10-300-shtanga-kruglaya-dlya-veshala" >&nbsp;</h2> 
+                            <h2 >5000502-10-300 штанга круглая для вешала</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-10-300 штанга круглая для вешала"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>  
+
+                        <!-- <h2 id="5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala">&nbsp;</h2>                   
                         <h2 >5000502-10-301 штанга круглая с проходным держателем</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object> -->
+                        
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala" >&nbsp;</h2> 
+                            <h2 >5000502-10-301 штанга круглая с проходным держателем</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-10-301 штанга круглая с проходным держателем"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
                         
                     </article>
 
@@ -1124,19 +1162,57 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="pantografy"> ПАНТОГРАФЫ</h1>
                         </div>
 
-                        <h2 id="pantograf1">&nbsp;</h2>                   
+                        <!-- <h2 id="pantograf1">&nbsp;</h2>                   
                         <h2 >pantograf1</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="pantograf2">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="pantograf1" >&nbsp;</h2> 
+                            <h2 >pantograf1</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="pantograf1"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="pantograf2">&nbsp;</h2>                   
                         <h2 >pantograf2</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="pantograf2" >&nbsp;</h2> 
+                            <h2 >pantograf2</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="pantograf2"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>  
                         
                     </article>
                     
@@ -1146,19 +1222,57 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="ruchki">РУЧКИ</h1>
                         </div>
 
-                        <h2 id="ruchka1">&nbsp;</h2>                   
+                        <!-- <h2 id="ruchka1">&nbsp;</h2>                   
                         <h2 >ruchka1</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="ruchka2">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="ruchka1" >&nbsp;</h2> 
+                            <h2 >ruchka1</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="ruchka1"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>  
+
+                        <!-- <h2 id="ruchka2">&nbsp;</h2>                   
                         <h2 >ruchka2</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object>  -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="ruchka2" >&nbsp;</h2> 
+                            <h2 >ruchka2</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="ruchka2"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
                         
                     </article>
 
@@ -1168,12 +1282,31 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ</h1>
                         </div>
 
-                        <h2 id="mekhanizmy1">&nbsp;</h2>                   
+                        <!-- <h2 id="mekhanizmy1">&nbsp;</h2>                   
                         <h2 >mekhanizmy1</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object>  -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="mekhanizmy1" >&nbsp;</h2> 
+                            <h2 >mekhanizmy1</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="mekhanizmy1"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
 
                         
                         
@@ -1185,12 +1318,50 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="natyazhiteli-dlya-fasadov">НАТЯЖИТЕЛИ для ФАСАДОВ</h1>
                         </div>
 
-                        <h2 id="pivot-tn-103-2329-02">&nbsp;</h2>                   
+                        <!-- <h2 id="pivot-tn-103-2329-02">&nbsp;</h2>                   
                         <h2 >Pivot TN 103.2329.02</h2>
                         <p>&nbsp;</p>
-                        <object data="./dist/files/Pivot TN103.pdf" type="application/pdf" width="100%" height="720px">
+                        <object data="./dist/files/Pivot TN103.pdf" type="application/pdf" width="100%" height="720px">!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                             alt: <a href="./dist/files/Pivot TN103.pdf"></a>
-                        </object>                        
+                        </object>  -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="pivot-tn-103-2329-02">&nbsp;</h2>                   
+                        <h2 >Pivot TN 103.2329.02</h2>                           
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/Pivot TN103_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Pivot TN 103.2329.02"
+                                        data-pdf="./dist/files/Pivot TN103.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 >&nbsp;</h2>                   
+                                                 
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/Pivot TN103_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Pivot TN 103.2329.02 чертеж"
+                                        data-pdf="./dist/files/Pivot TN103_2.pdf"
+                                        data-dwg="./dist/files/Pivot TN103.dwg"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>                        
                         
                     </article>
 
@@ -1200,19 +1371,57 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ</h1>
                         </div>
 
-                        <h2 id="razdvizhnoy-derzhatel-dlya-obuvi-560-1000-mm-chernyy-892-11-300">&nbsp;</h2>                   
+                        <!-- <h2 id="razdvizhnoy-derzhatel-dlya-obuvi-560-1000-mm-chernyy-892-11-300">&nbsp;</h2>                   
                         <h2 >Раздвижной держатель для обуви 560-1000 мм черный </h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="razdvizhnoy-derzhatel-dlya-obuvi-460-750-mm-stal-hromirovannyy-892-12-906">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="razdvizhnoy-derzhatel-dlya-obuvi-560-1000-mm-chernyy-892-11-300" >&nbsp;</h2> 
+                            <h2 >Раздвижной держатель для обуви 560-1000 мм черный</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Раздвижной держатель для обуви 560-1000 мм черный"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="razdvizhnoy-derzhatel-dlya-obuvi-460-750-mm-stal-hromirovannyy-892-12-906">&nbsp;</h2>                   
                         <h2 >Раздвижной держатель для обуви 460-750 мм хромированный </h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/test.pdf"></a>
-                        </object> 
+                        </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="razdvizhnoy-derzhatel-dlya-obuvi-460-750-mm-stal-hromirovannyy-892-12-906" >&nbsp;</h2> 
+                            <h2 >Раздвижной держатель для обуви 460-750 мм хромированный</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/test.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Раздвижной держатель для обуви 460-750 мм хромированный"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
                         
                     </article>
 
