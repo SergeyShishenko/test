@@ -39,155 +39,150 @@ include 'inc-session-start.php';
 <body>
     <header class="navbar navbar-inverse navbar-fixed-top"  >
 
-            <div class="container">
+        <div class="container">
 
-                    <!-- Static navbar -->
-                    <div class="navbar navbar-inverse " role="navigation">
-                      <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#detali-profili">500.СТП</a >
-                      </div>
-                      <!--.nav-collapse -->
+            <!-- Static navbar -->
+            <div class="navbar navbar-inverse " role="navigation">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#detali-profili">500.СТП</a >
+                </div>
+                <!--.nav-collapse -->
 
-                      <div class="navbar-collapse collapse top-menu">
+                <div class="navbar-collapse collapse top-menu">
 
-                            <ul class="nav navbar-nav " id="navmain">
-                                <li>
-                                    <a href="#detali-profili">ДЕТАЛИ</a> 
-                                    <ul class="dropdown-menu">
-                                        <li><a class="" href="#floating8" >ПРОФИЛИ ГЛАДКИЕ</a>
-                                        </li>
-                                        <li><a class="" href="#floating9" >ПРОФИЛИ РЕЗНЫЕ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating10" >КАМНИ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating11" >РЕЗЬБЫ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating12" >ТОКАРКА</a>
-                                        </li>
-                                        <li><a class="" href="#floating13" >ФРЕЗЫ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating14" >ПАЗЫ</a>
-                                        </li>                                                                              
-                                    </ul>                           
+                    <ul class="nav navbar-nav " id="navmain">
+                        <li>
+                            <a href="#detali-profili">ДЕТАЛИ</a> 
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="#floating8" >ПРОФИЛИ ГЛАДКИЕ</a>
                                 </li>
-                                <li>
-                                    <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a >
-                                    <ul class="dropdown-menu">
-                                        <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
-                                        </li>
-                                        <li><a class="" href="#floating16" >МЕБЕЛЬ КОРПУСНАЯ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating17" >ПАНЕЛИ СТЕНОВЫЕ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating18" >КАРНИЗЫ И ФРИЗЫ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating19" >ПЛИНТУСЫ И МОЛДИНГИ</a>
-                                        </li>
-                                        <li><a class="" href="#floating20" >ЭКРАНЫ РАДИАТОРОВ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating21" >ПИЛЯСТРЫ</a>
-                                        </li>
-                                        <li><a class="" href="#floating22" >ПОТОЛКИ</a>
-                                        </li>
-                                        <li><a class="" href="#floating523" >ЛЕСТНИЦЫ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating23" >СТАНДАРТНЫЕ УЗЛЫ</a>
-                                        </li>                                                                               
-                                    </ul>                             
+                                <li><a class="" href="#floating9" >ПРОФИЛИ РЕЗНЫЕ</a>
+                                </li> 
+                                <li><a class="" href="#floating10" >КАМНИ</a>
+                                </li> 
+                                <li><a class="" href="#floating11" >РЕЗЬБЫ</a>
+                                </li> 
+                                <li><a class="" href="#floating12" >ТОКАРКА</a>
                                 </li>
-                                <li>                            
-                                    <a href="#shablony-dokumentov-titulniki">ШАБЛОНЫ ДОКУМЕНТОВ</a >
-                                    <ul class="dropdown-menu">
-                                        <li><a class="" href="#floating24" >ЛИСТЫ ТИТУЛЬНЫЕ</a>
-                                        </li>
-                                        <li><a class="" href="#floating25" >ШТАМПЫ ЧЕРТЕЖЕЙ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating26" >СПЕЦИФИКАЦИИ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating27" >ПОКУПНЫЕ ИЗДЕЛИЯ</a>
-                                        </li>                                                                                                                       
-                                    </ul>
+                                <li><a class="" href="#floating13" >ФРЕЗЫ</a>
+                                </li> 
+                                <li><a class="" href="#floating14" >ПАЗЫ</a>
+                                </li>                                                                              
+                            </ul>                           
+                        </li>
+                        <li>
+                            <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a >
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
                                 </li>
-                                <li>
-                                    <a href="#metodichki-dokument-117">МЕТОДИЧКИ</a >
-                                    <ul class="dropdown-menu">
-                                        <li><a class="" href="#floating28" >ДОКУМЕНТ 117</a>
-                                        </li>
-                                        <li><a class="" href="#floating29" >ДОКУМЕНТ 135</a>
-                                        </li> 
-                                        <li><a class="" href="#floating30" >ЭРГОНОМИКА</a>
-                                        </li> 
-                                        <li><a class="" href="#floating31" >ПРОЕКТНАЯ РАБОТА</a>
-                                        </li>                                                                                                                     
-                                    </ul>
+                                <li><a class="" href="#floating16" >МЕБЕЛЬ КОРПУСНАЯ</a>
+                                </li> 
+                                <li><a class="" href="#floating17" >ПАНЕЛИ СТЕНОВЫЕ</a>
+                                </li> 
+                                <li><a class="" href="#floating18" >КАРНИЗЫ И ФРИЗЫ</a>
+                                </li> 
+                                <li><a class="" href="#floating19" >ПЛИНТУСЫ И МОЛДИНГИ</a>
                                 </li>
-                                <li>
-                                    <a href="#furnitura-dlya-dvernyh-blokov">ФУРНИТУРА</a >
-                                    <ul class="dropdown-menu">
-                                        <li><a class="" href="#floating32" >ДЛЯ ДВЕРНЫХ БЛОКОВ</a>
-                                        </li>
-                                        <li><a class="" href="#floating33" >ДЛЯ МЕБЕЛИ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating34" >УНИВЕРСАЛЬНАЯ</a>
-                                        </li> 
-                                        <li  ><a class="" href="#floating35" >КАТАЛОГИ</a>
-                                        </li> 
-                                                                                                                     
-                                    </ul>
+                                <li><a class="" href="#floating20" >ЭКРАНЫ РАДИАТОРОВ</a>
+                                </li> 
+                                <li><a class="" href="#floating21" >ПИЛЯСТРЫ</a>
                                 </li>
-                                <li>
-                                    <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="" href="#floating36" >СТЕКЛО, ЗЕРКАЛО</a>
-                                        </li>
-                                        <li><a class="" href="#floating37" >ВИТРАЖ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating38" >МЕТАЛЛ</a>
-                                        </li> 
-                                        <li><a class="" href="#floating39" >ТКАНЬ, КОЖА</a>
-                                        </li> 
-                                        <li><a class="" href="#floating40" >СВЕТ</a>
-                                        </li>                                                                                                                       
-                                    </ul>
+                                <li><a class="" href="#floating22" >ПОТОЛКИ</a>
                                 </li>
-                                <li>
-                                    <a href="#literatura-gost">ЛИТЕРАТУРА</a >
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#floating41" >ГОСТ</a>
-                                        </li>
-                                        <li><a href="#floating42" >СНиП</a>
-                                        </li> 
-                                        <li><a href="#floating43" >СанПиН</a>
-                                        </li> 
-                                        <li><a href="#floating44" >СП (Свод Правил)</a>
-                                        </li> 
-                                        <li><a  href="#floating45" >СПРАВОЧНИКИ</a>
-                                        </li>                                                                                                                       
-                                    </ul>
+                                <li><a class="" href="#floating523" >ЛЕСТНИЦЫ</a>
+                                </li> 
+                                <li><a class="" href="#floating23" >СТАНДАРТНЫЕ УЗЛЫ</a>
+                                </li>                                                                               
+                            </ul>                             
+                        </li>
+                        <li>                            
+                            <a href="#shablony-dokumentov-titulniki">ШАБЛОНЫ ДОКУМЕНТОВ</a >
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="#floating24" >ЛИСТЫ ТИТУЛЬНЫЕ</a>
                                 </li>
-                            </ul>   
-                      </div>
-                     
-                      <div class="navbar-form navbar-right " id="search">
-                            <div class="form-group">                                
-                                <span class="glyphicon glyphicon-search zbz"></span><input type="text" class="form-control who zbz-input-clearable" placeholder="Поиск">                               
-                            </div>                            
-                            <ul class="search_result" style="display: none;"></ul>
-                     </div>
-                      <!--/.nav-collapse -->
-                    </div>
-                    
-
-              </div>
-            
-                    
-                  </div> <!-- /container -->
+                                <li><a class="" href="#floating25" >ШТАМПЫ ЧЕРТЕЖЕЙ</a>
+                                </li> 
+                                <li><a class="" href="#floating26" >СПЕЦИФИКАЦИИ</a>
+                                </li> 
+                                <li><a class="" href="#floating27" >ПОКУПНЫЕ ИЗДЕЛИЯ</a>
+                                </li>                                                                                                                       
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#metodichki-dokument-117">МЕТОДИЧКИ</a >
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="#floating28" >ДОКУМЕНТ 117</a>
+                                </li>
+                                <li><a class="" href="#floating29" >ДОКУМЕНТ 135</a>
+                                </li> 
+                                <li><a class="" href="#floating30" >ЭРГОНОМИКА</a>
+                                </li> 
+                                <li><a class="" href="#floating31" >ПРОЕКТНАЯ РАБОТА</a>
+                                </li>                                                                                                                     
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#furnitura-dlya-dvernyh-blokov">ФУРНИТУРА</a >
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="#floating32" >ДЛЯ ДВЕРНЫХ БЛОКОВ</a>
+                                </li>
+                                <li><a class="" href="#floating33" >ДЛЯ МЕБЕЛИ</a>
+                                </li> 
+                                <li><a class="" href="#floating34" >УНИВЕРСАЛЬНАЯ</a>
+                                </li> 
+                                <li  ><a class="" href="#floating35" >КАТАЛОГИ</a>
+                                </li> 
+                                                                                                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="#floating36" >СТЕКЛО, ЗЕРКАЛО</a>
+                                </li>
+                                <li><a class="" href="#floating37" >ВИТРАЖ</a>
+                                </li> 
+                                <li><a class="" href="#floating38" >МЕТАЛЛ</a>
+                                </li> 
+                                <li><a class="" href="#floating39" >ТКАНЬ, КОЖА</a>
+                                </li> 
+                                <li><a class="" href="#floating40" >СВЕТ</a>
+                                </li>                                                                                                                       
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#literatura-gost">ЛИТЕРАТУРА</a >
+                            <ul class="dropdown-menu">
+                                <li><a href="#floating41" >ГОСТ</a>
+                                </li>
+                                <li><a href="#floating42" >СНиП</a>
+                                </li> 
+                                <li><a href="#floating43" >СанПиН</a>
+                                </li> 
+                                <li><a href="#floating44" >СП (Свод Правил)</a>
+                                </li> 
+                                <li><a  href="#floating45" >СПРАВОЧНИКИ</a>
+                                </li>                                                                                                                       
+                            </ul>
+                        </li>
+                    </ul>   
+                </div>
+                
+                <div class="navbar-form navbar-right " id="search">
+                    <div class="form-group">                                
+                        <span class="glyphicon glyphicon-search zbz"></span><input type="text" class="form-control who zbz-input-clearable" placeholder="Поиск">                               
+                    </div>                            
+                    <ul class="search_result" style="display: none;"></ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>      
+        </div> <!-- /container -->
     </header>
   
     <div  style="position:fixed; left:0; top:150px; ">
@@ -655,7 +650,7 @@ include 'inc-session-start.php';
                                                                     </TR>
                                                                     <TR>
                                                                         <TD class="mapsite"  id="flo-pr-323">
-                                                                            <p data-img="./dist/images/pr-323.png" data-href="detali-profili.php#pr-323">Пр_№323<span><br>~pr-323</span></p>
+                                                                            <p data-img="./dist/images/pr-323.png" data-href="detali-profili.php#pr-323">Пр_№323 дверная коробка<span><br>~pr-323</span></p>
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
@@ -1153,7 +1148,7 @@ include 'inc-session-start.php';
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR>
-                                                                        <TD class="mapsite"id="flo-pr-stol2">
+                                                                        <TD class="mapsite" id="flo-pr-stol2">
                                                                             <p data-img="./dist/images/pr-stol2.png" data-href="detali-profili.php#pr-stol2">Пр_№СТОЛ2  || над_плинтусом_пилястры<span><br>~pr-stol2</span></p>
                                                                         </TD>  
                                                                     </TR>
@@ -1242,7 +1237,7 @@ include 'inc-session-start.php';
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite"id="flo-">
+                                                                        <TD class= "flo-">
                                                                             <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
@@ -2040,7 +2035,7 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="С РАСПАШНЫМИ ПОЛОТНАМИ" class="hover mapsite" id="footer81" >
-                                                                    <p data-img="./dist/images/no-foto.png"  data-img="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_1.png" id="floating82" data-href="izdeliya-bloki-dvernye.php#polotna">С РАСПАШНЫМИ ПОЛОТНАМИ<span><br>~polotna</span></p>
+                                                                    <p  data-img="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_1.png" id="floating82" data-href="izdeliya-bloki-dvernye.php#polotna">С РАСПАШНЫМИ ПОЛОТНАМИ<span><br>~polotna</span></p>
                                                                     <!-- <p data-img="./dist/images/no-foto.png" class="KEYWORDS" data-href="">Дверные блоки</p>   -->
                                                             </TD>                                                                            
                                                             <TD>
@@ -2101,7 +2096,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-">                                                                            
-                                                                                <p  data-img="./dist/images/no-foto.png"data-href="izdeliya-bloki-dvernye.php#">???<span> <br>~</span></p>
+                                                                                <p  data-img="./dist/images/no-foto.png" data-href="izdeliya-bloki-dvernye.php#">???<span> <br>~</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -3523,7 +3518,7 @@ include 'inc-session-start.php';
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2"style="padding: 10px 0;"  id="flo-specifikaciya-tehnologichesaya">                                                                            
+                                                                            <TD class="mapsite" colspan="2" style="padding: 10px 0;"  id="flo-specifikaciya-tehnologichesaya">                                                                            
                                                                                 <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-tehnologichesaya">5000303-02-001 спецификация<span> <br>~specifikaciya-tehnologichesaya</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  

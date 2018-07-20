@@ -346,7 +346,7 @@ include 'inc-left-side-menu-furnitura.php';
                             </p>
                             <div class="overlay"></div>
                         </div> 
-
+                        </section>
                     </article>
 
                     <article itemscope="" itemtype="http://schema.org/Article">
@@ -380,7 +380,7 @@ include 'inc-left-side-menu-furnitura.php';
                             </p>
                             <div class="overlay"></div>
                         </div>
-                        
+                        </section>
                     </article>
 
 
@@ -969,34 +969,110 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="opory">ОПОРЫ</h1>
                         </div>
 
-                        <h2 id="5000502-05-501-opora-reguliruemaya-universalnaya">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-05-501-opora-reguliruemaya-universalnaya">&nbsp;</h2>                   
                         <h2 >5000502-05-501 опора регулируемая универсальная</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-05-501-opora-reguliruemaya-universalnaya.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-05-501-opora-reguliruemaya-universalnaya.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-05-502-opora-reguliruemaya-s-podderzhkoy-bokoviny">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-05-501-opora-reguliruemaya-universalnaya">&nbsp;</h2>                   
+                        <h2 >5000502-05-501 опора регулируемая универсальная</h2>                          
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-05-501-opora-reguliruemaya-universalnaya_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-05-501 опора регулируемая универсальная"
+                                        data-pdf="./dist/files/5000502-05-501-opora-reguliruemaya-universalnaya.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="5000502-05-502-opora-reguliruemaya-s-podderzhkoy-bokoviny">&nbsp;</h2>                   
                         <h2 >5000502-05-502 опора регулируемая с поддержкой боковины</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-05-502-opora-reguliruemaya-s-podderzhkoy-bokoviny.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-05-502-opora-reguliruemaya-s-podderzhkoy-bokoviny.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-05-511-opora-reguliruemaya-malaya">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-05-502-opora-reguliruemaya-s-podderzhkoy-bokoviny">&nbsp;</h2>                   
+                        <h2 >5000502-05-502 опора регулируемая с поддержкой боковины</h2>                         
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-05-502-opora-reguliruemaya-s-podderzhkoy-bokoviny_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-05-502 опора регулируемая с поддержкой боковины"
+                                        data-pdf="./dist/files/5000502-05-502-opora-reguliruemaya-s-podderzhkoy-bokoviny.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="5000502-05-511-opora-reguliruemaya-malaya">&nbsp;</h2>                   
                         <h2 >5000502-05-511 опора регулируемая малая</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-05-511-opora-reguliruemaya-malaya.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-05-511-opora-reguliruemaya-malaya.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-05-511-opora-reguliruemaya-malaya">&nbsp;</h2>                   
+                        <h2 >5000502-05-511 опора регулируемая малая</h2>                        
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-05-511-opora-reguliruemaya-malaya_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-05-511 опора регулируемая малая"
+                                        data-pdf="./dist/files/5000502-05-511-opora-reguliruemaya-malaya.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy">&nbsp;</h2>                   
                         <h2 >5000502-05-512 опора регулируемая малая с цокольной клипсой</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy.pdf" type="application/pdf" width="100%" height="720px">
-                             alt: <a href="./dist/files/5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy.pdf"></a> <!-- _2 -->
-                        </object> 
+                             alt: <a href="./dist/files/5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy.pdf"></a> 
+                        </object> -->
 
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy">&nbsp;</h2>                   
+                        <h2 >5000502-05-512 опора регулируемая малая с цокольной клипсой</h2>                       
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy_2.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-05-512 опора регулируемая малая с цокольной клипсой"
+                                        data-pdf="./dist/files/5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>  
+                        </section>
                     </article>
 
                     <article itemscope="" itemtype="http://schema.org/Article">
@@ -1005,22 +1081,58 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="zashchelki-mebelnye">ЗАЩЕЛКИ МЕБЕЛЬНЫЕ</h1>
                         </div>
 
-                        <h2 id="5000502-06-100-zashchelka-tipon">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-06-100-zashchelka-tipon">&nbsp;</h2>                   
                         <h2  >5000502-06-100 защелка - TIPON</h2>
                         <p>&nbsp;</p>
-                        <object data="./dist/files/5000502-06-100-zashchelka---tipon.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/5000502-06-100-zashchelka---tipon.pdf"></a>
-                        </object> 
+                        <object data="./dist/files/5000502-06-100-zashchelka-tipon.pdf" type="application/pdf" width="100%" height="720px">
+                            alt: <a href="./dist/files/5000502-06-100-zashchelka-tipon.pdf"></a>
+                        </object> -->
 
-                        <h2 id="5000502-06-106-zashchelka-mebelnaya-magnitnaya">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-06-100-zashchelka-tipon">&nbsp;</h2>                   
+                        <h2  >5000502-06-100 защелка - TIPON</h2>                       
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="./dist/images/5000502-06-100-zashchelka---tipon_1.png"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="5000502-06-100 защелка - TIPON"
+                                        data-pdf="./dist/files/5000502-06-100-zashchelka---tipon.pdf"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-06-106-zashchelka-mebelnaya-magnitnaya">&nbsp;</h2>                   
                         <h2 >5000502-06-106 защелка мебельная магнитная</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-06-106-zashchelka-mebelnaya-magnitnaya.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-06-106-zashchelka-mebelnaya-magnitnaya.pdf"></a>
-                        </object> 
+                        </object>  -->
+                        <div class="bs-callout bs-callout-warning cont" > 
+                            <h2 id="5000502-06-106-zashchelka-mebelnaya-magnitnaya">&nbsp;</h2>                   
+                            <h2 >5000502-06-106 защелка мебельная магнитная</h2>              
+                                <p> 
+                                    <a>
+                                        <img  
+                                            src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                            data-src="./dist/images/5000502-06-106-zashchelka-mebelnaya-magnitnaya_1.png"
+                                            class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                            data-toggle="modal"
+                                            data-target="#myModal"                                                                   
+                                            alt="5000502-06-106 защелка мебельная магнитная"
+                                            data-pdf="./dist/files/5000502-06-106-zashchelka-mebelnaya-magnitnaya.pdf"
+                                        >
+                                    </a>
+                                </p>
+                            <div class="overlay"></div>
+                        </div> 
 
-                        
-
+                        </section>
                     </article>
 
                    <article itemscope="" itemtype="http://schema.org/Article">
@@ -1029,55 +1141,189 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="styazhki">СТЯЖКИ</h1>
                         </div>
 
-                        <h2 id="5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-16-mm">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-16-mm">&nbsp;</h2>                   
                         <h2  >5000502-07-701 стяжка эксцентриковая односторонняя<br>для плит 16 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-dlya-plit-16-mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-dlya-plit-16-mm.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-16-mm">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-16-mm">&nbsp;</h2>                   
+                        <h2  >5000502-07-701 стяжка эксцентриковая односторонняя<br>для плит 16 мм</h2>             
+                                <p> 
+                                    <a>
+                                        <img  
+                                            src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                            data-src="./dist/images/5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-dlya-plit-16-mm_1.png"
+                                            class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                            data-toggle="modal"
+                                            data-target="#myModal"                                                                   
+                                            alt="5000502-07-701 стяжка эксцентриковая односторонняя для плит 16 мм"
+                                            data-pdf="./dist/files/5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-dlya-plit-16-mm.pdf"
+                                        >
+                                    </a>
+                                </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-16-mm">&nbsp;</h2>                   
                         <h2 >5000502-07-702 стяжка эксцентриковая двухсторонняя<br>для плит 16 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-dlya-plit-16-mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-dlya-plit-16-mm.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-16-mm">&nbsp;</h2>                   
+                        <h2 >5000502-07-702 стяжка эксцентриковая двухсторонняя<br>для плит 16 мм</h2>            
+                                <p> 
+                                    <a>
+                                        <img  
+                                            src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                            data-src="./dist/images/5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-dlya-plit-16-mm_1.png"
+                                            class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                            data-toggle="modal"
+                                            data-target="#myModal"                                                                   
+                                            alt="5000502-07-702 стяжка эксцентриковая двухсторонняя для плит 16 мм"
+                                            data-pdf="./dist/files/5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-dlya-plit-16-mm.pdf"
+                                        >
+                                    </a>
+                                </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <!-- <h2 id="5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm">&nbsp;</h2>                   
                         <h2 >5000502-07-703 стяжка эксцентриковая односторонняя<br>для плит 24 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-dlya-plit-24-mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-dlya-plit-24-mm.pdf"></a>
-                        </object> 
+                        </object> -->
+                        
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm">&nbsp;</h2>                   
+                        <h2 >5000502-07-703 стяжка эксцентриковая односторонняя<br>для плит 24 мм</h2>            
+                                <p> 
+                                    <a>
+                                        <img  
+                                            src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                            data-src="./dist/images/5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-dlya-plit-24-mm_1.png"
+                                            class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                            data-toggle="modal"
+                                            data-target="#myModal"                                                                   
+                                            alt="5000502-07-703 стяжка эксцентриковая односторонняя для плит 24 мм"
+                                            data-pdf="./dist/files/5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-dlya-plit-24-mm.pdf"
+                                        >
+                                    </a>
+                                </p>
+                            <div class="overlay"></div>
+                        </div>
 
-                        <h2 id="5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm">&nbsp;</h2>                   
                         <h2 >5000502-07-704 стяжка эксцентриковая двухсторонняя<br>для плит 24 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-dlya-plit-24-mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-dlya-plit-24-mm.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm">&nbsp;</h2>                   
+                        <h2 >5000502-07-704 стяжка эксцентриковая двухсторонняя<br>для плит 24 мм</h2>            
+                                <p> 
+                                    <a>
+                                        <img  
+                                            src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                            data-src="./dist/images/5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-dlya-plit-24-mm_1.png"
+                                            class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                            data-toggle="modal"
+                                            data-target="#myModal"                                                                   
+                                            alt="5000502-07-704 стяжка эксцентриковая двухсторонняя для плит 24 мм"
+                                            data-pdf="./dist/files/5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-dlya-plit-24-mm.pdf"
+                                        >
+                                    </a>
+                                </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm">&nbsp;</h2>                   
                         <h2 >5000502-07-707 стяжка эксцентриковая в металлическом корпусе<br>для плит 16 мм</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-07-707-styazhka-ekscentrikovaya-v-metallicheskom-korpuse-dlya-plit-16-mm.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-07-707-styazhka-ekscentrikovaya-v-metallicheskom-korpuse-dlya-plit-16-mm.pdf"></a>
-                        </object> 
+                        </object> -->
 
-                        <h2 id="5000502-07-750-konfirmat-70h50">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm">&nbsp;</h2>                   
+                        <h2 >5000502-07-707 стяжка эксцентриковая в металлическом корпусе<br>для плит 16 мм</h2>            
+                                <p> 
+                                    <a>
+                                        <img  
+                                            src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                            data-src="./dist/images/5000502-07-707-styazhka-ekscentrikovaya-v-metallicheskom-korpuse-dlya-plit-16-mm_1.png"
+                                            class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                            data-toggle="modal"
+                                            data-target="#myModal"                                                                   
+                                            alt="5000502-07-707 стяжка эксцентриковая в металлическом корпусе для плит 16 мм"
+                                            data-pdf="./dist/files/5000502-07-707-styazhka-ekscentrikovaya-v-metallicheskom-korpuse-dlya-plit-16-mm.pdf"
+                                        >
+                                    </a>
+                                </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-07-750-konfirmat-70h50">&nbsp;</h2>                   
                         <h2 >5000502-07-750 конфирмат 7,0Х50</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-07-750-konfirmat-70h50.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-07-750-konfirmat-70h50.pdf"></a>
-                        </object> 
+                        </object>  -->
 
-                        <h2 id="5000502-07-752-konfirmat-70h70">&nbsp;</h2>                   
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-07-750-konfirmat-70h50">&nbsp;</h2>                   
+                        <h2 >5000502-07-750 конфирмат 7,0Х50</h2>           
+                                <p> 
+                                    <a>
+                                        <img  
+                                            src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                            data-src="./dist/images/5000502-07-750-konfirmat-70h50_1.png"
+                                            class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                            data-toggle="modal"
+                                            data-target="#myModal"                                                                   
+                                            alt="5000502-07-750 конфирмат 7,0Х50"
+                                            data-pdf="./dist/files/5000502-07-750-konfirmat-70h50.pdf"
+                                        >
+                                    </a>
+                                </p>
+                            <div class="overlay"></div>
+                        </div> 
+
+                        <!-- <h2 id="5000502-07-752-konfirmat-70h70">&nbsp;</h2>                   
                         <h2 >5000502-07-752 конфирмат 7,0Х70</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-07-752-konfirmat-70h70.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-07-752-konfirmat-70h70.pdf"></a>
-                        </object>                      
+                        </object>  -->
 
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-07-752-konfirmat-70h70">&nbsp;</h2>                   
+                        <h2 >5000502-07-752 конфирмат 7,0Х70</h2>           
+                                <p> 
+                                    <a>
+                                        <img  
+                                            src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                            data-src="./dist/images/5000502-07-752-konfirmat-70h70_1.png"
+                                            class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                            data-toggle="modal"
+                                            data-target="#myModal"                                                                   
+                                            alt="5000502-07-752 конфирмат 7,0Х70"
+                                            data-pdf="./dist/files/5000502-07-752-konfirmat-70h70.pdf"
+                                        >
+                                    </a>
+                                </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        </section>
                     </article>
 
                     <article itemscope="" itemtype="http://schema.org/Article">
@@ -1086,13 +1332,33 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="polkoderzhateli">ПОЛКОДЕРЖАТЕЛИ</h1>
                         </div>
 
-                        <h2 id="5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki">&nbsp;</h2>                   
+                        <!-- <h2 id="5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki">&nbsp;</h2>                   
                         <h2 >5000502-08-101 PK2 полкодержатель с фиксацией полки</h2>
                         <p>&nbsp;</p>
                         <object data="./dist/files/5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki.pdf" type="application/pdf" width="100%" height="720px">
                             alt: <a href="./dist/files/5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki.pdf"></a>
-                        </object> 
-                        
+                        </object> -->
+
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 id="5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki">&nbsp;</h2>                   
+                        <h2 >5000502-08-101 PK2 полкодержатель с фиксацией полки</h2>          
+                                <p> 
+                                    <a>
+                                        <img  
+                                            src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                            data-src="./dist/images/5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki_1.png"
+                                            class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                            data-toggle="modal"
+                                            data-target="#myModal"                                                                   
+                                            alt="5000502-08-101 PK2 полкодержатель с фиксацией полки"
+                                            data-pdf="./dist/files/5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki.pdf"
+                                        >
+                                    </a>
+                                </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        </section> 
                     </article>
 
                     
@@ -1153,7 +1419,7 @@ include 'inc-left-side-menu-furnitura.php';
                             </p>
                             <div class="overlay"></div>
                         </div> 
-                        
+                        </section>
                     </article>
 
                     <article itemscope="" itemtype="http://schema.org/Article">
@@ -1213,7 +1479,7 @@ include 'inc-left-side-menu-furnitura.php';
                             </p>
                             <div class="overlay"></div>
                         </div>  
-                        
+                        </section> 
                     </article>
                     
                     <article itemscope="" itemtype="http://schema.org/Article">
@@ -1273,7 +1539,7 @@ include 'inc-left-side-menu-furnitura.php';
                             </p>
                             <div class="overlay"></div>
                         </div> 
-                        
+                        </section>
                     </article>
 
                      <article itemscope="" itemtype="http://schema.org/Article">
@@ -1309,7 +1575,7 @@ include 'inc-left-side-menu-furnitura.php';
                         </div> 
 
                         
-                        
+                        </section>
                     </article>
 
                      <article itemscope="" itemtype="http://schema.org/Article">
@@ -1362,7 +1628,7 @@ include 'inc-left-side-menu-furnitura.php';
                             </p>
                             <div class="overlay"></div>
                         </div>                        
-                        
+                        </section>
                     </article>
 
                      <article itemscope="" itemtype="http://schema.org/Article">
@@ -1422,7 +1688,7 @@ include 'inc-left-side-menu-furnitura.php';
                             </p>
                             <div class="overlay"></div>
                         </div> 
-                        
+                        </section>
                     </article>
 
                     

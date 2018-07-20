@@ -301,7 +301,7 @@
                             </li>
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#sborochnye-shemy-potolki">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
                                 <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub"href="#"> ...</a>
+                                    <li><a class="list-group-item sub" href="#"> ...</a>
                                     </li>
                                     <li><a class="list-group-item sub" href="#">...</a>
                                     </li>
@@ -327,7 +327,7 @@
                             </li>
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-lestnicy.php#">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
                                 <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub"href="#"> ...</a>
+                                    <li><a class="list-group-item sub" href="#">...</a>
                                     </li>
                                     <li><a class="list-group-item sub" href="#">...</a>
                                     </li>
