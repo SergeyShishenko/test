@@ -32,7 +32,7 @@ include 'inc-left-side-menu-izdeliya.php';
                              data-toggle="modal"
                              data-target="#myModal"                                                         
                              alt="Список полотен дверных блоков типовых"
-                             data-dwg="./dist/files/5000201-00-100-2d-polotna-tipovye.dwg"
+                             data-dwg="./dist/files/dwg/5000201-00-100-2d-polotna-tipovye.dwg"
                                ></a>
                          </p>
                          <div class="overlay"></div>
@@ -46,7 +46,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного глухое ПЦО"
-                                    data-dwg="./dist/files/5000201-00-100-0101-polotno-bloka-dvernogo-gluhoe-pco.dwg"
+                                    data-dwg="./dist/files/dwg/5000201-00-100-0101-polotno-bloka-dvernogo-gluhoe-pco.dwg"
                                     ></a>
                                 </p>
                                 <div class="overlay"></div>
@@ -74,7 +74,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                     data-toggle="modal"
                                     data-target="#myModal"                                                    
                                     alt="Полотно блока дверного со стеклом ПЦО"
-                                    data-dwg="./dist/files/5000201-00-100-0111-polotno-bloka-dvernogo-so-steklom-pco.dwg"
+                                    data-dwg="./dist/files/dwg/5000201-00-100-0111-polotno-bloka-dvernogo-so-steklom-pco.dwg"
                                     ></a>
                                 </p>
                                 <div class="overlay"></div>
@@ -102,7 +102,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного со стеклом(фацет) ПЦО"
-                                    data-dwg="./dist/files/5000201-00-100-0113-polotno-bloka-dvernogo-so-steklomfacet-pco.dwg"
+                                    data-dwg="./dist/files/dwg/5000201-00-100-0113-polotno-bloka-dvernogo-so-steklomfacet-pco.dwg"
                                     ></a>
                                 </p>
                                 <div class="overlay"></div>
@@ -129,7 +129,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного с зеркалом ПЦО"
-                                    data-dwg="./dist/files/5000201-00-100-0121-polotno-bloka-dvernogo-s-zerkalom-pco.dwg"
+                                    data-dwg="./dist/files/dwg/5000201-00-100-0121-polotno-bloka-dvernogo-s-zerkalom-pco.dwg"
                                     ></a>
                                 </p>
                                 <div class="overlay"></div>
@@ -156,7 +156,7 @@ include 'inc-left-side-menu-izdeliya.php';
                                     data-toggle="modal"
                                     data-target="#myModal"                                                     
                                     alt="Полотно блока дверного с зеркалом(фацет) ПЦО"
-                                    data-dwg="./dist/files/5000201-00-100-0123-polotno-bloka-dvernogo-s-zerkalomfacet-pco.dwg"
+                                    data-dwg="./dist/files/dwg/5000201-00-100-0123-polotno-bloka-dvernogo-s-zerkalomfacet-pco.dwg"
                                     ></a>
                                 </p>
                                 <div class="overlay"></div>

@@ -25,7 +25,7 @@ include 'inc-left-side-menu-metodichki.php';
                         </div>
                         <p>&nbsp;</p>
                         <object data="./dist/files/list-trebovaniy-detaley---kamen.pdf" type="application/pdf" width="100%" height="720px">
-                              alt: <a href="./dist/files/list-trebovaniy-detaley---kamen.pdf"></a>
+                              alt: <a href="./dist/files/pdf/list-trebovaniy-detaley---kamen.pdf"></a>
                               </object>
                       </section>
                     </article>
@@ -37,7 +37,7 @@ include 'inc-left-side-menu-metodichki.php';
                         </div>
                         <p>&nbsp;</p>
                         <object data="./dist/files/list-trebovaniy-detaley---tokarke-i-rezbe.pdf" type="application/pdf" width="100%" height="720px">
-                              alt: <a href="./dist/files/list-trebovaniy-detaley---tokarke-i-rezbe.pdf"></a>
+                              alt: <a href="./dist/files/pdf/list-trebovaniy-detaley---tokarke-i-rezbe.pdf"></a>
                               </object>
                     </article>
 
@@ -48,7 +48,7 @@ include 'inc-left-side-menu-metodichki.php';
                         </div>
                         <p>&nbsp;</p>
                         <object data="./dist/files/135-metodichka-po-detalyam-obshcheemdf.pdf" type="application/pdf" width="100%" height="720px">
-                              alt: <a href="./dist/files/135-metodichka-po-detalyam-obshcheemdf.pdf"></a>
+                              alt: <a href="./dist/files/pdf/135-metodichka-po-detalyam-obshcheemdf.pdf"></a>
                               </object>
                       </section>
                     </article>
@@ -59,7 +59,7 @@ include 'inc-left-side-menu-metodichki.php';
                         </div>
                         <p>&nbsp;</p>
                         <object data="./dist/files/13507-algoritm-po-kompensacii-po-tolshchine.pdf" type="application/pdf" width="100%" height="720px">
-                              alt: <a href="./dist/files/13507-algoritm-po-kompensacii-po-tolshchine.pdf"></a>
+                              alt: <a href="./dist/files/pdf/13507-algoritm-po-kompensacii-po-tolshchine.pdf"></a>
                               </object>
                       </section>
                     </article>
@@ -70,7 +70,7 @@ include 'inc-left-side-menu-metodichki.php';
                           </div>
                           <p>&nbsp;</p>
                         <object data="./dist/files/metodichka-po-detalyamprofili.pdf" type="application/pdf" width="100%" height="720px">
-                              alt: <a href="./dist/files/metodichka-po-detalyamprofili.pdf"></a>
+                              alt: <a href="./dist/files/pdf/metodichka-po-detalyamprofili.pdf"></a>
                               </object>
 
                         </section>
@@ -82,7 +82,7 @@ include 'inc-left-side-menu-metodichki.php';
                           </div>
                           <p>&nbsp;</p>
                         <object data="./dist/files/metodichka-po-detalyam-ramki.pdf" type="application/pdf" width="100%" height="720px">
-                              alt: <a href="./dist/files/metodichka-po-detalyam-ramki.pdf"></a>
+                              alt: <a href="./dist/files/pdf/metodichka-po-detalyam-ramki.pdf"></a>
                               </object>
                         </section>
                     </article>
@@ -93,7 +93,7 @@ include 'inc-left-side-menu-metodichki.php';
                           </div>
                           <p>&nbsp;</p>
                         <object data="./dist/files/13508-shema-izgotovleniya-detaley-i-se.pdf" type="application/pdf" width="100%" height="720px">
-                              alt: <a href="./dist/files/13508-shema-izgotovleniya-detaley-i-se.pdf"></a>
+                              alt: <a href="./dist/files/pdf/13508-shema-izgotovleniya-detaley-i-se.pdf"></a>
                               </object>
                         </section>
                     </article>
@@ -104,7 +104,7 @@ include 'inc-left-side-menu-metodichki.php';
                           </div>
                           <p>&nbsp;</p>
                         <object data="./dist/files/metodichka-po-detalyam-fanera.pdf" type="application/pdf" width="100%" height="720px">
-                              alt: <a href="./dist/files/metodichka-po-detalyam-fanera.pdf"></a>
+                              alt: <a href="./dist/files/pdf/metodichka-po-detalyam-fanera.pdf"></a>
                               </object>
                         </section>
                     </article>

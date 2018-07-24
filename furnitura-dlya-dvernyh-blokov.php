@@ -26,11 +26,7 @@ include 'inc-left-side-menu-furnitura.php';
                         </div> 
 
                                           
-                        <!-- <h2 >Петли ввертные четырехштырьковые OTLAV 14 мм</h2>
-
-                        <object data="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm.pdf"></a>
-                        </object> -->
+                       
 
                         <div class="bs-callout bs-callout-warning cont" >
                             <h2 id="petli-vvertnye-chetyrehshtyrkovye-otlav" >&nbsp;</h2> 
@@ -44,7 +40,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петли ввертные четырехштырьковые OTLAV 14 мм"
-                                        data-pdf="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm.pdf"
+                                        data-pdf="./dist/files/pdf/petli-vvertnye-chetyrehshtyrkovye-otlav-14-mm.pdf"
                                     >
                                 </a>
                             </p>
@@ -53,11 +49,7 @@ include 'inc-left-side-menu-furnitura.php';
 
 
 
-                            <!-- <h2 id="otlav2" >&nbsp;</h2>
-                        <h2>Петли ввертные четырехштырьковые OTLAV</h2>
-                        <object data="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav.pdf"></a>
-                            </object> -->
+                         
 
                         <div class="bs-callout bs-callout-warning cont" >
                             <h2 id="otlav2" >&nbsp;</h2> 
@@ -71,7 +63,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петли ввертные четырехштырьковые OTLAV"
-                                        data-pdf="./dist/files/petli-vvertnye-chetyrehshtyrkovye-otlav.pdf"
+                                        data-pdf="./dist/files/pdf/petli-vvertnye-chetyrehshtyrkovye-otlav.pdf"
                                     >
                                 </a>
                             </p>
@@ -79,11 +71,6 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>
 
 
-                            <!-- <h2 id="otlav3">&nbsp;</h2>
-                        <h2 >Петля ввёртная ELEMENTIS четырёхштыревая универсальная регулируемая 14 мм</h2>
-                        <object data="./dist/files/petli-dvernye-raznye.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/petli-dvernye-raznye.pdf"></a>
-                            </object> -->
 
 
                         <div class="bs-callout bs-callout-warning cont" >
@@ -98,7 +85,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петля ввёртная ELEMENTIS четырёхштыревая универсальная регулируемая 14 мм"
-                                        data-pdf="./dist/files/petlya-vvyortnaya-elementis-chetyryohshtyrevaya-universalnaya-reguliruemaya-14-mm.pdf"
+                                        data-pdf="./dist/files/pdf/petlya-vvyortnaya-elementis-chetyryohshtyrevaya-universalnaya-reguliruemaya-14-mm.pdf"
                                     >
                                 </a>
                             </p>
@@ -106,11 +93,7 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>
 
 
-                          <!-- <h2  id="petli-kartochnye-dvernye-fs">&nbsp;</h2> 
-                             <h2>Петли карточные дверные FS</h2>
-                        <object data="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf"></a>
-                            </object> -->
+                       
 
                         <div class="bs-callout bs-callout-warning cont" >
                             <h2 id="petli-kartochnye-dvernye-fs" >&nbsp;</h2> 
@@ -124,7 +107,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петли карточные дверные FS"
-                                        data-pdf="./dist/files/artikuly-petel-kartochnyh-dvernyh-fs.pdf"
+                                        data-pdf="./dist/files/pdf/artikuly-petel-kartochnyh-dvernyh-fs.pdf"
                                     >
                                 </a>
                             </p>
@@ -132,12 +115,7 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>
 
 
-                            <!-- <h2  id="petli-skrytogo-montazha-tectus-TE_240_3D">&nbsp;</h2> 
-                             <h2 >Петли скрытого монтажа TECTUS TE_240_3D</h2>
-                        <p>Артикулы цвета накладок на 3 странице PDF</p>
-                        <object data="./dist/files/TE_240_3D.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/TE_240_3D.pdf"></a>
-                            </object> -->
+                       
 
                         <div class="bs-callout bs-callout-warning cont" >
                             <h2 id="petli-skrytogo-montazha-tectus-TE_240_3D" >&nbsp;</h2> 
@@ -152,7 +130,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петли скрытого монтажа TECTUS TE_240_3D"
-                                        data-pdf="./dist/files/TE_240_3D.pdf"
+                                        data-pdf="./dist/files/pdf/TE_240_3D.pdf"
                                     >
                                 </a>
                             </p>
@@ -160,12 +138,6 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>    
 
 
-                            <!-- <h2  id="petli-skrytogo-montazha-tectus-TE_340_3D">&nbsp;</h2> 
-                             <h2 >Петли скрытого монтажа TECTUS TE_340_3D</h2>
-                        <p>Артикулы цвета накладок на 3 странице PDF</p>
-                        <object data="./dist/files/TE_340_3D.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/TE_340_3D.pdf"></a>
-                            </object> -->
 
                         <div class="bs-callout bs-callout-warning cont" >
                             <h2 id="petli-skrytogo-montazha-tectus-TE_340_3D" >&nbsp;</h2> 
@@ -180,7 +152,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Петли скрытого монтажа TECTUS TE_340_3D"
-                                        data-pdf="./dist/files/TE_340_3D.pdf"
+                                        data-pdf="./dist/files/pdf/TE_340_3D.pdf"
                                     >
                                 </a>
                             </p>
@@ -199,11 +171,6 @@ include 'inc-left-side-menu-furnitura.php';
                         </div> 
 
 
-                        <!-- <h2 id="sistema-razdvizheniya-laguna-standart">&nbsp;</h2>                   
-                        <h2 >Система раздвижения Laguna Standart</h2>
-                        <object data="./dist/files/sistema-razdvizheniya-laguna-standart.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/sistema-razdvizheniya-laguna-standart.pdf"></a>
-                            </object> -->
 
                             <div class="bs-callout bs-callout-warning cont" >
                             <h2 id="sistema-razdvizheniya-laguna-standart" >&nbsp;</h2> 
@@ -217,7 +184,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Схемы для расчетов и сборки системы STANDART"
-                                        data-pdf="./dist/files/sistema-razdvizheniya-laguna-standart.pdf"
+                                        data-pdf="./dist/files/pdf/sistema-razdvizheniya-laguna-standart.pdf"
                                     >
                                 </a>
                             </p>
@@ -235,7 +202,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Элементы системы STANDART"
-                                        data-pdf="./dist/files/sistema-razdvizheniya-laguna-standart_set.pdf"
+                                        data-pdf="./dist/files/pdf/sistema-razdvizheniya-laguna-standart_set.pdf"
                                     >
                                 </a>
                             </p>
@@ -252,11 +219,6 @@ include 'inc-left-side-menu-furnitura.php';
                         </div> 
 
 
-                        <!-- <h2 id="zamki-agb-dlya-razdvizhnyh-dverey">&nbsp;</h2>                   
-                        <h2 >Замки AGB для раздвижных дверей</h2>
-                        <object data="./dist/files/Scivola Tre.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/Scivola Tre.pdf"></a>
-                            </object> -->
 
 
                         <div class="bs-callout bs-callout-warning cont" >
@@ -271,20 +233,14 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки AGB для раздвижных дверей"
-                                        data-pdf="./dist/files/Scivola Tre.pdf"
+                                        data-pdf="./dist/files/pdf/Scivola Tre.pdf"
                                     >
                                 </a>
                             </p>
                             <div class="overlay"></div>
                         </div> 
 
-                            
-                        <!-- <h2 id="zamki-i-otvetnye-planki-agb">&nbsp;</h2>                   
-                        <h2 >Замки и ответные планки AGB</h2>
-                        <p>Mediana Evolution</p>
-                        <object data="./dist/files/zamki-agb-mediana-evolution.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/zamki-agb-mediana-evolution.pdf"></a>
-                            </object> -->
+                      
 
                         <div class="bs-callout bs-callout-warning cont" >
                             <h2 id="zamki-i-otvetnye-planki-agb" >&nbsp;</h2> 
@@ -299,7 +255,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки и ответные планки AGB"
-                                        data-pdf="./dist/files/zamki-agb-mediana-evolution.pdf"
+                                        data-pdf="./dist/files/pdf/zamki-agb-mediana-evolution.pdf"
                                     >
                                 </a>
                             </p>
@@ -307,10 +263,6 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>
 
 
-                            <!-- <p>Mediana Polaris</p>
-                        <object data="./dist/files/Z9003802X2_fd_progettoXT_ita.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/Z9003802X2_fd_progettoXT_ita.pdf"></a>
-                            </object> -->
 
                         <div class="bs-callout bs-callout-warning cont" >                             
                             
@@ -324,7 +276,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Mediana Polaris"
-                                        data-pdf="./dist/files/Z9003802X2_fd_progettoXT_ita.pdf"
+                                        data-pdf="./dist/files/pdf/Z9003802X2_fd_progettoXT_ita.pdf"
                                     >
                                 </a>
                             </p>
@@ -332,12 +284,7 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>
 
 
-                               
-                        <!-- <h2 id="zamki-i-otvetnye-planki-ces">&nbsp;</h2>                   
-                        <h2 >Замки и ответные планки CES</h2>
-                        <object data="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"></a>
-                            </object> -->
+                    
 
                         <div class="bs-callout bs-callout-warning cont" >
                             <h2 id="zamki-i-otvetnye-planki-ces" >&nbsp;</h2> 
@@ -352,7 +299,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки и ответные планки CES_1"
-                                        data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
+                                        data-pdf="./dist/files/pdf/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
                                     >
                                 </a>
                             </p>
@@ -369,7 +316,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки и ответные планки CES_2"
-                                        data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
+                                        data-pdf="./dist/files/pdf/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
                                     >
                                 </a>
                             </p>
@@ -386,7 +333,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки и ответные планки CES_3"
-                                        data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
+                                        data-pdf="./dist/files/pdf/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
                                     >
                                 </a>
                             </p>
@@ -403,7 +350,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Замки и ответные планки CES_4"
-                                        data-pdf="./dist/files/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
+                                        data-pdf="./dist/files/pdf/gabaritnye-razmery-zamkov-i-otvetnyh-planok-ces.pdf"
                                     >
                                 </a>
                             </p>
@@ -421,16 +368,7 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="porogi-avtomaticheskie-dlya-poloten-dvernyh">ПОРОГИ АВТОМАТИЧЕСКИЕ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div>  
                         
-                        
-                        <!-- <h2 id="planet-ft">&nbsp;</h2>
-                                         
-                        <h2 >Planet_FT</h2>
-                         <a href="./dist/files/Planet_FT_CAD-drawing_2D.dwg" type="button" class="btn btn-primary"download="Planet_FT_CAD-drawing_2D.dwg">Скачать - Planet_FT_CAD-drawing_2D.dwg</a> 
-
-
-                        <object data="./dist/files/Planet_FT.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/Planet_FT.pdf"></a>
-                            </object> -->
+                      
 
 
                          <div class="bs-callout bs-callout-warning cont" >
@@ -447,7 +385,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Planet FT"
-                                        data-pdf="./dist/files/Planet_FT.pdf"
+                                        data-pdf="./dist/files/pdf/Planet_FT.pdf"
                                         data-dwg="./dist/files/Planet_FT_CAD-drawing_2D.dwg"
                                     >
                                 </a>
@@ -455,10 +393,6 @@ include 'inc-left-side-menu-furnitura.php';
                             <div class="overlay"></div>
                         </div>   
 
-
-                            <!-- <object data="./dist/files/Planet_FT_Installation_instructions.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/Planet_FT_Installation_instructions.pdf"></a>
-                            </object> -->
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 >Planet FT Инструкция по установке</h2>                              
@@ -471,7 +405,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Planet FT Инструкция по установке"
-                                        data-pdf="./dist/files/Planet_FT_Installation_instructions.pdf"
+                                        data-pdf="./dist/files/pdf/Planet_FT_Installation_instructions.pdf"
                                     >
                                 </a>
                             </p>
@@ -488,11 +422,6 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="rigeli-shpingalety-dlya-poloten-dvernyh">РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
 
-                        <!-- <h2 id="rigel1">&nbsp;</h2>                   
-                        <h2 >rigel1</h2>
-                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/test.pdf"></a>
-                        </object> -->
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="rigel1" >&nbsp;</h2> 
@@ -514,11 +443,6 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>
 
 
-                        <!-- <h2 id="rigel2">&nbsp;</h2>                   
-                        <h2 >rigel2</h2>
-                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/test.pdf"></a>
-                        </object>  -->
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="rigel2" >&nbsp;</h2> 
@@ -539,11 +463,6 @@ include 'inc-left-side-menu-furnitura.php';
                             <div class="overlay"></div>
                         </div>
 
-                        <!-- <h2 id="rigel3">&nbsp;</h2>                   
-                        <h2 >rigel3</h2>
-                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/test.pdf"></a>
-                        </object>  -->
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="rigel3" >&nbsp;</h2> 
@@ -572,11 +491,6 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="dovodchiki-dlya-poloten-dvernyh">ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
 
-                        <!-- <h2 id="dovodchik1">&nbsp;</h2>                   
-                        <h2 >dovodchik1</h2>
-                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/test.pdf"></a>
-                        </object> -->
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="dovodchik1" >&nbsp;</h2> 
@@ -597,11 +511,7 @@ include 'inc-left-side-menu-furnitura.php';
                             <div class="overlay"></div>
                         </div>
 
-                        <!-- <h2 id="dovodchik2">&nbsp;</h2>                   
-                        <h2 >dovodchik2</h2>
-                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/test.pdf"></a>
-                        </object> -->
+                   
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="dovodchik2" >&nbsp;</h2> 
@@ -622,11 +532,7 @@ include 'inc-left-side-menu-furnitura.php';
                             <div class="overlay"></div>
                         </div> 
 
-                        <!-- <h2 id="dovodchik3">&nbsp;</h2>                   
-                        <h2 >dovodchik3</h2>
-                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/test.pdf"></a>
-                        </object>  -->
+                   
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="dovodchik3" >&nbsp;</h2> 
@@ -656,11 +562,7 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="upory-napolnye-i-nastennye">УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ</h1>
                         </div> 
 
-                        <!-- <h2 id="upor1">&nbsp;</h2>                   
-                        <h2 >upor1</h2>
-                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/test.pdf"></a>
-                        </object> -->
+                
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="upor1" >&nbsp;</h2> 
@@ -681,11 +583,6 @@ include 'inc-left-side-menu-furnitura.php';
                             <div class="overlay"></div>
                         </div>
 
-                        <!-- <h2 id="upor2">&nbsp;</h2>                   
-                        <h2 >upor2</h2>
-                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/test.pdf"></a>
-                        </object>  -->
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="upor2" >&nbsp;</h2> 
@@ -706,11 +603,7 @@ include 'inc-left-side-menu-furnitura.php';
                             <div class="overlay"></div>
                         </div>
 
-                        <!-- <h2 id="upor3">&nbsp;</h2>                   
-                        <h2 >upor3</h2>
-                        <object data="./dist/files/test.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/test.pdf"></a>
-                        </object> -->
+                     
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="upor3" >&nbsp;</h2> 
@@ -739,13 +632,7 @@ include 'inc-left-side-menu-furnitura.php';
                         <div class="page-header">
                           <h1 itemprop="name" id="svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart">Сводная таблица фурнитуры дверей распашных</h1>
                         </div> 
-                        <!-- <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart.xlsx" type="button" class="btn btn-primary"download="svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart.xlsx">Скачать - сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART.xlsx</a>  -->
-                        <!-- сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART -->
-                        <!-- <h2 id="klass-lyuks">&nbsp;</h2> 
-                        <h2 >класс ЛЮКС</h2>
-                        <object data="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks.pdf"></a>
-                        </object> -->
+                 
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="klass-lyuks" >&nbsp;</h2> 
@@ -759,7 +646,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Cводная таблица фурнитуры дверей распашных - класс ЛЮКС"
-                                        data-pdf="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks.pdf"
+                                        data-pdf="./dist/files/pdf/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks.pdf"
                                     >
                                 </a>
                             </p>
@@ -784,11 +671,6 @@ include 'inc-left-side-menu-furnitura.php';
                             <div class="overlay"></div>
                         </div>
 
-                        <!-- <h2 id="klass-standart">&nbsp;</h2>                   
-                        <h2 >класс STANDART</h2>
-                        <object data="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart.pdf"></a>
-                        </object>  -->
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="klass-standart" >&nbsp;</h2> 
@@ -802,7 +684,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
                                         alt="Cводная таблица фурнитуры дверей распашных - класс STANDART"
-                                        data-pdf="./dist/files/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart.pdf"
+                                        data-pdf="./dist/files/pdf/svodnaya-tablica-furnitury-dverey-raspashnyh-klass-standart.pdf"
                                     >
                                 </a>
                             </p>
