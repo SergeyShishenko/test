@@ -123,7 +123,7 @@
                                     </li>
                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mehanizmy-razdvizheniya-dlya-fasadov-Cinetto-PS23">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov-Cinetto-PS23">5000502-02-110 система раздвижения и складывания фасадов Cinetto PS23</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov-Cinetto-PS23">Система раздвижения и складывания фасадов Cinetto PS23</a>
                                             </li>                                                                                   
                                         </ul>
                                     </li>
