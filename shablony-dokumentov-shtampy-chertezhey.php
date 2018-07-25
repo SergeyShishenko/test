@@ -35,7 +35,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="test"                               
                                  alt="test"
-                                 data-dwg="./dist/files/mdf-nakladka-050-dsh.dwg"
+                                 data-dwg="./dist/files/dwg/mdf-nakladka-050-dsh.dwg"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -57,7 +57,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="test"                               
                                  alt="test"
-                                 data-dwg="./dist/files/mdf-nakladka-050-dsh.dwg"
+                                 data-dwg="./dist/files/dwg/mdf-nakladka-050-dsh.dwg"
                                    ></a>
                              </p>
                              <div class="overlay"></div>

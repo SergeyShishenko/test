@@ -32,7 +32,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="5000301_01_001 лист титульный ДП"                               
                                  alt="5000301_01_001 лист титульный ДП"
-                                 data-xls="./dist/files/5000301-01-001-list-titulnyy-dp.xlsx"
+                                 data-xls="./dist/files/xls/5000301-01-001-list-titulnyy-dp.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -48,7 +48,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="паспорт изделий заказа ДП"                               
                                  alt="паспорт изделий заказа ДП"
-                                 data-xls="./dist/files/5000301-01-001-list-titulnyy-dp.xlsx"
+                                 data-xls="./dist/files/xls/5000301-01-001-list-titulnyy-dp.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -63,7 +63,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="реестр разделов ДП"                               
                                  alt="реестр разделов ДП"
-                                 data-xls="./dist/files/5000301-01-001-list-titulnyy-dp.xlsx"
+                                 data-xls="./dist/files/xls/5000301-01-001-list-titulnyy-dp.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -88,7 +88,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="5000301_02_000 лист титульный КД"                               
                                  alt="5000301_02_000 лист титульный КД"
-                                 data-xls="./dist/files/5000301-02-000-list-titulnyy-kd.xlsx"
+                                 data-xls="./dist/files/xls/5000301-02-000-list-titulnyy-kd.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -104,7 +104,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="5000301-01-001 паспорт изделий заказа ДП"                               
                                  alt="5000301-01-001 паспорт изделий заказа ДП"
-                                 data-xls="./dist/files/5000301-02-000-list-titulnyy-kd.xlsx"
+                                 data-xls="./dist/files/xls/5000301-02-000-list-titulnyy-kd.xlsx"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -119,7 +119,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="5000301-01-001 реестр разделов ДП"                               
                                  alt="5000301-01-001 реестр разделов ДП"
-                                 data-xls="./dist/files/5000301-02-000-list-titulnyy-kd.xlsx"
+                                 data-xls="./dist/files/xls/5000301-02-000-list-titulnyy-kd.xlsx"
                                    ></a>
                              </p>
                              <!-- <div id='hovertitle'></div> -->

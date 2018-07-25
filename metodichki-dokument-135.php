@@ -24,7 +24,7 @@ include 'inc-left-side-menu-metodichki.php';
                           <h1 itemprop="name" id="list-trebovaniy-detaley---kamen">Лист требования деталей по камням</h1>
                         </div>
                         <p>&nbsp;</p>
-                        <object data="./dist/files/list-trebovaniy-detaley---kamen.pdf" type="application/pdf" width="100%" height="720px">
+                        <object data="./dist/files/pdf/list-trebovaniy-detaley---kamen.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/pdf/list-trebovaniy-detaley---kamen.pdf"></a>
                               </object>
                       </section>
@@ -36,7 +36,7 @@ include 'inc-left-side-menu-metodichki.php';
                           <h1 itemprop="name" id="list-trebovaniy-detaley---tokarke-i-rezbe">Лист требования деталей по Токарке Резьбе</h1>
                         </div>
                         <p>&nbsp;</p>
-                        <object data="./dist/files/list-trebovaniy-detaley---tokarke-i-rezbe.pdf" type="application/pdf" width="100%" height="720px">
+                        <object data="./dist/files/pdf/list-trebovaniy-detaley---tokarke-i-rezbe.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/pdf/list-trebovaniy-detaley---tokarke-i-rezbe.pdf"></a>
                               </object>
                     </article>
@@ -47,7 +47,7 @@ include 'inc-left-side-menu-metodichki.php';
                           <h1 itemprop="name" id="135-metodichka-po-detalyam-obshcheemdf">Общие требования + МДФ</h1>
                         </div>
                         <p>&nbsp;</p>
-                        <object data="./dist/files/135-metodichka-po-detalyam-obshcheemdf.pdf" type="application/pdf" width="100%" height="720px">
+                        <object data="./dist/files/pdf/135-metodichka-po-detalyam-obshcheemdf.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/pdf/135-metodichka-po-detalyam-obshcheemdf.pdf"></a>
                               </object>
                       </section>
@@ -58,7 +58,7 @@ include 'inc-left-side-menu-metodichki.php';
                           <h1 itemprop="name" id="13507-algoritm-po-kompensacii-po-tolshchine">135.07 Алгоритм по компенсации по толщине</h1>
                         </div>
                         <p>&nbsp;</p>
-                        <object data="./dist/files/13507-algoritm-po-kompensacii-po-tolshchine.pdf" type="application/pdf" width="100%" height="720px">
+                        <object data="./dist/files/pdf/13507-algoritm-po-kompensacii-po-tolshchine.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/pdf/13507-algoritm-po-kompensacii-po-tolshchine.pdf"></a>
                               </object>
                       </section>
@@ -69,7 +69,7 @@ include 'inc-left-side-menu-metodichki.php';
                             <h1 itemprop="name" id="metodichka-po-detalyamprofili">Профили методичка</h1>
                           </div>
                           <p>&nbsp;</p>
-                        <object data="./dist/files/metodichka-po-detalyamprofili.pdf" type="application/pdf" width="100%" height="720px">
+                        <object data="./dist/files/pdf/metodichka-po-detalyamprofili.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/pdf/metodichka-po-detalyamprofili.pdf"></a>
                               </object>
 
@@ -81,7 +81,7 @@ include 'inc-left-side-menu-metodichki.php';
                             <h1 itemprop="name" id="metodichka-po-detalyam-ramki">Рамки методичка</h1>
                           </div>
                           <p>&nbsp;</p>
-                        <object data="./dist/files/metodichka-po-detalyam-ramki.pdf" type="application/pdf" width="100%" height="720px">
+                        <object data="./dist/files/pdf/metodichka-po-detalyam-ramki.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/pdf/metodichka-po-detalyam-ramki.pdf"></a>
                               </object>
                         </section>
@@ -92,7 +92,7 @@ include 'inc-left-side-menu-metodichki.php';
                             <h1 itemprop="name" id="13508-shema-izgotovleniya-detaley-i-se">Схемы изготовления</h1>
                           </div>
                           <p>&nbsp;</p>
-                        <object data="./dist/files/13508-shema-izgotovleniya-detaley-i-se.pdf" type="application/pdf" width="100%" height="720px">
+                        <object data="./dist/files/pdf/13508-shema-izgotovleniya-detaley-i-se.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/pdf/13508-shema-izgotovleniya-detaley-i-se.pdf"></a>
                               </object>
                         </section>
@@ -103,7 +103,7 @@ include 'inc-left-side-menu-metodichki.php';
                             <h1 itemprop="name" id="metodichka-po-detalyam-fanera">Фанера методичка</h1>
                           </div>
                           <p>&nbsp;</p>
-                        <object data="./dist/files/metodichka-po-detalyam-fanera.pdf" type="application/pdf" width="100%" height="720px">
+                        <object data="./dist/files/pdf/metodichka-po-detalyam-fanera.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/pdf/metodichka-po-detalyam-fanera.pdf"></a>
                               </object>
                         </section>
