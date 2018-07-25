@@ -3540,22 +3540,22 @@ include 'inc-session-start.php';
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
                                                 <TD data-tooltip="ПОКУПНЫЕ ИЗДЕЛИЯ" class="hover mapsite" id="footer26">
-                                                    <p data-href="shablony-dokumentov-pokupnye-izdeliya.php"  data-img="./dist/images/no-foto.png" id="floating27">ПОКУПНЫЕ ИЗДЕЛИЯ<span><br>~-shablony-dokumentov-pokupnye-izdeliya</span></p>
-                                                    <p data-href="shablony-dokumentov-pokupnye-izdeliya.php" class="KEYWORDS">ВЕДОМОСТИ ПОКУПНЫХ ИЗДЕЛИЙ</p>
-                                                    <p data-href="shablony-dokumentov-pokupnye-izdeliya.php" class="KEYWORDS">ВПИ</p>
+                                                    <p data-href="shablony-dokumentov-pokupnye-izdeliya.php"  data-img="./dist/images/list-titulnyy-vpi_1.png" id="floating27">ПОКУПНЫЕ ИЗДЕЛИЯ<span><br>~-shablony-dokumentov-pokupnye-izdeliya</span></p>
+                                                    <p data-href="shablony-dokumentov-pokupnye-izdeliya.php" data-img="./dist/images/list-titulnyy-vpi_1.png" class="KEYWORDS">ВЕДОМОСТИ ПОКУПНЫХ ИЗДЕЛИЙ</p>
+                                                    <p data-href="shablony-dokumentov-pokupnye-izdeliya.php" data-img="./dist/images/list-titulnyy-vpi_1.png" class="KEYWORDS">ВПИ</p>
                                                     
                                                 </TD>
                                                 <TD>
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="ЛИСТ ТИТУЛЬНЫЙ ВПИ" class="hover mapsite" id="footer112">
-                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi" data-img="./dist/images/no-foto.png" id="floating113">ЛИСТ ТИТУЛЬНЫЙ ВПИ<span> <br>~-shablony-dokumentov-list-titulnyy-vpi</span></p>
+                                                                <p data-img="./dist/images/list-titulnyy-vpi_1.png" id="floating113" data-href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ<span> <br>~shablony-dokumentov-list-titulnyy-vpi</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" style="padding: 20px 0;"  id="flo-list-titulnyy-vpi">                                                                            
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi">5000304_01_000 лист титульный ВПИ<span> <br>~list-titulnyy-vpi</span></p>
+                                                                            <p data-img="./dist/images/list-titulnyy-vpi_1.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi">5000304_01_000 лист титульный ВПИ<span> <br>~list-titulnyy-vpi</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -3566,13 +3566,13 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ВЕДОМОСТЬ ФУРНИТУРЫ" class="hover mapsite" id="footer113">
-                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury" data-img="./dist/images/no-foto.png" id="floating114">ВЕДОМОСТЬ ФУРНИТУРЫ <span> <br>~-shablony-dokumentov-vedomost-furnitury</span></p>
+                                                                <p data-img="./dist/images/vedomost-furnitury_1.png" id="floating114" data-href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ <span> <br>~shablony-dokumentov-vedomost-furnitury</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2"  style="padding: 25px 0;" id="flo-vedomost-furnitury" >                                                                            
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury">5000304-01-001 ведомость фурнитуры<span> <br>~vedomost-furnitury</span></p>
+                                                                            <p data-img="./dist/images/vedomost-furnitury_1.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury">5000304-01-001 ведомость фурнитуры<span> <br>~vedomost-furnitury</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                    
@@ -3583,13 +3583,13 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ" class="hover mapsite" id="footer114">
-                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php" data-img="./dist/images/no-foto.png" id="floating115">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ <span> <br>~-shablony-dokumentov-vedomost-stekol-i-zerkal</span></p>
+                                                                <p data-img="./dist/images/vedomost-stekol-i-zerkal_1.png" id="floating115" data-href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ <span> <br>~shablony-dokumentov-vedomost-stekol-i-zerkal</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2"  style="padding: 25px 0;"  id="flo-vedomost-stekol-i-zerkal">                                                                            
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-stekol-i-zerkal">5000304-02-001 ведомость стекол и зеркал<span> <br>~vedomost-stekol-i-zerkal</span></p>
+                                                                            <p data-img="./dist/images/vedomost-stekol-i-zerkal_1.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-stekol-i-zerkal">5000304-02-001 ведомость стекол и зеркал<span> <br>~vedomost-stekol-i-zerkal</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                   
@@ -3600,13 +3600,13 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ" class="hover mapsite" id="footer115">
-                                                                <p data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-materialy-prochie" data-img="./dist/images/no-foto.png" id="floating116">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ<span> <br>~-shablony-dokumentov-vedomost-materialy-prochie</span></p>
+                                                                <p data-img="./dist/images/vedomost-materialy-prochie_1.png" id="floating116" data-href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ<span> <br>~shablony-dokumentov-vedomost-materialy-prochie</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2"   style="padding: 35px 0;" id="flo-vedomost-materialy-prochie">                                                                            
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-materialy-prochie">5000304-03-001 ведомость материалы прочие<span> <br>~vedomost-materialy-prochie</span></p>
+                                                                            <p data-img="./dist/images/vedomost-materialy-prochie_1.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-materialy-prochie">5000304-03-001 ведомость материалы прочие<span> <br>~vedomost-materialy-prochie</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
