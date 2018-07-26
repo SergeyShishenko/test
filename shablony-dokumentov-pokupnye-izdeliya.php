@@ -27,7 +27,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000304_01_000 лист титульный ВПИ</h4>
                                                        
                             <p> <a>
-                                <img src="./dist/images/list-titulnyy-vpi_1.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/list-titulnyy-vpi_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="5000304_01_000 лист титульный ВПИ"
@@ -48,7 +48,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000304-01-001 ведомость фурнитуры</h4>
                                                        
                             <p> <a>
-                                <img src="./dist/images/vedomost-furnitury_1.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/vedomost-furnitury_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="5000304-01-001 ведомость фурнитуры"
@@ -69,7 +69,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000304-02-001 ведомость стекол и зеркал</h4>
                                                        
                             <p> <a>
-                                <img src="./dist/images/vedomost-stekol-i-zerkal_1.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/vedomost-stekol-i-zerkal_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="5000304-02-001 ведомость стекол и зеркал"
@@ -90,7 +90,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000304-03-001 ведомость материалы прочие</h4>
                                                        
                             <p> <a>
-                                <img src="./dist/images/vedomost-materialy-prochie_1.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/vedomost-materialy-prochie_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="5000304-03-001 ведомость материалы прочие"

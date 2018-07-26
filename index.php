@@ -3447,14 +3447,14 @@ include 'inc-session-start.php';
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО" class="hover mapsite" id="footer108" >
-                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro" data-img="./dist/images/no-foto.png" id="floating109">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУР<wbr>НОГО БЮРО<span> <br>~shtampy-chertezhey-arhitekturnogo-byuro</span></p>
-                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro" data-img="./dist/images/no-foto.png" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ АБ</p>
+                                                                    <p data-img="./dist/images/no-foto.png" id="floating109" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУР<wbr>НОГО БЮРО<span> <br>~shtampy-chertezhey-arhitekturnogo-byuro</span></p>
+                                                                    <p data-img="./dist/images/no-foto.png" class="KEYWORDS" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro">ШТАМПЫ ЧЕРТЕЖЕЙ АБ</p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-net-informacii-1">                                                                            
-                                                                                <p data-href="shablony-dokumentov-shtampy-chertezhey.php" data-img="./dist/images/no-foto.png">???<span> <br>~net-informacii-1</span></p>
+                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-Stamp_Sofia">                                                                            
+                                                                                <p data-img="./dist/images/Stamp_Sofia_1.png" data-href="shablony-dokumentov-shtampy-chertezhey.php#Stamp_Sofia">Stamp_Sofia<span> <br>~Stamp_Sofia</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                       
@@ -3465,14 +3465,14 @@ include 'inc-session-start.php';
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОРСКОГО БЮРО" class="hover mapsite" id="footer109">
-                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd" data-img="./dist/images/no-foto.png" id="floating110">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОР<wbr>СКОГО БЮРО<span> <br>~</span></p>
-                                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd" data-img="./dist/images/no-foto.png" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ КБ</p> 
+                                                                    <p data-img="./dist/images/no-foto.png" id="floating110" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОР<wbr>СКОГО БЮРО<span> <br>~</span></p>
+                                                                    <p data-img="./dist/images/no-foto.png" class="KEYWORDS" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd">ШТАМПЫ ЧЕРТЕЖЕЙ КБ</p> 
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-shtam-osnovnoy-nadpisi-chertezhey-kd">                                                                            
-                                                                                <p  data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd">5000302-02-001 штамп основной надписи чертежей КД<span> <br>~shtam-osnovnoy-nadpisi-chertezhey-kd</span></p>
+                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd">                                                                            
+                                                                                <p  data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-shtampy-chertezhey.php#5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd">5000302-02-001 штамп основной надписи чертежей КД<span> <br>~5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                        
@@ -3487,20 +3487,20 @@ include 'inc-session-start.php';
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
                                                 <TD data-tooltip="СПЕЦИФИКАЦИИ" class="hover mapsite" id="footer25">
-                                                    <p data-href="shablony-dokumentov-specifikacii.php"  data-img="./dist/images/no-foto.png" id="floating26">СПЕЦИФИКАЦИИ<span><br>~-shablony-dokumentov-specifikacii.php</span></p>
+                                                    <p  data-img="./dist/images/no-foto.png" id="floating26" data-href="shablony-dokumentov-specifikacii.php">СПЕЦИФИКАЦИИ<span><br>~shablony-dokumentov-specifikacii</span></p>
                                                 </TD>
                                                 <TD>
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ" class="hover mapsite" id="footer110" >
-                                                                    <p data-href="shablony-dokumentov-specifikacii.php" data-img="./dist/images/no-foto.png" id="floating111">СПЕЦИФИКА<wbr>ЦИЯ КОНСТРУКТОР<wbr>СКАЯ<span> <br>~-katalog-rezby</span></p>
+                                                                    <p data-img="./dist/images/5000303-01-001-specifikaciya-konstruktorskaya_1.png" id="floating111" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">СПЕЦИФИКА<wbr>ЦИЯ КОНСТРУКТОР<wbr>СКАЯ<span> <br>~specifikaciya-konstruktorskaya</span></p>
                                                                     <!-- <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ АБ</p> -->
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" style="padding: 25px 0;" id="flo-specifikaciya-konstruktorskaya">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">5000303-01-001 спецификация конструкторская<span> <br>~specifikaciya-konstruktorskaya</span></p>
+                                                                                <p data-img="./dist/images/5000303-01-001-specifikaciya-konstruktorskaya_1.png" data-href="shablony-dokumentov-specifikacii.php#5000303-01-001-specifikaciya-konstruktorskaya">5000303-01-001 спецификация конструкторская<span> <br>~5000303-01-001-specifikaciya-konstruktorskaya</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -3512,20 +3512,20 @@ include 'inc-session-start.php';
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ" class="hover mapsite" id="footer111">
-                                                                    <p data-href="shablony-dokumentov-specifikacii.php" data-img="./dist/images/no-foto.png" id="floating112">СПЕЦИФИКА<wbr>ЦИЯ ТЕХНОЛОГИЧЕС<wbr>КАЯ<span> <br>~-katalog-lepniny</span></p>
+                                                                    <p data-img="./dist/images/5000303-02-001-specifikaciya_1.png" id="floating112" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-tehnologichesaya">СПЕЦИФИКА<wbr>ЦИЯ ТЕХНОЛОГИЧЕС<wbr>КАЯ<span> <br>~specifikaciya-tehnologichesaya</span></p>
                                                                     <!-- <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ КБ</p>  -->
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" style="padding: 10px 0;"  id="flo-specifikaciya-tehnologichesaya">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-tehnologichesaya">5000303-02-001 спецификация<span> <br>~specifikaciya-tehnologichesaya</span></p>
+                                                                            <TD class="mapsite" colspan="2" style="padding: 10px 0;"  id="flo-5000303-02-001-specifikaciya">                                                                            
+                                                                                <p data-img="./dist/images/5000303-02-001-specifikaciya_1.png" data-href="shablony-dokumentov-specifikacii.php#5000303-02-001-specifikaciya">5000303-02-001 спецификация<span> <br>~5000303-02-001-specifikaciya</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" style="padding: 10px 0;" id="flo-specifikaciya-dlya-korrekcii">
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-dlya-korrekcii">5000303-02-002 спецификация для коррекции<span> <br>~specifikaciya-dlya-korrekcii</span></p>
+                                                                            <TD class="mapsite" style="padding: 10px 0;" id="flo-5000303-02-002-specifikaciya-dlya-korrekcii">
+                                                                                <p data-img="./dist/images/5000303-02-002-specifikaciya-dlya-korrekcii_1.png" data-href="shablony-dokumentov-specifikacii.php#5000303-02-002-specifikaciya-dlya-korrekcii">5000303-02-002 спецификация для коррекции<span> <br>~5000303-02-002-specifikaciya-dlya-korrekcii</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                        

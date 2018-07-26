@@ -26,16 +26,15 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                           <h1 itemprop="name" id="shtampy-chertezhey-arhitekturnogo-byuro">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО</h1>
                         </div> 
 
-                        <h2 id="net-informacii-1">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Нет информации</h4>
+                        <h2 id="Stamp_Sofia">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Stamp_Sofia</h4>
                                                     
                             <p> <a>
-                                <img src="./dist/images/test.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/Stamp_Sofia_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album"
                                  data-toggle="modal"
-                                 data-target="#myModal"
-                                 data-content="test"                               
-                                 alt="test"
-                                 data-dwg="./dist/files/dwg/mdf-nakladka-050-dsh.dwg"
+                                 data-target="#myModal"                                                             
+                                 alt="Stamp_Sofia"
+                                 data-dwg="./dist/files/dwg/Stamp_Sofia.dwg"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -48,16 +47,16 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="page-header">
                           <h1 itemprop="name" id="shtam-osnovnoy-nadpisi-chertezhey-kd">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОРСКОГО БЮРО</h1>
                         </div> 
-                        <h2 id="shtam-osnovnoy-nadpisi-chertezhey-kd">&nbsp;</h2>
+                        <h2 id="5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000302-02-001 штамп основной надписи чертежей КД</h4>
                                                     
                             <p> <a>
-                                <img src="./dist/images/test.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="test"                               
-                                 alt="test"
-                                 data-dwg="./dist/files/dwg/mdf-nakladka-050-dsh.dwg"
+                                                                
+                                 alt="5000302-02-001 штамп основной надписи чертежей КД"
+                                 data-dwg="./dist/files/dwg/5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd.dwg"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
@@ -73,13 +72,13 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                             
                             <li><a href="#shtampy-chertezhey-arhitekturnogo-byuro">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО</a>
                                 <ul class="nav">
-                                    <li><a href="#net-informacii-1">&#9999;&nbsp;Нет информации</a>
+                                    <li><a href="#Stamp_Sofia">&#9999;&nbsp;Stamp_Sofia</a>
                                     </li>                                                                       
                                 </ul>
                             </li>
                             <li><a href="#shtam-osnovnoy-nadpisi-chertezhey-kd">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОРСКОГО БЮРО</a>
                                 <ul class="nav">
-                                    <li><a href="#shtam-osnovnoy-nadpisi-chertezhey-kd">&#9999;&nbsp;5000302-02-001 штам основной надписи чертежей КД</a>
+                                    <li><a href="#5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd">&#9999;&nbsp;5000302-02-001 штам основной надписи чертежей КД</a>
                                     </li>                                  
                                 </ul>
                             </li>

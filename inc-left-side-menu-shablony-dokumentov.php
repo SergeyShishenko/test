@@ -47,13 +47,13 @@
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#net-informacii-1">Нет информации</a>
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#Stamp_Sofia">Stamp_Sofia</a>
                                         </li>                                                                            
                                     </ul>
                                 </li>
-                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОРСКОГО БЮРО</a>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОРСКОГО БЮРО</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd" >5000302-02-001 штамп основной надписи чертежей КД </a>
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd" >5000302-02-001 штамп основной надписи чертежей КД </a>
                                         </li>                                                                                                                      
                                     </ul>
                                 </li>                                                                
@@ -65,15 +65,15 @@
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">5000303-01-001 спецификация конструкторская</a>
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#5000303-01-001-specifikaciya-konstruktorskaya">5000303-01-001 спецификация конструкторская</a>
                                         </li>                                                                                
                                     </ul>
                                 </li>
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-tehnologichesaya">СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ</a>
                                     <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#shablony-dokumentov-specifikacii.php#specifikaciya-tehnologichesaya">5000303-02-001 спецификация</a>
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#5000303-02-001-specifikaciya">5000303-02-001 спецификация</a>
                                         </li>
-                                        <li><a class="list-group-item sub" href="#shablony-dokumentov-specifikacii.php#specifikaciya-dlya-korrekcii">5000303-02-002 спецификация для коррекции </a>
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#5000303-02-002-specifikaciya-dlya-korrekcii">5000303-02-002 спецификация для коррекции </a>
                                         </li>                                                                               
                                     </ul>
                                 </li>                    
