@@ -1237,7 +1237,7 @@ include 'inc-session-start.php';
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class= "flo-">
+                                                                        <TD class="mapsite" class= "flo-">
                                                                             <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
