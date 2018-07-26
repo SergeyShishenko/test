@@ -48,6 +48,7 @@ function getClientWidth(){
      });
      getClientWidth();
  });
+ getPositionSearch();nvfn();
 //  var delta =0;
 $(function () {
     // $('#navsub  li.menu2 ul').hide();
@@ -420,8 +421,8 @@ $(function () {
 
 // Печать 
 function PrintImg(src,alt){
-    alt  = alt.replace(/\//g, '_');; //удалить слеш
-    alt  = alt.replace(/\./g, ',');; //удалить точку
+    alt  = alt.replace(/\//g, '_'); //удалить слеш
+    alt  = alt.replace(/\./g, ','); //удалить точку
     // var win = window.open('','','left=0,top=0,right=0,bottom=0,width=800,height=640,toolbar=0,scrollbars=0,status=0');
     var win = window.open("about:blank","_new");
         win.document.open();

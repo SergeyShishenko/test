@@ -24,7 +24,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                           <h1 itemprop="name" id="shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</h1>
                         </div>
                         <h2 id="list-titulnyy-vpi">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>5000304_01_000 лист титульный ВПИ</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000304-01-000 лист титульный ВПИ</h4>
                                                        
                             <p> <a>
                                 <img src="./dist/images/list-titulnyy-vpi_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album"
@@ -112,7 +112,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                             </li>
                             <li><a href="#polotna">Дверные блоки с распашными полотнами </a>
                                 <ul class="nav">
-                                    <li><a href="#list-titulnyy-vpi">&#9999;&nbsp;5000304_01_000 лист титульный ВПИ</a>
+                                    <li><a href="#list-titulnyy-vpi">&#9999;&nbsp;5000304-01-000 лист титульный ВПИ</a>
                                     </li>
                                                                       
                                 </ul>

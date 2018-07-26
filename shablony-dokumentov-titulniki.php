@@ -24,7 +24,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                           <h1 itemprop="name" id="listy-titulnye-dizayn-proekta">Листы титульные дизайн-проекта</h1>
                         </div>
                         <h2 id="list-titulnyy-dp">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>5000301_01_001 лист титульный ДП</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000301-01-001 лист титульный ДП</h4>
                                                        
                             <p> <a>
                                 <img src="./dist/images/5000301-01-001-list-titulnyy-dp.png" class="center-block img-rounded img-thumbnail"
@@ -80,7 +80,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                           <h1 itemprop="name" id="listy-titulnye-konstruktorskoy-dokumentacii">Листы титульные конструкторской документации</h1>
                         </div>                      
                         <h2 id="list-titulnyy-kd">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>5000301_02_000 лист титульный КД</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000301-02-000 лист титульный КД</h4>
                                                   
                             <p> <a>
                                 <img src="./dist/images/5000301-02-000-list-titulnyy-kd.png" class="center-block img-rounded img-thumbnail"
@@ -140,7 +140,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <ul class="nav bs-sidenav">
                             <li><a href="#listy-titulnye-dizayn-proekta">Листы титульные дизайн-проекта</a>
                             <ul class="nav">
-                                    <li><a href="#list-titulnyy-dp">&#9999;&nbsp;5000301_01_001 лист титульный ДП</a>
+                                    <li><a href="#list-titulnyy-dp">&#9999;&nbsp;5000301-01-001 лист титульный ДП</a>
                                     </li>
                                     <li><a href="#pasport-izdeliy-zakaza-dp">&#9999;&nbsp;паспорт изделий заказа ДП</a>
                                     </li>
@@ -151,7 +151,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                             <li>
                                 <a href="#listy-titulnye-konstruktorskoy-dokumentacii">Листы титульные конструкторской документации</a>
                                 <ul class="nav">
-                                    <li><a href="#list-titulnyy-kd">&#9999;&nbsp;5000301_02_000 лист титульный КД</a>
+                                    <li><a href="#list-titulnyy-kd">&#9999;&nbsp;5000301-02-000 лист титульный КД</a>
                                     </li>
                                     <li><a href="#pasport-izdeliy-zakaza-kd">&#9999;&nbsp;паспорт изделий заказа КД</a>
                                     </li>
