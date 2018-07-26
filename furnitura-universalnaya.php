@@ -21,155 +21,78 @@ include 'inc-left-side-menu-furnitura.php';
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header">
-                          <h1 itemprop="name" id="dveri-konstrukcii">Петли для полотен дверных</h1>
+                          <h1 itemprop="name" id="zashchelki-universalnye">ЗАЩЕЛКИ УНИВЕРСАЛЬНЫЕ</h1>
                         </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-               
+                        <h2 id="5000590-06-901-zashchelka-universalnaya">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000590-06-901 защелка универсальная</h4>
+                                                       
+                            <p> <a>
+                                <img src="./dist/images/5000590-06-901-zashchelka-universalnaya_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                                
+                                 alt="5000590-06-901 защелка универсальная"
+                                 data-dwg="./dist/files/dwg/5000590-06-901-zashchelka-universalnaya.dwg"
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
+                        </div>
                       </section>
                     </article>
 
                     <article itemscope="" itemtype="http://schema.org/Article">
                       <section itemprop="articleBody" id="bs-docs-section">
                         <div class="page-header">
-                          <h1 itemprop="name" id="polotna">Дверные блоки с распашными полотнами</h1>
+                          <h1 itemprop="name" id="komplekty-furnitury-dlya-montazha">КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА</h1>
                         </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt harum minus possimus, tempore suscipit fugit nostrum enim hic illum tempora assumenda nemo, vero officiis asperiores, fuga aut. Ex, ratione!</p>
-                        <div class="bs-callout bs-callout-warning" id="jquery-required">
-                          <h4>Lorem ipsum dolor</h4>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
+                        <h2 id="kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000590-90-101 КФДМ блоков дверных (1 комплект на 1 дверной блок)</h4>
+                                                       
+                            <p> <a>
+                                <img src="./dist/images/kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                                
+                                 alt="КФДМ блоков дверных (1 комплект на 1 дверной блок)"
+                               
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
 
-
-                        <h2 id="polotna-bez-falca">&nbsp;</h2>
-                        <h2 >Полотна без фальца</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
-
-                        <h2 id="polotna-s-falcem">&nbsp;</h2>
-                        <h2 >Полотна c фальцем</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        </section>
-                    </article>
-
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
-                        <div class="page-header">
-                          <h1 itemprop="name" id="razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</h1>
+                         <h2 id="kfdm-plintusov-1-komplekt-na-10-mp-plintusa">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000590-90-105 КФДМ плинтусов (1 комплект на 10 м.п. плинтуса)</h4>
+                                                       
+                            <p> <a>
+                                <img src="./dist/images/kfdm-plintusov-1-komplekt-na-10-mp-plintusa_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                                
+                                 alt="КФДМ плинтусов (1 комплект на 10 м.п. плинтуса)"
+                              
+                                   ></a>
+                             </p>
+                             <div class="overlay"></div>
                         </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic sed cum vero facere quisquam iure veritatis laboriosam soluta optio quis ratione quam magni rerum aliquid doloremque commodi, possimus, sit incidunt.</p>
-                        
-                        <h2 id="razdvizhnye-polotna-po-stene">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение по стене</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                         
-                        <h2 id="razdvizhnye-polotna-v-penal">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение в пенал</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
-                        <h2 id="razdvizhnye-polotna-v-proeme">&nbsp;</h2>
-                        <h2 >Полотна без складывания — раздвижение в проеме</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
                       </section>
-                    </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
-                        <div class="page-header">
-                          <h1 itemprop="name" id="mayatnikovye-polotna">Дверные блоки с маятниковыми (барными) полотнами</h1>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                      </section>
-                    </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
-                          <div class="page-header">
-                            <h1 itemprop="name" id="portaly">Дверные блоки без полотен (порталы)</h1>
-                          </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        </section>
-                      </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
-                          <div class="page-header">
-                            <h1 itemprop="name" id="sborochnye-shemy-polotna">Сборочно-монтажные схемы</h1>
-                          </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        </section>
                     </article>
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
                         <ul class="nav bs-sidenav">
-                            <li><a href="#dveri-konstrukcii">Конструкции дверных блоков</a>
+                            <li><a href="#zashchelki-universalnye">ЗАЩЕЛКИ УНИВЕРСАЛЬНЫЕ</a>
+                            <ul class="nav">
+                                    <li><a href="#5000590-06-901-zashchelka-universalnaya">&#9999;&nbsp;5000590-06-901 защелка универсальная</a>
+                                    </li>                                                                    
+                                </ul>
                             </li>
-                            <li><a href="#polotna">Дверные блоки с распашными полотнами </a>
+                            <li><a href="#komplekty-furnitury-dlya-montazha">КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА</a>
                                 <ul class="nav">
-                                    <li><a href="#polotna-bez-falca">&#9999;&nbsp;Полотна без фальца</a>
+                                    <li><a href="#kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">&#9999;&nbsp;КФДМ блоков дверных (1 комплект на 1 дверной блок)</a>
                                     </li>
-                                    <li><a href="#polotna-s-falcem">&#9999;&nbsp;Полотна с фальцем</a>
+                                    <li><a href="#kfdm-plintusov-1-komplekt-na-10-mp-plintusa">&#9999;&nbsp;КФДМ плинтусов (1 комплект на 10 м.п. плинтуса)</a>
                                     </li>                                   
                                 </ul>
                             </li>
-                            <li>
-                                <a href="#razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</a>
-                                <ul class="nav">
-                                    <li><a href="#razdvizhnye-polotna-po-stene">&#9999;&nbsp;Полотна без складывания — раздвижение по стене</a>
-                                    </li>
-                                    <li><a href="#razdvizhnye-polotna-v-penal">&#9999;&nbsp;Полотна без складывания — раздвижение в пенал</a>
-                                    </li>
-                                    <li><a href="#razdvizhnye-polotna-v-proeme">&#9999;&nbsp;Полотна без складывания — раздвижение в проеме</a>
-                                  </li>
-                                </ul>
-                            </li>
-                            <li><a href="#mayatnikovye-polotna">Дверные блоки с маятниковыми (барными) полотнами</a>
-                            </li>
-                            <li><a href="#portaly">Дверные блоки без полотен (порталы)</a>
-                            </li>
-                            
-                            <li><a href="#sborochnye-shemy-polotna">Сборочно-монтажные схемы</a>
-                            </li>                         
+                                                    
                         </ul>
                     </div>
                 </div><!-- боковое меню блоки дверные конец -->

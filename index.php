@@ -5078,19 +5078,19 @@ include 'inc-session-start.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
                                                             <TD data-tooltip="КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА" class="hover mapsite" id="footer152" >
-                                                                <p data-img="./dist/images/no-foto.png" id="floating153" data-href="furnitura-universalnaya.php#komplekty-furnitury-dlya-montazha">КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА<span> <br>~komplekty-furnitury-dlya-montazha</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating153" data-href="furnitura-universalnaya.php#komplekty-furnitury-dlya-montazha">ФУРНИТУРА ДЛЯ МОНТАЖА<span> <br>~komplekty-furnitury-dlya-montazha</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-universalnaya.php#kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">КФДМ блоков дверных (1 комплект на 1 дверной блок)<span> <br>~kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-universalnaya.php#kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">5000590-90-101 КФДМ блоков дверных (1 комплект на 1 дверной блок)<span> <br>~kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-kfdm-plintusov-1-komplekt-na-10-mp-plintusa">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-universalnaya.php#kfdm-plintusov-1-komplekt-na-10-mp-plintusa">КФДМ плинтусов (1 комплект на 10 м.п. плинтуса)<span> <br>~kfdm-plintusov-1-komplekt-na-10-mp-plintusa</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-universalnaya.php#kfdm-plintusov-1-komplekt-na-10-mp-plintusa">5000590-90-105 КФДМ плинтусов (1 комплект на 10 м.п. плинтуса)<span> <br>~kfdm-plintusov-1-komplekt-na-10-mp-plintusa</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->                                                                            
@@ -5110,15 +5110,23 @@ include 'inc-session-start.php';
                                                         <TR>
                                                             <TD data-tooltip="HAFELE" class="hover mapsite" id="footer153" colspan="2">
                                                                 <!-- <p onclick=\'window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")\' data-img="./dist/images/no-foto.png" id="floating154">HAFELE<span> <br>~HAFELE</span></p> -->
-                                                                <p data-href="https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html" onclick='window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")' data-img="./dist/images/no-foto.png" id="floating154">HAFELE<span> <br>~HAFELE</span></p>
+                                                                <p  onclick='window.open("https://hafeleshop.ru/upload/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%BD%D0%BE%D0%B9%20%D0%9A%D0%B0%D1%82%D0%B0%D0%BB%D0%BE%D0%B3%20Hafele%202017.pdf", "_blank")' data-img="./dist/images/no-foto.png" id="osnovnoy-katalog-hafele">Основной Каталог Hafele 2017<span> <br>~HAFELE</span></p>
                                                             </TD>                                                                            
                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->
                                                         <TR>
-                                                            <TD data-tooltip="Blum" class="hover mapsite" id="footer154" >
+                                                            <TD data-tooltip="HAFELE" class="hover mapsite" id="katalogi-HAFELE" >
+                                                                <!-- <p onclick=\'window.open("https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html", "_blank")\' data-img="./dist/images/no-foto.png" id="floating154">HAFELE<span> <br>~HAFELE</span></p> -->
+                                                                <p  onclick='window.open("https://hafeleshop.ru/catalogues/", "_blank")' data-img="./dist/images/no-foto.png" id="katalogi-HAFELE">Каталоги HAFELE<span> <br>~katalogi-HAFELE</span></p>
+                                                            </TD>                                                                            
+                                                            
+                                                        </TR>
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->
+                                                        <TR>
+                                                            <TD data-tooltip="Blum" class="hover mapsite" id="flo-Blum" >
                                                                 <!-- <p  onclick=\'window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")\' data-img="./dist/images/no-foto.png" id="floating155">Blum<span> <br>~Blum</span></p> -->
-                                                                <p data-href="http://publications.blum.com/2016/catalogue/ru/"  onclick='window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")' data-img="./dist/images/no-foto.png" id="floating155">BLUM<span> <br>~Blum</span></p>
+                                                                <p   onclick='window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")' data-img="./dist/images/no-foto.png" id="Blum">BLUM<span> <br>~Blum</span></p>
                                                             </TD>                                                                            
                                                             
                                                         </TR>
@@ -5154,7 +5162,7 @@ include 'inc-session-start.php';
                                                         <TD>
                                                             <TABLE >
                                                                 <TR>
-                                                                    <TD data-tooltip="" class="hover mapsite" id="footer155"  colspan="2" id="flo-">
+                                                                    <TD data-tooltip="" class="hover mapsite" id=""  colspan="2" id="flo-">
                                                                             <p data-href="" data-img="./dist/images/no-foto.png">Виды обработки кромки стекла, зеркала<span><br>~</span></p> 
                                                                     </TD>
                                                                 </TR> 
