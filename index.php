@@ -1600,7 +1600,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000102-01_101 камни стандартные  <span> <br>~-kamni-gladkie-standartnye</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000102-01-101 камни стандартные  <span> <br>~-kamni-gladkie-standartnye</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1622,13 +1622,13 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">
-                                                                           <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                           <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->                 
@@ -1652,25 +1652,25 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">
-                                                                           <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                           <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->                  
@@ -1686,25 +1686,25 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">
-                                                                           <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                           <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->                  
@@ -1720,25 +1720,25 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">
-                                                                           <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                           <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->                  
@@ -1754,25 +1754,25 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">
-                                                                           <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                           <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101_02_102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000101-02-102 камни резные стандартные <span><br>~- profili-reznye-standartnye</span></p> 
                                                                         </TD>  
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->                  
@@ -2001,31 +2001,31 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite"  colspan="2" id="flo-polotno-bloka-dvernogo-gluhoe-pco">                                                                            
-                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-gluhoe-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-gluhoe-pco">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-gluhoe-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-gluhoe-pco">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-polotno-bloka-dvernogo-so-steklom-pco">
-                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-so-steklom-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklom-pco">5000201_00_100_01.11 полотно блока дверного со стеклом ПЦО <span> <br>~polotno-bloka-dvernogo-so-steklom-pco</span></p>
+                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-so-steklom-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklom-pco">5000201-00-100-01.11 полотно блока дверного со стеклом ПЦО <span> <br>~polotno-bloka-dvernogo-so-steklom-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-polotno-bloka-dvernogo-so-steklomfacet-pco">
-                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-so-steklomfacet-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklomfacet-pco">5000201_00_100_01.13 полотно блока дверного со стеклом(фацет) ПЦО<span> <br>~-arhiv-profiley</span></p>
+                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-so-steklomfacet-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-so-steklomfacet-pco">5000201-00-100-01.13 полотно блока дверного со стеклом(фацет) ПЦО<span> <br>~-arhiv-profiley</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-polotno-bloka-dvernogo-s-zerkalom-pco">
-                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-s-zerkalom-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalom-pco">5000201_00_100_01.21 полотно блока дверного с зеркалом ПЦО<span> <br>~polotno-bloka-dvernogo-s-zerkalom-pco</span></p>
+                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-s-zerkalom-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalom-pco">5000201-00-100-01.21 полотно блока дверного с зеркалом ПЦО<span> <br>~polotno-bloka-dvernogo-s-zerkalom-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-polotno-bloka-dvernogo-s-zerkalomfacet-pco">
-                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-s-zerkalomfacet-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalomfacet-pco">5000201_00_100_01.23 полотно блока дверного с зеркалом(фацет) ПЦО<span> <br>~polotno-bloka-dvernogo-s-zerkalomfacet-pco</span></p>
+                                                                            <p data-img="./dist/images/polotno-bloka-dvernogo-s-zerkalomfacet-pco.png" data-href="izdeliya-bloki-dvernye.php#polotno-bloka-dvernogo-s-zerkalomfacet-pco">5000201-00-100-01.23 полотно блока дверного с зеркалом(фацет) ПЦО<span> <br>~polotno-bloka-dvernogo-s-zerkalomfacet-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->         
@@ -2042,19 +2042,19 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-5000201-00-101-blok-dvernoy-tipovoy">                                                                            
-                                                                                <p data-img="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-blok-dvernoy-tipovoy">5000201-00_101 блок_дверной_типовой<span> <br>~5000201-00-101-blok-dvernoy-tipovoy</span></p>
+                                                                                <p data-img="./dist/images/5000201-00-101-blok-dvernoy-tipovoy_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-blok-dvernoy-tipovoy">5000201-00-101 блок_дверной_типовой<span> <br>~5000201-00-101-blok-dvernoy-tipovoy</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-5000201-00-101-0201-korobka-bloka-dvernogo">
-                                                                                <p data-img="./dist/images/5000201-00-101-0201-korobka-bloka-dvernogo_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-0201-korobka-bloka-dvernogo">5000201-00_101_02.01 коробка_блока_дверного<span><br>~5000201-00-101-0201-korobka-bloka-dvernogo</span></p>
+                                                                                <p data-img="./dist/images/5000201-00-101-0201-korobka-bloka-dvernogo_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-0201-korobka-bloka-dvernogo">5000201-00-101-02.01 коробка_блока_дверного<span><br>~5000201-00-101-0201-korobka-bloka-dvernogo</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-5000201-00-101-1001-dobor-bloka-dvernogo">
-                                                                                <p data-img="./dist/images/5000201-00-101-1001-dobor-bloka-dvernogo_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-1001-dobor-bloka-dvernogoм">5000201-00_101_10.01 добор_блока_дверного<span> <br>~5000201-00-101-1001-dobor-bloka-dvernogoм</span></p>
+                                                                                <p data-img="./dist/images/5000201-00-101-1001-dobor-bloka-dvernogo_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-1001-dobor-bloka-dvernogoм">5000201-00-101-10.01 добор_блока_дверного<span> <br>~5000201-00-101-1001-dobor-bloka-dvernogoм</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2072,13 +2072,13 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-5000201-00-111-polotno-razdvizhnoe">                                                                            
-                                                                                <p data-img="./dist/images/5000201-00-111-polotno-razdvizhnoe_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-111-polotno-razdvizhnoe">5000201-00_111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)<span> <br>~-5000201-00-111-polotno-razdvizhnoe</span></p>
+                                                                                <p data-img="./dist/images/5000201-00-111-polotno-razdvizhnoe_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-111-polotno-razdvizhnoe">5000201-00-111 блок дверной с раздвижным полотном одностворчатый (раздвижение в пенал)<span> <br>~-5000201-00-111-polotno-razdvizhnoe</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-5000201-00-115-polotno-razdvizhnoe">
-                                                                                <p data-img="./dist/images/5000201-00-115-polotno-razdvizhnoe_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-115-polotno-razdvizhnoe">5000201-00_115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)<span> <br>~5000201-00-115-polotno-razdvizhnoe</span></p>
+                                                                                <p data-img="./dist/images/5000201-00-115-polotno-razdvizhnoe_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-115-polotno-razdvizhnoe">5000201-00-115 блок дверной с раздвижным полотном одностворчатый (раздвижение по стене)<span> <br>~5000201-00-115-polotno-razdvizhnoe</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
@@ -2119,7 +2119,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-5000201-00-105-portal-tipovoy">                                                                            
-                                                                                <p data-href="izdeliya-bloki-dvernye.php#5000201-00-105-portal-tipovoy" data-img="./dist/images/5000201-00-105-portal-tipovoy_1.png">5000201-00_105 портал типовой<span> <br>~5000201-00-105-portal-tipovoy</span></p>
+                                                                                <p data-href="izdeliya-bloki-dvernye.php#5000201-00-105-portal-tipovoy" data-img="./dist/images/5000201-00-105-portal-tipovoy_1.png">5000201-00-105 портал типовой<span> <br>~5000201-00-105-portal-tipovoy</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2138,25 +2138,25 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-5000201-99-101-shema-montazha-dvernogo-bloka">                                                                            
-                                                                                <p data-img="./dist/images/5000201-99-101-shema-montazha-dvernogo-bloka_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-101-shema-montazha-dvernogo-bloka">5000201-99_101 схема монтажа дверного блока<span> <br>~5000201-99-101-shema-montazha-dvernogo-bloka</span></p>
+                                                                                <p data-img="./dist/images/5000201-99-101-shema-montazha-dvernogo-bloka_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-101-shema-montazha-dvernogo-bloka">5000201-99-101 схема монтажа дверного блока<span> <br>~5000201-99-101-shema-montazha-dvernogo-bloka</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal">                                                                            
-                                                                                <p data-img="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal">5000201-99_103 схема монтажа ДБ полотно раздвижное в пенал<span> <br>~5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal</span></p>
+                                                                                <p data-img="./dist/images/5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal">5000201-99-103 схема монтажа ДБ полотно раздвижное в пенал<span> <br>~5000201-99-103-shema-montazha-db-polotno-razdvizhnoe-v-penal</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene">                                                                            
-                                                                                <p data-img="./dist/images/5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene">5000201-99_105 схема монтажа ДБ полотно раздвижное по стене<span> <br>~5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene</span></p>
+                                                                                <p data-img="./dist/images/5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene">5000201-99-105 схема монтажа ДБ полотно раздвижное по стене<span> <br>~5000201-99-105-shema-montazha-db-polotno-razdvizhnoe-po-stene</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
                                                                             <TD class="mapsite"  colspan="2" id="flo-5000201-99-107-shema-montazha-sandrikov-i-framug">                                                                            
-                                                                                <p data-img="./dist/images/5000201-99-107-shema-montazha-sandrikov-i-framug_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-107-shema-montazha-sandrikov-i-framug">5000201-99_107 схема монтажа сандриков и фрамуг<span> <br>~5000201-99-107-shema-montazha-sandrikov-i-framug</span></p>
+                                                                                <p data-img="./dist/images/5000201-99-107-shema-montazha-sandrikov-i-framug_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-99-107-shema-montazha-sandrikov-i-framug">5000201-99-107 схема монтажа сандриков и фрамуг<span> <br>~5000201-99-107-shema-montazha-sandrikov-i-framug</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2185,7 +2185,7 @@ include 'inc-session-start.php';
                                                                         <TABLE >                                                                                          
                                                                             <TR>
                                                                                 <TD class="mapsite"  colspan="2" id="flo-">                                                                            
-                                                                                    <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                    <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                                 </TD>                                                                         
                                                                             </TR>  
                                                                             <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2220,7 +2220,7 @@ include 'inc-session-start.php';
                                                                         <TABLE >                                                                                          
                                                                             <TR>
                                                                                 <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                    <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                    <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                                 </TD>                                                                         
                                                                             </TR>  
                                                                             <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2255,7 +2255,7 @@ include 'inc-session-start.php';
                                                                             <TABLE >                                                                                          
                                                                                 <TR>
                                                                                     <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                        <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                        <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                                     </TD>                                                                         
                                                                                 </TR>  
                                                                                 <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2290,7 +2290,7 @@ include 'inc-session-start.php';
                                                                             <TABLE >                                                                                          
                                                                                 <TR>
                                                                                     <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                        <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                        <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                                     </TD>                                                                         
                                                                                 </TR>  
                                                                                 <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2325,7 +2325,7 @@ include 'inc-session-start.php';
                                                                             <TABLE >                                                                                          
                                                                                 <TR>
                                                                                     <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                        <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                        <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                                     </TD>                                                                         
                                                                                 </TR>  
                                                                                 <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2360,7 +2360,7 @@ include 'inc-session-start.php';
                                                                         <TABLE >                                                                                          
                                                                             <TR>
                                                                                 <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                    <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                    <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                                 </TD>                                                                         
                                                                             </TR>  
                                                                             <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2402,7 +2402,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2436,7 +2436,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2479,7 +2479,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2513,7 +2513,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2556,7 +2556,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2590,7 +2590,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2633,7 +2633,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2667,7 +2667,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2710,7 +2710,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2744,7 +2744,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2787,7 +2787,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2821,7 +2821,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2864,7 +2864,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -2898,7 +2898,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -3353,7 +3353,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2"  id="flo-list-titulnyy-dp">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulniki.php#list-titulnyy-dp">5000301_01_001 лист титульный ДП<span> <br>~list-titulnyy-dp</span></p>
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulniki.php#list-titulnyy-dp">5000301-01-001 лист титульный ДП<span> <br>~list-titulnyy-dp</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -3414,7 +3414,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2"  id="flo-list-titulnyy-kd">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd">5000301_02_000 лист титульный КД<span> <br>~list-titulnyy-kd</span></p>
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd">5000301-02-000 лист титульный КД<span> <br>~list-titulnyy-kd</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->
@@ -3555,7 +3555,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" style="padding: 20px 0;"  id="flo-list-titulnyy-vpi">                                                                            
-                                                                            <p data-img="./dist/images/list-titulnyy-vpi_1.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi">5000304_01_000 лист титульный ВПИ<span> <br>~list-titulnyy-vpi</span></p>
+                                                                            <p data-img="./dist/images/list-titulnyy-vpi_1.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi">5000304-01-000 лист титульный ВПИ<span> <br>~list-titulnyy-vpi</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -3790,7 +3790,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -3824,7 +3824,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -3858,7 +3858,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -3892,7 +3892,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201_00_100_01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -4044,7 +4044,7 @@ include 'inc-session-start.php';
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.1 нумерация изделий по док. «приложение №1» согласно СТП</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.2 сведения о типе пола, потолка, несущих плоскостей</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.3 основные габаритные размеры изделий с обязательным выделением тех из них, которые являются </p>
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.4 стандартные либо специальные номера деталей согласно док. «5000404-01_006 порядок присвоения номеров </p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.4 стандартные либо специальные номера деталей согласно док. «5000404-01-006 порядок присвоения номеров </p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.5 материалы шпона и направление шпонирования, параметры руста </p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.6 иформация о виде, типе, цвете, принципе действия фурнитуры</p>
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#razvertka-pomeshcheniya-po-stenam-s-ustanovlennymi-izdeliyami" class="KEYWORDS">4.3.7 обозначение двух или более номеров образца цвета в составе одного изделия </p>
@@ -4146,49 +4146,49 @@ include 'inc-session-start.php';
                                                                 <TABLE >
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite"  colspan="2" id="flo-shema-etapov-proetirovaniya-izdeliya" >
-                                                                                <p data-href="metodichki-stp-po-proektnoy-rabote.php#shema-etapov-proetirovaniya-izdeliya">Схема этапов проетирования изделия<span><br>~-5000404-01_000 </span></p> 
+                                                                                <p data-href="metodichki-stp-po-proektnoy-rabote.php#shema-etapov-proetirovaniya-izdeliya">Схема этапов проетирования изделия<span><br>~-5000404-01-000 </span></p> 
                                                                         </TD>
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-sostav-komplekta-tipovogo-dp">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#sostav-komplekta-tipovogo-dp">Состав комплекта типового ДП<span><br>~-5000404-01_001 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#sostav-komplekta-tipovogo-dp">Состав комплекта типового ДП<span><br>~-5000404-01-001 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-sostav-komplekta-tipovoy-kd">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#sostav-komplekta-tipovoy-kd">Состав комплекта типовой КД<span><br>~-5000404-01_002 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#sostav-komplekta-tipovoy-kd">Состав комплекта типовой КД<span><br>~-5000404-01-002 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-ierarhicheskaya-struktura-izdeliy">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#ierarhicheskaya-struktura-izdeliy">Иерархическая структура изделий<span><br>~-5000404-01_003 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#ierarhicheskaya-struktura-izdeliy">Иерархическая структура изделий<span><br>~-5000404-01-003 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-tablica-tipovyh-tolshchin-plitnyh-materialov">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-tipovyh-tolshchin-plitnyh-materialov">Таблица типовых толщин плитных материалов<span><br>~-5000404-01_005 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-tipovyh-tolshchin-plitnyh-materialov">Таблица типовых толщин плитных материалов<span><br>~-5000404-01-005 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-prisvoeniya-nomerov-detalyam">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#poryadok-prisvoeniya-nomerov-detalyam">Порядок присвоения номеров деталям<span><br>~-5000404-01_006 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#poryadok-prisvoeniya-nomerov-detalyam">Порядок присвоения номеров деталям<span><br>~-5000404-01-006 </span></p>
                                                                         </TD>                                                             
                                                                     </TR>
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-vedomost-tipovyh-naimenovaniy-sepsedetaley">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#vedomost-tipovyh-naimenovaniy-sepsedetaley">Ведомость типовых наименований СЕ.ПСЕ.деталей<span><br>~-5000404-01_010 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#vedomost-tipovyh-naimenovaniy-sepsedetaley">Ведомость типовых наименований СЕ.ПСЕ.деталей<span><br>~-5000404-01-010 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-tablica-kodov-operaciy">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-kodov-operaciy">Таблица кодов операций<span><br>~-5000404-01_011 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-kodov-operaciy">Таблица кодов операций<span><br>~-5000404-01-011 </span></p>
                                                                             <p data-img="./dist/images/no-foto.png"   data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-kodov-operaciy" class="KEYWORDS">Код операции 2/0<span><br>~</span></p>
                                                                             <p data-img="./dist/images/no-foto.png"   data-href="metodichki-stp-po-proektnoy-rabote.php#tablica-kodov-operaciy" class="KEYWORDS">Код операции 2/5<span><br>~</span></p>
                                                                         </TD>                                                             
@@ -4196,37 +4196,37 @@ include 'inc-session-start.php';
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-mp-po-kd-s-raznorodnymi-materialami">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#mp-po-kd-s-raznorodnymi-materialami">МП по КД с разнородными материалами<span><br>~-5000404-01_012 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#mp-po-kd-s-raznorodnymi-materialami">МП по КД с разнородными материалами<span><br>~-5000404-01-012 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-algoritm-raboty-s-shablonami">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#algoritm-raboty-s-shablonami">Алгоритм по работе с шаблонами<span><br>~-5000404-01_015 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#algoritm-raboty-s-shablonami">Алгоритм по работе с шаблонами<span><br>~-5000404-01-015 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">Алгоритм по работе с поступающей от Заказчика информацией о сборочно-монтажныхежных организациях<span><br>~-5000404-01_017 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#algoritm-raboty-s-informaciey-o-smezhnyh-organizaciyah">Алгоритм по работе с поступающей от Заказчика информацией о сборочно-монтажныхежных организациях<span><br>~-5000404-01-017 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-otstupleniy-ot-trebovaniy-ergonomiki-i-bezopasnosti">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#otstupleniy-ot-trebovaniy-ergonomiki-i-bezopasnosti">Алгоритм согласования с заказчиком отступлений от требований эргономики и безопасности<span><br>~-5000404-01_018 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#otstupleniy-ot-trebovaniy-ergonomiki-i-bezopasnosti">Алгоритм согласования с заказчиком отступлений от требований эргономики и безопасности<span><br>~-5000404-01-018 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-shema-rascheta-gabaritov-stekla-i-zerkala-v-sostave-se">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#shema-rascheta-gabaritov-stekla-i-zerkala-v-sostave-se">Схема расчета габаритов стекла и зеркала в составе СЕ<span><br>~-5000404-01_050 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#shema-rascheta-gabaritov-stekla-i-zerkala-v-sostave-se">Схема расчета габаритов стекла и зеркала в составе СЕ<span><br>~-5000404-01-050 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-ierarhicheskaya-struktura-katalogov-proekt-i-zakaz">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#ierarhicheskaya-struktura-katalogov-proekt-i-zakaz">Иерархическая структура каталогов ПРОЕКТ и ЗАКАЗ<span><br>~-5000404-01_075 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#ierarhicheskaya-struktura-katalogov-proekt-i-zakaz">Иерархическая структура каталогов ПРОЕКТ и ЗАКАЗ<span><br>~-5000404-01-075 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
@@ -4247,7 +4247,7 @@ include 'inc-session-start.php';
                                                                 <TABLE >
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite"  colspan="2"  id="flo-obrazec-zapolneniya-dok-vedomost-furnitury">
-                                                                                <p data-href="metodichki-stp-po-proektnoy-rabote.php#obrazec-zapolneniya-dok-vedomost-furnitury">Образец заполнения док. ВЕДОМОСТЬ ФУРНИТУРЫ<span><br>~-5000404-02-005 5000304-01_001 </span></p> 
+                                                                                <p data-href="metodichki-stp-po-proektnoy-rabote.php#obrazec-zapolneniya-dok-vedomost-furnitury">Образец заполнения док. ВЕДОМОСТЬ ФУРНИТУРЫ<span><br>~-5000404-02-005 5000304-01-001 </span></p> 
                                                                         </TD>
                                                                     </TR> 
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
@@ -5431,7 +5431,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000101-01-100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -5459,7 +5459,7 @@ include 'inc-session-start.php';
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000101_01_100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
+                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000101-01-100 профили гладкие стандартные <span> <br>~-profili-gladkie-standartnye</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
