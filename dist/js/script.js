@@ -17,6 +17,7 @@ function getPositionSearch(){
          $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
          $('.zbz-input-clearable').css({'visibility': 'visible'});
          $('span.zbz').css('visibility','visible');
+         if($('input.who').val() !== ""){$('span.zbz').css('visibility','hidden');  }
         
         //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
      }
@@ -45,8 +46,13 @@ function getClientWidth(){
          $('.zbz-input-clearable').css({'visibility': 'visible'});
          $('span.zbz').css('visibility','visible');
         //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
+        // проверка input search
+      if($('input.who').val() !== ""){$('span.zbz').css('visibility','hidden');  }
      });
      getClientWidth();
+
+
+
  });
  getPositionSearch();nvfn();
 //  var delta =0;
