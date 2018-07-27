@@ -25,6 +25,18 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>
                         <h2 id="5000590-06-901-zashchelka-universalnaya">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000590-06-901 защелка универсальная</h4>
+                        <div class="bs-callout bs-callout-warning" id="jquery-required">
+                          
+                          <h4>Пружинная защелка мебельная для привинчивания </h4>
+                          <h4>Артикул: 245.07.702</h4>
+                          <p><a href="https://hafele-shop.ru/catalog/mebelnaya-furnitura/zamki-i-zashchelki/zashchelki-mebelnye/zadvizhki/pruzhinnaya-zashhelka-mebelnaya-dlya-privinchivaniya.html" target="_blank">HAFELE</a></p>
+                          
+                          <h4>Саморез с потайной головкой под крест, 3 Х 13</h4>
+                          <h4>Артикул: US3,0 X 13</h4>
+                          <p><a href="https://www.mdm-complect.ru/catalogue/detail.php?ID=5748" target="_blank">МДМ-КОМПЛЕКТ</a></p>
+                          
+                          
+                        </div>
                                                        
                             <p> <a>
                                 <img src="./dist/images/5000590-06-901-zashchelka-universalnaya_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album"
@@ -32,6 +44,7 @@ include 'inc-left-side-menu-furnitura.php';
                                  data-target="#myModal"                                                                
                                  alt="5000590-06-901 защелка универсальная"
                                  data-dwg="./dist/files/dwg/5000590-06-901-zashchelka-universalnaya.dwg"
+                                 data-pdf="./dist/files/pdf/5000590-06-901-zashchelka-universalnaya.pdf"
                                    ></a>
                              </p>
                              <div class="overlay"></div>
