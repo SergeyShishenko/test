@@ -1,7 +1,7 @@
 <?php
-ini_set('session.gc_maxlifetime', 86400);// 24 часа
-ini_set('session.cookie_lifetime', 0);
-session_set_cookie_params(0);
+ini_set('session.gc_maxlifetime', 43200);// 12 часов
+ini_set('session.cookie_lifetime', 43200);
+// session_set_cookie_params(0);
 session_start();
 $_SESSION['ref'] = $_SERVER['REQUEST_URI'];
 require_once('data.php');
