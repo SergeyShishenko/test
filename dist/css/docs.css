@@ -626,6 +626,55 @@ a.navbar-brand{text-align: center;}
  
 }
 
+@media (min-width: 1024px) {
+  /* .container {
+  
+    width: 1345px;
+    
+  } */
+    .col-md-8-non{
+    width: 64.3% !important;
+    margin-left: 8px !important;
+    margin-right: -15px !important;
+  }
+  .col-md-8{
+   padding-left: 20px !important;
+  }
+  body{
+    font-size: 9px !important;
+  }
+  .menu2 .list-group-item,.menu2 .list-group,.menu .list-group{
+    width: 300PX !important;/*ширина submenu*/   
+  }
+  .sub_menu2{     
+    /*ширина submenu*/
+    left:300PX !important;
+  }
+  .bs-sidebar.affix-bottom,
+  .bs-sidebar.affix {
+    width: 150px !important;
+  }
+
+  .navbar-brand {
+    
+    padding-left:60px;
+    padding-right:35px;
+  }
+  .glyphicon-search{   margin-right:-140px; }
+  .nav > li > a {
+   
+    padding: 15px 7.8px;
+  }
+  .zbz-input-clearable {width: 150px;}
+   /* менять приизменении окна */
+   .img-book {height:736px;}
+   /* .img-album {height:640px;} */
+
+   h1{   font-size: 30px;}
+}
+
+
+
 @media (min-width: 1200px) {
   .container {
   
@@ -650,10 +699,21 @@ a.navbar-brand{text-align: center;}
     /*ширина submenu*/
     left:420PX !important;
   }
-
+  .bs-sidebar.affix-bottom,
+  .bs-sidebar.affix {
+    width: 213px !important;
+  }
+  .zbz-input-clearable {width: 213px;}
+  .glyphicon-search{   margin-right:-205px; }
+  .nav > li > a { padding: 15px 15px; }
+  .navbar-brand {    
+    padding-left:100px;
+    padding-right:57px;
+  }
    /* менять приизменении окна */
-   /* .img-book {height:1280px;}
-   .img-album {height:640px;} */
+   .img-book {height:1100px;}
+   /* .img-album {height:640px;} */
+   h1{   font-size: 36px;}
 }
 @media (min-width: 1824px) {
   .container {   
@@ -675,11 +735,42 @@ a.navbar-brand{text-align: center;}
     /*ширина submenu*/
     left:489PX !important;
   }
+  /* менять приизменении окна */
+   .img-book {height:1280px;}
+   .img-album {height:640px;}
+}
+ 
+
+/* h1,
+.h1 {
+  font-size: 36px;
 }
 
-  
- 
- 
+h2,
+.h2 {
+  font-size: 30px;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+}
+
+h4,
+.h4 {
+  font-size: 18px;
+}
+
+h5,
+.h5 {
+  font-size: 14px;
+}
+
+h6,
+.h6 {
+  font-size: 12px;
+} */
+
 
 
   .col-md-8-non{
@@ -697,7 +788,6 @@ a.navbar-brand{text-align: center;}
     width: 213px;
   } */
 .bs-sidebar.hidden-print.vertical-menu.affix-top {width: 213px;}
-
 
 
 .col-md-2 .list-group{
@@ -1082,12 +1172,12 @@ a.navbar-brand{text-align: center;}
   }
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .bs-sidebar.affix-bottom,
   .bs-sidebar.affix {
     width: 213px;
   }
-}
+} */
 
 
 /*  */
