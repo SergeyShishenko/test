@@ -185,15 +185,15 @@ include 'inc-session-start.php';
         </div> <!-- /container -->
     </header>
   
-    <div  style="position:fixed; left:0; top:150px; ">
+    <div  style="position:fixed; left:0; top:150px; " class="btn-side">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
             <span class=" glyphicon glyphicon-envelope" style="color: #46b8da; "></span>
         </button>
     </div>
-    <div  style="position:fixed; left:0; top:185px; ">
+    <div  style="position:fixed; left:0; top:185px;" class="btn-side">
         <!-- Button trigger modal -->        
-        <button type="button" class="btn btn-default center" onclick="location.href=\'exit.php\';" title="Выйти">  
+        <button type="button" class="btn btn-default center " onclick="location.href=\'exit.php\';" title="Выйти">  
         <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
         </button>
     </div>

@@ -7,6 +7,8 @@ body {
   line-height: 1.428571429;
   
 }
+
+div.btn-side:hover{z-index:1000 !important;}
 .center{  
   display: block; 
   margin: 0 auto; 
