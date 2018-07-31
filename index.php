@@ -191,6 +191,12 @@ include 'inc-session-start.php';
             <span class=" glyphicon glyphicon-envelope" style="color: #46b8da; "></span>
         </button>
     </div>
+    <div  style="position:fixed; left:0; top:185px; ">
+        <!-- Button trigger modal -->        
+        <button type="button" class="btn btn-default center" onclick="location.href=\'exit.php\';" title="Выйти">  
+        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+        </button>
+    </div>
     <?php 
     include 'inc-header-send-modal.php';
     ?>        

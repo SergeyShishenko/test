@@ -1235,10 +1235,38 @@ h6,
 @media (max-width: 992px) {
 .col-md-8-non {
  
-  margin-left: 67px;
-  width: 86.6% !important;
-  
+  /* margin-left: 67px;
+  width: 86.6% !important; */
+  margin-left: 0px !important;
+  width: 100% !important;  
 }
+.page-header {
+  padding-bottom: 0px;
+  margin: 0;
+  border-bottom: 1px solid #eeeeee;
+  padding-left: 15px;
+}
+.bs-callout {
+  margin: 0 !important;
+  padding: 5px !important;
+}
+/* менять приизменении окна */
+.img-book {height:227px;
+          width: 159px !important;
+
+}
+/* .img-album {height:640px;} */
+h1{font-size: 24px !important;}
+h2{font-size: 18px !important;}
+h2[id] { 
+  font-size: 9px !important;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+h3{font-size: 15px !important;}
+h4{font-size: 14px !important;}
+h5{font-size: 9px !important;}
+h6{font-size: 8px !important;}
 }
 /* @media (max-width: 1200px) {
   .col-md-8-non {
