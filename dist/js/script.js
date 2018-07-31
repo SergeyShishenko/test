@@ -646,3 +646,7 @@ $(function(){
 });
 
 
+$( ".navbar-toggle" ).click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
+    //  скрываем, или отображаем все элементы <div>
+     $( ".navbar-form").toggle(); 
+  });

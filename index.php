@@ -174,7 +174,7 @@ include 'inc-session-start.php';
                     </ul>   
                 </div>
                 
-                <div class="navbar-form navbar-right " id="search">
+                <div class="navbar-form navbar-right navbar-collapse collapse " id="search">
                     <div class="form-group">                                
                         <span class="glyphicon glyphicon-search zbz"></span><input type="text" class="form-control who zbz-input-clearable" placeholder="Поиск">                               
                     </div>                            

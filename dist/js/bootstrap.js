@@ -600,6 +600,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
       .addClass('collapsing')
       .removeClass('collapse')
       .removeClass('in')
+      
 
     this.transitioning = 1
 
@@ -609,6 +610,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
         .trigger('hidden.bs.collapse')
         .removeClass('collapsing')
         .addClass('collapse')
+        
     }
 
     if (!$.support.transition) return complete.call(this)
@@ -669,6 +671,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
     if (!data || !data.transitioning) {
       if ($parent) $parent.find('[data-toggle=collapse][data-parent="' + parent + '"]').not($this).addClass('collapsed')
       $this[$target.hasClass('in') ? 'addClass' : 'removeClass']('collapsed')
+      
     }
 
     $target.collapse(option)

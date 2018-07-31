@@ -1277,6 +1277,10 @@ h6{font-size: 8px !important;}
 
 ul.search_result {  max-width: 240px !important;  margin-left: -150px !important;}
 .search_result a {font-size: 8px !important;}
+.nav{max-height: 250px;
+     overflow: overlay;
+     /* margin-bottom: 40px; */
+    }
 
 }/*@media (max-width: 992px)*/
 
