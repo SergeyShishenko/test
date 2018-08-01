@@ -1234,6 +1234,8 @@ h6,
   /* .bs-sidebar.affix {
     position: relative;
 } */
+
+/*!!!240!!!*/
 @media (max-width: 992px) {
 .col-md-8-non {
  
@@ -1257,9 +1259,11 @@ h6,
           width: 159px !important;
 
 }
-/* .img-album {height:640px;} */
-h1{font-size: 24px !important;}
-h2{font-size: 18px !important;}
+/* .img-album {height:640px;} 1556х1100 */
+.img-album {height:112px;
+            width: 159px !important;}
+h1{font-size: 18px !important;}
+h2{font-size: 16px !important;}
 h2[id] { 
   font-size: 9px !important;
   margin-top: 1px;
@@ -1272,7 +1276,7 @@ h6{font-size: 8px !important;}
 
 .zbz-input-clearable {width: 160px;}
   .glyphicon-search{ margin-right: -140px;
-                     padding-left: 35px;
+                     padding-left: 28px;
                      }
 
 ul.search_result {  max-width: 240px !important;  margin-left: -150px !important;}

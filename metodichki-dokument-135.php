@@ -17,9 +17,9 @@ include 'inc-header-menu.php';
 include 'inc-left-side-menu-metodichki.php';
 ?> 
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main">
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="list-trebovaniy-detaley---kamen">Лист требования деталей по камням</h1>
                         </div>
@@ -30,8 +30,8 @@ include 'inc-left-side-menu-metodichki.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="list-trebovaniy-detaley---tokarke-i-rezbe">Лист требования деталей по Токарке Резьбе</h1>
                         </div>
@@ -41,8 +41,8 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="135-metodichka-po-detalyam-obshcheemdf">Общие требования + МДФ</h1>
                         </div>
@@ -52,8 +52,8 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                       </section>
                     </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="13507-algoritm-po-kompensacii-po-tolshchine">135.07 Алгоритм по компенсации по толщине</h1>
                         </div>
@@ -63,8 +63,8 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                       </section>
                     </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                        <section >
                           <div class="page-header">
                             <h1 itemprop="name" id="metodichka-po-detalyamprofili">Профили методичка</h1>
                           </div>
@@ -75,8 +75,8 @@ include 'inc-left-side-menu-metodichki.php';
 
                         </section>
                       </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                        <section >
                           <div class="page-header">
                             <h1 itemprop="name" id="metodichka-po-detalyam-ramki">Рамки методичка</h1>
                           </div>
@@ -86,8 +86,8 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                         </section>
                     </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                        <section >
                           <div class="page-header">
                             <h1 itemprop="name" id="13508-shema-izgotovleniya-detaley-i-se">Схемы изготовления</h1>
                           </div>
@@ -97,8 +97,8 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                         </section>
                     </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                        <section >
                           <div class="page-header">
                             <h1 itemprop="name" id="metodichka-po-detalyam-fanera">Фанера методичка</h1>
                           </div>
@@ -112,7 +112,7 @@ include 'inc-left-side-menu-metodichki.php';
 
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             <li><a href="#list-trebovaniy-detaley---kamen">Лист требования деталей по камням</a>
                             </li>

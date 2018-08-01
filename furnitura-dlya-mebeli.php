@@ -17,9 +17,9 @@ include 'inc-header-menu.php';
 include 'inc-left-side-menu-furnitura.php';
 ?> 
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main">
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
+                    <article  >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</h1>
                         </div> 
@@ -256,8 +256,8 @@ include 'inc-left-side-menu-furnitura.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="mehanizmy-razdvizheniya-dlya-fasadov-Cinetto-PS23">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ</h1>
                         </div>
@@ -285,8 +285,8 @@ include 'inc-left-side-menu-furnitura.php';
                         </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="mehanizmy-podemnye-dlya-fasadov">МЕХАНИЗМЫ ПОДЪЕМНЫЕ для ФАСАДОВ</h1>
                         </div>
@@ -315,8 +315,8 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                    <article  >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="mekhanizmy-vydvizheniya-dlya-yashchikov">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ</h1>
                         </div> 
@@ -778,8 +778,8 @@ include 'inc-left-side-menu-furnitura.php';
 
 
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="opory">ОПОРЫ</h1>
                         </div>
@@ -869,8 +869,8 @@ include 'inc-left-side-menu-furnitura.php';
                         </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="zashchelki-mebelnye">ЗАЩЕЛКИ МЕБЕЛЬНЫЕ</h1>
                         </div>
@@ -917,8 +917,8 @@ include 'inc-left-side-menu-furnitura.php';
                         </section>
                     </article>
 
-                   <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                   <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="styazhki">СТЯЖКИ</h1>
                         </div>
@@ -1071,8 +1071,8 @@ include 'inc-left-side-menu-furnitura.php';
                         </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="polkoderzhateli">ПОЛКОДЕРЖАТЕЛИ</h1>
                         </div>
@@ -1101,8 +1101,8 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
                     
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ</h1>
                         </div>
@@ -1149,8 +1149,8 @@ include 'inc-left-side-menu-furnitura.php';
                         </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="pantografy"> ПАНТОГРАФЫ</h1>
                         </div>
@@ -1199,8 +1199,8 @@ include 'inc-left-side-menu-furnitura.php';
                         </section> 
                     </article>
                     
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="ruchki">РУЧКИ</h1>
                         </div>
@@ -1247,8 +1247,8 @@ include 'inc-left-side-menu-furnitura.php';
                         </section>
                     </article>
 
-                     <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                     <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ</h1>
                         </div>
@@ -1278,8 +1278,8 @@ include 'inc-left-side-menu-furnitura.php';
                         </section>
                     </article>
 
-                     <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                     <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="natyazhiteli-dlya-fasadov">НАТЯЖИТЕЛИ для ФАСАДОВ</h1>
                         </div>
@@ -1326,8 +1326,8 @@ include 'inc-left-side-menu-furnitura.php';
                         </section>
                     </article>
 
-                     <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                     <article  >
+                      <section id="bs-docs-section">
                         <div class="page-header">
                           <h1 itemprop="name" id="mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ</h1>
                         </div>
@@ -1380,7 +1380,7 @@ include 'inc-left-side-menu-furnitura.php';
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             
                             <li><a href="#petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</a>

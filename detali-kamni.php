@@ -20,9 +20,9 @@ include 'inc-header-menu.php';
 include 'inc-left-side-menu-detali.php';
 ?> 
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main">
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="kamni-gladkie">Камни гладкие</h1>
                         </div>                     
@@ -98,8 +98,8 @@ include 'inc-left-side-menu-detali.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="kamni-reznye">Камни резные</h1>
                         </div>
@@ -141,8 +141,8 @@ include 'inc-left-side-menu-detali.php';
                     
                    
                     
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="sborochnye-shemy-kamni">Сборочно-монтажные схемы</h1>
                           </div>
@@ -164,7 +164,7 @@ include 'inc-left-side-menu-detali.php';
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             <li><a href="#kamni-gladkie">Камни гладкие</a>
                                 <ul class="nav">

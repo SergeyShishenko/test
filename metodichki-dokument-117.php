@@ -17,10 +17,10 @@ include 'inc-header-menu.php';
 include 'inc-left-side-menu-metodichki.php';
 ?> 
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main">
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                    <article >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="metodicheskoe-posobie-po-izdeliyam">117. Методическое пособие по изделиям</h1>
                         </div>
@@ -31,8 +31,8 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                       </section>
                     </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                    <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="tablica-dlin-shirin-tolshchin-dlya-specifikacii">117.01.Таблица длин, ширин, толщин (для&nbspспецификации)</h1>
                           </div>
@@ -44,8 +44,8 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                         </section>
                       </article>
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva" >117.02. Порядок изготовления МДФ_ШАБЛОНОВ для&nbspпроизводства</h1>
                           </div>
@@ -53,8 +53,8 @@ include 'inc-left-side-menu-metodichki.php';
                  
                         </section>
                       </article>
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="steklaperechen-tolshchina-facet">117.03. Стекла:перечень, толщина, фацет</h1>
                           </div>
@@ -62,8 +62,8 @@ include 'inc-left-side-menu-metodichki.php';
                  
                         </section>
                       </article>
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="varianty-sborki-sostavnyh-se-pri-raznyh-parametrah-obrazca-cveta">117.04. Варианты сборки составных СЕ при разных параметрах "Образца цвета"</h1>
                           </div>
@@ -71,8 +71,8 @@ include 'inc-left-side-menu-metodichki.php';
                  
                         </section>
                       </article>
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="varianty-standartny-obrazcov-otdelki">117.05. Варианты стандартны образцов отделки</h1>
                           </div>
@@ -88,8 +88,8 @@ include 'inc-left-side-menu-metodichki.php';
                               
                         </section>
                       </article>
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="perechen-shtampov-kdz-i-kdp">117.06. Перечень штампов КДЗ и КДП</h1>
                           </div>
@@ -101,8 +101,8 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                         </section>
                       </article>
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="perechen-tipov-i-cvetov-zamkov">117.07 Перечень типов и цветов замков</h1>
                           </div>
@@ -114,8 +114,8 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                         </section>
                       </article>
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="obmery">117.08 Обмеры</h1>
                           </div>
@@ -127,8 +127,8 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                         </section>
                       </article>
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="algoritm-po-stykam">117.09 Алгоритм по стыкам</h1>
                           </div>
@@ -140,8 +140,8 @@ include 'inc-left-side-menu-metodichki.php';
                               </object>
                         </section>
                       </article>
-                      <!-- <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <!-- <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="varianty-standartnyh-obrazcov-otdelki">117.051 Варианты стандартных образцов отделки</h1>
                           </div>
@@ -150,8 +150,8 @@ include 'inc-left-side-menu-metodichki.php';
                         </section>
                       </article> -->
 
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="domi">ДОМИ</h1>
                           </div>
@@ -165,7 +165,7 @@ include 'inc-left-side-menu-metodichki.php';
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             <li><a href="#metodicheskoe-posobie-po-izdeliyam">117. Методическое пособие по изделиям</a>
                             </li>                            

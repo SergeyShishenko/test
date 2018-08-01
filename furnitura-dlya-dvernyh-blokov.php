@@ -18,9 +18,9 @@ include 'inc-left-side-menu-furnitura.php';
 
 ?> 
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main">
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="petli-dlya-poloten-dvernyh">ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
@@ -164,8 +164,8 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="mehanizmy-razdvizheniya-dlya-poloten-dvernyh">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
@@ -212,8 +212,8 @@ include 'inc-left-side-menu-furnitura.php';
                       </section>
                     </article>
 
-                     <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                     <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="zamki-dlya-poloten-dvernyh">ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
@@ -362,8 +362,8 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="porogi-avtomaticheskie-dlya-poloten-dvernyh">ПОРОГИ АВТОМАТИЧЕСКИЕ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div>  
@@ -416,8 +416,8 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="rigeli-shpingalety-dlya-poloten-dvernyh">РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
@@ -485,8 +485,8 @@ include 'inc-left-side-menu-furnitura.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="dovodchiki-dlya-poloten-dvernyh">ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ</h1>
                         </div> 
@@ -556,8 +556,8 @@ include 'inc-left-side-menu-furnitura.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="upory-napolnye-i-nastennye">УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ</h1>
                         </div> 
@@ -627,8 +627,8 @@ include 'inc-left-side-menu-furnitura.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="svodnaya-tablica-furnitury-dverey-raspashnyh-klass-lyuks-standart">Сводная таблица фурнитуры дверей распашных</h1>
                         </div> 
@@ -698,7 +698,7 @@ include 'inc-left-side-menu-furnitura.php';
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             
                             <li><a href="#petli-dlya-poloten-dvernyh">ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ</a>

@@ -18,7 +18,7 @@
                     <ul class="list-group">
                         <!-- menu -->
                         <li class="menu">                                
-                            <a href="detali-profili.php" class="list-group-item '.$item_profili_Class.'">Профили гладкие</a>
+                            <a href="detali-profili.php" class="list-group-item '.$item_profili_Class.'">Профили гладкие &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2">
                                     <a  class="list-group-item sub"  href="detali-profili.php#profili-nakladki">Накладки</a>

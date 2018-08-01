@@ -21,9 +21,9 @@ include 'inc-header-menu.php';
 include 'inc-left-side-menu-izdeliya.php';
 ?> 
                 <!-- main  -->
-                <div class="col-md-8  col-md-8-non" role="main">
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                <div class="col-md-8  col-md-8-non" role="main" id="main-page">
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="mebel-korpusnaya-konstrukcii">Конструкции мебели корпусной типовой</h1>
                         </div>
@@ -36,8 +36,8 @@ include 'inc-left-side-menu-izdeliya.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="mebel-korpusnaya-shkafy-razdvizhnye-fasady">Шкафы с раздвижными фасадами</h1>
                         </div>
@@ -67,8 +67,8 @@ include 'inc-left-side-menu-izdeliya.php';
                         </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="mebel-korpusnaya-stellazhi">Шкафы без фасадов (стеллажи)</h1>
                           </div>
@@ -97,8 +97,8 @@ include 'inc-left-side-menu-izdeliya.php';
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p> -->
                           </section>
                       </article>
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
+                      <article  >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="mebel-korpusnaya-stoly">Столы</h1>
                           </div>
@@ -128,8 +128,8 @@ include 'inc-left-side-menu-izdeliya.php';
                           </section>
                       </article>
           
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="sborochnye-shemy-mebel-korpusnaya">Сборочно-монтажные схемы</h1>
                           </div>
@@ -151,7 +151,7 @@ include 'inc-left-side-menu-izdeliya.php';
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             <li><a href="#mebel-korpusnaya-konstrukcii">Конструкции мебели корпусной типовой</a>
                             </li>

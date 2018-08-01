@@ -23,9 +23,9 @@ include 'inc-header-menu.php';
 include 'inc-left-side-menu-izdeliya.php';
 ?> 
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main">
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="uzly-ekrany">УЗЛЫ ЭКРАНЫ</h1>
                         </div>                     
@@ -67,8 +67,8 @@ include 'inc-left-side-menu-izdeliya.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="uzly-pilyastry">УЗЛЫ ПИЛЯСТРЫ</h1>
                         </div>
@@ -330,8 +330,8 @@ include 'inc-left-side-menu-izdeliya.php';
                        </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="uzly-shponki" >УЗЛЫ ШПОНКИ</h1>
                         </div>
@@ -353,8 +353,8 @@ include 'inc-left-side-menu-izdeliya.php';
                         </div>
                       </section>
                     </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="uzly-polki" >УЗЛЫ ПОЛКИ</h1>
                         </div>
@@ -393,8 +393,8 @@ include 'inc-left-side-menu-izdeliya.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="uzly-shtangoderzhateli" >УЗЛЫ ШТАНГОДЕРЖАТЕЛИ</h1>
                         </div>
@@ -417,8 +417,8 @@ include 'inc-left-side-menu-izdeliya.php';
                       </section>
                     </article>
 
-                     <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                     <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="uzly-ekscentrikovye-styazhki-evrovinty" >УЗЛЫ ЭКСЦЕНТРИКОВЫЕ СТЯЖКИ, ЕВРОВИНТЫ</h1>
                         </div>
@@ -441,8 +441,8 @@ include 'inc-left-side-menu-izdeliya.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="paneli-poyasa" >ПАНЕЛИ ПОЯСА</h1>
                         </div>
@@ -465,8 +465,8 @@ include 'inc-left-side-menu-izdeliya.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                         
                           <h1 itemprop="name" id="uzly-ustanovki-ruchki" >УЗЛЫ УСТАНОВКИ РУЧКИ</h1>
@@ -507,8 +507,8 @@ include 'inc-left-side-menu-izdeliya.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="uzly-podlozhka-montazhnaya" >УЗЛЫ ПОДЛОЖКА МОНТАЖНАЯ</h1>
                         </div>
@@ -531,8 +531,8 @@ include 'inc-left-side-menu-izdeliya.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="uzel-po-prisadke-paneli-poyasa-pod-samorez" >УЗЕЛ ПО ПРИСАДКЕ ПАНЕЛИ ПОЯСА ПОД САМОРЕЗ</h1>
                         </div>
@@ -554,8 +554,8 @@ include 'inc-left-side-menu-izdeliya.php';
                         </div>                      
                       </section>
                     </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="paz-nizhniy-razdvizhnaya-dver" >ПАЗ НИЖНИЙ РАЗДВИЖНАЯ ДВЕРЬ</h1>
                         </div>
@@ -581,7 +581,7 @@ include 'inc-left-side-menu-izdeliya.php';
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary"  id="main-page">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary"  >
                         <ul class="nav bs-sidenav">
                             <li><a href="#uzly-ekrany" >УЗЛЫ ЭКРАНЫ</a>
                                 <ul class="nav">

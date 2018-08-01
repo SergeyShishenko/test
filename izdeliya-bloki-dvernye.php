@@ -21,12 +21,15 @@ include 'inc-header-menu.php';
 include 'inc-left-side-menu-izdeliya.php';
 ?> 
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main">
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
+                
+                    <article  >
+                      <section  >
                         <div class="page-header cont">
                           <h1 itemprop="name" id="dveri-konstrukcii">Конструкции дверных блоков</h1>
-                        
+                          </div> 
+                          <h2 id="profili-nakladki-50">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
                          <p> <a>
                             <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/spisok-poloten-dvernyh-blokov-tipovyh-0.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                              data-toggle="modal"
@@ -37,6 +40,7 @@ include 'inc-left-side-menu-izdeliya.php';
                          </p>
                          <div class="overlay"></div>
                          </div>
+
                         <h2 id="polotno-bloka-dvernogo-gluhoe-pco">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Полотно блока дверного глухое 
                             <abbr title="Прозрачный Цикл Отделки">ПЦО</abbr></h4>
@@ -178,8 +182,8 @@ include 'inc-left-side-menu-izdeliya.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section  >
                         <div class="page-header cont">
                           <h1 itemprop="name" id="polotna">Дверные блоки с распашными полотнами</h1>
                         
@@ -268,8 +272,8 @@ include 'inc-left-side-menu-izdeliya.php';
 
                   
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="razdvizhnye-polotna">Дверные блоки с раздвижными полотнами</h1>
                         </div>
@@ -367,8 +371,8 @@ include 'inc-left-side-menu-izdeliya.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                      <section  >
                         <div class="page-header" >
                           <h2 id="mayatnikovye-polotna">&nbsp;</h2>
                           <h1 itemprop="name">Дверные блоки с маятниковыми (барными) полотнами</h1>
@@ -381,8 +385,8 @@ include 'inc-left-side-menu-izdeliya.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="portaly">Дверные блоки без полотен (порталы)</h1>
                           </div>
@@ -414,8 +418,8 @@ include 'inc-left-side-menu-izdeliya.php';
                         </div> 
                         </section>
                       </article>
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="sborochnye-shemy-polotna">Сборочно-монтажные схемы</h1>
                           </div>
@@ -525,14 +529,13 @@ include 'inc-left-side-menu-izdeliya.php';
                                     ></a>
                                 </p>
                                 <div class="overlay"></div>
-                        </div>
-                          
+                        </div>                          
                         </section>
                     </article>
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" >
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             <li><a href="#dveri-konstrukcii">Конструкции дверных блоков</a>
                                 <ul class="nav">

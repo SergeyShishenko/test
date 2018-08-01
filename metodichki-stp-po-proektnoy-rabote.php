@@ -17,9 +17,9 @@ include 'inc-header-menu.php';
 include 'inc-left-side-menu-metodichki.php';
 ?> 
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main">
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
+                    <article >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="vyhodnye-svedeniya">ВЫХОДНЫЕ СВЕДЕНИЯ</h1>
                         </div>
@@ -45,8 +45,8 @@ include 'inc-left-side-menu-metodichki.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                    <article >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="vizualnaya-chast-proekta">ВИЗУАЛЬНАЯ ЧАСТЬ ПРОЕКТА</h1>
                         </div>  
@@ -57,8 +57,8 @@ include 'inc-left-side-menu-metodichki.php';
                             </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" >
+                    <article >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="obmery-inzhenerno-stroitelnaya-chast">ОБМЕРЫ (инженерно-графическая часть)</h1>
                         </div>
@@ -91,8 +91,8 @@ include 'inc-left-side-menu-metodichki.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                    <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="dizayn-proekt-inzhenerno-graficheskaya-chast">ДИЗАЙН-ПРОЕКТ (инженерно-графическая часть)</h1>
                           </div>
@@ -135,8 +135,8 @@ include 'inc-left-side-menu-metodichki.php';
                             </section>
                       </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                    <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="albom-obrazcov-cveta-i-formy">АЛЬБОМ ОБРАЗЦОВ ЦВЕТА И ФОРМЫ</h1>
                           </div>
@@ -170,8 +170,8 @@ include 'inc-left-side-menu-metodichki.php';
                       </article>
 
 
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="tehnicheskoe-zadanie-dlya-zakazchika">ТЕХНИЧЕСКОЕ ЗАДАНИЕ ДЛЯ ЗАКАЗЧИКА</h1>
                           </div>
@@ -204,8 +204,8 @@ include 'inc-left-side-menu-metodichki.php';
                         </section>
                       </article>
 
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="obshchie-trebovaniya-po-proektirovaniyu">ОБЩИЕ ТРЕБОВАНИЯ ПО ПРОЕКТИРОВАНИЮ</h1>
                           </div>
@@ -326,8 +326,8 @@ include 'inc-left-side-menu-metodichki.php';
                         </section>
                       </article>
 
-                      <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" >
+                      <article >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="obrazcy-zapolneniya-dokumentov">ОБРАЗЦЫ ЗАПОЛНЕНИЯ ДОКУМЕНТОВ</h1>
                           </div>                         
@@ -434,7 +434,7 @@ include 'inc-left-side-menu-metodichki.php';
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             <li><a href="#vyhodnye-svedeniya">ВЫХОДНЫЕ СВЕДЕНИЯ</a>
                                 <ul class="nav">

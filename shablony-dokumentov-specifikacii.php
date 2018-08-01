@@ -17,10 +17,10 @@ include 'inc-header-menu.php';
 include 'inc-left-side-menu-shablony-dokumentov.php';
 ?>  
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main">
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
                     
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</h1>
                         </div>
@@ -40,8 +40,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                       </section>
                     </article>
 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                    <article >
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="specifikaciya-tehnologichesaya">СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ</h1>
                         </div>
@@ -76,7 +76,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             <li><a href="#specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>
                             <ul class="nav">

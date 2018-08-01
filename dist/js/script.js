@@ -7,9 +7,9 @@ function getPositionSearch(){
         // var c= $('div.container').css('width');
         var pos = $( '#main-page' ).position().left;
         var c= $('#main-page').css('width');
-        console.log(pos);
-        console.log(c);
-         c = c.replace("px", "")-21; //удалить латинские символы 
+        console.log('position '+pos);
+        console.log('width '+c);
+         c = c.replace("px", "")-51; // -21 удалить латинские символы 
         //   с= pos + с;
         // console.log(c);       
         // c=(w-c)/2+5;
@@ -39,7 +39,7 @@ function getClientWidth(){
         // var c= $('div.container').css('width');
         var pos = $( '#main-page' ).position().left;
         var c= $('#main-page').css('width');
-        c = c.replace("px", "")-21; //удалить латинские символы 
+        c = c.replace("px", "")-51; // -21удалить латинские символы 
         // console.log(pos);
         console.log(c); 
          $('.navbar-form.navbar-right:last-child').css({'left': pos + c});

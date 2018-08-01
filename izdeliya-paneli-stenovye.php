@@ -21,9 +21,9 @@ include 'inc-header-menu.php';
 include 'inc-left-side-menu-izdeliya.php';
 ?> 
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main">
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                      <section itemprop="articleBody" id="bs-docs-section">
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
+                    <article  >
+                      <section  >
                         <div class="page-header">
                           <h1 itemprop="name" id="paneli-stenovye-konstrukcii">Конструкции панелей стеновых</h1>
                         </div>
@@ -39,8 +39,8 @@ include 'inc-left-side-menu-izdeliya.php';
       
             
                 
-                    <article itemscope="" itemtype="http://schema.org/Article">
-                        <section itemprop="articleBody" id="bs-docs-section">
+                    <article  >
+                        <section  >
                           <div class="page-header">
                             <h1 itemprop="name" id="sborochnye-shemy-paneli-stenovye">Сборочно-монтажные схемы</h1>
                           </div>
@@ -62,7 +62,7 @@ include 'inc-left-side-menu-izdeliya.php';
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" id="main-page">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             <li><a href="#paneli-stenovye-konstrukcii">Конструкции панелей стеновых</a>
                             </li>
