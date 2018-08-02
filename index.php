@@ -77,7 +77,7 @@ include 'inc-session-start.php';
                             </ul>                           
                         </li>
                         <li>
-                            <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a >
+                            <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a ><span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
                                 </li>
@@ -102,7 +102,7 @@ include 'inc-session-start.php';
                             </ul>                             
                         </li>
                         <li>                            
-                            <a href="#shablony-dokumentov-titulniki">ШАБЛОНЫ ДОКУМЕНТОВ</a >
+                            <a href="#shablony-dokumentov-titulniki">ШАБЛОНЫ ДОКУМЕНТОВ</a ><span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating24" >ЛИСТЫ ТИТУЛЬНЫЕ</a>
                                 </li>
@@ -115,7 +115,7 @@ include 'inc-session-start.php';
                             </ul>
                         </li>
                         <li>
-                            <a href="#metodichki-dokument-117">МЕТОДИЧКИ</a >
+                            <a href="#metodichki-dokument-117">МЕТОДИЧКИ</a ><span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating28" >ДОКУМЕНТ 117</a>
                                 </li>
@@ -128,7 +128,7 @@ include 'inc-session-start.php';
                             </ul>
                         </li>
                         <li>
-                            <a href="#furnitura-dlya-dvernyh-blokov">ФУРНИТУРА</a >
+                            <a href="#furnitura-dlya-dvernyh-blokov">ФУРНИТУРА</a ><span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating32" >ДЛЯ ДВЕРНЫХ БЛОКОВ</a>
                                 </li>
@@ -142,7 +142,7 @@ include 'inc-session-start.php';
                             </ul>
                         </li>
                         <li>
-                            <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>
+                            <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a><span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating36" >СТЕКЛО, ЗЕРКАЛО</a>
                                 </li>
@@ -157,7 +157,7 @@ include 'inc-session-start.php';
                             </ul>
                         </li>
                         <li>
-                            <a href="#literatura-gost">ЛИТЕРАТУРА</a >
+                            <a href="#literatura-gost">ЛИТЕРАТУРА</a ><span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a href="#floating41" >ГОСТ</a>
                                 </li>

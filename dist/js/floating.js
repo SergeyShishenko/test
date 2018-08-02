@@ -55,7 +55,7 @@ function onScrollI(){
         //  скрываем, или отображаем все элементы <div>
         // alert();
         
-        
+        $('.dropdown-menu').not($(this).parent().find('.dropdown-menu')).hide(); 
          $(this).parent().find('.dropdown-menu').toggle(); 
         //   $(this).parent().click(function (event) { event.preventDefault();  });
         //  $(this).click(function (event) {event.preventDefault(); });
