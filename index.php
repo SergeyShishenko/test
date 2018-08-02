@@ -58,7 +58,7 @@ include 'inc-session-start.php';
 
                     <ul class="nav navbar-nav " id="navmain">
                         <li>
-                            <a href="#detali-profili">ДЕТАЛИ</a> 
+                            <a href="#detali-profili">ДЕТАЛИ </a> <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating8" >ПРОФИЛИ ГЛАДКИЕ</a>
                                 </li>

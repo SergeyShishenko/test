@@ -8,6 +8,18 @@ body {
   
 }
 
+li > span.caret { 
+  color:rgb(177, 173, 173);;
+  float:right;
+  margin-top: -26px;
+  margin-right: 4px;
+  z-index: 1000;
+  position: relative;  
+  cursor: pointer;
+}
+li > span.caret:hover {
+ color: #fff;
+}
 div.btn-side:hover{z-index:1000 !important;}
 .center{  
   display: block; 
@@ -1282,13 +1294,20 @@ h6{font-size: 8px !important;}
 
 ul.search_result {  max-width: 240px !important;  margin-left: -150px !important;}
 .search_result a {font-size: 8px !important;}
-.nav{max-height: 250px;
+.nav{max-height: 200px;
      overflow: overlay;
      /* margin-bottom: 40px; */
     }
 
     div.overlay > a.btn {font-size: 9px !important;padding: 2px 2px;}
     .overlay a:not(:first-child) {  margin-left: 2px; }
+
+    li > span.caret { 
+        margin-right: 8px;
+        border-top: 8px solid;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+    }
 
 }/*@media (max-width: 992px)*/
 

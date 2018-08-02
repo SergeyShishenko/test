@@ -24,6 +24,7 @@ function onScrollI(){
 	var scroll_top = $(document).scrollTop();
 	$(menu_selectorI + " a").not("ul.dropdown-menu li a").each(function(){
         var hash = $(this).attr("href");
+        
         // alert(hash);
         var target = $(hash);
         
@@ -39,17 +40,30 @@ function onScrollI(){
 });
 
 
-jQuery('ul.nav > li').hover(function() {
-    3.
-    jQuery(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn();
-    4.
-    }, function() {
-    5.
-    jQuery(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut();
-    6.
-    });
+// jQuery('#navmain > li > a > b.caret').hover(function() {
+//     //  alert(jQuery(this).parent());
+    
+//     jQuery(this).parent().parent().find('.dropdown-menu').stop(true, true).delay(100).fadeIn();
+   
+//     }, function() {
+  
+//     jQuery(this).parent().parent().find('.dropdown-menu').stop(true, true).delay(100).fadeOut();
+  
+//     });
 
-//$(document).on("scroll", onScroll);&&&&&&&&?????????????????????????
+    $( '#navmain > li > span.caret').click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
+        //  скрываем, или отображаем все элементы <div>
+        // alert();
+        
+        
+         $(this).parent().find('.dropdown-menu').toggle(); 
+        //   $(this).parent().click(function (event) { event.preventDefault();  });
+        //  $(this).click(function (event) {event.preventDefault(); });
+         
+      });
+
+
+
 
 
 
