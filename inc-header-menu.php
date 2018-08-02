@@ -96,6 +96,13 @@
         <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
         </button>
     </div>
+    <div  style="position:fixed; left:0; top:220px;" class="btn-side">
+    <!-- Button trigger modal -->
+    
+    <button type="button" class="btn btn-default center" onclick="location.href=\'index.php\';" title="Выйти">  
+    <span class="glyphicon glyphicon-home" ></span>
+    </button>
+</div>
 ';
 include 'inc-header-send-modal.php';
 ?>

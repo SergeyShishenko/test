@@ -57,6 +57,8 @@ function onScrollI(){
         
         $('.dropdown-menu').not($(this).parent().find('.dropdown-menu')).hide(); 
          $(this).parent().find('.dropdown-menu').toggle(); 
+         var nv =parseInt($("#navmain").css('height').replace("px", "")) + 0;
+         console.log(nv);
         //   $(this).parent().click(function (event) { event.preventDefault();  });
         //  $(this).click(function (event) {event.preventDefault(); });
          
@@ -2736,33 +2738,33 @@ $(function(){
     });
   });
   ///
-  $(function(){
-    var num = 154;  
-    var floating ='#floating' + num;
-    var footer     ='#footer'  + num;
-    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+//   $(function(){
+//     var num = 154;  
+//     var floating ='#floating' + num;
+//     var footer     ='#footer'  + num;
+//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-    $(window).scroll(function() { 
-    var top = $(document).scrollTop(), // число прокрутки
-        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-        height = $(floating).outerHeight(); // высота блока-f
-    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-    else {$(floating).removeClass('fixed-div');}
-    });
-  });
-  $(function(){
-    var num = 155;  
-    var floating ='#floating' + num;
-    var footer     ='#footer'  + num;
-    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+//     $(window).scroll(function() { 
+//     var top = $(document).scrollTop(), // число прокрутки
+//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+//         height = $(floating).outerHeight(); // высота блока-f
+//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+//     else {$(floating).removeClass('fixed-div');}
+//     });
+//   });
+//   $(function(){
+//     var num = 155;  
+//     var floating ='#floating' + num;
+//     var footer     ='#footer'  + num;
+//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-    $(window).scroll(function() { 
-    var top = $(document).scrollTop(), // число прокрутки
-        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-        height = $(floating).outerHeight(); // высота блока-f
-    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-    else {$(floating).removeClass('fixed-div');}
-    });
-  });
+//     $(window).scroll(function() { 
+//     var top = $(document).scrollTop(), // число прокрутки
+//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+//         height = $(floating).outerHeight(); // высота блока-f
+//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+//     else {$(floating).removeClass('fixed-div');}
+//     });
+//   });
