@@ -17,7 +17,12 @@
                         <div>
                             <textarea id="message" class="form-control" style="width: 100%;" rows="5" name="message" placeholder="Введите сообщение"
                                 required></textarea>
+                                <br>
+                                <label for="Email"  style=" margin-top: 20px;font-weight: normal;padding-left: 15px;">Обратная связь (не обязательно) </label>
+                                <input type="email" class="form-control" style="width: 100%;" id="Email" name="Email"  placeholder="Email">
+                                <br>
                         </div>
+                        
                     </div>
                     <div class="modal-footer">
                         <button type="submit" id="submit" class="btn btn-primary " style="float:left;">Отправить</button>

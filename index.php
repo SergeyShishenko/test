@@ -30,7 +30,7 @@ include 'inc-session-start.php';
  /* * {
   pointer-events: none;
 }  */
-.modal-open{overflow:auto;}
+/* .modal-open{overflow:auto;} */
 </style>
 
    
