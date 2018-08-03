@@ -85,7 +85,7 @@
     <div  style="position:fixed; left:0; top:150px; " class="btn-side">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
-            <span class=" glyphicon glyphicon-envelope" style="color: #46b8da; "></span>
+            <span class=" glyphicon glyphicon-envelope" ></span>
         </button>
        
     </div>
@@ -99,7 +99,7 @@
     <div  style="position:fixed; left:0; top:220px;" class="btn-side">
     <!-- Button trigger modal -->
     
-    <button type="button" class="btn btn-default center" onclick="location.href=\'index.php\';" title="Выйти">  
+    <button type="button" class="btn btn-default center" onclick="location.href=\'index.php\';" title="Карта сайта">  
     <span class="glyphicon glyphicon-home" ></span>
     </button>
 </div>

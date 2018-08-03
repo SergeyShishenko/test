@@ -9,6 +9,8 @@ body {
 }
 .modal-open{overflow:auto;}/* чтобы не дергалось окно */
 
+
+
 li > span.caret { 
   color:rgb(177, 173, 173);;
   float:right;
@@ -1295,10 +1297,23 @@ h6{font-size: 8px !important;}
 
 ul.search_result {  max-width: 240px !important;  margin-left: -150px !important;}
 .search_result a {font-size: 8px !important;}
-.nav{max-height: 200px;
-     overflow-y: scroll;
+/* .navbar-collapse{
+  overflow:hidden;
+  max-height: 200px;
+   width: 100%;
+   margin-right: -30px; 
+} */
+.navbar-collapse.in {
+  /* overflow-y: auto; */
+  overflow: unset;
+}
+
+/* .nav{ */
+  /* max-height: 200px; */
+     /* overflow-y: hidden; */
      /* margin-bottom: 40px; */
-    }
+     /* width: 230px; */
+    /* } */
 
     div.overlay > a.btn {font-size: 9px !important;padding: 2px 2px;}
     .overlay a:not(:first-child) {  margin-left: 2px; }

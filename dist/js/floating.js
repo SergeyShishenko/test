@@ -57,11 +57,18 @@ function onScrollI(){
         
         $('.dropdown-menu').not($(this).parent().find('.dropdown-menu')).hide(); 
          $(this).parent().find('.dropdown-menu').toggle(); 
+          console.log('background '+$(this).parent().find('a').hasClass("active"));//rgba(0, 0, 0, 0)
+          // добавить класс hover
+         if ($(this).css('background-color')=='rgba(0, 0, 0, 0)')
+         {$(this).parent().css('background-color','rgb(66, 139, 202)');}
+        //  else if ($(this).css('background-color')!=='rgb(28, 93, 160);')
+       
+        //  $(this).parent().css('background','rgb(66, 139, 202)');
          var nv =parseInt($("#navmain").css('height').replace("px", "")) + 0;
          console.log(nv);
         //   $(this).parent().click(function (event) { event.preventDefault();  });
         //  $(this).click(function (event) {event.preventDefault(); });
-         
+       
       });
 
 
