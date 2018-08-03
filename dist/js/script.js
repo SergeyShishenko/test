@@ -1,15 +1,36 @@
 
 
 window.onresize = function(){ getPositionSearch();nvfn(); };
+var mainpage=51;
+
+
 
 function getPositionSearch(){
-        var w = getClientWidth();// текущая ширина экрана                
+
+        var w = getClientWidth();// текущая ширина экрана 
+        var zbz = $('.zbz-input-clearable').css('width').replace("px", "") //ширина input     
+        switch (true) { // Постоянное значение true вместо w
+            // case w >= 0 && w <= 3:
+            case w >= 0 && w <= 1800:
+                mainpage= 15 - zbz;
+                break;
+                case w > 1800:
+                mainpage= 41 - zbz;
+                break;
+            default:
+                mainpage=51;
+        }
+          
+
+console.log('mainpage '+ mainpage);        
         // var c= $('div.container').css('width');
         var pos = $( '#main-page' ).position().left;
         var c= $('#main-page').css('width');
         console.log('position '+pos);
         console.log('width '+c);
-         c = c.replace("px", "")-51; // -21 удалить латинские символы 
+        console.log('текущая ширина экрана '+ w);
+        console.log('zbz '+ zbz);
+         c = c.replace("px", "")-mainpage; // -21 удалить латинские символы 
         //   с= pos + с;
         // console.log(c);       
         // c=(w-c)/2+5;
@@ -35,11 +56,23 @@ function getClientWidth(){
 
  $( document ).ready(function() {
     $(function getPositionSearch(){
-        var w = getClientWidth();// текущая ширина экрана                
+        var w = getClientWidth();// текущая ширина экрана  
+        var zbz = $('.zbz-input-clearable').css('width').replace("px", "") //ширина input     
+        switch (true) { // Постоянное значение true вместо w
+            // case w >= 0 && w <= 3:
+            case w >= 0 && w <= 1800:
+                mainpage= 15 - zbz;
+                break;
+                case w > 1800:
+                mainpage= 41 - zbz;
+                break;
+            default:
+                mainpage=51;
+        }             
         // var c= $('div.container').css('width');
         var pos = $( '#main-page' ).position().left;
         var c= $('#main-page').css('width');
-        c = c.replace("px", "")-51; // -21удалить латинские символы 
+        c = c.replace("px", "")-mainpage; // -21удалить латинские символы 
         // console.log(pos);
         console.log(c); 
          $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
