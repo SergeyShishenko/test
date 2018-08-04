@@ -53,27 +53,76 @@ function onScrollI(){
 
     $( '#navmain > li > span.caret').click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
         //  скрываем, или отображаем все элементы <div>
-        // alert();
-        
+       
         $('.dropdown-menu').not($(this).parent().find('.dropdown-menu')).hide(); 
          $(this).parent().find('.dropdown-menu').toggle(); 
-          console.log('background '+$(this).parent().find('a').hasClass("active"));//rgba(0, 0, 0, 0)
+        //   console.log('background '+$(this).parent().find('a').hasClass("active"));//rgba(0, 0, 0, 0)
           // добавить класс hover
-         if ($(this).css('background-color')=='rgba(0, 0, 0, 0)')
-         {$(this).parent().css('background-color','rgb(66, 139, 202)');}
-        //  else if ($(this).css('background-color')!=='rgb(28, 93, 160);')
-       
-        //  $(this).parent().css('background','rgb(66, 139, 202)');
+          if (!($(this).parent().find('a').hasClass("active"))){$(this).parent().toggleClass('click-hover');}
+        
          var nv =parseInt($("#navmain").css('height').replace("px", "")) + 0;
-         console.log(nv);
-        //   $(this).parent().click(function (event) { event.preventDefault();  });
-        //  $(this).click(function (event) {event.preventDefault(); });
+         console.log('#navmain height '+nv);
+         console.log('margin-top '+$("#navmain").css('margin-top'));
        
+         console.log('.parent()a:last-child '+$("#navmain").children().length); // пункты меню
+         console.log('.parent()a:last-child height  '+$("#navmain").children(':last-child').find('a').css('height')); // последний пункт меню
+         console.log($(this).parent().find('a').html()); // пункт меню - ДЕТАЛИ 
+        //  console.log($(this).parent().parent().html()); // пункт меню - 
+       
+         console.log(':last-child height '+$(this).parent().find('li:last-child').text());// подпункты меню - ПАЗЫ
+         
+        //  #navmain
       });
 
 
 
-
+    //   .navbar-collapse.in 
+ // прокрутка меню
+ var indexnavmain = 0;
+    $('#navmain').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){   
+        var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;    
+        var UlSubMenu = $(this ).children();
+        var child1 =UlSubMenu.length;
+        var margintopUl = parseInt($(this ).css('margin-top'));
+        
+        var UlSubMenuHeight = $(this ).css('height');
+        //  var triangle =$('#triangle2').data('top');
+        // console.log('triangle ' + triangle);
+        console.log('index ' + indexnavmain);
+        console.log('UlSubMenuHeight ' + UlSubMenuHeight);
+        console.log('child1 ' + child1);
+        console.log('UlSubMenu[] ' + UlSubMenu.eq(child1-1).css('height'));
+        console.log('margin-top ' + $(this ).css('margin-top'));
+        console.log('height ' + $(this ).css('height'));
+        e.preventDefault(); 
+                if (indexnavmain >= 0 && indexnavmain <= 5){ 
+                        if(dy > 0) { 
+                        
+                            // $(this ).css('margin-top', margintopUl-40);
+                            UlSubMenu.eq(indexnavmain).css("display", "none");
+                            if (indexnavmain < 5 ){ 
+                            indexnavmain =indexnavmain +1;
+                            }
+                            console.log('index ' + indexnavmain);
+                                    e.preventDefault();      
+                                }
+                        else{ 
+                            
+                            
+                            // $(this ).css('margin-top', margintopUl+40);
+                            UlSubMenu.eq(indexnavmain).css("display", "block");
+                              if (indexnavmain > 0 ){ 
+                               indexnavmain = indexnavmain -1;
+                              }
+                            console.log('index ' + indexnavmain);
+                            e.preventDefault();  
+                            
+                                
+                        }
+                }
+                else{console.log('indexnavmain ' + indexnavmain);}
+            
+        });
 
 
 

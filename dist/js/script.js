@@ -8,7 +8,7 @@ var mainpage=51;
 function getPositionSearch(){
 
         var w = getClientWidth();// текущая ширина экрана 
-        var zbz = $('.zbz-input-clearable').css('width').replace("px", "") //ширина input     
+        var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
         switch (true) { // Постоянное значение true вместо w
             // case w >= 0 && w <= 3:
             case w >= 0 && w <= 1800:
@@ -57,7 +57,7 @@ function getClientWidth(){
  $( document ).ready(function() {
     $(function getPositionSearch(){
         var w = getClientWidth();// текущая ширина экрана  
-        var zbz = $('.zbz-input-clearable').css('width').replace("px", "") //ширина input     
+        var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
         switch (true) { // Постоянное значение true вместо w
             // case w >= 0 && w <= 3:
             case w >= 0 && w <= 1800:

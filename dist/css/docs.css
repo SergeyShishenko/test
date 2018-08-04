@@ -9,7 +9,7 @@ body {
 }
 .modal-open{overflow:auto;}/* чтобы не дергалось окно */
 
-
+.click-hover{background-color:rgb(66, 139, 202);}
 
 li > span.caret { 
   color:rgb(177, 173, 173);;
