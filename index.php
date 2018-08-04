@@ -5523,8 +5523,8 @@ include 'inc-session-start.php';
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script>
     <script src="./dist/js/application.js"></script> 
-    <script src="./dist/js/script.js?v=12"></script>   
-    <script src="./dist/js/floating.js?v=5"></script> 
+    <script src="./dist/js/script.js?v=13"></script>   
+    <script src="./dist/js/floating.js?v=6"></script> 
    
     <!-- <script src="./dist/js/jquery.color.js"></script>  -->
     <!-- <script>
