@@ -11,6 +11,9 @@ function getPositionSearch(){
         var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
         switch (true) { // Постоянное значение true вместо w
             // case w >= 0 && w <= 3:
+            // case w >= 0 && w <= 992:
+            //     mainpage= 15 - zbz;
+            //     break;
             case w >= 0 && w <= 1800:
                 mainpage= 15 - zbz;
                 break;

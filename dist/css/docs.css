@@ -1291,8 +1291,15 @@ h5{font-size: 9px !important;}
 h6{font-size: 8px !important;}
 
 .zbz-input-clearable {width: 160px;}
-  .glyphicon-search{ margin-right: -140px;
-                     padding-left: 28px;
+.navbar-form.navbar-right:last-child {
+  /* margin-top: -42px; */
+  margin-left: -200px;
+  /* padding-left: 28px; */
+}
+  .glyphicon-search{
+     /* margin-right: -140px; */
+     margin-right: -140px;
+      padding-left: 28px;
                      }
 
 ul.search_result {  max-width: 240px !important;  margin-left: -150px !important;}

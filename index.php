@@ -40,7 +40,7 @@ include 'inc-session-start.php';
     <header class="navbar navbar-inverse navbar-fixed-top"  >
 
         <div class="container">
-
+  
             <!-- Static navbar -->
             <div class="navbar navbar-inverse " role="navigation">
                 <div class="navbar-header">
@@ -53,6 +53,7 @@ include 'inc-session-start.php';
                 <a class="navbar-brand" href="#detali-profili">500.СТП</a >
                 </div>
                 <!--.nav-collapse -->
+                
 
                 <div class="navbar-collapse collapse top-menu">
 
@@ -174,7 +175,7 @@ include 'inc-session-start.php';
                     </ul>   
                 </div>
                 
-                <div class="navbar-form navbar-right navbar-collapse collapse " id="search">
+                <div class="navbar-form navbar-right  " id="search">
                     <div class="form-group">                                
                         <span class="glyphicon glyphicon-search zbz"></span><input type="text" class="form-control who zbz-input-clearable" placeholder="Поиск">                               
                     </div>                            
@@ -188,7 +189,7 @@ include 'inc-session-start.php';
     <div  style="position:fixed; left:0; top:150px; " class="btn-side">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
-            <span class=" glyphicon glyphicon-envelope" style="color: #46b8da; "></span>
+            <span class=" glyphicon glyphicon-envelope" ></span>
         </button>
     </div>
     <div  style="position:fixed; left:0; top:185px;" class="btn-side">
@@ -220,7 +221,7 @@ include 'inc-session-start.php';
 
                 <div id="hovertitle"></div>
                 
-                <TABLE ID="maintable"> <!-- main  LEVEL0 -->
+                <TABLE ID="maintable" > <!-- main  LEVEL0 -->
                     <!-- ДЕТАЛИ -->                  
                     <TR id="detali-profili">
                         <TD  data-tooltip="ДЕТАЛИ" class="hover mapsite first-main" >
