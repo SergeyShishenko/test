@@ -58,33 +58,36 @@ function getClientWidth(){
   
 
  $( document ).ready(function() {
-    $(function getPositionSearch(){
-        var w = getClientWidth();// текущая ширина экрана  
-        var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
-        switch (true) { // Постоянное значение true вместо w
-            // case w >= 0 && w <= 3:
-            case w >= 0 && w <= 1800:
-                mainpage= 15 - zbz;
-                break;
-                case w > 1800:
-                mainpage= 41 - zbz;
-                break;
-            default:
-                mainpage=51;
-        }             
-        // var c= $('div.container').css('width');
-        var pos = $( '#main-page' ).position().left;
-        var c= $('#main-page').css('width');
-        c = c.replace("px", "")-mainpage; // -21удалить латинские символы 
-        // console.log(pos);
-        console.log(c); 
-         $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
-         $('.zbz-input-clearable').css({'visibility': 'visible'});
-         $('span.zbz').css('visibility','visible');
-        //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
-        // проверка input search
-      if($('input.who').val() !== ""){$('span.zbz').css('visibility','hidden');  }
-     });
+    getPositionSearch();
+    // $(function getPositionSearch(){
+    //     var w = getClientWidth();// текущая ширина экрана  
+    //     var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
+    //     switch (true) { // Постоянное значение true вместо w
+    //         // case w >= 0 && w <= 3:
+    //         case w >= 0 && w <= 1800:
+    //             mainpage= 15 - zbz;
+    //             break;
+    //             case w > 1800:
+    //             mainpage= 41 - zbz;
+    //             break;
+    //         default:
+    //             mainpage=51;
+    //     }             
+    //     // var c= $('div.container').css('width');
+    //     var pos = $( '#main-page' ).position().left;
+    //     var c= $('#main-page').css('width');
+    //     c = c.replace("px", "")-mainpage; // -21удалить латинские символы 
+    //     // console.log(pos);
+    //     console.log(c); 
+    //      $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
+    //      $('.zbz-input-clearable').css({'visibility': 'visible'});
+    //      $('span.zbz').css('visibility','visible');
+    //     //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
+    //     // проверка input search
+    //   if($('input.who').val() !== ""){$('span.zbz').css('visibility','hidden');  }
+    //  });
+
+
      getClientWidth();
 
 
@@ -359,7 +362,7 @@ $(function() {
            else
            { aimg = "./dist/images/no-foto.png";        
            }   
-           $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + "</a></li>"  );         
+           $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  >' + result + "</a></li>"  );         
         }
       });
     }

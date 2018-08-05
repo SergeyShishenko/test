@@ -21,7 +21,7 @@ include 'inc-session-start.php';
     <meta name="yandex-verification" content="07a17e6c1df2c2b2" />
     <title>500.СТП</title>
     <link href="./dist/css/bootstrap.css" rel="stylesheet">
-    <link href="./dist/css/docs.css?v=6" rel="stylesheet">
+    <link href="./dist/css/docs.css?v=7" rel="stylesheet">
     <link href="./dist/css/grid.css?v=3" rel="stylesheet">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
    
@@ -5524,7 +5524,7 @@ include 'inc-session-start.php';
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script>
     <script src="./dist/js/application.js"></script> 
-    <script src="./dist/js/script.js?v=13"></script>   
+    <script src="./dist/js/script.js?v=14"></script>   
     <script src="./dist/js/floating.js?v=6"></script> 
    
     <!-- <script src="./dist/js/jquery.color.js"></script>  -->

@@ -40,6 +40,53 @@ function onScrollI(){
 });
 
 
+
+
+
+function getPositionSearch(){
+
+    var w = getClientWidth();// текущая ширина экрана 
+    var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input   
+    mainpage= 25;
+    
+    switch (true) { // Постоянное значение true вместо w
+        // case w >= 0 && w <= 3:
+        case w >= 0 && w <= 992:
+            mainpage= 15 - zbz;
+            break;
+        case w >= 993 && w <= 1800:
+            mainpage= 25;
+            break;
+            case w > 1800:
+            mainpage= 41 - zbz;
+            break;
+        default:
+            mainpage=51;
+    }
+      
+
+console.log('mainpage '+ mainpage);        
+    // var c= $('div.container').css('width');
+    var pos = $( '#main-page' ).position().left;
+    var c= $('#main-page').css('width');
+    console.log('position '+pos);
+    console.log('width '+c);
+    console.log('текущая ширина экрана '+ w);
+    console.log('zbz '+ zbz);
+     c = c.replace("px", "")-mainpage; // -21 удалить латинские символы 
+    //   с= pos + с;
+    // console.log(c);       
+    // c=(w-c)/2+5;
+    //    console.log(c);
+     $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
+     $('.zbz-input-clearable').css({'visibility': 'visible'});
+     $('span.zbz').css('visibility','visible');
+     if($('input.who').val() !== ""){$('span.zbz').css('visibility','hidden');  }
+    
+    //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
+ }
+
+
 // jQuery('#navmain > li > a > b.caret').hover(function() {
 //     //  alert(jQuery(this).parent());
     
