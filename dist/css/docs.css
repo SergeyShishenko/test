@@ -1350,7 +1350,7 @@ h6,
 }
 
 
-
+/* !!!точка переключения navbar!!! */
 @media (max-width: 1023px) {
   .navbar-header {
     float: none;
@@ -1372,6 +1372,9 @@ h6,
   }
   .navbar-collapse.collapse {
     display: none  !important;
+}
+.nav > li > a {  
+  font-size: 14px;
 }
 }
 
