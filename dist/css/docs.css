@@ -90,7 +90,9 @@ a[title]:hover{cursor: help}
   color: #34789a;
 } */
 /* span .glyphicon-search{margin-left: 10px;} */
-.glyphicon-search{color: #34789a;     margin-right:-205px; }
+.glyphicon-search{color: #34789a; 
+      /* margin-right:-205px;  */
+    }
 /* div.navbar-collapse.collapse.top-menu{height: 51px !important;;} */
 .row {
   margin-right: 0; 
@@ -786,13 +788,21 @@ a.navbar-brand{text-align: center;}
   .img-album {height:640px;} */
   .img-book {height:1280px !important;}
   .img-album {height:640px !important;}
-
+  /* .glyphicon-search{   margin-right:-205px; } */
   ul.search_result {   
     max-width: 1195px !important;    
     margin-left: -1170px !important;
   }
   h1 {  font-size: 36px;}
   h2 {  font-size: 30px;
+
+}
+
+/* .zbz-input-clearable {width: 213px;} */
+.navbar-form.navbar-right:last-child {
+  /* margin-top: -42px; */
+  margin-left: -25px;
+  /* padding-left: 28px; */
 }
 }
  
@@ -1348,6 +1358,8 @@ h6,
   display: none;
 } */
 }
+
+
 
 
 /* !!!точка переключения navbar!!! */

@@ -14,10 +14,10 @@ function getPositionSearch(){
             // case w >= 0 && w <= 992:
             //     mainpage= 15 - zbz;
             //     break;
-            case w >= 0 && w <= 1800:
+            case w >= 0 && w <= 1920:
                 mainpage= 15 - zbz;
                 break;
-                case w > 1800:
+                case w > 1920:
                 mainpage= 41 - zbz;
                 break;
             default:
