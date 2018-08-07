@@ -1,5 +1,6 @@
 <?php
 include 'inc-session-start.php'; 
+include 'inc-version-css-js.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">
@@ -21,8 +22,8 @@ include 'inc-session-start.php';
     <meta name="yandex-verification" content="07a17e6c1df2c2b2" />
     <title>500.СТП</title>
     <link href="./dist/css/bootstrap.css" rel="stylesheet">
-    <link href="./dist/css/docs.css?v=7" rel="stylesheet">
-    <link href="./dist/css/grid.css?v=3" rel="stylesheet">
+    <link href="./dist/css/docs.css?v=<?php echo $docsVersion; ?>" rel="stylesheet">
+    <link href="./dist/css/grid.css?v=<?php echo $gridVersion; ?>" rel="stylesheet">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
    
 <style>
@@ -5524,8 +5525,8 @@ include 'inc-session-start.php';
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script>
     <script src="./dist/js/application.js"></script> 
-    <script src="./dist/js/script.js?v=14"></script>   
-    <script src="./dist/js/floating.js?v=6"></script> 
+    <script src="./dist/js/script.js?v=<?php echo $scriptVersion; ?>"></script>   
+    <script src="./dist/js/floating.js?v=<?php echo $floatingVersion; ?>"></script> 
    
     <!-- <script src="./dist/js/jquery.color.js"></script>  -->
     <!-- <script>
