@@ -314,7 +314,7 @@ $(function() {
 
 
 // $(function(){
-    $('[data-href*=".php"]').not(":contains(???)").each(function(){
+    $('[data-href*=".php"],[data-href^="http"],[onclick]').not(":contains(???)").each(function(){
         // выведем содержимое текущего элемента в консоль
         // console.log($(this).parent().text());
         $(this).parent().css( "color", "Blue" );

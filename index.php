@@ -195,7 +195,7 @@ include 'inc-version-css-js.php';
     </div>
     <div  style="position:fixed; left:0; top:185px;" class="btn-side">
         <!-- Button trigger modal -->        
-        <button type="button" class="btn btn-default center " onclick="location.href=\'exit.php\';" title="Выйти">  
+        <button type="button" class="btn btn-default center " onclick="location.href='exit.php';" title="Выйти">  
         <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
         </button>
     </div>
@@ -5490,7 +5490,9 @@ include 'inc-version-css-js.php';
                                                             <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                             <TR>
                                                                 <TD data-tooltip="сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART" class="hover mapsite" colspan="2">
-                                                                    <p data-href="#rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon" data-img="./dist/images/no-foto.png">рекомендации по выбору и устройству современных конструкций окон<span><br>~rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon</span></p>
+                                                                <!-- <p data-href="#rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon" data-img="./dist/images/no-foto.png">рекомендации по выбору и устройству современных конструкций окон<span><br>~rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon</span></p>   -->
+                                                                <p data-href="https://yadi.sk/i/Ikj5Zcxh3ZyMJX"  data-img="./dist/images/no-foto.png">рекомендации по выбору и устройству современных конструкций окон<span><br>~rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon</span></p>
+                                                                    
                                                                 </TD>                                                         
                                                             </TR> 
                                                         </TABLE>
@@ -5519,7 +5521,7 @@ include 'inc-version-css-js.php';
         <div class="container">
             <p class="text-center">Сайт был создан проектным подразделением компании "София-Декор" <a href="http://www.sofia-decor.ru">(http://www.sofia-decor.ru)</a> под руководством Черкашина Д.В.</p>
             <p class="text-center">Разработчик: Шишенко С.В. </p>
-            <p><button type="button" class="btn btn-default center" onclick="location.href='exit.php';">  <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Выйти</button></p>
+            <!-- <p><button type="button" class="btn btn-default center" onclick="location.href='exit.php';">  <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Выйти</button></p> -->
         </div>
     </footer> 
     <script src="./dist/js/jquery.min.js"></script>
