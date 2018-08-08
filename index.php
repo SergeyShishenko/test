@@ -5491,7 +5491,7 @@ include 'inc-version-css-js.php';
                                                             <TR>
                                                                 <TD data-tooltip="сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART" class="hover mapsite" colspan="2">
                                                                 <!-- <p data-href="#rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon" data-img="./dist/images/no-foto.png">рекомендации по выбору и устройству современных конструкций окон<span><br>~rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon</span></p>   -->
-                                                                <p data-href="https://yadi.sk/i/Ikj5Zcxh3ZyMJX"  data-img="./dist/images/no-foto.png">рекомендации по выбору и устройству современных конструкций окон<span><br>~rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon</span></p>
+                                                                <p data-href="https://yadi.sk/i/Ikj5Zcxh3ZyMJX" data-link="_blank" data-img="./dist/images/no-foto.png">рекомендации по выбору и устройству современных конструкций окон<span><br>~rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon</span></p>
                                                                     
                                                                 </TD>                                                         
                                                             </TR> 

@@ -732,7 +732,7 @@ a.navbar-brand{text-align: center;}
    padding-left: 20px !important;
   }
   body{
-    font-size: 11.8px !important;
+    font-size: 14px !important;
   }
   .menu2 .list-group-item,.menu2 .list-group,.menu .list-group{
     width: 420PX !important;/*ширина submenu*/   
@@ -1270,7 +1270,7 @@ h6,
   /* .bs-sidebar.affix {
     position: relative;
 } */
-@media (min-width: 200px){
+@media (min-width: 200px)and (max-width: 992px){
   body {
 
     font-size: 9px !important;
@@ -1281,10 +1281,10 @@ h6,
     padding: 10px 10px !important;
     font-size: 10px !important;
    }
-   .bs-sidebar.affix-bottom,
+   /* .bs-sidebar.affix-bottom,
 .bs-sidebar.affix {
   width: 150px !important;
-}
+} */
 }
 
  @media (min-width: 200px) and (max-width: 319px) {
@@ -1365,7 +1365,7 @@ h6,
 .search_result a { 
   padding-right: 25px !important;
 }
-.nav > li > a {
+.nav > li > a, a.list-group-item  {
   /* position: relative;
   display: block;
   padding: 10px 15px; */

@@ -4,17 +4,24 @@ $('table td').on('click', function () {
     // alert(this.innerHTML);
     // var ref = $(this).find('p').data('href'); 
     var ref = $(this).find(':first-child').data('href'); 
-    if(typeof ref != "undefined" && ref != null)
+
+    var Blank = $(this).find(':first-child').attr("data-link");
+    // var _urlTemp = _$this.attr("data-url");
+    if (Blank === "_blank") {
+      window.open(ref, '_blank');
+    } else {
+        if(typeof ref != "undefined" && ref != null)
     
-    {  
-        // alert(ref);
-        window.location=ref;
+        {  
+            // alert(ref);
+            window.location=ref;
+       
+        }
+
+     }
+
+
    
-    }
-else  
-    {
-    //    alert("Ссылка не прикреплена");
-    }
     
     });
     // index.html
