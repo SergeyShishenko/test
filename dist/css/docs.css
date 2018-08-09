@@ -1260,12 +1260,12 @@ h6,
 
 /* !!!!!!!!!! #navsub.bs-sidebar }*/
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   
    /* .bs-sidebar.affix{display: none;} */
    #navsub.bs-sidebar {
-   width: 213px !important;
-   left:42px;
+   width: 150px !important;
+   left:-500px;
 }
 .menu2 .list-group-item, .menu2 .list-group, .menu .list-group{width:213px !important;}
 a.list-group-item {
@@ -1279,13 +1279,19 @@ a.list-group-item {font-size: 9px !important;}
 
   left: 213PX !important;
 }
+/* div.btn-side.left-menu{left:0px   !important;} */
+
 }
+
+.click-lef-tmenu {left:42px !important;}
+.click-lef-tmenu-in{left:0px   !important;}
+
 
 @media (min-width: 992px) {
   /* .container {
     width: 970px;
   } */
-
+div.btn-side.left-menu{left:-50px  !important;}
   /* .bs-sidebar.affix{display: none;} */
   .col-md-8-non {
     width: 67.3%; 

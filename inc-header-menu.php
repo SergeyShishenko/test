@@ -99,10 +99,17 @@
     <div  style="position:fixed; left:0; top:220px;" class="btn-side">
     <!-- Button trigger modal -->
     
-    <button type="button" class="btn btn-default center" onclick="location.href=\'index.php\';" title="Карта сайта">  
-    <span class="glyphicon glyphicon-home" ></span>
-    </button>
-</div>
+        <button type="button" class="btn btn-default center" onclick="location.href=\'index.php\';" title="Карта сайта">  
+        <span class="glyphicon glyphicon-home" ></span>
+        </button>
+    </div>
+    <div  style="position:fixed; left:0; top:255px;" class="btn-side left-menu">
+    <!-- Button trigger modal -->
+    
+        <button type="button" class="btn btn-default center "  title="Левое меню">  
+        <span class="glyphicon glyphicon-list" ></span>
+        </button>
+    </div>
 ';
 include 'inc-header-send-modal.php';
 ?>

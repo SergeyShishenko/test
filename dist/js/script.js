@@ -4,10 +4,12 @@ window.onresize = function(){ getPositionSearch();nvfn(); };
 var mainpage=51;
 
 
-
 function getPositionSearch(){
 
         var w = getClientWidth();// текущая ширина экрана 
+        if (w>991)
+        {$("#navsub.bs-sidebar").removeClass('click-lef-tmenu');}
+
         var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
         switch (true) { // Постоянное значение true вместо w
             // case w >= 0 && w <= 3:
@@ -689,3 +691,9 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
     //  скрываем, или отображаем все элементы <div>
      $( ".navbar-form").toggle(); 
   });
+
+  $( ".left-menu" ).click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
+    //  скрываем, или отображаем все элементы <div>
+     $("#navsub.bs-sidebar").toggleClass('click-lef-tmenu' , 'click-lef-tmenu-in'); 
+  });
+//  #navsub.bs-sidebar .toggleClass('click-leftmenu');
