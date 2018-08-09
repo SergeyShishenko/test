@@ -101,7 +101,12 @@ $(function () {
     // $('#navsub  li.menu2 ul').hide();
     // $('#navsub  li.menu ul').hide();
     $('#navsub  li.menu').hover(
+
+        
+        
         function () {
+var w = getClientWidth();// текущая ширина экрана 
+        if (w>991){
             // delta2 = 0; // счетчик прокрутки колеса sub_menu2
            var colLeftMenu = $(this).parent().children().length; 
            var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -123,13 +128,15 @@ $(function () {
            var triangle = (child1-1)*40+11;
            if (child1>col){triangle = (col-1)*40+11;}
            $('head').append('<style id="triangle">.triangle::before{top:'+triangle+'px !important;}.triangle::after{top:'+triangle+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
+        }
         },
+        
         function () {
             $(this).find('ul.sub_menu').hide();   
             $(this).find('ul.sub_menu > li:nth-child(1)').removeClass('triangle');            
             $('#triangle').remove();      
         }
-    );
+    );//hover
 
     $('#navsub  li.menu2').hover(
         function () {

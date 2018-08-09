@@ -1264,7 +1264,7 @@ h6,
   
    /* .bs-sidebar.affix{display: none;} */
    #navsub.bs-sidebar {
-   width: 150px !important;
+   width: 213px !important;
    left:-500px;
 }
 .menu2 .list-group-item, .menu2 .list-group, .menu .list-group{width:213px !important;}
