@@ -272,7 +272,7 @@ $('#myModal').on('show.bs.modal', function (event) {
     // вывести эту информацию в элемент, имеющий id="content"
     $("body").css("overflow-y", "scroll");
     // html {   overflow-y: scroll;   }
-    $(this).css("margin-right", "-20px");
+    // $(this).css("margin-right", "-20px");
     $(this).find('#myModalLabel').text(content); 
    
     $(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
