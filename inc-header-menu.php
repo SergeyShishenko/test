@@ -70,14 +70,14 @@
             </div>
             <div class="modal-body full-screen">
                     <!-- <p id="content"></p> -->
-                <div id="im">
+                <div id="im" data-dismiss="modal">
                     <!-- <img src="./dist/images/mdf-nakladka-051-dsh.png" alt=""class="img-thumbnail " > -->
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+            <!-- <div class="modal-footer">-->
+            <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>-->
                 <!-- <a href="img.jpg" type="button" class="btn btn-primary"download="img.jpg">Save</a> -->
-            </div>
+                <!-- </div>-->
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div>
