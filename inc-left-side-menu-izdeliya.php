@@ -291,12 +291,10 @@
                         <ul class="list-group sub_menu">
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#potolki-kessonirovannye">ПОТОЛКИ КЕССОНИРОВАННЫЕ</a>
                                 <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    <li><a class="list-group-item sub" href="#potolki-kessony-tipovye">5000211-00_100 кессоны типовые</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>                                            
+                                    <li><a class="list-group-item sub" href="#potolki-potolok-kessonirovannyy">5000211-00_101 потолок кессонированный</a>
+                                    </li>                                                                             
                                 </ul>
                             </li>
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#sborochnye-shemy-potolki">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
@@ -315,9 +313,9 @@
                     <li class="menu">
                         <a href="izdeliya-lestnicy.php" class="list-group-item  '.$item_lestnicy_Class.'">ЛЕСТНИЦЫ</a>
                         <ul class="list-group sub_menu">
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-lestnicy.php#">КОНСТРУКЦИИ ЛЕСТНИЦ ТИПОВЫХ</a>
+                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-lestnicy.php#konstrukcii-lestnic-tipovyh">КОНСТРУКЦИИ ЛЕСТНИЦ ТИПОВЫХ</a>
                                 <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub" href="#">...</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-lestnicy.php#balyasiny-stolby">Балясины, Столбы </a>
                                     </li>
                                     <li><a class="list-group-item sub" href="#">...</a>
                                     </li>

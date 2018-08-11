@@ -51,7 +51,7 @@ include 'inc-version-css-js.php';
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#detali-profili">500.СТП</a >
+                <a class="navbar-brand" href="#">500.СТП</a >
                 </div>
                 <!--.nav-collapse -->
                 
@@ -2796,34 +2796,23 @@ include 'inc-version-css-js.php';
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="КОНСТРУКЦИИ ПОТОЛКОВ КЕССОНИРОВАННЫХ ТИПОВЫХ" class="hover mapsite" id="footer102" >
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating103">КОНСТРУКЦИИ ПОТОЛКОВ КЕССОНИРО<wbr>ВАННЫХ ТИПОВЫХ<span> <br>~-katalog-rezby</span></p>
+                                                                    <p data-img="./dist/images/no-foto.png" id="floating103" data-href="izdeliya-potolki.php#potolki-kessonirovannye">КОНСТРУКЦИИ ПОТОЛКОВ КЕССОНИРО<wbr>ВАННЫХ ТИПОВЫХ<span> <br>~konstrukcii-potolkov-kessonirovannyh-tipovyh</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <TD class="mapsite" colspan="2" id="flo-potolki-kessony-tipovye">                                                                            
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-potolki.php#potolki-kessony-tipovye">5000211-00_100 кессоны типовые<span> <br>~potolki-kessony-tipovye</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                            <TD class="mapsite" id="flo-potolki-potolok-kessonirovannyy">
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="izdeliya-potolki.php#potolki-potolok-kessonirovannyy">5000211-00_101 потолок кессонированный<span> <br>~potolki-potolok-kessonirovannyy</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                        <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
+                                                                               
                                                                     </TABLE>
                                                                 </TD>
                                                             </TR>
@@ -2873,13 +2862,13 @@ include 'inc-version-css-js.php';
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="КОНСТРУКЦИИ ЛЕСТНИЦ ТИПОВЫХ" class="hover mapsite" id="footer104" >
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating105">КОНСТРУКЦИИ ЛЕСТНИЦ ТИПОВЫХ<span> <br>~-katalog-rezby</span></p>
+                                                                    <p data-href="izdeliya-lestnicy.php#konstrukcii-lestnic-tipovyh" data-img="./dist/images/no-foto.png" id="floating105">КОНСТРУКЦИИ ЛЕСТНИЦ ТИПОВЫХ<span> <br>~konstrukcii-lestnic-tipovyh</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                            <TD class="mapsite" colspan="2" id="flo-balyasiny-stolby">                                                                            
+                                                                                <p data-img="./dist/images/balyasiny-stolby_1.png" data-href="izdeliya-lestnicy.php#balyasiny-stolby">Балясины, Столбы (лестницы)<span> <br>~balyasiny-stolby</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
