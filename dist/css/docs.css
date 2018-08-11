@@ -1304,7 +1304,7 @@ div.btn-side.left-menu{left:-50px  !important;}
 @media (min-width: 200px)and (max-width: 992px){
   body {
 
-    font-size: 9px !important;
+    font-size: 14px !important;
   
   }
   .list-group-item {
@@ -1326,7 +1326,7 @@ div.btn-side.left-menu{left:-50px  !important;}
    margin-left: -664px !important; */
   }
   #search > ul > li > a > img{   
-    height: 30px !important;
+    height: 80px !important;
   }
   #search > ul > li > a.flo {    
     padding-top: 10px !important;   
@@ -1348,7 +1348,7 @@ div.btn-side.left-menu{left:-50px  !important;}
     margin-left: -210px !important;
   }
   #search > ul > li > a > img{   
-    height: 40px !important;
+    height: 80px !important;
   }
   #search > ul > li > a.flo {    
     padding-top: 10px !important;   
@@ -1377,7 +1377,7 @@ div.btn-side.left-menu{left:-50px  !important;}
     margin-left: -368px !important;
   }
   #search > ul > li > a > img{   
-    height: 40px !important;
+    height: 80px !important;
   }
   #search > ul > li > a.flo {    
     padding-top: 10px !important;   
@@ -1404,7 +1404,7 @@ div.btn-side.left-menu{left:-50px  !important;}
     margin-left: -528px !important;
   }
   #search > ul > li > a > img{   
-    height: 50px !important;
+    height: 80px !important;
   }
   #search > ul > li > a.flo {    
     padding-top: 10px !important;   
@@ -1540,7 +1540,7 @@ h6{font-size: 8px !important;}
       padding-left: 28px;
                      }
 
-.search_result a {font-size: 8px !important;}
+.search_result a {font-size: 14px !important;}
 
 .navbar-collapse.in {
 

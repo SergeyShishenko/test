@@ -72,14 +72,14 @@ function getPositionSearch(){
     }
       
 
-console.log('mainpage '+ mainpage);        
+// console.log('mainpage '+ mainpage);        
     // var c= $('div.container').css('width');
     var pos = $( '#main-page' ).position().left;
     var c= $('#main-page').css('width');
-    console.log('position '+pos);
-    console.log('width '+c);
-    console.log('текущая ширина экрана '+ w);
-    console.log('zbz '+ zbz);
+    // console.log('position '+pos);
+    // console.log('width '+c);
+    // console.log('текущая ширина экрана '+ w);
+    // console.log('zbz '+ zbz);
      c = c.replace("px", "")-mainpage; // -21 удалить латинские символы 
     //   с= pos + с;
     // console.log(c);       
@@ -110,20 +110,20 @@ console.log('mainpage '+ mainpage);
        
         $('.dropdown-menu').not($(this).parent().find('.dropdown-menu')).hide(); 
          $(this).parent().find('.dropdown-menu').toggle(); 
-        //   console.log('background '+$(this).parent().find('a').hasClass("active"));//rgba(0, 0, 0, 0)
+        //console.log('background '+$(this).parent().find('a').hasClass("active"));//rgba(0, 0, 0, 0)
           // добавить класс hover
           if (!($(this).parent().find('a').hasClass("active"))){$(this).parent().toggleClass('click-hover');}
         
          var nv =parseInt($("#navmain").css('height').replace("px", "")) + 0;
-         console.log('#navmain height '+nv);
-         console.log('margin-top '+$("#navmain").css('margin-top'));
+        //  console.log('#navmain height '+nv);
+        //  console.log('margin-top '+$("#navmain").css('margin-top'));
        
-         console.log('.parent()a:last-child '+$("#navmain").children().length); // пункты меню
-         console.log('.parent()a:last-child height  '+$("#navmain").children(':last-child').find('a').css('height')); // последний пункт меню
-         console.log($(this).parent().find('a').html()); // пункт меню - ДЕТАЛИ 
-        //  console.log($(this).parent().parent().html()); // пункт меню - 
+        //  console.log('.parent()a:last-child '+$("#navmain").children().length); // пункты меню
+        //  console.log('.parent()a:last-child height  '+$("#navmain").children(':last-child').find('a').css('height')); // последний пункт меню
+        //  console.log($(this).parent().find('a').html()); // пункт меню - ДЕТАЛИ 
        
-         console.log(':last-child height '+$(this).parent().find('li:last-child').text());// подпункты меню - ПАЗЫ
+       
+        //  console.log(':last-child height '+$(this).parent().find('li:last-child').text());// подпункты меню - ПАЗЫ
          
         //  #navmain
       });
@@ -142,12 +142,12 @@ console.log('mainpage '+ mainpage);
         var UlSubMenuHeight = $(this ).css('height');
         //  var triangle =$('#triangle2').data('top');
         // console.log('triangle ' + triangle);
-        console.log('index ' + indexnavmain);
-        console.log('UlSubMenuHeight ' + UlSubMenuHeight);
-        console.log('child1 ' + child1);
-        console.log('UlSubMenu[] ' + UlSubMenu.eq(child1-1).css('height'));
-        console.log('margin-top ' + $(this ).css('margin-top'));
-        console.log('height ' + $(this ).css('height'));
+        // console.log('index ' + indexnavmain);
+        // console.log('UlSubMenuHeight ' + UlSubMenuHeight);
+        // console.log('child1 ' + child1);
+        // console.log('UlSubMenu[] ' + UlSubMenu.eq(child1-1).css('height'));
+        // console.log('margin-top ' + $(this ).css('margin-top'));
+        // console.log('height ' + $(this ).css('height'));
         e.preventDefault(); 
                 if (indexnavmain >= 0 && indexnavmain <= 5){ 
                         if(dy > 0) { 
@@ -157,7 +157,7 @@ console.log('mainpage '+ mainpage);
                             if (indexnavmain < 5 ){ 
                             indexnavmain =indexnavmain +1;
                             }
-                            console.log('index ' + indexnavmain);
+                            // console.log('index ' + indexnavmain);
                                     e.preventDefault();      
                                 }
                         else{ 
@@ -168,13 +168,15 @@ console.log('mainpage '+ mainpage);
                               if (indexnavmain > 0 ){ 
                                indexnavmain = indexnavmain -1;
                               }
-                            console.log('index ' + indexnavmain);
+                            // console.log('index ' + indexnavmain);
                             e.preventDefault();  
                             
                                 
                         }
                 }
-                else{console.log('indexnavmain ' + indexnavmain);}
+                else{
+                    // console.log('indexnavmain ' + indexnavmain);
+                }
             
         });
 
@@ -244,10 +246,12 @@ $(function() {
           if (flo == 'undefined'){flo='';}else{flo='#'+ flo;}
 
           var aimg = $(this).data("img");
-          if (typeof aimg == "undefined") { aimg = "./dist/images/mdf-nakladka-053-dsh.png"; }     
-          $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + '</a><a class="flo" href="' + flo + '" title = "Найти на карте сайта">&#10059;</a></li>');
-        //   $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + '</a></li>');
-        //   $( "#search  ul  li" ).after( '<a class="flo" href="#' + flo + '">&#9875;</a>' );
+          if (typeof aimg == "undefined") { aimg = "./dist/images/mdf-nakladka-053-dsh.png"; }   
+        //   с якорем
+        //   $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + '</a><a class="flo" href="' + flo + '" title = "Найти на карте сайта">&#10059;</a></li>');
+        //   без якоря
+          $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + '</li>');
+    
         }
       });
     } else {

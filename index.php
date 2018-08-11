@@ -60,7 +60,8 @@ include 'inc-version-css-js.php';
 
                     <ul class="nav navbar-nav " id="navmain">
                         <li>
-                            <a href="#detali-profili">ДЕТАЛИ </a> <span class="caret"></span>
+                            <a href="#detali-profili">ДЕТАЛИ </a>
+                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating8" >ПРОФИЛИ ГЛАДКИЕ</a>
                                 </li>
@@ -76,10 +77,11 @@ include 'inc-version-css-js.php';
                                 </li> 
                                 <li><a class="" href="#floating14" >ПАЗЫ</a>
                                 </li>                                                                              
-                            </ul>                           
+                            </ul>                            -->
                         </li>
                         <li>
-                            <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a ><span class="caret"></span>
+                            <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a >
+                            <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
                                 </li>
@@ -101,10 +103,11 @@ include 'inc-version-css-js.php';
                                 </li> 
                                 <li><a class="" href="#floating23" >СТАНДАРТНЫЕ УЗЛЫ</a>
                                 </li>                                                                               
-                            </ul>                             
+                            </ul>                              -->
                         </li>
                         <li>                            
-                            <a href="#shablony-dokumentov-titulniki">ШАБЛОНЫ ДОКУМЕНТОВ</a ><span class="caret"></span>
+                            <a href="#shablony-dokumentov-titulniki">ШАБЛОНЫ ДОКУМЕНТОВ</a >
+                            <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating24" >ЛИСТЫ ТИТУЛЬНЫЕ</a>
                                 </li>
@@ -114,10 +117,11 @@ include 'inc-version-css-js.php';
                                 </li> 
                                 <li><a class="" href="#floating27" >ПОКУПНЫЕ ИЗДЕЛИЯ</a>
                                 </li>                                                                                                                       
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
-                            <a href="#metodichki-dokument-117">МЕТОДИЧКИ</a ><span class="caret"></span>
+                            <a href="#metodichki-dokument-117">МЕТОДИЧКИ</a >
+                            <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating28" >ДОКУМЕНТ 117</a>
                                 </li>
@@ -127,10 +131,11 @@ include 'inc-version-css-js.php';
                                 </li> 
                                 <li><a class="" href="#floating31" >ПРОЕКТНАЯ РАБОТА</a>
                                 </li>                                                                                                                     
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
-                            <a href="#furnitura-dlya-dvernyh-blokov">ФУРНИТУРА</a ><span class="caret"></span>
+                            <a href="#furnitura-dlya-dvernyh-blokov">ФУРНИТУРА</a >
+                            <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating32" >ДЛЯ ДВЕРНЫХ БЛОКОВ</a>
                                 </li>
@@ -141,10 +146,11 @@ include 'inc-version-css-js.php';
                                 <li  ><a class="" href="#floating35" >КАТАЛОГИ</a>
                                 </li> 
                                                                                                                 
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
-                            <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a><span class="caret"></span>
+                            <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>
+                            <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating36" >СТЕКЛО, ЗЕРКАЛО</a>
                                 </li>
@@ -156,10 +162,11 @@ include 'inc-version-css-js.php';
                                 </li> 
                                 <li><a class="" href="#floating40" >СВЕТ</a>
                                 </li>                                                                                                                       
-                            </ul>
+                            </ul> -->
                         </li>
                         <li>
-                            <a href="#literatura-gost">ЛИТЕРАТУРА</a ><span class="caret"></span>
+                            <a href="#literatura-gost">ЛИТЕРАТУРА</a >
+                            <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a href="#floating41" >ГОСТ</a>
                                 </li>
@@ -171,7 +178,7 @@ include 'inc-version-css-js.php';
                                 </li> 
                                 <li><a  href="#floating45" >СПРАВОЧНИКИ</a>
                                 </li>                                                                                                                       
-                            </ul>
+                            </ul> -->
                         </li>
                     </ul>   
                 </div>
