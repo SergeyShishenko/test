@@ -28,30 +28,113 @@ include 'inc-left-side-menu-izdeliya.php';
                         <div class="page-header">
                           <h1 itemprop="name" id="potolki-kessonirovannye">Конструкции потолков кессонированных типовых</h1>
                         </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt harum minus possimus, tempore suscipit fugit nostrum enim hic illum tempora assumenda nemo, vero officiis asperiores, fuga aut. Ex, ratione!</p>
-                        <div class="bs-callout bs-callout-warning" id="jquery-required">
-                          <h4>Lorem ipsum dolor</h4>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                        </div>
+                        
+                            
 
                         <h2 id="potolki-kessony-tipovye">&nbsp;</h2>
                         <h2 >5000211-00_100 кессоны типовые</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-
+                       
 
                         <h2 id="potolki-potolok-kessonirovannyy">&nbsp;</h2>
                         <h2 >5000211-00_101 потолок кессонированный</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
+
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000211-00_101 потолок кессонированный</h4>                                                    
+                            <p> 
+                                <a>
+                                    <img  
+                                    src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
+                                    data-src="./dist/images/5000211-00-101-potolok-kessonirovannyy_1.png" 
+                                    class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-content="5000211-00_101 потолок кессонированный"                               
+                                    alt="5000211-00_101 потолок кессонированный_1"
+                                    data-dwg="./dist/files/dwg/5000211-00-101-potolok-kessonirovannyy.dwg"
+                                    data-xls="./dist/files/xls/5000211-00-101-potolok-kessonirovannyy.xlsx"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000211-00_101 потолок кессонированный</h4>                                                    
+                            <p> 
+                                <a>
+                                    <img  
+                                    src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
+                                    data-src="./dist/images/5000211-00-101-potolok-kessonirovannyy_2.png" 
+                                    class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-content="5000211-00_101 потолок кессонированный"                               
+                                    alt="5000211-00_101 потолок кессонированный_2"
+                                    data-dwg="./dist/files/dwg/5000211-00-101-potolok-kessonirovannyy.dwg"
+                                    data-xls="./dist/files/xls/5000211-00-101-potolok-kessonirovannyy.xlsx"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000211-00_101 потолок кессонированный</h4>                                                    
+                            <p> 
+                                <a>
+                                    <img  
+                                    src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
+                                    data-src="./dist/images/5000211-00-101-potolok-kessonirovannyy_3.png" 
+                                    class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-content="5000211-00_101 потолок кессонированный"                               
+                                    alt="5000211-00_101 потолок кессонированный_3"
+                                    data-dwg="./dist/files/dwg/5000211-00-101-potolok-kessonirovannyy.dwg"
+                                    data-xls="./dist/files/xls/5000211-00-101-potolok-kessonirovannyy.xlsx"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000211-00_101 потолок кессонированный</h4>                                                    
+                            <p> 
+                                <a>
+                                    <img  
+                                    src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
+                                    data-src="./dist/images/5000211-00-101-potolok-kessonirovannyy_4.png" 
+                                    class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-content="5000211-00_101 потолок кессонированный"                               
+                                    alt="5000211-00_101 потолок кессонированный_4"
+                                    data-dwg="./dist/files/dwg/5000211-00-101-potolok-kessonirovannyy.dwg"
+                                    data-xls="./dist/files/xls/5000211-00-101-potolok-kessonirovannyy.xlsx"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000211-00_101 потолок кессонированный</h4>                                                    
+                            <p> 
+                                <a>
+                                    <img  
+                                    src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
+                                    data-src="./dist/images/5000211-00-101-potolok-kessonirovannyy_5.png" 
+                                    class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                    data-content="5000211-00_101 потолок кессонированный"                               
+                                    alt="5000211-00_101 потолок кессонированный_5"
+                                    data-dwg="./dist/files/dwg/5000211-00-101-potolok-kessonirovannyy.dwg"
+                                    data-xls="./dist/files/xls/5000211-00-101-potolok-kessonirovannyy.xlsx"
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+                        
+                        </section>
                     </article>
+
+
+                   
 
                    
                     <article >
