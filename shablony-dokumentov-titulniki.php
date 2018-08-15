@@ -27,7 +27,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000301-01-001 лист титульный ДП</h4>
                                                        
                             <p> <a>
-                                <img src="./dist/images/5000301-01-001-list-titulnyy-dp.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001-list-titulnyy-dp_1.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="5000301_01_001 лист титульный ДП"                               
@@ -43,7 +43,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>паспорт изделий заказа ДП</h4>
                                                    
                             <p> <a>
-                                <img src="./dist/images/5000301-01-001-pasport-izdeliy-zakaza-dp.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/5000301-01-001-list-titulnyy-dp_2.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="паспорт изделий заказа ДП"                               
@@ -54,20 +54,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              <div class="overlay"></div>
                         </div>
 
-                        <h2 id="reestr-razdelov-dp">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>реестр разделов ДП</h4>
-                                                     
-                            <p> <a>
-                                <img src="./dist/images/5000301-01-001-reestr-razdelov-dp.png" class="center-block img-rounded img-thumbnail"
-                                 data-toggle="modal"
-                                 data-target="#myModal"
-                                 data-content="реестр разделов ДП"                               
-                                 alt="реестр разделов ДП"
-                                 data-xls="./dist/files/xls/5000301-01-001-list-titulnyy-dp.xlsx"
-                                   ></a>
-                             </p>
-                             <div class="overlay"></div>
-                        </div>
+                      
                       
                       
                        
@@ -144,8 +131,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                     </li>
                                     <li><a href="#pasport-izdeliy-zakaza-dp">&#9999;&nbsp;паспорт изделий заказа ДП</a>
                                     </li>
-                                    <li><a href="#reestr-razdelov-dp">&#9999;&nbsp;реестр разделов ДП</a>
-                                    </li>                                    
+                                                                      
                                 </ul>
                             </li>                           
                             <li>

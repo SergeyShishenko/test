@@ -24,8 +24,7 @@
                                         </li>
                                         <li><a class="list-group-item sub" href="shablony-dokumentov-titulniki.php#pasport-izdeliy-zakaza-dp">паспорт изделий заказа ДП</a>                                        
                                         </li> 
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-titulniki.php#reestr-razdelov-dp">реестр разделов ДП</a>                                        
-                                        </li>                                      
+                                                                            
                                     </ul>
                                 </li>
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-titulniki.php#listy-titulnye-konstruktorskoy-dokumentacii">Листы титульные конструкторской документации</a>

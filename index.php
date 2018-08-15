@@ -3368,8 +3368,8 @@ include 'inc-version-css-js.php';
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" colspan="2"  id="flo-reestr-razdelov-dp">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulniki.php#reestr-razdelov-dp">реестр разделов ДП<span> <br>~reestr-razdelov-dp</span></p>
+                                                                            <TD class="mapsite" colspan="2"  >                                                                            
+                                                                                <p data-img="./dist/images/no-foto.png" data-href="">...<span> <br>~reestr-razdelov-dp</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
