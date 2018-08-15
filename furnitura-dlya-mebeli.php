@@ -24,7 +24,41 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</h1>
                         </div> 
                       
+                     
+                        <div class="bs-callout bs-callout-warning cont" > 
+                        <h2 >Видео с Ютуба</h2>   
+                            <iframe  class="center-block   img-rounded img-thumbnail b-lazy bar video-album" src="https://www.youtube.com/embed/hSWQ0w1sB3M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            
+                        </div>
 
+                      <div class="bs-callout bs-callout-warning cont" > 
+                      <h2 >Видео с Яндекс диска</h2>  
+                           
+                           <iframe  class="center-block   img-rounded img-thumbnail b-lazy bar video-album" src="https://yastatic.net/yandex-video-player-iframe-api-bundles/1.0-249/?mq_url=https%3A%2F%2Fstreaming.disk.yandex.net%2Fhls%2FU2FsdGVkX1-lS3O0qV_NyuKUWQnFgcrvQSuLp2xmcK2tAx5WMsw7Tv4kxMXdpkLNKwGjf78wsIlaJbHQkXI-tP3CE0TUH2IXyYL3pqMDsYXGJuz_SvO3xpSC-JJjVxEpErhgVLej6PESGhlb6lQrHF2IVlHqwR0n80lk8eUGt0vM7comBfkE4SyiiICI2fjox6Anl6KOhFuxdM5INKTyBiKIvxBwL4U6wZjsnz0hR4dJBJF0JnYjtmFN3Ux1B_i2%2F57378f8a84b90%2Fb641e0b8d4c83ffef6b9c81722d3127513276b4f2e8dd8dc4475bf9db0587d72%2Fmaster-playlist.m3u8&auto_quality=false&preview=https%3A%2F%2Fdownloader.disk.yandex.ru%2Fpreview%2F1207d57ea6d06d6d845676af234700b4358dc08a2bdf9617236f0ccd74c0b23c%2F5b7424f0%2FT1BjQtjWW4JGT0b3oP7o3HBAjOS-L0ZajiqZ23cZrpC9EY8GPRXaCG1lbmNZHbUtMOy9IGv4ta28eb5j3fd-1A%253D%253D%3Fuid%3D0%26filename%3D0-02-05-fc71fc5298aadbb2fceefe58e50d013607ed78281b75dc63efe5d9c47fa538b9_709380c4.mp4%26disposition%3Dinline%26hash%3D%26limit%3D0%26content_type%3Dimage%252Fjpeg%26tknv%3Dv2%26size%3D640x368&vsid=9a649ed24813a9562df84409fbca6eaa1973935515a2cd0dce5c52a603ed9ee5&host=yadi.sk&volume=100&muted=false&report=false" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                           
+                       </div>
+
+
+                             <div class="bs-callout bs-callout-warning cont" > 
+                           
+                            <h2 >Картинка с Яндекс диска</h2>                              
+                            <p> 
+                                <a>
+                                    <img  
+                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                        data-src="https://downloader.disk.yandex.ru/preview/5563d4827533774c0802f2e22a5e79e2fbfb58f4f5b9c7561fb7b013cffb9cc7/5b74281c/T1BjQtjWW4JGT0b3oP7o3HMdl93sQtFV_z2YXv7YHz4sxUxRvDuJPVhtSOWwbH-mUKPXba1zWz_MTg110YnF_Q%3D%3D?uid=0&filename=mdf-nakladka-050-dsh.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&size=2048x2048"
+                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-book"
+                                        data-toggle="modal"
+                                        data-target="#myModal"                                                                   
+                                        alt="Картинка с Яндекс диска"
+                                        data-pdf=""
+                                    >
+                                </a>
+                            </p>
+                            <div class="overlay"></div>
+                        </div>
+
+                        
 
                         <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="5000502-01-100-petlya-vkladnaya" >&nbsp;</h2> 
