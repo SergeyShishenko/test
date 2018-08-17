@@ -1,5 +1,6 @@
+<!-- https://bootsnipp.com/snippets/featured/thumbnail-gallery-modal-view-and-key-navigation -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -118,7 +119,7 @@
             
 
 
-            <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="image-gallery" >
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -136,7 +137,7 @@
                                 <i class="fa fa-arrow-left"></i>
                             </button>
 
-                            <button type="button" id="show-next-image" class="btn btn-secondary float-right">
+                            <button type="button" class="btn btn-secondary float-right" id="show-next-image">
                                 <i class="fa fa-arrow-right"></i>
                             </button>
                         </div>
@@ -149,7 +150,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script>
-        let modalId = $('#image-gallery');
+        var modalId = $('#image-gallery');
 
         $(document)
             .ready(function () {
@@ -223,16 +224,18 @@
             .keydown(function (e) {
                 switch (e.which) {
                     case 37: // left
-                        if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
-                            $('#show-previous-image')
-                                .click();
+                    // alert('left');
+                        // if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+                            if (modalId.data('bs.modal')  && $('#show-previous-image').is(":visible")) {
+                            $('#show-previous-image').click();
                         }
                         break;
 
                     case 39: // right
-                        if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
-                            $('#show-next-image')
-                                .click();
+                    // alert('right');
+                        // if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+                            if (modalId.data('bs.modal')  && $('#show-next-image').is(":visible")) {
+                            $('#show-next-image').click();
                         }
                         break;
 
