@@ -14,7 +14,7 @@ include('header.php'); ?>
             <div class="alert alert-info">
                 Please login with your Username and Password.
             </div>
-            <form class="form-horizontal" action="index.html" method="post">
+            <form class="form-horizontal" action="index.php" method="post">
                 <fieldset>
                     <div class="input-group input-group-lg">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>

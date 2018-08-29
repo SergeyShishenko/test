@@ -450,4 +450,354 @@
     </div>
     <!--/span-->
 </div><!--/row-->
+
+<!-- ПРОБА -->
+
+
+<div class="row">
+    <div class="box col-md-12">
+        <div class="box-inner">
+            <div class="box-header well">
+                <h2><i class="glyphicon glyphicon-th"></i> Tabs</h2>
+
+                <div class="box-icon">
+                    <a href="#" class="btn btn-setting btn-round btn-default"><i
+                            class="glyphicon glyphicon-cog"></i></a>
+                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                            class="glyphicon glyphicon-chevron-up"></i></a>
+                    <a href="#" class="btn btn-close btn-round btn-default"><i
+                            class="glyphicon glyphicon-remove"></i></a>
+                </div>
+            </div>
+
+            <div class="box-content">
+                <div class="">
+                    <!-- START PANEL -->
+                    <div class="panel panel-transparent">
+                        <div class="panel-heading">
+                            <div class="panel-title">Tab Orientations
+                            </div>
+                        </div>
+                        <div class="panel-body no-padding">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="panel panel-transparent">
+                                    <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white" id="tab-3">
+                                        <li class="active">
+                                        <a data-toggle="tab" href="#tab3hellowWorld">One</a>
+                                        </li>
+                                        <li>
+                                        <a data-toggle="tab" href="#tab3FollowUs">Two</a>
+                                        </li>
+                                        <li>
+                                        <a data-toggle="tab" href="#tab3Inspire">Three</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content bg-white">
+                                        <div class="tab-pane" id="tab3hellowWorld">
+                                        <div class="row column-seperation">
+                                            <div class="col-md-6">
+                                            <h3>
+                                                        <span class="semi-bold">Sometimes </span>Small things in life
+                                                        means the most
+                                                    </h3>
+                                            </div>
+                                            <div class="col-md-6">
+                                            <h3 class="semi-bold">
+                                                        great tabs
+                                                    </h3>
+                                            <p>Native boostrap tabs customized to Pages look and feel, simply changing class name you can change color as well as its animations</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane active" id="tab3FollowUs">
+                                        <h3>
+                                                    “ Nothing is <span class="semi-bold">impossible</span>, the word
+                                                    itself says 'I'm <span class="semi-bold">possible</span>'! ”
+                                                </h3>
+                                        <p>
+                                            A style represents visual customizations on top of a layout. By editing a style, you can use Squarespace's visual interface to customize your...
+                                        </p>
+                                        <br>
+                                        <p class="pull-right">
+                                            <button class="btn btn-default btn-cons" type="button">White</button>
+                                            <button class="btn btn-success btn-cons" type="button">Success</button>
+                                        </p>
+                                        </div>
+                                        <div class="tab-pane" id="tab3Inspire">
+                                        <h3>
+                                                    Follow us &amp; get updated!
+                                                </h3>
+                                        <p>
+                                            Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
+                                        </p>
+                                        <br>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PANEL -->                      
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- <div class="content-wrap">
+        <div class="row">
+
+
+            <div class="col-sm-12">
+                <div class="nest" id="basicClose">
+                    <div class="title-alt">
+                        <h6>
+                            Basic Wizard</h6>
+                        <div class="titleClose">
+                            <a class="gone" href="#basicClose">
+                                <span class="entypo-cancel"></span>
+                            </a>
+                        </div>
+                        <div class="titleToggle">
+                            <a class="nav-toggle-alt" href="#basic">
+                                <span class="entypo-up-open"></span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="body-nest" id="basic">
+
+                        <div id="wizard">
+                            <h2>First Step</h2>
+                            <section>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus dolor, tristique ac tempus nec, iaculis quis nisi.</p>
+                            </section>
+
+                            <h2>Second Step</h2>
+                            <section>
+                                <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum, nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
+                            </section>
+
+                            <h2>Third Step</h2>
+                            <section>
+                                <p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam. Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat. Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui commodo lectus sollicitudin in auctor mauris venenatis.
+                                </p>
+                            </section>
+
+                            <h2>Forth Step</h2>
+                            <section>
+                                <p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae. Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12">
+                <div class="nest" id="verticalClose">
+                    <div class="title-alt">
+                        <h6>
+                            Vertical Wizard</h6>
+                        <div class="titleClose">
+                            <a class="gone" href="#verticalClose">
+                                <span class="entypo-cancel"></span>
+                            </a>
+                        </div>
+                        <div class="titleToggle">
+                            <a class="nav-toggle-alt" href="#vertical">
+                                <span class="entypo-up-open"></span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="body-nest" id="vertical">
+
+                        <div id="wizard_vertical">
+                            <h2>First Step</h2>
+                            <section>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus dolor, tristique ac tempus nec, iaculis quis nisi.</p>
+                            </section>
+
+                            <h2>Second Step</h2>
+                            <section>
+                                <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum, nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
+                            </section>
+
+                            <h2>Third Step</h2>
+                            <section>
+                                <p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam. Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat. Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui commodo lectus sollicitudin in auctor mauris venenatis.
+                                </p>
+                            </section>
+
+                            <h2>Forth Step</h2>
+                            <section>
+                                <p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae. Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
+                            </section>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-12">
+                <div class="nest" id="stepyClose">
+                    <div class="title-alt">
+                        <h6>
+                            STEPY WIZARD</h6>
+                        <div class="titleClose">
+                            <a class="gone" href="#stepyClose">
+                                <span class="entypo-cancel"></span>
+                            </a>
+                        </div>
+                        <div class="titleToggle">
+                            <a class="nav-toggle-alt" href="#stepy">
+                                <span class="entypo-up-open"></span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="body-nest" id="stepy">
+
+                        <div class="demo">
+                            <form id="transition-duration-demo">
+                                <fieldset title="Login">
+                                    <legend>Access</legend>
+
+                                    <input type="hidden" name="id" />
+
+                                    <p>
+                                        <label for="username-2">Username:</label>
+                                        <input id="username-2" type="text" value="wbotelhos" disabled="disabled" />
+                                    </p>
+
+                                    <p>
+                                        <label for="email-2">E-mail:</label>
+                                        <input id="email-2" type="text" />
+                                    </p>
+
+                                    <p>
+                                        <label for="password-2">Password:</label>
+                                        <input id="password-2" type="password" />
+                                    </p>
+                                </fieldset>
+
+                                <fieldset title="Personal">
+                                    <legend>About you</legend>
+
+                                    <p>
+                                        <label for="name-2">Name:</label>
+                                        <input id="name-2" type="text" />
+                                    </p>
+
+                                    <p>
+                                        <label for="birthday-2">Birthday:</label>
+
+                                        <select id="birthday-2" name="day">
+                                            <option>1984</option>
+                                        </select>
+                                    </p>
+
+                                    <p>
+                                        <label for="bio-2">Bio:</label>
+                                        <textarea id="bio-2"></textarea>
+                                    </p>
+                                </fieldset>
+
+                                <fieldset title="Professional">
+                                    <legend>Your professional informations</legend>
+
+                                    <p class="skills">
+                                        <input id="ruby-2" type="checkbox" name="ruby-2" />
+                                        <label for="ruby-2">Ruby</label>
+
+                                        <input id="python-2" type="checkbox" name="python" />
+                                        <label for="python-2">Python</label>
+
+                                        <input id="java-2" type="checkbox" name="java" />
+                                        <label for="java-2">Java</label>
+
+                                        <input id="javascript-2" type="checkbox" name="javascript" />
+                                        <label for="javascript-2">Javascript</label>
+                                    </p>
+
+                                    <p>
+                                        <label for="linkedin-2">Linkedin:</label>
+                                        <input id="linkedin-2" type="text" name="Linkedin" />
+                                    </p>
+                                </fieldset>
+
+                                <input type="submit" value="Finish!" />
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-sm-12">
+                <div class="nest" id="tabClose">
+                    <div class="title-alt">
+                        <h6>
+                            Tabs</h6>
+                        <div class="titleClose">
+                            <a class="gone" href="#tabClose">
+                                <span class="entypo-cancel"></span>
+                            </a>
+                        </div>
+                        <div class="titleToggle">
+                            <a class="nav-toggle-alt" href="#tab">
+                                <span class="entypo-up-open"></span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="body-nest" id="tab">
+
+                        <div id="wizard-tab">
+                            <h2>First Step</h2>
+                            <section>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus dolor, tristique ac tempus nec, iaculis quis nisi.</p>
+                            </section>
+
+                            <h2>Second Step</h2>
+                            <section>
+                                <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum, nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
+                            </section>
+
+                            <h2>Third Step</h2>
+                            <section>
+                                <p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam. Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat. Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui commodo lectus sollicitudin in auctor mauris venenatis.
+                                </p>
+                            </section>
+
+                            <h2>Forth Step</h2>
+                            <section>
+                                <p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae. Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
+                            </section>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div> -->
+
 <?php require('footer.php'); ?>

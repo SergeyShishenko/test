@@ -6,10 +6,10 @@
 <?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
 
     <!-- Ad, you can remove it -->
-    <div class="row">
+    <!-- <div class="row">
         <div class="col-md-9 col-lg-9 col-xs-9 hidden-xs">
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- Charisma Demo 2 -->
+           
             <ins class="adsbygoogle"
                  style="display:inline-block;width:728px;height:90px"
                  data-ad-client="ca-pub-5108790028230107"
@@ -29,7 +29,7 @@
                         <div class="clear"><input type="submit" value="Subscribe" name="subscribe" class="button"></div>
                     </div>
                 </form>
-            </div>
+            </div> -->
 
             <!--End mc_embed_signup-->
         </div>

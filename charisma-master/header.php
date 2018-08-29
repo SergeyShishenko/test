@@ -39,6 +39,7 @@
     <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
     <link href='css/uploadify.css' rel='stylesheet'>
     <link href='css/animate.min.css' rel='stylesheet'>
+    <!-- <link href='css/pages.css' rel='stylesheet'> -->
 
     <!-- jQuery -->
     <script src="bower_components/jquery/jquery.min.js"></script>
@@ -50,6 +51,73 @@
 
     <!-- The fav icon -->
     <link rel="shortcut icon" href="img/favicon.ico">
+
+    <style>
+        /* /pages-213/demo/html/tabs_accordian.html */
+        .nav-tabs.nav-tabs-left {
+            float: left;
+            padding-right: 0;
+        }
+        .nav-tabs-simple > li.active a, .nav-tabs-simple > li.active a:hover, .nav-tabs-simple > li.active a:focus {
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        .nav-tabs-simple {
+            border-bottom: 0px;
+        }
+                .nav-tabs.nav-tabs-left > li, .nav-tabs.nav-tabs-right > li {
+            float: none;
+        }
+
+        .nav-tabs > li {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .nav-tabs-simple.nav-tabs-left > li:after {
+            right: 0;
+        }
+
+        .nav-tabs-simple.nav-tabs-left > li.active:after, .nav-tabs-simple.nav-tabs-right > li.active:after, .nav-tabs-simple.nav-tabs-left > li:hover:after, .nav-tabs-simple.nav-tabs-right > li:hover:after {
+            width: 3px;
+        }
+
+        .nav-tabs-simple.nav-tabs-left > li:after, .nav-tabs-simple.nav-tabs-right > li:after {
+            width: 0px;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+        }
+        .nav-tabs-simple > li:after {
+            -webkit-transition: all 0.1s linear 0s;
+            transition: all 0.1s linear 0s;
+            -webkit-backface-visibility: hidden;
+            width: 100%;
+            display: block;
+            background-color: #f55753;
+            height: 0px;
+            content: '';
+            z-index: 125;
+        }
+        .nav-tabs-simple.nav-tabs-left > li:after {
+            right: 0;
+        }
+        .nav-tabs.nav-tabs-left ~ .tab-content {
+            border-left: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .nav-tabs ~ .tab-content {
+            overflow: hidden;
+            padding: 15px;
+        }
+        .box-content .nav-tabs {
+            margin-right: 0px;
+        }
+        /* .panel .panel-body.no-padding .row {
+            margin-left: 0;
+            margin-right: 0;
+        } */
+    </style>
 
 </head>
 
