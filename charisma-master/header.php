@@ -113,10 +113,10 @@
         .box-content .nav-tabs {
             margin-right: 0px;
         }
-        /* .panel .panel-body.no-padding .row {
-            margin-left: 0;
-            margin-right: 0;
-        } */
+                a, a:focus, a:hover, a:active {
+            outline: 0 !important;
+            text-decoration: none;
+        }
     </style>
 
 </head>

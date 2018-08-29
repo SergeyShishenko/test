@@ -480,7 +480,7 @@
                         </div>
                         <div class="panel-body no-padding">
                             <div class="row">
-                                <div class="col-lg-12">
+                                <div class="col-lg-6">
                                     <div class="panel panel-transparent">
                                     <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white" id="tab-3">
                                         <li class="active">
@@ -532,6 +532,67 @@
                                             Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
                                         </p>
                                         <br>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <h5>Fill In Tabs</h5> Add the class
+                                    <code>nav-tabs-fillup</code> to the main wrapper of the tabs
+                                    <br>
+                                    <br>
+                                    <div class="panel panel-transparent ">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
+                                        <li class="active">
+                                        <a data-toggle="tab" href="#tab-fillup1"><span>Home</span></a>
+                                        </li>
+                                        <li>
+                                        <a data-toggle="tab" href="#tab-fillup2"><span>Profile</span></a>
+                                        </li>
+                                        <li>
+                                        <a data-toggle="tab" href="#tab-fillup3"><span>Messages</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab-fillup1">
+                                        <div class="row column-seperation">
+                                            <div class="col-md-6">
+                                            <h3>
+                                                                <span class="semi-bold">Sometimes</span> Small things in life means the most
+                                                            </h3>
+                                            </div>
+                                            <div class="col-md-6">
+                                            <h3 class="semi-bold">great tabs</h3>
+                                            <p>Native boostrap tabs customized to Pages look and feel, simply changing class name you can change color as well as its animations</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-fillup2">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                            <h3>“ Nothing is
+                                                                <span class="semi-bold">impossible</span>, the word itself says 'I'm
+                                                                <span class="semi-bold">possible</span>'! ”</h3>
+                                            <p>A style represents visual customizations on top of a layout. By editing a style, you can use Squarespace's visual interface to customize your...</p>
+                                            <br>
+                                            <p class="pull-right">
+                                                <button type="button" class="btn btn-default btn-cons">White</button>
+                                                <button type="button" class="btn btn-success btn-cons">Success</button>
+                                            </p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-fillup3">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                            <h3>Follow us &amp; get updated!</h3>
+                                            <p>Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
+                                            <br>
+                                            </div>
+                                        </div>
                                         </div>
                                     </div>
                                     </div>
