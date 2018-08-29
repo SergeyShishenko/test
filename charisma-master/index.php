@@ -19,12 +19,13 @@
                 <h2><i class="glyphicon glyphicon-th"></i> РАЗДЕЛ 1</h2>
 
                 <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
                     <a href="#" class="btn btn-minimize btn-round btn-default"><i
                             class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a>
+                    <a href="#" class="btn btn-setting btn-round btn-default"><i
+                            class="glyphicon glyphicon-cog"></i></a>
+                    
+                    <!-- <a href="#" class="btn btn-close btn-round btn-default"><i
+                            class="glyphicon glyphicon-remove"></i></a> -->
                 </div>
             </div>
 
@@ -35,14 +36,20 @@
                         <!-- <div class="panel-heading">
                             <div class="panel-title">Категории
                             </div>
-                            <h4 class="semi-bold">Категории</h4>
+                            
                         </div> -->
+                        
                         <div class="panel-body no-padding">
+                        
                             <div class="row">
-                                
+                               
 
                                 <div class="col-sm-12">
-                                   
+                                   <!-- <h5 class="semi-bold">Добавить категорию</h5>  -->
+                                   <div class="box-icon">
+                                                <a href="#" class="btn btn-setting btn-round btn-default"><i
+                                                class="glyphicon glyphicon-cog"></i></a>
+                                            </div>
                                     <div class="panel panel-transparent ">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
@@ -62,12 +69,20 @@
                                         <div class="row column-seperation panelTab">
                                             
                                             <div class="col-md-12">
-                                            <!-- <h4 class="semi-bold">Группы</h4> -->
+                                            <!-- <a href="#" class="btn btn-setting  btn-default">Добавить группу</a> -->
+                                            <!-- <h5 class="semi-bold"></h5> -->
+                                            
                                             
                                             <div class="panel-body no-padding">
                             <div class="row">
+                            <div class="box-icon">
+                                                <a href="#" class="btn btn-setting btn-round btn-default"><i
+                                                class="glyphicon glyphicon-cog"></i></a>
+                                            </div>
                                 <div class="col-lg-12 ">
+                                
                                     <div class="panel panel-transparent ">
+
                                     <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white" id="tab-3">
                                         <li class="active">
                                         <a data-toggle="tab" href="#tab3hellowWorld22">Группа 1</a>
@@ -78,6 +93,7 @@
                                         <li>
                                         <a data-toggle="tab" href="#tab3Inspire32">Группа 3</a>
                                         </li>
+                                       
                                     </ul>
                                     <div class="tab-content bg-white">
                                         <div class="tab-pane" id="tab3hellowWorld22">
@@ -112,7 +128,11 @@
                                         </div>
                                         <div class="tab-pane" id="tab3Inspire32">
                                                 <div class="box-content">
-                                                <h5>Конечные элементы</h5>
+                                                <h5 class="semi-bold" >Добавить элемент</h5>
+                                                <!-- <div class="box-icon">
+                                                <a href="#" class="btn btn-setting btn-round btn-default"><i
+                                                class="glyphicon glyphicon-cog"></i></a>
+                                            </div> -->
                                                     <ul class="thumbnails gallery">
                                                         <?php for ($i = 1; $i <= 24; $i++) { ?>
                                                             <li id="image-<?php echo $i ?>" class="thumbnail">
@@ -176,7 +196,17 @@
     </div>
 </div>
 
-
+<script>
+       $('ul.nav-tabs li').hover(function () {
+        // $('a', this).fadeToggle(1000);
+        // $(this).find('.gallery-controls').remove();
+        $(this).append('<div class=" tab-controls">' + '<p><a href="#" class="gallery-edit btn"><i class="glyphicon glyphicon-edit"></i></a></p>' +  '</div>');
+        $(this).find('.tab-controls').stop().animate({'margin-top': '-45'}, 400);
+    }, function () {
+        // $('a', this).fadeToggle(1000);
+        $(this).find('.tab-controls').stop().animate({'margin-top': '-50'}, 200, function () {  $(this).remove();   });
+    });
+</script>
 
    
 

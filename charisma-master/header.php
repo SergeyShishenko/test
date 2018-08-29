@@ -78,7 +78,11 @@
             right: 0;
         }
 
-        .nav-tabs-simple.nav-tabs-left > li.active:after, .nav-tabs-simple.nav-tabs-right > li.active:after, .nav-tabs-simple.nav-tabs-left > li:hover:after, .nav-tabs-simple.nav-tabs-right > li:hover:after {
+        .nav-tabs-simple.nav-tabs-left > li.active:after,
+         .nav-tabs-simple.nav-tabs-right > li.active:after,
+         .nav-tabs-simple.nav-tabs-left > li:hover:after,
+          .nav-tabs-simple.nav-tabs-right > li:hover:after
+           {
             width: 3px;
         }
 
@@ -140,8 +144,30 @@ margin-left: 0;
 margin-right: 0;
 
 }
-    </style>
 
+    </style>
+<style>
+.tab-controls {
+    position: absolute;
+    z-index: 1;
+    margin-top: -50px;
+    /* height: 1px; */
+    /* min-height: 1px; */
+    /* padding: 0 7.5px; */
+    /* padding: 0 ; */
+    /* right:0; */
+}
+
+ .tab-controls p {
+    display: block;
+    /* margin: auto; */
+    /* width: 100%; */
+}
+.tab-controls a.btn{
+    padding: 0 ;
+}
+
+</style>
 </head>
 
 <body>
