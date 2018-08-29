@@ -34,8 +34,8 @@
             <!--End mc_embed_signup-->
         </div>
 
-   <!-- </div>
-     Ad ends -->
+    </div>
+    <!-- Ad ends -->
 
     <hr>
 
@@ -68,7 +68,7 @@
     </footer>
 <?php } ?>
 
-<!--</div>/.fluid-container-->
+</div><!--/.fluid-container-->
 
 <!-- external javascript -->
 

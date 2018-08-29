@@ -109,8 +109,6 @@
         .nav-tabs ~ .tab-content {
             overflow: hidden;
             padding: 15px;
-            margin-left: -15px;
-            margin-right: -15px;
         }
         .box-content .nav-tabs {
             margin-right: 0px;
@@ -131,15 +129,8 @@
      -webkit-box-shadow: none; 
      box-shadow: none; 
 }
-ul.thumbnails.gallery{padding-left:0px;
-    margin-left: -15px;
-    }
-.row {
-
-margin-left: 0;
-margin-right: 0;
-
-}
+ul.thumbnails.gallery{padding-left:0px;    margin-left: -15px;}
+     
     </style>
 
 </head>
@@ -226,7 +217,7 @@ margin-right: 0;
         <?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
 
         <!-- left menu starts -->
-        <!-- <div class="col-sm-2 col-lg-2">
+        <div class="col-sm-2 col-lg-2">
             <div class="sidebar-nav">
                 <div class="nav-canvas">
                     <div class="nav-sm nav nav-stacked">
@@ -271,7 +262,7 @@ margin-right: 0;
                     <label id="for-is-ajax" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!--/span-->
         <!-- left menu ends -->
 
@@ -284,6 +275,6 @@ margin-right: 0;
             </div>
         </noscript>
 
-        <div id="content" class="col-lg-12 col-sm-12">
+        <div id="content" class="col-lg-10 col-sm-10">
             <!-- content starts -->
             <?php } ?>
