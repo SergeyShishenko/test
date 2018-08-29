@@ -609,6 +609,259 @@
     </div>
 </div>
 
+<div class="row">
+    <div class="box col-md-12">
+        <div class="box-inner">
+            <div class="box-header well">
+                <h2><i class="glyphicon glyphicon-th"></i> Tabs2</h2>
+
+                <div class="box-icon">
+                    <a href="#" class="btn btn-setting btn-round btn-default"><i
+                            class="glyphicon glyphicon-cog"></i></a>
+                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                            class="glyphicon glyphicon-chevron-up"></i></a>
+                    <a href="#" class="btn btn-close btn-round btn-default"><i
+                            class="glyphicon glyphicon-remove"></i></a>
+                </div>
+            </div>
+
+            <div class="box-content">
+                <div class="">
+                    <!-- START PANEL -->
+                    <div class="panel panel-transparent">
+                        <div class="panel-heading">
+                            <div class="panel-title">Tab Orientations
+                            </div>
+                        </div>
+                        <div class="panel-body no-padding">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="panel panel-transparent">
+                                    <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white" id="tab-3">
+                                        <li class="active">
+                                        <a data-toggle="tab" href="#tab3hellowWorld2">One</a>
+                                        </li>
+                                        <li>
+                                        <a data-toggle="tab" href="#tab3FollowUs2">Two</a>
+                                        </li>
+                                        <li>
+                                        <a data-toggle="tab" href="#tab3Inspire3">Three</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content bg-white">
+                                        <div class="tab-pane" id="tab3hellowWorld2">
+                                        <div class="row column-seperation">
+                                            <div class="col-md-6">
+                                            <h3>
+                                                        <span class="semi-bold">Sometimes </span>Small things in life
+                                                        means the most
+                                                    </h3>
+                                            </div>
+                                            <div class="col-md-6">
+                                            <h3 class="semi-bold">
+                                                        great tabs
+                                                    </h3>
+                                            <p>Native boostrap tabs customized to Pages look and feel, simply changing class name you can change color as well as its animations</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane active" id="tab3FollowUs2">
+                                        <h3>
+                                                    “ Nothing is <span class="semi-bold">impossible</span>, the word
+                                                    itself says 'I'm <span class="semi-bold">possible</span>'! ”
+                                                </h3>
+                                        <p>
+                                            A style represents visual customizations on top of a layout. By editing a style, you can use Squarespace's visual interface to customize your...
+                                        </p>
+                                        <br>
+                                        <p class="pull-right">
+                                            <button class="btn btn-default btn-cons" type="button">White</button>
+                                            <button class="btn btn-success btn-cons" type="button">Success</button>
+                                        </p>
+                                        </div>
+                                        <div class="tab-pane" id="tab3Inspire3">
+                                            <h3> Follow us &amp; get updated!
+                                                    </h3>
+                                            <p>
+                                                Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
+                                            </p>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PANEL -->                      
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="box col-md-12">
+        <div class="box-inner">
+            <div class="box-header well">
+                <h2><i class="glyphicon glyphicon-th"></i> Tabs3</h2>
+
+                <div class="box-icon">
+                    <a href="#" class="btn btn-setting btn-round btn-default"><i
+                            class="glyphicon glyphicon-cog"></i></a>
+                    <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                            class="glyphicon glyphicon-chevron-up"></i></a>
+                    <a href="#" class="btn btn-close btn-round btn-default"><i
+                            class="glyphicon glyphicon-remove"></i></a>
+                </div>
+            </div>
+
+            <div class="box-content">
+                <div >
+                    <!-- START PANEL -->
+                    <div class="panel panel-transparent">
+                        <div class="panel-heading">
+                            <div class="panel-title">Tab Orientations
+                            </div>
+                        </div>
+                        <div class="panel-body no-padding">
+                            <div class="row">
+                                
+
+                                <div class="col-sm-12">
+                                    <h5>Fill In Tabs</h5> Add the class
+                                    <code>nav-tabs-fillup</code> to the main wrapper of the tabs
+                                    <br>
+                                    <br>
+                                    <div class="panel panel-transparent ">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
+                                        <li class="active">
+                                        <a data-toggle="tab" href="#tab-fillup11"><span>Home</span></a>
+                                        </li>
+                                        <li>
+                                        <a data-toggle="tab" href="#tab-fillup21"><span>Profile</span></a>
+                                        </li>
+                                        <li>
+                                        <a data-toggle="tab" href="#tab-fillup31"><span>Messages</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab-fillup11">
+                                        <div class="row column-seperation panelTab">
+                                            
+                                            <div class="col-md-12">
+                                            <h3 class="semi-bold">great tabs</h3>
+                                            <p>Native boostrap tabs customized to Pages look and feel, simply changing class name you can change color as well as its animations</p>
+                                            <div class="panel-body no-padding">
+                            <div class="row">
+                                <div class="col-lg-12 ">
+                                    <div class="panel panel-transparent ">
+                                    <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white" id="tab-3">
+                                        <li class="active">
+                                        <a data-toggle="tab" href="#tab3hellowWorld22">One</a>
+                                        </li>
+                                        <li>
+                                        <a data-toggle="tab" href="#tab3FollowUs22">Two</a>
+                                        </li>
+                                        <li>
+                                        <a data-toggle="tab" href="#tab3Inspire32">Three</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content bg-white">
+                                        <div class="tab-pane" id="tab3hellowWorld22">
+                                        <div class="row column-seperation">
+                                            <div class="col-md-6">
+                                            <h3>
+                                                        <span class="semi-bold">Sometimes </span>Small things in life
+                                                        means the most
+                                                    </h3>
+                                            </div>
+                                            <div class="col-md-6">
+                                            <h3 class="semi-bold">
+                                                        great tabs
+                                                    </h3>
+                                            <p>Native boostrap tabs customized to Pages look and feel, simply changing class name you can change color as well as its animations</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane active" id="tab3FollowUs22">
+                                        <h3>
+                                                    “ Nothing is <span class="semi-bold">impossible</span>, the word
+                                                    itself says 'I'm <span class="semi-bold">possible</span>'! ”
+                                                </h3>
+                                        <p>
+                                            A style represents visual customizations on top of a layout. By editing a style, you can use Squarespace's visual interface to customize your...
+                                        </p>
+                                        <br>
+                                        <p class="pull-right">
+                                            <button class="btn btn-default btn-cons" type="button">White</button>
+                                            <button class="btn btn-success btn-cons" type="button">Success</button>
+                                        </p>
+                                        </div>
+                                        <div class="tab-pane" id="tab3Inspire32">
+                                            <h3> Follow us &amp; get updated!
+                                                    </h3>
+                                            <p>
+                                                Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.
+                                            </p>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                
+                            
+                            </div>
+                        </div>
+
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-fillup21">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                            <h3>“ Nothing is
+                                                                <span class="semi-bold">impossible</span>, the word itself says 'I'm
+                                                                <span class="semi-bold">possible</span>'! ”</h3>
+                                            <p>A style represents visual customizations on top of a layout. By editing a style, you can use Squarespace's visual interface to customize your...</p>
+                                            <br>
+                                            <p class="pull-right">
+                                                <button type="button" class="btn btn-default btn-cons">White</button>
+                                                <button type="button" class="btn btn-success btn-cons">Success</button>
+                                            </p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab-fillup31">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                            <h3>Follow us &amp; get updated!</h3>
+                                            <p>Instantly connect to what's most important to you. Follow your friends, experts, favorite celebrities, and breaking news.</p>
+                                            <br>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PANEL -->                      
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- <div class="content-wrap">
         <div class="row">
 

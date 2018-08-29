@@ -112,11 +112,24 @@
         }
         .box-content .nav-tabs {
             margin-right: 0px;
+            margin-left: 0px
         }
                 a, a:focus, a:hover, a:active {
             outline: 0 !important;
             text-decoration: none;
         }
+       
+        .panelTab{border: 1px solid #dddddd;}
+
+        .panel {
+     margin-bottom: 0; 
+    /* background-color: #ffffff; */
+     border: none; 
+     /* border-radius: 4px;  */
+     -webkit-box-shadow: none; 
+     box-shadow: none; 
+}
+     
     </style>
 
 </head>
