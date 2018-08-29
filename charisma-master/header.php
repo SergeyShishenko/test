@@ -129,6 +129,7 @@
      -webkit-box-shadow: none; 
      box-shadow: none; 
 }
+ul.thumbnails.gallery{padding-left:0px;    margin-left: -15px;}
      
     </style>
 
