@@ -19,10 +19,10 @@
                 <h2><i class="glyphicon glyphicon-th"></i> РАЗДЕЛ 1 - ДЕТАЛИ</h2>
 
                 <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
+                    <a href="#" class="btn btn-setting btn-round btn-default"  title="РЕДАКТИРОВАТЬ"><i
                              class="glyphicon glyphicon-edit"></i></a>
                     <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                            class="glyphicon glyphicon-chevron-up"></i></a>
+                            class="glyphicon glyphicon-chevron-down"></i></a>
                     
                             <!-- class="glyphicon glyphicon-cog"></i></a> -->
                             
@@ -201,7 +201,7 @@
        $('ul.nav-tabs li').hover(function () {
         // $('a', this).fadeToggle(1000);
         // $(this).find('.gallery-controls').remove();
-        $(this).append('<div class=" tab-controls">' + '<p><a href="#" class="gallery-edit btn"><i class="glyphicon glyphicon-edit"></i></a></p>' +  '</div>');
+        $(this).append('<div class=" tab-controls">' + '<p><a href="#" class="gallery-edit btn" ><i class="glyphicon glyphicon-edit"></i></a></p>' +  '</div>');
         $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
     }, function () {
         // $('a', this).fadeToggle(1000);

@@ -1,6 +1,6 @@
 <?php include 'config.php' ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <!--
         ===
@@ -17,9 +17,9 @@
         ===
     -->
     <meta charset="utf-8">
-    <title>Free HTML5 Bootstrap Admin Template</title>
+    <title>Админ панель 500СТП</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template.">
+    <!-- <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template."> -->
     <meta name="author" content="Muhammad Usman">
 
     <!-- The styles -->
@@ -149,6 +149,7 @@ margin-right: 0;
    max-width: 200px;
    height: 76px;
 }
+.ch-container{min-height:768px;}
 
     </style>
 <style>
@@ -173,6 +174,11 @@ margin-right: 0;
 }
 
 </style>
+<style>
+.box-content {
+    display:none;
+}
+</style>
 </head>
 
 <body>
@@ -188,18 +194,18 @@ margin-right: 0;
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.php"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
-                <span>Charisma</span></a>
+                <span>Админ 500СТП</span></a>
 
             <!-- user dropdown starts -->
             <div class="btn-group pull-right">
                 <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs"> admin</span>
+                    <i class="glyphicon glyphicon-user"></i><span class="hidden-sm hidden-xs"> админ</span>
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Профиль</a></li>
                     <li class="divider"></li>
-                    <li><a href="login.php">Logout</a></li>
+                    <li><a href="login.php">Выйти</a></li>
                 </ul>
             </div>
             <!-- user dropdown ends -->
@@ -208,7 +214,7 @@ margin-right: 0;
             <div class="btn-group pull-right theme-container animated tada">
                 <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                     <i class="glyphicon glyphicon-tint"></i><span
-                        class="hidden-sm hidden-xs"> Change Theme / Skin</span>
+                        class="hidden-sm hidden-xs"> Изменить тему / Фон</span>
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" id="themes">
@@ -226,7 +232,7 @@ margin-right: 0;
             <!-- theme selector ends -->
 
             <ul class="collapse navbar-collapse nav navbar-nav top-menu">
-                <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Visit Site</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Перейти на сайт</a></li>
                 <li class="dropdown">
                     <a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-star"></i> Dropdown <span
                             class="caret"></span></a>
@@ -242,7 +248,7 @@ margin-right: 0;
                 </li>
                 <li>
                     <form class="navbar-search pull-left">
-                        <input placeholder="Search" class="search-query form-control col-md-10" name="query"
+                        <input placeholder="Поиск" class="search-query form-control col-md-10" name="query"
                                type="text">
                     </form>
                 </li>
