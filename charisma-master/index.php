@@ -16,16 +16,17 @@
     <div class="box col-md-12">
         <div class="box-inner">
             <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-th"></i> РАЗДЕЛ 1</h2>
+                <h2><i class="glyphicon glyphicon-th"></i> РАЗДЕЛ 1 - ДЕТАЛИ</h2>
 
                 <div class="box-icon">
+                    <a href="#" class="btn btn-setting btn-round btn-default"><i
+                             class="glyphicon glyphicon-edit"></i></a>
                     <a href="#" class="btn btn-minimize btn-round btn-default"><i
                             class="glyphicon glyphicon-chevron-up"></i></a>
-                    <a href="#" class="btn btn-setting btn-round btn-default"><i
-                            class="glyphicon glyphicon-cog"></i></a>
                     
-                    <!-- <a href="#" class="btn btn-close btn-round btn-default"><i
-                            class="glyphicon glyphicon-remove"></i></a> -->
+                            <!-- class="glyphicon glyphicon-cog"></i></a> -->
+                            
+                    <a href="#" class="btn btn-close btn-round btn-default" title="ДОБАВИТЬ РАЗДЕЛ"><i class="glyphicon glyphicon-plus-sign"></i></a>
                 </div>
             </div>
 
@@ -47,20 +48,19 @@
                                 <div class="col-sm-12">
                                    <!-- <h5 class="semi-bold">Добавить категорию</h5>  -->
                                    <div class="box-icon">
-                                                <a href="#" class="btn btn-setting btn-round btn-default"><i
-                                                class="glyphicon glyphicon-cog"></i></a>
+                                                <a href="#" class="btn btn-setting btn-round btn-default" title="ДОБАВИТЬ КАТЕГОРИЮ"><i class="glyphicon glyphicon-plus-sign"></i></a>
                                             </div>
                                     <div class="panel panel-transparent ">
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
                                         <li class="active">
-                                        <a data-toggle="tab" href="#tab-fillup11"><span>Категория 1</span></a>
+                                        <a data-toggle="tab" href="#tab-fillup11"><span>Профили гладкие</span></a>
                                         </li>
                                         <li>
                                         <a data-toggle="tab" href="#tab-fillup21"><span>Категория 2</span></a>
                                         </li>
                                         <li>
-                                        <a data-toggle="tab" href="#tab-fillup31"><span>Категория 3</span></a>
+                                        <a data-toggle="tab" href="#tab-fillup31"><span>САНитарно-эпидемиологические Правила И Нормативы</span></a>
                                         </li>
                                     </ul>
                                     <!-- Tab panes -->
@@ -75,9 +75,8 @@
                                             
                                             <div class="panel-body no-padding">
                             <div class="row">
-                            <div class="box-icon">
-                                                <a href="#" class="btn btn-setting btn-round btn-default"><i
-                                                class="glyphicon glyphicon-cog"></i></a>
+                            <div class="box-icon "> <!-- style="float:left !important;"-->
+                                                <a href="#" class="btn btn-setting btn-round btn-default " title="ДОБАВИТЬ ГРУППУ"><i class="glyphicon glyphicon-plus-sign"></i></a>
                                             </div>
                                 <div class="col-lg-12 ">
                                 
@@ -85,13 +84,13 @@
 
                                     <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white" id="tab-3">
                                         <li class="active">
-                                        <a data-toggle="tab" href="#tab3hellowWorld22">Группа 1</a>
+                                        <a data-toggle="tab" href="#tab3hellowWorld22">Под ротанговую сетку</a>
                                         </li>
                                         <li>
                                         <a data-toggle="tab" href="#tab3FollowUs22">Группа 2</a>
                                         </li>
                                         <li>
-                                        <a data-toggle="tab" href="#tab3Inspire32">Группа 3</a>
+                                        <a data-toggle="tab" href="#tab3Inspire32">ПОРОГИ АВТОМАТИЧЕСКИЕ для ПОЛОТЕН ДВЕРНЫХ</a>
                                         </li>
                                        
                                     </ul>
@@ -128,7 +127,9 @@
                                         </div>
                                         <div class="tab-pane" id="tab3Inspire32">
                                                 <div class="box-content">
-                                                <h5 class="semi-bold" >Добавить элемент</h5>
+                                               
+                                                
+                                                
                                                 <!-- <div class="box-icon">
                                                 <a href="#" class="btn btn-setting btn-round btn-default"><i
                                                 class="glyphicon glyphicon-cog"></i></a>
@@ -201,10 +202,10 @@
         // $('a', this).fadeToggle(1000);
         // $(this).find('.gallery-controls').remove();
         $(this).append('<div class=" tab-controls">' + '<p><a href="#" class="gallery-edit btn"><i class="glyphicon glyphicon-edit"></i></a></p>' +  '</div>');
-        $(this).find('.tab-controls').stop().animate({'margin-top': '-45'}, 400);
+        $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
     }, function () {
         // $('a', this).fadeToggle(1000);
-        $(this).find('.tab-controls').stop().animate({'margin-top': '-50'}, 200, function () {  $(this).remove();   });
+        $(this).find('.tab-controls').stop().animate({'margin-top': '0'}, 200, function () {  $(this).remove();   });
     });
 </script>
 

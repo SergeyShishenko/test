@@ -144,13 +144,18 @@ margin-left: 0;
 margin-right: 0;
 
 }
+.nav-tabs > li > a {
+   
+   max-width: 200px;
+   height: 76px;
+}
 
     </style>
 <style>
 .tab-controls {
     position: absolute;
     z-index: 1;
-    margin-top: -50px;
+    margin-top: 0px;
     /* height: 1px; */
     /* min-height: 1px; */
     /* padding: 0 7.5px; */
