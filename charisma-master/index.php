@@ -135,6 +135,7 @@
                                                                                         <?php for ($i = 1; $i <= 24; $i++) { ?>
                                                                                         <li id="image-<?php echo $i ?>"
                                                                                             class="thumbnail">
+                                                                                            <p class="">Конструкции width: 100px;</p>
                                                                                             <a style="background:url(https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/thumbs/<?php echo $i ?>.jpg)"
                                                                                                 title="Sample Image <?php echo $i ?>"
                                                                                                 href="https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/<?php echo $i ?>.jpg"><img

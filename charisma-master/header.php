@@ -189,6 +189,16 @@ margin-right: 0;
 }
 
 .navbar-brand { width: 200px;letter-spacing: 0px;}
+.thumbnail p{
+    margin:0;
+    font-size: 10px;
+    width: 100px;
+    /* height:14.28px; */
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    }
+
 </style>
 </head>
 
