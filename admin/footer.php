@@ -64,8 +64,8 @@
     <footer class="row">
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
         <!-- <label>Добавить раздел</label> -->
-                    <input type="text" value="" name="add_section" class="text" placeholder="Наименование раздела" required>                   
-                    <input type="submit" value="Добавить раздел" name="subscribe" class="button">
+                    <input type="text" value="" name="add_section" class="text" placeholder="Наименование раздела" id="contentText" required>                   
+                    <input type="submit" value="Добавить раздел" name="write" class="button" id="FormSubmit">
                 </div>
 
         <p class="col-md-3 col-sm-3 col-xs-12 powered-by">
