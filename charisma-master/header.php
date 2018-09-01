@@ -253,8 +253,8 @@ margin-right: 0;
             <!-- theme selector ends -->
 
             <ul class="collapse navbar-collapse nav navbar-nav top-menu">
-                <li><a href="#"><i class="glyphicon glyphicon-globe"></i> Перейти на сайт</a></li>
-                <li class="dropdown">
+                <li><a href="http://localhost/"><i class="glyphicon glyphicon-globe"></i> Перейти на сайт</a></li>
+                <!-- <li class="dropdown">
                     <a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-star"></i> Dropdown <span
                             class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -266,7 +266,7 @@ margin-right: 0;
                         <li class="divider"></li>
                         <li><a href="#">One more separated link</a></li>
                     </ul>
-                </li>
+                </li> -->
                 <li>
                     <form class="navbar-search pull-left">
                         <input placeholder="Поиск" class="search-query form-control col-md-10" name="query"

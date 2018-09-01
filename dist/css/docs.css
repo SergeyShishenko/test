@@ -323,6 +323,12 @@ a.list-group-item:hover, a.list-group-item:focus {
   color: rgb(66, 139, 202);
 }
 
+li.disabled a {
+  /* opacity: 0.5; */
+  color: #c1baba;
+  pointer-events: none;
+  cursor: default;
+}
 .list-group {
   z-index: 1000;
 }

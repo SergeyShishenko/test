@@ -404,8 +404,8 @@
                             </ul>
                         </li>
                         <!-- menu -->
-                        <li class="menu">
-                            <a href="detali-profili-reznye.php" class="list-group-item '.$item_reznye_Class.'">Профили резные</a>
+                        <li class="menu disabled">
+                            <a href="detali-profili-reznye.php" class="list-group-item " '.$item_reznye_Class.' ">Профили резные</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
                                     <ul class="list-group sub_menu2">
@@ -472,7 +472,7 @@
                             </ul>
                         </li>
                         <!-- menu -->
-                        <li class="menu">
+                        <li class="menu  disabled">
                             <a href="detali-kamni.php" class="list-group-item '.$item_kamni_Class.'">Камни</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
@@ -498,7 +498,7 @@
                             </ul>
                         </li>
                         <!-- menu -->
-                        <li class="menu">
+                        <li class="menu  disabled">
                                 <a href="detali-rezby.php" class="list-group-item '.$item_rezby_Class.'">Резьбы</a>
                                 <ul class="list-group sub_menu">
                                     <li class="menu2"><a class="list-group-item sub" href="detali-rezby.php#rozetka">Розетка</a>
@@ -544,7 +544,7 @@
                                 </ul>
                             </li>
                         <!-- menu -->
-                        <li class="menu">
+                        <li class="menu disabled">
                             <a href="detali-tokarka.php" class="list-group-item '.$item_tokarka_Class.'">Токарка</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-karnizy-i-frizy.php#izdeliya-karnizy-i-frizy-konstrukcii">КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ</a>
@@ -570,7 +570,7 @@
                             </ul>
                         </li>
                         <!-- menu -->
-                        <li class="menu">
+                        <li class="menu disabled">
                             <a href="detali-frezy.php" class="list-group-item '.$item_frezy_Class.'">Фрезы</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-plintusy-i-moldingi.php#plintusy-i-moldingi-konstrukcii">КОНСТРУКЦИИ ПЛИНТУСОВ И МОЛДИНГОВ ТИПОВЫХ</a>
@@ -596,7 +596,7 @@
                             </ul>
                         </li>
                         <!-- menu -->
-                        <li class="menu">
+                        <li class="menu disabled">
                             <a href="detali-pazy.php" class="list-group-item '.$item_pazy_Class.'">Пазы</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-ekrany-radiatorov.php#ekrany-radiatorov-konstrukcii">КОНСТРУКЦИИ ЭКРАНОВ РАДИАТОРОВ ТИПОВЫХ</a>

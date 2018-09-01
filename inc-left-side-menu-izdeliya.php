@@ -59,7 +59,8 @@
                                                                               
                                 </ul>
                             </li>
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#mayatnikovye-polotna" >ДВЕРНЫЕ БЛОКИ С МАЯТНИКОВЫМИ (БАРНЫМИ) ПОЛОТНАМИ</a>
+                            <li class="menu2  disabled">
+                                <a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#mayatnikovye-polotna" >ДВЕРНЫЕ БЛОКИ С МАЯТНИКОВЫМИ (БАРНЫМИ) ПОЛОТНАМИ</a>
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="#" >...</a>
                                     </li>
@@ -88,7 +89,7 @@
                         </ul>
                     </li>
                     <!-- menu -->
-                    <li class="menu">
+                    <li class="menu  disabled">
                         <a href="izdeliya-mebel-korpusnaya.php" class="list-group-item '.$item_mebel_korpusnaya_Class.'">МЕБЕЛЬ КОРПУСНАЯ</a>
                         <ul class="list-group sub_menu">
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
@@ -156,7 +157,7 @@
                         </ul>
                     </li>
                     <!-- menu -->
-                    <li class="menu">
+                    <li class="menu  disabled">
                         <a href="izdeliya-paneli-stenovye.php" class="list-group-item '.$item_paneli_stenovye_Class.'">ПАНЕЛИ СТЕНОВЫЕ</a>
                         <ul class="list-group sub_menu">
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
@@ -182,7 +183,7 @@
                         </ul>
                     </li>
                     <!-- menu -->
-                    <li class="menu">
+                    <li class="menu  disabled">
                         <a href="izdeliya-karnizy-i-frizy.php" class="list-group-item '.$item_karnizy_i_frizy_Class.'">КАРНИЗЫ И ФРИЗЫ</a>
                         <ul class="list-group sub_menu">
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-karnizy-i-frizy.php#izdeliya-karnizy-i-frizy-konstrukcii">КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ</a>
@@ -208,7 +209,7 @@
                         </ul>
                     </li>
                     <!-- menu -->
-                    <li class="menu">
+                    <li class="menu  disabled">
                         <a href="izdeliya-plintusy-i-moldingi.php" class="list-group-item '.$item_plintusy_i_moldingi_Class.'">ПЛИНТУСЫ И МОЛДИНГИ</a>
                         <ul class="list-group sub_menu">
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-plintusy-i-moldingi.php#plintusy-i-moldingi-konstrukcii">КОНСТРУКЦИИ ПЛИНТУСОВ И МОЛДИНГОВ ТИПОВЫХ</a>
@@ -234,7 +235,7 @@
                         </ul>
                     </li>
                     <!-- menu -->
-                    <li class="menu">
+                    <li class="menu  disabled">
                         <a href="izdeliya-ekrany-radiatorov.php" class="list-group-item  '.$item_ekrany_Class.'">ЭКРАНЫ РАДИАТОРОВ</a>
                         <ul class="list-group sub_menu">
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-ekrany-radiatorov.php#ekrany-radiatorov-konstrukcii">КОНСТРУКЦИИ ЭКРАНОВ РАДИАТОРОВ ТИПОВЫХ</a>
@@ -260,7 +261,7 @@
                         </ul>
                     </li>
                     <!-- menu -->
-                    <li class="menu">
+                    <li class="menu  disabled">
                         <a href="izdeliya-pilyastry.php" class="list-group-item '.$item_pilyastry_Class.'">ПИЛЯСТРЫ</a>
                         <ul class="list-group sub_menu">
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-pilyastry.php#pilyastry-konstrukcii">КОНСТРУКЦИИ ПИЛЯСТР ТИПОВЫХ</a>
@@ -286,7 +287,7 @@
                         </ul>
                     </li>
                     <!-- menu -->
-                    <li class="menu">
+                    <li class="menu ">
                         <a href="izdeliya-potolki.php" class="list-group-item  '.$item_potolki_Class.'">ПОТОЛКИ</a>
                         <ul class="list-group sub_menu">
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#potolki-kessonirovannye">ПОТОЛКИ КЕССОНИРОВАННЫЕ</a>
@@ -297,7 +298,8 @@
                                     </li>                                                                             
                                 </ul>
                             </li>
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#sborochnye-shemy-potolki">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                            <li class="menu2 disabled">
+                            <a class="list-group-item sub" href="izdeliya-potolki.php#sborochnye-shemy-potolki">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="#"> ...</a>
                                     </li>
@@ -310,7 +312,7 @@
                         </ul>
                     </li>
                     <!-- menu -->
-                    <li class="menu">
+                    <li class="menu  disabled">
                         <a href="izdeliya-lestnicy.php" class="list-group-item  '.$item_lestnicy_Class.'">ЛЕСТНИЦЫ</a>
                         <ul class="list-group sub_menu">
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-lestnicy.php#konstrukcii-lestnic-tipovyh">КОНСТРУКЦИИ ЛЕСТНИЦ ТИПОВЫХ</a>

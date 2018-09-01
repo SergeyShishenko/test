@@ -100,12 +100,8 @@ function getClientWidth(){
 $(function () {
     // $('#navsub  li.menu2 ul').hide();
     // $('#navsub  li.menu ul').hide();
-    $('#navsub  li.menu').hover(
-
-        
-        
-        function () {
-var w = getClientWidth();// текущая ширина экрана 
+    $('#navsub  li.menu').not('.disabled').hover(function () {
+        var w = getClientWidth();// текущая ширина экрана 
         if (w>991){
             // delta2 = 0; // счетчик прокрутки колеса sub_menu2
            var colLeftMenu = $(this).parent().children().length; 
@@ -138,7 +134,7 @@ var w = getClientWidth();// текущая ширина экрана
         }
     );//hover
 
-    $('#navsub  li.menu2').hover(
+    $('#navsub  li.menu2').not('.disabled').hover(
         function () {
            var colLeftMenu = $(this).parent().children().length; 
            var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

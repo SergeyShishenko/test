@@ -14,7 +14,7 @@
                 <div class="list-group  bs-sidebar hidden-print affix vertical-menu nav bs-sidenav " id="navsub">
                     <ul class="list-group">
                         <!-- menu -->
-                        <li class="menu">                                
+                        <li class="menu disabled">                                
                             <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php" class="list-group-item '.$item_steklo_zerkalo_Class.'">СТЕКЛО, ЗЕРКАЛО</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2">
@@ -77,7 +77,7 @@
                             </ul>
                         </li>                           
                         <!-- menu -->
-                        <li class="menu">                                
+                        <li class="menu disabled">                                
                             <a href="materialy-ne-derevyannye-vitrazh.php" class="list-group-item '.$item_vitrazh_Class.'">ВИТРАЖ</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2">
@@ -140,7 +140,7 @@
                             </ul>
                         </li>
                         <!-- menu -->
-                        <li class="menu">
+                        <li class="menu disabled">
                             <a href="materialy-ne-derevyannye-metall.php" class="list-group-item '.$item_metall_Class.'">МЕТАЛЛ</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
@@ -208,7 +208,7 @@
                             </ul>
                         </li>
                         <!-- menu -->
-                        <li class="menu">
+                        <li class="menu disabled">
                             <a href="materialy-ne-derevyannye-tkan-kozha.php" class="list-group-item '.$item_tkan_kozha_Class.'">ТКАНЬ, КОЖА</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>

@@ -32,6 +32,8 @@
             </div> -->
 
             <!--End mc_embed_signup-->
+
+                
         </div>
 
    <!-- </div>
@@ -60,11 +62,15 @@
     </div>
 
     <footer class="row">
-        <p class="col-md-9 col-sm-9 col-xs-12 copyright">&copy; <a href="http://usman.it" target="_blank">Muhammad
-                Usman</a> 2012 - <?php echo date('Y') ?></p>
+        <div class="col-md-9 col-sm-9 col-xs-12 copyright">
+        <!-- <label>Добавить раздел</label> -->
+                    <input type="text" value="" name="add_section" class="text" placeholder="Наименование раздела" required>                   
+                    <input type="submit" value="Добавить раздел" name="subscribe" class="button">
+                </div>
 
-        <p class="col-md-3 col-sm-3 col-xs-12 powered-by">Powered by: <a
-                href="http://usman.it/free-responsive-admin-template">Charisma</a></p>
+        <p class="col-md-3 col-sm-3 col-xs-12 powered-by">
+        &copy; <a href="#" >Сергей Шишенко</a> <?php echo date('Y') ?>
+                </p>
     </footer>
 <?php } ?>
 
@@ -105,22 +111,7 @@
 <!-- application script for Charisma demo -->
 <script src="js/charisma.js"></script>
 
-<?php //Google Analytics code for tracking my demo site, you can remove this.
-if ($_SERVER['HTTP_HOST'] == 'usman.it') {
-    ?>
-    <script>
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-26532312-1']);
-        _gaq.push(['_trackPageview']);
-        (function () {
-            var ga = document.createElement('script');
-            ga.type = 'text/javascript';
-            ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
-        })();
-    </script>
-<?php } ?>
+
 
 </body>
 </html>

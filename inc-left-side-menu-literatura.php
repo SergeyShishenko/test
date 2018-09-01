@@ -15,7 +15,7 @@
                     <div class="list-group  bs-sidebar hidden-print affix vertical-menu nav bs-sidenav " id="navsub">
                         <ul class="list-group">
                             <!-- menu -->
-                            <li class="menu">                                
+                            <li class="menu disabled">                                
                                 <a href="literatura-gost.php" class="list-group-item '.$item_gost_Class.'">ГОСТ</a>
                                 <ul class="list-group sub_menu">
                                     <li class="menu2">
@@ -78,7 +78,7 @@
                                 </ul>
                             </li>
                             <!-- menu -->
-                            <li class="menu">
+                            <li class="menu disabled">
                                 <a href="literatura-snip.php" class="list-group-item '.$item_snip_Class.'" style="text-transform:none;">СНиП</a>
                                 <ul class="list-group sub_menu">
                                     <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
@@ -146,7 +146,7 @@
                                 </ul>
                             </li>
                             <!-- menu -->
-                            <li class="menu">
+                            <li class="menu disabled">
                                 <a href="literatura-sanpin.php" class="list-group-item '.$item_sanpin_Class.'" style="text-transform:none;">СанПиН</a>
                                 <ul class="list-group sub_menu">
                                     <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
@@ -172,7 +172,7 @@
                                 </ul>
                             </li>
                             <!-- menu -->
-                            <li class="menu">
+                            <li class="menu disabled">
                                 <a href="literatura-sp-svod-pravil.php" class="list-group-item '.$item_sp_svod_pravil_Class.'" style="text-transform:none;">СП (Свод Правил)</a>
                                 <ul class="list-group sub_menu">
                                     <li class="menu2"><a class="list-group-item sub" href="izdeliya-karnizy-i-frizy.php#izdeliya-karnizy-i-frizy-konstrukcii">КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ</a>
@@ -198,7 +198,7 @@
                                 </ul>
                             </li>
                             <!-- menu -->
-                            <li class="menu">
+                            <li class="menu disabled">
                                 <a href="literatura-spravochniki.php" class="list-group-item '.$item_spravochniki_Class.'">СПРАВОЧНИКИ</a>
                                 <ul class="list-group sub_menu">
                                     <li class="menu2"><a class="list-group-item sub" href="izdeliya-plintusy-i-moldingi.php#plintusy-i-moldingi-konstrukcii">КОНСТРУКЦИИ ПЛИНТУСОВ И МОЛДИНГОВ ТИПОВЫХ</a>

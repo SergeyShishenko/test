@@ -127,7 +127,7 @@
                                             </li>                                                                                   
                                         </ul>
                                     </li>
-                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mehanizmy-podemnye-dlya-fasadov">МЕХАНИЗМЫ ПОДЪЕМНЫЕ для ФАСАДОВ</a>
+                                    <li class="menu2 disabled"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mehanizmy-podemnye-dlya-fasadov">МЕХАНИЗМЫ ПОДЪЕМНЫЕ для ФАСАДОВ</a>
                                         <ul class="list-group sub_menu2">
                                            
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mehanizmy-podemny1">...</a>
@@ -217,7 +217,7 @@
                                             </li>                                                                                                                                
                                         </ul>
                                      </li>
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ</a>
+                                     <li class="menu2  disabled"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ</a>
                                         <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-10-300-shtanga-kruglaya-dlya-veshala">5000502-10-300 штанга круглая для вешала</a>
                                             </li>
@@ -225,7 +225,7 @@
                                             </li>                                                                                    
                                         </ul>
                                      </li>
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ</a>
+                                     <li class="menu2 disabled"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ</a>
                                         <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantograf1">...</a>
                                             </li>
@@ -233,7 +233,7 @@
                                             </li>                                                                                    
                                         </ul>
                                      </li>
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#ruchki">РУЧКИ</a>
+                                     <li class="menu2 disabled"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#ruchki">РУЧКИ</a>
                                         <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#ruchka1" >...</a>
                                             </li>
@@ -241,7 +241,7 @@
                                             </li>                                                                                    
                                         </ul>
                                      </li>
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ</a>
+                                     <li class="menu2 disabled"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ</a>
                                         <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mekhanizmy1" >...</a>
                                             </li>                                                                                                                              
@@ -254,7 +254,7 @@
                                             </li>                                                                                                                               
                                         </ul>
                                      </li> 
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ</a>
+                                     <li class="menu2 disabled"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ</a>
                                      <ul class="list-group sub_menu2">
                                          <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#razdvizhnoy-derzhatel-dlya-obuvi-560-1000-mm-chernyy-892-11-300">Раздвижной держатель для обуви 560-1000 мм черный </a>
                                          </li>
@@ -284,7 +284,7 @@
                                 </ul>
                             </li>
                             <li class="menu">
-                                <a href="furnitura-katalogi.php" class="list-group-item '.$item_katalogi_Class.'">КАТАЛОГИ</a>
+                                <a href="" class="list-group-item '.$item_katalogi_Class.'">КАТАЛОГИ</a>
                                 <ul class="list-group sub_menu">
                                     <li class="menu2"><a href="https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html" target="_blank" class="list-group-item sub">HAFELE</a>                                       
                                     </li>

@@ -1,16 +1,18 @@
 $(function(){
-$('table td').on('click', function () {
-    // извлечь информацию из атрибута data-content
-    // alert(this.innerHTML);
+$('td').on('click', function () {
+    
+    // alert($(this).css('color'));
+    // alert($(this).html());
     // var ref = $(this).find('p').data('href'); 
-    var ref = $(this).find(':first-child').data('href'); 
+
+    var ref = $(this).not('.disabled').find(':first-child').data('href'); 
 
     var Blank = $(this).find(':first-child').attr("data-link");
     // var _urlTemp = _$this.attr("data-url");
     if (Blank === "_blank") {
       window.open(ref, '_blank');
     } else {
-        if(typeof ref != "undefined" && ref != null)
+        if(typeof ref != "undefined" && ref != null && ref != "")
     
         {  
             // alert(ref);
@@ -324,14 +326,13 @@ $(function() {
 // });
 
 
-// $(function(){
+// отмена клика disabled
     $('[data-href*=".php"],[data-href^="http"],[onclick]').not(":contains(???)").each(function(){
-        // выведем содержимое текущего элемента в консоль
-        // console.log($(this).parent().text());
-        $(this).parent().css( "color", "Blue" );
+        
+        $(this).parent().not('.disabled').css( "color", "Blue" );
       });
     
-//   });
+
 
 
 

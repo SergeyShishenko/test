@@ -43,7 +43,7 @@
                         <li '.$materialyClass.'>
                             <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>
                         </li>
-                        <li '.$literaturaClass.'>
+                        <li '.$literaturaClass.' class=" disabled">
                             <a href="literatura-gost.php">ЛИТЕРАТУРА</a>
                         </li>
                     </ul>  

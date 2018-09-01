@@ -75,7 +75,7 @@
                     </ul>
                 </li>
                 <!-- menu -->
-                <li class="menu">
+                <li class="menu disabled">
                     <a href="metodichki-ergonomika.php" class="list-group-item '.$item_ergonomika_Class.'">ЭРГОНОМИКА</a>
                     <ul class="list-group sub_menu">
                         <li class="menu2"><a class="list-group-item sub" href="metodichki-ergonomika.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>

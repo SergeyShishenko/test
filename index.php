@@ -253,25 +253,25 @@ include 'inc-version-css-js.php';
                                                                 <TABLE >  <!--LEVEL4-->                                                                                        
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-profili-nakladki-50">                                                                          
-                                                                            <p data-img="./dist/images/mdf-nakladka-050-dsh.png" data-href="detali-profili.php#profili-nakladki-50">МДФ накладка №050/ДШ <span> <br>~profili-nakladki-50</span></p>
+                                                                            <p data-img="./dist/images/mdf-nakladka-050-dsh.png" data-href="detali-profili.php#profili-nakladki-50">МДФ накладка №050/ДШ<span> <br>~profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-profili-nakladki-51">
-                                                                            <p   data-img="./dist/images/mdf-nakladka-051-dsh.png" data-href="detali-profili.php#profili-nakladki-51">МДФ накладка №051/ДШ <span> <br>~profili-nakladki-51</span></p>
+                                                                            <p   data-img="./dist/images/mdf-nakladka-051-dsh.png" data-href="detali-profili.php#profili-nakladki-51">МДФ накладка №051/ДШ<span> <br>~profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite"  colspan="2" id="flo-profili-nakladki-52">
-                                                                            <p  data-img="./dist/images/mdf-nakladka-052-dsh.png" data-href="detali-profili.php#profili-nakladki-52">МДФ накладка №052/ДШ <span> <br>~profili-nakladki-52</span></p>
+                                                                            <p  data-img="./dist/images/mdf-nakladka-052-dsh.png" data-href="detali-profili.php#profili-nakladki-52">МДФ накладка №052/ДШ<span> <br>~profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite"  colspan="2" id="floprofili-nakladki-53">
-                                                                            <p data-img="./dist/images/profili-nakladki-53.png"   data-href="detali-profili.php#profili-nakladki-53">МДФ накладка №053/ДШ <span> <br>~profili-nakladki-53</span></p>
+                                                                            <p data-img="./dist/images/profili-nakladki-53.png"   data-href="detali-profili.php#profili-nakladki-53">МДФ накладка №053/ДШ<span> <br>~profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1195,37 +1195,37 @@ include 'inc-version-css-js.php';
                                             </TR>                     
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->                                               
                                             <TR>
-                                                <TD class="hover mapsite " id="footer8">
+                                                <TD class="hover mapsite  disabled" id="footer8">
                                                     <p data-href="detali-profili-reznye.php"  data-img="./dist/images/no-foto.png" id="floating9">ПРОФИЛИ РЕЗНЫЕ <span><br>~- detali-profili-reznye</span></p></TD>
                                                 <TD>
                                                     <TABLE >
                                                         <TR>
                                                             <TD data-tooltip="НАКЛАДКИ" class="hover mapsite" id="footer58">
-                                                                    <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-foto.png" id="floating59">1001 <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                    <p data-href=""  data-img="./dist/images/no-foto.png" id="floating59">1001 <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite"  colspan="2" id="flo-">                                                                          
-                                                                            <p data-href="detali-profili.php#profili-nakladki-50" >МДФ накладка №050/ДШ <span> <br>~-profili-nakladki-50</span></p>
+                                                                            <p data-href="" >??? <span> <br>~-profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-52" >МДФ накладка №052/ДШ <span> <br>~-profili-nakladki-52</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-53" >МДФ накладка №053/ДШ <span> <br>~-profili-nakladki-53</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1241,31 +1241,31 @@ include 'inc-version-css-js.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="НАКЛАДКИ" class="hover mapsite" id="footer59" >
-                                                                    <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-foto.png" id="floating60">1004 <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                    <p data-href=""  data-img="./dist/images/no-foto.png" id="floating60">1004 <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                          
-                                                                            <p data-href="detali-profili.php#profili-nakladki-50" >МДФ накладка №050/ДШ <span> <br>~-profili-nakladki-50</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" class= "flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-52" >МДФ накладка №052/ДШ <span> <br>~-profili-nakladki-52</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-53" >МДФ накладка №053/ДШ <span> <br>~-profili-nakladki-53</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1281,31 +1281,31 @@ include 'inc-version-css-js.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="НАКЛАДКИ" class="hover mapsite" id="footer60">
-                                                                    <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-foto.png" id="floating61">1006 <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                    <p data-href=""  data-img="./dist/images/no-foto.png" id="floating61">1006 <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                          
-                                                                            <p data-href="detali-profili.php#profili-nakladki-50" >МДФ накладка №050/ДШ <span> <br>~-profili-nakladki-50</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-52" >МДФ накладка №052/ДШ <span> <br>~-profili-nakladki-52</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-53" >МДФ накладка №053/ДШ <span> <br>~-profili-nakladki-53</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1321,31 +1321,31 @@ include 'inc-version-css-js.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="НАКЛАДКИ" class="hover mapsite" id="footer61" >
-                                                                    <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-foto.png" id="floating62">1007 <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                    <p data-href=""  data-img="./dist/images/no-foto.png" id="floating62">1007 <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                          
-                                                                            <p data-href="detali-profili.php#profili-nakladki-50" >МДФ накладка №050/ДШ <span> <br>~-profili-nakladki-50</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-52" >МДФ накладка №052/ДШ <span> <br>~-profili-nakladki-52</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-53" >МДФ накладка №053/ДШ <span> <br>~-profili-nakladki-53</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1361,31 +1361,31 @@ include 'inc-version-css-js.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="НАКЛАДКИ" class="hover mapsite" id="footer62">
-                                                                    <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-foto.png" id="floating63">1008 <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                    <p data-href=""  data-img="./dist/images/no-foto.png" id="floating63">1008 <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                          
-                                                                            <p data-href="detali-profili.php#profili-nakladki-50" >МДФ накладка №050/ДШ <span> <br>~-profili-nakladki-50</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-52" >МДФ накладка №052/ДШ <span> <br>~-profili-nakladki-52</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-53" >МДФ накладка №053/ДШ <span> <br>~-profili-nakladki-53</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1401,31 +1401,31 @@ include 'inc-version-css-js.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="НАКЛАДКИ" class="hover mapsite" id="footer63" >
-                                                                    <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-foto.png" id="floating64">1009 <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                    <p data-href=""  data-img="./dist/images/no-foto.png" id="floating64">1009 <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                          
-                                                                            <p data-href="detali-profili.php#profili-nakladki-50" >МДФ накладка №050/ДШ <span> <br>~-profili-nakladki-50</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-52" >МДФ накладка №052/ДШ <span> <br>~-profili-nakladki-52</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-53" >МДФ накладка №053/ДШ <span> <br>~-profili-nakladki-53</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1441,31 +1441,31 @@ include 'inc-version-css-js.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="НАКЛАДКИ" class="hover mapsite" id="footer64" >
-                                                                    <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-foto.png" id="floating65">1010 <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                    <p data-href=""  data-img="./dist/images/no-foto.png" id="floating65">1010 <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                          
-                                                                            <p data-href="detali-profili.php#profili-nakladki-50" >МДФ накладка №050/ДШ <span> <br>~-profili-nakladki-50</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-52" >МДФ накладка №052/ДШ <span> <br>~-profili-nakladki-52</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-53" >МДФ накладка №053/ДШ <span> <br>~-profili-nakladki-53</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1481,31 +1481,31 @@ include 'inc-version-css-js.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="НАКЛАДКИ" class="hover mapsite" id="footer65">
-                                                                    <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-foto.png" id="floating66">1015 <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                    <p data-href=""  data-img="./dist/images/no-foto.png" id="floating66">1015 <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                          
-                                                                            <p data-href="detali-profili.php#profili-nakladki-50" >МДФ накладка №050/ДШ <span> <br>~-profili-nakladki-50</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-52" >МДФ накладка №052/ДШ <span> <br>~-profili-nakladki-52</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-53" >МДФ накладка №053/ДШ <span> <br>~-profili-nakladki-53</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1521,31 +1521,31 @@ include 'inc-version-css-js.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="НАКЛАДКИ" class="hover mapsite" id="footer66" >
-                                                                    <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-foto.png" id="floating67">1018 <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                    <p data-href=""  data-img="./dist/images/no-foto.png" id="floating67">1018 <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                          
-                                                                            <p data-href="detali-profili.php#profili-nakladki-50" >МДФ накладка №050/ДШ <span> <br>~-profili-nakladki-50</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-52" >МДФ накладка №052/ДШ <span> <br>~-profili-nakladki-52</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-53" >МДФ накладка №053/ДШ <span> <br>~-profili-nakladki-53</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1561,31 +1561,31 @@ include 'inc-version-css-js.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="НАКЛАДКИ" class="hover mapsite" id="footer67">
-                                                                    <p data-href="detali-profili.php#profili-nakladki"  data-img="./dist/images/no-foto.png" id="floating68">1019 <span><br>~- nakladki yfrkflrb</span></p> 
+                                                                    <p data-href=""  data-img="./dist/images/no-foto.png" id="floating68">1019 <span><br>~- nakladki yfrkflrb</span></p> 
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-">                                                                          
-                                                                            <p data-href="detali-profili.php#profili-nakladki-50" >МДФ накладка №050/ДШ <span> <br>~-profili-nakladki-50</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-50</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-51" >МДФ накладка №051/ДШ <span> <br>~-profili-nakladki-51</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-51</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-52" >МДФ накладка №052/ДШ <span> <br>~-profili-nakladki-52</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-52</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-">
-                                                                            <p data-href="detali-profili.php#profili-nakladki-53" >МДФ накладка №053/ДШ <span> <br>~-profili-nakladki-53</span></p>
+                                                                            <p data-href="" >???<span> <br>~-profili-nakladki-53</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
@@ -1603,7 +1603,7 @@ include 'inc-version-css-js.php';
                                             </TR>                     
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->     
                                             <TR>
-                                                <TD data-tooltip="КАМНИ" class="hover mapsite" id="footer9">
+                                                <TD data-tooltip="КАМНИ" class="hover mapsite disabled" id="footer9">
                                                     <p data-href="detali-kamni.php"  data-img="./dist/images/no-foto.png" id="floating10">КАМНИ<span><br>~-kamni</span></p></TD>
                                                 <TD>
                                                     <TABLE >
@@ -1630,7 +1630,7 @@ include 'inc-version-css-js.php';
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="Камни резные" class="hover mapsite" id="footer69">
+                                                            <TD data-tooltip="Камни резные" class="hover mapsite disabled" id="footer69">
                                                                 <p data-href="detali-kamni.php"  data-img="./dist/images/no-foto.png" id="floating70">Камни резные <span><br>~- kamni-reznye</span></p>
                                                             </TD> 
                                                             <TD>
@@ -1655,7 +1655,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
-                                                <TD data-tooltip="РЕЗЬБЫ" class="hover mapsite" id="footer10">
+                                                <TD data-tooltip="РЕЗЬБЫ" class="hover mapsite disabled" id="footer10">
                                                     <p data-href="detali-rezby.php"  data-img="./dist/images/no-foto.png" id="floating11">РЕЗЬБЫ<span><br>~-rezby</span></p></TD>
                                                 <TD>
                                                     <TABLE >
@@ -1800,7 +1800,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
-                                                <TD data-tooltip="ТОКАРКИ" class="hover mapsite" id="footer11">
+                                                <TD data-tooltip="ТОКАРКИ" class="hover mapsite disabled" id="footer11">
                                                     <p data-href="detali-tokarka.php"  data-img="./dist/images/no-foto.png" id="floating12">ТОКАРКИ<span><br>~-tokarki</span></p>
                                                     <p data-href="detali-tokarka.php" class="KEYWORDS">ТОКАРКА</p>
                                                 </TD>                                                    
@@ -1854,7 +1854,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2--> 
                                             <TR>
-                                                <TD data-tooltip="ФРЕЗЫ" class="hover mapsite" id="footer12">
+                                                <TD data-tooltip="ФРЕЗЫ" class="hover mapsite disabled" id="footer12">
                                                     <p data-href="detali-frezy.php"  data-img="./dist/images/no-foto.png" id="floating13">ФРЕЗЫ<span><br>~-frezy</span></p></TD>
                                                 <TD>
                                                     <TABLE >
@@ -1919,7 +1919,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2--> 
                                             <TR>
-                                                <TD data-tooltip="ПАЗЫ" class="hover mapsite" id="footer13">
+                                                <TD data-tooltip="ПАЗЫ" class="hover mapsite disabled" id="footer13">
                                                     <p data-href="detali-pazy.php"  data-img="./dist/images/no-foto.png" id="floating14">ПАЗЫ<span><br>~- pazy</span></p></TD>
                                                 <TD>
                                                     <TABLE >
@@ -2186,7 +2186,7 @@ include 'inc-version-css-js.php';
                                             </TR>                     
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->      
                                             <TR>
-                                                <TD data-tooltip="МЕБЕЛЬ КОРПУСНАЯ" class="hover mapsite" id="footer15">
+                                                <TD data-tooltip="МЕБЕЛЬ КОРПУСНАЯ" class="hover mapsite disabled" id="footer15">
                                                     <p data-href="izdeliya-mebel-korpusnaya.php"  data-img="./dist/images/no-foto.png" id="floating16">МЕБЕЛЬ КОРПУСНАЯ<span><br>~-izdeliya-mebel-korpusnaya</span></p></TD>
                                                     <TD>
                                                             <TABLE >
@@ -2405,7 +2405,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
-                                                <TD data-tooltip="ПЕНЕЛИ СТЕНОВЫЕ" class="hover mapsite" id="footer16">
+                                                <TD data-tooltip="ПЕНЕЛИ СТЕНОВЫЕ" class="hover mapsite disabled" id="footer16">
                                                     <p data-href="izdeliya-paneli-stenovye.php"  data-img="./dist/images/no-foto.png" id="floating17">ПЕНЕЛИ СТЕНОВЫЕ<span><br>~-izdeliya-paneli-stenovye</span></p></TD>
                                                 <TD>
                                                     <TABLE >
@@ -2482,7 +2482,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
-                                                <TD data-tooltip="КАРНИЗЫ И ФРИЗЫ" class="hover mapsite" id="footer17">
+                                                <TD data-tooltip="КАРНИЗЫ И ФРИЗЫ" class="hover mapsite disabled" id="footer17">
                                                     <p data-href="izdeliya-karnizy-i-frizy.php"  data-img="./dist/images/no-foto.png" id="floating18">КАРНИЗЫ И ФРИЗЫ<span><br>~-izdeliya-karnizy-i-frizy</span></p></TD>
                                                     <TD>
                                                         <TABLE >
@@ -2559,7 +2559,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2--> 
                                             <TR>
-                                                <TD data-tooltip="ПЛИНТУСЫ И МОЛДИНГИ" class="hover mapsite" id="footer18">
+                                                <TD data-tooltip="ПЛИНТУСЫ И МОЛДИНГИ" class="hover mapsite disabled" id="footer18">
                                                     <p data-href="izdeliya-plintusy-i-moldingi.php"  data-img="./dist/images/no-foto.png" id="floating19">ПЛИНТУСЫ И МОЛДИНГИ<span><br>~-izdeliya-plintusy-i-moldingi</span></p></TD>
                                                     <TD>
                                                         <TABLE >
@@ -2636,7 +2636,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2--> 
                                             <TR>
-                                                <TD data-tooltip="ЭКРАНЫ РАДИАТОРОВ" class="hover mapsite" id="footer19">
+                                                <TD data-tooltip="ЭКРАНЫ РАДИАТОРОВ" class="hover mapsite disabled" id="footer19">
                                                     <p data-href="izdeliya-ekrany-radiatorov.php"  data-img="./dist/images/no-foto.png" id="floating20">ЭКРАНЫ РАДИАТОРОВ<span><br>~-izdeliya-ekrany-radiatorov</span></p></TD>
                                                     <TD>
                                                         <TABLE >
@@ -2713,7 +2713,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2--> 
                                             <TR>
-                                                <TD data-tooltip="ПИЛЯСТРЫ" class="hover mapsite" id="footer20">
+                                                <TD data-tooltip="ПИЛЯСТРЫ" class="hover mapsite disabled" id="footer20">
                                                     <p data-href="izdeliya-pilyastry.php"  data-img="./dist/images/no-foto.png" id="floating21">ПИЛЯСТРЫ<span><br>~-izdeliya-pilyastry</span></p></TD>
                                                 <TD>
                                                     <TABLE >
@@ -2856,7 +2856,7 @@ include 'inc-version-css-js.php';
                                             </TR>
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2--> 
                                             <TR>
-                                                <TD data-tooltip="ЛЕСТНИЦЫ" class="hover mapsite" id="footer22">
+                                                <TD data-tooltip="ЛЕСТНИЦЫ" class="hover mapsite disabled" id="footer22">
                                                     <p data-href="izdeliya-lestnicy.php"  data-img="./dist/images/no-foto.png" id="floating523">ЛЕСТНИЦЫ<span><br>~-izdeliya-lestnicy</span></p></TD>
                                                     <TD>
                                                         <TABLE >
@@ -3782,7 +3782,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
-                                                <TD data-tooltip="ЭРГОНОМИКА" class="hover mapsite" id="footer29">
+                                                <TD data-tooltip="ЭРГОНОМИКА" class="hover mapsite disabled" id="footer29">
                                                     <p data-href="metodichki-ergonomika.php"  data-img="./dist/images/no-foto.png" id="floating30">ЭРГОНОМИКА<span><br>~-metodichki-ergonomika</span></p></TD>
                                                 <TD>
                                                     <TABLE >
@@ -5151,7 +5151,7 @@ include 'inc-version-css-js.php';
 
                     <!-- МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ --> 
                     <TR id="materialy-ne-derevyannye-steklo-zerkalo-vitrazh">
-                        <TD  data-tooltip="МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ" class="hover mapsite first-main" id="footer5">
+                        <TD  data-tooltip="МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ" class="hover mapsite first-main disabled" id="footer5">
                                 <p  data-href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php"  data-img="./dist/images/no-foto.png" id="floating6">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ <span><br>~- materialy-ne-derevyannye-steklo-zerkalo-vitrazh</span></p>
                         </TD>
                         <TD>
@@ -5160,7 +5160,7 @@ include 'inc-version-css-js.php';
                                     <TD>
                                         <TABLE >
                                             <TR>
-                                                <TD data-tooltip="СТЕКЛО, ЗЕРКАЛО" class="hover mapsite " id="footer35">
+                                                <TD data-tooltip="СТЕКЛО, ЗЕРКАЛО" class="hover mapsite  disabled" id="footer35">
                                                         <p data-href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php"  data-img="./dist/images/no-foto.png" id="floating36">СТЕКЛО, ЗЕРКАЛО<span><br>~- steklo-zerkalo</span></p> 
                                                         
                                                         <TD>
@@ -5183,7 +5183,7 @@ include 'inc-version-css-js.php';
                                             </TR>                     
                                             <TR><TD>&nbsp;  </TD></TR> <!--end LEVEL2-->      
                                             <TR>
-                                                <TD data-tooltip="ВИТРАЖ" class="hover mapsite" id="footer36">
+                                                <TD data-tooltip="ВИТРАЖ" class="hover mapsite disabled" id="footer36">
                                                     <p data-href="materialy-ne-derevyannye-vitrazh.php"  data-img="./dist/images/no-foto.png" id="floating37">ВИТРАЖ<span><br>~-materialy-ne-derevyannye-vitrazh</span></p></TD>
                                                     <TD>
                                                         <TABLE >
@@ -5205,7 +5205,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
-                                                <TD data-tooltip="МЕТАЛЛ" class="hover mapsite" id="footer37">
+                                                <TD data-tooltip="МЕТАЛЛ" class="hover mapsite disabled" id="footer37">
                                                     <p data-href="materialy-ne-derevyannye-metall.php"  data-img="./dist/images/no-foto.png" id="floating38">МЕТАЛЛ<span><br>~-metall</span></p></TD>
                                                     <TD>
                                                         <TABLE >
@@ -5227,7 +5227,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
-                                                <TD data-tooltip="ТКАНЬ, КОЖА" class="hover mapsite" id="footer38">
+                                                <TD data-tooltip="ТКАНЬ, КОЖА" class="hover mapsite disabled" id="footer38">
                                                     <p data-href="materialy-ne-derevyannye-tkan-kozha.php"  data-img="./dist/images/no-foto.png" id="floating39">ТКАНЬ, КОЖА<span><br>~-tkan-kozha</span></p></TD>
                                                     <TD>
                                                         <TABLE >
@@ -5249,7 +5249,7 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
-                                                <TD data-tooltip="СВЕТ" class="hover mapsite" id="footer39">
+                                                <TD data-tooltip="СВЕТ" class="hover mapsite disabled" id="footer39">
                                                     <p data-href="materialy-ne-derevyannye-tkan-kozha.php"  data-img="./dist/images/no-foto.png" id="floating40">СВЕТ<span><br>~-tkan-kozha</span></p></TD>
                                                     <TD>
                                                         <TABLE >
@@ -5279,7 +5279,7 @@ include 'inc-version-css-js.php';
 
                     <!-- ЛИТЕРАТУРА СПРАВОЧНАЯ --> 
                     <TR id="literatura-gost">
-                            <TD  data-tooltip="ЛИТЕРАТУРА СПРАВОЧНАЯ" class="hover mapsite first-main" id="footer6" >
+                            <TD  data-tooltip="ЛИТЕРАТУРА СПРАВОЧНАЯ" class="hover mapsite first-main disabled" id="footer6" >
                                     <p data-href="literatura-gost.php"  data-img="./dist/images/no-foto.png" id="floating7">ЛИТЕРАТУРА СПРАВОЧНАЯ <span><br>~- literatura-gost</span></p>
                             </TD>
                             <TD>
@@ -5288,12 +5288,12 @@ include 'inc-version-css-js.php';
                                         <TD>
                                             <TABLE >
                                                 <TR>
-                                                    <TD data-tooltip="ГОСТ" class="hover mapsite " id="footer40">
+                                                    <TD data-tooltip="ГОСТ" class="hover mapsite  disabled" id="footer40">
                                                         <p data-href="literatura-gost.php"  data-img="./dist/images/no-foto.png" id="floating41">ГОСТ <span><br>~-gost</span></p></TD>
                                                         <TD>
                                                             <TABLE >
                                                                 <TR>
-                                                                    <TD data-tooltip="" class="hover mapsite" >
+                                                                    <TD data-tooltip="" class="hover mapsite " >
                                                                             <p data-href="" data-img="./dist/images/no-foto.png">ГОСТ 21.501-80 Система проектной документации для строительства. Архитектурные решения. Рабочие чертежи<span><br>~-117-metodicheskoe-posobie-po-izdeliyam</span></p> 
                                                                     </TD>
                                                                 </TR> 
@@ -5353,7 +5353,7 @@ include 'inc-version-css-js.php';
                                                 </TR>                     
                                                 <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->      
                                                 <TR>
-                                                    <TD data-tooltip="СНиП" class="hover mapsite" id="footer41">
+                                                    <TD data-tooltip="СНиП" class="hover mapsite disabled" id="footer41">
                                                         <p data-href="literatura-snip.php"  data-img="./dist/images/no-foto.png" id="floating42">СНиП<span><br>~-snip</span></p>
                                                     </TD>
                                                     <TD>
@@ -5376,7 +5376,7 @@ include 'inc-version-css-js.php';
                                                 </TR> 
                                                 <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                                 <TR>
-                                                    <TD data-tooltip="САНитарно-эпидемиологические Правила И Нормативы" class="hover mapsite" id="footer42">
+                                                    <TD data-tooltip="САНитарно-эпидемиологические Правила И Нормативы" class="hover mapsite disabled" id="footer42">
                                                         <p data-href="literatura-sanpin.php"  data-img="./dist/images/no-foto.png" id="floating43"> СанПиН (САНитарно-эпидемиоло<wbr>гические Правила И Нормативы)<span><br>~-sanpin</span></p>
                                                         <!-- <p data-href="literatura-sanpin.php" class="KEYWORDS">СанПиН</p></TD> -->
                                                     </TD>
@@ -5400,7 +5400,7 @@ include 'inc-version-css-js.php';
                                                 </TR> 
                                                 <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                                 <TR>
-                                                    <TD data-tooltip="СП (Свод Правил)" class="hover mapsite" id="footer43">
+                                                    <TD data-tooltip="СП (Свод Правил)" class="hover mapsite disabled" id="footer43">
                                                         <p data-href="literatura-sp-svod-pravil.php"  data-img="./dist/images/no-foto.png" id="floating44">СП (Свод Правил)<span><br>~-sp-svod-pravil</span></p>
                                                     </TD>
                                                     <TD>
@@ -5422,7 +5422,7 @@ include 'inc-version-css-js.php';
                                                 </TR> 
                                                 <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2--> 
                                                 <TR>
-                                                    <TD data-tooltip="СПРАВОЧНИКИ" class="hover mapsite" id="footer44">
+                                                    <TD data-tooltip="СПРАВОЧНИКИ" class="hover mapsite disabled" id="footer44">
                                                         <p data-href="literatura-spravochniki.php"  data-img="./dist/images/no-foto.png" id="floating45">СПРАВОЧНИКИ<span><br>~-frezy</span></p>
                                                     </TD>
                                                     <TD>
@@ -5487,7 +5487,7 @@ include 'inc-version-css-js.php';
                                                             <TR>
                                                                 <TD data-tooltip="сводная таблица фурнитуры дверей распашных, класс ЛЮКС, STANDART" class="hover mapsite" colspan="2">
                                                                 <!-- <p data-href="#rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon" data-img="./dist/images/no-foto.png">рекомендации по выбору и устройству современных конструкций окон<span><br>~rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon</span></p>   -->
-                                                                <p data-href="https://yadi.sk/i/Ikj5Zcxh3ZyMJX" data-link="_blank" data-img="./dist/images/no-foto.png">рекомендации по выбору и устройству современных конструкций окон<span><br>~rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon</span></p>
+                                                                <p data-href="https://yadi.sk/i/0aYsg3Vo3akdS5" data-link="_blank" data-img="./dist/images/no-foto.png">рекомендации по выбору и устройству современных конструкций окон<span><br>~rekomendacii-po-vyboru-i-ustroystvu-sovremennyh-konstrukciy-okon</span></p>
                                                                     
                                                                 </TD>                                                         
                                                             </TR> 

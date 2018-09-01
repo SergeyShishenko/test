@@ -26,7 +26,7 @@ include 'inc-left-side-menu-furnitura.php';
                       
                      
                         <div class="bs-callout bs-callout-warning cont" > 
-                        <h2 >Видео с Ютуба</h2>   
+                        <!-- <h2 >Видео с Ютуба</h2>    -->
                             <iframe  class="center-block   img-rounded img-thumbnail b-lazy bar video-album" src="https://www.youtube.com/embed/hSWQ0w1sB3M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             
                         </div>
