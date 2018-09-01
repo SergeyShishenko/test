@@ -31,8 +31,7 @@
                     <div class="panel panel-transparent">  
                         <div class="panel-body no-padding">
                             <div class="row">
-                                <div class="col-sm-12">
-                                    <!-- <h5 class="semi-bold">Добавить категорию</h5>  -->
+                                <div class="col-sm-12">                                   
                                     <div class="box-icon">
                                         <a href="#" class="btn btn-setting btn-round btn-default" title="ДОБАВИТЬ КАТЕГОРИЮ"><i
                                                 class="glyphicon glyphicon-plus-sign"></i></a>
@@ -197,30 +196,32 @@
             </div>
         </div>
     </div>
+    <!-- END box col-md-12 -->
 
-<?php
-//подключаем конфигурационный файл
-define('__ROOT__', dirname(dirname(__FILE__))); 
-require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
+    
+    <?php
+    //подключаем конфигурационный файл
+    define('__ROOT__', dirname(dirname(__FILE__))); 
+    require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
 
-$dbconn=dbconnect();
+    $dbconn=dbconnect();
 
-//MySQL запрос
-$Result = mysqli_query($dbconn,"SELECT id,content FROM add_delete_record");
+    //MySQL запрос
+    $Result = mysqli_query($dbconn,"SELECT id,content FROM add_delete_record");
 
-// получаем все записи из таблицы add_delete_record
-while($row = mysqli_fetch_array($Result))
-{
-echo '<div id="item_'.$row["id"].'">';
-echo '<div class="del_wrapper"><a href="#" class="del_button" id="del-'.$row["id"].'">';
-echo '<img src="img/icon_del.gif" border="0" />';
-echo '</a></div>';
-echo $row["content"].'</div>';
-}
+    // получаем все записи из таблицы add_delete_record
+    while($row = mysqli_fetch_array($Result))
+    {
+    echo '<div id="item_'.$row["id"].'">';
+    echo '<div class="del_wrapper"><a href="#" class="del_button" id="del-'.$row["id"].'">';
+    echo '<img src="img/icon_del.gif" border="0" />';
+    echo '</a></div>';
+    echo $row["content"].'</div>';
+    }
 
-//Закрывает соединение с сервером MySQL
-mysqli_close($dbconn);
-?>
+    //Закрывает соединение с сервером MySQL
+    mysqli_close($dbconn);
+    ?>
 
 </article>
 
@@ -236,59 +237,59 @@ mysqli_close($dbconn);
     });
 </script>
 
-   <script>
+<script>
    $(document).ready(function() {
     // Добавляем новую запись, когда произошел клик по кнопке
-    $("#FormSubmit").click(function (e) {
+        $("#FormSubmit").click(function (e) {
 
-        e.preventDefault();
+            e.preventDefault();
 
-        if($("#contentText").val()==="") //simple validation
-        {
-            alert("Введите текст!");
-            return false;
-        }
-
-        var myData = "content_txt="+ $("#contentText").val(); //post variables
-
-        jQuery.ajax({
-            type: "POST", // HTTP метод  POST или GET
-            url: "response.php", //url-адрес, по которому будет отправлен запрос
-            dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
-            data:myData, //данные, которые будут отправлены на сервер (post переменные)
-            success:function(response){
-            $("#responds").append(response);
-            $("#contentText").val(''); //очищаем текстовое поле после успешной вставки
-            },
-            error:function (xhr, ajaxOptions, thrownError){
-                alert(thrownError); //выводим ошибку
+            if($("#contentText").val()==="") //simple validation
+            {
+                alert("Введите наименование!");
+                return false;
             }
-        });
-    });
 
-    //Удаляем запись при клике по крестику
-    $("body").on("click", "#responds .del_button", function(e) {
-        e.preventDefault();
-        var clickedID = this.id.split("-"); //Разбиваем строку (Split работает аналогично PHP explode)
-        var DbNumberID = clickedID[1]; //и получаем номер из массива
-        var myData = 'recordToDelete='+ DbNumberID; //выстраиваем  данные для POST
+            var myData = "content_txt="+ $("#contentText").val(); //post variables
 
-        jQuery.ajax({
-            type: "POST", // HTTP метод  POST или GET
-            url: "response.php", //url-адрес, по которому будет отправлен запрос
-            dataType:"text", // Тип данных
-            data:myData, //post переменные
-            success:function(response){
-            // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-            $('#item_'+DbNumberID).fadeOut("slow");
-            },
-            error:function (xhr, ajaxOptions, thrownError){
-                //выводим ошибку
-                alert(thrownError);
-            }
+            jQuery.ajax({
+                type: "POST", // HTTP метод  POST или GET
+                url: "response.php", //url-адрес, по которому будет отправлен запрос
+                dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
+                data:myData, //данные, которые будут отправлены на сервер (post переменные)
+                success:function(response){
+                $("#responds").append(response);
+                $("#contentText").val(''); //очищаем текстовое поле после успешной вставки
+                },
+                error:function (xhr, ajaxOptions, thrownError){
+                    alert(thrownError); //выводим ошибку
+                }
+            });
         });
-    });
-});
-   </script>
+
+        //Удаляем запись при клике по крестику
+        $("body").on("click", "#responds .del_button", function(e) {
+            e.preventDefault();
+            var clickedID = this.id.split("-"); //Разбиваем строку (Split работает аналогично PHP explode)
+            var DbNumberID = clickedID[1]; //и получаем номер из массива
+            var myData = 'recordToDelete='+ DbNumberID; //выстраиваем  данные для POST
+
+            jQuery.ajax({
+                type: "POST", // HTTP метод  POST или GET
+                url: "response.php", //url-адрес, по которому будет отправлен запрос
+                dataType:"text", // Тип данных
+                data:myData, //post переменные
+                success:function(response){
+                // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+                $('#item_'+DbNumberID).fadeOut("slow");
+                },
+                error:function (xhr, ajaxOptions, thrownError){
+                    //выводим ошибку
+                    alert(thrownError);
+                }
+            });
+        });
+    });//ready
+</script>
 
 <?php require('footer.php'); ?>
