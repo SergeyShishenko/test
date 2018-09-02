@@ -1,42 +1,31 @@
-<?php
-//подключаем конфигурационный файл бд
-define('__ROOT__', dirname(dirname(__FILE__))); 
-require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
+<?php require('header.php'); ?>
+<!-- <div>
+    <ul class="breadcrumb">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Dashboard</a>
+        </li>
+    </ul>
+</div> -->
 
-$dbconn=dbconnect();
-//проверяем $_POST["content_txt"] на пустое значение
-if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
-{
 
-    // очищаем значение переменной, PHP фильтры FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH
-    // (Удаляют тэги, при необходимости удаляет или кодирует специальные символы)
+<!-- ПРОБА -->
+<article id="responds">
 
-    $contentToSave = filter_var($_POST["content_txt"],FILTER_SANITIZE_STRING);
-
-    // Insert sanitize string in record
-    if(mysqli_query($dbconn,"INSERT INTO head(name_head) VALUES('".$contentToSave."')"))
-    {
-        //Record is successfully inserted, respond to ajax request
-        $head_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
-        
-  ?>
-        <!-- //    <div id="item_'.$head_id.'">
-        //    <div class="del_wrapper"><a href="#" class="del_button" id="del-'.$head_id.'">
-        //    <img src="img/icon_del.gif" border="0" />
-        //    </a></div>'.$contentToSave.'</div> -->
-          
-           <div class="box col-md-12" id="head_<?php echo $head_id ?>">
-          <div class="box-inner">
+    <div class="box col-md-12">
+        <div class="box-inner">
             <div class="box-header well">
-                <h2><i class="glyphicon glyphicon-th"></i> <?php echo $contentToSave ?></h2>
+                <h2><i class="glyphicon glyphicon-th"></i> РАЗДЕЛ 1 - ДЕТАЛИ</h2>
                 <div class="box-icon">
-                    <a href="#" class="btn btn-setting btn-round btn-default del_button" title="РЕДАКТИРОВАТЬ" id="del-'.$head_id.'"><i class="glyphicon glyphicon-edit"></i></a>
+                    <a href="#" class="btn btn-setting btn-round btn-default" title="РЕДАКТИРОВАТЬ"><i class="glyphicon glyphicon-edit"></i></a>
                     <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>  
-                    <!-- <a href="#" class="btn btn-close btn-round btn-default" title="ДОБАВИТЬ РАЗДЕЛ"><i class="glyphicon glyphicon-plus-sign"></i></a> -->
+                    <a href="#" class="btn btn-close btn-round btn-default" title="ДОБАВИТЬ РАЗДЕЛ"><i class="glyphicon glyphicon-plus-sign"></i></a>
                 </div>
             </div>
 
-            <div  class="box-content">
+            <div class="box-content">
                 <div>
                     <!-- START PANEL -->
                     <div class="panel panel-transparent">  
@@ -49,17 +38,18 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                     </div>
                                     <div class="panel panel-transparent ">
                                         <!-- Nav tabs -->
-                                        <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
+                                        <!-- <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
                                             <li class="active">
-                                                <a data-toggle="tab" href="#tab-fillup11"><span>Категория 1</span></a>
+                                                <a data-toggle="tab" href="#tab-fillup11"><span>Профили гладкие</span></a>
                                             </li>
                                             <li>
                                                 <a data-toggle="tab" href="#tab-fillup21"><span>Категория 2</span></a>
                                             </li>
                                             <li>
-                                                <a data-toggle="tab" href="#tab-fillup31"><span>Категория 3</span></a>
+                                                <a data-toggle="tab" href="#tab-fillup31"><span>САНитарно-эпидемиологические
+                                                        Правила И Нормативы</span></a>
                                             </li>
-                                        </ul>
+                                        </ul> -->
                                         <!-- Tab panes -->
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="tab-fillup11">
@@ -79,13 +69,16 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                                         <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white"
                                                                             id="tab-3">
                                                                             <li class="active">
-                                                                                <a data-toggle="tab" href="#tab3hellowWorld22">Группа 1</a>
+                                                                                <a data-toggle="tab" href="#tab3hellowWorld22">Под
+                                                                                    ротанговую сетку</a>
                                                                             </li>
                                                                             <li>
-                                                                                <a data-toggle="tab" href="#tab3FollowUs22">Группа 2</a>
+                                                                                <a data-toggle="tab" href="#tab3FollowUs22">Группа
+                                                                                    2</a>
                                                                             </li>
                                                                             <li>
-                                                                                <a data-toggle="tab" href="#tab3Inspire32">Группа 3</a>
+                                                                                <a data-toggle="tab" href="#tab3Inspire32">ПОРОГИ
+                                                                                    АВТОМАТИЧЕСКИЕ для ПОЛОТЕН ДВЕРНЫХ</a>
                                                                             </li>
 
                                                                         </ul>
@@ -114,14 +107,16 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                                             </div>
                                                                             <div class="tab-pane active" id="tab3FollowUs22">
                                                                                 <h3>
-                                                                                     Nothing is 
-                                                                                    
+                                                                                    “ Nothing is <span class="semi-bold">impossible</span>,
+                                                                                    the word
+                                                                                    itself says 'I'm <span class="semi-bold">possible</span>'!
+                                                                                    ”
                                                                                 </h3>
                                                                                 <p>
                                                                                     A style represents visual
                                                                                     customizations on top of a layout.
                                                                                     By editing a style, you can use
-                                                                                    Squarespaces visual interface to
+                                                                                    Squarespace's visual interface to
                                                                                     customize your...
                                                                                 </p>
                                                                                 <br>
@@ -163,9 +158,11 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <h3>“ Nothing is
-                                                            </h3>
+                                                            <span class="semi-bold">impossible</span>, the word itself
+                                                            says 'I'm
+                                                            <span class="semi-bold">possible</span>'! ”</h3>
                                                         <p>A style represents visual customizations on top of a layout.
-                                                            By editing a style, you can use Squarespaces visual
+                                                            By editing a style, you can use Squarespace's visual
                                                             interface to customize your...</p>
                                                         <br>
                                                         <p class="pull-right">
@@ -179,20 +176,13 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                 <div class="row">
                                                     <div class="col-md-12">
                                                         <h3>Follow us &amp; get updated!</h3>
-                                                        <p>Instantly connect to whats most important to you. Follow
+                                                        <p>Instantly connect to what's most important to you. Follow
                                                             your friends, experts, favorite celebrities, and breaking
                                                             news.</p>
                                                         <br>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
                     <!-- END PANEL -->
 
                 </div>
@@ -201,40 +191,98 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     </div>
     <!-- END box col-md-12 -->
 
-<?php        
-        mysqli_close($dbconn);
+    
+    <?php
+    //подключаем конфигурационный файл
+    define('__ROOT__', dirname(dirname(__FILE__))); 
+    require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
 
-    }else{
-        //вывод ошибки
+    $dbconn=dbconnect();
 
-        //header('HTTP/1.1 500 '.mysql_error());
-        header('HTTP/1.1 500 Looks like mysql error, could not insert record!');
-        exit();
-    }
+    //MySQL запрос
+    $Result = mysqli_query($dbconn,"SELECT id,content FROM add_delete_record");
 
-}
-elseif(isset($_POST["recordToDelete"]) && strlen($_POST["recordToDelete"])>0 && is_numeric($_POST["recordToDelete"]))
-{//do we have a delete request? $_POST["recordToDelete"]
-
-    // очищаем значение переменной, PHP фильтр FILTER_SANITIZE_NUMBER_INT
-    // Удаляет все символы, кроме цифр и знаков плюса и минуса
-
-    $idToDelete = filter_var($_POST["recordToDelete"],FILTER_SANITIZE_NUMBER_INT);
-
-    //try deleting record using the record ID we received from POST
-    if(!mysqli_query($dbconn,"DELETE FROM head WHERE id=".$idToDelete))
+    // получаем все записи из таблицы add_delete_record
+    while($row = mysqli_fetch_array($Result))
     {
-        //If mysql delete record was unsuccessful, output error
-        header('HTTP/1.1 500 Could not delete record!');
-        exit();
+    echo '<div id="item_'.$row["id"].'">';
+    echo '<div class="del_wrapper"><a href="#" class="del_button" id="del-'.$row["id"].'">';
+    echo '<img src="img/icon_del.gif" border="0" />';
+    echo '</a></div>';
+    echo $row["content"].'</div>';
     }
+
+    //Закрывает соединение с сервером MySQL
     mysqli_close($dbconn);
+    ?>
 
-}
-else{
+</article>
 
-    //Output error
-    header('HTTP/1.1 500 Error occurred, Could not process request!');
-    exit();
-}
-?>
+<script>
+       $('ul.nav-tabs li').hover(function () {
+        // $('a', this).fadeToggle(1000);
+        // $(this).find('.gallery-controls').remove();
+        $(this).append('<div class=" tab-controls">' + '<p><a href="#" class="gallery-edit btn" ><i class="glyphicon glyphicon-edit"></i></a></p>' +  '</div>');
+        $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
+    }, function () {
+        // $('a', this).fadeToggle(1000);
+        $(this).find('.tab-controls').stop().animate({'margin-top': '0'}, 200, function () {  $(this).remove();   });
+    });
+</script>
+
+<script>
+   $(document).ready(function() {
+    // Добавляем новую запись, когда произошел клик по кнопке
+        $("#FormSubmit").click(function (e) {
+
+            e.preventDefault();
+
+            if($("#contentText").val()==="") //simple validation
+            {
+                alert("Введите наименование!");
+                return false;
+            }
+
+            var myData = "content_txt="+ $("#contentText").val(); //post variables
+
+            jQuery.ajax({
+                type: "POST", // HTTP метод  POST или GET
+                url: "response.php", //url-адрес, по которому будет отправлен запрос
+                dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
+                data:myData, //данные, которые будут отправлены на сервер (post переменные)
+                success:function(response){
+                $("#responds").append(response);
+                $("#contentText").val(''); //очищаем текстовое поле после успешной вставки
+                },
+                error:function (xhr, ajaxOptions, thrownError){
+                    alert(thrownError); //выводим ошибку
+                }
+            });
+        });
+
+        //Удаляем запись при клике по крестику
+        $("body").on("click", "#responds .del_button", function(e) {
+            e.preventDefault();
+            var clickedID = this.id.split("-"); //Разбиваем строку (Split работает аналогично PHP explode)
+            var DbNumberID = clickedID[1]; //и получаем номер из массива
+            var myData = 'recordToDelete='+ DbNumberID; //выстраиваем  данные для POST
+
+            jQuery.ajax({
+                type: "POST", // HTTP метод  POST или GET
+                url: "response.php", //url-адрес, по которому будет отправлен запрос
+                dataType:"text", // Тип данных
+                data:myData, //post переменные
+                success:function(response){
+                // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+                $('#item_'+DbNumberID).fadeOut("slow");
+                },
+                error:function (xhr, ajaxOptions, thrownError){
+                    //выводим ошибку
+                    alert(thrownError);
+                }
+            });
+        });
+    });//ready
+</script>
+
+<?php require('footer.php'); ?>

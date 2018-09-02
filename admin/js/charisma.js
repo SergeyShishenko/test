@@ -20,12 +20,11 @@ $(document).ready(function () {
 
     // Hide responsive navbar on clicking outside
     $(document).mouseup(function (e) {
-        if (!$sidebarNav.is(e.target) // if the target of the click isn't the container...
-            && $sidebarNav.has(e.target).length === 0
-            && !$('.navbar-toggle').is(e.target)
-            && $('.navbar-toggle').has(e.target).length === 0
-            && $sidebarNav.hasClass('active')
-            )// ... nor a descendant of the container
+        // if the target of the click isn't the container...
+        //если целью щелчка не является контейнер
+        if (!$sidebarNav.is(e.target) && $sidebarNav.has(e.target).length === 0 && !$('.navbar-toggle').is(e.target) && $('.navbar-toggle').has(e.target).length === 0  && $sidebarNav.hasClass('active')   )
+            // ... nor a descendant of the container
+            // ... ни потомок контейнера
         {
             e.stopPropagation();
             $('.navbar-toggle').click();
@@ -176,36 +175,37 @@ function docReady() {
         // Put your options here
     });
 
-    //gallery controls container animation
-    $('ul.gallery li').hover(function () {
-        $('img', this).fadeToggle(1000);
-        $(this).find('.gallery-controls').remove();
-        $(this).append('<div class="well gallery-controls">' +
-            '<p><a href="#" class="gallery-edit btn" title="РЕДАКТИРОВАТЬ"><i class="glyphicon glyphicon-edit" ></i></a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ЭЛЕМЕНТ"><i class="glyphicon glyphicon-plus-sign"></i></a></p>' +
-            '</div>');
-        $(this).find('.gallery-controls').stop().animate({'margin-top': '-1'}, 400);
-    }, function () {
-        $('img', this).fadeToggle(1000);
-        $(this).find('.gallery-controls').stop().animate({'margin-top': '-30'}, 200, function () {
-            $(this).remove();
-        });
-    });
+    // //gallery controls container animation
+    // $('ul.gallery li').hover(function () {
+    //     $('img', this).fadeToggle(1000);
+    //     $(this).find('.gallery-controls').remove();
+    //     $(this).append('<div class="well gallery-controls">' +
+    //         '<p><a href="#" class="gallery-edit btn" title="РЕДАКТИРОВАТЬ"><i class="glyphicon glyphicon-edit" ></i></a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ЭЛЕМЕНТ"><i class="glyphicon glyphicon-plus-sign"></i></a></p>' +
+    //         '</div>');
+    //     $(this).find('.gallery-controls').stop().animate({'margin-top': '-1'}, 400);
+    // }, function () {
+    //     $('img', this).fadeToggle(1000);
+    //     $(this).find('.gallery-controls').stop().animate({'margin-top': '-30'}, 200, function () {
+    //         $(this).remove();
+    //     });
+    // });
 
 
     //gallery image controls example
     //gallery delete
-    $('.thumbnails').on('click', '.gallery-delete', function (e) {
-        e.preventDefault();
-        //get image id
-        //alert($(this).parents('.thumbnail').attr('id'));
-        $(this).parents('.thumbnail').fadeOut();
-    });
+    // $('.thumbnails').on('click', '.gallery-delete', function (e) {
+    //     e.preventDefault();
+    //     //get image id
+    //     //alert($(this).parents('.thumbnail').attr('id'));
+    //     $(this).parents('.thumbnail').fadeOut();
+    // });
     //gallery edit
-    $('.thumbnails').on('click', '.gallery-edit', function (e) {
-        e.preventDefault();
-        //get image id
-        //alert($(this).parents('.thumbnail').attr('id'));
-    });
+    // $('.thumbnails').on('click', '.gallery-edit', function (e) {
+    //     e.preventDefault();
+    //     //get image id
+    //     // alert("click");
+    //     alert($(this).parents('.thumbnail').attr('id'));
+    // });
 
  //gallery ADD ПОКА УДАЛЯЕТ
  $('.thumbnails').on('click', '.gallery-add', function (e) {
@@ -222,7 +222,8 @@ $('.thumbnails').on('click', '.gallery-add', function (e) {
 });
 
     //gallery colorbox
-    $('.thumbnail a').colorbox({
+    // $('.thumbnail a').colorbox({
+        $('ul.thumbnails.gallery li.thumbnail a').colorbox({
         rel: 'thumbnail a',
         transition: "elastic",
         maxWidth: "95%",
@@ -297,17 +298,19 @@ $('.thumbnails').on('click', '.gallery-add', function (e) {
         e.preventDefault();
         $(this).parent().parent().parent().fadeOut();
     });
-    $('.btn-minimize').click(function (e) {
-        e.preventDefault();
-        var $target = $(this).parent().parent().next('.box-content');
-        if ($target.is(':visible')) $('i', $(this)).removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
-        else                       $('i', $(this)).removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
-        $target.slideToggle();
-    });
-    $('.btn-setting').click(function (e) {
-        e.preventDefault();
-        $('#myModal').modal('show');
-    });
+
+    // $('.btn-minimize').click(function (e) {
+    //     e.preventDefault();
+    //     var $target = $(this).parent().parent().next('.box-content');
+    //     if ($target.is(':visible')) $('i', $(this)).removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+    //     else                       $('i', $(this)).removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+    //     $target.slideToggle();
+    // });
+
+    // $('.btn-setting').click(function (e) {
+    //     e.preventDefault();
+    //     $('#myModal').modal('show');
+    // });
 
 
     $('#calendar').fullCalendar({

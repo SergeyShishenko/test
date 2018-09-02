@@ -65,7 +65,8 @@
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
         <!-- <label>Добавить раздел</label> -->
                     <input type="text" value="" name="add_section" class="text" placeholder="Наименование раздела" id="contentText" required>                   
-                    <input type="submit" value="Добавить раздел" name="write" class="button" id="FormSubmit">
+                    <!-- <input type="submit" value="Добавить раздел" name="write" class="button" id="FormSubmit0"> -->
+                    <button type="submit" class="button" id="FormSubmit" >Добавить раздел  <span class="glyphicon glyphicon-plus-sign"></span>   </button>
                 </div>
 
         <p class="col-md-3 col-sm-3 col-xs-12 powered-by">
@@ -91,7 +92,8 @@
 <!-- select or dropdown enhancer -->
 <script src="bower_components/chosen/chosen.jquery.min.js"></script>
 <!-- plugin for gallery image view -->
-<script src="bower_components/colorbox/jquery.colorbox-min.js"></script>
+<!-- <script src="bower_components/colorbox/jquery.colorbox-min.js"></script> -->
+<script src="bower_components/colorbox/jquery.colorbox.js"></script>
 <!-- notification plugin -->
 <script src="js/jquery.noty.js"></script>
 <!-- library for making tables responsive -->
