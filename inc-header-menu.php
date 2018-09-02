@@ -35,13 +35,13 @@
                             <a href="shablony-dokumentov-titulniki.php">ШАБЛОНЫ ДОКУМЕНТОВ</a>
                         </li>
                         <li '.$metodichkiClass.'>
-                            <a href="metodichki-dokument-117.php">МЕТОДИЧКИ</a>
+                            <a href="metodichki-dokument-117.php">ПОСОБИЯ МЕТОДИЧЕСКИЕ</a>
                         </li>
                         <li '.$furnituraClass.'>
                             <a href="furnitura-dlya-dvernyh-blokov.php">ФУРНИТУРА</a>
                         </li>
                         <li '.$materialyClass.'>
-                            <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>
+                            <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ</a>
                         </li>
                         <li '.$literaturaClass.' class=" disabled">
                             <a href="literatura-gost.php">ЛИТЕРАТУРА</a>
@@ -84,7 +84,7 @@
     <!-- /.modal -->
     <div  style="position:fixed; left:0; top:150px; " class="btn-side">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
+        <button type="button" class="btn btn-default  animated tada" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
             <span class=" glyphicon glyphicon-envelope" ></span>
         </button>
        

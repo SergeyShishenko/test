@@ -22,6 +22,7 @@ include 'inc-version-css-js.php';
     <meta name="yandex-verification" content="07a17e6c1df2c2b2" />
     <title>500.СТП</title>
     <link href="./dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./dist/css/animate.min.css" rel="stylesheet">    
     <link href="./dist/css/docs.css?v=<?php echo $docsVersion; ?>" rel="stylesheet">
     <link href="./dist/css/grid.css?v=<?php echo $gridVersion; ?>" rel="stylesheet">
     <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
@@ -120,7 +121,7 @@ include 'inc-version-css-js.php';
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#metodichki-dokument-117">МЕТОДИЧКИ</a >
+                            <a href="#metodichki-dokument-117">ПОСОБИЯ МЕТОДИЧЕСКИЕ</a >
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating28" >ДОКУМЕНТ 117</a>
@@ -149,7 +150,7 @@ include 'inc-version-css-js.php';
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>
+                            <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ</a>
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating36" >СТЕКЛО, ЗЕРКАЛО</a>
@@ -196,7 +197,7 @@ include 'inc-version-css-js.php';
   
     <div  style="position:fixed; left:0; top:150px; " class="btn-side">
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
+        <button type="button" class="btn btn-default animated tada" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
             <span class=" glyphicon glyphicon-envelope" ></span>
         </button>
     </div>
