@@ -25,8 +25,8 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
         //    <img src="img/icon_del.gif" border="0" />
         //    </a></div>'.$contentToSave.'</div> -->
           
-           <div class="box col-md-12" id="head_<?php echo $head_id ?>">
-          <div class="box-inner">
+    <div class="box col-md-12" id="head_<?php echo $head_id ?>">
+        <div class="box-inner">
             <div class="box-header well">
                 <h2><i class="glyphicon glyphicon-th"></i> <?php echo $contentToSave ?></h2>
                 <div class="box-icon">
@@ -114,7 +114,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                                             </div>
                                                                             <div class="tab-pane active" id="tab3FollowUs22">
                                                                                 <h3>
-                                                                                     Nothing is 
+                                                                                    Nothing is 
                                                                                     
                                                                                 </h3>
                                                                                 <p>
@@ -199,6 +199,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             </div>
         </div>
     </div>
+    
     <!-- END box col-md-12 -->
 
 <?php        
