@@ -329,7 +329,11 @@ $(function() {
 // отмена клика disabled
     $('[data-href*=".php"],[data-href^="http"],[onclick]').not(":contains(???)").each(function(){
         
-        $(this).parent().not('.disabled').css( "color", "Blue" );
+        $(this).parent().not('.disabled').css( {"color": "Blue","cursor":"pointer" });
+        // $(this).css( {"cursor":"pointer" });
+        // {"color": "green", // устанавливаем значение трех свойств последнего элемента <p> в документе
+        //                       "border": "1px solid orange",
+        //                       "font-weight": "bold"}
       });
     
 
