@@ -2104,7 +2104,7 @@ include 'inc-version-css-js.php';
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
-                                                            <TD data-tooltip="С МАЯТНИКОВЫМИ ПОЛОТНАМИ" class="hover mapsite" id="footer83" >
+                                                            <TD data-tooltip="С МАЯТНИКОВЫМИ ПОЛОТНАМИ" class="hover mapsite disabled" id="footer83" >
                                                                     <p data-img="./dist/images/no-foto.png" id="floating84" data-href="izdeliya-bloki-dvernye.php#mayatnikovye-polotna">С МАЯТНИКО<wbr>ВЫМИ ПОЛОТНАМИ<span><br>~mayatnikovye-polotna</span></p>
                                                                     <!-- <p data-href="izdeliya-bloki-dvernye.php#" data-img="./dist/images/no-foto.png" class="KEYWORDS">Дверные блоки</p>   -->
                                                             </TD>                                                                            
@@ -4460,7 +4460,7 @@ include 'inc-version-css-js.php';
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ" class="hover mapsite" id="footer134">
+                                                            <TD data-tooltip="РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ" class="hover mapsite  disabled" id="footer134">
                                                                 <p data-img="./dist/images/no-foto.png" id="floating135" data-href="furnitura-dlya-dvernyh-blokov.php#rigeli-shpingalety-dlya-poloten-dvernyh">РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ<span><br>~rigeli-shpingalety-dlya-poloten-dvernyh</span></p>
                                                             </TD> 
                                                             <TD>
@@ -4488,7 +4488,7 @@ include 'inc-version-css-js.php';
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ" class="hover mapsite" id="footer135">
+                                                            <TD data-tooltip="ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ" class="hover mapsite disabled" id="footer135">
                                                                 <p data-img="./dist/images/no-foto.png" id="floating136" data-href="furnitura-dlya-dvernyh-blokov.php#dovodchiki-dlya-poloten-dvernyh">ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ<span><br>~dovodchiki-dlya-poloten-dvernyh</span></p>
                                                             </TD> 
                                                             <TD>
@@ -4516,7 +4516,7 @@ include 'inc-version-css-js.php';
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ" class="hover mapsite" id="footer136">
+                                                            <TD data-tooltip="УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ" class="hover mapsite disabled" id="footer136">
                                                                 <p data-img="./dist/images/no-foto.png" id="floating137" data-href="furnitura-dlya-dvernyh-blokov.php#upory-napolnye-i-nastennye">УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ<span><br>~upory-napolnye-i-nastennye</span></p>
                                                             </TD> 
                                                             <TD>
@@ -4953,7 +4953,7 @@ include 'inc-version-css-js.php';
                                                         </TR>
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip=" ПАНТОГРАФЫ" class="hover mapsite" id="footer146">
+                                                            <TD data-tooltip=" ПАНТОГРАФЫ" class="hover mapsite disabled" id="footer146">
                                                                 <p data-img="./dist/images/no-foto.png" id="floating147" data-href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ<span><br>~pantografy</span></p>
                                                             </TD> 
                                                             <TD>
@@ -4976,7 +4976,7 @@ include 'inc-version-css-js.php';
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="РУЧКИ" class="hover mapsite" id="footer147">
+                                                            <TD data-tooltip="РУЧКИ" class="hover mapsite disabled" id="footer147">
                                                                 <p data-img="./dist/images/no-foto.png" id="floating148" data-href="furnitura-dlya-mebeli.php#ruchki">РУЧКИ<span><br>~ruchki</span></p>
                                                             </TD> 
                                                             <TD>
@@ -4999,7 +4999,7 @@ include 'inc-version-css-js.php';
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="Механизмы для раздвижных столов" class="hover mapsite" id="footer148">
+                                                            <TD data-tooltip="Механизмы для раздвижных столов" class="hover mapsite disabled" id="footer148">
                                                                 <p data-img="./dist/images/no-foto.png" id="floating149" data-href="furnitura-dlya-mebeli.php#mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ<span><br>~mekhanizmy-dlya-razdvizhnyh-stolov</span></p>
                                                             </TD> 
                                                             <TD>
