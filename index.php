@@ -2857,7 +2857,7 @@ include 'inc-version-css-js.php';
                                             </TR>
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2--> 
                                             <TR>
-                                                <TD data-tooltip="ЛЕСТНИЦЫ" class="hover mapsite disabled" id="footer22">
+                                                <TD data-tooltip="ЛЕСТНИЦЫ" class="hover mapsite" id="footer22">
                                                     <p data-href="izdeliya-lestnicy.php"  data-img="./dist/images/no-foto.png" id="floating523">ЛЕСТНИЦЫ<span><br>~-izdeliya-lestnicy</span></p></TD>
                                                     <TD>
                                                         <TABLE >

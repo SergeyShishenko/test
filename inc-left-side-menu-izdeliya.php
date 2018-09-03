@@ -292,9 +292,9 @@
                         <ul class="list-group sub_menu">
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-potolki.php#potolki-kessonirovannye">ПОТОЛКИ КЕССОНИРОВАННЫЕ</a>
                                 <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub" href="#potolki-kessony-tipovye">5000211-00_100 кессоны типовые</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-potolki.php#potolki-kessony-tipovye">5000211-00_100 кессоны типовые</a>
                                     </li>
-                                    <li><a class="list-group-item sub" href="#potolki-potolok-kessonirovannyy">5000211-00_101 потолок кессонированный</a>
+                                    <li><a class="list-group-item sub" href="izdeliya-potolki.php#potolki-potolok-kessonirovannyy">5000211-00_101 потолок кессонированный</a>
                                     </li>                                                                             
                                 </ul>
                             </li>
