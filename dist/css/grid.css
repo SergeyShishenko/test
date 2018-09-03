@@ -130,7 +130,8 @@ padding: 15px 0 15px 10px;
 text-transform:  uppercase;
 
 } 	
-#maintable td  {cursor: default;}
+#maintable td  {cursor: default; color: #c1baba ;}
+
 .fixed-div {
 position: fixed;
 top: 55px;
