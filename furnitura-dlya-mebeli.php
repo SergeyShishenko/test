@@ -24,12 +24,23 @@ include 'inc-left-side-menu-furnitura.php';
                           <h1 itemprop="name" id="petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</h1>
                         </div> 
                       
-                     
-                        <div class="bs-callout bs-callout-warning cont" > 
-                        <!-- <h2 >Видео с Ютуба</h2>    -->
+                     <!-- <h2 >Видео с Ютуба</h2>    -->
+                        <!-- <div class="bs-callout bs-callout-warning cont" > 
+                        
                             <iframe  class="center-block   img-rounded img-thumbnail b-lazy bar video-album" src="https://www.youtube.com/embed/hSWQ0w1sB3M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                             
+                        </div> -->
+
+
+                        <div class="main-box clearfix">                            
+                            <div class="main-box-body clearfix"> 
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hSWQ0w1sB3M?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
                         </div>
+
+                        
 
                       <!-- <div class="bs-callout bs-callout-warning cont" > 
                       <h2 >Видео с Яндекс диска</h2>  
