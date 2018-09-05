@@ -40,7 +40,7 @@
      Ad ends -->
 
     <hr>
-
+ <!-- .modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
          aria-hidden="true">
 
@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-
+ <!-- /.modal -->
     <footer class="row">
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
         <!-- <label>Добавить раздел</label> -->

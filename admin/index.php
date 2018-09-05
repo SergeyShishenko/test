@@ -347,6 +347,31 @@ $("body").on( "mouseleave","ul.thumbnails.gallery li.thumbnail",function () {
     alert('Картинка ' + $(this).parents('.thumbnail').attr('id'));
     }); 
 
+// при открытии модального окна
+$('#myModal').on('show.bs.modal', function (event) {
+
+// получить кнопку, которая его открыло
+var button = $(event.relatedTarget); 
+// извлечь информацию из атрибута data-content
+// var content = button.data('content'); 
+alert(button.nodeName);
+var content = button.attr('alt'); 
+// var im = button.data('im'); 
+var im = button.attr('src');
+// вывести эту информацию в элемент, имеющий id="content"
+$("body").css("overflow-y", "scroll");
+// html {   overflow-y: scroll;   }
+// $(this).css("margin-right", "-20px");
+$(this).find('#myModalLabel').text(content); 
+
+$(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
+// $(this).find('#im').html('<img src="'+im+'" alt=" "class="img-fluid center-block img-rounded img-thumbnail">'); 
+// $(this).find('#im-download').html('<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <a href="'+im+'" type="button" class="btn btn-primary"download="'+im+'" >Сохранить картинку</a>'); 
+// <a href="img.jpg" type="button" class="btn btn-primary"download="img.jpg" id="im-download">Сохранить картинку</a>
+});
+
+
+
     });//ready
 </script>
 
