@@ -82,8 +82,9 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>
                             <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a >
-                            <!-- <span class="caret"></span>
-                            <ul class="dropdown-menu">
+                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                          
+                           <!--  <ul class="dropdown-menu">
                                 <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
                                 </li>
                                 <li><a class="" href="#floating16" >МЕБЕЛЬ КОРПУСНАЯ</a>
