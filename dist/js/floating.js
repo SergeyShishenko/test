@@ -138,7 +138,18 @@ function getPositionSearch(){
       
       });
 
-
+      $( '#other').click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
+        //  скрываем, или отображаем все элементы <div>
+    //    alert();
+        $('.dropdown-menu').not($(this).parent().find('.dropdown-menu')).hide(); 
+         $(this).parent().find('.dropdown-menu').toggle(); 
+        
+          // добавить класс hover
+          if (!($(this).parent().find('a').hasClass("active"))){$(this).parent().toggleClass('click-hover');}
+        
+         var nv =parseInt($("#navmain").css('height').replace("px", "")) + 0;
+        
+      });
 
     //   .navbar-collapse.in 
  // прокрутка меню

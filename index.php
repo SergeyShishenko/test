@@ -171,11 +171,11 @@ include 'inc-version-css-js.php';
                                 </li>                                                                                                                       
                             </ul> -->
                         </li>
-                        <li>
-                            <a href="#literatura-gost">ЕЩЁ</a >
+                        <li  id="other">
+                            <a href="#">ЕЩЁ</a >
                             <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
-                             <span class="caret"></span> 
-                            <ul class="dropdown-menu">
+                             <span class="caret3"></span> 
+                            <ul class="dropdown-menu  dropdown-menu-right">
                                 <li><a href="#literatura-gost" >Литература</a>
                                 </li>
                                 <li><a href="#" >Видео</a>
