@@ -172,21 +172,16 @@ include 'inc-version-css-js.php';
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#literatura-gost">ЛИТЕРАТУРА</a >
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
-                            <!-- <span class="caret"></span>
+                            <a href="#literatura-gost">ЕЩЁ</a >
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
+                             <span class="caret"></span> 
                             <ul class="dropdown-menu">
-                                <li><a href="#floating41" >ГОСТ</a>
+                                <li><a href="#literatura-gost" >Литература</a>
                                 </li>
-                                <li><a href="#floating42" >СНиП</a>
+                                <li><a href="#" >Видео</a>
                                 </li> 
-                                <li><a href="#floating43" >СанПиН</a>
-                                </li> 
-                                <li><a href="#floating44" >СП (Свод Правил)</a>
-                                </li> 
-                                <li><a  href="#floating45" >СПРАВОЧНИКИ</a>
-                                </li>                                                                                                                       
-                            </ul> -->
+                                                                                                                                                     
+                            </ul> 
                         </li>
                     </ul>   
                 </div>
