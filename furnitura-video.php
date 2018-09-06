@@ -116,9 +116,111 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>
 
                        
+                       <div class="page-header">
+                          <h1 itemprop="name" id="petli-dlya-fasadov">HAFELE</h1>
+                        </div> 
+                        
+                        <div class="main-box clearfix"> 
+                        <h4 >Фурнитура для шкафов Häfele</h4 >                            
+                            <div class="main-box-body clearfix"> 
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LU69BB9a-lg?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box clearfix"> 
+                        <h4 >Мебельные решения Häfele 2015</h4 >                            
+                            <div class="main-box-body clearfix"> 
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0CiL1Kt5lDQ?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box clearfix"> 
+                        <h4 >Механизм трансформации HAFELE LUNCH</h4 >                            
+                            <div class="main-box-body clearfix"> 
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/H0cSvxiaSUg?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box clearfix"> 
+                        <h4 >Фурнитура для кухни Häfele</h4 >                            
+                            <div class="main-box-body clearfix"> 
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ydWfS5U1FXg?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
 
                         
+                        <div class="page-header">
+                          <h1 itemprop="name" id="petli-dlya-fasadov">Стяжка</h1>
+                        </div> 
+                        
+                        <div class="main-box clearfix"> 
+                        <h4 >Стяжка мебельная Lamello Clamex P. Hafele-Shop.ru.</h4 >                            
+                            <div class="main-box-body clearfix"> 
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/V66G70d80A4?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-header">
+                          <h1 itemprop="name" id="petli-dlya-fasadov">Ящики</h1>
+                        </div> 
+                        <div class="main-box clearfix"> 
+                        <h4 >Качество движения MOVENTO</h4 >                            
+                            <div class="main-box-body clearfix"> 
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PVazJiCLemw?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="main-box clearfix"> 
+                        <h4 >TIP-ON</h4 >                            
+                            <div class="main-box-body clearfix"> 
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://d2.blum.com/BEC003/tip0003-tip-on-fuer-tueren_pr_rf_fi_bau_$sall_$amp4360p_$v1.mp4" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-header">
+                          <h1 itemprop="name" id="petli-dlya-fasadov">Разное</h1>
+                          <!-- https://www.youtube.com/channel/UCYciCJZNXv1vF8BLxpCsGSA/videos -->
+                         <!-- http://mebelend.com/catalog/petli_blyum/ -->
+                         <!-- http://u-kuhni.ru/katalog/dop/furniture/syspet/katalog.php -->
+                         <!-- https://www.blum.com/md/ru/downloads-videos/?cat=$M01-SCHARNIERSYSTEME-$M02-CLIPTOPBM,$M01-FUEHRUNGSSYSTEME-$M02-MOVENTO,&types=FILM,&end=14 -->
+                        </div> 
+                        <div class="main-box clearfix"> 
+                        <h4 >петли Hettich - интересное открытие! </h4 >                            
+                            <div class="main-box-body clearfix"> 
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Hjhe05CSfjo?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-box clearfix"> 
+                        <h4 >BLUM Vs. herrajes comunes </h4 >                            
+                            <div class="main-box-body clearfix"> 
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QUuvNqvQ4KM?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-box clearfix"> 
+                        <h4 >Петли Hettich (обзор) </h4 >                            
+                            <div class="main-box-body clearfix"> 
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XGn44wjmbDc?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
                         <!-- <div class="bs-callout bs-callout-warning cont" > 
                             <h2 id="5000502-01-100-petlya-vkladnaya" >&nbsp;</h2> 
                             <h2 >5000502-01-100 петля вкладная</h2>                              
