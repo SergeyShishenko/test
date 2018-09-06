@@ -130,6 +130,14 @@ function getPositionSearch(){
         //  #navmain
       });
 
+      $( '#navmain > li > span.caret2').click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
+        
+         var hash = $(this).parent().find('a').attr('href').substr(1)+'.php';
+        //  alert(hash );
+        window.location = hash;
+      
+      });
+
 
 
     //   .navbar-collapse.in 

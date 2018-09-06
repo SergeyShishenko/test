@@ -62,6 +62,7 @@ include 'inc-version-css-js.php';
                     <ul class="nav navbar-nav " id="navmain">
                         <li>
                             <a href="#detali-profili">ДЕТАЛИ </a>
+                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
                              <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating8" >ПРОФИЛИ ГЛАДКИЕ</a>
@@ -82,7 +83,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>
                             <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a >
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
                           
                            <!--  <ul class="dropdown-menu">
                                 <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
@@ -109,6 +110,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>                            
                             <a href="#shablony-dokumentov-titulniki">ШАБЛОНЫ ДОКУМЕНТОВ</a >
+                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating24" >ЛИСТЫ ТИТУЛЬНЫЕ</a>
@@ -123,6 +125,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>
                             <a href="#metodichki-dokument-117">ПОСОБИЯ МЕТОДИЧЕСКИЕ</a >
+                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating28" >ДОКУМЕНТ 117</a>
@@ -137,6 +140,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>
                             <a href="#furnitura-dlya-dvernyh-blokov">ФУРНИТУРА</a >
+                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating32" >ДЛЯ ДВЕРНЫХ БЛОКОВ</a>
@@ -152,6 +156,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>
                             <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ</a>
+                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating36" >СТЕКЛО, ЗЕРКАЛО</a>
@@ -168,6 +173,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>
                             <a href="#literatura-gost">ЛИТЕРАТУРА</a >
+                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a href="#floating41" >ГОСТ</a>
@@ -205,7 +211,7 @@ include 'inc-version-css-js.php';
     <div  style="position:fixed; left:0; top:185px;" class="btn-side">
         <!-- Button trigger modal -->        
         <button type="button" class="btn btn-default center " onclick="location.href='exit.php';" title="Выйти">  
-        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+        <span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Перейти на страницу"></span>
         </button>
     </div>
     <?php 
@@ -5519,7 +5525,7 @@ include 'inc-version-css-js.php';
         <div class="container">
             <p class="text-center">Сайт был создан проектным подразделением компании "София-Декор" <a href="http://www.sofia-decor.ru">(http://www.sofia-decor.ru)</a> под руководством Черкашина Д.В.</p>
             <p class="text-center">Разработчик: Шишенко С.В. </p>
-            <!-- <p><button type="button" class="btn btn-default center" onclick="location.href='exit.php';">  <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Выйти</button></p> -->
+            <!-- <p><button type="button" class="btn btn-default center" onclick="location.href='exit.php';">  <span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Перейти на страницу"></span> Выйти</button></p> -->
         </div>
     </footer> 
     <script src="./dist/js/jquery.min.js"></script>
