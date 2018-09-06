@@ -62,7 +62,7 @@ include 'inc-version-css-js.php';
                     <ul class="nav navbar-nav " id="navmain">
                         <li>
                             <a href="#detali-profili">ДЕТАЛИ </a>
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <span class="caret2 glyphicon glyphicon-new-window" aria-hidden="true" title="Перейти на страницу"></span>
                              <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating8" >ПРОФИЛИ ГЛАДКИЕ</a>
@@ -83,7 +83,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>
                             <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a >
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <span class="caret2 glyphicon glyphicon-new-window" aria-hidden="true" title="Перейти на страницу"></span>
                           
                            <!--  <ul class="dropdown-menu">
                                 <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
@@ -110,7 +110,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>                            
                             <a href="#shablony-dokumentov-titulniki">ШАБЛОНЫ ДОКУМЕНТОВ</a >
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <span class="caret2 glyphicon glyphicon-new-window" aria-hidden="true" title="Перейти на страницу"></span>
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating24" >ЛИСТЫ ТИТУЛЬНЫЕ</a>
@@ -125,7 +125,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>
                             <a href="#metodichki-dokument-117">ПОСОБИЯ МЕТОДИЧЕСКИЕ</a >
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <span class="caret2 glyphicon glyphicon-new-window" aria-hidden="true" title="Перейти на страницу"></span>
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating28" >ДОКУМЕНТ 117</a>
@@ -140,7 +140,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>
                             <a href="#furnitura-dlya-dvernyh-blokov">ФУРНИТУРА</a >
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <span class="caret2 glyphicon glyphicon-new-window" aria-hidden="true" title="Перейти на страницу"></span>
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating32" >ДЛЯ ДВЕРНЫХ БЛОКОВ</a>
@@ -156,7 +156,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li>
                             <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ</a>
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <span class="caret2 glyphicon glyphicon-new-window" aria-hidden="true" title="Перейти на страницу"></span>
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating36" >СТЕКЛО, ЗЕРКАЛО</a>
@@ -173,7 +173,7 @@ include 'inc-version-css-js.php';
                         </li>
                         <li  id="other">
                             <a href="#">ЕЩЁ</a >
-                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
+                            <!-- <span class="caret2 glyphicon glyphicon-new-window" aria-hidden="true" title="Перейти на страницу"></span> -->
                              <span class="caret3"></span> 
                             <ul class="dropdown-menu  dropdown-menu-right">
                                 <li><a href="#literatura-gost" >Литература</a>
