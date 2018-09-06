@@ -53,6 +53,9 @@
     <link rel="shortcut icon" href="img/favicon.ico">
 
     <style>
+        /* чтобы не дергалось окно */
+        /* .modal-open{overflow:auto;} */
+
         /* /pages-213/demo/html/tabs_accordian.html */
         .nav-tabs.nav-tabs-left {
             float: left;

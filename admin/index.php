@@ -39,7 +39,12 @@
                 <div class="box-header well">
                     <h2><i class="glyphicon glyphicon-th"></i> '.$row["name_head"].'</h2>
                     <div class="box-icon">
-                        <a href="#" class="btn btn-setting btn-round btn-default del_button" title="РЕДАКТИРОВАТЬ" id="del-'.$row["head_id"].'"><i class="glyphicon glyphicon-edit"></i></a>
+                        <a href="#" class="btn btn-setting btn-round btn-default del_button" 
+                            data-content="РЕДАКТИРОВАТЬ"
+                            data-toggle="modal"
+                            data-target="#myModal" 
+                            title="РЕДАКТИРОВАТЬ" id="del-'.$row["head_id"].'">
+                            <i class="glyphicon glyphicon-edit"></i></a>
                         <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>  
                         <!-- <a href="#" class="btn btn-close btn-round btn-default" title="ДОБАВИТЬ РАЗДЕЛ"><i class="glyphicon glyphicon-plus-sign"></i></a> -->
                     </div>
@@ -53,8 +58,13 @@
                                 <div class="row">
                                     <div class="col-sm-12">                                   
                                         <div class="box-icon">
-                                            <a href="#" class="btn btn-setting btn-round btn-default" title="ДОБАВИТЬ КАТЕГОРИЮ"><i
-                                                    class="glyphicon glyphicon-plus-sign"></i></a>
+                                            <a href="#" class="btn btn-setting btn-round btn-default"
+                                                data-content="ДОБАВИТЬ КАТЕГОРИЮ"
+                                                data-toggle="modal"
+                                                data-target="#myModal" 
+                                                title="ДОБАВИТЬ КАТЕГОРИЮ">
+                                                <i class="glyphicon glyphicon-plus-sign"></i>
+                                            </a>
                                         </div>
                                         <div class="panel panel-transparent ">
                                             <!-- Nav tabs -->
@@ -77,9 +87,13 @@
                                                             <div class="panel-body no-padding">
                                                                 <div class="row">
                                                                     <div class="box-icon ">
-
                                                                         <a href="#" class="btn btn-setting btn-round btn-default "
-                                                                            title="ДОБАВИТЬ ГРУППУ"><i class="glyphicon glyphicon-plus-sign"></i></a>
+                                                                         data-content="ДОБАВИТЬ ГРУППУ"
+                                                                         data-toggle="modal"
+                                                                         data-target="#myModal" 
+                                                                         title="ДОБАВИТЬ ГРУППУ">
+                                                                         <i class="glyphicon glyphicon-plus-sign"></i>
+                                                                        </a>
                                                                     </div>
                                                                     <div class="col-lg-12 ">
 
@@ -292,7 +306,7 @@
 
 
       $("body").on( "click","#responds .btn-minimize",function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         var $target = $(this).parent().parent().next('.box-content');
         if ($target.is(':visible')) $('i', $(this)).removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
         else                       $('i', $(this)).removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
@@ -334,10 +348,10 @@ $("body").on( "mouseleave","ul.thumbnails.gallery li.thumbnail",function () {
     alert('добавить к ' + $(this).parents('.thumbnail').attr('id'));
     }); 
 
-     $("body").on( "click","#responds .btn-setting",function (e) {
-        e.preventDefault();
-        $('#myModal').modal('show');
-    });
+    //  $("body").on( "click","#responds .btn-setting",function (e) {
+    //     e.preventDefault();
+    //     $('#myModal').modal('show');
+    // });
      
        //gallery img click
        $("body").on( "click","ul.thumbnails.gallery li.thumbnail img" , function (e) {
@@ -354,12 +368,12 @@ $('#myModal').on('show.bs.modal', function (event) {
 var button = $(event.relatedTarget); 
 // извлечь информацию из атрибута data-content
 // var content = button.data('content'); 
-alert(button.nodeName);
-var content = button.attr('alt'); 
+// alert(button.data('content'));
+var content = button.data('content'); 
 // var im = button.data('im'); 
 var im = button.attr('src');
 // вывести эту информацию в элемент, имеющий id="content"
-$("body").css("overflow-y", "scroll");
+// $("body").css("overflow-y", "scroll");
 // html {   overflow-y: scroll;   }
 // $(this).css("margin-right", "-20px");
 $(this).find('#myModalLabel').text(content); 

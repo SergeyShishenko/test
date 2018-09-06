@@ -30,7 +30,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             <div class="box-header well">
                 <h2><i class="glyphicon glyphicon-th"></i> <?php echo $contentToSave ?></h2>
                 <div class="box-icon" >
-                    <a href="#" class="btn btn-setting btn-round btn-default del_button"  title="РЕДАКТИРОВАТЬ" id="del-'.$head_id.'"><i class="glyphicon glyphicon-edit" ></i></a>
+                    <a href="#" class="btn btn-setting btn-round btn-default del_button"title="РЕДАКТИРОВАТЬ" id="del-'.$head_id.'"><i class="glyphicon glyphicon-edit" ></i></a>
                     <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>  
                     <!-- <a href="#" class="btn btn-close btn-round btn-default" title="ДОБАВИТЬ РАЗДЕЛ"><i class="glyphicon glyphicon-plus-sign"></i></a> -->
                 </div>
