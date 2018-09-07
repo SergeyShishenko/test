@@ -11,6 +11,5 @@ echo'<!DOCTYPE html>
         <link href="./dist/css/animate.min.css" rel="stylesheet"> 
         <link href="./dist/css/docs.css?v='. $docsVersion .'" rel="stylesheet">
         <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">    
-    </head>
-    <body>
+    
 ';?>

@@ -11,6 +11,8 @@
 // include 'inc-header-menu.php';
 ?>
 <?php echo'
+</head>
+<body>
     <header class="navbar navbar-inverse navbar-fixed-top" >
         <div class="container">            
             <div class="navbar navbar-inverse " role="navigation">

@@ -36,6 +36,7 @@ li > span.caret2 {
   /* z-index: 1000; */
   position: relative;  
   cursor: pointer;
+  color: #adadf1;
 }
 .dropdown-menu-right{right: 0; left: auto;}
 li > span.caret3:hover,li > span.caret2:hover {
