@@ -209,7 +209,7 @@ include 'inc-left-side-menu-furnitura.php';
                 </div>
             </div>
             <div class="main-box clearfix">
-                <h4>Качество движения MOVENTO</h4>
+                <h4>TIP-ON BLUMOTION for TANDEMBOX: assembly | Blum</h4>
                 <div class="main-box-body clearfix">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tJk8FShHTUE?rel=0"
