@@ -13,6 +13,7 @@ $item_dlya_mebeli_Class = 'active';
 $item_universalnaya_Class = '';
 $item_katalogi_Class = '';
 include 'inc-head.php';
+echo '<style>h4, h5, h6 {margin-left: 20px;}</style>';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-furnitura.php';
 ?>
