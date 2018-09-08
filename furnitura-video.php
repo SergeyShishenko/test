@@ -13,7 +13,10 @@ $item_dlya_mebeli_Class = 'active';
 $item_universalnaya_Class = '';
 $item_katalogi_Class = '';
 include 'inc-head.php';
-echo '<style>h4, h5, h6 {margin-left: 20px;}</style>';
+echo '<style>
+        h4, h5, h6 {margin-left: 20px;}
+        iframe #iframe_mp4 > video{height: 100%;width: 100%;}
+     </style>';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-furnitura.php';
 ?>
@@ -64,15 +67,19 @@ include 'inc-left-side-menu-furnitura.php';
                 </div>
             </div>
 
-            <!-- <div class="main-box clearfix">
+            <div class="main-box clearfix">
                 <h4>TIP-ON</h4>
                 <div class="main-box-body clearfix">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://d2.blum.com/BEC003/tip0003-tip-on-fuer-tueren_pr_rf_fi_bau_$sall_$amp4360p_$v1.mp4"
-                            allowfullscreen></iframe>
+                            allowfullscreen                    
+                            id='iframe_mp4'
+                            onload="iframe_mp4()"
+                            >
+                        </iframe>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <div class="main-box clearfix">
                 <h4> Петля Sensys 8639i, угол корпуса W30, угол 95°, чашка TH52 Ø35, вкладная навеска B 16</h4>
@@ -242,6 +249,29 @@ include 'inc-left-side-menu-furnitura.php';
                 <div class="main-box-body clearfix">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XGn44wjmbDc?rel=0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-header">
+                <h1 itemprop="name" id="petli-dlya-fasadov">Пантографы</h1>
+                
+            </div>
+            <div class="main-box clearfix">
+                <h4>Пантограф (мебельный лифт) SUPERLIFT </h4>
+                <div class="main-box-body clearfix">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IzM8rPYn-Ag?rel=0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="main-box clearfix">
+                <h4>Пантограф для одежды Наполнение для шкафа купе</h4>
+                <div class="main-box-body clearfix">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Iu231ACykKc?rel=0"
                             allowfullscreen></iframe>
                     </div>
                 </div>
@@ -449,4 +479,39 @@ include 'inc-left-side-menu-furnitura.php';
                         </ul> -->
     </div>
 </div><!-- боковое меню блоки дверные конец -->
+<!-- <script>
+  var iframe = document.getElementsById('iframe_mp4');
+
+  var iframeDoc = iframe.contentWindow.document;
+
+  if (iframeDoc.readyState == 'complete') {
+    iframeDoc.body.style.backgroundColor = 'green';
+  }
+  iframe.onload = function() {
+    var iframeDoc2 = iframe.contentWindow.document;
+    iframeDoc2.body.style.backgroundColor = 'orange';
+  }
+</script> -->
+
+<!-- <script>
+document.querySelector("#iframe_mp4").addEventListener("load", function() {
+    alert(this.nodeName);
+this.style.backgroundColor = "red";
+alert(this.nodeName);
+
+});
+
+function iframe_mp4() {  
+alert();
+var cssLink = document.createElement("link"); 
+cssLink.href = "iframe_mp4.css"; 
+cssLink.rel = "stylesheet"; 
+cssLink.type = "text/css"; 
+
+var iframe = document.getElementById('iframe_mp4');
+var frameDoc = iframe.contentDocument || iframe.contentWindow.document;
+var el = frameDoc.getElementsByTagName("head")[0];
+el.parentNode.appendChild(cssLink);
+}
+ </script> -->
 <?php include 'inc-footer.php'; ?>

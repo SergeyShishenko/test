@@ -24,9 +24,10 @@
 		success: function(element){
 			console.log("Element loaded: ", element.nodeName);
 		}
-	});
+    });
+    
 	</script>
-
+    
     </body>
 </html>
 ';?>
