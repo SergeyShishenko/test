@@ -17,3 +17,7 @@ git push
 git log -p -2  изменение двух последних комитов
 
 git log -2  два последних комитов
+
+исправить ошибку при пуле
+git add .
+git commit -m "my message"
