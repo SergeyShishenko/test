@@ -1201,31 +1201,56 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>
 
                 
-
+                        
                         <div class="bs-callout bs-callout-warning cont" > 
-                            <h2 id="pantograf1" >&nbsp;</h2> 
-                            <h2 >pantograf1</h2>                              
-                            <p> 
-                                <a>
-                                    <img  
-                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
-                                        data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
-                                        data-toggle="modal"
-                                        data-target="#myModal"                                                                   
-                                        alt="pantograf1"
-                                        data-pdf=""
-                                    >
-                                </a>
-                            </p>
-                            <div class="overlay"></div>
+                            
+                            <div class="main-box clearfix">   
+                                <span id="SUPERLIFT"></span>                                 
+                                <h2 >Пантограф 75-115 см, регул. нагрузки 14-20 кг</h2>  
+                                <div class="main-box-body clearfix">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IzM8rPYn-Ag?rel=0"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-xs-6 col-md-4">
+                                    <p> 
+                                        <a>
+                                            <img  
+                                                src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+                                                data-src="./dist/images/test.png"
+                                                class="center-block   img-rounded img-thumbnail b-lazy bar "
+                                                data-toggle="modal"
+                                                data-target="#myModal"                                                                   
+                                                alt="Пантограф 75-115 см, регул. нагрузки 14-20 кг"
+                                                data-pdf=""
+                                            >
+                                        </a>
+                                    </p>
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-8" style="background: #fff;height: 165px;
+                                 border: 1px solid rgb(221, 221, 221);
+                                 box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+                                 border-radius: 4px;
+                                 ">
+                                    <p>ШИРИНА СЕКЦИИ, ММ.....................................................................750 - 1150 </p>
+                                    <p>НАГРУЗКА, КГ...............................................................................до 20 </p>
+                                    <p>УСТАНОВКА.................................................................к боковине "Система 32"</p>
+                                    <p>ПРОИЗВОДИТЕЛЬ......................................................................Ambos (Италия)</p> 
+                                </div>                            
+                            </div> 
+                            
                         </div> 
 
            
 
                         <div class="bs-callout bs-callout-warning cont" > 
-                            <h2 id="pantograf2" >&nbsp;</h2> 
-                            <h2 >pantograf2</h2>                              
+                            <h2 id="LIFT800" >&nbsp;</h2> 
+                            <h2 >Пантограф с креплением к стене, 75-115 см, нагр.10 кг</h2>                              
                             <p> 
                                 <a>
                                     <img  
@@ -1234,7 +1259,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
                                         data-toggle="modal"
                                         data-target="#myModal"                                                                   
-                                        alt="pantograf2"
+                                        alt="Пантограф с креплением к стене, 75-115 см, нагр.10 кг"
                                         data-pdf=""
                                     >
                                 </a>
@@ -1575,9 +1600,9 @@ include 'inc-left-side-menu-furnitura.php';
                             <li>
                                 <a href="#pantografy"> ПАНТОГРАФЫ</a>
                                 <ul class="nav">
-                                    <li><a href="#pantograf1">&#9999;&nbsp;pantograf1</a>
+                                    <li><a href="#SUPERLIFT">&#9999;&nbsp;Пантограф 75-115 см, регул. нагрузки 14-20 кг</a>
                                     </li>
-                                    <li><a href="#pantograf2">&#9999;&nbsp;pantograf2</a>
+                                    <li><a href="#LIFT800">&#9999;&nbsp;Пантограф с креплением к стене, 75-115 см, нагр.10 кг</a>
                                     </li>                                                                 
                                 </ul>
                             </li>
