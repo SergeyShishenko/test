@@ -245,6 +245,32 @@ include 'inc-left-side-menu-furnitura.php';
                     </div>
                 </div>
             </div>
+
+<div class="page-header">
+                <h1 itemprop="name" id="petli-dlya-fasadov">Пантографы</h1>
+                
+            </div>
+            <div class="main-box clearfix">
+                <h4>Пантограф (мебельный лифт) SUPERLIFT </h4>
+                <div class="main-box-body clearfix">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IzM8rPYn-Ag?rel=0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="main-box clearfix">
+                <h4>Пантограф для одежды Наполнение для шкафа купе</h4>
+                <div class="main-box-body clearfix">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Iu231ACykKc?rel=0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+
         </section>
     </article>
 </div>
