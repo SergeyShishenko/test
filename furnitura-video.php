@@ -13,6 +13,10 @@ $item_dlya_mebeli_Class = 'active';
 $item_universalnaya_Class = '';
 $item_katalogi_Class = '';
 include 'inc-head.php';
+echo '<style>
+        h4, h5, h6 {margin-left: 20px;}
+        iframe #iframe_mp4 > video{height: 100%;width: 100%;}
+     </style>';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-furnitura.php';
 ?>
