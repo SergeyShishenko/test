@@ -225,11 +225,11 @@
                                             </li>                                                                                    
                                         </ul>
                                      </li>
-                                     <li class="menu2 disabled"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ</a>
+                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantograf1">...</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#SUPERLIFT">Пантограф 75-115 см, регул. нагрузки 14-20 кг</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantograf2">...</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#LIFT800">Пантограф с креплением к стене, 75-115 см, нагр.10 кг</a>
                                             </li>                                                                                    
                                         </ul>
                                      </li>

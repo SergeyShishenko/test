@@ -4955,20 +4955,20 @@ include 'inc-version-css-js.php';
                                                         </TR>
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip=" ПАНТОГРАФЫ" class="hover mapsite disabled" id="footer146">
+                                                            <TD data-tooltip=" ПАНТОГРАФЫ" class="hover mapsite " id="footer146">
                                                                 <p data-img="./dist/images/no-foto.png" id="floating147" data-href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ<span><br>~pantografy</span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-pantograf1">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#pantograf1">???<span> <br>~pantograf1</span></p>
+                                                                        <TD class="mapsite" colspan="2" id="flo-SUPERLIFT">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#SUPERLIFT">Пантограф 75-115 см, регул. нагрузки 14-20 кг<span> <br>~SUPERLIFT</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
-                                                                        <TD class="mapsite" id="flo-pantograf2">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#pantograf2">???<span> <br>~pantograf2</span></p>
+                                                                        <TD class="mapsite" id="flo-LIFT800">
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#LIFT800">Пантограф с креплением к стене, 75-115 см, нагр.10 кг<span> <br>~LIFT800</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
