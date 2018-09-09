@@ -1206,7 +1206,8 @@ include 'inc-left-side-menu-furnitura.php';
                             
                             <div class="main-box clearfix">   
                                 <span id="SUPERLIFT"></span>                                 
-                                <h2 >Пантограф 75-115 см, регул. нагрузки 14-20 кг</h2>  
+                                <h2 >Пантограф 75-115 см, регул. нагрузки 14-20 кг</h2> 
+                                <h4 >Артикул: SUPERLIFT</h4>  
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IzM8rPYn-Ag?rel=0"
@@ -1217,11 +1218,11 @@ include 'inc-left-side-menu-furnitura.php';
                             
                             <div class="row">
                                 <div class="col-xs-6 col-md-4">
-                                    <p> 
+                                    <div> 
                                         <a>
-                                            <img  
+                                            <img  style="height: 237px;"
                                                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
-                                                data-src="./dist/images/test.png"
+                                                data-src="./dist/images/SUPERLIFT.jpg"
                                                 class="center-block   img-rounded img-thumbnail b-lazy bar "
                                                 data-toggle="modal"
                                                 data-target="#myModal"                                                                   
@@ -1229,18 +1230,42 @@ include 'inc-left-side-menu-furnitura.php';
                                                 data-pdf=""
                                             >
                                         </a>
-                                    </p>
+                                        </div>
                                     <div class="overlay"></div>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-8" style="background: #fff;height: 165px;
+                                <div class="col-xs-12 col-sm-6 col-md-8" style="background: #fff;height: 237px;
                                  border: 1px solid rgb(221, 221, 221);
                                  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
                                  border-radius: 4px;
                                  ">
-                                    <p>ШИРИНА СЕКЦИИ, ММ.....................................................................750 - 1150 </p>
-                                    <p>НАГРУЗКА, КГ...............................................................................до 20 </p>
-                                    <p>УСТАНОВКА.................................................................к боковине "Система 32"</p>
-                                    <p>ПРОИЗВОДИТЕЛЬ......................................................................Ambos (Италия)</p> 
+                                   
+                                    <p class="boldstyle f-row">                                        
+                                        <span class="f-left">Материал:</span><span class="f-separator"></span><span class="f-val f-right"> металл/пластик</span>
+                                        <br>
+                                    </p>  
+                                     <p class="boldstyle f-row"> 
+                                        <span class="f-left">Установка:</span><span class="f-separator"></span><span class="f-val f-right"> к боковине "Система 32"</span>
+                                        <br>
+                                    </p> 
+                                    <p class="boldstyle f-row">   
+                                        <span class="f-left">Ширина секции</span><span class="f-separator"></span><span class="f-val f-right"> 750-1150 мм</span>
+                                        <br>
+                                    </p>
+                                    <p class="boldstyle f-row"> 
+                                        <span class="f-left">Нагрузка:</span><span class="f-separator"></span><span class="f-val f-right"> до 20 кг</span>
+                                        <br>
+                                    </p>
+                                    <p class="boldstyle f-row"> 
+                                        <span class="f-left">Производитель:</span><span class="f-separator"></span><span class="f-val f-right"> Ambos (Италия)</span>
+                                        <br>
+                                    </p>
+                                    <p style="margin-bottom: 0px;margin-top: 15px;" class="boldstyle">
+                                         <span>Преимущества:</span>
+                                    </p>
+                                    <ul class="stat" style="margin-top: 0px;">
+                                        <li>регулировка угла наклона штанги. Используется с расширителем для пантографа 152/A.</li>                                        
+                                    </ul>
+                                    <i >Артикул: SUPERLIFT</i> 
                                 </div>                            
                             </div> 
                             

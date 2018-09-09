@@ -4962,8 +4962,8 @@ include 'inc-version-css-js.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-SUPERLIFT">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#SUPERLIFT">Пантограф 75-115 см, регул. нагрузки 14-20 кг<span> <br>~SUPERLIFT</span></p>
-                                                                            <p data-img="./dist/images/no-foto.png"    data-href="furnitura-dlya-mebeli.php#SUPERLIFT" class="KEYWORDS">Пантограф (мебельный лифт) SUPERLIFT </p>
+                                                                            <p data-img="./dist/images/SUPERLIFT.jpg" data-href="furnitura-dlya-mebeli.php#SUPERLIFT">Пантограф 75-115 см, регул. нагрузки 14-20 кг<span> <br>~SUPERLIFT</span></p>
+                                                                            <p data-img="./dist/images/SUPERLIFT.jpg"    data-href="furnitura-dlya-mebeli.php#SUPERLIFT" class="KEYWORDS">Пантограф (мебельный лифт) SUPERLIFT </p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
