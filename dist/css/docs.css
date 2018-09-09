@@ -604,8 +604,8 @@ a.list-group-item-sub:focus {
 /* } */
 /* @media screen and (min-width: 768px){ */
 .modal-dialog {
-/* width: 80%; 
- height: 80%; */
+/* width: 50%;  */
+ /* height: 80%; */
 margin: auto auto;
 /* margin: 30px auto; */
 }

@@ -61,7 +61,7 @@ echo '
         ';
 
 
-include 'inc-header-menu.php';
+include 'inc-header-menu2.php';
 include 'inc-left-side-menu-furnitura.php';
 ?> 
                 <!-- main  -->
