@@ -1248,8 +1248,8 @@ include 'inc-left-side-menu-furnitura.php';
                         </section>
                     </article>
 
-                    <article  >
-                      <section id="pantografy">
+                    <article  id="pantografy">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" > ПАНТОГРАФЫ</h1>
                         </div>
@@ -1259,9 +1259,10 @@ include 'inc-left-side-menu-furnitura.php';
                         <div class="bs-callout bs-callout-warning cont" > 
                             
                             <div class="main-box clearfix"  id="SUPERLIFT">   
-                                <!-- <span id="SUPERLIFT"></span>                                  -->
+                                <!-- <span id="SUPERLIFT"></span>  -->
+                                <h2 >Артикул: SUPERLIFT</h2>                            
                                 <h2 >Пантограф 75-115 см, регул. нагрузки 14-20 кг</h2> 
-                                <h4 >Артикул: SUPERLIFT</h4>  
+                                 
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IzM8rPYn-Ag?rel=0"
@@ -1271,25 +1272,12 @@ include 'inc-left-side-menu-furnitura.php';
                             </div>
                             
                             <div class="row">
-                                <div class="col-xs-6 col-md-4">
-                                    <!-- <div> 
-                                        <a>
-                                            <img  style="height: 237px;"
-                                                src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
-                                                data-src="./dist/images/SUPERLIFT.jpg"
-                                                class="center-block   img-rounded img-thumbnail b-lazy bar "
-                                                data-toggle="modal"
-                                                data-target="#myModal"                                                                   
-                                                alt="Пантограф 75-115 см, регул. нагрузки 14-20 кг"
-                                                data-pdf=""
-                                            >
-                                        </a>
-                                    </div> -->
+                                <div class=" col-xs-6 col-sm-4 col-md-4">
+                                   
                                     <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
                                         <div class="carousel-inner">
                                             <div class="item active">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Пантограф 75-115 см, регул. нагрузки 14-20 кг" data-image="./dist/images/SUPERLIFT.jpg"
-                        data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Пантограф 75-115 см, регул. нагрузки 14-20 кг" data-image="./dist/images/SUPERLIFT.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
                                                     src="./dist/images/SUPERLIFT.jpg"
                                                     data-src="./dist/images/SUPERLIFT.jpg"
@@ -1302,8 +1290,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Ширина секции 750 - 1150 мм" data-image="./dist/images/SUPERLIFT_foto.jpg"
-                        data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Ширина секции 750 - 1150 мм" data-image="./dist/images/SUPERLIFT_foto.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/SUPERLIFT_foto.jpg"
                                                         data-src="./dist/images/SUPERLIFT_foto.jpg"
@@ -1316,8 +1303,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="УСТАНОВКА к боковине &#034;Система 32&#034;" data-image="./dist/images/SUPERLIFT_sch1.jpg"
-                        data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="УСТАНОВКА к боковине &#034;Система 32&#034;" data-image="./dist/images/SUPERLIFT_sch1.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/SUPERLIFT_sch1.jpg"
                                                         data-src="./dist/images/SUPERLIFT_sch1.jpg"
@@ -1330,8 +1316,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Регулировка угла наклона штанги" data-image="./dist/images/SUPERLIFT_sch2.jpg"
-                        data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Регулировка угла наклона штанги" data-image="./dist/images/SUPERLIFT_sch2.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/SUPERLIFT_sch2.jpg" 
                                                         data-src="./dist/images/SUPERLIFT_sch2.jpg"
@@ -1355,18 +1340,15 @@ include 'inc-left-side-menu-furnitura.php';
                                         </a>
                                     </div>
 
-
-
-
-
                                     <div class="overlay"></div>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-8"
+                                <div class="col-xs-12 col-sm-8 col-md-8"
                                 
                                  style="background: #fff;height: 237px;
                                  border: 1px solid rgb(221, 221, 221);
                                  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
                                  border-radius: 4px;
+                                 line-height: 1.1;
                                  "
                                  >
                                    
@@ -1402,26 +1384,142 @@ include 'inc-left-side-menu-furnitura.php';
                             
                         </div> 
 
-           
 
                         <div class="bs-callout bs-callout-warning cont" > 
-                            <h2 id="LIFT800" >&nbsp;</h2> 
-                            <h2 >Пантограф с креплением к стене, 75-115 см, нагр.10 кг</h2>                              
-                            <p> 
-                                <a>
-                                    <img  
-                                        src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
-                                        data-src="./dist/images/test.png"
-                                        class="center-block   img-rounded img-thumbnail b-lazy bar img-album"
-                                        data-toggle="modal"
-                                        data-target="#myModal"                                                                   
-                                        alt="Пантограф с креплением к стене, 75-115 см, нагр.10 кг"
-                                        data-pdf=""
-                                    >
-                                </a>
-                            </p>
-                            <div class="overlay"></div>
-                        </div>  
+                            
+                            <div class="main-box clearfix"  id="LIFT800">   
+                                <!-- <span id="SUPERLIFT"></span>  -->
+                                <h2 >Артикул: LIFT800</h2>                            
+                                <h2 >Пантограф с креплением к стене, 75-115 см, нагр.10 кг</h2> 
+                                 
+                                <div class="main-box-body clearfix">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n6QfgloIgCk?rel=0"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class=" col-xs-6 col-sm-4 col-md-4">
+                                   
+                                    <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Пантограф 75-115 см, регул. нагрузки 14-20 кг" data-image="./dist/images/LIFT800.jpg" data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                    src="./dist/images/LIFT800.jpg"
+                                                    data-src="./dist/images/LIFT800.jpg"
+                                                    class="center-block   img-rounded img-thumbnail bar "
+                                                    data-toggle="modal"
+                                                                                                                    
+                                                    alt="Пантограф 75-115 см, регул. нагрузки 14-20 кг"
+                                                    data-pdf=""
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Ширина секции 750 - 1150 мм" data-image="./dist/images/LIFT800_foto.jpg" data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                        src="./dist/images/LIFT800_foto.jpg"
+                                                        data-src="./dist/images/LIFT800_foto.jpg"
+                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        data-toggle="modal"
+                                                                                                                          
+                                                        alt="Ширина секции 750 - 1150 мм"
+                                                        data-pdf=""
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="УСТАНОВКА к боковине &#034;Система 32&#034;" data-image="./dist/images/LIFT800_sch.jpg" data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                        src="./dist/images/LIFT800_sch.jpg"
+                                                        data-src="./dist/images/LIFT800_sch.jpg"
+                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        data-toggle="modal"
+                                                                                                                          
+                                                        alt="Установка к боковине &#034;Система 32&#034;"
+                                                        data-pdf=""
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Регулировка угла наклона штанги" data-image="./dist/images/LIFT800_dr.jpg" data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                        src="./dist/images/LIFT800_dr.jpg" 
+                                                        data-src="./dist/images/LIFT800_dr.jpg"
+                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        data-toggle="modal"
+                                                                                                                         
+                                                        alt="Регулировка угла наклона штанги"
+                                                        data-pdf=""
+                                                    >
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Элементы управления -->
+                                        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Предыдущий</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Следующий</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="col-xs-12 col-sm-8 col-md-8"
+                                
+                                 style="background: #fff;height: 237px;
+                                 border: 1px solid rgb(221, 221, 221);
+                                 box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+                                 border-radius: 4px;
+                                 line-height: 1.1;
+                                 "
+                                 >
+                                    <p class="boldstyle f-row">                                        
+                                        <span class="f-left">Примечание:</span><span class="f-separator"></span><span class="f-val f-right"> крепится к стене</span>
+                                        <br>
+                                    </p> 
+                                    <p class="boldstyle f-row">                                        
+                                        <span class="f-left">Материал:</span><span class="f-separator"></span><span class="f-val f-right"> металл/пластик</span>
+                                        <br>
+                                    </p>  
+                                     <p class="boldstyle f-row"> 
+                                        <span class="f-left">Установка:</span><span class="f-separator"></span><span class="f-val f-right">к задней стенке или стене</span>
+                                        <br>
+                                    </p> 
+                                    <p class="boldstyle f-row">   
+                                        <span class="f-left">Ширина секции</span><span class="f-separator"></span><span class="f-val f-right"> 750-1150 мм</span>
+                                        <br>
+                                    </p>
+                                    <p class="boldstyle f-row"> 
+                                        <span class="f-left">Нагрузка:</span><span class="f-separator"></span><span class="f-val f-right"> до 10 кг</span>
+                                        <br>
+                                    </p>
+                                    <p class="boldstyle f-row"> 
+                                        <span class="f-left">Производитель:</span><span class="f-separator"></span><span class="f-val f-right"> Ambos (Италия)</span>
+                                        <br>
+                                    </p>
+                                    <p style="margin-bottom: 0px;margin-top: 15px;" class="boldstyle">
+                                         <span>Преимущества:</span>
+                                    </p>
+                                    <ul class="stat" style="margin-top: 0px;">
+                                        <li>разработан специально для использования во встроенных шкафах-купе, гардеробных комнатах и в качестве торгового оборудования в магазинах;</li>
+                                        <li>предназначен исключительно для прямого крепления к стене (весь необходимый крепеж и накладка идут в комплекте).</li>                                         
+                                    </ul>
+                                    <i >Артикул: LIFT800</i> 
+                                </div>                            
+                            </div> 
+                            
+                        </div> 
+
+           
+
+                       
                         </section> 
                     </article>
                     
