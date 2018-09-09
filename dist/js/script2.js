@@ -61,34 +61,7 @@ function getClientWidth(){
 
  $( document ).ready(function() {
     getPositionSearch();
-    // $(function getPositionSearch(){
-    //     var w = getClientWidth();// текущая ширина экрана  
-    //     var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
-    //     switch (true) { // Постоянное значение true вместо w
-    //         // case w >= 0 && w <= 3:
-    //         case w >= 0 && w <= 1800:
-    //             mainpage= 15 - zbz;
-    //             break;
-    //             case w > 1800:
-    //             mainpage= 41 - zbz;
-    //             break;
-    //         default:
-    //             mainpage=51;
-    //     }             
-    //     // var c= $('div.container').css('width');
-    //     var pos = $( '#main-page' ).position().left;
-    //     var c= $('#main-page').css('width');
-    //     c = c.replace("px", "")-mainpage; // -21удалить латинские символы 
-    //     // console.log(pos);
-    //     console.log(c); 
-    //      $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
-    //      $('.zbz-input-clearable').css({'visibility': 'visible'});
-    //      $('span.zbz').css('visibility','visible');
-    //     //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
-    //     // проверка input search
-    //   if($('input.who').val() !== ""){$('span.zbz').css('visibility','hidden');  }
-    //  });
-
+   
 
      getClientWidth();
 
@@ -172,28 +145,7 @@ $(function () {
     );
 });
 
-// прокрутка колеса мыши sub
-// var delta = 0;
 
-// $('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){
-
-// var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
-
-// if(dy > 0) {
-   
-//      delta =  1  + delta ;
-//     console.log('up1');
-//     console.log(delta); 
-//     e.preventDefault();  
-// }
-// else{    
-//      delta =  delta - 1;
-//     console.log('down1');
-//     console.log(delta);
-//     e.preventDefault();    
-// }
-
-// });
 
    // прокрутка колеса мыши sub2 
     var delta2 = 0; 
@@ -255,27 +207,7 @@ $(function () {
 
 
 
-// при открытии модального окна
-$('#myModal').on('show.bs.modal', function (event) {
 
-    // получить кнопку, которая его открыло
-    var button = $(event.relatedTarget); 
-    // извлечь информацию из атрибута data-content
-    // var content = button.data('content'); 
-    var content = button.attr('alt'); 
-    // var im = button.data('im'); 
-    var im = button.attr('src');
-    // вывести эту информацию в элемент, имеющий id="content"
-    $("body").css("overflow-y", "scroll");
-    // html {   overflow-y: scroll;   }
-    // $(this).css("margin-right", "-20px");
-    $(this).find('#myModalLabel').text(content); 
-   
-    $(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
-    // $(this).find('#im').html('<img src="'+im+'" alt=" "class="img-fluid center-block img-rounded img-thumbnail">'); 
-    // $(this).find('#im-download').html('<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <a href="'+im+'" type="button" class="btn btn-primary"download="'+im+'" >Сохранить картинку</a>'); 
-    // <a href="img.jpg" type="button" class="btn btn-primary"download="img.jpg" id="im-download">Сохранить картинку</a>
-  });
 
 
 

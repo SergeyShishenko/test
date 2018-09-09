@@ -142,7 +142,8 @@ p.boldstyle{white-space: nowrap;margin-bottom: 2px;}
     font-weight: 700;
 }
 ul.stat {
-  list-style-image: url(/dist/images/bul.gif);
+  /* list-style-image: url(/dist/images/bul.gif); */
+  list-style: square outside;
   list-style-position: outside;
   margin-left: 0px;
   margin-bottom: 16px;
@@ -644,8 +645,8 @@ a.list-group-item-sub:focus {
 /* } */
 /* @media screen and (min-width: 768px){ */
 .modal-dialog {
-width: 80%; 
- height: 80%;
+/* width: 80%; 
+ height: 80%; */
 margin: auto auto;
 /* margin: 30px auto; */
 }
@@ -655,7 +656,10 @@ position: relative;
 margin-right:0 !important;
 margin-top: -42px;
 } */
-
+.carousel {
+  width: 100% !important;
+}
+.carousel-control.left, .carousel-control.right{background-image:none;width: 0;}
 #bs-example-navbar-collapse-1 > form > ul{
 padding: 15px;
 background-color: rgb(255, 255, 255);

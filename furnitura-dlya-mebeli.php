@@ -13,6 +13,60 @@ $item_dlya_mebeli_Class = 'active';
 $item_universalnaya_Class = '';
 $item_katalogi_Class = '';
 include 'inc-head.php';
+echo '<link rel="stylesheet" href="css/main.07.07.2018.css" >
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+        
+        
+        <style>
+        .btn:focus,
+        .btn:active,
+        button:focus,
+        button:active {
+            outline: none !important;
+            box-shadow: none !important;
+        }
+
+        #image-gallery .modal-footer {
+            display: block;
+        }
+
+        .thumb {
+            margin-top: 7.5px;
+            margin-bottom: 7.5px;
+            padding-right: 7.5px;
+            padding-left: 7.5px;
+            text-align: center;
+        }
+
+       
+        /* .modal-dialog {
+             width: auto;
+           margin:30px 30px;
+        } */
+
+        /* .row .row {
+            margin-right: 0;
+            margin-left: 0;
+        } */
+
+        .thumbnail {
+            border: none;
+        }
+        .modal-header .close {
+         margin-top: -20px;
+        }
+        #image-gallery-image{float:none;}
+        @media (min-width: 768px){
+        .navbar-collapse.collapse {
+            display: none !important;
+            }
+       }
+    </style>  
+        
+        ';
+
+
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-furnitura.php';
 ?> 
@@ -302,7 +356,7 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
                     <article  >
-                      <section id="bs-docs-section">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="mehanizmy-razdvizheniya-dlya-fasadov-Cinetto-PS23">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ</h1>
                         </div>
@@ -331,7 +385,7 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
                     <article  >
-                      <section id="bs-docs-section">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="mehanizmy-podemnye-dlya-fasadov">МЕХАНИЗМЫ ПОДЪЕМНЫЕ для ФАСАДОВ</h1>
                         </div>
@@ -824,7 +878,7 @@ include 'inc-left-side-menu-furnitura.php';
 
 
                     <article  >
-                      <section id="bs-docs-section">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="opory">ОПОРЫ</h1>
                         </div>
@@ -915,7 +969,7 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
                     <article  >
-                      <section id="bs-docs-section">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="zashchelki-mebelnye">ЗАЩЕЛКИ МЕБЕЛЬНЫЕ</h1>
                         </div>
@@ -963,7 +1017,7 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
                    <article  >
-                      <section id="bs-docs-section">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="styazhki">СТЯЖКИ</h1>
                         </div>
@@ -1117,7 +1171,7 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
                     <article  >
-                      <section id="bs-docs-section">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="polkoderzhateli">ПОЛКОДЕРЖАТЕЛИ</h1>
                         </div>
@@ -1147,7 +1201,7 @@ include 'inc-left-side-menu-furnitura.php';
 
                     
                     <article  >
-                      <section id="bs-docs-section">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ</h1>
                         </div>
@@ -1195,17 +1249,17 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
                     <article  >
-                      <section id="bs-docs-section">
+                      <section id="pantografy">
                         <div class="page-header">
-                          <h1 itemprop="name" id="pantografy"> ПАНТОГРАФЫ</h1>
+                          <h1 itemprop="name" > ПАНТОГРАФЫ</h1>
                         </div>
 
                 
                         
                         <div class="bs-callout bs-callout-warning cont" > 
                             
-                            <div class="main-box clearfix">   
-                                <span id="SUPERLIFT"></span>                                 
+                            <div class="main-box clearfix"  id="SUPERLIFT">   
+                                <!-- <span id="SUPERLIFT"></span>                                  -->
                                 <h2 >Пантограф 75-115 см, регул. нагрузки 14-20 кг</h2> 
                                 <h4 >Артикул: SUPERLIFT</h4>  
                                 <div class="main-box-body clearfix">
@@ -1218,7 +1272,7 @@ include 'inc-left-side-menu-furnitura.php';
                             
                             <div class="row">
                                 <div class="col-xs-6 col-md-4">
-                                    <div> 
+                                    <!-- <div> 
                                         <a>
                                             <img  style="height: 237px;"
                                                 src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
@@ -1230,14 +1284,91 @@ include 'inc-left-side-menu-furnitura.php';
                                                 data-pdf=""
                                             >
                                         </a>
+                                    </div> -->
+                                    <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Пантограф 75-115 см, регул. нагрузки 14-20 кг" data-image="./dist/images/SUPERLIFT.jpg"
+                        data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                    src="./dist/images/SUPERLIFT.jpg"
+                                                    data-src="./dist/images/SUPERLIFT.jpg"
+                                                    class="center-block   img-rounded img-thumbnail bar "
+                                                    data-toggle="modal"
+                                                                                                                    
+                                                    alt="Пантограф 75-115 см, регул. нагрузки 14-20 кг"
+                                                    data-pdf=""
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Ширина секции 750 - 1150 мм" data-image="./dist/images/SUPERLIFT_foto.jpg"
+                        data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                        src="./dist/images/SUPERLIFT_foto.jpg"
+                                                        data-src="./dist/images/SUPERLIFT_foto.jpg"
+                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        data-toggle="modal"
+                                                                                                                          
+                                                        alt="Ширина секции 750 - 1150 мм"
+                                                        data-pdf=""
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="УСТАНОВКА к боковине &#034;Система 32&#034;" data-image="./dist/images/SUPERLIFT_sch1.jpg"
+                        data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                        src="./dist/images/SUPERLIFT_sch1.jpg"
+                                                        data-src="./dist/images/SUPERLIFT_sch1.jpg"
+                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        data-toggle="modal"
+                                                                                                                          
+                                                        alt="Установка к боковине &#034;Система 32&#034;"
+                                                        data-pdf=""
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Регулировка угла наклона штанги" data-image="./dist/images/SUPERLIFT_sch2.jpg"
+                        data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                        src="./dist/images/SUPERLIFT_sch2.jpg" 
+                                                        data-src="./dist/images/SUPERLIFT_sch2.jpg"
+                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        data-toggle="modal"
+                                                                                                                         
+                                                        alt="Регулировка угла наклона штанги"
+                                                        data-pdf=""
+                                                    >
+                                                </a>
+                                            </div>
                                         </div>
+                                        <!-- Элементы управления -->
+                                        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Предыдущий</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Следующий</span>
+                                        </a>
+                                    </div>
+
+
+
+
+
                                     <div class="overlay"></div>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-8" style="background: #fff;height: 237px;
+                                <div class="col-xs-12 col-sm-6 col-md-8"
+                                
+                                 style="background: #fff;height: 237px;
                                  border: 1px solid rgb(221, 221, 221);
                                  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
                                  border-radius: 4px;
-                                 ">
+                                 "
+                                 >
                                    
                                     <p class="boldstyle f-row">                                        
                                         <span class="f-left">Материал:</span><span class="f-separator"></span><span class="f-val f-right"> металл/пластик</span>
@@ -1295,7 +1426,7 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
                     
                     <article  >
-                      <section id="bs-docs-section">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="ruchki">РУЧКИ</h1>
                         </div>
@@ -1343,7 +1474,7 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
                      <article  >
-                      <section id="bs-docs-section">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ</h1>
                         </div>
@@ -1374,7 +1505,7 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
                      <article  >
-                      <section id="bs-docs-section">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="natyazhiteli-dlya-fasadov">НАТЯЖИТЕЛИ для ФАСАДОВ</h1>
                         </div>
@@ -1422,7 +1553,7 @@ include 'inc-left-side-menu-furnitura.php';
                     </article>
 
                      <article  >
-                      <section id="bs-docs-section">
+                      <section >
                         <div class="page-header">
                           <h1 itemprop="name" id="mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ</h1>
                         </div>
@@ -1671,4 +1802,130 @@ include 'inc-left-side-menu-furnitura.php';
                         </ul>
                     </div>
                 </div><!-- боковое меню блоки дверные конец -->
-<?php include 'inc-footer.php'; ?>
+
+                <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="image-gallery">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="image-gallery-title"></h4>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span aria-hidden="true">×</span>
+                                    <span class="sr-only">Close</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary float-left" id="show-previous-image">
+                                    <i class="fa fa-arrow-left"></i>
+                                </button>
+
+                                <button type="button" class="btn btn-secondary float-right" id="show-next-image">
+                                    <i class="fa fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+    <script src="./dist/js/main.26.04.2018.js"></script> 
+    <script>
+        // var modalId = $('#image-gallery');
+
+        $(document)
+            .ready(function () {
+
+                loadGallery(true, 'a.thumbb');
+
+                //This function disables buttons when needed
+                function disableButtons(counter_max, counter_current) {
+                    $('#show-previous-image, #show-next-image')
+                        .show();
+                    if (counter_max === counter_current) {
+                        $('#show-next-image')
+                            .hide();
+                    } else if (counter_current === 1) {
+                        $('#show-previous-image')
+                            .hide();
+                    }
+                }
+
+
+
+                //  @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+                //  @param setClickAttr  Sets the attribute for the click handler.
+
+
+                function loadGallery(setIDs, setClickAttr) {
+                    let current_image,
+                        selector,
+                        counter = 0;
+
+                    $('#show-next-image, #show-previous-image')
+                        .click(function () {
+                            if ($(this)
+                                .attr('id') === 'show-previous-image') {
+                                current_image--;
+                            } else {
+                                current_image++;
+                            }
+
+                            selector = $('[data-image-id="' + current_image + '"]');
+                            updateGallery(selector);
+                        });
+
+                    function updateGallery(selector) {
+                        let $sel = selector;
+                        current_image = $sel.data('image-id');
+                        $('#image-gallery-title')
+                            .text($sel.data('title'));
+                        $('#image-gallery-image')
+                            .attr('src', $sel.data('image'));
+                        disableButtons(counter, $sel.data('image-id'));
+                    }
+
+                    if (setIDs == true) {
+                        $('[data-image-id]')
+                            .each(function () {
+                                counter++;
+                                $(this)
+                                    .attr('data-image-id', counter);
+                            });
+                    }
+                    $(setClickAttr)
+                        .on('click', function () {
+                            updateGallery($(this));
+                        });
+                }
+            });
+
+        // build key actions
+        $(document)
+            .keydown(function (e) {
+                switch (e.which) {
+                    case 37: // left
+                        
+                        // if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+                        if ($('#show-previous-image').is(":visible")) {
+                        //   alert('left');  
+                            $('#show-previous-image').click();
+                        }
+                        break;
+
+                    case 39: // right
+                        
+                        // if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+                        if ($('#show-next-image').is(":visible")) {
+                            // alert('right');
+                            $('#show-next-image').click();
+                        }
+                        break;
+
+                    default:
+                        return; // exit this handler for other keys
+                }
+                e.preventDefault(); // prevent the default action (scroll / move caret)
+            });
+    </script>
+<?php include 'inc-footer2.php'; ?>
