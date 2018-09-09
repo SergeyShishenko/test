@@ -1,6 +1,6 @@
 <?php
-$gridVersion = 5;
-$docsVersion = 23;
-$scriptVersion = 20;
-$floatingVersion = 10;
+$gridVersion = 7;
+$docsVersion = 25;
+$scriptVersion = 21;
+$floatingVersion = 11;
 ?>

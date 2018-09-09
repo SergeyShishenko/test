@@ -13,13 +13,11 @@ $item_dlya_mebeli_Class = 'active';
 $item_universalnaya_Class = '';
 $item_katalogi_Class = '';
 include 'inc-head.php';
-echo '<link rel="stylesheet" href="css/main.07.07.2018.css" >
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
+echo '        
         
         
         <style>
-        .btn:focus,
+          .btn:focus,
         .btn:active,
         button:focus,
         button:active {
@@ -57,11 +55,7 @@ echo '<link rel="stylesheet" href="css/main.07.07.2018.css" >
          margin-top: -20px;
         }
         #image-gallery-image{float:none;}
-        @media (min-width: 768px){
-        .navbar-collapse.collapse {
-            display: none !important;
-            }
-       }
+      
     </style>  
         
         ';

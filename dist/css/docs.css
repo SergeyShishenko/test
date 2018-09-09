@@ -17,6 +17,8 @@ body {
     overflow: visible !important;
 }
 } */
+
+
 .click-hover{background-color:rgb(66, 139, 202);}
 
 li > span.caret3 { 
@@ -759,9 +761,8 @@ a.navbar-brand{text-align: center;}
     padding-right:35px; */
   }
   .glyphicon-search{   margin-right:-140px; font-size: 14px !important; }
-  .nav > li > a {
-   
-    padding: 15px 20px 15px 8px;
+  .nav > li > a {   
+    padding: 15px 8px 15px 8px;
     border-left:0.5px dotted #4e4b4b;
     /* border-right:0.5px solid; */
    
@@ -892,7 +893,7 @@ a.navbar-brand{text-align: center;}
   /* padding-left: 28px; */
 }
 .nav > li > a {
-  padding: 15px 20px 15px 15px;
+  padding: 15px 8px 15px 15px;
 }
 
 }

@@ -4962,14 +4962,15 @@ include 'inc-version-css-js.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-SUPERLIFT">
-                                                                            <p data-img="./dist/images/SUPERLIFT.jpg" data-href="furnitura-dlya-mebeli.php#SUPERLIFT">Пантограф 75-115 см, регул. нагрузки 14-20 кг<span> <br>~SUPERLIFT</span></p>
-                                                                            <p data-img="./dist/images/SUPERLIFT.jpg"    data-href="furnitura-dlya-mebeli.php#SUPERLIFT" class="KEYWORDS">Пантограф (мебельный лифт) SUPERLIFT </p>
+                                                                            <p data-img="./dist/images/SUPERLIFT.jpg" data-href="furnitura-dlya-mebeli-pantograf1.php#SUPERLIFT">Пантограф 75-115 см, регул. нагрузки 14-20 кг<span> <br>~SUPERLIFT</span></p>
+                                                                            <p data-img="./dist/images/SUPERLIFT.jpg"    data-href="furnitura-dlya-mebeli-pantograf1.php#SUPERLIFT" class="KEYWORDS">Mебельный лифт SUPERLIFT </p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-LIFT800">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#LIFT800">Пантограф с креплением к стене, 75-115 см, нагр.10 кг<span> <br>~LIFT800</span></p>
+                                                                            <p data-img="./dist/images/LIFT800.jpg" data-href="furnitura-dlya-mebeli-pantograf2.php#LIFT800">Пантограф с креплением к стене, 75-115 см, нагр.10 кг<span> <br>~LIFT800</span></p>
+                                                                            <p data-img="./dist/images/LIFT800.jpg"    data-href="furnitura-dlya-mebeli-pantograf2.php#SUPERLIFT" class="KEYWORDS">Mебельный лифт LIFT800 </p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  
