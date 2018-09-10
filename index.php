@@ -5210,13 +5210,13 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
-                                                <TD data-tooltip="МЕТАЛЛ" class="hover mapsite disabled" id="footer37">
+                                                <TD data-tooltip="МЕТАЛЛ" class="hover mapsite " id="footer37">
                                                     <p data-href="materialy-ne-derevyannye-metall.php"  data-img="./dist/images/no-foto.png" id="floating38">МЕТАЛЛ<span><br>~-metall</span></p></TD>
                                                     <TD>
                                                         <TABLE >
                                                             <TR>
-                                                                <TD data-tooltip="" class="hover mapsite"   colspan="2" id="flo-">
-                                                                        <p data-href="" data-img="./dist/images/no-foto.png">Виды обработки кромки стекла, зеркала<span><br>~-117-metodicheskoe-posobie-po-izdeliyam</span></p> 
+                                                                <TD data-tooltip="" class="hover mapsite"   colspan="2" id="flo-astra-ex">
+                                                                        <p onclick='window.open("http://www.astra-ex.ru/", "_blank")'  data-img="./dist/images/no-foto.png">Компания «Астра Трим» представляет широкий спектр отделочных профилей<span><br>~astra-ex</span></p> 
                                                                 </TD>
                                                             </TR> 
                                                             <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
@@ -5254,13 +5254,13 @@ include 'inc-version-css-js.php';
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
-                                                <TD data-tooltip="СВЕТ" class="hover mapsite disabled" id="footer39">
+                                                <TD data-tooltip="СВЕТ" class="hover mapsite " id="footer39">
                                                     <p data-href="materialy-ne-derevyannye-tkan-kozha.php"  data-img="./dist/images/no-foto.png" id="floating40">СВЕТ<span><br>~-tkan-kozha</span></p></TD>
                                                     <TD>
                                                         <TABLE >
                                                             <TR>
                                                                 <TD data-tooltip="" class="hover mapsite"  colspan="2"  >
-                                                                        <p data-href="" data-img="./dist/images/no-foto.png">Виды обработки кромки стекла, зеркала<span><br>~-117-metodicheskoe-posobie-po-izdeliyam</span></p> 
+                                                                        <p onclick='window.open("https://arlight.su/catalog/otkrytye-rt-12v-120-2x-140/lenta-rt-2-5000-12v-warm-2x-3528-600-led-lux-012335.html?sphrase_id=135905", "_blank")' data-img="./dist/images/no-foto.png">Компания «Арлайт ГРУПП» светодиодное освещение и комплектующие<span><br>~-117-metodicheskoe-posobie-po-izdeliyam</span></p> 
                                                                 </TD>
                                                             </TR> 
                                                             <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
