@@ -225,7 +225,7 @@ abbr { text-decoration: none; }
 /* .sub_menu2 {height: 200px; overflow-y: auto ;} */
 
 
-  #navmain-izdeliya > div{max-height: 650px;overflow: auto;}
+  #navmain-izdeliya > div{max-height: 450px;overflow: auto;}
 
 
 .menu2 .list-group-item,.menu2 .list-group,.menu .list-group{

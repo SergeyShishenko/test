@@ -1342,7 +1342,7 @@ include 'inc-left-side-menu-furnitura.php';
                                  border: 1px solid rgb(221, 221, 221);
                                  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
                                  border-radius: 4px;
-                                 line-height: 1.1;
+                                 line-height: 1.0;
                                  "
                                  >
                                    
@@ -1471,7 +1471,7 @@ include 'inc-left-side-menu-furnitura.php';
                                  border: 1px solid rgb(221, 221, 221);
                                  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
                                  border-radius: 4px;
-                                 line-height: 1.1;
+                                 line-height: 1.0;
                                  "
                                  >
                                     <p class="boldstyle f-row">                                        

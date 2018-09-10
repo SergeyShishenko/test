@@ -168,7 +168,7 @@ include 'inc-left-side-menu-furnitura.php';
                                  border: 1px solid rgb(221, 221, 221);
                                  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
                                  border-radius: 4px;
-                                 line-height: 1.1;
+                                 line-height: 1.0;
                                  "
                                  >
                                     <p class="boldstyle f-row">                                        
@@ -223,7 +223,7 @@ include 'inc-left-side-menu-furnitura.php';
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             
-                            <li><a href="#petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</a>
+                            <!-- <li><a href="#petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</a>
                                 <ul class="nav">
                                     <li><a href="#5000502-01-100-petlya-vkladnaya">&#9999;&nbsp;5000502-01-100 петля вкладная</a>
                                     </li>
@@ -365,7 +365,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <li><a href="#5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala">&#9999;&nbsp;5000502-10-301 штанга круглая с проходным держателем</a>
                                     </li>                                                                 
                                 </ul>
-                            </li>
+                            </li> -->
 
                             <li>
                                 <a href="#pantografy"> ПАНТОГРАФЫ</a>
@@ -377,7 +377,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 </ul>
                             </li>
 
-                            <li>
+                            <!-- <li>
                                 <a href="#ruchki">РУЧКИ</a>
                                 <ul class="nav">
                                     <li><a href="#ruchka1">&#9999;&nbsp;ruchka1</a>
@@ -411,7 +411,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     <li><a href="#razdvizhnoy-derzhatel-dlya-obuvi-460-750-mm-stal-hromirovannyy-892-12-906">&#9999;&nbsp;Раздвижной держатель для обуви 460-750 мм хромированный </a>
                                     </li>                                                                 
                                 </ul>
-                            </li>
+                            </li> -->
                                                     
                         </ul>
                     </div>
