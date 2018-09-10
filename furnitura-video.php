@@ -67,7 +67,7 @@ include 'inc-left-side-menu-furnitura.php';
                 </div>
             </div>
 
-            <div class="main-box clearfix">
+            <!-- <div class="main-box clearfix">
                 <h4>TIP-ON</h4>
                 <div class="main-box-body clearfix">
                     <div class="embed-responsive embed-responsive-16by9">
@@ -79,7 +79,21 @@ include 'inc-left-side-menu-furnitura.php';
                         </iframe>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="main-box clearfix">
+                <h4>TIP-ON</h4>
+                <div class="main-box-body clearfix">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video autoplay loop controls class="embed-responsive-item">
+                            <source src="https://d2.blum.com/BEC003/tip0003-tip-on-fuer-tueren_pr_rf_fi_bau_$sall_$amp4360p_$v1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
             </div>
+
+
+
 
             <div class="main-box clearfix">
                 <h4> Петля Sensys 8639i, угол корпуса W30, угол 95°, чашка TH52 Ø35, вкладная навеска B 16</h4>
