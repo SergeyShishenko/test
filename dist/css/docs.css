@@ -79,7 +79,7 @@ div.btn-side{z-index:1000 !important;}
 .f-left, .f-right {
   width: auto;
   display:table-cell;
-  margin-bottom: -0.5em;
+  /* margin-bottom: -0.5em; */
 }
 .f-left {
   float:left;
