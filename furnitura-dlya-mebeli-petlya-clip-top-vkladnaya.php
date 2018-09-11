@@ -68,27 +68,24 @@ include 'inc-left-side-menu-furnitura.php';
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
                    
 
-                    <article  id="pantografy">
+                    <article    id="petli-dlya-fasadov">
                       <section >
-                        <div class="page-header">
-                          <h1 itemprop="name" > ПАНТОГРАФЫ</h1>
+                        <div class="page-header"     >
+                          <h1 itemprop="name">ПЕТЛИ для ФАСАДОВ</h1>
                         </div>
-                        
-
-
                         <div class="bs-callout bs-callout-warning cont" > 
                             
-                            <div class="main-box clearfix"  id="LIFT800">   
-                                <!-- <span id="SUPERLIFT"></span>  -->
-                                <h2 >Артикул: LIFT800</h2>                            
-                                <h2 >Пантограф с креплением к стене, 75-115 см, нагр.10 кг</h2> 
+                            <div class="main-box clearfix"  id="5000502-01-100-petlya-vkladnaya" >   
+                               
+                                <h2 >Артикул: 5000502-01-100</h2>                            
+                                <h2 >Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы</h2> 
                                  
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n6QfgloIgCk?rel=0&amp;autoplay=1&amp;loop=1&amp;&amp;playlist=n6QfgloIgCk"
-                                            allowfullscreen></iframe>
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S5nQqMojH5c?rel=0&amp;autoplay=1&amp;loop=1&amp;&amp;playlist=S5nQqMojH5c"
+                                            allowfullscreen autoplay loop></iframe>
                                     </div>
-                                </div>
+                                </div>                               
                             </div>
                             
                             <div class="row">
@@ -97,54 +94,52 @@ include 'inc-left-side-menu-furnitura.php';
                                     <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
                                         <div class="carousel-inner">
                                             <div class="item active">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Пантограф 75-115 см, регул. нагрузки 14-20 кг" data-image="./dist/images/LIFT800.jpg" data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Петля вкладная для профильных дверей 95°" data-image="./dist/images/vkladnaya-5000502-01-100_1.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
-                                                    src="./dist/images/LIFT800.jpg"
-                                                    data-src="./dist/images/LIFT800.jpg"
+                                                    src="./dist/images/vkladnaya-5000502-01-100_1.jpg"
+                                                    data-src="./dist/images/vkladnaya-5000502-01-100_1.jpg"
                                                     class="center-block   img-rounded img-thumbnail bar "
                                                     data-toggle="modal"
                                                                                                                     
-                                                    alt="Пантограф 75-115 см, регул. нагрузки 14-20 кг"
-                                                    data-pdf=""
+                                                    alt="Петля накладная для профильных дверей 95°"
+                                                    data-pdf="./dist/files/pdf/5000502-01-100-petlya-vkladnaya.pdf"
+                                                    
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Ширина секции 750 - 1150 мм" data-image="./dist/images/LIFT800_foto.jpg" data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Металлическая петля, никелированная" data-image="./dist/images/vkladnaya-5000502-01-100_2.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
-                                                        src="./dist/images/LIFT800_foto.jpg"
-                                                        data-src="./dist/images/LIFT800_foto.jpg"
+                                                        src="./dist/images/vkladnaya-5000502-01-100_2.jpg"
+                                                        data-src="./dist/images/vkladnaya-5000502-01-100_2.jpg"
                                                         class="center-block   img-rounded img-thumbnail  bar "
-                                                        data-toggle="modal"
-                                                                                                                          
-                                                        alt="Ширина секции 750 - 1150 мм"
-                                                        data-pdf=""
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Металлическая петля, никелированная"
+                                                        
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="УСТАНОВКА к боковине &#034;Система 32&#034;" data-image="./dist/images/LIFT800_sch.jpg" data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Угол открывания 95°" data-image="./dist/images/vkladnaya-5000502-01-100_3.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
-                                                        src="./dist/images/LIFT800_sch.jpg"
-                                                        data-src="./dist/images/LIFT800_sch.jpg"
+                                                        src="./dist/images/vkladnaya-5000502-01-100_3.jpg"
+                                                        data-src="./dist/images/vkladnaya-5000502-01-100_3.jpg"
                                                         class="center-block   img-rounded img-thumbnail  bar "
-                                                        data-toggle="modal"
-                                                                                                                          
-                                                        alt="Установка к боковине &#034;Система 32&#034;"
-                                                        data-pdf=""
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Угол открывания 95°"
+                                                        
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Регулировка угла наклона штанги" data-image="./dist/images/LIFT800_dr.jpg" data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Чашка петли: на шурупы" data-image="./dist/images/vkladnaya-5000502-01-100_4.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
-                                                        src="./dist/images/LIFT800_dr.jpg" 
-                                                        data-src="./dist/images/LIFT800_dr.jpg"
+                                                        src="./dist/images/vkladnaya-5000502-01-100_4.jpg" 
+                                                        data-src="./dist/images/vkladnaya-5000502-01-100_4.jpg"
                                                         class="center-block   img-rounded img-thumbnail  bar "
-                                                        data-toggle="modal"
-                                                                                                                         
-                                                        alt="Регулировка угла наклона штанги"
-                                                        data-pdf=""
+                                                        data-toggle="modal"                                                                                                                         
+                                                        alt="Чашка петли: на шурупы"
+                                                        
                                                     >
                                                 </a>
                                             </div>
@@ -168,19 +163,16 @@ include 'inc-left-side-menu-furnitura.php';
                                  border: 1px solid rgb(221, 221, 221);
                                  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
                                  border-radius: 4px;
-                                 line-height: 1.0;
+                                 line-height: 1.3;
                                  "
                                  >
-                                    <p class="boldstyle f-row">                                        
-                                        <span class="f-left">Примечание:</span><span class="f-separator"></span><span class="f-val f-right"> крепится к стене</span>
-                                        <br>
-                                    </p> 
-                                    <p class="boldstyle f-row">                                        
+                                   
+                                    <!-- <p class="boldstyle f-row">                                        
                                         <span class="f-left">Материал:</span><span class="f-separator"></span><span class="f-val f-right"> металл/пластик</span>
                                         <br>
                                     </p>  
                                      <p class="boldstyle f-row"> 
-                                        <span class="f-left">Установка:</span><span class="f-separator"></span><span class="f-val f-right">к задней стенке или стене</span>
+                                        <span class="f-left">Установка:</span><span class="f-separator"></span><span class="f-val f-right"> к боковине "Система 32"</span>
                                         <br>
                                     </p> 
                                     <p class="boldstyle f-row">   
@@ -188,7 +180,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         <br>
                                     </p>
                                     <p class="boldstyle f-row"> 
-                                        <span class="f-left">Нагрузка:</span><span class="f-separator"></span><span class="f-val f-right"> до 10 кг</span>
+                                        <span class="f-left">Нагрузка:</span><span class="f-separator"></span><span class="f-val f-right"> до 20 кг</span>
                                         <br>
                                     </p>
                                     <p class="boldstyle f-row"> 
@@ -197,20 +189,25 @@ include 'inc-left-side-menu-furnitura.php';
                                     </p>
                                     <p style="margin-bottom: 0px;margin-top: 15px;" class="boldstyle">
                                          <span>Преимущества:</span>
-                                    </p>
+                                    </p> -->
+                                    <p></p>
                                     <ul class="stat" style="margin-top: 0px;">
-                                        <li>разработан специально для использования во встроенных шкафах-купе, гардеробных комнатах и в качестве торгового оборудования в магазинах;</li>
-                                        <li>предназначен исключительно для прямого крепления к стене (весь необходимый крепеж и накладка идут в комплекте).</li>                                         
+                                        <li><b>Петля для толстых и профильных дверей</b></li>
+                                        <li><b>CLIP top BLUMOTION</b>со встроенным <b>BLUMOTION</b> (с возможностью деактивации)</li> 
+                                        <li><b>CLIP top </b>с пружиной или без пружины</li>
+                                        <li>Металлическая петля, никелированная</li>
+                                        <li>Угол открывания 95°</li>
+                                        <li>Регулировка фасада в трех плоскостях</li>
+                                        <li>Удобная регулировка по глубине с помощью механизма шнек</li>
+                                        <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
+                                        <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->
+                                                                               
                                     </ul>
-                                    <i >Артикул: LIFT800</i> 
+                                    <i >Артикул: 5000502-01-100</i> 
                                 </div>                            
                             </div> 
                             
                         </div> 
-
-           
-
-                       
                         </section> 
                     </article>
                     
@@ -223,15 +220,16 @@ include 'inc-left-side-menu-furnitura.php';
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             
-                            <!-- <li><a href="#petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</a>
+                            <li><a href="#petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</a>
                                 <ul class="nav">
+                                
                                     <li><a href="#5000502-01-100-petlya-vkladnaya">&#9999;&nbsp;5000502-01-100 петля вкладная</a>
                                     </li>
-                                    <li><a href="#5000502-01-101-petlya-nakladnaya">&#9999;&nbsp;5000502-01-101 петля накладная</a>
+                                     <li><a href="furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php#5000502-01-101-petlya-nakladnaya">&#9999;&nbsp;5000502-01-101 петля накладная</a>
+                                  </li>
+                                <!--     <li><a href="#5000502-01-102-petlya-polunakladnaya">&#9999;&nbsp;5000502-01-102 петля полунакладная</a>
                                     </li>
-                                    <li><a href="#5000502-01-102-petlya-polunakladnaya">&#9999;&nbsp;5000502-01-102 петля полунакладная</a>
-                                    </li>
-                                    <li><a  href="#5000502-01-103-petlya-vkladnaya-falshfasadnaya">&#9999;&nbsp;5000502-01-103 петля вкладная фальшфасадная</a>
+                                     <li><a  href="#5000502-01-103-petlya-vkladnaya-falshfasadnaya">&#9999;&nbsp;5000502-01-103 петля вкладная фальшфасадная</a>
                                     </li>
                                     <li><a  href="#5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya">&#9999;&nbsp;5000502-01-104 петля накладная нулевого вхождения</a>
                                     </li>
@@ -246,10 +244,10 @@ include 'inc-left-side-menu-furnitura.php';
                                     <li><a  href="#5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny">&#9999;&nbsp;5000502-01-114 петля накладная нулевого вхождения без пружины</a>
                                     </li>
                                     <li><a  href="#petli-dlya-fasadov-podbor-po-vesu">&#9999;&nbsp;ПЕТЛИ для ФАСАДОВ (подбор по весу)</a>
-                                    </li>                                    
+                                    </li>                                     -->
                                 </ul>
                             </li>
-                            <li>
+                           <!--  <li>
                                 <a href="#mehanizmy-razdvizheniya-dlya-fasadov-Cinetto-PS23">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ</a>
                                 <ul class="nav">
                                     <li><a href="#5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov-Cinetto-PS23">&#9999;&nbsp;5000502-02-110 система раздвижения и складывания фасадов Cinetto PS23</a>
@@ -367,15 +365,15 @@ include 'inc-left-side-menu-furnitura.php';
                                 </ul>
                             </li> -->
 
-                            <li>
+                            <!-- <li>
                                 <a href="#pantografy"> ПАНТОГРАФЫ</a>
                                 <ul class="nav">
-                                    <li><a href="furnitura-dlya-mebeli-pantograf1.php#SUPERLIFT">&#9999;&nbsp;Пантограф 75-115 см, регул. нагрузки 14-20 кг</a>
+                                    <li><a href="#SUPERLIFT">&#9999;&nbsp;Пантограф 75-115 см, регул. нагрузки 14-20 кг</a>
                                     </li>
-                                    <li><a href="#LIFT800">&#9999;&nbsp;Пантограф с креплением к стене, 75-115 см, нагр.10 кг</a>
+                                    <li><a href="furnitura-dlya-mebeli-pantograf2.php#LIFT800">&#9999;&nbsp;Пантограф с креплением к стене, 75-115 см, нагр.10 кг</a>
                                     </li>                                                                 
                                 </ul>
-                            </li>
+                            </li> -->
 
                             <!-- <li>
                                 <a href="#ruchki">РУЧКИ</a>

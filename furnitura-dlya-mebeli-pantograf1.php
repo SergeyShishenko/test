@@ -82,7 +82,7 @@ include 'inc-left-side-menu-furnitura.php';
                                  
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IzM8rPYn-Ag?rel=0"
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IzM8rPYn-Ag?rel=0&amp;autoplay=1&amp;loop=1&amp;&amp;playlist=IzM8rPYn-Ag"
                                             allowfullscreen></iframe>
                                     </div>
                                 </div>

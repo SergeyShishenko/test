@@ -68,22 +68,23 @@ include 'inc-left-side-menu-furnitura.php';
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
                    
 
-                    <article  id="5000502-01-101-petlya-nakladnaya">
+                    <article  id="petli-dlya-fasadov">
                       <section >
-                        <div class="page-header">
-                          <h1 itemprop="name" >CLIP top BLUMOTION 71B9550 петля для профильных дверей 95°,накладная, чашка петли: на шурупы</h1>
+                        <div class="page-header"  >
+                          <h1 itemprop="name">ПЕТЛИ для ФАСАДОВ</h1>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
-                            
-                            <div class="main-box clearfix"  id="SUPERLIFT">   
-                                <!-- <span id="SUPERLIFT"></span>  -->
+                        
+                            <div class="main-box clearfix"  id="5000502-01-101-petlya-nakladnaya">   
+                               
                                 <h2 >Артикул: 5000502-01-101</h2>                            
-                                <!-- <h2 >CLIP top BLUMOTION 71B9550 петля для профильных дверей 95°,накладная, чашка петли: на шурупы</h2>  -->
+                                <h2 >Петля накладная для профильных дверей 95° CLIP top BLUMOTION 71B9550, чашка петли: на шурупы</h2> 
                                  
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S5nQqMojH5c?rel=0"
-                                            allowfullscreen></iframe>
+                                        <video autoplay loop controls class="embed-responsive-item">
+                                            <source src="https://d2.blum.com/BEC003/clp0015-ctb_pr_rf_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
+                                        </video>
                                     </div>
                                 </div>
                             </div>
@@ -94,54 +95,52 @@ include 'inc-left-side-menu-furnitura.php';
                                     <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
                                         <div class="carousel-inner">
                                             <div class="item active">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Пантограф 75-115 см, регул. нагрузки 14-20 кг" data-image="./dist/images/nakladnaya-5000502-01-101_1.jpg" data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Петля накладная для профильных дверей 95°" data-image="./dist/images/nakladnaya-5000502-01-101_1.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
                                                     src="./dist/images/nakladnaya-5000502-01-101_1.jpg"
                                                     data-src="./dist/images/nakladnaya-5000502-01-101_1.jpg"
                                                     class="center-block   img-rounded img-thumbnail bar "
                                                     data-toggle="modal"
                                                                                                                     
-                                                    alt="Пантограф 75-115 см, регул. нагрузки 14-20 кг"
-                                                    data-pdf=""
+                                                    alt="Петля накладная для профильных дверей 95°"
+                                                    data-pdf="./dist/files/pdf/5000502-01-101-petlya-nakladnaya.pdf"
+                                                    
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Ширина секции 750 - 1150 мм" data-image="./dist/images/nakladnaya-5000502-01-101_2.jpg" data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Металлическая петля, никелированная" data-image="./dist/images/nakladnaya-5000502-01-101_2.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/nakladnaya-5000502-01-101_2.jpg"
                                                         data-src="./dist/images/nakladnaya-5000502-01-101_2.jpg"
                                                         class="center-block   img-rounded img-thumbnail  bar "
-                                                        data-toggle="modal"
-                                                                                                                          
-                                                        alt="Ширина секции 750 - 1150 мм"
-                                                        data-pdf=""
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Металлическая петля, никелированная"
+                                                        
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="УСТАНОВКА к боковине &#034;Система 32&#034;" data-image="./dist/images/nakladnaya-5000502-01-101_3.jpg" data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Угол открывания 95°" data-image="./dist/images/nakladnaya-5000502-01-101_3.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/nakladnaya-5000502-01-101_3.jpg"
                                                         data-src="./dist/images/nakladnaya-5000502-01-101_3.jpg"
                                                         class="center-block   img-rounded img-thumbnail  bar "
-                                                        data-toggle="modal"
-                                                                                                                          
-                                                        alt="Установка к боковине &#034;Система 32&#034;"
-                                                        data-pdf=""
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Угол открывания 95°"
+                                                        
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Регулировка угла наклона штанги" data-image="./dist/images/nakladnaya-5000502-01-101_4.jpg" data-target="#image-gallery">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Чашка петли: на шурупы" data-image="./dist/images/nakladnaya-5000502-01-101_4.jpg" data-target="#image-gallery">
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/nakladnaya-5000502-01-101_4.jpg" 
                                                         data-src="./dist/images/nakladnaya-5000502-01-101_4.jpg"
                                                         class="center-block   img-rounded img-thumbnail  bar "
-                                                        data-toggle="modal"
-                                                                                                                         
-                                                        alt="Регулировка угла наклона штанги"
-                                                        data-pdf=""
+                                                        data-toggle="modal"                                                                                                                         
+                                                        alt="Чашка петли: на шурупы"
+                                                        
                                                     >
                                                 </a>
                                             </div>
@@ -165,7 +164,7 @@ include 'inc-left-side-menu-furnitura.php';
                                  border: 1px solid rgb(221, 221, 221);
                                  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
                                  border-radius: 4px;
-                                 line-height: 1.2;
+                                 line-height: 1.3;
                                  "
                                  >
                                    
@@ -200,9 +199,9 @@ include 'inc-left-side-menu-furnitura.php';
                                         <li>Металлическая петля, никелированная</li>
                                         <li>Угол открывания 95°</li>
                                         <li>Регулировка фасада в трех плоскостях</li>
-                                        <li>Удобная регулировка по глубине с помо¬щью механизма шнек</li>
-                                        <li>Дверь устанавливается и снимается с кор¬пуса без инструмента</li> 
-                                        <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>    
+                                        <li>Удобная регулировка по глубине с помощью механизма шнек</li>
+                                        <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
+                                        <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->
                                                                                
                                     </ul>
                                     <i >Артикул: 5000502-01-101</i> 
@@ -224,10 +223,11 @@ include 'inc-left-side-menu-furnitura.php';
                             
                             <li><a href="#petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</a>
                                 <ul class="nav">
-                                    <!-- <li><a href="#5000502-01-100-petlya-vkladnaya">&#9999;&nbsp;5000502-01-100 петля вкладная</a>
-                                    </li> -->
-                                     <li><a href="#5000502-01-101-petlya-nakladnaya">&#9999;&nbsp;5000502-01-101 петля накладная</a>
-                                  </li>
+                                  
+                                    <li><a href="furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php#5000502-01-100-petlya-vkladnaya">&#9999;&nbsp;5000502-01-100 петля вкладная</a>
+                                    </li>
+                                    <li><a href="#5000502-01-101-petlya-nakladnaya">&#9999;&nbsp;5000502-01-101 петля накладная</a>
+                                    </li>
                                   <!--    <li><a href="#5000502-01-102-petlya-polunakladnaya">&#9999;&nbsp;5000502-01-102 петля полунакладная</a>
                                     </li>
                                     <li><a  href="#5000502-01-103-petlya-vkladnaya-falshfasadnaya">&#9999;&nbsp;5000502-01-103 петля вкладная фальшфасадная</a>

@@ -97,9 +97,9 @@
                                 <ul class="list-group sub_menu">
                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-01-100-petlya-vkladnaya">5000502-01-100 петля вкладная</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php#5000502-01-100-petlya-vkladnaya">5000502-01-100 петля вкладная</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-01-101-petlya-nakladnaya">5000502-01-101 петля накладная</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php#5000502-01-101-petlya-nakladnaya">5000502-01-101 петля накладная</a>
                                             </li>
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-01-102-petlya-polunakladnaya">5000502-01-102 петля полунакладная</a>
                                             </li>

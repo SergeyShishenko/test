@@ -92,6 +92,17 @@ include 'inc-left-side-menu-furnitura.php';
                 </div>
             </div>
 
+            <div class="main-box clearfix">
+                <h4>TIP-ON2222</h4>
+                <div class="main-box-body clearfix">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video autoplay loop controls class="embed-responsive-item">
+                            <source src="https://d2.blum.com/BEC003/clp0015-ctb_pr_rf_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
 
 
 

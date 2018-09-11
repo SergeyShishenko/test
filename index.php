@@ -4585,13 +4585,15 @@ include 'inc-version-css-js.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2"  id="flo-5000502-01-100-petlya-vkladnaya">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-01-100-petlya-vkladnaya">5000502-01-100 петля вкладная<span> <br>~5000502-01-100-petlya-vkladnaya</span></p>
+                                                                            <p data-img="./dist/images/vkladnaya-5000502-01-100_1.jpg" data-href="furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php#5000502-01-100-petlya-vkladnaya">5000502-01-100 петля вкладная<span> <br>~5000502-01-100-petlya-vkladnaya</span></p>
+                                                                            <p data-img="./dist/images/vkladnaya-5000502-01-100_1.jpg"    data-href="furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php#5000502-01-100-petlya-vkladnaya" class="KEYWORDS">Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750</p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-5000502-01-101-petlya-nakladnaya">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-01-101-petlya-nakladnaya">5000502-01-101 петля накладная<span> <br>~5000502-01-101-petlya-nakladnaya</span></p>
+                                                                            <p data-img="./dist/images/nakladnaya-5000502-01-101_1.jpg" data-href="furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php#5000502-01-101-petlya-nakladnaya">5000502-01-101 петля накладная<span> <br>~5000502-01-101-petlya-nakladnaya</span></p>
+                                                                            <p data-img="./dist/images/nakladnaya-5000502-01-101_1.jpg"    data-href="furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php#5000502-01-101-petlya-nakladnaya" class="KEYWORDS">Петля накладная для профильных дверей 95° CLIP top BLUMOTION 71B9550</p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->  

@@ -115,7 +115,7 @@ p.boldstyle:first-child {margin-top: 10px;}
 
 a[title]:hover{cursor: help}
 .overlay{height: 25px;}
-.overlay a:not(:first-child){margin-left: 15px;}
+.overlay a:not(:first-child){margin-left: 5px;}
 /* .zbz-input-clearable::after {
   content: "\e003";
   color: #34789a;
