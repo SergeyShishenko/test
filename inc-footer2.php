@@ -13,6 +13,7 @@
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script> 
     <script src="./dist/js/application.js"></script> 
+    <!--<script src="./dist/js/main.26.04.2018.js"></script> -->
     <script src="./dist/js/script2.js?v='. $script2Version .'"></script> 
 
    <script src="./dist/js/closest.js"></script>
