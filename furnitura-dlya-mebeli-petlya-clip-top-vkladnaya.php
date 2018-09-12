@@ -80,7 +80,9 @@ echo '
             border-left: 1px solid #dddddd;
         }
 
-        
+        .overlay {
+            height: 15px;
+        }
 
     </style>  
 
@@ -117,7 +119,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 </div>                               
                             </div>
                             
-                            <div class="row">
+                            <div class="row" style="margin-bottom: 15px;">
                                 <div class=" col-xs-6 col-sm-4 col-md-4">
                                    
                                     <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
@@ -127,7 +129,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <img  style="height: 237px;"
                                                     src="./dist/images/vkladnaya-5000502-01-100_1.jpg"
                                                     data-src="./dist/images/vkladnaya-5000502-01-100_1.jpg"
-                                                    class="center-block    bar "
+                                                    class="center-block   img-rounded    bar "
                                                     data-toggle="modal"
                                                                                                                     
                                                     alt="Петля накладная для профильных дверей 95°"
@@ -141,7 +143,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/vkladnaya-5000502-01-100_2.jpg"
                                                         data-src="./dist/images/vkladnaya-5000502-01-100_2.jpg"
-                                                        class="center-block     bar "
+                                                        class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Металлическая петля, никелированная"
                                                         
@@ -153,7 +155,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/vkladnaya-5000502-01-100_3.jpg"
                                                         data-src="./dist/images/vkladnaya-5000502-01-100_3.jpg"
-                                                        class="center-block     bar "
+                                                        class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Угол открывания 95°"
                                                         
@@ -165,7 +167,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/vkladnaya-5000502-01-100_4.jpg" 
                                                         data-src="./dist/images/vkladnaya-5000502-01-100_4.jpg"
-                                                        class="center-block     bar "
+                                                        class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                         
                                                         alt="Чашка петли: на шурупы"
                                                         
@@ -184,7 +186,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         </a>
                                     </div>
 
-                                    <div class="overlay"></div>
+                                    
                                 </div>
                                 <div class="col-xs-12 col-sm-8 col-md-8"
                                 
@@ -246,25 +248,25 @@ include 'inc-left-side-menu-furnitura.php';
                                  padding: 15px;
                                  ">
                                          <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
-                                            <li><a href="#home" data-toggle="tab">Home</a></li>
-                                            <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
-                                            <li class="dropdown">
+                                            <li class="active"><a href="#harakteristiki" data-toggle="tab">Характеристики</a></li>
+                                            <li ><a href="#instrukciya" data-toggle="tab">Инструкция</a></li>
+                                            <!-- <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="#dropdown3" data-toggle="tab">@fat</a></li>
                                                     <li><a href="#dropdown4" data-toggle="tab">@mdo</a></li>
                                                 </ul>
-                                            </li>
+                                            </li> -->
                                         </ul>
                                         <div id="myTabContent" class="tab-content">
-                                            <div class="tab-pane fade" id="home">
+                                            <div class="tab-pane fade" id="harakteristiki">
                                                 <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro
                                                     synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
                                                     butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex
                                                     squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
                                                     voluptate nisi qui.</p>
                                             </div>
-                                            <div class="tab-pane fade in active" id="profile">
+                                            <div class="tab-pane fade in active" id="instrukciya">
                                                 <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons
                                                     we want to tell you, why we have created it:
                                                     We didn't like the darkness of most of admin templates, so we created this light one. We didn't like
@@ -272,7 +274,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     We searched for a solution of how to make widgets look like real widgets, so we decided that deep
                                                     background - is what makes widgets look real.</p>
                                             </div>
-                                            <div class="tab-pane fade" id="dropdown3">
+                                            <!-- <div class="tab-pane fade" id="dropdown3">
                                                 <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia
                                                     banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
                                                     Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
@@ -285,7 +287,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral,
                                                     mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial
                                                     keffiyeh echo park vegan.</p>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>

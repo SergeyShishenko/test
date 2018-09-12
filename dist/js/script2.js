@@ -324,72 +324,72 @@ $(function() {
 
 
 // кнопки при наведении на изображение
-$(function () {   
-    $('.cont').hover(
-        function () {
-            $(this).find(".overlay .btn").remove();
-             // получить кнопку, которая его открыло
-            var button = $(this).find("img"); 
-            // извлечь информацию из атрибута data-content 
-            var im = button.attr('src');
-            //  im = button.attr('src');
+// $(function () {   
+//     $('.cont').hover(
+//         function () {
+//             $(this).find(".overlay .btn").remove();
+//              // получить кнопку, которая его открыло
+//             var button = $(this).find("img"); 
+//             // извлечь информацию из атрибута data-content 
+//             var im = button.attr('src');
+//             //  im = button.attr('src');
                    
                 
-            var dwg = button.data('dwg');
-            var xls = button.data('xls');
-            var pdf = button.data('pdf');
-            var alt = button.attr('alt');
-            //  console.log(pdf);
-            // var pos = xls.lastIndexOf("/") + 1;
-            // console.log(pos);
-            //    var loge = xls.slice(xls.lastIndexOf("/") + 1);
-            //    console.log(loge);
-            // alert( log);
+//             var dwg = button.data('dwg');
+//             var xls = button.data('xls');
+//             var pdf = button.data('pdf');
+//             var alt = button.attr('alt');
+//             //  console.log(pdf);
+//             // var pos = xls.lastIndexOf("/") + 1;
+//             // console.log(pos);
+//             //    var loge = xls.slice(xls.lastIndexOf("/") + 1);
+//             //    console.log(loge);
+//             // alert( log);
             
-            $(this).find('.overlay').append(
-                // '<a href="'+im+'"  type="button" class="btn btn-info im-download"download="'+im+'"  id="im-download1"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
-                '<a href="'+im+'"  type="button" class="btn btn-info im-download btn-xs" download="'+alt+im.slice(im.lastIndexOf(".") )+'" title= "Скачать" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
-            );
-            if (dwg !== "non" && typeof(dwg) != "undefined" && dwg !== "")
-            {
-                 $(this).find('.overlay').append(
-                    //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
-                     '<a href="'+"./dist/files/dwg/"+dwg.slice(dwg.lastIndexOf("/") + 1)+'"  type="button" class="btn btn-info im-download btn-xs" download="'+alt+dwg.slice(dwg.lastIndexOf(".") )+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
-                    ); 
-            }
-            if (xls !== "non" && typeof(xls) != "undefined" && xls !== "")
-            {
-                 $(this).find('.overlay').append(
-                    //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
-                     '<a href="'+"./dist/files/xls/"+xls.slice(xls.lastIndexOf("/") + 1)+'"  type="button" class="btn btn-info im-download btn-xs" download="'+alt+xls.slice(xls.lastIndexOf(".") )+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
-                    ); 
-            }
-            if (pdf !== "non" && typeof(pdf) != "undefined" && pdf !== "")
-            {
-                 $(this).find('.overlay').append(
-                    //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
-                     '<a href="'+"./dist/files/pdf/"+pdf.slice(pdf.lastIndexOf("/") + 1)+'"  target="_blank" type="button" class="btn btn-info im-download btn-xs" title= "Открыть PDF в новой вкладке" ><i class="glyphicon glyphicon-open" aria-hidden="true"></i> PDF</a>'
-                    ); 
-            }
+//             $(this).find('.overlay').append(
+//                 // '<a href="'+im+'"  type="button" class="btn btn-info im-download"download="'+im+'"  id="im-download1"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
+//                 '<a href="'+im+'"  type="button" class="btn btn-info im-download btn-xs" download="'+alt+im.slice(im.lastIndexOf(".") )+'" title= "Скачать" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
+//             );
+//             if (dwg !== "non" && typeof(dwg) != "undefined" && dwg !== "")
+//             {
+//                  $(this).find('.overlay').append(
+//                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+//                      '<a href="'+"./dist/files/dwg/"+dwg.slice(dwg.lastIndexOf("/") + 1)+'"  type="button" class="btn btn-info im-download btn-xs" download="'+alt+dwg.slice(dwg.lastIndexOf(".") )+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+//                     ); 
+//             }
+//             if (xls !== "non" && typeof(xls) != "undefined" && xls !== "")
+//             {
+//                  $(this).find('.overlay').append(
+//                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+//                      '<a href="'+"./dist/files/xls/"+xls.slice(xls.lastIndexOf("/") + 1)+'"  type="button" class="btn btn-info im-download btn-xs" download="'+alt+xls.slice(xls.lastIndexOf(".") )+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
+//                     ); 
+//             }
+//             if (pdf !== "non" && typeof(pdf) != "undefined" && pdf !== "")
+//             {
+//                  $(this).find('.overlay').append(
+//                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+//                      '<a href="'+"./dist/files/pdf/"+pdf.slice(pdf.lastIndexOf("/") + 1)+'"  target="_blank" type="button" class="btn btn-info im-download btn-xs" title= "Открыть PDF в новой вкладке" ><i class="glyphicon glyphicon-open" aria-hidden="true"></i> PDF</a>'
+//                     ); 
+//             }
 
-            $(this).find('.overlay').append( 
-                // '<button  onclick="print('+im.slice(im.lastIndexOf("/") + 1)+')">Печать картинки</button>'
-                "<a href='javascript:PrintImg(\""+im+"\",\""+alt+"\"); void 0;' type='button' class='btn btn-info im-download  btn-xs' title= 'Печать' ><i class='glyphicon glyphicon-print 'aria-hidden='true'></i></a>" 
-                /* '<button class="btn btn-info im-download" onclick="PrintImg('+im.slice(im.lastIndexOf("/") + 1)+');" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i>Печать</button>' */
-             ); 
+//             $(this).find('.overlay').append( 
+//                 // '<button  onclick="print('+im.slice(im.lastIndexOf("/") + 1)+')">Печать картинки</button>'
+//                 "<a href='javascript:PrintImg(\""+im+"\",\""+alt+"\"); void 0;' type='button' class='btn btn-info im-download  btn-xs' title= 'Печать' ><i class='glyphicon glyphicon-print 'aria-hidden='true'></i></a>" 
+//                 /* '<button class="btn btn-info im-download" onclick="PrintImg('+im.slice(im.lastIndexOf("/") + 1)+');" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i>Печать</button>' */
+//              ); 
           
 
-            $(this ).find(".overlay .btn").fadeIn(600);
-        },
-        function () {
-            $(this).find(".overlay .btn").fadeOut(600);
+//             $(this ).find(".overlay .btn").fadeIn(600);
+//         },
+//         function () {
+//             $(this).find(".overlay .btn").fadeOut(600);
            
             
-        }
-    );
+//         }
+//     );
   
 
-});
+// });
 
 
 
