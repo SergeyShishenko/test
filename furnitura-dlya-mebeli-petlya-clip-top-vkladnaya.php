@@ -55,8 +55,37 @@ echo '
          margin-top: -20px;
         }
         #image-gallery-image{float:none;}
-      
+
+        .embed-responsive, #carousel{
+       
+        box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+        border-radius: 4px;
+        }
+        #carousel{background: #fff;}
+        a, a:active, a:focus { outline: none; }
+
+        input, textarea {outline:none;}
+        input:active, textarea:active {outline:none;}
+        :focus {outline:none;}
+        textarea {resize:none;}
+        textarea {resize:vertical;}
+        textarea {resize:horizontal;}
+
+        #myTab a {
+            
+            border-left: none;
+        }
+        #myTab li.active a{
+            
+            border-left: 1px solid #dddddd;
+        }
+
+        
+
     </style>  
+
+
+    
         
         ';
 
@@ -83,7 +112,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S5nQqMojH5c?rel=0&amp;autoplay=1&amp;loop=1&amp;&amp;playlist=S5nQqMojH5c"
-                                            allowfullscreen autoplay loop></iframe>
+                                            allowfullscreen autoplay loop frameborder="0"></iframe>
                                     </div>
                                 </div>                               
                             </div>
@@ -98,7 +127,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <img  style="height: 237px;"
                                                     src="./dist/images/vkladnaya-5000502-01-100_1.jpg"
                                                     data-src="./dist/images/vkladnaya-5000502-01-100_1.jpg"
-                                                    class="center-block   img-rounded img-thumbnail bar "
+                                                    class="center-block    bar "
                                                     data-toggle="modal"
                                                                                                                     
                                                     alt="Петля накладная для профильных дверей 95°"
@@ -112,7 +141,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/vkladnaya-5000502-01-100_2.jpg"
                                                         data-src="./dist/images/vkladnaya-5000502-01-100_2.jpg"
-                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        class="center-block     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Металлическая петля, никелированная"
                                                         
@@ -124,7 +153,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/vkladnaya-5000502-01-100_3.jpg"
                                                         data-src="./dist/images/vkladnaya-5000502-01-100_3.jpg"
-                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        class="center-block     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Угол открывания 95°"
                                                         
@@ -136,7 +165,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <img  style="height: 237px;"
                                                         src="./dist/images/vkladnaya-5000502-01-100_4.jpg" 
                                                         data-src="./dist/images/vkladnaya-5000502-01-100_4.jpg"
-                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        class="center-block     bar "
                                                         data-toggle="modal"                                                                                                                         
                                                         alt="Чашка петли: на шурупы"
                                                         
@@ -205,11 +234,72 @@ include 'inc-left-side-menu-furnitura.php';
                                     </ul>
                                     <i >Артикул: 5000502-01-100</i> 
                                 </div>                            
-                            </div> 
+                            </div> <!--/row/-->
+
+
+                            <div class="row" style="margin-right: -15px;">
+                                <div class=" col-xs-12 col-sm-12 col-md-12">
+                                    <div style="background: #fff;
+                                 border: 1px solid rgb(221, 221, 221);
+                                 box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+                                 border-radius: 4px;
+                                 padding: 15px;
+                                 ">
+                                         <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
+                                            <li><a href="#home" data-toggle="tab">Home</a></li>
+                                            <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#dropdown3" data-toggle="tab">@fat</a></li>
+                                                    <li><a href="#dropdown4" data-toggle="tab">@mdo</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div id="myTabContent" class="tab-content">
+                                            <div class="tab-pane fade" id="home">
+                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro
+                                                    synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
+                                                    butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex
+                                                    squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
+                                                    voluptate nisi qui.</p>
+                                            </div>
+                                            <div class="tab-pane fade in active" id="profile">
+                                                <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons
+                                                    we want to tell you, why we have created it:
+                                                    We didn't like the darkness of most of admin templates, so we created this light one. We didn't like
+                                                    the high contrast of most of admin templates, so we created this unobtrusive one.
+                                                    We searched for a solution of how to make widgets look like real widgets, so we decided that deep
+                                                    background - is what makes widgets look real.</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="dropdown3">
+                                                <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia
+                                                    banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
+                                                    Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
+                                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork
+                                                    sustainable tofu synth chambray yr.</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="dropdown4">
+                                                <p>They sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland
+                                                    seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia
+                                                    PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral,
+                                                    mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial
+                                                    keffiyeh echo park vegan.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+  
+                         
                             
-                        </div> 
-                        </section> 
-                    </article>
+                        </div> <!--/bs-callout bs-callout-warning cont/-->
+                    </section> 
+                </article>
                     
                     
 

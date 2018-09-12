@@ -653,10 +653,10 @@ a.navbar-brand{text-align: center;}
   
   /* box-shadow: 0.5em 0.5em 10px rgba(65, 65, 65, 0.6); */
 }
-.bs-callout-warning img{
+/* .bs-callout-warning img{
   box-shadow: 0.5em 0.5em  10px rgba(100,100,100,0.3);
   border: 1px solid rgb(221, 221, 221);
-}
+} */
 
 #navsub.bs-sidebar{
   box-shadow: none;
