@@ -84,6 +84,27 @@ echo '
             height: 15px;
         }
 
+
+        .outerP {
+            
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+           
+        }
+        .innerP {
+            
+
+            height: 100px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right:0;
+    padding:0 20px 0 20px;
+            
+        }
+
     </style>  
 
 
@@ -188,13 +209,13 @@ include 'inc-left-side-menu-furnitura.php';
 
                                     
                                 </div>
-                                <div class="col-xs-12 col-sm-8 col-md-8"
+                                <div class="col-xs-12 col-sm-8 col-md-8 outerP"
                                 
                                  style="background: #fff;height: 237px;
                                  border: 1px solid rgb(221, 221, 221);
                                  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
                                  border-radius: 4px;
-                                 line-height: 1.3;
+                                 
                                  "
                                  >
                                    
@@ -221,20 +242,12 @@ include 'inc-left-side-menu-furnitura.php';
                                     <p style="margin-bottom: 0px;margin-top: 15px;" class="boldstyle">
                                          <span>Преимущества:</span>
                                     </p> -->
-                                    <p></p>
-                                    <ul class="stat" style="margin-top: 0px;">
-                                        <li><b>Петля для толстых и профильных дверей</b></li>
-                                        <li><b>CLIP top BLUMOTION</b>со встроенным <b>BLUMOTION</b> (с возможностью деактивации)</li> 
-                                        <li><b>CLIP top </b>с пружиной или без пружины</li>
-                                        <li>Металлическая петля, никелированная</li>
-                                        <li>Угол открывания 95°</li>
-                                        <li>Регулировка фасада в трех плоскостях</li>
-                                        <li>Удобная регулировка по глубине с помощью механизма шнек</li>
-                                        <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
-                                        <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->
-                                                                               
-                                    </ul>
-                                    <i >Артикул: 5000502-01-100</i> 
+                                    <div class="innerP">
+                                    <p><b>Петля накладная Клип Топ (Clip Top Blumotion) для профильных дверей, толщина фасада до 32 мм, со встроенной системой бесшумного закрывания угол открывания 95°</b></p>                                    
+                                    
+                                    <p><i >Артикул: 5000502-01-100</i> </p>
+                                    </div>
+                                    
                                 </div>                            
                             </div> <!--/row/-->
 
@@ -259,14 +272,22 @@ include 'inc-left-side-menu-furnitura.php';
                                             </li> -->
                                         </ul>
                                         <div id="myTabContent" class="tab-content">
-                                            <div class="tab-pane fade" id="harakteristiki">
-                                                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro
-                                                    synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit
-                                                    butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex
-                                                    squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher
-                                                    voluptate nisi qui.</p>
+                                            <div class="tab-pane fade  in active" id="harakteristiki">
+                                                <p>
+                                                    <ul class="stat" style="margin-top: 0px;">
+                                                        <li><b>Петля для толстых и профильных дверей</b></li>
+                                                        <li><b>CLIP top BLUMOTION</b> со встроенным <b>BLUMOTION</b> (с возможностью деактивации)</li> 
+                                                        <li><b>CLIP top </b>с пружиной или без пружины</li>
+                                                        <li>Металлическая петля, никелированная</li>
+                                                        <li>Угол открывания 95°</li>
+                                                        <li>Регулировка фасада в трех плоскостях</li>
+                                                        <li>Удобная регулировка по глубине с помощью механизма шнек</li>
+                                                        <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
+                                                        <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                    </ul>
+                                                 </p>
                                             </div>
-                                            <div class="tab-pane fade in active" id="instrukciya">
+                                            <div class="tab-pane fade" id="instrukciya">
                                                 <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons
                                                     we want to tell you, why we have created it:
                                                     We didn't like the darkness of most of admin templates, so we created this light one. We didn't like
