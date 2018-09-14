@@ -2072,7 +2072,7 @@ include 'inc-version-css-js.php';
                                                                         <TR><TD></TD></TR> <!--end LEVEL4-->  
                                                                         <TR>
                                                                             <TD class="mapsite" id="flo-5000201-00-101-1001-dobor-bloka-dvernogo">
-                                                                                <p data-img="./dist/images/5000201-00-101-1001-dobor-bloka-dvernogo_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-1001-dobor-bloka-dvernogoм">5000201-00-101-10.01 добор_блока_дверного<span> <br>~5000201-00-101-1001-dobor-bloka-dvernogoм</span></p>
+                                                                                <p data-img="./dist/images/5000201-00-101-1001-dobor-bloka-dvernogo_1.png" data-href="izdeliya-bloki-dvernye.php#5000201-00-101-1001-dobor-bloka-dvernogo">5000201-00-101-10.01 добор_блока_дверного<span> <br>~5000201-00-101-1001-dobor-bloka-dvernogoм</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
