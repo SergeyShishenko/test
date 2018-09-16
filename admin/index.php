@@ -39,7 +39,7 @@
                 <div class="box-header well">
                     <h2 ><i class="glyphicon glyphicon-th"></i> <span id="id_'.$row["head_id"].'">'.$row["name_head"].'</span></h2>
                     <div class="box-icon">
-                        <a href="#" class="btn btn-setting btn-round btn-default del_button" 
+                        <a href="#" class="btn btn-setting btn-round btn-default" 
                             data-content="РЕДАКТИРОВАТЬ"
                             data-name="'.$row["name_head"].'"
                             data-toggle="modal"

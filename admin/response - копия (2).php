@@ -68,7 +68,13 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                     <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
                                                         <li class="active">
                                                             <a data-toggle="tab" href="#tab-fillup<?php echo $category_id ?>"><span>Категория 1</span></a>
-                                                        </li>                                                        
+                                                        </li>
+                                                        <!-- <li>
+                                                            <a data-toggle="tab" href="#tab-fillup21"><span>Категория 2</span></a>
+                                                        </li>
+                                                        <li>
+                                                            <a data-toggle="tab" href="#tab-fillup31"><span>Категория 3</span></a>
+                                                        </li> -->
                                                     </ul>
                                                     <!-- Tab panes -->
                                                     <div class="tab-content">
@@ -94,13 +100,54 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                                                         id="tab-8">
                                                                                        
                                                                                         <li class="active">
-                                                                                            <a data-toggle="tab" href="#tabInspire52">Группа 1</a>
+                                                                                            <a data-toggle="tab" href="#tab8Inspire52">Группа 1</a>
                                                                                         </li>
 
                                                                                     </ul>
                                                                                     <div class="tab-content bg-white">
-                                                                                        
-                                                                                        <div class="tab-pane active" id="tabInspire52">
+                                                                                        <!-- <div class="tab-pane" id="tab3hellowWorld22">
+                                                                                            <div class="row column-seperation">
+                                                                                                <div class="col-md-6">
+                                                                                                    <h3>
+                                                                                                        <span class="semi-bold">Sometimes
+                                                                                                        </span>Small things in life
+                                                                                                        means the most
+                                                                                                    </h3>
+                                                                                                </div>
+                                                                                                <div class="col-md-6">
+                                                                                                    <h3 class="semi-bold">
+                                                                                                        great tabs
+                                                                                                    </h3>
+                                                                                                    <p>Native boostrap tabs
+                                                                                                        customized to Pages look
+                                                                                                        and feel, simply changing
+                                                                                                        class name you can change
+                                                                                                        color as well as its
+                                                                                                        animations</p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="tab-pane active" id="tab3FollowUs22">
+                                                                                            <h3>
+                                                                                                Nothing is 
+                                                                                                
+                                                                                            </h3>
+                                                                                            <p>
+                                                                                                A style represents visual
+                                                                                                customizations on top of a layout.
+                                                                                                By editing a style, you can use
+                                                                                                Squarespaces visual interface to
+                                                                                                customize your...
+                                                                                            </p>
+                                                                                            <br>
+                                                                                            <p class="pull-right">
+                                                                                                <button class="btn btn-default btn-cons"
+                                                                                                    type="button">White</button>
+                                                                                                <button class="btn btn-success btn-cons"
+                                                                                                    type="button">Success</button>
+                                                                                            </p>
+                                                                                        </div> -->
+                                                                                        <div class="tab-pane active" id="tab8Inspire52">
                                                                                             <div class="box-content pane">
 
                                                                                                 <ul class="thumbnails gallery">
