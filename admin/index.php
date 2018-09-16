@@ -245,7 +245,7 @@
 
 </article>
 
-<script>
+<!-- <script>
        $('ul.nav-tabs li').hover(function () {
         // $('a', this).fadeToggle(1000);
         // $(this).find('.gallery-controls').remove();
@@ -256,7 +256,9 @@
         // $('a', this).fadeToggle(1000);
         $(this).find('.tab-controls').stop().animate({'margin-top': '0'}, 200, function () {  $(this).remove();   });
     });
-</script>
+
+    
+</script> -->
 
 <script>
    $(document).ready(function() {
@@ -371,6 +373,20 @@
                 $(this).remove();
             });
         });
+
+
+
+        $("body").on( "mouseenter","ul.nav-tabs li",function () {        
+            var name = $(this).find('a > span').text();
+            $(this).append('<div class=" tab-controls">' + '<p><a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ!" data-content="РЕДАКТИРОВАТЬ" data-name="' + name + '" data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-edit"></i></a></p>' +  '</div>');
+            $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
+        });
+        $("body").on( "mouseleave","ul.nav-tabs li",function () {
+            // $('a', this).fadeToggle(1000);
+            $(this).find('.tab-controls').stop().animate({'margin-top': '0'}, 200, function () {  $(this).remove();   });
+        });
+
+
                         
                 //gallery edit
             $("body").on( "click","ul.thumbnails.gallery li.thumbnail a.gallery-edit" , function (e) {
