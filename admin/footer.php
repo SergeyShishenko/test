@@ -52,10 +52,23 @@
                 </div>
                 <div class="modal-body">
                     <p>Here settings can be configured...</p>
+                    <input type="hidden" id="tbl" value="">
+                    <input type="hidden" id="field" value="">
+                    <input type="hidden" id="fieldid" value="">
+                    <input type="hidden" id="id" value="">
+                    <div class="form-group">
+              <label for="recipient-name" class="form-control-label">Имя:</label>
+              <input type="text" class="form-control" id="recipient-name"  required>
+            </div>
+            <!-- <div class="form-group">
+              <label for="message-text" class="form-control-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div> -->
+          </form>
                 </div>
                 <div class="modal-footer">
-                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
-                    <a href="#" class="btn btn-primary" data-dismiss="modal">Save changes</a>
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Закрыть</a>
+                    <a href="#" class="btn btn-primary" data-dismiss="modal" id="ChangeSubmit">Сохранить изменения</a>
                 </div>
             </div>
         </div>
