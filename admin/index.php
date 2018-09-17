@@ -115,7 +115,12 @@
                                                                             <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white"
                                                                                 id="tab-3">
                                                                                 <li class="active">
-                                                                                    <a data-toggle="tab" href="#tab3hellowWorld22"><span>Группа 1</span></a>
+                                                                                    <a data-toggle="tab" href="#tab3hellowWorld22"
+                                                                                     data-tbl="grupp"
+                                                                                     data-field="name_grupp"
+                                                                                     data-field-id="grupp_id"
+                                                                                     data-id="22"
+                                                                                    ><span>Группа 1</span></a>
                                                                                 </li>
                                                                                 <li>
                                                                                     <a data-toggle="tab" href="#tab3FollowUs22"><span>Группа 2</span></a>
