@@ -25,7 +25,7 @@ include 'inc-version-css-js.php';
     <link href="./dist/css/animate.min.css" rel="stylesheet">    
     <link href="./dist/css/docs.css?v=<?php echo $docsVersion; ?>" rel="stylesheet">
     <link href="./dist/css/grid.css?v=<?php echo $gridVersion; ?>" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="shesterenka.png" type="image/x-icon">
    
 <style>
 /* запрет перехода по ссылкам */ 
