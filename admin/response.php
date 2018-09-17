@@ -57,9 +57,15 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                 <div class="box-icon">
                                                     <a href="#" class="btn btn-setting btn-round btn-default" 
                                                         data-content="ДОБАВИТЬ КАТЕГОРИЮ"
+                                                        data-name="Категория 1"
                                                         data-toggle="modal"
                                                         data-target="#myModal" 
-                                                        title="ДОБАВИТЬ КАТЕГОРИЮ">
+                                                        title="ДОБАВИТЬ КАТЕГОРИЮ"
+                                                        data-tbl="category"
+                                                        data-field="name_category"
+                                                        data-field-id="category_id"
+                                                        data-id="<?php echo $category_id ?>"
+                                                        >
                                                         <i class="glyphicon glyphicon-plus-sign"></i>
                                                     </a>
                                                 </div>
@@ -67,7 +73,12 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                     <!-- Nav tabs -->
                                                     <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
                                                         <li class="active">
-                                                            <a data-toggle="tab" href="#tab-fillup<?php echo $category_id ?>"><span>Категория 1</span></a>
+                                                            <a data-toggle="tab" href="#tab-fillup<?php echo $category_id ?>"
+                                                            data-tbl="category"
+                                                            data-field="name_category"
+                                                            data-field-id="category_id"
+                                                            data-id="<?php echo $category_id ?>"
+                                                            ><span>Категория 1</span></a>
                                                         </li>                                                        
                                                     </ul>
                                                     <!-- Tab panes -->
@@ -94,7 +105,12 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                                                         id="tab-8">
                                                                                        
                                                                                         <li class="active">
-                                                                                            <a data-toggle="tab" href="#tabInspire52">Группа 1</a>
+                                                                                            <a data-toggle="tab" href="#tabInspire52"
+                                                                                            data-tbl="grupp"
+                                                                                            data-field="name_grupp"
+                                                                                            data-field-id="grupp_id"
+                                                                                            data-id="<?php echo $grupp_id ?>"
+                                                                                            ><span>Группа 1</span></a>
                                                                                         </li>
 
                                                                                     </ul>

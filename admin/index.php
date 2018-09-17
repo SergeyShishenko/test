@@ -68,7 +68,9 @@
                                                 data-content="ДОБАВИТЬ КАТЕГОРИЮ"
                                                 data-toggle="modal"
                                                 data-target="#myModal" 
-                                                title="ДОБАВИТЬ КАТЕГОРИЮ">
+                                                title="ДОБАВИТЬ КАТЕГОРИЮ"
+                                              
+                                                >
                                                 <i class="glyphicon glyphicon-plus-sign"></i>
                                             </a>
                                         </div>
@@ -76,7 +78,12 @@
                                             <!-- Nav tabs -->
                                             <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
                                                 <li class="active">
-                                                    <a data-toggle="tab" href="#tab-fillup11"><span>Категория 5</span></a>
+                                                    <a data-toggle="tab" href="#tab-fillup11"
+                                                    data-tbl="category"
+                                                    data-field="name_category"
+                                                    data-field-id="category_id"
+                                                    data-id="5"
+                                                    ><span>Категория 5</span></a>
                                                 </li>
                                                 <li>
                                                     <a data-toggle="tab" href="#tab-fillup21"><span>Категория 2</span></a>
@@ -376,9 +383,14 @@
 
 
 
-        $("body").on( "mouseenter","ul.nav-tabs li",function () {        
+        $("body").on( "mouseenter","ul.nav-tabs li",function () { 
+            //  alert($(this).text());     
             var name = $(this).find('a > span').text();
-            $(this).append('<div class=" tab-controls">' + '<p><a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ!" data-content="РЕДАКТИРОВАТЬ" data-name="' + name + '" data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-edit"></i></a></p>' +  '</div>');
+            var tbl = $(this).find('a').data('tbl');
+            var field = $(this).find('a').data('field');
+            var fieldid = $(this).find('a').data('field-id'); 
+            var id = $(this).find('a').data('id');  
+            $(this).append('<div class=" tab-controls"><p><a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ!" data-content="РЕДАКТИРОВАТЬ" data-name="' + name + '"  data-toggle="modal" data-target="#myModal" data-tbl="' + tbl + '" data-field="' + field + '" data-field-id="' + fieldid + '" data-id="' + id + '"><i class="glyphicon glyphicon-edit"></i></a></p></div>' );
             $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
         });
         $("body").on( "mouseleave","ul.nav-tabs li",function () {
