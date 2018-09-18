@@ -27,12 +27,12 @@
     // //MySQL запрос
     $Result = mysqli_query($dbconn,"SELECT head_id,name_head,data_href_head,number_in_order_head FROM head");
 
-    // получаем все записи из таблицы add_delete_record
+    // получаем все записи из таблицы head
     while($row = mysqli_fetch_array($Result))
     {
 
 
-    echo '
+        echo '
     
         <div class="box col-md-12" id="head_'.$row["head_id"].'">
             <div class="box-inner">
@@ -55,6 +55,14 @@
                         <!-- <a href="#" class="btn btn-close btn-round btn-default" title="ДОБАВИТЬ РАЗДЕЛ"><i class="glyphicon glyphicon-plus-sign"></i></a> -->
                     </div>
                 </div>
+        ';
+
+            // //MySQL запрос
+            $Result = mysqli_query($dbconn,"SELECT category_id,name_category,data_href_category,head_id,number_in_order_category FROM category");
+                // получаем все записи из таблицы category
+            while($row = mysqli_fetch_array($Result))
+            {
+            echo '
 
                 <div  class="box-content">
                     <div>
@@ -66,10 +74,14 @@
                                         <div class="box-icon">
                                             <a href="#" class="btn btn-setting btn-round btn-default"
                                                 data-content="ДОБАВИТЬ КАТЕГОРИЮ"
+                                                data-name="'.$row["name_category"].'"
                                                 data-toggle="modal"
                                                 data-target="#myModal" 
                                                 title="ДОБАВИТЬ КАТЕГОРИЮ"
-                                              
+                                                data-tbl="category"
+                                                data-field="name_category"
+                                                data-field-id="category_id"
+                                                data-id="'.$row["category_id"].'"
                                                 >
                                                 <i class="glyphicon glyphicon-plus-sign"></i>
                                             </a>
@@ -78,19 +90,13 @@
                                             <!-- Nav tabs -->
                                             <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
                                                 <li class="active">
-                                                    <a data-toggle="tab" href="#tab-fillup11"
+                                                    <a data-toggle="tab" href="#tab-fillup'.$row["category_id"].'"
                                                     data-tbl="category"
                                                     data-field="name_category"
                                                     data-field-id="category_id"
-                                                    data-id="5"
-                                                    ><span>Категория 5</span></a>
-                                                </li>
-                                                <li>
-                                                    <a data-toggle="tab" href="#tab-fillup21"><span>Категория 2</span></a>
-                                                </li>
-                                                <li>
-                                                    <a data-toggle="tab" href="#tab-fillup31"><span>Категория 3</span></a>
-                                                </li>
+                                                    data-id="'.$row["category_id"].'"
+                                                    ><span  id="id_'.$row["category_id"].'">'.$row["name_category"].'</span></a>
+                                                </li>                                                
                                             </ul>
                                             <!-- Tab panes -->
                                             <div class="tab-content">
@@ -101,11 +107,11 @@
                                                                 <div class="row">
                                                                     <div class="box-icon ">
                                                                         <a href="#" class="btn btn-setting btn-round btn-default "
-                                                                         data-content="ДОБАВИТЬ ГРУППУ"
-                                                                         data-toggle="modal"
-                                                                         data-target="#myModal" 
-                                                                         title="ДОБАВИТЬ ГРУППУ">
-                                                                         <i class="glyphicon glyphicon-plus-sign"></i>
+                                                                        data-content="ДОБАВИТЬ ГРУППУ"
+                                                                        data-toggle="modal"
+                                                                        data-target="#myModal" 
+                                                                        title="ДОБАВИТЬ ГРУППУ">
+                                                                        <i class="glyphicon glyphicon-plus-sign"></i>
                                                                         </a>
                                                                     </div>
                                                                     <div class="col-lg-12 ">
@@ -116,10 +122,10 @@
                                                                                 id="tab-3">
                                                                                 <li class="active">
                                                                                     <a data-toggle="tab" href="#tab3hellowWorld22"
-                                                                                     data-tbl="grupp"
-                                                                                     data-field="name_grupp"
-                                                                                     data-field-id="grupp_id"
-                                                                                     data-id="22"
+                                                                                    data-tbl="grupp"
+                                                                                    data-field="name_grupp"
+                                                                                    data-field-id="grupp_id"
+                                                                                    data-id="22"
                                                                                     ><span>Группа 1</span></a>
                                                                                 </li>
                                                                                 <li>
@@ -178,9 +184,9 @@
 
                                                                                         <ul class="thumbnails gallery">';
 
-                                                                                             for ($i = 1; $i <= 24; $i++) { 
+                                                                                            for ($i = 1; $i <= 24; $i++) { 
 
-                                                                                         echo'  <li id="image-'. $i.'"
+                                                                                        echo'  <li id="image-'. $i.'"
                                                                                                     class="thumbnail">
                                                                                                     <p class="">Конструкции width: 100px;</p>
                                                                                                     <a style="background:url(https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/thumbs/'. $i.'.jpg)"
@@ -190,7 +196,7 @@
                                                                                                             src="https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/thumbs/'. $i.'.jpg"
                                                                                                             alt="Sample Image '. $i.'"></a>
                                                                                                 </li>
-                                                                                          ';
+                                                                                        ';
 
                                                                                             } 
                                                                                             echo'     
@@ -243,13 +249,17 @@
 
                     </div>
                 </div>
+                ';
+
+            }//while
+                    
+                   
+        echo '
             </div>
         </div>
     
-    ';
-
-
-    }
+        ';
+    }//while
 
     //Закрывает соединение с сервером MySQL
     mysqli_close($dbconn);

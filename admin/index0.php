@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="panel panel-transparent ">
                                         <!-- Nav tabs -->
-                                        <!-- <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
+                                         <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
                                             <li class="active">
                                                 <a data-toggle="tab" href="#tab-fillup11"><span>Профили гладкие</span></a>
                                             </li>
@@ -49,13 +49,14 @@
                                                 <a data-toggle="tab" href="#tab-fillup31"><span>САНитарно-эпидемиологические
                                                         Правила И Нормативы</span></a>
                                             </li>
-                                        </ul> -->
+                                        </ul> 
                                         <!-- Tab panes -->
                                         <div class="tab-content">
                                             <div class="tab-pane active" id="tab-fillup11">
                                                 <div class="row column-seperation panelTab">
                                                     <div class="col-md-12">
                                                         <div class="panel-body no-padding">
+
                                                             <div class="row">
                                                                 <div class="box-icon ">
 
@@ -83,6 +84,7 @@
 
                                                                         </ul>
                                                                         <div class="tab-content bg-white">
+
                                                                             <div class="tab-pane" id="tab3hellowWorld22">
                                                                                 <div class="row column-seperation">
                                                                                     <div class="col-md-6">
@@ -105,6 +107,7 @@
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
+
                                                                             <div class="tab-pane active" id="tab3FollowUs22">
                                                                                 <h3>
                                                                                     “ Nothing is <span class="semi-bold">impossible</span>,
@@ -127,6 +130,7 @@
                                                                                         type="button">Success</button>
                                                                                 </p>
                                                                             </div>
+
                                                                             <div class="tab-pane" id="tab3Inspire32">
                                                                                 <div class="box-content pane">
 
@@ -146,14 +150,17 @@
                                                                                     </ul>
                                                                                 </div>
                                                                             </div>
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="tab-pane" id="tab-fillup21">
                                                 <div class="row">
                                                     <div class="col-md-12">
