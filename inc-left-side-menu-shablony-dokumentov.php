@@ -7,7 +7,7 @@
 // $item_vpi_Class = '';
 // $item_dogovor_Class = '';
 // $item_akty_Class = '';
-// $item_pisma-klientu_Class = '';
+// $item_pisma_klientu_Class = '';
 ?>
 <?php echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
@@ -19,7 +19,7 @@
                     <ul class="list-group">
                         <!-- menu -->
                         <li class="menu">                                
-                            <a href="shablony-dokumentov-titulniki.php" class="list-group-item  '.$item_albom_obrazcov_Class.'">Альбом образцов &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
+                            <a href="shablony-dokumentov-albom-obrazcov.php" class="list-group-item  '.$item_albom_obrazcov_Class.'">Альбом образцов &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
                             <!--   <ul class="list-group sub_menu">
                                 <li class="menu2">
                                     <a  class="list-group-item sub"  href="shablony-dokumentov-titulniki.php#listy-titulnye-dizayn-proekta">Листы титульные дизайн-проекта</a>
@@ -46,7 +46,7 @@
                         </li>
                         <!-- menu -->
                         <li class="menu">
-                            <a href="shablony-dokumentov-shtampy-chertezhey.php" class="list-group-item  '.$item_list_dvizh_obrazcov_Class.'">Лист движ. образцов</a>
+                            <a href="shablony-dokumentov-list-dvizh-obrazcov.php" class="list-group-item  '.$item_list_dvizh_obrazcov_Class.'">Лист движ. образцов</a>
                             <!--  <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО</a>
                                     <ul class="list-group sub_menu2">
@@ -64,7 +64,7 @@
                         </li>
                         <!-- menu -->
                         <li class="menu">
-                            <a href="shablony-dokumentov-specifikacii.php" class="list-group-item  '.$item_titulnyy_dp_Class.'">Лист титульный ДП</a>
+                            <a href="shablony-dokumentov-titulnyy-dp.php" class="list-group-item  '.$item_list_titulnyy_dp_Class.'">Лист титульный ДП</a>
                             <!--   <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>
                                     <ul class="list-group sub_menu2">
@@ -84,7 +84,7 @@
                         </li>
                         <!-- menu -->
                         <li class="menu">
-                            <a href="shablony-dokumentov-specifikacii.php" class="list-group-item  '.$item_titulnyy_kd_Class.'">Лист титульный КД</a>
+                            <a href="shablony-dokumentov-titulnyy-kd.php" class="list-group-item  '.$item_list_titulnyy_kd_Class.'">Лист титульный КД</a>
                             <!--   <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>
                                     <ul class="list-group sub_menu2">
@@ -104,7 +104,7 @@
                         </li>
                         <!-- menu -->
                         <li class="menu">
-                            <a href="shablony-dokumentov-pokupnye-izdeliya.php" class="list-group-item  '.$item_pokupnye_izdeliya_Class.'"> ВПИ ПОКУПНЫЕ ИЗДЕЛИЯ</a>
+                            <a href="shablony-dokumentov-pokupnye-izdeliya.php" class="list-group-item  '.$item_vpi_Class.'"> ВПИ ПОКУПНЫЕ ИЗДЕЛИЯ</a>
                              <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
                                     <ul class="list-group sub_menu2">
@@ -134,7 +134,7 @@
                         </li>
                         <!-- menu -->
                         <li class="menu">
-                            <a href="shablony-dokumentov-pokupnye-izdeliya.php" class="list-group-item  '.$dogovor_Class.'">Договор</a>
+                            <a href="shablony-dokumentov-dogovor.php" class="list-group-item  '.$item_dogovor_Class.'">Договор</a>
                             <!-- <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
                                     <ul class="list-group sub_menu2">
@@ -163,7 +163,7 @@
                             </ul>-->
                         </li>
                         <li class="menu">
-                            <a href="shablony-dokumentov-pokupnye-izdeliya.php" class="list-group-item  '.$akty_Class.'">Акты</a>
+                            <a href="shablony-dokumentov-akty.php" class="list-group-item  '.$item_akty_Class.'">Акты</a>
                             <!-- <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
                                     <ul class="list-group sub_menu2">
@@ -192,7 +192,7 @@
                             </ul>-->
                         </li>
                         <li class="menu">
-                            <a href="shablony-dokumentov-pokupnye-izdeliya.php" class="list-group-item  '.$pisma_klientu_Class.'">Письма клиенту</a>
+                            <a href="shablony-dokumentov-pisma-klientu.php" class="list-group-item  '.$item_pisma_klientu_Class.'">Письма клиенту</a>
                             <!-- <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
                                     <ul class="list-group sub_menu2">
@@ -219,8 +219,7 @@
                                     </ul>
                                 </li>      
                             </ul>-->
-                        </li>
-                                                                            
+                        </li>                                                                            
                     </ul>
                 </div>
             </div>
