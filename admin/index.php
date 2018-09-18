@@ -34,10 +34,10 @@
 
         echo '
     
-        <div class="box col-md-12" id="head_'.$row["head_id"].'">
+        <div class="box col-md-12" id="item_'.$row["head_id"].'">
             <div class="box-inner">
                 <div class="box-header well">
-                    <h2 ><i class="glyphicon glyphicon-th"></i> <span id="id_'.$row["head_id"].'">'.$row["name_head"].'</span></h2>
+                    <h2 ><i class="glyphicon glyphicon-th"></i> <span id="head_'.$row["head_id"].'">'.$row["name_head"].'</span></h2>
                     <div class="box-icon">
                         <a href="#" class="btn btn-setting btn-round btn-default" 
                             data-content="РЕДАКТИРОВАТЬ"
@@ -48,7 +48,7 @@
                             data-tbl="head"
                             data-field="name_head"
                             data-field-id="head_id"
-                            data-id="'.$row["head_id"].'"
+                            data-id="head_'.$row["head_id"].'"
                             >
                             <i class="glyphicon glyphicon-edit"></i></a>
                         <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>  
@@ -81,7 +81,7 @@
                                                 data-tbl="category"
                                                 data-field="name_category"
                                                 data-field-id="category_id"
-                                                data-id="'.$row["category_id"].'"
+                                                data-id="category_'.$row["category_id"].'"
                                                 >
                                                 <i class="glyphicon glyphicon-plus-sign"></i>
                                             </a>
@@ -92,10 +92,11 @@
                                                 <li class="active">
                                                     <a data-toggle="tab" href="#tab-fillup'.$row["category_id"].'"
                                                     data-tbl="category"
+                                                    data-name="'.$row["name_category"].'"
                                                     data-field="name_category"
                                                     data-field-id="category_id"
-                                                    data-id="'.$row["category_id"].'"
-                                                    ><span  id="id_'.$row["category_id"].'">'.$row["name_category"].'</span></a>
+                                                    data-id="category_'.$row["category_id"].'"
+                                                    ><span  id="category_'.$row["category_id"].'">'.$row["name_category"].'</span></a>
                                                 </li>                                                
                                             </ul>
                                             <!-- Tab panes -->
@@ -323,11 +324,15 @@
                         return false;
                     }
                         //post variables
+
+                    var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
+                    var DbNumberID = clickedID[1]; //и получаем номер из массива
+
                     var myData = "content_txt="+ $("#recipient-name").val() +"&"+
                                  "tbl="+ $("#tbl").val() +"&"+
                                  "field="+ $("#field").val() +"&"+
                                  "fieldid="+ $("#fieldid").val() +"&"+
-                                 "id="+ $("#id").val();
+                                 "id="+ DbNumberID;
                     // "name=John&location=Boston"
                     jQuery.ajax({
                         type: "POST", // HTTP метод  POST или GET
@@ -335,7 +340,7 @@
                         dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
                         data:myData, //данные, которые будут отправлены на сервер (post переменные)
                         success:function(response){
-                        $("#id_"+$("#id").val()).text($("#recipient-name").val());
+                        $("#"+$("#tbl").val()+"_"+ DbNumberID).text($("#recipient-name").val());
                         // $("#contentText").val(''); //очищаем текстовое поле после успешной вставки
                         },
                         error:function (xhr, ajaxOptions, thrownError){

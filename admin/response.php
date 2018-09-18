@@ -110,17 +110,16 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                                                                     data-field="name_grupp"
                                                                                                     data-field-id="grupp_id"
                                                                                                     data-id="<?php echo $grupp_id ?>"
-                                                                                                    >
-                                                                                                    
+                                                                                                    >                                                                                                    
                                                                                                     <i class="glyphicon glyphicon-plus-sign"></i>
                                                                                                 </a>
                                                                                             </div>
-                                                                                            <div class="col-lg-12 ">
 
+                                                                                            <div class="col-lg-12 ">
                                                                                                 <div class="panel panel-transparent ">
 
                                                                                                     <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white"
-                                                                                                        id="tab-<?php echo $grupp_id ?>">
+                                                                                                        id="tab-<?php echo $category_id ?>">
                                                                                                     
                                                                                                         <li class="active">
                                                                                                             <a data-toggle="tab" href="#tabInspire<?php echo $grupp_id ?>"
@@ -154,13 +153,17 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                                                                                                             </div>
                                                                                                         </div>
                                                                                                     </div>
+
+
                                                                                                 </div>
                                                                                             </div>
-                                                                                        </div>
+
+                                                                                        </div> <!--row-->
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </div>
+                                                                        </div> <!--tab-pane-->
+                                                                        
                                                                         <!-- <div class="tab-pane" id="tab-fillup21">
                                                                             <div class="row">
                                                                                 <div class="col-md-12">
