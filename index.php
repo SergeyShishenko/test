@@ -61,8 +61,8 @@ include 'inc-version-css-js.php';
 
                     <ul class="nav navbar-nav " id="navmain">
                         <li>
-                            <a href="#detali-profili">ДЕТАЛИ </a>
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <a href="detali-profili.php">ДЕТАЛИ </a>
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                              <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating8" >ПРОФИЛИ ГЛАДКИЕ</a>
@@ -82,8 +82,8 @@ include 'inc-version-css-js.php';
                             </ul>                            -->
                         </li>
                         <li>
-                            <a href="#izdeliya-bloki-dvernye">ИЗДЕЛИЯ</a >
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <a href="izdeliya-bloki-dvernye.php">ИЗДЕЛИЯ</a >
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                           
                            <!--  <ul class="dropdown-menu">
                                 <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
@@ -109,8 +109,8 @@ include 'inc-version-css-js.php';
                             </ul>                              -->
                         </li>
                         <li>                            
-                            <a href="#shablony-dokumentov-titulniki">ШАБЛОНЫ ДОКУМЕНТОВ</a >
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <a href="shablony-dokumentov-titulniki.php">ШАБЛОНЫ ДОКУМЕНТОВ</a >
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating24" >ЛИСТЫ ТИТУЛЬНЫЕ</a>
@@ -124,8 +124,8 @@ include 'inc-version-css-js.php';
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#metodichki-dokument-117">ПОСОБИЯ МЕТОДИЧЕСКИЕ</a >
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <a href="metodichki-dokument-117.php">ПОСОБИЯ МЕТОДИЧЕСКИЕ</a >
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating28" >ДОКУМЕНТ 117</a>
@@ -139,8 +139,8 @@ include 'inc-version-css-js.php';
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#furnitura-dlya-dvernyh-blokov">ФУРНИТУРА</a >
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <a href="furnitura-dlya-dvernyh-blokov.php">ФУРНИТУРА</a >
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating32" >ДЛЯ ДВЕРНЫХ БЛОКОВ</a>
@@ -155,8 +155,8 @@ include 'inc-version-css-js.php';
                             </ul> -->
                         </li>
                         <li>
-                            <a href="#materialy-ne-derevyannye-steklo-zerkalo-vitrazh">МАТЕРИАЛЫ</a>
-                            <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span>
+                            <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ</a>
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
                                 <li><a class="" href="#floating36" >СТЕКЛО, ЗЕРКАЛО</a>
