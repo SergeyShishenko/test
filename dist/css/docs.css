@@ -826,6 +826,8 @@ a.navbar-brand{text-align: center;}
   body{
     font-size: 13.8px !important;
   }
+  .dblstr-lg {padding: 2px 15px !important;}
+  
   .menu2 .list-group-item,.menu2 .list-group,.menu .list-group{
     width: 420PX !important;/*ширина submenu*/   
   }
@@ -859,13 +861,16 @@ a.navbar-brand{text-align: center;}
     font-size: 11.8px ;
     padding: 10px 15px;
    }
+   
    ul.search_result {  max-width: 1070px !important;  margin-left: -1048px !important;}
 }
 @media (min-width: 1824px) {
   .container {   
     width: 1498px !important; /*1824px */  
   }
-
+  .dblstr-xl {padding: 3px 15px !important;}
+  .dblstr-lg {padding: 10px 15px !important;}
+  
   .col-md-8-non{
     width: 66.66666% !important;
     margin-left: -15px !important;
