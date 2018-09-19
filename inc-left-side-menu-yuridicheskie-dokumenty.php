@@ -19,7 +19,7 @@
                     <ul class="list-group">                      
                         <!-- menu -->
                         <li class="menu">
-                            <a href="shablony-dokumentov-dogovor.php" class="list-group-item  '.$item_dogovor_Class.'">Договор</a>
+                            <a href="yuridicheskie-dokumenty.php" class="list-group-item  '.$item_dogovor_Class.'">Договор</a>
                             <!-- <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
                                     <ul class="list-group sub_menu2">

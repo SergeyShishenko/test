@@ -64,7 +64,7 @@
                         </li>
                         <!-- menu -->
                         <li class="menu">
-                            <a href="shablony-dokumentov-titulnyy-dp.php" class="list-group-item  '.$item_list_titulnyy_dp_Class.'">Лист титульный ДП</a>
+                            <a href="shablony-dokumentov-titulnyy-dp.php" class="list-group-item  '.$item_list_titulnyy_dp_Class.'">ДИЗАЙН ПРОЕКТ</a>
                             <!--   <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>
                                     <ul class="list-group sub_menu2">
@@ -84,7 +84,7 @@
                         </li>
                         <!-- menu -->
                         <li class="menu">
-                            <a href="shablony-dokumentov-titulnyy-kd.php" class="list-group-item  '.$item_list_titulnyy_kd_Class.'">Лист титульный КД</a>
+                            <a href="shablony-dokumentov-titulnyy-kd.php" class="list-group-item  '.$item_list_titulnyy_kd_Class.'">КОНСТРУКТОРСКАЯ ДОК-ЦИЯ</a>
                             <!--   <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>
                                     <ul class="list-group sub_menu2">
@@ -103,7 +103,7 @@
                             </ul>-->
                         </li>
                         <!-- menu -->
-                        <li class="menu">
+                        <!--  <li class="menu">
                             <a href="shablony-dokumentov-pokupnye-izdeliya.php" class="list-group-item  '.$item_vpi_Class.'"> ВПИ ПОКУПНЫЕ ИЗДЕЛИЯ</a>
                              <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
@@ -131,7 +131,7 @@
                                     </ul>
                                 </li>      
                             </ul>
-                        </li>                                                                                                   
+                        </li>  -->                                                                                                 
                     </ul>
                 </div>
             </div>

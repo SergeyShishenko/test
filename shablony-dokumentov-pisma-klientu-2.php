@@ -2,7 +2,8 @@
 include 'inc-session-start.php';
 $detaliClass = '';
 $izdeliyaClass = '';
-$shablonyClass = 'class="active"';
+$shablonyClass = '';
+$yrishablonyClass= 'class="active"';
 $metodichkiClass = '';
 $furnituraClass = '';
 $materialyClass = '';
