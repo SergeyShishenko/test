@@ -109,7 +109,7 @@ include 'inc-version-css-js.php';
                             </ul>                              -->
                         </li>
                         <li>                            
-                            <a href="shablony-dokumentov-titulniki.php">ШАБЛОНЫ ДОКУМЕНТОВ</a >
+                            <a href="shablony-dokumentov-titulnyy-kd.php">ШАБЛОНЫ ДОКУМЕНТОВ</a >
                             <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
