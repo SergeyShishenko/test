@@ -123,8 +123,23 @@ include 'inc-version-css-js.php';
                                 </li>                                                                                                                       
                             </ul> -->
                         </li>
+                        <li>                            
+                            <a href="yuridicheskie-dokumenty.php">ЮРИДИЧЕСКИЕ ДОКУМЕНТЫ</a >
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
+                            <!-- <span class="caret"></span>
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="#floating24" >ЛИСТЫ ТИТУЛЬНЫЕ</a>
+                                </li>
+                                <li><a class="" href="#floating25" >ШТАМПЫ ЧЕРТЕЖЕЙ</a>
+                                </li> 
+                                <li><a class="" href="#floating26" >СПЕЦИФИКАЦИИ</a>
+                                </li> 
+                                <li><a class="" href="#floating27" >ПОКУПНЫЕ ИЗДЕЛИЯ</a>
+                                </li>                                                                                                                       
+                            </ul> -->
+                        </li>
                         <li>
-                            <a href="metodichki-dokument-117.php">ПОСОБИЯ МЕТОДИЧЕСКИЕ</a >
+                            <a href="metodichki-dokument-117.php">МЕТОДИЧКИ</a >
                             <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">

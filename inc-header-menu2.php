@@ -36,8 +36,11 @@
                         <li '.$shablonyClass.'>
                             <a href="shablony-dokumentov-titulniki.php">ШАБЛОНЫ ДОКУМЕНТОВ</a>
                         </li>
+                        <li '.$yrishablonyClass.'>                            
+                        <a href="yuridicheskie-dokumenty.php">ЮРИДИЧЕСКИЕ ДОКУМЕНТЫ</a >                           
+                        </li>
                         <li '.$metodichkiClass.'>
-                            <a href="metodichki-dokument-117.php">ПОСОБИЯ МЕТОДИЧЕСКИЕ</a>
+                            <a href="metodichki-dokument-117.php">МЕТОДИЧКИ</a>
                         </li>
                         <li '.$furnituraClass.'>
                             <a href="furnitura-dlya-dvernyh-blokov.php">ФУРНИТУРА</a>
@@ -45,8 +48,18 @@
                         <li '.$materialyClass.'>
                             <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ</a>
                         </li>
-                        <li '.$literaturaClass.' class=" disabled">
-                            <a href="literatura-gost.php">ЛИТЕРАТУРА</a>
+                        <li  id="other">
+                            <a href="#">ЕЩЁ</a >
+                            <!-- <span class="caret2 glyphicon glyphicon-new-window---" aria-hidden="true" title="Перейти на страницу"></span> -->
+                             <span class="caret3"></span> 
+                            <ul class="dropdown-menu  dropdown-menu-right">
+                                <li '.$literaturaClass.' class=" disabled">
+                                <a href="literatura-gost.php">ЛИТЕРАТУРА</a>
+                                </li>
+                                <li><a href="furnitura-video.php" >Видео</a>
+                                </li> 
+                                                                                                                                                     
+                            </ul> 
                         </li>
                     </ul>  
                 </div>

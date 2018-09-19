@@ -18,7 +18,7 @@ $item_akty_Class = '';
 $item_pisma_klientu_Class = '';
 include 'inc-head.php';
 include 'inc-header-menu.php';
-include 'inc-left-side-menu-shablony-dokumentov.php';
+include 'inc-left-side-menu-yuridicheskie-dokumenty.php';
 ?> 
                 <!-- main  -->  
                     <div class="col-md-8 col-md-8-non" role="main" id="main-page">

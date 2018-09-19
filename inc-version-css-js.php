@@ -1,8 +1,8 @@
 <?php
-$gridVersion = 7;
-$docsVersion = 29;
-$docsfirstVersion=1;
-$scriptVersion = 21;
-$script2Version = 3;
-$floatingVersion = 11;
+$gridVersion = 8;
+$docsVersion = 30;
+$docsfirstVersion=2;
+$scriptVersion = 23;
+$script2Version = 5;
+$floatingVersion = 13;
 ?>
