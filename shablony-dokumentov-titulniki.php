@@ -8,10 +8,14 @@ $furnituraClass = '';
 $materialyClass = '';
 $literaturaClass = '';
 
-$item_titulniki_Class = 'active';
-$item_shtampy_chertezhey_Class = '';
-$item_specifikacii_Class = '';
-$item_pokupnye_izdeliya_Class = '';
+$item_albom_obrazcov_Class = '';
+$item_list_dvizh_obrazcov_Class = '';
+$item_list_titulnyy_dp_Class = '';
+$item_list_titulnyy_kd_Class = 'active';
+$item_vpi_Class = '';
+$item_dogovor_Class = '';
+$item_akty_Class = '';
+$item_pisma_klientu_Class = '';
 include 'inc-head.php';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-shablony-dokumentov.php';

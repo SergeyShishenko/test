@@ -27,15 +27,15 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="page-header">
                           <h1 itemprop="name" id="pisma-klientu">Письма клиенту</h1>
                         </div>
-                        <h2  id="shablon-zhestkaya-pisma-o-predostavlenii-informacii-po-dogovoru">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont"><h4>Шаблон ЖЕСТКАЯ Письма о предоставлении информации по Договору</h4>
+                        <h2  id="shablon-zhestkaya-pisma-o-predostavlenii-soglasovaniya-dp-kdz-obrazca">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont"><h4>Шаблон ЖЕСТКАЯ Письма о предоставлении согласования ДП_КДЗ_Образца</h4>
                                                        
                             <p> <a>
-                                <img src="./dist/files/yri/shablon-zhestkaya-pisma-o-predostavlenii-informacii-po-dogovoru_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-book"
+                                <img src="./dist/files/yri/shablon-zhestkaya-pisma-o-predostavlenii-soglasovaniya-dp-kdz-obrazca_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
-                                 alt="Шаблон ЖЕСТКАЯ Письма о предоставлении информации по Договору"
-                                 data-ydoc="./dist/files/yri/shablon-zhestkaya-pisma-o-predostavlenii-informacii-po-dogovoru.doc"
+                                 alt="Шаблон ЖЕСТКАЯ Письма о предоставлении согласования ДП_КДЗ_Образца"
+                                 data-ydoc="./dist/files/yri/shablon-zhestkaya-pisma-o-predostavlenii-soglasovaniya-dp-kdz-obrazca.doc"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
                                    ></a>
@@ -55,10 +55,10 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <ul class="nav bs-sidenav">
                             <li><a href="#pisma-klientu">Письма клиенту</a>
                             <ul class="nav">
-                                    <li><a href="#shablon-zhestkaya-pisma-o-predostavlenii-informacii-po-dogovoru">&#9999;&nbsp;Шаблон ЖЕСТКАЯ Письма о предоставлении информации по Договору</a>
+                                    <li><a href="shablony-dokumentov-pisma-klientu.php#shablon-zhestkaya-pisma-o-predostavlenii-informacii-po-dogovoru">&#9999;&nbsp;Шаблон ЖЕСТКАЯ Письма о предоставлении информации по Договору</a>
                                     </li> 
-                                    <li><a href="shablony-dokumentov-pisma-klientu-2.php#shablon-zhestkaya-pisma-o-predostavlenii-soglasovaniya-dp-kdz-obrazca">&#9999;&nbsp;Шаблон ЖЕСТКАЯ Письма о предоставлении согласования ДП_КДЗ_Образца</a>
-                                    </li>                                    
+                                    <li><a href="#shablon-zhestkaya-pisma-o-predostavlenii-soglasovaniya-dp-kdz-obrazca">&#9999;&nbsp;Шаблон ЖЕСТКАЯ Письма о предоставлении согласования ДП_КДЗ_Образца</a>
+                                    </li>                                   
                                 </ul>
                             </li> 
                     </div>
