@@ -95,7 +95,7 @@
                             </ul>
                         </li>
                         <li class="menu">
-                            <a href="yuridicheskie-dokumenty.php" class="list-group-item dblstr-lg  dblstr-xl'.$item_dogovor_na_postavku_furnitury_Class.'">ДОГОВОР НА ПОСТАВКУ ФУРНИТУРЫ</a>
+                            <a href="dogovor-na-postavku-furnitury.php" class="list-group-item dblstr-lg  dblstr-xl '.$item_dogovor_na_postavku_furnitury_Class.'">ДОГОВОР НА ПОСТАВКУ ФУРНИТУРЫ</a>
                              <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="#soglashenie-o-vnesenii-izmeneniy-v-stoimost-dogovora">Шаблон договора + приложения</a> 
                                     <ul class="list-group sub_menu2">
