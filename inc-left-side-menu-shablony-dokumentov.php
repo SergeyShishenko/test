@@ -102,6 +102,25 @@
                                 </li>                    
                             </ul>-->
                         </li>
+                        <li class="menu">
+                            <a href="shablony-dokumentov-specifikacii.php" class="list-group-item  '.$item_specifikacii_Class.'">Спецификации</a>
+                              <ul class="list-group sub_menu">
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>
+                                    <ul class="list-group sub_menu2">
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#5000303-01-001-specifikaciya-konstruktorskaya">5000303-01-001 спецификация конструкторская</a>
+                                        </li>                                                                                
+                                    </ul>
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-tehnologichesaya">СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ</a>
+                                    <ul class="list-group sub_menu2">
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#5000303-02-001-specifikaciya">5000303-02-001 спецификация</a>
+                                        </li>
+                                        <li><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#5000303-02-002-specifikaciya-dlya-korrekcii">5000303-02-002 спецификация для коррекции </a>
+                                        </li>                                                                               
+                                    </ul>
+                                </li>                    
+                            </ul>
+                        </li>
                         <!-- menu -->
                         <!--  <li class="menu">
                             <a href="shablony-dokumentov-pokupnye-izdeliya.php" class="list-group-item  '.$item_vpi_Class.'"> ВПИ ПОКУПНЫЕ ИЗДЕЛИЯ</a>

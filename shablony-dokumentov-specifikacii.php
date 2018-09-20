@@ -17,8 +17,7 @@ include 'inc-header-menu.php';
 include 'inc-left-side-menu-shablony-dokumentov.php';
 ?>  
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
-                    
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">                    
                     <article >
                       <section >
                         <div class="page-header">
@@ -58,7 +57,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <div class="overlay"></div>
                         </div>
-                        <h2 id="5000303-02-002-specifikaciya-dlya-korrekcii">&nbsp;</h2>
+                        <!-- <h2 id="5000303-02-002-specifikaciya-dlya-korrekcii">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000303-02-002 спецификация для коррекции</h4>
                                                        
                             <p> <a>
@@ -70,7 +69,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                    ></a>
                              </p>
                              <div class="overlay"></div>
-                        </div>
+                        </div> -->
                       </section>
                     </article>
                 </div> <!-- main  -->
@@ -88,8 +87,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                 <ul class="nav">
                                     <li><a href="#5000303-02-001-specifikaciya">&#9999;&nbsp;5000303-02-001 спецификация</a>
                                     </li>
-                                    <li><a href="#5000303-02-002-specifikaciya-dlya-korrekcii">&#9999;&nbsp;5000303-02-002 спецификация для коррекции</a>
-                                    </li>                                   
+                                    <!-- <li><a href="#5000303-02-002-specifikaciya-dlya-korrekcii">&#9999;&nbsp;5000303-02-002 спецификация для коррекции</a>
+                                    </li>                                    -->
                                 </ul>
                             </li>
                                                    
