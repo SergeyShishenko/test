@@ -868,8 +868,9 @@ a.navbar-brand{text-align: center;}
   .container {   
     width: 1498px !important; /*1824px */  
   }
-  .dblstr-xl {padding: 3px 15px !important;}
   .dblstr-lg {padding: 10px 15px !important;}
+  .dblstr-xl {padding: 3px 15px !important;}
+  
   
   .col-md-8-non{
     width: 66.66666% !important;

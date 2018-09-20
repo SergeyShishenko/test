@@ -34,7 +34,7 @@
                             <a href="izdeliya-bloki-dvernye.php">ИЗДЕЛИЯ</a>
                         </li>
                         <li '.$shablonyClass.'>
-                            <a href="shablony-dokumentov-titulniki.php">ШАБЛОНЫ ДОКУМЕНТОВ</a>
+                            <a href="shablony-dokumentov-titulnyy-kd.php">ШАБЛОНЫ ДОКУМЕНТОВ</a>
                         </li>
                         <li '.$yrishablonyClass.'>                            
                         <a href="yuridicheskie-dokumenty.php">ЮРИДИЧЕСКИЕ ДОКУМЕНТЫ</a >                           
