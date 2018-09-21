@@ -47,7 +47,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>Состав альбома образцов</h4>
                                                    
                             <p> <a>
-                                <img src="./dist/images/shablon-alboma-obrazcov2_2.png" class="center-block img-rounded img-thumbnail"
+                                <img src="./dist/images/shablon-alboma-obrazcov_2-v2.png" class="center-block img-rounded img-thumbnail"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Состав альбома образцов"                               
