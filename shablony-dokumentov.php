@@ -1,5 +1,19 @@
 <?php
 include 'inc-session-start.php';
+
+
+if(isset($_GET['obj_id'])) {
+    echo 'id объекта '.$_GET['obj_id'];
+    //подключаем конфигурационный файл
+    // define('__ROOT__', dirname(dirname(__FILE__))); 
+    // require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
+    require_once('DATA/TABLES/configDB.php');
+  
+	die("<br>Остановка скрипта"); 
+
+}
+
+
 $detaliClass = '';
 $izdeliyaClass = '';
 $shablonyClass = 'class="active"';
@@ -29,16 +43,16 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div>
                         <h2 id="shablon-alboma-obrazcov_1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Лист титульный</h4>
-                        <div class="overlay"></div>
                                                        
                             <p> <a>
-                                <img src="./dist/images/shablon-alboma-obrazcov2_1.png" class="center-block img-rounded img-thumbnail"
+                                <!-- <img src="./dist/images/shablon-alboma-obrazcov2_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov2_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
-                                 data-target="#myModal"                                
+                                 data-target="#myModal"
+                                 data-content="Лист титульный"                               
                                  alt="Лист титульный"
-                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf"
                                 
-                                ></a>
+                                   ></a>
                              </p>
                              <!-- <div class="overlay"></div> -->
                         </div>
@@ -48,9 +62,12 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>Состав альбома образцов</h4>
                                                    
                             <p> <a>
-                                <img src="./dist/images/shablon-alboma-obrazcov_2-v2.png" class="center-block img-rounded img-thumbnail"
+                                <!-- <img src="./dist/images/shablon-alboma-obrazcov_2-v2.png" class="center-block img-rounded img-thumbnail" -->
+                            <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_2-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                
                                  data-toggle="modal"
-                                 data-target="#myModal"                                                            
+                                 data-target="#myModal"
+                                 data-content="Состав альбома образцов"                               
                                  alt="Состав альбома образцов"
                                 
                                    ></a>
@@ -62,9 +79,11 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>Размещение изделий на плане</h4>
                                                    
                             <p> <a>
-                                <img src="./dist/images/shablon-alboma-obrazcov2_3.png" class="center-block img-rounded img-thumbnail"
+                                <!-- <img src="./dist/images/shablon-alboma-obrazcov2_3.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov2_3.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
-                                 data-target="#myModal"                                                             
+                                 data-target="#myModal"
+                                 data-content="Размещение изделий на плане"                               
                                  alt="Размещение изделий на плане"
                               
                                    ></a>
@@ -76,14 +95,16 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>Образец №</h4>
                                                    
                             <p> <a>
-                                <img src="./dist/images/shablon-alboma-obrazcov2_4.png" class="center-block img-rounded img-thumbnail"
+                                <!-- <img src="./dist/images/shablon-alboma-obrazcov2_4.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov2_4.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
-                                 data-target="#myModal"                                                           
+                                 data-target="#myModal"
+                                 data-content="Образец №"                               
                                  alt="Образец №"
                                  data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf"
                                    ></a>
                              </p>
-                             <!-- <div class="overlay"></div> -->
+                             <div class="overlay"></div>
                         </div>
                       </section>
                     </article>
