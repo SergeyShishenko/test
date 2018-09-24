@@ -221,14 +221,13 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                             </li> 
 
                             <li><a href="#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
-                            </li>
-                            <li><a href="#polotna">Дверные блоки с распашными полотнами </a>
-                                <ul class="nav">
+                            <ul class="nav">
                                     <li><a href="#list-titulnyy-vpi">&#9999;&nbsp;5000304-01-000 лист титульный ВПИ</a>
                                     </li>
                                                                       
                                 </ul>
                             </li>
+                            
                             <li>
                                 <a href="#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ </a>
                                 <ul class="nav">
