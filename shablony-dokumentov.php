@@ -48,8 +48,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                 <!-- <img src="./dist/images/shablon-alboma-obrazcov2_1.png" class="center-block img-rounded img-thumbnail" -->
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov2_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
-                                 data-target="#myModal"
-                                 data-content="Лист титульный"                               
+                                 data-target="#myModal"                                                              
                                  alt="Лист титульный"
                                 
                                    ></a>
@@ -66,8 +65,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                             <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_2-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                 
                                  data-toggle="modal"
-                                 data-target="#myModal"
-                                 data-content="Состав альбома образцов"                               
+                                 data-target="#myModal"                                                             
                                  alt="Состав альбома образцов"
                                 
                                    ></a>
@@ -82,8 +80,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                 <!-- <img src="./dist/images/shablon-alboma-obrazcov2_3.png" class="center-block img-rounded img-thumbnail" -->
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov2_3.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
-                                 data-target="#myModal"
-                                 data-content="Размещение изделий на плане"                               
+                                 data-target="#myModal"                                                              
                                  alt="Размещение изделий на плане"
                               
                                    ></a>
@@ -98,8 +95,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                 <!-- <img src="./dist/images/shablon-alboma-obrazcov2_4.png" class="center-block img-rounded img-thumbnail" -->
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov2_4.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
-                                 data-target="#myModal"
-                                 data-content="Образец №"                               
+                                 data-target="#myModal"                                                               
                                  alt="Образец №"
                                  data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf"
                                    ></a>
