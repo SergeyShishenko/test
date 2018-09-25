@@ -25,7 +25,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                     <article >
                       <section >
                         <div class="page-header">
-                          <h1 itemprop="name" id="shablon-alboma-obrazcov">ШАБЛОН АЛЬБОМА ОБРАЗЦОВ</h1>
+                        <h2  id="shablon-alboma-obrazcov">&nbsp;</h2> 
+                          <h1 itemprop="name">ШАБЛОН АЛЬБОМА ОБРАЗЦОВ</h1>
                         </div>
                         <h2 id="shablon-alboma-obrazcov_1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Лист титульный</h4>
@@ -98,7 +99,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                     <article >
                       <section >
                         <div class="page-header">
-                          <h1 itemprop="name" id="list-dvizheniya-obrazcov">Лист движения образцов</h1>
+                        <h2  id="list-dvizheniya-obrazcov">&nbsp;</h2> 
+                          <h1 itemprop="name">ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ</h1>
                         </div>
                         <h2 id="dok--385">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Док. № 385</h4>
@@ -108,8 +110,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/list-dvizheniya-obrazcov_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="Лист движения образцов"                               
-                                 alt="Лист движения образцов"
+                                 data-content="ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ"                               
+                                 alt="ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ"
                                  data-pdf="./dist/files/pdf/list-dvizheniya-obrazcov.pdf"
                                    ></a>
                              </p>
@@ -122,7 +124,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                     <article >
                       <section >
                         <div class="page-header">
-                          <h1 itemprop="name" id="obrazec-zapolneniya-albomo-obrazcov">Образец заполнения альбомо образцов</h1>
+                        <h2  id="obrazec-zapolneniya-albomo-obrazcov">&nbsp;</h2> 
+                          <h1 itemprop="name">ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ</h1>
                         </div>
                         <!-- <h2 id="dok--385">&nbsp;</h2> -->
                         <div class="bs-callout bs-callout-warning cont" >
@@ -133,7 +136,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
-                                 alt="Образец заполнения альбомо образцов"
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
                                  data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
@@ -168,13 +171,13 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                     </li>                                                                      
                                 </ul>
                             </li> 
-                            <li><a href="#list-dvizheniya-obrazcov">Лист движения образцов</a>
+                            <li><a href="#list-dvizheniya-obrazcov">ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ</a>
                             <ul class="nav">
                                     <li><a href="#dok--385">&#9999;&nbsp;Док. № 385</a>
                                     </li>                              
                                 </ul>
                             </li> 
-                            <li><a href="#obrazec-zapolneniya-albomo-obrazcov">Образец заполнения альбомо образцов</a>
+                            <li><a href="#obrazec-zapolneniya-albomo-obrazcov">ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ</a>
                             
                             </li>                           
                           

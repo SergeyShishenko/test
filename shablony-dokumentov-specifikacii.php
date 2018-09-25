@@ -72,6 +72,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div> -->
                       </section>
                     </article>
+
+                    
                 </div> <!-- main  -->
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">

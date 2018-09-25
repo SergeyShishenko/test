@@ -25,7 +25,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                     <article >
                       <section >
                         <div class="page-header">
-                          <h1 itemprop="name" id="shablon-alboma-dp">Альбом дизайн-проекта </h1>
+                        <h2  id="shablon-alboma-dp">&nbsp;</h2>                         
+                          <h1 itemprop="name">АЛЬБОМ ДИЗАЙН-ПРОЕКТА </h1>
                         </div>
                         <h2 id="list-titulnyy-dp_1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Лист титульный ДП</h4>
@@ -122,7 +123,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                     <article >
                       <section >
                         <div class="page-header">
-                          <h1 itemprop="name" id="shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ</h1>
+                        <h2  id="shablony-dokumentov-vedomost-furnitury">&nbsp;</h2> 
+                          <h1 itemprop="name">ВЕДОМОСТЬ ФУРНИТУРЫ</h1>
                         </div>
                         <h2 id="vedomost-furnitury">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000304-01-001 ведомость фурнитуры</h4>
@@ -145,7 +147,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                     <article >
                       <section >
                         <div class="page-header">
-                          <h1 itemprop="name" id="shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ И ЗЕРКАЛ</h1>
+                        <h2  id="shablony-dokumentov-vedomost-stekol-i-zerkal">&nbsp;</h2> 
+                          <h1 itemprop="name">ВЕДОМОСТЬ СТЕКОЛ И ЗЕРКАЛ</h1>
                         </div>
                         <h2 id="vedomost-stekol-i-zerkal">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000304-02-001 ведомость стекол и зеркал</h4>
@@ -167,7 +170,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                     <article >
                       <section >
                         <div class="page-header">
-                          <h1 itemprop="name" id="shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ</h1>
+                        <h2  id="shablony-dokumentov-vedomost-materialy-prochie">&nbsp;</h2> 
+                          <h1 itemprop="name">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ</h1>
                         </div>
                         <h2 id="vedomost-materialy-prochie">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000304-03-001 ведомость материалы прочие</h4>
@@ -196,8 +200,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                 <div class="col-md-2" id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
-                            <li><a href="#shablon-alboma-dp">Альбом дизайн-проекта</a>
-                            <ul class="nav">
+                            <li><a href="#shablon-alboma-dp">АЛЬБОМ ДИЗАЙН-ПРОЕКТА</a>
+                                <ul class="nav">
                                     <li><a href="#list-titulnyy-dp_1">&#9999;&nbsp;Лист титульный ДП</a>
                                     </li>
                                     <li><a href="#shablon-alboma-dp_2">&#9999;&nbsp;Второй лист ДП</a>
@@ -210,31 +214,21 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                     </li>
                                                                       
                                 </ul>
-                            </li> 
-
-                            <!-- <li><a href="#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
-                            <ul class="nav">
-                                    <li><a href="#list-titulnyy-vpi">&#9999;&nbsp;5000304-01-000 лист титульный ВПИ</a>
-                                    </li>
-                                                                      
-                                </ul>
-                            </li> -->
-                            
-                            <li>
-                                <a href="#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ </a>
+                            </li>
+                            <li><a href="#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ </a>
                                 <ul class="nav">
                                     <li><a href="#vedomost-furnitury">&#9999;&nbsp;5000304-01-001 ведомость фурнитуры</a>
                                     </li>                                   
                                 </ul>
                             </li>
                             <li><a href="#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ</a>
-                            <ul class="nav">
+                                <ul class="nav">
                                     <li><a href="#vedomost-stekol-i-zerkal">&#9999;&nbsp;5000304-02-001 ведомость стекол и зеркал</a>
                                     </li>                                   
                                 </ul>
                             </li>
                             <li><a href="#shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ</a>
-                            <ul class="nav">
+                                <ul class="nav">
                                     <li><a href="#vedomost-materialy-prochie">&#9999;&nbsp;5000304-03-001 ведомость материалы прочие</a>
                                     </li>                                   
                                 </ul>
