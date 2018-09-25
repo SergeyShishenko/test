@@ -25,7 +25,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                     <article >
                       <section >
                         <div class="page-header">
-                          <h1 itemprop="name" id="shablon-albom-dp">Альбом ДП </h1>
+                          <h1 itemprop="name" id="shablon-albom-dp">Альбом дизайн-проекта </h1>
                         </div>
                         <h2 id="list-titulnyy-dp_1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Лист титульный ДП</h4>
@@ -204,7 +204,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                 <div class="col-md-2" id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
-                            <li><a href="#shablon-albom-dp">Альбом ДП </a>
+                            <li><a href="#shablon-albom-dp">Альбом дизайн-проекта</a>
                             <ul class="nav">
                                     <li><a href="#list-titulnyy-dp_1">&#9999;&nbsp;Лист титульный ДП</a>
                                     </li>

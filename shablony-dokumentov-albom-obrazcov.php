@@ -32,11 +32,14 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="overlay"></div>
                                                        
                             <p> <a>
-                                <img src="./dist/images/shablon-alboma-obrazcov2_1.png" class="center-block img-rounded img-thumbnail"
+                                <!-- <img src="./dist/images/shablon-alboma-obrazcov2_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                
                                  alt="Лист титульный"
                                  data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
                                 
                                 ></a>
                              </p>
@@ -48,7 +51,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>Состав альбома образцов</h4>
                                                    
                             <p> <a>
-                                <img src="./dist/images/shablon-alboma-obrazcov_2-v2.png" class="center-block img-rounded img-thumbnail"
+                                <!-- <img src="./dist/images/shablon-alboma-obrazcov_2-v2.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                            
                                  alt="Состав альбома образцов"
@@ -62,7 +66,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>Размещение изделий на плане</h4>
                                                    
                             <p> <a>
-                                <img src="./dist/images/shablon-alboma-obrazcov2_3.png" class="center-block img-rounded img-thumbnail"
+                                <!-- <img src="./dist/images/shablon-alboma-obrazcov2_3.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_3-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                             
                                  alt="Размещение изделий на плане"
@@ -76,7 +81,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>Образец №</h4>
                                                    
                             <p> <a>
-                                <img src="./dist/images/shablon-alboma-obrazcov2_4.png" class="center-block img-rounded img-thumbnail"
+                                <!-- <img src="./dist/images/shablon-alboma-obrazcov2_4.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_4-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                           
                                  alt="Образец №"
@@ -87,7 +93,31 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div>
                       </section>
                     </article>
-
+                    
+                    
+                    <article >
+                      <section >
+                        <div class="page-header">
+                          <h1 itemprop="name" id="list-dvizheniya-obrazcov">Лист движения образцов</h1>
+                        </div>
+                        <h2 id="dok--385">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Док. № 385</h4>
+                               <div class="overlay"></div>                        
+                            <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                 data-content="Лист движения образцов"                               
+                                 alt="Лист движения образцов"
+                                 data-pdf="./dist/files/pdf/list-dvizheniya-obrazcov.pdf"
+                                   ></a>
+                             </p>
+                             
+                        </div>  
+                       
+                      </section>
+                    </article>
                    
 
                    
@@ -109,8 +139,13 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                     <li><a href="#shablon-alboma-obrazcov_3">&#9999;&nbsp;Размещение изделий на плане</a>
                                     </li>
                                     <li><a href="#shablon-alboma-obrazcov_4">&#9999;&nbsp;Образец №</a>
-                                    </li>
-                                                                      
+                                    </li>                                                                      
+                                </ul>
+                            </li> 
+                            <li><a href="#list-dvizheniya-obrazcov">Лист движения образцов</a>
+                            <ul class="nav">
+                                    <li><a href="#dok--385">&#9999;&nbsp;Док. № 385</a>
+                                    </li>                              
                                 </ul>
                             </li>                           
                           

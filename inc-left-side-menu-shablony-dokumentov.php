@@ -43,25 +43,8 @@
                                 </li>
                                                                  
                             </ul> -->
-                        </li>
-                        <!-- menu -->
-                        <li class="menu">
-                            <a href="shablony-dokumentov-list-dvizh-obrazcov.php" class="list-group-item  '.$item_list_dvizh_obrazcov_Class.'">Лист движ. образцов</a>
-                            <!--  <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#Stamp_Sofia">Stamp_Sofia</a>
-                                        </li>                                                                            
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОРСКОГО БЮРО</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-shtampy-chertezhey.php#5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd" >5000302-02-001 штамп основной надписи чертежей КД </a>
-                                        </li>                                                                                                                      
-                                    </ul>
-                                </li>                                                                
-                            </ul> -->
-                        </li>
+                        </li>                     
+                      
                         <!-- menu -->
                         <li class="menu">
                             <a href="shablony-dokumentov-titulnyy-dp.php" class="list-group-item  '.$item_list_titulnyy_dp_Class.'">ДИЗАЙН - ПРОЕКТ</a>
@@ -84,7 +67,7 @@
                         </li>
                         <!-- menu -->
                         <li class="menu">
-                            <a href="shablony-dokumentov-titulnyy-kd.php" class="list-group-item  '.$item_list_titulnyy_kd_Class.'">КОНСТРУКТОРСКАЯ ДОК-ЦИЯ</a>
+                            <a href="shablony-dokumentov-titulnyy-kd.php" class="list-group-item  '.$item_list_titulnyy_kd_Class.' dblstr-lg dblstr-xl  dblstr-md dblstr-sm">КОНСТРУКТОРСКАЯ ДОКУМЕНТАЦИЯ</a>
                             <!--   <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>
                                     <ul class="list-group sub_menu2">

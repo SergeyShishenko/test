@@ -10,7 +10,7 @@
 // $item_pisma_klientu_Class = '';
 // $item_dizaynproekt_Class= '';
 
-// dblstr-sm dblstr-md dblstr-lg dblstr-xl 
+// dblstr-lg dblstr-xl dblstr-md dblstr-sm
 ?>
 <?php echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
@@ -42,7 +42,7 @@
                                         </li>
                                         <li ><a class="list-group-item sub " href="#pismo--zapros-o-predostavlenii-informacii-dlya-sozdaniya-dp">Письмо – запрос о уточнении согласования переданного ДП</a>                                    
                                         </li>
-                                        <li ><a class="list-group-item sub  dblstr-lg dblstr-xl  " href="#pismo--zapros-o-neobhodimosti-vneseniya-izmeneniy-v-soglasovannyy-dp-v-svyazi-s-utochneniyami-ot-predstavitelya-zakazchika">Письмо – запрос о необходимости внесения изменений в согласованный ДП, в связи с уточнениями от представителя Заказчика</a>                                
+                                        <li ><a class="list-group-item sub  dblstr-lg dblstr-xl dblstr-md dblstr-sm " href="#pismo--zapros-o-neobhodimosti-vneseniya-izmeneniy-v-soglasovannyy-dp-v-svyazi-s-utochneniyami-ot-predstavitelya-zakazchika">Письмо – запрос о необходимости внесения изменений в согласованный ДП, в связи с уточнениями от представителя Заказчика</a>                                
                                         </li>
                                         <li ><a class="list-group-item sub" href="#dp-protokol-vstrechi-soglashenie-o-dodelkah">Протокол встречи (соглашение о доделках)</a>                                    
                                         </li>                                                                         
@@ -56,7 +56,7 @@
                                         </li> 
                                         <li ><a class="list-group-item sub dblstr-lg" href="#pismo--zapros-o-predostavlenii-informacii-dlya-sozdaniya-obrazca">Письмо – запрос о предоставлении информации для создания Образца</a>                                
                                         </li>
-                                        <li ><a class="list-group-item sub dblstr-lg dblstr-xl  " href="#pismo--zapros-o-neobhodimosti-vneseniya-izmeneniy-v-soglasovannyy-obrazec-v-svyazi-s-utochneniyami-ot-predstavitelya-zakazchika">Письмо – запрос о необходимости внесения изменений в согласованный Образец, в связи с уточнениями от представителя Заказчика</a>                                    
+                                        <li ><a class="list-group-item sub dblstr-lg dblstr-xl  dblstr-md dblstr-sm " href="#pismo--zapros-o-neobhodimosti-vneseniya-izmeneniy-v-soglasovannyy-obrazec-v-svyazi-s-utochneniyami-ot-predstavitelya-zakazchika">Письмо – запрос о необходимости внесения изменений в согласованный Образец, в связи с уточнениями от представителя Заказчика</a>                                    
                                         </li>
                                         <li ><a class="list-group-item sub  " href="#obr-protokol-vstrechi-soglashenie-o-dodelkah">Протокол встречи (соглашение о доделках)</a>                                
                                         </li>                                                                                                            
@@ -86,7 +86,7 @@
                                         </li>  
                                         <li ><a class="list-group-item sub  " href="#pismo---priglashenie-na-priemku-rabot-po-montazhu">Письмо - приглашение на приемку работ по монтажу</a>                                
                                         </li>  
-                                        <li ><a class="list-group-item sub  dblstr-lg dblstr-xl   " href="#pismo---uvedomlenie-o-nevozmozhnosti-prodolzheniya-rabot-po-montazhu">Письмо - уведомление о невозможности продолжения работ по монтажу  </a>                                
+                                        <li ><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="#pismo---uvedomlenie-o-nevozmozhnosti-prodolzheniya-rabot-po-montazhu">Письмо - уведомление о невозможности продолжения работ по монтажу  </a>                                
                                         </li>
                                         <li ><a class="list-group-item sub  " href="#mont-protokol-vstrechi-soglashenie-o-dodelkah">Протокол встречи (соглашение о доделках)</a>                                
                                         </li>                                                                                                               
@@ -95,7 +95,7 @@
                             </ul>
                         </li>
                         <li class="menu">
-                            <a href="dogovor-na-postavku-furnitury.php" class="list-group-item dblstr-lg  dblstr-xl '.$item_dogovor_na_postavku_furnitury_Class.'">ДОГОВОР НА ПОСТАВКУ ФУРНИТУРЫ</a>
+                            <a href="dogovor-na-postavku-furnitury.php" class="list-group-item dblstr-lg  dblstr-xl  dblstr-md dblstr-sm '.$item_dogovor_na_postavku_furnitury_Class.'">ДОГОВОР НА ПОСТАВКУ ФУРНИТУРЫ</a>
                              <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="#soglashenie-o-vnesenii-izmeneniy-v-stoimost-dogovora">Шаблон договора + приложения</a> 
                                     <ul class="list-group sub_menu2">
