@@ -105,12 +105,38 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                <div class="overlay"></div>                        
                             <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/list-dvizheniya-obrazcov_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Лист движения образцов"                               
                                  alt="Лист движения образцов"
                                  data-pdf="./dist/files/pdf/list-dvizheniya-obrazcov.pdf"
+                                   ></a>
+                             </p>
+                             
+                        </div>  
+                       
+                      </section>
+                    </article>
+
+                    <article >
+                      <section >
+                        <div class="page-header">
+                          <h1 itemprop="name" id="obrazec-zapolneniya-albomo-obrazcov">Образец заполнения альбомо образцов</h1>
+                        </div>
+                        <!-- <h2 id="dok--385">&nbsp;</h2> -->
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <!-- <h4>Док. № 385</h4> -->
+                               <div class="overlay"></div>                        
+                            <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="Образец заполнения альбомо образцов"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
                                    ></a>
                              </p>
                              
@@ -147,6 +173,9 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                     <li><a href="#dok--385">&#9999;&nbsp;Док. № 385</a>
                                     </li>                              
                                 </ul>
+                            </li> 
+                            <li><a href="#obrazec-zapolneniya-albomo-obrazcov">Образец заполнения альбомо образцов</a>
+                            
                             </li>                           
                           
                                                    
