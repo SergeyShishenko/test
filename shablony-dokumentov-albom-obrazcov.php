@@ -142,6 +142,116 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-spng="noPNG" 
                                    ></a>
                              </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_3-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_4-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_5-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_6-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_7-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_8-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_9-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_10-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_10-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
                              
                         </div>  
                        
