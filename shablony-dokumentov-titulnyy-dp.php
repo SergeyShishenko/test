@@ -110,15 +110,32 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <!-- <div class="overlay"></div> -->
                         </div>
-
-                      
-                      
-                      
                        
                       </section>
                     </article>
 
-                    
+                    <article >
+                        <section >
+                          <div class="page-header">
+                        <h2  id="shablony-dokumentov-list-titulnyy-vpi">&nbsp;</h2> 
+                            <h1 itemprop="name">ЛИСТ ТИТУЛЬНЫЙ ВПИ</h1>
+                          </div>
+                          <h2 id="list-titulnyy-vpi">&nbsp;</h2>
+                          <div class="bs-callout bs-callout-warning cont" ><h4>5000304-01-000 лист титульный ВПИ</h4>
+                                                        
+                              <p> <a>
+                                  <!-- <img src="./dist/images/list-titulnyy-vpi_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
+                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_5-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                  data-toggle="modal"
+                                  data-target="#myModal"                                                                
+                                  alt="5000304_01_000 лист титульный ВПИ"
+                                
+                                    ></a>
+                              </p>
+                              <!-- <div class="overlay"></div> -->
+                          </div>
+                        </section>
+                    </article>
 
                     <article >
                       <section >
@@ -211,6 +228,13 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                     <li><a href="#shablon-alboma-dp_4">&#9999;&nbsp;Ситуационный план</a>
                                     </li>
                                     <li><a href="#shablon-alboma-dp_5">&#9999;&nbsp;Обмерный план</a>
+                                    </li>
+                                                                      
+                                </ul>
+                            </li>
+                            <li><a href="#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
+                                <ul class="nav">
+                                    <li><a href="#list-titulnyy-vpi">&#9999;&nbsp;5000304-01-000 лист титульный ВПИ</a>
                                     </li>
                                                                       
                                 </ul>

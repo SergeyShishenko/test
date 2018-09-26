@@ -60,6 +60,8 @@
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-titulnyy-dp.php#shablon-alboma-dp">АЛЬБОМ ДИЗАЙН-ПРОЕКТА</a>                             
                                 </li>
+                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>                             
+                                </li>
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ </a>                             
                                 </li>
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ</a>                             
