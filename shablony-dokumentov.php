@@ -31,25 +31,27 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
+
                     <article >
                       <section >
-                        <div class="page-header">
-                        <h2  id="shablon-alboma-obrazcov">&nbsp;</h2> 
-                          <h1 itemprop="name">ШАБЛОН АЛЬБОМА ОБРАЗЦОВ</h1>
+                        <div class="page-header">                        
+                        <h2  id="<?php echo $html_id_grupp ;?>">&nbsp;</h2> 
+                          <h1 itemprop="name"><?php echo $name_grupp ;?></h1>
                         </div>
-                        <h2 id="shablon-alboma-obrazcov_1">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Лист титульный</h4>
+
+                        <h2 id="<?php echo $html_id_obj ;?>">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" ><h4><?php echo $name_obj ;?></h4>
                         <div class="overlay"></div>
                                                        
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-obrazcov2_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="<?php echo $path_img_obj.$fname_img_obj ;?>" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                
-                                 alt="Лист титульный"
-                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf"
-                                 data-prnt="noPrint"
-                                 data-spng="noPNG" 
+                                 alt="<?php echo $img_alt_obj ;?>"
+                                 data-pdf="<?php echo $pdf_obj ;?>"
+                                 data-prnt="<?php echo $data_prnt ;?>"
+                                 data-spng="<?php echo $data_spng ;?>" 
                                 
                                 ></a>
                              </p>
@@ -266,11 +268,6 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                        
                       </section>
                     </article>
-                   
-
-                   
-                   
-                   
                    
                 </div> <!-- main  -->
 
