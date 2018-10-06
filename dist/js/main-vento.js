@@ -1,9 +1,9 @@
 jQuery(function ($) {
     'use strict';
 
-    var $floatBreakpoint = $('<div class="grid-float-breakpoint" style="position:absolute;top:-9999px;width:1px;height:1px;"></div>');
-    var $xsVisible = $('<div class="visible-xs" style="position:absolute;top:-9999px;width:1px;height:1px;"></div>');
-    var $smVisible = $('<div class="visible-sm" style="position:absolute;top:-9999px;width:1px;height:1px;"></div>');
+    // var $floatBreakpoint = $('<div class="grid-float-breakpoint" style="position:absolute;top:-9999px;width:1px;height:1px;"></div>');
+    // var $xsVisible = $('<div class="visible-xs" style="position:absolute;top:-9999px;width:1px;height:1px;"></div>');
+    // var $smVisible = $('<div class="visible-sm" style="position:absolute;top:-9999px;width:1px;height:1px;"></div>');
 
     // function openActiveTab(url) {
     //     if (url.match('#')) {
@@ -20,7 +20,7 @@ jQuery(function ($) {
     //     objects.height(max);
     // }
 
-    $('body').append($floatBreakpoint).append($xsVisible).append($smVisible);
+    // $('body').append($floatBreakpoint).append($xsVisible).append($smVisible);
 
     // $('[data-sidebar-toggle]').on('click', function () {
     //     if ($floatBreakpoint.is(':visible')) {
@@ -32,26 +32,26 @@ jQuery(function ($) {
 
     $('.sidebar .nav').navgoco({
         caretHtml: false,
-        accordion: true
+        accordion: true,
         
-        // onClickBefore: function () {
-        //     if ($('body').hasClass('sidebar')) {
-        //         var $parent = $(this).parent();
-        //         // is first level menu
-        //         if ($parent.parent().hasClass('nav')) {
+        onClickBefore: function () {
+            if ($('body').hasClass('sidebar')) {
+                var $parent = $(this).parent();
+                // is first level menu
+                if ($parent.parent().hasClass('nav')) {
                     
-        //             $parent.siblings().removeClass('nav-dropdown-open');
+                    $parent.siblings().removeClass('nav-dropdown-open');
 
-        //             if ($parent.hasClass('nav-dropdown')) {
+                    if ($parent.hasClass('nav-dropdown')) {
                         
-        //                 $parent.toggleClass('nav-dropdown-open');
-        //             }
+                        $parent.toggleClass('nav-dropdown-open');
+                    }
 
-        //             return false;
-        //         }
-        //     }
-        //     return true;
-        // }
+                    return false;
+                }
+            }
+            return true;
+        }
     });
 
     // openActiveTab(document.location.toString());

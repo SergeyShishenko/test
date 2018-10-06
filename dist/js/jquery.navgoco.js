@@ -101,6 +101,7 @@
 
 						if (!allowed.hasOwnProperty(idx)) {
 							self._toggle(sub, false);
+							
 						}
 					});
 					self._save();
