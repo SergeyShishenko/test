@@ -3401,25 +3401,25 @@ include 'inc-version-css-js.php';
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="flo-tablica-dlin-shirin-tolshchin-dlya-specifikacii">
-                                                                <p  data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ<span><br>~</span></p>
+                                                                <p  data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ ДП<span><br>~</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
-                                                                <p data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ<span><br>~</span></p>
+                                                                <p data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ ДП<span><br>~</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
-                                                                <p data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ<span><br>~</span></p>
+                                                                <p data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ ДП<span><br>~</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
-                                                                <p data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ<span><br>~</span></p>
+                                                                <p data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ ДП<span><br>~</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                       
@@ -3447,25 +3447,25 @@ include 'inc-version-css-js.php';
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
-                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ<span><br>~</span></p>
+                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ КД<span><br>~</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
-                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ<span><br>~</span></p>
+                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ КД<span><br>~</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
-                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ<span><br>~</span></p>
+                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ КД<span><br>~</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
-                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ<span><br>~</span></p>
+                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ КД<span><br>~</span></p>
                                                             </TD>                                                             
                                                         </TR>
                                                         <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
