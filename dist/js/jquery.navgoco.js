@@ -61,7 +61,8 @@
             if(self.options.caretHtml !== false){
                 var caret = $('<span></span>').prepend(self.options.caretHtml);
                 self._trigger(caret, false);
-			    self.$el.find("li:has(ul) > a").prepend(caret);
+				self.$el.find("li:has(ul) > a").prepend(caret);
+				
             }
 
             var links = self.$el.find("li > a");

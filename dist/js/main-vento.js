@@ -5,52 +5,56 @@ jQuery(function ($) {
     var $xsVisible = $('<div class="visible-xs" style="position:absolute;top:-9999px;width:1px;height:1px;"></div>');
     var $smVisible = $('<div class="visible-sm" style="position:absolute;top:-9999px;width:1px;height:1px;"></div>');
 
-    function openActiveTab(url) {
-        if (url.match('#')) {
-            $('.nav-tabs a[href=#' + url.split('#')[1] + ']').tab('show');
-        }
-    }
+    // function openActiveTab(url) {
+    //     if (url.match('#')) {
+    //         $('.nav-tabs a[href=#' + url.split('#')[1] + ']').tab('show');
+    //     }
+    // }
 
-    function equalHeight(objects) {
-        var max = 0;
-        objects.each(function () {
-            var height = $(this).height();
-            max = height > max ? height : max;
-        });
-        objects.height(max);
-    }
+    // function equalHeight(objects) {
+    //     var max = 0;
+    //     objects.each(function () {
+    //         var height = $(this).height();
+    //         max = height > max ? height : max;
+    //     });
+    //     objects.height(max);
+    // }
 
     $('body').append($floatBreakpoint).append($xsVisible).append($smVisible);
-    $('[data-sidebar-toggle]').on('click', function () {
-        if ($floatBreakpoint.is(':visible')) {
-            $('body').toggleClass('sidebar-condensed');
-        } else {
-            $('body').toggleClass('sidebar-opened');
-        }
-    });
+
+    // $('[data-sidebar-toggle]').on('click', function () {
+    //     if ($floatBreakpoint.is(':visible')) {
+    //         $('body').toggleClass('sidebar-condensed');
+    //     } else {
+    //         $('body').toggleClass('sidebar-opened');
+    //     }
+    // });
 
     $('.sidebar .nav').navgoco({
         caretHtml: false,
-        accordion: true,
-        onClickBefore: function () {
-            if ($('body').hasClass('sidebar-condensed')) {
-                var $parent = $(this).parent();
-                // is first level menu
-                if ($parent.parent().hasClass('nav')) {
-                    $parent.siblings().removeClass('nav-dropdown-open');
+        accordion: true
+        
+        // onClickBefore: function () {
+        //     if ($('body').hasClass('sidebar')) {
+        //         var $parent = $(this).parent();
+        //         // is first level menu
+        //         if ($parent.parent().hasClass('nav')) {
+                    
+        //             $parent.siblings().removeClass('nav-dropdown-open');
 
-                    if ($parent.hasClass('nav-dropdown')) {
-                        $parent.toggleClass('nav-dropdown-open');
-                    }
+        //             if ($parent.hasClass('nav-dropdown')) {
+                        
+        //                 $parent.toggleClass('nav-dropdown-open');
+        //             }
 
-                    return false;
-                }
-            }
-            return true;
-        }
+        //             return false;
+        //         }
+        //     }
+        //     return true;
+        // }
     });
 
-    openActiveTab(document.location.toString());
+    // openActiveTab(document.location.toString());
 
     $('[data-rel="collapse"]').on('click', function () {
         var $this = $(this);
