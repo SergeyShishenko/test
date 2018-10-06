@@ -23,32 +23,13 @@
                              <ul class="list-group sub_menu">
                                 <li class="menu2">
                                     <a  class="list-group-item sub"  href="shablony-dokumentov-albom-obrazcov.php#shablon-alboma-obrazcov">ШАБЛОН АЛЬБОМА ОБРАЗЦОВ</a>
-                                    <!-- <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#list-titulnyy-dp">5000301_01_001 лист титульный ДП</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#pasport-izdeliy-zakaza-dp">паспорт изделий заказа ДП</a>                                        
-                                        </li>                                                                             
-                                    </ul> -->
+                                   
                                 </li>
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#list-dvizheniya-obrazcov">ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ</a>
-                                <!-- <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#list-titulnyy-kd">5000301_02_000 лист титульный КД</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#pasport-izdeliy-zakaza-kd">паспорт изделий заказа КД</a>
-                                        </li> 
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#reestr-razdelov-kd">реестр разделов КД</a>
-                                        </li>                                         
-                                    </ul> -->
+                             
                                 </li>
                                 <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#obrazec-zapolneniya-albomo-obrazcov">ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ</a>
-                                <!-- <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#list-titulnyy-kd">5000301_02_000 лист титульный КД</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#pasport-izdeliy-zakaza-kd">паспорт изделий заказа КД</a>
-                                        </li> 
-                                        <li><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#reestr-razdelov-kd">реестр разделов КД</a>
-                                        </li>                                         
-                                    </ul> -->
+                             
                                 </li>
                                                                  
                             </ul> 

@@ -30,8 +30,9 @@ include 'inc-left-side-menu-yuridicheskie-dokumenty.php';
                         </div>
                         <h2 >&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4></h4>
-                                                       
-                        <p> <a>
+                           <div class="overlay"></div> 
+
+                        <!-- <p> <a>
                                 <img src="./dist/files/yri/shablon-dogovor-osnovnoy-bez-nds-v-21062018_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
@@ -41,8 +42,28 @@ include 'inc-left-side-menu-yuridicheskie-dokumenty.php';
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
                                    ></a>
+                             </p> -->
+
+
+
+                        <?php for ($i = 1; $i <= 17; $i++) { ?>
+
+                            <p> <a>
+                                <img src="./dist/files/yri/shablon-dogovor-osnovnoy-bez-nds-v-21062018_<?php echo $i ?>-v1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-book"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                                
+                                 alt="ДОГОВОР ОСНОВНОЙ (БЕЗ НДС) V 21.06.2018"
+                                 data-ydoc="./dist/files/yri/shablon-dogovor-osnovnoy-bez-nds-v-21062018.doc"
+                                 data-ypdf="./dist/files/yri/shablon-dogovor-osnovnoy-bez-nds-v-21062018.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
                              </p>
-                             <div class="overlay"></div>
+
+                        <?php } ?>
+
+
+                             
                         </div>  
                        
                       </section>

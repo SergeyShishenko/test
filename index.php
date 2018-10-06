@@ -3363,283 +3363,128 @@ include 'inc-version-css-js.php';
                                         <TABLE >
                                             <TR>
                                                 <TD class="hover mapsite" id="footer23">
-                                                    <p data-href="shablony-dokumentov-titulniki.php"  data-img="./dist/images/no-foto.png" id="floating24">ЛИСТЫ ТИТУЛЬНЫЕ<span><br>~shablony-dokumentov-titulniki</span></p></TD>
+                                                    <p data-href="shablony-dokumentov-albom-obrazcov.php"  data-img="./dist/images/no-foto.png" id="floating24">Альбом образцов<span><br>~shablony-dokumentov-titulniki</span></p></TD>
                                                     <TD>
-                                                        <TABLE >
-                                                            <TR>
-                                                                <TD  class="hover mapsite" id="footer6106" >
-                                                                    <p data-href="shablony-dokumentov-titulniki.php#listy-titulnye-dizayn-proekta" data-img="./dist/images/no-foto.png" id="floating1078">ЛИСТЫ ТИТУЛЬНЫЕ ДИЗАЙН&ndash;ПРОЕКТА<span> <br>~-katalog-rezby</span></p>                                                                    
-                                                                    <p data-href="shablony-dokumentov-titulniki.php#listy-titulnye-dizayn-proekta" data-img="./dist/images/no-foto.png" class="KEYWORDS">ЛИСТЫ ТИТУЛЬНЫЕ ДП</p>  
-                                                                </TD>                                                                            
-                                                                <TD>
-                                                                    <TABLE >                                                                                          
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2"  id="flo-list-titulnyy-dp">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulniki.php#list-titulnyy-dp">5000301-01-001 лист титульный ДП<span> <br>~list-titulnyy-dp</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2"  id="flo-pasport-izdeliy-zakaza-dp">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulniki.php#pasport-izdeliy-zakaza-dp">паспорт изделий заказа ДП<span> <br>~pasport-izdeliy-zakaza-dp</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2"  >                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="">...<span> <br>~reestr-razdelov-dp</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                         
-                                                                    </TABLE>
-                                                                </TD>
-                                                            </TR>
-                                                            <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
-                                                            <TR>
-                                                                <TD data-tooltip="ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ" class="hover mapsite" id="footer1078">
-                                                                    <p data-img="./dist/images/no-foto.png" id="floating107" data-href="">ЛИСТЫ ТИТУЛЬНЫЕ АЛЬБОМА ОБРАЗЦОВ ЦВЕТА И ФОРМЫ<span> <br>~titulnyy-list-na-obrazec-komplekt</span></p>
-                                                                    <p data-img="./dist/images/no-foto.png" class="KEYWORDS" data-href="">ЛИСТЫ ТИТУЛЬНЫЕ ОБР</p> 
-                                                                </TD>                                                                            
-                                                                <TD>
-                                                                    <TABLE >                                                                                          
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2"  id="flo-list-titulnyy-kd">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="">Лист титульный ОБР<span> <br>~titulnyy-list-na-obrazec</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2"  id="flo-pasport-izdeliy-zakaza-kd">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="">паспорт изделий заказа ОБР<span> <br>~pasport-izdeliy-zakaza-obrazec</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2"  id="flo-reestr-razdelov-kd">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="">реестр разделов ОБР<span> <br>~reestr-razdelov-obrazec</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                         
-                                                                           
-                                                                    </TABLE>
-                                                                </TD>
-                                                            </TR> 
-                                                            <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
-                                                            <TR>
-                                                                <TD data-tooltip="ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ" class="hover mapsite" id="footer107">
-                                                                    <p data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd" data-img="./dist/images/no-foto.png" id="floating108">ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОР<wbr>СКОЙ ДОКУМЕНТА<wbr>ЦИИ<span> <br>~-katalog-lepniny</span></p>
-                                                                    <p data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd" data-img="./dist/images/no-foto.png" class="KEYWORDS">ЛИСТЫ ТИТУЛЬНЫЕ КД</p> 
-                                                                </TD>                                                                            
-                                                                <TD>
-                                                                    <TABLE >                                                                                          
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2"  id="flo-list-titulnyy-kd">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulniki.php#list-titulnyy-kd">5000301-02-000 лист титульный КД<span> <br>~list-titulnyy-kd</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2"  id="flo-pasport-izdeliy-zakaza-kd">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulniki.php#pasport-izdeliy-zakaza-kd">паспорт изделий заказа КД<span> <br>~pasport-izdeliy-zakaza-kd</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2"  id="flo-reestr-razdelov-kd">                                                                            
-                                                                                <p data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulniki.php#reestr-razdelov-kd">реестр разделов КД<span> <br>~reestr-razdelov-kd</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                         
-                                                                           
-                                                                    </TABLE>
-                                                                </TD>
-                                                            </TR>                                                       
-                                                                
-                                                        </TABLE>
-                                                    </TD>
+                                                    <TABLE >
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="footer116" >
+                                                                    <p  data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-albom-obrazcov.php#shablon-alboma-obrazcov">ШАБЛОН АЛЬБОМА ОБРАЗЦОВ<span><br>~</span></p> 
+                                                            </TD>
+                                                        </TR> 
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-tablica-dlin-shirin-tolshchin-dlya-specifikacii">
+                                                                <p  data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-albom-obrazcov.php#list-dvizheniya-obrazcov">ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ<span><br>~</span></p>
+                                                            </TD>                                                             
+                                                        </TR>
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
+                                                                <p data-href="shablony-dokumentov-albom-obrazcov.php#obrazec-zapolneniya-albomo-obrazcov">ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ<span><br>~</span></p>
+                                                            </TD>                                                             
+                                                        </TR>
+                                                      
+                                                    </TABLE>
+                                                </TD>
                                             </TR>                     
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->      
                                             <TR>
                                                 <TD data-tooltip="ШТАМПЫ ЧЕРТЕЖЕЙ" class="hover mapsite" id="footer24">
-                                                    <p data-href="shablony-dokumentov-shtampy-chertezhey.php"  data-img="./dist/images/no-foto.png" id="floating25">ШТАМПЫ ЧЕРТЕЖЕЙ<span><br>~shablony-dokumentov-shtampy-chertezhey</span></p></TD>
+                                                    <p data-href="shablony-dokumentov-titulnyy-dp.php"  data-img="./dist/images/no-foto.png" id="floating25">ДИЗАЙН - ПРОЕКТ<span><br>~shablony-dokumentov-shtampy-chertezhey</span></p></TD>
                                                     <TD>
-                                                        <TABLE >
-                                                            <TR>
-                                                                <TD data-tooltip="ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУРНОГО БЮРО" class="hover mapsite" id="footer108" >
-                                                                    <p data-img="./dist/images/no-foto.png" id="floating109" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro">ШТАМПЫ ЧЕРТЕЖЕЙ АРХИТЕКТУР<wbr>НОГО БЮРО<span> <br>~shtampy-chertezhey-arhitekturnogo-byuro</span></p>
-                                                                    <p data-img="./dist/images/no-foto.png" class="KEYWORDS" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtampy-chertezhey-arhitekturnogo-byuro">ШТАМПЫ ЧЕРТЕЖЕЙ АБ</p>
-                                                                </TD>                                                                            
-                                                                <TD>
-                                                                    <TABLE >                                                                                          
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-Stamp_Sofia">                                                                            
-                                                                                <p data-img="./dist/images/Stamp_Sofia_1.png" data-href="shablony-dokumentov-shtampy-chertezhey.php#Stamp_Sofia">Stamp_Sofia<span> <br>~Stamp_Sofia</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                      
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
-                                                                    </TABLE>
-                                                                </TD>
-                                                            </TR>
-                                                            <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
-                                                            <TR>
-                                                                <TD data-tooltip="ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОРСКОГО БЮРО" class="hover mapsite" id="footer109">
-                                                                    <p data-img="./dist/images/no-foto.png" id="floating110" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd">ШТАМПЫ ЧЕРТЕЖЕЙ КОНСТРУКТОР<wbr>СКОГО БЮРО<span> <br>~</span></p>
-                                                                    <p data-img="./dist/images/no-foto.png" class="KEYWORDS" data-href="shablony-dokumentov-shtampy-chertezhey.php#shtam-osnovnoy-nadpisi-chertezhey-kd">ШТАМПЫ ЧЕРТЕЖЕЙ КБ</p> 
-                                                                </TD>                                                                            
-                                                                <TD>
-                                                                    <TABLE >                                                                                          
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2" style="padding: 30px 0;" id="flo-5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd">                                                                            
-                                                                                <p  data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-shtampy-chertezhey.php#5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd">5000302-02-001 штамп основной надписи чертежей КД<span> <br>~5000302-02-001-shtam-osnovnoy-nadpisi-chertezhey-kd</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                       
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
-                                                                    </TABLE>
-                                                                </TD>
-                                                            </TR>                                                       
-                                                                
-                                                        </TABLE>
-                                                    </TD>
+                                                    <TABLE >
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="footer116" >
+                                                                    <p  data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulnyy-dp.php#shablon-alboma-dp">АЛЬБОМ ДИЗАЙН-ПРОЕКТА<span><br>~</span></p> 
+                                                            </TD>
+                                                        </TR> 
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-tablica-dlin-shirin-tolshchin-dlya-specifikacii">
+                                                                <p  data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ<span><br>~</span></p>
+                                                            </TD>                                                             
+                                                        </TR>
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
+                                                                <p data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ<span><br>~</span></p>
+                                                            </TD>                                                             
+                                                        </TR>
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
+                                                                <p data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ<span><br>~</span></p>
+                                                            </TD>                                                             
+                                                        </TR>
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
+                                                                <p data-href="shablony-dokumentov-titulnyy-dp.php#shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ<span><br>~</span></p>
+                                                            </TD>                                                             
+                                                        </TR>
+                                                      
+                                                    </TABLE>
+                                                </TD>
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
                                                 <TD data-tooltip="СПЕЦИФИКАЦИИ" class="hover mapsite" id="footer25">
-                                                    <p  data-img="./dist/images/no-foto.png" id="floating26" data-href="shablony-dokumentov-specifikacii.php">СПЕЦИФИКАЦИИ<span><br>~shablony-dokumentov-specifikacii</span></p>
-                                                </TD>
-                                                <TD>
-                                                        <TABLE >
-                                                            <TR>
-                                                                <TD data-tooltip="СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ" class="hover mapsite" id="footer110" >
-                                                                    <p data-img="./dist/images/5000303-01-001-specifikaciya-konstruktorskaya_1.png" id="floating111" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-konstruktorskaya">СПЕЦИФИКА<wbr>ЦИЯ КОНСТРУКТОР<wbr>СКАЯ<span> <br>~specifikaciya-konstruktorskaya</span></p>
-                                                                    <!-- <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ АБ</p> -->
-                                                                </TD>                                                                            
-                                                                <TD>
-                                                                    <TABLE >                                                                                          
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2" style="padding: 25px 0;" id="flo-specifikaciya-konstruktorskaya">                                                                            
-                                                                                <p data-img="./dist/images/5000303-01-001-specifikaciya-konstruktorskaya_1.png" data-href="shablony-dokumentov-specifikacii.php#5000303-01-001-specifikaciya-konstruktorskaya">5000303-01-001 спецификация конструкторская<span> <br>~5000303-01-001-specifikaciya-konstruktorskaya</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                       
-                                                                              
-                                                                    </TABLE>
-                                                                </TD>
-                                                            </TR>
-                                                            <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
-                                                            <TR>
-                                                                <TD data-tooltip="СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ" class="hover mapsite" id="footer111">
-                                                                    <p data-img="./dist/images/5000303-02-001-specifikaciya_1.png" id="floating112" data-href="shablony-dokumentov-specifikacii.php#specifikaciya-tehnologichesaya">СПЕЦИФИКА<wbr>ЦИЯ ТЕХНОЛОГИЧЕС<wbr>КАЯ<span> <br>~specifikaciya-tehnologichesaya</span></p>
-                                                                    <!-- <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">ШТАМПЫ ЧЕРТЕЖЕЙ КБ</p>  -->
-                                                                </TD>                                                                            
-                                                                <TD>
-                                                                    <TABLE >                                                                                          
-                                                                        <TR>
-                                                                            <TD class="mapsite" colspan="2" style="padding: 10px 0;"  id="flo-5000303-02-001-specifikaciya">                                                                            
-                                                                                <p data-img="./dist/images/5000303-02-001-specifikaciya_1.png" data-href="shablony-dokumentov-specifikacii.php#5000303-02-001-specifikaciya">5000303-02-001 спецификация<span> <br>~5000303-02-001-specifikaciya</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>  
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        <TR>
-                                                                            <TD class="mapsite" style="padding: 10px 0;" id="flo-5000303-02-002-specifikaciya-dlya-korrekcii">
-                                                                                <p data-img="./dist/images/5000303-02-002-specifikaciya-dlya-korrekcii_1.png" data-href="shablony-dokumentov-specifikacii.php#5000303-02-002-specifikaciya-dlya-korrekcii">5000303-02-002 спецификация для коррекции<span> <br>~5000303-02-002-specifikaciya-dlya-korrekcii</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
-                                                                       
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
-                                                                    </TABLE>
-                                                                </TD>
-                                                            </TR>                                                       
-                                                                
-                                                        </TABLE>
-                                                    </TD>
-                                            </TR> 
-                                            <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
-                                            <TR>
-                                                <TD data-tooltip="ПОКУПНЫЕ ИЗДЕЛИЯ" class="hover mapsite" id="footer26">
-                                                    <p data-href="shablony-dokumentov-pokupnye-izdeliya.php"  data-img="./dist/images/list-titulnyy-vpi_1.png" id="floating27">ПОКУПНЫЕ ИЗДЕЛИЯ<span><br>~-shablony-dokumentov-pokupnye-izdeliya</span></p>
-                                                    <p data-href="shablony-dokumentov-pokupnye-izdeliya.php" data-img="./dist/images/list-titulnyy-vpi_1.png" class="KEYWORDS">ВЕДОМОСТИ ПОКУПНЫХ ИЗДЕЛИЙ</p>
-                                                    <p data-href="shablony-dokumentov-pokupnye-izdeliya.php" data-img="./dist/images/list-titulnyy-vpi_1.png" class="KEYWORDS">ВПИ</p>
-                                                    
+                                                    <p  data-img="./dist/images/no-foto.png" id="floating26" data-href="shablony-dokumentov-titulnyy-kd.php">КОНСТРУКТОРСКАЯ ДОКУМЕНТАЦИЯ<span><br>~</span></p>
                                                 </TD>
                                                 <TD>
                                                     <TABLE >
                                                         <TR>
-                                                            <TD data-tooltip="ЛИСТ ТИТУЛЬНЫЙ ВПИ" class="hover mapsite" id="footer112">
-                                                                <p data-img="./dist/images/list-titulnyy-vpi_1.png" id="floating113" data-href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ<span> <br>~shablony-dokumentov-list-titulnyy-vpi</span></p>
-                                                            </TD>                                                                            
-                                                            <TD>
-                                                                <TABLE >                                                                                          
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" style="padding: 20px 0;"  id="flo-list-titulnyy-vpi">                                                                            
-                                                                            <p data-img="./dist/images/list-titulnyy-vpi_1.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#list-titulnyy-vpi">5000304-01-000 лист титульный ВПИ<span> <br>~list-titulnyy-vpi</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                        
-                                                                </TABLE>
+                                                            <TD data-tooltip="" class="hover mapsite" id="footer116" >
+                                                                    <p  data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulnyy-kd.php#listy-titulnye-konstruktorskoy-dokumentacii">ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ<span><br>~</span></p> 
                                                             </TD>
-                                                        </TR>
-                                                        <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
+                                                        </TR> 
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="ВЕДОМОСТЬ ФУРНИТУРЫ" class="hover mapsite" id="footer113">
-                                                                <p data-img="./dist/images/vedomost-furnitury_1.png" id="floating114" data-href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ <span> <br>~shablony-dokumentov-vedomost-furnitury</span></p>
-                                                            </TD>                                                                            
-                                                            <TD>
-                                                                <TABLE >                                                                                          
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2"  style="padding: 25px 0;" id="flo-vedomost-furnitury" >                                                                            
-                                                                            <p data-img="./dist/images/vedomost-furnitury_1.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-furnitury">5000304-01-001 ведомость фурнитуры<span> <br>~vedomost-furnitury</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                   
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->          
-                                                                </TABLE>
-                                                            </TD>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-tablica-dlin-shirin-tolshchin-dlya-specifikacii">
+                                                                <p  data-img="./dist/images/no-foto.png" data-href="shablony-dokumentov-titulnyy-kd.php#specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ<span><br>~</span></p>
+                                                            </TD>                                                             
                                                         </TR>
-                                                        <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ" class="hover mapsite" id="footer114">
-                                                                <p data-img="./dist/images/vedomost-stekol-i-zerkal_1.png" id="floating115" data-href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ <span> <br>~shablony-dokumentov-vedomost-stekol-i-zerkal</span></p>
-                                                            </TD>                                                                            
-                                                            <TD>
-                                                                <TABLE >                                                                                          
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2"  style="padding: 25px 0;"  id="flo-vedomost-stekol-i-zerkal">                                                                            
-                                                                            <p data-img="./dist/images/vedomost-stekol-i-zerkal_1.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-stekol-i-zerkal">5000304-02-001 ведомость стекол и зеркал<span> <br>~vedomost-stekol-i-zerkal</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->          
-                                                                </TABLE>
-                                                            </TD>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
+                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ<span><br>~</span></p>
+                                                            </TD>                                                             
                                                         </TR>
-                                                        <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
-                                                            <TD data-tooltip="ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ" class="hover mapsite" id="footer115">
-                                                                <p data-img="./dist/images/vedomost-materialy-prochie_1.png" id="floating116" data-href="shablony-dokumentov-pokupnye-izdeliya.php#shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ<span> <br>~shablony-dokumentov-vedomost-materialy-prochie</span></p>
-                                                            </TD>                                                                            
-                                                            <TD>
-                                                                <TABLE >                                                                                          
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2"   style="padding: 35px 0;" id="flo-vedomost-materialy-prochie">                                                                            
-                                                                            <p data-img="./dist/images/vedomost-materialy-prochie_1.png" data-href="shablony-dokumentov-pokupnye-izdeliya.php#vedomost-materialy-prochie">5000304-03-001 ведомость материалы прочие<span> <br>~vedomost-materialy-prochie</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                            
-                                                                </TABLE>
-                                                            </TD>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
+                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ<span><br>~</span></p>
+                                                            </TD>                                                             
                                                         </TR>
-                                                            
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
+                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ<span><br>~</span></p>
+                                                            </TD>                                                             
+                                                        </TR>
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
+                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ<span><br>~</span></p>
+                                                            </TD>                                                             
+                                                        </TR>
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
+                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#specifikaciya-tehnologichesaya">СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ<span><br>~</span></p>
+                                                            </TD>                                                             
+                                                        </TR>
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
+                                                        <TR>
+                                                            <TD data-tooltip="" class="hover mapsite" id="flo-poryadok-izgotovleniya-mdf-shablonov-dlya-proizvodstva">
+                                                                <p data-href="shablony-dokumentov-titulnyy-kd.php#vedomost-detaley-uchastka-3d">ВЕДОМОСТЬ ДЕТАЛЕЙ УЧАСТКА 3D<span><br>~</span></p>
+                                                            </TD>                                                             
+                                                        </TR>
+                                                      
                                                     </TABLE>
                                                 </TD>
                                             </TR> 
+                                            
                                                                                                        
                                         </TABLE>
                                     </TD>   
