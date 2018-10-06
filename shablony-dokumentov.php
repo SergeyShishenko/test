@@ -45,7 +45,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                                        
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-obrazcov2_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="<?php echo $path_img_obj.$fname_img_obj ;?>" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="<?php echo $path_img_obj.$fname_img_obj ;?>" class="center-block img-rounded img-thumbnail b-lazy img-<?php echo $img_orientation_obj ;?>"
                                  data-toggle="modal"
                                  data-target="#myModal"                                
                                  alt="<?php echo $img_alt_obj ;?>"
