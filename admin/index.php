@@ -28,27 +28,27 @@
     $Result = mysqli_query($dbconn,"SELECT head_id,name_head,data_href_head,number_in_order_head FROM head");
 
     // получаем все записи из таблицы head
-    while($row = mysqli_fetch_array($Result))
+    while($row_head = mysqli_fetch_array($Result))
     {
 
 
         echo '
     
-        <div class="box col-md-12" id="item_'.$row["head_id"].'">
+        <div class="box col-md-12" id="item_'.$row_head["head_id"].'">
             <div class="box-inner">
                 <div class="box-header well">
-                    <h2 ><i class="glyphicon glyphicon-th"></i> <span id="head_'.$row["head_id"].'">'.$row["name_head"].'</span></h2>
+                    <h2 ><i class="glyphicon glyphicon-th"></i> <span id="head_'.$row_head["head_id"].'">'.$row_head["name_head"].'</span></h2>
                     <div class="box-icon">
                         <a href="#" class="btn btn-setting btn-round btn-default" 
                             data-content="РЕДАКТИРОВАТЬ"
-                            data-name="'.$row["name_head"].'"
+                            data-name="'.$row_head["name_head"].'"
                             data-toggle="modal"
                             data-target="#myModal" 
                             title="РЕДАКТИРОВАТЬ" 
                             data-tbl="head"
                             data-field="name_head"
                             data-field-id="head_id"
-                            data-id="head_'.$row["head_id"].'"
+                            data-id="head_'.$row_head["head_id"].'"
                             >
                             <i class="glyphicon glyphicon-edit"></i></a>
                         <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>  
@@ -261,7 +261,7 @@
     
         ';
     }//while
-
+    mysqli_free_result($Result);
     //Закрывает соединение с сервером MySQL
     mysqli_close($dbconn);
     ?>
