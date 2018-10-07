@@ -127,7 +127,7 @@
                                                     //   echo $q ;       
                                                     echo '
 
-                                                    <div class="tab-pane '.$active.'" id="tab-fillup'.$row_category["category_id"].'">
+                                                    <div class="tab-pane active" id="tab-fillup'.$row_category["category_id"].'">
                                                         <div class="row column-seperation panelTab">
                                                             <div class="col-md-12">
                                                                 <div class="panel-body no-padding">
@@ -153,7 +153,7 @@
                                                                                         data-field="name_grupp"
                                                                                         data-field-id="grupp_id"
                                                                                         data-id="22"
-                                                                                        ><span>Группа '.$row_category["category_id"].'</span></a>
+                                                                                        ><span>Группа 1</span></a>
                                                                                     </li>
                                                                                     <li>
                                                                                         <a data-toggle="tab" href="#tab3FollowUs22"><span>Группа 2</span></a>
@@ -238,7 +238,33 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                   
+                                                    <!-- <div class="tab-pane" id="tab-fillup21">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h3>“ Nothing is
+                                                                    </h3>
+                                                                <p>A style represents visual customizations on top of a layout.
+                                                                    By editing a style, you can use Squarespaces visual
+                                                                    interface to customize your...</p>
+                                                                <br>
+                                                                <p class="pull-right">
+                                                                    <button type="button" class="btn btn-default btn-cons">White</button>
+                                                                    <button type="button" class="btn btn-success btn-cons">Success</button>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane" id="tab-fillup31">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <h3>Follow us &amp; get updated!</h3>
+                                                                <p>Instantly connect to whats most important to you. Follow
+                                                                    your friends, experts, favorite celebrities, and breaking
+                                                                    news.</p>
+                                                                <br>
+                                                            </div>
+                                                        </div>
+                                                    </div>-->
 
                                                     ';
                                                     $active="";
