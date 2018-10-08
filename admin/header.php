@@ -50,7 +50,7 @@
     <![endif]-->
 
     <!-- The fav icon -->
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="img/shesterenka-admin.png">
 
     <style>
         /* чтобы не дергалось окно */
