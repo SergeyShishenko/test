@@ -183,34 +183,52 @@
 
                                                                                 <div class="tab-content bg-white">
 
-                                                                             
+                                                                                ';
+                                                                                $active="active";
+                                                                                // //MySQL запрос
+                                                                               if($Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE category_id = $category_id"))
+                                                                               {
+                                                                                    // получаем все записи из таблицы grupp
+                                                                                    while($row_grupp = mysqli_fetch_array($Result_grupp))
+                                                                                    {
+                                                                                            
+                                                                                        // $name_grupp=mb_strtoupper($row_grupp["name_grupp"], 'UTF-8');     
+                                                                                        echo '
                                                                                     
-                                                                                    <div class="tab-pane active" id="tabobj2">
-                                                                                        <div class="box-content pane">
+                                                                                        <div class="tab-pane '.$active.'" id="tabobj'.$row_grupp["grupp_id"].'">
+                                                                                            <div class="box-content pane">
 
-                                                                                            <ul class="thumbnails gallery">';
+                                                                                                <ul class="thumbnails gallery">';
 
-                                                                                                for ($i = 1; $i <= 24; $i++) { 
-
-                                                                                            echo'  <li id="image-'. $i.'"
-                                                                                                        class="thumbnail">
-                                                                                                        <p class="">Конструкции width: 100px;</p>
-                                                                                                        <a style="background:url(https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/thumbs/'. $i.'.jpg)"
-                                                                                                            title="Sample Image '. $i.'"
-                                                                                                            href="https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/'. $i.'.jpg"><img
-                                                                                                                class="grayscale"
-                                                                                                                src="https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/thumbs/'. $i.'.jpg"
-                                                                                                                alt="Sample Image '. $i.'"></a>
-                                                                                                    </li>
+                                                                                                    // for ($i = 1; $i <= 24; $i++) { 
+                                                                                                    $i =$row_grupp["number_in_order_grupp"];
+                                                                                                echo'  <li id="image-'. $i.'"
+                                                                                                            class="thumbnail">
+                                                                                                            <p class="">Конструкции width: 100px;</p>
+                                                                                                            <a style="background:url(https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/thumbs/'. $i.'.jpg)"
+                                                                                                                title="Sample Image '. $i.'"
+                                                                                                                href="https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/'. $i.'.jpg"><img
+                                                                                                                    class="grayscale"
+                                                                                                                    src="https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/thumbs/'. $i.'.jpg"
+                                                                                                                    alt="Sample Image '. $i.'"></a>
+                                                                                                        </li>
+                                                                                                </ul>
+                                                                                            </div><!--box-content-->
+                                                                                        </div> <!--tab-pane-->
                                                                                             ';
 
-                                                                                                } 
-                                                                                                echo'    
-                                                                                                 
-                                                                                            </ul>
+                                                                                                // } 
+                                                                                             
+                                                                                                $active="";
+                                                                                        
+                                                                                            }//while
+                                                                                            mysqli_free_result($Result_grupp);        
+                                                                                        } 
+                                                                                        echo ' 
+                                                                                                
+                                                                                            
 
-                                                                                        </div><!--box-content-->
-                                                                                    </div> <!--tab-pane-->
+                                                                                     
                                                                                     
 
                                                                                 </div><!--tab-content-->
