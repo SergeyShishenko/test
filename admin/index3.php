@@ -198,20 +198,48 @@
                                                                                         <div class="tab-pane '.$active.'" id="tabobj'.$row_grupp["grupp_id"].'">
                                                                                             <div class="box-content pane">
 
-                                                                                                <ul class="thumbnails gallery">';
+                                                                                                <ul class="thumbnails gallery">
+                                                                                                ';
+
+
+                                                                                               
+                                                                                                $grupp_id= $row_grupp["grupp_id"];
+                                                                                                $thumbs="/";
+                                                                                                // $active="active";
+                                                                                                // //MySQL запрос
+                                                                                               if($Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE grupp_id = $grupp_id"))
+                                                                                               {
+                                                                                                    // получаем все записи из таблицы grupp
+                                                                                                    while($row_obj = mysqli_fetch_array($Result_obj))
+                                                                                                    {
+                                                                                                            
+                                                                                                        // $name_grupp=mb_strtoupper($row_grupp["name_grupp"], 'UTF-8');     
+                                                                                                       
+                                                                                                        
 
                                                                                                     // for ($i = 1; $i <= 24; $i++) { 
-                                                                                                    $i =$row_grupp["number_in_order_grupp"];
-                                                                                                echo'  <li id="image-'. $i.'"
-                                                                                                            class="thumbnail">
-                                                                                                            <p class="">Конструкции width: 100px;</p>
-                                                                                                            <a style="background:url(https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/thumbs/'. $i.'.jpg)"
-                                                                                                                title="Sample Image '. $i.'"
-                                                                                                                href="https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/'. $i.'.jpg"><img
+                                                                                                    $i =$row_obj["obj_id"];
+                                                                                                echo'  <li id="image-'. $i.'"class="thumbnail">
+                                                                                                            <p class="">'. $row_obj["img_alt_obj"].'</p>
+                                                                                                            <a style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].')"
+                                                                                                                title="'. $row_obj["img_alt_obj"].'"
+                                                                                                                href="'. substr($row_obj["path_img_obj"],1).$row_obj["fname_img_obj"].'"><img
                                                                                                                     class="grayscale"
-                                                                                                                    src="https://raw.githubusercontent.com/usmanhalalit/charisma/1.x/img/gallery/thumbs/'. $i.'.jpg"
-                                                                                                                    alt="Sample Image '. $i.'"></a>
+                                                                                                                    src="'. substr($row_obj["path_img_obj"],1)."thumbs/". $row_obj["fname_img_obj"].'"
+                                                                                                                    alt="'. $row_obj["img_alt_obj"].'">
+                                                                                                            </a>
                                                                                                         </li>
+                                                                                                        
+
+                                                                                                        
+                                                                                                    ';
+                                                                                                    // $active="";
+                                                                                            
+                                                                                                }//while
+                                                                                                mysqli_free_result($Result_obj);        
+                                                                                            } 
+                                                                                            echo ' 
+
                                                                                                 </ul>
                                                                                             </div><!--box-content-->
                                                                                         </div> <!--tab-pane-->
