@@ -24,77 +24,60 @@
                         <li class="menu">
                             <a href="yuridicheskie-dokumenty.php" class="list-group-item  '.$item_dogovor_Class.'">Договор основной</a>
                              <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub " href="#">Шаблон договора + приложения</a>                                
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#osn-soglashenie-o-vnesenii-izmeneniy-v-stoimost-dogovora">Соглашение о внесении изменений в СТОИМОСТЬ Договора</a>
-                                        </li>  
-                                        <li><a class="list-group-item sub" href="#osn-soglashenie-o-vnesenii-izmeneniy-v-sroki-po-dogovoru">Соглашение о внесении изменений в СРОКИ по Договору</a>
-                                        </li>                                                                        
-                                    </ul>
+                                <li class="menu2"><a class="list-group-item sub " href="yuridicheskie-dokumenty.php#shablon-dogovor-osnovnoy-bez-nds-v-21062018">Шаблон договора + приложения</a>                                
+                               
                                 </li>
-                                <li class="menu2"><a class="list-group-item sub" href="#yuri-dizayn-proekt">Дизайн - проект</a>
+                                <li class="menu2"><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#yuri-dizayn-proekt">Дизайн - проект</a>
                                     <ul class="list-group sub_menu2">
-                                        <li ><a class="list-group-item sub" href="#akt-priema-peredachi-dp-na-soglasovanie">Акт приема-передачи ДП на согласование</a>                                
+                                        <li ><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#1010781-akt-o-soglasovanii-dizayn-proekta">101.078.1. АКТ о согласовании Дизайн-проекта</a>                                
                                         </li>
-                                        <li ><a class="list-group-item sub" href="#akt-soglasovaniya-dp">Акт согласования ДП</a>                                    
+                                        <li ><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#1010782-akt-priema-peredachi-dizayn-proekta">101.078.2. Акт приема-передачи дизайн-проекта</a>                                    
                                         </li> 
-                                        <li ><a class="list-group-item sub dblstr-lg" href="#soglashenie-o-vnesenii-izmeneniy-v-stoimost-dogovora">Письмо – запрос о предоставлении информации для создания ДП</a>                                
+                                        <li ><a class="list-group-item sub dblstr-lg" href="yuridicheskie-dokumenty.php#soglashenie-o-vnesenii-korrektirovok-v-dizayn-proekt">СОГЛАШЕНИЕ О ВНЕСЕНИИ КОРРЕКТИРОВОК В ДИЗАЙН-ПРОЕКТ</a>                                
                                         </li>
-                                        <li ><a class="list-group-item sub " href="#pismo--zapros-o-predostavlenii-informacii-dlya-sozdaniya-dp">Письмо – запрос о уточнении согласования переданного ДП</a>                                    
-                                        </li>
-                                        <li ><a class="list-group-item sub  dblstr-lg dblstr-xl dblstr-md dblstr-sm " href="#pismo--zapros-o-neobhodimosti-vneseniya-izmeneniy-v-soglasovannyy-dp-v-svyazi-s-utochneniyami-ot-predstavitelya-zakazchika">Письмо – запрос о необходимости внесения изменений в согласованный ДП, в связи с уточнениями от представителя Заказчика</a>                                
-                                        </li>
-                                        <li ><a class="list-group-item sub" href="#dp-protokol-vstrechi-soglashenie-o-dodelkah">Протокол встречи (соглашение о доделках)</a>                                    
-                                        </li>                                                                         
+                                                                                                               
                                     </ul>                                    
                                 </li>
-                                <li class="menu2"><a class="list-group-item sub" href="#yuri-dizayn-proekt">Образец изделия</a>
+                                <li class="menu2"><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#yuri-dizayn-proekt">Образец изделия</a>
                                     <ul class="list-group sub_menu2">
-                                        <li ><a class="list-group-item sub" href="#akt-priema-peredachi-obrazca-na-soglasovanie">Акт приема-передачи Образца на согласование</a>                                
+                                        <li ><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#1010801-akt-o-soglasovanii-obrazcov">101.080.1. АКТ о согласовании образцов</a>                                
                                         </li>
-                                        <li ><a class="list-group-item sub" href="#akt-soglasovaniya-obrazca">Акт согласования Образца</a>                                    
+                                        <li ><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#1010802-akt-priema-peredachi-obrazca">101.080.2. Акт приема-передачи Образца</a>                                    
                                         </li> 
-                                        <li ><a class="list-group-item sub dblstr-lg" href="#pismo--zapros-o-predostavlenii-informacii-dlya-sozdaniya-obrazca">Письмо – запрос о предоставлении информации для создания Образца</a>                                
-                                        </li>
-                                        <li ><a class="list-group-item sub dblstr-lg dblstr-xl  dblstr-md dblstr-sm " href="#pismo--zapros-o-neobhodimosti-vneseniya-izmeneniy-v-soglasovannyy-obrazec-v-svyazi-s-utochneniyami-ot-predstavitelya-zakazchika">Письмо – запрос о необходимости внесения изменений в согласованный Образец, в связи с уточнениями от представителя Заказчика</a>                                    
-                                        </li>
-                                        <li ><a class="list-group-item sub  " href="#obr-protokol-vstrechi-soglashenie-o-dodelkah">Протокол встречи (соглашение о доделках)</a>                                
-                                        </li>                                                                                                            
+                                                                                                                                                 
                                     </ul>                                    
                                  </li>
-                                 <li class="menu2"><a class="list-group-item sub" href="#gotovaya-produkciya">Готовая продукция</a>
+                                 <li class="menu2"><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#gotovaya-produkciya">Готовая продукция</a>
                                     <ul class="list-group sub_menu2">
-                                        <li ><a class="list-group-item sub" href="#pismo--priglashenie-na-priemku-gotovoy-produkcii">Письмо – приглашение на приемку готовой продукции</a>                                
+                                        <li ><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#1010720-akt-priemki-sdachi-gotovoy-produkcii">101.072. Акт приемки - сдачи готовой продукции</a>                                
                                         </li>
-                                        <li ><a class="list-group-item sub" href="#akt-priemki-gotovoy-produkcii">Акт приемки готовой продукции</a>                                    
+                                        <li ><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#soglashenie-o-vnesenii-korrektirovok-v-gotovuyu-produkciyu">СОГЛАШЕНИЕ О ВНЕСЕНИИ КОРРЕКТИРОВОК В ГОТОВУЮ ПРОДУКЦИЮ</a>                                    
                                         </li>                                        
-                                        <li ><a class="list-group-item sub  " href="#prod-protokol-vstrechi-soglashenie-o-dodelkah">Протокол встречи (соглашение о доделках)</a>                                
-                                        </li>                                                                                                            
+                                                                                                                                                    
                                     </ul>                                    
                                  </li>
-                                 <li class="menu2"><a class="list-group-item sub" href="#gotovaya-produkciya">Монтаж</a>
+                                 <li class="menu2"><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#montazh">Монтаж</a>
                                     <ul class="list-group sub_menu2">
-                                        <li ><a class="list-group-item sub" href="#akt-o-negotovnosti-pomeshcheniya-dlya-provedeniya-montazha">Акт о неготовности помещения для проведения монтажа</a>                                
+                                        <li ><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#10107-akt-priemki-sdachi-gp-i-montazhnyh-rabot">101.07. Акт приемки - сдачи ГП и монтажных работ</a>                                
                                         </li>
-                                        <li ><a class="list-group-item sub" href="#akt-o-prieme-pomeshcheniya-dlya-nachala-rabot-po-montazhu">Акт о приеме помещения для начала работ по монтажу</a>                                    
+                                        <li ><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#1010730-akt-priemki-pomeshcheniya-k-montazhu">101.073. Акт приемки помещения к монтажу</a>                                    
                                         </li>                                        
-                                        <li ><a class="list-group-item sub  " href="#akt-o-nevozmozhnosti-prodolzheniya-montazha">Акт о невозможности продолжения монтажа </a>                                
+                                        <li ><a class="list-group-item sub  " href="yuridicheskie-dokumenty.php#1010760-akt-priemki-peredachi-izd-v-svyazi-s-priostanovkoy-mont">101.076. Акт приемки-передачи изд. в связи с приостановкой монтажа</a>                                
                                         </li>
-                                        <li ><a class="list-group-item sub  " href="#akt-priema-sdachi-rabot-po-predvaritelnomu-montazhu">Акт приема-сдачи работ по предварительному монтажу</a>                                
+                                        <li ><a class="list-group-item sub  " href="yuridicheskie-dokumenty.php#1010890-akt-ocenki-gotovnosti-obj-k-provedeniyu-montazhn-rabot">101.089. Акт оценки готовности объекта к проведению монтажных работ</a>                                
                                         </li>  
-                                        <li ><a class="list-group-item sub  " href="#akt-priema-sdachi-rabot-po-montazhu">Акт приема-сдачи работ по монтажу</a>                                
+                                        <li ><a class="list-group-item sub  " href="yuridicheskie-dokumenty.php#akt-o-nevozmozhnosti-provedeniya-montazhnyh-rabot">Акт о невозможности проведения монтажных работ</a>                                
                                         </li>  
-                                        <li ><a class="list-group-item sub  " href="#pismo---priglashenie-na-priemku-rabot-po-montazhu">Письмо - приглашение на приемку работ по монтажу</a>                                
+                                        <li ><a class="list-group-item sub  " href="yuridicheskie-dokumenty.php#akt-priemki-sdachi-predvaritelnogo-montazha">Акт приемки - сдачи предварительного монтажа</a>                                
                                         </li>  
-                                        <li ><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="#pismo---uvedomlenie-o-nevozmozhnosti-prodolzheniya-rabot-po-montazhu">Письмо - уведомление о невозможности продолжения работ по монтажу  </a>                                
+                                        <li ><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="yuridicheskie-dokumenty.php#soglashenie-o-vnesenii-korr-k-v-gprodukciyu-provedenii-montazha">СОГЛАШЕНИЕ О ВНЕСЕНИИ КОРР-К В ГОТОВУЮ ПРОДУКЦИЮ ПРОВЕДЕНИИ МОНТАЖА</a>                                
                                         </li>
-                                        <li ><a class="list-group-item sub  " href="#mont-protokol-vstrechi-soglashenie-o-dodelkah">Протокол встречи (соглашение о доделках)</a>                                
-                                        </li>                                                                                                               
+                                                                                                                                                       
                                     </ul>                                    
                                  </li>                                 
                             </ul>
                         </li>
-                        <li class="menu">
+                        <li class="menu  disabled">
                             <a href="dogovor-na-postavku-furnitury.php" class="list-group-item dblstr-lg  dblstr-xl  dblstr-md dblstr-sm '.$item_dogovor_na_postavku_furnitury_Class.'">ДОГОВОР НА ПОСТАВКУ ФУРНИТУРЫ</a>
                              <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="#soglashenie-o-vnesenii-izmeneniy-v-stoimost-dogovora">Шаблон договора + приложения</a> 
