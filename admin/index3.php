@@ -76,6 +76,7 @@
                                                     <a href="#" class="btn btn-setting btn-round btn-default"
                                                         data-content="ДОБАВИТЬ КАТЕГОРИЮ"
                                                         data-name="'.$row_category["name_category"].'"
+                                                        data-parent="head_id-'.$head_id.'"
                                                         data-toggle="modal"
                                                         data-target="#myModal" 
                                                         title="ДОБАВИТЬ КАТЕГОРИЮ"
@@ -135,6 +136,7 @@
                                                                         <div class="box-icon ">
                                                                             <a href="#" class="btn btn-setting btn-round btn-default "
                                                                             data-content="ДОБАВИТЬ ГРУППУ"
+                                                                            data-parent="category_id-'.$category_id.'"
                                                                             data-toggle="modal"
                                                                             data-target="#myModal" 
                                                                             title="ДОБАВИТЬ ГРУППУ">
@@ -165,6 +167,7 @@
                                                                                         data-tbl="grupp"
                                                                                         data-field="name_grupp"
                                                                                         data-field-id="grupp_id"
+                                                                                        data-parent="category_id-'.$category_id.'"
                                                                                         data-id="'.$row_grupp["grupp_id"].'"
                                                                                         ><span>'.$name_grupp.'</span></a>
                                                                                     </li>
@@ -226,7 +229,8 @@
                                                                                                                 href="'. substr($row_obj["path_img_obj"],1).$row_obj["fname_img_obj"].'"><img
                                                                                                                     class="grayscale"
                                                                                                                     src="'. substr($row_obj["path_img_obj"],1)."thumbs/". $row_obj["fname_img_obj"].'"
-                                                                                                                    alt="'. $row_obj["img_alt_obj"].'">
+                                                                                                                    alt="'. $row_obj["img_alt_obj"].'"
+                                                                                                                    data-parent="grupp_id-'.$grupp_id.'">
                                                                                                             </a>
                                                                                                         </li>
                                                                                                         
@@ -424,7 +428,7 @@
             $('img', this).fadeToggle(1000);
             $(this).find('.gallery-controls').remove();
             $(this).append('<div class="well gallery-controls">' +
-                '<p><a href="#" class="gallery-edit btn"  title="РЕДАКТИРОВАТЬ"><i class="glyphicon glyphicon-edit" ></i></a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ЭЛЕМЕНТ"><i class="glyphicon glyphicon-plus-sign"></i></a></p>' +
+                '<p><a href="#" class="gallery-edit btn"  title="РЕДАКТИРОВАТЬ"  data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-edit" ></i></a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ЭЛЕМЕНТ" data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-plus-sign"></i></a></p>' +
                 '</div>');
             $(this).find('.gallery-controls').stop().animate({'margin-top': '-1'}, 400);
         });
@@ -445,8 +449,10 @@
             var tbl = $(this).find('a').data('tbl');
             var field = $(this).find('a').data('field');
             var fieldid = $(this).find('a').data('field-id'); 
+            var parent = $(this).find('a').data('parent'); 
             var id = $(this).find('a').data('id');  
-            $(this).append('<div class=" tab-controls"><p><a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ!" data-content="РЕДАКТИРОВАТЬ" data-name="' + name + '"  data-toggle="modal" data-target="#myModal" data-tbl="' + tbl + '" data-field="' + field + '" data-field-id="' + fieldid + '" data-id="' + id + '"><i class="glyphicon glyphicon-edit"></i></a></p></div>' );
+            $(this).append(
+                '<div class=" tab-controls"><p><a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ!" data-content="РЕДАКТИРОВАТЬ" data-name="' + name + '"  data-toggle="modal" data-target="#myModal" data-tbl="' + tbl + '" data-field="' + field + '" data-parent="' + parent +'" data-field-id="' + fieldid + '" data-id="' + id + ' "  ><i class="glyphicon glyphicon-edit"></i></a></p></div>' );
             $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
         });
         $("body").on( "mouseleave","ul.nav-tabs li",function () {
@@ -457,21 +463,21 @@
 
 
                         
-                //gallery edit
-            $("body").on( "click","ul.thumbnails.gallery li.thumbnail a.gallery-edit" , function (e) {
-            e.preventDefault();
-            //get image id
-            // alert("click");
-            alert('редактировать ' + $(this).parents('.thumbnail').attr('id'));
-            }); 
+            //     //gallery edit
+            // $("body").on( "click","ul.thumbnails.gallery li.thumbnail a.gallery-edit" , function (e) {
+            // e.preventDefault();
+            // //get image id
+            // // alert("click");
+            // alert('редактировать ' + $(this).parents('.thumbnail').attr('id'));
+            // }); 
 
-            // gallery-add
-            $("body").on( "click","ul.thumbnails.gallery li.thumbnail a.gallery-add" , function (e) {
-            e.preventDefault();
-            //get image id
-            // alert("click");
-            alert('добавить к ' + $(this).parents('.thumbnail').attr('id'));
-            }); 
+            // // gallery-add
+            // $("body").on( "click","ul.thumbnails.gallery li.thumbnail a.gallery-add" , function (e) {
+            // e.preventDefault();
+            // //get image id
+            // // alert("click");
+            // alert('добавить к ' + $(this).parents('.thumbnail').attr('id'));
+            // }); 
 
             //  $("body").on( "click","#responds .btn-setting",function (e) {
             //     e.preventDefault();
@@ -487,7 +493,13 @@
             }); 
 
 
-
+            //gallery ADD ПОКА УДАЛЯЕТ
+            $('.thumbnails').on('click', '.gallery-add', function (e) {
+                e.preventDefault();
+                //get image id
+                //alert($(this).parents('.thumbnail').attr('id'));
+                // $(this).parents('.thumbnail').fadeOut();
+            });
 
         // при открытии модального окна
         $('#myModal').on('show.bs.modal', function (event) {
@@ -501,6 +513,7 @@
         var tbl = button.data('tbl');
         var field = button.data('field');
         var fieldid = button.data('field-id'); 
+        var parent = button.data('parent');
         var id = button.data('id');  
         var recipient =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
 
@@ -514,7 +527,8 @@
         $(this).find('#myModalLabel').text(content +  recipient); 
         recipient = recipient.replace(String.fromCharCode(171), '');// удаление ковычек
         recipient = recipient.replace(String.fromCharCode(187), '');// удаление ковычек
-        $(this).find('.modal-body p').text(tbl+' . '+field+' . '+fieldid+' = '+id); 
+        // data
+        $(this).find('.modal-body p').text(tbl+' . '+field+' . '+fieldid+' = '+id +' $'+ parent); 
         $(this).find('#tbl').val(tbl);
         $(this).find('#field').val(field); 
         $(this).find('#fieldid').val(fieldid); 

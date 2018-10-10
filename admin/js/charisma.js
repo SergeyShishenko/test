@@ -207,13 +207,17 @@ function docReady() {
     //     alert($(this).parents('.thumbnail').attr('id'));
     // });
 
+
+    
  //gallery ADD ПОКА УДАЛЯЕТ
- $('.thumbnails').on('click', '.gallery-add', function (e) {
-    e.preventDefault();
-    //get image id
-    //alert($(this).parents('.thumbnail').attr('id'));
-    $(this).parents('.thumbnail').fadeOut();
-});
+//  $('.thumbnails').on('click', '.gallery-add', function (e) {
+//     e.preventDefault();
+//     //get image id
+//     //alert($(this).parents('.thumbnail').attr('id'));
+//     $(this).parents('.thumbnail').fadeOut();
+// });
+
+
 //gallery edit
 $('.thumbnails').on('click', '.gallery-add', function (e) {
     e.preventDefault();
