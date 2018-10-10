@@ -418,9 +418,9 @@
             });
                     
 
-
+       // для объекта
         $("body").on( "mouseenter","ul.thumbnails.gallery li.thumbnail",function () {
-            console.log("over");
+            console.log("over obj img");
             $('img', this).fadeToggle(1000);
             $(this).find('.gallery-controls').remove();
             $(this).append('<div class="well gallery-controls">' +
@@ -429,7 +429,7 @@
             $(this).find('.gallery-controls').stop().animate({'margin-top': '-1'}, 400);
         });
         $("body").on( "mouseleave","ul.thumbnails.gallery li.thumbnail",function () {
-            console.log("out");
+            console.log("out obj img");
             $('img', this).fadeToggle(1000);
             $(this).find('.gallery-controls').stop().animate({'margin-top': '-30'}, 200, function () {
                 $(this).remove();
@@ -437,9 +437,10 @@
         });
 
 
-
+       // для вкладок TAB
         $("body").on( "mouseenter","ul.nav-tabs li",function () { 
-            //  alert($(this).text());     
+            //  alert($(this).text()); 
+            console.log("over вкладка tab");    
             var name = $(this).find('a > span').text();
             var tbl = $(this).find('a').data('tbl');
             var field = $(this).find('a').data('field');
@@ -449,6 +450,7 @@
             $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
         });
         $("body").on( "mouseleave","ul.nav-tabs li",function () {
+            console.log("out вкладка tab");
             // $('a', this).fadeToggle(1000);
             $(this).find('.tab-controls').stop().animate({'margin-top': '0'}, 200, function () {  $(this).remove();   });
         });
