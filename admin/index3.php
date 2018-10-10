@@ -101,6 +101,7 @@
                                                             data-name="'.$row_category["name_category"].'"
                                                             data-field="name_category"
                                                             data-field-id="category_id"
+                                                            data-parent="head_id-'.$head_id.'"
                                                             data-id="category_'.$row_category["category_id"].'"
                                                             ><span  id="category_'.$row_category["category_id"].'">'.$row_category["name_category"].'</span></a>
                                                         </li> 
@@ -207,7 +208,7 @@
 
                                                                                                
                                                                                                 $grupp_id= $row_grupp["grupp_id"];
-                                                                                                $thumbs="/";
+                                                                                                // $thumbs="/";
                                                                                                 // $active="active";
                                                                                                 // //MySQL запрос
                                                                                                if($Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE grupp_id = $grupp_id"))
@@ -514,6 +515,7 @@
         var field = button.data('field');
         var fieldid = button.data('field-id'); 
         var parent = button.data('parent');
+        
         var id = button.data('id');  
         var recipient =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
 
@@ -528,7 +530,15 @@
         recipient = recipient.replace(String.fromCharCode(171), '');// удаление ковычек
         recipient = recipient.replace(String.fromCharCode(187), '');// удаление ковычек
         // data
-        $(this).find('.modal-body p').text(tbl+' . '+field+' . '+fieldid+' = '+id +' $'+ parent); 
+        
+         if ( typeof(parent) != "undefined" && parent !== "")
+         {
+            parent=' $$$'+ parent;
+         }
+         else{
+            parent="";
+         }
+        $(this).find('.modal-body p').text(tbl+' . '+field+' . '+fieldid+' = '+id + parent); 
         $(this).find('#tbl').val(tbl);
         $(this).find('#field').val(field); 
         $(this).find('#fieldid').val(fieldid); 
