@@ -38,7 +38,7 @@
                                                                                                                
                                     </ul>                                    
                                 </li>
-                                <li class="menu2"><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#yuri-dizayn-proekt">Образец изделия</a>
+                                <li class="menu2"><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#obrazec-izdeliya">Образец изделия</a>
                                     <ul class="list-group sub_menu2">
                                         <li ><a class="list-group-item sub" href="yuridicheskie-dokumenty.php#1010801-akt-o-soglasovanii-obrazcov">101.080.1. АКТ о согласовании образцов</a>                                
                                         </li>

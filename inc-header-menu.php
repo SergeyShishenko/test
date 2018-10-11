@@ -50,7 +50,7 @@
                         </li>
                         
                         <li  id="other">
-                            <a href="#">ЕЩЁ</a >
+                            <a href="#" title="ЕЩЁ">&#10010;</a >
                             <!-- <span class="caret2 glyphicon glyphicon-new-window---" aria-hidden="true" title="Перейти на страницу"></span> -->
                              <span class="caret3"></span> 
                             <ul class="dropdown-menu  dropdown-menu-right">
