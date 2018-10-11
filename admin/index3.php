@@ -428,8 +428,10 @@
             console.log("over obj img");
             $('img', this).fadeToggle(1000);
             $(this).find('.gallery-controls').remove();
+            console.log($('img', this).data('parent'));
+            var parent = $('img', this).data('parent'); 
             $(this).append('<div class="well gallery-controls">' +
-                '<p><a href="#" class="gallery-edit btn"  title="РЕДАКТИРОВАТЬ"  data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-edit" ></i></a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ЭЛЕМЕНТ" data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-plus-sign"></i></a></p>' +
+                '<p><a href="#" class="gallery-edit btn"  title="РЕДАКТИРОВАТЬ"  data-toggle="modal" data-target="#myModal"  data-parent="' + parent +'"><i class="glyphicon glyphicon-edit" ></i></a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ЭЛЕМЕНТ" data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-plus-sign"></i></a></p>' +
                 '</div>');
             $(this).find('.gallery-controls').stop().animate({'margin-top': '-1'}, 400);
         });
@@ -464,7 +466,7 @@
 
 
                         
-            //     //gallery edit
+                //gallery edit
             // $("body").on( "click","ul.thumbnails.gallery li.thumbnail a.gallery-edit" , function (e) {
             // e.preventDefault();
             // //get image id
