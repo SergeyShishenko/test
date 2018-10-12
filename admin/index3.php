@@ -227,11 +227,16 @@
                                                                                                             <p class="">'. $row_obj["img_alt_obj"].'</p>
                                                                                                             <a style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].')"
                                                                                                                 title="'. $row_obj["img_alt_obj"].'"
-                                                                                                                href="'. substr($row_obj["path_img_obj"],1).$row_obj["fname_img_obj"].'"><img
+                                                                                                                href="'. substr($row_obj["path_img_obj"],1).$row_obj["fname_img_obj"].'"
+                                                                                                               
+                                                                                                                >
+                                                                                                                <img
                                                                                                                     class="grayscale"
                                                                                                                     src="'. substr($row_obj["path_img_obj"],1)."thumbs/". $row_obj["fname_img_obj"].'"
                                                                                                                     alt="'. $row_obj["img_alt_obj"].'"
-                                                                                                                    data-parent="grupp_id-'.$grupp_id.'">
+                                                                                                                    data-parent="grupp_id-'.$grupp_id.'"
+                                                                                                                    data-id="'.$i.'"
+                                                                                                                >
                                                                                                             </a>
                                                                                                         </li>
                                                                                                         
@@ -429,10 +434,31 @@
             $('img', this).fadeToggle(1000);
             $(this).find('.gallery-controls').remove();
             console.log($('img', this).data('parent'));
-            var parent = $('img', this).data('parent'); 
-            $(this).append('<div class="well gallery-controls">' +
-                '<p><a href="#" class="gallery-edit btn"  title="РЕДАКТИРОВАТЬ"  data-toggle="modal" data-target="#myModal"  data-parent="' + parent +'"><i class="glyphicon glyphicon-edit" ></i></a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ЭЛЕМЕНТ" data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-plus-sign"></i></a></p>' +
-                '</div>');
+            var parent = $('img', this).data('parent');             
+            var id = $('img', this).data('id'); 
+            console.log($('img', this).data('id'));
+            // var tbl = $('img', this).data('tbl');
+            // var field = $('img', this).data('field');
+            // var fieldid = $('img', this).data('field-id');
+
+            $(this).append('<div class="well gallery-controls">'+
+                                '<p>' +
+                                    '<a href="#"'+
+                                    ' class="gallery-edit btn"'+
+                                    ' title="РЕДАКТИРОВАТЬ"' +
+                                    ' data-toggle="modal"'+
+                                    ' data-target="#myModal" '+
+                                    ' data-parent="' + parent +'"'+
+                                    ' data-id="'+ id +'"'+
+                                    ' data-tbl="obj"'+
+                                    ' data-field="name_obj"'+
+                                    ' data-field-id="obj_id">'+
+                                    '<i class="glyphicon glyphicon-edit" ></i>'+
+                                    '</a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ЭЛЕМЕНТ" data-toggle="modal" data-target="#myModal" >'+
+                                    '<i class="glyphicon glyphicon-plus-sign"></i>'+
+                                    '</a>'+
+                                '</p>'+
+                             '</div>');
             $(this).find('.gallery-controls').stop().animate({'margin-top': '-1'}, 400);
         });
         $("body").on( "mouseleave","ul.thumbnails.gallery li.thumbnail",function () {
