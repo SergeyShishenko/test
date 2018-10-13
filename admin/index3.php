@@ -39,6 +39,8 @@
                             id="head-'.$row_head["head_id"].'"
                             data-content="РЕДАКТИРОВАТЬ"
                             data-name="'.$row_head["name_head"].'"
+                            data-href="'.$row_head["data_href_head"].'"
+                            data-order="'.$row_head["number_in_order_head"].'"
                             data-toggle="modal"
                             data-target="#myModal" 
                             title="РЕДАКТИРОВАТЬ" 
@@ -556,11 +558,13 @@
         var field = button.data('field');
         var fieldid = button.data('field-id'); 
         var parent = button.data('parent');
+        var recipient_href = button.data('href');
+        var recipient_order = button.data('order');
         
         var id = button.data('id');  
-        var recipient =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
+        var recipient_name =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
 
-        if (typeof recipient === typeof undefined) {recipient="";}
+        if (typeof recipient_name === typeof undefined) {recipient_name="";}
         // var im = button.data('im'); 
         var im = button.attr('src');
         // вывести эту информацию в элемент, имеющий id="content"
@@ -570,9 +574,9 @@
 
         if (content.indexOf("ДОБАВИТЬ") !== -1){$("#ChangeSubmit").addClass('hidden');$("#AddSubmit").removeClass('hidden');}
         else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');}
-        $(this).find('#myModalLabel').text(content +  recipient); 
-        recipient = recipient.replace(String.fromCharCode(171), '');// удаление ковычек
-        recipient = recipient.replace(String.fromCharCode(187), '');// удаление ковычек
+        $(this).find('#myModalLabel').text(content +  recipient_name); 
+        recipient_name = recipient_name.replace(String.fromCharCode(171), '');// удаление ковычек
+        recipient_name = recipient_name.replace(String.fromCharCode(187), '');// удаление ковычек
         // data
         
          if ( typeof(parent) != "undefined" && parent !== "")
@@ -587,7 +591,9 @@
         $(this).find('#field').val(field); 
         $(this).find('#fieldid').val(fieldid); 
         $(this).find('#id').val(id);  
-        $(this).find('#recipient-name').val(recipient); 
+        $(this).find('#recipient-name').val(recipient_name); 
+        $(this).find('#recipient-href').val(recipient_href);
+        $(this).find('#recipient-order').val(recipient_order); 
 
         $(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
         // $(this).find('#im').html('<img src="'+im+'" alt=" "class="img-fluid center-block img-rounded img-thumbnail">'); 

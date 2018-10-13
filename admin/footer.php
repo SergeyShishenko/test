@@ -59,6 +59,10 @@
                     <div class="form-group">
               <label for="recipient-name" class="form-control-label">Имя:</label>
               <input type="text" class="form-control" id="recipient-name"  required>
+              <label for="recipient-href" class="form-control-label">Файл:</label>
+              <input type="text" class="form-control" id="recipient-href"  required>
+              <label for="recipient-order" class="form-control-label">Номер по порядку:</label>
+              <input type="text" class="form-control" id="recipient-order"  required>
             </div>
             <!-- <div class="form-group">
               <label for="message-text" class="form-control-label">Message:</label>
