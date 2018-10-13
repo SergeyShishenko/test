@@ -26,11 +26,11 @@ h4 {
   
   .nav > li > a {   
     /* padding: 15px 20px 15px 8px; */
-    padding: 15px 12.8px 15px 12.8px;
-    border-left:0.5px dotted #4e4b4b;
-   
-   
+    /* padding: 15px 12.8px 15px 12.8px; */
+    padding: 15px 5px 15px 5px;
+    border-left:0.5px dotted #4e4b4b;    
   }
+  .dblstr-menu{padding: 5.5px 5px !important;}
 }
 
 @media (max-width: 992px) {

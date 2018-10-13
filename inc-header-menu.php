@@ -34,10 +34,13 @@
                             <a href="izdeliya-bloki-dvernye.php">ИЗДЕЛИЯ</a>
                         </li>
                         <li '.$shablonyClass.'>
-                            <a href="shablony-dokumentov-titulnyy-kd.php">ШАБЛОНЫ ДОКУМЕНТОВ</a>
+                            <a href="shablony-dokumentov-titulnyy-kd.php" class="dblstr-menu">ШАБЛОНЫ <br>ДОКУМЕНТОВ</a>
                         </li>
                         <li '.$yrishablonyClass.'>                            
-                            <a href="yuridicheskie-dokumenty.php">ЮРИДИЧЕСКИЕ ДОКУМЕНТЫ</a >                           
+                            <a href="yuridicheskie-dokumenty.php" class="dblstr-menu">ЮРИДИЧЕСКИЕ <br>ДОКУМЕНТЫ</a >                           
+                        </li>
+                        <li '.$ustanovochnyeClass.' class=" disabled">                            
+                            <a href="#" class="dblstr-menu">УСТАНОВОЧНЫЕ <br>ДОКУМЕНТЫ</a >                           
                         </li>
                         <li '.$metodichkiClass.'>
                             <a href="metodichki-dokument-117.php">МЕТОДИЧКИ</a>
