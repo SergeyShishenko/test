@@ -97,7 +97,7 @@
                                                         echo ' 
                                                         <li class="'.$active.'">
                                                             <a data-toggle="tab" href="#tab-fillup'.$row_category["category_id"].'"
-                                                            data-tbl="category"
+                                                            data-tbl="category"                                                            
                                                             data-name="'.$row_category["name_category"].'"
                                                             data-field="name_category"
                                                             data-field-id="category_id"
@@ -169,8 +169,8 @@
                                                                                         data-field="name_grupp"
                                                                                         data-field-id="grupp_id"
                                                                                         data-parent="category_id-'.$category_id.'"
-                                                                                        data-id="'.$row_grupp["grupp_id"].'"
-                                                                                        ><span>'.$name_grupp.'</span></a>
+                                                                                        data-id="grupp_'.$row_grupp["grupp_id"].'"
+                                                                                        ><span id="grupp_'.$row_grupp["grupp_id"].'">'.$name_grupp.'</span></a>
                                                                                     </li>
 
 
@@ -224,7 +224,7 @@
                                                                                                     // for ($i = 1; $i <= 24; $i++) { 
                                                                                                     $i =$row_obj["obj_id"];
                                                                                                 echo'  <li id="image-'. $i.'"class="thumbnail">
-                                                                                                            <p class="">'. $row_obj["img_alt_obj"].'</p>
+                                                                                                            <p class="" id="obj_'.$row_obj["grupp_id"].'">'. $row_obj["name_obj"].'</p>
                                                                                                             <a style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].')"
                                                                                                                 title="'. $row_obj["img_alt_obj"].'"
                                                                                                                 href="'. substr($row_obj["path_img_obj"],1).$row_obj["fname_img_obj"].'"
@@ -235,7 +235,9 @@
                                                                                                                     src="'. substr($row_obj["path_img_obj"],1)."thumbs/". $row_obj["fname_img_obj"].'"
                                                                                                                     alt="'. $row_obj["img_alt_obj"].'"
                                                                                                                     data-parent="grupp_id-'.$grupp_id.'"
-                                                                                                                    data-id="'.$i.'"
+                                                                                                                    data-id="obj_'.$i.'"
+                                                                                                                    data-content="РЕДАКТИРОВАТЬ"
+                                                                                                                    data-name="'.$row_obj["name_obj"].'"
                                                                                                                 >
                                                                                                             </a>
                                                                                                         </li>
@@ -436,6 +438,8 @@
             console.log($('img', this).data('parent'));
             var parent = $('img', this).data('parent');             
             var id = $('img', this).data('id'); 
+            var content = $('img', this).data('content');
+            var name = $('img', this).data('name');
             console.log($('img', this).data('id'));
             // var tbl = $('img', this).data('tbl');
             // var field = $('img', this).data('field');
@@ -452,6 +456,8 @@
                                     ' data-id="'+ id +'"'+
                                     ' data-tbl="obj"'+
                                     ' data-field="name_obj"'+
+                                    ' data-content="'+ content +'"'+
+                                    ' data-name="'+ name +'"'+
                                     ' data-field-id="obj_id">'+
                                     '<i class="glyphicon glyphicon-edit" ></i>'+
                                     '</a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ЭЛЕМЕНТ" data-toggle="modal" data-target="#myModal" >'+
