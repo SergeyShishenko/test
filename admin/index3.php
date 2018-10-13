@@ -36,6 +36,7 @@
                     <h2 ><i class="glyphicon glyphicon-th"></i> <span id="head_'.$row_head["head_id"].'">'.$row_head["name_head"].'</span></h2>
                     <div class="box-icon">
                         <a href="#" class="btn btn-setting btn-round btn-default" 
+                            id="head-'.$row_head["head_id"].'"
                             data-content="РЕДАКТИРОВАТЬ"
                             data-name="'.$row_head["name_head"].'"
                             data-toggle="modal"
@@ -166,6 +167,7 @@
                                                                                     <li class="'.$active.'">
                                                                                         <a data-toggle="tab" href="#tabobj'.$row_grupp["grupp_id"].'"
                                                                                         data-tbl="grupp"
+                                                                                        data-name="'.$row_grupp["name_grupp"].'"
                                                                                         data-field="name_grupp"
                                                                                         data-field-id="grupp_id"
                                                                                         data-parent="category_id-'.$category_id.'"
@@ -223,12 +225,12 @@
 
                                                                                                     // for ($i = 1; $i <= 24; $i++) { 
                                                                                                     $i =$row_obj["obj_id"];
-                                                                                                echo'  <li id="image-'. $i.'"class="thumbnail">
+                                                                                                echo'  <li id="image-'. $i.'"class="thumbnail" data-name="'.$row_obj["name_obj"].'">
                                                                                                             <p class="" id="obj_'.$row_obj["grupp_id"].'">'. $row_obj["name_obj"].'</p>
                                                                                                             <a style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].')"
                                                                                                                 title="'. $row_obj["img_alt_obj"].'"
                                                                                                                 href="'. substr($row_obj["path_img_obj"],1).$row_obj["fname_img_obj"].'"
-                                                                                                               
+                                                                                                                
                                                                                                                 >
                                                                                                                 <img
                                                                                                                     class="grayscale"
@@ -332,7 +334,7 @@
 
 <script>
    $(document).ready(function() {
-            // Добавляем новую запись, когда произошел клик по кнопке
+            // Добавляем НОВЫЙ РАЗДЕЛ, когда произошел клик по кнопке
                 $("#FormSubmit").click(function (e) {
 
                     e.preventDefault();
@@ -388,6 +390,11 @@
                         data:myData, //данные, которые будут отправлены на сервер (post переменные)
                         success:function(response){
                         $("#"+$("#tbl").val()+"_"+ DbNumberID).text($("#recipient-name").val());
+                        $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',$("#recipient-name").val());
+                            // для img
+                        $("#image-"+ DbNumberID).find('img').data('name',$("#recipient-name").val());
+                        // для разделов
+                        $("#item_"+ DbNumberID).find("#"+$("#tbl").val()+"-"+ DbNumberID).data('name',$("#recipient-name").val());
                         // $("#contentText").val(''); //очищаем текстовое поле после успешной вставки
                         },
                         error:function (xhr, ajaxOptions, thrownError){
@@ -560,6 +567,9 @@
         // $("body").css("overflow-y", "scroll");
         // html {   overflow-y: scroll;   }
         // $(this).css("margin-right", "-20px");
+
+        if (content.indexOf("ДОБАВИТЬ") !== -1){$("#ChangeSubmit").addClass('hidden');$("#AddSubmit").removeClass('hidden');}
+        else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');}
         $(this).find('#myModalLabel').text(content +  recipient); 
         recipient = recipient.replace(String.fromCharCode(171), '');// удаление ковычек
         recipient = recipient.replace(String.fromCharCode(187), '');// удаление ковычек
