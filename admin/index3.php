@@ -79,6 +79,8 @@
                                                     <a href="#" class="btn btn-setting btn-round btn-default"
                                                         data-content="ДОБАВИТЬ КАТЕГОРИЮ"
                                                         data-name="'.$row_category["name_category"].'"
+                                                        data-href="'.$row_category["data_href_category"].'"
+                                                        data-order="'.$row_category["number_in_order_category"].'"
                                                         data-parent="head_id-'.$head_id.'"
                                                         data-toggle="modal"
                                                         data-target="#myModal" 
@@ -102,6 +104,8 @@
                                                             <a data-toggle="tab" href="#tab-fillup'.$row_category["category_id"].'"
                                                             data-tbl="category"                                                            
                                                             data-name="'.$row_category["name_category"].'"
+                                                            data-href="'.$row_category["data_href_category"].'"
+                                                            data-order="'.$row_category["number_in_order_category"].'"
                                                             data-field="name_category"
                                                             data-field-id="category_id"
                                                             data-parent="head_id-'.$head_id.'"
@@ -170,6 +174,9 @@
                                                                                         <a data-toggle="tab" href="#tabobj'.$row_grupp["grupp_id"].'"
                                                                                         data-tbl="grupp"
                                                                                         data-name="'.$row_grupp["name_grupp"].'"
+                                                                                        data-html_id="'.$row_grupp["html_id"].'"
+                                                                                        data-category_id="'.$row_grupp["category_id"].'"
+                                                                                        data-order="'.$row_grupp["number_in_order_grupp"].'"
                                                                                         data-field="name_grupp"
                                                                                         data-field-id="grupp_id"
                                                                                         data-parent="category_id-'.$category_id.'"
@@ -494,9 +501,25 @@
             var field = $(this).find('a').data('field');
             var fieldid = $(this).find('a').data('field-id'); 
             var parent = $(this).find('a').data('parent'); 
-            var id = $(this).find('a').data('id');  
+            var id = $(this).find('a').data('id'); 
+            var href = $(this).find('a').data('href'); 
+            var order = $(this).find('a').data('order'); 
             $(this).append(
-                '<div class=" tab-controls"><p><a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ!" data-content="РЕДАКТИРОВАТЬ" data-name="' + name + '"  data-toggle="modal" data-target="#myModal" data-tbl="' + tbl + '" data-field="' + field + '" data-parent="' + parent +'" data-field-id="' + fieldid + '" data-id="' + id + ' "  ><i class="glyphicon glyphicon-edit"></i></a></p></div>' );
+                '<div class=" tab-controls">'+
+                '<p>'+
+                '<a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ!"'+ 
+                'data-content="РЕДАКТИРОВАТЬ"'+ 
+                'data-name="' + name + '" ' +
+                'data-toggle="modal" '+
+                'data-target="#myModal" '+
+                'data-tbl="' + tbl + '" '+
+                'data-field="' + field + '" '+
+                'data-parent="' + parent +'"' +
+                'data-field-id="' + fieldid + '"' +
+                'data-href="' + href + '"' +
+                'data-order="' + order + '"' +
+                'data-id="' + id + ' "  >'+
+                '<i class="glyphicon glyphicon-edit"></i></a></p></div>' );
             $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
         });
         $("body").on( "mouseleave","ul.nav-tabs li",function () {

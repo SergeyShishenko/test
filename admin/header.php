@@ -176,6 +176,8 @@ margin-right: 0;
     padding: 0 ;
 }
 
+
+
 .nav-tabs-simple > li.active a, .nav-tabs-simple > li.active a:hover, .nav-tabs-simple > li.active a:focus  {
     color: #555555;
     background-color: #ffffff;
@@ -201,6 +203,12 @@ margin-right: 0;
     overflow: hidden; 
     text-overflow: ellipsis;
     }
+    .list-tbl {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+li[id^="tb-"]:not(.active){display:none !important;}
 
 </style>
 </head>
