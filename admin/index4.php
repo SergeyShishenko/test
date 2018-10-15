@@ -174,7 +174,7 @@
                                                                                         <a data-toggle="tab" href="#tabobj'.$row_grupp["grupp_id"].'"
                                                                                         data-tbl="grupp"
                                                                                         data-name="'.$row_grupp["name_grupp"].'"
-                                                                                        data-html_id="'.$row_grupp["html_id"].'"
+                                                                                        data-html-id="'.$row_grupp["html_id"].'"
                                                                                         data-category_id="'.$row_grupp["category_id"].'"
                                                                                         data-order="'.$row_grupp["number_in_order_grupp"].'"
                                                                                         data-field="name_grupp"
@@ -503,7 +503,8 @@
             var parent = $(this).find('a').data('parent'); 
             var id = $(this).find('a').data('id'); 
             var href = $(this).find('a').data('href'); 
-            var order = $(this).find('a').data('order'); 
+            var order = $(this).find('a').data('order');
+            var htmlid = $(this).find('a').data('html-id');  
             $(this).append(
                 '<div class=" tab-controls">'+
                 '<p>'+
@@ -518,6 +519,7 @@
                 'data-field-id="' + fieldid + '"' +
                 'data-href="' + href + '"' +
                 'data-order="' + order + '"' +
+                'data-html-id="' + htmlid + '"' +
                 'data-id="' + id + ' "  >'+
                 '<i class="glyphicon glyphicon-edit"></i></a></p></div>' );
             $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
@@ -583,7 +585,7 @@
         var parent = button.data('parent');
         var recipient_href = button.data('href');
         var recipient_order = button.data('order');
-        
+        var htmlid = button.data('html-id');         
         var id = button.data('id');  
         var recipient_name =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
 
@@ -620,6 +622,7 @@
                                         "parent="+ parent+"&"+
                                         "href="+ recipient_href+"&"+
                                         "order="+ recipient_order+"&"+
+                                        "htmlid="+ htmlid+"&"+
                                         "id="+ id;
                                         // "id="+ DbNumberID;
                         // "name=John&location=Boston"
