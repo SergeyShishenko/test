@@ -11,11 +11,14 @@ require_once(__ROOT__.'/DATA/TABLES/configDB.php');
 //     // очищаем значение переменной, PHP фильтры FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH
 //     // (Удаляют тэги, при необходимости удаляет или кодирует специальные символы)
 
-//     $contentToSave = filter_var($_POST["content_txt"],FILTER_SANITIZE_STRING);
-//     $tbl = filter_var($_POST["tbl"],FILTER_SANITIZE_STRING);
-//     $field = filter_var($_POST["field"],FILTER_SANITIZE_STRING);
-//     $fieldid = filter_var($_POST["fieldid"],FILTER_SANITIZE_STRING);
-//     $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
+    $contentToSave = filter_var($_POST["content_txt"],FILTER_SANITIZE_STRING);
+    $tbl = filter_var($_POST["tbl"],FILTER_SANITIZE_STRING);
+    $field = filter_var($_POST["field"],FILTER_SANITIZE_STRING);
+    $fieldid = filter_var($_POST["fieldid"],FILTER_SANITIZE_STRING);
+    $parent = filter_var($_POST["parent"],FILTER_SANITIZE_STRING);
+    $href = filter_var($_POST["href"],FILTER_SANITIZE_STRING);
+    $order = filter_var($_POST["order"],FILTER_SANITIZE_STRING);
+    $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
 
 //     // Обновляем запись
 //     // UPDATE  `u0474172_default`.`head` SET  `name_head` =  'Раздел 1' WHERE  `head`.`head_id` =52;
@@ -42,6 +45,14 @@ require_once(__ROOT__.'/DATA/TABLES/configDB.php');
 //     }
 
 // }
+echo 'contentToSave - '.$contentToSave;
+echo '<br>tbl - '.$tbl ;
+echo '<br>field - '.$field ;
+echo '<br>fieldid - '.$fieldid ;
+echo '<br>parent - '.$parent ;
+echo '<br>href - '.$href ;
+echo '<br>order - '.$order ;
+echo '<br>id - '.$id ;
 
 echo '<li id="tb-head" class="active">';
 echo '<label for="recipient-href" class="form-control-label">Файл!!!!:</label>';

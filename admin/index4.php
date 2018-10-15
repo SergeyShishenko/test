@@ -604,7 +604,7 @@
         
          if ( typeof(parent) != "undefined" && parent !== "")
          {
-            parent=' $$$'+ parent;
+            // parent=' $$$'+ parent;
          }
          else{
             parent="";
@@ -613,11 +613,15 @@
                         var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
                         var DbNumberID = clickedID[1]; //и получаем номер из массива
 
-                        var myData = "content_txt="+ $("#recipient-name").val() +"&"+
-                                        "tbl="+ $("#tbl").val() +"&"+
-                                        "field="+ $("#field").val() +"&"+
-                                        "fieldid="+ $("#fieldid").val() +"&"+
-                                        "id="+ DbNumberID;
+                        var myData =    "content_txt="+ button.data('name') +"&"+
+                                        "tbl="+ tbl +"&"+
+                                        "field="+ field +"&"+
+                                        "fieldid="+ fieldid +"&"+
+                                        "parent="+ parent+"&"+
+                                        "href="+ recipient_href+"&"+
+                                        "order="+ recipient_order+"&"+
+                                        "id="+ id;
+                                        // "id="+ DbNumberID;
                         // "name=John&location=Boston"
                         jQuery.ajax({
                             type: "POST", // HTTP метод  POST или GET
@@ -643,7 +647,7 @@
                         });
         // заполнение модального окна
 
-        $(this).find('.modal-body p').text(tbl+' . '+field+' . '+fieldid+' = '+id + parent); 
+        // $(this).find('.modal-body p').text(tbl+' . '+field+' . '+fieldid+' = '+id + parent); 
         $(this).find('#tbl').val(tbl);
         $(this).find('#field').val(field); 
         $(this).find('#fieldid').val(fieldid); 
