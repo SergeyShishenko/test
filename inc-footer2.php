@@ -29,7 +29,10 @@
     
     </script>
    
-    
+    <script>
+    // Перезагрузить текущую страницу, без использования кэша     
+    //$(document).ready(function(){ window.location.reload(true);}
+   </script>
     </body>
 </html>
 ';?>
