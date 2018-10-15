@@ -60,20 +60,20 @@
                         <label for="recipient-name" class="form-control-label">Имя:</label>
                         <input type="text" class="form-control" id="recipient-name"  required>
                         <ul class="list-tbl">
-                                <li id="tb-head" >
+                                <!-- <li id="tb-head" class="active">
                                     <label for="recipient-href" class="form-control-label">Файл:</label>
                                     <input type="text" class="form-control" id="recipient-href"  required>
                                     <label for="recipient-order" class="form-control-label">Номер по порядку:</label>
                                     <input type="text" class="form-control" id="recipient-order"  required>
                                 </li>
-                                <li id="tb-grupp" class="active">
+                                <li id="tb-grupp" >
                                     <label for="recipient-href" class="form-control-label">html_id:</label>
                                     <input type="text" class="form-control" id="recipient-html_id"  required>
                                     <label for="recipient-order" class="form-control-label">category_id:</label>
                                     <input type="text" class="form-control" id="recipient-category_id"  required>
                                     <label for="recipient-order" class="form-control-label">Номер по порядку:</label>
                                     <input type="text" class="form-control" id="recipient-order"  required>
-                                </li>
+                                </li> -->
                         </ul>
               
                      </div>
