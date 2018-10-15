@@ -48,9 +48,13 @@
                         <li '.$materialyClass.'>
                             <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ</a>
                         </li>
-                        <li  id="other">
-                            <a href="#">ЕЩЁ</a >
-                            <!-- <span class="caret2 glyphicon glyphicon-new-window---" aria-hidden="true" title="Перейти на страницу"></span> -->
+                        <li '.$literaturaClass.' class=" disabled">
+                        <a href="literatura-gost.php">ЛИТЕРАТУРА</a>
+                        </li>
+                        
+                        <!--<li  id="other">
+                            <a href="#" title="ЕЩЁ">&#10010;</a >
+                           
                              <span class="caret3"></span> 
                             <ul class="dropdown-menu  dropdown-menu-right">
                                 <li '.$literaturaClass.' class=" disabled">
@@ -60,7 +64,7 @@
                                 </li> 
                                                                                                                                                      
                             </ul> 
-                        </li>
+                        </li>-->
                     </ul>  
                 </div>
                 <div class="navbar-form navbar-right " id="search">

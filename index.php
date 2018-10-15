@@ -165,18 +165,23 @@ include 'inc-version-css-js.php';
                                 </li>                                                                                                                       
                             </ul> -->
                         </li>
-                        <li  id="other">
+                        <li  class=" disabled">
+                        <a href="literatura-gost.php">ЛИТЕРАТУРА</a>
+                        </li>
+                        
+                        <!--<li  id="other">
                             <a href="#" title="ЕЩЁ">&#10010;</a >
-                            <!-- <span class="caret2 glyphicon glyphicon-new-window---" aria-hidden="true" title="Перейти на страницу"></span> -->
+                         
                              <span class="caret3"></span> 
                             <ul class="dropdown-menu  dropdown-menu-right">
-                                <li><a href="#literatura-gost" >Литература</a>
+                                <li '.$literaturaClass.' class=" disabled">
+                                <a href="literatura-gost.php">ЛИТЕРАТУРА</a>
                                 </li>
                                 <li><a href="furnitura-video.php" >Видео</a>
                                 </li> 
                                                                                                                                                      
                             </ul> 
-                        </li>
+                        </li>-->
                     </ul>   
                 </div>
                 
