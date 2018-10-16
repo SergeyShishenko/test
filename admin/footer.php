@@ -77,6 +77,7 @@
           </form>
                 </div>
                 <div class="modal-footer">
+                    <a href="#openModal">Открыть модальное окно</a>
                     <a href="#" class="btn btn-default" data-dismiss="modal">Закрыть</a>
                     <a href="#" class="btn btn-primary " data-dismiss="modal" id="ChangeSubmit">Сохранить изменения</a>
                     <a href="#" class="btn btn-primary " data-dismiss="modal" id="AddSubmit">Добавить</a>
@@ -85,6 +86,20 @@
         </div>
     </div>
  <!-- /.modal -->
+
+<!-- modal2 -->
+ <div id="openModal" class="modalDialog">
+
+    <div>
+        <a href="#close" title="Закрыть" class="close">X</a>
+        <h2>Модальное окно</h2>
+        <p>Пример простого модального окна, которое может быть создано с использованием CSS3.</p>
+        <p>Его можно использовать в широком диапазоне, начиная от вывода сообщений и заканчивая формой регистрации.</p>
+    </div>
+
+</div>
+<!-- /modal2 -->
+
     <footer class="row">
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
         <!-- <label>Добавить раздел</label> -->
