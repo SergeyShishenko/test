@@ -209,6 +209,7 @@ margin-right: 0;
     list-style: none;
 }
 li[id^="tb-"]:not(.active){display:none !important;}
+.modal-dialog{width:80% !important; }
 
 </style>
 </head>
