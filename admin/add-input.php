@@ -95,11 +95,22 @@ switch ($tbl) {
         break;
     case "obj":
         echo '<li id="tb-head" class="active">';
-        echo '<label for="recipient-html-id" class="form-control-label">Идентификатор (html_id):</label>';
-        echo '<input type="text" class="form-control" id="recipient-html-id" value="'.$htmlid.'" required>';
 
         echo '<label for="recipient-parent" class="form-control-label">Родитель (grupp_id):</label>';
         echo '<input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required>';
+
+        echo '<label for="recipient-html-id" class="form-control-label">Идентификатор (html_id):</label>';
+        echo '<input type="text" class="form-control" id="recipient-html-id" value="'.$htmlid.'" required>';
+
+        echo '<label for="recipient-path_img_obj" class="form-control-label">Путь к изображению (path_img_obj):</label>';
+        echo '<input type="text" class="form-control" id="recipient-path_img_obj" value="'.$i.'" required>';
+
+        echo '<label for="recipient-fname_img_obj " class="form-control-label">Имя файла изображения (fname_img_obj):</label>';
+        echo '<input type="text" class="form-control" id="recipient-fname_img_obj " value="'.$i.'" required>';
+
+        echo '<label for="recipient-data_href " class="form-control-label">data_href изображения (data_href_img_obj):</label>';
+        echo '<input type="text" class="form-control" id="recipient-data_href " value="'.$i.'" required>';      
+
 
         echo '<label for="recipient-order" class="form-control-label">Номер по порядку (number_in_order_obj): </label>';
         echo '<input type="text" class="form-control" id="recipient-order" value="'.$order.'" required>';
@@ -111,9 +122,11 @@ switch ($tbl) {
         // html_id : varchar(255)
         // path_img_obj : varchar(255)
         // fname_img_obj : varchar(255)
-        // data_href_img_obj : varchar(255)
-        // fname_img_smoll_obj : varchar(255)
-        // data_href_img_smoll_obj : varchar(255)
+        // data_href_img_obj : varchar(255) // detali-profili.php#pr-278
+
+        // fname_img_smoll_obj : varchar(255) // не меняем
+        // data_href_img_smoll_obj : varchar(255)// path_img_obj + "thumbs/"
+
         // obj_def : text
         // number_in_order_obj : int(11)
         // characteristic_obj : text
