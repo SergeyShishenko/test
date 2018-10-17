@@ -47,14 +47,17 @@ require_once(__ROOT__.'/DATA/TABLES/configDB.php');
 //     }
 
 // }
-echo 'contentToSave - '.$contentToSave;
-echo '<br>tbl - '.$tbl ;
-echo '<br>field - '.$field ;
-echo '<br>fieldid - '.$fieldid ;
-echo '<br>parent - '.$parent ;
-echo '<br>href - '.$href ;
-echo '<br>order - '.$order ;
-echo '<br>id - '.$id ;
+
+
+
+// echo 'contentToSave - '.$contentToSave;
+// echo '<br>tbl - '.$tbl ;
+// echo '<br>field - '.$field ;
+// echo '<br>fieldid - '.$fieldid ;
+// echo '<br>parent - '.$parent ;
+// echo '<br>href - '.$href ;
+// echo '<br>order - '.$order ;
+// echo '<br>id - '.$id ;
 
 
 
@@ -146,19 +149,19 @@ switch ($tbl) {
                         </thead>
                         <tbody>
                             <tr>
-                                <td>David R</td>
-                                <td class="center">
-                                    <a class="btn btn-success" href="#">
+                                <td class="center"><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
+                                <td class="">
+                                   <!-- <a class="btn btn-success" href="#">
                                         <i class="glyphicon glyphicon-zoom-in icon-white"></i>
                                         View
                                     </a>
                                     <a class="btn btn-info" href="#">
                                         <i class="glyphicon glyphicon-edit icon-white"></i>
                                         Edit
-                                    </a>
+                                    </a>-->
                                     <a class="btn btn-danger" href="#">
                                         <i class="glyphicon glyphicon-trash icon-white"></i>
-                                        Delete
+                                        Удалить
                                     </a>
                                 </td>
                             </tr>
@@ -166,6 +169,110 @@ switch ($tbl) {
                     </table>                
                 </div>'
             ;
+
+        echo '<br>
+            <div>
+                <label  class="form-control-label">Файлы для скачивания (obj_download):</label>              
+                <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+                    <thead>
+                    <tr>
+                        <th>PDF</th>
+                        <th>XLS</th>
+                        <th>DOC</th>
+                        <th>DWG</th>
+                        <th>Print</th>
+                        <th>PNG</th>
+                        <th>ЮРИ-DOC</th>
+                        <th>ЮРИ-PDF</th>
+                        <th>ЮРИ-XLS</th>
+                        <th>Действия</th>                           
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                            <td>
+                                <select class="form-control" style="width:100px;">
+                                    <option selected value="noPrint">Нет</option>
+                                    <option value="">Печать</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select class="form-control" style="width:70px;">
+                                    <option selected value="noPNG">Нет</option>
+                                    <option value="">Да</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>                            
+                            <td >
+                              <!--  <a class="btn btn-success" href="#">
+                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
+                                    View
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="glyphicon glyphicon-edit icon-white"></i>
+                                    Edit
+                                </a>-->
+                                <a class="btn btn-danger" href="#">
+                                    <i class="glyphicon glyphicon-trash icon-white"></i>
+                                    Удалить
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </div>'
+        ;
+
+        echo '<br>
+            <div>
+                <label  class="form-control-label">Свойства фурнитуры (obj_furnitur_prop):</label>              
+                <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+                    <thead>
+                    <tr>
+                        <th>name_furnitur_obj_prop</th>
+                        <th>articul_furnitur_obj</th>
+                        <th>made_furnitur_obj</th>
+                        <th>url_furnitur_obj_prop</th>                        
+                        <th>url_video_obj_prop</th>                        
+                        <th>Действия</th>                           
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                          
+                            <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
+                           
+                                                  
+                            <td >
+                              <!--  <a class="btn btn-success" href="#">
+                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
+                                    View
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="glyphicon glyphicon-edit icon-white"></i>
+                                    Edit
+                                </a>-->
+                                <a class="btn btn-danger" href="#">
+                                    <i class="glyphicon glyphicon-trash icon-white"></i>
+                                    Удалить
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>                
+            </div>'
+        ;
+
         echo '</li>';
         break;
         

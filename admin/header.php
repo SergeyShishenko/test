@@ -210,7 +210,7 @@ margin-right: 0;
 }
 li[id^="tb-"]:not(.active){display:none !important;}
 
-/* .modal-dialog{width:auto !important; } */
+.modal-dialog{width:80% !important; }
 
 
 
