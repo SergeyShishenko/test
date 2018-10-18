@@ -266,7 +266,7 @@ li[id^="tb-"]:not(.active){display:none !important;}
 
 .modal-dialog{width:95% !important; }
 
-.form-control-label{color:#e12b31;}
+.form-control-label{color:#317eac;}
 textarea {
     overflow: auto;
     resize: vertical;
