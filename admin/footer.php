@@ -51,30 +51,31 @@
                     <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
                 <div class="modal-body">
-                    <!-- <p>Here settings can be configured...</p> -->
-                    <!-- <input type="hidden" id="tbl" value=""> -->
-                    <!-- <input type="hidden" id="field" value=""> -->
-                    <!-- <input type="hidden" id="fieldid" value=""> -->
-                    <input type="hidden" id="id" value="">
-                    <div class="form-group">
-                        <label for="recipient-name" class="form-control-label">Имя:</label>
-                        <input type="text" class="form-control" id="recipient-name"  required>
-                        <ul class="list-tbl">
-                                <!-- <li id="tb-head" class="active">
-                                    <label for="recipient-href" class="form-control-label">Файл:</label>
-                                    <input type="text" class="form-control" id="recipient-href"  required>
-                                    <label for="recipient-order" class="form-control-label">Номер по порядку:</label>
-                                    <input type="text" class="form-control" id="recipient-order"  required>
-                                </li> -->
-                                
-                        </ul>
-              
-                     </div>
-            <!-- <div class="form-group">
-              <label for="message-text" class="form-control-label">Message:</label>
-              <textarea class="form-control" id="message-text"></textarea>
-            </div> -->
-          </form>
+                     <form>
+                        <!-- <p>Here settings can be configured...</p> -->
+                        <input type="hidden" id="tbl" value="">
+                        <input type="hidden" id="field" value="">
+                        <input type="hidden" id="fieldid" value="">
+                        <input type="hidden" id="id" value="">
+                        <div class="form-group">
+                            <label for="recipient-name" class="form-control-label">Имя:</label>
+                            <input type="text" class="form-control" id="recipient-name"  required>
+                            <ul class="list-tbl">
+                                    <!-- <li id="tb-head" class="active">
+                                        <label for="recipient-href" class="form-control-label">Файл:</label>
+                                        <input type="text" class="form-control" id="recipient-href"  required>
+                                        <label for="recipient-order" class="form-control-label">Номер по порядку:</label>
+                                        <input type="text" class="form-control" id="recipient-order"  required>
+                                    </li> -->
+                                    
+                            </ul>
+                
+                        </div>
+                            <!-- <div class="form-group">
+                            <label for="message-text" class="form-control-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                            </div> -->
+                    </form>
                 </div>
                 <div class="modal-footer">
                     <a href="#openModal">Открыть модальное окно</a>
