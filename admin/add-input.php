@@ -104,9 +104,9 @@ switch ($tbl) {
 
         echo '<label for="recipient-html-id" class="form-control-label">Идентификатор (html_id):</label>';
         echo '<input type="text" class="form-control" id="recipient-html-id" value="'.$htmlid.'" required>';
-
+        // echo '<a href="#"><img class="dashboard-avatar" alt="Usman" src="/dist/images/shablon-alboma-obrazcov_1-v1.png"></a>';
         echo '<label for="recipient-path_img_obj" class="form-control-label">Путь к изображению (path_img_obj):</label>';
-        echo '<input type="text" class="form-control" id="recipient-path_img_obj" value="'.$i.'" required>';
+        echo '<a href="#"><img class="dashboard-avatar" alt="Usman" src="/dist/images/shablon-alboma-obrazcov_1-v1.png"></a><input type="text" class="form-control" id="recipient-path_img_obj" value="'.$i.'" required>';
 
         echo '<label for="recipient-fname_img_obj " class="form-control-label">Имя файла изображения (fname_img_obj):</label>';
         echo '<input type="text" class="form-control" id="recipient-fname_img_obj " value="'.$i.'" required>';
@@ -272,6 +272,54 @@ switch ($tbl) {
                 </table>                
             </div>'
         ;
+
+        echo '<br>
+        <div>
+            <label  class="form-control-label">Параметры дополнений (obj_in_addition):</label>              
+            <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+                <thead>
+                <tr>
+                    <th>html_in_addition_id</th>
+                    <th>path_img_obj_in_addition</th>
+                    <th>fname_img_obj_in_addition</th>
+                    <th>data_href_img_obj_in_addition</th>                        
+                    <th>fname_img_smoll_obj_in_addition</th>
+                    <th>data_href_img_smoll_obj_in_addition</th>
+                    <th>img_def</th>                                           
+                    <th>Действия</th>                           
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
+                        <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                        <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
+                        <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                        <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
+                        <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                      
+                        <td><textarea class="form-control"  name="text"></textarea></td>
+                       
+                                              
+                        <td >
+                          <!--  <a class="btn btn-success" href="#">
+                                <i class="glyphicon glyphicon-zoom-in icon-white"></i>
+                                View
+                            </a>
+                            <a class="btn btn-info" href="#">
+                                <i class="glyphicon glyphicon-edit icon-white"></i>
+                                Edit
+                            </a>-->
+                            <a class="btn btn-danger" href="#">
+                                <i class="glyphicon glyphicon-trash icon-white"></i>
+                                Удалить
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>                
+        </div>'
+    ;
 
         echo '</li>';
         break;

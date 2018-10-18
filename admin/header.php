@@ -210,7 +210,7 @@ margin-right: 0;
 }
 li[id^="tb-"]:not(.active){display:none !important;}
 
-.modal-dialog{width:80% !important; }
+
 
 
 
@@ -264,7 +264,13 @@ li[id^="tb-"]:not(.active){display:none !important;}
 }
 .close:hover { background: #00d9ff; }
 
+.modal-dialog{width:auto !important; }
 
+.form-control-label{color:#e12b31;}
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
 
 </style>
 </head>
