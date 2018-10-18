@@ -137,43 +137,23 @@ switch ($tbl) {
         // img_orientation_obj : varchar(10)
         // img_alt_obj : varchar(255)
 
-        echo '<br>
-                <div>
-                    <label  class="form-control-label">Псевдонимы (obj_alias):</label>              
-                    <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
-                        <thead>
-                        <tr>
-                            <th>keywords_alias</th>
-                            <th>Действия</th>                           
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="center"><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
-                                <td class="">
-                                   <!-- <a class="btn btn-success" href="#">
-                                        <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                        View
-                                    </a>
-                                    <a class="btn btn-info" href="#">
-                                        <i class="glyphicon glyphicon-edit icon-white"></i>
-                                        Edit
-                                    </a>-->
-                                    <a class="btn btn-danger" href="#">
-                                        <i class="glyphicon glyphicon-trash icon-white"></i>
-                                        Удалить
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>                
-                </div>'
-            ;
+        
 
-        echo '<br>
-            <div>
-                <label  class="form-control-label">Файлы для скачивания (obj_download):</label>              
-                <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+
+        echo ' <br>   
+        <div class="row">
+            <div class="box col-md-12">
+                <div class="box-inner">
+                    <div class="box-header well" data-original-title="">
+                        <h2><i class="glyphicon glyphicon-list-alt"></i> Файлы для скачивания (obj_download)</h2>    
+                        <div class="box-icon">
+                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                    class="glyphicon glyphicon-chevron-down"></i></a>       
+                        </div>
+                    </div>
+                    <div class="box-content">   
+                               
+                    <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
                     <thead>
                     <tr>
                         <th>PDF</th>
@@ -225,14 +205,76 @@ switch ($tbl) {
                             </td>
                         </tr>
                     </tbody>
-                </table>                
-            </div>'
+                </table>  
+
+                    </div>      
+                </div>
+            </div>            
+        </div><!--/row-->'
         ;
 
-        echo '<br>
-            <div>
-                <label  class="form-control-label">Свойства фурнитуры (obj_furnitur_prop):</label>              
-                <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+        echo ' <br>   
+        <div class="row">
+            <div class="box col-md-12">
+                <div class="box-inner">
+                    <div class="box-header well" data-original-title="">
+                        <h2><i class="glyphicon glyphicon-list-alt"></i> Псевдонимы (obj_alias)</h2>    
+                        <div class="box-icon">
+                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                    class="glyphicon glyphicon-chevron-down"></i></a>       
+                        </div>
+                    </div>
+                    <div class="box-content">   
+                               
+                    <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+                    <thead>
+                    <tr>
+                        <th>keywords_alias</th>
+                        <th>Действия</th>                           
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center"><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
+                            <td class="">
+                               <!-- <a class="btn btn-success" href="#">
+                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
+                                    View
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="glyphicon glyphicon-edit icon-white"></i>
+                                    Edit
+                                </a>-->
+                                <a class="btn btn-danger" href="#">
+                                    <i class="glyphicon glyphicon-trash icon-white"></i>
+                                    Удалить
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> 
+
+                    </div>      
+                </div>
+            </div>            
+        </div><!--/row-->'
+        ;
+
+      
+        echo ' <br>   
+        <div class="row">
+            <div class="box col-md-12">
+                <div class="box-inner">
+                    <div class="box-header well" data-original-title="">
+                        <h2><i class="glyphicon glyphicon-list-alt"></i> Свойства фурнитуры (obj_furnitur_prop)</h2>    
+                        <div class="box-icon">
+                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                    class="glyphicon glyphicon-chevron-down"></i></a>       
+                        </div>
+                    </div>
+                    <div class="box-content">   
+                               
+                    <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
                     <thead>
                     <tr>
                         <th>name_furnitur_obj_prop</th>
@@ -269,57 +311,75 @@ switch ($tbl) {
                             </td>
                         </tr>
                     </tbody>
-                </table>                
-            </div>'
-        ;
+                </table>  
 
-        echo '<br>
-        <div>
-            <label  class="form-control-label">Параметры дополнений (obj_in_addition):</label>              
-            <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
-                <thead>
-                <tr>
-                    <th>html_in_addition_id</th>
-                    <th>path_img_obj_in_addition</th>
-                    <th>fname_img_obj_in_addition</th>
-                    <th>data_href_img_obj_in_addition</th>                        
-                    <th>fname_img_smoll_obj_in_addition</th>
-                    <th>data_href_img_smoll_obj_in_addition</th>
-                    <th>img_def</th>                                           
-                    <th>Действия</th>                           
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
-                        <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
-                        <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
-                        <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
-                        <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
-                        <td><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
-                      
-                        <td><textarea class="form-control"  name="text"></textarea></td>
-                       
-                                              
-                        <td >
-                          <!--  <a class="btn btn-success" href="#">
-                                <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                View
-                            </a>
-                            <a class="btn btn-info" href="#">
-                                <i class="glyphicon glyphicon-edit icon-white"></i>
-                                Edit
-                            </a>-->
-                            <a class="btn btn-danger" href="#">
-                                <i class="glyphicon glyphicon-trash icon-white"></i>
-                                Удалить
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>                
-        </div>'
-    ;
+                    </div>      
+                </div>
+            </div>            
+        </div><!--/row-->'
+        ;
+    
+        echo ' <br>   
+        <div class="row">
+            <div class="box col-md-12">
+                <div class="box-inner">
+                    <div class="box-header well" data-original-title="">
+                        <h2><i class="glyphicon glyphicon-list-alt"></i> Параметры дополнений (obj_in_addition)</h2>    
+                        <div class="box-icon">
+                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                    class="glyphicon glyphicon-chevron-down"></i></a>       
+                        </div>
+                    </div>
+                    <div class="box-content">   
+                               
+                        <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+                            <thead>
+                            <tr>
+                                <th>html_in_addition_id</th>
+                                <th>path_img_obj_in_addition</th>
+                                <th>fname_img_obj_in_addition</th>
+                                <th>data_href_img_obj_in_addition</th>                        
+                                <th>fname_img_smoll_obj_in_addition</th>
+                                <th>data_href_img_smoll_obj_in_addition</th>
+                                <th>img_def</th>                                           
+                                <th>Действия</th>                           
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class=""><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
+                                    <td class="center"><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                                    <td class="center"><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
+                                    <td class="center"><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                                    <td class="center"><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
+                                    <td class="center"><input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required></td>
+                                
+                                    <td class="center"><textarea class="form-control"  name="text"></textarea></td>
+                                
+                                                        
+                                    <td class="center">
+                                    <!--  <a class="btn btn-success" href="#">
+                                            <i class="glyphicon glyphicon-zoom-in icon-white"></i>
+                                            View
+                                        </a>
+                                        <a class="btn btn-info" href="#">
+                                            <i class="glyphicon glyphicon-edit icon-white"></i>
+                                            Edit
+                                        </a>-->
+                                        <a class="btn btn-danger" href="#">
+                                            <i class="glyphicon glyphicon-trash icon-white"></i>
+                                            Удалить
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> 
+
+                    </div>      
+                </div>
+            </div>            
+        </div><!--/row-->'
+        ;
 
         echo '</li>';
         break;

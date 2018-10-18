@@ -437,7 +437,7 @@
                 // });
 
 
-            $("body").on( "click","#responds .btn-minimize",function (e) {
+            $("body").on( "click"," .btn-minimize",function (e) {
                 // e.preventDefault();
                 var $target = $(this).parent().parent().next('.box-content');
                 if ($target.is(':visible')) $('i', $(this)).removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
