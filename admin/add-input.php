@@ -98,6 +98,22 @@ switch ($tbl) {
         break;
     case "obj":
         echo '<br><li id="tb-head" class="active">';
+
+        echo '
+             
+                <div class="input-group col-md-3">
+                    <div class="input-group ">
+                        <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
+                        <span class="input-group-addon">Username</span>
+                        <input id="inputIcon" type="text" class="form-control" placeholder="Username">
+                        <span class="input-group-btn">
+                             <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+             ';
+
+       
         echo'
         <div class="row">
             <div class="col-md-2">
@@ -114,15 +130,15 @@ switch ($tbl) {
             <input type="text" class="form-control" id="recipient-path_img_obj" value="'.$i.'" required>
             </div>
             <div class="col-md-2">
-            <label for="recipient-fname_img_obj " class="form-control-label">Имя файла изображения (fname_img_obj):</label>
+            <label for="recipient-fname_img_obj " class="form-control-label">Имя файла<wbr>изображения (fname_img_obj):</label>
             <input type="text" class="form-control" id="recipient-fname_img_obj " value="'.$i.'" required>
             </div>
             <div class="col-md-2">
-            <label for="recipient-data_href " class="form-control-label">data_href изображения (data_href_img_obj):</label>
+            <label for="recipient-data_href " class="form-control-label">data_href изображения <br>(data_href_img_obj):</label>
             <input type="text" class="form-control" id="recipient-data_href " value="'.$i.'" required>
             </div>
             <div class="col-md-2">
-            <label for="recipient-order" class="form-control-label">Номер по порядку (number_in_order_obj): </label>
+            <label for="recipient-order" class="form-control-label">Номер по порядку <br>(number_in_order_obj): </label>
             <input type="text" class="form-control" id="recipient-order" value="'.$order.'" required>
             </div>
         </div>
