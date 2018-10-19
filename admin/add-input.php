@@ -100,8 +100,26 @@ switch ($tbl) {
         echo '<br><li id="tb-head" class="active">';
 
         echo '
-             
-                <div class="input-group col-md-3">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="input-group ">
+                        <div class="input-group ">
+                            <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
+                            <span class="input-group-addon">Username</span>
+                                <select class="form-control">
+                                <option value="">Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></button>
+                            </span>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-md-3">
+                 <div class="input-group ">
                     <div class="input-group ">
                         <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
                         <span class="input-group-addon">Username</span>
@@ -111,10 +129,40 @@ switch ($tbl) {
                         </span>
                     </div>
                 </div>
+            </div>
+        <div class="col-md-3">
+            <div class="input-group ">
+                    <div class="input-group ">                       
+                        <span class="input-group-addon">Username</span>
+                        <input id="inputIcon" type="text" class="form-control" placeholder="Username">
+                        <span class="input-group-btn">
+                             <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group ">
+                    <div class="input-group ">
+                        <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
+                        <span class="input-group-addon">Username</span>
+                        <input id="inputIcon" type="text" class="form-control" placeholder="Username">
+                        <span class="input-group-btn">
+                             <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+        </div>
+                
+                
+            </div><!--/row-->
              ';
 
        
         echo'
+        <br>
         <div class="row">
             <div class="col-md-2">
                 <label for="recipient-parent" class="form-control-label">Родитель <br>(grupp_id):</label>

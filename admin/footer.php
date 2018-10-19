@@ -58,8 +58,22 @@
                         <input type="hidden" id="fieldid" value="">
                         <input type="hidden" id="id" value="">
                         <div class="form-group">
-                            <label for="recipient-name" class="form-control-label">Имя:</label>
-                            <input type="text" class="form-control" id="recipient-name"  required>
+                        <div class="">
+                            <div class="input-group ">
+                                <div class="input-group ">
+                                    <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
+                                    <span class="input-group-addon">Имя</span>
+                                    <input type="text" class="form-control" id="recipient-name"  required>
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                            <!-- <label for="recipient-name" class="form-control-label">Имя:</label>
+                            <input type="text" class="form-control" id="recipient-name"  required> -->
                             <ul class="list-tbl">
                                     <!-- <li id="tb-head" class="active">
                                         <label for="recipient-href" class="form-control-label">Файл:</label>
