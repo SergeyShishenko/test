@@ -181,100 +181,82 @@ switch ($tbl) {
         echo '</li>';
         break;
     case "obj":
-        echo '<br><li id="tb-head" class="active">';
+        echo '<li id="tb-head" class="active">';      
+     
 
-        echo '
-        <div class="row">
-            <div class="col-md-3">
-                <div class="input-group ">
-                        <div class="input-group ">
-                            <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
-                            <span class="input-group-addon">Username</span>
-                                <select class="form-control">
-                                <option value="">Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                            </span>
-                        </div>
-                    </div>
-            </div>
-            <div class="col-md-3">
-                 <div class="input-group ">
-                    <div class="input-group ">
-                        <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
-                        <span class="input-group-addon">Username</span>
-                        <input id="inputIcon" type="text" class="form-control" placeholder="Username">
-                        <span class="input-group-btn">
-                             <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        <div class="col-md-3">
-            <div class="input-group ">
+        echo '<div class="row">
+                <div class="input-group col-md-12">
                     <div class="input-group ">                       
-                        <span class="input-group-addon">Username</span>
-                        <input id="inputIcon" type="text" class="form-control" placeholder="Username">
+                        <span class="input-group-addon">Родитель (grupp_id)</span>
+                        <input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required>
                         <span class="input-group-btn">
-                             <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></button>
-                        </span>
-                        
-                    </div>
-                    
-                </div>
-        </div>
-        <div class="col-md-3">
-            <div class="input-group ">
-                    <div class="input-group ">
-                        <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
-                        <span class="input-group-addon">Username</span>
-                        <input id="inputIcon" type="text" class="form-control" placeholder="Username">
-                        <span class="input-group-btn">
-                             <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
-        </div>
-                
-                
-            </div><!--/row-->
-             ';
-
-       
-        echo'
-        <br>
-        <div class="row">
-            <div class="col-md-2">
-                <label for="recipient-parent" class="form-control-label">Родитель <br>(grupp_id):</label>
-                <input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required>
             </div>
-            <div class="col-md-2">
-            <label for="recipient-html-id" class="form-control-label">Идентификатор <br>(html_id):</label>
-            <input type="text" class="form-control" id="recipient-html-id" value="'.$htmlid.'" required>
+            ';
+        echo '<div class="row">
+            <div class="input-group col-md-12">
+                <div class="input-group ">                       
+                    <span class="input-group-addon">Идентификатор (html_id)</span>
+                    <input type="text" class="form-control" id="recipient-html-id" value="'.$htmlid.'" required>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                    </span>
+                </div>
             </div>
-            <div class="col-md-2">
-            <label for="recipient-path_img_obj" class="form-control-label">Путь к изображению <br>(path_img_obj):</label>
-            <!--<a href="#"><img class="dashboard-avatar" alt="Usman" src="/dist/images/shablon-alboma-obrazcov_1-v1.png"></a>-->
-            <input type="text" class="form-control" id="recipient-path_img_obj" value="'.$i.'" required>
-            </div>
-            <div class="col-md-2">
-            <label for="recipient-fname_img_obj " class="form-control-label">Имя файла<wbr>изображения (fname_img_obj):</label>
-            <input type="text" class="form-control" id="recipient-fname_img_obj " value="'.$i.'" required>
-            </div>
-            <div class="col-md-2">
-            <label for="recipient-data_href " class="form-control-label">data_href изображения <br>(data_href_img_obj):</label>
-            <input type="text" class="form-control" id="recipient-data_href " value="'.$i.'" required>
-            </div>
-            <div class="col-md-2">
-            <label for="recipient-order" class="form-control-label">Номер по порядку <br>(number_in_order_obj): </label>
-            <input type="text" class="form-control" id="recipient-order" value="'.$order.'" required>
-            </div>
-        </div>
+          </div>
         ';
+        echo '<div class="row">
+            <div class="input-group col-md-12">
+                <div class="input-group ">                       
+                    <span class="input-group-addon">Путь к изображению (path_img_obj)</span>
+                    <input type="text" class="form-control" id="recipient-path_img_obj" value="'.$i.'" required>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                    </span>
+                </div>
+            </div>
+          </div>
+        ';
+        echo '<div class="row">
+            <div class="input-group col-md-12">
+                <div class="input-group ">                       
+                    <span class="input-group-addon">Имя файла изображения (fname_img_obj)</span>
+                    <input type="text" class="form-control" id="recipient-fname_img_obj " value="'.$i.'" required>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                    </span>
+                </div>
+            </div>
+          </div>
+        ';
+        echo '<div class="row">
+            <div class="input-group col-md-12">
+                <div class="input-group ">                       
+                    <span class="input-group-addon">data_href изображения (data_href_img_obj)</span>
+                    <input type="text" class="form-control" id="recipient-data_href " value="'.$i.'" required>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                    </span>
+                </div>
+            </div>
+          </div>
+        ';
+        echo '<div class="row">
+            <div class="input-group col-md-12">
+                <div class="input-group ">                       
+                    <span class="input-group-addon">Номер по порядку (number_in_order_obj)</span>
+                    <input type="text" class="form-control" id="recipient-order" value="'.$order.'" required>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                    </span>
+                </div>
+            </div>
+          </div>
+        ';
+
 
         // echo '<label for="recipient-parent" class="form-control-label">Родитель (grupp_id):</label>';
         // echo '<input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required>';
