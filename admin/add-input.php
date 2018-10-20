@@ -85,7 +85,7 @@ switch ($tbl) {
                         <span class="input-group-addon">Номер по порядку</span>
                         <input type="text" class="form-control" id="recipient-order" value="'.$order.'" required>
                         <span class="input-group-btn">
-                            <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
@@ -190,7 +190,7 @@ switch ($tbl) {
                         <span class="input-group-addon">Родитель (grupp_id)</span>
                         <input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required>
                         <span class="input-group-btn">
-                            <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
@@ -312,7 +312,7 @@ switch ($tbl) {
                     </div>
                     <div class="box-content">   
                                
-                    <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
+                <!--<table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
                     <thead>
                     <tr>
                         <th>PDF</th>
@@ -349,14 +349,7 @@ switch ($tbl) {
                             <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
                             <td><input type="text" class="form-control" id="recipient-PDF " value="" required></td>                            
                             <td >
-                              <!--  <a class="btn btn-success" href="#">
-                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                    View
-                                </a>
-                                <a class="btn btn-info" href="#">
-                                    <i class="glyphicon glyphicon-edit icon-white"></i>
-                                    Edit
-                                </a>-->
+                             
                                 <a class="btn btn-danger" href="#">
                                     <i class="glyphicon glyphicon-trash icon-white"></i>
                                     Удалить
@@ -364,7 +357,129 @@ switch ($tbl) {
                             </td>
                         </tr>
                     </tbody>
-                </table>  
+                </table>  -->
+
+                ';  
+
+
+                echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                       
+                                <span class="input-group-addon">PDF</span>
+                                <input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required>
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                 '; 
+                 echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                       
+                                <span class="input-group-addon">XLS</span>
+                                <input type="text" class="form-control" id="recipient-XLS " value="./dist/files/pdf/shablon-alboma-obrazcov.XLS" required>
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                 ';
+                echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                       
+                                <span class="input-group-addon">DOC</span>
+                                <input type="text" class="form-control" id="recipient-DOC " value="./dist/files/pdf/shablon-alboma-obrazcov.DOC" required>
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ';
+                echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                       
+                                <span class="input-group-addon">DWG</span>
+                                <input type="text" class="form-control" id="recipient-DWG " value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ';
+                echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                       
+                                <span class="input-group-addon">Print</span>
+                                <select class="form-control" >
+                                    <option selected value="noPrint">Нет</option>
+                                    <option value="">Печать</option>
+                                </select>
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ';
+                echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                       
+                                <span class="input-group-addon">PNG</span>
+                                <select class="form-control" >
+                                    <option selected value="noPNG">Нет</option>
+                                    <option value="">Да</option>
+                                </select>
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ';
+                echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                       
+                                <span class="input-group-addon">ЮРИ-PDF</span>
+                                <input type="text" class="form-control" id="recipient-yriPDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required>
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                '; 
+                echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                       
+                                <span class="input-group-addon">ЮРИ-XLS</span>
+                                <input type="text" class="form-control" id="recipient-yriXLS " value="./dist/files/pdf/shablon-alboma-obrazcov.XLS" required>
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ';
+                echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                       
+                                <span class="input-group-addon">ЮРИ-DOC</span>
+                                <input type="text" class="form-control" id="recipient-yriDOC " value="./dist/files/pdf/shablon-alboma-obrazcov.DOC" required>
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ';
+
+
+
+            echo '
 
                     </div>      
                 </div>

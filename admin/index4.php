@@ -671,20 +671,8 @@
     });//ready
 
     
-$('#r').on('click', function() {
-    //...`
-    obj = this;
-    alert();
-    setTimeout(
-       function() { $(obj).blur() }, 2000
-    );
- });
 
-  $('button').on('focus','.button31', function(){
-      console.log("button");
-      var txt = $(this).text(); // вытащим текст из нажатого элемента
-      alert('Вы нажали на элемент с текстом - «' + txt + '»'); // выведем сообщение с текстом
-    });
+ 
 
 var obj = null;
      $("body").on( "focus","button.button31" , function (e) {
@@ -694,7 +682,16 @@ var obj = null;
             setTimeout(
                 function() { $(obj).blur() }, 2000
                 );
+                $(this).removeClass('btn-warning');    
+     }); 
+
+$("body").on( "change","input.form-control" , function () {
+                // alert('btn-warning');
+                $(this).parent().find('.input-group-btn > button').addClass('btn-warning');
+            
             }); 
+
+
 </script>
 
 <?php require('footer.php'); ?>

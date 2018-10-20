@@ -297,21 +297,21 @@ textarea {
 
 /*кнопка вращается*/
 
-button.button31:hover, a.button31:focus {
+button.button31:hover, button.button31:focus {
   /* background: #e35d31; */
   background: #74f526;
   box-shadow: none;
 }
-button.button31:hover:after, a.button31:hover:before {
+button.button31:hover:after, button.button31:hover:before {
   background: #fff;
   box-shadow: none;
 }
 button.button31:focus > i {
- 
+    
   -webkit-animation: rotate31 1s linear infinite forwards;
   animation: rotate31 1s linear infinite forwards;
 }
-button.button31:focus:after > i, a.button31:focus:before > i {
+button.button31:focus:after > i, button.button31:focus:before > i {
   content: "";
   position: absolute;
   z-index: -1;
@@ -382,29 +382,16 @@ button.button31:focus:after > i, a.button31:focus:before > i {
 
             <ul class="collapse navbar-collapse nav navbar-nav top-menu">
                 <li><a href="http://localhost/"><i class="glyphicon glyphicon-globe"></i> Перейти на сайт</a></li>
-                <!-- <li><a href="#" class="button31" ><span class=" button31 glyphicon glyphicon-refresh"></span></a></li> -->
-                <li>
-                    <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    
-                </li>
-                <!-- <li class="dropdown">
-                    <a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-star"></i> Dropdown <span
-                            class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li> -->
+              
                 <li>
                     <form class="navbar-search pull-left">
                         <input placeholder="Поиск" class="search-query form-control col-md-10" name="query"
-                               type="text">
+                               type="text" style="border-bottom-right-radius: 0; border-top-right-radius: 0;">
                     </form>
+                </li>
+                <li style="margin-top: 7px; margin-left: -1px;">
+                <button type="button" class="btn btn-default button31" style=" border-bottom-left-radius: 0 ; border-top-left-radius: 0 ;"><i class="glyphicon glyphicon-refresh"></i></button>
+                    
                 </li>
             </ul>
 
