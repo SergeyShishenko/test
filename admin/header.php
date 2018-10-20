@@ -272,6 +272,60 @@ textarea {
     resize: vertical;
 }
 
+
+/* высота  input*/
+
+
+.input-group {    
+    margin-bottom: 5px;
+}
+.input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child) {
+   
+    height: 40px;
+}
+.input-group-addon:first-child {
+    
+    height: 40px;
+}
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+    
+    height: 40px;
+    
+}
+/**/
+
+
+/*кнопка вращается*/
+
+button.button31:hover, a.button31:focus {
+  /* background: #e35d31; */
+  background: #74f526;
+  box-shadow: none;
+}
+button.button31:hover:after, a.button31:hover:before {
+  background: #fff;
+  box-shadow: none;
+}
+button.button31:focus > i {
+ 
+  -webkit-animation: rotate31 1s linear infinite forwards;
+  animation: rotate31 1s linear infinite forwards;
+}
+button.button31:focus:after > i, a.button31:focus:before > i {
+  content: "";
+  position: absolute;
+  z-index: -1;
+ 
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+@-webkit-keyframes rotate31 {
+  100% {-webkit-transform: rotate(360deg);}
+}
+@keyframes rotate31 {
+  100% {transform: rotate(360deg);}
+}
 </style>
 </head>
 
@@ -303,6 +357,7 @@ textarea {
                 </ul>
             </div>
             <!-- user dropdown ends -->
+            
 
             <!-- theme selector starts -->
             <div class="btn-group pull-right theme-container animated tada">
@@ -327,6 +382,11 @@ textarea {
 
             <ul class="collapse navbar-collapse nav navbar-nav top-menu">
                 <li><a href="http://localhost/"><i class="glyphicon glyphicon-globe"></i> Перейти на сайт</a></li>
+                <!-- <li><a href="#" class="button31" ><span class=" button31 glyphicon glyphicon-refresh"></span></a></li> -->
+                <li>
+                    <button type="button" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                    
+                </li>
                 <!-- <li class="dropdown">
                     <a href="#" data-toggle="dropdown"><i class="glyphicon glyphicon-star"></i> Dropdown <span
                             class="caret"></span></a>
@@ -414,6 +474,8 @@ textarea {
                     enabled to use this site.</p>
             </div>
         </noscript>
+
+        
 
         <div id="content" class="col-lg-12 col-sm-12">
             <!-- content starts -->

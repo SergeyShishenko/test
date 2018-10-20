@@ -669,6 +669,32 @@
 
 
     });//ready
+
+    
+$('#r').on('click', function() {
+    //...`
+    obj = this;
+    alert();
+    setTimeout(
+       function() { $(obj).blur() }, 2000
+    );
+ });
+
+  $('button').on('focus','.button31', function(){
+      console.log("button");
+      var txt = $(this).text(); // вытащим текст из нажатого элемента
+      alert('Вы нажали на элемент с текстом - «' + txt + '»'); // выведем сообщение с текстом
+    });
+
+var obj = null;
+     $("body").on( "focus","button.button31" , function (e) {
+            e.preventDefault();
+            obj = this;
+            // alert("click");
+            setTimeout(
+                function() { $(obj).blur() }, 2000
+                );
+            }); 
 </script>
 
 <?php require('footer.php'); ?>

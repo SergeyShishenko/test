@@ -65,7 +65,7 @@
                                         <span class="input-group-addon">Имя</span>
                                         <input type="text" class="form-control" id="recipient-name"  required>
                                         <span class="input-group-btn">
-                                            <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></button>
+                                            <button type="button"  class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                                         </span>
                                     </div>
                                 </div>
