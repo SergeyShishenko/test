@@ -264,7 +264,7 @@ li[id^="tb-"]:not(.active){display:none !important;}
 }
 .close:hover { background: #00d9ff; }
 
-.modal-dialog{width:95% !important; }
+/* .modal-dialog{width:95% !important; } */
 
 .form-control-label{color:#317eac;}
 textarea {

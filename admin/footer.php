@@ -57,19 +57,19 @@
                         <input type="hidden" id="field" value="">
                         <input type="hidden" id="fieldid" value="">
                         <input type="hidden" id="id" value="">
-                        <div class="form-group">
-                        <div class="">
-                            <div class="input-group ">
-                                <div class="input-group ">
-                                    <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
-                                    <span class="input-group-addon">Имя</span>
-                                    <input type="text" class="form-control" id="recipient-name"  required>
-                                    <span class="input-group-btn">
-                                        <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
+                        <div class="form-group ">
+                            <div class="row">
+                                <div class="input-group col-md-12">
+                                    <div class="input-group ">
+                                        <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
+                                        <span class="input-group-addon">Имя</span>
+                                        <input type="text" class="form-control" id="recipient-name"  required>
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></button>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
 
                             <!-- <label for="recipient-name" class="form-control-label">Имя:</label>
