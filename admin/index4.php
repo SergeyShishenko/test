@@ -685,11 +685,44 @@ var obj = null;
                 $(this).removeClass('btn-warning');    
      }); 
 
-$("body").on( "change","input.form-control" , function () {
+$("body").on( "change","input.form-control" , function (e) {
+    e.preventDefault();
                 // alert('btn-warning');
-                $(this).parent().find('.input-group-btn > button').addClass('btn-warning');
+                $(this).parent().find('.input-group-btn > button.button31').addClass('btn-warning');
             
             }); 
+
+  $("body").on( "click","button.btn.btn-primary.button33" , function (e) {
+    e.preventDefault();
+    // alert($(this).parents('.obj_alias').attr('class'));
+                $(this).parents('.obj_alias').append('<div class="row">'+
+                                '<div class="input-group col-md-12">'+
+                                    '<div class="input-group "> ' +                     
+                                        '<span class="input-group-addon"></span>'+
+                                        '<input type="text" class="form-control" id="recipient-obj_alias " value="KRYWORD" required>'+
+                                        '<span class="input-group-btn">'+
+                                            '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                            '<button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>'+
+                                            '<button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>'+                                          
+                                        '</span>'+
+                                    '</div>'+
+                                '</div>'+
+                            '</div>'
+                            );
+            
+            }); 
+            
+    $("body").on( "click","button.btn.btn-danger.button32" , function (e) {
+    e.preventDefault();
+    //get image id
+    // alert($(this).parent().parent().parent().parent().hasClass('row1'));
+    $(this).parent().parent().parent().parent().not('.row1').fadeOut();
+    if ($(this).parent().parent().parent().parent().hasClass('row1')) {
+        $(this).parents('.input-group').find('input').val('');
+        $(this).parents('.input-group-btn').find('.button31').addClass('btn-warning');
+    }
+    
+});
 
 
 </script>

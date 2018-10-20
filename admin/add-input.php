@@ -299,7 +299,7 @@ switch ($tbl) {
         
 
 
-        echo ' <br>   
+        echo '    
         <div class="row">
             <div class="box col-md-12">
                 <div class="box-inner">
@@ -487,7 +487,7 @@ switch ($tbl) {
         </div><!--/row-->'
         ;
 
-        echo ' <br>   
+        echo '   
         <div class="row">
             <div class="box col-md-12">
                 <div class="box-inner">
@@ -498,35 +498,28 @@ switch ($tbl) {
                                     class="glyphicon glyphicon-chevron-down"></i></a>       
                         </div>
                     </div>
-                    <div class="box-content">   
-                               
-                    <table class="table table-striped table-bordered bootstrap-datatable datatable responsive">
-                    <thead>
-                    <tr>
-                        <th>keywords_alias</th>
-                        <th>Действия</th>                           
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="center"><input type="text" class="form-control" id="recipient-PDF " value="" required></td>
-                            <td class="">
-                               <!-- <a class="btn btn-success" href="#">
-                                    <i class="glyphicon glyphicon-zoom-in icon-white"></i>
-                                    View
-                                </a>
-                                <a class="btn btn-info" href="#">
-                                    <i class="glyphicon glyphicon-edit icon-white"></i>
-                                    Edit
-                                </a>-->
-                                <a class="btn btn-danger" href="#">
-                                    <i class="glyphicon glyphicon-trash icon-white"></i>
-                                    Удалить
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table> 
+                    <div class="box-content obj_alias" > 
+                    ';
+                    
+                    echo '<div class="row row1">
+                                <div class="input-group col-md-12">
+                                    <div class="input-group ">                       
+                                        <span class="input-group-addon"></span>
+                                        <input type="text" class="form-control" id="recipient-obj_alias " value="KRYWORD1" required>
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                            <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
+                                            <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>
+                                          
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        ';
+
+
+                echo '                
+                
 
                     </div>      
                 </div>
@@ -535,15 +528,17 @@ switch ($tbl) {
         ;
 
       
-        echo ' <br>   
+        echo '    
         <div class="row">
             <div class="box col-md-12">
                 <div class="box-inner">
                     <div class="box-header well" data-original-title="">
                         <h2><i class="glyphicon glyphicon-list-alt"></i> Свойства фурнитуры (obj_furnitur_prop)</h2>    
                         <div class="box-icon">
-                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                                    class="glyphicon glyphicon-chevron-down"></i></a>       
+                            
+                            <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
+                             
+                                         
                         </div>
                     </div>
                     <div class="box-content">   
@@ -593,7 +588,7 @@ switch ($tbl) {
         </div><!--/row-->'
         ;
     
-        echo ' <br>   
+        echo '   
         <div class="row">
             <div class="box col-md-12">
                 <div class="box-inner">
