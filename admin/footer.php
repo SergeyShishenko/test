@@ -63,38 +63,28 @@
                                     <div class="input-group ">
                                         <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
                                         <span class="input-group-addon">Имя</span>
-                                        <input type="text" class="form-control" id="recipient-name"  required>
+                                        <input type="text" class="form-control"  id="recipient-name"  required>
                                         <span class="input-group-btn">
-                                            <button type="button"  class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                                            <button type="button" data-field ="name_head" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                                         </span>
                                     </div>
                                 </div>
                             </div>
 
 
-                            <!-- <label for="recipient-name" class="form-control-label">Имя:</label>
-                            <input type="text" class="form-control" id="recipient-name"  required> -->
                             <ul class="list-tbl">
-                                    <!-- <li id="tb-head" class="active">
-                                        <label for="recipient-href" class="form-control-label">Файл:</label>
-                                        <input type="text" class="form-control" id="recipient-href"  required>
-                                        <label for="recipient-order" class="form-control-label">Номер по порядку:</label>
-                                        <input type="text" class="form-control" id="recipient-order"  required>
-                                    </li> -->
+                                   
                                     
                             </ul>
                 
                         </div>
-                            <!-- <div class="form-group">
-                            <label for="message-text" class="form-control-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                            </div> -->
+                          
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <a href="#openModal">Открыть модальное окно</a>
+                    <!-- <a href="#openModal">Открыть модальное окно</a> -->
                     <a href="#" class="btn btn-default" data-dismiss="modal">Закрыть</a>
-                    <a href="#" class="btn btn-primary " data-dismiss="modal" id="ChangeSubmit">Сохранить изменения</a>
+                    <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="ChangeSubmit">Сохранить изменения</a> -->
                     <a href="#" class="btn btn-primary " data-dismiss="modal" id="AddSubmit">Добавить</a>
                 </div>
             </div>

@@ -297,7 +297,7 @@ textarea {
 /*кнопка вращается*/
 
 button.button31:hover, button.button31:focus {
-  /* background: #e35d31; */
+  
   background: #74f526;
   box-shadow: none;
 }
@@ -305,12 +305,12 @@ button.button31:hover:after, button.button31:hover:before {
   background: #fff;
   box-shadow: none;
 }
-button.button31:focus > i {
+button.button31.btn-warning:focus > i {
     
   -webkit-animation: rotate31 1s linear infinite forwards;
   animation: rotate31 1s linear infinite forwards;
 }
-button.button31:focus:after > i, button.button31:focus:before > i {
+button.button31.btn-warning:focus:after > i, button.button31.btn-warning:focus:before > i {
   content: "";
   position: absolute;
   z-index: -1;

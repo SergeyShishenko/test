@@ -415,6 +415,8 @@
                         });
                  });
 
+                
+
 
                 //Удаляем запись при клике по крестику
                 // $("body").on("click", "#responds .del_button", function(e) {
@@ -679,16 +681,78 @@
 
  
 
-var obj = null;
-     $("body").on( "focus","button.button31" , function (e) {
-            e.preventDefault();
-            obj = this;
-            // alert("click");
-            setTimeout(
-                function() { $(obj).blur() }, 2000
-                );
-                $(this).removeClass('btn-warning');    
-     }); 
+// var obj = null;
+//      $("body").on( "focus","button.button31" , function (e) {
+//             e.preventDefault();
+//             obj = this;
+//             // alert("click");
+//             setTimeout(
+//                 function() { $(obj).blur() }, 2000
+//                 );
+//                 $(this).removeClass('btn-warning');    
+//      }); 
+
+  // Обновляем запись, когда произошел клик по кнопке refresh
+  var obj = null;
+  $("body").on( "click","button.btn.button31.btn-warning" , function (e) {
+
+    e.preventDefault();
+    obj = this;
+    // $(this).removeClass('btn-warning');
+    // alert($(this).attr('class'));
+    // alert($(obj).data('field'));
+    var recipient = $(obj).parent().parent().find($("[id*='recipient']"));
+    var val = recipient.val();
+    val = $.trim(val);
+
+    if(val==="") //simple validation
+    {
+        alert("Введите наименование!");
+        return false;
+    }
+    // else{alert($(this).parent().parent().find($("[id*='recipient']")).val());}
+        //post variables
+    $('input[id="field"]').val($(obj).data('field'));
+    var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
+    var DbNumberID = clickedID[1]; //и получаем номер из массива
+
+    var myData = "content_txt="+ recipient.val() +"&"+
+                "tbl="+ $("#tbl").val() +"&"+
+                "field="+ $("#field").val() +"&"+
+                "fieldid="+ $("#fieldid").val() +"&"+
+                "id="+ DbNumberID;
+        // "name=John&location=Boston"
+        jQuery.ajax({
+            type: "POST", // HTTP метод  POST или GET
+            url: "change.php", //url-адрес, по которому будет отправлен запрос
+            dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
+            data:myData, //данные, которые будут отправлены на сервер (post переменные)
+            success:function(response){
+            // $("#"+$("#tbl").val()+"_"+ DbNumberID).text(recipient.val());
+            // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',recipient.val());
+            //     // для img
+            // $("#image-"+ DbNumberID).find('img').data('name',recipient.val());
+            // // для разделов
+            // $("#item_"+ DbNumberID).find("#"+$("#tbl").val()+"-"+ DbNumberID).data('name',recipient.val());
+            // // $("#contentText").val(''); //очищаем текстовое поле после успешной вставки
+            // alert(obj.attr('class')+' NEW '+recipient.val());
+            $(obj).blur();
+            $(obj).removeClass('btn-warning');
+            },
+            error:function (xhr, ajaxOptions, thrownError){
+                alert(thrownError); //выводим ошибку
+            }
+        });
+    });
+
+
+
+
+
+
+
+
+
 
 $("body").on( "change",".form-control" , function (e) {
     e.preventDefault();
