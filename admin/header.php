@@ -53,8 +53,7 @@
     <link rel="shortcut icon" href="img/shesterenka-admin.png">
 
     <style>
-        /* чтобы не дергалось окно */
-        /* .modal-open{overflow:auto;} */
+       
 
         /* /pages-213/demo/html/tabs_accordian.html */
         .nav-tabs.nav-tabs-left {
@@ -264,7 +263,7 @@ li[id^="tb-"]:not(.active){display:none !important;}
 }
 .close:hover { background: #00d9ff; }
 
-/* .modal-dialog{width:95% !important; } */
+
 
 .form-control-label{color:#317eac;}
 textarea {
@@ -326,6 +325,17 @@ button.button31:focus:after > i, button.button31:focus:before > i {
 @keyframes rotate31 {
   100% {transform: rotate(360deg);}
 }
+
+.modal-dialog{
+    width:80% !important;
+    height:100% !important;
+ }
+
+/* чтобы не дергалось модальное окно */
+/* body.modal-open {
+    overflow: auto;
+    padding-right: 0px !important;
+} */
 </style>
 </head>
 

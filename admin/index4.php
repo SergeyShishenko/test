@@ -685,7 +685,7 @@ var obj = null;
                 $(this).removeClass('btn-warning');    
      }); 
 
-$("body").on( "change","input.form-control" , function (e) {
+$("body").on( "change",".form-control" , function (e) {
     e.preventDefault();
                 // alert('btn-warning');
                 $(this).parent().find('.input-group-btn > button.button31').addClass('btn-warning');
