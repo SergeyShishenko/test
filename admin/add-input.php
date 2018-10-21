@@ -556,7 +556,7 @@ switch ($tbl) {
                                     class="glyphicon glyphicon-chevron-down"></i></a>       
                         </div>
                     </div>
-                    <div class="box-content">   
+                    <div class="box-content obj_in_addition">   
                     ';
 
                     echo '<div class="row row1">

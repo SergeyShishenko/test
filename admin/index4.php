@@ -694,23 +694,113 @@ $("body").on( "change",".form-control" , function (e) {
 
   $("body").on( "click","button.btn.btn-primary.button33" , function (e) {
     e.preventDefault();
-    // alert($(this).parents('.obj_alias').attr('class'));
-                $(this).parents('.obj_alias').append('<div class="row">'+
-                                '<div class="input-group col-md-12">'+
-                                    '<div class="input-group "> ' +                     
-                                        '<span class="input-group-addon"></span>'+
-                                        '<input type="text" class="form-control" id="recipient-obj_alias " value="KRYWORD" required>'+
-                                        '<span class="input-group-btn">'+
+    // alert($(this).parent().parent().parent().parent().parent().attr('class'));
+    // alert($(this).parent().parent().parent().parent().parent().hasClass('obj_in_addition'));
+      if ($(this).parent().parent().parent().parent().parent().hasClass('obj_in_addition'))
+        {$(this).parent().parent().parent().parent().parent().append('<div class="row">'+
+            '<div class="input-group col-md-12">'+
+                                '<div class="input-group ">' +                      
+                                    '<span class="input-group-addon">fname_img_obj_in_addition</span>'+
+                                    '<input type="text" class="form-control" id="recipient-url_video_obj_prop" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
+                                    '<span class="input-group-btn">'+
                                             '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
                                             '<button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>'+
-                                            '<button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>'+                                          
-                                        '</span>'+
-                                    '</div>'+
+                                            '<button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>'+  
+                                            '<button type="button" class="btn btn-minimize btn-default button34"><i class="glyphicon glyphicon-chevron-down"></i></button>'+                                                                                    
+                                    '</span>'+
                                 '</div>'+
-                            '</div>'
-                            );
+                                '<div class="box-content">'+
+                                    '<div class="row">'+
+                                        '<div class="input-group col-md-12">'+
+                                            '<div class="input-group ">'+                      
+                                                '<span class="input-group-addon">html_in_addition_id</span>'+
+                                                '<input type="text" class="form-control" id="recipient-html_in_addition_id" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
+                                                '<span class="input-group-btn">'+
+                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                '</span>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                    '<div class="row">'+
+                                        '<div class="input-group col-md-12">'+
+                                            '<div class="input-group ">'+                       
+                                                '<span class="input-group-addon">path_img_obj_in_addition</span>'+
+                                                '<input type="text" class="form-control" id="recipient-path_img_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
+                                                '<span class="input-group-btn">'+
+                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                '</span>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                    '<div class="row">'+
+                                        '<div class="input-group col-md-12">'+
+                                            '<div class="input-group "> '+                      
+                                                '<span class="input-group-addon">data_href_img_obj_in_addition</span>'+
+                                                '<input type="text" class="form-control" id="recipient-data_href_img_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
+                                                '<span class="input-group-btn">'+
+                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                '</span>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                    '<div class="row">'+
+                                        '<div class="input-group col-md-12">'+
+                                            '<div class="input-group ">'+                       
+                                                '<span class="input-group-addon">fname_img_smoll_obj_in_addition</span>'+
+                                                '<input type="text" class="form-control" id="recipient-fname_img_smoll_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
+                                                '<span class="input-group-btn">'+
+                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                '</span>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                    '<div class="row">'+
+                                        '<div class="input-group col-md-12">'+
+                                            '<div class="input-group ">' +                      
+                                                '<span class="input-group-addon">data_href_img_smoll_obj_in_addition</span>'+
+                                                '<input type="text" class="form-control" id="recipient-data_href_img_smoll_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
+                                                '<span class="input-group-btn">'+
+                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                '</span>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+
+                                    '<div class="row">'+
+                                        '<div class="input-group col-md-12">'+
+                                            '<div class="input-group ">'+                       
+                                                '<span class="input-group-addon">img_def</span>'+
+                                                '<textarea class="form-control"  name="text"></textarea>'+
+                                                '<span class="input-group-btn">'+
+                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                '</span>'+
+                                            '</div>'+
+                                        '</div>'+
+                                    '</div>'+                                     
+                                '</div>'+
+                            '</div>'+
+                        '</div>'
+                    );
+        }
+        // obj_alias
+        else {$(this).parent().parent().parent().parent().parent().append('<div class="row">'+
+                        '<div class="input-group col-md-12">'+
+                            '<div class="input-group "> ' +                     
+                                '<span class="input-group-addon"></span>'+
+                                '<input type="text" class="form-control" id="recipient-obj_alias " value="KRYWORD" required>'+
+                                '<span class="input-group-btn">'+
+                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                    '<button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>'+
+                                    '<button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>'+                                          
+                                '</span>'+
+                            '</div>'+
+                        '</div>'+
+                    '</div>'
+                    );
+                }
             
-            }); 
+    });
+            
+    
             
     $("body").on( "click","button.btn.btn-danger.button32" , function (e) {
     e.preventDefault();
