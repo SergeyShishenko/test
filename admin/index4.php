@@ -37,13 +37,13 @@
                     <div class="box-icon">
                         <a href="#" class="btn btn-setting btn-round btn-default" 
                             id="head-'.$row_head["head_id"].'"
-                            data-content="РЕДАКТИРОВАТЬ"
+                            data-content="РЕДАКТИРОВАТЬ РАЗДЕЛ"
                             data-name="'.$row_head["name_head"].'"
                             data-href="'.$row_head["data_href_head"].'"
                             data-order="'.$row_head["number_in_order_head"].'"
                             data-toggle="modal"
                             data-target="#myModal" 
-                            title="РЕДАКТИРОВАТЬ" 
+                            title="РЕДАКТИРОВАТЬ РАЗДЕЛ" 
                             data-tbl="head"
                             data-field="name_head"
                             data-field-id="head_id"
@@ -85,6 +85,7 @@
                                                         data-toggle="modal"
                                                         data-target="#myModal" 
                                                         title="ДОБАВИТЬ КАТЕГОРИЮ"
+                                                        data-title="КАТЕГОРИЮ"
                                                         data-tbl="category"
                                                         data-field="name_category"
                                                         data-field-id="category_id"
@@ -102,7 +103,8 @@
                                                         echo ' 
                                                         <li class="'.$active.'">
                                                             <a data-toggle="tab" href="#tab-fillup'.$row_category["category_id"].'"
-                                                            data-tbl="category"                                                            
+                                                            data-tbl="category"
+                                                            data-title="КАТЕГОРИЮ"                                                             
                                                             data-name="'.$row_category["name_category"].'"
                                                             data-href="'.$row_category["data_href_category"].'"
                                                             data-order="'.$row_category["number_in_order_category"].'"
@@ -173,6 +175,7 @@
                                                                                     <li class="'.$active.'">
                                                                                         <a data-toggle="tab" href="#tabobj'.$row_grupp["grupp_id"].'"
                                                                                         data-tbl="grupp"
+                                                                                        data-title="ГРУППУ"
                                                                                         data-name="'.$row_grupp["name_grupp"].'"
                                                                                         data-html-id="'.$row_grupp["html_id"].'"
                                                                                         data-category_id="'.$row_grupp["category_id"].'"
@@ -247,7 +250,7 @@
                                                                                                                     alt="'. $row_obj["img_alt_obj"].'"
                                                                                                                     data-parent="grupp_id-'.$grupp_id.'"
                                                                                                                     data-id="obj_'.$i.'"
-                                                                                                                    data-content="РЕДАКТИРОВАТЬ"
+                                                                                                                    data-content="РЕДАКТИРОВАТЬ ОБЪЕКТ"
                                                                                                                     data-name="'.$row_obj["name_obj"].'"
                                                                                                                 >
                                                                                                             </a>
@@ -465,7 +468,7 @@
                                 '<p>' +
                                     '<a href="#"'+
                                     ' class="gallery-edit btn"'+
-                                    ' title="РЕДАКТИРОВАТЬ"' +
+                                    ' title="РЕДАКТИРОВАТЬ ОБЪЕКТ"' +
                                     ' data-toggle="modal"'+
                                     ' data-target="#myModal" '+
                                     ' data-parent="' + parent +'"'+
@@ -476,7 +479,7 @@
                                     ' data-name="'+ name +'"'+
                                     ' data-field-id="obj_id">'+
                                     '<i class="glyphicon glyphicon-edit" ></i>'+
-                                    '</a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ЭЛЕМЕНТ" data-toggle="modal" data-target="#myModal" >'+
+                                    '</a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ОБЪЕКТ" data-toggle="modal" data-target="#myModal" >'+
                                     '<i class="glyphicon glyphicon-plus-sign"></i>'+
                                     '</a>'+
                                 '</p>'+
@@ -504,12 +507,14 @@
             var id = $(this).find('a').data('id'); 
             var href = $(this).find('a').data('href'); 
             var order = $(this).find('a').data('order');
-            var htmlid = $(this).find('a').data('html-id');  
+            var htmlid = $(this).find('a').data('html-id'); 
+            var title = $(this).find('a').data('title'); 
+            
             $(this).append(
                 '<div class=" tab-controls">'+
                 '<p>'+
-                '<a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ!"'+ 
-                'data-content="РЕДАКТИРОВАТЬ"'+ 
+                '<a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ ' + title + '"' + 
+                'data-content="РЕДАКТИРОВАТЬ ' + title + '"' + 
                 'data-name="' + name + '" ' +
                 'data-toggle="modal" '+
                 'data-target="#myModal" '+
