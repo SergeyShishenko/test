@@ -3,7 +3,7 @@
 define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
 
-// $dbconn=dbconnect();
+$dbconn=dbconnect();
 //проверяем $_POST["content_txt"] на пустое значение
 // if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
 // {
@@ -181,7 +181,14 @@ switch ($tbl) {
             ';
         echo '</li>';
         break;
+
+
     case "obj":
+    $clickedID = explode( '_', $id ); //Разбиваем строку (Split работает аналогично PHP explode)
+    $DbNumberID = $clickedID[1]; //и получаем номер из массива
+    $Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE obj_id = $DbNumberID");//MySQL запрос
+    $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы
+    // $row_obj["obj_id"]
         echo '<li id="tb-head" class="active">';      
      
 
@@ -201,7 +208,7 @@ switch ($tbl) {
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
                     <span class="input-group-addon">Идентификатор (html_id)</span>
-                    <input type="text" class="form-control" id="recipient-html-id" value="'.$htmlid.'" required>
+                    <input type="text" class="form-control" id="recipient-html-id" value="'.$row_obj["html_id"].'" required>
                     <span class="input-group-btn">
                         <button type="button"  data-field ="html_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
@@ -213,7 +220,7 @@ switch ($tbl) {
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
                     <span class="input-group-addon">Путь к изображению (path_img_obj)</span>
-                    <input type="text" class="form-control" id="recipient-path_img_obj" value="'.$i.'" required>
+                    <input type="text" class="form-control" id="recipient-path_img_obj" value="'.$row_obj["path_img_obj"].'" required>
                     <span class="input-group-btn">
                         <button type="button"  data-field ="path_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
@@ -225,7 +232,7 @@ switch ($tbl) {
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
                     <span class="input-group-addon">Имя файла изображения (fname_img_obj)</span>
-                    <input type="text" class="form-control" id="recipient-fname_img_obj " value="'.$i.'" required>
+                    <input type="text" class="form-control" id="recipient-fname_img_obj " value="'.$row_obj["fname_img_obj"].'" required>
                     <span class="input-group-btn">
                         <button type="button"  data-field ="fname_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
@@ -237,7 +244,7 @@ switch ($tbl) {
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
                     <span class="input-group-addon">data_href изображения (data_href_img_obj)</span>
-                    <input type="text" class="form-control" id="recipient-data_href " value="'.$i.'" required>
+                    <input type="text" class="form-control" id="recipient-data_href " value="'.$row_obj["data_href_img_obj"].'" required>
                     <span class="input-group-btn">
                         <button type="button"  data-field ="data_href_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
@@ -249,7 +256,7 @@ switch ($tbl) {
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
                     <span class="input-group-addon">Номер по порядку (number_in_order_obj)</span>
-                    <input type="text" class="form-control" id="recipient-order" value="'.$order.'" required>
+                    <input type="text" class="form-control" id="recipient-order" value="'.$row_obj["number_in_order_obj"].'" required>
                     <span class="input-group-btn">
                         <button type="button"  data-field ="number_in_order_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
@@ -258,7 +265,7 @@ switch ($tbl) {
           </div>
         ';
 
-
+        mysqli_free_result($Result_obj); 
 
         echo '    
         <div class="row">
@@ -652,6 +659,6 @@ switch ($tbl) {
         
 }
 
-
+mysqli_close($dbconn);
 
 ?>
