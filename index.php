@@ -3336,9 +3336,9 @@ include 'inc-version-css-js.php';
                     <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL1--> 
 
                     <!-- ШАБЛОНЫ ВЫХОДНЫХ ДОКУМЕНТОВ --> 
-                    <TR id="shablony-dokumentov-titulniki">
+                    <TR id="shablony-dokumentov-titulnyy-kd">
                         <TD  data-tooltip="ШАБЛОНЫ ВЫХОДНЫХ ДОКУМЕНТОВ" class="hover mapsite first-main"  id="footer2">
-                                <p  data-href="shablony-dokumentov-titulniki.php"  data-img="./dist/images/no-foto.png" id="floating3">ШАБЛОНЫ ДОКУМЕНТОВ <span><br>~- shablony-dokumentov-titulniki</span></p>
+                                <p  data-href="shablony-dokumentov-titulnyy-kd.php"  data-img="./dist/images/no-foto.png" id="floating3">ШАБЛОНЫ ДОКУМЕНТОВ <span><br>~- shablony-dokumentov-titulniki</span></p>
                         </TD>
                         <TD>
                             <TABLE >                               
