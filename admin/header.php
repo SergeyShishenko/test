@@ -18,8 +18,7 @@
     -->
     <meta charset="utf-8">
     <title>Админ панель 500СТП</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta name="description" content="Charisma, a fully featured, responsive, HTML5, Bootstrap admin template."> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">   
     <meta name="author" content="Muhammad Usman">
 
     <!-- The styles -->
@@ -38,8 +37,7 @@
     <link href='css/elfinder.theme.css' rel='stylesheet'>
     <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
     <link href='css/uploadify.css' rel='stylesheet'>
-    <link href='css/animate.min.css' rel='stylesheet'>
-    <!-- <link href='css/pages.css' rel='stylesheet'> -->
+    <link href='css/animate.min.css' rel='stylesheet'>   
 
     <!-- jQuery -->
     <script src="bower_components/jquery/jquery.min.js"></script>
@@ -331,11 +329,7 @@ button.button31.btn-warning:focus:after > i, button.button31.btn-warning:focus:b
     height:100% !important;
  }
 
-/* чтобы не дергалось модальное окно */
-/* body.modal-open {
-    overflow: auto;
-    padding-right: 0px !important;
-} */
+
 </style>
 </head>
 
@@ -413,55 +407,7 @@ button.button31.btn-warning:focus:after > i, button.button31.btn-warning:focus:b
     <div class="row">
         <?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
 
-        <!-- left menu starts -->
-        <!-- <div class="col-sm-2 col-lg-2">
-            <div class="sidebar-nav">
-                <div class="nav-canvas">
-                    <div class="nav-sm nav nav-stacked">
-
-                    </div>
-                    <ul class="nav nav-pills nav-stacked main-menu">
-                        <li class="nav-header">Main</li>
-                        <li><a class="ajax-link" href="index.php"><i class="glyphicon glyphicon-home"></i><span> Dashboard</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="ui.php"><i class="glyphicon glyphicon-eye-open"></i><span> UI Features</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="form.php"><i
-                                    class="glyphicon glyphicon-edit"></i><span> Forms</span></a></li>
-                        <li><a class="ajax-link" href="chart.php"><i class="glyphicon glyphicon-list-alt"></i><span> Charts</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="typography.php"><i class="glyphicon glyphicon-font"></i><span> Typography</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="gallery.php"><i class="glyphicon glyphicon-picture"></i><span> Gallery</span></a>
-                        </li>
-                        <li class="nav-header hidden-md">Sample Section</li>
-                        <li><a class="ajax-link" href="table.php"><i
-                                    class="glyphicon glyphicon-align-justify"></i><span> Tables</span></a></li>
-                        <li class="accordion">
-                            <a href="#"><i class="glyphicon glyphicon-plus"></i><span> Accordion Menu</span></a>
-                            <ul class="nav nav-pills nav-stacked">
-                                <li><a href="#">Child Menu 1</a></li>
-                                <li><a href="#">Child Menu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a class="ajax-link" href="calendar.php"><i class="glyphicon glyphicon-calendar"></i><span> Calendar</span></a>
-                        </li>
-                        <li><a class="ajax-link" href="grid.php"><i
-                                    class="glyphicon glyphicon-th"></i><span> Grid</span></a></li>
-                        <li><a href="tour.php"><i class="glyphicon glyphicon-globe"></i><span> Tour</span></a></li>
-                        <li><a class="ajax-link" href="icon.php"><i
-                                    class="glyphicon glyphicon-star"></i><span> Icons</span></a></li>
-                        <li><a href="error.php"><i class="glyphicon glyphicon-ban-circle"></i><span> Error Page</span></a>
-                        </li>
-                        <li><a href="login.php"><i class="glyphicon glyphicon-lock"></i><span> Login Page</span></a>
-                        </li>
-                    </ul>
-                    <label id="for-is-ajax" for="is-ajax"><input id="is-ajax" type="checkbox"> Ajax on menu</label>
-                </div>
-            </div>
-        </div> -->
-        <!--/span-->
-        <!-- left menu ends -->
+      
 
         <noscript>
             <div class="alert alert-block col-md-12">

@@ -147,7 +147,7 @@ switch ($tbl) {
                         <span class="input-group-addon">Идентификатор (html_id)</span>
                         <input type="text" class="form-control" id="recipient-html-id" value="'.$htmlid.'" required>
                         <span class="input-group-btn">
-                            <button type="button" class="btn  data-field ="html_id" btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button"  data-field ="html_id" class="btn  btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
