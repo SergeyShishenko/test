@@ -32,7 +32,7 @@
                             <div class="row">
                                 <div class="input-group col-md-12">
                                     <div class="input-group ">
-                                        <!--<span class="input-group-addon"><i class="glyphicon glyphicon-envelope red"></i></span>-->
+                                        
                                         <span class="input-group-addon">Имя</span>
                                         <input type="text" class="form-control"  id="recipient-name"  required>
                                         <span class="input-group-btn">

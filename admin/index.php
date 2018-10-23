@@ -33,7 +33,7 @@
         <div class="box col-md-12" id="item_'.$row_head["head_id"].'">
             <div class="box-inner">
                 <div class="box-header well">
-                    <h2 ><i class="glyphicon glyphicon-th"></i> <span id="head_'.$row_head["head_id"].'">'.$row_head["name_head"].'</span></h2>
+                    <h2 ><i class="glyphicon glyphicon-th"></i> <span id="name_head_'.$row_head["head_id"].'">'.$row_head["name_head"].'</span></h2>
                     <div class="box-icon">
                         <a href="#" class="btn btn-setting btn-round btn-default" 
                             id="head-'.$row_head["head_id"].'"
@@ -112,7 +112,7 @@
                                                             data-field-id="category_id"
                                                             data-parent="head_id-'.$head_id.'"
                                                             data-id="category_'.$row_category["category_id"].'"
-                                                            ><span  id="category_'.$row_category["category_id"].'">'.$row_category["name_category"].'</span></a>
+                                                            ><span  id="name_category_'.$row_category["category_id"].'">'.$row_category["name_category"].'</span></a>
                                                         </li> 
                                                         ';
                                                         $active="";
@@ -704,8 +704,9 @@
     // $(this).removeClass('btn-warning');
     // alert($(this).attr('class'));
     // alert($(obj).data('field'));
-    var recipient = $(obj).parent().parent().find($("[id*='recipient']"));
+    var recipient = $(obj).parent().parent().find($("[id*='recipient']")); // значение
     var val = recipient.val();
+    // var datafieid =$(obj).data('field')).val();
     val = $.trim(val);
 
     if(val==="") //simple validation
@@ -715,7 +716,8 @@
     }
     // else{alert($(this).parent().parent().find($("[id*='recipient']")).val());}
         //post variables
-    $('input[id="field"]').val($(obj).data('field'));
+        alert($(obj).data('field'));
+        $('input[id="field"]').val($(obj).data('field')).val(); // установка поля
     var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
     var DbNumberID = clickedID[1]; //и получаем номер из массива
 
@@ -731,9 +733,10 @@
             dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
             data:myData, //данные, которые будут отправлены на сервер (post переменные)
             success:function(response){
-            // $("#"+$("#tbl").val()+"_"+ DbNumberID).text(recipient.val());
+                // alert($("#"+$("#tbl").val()).text() + DbNumberID + " "+ recipient.val());
+            $("#"+$("#field").val()+"_"+ DbNumberID).text(recipient.val());
             // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',recipient.val());
-            //     // для img
+                // для img
             // $("#image-"+ DbNumberID).find('img').data('name',recipient.val());
             // // для разделов
             // $("#item_"+ DbNumberID).find("#"+$("#tbl").val()+"-"+ DbNumberID).data('name',recipient.val());
