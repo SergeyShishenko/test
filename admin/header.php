@@ -328,8 +328,11 @@ button.button31.btn-warning:focus:after > i, button.button31.btn-warning:focus:b
     width:80% !important;
     height:100% !important;
  }
-
-
+/* убрать подсветку последнего select */
+.input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child) {
+    /* border-radius: 0px; */
+    border-radius: 4px;
+}
 </style>
 </head>
 
