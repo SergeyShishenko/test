@@ -60,19 +60,23 @@ $dbconn=dbconnect();
 // echo '<br>id - '.$id ;
 
 
-
+$clickedID = explode( '_', $id ); //Разбиваем строку (Split работает аналогично PHP explode)
+$DbNumberID = $clickedID[1]; //и получаем номер из массива
 
 switch ($tbl) {
     case "head":
+    $Result_head = mysqli_query($dbconn,"SELECT *  FROM head WHERE head_id = $DbNumberID");//MySQL запрос
+    $row_head = mysqli_fetch_array($Result_head);//получаем все записи из таблицы
+    // $row_head["obj_id"]
         echo '<li id="tb-head" class="active">';
 
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">                       
                         <span class="input-group-addon">Файл</span>
-                        <input type="text" class="form-control" id="recipient-href" value="'.$href.'" required>
+                        <input type="text" class="form-control" id="recipient-href" value="'.$row_head["data_href_head"].'" required>
                         <span class="input-group-btn">
-                            <button type="button" data-field ="data_href_head" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button" data-tbl="head" data-field ="data_href_head" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
@@ -83,27 +87,30 @@ switch ($tbl) {
                 <div class="input-group col-md-12">
                     <div class="input-group ">                      
                         <span class="input-group-addon">Номер по порядку</span>
-                        <input type="text" class="form-control"  id="recipient-order" value="'.$order.'" required>
+                        <input type="text" class="form-control"  id="recipient-order" value="'.$row_head["number_in_order_head"].'" required>
                         <span class="input-group-btn">
-                            <button type="button" data-field ="number_in_order_head" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button"  data-tbl="head"  data-field ="number_in_order_head" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
             </div>
             ';
         echo '</li>';
+        mysqli_free_result($Result_head); 
         break;
 
     case "category":
+    $Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE category_id = $DbNumberID");//MySQL запрос
+    $row_category = mysqli_fetch_array($Result_head);//получаем все записи из таблицы
         echo '<li id="tb-head" class="active">';
 
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">                       
                         <span class="input-group-addon">Файл</span>
-                        <input type="text" class="form-control" id="recipient-href" value="'.$href.'" required>
+                        <input type="text" class="form-control" id="recipient-href" value="'.$row_category["data_href_category"].'" required>
                         <span class="input-group-btn">
-                            <button type="button" data-field ="data_href_category" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button"  data-tbl="category"  data-field ="data_href_category" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
@@ -114,9 +121,9 @@ switch ($tbl) {
                 <div class="input-group col-md-12">
                     <div class="input-group ">                      
                         <span class="input-group-addon">Родитель</span>
-                        <input type="text" class="form-control" id="recipient-head_id" value="'.$parent.'" required>
+                        <input type="text" class="form-control" id="recipient-head_id" value="head_id-'.$row_category["head_id"].'" required>
                         <span class="input-group-btn">
-                            <button type="button"  data-field ="head_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button"   data-tbl="category"  data-field ="head_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
@@ -127,16 +134,20 @@ switch ($tbl) {
                 <div class="input-group col-md-12">
                     <div class="input-group ">                      
                         <span class="input-group-addon">Номер по порядку</span>
-                        <input type="text" class="form-control" id="recipient-order" value="'.$order.'" required>
+                        <input type="text" class="form-control" id="recipient-order" value="'.$row_category["number_in_order_category"].'" required>
                         <span class="input-group-btn">
-                            <button type="button"   data-field ="number_in_order_category" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button"   data-tbl="category"   data-field ="number_in_order_category" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
             </div>
             ';
         echo '</li>';
+        mysqli_free_result($Result_category); 
         break;
+
+    
+
     case "grupp":
         echo '<li id="tb-head" class="active">';
 
@@ -147,7 +158,7 @@ switch ($tbl) {
                         <span class="input-group-addon">Идентификатор (html_id)</span>
                         <input type="text" class="form-control" id="recipient-html-id" value="'.$htmlid.'" required>
                         <span class="input-group-btn">
-                            <button type="button"  data-field ="html_id" class="btn  btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button"   data-tbl="grupp"  data-field ="html_id" class="btn  btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
@@ -160,7 +171,7 @@ switch ($tbl) {
                         <span class="input-group-addon">Родитель</span>
                         <input type="text" class="form-control" id="recipient-category_id" value="'.$parent.'" required>
                         <span class="input-group-btn">
-                            <button type="button"   data-field ="category_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button"  data-tbl="grupp"   data-field ="category_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
@@ -173,7 +184,7 @@ switch ($tbl) {
                         <span class="input-group-addon">Номер по порядку</span>
                         <input type="text" class="form-control" id="recipient-order" value="'.$order.'" required>
                         <span class="input-group-btn">
-                            <button type="button" data-field ="number_in_order_grupp" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button" data-tbl="grupp"  data-field ="number_in_order_grupp" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
@@ -184,8 +195,7 @@ switch ($tbl) {
 
 
     case "obj":
-    $clickedID = explode( '_', $id ); //Разбиваем строку (Split работает аналогично PHP explode)
-    $DbNumberID = $clickedID[1]; //и получаем номер из массива
+    
     $Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE obj_id = $DbNumberID");//MySQL запрос
     $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы
     // $row_obj["obj_id"]
