@@ -29,7 +29,7 @@
                         <input type="hidden" id="fieldid" value="">
                         <input type="hidden" id="id" value="">
                         <div class="form-group ">
-                            <div class="row">
+                            <!-- <div class="row">
                                 <div class="input-group col-md-12">
                                     <div class="input-group ">
                                         
@@ -40,7 +40,7 @@
                                         </span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
 
                             <ul class="list-tbl">

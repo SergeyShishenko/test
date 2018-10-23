@@ -184,7 +184,7 @@
                                                                                         data-field-id="grupp_id"
                                                                                         data-parent="category_id-'.$category_id.'"
                                                                                         data-id="grupp_'.$row_grupp["grupp_id"].'"
-                                                                                        ><span id="grupp_'.$row_grupp["grupp_id"].'">'.$name_grupp.'</span></a>
+                                                                                        ><span id="name_grupp_'.$row_grupp["grupp_id"].'">'.$name_grupp.'</span></a>
                                                                                     </li>
 
 
@@ -238,7 +238,7 @@
                                                                                                     // for ($i = 1; $i <= 24; $i++) { 
                                                                                                     $i =$row_obj["obj_id"];
                                                                                                 echo'  <li id="image-'. $i.'" class="thumbnail" data-name="'.$row_obj["name_obj"].'">
-                                                                                                            <p class="" id="obj_'.$row_obj["grupp_id"].'">'. $row_obj["name_obj"].'</p>
+                                                                                                            <p class="" id="name_obj_'.$row_obj["grupp_id"].'">'. $row_obj["name_obj"].'</p>
                                                                                                             <a style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].')"
                                                                                                                 title="'. $row_obj["img_alt_obj"].'"
                                                                                                                 href="'. substr($row_obj["path_img_obj"],1).$row_obj["fname_img_obj"].'"
@@ -716,7 +716,7 @@
     }
     // else{alert($(this).parent().parent().find($("[id*='recipient']")).val());}
         //post variables
-        alert($(obj).data('field'));
+        // alert($(obj).data('field'));
         $('input[id="field"]').val($(obj).data('field')).val(); // установка поля
     var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
     var DbNumberID = clickedID[1]; //и получаем номер из массива

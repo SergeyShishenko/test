@@ -68,6 +68,20 @@ switch ($tbl) {
     $Result_head = mysqli_query($dbconn,"SELECT *  FROM head WHERE head_id = $DbNumberID");//MySQL запрос
     $row_head = mysqli_fetch_array($Result_head);//получаем все записи из таблицы
     // $row_head["obj_id"]
+
+        echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">
+                        
+                        <span class="input-group-addon">Имя</span>
+                        <input type="text" class="form-control"  id="recipient-name" value="'.$row_head["name_head"].'" required>
+                        <span class="input-group-btn">
+                            <button type="button"  data-tbl="head" data-field ="name_head" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        ';
         echo '<li id="tb-head" class="active">';      
 
         echo '<div class="row">
@@ -102,6 +116,20 @@ switch ($tbl) {
     case "category":
     $Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE category_id = $DbNumberID");//MySQL запрос
     $row_category = mysqli_fetch_array($Result_category);//получаем все записи из таблицы
+
+    echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">
+                        
+                        <span class="input-group-addon">Имя</span>
+                        <input type="text" class="form-control"  id="recipient-name" value="'.$row_category["name_category"].'" required>
+                        <span class="input-group-btn">
+                            <button type="button"  data-tbl="category" data-field ="name_category" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            ';
         echo '<li id="tb-head" class="active">';
 
         echo '<div class="row">
@@ -151,6 +179,21 @@ switch ($tbl) {
     case "grupp":
     $Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE grupp_id = $DbNumberID");//MySQL запрос
     $row_grupp = mysqli_fetch_array($Result_grupp);//получаем все записи из таблицы
+
+        echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">
+                        
+                        <span class="input-group-addon">Имя</span>
+                        <input type="text" class="form-control"  id="recipient-name" value="'.$row_grupp["name_grupp"].'" required>
+                        <span class="input-group-btn">
+                            <button type="button"  data-tbl="grupp" data-field ="name_grupp" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            ';
+
         echo '<li id="tb-head" class="active">';
 
 
@@ -202,6 +245,20 @@ switch ($tbl) {
     $Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE obj_id = $DbNumberID");//MySQL запрос
     $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы
     // $row_obj["obj_id"]
+
+         echo '<div class="row">
+                    <div class="input-group col-md-12">
+                        <div class="input-group ">
+                            
+                            <span class="input-group-addon">Имя</span>
+                            <input type="text" class="form-control"  id="recipient-name" value="'.$row_obj["name_obj"].'" required>
+                            <span class="input-group-btn">
+                                <button type="button"  data-tbl="obj" data-field ="name_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                ';
         echo '<li id="tb-head" class="active">';      
      
 
