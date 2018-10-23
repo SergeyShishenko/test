@@ -198,7 +198,7 @@ switch ($tbl) {
                         <span class="input-group-addon">Родитель (grupp_id)</span>
                         <input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required>
                         <span class="input-group-btn">
-                            <button type="button"  data-field ="grupp_id" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button" data-tbl="obj" data-field ="grupp_id" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
@@ -210,7 +210,7 @@ switch ($tbl) {
                     <span class="input-group-addon">Идентификатор (html_id)</span>
                     <input type="text" class="form-control" id="recipient-html-id" value="'.$row_obj["html_id"].'" required>
                     <span class="input-group-btn">
-                        <button type="button"  data-field ="html_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        <button type="button"  data-tbl="obj"  data-field ="html_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
                 </div>
             </div>
@@ -222,7 +222,7 @@ switch ($tbl) {
                     <span class="input-group-addon">Путь к изображению (path_img_obj)</span>
                     <input type="text" class="form-control" id="recipient-path_img_obj" value="'.$row_obj["path_img_obj"].'" required>
                     <span class="input-group-btn">
-                        <button type="button"  data-field ="path_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        <button type="button"  data-tbl="obj"  data-field ="path_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
                 </div>
             </div>
@@ -234,7 +234,7 @@ switch ($tbl) {
                     <span class="input-group-addon">Имя файла изображения (fname_img_obj)</span>
                     <input type="text" class="form-control" id="recipient-fname_img_obj " value="'.$row_obj["fname_img_obj"].'" required>
                     <span class="input-group-btn">
-                        <button type="button"  data-field ="fname_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        <button type="button"  data-tbl="obj"  data-field ="fname_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
                 </div>
             </div>
@@ -246,7 +246,7 @@ switch ($tbl) {
                     <span class="input-group-addon">data_href изображения (data_href_img_obj)</span>
                     <input type="text" class="form-control" id="recipient-data_href " value="'.$row_obj["data_href_img_obj"].'" required>
                     <span class="input-group-btn">
-                        <button type="button"  data-field ="data_href_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        <button type="button"  data-tbl="obj"  data-field ="data_href_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
                 </div>
             </div>
@@ -258,7 +258,7 @@ switch ($tbl) {
                     <span class="input-group-addon">Номер по порядку (number_in_order_obj)</span>
                     <input type="text" class="form-control" id="recipient-order" value="'.$row_obj["number_in_order_obj"].'" required>
                     <span class="input-group-btn">
-                        <button type="button"  data-field ="number_in_order_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        <button type="button"  data-tbl="obj"  data-field ="number_in_order_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
                 </div>
             </div>
@@ -266,6 +266,10 @@ switch ($tbl) {
         ';
 
         mysqli_free_result($Result_obj); 
+
+        $Result_obj_download = mysqli_query($dbconn,"SELECT *  FROM obj_download WHERE obj_id = $DbNumberID");//MySQL запрос
+        $row_obj_download = mysqli_fetch_array($Result_obj_download);//получаем все записи из таблицы
+    // $row_obj_download["obj_id"]
 
         echo '    
         <div class="row">
@@ -286,9 +290,9 @@ switch ($tbl) {
                         <div class="input-group col-md-12">
                             <div class="input-group ">                       
                                 <span class="input-group-addon">PDF</span>
-                                <input type="text" class="form-control" id="recipient-PDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required>
+                                <input type="text" class="form-control" id="recipient-PDF " value="'.$row_obj_download["pdf_obj"].'" required>
                                 <span class="input-group-btn">
-                                    <button type="button"  data-field ="pdf_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    <button type="button"  data-tbl="obj_download"  data-field ="pdf_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
                             </div>
                         </div>
@@ -298,9 +302,9 @@ switch ($tbl) {
                         <div class="input-group col-md-12">
                             <div class="input-group ">                       
                                 <span class="input-group-addon">XLS</span>
-                                <input type="text" class="form-control" id="recipient-XLS " value="./dist/files/pdf/shablon-alboma-obrazcov.XLS" required>
+                                <input type="text" class="form-control" id="recipient-XLS " value="'.$row_obj_download["xls_obj"].'" required>
                                 <span class="input-group-btn">
-                                    <button type="button"  data-field ="xls_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    <button type="button"  data-tbl="obj_download"  data-field ="xls_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
                             </div>
                         </div>
@@ -310,9 +314,9 @@ switch ($tbl) {
                         <div class="input-group col-md-12">
                             <div class="input-group ">                       
                                 <span class="input-group-addon">DOC</span>
-                                <input type="text" class="form-control" id="recipient-DOC " value="./dist/files/pdf/shablon-alboma-obrazcov.DOC" required>
+                                <input type="text" class="form-control" id="recipient-DOC " value="'.$row_obj_download["doc_obj"].'" required>
                                 <span class="input-group-btn">
-                                    <button type="button"  data-field ="doc_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    <button type="button"  data-tbl="obj_download"  data-field ="doc_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
                             </div>
                         </div>
@@ -322,51 +326,104 @@ switch ($tbl) {
                         <div class="input-group col-md-12">
                             <div class="input-group ">                       
                                 <span class="input-group-addon">DWG</span>
-                                <input type="text" class="form-control" id="recipient-DWG " value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>
+                                <input type="text" class="form-control" id="recipient-DWG " value="'.$row_obj_download["dwg_obj"].'" required>
                                 <span class="input-group-btn">
-                                    <button type="button" data-field ="dwg_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    <button type="button" data-tbl="obj_download"  data-field ="dwg_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
                             </div>
                         </div>
                     </div>
                 ';
-                echo '<div class="row">
-                        <div class="input-group col-md-12">
-                            <div class="input-group ">                       
-                                <span class="input-group-addon">Print</span>
-                                <select class="form-control" >
-                                    <option selected value="noPrint">Нет</option>
-                                    <option value="">Печать</option>
-                                </select>
-                                <span class="input-group-btn">
-                                    <button type="button"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                </span>
+
+                if ($row_obj_download["data_spng"] == "noPNG")
+                {
+                 echo '<div class="row">
+                         <div class="input-group col-md-12">
+                             <div class="input-group ">  
+                             <!--<span class="input-group-addon">PNG</span>-->                     
+                                 <span class="input-group-addon">'.$row_obj_download["data_spng"].'</span>                                
+                                 <select class="form-control" >                                
+                                     <option selected value="noPNG">Нет</option>
+                                     <option value="PNG">Да</option>
+                                 </select>
+                                 <span class="input-group-btn">
+                                     <button type="button"  data-tbl="obj_download"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                 </span>
+                             </div>
+                         </div>
+                     </div>
+                 ';
+                }
+                else
+                {
+                 echo '<div class="row">
+                         <div class="input-group col-md-12">
+                             <div class="input-group ">   
+                             <!--<span class="input-group-addon">PNG</span>-->                      
+                                 <span class="input-group-addon">PNG</span>                                
+                                 <select class="form-control" >                                
+                                     <option value="noPNG">Нет</option>
+                                     <option selected value="PNG">Да</option>
+                                 </select>
+                                 <span class="input-group-btn">
+                                     <button type="button"  data-tbl="obj_download"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                 </span>
+                             </div>
+                         </div>
+                     </div>
+                 ';
+ 
+                }
+
+                if ($row_obj_download["data_prnt"] == "noPrint")
+                {
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">  
+                                  <!--<span class="input-group-addon">Print</span> -->                    
+                                    <span class="input-group-addon">'.$row_obj_download["data_prnt"].'</span>
+                                    <select class="form-control" >
+                                        <option selected value="noPrint">Нет</option>
+                                        <option value="Print">Печать</option>
+                                    </select>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ';
-                echo '<div class="row">
-                        <div class="input-group col-md-12">
-                            <div class="input-group ">                       
-                                <span class="input-group-addon">PNG</span>
-                                <select class="form-control" >
-                                    <option selected value="noPNG">Нет</option>
-                                    <option value="">Да</option>
-                                </select>
-                                <span class="input-group-btn">
-                                    <button type="button"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                </span>
+                    ';
+                }
+                else
+                {
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">   
+                                <!--<span class="input-group-addon">Print</span> -->                    
+                                    <span class="input-group-addon">'.$row_obj_download["data_prnt"].'</span>
+                                    <select class="form-control" >
+                                        <option value="noPrint">Нет</option>
+                                        <option selected value="Print">Печать</option>
+                                    </select>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ';
+                    ';
+                }
+
+            
+
+
                 echo '<div class="row">
                         <div class="input-group col-md-12">
                             <div class="input-group ">                       
                                 <span class="input-group-addon">ЮРИ-PDF</span>
-                                <input type="text" class="form-control" id="recipient-yriPDF " value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required>
+                                <input type="text" class="form-control" id="recipient-yriPDF " value="'.$row_obj_download["data_ypdf"].'" required>
                                 <span class="input-group-btn">
-                                    <button type="button"  data-field ="data_ypdf" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    <button type="button"  data-tbl="obj_download"  data-field ="data_ypdf" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
                             </div>
                         </div>
@@ -376,9 +433,9 @@ switch ($tbl) {
                         <div class="input-group col-md-12">
                             <div class="input-group ">                       
                                 <span class="input-group-addon">ЮРИ-XLS</span>
-                                <input type="text" class="form-control" id="recipient-yriXLS " value="./dist/files/pdf/shablon-alboma-obrazcov.XLS" required>
+                                <input type="text" class="form-control" id="recipient-yriXLS " value="'.$row_obj_download["data_yxls"].'" required>
                                 <span class="input-group-btn">
-                                    <button type="button"  data-field ="data_yxls" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    <button type="button"  data-tbl="obj_download"  data-field ="data_yxls" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
                             </div>
                         </div>
@@ -388,9 +445,9 @@ switch ($tbl) {
                         <div class="input-group col-md-12">
                             <div class="input-group ">                       
                                 <span class="input-group-addon">ЮРИ-DOC</span>
-                                <input type="text" class="form-control" id="recipient-yriDOC " value="./dist/files/pdf/shablon-alboma-obrazcov.DOC" required>
+                                <input type="text" class="form-control" id="recipient-yriDOC " value="'.$row_obj_download["data_ydoc"].'" required>
                                 <span class="input-group-btn">
-                                    <button type="button"  data-field ="data_ydoc" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    <button type="button"  data-tbl="obj_download"  data-field ="data_ydoc" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
                             </div>
                         </div>
@@ -406,6 +463,8 @@ switch ($tbl) {
             </div>            
         </div><!--/row-->'
         ;
+
+        mysqli_free_result($Result_obj_download); 
 
         echo '   
         <div class="row">
@@ -427,7 +486,7 @@ switch ($tbl) {
                                         <span class="input-group-addon"></span>
                                         <input type="text" class="form-control" id="recipient-obj_alias " value="KRYWORD1" required>
                                         <span class="input-group-btn">
-                                            <button type="button"  data-field ="keywords_alias" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                            <button type="button"  data-tbl="obj_alias"  data-field ="keywords_alias" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                             <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
                                             <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>                                          
                                         </span>
@@ -469,7 +528,7 @@ switch ($tbl) {
                                     <span class="input-group-addon">name_furnitur_obj_prop</span>
                                     <input type="text" class="form-control" id="recipient-name_furnitur_obj_prop" value="./dist/files/pdf/shablon-alboma-obrazcov.pdf" required>
                                     <span class="input-group-btn">
-                                            <button type="button"  data-field ="name_furnitur_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>                                                                                   
+                                            <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="name_furnitur_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>                                                                                   
                                     </span>
                                 </div>
                             </div>
@@ -481,7 +540,7 @@ switch ($tbl) {
                                     <span class="input-group-addon">articul_furnitur_obj</span>
                                     <input type="text" class="form-control" id="recipient-articul_furnitur_obj" value="./dist/files/pdf/shablon-alboma-obrazcov.XLS" required>
                                     <span class="input-group-btn">
-                                        <button type="button"  data-field ="articul_furnitur_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="articul_furnitur_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                     </span>
                                 </div>
                             </div>
@@ -493,7 +552,7 @@ switch ($tbl) {
                                     <span class="input-group-addon">made_furnitur_obj</span>
                                     <input type="text" class="form-control" id="recipient-made_furnitur_obj" value="./dist/files/pdf/shablon-alboma-obrazcov.DOC" required>
                                     <span class="input-group-btn">
-                                        <button type="button"  data-field ="made_furnitur_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="made_furnitur_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                     </span>
                                 </div>
                             </div>
@@ -505,7 +564,7 @@ switch ($tbl) {
                                     <span class="input-group-addon">url_furnitur_obj_prop</span>
                                     <input type="text" class="form-control" id="recipient-url_furnitur_obj_prop" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>
                                     <span class="input-group-btn">
-                                        <button type="button"  data-field ="url_furnitur_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="url_furnitur_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                     </span>
                                 </div>
                             </div>
@@ -517,7 +576,7 @@ switch ($tbl) {
                                     <span class="input-group-addon">url_video_obj_prop</span>
                                     <input type="text" class="form-control" id="recipient-url_video_obj_prop" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>
                                     <span class="input-group-btn">
-                                        <button type="button"  data-field ="url_video_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="url_video_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                     </span>
                                 </div>
                             </div>
@@ -551,7 +610,7 @@ switch ($tbl) {
                                     <span class="input-group-addon">fname_img_obj_in_addition</span>
                                     <input type="text" class="form-control" id="recipient-fname_img_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>
                                     <span class="input-group-btn">
-                                            <button type="button" data-field ="fname_img_obj_in_addition"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                            <button type="button" data-tbl="obj_in_addition"  data-field ="fname_img_obj_in_addition"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                             <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
                                             <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>  
                                             <button type="button" class="btn btn-minimize btn-default button34"><i class="glyphicon glyphicon-chevron-down"></i></button>                                                                                    
@@ -566,7 +625,7 @@ switch ($tbl) {
                                                         <span class="input-group-addon">html_in_addition_id</span>
                                                         <input type="text" class="form-control" id="recipient-html_in_addition_id" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>
                                                         <span class="input-group-btn">
-                                                            <button type="button"  data-field ="html_in_addition_id"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                            <button type="button" data-tbl="obj_in_addition" data-field ="html_in_addition_id"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -579,7 +638,7 @@ switch ($tbl) {
                                                         <span class="input-group-addon">path_img_obj_in_addition</span>
                                                         <input type="text" class="form-control" id="recipient-path_img_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>
                                                         <span class="input-group-btn">
-                                                            <button type="button"  data-field ="path_img_obj_in_addition" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                            <button type="button" data-tbl="obj_in_addition" data-field ="path_img_obj_in_addition" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -592,7 +651,7 @@ switch ($tbl) {
                                                         <span class="input-group-addon">data_href_img_obj_in_addition</span>
                                                         <input type="text" class="form-control" id="recipient-data_href_img_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>
                                                         <span class="input-group-btn">
-                                                            <button type="button"  data-field ="data_href_img_obj_in_addition" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                            <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_obj_in_addition" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -605,7 +664,7 @@ switch ($tbl) {
                                                         <span class="input-group-addon">fname_img_smoll_obj_in_addition</span>
                                                         <input type="text" class="form-control" id="recipient-fname_img_smoll_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>
                                                         <span class="input-group-btn">
-                                                            <button type="button" data-field ="fname_img_smoll_obj_in_addition"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                            <button type="button" data-tbl="obj_in_addition" data-field ="fname_img_smoll_obj_in_addition"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -618,7 +677,7 @@ switch ($tbl) {
                                                         <span class="input-group-addon">data_href_img_smoll_obj_in_addition</span>
                                                         <input type="text" class="form-control" id="recipient-data_href_img_smoll_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>
                                                         <span class="input-group-btn">
-                                                            <button type="button"  data-field ="data_href_img_smoll_obj_in_addition"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                            <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_smoll_obj_in_addition"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -631,7 +690,7 @@ switch ($tbl) {
                                                         <span class="input-group-addon">img_def</span>
                                                         <textarea class="form-control"  name="text"></textarea>
                                                         <span class="input-group-btn">
-                                                            <button type="button"  data-field ="img_def" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                            <button type="button" data-tbl="obj_in_addition" data-field ="img_def" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                         </span>
                                                     </div>
                                                 </div>

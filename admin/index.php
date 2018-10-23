@@ -775,7 +775,7 @@ $("body").on( "change",".form-control" , function (e) {
                                     '<span class="input-group-addon">fname_img_obj_in_addition</span>'+
                                     '<input type="text" class="form-control" id="recipient-url_video_obj_prop" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
                                     '<span class="input-group-btn">'+
-                                            '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                            '<button type="button" data-tbl="obj_in_addition"  data-field ="fname_img_obj_in_addition"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
                                             '<button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>'+
                                             '<button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>'+  
                                             '<button type="button" class="btn btn-minimize btn-default button34"><i class="glyphicon glyphicon-chevron-down"></i></button>'+                                                                                    
@@ -788,7 +788,7 @@ $("body").on( "change",".form-control" , function (e) {
                                                 '<span class="input-group-addon">html_in_addition_id</span>'+
                                                 '<input type="text" class="form-control" id="recipient-html_in_addition_id" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
                                                 '<span class="input-group-btn">'+
-                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                    '<button type="button" data-tbl="obj_in_addition" data-field ="html_in_addition_id"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
                                                 '</span>'+
                                             '</div>'+
                                         '</div>'+
@@ -799,7 +799,7 @@ $("body").on( "change",".form-control" , function (e) {
                                                 '<span class="input-group-addon">path_img_obj_in_addition</span>'+
                                                 '<input type="text" class="form-control" id="recipient-path_img_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
                                                 '<span class="input-group-btn">'+
-                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                    '<button type="button" data-tbl="obj_in_addition" data-field ="path_img_obj_in_addition"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
                                                 '</span>'+
                                             '</div>'+
                                         '</div>'+
@@ -810,7 +810,7 @@ $("body").on( "change",".form-control" , function (e) {
                                                 '<span class="input-group-addon">data_href_img_obj_in_addition</span>'+
                                                 '<input type="text" class="form-control" id="recipient-data_href_img_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
                                                 '<span class="input-group-btn">'+
-                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                    '<button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_obj_in_addition"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
                                                 '</span>'+
                                             '</div>'+
                                         '</div>'+
@@ -821,7 +821,7 @@ $("body").on( "change",".form-control" , function (e) {
                                                 '<span class="input-group-addon">fname_img_smoll_obj_in_addition</span>'+
                                                 '<input type="text" class="form-control" id="recipient-fname_img_smoll_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
                                                 '<span class="input-group-btn">'+
-                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                    '<button type="button" data-tbl="obj_in_addition" data-field ="fname_img_smoll_obj_in_addition"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
                                                 '</span>'+
                                             '</div>'+
                                         '</div>'+
@@ -832,7 +832,7 @@ $("body").on( "change",".form-control" , function (e) {
                                                 '<span class="input-group-addon">data_href_img_smoll_obj_in_addition</span>'+
                                                 '<input type="text" class="form-control" id="recipient-data_href_img_smoll_obj_in_addition" value="./dist/files/pdf/shablon-alboma-obrazcov.DWG" required>'+
                                                 '<span class="input-group-btn">'+
-                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                    '<button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_smoll_obj_in_addition"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
                                                 '</span>'+
                                             '</div>'+
                                         '</div>'+
@@ -843,7 +843,7 @@ $("body").on( "change",".form-control" , function (e) {
                                                 '<span class="input-group-addon">img_def</span>'+
                                                 '<textarea class="form-control"  name="text"></textarea>'+
                                                 '<span class="input-group-btn">'+
-                                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                                    '<button type="button" data-tbl="obj_in_addition" data-field ="img_def"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
                                                 '</span>'+
                                             '</div>'+
                                         '</div>'+
@@ -860,7 +860,7 @@ $("body").on( "change",".form-control" , function (e) {
                                 '<span class="input-group-addon"></span>'+
                                 '<input type="text" class="form-control" id="recipient-obj_alias " value="KRYWORD" required>'+
                                 '<span class="input-group-btn">'+
-                                    '<button type="button" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
+                                    '<button type="button"  data-tbl="obj_alias"  data-field ="keywords_alias"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>'+
                                     '<button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>'+
                                     '<button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>'+                                          
                                 '</span>'+
