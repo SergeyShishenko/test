@@ -348,7 +348,7 @@ button.button31.btn-warning:focus:after > i, button.button31.btn-warning:focus:b
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
+            <a class="navbar-brand" href="/index.php"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
                 <span>Админ 500СТП</span></a>
 
             <!-- user dropdown starts -->
@@ -360,7 +360,7 @@ button.button31.btn-warning:focus:after > i, button.button31.btn-warning:focus:b
                 <ul class="dropdown-menu">
                     <li><a href="#">Профиль</a></li>
                     <li class="divider"></li>
-                    <li><a href="login.php">Выйти</a></li>
+                    <li><a href="/exit.php">Выйти</a></li>
                 </ul>
             </div>
             <!-- user dropdown ends -->
