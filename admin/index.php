@@ -723,7 +723,15 @@
     }
     // else{alert($(this).parent().parent().find($("[id*='recipient']")).val());}
         //post variables
-        // alert($(obj).data('field'));
+        // alert($(obj).data('fie'));
+        if ( typeof($(obj).data('fieldid')) !== "undefined" && $(obj).data('fieldid') !== "")
+         {
+            $('input[id="fieldid"]').val($(obj).data('fieldid')).val(); // установка поля
+         }
+         if ( typeof($(obj).data('id')) !== "undefined" && $(obj).data('id') !== "")
+         {
+            $('input[id="id"]').val($(obj).data('id')).val(); // установка поля
+         }
         $('input[id="field"]').val($(obj).data('field')).val(); // установка поля
         $('input[id="tbl"]').val($(obj).data('tbl')).val(); // установка поля
     var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
