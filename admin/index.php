@@ -443,9 +443,16 @@
                 // });
 
 
-            $("body").on( "click"," .btn-minimize",function (e) {
+            $("body").on( "click"," .btn-minimize.btn-round",function (e) {
                 // e.preventDefault();
                 var $target = $(this).parent().parent().next('.box-content');
+                if ($target.is(':visible')) $('i', $(this)).removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                else                       $('i', $(this)).removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                $target.slideToggle();
+            });
+            $("body").on( "click",".btn-minimize.button34",function (e) {
+                // e.preventDefault();
+                var $target = $(this).parent().next('.box-content');
                 if ($target.is(':visible')) $('i', $(this)).removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
                 else                       $('i', $(this)).removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
                 $target.slideToggle();
