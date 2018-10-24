@@ -325,6 +325,115 @@ switch ($tbl) {
         echo '<div class="row">
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
+                    <span class="input-group-addon">Имя маленькой картинки (fname_img_smoll_obj)</span>
+                    <input type="text" class="form-control" id="recipient-fname_img_smoll_obj" value="'.$row_obj["fname_img_smoll_obj"].'" required>
+                    <span class="input-group-btn">
+                        <button type="button"  data-tbl="obj"  data-field ="fname_img_smoll_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                    </span>
+                </div>
+            </div>
+          </div>
+        ';
+        echo '<div class="row">
+            <div class="input-group col-md-12">
+                <div class="input-group ">                       
+                    <span class="input-group-addon">Путь маленькой картинки (data_href_img_smoll_obj)</span>
+                    <input type="text" class="form-control" id="recipient-data_href_img_smoll_obj" value="'.$row_obj["data_href_img_smoll_obj"].'" required>
+                    <span class="input-group-btn">
+                        <button type="button"  data-tbl="obj"  data-field ="data_href_img_smoll_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                    </span>
+                </div>
+            </div>
+          </div>
+        ';
+        echo '<div class="row">
+            <div class="input-group col-md-12">
+                <div class="input-group ">                       
+                    <span class="input-group-addon">Описание (obj_def)</span>                    
+                    <textarea class="form-control"  id="recipient-obj_def__'.$row_obj["obj_def"].'" name="text">'.$row_obj["obj_def"].'</textarea>
+                    <span class="input-group-btn">
+                        <button type="button"  data-tbl="obj"  data-field ="obj_def" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                    </span>
+                </div>
+            </div>
+          </div>
+        ';
+        echo '<div class="row">
+            <div class="input-group col-md-12">
+                <div class="input-group ">                       
+                    <span class="input-group-addon">Характеристики (characteristic_obj)</span>
+                    <input type="text" class="form-control" id="recipient-characteristic_obj" value="'.$row_obj["characteristic_obj"].'" required>
+                    <span class="input-group-btn">
+                        <button type="button"  data-tbl="obj"  data-field ="characteristic_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                    </span>
+                </div>
+            </div>
+          </div>
+        ';
+        echo '<div class="row">
+            <div class="input-group col-md-12">
+                <div class="input-group ">                       
+                    <span class="input-group-addon">Шаблон (template_obj)</span>
+                    <input type="text" class="form-control" id="recipient-template_obj" value="'.$row_obj["template_obj"].'" required>
+                    <span class="input-group-btn">
+                        <button type="button"  data-tbl="obj"  data-field ="template_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                    </span>
+                </div>
+            </div>
+          </div>
+        ';
+  
+      
+
+/////
+   
+if ($row_obj["img_orientation_obj"] == "album")
+{
+ echo '<div class="row">
+         <div class="input-group col-md-12">
+             <div class="input-group ">                                
+                 <span class="input-group-addon">Ориентация (img_orientation_obj)</span>                                
+                 <select class="form-control" id="recipient-orientation">                                
+                     <option selected value="album">Альбомная</option>
+                     <option value="book">Книжная</option>
+                 </select>
+                 <span class="input-group-btn">
+                     <button type="button"  data-tbl="obj"  data-field ="img_orientation_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                 </span>
+             </div>
+         </div>
+     </div>
+ ';
+}
+else
+{
+ echo '<div class="row">
+         <div class="input-group col-md-12">
+             <div class="input-group ">                                  
+                 <span class="input-group-addon">Ориентация (img_orientation_obj)</span>                                
+                 <select class="form-control" id="recipient-orientation" >                                
+                     <option value="album">Альбомная</option>
+                     <option selected value="book">Книжная</option>
+                 </select>
+                 <span class="input-group-btn">
+                     <button type="button"   data-tbl="obj"  data-field ="img_orientation_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                 </span>
+             </div>
+         </div>
+     </div>
+ ';
+
+}
+  
+
+
+
+
+
+/////
+        echo '<div class="row">
+            <div class="input-group col-md-12">
+                <div class="input-group ">                       
                     <span class="input-group-addon">Номер по порядку (number_in_order_obj)</span>
                     <input type="text" class="form-control" id="recipient-order" value="'.$row_obj["number_in_order_obj"].'" required>
                     <span class="input-group-btn">
@@ -396,7 +505,7 @@ switch ($tbl) {
                         <div class="input-group col-md-12">
                             <div class="input-group ">                       
                                 <span class="input-group-addon">DWG</span>
-                                <input type="text" class="form-control" id="recipient-DWG " value="'.$row_obj_download["dwg_obj"].'" required>
+                                <input type="text" class="form-control" id="recipient-DWG" value="'.$row_obj_download["dwg_obj"].'" required>
                                 <span class="input-group-btn">
                                     <button type="button" data-tbl="obj_download"  data-field ="dwg_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
@@ -412,7 +521,7 @@ switch ($tbl) {
                              <div class="input-group ">  
                              <!--<span class="input-group-addon">PNG</span>-->                     
                                  <span class="input-group-addon">'.$row_obj_download["data_spng"].'</span>                                
-                                 <select class="form-control" >                                
+                                 <select class="form-control" id="recipient-PNG">                                
                                      <option selected value="noPNG">Нет</option>
                                      <option value="PNG">Да</option>
                                  </select>
@@ -431,9 +540,9 @@ switch ($tbl) {
                              <div class="input-group ">   
                              <!--<span class="input-group-addon">PNG</span>-->                      
                                  <span class="input-group-addon">PNG</span>                                
-                                 <select class="form-control" >                                
-                                     <option value="noPNG">Нет</option>
-                                     <option selected value="PNG">Да</option>
+                                 <select class="form-control" id="recipient-PNG" >                                
+                                     <option value="noPNG">Нет скачивания изображения</option>
+                                     <option selected value="PNG">Есть скачивание изображения</option>
                                  </select>
                                  <span class="input-group-btn">
                                      <button type="button"  data-tbl="obj_download"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
@@ -451,10 +560,10 @@ switch ($tbl) {
                             <div class="input-group col-md-12">
                                 <div class="input-group ">  
                                   <!--<span class="input-group-addon">Print</span> -->                    
-                                    <span class="input-group-addon">'.$row_obj_download["data_prnt"].'</span>
-                                    <select class="form-control" >
+                                    <span class="input-group-addon">Печать</span>
+                                    <select class="form-control"  id="recipient-prnt">
                                         <option selected value="noPrint">Нет</option>
-                                        <option value="Print">Печать</option>
+                                        <option value="Print">Да</option>
                                     </select>
                                     <span class="input-group-btn">
                                         <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
@@ -470,10 +579,10 @@ switch ($tbl) {
                             <div class="input-group col-md-12">
                                 <div class="input-group ">   
                                 <!--<span class="input-group-addon">Print</span> -->                    
-                                    <span class="input-group-addon">'.$row_obj_download["data_prnt"].'</span>
-                                    <select class="form-control" >
+                                    <span class="input-group-addon">Печать</span>
+                                    <select class="form-control"  id="recipient-prnt" >
                                         <option value="noPrint">Нет</option>
-                                        <option selected value="Print">Печать</option>
+                                        <option selected value="Да">Печать</option>
                                     </select>
                                     <span class="input-group-btn">
                                         <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
