@@ -718,6 +718,7 @@
         //post variables
         // alert($(obj).data('field'));
         $('input[id="field"]').val($(obj).data('field')).val(); // установка поля
+        $('input[id="tbl"]').val($(obj).data('tbl')).val(); // установка поля
     var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
     var DbNumberID = clickedID[1]; //и получаем номер из массива
 
