@@ -219,11 +219,11 @@ function docReady() {
 
 
 //gallery edit
-$('.thumbnails').on('click', '.gallery-add', function (e) {
-    e.preventDefault();
-    //get image id
-    //alert($(this).parents('.thumbnail').attr('id'));
-});
+// $('.thumbnails').on('click', '.gallery-add', function (e) {
+//     e.preventDefault();
+//     //get image id
+//     //alert($(this).parents('.thumbnail').attr('id'));
+// });
 
     //gallery colorbox
     // $('.thumbnail a').colorbox({

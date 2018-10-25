@@ -557,9 +557,9 @@
             // alert('редактировать ' + $(this).parents('.thumbnail').attr('id'));
             // }); 
 
-            // // gallery-add
+            // gallery-add
             // $("body").on( "click","ul.thumbnails.gallery li.thumbnail a.gallery-add" , function (e) {
-            // e.preventDefault();
+            // // e.preventDefault();
             // //get image id
             // // alert("click");
             // alert('добавить к ' + $(this).parents('.thumbnail').attr('id'));
@@ -580,12 +580,12 @@
 
 
             //gallery ADD ПОКА УДАЛЯЕТ
-            $('.thumbnails').on('click', '.gallery-add', function (e) {
-                e.preventDefault();
-                //get image id
-                //alert($(this).parents('.thumbnail').attr('id'));
-                // $(this).parents('.thumbnail').fadeOut();
-            });
+            // $('.thumbnails').on('click', '.gallery-add', function (e) {
+            //     e.preventDefault();
+            //     //get image id
+            //     //alert($(this).parents('.thumbnail').attr('id'));
+            //     // $(this).parents('.thumbnail').fadeOut();
+            // });
 
         // при открытии модального окна
         $('#myModal').on('show.bs.modal', function (event) {
@@ -603,7 +603,8 @@
         var recipient_href = button.data('href');
         var recipient_order = button.data('order');
         var htmlid = button.data('htmlid');         
-        var id = button.data('id');  
+        var id = button.data('id');
+        var action = "change";  
         var recipient_name =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
 
         if (typeof recipient_name === typeof undefined) {recipient_name="";}
@@ -614,7 +615,12 @@
         // html {   overflow-y: scroll;   }
         // $(this).css("margin-right", "-20px");
 
-        if (content.indexOf("ДОБАВИТЬ") !== -1){$("#ChangeSubmit").addClass('hidden');$("#AddSubmit").removeClass('hidden');}
+        if (content.indexOf("ДОБАВИТЬ") !== -1)
+        {
+            $("#ChangeSubmit").addClass('hidden');
+            $("#AddSubmit").removeClass('hidden');
+            action = "add"; 
+        }
         else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');}
         $(this).find('#myModalLabel').text(content +  recipient_name); 
         recipient_name = recipient_name.replace(String.fromCharCode(171), '');// удаление ковычек
@@ -640,6 +646,7 @@
                                         "href="+recipient_href+"&"+
                                         "order="+recipient_order+"&"+
                                         "htmlid="+htmlid+"&"+
+                                        "action="+action+"&"+
                                         "id="+ id;
                                         // "id="+ DbNumberID;
                         // "name=John&location=Boston"

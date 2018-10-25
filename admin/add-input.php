@@ -18,6 +18,7 @@ $dbconn=dbconnect();
     $parent = filter_var($_POST["parent"],FILTER_SANITIZE_STRING);
     $href = filter_var($_POST["href"],FILTER_SANITIZE_STRING);
     $order = filter_var($_POST["order"],FILTER_SANITIZE_STRING);
+    $action = filter_var($_POST["action"],FILTER_SANITIZE_STRING);
     $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
     $htmlid = filter_var($_POST["htmlid"],FILTER_SANITIZE_STRING);
     
@@ -50,18 +51,21 @@ $dbconn=dbconnect();
 
 
 
-// echo 'contentToSave - '.$contentToSave;
-// echo '<br>tbl - '.$tbl ;
-// echo '<br>field - '.$field ;
-// echo '<br>fieldid - '.$fieldid ;
-// echo '<br>parent - '.$parent ;
-// echo '<br>href - '.$href ;
-// echo '<br>order - '.$order ;
-// echo '<br>id - '.$id ;
+echo 'contentToSave - '.$contentToSave;
+echo '<br>tbl - '.$tbl ;
+echo '<br>field - '.$field ;
+echo '<br>fieldid - '.$fieldid ;
+echo '<br>parent - '.$parent ;
+echo '<br>href - '.$href ;
+echo '<br>order - '.$order ;
+echo '<br>action - '.$action ;
+echo '<br>id - '.$id ;
 
 
 $clickedID = explode( '_', $id ); //Разбиваем строку (Split работает аналогично PHP explode)
 $DbNumberID = $clickedID[1]; //и получаем номер из массива
+
+echo '<br>$DbNumberID - '.$DbNumberID ;
 
 switch ($tbl) {
     case "head":
@@ -114,6 +118,7 @@ switch ($tbl) {
         break;
 
     case "category":
+
     $Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE category_id = $DbNumberID");//MySQL запрос
     $row_category = mysqli_fetch_array($Result_category);//получаем все записи из таблицы
 
