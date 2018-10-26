@@ -698,94 +698,7 @@ else
         ;    
         mysqli_free_result($Result_obj_alias);
         
-        $Result_obj_furnitur_prop = mysqli_query($dbconn,"SELECT *  FROM obj_furnitur_prop WHERE obj_id = $DbNumberID");//MySQL запрос
-        $row_obj_furnitur_prop = mysqli_fetch_array($Result_obj_furnitur_prop);//получаем все записи из таблицы
-
-
-        echo '    
-        <div class="row">
-            <div class="box col-md-12">
-                <div class="box-inner">
-                    <div class="box-header well" data-original-title="">
-                        <h2><i class="glyphicon glyphicon-list-alt"></i> Свойства фурнитуры (obj_furnitur_prop)</h2>    
-                        <div class="box-icon">
-                            
-                            <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                             
-                                         
-                        </div>
-                    </div>
-                    <div class="box-content">
-                    ';   
-                   
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">name_furnitur_obj_prop</span>
-                                    <input type="text" class="form-control" id="recipient-name_furnitur_obj_prop" value="'.$row_obj_furnitur_prop["name_furnitur_obj_prop"].'" required>
-                                    <span class="input-group-btn">
-                                            <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="name_furnitur_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>                                                                                   
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    '; 
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">articul_furnitur_obj</span>
-                                    <input type="text" class="form-control" id="recipient-articul_furnitur_obj" value="'.$row_obj_furnitur_prop["articul_furnitur_obj"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="articul_furnitur_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">made_furnitur_obj</span>
-                                    <input type="text" class="form-control" id="recipient-made_furnitur_obj" value="'.$row_obj_furnitur_prop["made_furnitur_obj"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="made_furnitur_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">url_furnitur_obj_prop</span>
-                                    <input type="text" class="form-control" id="recipient-url_furnitur_obj_prop" value="'.$row_obj_furnitur_prop["url_furnitur_obj_prop"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="url_furnitur_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">url_video_obj_prop</span>
-                                    <input type="text" class="form-control" id="recipient-url_video_obj_prop" value="'.$row_obj_furnitur_prop["url_video_obj_prop"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="url_video_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-
-                    echo '
-                    </div>      
-                </div>
-            </div>            
-        </div><!--/row-->'
-        ;
-        mysqli_free_result($Result_obj_furnitur_prop);
+        
 
         $Result_obj_in_addition = mysqli_query($dbconn,"SELECT *  FROM obj_in_addition WHERE obj_id = $DbNumberID");//MySQL запрос
         echo '   
@@ -793,7 +706,7 @@ else
             <div class="box col-md-12">
                 <div class="box-inner">
                     <div class="box-header well" data-original-title="">
-                        <h2><i class="glyphicon glyphicon-list-alt"></i> Параметры дополнений (obj_in_addition)</h2>    
+                        <h2><i class="glyphicon glyphicon-list-alt"></i> Дополнительные страницы (obj_in_addition)</h2>    
                         <div class="box-icon">
                             <a href="#" class="btn btn-minimize btn-round btn-default"><i
                                     class="glyphicon glyphicon-chevron-down"></i></a>       
@@ -807,7 +720,7 @@ else
                     echo '<div class="row '.$row1.'">
                             <div class="input-group col-md-12">
                                 <div class="input-group ">                       
-                                    <span class="input-group-addon btn btn-minimize  btn-default  button34">fname_img_obj_in_addition <i class="glyphicon glyphicon-chevron-down"></i></span>
+                                    <span class="input-group-addon btn btn-minimize  btn-default  button34">Страница №_ (fname_img_obj_in_addition)<i class="glyphicon glyphicon-chevron-down"></i></span>
                                     <input type="text" class="form-control" id="recipient-fname_img_obj_in_addition__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["fname_img_obj_in_addition"].'" required>
                                     <span class="input-group-btn">
                                             <button type="button" data-tbl="obj_in_addition"  data-field ="fname_img_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
@@ -914,6 +827,95 @@ else
             </div>            
         </div><!--/row-->'
         ;
+
+        $Result_obj_furnitur_prop = mysqli_query($dbconn,"SELECT *  FROM obj_furnitur_prop WHERE obj_id = $DbNumberID");//MySQL запрос
+        $row_obj_furnitur_prop = mysqli_fetch_array($Result_obj_furnitur_prop);//получаем все записи из таблицы
+
+
+        echo '    
+        <div class="row">
+            <div class="box col-md-12">
+                <div class="box-inner">
+                    <div class="box-header well" data-original-title="">
+                        <h2><i class="glyphicon glyphicon-list-alt"></i> Свойства фурнитуры (obj_furnitur_prop)</h2>    
+                        <div class="box-icon">
+                            
+                            <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
+                             
+                                         
+                        </div>
+                    </div>
+                    <div class="box-content">
+                    ';   
+                   
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">name_furnitur_obj_prop</span>
+                                    <input type="text" class="form-control" id="recipient-name_furnitur_obj_prop" value="'.$row_obj_furnitur_prop["name_furnitur_obj_prop"].'" required>
+                                    <span class="input-group-btn">
+                                            <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="name_furnitur_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>                                                                                   
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    '; 
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">articul_furnitur_obj</span>
+                                    <input type="text" class="form-control" id="recipient-articul_furnitur_obj" value="'.$row_obj_furnitur_prop["articul_furnitur_obj"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="articul_furnitur_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">made_furnitur_obj</span>
+                                    <input type="text" class="form-control" id="recipient-made_furnitur_obj" value="'.$row_obj_furnitur_prop["made_furnitur_obj"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="made_furnitur_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">url_furnitur_obj_prop</span>
+                                    <input type="text" class="form-control" id="recipient-url_furnitur_obj_prop" value="'.$row_obj_furnitur_prop["url_furnitur_obj_prop"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="url_furnitur_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">url_video_obj_prop</span>
+                                    <input type="text" class="form-control" id="recipient-url_video_obj_prop" value="'.$row_obj_furnitur_prop["url_video_obj_prop"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="url_video_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+
+                    echo '
+                    </div>      
+                </div>
+            </div>            
+        </div><!--/row-->'
+        ;
+        mysqli_free_result($Result_obj_furnitur_prop);
 
         echo '</li>';
         break;
