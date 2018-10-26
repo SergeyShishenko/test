@@ -22,9 +22,13 @@ $dbconn=dbconnect();
     $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
     $htmlid = filter_var($_POST["htmlid"],FILTER_SANITIZE_STRING);
     
+// if ($action == "add")
+// {
+
+// }
 
 //     // Обновляем запись
-//     // UPDATE  `u0474172_default`.`head` SET  `name_head` =  'Раздел 1' WHERE  `head`.`head_id` =52;
+//   
 //     // if(mysqli_query($dbconn,"INSERT INTO head(name_head) VALUES('".$contentToSave."')"))
 //     // echo "UPDATE  ".$tbl." SET  ".$field." =  '".$contentToSave."' WHERE  ".$fieldid."` ='.$id.'";
 //     // TRIM('region_name')
