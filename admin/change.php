@@ -16,20 +16,37 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     $field = filter_var($_POST["field"],FILTER_SANITIZE_STRING);
     $fieldid = filter_var($_POST["fieldid"],FILTER_SANITIZE_STRING);
     $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
+    $action = filter_var($_POST["action"],FILTER_SANITIZE_STRING);
+    $parent = explode("-", filter_var($_POST["parent"],FILTER_SANITIZE_STRING));
 
     // Обновляем запись
     // UPDATE  `u0474172_default`.`head` SET  `name_head` =  'Раздел 1' WHERE  `head`.`head_id` =52;
     // if(mysqli_query($dbconn,"INSERT INTO head(name_head) VALUES('".$contentToSave."')"))
     // echo "UPDATE  ".$tbl." SET  ".$field." =  '".$contentToSave."' WHERE  ".$fieldid."` ='.$id.'";
     // TRIM('region_name')
-    $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+   
+    if ($action=="action")
+    {
+        $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
+        // header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+        // exit();
+
+        
+        // "INSERT INTO head(name_head) VALUES('".$contentToSave."')"
+    }
+    else
+    {
+        
+    
+        $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+    }
+    
+
     // echo $sql;
     if(mysqli_query($dbconn,$sql))
     {
         //Record is successfully inserted, respond to ajax request
-        $head_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
-        
-       
+        $head_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
         mysqli_close($dbconn);
 
     }else{

@@ -28,6 +28,8 @@
                         <input type="hidden" id="field" value="">
                         <input type="hidden" id="fieldid" value="">
                         <input type="hidden" id="id" value="">
+                        <input type="hidden" id="action" value="">
+                        
                         <div class="form-group ">
                             <!-- <div class="row">
                                 <div class="input-group col-md-12">

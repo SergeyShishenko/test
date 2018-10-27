@@ -605,10 +605,11 @@
         var htmlid = button.data('htmlid');         
         var id = button.data('id');
         var action = "change";  
-        var recipient_name =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
+        // var recipient_name =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
+        var recipient_name =button.data('name') // Извлечение информации из данных-* атрибутов
 
         // if (typeof recipient_name == typeof undefined) {recipient_name="";}
-        if (typeof button.data('name') === typeof "undefined") {recipient_name="";}
+        if (typeof button.data('name') === typeof undefined) {recipient_name="";}
 
 
         // var im = button.data('im'); 
@@ -626,8 +627,8 @@
         }
         else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');}
         $(this).find('#myModalLabel').text(content +  recipient_name); 
-        recipient_name = recipient_name.replace(String.fromCharCode(171), '');// удаление ковычек
-        recipient_name = recipient_name.replace(String.fromCharCode(187), '');// удаление ковычек
+        // recipient_name = recipient_name.replace(String.fromCharCode(171), '');// удаление ковычек
+        // recipient_name = recipient_name.replace(String.fromCharCode(187), '');// удаление ковычек
         // data
         
          if ( typeof(parent) != "undefined" && parent !== "")
@@ -722,6 +723,7 @@
     // alert($(this).attr('class'));
     // alert($(obj).data('field'));
     var recipient = $(obj).parent().parent().find($("[id*='recipient']")); // значение
+    var parent = $('#myModal').find('#recipient-parent').val(); // значение
     var val = recipient.val();
     // var datafieid =$(obj).data('field')).val();
     val = $.trim(val);
@@ -742,6 +744,10 @@
          {
             $('input[id="id"]').val($(obj).data('id')).val(); // установка поля
          }
+         if ( typeof($(obj).data('action')) !== "undefined" && $(obj).data('action') !== "")
+         {
+            $('input[id="action"]').val($(obj).data('action')).val(); // установка поля
+         }
         $('input[id="field"]').val($(obj).data('field')).val(); // установка поля
         $('input[id="tbl"]').val($(obj).data('tbl')).val(); // установка поля
     var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
@@ -751,6 +757,8 @@
                 "tbl="+ $("#tbl").val() +"&"+
                 "field="+ $("#field").val() +"&"+
                 "fieldid="+ $("#fieldid").val() +"&"+
+                "action="+ $("#action").val() +"&"+
+                "parent="+ parent +"&"+
                 "id="+ DbNumberID;
         // "name=John&location=Boston"
         jQuery.ajax({
