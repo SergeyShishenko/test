@@ -123,10 +123,13 @@ switch ($tbl) {
 
     case "category":
 
-    $Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE category_id = $DbNumberID");//MySQL запрос
-    $row_category = mysqli_fetch_array($Result_category);//получаем все записи из таблицы
 
-    echo '<div class="row">
+    if ($action=="change")
+    {
+        $Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE category_id = $DbNumberID");//MySQL запрос
+        $row_category = mysqli_fetch_array($Result_category);//получаем все записи из таблицы
+
+        echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">
                         
@@ -153,12 +156,12 @@ switch ($tbl) {
                 </div>
             </div>
             ';     
- if ($action=="change"){$parent="head_id-".$row_category["head_id"];}
+
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">                      
                         <span class="input-group-addon">Родитель</span>
-                        <input type="text" class="form-control" id="recipient-head_id" value="'.$parent.'" required>
+                        <input type="text" class="form-control" id="recipient-head_id" value="'.$row_category["head_id"].'" required>
                         <span class="input-group-btn">
                             <button type="button"   data-tbl="category"  data-field ="head_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
@@ -181,6 +184,68 @@ switch ($tbl) {
             ';
         echo '</li>';
         mysqli_free_result($Result_category); 
+    }
+    else //add
+    {
+        echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">
+                        
+                        <span class="input-group-addon">Имя</span>
+                        <input type="text" class="form-control"  id="recipient-name" value="" required>
+                        <span class="input-group-btn">
+                            <button type="button"  data-tbl="category" data-field ="name_category" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            ';
+        echo '<li id="tb-head" class="active">';
+
+        echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">                       
+                        <span class="input-group-addon">Файл</span>
+                        <input type="text" class="form-control" id="recipient-href" value="" required>
+                        <span class="input-group-btn">
+                            <button type="button"  data-tbl="category"  data-field ="data_href_category" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            ';     
+
+        echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">                      
+                        <span class="input-group-addon">Родитель</span>
+                        <input type="text" class="form-control" id="recipient-head_id" value="'.$parent.'" required>
+                        <span class="input-group-btn">
+                            <button type="button"   data-tbl="category"  data-field ="head_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            ';
+
+        echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">                      
+                        <span class="input-group-addon">Номер по порядку</span>
+                        <input type="text" class="form-control" id="recipient-order" value="" required>
+                        <span class="input-group-btn">
+                            <button type="button"   data-tbl="category"   data-field ="number_in_order_category" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            ';
+        echo '</li>';
+
+    }
+
+
+
         break;
 
     

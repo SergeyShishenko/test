@@ -607,7 +607,10 @@
         var action = "change";  
         var recipient_name =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
 
-        if (typeof recipient_name === typeof undefined) {recipient_name="";}
+        // if (typeof recipient_name == typeof undefined) {recipient_name="";}
+        if (typeof button.data('name') === typeof "undefined") {recipient_name="";}
+
+
         // var im = button.data('im'); 
         var im = button.attr('src');
         // вывести эту информацию в элемент, имеющий id="content"
