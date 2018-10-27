@@ -153,12 +153,12 @@ switch ($tbl) {
                 </div>
             </div>
             ';     
-
+ if ($action=="change"){$parent="head_id-".$row_category["head_id"];}
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">                      
                         <span class="input-group-addon">Родитель</span>
-                        <input type="text" class="form-control" id="recipient-head_id" value="head_id-'.$row_category["head_id"].'" required>
+                        <input type="text" class="form-control" id="recipient-head_id" value="'.$parent.'" required>
                         <span class="input-group-btn">
                             <button type="button"   data-tbl="category"  data-field ="head_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
