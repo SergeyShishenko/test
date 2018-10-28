@@ -46,8 +46,9 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     if(mysqli_query($dbconn,$sql))
     {
         //Record is successfully inserted, respond to ajax request
-        $head_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
+        $insert_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
         mysqli_close($dbconn);
+        echo $insert_id ;
 
     }else{
         //вывод ошибки

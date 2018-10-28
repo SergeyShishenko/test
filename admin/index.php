@@ -774,6 +774,7 @@
             success:function(response){
                 // alert($("#"+$("#tbl").val()).text() + DbNumberID + " "+ recipient.val());
             $("#"+$("#field").val()+"_"+ DbNumberID).text(recipient.val());
+            alert('$insert_id '+response)
             // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',recipient.val());
                 // для img
             // $("#image-"+ DbNumberID).find('img').data('name',recipient.val());
