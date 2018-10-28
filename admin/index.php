@@ -485,6 +485,7 @@
                                     '<a href="#"'+
                                     ' class="gallery-edit btn"'+
                                     ' title="РЕДАКТИРОВАТЬ ОБЪЕКТ"' +
+
                                     ' data-toggle="modal"'+
                                     ' data-target="#myModal" '+
                                     ' data-parent="' + parent +'"'+
@@ -496,9 +497,7 @@
                                     ' data-htmlid="'+ htmlid +'"' +
                                     ' data-field-id="obj_id">'+                                    
                                     '<i class="glyphicon glyphicon-edit" ></i>'+
-                                    '</a> <a href="#" class="gallery-add btn" title="ДОБАВИТЬ ОБЪЕКТ" data-toggle="modal" data-target="#myModal" >'+
-                                    '<i class="glyphicon glyphicon-plus-sign"></i>'+
-                                    '</a>'+
+                                    '<!--</a> <a href="#" class="gallery-add btn" content="ДОБАВИТЬ ОБЪЕКТ" title="ДОБАВИТЬ ОБЪЕКТ" data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-plus-sign"></i></a>-->'+
                                 '</p>'+
                              '</div>');
             $(this).find('.gallery-controls').stop().animate({'margin-top': '-1'}, 400);
@@ -526,6 +525,23 @@
             var order = $(this).find('a').data('order');
             var htmlid = $(this).find('a').data('htmlid'); 
             var title = $(this).find('a').data('title'); 
+            var add = "";
+            if (tbl=='grupp')
+            {
+               add = '</a> <a href="#" class="gallery-add btn" data-content="ДОБАВИТЬ ОБЪЕКТ" title="ДОБАВИТЬ ОБЪЕКТ"'+
+                     'data-toggle="modal" data-target="#myModal"'+
+                     'data-tbl="obj" '+
+                     'data-field="name_obj" '+
+                     'data-parent="' + id +'"' +
+                     'data-field-id="obj_id"' +
+                     'data-href=""' +
+                     'data-order=""' +
+                     'data-htmlid=""'+
+                     'data-id=""  '+
+                     '>'+
+                     '<i class="glyphicon glyphicon-plus-sign"></i></a>'; 
+            }
+            
             
             $(this).append(
                 '<div class=" tab-controls">'+
@@ -543,9 +559,13 @@
                 'data-order="' + order + '"' +
                 'data-htmlid="' + htmlid + '"'+
                 'data-id="' + id + ' "  >'+
-                '<i class="glyphicon glyphicon-edit"></i></a></p></div>' );
+                '<i class="glyphicon glyphicon-edit" ></i>'+
+                add +
+                '</p>'+
+                '</div>');
             $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
         });
+        
         $("body").on( "mouseleave","ul.nav-tabs li",function () {
             console.log("out вкладка tab");
             // $('a', this).fadeToggle(1000);
@@ -570,18 +590,18 @@
             // alert('добавить к ' + $(this).parents('.thumbnail').attr('id'));
             // }); 
 
-            //  $("body").on( "click","#responds .btn-setting",function (e) {
+            //  $("body").on( "click",".gallery-add",function (e) {
             //     e.preventDefault();
             //     $('#myModal').modal('show');
             // });
             
             //gallery img click
-            $("body").on( "click","ul.thumbnails.gallery li.thumbnail img" , function (e) {
-            e.preventDefault();
-            //get image id
-            // alert("click");
-            alert('Картинка ' + $(this).parents('.thumbnail').attr('id'));
-            }); 
+            // $("body").on( "click","ul.thumbnails.gallery li.thumbnail img" , function (e) {
+            // e.preventDefault();
+            // //get image id
+            // // alert("click");
+            // alert('Картинка ' + $(this).parents('.thumbnail').attr('id'));
+            // }); 
 
 
             //gallery ADD ПОКА УДАЛЯЕТ
@@ -594,9 +614,10 @@
 
         // при открытии модального окна
         $('#myModal').on('show.bs.modal', function (event) {
-
+            
         // получить кнопку, которая его открыло
         var button = $(event.relatedTarget); 
+        // alert(button.data('content'));
         // извлечь информацию из атрибута data-content
         // var content = button.data('content'); 
         // alert(button.data('content'));
@@ -631,7 +652,8 @@
             action = "add"; 
         }
         else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');}
-        $(this).find('#myModalLabel').text(content +  recipient_name); 
+        // $(this).find('#myModalLabel').text(content +  recipient_name); 
+        $(this).find('#myModalLabel').text(content); 
         // recipient_name = recipient_name.replace(String.fromCharCode(171), '');// удаление ковычек
         // recipient_name = recipient_name.replace(String.fromCharCode(187), '');// удаление ковычек
         // data

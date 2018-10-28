@@ -379,6 +379,9 @@ switch ($tbl) {
 
 
     case "obj":
+
+    if ($action=="change")
+    {
     
     $Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE obj_id = $DbNumberID");//MySQL запрос
     $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы
@@ -563,10 +566,6 @@ else
 
 }
   
-
-
-
-
 
 /////
         echo '<div class="row">
@@ -1047,6 +1046,12 @@ else
         mysqli_free_result($Result_obj_furnitur_prop);
 
         echo '</li>';
+
+    }
+    else //add new obj
+    {
+    }
+
         break;
         
 }
