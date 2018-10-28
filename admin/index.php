@@ -29,7 +29,6 @@
 
 
         echo '
-    
         <div class="box col-md-12" id="item_'.$row_head["head_id"].'">
             <div class="box-inner">
                 <div class="box-header well">

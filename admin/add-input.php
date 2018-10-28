@@ -382,27 +382,25 @@ switch ($tbl) {
 
     if ($action=="change")
     {
-    
-    $Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE obj_id = $DbNumberID");//MySQL запрос
-    $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы
-    // $row_obj["obj_id"]
-
-         echo '<div class="row">
-                    <div class="input-group col-md-12">
-                        <div class="input-group ">
-                            
-                            <span class="input-group-addon">Имя</span>
-                            <input type="text" class="form-control"  id="recipient-name" value="'.$row_obj["name_obj"].'" required>
-                            <span class="input-group-btn">
-                                <button type="button"  data-tbl="obj" data-field ="name_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                            </span>
-                        </div>
+/////if        
+    /////obj
+        $Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE obj_id = $DbNumberID");//MySQL запрос
+        $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы
+        
+        echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">
+                        
+                        <span class="input-group-addon">Имя</span>
+                        <input type="text" class="form-control"  id="recipient-name" value="'.$row_obj["name_obj"].'" required>
+                        <span class="input-group-btn">
+                            <button type="button"  data-tbl="obj" data-field ="name_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
                     </div>
                 </div>
-                ';
-        echo '<li id="tb-head" class="active">';      
-     
-
+            </div>
+        ';
+        echo '<li id="tb-head" class="active">'; 
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">                       
@@ -414,18 +412,18 @@ switch ($tbl) {
                     </div>
                 </div>
             </div>
-            ';
+        ';
         echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                       
-                    <span class="input-group-addon">Идентификатор (html_id)</span>
-                    <input type="text" class="form-control" id="recipient-html-id" value="'.$row_obj["html_id"].'" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="obj"  data-field ="html_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
+                <div class="input-group col-md-12">
+                    <div class="input-group ">                       
+                        <span class="input-group-addon">Идентификатор (html_id)</span>
+                        <input type="text" class="form-control" id="recipient-html-id" value="'.$row_obj["html_id"].'" required>
+                        <span class="input-group-btn">
+                            <button type="button"  data-tbl="obj"  data-field ="html_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
                 </div>
             </div>
-          </div>
         ';
         echo '<div class="row">
             <div class="input-group col-md-12">
@@ -437,7 +435,7 @@ switch ($tbl) {
                     </span>
                 </div>
             </div>
-          </div>
+            </div>
         ';
         echo '<div class="row">
             <div class="input-group col-md-12">
@@ -449,7 +447,7 @@ switch ($tbl) {
                     </span>
                 </div>
             </div>
-          </div>
+            </div>
         ';
         echo '<div class="row">
             <div class="input-group col-md-12">
@@ -461,7 +459,7 @@ switch ($tbl) {
                     </span>
                 </div>
             </div>
-          </div>
+            </div>
         ';
         echo '<div class="row">
             <div class="input-group col-md-12">
@@ -473,7 +471,7 @@ switch ($tbl) {
                     </span>
                 </div>
             </div>
-          </div>
+            </div>
         ';
         echo '<div class="row">
             <div class="input-group col-md-12">
@@ -485,7 +483,7 @@ switch ($tbl) {
                     </span>
                 </div>
             </div>
-          </div>
+            </div>
         ';
         echo '<div class="row">
             <div class="input-group col-md-12">
@@ -497,7 +495,7 @@ switch ($tbl) {
                     </span>
                 </div>
             </div>
-          </div>
+            </div>
         ';
         echo '<div class="row">
             <div class="input-group col-md-12">
@@ -509,7 +507,7 @@ switch ($tbl) {
                     </span>
                 </div>
             </div>
-          </div>
+            </div>
         ';
         echo '<div class="row">
             <div class="input-group col-md-12">
@@ -521,271 +519,247 @@ switch ($tbl) {
                     </span>
                 </div>
             </div>
-          </div>
+            </div>
         ';
-  
-      
-
-/////
-   
-if ($row_obj["img_orientation_obj"] == "album")
-{
- echo '<div class="row">
-         <div class="input-group col-md-12">
-             <div class="input-group ">                                
-                 <span class="input-group-addon">Ориентация (img_orientation_obj)</span>                                
-                 <select class="form-control" id="recipient-orientation">                                
-                     <option selected value="album">Альбомная</option>
-                     <option value="book">Книжная</option>
-                 </select>
-                 <span class="input-group-btn">
-                     <button type="button"  data-tbl="obj"  data-field ="img_orientation_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                 </span>
-             </div>
-         </div>
-     </div>
- ';
-}
-else
-{
- echo '<div class="row">
-         <div class="input-group col-md-12">
-             <div class="input-group ">                                  
-                 <span class="input-group-addon">Ориентация (img_orientation_obj)</span>                                
-                 <select class="form-control" id="recipient-orientation" >                                
-                     <option value="album">Альбомная</option>
-                     <option selected value="book">Книжная</option>
-                 </select>
-                 <span class="input-group-btn">
-                     <button type="button"   data-tbl="obj"  data-field ="img_orientation_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                 </span>
-             </div>
-         </div>
-     </div>
- ';
-
-}
-  
-
-/////
+        if ($row_obj["img_orientation_obj"] == "album")
+        {
         echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                       
-                    <span class="input-group-addon">Номер по порядку (number_in_order_obj)</span>
-                    <input type="text" class="form-control" id="recipient-order" value="'.$row_obj["number_in_order_obj"].'" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="obj"  data-field ="number_in_order_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
+                <div class="input-group col-md-12">
+                    <div class="input-group ">                                
+                        <span class="input-group-addon">Ориентация (img_orientation_obj)</span>                                
+                        <select class="form-control" id="recipient-orientation">                                
+                            <option selected value="album">Альбомная</option>
+                            <option value="book">Книжная</option>
+                        </select>
+                        <span class="input-group-btn">
+                            <button type="button"  data-tbl="obj"  data-field ="img_orientation_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
                 </div>
             </div>
-          </div>
         ';
-
+        }
+        else
+        {
+        echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">                                  
+                        <span class="input-group-addon">Ориентация (img_orientation_obj)</span>                                
+                        <select class="form-control" id="recipient-orientation" >                                
+                            <option value="album">Альбомная</option>
+                            <option selected value="book">Книжная</option>
+                        </select>
+                        <span class="input-group-btn">
+                            <button type="button"   data-tbl="obj"  data-field ="img_orientation_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        ';
+        }
+        echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">                       
+                        <span class="input-group-addon">Номер по порядку (number_in_order_obj)</span>
+                        <input type="text" class="form-control" id="recipient-order" value="'.$row_obj["number_in_order_obj"].'" required>
+                        <span class="input-group-btn">
+                            <button type="button"  data-tbl="obj"  data-field ="number_in_order_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        ';
         mysqli_free_result($Result_obj); 
-
+    /////obj    
+    /////obj_download 
         $Result_obj_download = mysqli_query($dbconn,"SELECT *  FROM obj_download WHERE obj_id = $DbNumberID");//MySQL запрос
         $row_obj_download = mysqli_fetch_array($Result_obj_download);//получаем все записи из таблицы
-    // $row_obj_download["obj_id"]
-
-        echo '    
-        <div class="row">
-            <div class="box col-md-12">
-                <div class="box-inner">
-                    <div class="box-header well" data-original-title="">
-                        <h2><i class="glyphicon glyphicon-list-alt"></i> Файлы для скачивания (obj_download)</h2>    
-                        <div class="box-icon">
-                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
-                                    class="glyphicon glyphicon-chevron-down"></i></a>       
-                        </div>
-                    </div>
-                    <div class="box-content"> 
-                ';  
-
-
-                echo '<div class="row">
-                        <div class="input-group col-md-12">
-                            <div class="input-group ">                       
-                                <span class="input-group-addon">PDF</span>
-                                <input type="text" class="form-control" id="recipient-PDF " value="'.$row_obj_download["pdf_obj"].'" required>
-                                <span class="input-group-btn">
-                                    <button type="button"  data-tbl="obj_download"  data-field ="pdf_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                </span>
+        
+        echo '<div class="row">
+                <div class="box col-md-12">
+                    <div class="box-inner">
+                        <div class="box-header well" data-original-title="">
+                            <h2><i class="glyphicon glyphicon-list-alt"></i> Файлы для скачивания (obj_download)</h2>    
+                            <div class="box-icon">
+                                <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                        class="glyphicon glyphicon-chevron-down"></i></a>       
                             </div>
                         </div>
-                    </div>
-                '; 
-                echo '<div class="row">
-                        <div class="input-group col-md-12">
-                            <div class="input-group ">                       
-                                <span class="input-group-addon">XLS</span>
-                                <input type="text" class="form-control" id="recipient-XLS " value="'.$row_obj_download["xls_obj"].'" required>
-                                <span class="input-group-btn">
-                                    <button type="button"  data-tbl="obj_download"  data-field ="xls_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                </span>
+                        <div class="box-content"> 
+                    ';
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">PDF</span>
+                                    <input type="text" class="form-control" id="recipient-PDF " value="'.$row_obj_download["pdf_obj"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_download"  data-field ="pdf_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ';
-                echo '<div class="row">
-                        <div class="input-group col-md-12">
-                            <div class="input-group ">                       
-                                <span class="input-group-addon">DOC</span>
-                                <input type="text" class="form-control" id="recipient-DOC " value="'.$row_obj_download["doc_obj"].'" required>
-                                <span class="input-group-btn">
-                                    <button type="button"  data-tbl="obj_download"  data-field ="doc_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                </span>
+                    '; 
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">XLS</span>
+                                    <input type="text" class="form-control" id="recipient-XLS " value="'.$row_obj_download["xls_obj"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_download"  data-field ="xls_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ';
-                echo '<div class="row">
-                        <div class="input-group col-md-12">
-                            <div class="input-group ">                       
-                                <span class="input-group-addon">DWG</span>
-                                <input type="text" class="form-control" id="recipient-DWG" value="'.$row_obj_download["dwg_obj"].'" required>
-                                <span class="input-group-btn">
-                                    <button type="button" data-tbl="obj_download"  data-field ="dwg_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                </span>
+                    ';
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">DOC</span>
+                                    <input type="text" class="form-control" id="recipient-DOC " value="'.$row_obj_download["doc_obj"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_download"  data-field ="doc_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ';
+                    ';
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">DWG</span>
+                                    <input type="text" class="form-control" id="recipient-DWG" value="'.$row_obj_download["dwg_obj"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button" data-tbl="obj_download"  data-field ="dwg_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
 
-                if ($row_obj_download["data_spng"] == "noPNG")
-                {
-                 echo '<div class="row">
-                         <div class="input-group col-md-12">
-                             <div class="input-group ">  
-                             <!--<span class="input-group-addon">PNG</span>-->                     
-                                 <span class="input-group-addon">'.$row_obj_download["data_spng"].'</span>                                
-                                 <select class="form-control" id="recipient-PNG">                                
-                                     <option selected value="noPNG">Нет</option>
-                                     <option value="PNG">Да</option>
-                                 </select>
-                                 <span class="input-group-btn">
-                                     <button type="button"  data-tbl="obj_download"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                 </span>
-                             </div>
-                         </div>
-                     </div>
-                 ';
-                }
-                else
-                {
-                 echo '<div class="row">
-                         <div class="input-group col-md-12">
-                             <div class="input-group ">   
-                             <!--<span class="input-group-addon">PNG</span>-->                      
-                                 <span class="input-group-addon">PNG</span>                                
-                                 <select class="form-control" id="recipient-PNG" >                                
-                                     <option value="noPNG">Нет скачивания изображения</option>
-                                     <option selected value="PNG">Есть скачивание изображения</option>
-                                 </select>
-                                 <span class="input-group-btn">
-                                     <button type="button"  data-tbl="obj_download"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                 </span>
-                             </div>
-                         </div>
-                     </div>
-                 ';
- 
-                }
-
-                if ($row_obj_download["data_prnt"] == "noPrint")
-                {
+                    if ($row_obj_download["data_spng"] == "noPNG")
+                    {
                     echo '<div class="row">
                             <div class="input-group col-md-12">
                                 <div class="input-group ">  
-                                  <!--<span class="input-group-addon">Print</span> -->                    
-                                    <span class="input-group-addon">Печать</span>
-                                    <select class="form-control"  id="recipient-prnt">
-                                        <option selected value="noPrint">Нет</option>
-                                        <option value="Print">Да</option>
+                                <!--<span class="input-group-addon">PNG</span>-->                     
+                                    <span class="input-group-addon">'.$row_obj_download["data_spng"].'</span>                                
+                                    <select class="form-control" id="recipient-PNG">                                
+                                        <option selected value="noPNG">Нет</option>
+                                        <option value="PNG">Да</option>
                                     </select>
                                     <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                        <button type="button"  data-tbl="obj_download"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                     </span>
                                 </div>
                             </div>
                         </div>
                     ';
-                }
-                else
-                {
+                    }
+                    else
+                    {
                     echo '<div class="row">
                             <div class="input-group col-md-12">
                                 <div class="input-group ">   
-                                <!--<span class="input-group-addon">Print</span> -->                    
-                                    <span class="input-group-addon">Печать</span>
-                                    <select class="form-control"  id="recipient-prnt" >
-                                        <option value="noPrint">Нет</option>
-                                        <option selected value="Да">Печать</option>
+                                <!--<span class="input-group-addon">PNG</span>-->                      
+                                    <span class="input-group-addon">PNG</span>                                
+                                    <select class="form-control" id="recipient-PNG" >                                
+                                        <option value="noPNG">Нет скачивания изображения</option>
+                                        <option selected value="PNG">Есть скачивание изображения</option>
                                     </select>
                                     <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                        <button type="button"  data-tbl="obj_download"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                     </span>
                                 </div>
                             </div>
                         </div>
                     ';
-                }
-
-            
-
-
-                echo '<div class="row">
-                        <div class="input-group col-md-12">
-                            <div class="input-group ">                       
-                                <span class="input-group-addon">ЮРИ-PDF</span>
-                                <input type="text" class="form-control" id="recipient-yriPDF " value="'.$row_obj_download["data_ypdf"].'" required>
-                                <span class="input-group-btn">
-                                    <button type="button"  data-tbl="obj_download"  data-field ="data_ypdf" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                '; 
-                echo '<div class="row">
-                        <div class="input-group col-md-12">
-                            <div class="input-group ">                       
-                                <span class="input-group-addon">ЮРИ-XLS</span>
-                                <input type="text" class="form-control" id="recipient-yriXLS " value="'.$row_obj_download["data_yxls"].'" required>
-                                <span class="input-group-btn">
-                                    <button type="button"  data-tbl="obj_download"  data-field ="data_yxls" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                ';
-                echo '<div class="row">
-                        <div class="input-group col-md-12">
-                            <div class="input-group ">                       
-                                <span class="input-group-addon">ЮРИ-DOC</span>
-                                <input type="text" class="form-control" id="recipient-yriDOC " value="'.$row_obj_download["data_ydoc"].'" required>
-                                <span class="input-group-btn">
-                                    <button type="button"  data-tbl="obj_download"  data-field ="data_ydoc" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                ';
-
-
-
-            echo '
-
-                    </div>      
-                </div>
-            </div>            
-        </div><!--/row-->'
-        ;
-
-        mysqli_free_result($Result_obj_download); 
-
-        $Result_obj_alias = mysqli_query($dbconn,"SELECT *  FROM obj_alias WHERE obj_id = $DbNumberID");//MySQL запрос
-        // $row_obj_alias = mysqli_fetch_array($Result_obj_alias);//получаем все записи из таблицы
-    // $row_obj_download["obj_id"]
     
+                    }
+
+                    if ($row_obj_download["data_prnt"] == "noPrint")
+                    {
+                        echo '<div class="row">
+                                <div class="input-group col-md-12">
+                                    <div class="input-group ">  
+                                    <!--<span class="input-group-addon">Print</span> -->                    
+                                        <span class="input-group-addon">Печать</span>
+                                        <select class="form-control"  id="recipient-prnt">
+                                            <option selected value="noPrint">Нет</option>
+                                            <option value="Print">Да</option>
+                                        </select>
+                                        <span class="input-group-btn">
+                                            <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        ';
+                    }
+                    else
+                    {
+                        echo '<div class="row">
+                                <div class="input-group col-md-12">
+                                    <div class="input-group ">   
+                                    <!--<span class="input-group-addon">Print</span> -->                    
+                                        <span class="input-group-addon">Печать</span>
+                                        <select class="form-control"  id="recipient-prnt" >
+                                            <option value="noPrint">Нет</option>
+                                            <option selected value="Да">Печать</option>
+                                        </select>
+                                        <span class="input-group-btn">
+                                            <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        ';
+                    }
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">ЮРИ-PDF</span>
+                                    <input type="text" class="form-control" id="recipient-yriPDF " value="'.$row_obj_download["data_ypdf"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_download"  data-field ="data_ypdf" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    '; 
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">ЮРИ-XLS</span>
+                                    <input type="text" class="form-control" id="recipient-yriXLS " value="'.$row_obj_download["data_yxls"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_download"  data-field ="data_yxls" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">ЮРИ-DOC</span>
+                                    <input type="text" class="form-control" id="recipient-yriDOC " value="'.$row_obj_download["data_ydoc"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_download"  data-field ="data_ydoc" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                    echo '
+                        </div>      
+                    </div>
+                </div>            
+            </div><!--/row-->'
+        ;
+        mysqli_free_result($Result_obj_download); 
+    /////obj_download            
+    /////obj_alias             
+        $Result_obj_alias = mysqli_query($dbconn,"SELECT *  FROM obj_alias WHERE obj_id = $DbNumberID");//MySQL запрос      
         echo '   
         <div class="row">
             <div class="box col-md-12">
@@ -801,7 +775,7 @@ else
                     ';
                     $row1="row1";
                     while($row_obj_alias = mysqli_fetch_array($Result_obj_alias))
-    {
+                    {
                     echo '<div class="row '.$row1.'">
                                 <div class="input-group col-md-12">
                                     <div class="input-group ">                       
@@ -817,7 +791,7 @@ else
                             </div>
                         ';
                         $row1="";
-                  }//while      
+                }//while      
                 echo ' 
                     </div>      
                 </div>
@@ -825,9 +799,8 @@ else
         </div><!--/row-->'
         ;    
         mysqli_free_result($Result_obj_alias);
-        
-        
-
+    /////obj_alias
+    /////obj_in_addition             
         $Result_obj_in_addition = mysqli_query($dbconn,"SELECT *  FROM obj_in_addition WHERE obj_id = $DbNumberID");//MySQL запрос
         echo '   
         <div class="row">
@@ -844,7 +817,7 @@ else
                     ';
                     $row1="row1";
                     while($row_obj_in_addition = mysqli_fetch_array($Result_obj_in_addition))
-    {
+                    {
                     echo '<div class="row '.$row1.'">
                             <div class="input-group col-md-12">
                                 <div class="input-group ">                       
@@ -854,7 +827,7 @@ else
                                             <button type="button" data-tbl="obj_in_addition"  data-field ="fname_img_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                             <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
                                             <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>  
-                                           <!-- <button type="button" class="btn btn-minimize btn-default button34"><i class="glyphicon glyphicon-chevron-down"></i></button> -->                                                                                   
+                                        <!-- <button type="button" class="btn btn-minimize btn-default button34"><i class="glyphicon glyphicon-chevron-down"></i></button> -->                                                                                   
                                     </span>
                                 </div>
                                 <div class="box-content">
@@ -944,22 +917,19 @@ else
                             </div>
                         </div>
                     ';
-
-                  
                     $row1="";
-                }//while   
-                mysqli_free_result($Result_obj_in_addition); 
+                    }//while   
+                    mysqli_free_result($Result_obj_in_addition); 
                         echo '
                     </div>      
                 </div>
             </div>            
         </div><!--/row-->'
         ;
-
+    /////obj_in_addition  
+    /////obj_furnitur_prop            
         $Result_obj_furnitur_prop = mysqli_query($dbconn,"SELECT *  FROM obj_furnitur_prop WHERE obj_id = $DbNumberID");//MySQL запрос
         $row_obj_furnitur_prop = mysqli_fetch_array($Result_obj_furnitur_prop);//получаем все записи из таблицы
-
-
         echo '    
         <div class="row">
             <div class="box col-md-12">
@@ -969,13 +939,13 @@ else
                         <div class="box-icon">
                             
                             <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                             
-                                         
+                            
+                                        
                         </div>
                     </div>
                     <div class="box-content">
                     ';   
-                   
+                
                     echo '<div class="row">
                             <div class="input-group col-md-12">
                                 <div class="input-group ">                       
@@ -1044,9 +1014,9 @@ else
         </div><!--/row-->'
         ;
         mysqli_free_result($Result_obj_furnitur_prop);
-
         echo '</li>';
-
+    /////obj_furnitur_prop 
+/////if
     }
     else //add new obj
     {
