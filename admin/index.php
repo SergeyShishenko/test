@@ -149,7 +149,12 @@
                                                                             data-parent="category_id-'.$category_id.'"
                                                                             data-toggle="modal"
                                                                             data-target="#myModal" 
-                                                                            title="ДОБАВИТЬ ГРУППУ">
+                                                                            title="ДОБАВИТЬ ГРУППУ"
+                                                                            data-tbl="grupp"
+                                                                            data-field="name_grupp"
+                                                                            data-field-id="grupp_id"
+                                                                            data-id="grupp_'.$row_category["grupp_id"].'"
+                                                                            >
                                                                             <i class="glyphicon glyphicon-plus-sign"></i>
                                                                             </a>
                                                                         </div>
