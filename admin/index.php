@@ -9,9 +9,6 @@
         </li>
     </ul>
 </div> -->
-
-
-<!-- ПРОБА -->
 <article id="responds">
     <?php
     //подключаем конфигурационный файл
@@ -25,11 +22,8 @@
 
     // получаем все записи из таблицы head
     while($row_head = mysqli_fetch_array($Result_head))
-    {
-
-
-        echo '
-        <div class="box col-md-12" id="item_'.$row_head["head_id"].'">
+    {        
+ echo ' <div class="box col-md-12" id="item_'.$row_head["head_id"].'"><!--Раздел--> 
             <div class="box-inner">
                 <div class="box-header well">
                     <h2 ><i class="glyphicon glyphicon-th"></i> <span id="name_head_'.$row_head["head_id"].'">'.$row_head["name_head"].'</span></h2>
@@ -54,90 +48,76 @@
                     </div>
                 </div>
              ';
-             $head_id=$row_head["head_id"];
-             $active="active";
-                // //MySQL запрос
-               if($Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE head_id = $head_id"))
-               {
-                        // получаем все записи из таблицы category
-                    
-                        
-                    //   echo $q ;       
-                    echo '
-                       
-                        <div  class="box-content">
-                            <div>
-                                <!-- START PANEL -->
-                                <div class="panel panel-transparent">  
-                                    <div class="panel-body no-padding">
-                      
-                                        <div class="row">
-                                                     
-                                            <div class="col-sm-12">                                   
-                                                <div class="box-icon">
-                                                    <a href="#" class="btn btn-setting btn-round btn-default"
-                                                        data-content="ДОБАВИТЬ КАТЕГОРИЮ"
-                                                        data-name="'.$row_category["name_category"].'"
-                                                        data-href="'.$row_category["data_href_category"].'"
-                                                        data-order="'.$row_category["number_in_order_category"].'"
-                                                        data-parent="head_id-'.$head_id.'"
-                                                        data-toggle="modal"
-                                                        data-target="#myModal" 
-                                                        title="ДОБАВИТЬ КАТЕГОРИЮ"
-                                                        data-title="КАТЕГОРИЮ"
-                                                        data-tbl="category"
-                                                        data-field="name_category"
-                                                        data-field-id="category_id"
-                                                        data-id="category_'.$row_category["category_id"].'"
-                                                        >
-                                                        <i class="glyphicon glyphicon-plus-sign"></i>
-                                                    </a>
-                                                </div>
-                                                <div class="panel panel-transparent ">
-                                                    <!-- Nav tabs -->
-                                                    <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx">
-                                                    ';
-                                                    while($row_category = mysqli_fetch_array($Result_category))
-                                                    {
-                                                        echo ' 
-                                                        <li class="'.$active.'">
-                                                            <a data-toggle="tab" href="#tab-fillup'.$row_category["category_id"].'"
-                                                            data-tbl="category"
-                                                            data-title="КАТЕГОРИЮ"                                                             
-                                                            data-name="'.$row_category["name_category"].'"
-                                                            data-href="'.$row_category["data_href_category"].'"
-                                                            data-order="'.$row_category["number_in_order_category"].'"
-                                                            data-field="name_category"
-                                                            data-field-id="category_id"
-                                                            data-parent="head_id-'.$head_id.'"
-                                                            data-id="category_'.$row_category["category_id"].'"
-                                                            ><span  id="name_category_'.$row_category["category_id"].'">'.$row_category["name_category"].'</span></a>
-                                                        </li> 
-                                                        ';
-                                                        $active="";
-                                                  
-                                                    }//while
-                        mysqli_free_result($Result_category);        
-                    }   
-                                                
-                                        echo '       
-                                            </ul>
-
+        $head_id=$row_head["head_id"];
+        $active="active";
+        // //MySQL запрос
+        if($Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE head_id = $head_id"))
+        {
+                // получаем все записи из таблицы category                      
+            echo '<div  class="box-content">
+                    <div>
+                        <!-- START PANEL -->
+                        <div class="panel panel-transparent">  
+                            <div class="panel-body no-padding">                      
+                                <div class="row">                                                     
+                                    <div class="col-sm-12">                                   
+                                        <div class="box-icon">
+                                            <a href="#" class="btn btn-setting btn-round btn-default"
+                                                data-content="ДОБАВИТЬ КАТЕГОРИЮ"
+                                                data-name="'.$row_category["name_category"].'"
+                                                data-href="'.$row_category["data_href_category"].'"
+                                                data-order="'.$row_category["number_in_order_category"].'"
+                                                data-parent="head_id-'.$head_id.'"
+                                                data-toggle="modal"
+                                                data-target="#myModal" 
+                                                title="ДОБАВИТЬ КАТЕГОРИЮ"
+                                                data-title="КАТЕГОРИЮ"
+                                                data-tbl="category"
+                                                data-field="name_category"
+                                                data-field-id="category_id"
+                                                data-id="category_'.$row_category["category_id"].'"
+                                                >
+                                                <i class="glyphicon glyphicon-plus-sign"></i>
+                                            </a>
+                                        </div>
+                                        <div class="panel panel-transparent ">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx id="parent-item_'.$head_id.'"><!--Категории--> 
+                                            ';
+                                            while($row_category = mysqli_fetch_array($Result_category))
+                                            {
+                                                echo ' 
+                                                <li class="'.$active.'">
+                                                    <a data-toggle="tab" href="#tab-fillup'.$row_category["category_id"].'"
+                                                    data-tbl="category"
+                                                    data-title="КАТЕГОРИЮ"                                                             
+                                                    data-name="'.$row_category["name_category"].'"
+                                                    data-href="'.$row_category["data_href_category"].'"
+                                                    data-order="'.$row_category["number_in_order_category"].'"
+                                                    data-field="name_category"
+                                                    data-field-id="category_id"
+                                                    data-parent="head_id-'.$head_id.'"
+                                                    data-id="category_'.$row_category["category_id"].'"
+                                                    ><span  id="name_category_'.$row_category["category_id"].'">'.$row_category["name_category"].'</span></a>
+                                                </li> 
+                                                ';
+                                                $active="";                                            
+                                            }//while
+            mysqli_free_result($Result_category);        
+        }//if                                 
+                                     echo '</ul>
                                             <!-- Tab panes -->
                                             <div class="tab-content">
                                          ';
-                                            $active="active";
-                                            // //MySQL запрос
-                                           if($Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE head_id = $head_id"))
-                                           {
-                                                // получаем все записи из таблицы category
-                                                while($row_category = mysqli_fetch_array($Result_category))
-                                                {
-                                                        
-                                                    $category_id=$row_category["category_id"];       
-                                                    echo '
-
-                                                    <div class="tab-pane '.$active.'" id="tab-fillup'.$row_category["category_id"].'">
+                                        $active="active";
+                                        // //MySQL запрос
+                                        if($Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE head_id = $head_id"))
+                                        {
+                                             // получаем все записи из таблицы category
+                                            while($row_category = mysqli_fetch_array($Result_category))
+                                            {
+                                               $category_id=$row_category["category_id"];
+                                               echo '<div class="tab-pane '.$active.'" id="tab-fillup'.$row_category["category_id"].'">
                                                         <div class="row column-seperation panelTab">
                                                             <div class="col-md-12">
                                                                 <div class="panel-body no-padding">
@@ -158,25 +138,17 @@
                                                                             </a>
                                                                         </div>
                                                                         <div class="col-lg-12 ">
-
                                                                             <div class="panel panel-transparent ">
-
-                                                                                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white"
-                                                                                    id="tab-'.$head_id.'">
-
-                                                                                    ';
+                                                                                <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white" id="tab-parent-category_'.$category_id.'"><!--Группы--> '; 
                                                                                     $active="active";
                                                                                     // //MySQL запрос
                                                                                    if($Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE category_id = $category_id"))
                                                                                    {
                                                                                         // получаем все записи из таблицы grupp
                                                                                         while($row_grupp = mysqli_fetch_array($Result_grupp))
-                                                                                        {
-                                                                                                
-                                                                                            $name_grupp=mb_strtoupper($row_grupp["name_grupp"], 'UTF-8');     
-                                                                                            echo '
-
-                                                                                    <li class="'.$active.'">
+                                                                                        {                                                                                                
+                                                                                            $name_grupp=mb_strtoupper($row_grupp["name_grupp"], 'UTF-8');
+                                                                              echo '<li class="'.$active.'">
                                                                                         <a data-toggle="tab" href="#tabobj'.$row_grupp["grupp_id"].'"
                                                                                         data-tbl="grupp"
                                                                                         data-title="ГРУППУ"
@@ -190,21 +162,15 @@
                                                                                         data-id="grupp_'.$row_grupp["grupp_id"].'"
                                                                                         ><span id="name_grupp_'.$row_grupp["grupp_id"].'">'.$name_grupp.'</span></a>
                                                                                     </li>
-
-
                                                                                     ';
                                                                                     $active="";
                                                                             
                                                                                 }//while
                                                                                 mysqli_free_result($Result_grupp);        
                                                                             } 
-                                                                            echo ' 
-                                                                                    
-
-                                                                                </ul>
-
+                                                                            
+                                                                         echo '</ul>
                                                                                 <div class="tab-content bg-white">
-
                                                                                 ';
                                                                                 $active="active";
                                                                                 // //MySQL запрос
@@ -212,41 +178,26 @@
                                                                                {
                                                                                     // получаем все записи из таблицы grupp
                                                                                     while($row_grupp = mysqli_fetch_array($Result_grupp))
-                                                                                    {
-                                                                                            
-                                                                                        // $name_grupp=mb_strtoupper($row_grupp["name_grupp"], 'UTF-8');     
-                                                                                        echo '
-                                                                                    
+                                                                                    {   
+                                                                                        echo '                                                                                    
                                                                                         <div class="tab-pane '.$active.'" id="tabobj'.$row_grupp["grupp_id"].'">
                                                                                             <div class="box-content pane">
-
-                                                                                                <ul class="thumbnails gallery">
-                                                                                                ';
-
-
-                                                                                               
-                                                                                                $grupp_id= $row_grupp["grupp_id"];
+                                                                                                <ul class="thumbnails gallery" id="obj-parent-grupp_'.$row_grupp["grupp_id"].'"><!--Объекты-->';                                                                                                 
+                                                                                                 $grupp_id= $row_grupp["grupp_id"];
                                                                                                 // $thumbs="/";
                                                                                                 // $active="active";
                                                                                                 // //MySQL запрос
-                                                                                               if($Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE grupp_id = $grupp_id"))
-                                                                                               {
-                                                                                                    // получаем все записи из таблицы grupp
-                                                                                                    while($row_obj = mysqli_fetch_array($Result_obj))
-                                                                                                    {
-                                                                                                            
-                                                                                                        // $name_grupp=mb_strtoupper($row_grupp["name_grupp"], 'UTF-8');     
-                                                                                                       
-                                                                                                        
-
-                                                                                                    // for ($i = 1; $i <= 24; $i++) { 
+                                                                                            if($Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE grupp_id = $grupp_id"))
+                                                                                            {
+                                                                                                // получаем все записи из таблицы grupp
+                                                                                                while($row_obj = mysqli_fetch_array($Result_obj))
+                                                                                                {                                                                                                      
                                                                                                     $i =$row_obj["obj_id"];
-                                                                                                echo'  <li id="image-'. $i.'" class="thumbnail" data-name="'.$row_obj["name_obj"].'">
+                                                                                                    echo'<li id="image-'. $i.'" class="thumbnail" data-name="'.$row_obj["name_obj"].'">
                                                                                                             <p class="" id="name_obj_'.$row_obj["grupp_id"].'">'. $row_obj["name_obj"].'</p>
                                                                                                             <a style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].')"
                                                                                                                 title="'. $row_obj["img_alt_obj"].'"
-                                                                                                                href="'. substr($row_obj["path_img_obj"],1).$row_obj["fname_img_obj"].'"
-                                                                                                                
+                                                                                                                href="'. substr($row_obj["path_img_obj"],1).$row_obj["fname_img_obj"].'"                                                                                                                
                                                                                                                 >
                                                                                                                 <img
                                                                                                                     class="grayscale"
@@ -259,69 +210,43 @@
                                                                                                                     data-htmlid="'.$row_obj["html_id"].'"
                                                                                                                 >
                                                                                                             </a>
-                                                                                                        </li>
-                                                                                                        
-
-                                                                                                        
-                                                                                                    ';
-                                                                                                    // $active="";
-                                                                                            
+                                                                                                        </li>';
+                                                                                                    // $active="";                                                                                            
                                                                                                 }//while
                                                                                                 mysqli_free_result($Result_obj);        
-                                                                                            } 
-                                                                                            echo ' 
-
-                                                                                                </ul>
+                                                                                            }                                                                                              
+                                                                                          echo '</ul>
                                                                                             </div><!--box-content-->
-                                                                                        </div> <!--tab-pane-->
-                                                                                            ';
-
-                                                                                                // } 
-                                                                                             
-                                                                                                $active="";
-                                                                                        
+                                                                                        </div> <!--tab-pane-->';                                                                                            
+                                                                                                $active="";                                                                                        
                                                                                             }//while
                                                                                             mysqli_free_result($Result_grupp);        
-                                                                                        } 
-                                                                                        echo ' 
-                                                                                                
-                                                                                            
-
-                                                                                     
-                                                                                    
-
-                                                                                </div><!--tab-content-->
-                                                                                
+                                                                                        }                                                                                         
+                                                                          echo '</div><!--tab-content-->                                                                                
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                   
+                                                    </div>                                                 
 
                                                     ';
                                                     $active="";
                                             
-                                                }//while
-                                                mysqli_free_result($Result_category);        
-                                            } 
+                                            }//while
+                                            mysqli_free_result($Result_category);        
+                                        } //if $Result_category Tab panes
                                             echo ' 
                                             </div> <!--tab-content-->
                                         </div>
-                                    </div>
-
-                                        
-                                </div> <!--row-->
-                                
+                                    </div>                                        
+                                </div> <!--row-->                                
                             </div>
                         </div>
                         <!-- END PANEL -->
-
                     </div>
-                </div>
-                  
+                </div>                  
             </div>
         </div>
     
