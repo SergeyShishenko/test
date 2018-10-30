@@ -27,6 +27,9 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
    
     if ($action=="action")
     {
+
+        if ($tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop"){$parent[0]="obj_id";$parent[1]=$id; }
+        
         $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
         header('HTTP/1.1 500 Zapros dla dobavleniy! '.$sql);
         exit();
@@ -48,7 +51,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
         //Record is successfully inserted, respond to ajax request
         $insert_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
         mysqli_close($dbconn);
-        echo $insert_id ;
+        echo $insert_id ; //response
 
     }else{
         //вывод ошибки
