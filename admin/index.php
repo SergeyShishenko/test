@@ -462,13 +462,13 @@
                      'data-order=""' +
                      'data-htmlid=""'+
                      'data-id=""  '+
-                     '>'+
+                     ' style="border:none;">'+
                      '<i class="glyphicon glyphicon-plus-sign"></i></a>'; 
             }
             
             
             $(this).append(
-                '<div class=" tab-controls">'+
+                '<div class=" tab-controls" >'+
                 '<p>'+
                 '<a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ ' + title + '"' + 
                 'data-content="РЕДАКТИРОВАТЬ ' + title + '"' + 
@@ -482,7 +482,7 @@
                 'data-href="' + href + '"' +
                 'data-order="' + order + '"' +
                 'data-htmlid="' + htmlid + '"'+
-                'data-id="' + id + ' "  >'+
+                'data-id="' + id + ' " style="border:none;" >'+
                 '<i class="glyphicon glyphicon-edit" ></i>'+
                 add +
                 '</p>'+
