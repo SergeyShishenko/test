@@ -420,8 +420,7 @@
                                     ' data-name="'+ name +'"'+
                                     ' data-htmlid="'+ htmlid +'"' +
                                     ' data-field-id="obj_id">'+                                    
-                                    '<i class="glyphicon glyphicon-edit" ></i>'+
-                                    '<!--</a> <a href="#" class="gallery-add btn" content="ДОБАВИТЬ ОБЪЕКТ" title="ДОБАВИТЬ ОБЪЕКТ" data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-plus-sign"></i></a>-->'+
+                                    '<i class="glyphicon glyphicon-edit" ></i>'+                                    
                                 '</p>'+
                              '</div>');
             $(this).find('.gallery-controls').stop().animate({'margin-top': '-1'}, 400);
@@ -452,11 +451,13 @@
             var add = "";
             if (tbl=='grupp')
             {
+                var clickedID = id.split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
+                var DbNumberID = clickedID[1]; //и получаем номер из массива
                add = '</a> <a href="#" class="gallery-add btn" data-content="ДОБАВИТЬ ОБЪЕКТ" title="ДОБАВИТЬ ОБЪЕКТ"'+
                      'data-toggle="modal" data-target="#myModal"'+
                      'data-tbl="obj" '+
                      'data-field="name_obj" '+
-                     'data-parent="' + id +'"' +
+                     'data-parent="grupp_id-' + DbNumberID +'"' +
                      'data-field-id="obj_id"' +
                      'data-href=""' +
                      'data-order=""' +

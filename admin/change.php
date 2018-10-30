@@ -28,8 +28,8 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     if ($action=="action")
     {
         $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
-        // header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
-        // exit();
+        header('HTTP/1.1 500 Zapros dla dobavleniy! '.$sql);
+        exit();
 
         
         // "INSERT INTO head(name_head) VALUES('".$contentToSave."')"
