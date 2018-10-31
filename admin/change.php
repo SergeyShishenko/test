@@ -18,13 +18,13 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
     $action = filter_var($_POST["action"],FILTER_SANITIZE_STRING);
     $parent = explode("-", filter_var($_POST["parent"],FILTER_SANITIZE_STRING));
-    $clickedID = explode("_", $id);
-    $DbNumberID = $clickedID[1];
+    // $clickedID = explode("_", $id);
+    // $DbNumberID = $clickedID[1];
 
-    echo $DbNumberID ; //response
+    echo $id  ; //response число или ""
     exit();
     // Обновляем запись
-    // UPDATE  `u0474172_default`.`head` SET  `name_head` =  'Раздел 1' WHERE  `head`.`head_id` =52;
+    // UPDATE  `udefault`.`head` SET  `name_head` =  'Раздел 1' WHERE  `head`.`head_id` =52;
     // if(mysqli_query($dbconn,"INSERT INTO head(name_head) VALUES('".$contentToSave."')"))
     // echo "UPDATE  ".$tbl." SET  ".$field." =  '".$contentToSave."' WHERE  ".$fieldid."` ='.$id.'";
     // TRIM('region_name')
