@@ -53,15 +53,15 @@ $dbconn=dbconnect();
 
 // }
 
-// echo 'contentToSave - '.$contentToSave;
-// echo '<br>tbl - '.$tbl ;
-// echo '<br>field - '.$field ;
-// echo '<br>fieldid - '.$fieldid ;
-// echo '<br>parent - '.$parent ;
-// echo '<br>href - '.$href ;
-// echo '<br>order - '.$order ;
-// echo '<br>action - '.$action ;
-// echo '<br>id - '.$id ;
+echo 'contentToSave - '.$contentToSave;
+echo '<br>tbl - '.$tbl ;
+echo '<br>field - '.$field ;
+echo '<br>fieldid - '.$fieldid ;
+echo '<br>parent - '.$parent ;
+echo '<br>href - '.$href ;
+echo '<br>order - '.$order ;
+echo '<br>action - '.$action ;
+echo '<br>id - '.$id ;
 
 
 $clickedID = explode( '_', $id ); //Разбиваем строку (Split работает аналогично PHP explode)

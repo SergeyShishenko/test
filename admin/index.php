@@ -555,7 +555,8 @@
         var recipient_order = button.data('order');
         var htmlid = button.data('htmlid');         
         var id = button.data('id');
-        var action = "change";  
+        var action = "change"; 
+        $('input[id="action"]').val("change"); // установка поля} 
         // var recipient_name =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
         var recipient_name =button.data('name') // Извлечение информации из данных-* атрибутов
 
@@ -700,6 +701,7 @@
          {
             $('input[id="action"]').val($(obj).data('action')).val(); // установка поля
          }
+        
         $('input[id="field"]').val($(obj).data('field')).val(); // установка поля
         $('input[id="tbl"]').val($(obj).data('tbl')).val(); // установка поля
     var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
@@ -721,7 +723,7 @@
             success:function(response){
                 // alert($("#"+$("#tbl").val()).text() + DbNumberID + " "+ recipient.val());
             $("#"+$("#field").val()+"_"+ DbNumberID).text(recipient.val());
-            $('input[id="ld"]').val(response);
+            $('input[id="id"]').val(response);
             alert('$insert_id '+response);
             // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',recipient.val());
                 // для img

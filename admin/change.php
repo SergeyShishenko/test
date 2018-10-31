@@ -31,7 +31,9 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
         if ($tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop"){$parent[0]="obj_id";$parent[1]=$id; }
         
         $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
-        header('HTTP/1.1 500 Zapros dla dobavleniy! '.$sql);
+        $insert_id=$tbl.'_'.'00';
+        echo $insert_id ; //response
+        // header('HTTP/1.1 400 Zapros dla dobavleniy! '.$sql);
         exit();
 
         
