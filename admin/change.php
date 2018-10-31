@@ -18,7 +18,11 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
     $action = filter_var($_POST["action"],FILTER_SANITIZE_STRING);
     $parent = explode("-", filter_var($_POST["parent"],FILTER_SANITIZE_STRING));
+    $clickedID = explode("_", $id);
+    $DbNumberID = $clickedID[1];
 
+    echo $DbNumberID ; //response
+    exit();
     // Обновляем запись
     // UPDATE  `u0474172_default`.`head` SET  `name_head` =  'Раздел 1' WHERE  `head`.`head_id` =52;
     // if(mysqli_query($dbconn,"INSERT INTO head(name_head) VALUES('".$contentToSave."')"))
@@ -27,11 +31,11 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
    
     if ($action=="action")
     {
-
-        if ($tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop"){$parent[0]="obj_id";$parent[1]=$id; }
+        $insert_id=$tbl;  
+        if ($tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop"){$parent[0]="obj_id";$parent[1]=$id;$insert_id="obj"; }
         
         $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
-        $insert_id=$tbl.'_'.'00';
+        $insert_id=$insert_id.'_'.'00';
         echo $insert_id ; //response
         // header('HTTP/1.1 400 Zapros dla dobavleniy! '.$sql);
         exit();
