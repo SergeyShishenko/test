@@ -24,13 +24,13 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     // echo $id  ; //response - число или "" или "undefined"
     // exit();
    
-   
+    $obj="";
     if ($action=="action")
     {
         // $insert_id=$tbl;  
         if ($tbl=="obj" or $tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop")
         {
-            
+            $obj="obj_";
             if (isset($id))
             {
                
@@ -39,32 +39,16 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                 if(mysqli_query($dbconn,$sql))
                 {
                     //Record is successfully inserted, respond to ajax request
-                   $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
+                   $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL  
+                   $action=="change";                   
                     
-                    // $parent[1] = $insert_id;
-                    // $sql = "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$insert_id')";
                     mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$id')");
-                    // if ($result = mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$insert_id')")) {
-                    //     /* очищаем результирующий набор */
-                    //     mysqli_free_result($result);
-                    // }else{header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.mysqli_error($dbconn));exit();}
+                
                     mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$id')");
-                    // if ($result = mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$insert_id')")) {
-                    //     /* очищаем результирующий набор */
-                    //     mysqli_free_result($result);
-                    // }else{header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.mysqli_error($dbconn));exit();}
+                   
                     mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_id`) VALUES ('$id')");
-                    // if ($result = mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_id`) VALUES ('$insert_id')")) {
-                    //     /* очищаем результирующий набор */
-                    //     mysqli_free_result($result);
-                    // }else{header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.mysqli_error($dbconn));exit();}
-                    mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$id')");
-                    // if ($result = mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$insert_id')")) {
-                    //     /* очищаем результирующий набор */
-                    //     mysqli_free_result($result);
-                    // }else{header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.mysqli_error($dbconn));exit();}
-
-                    // mysqli_close($dbconn);                 
+              
+                    mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$id')");                               
                     
 
                 }else{//вывод ошибки                                        
@@ -97,7 +81,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     {        
         $insert_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
         mysqli_close($dbconn);
-        echo $insert_id ; //response
+        echo $obj.$id ; //response
 
     }else{//вывод ошибки 
         header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);

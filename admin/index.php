@@ -40,6 +40,7 @@
                             data-tbl="head"
                             data-field="name_head"
                             data-field-id="head_id"
+                            data-action="change"
                             data-id="head_'.$row_head["head_id"].'"
                             >
                             <i class="glyphicon glyphicon-edit"></i></a>
@@ -75,6 +76,7 @@
                                                 data-tbl="category"
                                                 data-field="name_category"
                                                 data-field-id="category_id"
+                                                data-action="action"
                                                 data-id="category_'.$row_category["category_id"].'"
                                                 >
                                                 <i class="glyphicon glyphicon-plus-sign"></i>
@@ -132,6 +134,7 @@
                                                                             data-tbl="grupp"
                                                                             data-field="name_grupp"
                                                                             data-field-id="grupp_id"
+                                                                            data-action="action"
                                                                             data-id="grupp_'.$row_category["grupp_id"].'"
                                                                             >
                                                                             <i class="glyphicon glyphicon-plus-sign"></i>
@@ -208,6 +211,7 @@
                                                                                                                     data-content="РЕДАКТИРОВАТЬ ОБЪЕКТ"
                                                                                                                     data-name="'.$row_obj["name_obj"].'"
                                                                                                                     data-htmlid="'.$row_obj["html_id"].'"
+                                                                                                                    data-action="change"
                                                                                                                 >
                                                                                                             </a>
                                                                                                         </li>';
@@ -419,6 +423,7 @@
                                     ' data-content="'+ content +'"'+
                                     ' data-name="'+ name +'"'+
                                     ' data-htmlid="'+ htmlid +'"' +
+                                    'data-action="change"'+
                                     ' data-field-id="obj_id">'+                                    
                                     '<i class="glyphicon glyphicon-edit" ></i>'+                                    
                                 '</p>'+
@@ -462,7 +467,8 @@
                      'data-href=""' +
                      'data-order=""' +
                      'data-htmlid=""'+
-                     'data-id=""  '+
+                     'data-action="action"'+
+                     'data-id="obj_"  '+
                      ' style="border:none;">'+
                      '<i class="glyphicon glyphicon-plus-sign"></i></a>'; 
             }
@@ -483,6 +489,7 @@
                 'data-href="' + href + '"' +
                 'data-order="' + order + '"' +
                 'data-htmlid="' + htmlid + '"'+
+                'data-action="change"'+
                 'data-id="' + id + ' " style="border:none;" >'+
                 '<i class="glyphicon glyphicon-edit" ></i>'+
                 add +
@@ -557,8 +564,8 @@
         var recipient_order = button.data('order');
         var htmlid = button.data('htmlid');         
         var id = button.data('id');
-        var action = "change"; 
-        $('input[id="action"]').val("change"); // установка поля} 
+        var action =  button.data('action'); 
+        $('input[id="action"]').val(action); // установка поля} 
         // var recipient_name =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
         var recipient_name =button.data('name') // Извлечение информации из данных-* атрибутов
 
@@ -727,6 +734,7 @@
                 // alert($("#"+$("#tbl").val()).text() + DbNumberID + " "+ recipient.val());
             $("#"+$("#field").val()+"_"+ DbNumberID).text(recipient.val());
             $('input[id="id"]').val(response);
+            $('input[id="action"]').val("change");
             // alert('$insert_id='+response);
             // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',recipient.val());
                 // для img
