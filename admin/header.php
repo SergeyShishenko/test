@@ -241,7 +241,7 @@ li[id^="tb-"]:not(.active){display:none !important;}
     background: -webkit-linear-gradient(#fff, #999);
     background: -o-linear-gradient(#fff, #999);
 }
-.close {
+/* .close {
     background: #606061;
     color: #FFFFFF;
     line-height: 25px;
@@ -259,7 +259,7 @@ li[id^="tb-"]:not(.active){display:none !important;}
     -webkit-box-shadow: 1px 1px 3px #000;
     box-shadow: 1px 1px 3px #000;
 }
-.close:hover { background: #00d9ff; }
+.close:hover { background: #00d9ff; } */
 
 
 
@@ -333,6 +333,29 @@ button.button31.btn-warning:focus:after > i, button.button31.btn-warning:focus:b
     /* border-radius: 0px; */
     border-radius: 4px;
 }
+
+/* Ajax on menu */
+#loading {
+    margin-top: 20px;
+    width: 128px;
+    font-weight: bold;
+    /* display: none; */
+}
+div.center, p.center, img.center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    display: block;
+    text-align: center;
+}
+#loading div.center {
+    margin-top: 10px;
+    height: 15px;
+    width: 128px;
+    /* background: url(../img/ajax-loaders/ajax-loader-6.gif); */
+    background: url(./img/ajax-loaders/ajax-loader-6.gif);
+}
+
 </style>
 </head>
 

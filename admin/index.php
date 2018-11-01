@@ -540,6 +540,8 @@
         // при открытии модального окна
         $('#myModal').on('show.bs.modal', function (event) {
             
+        $('#loading').css("display", "block");
+            
         // получить кнопку, которая его открыло
         var button = $(event.relatedTarget); 
         // alert(button.data('content'));
@@ -615,6 +617,7 @@
                             success:function(response){
 
                                 $('.list-tbl').html(response);
+                                $('#loading').css("display", "none");
 
                             // $("#"+$("#tbl").val()+"_"+ DbNumberID).text($("#recipient-name").val());
                             // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',$("#recipient-name").val());
@@ -745,7 +748,10 @@
 
 
 
-
+$("body").on("click",'.dismiss', function() {
+    $('.list-tbl').html("");
+    // $('#loading').css("display", "block");
+})
 
 
 
