@@ -24,7 +24,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     // echo $id  ; //response - число или "" или "undefined"
     // exit();
    
-    $obj="";
+    $obj=$tbl."_";
     if ($action=="action")
     {
         // $insert_id=$tbl;  
