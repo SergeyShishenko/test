@@ -11,58 +11,30 @@ $dbconn=dbconnect();
 //     // очищаем значение переменной, PHP фильтры FILTER_SANITIZE_STRING, FILTER_FLAG_STRIP_HIGH
 //     // (Удаляют тэги, при необходимости удаляет или кодирует специальные символы)
 
-    $contentToSave = filter_var($_POST["content_txt"],FILTER_SANITIZE_STRING);
-    $tbl = filter_var($_POST["tbl"],FILTER_SANITIZE_STRING);
-    $field = filter_var($_POST["field"],FILTER_SANITIZE_STRING);
-    $fieldid = filter_var($_POST["fieldid"],FILTER_SANITIZE_STRING);
-    $parent = filter_var($_POST["parent"],FILTER_SANITIZE_STRING);
-    $href = filter_var($_POST["href"],FILTER_SANITIZE_STRING);
-    $order = filter_var($_POST["order"],FILTER_SANITIZE_STRING);
-    $action = filter_var($_POST["action"],FILTER_SANITIZE_STRING);
-    $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
-    $htmlid = filter_var($_POST["htmlid"],FILTER_SANITIZE_STRING);
+$contentToSave = filter_var($_POST["content_txt"],FILTER_SANITIZE_STRING);
+$tbl = filter_var($_POST["tbl"],FILTER_SANITIZE_STRING);
+$field = filter_var($_POST["field"],FILTER_SANITIZE_STRING);
+$fieldid = filter_var($_POST["fieldid"],FILTER_SANITIZE_STRING);
+$parent = filter_var($_POST["parent"],FILTER_SANITIZE_STRING);
+$href = filter_var($_POST["href"],FILTER_SANITIZE_STRING);
+$order = filter_var($_POST["order"],FILTER_SANITIZE_STRING);
+$action = filter_var($_POST["action"],FILTER_SANITIZE_STRING);
+$id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
+$htmlid = filter_var($_POST["htmlid"],FILTER_SANITIZE_STRING);
     
-// if ($action == "add")
-    // {
 
-    // }
-
-    //     // Обновляем запись
-    //   
-    //     // if(mysqli_query($dbconn,"INSERT INTO head(name_head) VALUES('".$contentToSave."')"))
-    //     // echo "UPDATE  ".$tbl." SET  ".$field." =  '".$contentToSave."' WHERE  ".$fieldid."` ='.$id.'";
-    //     // TRIM('region_name')
-        
-    //     $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
-    //     // echo $sql;
-    //     if(mysqli_query($dbconn,$sql))
-    //     {
-    //         //Record is successfully inserted, respond to ajax request
-    //         $head_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
-            
-        
-    //         mysqli_close($dbconn);
-
-    //     }else{
-    //         //вывод ошибки
-    //         // echo $sql;
-    //         //header('HTTP/1.1 500 '.mysql_error());
-    //         header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
-    //         exit();
-    //     }
-
-// }
-
-// echo 'contentToSave - '.$contentToSave;
-// echo '<br>tbl - '.$tbl ;
-// echo '<br>field - '.$field ;
-// echo '<br>fieldid - '.$fieldid ;
-// echo '<br>parent - '.$parent ;
-// echo '<br>href - '.$href ;
-// echo '<br>order - '.$order ;
-// echo '<br>action - '.$action ;
-// echo '<br>id - '.$id ;
-
+// echo '<li class="hidden" >';
+echo '<li >';
+echo '<span id="form-contentToSave" data-val="'.$contentToSave.'">contentToSave - '.$contentToSave.'</span>';
+echo '<br><span id="form-tbl" data-val="'.$tbl.'">tbl - '.$tbl.'</span>' ;
+echo '<br><span id="form-field" data-val="'.$field.'">field - '.$field.'</span>' ;
+echo '<br><span id="form-fieldid" data-val="'.$fieldid.'">fieldid - '.$fieldid.'</span>' ;
+echo '<br><span id="form-parent" data-val="'.$parent.'">parent - '.$parent.'</span>' ;
+echo '<br><span id="form-href" data-val="'.$href.'">href - '.$href.'</span>' ;
+echo '<br><span id="form-order" data-val="'.$order.'">order - '.$order.'</span>' ;
+echo '<br><span id="form-action" data-val="'.$action.'">action - '.$action.'</span>' ;
+echo '<br><span id="form-id" data-val="'.$id.'">id - '.$id.'</span>' ;
+echo '</li>';
 
 $clickedID = explode( '_', $id ); //Разбиваем строку (Split работает аналогично PHP explode)
 $DbNumberID = $clickedID[1]; //и получаем номер из массива
@@ -75,7 +47,7 @@ switch ($tbl) {
     $Result_head = mysqli_query($dbconn,"SELECT *  FROM head WHERE head_id = $DbNumberID");//MySQL запрос
     $row_head = mysqli_fetch_array($Result_head);//получаем все записи из таблицы
     // $row_head["obj_id"]
-
+        echo '<li>';
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">
@@ -89,6 +61,7 @@ switch ($tbl) {
                 </div>
             </div>
         ';
+        echo '</li>';
         echo '<li id="tb-head" class="active">';      
 
         echo '<div class="row">
@@ -126,7 +99,7 @@ switch ($tbl) {
     {
         $Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE category_id = $DbNumberID");//MySQL запрос
         $row_category = mysqli_fetch_array($Result_category);//получаем все записи из таблицы
-
+        echo '<li>';
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">
@@ -140,6 +113,7 @@ switch ($tbl) {
                 </div>
             </div>
             ';
+        echo '</li>';
         echo '<li id="tb-head" class="active">';
 
         echo '<div class="row">
@@ -185,6 +159,7 @@ switch ($tbl) {
     }
     else //add new category
     {
+        echo '<li>';
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">
@@ -198,6 +173,7 @@ switch ($tbl) {
                 </div>
             </div>
             ';
+        echo '</li>';
         echo '<li id="tb-head" class="active">';
 
         echo '<div class="row">
@@ -251,7 +227,7 @@ switch ($tbl) {
     {
         $Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE grupp_id = $DbNumberID");//MySQL запрос
         $row_grupp = mysqli_fetch_array($Result_grupp);//получаем все записи из таблицы
-
+            echo '<li>';
             echo '<div class="row">
                     <div class="input-group col-md-12">
                         <div class="input-group ">
@@ -265,109 +241,106 @@ switch ($tbl) {
                     </div>
                 </div>
                 ';
+            echo '</li>';
 
             echo '<li id="tb-head" class="active">';
-
-
             echo '<div class="row">
-                    <div class="input-group col-md-12">
-                        <div class="input-group ">                      
-                            <span class="input-group-addon">Идентификатор (html_id)</span>
-                            <input type="text" class="form-control" id="recipient-html-id" value="'.$row_grupp["html_id"].'" required>
-                            <span class="input-group-btn">
-                                <button type="button"   data-tbl="grupp"  data-field ="html_id" class="btn  btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                            </span>
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                      
+                                <span class="input-group-addon">Идентификатор (html_id)</span>
+                                <input type="text" class="form-control" id="recipient-html-id" value="'.$row_grupp["html_id"].'" required>
+                                <span class="input-group-btn">
+                                    <button type="button"   data-tbl="grupp"  data-field ="html_id" class="btn  btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
                 ';
 
             echo '<div class="row">
-                    <div class="input-group col-md-12">
-                        <div class="input-group ">                      
-                            <span class="input-group-addon">Родитель</span>
-                            <input type="text" class="form-control" id="recipient-parent" value="category_id-'.$row_grupp["category_id"].'" required disabled>
-                            <span class="input-group-btn">
-                                <button type="button"  data-tbl="grupp"   data-field ="category_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                            </span>
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                      
+                                <span class="input-group-addon">Родитель</span>
+                                <input type="text" class="form-control" id="recipient-parent" value="category_id-'.$row_grupp["category_id"].'" required disabled>
+                                <span class="input-group-btn">
+                                    <button type="button"  data-tbl="grupp"   data-field ="category_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
                 ';
 
             echo '<div class="row">
-                    <div class="input-group col-md-12">
-                        <div class="input-group ">                      
-                            <span class="input-group-addon">Номер по порядку</span>
-                            <input type="text" class="form-control" id="recipient-order" value="'.$row_grupp["number_in_order_grupp"].'" required>
-                            <span class="input-group-btn">
-                                <button type="button" data-tbl="grupp"  data-field ="number_in_order_grupp" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                            </span>
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                      
+                                <span class="input-group-addon">Номер по порядку</span>
+                                <input type="text" class="form-control" id="recipient-order" value="'.$row_grupp["number_in_order_grupp"].'" required>
+                                <span class="input-group-btn">
+                                    <button type="button" data-tbl="grupp"  data-field ="number_in_order_grupp" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
                 ';
             echo '</li>';
             mysqli_free_result($Result_grupp); 
         }
         else //add new grupp
         {
+            echo '<li>';
             echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">
-                    
-                    <span class="input-group-addon">Имя</span>
-                    <input type="text" class="form-control"  id="recipient-name" value="" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="grupp" data-field ="name_grupp" data-action="action"  class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-        </div>
-        ';
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                                
+                                <span class="input-group-addon">Имя</span>
+                                <input type="text" class="form-control"  id="recipient-name" value="" required>
+                                <span class="input-group-btn">
+                                    <button type="button"  data-tbl="grupp" data-field ="name_grupp" data-action="action"  class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ';
+            echo '</li>';
+            echo '<li id="tb-head" class="active">';
+            echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                      
+                                <span class="input-group-addon">Идентификатор (html_id)</span>
+                                <input type="text" class="form-control" id="recipient-html-id" value="" required>
+                                <span class="input-group-btn">
+                                    <button type="button"   data-tbl="grupp"  data-field ="html_id" data-action="action"  class="btn  btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ';
 
-    echo '<li id="tb-head" class="active">';
+            echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                      
+                                <span class="input-group-addon">Родитель</span>
+                                <input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required disabled>
+                                <span class="input-group-btn">
+                                    <button type="button"  data-tbl="grupp"   data-field ="category_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ';
 
-
-    echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                      
-                    <span class="input-group-addon">Идентификатор (html_id)</span>
-                    <input type="text" class="form-control" id="recipient-html-id" value="" required>
-                    <span class="input-group-btn">
-                        <button type="button"   data-tbl="grupp"  data-field ="html_id" data-action="action"  class="btn  btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-        </div>
-        ';
-
-    echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                      
-                    <span class="input-group-addon">Родитель</span>
-                    <input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required disabled>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="grupp"   data-field ="category_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-        </div>
-        ';
-
-    echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                      
-                    <span class="input-group-addon">Номер по порядку</span>
-                    <input type="text" class="form-control" id="recipient-order" value="" required>
-                    <span class="input-group-btn">
-                        <button type="button" data-tbl="grupp"  data-field ="number_in_order_grupp" data-action="action"  class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-        </div>
-        ';
-    echo '</li>';
+            echo '<div class="row">
+                        <div class="input-group col-md-12">
+                            <div class="input-group ">                      
+                                <span class="input-group-addon">Номер по порядку</span>
+                                <input type="text" class="form-control" id="recipient-order" value="" required>
+                                <span class="input-group-btn">
+                                    <button type="button" data-tbl="grupp"  data-field ="number_in_order_grupp" data-action="action"  class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                ';
+            echo '</li>';
 
         }
         break;
@@ -381,7 +354,7 @@ switch ($tbl) {
     /////obj
         $Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE obj_id = $DbNumberID");//MySQL запрос
         $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы
-        
+        echo '<li>';
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">
@@ -395,6 +368,7 @@ switch ($tbl) {
                 </div>
             </div>
         ';
+        echo '</li>';
         echo '<li id="tb-head" class="active">'; 
         echo '<div class="row">
                 <div class="input-group col-md-12">

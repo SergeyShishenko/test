@@ -12,9 +12,7 @@
 
     <hr>
  <!-- .modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-         aria-hidden="true">
-
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -28,32 +26,12 @@
                         <input type="hidden" id="field" value="">
                         <input type="hidden" id="fieldid" value="">
                         <input type="hidden" id="id" value="">
-                        <input type="hidden" id="action" value="">
-                        
-                        <div class="form-group ">
-                            <!-- <div class="row">
-                                <div class="input-group col-md-12">
-                                    <div class="input-group ">
-                                        
-                                        <span class="input-group-addon">Имя</span>
-                                        <input type="text" class="form-control"  id="recipient-name"  required>
-                                        <span class="input-group-btn">
-                                            <button type="button" data-field ="name_head" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div> -->
-
-
-                            <ul class="list-tbl">
-                                   
-                                    
+                        <input type="hidden" id="action" value="">                        
+                        <div class="form-group ">                        
+                            <ul class="list-tbl">        
                             </ul>
-
-                            <div id="loading" class="center">Загрузка...<div class="center"></div></div>
-                
-                        </div>
-                          
+                            <div id="loading" class="center">Загрузка...<div class="center"></div></div>                
+                        </div>                          
                     </form>
                 </div>
                 <div class="modal-footer">

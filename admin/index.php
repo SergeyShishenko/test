@@ -584,7 +584,7 @@
         {
             $("#ChangeSubmit").addClass('hidden');
             $("#AddSubmit").removeClass('hidden');
-            action = "add"; 
+            action = "action"; 
         }
         else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');}
         // $(this).find('#myModalLabel').text(content +  recipient_name); 

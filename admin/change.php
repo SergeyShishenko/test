@@ -24,39 +24,31 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     // echo $id  ; //response - число или "" или "undefined"
     // exit();
    
-    $obj=$tbl."_";
+    $obj="";
+    if ($tbl=="obj" or $tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop")
+        {$obj="obj_";}
     if ($action=="action")
     {
         // $insert_id=$tbl;  
         if ($tbl=="obj" or $tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop")
         {
-            $obj="obj_";
+            // $obj="obj_";
             if (isset($id))
-            {
-               
+            {               
                 // добавляем новую запись во все таблицы объекта
                 $sql = "INSERT INTO  `obj`(`grupp_id`,`path_img_obj`,`fname_img_obj`,`fname_img_smoll_obj`,`template_obj`,`img_orientation_obj`) VALUES ('$parent[1]','./dist/images/','test.png','test.png','shablony-dokumentov.php','album')";
                 if(mysqli_query($dbconn,$sql))
-                {
-                    //Record is successfully inserted, respond to ajax request
-                   $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL  
-                   $action=="change";                   
-                    
+                {                    
+                    $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL  
+                    $action=="change";
                     mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$id')");
-                
                     mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$id')");
-                   
                     mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_id`) VALUES ('$id')");
-              
-                    mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$id')");                               
-                    
-
+                    mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$id')");
                 }else{//вывод ошибки                                        
                     header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
                     exit();
-                }
-
-                
+                }                
             }
         }
         
@@ -79,7 +71,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     
     if(mysqli_query($dbconn,$sql))
     {        
-        $insert_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
+        // $insert_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
         mysqli_close($dbconn);
         echo $obj.$id ; //response
 
