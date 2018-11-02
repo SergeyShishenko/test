@@ -50,10 +50,24 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                     exit();
                 }                
             }
+
+            $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+        }else // не obj
+        {   
+            {$obj=tbl."_";}
+            $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
+            if(mysqli_query($dbconn,$sql))
+            {                    
+                $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL  
+                $action=="change";               
+            }else{//вывод ошибки                                        
+                header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+                exit();
+            }  
         }
         
         // $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
-        $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+        // $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
       
         
         
@@ -66,20 +80,26 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     else //$action=="change"
     { 
         $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+
+        if(mysqli_query($dbconn,$sql))
+        {        
+            // $insert_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
+          
+    
+        }else{//вывод ошибки 
+            header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+            exit();
+        }
+
+
     }    
 
     
-    if(mysqli_query($dbconn,$sql))
-    {        
-        // $insert_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
+   
         mysqli_close($dbconn);
         echo $obj.$id ; //response
 
-    }else{//вывод ошибки 
-        header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
-        exit();
-    }
-
+  
 }
 
 ?>
