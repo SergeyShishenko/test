@@ -1310,7 +1310,7 @@ switch ($tbl) {
                                             <span class="input-group-addon">Keywords</span>
                                             <input type="text" class="form-control" id="recipient-obj_alias__00" value="" required>
                                             <span class="input-group-btn">
-                                                <button type="button"  data-tbl="obj_alias"  data-field ="keywords_alias" data-fieldid="obj_alias_id" data-id="alias_00"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                <button type="button"  data-tbl="obj_alias"  data-field ="keywords_alias" data-fieldid="obj_alias_id"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                 <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
                                                 <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>                                          
                                             </span>
@@ -1347,7 +1347,7 @@ switch ($tbl) {
                                         <span class="input-group-addon btn btn-minimize  btn-default  button34">Страница №_ (fname_img_obj_in_addition)<i class="glyphicon glyphicon-chevron-down"></i></span>
                                         <input type="text" class="form-control" id="recipient-fname_img_obj_in_addition__00" value="" required>
                                         <span class="input-group-btn">
-                                                <button type="button" data-tbl="obj_in_addition"  data-field ="fname_img_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_00"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                <button type="button" data-tbl="obj_in_addition"  data-field ="fname_img_obj_in_addition"  data-fieldid="obj_in_addition_id"    class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                 <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
                                                 <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>                                                                                                                       
                                         </span>
@@ -1361,7 +1361,7 @@ switch ($tbl) {
                                                             <span class="input-group-addon">html_in_addition_id</span>
                                                             <input type="text" class="form-control" id="recipient-html_in_addition_id__00" value="" required>
                                                             <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field="html_in_addition_id"  data-fieldid="obj_in_addition_id" data-id="addition_00"    class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                                <button type="button" data-tbl="obj_in_addition" data-field="html_in_addition_id"  data-fieldid="obj_in_addition_id"     class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -1374,7 +1374,7 @@ switch ($tbl) {
                                                             <span class="input-group-addon">path_img_obj_in_addition</span>
                                                             <input type="text" class="form-control" id="recipient-path_img_obj_in_addition__00" value="" required>
                                                             <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field ="path_img_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_00"    class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                                <button type="button" data-tbl="obj_in_addition" data-field ="path_img_obj_in_addition"  data-fieldid="obj_in_addition_id"     class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -1387,7 +1387,7 @@ switch ($tbl) {
                                                             <span class="input-group-addon">data_href_img_obj_in_addition</span>
                                                             <input type="text" class="form-control" id="recipient-data_href_img_obj_in_addition__00" value="" required>
                                                             <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_00"    class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                                <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_obj_in_addition"  data-fieldid="obj_in_addition_id"    class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -1400,7 +1400,7 @@ switch ($tbl) {
                                                             <span class="input-group-addon">fname_img_smoll_obj_in_addition</span>
                                                             <input type="text" class="form-control" id="recipient-fname_img_smoll_obj_in_addition__00" value="" required>
                                                             <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field ="fname_img_smoll_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_00"     class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                                <button type="button" data-tbl="obj_in_addition" data-field ="fname_img_smoll_obj_in_addition"  data-fieldid="obj_in_addition_id"     class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -1413,7 +1413,7 @@ switch ($tbl) {
                                                             <span class="input-group-addon">data_href_img_smoll_obj_in_addition</span>
                                                             <input type="text" class="form-control" id="recipient-data_href_img_smoll_obj_in_addition__00" value="" required>
                                                             <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_smoll_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_00"    class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                                <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_smoll_obj_in_addition"  data-fieldid="obj_in_addition_id"    class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -1426,7 +1426,7 @@ switch ($tbl) {
                                                             <span class="input-group-addon">img_def</span>
                                                             <textarea class="form-control"  id="recipient-img_def__00" name="text"></textarea>
                                                             <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field ="img_def" data-fieldid="obj_in_addition_id" data-id="addition_00"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                                <button type="button" data-tbl="obj_in_addition" data-field ="img_def" data-fieldid="obj_in_addition_id"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                                             </span>
                                                         </div>
                                                     </div>

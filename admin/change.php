@@ -20,21 +20,26 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     $parent = explode("-", filter_var($_POST["parent"],FILTER_SANITIZE_STRING));
     // $clickedID = explode("_", $id);
     // $DbNumberID = $clickedID[1];
-
+    
     // echo $id  ; //response - число или "" или "undefined"
+    // header('HTTP/1.1 400 action= '.$id);
     // exit();
    
-    $obj="";
+    $obj=$tbl."_";
     if ($tbl=="obj" or $tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop")
         {$obj="obj_";}
-    if ($action=="action")
+    if (!isset($id) or $id=="")//$action=="action"
     {
-        // $insert_id=$tbl;  
+        // $insert_id=$tbl; 
+        // header('HTTP/1.1 400 action= '.$action);
+        
+        // exit();
+         
         if ($tbl=="obj" or $tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop")
         {
             // $obj="obj_";
-            if (isset($id))
-            {               
+            // if (isset($id))
+            // {               
                 // добавляем новую запись во все таблицы объекта
                 $sql = "INSERT INTO  `obj`(`grupp_id`,`path_img_obj`,`fname_img_obj`,`fname_img_smoll_obj`,`template_obj`,`img_orientation_obj`) VALUES ('$parent[1]','./dist/images/','test.png','test.png','shablony-dokumentov.php','album')";
                 if(mysqli_query($dbconn,$sql))
@@ -49,12 +54,13 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                     header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
                     exit();
                 }                
-            }
+            // }
 
             $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
-        }else // не obj
+        }
+        else // не obj
         {   
-            {$obj=tbl."_";}
+            $obj=$tbl."_";
             $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
             if(mysqli_query($dbconn,$sql))
             {                    
@@ -67,8 +73,14 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
         }
         
         // $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
-        // $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
-      
+        $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+        if(!mysqli_query($dbconn,$sql))
+        {        
+          //вывод ошибки
+          header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+            exit();
+        }
+
         
         
         // header('HTTP/1.1 400 Zapros dla dobavleniy! '.$sql);
@@ -79,7 +91,12 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     }
     else //$action=="change"
     { 
+        if ($tbl=="obj" or $tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop")
+        {$fieldid='obj_id';}
         $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+
+        //  header('HTTP/1.1 400 $sql= '.$sql);        
+        // exit();
 
         if(mysqli_query($dbconn,$sql))
         {        
