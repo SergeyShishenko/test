@@ -36,9 +36,11 @@
                 </div>
                 <div class="modal-footer">
                     <!-- <a href="#openModal">Открыть модальное окно</a> -->
+                    <a href="#" class="btn btn-danger"  id="DelSubmit">Удалить</a>
                     <a href="#" class="btn btn-default dismiss" data-dismiss="modal">Закрыть</a>
                     <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="ChangeSubmit">Сохранить изменения</a> -->
                     <a href="#" class="btn btn-primary " data-dismiss="modal" id="AddSubmit">Добавить</a>
+
                 </div>
             </div>
         </div>

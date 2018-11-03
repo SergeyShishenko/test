@@ -353,27 +353,35 @@
 
 
                 //Удаляем запись при клике по крестику
-                // $("body").on("click", "#responds .del_button", function(e) {
-                //     e.preventDefault();
-                //     var clickedID = this.id.split("-"); //Разбиваем строку (Split работает аналогично PHP explode)
-                //     var DbNumberID = clickedID[1]; //и получаем номер из массива
-                //     var myData = 'recordToDelete='+ DbNumberID; //выстраиваем  данные для POST
+                $("body").on("click", "#DelSubmit", function(e) {
+                    e.preventDefault();
+                    if (confirm("Удалить?")) {
+                        alert("Удаляем!")
+                        } else {
+                            alert("Вы нажали кнопку отмена")
+                            }
 
-                //     jQuery.ajax({
-                //         type: "POST", // HTTP метод  POST или GET
-                //         url: "response.php", //url-адрес, по которому будет отправлен запрос
-                //         dataType:"text", // Тип данных
-                //         data:myData, //post переменные
-                //         success:function(response){
-                //         // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-                //         $('#item_'+DbNumberID).fadeOut("slow");
-                //         },
-                //         error:function (xhr, ajaxOptions, thrownError){
-                //             //выводим ошибку
-                //             alert(thrownError);
-                //         }
-                //     });
-                // });
+                    return;
+                    alert('!!');
+                    var clickedID = this.id.split("-"); //Разбиваем строку (Split работает аналогично PHP explode)
+                    var DbNumberID = clickedID[1]; //и получаем номер из массива
+                    var myData = 'recordToDelete='+ DbNumberID; //выстраиваем  данные для POST
+
+                    jQuery.ajax({
+                        type: "POST", // HTTP метод  POST или GET
+                        url: "response.php", //url-адрес, по которому будет отправлен запрос
+                        dataType:"text", // Тип данных
+                        data:myData, //post переменные
+                        success:function(response){
+                        // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+                        $('#item_'+DbNumberID).fadeOut("slow");
+                        },
+                        error:function (xhr, ajaxOptions, thrownError){
+                            //выводим ошибку
+                            alert(thrownError);
+                        }
+                    });
+                });
 
 
             $("body").on( "click"," .btn-minimize.btn-round",function (e) {
@@ -583,10 +591,11 @@
         if (content.indexOf("ДОБАВИТЬ") !== -1)
         {
             $("#ChangeSubmit").addClass('hidden');
+            $("#DelSubmit").addClass('hidden');
             $("#AddSubmit").removeClass('hidden');
             action = "action"; 
         }
-        else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');}
+        else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');$("#DelSubmit").removeClass('hidden');}
         // $(this).find('#myModalLabel').text(content +  recipient_name); 
         $(this).find('#myModalLabel').text(content); 
         // recipient_name = recipient_name.replace(String.fromCharCode(171), '');// удаление ковычек
