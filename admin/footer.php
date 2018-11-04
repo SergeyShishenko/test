@@ -16,7 +16,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close dismiss" data-dismiss="modal">×</button>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
                     <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
                 <div class="modal-body">
@@ -36,8 +36,9 @@
                 </div>
                 <div class="modal-footer">
                     <!-- <a href="#openModal">Открыть модальное окно</a> -->
-                    <a href="#" class="btn btn-danger"  id="DelSubmit">Удалить</a>
-                    <a href="#" class="btn btn-default dismiss" data-dismiss="modal">Закрыть</a>
+                    <!-- class="close" data-dismiss="modal" -->
+                    <a href="#" class="btn btn-danger"   id="DelSubmit">Удалить</a>
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Закрыть</a>
                     <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="ChangeSubmit">Сохранить изменения</a> -->
                     <a href="#" class="btn btn-primary " data-dismiss="modal" id="AddSubmit">Добавить</a>
 
@@ -51,7 +52,7 @@
  <div id="openModal" class="modalDialog">
 
     <div>
-        <a href="#close" title="Закрыть" class="close dismiss">X</a>
+        <a href="#close" title="Закрыть" class="close">X</a>
         <h2>Модальное окно</h2>
         <p>Пример простого модального окна, которое может быть создано с использованием CSS3.</p>
         <p>Его можно использовать в широком диапазоне, начиная от вывода сообщений и заканчивая формой регистрации.</p>

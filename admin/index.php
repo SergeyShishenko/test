@@ -282,17 +282,13 @@
    $(document).ready(function() {
             // Добавляем НОВЫЙ РАЗДЕЛ, когда произошел клик по кнопке
                 $("#FormSubmit").click(function (e) {
-
                     e.preventDefault();
-
                     if($("#contentText").val()==="") //simple validation
                     {
                         alert("Введите наименование!");
                         return false;
                     }
-
                     var myData = "content_txt="+ $("#contentText").val(); //post variables
-
                     jQuery.ajax({
                         type: "POST", // HTTP метод  POST или GET
                         url: "response.php", //url-адрес, по которому будет отправлен запрос
@@ -310,19 +306,15 @@
 
                 // Обновляем запись, когда произошел клик по кнопке
                 $("#ChangeSubmit").click(function (e) {
-
                     e.preventDefault();
-
                     if($("#recipient-name").val()==="") //simple validation
                     {
                         alert("Введите наименование!");
                         return false;
                     }
                         //post variables
-
                     var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
                     var DbNumberID = clickedID[1]; //и получаем номер из массива
-
                     var myData = "content_txt="+ $("#recipient-name").val() +"&"+
                                  "tbl="+ $("#tbl").val() +"&"+
                                  "field="+ $("#field").val() +"&"+
@@ -349,168 +341,167 @@
                         });
                  });
 
-                
-
-
-                //Удаляем запись при клике по крестику
+                //Удаляем запись 
                 $("body").on("click", "#DelSubmit", function(e) {
                     e.preventDefault();
                     if (confirm("Удалить?")) {
-                        alert("Удаляем!")
-                        } else {
-                            alert("Вы нажали кнопку отмена")
+                        // alert("Удаляем!");
+
+                        // return false;
+                        var clickedID = $('input[id="id"]').val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
+                        var DbNumberID = clickedID[1]; //и получаем номер из массива
+
+                        // var myData = 'recordToDelete='+ DbNumberID; //выстраиваем  данные для POST
+
+                        var myData =    "recordToDelete="+ DbNumberID+"&"+
+                                        "tbl="+$('input[id="tbl"]').val()+"&"+                                        
+                                        "fieldid="+$('input[id="fieldid"]').val();
+                        jQuery.ajax({
+                            type: "POST", // HTTP метод  POST или GET
+                            url: "response-del.php", //url-адрес, по которому будет отправлен запрос
+                            dataType:"text", // Тип данных
+                            data:myData, //post переменные
+                            success:function(response){
+                            // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+                            $('#image-'+DbNumberID).fadeOut("slow");
+                            },
+                            error:function (xhr, ajaxOptions, thrownError){
+                                //выводим ошибку
+                                alert(thrownError);
                             }
+                        });
+                        $('#myModal').modal('hide');
+                    }// else {alert("Вы нажали кнопку отмена");}  
+                });
 
-                    return;
-                    alert('!!');
-                    var clickedID = this.id.split("-"); //Разбиваем строку (Split работает аналогично PHP explode)
-                    var DbNumberID = clickedID[1]; //и получаем номер из массива
-                    var myData = 'recordToDelete='+ DbNumberID; //выстраиваем  данные для POST
 
-                    jQuery.ajax({
-                        type: "POST", // HTTP метод  POST или GET
-                        url: "response.php", //url-адрес, по которому будет отправлен запрос
-                        dataType:"text", // Тип данных
-                        data:myData, //post переменные
-                        success:function(response){
-                        // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-                        $('#item_'+DbNumberID).fadeOut("slow");
-                        },
-                        error:function (xhr, ajaxOptions, thrownError){
-                            //выводим ошибку
-                            alert(thrownError);
-                        }
+                $("body").on( "click"," .btn-minimize.btn-round",function (e) {
+                    // e.preventDefault();
+                    var $target = $(this).parent().parent().next('.box-content');
+                    if ($target.is(':visible')) $('i', $(this)).removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                    else                       $('i', $(this)).removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                    $target.slideToggle();
+                });
+                $("body").on( "click",".btn-minimize.button34",function (e) {
+                    // e.preventDefault();
+                    var $target = $(this).parent().next('.box-content');
+                    if ($target.is(':visible')) $('i', $(this)).removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                    else                       $('i', $(this)).removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                    $target.slideToggle();
+                });
+                        
+
+                // для объекта
+                $("body").on( "mouseenter","ul.thumbnails.gallery li.thumbnail",function () {
+                    console.log("over obj img");
+                    $('img', this).fadeToggle(1000);
+                    $(this).find('.gallery-controls').remove();
+                    console.log($('img', this).data('parent'));
+                    var parent = $('img', this).data('parent');             
+                    var id = $('img', this).data('id'); 
+                    var content = $('img', this).data('content');
+                    var name = $('img', this).data('name');
+                    var htmlid = $('img', this).data('htmlid'); 
+                    console.log($('img', this).data('htmlid'));
+                    // var tbl = $('img', this).data('tbl');
+                    // var field = $('img', this).data('field');
+                    // var fieldid = $('img', this).data('field-id');
+
+                    $(this).append('<div class="well gallery-controls">'+
+                                        '<p>' +
+                                            '<a href="#"'+
+                                            ' class="gallery-edit btn"'+
+                                            ' title="РЕДАКТИРОВАТЬ ОБЪЕКТ"' +
+
+                                            ' data-toggle="modal"'+
+                                            ' data-target="#myModal" '+
+                                            ' data-parent="' + parent +'"'+
+                                            ' data-id="'+ id +'"'+
+                                            ' data-tbl="obj"'+
+                                            ' data-field="name_obj"'+
+                                            ' data-content="'+ content +'"'+
+                                            ' data-name="'+ name +'"'+
+                                            ' data-htmlid="'+ htmlid +'"' +
+                                            'data-action="change"'+
+                                            ' data-field-id="obj_id">'+                                    
+                                            '<i class="glyphicon glyphicon-edit" ></i>'+                                    
+                                        '</p>'+
+                                    '</div>');
+                    $(this).find('.gallery-controls').stop().animate({'margin-top': '-1'}, 400);
+                });
+                $("body").on( "mouseleave","ul.thumbnails.gallery li.thumbnail",function () {
+                    console.log("out obj img");
+                    $('img', this).fadeToggle(1000);
+                    $(this).find('.gallery-controls').stop().animate({'margin-top': '-30'}, 200, function () {
+                        $(this).remove();
                     });
                 });
 
 
-            $("body").on( "click"," .btn-minimize.btn-round",function (e) {
-                // e.preventDefault();
-                var $target = $(this).parent().parent().next('.box-content');
-                if ($target.is(':visible')) $('i', $(this)).removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
-                else                       $('i', $(this)).removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
-                $target.slideToggle();
-            });
-            $("body").on( "click",".btn-minimize.button34",function (e) {
-                // e.preventDefault();
-                var $target = $(this).parent().next('.box-content');
-                if ($target.is(':visible')) $('i', $(this)).removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
-                else                       $('i', $(this)).removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
-                $target.slideToggle();
-            });
+                // для вкладок TAB
+                $("body").on( "mouseenter","ul.nav-tabs li",function () { 
+                    //  alert($(this).text()); 
+                    console.log("over вкладка tab");    
+                    var name = $(this).find('a > span').text();
+                    var tbl = $(this).find('a').data('tbl');
+                    var field = $(this).find('a').data('field');
+                    var fieldid = $(this).find('a').data('field-id'); 
+                    var parent = $(this).find('a').data('parent'); 
+                    var id = $(this).find('a').data('id'); 
+                    var href = $(this).find('a').data('href'); 
+                    var order = $(this).find('a').data('order');
+                    var htmlid = $(this).find('a').data('htmlid'); 
+                    var title = $(this).find('a').data('title'); 
+                    var add = "";
+                    if (tbl=='grupp')
+                    {
+                        var clickedID = id.split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
+                        var DbNumberID = clickedID[1]; //и получаем номер из массива
+                    add = '</a> <a href="#" class="gallery-add btn" data-content="ДОБАВИТЬ ОБЪЕКТ" title="ДОБАВИТЬ ОБЪЕКТ"'+
+                            'data-toggle="modal" data-target="#myModal"'+
+                            'data-tbl="obj" '+
+                            'data-field="name_obj" '+
+                            'data-parent="grupp_id-' + DbNumberID +'"' +
+                            'data-field-id="obj_id"' +
+                            'data-href=""' +
+                            'data-order=""' +
+                            'data-htmlid=""'+
+                            'data-action="action"'+
+                            'data-id="obj_"  '+
+                            ' style="border:none;">'+
+                            '<i class="glyphicon glyphicon-plus-sign"></i></a>'; 
+                    }
                     
-
-       // для объекта
-        $("body").on( "mouseenter","ul.thumbnails.gallery li.thumbnail",function () {
-            console.log("over obj img");
-            $('img', this).fadeToggle(1000);
-            $(this).find('.gallery-controls').remove();
-            console.log($('img', this).data('parent'));
-            var parent = $('img', this).data('parent');             
-            var id = $('img', this).data('id'); 
-            var content = $('img', this).data('content');
-            var name = $('img', this).data('name');
-            var htmlid = $('img', this).data('htmlid'); 
-            console.log($('img', this).data('htmlid'));
-            // var tbl = $('img', this).data('tbl');
-            // var field = $('img', this).data('field');
-            // var fieldid = $('img', this).data('field-id');
-
-            $(this).append('<div class="well gallery-controls">'+
-                                '<p>' +
-                                    '<a href="#"'+
-                                    ' class="gallery-edit btn"'+
-                                    ' title="РЕДАКТИРОВАТЬ ОБЪЕКТ"' +
-
-                                    ' data-toggle="modal"'+
-                                    ' data-target="#myModal" '+
-                                    ' data-parent="' + parent +'"'+
-                                    ' data-id="'+ id +'"'+
-                                    ' data-tbl="obj"'+
-                                    ' data-field="name_obj"'+
-                                    ' data-content="'+ content +'"'+
-                                    ' data-name="'+ name +'"'+
-                                    ' data-htmlid="'+ htmlid +'"' +
-                                    'data-action="change"'+
-                                    ' data-field-id="obj_id">'+                                    
-                                    '<i class="glyphicon glyphicon-edit" ></i>'+                                    
-                                '</p>'+
-                             '</div>');
-            $(this).find('.gallery-controls').stop().animate({'margin-top': '-1'}, 400);
-        });
-        $("body").on( "mouseleave","ul.thumbnails.gallery li.thumbnail",function () {
-            console.log("out obj img");
-            $('img', this).fadeToggle(1000);
-            $(this).find('.gallery-controls').stop().animate({'margin-top': '-30'}, 200, function () {
-                $(this).remove();
-            });
-        });
-
-
-       // для вкладок TAB
-        $("body").on( "mouseenter","ul.nav-tabs li",function () { 
-            //  alert($(this).text()); 
-            console.log("over вкладка tab");    
-            var name = $(this).find('a > span').text();
-            var tbl = $(this).find('a').data('tbl');
-            var field = $(this).find('a').data('field');
-            var fieldid = $(this).find('a').data('field-id'); 
-            var parent = $(this).find('a').data('parent'); 
-            var id = $(this).find('a').data('id'); 
-            var href = $(this).find('a').data('href'); 
-            var order = $(this).find('a').data('order');
-            var htmlid = $(this).find('a').data('htmlid'); 
-            var title = $(this).find('a').data('title'); 
-            var add = "";
-            if (tbl=='grupp')
-            {
-                var clickedID = id.split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
-                var DbNumberID = clickedID[1]; //и получаем номер из массива
-               add = '</a> <a href="#" class="gallery-add btn" data-content="ДОБАВИТЬ ОБЪЕКТ" title="ДОБАВИТЬ ОБЪЕКТ"'+
-                     'data-toggle="modal" data-target="#myModal"'+
-                     'data-tbl="obj" '+
-                     'data-field="name_obj" '+
-                     'data-parent="grupp_id-' + DbNumberID +'"' +
-                     'data-field-id="obj_id"' +
-                     'data-href=""' +
-                     'data-order=""' +
-                     'data-htmlid=""'+
-                     'data-action="action"'+
-                     'data-id="obj_"  '+
-                     ' style="border:none;">'+
-                     '<i class="glyphicon glyphicon-plus-sign"></i></a>'; 
-            }
-            
-            
-            $(this).append(
-                '<div class=" tab-controls" >'+
-                '<p>'+
-                '<a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ ' + title + '"' + 
-                'data-content="РЕДАКТИРОВАТЬ ' + title + '"' + 
-                'data-name="' + name + '" ' +
-                'data-toggle="modal" '+
-                'data-target="#myModal" '+
-                'data-tbl="' + tbl + '" '+
-                'data-field="' + field + '" '+
-                'data-parent="' + parent +'"' +
-                'data-field-id="' + fieldid + '"' +
-                'data-href="' + href + '"' +
-                'data-order="' + order + '"' +
-                'data-htmlid="' + htmlid + '"'+
-                'data-action="change"'+
-                'data-id="' + id + ' " style="border:none;" >'+
-                '<i class="glyphicon glyphicon-edit" ></i>'+
-                add +
-                '</p>'+
-                '</div>');
-            $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
-        });
-        
-        $("body").on( "mouseleave","ul.nav-tabs li",function () {
-            console.log("out вкладка tab");
-            // $('a', this).fadeToggle(1000);
-            $(this).find('.tab-controls').stop().animate({'margin-top': '0'}, 200, function () {  $(this).remove();   });
-        });
+                    
+                    $(this).append(
+                        '<div class=" tab-controls" >'+
+                        '<p>'+
+                        '<a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ ' + title + '"' + 
+                        'data-content="РЕДАКТИРОВАТЬ ' + title + '"' + 
+                        'data-name="' + name + '" ' +
+                        'data-toggle="modal" '+
+                        'data-target="#myModal" '+
+                        'data-tbl="' + tbl + '" '+
+                        'data-field="' + field + '" '+
+                        'data-parent="' + parent +'"' +
+                        'data-field-id="' + fieldid + '"' +
+                        'data-href="' + href + '"' +
+                        'data-order="' + order + '"' +
+                        'data-htmlid="' + htmlid + '"'+
+                        'data-action="change"'+
+                        'data-id="' + id + ' " style="border:none;" >'+
+                        '<i class="glyphicon glyphicon-edit" ></i>'+
+                        add +
+                        '</p>'+
+                        '</div>');
+                    $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
+                });
+                
+                $("body").on( "mouseleave","ul.nav-tabs li",function () {
+                    console.log("out вкладка tab");
+                    // $('a', this).fadeToggle(1000);
+                    $(this).find('.tab-controls').stop().animate({'margin-top': '0'}, 200, function () {  $(this).remove();   });
+                });
 
 
                         
@@ -551,6 +542,11 @@
             //     //alert($(this).parents('.thumbnail').attr('id'));
             //     // $(this).parents('.thumbnail').fadeOut();
             // });
+
+            $('#myModal').on('hidden.bs.modal', function (event) 
+            {
+                $('.list-tbl').html("");
+            });
 
         // при открытии модального окна
         $('#myModal').on('show.bs.modal', function (event) {
@@ -660,10 +656,6 @@
         $(this).find('#recipient-order').val(recipient_order); 
 
         $(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
-
-
-
-       
         });
 
 
@@ -765,10 +757,10 @@
 
 
 
-$("body").on("click",'.dismiss', function() {
-    $('.list-tbl').html("");
-    // $('#loading').css("display", "block");
-})
+// $("body").on("click",'.dismiss', function() {
+//     $('.list-tbl').html("");
+//     // $('#loading').css("display", "block");
+// })
 
 
 
