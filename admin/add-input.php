@@ -23,17 +23,17 @@ $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
 $htmlid = filter_var($_POST["htmlid"],FILTER_SANITIZE_STRING);
     
 
-echo '<li class="" >';//class="hidden" 
-echo '<span id="form-contentToSave" data-val="'.$contentToSave.'">contentToSave - '.$contentToSave.'</span>';
-echo '<br><span id="form-tbl" data-val="'.$tbl.'">tbl - '.$tbl.'</span>' ;
-echo '<br><span id="form-field" data-val="'.$field.'">field - '.$field.'</span>' ;
-echo '<br><span id="form-fieldid" data-val="'.$fieldid.'">fieldid - '.$fieldid.'</span>' ;
-echo '<br><span id="form-parent" data-val="'.$parent.'">parent - '.$parent.'</span>' ;
-echo '<br><span id="form-href" data-val="'.$href.'">href - '.$href.'</span>' ;
-echo '<br><span id="form-order" data-val="'.$order.'">order - '.$order.'</span>' ;
-echo '<br><span id="form-action" data-val="'.$action.'">action - '.$action.'</span>' ;
-echo '<br><span id="form-id" data-val="'.$id.'">id - '.$id.'</span>' ;
-echo '</li>';
+// echo '<li class="" >';//class="hidden" 
+// echo '<span id="form-contentToSave" data-val="'.$contentToSave.'">contentToSave - '.$contentToSave.'</span>';
+// echo '<br><span id="form-tbl" data-val="'.$tbl.'">tbl - '.$tbl.'</span>' ;
+// echo '<br><span id="form-field" data-val="'.$field.'">field - '.$field.'</span>' ;
+// echo '<br><span id="form-fieldid" data-val="'.$fieldid.'">fieldid - '.$fieldid.'</span>' ;
+// echo '<br><span id="form-parent" data-val="'.$parent.'">parent - '.$parent.'</span>' ;
+// echo '<br><span id="form-href" data-val="'.$href.'">href - '.$href.'</span>' ;
+// echo '<br><span id="form-order" data-val="'.$order.'">order - '.$order.'</span>' ;
+// echo '<br><span id="form-action" data-val="'.$action.'">action - '.$action.'</span>' ;
+// echo '<br><span id="form-id" data-val="'.$id.'">id - '.$id.'</span>' ;
+// echo '</li>';
 
 $clickedID = explode( '_', $id ); //Разбиваем строку (Split работает аналогично PHP explode)
 $DbNumberID = $clickedID[1]; //и получаем номер из массива

@@ -45,7 +45,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                 if(mysqli_query($dbconn,$sql))
                 {                    
                     $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL  
-                    $action=="change";
+                    // $action=="change";
                     mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$id')");
                     mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$id')");
                     mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_id`) VALUES ('$id')");
@@ -65,7 +65,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             if(mysqli_query($dbconn,$sql))
             {                    
                 $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL  
-                $action=="change";               
+                // $action=="change";               
             }else{//вывод ошибки                                        
                 header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
                 exit();
@@ -87,7 +87,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
         
         // exit();
 
-        
+
     }
     else //$action=="change"
     { 

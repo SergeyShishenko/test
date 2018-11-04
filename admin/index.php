@@ -350,12 +350,12 @@
                         // return false;
                         var clickedID = $('input[id="id"]').val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
                         var DbNumberID = clickedID[1]; //и получаем номер из массива
-
-                        // var myData = 'recordToDelete='+ DbNumberID; //выстраиваем  данные для POST
-
-                        var myData =    "recordToDelete="+ DbNumberID+"&"+
-                                        "tbl="+$('input[id="tbl"]').val()+"&"+                                        
-                                        "fieldid="+$('input[id="fieldid"]').val();
+                        var tbl = $('input[id="tbl"]').val();                        
+                        var fieldid = $('input[id="fieldid"]').val(); 
+                        //выстраиваем  данные для POST
+                        var myData =    "recordToDelete="+DbNumberID+"&"+
+                                        "tbl="+tbl+"&"+                                        
+                                        "fieldid="+fieldid;
                         jQuery.ajax({
                             type: "POST", // HTTP метод  POST или GET
                             url: "response-del.php", //url-адрес, по которому будет отправлен запрос
@@ -363,7 +363,12 @@
                             data:myData, //post переменные
                             success:function(response){
                             // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-                            $('#image-'+DbNumberID).fadeOut("slow");
+                            switch ($tbl) {                                
+                            case "obj":
+                                $('#image-'+DbNumberID).fadeOut("slow");
+                            break;
+                            }
+
                             },
                             error:function (xhr, ajaxOptions, thrownError){
                                 //выводим ошибку
