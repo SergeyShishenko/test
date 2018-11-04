@@ -354,16 +354,24 @@
                         // console.log('ID '+$('span[id="form-id"]').data('val'));
                         var sdata=$.trim($('span[id="form-id"]').data('val'));
                         console.log(sdata);
-                       
-                        $('span[id="name_'+sdata+'"]').fadeOut("slow");
-                        console.log('span[id="name_'+sdata+'"]');
-                        console.log($('span[id="name_'+sdata+'"]').text());
-                        // console.log($('a[data-id="'+sdata+'"]').parent());
-                        var productList = $('#tb-head div.row');
+
+                        var productList = $('span[id="name_'+sdata+'"]').parent().parent().parent();
+
                         console.log('productList: ', productList);
                         for (i = 0; i < productList.length; i++) {
                             console.log('product: ', productList[i]);
                             }
+                           
+                       
+                        $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+                        console.log('span[id="name_'+sdata+'"]');
+                        console.log($('span[id="name_'+sdata+'"]').text());
+                        // console.log($('a[data-id="'+sdata+'"]').parent());
+                        // var productList = $('#tb-head div.row');
+                        // console.log('productList: ', productList);
+                        // for (i = 0; i < productList.length; i++) {
+                        //     console.log('product: ', productList[i]);
+                        //     }
                            
                         return false;
                         var clickedID = $('input[id="id"]').val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
@@ -416,7 +424,7 @@
 
                 // для объекта
                 $("body").on( "mouseenter","ul.thumbnails.gallery li.thumbnail",function () {
-                    console.log("over obj img");
+                    // console.log("over obj img");
                     $('img', this).fadeToggle(1000);
                     $(this).find('.gallery-controls').remove();
                     console.log($('img', this).data('parent'));
@@ -453,7 +461,7 @@
                     $(this).find('.gallery-controls').stop().animate({'margin-top': '-1'}, 400);
                 });
                 $("body").on( "mouseleave","ul.thumbnails.gallery li.thumbnail",function () {
-                    console.log("out obj img");
+                    // console.log("out obj img");
                     $('img', this).fadeToggle(1000);
                     $(this).find('.gallery-controls').stop().animate({'margin-top': '-30'}, 200, function () {
                         $(this).remove();
@@ -464,7 +472,7 @@
                 // для вкладок TAB
                 $("body").on( "mouseenter","ul.nav-tabs li",function () { 
                     //  alert($(this).text()); 
-                    console.log("over вкладка tab");    
+                    // console.log("over вкладка tab");    
                     var name = $(this).find('a > span').text();
                     var tbl = $(this).find('a').data('tbl');
                     var field = $(this).find('a').data('field');
@@ -521,7 +529,7 @@
                 });
                 
                 $("body").on( "mouseleave","ul.nav-tabs li",function () {
-                    console.log("out вкладка tab");
+                    // console.log("out вкладка tab");
                     // $('a', this).fadeToggle(1000);
                     $(this).find('.tab-controls').stop().animate({'margin-top': '0'}, 200, function () {  $(this).remove();   });
                 });
