@@ -84,7 +84,7 @@
                                         </div>
                                         <div class="panel panel-transparent ">
                                             <!-- Nav tabs -->
-                                            <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx id="parent-item_'.$head_id.'"><!--Категории--> 
+                                            <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx" id="parent-item_'.$head_id.'"><!--Категории--> 
                                             ';
                                             while($row_category = mysqli_fetch_array($Result_category))
                                             {
@@ -346,8 +346,26 @@
                     e.preventDefault();
                     if (confirm("Удалить?")) {
                         // alert("Удаляем!");
-
-                        // return false;
+                        // var productList = document.querySelectorAll('#tb-head div.row');
+                        // console.log('productList: ', productList);
+                        // for (i = 0; i < productList.length; i++) {
+                        //     console.log('product: ', productList[i]);
+                        //     }
+                        // console.log('ID '+$('span[id="form-id"]').data('val'));
+                        var sdata=$.trim($('span[id="form-id"]').data('val'));
+                        console.log(sdata);
+                       
+                        $('span[id="name_'+sdata+'"]').fadeOut("slow");
+                        console.log('span[id="name_'+sdata+'"]');
+                        console.log($('span[id="name_'+sdata+'"]').text());
+                        // console.log($('a[data-id="'+sdata+'"]').parent());
+                        var productList = $('#tb-head div.row');
+                        console.log('productList: ', productList);
+                        for (i = 0; i < productList.length; i++) {
+                            console.log('product: ', productList[i]);
+                            }
+                           
+                        return false;
                         var clickedID = $('input[id="id"]').val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
                         var DbNumberID = clickedID[1]; //и получаем номер из массива
                         var tbl = $('input[id="tbl"]').val();                        
@@ -363,7 +381,7 @@
                             data:myData, //post переменные
                             success:function(response){
                             // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-                            switch ($tbl) {                                
+                            switch (tbl) {                                
                             case "obj":
                                 $('#image-'+DbNumberID).fadeOut("slow");
                             break;
@@ -663,7 +681,7 @@
         $(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
         });
 
-
+// $('#item_3  a.btn-minimize').trigger('click');// генерация клика
 
     });//ready
 
@@ -773,8 +791,7 @@
 $("body").on( "change",".form-control" , function (e) {
     e.preventDefault();
                 // alert('btn-warning');
-                $(this).parent().find('.input-group-btn > button.button31').addClass('btn-warning');
-            
+                $(this).parent().find('.input-group-btn > button.button31').addClass('btn-warning');            
             }); 
 
   $("body").on( "click","button.btn.btn-primary.button33" , function (e) {
