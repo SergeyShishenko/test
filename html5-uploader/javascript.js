@@ -158,7 +158,8 @@ $(document).ready(function() {
 		// получаем название id
  		var elid = $(this).attr('id');
 		// создаем массив для разделенных строк
-		var temp = new Array();
+		// var temp = new Array();
+		var temp = [];
 		// делим строку id на 2 части
 		temp = elid.split('-');
 		// получаем значение после тире тоесть индекс изображения в массиве
