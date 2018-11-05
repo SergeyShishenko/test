@@ -354,7 +354,7 @@
                         // console.log('ID '+$('span[id="form-id"]').data('val'));
                         var sdata=$.trim($('span[id="form-id"]').data('val'));
                         console.log(sdata);
-
+                        
                         var productList = $('span[id="name_'+sdata+'"]').parent().parent().parent();
 
                         console.log('productList: ', productList);
@@ -362,22 +362,24 @@
                             console.log('product: ', productList[i]);
                             }
                            
-                       
-                        $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+                        
+                        // $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
                         console.log('span[id="name_'+sdata+'"]');
                         console.log($('span[id="name_'+sdata+'"]').text());
-                        // console.log($('a[data-id="'+sdata+'"]').parent());
-                        // var productList = $('#tb-head div.row');
-                        // console.log('productList: ', productList);
-                        // for (i = 0; i < productList.length; i++) {
-                        //     console.log('product: ', productList[i]);
-                        //     }
-                           
-                        return false;
+                      
+                        
+
+
                         var clickedID = $('input[id="id"]').val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
                         var DbNumberID = clickedID[1]; //и получаем номер из массива
                         var tbl = $('input[id="tbl"]').val();                        
                         var fieldid = $('input[id="fieldid"]').val(); 
+                        console.log('tbl-'+tbl);
+
+                        $('#item_'+DbNumberID).fadeOut("slow");
+                        $('#myModal').modal('hide');  
+                        // return false;
+
                         //выстраиваем  данные для POST
                         var myData =    "recordToDelete="+DbNumberID+"&"+
                                         "tbl="+tbl+"&"+                                        
@@ -390,9 +392,18 @@
                             success:function(response){
                             // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
                             switch (tbl) {                                
-                            case "obj":
-                                $('#image-'+DbNumberID).fadeOut("slow");
-                            break;
+                                case "obj":
+                                    $('#image-'+DbNumberID).fadeOut("slow");
+                                    break;
+                                case "category":
+                                    $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+                                    break;
+                                case "grupp":
+                                    $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+                                    break;
+                                case "head":
+                                    $('#item_'+DbNumberID).fadeOut("slow");
+                                    break;
                             }
 
                             },
@@ -401,7 +412,7 @@
                                 alert(thrownError);
                             }
                         });
-                        $('#myModal').modal('hide');
+                        // $('#myModal').modal('hide');
                     }// else {alert("Вы нажали кнопку отмена");}  
                 });
 
