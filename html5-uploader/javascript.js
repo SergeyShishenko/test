@@ -64,15 +64,15 @@ $(document).ready(function() {
 				
 				if(errMessage == 0) {
 					$('#drop-files p').html('Эй! только изображения!');
-					++errMessage
+					++errMessage;
 				}
 				else if(errMessage == 1) {
 					$('#drop-files p').html('Стоп! Загружаются только изображения!');
-					++errMessage
+					++errMessage;
 				}
 				else if(errMessage == 2) {
 					$('#drop-files p').html("Не умеешь читать? Только изображения!");
-					++errMessage
+					++errMessage;
 				}
 				else if(errMessage == 3) {
 					$('#drop-files p').html("Хорошо! Продолжай в том же духе");
@@ -232,4 +232,19 @@ $(document).ready(function() {
 		$(this).css({'box-shadow' : 'none', 'border' : '4px dashed rgba(0,0,0,0.2)'});
 		return false;
 	});
+
+	$("button[name='del1']").click(function() {
+		// alert('Удаление!');
+
+		$.post('del.php', 'file_name=ebc2f79289ce.jpg', function(data) {
+				// $('.result').html(data);
+				// alert('Удаление завершено!.');
+				$("button[name='del1']").text(data);
+			});
+
+
+	});
+
+	
+
 });
