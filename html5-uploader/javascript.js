@@ -128,7 +128,7 @@ $(document).ready(function() {
 		for (i = start; i < end; i++) {
 			// размещаем загруженные изображения
 			if($('#dropped-files > .image').length <= maxFiles) { 
-				$('#dropped-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
+				$('#dropped-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
 			}
 		}
 		return false;
