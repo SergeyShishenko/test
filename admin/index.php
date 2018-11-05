@@ -198,14 +198,14 @@
                                                                                                     $i =$row_obj["obj_id"];
                                                                                                     echo'<li id="image-'. $i.'" class="thumbnail" data-name="'.$row_obj["name_obj"].'">
                                                                                                             <p class="" id="name_obj_'.$row_obj["grupp_id"].'">'. $row_obj["name_obj"].'</p>
-                                                                                                            <a style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].')"
-                                                                                                                title="'. $row_obj["img_alt_obj"].'"
+                                                                                                            <a style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].');"
+                                                                                                                title="'.$row_obj["name_obj"].'"
                                                                                                                 href="'. substr($row_obj["path_img_obj"],1).$row_obj["fname_img_obj"].'"                                                                                                                
                                                                                                                 >
                                                                                                                 <img
                                                                                                                     class="grayscale"
                                                                                                                     src="'. substr($row_obj["path_img_obj"],1)."thumbs/". $row_obj["fname_img_obj"].'"
-                                                                                                                    alt="'. $row_obj["img_alt_obj"].'"
+                                                                                                                    alt="'.$row_obj["name_obj"].'"
                                                                                                                     data-parent="grupp_id-'.$grupp_id.'"
                                                                                                                     data-id="obj_'.$i.'"
                                                                                                                     data-content="РЕДАКТИРОВАТЬ ОБЪЕКТ"
