@@ -24,7 +24,7 @@ $decodedData = base64_decode($encodedData);
 
 // Вы можете использовать данное имя файла, или создать произвольное имя.
 // Мы будем создавать произвольное имя!
-$randomName = substr_replace(sha1(microtime(true)), '', 12).'.'.$mime;
+$randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 
 // Создаем изображение на сервере
 if(file_put_contents($uploaddir.$randomName, $decodedData)) {
@@ -36,6 +36,34 @@ else {
 	// Показать сообщение об ошибке, если что-то пойдет не так.
 	echo "Что-то пошло не так. Убедитесь, что файл не поврежден!";
 }
+
+
+
+
+// $randomName='tbs'.$randomName;
+// $uploaddir = 'thumbs/';
+// // Создаем изображение на сервере
+// if(file_put_contents($uploaddir.$randomName, $decodedData)) {
+// 	// Записываем данные изображения в БД
+// 	mysql_query ("INSERT INTO images (date,catalog,filename) VALUES (NOW(),'$uploaddir','$randomName')");
+// 	echo $randomName.":загружен успешно";
+
+
+// }
+// else {
+// 	// Показать сообщение об ошибке, если что-то пойдет не так.
+// 	echo "Что-то пошло не так. Убедитесь, что файл не поврежден!";
+// }
+
+	// Следующий участок кода загрузит изображение image.jpg, 
+// изменить его ширину до 100 пикселей и высоту до 100 пикселей, 
+// а затем сохранит как image1.jpg. 
+
+   include('classSimpleImage.php');
+   $image = new SimpleImage();
+   $image->load($uploaddir.$randomName);
+   $image->resize(100, 100);
+   $image->save('thumbs/tbs'.$randomName);
 
 // if(@unlink("images_uploaded//".trim($_POST['file_name'])))
 ?>
