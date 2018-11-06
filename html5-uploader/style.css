@@ -75,7 +75,13 @@ body {
     text-align: center;
     text-decoration: none;
     font-weight: 700;
-    color: #FFF;
+	color: #FFF;
+	border-radius: 4px;
+}
+div[id^='img-']
+{
+	border-radius: 10px;
+
 }
 
 #dropped-files .image {
@@ -225,3 +231,4 @@ a.nav {
 a.nav:hover {
     color:#fffb89;
 }
+
