@@ -5,7 +5,7 @@ $(document).ready(function() {
 	jQuery.event.props.push('dataTransfer');
 	
 	// Максимальное количество загружаемых изображений за одни раз
-	var maxFiles = 6;
+	var maxFiles = 1;
 	
 	// Оповещение по умолчанию
 	var errMessage = 0;
@@ -128,7 +128,8 @@ $(document).ready(function() {
 		for (i = start; i < end; i++) {
 			// размещаем загруженные изображения
 			if($('#dropped-files > .image').length <= maxFiles) { 
-				$('#dropped-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
+				// $('#drop-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px;"></div>'); 
+				$('#drop-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
 			}
 		}
 		return false;
@@ -153,8 +154,25 @@ $(document).ready(function() {
 		return false;
 	}
 	
+	// // Удаление только выбранного изображения 
+	// $("#dropped-files").on("click","a[id^='drop']", function() {
+	// 	// получаем название id
+ 	// 	var elid = $(this).attr('id');
+	// 	// создаем массив для разделенных строк
+	// 	// var temp = new Array();
+	// 	var temp = [];
+	// 	// делим строку id на 2 части
+	// 	temp = elid.split('-');
+	// 	// получаем значение после тире тоесть индекс изображения в массиве
+	// 	dataArray.splice(temp[1],1);
+	// 	// Удаляем старые эскизы
+	// 	$('#dropped-files > .image').remove();
+	// 	// Обновляем эскизи в соответсвии с обновленным массивом
+	// 	addImage(-1);		
+	// });
+
 	// Удаление только выбранного изображения 
-	$("#dropped-files").on("click","a[id^='drop']", function() {
+	$("#drop-files").on("click","a[id^='drop']", function() {
 		// получаем название id
  		var elid = $(this).attr('id');
 		// создаем массив для разделенных строк
@@ -165,7 +183,7 @@ $(document).ready(function() {
 		// получаем значение после тире тоесть индекс изображения в массиве
 		dataArray.splice(temp[1],1);
 		// Удаляем старые эскизы
-		$('#dropped-files > .image').remove();
+		$('#drop-files > .image').remove();
 		// Обновляем эскизи в соответсвии с обновленным массивом
 		addImage(-1);		
 	});
@@ -246,6 +264,7 @@ $(document).ready(function() {
 
 	});
 
-	
+	// Перезагрузить текущую страницу, без использования кэша
+	// document.location.reload(true);
 
 });

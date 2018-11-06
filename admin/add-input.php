@@ -393,18 +393,18 @@ switch ($tbl) {
                 </div>
             </div>
         ';
-        echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                       
-                    <span class="input-group-addon">Путь к изображению (path_img_obj)</span>
-                    <input type="text" class="form-control" id="recipient-path_img_obj" value="'.$row_obj["path_img_obj"].'" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="obj"  data-field ="path_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-            </div>
-        ';
+        // echo '<div class="row">
+        //     <div class="input-group col-md-12">
+        //         <div class="input-group ">                       
+        //             <span class="input-group-addon">Путь к изображению (path_img_obj)</span>
+        //             <input type="text" class="form-control" id="recipient-path_img_obj" value="'.$row_obj["path_img_obj"].'" required>
+        //             <span class="input-group-btn">
+        //                 <button type="button"  data-tbl="obj"  data-field ="path_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+        //             </span>
+        //         </div>
+        //     </div>
+        //     </div>
+        // ';
         echo '<div class="row">
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
@@ -417,47 +417,47 @@ switch ($tbl) {
             </div>
             </div>
         ';
-        echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                       
-                    <span class="input-group-addon">data_href изображения (data_href_img_obj)</span>
-                    <input type="text" class="form-control" id="recipient-data_href " value="'.$row_obj["data_href_img_obj"].'" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="obj"  data-field ="data_href_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-            </div>
-        ';
-        echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                       
-                    <span class="input-group-addon">Имя маленькой картинки (fname_img_smoll_obj)</span>
-                    <input type="text" class="form-control" id="recipient-fname_img_smoll_obj" value="'.$row_obj["fname_img_smoll_obj"].'" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="obj"  data-field ="fname_img_smoll_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-            </div>
-        ';
-        echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                       
-                    <span class="input-group-addon">Путь маленькой картинки (data_href_img_smoll_obj)</span>
-                    <input type="text" class="form-control" id="recipient-data_href_img_smoll_obj" value="'.$row_obj["data_href_img_smoll_obj"].'" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="obj"  data-field ="data_href_img_smoll_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-            </div>
-        ';
+        // echo '<div class="row">
+        //     <div class="input-group col-md-12">
+        //         <div class="input-group ">                       
+        //             <span class="input-group-addon">data_href изображения (data_href_img_obj)</span>
+        //             <input type="text" class="form-control" id="recipient-data_href " value="'.$row_obj["data_href_img_obj"].'" required>
+        //             <span class="input-group-btn">
+        //                 <button type="button"  data-tbl="obj"  data-field ="data_href_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+        //             </span>
+        //         </div>
+        //     </div>
+        //     </div>
+        // ';
+        // echo '<div class="row">
+        //     <div class="input-group col-md-12">
+        //         <div class="input-group ">                       
+        //             <span class="input-group-addon">Имя маленькой картинки (fname_img_smoll_obj)</span>
+        //             <input type="text" class="form-control" id="recipient-fname_img_smoll_obj" value="'.$row_obj["fname_img_smoll_obj"].'" required>
+        //             <span class="input-group-btn">
+        //                 <button type="button"  data-tbl="obj"  data-field ="fname_img_smoll_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+        //             </span>
+        //         </div>
+        //     </div>
+        //     </div>
+        // ';
+        // echo '<div class="row">
+        //     <div class="input-group col-md-12">
+        //         <div class="input-group ">                       
+        //             <span class="input-group-addon">Путь маленькой картинки (data_href_img_smoll_obj)</span>
+        //             <input type="text" class="form-control" id="recipient-data_href_img_smoll_obj" value="'.$row_obj["data_href_img_smoll_obj"].'" required>
+        //             <span class="input-group-btn">
+        //                 <button type="button"  data-tbl="obj"  data-field ="data_href_img_smoll_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+        //             </span>
+        //         </div>
+        //     </div>
+        //     </div>
+        // ';
         echo '<div class="row">
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
                     <span class="input-group-addon">Описание (obj_def)</span>                    
-                    <textarea class="form-control"  id="recipient-obj_def__'.$row_obj["obj_def"].'" name="text">'.$row_obj["obj_def"].'</textarea>
+                    <textarea class="form-control"  id="recipient-obj_def" name="text">'.$row_obj["obj_def"].'</textarea>
                     <span class="input-group-btn">
                         <button type="button"  data-tbl="obj"  data-field ="obj_def" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
@@ -468,8 +468,8 @@ switch ($tbl) {
         echo '<div class="row">
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
-                    <span class="input-group-addon">Характеристики (characteristic_obj)</span>
-                    <input type="text" class="form-control" id="recipient-characteristic_obj" value="'.$row_obj["characteristic_obj"].'" required>
+                    <span class="input-group-addon">Характеристики (characteristic_obj)</span>                   
+                    <textarea class="form-control"  id="recipient-characteristic_obj" name="text">'.$row_obj["characteristic_obj"].'</textarea>
                     <span class="input-group-btn">
                         <button type="button"  data-tbl="obj"  data-field ="characteristic_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
@@ -1027,18 +1027,18 @@ switch ($tbl) {
                 </div>
             </div>
         ';
-        echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                       
-                    <span class="input-group-addon">Путь к изображению (path_img_obj)</span>
-                    <input type="text" class="form-control" id="recipient-path_img_obj" value="./dist/images/" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="obj"  data-field ="path_img_obj"    class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-            </div>
-        ';
+        // echo '<div class="row">
+        //     <div class="input-group col-md-12">
+        //         <div class="input-group ">                       
+        //             <span class="input-group-addon">Путь к изображению (path_img_obj)</span>
+        //             <input type="text" class="form-control" id="recipient-path_img_obj" value="./dist/images/" required>
+        //             <span class="input-group-btn">
+        //                 <button type="button"  data-tbl="obj"  data-field ="path_img_obj"    class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+        //             </span>
+        //         </div>
+        //     </div>
+        //     </div>
+        // ';
         echo '<div class="row">
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
@@ -1051,47 +1051,47 @@ switch ($tbl) {
             </div>
             </div>
         ';
-        echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                       
-                    <span class="input-group-addon">data_href изображения (data_href_img_obj)</span>
-                    <input type="text" class="form-control" id="recipient-data_href " value="" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="obj"  data-field ="data_href_img_obj"   class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-            </div>
-        ';
-        echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                       
-                    <span class="input-group-addon">Имя маленькой картинки (fname_img_smoll_obj)</span>
-                    <input type="text" class="form-control" id="recipient-fname_img_smoll_obj" value="test.png" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="obj"  data-field ="fname_img_smoll_obj"    class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-            </div>
-        ';
-        echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                       
-                    <span class="input-group-addon">Путь маленькой картинки (data_href_img_smoll_obj)</span>
-                    <input type="text" class="form-control" id="recipient-data_href_img_smoll_obj" value="" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="obj"  data-field ="data_href_img_smoll_obj"    class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-            </div>
-        ';
+        // echo '<div class="row">
+        //     <div class="input-group col-md-12">
+        //         <div class="input-group ">                       
+        //             <span class="input-group-addon">data_href изображения (data_href_img_obj)</span>
+        //             <input type="text" class="form-control" id="recipient-data_href " value="" required>
+        //             <span class="input-group-btn">
+        //                 <button type="button"  data-tbl="obj"  data-field ="data_href_img_obj"   class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+        //             </span>
+        //         </div>
+        //     </div>
+        //     </div>
+        // ';
+        // echo '<div class="row">
+        //     <div class="input-group col-md-12">
+        //         <div class="input-group ">                       
+        //             <span class="input-group-addon">Имя маленькой картинки (fname_img_smoll_obj)</span>
+        //             <input type="text" class="form-control" id="recipient-fname_img_smoll_obj" value="test.png" required>
+        //             <span class="input-group-btn">
+        //                 <button type="button"  data-tbl="obj"  data-field ="fname_img_smoll_obj"    class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+        //             </span>
+        //         </div>
+        //     </div>
+        //     </div>
+        // ';
+        // echo '<div class="row">
+        //     <div class="input-group col-md-12">
+        //         <div class="input-group ">                       
+        //             <span class="input-group-addon">Путь маленькой картинки (data_href_img_smoll_obj)</span>
+        //             <input type="text" class="form-control" id="recipient-data_href_img_smoll_obj" value="" required>
+        //             <span class="input-group-btn">
+        //                 <button type="button"  data-tbl="obj"  data-field ="data_href_img_smoll_obj"    class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+        //             </span>
+        //         </div>
+        //     </div>
+        //     </div>
+        // ';
         echo '<div class="row">
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
                     <span class="input-group-addon">Описание (obj_def)</span>                    
-                    <textarea class="form-control"  id="recipient-obj_def__00" name="text"></textarea>
+                    <textarea class="form-control"  id="recipient-obj_def" name="text"></textarea>
                     <span class="input-group-btn">
                         <button type="button"  data-tbl="obj"  data-field ="obj_def"   class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
@@ -1103,7 +1103,7 @@ switch ($tbl) {
             <div class="input-group col-md-12">
                 <div class="input-group ">                       
                     <span class="input-group-addon">Характеристики (characteristic_obj)</span>
-                    <input type="text" class="form-control" id="recipient-characteristic_obj" value="" required>
+                    <textarea class="form-control"  id="recipient-characteristic_obj" name="text"></textarea>
                     <span class="input-group-btn">
                         <button type="button"  data-tbl="obj"  data-field ="characteristic_obj"   class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                     </span>
