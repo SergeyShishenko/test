@@ -20,7 +20,7 @@
                     <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
                 <div class="modal-body">
-                     <form>
+                     <form >
                         <!-- <p>Here settings can be configured...</p> -->
                         <input type="hidden" id="tbl" value="">
                         <input type="hidden" id="field" value="">
@@ -35,7 +35,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <!-- <a href="#openModal">Открыть модальное окно</a> -->
+                    <a href="#openModal">Открыть модальное окно</a>
                     <!-- class="close" data-dismiss="modal" -->
                     <a href="#" class="btn btn-danger"   id="DelSubmit">Удалить</a>
                     <a href="#" class="btn btn-default" data-dismiss="modal">Закрыть</a>
@@ -54,8 +54,50 @@
     <div>
         <a href="#close" title="Закрыть" class="close">X</a>
         <h2>Модальное окно</h2>
-        <p>Пример простого модального окна, которое может быть создано с использованием CSS3.</p>
-        <p>Его можно использовать в широком диапазоне, начиная от вывода сообщений и заканчивая формой регистрации.</p>
+        <div class="content">
+                <!-- <center><a href="gallery.php" class="nav">Перейти в галерею</a></center> -->
+                <!-- Область для перетаскивания -->
+                <div id="drop-files" ondragover="return false">
+                <!--<p>Перетащите изображение сюда</p>-->
+                <p></p>
+                    <form id="frm">
+                        <input type="file" id="uploadbtn" multiple style="display:none;">			
+                    </form>
+                    
+                </div><!-- drop-files -->
+                <!-- Область предпросмотра -->
+                <div id="uploaded-holder"> 
+                    <div id="dropped-files">
+                        <!-- Кнопки загрузить и удалить, а также количество файлов -->
+                        <div id="upload-button">
+                            <div class="center">
+                                <span>0 Файлов</span>
+                                <a href="#" class="upload">Загрузить</a>
+                                <a href="#" class="delete">Удалить</a>
+                                <!-- Прогресс бар загрузки -->
+                                <div id="loading">
+                                    <div id="loading-bar">
+                                        <div class="loading-color"></div>
+                                    </div>
+                                    <div id="loading-content"></div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+               <!--  <button type = "button" name = "del1" style = "width: 80px; height:50px;">
+                    <b>Удалить</b>
+                </button><br>
+                -->
+                <!-- Список загруженных файлов -->
+                <div id="file-name-holder">
+                    <ul id="uploaded-files">
+                        <h1>Загруженные файлы</h1>
+                    </ul>
+                </div>
+               
+                
+            </div>
     </div>
 
 </div>
@@ -82,36 +124,39 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- library for cookie management -->
-<script src="js/jquery.cookie.js"></script>
+<!-- <script src="js/jquery.cookie.js"></script> -->
 <!-- calender plugin -->
-<script src='bower_components/moment/min/moment.min.js'></script>
-<script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+<!-- <script src='bower_components/moment/min/moment.min.js'></script> -->
+<!-- <script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script> -->
 <!-- data table plugin -->
-<script src='js/jquery.dataTables.min.js'></script>
+<!-- <script src='js/jquery.dataTables.min.js'></script> -->
 
 <!-- select or dropdown enhancer -->
-<script src="bower_components/chosen/chosen.jquery.min.js"></script>
+<!-- <script src="bower_components/chosen/chosen.jquery.min.js"></script> -->
 <!-- plugin for gallery image view -->
 <!-- <script src="bower_components/colorbox/jquery.colorbox-min.js"></script> -->
-<script src="bower_components/colorbox/jquery.colorbox.js"></script>
+<!-- <script src="bower_components/colorbox/jquery.colorbox.js"></script> -->
 <!-- notification plugin -->
-<script src="js/jquery.noty.js"></script>
+<!-- <script src="js/jquery.noty.js"></script> -->
 <!-- library for making tables responsive -->
-<script src="bower_components/responsive-tables/responsive-tables.js"></script>
+<!-- <script src="bower_components/responsive-tables/responsive-tables.js"></script> -->
 <!-- tour plugin -->
-<script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+<!-- <script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script> -->
 <!-- star rating plugin -->
-<script src="js/jquery.raty.min.js"></script>
+<!-- <script src="js/jquery.raty.min.js"></script> -->
 <!-- for iOS style toggle switch -->
-<script src="js/jquery.iphone.toggle.js"></script>
+<!-- <script src="js/jquery.iphone.toggle.js"></script> -->
 <!-- autogrowing textarea plugin -->
-<script src="js/jquery.autogrow-textarea.js"></script>
+<!-- <script src="js/jquery.autogrow-textarea.js"></script> -->
 <!-- multiple file upload plugin -->
-<script src="js/jquery.uploadify-3.1.min.js"></script>
+<!-- <script src="js/jquery.uploadify-3.1.min.js"></script> -->
 <!-- history.js for cross-browser state change on ajax -->
-<script src="js/jquery.history.js"></script>
+<!-- <script src="js/jquery.history.js"></script> -->
+
 <!-- application script for Charisma demo -->
-<script src="js/charisma.js"></script>
+
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script> -->
+<!-- <script src="js/javascript.js?v=2"></script> -->
 
 
 

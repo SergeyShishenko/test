@@ -417,6 +417,8 @@ switch ($tbl) {
             </div>
             </div>
         ';
+
+        
         // echo '<div class="row">
         //     <div class="input-group col-md-12">
         //         <div class="input-group ">                       
