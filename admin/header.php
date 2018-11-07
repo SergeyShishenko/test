@@ -42,6 +42,8 @@
 
     <!-- jQuery -->
     <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="js/jquery.uploadify-3.1.min.js"></script>
+    <!-- <script src="js/javascript.js?v=2"></script> -->
 
     <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

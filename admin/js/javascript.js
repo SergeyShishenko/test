@@ -243,11 +243,13 @@ $(document).ready(function() {
 	
 	// Простые стили для области перетаскивания
 	$('#drop-files').on('dragenter', function() {
+		
 		$(this).css({'box-shadow' : 'inset 0px 0px 20px rgba(0, 0, 0, 0.1)', 'border' : '4px dashed #bb2b2b'});
 		return false;
 	});
 	
 	$('#drop-files').on('drop', function() {
+		
 		$(this).css({'box-shadow' : 'none', 'border' : '4px dashed rgba(0,0,0,0.2)'});
 		return false;
 	});

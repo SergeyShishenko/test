@@ -142,11 +142,11 @@ $(document).ready(function () {
 	var dataArray = [];
 	
 	// Область информер о загруженных изображениях - скрыта
-	$('#uploaded-files').hide();
+	$('#uploaded-files').show();
 	
 	// Метод при падении файла в зону загрузки
 	$('#drop-files').on('drop', function(e) {	
-        // alert();
+        
 		// Передаем в files все полученные изображения
 		var files = e.dataTransfer.files;
 		// Проверяем на максимальное количество файлов
@@ -157,7 +157,21 @@ $(document).ready(function () {
 			alert('Вы не можете загружать больше '+maxFiles+' изображений!'); 
 			files.length = 0; return;
 		}
-	});
+    });
+    
+
+    // $('#drop-files')
+    // .bind('dragenter dragover', false)
+    // .bind('drop', function(event){
+
+    //     $(this).append($('#' + event.originalEvent.dataTransfer.getData('clip')));
+    // });
+
+    // $('#dropped-files')
+    //     .bind('dragstart', function(event){
+
+    //         event.originalEvent.dataTransfer.setData('clip', $(this).attr('id'));
+    //     });
 	
 	// При нажатии на кнопку выбора файлов
 	defaultUploadBtn.on('change', function() {

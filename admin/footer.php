@@ -20,7 +20,7 @@
                     <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
                 <div class="modal-body">
-                     <form >
+                     <form id="frm">
                         <!-- <p>Here settings can be configured...</p> -->
                         <input type="hidden" id="tbl" value="">
                         <input type="hidden" id="field" value="">
@@ -54,50 +54,7 @@
     <div>
         <a href="#close" title="Закрыть" class="close">X</a>
         <h2>Модальное окно</h2>
-        <div class="content">
-                <!-- <center><a href="gallery.php" class="nav">Перейти в галерею</a></center> -->
-                <!-- Область для перетаскивания -->
-                <div id="drop-files" ondragover="return false">
-                <!--<p>Перетащите изображение сюда</p>-->
-                <p></p>
-                    <form id="frm">
-                        <input type="file" id="uploadbtn" multiple style="display:none;">			
-                    </form>
-                    
-                </div><!-- drop-files -->
-                <!-- Область предпросмотра -->
-                <div id="uploaded-holder"> 
-                    <div id="dropped-files">
-                        <!-- Кнопки загрузить и удалить, а также количество файлов -->
-                        <div id="upload-button">
-                            <div class="center">
-                                <span>0 Файлов</span>
-                                <a href="#" class="upload">Загрузить</a>
-                                <a href="#" class="delete">Удалить</a>
-                                <!-- Прогресс бар загрузки -->
-                                <div id="loading">
-                                    <div id="loading-bar">
-                                        <div class="loading-color"></div>
-                                    </div>
-                                    <div id="loading-content"></div>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>
-                </div>
-               <!--  <button type = "button" name = "del1" style = "width: 80px; height:50px;">
-                    <b>Удалить</b>
-                </button><br>
-                -->
-                <!-- Список загруженных файлов -->
-                <div id="file-name-holder">
-                    <ul id="uploaded-files">
-                        <h1>Загруженные файлы</h1>
-                    </ul>
-                </div>
-               
-                
-            </div>
+        
     </div>
 
 </div>
@@ -156,9 +113,51 @@
 <!-- application script for Charisma demo -->
 
 <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script> -->
+<!-- <script src="js/charisma.js"></script> -->
 <!-- <script src="js/javascript.js?v=2"></script> -->
 
-
+<div class="content">
+	<!-- <center><a href="gallery.php" class="nav">Перейти в галерею</a></center> -->
+	<!-- Область для перетаскивания -->
+	<div id="drop-files" ondragover="return false">
+		<p>Перетащите изображение сюда</p>
+        <form id="frm">
+			<input type="file" id="uploadbtn" multiple style="display: none;">			
+		</form>
+		
+    </div>
+    <!-- drop-files -->
+    <!-- Область предпросмотра -->
+	<div id="uploaded-holder"> 
+		<div id="dropped-files">
+        	<!-- Кнопки загрузить и удалить, а также количество файлов -->
+        	<div id="upload-button">
+            	<div class="center">
+                	<span>0 Файлов</span>
+					<a href="#" class="upload">Загрузить</a>
+					<a href="#" class="delete">Удалить</a> 
+                    <!-- Прогресс бар загрузки -->
+                	<div id="loading">
+						<div id="loading-bar">
+							<div class="loading-color"></div>
+						</div>
+						<div id="loading-content"></div>
+					</div>
+                </div>
+			</div>  
+        </div>
+	</div>
+	<!-- <button type = "button" name = "del1" style = "width: 80px; height:50px;">
+		<b>Удалить</b>
+	</button><br> -->
+	<!-- Список загруженных файлов -->
+	<div id="file-name-holder">
+		<ul id="uploaded-files">
+			<h1>Загруженные файлы</h1>
+		</ul>
+	</div>
+    
+</div>
 
 </body>
 </html>
