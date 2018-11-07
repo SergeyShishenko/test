@@ -3,7 +3,7 @@
 #drop-files {
 	position:relative;
 	/* width: 500px; */
-	height: 100px;
+	height: 110px;
 	margin: 0 auto;
 	/* background: rgba(0,0,0,0.1); */
 	background:url("../img/background.png");
@@ -18,9 +18,10 @@
 
 #drop-files p {
 	clear:none;
-	/* padding:38.5px; */
-	/* float: right; */
+	padding:41px;
+	float: right;
 	margin:0;
+	font-size: 20px;
 }
 
 #uploaded-holder {
@@ -32,13 +33,13 @@
 #dropped-files {
 	display:block;
 	margin: 0 auto;
-	width: 950px;
+	/* width: 950px; */
 }
 
 #upload-button {
 	z-index: 9999;
 	display: none;
-	margin: 20px 0;
+	/* margin: 20px 0; */
 }
 
 /* .drop-button {
@@ -62,12 +63,12 @@
     /* padding: 5px; */
     width: 100%;
     background: rgba(0,0,0,0.3);
-    font-size: 0.5em;
+    font-size: 0.4em;
     bottom: 0;
     text-align: center;
     text-decoration: none;
     font-weight: 700;
-	color: #FFF;
+	color: #bbb6b6;
 	border-radius: 4px;
 }
 div[id^='img-']
@@ -98,20 +99,21 @@ div[id^='img-']
 	color: #fff;
 	font-weight: bold;
 	box-shadow: 0 0 1000px 62px rgba(255, 255, 255, 1), inset 0 -35px 40px -10px #0A9FCA;
-	font-size: 20px;
-	padding: 10px 20px;
+	font-size: 0.5em;
+    padding: 6px;
 	background-color: #4bc1e3;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 #upload-button span {
 	position:relative;
 	text-align: center;
 	background: white;
-	border-radius: 10px;
-	font-size: 1.1em;
+	/* border-radius: 10px; */
+	font-size: 0.5em;
 	padding: 6px;
-	margin-right: 8px;
+	/* margin-right: 8px; */
+	/* margin-left: 100px; */
 }
 #upload-button a:hover {
 	box-shadow: 0 0 1000px 62px rgba(255, 255, 255, 1), inset 0 -5px 40px 0px #0A9FCA;	
@@ -119,12 +121,12 @@ div[id^='img-']
 
 
 #dropped-files #upload-button .delete {
-	padding: 7px 6px 4px 6px;
-	border-radius: 100px;
+	padding: 6px;
+	/* border-radius: 100px; */
 	background: rgba(0,0,0,0.6);
 	box-shadow: none;
-	font-size: 1em;
-	margin-left: 8px;
+	font-size: 0.5em;
+	/* margin-left: 8px; */
 }
 
 #dropped-files #upload-button .delete:hover {

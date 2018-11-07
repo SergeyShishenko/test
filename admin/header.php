@@ -340,7 +340,7 @@ button.button31.btn-warning:focus:after > i, button.button31.btn-warning:focus:b
 }
 
 /* Ajax on menu */
-#loading {
+#loading1 {
     margin-top: 20px;
     width: 128px;
     font-weight: bold;
@@ -353,7 +353,7 @@ div.center, p.center, img.center {
     display: block;
     text-align: center;
 }
-#loading div.center {
+#loading1 div.center {
     margin-top: 10px;
     height: 15px;
     width: 128px;

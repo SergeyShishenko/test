@@ -594,7 +594,7 @@
         // при открытии модального окна
         $('#myModal').on('show.bs.modal', function (event) {
             
-        $('#loading').css("display", "block");
+        $('#loading1').css("display", "block");
             
         // получить кнопку, которая его открыло
         var button = $(event.relatedTarget); 
@@ -672,7 +672,7 @@
                             success:function(response){
 
                                 $('.list-tbl').html(response);
-                                $('#loading').css("display", "none");
+                                $('#loading1').css("display", "none");
 
                             // $("#"+$("#tbl").val()+"_"+ DbNumberID).text($("#recipient-name").val());
                             // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',$("#recipient-name").val());
@@ -829,7 +829,8 @@
 			$('#upload-button').hide();
 			$('#uploaded-holder').hide();
 		} else if (dataArray.length == 1) {
-			$('#upload-button span').html("Был выбран 1 файл: "+dataArray[start].name);
+            // $('#upload-button span').html("Был выбран 1 файл: "+dataArray[start].name);
+            $('#upload-button span').html(dataArray[start].name);
 		} else {
 			$('#upload-button span').html(dataArray.length+" файлов были выбраны");
 		}
@@ -838,7 +839,8 @@
 			// размещаем загруженные изображения
 			if($('#dropped-files > .image').length <= maxFiles) { 
 				// $('#drop-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px;"></div>'); 
-				$('#drop-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
+                $('#drop-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
+                $('#drop-files p').hide();
 			}
 		}
 		return false;
@@ -854,8 +856,10 @@
 		
 		// Удаляем все изображения на странице и скрываем кнопки
 		$('#upload-button').hide();
-		$('#dropped-files > .image').remove();
-		$('#uploaded-holder').hide();
+        $('#dropped-files > .image').remove();
+        $('#drop-files > .image').remove();
+        $('#uploaded-holder').hide();
+        $('#drop-files p').show();
 	
 		// Очищаем массив
 		dataArray.length = 0;
@@ -899,10 +903,13 @@
 	});
 	
 	// Удалить все изображения кнопка 
-	$('#dropped-files #upload-button .delete').click(restartFiles);
+    // $('#dropped-files #upload-button .delete').click(restartFiles);
+    $("body").on("click","#dropped-files #upload-button .delete", restartFiles);
 	
-	// Загрузка изображений на сервер
-	$('#upload-button .upload').click(function() {
+    // Загрузка изображений на сервер
+    
+    
+	$("body").on("click","#upload-button .upload",function() {
 		
 		// Показываем прогресс бар
 		$("#loading").show();
