@@ -446,7 +446,7 @@ switch ($tbl) {
                     <form id="frm">
                         <input type="file" id="uploadbtn" multiple style="display: none;">			
                     </form>
-                    
+                    <div id="img-db" class="image"  style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].'); background-size: cover;width: 100px; height: 100px; position: relative;"></div>
                 </div><!-- drop-files -->
                 <!-- Область предпросмотра -->
               

@@ -996,11 +996,11 @@
             }
         }); 
 
-        if ($('#checkbox').is(':checked')){
-                alert('Включен');
-            } else {
-                alert('Выключен');
-            }
+        // if ($('#checkbox').is(':checked')){
+        //         alert('Включен');
+        //     } else {
+        //         alert('Выключен');
+        //     }
 
 
     });//ready
