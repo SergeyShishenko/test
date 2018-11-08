@@ -601,6 +601,16 @@ switch ($tbl) {
                         </div>
                         <div class="box-content"> 
                     ';
+
+                    echo '
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="checkbox">
+                            Юридические документы
+                        </label>
+                    </div>
+                    ';
+                    echo '<div class="noyri">';
                     echo '<div class="row">
                             <div class="input-group col-md-12">
                                 <div class="input-group ">                       
@@ -649,6 +659,50 @@ switch ($tbl) {
                             </div>
                         </div>
                     ';
+                    echo '</div><!--class="noyri"-->';
+                    echo '<div class="yri">';
+
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">ЮРИ-PDF</span>
+                                    <input type="text" class="form-control" id="recipient-yriPDF " value="'.$row_obj_download["data_ypdf"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_download"  data-field ="data_ypdf" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    '; 
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">ЮРИ-XLS</span>
+                                    <input type="text" class="form-control" id="recipient-yriXLS " value="'.$row_obj_download["data_yxls"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_download"  data-field ="data_yxls" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">ЮРИ-DOC</span>
+                                    <input type="text" class="form-control" id="recipient-yriDOC " value="'.$row_obj_download["data_ydoc"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_download"  data-field ="data_ydoc" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+
+                    echo '</div><!--class="yri"-->';
+
+
+                   
 
                     if ($row_obj_download["data_spng"] == "noPNG")
                     {
@@ -728,42 +782,7 @@ switch ($tbl) {
                             </div>
                         ';
                     }
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">ЮРИ-PDF</span>
-                                    <input type="text" class="form-control" id="recipient-yriPDF " value="'.$row_obj_download["data_ypdf"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_ypdf" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    '; 
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">ЮРИ-XLS</span>
-                                    <input type="text" class="form-control" id="recipient-yriXLS " value="'.$row_obj_download["data_yxls"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_yxls" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">ЮРИ-DOC</span>
-                                    <input type="text" class="form-control" id="recipient-yriDOC " value="'.$row_obj_download["data_ydoc"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_ydoc" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
+                   
                     echo '
                         </div>      
                     </div>

@@ -986,6 +986,22 @@
 
 // drag and drop
 
+        $("body").on('click','#checkbox', function(){
+            if ($(this).is(':checked')){
+                $('.yri').show(100);
+                $('.noyri').hide(100);
+            } else {
+                $('.yri').hide(100);
+                $('.noyri').show(100);
+            }
+        }); 
+
+        if ($('#checkbox').is(':checked')){
+                alert('Включен');
+            } else {
+                alert('Выключен');
+            }
+
 
     });//ready
 
