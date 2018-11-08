@@ -767,7 +767,7 @@
 		
 		// Для каждого файла
 		$.each(files, function(index, file) {
-						
+            console.log(files[index].type);	
 			// Несколько оповещений при попытке загрузить не изображение
 			if (!files[index].type.match('image.*')) {
 				

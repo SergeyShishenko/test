@@ -61,7 +61,7 @@ $(document).ready(function() {
 						
 			// Несколько оповещений при попытке загрузить не изображение
 			if (!files[index].type.match('image.*')) {
-				
+				console.log(files[index].type);
 				if(errMessage == 0) {
 					$('#drop-files p').html('Эй! только изображения!');
 					++errMessage;
