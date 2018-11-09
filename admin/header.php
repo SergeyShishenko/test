@@ -39,6 +39,7 @@
     <link href='css/uploadify.css' rel='stylesheet'>
     <link href='css/animate.min.css' rel='stylesheet'> 
     <link href="css/style.css?v=2" rel="stylesheet" type="text/css" >  
+    <link href="css/file-list.css" rel="stylesheet" type="text/css" > 
 
     <!-- jQuery -->
     <script src="bower_components/jquery/jquery.min.js"></script>

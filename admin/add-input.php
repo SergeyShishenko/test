@@ -659,6 +659,84 @@ switch ($tbl) {
                             </div>
                         </div>
                     ';
+
+
+                    echo '<div class="row">
+                            <div class="col-xs-12">
+                                <ul class="file-list">
+                                    <li class="file">
+                                        <a class="file-link" href="#" title="file-name.doc">
+                                            <div class="file-thumbnail file-thumbnail-doc"></div>
+                                            <div class="file-info">
+                                                <span class="file-ext">doc</span>
+                                                <span class="file-name">file-name.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="file">
+                                        <a class="file-link" href="#" title="file-name.xls">
+                                            <div class="file-thumbnail file-thumbnail-xls"></div>
+                                            <div class="file-info">
+                                                <span class="file-ext">xls</span>
+                                                <span class="file-name">file-name.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="file">
+                                        <a class="file-link" href="#" title="file-name.pdf">
+                                            <div class="file-thumbnail file-thumbnail-pdf"></div>
+                                            <div class="file-info">
+                                                <span class="file-ext">pdf</span>
+                                                <span class="file-name">file-name.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="file">
+                                        <a class="file-link" href="#" title="file-name.zip">
+                                            <div class="file-thumbnail file-thumbnail-zip"></div>
+                                            <div class="file-info">
+                                                <span class="file-ext">zip</span>
+                                                <span class="file-name">file-name.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="file">
+                                        <a class="file-link" href="#" title="file-name.zip">
+                                            <div class="file-thumbnail file-thumbnail-dwg"></div>
+                                            <div class="file-info">
+                                                <span class="file-ext">dwg</span>
+                                                <span class="file-name">file-name.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="file">
+                                        <a class="file-link" href="#" title="file-name.*">
+                                            <div class="file-thumbnail file-thumbnail-att"></div>
+                                            <div class="file-info">
+                                                <span class="file-ext">*</span>
+                                                <span class="file-name">file-name.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="file">
+                                        <a class="file-link" href="img/0189082606.jpg" title="0189082606.jpg" download="0189082606.jpg">
+                                            <div class="file-thumbnail" style="background-image: url(img/0189082606.jpg);"></div>
+                                            <div class="file-info">
+                                                <span class="file-ext">jpg</span>
+                                                <span class="file-name">0189082606.</span>
+                                            </div>
+                                        </a>
+                                        <button class="file-delete-btn delete" title="Delete" type="button">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    ';
+
+
                     echo '</div><!--class="noyri"-->';
                     echo '<div class="yri">';
 
