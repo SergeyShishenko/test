@@ -362,6 +362,10 @@ div.center, p.center, img.center {
     background: url(./img/ajax-loaders/ajax-loader-6.gif);
 }
 .yri{display:none;}
+
+.file {
+    width: 100px  !important;
+}
 </style>
 </head>
 
