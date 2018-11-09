@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File-list</title>
+    <link id="bs-css" href="css/bootstrap-cerulean.min.css" rel="stylesheet">
+    <style>
+        .file {
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    width: 25%
+}
+
+/* .file[class*=sq-] {
+    height: auto
+} */
+
+.file-thumbnail {
+    background-color: #efefef;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: 0;
+    color: #777;
+    display: block;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%
+}
+
+.file-info {
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    width: 100%
+}
+
+.file-name {
+    display: block;
+    overflow: hidden;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.file-ext {
+    display: block;
+    float: right
+}
+
+.file-link {
+    color: inherit;
+    display: block
+}
+
+.file-link:focus,
+.file-link:hover {
+    text-decoration: none
+}
+
+.file-delete-btn {
+    background-color: rgba(0, 0, 0, .4);
+    background-image: none;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    top: 0;
+    width: 18px
+}
+
+.file-delete-btn:focus,
+.file-delete-btn:hover {
+    background-color: #d9230f
+}
+
+.file-list {
+    list-style: none;
+    margin-bottom: 0;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-left: 0
+}
+
+.file-list:after,
+.file-list:before {
+    content: " ";
+    display: table
+}
+
+.file-list:after {
+    clear: both
+}
+
+.file-upload-btn {
+    display: inline-block;
+    overflow: hidden;
+    position: relative
+}
+
+.file-upload-input {
+    bottom: 0;
+    cursor: inherit;
+    font-size: 1000px;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0
+}
+
+.file-thumbnail-doc {
+    background-color: #029acf;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23fff'%3E%3Cpath d='M20 10.9h1.4L19.8 18 17.7 8h-3.3L12 17.9 10.2 8H6.7l3.5 16h3.4l2.4-9.5 2.1 9.5h3.1l4.1-16H20v2.9z'/%3E%3C/svg%3E");
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%;
+}
+
+.file-thumbnail-xls {
+    background-color: #469408;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23fff'%3E%3Cpath d='M23.2 8H19l-3 4.4L13 8H8.8l5.1 7.6L8.1 24H16v-2.9h-1.6l1.6-2.3 3.5 5.2h4.4l-5.7-8.4 5-7.6z'/%3E%3C/svg%3E");
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%
+}
+
+.file-thumbnail-pdf {
+    background-color: #d9831f;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23fff'%3E%3Cpath d='M26.3 18.4c-.4-.4-1.4-.6-2.8-.7-1 0-2.1.1-3.4.2-.6-.3-1.1-.7-1.6-1.1-1.2-1.1-2.2-2.7-2.8-4.4 0-.2.1-.3.1-.4 0 0 .7-3.8.5-5.1 0-.2 0-.2-.1-.4l-.1-.2c-.1-.3-.5-.8-1-.7h-.3c-.6 0-1.1.3-1.3.8-.4 1.5 0 3.8.8 6.7l-.3.5c-.6 1.3-1.2 2.7-1.8 3.9l-.1.2c-.6 1.3-1.2 2.3-1.7 3.2l-.5.3-1.2.6c-1.9 1.1-3.1 2.4-3.3 3.4-.1.3 0 .7.3.9l.5.3c.2.1.5.2.7.2 1.3 0 2.9-1.6 5-5.3 2.4-.8 5.2-1.5 7.6-1.8 1.9 1 4.1 1.8 5.6 1.8.3 0 .5 0 .7-.1.3-.1.5-.2.6-.4.3-.4.3-1 .3-1.6-.1-.4-.2-.6-.4-.8zm-19.7 7c.2-.7 1.2-2 2.6-3.1l.5-.5c-1.4 2.4-2.4 3.3-3.1 3.6zM15 6.2c.4 0 .7 1.1.7 2.1s-.2 1.7-.5 2.2c-.2-.8-.4-2-.4-2.8 0 .1 0-1.5.2-1.5zm-2.5 13.7c.3-.5.6-1.1.9-1.7.8-1.4 1.2-2.6 1.6-3.5.7 1.3 1.6 2.4 2.7 3.3.1.1.3.2.4.3-2.2.5-4 1-5.6 1.6zm13.4-.1c-.1.1-.5.1-.7.1-.8 0-1.7-.4-3.1-.9.5 0 1-.1 1.4-.1.8 0 1 0 1.8.2s.7.6.6.7z'/%3E%3C/svg%3E");
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%
+}
+
+.file-thumbnail-zip {
+    background-color: #9b479f;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23fff'%3E%3Cpath d='M12 3h4v2h-4V3zM16 5h4v2h-4V5zM12 7h4v2h-4V7zM16 9h4v2h-4V9zM12 11h4v2h-4v-2zM16 13h4v2h-4v-2zM12 15h4v2h-4v-2zM16 17h4v2h-4v-2zM12 27.5c0 .8.7 1.5 1.5 1.5h5c.8 0 1.5-.7 1.5-1.5v-5c0-.8-.7-1.5-1.5-1.5H16v-2h-4v8.5zm6-2.5v2h-4v-2h4z'/%3E%3C/svg%3E");
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%
+}
+
+.file-thumbnail-att {
+    background-color: #474949;
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23fff'%3E%3Cpath d='M19.4 11.7l-1.5-1.5-7.6 7.6C9 19 9 21.1 10.2 22.3c1.3 1.3 3.3 1.3 4.6 0l9.1-9.1c2.1-2.1 2.1-5.5 0-7.6-2.1-2.1-5.5-2.1-7.6 0l-9.6 9.6c-2.9 2.9-2.9 7.7 0 10.6 2.9 2.9 7.7 2.9 10.6 0l6.5-6.5-1.5-1.5-6.5 6.5c-2.1 2.1-5.5 2.1-7.6 0-2.1-2.1-2.1-5.5 0-7.6l9.6-9.6c1.3-1.3 3.3-1.3 4.6 0 1.3 1.3 1.3 3.3 0 4.6l-9.1 9.1c-.4.4-1.1.4-1.5 0-.4-.4-.4-1.1 0-1.5l7.6-7.6z'/%3E%3C/svg%3E");
+    -webkit-background-size: 50% 50%;
+    background-size: 50% 50%
+}
+
+@media (min-width:768px) {
+    .file {
+        width: 16.666667%
+    }
+}
+
+@media (min-width:992px) {
+    .file {
+        width: 12.5%
+    }
+}
+
+@media (min-width:1200px) {
+    .file {
+        width: 10%
+    }
+}</style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="file-list">
+                <li class="file">
+                    <a class="file-link" href="#" title="file-name.doc">
+                        <div class="file-thumbnail file-thumbnail-doc"></div>
+                        <div class="file-info">
+                            <span class="file-ext">doc</span>
+                            <span class="file-name">file-name.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="file">
+                    <a class="file-link" href="#" title="file-name.xls">
+                        <div class="file-thumbnail file-thumbnail-xls"></div>
+                        <div class="file-info">
+                            <span class="file-ext">xls</span>
+                            <span class="file-name">file-name.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="file">
+                    <a class="file-link" href="#" title="file-name.pdf">
+                        <div class="file-thumbnail file-thumbnail-pdf"></div>
+                        <div class="file-info">
+                            <span class="file-ext">pdf</span>
+                            <span class="file-name">file-name.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="file">
+                    <a class="file-link" href="#" title="file-name.zip">
+                        <div class="file-thumbnail file-thumbnail-zip"></div>
+                        <div class="file-info">
+                            <span class="file-ext">zip</span>
+                            <span class="file-name">file-name.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="file">
+                    <a class="file-link" href="#" title="file-name.*">
+                        <div class="file-thumbnail file-thumbnail-att"></div>
+                        <div class="file-info">
+                            <span class="file-ext">*</span>
+                            <span class="file-name">file-name.</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="file">
+                    <a class="file-link" href="img/0189082606.jpg" title="0189082606.jpg" download="0189082606.jpg">
+                        <div class="file-thumbnail" style="background-image: url(img/0189082606.jpg);"></div>
+                        <div class="file-info">
+                            <span class="file-ext">jpg</span>
+                            <span class="file-name">0189082606.</span>
+                        </div>
+                    </a>
+                    <button class="file-delete-btn delete" title="Delete" type="button">
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
