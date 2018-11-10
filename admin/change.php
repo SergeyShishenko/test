@@ -41,15 +41,26 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             // if (isset($id))
             // {               
                 // добавляем новую запись во все таблицы объекта
-                $sql = "INSERT INTO  `obj`(`grupp_id`,`path_img_obj`,`fname_img_obj`,`fname_img_smoll_obj`,`template_obj`,`img_orientation_obj`) VALUES ('$parent[1]','./dist/images/','test.png','test.png','shablony-dokumentov.php','album')";
+                $sql = "INSERT INTO  `obj`(`grupp_id`,`path_img_obj`,`fname_img_obj`,`template_obj`,`img_orientation_obj`) VALUES ('$parent[1]','./dist/images/','test.png','shablony-dokumentov.php','album')";
+                // (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`, `template_obj`, `img_orientation_obj`, `img_alt_obj`) VALUES (NULL, 'Лист10', '1', '', NULL, 'test.png', NULL, 'no-foto.png', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
                 if(mysqli_query($dbconn,$sql))
                 {                    
-                    $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL  
-                    // $action=="change";
-                    mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$id')");
-                    mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$id')");
-                    mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_id`) VALUES ('$id')");
-                    mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$id')");
+                    $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
+                    $html_id = "obj_".$id;
+                    $sql = "UPDATE `obj` SET `html_id`='$html_id' WHERE `obj_id`=$id";
+                    if(mysqli_query($dbconn,$sql))
+                        { 
+                        mysqli_query($dbconn, "UPDATE `obj` SET `html_id` = $html_id WHERE `obj`.`obj_id`=$id");
+                        mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$id')");
+                        mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$id')");
+                        mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_id`) VALUES ('$id')");
+                        mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$id')");
+                         }
+                        else{//вывод ошибки                                        
+                            header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+                            exit();
+                        } 
+                    
                 }else{//вывод ошибки                                        
                     header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
                     exit();
@@ -64,8 +75,13 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
             if(mysqli_query($dbconn,$sql))
             {                    
-                $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL  
-                // $action=="change";               
+                $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
+                if ($tbl = "grupp")
+                {
+                  $html_id = "grupp_".$id;
+                $sql = "UPDATE `grupp` SET `html_id`='$html_id' WHERE `grupp_id`=$id";
+                mysqli_query($dbconn,$sql);   
+                }              
             }else{//вывод ошибки                                        
                 header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
                 exit();

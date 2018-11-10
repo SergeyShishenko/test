@@ -23,7 +23,7 @@ $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
 $htmlid = filter_var($_POST["htmlid"],FILTER_SANITIZE_STRING);
     
 
-echo '<li class="hidden"  >';//class="hidden" 
+echo '<li class="hidden">';//class="hidden" 
 echo '<span id="form-contentToSave" data-val="'.$contentToSave.'">contentToSave - '.$contentToSave.'</span>';
 echo '<br><span id="form-tbl" data-val="'.$tbl.'">'.$tbl.'</span>' ;
 echo '<br><span id="form-field" data-val="'.$field.'">'.$field.'</span>' ;
@@ -243,18 +243,18 @@ switch ($tbl) {
             echo '</li>';
 
             echo '<li id="tb-head" class="active">';
-            echo '<div class="row">
-                        <div class="input-group col-md-12">
-                            <div class="input-group ">                      
-                                <span class="input-group-addon">Идентификатор (html_id)</span>
-                                <input type="text" class="form-control" id="recipient-html-id" value="'.$row_grupp["html_id"].'" required>
-                                <span class="input-group-btn">
-                                    <button type="button"   data-tbl="grupp"  data-field ="html_id" class="btn  btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                ';
+            // echo '<div class="row">
+            //             <div class="input-group col-md-12">
+            //                 <div class="input-group ">                      
+            //                     <span class="input-group-addon">Идентификатор (html_id)</span>
+            //                     <input type="text" class="form-control" id="recipient-html-id" value="'.$row_grupp["html_id"].'" required>
+            //                     <span class="input-group-btn">
+            //                         <button type="button"   data-tbl="grupp"  data-field ="html_id" class="btn  btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+            //                     </span>
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     ';
 
             echo '<div class="row">
                         <div class="input-group col-md-12">
@@ -381,18 +381,18 @@ switch ($tbl) {
                 </div>
             </div>
         ';
-        echo '<div class="row">
-                <div class="input-group col-md-12">
-                    <div class="input-group ">                       
-                        <span class="input-group-addon">Идентификатор (html_id)</span>
-                        <input type="text" class="form-control" id="recipient-html-id" value="'.$row_obj["html_id"].'" required>
-                        <span class="input-group-btn">
-                            <button type="button"  data-tbl="obj"  data-field ="html_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        ';
+        // echo '<div class="row">
+        //         <div class="input-group col-md-12">
+        //             <div class="input-group ">                       
+        //                 <span class="input-group-addon">Идентификатор (html_id)</span>
+        //                 <input type="text" class="form-control" id="recipient-html-id" value="'.$row_obj["html_id"].'" required>
+        //                 <span class="input-group-btn">
+        //                     <button type="button"  data-tbl="obj"  data-field ="html_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+        //                 </span>
+        //             </div>
+        //         </div>
+        //     </div>
+        // ';
         // echo '<div class="row">
         //     <div class="input-group col-md-12">
         //         <div class="input-group ">                       
@@ -405,24 +405,24 @@ switch ($tbl) {
         //     </div>
         //     </div>
         // ';
-        echo '<div class="row">
-            <div class="input-group col-md-12">
-                <div class="input-group ">                       
-                    <span class="input-group-addon">Имя файла изображения (fname_img_obj)</span>
-                    <input type="text" class="form-control" id="recipient-fname_img_obj " value="'.$row_obj["fname_img_obj"].'" required>
-                    <span class="input-group-btn">
-                        <button type="button"  data-tbl="obj"  data-field ="fname_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                    </span>
-                </div>
-            </div>
-            </div>
-        ';
+        // echo '<div class="row">
+        //     <div class="input-group col-md-12">
+        //         <div class="input-group ">                       
+        //             <span class="input-group-addon">Имя файла изображения (fname_img_obj)</span>
+        //             <input type="text" class="form-control" id="recipient-fname_img_obj " value="'.$row_obj["fname_img_obj"].'" required>
+        //             <span class="input-group-btn">
+        //                 <button type="button"  data-tbl="obj"  data-field ="fname_img_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+        //             </span>
+        //         </div>
+        //     </div>
+        //     </div>
+        // ';
 
         echo '   <div class="row">
                 <!-- <center><a href="gallery.php" class="nav">Перейти в галерею</a></center> -->
                 <!-- Область для перетаскивания -->
-                <div id="drop-files" ondragover="return false">
-                    <p>Перетащите изображение сюда</p>
+                <div id="drop-files" ondragover="return false" title="Перетащите изображение сюда">
+                    <p>'.$row_obj["fname_img_obj"].'</p>
                     <!-- Область предпросмотра -->
                     <div id="uploaded-holder"> 
                         <div id="dropped-files">
