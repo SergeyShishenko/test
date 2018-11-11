@@ -18,7 +18,7 @@
     $dbconn=dbconnect();
 
     // //MySQL запрос
-    $Result_head = mysqli_query($dbconn,"SELECT * FROM head");
+    $Result_head = mysqli_query($dbconn,"SELECT * FROM head ORDER BY `head`.`number_in_order_head` ASC");
 
     // получаем все записи из таблицы head
     while($row_head = mysqli_fetch_array($Result_head))
@@ -52,7 +52,7 @@
         $head_id=$row_head["head_id"];
         $active="active";
         // //MySQL запрос
-        if($Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE head_id = $head_id"))
+        if($Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE head_id = $head_id  ORDER BY `category`.`number_in_order_category` ASC"))
         {
                 // получаем все записи из таблицы category                      
             echo '<div  class="box-content">
@@ -113,7 +113,7 @@
                                          ';
                                         $active="active";
                                         // //MySQL запрос
-                                        if($Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE head_id = $head_id"))
+                                        if($Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE head_id = $head_id  ORDER BY `category`.`number_in_order_category` ASC"))
                                         {
                                              // получаем все записи из таблицы category
                                             while($row_category = mysqli_fetch_array($Result_category))
@@ -145,7 +145,7 @@
                                                                                 <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white" id="tab-parent-category_'.$category_id.'"><!--Группы--> '; 
                                                                                     $active="active";
                                                                                     // //MySQL запрос
-                                                                                   if($Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE category_id = $category_id"))
+                                                                                   if($Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE category_id = $category_id  ORDER BY `grupp`.`number_in_order_grupp` ASC"))
                                                                                    {
                                                                                         // получаем все записи из таблицы grupp
                                                                                         while($row_grupp = mysqli_fetch_array($Result_grupp))
@@ -177,7 +177,7 @@
                                                                                 ';
                                                                                 $active="active";
                                                                                 // //MySQL запрос
-                                                                               if($Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE category_id = $category_id"))
+                                                                               if($Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE category_id = $category_id  ORDER BY `grupp`.`number_in_order_grupp` ASC"))
                                                                                {
                                                                                     // получаем все записи из таблицы grupp
                                                                                     while($row_grupp = mysqli_fetch_array($Result_grupp))
@@ -190,7 +190,7 @@
                                                                                                 // $thumbs="/";
                                                                                                 // $active="active";
                                                                                                 // //MySQL запрос
-                                                                                            if($Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE grupp_id = $grupp_id"))
+                                                                                            if($Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE grupp_id = $grupp_id  ORDER BY `obj`.`number_in_order_obj` ASC"))
                                                                                             {
                                                                                                 // получаем все записи из таблицы grupp
                                                                                                 while($row_obj = mysqli_fetch_array($Result_obj))

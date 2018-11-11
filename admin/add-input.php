@@ -23,7 +23,7 @@ $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
 $htmlid = filter_var($_POST["htmlid"],FILTER_SANITIZE_STRING);
     
 
-echo '<li class="hidden">';//class="hidden" 
+echo '<li class="">';//class="hidden" 
 echo '<span id="form-contentToSave" data-val="'.$contentToSave.'">contentToSave - '.$contentToSave.'</span>';
 echo '<br><span id="form-tbl" data-val="'.$tbl.'">'.$tbl.'</span>' ;
 echo '<br><span id="form-field" data-val="'.$field.'">'.$field.'</span>' ;
@@ -37,7 +37,7 @@ echo '</li>';
 
 $clickedID = explode( '_', $id ); //Разбиваем строку (Split работает аналогично PHP explode)
 $DbNumberID = $clickedID[1]; //и получаем номер из массива
-
+$parent =explode( '-', $parent )[1];
 // echo '<br>$DbNumberID - '.$DbNumberID ;
 
 switch ($tbl) {
@@ -45,6 +45,13 @@ switch ($tbl) {
     case "head":
     $Result_head = mysqli_query($dbconn,"SELECT *  FROM head WHERE head_id = $DbNumberID");//MySQL запрос
     $row_head = mysqli_fetch_array($Result_head);//получаем все записи из таблицы
+
+    $res   = mysqli_query($dbconn,"SELECT COUNT(head_id) AS count FROM head "); 
+    $data = mysqli_fetch_assoc($res); 
+    // echo $data['count']; 
+    mysqli_free_result($res); 
+    // header('HTTP/1.1 400 count= '.$data['count']);        
+    //  exit();
     // $row_head["obj_id"]
         echo '<li>';
         echo '<div class="row">
@@ -80,7 +87,16 @@ switch ($tbl) {
                 <div class="input-group col-md-12">
                     <div class="input-group ">                      
                         <span class="input-group-addon">Номер по порядку</span>
-                        <input type="text" class="form-control"  id="recipient-order" value="'.$row_head["number_in_order_head"].'" required>
+                            <select class="form-control" id="recipient-order"> 
+                        ';                        
+                        for ($i = 1; $i <= $data['count']; $i++) { 
+                            if ($i==$row_head["number_in_order_head"]){$selected="selected";}else{$selected="";}                          
+                            echo '                            
+                                <option '.$selected.' value="'.$i.'">'.$i.'</option>                                                           
+                            ';
+                        }//for
+                        echo '
+                            </select>                        
                         <span class="input-group-btn">
                             <button type="button"  data-tbl="head"  data-field ="number_in_order_head" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
@@ -98,6 +114,13 @@ switch ($tbl) {
     {
         $Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE category_id = $DbNumberID");//MySQL запрос
         $row_category = mysqli_fetch_array($Result_category);//получаем все записи из таблицы
+        $parentid=$row_category['head_id'];
+        $res   = mysqli_query($dbconn,"SELECT COUNT(category_id) AS count FROM category WHERE head_id = $parentid"); 
+        $data = mysqli_fetch_assoc($res); 
+        // echo $data['count']; 
+        mysqli_free_result($res); 
+        // header('HTTP/1.1 400 count= '.$data['count']);        
+        //  exit();
         echo '<li>';
         echo '<div class="row">
                 <div class="input-group col-md-12">
@@ -145,7 +168,16 @@ switch ($tbl) {
                 <div class="input-group col-md-12">
                     <div class="input-group ">                      
                         <span class="input-group-addon">Номер по порядку</span>
-                        <input type="text" class="form-control" id="recipient-order" value="'.$row_category["number_in_order_category"].'" required>
+                            <select class="form-control" id="recipient-order"> 
+                            ';                        
+                            for ($i = 1; $i <= $data['count']; $i++) { 
+                                if ($i==$row_category["number_in_order_category"]){$selected="selected";}else{$selected="";}                          
+                                echo '                            
+                                    <option '.$selected.' value="'.$i.'">'.$i.'</option>                                                           
+                                ';
+                            }//for
+                            echo '
+                            </select> 
                         <span class="input-group-btn">
                             <button type="button"   data-tbl="category"   data-field ="number_in_order_category" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
@@ -157,7 +189,14 @@ switch ($tbl) {
         mysqli_free_result($Result_category); 
     }
     else //add new category
-    {
+    {   
+        $Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE head_id = $parent");//MySQL запрос
+        $row_category = mysqli_fetch_array($Result_category);//получаем все записи из таблицы
+        $parentid=$row_category['head_id'];
+        $res   = mysqli_query($dbconn,"SELECT COUNT(category_id) AS count FROM category WHERE head_id = $parentid"); 
+        $data = mysqli_fetch_assoc($res); 
+        // echo $data['count']; 
+        mysqli_free_result($res); 
         echo '<li>';
         echo '<div class="row">
                 <div class="input-group col-md-12">
@@ -205,7 +244,16 @@ switch ($tbl) {
                 <div class="input-group col-md-12">
                     <div class="input-group ">                      
                         <span class="input-group-addon">Номер по порядку</span>
-                        <input type="text" class="form-control" id="recipient-order" value="" required>
+                            <select class="form-control" id="recipient-order"> 
+                            ';                        
+                            for ($i = 1; $i <= $data['count']+1; $i++) { 
+                                if ($i==$data['count']+1){$selected="selected";}else{$selected="";}                          
+                                echo '                            
+                                    <option '.$selected.' value="'.$i.'">'.$i.'</option>                                                           
+                                ';
+                            }//for
+                            echo '
+                            </select> 
                         <span class="input-group-btn">
                             <button type="button"   data-tbl="category"   data-field ="number_in_order_category" data-action="action" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
@@ -214,7 +262,7 @@ switch ($tbl) {
             </div>
             ';
         echo '</li>';
-
+        mysqli_free_result($Result_category);                         
     }
 
         break;
@@ -226,6 +274,13 @@ switch ($tbl) {
     {
         $Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE grupp_id = $DbNumberID");//MySQL запрос
         $row_grupp = mysqli_fetch_array($Result_grupp);//получаем все записи из таблицы
+        $parentid=$row_grupp["category_id"];
+        $res   = mysqli_query($dbconn,"SELECT COUNT(grupp_id) AS count FROM grupp WHERE category_id = $parentid"); 
+        $data = mysqli_fetch_assoc($res); 
+        // echo $data['count']; 
+        mysqli_free_result($res); 
+        // header('HTTP/1.1 400 count= '.$data['count']);        
+        //  exit();
             echo '<li>';
             echo '<div class="row">
                     <div class="input-group col-md-12">
@@ -260,7 +315,7 @@ switch ($tbl) {
                         <div class="input-group col-md-12">
                             <div class="input-group ">                      
                                 <span class="input-group-addon">Родитель</span>
-                                <input type="text" class="form-control" id="recipient-parent" value="category_id-'.$row_grupp["category_id"].'" required disabled>
+                                <input type="text" class="form-control" id="recipient-parent" value="'.$row_grupp["category_id"].'" required disabled>
                                 <span class="input-group-btn">
                                     <button type="button"  data-tbl="grupp"   data-field ="category_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
@@ -273,7 +328,16 @@ switch ($tbl) {
                         <div class="input-group col-md-12">
                             <div class="input-group ">                      
                                 <span class="input-group-addon">Номер по порядку</span>
-                                <input type="text" class="form-control" id="recipient-order" value="'.$row_grupp["number_in_order_grupp"].'" required>
+                                    <select class="form-control" id="recipient-order"> 
+                                    ';                        
+                                    for ($i = 1; $i <= $data['count']; $i++) { 
+                                        if ($i==$row_grupp["number_in_order_grupp"]){$selected="selected";}else{$selected="";}                          
+                                        echo '                            
+                                            <option '.$selected.' value="'.$i.'">'.$i.'</option>                                                           
+                                        ';
+                                    }//for
+                                    echo '
+                                    </select> 
                                 <span class="input-group-btn">
                                     <button type="button" data-tbl="grupp"  data-field ="number_in_order_grupp" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
@@ -286,6 +350,13 @@ switch ($tbl) {
         }
         else //add new grupp
         {
+            $Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE category_id = $parent");//MySQL запрос
+            $row_grupp = mysqli_fetch_array($Result_grupp);//получаем все записи из таблицы
+            $parentid=$row_grupp['category_id'];
+            $res   = mysqli_query($dbconn,"SELECT COUNT(grupp_id) AS count FROM grupp WHERE category_id = $parentid"); 
+            $data = mysqli_fetch_assoc($res); 
+            // echo $data['count']; 
+            mysqli_free_result($res); 
             echo '<li>';
             echo '<div class="row">
                         <div class="input-group col-md-12">
@@ -331,7 +402,16 @@ switch ($tbl) {
                         <div class="input-group col-md-12">
                             <div class="input-group ">                      
                                 <span class="input-group-addon">Номер по порядку</span>
-                                <input type="text" class="form-control" id="recipient-order" value="" required>
+                                    <select class="form-control" id="recipient-order"> 
+                                    ';                        
+                                    for ($i = 1; $i <= $data['count']+1; $i++) { 
+                                        if ($i==$data['count']+1){$selected="selected";}else{$selected="";}                          
+                                        echo '                            
+                                            <option '.$selected.' value="'.$i.'">'.$i.'</option>                                                           
+                                        ';
+                                    }//for
+                                    echo '
+                                    </select> 
                                 <span class="input-group-btn">
                                     <button type="button" data-tbl="grupp"  data-field ="number_in_order_grupp" data-action="action"  class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
@@ -340,7 +420,7 @@ switch ($tbl) {
                     </div>
                 ';
             echo '</li>';
-
+            mysqli_free_result($Result_grupp);                              
         }
         break;
 /////"grupp"
@@ -353,6 +433,13 @@ switch ($tbl) {
     /////obj
         $Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE obj_id = $DbNumberID");//MySQL запрос
         $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы
+        $parentid=$row_obj["grupp_id"];
+        $res   = mysqli_query($dbconn,"SELECT COUNT(grupp_id) AS count FROM obj WHERE grupp_id = $parentid"); 
+        $data = mysqli_fetch_assoc($res); 
+        // echo $data['count']; 
+        mysqli_free_result($res); 
+        // header('HTTP/1.1 400 count= '.$data['count']);        
+        //  exit();
         echo '<li>';
         echo '<div class="row">
                 <div class="input-group col-md-12">
@@ -574,8 +661,17 @@ switch ($tbl) {
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">                       
-                        <span class="input-group-addon">Номер по порядку (number_in_order_obj)</span>
-                        <input type="text" class="form-control" id="recipient-order" value="'.$row_obj["number_in_order_obj"].'" required>
+                        <span class="input-group-addon">Номер по порядку</span>
+                            <select class="form-control" id="recipient-order"> 
+                            ';                        
+                            for ($i = 1; $i <= $data['count']; $i++) { 
+                                if ($i==$row_grupp["number_in_order_obj"]){$selected="selected";}else{$selected="";}                          
+                                echo '                            
+                                    <option '.$selected.' value="'.$i.'">'.$i.'</option>                                                           
+                                ';
+                            }//for
+                            echo '
+                            </select> 
                         <span class="input-group-btn">
                             <button type="button"  data-tbl="obj"  data-field ="number_in_order_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
@@ -1132,6 +1228,13 @@ switch ($tbl) {
     else //add new obj
     {
      /////obj 
+        $Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE grupp_id = $parent");//MySQL запрос
+        $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы
+        $parentid=$row_obj['grupp_id'];
+        $res   = mysqli_query($dbconn,"SELECT COUNT(obj_id) AS count FROM obj WHERE grupp_id = $parentid"); 
+        $data = mysqli_fetch_assoc($res); 
+        // echo $data['count']; 
+        mysqli_free_result($res); 
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">
@@ -1284,8 +1387,17 @@ switch ($tbl) {
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">                       
-                        <span class="input-group-addon">Номер по порядку (number_in_order_obj)</span>
-                        <input type="text" class="form-control" id="recipient-order" value="9999" required>
+                        <span class="input-group-addon">Номер по порядку</span>
+                            <select class="form-control" id="recipient-order"> 
+                            ';                        
+                            for ($i = 1; $i <= $data['count']+1; $i++) { 
+                                if ($i==$data['count']+1){$selected="selected";}else{$selected="";}                          
+                                echo '                            
+                                    <option '.$selected.' value="'.$i.'">'.$i.'</option>                                                           
+                                ';
+                            }//for
+                            echo '
+                            </select> 
                         <span class="input-group-btn">
                             <button type="button"  data-tbl="obj"  data-field ="number_in_order_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
@@ -1677,7 +1789,8 @@ switch ($tbl) {
         ;
         
         echo '</li>';
-     /////obj_furnitur_prop    
+     /////obj_furnitur_prop  
+     mysqli_free_result($Result_obj);   
     }
         break;
 /////"obj"        
