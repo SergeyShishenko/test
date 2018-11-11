@@ -22,7 +22,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     // $DbNumberID = $clickedID[1];
     
     // echo $id  ; //response - число или "" или "undefined"
-    // header('HTTP/1.1 400 action= '.$id);
+    // header('HTTP/1.1 400 $parent= '.$parent[0] );
     // exit();
    
     $obj=$tbl."_";
@@ -109,6 +109,54 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     { 
         if ($tbl=="obj" or $tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop")
         {$fieldid='obj_id';}
+
+        // .$field.'-'.$contentToSave 
+        
+        if(stristr($field, 'number_in_order') ) 
+        {
+            // echo '"number_in_order" найдена в строке';
+            $Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE $fieldid = $id ");//MySQL запрос    ORDER BY $field ASC
+            $row = mysqli_fetch_array($Result);//получаем все записи из таблицы
+            $old=$row[$field];
+            $new=$contentToSave;
+            // $grupp=$row[$parent[0]];
+            // header('HTTP/1.1 400 !!! '.$old.'->'.$new.'-'.$_POST["parent"]);
+            // exit(); 
+            mysqli_free_result($Result);
+            $Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE `grupp_id` = $parent[0] ");//MySQL запрос    ORDER BY $field ASC
+            $row = mysqli_fetch_array($Result);//получаем все записи из таблицы
+            $x = 0;
+            // while ($rows = mysqli_fetch_array($Result))
+            //  {
+            //     // header('HTTP/1.1 400 !!! '.$rows[$field]);
+            //     echo $x;
+            //     $x++;
+            //  }
+             header('HTTP/1.1 400 !!! '.count($row));
+exit(); 
+            if ($new > $old)
+            {  
+                // $i=1;
+                foreach ($row as $key => $field) {
+                    $pointer[$key] = $val;
+                }
+                $c=count($row[0]);
+                                header('HTTP/1.1 400 !!!-> '. $c);
+            exit(); 
+                for ($i = $old+1; $i <= $new; $i++)
+                {
+                    // echo $rows[$i].[$field];
+                    header('HTTP/1.1 400 !!!'.$rows[$i][$field]);
+                    // $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+
+                } 
+                // header('HTTP/1.1 400 !!!');
+                    exit(); 
+            }
+            
+
+        }
+
         $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
 
         //  header('HTTP/1.1 400 $sql= '.$sql);        

@@ -23,7 +23,7 @@ $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
 $htmlid = filter_var($_POST["htmlid"],FILTER_SANITIZE_STRING);
     
 
-echo '<li class="">';//class="hidden" 
+echo '<li class="hidden">';//class="hidden" 
 echo '<span id="form-contentToSave" data-val="'.$contentToSave.'">contentToSave - '.$contentToSave.'</span>';
 echo '<br><span id="form-tbl" data-val="'.$tbl.'">'.$tbl.'</span>' ;
 echo '<br><span id="form-field" data-val="'.$field.'">'.$field.'</span>' ;
@@ -665,7 +665,7 @@ switch ($tbl) {
                             <select class="form-control" id="recipient-order"> 
                             ';                        
                             for ($i = 1; $i <= $data['count']; $i++) { 
-                                if ($i==$row_grupp["number_in_order_obj"]){$selected="selected";}else{$selected="";}                          
+                                if ($i==$row_obj["number_in_order_obj"]){$selected="selected";}else{$selected="";}                          
                                 echo '                            
                                     <option '.$selected.' value="'.$i.'">'.$i.'</option>                                                           
                                 ';
@@ -1399,7 +1399,7 @@ switch ($tbl) {
                             echo '
                             </select> 
                         <span class="input-group-btn">
-                            <button type="button"  data-tbl="obj"  data-field ="number_in_order_obj" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                            <button type="button"  data-tbl="obj"  data-field ="number_in_order_obj" class="btn btn-default button31 btn-warning"><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
                     </div>
                 </div>
