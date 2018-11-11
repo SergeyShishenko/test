@@ -41,7 +41,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             // if (isset($id))
             // {               
                 // добавляем новую запись во все таблицы объекта
-                $sql = "INSERT INTO  `obj`(`grupp_id`,`path_img_obj`,`fname_img_obj`,`template_obj`,`img_orientation_obj`) VALUES ('$parent[1]','./dist/images/','test.png','shablony-dokumentov.php','album')";
+                $sql = "INSERT INTO  `obj`(`grupp_id`,`path_img_obj`,`fname_img_obj`,`template_obj`,`img_orientation_obj`) VALUES ('$parent[0]','./dist/images/','test.png','shablony-dokumentov.php','album')";
                 // (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`, `template_obj`, `img_orientation_obj`, `img_alt_obj`) VALUES (NULL, 'Лист10', '1', '', NULL, 'test.png', NULL, 'no-foto.png', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
                 if(mysqli_query($dbconn,$sql))
                 {                    
@@ -124,15 +124,14 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             // exit(); 
             mysqli_free_result($Result);
             $Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE `grupp_id` = $parent[0] ");//MySQL запрос    ORDER BY $field ASC
-            $row = mysqli_fetch_array($Result);//получаем все записи из таблицы
-            $x = 0;
-            // while ($rows = mysqli_fetch_array($Result))
-            //  {
-            //     // header('HTTP/1.1 400 !!! '.$rows[$field]);
-            //     echo $x;
-            //     $x++;
-            //  }
-             header('HTTP/1.1 400 !!! '.count($row));
+            // $row = mysqli_fetch_array($Result);//получаем все записи из таблицы
+            // $x = 0;
+            while ($rows = mysqli_fetch_array($Result))
+             {
+                $my_array[]=array("id"=>$row['obj_id'],"name"=>$row['name_obj']);
+                // $x++;
+             }
+             header('HTTP/1.1 400 !!! '.count($my_array));
 exit(); 
             if ($new > $old)
             {  
