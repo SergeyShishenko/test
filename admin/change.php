@@ -18,12 +18,13 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
     $action = filter_var($_POST["action"],FILTER_SANITIZE_STRING);
     $parent = explode("-", filter_var($_POST["parent"],FILTER_SANITIZE_STRING));
+    $parent_ = explode("_", filter_var($_POST["parent"],FILTER_SANITIZE_STRING));
     
     // $clickedID = explode("_", $id);
     // $DbNumberID = $clickedID[1];
     
     // echo $id  ; //response - число или "" или "undefined"
-    // header('HTTP/1.1 400 $parent= '.$_POST["parent"] );
+    // header('HTTP/1.1 400 $parent= '.$parent[0] );
     // exit();
    
     $obj=$tbl."_";
@@ -120,9 +121,10 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             $row = mysqli_fetch_array($Result);//получаем все записи из таблицы
             $old=$row[$field];
             $new=$contentToSave;
+            // if (!isset($parent_[0]) or $parent_[0]=="")  {$parent_[0]="head";$parent[1]=$id;}
             // $grupp=$row[$parent[0]];
-            header('HTTP/1.1 400 !!! '.$field.' old='.$old.'->'.$new.'-'.$tbl);
-            exit(); 
+            // header('HTTP/1.1 400 !!! '.$field.' old='.$old.'->'.$new.'->'.$tbl.'->'.$parent_[0]);
+            // exit(); 
             mysqli_free_result($Result);
             // switch ($tbl) { 
             // case "obj":
@@ -138,18 +140,23 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             //     $('#item_'+DbNumberID).fadeOut("slow");
             // break;
             // }
-            $Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE $parent_[0]._id = $parent[0] ");//MySQL запрос всех элементов   ORDER BY $field ASC
+            if ($tbl=="head") 
+            {$Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl`");}
+            else{$Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE $parent_[0]_id = $parent[1]");}
+            
             // $row = mysqli_fetch_array($Result);//получаем все записи из таблицы
             // $x = 0;
-            header('HTTP/1.1 400 !!! '.$parent_[0]);
-            exit(); 
+            // header('HTTP/1.1 400 !!! '."SELECT *  FROM `$tbl` WHERE $parent_[0]_id = $parent[1]");
+            // exit(); 
                         
             while ($rows = mysqli_fetch_array($Result))
              {
-                $my_array[]=array("id"=>$row['obj_id'],"name"=>$row['name_obj']);
+                $my_array[]=array("tbl"=>$tbl,"id"=>$rows[$tbl.'_id'],"number_in_order"=>$rows[$field] ) ;
+                // $my_array[]=array("id"=>$rows[$tbl.'_id'],"tbl"=>$tbl,"number_in_order"=>$rows[$field]);
                 // $x++;
              }
-             header('HTTP/1.1 400 !!! '.$my_array[0]['name']);
+            //  header('HTTP/1.1 400 !!! '.$my_array[0]['name']);
+             header('HTTP/1.1 400 !!! '.count($my_array).' '.$my_array[1]["number_in_order"]);
 exit(); 
             if ($new > $old)
             {  

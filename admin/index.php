@@ -1030,7 +1030,8 @@
     // alert($(this).attr('class'));
     // alert($(obj).data('field'));
     var recipient = $(obj).parent().parent().find($("[id*='recipient']")); // значение
-    var parent = $('#myModal').find('#recipient-parent').val(); // значение
+    // var parent = $('#myModal').find('#form-parent').val(); // значение
+    var parent =$('span[id="form-parent"]').data('val');
     var val = recipient.val();
     // var datafieid =$(obj).data('field')).val();
     val = $.trim(val);

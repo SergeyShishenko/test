@@ -23,7 +23,7 @@ $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
 $htmlid = filter_var($_POST["htmlid"],FILTER_SANITIZE_STRING);
     
 
-echo '<li class="">';//class="hidden" 
+echo '<li class="hidden">';//class="hidden" 
 echo '<span id="form-contentToSave" data-val="'.$contentToSave.'">contentToSave - '.$contentToSave.'</span>';
 echo '<br><span id="form-tbl" data-val="'.$tbl.'">'.$tbl.'</span>' ;
 echo '<br><span id="form-field" data-val="'.$field.'">'.$field.'</span>' ;
