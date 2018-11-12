@@ -109,76 +109,58 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     }
     else //$action=="change"
     { 
-        if ($tbl=="obj" or $tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop")
-        {$fieldid='obj_id';}
+        if ($tbl=="obj" or $tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop"){$fieldid='obj_id';}
 
-        // .$field.'-'.$contentToSave 
-        
         if(stristr($field, 'number_in_order') ) 
         {
             // echo '"number_in_order" найдена в строке';
             $Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE $fieldid = $id ");//MySQL запрос    ORDER BY $field ASC
             $row = mysqli_fetch_array($Result);//получаем все записи из таблицы
             $old=$row[$field];
-            $new=$contentToSave;
-            // if (!isset($parent_[0]) or $parent_[0]=="")  {$parent_[0]="head";$parent[1]=$id;}
-            // $grupp=$row[$parent[0]];
-            // header('HTTP/1.1 400 !!! '.$field.' old='.$old.'->'.$new.'->'.$tbl.'->'.$parent_[0]);
-            // exit(); 
-            mysqli_free_result($Result);
-            // switch ($tbl) { 
-            // case "obj":
-            // $('#image-'+DbNumberID).fadeOut("slow");
-            // break;
-            // case "category":
-            //     $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
-            //     break;
-            // case "grupp":
-            //     $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
-            //     break;
-            // case "head":
-            //     $('#item_'+DbNumberID).fadeOut("slow");
-            // break;
-            // }
+            $new=$contentToSave;           
+            mysqli_free_result($Result);           
             if ($tbl=="head") 
             {$Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl`");}
-            else{$Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE $parent_[0]_id = $parent[1]");}
-            
-            // $row = mysqli_fetch_array($Result);//получаем все записи из таблицы
-            // $x = 0;
-            // header('HTTP/1.1 400 !!! '."SELECT *  FROM `$tbl` WHERE $parent_[0]_id = $parent[1]");
-            // exit(); 
+            else{$Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE $parent_[0]_id = $parent[1] ORDER BY $field ASC");}    
+           
                         
             while ($rows = mysqli_fetch_array($Result))
-             {
-                $my_array[]=array("tbl"=>$tbl,"id"=>$rows[$tbl.'_id'],"number_in_order"=>$rows[$field] ) ;
-                // $my_array[]=array("id"=>$rows[$tbl.'_id'],"tbl"=>$tbl,"number_in_order"=>$rows[$field]);
-                // $x++;
+             {                
+                $number_array[]=array($tbl,$rows[$tbl.'_id'],$rows[$field]) ;               
              }
-            //  header('HTTP/1.1 400 !!! '.$my_array[0]['name']);
-             header('HTTP/1.1 400 !!! '.count($my_array).' '.$my_array[1]["number_in_order"]);
-exit(); 
+
             if ($new > $old)
             {  
-                // $i=1;
-                foreach ($row as $key => $field) {
-                    $pointer[$key] = $val;
-                }
-                $c=count($row[0]);
-                                header('HTTP/1.1 400 !!!-> '. $c);
-            exit(); 
-                for ($i = $old+1; $i <= $new; $i++)
+                foreach ($number_array as $v)
                 {
-                    // echo $rows[$i].[$field];
-                    header('HTTP/1.1 400 !!!'.$rows[$i][$field]);
-                    // $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
-
-                } 
-                // header('HTTP/1.1 400 !!!');
-                    exit(); 
+                    if ($v[2]>$old and $v[2]<=$new )
+                    {
+                        // echo  $v[2]." ";//3 4 5 6 7
+                        $n= $v[2]-1;
+                        $sql = "UPDATE `$tbl` SET `$field`= $n WHERE `$fieldid`=$v[1]"; 
+                        mysqli_query($dbconn,$sql); 
+                    }                   
+                }
             }
-            
+            else
+            {
+                foreach ($number_array as $v)
+                {
+                    if ($v[2]>=$new and $v[2]<$old )
+                    {
+                        // echo  $v[2]." ";//3 4 5 6 7
+                        $n= $v[2]+1;
+                        $sql = "UPDATE `$tbl` SET `$field`= $n WHERE `$fieldid`=$v[1]"; 
+                        mysqli_query($dbconn,$sql); 
+                    }                   
+                }
 
+            }    
+                $sql = "UPDATE `$tbl` SET `$field`= $new WHERE `$fieldid`=$id"; 
+                        mysqli_query($dbconn,$sql); 
+                
+          
+            mysqli_free_result($Result);
         }
 
         $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
