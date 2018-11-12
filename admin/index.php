@@ -28,7 +28,7 @@
                 <div class="box-header well">
                     <h2 ><i class="glyphicon glyphicon-th"></i> <span id="name_head_'.$row_head["head_id"].'">'.$row_head["name_head"].'</span></h2>
                     <div class="box-icon">
-                        <a href="#" class="btn btn-setting btn-round btn-default" 
+                        <a href="javascript:void(0)" class="btn btn-setting btn-round btn-default" 
                             id="head-'.$row_head["head_id"].'"
                             data-content="РЕДАКТИРОВАТЬ РАЗДЕЛ"
                             data-name="'.$row_head["name_head"].'"
@@ -44,8 +44,7 @@
                             data-id="head_'.$row_head["head_id"].'"
                             >
                             <i class="glyphicon glyphicon-edit"></i></a>
-                        <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>  
-                        <!-- <a href="#" class="btn btn-close btn-round btn-default" title="ДОБАВИТЬ РАЗДЕЛ"><i class="glyphicon glyphicon-plus-sign"></i></a> -->
+                        <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>                         
                     </div>
                 </div>
              ';
