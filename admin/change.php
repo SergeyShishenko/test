@@ -18,11 +18,12 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
     $action = filter_var($_POST["action"],FILTER_SANITIZE_STRING);
     $parent = explode("-", filter_var($_POST["parent"],FILTER_SANITIZE_STRING));
+    
     // $clickedID = explode("_", $id);
     // $DbNumberID = $clickedID[1];
     
     // echo $id  ; //response - число или "" или "undefined"
-    // header('HTTP/1.1 400 $parent= '.$parent[0] );
+    // header('HTTP/1.1 400 $parent= '.$_POST["parent"] );
     // exit();
    
     $obj=$tbl."_";
@@ -120,18 +121,35 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             $old=$row[$field];
             $new=$contentToSave;
             // $grupp=$row[$parent[0]];
-            // header('HTTP/1.1 400 !!! '.$old.'->'.$new.'-'.$_POST["parent"]);
-            // exit(); 
+            header('HTTP/1.1 400 !!! '.$field.' old='.$old.'->'.$new.'-'.$tbl);
+            exit(); 
             mysqli_free_result($Result);
-            $Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE `grupp_id` = $parent[0] ");//MySQL запрос    ORDER BY $field ASC
+            // switch ($tbl) { 
+            // case "obj":
+            // $('#image-'+DbNumberID).fadeOut("slow");
+            // break;
+            // case "category":
+            //     $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+            //     break;
+            // case "grupp":
+            //     $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+            //     break;
+            // case "head":
+            //     $('#item_'+DbNumberID).fadeOut("slow");
+            // break;
+            // }
+            $Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE $parent_[0]._id = $parent[0] ");//MySQL запрос всех элементов   ORDER BY $field ASC
             // $row = mysqli_fetch_array($Result);//получаем все записи из таблицы
             // $x = 0;
+            header('HTTP/1.1 400 !!! '.$parent_[0]);
+            exit(); 
+                        
             while ($rows = mysqli_fetch_array($Result))
              {
                 $my_array[]=array("id"=>$row['obj_id'],"name"=>$row['name_obj']);
                 // $x++;
              }
-             header('HTTP/1.1 400 !!! '.count($my_array));
+             header('HTTP/1.1 400 !!! '.$my_array[0]['name']);
 exit(); 
             if ($new > $old)
             {  

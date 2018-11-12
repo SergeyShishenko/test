@@ -742,8 +742,9 @@
 	});
 	
     // При нажатии на кнопку выбора файлов
-   
-    $("body").on('change',defaultUploadBtn, function() {
+    
+    // $("body").on('change',defaultUploadBtn, function() {
+        $("body").on('change','#uploadbtn', function() {
    		// Заполняем массив выбранными изображениями
    		var files = $(this)[0].files;
    		// Проверяем на максимальное количество файлов
