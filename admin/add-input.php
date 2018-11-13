@@ -507,23 +507,23 @@ switch ($tbl) {
 
         echo '   <div class="row">               
                 <!-- Область для перетаскивания -->
-                <div id="drop-files" ondragover="return false" title="Перетащите изображение сюда">
+                <div id="drop-files-img" ondragover="return false" title="Перетащите изображение сюда">
                     <p>'.$row_obj["fname_img_obj"].'</p>
                     <!-- Область предпросмотра -->
-                    <div id="uploaded-holder"> 
-                        <div id="dropped-files">
+                    <div id="uploaded-holder-img"> 
+                        <div id="dropped-files-img">
                             <!-- Кнопки загрузить и удалить, а также количество файлов -->
-                            <div id="upload-button">
+                            <div id="upload-button-img">
                                 <div class="pull-right">
                                     <span>0 Файлов</span>
                                     <a href="#" class="upload">Загрузить</a>
                                     <a href="#" class="delete">Удалить</a>
                                     <!-- Прогресс бар загрузки -->
-                                    <div id="loading">
-                                        <div id="loading-bar">
+                                    <div id="loading-img">
+                                        <div id="loading-bar-img">
                                             <div class="loading-color"></div>
                                         </div>
-                                        <div id="loading-content"></div>
+                                        <div id="loading-content-img"></div>
                                     </div>
                                 </div>
                             </div>  
@@ -535,11 +535,11 @@ switch ($tbl) {
                     <div id="img-db" class="image-db"  style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].');"></div>
                 </div><!-- /drop-files -->               
                 <!-- Список загруженных файлов -->
-                <div id="file-name-holder">
+                <!--  <div id="file-name-holder">
                     <ul id="uploaded-files">
                         <h1>Загруженные файлы</h1>
                     </ul>
-                </div>
+                </div>-->
                 
             </div>
         ';
