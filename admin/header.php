@@ -366,6 +366,7 @@ div.center, p.center, img.center {
 .file {
     width: 100px  !important;
 }
+#img-db{background-size: cover;width: 100px; height: 100px; position: relative; display:block;}
 </style>
 </head>
 

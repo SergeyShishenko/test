@@ -14,9 +14,12 @@
     //подключаем конфигурационный файл
     define('__ROOT__', dirname(dirname(__FILE__))); 
     require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
+
     $dbconn=dbconnect();
+
     // //MySQL запрос
     $Result_head = mysqli_query($dbconn,"SELECT * FROM head ORDER BY `head`.`number_in_order_head` ASC");
+
     // получаем все записи из таблицы head
     while($row_head = mysqli_fetch_array($Result_head))
     {        
@@ -258,6 +261,22 @@
     ?>
 
 </article>
+
+<!-- <script>
+       $('ul.nav-tabs li').hover(function () {
+        // $('a', this).fadeToggle(1000);
+        // $(this).find('.gallery-controls').remove();
+        var name = $(this).find('a > span').text();
+        $(this).append('<div class=" tab-controls">' + '<p><a href="#" class="gallery-edit btn " title="РЕДАКТИРОВАТЬ!" data-content="РЕДАКТИРОВАТЬ" data-name="' + name + '" data-toggle="modal" data-target="#myModal" ><i class="glyphicon glyphicon-edit"></i></a></p>' +  '</div>');
+        $(this).find('.tab-controls').stop().animate({'margin-top': '-15'}, 400);
+    }, function () {
+        // $('a', this).fadeToggle(1000);
+        $(this).find('.tab-controls').stop().animate({'margin-top': '0'}, 200, function () {  $(this).remove();   });
+    });
+
+    
+</script> -->
+
 <script>
     var $ = jQuery.noConflict();
    $(document).ready(function() {
@@ -341,11 +360,16 @@
                         console.log('productList: ', productList);
                         for (i = 0; i < productList.length; i++) {
                             console.log('product: ', productList[i]);
-                        }                         
+                            }
+                           
                         
                         // $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
                         console.log('span[id="name_'+sdata+'"]');
                         console.log($('span[id="name_'+sdata+'"]').text());
+                      
+                        
+
+
                         var clickedID = $('input[id="id"]').val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
                         var DbNumberID = clickedID[1]; //и получаем номер из массива
                         var tbl = $('input[id="tbl"]').val();                        
@@ -420,7 +444,11 @@
                     var content = $('img', this).data('content');
                     var name = $('img', this).data('name');
                     var htmlid = $('img', this).data('htmlid'); 
-                    console.log($('img', this).data('htmlid'));                  
+                    console.log($('img', this).data('htmlid'));
+                    // var tbl = $('img', this).data('tbl');
+                    // var field = $('img', this).data('field');
+                    // var fieldid = $('img', this).data('field-id');
+
                     $(this).append('<div class="well gallery-controls">'+
                                         '<p>' +
                                             '<a href="#"'+
@@ -450,6 +478,7 @@
                         $(this).remove();
                     });
                 });
+
 
                 // для вкладок TAB
                 $("body").on( "mouseenter","ul.nav-tabs li",function () { 
@@ -483,7 +512,8 @@
                             'data-id="obj_"  '+
                             ' style="border:none;">'+
                             '<i class="glyphicon glyphicon-plus-sign"></i></a>'; 
-                    }                    
+                    }
+                    
                     
                     $(this).append(
                         '<div class=" tab-controls" >'+
@@ -515,6 +545,46 @@
                     $(this).find('.tab-controls').stop().animate({'margin-top': '0'}, 200, function () {  $(this).remove();   });
                 });
 
+
+                        
+                //gallery edit
+            // $("body").on( "click","ul.thumbnails.gallery li.thumbnail a.gallery-edit" , function (e) {
+            // e.preventDefault();
+            // //get image id
+            // // alert("click");
+            // alert('редактировать ' + $(this).parents('.thumbnail').attr('id'));
+            // }); 
+
+            // gallery-add
+            // $("body").on( "click","ul.thumbnails.gallery li.thumbnail a.gallery-add" , function (e) {
+            // // e.preventDefault();
+            // //get image id
+            // // alert("click");
+            // alert('добавить к ' + $(this).parents('.thumbnail').attr('id'));
+            // }); 
+
+            //  $("body").on( "click",".gallery-add",function (e) {
+            //     e.preventDefault();
+            //     $('#myModal').modal('show');
+            // });
+            
+            //gallery img click
+            // $("body").on( "click","ul.thumbnails.gallery li.thumbnail img" , function (e) {
+            // e.preventDefault();
+            // //get image id
+            // // alert("click");
+            // alert('Картинка ' + $(this).parents('.thumbnail').attr('id'));
+            // }); 
+
+
+            //gallery ADD ПОКА УДАЛЯЕТ
+            // $('.thumbnails').on('click', '.gallery-add', function (e) {
+            //     e.preventDefault();
+            //     //get image id
+            //     //alert($(this).parents('.thumbnail').attr('id'));
+            //     // $(this).parents('.thumbnail').fadeOut();
+            // });
+
             $('#myModal').on('hidden.bs.modal', function (event) 
             {
                 $('.list-tbl').html("");
@@ -526,7 +596,11 @@
         $('#loading1').css("display", "block");
             
         // получить кнопку, которая его открыло
-        var button = $(event.relatedTarget);     
+        var button = $(event.relatedTarget); 
+        // alert(button.data('content'));
+        // извлечь информацию из атрибута data-content
+        // var content = button.data('content'); 
+        // alert(button.data('content'));
         var content = button.data('content');
         var tbl = button.data('tbl');
         var field = button.data('field');
@@ -537,12 +611,21 @@
         var htmlid = button.data('htmlid');         
         var id = button.data('id');
         var action =  button.data('action'); 
-        $('input[id="action"]').val(action); // установка поля}       
+        $('input[id="action"]').val(action); // установка поля} 
+        // var recipient_name =  " " + String.fromCharCode(171) + button.data('name') + String.fromCharCode(187) // Извлечение информации из данных-* атрибутов
         var recipient_name =button.data('name') // Извлечение информации из данных-* атрибутов
 
         // if (typeof recipient_name == typeof undefined) {recipient_name="";}
-        if (typeof button.data('name') === typeof undefined) {recipient_name="";}; 
-        var im = button.attr('src');    
+        if (typeof button.data('name') === typeof undefined) {recipient_name="";}
+
+
+        // var im = button.data('im'); 
+        var im = button.attr('src');
+        // вывести эту информацию в элемент, имеющий id="content"
+        // $("body").css("overflow-y", "scroll");
+        // html {   overflow-y: scroll;   }
+        // $(this).css("margin-right", "-20px");
+
         if (content.indexOf("ДОБАВИТЬ") !== -1)
         {
             $("#ChangeSubmit").addClass('hidden');
@@ -550,8 +633,13 @@
             $("#AddSubmit").removeClass('hidden');
             action = "action"; 
         }
-        else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');$("#DelSubmit").removeClass('hidden');}    
-        $(this).find('#myModalLabel').text(content);      
+        else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');$("#DelSubmit").removeClass('hidden');}
+        // $(this).find('#myModalLabel').text(content +  recipient_name); 
+        $(this).find('#myModalLabel').text(content); 
+        // recipient_name = recipient_name.replace(String.fromCharCode(171), '');// удаление ковычек
+        // recipient_name = recipient_name.replace(String.fromCharCode(187), '');// удаление ковычек
+        // data
+        
          if ( typeof(parent) != "undefined" && parent !== "")
          {
             // parent=' $$$'+ parent;
@@ -581,6 +669,7 @@
                             dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
                             data:myData, //данные, которые будут отправлены на сервер (post переменные)
                             success:function(response){
+
                                 $('.list-tbl').html(response);
                                 $('#loading1').css("display", "none");
 
@@ -613,7 +702,11 @@
 
 // $('#item_3  a.btn-minimize').trigger('click');// генерация клика
 
+
+
+
 // drag and drop
+
 	// В dataTransfer помещаются изображения которые перетащили в область div
 	jQuery.event.props.push('dataTransfer');
 	
@@ -647,9 +740,10 @@
 		}
 	});
 	
-    // При нажатии на кнопку выбора файлов    
-    // $("body").on('change',defaultUploadBtn, function() //{"[id*='uploadbtn']"'#uploadbtn'
-        $("body").on('change',"[id*='uploadbtn']", function() {
+    // При нажатии на кнопку выбора файлов
+    
+    // $("body").on('change',defaultUploadBtn, function() {
+        $("body").on('change','#uploadbtn', function() {
    		// Заполняем массив выбранными изображениями
    		var files = $(this)[0].files;
    		// Проверяем на максимальное количество файлов
@@ -723,7 +817,6 @@
 		
 	// Процедура добавления эскизов на страницу
 	function addImage(ind) {
-
 		// Если индекс отрицательный значит выводим весь массив изображений
 		if (ind < 0 ) { 
 		start = 0; end = dataArray.length; 
@@ -741,13 +834,12 @@
 		} else {
 			$('#upload-button span').html(dataArray.length+" файлов были выбраны");
 		}
-        // Цикл для каждого элемента массива
-        $('#img-db').hide();
+		// Цикл для каждого элемента массива
 		for (i = start; i < end; i++) {
 			// размещаем загруженные изображения
 			if($('#dropped-files > .image').length <= maxFiles) { 
 				// $('#drop-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px;"></div>'); 
-                $('#drop-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="javascript:void(0)" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
+                $('#drop-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
                 $('#drop-files p').hide();
 			}
 		}
@@ -768,10 +860,7 @@
         $('#drop-files > .image').remove();
         $('#uploaded-holder').hide();
         $('#drop-files p').show();
-        // $('.image-db').show();
-        $('.image-db').css('display','block');
-        document.getElementById("img-db").style.display = "block";
-	    //  console.log('#img-db');
+	
 		// Очищаем массив
 		dataArray.length = 0;
 		
@@ -808,18 +897,9 @@
 		// получаем значение после тире тоесть индекс изображения в массиве
 		dataArray.splice(temp[1],1);
 		// Удаляем старые эскизы
-        $('#drop-files > .image').remove();
-        $('#drop-files p').show();
-        // $('.image-db').show();
-        $('#img-db').css('display','block');
-        $('#upload-button').hide();
-		$('#uploaded-holder').hide();
-        // $('#drop-files').find('#img-db').css('display','block');
-        // document.getElementById("img-db").style.display = "block";
-        // alert();
-        console.log('#img-db!');
+		$('#drop-files > .image').remove();
 		// Обновляем эскизи в соответсвии с обновленным массивом
-		// addImage(-1);		
+		addImage(-1);		
 	});
 	
 	// Удалить все изображения кнопка 
@@ -925,23 +1005,45 @@
 
     });//ready
 
+    
+
  
+
+// var obj = null;
+//      $("body").on( "focus","button.button31" , function (e) {
+//             e.preventDefault();
+//             obj = this;
+//             // alert("click");
+//             setTimeout(
+//                 function() { $(obj).blur() }, 2000
+//                 );
+//                 $(this).removeClass('btn-warning');    
+//      }); 
+
   // Обновляем запись, когда произошел клик по кнопке refresh
   var obj = null;
   $("body").on( "click","button.btn.button31.btn-warning" , function (e) {
 
     e.preventDefault();
-    obj = this; 
-    var recipient = $(obj).parent().parent().find($("[id*='recipient']")); // значение    
+    obj = this;
+    // $(this).removeClass('btn-warning');
+    // alert($(this).attr('class'));
+    // alert($(obj).data('field'));
+    var recipient = $(obj).parent().parent().find($("[id*='recipient']")); // значение
+    // var parent = $('#myModal').find('#form-parent').val(); // значение
     var parent =$('span[id="form-parent"]').data('val');
-    var val = recipient.val();    
+    var val = recipient.val();
+    // var datafieid =$(obj).data('field')).val();
     val = $.trim(val);
 
     if(val==="") //simple validation
     {
         alert("Введите наименование!");
         return false;
-    }  
+    }
+    // else{alert($(this).parent().parent().find($("[id*='recipient']")).val());}
+        //post variables
+        // alert($(obj).data('fie'));
         if ( typeof($(obj).data('fieldid')) !== "undefined" && $(obj).data('fieldid') !== "")
          {
             $('input[id="fieldid"]').val($(obj).data('fieldid')).val(); // установка поля
@@ -977,7 +1079,15 @@
                 // alert($("#"+$("#tbl").val()).text() + DbNumberID + " "+ recipient.val());
             $("#"+$("#field").val()+"_"+ DbNumberID).text(recipient.val());
             $('input[id="id"]').val(response);
-            $('input[id="action"]').val("change");          
+            $('input[id="action"]').val("change");
+            // alert('$insert_id='+response);
+            // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',recipient.val());
+                // для img
+            // $("#image-"+ DbNumberID).find('img').data('name',recipient.val());
+            // // для разделов
+            // $("#item_"+ DbNumberID).find("#"+$("#tbl").val()+"-"+ DbNumberID).data('name',recipient.val());
+            // // $("#contentText").val(''); //очищаем текстовое поле после успешной вставки
+            // alert(obj.attr('class')+' NEW '+recipient.val());
             $(obj).blur();
             $(obj).removeClass('btn-warning');
             },
@@ -987,10 +1097,17 @@
         });
     });
 
+
+
+
+
 // $("body").on("click",'.dismiss', function() {
 //     $('.list-tbl').html("");
 //     // $('#loading').css("display", "block");
 // })
+
+
+
 
 $("body").on( "change",".form-control" , function (e) {
     e.preventDefault();
@@ -999,7 +1116,9 @@ $("body").on( "change",".form-control" , function (e) {
             }); 
 
   $("body").on( "click","button.btn.btn-primary.button33" , function (e) {
-    e.preventDefault(); 
+    e.preventDefault();
+    // alert($(this).parent().parent().parent().parent().parent().attr('class'));
+    // alert($(this).parent().parent().parent().parent().parent().hasClass('obj_in_addition'));
       if ($(this).parent().parent().parent().parent().parent().hasClass('obj_in_addition'))
         {$(this).parent().parent().parent().parent().parent().append('<div class="row">'+
             '<div class="input-group col-md-12">'+

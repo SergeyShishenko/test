@@ -505,8 +505,7 @@ switch ($tbl) {
         //     </div>
         // ';
 
-        echo '   <div class="row">
-                <!-- <center><a href="gallery.php" class="nav">Перейти в галерею</a></center> -->
+        echo '   <div class="row">               
                 <!-- Область для перетаскивания -->
                 <div id="drop-files" ondragover="return false" title="Перетащите изображение сюда">
                     <p>'.$row_obj["fname_img_obj"].'</p>
@@ -531,16 +530,10 @@ switch ($tbl) {
                         </div>
                     </div>
                     <form id="frm">
-                        <input type="file" id="uploadbtn" multiple style="display: none;">			
+                        <input type="file" id="uploadbtn-img" multiple style="display: none;">			
                     </form>
-                    <div id="img-db" class="image"  style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].'); background-size: cover;width: 100px; height: 100px; position: relative;"></div>
-                </div><!-- drop-files -->
-                <!-- Область предпросмотра -->
-              
-                <!--  <button type = "button" name = "del1" style = "width: 80px; height:50px;">
-                    <b>Удалить</b>
-                </button><br>
-                -->
+                    <div id="img-db" class="image-db"  style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].');"></div>
+                </div><!-- /drop-files -->               
                 <!-- Список загруженных файлов -->
                 <div id="file-name-holder">
                     <ul id="uploaded-files">
