@@ -120,6 +120,7 @@ include 'inc-left-side-menu-furnitura.php';
                         
 
                         <div class="bs-callout bs-callout-warning cont" > 
+                        
                             <h2 id="5000502-01-100-petlya-vkladnaya" >&nbsp;</h2> 
                             <h2 >5000502-01-100 петля вкладная</h2>                              
                             <p> 
@@ -2020,4 +2021,4 @@ include 'inc-left-side-menu-furnitura.php';
                 e.preventDefault(); // prevent the default action (scroll / move caret)
             });
     </script>
-<?php include 'inc-footer2.php'; ?>
+<?php include 'inc-footer.php'; ?>
