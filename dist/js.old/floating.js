@@ -887,21 +887,21 @@ $(function(){ // лестницы
     });
   });
 
-//   $(function(){
-//     var num = 27;  
-//     var floating ='#floating' + num;
-//     var footer     ='#footer'  + num; 
-//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+  $(function(){
+    var num = 27;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num; 
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-//     $(window).scroll(function() { 
-//     var top = $(document).scrollTop(), // число прокрутки
-//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//         height = $(floating).outerHeight(); // высота блока-f
-//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//     else {$(floating).removeClass('fixed-div');}
-//     });
-//   });
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
 
 //////
 
@@ -1348,21 +1348,21 @@ $(function(){
     });
   });
 
-//   $(function(){
-//         var num = 1078;  
-//         var floating ='#floating' + num;
-//         var footer     ='#footer'  + num;
-//         var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+  $(function(){
+        var num = 1078;  
+        var floating ='#floating' + num;
+        var footer     ='#footer'  + num;
+        var topPos = $(floating).offset().top-55;// текущая позиция блока-f
         
-//         $(window).scroll(function() { 
-//         var top = $(document).scrollTop(), // число прокрутки
-//             pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//             height = $(floating).outerHeight(); // высота блока-f
-//         if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//         else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//         else {$(floating).removeClass('fixed-div');}
-//         });
-//       });
+        $(window).scroll(function() { 
+        var top = $(document).scrollTop(), // число прокрутки
+            pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+            height = $(floating).outerHeight(); // высота блока-f
+        if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+        else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+        else {$(floating).removeClass('fixed-div');}
+        });
+      });
     //   $(function(){
     //     var num = 1088;  
     //     var floating ='#floating' + num;
@@ -2169,159 +2169,159 @@ $(function(){
     });
   });
               ///
-// $(function(){
-//     var num = 107;  
-//     var floating ='#floating' + num;
-//     var footer     ='#footer'  + num;
-//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+$(function(){
+    var num = 107;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num;
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-//     $(window).scroll(function() { 
-//     var top = $(document).scrollTop(), // число прокрутки
-//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//         height = $(floating).outerHeight(); // высота блока-f
-//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//     else {$(floating).removeClass('fixed-div');}
-//     });
-//   });
-//   $(function(){
-//     var num = 108;  
-//     var floating ='#floating' + num;
-//     var footer     ='#footer'  + num;
-//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
+  $(function(){
+    var num = 108;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num;
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-//     $(window).scroll(function() { 
-//     var top = $(document).scrollTop(), // число прокрутки
-//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//         height = $(floating).outerHeight(); // высота блока-f
-//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//     else {$(floating).removeClass('fixed-div');}
-//     });
-//   });
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
                 ///
-// $(function(){
-//     var num = 109;  
-//     var floating ='#floating' + num;
-//     var footer     ='#footer'  + num;
-//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+$(function(){
+    var num = 109;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num;
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-//     $(window).scroll(function() { 
-//     var top = $(document).scrollTop(), // число прокрутки
-//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//         height = $(floating).outerHeight(); // высота блока-f
-//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//     else {$(floating).removeClass('fixed-div');}
-//     });
-//   });
-//   $(function(){
-//     var num = 110;  
-//     var floating ='#floating' + num;
-//     var footer     ='#footer'  + num;
-//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
+  $(function(){
+    var num = 110;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num;
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-//     $(window).scroll(function() { 
-//     var top = $(document).scrollTop(), // число прокрутки
-//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//         height = $(floating).outerHeight(); // высота блока-f
-//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//     else {$(floating).removeClass('fixed-div');}
-//     });
-//   });
-//                   ///
-// $(function(){
-//     var num = 111;  
-//     var floating ='#floating' + num;
-//     var footer     ='#footer'  + num;
-//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
+                  ///
+$(function(){
+    var num = 111;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num;
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-//     $(window).scroll(function() { 
-//     var top = $(document).scrollTop(), // число прокрутки
-//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//         height = $(floating).outerHeight(); // высота блока-f
-//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//     else {$(floating).removeClass('fixed-div');}
-//     });
-//   });
-//   $(function(){
-//     var num = 112;  
-//     var floating ='#floating' + num;
-//     var footer     ='#footer'  + num;
-//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
+  $(function(){
+    var num = 112;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num;
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-//     $(window).scroll(function() { 
-//     var top = $(document).scrollTop(), // число прокрутки
-//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//         height = $(floating).outerHeight(); // высота блока-f
-//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//     else {$(floating).removeClass('fixed-div');}
-//     });
-//   });
-//                     ///
-// $(function(){
-//     var num = 113;  
-//     var floating ='#floating' + num;
-//     var footer     ='#footer'  + num;
-//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
+                    ///
+$(function(){
+    var num = 113;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num;
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-//     $(window).scroll(function() { 
-//     var top = $(document).scrollTop(), // число прокрутки
-//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//         height = $(floating).outerHeight(); // высота блока-f
-//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//     else {$(floating).removeClass('fixed-div');}
-//     });
-//   });
-//   $(function(){
-//     var num = 114;  
-//     var floating ='#floating' + num;
-//     var footer     ='#footer'  + num;
-//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
+  $(function(){
+    var num = 114;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num;
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-//     $(window).scroll(function() { 
-//     var top = $(document).scrollTop(), // число прокрутки
-//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//         height = $(floating).outerHeight(); // высота блока-f
-//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//     else {$(floating).removeClass('fixed-div');}
-//     });
-//   });
-//   $(function(){
-//     var num = 115;  
-//     var floating ='#floating' + num;
-//     var footer     ='#footer'  + num;
-//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
+  $(function(){
+    var num = 115;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num;
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-//     $(window).scroll(function() { 
-//     var top = $(document).scrollTop(), // число прокрутки
-//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//         height = $(floating).outerHeight(); // высота блока-f
-//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//     else {$(floating).removeClass('fixed-div');}
-//     });
-//   });
-//   $(function(){
-//     var num = 116;  
-//     var floating ='#floating' + num;
-//     var footer     ='#footer'  + num;
-//     var topPos = $(floating).offset().top-55;// текущая позиция блока-f
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
+  $(function(){
+    var num = 116;  
+    var floating ='#floating' + num;
+    var footer     ='#footer'  + num;
+    var topPos = $(floating).offset().top-55;// текущая позиция блока-f
     
-//     $(window).scroll(function() { 
-//     var top = $(document).scrollTop(), // число прокрутки
-//         pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
-//         height = $(floating).outerHeight(); // высота блока-f
-//     if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-//     else if (top > pip - height) {$(floating).removeClass('fixed-div');}
-//     else {$(floating).removeClass('fixed-div');}
-//     });
-//   });
+    $(window).scroll(function() { 
+    var top = $(document).scrollTop(), // число прокрутки
+        pip = $(footer).offset().top-55;  // текущая позиция нижнего блока
+        height = $(floating).outerHeight(); // высота блока-f
+    if (top > topPos && top < pip - height) {$(floating).addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+    else if (top > pip - height) {$(floating).removeClass('fixed-div');}
+    else {$(floating).removeClass('fixed-div');}
+    });
+  });
                       ///
 
  
