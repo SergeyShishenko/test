@@ -38,7 +38,7 @@
     <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
     <link href='css/uploadify.css' rel='stylesheet'>
     <link href='css/animate.min.css' rel='stylesheet'> 
-    <link href="css/style.css?v=2" rel="stylesheet" type="text/css" >  
+    <link href="css/style.css" rel="stylesheet" type="text/css" >  
     <link href="css/file-list.css" rel="stylesheet" type="text/css" > 
 
     <!-- jQuery -->
@@ -366,7 +366,7 @@ div.center, p.center, img.center {
 .file {
     width: 100px  !important;
 }
-#img-db{background-size: cover;width: 100px; height: 100px; position: relative; display:block;}
+
 </style>
 </head>
 

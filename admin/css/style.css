@@ -14,7 +14,9 @@
 	font-size: 2em;
 	font-weight: bold;
 	color: #AAA;
+	margin-bottom: 10px;
 }
+#img-db{background-size: cover;width: 100px; height: 100px; position: relative; display:block;}
 
 #drop-files p {
 	clear:none;
