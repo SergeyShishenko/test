@@ -755,7 +755,27 @@
 	}
 	
 	// // Функция удаления всех изображений
-	function restartFiles() {	
+	// function restartFiles() {	
+	// 	// Установим бар загрузки в значение по умолчанию
+	// 	$("[id*='loading-bar'] .loading-color").css({'width' : '0%'});
+	// 	$("[id*='loading-']").css({'display' : 'none'});
+	// 	$("[id*='loading-content']").html(' ');
+		
+	// 	// Удаляем все изображения на странице и скрываем кнопки
+	// 	$("[id*='upload-button']").hide();
+    //     $("[id*='dropped-files'] > .image").remove();
+    //     $("[id*='drop-files'] > .image").remove();
+    //     $("[id*='uploaded-holder']").hide();
+    //     $("[id*='drop-files'] p").show();        
+    //     $('.image-db').css('display','block');
+    //     document.getElementById("img-db").style.display = "block";	  
+	// 	// Очищаем массив
+	// 	dataArray.length = 0;
+		
+	// 	return false;
+    // }
+    // Функция удаления кнопок загрузки
+	function restartFiles2() {	
 		// Установим бар загрузки в значение по умолчанию
 		$("[id*='loading-bar'] .loading-color").css({'width' : '0%'});
 		$("[id*='loading-']").css({'display' : 'none'});
@@ -763,34 +783,36 @@
 		
 		// Удаляем все изображения на странице и скрываем кнопки
 		$("[id*='upload-button']").hide();
-        $("[id*='dropped-files'] > .image").remove();
-        $("[id*='drop-files'] > .image").remove();
-        $("[id*='uploaded-holder']").hide();
-        $("[id*='drop-files'] p").show();        
-        $('.image-db').css('display','block');
-        document.getElementById("img-db").style.display = "block";	  
+        // $("[id*='dropped-files'] > .image").remove();
+        // $("[id*='drop-files'] > .image").remove();
+        $("[id*='uploaded-holder']")
+        $("a[id^='drop']").hide();// ссылка удалить
+        dataArray[0].name
+        $("[id*='drop-files'] p").text(dataArray[0].name).show();        
+        // $('.image-db').css('display','block');
+        // document.getElementById("img-db").style.display = "block";	  
 		// Очищаем массив
 		dataArray.length = 0;
 		
 		return false;
 	}
 	
-	// // Удаление только выбранного изображения 
-	// $("#dropped-files").on("click","a[id^='drop']", function() {
-	// 	// получаем название id
- 	// 	var elid = $(this).attr('id');
-	// 	// создаем массив для разделенных строк
-	// 	// var temp = new Array();
-	// 	var temp = [];
-	// 	// делим строку id на 2 части
-	// 	temp = elid.split('-');
-	// 	// получаем значение после тире тоесть индекс изображения в массиве
-	// 	dataArray.splice(temp[1],1);
-	// 	// Удаляем старые эскизы
-	// 	$('#dropped-files > .image').remove();
-	// 	// Обновляем эскизи в соответсвии с обновленным массивом
-	// 	addImage(-1);		
-	// });
+	// Удаление только выбранного изображения 
+	$("#dropped-files").on("click","a[id^='drop']", function() {
+		// получаем название id
+ 		var elid = $(this).attr('id');
+		// создаем массив для разделенных строк
+		// var temp = new Array();
+		var temp = [];
+		// делим строку id на 2 части
+		temp = elid.split('-');
+		// получаем значение после тире тоесть индекс изображения в массиве
+		dataArray.splice(temp[1],1);
+		// Удаляем старые эскизы
+		$('#dropped-files > .image').remove();
+		// Обновляем эскизи в соответсвии с обновленным массивом
+		addImage(-1);		
+	});
 
     // Удаление только выбранного изображения 
    
@@ -847,7 +869,7 @@
 					$("[id*='loading-content']").html('Загрузка завершена!');
 					
 					// Вызываем функцию удаления всех изображений после задержки 1 секунда
-					setTimeout(restartFiles, 1000);
+					setTimeout(restartFiles2, 1000);
 				// если еще продолжается загрузка	
 				} else if(totalPercent*(x) < 100) {
 					// Какой файл загружается
@@ -856,7 +878,8 @@
 				
 				// Формируем в виде списка все загруженные изображения
 				// data формируется в upload.php
-				var dataSplit = data.split(':');
+                var dataSplit = data.split(':');
+                alert(dataSplit);
 				// if(dataSplit[1] == 'загружен успешно') {
 				// 	$('#uploaded-files').append('<li><a href="images/'+dataSplit[0]+'">'+fileName+'</a> загружен успешно</li>');
 								
