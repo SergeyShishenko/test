@@ -824,6 +824,44 @@ switch ($tbl) {
                             </div>
                         </div>
                     ';
+                    echo '   <div class="row">               
+                    <!-- Область для перетаскивания -->
+                    <div id="drop-files-pdf" ondragover="return false" title="Перетащите изображение сюда">
+                        <p>'.$row_obj_download["pdf_obj"].'</p>
+                        <!-- Область предпросмотра -->
+                        <div id="uploaded-holder-pdf"> 
+                            <div id="dropped-files-pdf">
+                                <!-- Кнопки загрузить и удалить, а также количество файлов -->
+                                <div id="upload-button-pdf">
+                                    <div class="pull-right">
+                                        <span>0 Файлов</span>
+                                        <a href="#" class="upload">Загрузить</a>
+                                        <!-- <a href="#" class="delete">Удалить</a>-->
+                                        <!-- Прогресс бар загрузки -->
+                                        <div id="loading-pdf">
+                                            <div id="loading-bar-pdf">
+                                                <div class="loading-color"></div>
+                                            </div>
+                                            <div id="loading-content-pdf"></div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                        <form id="frm">
+                            <input type="file" id="uploadbtn-pdf" multiple style="display: none;">			
+                        </form>
+                        <div id="pdf-db" class="image-db"  style="background:url('. substr($row_obj["path_pdf_obj"],1)."thumbs/".$row_obj["fname_pdf_obj"].');"></div>
+                    </div><!-- /drop-files -->               
+                    <!-- Список загруженных файлов -->
+                    <!--  <div id="file-name-holder">
+                        <ul id="uploaded-files">
+                            <h1>Загруженные файлы</h1>
+                        </ul>
+                    </div>-->
+                    
+                </div>
+            ';
 
 
                     echo '</div><!--class="noyri"-->';

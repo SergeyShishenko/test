@@ -621,7 +621,8 @@
 	var maxFiles = 1;
 	
 	// Оповещение по умолчанию
-	var errMessage = 0;
+    var errMessage = 0;
+    var errMessage2 = 0;
 	
 	// Кнопка выбора файлов
 	var defaultUploadBtn = $("[id*='uploadbtn']");
@@ -635,11 +636,16 @@
     // Метод при падении файла в зону загрузки
     
 	$("body").on('drop',"[id*='drop-files']", function(e) {	
+        
+        var clickedID = $(this).attr('id').split("-"); //Разбиваем строку (Split работает аналогично PHP explode)
+        var strID = clickedID[2]; //и получаем номер из массива
+        alert(strID);
 		// Передаем в files все полученные изображения
 		var files = e.dataTransfer.files;
 		// Проверяем на максимальное количество файлов
 		if (files.length <= maxFiles) {
-			// Передаем массив с файлами в функцию загрузки на предпросмотр
+            // Передаем массив с файлами в функцию загрузки на предпросмотр
+            
 			loadInView(files);
 		} else {
 			alert('Вы не можете загружать больше '+maxFiles+' изображений!'); 
@@ -692,6 +698,60 @@
 				else if(errMessage == 3) {
 					$("[id*='drop-files'] p").html("Хорошо! Продолжай в том же духе");
 					errMessage = 0;
+				}
+				return false;
+			}
+			
+			// Проверяем количество загружаемых элементов
+			if((dataArray.length+files.length) <= maxFiles) {
+				// показываем область с кнопками
+				$("[id*='upload-button']").css({'display' : 'block'});
+			} 
+			else { alert('Вы не можете загружать больше '+maxFiles+' изображений!'); return; }
+			
+			// Создаем новый экземпляра FileReader
+			var fileReader = new FileReader();
+				// Инициируем функцию FileReader
+				fileReader.onload = (function(file) {
+					
+					return function(e) {
+						// Помещаем URI изображения в массив
+						dataArray.push({name : file.name, value : this.result});
+						addImage((dataArray.length-1));
+					}; 
+						
+				})(files[index]);
+			// Производим чтение картинки по URI
+			fileReader.readAsDataURL(file);
+		});
+		return false;
+    }
+    // Функция загрузки PDF на предросмотр
+	function loadInViewPDF(files) {
+		// Показываем обасть предпросмотра
+		$("[id*='uploaded-holder']").show();
+		
+		// Для каждого файла
+		$.each(files, function(index, file) {
+            console.log(files[index].type);	
+			// Несколько оповещений при попытке загрузить не изображение
+			if (!files[index].type.match('PDF.*')) {
+				
+				if(errMessage2 == 0) {
+					$("[id*='drop-files'] p").html('Эй! только PDF!');
+					++errMessage2;
+				}
+				else if(errMessage2 == 1) {
+					$("[id*='drop-files'] p").html('Стоп! Загружаются только PDF!');
+					++errMessage2;
+				}
+				else if(errMessage2 == 2) {
+					$("[id*='drop-files'] p").html("Не умеешь читать? Только PDF!");
+					++errMessage2;
+				}
+				else if(errMessage2 == 3) {
+					$("[id*='drop-files'] p").html("Хорошо! Продолжай в том же духе");
+					errMessage2 = 0;
 				}
 				return false;
 			}
