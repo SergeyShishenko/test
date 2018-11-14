@@ -85,3 +85,70 @@ class SimpleImage {
    }
 }
 ?>
+
+<!-- Следующий участок кода загрузит изображение image.jpg, 
+изменить его ширину до 400 пикселей и высоту до 200 пикселей, 
+а затем сохранит как image1.jpg. -->
+
+   <!-- include('classSimpleImage.php');
+   $image = new SimpleImage();
+   $image->load('image.jpg');
+   $image->resize(400, 200);
+   $image->save('image1.jpg'); -->
+
+
+<!-- Если необходимо изменить размеры изображения, 
+основываясь только на ширине и при этом сохранить его пропорции, 
+то сценарий сам выберет необходимую высоту. 
+Для этого необходимо использовать метод resizeToWidth. -->
+
+   <!-- include('classSimpleImage.php');
+   $image = new SimpleImage();
+   $image->load('image.jpg');
+   $image->resizeToWidth(250);
+   $image->save('image1.jpg'); -->
+
+
+<!-- Возможно вы пожелаете изменить размер в процентном 
+соотношении от его оригинала. 
+Для этого существует метод scale, 
+в качестве параметра которому передаются проценты. -->
+
+   <!-- include('classSimpleImage.php');
+   $image = new SimpleImage();
+   $image->load('image.jpg');
+   $image->scale(50);
+   $image->save('image1.jpg'); -->
+
+
+<!-- У данного класса есть еще один очень полезный метод output, который позволяет выводить изображения прямо в браузер,
+ без предварительного сохранения. 
+ Данный метод может быть очень полезен при создании миниатюр. -->
+ 
+   <!-- header('Content-Type: image/jpeg');
+   include('classSimpleImage.php');
+   $image = new SimpleImage();
+   $image->load('image.jpg');
+   $image->resizeToWidth(150);
+   $image->output(); -->
+
+
+<!-- Автор данного класса Simon Jarvis, на своем сайте https://white-hat-web-design.co.uk
+предлагает следующий пример для 
+изменения размера изображения загруженного через форму. -->
+
+
+<!-- if (isset($_POST['submit']) ) {
+    include('classSimpleImage.php');
+    $image = new SimpleImage();
+    $image->load($_FILES['uploaded_image']['tmp_name']);
+    $image->resizeToWidth(150);
+    $image->output();
+}
+else {
+  $form = '<form action="upload.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="uploaded_image" />
+      <input type="submit" name="submit" value="Upload" />
+    </form>';
+  echo $form;
+} -->

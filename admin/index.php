@@ -742,7 +742,8 @@
 			$("[id*='upload-button'] span").html(dataArray.length+" файлов были выбраны");
 		}
         // Цикл для каждого элемента массива
-        $('#img-db').hide();
+        // $('#img-db').hide();
+        $("[id*='img-']").hide();
 		for (i = start; i < end; i++) {
 			// размещаем загруженные изображения
 			if($("[id*='dropped-files'] > .image").length <= maxFiles) { 
@@ -878,8 +879,8 @@
 				
 				// Формируем в виде списка все загруженные изображения
 				// data формируется в upload.php
-                var dataSplit = data.split(':');
-                alert(dataSplit);
+                // var dataSplit = data.split(':');
+                alert(data);
 				// if(dataSplit[1] == 'загружен успешно') {
 				// 	$('#uploaded-files').append('<li><a href="images/'+dataSplit[0]+'">'+fileName+'</a> загружен успешно</li>');
 								
