@@ -746,16 +746,17 @@
 		for (i = start; i < end; i++) {
 			// размещаем загруженные изображения
 			if($("[id*='dropped-files'] > .image").length <= maxFiles) { 
-				$("[id*='drop-files']").append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="javascript:void(0)" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
-                // $("[id*='drop-files']").append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"></div>'); 
+				// $('#drop-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px;"></div>'); 
+                $("[id*='drop-files']").append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="javascript:void(0)" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
                 $("[id*='drop-files'] p").hide();
 			}
 		}
 		return false;
 	}
 	
-	// // Функция удаления всех изображений
-	function restartFiles() {	
+	// Функция удаления всех изображений
+	function restartFiles() {
+	
 		// Установим бар загрузки в значение по умолчанию
 		$("[id*='loading-bar'] .loading-color").css({'width' : '0%'});
 		$("[id*='loading-']").css({'display' : 'none'});
@@ -766,9 +767,11 @@
         $("[id*='dropped-files'] > .image").remove();
         $("[id*='drop-files'] > .image").remove();
         $("[id*='uploaded-holder']").hide();
-        $("[id*='drop-files'] p").show();        
+        $("[id*='drop-files'] p").show();
+        // $('.image-db').show();
         $('.image-db').css('display','block');
-        document.getElementById("img-db").style.display = "block";	  
+        document.getElementById("img-db").style.display = "block";
+	    //  console.log('#img-db');
 		// Очищаем массив
 		dataArray.length = 0;
 		
@@ -810,15 +813,18 @@
         // $('.image-db').show();
         $('#img-db').css('display','block');
         $("[id*='upload-button']").hide();
-        $("[id*='uploaded-holder']").hide(); 
-        // console.log('#img-db!');
+		$("[id*='uploaded-holder']").hide();
+        // $('#drop-files').find('#img-db').css('display','block');
+        // document.getElementById("img-db").style.display = "block";
+        // alert();
+        console.log('#img-db!');
 		// Обновляем эскизи в соответсвии с обновленным массивом
 		// addImage(-1);		
 	});
 	
 	// Удалить все изображения кнопка 
     // $('#dropped-files #upload-button .delete').click(restartFiles);
-    // $("body").on("click","[id*='dropped-files'] [id*='upload-button'] .delete", restartFiles);
+    $("body").on("click","[id*='dropped-files'] [id*='upload-button'] .delete", restartFiles);
 
 
 	

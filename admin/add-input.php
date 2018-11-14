@@ -517,7 +517,7 @@ switch ($tbl) {
                                 <div class="pull-right">
                                     <span>0 Файлов</span>
                                     <a href="#" class="upload">Загрузить</a>
-                                    <a href="#" class="delete">Удалить</a>
+                                    <!-- <a href="#" class="delete">Удалить</a>-->
                                     <!-- Прогресс бар загрузки -->
                                     <div id="loading-img">
                                         <div id="loading-bar-img">
