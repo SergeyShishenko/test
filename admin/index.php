@@ -749,15 +749,14 @@
     }
 
 	// Процедура добавления эскизов на страницу
-	function addImage(ind) {
+    function addImage(ind)
+    {
         // alert('ind '+ind);
 
 		// Если индекс отрицательный значит выводим весь массив изображений
 		if (ind < 0 ) { 
 		start = 0; end = dataArray.length; 
-		} else {
-		// иначе только определенное изображение 
-		start = ind; end = ind+1; } 
+		} else {start = ind; end = ind+1; } // иначе только определенное изображение 
 		// Оповещения о загруженных файлах
 		if(dataArray.length == 0) {
 			// Если пустой массив скрываем кнопки и всю область
@@ -772,11 +771,18 @@
         // Цикл для каждого элемента массива
         $("#img-db-"+strID).hide();
         // $("[id*='img-']").hide();
-		for (i = start; i < end; i++) {
-			// размещаем загруженные изображения
+        for (i = start; i < end; i++)
+         {
+            // размещаем загруженные изображения
+            // alert("#dropped-files-"+strID+" > .image");
 			if($("#dropped-files-"+strID+" > .image").length <= maxFiles) { 
-                             // '<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="javascript:void(0)" id="drop-'+strID+'-'+i+'" class="drop-button">Удалить изображение</a></div>');    
-                $("#drop-files-"+strID).append('<div id="pdf-'+i+'" class="file">'+
+                switch (strID)
+                 {                                
+                            case "img":
+                            $("#drop-files-"+strID).append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="javascript:void(0)" id="drop-'+strID+'-'+i+'" class="drop-button">Удалить изображение</a></div>');    
+                            break;
+                            case "pdf":
+                            $("#drop-files-"+strID).append('<div id="pdf-'+i+'" class="file">'+
                                                     '<a class="file-link" href="#" title="file-name.pdf">'+
                                                         '<div class="file-thumbnail file-thumbnail-pdf"></div>'+
                                                         '<div class="file-info">'+
@@ -785,9 +791,13 @@
                                                         '</div>'+
                                                     '</a>'+
                                                     '<a href="javascript:void(0)" id="drop-'+strID+'-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
+                            break;
+                }
+              
+                
                 
                 // $("[id*='drop-files']").append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"></div>'); 
-                alert();
+                // alert();
                 $("#drop-files-"+strID+" p").hide();
 			}
 		}
@@ -875,7 +885,7 @@
         $("#uploaded-holder-"+strID).hide(); 
         // console.log('#img-db!');
 		// Обновляем эскизи в соответсвии с обновленным массивом
-		addImage(-1);		
+		// addImage(-1);		
 	});
 	
 	// Удалить все изображения кнопка 
