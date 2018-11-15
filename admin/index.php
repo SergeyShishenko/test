@@ -768,7 +768,7 @@
 		for (i = start; i < end; i++) {
 			// размещаем загруженные изображения
 			if($("#dropped-files-"+strID+" > .image").length <= maxFiles) { 
-				$("#drop-files-"+strID).append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="javascript:void(0)" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
+				$("#drop-files-"+strID).append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="javascript:void(0)" id="drop-'+strID+'-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
                 // $("[id*='drop-files']").append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"></div>'); 
                 $("#drop-files-"+strID+" p").hide();
 			}
@@ -799,18 +799,18 @@
     // Функция удаления кнопок загрузки
 	function restartFiles2() {	
 		// Установим бар загрузки в значение по умолчанию
-		$("[id*='loading-bar'] .loading-color").css({'width' : '0%'});
-		$("[id*='loading-']").css({'display' : 'none'});
-		$("[id*='loading-content']").html(' ');
+		$("#loading-bar-"+strID+" .loading-color").css({'width' : '0%'});
+		$("#loading-"+strID).css({'display' : 'none'});
+		$("#loading-content-"+strID).html(' ');
 		
 		// Удаляем все изображения на странице и скрываем кнопки
-		$("[id*='upload-button']").hide();
+		$("#upload-button-"+strID).hide();
         // $("[id*='dropped-files'] > .image").remove();
         // $("[id*='drop-files'] > .image").remove();
-        $("[id*='uploaded-holder']")
-        $("a[id^='drop']").hide();// ссылка удалить
+        $("#uploaded-holder-"+strID).hide();
+        $("a[id^='drop-"+strID+"]").hide();// ссылка удалить
         dataArray[0].name
-        $("[id*='drop-files'] p").text(dataArray[0].name).show();        
+        $("#drop-files-"+strID+" p").text(dataArray[0].name).show();        
         // $('.image-db').css('display','block');
         // document.getElementById("img-db").style.display = "block";	  
 		// Очищаем массив
