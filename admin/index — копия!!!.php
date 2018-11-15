@@ -625,7 +625,7 @@
     var errMessage2 = 0;
 	
 	// Кнопка выбора файлов
-	// var defaultUploadBtn = $("[id*='uploadbtn']");
+	var defaultUploadBtn = $("[id*='uploadbtn']");
 	
 	// Массив для всех изображений
     var dataArray = [];
@@ -649,7 +649,7 @@
             
 			loadInView(files);
 		} else {
-			alert('Вы не можете загружать больше '+maxFiles+' '+strID+'!'); 
+			alert('Вы не можете загружать больше '+maxFiles+' изображений!'); 
 			files.length = 0; return;
 		}
 	});
@@ -675,52 +675,38 @@
 	
 	// Функция загрузки изображений на предросмотр
 	function loadInView(files) {
-
-        var mime_type = 'image.*';
-        switch (strID) {                                
-                            case "pdf":
-                            mime_type = '.pdf';
-                                break;
-                            // case "category":
-                            //     $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
-                            //     break;
-                            // case "grupp":
-                            //     $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
-                            //     break;
-                            // case "head":
-                            //     $('#item_'+DbNumberID).fadeOut("slow");
-                            //     break;
-                                
-                        }
 		// Показываем обасть предпросмотра
-		$("#uploaded-holder-"+strID).show();
+		$("[id*='uploaded-holder']").show();
 		
 		// Для каждого файла
 		$.each(files, function(index, file) {
             console.log(files[index].type);	
 			// Несколько оповещений при попытке загрузить не изображение
-			if (!files[index].type.match(mime_type)) {
+			if (!files[index].type.match('image.*')) {
 				
 				if(errMessage == 0) {
-					$("#drop-files-"+strID+" p").html('Эй! только '+strID+'!');
+					$("[id*='drop-files'] p").html('Эй! только изображения!');
 					++errMessage;
 				}
 				else if(errMessage == 1) {
-					$("#drop-files-"+strID+" p").html('Стоп! Загружаются только '+strID+'!');
+					$("[id*='drop-files'] p").html('Стоп! Загружаются только изображения!');
 					++errMessage;
 				}
 				else if(errMessage == 2) {
-					$("#drop-files-"+strID+" p").html('Не умеешь читать? Только '+strID+'!');
+					$("[id*='drop-files'] p").html("Не умеешь читать? Только изображения!");
+					++errMessage;
+				}
+				else if(errMessage == 3) {
+					$("[id*='drop-files'] p").html("Хорошо! Продолжай в том же духе");
 					errMessage = 0;
 				}
-				
 				return false;
 			}
 			
 			// Проверяем количество загружаемых элементов
 			if((dataArray.length+files.length) <= maxFiles) {
 				// показываем область с кнопками
-				$("#upload-button-"+strID).css({'display' : 'block'});
+				$("[id*='upload-button']").css({'display' : 'block'});
 			} 
 			else { alert('Вы не можете загружать больше '+maxFiles+' изображений!'); return; }
 			
@@ -741,7 +727,61 @@
 		});
 		return false;
     }
-
+    // Функция загрузки PDF на предросмотр
+	function loadInViewPDF(files) {
+		// Показываем обасть предпросмотра
+		$("[id*='uploaded-holder']").show();
+		
+		// Для каждого файла
+		$.each(files, function(index, file) {
+            console.log(files[index].type);	
+			// Несколько оповещений при попытке загрузить не изображение
+			if (!files[index].type.match('PDF.*')) {
+				
+				if(errMessage2 == 0) {
+					$("[id*='drop-files'] p").html('Эй! только PDF!');
+					++errMessage2;
+				}
+				else if(errMessage2 == 1) {
+					$("[id*='drop-files'] p").html('Стоп! Загружаются только PDF!');
+					++errMessage2;
+				}
+				else if(errMessage2 == 2) {
+					$("[id*='drop-files'] p").html("Не умеешь читать? Только PDF!");
+					++errMessage2;
+				}
+				else if(errMessage2 == 3) {
+					$("[id*='drop-files'] p").html("Хорошо! Продолжай в том же духе");
+					errMessage2 = 0;
+				}
+				return false;
+			}
+			
+			// Проверяем количество загружаемых элементов
+			if((dataArray.length+files.length) <= maxFiles) {
+				// показываем область с кнопками
+				$("[id*='upload-button']").css({'display' : 'block'});
+			} 
+			else { alert('Вы не можете загружать больше '+maxFiles+' изображений!'); return; }
+			
+			// Создаем новый экземпляра FileReader
+			var fileReader = new FileReader();
+				// Инициируем функцию FileReader
+				fileReader.onload = (function(file) {
+					
+					return function(e) {
+						// Помещаем URI изображения в массив
+						dataArray.push({name : file.name, value : this.result});
+						addImage((dataArray.length-1));
+					}; 
+						
+				})(files[index]);
+			// Производим чтение картинки по URI
+			fileReader.readAsDataURL(file);
+		});
+		return false;
+	}
+		
 	// Процедура добавления эскизов на страницу
 	function addImage(ind) {
 
@@ -754,23 +794,23 @@
 		// Оповещения о загруженных файлах
 		if(dataArray.length == 0) {
 			// Если пустой массив скрываем кнопки и всю область
-			$("#upload-button-"+strID).hide();
-			$("#uploaded-holder-"+strID).hide();
+			$("[id*='upload-button']").hide();
+			$("[id*='uploaded-holder']").hide();
 		} else if (dataArray.length == 1) {
             // $('#upload-button span').html("Был выбран 1 файл: "+dataArray[start].name);
-            $("#upload-button-"+strID+" span").html(dataArray[start].name);
+            $("[id*='upload-button'] span").html(dataArray[start].name);
 		} else {
-			$("#upload-button-"+strID+" span").html(dataArray.length+" файлов были выбраны");
+			$("[id*='upload-button'] span").html(dataArray.length+" файлов были выбраны");
 		}
         // Цикл для каждого элемента массива
-        $("#img-db-"+strID).hide();
-        // $("[id*='img-']").hide();
+        // $('#img-db').hide();
+        $("[id*='img-']").hide();
 		for (i = start; i < end; i++) {
 			// размещаем загруженные изображения
-			if($("#dropped-files-"+strID+" > .image").length <= maxFiles) { 
-				$("#drop-files-"+strID).append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="javascript:void(0)" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
+			if($("[id*='dropped-files'] > .image").length <= maxFiles) { 
+				$("[id*='drop-files']").append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="javascript:void(0)" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
                 // $("[id*='drop-files']").append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"></div>'); 
-                $("#drop-files-"+strID+" p").hide();
+                $("[id*='drop-files'] p").hide();
 			}
 		}
 		return false;
