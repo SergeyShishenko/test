@@ -820,41 +820,41 @@
 	}
 	
 	// Удаление только выбранного изображения 
-	$("#dropped-files").on("click","a[id^='drop']", function() {
-		// получаем название id
- 		var elid = $(this).attr('id');
-		// создаем массив для разделенных строк
-		// var temp = new Array();
-		var temp = [];
-		// делим строку id на 2 части
-		temp = elid.split('-');
-		// получаем значение после тире тоесть индекс изображения в массиве
-		dataArray.splice(temp[1],1);
-		// Удаляем старые эскизы
-		$('#dropped-files > .image').remove();
-		// Обновляем эскизи в соответсвии с обновленным массивом
-		addImage(-1);		
-	});
+	// $("#dropped-files-"+strID).on("click","a[id^='drop-"+strID+"]", function() {
+	// 	// получаем название id
+ 	// 	var elid = $(this).attr('id');
+	// 	// создаем массив для разделенных строк
+	// 	// var temp = new Array();
+	// 	var temp = [];
+	// 	// делим строку id на 2 части
+	// 	temp = elid.split('-');
+	// 	// получаем значение после тире тоесть индекс изображения в массиве
+	// 	dataArray.splice(temp[2],2);
+	// 	// Удаляем старые эскизы
+	// 	$("#dropped-files-"+strID+" > .image").remove();
+	// 	// Обновляем эскизи в соответсвии с обновленным массивом
+	// 	// addImage(-1);		
+	// });
 
     // Удаление только выбранного изображения 
    
-	$("body").on("click","[id*='drop-files'] a[id^='drop']", function() {
+	$("body").on("click","#drop-files-"+strID+" a[id^='drop-"+strID+"']", function() {
 		// получаем название id
  		var elid = $(this).attr('id');
 		// создаем массив для разделенных строк
 		// var temp = new Array();
 		var temp = [];
-		// делим строку id на 2 части
+		// делим строку id на 3 части
 		temp = elid.split('-');
 		// получаем значение после тире тоесть индекс изображения в массиве
-		dataArray.splice(temp[1],1);
+		dataArray.splice(temp[2],2);
 		// Удаляем старые эскизы
-        $("[id*='drop-files'] > .image").remove();
-        $("[id*='drop-files'] p").show();
+        $("#drop-files-"+strID+" > .image").remove();
+        $("#drop-files-"+strID+" p").show();
         // $('.image-db').show();
-        $('#img-db').css('display','block');
-        $("[id*='upload-button']").hide();
-        $("[id*='uploaded-holder']").hide(); 
+        $('#img-db-'+strID).css('display','block');
+        $("#upload-button-"+strID).hide();
+        $("#uploaded-holder-"+strID).hide(); 
         // console.log('#img-db!');
 		// Обновляем эскизи в соответсвии с обновленным массивом
 		// addImage(-1);		
