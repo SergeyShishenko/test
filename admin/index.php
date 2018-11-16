@@ -630,17 +630,34 @@
 	// Массив для всех изображений
     var dataArray = [];
     // тип области
-	var strID ='img';
+	var strID ='';
 	// Область информер о загруженных изображениях - скрыта
 	// $('#uploaded-files').hide();
 	
     // Метод при падении файла в зону загрузки
     
-	$("body").on('drop',"[id*='drop-files']", function(e) {	
+	$("body").on('drop',"#drop-files-img", function(e) {	
         
         var clickedID = $(this).attr('id').split("-"); //Разбиваем строку (Split работает аналогично PHP explode)
         strID = clickedID[2]; //и получаем номер из массива
         // alert(strID);
+		// Передаем в files все полученные изображения
+		var files = e.dataTransfer.files;
+		// Проверяем на максимальное количество файлов
+		if (files.length <= maxFiles) {
+            // Передаем массив с файлами в функцию загрузки на предпросмотр
+            // alert(files[0].name);
+			loadInView(files);
+		} else {
+			alert('Вы не можете загружать больше '+maxFiles+' '+strID+'!'); 
+			files.length = 0; return;
+		}
+    });
+    $("body").on('drop',"#drop-files-pdf", function(e) {	
+        
+        var clickedID = $(this).attr('id').split("-"); //Разбиваем строку (Split работает аналогично PHP explode)
+        strID = clickedID[2]; //и получаем номер из массива
+        alert(strID);
 		// Передаем в files все полученные изображения
 		var files = e.dataTransfer.files;
 		// Проверяем на максимальное количество файлов
@@ -847,7 +864,7 @@
 		return false;
 	}
 	
-	// Удаление только выбранного изображения 
+	// // Удаление только выбранного изображения 
 	// $("#dropped-files-"+strID).on("click","a[id^='drop-"+strID+"]", function() {
 	// 	// получаем название id
  	// 	var elid = $(this).attr('id');
@@ -866,7 +883,7 @@
 
     // Удаление только выбранного изображения 
    
-	$("body").on("click","#drop-files-"+strID+" a[id^='drop-"+strID+"']", function() {
+	$("body").on("click","#drop-files-img a[id^='drop-img']", function() {
 		// получаем название id
  		var elid = $(this).attr('id');
 		// создаем массив для разделенных строк
@@ -880,9 +897,32 @@
         $("#drop-files-"+strID+" > .image").remove();
         $("#drop-files-"+strID+" p").show();
         // $('.image-db').show();
-        $('#img-db-'+strID).css('display','block');
+        $("#img-db-"+strID).css('display','block');
         $("#upload-button-"+strID).hide();
         $("#uploaded-holder-"+strID).hide(); 
+        // $("#img-db-"+strID).show();
+        // console.log('#img-db!');
+		// Обновляем эскизи в соответсвии с обновленным массивом
+		// addImage(-1);		
+    });
+    $("body").on("click","#drop-files-pdf a[id^='drop-pdf']", function() {
+		// получаем название id
+ 		var elid = $(this).attr('id');
+		// создаем массив для разделенных строк
+		// var temp = new Array();
+		var temp = [];
+		// делим строку id на 3 части
+		temp = elid.split('-');
+		// получаем значение после тире тоесть индекс изображения в массиве
+		dataArray.splice(temp[2],2);
+		// Удаляем старые эскизы
+        $("#drop-files-"+strID+" > .image").remove();
+        $("#drop-files-"+strID+" p").show();
+        // $('.image-db').show();
+        $("#img-db-"+strID).css('display','block');
+        $("#upload-button-"+strID).hide();
+        $("#uploaded-holder-"+strID).hide(); 
+        // $("#img-db-"+strID).show();
         // console.log('#img-db!');
 		// Обновляем эскизи в соответсвии с обновленным массивом
 		// addImage(-1);		
@@ -895,14 +935,15 @@
 
 	
     // Загрузка изображений на сервер
-	$("body").on("click","#uploaded-holder-"+strID+" .upload",function() {		
+	$("body").on("click","#uploaded-holder-img .upload",function() {	
+        alert("#uploaded-holder-img .upload");	
 		// Показываем прогресс бар
-		$("#loading-"+strID).show();
+		$("#loading-img").show();
 		// переменные для работы прогресс бара
 		var totalPercent = 100 / dataArray.length;
 		var x = 0;
 		
-		$("#loading-content-"+strID).html('Загружен '+dataArray[0].name);
+		$("#loading-content-img").html('Загружен '+dataArray[0].name);
 		// Для каждого файла
 		$.each(dataArray, function(index, file) {	
 			// загружаем страницу и передаем значения, используя HTTP POST запрос 
@@ -912,18 +953,69 @@
 				++x;
 				
 				// Изменение бара загрузки
-				$("#loading-bar-"+strID+" .loading-color").css({'width' : totalPercent*(x)+'%'});
+				$("#loading-bar-img .loading-color").css({'width' : totalPercent*(x)+'%'});
 				// Если загрузка закончилась
 				if(totalPercent*(x) == 100) {
 					// Загрузка завершена
-					$("#loading-content-"+strID).html('Загрузка завершена!');
+					$("#loading-content-img").html('Загрузка завершена!');
 					
 					// Вызываем функцию удаления всех изображений после задержки 1 секунда
 					setTimeout(restartFiles2, 1000);
 				// если еще продолжается загрузка	
 				} else if(totalPercent*(x) < 100) {
 					// Какой файл загружается
-					$("#loading-content-"+strID).html('Загружается '+fileName);
+					$("#loading-content-img").html('Загружается '+fileName);
+				}
+				
+				// Формируем в виде списка все загруженные изображения
+				// data формируется в upload.php
+                // var dataSplit = data.split(':');
+                alert(data);
+				// if(dataSplit[1] == 'загружен успешно') {
+				// 	$('#uploaded-files').append('<li><a href="images/'+dataSplit[0]+'">'+fileName+'</a> загружен успешно</li>');
+								
+				// } else {
+				// 	$('#uploaded-files').append('<li><a href="images/'+data+'. Имя файла: '+dataArray[index].name+'</li>');
+				// }
+				
+			});
+		});
+		// Показываем список загруженных файлов
+		// $('#uploaded-files').show();
+		return false;
+    });
+    
+    // Загрузка PDF на сервер
+	$("body").on("click","#uploaded-holder-pdf .upload",function() {	
+        alert("#uploaded-holder-pdf .upload");	
+		// Показываем прогресс бар
+		$("#loading-pdf").show();
+		// переменные для работы прогресс бара
+		var totalPercent = 100 / dataArray.length;
+		var x = 0;
+		
+		$("#loading-content-pdf").html('Загружен '+dataArray[0].name);
+		// Для каждого файла
+		$.each(dataArray, function(index, file) {	
+			// загружаем страницу и передаем значения, используя HTTP POST запрос 
+			$.post('upload.php', dataArray[index], function(data) {
+			
+				var fileName = dataArray[index].name;
+				++x;
+				
+				// Изменение бара загрузки
+				$("#loading-bar-pdf .loading-color").css({'width' : totalPercent*(x)+'%'});
+				// Если загрузка закончилась
+				if(totalPercent*(x) == 100) {
+					// Загрузка завершена
+					$("#loading-content-pdf").html('Загрузка завершена!');
+					
+					// Вызываем функцию удаления всех изображений после задержки 1 секунда
+					setTimeout(restartFiles2, 1000);
+				// если еще продолжается загрузка	
+				} else if(totalPercent*(x) < 100) {
+					// Какой файл загружается
+					$("#loading-content-pdf").html('Загружается '+fileName);
 				}
 				
 				// Формируем в виде списка все загруженные изображения
@@ -946,17 +1038,36 @@
 	
     // Простые стили для области перетаскивания
     // $("body").on( "click"," .btn-minimize.btn-round",
-	$("body").on('dragenter',"#drop-files-"+strID, function() {
+	$("body").on('dragenter',"#drop-files-img", function() {
 		
 		$(this).css({'box-shadow' : 'inset 0px 0px 20px rgba(0, 0, 0, 0.1)', 'border' : '4px dashed #bb2b2b'});
 		return false;
-	});
+    });
+    
+
 	
-	$("body").on('drop',"#drop-files-"+strID, function() {
+	$("body").on('drop',"#drop-files-img", function() {
 		
 		$(this).css({'box-shadow' : 'none', 'border' : '4px dashed rgba(0,0,0,0.2)'});
 		return false;
-	});
+    });
+    $("body").on('dragenter',"#drop-files-pdf", function() {
+		
+		$(this).css({'box-shadow' : 'inset 0px 0px 20px rgba(0, 0, 0, 0.1)', 'border' : '4px dashed #bb2b2b'});
+		return false;
+    });
+    
+
+	
+	$("body").on('drop',"#drop-files-pdf", function() {
+		
+		$(this).css({'box-shadow' : 'none', 'border' : '4px dashed rgba(0,0,0,0.2)'});
+		return false;
+    });
+    
+    
+
+
 
 	$("button[name='del1']").click(function() {
 		// alert('Удаление!');

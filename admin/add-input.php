@@ -529,10 +529,10 @@ switch ($tbl) {
                             </div>  
                         </div>
                     </div>
-                    <form id="frm">
+                    <form id="frm1">
                         <input type="file" id="uploadbtn-img" multiple style="display: none;">			
                     </form>
-                    <div id="img-db-img" class="image"  style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].');"></div>
+                    <div id="img-db-img" class="image-db-img"  style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].');"></div>
                 </div><!-- /drop-files -->               
                 <!-- Список загруженных файлов -->
                 <!--  <div id="file-name-holder">
@@ -851,7 +851,8 @@ switch ($tbl) {
                         <form id="frm2">
                             <input type="file" id="uploadbtn-pdf" multiple style="display: none;">			
                         </form>
-                        <div id="img-db-pdf" class="image"  style="background:url('. substr($row_obj["path_pdf_obj"],1)."thumbs/".$row_obj["fname_pdf_obj"].');"></div>
+                        <!-- <div id="img-db-pdf" class="image"  style="background:url('. substr($row_obj["path_pdf_obj"],1)."thumbs/".$row_obj["fname_pdf_obj"].');"></div> --> 
+                        
                     </div><!-- /drop-files -->               
                     <!-- Список загруженных файлов -->
                     <!--  <div id="file-name-holder">

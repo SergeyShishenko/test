@@ -892,7 +892,8 @@
         $("[id*='drop-files'] > .image").remove();
         $("[id*='drop-files'] p").show();
         // $('.image-db').show();
-        $('#img-db').css('display','block');
+        $("div[id*='img-']").show();
+        // $('#img-db-').css('display','block');
         $("[id*='upload-button']").hide();
         $("[id*='uploaded-holder']").hide(); 
         // console.log('#img-db!');
