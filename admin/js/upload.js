@@ -35,26 +35,11 @@ var $ = jQuery.noConflict();
 			files.length = 0; return;
 		}
 	});
+
 	
-	// // При нажатии на кнопку выбора файлов
-	// defaultUploadBtn.on('change', function() {
-   	// 	// Заполняем массив выбранными изображениями
-   	// 	var files = $(this)[0].files;
-   	// 	// Проверяем на максимальное количество файлов
-	// 	if (files.length <= maxFiles ) {
-	// 		// Передаем массив с файлами в функцию загрузки на предпросмотр
-	// 		loadInView(files);
-	// 		// Очищаем инпут файл путем сброса формы
-    //         $('#frm').each(function(){
-	//         	    this.reset();
-	// 		});
-	// 	} else {
-	// 		alert('Вы не можете загружать больше 1 файла PDF,DOC,XLS !'); 
-	// 		files.length = 0;
-	// 	}
-	// });
-	var tmime="";
+	var ext="";
 // var background="";	
+
 	// Функция загрузки изображений на предросмотр
 	function loadInView(files) {
 		// Показываем обасть предпросмотра
@@ -62,71 +47,45 @@ var $ = jQuery.noConflict();
 		
 		// Для каждого файла
 		
-		$.each(files, function(index, file) {
-		 tmime="";
+		$.each(files, function(index, file) { 
 
-			// $('input[type=file]').live('change',function(){
-				var ext=files[index].type;
-				// alert(ext);
-				if (ext.match('image.*')) {
-                    if(ext.match('dwg.*')) {						
-                        tmime="dwg";	                       
-                   }else{tmime="img";}
-				}else if(ext.match('pdf.*')) {
+		var tmime="";		
+				if (files[index].type.match('image.*')) {
+                    if(files[index].type.match('dwg.*')) {						
+						tmime="dwg";
+						console.log(tmime);	                       
+					   }else{tmime="img";
+					   console.log(tmime);	
+					}
+				}else if(files[index].type.match('pdf.*')) {
 					// alert("PDF"); 
-					tmime="pdf";									
+					tmime="pdf";
+					console.log(tmime);									
 					 
-				}else if(ext.match('word.*')) {
+				}else if(files[index].type.match('word.*')) {
 					// alert("word");
 					tmime="word";
-					// countDOCFiles++;
-				}else if(ext.match('dwg.*')) {
+					console.log(tmime);
+					// countDOCFiles++;				
+				}else if((files[index].type.match('sheet.*')) || (files[index].type.match('excel.*'))) {
 					// alert("excel");
-					 tmime="dwg";					 
-					//  countFiles++;
-				}else if((ext.match('sheet.*')) || (ext.match('excel.*'))) {
-					// alert("excel");
-					 tmime="excel";					 
-					//  countFiles++;
+					 tmime="excel";	
+					 console.log(tmime);				 
+					
 				}
 
-				// || countPDFFiles==1 || countDOCFiles==1 || countXLSFiles==1
-				
-			// });
-						
-			// // Несколько оповещений при попытке загрузить не изображение
-			// if (!files[index].type.match('image.*')) {
-				
-			// 	if(errMessage == 0) {
-			// 		$('#drop-files p').html('Эй! только изображения!');
-			// 		++errMessage
-			// 	}
-			// 	else if(errMessage == 1) {
-			// 		$('#drop-files p').html('Стоп! Загружаются только изображения!');
-			// 		++errMessage
-			// 	}
-			// 	else if(errMessage == 2) {
-			// 		$('#drop-files p').html("Не умеешь читать? Только изображения!");
-			// 		++errMessage
-			// 	}
-			// 	else if(errMessage == 3) {
-			// 		$('#drop-files p').html("Хорошо! Продолжай в том же духе");
-			// 		errMessage = 0;
-			// 	}
-			// 	return false;
-			// }			
-			
-			// Проверяем количество загружаемых элементов
-			if((dataArray.length+files.length) <= maxFiles) {
-				// показываем область с кнопками
 				$('#upload-button').css({'display' : 'block'});
-			} 
-			else { alert('Вы не можете загружать больше '+maxFiles+' изображений!'); return; }
-			
-			// Создаем новый экземпляра FileReader
-			var fileReader = new FileReader();
+				// Проверяем количество загружаемых элементов
+				// if((dataArray.length+files.length) <= maxFiles) {
+				// 	// показываем область с кнопками
+				// 	$('#upload-button').css({'display' : 'block'});
+				// } 
+				// else { alert('Вы не можете загружать больше '+maxFiles+' изображений!'); return; }
+				
+				// Создаем новый экземпляра FileReader
+				var fileReader = new FileReader();
                 // Инициируем функцию FileReader
-                // alert('!!!');
+               
 				fileReader.onload = (function(file) {
 					
 					return function(e) {
@@ -148,15 +107,11 @@ var $ = jQuery.noConflict();
 								background='typeDWG.png';
 								break;
 						}
+						// alert(tmime);
 
-
-						
-						// if (mime=="img"){
-						// 	background=this.result;
-						// }else{}
-						// alert(file.name);
-						dataArray.push({name : file.name, value : this.result, bground :background});
+						dataArray.push({name : file.name, value : this.result, bground : background, type : tmime});
 						addImage((dataArray.length-1));
+						// tmime="";
 					}; 
 						
 				})(files[index]);
@@ -254,7 +209,8 @@ var $ = jQuery.noConflict();
 			
 				var fileName = dataArray[index].name;
 				++x;
-				alert(data);
+				// alert(data);
+				console.log(data);
 				// Изменение бара загрузки
 				$('#loading-bar .loading-color').css({'width' : totalPercent*(x)+'%'});
 				// Если загрузка закончилась

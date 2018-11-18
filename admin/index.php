@@ -334,23 +334,23 @@
                         //     }
                         // console.log('ID '+$('span[id="form-id"]').data('val'));
                         var sdata=$.trim($('span[id="form-id"]').data('val'));
-                        console.log(sdata);
+                        // console.log(sdata);
                         
                         var productList = $('span[id="name_'+sdata+'"]').parent().parent().parent();
 
-                        console.log('productList: ', productList);
+                        // console.log('productList: ', productList);
                         for (i = 0; i < productList.length; i++) {
                             console.log('product: ', productList[i]);
                         }                         
                         
                         // $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
-                        console.log('span[id="name_'+sdata+'"]');
-                        console.log($('span[id="name_'+sdata+'"]').text());
+                        // console.log('span[id="name_'+sdata+'"]');
+                        // console.log($('span[id="name_'+sdata+'"]').text());
                         var clickedID = $('input[id="id"]').val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
                         var DbNumberID = clickedID[1]; //и получаем номер из массива
                         var tbl = $('input[id="tbl"]').val();                        
                         var fieldid = $('input[id="fieldid"]').val(); 
-                        console.log('tbl-'+tbl);
+                        // console.log('tbl-'+tbl);
 
                         $('#item_'+DbNumberID).fadeOut("slow");
                         $('#myModal').modal('hide');  
@@ -414,13 +414,13 @@
                     // console.log("over obj img");
                     $('img', this).fadeToggle(1000);
                     $(this).find('.gallery-controls').remove();
-                    console.log($('img', this).data('parent'));
+                    // console.log($('img', this).data('parent'));
                     var parent = $('img', this).data('parent');             
                     var id = $('img', this).data('id'); 
                     var content = $('img', this).data('content');
                     var name = $('img', this).data('name');
                     var htmlid = $('img', this).data('htmlid'); 
-                    console.log($('img', this).data('htmlid'));                  
+                    // console.log($('img', this).data('htmlid'));                  
                     $(this).append('<div class="well gallery-controls">'+
                                         '<p>' +
                                             '<a href="#"'+
