@@ -503,46 +503,44 @@ switch ($tbl) {
         //         </div>
         //     </div>
         //     </div>
-        // ';
+        // ';<p>'.$row_obj["fname_img_obj"].'</p>
 
-        echo '   <div class="row">               
-                <!-- Область для перетаскивания -->
-                <div id="drop-files-img" ondragover="return false" title="Перетащите изображение сюда">
-                    <p>'.$row_obj["fname_img_obj"].'</p>
+        echo '  <div class="row">               
+                    <div id="drop-files" ondragover="return false">
+                        <p>Перетащите изображение сюда</p>
+                        <form >
+                            <input type="file" id="uploadbtn" multiple style="display: none;" >
+                        </form>
+                    </div>
                     <!-- Область предпросмотра -->
-                    <div id="uploaded-holder-img"> 
-                        <div id="dropped-files-img">
+                    <div id="uploaded-holder"> 
+                        <div id="dropped-files">
                             <!-- Кнопки загрузить и удалить, а также количество файлов -->
-                            <div id="upload-button-img">
-                                <div class="pull-right">
+                            <div id="upload-button">
+                                <div class="center">
                                     <span>0 Файлов</span>
                                     <a href="#" class="upload">Загрузить</a>
-                                    <!-- <a href="#" class="delete">Удалить</a>-->
+                                    <a href="#" class="delete">Удалить</a>
                                     <!-- Прогресс бар загрузки -->
-                                    <div id="loading-img">
-                                        <div id="loading-bar-img">
+                                    <div id="loading">
+                                        <div id="loading-bar">
                                             <div class="loading-color"></div>
                                         </div>
-                                        <div id="loading-content-img"></div>
+                                        <div id="loading-content"></div>
                                     </div>
                                 </div>
                             </div>  
                         </div>
                     </div>
-                    <form id="frm1">
-                        <input type="file" id="uploadbtn-img" multiple style="display: none;">			
-                    </form>
-                    <div id="img-db-img" class="image-db-img"  style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].');"></div>
-                </div><!-- /drop-files -->               
-                <!-- Список загруженных файлов -->
-                <!--  <div id="file-name-holder">
-                    <ul id="uploaded-files">
-                        <h1>Загруженные файлы</h1>
-                    </ul>
-                </div>-->
+                    <!-- Список загруженных файлов -->
+                    <!--   <div id="file-name-holder">
+                        <ul id="uploaded-files">
+                            <h1>Загруженные файлы</h1>
+                        </ul>
+                    </div>-->
                 
-            </div>
-        ';
+                </div>
+            ';
         // echo '<div class="row">
         //     <div class="input-group col-md-12">
         //         <div class="input-group ">                       
@@ -824,46 +822,7 @@ switch ($tbl) {
                             </div>
                         </div>
                     ';
-                    echo '   <div class="row">               
-                    <!-- Область для перетаскивания -->
-                    <div id="drop-files-pdf" ondragover="return false" title="Перетащите изображение сюда">
-                        <p>'.$row_obj_download["pdf_obj"].'</p>
-                        <!-- Область предпросмотра -->
-                        <div id="uploaded-holder-pdf"> 
-                            <div id="dropped-files-pdf">
-                                <!-- Кнопки загрузить и удалить, а также количество файлов -->
-                                <div id="upload-button-pdf">
-                                    <div class="pull-right">
-                                        <span>0 Файлов</span>
-                                        <a href="#" class="upload">Загрузить</a>
-                                        <!-- <a href="#" class="delete">Удалить</a>-->
-                                        <!-- Прогресс бар загрузки -->
-                                        <div id="loading-pdf">
-                                            <div id="loading-bar-pdf">
-                                                <div class="loading-color"></div>
-                                            </div>
-                                            <div id="loading-content-pdf"></div>
-                                        </div>
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>
-                        <form id="frm2">
-                            <input type="file" id="uploadbtn-pdf" multiple style="display: none;">			
-                        </form>
-                        <!-- <div id="img-db-pdf" class="image"  style="background:url('. substr($row_obj["path_pdf_obj"],1)."thumbs/".$row_obj["fname_pdf_obj"].');"></div> --> 
-                        
-                    </div><!-- /drop-files -->               
-                    <!-- Список загруженных файлов -->
-                    <!--  <div id="file-name-holder">
-                        <ul id="uploaded-files">
-                            <h1>Загруженные файлы</h1>
-                        </ul>
-                    </div>-->
-                    
-                </div>
-            ';
-
+               
 
                     echo '</div><!--class="noyri"-->';
                     echo '<div class="yri">';

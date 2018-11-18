@@ -79,6 +79,7 @@
 <!-- external javascript -->
 
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/upload.js"></script>
 
 <!-- library for cookie management -->
 <!-- <script src="js/jquery.cookie.js"></script> -->

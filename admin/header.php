@@ -330,7 +330,7 @@ button.button31.btn-warning:focus:after > i, button.button31.btn-warning:focus:b
 
 /* размеры модального окна */
 .modal-dialog{
-    /* width:80% !important; */
+    width:80% !important;
     height:100% !important;
  }
 

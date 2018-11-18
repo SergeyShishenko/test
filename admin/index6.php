@@ -259,7 +259,7 @@
 
 </article>
 <script>
-    // var $ = jQuery.noConflict();
+    var $ = jQuery.noConflict();
    $(document).ready(function() {
             // Добавляем НОВЫЙ РАЗДЕЛ, когда произошел клик по кнопке
                 $("#FormSubmit").click(function (e) {
@@ -613,7 +613,475 @@
 
 // $('#item_3  a.btn-minimize').trigger('click');// генерация клика
 
+// drag and drop
+	// В dataTransfer помещаются изображения которые перетащили в область div
+	jQuery.event.props.push('dataTransfer');
+	
+	// Максимальное количество загружаемых изображений за одни раз
+	var maxFiles = 1;
+	
+	// Оповещение по умолчанию
+    var errMessage = 0;
+    var errMessage2 = 0;
+	
+	// Кнопка выбора файлов
+	// var defaultUploadBtn = $("[id*='uploadbtn']");
+	
+	// Массив для всех изображений
+    var dataArray = [];
+    // тип области
+	var strID ='';
+	// Область информер о загруженных изображениях - скрыта
+	// $('#uploaded-files').hide();
+	
+    // Метод при падении файла в зону загрузки
+    
+	$("body").on('drop',"#drop-files-img", function(e) {	
+        
+        var clickedID = $(this).attr('id').split("-"); //Разбиваем строку (Split работает аналогично PHP explode)
+        strID = clickedID[2]; //и получаем номер из массива
+        // alert(strID);
+		// Передаем в files все полученные изображения
+		var files = e.dataTransfer.files;
+		// Проверяем на максимальное количество файлов
+		if (files.length <= maxFiles) {
+            // Передаем массив с файлами в функцию загрузки на предпросмотр
+            // alert(files[0].name);
+			loadInView(files);
+		} else {
+			alert('Вы не можете загружать больше '+maxFiles+' '+strID+'!'); 
+			files.length = 0; return;
+		}
+    });
+    $("body").on('drop',"#drop-files-pdf", function(e) {	
+        
+        var clickedID = $(this).attr('id').split("-"); //Разбиваем строку (Split работает аналогично PHP explode)
+        strID = clickedID[2]; //и получаем номер из массива
+        alert(strID);
+		// Передаем в files все полученные изображения
+		var files = e.dataTransfer.files;
+		// Проверяем на максимальное количество файлов
+		if (files.length <= maxFiles) {
+            // Передаем массив с файлами в функцию загрузки на предпросмотр
+            // alert(files[0].name);
+			loadInView(files);
+		} else {
+			alert('Вы не можете загружать больше '+maxFiles+' '+strID+'!'); 
+			files.length = 0; return;
+		}
+	});
+	
+    // При нажатии на кнопку выбора файлов    
+    // // $("body").on('change',defaultUploadBtn, function() //{"[id*='uploadbtn']"'#uploadbtn'
+    //     $("body").on('change',"[id*='uploadbtn']", function() {
+   	// 	// Заполняем массив выбранными изображениями
+   	// 	var files = $(this)[0].files;
+   	// 	// Проверяем на максимальное количество файлов
+	// 	if (files.length <= maxFiles) {
+	// 		// Передаем массив с файлами в функцию загрузки на предпросмотр
+	// 		loadInView(files);
+	// 		// Очищаем инпут файл путем сброса формы
+    //         $('#frm').each(function(){
+	//         	    this.reset();
+	// 		});
+	// 	} else {
+	// 		alert('Вы не можете загружать больше '+maxFiles+' изображений!'); 
+	// 		files.length = 0;
+	// 	}
+	// });
+	
+	// Функция загрузки изображений на предросмотр
+	function loadInView(files) {
 
+        var mime_type = 'image.*';
+        var mime = 'img';
+        switch (strID) {                                
+                            case "pdf":
+                            mime_type = '.pdf';
+                            mime = 'pdf';
+                                break;
+                            // case "category":
+                            //     $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+                            //     break;
+                            // case "grupp":
+                            //     $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+                            //     break;
+                            // case "head":
+                            //     $('#item_'+DbNumberID).fadeOut("slow");
+                            //     break;
+                                
+                        }
+                        // alert(mime_type);
+		// Показываем обасть предпросмотра
+		$("#uploaded-holder-"+strID).show();
+		
+		// Для каждого файла
+		$.each(files, function(index, file) {
+            console.log(files[index].type);	
+            console.log(files[index].name);
+			// Несколько оповещений при попытке загрузить не изображение
+			if (!files[index].type.match(mime_type)) {
+				
+				if(errMessage == 0) {
+					$("#drop-files-"+strID+" p").html('Эй! только '+strID+'!');
+					++errMessage;
+				}
+				else if(errMessage == 1) {
+					$("#drop-files-"+strID+" p").html('Стоп! Загружаются только '+strID+'!');
+					++errMessage;
+				}
+				else if(errMessage == 2) {
+					$("#drop-files-"+strID+" p").html('Не умеешь читать? Только '+strID+'!');
+					errMessage = 0;
+				}
+				
+				return false;
+			}
+			
+			// Проверяем количество загружаемых элементов
+			if((dataArray.length+files.length) <= maxFiles) {
+				// показываем область с кнопками
+				$("#upload-button-"+strID).css({'display' : 'block'});
+			} 
+			else { alert('Вы не можете загружать больше '+maxFiles+' изображений!'); return; }
+			
+			// Создаем новый экземпляра FileReader
+			var fileReader = new FileReader();
+				// Инициируем функцию FileReader
+				fileReader.onload = (function(file) {
+					
+					return function(e) {
+						// Помещаем URI изображения в массив
+                        dataArray.push({name : file.name, value : this.result, mimeType : mime});
+                        
+						addImage((dataArray.length-1));
+					}; 
+						
+                })(files[index]);
+                
+			// Производим чтение картинки по URI
+			fileReader.readAsDataURL(file);
+		});
+		return false;
+    }
+
+	// Процедура добавления эскизов на страницу
+    function addImage(ind)
+    {
+        // alert('ind '+ind);
+
+		// Если индекс отрицательный значит выводим весь массив изображений
+		if (ind < 0 ) { 
+		start = 0; end = dataArray.length; 
+		} else {start = ind; end = ind+1; } // иначе только определенное изображение 
+		// Оповещения о загруженных файлах
+		if(dataArray.length == 0) {
+			// Если пустой массив скрываем кнопки и всю область
+			$("#upload-button-"+strID).hide();
+			$("#uploaded-holder-"+strID).hide();
+		} else if (dataArray.length == 1) {
+            // $('#upload-button span').html("Был выбран 1 файл: "+dataArray[start].name);
+            $("#upload-button-"+strID+" span").html(dataArray[start].name);
+		} else {
+			$("#upload-button-"+strID+" span").html(dataArray.length+" файлов были выбраны");
+		}
+        // Цикл для каждого элемента массива
+        $("#img-db-"+strID).hide();
+        // $("[id*='img-']").hide();
+        for (i = start; i < end; i++)
+         {
+            // размещаем загруженные изображения
+            // alert("#dropped-files-"+strID+" > .image");
+			if($("#dropped-files-"+strID+" > .image").length <= maxFiles) { 
+                switch (strID)
+                 {                                
+                            case "img":
+                            $("#drop-files-"+strID).append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"> <a href="javascript:void(0)" id="drop-'+strID+'-'+i+'" class="drop-button">Удалить изображение</a></div>');    
+                            break;
+                            case "pdf":
+                            $("#drop-files-"+strID).append('<div id="pdf-'+i+'" class="file">'+
+                                                    '<a class="file-link" href="#" title="file-name.pdf">'+
+                                                        '<div class="file-thumbnail file-thumbnail-pdf"></div>'+
+                                                        '<div class="file-info">'+
+                                                            '<span class="file-ext">pdf</span>'+
+                                                            '<span class="file-name">file-name.</span>'+
+                                                        '</div>'+
+                                                    '</a>'+
+                                                    '<a href="javascript:void(0)" id="drop-'+strID+'-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
+                            break;
+                }
+              
+                
+                
+                // $("[id*='drop-files']").append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].value+'); background-size: cover;width: 100px; height: 100px; position: relative;"></div>'); 
+                // alert();
+                $("#drop-files-"+strID+" p").hide();
+			}
+		}
+		return false;
+	}
+	
+	// // Функция удаления всех изображений
+	// function restartFiles() {	
+	// 	// Установим бар загрузки в значение по умолчанию
+	// 	$("[id*='loading-bar'] .loading-color").css({'width' : '0%'});
+	// 	$("[id*='loading-']").css({'display' : 'none'});
+	// 	$("[id*='loading-content']").html(' ');
+		
+	// 	// Удаляем все изображения на странице и скрываем кнопки
+	// 	$("[id*='upload-button']").hide();
+    //     $("[id*='dropped-files'] > .image").remove();
+    //     $("[id*='drop-files'] > .image").remove();
+    //     $("[id*='uploaded-holder']").hide();
+    //     $("[id*='drop-files'] p").show();        
+    //     $('.image-db').css('display','block');
+    //     document.getElementById("img-db").style.display = "block";	  
+	// 	// Очищаем массив
+	// 	dataArray.length = 0;
+		
+	// 	return false;
+    // }
+    // Функция удаления кнопок загрузки
+	function restartFiles2() {	
+		// Установим бар загрузки в значение по умолчанию
+		$("#loading-bar-"+strID+" .loading-color").css({'width' : '0%'});
+		$("#loading-"+strID).css({'display' : 'none'});
+		$("#loading-content-"+strID).html(' ');
+		
+		// Удаляем все изображения на странице и скрываем кнопки
+		$("#upload-button-"+strID).hide();
+        // $("[id*='dropped-files'] > .image").remove();
+        // $("[id*='drop-files'] > .image").remove();
+        $("#uploaded-holder-"+strID).hide();
+        $("a[id^='drop-"+strID+"']").hide();// ссылка удалить
+        dataArray[0].name
+        $("#drop-files-"+strID+" p").text(dataArray[0].name).show();        
+        // $('.image-db').css('display','block');
+        // document.getElementById("img-db").style.display = "block";	  
+		// Очищаем массив
+		dataArray.length = 0;
+		
+		return false;
+	}
+	
+	// // Удаление только выбранного изображения 
+	// $("#dropped-files-"+strID).on("click","a[id^='drop-"+strID+"]", function() {
+	// 	// получаем название id
+ 	// 	var elid = $(this).attr('id');
+	// 	// создаем массив для разделенных строк
+	// 	// var temp = new Array();
+	// 	var temp = [];
+	// 	// делим строку id на 2 части
+	// 	temp = elid.split('-');
+	// 	// получаем значение после тире тоесть индекс изображения в массиве
+	// 	dataArray.splice(temp[2],2);
+	// 	// Удаляем старые эскизы
+	// 	$("#dropped-files-"+strID+" > .image").remove();
+	// 	// Обновляем эскизи в соответсвии с обновленным массивом
+	// 	// addImage(-1);		
+	// });
+
+    // Удаление только выбранного изображения 
+   
+	$("body").on("click","#drop-files-img a[id^='drop-img']", function() {
+		// получаем название id
+ 		var elid = $(this).attr('id');
+		// создаем массив для разделенных строк
+		// var temp = new Array();
+		var temp = [];
+		// делим строку id на 3 части
+		temp = elid.split('-');
+		// получаем значение после тире тоесть индекс изображения в массиве
+		dataArray.splice(temp[2],2);
+		// Удаляем старые эскизы
+        $("#drop-files-"+strID+" > .image").remove();
+        $("#drop-files-"+strID+" p").show();
+        // $('.image-db').show();
+        $("#img-db-"+strID).css('display','block');
+        $("#upload-button-"+strID).hide();
+        $("#uploaded-holder-"+strID).hide(); 
+        // $("#img-db-"+strID).show();
+        // console.log('#img-db!');
+		// Обновляем эскизи в соответсвии с обновленным массивом
+		// addImage(-1);		
+    });
+    $("body").on("click","#drop-files-pdf a[id^='drop-pdf']", function() {
+		// получаем название id
+ 		var elid = $(this).attr('id');
+		// создаем массив для разделенных строк
+		// var temp = new Array();
+		var temp = [];
+		// делим строку id на 3 части
+		temp = elid.split('-');
+		// получаем значение после тире тоесть индекс изображения в массиве
+		dataArray.splice(temp[2],2);
+		// Удаляем старые эскизы
+        $("#drop-files-"+strID+" > .image").remove();
+        $("#drop-files-"+strID+" p").show();
+        // $('.image-db').show();
+        $("#img-db-"+strID).css('display','block');
+        $("#upload-button-"+strID).hide();
+        $("#uploaded-holder-"+strID).hide(); 
+        // $("#img-db-"+strID).show();
+        // console.log('#img-db!');
+		// Обновляем эскизи в соответсвии с обновленным массивом
+		// addImage(-1);		
+	});
+	
+	// Удалить все изображения кнопка 
+    // $('#dropped-files #upload-button .delete').click(restartFiles);
+    // $("body").on("click","[id*='dropped-files'] [id*='upload-button'] .delete", restartFiles);
+
+
+	
+    // Загрузка изображений на сервер
+	$("body").on("click","#uploaded-holder-img .upload",function() {	
+        alert("#uploaded-holder-img .upload");	
+		// Показываем прогресс бар
+		$("#loading-img").show();
+		// переменные для работы прогресс бара
+		var totalPercent = 100 / dataArray.length;
+		var x = 0;
+		
+		$("#loading-content-img").html('Загружен '+dataArray[0].name);
+		// Для каждого файла
+		$.each(dataArray, function(index, file) {	
+			// загружаем страницу и передаем значения, используя HTTP POST запрос 
+			$.post('upload.php', dataArray[index], function(data) {
+			
+				var fileName = dataArray[index].name;
+				++x;
+				
+				// Изменение бара загрузки
+				$("#loading-bar-img .loading-color").css({'width' : totalPercent*(x)+'%'});
+				// Если загрузка закончилась
+				if(totalPercent*(x) == 100) {
+					// Загрузка завершена
+					$("#loading-content-img").html('Загрузка завершена!');
+					
+					// Вызываем функцию удаления всех изображений после задержки 1 секунда
+					setTimeout(restartFiles2, 1000);
+				// если еще продолжается загрузка	
+				} else if(totalPercent*(x) < 100) {
+					// Какой файл загружается
+					$("#loading-content-img").html('Загружается '+fileName);
+				}
+				
+				// Формируем в виде списка все загруженные изображения
+				// data формируется в upload.php
+                // var dataSplit = data.split(':');
+                alert(data);
+				// if(dataSplit[1] == 'загружен успешно') {
+				// 	$('#uploaded-files').append('<li><a href="images/'+dataSplit[0]+'">'+fileName+'</a> загружен успешно</li>');
+								
+				// } else {
+				// 	$('#uploaded-files').append('<li><a href="images/'+data+'. Имя файла: '+dataArray[index].name+'</li>');
+				// }
+				
+			});
+		});
+		// Показываем список загруженных файлов
+		// $('#uploaded-files').show();
+		return false;
+    });
+    
+    // Загрузка PDF на сервер
+	$("body").on("click","#uploaded-holder-pdf .upload",function() {	
+        alert("#uploaded-holder-pdf .upload");	
+		// Показываем прогресс бар
+		$("#loading-pdf").show();
+		// переменные для работы прогресс бара
+		var totalPercent = 100 / dataArray.length;
+		var x = 0;
+		
+		$("#loading-content-pdf").html('Загружен '+dataArray[0].name);
+		// Для каждого файла
+		$.each(dataArray, function(index, file) {	
+			// загружаем страницу и передаем значения, используя HTTP POST запрос 
+			$.post('upload.php', dataArray[index], function(data) {
+			
+				var fileName = dataArray[index].name;
+				++x;
+				
+				// Изменение бара загрузки
+				$("#loading-bar-pdf .loading-color").css({'width' : totalPercent*(x)+'%'});
+				// Если загрузка закончилась
+				if(totalPercent*(x) == 100) {
+					// Загрузка завершена
+					$("#loading-content-pdf").html('Загрузка завершена!');
+					
+					// Вызываем функцию удаления всех изображений после задержки 1 секунда
+					setTimeout(restartFiles2, 1000);
+				// если еще продолжается загрузка	
+				} else if(totalPercent*(x) < 100) {
+					// Какой файл загружается
+					$("#loading-content-pdf").html('Загружается '+fileName);
+				}
+				
+				// Формируем в виде списка все загруженные изображения
+				// data формируется в upload.php
+                // var dataSplit = data.split(':');
+                alert(data);
+				// if(dataSplit[1] == 'загружен успешно') {
+				// 	$('#uploaded-files').append('<li><a href="images/'+dataSplit[0]+'">'+fileName+'</a> загружен успешно</li>');
+								
+				// } else {
+				// 	$('#uploaded-files').append('<li><a href="images/'+data+'. Имя файла: '+dataArray[index].name+'</li>');
+				// }
+				
+			});
+		});
+		// Показываем список загруженных файлов
+		// $('#uploaded-files').show();
+		return false;
+	});
+	
+    // Простые стили для области перетаскивания
+    // $("body").on( "click"," .btn-minimize.btn-round",
+	$("body").on('dragenter',"#drop-files-img", function() {
+		
+		$(this).css({'box-shadow' : 'inset 0px 0px 20px rgba(0, 0, 0, 0.1)', 'border' : '4px dashed #bb2b2b'});
+		return false;
+    });
+    
+
+	
+	$("body").on('drop',"#drop-files-img", function() {
+		
+		$(this).css({'box-shadow' : 'none', 'border' : '4px dashed rgba(0,0,0,0.2)'});
+		return false;
+    });
+    $("body").on('dragenter',"#drop-files-pdf", function() {
+		
+		$(this).css({'box-shadow' : 'inset 0px 0px 20px rgba(0, 0, 0, 0.1)', 'border' : '4px dashed #bb2b2b'});
+		return false;
+    });
+    
+
+	
+	$("body").on('drop',"#drop-files-pdf", function() {
+		
+		$(this).css({'box-shadow' : 'none', 'border' : '4px dashed rgba(0,0,0,0.2)'});
+		return false;
+    });
+    
+    
+
+
+
+	$("button[name='del1']").click(function() {
+		// alert('Удаление!');
+
+		$.post('del.php', 'file_name=ebc2f79289ce.jpg', function(data) {
+				// $('.result').html(data);
+				// alert('Удаление завершено!.');
+				$("button[name='del1']").text(data);
+			});
+
+
+	});
+
+// drag and drop
 
         $("body").on('click','#checkbox', function(){
             if ($(this).is(':checked')){
