@@ -104,7 +104,7 @@
 <!-- select or dropdown enhancer -->
 <!-- <script src="bower_components/chosen/chosen.jquery.min.js"></script> -->
 <!-- plugin for gallery image view -->
-<script src="bower_components/colorbox/jquery.colorbox-min.js"></script> -->
+<!-- <script src="bower_components/colorbox/jquery.colorbox-min.js"></script>  -->
  <script src="bower_components/colorbox/jquery.colorbox.js"></script>
 <!-- notification plugin -->
 <!-- <script src="js/jquery.noty.js"></script> -->
