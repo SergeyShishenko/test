@@ -62,7 +62,7 @@ $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 					// а затем сохранит как image1.jpg. 
 					$image = new SimpleImage();
 					$image->load($uploaddir.$randomName);
-					$image->resize(100, 100);
+					$image->resize(200, 200);
 					$image->save('thumbs/tbs'.$randomName);
 				
 				}

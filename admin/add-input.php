@@ -468,18 +468,92 @@ switch ($tbl) {
                 </div>
             </div>
         ';
-        // echo '<div class="row">
-        //         <div class="input-group col-md-12">
-        //             <div class="input-group ">                       
-        //                 <span class="input-group-addon">Идентификатор (html_id)</span>
-        //                 <input type="text" class="form-control" id="recipient-html-id" value="'.$row_obj["html_id"].'" required>
-        //                 <span class="input-group-btn">
-        //                     <button type="button"  data-tbl="obj"  data-field ="html_id" class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-        //                 </span>
-        //             </div>
-        //         </div>
-        //     </div>
-        // ';
+        echo '<div class="row">
+                <div class=" col-md-12">
+                    <div id="dropped-files-current" class="">                       
+                     <div id="img-db" class="image"  style="background:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].');"></div>
+                    </div>
+                </div>
+            </div>
+        ';
+        echo '<div class="row">
+                <div class=" col-md-12">
+                    <ul class="file-list">
+                        <li class="file">
+                            <a class="file-link" href="#" title="file-name.doc">
+                                <div class="file-thumbnail file-thumbnail-doc"></div>
+                                <div class="file-info">
+                                    <span class="file-ext">doc</span>
+                                    <span class="file-name">file-name.</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="file">
+                            <a class="file-link" href="#" title="file-name.xls">
+                                <div class="file-thumbnail file-thumbnail-xls"></div>
+                                <div class="file-info">
+                                    <span class="file-ext">xls</span>
+                                    <span class="file-name">file-name.</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="file">
+                            <a class="file-link" href="#" title="file-name.pdf">
+                                <div class="file-thumbnail file-thumbnail-pdf"></div>
+                                <div class="file-info">
+                                    <span class="file-ext">pdf</span>
+                                    <span class="file-name">file-name.</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="file">
+                            <a class="file-link" href="#" title="file-name.zip">
+                                <div class="file-thumbnail file-thumbnail-zip"></div>
+                                <div class="file-info">
+                                    <span class="file-ext">zip</span>
+                                    <span class="file-name">file-name.</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="file">
+                            <a class="file-link" href="#" title="file-name.zip">
+                                <div class="file-thumbnail file-thumbnail-dwg"></div>
+                                <div class="file-info">
+                                    <span class="file-ext">dwg</span>
+                                    <span class="file-name">file-name.</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="file">
+                            <a class="file-link" href="#" title="file-name.*">
+                                <div class="file-thumbnail file-thumbnail-att"></div>
+                                <div class="file-info">
+                                    <span class="file-ext">*</span>
+                                    <span class="file-name">file-name.</span>
+                                </div>
+                            </a>
+                        </li>
+                        
+                        <li class="file">
+                            <!--<a class="file-link" href="img/0189082606.jpg" title="0189082606.jpg" download="0189082606.jpg">-->
+                            <a class="file-link" href="javascript:void(0)" title="'.$row_obj["fname_img_obj"].'">
+                            <div id="img-db" class="file-thumbnail"  style="background-image:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].');"></div>
+                            <!-- <div class="file-thumbnail" style="background-image: url(img/0189082606.jpg);"></div>-->
+                                <div class="file-info">';
+        $Fname = explode( '.', $row_obj["fname_img_obj"] ); //Разбиваем строку (Split работает аналогично PHP explode)
+        
+        echo '       <span class="file-ext">'.$Fname[1].'</span>
+                                    <span class="file-name">'.$Fname[0].'.</span>
+                                </div>
+                            </a>
+                            <button class="file-delete-btn delete" title="Delete" type="button">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        ';
         // echo '<div class="row">
         //     <div class="input-group col-md-12">
         //         <div class="input-group ">                       

@@ -364,7 +364,7 @@ div.center, p.center, img.center {
 .yri{display:none;}
 
 .file {
-    width: 100px  !important;
+    width: 200px  !important;
 }
 
 </style>
