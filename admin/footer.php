@@ -904,6 +904,24 @@
         // Удалить все изображения кнопка 
         // $('#dropped-files #upload-button .delete').click(restartFiles);
         $("body").on("click","#dropped-files #upload-button .delete", restartFiles);
+
+        // Удаление только ТЕКУЩЕГО выбранного изображения 
+		$("body").on("click",".del", function() {
+			// alert('!');
+			// получаем название id
+			  $(this).parent().remove();
+			// создаем массив для разделенных строк
+			// var temp = [];
+			// // делим строку id на 2 части
+			// temp = elid.split('-');
+			// // получаем значение после тире тоесть индекс изображения в массиве
+			// dataArray.splice(temp[1],1);
+			// // Удаляем старые эскизы
+			// $('#dropped-files > .image').remove();
+			// // Обновляем эскизи в соответсвии с обновленным массивом
+			// addImage(-1);		
+		});
+	
         
 
 $("body").on("click","#upload-button .count",function() {

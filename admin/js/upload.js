@@ -193,6 +193,9 @@ var $ = jQuery.noConflict();
 		// Обновляем эскизи в соответсвии с обновленным массивом
 		addImage(-1);		
 	});
+
+
+		
 	
 	// Удалить все изображения кнопка 
     // $('#dropped-files #upload-button .delete').click(restartFiles);

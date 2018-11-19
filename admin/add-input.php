@@ -532,6 +532,9 @@ switch ($tbl) {
                                     <span class="file-name">file-name.</span>
                                 </div>
                             </a>
+                            <button class="file-delete-btn del" title="Delete" type="button">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
                         </li>
                         
                         <li class="file">
@@ -542,11 +545,11 @@ switch ($tbl) {
                                 <div class="file-info">';
         $Fname = explode( '.', $row_obj["fname_img_obj"] ); //Разбиваем строку (Split работает аналогично PHP explode)
         
-        echo '       <span class="file-ext">'.$Fname[1].'</span>
+        echo '                      <span class="file-ext">'.$Fname[1].'</span>
                                     <span class="file-name">'.$Fname[0].'.</span>
                                 </div>
                             </a>
-                            <button class="file-delete-btn delete" title="Delete" type="button">
+                            <button class="file-delete-btn  del" title="Delete" type="button">
                                 <span class="glyphicon glyphicon-remove"></span>
                             </button>
                         </li>
