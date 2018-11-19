@@ -104,8 +104,8 @@
 <!-- select or dropdown enhancer -->
 <!-- <script src="bower_components/chosen/chosen.jquery.min.js"></script> -->
 <!-- plugin for gallery image view -->
-<!-- <script src="bower_components/colorbox/jquery.colorbox-min.js"></script> -->
-<!-- <script src="bower_components/colorbox/jquery.colorbox.js"></script> -->
+<script src="bower_components/colorbox/jquery.colorbox-min.js"></script> -->
+ <script src="bower_components/colorbox/jquery.colorbox.js"></script>
 <!-- notification plugin -->
 <!-- <script src="js/jquery.noty.js"></script> -->
 <!-- library for making tables responsive -->
@@ -999,5 +999,7 @@ $("body").on("click","#upload-button .count",function() {
     /////// drop
 </script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/jquery.uploadify-3.1.min.js"></script>
+<script src="js/charisma.js"></script>
 </body>
 </html>
