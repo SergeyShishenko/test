@@ -128,8 +128,9 @@
 <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script> -->
 <!-- <script src="js/charisma.js"></script> -->
 <!-- <script src="js/javascript.js?v=2"></script> -->
-
-
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/jquery.uploadify-3.1.min.js"></script>
+<script src="js/charisma.js"></script>
 <script>
     // var $ = jQuery.noConflict();
    $(document).ready(function() {
@@ -455,6 +456,7 @@
                             success:function(response){
                                 $('.list-tbl').html(response);
                                 $('#loading1').css("display", "none");
+                                $("#file-list").sortable();
 
                             // $("#"+$("#tbl").val()+"_"+ DbNumberID).text($("#recipient-name").val());
                             // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',$("#recipient-name").val());
@@ -481,8 +483,9 @@
         $(this).find('#recipient-order').val(recipient_order); 
 
         $(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
+        
         });
-
+        
         // $('#item_3  a.btn-minimize').trigger('click');// генерация клика
 
 
@@ -739,7 +742,7 @@
                 files.length = 0; return;
             }
         //    $(function() {$("#dropped-files div[id^='img']").sortable();}); 
-        $("#dropped-files").sortable()
+        $("#dropped-files").sortable();
         });
 
         
@@ -1016,8 +1019,8 @@ $("body").on("click","#upload-button .count",function() {
 
     /////// drop
 </script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/jquery.uploadify-3.1.min.js"></script>
-<script src="js/charisma.js"></script>
+<script src="js/charisma.js"></script> -->
 </body>
 </html>
