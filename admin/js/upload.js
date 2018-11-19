@@ -36,7 +36,7 @@ var $ = jQuery.noConflict();
 		}
 	});
 
-	
+	$(function() {$('#dropped-files').sortable();});
 	var ext="";
 // var background="";	
 
@@ -48,7 +48,11 @@ var $ = jQuery.noConflict();
 		// Для каждого файла
 		
 		$.each(files, function(index, file) { 
-
+			console.log(files[index].type);	
+			console.log(files[index].name);	
+			var clickedEXP = files[index].name.split("."); //Разбиваем строку (Split работает аналогично PHP explode)
+			var EXP = clickedEXP[1]; //и получаем номер из массива
+			console.log(EXP);
 		var tmime="";		
 				if (files[index].type.match('image.*')) {
                     if(files[index].type.match('dwg.*')) {						
@@ -73,6 +77,10 @@ var $ = jQuery.noConflict();
 					 console.log(tmime);				 
 					
 				}
+				if(tmime==""){
+					var clickedEXP = files[index].name.split("."); //Разбиваем строку (Split работает аналогично PHP explode)
+					tmime = clickedEXP[1]; //и получаем номер из массива
+					console.log(tmime);}
 
 				$('#upload-button').css({'display' : 'block'});
 				// Проверяем количество загружаемых элементов
