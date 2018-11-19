@@ -507,7 +507,7 @@ switch ($tbl) {
 
         echo '  <div class="row">               
                     <div id="drop-files" ondragover="return false">
-                        <p>Перетащите изображение сюда</p>
+                        <p>Перетащите файлы сюда</p>
                         <form >
                             <input type="file" id="uploadbtn" multiple style="display: none;" >
                         </form>
@@ -519,8 +519,9 @@ switch ($tbl) {
                             <div id="upload-button">
                                 <div class="center">
                                     <span>0 Файлов</span>
-                                    <a href="#" class="upload">Загрузить</a>
-                                    <a href="#" class="delete">Удалить</a>
+                                    <a href="javascript:void(0)" class="upload">Загрузить</a>
+                                    <a href="javascript:void(0)" class="delete">Удалить</a>
+                                    <a href="javascript:void(0)" class="count">Посчитать</a>
                                     <!-- Прогресс бар загрузки -->
                                     <div id="loading">
                                         <div id="loading-bar">

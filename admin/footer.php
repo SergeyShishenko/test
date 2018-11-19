@@ -735,7 +735,7 @@
                 // Передаем массив с файлами в функцию загрузки на предпросмотр
                 loadInView(files);
             } else {
-                alert('Вы не можете загружать больше '+maxFiles+' изображений!'); 
+                alert('Вы не можете загружать больше '+maxFiles+' файлов!'); 
                 files.length = 0; return;
             }
         //    $(function() {$("#dropped-files div[id^='img']").sortable();}); 
@@ -754,39 +754,40 @@
             // Для каждого файла
             
             $.each(files, function(index, file) { 
-                console.log(files[index].type);	
-                console.log(files[index].name);	
+                // console.log(files[index].type);	
+                // console.log(files[index].name);	
                 var clickedEXP = files[index].name.split("."); //Разбиваем строку (Split работает аналогично PHP explode)
                 var EXP = clickedEXP[1]; //и получаем номер из массива
-                console.log(EXP);
+                // console.log(EXP);
             var tmime="";		
                     if (files[index].type.match('image.*')) {
                         if(files[index].type.match('dwg.*')) {						
                             tmime="dwg";
-                            console.log(tmime);	                       
+                            // console.log(tmime);	                       
                         }else{tmime="img";
-                        console.log(tmime);	
+                        // console.log(tmime);	
                         }
                     }else if(files[index].type.match('pdf.*')) {
                         // alert("PDF"); 
                         tmime="pdf";
-                        console.log(tmime);									
+                        // console.log(tmime);									
                         
                     }else if(files[index].type.match('word.*')) {
                         // alert("word");
                         tmime="word";
-                        console.log(tmime);
+                        // console.log(tmime);
                         // countDOCFiles++;				
                     }else if((files[index].type.match('sheet.*')) || (files[index].type.match('excel.*'))) {
                         // alert("excel");
                         tmime="excel";	
-                        console.log(tmime);				 
+                        // console.log(tmime);				 
                         
                     }
                     if(tmime==""){
                         var clickedEXP = files[index].name.split("."); //Разбиваем строку (Split работает аналогично PHP explode)
                         tmime = clickedEXP[1]; //и получаем номер из массива
-                        console.log(tmime);}
+                        // console.log(tmime);
+                        }
 
                     $('#upload-button').css({'display' : 'block'});
                     // Проверяем количество загружаемых элементов
@@ -859,7 +860,7 @@
                 // alert(dataArray[i].name);
                 // string.indexOf(substring) !== -1;
                 if($('#dropped-files > .image').length <= maxFiles) { 
-                    $('#dropped-files').append('<div id="img-'+i+'" class="image ui-state-error" style="background: url('+dataArray[i].bground+'); background-size: cover;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить изображение</a></div>'); 
+                    $('#dropped-files').append('<div id="img-'+i+'" class="image ui-state-error" style="background: url('+dataArray[i].bground+'); background-size: cover;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить файл</a></div>'); 
                 }
             }
             return false;
@@ -904,6 +905,15 @@
         // $('#dropped-files #upload-button .delete').click(restartFiles);
         $("body").on("click","#dropped-files #upload-button .delete", restartFiles);
         
+
+$("body").on("click","#upload-button .count",function() {
+    console.log("==============");
+    $( "#dropped-files  > .image" ).each(function( index ) {
+    console.log( index + ": " + $( this ).attr('id') );
+    });
+     });
+
+
         // Загрузка изображений на сервер
         // $('#upload-button .upload').click(function() {
         $("body").on("click","#upload-button .upload",function() {
