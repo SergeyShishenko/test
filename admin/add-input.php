@@ -479,86 +479,12 @@ switch ($tbl) {
         echo '<div class="row">
                 <div class=" col-md-12">
                     <ul class="file-list" id="file-list">
-                        <li class="file  ui-state-error" id="file-0">
-                            <a class="file-link" href="#" title="file-name.doc">
-                                <div class="file-thumbnail file-thumbnail-doc"></div>
-                                <div class="file-info">
-                                    <span class="file-ext">doc</span>
-                                    <span class="file-name">file-name.</span>
-                                </div>
-                            </a>
-                            <button class="file-delete-btn  del" title="Delete" type="button">
-                               <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-                        </li>
-                        <li class="file  ui-state-error" id="file-1">
-                            <a class="file-link" href="#" title="file-name.xls">
-                                <div class="file-thumbnail file-thumbnail-xls"></div>
-                                <div class="file-info">
-                                    <span class="file-ext">xls</span>
-                                    <span class="file-name">file-name.</span>
-                                </div>
-                            </a>
-                            <button class="file-delete-btn  del" title="Delete" type="button">
-                               <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-                        </li>
-                        <li class="file  ui-state-error" id="file-2">
-                            <a class="file-link" href="#" title="file-name.pdf">
-                                <div class="file-thumbnail file-thumbnail-pdf"></div>
-                                <div class="file-info">
-                                    <span class="file-ext">pdf</span>
-                                    <span class="file-name">file-name.</span>
-                                </div>
-                            </a>
-                            <button class="file-delete-btn  del" title="Delete" type="button">
-                                <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-                        </li>
-                        <li class="file  ui-state-error" id="file-3">
-                            <a class="file-link" href="#" title="file-name.zip">
-                                <div class="file-thumbnail file-thumbnail-zip"></div>
-                                <div class="file-info">
-                                    <span class="file-ext">zip</span>
-                                    <span class="file-name">file-name.</span>
-                                </div>
-                            </a>
-                            <button class="file-delete-btn  del" title="Delete" type="button">
-                              <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-                        </li>
-                        <li class="file ui-state-error" id="file-4">
-                            <a class="file-link" href="#" title="file-name.zip">
-                                <div class="file-thumbnail file-thumbnail-dwg"></div>
-                                <div class="file-info">
-                                    <span class="file-ext">dwg</span>
-                                    <span class="file-name">file-name.</span>
-                                </div>
-                            </a>
-                            <button class="file-delete-btn  del" title="Delete" type="button">
-                             <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-                        </li>
-                        <li class="file ui-state-error" id="file-5">
-                            <a class="file-link" href="#" title="file-name.*">
-                                <div class="file-thumbnail file-thumbnail-att"></div>
-                                <div class="file-info">
-                                    <span class="file-ext">*</span>
-                                    <span class="file-name">file-name.</span>
-                                </div>
-                            </a>
-                            <button class="file-delete-btn del" title="Delete" type="button">
-                                <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-                        </li>
-                        
-                        <li class="file ui-state-error" id="file-6">                          
+                        <li class="file ui-state-error" id="file-2">                          
                             <a class="file-link" href="javascript:void(0)" title="'.$row_obj["fname_img_obj"].'">
                             <div id="img-db" class="file-thumbnail"  style="background-image:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].');"></div>                          
                                 <div class="file-info">';
-        $Fname = explode( '.', $row_obj["fname_img_obj"] ); //Разбиваем строку (Split работает аналогично PHP explode)
-        
-        echo '                      <span class="file-ext">'.$Fname[1].'</span>
+                                $Fname = explode( '.', $row_obj["fname_img_obj"] ); //Разбиваем строку (Split работает аналогично PHP explode)                                
+                                echo '<span class="file-ext">'.$Fname[1].'</span>
                                     <span class="file-name">'.$Fname[0].'.</span>
                                 </div>
                             </a>
@@ -566,10 +492,93 @@ switch ($tbl) {
                                 <span class="glyphicon glyphicon-remove"></span>
                             </button>
                         </li>
+                        ';
+                        $Result_obj_in_addition = mysqli_query($dbconn,"SELECT *  FROM obj_in_addition WHERE obj_id = $DbNumberID ORDER BY `obj_in_addition`.`number_in_order_addition` ASC");//MySQL запрос
+                        while($row_obj_in_addition = mysqli_fetch_array($Result_obj_in_addition))
+                    {
+                        echo '
+                        <li class="file  ui-state-error" id="file-'.$row_obj_in_addition["obj_in_addition_id"].'">
+                            <a class="file-link" href="javascript:void(0)" title="'.$row_obj_in_addition["fname_img_obj_in_addition"].'">
+                            <div id="img-'.$row_obj_in_addition["obj_in_addition_id"].'" class="file-thumbnail"  style="background-image:url('. substr($row_obj["path_img_obj_in_addition"],1)."thumbs/".$row_obj["fname_img_obj_in_addition"].');"></div>  
+                                <div class="file-info">';
+                                $Fname = explode( '.', $row_obj_in_addition["fname_img_obj_in_addition"] ); //Разбиваем строку (Split работает аналогично PHP explode)                                
+                                echo '<span class="file-ext">'.$Fname[1].'</span>
+                                    <span class="file-name">'.$Fname[0].'.</span>
+                                </div>
+                            </a>
+                            <button class="file-delete-btn  del" title="Delete" type="button">
+                               <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </li>                      
+                       
+                       ';
+                    } //while 
+                        mysqli_free_result($Result_obj_in_addition);   
+                    echo '     
+                    </ul>
+                    ';
+                    $Result_obj_download = mysqli_query($dbconn,"SELECT *  FROM obj_download WHERE obj_id = $DbNumberID");//MySQL запрос
+                    $row_obj_download = mysqli_fetch_array($Result_obj_download);//получаем все записи из таблицы
+                    echo '
+                    <ul class="file-list" >
+                        <li class="file " id="download-0">
+                            <a class="file-link" href="javascript:void(0)" title="'.$row_obj_download["doc_obj"].'">
+                                <div class="file-thumbnail file-thumbnail-doc"></div>
+                                <div class="file-info">';
+                                $Fname = explode( '.', $row_obj_download["doc_obj"] ); //Разбиваем строку (Split работает аналогично PHP explode)                                
+                                echo '<span class="file-ext">'.$Fname[1].'</span>
+                                    <span class="file-name">'.$Fname[0].'.</span>
+                                </div>
+                            </a>
+                            <button class="file-delete-btn  del" title="Delete" type="button">
+                            <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </li>
+                        <li class="file  " id="download-1">
+                            <a class="file-link" href="javascript:void(0)" title="'.$row_obj_download["xls_obj"].'">
+                                <div class="file-thumbnail file-thumbnail-xls"></div>
+                                <div class="file-info">';
+                                $Fname = explode( '.', $row_obj_download["xls_obj"] ); //Разбиваем строку (Split работает аналогично PHP explode)                                
+                                echo '<span class="file-ext">'.$Fname[1].'</span>
+                                    <span class="file-name">'.$Fname[0].'.</span>
+                                </div>
+                            </a>
+                            <button class="file-delete-btn  del" title="Delete" type="button">
+                            <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </li>
+                        <li class="file  " id="download-2">
+                            <a class="file-link" href="javascript:void(0)" title="'.$row_obj_download["pdf_obj"].'">
+                                <div class="file-thumbnail file-thumbnail-pdf"></div>
+                                <div class="file-info">';
+                                $Fname = explode( '.', $row_obj_download["pdf_obj"] ); //Разбиваем строку (Split работает аналогично PHP explode)                                
+                                echo '<span class="file-ext">'.$Fname[1].'</span>
+                                    <span class="file-name">'.$Fname[0].'.</span>
+                                </div>
+                            </a>
+                            <button class="file-delete-btn  del" title="Delete" type="button">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </li>                      
+                        <li class="file " id="file-4">
+                            <a class="file-link" href="javascript:void(0)" title="'.$row_obj_download["dwg_obj"].'">
+                                <div class="file-thumbnail file-thumbnail-dwg"></div>
+                                <div class="file-info">';
+                                $Fname = explode( '.', $row_obj_download["dwg_obj"] ); //Разбиваем строку (Split работает аналогично PHP explode)                                
+                                echo '<span class="file-ext">'.$Fname[1].'</span>
+                                    <span class="file-name">'.$Fname[0].'.</span>
+                                </div>
+                            </a>
+                            <button class="file-delete-btn  del" title="Delete" type="button">
+                            <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                        </li>                      
                     </ul>
                 </div>
             </div>
         ';
+        mysqli_free_result($Result_obj_download); 
+        
         // echo '<div class="row">
         //     <div class="input-group col-md-12">
         //         <div class="input-group ">                       
@@ -773,22 +782,22 @@ switch ($tbl) {
                         <div class="box-header well" data-original-title="">
                             <h2><i class="glyphicon glyphicon-list-alt"></i> Файлы для скачивания (obj_download)</h2>    
                             <div class="box-icon">
-                                <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
                                         class="glyphicon glyphicon-chevron-down"></i></a>       
                             </div>
                         </div>
                         <div class="box-content"> 
                     ';
 
-                    echo '
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="checkbox">
-                            Юридические документы
-                        </label>
-                    </div>
-                    ';
-                    echo '<div class="noyri">';
+                    // echo '
+                    // <div class="checkbox">
+                    //     <label>
+                    //         <input type="checkbox" id="checkbox">
+                    //         Юридические документы
+                    //     </label>
+                    // </div>
+                    // ';
+                    // echo '<div class="noyri">';
                     echo '<div class="row">
                             <div class="input-group col-md-12">
                                 <div class="input-group ">                       
@@ -839,123 +848,123 @@ switch ($tbl) {
                     ';
 
 
-                    echo '<div class="row">
-                            <div class="col-xs-12">
-                                <ul class="file-list">
-                                    <li class="file">
-                                        <a class="file-link" href="#" title="file-name.doc">
-                                            <div class="file-thumbnail file-thumbnail-doc"></div>
-                                            <div class="file-info">
-                                                <span class="file-ext">doc</span>
-                                                <span class="file-name">file-name.</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="file">
-                                        <a class="file-link" href="#" title="file-name.xls">
-                                            <div class="file-thumbnail file-thumbnail-xls"></div>
-                                            <div class="file-info">
-                                                <span class="file-ext">xls</span>
-                                                <span class="file-name">file-name.</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="file">
-                                        <a class="file-link" href="#" title="file-name.pdf">
-                                            <div class="file-thumbnail file-thumbnail-pdf"></div>
-                                            <div class="file-info">
-                                                <span class="file-ext">pdf</span>
-                                                <span class="file-name">file-name.</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="file">
-                                        <a class="file-link" href="#" title="file-name.zip">
-                                            <div class="file-thumbnail file-thumbnail-zip"></div>
-                                            <div class="file-info">
-                                                <span class="file-ext">zip</span>
-                                                <span class="file-name">file-name.</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="file">
-                                        <a class="file-link" href="#" title="file-name.zip">
-                                            <div class="file-thumbnail file-thumbnail-dwg"></div>
-                                            <div class="file-info">
-                                                <span class="file-ext">dwg</span>
-                                                <span class="file-name">file-name.</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="file">
-                                        <a class="file-link" href="#" title="file-name.*">
-                                            <div class="file-thumbnail file-thumbnail-att"></div>
-                                            <div class="file-info">
-                                                <span class="file-ext">*</span>
-                                                <span class="file-name">file-name.</span>
-                                            </div>
-                                        </a>
-                                    </li>
+                    // echo '<div class="row">
+                    //         <div class="col-xs-12">
+                    //             <ul class="file-list">
+                    //                 <li class="file">
+                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.doc">
+                    //                         <div class="file-thumbnail file-thumbnail-doc"></div>
+                    //                         <div class="file-info">
+                    //                             <span class="file-ext">doc</span>
+                    //                             <span class="file-name">file-name.</span>
+                    //                         </div>
+                    //                     </a>
+                    //                 </li>
+                    //                 <li class="file">
+                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.xls">
+                    //                         <div class="file-thumbnail file-thumbnail-xls"></div>
+                    //                         <div class="file-info">
+                    //                             <span class="file-ext">xls</span>
+                    //                             <span class="file-name">file-name.</span>
+                    //                         </div>
+                    //                     </a>
+                    //                 </li>
+                    //                 <li class="file">
+                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.pdf">
+                    //                         <div class="file-thumbnail file-thumbnail-pdf"></div>
+                    //                         <div class="file-info">
+                    //                             <span class="file-ext">pdf</span>
+                    //                             <span class="file-name">file-name.</span>
+                    //                         </div>
+                    //                     </a>
+                    //                 </li>
+                    //                 <li class="file">
+                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.zip">
+                    //                         <div class="file-thumbnail file-thumbnail-zip"></div>
+                    //                         <div class="file-info">
+                    //                             <span class="file-ext">zip</span>
+                    //                             <span class="file-name">file-name.</span>
+                    //                         </div>
+                    //                     </a>
+                    //                 </li>
+                    //                 <li class="file">
+                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.zip">
+                    //                         <div class="file-thumbnail file-thumbnail-dwg"></div>
+                    //                         <div class="file-info">
+                    //                             <span class="file-ext">dwg</span>
+                    //                             <span class="file-name">file-name.</span>
+                    //                         </div>
+                    //                     </a>
+                    //                 </li>
+                    //                 <li class="file">
+                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.*">
+                    //                         <div class="file-thumbnail file-thumbnail-att"></div>
+                    //                         <div class="file-info">
+                    //                             <span class="file-ext">*</span>
+                    //                             <span class="file-name">file-name.</span>
+                    //                         </div>
+                    //                     </a>
+                    //                 </li>
                                     
-                                    <li class="file">
-                                        <a class="file-link" href="img/0189082606.jpg" title="0189082606.jpg" download="0189082606.jpg">
-                                            <div class="file-thumbnail" style="background-image: url(img/0189082606.jpg);"></div>
-                                            <div class="file-info">
-                                                <span class="file-ext">jpg</span>
-                                                <span class="file-name">0189082606.</span>
-                                            </div>
-                                        </a>
-                                        <button class="file-delete-btn delete" title="Delete" type="button">
-                                            <span class="glyphicon glyphicon-remove"></span>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    ';
+                    //                 <li class="file">
+                    //                     <a class="file-link" href="img/0189082606.jpg" title="0189082606.jpg" download="0189082606.jpg">
+                    //                         <div class="file-thumbnail" style="background-image: url(img/0189082606.jpg);"></div>
+                    //                         <div class="file-info">
+                    //                             <span class="file-ext">jpg</span>
+                    //                             <span class="file-name">0189082606.</span>
+                    //                         </div>
+                    //                     </a>
+                    //                     <button class="file-delete-btn delete" title="Delete" type="button">
+                    //                         <span class="glyphicon glyphicon-remove"></span>
+                    //                     </button>
+                    //                 </li>
+                    //             </ul>
+                    //         </div>
+                    //     </div>
+                    // ';
                
 
-                    echo '</div><!--class="noyri"-->';
-                    echo '<div class="yri">';
+                    // echo '</div><!--class="noyri"-->';
+                    // echo '<div class="yri">';
 
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">ЮРИ-PDF</span>
-                                    <input type="text" class="form-control" id="recipient-yriPDF " value="'.$row_obj_download["data_ypdf"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_ypdf" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    '; 
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">ЮРИ-XLS</span>
-                                    <input type="text" class="form-control" id="recipient-yriXLS " value="'.$row_obj_download["data_yxls"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_yxls" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">ЮРИ-DOC</span>
-                                    <input type="text" class="form-control" id="recipient-yriDOC " value="'.$row_obj_download["data_ydoc"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_ydoc" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
+                    // echo '<div class="row">
+                    //         <div class="input-group col-md-12">
+                    //             <div class="input-group ">                       
+                    //                 <span class="input-group-addon">ЮРИ-PDF</span>
+                    //                 <input type="text" class="form-control" id="recipient-yriPDF " value="'.$row_obj_download["data_ypdf"].'" required>
+                    //                 <span class="input-group-btn">
+                    //                     <button type="button"  data-tbl="obj_download"  data-field ="data_ypdf" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                    //                 </span>
+                    //             </div>
+                    //         </div>
+                    //     </div>
+                    // '; 
+                    // echo '<div class="row">
+                    //         <div class="input-group col-md-12">
+                    //             <div class="input-group ">                       
+                    //                 <span class="input-group-addon">ЮРИ-XLS</span>
+                    //                 <input type="text" class="form-control" id="recipient-yriXLS " value="'.$row_obj_download["data_yxls"].'" required>
+                    //                 <span class="input-group-btn">
+                    //                     <button type="button"  data-tbl="obj_download"  data-field ="data_yxls" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                    //                 </span>
+                    //             </div>
+                    //         </div>
+                    //     </div>
+                    // ';
+                    // echo '<div class="row">
+                    //         <div class="input-group col-md-12">
+                    //             <div class="input-group ">                       
+                    //                 <span class="input-group-addon">ЮРИ-DOC</span>
+                    //                 <input type="text" class="form-control" id="recipient-yriDOC " value="'.$row_obj_download["data_ydoc"].'" required>
+                    //                 <span class="input-group-btn">
+                    //                     <button type="button"  data-tbl="obj_download"  data-field ="data_ydoc" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                    //                 </span>
+                    //             </div>
+                    //         </div>
+                    //     </div>
+                    // ';
 
-                    echo '</div><!--class="yri"-->';
+                    // echo '</div><!--class="yri"-->';
 
 
                    
@@ -1056,7 +1065,7 @@ switch ($tbl) {
                     <div class="box-header well" data-original-title="">
                         <h2><i class="glyphicon glyphicon-list-alt"></i> Псевдонимы (obj_alias)</h2>    
                         <div class="box-icon">
-                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                            <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
                                     class="glyphicon glyphicon-chevron-down"></i></a>       
                         </div>
                     </div>
@@ -1098,7 +1107,7 @@ switch ($tbl) {
                     <div class="box-header well" data-original-title="">
                         <h2><i class="glyphicon glyphicon-list-alt"></i> Дополнительные страницы (obj_in_addition)</h2>    
                         <div class="box-icon">
-                            <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                            <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
                                     class="glyphicon glyphicon-chevron-down"></i></a>       
                         </div>
                     </div>
@@ -1227,7 +1236,7 @@ switch ($tbl) {
                         <h2><i class="glyphicon glyphicon-list-alt"></i> Свойства фурнитуры (obj_furnitur_prop)</h2>    
                         <div class="box-icon">
                             
-                            <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
+                            <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
                             
                                         
                         </div>
@@ -1495,7 +1504,7 @@ switch ($tbl) {
                         <div class="box-header well" data-original-title="">
                             <h2><i class="glyphicon glyphicon-list-alt"></i> Файлы для скачивания (obj_download)</h2>    
                             <div class="box-icon">
-                                <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
                                         class="glyphicon glyphicon-chevron-down"></i></a>       
                             </div>
                         </div>
@@ -1633,7 +1642,7 @@ switch ($tbl) {
                         <div class="box-header well" data-original-title="">
                             <h2><i class="glyphicon glyphicon-list-alt"></i> Псевдонимы (obj_alias)</h2>    
                             <div class="box-icon">
-                                <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
                                         class="glyphicon glyphicon-chevron-down"></i></a>       
                             </div>
                         </div>
@@ -1670,7 +1679,7 @@ switch ($tbl) {
                         <div class="box-header well" data-original-title="">
                             <h2><i class="glyphicon glyphicon-list-alt"></i> Дополнительные страницы (obj_in_addition)</h2>    
                             <div class="box-icon">
-                                <a href="#" class="btn btn-minimize btn-round btn-default"><i
+                                <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
                                         class="glyphicon glyphicon-chevron-down"></i></a>       
                             </div>
                         </div>
@@ -1793,7 +1802,7 @@ switch ($tbl) {
                                 <h2><i class="glyphicon glyphicon-list-alt"></i> Свойства фурнитуры (obj_furnitur_prop)</h2>    
                                 <div class="box-icon">
                                     
-                                    <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
+                                    <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
                                     
                                                 
                                 </div>
