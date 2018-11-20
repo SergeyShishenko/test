@@ -468,6 +468,18 @@ switch ($tbl) {
                 </div>
             </div>
         ';
+        echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">                       
+                        <span class="input-group-addon">fname_img_obj</span>
+                        <input type="text" class="form-control" id="recipient-fname_img_obj" value="'.$row_obj["fname_img_obj"].'" required >
+                        <span class="input-group-btn">
+                            <button type="button" data-tbl="obj" data-field ="fname_img_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        ';
         // echo '<div class="row">
         //         <div class=" col-md-12">
         //             <div id="dropped-files-current" class="">                       
@@ -481,7 +493,7 @@ switch ($tbl) {
                     <ul class="file-list" id="file-list">
                         <li class="file ui-state-error" id="file-2">                          
                             <a class="file-link" href="javascript:void(0)" title="'.$row_obj["fname_img_obj"].'">
-                            <div id="img-db" class="file-thumbnail"  style="background-image:url('. substr($row_obj["path_img_obj"],1)."thumbs/".$row_obj["fname_img_obj"].');"></div>                          
+                            <div id="img-db" class="file-thumbnail"  style="background-image:url(../'.PATH__FILES.'images/thumbs/tbs'.$row_obj["fname_img_obj"].');"></div>                          
                                 <div class="file-info">';
                                 $Fname = explode( '.', $row_obj["fname_img_obj"] ); //Разбиваем строку (Split работает аналогично PHP explode)                                
                                 echo '<span class="file-ext">'.$Fname[1].'</span>

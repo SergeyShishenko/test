@@ -1,15 +1,19 @@
 <?php
-// Создаем подключение к серверу
-// $db = mysql_connect ("servername","user","password"); 
-// Выбираем БД
-// mysql_select_db ("dbname",$db);
+
+ //подключаем конфигурационный файл
+ define('__ROOT__', dirname(dirname(__FILE__))); 
+ // require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
+ require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
+
+//  $dbconn=dbconnect();
+// echo  PATH__FILES ."!!!!!!!!!!!!!!";
+// exit();
 
 // Вытаскиваем необходимые данные
 $file = $_POST['value'];
 $name = $_POST['name'];
 $type = $_POST['type'];
 
-// $mimeType = $_POST['mimeType'];
 
 // Получаем расширение файла
 $getMime = explode('.', $name);
@@ -37,19 +41,20 @@ $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 			switch ($type) {
 				/////"head"    
 					case "img":
-						$uploaddir = 'images/';
+						$uploaddir = '../'.PATH__FILES.'images/';
+						
 						break;
 					case "pdf":
-						$uploaddir = 'pdf/';
+						$uploaddir = '../'.PATH__FILES.'pdf/';
 						break;
 					case "word":
-						$uploaddir = 'doc/';
+						$uploaddir = '../'.PATH__FILES.'doc/';
 						break;
 					case "excel":
-						$uploaddir = 'xls/';
+						$uploaddir = '../'.PATH__FILES.'xls/';
 						break;
 					case "dwg":
-						$uploaddir = 'dwg/';
+						$uploaddir = '../'.PATH__FILES.'dwg/';
 						break;
 			}
 			if(file_put_contents($uploaddir.$randomName, $decodedData)) {
@@ -63,11 +68,12 @@ $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 					$image = new SimpleImage();
 					$image->load($uploaddir.$randomName);
 					$image->resize(200, 200);
-					$image->save('thumbs/tbs'.$randomName);
+					$image->save($uploaddir.'thumbs/tbs'.$randomName);
 				
 				}
 
 			// echo $type ;
+			
 			}
 			else {
 				// Показать сообщение об ошибке, если что-то пойдет не так.
