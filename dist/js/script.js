@@ -271,7 +271,7 @@ $('#myModal').on('show.bs.modal', function (event) {
     // $(this).css("margin-right", "-20px");
     $(this).find('#myModalLabel').text(content); 
    
-    $(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
+    $(this).find('#im').html('<img src="'+im+'" alt=" " class="center-block img-rounded img-thumbnail">'); 
     // $(this).find('#im').html('<img src="'+im+'" alt=" "class="img-fluid center-block img-rounded img-thumbnail">'); 
     // $(this).find('#im-download').html('<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <a href="'+im+'" type="button" class="btn btn-primary"download="'+im+'" >Сохранить картинку</a>'); 
     // <a href="img.jpg" type="button" class="btn btn-primary"download="img.jpg" id="im-download">Сохранить картинку</a>

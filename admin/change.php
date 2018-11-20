@@ -109,7 +109,8 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     }
     else //$action=="change"
     { 
-        if ($tbl=="obj" or $tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop"){$fieldid='obj_id';}
+        // if ($tbl=="obj" or $tbl=="obj_download" or $tbl=="obj_alias" or $tbl=="obj_in_addition" or $tbl=="obj_furnitur_prop")
+        // {$fieldid='obj_id';}
 
         if(stristr($field, 'number_in_order') ) 
         {
