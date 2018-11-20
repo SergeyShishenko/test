@@ -1,7 +1,7 @@
 <?php
 //подключаем конфигурационный файл бд
 define('__ROOT__', dirname(dirname(__FILE__))); 
-require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
+require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
 
 $dbconn=dbconnect();
 //проверяем $_POST["content_txt"] на пустое значение

@@ -13,7 +13,9 @@
     <?php
     //подключаем конфигурационный файл
     define('__ROOT__', dirname(dirname(__FILE__))); 
-    require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
+    // require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
+    require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
+    // echo dirname(__ROOT__).'/DATA/TABLES/configDB.php';
     $dbconn=dbconnect();
     // //MySQL запрос
     $Result_head = mysqli_query($dbconn,"SELECT * FROM head ORDER BY `head`.`number_in_order_head` ASC");

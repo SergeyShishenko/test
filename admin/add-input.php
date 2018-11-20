@@ -1,7 +1,7 @@
 <?php
 //подключаем конфигурационный файл бд
 define('__ROOT__', dirname(dirname(__FILE__))); 
-require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
+require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
 
 $dbconn=dbconnect();
 //проверяем $_POST["content_txt"] на пустое значение
@@ -516,11 +516,13 @@ switch ($tbl) {
                         mysqli_free_result($Result_obj_in_addition);   
                     echo '     
                     </ul>
+                    <ul class="file-list" id="download-list">
                     ';
                     $Result_obj_download = mysqli_query($dbconn,"SELECT *  FROM obj_download WHERE obj_id = $DbNumberID");//MySQL запрос
                     $row_obj_download = mysqli_fetch_array($Result_obj_download);//получаем все записи из таблицы
-                    echo '
-                    <ul class="file-list" >
+                    if (isset($row_obj_download["doc_obj"]))
+                    {
+                        echo '
                         <li class="file " id="download-0">
                             <a class="file-link" href="javascript:void(0)" title="'.$row_obj_download["doc_obj"].'">
                                 <div class="file-thumbnail file-thumbnail-doc"></div>
@@ -534,6 +536,11 @@ switch ($tbl) {
                             <span class="glyphicon glyphicon-remove"></span>
                             </button>
                         </li>
+                        ';
+                    }
+                    if (isset($row_obj_download["xls_obj"]))
+                    {
+                        echo '
                         <li class="file  " id="download-1">
                             <a class="file-link" href="javascript:void(0)" title="'.$row_obj_download["xls_obj"].'">
                                 <div class="file-thumbnail file-thumbnail-xls"></div>
@@ -547,6 +554,11 @@ switch ($tbl) {
                             <span class="glyphicon glyphicon-remove"></span>
                             </button>
                         </li>
+                        ';
+                    }
+                    if (isset($row_obj_download["pdf_obj"]))
+                    {
+                        echo '
                         <li class="file  " id="download-2">
                             <a class="file-link" href="javascript:void(0)" title="'.$row_obj_download["pdf_obj"].'">
                                 <div class="file-thumbnail file-thumbnail-pdf"></div>
@@ -559,7 +571,12 @@ switch ($tbl) {
                             <button class="file-delete-btn  del" title="Delete" type="button">
                                 <span class="glyphicon glyphicon-remove"></span>
                             </button>
-                        </li>                      
+                        </li>  
+                        ';
+                    } 
+                    if (isset($row_obj_download["dwg_obj"]))
+                    {
+                        echo '                  
                         <li class="file " id="file-4">
                             <a class="file-link" href="javascript:void(0)" title="'.$row_obj_download["dwg_obj"].'">
                                 <div class="file-thumbnail file-thumbnail-dwg"></div>
@@ -572,7 +589,10 @@ switch ($tbl) {
                             <button class="file-delete-btn  del" title="Delete" type="button">
                             <span class="glyphicon glyphicon-remove"></span>
                             </button>
-                        </li>                      
+                        </li> 
+                        ';
+                    } 
+                    echo '                       
                     </ul>
                 </div>
             </div>

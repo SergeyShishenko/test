@@ -11,7 +11,7 @@
 /* .file[class*=sq-] {
     height: auto
 } */
-
+#file-list{float:left;}
 .file-thumbnail {
     background-color: #efefef;
     background-position: center;
