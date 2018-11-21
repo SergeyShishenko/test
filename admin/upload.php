@@ -72,7 +72,7 @@ $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 				
 				}
 
-			// echo $type ;
+			echo $randomName ;
 			
 			}
 			else {
