@@ -5,14 +5,19 @@
  // require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
  require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
 
-//  $dbconn=dbconnect();
+ $dbconn=dbconnect();
 // echo  PATH__FILES ."!!!!!!!!!!!!!!";
 // exit();
+if ( !$dbconn ) {
+    die(mysql_error());
+}
 
 // Вытаскиваем необходимые данные
 $file = $_POST['value'];
 $name = $_POST['name'];
 $type = $_POST['type'];
+$id  = $_POST['id'];
+// $field  = $_POST['field'];
 
 
 // Получаем расширение файла
@@ -46,15 +51,23 @@ $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 						break;
 					case "pdf":
 						$uploaddir = '../'.PATH__FILES.'pdf/';
+						$field="pdf_obj";
+						$tbl="obj_download";
 						break;
 					case "word":
 						$uploaddir = '../'.PATH__FILES.'doc/';
+						$field="doc_obj";
+						$tbl="obj_download";
 						break;
 					case "excel":
 						$uploaddir = '../'.PATH__FILES.'xls/';
+						$field="xls_obj";
+						$tbl="obj_download";
 						break;
 					case "dwg":
 						$uploaddir = '../'.PATH__FILES.'dwg/';
+						$field="dwg_obj";
+						$tbl="obj_download";
 						break;
 			}
 			if(file_put_contents($uploaddir.$randomName, $decodedData)) {
@@ -72,7 +85,19 @@ $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 				
 				}
 
-			echo $randomName ;
+			// mysqli_query($dbconn, "UPDATE `obj_download` SET `xls_obj` = $randomName WHERE `obj`.`obj_id`=$id");
+			$sql = "UPDATE `$tbl` SET `$field` = '$randomName' WHERE `obj_id`=$id";
+			if(mysqli_query($dbconn,$sql))
+        {        
+            // $insert_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
+          
+    
+        }else{//вывод ошибки 
+            header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+            exit();
+        }
+
+			echo $randomName." ".$id;
 			
 			}
 			else {
@@ -96,6 +121,6 @@ $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 		// break;
 // }
 
-
+mysqli_close($dbconn);
 
 ?>

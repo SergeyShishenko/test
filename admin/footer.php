@@ -826,8 +826,9 @@
                                     break;
                             }
                             // alert(tmime);
-
-                            dataArray.push({name : file.name, value : this.result, bground : background, type : tmime});
+                            
+                     
+                            dataArray.push({name : file.name, value : this.result, bground : background, type : tmime, id : $("#id").val().split("_")[1]});
                             addImage((dataArray.length-1));
                             // tmime="";
                         }; 
@@ -947,15 +948,18 @@ $("body").on("click","#upload-button .count",function() {
             var x = 0;
             
             $('#loading-content').html('Загружен '+dataArray[0].name);
+            // var dataplas=[];
             // Для каждого файла
             $.each(dataArray, function(index, file) {	
+
                 // загружаем страницу и передаем значения, используя HTTP POST запрос 
-                $.post('upload.php', dataArray[index], function(data) {
+                //  dataplas= $.merge( {tbl : "obj", field : "name_obj"}, dataArray[index]);
+                $.post('upload.php', dataArray[index] , function(data) {
                 
                     var fileName = dataArray[index].name;
                     ++x;
                     // alert(data);
-                    console.log(data);
+                    console.log(x+" : "+data);
                     // Изменение бара загрузки
                     $('#loading-bar .loading-color').css({'width' : totalPercent*(x)+'%'});
                     // Если загрузка закончилась
