@@ -3491,7 +3491,7 @@ include 'inc-version-css-js.php';
                                     <TD>
                                         <TABLE >
                                             <TR>
-                                                <TD data-tooltip="ДОКУМЕНТ 117" class="hover mapsite " id="footer27" >
+                                                <TD data-tooltip="ДОКУМЕНТ 117" class="hover mapsite " id="footer26" >
                                                     <p data-href="metodichki-dokument-117.php"  data-img="./dist/images/no-foto.png" id="floating28">ДОКУМЕНТ 117<span><br>~-dokument-117</span></p></TD>
                                                 <TD>
                                                     <TABLE >

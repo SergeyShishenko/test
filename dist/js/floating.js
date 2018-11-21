@@ -826,18 +826,18 @@ $(function(){ // лестницы
   });
 
 
-  $(function(){ // стандартные узлы последний
-    var topPos = $('#floating6106').offset().top-55;// текущая позиция блока-f
+//   $(function(){ // стандартные узлы последний
+//     var topPos = $('#floating6106').offset().top-55;// текущая позиция блока-f
     
-    $(window).scroll(function() { 
-    var top = $(document).scrollTop(), // число прокрутки
-        pip = $('#footer6106').offset().top-55;  // текущая позиция нижнего блока
-        height = $('#floating6106').outerHeight(); // высота блока-f
-    if (top > topPos && top < pip - height) {$('#floating6106').addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
-    else if (top > pip - height) {$('#floating6106').removeClass('fixed-div');}
-    else {$('#floating6106').removeClass('fixed-div');}
-    });
-  });
+//     $(window).scroll(function() { 
+//     var top = $(document).scrollTop(), // число прокрутки
+//         pip = $('#footer6106').offset().top-55;  // текущая позиция нижнего блока
+//         height = $('#floating6106').outerHeight(); // высота блока-f
+//     if (top > topPos && top < pip - height) {$('#floating6106').addClass('fixed-div').removeAttr("style");}// скролл больше позиции блока-f и меньше позиции нижнего минус высота блока-f
+//     else if (top > pip - height) {$('#floating6106').removeClass('fixed-div');}
+//     else {$('#floating6106').removeClass('fixed-div');}
+//     });
+//   });
 
   ///////
   $(function(){ // листы титульные
