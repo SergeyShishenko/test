@@ -1,5 +1,5 @@
 <html>
-<head><title>Проверка отладочной заглушки для sendmail</title></head>
+<head><title>РџСЂРѕРІРµСЂРєР° РѕС‚Р»Р°РґРѕС‡РЅРѕР№ Р·Р°РіР»СѓС€РєРё РґР»СЏ sendmail</title></head>
 <body>
 
 <?
@@ -11,7 +11,7 @@ if(!@$body) $body="Hello!\nToday is ".date("Y-m-d").".\nThis is the test\nmail b
 
 <form action="<?=$_SERVER["REQUEST_URI"]?>" method=POST>
 <?if (empty($_GET['noform'])) {?>
-	<h2>Послать тестовое письмо:</h2>
+	<h2>РџРѕСЃР»Р°С‚СЊ С‚РµСЃС‚РѕРІРѕРµ РїРёСЃСЊРјРѕ:</h2>
 	<table  cellpadding=5 cellspacing=2>
 	<tr valign=top>
 		<td>To:</td>
@@ -22,19 +22,19 @@ if(!@$body) $body="Hello!\nToday is ".date("Y-m-d").".\nThis is the test\nmail b
 		<td><input type=text name=subject value="<?=@HtmlSpecialChars($subject)?>"></td>
 	</tr>
 	<tr valign=top>
-		<td>Текст:</td>
+		<td>РўРµРєСЃС‚:</td>
 		<td><textarea name=body cols=50 rows=4><?=@HtmlSpecialChars($body)?></textarea></td>
 	</tr>
 	<tr valign=top>
 		<td colspan=2>
-			<input type=submit name=doSendSendmail value="Послать через mail() (sendmail)">
-			<input type=submit name=doSendSmtp value="Послать через fsockopen() (SMTP)">
-			<input type=submit name=doDel value="Очистить отладочную директорию">
+			<input type=submit name=doSendSendmail value="РџРѕСЃР»Р°С‚СЊ С‡РµСЂРµР· mail() (sendmail)">
+			<input type=submit name=doSendSmtp value="РџРѕСЃР»Р°С‚СЊ С‡РµСЂРµР· fsockopen() (SMTP)">
+			<input type=submit name=doDel value="РћС‡РёСЃС‚РёС‚СЊ РѕС‚Р»Р°РґРѕС‡РЅСѓСЋ РґРёСЂРµРєС‚РѕСЂРёСЋ">
 		</td>
 	</tr>
 	</table>
 <?} else {?>
-	<input type=submit name=doDel value="Очистить отладочную директорию">
+	<input type=submit name=doDel value="РћС‡РёСЃС‚РёС‚СЊ РѕС‚Р»Р°РґРѕС‡РЅСѓСЋ РґРёСЂРµРєС‚РѕСЂРёСЋ">
 <?}?>
 </form>
 
@@ -48,15 +48,15 @@ if (@$doDel) {
 			unlink("$dir/$e");
 		}
 	}
-	//echo "<h3>Письма удалены.</h3>";
+	//echo "<h3>РџРёСЃСЊРјР° СѓРґР°Р»РµРЅС‹.</h3>";
 }
 
 if (@$doSendSendmail) {
-	echo "<h2>Посылаем письмо через mail()...</h2>\n";
+	echo "<h2>РџРѕСЃС‹Р»Р°РµРј РїРёСЃСЊРјРѕ С‡РµСЂРµР· mail()...</h2>\n";
 	if (mail($to,$subject,$body,"From: \"PHP mail()\" <mail@php.net>")) {
-		echo "OK, функция mail() сработала корректно.<br>\n";
+		echo "OK, С„СѓРЅРєС†РёСЏ mail() СЃСЂР°Р±РѕС‚Р°Р»Р° РєРѕСЂСЂРµРєС‚РЅРѕ.<br>\n";
 	} else {
-		echo "При вызове mail() произошла ошибка.<br>\n";
+		echo "РџСЂРё РІС‹Р·РѕРІРµ mail() РїСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°.<br>\n";
 	}
 }
 
@@ -64,7 +64,7 @@ if (@$doSendSmtp) {
 	function waitAnswer($f) {
 		fread($f, 128);
 	}
-	echo "<h2>Посылаем письмо...</h2>\n";
+	echo "<h2>РџРѕСЃС‹Р»Р°РµРј РїРёСЃСЊРјРѕ...</h2>\n";
 	$f = fsockopen('localhost', 25, $errno, $errstr, 3);
 	if ($f) {
 		fwrite($f, "HELO localhost\r\n");
@@ -85,18 +85,18 @@ if (@$doSendSmtp) {
 		waitAnswer($f);
 	}
 	if ($f && fclose($f)) {
-		echo "OK, письмо отправлено успешно.<br>\n";
+		echo "OK, РїРёСЃСЊРјРѕ РѕС‚РїСЂР°РІР»РµРЅРѕ СѓСЃРїРµС€РЅРѕ.<br>\n";
 		sleep(1); // wait for mail is arrived
 	} else {
-		echo "При соединении с сервером произошла ошибка.<br>\n";
+		echo "РџСЂРё СЃРѕРµРґРёРЅРµРЅРёРё СЃ СЃРµСЂРІРµСЂРѕРј РїСЂРѕРёР·РѕС€Р»Р° РѕС€РёР±РєР°.<br>\n";
 	}
 }
 
 
 $d = @opendir($dir);
 if ($d) {
-	echo "<h2>Отосланные письма в директории <tt>$dir</tt></h2>\n";
-	echo "<p>Каждое письмо хранится в отдельном файле с расширением .eml. Это очень удобно, т.к. позволяет открыть такой файл в Outlook и просмотреть, как письмо выглядит с учетом всех перекодировок и преобразований.</p>";
+	echo "<h2>РћС‚РѕСЃР»Р°РЅРЅС‹Рµ РїРёСЃСЊРјР° РІ РґРёСЂРµРєС‚РѕСЂРёРё <tt>$dir</tt></h2>\n";
+	echo "<p>РљР°Р¶РґРѕРµ РїРёСЃСЊРјРѕ С…СЂР°РЅРёС‚СЃСЏ РІ РѕС‚РґРµР»СЊРЅРѕРј С„Р°Р№Р»Рµ СЃ СЂР°СЃС€РёСЂРµРЅРёРµРј .eml. Р­С‚Рѕ РѕС‡РµРЅСЊ СѓРґРѕР±РЅРѕ, С‚.Рє. РїРѕР·РІРѕР»СЏРµС‚ РѕС‚РєСЂС‹С‚СЊ С‚Р°РєРѕР№ С„Р°Р№Р» РІ Outlook Рё РїСЂРѕСЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє РїРёСЃСЊРјРѕ РІС‹РіР»СЏРґРёС‚ СЃ СѓС‡РµС‚РѕРј РІСЃРµС… РїРµСЂРµРєРѕРґРёСЂРѕРІРѕРє Рё РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёР№.</p>";
 	$list = array();
 	while (false !== ($e = readdir($d))) {
 		if ($e[0] == ".") continue;
@@ -107,14 +107,14 @@ if ($d) {
 	if ($list) {
 		foreach ($list as $fname) {
 			$f = @fopen($fname, "r"); if (!$f) continue;
-			echo "<h3>Файл <tt>$fname</tt>:</h3>\n";
+			echo "<h3>Р¤Р°Р№Р» <tt>$fname</tt>:</h3>\n";
 			echo "<pre>\n";
 			echo HtmlSpecialChars(fread($f,filesize($fname)));
 			echo "</pre>\n";
 			echo "<hr>";
 		}
 	} else {
-		echo "Директория пуста.";
+		echo "Р”РёСЂРµРєС‚РѕСЂРёСЏ РїСѓСЃС‚Р°.";
 	}
 }
 ?>

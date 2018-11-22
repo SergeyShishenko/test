@@ -1,25 +1,43 @@
 <?php
 /* vim: set expandtab sw=4 ts=4 sts=4: */
 /**
+ * Table export
  *
  * @package PhpMyAdmin
  */
+use PMA\libraries\config\PageSettings;
+use PMA\libraries\Response;
 
 /**
  *
  */
-require_once './libraries/common.inc.php';
+require_once 'libraries/common.inc.php';
+require_once 'libraries/display_export.lib.php';
+require_once 'libraries/config/user_preferences.forms.php';
+require_once 'libraries/config/page_settings.forms.php';
 
-$GLOBALS['js_include'][] = 'export.js';
-$GLOBALS['js_include'][] = 'codemirror/lib/codemirror.js';
-$GLOBALS['js_include'][] = 'codemirror/mode/mysql/mysql.js';
+PageSettings::showGroup('Export');
+
+$response = PMA\libraries\Response::getInstance();
+$header   = $response->getHeader();
+$scripts  = $header->getScripts();
+$scripts->addFile('export.js');
+
+// Get the relation settings
+$cfgRelation = PMA_getRelationsParam();
+
+// handling export template actions
+if (isset($_REQUEST['templateAction']) && $cfgRelation['exporttemplateswork']) {
+    PMA_handleExportTemplateActions($cfgRelation);
+    exit;
+}
 
 /**
- * Gets tables informations and displays top links
+ * Gets tables information and displays top links
  */
-require_once './libraries/tbl_common.php';
+require_once 'libraries/tbl_common.inc.php';
 $url_query .= '&amp;goto=tbl_export.php&amp;back=tbl_export.php';
-require_once './libraries/tbl_info.inc.php';
+require_once 'libraries/tbl_info.inc.php';
 
 // Dump of a table
 
@@ -29,68 +47,95 @@ $export_page_title = __('View dump (schema) of table');
 // generate WHERE clause (if we are asked to export specific rows)
 
 if (! empty($sql_query)) {
-    // Parse query so we can work with tokens
-    $parsed_sql = PMA_SQP_parse($sql_query);
-    $analyzed_sql = PMA_SQP_analyze($parsed_sql);
+    $parser = new SqlParser\Parser($sql_query);
 
-    // Need to generate WHERE clause?
-    if (isset($where_clause)) {
-        // Yes => rebuild query from scratch; this doesn't work with nested
-        // selects :-(
-        $sql_query = 'SELECT ';
+    if ((!empty($parser->statements[0]))
+        && ($parser->statements[0] instanceof SqlParser\Statements\SelectStatement)
+    ) {
 
-        if (isset($analyzed_sql[0]['queryflags']['distinct'])) {
-            $sql_query .= ' DISTINCT ';
+        // Finding aliases and removing them, but we keep track of them to be
+        // able to replace them in select expression too.
+        $aliases = array();
+        foreach ($parser->statements[0]->from as $from) {
+            if ((!empty($from->table)) && (!empty($from->alias))) {
+                $aliases[$from->alias] = $from->table;
+                // We remove the alias of the table because they are going to
+                // be replaced anyway.
+                $from->alias = null;
+                $from->expr = null; // Force rebuild.
+            }
         }
 
-        $sql_query .= $analyzed_sql[0]['select_expr_clause'];
+        // Rebuilding the SELECT and FROM clauses.
+        $replaces = array(
+            array(
+                'FROM', 'FROM ' . SqlParser\Components\ExpressionArray::build(
+                    $parser->statements[0]->from
+                ),
+            ),
+        );
 
-        if (!empty($analyzed_sql[0]['from_clause'])) {
-            $sql_query .= ' FROM ' . $analyzed_sql[0]['from_clause'];
-        }
-
-        $wheres = array();
-
-        if (isset($where_clause) && is_array($where_clause)
-         && count($where_clause) > 0) {
-            $wheres[] = '(' . implode(') OR (', $where_clause) . ')';
-        }
-
-        if (!empty($analyzed_sql[0]['where_clause'])) {
-            $wheres[] = $analyzed_sql[0]['where_clause'];
-        }
-
-        if (count($wheres) > 0) {
-            $sql_query .= ' WHERE (' . implode(') AND (', $wheres) . ')';
+        // Checking if the WHERE clause has to be replaced.
+        if ((!empty($where_clause)) && (is_array($where_clause))) {
+            $replaces[] = array(
+                'WHERE', 'WHERE (' . implode(') OR (', $where_clause) . ')'
+            );
         }
 
-        if (!empty($analyzed_sql[0]['group_by_clause'])) {
-            $sql_query .= ' GROUP BY ' . $analyzed_sql[0]['group_by_clause'];
+        // Preparing to remove the LIMIT clause.
+        $replaces[] = array('LIMIT', '');
+
+        // Replacing the clauses.
+        $sql_query = SqlParser\Utils\Query::replaceClauses(
+            $parser->statements[0],
+            $parser->list,
+            $replaces
+        );
+
+        // Removing the aliases by finding the alias followed by a dot.
+        $tokens = SqlParser\Lexer::getTokens($sql_query);
+        foreach ($aliases as $alias => $table) {
+            $tokens = SqlParser\Utils\Tokens::replaceTokens(
+                $tokens,
+                array(
+                    array(
+                        'value_str' => $alias,
+                    ),
+                    array(
+                        'type' => SqlParser\Token::TYPE_OPERATOR,
+                        'value_str' => '.',
+                    )
+                ),
+                array(
+                    new SqlParser\Token($table),
+                    new SqlParser\Token('.',SqlParser\Token::TYPE_OPERATOR)
+                )
+            );
         }
-        if (!empty($analyzed_sql[0]['having_clause'])) {
-            $sql_query .= ' HAVING ' . $analyzed_sql[0]['having_clause'];
-        }
-        if (!empty($analyzed_sql[0]['order_by_clause'])) {
-            $sql_query .= ' ORDER BY ' . $analyzed_sql[0]['order_by_clause'];
-        }
-    } else {
-        // Just crop LIMIT clause
-        $sql_query = $analyzed_sql[0]['section_before_limit'] . $analyzed_sql[0]['section_after_limit'];
+        $sql_query = SqlParser\TokensList::build($tokens);
     }
-    $message = PMA_Message::success();
+
+    echo PMA\libraries\Util::getMessage(PMA\libraries\Message::success());
 }
 
-/**
- * Displays top menu links
- */
-require './libraries/tbl_links.inc.php';
+require_once 'libraries/display_export.lib.php';
 
-$export_type = 'table';
-require_once './libraries/display_export.lib.php';
-
-
-/**
- * Displays the footer
- */
-require './libraries/footer.inc.php';
-?>
+if (! isset($sql_query)) {
+    $sql_query = '';
+}
+if (! isset($num_tables)) {
+    $num_tables = 0;
+}
+if (! isset($unlim_num_rows)) {
+    $unlim_num_rows = 0;
+}
+if (! isset($multi_values)) {
+    $multi_values = '';
+}
+$response = Response::getInstance();
+$response->addHTML(
+    PMA_getExportDisplay(
+        'table', $db, $table, $sql_query, $num_tables,
+        $unlim_num_rows, $multi_values
+    )
+);

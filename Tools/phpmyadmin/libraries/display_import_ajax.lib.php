@@ -1,91 +1,135 @@
 <?php
 /* vim: set expandtab sw=4 ts=4 sts=4: */
 /**
+* Handles plugins that show the upload progress
 *
 * @package PhpMyAdmin
 */
 
-if (!defined('PHPMYADMIN')) {
-    exit;
-}
 /**
-  * constant for differenciating array in $_SESSION variable
-  */
-$SESSION_KEY = '__upload_status';
+ * Sets up some variables for upload progress
+ *
+ * @return array
+ *
+ */
+function PMA_uploadProgressSetup()
+{
+    /**
+     * constant for differentiating array in $_SESSION variable
+     */
+    $SESSION_KEY = '__upload_status';
 
-/**
-  * sets default plugin for handling the import process
-  */
-$_SESSION[$SESSION_KEY]["handler"] = "";
+    /**
+     * sets default plugin for handling the import process
+     */
+    $_SESSION[$SESSION_KEY]["handler"] = "";
 
-/**
-  * unique ID for each upload
-  */
-$upload_id = uniqid("");
+    /**
+     * unique ID for each upload
+     */
+    $upload_id = uniqid("");
 
-/**
-  * list of available plugins
-  */
-$plugins = array(
-       "uploadprogress",
-       "apc",
-       "noplugin"
-       ); // available plugins. Each plugin has own checkfunction in display_import_ajax.lib.php and own file with functions in upload_#KEY#.php
+    /**
+     * list of available plugins
+     *
+     * Each plugin has own checkfunction in display_import_ajax.lib.php
+     * and own file with functions in upload_#KEY#.php
+     */
+    $plugins = array(
+        // PHP 5.4 session-based upload progress is problematic, see bug 3964
+        //"session",
+        "progress",
+        "apc",
+        "noplugin"
+    );
 
-// select available plugin
-foreach ($plugins as $plugin) {
-    $check = "PMA_import_" . $plugin . "Check";
+    // select available plugin
+    foreach ($plugins as $plugin) {
+        $check = "PMA_Import_" . $plugin . "Check";
 
-    if ($check()) {
-        $_SESSION[$SESSION_KEY]["handler"] = $plugin;
-        include_once "import/upload/" . $plugin . ".php";
-        break;
+        if ($check()) {
+            $upload_class = 'PMA\libraries\plugins\import\upload\Upload' . ucwords(
+                $plugin
+            );
+            $_SESSION[$SESSION_KEY]["handler"] = $upload_class;
+            break;
+        }
     }
+    return array($SESSION_KEY, $upload_id, $plugins);
 }
 
 /**
   * Checks if APC bar extension is available and configured correctly.
   *
-  * @return true if APC extension is available and if rfc1867 is enabled, false if it is not
+  * @return boolean true if APC extension is available and if rfc1867 is enabled,
+  *                      false if it is not
   */
-function PMA_import_apcCheck()
+function PMA_Import_apcCheck()
 {
-    if (! extension_loaded('apc') || ! function_exists('apc_fetch') || ! function_exists('getallheaders')) {
+    if (! extension_loaded('apc')
+        || ! function_exists('apc_fetch')
+        || ! function_exists('getallheaders')
+    ) {
         return false;
     }
     return (ini_get('apc.enabled') && ini_get('apc.rfc1867'));
 }
 
 /**
-  * Checks if UploadProgress bar extension is available.
-  *
-  * @return true if UploadProgress extension is available, false if it is not
-  */
-function PMA_import_uploadprogressCheck()
+ * Checks if PMA\libraries\plugins\import\upload\UploadProgress bar extension is
+ * available.
+ *
+ * @return boolean true if PMA\libraries\plugins\import\upload\UploadProgress
+ * extension is available, false if it is not
+ */
+function PMA_Import_progressCheck()
 {
-    if (! function_exists("uploadprogress_get_info") || ! function_exists('getallheaders')) {
+    if (! function_exists("uploadprogress_get_info")
+        || ! function_exists('getallheaders')
+    ) {
         return false;
     }
     return true;
 }
+
 /**
-  * Default plugin for handling import. If no other plugin is available, noplugin is used.
+  * Checks if PHP 5.4 session upload-progress feature is available.
   *
-  * @return true
+  * @return boolean true if PHP 5.4 session upload-progress is available,
+  *                 false if it is not
   */
-function PMA_import_nopluginCheck()
+function PMA_Import_sessionCheck()
+{
+    if (! ini_get('session.upload_progress.enabled')) {
+        return false;
+    }
+    return true;
+}
+
+/**
+  * Default plugin for handling import.
+  * If no other plugin is available, noplugin is used.
+  *
+  * @return boolean true
+  */
+function PMA_Import_nopluginCheck()
 {
     return true;
 }
 
 /**
-  * The function outputs json encoded status of uploaded. It uses PMA_getUploadStatus, which is defined in plugin's file.
+  * The function outputs json encoded status of uploaded.
+  * It uses PMA_getUploadStatus, which is defined in plugin's file.
   *
-  * @param $id - ID of transfer, usually $upload_id from display_import_ajax.lib.php
+  * @param string $id ID of transfer, usually $upload_id
+  *                   from display_import_ajax.lib.php
+  *
+  * @return void
   */
 function PMA_importAjaxStatus($id)
 {
-    header('Content-type: application/json');
-    echo json_encode(PMA_getUploadStatus($id));
+    PMA_headerJSON();
+    echo json_encode(
+        $_SESSION[$GLOBALS['SESSION_KEY']]['handler']::getUploadStatus($id)
+    );
 }
-?>

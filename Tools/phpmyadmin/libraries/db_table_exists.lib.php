@@ -6,13 +6,15 @@
  *
  * @package PhpMyAdmin
  */
+use PMA\libraries\Message;
+
 if (! defined('PHPMYADMIN')) {
     exit;
 }
 
 if (empty($is_db)) {
-    if (strlen($db)) {
-        $is_db = @PMA_DBI_select_db($db);
+    if (mb_strlen($db)) {
+        $is_db = @$GLOBALS['dbi']->selectDb($db);
     } else {
         $is_db = false;
     }
@@ -20,56 +22,75 @@ if (empty($is_db)) {
     if (! $is_db) {
         // not a valid db name -> back to the welcome page
         if (! defined('IS_TRANSFORMATION_WRAPPER')) {
-            $url_params = array('reload' => 1);
-            if (isset($message)) {
-                $url_params['message'] = $message;
+            $response = PMA\libraries\Response::getInstance();
+            if ($response->isAjax()) {
+                $response->setRequestStatus(false);
+                $response->addJSON(
+                    'message',
+                    Message::error(__('No databases selected.'))
+                );
+            } else {
+                $url_params = array('reload' => 1);
+                if (isset($message)) {
+                    $url_params['message'] = $message;
+                }
+                if (! empty($sql_query)) {
+                    $url_params['sql_query'] = $sql_query;
+                }
+                if (isset($show_as_php)) {
+                    $url_params['show_as_php'] = $show_as_php;
+                }
+                PMA_sendHeaderLocation(
+                    './index.php'
+                    . PMA_URL_getCommon($url_params, 'text')
+                );
             }
-            if (! empty($sql_query)) {
-                $url_params['sql_query'] = $sql_query;
-            }
-            if (isset($show_as_php)) {
-                $url_params['show_as_php'] = $show_as_php;
-            }
-            PMA_sendHeaderLocation(
-                $cfg['PmaAbsoluteUri'] . 'main.php'
-                    . PMA_generate_common_url($url_params, '&'));
+            exit;
         }
-        exit;
     }
 } // end if (ensures db exists)
 
-if (empty($is_table) && !defined('PMA_SUBMIT_MULT') && ! defined('TABLE_MAY_BE_ABSENT')) {
+if (empty($is_table)
+    && !defined('PMA_SUBMIT_MULT')
+    && !defined('TABLE_MAY_BE_ABSENT')
+) {
     // Not a valid table name -> back to the db_sql.php
 
-    if (strlen($table)) {
-        $is_table = isset(PMA_Table::$cache[$db][$table]);
+    if (mb_strlen($table)) {
+        $is_table = $GLOBALS['dbi']->getCachedTableContent(array($db, $table), false);
 
         if (! $is_table) {
-            $_result = PMA_DBI_try_query(
-                'SHOW TABLES LIKE \'' . PMA_sqlAddSlashes($table, true) . '\';',
-                null, PMA_DBI_QUERY_STORE);
-            $is_table = @PMA_DBI_num_rows($_result);
-            PMA_DBI_free_result($_result);
+            $_result = $GLOBALS['dbi']->tryQuery(
+                'SHOW TABLES LIKE \''
+                . PMA\libraries\Util::sqlAddSlashes($table, true) . '\';',
+                null, PMA\libraries\DatabaseInterface::QUERY_STORE
+            );
+            $is_table = @$GLOBALS['dbi']->numRows($_result);
+            $GLOBALS['dbi']->freeResult($_result);
         }
     } else {
         $is_table = false;
     }
 
     if (! $is_table) {
-        if (! defined('IS_TRANSFORMATION_WRAPPER')) {
-            if (strlen($table)) {
+        if (!defined('IS_TRANSFORMATION_WRAPPER')) {
+            if (mb_strlen($table)) {
                 // SHOW TABLES doesn't show temporary tables, so try select
                 // (as it can happen just in case temporary table, it should be
                 // fast):
 
                 /**
-                 * @todo should this check really only happen if IS_TRANSFORMATION_WRAPPER?
+                 * @todo should this check really
+                 * only happen if IS_TRANSFORMATION_WRAPPER?
                  */
-                $_result = PMA_DBI_try_query(
-                    'SELECT COUNT(*) FROM ' . PMA_backquote($table) . ';',
-                    null, PMA_DBI_QUERY_STORE);
-                $is_table = ($_result && @PMA_DBI_num_rows($_result));
-                PMA_DBI_free_result($_result);
+                $_result = $GLOBALS['dbi']->tryQuery(
+                    'SELECT COUNT(*) FROM ' . PMA\libraries\Util::backquote($table)
+                    . ';',
+                    null,
+                    PMA\libraries\DatabaseInterface::QUERY_STORE
+                );
+                $is_table = ($_result && @$GLOBALS['dbi']->numRows($_result));
+                $GLOBALS['dbi']->freeResult($_result);
             }
 
             if (! $is_table) {
@@ -83,4 +104,3 @@ if (empty($is_table) && !defined('PMA_SUBMIT_MULT') && ! defined('TABLE_MAY_BE_A
         }
     }
 } // end if (ensures table exists)
-?>
