@@ -4,6 +4,10 @@ define('__ROOT__', dirname(dirname(__FILE__)));
 require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
 
 $dbconn=dbconnect();
+if ($dbconn->connect_errno) {
+    printf("Не удалось подключиться: %s\n", $dbconn->connect_error);
+    exit();
+}
 //проверяем $_POST["content_txt"] на пустое значение
 if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
 {
@@ -14,263 +18,274 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     $contentToSave = filter_var($_POST["content_txt"],FILTER_SANITIZE_STRING);
 
     // Insert sanitize string in record
-    if(mysqli_query($dbconn,"INSERT INTO head(name_head) VALUES('".$contentToSave."')"))
+    // INSERT INTO `head` (`head_id`, `name_head`, `data_href_head`, `number_in_order_head`, `disabled`) VALUES (NULL, '".$contentToSave."', NULL, NULL, '0');
+    if(mysqli_query($dbconn,"INSERT INTO `head` (`head_id`, `name_head`, `data_href_head`, `number_in_order_head`, `disabled`) VALUES (NULL, '$contentToSave', NULL, NULL, '0')"))
     {
         //Record is successfully inserted, respond to ajax request
         $head_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
-        
-        if(mysqli_query($dbconn,"INSERT INTO category(name_category,head_id) VALUES('Категория 1','.$head_id.')"))
+        // INSERT INTO `category` (`category_id`, `name_category`, `data_href_category`, `head_id`, `number_in_order_category`, `disabled`) VALUES (NULL, '', NULL, '$head_id', NULL, '0');
+        if(mysqli_query($dbconn,"INSERT INTO `category` (`category_id`, `name_category`, `data_href_category`, `head_id`, `number_in_order_category`, `disabled`) VALUES (NULL, 'Категория 1', NULL, '$head_id', '1', '0')"))
         {  
             //Record is successfully inserted, respond to ajax request
              $category_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
-
-                if(mysqli_query($dbconn,"INSERT INTO grupp(name_grupp,category_id) VALUES('Группа 1','.$category_id.')"))
+            //  INSERT INTO `grupp` (`grupp_id`, `name_grupp`, `data_href_grupp`, `category_id`, `number_in_order_grupp`, `disabled`) VALUES (NULL, 'Группа 1', NULL, '$category_id', '1', '0');
+            if(mysqli_query($dbconn,"INSERT INTO `grupp` (`grupp_id`, `name_grupp`, `data_href_grupp`, `category_id`, `number_in_order_grupp`, `disabled`) VALUES (NULL, 'Группа 1', NULL, '$category_id', '1', '0')"))
+            {  
+                //Record is successfully inserted, respond to ajax request
+                $grupp_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
+                // $sql = "INSERT INTO obj(name_obj,grupp_id) VALUES('Элемент 1','.$grupp_id.')";
+                     // INSERT INTO `obj` (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`) VALUES (NULL, 'Элемент 1', NULL, '', NULL, 'test.png', NULL, 'no-foto.png', NULL, NULL, '1', NULL);
+                // $sql = "INSERT INTO  `obj`(`name_obj`,`grupp_id`,`path_img_obj`,`fname_img_obj`,`fname_img_smoll_obj`,`template_obj`,`img_orientation_obj`) VALUES ('Элемент 1','$grupp_id','./dist/images/','test.png','test.png','shablony-dokumentov.php','album')";
+                $sql = "INSERT INTO `obj` (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`) VALUES (NULL, 'Элемент 1', '$grupp_id', '', NULL, 'test.png', NULL, 'no-foto.png', NULL, NULL, '1', NULL)";
+                if(mysqli_query($dbconn,$sql))
                 {  
                     //Record is successfully inserted, respond to ajax request
-                    $grupp_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
-                    // $sql = "INSERT INTO obj(name_obj,grupp_id) VALUES('Элемент 1','.$grupp_id.')";
-                    $sql = "INSERT INTO  `obj`(`name_obj`,`grupp_id`,`path_img_obj`,`fname_img_obj`,`fname_img_smoll_obj`,`template_obj`,`img_orientation_obj`) VALUES ('Элемент 1','$grupp_id','./dist/images/','test.png','test.png','shablony-dokumentov.php','album')";
-                        if(mysqli_query($dbconn,$sql))
-                        {  
-                            //Record is successfully inserted, respond to ajax request
-                            $obj_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
-                            mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$obj_id')");
-                            mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$obj_id')");
-                            mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_id`) VALUES ('$obj_id')");
-                            mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$obj_id')");
+                    $obj_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
 
-                            ?>                   
-                                    
-                                <div class="box col-md-12" id="item_<?php echo $head_id ?>"><!--Раздел--> 
-                                    <div class="box-inner">
-                                        <div class="box-header well">
-                                            <h2><i class="glyphicon glyphicon-th"></i> <span id="name_head_<?php echo $head_id ?>"><?php echo $contentToSave ?></span></h2>
-                                            <div class="box-icon">
-                                                <a href="#" class="btn btn-setting btn-round btn-default" 
-                                                    id="head-<?php echo $head_id ?>"
-                                                    data-content="РЕДАКТИРОВАТЬ РАЗДЕЛ"
-                                                    data-name="<?php echo $contentToSave ?>"
-                                                    data-href=""
-                                                    data-order=""
-                                                    data-toggle="modal"
-                                                    data-target="#myModal" 
-                                                    title="РЕДАКТИРОВАТЬ РАЗДЕЛ"  
-                                                    data-tbl="head"
-                                                    data-field="name_head"
-                                                    data-field-id="head_id"
-                                                    data-action="change"
-                                                    data-id="head_<?php echo $head_id ?>"
-                                                    >
-                                                    <i class="glyphicon glyphicon-edit"></i></a>
-                                                <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>  
-                                                <!-- <a href="#" class="btn btn-close btn-round btn-default" title="ДОБАВИТЬ РАЗДЕЛ"><i class="glyphicon glyphicon-plus-sign"></i></a> -->
-                                            </div>
-                                        </div>
+                    // mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$obj_id')");
+                    if(mysqli_query($dbconn,"INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$obj_id')")) {  }else{header('HTTP/1.1 500 Looks like mysql error, could not insert record obj_alias!'.mysqli_error($dbconn));exit();}
+                    
+                    // mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$obj_id')");
+                    if(mysqli_query($dbconn,"INSERT INTO  `obj_download`(`obj_id`) VALUES ('$obj_id')")) {  }else{header('HTTP/1.1 500 Looks like mysql error, could not insert record obj_download!'.mysqli_error($dbconn));exit();}
 
-                                        <div  class="box-content">
-                                            <div>
-                                                <!-- START PANEL -->
-                                                <div class="panel panel-transparent">  
-                                                    <div class="panel-body no-padding">
-                                                        <div class="row">
-                                                            <div class="col-sm-12">                                   
-                                                                <div class="box-icon">
-                                                                    <a href="#" class="btn btn-setting btn-round btn-default" 
-                                                                        data-content="ДОБАВИТЬ КАТЕГОРИЮ"
-                                                                        data-name="Категория 1"
-                                                                        data-href=""
-                                                                        data-order=""
-                                                                        data-toggle="modal"
-                                                                        data-target="#myModal" 
-                                                                        title="ДОБАВИТЬ КАТЕГОРИЮ"
-                                                                        data-tbl="category"
-                                                                        data-field="name_category"
-                                                                        data-field-id="category_id"
-                                                                        data-action="action"
-                                                                        data-id="category_<?php echo $category_id ?>"
-                                                                        >
-                                                                        <i class="glyphicon glyphicon-plus-sign"></i>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="panel panel-transparent ">
-                                                                    <!-- Nav tabs -->
-                                                                    <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx" id="parent-item_<?php echo $head_id ?>"><!--Категории--> 
-                                                                        <li class="active">
-                                                                            <a data-toggle="tab" href="#tab-fillup<?php echo $category_id ?>"
-                                                                            data-tbl="category"
-                                                                            data-title="КАТЕГОРИЮ" 
-                                                                            data-name="Категория 1"
-                                                                            data-href=""
-                                                                            data-order="" 
-                                                                            data-field="name_category"
-                                                                            data-field-id="category_id"
-                                                                            data-id="category_<?php echo $category_id ?>"
-                                                                            ><span  id="id_<?php echo $category_id ?>">Категория 1</span></a>
-                                                                        </li>                                                        
-                                                                    </ul>
-                                                                    <!-- Tab panes -->
-                                                                    <div class="tab-content">
-                                                                        <div class="tab-pane active" id="tab-fillup<?php echo $category_id ?>">
-                                                                            <div class="row column-seperation panelTab">
-                                                                                <div class="col-md-12">
-                                                                                    <div class="panel-body no-padding">
-                                                                                        <div class="row">
-                                                                                            <div class="box-icon ">
-                                                                                                <a href="#" class="btn btn-setting btn-round btn-default "
-                                                                                                    data-content="ДОБАВИТЬ ГРУППУ"
-                                                                                                    data-parent="category_id-<?php echo $category_id ?>"
-                                                                                                    data-name="Группа 1"
-                                                                                                    data-toggle="modal"
-                                                                                                    data-target="#myModal" 
-                                                                                                    title="ДОБАВИТЬ ГРУППУ"
+                    // mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_id`) VALUES ('$obj_id')");
+                    if(mysqli_query($dbconn,"INSERT INTO  `obj_furnitur_prop`(`obj_id`) VALUES ('$obj_id')")) {  }else{header('HTTP/1.1 500 Looks like mysql error, could not insert record obj_furnitur_prop!'.mysqli_error($dbconn));exit();}
+
+                    // mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$obj_id')");
+                    if(mysqli_query($dbconn,"INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$obj_id')")) {  }else{header('HTTP/1.1 500 Looks like mysql error, could not insert record obj_in_addition!'.mysqli_error($dbconn));exit();}
+
+                    ?>                   
+                            
+                        <div class="box col-md-12" id="item_<?php echo $head_id ?>"><!--Раздел--> 
+                            <div class="box-inner">
+                                <div class="box-header well">
+                                    <h2><i class="glyphicon glyphicon-th"></i> <span id="name_head_<?php echo $head_id ?>"><?php echo $contentToSave ?></span></h2>
+                                    <div class="box-icon">
+                                        <a href="#" class="btn btn-setting btn-round btn-default" 
+                                            id="head-<?php echo $head_id ?>"
+                                            data-content="РЕДАКТИРОВАТЬ РАЗДЕЛ"
+                                            data-name="<?php echo $contentToSave ?>"
+                                            data-href=""
+                                            data-order=""
+                                            data-toggle="modal"
+                                            data-target="#myModal" 
+                                            title="РЕДАКТИРОВАТЬ РАЗДЕЛ"  
+                                            data-tbl="head"
+                                            data-field="name_head"
+                                            data-field-id="head_id"
+                                            data-action="change"
+                                            data-id="head_<?php echo $head_id ?>"
+                                            >
+                                            <i class="glyphicon glyphicon-edit"></i></a>
+                                        <a href="#" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>  
+                                        <!-- <a href="#" class="btn btn-close btn-round btn-default" title="ДОБАВИТЬ РАЗДЕЛ"><i class="glyphicon glyphicon-plus-sign"></i></a> -->
+                                    </div>
+                                </div>
+
+                                <div  class="box-content">
+                                    <div>
+                                        <!-- START PANEL -->
+                                        <div class="panel panel-transparent">  
+                                            <div class="panel-body no-padding">
+                                                <div class="row">
+                                                    <div class="col-sm-12">                                   
+                                                        <div class="box-icon">
+                                                            <a href="#" class="btn btn-setting btn-round btn-default" 
+                                                                data-content="ДОБАВИТЬ КАТЕГОРИЮ"
+                                                                data-name="Категория 1"
+                                                                data-href=""
+                                                                data-order=""
+                                                                data-toggle="modal"
+                                                                data-target="#myModal" 
+                                                                title="ДОБАВИТЬ КАТЕГОРИЮ"
+                                                                data-tbl="category"
+                                                                data-field="name_category"
+                                                                data-field-id="category_id"
+                                                                data-action="action"
+                                                                data-id="category_<?php echo $category_id ?>"
+                                                                >
+                                                                <i class="glyphicon glyphicon-plus-sign"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="panel panel-transparent ">
+                                                            <!-- Nav tabs -->
+                                                            <ul class="nav nav-tabs nav-tabs-fillup" data-init-reponsive-tabs="dropdownfx" id="parent-item_<?php echo $head_id ?>"><!--Категории--> 
+                                                                <li class="active">
+                                                                    <a data-toggle="tab" href="#tab-fillup<?php echo $category_id ?>"
+                                                                    data-tbl="category"
+                                                                    data-title="КАТЕГОРИЮ" 
+                                                                    data-name="Категория 1"
+                                                                    data-href=""
+                                                                    data-order="" 
+                                                                    data-field="name_category"
+                                                                    data-field-id="category_id"
+                                                                    data-id="category_<?php echo $category_id ?>"
+                                                                    ><span  id="id_<?php echo $category_id ?>">Категория 1</span></a>
+                                                                </li>                                                        
+                                                            </ul>
+                                                            <!-- Tab panes -->
+                                                            <div class="tab-content">
+                                                                <div class="tab-pane active" id="tab-fillup<?php echo $category_id ?>">
+                                                                    <div class="row column-seperation panelTab">
+                                                                        <div class="col-md-12">
+                                                                            <div class="panel-body no-padding">
+                                                                                <div class="row">
+                                                                                    <div class="box-icon ">
+                                                                                        <a href="#" class="btn btn-setting btn-round btn-default "
+                                                                                            data-content="ДОБАВИТЬ ГРУППУ"
+                                                                                            data-parent="category_id-<?php echo $category_id ?>"
+                                                                                            data-name="Группа 1"
+                                                                                            data-toggle="modal"
+                                                                                            data-target="#myModal" 
+                                                                                            title="ДОБАВИТЬ ГРУППУ"
+                                                                                            data-tbl="grupp"
+                                                                                            data-field="name_grupp"
+                                                                                            data-field-id="grupp_id"
+                                                                                            data-action="action"
+                                                                                            data-id="grupp_<?php echo $grupp_id ?>"
+                                                                                            >                                                                                                    
+                                                                                            <i class="glyphicon glyphicon-plus-sign"></i>
+                                                                                        </a>
+                                                                                    </div>
+
+                                                                                    <div class="col-lg-12 ">
+                                                                                        <div class="panel panel-transparent ">
+
+                                                                                            <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white" id="tab-parent-category_<?php echo $category_id ?>"><!--Группы--> 
+                                                                                            
+                                                                                                <li class="active">
+                                                                                                    <a data-toggle="tab" href="#tabobj<?php echo $grupp_id ?>"
                                                                                                     data-tbl="grupp"
+                                                                                                    data-title="ГРУППУ"
+                                                                                                    data-name="Группа 1"
+                                                                                                    data-htmlid=""
+                                                                                                    data-category_id="<?php echo $category_id ?>"
+                                                                                                    data-order=""
+                                                                                                    data-parent="category_id-<?php echo $category_id ?>"
                                                                                                     data-field="name_grupp"
                                                                                                     data-field-id="grupp_id"
-                                                                                                    data-action="action"
                                                                                                     data-id="grupp_<?php echo $grupp_id ?>"
-                                                                                                    >                                                                                                    
-                                                                                                    <i class="glyphicon glyphicon-plus-sign"></i>
-                                                                                                </a>
-                                                                                            </div>
+                                                                                                    ><span id="name_grupp_<?php echo $grupp_id ?>">Группа 1</span></a>
+                                                                                                </li>
 
-                                                                                            <div class="col-lg-12 ">
-                                                                                                <div class="panel panel-transparent ">
+                                                                                            </ul>
+                                                                                            <div class="tab-content bg-white">
+                                                                                                
+                                                                                                <div class="tab-pane active" id="tabobj<?php echo $grupp_id ?>">
+                                                                                                    <div class="box-content pane">
 
-                                                                                                    <ul class="nav nav-tabs nav-tabs-simple nav-tabs-left bg-white" id="tab-parent-category_<?php echo $category_id ?>"><!--Группы--> 
-                                                                                                    
-                                                                                                        <li class="active">
-                                                                                                            <a data-toggle="tab" href="#tabobj<?php echo $grupp_id ?>"
-                                                                                                            data-tbl="grupp"
-                                                                                                            data-title="ГРУППУ"
-                                                                                                            data-name="Группа 1"
-                                                                                                            data-htmlid=""
-                                                                                                            data-category_id="<?php echo $category_id ?>"
-                                                                                                            data-order=""
-                                                                                                            data-parent="category_id-<?php echo $category_id ?>"
-                                                                                                            data-field="name_grupp"
-                                                                                                            data-field-id="grupp_id"
-                                                                                                            data-id="grupp_<?php echo $grupp_id ?>"
-                                                                                                            ><span id="name_grupp_<?php echo $grupp_id ?>">Группа 1</span></a>
-                                                                                                        </li>
-
-                                                                                                    </ul>
-                                                                                                    <div class="tab-content bg-white">
-                                                                                                        
-                                                                                                        <div class="tab-pane active" id="tabobj<?php echo $grupp_id ?>">
-                                                                                                            <div class="box-content pane">
-
-                                                                                                                <ul class="thumbnails gallery" id="obj-parent-grupp_<?php echo $grupp_id ?>"><!--Объекты-->                                                                                                                    
-                                                                                                                   
-                                                                                                                    <li id="image-'. $i.'" class="thumbnail" data-name="Элемент 1">
-                                                                                                                            <p class="" id="name_obj_'<?php echo $obj_id ?>">Элемент 1</p>
-                                                                                                                            <a style="background:url(/dist/images/thumbs/test.png);"
-                                                                                                                            title="Элемент 1"
-                                                                                                                            href="/dist/images/test.png"                                                                                                                
-                                                                                                                            >
-                                                                                                                            <img
-                                                                                                                                class="grayscale"
-                                                                                                                                src="/dist/images/thumbs/test.png"
-                                                                                                                                alt="Элемент 1"
-                                                                                                                                data-parent="grupp_id-<?php echo $grupp_id ?>"
-                                                                                                                                data-id="obj_<?php echo $obj_id ?>"
-                                                                                                                                data-content="РЕДАКТИРОВАТЬ ОБЪЕКТ"
-                                                                                                                                data-name="Элемент 1"
-                                                                                                                                data-htmlid=""
-                                                                                                                                data-action="change"
-                                                                                                                            >
-                                                                                                                        </a>
-                                                                                                                    </li>
-                                                                                                                   
-                                                                                                                </ul>
-                                                                                                            </div>
-                                                                                                        </div>
+                                                                                                        <ul class="thumbnails gallery" id="obj-parent-grupp_<?php echo $grupp_id ?>"><!--Объекты-->                                                                                                                    
+                                                                                                            
+                                                                                                            <li id="image-'. $i.'" class="thumbnail" data-name="Элемент 1">
+                                                                                                                    <p class="" id="name_obj_'<?php echo $obj_id ?>">Элемент 1</p>
+                                                                                                                    <a style="background:url(/dist/images/thumbs/test.png);"
+                                                                                                                    title="Элемент 1"
+                                                                                                                    href="/dist/images/test.png"                                                                                                                
+                                                                                                                    >
+                                                                                                                    <img
+                                                                                                                        class="grayscale"
+                                                                                                                        src="/dist/images/thumbs/test.png"
+                                                                                                                        alt="Элемент 1"
+                                                                                                                        data-parent="grupp_id-<?php echo $grupp_id ?>"
+                                                                                                                        data-id="obj_<?php echo $obj_id ?>"
+                                                                                                                        data-content="РЕДАКТИРОВАТЬ ОБЪЕКТ"
+                                                                                                                        data-name="Элемент 1"
+                                                                                                                        data-htmlid=""
+                                                                                                                        data-action="change"
+                                                                                                                    >
+                                                                                                                </a>
+                                                                                                            </li>
+                                                                                                            
+                                                                                                        </ul>
                                                                                                     </div>
-
-
                                                                                                 </div>
                                                                                             </div>
 
-                                                                                        </div> <!--row-->
+
+                                                                                        </div>
                                                                                     </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> <!--tab-pane-->
-                                                                        
-                                                                        <!-- <div class="tab-pane" id="tab-fillup21">
-                                                                            <div class="row">
-                                                                                <div class="col-md-12">
-                                                                                    <h3>“ Nothing is
-                                                                                        </h3>
-                                                                                    <p>A style represents visual customizations on top of a layout.
-                                                                                        By editing a style, you can use Squarespaces visual
-                                                                                        interface to customize your...</p>
-                                                                                    <br>
-                                                                                    <p class="pull-right">
-                                                                                        <button type="button" class="btn btn-default btn-cons">White</button>
-                                                                                        <button type="button" class="btn btn-success btn-cons">Success</button>
-                                                                                    </p>
-                                                                                </div>
+
+                                                                                </div> <!--row-->
                                                                             </div>
                                                                         </div>
-                                                                        <div class="tab-pane" id="tab-fillup31">
-                                                                            <div class="row">
-                                                                                <div class="col-md-12">
-                                                                                    <h3>Follow us &amp; get updated!</h3>
-                                                                                    <p>Instantly connect to whats most important to you. Follow
-                                                                                        your friends, experts, favorite celebrities, and breaking
-                                                                                        news.</p>
-                                                                                    <br>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div> -->
+                                                                    </div>
+                                                                </div> <!--tab-pane-->
+                                                                
+                                                                <!-- <div class="tab-pane" id="tab-fillup21">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <h3>“ Nothing is
+                                                                                </h3>
+                                                                            <p>A style represents visual customizations on top of a layout.
+                                                                                By editing a style, you can use Squarespaces visual
+                                                                                interface to customize your...</p>
+                                                                            <br>
+                                                                            <p class="pull-right">
+                                                                                <button type="button" class="btn btn-default btn-cons">White</button>
+                                                                                <button type="button" class="btn btn-success btn-cons">Success</button>
+                                                                            </p>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
+                                                                <div class="tab-pane" id="tab-fillup31">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <h3>Follow us &amp; get updated!</h3>
+                                                                            <p>Instantly connect to whats most important to you. Follow
+                                                                                your friends, experts, favorite celebrities, and breaking
+                                                                                news.</p>
+                                                                            <br>
+                                                                        </div>
+                                                                    </div>
+                                                                </div> -->
                                                             </div>
-
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <!-- END PANEL -->
 
+                                                </div>
                                             </div>
                                         </div>
+                                        <!-- END PANEL -->
+
                                     </div>
                                 </div>
-                                
-                                <!-- END box col-md-12 -->
+                            </div>
+                        </div>
+                        
+                        <!-- END box col-md-12 -->
 
-                            <?php  
-                            mysqli_close($dbconn);
-
-                        }else{
-                            //вывод ошибки
-                    
-                            //header('HTTP/1.1 500 '.mysql_error());
-                            header('HTTP/1.1 500 Looks like mysql error, could not insert record!');
-                            exit();
-                        }                                                                                                         
+                    <?php  
+                    mysqli_close($dbconn);
 
                 }else{
                     //вывод ошибки
             
                     //header('HTTP/1.1 500 '.mysql_error());
-                    header('HTTP/1.1 500 Looks like mysql error, could not insert record!');
+                    header('HTTP/1.1 500 Looks like mysql error, could not insert record 1!'.mysqli_error($dbconn));
                     exit();
-                }           
+                }                                                                                                         
+
+            }else{
+                //вывод ошибки
+        
+                //header('HTTP/1.1 500 '.mysql_error());
+                header('HTTP/1.1 500 Looks like mysql error, could not insert record 2!'.mysqli_error($dbconn));
+                exit();
+            }           
 
         }else{
             //вывод ошибки
     
             //header('HTTP/1.1 500 '.mysql_error());
-            header('HTTP/1.1 500 Looks like mysql error, could not insert record!');
+            header('HTTP/1.1 500 Looks like mysql error, could not insert record 3!'.mysqli_error($dbconn));
             exit();
         }         
 
     }else{
         //вывод ошибки
-
+        
         //header('HTTP/1.1 500 '.mysql_error());
-        header('HTTP/1.1 500 Looks like mysql error, could not insert record!');
+        header('HTTP/1.1 500 Looks like mysql error, could not insert record 4! '.mysqli_error($dbconn));
         exit();
     }
 
