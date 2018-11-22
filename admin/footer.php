@@ -742,7 +742,7 @@
                 files.length = 0; return;
             }
         //    $(function() {$("#dropped-files div[id^='img']").sortable();}); 
-        $("#dropped-files").sortable();
+        $("#dropped-files").sortable({ cancel: '.note' });
         });
 
         
@@ -864,7 +864,7 @@
                 // alert(dataArray[i].name);
                 // string.indexOf(substring) !== -1;
                 if($('#dropped-files > .image').length <= maxFiles) { 
-                    $('#dropped-files').append('<div id="img-'+i+'" class="image ui-state-error" style="background: url('+dataArray[i].bground+'); background-size: cover;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить файл</a></div>'); 
+                    $('#dropped-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].bground+'); background-size: cover;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить файл</a></div>'); 
                 }
             }
             return false;

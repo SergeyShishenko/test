@@ -647,12 +647,12 @@ switch ($tbl) {
                     <div id="uploaded-holder"> 
                         <div id="dropped-files">
                             <!-- Кнопки загрузить и удалить, а также количество файлов -->
-                            <div id="upload-button">
-                                <div class="center">
+                            <div id="upload-button" class="note">
+                                <div class="center note">
                                     <span>0 Файлов</span>
-                                    <a href="javascript:void(0)" class="upload">Загрузить</a>
-                                    <a href="javascript:void(0)" class="delete">Удалить</a>
-                                    <a href="javascript:void(0)" class="count">Посчитать</a>
+                                    <a href="javascript:void(0)" class="upload note">Загрузить</a>
+                                    <a href="javascript:void(0)" class="delete note">Удалить</a>
+                                    <a href="javascript:void(0)" class="count note">Посчитать</a>
                                     <!-- Прогресс бар загрузки -->
                                     <div id="loading">
                                         <div id="loading-bar">
