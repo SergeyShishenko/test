@@ -1,0 +1,10 @@
+{
+    
+    "require": {
+        "nixsolutions/yandex-php-library": "dev-master"
+    },
+    "config": {
+        "vendor-dir": "libs"
+    }
+     
+}
