@@ -193,7 +193,7 @@ switch ($tbl) {
         $Result_category = mysqli_query($dbconn,"SELECT *  FROM category WHERE head_id = $parent");//MySQL запрос
         $row_category = mysqli_fetch_array($Result_category);//получаем все записи из таблицы
         $parentid=$row_category['head_id'];
-        $res   = mysqli_query($dbconn,"SELECT COUNT(category_id) AS count FROM category WHERE head_id = $parentid"); 
+        $res   = mysqli_query($dbconn,"SELECT COUNT(`category_id`) AS count FROM `category` WHERE `head_id` = '$parentid'"); 
         $data = mysqli_fetch_assoc($res); 
         // echo $data['count']; 
         mysqli_free_result($res); 
@@ -353,7 +353,7 @@ switch ($tbl) {
             $Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE category_id = $parent");//MySQL запрос
             $row_grupp = mysqli_fetch_array($Result_grupp);//получаем все записи из таблицы
             $parentid=$row_grupp['category_id'];
-            $res   = mysqli_query($dbconn,"SELECT COUNT(grupp_id) AS count FROM grupp WHERE category_id = $parentid"); 
+            $res   = mysqli_query($dbconn,"SELECT COUNT(`grupp_id`) AS count FROM `grupp` WHERE `category_id` = '$parentid'"); 
             $data = mysqli_fetch_assoc($res); 
             // echo $data['count']; 
             mysqli_free_result($res); 
@@ -1351,10 +1351,10 @@ switch ($tbl) {
     else //add new obj
     {
      /////obj 
-        $Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE grupp_id = $parent");//MySQL запрос
+        $Result_obj = mysqli_query($dbconn,"SELECT *  FROM `obj` WHERE `grupp_id` = '$parent'");//MySQL запрос
         $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы
         $parentid=$row_obj['grupp_id'];
-        $res   = mysqli_query($dbconn,"SELECT COUNT(obj_id) AS count FROM obj WHERE grupp_id = $parentid"); 
+        $res   = mysqli_query($dbconn,"SELECT COUNT(`obj_id`) AS count FROM `obj` WHERE `grupp_id` = '$parentid'"); 
         $data = mysqli_fetch_assoc($res); 
         // echo $data['count']; 
         mysqli_free_result($res); 

@@ -18,7 +18,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     $id = filter_var($_POST["id"],FILTER_SANITIZE_STRING);
     $action = filter_var($_POST["action"],FILTER_SANITIZE_STRING);
     $parent = explode("-", filter_var($_POST["parent"],FILTER_SANITIZE_STRING));
-    $parent_ = explode("_", filter_var($_POST["parent"],FILTER_SANITIZE_STRING));
+    $parent2 = explode("_", filter_var($_POST["parent"],FILTER_SANITIZE_STRING));
     
     // $clickedID = explode("_", $id);
     // $DbNumberID = $clickedID[1];
@@ -43,7 +43,8 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             // if (isset($id))
             // {               
                 // добавляем новую запись во все таблицы объекта
-                $sql = "INSERT INTO  `obj`(`grupp_id`,`path_img_obj`,`fname_img_obj`,`template_obj`,`img_orientation_obj`) VALUES ('$parent[0]','./dist/images/','test.png','shablony-dokumentov.php','album')";
+                    //   " INSERT INTO `obj` (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`, `img_orientation_obj`, `img_alt_obj`, `template_obj`) VALUES (NULL, 'Лист 1', '$parent[1]', '', NULL, 'test.png', NULL, NULL, NULL, NULL, NULL, NULL, album, NULL, NULL)";
+                $sql = " INSERT INTO `obj` (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`, `img_orientation_obj`, `img_alt_obj`, `template_obj`) VALUES (NULL, 'Лист 1', '$parent[1]', '', NULL, 'test.png', NULL, '', NULL, NULL, NULL, NULL, 'album', NULL, NULL)";
                 // (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`, `template_obj`, `img_orientation_obj`, `img_alt_obj`) VALUES (NULL, 'Лист10', '1', '', NULL, 'test.png', NULL, 'no-foto.png', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
                 if(mysqli_query($dbconn,$sql))
                 {                    
@@ -59,12 +60,12 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                         mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$id')");
                          }
                         else{//вывод ошибки                                        
-                            header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+                            header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.$sql." -> ".mysqli_error($dbconn));
                             exit();
                         } 
                     
                 }else{//вывод ошибки                                        
-                    header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+                    header('HTTP/1.1 500 Looks like mysql error, could not insert record2! '.$_POST["parent"]." ---".$sql." -> ".mysqli_error($dbconn));
                     exit();
                 }                
             // }
@@ -74,28 +75,30 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
         else // не obj
         {   
             $obj=$tbl."_";
-            $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
+            $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`, `disabled`) VALUES ('$contentToSave','$parent[1]', '0')";
             if(mysqli_query($dbconn,$sql))
             {                    
                 $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
-                if ($tbl = "grupp")
+                if ($tbl == "grupp")
                 {
                   $html_id = "grupp_".$id;
-                $sql = "UPDATE `grupp` SET `html_id`='$html_id' WHERE `grupp_id`=$id";
-                mysqli_query($dbconn,$sql);   
-                }              
+                    $sql = "UPDATE `grupp` SET `html_id`='$html_id' WHERE `grupp_id`=$id";
+                    mysqli_query($dbconn,$sql);   
+                }           
             }else{//вывод ошибки                                        
-                header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+                header('HTTP/1.1 500 Looks like mysql error, could not insert record3! '.mysqli_error($dbconn));
                 exit();
+                
             }  
         }
         
         // $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
         $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+
         if(!mysqli_query($dbconn,$sql))
         {        
           //вывод ошибки
-          header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+          header('HTTP/1.1 500 Looks like mysql error, could not insert record4! '.$sql." -> ".mysqli_error($dbconn));
             exit();
         }
 
@@ -122,7 +125,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             mysqli_free_result($Result);           
             if ($tbl=="head") 
             {$Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl`");}
-            else{$Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE $parent_[0]_id = $parent[1] ORDER BY $field ASC");}    
+            else{$Result = mysqli_query($dbconn,"SELECT *  FROM `$tbl` WHERE $parent2[0]_id = $parent[1] ORDER BY $field ASC");}    
            
                         
             while ($rows = mysqli_fetch_array($Result))
@@ -175,7 +178,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
           
     
         }else{//вывод ошибки 
-            header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+            header('HTTP/1.1 500 Looks like mysql error, could not insert record5!'.$sql." -> ".mysqli_error($dbconn));
             exit();
         }
 

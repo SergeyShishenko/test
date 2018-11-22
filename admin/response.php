@@ -29,7 +29,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
             //Record is successfully inserted, respond to ajax request
              $category_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL
             //  INSERT INTO `grupp` (`grupp_id`, `name_grupp`, `data_href_grupp`, `category_id`, `number_in_order_grupp`, `disabled`) VALUES (NULL, 'Группа 1', NULL, '$category_id', '1', '0');
-            if(mysqli_query($dbconn,"INSERT INTO `grupp` (`grupp_id`, `name_grupp`, `data_href_grupp`, `category_id`, `number_in_order_grupp`, `disabled`) VALUES (NULL, 'Группа 1', NULL, '$category_id', '1', '0')"))
+            if(mysqli_query($dbconn,"INSERT INTO `grupp` (`grupp_id`, `name_grupp`, `html_id`, `category_id`, `number_in_order_grupp`, `disabled`) VALUES (NULL, 'Группа 1', NULL, '$category_id', '1', '0')"))
             {  
                 //Record is successfully inserted, respond to ajax request
                 $grupp_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL

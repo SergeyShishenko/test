@@ -63,7 +63,7 @@
     <footer class="row">
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
         <!-- <label>Добавить раздел</label> -->
-                    <input type="text" value="" name="add_section" class="text" placeholder="Наименование раздела" id="contentText" required>                   
+                    <input type="text" value="" name="add_section" class="text" size="100" placeholder="Наименование раздела" id="contentText" >                   
                     <!-- <input type="submit" value="Добавить раздел" name="write" class="button" id="FormSubmit0"> -->
                     <button type="submit" class="button animated tada" id="FormSubmit" >Добавить раздел  <span class="glyphicon glyphicon-plus-sign"></span>   </button>
                 </div>
