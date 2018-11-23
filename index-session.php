@@ -3,7 +3,9 @@ ini_set('session.gc_maxlifetime', 86400);// 24 часа
 ini_set('session.cookie_lifetime', 0);
 session_set_cookie_params(0);
 session_start();
-require_once('DATA/data.php');
+define('__ROOT__', dirname(dirname(__FILE__))); 
+require_once(__ROOT__.'/DATA/data.php'); 
+// require_once('DATA/data.php');
 $err = '';
 if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
 
