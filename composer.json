@@ -1,10 +1,12 @@
 {
-    
+    "name": "sites/<sitename>",
+    "description": "<SiteName>",
     "require": {
-        "nixsolutions/yandex-php-library": "dev-master"
+       
+        "calcinai/php-imagick": "v0.1.2"
     },
     "config": {
-        "vendor-dir": "libs"
+        "vendor-dir": "imagick"
     }
      
 }
