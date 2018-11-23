@@ -19,7 +19,12 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
 
     // Insert sanitize string in record
     // INSERT INTO `head` (`head_id`, `name_head`, `data_href_head`, `number_in_order_head`, `disabled`) VALUES (NULL, '".$contentToSave."', NULL, NULL, '0');
-    if(mysqli_query($dbconn,"INSERT INTO `head` (`head_id`, `name_head`, `data_href_head`, `number_in_order_head`, `disabled`) VALUES (NULL, '$contentToSave', NULL, NULL, '0')"))
+    $res   = mysqli_query($dbconn,"SELECT COUNT(head_id) AS count FROM head "); 
+    $data = mysqli_fetch_assoc($res); 
+    // echo $data['count']; 
+    mysqli_free_result($res); 
+    $number = $data['count']+1;
+    if(mysqli_query($dbconn,"INSERT INTO `head` (`head_id`, `name_head`, `data_href_head`, `number_in_order_head`, `disabled`) VALUES (NULL, '$contentToSave', NULL, '$number', '0')"))
     {
         //Record is successfully inserted, respond to ajax request
         $head_id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL

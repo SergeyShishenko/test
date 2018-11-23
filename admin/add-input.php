@@ -272,10 +272,10 @@ switch ($tbl) {
 
     if ($action=="change")
     {
-        $Result_grupp = mysqli_query($dbconn,"SELECT *  FROM grupp WHERE grupp_id = $DbNumberID");//MySQL запрос
+        $Result_grupp = mysqli_query($dbconn,"SELECT *  FROM `grupp` WHERE `grupp_id` = '$DbNumberID'");//MySQL запрос
         $row_grupp = mysqli_fetch_array($Result_grupp);//получаем все записи из таблицы
         $parentid=$row_grupp["category_id"];
-        $res   = mysqli_query($dbconn,"SELECT COUNT(grupp_id) AS count FROM grupp WHERE category_id = $parentid"); 
+        $res   = mysqli_query($dbconn,"SELECT COUNT(`grupp_id`) AS count FROM `grupp` WHERE `category_id` = '$parentid'"); 
         $data = mysqli_fetch_assoc($res); 
         // echo $data['count']; 
         mysqli_free_result($res); 
@@ -431,10 +431,10 @@ switch ($tbl) {
     {
  /////if        
     /////obj
-        $Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE obj_id = $DbNumberID");//MySQL запрос
+        $Result_obj = mysqli_query($dbconn,"SELECT *  FROM `obj` WHERE `obj_id` = '$DbNumberID'");//MySQL запрос
         $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы
         $parentid=$row_obj["grupp_id"];
-        $res   = mysqli_query($dbconn,"SELECT COUNT(grupp_id) AS count FROM obj WHERE grupp_id = $parentid"); 
+        $res   = mysqli_query($dbconn,"SELECT COUNT(`grupp_id`) AS count FROM `obj` WHERE `grupp_id` = '$parentid'"); 
         $data = mysqli_fetch_assoc($res); 
         // echo $data['count']; 
         mysqli_free_result($res); 
@@ -507,24 +507,27 @@ switch ($tbl) {
                         ';
                         $Result_obj_in_addition = mysqli_query($dbconn,"SELECT *  FROM obj_in_addition WHERE obj_id = $DbNumberID ORDER BY `obj_in_addition`.`number_in_order_addition` ASC");//MySQL запрос
                         while($row_obj_in_addition = mysqli_fetch_array($Result_obj_in_addition))
-                    {
-                        echo '
-                        <li class="file  ui-state-error" id="file-'.$row_obj_in_addition["obj_in_addition_id"].'">
-                            <a class="file-link" href="javascript:void(0)" title="'.$row_obj_in_addition["fname_img_obj_in_addition"].'">
-                            <div id="img-'.$row_obj_in_addition["obj_in_addition_id"].'" class="file-thumbnail"  style="background-image:url('. substr($row_obj["path_img_obj_in_addition"],1)."thumbs/".$row_obj["fname_img_obj_in_addition"].');"></div>  
-                                <div class="file-info">';
-                                $Fname = explode( '.', $row_obj_in_addition["fname_img_obj_in_addition"] ); //Разбиваем строку (Split работает аналогично PHP explode)                                
-                                echo '<span class="file-ext">'.$Fname[1].'</span>
-                                    <span class="file-name">'.$Fname[0].'.</span>
-                                </div>
-                            </a>
-                            <button class="file-delete-btn  del" title="Delete" type="button">
-                               <span class="glyphicon glyphicon-remove"></span>
-                            </button>
-                        </li>                      
-                       
-                       ';
-                    } //while 
+                        if (isset($row_obj_in_addition["fname_img_obj_in_addition"]))
+                        {
+                            {
+                                echo '
+                                <li class="file  ui-state-error" id="file-'.$row_obj_in_addition["obj_in_addition_id"].'">
+                                    <a class="file-link" href="javascript:void(0)" title="'.$row_obj_in_addition["fname_img_obj_in_addition"].'">
+                                    <div id="img-'.$row_obj_in_addition["obj_in_addition_id"].'" class="file-thumbnail"  style="background-image:url('. substr($row_obj["path_img_obj_in_addition"],1)."thumbs/".$row_obj["fname_img_obj_in_addition"].');"></div>  
+                                        <div class="file-info">';
+                                        $Fname = explode( '.', $row_obj_in_addition["fname_img_obj_in_addition"] ); //Разбиваем строку (Split работает аналогично PHP explode)                                
+                                        echo '<span class="file-ext">'.$Fname[1].'</span>
+                                            <span class="file-name">'.$Fname[0].'.</span>
+                                        </div>
+                                    </a>
+                                    <button class="file-delete-btn  del" title="Delete" type="button">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                    </button>
+                                </li>                      
+                            
+                            ';
+                            } //while 
+                        }
                         mysqli_free_result($Result_obj_in_addition);   
                     echo '     
                     </ul>
