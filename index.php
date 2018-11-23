@@ -4981,7 +4981,7 @@ include 'inc-version-css-js.php';
                                                         <TR>
                                                             <TD data-tooltip="Blum" class="hover mapsite" id="flo-Blum" >
                                                                 <!-- <p  onclick=\'window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")\' data-img="./dist/images/no-foto.png" id="floating155">Blum<span> <br>~Blum</span></p> -->
-                                                                <p   onclick='window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")' data-img="./dist/images/no-foto.png" id="Blum">BLUM<span> <br>~Blum</span></p>
+                                                                <p   onclick='window.open("https://publications.blum.com/2018/catalogue/ru/436/", "_blank")' data-img="./dist/images/no-foto.png" id="Blum">BLUM<span> <br>~Blum</span></p>
                                                             </TD>                                                                            
                                                             
                                                         </TR>
