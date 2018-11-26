@@ -12,7 +12,7 @@ $item_dlya_dvernyh_blokov_Class = '';
 $item_dlya_mebeli_Class = 'active';
 $item_universalnaya_Class = '';
 $item_katalogi_Class = '';
-include 'inc-head2.php';
+include 'inc-head.php';
 echo '        
         
         
@@ -115,7 +115,7 @@ echo '
         ';
 
 
-include 'inc-header-menu2.php';
+include 'inc-header-menu.php';
 include 'inc-left-side-menu-furnitura.php';
 ?> 
                 <!-- main  -->
