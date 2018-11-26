@@ -282,20 +282,323 @@ include 'inc-left-side-menu-furnitura.php';
                                             padding: 15px;
                                             ">
                                          <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
-                                            <li class="active"><a href="#articuls" data-toggle="tab">Артикулы</a></li>
-                                            <li ><a href="#harakteristiki" data-toggle="tab">Характеристики</a></li>
-                                            
-                                            <li ><a href="#instrukciya" data-toggle="tab">Инструкция</a></li>
-                                            <!-- <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                             <li class="dropdown active">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Артикул <b class="caret"></b></a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a href="#dropdown3" data-toggle="tab">@fat</a></li>
-                                                    <li><a href="#dropdown4" data-toggle="tab">@mdo</a></li>
+                                                    <li><a href="#movart1" data-toggle="tab"><b>250 мм</b> MOVENTO BLUMOTION S 40 кг </a></li>
+                                                    <li><a href="#movart2" data-toggle="tab"><b>300 мм</b> MOVENTO BLUMOTION S 40 кг </a></li>
+                                                    <li><a href="#movart3" data-toggle="tab"><b>350 мм</b> MOVENTO BLUMOTION S 40 кг </a></li>
+                                                    <li><a href="#movart4" data-toggle="tab"><b>400 мм</b> MOVENTO BLUMOTION S 40 кг </a></li>
+                                                    <li><a href="#movart5" data-toggle="tab"><b>450 мм</b> MOVENTO BLUMOTION S 40 кг </a></li>
+                                                    <li><a href="#movart6" data-toggle="tab"><b>500 мм</b> MOVENTO BLUMOTION S 40 кг </a></li>
+                                                    <li><a href="#movart7" data-toggle="tab"><b>550 мм</b> MOVENTO BLUMOTION S 40 кг </a></li>
+                                                    <li><a href="#movart8" data-toggle="tab"><b>600 мм</b> MOVENTO BLUMOTION S 40 кг </a></li>
                                                 </ul>
-                                            </li> -->
+                                            </li>                                            
+                                            <li ><a href="#harakteristiki" data-toggle="tab">Характеристики</a></li>                                            
+                                            <li ><a href="#instrukciya" data-toggle="tab">Инструкция</a></li>
+                                            <li class=""><a href="#articuls" data-toggle="tab">Все артикулы</a></li>
                                         </ul>
-                                        <div id="myTabContent" class="tab-content">
-                                            <div class="tab-pane fade in active" id="articuls">
+                                        <div id="myTabContent" class="tab-content">                                            
+                                            <div class="tab-pane fade" id="harakteristiki">
+                                                <p>
+                                                    <ul class="stat" style="margin-top: 0px;">
+                                                        <li>Полное выдвижение скрытых направляющих</li>
+                                                        <li>Со встроенным <b>BLUMOTION S</b> для мягкого и бесшумного закрывания, который адаптируется под соответствующую технологию движения, возможно использование <b>TIP-ON BLUMOTION</b> или <b>SERVO-DRIVE</b></li> 
+                                                        <li>Синхронизированное плавное скольжение</li>
+                                                        <li><b>BLUMATIC</b> – механизм самозакрывания</li>
+                                                        <li>Регулировка по высоте, ширине и наклону без инструмента</li>
+                                                        <li>Дополнительно регулировка по глубине без инструмента</li> 
+                                                        <li>Компенсация погрешности по ширине и глубине</li> 
+                                                        <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                    </ul>
+                                                 </p>
+                                            </div>                                            
+                                            <div class="tab-pane fade" id="instrukciya">
+                                                 <p>
+                                                    <ul class="stat" style="margin-top: 0px;">
+                                                        <li><a href="./dist/files/pdf/mov0001-md-047_md_dok_bau_$sml_$aof_$v1.pdf"  target="_blank"  > MOVENTO – инструкция по монтажу</a></li>
+                                                        <li><a href="./dist/files/pdf/mov0002-td-100_td_dok_bau_$sru_$aof_$v1.pdf"  target="_blank"  > Новинка BLUMOTION S 3 в 1</a></li> 
+                                                        <li><a href="./dist/files/pdf/mov0039-ma-569-0_ma_dok_bau_$sml_$aof_$v4.pdf"  target="_blank"  > Боковой стабилизатор для MOVENTO</a></li>                                                        
+                                                        <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                    </ul>
+                                                 </p>
+                                            
+                                            
+                                            </div>
+                                            <div class="tab-pane fade  in active" id="movart1">
+                                                <div class="row">
+                                                    <h3 class="blum">5000502-04-101 MOVENTO BLUMOTION S 40 кг 250 мм</h3>
+                                                    <p>Состав артикула:</p>            
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Список</th>
+                                                            <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                            <th>Артикул</th>
+                                                            <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                            <th>Описание</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td>1</td>
+                                                            <td>760H2500S</td>
+                                                            <td>Оцинкованный</td>
+                                                            <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=250мм, под замки, левая/правая</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td>1</td>
+                                                            <td>T51.7601</td>
+                                                            <td>Оранжевый</td>
+                                                            <td>Замок, левый/правый</td>
+                                                        </tr>
+                                                        
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="movart2">
+                                                <div class="row">
+                                                    <h3 class="blum">5000502-04-103 MOVENTO BLUMOTION S 40 кг 300 мм</h3>
+                                                    <p>Состав артикула:</p>            
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Список</th>
+                                                            <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                            <th>Артикул</th>
+                                                            <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                            <th>Описание</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td>1</td>
+                                                            <td>760H3000S</td>
+                                                            <td>Оцинкованный</td>
+                                                            <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=300мм, под замки, левая/правая</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td>1</td>
+                                                            <td>T51.7601</td>
+                                                            <td>Оранжевый</td>
+                                                            <td>Замок, левый/правый</td>
+                                                        </tr>
+                                                        
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="movart3">
+                                             <div class="row">
+                                                    <h3 class="blum">5000502-04-105 MOVENTO BLUMOTION S 40 кг 350 мм</h3>
+                                                    <p>Состав артикула:</p>            
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Список</th>
+                                                            <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                            <th>Артикул</th>
+                                                            <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                            <th>Описание</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td>1</td>
+                                                            <td>760H3500S</td>
+                                                            <td>Оцинкованный</td>
+                                                            <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=350мм, под замки, левая/правая</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td>1</td>
+                                                            <td>T51.7601</td>
+                                                            <td>Оранжевый</td>
+                                                            <td>Замок, левый/правый</td>
+                                                        </tr>
+                                                        
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="movart4">
+                                                <div class="row">
+                                                    <h3 class="blum">5000502-04-107 MOVENTO BLUMOTION S 40 кг 400 мм</h3>
+                                                    <p>Состав артикула:</p>            
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Список</th>
+                                                            <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                            <th>Артикул</th>
+                                                            <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                            <th>Описание</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td>1</td>
+                                                            <td>760H4000S</td>
+                                                            <td>Оцинкованный</td>
+                                                            <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=400мм, под замки, левая/правая</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td>1</td>
+                                                            <td>T51.7601</td>
+                                                            <td>Оранжевый</td>
+                                                            <td>Замок, левый/правый</td>
+                                                        </tr>
+                                                        
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="movart5">
+                                             <div class="row">
+                                                    <h3 class="blum">5000502-04-108 MOVENTO BLUMOTION S 40 кг 450 мм</h3>
+                                                    <p>Состав артикула:</p>            
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Список</th>
+                                                            <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                            <th>Артикул</th>
+                                                            <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                            <th>Описание</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td>1</td>
+                                                            <td>760H4500S</td>
+                                                            <td>Оцинкованный</td>
+                                                            <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=450мм, под замки, левая/правая</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td>1</td>
+                                                            <td>T51.7601</td>
+                                                            <td>Оранжевый</td>
+                                                            <td>Замок, левый/правый</td>
+                                                        </tr>
+                                                        
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="movart6">
+                                                <div class="row">
+                                                    <h3 class="blum">5000502-04-110 MOVENTO BLUMOTION S 40 кг 500 мм</h3>
+                                                    <p>Состав артикула:</p>            
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Список</th>
+                                                            <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                            <th>Артикул</th>
+                                                            <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                            <th>Описание</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td>1</td>
+                                                            <td>760H5000S</td>
+                                                            <td>Оцинкованный</td>
+                                                            <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=500мм, под замки, левая/правая</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td>1</td>
+                                                            <td>T51.7601</td>
+                                                            <td>Оранжевый</td>
+                                                            <td>Замок, левый/правый</td>
+                                                        </tr>
+                                                        
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="movart7">
+                                             <div class="row">
+                                                    <h3 class="blum">5000502-04-113 MOVENTO BLUMOTION S 40 кг 550 мм</h3>
+                                                    <p>Состав артикула:</p>            
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Список</th>
+                                                            <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                            <th>Артикул</th>
+                                                            <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                            <th>Описание</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td>1</td>
+                                                            <td>760H5500S</td>
+                                                            <td>Оцинкованный</td>
+                                                            <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=550мм, под замки, левая/правая</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td>1</td>
+                                                            <td>T51.7601</td>
+                                                            <td>Оранжевый</td>
+                                                            <td>Замок, левый/правый</td>
+                                                        </tr>
+                                                        
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="movart8">
+                                             <div class="row">
+                                                    <h3 class="blum">5000502-04-114 MOVENTO BLUMOTION S 40 кг 600 мм</h3>
+                                                    <p>Состав артикула:</p>            
+                                                    <table class="table table-striped">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Список</th>
+                                                            <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                            <th>Артикул</th>
+                                                            <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                            <th>Описание</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td>1</td>
+                                                            <td>760H6000S</td>
+                                                            <td>Оцинкованный</td>
+                                                            <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=600мм, под замки, левая/правая</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td>1</td>
+                                                            <td>T51.7601</td>
+                                                            <td>Оранжевый</td>
+                                                            <td>Замок, левый/правый</td>
+                                                        </tr>
+                                                        
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="articuls">
                                                 <div class="row">
                                                     <h3 class="blum">5000502-04-101 MOVENTO BLUMOTION S 40 кг 250 мм</h3>
                                                     <p>Состав артикула:</p>            
@@ -553,47 +856,6 @@ include 'inc-left-side-menu-furnitura.php';
                                                     </table>
                                                 </div>
                                             </div>
-                                            <div class="tab-pane fade" id="harakteristiki">
-                                                <p>
-                                                    <ul class="stat" style="margin-top: 0px;">
-                                                        <li>Полное выдвижение скрытых направляющих</li>
-                                                        <li>Со встроенным <b>BLUMOTION S</b> для мягкого и бесшумного закрывания, который адаптируется под соответствующую технологию движения, возможно использование <b>TIP-ON BLUMOTION</b> или <b>SERVO-DRIVE</b></li> 
-                                                        <li>Синхронизированное плавное скольжение</li>
-                                                        <li><b>BLUMATIC</b> – механизм самозакрывания</li>
-                                                        <li>Регулировка по высоте, ширине и наклону без инструмента</li>
-                                                        <li>Дополнительно регулировка по глубине без инструмента</li> 
-                                                        <li>Компенсация погрешности по ширине и глубине</li> 
-                                                        <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
-                                                    </ul>
-                                                 </p>
-                                            </div>
-                                            
-                                            <div class="tab-pane fade" id="instrukciya">
-                                                 <p>
-                                                    <ul class="stat" style="margin-top: 0px;">
-                                                        <li><a href="./dist/files/pdf/mov0001-md-047_md_dok_bau_$sml_$aof_$v1.pdf"  target="_blank"  > MOVENTO – инструкция по монтажу</a></li>
-                                                        <li><a href="./dist/files/pdf/mov0002-td-100_td_dok_bau_$sru_$aof_$v1.pdf"  target="_blank"  > Новинка BLUMOTION S 3 в 1</a></li> 
-                                                        <li><a href="./dist/files/pdf/mov0039-ma-569-0_ma_dok_bau_$sml_$aof_$v4.pdf"  target="_blank"  > Боковой стабилизатор для MOVENTO</a></li>                                                        
-                                                        <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
-                                                    </ul>
-                                                 </p>
-                                            
-                                            
-                                            </div>
-                                            <!-- <div class="tab-pane fade" id="dropdown3">
-                                                <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia
-                                                    banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
-                                                    Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork
-                                                    sustainable tofu synth chambray yr.</p>
-                                            </div>
-                                            <div class="tab-pane fade" id="dropdown4">
-                                                <p>They sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland
-                                                    seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia
-                                                    PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral,
-                                                    mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial
-                                                    keffiyeh echo park vegan.</p>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
