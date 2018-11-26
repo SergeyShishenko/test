@@ -298,6 +298,7 @@ include 'inc-left-side-menu-furnitura.php';
                                             <li ><a href="#harakteristiki" data-toggle="tab">Характеристики</a></li>                                            
                                             <li ><a href="#instrukciya" data-toggle="tab">Инструкция</a></li>
                                             <li class=""><a href="#articuls" data-toggle="tab">Все артикулы</a></li>
+                                            
                                         </ul>
                                         <div id="myTabContent" class="tab-content">                                            
                                             <div class="tab-pane fade" id="harakteristiki">
@@ -345,7 +346,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
                                                             <td>1</td>
                                                             <td>760H2500S</td>
-                                                            <td>Оцинкованный</td>
+                                                            <td>Оцинкованный</td> 
                                                             <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=250мм, под замки, левая/правая</td>
                                                         </tr>
                                                         <tr>
@@ -358,6 +359,16 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
+                                                    <p>
+                                                        <ul class="stat" style="margin-top: 0px;">
+                                                            <li><a href="https://yadi.sk/d/aFGYb8IxB5l29g"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dwg</a></li>
+                                                            <li><a href="https://yadi.sk/d/dr3m3tlfsKT6OA"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dxf</a></li> 
+                                                            <li><a href="https://yadi.sk/d/ZYvDIqBJNR6onQ"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.sat</a></li>
+                                                            <li><a href="https://yadi.sk/d/6fEDmMrnV-Qnng"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.step</a></li>                                                         
+                                                            <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                        </ul>
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="movart2">
@@ -392,6 +403,16 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
+                                                    <p>
+                                                        <ul class="stat" style="margin-top: 0px;">
+                                                            <li><a href="https://yadi.sk/d/wg_GgtPtV2cynA"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dwg</a></li>
+                                                            <li><a href="https://yadi.sk/d/5qVHTIXuXZIsgg"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dxf</a></li> 
+                                                            <li><a href="https://yadi.sk/d/TvFX5-u44Rqa2g"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.sat</a></li>
+                                                            <li><a href="https://yadi.sk/d/lWSQCTVio5Zg6A"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.step</a></li>                                                         
+                                                            <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                        </ul>
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="movart3">
@@ -426,6 +447,16 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
+                                                    <p>
+                                                        <ul class="stat" style="margin-top: 0px;">
+                                                            <li><a href="https://yadi.sk/d/Do3lMBGsvi-DcA"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dwg</a></li>
+                                                            <li><a href="https://yadi.sk/d/TH5lzLzy3yGarA"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dxf</a></li> 
+                                                            <li><a href="https://yadi.sk/d/N9f97aOfudpAJg"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.sat</a></li>
+                                                            <li><a href="https://yadi.sk/d/8C3Msx_mOh0iRw"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.step</a></li>                                                         
+                                                            <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                        </ul>
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="movart4">
@@ -460,6 +491,16 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
+                                                    <p>
+                                                        <ul class="stat" style="margin-top: 0px;">
+                                                            <li><a href="https://yadi.sk/d/ue7XqkZW9HViWw"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dwg</a></li>
+                                                            <li><a href="https://yadi.sk/d/LueBNy9lG2jqLQ"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dxf</a></li> 
+                                                            <li><a href="https://yadi.sk/d/vkDBIWbkH7xbMA"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.sat</a></li>
+                                                            <li><a href="https://yadi.sk/d/_CUcFxMHaDdcPQ"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.step</a></li>                                                         
+                                                            <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                        </ul>
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="movart5">
@@ -494,6 +535,16 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
+                                                    <p>
+                                                        <ul class="stat" style="margin-top: 0px;">
+                                                            <li><a href="https://yadi.sk/d/5oWsKJ2riPOUQw"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dwg</a></li>
+                                                            <li><a href="https://yadi.sk/d/DsyAHpwHkXDYEQ"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dxf</a></li> 
+                                                            <li><a href="https://yadi.sk/d/YEZI0E-hrS04ZA"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.sat</a></li>
+                                                            <li><a href="https://yadi.sk/d/xVkhOuA7m2adZg"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.step</a></li>                                                         
+                                                            <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                        </ul>
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="movart6">
@@ -528,6 +579,16 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
+                                                    <p>
+                                                        <ul class="stat" style="margin-top: 0px;">
+                                                            <li><a href="https://yadi.sk/d/Qw5lD6uvfpbx6A"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dwg</a></li>
+                                                            <li><a href="https://yadi.sk/d/uvGHtiJGLdXApA"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dxf</a></li> 
+                                                            <li><a href="https://yadi.sk/d/E2mqYkyOFkcgaA"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.sat</a></li>
+                                                            <li><a href="https://yadi.sk/d/Dvpikb-803B8DQ"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.step</a></li>                                                         
+                                                            <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                        </ul>
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="movart7">
@@ -562,6 +623,16 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
+                                                    <p>
+                                                        <ul class="stat" style="margin-top: 0px;">
+                                                            <li><a href="https://yadi.sk/d/fWzL8mRPgGe1bg"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dwg</a></li>
+                                                            <li><a href="https://yadi.sk/d/tOxcpMf3Hz4ocA"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dxf</a></li> 
+                                                            <li><a href="https://yadi.sk/d/WYw8cvJtn9G9wQ"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.sat</a></li>
+                                                            <li><a href="https://yadi.sk/d/O0wG7V0ygh0-xg"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.step</a></li>                                                         
+                                                            <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                        </ul>
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="movart8">
@@ -596,6 +667,16 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
+                                                    <p>
+                                                        <ul class="stat" style="margin-top: 0px;">
+                                                            <li><a href="https://yadi.sk/d/RNGKKO7KTi9Ihg"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dwg</a></li>
+                                                            <li><a href="https://yadi.sk/d/ky0s9ORO2JW4OA"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.dxf</a></li> 
+                                                            <li><a href="https://yadi.sk/d/NVJL_gw97z2C1g"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.sat</a></li>
+                                                            <li><a href="https://yadi.sk/d/DlgG9KGGCPwqNQ"  target="_blank"  >MM_3DCADDS_FUEHRUNGSSYSTEME_Anwendung.step</a></li>                                                         
+                                                            <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                        </ul>
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="tab-pane fade" id="articuls">
@@ -856,6 +937,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     </table>
                                                 </div>
                                             </div>
+                                           
                                         </div>
                                     </div>
                                 </div>
