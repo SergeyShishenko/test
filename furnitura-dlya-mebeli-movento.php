@@ -330,7 +330,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-101 MOVENTO BLUMOTION S 40 кг 250 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -364,7 +364,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-103 MOVENTO BLUMOTION S 40 кг 300 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -398,7 +398,7 @@ include 'inc-left-side-menu-furnitura.php';
                                              <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-105 MOVENTO BLUMOTION S 40 кг 350 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -432,7 +432,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-107 MOVENTO BLUMOTION S 40 кг 400 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -466,7 +466,7 @@ include 'inc-left-side-menu-furnitura.php';
                                              <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-108 MOVENTO BLUMOTION S 40 кг 450 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -500,7 +500,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-110 MOVENTO BLUMOTION S 40 кг 500 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -534,7 +534,7 @@ include 'inc-left-side-menu-furnitura.php';
                                              <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-113 MOVENTO BLUMOTION S 40 кг 550 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -568,7 +568,7 @@ include 'inc-left-side-menu-furnitura.php';
                                              <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-114 MOVENTO BLUMOTION S 40 кг 600 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -602,7 +602,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-101 MOVENTO BLUMOTION S 40 кг 250 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -634,7 +634,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-103 MOVENTO BLUMOTION S 40 кг 300 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -666,7 +666,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-105 MOVENTO BLUMOTION S 40 кг 350 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -698,7 +698,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-107 MOVENTO BLUMOTION S 40 кг 400 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -730,7 +730,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-108 MOVENTO BLUMOTION S 40 кг 450 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -762,7 +762,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-110 MOVENTO BLUMOTION S 40 кг 500 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -794,7 +794,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-113 MOVENTO BLUMOTION S 40 кг 550 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
@@ -812,7 +812,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td>Оцинкованный</td>
                                                             <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=550мм, под замки, левая/правая</td>
                                                         </tr>
-                                                        <tr>
+                                                        <tr >
                                                             <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
                                                             <td>1</td>
                                                             <td>T51.7601</td>
@@ -826,7 +826,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-114 MOVENTO BLUMOTION S 40 кг 600 мм</h3>
                                                     <p>Состав артикула:</p>            
-                                                    <table class="table table-striped">
+                                                    <table class="table table-striped table-responsive">
                                                         <thead>
                                                         <tr>
                                                             <th>Список</th>
