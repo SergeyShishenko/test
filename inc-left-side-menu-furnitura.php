@@ -135,8 +135,8 @@
                                                                                        
                                         </ul>
                                     </li>
-                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#mekhanizmy-vydvizheniya-dlya-yashchikov">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ</a>
-                                        <ul class="list-group sub_menu2">
+                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli-movento.php">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ</a>
+                                       <!-- <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-101-movento-blumotion-napravlyayushchie-250">5000502-04-101 MOVENTO BLUMOTION направляющие 250 мм</a>
                                             </li>
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-103-movento-blumotion-napravlyayushchie-300">5000502-04-103 MOVENTO BLUMOTION направляющие 300 мм</a>
@@ -171,7 +171,7 @@
                                             </li> 
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#tekhnicheskaya-informaciya-po-napravlyayushchim">Техническая информация по направляющим</a>
                                             </li>                                         
-                                        </ul>
+                                        </ul>-->
                                     </li>
                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#opory">ОПОРЫ</a>
                                         <ul class="list-group sub_menu2">
