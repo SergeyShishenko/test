@@ -284,7 +284,7 @@ include 'inc-left-side-menu-furnitura.php';
                                             ">
                                          <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
                                              <li class="dropdown active">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Артикул <b class="caret"></b></a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Артикул и 3D Модели<b class="caret"></b></a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="#movart1" data-toggle="tab"><b>250 мм</b> MOVENTO BLUMOTION S 40 кг </a></li>
                                                     <li><a href="#movart2" data-toggle="tab"><b>300 мм</b> MOVENTO BLUMOTION S 40 кг </a></li>
