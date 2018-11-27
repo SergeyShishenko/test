@@ -132,242 +132,242 @@
         .panelTab{border: 1px solid #dddddd;}
 
         .panel {
-     margin-bottom: 0; 
-    /* background-color: #ffffff; */
-     border: none; 
-     /* border-radius: 4px;  */
-     -webkit-box-shadow: none; 
-     box-shadow: none; 
-}
-ul.thumbnails.gallery{padding-left:0px;
-    margin-left: -15px;
-    }
-.row {
+        margin-bottom: 0; 
+        /* background-color: #ffffff; */
+        border: none; 
+        /* border-radius: 4px;  */
+        -webkit-box-shadow: none; 
+        box-shadow: none; 
+        }
+        ul.thumbnails.gallery{padding-left:0px;
+            margin-left: -15px;
+            }
+        .row {
 
-margin-left: 0;
-margin-right: 0;
+        margin-left: 0;
+        margin-right: 0;
 
-}
-.nav-tabs > li > a {
-   
-   max-width: 200px;
-   height: 76px;
-}
-/* .ch-container{min-height:768px;} */
+        }
+        .nav-tabs > li > a {
+        
+        max-width: 200px;
+        height: 76px;
+        }
+        /* .ch-container{min-height:768px;} */
+
+            </style>
+        <style>
+        .tab-controls {
+            position: absolute;
+            z-index: 1;
+            margin-top: 0px;
+            /* height: 1px; */
+            /* min-height: 1px; */
+            /* padding: 0 7.5px; */
+            /* padding: 0 ; */
+            /* right:0; */
+        }
+
+        .tab-controls p {
+            display: block;
+            /* margin: auto; */
+            /* width: 100%; */
+        }
+        .tab-controls a.btn{
+            padding: 0 ;
+        }
+
+
+
+        .nav-tabs-simple > li.active a, .nav-tabs-simple > li.active a:hover, .nav-tabs-simple > li.active a:focus  {
+            color: #555555;
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            /* border-bottom-color: transparent; */
+            cursor: default;
+            border-radius: 4px 0 0 4px  ;
+        }
+        /* юnav-tabs-simple > li a {border-left-color:} */
+        </style>
+        <style>
+        .box-content:not(.pane) {
+            display:none;
+        }
+
+        .navbar-brand { width: 200px;letter-spacing: 0px;}
+        .thumbnail p{
+            margin:0;
+            font-size: 10px;
+            width: 100px;
+            /* height:14.28px; */
+            white-space: nowrap; /* Запрещаем перенос строк */
+            overflow: hidden; 
+            text-overflow: ellipsis;
+            }
+            .list-tbl {
+            margin-bottom: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+        li[id^="tb-"]:not(.active){display:none !important;}
+
+
+
+
+
+        .modalDialog {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 99999;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            display: none;
+            pointer-events: none;
+        }
+        .modalDialog:target {
+            display: block;
+            pointer-events: auto;
+        }
+        .modalDialog > div {
+            width: 400px;
+            position: relative;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: #fff;
+            background: -moz-linear-gradient(#fff, #999);
+            background: -webkit-linear-gradient(#fff, #999);
+            background: -o-linear-gradient(#fff, #999);
+        }
+        /* .close {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: -12px;
+            text-align: center;
+            top: -10px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+        .close:hover { background: #00d9ff; } */
+
+
+
+        .form-control-label{color:#317eac;}
+        textarea {
+            overflow: auto;
+            resize: vertical;
+        }
+
+
+        /* высота  input*/
+
+
+        .input-group {    
+            margin-bottom: 5px;
+        }
+        .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child) {
+        
+            height: 40px;
+        }
+        .input-group-addon:first-child {
+            
+            height: 40px;
+        }
+        .input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
+            
+            height: 40px;
+            
+        }
+        /**/
+
+
+        /*кнопка вращается*/
+
+        button.button31:hover, button.button31:focus {
+        
+        background: #74f526;
+        box-shadow: none;
+        }
+        button.button31:hover:after, button.button31:hover:before {
+        background: #fff;
+        box-shadow: none;
+        }
+        button.button31.btn-warning:focus > i {
+            
+        -webkit-animation: rotate31 1s linear infinite forwards;
+        animation: rotate31 1s linear infinite forwards;
+        }
+        button.button31.btn-warning:focus:after > i, button.button31.btn-warning:focus:before > i {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        }
+
+        @-webkit-keyframes rotate31 {
+        100% {-webkit-transform: rotate(360deg);}
+        }
+        @keyframes rotate31 {
+        100% {transform: rotate(360deg);}
+        }
+
+        /* размеры модального окна */
+        .modal-dialog{
+            width:80% !important;
+            height:100% !important;
+        }
+
+        /* убрать подсветку последнего select */
+        .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child) {
+            /* border-radius: 0px; */
+            border-radius: 4px;
+        }
+
+        /* Ajax on menu */
+        #loading1 {
+            margin-top: 20px;
+            width: 128px;
+            font-weight: bold;
+            /* display: none; */
+        }
+        div.center, p.center, img.center {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            float: none !important;
+            display: block;
+            text-align: center;
+        }
+        #loading1 div.center {
+            margin-top: 10px;
+            height: 15px;
+            width: 128px;
+            /* background: url(../img/ajax-loaders/ajax-loader-6.gif); */
+            background: url(./img/ajax-loaders/ajax-loader-6.gif);
+        }
+        .yri{display:none;}
+
+        .file {
+            width: 200px  !important;
+        }
 
     </style>
-<style>
-.tab-controls {
-    position: absolute;
-    z-index: 1;
-    margin-top: 0px;
-    /* height: 1px; */
-    /* min-height: 1px; */
-    /* padding: 0 7.5px; */
-    /* padding: 0 ; */
-    /* right:0; */
-}
-
- .tab-controls p {
-    display: block;
-    /* margin: auto; */
-    /* width: 100%; */
-}
-.tab-controls a.btn{
-    padding: 0 ;
-}
-
-
-
-.nav-tabs-simple > li.active a, .nav-tabs-simple > li.active a:hover, .nav-tabs-simple > li.active a:focus  {
-    color: #555555;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    /* border-bottom-color: transparent; */
-    cursor: default;
-    border-radius: 4px 0 0 4px  ;
-}
-/* юnav-tabs-simple > li a {border-left-color:} */
-</style>
-<style>
-.box-content:not(.pane) {
-    display:none;
-}
-
-.navbar-brand { width: 200px;letter-spacing: 0px;}
-.thumbnail p{
-    margin:0;
-    font-size: 10px;
-    width: 100px;
-    /* height:14.28px; */
-    white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden; 
-    text-overflow: ellipsis;
-    }
-    .list-tbl {
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-}
-li[id^="tb-"]:not(.active){display:none !important;}
-
-
-
-
-
-.modalDialog {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 99999;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    display: none;
-    pointer-events: none;
-}
-.modalDialog:target {
-    display: block;
-    pointer-events: auto;
-}
-.modalDialog > div {
-    width: 400px;
-    position: relative;
-    margin: 10% auto;
-    padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-    background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
-}
-/* .close {
-    background: #606061;
-    color: #FFFFFF;
-    line-height: 25px;
-    position: absolute;
-    right: -12px;
-    text-align: center;
-    top: -10px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000;
-}
-.close:hover { background: #00d9ff; } */
-
-
-
-.form-control-label{color:#317eac;}
-textarea {
-    overflow: auto;
-    resize: vertical;
-}
-
-
-/* высота  input*/
-
-
-.input-group {    
-    margin-bottom: 5px;
-}
-.input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child) {
-   
-    height: 40px;
-}
-.input-group-addon:first-child {
-    
-    height: 40px;
-}
-.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {
-    
-    height: 40px;
-    
-}
-/**/
-
-
-/*кнопка вращается*/
-
-button.button31:hover, button.button31:focus {
-  
-  background: #74f526;
-  box-shadow: none;
-}
-button.button31:hover:after, button.button31:hover:before {
-  background: #fff;
-  box-shadow: none;
-}
-button.button31.btn-warning:focus > i {
-    
-  -webkit-animation: rotate31 1s linear infinite forwards;
-  animation: rotate31 1s linear infinite forwards;
-}
-button.button31.btn-warning:focus:after > i, button.button31.btn-warning:focus:before > i {
-  content: "";
-  position: absolute;
-  z-index: -1;
- 
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-
-@-webkit-keyframes rotate31 {
-  100% {-webkit-transform: rotate(360deg);}
-}
-@keyframes rotate31 {
-  100% {transform: rotate(360deg);}
-}
-
-/* размеры модального окна */
-.modal-dialog{
-    width:80% !important;
-    height:100% !important;
- }
-
-/* убрать подсветку последнего select */
-.input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child) {
-    /* border-radius: 0px; */
-    border-radius: 4px;
-}
-
-/* Ajax on menu */
-#loading1 {
-    margin-top: 20px;
-    width: 128px;
-    font-weight: bold;
-    /* display: none; */
-}
-div.center, p.center, img.center {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    float: none !important;
-    display: block;
-    text-align: center;
-}
-#loading1 div.center {
-    margin-top: 10px;
-    height: 15px;
-    width: 128px;
-    /* background: url(../img/ajax-loaders/ajax-loader-6.gif); */
-    background: url(./img/ajax-loaders/ajax-loader-6.gif);
-}
-.yri{display:none;}
-
-.file {
-    width: 200px  !important;
-}
-
-</style>
 </head>
 
 <body>
@@ -382,7 +382,7 @@ div.center, p.center, img.center {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/index.php"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
+            <a class="navbar-brand" href="<?php echo $_SERVER['PHP_SELF'];?>"> <img alt="Charisma Logo" src="img/logo20.png" class="hidden-xs"/>
                 <span>Админ 500СТП</span></a>
 
             <!-- user dropdown starts -->
@@ -422,7 +422,7 @@ div.center, p.center, img.center {
             <!-- theme selector ends -->
 
             <ul class="collapse navbar-collapse nav navbar-nav top-menu">
-                <li><a href="http://localhost/"><i class="glyphicon glyphicon-globe"></i> Перейти на сайт</a></li>
+                <li><a href="<?php echo dirname(dirname($_SERVER['PHP_SELF']));?>/"><i class="glyphicon glyphicon-globe"></i> Перейти на сайт</a></li>
               
                 <li>
                     <form class="navbar-search pull-left">
