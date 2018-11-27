@@ -41,47 +41,58 @@ require_once dirname(dirname(__FILE__)) . '/PHPExcel/IOFactory.php';
 
 echo date('H:i:s') , " Загрузка из шаблона Excel5" , EOL;
 $objReader = PHPExcel_IOFactory::createReader('Excel5');
-$objPHPExcel = $objReader->load("templates/30template.xls");
+$objPHPExcel = $objReader->load("templates/VPI_template.xls");
 
 
 
 
 echo date('H:i:s') , "Добавление новых данных в шаблон" , EOL;
-$data = array(array('title'		=> 'Excel для чайников',
-					'price'		=> 17.99,
-					'quantity'	=> 2
+$data = array(array('articul'	=> 'арт. 5000502-07-750',
+					'name'		=> 'Конфирмат 7,0Х50', //наименование
+                    'producer'	=> 'МДМ-КОМПЛЕКТ', //поставщик
+                    'measure' 	=> 'шт.', //ед.изм
+                    'count' 	=> 100 //кол-во
 				   ),
-			  array('title'		=> 'PHP для чайников',
-					'price'		=> 15.99,
-					'quantity'	=> 1
+			  array('articul'	=> 'арт. 5000502-07-701',
+                    'name'		=> 'Эксцентрик 15 плита 16мм', //наименование
+                    'producer'	=> 'МДМ-КОМПЛЕКТ', //поставщик
+                    'measure' 	=> 'шт.', //ед.изм
+                    'count' 	=> 20 //кол-во
 				   ),
-			  array('title'		=> 'Внутри ООП',
-					'price'		=> 12.95,
-					'quantity'	=> 1
+			  array('articul'	=> 'арт. 5000502-04-107',
+                    'name'		=> 'MOVENTO BLUMOTION 40 КГ 400 ММ', //наименование
+                    'producer'	=> 'BLUM', //поставщик
+                    'measure' 	=> 'комплект', //ед.изм
+                    'count' 	=> 2 //кол-во
 				   )
 			 );
 
 $objPHPExcel->getActiveSheet()->setCellValue('D1', PHPExcel_Shared_Date::PHPToExcel(time()));
 
-$baseRow = 5;
+$baseRow = 4;
 foreach($data as $r => $dataRow) {
 	$row = $baseRow + $r;
 	$objPHPExcel->getActiveSheet()->insertNewRowBefore($row,1);
 
-	$objPHPExcel->getActiveSheet()->setCellValue('A'.$row, $r+1)
-	                              ->setCellValue('B'.$row, $dataRow['title'])
-	                              ->setCellValue('C'.$row, $dataRow['price'])
-	                              ->setCellValue('D'.$row, $dataRow['quantity'])
-	                              ->setCellValue('E'.$row, '=C'.$row.'*D'.$row);
+	$objPHPExcel->getActiveSheet()->setCellValue('D'.$row, $r+1)
+	                              ->setCellValue('E'.$row, $dataRow['articul'])
+	                              ->setCellValue('F'.$row, $dataRow['name'])
+                                  ->setCellValue('G'.$row, $dataRow['producer'])
+                                  ->setCellValue('I'.$row, $dataRow['measure'])
+                                  ->setCellValue('J'.$row, $dataRow['count']);
+                                  
+
+
+	                            //   ->setCellValue('E'.$row, '=C'.$row.'*D'.$row);
 }
-$objPHPExcel->getActiveSheet()->removeRow($baseRow-1,1);
+$objPHPExcel->getActiveSheet()->removeRow($baseRow-1,1);//удаление строки
 
 
 echo date('H:i:s') , " Запись в формат Excel5 " , EOL;
 $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
 // $objWriter->save(str_replace('.php', '.xls', __FILE__));
-echo dirname(__FILE__).'\file.xls';
-$objWriter->save(dirname(__FILE__).'/file.xls ');
+echo dirname(__FILE__).'\vpi.xls', EOL;
+$objWriter->save(dirname(__FILE__).'/vpi.xls ');
 echo date('H:i:s') , " Файл, записанный из " , str_replace('.php', '.xls', pathinfo(__FILE__, PATHINFO_BASENAME)) , EOL;
 
 
