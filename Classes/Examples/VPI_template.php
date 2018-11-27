@@ -86,6 +86,10 @@ foreach($data as $r => $dataRow) {
 	                            //   ->setCellValue('E'.$row, '=C'.$row.'*D'.$row);
 }
 $objPHPExcel->getActiveSheet()->removeRow($baseRow-1,1);//удаление строки
+// // Always include the complete filter range!
+// // Excel does support setting only the caption
+// // row, but that's not a best practise...
+// $objPHPExcel->getActiveSheet()->setAutoFilter($objPHPExcel->getActiveSheet()->calculateWorksheetDimension());
 
 
 echo date('H:i:s') , " Запись в формат Excel5 " , EOL;
