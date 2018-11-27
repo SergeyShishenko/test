@@ -1,4 +1,4 @@
-# PHPExcel Developer Documentation
+﻿# PHPExcel Developer Documentation
 
 
 ## Prerequisites, Installation, FAQ and Links

@@ -1,4 +1,4 @@
-# PHPExcel Developer Documentation
+﻿# PHPExcel Developer Documentation
 
 
 ## Creating a spreadsheet

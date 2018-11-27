@@ -1,4 +1,4 @@
-# PHPExcel Developer Documentation
+﻿# PHPExcel Developer Documentation
 
 ## Clearing a Workbook from memory
 

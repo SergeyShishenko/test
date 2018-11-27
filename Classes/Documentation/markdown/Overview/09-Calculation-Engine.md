@@ -1,4 +1,4 @@
-# PHPExcel Developer Documentation
+﻿# PHPExcel Developer Documentation
 
 ## Using the PHPExcel calculation engine
 
