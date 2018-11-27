@@ -125,12 +125,12 @@ include 'inc-left-side-menu-furnitura.php';
                     <article    id="sistemy-napravlyayushchih-movento">
                       <section >
                         <div class="page-header"     >
-                          <h1 itemprop="name">Системы направляющих MOVENTO</h1>
-                          <h2 >Монтаж на замки – полное выдвижение</h2>
+                          <h1 itemprop="name" id="movento-s-blumotion-760h-766h">Системы направляющих MOVENTO</h1>
+                          <h2 > MOVENTO с BLUMOTION – 760H | 766H</h2>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
-                            <div class="main-box clearfix"  id="movento-s-blumotion-760h-766h" >   
+                            <div class="main-box clearfix"   >   
                                
                                 <h2 >В этом фильме показана регулировка направляющих MOVENTO по высоте, ширине, наклону и глубине. Также представлена корректировка смещения продольной оси ящика на правой направляющей сзади.</h2>                            
                                
@@ -144,7 +144,8 @@ include 'inc-left-side-menu-furnitura.php';
                                 </div>                               
                             </div>
 
-                            <h2 > MOVENTO с BLUMOTION – 760H | 766H</h2>
+                            
+                            <h2 >Монтаж на замки – полное выдвижение</h2>
                            
 
                             <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
@@ -962,42 +963,14 @@ include 'inc-left-side-menu-furnitura.php';
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             
-                            <li><a href="#sistemy-napravlyayushchih-movento">Системы направляющих MOVENTO</a>
+                        <li><a href="#sistemy-napravlyayushchih-movento">Системы направляющих MOVENTO</a>
                                 <ul class="nav">
-                                
-                                    <li><a href="#movento-s-blumotion-760h-766h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H | 766H</a>
-                                    </li>
-                                     <!-- <li><a href="furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php#5000502-01-101-petlya-nakladnaya">&#9999;&nbsp;5000502-01-101 петля накладная</a>
-                                  </li> -->
-                                <!--     <li><a href="#5000502-01-102-petlya-polunakladnaya">&#9999;&nbsp;5000502-01-102 петля полунакладная</a>
-                                    </li>
-                                     <li><a  href="#5000502-01-103-petlya-vkladnaya-falshfasadnaya">&#9999;&nbsp;5000502-01-103 петля вкладная фальшфасадная</a>
-                                    </li>
-                                    <li><a  href="#5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya">&#9999;&nbsp;5000502-01-104 петля накладная нулевого вхождения</a>
-                                    </li>
-                                    <li><a  href="#5000502-01-110-petlya-vkladnaya-bez-pruzhiny">&#9999;&nbsp;5000502-01-110 петля вкладная без пружины</a>
-                                    </li>
-                                    <li><a  href="#5000502-01-111-petlya-nakladnaya-bez-pruzhiny">&#9999;&nbsp;5000502-01-111 петля накладная без пружины</a>
-                                    </li>
-                                    <li><a  href="#5000502-01-112-petlya-polunakladnaya-bez-pruzhiny">&#9999;&nbsp;5000502-01-112 петля полунакладная без пружины</a>
-                                    </li>
-                                    <li><a  href="#5000502-01-113-petlya-vkladnaya-falshfasadnaya-bez-pruzhiny">&#9999;&nbsp;5000502-01-113 петля вкладная фальшфасадная без пружины</a>
-                                    </li>
-                                    <li><a  href="#5000502-01-114-petlya-nakladnaya-nulevogo-vhozhdeniya-bez-pruzhiny">&#9999;&nbsp;5000502-01-114 петля накладная нулевого вхождения без пружины</a>
-                                    </li>
-                                    <li><a  href="#sistemy-napravlyayushchih-movento-podbor-po-vesu">&#9999;&nbsp;ПЕТЛИ для ФАСАДОВ (подбор по весу)</a>
-                                    </li>                                     -->
-                                </ul>
-                            </li>
-                           <!--  <li>
-                                <a href="#mehanizmy-razdvizheniya-dlya-fasadov-Cinetto-PS23">МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ</a>
-                                <ul class="nav">
-                                    <li><a href="#5000502-02-110-sistema-razdvizheniya-i-skladyvaniya-fasadov-Cinetto-PS23">&#9999;&nbsp;5000502-02-110 система раздвижения и складывания фасадов Cinetto PS23</a>
-                                    </li>                                   
+                                    <li><a href="#movento-s-blumotion-760h-766h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H | 766H</a></li>                             
+                                    <li><a href="furnitura-dlya-mebeli-movento760H.php#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li>                                                                                               
                                 </ul>
                             </li>
 
-                             <li>
+                          <!--   <li>
                                 <a href="#mehanizmy-podemnye-dlya-fasadov">МЕХАНИЗМЫ ПОДЪЕМНЫЕ для ФАСАДОВ</a>
                                 <ul class="nav">
                                     <li><a href="#mehanizmy-podemny1">&#9999;&nbsp;mehanizmy-podemny1</a>

@@ -135,7 +135,7 @@
                                                                                        
                                         </ul>
                                     </li>
-                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli-movento.php">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ</a>
+                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli-movento.php#movento-s-blumotion-760h-766h">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ</a>
                                        <!-- <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-04-101-movento-blumotion-napravlyayushchie-250">5000502-04-101 MOVENTO BLUMOTION направляющие 250 мм</a>
                                             </li>
