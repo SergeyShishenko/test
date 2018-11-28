@@ -132,13 +132,13 @@ include 'inc-left-side-menu-furnitura.php';
                             
                             <div class="main-box clearfix"   >   
                                
-                                <h2 >Качество движения направляющих MOVENTO</h2>                            
+                                <h2 >Одна направляющая – три технологии движения</h2>                            
                                
                                  
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
-                                            <source src="./dist/video/movento/mov002-trailer_pr_an_fi_bau_$sall_$amp4720p_$v2.mp4" type="video/mp4">
+                                            <source src="./dist/video/movento/lbx0009-blumotions-technik_pr_an_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
                                         </video>
                                     </div>
                                 </div>                               
