@@ -322,7 +322,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <li><a href="./dist/files/pdf/mov0001-md-047_md_dok_bau_$sml_$aof_$v1.pdf"  target="_blank"  > MOVENTO – инструкция по монтажу</a></li>
                                                         <li><a href="./dist/files/pdf/mov0002-td-100_td_dok_bau_$sru_$aof_$v1.pdf"  target="_blank"  > Новинка BLUMOTION S 3 в 1</a></li> 
                                                         <li><a href="./dist/files/pdf/mov0039-ma-569-0_ma_dok_bau_$sml_$aof_$v4.pdf"  target="_blank"  > Боковой стабилизатор для MOVENTO</a></li>                                                        
-                                                        <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                        <li><a href="http://publications.blum.com/2018/catalogue/ru/438/"  target="_blank"  > Blum - Каталог и техническое руководство 2018/2019</a></li>                                                                               
                                                     </ul>
                                                  </p>
                                             
