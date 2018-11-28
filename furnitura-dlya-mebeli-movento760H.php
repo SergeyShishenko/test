@@ -154,10 +154,10 @@ include 'inc-left-side-menu-furnitura.php';
                                         <div class="carousel-inner">
 
                                             <div class="item active">
-                                             <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик" data-image="./dist/images/Movento1.png" data-target="#image-gallery">
+                                             <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик" data-image="./dist/images/MoventoS1.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/images/Movento1.png"
-                                                        data-src="./dist/images/Movento1.png"
+                                                        src="./dist/images/MoventoS1.png"
+                                                        data-src="./dist/images/MoventoS1.png"
                                                         class="center-block   img-rounded    bar "
                                                         data-toggle="modal"                                                                                                                    
                                                         alt="MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик"
@@ -188,13 +188,13 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/images/Movento760H2.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Монтаж к корпусу" data-image="./dist/images/Movento760H2.png" data-target="#image-gallery">
                                                     <img  
                                                         src="./dist/images/Movento760H2.png" 
                                                         data-src="./dist/images/Movento760H2.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                         
-                                                        alt="Информация для заказа"                                                        
+                                                        alt="Монтаж к корпусу"                                                        
                                                     >
                                                 </a>
                                             </div>
@@ -650,7 +650,8 @@ include 'inc-left-side-menu-furnitura.php';
                             <li><a href="#sistemy-napravlyayushchih-movento">Системы направляющих MOVENTO</a>
                                 <ul class="nav">
                                     <li><a href="furnitura-dlya-mebeli-movento.php#movento-s-blumotion-760h-766h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H | 766H</a></li>                             
-                                    <li><a href="#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li>                                                                                               
+                                    <li><a href="#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li>
+                                    <li><a href="furnitura-dlya-mebeli-movento760H-shelf.php#movento-s-blumotion-760h-shelf">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – выдвижная полка</a></li>                                                                                               
                                 </ul>
                             </li>
                           
