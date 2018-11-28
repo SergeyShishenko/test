@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <title>Document2</title>
+   
+</head>
+<body>
+    <table cellpadding="2" id="currencies" class="currencies">
+        <thead>
+        
+            <tr>
+                <th>Valuuta</th>
+                <th>Kurss</th>
+            </tr>
+        </thead>
+        <tbody >
+        <tr><td>USD</td><td>1,4141</td></tr><tr><td>JPY</td><td>118,56</td></tr><tr><td>DKK</td><td>7,4564</td></tr><tr><td>GBP</td><td>0,88150</td></tr><tr><td>NOK</td><td>7,8055</td></tr><tr><td>RUB</td><td>40,1500</td></tr><tr><td>CAD</td><td>1,3686</td></tr></tbody>
+        
+        </table>
+        <button id="emailcopybtn" class="userButton">Копировать</button>
+
+
+
+
+        <!-- <button id="elem" onclick="alert('Клик');">Автоклик</button> -->
+
+
+        <script>
+            var msg2 =0;
+            //цепляем событие на onclick кнопки
+            var button = document.querySelector('.userButton');
+            button.addEventListener('click', function () {
+                window.getSelection().removeAllRanges();
+            //нашли наш контейнер
+            var ta = document.querySelector('.currencies'); 
+            //производим его выделение
+            var range = document.createRange();
+            range.selectNode(ta); 
+            window.getSelection().addRange(range); 
+            
+            if (document.execCommand('copy')){msg2++; console.log('Copy email command was '+msg2); }
+            //пытаемся скопировать текст в буфер обмена
+            // try {  
+            //     // Теперь, когда мы выбрали текст ссылки, выполним команду копирования
+            //     var successful = document.execCommand('copy');  
+            //      msg2 = successful ? msg2++ : -1;  
+            //     console.log('Copy email command was ' + msg2);  
+            // } catch(err) {  
+            //     console.log('Oops, unable to copy');  
+            // }  
+            //очистим выделение текста, чтобы пользователь "не парился"
+            window.getSelection().removeAllRanges();
+            });
+
+
+            // var copyEmailBtn = document.querySelector('.js-emailcopybtn');  
+            // copyEmailBtn.addEventListener('click', function(event) {  
+            // // Выборка ссылки с электронной почтой 
+            // var emailLink = document.querySelector('.js-emaillink');  
+            // var range = document.createRange();  
+            // range.selectNode(emailLink);  
+            // window.getSelection().addRange(range);  
+                
+            // try {  
+            //     // Теперь, когда мы выбрали текст ссылки, выполним команду копирования
+            //     var successful = document.execCommand('copy');  
+            //     var msg = successful ? 'successful' : 'unsuccessful';  
+            //     console.log('Copy email command was ' + msg);  
+            // } catch(err) {  
+            //     console.log('Oops, unable to copy');  
+            // }  
+                
+            // // Снятие выделения - ВНИМАНИЕ: вы должны использовать
+            // // removeRange(range) когда это возможно
+            // window.getSelection().removeAllRanges();  
+            // });
+
+
+// id="elem"
+
+
+        </script>
+        <script>
+            var event = new Event("dblclick");
+            emailcopybtn.dispatchEvent(event);
+          </script>
+</body>
+</html>
