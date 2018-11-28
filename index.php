@@ -4535,7 +4535,13 @@ include 'inc-version-css-js.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="04 МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ" class="hover mapsite" id="footer140">
-                                                                <p data-img="./dist/images/no-foto.png" id="floating141" data-href="furnitura-dlya-mebeli-movento.php">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ<span><br>~mekhanizmy-vydvizheniya-dlya-yashchikov</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating141" data-href="furnitura-dlya-mebeli-movento.php#movento-s-blumotion-760h-766h">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ<span><br>~mekhanizmy-vydvizheniya-dlya-yashchikov</span></p>
+                                                                <p data-img="./dist/images/no-foto.png"    data-href="furnitura-dlya-mebeli-movento.php#movento-s-blumotion-760h-766h" class="KEYWORDS">Направляющие MOVENTO</p>
+                                                                <p data-img="./dist/images/no-foto.png"    data-href="furnitura-dlya-mebeli-movento.php#movento-s-blumotion-760h-766h" class="KEYWORDS">МОВЕНТО</p>
+                                                                <p data-img="./dist/images/no-foto.png"    data-href="furnitura-dlya-mebeli-movento.php#movento-s-blumotion-760h-766h" class="KEYWORDS">MOVENTO BLUMOTION S</p>
+                                                                <p data-img="./dist/images/no-foto.png"    data-href="furnitura-dlya-mebeli-movento760H.php#movento-s-blumotion-760h" class="KEYWORDS">MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</p>
+                                                                <p data-img="./dist/images/no-foto.png"    data-href="furnitura-dlya-mebeli-movento760H-shelf.php#movento-s-blumotion-760h-shelf" class="KEYWORDS">MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – выдвижная полка</p>
+                                                                
                                                             </TD> 
                                                             <TD>
                                                                 <!-- <TABLE >                                                                                          
