@@ -27,14 +27,14 @@ function getPositionSearch(){
         }
           
 
-console.log('mainpage '+ mainpage);        
+// console.log('mainpage '+ mainpage);        
         // var c= $('div.container').css('width');
         var pos = $( '#main-page' ).position().left;
         var c= $('#main-page').css('width');
-        console.log('position '+pos);
-        console.log('width '+c);
-        console.log('текущая ширина экрана '+ w);
-        console.log('zbz '+ zbz);
+        // console.log('position '+pos);
+        // console.log('width '+c);
+        // console.log('текущая ширина экрана '+ w);
+        // console.log('zbz '+ zbz);
          c = c.replace("px", "")-mainpage; // -21 удалить латинские символы 
         //   с= pos + с;
         // console.log(c);       
@@ -110,9 +110,9 @@ $(function () {
            var child1 =UlSubMenu.length;
            var bottomUl = (colLeftMenu-col)*40;
            if (child1>col){bottomUl=bottomUl-(child1-col)*40;}       
-           console.log("количество левое меню - "+colLeftMenu);
-           console.log("номер по порядку выбранного элемента списка - "+col);      
-           console.log("количество дочерних элементов - "+child1);   
+        //    console.log("количество левое меню - "+colLeftMenu);
+        //    console.log("номер по порядку выбранного элемента списка - "+col);      
+        //    console.log("количество дочерних элементов - "+child1);   
            $(this).find('ul.sub_menu').show();
            
         //    var d = getMouseWeel();
@@ -144,9 +144,9 @@ $(function () {
            if (child1==col){bottomUl=bottomUl-(child1-col)*40+20;}
            if (child1<col){bottomUl=30+(colLeftMenu-col)*40;}   
            if (child1>col){bottomUl=bottomUl-(child1-col)*40+20;}       
-           console.log("количество левое меню2 - "+colLeftMenu);
-           console.log("номер по порядку выбранного элемента списка2 - "+col);      
-           console.log("количество дочерних элементов2 - "+child1);  
+        //    console.log("количество левое меню2 - "+colLeftMenu);
+        //    console.log("номер по порядку выбранного элемента списка2 - "+col);      
+        //    console.log("количество дочерних элементов2 - "+child1);  
             
             $(this).find('ul.sub_menu2').show();
 
@@ -163,7 +163,7 @@ $(function () {
            
         },
         function () {
-            console.log($(this));
+            // console.log($(this));
             delta2 = 0; 
             $(this).find('ul.sub_menu2').hide();
             $(this).find('ul.sub_menu2 > li:nth-child(1)').removeClass('triangle2');            
@@ -205,21 +205,21 @@ $(function () {
     var child1 =UlSubMenu.length;
     var bottomUl = parseInt($(this ).css('bottom'));
      var triangle =$('#triangle2').data('top');
-    console.log('triangle ' + triangle);
+    // console.log('triangle ' + triangle);
     //  console.log('triangle2 ' + $('#triangle2').html());
-    console.log('child1 ' + child1);
-    console.log('bottom ' + $(this ).css('bottom'));
+    // console.log('child1 ' + child1);
+    // console.log('bottom ' + $(this ).css('bottom'));
     if(dy > 0) { 
 
            
                 if (bottomUl < bottomMIN ) { 
                     delta2 =  1  + delta2 ;
-                    console.log('up2');
-                    console.log(delta2); 
-                    console.log(bottomMIN);
+                    // console.log('up2');
+                    // console.log(delta2); 
+                    // console.log(bottomMIN);
                     bottomUl= bottomUl + 40;
                     triangle = triangle + 40;
-                    console.log('bottomUl ' + bottomUl); 
+                    // console.log('bottomUl ' + bottomUl); 
                     $(this ).css("bottom", bottomUl+"px"); 
                     $('#triangle2').remove();
                     $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');       
@@ -232,11 +232,11 @@ $(function () {
          
             if (delta2 > 0 ) { 
                 delta2 =  delta2 - 1 ;
-                console.log('down2');
-                console.log(delta2);
+                // console.log('down2');
+                // console.log(delta2);
                 bottomUl = bottomUl - 40;
                 triangle = triangle - 40;
-                console.log('bottomUl ' + bottomUl); 
+                // console.log('bottomUl ' + bottomUl); 
                 $(this ).css("bottom", bottomUl+"px"); 
                 $('#triangle2').remove();
                 $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');   
@@ -408,10 +408,12 @@ $(function () {
             var button = $(this).find("img"); 
             // извлечь информацию из атрибута data-content 
             var im = button.attr('src');
+            // console.log(im);
             //  im = button.attr('src');
                    
                 
             var dwg = button.data('dwg');
+            // console.log(dwg);
             var xls = button.data('xls');
             var doc = button.data('doc');
             var pdf = button.data('pdf');
@@ -429,7 +431,7 @@ $(function () {
             //    var loge = xls.slice(xls.lastIndexOf("/") + 1);
             //    console.log(loge);
             // alert( log);
-            if (spng !== "noPNG" )
+            if (spng !== "noPNG" && typeof(im) !== "undefined" )
             {
             $(this).find('.overlay').append(
                 // '<a href="'+im+'"  type="button" class="btn btn-info im-download"download="'+im+'"  id="im-download1"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
@@ -438,49 +440,49 @@ $(function () {
             }
 
 
-            if (dwg !== "non" && typeof(dwg) != "undefined" && dwg !== "")
+            if (dwg !== "non" && typeof(dwg) !== "undefined" && dwg !== "" && dwg !== null)
             {
                  $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                      '<a href="'+"./dist/files/dwg/"+dwg.slice(dwg.lastIndexOf("/") + 1)+'"  type="button" class="btn btn-info im-download" download="'+alt+dwg.slice(dwg.lastIndexOf(".") )+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                     ); 
             }
-            if (xls !== "non" && typeof(xls) != "undefined" && xls !== "")
+            if (xls !== "non" && typeof(xls) != "undefined" && xls !== "" && xls !== null)
             {
                  $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                      '<a href="'+"./dist/files/xls/"+xls.slice(xls.lastIndexOf("/") + 1)+'"  type="button" class="btn btn-info im-download" download="'+alt+xls.slice(xls.lastIndexOf(".") )+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
                     ); 
             }
-            if (doc !== "non" && typeof(doc) != "undefined" && doc !== "")
+            if (doc !== "non" && typeof(doc) != "undefined" && doc !== "" && doc !== null)
             {
                  $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                      '<a href="'+"./dist/files/doc/"+doc.slice(doc.lastIndexOf("/") + 1)+'"  type="button" class="btn btn-info im-download" download="'+alt+doc.slice(doc.lastIndexOf(".") )+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
                     ); 
             }
-            if (yxls !== "non" && typeof(yxls) != "undefined" && yxls !== "")
+            if (yxls !== "non" && typeof(yxls) != "undefined" && yxls !== "" && yxls !== null)
             {
                  $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                      '<a href="'+"./dist/files/yri/"+yxls.slice(yxls.lastIndexOf("/") + 1)+'"  type="button" class="btn btn-info im-download" download="'+alt+yxls.slice(yxls.lastIndexOf(".") )+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
                     ); 
             }
-            if (ydoc !== "non" && typeof(ydoc) != "undefined" && ydoc !== "")
+            if (ydoc !== "non" && typeof(ydoc) != "undefined" && ydoc !== "" && ydoc !== null)
             {
                  $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                      '<a href="'+"./dist/files/yri/"+ydoc.slice(ydoc.lastIndexOf("/") + 1)+'"  type="button" class="btn btn-info im-download" download="'+alt+ydoc.slice(ydoc.lastIndexOf(".") )+'" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DOC</a>'
                     ); 
             }
-            if (pdf !== "non" && typeof(pdf) != "undefined" && pdf !== "")
+            if (pdf !== "non" && typeof(pdf) != "undefined" && pdf !== "" && pdf !== null)
             {
                  $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                      '<a href="'+"./dist/files/pdf/"+pdf.slice(pdf.lastIndexOf("/") + 1)+'"  target="_blank" type="button" class="btn btn-info im-download" title= "Открыть PDF в новой вкладке" ><i class="glyphicon glyphicon-open" aria-hidden="true"></i> PDF</a>'
                     ); 
             }
-            if (ypdf !== "non" && typeof(ypdf) != "undefined" && ypdf !== "")
+            if (ypdf !== "non" && typeof(ypdf) != "undefined" && ypdf !== "" && ypdf !== null)
             {
                  $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
