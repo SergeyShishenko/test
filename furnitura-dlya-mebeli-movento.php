@@ -299,6 +299,7 @@ include 'inc-left-side-menu-furnitura.php';
                                             <li ><a href="#harakteristiki" data-toggle="tab">Характеристики</a></li>                                            
                                             <li ><a href="#instrukciya" data-toggle="tab">Инструкция</a></li>
                                             <li class=""><a href="#articuls" data-toggle="tab">Все артикулы</a></li>
+                                            <li class=""><a href="#accessories" data-toggle="tab">Принадлежности</a></li>
                                             
                                         </ul>
                                         <div id="myTabContent" class="tab-content">                                            
@@ -314,19 +315,17 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <li>Компенсация погрешности по ширине и глубине</li> 
                                                         <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
                                                     </ul>
-                                                 </p>
+                                                </p>
                                             </div>                                            
                                             <div class="tab-pane fade" id="instrukciya">
-                                                 <p>
+                                                <p>
                                                     <ul class="stat" style="margin-top: 0px;">
                                                         <li><a href="./dist/files/pdf/mov0001-md-047_md_dok_bau_$sml_$aof_$v1.pdf"  target="_blank"  > MOVENTO – инструкция по монтажу</a></li>
                                                         <li><a href="./dist/files/pdf/mov0002-td-100_td_dok_bau_$sru_$aof_$v1.pdf"  target="_blank"  > Новинка BLUMOTION S 3 в 1</a></li> 
                                                         <li><a href="./dist/files/pdf/mov0039-ma-569-0_ma_dok_bau_$sml_$aof_$v4.pdf"  target="_blank"  > Боковой стабилизатор для MOVENTO</a></li>                                                        
                                                         <li><a href="http://publications.blum.com/2018/catalogue/ru/438/"  target="_blank"  > Blum - Каталог и техническое руководство 2018/2019</a></li>                                                                               
                                                     </ul>
-                                                 </p>
-                                            
-                                            
+                                                </p>
                                             </div>
                                             <div class="tab-pane fade  in active" id="movart1">
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
@@ -358,6 +357,27 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td>Замок, левый/правый</td>
                                                         </tr>
                                                         
+                                                        </tbody>
+                                                    </table>
+                                                    <p><b>Дополнительно</b> &ndash; при ширине корпуса <b>KB</b> более 600 мм (МАХ 1400мм):</p>
+                                                    <table class="table table-striped table-responsive">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Список</th>
+                                                                <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                                <th>Артикул</th>
+                                                                <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                                <th>Описание</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><img src="./dist/images/ArticulImgU4.png" class="" alt="Боковой стабилизатор" title=""></td>
+                                                                <td>1</td>
+                                                                <td>ZS7M400MU</td>
+                                                                <td>темно-серый (RAL 7037)</td> 
+                                                                <td>Комплект бокового стабилизатора</td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                     <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
@@ -404,6 +424,28 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p><b>Дополнительно</b> &ndash; при ширине корпуса <b>KB</b> более 600 мм (МАХ 1400мм):</p>
+                                                    <table class="table table-striped table-responsive">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Список</th>
+                                                                <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                                <th>Артикул</th>
+                                                                <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                                <th>Описание</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><img src="./dist/images/ArticulImgU4.png" class="" alt="Боковой стабилизатор" title=""></td>
+                                                                <td>1</td>
+                                                                <td>ZS7M400MU</td>
+                                                                <td>темно-серый (RAL 7037)</td> 
+                                                                <td>Комплект бокового стабилизатора</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <p> Ширина корпуса </p>
                                                     <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
                                                     <p>
                                                         <ul class="stat" style="margin-top: 0px;">
@@ -446,6 +488,27 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td>Замок, левый/правый</td>
                                                         </tr>
                                                         
+                                                        </tbody>
+                                                    </table>
+                                                    <p><b>Дополнительно</b> &ndash; при ширине корпуса <b>KB</b> более 600 мм (МАХ 1400мм):</p>
+                                                    <table class="table table-striped table-responsive">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Список</th>
+                                                                <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                                <th>Артикул</th>
+                                                                <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                                <th>Описание</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><img src="./dist/images/ArticulImgU4.png" class="" alt="Боковой стабилизатор" title=""></td>
+                                                                <td>1</td>
+                                                                <td>ZS7M400MU</td>
+                                                                <td>темно-серый (RAL 7037)</td> 
+                                                                <td>Комплект бокового стабилизатора</td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                     <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
@@ -492,6 +555,27 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p><b>Дополнительно</b> &ndash; при ширине корпуса <b>KB</b> более 600 мм (МАХ 1400мм):</p>
+                                                    <table class="table table-striped table-responsive">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Список</th>
+                                                                <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                                <th>Артикул</th>
+                                                                <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                                <th>Описание</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><img src="./dist/images/ArticulImgU4.png" class="" alt="Боковой стабилизатор" title=""></td>
+                                                                <td>1</td>
+                                                                <td>ZS7M400MU</td>
+                                                                <td>темно-серый (RAL 7037)</td> 
+                                                                <td>Комплект бокового стабилизатора</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                     <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
                                                     <p>
                                                         <ul class="stat" style="margin-top: 0px;">
@@ -534,6 +618,27 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td>Замок, левый/правый</td>
                                                         </tr>
                                                         
+                                                        </tbody>
+                                                    </table>
+                                                    <p><b>Дополнительно</b> &ndash; при ширине корпуса <b>KB</b> более 600 мм (МАХ 1400мм):</p>
+                                                    <table class="table table-striped table-responsive">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Список</th>
+                                                                <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                                <th>Артикул</th>
+                                                                <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                                <th>Описание</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><img src="./dist/images/ArticulImgU4.png" class="" alt="Боковой стабилизатор" title=""></td>
+                                                                <td>1</td>
+                                                                <td>ZS7M600MU</td>
+                                                                <td>темно-серый (RAL 7037)</td> 
+                                                                <td>Комплект бокового стабилизатора</td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                     <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
@@ -580,6 +685,27 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p><b>Дополнительно</b> &ndash; при ширине корпуса <b>KB</b> более 600 мм (МАХ 1400мм):</p>
+                                                    <table class="table table-striped table-responsive">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Список</th>
+                                                                <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                                <th>Артикул</th>
+                                                                <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                                <th>Описание</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><img src="./dist/images/ArticulImgU4.png" class="" alt="Боковой стабилизатор" title=""></td>
+                                                                <td>1</td>
+                                                                <td>ZS7M600MU</td>
+                                                                <td>темно-серый (RAL 7037)</td> 
+                                                                <td>Комплект бокового стабилизатора</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                     <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
                                                     <p>
                                                         <ul class="stat" style="margin-top: 0px;">
@@ -624,6 +750,27 @@ include 'inc-left-side-menu-furnitura.php';
                                                         
                                                         </tbody>
                                                     </table>
+                                                    <p><b>Дополнительно</b> &ndash; при ширине корпуса <b>KB</b> более 600 мм (МАХ 1400мм):</p>
+                                                    <table class="table table-striped table-responsive">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Список</th>
+                                                                <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                                <th>Артикул</th>
+                                                                <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                                <th>Описание</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><img src="./dist/images/ArticulImgU4.png" class="" alt="Боковой стабилизатор" title=""></td>
+                                                                <td>1</td>
+                                                                <td>ZS7M600MU</td>
+                                                                <td>темно-серый (RAL 7037)</td> 
+                                                                <td>Комплект бокового стабилизатора</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                     <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
                                                     <p>
                                                         <ul class="stat" style="margin-top: 0px;">
@@ -666,6 +813,27 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td>Замок, левый/правый</td>
                                                         </tr>
                                                         
+                                                        </tbody>
+                                                    </table>
+                                                    <p><b>Дополнительно</b> &ndash; при ширине корпуса <b>KB</b> более 600 мм (МАХ 1400мм):</p>
+                                                    <table class="table table-striped table-responsive">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Список</th>
+                                                                <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                                <th>Артикул</th>
+                                                                <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                                <th>Описание</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><img src="./dist/images/ArticulImgU4.png" class="" alt="Боковой стабилизатор" title=""></td>
+                                                                <td>1</td>
+                                                                <td>ZS7M600MU</td>
+                                                                <td>темно-серый (RAL 7037)</td> 
+                                                                <td>Комплект бокового стабилизатора</td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                     <p>3D Модели <i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i></p>
@@ -934,6 +1102,54 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td>Замок, левый/правый</td>
                                                         </tr>
                                                         
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="accessories">
+                                                <div class="row col-xs-12 col-sm-12 col-md-12">
+                                                    <h3 class="">Комплект бокового стабилизатора</h3>                                                             
+                                                    <table class="table  table-responsive">                                                       
+                                                        <tbody>                                                        
+                                                            <tr>                                                          
+                                                                <td>
+                                                                    <p>
+                                                                        <ul class="stat " style="margin-top: 0px;">
+                                                                            <li>Предназначен для повышения боковой стабилизации широких ящиков</li>
+                                                                            <li>Ширина корпуса <b>KB</b> более 600 мм (МАХ 1400мм)</li> 
+                                                                            <li>Ящик будет закрываться стабильно плавно и бесшумно</li>
+                                                                            <li>Материал: пластмасса</li>
+                                                                            <li>Цвет: темно-серый (RAL 7037)</li>
+                                                                            <li>Можно использовать с любыми технологиями движения для MOVENTO</li>
+                                                                            <li><a href="http://publications.blum.com/2018/catalogue/ru/444/"  target="_blank"  > Blum - Каталог и техническое руководство 2018/2019</a></li>
+                                                                                                                                                    
+                                                                        </ul>
+                                                                    </p>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Обработка ящиков" data-image="./dist/images/MovStab1.png" data-target="#image-gallery">
+                                                                    <img src="./dist/images/MovStab1.png" class="col-xs-12 col-sm-12 col-md-12" alt="Комплект бокового стабилизатора" title="">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Обработка ящиков" data-image="./dist/images/MovStab3.png" data-target="#image-gallery">
+                                                                    <img src="./dist/images/MovStab3.png" class="col-xs-12 col-sm-12 col-md-12" alt="Проектирование" title="">
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                
+                                                                <td>
+                                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Обработка ящиков" data-image="./dist/images/MovStab2.png" data-target="#image-gallery">
+                                                                    <img src="./dist/images/MovStab2.png" class="col-xs-12 col-sm-12 col-md-12" alt="Комплект бокового стабилизатора" title="">
+                                                                    </a>
+                                                                </td>
+                                                            
+                                                            </tr> 
                                                         </tbody>
                                                     </table>
                                                 </div>
