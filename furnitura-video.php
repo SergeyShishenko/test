@@ -124,7 +124,16 @@ include 'inc-left-side-menu-furnitura.php';
                     </div>
                 </div>
             </div>
-
+            <div class="main-box clearfix">
+                <h4> rutube.ru</h4>
+                <div class="main-box-body clearfix">
+                    <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="720" height="405"  src="//rutube.ru/play/embed/11792528?quality=1"   webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+         
+            
             <div class="main-box clearfix">
                 <h4> Мебельные петли, и «с чем их едят» l Виды l Разметка l Количество петель на фасад l Unreal Engine
                     4</h4>
