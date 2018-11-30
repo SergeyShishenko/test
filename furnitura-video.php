@@ -128,7 +128,7 @@ include 'inc-left-side-menu-furnitura.php';
                 <h4> rutube.ru</h4>
                 <div class="main-box-body clearfix">
                     <div class="embed-responsive embed-responsive-16by9">
-                    <iframe width="720" height="405"  src="//rutube.ru/play/embed/11792528?quality=1"   webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
+                    <iframe width="720" height="405"  src="https://www.rutube.ru/play/embed/11792528?quality=1" webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
