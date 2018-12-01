@@ -2436,7 +2436,7 @@ include 'inc-left-side-menu-detali.php';
                     </article>                  
                 </div> <!-- main  -->                
                 <!-- боковое меню блоки дверные начало -->
-                <div class="col-md-2" >
+                <div class="col-md-2"  id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary"  >
                         <ul class="nav bs-sidenav">
                             <li><a href="#profili-nakladki">Накладки</a>

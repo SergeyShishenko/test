@@ -1174,9 +1174,15 @@ include 'inc-left-side-menu-furnitura.php';
 
                     
                 </div> <!-- main  -->
+
+                
+
                 <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
+                    
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
+                   
+
                         <ul class="nav bs-sidenav">
                             
                         <li><a href="#sistemy-napravlyayushchih-movento">Системы направляющих MOVENTO</a>
@@ -1185,169 +1191,14 @@ include 'inc-left-side-menu-furnitura.php';
                                     <li><a href="furnitura-dlya-mebeli-movento760H.php#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li> 
                                     <li><a href="furnitura-dlya-mebeli-movento760H-shelf.php#movento-s-blumotion-760h-shelf">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – выдвижная полка</a></li>                                                                                                
                                 </ul>
-                            </li>
-
-                          <!--   <li>
-                                <a href="#mehanizmy-podemnye-dlya-fasadov">МЕХАНИЗМЫ ПОДЪЕМНЫЕ для ФАСАДОВ</a>
-                                <ul class="nav">
-                                    <li><a href="#mehanizmy-podemny1">&#9999;&nbsp;mehanizmy-podemny1</a>
-                                    </li>                                   
-                                </ul>
-                            </li>
-                           
-                            <li>
-                                <a href="#mekhanizmy-vydvizheniya-dlya-yashchikov">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ</a>
-                                <ul class="nav">
-                                    <li><a href="#5000502-04-101-movento-blumotion-napravlyayushchie-250">&#9999;&nbsp;5000502-04-101 MOVENTO BLUMOTION 40 КГ 250 мм</a>
-                                    </li> 
-                                    <li><a href="#5000502-04-103-movento-blumotion-napravlyayushchie-300">&#9999;&nbsp;5000502-04-103 MOVENTO BLUMOTION 40 КГ 300 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-105-movento-blumotion-napravlyayushchie-350">&#9999;&nbsp;5000502-04-105 MOVENTO BLUMOTION 40 КГ 350 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-107-movento-blumotion-napravlyayushchie-400">&#9999;&nbsp;5000502-04-107 MOVENTO BLUMOTION 40 КГ 400 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-109-movento-blumotion-napravlyayushchie-450">&#9999;&nbsp;5000502-04-108 MOVENTO BLUMOTION 40 КГ 450 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-111-movento-blumotion-napravlyayushchie-500">&#9999;&nbsp;5000502-04-110 MOVENTO BLUMOTION 40 КГ 500 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-113-movento-blumotion-napravlyayushchie-550">&#9999;&nbsp;5000502-04-113 MOVENTO BLUMOTION 40 КГ 550 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-114-movento-blumotion-napravlyayushchie-600">&#9999;&nbsp;5000502-04-114 MOVENTO BLUMOTION 40 КГ 600 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-121-movento-tipon-napravlyayushchie-250">&#9999;&nbsp;5000502-04-121 MOVENTO TIPON 40 КГ 250 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-125-movento-tipon-napravlyayushchie-300">&#9999;&nbsp;5000502-04-125 MOVENTO TIPON 40 КГ 300 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-128-movento-tipon-napravlyayushchie-350">&#9999;&nbsp;5000502-04-128 MOVENTO TIPON 40 КГ 350 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-133-movento-tipon-napravlyayushchie-400">&#9999;&nbsp;5000502-04-128 MOVENTO TIPON 40 КГ 400 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-139-movento-tipon-napravlyayushchie-450">&#9999;&nbsp;5000502-04-139 MOVENTO TIPON 40 КГ 450 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-141-movento-tipon-napravlyayushchie-500">&#9999;&nbsp;5000502-04-141 MOVENTO TIPON 40 КГ 500 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-143-movento-tipon-napravlyayushchie-550">&#9999;&nbsp;5000502-04-143 MOVENTO TIPON 40 КГ 550 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-04-145-movento-tipon-napravlyayushchie-600">&#9999;&nbsp;5000502-04-145 MOVENTO TIPON 40 КГ 600 мм</a>
-                                    </li>
-                                    <li><a href="#tekhnicheskaya-informaciya-po-napravlyayushchim">&#9999;&nbsp;Техническая информация по направляющим</a>
-                                    </li>                                  
-                                </ul>
-                            </li>
-
-                             <li>
-                                <a href="#opory">ОПОРЫ</a>
-                                <ul class="nav">
-                                    <li><a href="#5000502-05-501-opora-reguliruemaya-universalnaya">&#9999;&nbsp;5000502-05-501 опора регулируемая универсальная</a>
-                                    </li>
-                                    <li><a href="#5000502-05-502-opora-reguliruemaya-s-podderzhkoy-bokoviny">&#9999;&nbsp;5000502-05-502 опора регулируемая с поддержкой боковины</a>
-                                    </li>
-                                    <li><a href="#5000502-05-511-opora-reguliruemaya-malaya">&#9999;&nbsp;5000502-05-511 опора регулируемая малая</a>
-                                    </li>
-                                    <li><a href="#5000502-05-512-opora-reguliruemaya-malaya-s-cokolnoy-klipsoy">&#9999;&nbsp;5000502-05-512 опора регулируемая малая с цокольной клипсой</a>
-                                    </li >                                  
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#zashchelki-mebelnye">ЗАЩЕЛКИ МЕБЕЛЬНЫЕ</a>
-                                <ul class="nav">
-                                    <li><a href="#5000502-06-100-zashchelka-tipon" >&#9999;&nbsp;5000502-06-100 защелка - TIPON</a>
-                                    </li>                                    
-                                    <li><a href="#5000502-06-106-zashchelka-mebelnaya-magnitnaya">&#9999;&nbsp;5000502-06-106 защелка мебельная магнитная</a>
-                                    </li>                                                                    
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#styazhki">СТЯЖКИ</a>
-                                <ul class="nav">
-                                    <li><a href="#5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-16-mm">&#9999;&nbsp;5000502-07-701 стяжка эксцентриковая односторонняя<br>для плит 16 мм</a>
-                                    </li>                                    
-                                    <li><a href="#5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-16-mm">&#9999;&nbsp;5000502-07-702 стяжка эксцентриковая двухсторонняя<br>для плит 16 мм</a>
-                                    </li> 
-                                    <li><a href="#5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm">&#9999;&nbsp;5000502-07-703 стяжка эксцентриковая односторонняя<br>для плит 24 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm">&#9999;&nbsp;5000502-07-704 стяжка эксцентриковая двухсторонняя<br>для плит 24 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm">&#9999;&nbsp;5000502-07-707 стяжка эксцентриковая в металлическом корпусе<br>для плит 16 мм</a>
-                                    </li>
-                                    <li><a href="#5000502-07-750-konfirmat-70h50">&#9999;&nbsp;5000502-07-750 конфирмат 7.0Х50</a>
-                                    </li>
-                                    <li><a href="#5000502-07-752-konfirmat-70h70">&#9999;&nbsp;5000502-07-752 конфирмат 7.0Х70</a>
-                                    </li>                                                                   
-                                </ul>
-                            </li>
-
-                             <li>
-                                <a href="#polkoderzhateli">ПОЛКОДЕРЖАТЕЛИ</a>
-                                <ul class="nav">
-                                    <li><a href="#5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki">&#9999;&nbsp;5000502-08-101 PK2 полкодержатель с фиксацией полки</a>
-                                    </li>                                                                 
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ</a>
-                                <ul class="nav">
-                                    <li><a href="#5000502-10-300-shtanga-kruglaya-dlya-veshala">&#9999;&nbsp;5000502-10-300 штанга круглая для вешала</a>
-                                    </li>
-                                    <li><a href="#5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala">&#9999;&nbsp;5000502-10-301 штанга круглая с проходным держателем</a>
-                                    </li>                                                                 
-                                </ul>
-                            </li> -->
-
-                            <!-- <li>
-                                <a href="#pantografy"> ПАНТОГРАФЫ</a>
-                                <ul class="nav">
-                                    <li><a href="#SUPERLIFT">&#9999;&nbsp;Пантограф 75-115 см, регул. нагрузки 14-20 кг</a>
-                                    </li>
-                                    <li><a href="furnitura-dlya-mebeli-pantograf2.php#LIFT800">&#9999;&nbsp;Пантограф с креплением к стене, 75-115 см, нагр.10 кг</a>
-                                    </li>                                                                 
-                                </ul>
-                            </li> -->
-
-                            <!-- <li>
-                                <a href="#ruchki">РУЧКИ</a>
-                                <ul class="nav">
-                                    <li><a href="#ruchka1">&#9999;&nbsp;ruchka1</a>
-                                    </li>
-                                    <li><a href="#ruchka2">&#9999;&nbsp;ruchka2</a>
-                                    </li>                                                                 
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#mekhanizmy-dlya-razdvizhnyh-stolov">МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ</a>
-                                <ul class="nav">
-                                    <li><a href="#mekhanizmy1">&#9999;&nbsp;mekhanizmy1</a>
-                                    </li>                                                                                                    
-                                </ul>
-                            </li>
-
-                             <li>
-                                <a href="#natyazhiteli-dlya-fasadov">НАТЯЖИТЕЛИ для ФАСАДОВ</a>
-                                <ul class="nav">
-                                    <li><a href="#pivot-tn-103-2329-02">&#9999;&nbsp;Pivot TN 103.2329.02</a>
-                                    </li>                                                                                                    
-                                </ul>
-                            </li>
-
-                            <li>
-                                <a href="#mekhanizmy-dlya-obuvnic">МЕХАНИЗМЫ для ОБУВНИЦ</a>
-                                <ul class="nav">
-                                    <li><a href="#razdvizhnoy-derzhatel-dlya-obuvi-560-1000-mm-chernyy-892-11-300">&#9999;&nbsp;Раздвижной держатель для обуви 560-1000 мм черный </a>
-                                    </li>
-                                    <li><a href="#razdvizhnoy-derzhatel-dlya-obuvi-460-750-mm-stal-hromirovannyy-892-12-906">&#9999;&nbsp;Раздвижной держатель для обуви 460-750 мм хромированный </a>
-                                    </li>                                                                 
-                                </ul>
-                            </li> -->
-                                                    
+                            </li>                           
                         </ul>
+                         
                     </div>
+                  
                 </div><!-- боковое меню блоки дверные конец -->
 
-                
+                 
               
     
 <?php include 'inc-footer2.php'; ?>
