@@ -326,6 +326,54 @@ else echo "Поле не добавленно: ".mysqli_error($dbconn);
 mysqli_close($dbconn);
 
 ////
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
+$res = mysqli_query($dbconn,"SELECT `color_obj_prop` FROM `obj_furnitur_prop` WHERE 0");
+if ($res) {
+echo "Поле 'color_obj_prop' существует.<br>";
+}
+else {
+    $query = "ALTER TABLE `obj_furnitur_prop` ADD COLUMN `color_obj_prop`  VARCHAR(255) ";
+if (mysqli_query($dbconn, $query)) echo "ADD COLUMN color_obj_prop в таблицу obj_furnitur_prop.<br>";
+else echo "Поле не добавленно: ".mysqli_error($dbconn);
+}
+mysqli_close($dbconn);
+
+////
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
+$res = mysqli_query($dbconn,"SELECT `def_obj_prop` FROM `obj_furnitur_prop` WHERE 0");
+if ($res) {
+echo "Поле 'def_obj_prop' существует.<br>";
+}
+else {
+    $query = "ALTER TABLE `obj_furnitur_prop` ADD COLUMN `def_obj_prop`  VARCHAR(255) ";
+if (mysqli_query($dbconn, $query)) echo "ADD COLUMN def_obj_prop в таблицу obj_furnitur_prop.<br>";
+else echo "Поле не добавленно: ".mysqli_error($dbconn);
+}
+mysqli_close($dbconn);
+
+////
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
+$res = mysqli_query($dbconn,"SELECT `unit_obj_prop` FROM `obj_furnitur_prop` WHERE 0");
+if ($res) {
+echo "Поле 'unit_obj_prop' существует.<br>";
+}
+else {
+    $query = "ALTER TABLE `obj_furnitur_prop` ADD COLUMN `unit_obj_prop`  VARCHAR(255) ";
+if (mysqli_query($dbconn, $query)) echo "ADD COLUMN unit_obj_prop в таблицу obj_furnitur_prop.<br>";
+else echo "Поле не добавленно: ".mysqli_error($dbconn);
+}
+mysqli_close($dbconn);
+
+////
 $dbconn=dbconnect();
 if ( !$dbconn ) die("Error");
 

@@ -1306,6 +1306,18 @@ switch ($tbl) {
                     echo '<div class="row">
                             <div class="input-group col-md-12">
                                 <div class="input-group ">                       
+                                    <span class="input-group-addon">def_obj_prop</span>
+                                    <input type="text" class="form-control" id="recipient-def_obj_prop" value="'.$row_obj_furnitur_prop["def_obj_prop"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="def_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
                                     <span class="input-group-addon">made_furnitur_obj</span>
                                     <input type="text" class="form-control" id="recipient-made_furnitur_obj" value="'.$row_obj_furnitur_prop["made_furnitur_obj"].'" required>
                                     <span class="input-group-btn">
@@ -1322,6 +1334,30 @@ switch ($tbl) {
                                     <input type="text" class="form-control" id="recipient-url_furnitur_obj_prop" value="'.$row_obj_furnitur_prop["url_furnitur_obj_prop"].'" required>
                                     <span class="input-group-btn">
                                         <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="url_furnitur_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">color_obj_prop</span>
+                                    <input type="text" class="form-control" id="recipient-color_obj_prop" value="'.$row_obj_furnitur_prop["color_obj_prop"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="color_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    ';
+                    echo '<div class="row">
+                            <div class="input-group col-md-12">
+                                <div class="input-group ">                       
+                                    <span class="input-group-addon">unit_obj_prop</span>
+                                    <input type="text" class="form-control" id="recipient-unit_obj_prop" value="'.$row_obj_furnitur_prop["unit_obj_prop"].'" required>
+                                    <span class="input-group-btn">
+                                        <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="unit_obj_prop" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                                     </span>
                                 </div>
                             </div>
