@@ -283,7 +283,7 @@ include 'inc-left-side-menu-furnitura.php';
                                             padding: 15px;
                                             ">
                                          <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
-                                             <li class="dropdown active">
+                                             <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Артикул и 3D Модели<b class="caret"></b></a>
                                                 <ul class="dropdown-menu">
                                                     <li><a href="#movart1" data-toggle="tab"><b>250 мм</b> MOVENTO BLUMOTION S 40 кг </a></li>
@@ -300,6 +300,7 @@ include 'inc-left-side-menu-furnitura.php';
                                             <li ><a href="#instrukciya" data-toggle="tab">Инструкция</a></li>
                                             <li class=""><a href="#articuls" data-toggle="tab">Все артикулы</a></li>
                                             <li class=""><a href="#accessories" data-toggle="tab">Принадлежности</a></li>
+                                            <li class=" active"><a href="#calc" data-toggle="tab">Калькулятор</a></li>
                                             
                                         </ul>
                                         <div id="myTabContent" class="tab-content">                                            
@@ -327,7 +328,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     </ul>
                                                 </p>
                                             </div>
-                                            <div class="tab-pane fade  in active" id="movart1">
+                                            <div class="tab-pane fade" id="movart1">
                                                 <div class="row col-xs-12 col-sm-12 col-md-12">
                                                     <h3 class="blum">5000502-04-101 MOVENTO BLUMOTION S 40 кг 250 мм</h3>
                                                     <p>Состав артикула:</p>            
@@ -1154,6 +1155,149 @@ include 'inc-left-side-menu-furnitura.php';
                                                     </table>
                                                 </div>
                                             </div>
+                                            <div class="tab-pane fade  in active" id="calc">
+                                                <div class="row col-xs-12 col-sm-12 col-md-12" >
+                                                    <h3 class="">Калькулятор</h3>  
+                                                    <div class="row col-xs-12 col-sm-12 col-md-12" style=" margin-bottom: 10px;">
+                                                                    <div    class="col-xs-4 col-sm-4 col-md-4" style="padding-right:0px; padding-left:0px;">
+                                                                     <p style="padding: 5px;font-weight: bold;" id="width_box_input_def">Ширина проема (286-1368) </p>
+                                                                     <p style="padding: 5px;font-weight: bold;margin-top: -15px;" id="box-depth_def">Глубина проема (MIN <span class="gap">253</span>) </p>
+                                                                    </div>
+                                                                      
+                                                        
+                                                                    <div  class="col-xs-4 col-sm-4 col-md-4" style="padding-right:0px; padding-left:0px;">
+                                                                        <div class="form-check form-check-inline" style="padding: 5px;padding-left: 15px;">
+                                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                                                                        <label class="form-check-label" for="inlineRadio1">Накладной фасад</label>
+                                                                        
+                                                                        
+                                                                        </div> 
+                                                                    </div> 
+                                                                       
+                                                            
+                                                                    <div    class="col-xs-4 col-sm-4 col-md-4 " style="padding-right:0px; padding-left:0px;" >
+                                                                        <div class="form-check form-check-inline" style="padding-left: 25px;">
+                                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                                        <label class="form-check-label" for="inlineRadio2">Вкладной фасад </label>
+                                                                        
+                                                                            <label class="form-check-label " for="input_x"> X=</label>
+                                                                            <input type="text" class="form-control only_number " id="input_x"  style="width: 20%; padding: 6px 10px;" value="16" disabled > 
+                                                                        
+                                                                        </div>
+                                                                    </div> 
+                                                        
+                                                     </div>                                                           
+                                                 
+                                                
+                                                                    <div    class="col-xs-4 col-sm-4 col-md-4" style="padding-right:0px; padding-left:0px;">
+                                                                        <img src="./dist/css/calc1.png" alt="calc1" class="col-xs-12 col-sm-12 col-md-12"  >
+                                                                    </div>
+                                                                  
+                                                       
+                                                                    <div  class="col-xs-4 col-sm-4 col-md-4" style="padding-right:0px; padding-left:0px;">
+                                                                    <img src="./dist/css/calc2.png" alt="calc2" class="col-xs-12 col-sm-12 col-md-12" >      
+                                                                    </div> 
+                                                                    
+                                                        
+                                                                    <div    class="col-xs-4 col-sm-4 col-md-4" style="padding-right:0px; padding-left:0px;">
+                                                                    <img src="./dist/css/calc3.png" alt="calc3" class="col-xs-12 col-sm-12 col-md-12"  > 
+                                                                    </div> 
+                                                                    
+                                                 
+                                                      
+                                                </div>
+                                                <!-- row  -->
+
+                                                <div class="row col-xs-12 col-sm-12 col-md-12" >
+                                                    <div class=" col-xs-4 col-sm-4 col-md-4">
+                                                        <table class="dim_box_horizontal" >
+                                                            <tr>
+                                                                <td  style="width: 20%;"></td>
+                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-left"></span></td>
+                                                                <td class="">                         
+                                                                <input type="text" class="form-control only_number " id="width_box_input"  style="width: 100%;" value="286">                        
+                                                                </td> 
+                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-right "></span></td>
+                                                                <td  style="width: 20%;"></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div> 
+                                                    <div class=" col-xs-4 col-sm-4 col-md-4">
+                                                        <table class="dim_box_horizontal" >
+                                                            <tr>
+                                                                 <td></td>
+                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-left"></span></td>
+                                                                <td class="">                         
+                                                                <input type="text" class="form-control only_number " id="box-depth_input"  style=" width: 100%;" value="253">                        
+                                                                </td> 
+                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-right "></span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div> 
+                                                    <div class=" col-xs-4 col-sm-4 col-md-4">
+                                                        <table class="dim_box_horizontal" >
+                                                            <tr>
+                                                            <td></td>
+                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-left"></span></td>
+                                                                <td class="">   
+                                                                                      
+                                                                <input type="text" class="form-control only_number " id="box-depth_x_input"  style="width: 100%;" disabled>
+                                                                                       
+                                                                </td> 
+                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-right "></span></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div> 
+
+                                                   
+                                                </div>
+<!-- / ВЫВОД РЕЗУЛЬТАТА/ -->
+
+                                          
+
+                                                <div class="row col-xs-12 col-sm-12 col-md-12">
+                                                           
+                                                    <table class="table table-striped table-responsive">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>Список</th>
+                                                            <th>К&nbsp;&#8209;&nbsp;во</th>
+                                                            <th>Артикул</th>
+                                                            <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                            <th>Описание</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td>1</td>
+                                                            <td>760H<span class="calcarticul">250</span>0S</td>
+                                                            <td>Оцинкованный</td> 
+                                                            <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=<span class="calcarticul">250</span>мм, под замки, левая/правая</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td>1</td>
+                                                            <td>T51.7601</td>
+                                                            <td>Оранжевый</td>
+                                                            <td>Замок, левый/правый</td>
+                                                        </tr>
+                                                        <tr id="sidestab" style="display:none;">
+                                                                <td><img src="./dist/images/ArticulImgU4.png" class="" alt="Боковой стабилизатор" title=""></td>
+                                                                <td>1</td>
+                                                                <td>ZS7M400MU</td>
+                                                                <td>темно-серый (RAL 7037)</td> 
+                                                                <td>Комплект бокового стабилизатора</td>
+                                                        </tr>
+                                                        
+                                                        </tbody>
+                                                    </table>
+                                           
+                                                   
+                                                </div>
+                                            </div>
                                            
                                         </div>
                                     </div>
@@ -1199,6 +1343,8 @@ include 'inc-left-side-menu-furnitura.php';
                 </div><!-- боковое меню блоки дверные конец -->
 
                  
-              
+            
+            
+
     
 <?php include 'inc-footer2.php'; ?>

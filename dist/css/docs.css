@@ -20,6 +20,35 @@ body {
 
 
 
+table.dim_box_horizontal{
+	
+	height: 12px;
+	
+	
+
+	text-align: center;
+	vertical-align: middle;
+	/* border-left:2px solid #337ab7;
+	border-right:2px solid #337ab7; */
+	
+	background-color: #edeeef;
+}
+table.dim_box_horizontal > tbody > tr > td:nth-child(1){
+	 text-align: left;
+	 
+}
+/* table.dim_box_horizontal > tbody > tr> td:nth-child(3) {
+	  text-align: right;
+	 
+} */
+/* table.dim_box_horizontal > tbody > tr > td > p::before{
+	content: attr(data-top-height);
+	float: right;
+	width: 100%;
+	height:100%;
+	
+} */
+
 
 .click-hover{background-color:rgb(66, 139, 202);}
 
