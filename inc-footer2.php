@@ -38,11 +38,13 @@
    var $old=$("#width_box_input").val();
    var $old2=$("#box-depth_input").val();
    var $gap=3;
-   var $widthmin =253;
+   var $depthmin =253;
+   var $x=0;
    $( "#inlineRadio1" ).on( "click", function() {    
     $("#input_x").prop("disabled",true);
     $("#box-depth_x_input").prop("disabled",true);
     $("#box-depth_input").prop("disabled",false);
+    $x=0;
 
     });
     $( "#inlineRadio2" ).on( "click", function() {
@@ -51,6 +53,10 @@
         // $("#input_x").attr("value",16);
         $("#box-depth_x_input").prop("disabled",false);
         $("#box-depth_input").prop("disabled",true);
+        $depthmin =269;
+        $("span.gap").text($depthmin);
+        $x=1;
+        $old2=269;
         
         
         });
@@ -67,24 +73,104 @@
             {$( this ).val($old); $("#width_box_input").val($old); $("#width_box_input_def").css("color", "red"); }
                 else{$("#width_box_input_def").css("color", "black");$("#box-depth_def").css("color", "black");$old=$("#width_box_input").val();
                     if ($( this ).val()>600)
-                    {$("#sidestab").show();$widthmin=265;$old2=265;$("span.gap").text($widthmin);
-                        if($("#box-depth_input").val()<$widthmin){$("#box-depth_input").val($widthmin);}
+                    {  
+                        if ($x==0)
+                        {
+                            $("#sidestab").show();$depthmin=265;$gap=15;$("span.gap").text($depthmin);
+                            if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
+                        }else
+                        {
+                            $("#sidestab").show();$depthmin=269;$gap=15;$("span.gap").text($depthmin);
+                            if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
+                        }
                     }
-                    else{$("#sidestab").hide();$widthmin=253;$("span.gap").text($widthmin);$("#width_box_input_def").css("color", "black")}
+                    else{$("#sidestab").hide();$depthmin=253;$gap=3;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black")}
 
                 }
           });
+
+// 250 + 15 + 16 !!!
+
           //глубина
-          $("#box-depth_input").change(function() {
-            if ($( this ).val()<$widthmin) {$( this ).val($old2); $("#box-depth_def").val($old2); $("#box-depth_def").css("color", "red"); }
-                else{$("#box-depth_def").css("color", "black");$old2=$("#box-depth_input").val();
-                   // if ($( this ).val()>600)
-                   // {$("#sidestab").show();}
-                   // else{$("#sidestab").hide();}
+          $("#box-depth_input").change(function()
+           {
+                if ($( this ).val()<$depthmin) {$( this ).val($old2);  $("#box-depth_def").css("color", "red"); }
+                    else
+                    {
+                        $("#box-depth_def").css("color", "black");$old2=$("#box-depth_input").val();
+                    $old2=$( this ).val();
+                    var value=$( this ).val()-$gap;
+                    calcfurn(value);
+
+                    }
+             });
+
+             $("#box-depth_x_input").change(function()
+             {
+                  if ($( this ).val()<$depthmin) {$( this ).val($old2);  $("#box-depth_def").css("color", "red"); }
+                      else
+                      {
+                          $("#box-depth_def").css("color", "black");$old2=$("#box-depth_x_input").val();
+                      $old2=$( this ).val();
+                      var value=$( this ).val()-$gap;
+                      calcfurn(value);
+  
+                      }
+               });
+  
 
 
-                }
-          });
+
+
+
+             function calcfurn(value){
+                    switch(true) 
+                    {
+                        case value >= 250 && value < 300: 
+                            // alert("250");
+                           
+                            $("span.calcarticul").text(250);
+                            break;
+                        
+                        case value >= 300 && value < 350: 
+                            // alert("300");
+                            $("span.calcarticul").text(300);
+                            break;
+                        
+                        case value >= 350 && value < 400: 
+                            // alert("350");
+                            $("span.calcarticul").text(350);
+                            break;
+                        
+                        case value >= 400 && value < 450: 
+                            // alert("400");
+                            $("span.calcarticul").text(400);
+                            break;
+                        
+                        case value >= 450 && value < 500: 
+                            // alert("450");
+                            $("span.calcarticul").text(450);
+                            break;
+                        
+                        case value >= 500 && value < 550: 
+                            // alert("500");
+                            $("span.calcarticul").text(500);
+                            break;
+                        
+                        case value >= 550 && value < 600: 
+                            // alert("600");
+                            $("span.calcarticul").text(600);
+                            break;
+                        
+                        default: 
+                            alert("Не получилось(");
+                            break;
+                        
+                    }
+                 
+                 }
+
+
     </script>
 
 
