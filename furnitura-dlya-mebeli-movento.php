@@ -1157,7 +1157,7 @@ include 'inc-left-side-menu-furnitura.php';
                                             </div>
                                             <div class="tab-pane fade  in active" id="calc">
                                                 <div class="row col-xs-12 col-sm-12 col-md-12" >
-                                                    <h3 class="">Калькулятор расчета фурнитуры</h3>  
+                                                    <h3 class="blum">Расчета фурнитуры, полное выдвижение деревянный ящик, 40 кг</h3>  
                                                     <div class="row col-xs-12 col-sm-12 col-md-12" style=" margin-bottom: 10px;">
                                                                     <div    class="col-xs-4 col-sm-4 col-md-4" style="padding-right:0px; padding-left:0px;">
                                                                      <p style="padding: 5px;font-weight: bold;" id="width_box_input_def">Ширина проема (286-1368) </p>
