@@ -1177,7 +1177,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             
                                                                     <div    class="col-xs-4 col-sm-4 col-md-4 " style="padding-right:0px; padding-left:0px;" >
                                                                         <div class="form-check form-check-inline" style="padding-left: 25px;">
-                                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" disabled>
                                                                         <label class="form-check-label" for="inlineRadio2">Вкладной фасад </label>
                                                                         
                                                                             <label class="form-check-label " for="input_x"> X=</label>
@@ -1273,7 +1273,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr>
                                                             <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
                                                             <td>1</td>
-                                                            <td>760H<span class="calcarticul">250</span>0S</td>
+                                                            <td class="animated">760H<span class="calcarticul">250</span>0S</td>
                                                             <td>Оцинкованный</td> 
                                                             <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=<span class="calcarticul">250</span>мм, под замки, левая/правая</td>
                                                         </tr>
