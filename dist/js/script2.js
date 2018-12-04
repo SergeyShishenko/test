@@ -980,31 +980,51 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
 
 
               //    калькулятор MOVENTO
-   var $old=$("#width_box_input").val();
-   var $old2=$("#box-depth_input").val();
+   var $old_width=parseInt($("#width_box_input").val());
+   var $old_depth=parseInt($("#box-depth_input").val());
+   var $old_depth_x=parseInt($("#box-depth_x_input").val());
+   var $x=parseInt($("#input_x").val());   
    var $gap=3;
    var $depthmin =253;
-   var $x=0;
-   $( "#inlineRadio1" ).on( "click", function() {    
+   var $Radio=0;
+
+   $( "#inlineRadio1" ).on( "click", function() {  //накладной  
     $("#input_x").prop("disabled",true);
     $("#box-depth_x_input").prop("disabled",true);
     $("#box-depth_input").prop("disabled",false);
     $x=0;
+    $depthmin =250 + $x + $gap;        
+    $("span.gap").text($depthmin)
+    if (parseInt($("#box-depth_input").val())<$depthmin) 
+         {  $("#box-depth_input").val($depthmin); }
+    $Radio=1;
+    
 
     });
-    $( "#inlineRadio2" ).on( "click", function() {
-
+    $( "#inlineRadio2" ).on( "click", function() { //вкладной
+        
         $("#input_x").prop("disabled",false);
         // $("#input_x").attr("value",16);
         $("#box-depth_x_input").prop("disabled",false);
+        
         $("#box-depth_input").prop("disabled",true);
-        $depthmin =269;
+        $x=parseInt($("#input_x").val()); 
+        $depthmin =250 + $x + $gap;
+        $old_depth=$depthmin;
+        $("span.gap").text($depthmin)
+        // alert($depthmin);
+        
+         if (parseInt($("#box-depth_x_input").val())<$depthmin) 
+         {  $("#box-depth_x_input").val($depthmin); }
+        // alert($depthmin);
         $("span.gap").text($depthmin);
-        $x=1;
-        $old2=269;
-        
-        
+        $Radio=2; 
         });
+
+       
+        
+
+
         $(".only_number").keypress(function(e) {
             functimer();
             if(e.which != 13){
@@ -1016,21 +1036,35 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
          //ширина
           $("#width_box_input").change(function() {
             if ($( this ).val()<286 || $( this ).val()>1368) 
-            {$( this ).val($old); $("#width_box_input").val($old); $("#width_box_input_def").css("color", "red"); }
-                else{$("#width_box_input_def").css("color", "black");$("#box-depth_def").css("color", "black");$old=$("#width_box_input").val();
+            {$( this ).val($old_width); $("#width_box_input").val($old_width); $("#width_box_input_def").css("color", "red"); }
+                else{$("#width_box_input_def").css("color", "black");$("#box-depth_def").css("color", "black");$old_width=$("#width_box_input").val();
                     if ($( this ).val()>600)
                     {  
-                        if ($x==0)
+                        if ($Radio==1)
                         {
-                            $("#sidestab").show();$depthmin=265;$gap=15;$("span.gap").text($depthmin);
+                            $("#sidestab").show();$gap=15; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);
                             if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
-                        }else
+                        }else //$Radio==2
                         {
-                            $("#sidestab").show();$depthmin=269;$gap=15;$("span.gap").text($depthmin);
-                            if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
+                            $("#sidestab").show();$gap=15; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);
+                            if($("#box-depth_x_input").val()<$depthmin){$("#box-depth_x_input").val($depthmin);}
                         }
                     }
-                    else{$("#sidestab").hide();$depthmin=253;$gap=3;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black")}
+                    else // < 600
+                    {
+                        if ($Radio==1)
+                        {
+                            $("#sidestab").hide();$gap=3; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
+                            // $("#sidestab").hide();$depthmin=253;$gap=3;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
+                            if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
+                        }else //$Radio==2
+                        {
+                            $("#sidestab").hide();$gap=3; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
+                            if($("#box-depth_x_input").val()<$depthmin){$("#box-depth_x_input").val($depthmin);}
+                        }
+                        // $("#sidestab").hide();$depthmin=253;$gap=3;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
+
+                    }
 
                 }
           });
@@ -1038,42 +1072,57 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
 // 250 + 15 + 16 !!!
 
           //глубина
-          $("#box-depth_input").change(function()
+          $("#box-depth_input").change(function() //накладной
            {
             
                 if ($( this ).val()<$depthmin) 
-                {$( this ).val($old2);  $("#box-depth_def").css("color", "red"); }//ошибка
+                {$( this ).val($old_depth);  $("#box-depth_def").css("color", "red"); }//ошибка
                     else
                     {
-                        $("#box-depth_def").css("color", "black");$old2=$("#box-depth_input").val();
-                    $old2=$( this ).val();
-                    var value=$( this ).val()-$gap;
-                    calcfurn(value);
-                    // $( ".animated" ).removeClass("tada");
-                    // functimer();
-
+                        $("#box-depth_def").css("color", "black");$old_depth=parseInt($("#box-depth_input").val());
+                        $old_depth=parseInt($( this ).val());
+                        var value=$( this ).val()-$gap;
+                        calcfurn(value);
+                 
                     }
              });
 
-
-
-             $("#box-depth_x_input").change(function()
+             $("#input_x").change(function() // вкладной
              {
-                  if ($( this ).val()<$depthmin) {$( this ).val($old2);  $("#box-depth_def").css("color", "red"); }
-                      else
-                      {
-                          $("#box-depth_def").css("color", "black");$old2=$("#box-depth_x_input").val();
-                      $old2=$( this ).val();
-                      var value=$( this ).val()-$gap;
-                      calcfurn(value);
+                 $x=parseInt($( this ).val());
+                 $depthmin =250 + $x + $gap;
+                 $("span.gap").text($depthmin);
+                 if ($("#box-depth_x_input").val()<$depthmin) 
+                 {$("#box-depth_x_input").val($depthmin);$old_depth=$depthmin;}
+                 else
+                 {
+                     $("#box-depth_def").css("color", "black");$old_depth=parseInt($("#box-depth_x_input").val());
+
+                    //  $old_depth=parseInt($( this ).val());
+                     var value=parseInt($("#box-depth_x_input").val())-$gap-$x;
+                     calcfurn(value);
+
+                 }
+
+              
+
+
+             });
+
+             $("#box-depth_x_input").change(function() // вкладной
+             {
+                  if ($( this ).val()<$depthmin) 
+                    {$( this ).val($old_depth);  $("#box-depth_def").css("color", "red"); }
+                    else
+                    {
+                        $("#box-depth_def").css("color", "black");$old_depth=parseInt($("#box-depth_x_input").val());
+
+                        $old_depth=parseInt($( this ).val());
+                        var value=parseInt($( this ).val())-$gap-$x;
+                        calcfurn(value);
   
-                      }
+                    }
                });
-  
-
-
-
-
 
              function calcfurn(value){
                     switch(true) 
