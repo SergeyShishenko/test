@@ -6,6 +6,26 @@ define('__ROOT__', dirname(dirname(__FILE__)));
 require_once dirname(__ROOT__).'/DATA/TABLES/configDB.php'; 
 ///////////////////////////////create tables////////////////////////////////////////////////
 
+
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
+$query = "CREATE TABLE IF NOT EXISTS user(
+    s_id INT NOT NULL AUTO_INCREMENT,
+    sess_id VARCHAR(40) ,
+    date_start TIMESTAMP(6),
+    PRIMARY KEY (s_id))";
+// ALTER TABLE `head` ADD COLUMN `number_in_order_head`  INT
+
+if (mysqli_query($dbconn, $query)) echo "Таблица user создана.<br>";
+else echo "Таблица user не создана: ".mysqli_error($dbconn);
+
+mysqli_close($dbconn);
+
+////
+
+
 ////
 $dbconn=dbconnect();
 if ( !$dbconn ) die("Error");
