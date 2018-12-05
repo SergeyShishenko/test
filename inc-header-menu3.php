@@ -26,11 +26,12 @@
             <a class="navbar-brand" href="index.php">500.СТП</a > 
             
                 <!-- КОРЗИНА -->
-                    <div id="vpi"  >
+                <!--
+                     <div id="vpi"  >
                             <div id="header" style="padding-top: 0">
                                 <div class="top-nav-bg abs col-xs-20">
                                     <div style="display:inline-block">
-                                        <!-- Cart -->
+                                        
                                         <div id="cart" >
                                             <div class="heading"><a href="" class=""></a>
                                                 <a><span id="cart-total" class="cart-full">6</span></a>
@@ -131,16 +132,16 @@
 
                                                 <div class="checkout">
                                                     <a href="" class="button">Скачать ведомость</a>
-                                                    <!-- &nbsp;
-                                                    <a href="" class="button">Оформление заказа</a> -->
+                                                   
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- end Cart -->
+                                      
                                     </div>
                                 </div>
                             </div>
                         </div> 
+                        -->
                 <!-- КОРЗИНА -->
 
         </div>                

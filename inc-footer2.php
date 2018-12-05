@@ -37,7 +37,9 @@
 
 //     </script>
 
-
+<script>
+            if (!name) {name = new Date ().getTime (); location.reload (true)}
+        </script> 
     </body>
 </html>
 ';?>

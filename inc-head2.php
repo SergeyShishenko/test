@@ -13,8 +13,6 @@ echo'<!DOCTYPE html>
         <link href="./dist/css/docs.css?v='. $docsVersion .'" rel="stylesheet">       
         <link rel="shortcut icon" href="shesterenka.png" type="image/x-icon"> 
         <link href="./dist/css/cart.css" rel="stylesheet">
-        <script>
-            if (!name) {name = new Date ().getTime (); location.reload (true)}
-        </script>   
+          
     
 ';?>
