@@ -3,6 +3,7 @@ ini_set('session.gc_maxlifetime', 86400);// 24 часа
 ini_set('session.cookie_lifetime', 0);
 session_set_cookie_params(0);
 session_start();
+$s_id=session_id();
 define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once(__ROOT__.'/DATA/data.php'); 
 // require_once('DATA/data.php');
@@ -21,6 +22,24 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
       $_SESSION['sess_login'] = $_POST['login'];
       $_SESSION['sess_pass'] = $_POST['passw'];
 
+      require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
+      $dbconn=dbconnect();
+
+
+      $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `sess_id` LIKE '%".$s_id."%'");
+      if (mysqli_num_rows($result) > 0) {//есть
+       
+       $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `sess_id` LIKE '%".$s_id."%'");
+      }
+      else{
+        $result = mysqli_query($dbconn,"INSERT INTO `user` (`s_id`, `sess_id`, `date_start`) VALUES (NULL, '$s_id', CURRENT_TIMESTAMP)");
+        
+      }
+
+
+
+
+      mysqli_close($dbconn);
       // header('Location: secure.php');
       // header('Location: index.php');
       header('Location:'.$_SESSION['ref']);

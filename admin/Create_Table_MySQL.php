@@ -13,8 +13,8 @@ if ( !$dbconn ) die("Error");
 
 $query = "CREATE TABLE IF NOT EXISTS user(
     s_id INT NOT NULL AUTO_INCREMENT,
-    sess_id VARCHAR(40) ,
-    date_start TIMESTAMP(6),
+    sess_id VARCHAR(40) ,   
+    date_start datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (s_id))";
 // ALTER TABLE `head` ADD COLUMN `number_in_order_head`  INT
 
