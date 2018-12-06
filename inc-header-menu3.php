@@ -35,21 +35,17 @@
 
     $res   = mysqli_query($dbconn,"SELECT COUNT(s_id) AS count FROM `user_vpi`WHERE `s_id` = $s_id "); 
     $data = mysqli_fetch_assoc($res); 
-    echo session_id();
-    echo "data[count] " .$data['count']; 
+    // echo session_id();
+    // echo "data[count] " .$data['count']; 
 
 
     $Result_vpi = mysqli_query($dbconn,"SELECT * FROM `user_vpi` WHERE `s_id` = $s_id ");        
 
    
-
-  // получаем все записи из таблицы user_vpi
-  while($row_vpi = mysqli_fetch_array($Result_vpi))
-  {  
-
-  echo'          
+    echo'  
+         
                 <!-- КОРЗИНА -->
-                <!--
+               
                      <div id="vpi"  >
                             <div id="header" style="padding-top: 0">
                                 <div class="top-nav-bg abs col-xs-20">
@@ -57,12 +53,17 @@
                                         
                                         <div id="cart" >
                                             <div class="heading"><a href="" class=""></a>
-                                                <a><span id="cart-total" class="cart-full">6</span></a>
+                                                <a><span id="cart-total" class="cart-full">'.$data["count"].'</span></a>
                                             </div>
                                             <div class="content" style="overflow: hidden;">
                                                 <div class="mini-cart-info">
                                                     <table>
+                        ';
+// получаем все записи из таблицы user_vpi
+  while($row_vpi = mysqli_fetch_array($Result_vpi))
+  {  
 
+  echo'   
                                                         <tbody>
                                                             <tr>
                                                                 <td class="image">
@@ -78,76 +79,13 @@
                                                                         onclick="">
                                                                 </td>
                                                             </tr>
-                                                            <tr>
-                                                                <td class="image">
-                                                                    <img src="./dist/filesdb/images/thumbs/tbsmov01g4_enl.png" alt="Пружина дверная Entra Blomus"
-                                                                            title="Пружина дверная Entra Blomus">
-                                                                </td>
-                                                                <td class="articul">760H2500S</td>
-                                                                <td class="name" >MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=250мм, под замки, левая/правая</td>
-                                                                <td class="quantity">1</td>
-                                                                <td class="unit">комплект</td>
-                                                                <td class="remove">
-                                                                    <img src="./dist/css/remove-small.png" alt="Удалить" title="Удалить"
-                                                                        onclick="">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="image">
-                                                                    <img src="./dist/filesdb/images/thumbs/tbsmov01g4_enl.png" alt="Пружина дверная Entra Blomus"
-                                                                            title="Пружина дверная Entra Blomus">
-                                                                </td>
-                                                                <td class="articul">760H2500S</td>
-                                                                <td class="name" >MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=250мм, под замки, левая/правая</td>
-                                                                <td class="quantity">1</td>
-                                                                <td class="unit">комплект</td>
-                                                                <td class="remove">
-                                                                    <img src="./dist/css/remove-small.png" alt="Удалить" title="Удалить"
-                                                                        onclick="">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="image">
-                                                                    <img src="./dist/filesdb/images/thumbs/tbsmov01g4_enl.png" alt="Пружина дверная Entra Blomus"
-                                                                            title="Пружина дверная Entra Blomus">
-                                                                </td>
-                                                                <td class="articul">760H2500S</td>
-                                                                <td class="name" >MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=250мм, под замки, левая/правая</td>
-                                                                <td class="quantity">1</td>
-                                                                <td class="unit">комплект</td>
-                                                                <td class="remove">
-                                                                    <img src="./dist/css/remove-small.png" alt="Удалить" title="Удалить"
-                                                                        onclick="">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="image">
-                                                                    <img src="./dist/filesdb/images/thumbs/tbsmov01g4_enl.png" alt="Пружина дверная Entra Blomus"
-                                                                            title="Пружина дверная Entra Blomus">
-                                                                </td>
-                                                                <td class="articul">760H2500S</td>
-                                                                <td class="name" >MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=250мм, под замки, левая/правая</td>
-                                                                <td class="quantity">1</td>
-                                                                <td class="unit">комплект</td>
-                                                                <td class="remove">
-                                                                    <img src="./dist/css/remove-small.png" alt="Удалить" title="Удалить"
-                                                                        onclick="">
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="image">
-                                                                    <img src="./dist/filesdb/images/thumbs/tbsmov01g4_enl.png" alt="Пружина дверная Entra Blomus"
-                                                                            title="Пружина дверная Entra Blomus">
-                                                                </td>
-                                                                <td class="articul">760H2500S</td>
-                                                                <td class="name" >MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=250мм, под замки, левая/правая</td>
-                                                                <td class="quantity">1</td>
-                                                                <td class="unit">комплект</td>
-                                                                <td class="remove">
-                                                                    <img src="./dist/css/remove-small.png" alt="Удалить" title="Удалить"
-                                                                        onclick="">
-                                                                </td>
-                                                            </tr>
+    ';       
+    }//while
+    mysqli_free_result($Result_vpi);
+    //Закрывает соединение с сервером MySQL
+    mysqli_close($dbconn);         
+    
+    echo'  
                                                         
                                                         </tbody>
                                                     </table>
@@ -164,15 +102,9 @@
                                 </div>
                             </div>
                         </div> 
-                        -->
+                       
                 <!-- КОРЗИНА -->
-         ';       
-    }//while
-    mysqli_free_result($Result_vpi);
-    //Закрывает соединение с сервером MySQL
-    mysqli_close($dbconn);         
-    
-    echo' 
+  
         </div>                
         <div class="navbar-collapse collapse top-menu">
             <ul class="nav navbar-nav navbar-link " id="navmain">
