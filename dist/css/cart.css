@@ -113,7 +113,7 @@ a img {
 
 #header #cart .content {
     clear: both;
-    display: none;
+    /* display: none; */
     top: 15px;
     /* right: 0; */
     margin-left: 150px;
@@ -146,7 +146,7 @@ a img {
 
 .mini-cart-info table {
     border-collapse: collapse;
-    width: 600px;
+    width: 700px;
     margin-bottom: 5px
 }
 
@@ -157,8 +157,9 @@ a img {
 }
 
 .mini-cart-info td.name {
-    width: 300px;
-    padding: 5px 20px;
+    width: 240px;
+    padding: 5px 5px;
+    text-align: center;
 }
 .mini-cart-info td.image img{width: 100px !important;}
 
@@ -174,7 +175,7 @@ a img {
 #header #cart .checkout {
     text-align: right;
     clear: both;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 #header #cart .empty {
@@ -211,7 +212,7 @@ input.button {
 
 #header #cart {
     position: relative;
-    z-index: 9;
+    z-index: 99999;
     top: -7px;
     right: 0;
     float: none !important;

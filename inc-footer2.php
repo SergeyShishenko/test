@@ -17,7 +17,8 @@
     <script src="./dist/js/script2.js?v='. $script2Version .'"></script> 
 
    <script src="./dist/js/closest.js"></script>
-	<script src="./dist/js/blazy.min.js"></script>
+    <script src="./dist/js/blazy.min.js"></script>
+    <script src="./dist/js/bootstrap-number-input.js" ></script>
 	<script>
     window.bLazy = new Blazy({
         //container: \'.container\',
@@ -37,9 +38,21 @@
 
 //     </script>
 
-<script>
+        <script>
             if (!name) {name = new Date ().getTime (); location.reload (true)}
         </script> 
+        <script>
+        // установить события перед вызовом bootstrap переключатель или они будут срабатывать после bootstrapswitch  события
+        $("[name=\'checkbox2\']").change(function() {
+            if(!confirm("Do you wanna cancel me!")) {
+                this.checked = true;
+            }
+        });
+
+        $("#colorful2").bootstrapNumber();
+
+       
+        </script>
     </body>
 </html>
 ';?>
