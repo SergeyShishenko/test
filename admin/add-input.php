@@ -459,6 +459,18 @@ switch ($tbl) {
         echo '<div class="row">
                 <div class="input-group col-md-12">
                     <div class="input-group ">                       
+                        <span class="input-group-addon">obj_id</span>
+                        <input type="text" class="form-control" id="recipient-obj_id" value="'.$row_obj["obj_id"].'" required disabled>
+                        <span class="input-group-btn">
+                            <button type="button" data-tbl="" data-field ="" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        ';
+        echo '<div class="row">
+                <div class="input-group col-md-12">
+                    <div class="input-group ">                       
                         <span class="input-group-addon">Родитель (grupp_id)</span>
                         <input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required disabled>
                         <span class="input-group-btn">
