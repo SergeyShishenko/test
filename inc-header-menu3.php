@@ -24,7 +24,30 @@
             <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.php">500.СТП</a > 
-            
+  ';
+  define('__ROOT__', dirname(dirname(__FILE__))); 
+  require_once(__ROOT__.'/DATA/TABLES/configDB.php');   
+  $dbconn=dbconnect();
+  $sess_id=session_id();
+    $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
+    $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
+    $s_id=$row_user['s_id'];
+
+    $res   = mysqli_query($dbconn,"SELECT COUNT(s_id) AS count FROM `user_vpi`WHERE `s_id` = $s_id "); 
+    $data = mysqli_fetch_assoc($res); 
+    echo session_id();
+    echo "data[count] " .$data['count']; 
+
+
+    $Result_vpi = mysqli_query($dbconn,"SELECT * FROM `user_vpi` WHERE `s_id` = $s_id ");        
+
+   
+
+  // получаем все записи из таблицы user_vpi
+  while($row_vpi = mysqli_fetch_array($Result_vpi))
+  {  
+
+  echo'          
                 <!-- КОРЗИНА -->
                 <!--
                      <div id="vpi"  >
@@ -143,7 +166,13 @@
                         </div> 
                         -->
                 <!-- КОРЗИНА -->
-
+         ';       
+    }//while
+    mysqli_free_result($Result_vpi);
+    //Закрывает соединение с сервером MySQL
+    mysqli_close($dbconn);         
+    
+    echo' 
         </div>                
         <div class="navbar-collapse collapse top-menu">
             <ul class="nav navbar-nav navbar-link " id="navmain">
