@@ -30,6 +30,29 @@ mysqli_close($dbconn);
 $dbconn=dbconnect();
 if ( !$dbconn ) die("Error");
 
+$query = "CREATE TABLE IF NOT EXISTS user_vpi(
+    vpi_id INT NOT NULL AUTO_INCREMENT,   
+    s_id INT,
+    count_obj INT,
+    PRIMARY KEY (vpi_id),
+    FOREIGN KEY (s_id)
+    REFERENCES user(s_id)
+    ON UPDATE CASCADE ON DELETE CASCADE )";
+
+if (mysqli_query($dbconn, $query)) echo "Таблица user_vpi создана.<br>";
+else echo "Таблица user_vpi не создана: ".mysqli_error($dbconn);
+
+mysqli_close($dbconn);
+
+
+////
+
+
+
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
 $query = "CREATE TABLE IF NOT EXISTS head(
     head_id INT NOT NULL AUTO_INCREMENT,
     name_head VARCHAR(40) ,
