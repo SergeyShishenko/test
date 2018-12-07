@@ -342,6 +342,41 @@ else echo "Поле не добавленно: ".mysqli_error($dbconn);
 }
 mysqli_close($dbconn);
 ////
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
+$res = mysqli_query($dbconn,"SELECT `img_orientation_obj` FROM `obj` WHERE 0");
+if ($res) {
+echo "Поле 'img_orientation_obj' существует.<br>";
+}
+else {
+    $query = "ALTER TABLE `obj` ADD COLUMN `img_orientation_obj`  VARCHAR(10) ";
+if (mysqli_query($dbconn, $query)) echo "ADD COLUMN img_orientation_obj в таблицу obj.<br>";
+else echo "Поле не добавленно: ".mysqli_error();
+}
+mysqli_close($dbconn);
+
+
+////
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
+$res = mysqli_query($dbconn,"SELECT `img_alt_obj` FROM `obj` WHERE 0");
+if ($res) {
+echo "Поле 'img_alt_obj' существует.<br>";
+}
+else {
+    $query = "ALTER TABLE `obj` ADD COLUMN `img_alt_obj`  VARCHAR(255) ";
+if (mysqli_query($dbconn, $query)) echo "ADD COLUMN img_alt_obj в таблицу obj.<br>";
+else echo "Поле не добавленно: ".mysqli_error();
+}
+mysqli_close($dbconn);
+
+
+
+////
 
 ////
 $dbconn=dbconnect();
@@ -451,7 +486,20 @@ else echo "Поле не добавленно: ".mysqli_error($dbconn);
 }
 mysqli_close($dbconn);
 
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
 
+$res = mysqli_query($dbconn,"SELECT `template_obj` FROM `obj` WHERE 0");
+if ($res) {
+echo "Поле 'template_obj' существует.<br>";
+}
+else {
+    $query = "ALTER TABLE `obj` ADD COLUMN `template_obj`  VARCHAR(255) ";
+if (mysqli_query($dbconn, $query)) echo "ADD COLUMN template_obj в таблицу obj.<br>";
+else echo "Поле не добавленно: ".mysqli_error();
+}
+mysqli_close($dbconn);
 
 
 // /////////////////////////////////////////////////////////////////////////////////////// 
