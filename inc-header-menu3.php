@@ -98,7 +98,9 @@
                                                 </div>
 
                                                 <div class="checkout">
-                                                    <a href="" class="button">Скачать ведомость</a>
+                                                    <!-- <a href="" id="checkout" class="button">Скачать ведомость</a>-->
+                                                    <button id="checkout" class="btn btn-info ">СКАЧАТЬ ВЕДОМОСТЬ</button>
+                                                    <button id="close" class="btn btn-info ">ЗАКРЫТЬ</button>
                                                    
                                                 </div>
                                             </div>

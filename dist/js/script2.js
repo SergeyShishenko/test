@@ -27,14 +27,14 @@ function getPositionSearch(){
         }
           
 
-console.log('mainpage '+ mainpage);        
+// console.log('mainpage '+ mainpage);        
         // var c= $('div.container').css('width');
         var pos = $( '#main-page' ).position().left;
         var c= $('#main-page').css('width');
-        console.log('position '+pos);
-        console.log('width '+c);
-        console.log('текущая ширина экрана '+ w);
-        console.log('zbz '+ zbz);
+        // console.log('position '+pos);
+        // console.log('width '+c);
+        // console.log('текущая ширина экрана '+ w);
+        // console.log('zbz '+ zbz);
          c = c.replace("px", "")-mainpage; // -21 удалить латинские символы 
         //   с= pos + с;
         // console.log(c);       
@@ -75,9 +75,9 @@ $(function () {
            var child1 =UlSubMenu.length;
            var bottomUl = (colLeftMenu-col)*40;
            if (child1>col){bottomUl=bottomUl-(child1-col)*40;}       
-           console.log("количество левое меню - "+colLeftMenu);
-           console.log("номер по порядку выбранного элемента списка - "+col);      
-           console.log("количество дочерних элементов - "+child1);   
+        //    console.log("количество левое меню - "+colLeftMenu);
+        //    console.log("номер по порядку выбранного элемента списка - "+col);      
+        //    console.log("количество дочерних элементов - "+child1);   
            $(this).find('ul.sub_menu').show();
            
         //    var d = getMouseWeel();
@@ -109,9 +109,9 @@ $(function () {
            if (child1==col){bottomUl=bottomUl-(child1-col)*40+20;}
            if (child1<col){bottomUl=30+(colLeftMenu-col)*40;}   
            if (child1>col){bottomUl=bottomUl-(child1-col)*40+20;}       
-           console.log("количество левое меню2 - "+colLeftMenu);
-           console.log("номер по порядку выбранного элемента списка2 - "+col);      
-           console.log("количество дочерних элементов2 - "+child1);  
+        //    console.log("количество левое меню2 - "+colLeftMenu);
+        //    console.log("номер по порядку выбранного элемента списка2 - "+col);      
+        //    console.log("количество дочерних элементов2 - "+child1);  
             
             $(this).find('ul.sub_menu2').show();
 
@@ -128,7 +128,7 @@ $(function () {
            
         },
         function () {
-            console.log($(this));
+            // console.log($(this));
             delta2 = 0; 
             $(this).find('ul.sub_menu2').hide();
             $(this).find('ul.sub_menu2 > li:nth-child(1)').removeClass('triangle2');            
@@ -149,21 +149,21 @@ $(function () {
     var child1 =UlSubMenu.length;
     var bottomUl = parseInt($(this ).css('bottom'));
      var triangle =$('#triangle2').data('top');
-    console.log('triangle ' + triangle);
+    // console.log('triangle ' + triangle);
     //  console.log('triangle2 ' + $('#triangle2').html());
-    console.log('child1 ' + child1);
-    console.log('bottom ' + $(this ).css('bottom'));
+    // console.log('child1 ' + child1);
+    // console.log('bottom ' + $(this ).css('bottom'));
     if(dy > 0) { 
 
            
                 if (bottomUl < bottomMIN ) { 
                     delta2 =  1  + delta2 ;
-                    console.log('up2');
-                    console.log(delta2); 
-                    console.log(bottomMIN);
+                    // console.log('up2');
+                    // console.log(delta2); 
+                    // console.log(bottomMIN);
                     bottomUl= bottomUl + 40;
                     triangle = triangle + 40;
-                    console.log('bottomUl ' + bottomUl); 
+                    // console.log('bottomUl ' + bottomUl); 
                     $(this ).css("bottom", bottomUl+"px"); 
                     $('#triangle2').remove();
                     $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');       
@@ -176,11 +176,11 @@ $(function () {
          
             if (delta2 > 0 ) { 
                 delta2 =  delta2 - 1 ;
-                console.log('down2');
-                console.log(delta2);
+                // console.log('down2');
+                // console.log(delta2);
                 bottomUl = bottomUl - 40;
                 triangle = triangle - 40;
-                console.log('bottomUl ' + bottomUl); 
+                // console.log('bottomUl ' + bottomUl); 
                 $(this ).css("bottom", bottomUl+"px"); 
                 $('#triangle2').remove();
                 $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');   
@@ -1212,7 +1212,21 @@ $('body').on('click', 'td.remove img', function() {
          $('#header #cart .content').toggle();
        
         });
-        //  
-                    //   
-                    
 
+    $('#close').on('click', function() {  
+        // alert();  
+    
+            $('#header #cart .content').toggle();
+        
+        });
+        
+          
+                    
+        $('#checkout').on('click', function() {  
+            // alert();  
+            $("[id^='vpi_id']").each(function( index ) {
+                console.log( index + ": " + $( this ).val() );
+              });
+            //  $('#header #cart .content').toggle();
+           
+            });

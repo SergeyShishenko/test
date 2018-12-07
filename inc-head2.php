@@ -12,7 +12,7 @@ echo'<!DOCTYPE html>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link href="./dist/css/docs.css?v='. $docsVersion .'" rel="stylesheet">       
         <link rel="shortcut icon" href="shesterenka.png" type="image/x-icon"> 
-        <link href="./dist/css/cart.css" rel="stylesheet">
+        <link href="./dist/css/cart.css?v=2" rel="stylesheet">
           
     
 ';?>
