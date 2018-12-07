@@ -1197,5 +1197,22 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                       }
                       
                       setTimeout(functimer, 500);
+
+
+
+$('body').on('click', 'td.remove img', function() {    
+   
+    $(this).parent().parent().remove();
+   
+    });
+
+    $('#cart-total').on('click', function() {  
+        // alert();  
+   
+         $('#header #cart .content').toggle();
+       
+        });
+        //  
+                    //   
                     
 

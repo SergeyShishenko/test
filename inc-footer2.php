@@ -49,7 +49,7 @@
             }
         });
 
-        $("[id^=\'colorful\']").bootstrapNumber();
+        $("[id^=\'vpi_id\']").bootstrapNumber();
 
        
         </script>
