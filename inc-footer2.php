@@ -43,13 +43,13 @@
         </script> 
         <script>
         // установить события перед вызовом bootstrap переключатель или они будут срабатывать после bootstrapswitch  события
-        $("[name=\'checkbox2\']").change(function() {
+        $("[name=\'checkbox\']").change(function() {
             if(!confirm("Do you wanna cancel me!")) {
                 this.checked = true;
             }
         });
 
-        $("#colorful2").bootstrapNumber();
+        $("[id^=\'colorful\']").bootstrapNumber();
 
        
         </script>
