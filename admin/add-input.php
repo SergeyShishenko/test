@@ -1289,7 +1289,20 @@ switch ($tbl) {
                         </div>
                     </div>
                     <div class="box-content">
-                    ';   
+                    ';  
+                    
+                    echo '<div class="row">
+                    <div class="input-group col-md-12">
+                        <div class="input-group ">                       
+                            <span class="input-group-addon">fname_img_furn</span>
+                            <input type="text" class="form-control" id="recipient-fname_img_furn" value="'.$row_obj_furnitur_prop["fname_img_furn"].'" required>
+                            <span class="input-group-btn">
+                                    <button type="button"  data-tbl="obj_furnitur_prop"  data-field ="fname_img_furn" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>                                                                                   
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            '; 
                 
                     echo '<div class="row">
                             <div class="input-group col-md-12">

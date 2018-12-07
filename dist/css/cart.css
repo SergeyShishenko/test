@@ -113,7 +113,7 @@ a img {
 
 #header #cart .content {
     clear: both;
-    /* display: none; */
+    display: none;
     top: 15px;
     /* right: 0; */
     margin-left: 150px;

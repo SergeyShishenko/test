@@ -377,6 +377,22 @@ mysqli_close($dbconn);
 $dbconn=dbconnect();
 if ( !$dbconn ) die("Error");
 
+$res = mysqli_query($dbconn,"SELECT `fname_img_furn` FROM `obj_furnitur_prop` WHERE 0");
+if ($res) {
+echo "Поле 'fname_img_furn' существует.<br>";
+}
+else {
+    $query = "ALTER TABLE `obj_furnitur_prop` ADD COLUMN `fname_img_furn`  VARCHAR(255) ";
+if (mysqli_query($dbconn, $query)) echo "ADD COLUMN fname_img_furn в таблицу obj_furnitur_prop.<br>";
+else echo "Поле fname_img_furn не добавленно: ".mysqli_error($dbconn);
+}
+mysqli_close($dbconn);
+
+////
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
 $res = mysqli_query($dbconn,"SELECT `color_obj_prop` FROM `obj_furnitur_prop` WHERE 0");
 if ($res) {
 echo "Поле 'color_obj_prop' существует.<br>";

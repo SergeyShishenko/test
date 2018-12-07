@@ -62,22 +62,23 @@
 // получаем все записи из таблицы user_vpi
   while($row_vpi = mysqli_fetch_array($Result_vpi))
   {  
-
+      $furn_id=$row_vpi['obj_furnitur_prop_id'];
+    $Result_furniture = mysqli_query($dbconn,"SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furn_id "); 
+    $furniture = mysqli_fetch_assoc($Result_furniture); 
   echo'   
                                                         <tbody>
                                                             <tr>
                                                                 <td class="image">
-                                                                    <img src="./dist/filesdb/images/thumbs/tbsmov01g4_enl.png" alt="Пружина дверная Entra Blomus"
-                                                                            title="Пружина дверная Entra Blomus">
+                                                                    <img src="./dist/filesdb/images/thumbs/tbs'.$furniture["fname_img_furn"].'" alt="'.$furniture["name_furnitur_obj_prop"].'"  title="'.$furniture["name_furnitur_obj_prop"].'">
                                                                 </td>
-                                                                <td class="articul">760H2500S</td>
-                                                                <td class="name" ><p>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=250мм, под замки, левая/правая</p></td>
+                                                                <td class="articul">'.$furniture['articul_furnitur_obj'].'</td>
+                                                                <td class="name" ><p>'.$furniture['def_obj_prop'].'</p></td>
                                                                 <td class="quantity" style="width: 140px;">
                                                                 <div class="form-group" style=" width: 112px;">				
-                                                                    <input id="colorful2" class="form-control" type="number" value="1" min="1" max="999" style=" width: 70px;margin-left: -1px;">
+                                                                    <input id="colorful2" class="form-control" type="number" value="'.$row_vpi['count_obj'].'" min="1" max="999" style=" width: 70px;margin-left: -1px;">
                                                                 </div>
                                                                 </td>
-                                                                <td class="unit">комплектов</td>
+                                                                <td class="unit">'.$furniture['unit_obj_prop'].' </td>
                                                                 <td class="remove">
                                                                     <img src="./dist/css/remove-small.png" alt="Удалить" title="Удалить"
                                                                         onclick="">
