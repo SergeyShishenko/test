@@ -19,6 +19,7 @@
    <script src="./dist/js/closest.js"></script>
     <script src="./dist/js/blazy.min.js"></script>
     <script src="./dist/js/bootstrap-number-input.js" ></script>
+    <script src="./dist/js/vpi.js" ></script>
 	<script>
     window.bLazy = new Blazy({
         //container: \'.container\',

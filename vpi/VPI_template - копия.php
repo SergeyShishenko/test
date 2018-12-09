@@ -11,7 +11,7 @@
  *
  * This library is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A Particul_furnitur_objAR PURPOSE.  See the GNU
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
  * Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public
@@ -46,42 +46,22 @@ $ids=$_POST['ids'];
 // $furnitur_id = $obj_furnitur[0];
 // $furnitur_count = $obj_furnitur[1];
 // echo $furnitur_id." : ".$furnitur_count;
-$data = array();
+
 
 for($i=0;$i<count($ids);$i++) 
 { 
     $obj_furnitur = explode(",", $ids[$i]);
-    $furnitur_id = $obj_furnitur[0];
-    $furnitur_count = $obj_furnitur[1];
-
-    $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furnitur_id";
-    $Result=mysqli_query($dbconn,$sql);
-    
-    if($Result)
-    {  
-        while ($rows = mysqli_fetch_array($Result))
-             {                
-                $data[]=array('articul_furnitur_obj'=> $rows['articul_furnitur_obj'],
-                                        'name_furnitur_obj_prop'=>$rows['name_furnitur_obj_prop'],
-                                        'made_furnitur_obj'=>$rows['made_furnitur_obj'],
-                                        'color_obj_prop'=>$rows['color_obj_prop'],                                        
-                                        'unit_obj_prop'=>$rows['unit_obj_prop'],
-                                        'count'=>$furnitur_count
-                                        ) ;  
-                // array_push($stack, "apple", "raspberry");             
-             }
-    }else{//вывод ошибки 
-            header('HTTP/1.1 500 Looks like mysql error, could not insert record5!'.$sql." -> ".mysqli_error($dbconn));
-            exit();
-        }
-    
-
-
-
-
+$furnitur_id = $obj_furnitur[0];
+$furnitur_count = $obj_furnitur[1];
+// print_r($ids);
+echo $furnitur_id." : ".$furnitur_count."  ";
 } 
-
-
+// echo $ids[0]['obj_furnitur_prop_id'].": ".$ids[0]['count'].", ".$ids[1][0].": ".$ids[1][1];
+// echo $ids[0]=>'obj_furnitur_prop_id'.":".$ids[1].", ";
+// echo $ids[0][1], EOL;
+// echo $ids[1][0].": ";
+// echo $ids[1][1], EOL;
+exit();
 
 echo date('H:i:s') , " Загрузка из шаблона Excel5" , EOL;
 $objReader = PHPExcel_IOFactory::createReader('Excel5');
@@ -91,27 +71,26 @@ $objPHPExcel = $objReader->load("templates/VPI_template.xls");
 
 
 echo date('H:i:s') , "Добавление новых данных в шаблон" , EOL;
-// $data = array();
-
-// $data = array(array('articul_furnitur_obj'	=> 'арт. 5000502-07-750',
-// 					'name_furnitur_obj_prop'		=> 'Конфирмат 7,0Х50', //наименование
-//                     'made_furnitur_obj'	=> 'МДМ-КОМПЛЕКТ', //поставщик
-//                     'unit_obj_prop' 	=> 'шт.', //ед.изм
-//                     'count' 	=> 100 //кол-во
-// 				   ),
-// 			  array('articul_furnitur_obj'	=> 'арт. 5000502-07-701',
-//                     'name_furnitur_obj_prop'		=> 'Эксцентрик 15 плита 16мм', //наименование
-//                     'made_furnitur_obj'	=> 'МДМ-КОМПЛЕКТ', //поставщик
-//                     'unit_obj_prop' 	=> 'шт.', //ед.изм
-//                     'count' 	=> 20 //кол-во
-// 				   ),
-// 			  array('articul_furnitur_obj'	=> 'арт. 5000502-04-107',
-//                     'name_furnitur_obj_prop'		=> 'MOVENTO BLUMOTION 40 КГ 400 ММ', //наименование
-//                     'made_furnitur_obj'	=> 'BLUM', //поставщик
-//                     'unit_obj_prop' 	=> 'комплект', //ед.изм
-//                     'count' 	=> 2 //кол-во
-// 				   )
-// 			 );
+$data = array();
+$data = array(array('articul'	=> 'арт. 5000502-07-750',
+					'name'		=> 'Конфирмат 7,0Х50', //наименование
+                    'producer'	=> 'МДМ-КОМПЛЕКТ', //поставщик
+                    'measure' 	=> 'шт.', //ед.изм
+                    'count' 	=> 100 //кол-во
+				   ),
+			  array('articul'	=> 'арт. 5000502-07-701',
+                    'name'		=> 'Эксцентрик 15 плита 16мм', //наименование
+                    'producer'	=> 'МДМ-КОМПЛЕКТ', //поставщик
+                    'measure' 	=> 'шт.', //ед.изм
+                    'count' 	=> 20 //кол-во
+				   ),
+			  array('articul'	=> 'арт. 5000502-04-107',
+                    'name'		=> 'MOVENTO BLUMOTION 40 КГ 400 ММ', //наименование
+                    'producer'	=> 'BLUM', //поставщик
+                    'measure' 	=> 'комплект', //ед.изм
+                    'count' 	=> 2 //кол-во
+				   )
+			 );
 
 $objPHPExcel->getActiveSheet()->setCellValue('D1', PHPExcel_Shared_Date::PHPToExcel(time()));
 
@@ -120,14 +99,12 @@ foreach($data as $r => $dataRow) {
 	$row = $baseRow + $r;
 	$objPHPExcel->getActiveSheet()->insertNewRowBefore($row,1);
 
-	// $objPHPExcel->getActiveSheet()->setCellValue('D'.$row, $r+1)
-    $objPHPExcel->getActiveSheet()->setCellValue('E'.$row, $dataRow['articul_furnitur_obj'])
-	                              ->setCellValue('F'.$row, $dataRow['name_furnitur_obj_prop'])
-                                  ->setCellValue('G'.$row, $dataRow['made_furnitur_obj'])
-                                  ->setCellValue('H'.$row, $dataRow['color_obj_prop'])
-                                  ->setCellValue('I'.$row, $dataRow['unit_obj_prop'])
+	$objPHPExcel->getActiveSheet()->setCellValue('D'.$row, $r+1)
+	                              ->setCellValue('E'.$row, $dataRow['articul'])
+	                              ->setCellValue('F'.$row, $dataRow['name'])
+                                  ->setCellValue('G'.$row, $dataRow['producer'])
+                                  ->setCellValue('I'.$row, $dataRow['measure'])
                                   ->setCellValue('J'.$row, $dataRow['count']);
-   
                                   
 
 
@@ -155,4 +132,3 @@ echo date('H:i:s') , " Пиковое использование памяти: "
 // Echo done
 echo date('H:i:s') , " Запись файла завершена" , EOL;
 echo 'Файл был создан в дериктории ' , getcwd() , EOL;
-?>
