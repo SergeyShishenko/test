@@ -1222,11 +1222,11 @@ $('body').on('click', 'td.remove img', function() {
         
           
                     
-        $('#checkout').on('click', function() {  
-            // alert();  
-            $("[id^='vpi_id']").each(function( index ) {
-                console.log( index + ": " + $( this ).val() );
-              });
-            //  $('#header #cart .content').toggle();
+        // $('#checkout').on('click', function() {  
+        //     // alert();  
+        //     $("[id^='vpi_id']").each(function( index ) {
+        //         console.log( index + ": " + $( this ).val() );
+        //       });
+        //     //  $('#header #cart .content').toggle();
            
-            });
+        //     });
