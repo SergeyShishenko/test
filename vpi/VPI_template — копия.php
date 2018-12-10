@@ -46,15 +46,15 @@ $ids=$_POST['ids'];
 // $furnitur_id = $obj_furnitur[0];
 // $furnitur_count = $obj_furnitur[1];
 // echo $furnitur_id." : ".$furnitur_count;
-// echo var_dump($ids);
-// exit();
+echo var_dump($ids);
+exit();
 $data = array();
 
-for($i=0;$i<=count($ids)/2;$i=$i+2) 
+for($i=0;$i<count($ids);$i++) 
 { 
-    // $obj_furnitur = explode(",", $ids[$i]);
-    $furnitur_id = $ids[$i];
-    $furnitur_count = $ids[$i+1];
+    $obj_furnitur = explode(",", $ids[$i]);
+    $furnitur_id = $obj_furnitur[0];
+    $furnitur_count = $obj_furnitur[1];
 
     $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furnitur_id";
     $Result=mysqli_query($dbconn,$sql);

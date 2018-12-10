@@ -1200,25 +1200,25 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
 
 
 
-$('body').on('click', 'td.remove img', function() {    
+// $('body').on('click', 'td.remove img', function() {    
    
-    $(this).parent().parent().remove();
+//     $(this).parent().parent().remove();
    
-    });
+//     });
 
-    $('#cart-total').on('click', function() {  
-        // alert();  
+//     $('#cart-total').on('click', function() {  
+//         // alert();  
    
-         $('#header #cart .content').toggle();
+//          $('#header #cart .content').toggle();
        
-        });
+//         });
 
-    $('#close').on('click', function() {  
-        // alert();  
+//     $('#close').on('click', function() {  
+//         // alert();  
     
-            $('#header #cart .content').toggle();
+//             $('#header #cart .content').toggle();
         
-        });
+//         });
         
           
                     
