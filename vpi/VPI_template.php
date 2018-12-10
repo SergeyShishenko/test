@@ -85,14 +85,14 @@ for($i=0;$i<=count($ids)/2;$i=$i+2)
 
 
 
-echo date('H:i:s') , " Загрузка из шаблона Excel5" , EOL;
+// echo date('H:i:s') , " Загрузка из шаблона Excel5" , EOL;
 $objReader = PHPExcel_IOFactory::createReader('Excel5');
 $objPHPExcel = $objReader->load("templates/VPI_template.xls");
 
 
 
 
-echo date('H:i:s') , "Добавление новых данных в шаблон" , EOL;
+// echo date('H:i:s') , "Добавление новых данных в шаблон" , EOL;
 // $data = array();
 
 // $data = array(array('articul_furnitur_obj'	=> 'арт. 5000502-07-750',
@@ -142,19 +142,21 @@ $objPHPExcel->getActiveSheet()->removeRow($baseRow-1,1);//удаление ст�
 // $objPHPExcel->getActiveSheet()->setAutoFilter($objPHPExcel->getActiveSheet()->calculateWorksheetDimension());
 
 
-echo date('H:i:s') , " Запись в формат Excel5 " , EOL;
+// echo date('H:i:s') , " Запись в формат Excel5 " , EOL;
 $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
 // $objWriter->save(str_replace('.php', '.xls', __FILE__));
-echo dirname(__FILE__)."\/vpi-".date('m-d-Y').".xls", EOL;
+// echo dirname(__FILE__)."\/vpi-".date('m-d-Y').".xls", EOL;
+$fname="vpi-".date('m-d-Y-H-i-s').".xls";
 
-$objWriter->save(dirname(__FILE__)."\/vpi-".date('m-d-Y-H-i-s').".xls");
-echo date('H:i:s') , " Файл, записанный из " , str_replace('.php', '.xls', pathinfo(__FILE__, PATHINFO_BASENAME)) , EOL;
+$objWriter->save(dirname(__FILE__)."\/".$fname);
+echo "./vpi/".$fname;
+// echo date('H:i:s') , " Файл, записанный из " , str_replace('.php', '.xls', pathinfo(__FILE__, PATHINFO_BASENAME)) , EOL;
 
 
 // Echo memory peak usage
-echo date('H:i:s') , " Пиковое использование памяти: " , (memory_get_peak_usage(true) / 1024 / 1024) , " MB" , EOL;
+// echo date('H:i:s') , " Пиковое использование памяти: " , (memory_get_peak_usage(true) / 1024 / 1024) , " MB" , EOL;
 
 // Echo done
-echo date('H:i:s') , " Запись файла завершена" , EOL;
-echo 'Файл был создан в дериктории ' , getcwd() , EOL;
+// echo date('H:i:s') , " Запись файла завершена" , EOL;
+// echo 'Файл был создан в дериктории ' , getcwd() , EOL;
 ?>

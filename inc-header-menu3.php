@@ -99,7 +99,9 @@
 
                                                 <div class="checkout">
                                                     <!-- <a href="" id="checkout" class="button">Скачать ведомость</a>-->
-                                                    <button id="checkout" class="btn btn-info ">СКАЧАТЬ ВЕДОМОСТЬ</button>
+                                                    <a href="./vpi/vpi-12-10-2018-06-44-55.xls" type="button" id="checkoutd" class="btn btn-info im-download" download title="Скачать" style="display: none;"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>
+                                                    <button id="checkout" class="btn btn-info ">СГЕНЕРИРОВАТЬ ВЕДОМОСТЬ</button>
+                                                    <!--  <button id="cd" class="btn btn-info ">CD</button>-->
                                                     <button id="close" class="btn btn-info ">ЗАКРЫТЬ</button>
                                                    
                                                 </div>

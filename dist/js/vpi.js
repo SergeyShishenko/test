@@ -32,7 +32,9 @@ $("body").on("click","#checkout ",function() {
            
             // alert(data);
             console.log(data);
-        
+            // href="./vpi/vpi-12-10-2018-06-44-55.xls"
+            $('#checkoutd').attr("href", data);
+            $('#checkoutd').show();
         });
     // });
     // Показываем список загруженных файлов
@@ -49,6 +51,7 @@ $('body').on('click', 'td.remove img', function() {
 
     $('#cart-total').on('click', function() {  
         // alert();  
+        
    
          $('#header #cart .content').toggle();
        
@@ -60,3 +63,4 @@ $('body').on('click', 'td.remove img', function() {
             $('#header #cart .content').toggle();
         
         });
+     
