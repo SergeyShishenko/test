@@ -1265,6 +1265,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <th>Артикул</th>
                                                             <th>Цвет&nbsp;/&nbsp;материал</th>
                                                             <th>Описание</th>
+                                                            <th class="text-right"><button type="button" class="btn btn-primary">ДОБАВИТЬ В ВЕДОМОСТЬ</button></th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
@@ -1273,7 +1274,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td>1</td>
                                                             <td class="animated">760H<span class="calcarticul">250</span>0S&nbsp;&nbsp;</td>
                                                             <td>Оцинкованный</td> 
-                                                            <td>MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=<span class="calcarticul">250</span>мм, под замки, левая/правая</td>
+                                                            <td colspan="2">MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=<span class="calcarticul">250</span>мм, под замки, левая/правая</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
@@ -1287,7 +1288,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <td>1</td>
                                                                 <td>ZS7M400MU</td>
                                                                 <td>Темно-серый (RAL 7037)</td> 
-                                                                <td>Комплект бокового стабилизатора</td>
+                                                                <td colspan="2">Комплект бокового стабилизатора</td>
                                                         </tr>
                                                         
                                                         </tbody>
