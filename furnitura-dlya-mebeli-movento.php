@@ -1255,7 +1255,7 @@ include 'inc-left-side-menu-furnitura.php';
 
                                           
 
-                                                <div class="row col-xs-12 col-sm-12 col-md-12">
+                                                <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">
                                                            
                                                     <table class="table table-striped table-responsive">
                                                         <thead>
