@@ -1,3 +1,13 @@
+
+  // установить события перед вызовом bootstrap переключатель или они будут срабатывать после bootstrapswitch  события
+  $("[name=\'checkbox\']").change(function() {
+    if(!confirm("Do you wanna cancel me!")) {
+        this.checked = true;
+    }
+});
+
+$("[id^=\'vpi_id\']").bootstrapNumber();
+$("#add_vpi_count").bootstrapNumber();
 var ids_list = [];
 $("body").on("click","#checkout ",function() {
     // alert("!!");

@@ -1035,6 +1035,7 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
           });
          //ширина
           $("#width_box_input").change(function() {
+           
             if ($( this ).val()<286 || $( this ).val()>1368) 
             {$( this ).val($old_width); $("#width_box_input").val($old_width); $("#width_box_input_def").css("color", "red"); }
                 else{$("#width_box_input_def").css("color", "black");$("#box-depth_def").css("color", "black");$old_width=$("#width_box_input").val();
@@ -1043,10 +1044,16 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                         if ($Radio==1)
                         {
                             $("#sidestab").show();$gap=15; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);
+                            // value=$("#box-depth_input").val()-$gap;
+                            calcsidestab($("span.calcarticul:first").text());
+
                             if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
                         }else //$Radio==2
                         {
                             $("#sidestab").show();$gap=15; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);
+                            //  value=$("#box-depth_input").val()-$gap;
+                            calcsidestab($("span.calcarticul:first").text());
+
                             if($("#box-depth_x_input").val()<$depthmin){$("#box-depth_x_input").val($depthmin);}
                         }
                     }
@@ -1055,14 +1062,14 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                         if ($Radio==1)
                         {
                             $("#sidestab").hide();$gap=3; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
-                            // $("#sidestab").hide();$depthmin=253;$gap=3;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
+                          
                             if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
                         }else //$Radio==2
                         {
                             $("#sidestab").hide();$gap=3; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
                             if($("#box-depth_x_input").val()<$depthmin){$("#box-depth_x_input").val($depthmin);}
                         }
-                        // $("#sidestab").hide();$depthmin=253;$gap=3;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
+                      
 
                     }
 
@@ -1083,6 +1090,7 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                         $old_depth=parseInt($( this ).val());
                         var value=$( this ).val()-$gap;
                         calcfurn(value);
+                        calcsidestab($("span.calcarticul:first").text());
                  
                     }
              });
@@ -1123,6 +1131,40 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
   
                     }
                });
+
+
+               function calcsidestab(value){
+                switch(true) 
+                {
+                    case value >= 250 && value <= 400:
+                        // alert("400");
+                       
+                        $("span.calcarticul2").text(400);
+                        $( ".animated" ).addClass("tada");
+                        break;
+                    
+                        case value > 400 && value <= 600:
+                        // alert("600-"+value);
+                        $("span.calcarticul2").text(600);
+                        $( ".animated" ).addClass("tada");
+                        break;
+                    
+                        case value   > 600: 
+                        // alert("750-"+value);
+                        $("span.calcarticul2").text(750);
+                        $( ".animated" ).addClass("tada");
+                        break;
+                    
+              
+                    
+                    default: 
+                        alert("Не получилось( "+value);
+                        break;
+                    
+                }
+             
+             }
+
 
              function calcfurn(value){
                     switch(true) 

@@ -58,7 +58,7 @@
                                             <div class="content" style="overflow: hidden;">
                                                 <div class="mini-cart-info">
                                                     <table class="table table-striped">
-                                                    <tbody>
+                                                    <tbody id="cart-list">
                         ';
 // получаем все записи из таблицы user_vpi
   while($row_vpi = mysqli_fetch_array($Result_vpi))

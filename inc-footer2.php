@@ -19,7 +19,7 @@
    <script src="./dist/js/closest.js"></script>
     <script src="./dist/js/blazy.min.js"></script>
     <script src="./dist/js/bootstrap-number-input.js" ></script>
-    <script src="./dist/js/vpi.js" ></script>
+    <script src="./dist/js/vpi.js?v='. $vpijsVersion .'" ></script>
 	<script>
     window.bLazy = new Blazy({
         //container: \'.container\',
@@ -43,14 +43,8 @@
             if (!name) {name = new Date ().getTime (); location.reload (true)}
         </script> 
         <script>
-        // установить события перед вызовом bootstrap переключатель или они будут срабатывать после bootstrapswitch  события
-        $("[name=\'checkbox\']").change(function() {
-            if(!confirm("Do you wanna cancel me!")) {
-                this.checked = true;
-            }
-        });
-
-        $("[id^=\'vpi_id\']").bootstrapNumber();
+      
+        
 
        
         </script>

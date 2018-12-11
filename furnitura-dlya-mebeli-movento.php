@@ -1265,16 +1265,15 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <th>Артикул</th>
                                                             <th>Цвет&nbsp;/&nbsp;материал</th>
                                                             <th>Описание</th>
-                                                            <th class="">
-                                                            
+                                                            <th class="">                                                            
                                                                 <div class="form-group" style="margin-bottom: 0;">				
-                                                                    <input id="vpi_id-c1" data-fid="c1" class="form-control" type="number" value="1" min="1" max="999" style=" width: 70px;margin-left: -1px;">
+                                                                    <input id="add_vpi_count" data-objfurn="1-2" class="form-control" type="number" value="1" min="1" max="999" style=" width: 70px;margin-left: -1px;">
                                                                 </div>
                                                                 
                                                             </th>
                                                             <th class="">
                                                             
-                                                                <button type="button" class="btn btn-primary">+ В ВПИ</button>
+                                                                <button type="button" id="add_vpi" class="btn btn-primary">В ВПИ</button>
                                                             </th>
                                                         </tr>
                                                         </thead>
@@ -1296,9 +1295,9 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr id="sidestab" style="display:none;">
                                                                 <td><img src="./dist/images/ArticulImgU4.png" class="" alt="Боковой стабилизатор" title=""></td>
                                                                 <td>1</td>
-                                                                <td>ZS7M400MU</td>
+                                                                <td class="animated">ZS7M<span class="calcarticul2">400</span>MU</td>
                                                                 <td>Темно-серый (RAL 7037)</td> 
-                                                                <td colspan="3">Комплект бокового стабилизатора</td>
+                                                                <td colspan="3">Комплект бокового стабилизатора до <span class="calcarticul2">400</span></td>
                                                         </tr>
                                                         
                                                         </tbody>
