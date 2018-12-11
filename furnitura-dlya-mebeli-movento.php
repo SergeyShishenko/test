@@ -1266,14 +1266,14 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <th>Цвет&nbsp;/&nbsp;материал</th>
                                                             <th>Описание</th>
                                                             <th class="">                                                            
-                                                                <div class="form-group" style="margin-bottom: 0;">				
+                                                                <div class="form-group" style="margin-bottom: 0;width: 112px;">				
                                                                     <input id="add_vpi_count" data-objfurn="1-2" class="form-control" type="number" value="1" min="1" max="999" style=" width: 70px;margin-left: -1px;">
                                                                 </div>
                                                                 
                                                             </th>
                                                             <th class="">
                                                             
-                                                                <button type="button" id="add_vpi" class="btn btn-primary">В ВПИ</button>
+                                                                <button type="button" id="add_vpi" class="btn btn-primary" style="margin-left: 10px;">В ВПИ</button>
                                                             </th>
                                                         </tr>
                                                         </thead>

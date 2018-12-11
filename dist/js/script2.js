@@ -1109,6 +1109,7 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                     //  $old_depth=parseInt($( this ).val());
                      var value=parseInt($("#box-depth_x_input").val())-$gap-$x;
                      calcfurn(value);
+                     calcsidestab($("span.calcarticul:first").text());
 
                  }
 
@@ -1128,6 +1129,7 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                         $old_depth=parseInt($( this ).val());
                         var value=parseInt($( this ).val())-$gap-$x;
                         calcfurn(value);
+                        calcsidestab($("span.calcarticul:first").text());
   
                     }
                });
