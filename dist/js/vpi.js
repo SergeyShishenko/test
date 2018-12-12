@@ -8,12 +8,14 @@
 
 $("[id^=\'vpi_id\']").bootstrapNumber();
 $("#add_vpi_count").bootstrapNumber();
-var ids_list = [];
+
+var ids_list = [];// для генерации из корзины
+
 $("body").on("click","#checkout",function() {
   
     var cart_list=$("[id^=\'vpi_id\']");
 
-    cart_list.each(function( index ) {
+    cart_list.each(function( index ) {// заполнение массива
         console.log( index + ": fid-" + $( this ).data('fid') );
         console.log( index + ": val-" + $( this ).val() );
         ids_list.push($( this ).data('fid'),$( this ).val())
@@ -34,31 +36,44 @@ $("body").on("click","#checkout",function() {
     return false;
 });
 
+var add_ids_list = []; // добавление в корзину
+
 $("body").on("click","#add_vpi",function() {// alert('ВПИ');
-// alert($('#add_vpi_count').data("objfurn"));
-var count=$('#add_vpi_count').val();
-var addvpiid=$('#add_vpi_count').data("objfurn");
-if(addvpiid.toString().indexOf("-")+1 == 0)
-{
-// alert('один элемент');
-console.log('Индекс: 0; Значение: ' + addvpiid.toString() + '; Количество: ' +count  );
-}
-else{
-    // alert('несколько элементов');
-var clickedID=addvpiid.split("-");
-// alert(clickedID[0]+'-'+clickedID[1]+'->'+count);
-$.each(clickedID,function(index,value){
- 
-    // действия, которые будут выполняться для каждого элемента массива
-    // index - это текущий индекс элемента массива (число)
-    // value - это значение текущего элемента массива
+    // alert($('#add_vpi_count').data("objfurn"));
+    var count=$('#add_vpi_count').val();
+    var addvpiid=$('#add_vpi_count').data("objfurn");
+    if(addvpiid.toString().indexOf("-")+1 == 0)
+    {
+    // alert('один элемент');
+    console.log('Индекс: 0; Значение: ' + addvpiid.toString() + '; Количество: ' +count  );
+    add_ids_list.push(addvpiid,count);
+    }
+    else{
+        // alert('несколько элементов');
+    var clickedID=addvpiid.split("-");
+    // alert(clickedID[0]+'-'+clickedID[1]+'->'+count);
+    $.each(clickedID,function(index,value){ // заполнение массива
     
-    //выведем индекс и значение массива в консоль
-    console.log('Индекс: ' + index.toString() + '; Значение: ' + value.toString() + '; Количество: ' +count  );
-  });
-}
+        // действия, которые будут выполняться для каждого элемента массива
+        // index - это текущий индекс элемента массива (число)
+        // value - это значение текущего элемента массива
+        
+        //выведем индекс и значение массива в консоль
+        console.log('Индекс: ' + index.toString() + '; Значение: ' + value.toString() + '; Количество: ' +count  );
+        add_ids_list.push(value,count);
+    });
+    }
 
+  // загружаем страницу и передаем значения, используя HTTP POST запрос       
+  $.post('vpi/VPI_template.php', {'addids[]': add_ids_list}, function(data) { 
+    console.log(data);
+    // href="./vpi/vpi-12-10-2018-06-44-55.xls"
+    // $('#checkoutd').attr("href", data);
+    // $('#checkoutd').show();
+    });
 
+    add_ids_list.length = 0;
+    return false;
     
 });
 
