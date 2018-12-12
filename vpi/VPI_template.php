@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
  * PHPExcel
  *
@@ -45,12 +46,6 @@ if(isset($_POST['ids']))//генерация xls
     require_once dirname(dirname(__FILE__)) . '/Classes/PHPExcel/IOFactory.php';
     $ids=$_POST['ids'];
 
-    // $obj_furnitur = explode(",", $ids[1]);
-    // $furnitur_id = $obj_furnitur[0];
-    // $furnitur_count = $obj_furnitur[1];
-    // echo $furnitur_id." : ".$furnitur_count;
-    // echo var_dump($ids);
-    // exit();
     $data = array();
 
     for($i=0;$i<=count($ids)/2;$i=$i+2) 
@@ -80,7 +75,7 @@ if(isset($_POST['ids']))//генерация xls
                 exit();
         }
     } 
-    
+    mysqli_free_result($Result);
     // генерация
         // echo date('H:i:s') , " Загрузка из шаблона Excel5" , EOL;
         $objReader = PHPExcel_IOFactory::createReader('Excel5');
@@ -156,15 +151,50 @@ if(isset($_POST['ids']))//генерация xls
         // Echo done
         // echo date('H:i:s') , " Запись файла завершена" , EOL;
         // echo 'Файл был создан в дериктории ' , getcwd() , EOL;
+        unset($data);
     // генерация
 }
 elseif (isset($_POST['addids'])) {
     
-    $addids=$_POST['addids'];
-    // exit();
-    $adddata = array();
-    // echo $adddata;
-    echo print_r($addids);
+    $addids=$_POST['addids'];   
+    // $adddata = array();
+    $sess_id=session_id();
+    $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
+    $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
+    $s_id=$row_user['s_id'];
+    
+    for($i=0;$i<=count($addids)/2;$i=$i+2) 
+    { 
+        // $obj_furnitur = explode(",", $ids[$i]);
+        $furnitur_id = $addids[$i];
+        $furnitur_count = $addids[$i+1];
+
+         // echo print_r($addids);
+        
+        // echo 's_id='.$s_id;
+
+        // INSERT INTO `user_vpi` (`vpi_id`, `s_id`, `obj_furnitur_prop_id`, `count_obj`) VALUES (NULL, '1', '1', '5');
+        $sql = "INSERT INTO `user_vpi` (`vpi_id`, `s_id`, `obj_furnitur_prop_id`, `count_obj`) VALUES (NULL, '$s_id', '$furnitur_id', '$furnitur_count')";
+
+        if(mysqli_query($dbconn,$sql))
+        {                    
+            // $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
+            // $html_id = "obj_".$id;
+            // $sql = "UPDATE `obj` SET `html_id`='$html_id' WHERE `obj_id`=$id";
+            echo print_r($addids);
+            
+            
+        }else{//вывод ошибки                                        
+            header('HTTP/1.1 500 Looks like mysql error, could not insert record2! '.$_POST["parent"]." ---".$sql." -> ".mysqli_error($dbconn));
+            exit();
+        } 
+    } //for
+    
+  
+
+   mysqli_free_result($Result_user); 
 }
+
+mysqli_close($dbconn);
 
 ?>

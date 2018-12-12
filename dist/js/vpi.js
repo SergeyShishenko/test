@@ -18,7 +18,7 @@ $("body").on("click","#checkout",function() {
     cart_list.each(function( index ) {// заполнение массива
         console.log( index + ": fid-" + $( this ).data('fid') );
         console.log( index + ": val-" + $( this ).val() );
-        ids_list.push($( this ).data('fid'),$( this ).val())
+        ids_list.push($( this ).data('fid'),$( this ).val());
       });
 
     // ids_list.push('1,5');// ids_list.push('obj_furnitur_prop_id : 1, count : 5');
