@@ -37,7 +37,7 @@ date_default_timezone_set('Europe/Moscow');
 
 define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
-
+$sess_id=session_id();
 $dbconn=dbconnect();
 /** PHPExcel_IOFactory */
 
@@ -45,37 +45,86 @@ if(isset($_POST['ids']))//генерация xls
 {
     require_once dirname(dirname(__FILE__)) . '/Classes/PHPExcel/IOFactory.php';
     $ids=$_POST['ids'];
+    $data =  array();
+    $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
+    $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
+    $s_id=$row_user['s_id'];
 
-    $data = array();
+  // выбираем все записи текущей сессии
+    $sql = "SELECT *  FROM `user_vpi` WHERE `s_id` = $s_id";
+    $User_vpi_Result=mysqli_query($dbconn,$sql);
 
-    for($i=0;$i<=count($ids)/2;$i=$i+2) 
-    { 
-        // $obj_furnitur = explode(",", $ids[$i]);
-        $furnitur_id = $ids[$i];
-        $furnitur_count = $ids[$i+1];
+    if($User_vpi_Result)
+    {  
+        while ($rowsUser_vpi = mysqli_fetch_array($User_vpi_Result))// заполнение массива пока есть записи текущей сессии
+            {     
+                $furnitur_id=$rowsUser_vpi['obj_furnitur_prop_id'];
+                $furnitur_count=$rowsUser_vpi['count_obj'];
+                $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furnitur_id";// из таблицы вся фурнитура
+                $Result=mysqli_query($dbconn,$sql); 
+                $rows = mysqli_fetch_array($Result); 
+                array_push($data,
+                    array('articul_furnitur_obj'=> $rows['articul_furnitur_obj'],
+                          'name_furnitur_obj_prop'=>$rows['name_furnitur_obj_prop'],
+                          'made_furnitur_obj'=>$rows['made_furnitur_obj'],
+                          'color_obj_prop'=>$rows['color_obj_prop'],
+                          'unit_obj_prop'=>$rows['unit_obj_prop'],
+                          'count'=>$furnitur_count
+                        )  
+                );
+                // $data[]=array('articul_furnitur_obj'=> $rows['articul_furnitur_obj'],
+                //                         'name_furnitur_obj_prop'=>$rows['name_furnitur_obj_prop'],
+                //                         'made_furnitur_obj'=>$rows['made_furnitur_obj'],
+                //                         'color_obj_prop'=>$rows['color_obj_prop'],                                        
+                //                         'unit_obj_prop'=>$rows['unit_obj_prop'],
+                //                         'count'=>$furnitur_count
+                //                         ) ;  
+                // $data += array('articul_furnitur_obj'=> $rows['articul_furnitur_obj'],
+                //                         'name_furnitur_obj_prop'=>$rows['name_furnitur_obj_prop'],
+                //                         'made_furnitur_obj'=>$rows['made_furnitur_obj'],
+                //                         'color_obj_prop'=>$rows['color_obj_prop'],                                        
+                //                         'unit_obj_prop'=>$rows['unit_obj_prop'],
+                //                         'count'=>$furnitur_count)
+                //                          ; 
+                // $stack = array("orange", "banana");
+                // array_push($stack, "apple", "raspberry");             
+            }
+    }else{//вывод ошибки 
+            header('HTTP/1.1 500 Looks like mysql error, could not insert record5!'.$sql." -> ".mysqli_error($dbconn));
+            exit();
+    }
 
-        $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furnitur_id";
-        $Result=mysqli_query($dbconn,$sql);
+
+    
+
+    // for($i=0;$i<=count($ids)/2;$i=$i+2) 
+    // { 
+    //     // $obj_furnitur = explode(",", $ids[$i]);
+    //     $furnitur_id = $ids[$i];
+    //     $furnitur_count = $ids[$i+1];
+
+    //     $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furnitur_id";
+    //     $Result=mysqli_query($dbconn,$sql);
         
-        if($Result)
-        {  
-            while ($rows = mysqli_fetch_array($Result))// заполнение массива
-                {                
-                    $data[]=array('articul_furnitur_obj'=> $rows['articul_furnitur_obj'],
-                                            'name_furnitur_obj_prop'=>$rows['name_furnitur_obj_prop'],
-                                            'made_furnitur_obj'=>$rows['made_furnitur_obj'],
-                                            'color_obj_prop'=>$rows['color_obj_prop'],                                        
-                                            'unit_obj_prop'=>$rows['unit_obj_prop'],
-                                            'count'=>$furnitur_count
-                                            ) ;  
-                    // array_push($stack, "apple", "raspberry");             
-                }
-        }else{//вывод ошибки 
-                header('HTTP/1.1 500 Looks like mysql error, could not insert record5!'.$sql." -> ".mysqli_error($dbconn));
-                exit();
-        }
-    } 
-    mysqli_free_result($Result);
+    //     if($Result)
+    //     {  
+    //         while ($rows = mysqli_fetch_array($Result))// заполнение массива
+    //             {                
+    //                 $data[]=array('articul_furnitur_obj'=> $rows['articul_furnitur_obj'],
+    //                                         'name_furnitur_obj_prop'=>$rows['name_furnitur_obj_prop'],
+    //                                         'made_furnitur_obj'=>$rows['made_furnitur_obj'],
+    //                                         'color_obj_prop'=>$rows['color_obj_prop'],                                        
+    //                                         'unit_obj_prop'=>$rows['unit_obj_prop'],
+    //                                         'count'=>$furnitur_count
+    //                                         ) ;  
+    //                 // array_push($stack, "apple", "raspberry");             
+    //             }
+    //     }else{//вывод ошибки 
+    //             header('HTTP/1.1 500 Looks like mysql error, could not insert record5!'.$sql." -> ".mysqli_error($dbconn));
+    //             exit();
+    //     }
+    // } 
+    // mysqli_free_result($Result);
     // генерация
         // echo date('H:i:s') , " Загрузка из шаблона Excel5" , EOL;
         $objReader = PHPExcel_IOFactory::createReader('Excel5');
@@ -158,7 +207,7 @@ elseif (isset($_POST['addids'])) {
     
     $addids=$_POST['addids'];   
     // $adddata = array();
-    $sess_id=session_id();
+    
     $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
     $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
     $s_id=$row_user['s_id'];
