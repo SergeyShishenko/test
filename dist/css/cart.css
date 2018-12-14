@@ -17,6 +17,14 @@ th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div
      margin-left: -1px;
       height:33px;
     }
+
+#loading1  {   
+    height: 15px;
+    width: 128px;
+    display: none;
+	float: left;	
+    background: url(../images/ajax-loaders/ajax-loader-6.gif);
+}
 td.quantity{width: 140px;}
 td.quantity > div {width: 112px;}
 td.name p{margin: 0;}

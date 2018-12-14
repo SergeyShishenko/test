@@ -11,13 +11,14 @@ $("[id^=\'add_vpi_count\']").bootstrapNumber();
 
 var ids_list = [];// для генерации из корзины
 
-$("body").on("click","#checkout",function() {
+$("body").on("click","#checkout",function() { //СГЕНЕРИРОВАТЬ ВЕДОМОСТЬ
   
     var cart_list=$("[id^=\'vpi_id\']");
 
     cart_list.each(function( index ) {// заполнение массива
         console.log( index + ": fid-" + $( this ).data('fid') );
         console.log( index + ": val-" + $( this ).val() );
+        console.log( index + ": change-" + $( this ).data('change') );
         ids_list.push($( this ).data('fid'),$( this ).val());
       });
 
@@ -106,4 +107,5 @@ $('body').on('click', 'td.remove img', function() {
         console.log('Элемент изменен.');
         $(this).data('change','1');
         console.log($(this).data('change'));
+        $('#checkoutd').hide();// скрыть кнопку скачать XLS
     });
