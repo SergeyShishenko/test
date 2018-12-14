@@ -7,7 +7,7 @@
 });
 
 $("[id^=\'vpi_id\']").bootstrapNumber();
-$("#add_vpi_count").bootstrapNumber();
+$("[id^=\'add_vpi_count\']").bootstrapNumber();
 
 var ids_list = [];// для генерации из корзины
 
@@ -101,4 +101,9 @@ $('body').on('click', 'td.remove img', function() {
             $('#header #cart .content').toggle();
         
         });
-     
+     // установим обработчик события focusout, элементу с идентификатором foo
+     $("[id^=\'vpi_id\']").change(function(){
+        console.log('Элемент изменен.');
+        $(this).data('change','1');
+        console.log($(this).data('change'));
+    });

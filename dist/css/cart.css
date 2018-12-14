@@ -6,6 +6,21 @@
   
 }
 
+
+td.quantity > div > div > .input-group-btn:first-child > .btn, td.quantity > div > div >  .input-group-btn:last-child > .btn ,
+th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div > div >  .input-group-btn:last-child > .btn
+{ height: 33px !important;}
+
+[id^='add_vpi_count']{height: 33px;}
+[id^='vpi_id']{
+    width: 70px !important;
+     margin-left: -1px;
+      height:33px;
+    }
+td.quantity{width: 140px;}
+td.quantity > div {width: 112px;}
+td.name p{margin: 0;}
+
 td,
 th,
 input,
@@ -133,7 +148,7 @@ a img {
 
 #header #cart .content .mini-cart-info {
     overflow-y: auto;
-    max-height: 430px
+    max-height: 330px
 }
 
 /* #header #cart:hover .content {
@@ -185,7 +200,7 @@ a img {
 #header #cart .checkout {
     text-align: right;
     clear: both;
-    /* margin-top: 20px; */
+    margin-top: 10px;
 }
 
 #header #cart .empty {
