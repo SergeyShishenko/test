@@ -40,15 +40,18 @@ require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php');
 $sess_id=session_id();
 $dbconn=dbconnect();
 /** PHPExcel_IOFactory */
+$Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
+$row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
+$s_id=$row_user['s_id'];
 
 if(isset($_POST['ids']))//генерация xls
 {
     require_once dirname(dirname(__FILE__)) . '/Classes/PHPExcel/IOFactory.php';
     $ids=$_POST['ids'];
     $data =  array();
-    $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
-    $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
-    $s_id=$row_user['s_id'];
+    // $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
+    // $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
+    // $s_id=$row_user['s_id'];
 
   // выбираем все записи текущей сессии
     $sql = "SELECT *  FROM `user_vpi` WHERE `s_id` = $s_id";
@@ -208,9 +211,9 @@ elseif (isset($_POST['addids'])) {
     $addids=$_POST['addids'];   
     // $adddata = array();
     
-    $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
-    $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
-    $s_id=$row_user['s_id'];
+    // $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
+    // $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
+    // $s_id=$row_user['s_id'];
     
     for($i=0;$i<=count($addids)/2;$i=$i+2) 
     { 
@@ -241,9 +244,27 @@ elseif (isset($_POST['addids'])) {
     
   
 
-   mysqli_free_result($Result_user); 
-}
+   
 
+}elseif (isset($_POST['change']))
+{
+    
+    // обновление количества 
+    $count_obj=$_POST['val'];
+    $vpi_id=$_POST['fid'];
+    $sql = "UPDATE `user_vpi` SET `count_obj`='$count_obj' WHERE `vpi_id` = $vpi_id";
+            // mysqli_query($dbconn,$sql);
+            if(mysqli_query($dbconn,$sql))
+                        { 
+                            echo "обновленно ".$_POST['fid']."=>".$_POST['val'];
+                         }
+                        else{//вывод ошибки                                        
+                            header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.$sql." -> ".mysqli_error($dbconn));
+                            exit();
+                        } 
+    
+}
+mysqli_free_result($Result_user); 
 mysqli_close($dbconn);
 
 ?>
