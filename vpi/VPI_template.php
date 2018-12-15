@@ -190,8 +190,11 @@ elseif (isset($_POST['addids'])) {
     } //for
     
     $res   = mysqli_query($dbconn,"SELECT COUNT(s_id) AS count FROM `user_vpi`WHERE `s_id` = $s_id "); 
-    $data = mysqli_fetch_assoc($res);    
-    echo $data['count'];
+    $data = mysqli_fetch_assoc($res);  
+
+    // echo $data['count'];
+
+    require('cart.php');
    
 
 }elseif (isset($_POST['change']))

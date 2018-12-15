@@ -49,7 +49,7 @@ $("body").on("click","#checkout",function() { //СГЕНЕРИРОВАТЬ ВЕ�
 });
 
   // установим обработчик события focusout, элементу с идентификатором foo
-  $("[id^=\'vpi_id\']").change(function(){
+  $('body').on('change',"[id^=\'vpi_id\']",function(){
     // console.log('Элемент изменен.');
     $(this).data('change','1');
     // console.log($(this).data('change'));
@@ -86,7 +86,8 @@ $("body").on("click","#add_vpi",function() {// alert('ВПИ');
   // загружаем страницу и передаем значения, используя HTTP POST запрос       
     $.post('vpi/VPI_template.php', {'addids[]': add_ids_list}, function(data) { 
     // console.log(data);
-    $('#cart-total').text(data);
+    $('#vpi').html(data);
+    $("[id^=\'vpi_id\']").bootstrapNumber();
     $('#loading1').hide();      
     });
 
@@ -118,7 +119,7 @@ $('body').on('click', 'td.remove img', function() {
    
     });
 
-    $('#cart-total').on('click', function() {  
+    $('body').on('click','#cart-total', function() {  
         // alert();  
         
    
@@ -126,7 +127,7 @@ $('body').on('click', 'td.remove img', function() {
        
         });
 
-    $('#close').on('click', function() {  
+        $('body').on('click','#close', function() {  
         // alert();  
     
             $('#header #cart .content').toggle();

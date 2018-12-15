@@ -5,5 +5,5 @@ $docsfirstVersion=2;
 $scriptVersion = 28;
 $script2Version = 16;
 $floatingVersion = 20;
-$vpijsVersion = 5;
+$vpijsVersion = 6;
 ?>

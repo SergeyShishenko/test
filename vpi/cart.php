@@ -1,0 +1,96 @@
+<?php
+
+//   define('__ROOT__', dirname(dirname(__FILE__))); 
+//   require_once(__ROOT__.'/DATA/TABLES/configDB.php');   
+//   $dbconn=dbconnect();
+  $sess_id=session_id();
+    $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
+    $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
+    $s_id=$row_user['s_id'];
+
+    $res   = mysqli_query($dbconn,"SELECT COUNT(s_id) AS count FROM `user_vpi`WHERE `s_id` = $s_id "); 
+    $data = mysqli_fetch_assoc($res); 
+    // echo session_id();
+    // echo "data[count] " .$data['count']; 
+
+
+    $Result_vpi = mysqli_query($dbconn,"SELECT * FROM `user_vpi` WHERE `s_id` = $s_id ");        
+
+    // <!-- КОРЗИНА -->               
+    // <div id="vpi"  >
+    echo'  
+         
+                
+                            <div id="header" style="padding-top: 0">
+                                <div class="top-nav-bg abs col-xs-20">
+                                    <div style="display:inline-block">
+                                        
+                                        <div id="cart" >
+                                            <div class="heading"><a href="" class=""></a>
+                                                <a><span id="cart-total" class="cart-full">'.$data["count"].'</span></a>
+                                            </div>
+                                            <div class="content" style="overflow: hidden;">
+                                                <div class="mini-cart-info">
+                                                    <table class="table table-striped">
+                                                    <tbody id="cart-list">
+                        ';
+// получаем все записи из таблицы user_vpi
+  while($row_vpi = mysqli_fetch_array($Result_vpi))
+  {  
+      $furn_id=$row_vpi['obj_furnitur_prop_id'];
+    $Result_furniture = mysqli_query($dbconn,"SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furn_id "); 
+    $furniture = mysqli_fetch_assoc($Result_furniture); 
+  echo'   
+                                                        
+                                                            <tr>
+                                                                <td class="image">
+                                                                    <img src="./dist/filesdb/images/thumbs/tbs'.$furniture["fname_img_furn"].'" alt="'.$furniture["name_furnitur_obj_prop"].'"  title="'.$furniture["name_furnitur_obj_prop"].'">
+                                                                </td>
+                                                                <td class="articul">'.$furniture['articul_furnitur_obj'].'</td>
+                                                                <td class="name" ><p>'.$furniture['def_obj_prop'].'</p></td>
+                                                                <td class="quantity" >
+                                                                <div class="form-group" >				
+                                                                    <input id="vpi_id-'.$row_vpi['vpi_id'].'" data-fid="'.$row_vpi['vpi_id'].'" data-change="0" class="form-control" type="number" value="'.$row_vpi['count_obj'].'" min="1" max="999" >
+                                                                </div>
+                                                                </td>
+                                                                <td class="unit">'.$furniture['unit_obj_prop'].' </td>
+                                                                <td class="remove">
+                                                                    <img src="./dist/css/remove-small.png" alt="Удалить" title="Удалить"
+                                                                        >
+                                                                </td>
+                                                            </tr>
+    ';       
+    }//while
+    mysqli_free_result($Result_vpi);
+    //Закрывает соединение с сервером MySQL
+    // mysqli_close($dbconn);         
+    
+    echo'  
+                                                        
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="checkout">
+                                                    <!-- <a href="" id="checkout" class="button">Скачать ведомость</a>-->
+                                                    <div id="loading1" ></div>  
+                                                    <a href="./vpi/vpi-12-10-2018-06-44-55.xls" type="button" id="checkoutd" class="btn btn-info im-download" download title="Скачать" style="display: none;"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>
+                                                    <button id="checkout" class="btn btn-info ">СГЕНЕРИРОВАТЬ ВЕДОМОСТЬ</button>
+                                                    <!--  <button id="cd" class="btn btn-info ">CD</button>-->
+                                                    <button id="close" class="btn btn-info ">ЗАКРЫТЬ</button>
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+
+                 
+    ';
+    // </div>                                 
+    // <!-- КОРЗИНА -->
+
+?>
+
