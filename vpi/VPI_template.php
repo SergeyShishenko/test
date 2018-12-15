@@ -75,66 +75,17 @@ if(isset($_POST['ids']))//генерация xls
                           'count'=>$furnitur_count
                         )  
                 );
-                // $data[]=array('articul_furnitur_obj'=> $rows['articul_furnitur_obj'],
-                //                         'name_furnitur_obj_prop'=>$rows['name_furnitur_obj_prop'],
-                //                         'made_furnitur_obj'=>$rows['made_furnitur_obj'],
-                //                         'color_obj_prop'=>$rows['color_obj_prop'],                                        
-                //                         'unit_obj_prop'=>$rows['unit_obj_prop'],
-                //                         'count'=>$furnitur_count
-                //                         ) ;  
-                // $data += array('articul_furnitur_obj'=> $rows['articul_furnitur_obj'],
-                //                         'name_furnitur_obj_prop'=>$rows['name_furnitur_obj_prop'],
-                //                         'made_furnitur_obj'=>$rows['made_furnitur_obj'],
-                //                         'color_obj_prop'=>$rows['color_obj_prop'],                                        
-                //                         'unit_obj_prop'=>$rows['unit_obj_prop'],
-                //                         'count'=>$furnitur_count)
-                //                          ; 
-                // $stack = array("orange", "banana");
-                // array_push($stack, "apple", "raspberry");             
+                  
             }
     }else{//вывод ошибки 
             header('HTTP/1.1 500 Looks like mysql error, could not insert record5!'.$sql." -> ".mysqli_error($dbconn));
             exit();
     }
 
-
-    
-
-    // for($i=0;$i<=count($ids)/2;$i=$i+2) 
-    // { 
-    //     // $obj_furnitur = explode(",", $ids[$i]);
-    //     $furnitur_id = $ids[$i];
-    //     $furnitur_count = $ids[$i+1];
-
-    //     $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furnitur_id";
-    //     $Result=mysqli_query($dbconn,$sql);
-        
-    //     if($Result)
-    //     {  
-    //         while ($rows = mysqli_fetch_array($Result))// заполнение массива
-    //             {                
-    //                 $data[]=array('articul_furnitur_obj'=> $rows['articul_furnitur_obj'],
-    //                                         'name_furnitur_obj_prop'=>$rows['name_furnitur_obj_prop'],
-    //                                         'made_furnitur_obj'=>$rows['made_furnitur_obj'],
-    //                                         'color_obj_prop'=>$rows['color_obj_prop'],                                        
-    //                                         'unit_obj_prop'=>$rows['unit_obj_prop'],
-    //                                         'count'=>$furnitur_count
-    //                                         ) ;  
-    //                 // array_push($stack, "apple", "raspberry");             
-    //             }
-    //     }else{//вывод ошибки 
-    //             header('HTTP/1.1 500 Looks like mysql error, could not insert record5!'.$sql." -> ".mysqli_error($dbconn));
-    //             exit();
-    //     }
-    // } 
-    // mysqli_free_result($Result);
     // генерация
         // echo date('H:i:s') , " Загрузка из шаблона Excel5" , EOL;
         $objReader = PHPExcel_IOFactory::createReader('Excel5');
         $objPHPExcel = $objReader->load("templates/VPI_template.xls");
-
-
-
 
         // echo date('H:i:s') , "Добавление новых данных в шаблон" , EOL;
         // $data = array();
@@ -221,19 +172,15 @@ elseif (isset($_POST['addids'])) {
         $furnitur_id = $addids[$i];
         $furnitur_count = $addids[$i+1];
 
-         // echo print_r($addids);
-        
-        // echo 's_id='.$s_id;
+       
 
         // INSERT INTO `user_vpi` (`vpi_id`, `s_id`, `obj_furnitur_prop_id`, `count_obj`) VALUES (NULL, '1', '1', '5');
         $sql = "INSERT INTO `user_vpi` (`vpi_id`, `s_id`, `obj_furnitur_prop_id`, `count_obj`) VALUES (NULL, '$s_id', '$furnitur_id', '$furnitur_count')";
 
         if(mysqli_query($dbconn,$sql))
         {                    
-            // $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
-            // $html_id = "obj_".$id;
-            // $sql = "UPDATE `obj` SET `html_id`='$html_id' WHERE `obj_id`=$id";
-            echo print_r($addids);
+           
+            // echo print_r($addids);
             
             
         }else{//вывод ошибки                                        
@@ -242,8 +189,9 @@ elseif (isset($_POST['addids'])) {
         } 
     } //for
     
-  
-
+    $res   = mysqli_query($dbconn,"SELECT COUNT(s_id) AS count FROM `user_vpi`WHERE `s_id` = $s_id "); 
+    $data = mysqli_fetch_assoc($res);    
+    echo $data['count'];
    
 
 }elseif (isset($_POST['change']))
@@ -263,7 +211,27 @@ elseif (isset($_POST['addids'])) {
                             exit();
                         } 
     
+}elseif (isset($_POST['del']))
+{
+    
+    // обновление количества 
+    // $count_obj=$_POST['val'];
+    $vpi_id=$_POST['del'];
+    $sql = "DELETE FROM `user_vpi` WHERE `user_vpi`.`vpi_id` = $vpi_id";
+            // mysqli_query($dbconn,$sql);
+            if(mysqli_query($dbconn,$sql))
+                        { 
+                            echo "Запись удалена ".$_POST['del'];
+                         }
+                        else{//вывод ошибки                                        
+                            header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.$sql." -> ".mysqli_error($dbconn));
+                            exit();
+                        } 
+    
 }
+
+
+
 mysqli_free_result($Result_user); 
 mysqli_close($dbconn);
 

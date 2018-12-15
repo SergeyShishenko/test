@@ -25,6 +25,7 @@
             </button>
             <a class="navbar-brand" href="index.php">500.СТП</a > 
   ';
+  
   define('__ROOT__', dirname(dirname(__FILE__))); 
   require_once(__ROOT__.'/DATA/TABLES/configDB.php');   
   $dbconn=dbconnect();
