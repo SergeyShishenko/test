@@ -59,34 +59,50 @@ $("body").on("click","#checkout",function() { //СГЕНЕРИРОВАТЬ ВЕ�
 var add_ids_list = []; // добавление в корзину
 
 $("body").on("click","#add_vpi",function() {// alert('ВПИ');
+
+// calcresult
+
+
+
+
+
+
     // alert($('#add_vpi_count').data("objfurn"));
     $('#loading1').show();
     var add_vpi_count = $(this).parent().parent().find('th.quantity > div > div > input');
     var count=add_vpi_count.val();
-    var addvpiid=add_vpi_count.data('objfurn');
-    alert(addvpiid);
-    if(addvpiid.toString().indexOf("-")+1 == 0)
-    {
-    // alert('один элемент');
-    console.log('Индекс: 0; Значение: ' + addvpiid.toString() + '; Количество: ' +count  );
-    add_ids_list.push(addvpiid,count);
-    }
-    else{
-        // alert('несколько элементов');
-    var clickedID=addvpiid.split("-");
-    // alert(clickedID[0]+'-'+clickedID[1]+'->'+count);
-    $.each(clickedID,function(index,value){ // заполнение массива
+
+    var calcresult=$("#calcresult > tr:not(.dis) > td.animated");
+    calcresult.each(function( index ) {// заполнение массива
+    console.log( index + ": objFurnId " + $( this ).data('objfurnid') + '; Количество: ' +count  );  
+    add_ids_list.push($( this ).data('objfurnid'),count);
+    });
+//   return false;
+    // var addvpiid=add_vpi_count.data('objfurn');
+    // alert(addvpiid);
+    // if(addvpiid.toString().indexOf("-")+1 == 0)
+    // {
+    // // alert('один элемент');
+    // console.log('Индекс: 0; Значение: ' + addvpiid.toString() + '; Количество: ' +count  );
+    // add_ids_list.push(addvpiid,count);
+    // }
+    // else{
+    //     // alert('несколько элементов');
+    // var clickedID=addvpiid.split("-");
+    // // alert(clickedID[0]+'-'+clickedID[1]+'->'+count);
+    // $.each(clickedID,function(index,value){ // заполнение массива
     
        
-        console.log('Индекс: ' + index.toString() + '; Значение: ' + value.toString() + '; Количество: ' +count  );
-        add_ids_list.push(value,count);
-    });
-    }
+    //     console.log('Индекс: ' + index.toString() + '; Значение: ' + value.toString() + '; Количество: ' +count  );
+    //     add_ids_list.push(value,count);
+    // });
+    // }
     
   // загружаем страницу и передаем значения, используя HTTP POST запрос       
     $.post('vpi/VPI_template.php', {'addids[]': add_ids_list}, function(data) { 
     // console.log(data);
     $('#vpi').html(data);
+    $('#header #cart .content').show();
     $("[id^=\'vpi_id\']").bootstrapNumber();
     $('#loading1').hide();      
     });

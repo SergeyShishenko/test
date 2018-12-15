@@ -6,6 +6,7 @@
   
 }
 
+.dis{display: none;}
 
 td.quantity > div > div > .input-group-btn:first-child > .btn, td.quantity > div > div >  .input-group-btn:last-child > .btn ,
 th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div > div >  .input-group-btn:last-child > .btn

@@ -1043,14 +1043,14 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                     {  
                         if ($Radio==1)
                         {
-                            $("#sidestab").show();$gap=15; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);
+                            $("#sidestab").removeClass("dis");$gap=15; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);
                             // value=$("#box-depth_input").val()-$gap;
                             calcsidestab($("span.calcarticul:first").text());
 
                             if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
                         }else //$Radio==2
                         {
-                            $("#sidestab").show();$gap=15; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);
+                            $("#sidestab").removeClass("dis");$gap=15; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);
                             //  value=$("#box-depth_input").val()-$gap;
                             calcsidestab($("span.calcarticul:first").text());
 
@@ -1061,12 +1061,12 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                     {
                         if ($Radio==1)
                         {
-                            $("#sidestab").hide();$gap=3; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
+                            $("#sidestab").addClass("dis");$gap=3; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
                           
                             if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
                         }else //$Radio==2
                         {
-                            $("#sidestab").hide();$gap=3; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
+                            $("#sidestab").addClass("dis");$gap=3; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
                             if($("#box-depth_x_input").val()<$depthmin){$("#box-depth_x_input").val($depthmin);}
                         }
                       

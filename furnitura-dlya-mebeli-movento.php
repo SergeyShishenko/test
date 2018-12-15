@@ -1277,11 +1277,11 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </th>
                                                         </tr>
                                                         </thead>
-                                                        <tbody>
+                                                        <tbody id="calcresult">
                                                         <tr>
                                                             <td><img src="./dist/images/ArticulImg1.png" class="" alt="Направляющие" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated">760H<span class="calcarticul">250</span>0S&nbsp;&nbsp;</td>
+                                                            <td class="animated" data-objfurnid="1">760H<span class="calcarticul">250</span>0S&nbsp;&nbsp;</td>
                                                             <td>Оцинкованный</td> 
                                                             <td colspan="3">MOVENTO с BLUMOTION S, полное выдвижение деревянный ящик, 40 кг, НД=<span class="calcarticul">250</span>мм, под замки, левая/правая</td>
                                                         </tr>
@@ -1292,10 +1292,10 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td>Оранжевый</td>
                                                             <td>Замок, левый/правый</td>
                                                         </tr>
-                                                        <tr id="sidestab" style="display:none;">
+                                                        <tr id="sidestab" class="dis" >
                                                                 <td><img src="./dist/images/ArticulImgU4.png" class="" alt="Боковой стабилизатор" title=""></td>
                                                                 <td>1</td>
-                                                                <td class="animated">ZS7M<span class="calcarticul2">400</span>MU</td>
+                                                                <td class="animated" data-objfurnid="2">ZS7M<span class="calcarticul2">400</span>MU</td>
                                                                 <td>Темно-серый (RAL 7037)</td> 
                                                                 <td colspan="3">Комплект бокового стабилизатора до <span class="calcarticul2">400</span></td>
                                                         </tr>
