@@ -14,7 +14,9 @@ var ids_list = [];// для генерации из корзины
 $("body").on("click","#checkout",function() { //СГЕНЕРИРОВАТЬ ВЕДОМОСТЬ
   
     var cart_list=$("[id^=\'vpi_id\']");
+    $('#checkoutd').hide();
     $('#loading1').show();
+    
     cart_list.each(function( index ) {// заполнение массива
         // console.log( index + ": fid-" + $( this ).data('fid') );
         // console.log( index + ": val-" + $( this ).val() );

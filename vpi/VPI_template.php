@@ -72,7 +72,8 @@ if(isset($_POST['ids']))//генерация xls
                           'made_furnitur_obj'=>$rows['made_furnitur_obj'],
                           'color_obj_prop'=>$rows['color_obj_prop'],
                           'unit_obj_prop'=>$rows['unit_obj_prop'],
-                          'count'=>$furnitur_count
+                          'count'=>$furnitur_count,
+                          'fname_img_furn'=>$rows['fname_img_furn']
                         )  
                 );
                   
@@ -117,6 +118,9 @@ if(isset($_POST['ids']))//генерация xls
             $row = $baseRow + $r;
             $objPHPExcel->getActiveSheet()->insertNewRowBefore($row,1);
 
+            // $sheet->getColumnDimension('K')->setWidth(40); 
+            $imagePath = dirname(dirname(__FILE__)).'/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];
+
             // $objPHPExcel->getActiveSheet()->setCellValue('D'.$row, $r+1)
             $objPHPExcel->getActiveSheet()->setCellValue('E'.$row, $dataRow['articul_furnitur_obj'])
                                         ->setCellValue('F'.$row, $dataRow['name_furnitur_obj_prop'])
@@ -124,11 +128,30 @@ if(isset($_POST['ids']))//генерация xls
                                         ->setCellValue('H'.$row, $dataRow['color_obj_prop'])
                                         ->setCellValue('I'.$row, $dataRow['unit_obj_prop'])
                                         ->setCellValue('J'.$row, $dataRow['count']);
-        
-                                        
-
-
-                                        //   ->setCellValue('E'.$row, '=C'.$row.'*D'.$row);
+                                        // ->setCellValue('K'.$row, $imagePath);
+            $objPHPExcel->getActiveSheet()->getRowDimension($row)->setRowHeight(170);
+            if (file_exists($imagePath)) {
+                // $logo = new PHPExcel_Worksheet_Drawing();
+                // $logo->setPath($imagePath);
+                // $logo->setCoordinates("K".$row);             
+                // $logo->setOffsetX(0);
+                // $logo->setOffsetY(0);    
+                // $sheet->getRowDimension(2)->setRowHeight(190);
+                // $logo->setWorksheet($sheet);
+                // $objPHPExcel->getActiveSheet()->setCellValue('K'.$row, $imagePath);
+                $objDrawing = new PHPExcel_Worksheet_Drawing();
+                $objDrawing->setWorksheet($objPHPExcel->getActiveSheet());                                          
+                $objDrawing->setName('Paid');
+                $objDrawing->setDescription('Paid');
+                // $objDrawing->setPath('./images/paid.png');
+                $objDrawing->setPath($imagePath);
+                $objDrawing->setCoordinates('K'.$row);
+                $objDrawing->setOffsetX(10);
+                $objDrawing->setOffsetY(10);
+                // $objDrawing->setRotation(25);
+                // $objDrawing->getShadow()->setVisible(true);
+                // $objDrawing->getShadow()->setDirection(45);  
+            } 
         }
         $objPHPExcel->getActiveSheet()->removeRow($baseRow-1,1);//удаление строки
         // // Always include the complete filter range!
