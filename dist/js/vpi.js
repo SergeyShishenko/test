@@ -97,12 +97,14 @@ $("body").on("click","#add_vpi",function() {// alert('ВПИ');
     //     add_ids_list.push(value,count);
     // });
     // }
-    
+     var cartcontent_vis = $('#header #cart .content').css('display');
   // загружаем страницу и передаем значения, используя HTTP POST запрос       
     $.post('vpi/VPI_template.php', {'addids[]': add_ids_list}, function(data) { 
     // console.log(data);
     $('#vpi').html(data);
-    $('#header #cart .content').show();
+    if (cartcontent_vis=="block"){$('#header #cart .content').show();}
+    // $('#header #cart .content').show();
+
     $("[id^=\'vpi_id\']").bootstrapNumber();
     $('#loading1').hide();      
     });
@@ -123,6 +125,15 @@ $('body').on('click', 'td.remove img', function() {
     // alert(DbNumberID);
     // alert($('#cart-total').text());
     $('#cart-total').text($('#cart-total').text()-1);
+    if ($('#cart-total').text()=="0") {  
+        // alert($('#cart-total').text());     
+        $('#checkout').addClass('dis');
+        $('#cartempty').removeClass('dis');
+    }else{
+        $('#checkout').removeClass('dis');
+        $('#cartempty').addClass('dis');
+       
+    }     
     
     $('#loading1').show();
     $.post('vpi/VPI_template.php', {'del': DbNumberID}, function(data) { 

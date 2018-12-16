@@ -29,7 +29,7 @@
                                             <div class="heading"><a href="" class=""></a>
                                                 <a><span id="cart-total" class="cart-full">'.$data["count"].'</span></a>
                                             </div>
-                                            <div class="content" style="overflow: hidden;">
+                                            <div  class="content" style="overflow: hidden;">
                                                 <div class="mini-cart-info">
                                                     <table class="table table-striped">
                                                     <tbody id="cart-list">
@@ -63,19 +63,21 @@
     }//while
     mysqli_free_result($Result_vpi);
     //Закрывает соединение с сервером MySQL
-    // mysqli_close($dbconn);         
+    // mysqli_close($dbconn); 
+    if ($data["count"]==0) {$dis="dis";$cartempty="";}else{$dis="";$cartempty="dis";}       
     
     echo'  
                                                         
                                                         </tbody>
                                                     </table>
                                                 </div>
+                                                <div id="cartempty" class="'.$cartempty.'" style="text-align: center;"><p>КОРЗИНА ПУСТА</p></div>
 
-                                                <div class="checkout">
+                                                <div class="checkout ">
                                                     <!-- <a href="" id="checkout" class="button">Скачать ведомость</a>-->
                                                     <div id="loading1" ></div>  
                                                     <a href="./vpi/vpi-12-10-2018-06-44-55.xls" type="button" id="checkoutd" class="btn btn-info im-download" download title="Скачать" style="display: none;"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>
-                                                    <button id="checkout" class="btn btn-info ">СГЕНЕРИРОВАТЬ ВЕДОМОСТЬ</button>
+                                                    <button id="checkout" class="btn btn-info '.$dis.'">СГЕНЕРИРОВАТЬ ВЕДОМОСТЬ</button>
                                                     <!--  <button id="cd" class="btn btn-info ">CD</button>-->
                                                     <button id="close" class="btn btn-info ">ЗАКРЫТЬ</button>
                                                    

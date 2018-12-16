@@ -30,7 +30,7 @@ td.quantity{width: 140px;}
 td.quantity > div {width: 112px;}
 td.name p{margin: 0;}
 
-td,
+/* td,
 th,
 input,
 textarea,
@@ -38,7 +38,7 @@ select,
 a {
     font-size: 13px;
     padding: 7px;
-}
+} */
 
 button.button {
     display: inline-block;
@@ -123,7 +123,7 @@ a img {
     padding-top: 4px;
     font-size: 10px;
     margin: auto;
-    margin-left: 1px
+    margin-left: 8px
 }
 
 #header #cart .heading a span#cart-total.cart-full {
@@ -145,7 +145,7 @@ a img {
     /* right: 0; */
     margin-left: 150px;
     padding: 8px;
-    min-height: 150px;
+    /* min-height: 150px; */
     min-width: 370px;
     border-top: 1px solid #e0e0e0;
     -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
@@ -246,7 +246,7 @@ input.button {
 
 #header #cart {
     position: relative;
-    z-index: 99999;
+    /* z-index: 99999; */
     top: -7px;
     right: 0;
     float: none !important;
@@ -264,3 +264,51 @@ input.button {
     padding-right: 7px;
     margin-left: 150px;
 }
+@media (max-width: 767px)
+{
+    #vpi  { display: none; }
+}
+@media (min-width: 768px)
+{
+    #header #cart .heading { margin-left: 90px; }
+}
+@media (min-width: 992px) 
+{
+    #header #cart .heading { margin-left: 120px; }
+}
+@media (min-width: 1200px) 
+{
+    #header #cart .heading { margin-left: 150px; }
+}
+
+
+/* @media (min-width: 200px) and (max-width: 319px) {
+   
+  
+  }
+  @media (min-width: 320px) and (max-width: 479px) {   
+
+  
+ 
+  }
+  @media (min-width: 480px) and (max-width: 639px) {
+   
+  }
+ 
+  
+  @media (min-width: 640px) and (max-width: 767px) {
+   
+  }
+  @media (max-width: 768px) {
+ 
+  } */
+  /* @media (min-width: 768px) and (max-width: 1023px) {
+  
+  
+
+  } */
+  
+  
+  
+
+  
