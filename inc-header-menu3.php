@@ -29,11 +29,30 @@
   ';
   
 //   define('__ROOT__', dirname(dirname(__FILE__))); 
-$dbconn=dbconnect();
-echo dirname(dirname(__FILE__)).'/DATA/TABLES/configDB.php';
-  require_once(dirname(dirname(__FILE__)).'/DATA/TABLES/configDB.php'); 
-  
-  require_once('/vpi/cart.php');
+
+
+//echo $_SERVER['DOCUMENT_ROOT'];
+//require_once(__ROOT__.'/DATA/data.php'); 
+//echo dirname($_SERVER['DOCUMENT_ROOT']).'/DATA/TABLES/configDB.php';
+  //require_once(dirname($_SERVER['DOCUMENT_ROOT']).'/DATA/TABLES/configDB.php'); 
+$dbconn=dbconnect();  
+/* изменение набора символов на utf8 */
+if (!mysqli_set_charset($dbconn, "utf8")) {
+    printf("Ошибка при загрузке набора символов utf8: %s\n", mysqli_error($link));
+    exit();
+} else {
+    //printf("Текущий набор символов: %s\n", mysqli_character_set_name($link));
+}
+//if($dbconn)
+
+//{echo 'Соединение установлено.';}
+
+//else
+
+//{die('Ошибка подключения к серверу баз данных.');}
+
+//   require_once($_SERVER['DOCUMENT_ROOT'].'/vpi/cart.php');// для сайта !!!!!!!
+  require_once($_SERVER['DOCUMENT_ROOT'].'/www/vpi/cart.php');// для localhost
   mysqli_close($dbconn);    
  
  
