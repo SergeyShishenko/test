@@ -119,11 +119,14 @@ $('body').on('click', 'td.remove img', function() {
     var DbNumberID = clickedID[1]; //и получаем номер из массива
     // alert(DbNumberID);
     // alert($('#cart-total').text());
+    $('#checkoutd').hide();// скрыть кнопку скачать XLS
     $('#cart-total').text($('#cart-total').text()-1);
     if ($('#cart-total').text()=="0") {  
         // alert($('#cart-total').text());     
         $('#checkout').addClass('dis');
+        // $('#checkoutd').addClass('dis');
         $('#cartempty').removeClass('dis');
+        checkoutd
     }else{
         $('#checkout').removeClass('dis');
         $('#cartempty').addClass('dis');

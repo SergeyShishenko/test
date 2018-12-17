@@ -28,9 +28,11 @@
             <div id="vpi"  >
   ';
   
-  define('__ROOT__', dirname(dirname(__FILE__))); 
-  require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
-  $dbconn=dbconnect();
+//   define('__ROOT__', dirname(dirname(__FILE__))); 
+$dbconn=dbconnect();
+echo dirname(dirname(__FILE__)).'/DATA/TABLES/configDB.php';
+  require_once(dirname(dirname(__FILE__)).'/DATA/TABLES/configDB.php'); 
+  
   require_once('/vpi/cart.php');
   mysqli_close($dbconn);    
  
