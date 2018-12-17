@@ -3,7 +3,23 @@
 //   define('__ROOT__', dirname(dirname(__FILE__))); 
 //   require_once(__ROOT__.'/DATA/TABLES/configDB.php');   
 //   $dbconn=dbconnect();
+
+
+
   $sess_id=session_id();
+
+
+  $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `sess_id` LIKE '%".$sess_id."%'");
+  if (mysqli_num_rows($result) > 0) {//есть
+   
+   $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `sess_id` LIKE '%".$sess_id."%'");
+  }
+  else{
+    $result = mysqli_query($dbconn,"INSERT INTO `user` (`s_id`, `sess_id`, `date_start`) VALUES (NULL, '$sess_id', CURRENT_TIMESTAMP)");
+    
+  }
+
+
     $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
     $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
     $s_id=$row_user['s_id'];

@@ -60,16 +60,9 @@ $("body").on("click","#checkout",function() { //СГЕНЕРИРОВАТЬ ВЕ�
 
 var add_ids_list = []; // добавление в корзину
 
-$("body").on("click","#add_vpi",function() {// alert('ВПИ');
-
+$("body").on("click","[id^=\'add_vpi\']",function() {// alert('ВПИ');
 // calcresult
-
-
-
-
-
-
-    // alert($('#add_vpi_count').data("objfurn"));
+ // alert($('#add_vpi_count').data("objfurn"));
     $('#loading1').show();
     var add_vpi_count = $(this).parent().parent().find('th.quantity > div > div > input');
     var count=add_vpi_count.val();

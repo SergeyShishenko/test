@@ -1140,19 +1140,21 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                 {
                     case value >= 250 && value <= 400:
                         // alert("400");
-                       
+                        $("span.calcarticul2").parent().data('objfurnid','2');
                         $("span.calcarticul2").text(400);
                         $( ".animated" ).addClass("tada");
                         break;
                     
                         case value > 400 && value <= 600:
                         // alert("600-"+value);
+                        $("span.calcarticul2").parent().data('objfurnid','9');
                         $("span.calcarticul2").text(600);
                         $( ".animated" ).addClass("tada");
                         break;
                     
                         case value   > 600: 
                         // alert("750-"+value);
+                        $("span.calcarticul2").parent().data('objfurnid','11');
                         $("span.calcarticul2").text(750);
                         $( ".animated" ).addClass("tada");
                         break;
@@ -1173,37 +1175,42 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                     {
                         case value >= 250 && value < 300: 
                             // alert("250");
-                           
+                            $("span.calcarticul").parent().data('objfurnid','1');
                             $("span.calcarticul").text(250);
                             $( ".animated" ).addClass("tada");
                             break;
                         
                         case value >= 300 && value < 350: 
                             // alert("300");
+                            $("span.calcarticul").parent().data('objfurnid','3');
                             $("span.calcarticul").text(300);
                             $( ".animated" ).addClass("tada");
                             break;
                         
                         case value >= 350 && value < 400: 
                             // alert("350");
+                            $("span.calcarticul").parent().data('objfurnid','4');
                             $("span.calcarticul").text(350);
                             $( ".animated" ).addClass("tada");
                             break;
                         
                         case value >= 400 && value < 450: 
                             // alert("400");
+                            $("span.calcarticul").parent().data('objfurnid','5');
                             $("span.calcarticul").text(400);
                             $( ".animated" ).addClass("tada");
                             break;
                         
                         case value >= 450 && value < 500: 
                             // alert("450");
+                            $("span.calcarticul").parent().data('objfurnid','6');
                             $("span.calcarticul").text(450);
                             $( ".animated" ).addClass("tada");
                             break;
                         
                         case value >= 500 && value < 550: 
                             // alert("500");
+                            $("span.calcarticul").parent().data('objfurnid','7');
                             $("span.calcarticul").text(500);
                             $( ".animated" ).addClass("tada");
                             break;
@@ -1211,12 +1218,14 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                         case value >= 550 && value < 600: 
                         
                             // alert("600");
+                            $("span.calcarticul").parent().data('objfurnid','8');
                             $("span.calcarticul").text(550);
                             $( ".animated" ).addClass("tada");
                             break;
                         case value >= 600 : 
                         
                             // alert("600");
+                            $("span.calcarticul").parent().data('objfurnid','10');
                             $("span.calcarticul").text(600);
                             $( ".animated" ).addClass("tada");
                             break;
