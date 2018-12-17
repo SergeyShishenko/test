@@ -158,4 +158,17 @@ $('body').on('click', 'td.remove img', function() {
             $('#header #cart .content').toggle();
         
         });
-   
+   // свернуть корзину
+jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $('#header #cart .content'); // тут указываем ID элемента
+        // если клик был не по нашему блоку
+		if (!div.is(e.target)&& div.has(e.target).length === 0) { // и не по его дочерним элементам 
+		    
+            div.hide(); // скрываем его
+        
+             
+            
+		}
+	});
+});

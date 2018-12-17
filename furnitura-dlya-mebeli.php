@@ -80,13 +80,13 @@ include 'inc-left-side-menu-furnitura.php';
                         </div> -->
 
 
-                        <div class="main-box clearfix">                            
+                        <!-- <div class="main-box clearfix">                            
                             <div class="main-box-body clearfix"> 
                                 <div class="embed-responsive embed-responsive-16by9">
                                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hSWQ0w1sB3M?rel=0" allowfullscreen></iframe>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                         
 
@@ -1745,7 +1745,7 @@ include 'inc-left-side-menu-furnitura.php';
                             </li>
                            
                             <li>
-                                <a href="#mekhanizmy-vydvizheniya-dlya-yashchikov">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ</a>
+                                <a href="furnitura-dlya-mebeli-movento.php#movento-s-blumotion-760h-766h">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ для ЯЩИКОВ</a>
                                 <ul class="nav">
                                     <li><a href="#5000502-04-101-movento-blumotion-napravlyayushchie-250">&#9999;&nbsp;5000502-04-101 MOVENTO BLUMOTION 40 КГ 250 мм</a>
                                     </li> 
