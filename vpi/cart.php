@@ -88,8 +88,8 @@
                                                     <div id="loading1" ></div>  
                                                     <a href="./vpi/vpi-12-14-2018-00-00-00.xls" type="button" id="checkoutd" class="btn btn-info im-download" download title="Скачать" style="display: none;"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>
                                                     <button id="checkout" class="btn btn-info '.$dis.'">СГЕНЕРИРОВАТЬ ВЕДОМОСТЬ</button>
-                                                    <!--  <button id="cd" class="btn btn-info ">CD</button>-->
-                                                    <button id="close" class="btn btn-info ">ЗАКРЫТЬ</button>
+                                                    
+                                                     <!-- <button id="close" class="btn btn-info ">ЗАКРЫТЬ</button>-->
                                                    
                                                 </div>
                                             </div>
