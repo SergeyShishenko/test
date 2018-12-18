@@ -1210,33 +1210,33 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <div class=" col-xs-4 col-sm-4 col-md-4">
                                                         <table class="dim_box_horizontal" >
                                                             <tr>
-                                                                <td  style="width: 20%;"></td>
+                                                                <td  style="width: 25%; text-align:right;">|</td>
                                                                 <td><span class="glyphicon glyphicon glyphicon-arrow-left"></span></td>
                                                                 <td class="">                         
                                                                 <input type="text" class="form-control only_number " id="width_box_input"  style="width: 100%;padding-left:10px;" value="286">                        
                                                                 </td> 
                                                                 <td><span class="glyphicon glyphicon glyphicon-arrow-right "></span></td>
-                                                                <td  style="width: 20%;"></td>
+                                                                <td  style="width: 25%; text-align:left">|</td>
                                                             </tr>
                                                         </table>
                                                     </div> 
                                                     <div class=" col-xs-4 col-sm-4 col-md-4">
                                                         <table class="dim_box_horizontal" >
                                                             <tr>
-                                                                 <td></td>
+                                                            <td  style="width: 12%; text-align:right;">|</td>
                                                                 <td><span class="glyphicon glyphicon glyphicon-arrow-left"></span></td>
                                                                 <td class="">                         
                                                                 <input type="text" class="form-control only_number " id="box-depth_input"  style=" width: 100%;padding-left:10px;" value="253">                        
                                                                 </td> 
                                                                 <td><span class="glyphicon glyphicon glyphicon-arrow-right "></span></td>
-                                                                <td></td>
+                                                                <td  style="width: 12%; text-align:left;">|</td>
                                                             </tr>
                                                         </table>
                                                     </div> 
                                                     <div class=" col-xs-4 col-sm-4 col-md-4">
                                                         <table class="dim_box_horizontal" >
                                                             <tr>
-                                                            <td></td>
+                                                            <td  style="width: 12%; text-align:right;">|</td>
                                                                 <td><span class="glyphicon glyphicon glyphicon-arrow-left"></span></td>
                                                                 <td class="">   
                                                                                       
@@ -1244,7 +1244,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                                        
                                                                 </td> 
                                                                 <td><span class="glyphicon glyphicon glyphicon-arrow-right "></span></td>
-                                                                <td></td>
+                                                                <td  style="width: 12%; text-align:left">|</td>
                                                             </tr>
                                                         </table>
                                                     </div> 
