@@ -33,12 +33,12 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                             <div class="overlay"></div>                           
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-dp_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_1-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Лист титульный ДП"                               
-                                 alt="Лист титульный ДП"
-                                 data-pdf="./dist/files/pdf/shablon-alboma-dp.pdf"
+                                 alt="АЛЬБОМ ДИЗАЙН-ПРОЕКТА"
+                                 data-xls="./dist/files/pdf/shablon-alboma-dp.xlsx"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
                                    ></a>
@@ -48,15 +48,17 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                       
 
                         <h2 id="shablon-alboma-dp_2">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Второй лист ДП</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Состав проекта</h4>
                                                    
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-dp_2.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_2-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="Второй лист ДП"                               
-                                 alt="Второй лист ДП"
+                                 data-content="Состав проекта"                               
+                                 alt="Состав проекта"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
                                 
                                    ></a>
                              </p>
@@ -64,15 +66,17 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div>
 
                         <h2 id="shablon-alboma-dp_3">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Состав проекта</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Ситуационый план</h4>
                                                    
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-dp_3.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_3-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_3-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="Состав проекта"                               
-                                 alt="Состав проекта"
+                                 data-content="Ситуационый план"                               
+                                 alt="Ситуационый план"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
                                 
                                    ></a>
                              </p>
@@ -80,36 +84,24 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div>
 
                         <h2 id="shablon-alboma-dp_4">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Ситуационный план</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Обмерный план</h4>
                                                    
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-dp_4.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_4-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_4-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
-                                 data-content="Ситуационный план"                               
-                                 alt="Ситуационный план"
+                                 data-content="Обмерный план"                               
+                                 alt="Обмерный план"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
                                 
                                    ></a>
                              </p>
                              <!-- <div class="overlay"></div> -->
                         </div>
 
-                        <h2 id="shablon-alboma-dp_5">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Обмерный план</h4>
-                                                   
-                            <p> <a>
-                                <!-- <img src="./dist/images/shablon-alboma-dp_5.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_5-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
-                                 data-toggle="modal"
-                                 data-target="#myModal"
-                                 data-content="Обмерный план"                               
-                                 alt="Обмерный план"
-                                 
-                                   ></a>
-                             </p>
-                             <!-- <div class="overlay"></div> -->
-                        </div>
+                      
                        
                       </section>
                     </article>
@@ -125,10 +117,12 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                                         
                               <p> <a>
                                   <!-- <img src="./dist/images/list-titulnyy-vpi_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_5-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_5-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                   data-toggle="modal"
                                   data-target="#myModal"                                                                
                                   alt="5000304_01_000 лист титульный ВПИ"
+                                  data-prnt="noPrint"
+                                 data-spng="noPNG" 
                                 
                                     ></a>
                               </p>
@@ -148,14 +142,17 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                                        
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-furnitury_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_6-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_6-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                 
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="5000304-01-001 ведомость фурнитуры"
-                                 data-xls="./dist/files/xls/vedomost-furnitury-v1.xlsx"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                 
                                    ></a>
                              </p>
+                             <!-- data-xls="./dist/files/xls/vedomost-furnitury-v1.xlsx" -->
                              <div class="overlay"></div>
                         </div>
                       </section>
@@ -172,13 +169,16 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                                        
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-stekol-i-zerkal_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_7-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_7-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="5000304-02-001 ведомость стекол и зеркал"
-                                 data-xls="./dist/files/xls/vedomost-stekol-i-zerkal-v1.xlsx"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                 
                                    ></a>
                              </p>
+                             <!-- data-xls="./dist/files/xls/vedomost-stekol-i-zerkal-v1.xlsx" -->
                              <div class="overlay"></div>
                         </div>
                       </section>
@@ -195,13 +195,16 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                                        
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-materialy-prochie_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_8-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_8-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="5000304-03-001 ведомость материалы прочие"
-                                 data-xls="./dist/files/xls/vedomost-materialy-prochie-v1.xlsx"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                 
                                    ></a>
                              </p>
+                            <!--  data-xls="./dist/files/xls/vedomost-materialy-prochie-v1.xlsx"--> 
                              <div class="overlay"></div>
                         </div>
                       </section>
@@ -221,14 +224,13 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                 <ul class="nav">
                                     <li><a href="#list-titulnyy-dp_1">&#9999;&nbsp;Лист титульный ДП</a>
                                     </li>
-                                    <li><a href="#shablon-alboma-dp_2">&#9999;&nbsp;Второй лист ДП</a>
+                                    <li><a href="#shablon-alboma-dp_2">&#9999;&nbsp;Состав проекта</a>
                                     </li>
-                                    <li><a href="#list-titulnyy-dp_3">&#9999;&nbsp;Состав проекта</a>
+                                    <li><a href="#shablon-alboma-dp_3">&#9999;&nbsp;Ситуационный план</a>
                                     </li>
-                                    <li><a href="#shablon-alboma-dp_4">&#9999;&nbsp;Ситуационный план</a>
+                                    <li><a href="#shablon-alboma-dp_4">&#9999;&nbsp;Обмерный план</a>
                                     </li>
-                                    <li><a href="#shablon-alboma-dp_5">&#9999;&nbsp;Обмерный план</a>
-                                    </li>
+                                    
                                                                       
                                 </ul>
                             </li>
