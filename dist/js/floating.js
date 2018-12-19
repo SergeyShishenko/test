@@ -7,9 +7,10 @@ $('td').on('click', function () {
 
     var ref = $(this).not('.disabled').find(':first-child').data('href'); 
 
-    var Blank = $(this).find(':first-child').attr("data-link");
+    // var Blank = $(this).find(':first-child').attr("data-link");
+    var Blank = $(this).find(':first-child').data("link");
     // var _urlTemp = _$this.attr("data-url");
-    if (Blank === "_blank") {
+    if (Blank == "_blank") {
       window.open(ref, '_blank');
     } else {
         if(typeof ref != "undefined" && ref != null && ref != "")
@@ -261,7 +262,9 @@ $(function() {
         //   result=result[1]
         //   result = result.replace(/<script[^>]*>(?:(?!<\/script>)[^])*<\/script>/ig,""); //удалить
           
-          var aref = $(this).data("href");          
+          var aref = $(this).data("href");
+        //   var blank = $(this).data("blank");
+                    
           var flo = $(this).parent().attr('id');
           // flo = flo.replace(/.*\#/, '');// id элемента
           if (flo == 'undefined'){flo='';}else{flo='#'+ flo;}
@@ -271,7 +274,7 @@ $(function() {
         //   с якорем
         //   $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + '</a><a class="flo" href="' + flo + '" title = "Найти на карте сайта">&#10059;</a></li>');
         //   без якоря
-          $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  height="80">' + result + '</li>');
+          $(".search_result").append('<li><a href="' + aref + '"' + blank +' ><img src="' + aimg +'"  height="80">' + result + '</li>');
     
         }
       });

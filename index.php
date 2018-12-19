@@ -4991,6 +4991,16 @@ include 'inc-version-css-js.php';
                                                             </TD>                                                                            
                                                             
                                                         </TR>
+                                                        <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->
+                                                        <TR>
+                                                            <TD data-tooltip="МДМ-КОМПЛЕКТ" class="hover mapsite" id="flo-mdm" >
+                                                                <!-- <p  onclick=\'window.open("http://publications.blum.com/2016/catalogue/ru/", "_blank")\' data-img="./dist/images/no-foto.png" id="floating155">Blum<span> <br>~Blum</span></p> -->
+                                                                <!-- <p   onclick='window.open("http://www.old.mdm-complect.ru/Information/catalogs/CatalogMDM-2018/", "_blank")' data-img="./dist/images/no-foto.png" id="mdm">МДМ-КОМПЛЕКТ<span> <br>~mdm</span></p> -->
+                                                                <p   data-href="http://www.old.mdm-complect.ru/Information/catalogs/CatalogMDM-2018/" data-blank='target="_blank"' data-img="./dist/images/no-foto.png" id="mdm">МДМ-КОМПЛЕКТ<span> <br>~mdm</span></p>
+                                                                
+                                                            </TD>                                                                            
+                                                           
+                                                        </TR>
                                                             
                                                     </TABLE>
                                                 </TD>
