@@ -1128,6 +1128,20 @@ include 'inc-left-side-menu-furnitura.php';
                                                                     </p>
                                                                 </td>
                                                             </tr>
+
+                                                            <tr>
+                                                                <div class="main-box clearfix"   >
+                                                                   
+                                                                    <div class="main-box-body clearfix">
+                                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                                            <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                                                                                <source src="./dist/video/movento/blum-bokovoy-stabilizator.mp4" type="video/mp4">
+                                                                            </video>
+                                                                        </div>
+                                                                    </div>                               
+                                                                </div>
+                                                            </tr>
+
                                                             <tr>
                                                                 <td>
                                                                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Обработка ящиков" data-image="./dist/images/MovStab1.png" data-target="#image-gallery">
