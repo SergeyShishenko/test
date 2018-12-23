@@ -31,13 +31,8 @@
     
     </script>
    
-    <script>
-    // Перезагрузить текущую страницу, без использования кэша     
-    //$(document).ready(function(){ window.location.reload(true);}
-   </script>
-//    <script>
+  
 
-//     </script>
 
         <script>
             if (!name) {name = new Date ().getTime (); location.reload (true)}

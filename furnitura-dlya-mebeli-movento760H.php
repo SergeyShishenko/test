@@ -13,108 +13,6 @@ $item_dlya_mebeli_Class = 'active';
 $item_universalnaya_Class = '';
 $item_katalogi_Class = '';
 include 'inc-head2.php';
-echo '        
-        
-        
-        <style>
-          .btn:focus,
-        .btn:active,
-        button:focus,
-        button:active {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-
-        #image-gallery .modal-footer {
-            display: block;
-        }
-
-        .thumb {
-            margin-top: 7.5px;
-            margin-bottom: 7.5px;
-            padding-right: 7.5px;
-            padding-left: 7.5px;
-            text-align: center;
-        }
-
-       
-         .modal-dialog {
-             width: 80%;
-            
-           
-        } 
-
-        /* .row .row {
-            margin-right: 0;
-            margin-left: 0;
-        } */
-
-        .thumbnail {
-            border: none;
-        }
-        .modal-header .close {
-         margin-top: -20px;
-        }
-        #image-gallery-image{float:none;}
-
-        .embed-responsive, #carousel{
-       
-        box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
-        border-radius: 4px;
-        }
-        #carousel{background: #fff;}
-        a, a:active, a:focus { outline: none; }
-
-        input, textarea {outline:none;}
-        input:active, textarea:active {outline:none;}
-        :focus {outline:none;}
-        textarea {resize:none;}
-        textarea {resize:vertical;}
-        textarea {resize:horizontal;}
-
-        #myTab a {
-            
-            border-left: none;
-        }
-        #myTab li.active a{
-            
-            border-left: 1px solid #dddddd;
-        }
-
-        .overlay {
-            height: 15px;
-        }
-
-
-        .outerP {
-            
-            text-align: center;
-            vertical-align: middle;
-            position: relative;
-           
-        }
-        .innerP {
-            
-
-            height: 100px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    right:0;
-    padding:0 20px 0 20px;
-            
-        }
-        #carousel img{height: 600px;}
-        .blum{color: #ff671f;}
-    </style>  
-
-
-    
-        
-        ';
-
-
 include 'inc-header-menu3.php';
 include 'inc-left-side-menu-furnitura.php';
 ?> 
@@ -332,14 +230,14 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
                                                             <td>1</td>
                                                             <td>760H3500SU</td>
                                                             <td>Оцинкованный</td>
                                                             <td>MOVENTO с BLUMOTION S, Направляющие для монтажа ко дну корпуса, левая/правая, 40 кг, НД=350мм, под замки</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImg2.png" class="" alt="Замки" title=""></td>
                                                             <td>1</td>
                                                             <td>T51.7601</td>
                                                             <td>Оранжевый</td>
@@ -376,14 +274,14 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
                                                             <td>1</td>
                                                             <td>760H4000SU</td>
                                                             <td>Оцинкованный</td>
                                                             <td>MOVENTO с BLUMOTION S, Направляющие для монтажа ко дну корпуса, левая/правая, 40 кг, НД=400мм, под замки</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImg2.png" class="" alt="Замки" title=""></td>
                                                             <td>1</td>
                                                             <td>T51.7601</td>
                                                             <td>Оранжевый</td>
@@ -419,14 +317,14 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
                                                             <td>1</td>
                                                             <td>760H4500SU</td>
                                                             <td>Оцинкованный</td>
                                                             <td>MOVENTO с BLUMOTION S, Направляющие для монтажа ко дну корпуса, левая/правая, 40 кг, НД=450мм, под замки</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImg2.png" class="" alt="Замки" title=""></td>
                                                             <td>1</td>
                                                             <td>T51.7601</td>
                                                             <td>Оранжевый</td>
@@ -462,14 +360,14 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
                                                             <td>1</td>
                                                             <td>760H5000SU</td>
                                                             <td>Оцинкованный</td>
                                                             <td>MOVENTO с BLUMOTION S, Направляющие для монтажа ко дну корпуса, левая/правая, 40 кг, НД=500мм, под замки</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImg2.png" class="" alt="Замки" title=""></td>
                                                             <td>1</td>
                                                             <td>T51.7601</td>
                                                             <td>Оранжевый</td>
@@ -507,14 +405,14 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
                                                             <td>1</td>
                                                             <td>760H3500SU</td>
                                                             <td>Оцинкованный</td>
                                                             <td>MOVENTO с BLUMOTION S, Направляющие для монтажа ко дну корпуса, левая/правая, 40 кг, НД=350мм, под замки</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImg2.png" class="" alt="Замки" title=""></td>
                                                             <td>1</td>
                                                             <td>T51.7601</td>
                                                             <td>Оранжевый</td>
@@ -539,14 +437,14 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
                                                             <td>1</td>
                                                             <td>760H4000SU</td>
                                                             <td>Оцинкованный</td>
                                                             <td>MOVENTO с BLUMOTION S, Направляющие для монтажа ко дну корпуса, левая/правая, 40 кг, НД=400мм, под замки</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImg2.png" class="" alt="Замки" title=""></td>
                                                             <td>1</td>
                                                             <td>T51.7601</td>
                                                             <td>Оранжевый</td>
@@ -571,14 +469,14 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
                                                             <td>1</td>
                                                             <td>760H4500SU</td>
                                                             <td>Оцинкованный</td>
                                                             <td>MOVENTO с BLUMOTION S, Направляющие для монтажа ко дну корпуса, левая/правая, 40 кг, НД=450мм, под замки</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImg2.png" class="" alt="Замки" title=""></td>
                                                             <td>1</td>
                                                             <td>T51.7601</td>
                                                             <td>Оранжевый</td>
@@ -603,14 +501,14 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImgU1.png" class="" alt="Направляющие" title=""></td>
                                                             <td>1</td>
                                                             <td>760H5000SU</td>
                                                             <td>Оцинкованный</td>
                                                             <td>MOVENTO с BLUMOTION S, Направляющие для монтажа ко дну корпуса, левая/правая, 40 кг, НД=500мм, под замки</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/images/ArticulImg2.png" class="" alt="Замки" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulImg2.png" class="" alt="Замки" title=""></td>
                                                             <td>1</td>
                                                             <td>T51.7601</td>
                                                             <td>Оранжевый</td>

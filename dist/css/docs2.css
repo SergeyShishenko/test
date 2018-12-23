@@ -1,0 +1,89 @@
+.btn:focus,
+.btn:active,
+button:focus,
+button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#image-gallery .modal-footer {
+    display: block;
+}
+
+.thumb {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+    text-align: center;
+}
+
+
+ .modal-dialog {
+     width: 80%;
+    
+   
+} 
+
+/* .row .row {
+    margin-right: 0;
+    margin-left: 0;
+} */
+
+.thumbnail {
+    border: none;
+}
+.modal-header .close {
+ margin-top: -20px;
+}
+#image-gallery-image{float:none;}
+
+
+
+a, a:active, a:focus { outline: none; }
+
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
+
+#myTab a {
+    
+    border-left: none;
+}
+#myTab li.active a{
+    
+    border-left: 1px solid #dddddd;
+}
+
+.overlay {
+    height: 15px;
+}
+
+
+.outerP {
+    
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+   
+}
+.innerP {
+    
+
+    height: 100px;
+position: absolute;
+top: 0;
+bottom: 0;
+margin: auto 0;
+right:0;
+padding:0 20px 0 20px;
+    
+}
+.embed-responsive, #carousel,#carousel2,#carousel3{box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);border-radius: 4px;}
+#carousel,#carousel2,#carousel3{background: #fff;}
+#carousel img, #carousel2 img,#carousel3 img{height: 600px;}
+
+.blum{color: #ff671f;}

@@ -258,7 +258,7 @@ elseif (isset($_POST['addids'])) {
             // mysqli_query($dbconn,$sql);
             if(mysqli_query($dbconn,$sql))
                         { 
-                            echo "Запись удалена ".$_POST['del'];
+                            echo "Запись удалена ID-".$_POST['del'];
                          }
                         else{//вывод ошибки                                        
                             header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.$sql." -> ".mysqli_error($dbconn));

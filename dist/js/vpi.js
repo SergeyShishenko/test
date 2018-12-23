@@ -126,7 +126,7 @@ $('body').on('click', 'td.remove img', function() {
         $('#checkout').addClass('dis');
         // $('#checkoutd').addClass('dis');
         $('#cartempty').removeClass('dis');
-        checkoutd
+        // checkoutd
     }else{
         $('#checkout').removeClass('dis');
         $('#cartempty').addClass('dis');
