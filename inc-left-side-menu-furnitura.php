@@ -193,12 +193,12 @@
                                             </li>                                                                                    
                                         </ul>
                                     </li>  
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#styazhki">СТЯЖКИ</a>
+                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16.php#styazhka">СТЯЖКИ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-16-mm">5000502-07-701 стяжка эксцентриковая односторонняя для 16 мм</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16.php">5000502-07-701 стяжка эксцентриковая односторонняя для 16 мм</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-16-mm">5000502-07-702 стяжка эксцентриковая двухсторонняя для 16 мм</a>
-                                            </li> 
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php">5000502-07-702 стяжка эксцентриковая двухсторонняя для 16 мм</a>
+                                            </li>                                             
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm">5000502-07-703 стяжка эксцентриковая односторонняя для 24 мм</a>
                                             </li> 
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm">5000502-07-704 стяжка эксцентриковая двухсторонняя для 24 мм</a>

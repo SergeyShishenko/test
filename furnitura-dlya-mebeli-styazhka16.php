@@ -20,11 +20,11 @@ include 'inc-left-side-menu-furnitura.php';
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
                    
 
-                    <article    id="sistemy-napravlyayushchih-movento">
+                    <article    id="styazhki-ekscentrikovye">
                       <section >
                         <div class="page-header"     >
                           <h1 itemprop="name" id="styazhka">Стяжки эксцентриковые</h1>
-                          <h2 > Эксцентрик для плит толщиной 16 мм</h2>
+                          <h2 >Стяжка эксцентриковая односторонняя MINIFIX, для плиты 16 мм</h2>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
@@ -53,7 +53,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">5000502-07-701 Cтяжка эксцентриковая односторонняя для плит 16 мм</h3>
+                                                <h3 class="blum">5000502-07-701 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 16 мм</h3>
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
                                                         <thead>
@@ -305,7 +305,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 
                                                     <td>34,5</td>
                                                     <td>8,0</td>
-                                                    <td><span class="boldstyle">EC02ZL</span></td>
+                                                    <td><span class="boldstyle">TE03</span></td>
                                                     </tr>
 
 
@@ -447,11 +447,12 @@ include 'inc-left-side-menu-furnitura.php';
 
                         <ul class="nav bs-sidenav">
                             
-                        <li><a href="#styazhka">Стяжки эксцентриковые</a>
+                        <li><a href="#styazhki-ekscentrikovye">Стяжки эксцентриковые</a>
                                 <ul class="nav">
-                                    <li><a href="#movento-s-blumotion-760h-766h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H | 766H</a></li>                             
-                                    <li><a href="furnitura-dlya-mebeli-movento760H.php#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li> 
-                                    <li><a href="furnitura-dlya-mebeli-movento760H-shelf.php#movento-s-blumotion-760h-shelf">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – выдвижная полка</a></li>                                                                                                
+                                    <li><a href="#styazhka">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 16 мм</a></li> 
+                                    <li><a href="furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php#styazhka16-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 16 мм</a></li>                            
+                                    <!-- <li><a href="furnitura-dlya-mebeli-movento760H.php#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li> 
+                                    <li><a href="furnitura-dlya-mebeli-movento760H-shelf.php#movento-s-blumotion-760h-shelf">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – выдвижная полка</a></li>                                                                                                 -->
                                 </ul>
                             </li>                           
                         </ul>
