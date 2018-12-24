@@ -35,9 +35,15 @@ define('EOL',(PHP_SAPI == 'cli') ? PHP_EOL : '<br />');
 
 date_default_timezone_set('Europe/Moscow');
 
+if (file_exists(dirname($_SERVER['DOCUMENT_ROOT']).'/DATA/TABLES/configDB.php')) {
+    require_once(dirname($_SERVER['DOCUMENT_ROOT']).'/DATA/TABLES/configDB.php');// для сайта !!!!!!!
+}
+else {
+    require_once($_SERVER['DOCUMENT_ROOT'].'/DATA/TABLES/configDB.php');// для localhost !!!!!!!
+}
 
 // require_once(dirname($_SERVER['DOCUMENT_ROOT']).'/DATA/TABLES/configDB.php');// для сайта !!!!!!!
-require_once($_SERVER['DOCUMENT_ROOT'].'/DATA/TABLES/configDB.php');// для localhost !!!!!!!
+// require_once($_SERVER['DOCUMENT_ROOT'].'/DATA/TABLES/configDB.php');// для localhost !!!!!!!
 $sess_id=session_id();
 $dbconn=dbconnect();
 if (!mysqli_set_charset($dbconn, "utf8")) {
@@ -53,8 +59,17 @@ $s_id=$row_user['s_id'];
 
 if(isset($_POST['ids']))//генерация xls
 {
+
+    if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php')) {
+        require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
+    }
+    else {
+        require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
+    }
+
+
     // require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
-    require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
+   // require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
     $ids=$_POST['ids'];
     $data =  array();
     // $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
@@ -94,8 +109,17 @@ if(isset($_POST['ids']))//генерация xls
     // генерация
         // echo date('H:i:s') , " Загрузка из шаблона Excel5" , EOL;
         $objReader = PHPExcel_IOFactory::createReader('Excel5');
+
+        if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/VPI_template.xls")) {
+            $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/VPI_template.xls");// для сайта !!!!!!!
+        }
+        else {
+            $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/VPI_template.xls");// для localhost !!!!!!!
+        }
+    
+
         // $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/VPI_template.xls");// для сайта !!!!!!!
-        $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/VPI_template.xls");// для localhost !!!!!!!
+        // $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/VPI_template.xls");// для localhost !!!!!!!
 
         // echo date('H:i:s') , "Добавление новых данных в шаблон" , EOL;
         // $data = array();
@@ -127,9 +151,16 @@ if(isset($_POST['ids']))//генерация xls
             $row = $baseRow + $r;
             $objPHPExcel->getActiveSheet()->insertNewRowBefore($row,1);
 
+            if (file_exists($_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'])) {
+                $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для сайта !!!!!!!
+            }
+            else {
+                $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
+            }
+
             // $sheet->getColumnDimension('K')->setWidth(40); 
             // $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для сайта !!!!!!!
-            $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
+            // $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
 
             // $objPHPExcel->getActiveSheet()->setCellValue('D'.$row, $r+1)
             $objPHPExcel->getActiveSheet()->setCellValue('E'.$row, $dataRow['articul_furnitur_obj'])
@@ -176,8 +207,15 @@ if(isset($_POST['ids']))//генерация xls
         // echo dirname(__FILE__)."\/vpi-".date('m-d-Y').".xls", EOL;
         $fname="vpi-".date('m-d-Y-H-i-s').".xls";
 
+        if (file_exists($_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'])) {
+            $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
+        }
+        else {
+            $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
+        }
+
         // $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
-        $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
+        // $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
         echo "./vpi/".$fname;
         // echo date('H:i:s') , " Файл, записанный из " , str_replace('.php', '.xls', pathinfo(__FILE__, PATHINFO_BASENAME)) , EOL;
 

@@ -51,8 +51,17 @@ if (!mysqli_set_charset($dbconn, "utf8")) {
 
 //{die('Ошибка подключения к серверу баз данных.');}
 
+
+if (file_exists($_SERVER['DOCUMENT_ROOT'].'/vpi/cart.php')) {
+    require_once($_SERVER['DOCUMENT_ROOT'].'/vpi/cart.php');// для сайта !!!!!!!
+}
+else {
+    require_once($_SERVER['DOCUMENT_ROOT'].'/www/vpi/cart.php');// для localhost
+}
+
+
 //   require_once($_SERVER['DOCUMENT_ROOT'].'/vpi/cart.php');// для сайта !!!!!!!
-  require_once($_SERVER['DOCUMENT_ROOT'].'/www/vpi/cart.php');// для localhost
+  //require_once($_SERVER['DOCUMENT_ROOT'].'/www/vpi/cart.php');// для localhost
   mysqli_close($dbconn);    
  
  
