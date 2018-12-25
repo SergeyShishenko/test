@@ -199,9 +199,9 @@
                                             </li>
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php">5000502-07-702 стяжка эксцентриковая двухсторонняя для 16 мм</a>
                                             </li>                                             
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm">5000502-07-703 стяжка эксцентриковая односторонняя для 24 мм</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka24.php">5000502-07-703 стяжка эксцентриковая односторонняя для 24 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm">5000502-07-704 стяжка эксцентриковая двухсторонняя для 24 мм</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php">5000502-07-704 стяжка эксцентриковая двухсторонняя для 24 мм</a>
                                             </li> 
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm">5000502-07-707 стяжка эксцентриковая усиленная &Oslash;20 для 16 мм</a>
                                             </li> 

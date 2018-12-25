@@ -343,6 +343,8 @@ include 'inc-left-side-menu-furnitura.php';
                                 <ul class="nav">
                                     <li><a href="furnitura-dlya-mebeli-styazhka16.php#styazhka">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 16 мм</a></li> 
                                     <li><a href="#styazhka16-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 16 мм</a></li> 
+                                    <li><a href="furnitura-dlya-mebeli-styazhka24.php#styazhka24">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 24 мм</a></li>
+                                    <li><a href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php#styazhka24-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 24 мм</a></li>  
                                                                 
                                     <!-- <li><a href="furnitura-dlya-mebeli-movento760H.php#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li> 
                                     <li><a href="furnitura-dlya-mebeli-movento760H-shelf.php#movento-s-blumotion-760h-shelf">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – выдвижная полка</a></li>                                                                                                 -->

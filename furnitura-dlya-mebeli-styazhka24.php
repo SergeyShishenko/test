@@ -23,8 +23,8 @@ include 'inc-left-side-menu-furnitura.php';
                     <article    id="styazhki-ekscentrikovye">
                       <section >
                         <div class="page-header"     >
-                          <h1 itemprop="name" id="styazhka">Стяжки эксцентриковые</h1>
-                          <h2 >Стяжка эксцентриковая односторонняя MINIFIX, для плиты 16 мм</h2>
+                          <h1 itemprop="name" id="styazhka24">Стяжки эксцентриковые</h1>
+                          <h2 >Стяжка эксцентриковая односторонняя MINIFIX, для плиты 24 мм</h2>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
@@ -53,7 +53,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">5000502-07-701 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 16 мм</h3>
+                                                <h3 class="blum">5000502-07-703 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 24 мм</h3>
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
                                                         <thead>
@@ -77,11 +77,11 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody id="calcresult">
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulStyazhka-EC02ZL.png" class="" alt="Эксцентрик" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulStyazhka-EC04ZL.png" class="" alt="Эксцентрик" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="12">EC02ZL</td>
+                                                            <td class="animated" data-objfurnid="14">EC04ZL</td>
                                                             <td>Металл</td> 
-                                                            <td colspan="3">Эксцентрик для плит толщиной 16 мм</td>
+                                                            <td colspan="3">Эксцентрик для плит толщиной 24 мм</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/ArticulShtok-TE03.png" class="" alt="Шток" title=""></td>
@@ -114,13 +114,13 @@ include 'inc-left-side-menu-furnitura.php';
                                         <div class="carousel-inner">
 
                                             <div class="item active">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Эксцентрик для плит толщиной 16 мм" data-image="./dist/filesdb/images/Styazhka-EC02ZL.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Эксцентрик для плит толщиной 24 мм" data-image="./dist/filesdb/images/Styazhka-EC04ZL.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Styazhka-EC02ZL.png"
-                                                        data-src="./dist/filesdb/images/Styazhka-EC02ZL.png"
+                                                        src="./dist/filesdb/images/Styazhka-EC04ZL.png"
+                                                        data-src="./dist/filesdb/images/Styazhka-EC04ZL.png"
                                                         class="center-block   img-rounded    bar "
                                                         data-toggle="modal"                                                                                                                    
-                                                        alt="Эксцентрик для плит толщиной 16 мм"
+                                                        alt="Эксцентрик для плит толщиной 24 мм"
                                                         data-pdf=""                                                    
                                                     >
                                                 </a>
@@ -206,10 +206,10 @@ include 'inc-left-side-menu-furnitura.php';
 
 
                                                     <tr>
-                                                    <td>16</td>
+                                                    <td>24</td>
+                                                    <td>17,0</td>
                                                     <td>12,5</td>
-                                                    <td>8,0</td>
-                                                    <td><span class="boldstyle">EC02ZL</span></td>
+                                                    <td><span class="boldstyle">EC04ZL</span></td>
                                                     </tr>
 
 
@@ -304,7 +304,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <tr>
                                                 
                                                     <td>34,5</td>
-                                                    <td>8,0</td>
+                                                    <td>12,5</td>
                                                     <td><span class="boldstyle">TE03</span></td>
                                                     </tr>
 
@@ -449,10 +449,10 @@ include 'inc-left-side-menu-furnitura.php';
                             
                         <li><a href="#styazhki-ekscentrikovye">Стяжки эксцентриковые</a>
                                 <ul class="nav">
-                                    <li><a href="#styazhka">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 16 мм</a></li> 
+                                    <li><a href="furnitura-dlya-mebeli-styazhka16.php#styazhka">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 16 мм</a></li> 
                                     <li><a href="furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php#styazhka16-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 16 мм</a></li> 
-                                    <li><a href="furnitura-dlya-mebeli-styazhka24.php#styazhka24">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 24 мм</a></li>
-                                    <li><a href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php#styazhka24-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 24 мм</a></li>                             
+                                    <li><a href="#styazhka24">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 24 мм</a></li>
+                                    <li><a href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php#styazhka24-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 24 мм</a></li>                           
                                     <!-- <li><a href="furnitura-dlya-mebeli-movento760H.php#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li> 
                                     <li><a href="furnitura-dlya-mebeli-movento760H-shelf.php#movento-s-blumotion-760h-shelf">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – выдвижная полка</a></li>                                                                                                 -->
                                 </ul>

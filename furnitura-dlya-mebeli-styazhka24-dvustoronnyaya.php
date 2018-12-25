@@ -23,8 +23,8 @@ include 'inc-left-side-menu-furnitura.php';
                     <article    id="styazhki-ekscentrikovye">
                       <section >
                         <div class="page-header"     >
-                          <h1 itemprop="name" id="styazhka">Стяжки эксцентриковые</h1>
-                          <h2 >Стяжка эксцентриковая односторонняя MINIFIX, для плиты 16 мм</h2>
+                          <h1 itemprop="name" id="styazhka24-dvustoronnyaya">Стяжки эксцентриковые</h1>
+                          <h2 >Стяжка эксцентриковая двухсторонняя MINIFIX, для плиты 24 мм</h2>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
@@ -53,7 +53,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">5000502-07-701 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 16 мм</h3>
+                                                <h3 class="blum">5000502-07-704 стяжка эксцентриковая двухсторонняя MINIFIX, толщина плиты 24 мм</h3>
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
                                                         <thead>
@@ -77,26 +77,26 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody id="calcresult">
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulStyazhka-EC02ZL.png" class="" alt="Эксцентрик" title=""></td>
-                                                            <td>1</td>
-                                                            <td class="animated" data-objfurnid="12">EC02ZL</td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulStyazhka-EC04ZL.png" class="" alt="Эксцентрик" title=""></td>
+                                                            <td>2</td>
+                                                            <td class="animated" data-objfurnid="15">EC04ZL</td>
                                                             <td>Металл</td> 
-                                                            <td colspan="3">Эксцентрик для плит толщиной 16 мм</td>
+                                                            <td colspan="3">Эксцентрик для плит толщиной 24 мм</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulShtok-TE03.png" class="" alt="Шток" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulshtok-dvustoronniy.png" class="" alt="Шток" title=""></td>
                                                             <td>1</td>
-                                                            <td>TE03</td>
+                                                            <td>TE11</td>
                                                             <td>Металл</td>
-                                                            <td>Шток эксцентрика М6 (34&nbsp;мм)</td>
+                                                            <td>Шток эксцентрика двусторонний (34&nbsp;мм)</td>
                                                         </tr>
-                                                        <tr   >
+                                                        <!-- <tr   >
                                                                 <td><img src="./dist/filesdb/images/pagevpi/ArticulFutorka-BU12.png" class="" alt="Футорка" title=""></td>
                                                                 <td>1</td>
                                                                 <td class="" >BU12 (82-02)</td>
                                                                 <td>Желтый</td> 
                                                                 <td colspan="3">Футорка металлическая с распорным шариком M6</td>
-                                                        </tr>
+                                                        </tr> -->
                                                       
                                                         
                                                         </tbody>
@@ -114,22 +114,22 @@ include 'inc-left-side-menu-furnitura.php';
                                         <div class="carousel-inner">
 
                                             <div class="item active">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Эксцентрик для плит толщиной 16 мм" data-image="./dist/filesdb/images/Styazhka-EC02ZL.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Эксцентрик для плит толщиной 24 мм" data-image="./dist/filesdb/images/Styazhka-EC04ZL.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Styazhka-EC02ZL.png"
-                                                        data-src="./dist/filesdb/images/Styazhka-EC02ZL.png"
+                                                        src="./dist/filesdb/images/Styazhka-EC04ZL.png"
+                                                        data-src="./dist/filesdb/images/Styazhka-EC04ZL.png"
                                                         class="center-block   img-rounded    bar "
                                                         data-toggle="modal"                                                                                                                    
-                                                        alt="Эксцентрик для плит толщиной 16 мм"
+                                                        alt="Эксцентрик для плит толщиной 24 мм"
                                                         data-pdf=""                                                    
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/Styazhka1-960x640.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/shtok-dvustoronniy3.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Styazhka1-960x640.png"
-                                                        data-src="./dist/filesdb/images/Styazhka1-960x640.png"
+                                                        src="./dist/filesdb/images/shtok-dvustoronniy3.png"
+                                                        data-src="./dist/filesdb/images/shtok-dvustoronniy3.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Необходимое пространство"                                                        
@@ -137,17 +137,17 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/Styazhka2-960x640.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/shtok-dvustoronniy5.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Styazhka2-960x640.png"
-                                                        data-src="./dist/filesdb/images/Styazhka2-960x640.png"
+                                                        src="./dist/filesdb/images/shtok-dvustoronniy5.png"
+                                                        data-src="./dist/filesdb/images/shtok-dvustoronniy5.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Информация для заказа"                                                        
                                                     >
                                                 </a>
                                             </div>
-                                            <div class="item">
+                                            <!-- <div class="item">
                                                 <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/Styazhka3-960x640.png" data-target="#image-gallery">
                                                     <img  
                                                         src="./dist/filesdb/images/Styazhka3-960x640.png" 
@@ -168,7 +168,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         alt="Проектирование"                                                        
                                                     >
                                                 </a>
-                                            </div>
+                                            </div> -->
                                             
                                         </div>
                                         <!-- Элементы управления -->
@@ -206,10 +206,10 @@ include 'inc-left-side-menu-furnitura.php';
 
 
                                                     <tr>
-                                                    <td>16</td>
+                                                    <td>24</td>
+                                                    <td>17,0</td>
                                                     <td>12,5</td>
-                                                    <td>8,0</td>
-                                                    <td><span class="boldstyle">EC02ZL</span></td>
+                                                    <td><span class="boldstyle">EC04ZL</span></td>
                                                     </tr>
 
 
@@ -224,17 +224,17 @@ include 'inc-left-side-menu-furnitura.php';
                             <!-- /часть --> 
 
                             <!-- часть -->
-                                <h2 >Шток эксцентрика М6 (34 мм)</h2>                         
+                                <h2 >Шток эксцентрика двусторонний (34 мм)</h2>                         
 
                                 <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
                                     <div id="carousel2" class="carousel slide" data-ride="carousel" style="display: inline-block;">
                                         <div class="carousel-inner">
 
                                             <div class="item active">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Шток эксцентрика М6 (34 мм)" data-image="./dist/filesdb/images/Shtok-TE03.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Шток эксцентрика М6 (34 мм)" data-image="./dist/filesdb/images/shtok-dvustoronniy1.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Shtok-TE03.png"
-                                                        data-src="./dist/filesdb/images/Shtok-TE03.png"
+                                                        src="./dist/filesdb/images/shtok-dvustoronniy1.png"
+                                                        data-src="./dist/filesdb/images/shtok-dvustoronniy1.png"
                                                         class="center-block   img-rounded    bar "
                                                         data-toggle="modal"                                                                                                                    
                                                         alt="Шток эксцентрика М6 (34 мм)"
@@ -243,10 +243,10 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/Shtok1-960x640.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/shtok-dvustoronniy2.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Shtok1-960x640.png"
-                                                        data-src="./dist/filesdb/images/Shtok1-960x640.png"
+                                                        src="./dist/filesdb/images/shtok-dvustoronniy2.png"
+                                                        data-src="./dist/filesdb/images/shtok-dvustoronniy2.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Необходимое пространство"                                                        
@@ -254,10 +254,10 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/Shtok2-960x640.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/shtok-dvustoronniy4.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Shtok2-960x640.png"
-                                                        data-src="./dist/filesdb/images/SShtok2-960x640.png"
+                                                        src="./dist/filesdb/images/shtok-dvustoronniy4.png"
+                                                        data-src="./dist/filesdb/images/shtok-dvustoronniy4.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Информация для заказа"                                                        
@@ -296,6 +296,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <tr>
                                                     
                                                     <th>L,<br>мм</th>
+                                                    <th>L1,<br>мм</th>
                                                     <th>I,<br>мм</th>
                                                     <th>Артикул</th>
                                                     </tr>
@@ -304,8 +305,9 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <tr>
                                                 
                                                     <td>34,5</td>
-                                                    <td>8,0</td>
-                                                    <td><span class="boldstyle">TE03</span></td>
+                                                    <td>80</td>
+                                                    <td>12,5</td>
+                                                    <td><span class="boldstyle">TE11</span></td>
                                                     </tr>
 
 
@@ -317,117 +319,7 @@ include 'inc-left-side-menu-furnitura.php';
                                     </div>
 
                                 </div>
-                            <!-- /часть --> 
-
-                            <!-- часть -->
-                                 <h2 >Футорка металлическая с распорным шариком <br>для штоков стяжки эксцентриковой и конической с резьбой М6</h2>                         
-                                 
-                                <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
-                                    <div id="carousel3" class="carousel slide" data-ride="carousel" style="display: inline-block;">
-                                        <div class="carousel-inner">
-
-                                            <div class="item active">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Футорка металлическая с распорным шариком M6" data-image="./dist/filesdb/images/Futorka-BU12.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/Futorka-BU12.png"
-                                                        data-src="./dist/filesdb/images/Futorka-BU12.png"
-                                                        class="center-block   img-rounded    bar "
-                                                        data-toggle="modal"                                                                                                                    
-                                                        alt="Футорка металлическая с распорным шариком M6"
-                                                        data-pdf=""                                                    
-                                                    >
-                                                </a>
-                                            </div>
-                                            <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/Futorka1-960x640.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/Futorka1-960x640.png"
-                                                        data-src="./dist/filesdb/images/Futorka1-960x640.png"
-                                                        class="center-block   img-rounded     bar "
-                                                        data-toggle="modal"                                                                                                                          
-                                                        alt="Необходимое пространство"                                                        
-                                                    >
-                                                </a>
-                                            </div>
-                                            <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/Futorka2-960x640.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/Futorka2-960x640.png"
-                                                        data-src="./dist/filesdb/images/Futorka2-960x640.png"
-                                                        class="center-block   img-rounded     bar "
-                                                        data-toggle="modal"                                                                                                                          
-                                                        alt="Информация для заказа"                                                        
-                                                    >
-                                                </a>
-                                            </div>
-                                        
-                                            
-                                        </div>
-                                        <!-- Элементы управления -->
-                                        <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
-                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                            <span class="sr-only">Предыдущий</span>
-                                        </a>
-                                        <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
-                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                            <span class="sr-only">Следующий</span>
-                                        </a>
-                                    </div>
-                                </div> 
-
-                                <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
-                                    <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
-                                                border: 1px solid rgb(221, 221, 221);
-                                                box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
-                                                border-radius: 4px;
-                                                padding: 15px;
-                                                ">
-
-                                        <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
-                                            <div class="row">                                                
-                                                <table class="table table-striped table-responsive">
-                                                    
-                                                    <tbody> 
-
-                                                        <tr>
-                                                        <th>M,<br>мм</th>
-                                                        <th>Цвет</th>
-                                                        <th>L,<br>мм</th>
-                                                        <th>D,<br>мм</th>
-                                                        <th>S,<br>мм</th>
-                                                        <th>E,<br>мм</th>
-                                                        <th>Артикул</th>
-                                                        </tr>
-
-                                                       
-                                                        <tr>
-                                                        <td>6</td>
-                                                        <td>желтый</td>
-                                                        <td>12</td>
-                                                        <td>8</td>
-                                                        <td>8</td>
-                                                        <td>9</td>
-                                                        <td><span class="boldstyle">BU12 (82-02)</span></td>
-                                                        </tr>
-
-
-                                                    </tbody>
-
-                                                </table>
-                                            </div>                              
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            <!-- /часть --> 
-
-
-
-
-  
-                         
-                            
+                            <!-- /часть -->  
                         </div> <!--/bs-callout bs-callout-warning cont/-->
                     </section> 
                 </article>
@@ -449,10 +341,11 @@ include 'inc-left-side-menu-furnitura.php';
                             
                         <li><a href="#styazhki-ekscentrikovye">Стяжки эксцентриковые</a>
                                 <ul class="nav">
-                                    <li><a href="#styazhka">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 16 мм</a></li> 
+                                    <li><a href="furnitura-dlya-mebeli-styazhka16.php#styazhka">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 16 мм</a></li> 
                                     <li><a href="furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php#styazhka16-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 16 мм</a></li> 
                                     <li><a href="furnitura-dlya-mebeli-styazhka24.php#styazhka24">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 24 мм</a></li>
-                                    <li><a href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php#styazhka24-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 24 мм</a></li>                             
+                                    <li><a href="#styazhka24-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 24 мм</a></li>  
+                                                                
                                     <!-- <li><a href="furnitura-dlya-mebeli-movento760H.php#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li> 
                                     <li><a href="furnitura-dlya-mebeli-movento760H-shelf.php#movento-s-blumotion-760h-shelf">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – выдвижная полка</a></li>                                                                                                 -->
                                 </ul>
