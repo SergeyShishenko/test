@@ -95,7 +95,7 @@ $("body").on("click","[id^=\'each_addvpi\']",function() {// alert('ВПИ');
  // alert($('#add_vpi_count').data("objfurn"));
     $('#loading1').show();
     
-
+    var count_all=0;
     var calcresult=$("#calcresult > tr:not(.dis) > td.animated");
     calcresult.each(function( index ) {// заполнение массива
     var add_vpi_count = $(this).parent().find('td.quantity > div > div > input');
@@ -103,23 +103,24 @@ $("body").on("click","[id^=\'each_addvpi\']",function() {// alert('ВПИ');
     if (count>0)
     { console.log( index + ": objFurnId " + $( this ).data('objfurnid') + '; Количество: ' +count  );  
       add_ids_list.push($( this ).data('objfurnid'),count);
+      count_all=count_all+count;
     }
-    count=0;
+    
     });
 //   return false;
-
-     var cartcontent_vis = $('#header #cart .content').css('display');
-//   загружаем страницу и передаем значения, используя HTTP POST запрос       
-    $.post('vpi/VPI_template.php', {'addids[]': add_ids_list}, function(data) { 
-   
-    $('#vpi').html(data);
-    if (cartcontent_vis=="block"){$('#header #cart .content').show();}
+    if(count_all>0)
+        {var cartcontent_vis = $('#header #cart .content').css('display');
+        // загружаем страницу и передаем значения, используя HTTP POST запрос       
+        $.post('vpi/VPI_template.php', {'addids[]': add_ids_list}, function(data) { 
     
-    $("[id^=\'vpi_id\']").bootstrapNumber();
-    $('#loading1').hide();      
-    });
+        $('#vpi').html(data);
+        if (cartcontent_vis=="block"){$('#header #cart .content').show();}
+        
+        $("[id^=\'vpi_id\']").bootstrapNumber();
+        $('#loading1').hide();      
+        }); 
+        add_ids_list.length = 0;}
 
-    add_ids_list.length = 0;
     return false;
     
 });
