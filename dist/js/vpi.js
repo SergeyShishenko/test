@@ -60,7 +60,7 @@ $("body").on("click","#checkout",function() { //СГЕНЕРИРОВАТЬ ВЕ�
 
 var add_ids_list = []; // добавление в корзину
 
-$("body").on("click","[id^=\'add_vpi\']",function() {// alert('ВПИ');
+$("body").on("click","[id^=\'addvpi\']",function() {// alert('ВПИ');
 // calcresult
  // alert($('#add_vpi_count').data("objfurn"));
     $('#loading1').show();

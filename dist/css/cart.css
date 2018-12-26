@@ -12,7 +12,7 @@ td.quantity > div > div > .input-group-btn:first-child > .btn, td.quantity > div
 th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div > div >  .input-group-btn:last-child > .btn
 { height: 33px !important;}
 
-[id^='add_vpi_count']{height: 33px;}
+[id^='add_vpi_count']{height: 33px;padding: 0;}
 [id^='vpi_id']{
     width: 70px !important;
      margin-left: -1px;
