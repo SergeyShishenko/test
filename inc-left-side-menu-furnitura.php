@@ -205,9 +205,9 @@
                                             </li> 
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm">5000502-07-707 стяжка эксцентриковая усиленная &Oslash;20 для 16 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-07-750-konfirmat-70h50">5000502-07-750 конфирмат 7.0Х50</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-konfirmat.php#konfirmat">5000502-07-750 конфирмат 7.0Х50</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-07-752-konfirmat-70h70">5000502-07-752 конфирмат 7.0Х70</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-konfirmat.php#konfirmat">5000502-07-752 конфирмат 7.0Х70</a>
                                             </li>                                                                                    
                                         </ul>
                                      </li> 

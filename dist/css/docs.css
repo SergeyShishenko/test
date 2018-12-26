@@ -1340,7 +1340,7 @@ h6,
 .bs-sidebar .nav > li > a:focus {
   text-decoration: none;
   background-color: #e5e3e9;
-  border-right: 1px solid #dbd8e0;
+  /* border-right: 1px solid #dbd8e0; */
 }
 .bs-sidebar .nav > .active > a,
 .bs-sidebar .nav > .active:hover > a,

@@ -87,6 +87,9 @@ padding:0 20px 0 20px;
 #carousel img, #carousel2 img,#carousel3 img{height: 600px;}
 
 .blum{color: #ff671f;}
+.boldstyle {
+    font-weight: 700;
+}
 
 /* отключить кнопку video-detach-button для видео */
 body + div {
