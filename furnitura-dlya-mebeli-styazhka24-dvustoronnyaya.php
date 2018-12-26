@@ -71,7 +71,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </th>
                                                             <th class="">
                                                             
-                                                                <button type="button" id="add_vpi" class="btn btn-primary" style="margin-left: 10px;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button>
+                                                                <button type="button" id="addvpi" class="btn btn-primary" style="margin-left: 10px;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button>
                                                             </th>
                                                         </tr>
                                                         </thead>
