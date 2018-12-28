@@ -23,7 +23,7 @@ include 'inc-left-side-menu-furnitura.php';
                     <article    id="styazhki-ekscentrikovye">
                       <section >
                         <div class="page-header"     >
-                          <h1 itemprop="name" id="styazhka">Стяжки эксцентриковые</h1>
+                          <h1 itemprop="name" id="rafix">Стяжки эксцентриковые</h1>
                           <h2 >Стяжка эксцентриковая односторонняя RAFIX, для плиты 16 мм</h2>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
@@ -79,16 +79,16 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulrafix.png" class="" alt="Эксцентрик" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="12">EC02ZL</td>
+                                                            <td class="animated" data-objfurnid="18">SE54ZNL</td>
                                                             <td>Металл</td> 
-                                                            <td colspan="3">Эксцентрик для плит толщиной 16 мм</td>
+                                                            <td colspan="3">Эксцентрик усиленный в металлическом корпусе 16 мм с бортиком, никель</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulshtokrafix.png" class="" alt="Шток" title=""></td>
                                                             <td>1</td>
-                                                            <td>TE03</td>
+                                                            <td>TI04 CH</td>
                                                             <td>Металл</td>
-                                                            <td>Шток эксцентрика М6 (34&nbsp;мм)</td>
+                                                            <td>Шток эксцентрика усиленного M6</td>
                                                         </tr>
                                                         <tr   >
                                                                 <td><img src="./dist/filesdb/images/pagevpi/ArticulFutorka-BU12.png" class="" alt="Футорка" title=""></td>
@@ -198,18 +198,20 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <tbody> 
 
                                                     <tr>
+                                                    <th>Тип</th>
                                                     <th>Толщина ДСП<br>(A), мм</th>
-                                                    <th>L,<br>мм</th>
                                                     <th>I,<br>мм</th>
+                                                    <th>Цвет</th>
                                                     <th>Артикул</th>
                                                     </tr>
 
 
                                                     <tr>
-                                                    <td>16</td>
-                                                    <td>12,5</td>
-                                                    <td>8,0</td>
-                                                    <td><span class="boldstyle">EC02ZL</span></td>
+                                                    <td>с бортиком</td>
+                                                    <td>16/18</td>
+                                                    <td>8</td>
+                                                    <td>никель</td>
+                                                    <td><span class="boldstyle">SE54ZNL</span></td>
                                                     </tr>
 
 
@@ -294,18 +296,20 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <tbody> 
 
                                                     <tr>
-                                                    
-                                                    <th>L,<br>мм</th>
-                                                    <th>I,<br>мм</th>
                                                     <th>Артикул</th>
+                                                    <th>Для толщины плит,<br>мм</th>
+                                                    <th>Тип штока</th>
+                                                    <th>Тип резьбы</th>
+                                                    
                                                     </tr>
 
 
                                                     <tr>
-                                                
-                                                    <td>34,5</td>
-                                                    <td>8,0</td>
-                                                    <td><span class="boldstyle">TE03</span></td>
+                                                    <td><span class="boldstyle">TI04 CH</span></td>
+                                                    <td>16-28</td>
+                                                    <td>односторонний</td>
+                                                    <td>метрическая</td>
+                                                    
                                                     </tr>
 
 
@@ -449,10 +453,11 @@ include 'inc-left-side-menu-furnitura.php';
                             
                         <li><a href="#styazhki-ekscentrikovye">Стяжки эксцентриковые</a>
                                 <ul class="nav">
-                                    <li><a href="#styazhka">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 16 мм</a></li> 
+                                    <li><a href="furnitura-dlya-mebeli-styazhka.php#styazhka">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 16 мм</a></li> 
                                     <li><a href="furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php#styazhka16-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 16 мм</a></li> 
                                     <li><a href="furnitura-dlya-mebeli-styazhka24.php#styazhka24">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 24 мм</a></li>
-                                    <li><a href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php#styazhka24-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 24 мм</a></li>  
+                                    <li><a href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php#styazhka24-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 24 мм</a></li> 
+                                    <li><a href="#rafix">&#9999;&nbsp;Стяжка эксцентриковая усиленная &Oslash;20 для 16 мм</a></li> 
                                     <li><a href="furnitura-dlya-mebeli-konfirmat.php#konfirmat">&#9999;&nbsp;Конфирматы 7.0х50 и 7.0х70</a></li>                           
                                     <!-- <li><a href="furnitura-dlya-mebeli-movento760H.php#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li> 
                                     <li><a href="furnitura-dlya-mebeli-movento760H-shelf.php#movento-s-blumotion-760h-shelf">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – выдвижная полка</a></li>                                                                                                 -->

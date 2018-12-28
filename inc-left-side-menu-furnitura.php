@@ -195,15 +195,15 @@
                                     </li>  
                                      <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16.php#styazhka">СТЯЖКИ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16.php">5000502-07-701 стяжка эксцентриковая односторонняя для 16 мм</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16.php#styazhka">5000502-07-701 стяжка эксцентриковая односторонняя для 16 мм</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php">5000502-07-702 стяжка эксцентриковая двухсторонняя для 16 мм</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php#styazhka16-dvustoronnyaya">5000502-07-702 стяжка эксцентриковая двухсторонняя для 16 мм</a>
                                             </li>                                             
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka24.php">5000502-07-703 стяжка эксцентриковая односторонняя для 24 мм</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka24.php#styazhka24">5000502-07-703 стяжка эксцентриковая односторонняя для 24 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php">5000502-07-704 стяжка эксцентриковая двухсторонняя для 24 мм</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php#styazhka24-dvustoronnyaya">5000502-07-704 стяжка эксцентриковая двухсторонняя для 24 мм</a>
                                             </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka-rafix.php">5000502-07-707 стяжка эксцентриковая усиленная &Oslash;20 для 16 мм</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka-rafix.php#rafix">5000502-07-707 стяжка эксцентриковая усиленная &Oslash;20 для 16 мм</a>
                                             </li> 
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-konfirmat.php#konfirmat">5000502-07-750 конфирмат 7.0Х50</a>
                                             </li> 
