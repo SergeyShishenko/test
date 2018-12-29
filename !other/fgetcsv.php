@@ -21,6 +21,12 @@ while ($data = fgetcsv ($handle, 10000, ";"))// строка из файла -> 
 
      $row++;  
 } 
-echo $key_client;
+// echo $key_client;
+echo $num;
 fclose($handle);
+
+// $string = 'hello|wild|world';
+// list($hello, , $world) = explode('|', $string);
+// echo("$hello, $world"); // hello, world
+
 ?> 
