@@ -113,6 +113,7 @@
                                     background='typeDOC.png';
                                     break;
                                 case "excel":
+                                     if (EXP=="csv"){background='CSV.png';break;}
                                     background='typeXLS.png';
                                     break;
                                 case "dwg":
