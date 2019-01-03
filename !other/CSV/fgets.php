@@ -7,8 +7,8 @@ echo '<table border="1" ><tr>';
 if ($handle) {
     while (($buffer = fgets($handle, 4096)) !== false) {
         // echo $buffer . "<hr>";
-        list($client,$address,$number_order,,,$complect,$product,,,,,$def,,,,,,,,,,$floor,$room,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
-        $data=array($client,$address,$number_order,$complect,$product,$def,$floor,$room);
+        list($client,$address,$number_order,,,$complect,$product,$product2,,,,$def,,,,,,,,,,$floor,$room,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
+        $data=array($client,$address,$number_order,$complect,$product,$product2,$def,$floor,$room);
 
         $num = count ($data); //полей в строке $row
         for ($c=0; $c < $num; $c++) { 

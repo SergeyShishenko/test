@@ -928,12 +928,12 @@
 	
         
 
-$("body").on("click","#upload-button .count",function() {
-    console.log("==============");
-    $( "#dropped-files  > .image" ).each(function( index ) {
-    console.log( index + ": " + $( this ).attr('id') );
-    });
-     });
+        $("body").on("click","#upload-button .count",function() {
+            console.log("==============");
+            $( "#dropped-files  > .image" ).each(function( index ) {
+            console.log( index + ": " + $( this ).attr('id') );
+            });
+            });
 
 
         // Загрузка изображений на сервер
