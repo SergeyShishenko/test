@@ -40,7 +40,26 @@ $decodedData = iconv("WINDOWS-1251", "UTF-8", $decodedData);
 $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 // $randomName='_2312.csv';
 
+// function compare ($v1, $v2) {
+//     /* Сравниваем значение по ключу date_reg */
+//     if ($v1[8] == $v2[8]) return 0;
+//     return ($v1[8] < $v2[8])? -1: 1;
+//   }
 
+function unique_multidim_array($array, $key) { 
+    $temp_array = array(); 
+    $i = 0; 
+    $key_array = array(); 
+    
+    foreach($array as $val) { 
+        if (!in_array($val[$key], $key_array)) { 
+            $key_array[$i] = $val[$key]; 
+            $temp_array[$i] = $val; 
+        } 
+        $i++; 
+    } 
+    return $temp_array; 
+} 
 			// загруженные файлы помещаются в эту папку
 			switch ($type) {
 				/////"head"    
@@ -106,7 +125,7 @@ $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 						// echo $buffer . "<hr>";
 						list($client,$address,$number_order,,,$complect,$product,$product2,,,,$def,,,,,,,,,,$floor,$room,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
 					
-						array_push($data, array($client,$address,$complect,$floor,$number_order,$product,$product2,$def,$room));					
+						array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor));					
 						
 					}//while
 					if (!feof($handle)) {
@@ -116,25 +135,47 @@ $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 					fclose($handle);
 				}
 				// создание таблицы begin
+					$array=$data;
+					$exclude=array("0","1","2");// исключаемые индексы
 					echo "<h4>Заказчик: ".$data[1][0]."</h2>";
 					echo "<h4>Объект: ".$data[1][1]."</h2>";
-					echo "<h4>№ заказа: ".$data[1][4]."</h2>";
+					echo "<h4>№ заказа: ".$data[1][2]."</h2>";
+
+					// $product2_sum = array_sum(array_column($array, 4));
+					if (array_sum(array_column($array, 4)) === 0){
+						// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";
+						array_push($exclude,"4");
+					}
+					
+
+					if(count(unique_multidim_array($data,8))==2){echo "<h4>Этаж: ".$data[1][8]."</h2>";array_push($exclude,"8"); }
+					// $array = unique_multidim_array($data,8);// проверка на один этаж
+					// echo'<pre>';					
+					// echo "<h4>array_keys : ".print_r($array)."</h2>";					
+					// echo'</pre>';
+				
 					echo "<br>";
 					echo '<table border="1" class="table table-striped table-responsive" >'; 			
 		
-						$num = count ($data); //полей в строке $row
+						$num = count ($array); //строк с шапкой
 						// echo "$num ". $num; 
-						for ($c=0; $c < $num; $c++) { 
+						for ($row=0; $row < $num; $row++) { 
 							echo "<tr>"; 
-						
-							foreach ($data[$c] as $value) {
-								echo "<td>". $value." </td>";
+							$numcol = count ($array[$row]); //колонок 
+							for ($col=0; $col < $numcol; $col++) { 
+							
+								if (false === array_search($col, $exclude)){
+									echo "<td>". $array[$row][$col]." </td>";
+								}
+								
 							}
+
 							echo "</tr>"; 
 						
 						} //for	
 				
 					echo '</table>'; 
+					echo $filename; 
 				// создание таблицы end
 
 			}//if file_put_contents

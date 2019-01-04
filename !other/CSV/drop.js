@@ -6,7 +6,7 @@
         jQuery.event.props.push('dataTransfer');
         // alert();
         // Максимальное количество загружаемых изображений за одни раз
-        var maxFiles = 100;
+        var maxFiles = 1;
         // var countDOCFiles = 0;
         // var countPDFFiles = 0;
         // var countXLSFiles = 0;
@@ -88,11 +88,11 @@
 
                     $('#upload-button').css({'display' : 'block'});
                     // Проверяем количество загружаемых элементов
-                    // if((dataArray.length+files.length) <= maxFiles) {
-                    // 	// показываем область с кнопками
-                    // 	$('#upload-button').css({'display' : 'block'});
-                    // } 
-                    // else { alert('Вы не можете загружать больше '+maxFiles+' изображений!'); return; }
+                    if((dataArray.length+files.length) <= maxFiles) {
+                    	// показываем область с кнопками
+                    	$('#upload-button').css({'display' : 'block'});
+                    } 
+                    else { alert('Вы не можете загружать больше '+maxFiles+' файла!'); return; }
                     
                     // Создаем новый экземпляра FileReader
                     var fileReader = new FileReader();
@@ -150,7 +150,7 @@
                 $('#upload-button').hide();
                 $('#uploaded-holder').hide();
             } else if (dataArray.length == 1) {
-                $('#upload-button span').html("Был выбран 1 файл");
+                $('#upload-button span').html("Был выбран " + dataArray[0].name);
             } else {
                 $('#upload-button span').html(dataArray.length+" файлов были выбраны");
             }
@@ -257,21 +257,23 @@
                     // alert(data);
                     console.log(x+" : "+data);
                     // Изменение бара загрузки
-                    $('#loading-bar .loading-color').css({'width' : totalPercent*(x)+'%'});
-                    // Если загрузка закончилась
-                    if(totalPercent*(x) == 100) {
-                        // Загрузка завершена
-                        $('#loading-content').html('Загрузка завершена!');
+                    // $('#loading-bar .loading-color').css({'width' : totalPercent*(x)+'%'});
+                    // // Если загрузка закончилась
+                    // if(totalPercent*(x) == 100) {
+                    //     // Загрузка завершена
+                    //     $('#loading-content').html('Загрузка завершена!');
                         
-                        // Вызываем функцию удаления всех изображений после задержки 1 секунда
-                        // setTimeout(restartFiles, 1000);
-                        restartFiles();
-                    // если еще продолжается загрузка	
-                    } else if(totalPercent*(x) < 100) {
-                        // Какой файл загружается
-                        $('#loading-content').html('Загружается '+fileName);
-                    }
+                    //     // Вызываем функцию удаления всех изображений после задержки 1 секунда
+                    //     // setTimeout(restartFiles, 1000);
+                    //     restartFiles();
+                    // // если еще продолжается загрузка	
+                    // } else if(totalPercent*(x) < 100) {
+                    //     // Какой файл загружается
+                    //     $('#loading-content').html('Загружается '+fileName);
+                    // }
+                    restartFiles();
                     $('#uploaded-files').append(data);
+                    $('#DelSubmit').show();
                     
                     // Формируем в виде списка все загруженные изображения
                     // data формируется в upload.php
@@ -412,4 +414,76 @@
 
         // $(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
         
+        });
+
+           //Удаляем запись 
+           $("body").on("click", "#DelSubmit", function(e) {
+            e.preventDefault();
+            if (confirm("Удалить?")) {
+                $('#uploaded-files').html('');
+                $('#DelSubmit').hide();
+                // // alert("Удаляем!");
+                // // var productList = document.querySelectorAll('#tb-head div.row');
+                // // console.log('productList: ', productList);
+                // // for (i = 0; i < productList.length; i++) {
+                // //     console.log('product: ', productList[i]);
+                // //     }
+                // // console.log('ID '+$('span[id="form-id"]').data('val'));
+                // var sdata=$.trim($('span[id="form-id"]').data('val'));
+                // // console.log(sdata);
+                
+                // var productList = $('span[id="name_'+sdata+'"]').parent().parent().parent();
+
+                // // console.log('productList: ', productList);
+                // for (i = 0; i < productList.length; i++) {
+                //     console.log('product: ', productList[i]);
+                // }                         
+                
+                // // $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+                // // console.log('span[id="name_'+sdata+'"]');
+                // // console.log($('span[id="name_'+sdata+'"]').text());
+                // var clickedID = $('input[id="id"]').val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
+                // var DbNumberID = clickedID[1]; //и получаем номер из массива
+                // var tbl = $('input[id="tbl"]').val();                        
+                // var fieldid = $('input[id="fieldid"]').val(); 
+                // // console.log('tbl-'+tbl);
+
+                // $('#item_'+DbNumberID).fadeOut("slow");
+                // $('#myModal').modal('hide');  
+                // // return false;
+
+                // //выстраиваем  данные для POST
+                // var myData =    "recordToDelete="+DbNumberID+"&"+
+                //                 "tbl="+tbl+"&"+                                        
+                //                 "fieldid="+fieldid;
+                // jQuery.ajax({
+                //     type: "POST", // HTTP метод  POST или GET
+                //     url: "response-del.php", //url-адрес, по которому будет отправлен запрос
+                //     dataType:"text", // Тип данных
+                //     data:myData, //post переменные
+                //     success:function(response){
+                //     // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+                //     switch (tbl) {                                
+                //         case "obj":
+                //             $('#image-'+DbNumberID).fadeOut("slow");
+                //             break;
+                //         case "category":
+                //             $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+                //             break;
+                //         case "grupp":
+                //             $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+                //             break;
+                //         case "head":
+                //             $('#item_'+DbNumberID).fadeOut("slow");
+                //             break;
+                //     }
+
+                //     },
+                //     error:function (xhr, ajaxOptions, thrownError){
+                //         //выводим ошибку
+                //         alert(thrownError);
+                //     }
+                // });
+                // $('#myModal').modal('hide');
+            }// else {alert("Вы нажали кнопку отмена");}  
         });
