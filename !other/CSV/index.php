@@ -83,7 +83,7 @@ header ("Content-Type: text/html; charset=utf-8");
                       <div id="file-name-holder">
                       
                         <div id="uploaded-files">
-                            <h1>Загруженные данные</h1>
+                            <!-- <h1>Загруженные данные:</h1> -->
                         </div>
                     </div>
                 

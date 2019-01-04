@@ -37,8 +37,9 @@ $decodedData = base64_decode($encodedData);
 $decodedData = iconv("WINDOWS-1251", "UTF-8", $decodedData);
 // Вы можете использовать данное имя файла, или создать произвольное имя.
 // Мы будем создавать произвольное имя!
-// $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
-$randomName='_2312.csv';
+$randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
+// $randomName='_2312.csv';
+
 
 			// загруженные файлы помещаются в эту папку
 			switch ($type) {
@@ -70,62 +71,73 @@ $randomName='_2312.csv';
 			}
 			
 			if(file_put_contents($uploaddir.$randomName, $decodedData)) {
-				// Записываем данные изображения в БД
-				// mysql_query ("INSERT INTO images (date,catalog,filename) VALUES (NOW(),'$uploaddir','$randomName')");
-				// if  ($type=="img"){
-				//  	include('classSimpleImage.php');
-				// 	// Следующий участок кода загрузит изображение image.jpg, 
-				// 	// изменить его ширину до 100 пикселей и высоту до 100 пикселей, 
-				// 	// а затем сохранит как image1.jpg. 
-				// 	$image = new SimpleImage();
-				// 	$image->load($uploaddir.$randomName);
-				// 	$image->resize(200, 200);
-				// 	$image->save($uploaddir.'thumbs/tbs'.$randomName);
-				
-				// }
+					// Записываем данные изображения в БД
+					// mysql_query ("INSERT INTO images (date,catalog,filename) VALUES (NOW(),'$uploaddir','$randomName')");
+					// if  ($type=="img"){
+					//  	include('classSimpleImage.php');
+					// 	// Следующий участок кода загрузит изображение image.jpg, 
+					// 	// изменить его ширину до 100 пикселей и высоту до 100 пикселей, 
+					// 	// а затем сохранит как image1.jpg. 
+					// 	$image = new SimpleImage();
+					// 	$image->load($uploaddir.$randomName);
+					// 	$image->resize(200, 200);
+					// 	$image->save($uploaddir.'thumbs/tbs'.$randomName);
+					
+					// }
 
+			
+				// $sql = "UPDATE `$tbl` SET `$field` = '$randomName' WHERE `obj_id`=$id";
+				// if(mysqli_query($dbconn,$sql))
+				// 	{        
+					
+					
+				
+				// 	}else{//вывод ошибки 
+				// 		header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
+				// 		exit();
+				// 	}
+
+				// echo $randomName." ".$id;
+				$filename=$uploaddir.$randomName;
+				$handle = @fopen($filename, "r");			
+				$data=array();
+				if ($handle) {
+					while (($buffer = fgets($handle, 4096)) !== false) {
+						// echo $buffer . "<hr>";
+						list($client,$address,$number_order,,,$complect,$product,$product2,,,,$def,,,,,,,,,,$floor,$room,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
+					
+						array_push($data, array($client,$address,$complect,$floor,$number_order,$product,$product2,$def,$room));					
+						
+					}//while
+					if (!feof($handle)) {
+						echo "Ошибка: fgets() неожиданно потерпел неудачу\n";
+					}
+					
+					fclose($handle);
+				}
+				// создание таблицы begin
+					echo "<h4>Заказчик: ".$data[1][0]."</h2>";
+					echo "<h4>Объект: ".$data[1][1]."</h2>";
+					echo "<h4>№ заказа: ".$data[1][4]."</h2>";
+					echo "<br>";
+					echo '<table border="1" class="table table-striped table-responsive" >'; 			
 		
-			// $sql = "UPDATE `$tbl` SET `$field` = '$randomName' WHERE `obj_id`=$id";
-			// if(mysqli_query($dbconn,$sql))
-			// 	{        
+						$num = count ($data); //полей в строке $row
+						// echo "$num ". $num; 
+						for ($c=0; $c < $num; $c++) { 
+							echo "<tr>"; 
+						
+							foreach ($data[$c] as $value) {
+								echo "<td>". $value." </td>";
+							}
+							echo "</tr>"; 
+						
+						} //for	
 				
-				
-			
-			// 	}else{//вывод ошибки 
-			// 		header('HTTP/1.1 500 Looks like mysql error, could not insert record!'.$sql);
-			// 		exit();
-			// 	}
+					echo '</table>'; 
+				// создание таблицы end
 
-			// echo $randomName." ".$id;
-			$filename=$uploaddir.$randomName;
-			$handle = @fopen($filename, "r");
-			echo '<table border="1" class="table table-striped table-responsive" ><tr>'; 
-			if ($handle) {
-				while (($buffer = fgets($handle, 4096)) !== false) {
-					// echo $buffer . "<hr>";
-					list($client,$address,$number_order,,,$complect,$product,$product2,,,,$def,,,,,,,,,,$floor,$room,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
-					$data=array($client,$address,$number_order,$complect,$product,$product2,$def,$floor,$room);
-	
-					$num = count ($data); //полей в строке $row
-					for ($c=0; $c < $num; $c++) { 
-					// output data    
-					// echo "<td style='white-space: nowrap;'>". $data[$c]." </td>"; 
-					echo "<td>". $data[$c]." </td>"; 
-					} 
-					echo "</tr><tr>"; 
-	
-				
-					// echo $client." | ".$address." | ".$number_order." | ".$complect." | ".$product." | ".$def." | ".$floor." | ".$room; // hello, world
-					// echo "<hr>";
-				}
-				if (!feof($handle)) {
-					echo "Ошибка: fgets() неожиданно потерпел неудачу\n";
-				}
-				echo '</tr></table>'; 
-				fclose($handle);
-			}
-			
-			}
+			}//if file_put_contents
 			else {
 				// Показать сообщение об ошибке, если что-то пойдет не так.
 				echo "Что-то пошло не так. Убедитесь, что файл не поврежден!";
