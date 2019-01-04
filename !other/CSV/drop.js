@@ -116,6 +116,7 @@
                                      if (EXP=="csv"){background='CSV.png';break;}
                                     background='typeXLS.png';
                                     break;
+
                                 case "dwg":
                                     background='typeDWG.png';
                                     break;
@@ -251,7 +252,7 @@
                 //  dataplas= $.merge( {tbl : "obj", field : "name_obj"}, dataArray[index]);
                 $.post('upload.php', dataArray[index] , function(data) {
                 
-                    var fileName = dataArray[index].name;
+                    // var fileName = dataArray[index].name;
                     ++x;
                     // alert(data);
                     console.log(x+" : "+data);
@@ -263,22 +264,24 @@
                         $('#loading-content').html('Загрузка завершена!');
                         
                         // Вызываем функцию удаления всех изображений после задержки 1 секунда
-                        setTimeout(restartFiles, 1000);
+                        // setTimeout(restartFiles, 1000);
+                        restartFiles();
                     // если еще продолжается загрузка	
                     } else if(totalPercent*(x) < 100) {
                         // Какой файл загружается
                         $('#loading-content').html('Загружается '+fileName);
                     }
+                    $('#uploaded-files').append(data);
                     
                     // Формируем в виде списка все загруженные изображения
                     // data формируется в upload.php
-                    var dataSplit = data.split(':');
-                    if(dataSplit[1] == 'загружен успешно') {
-                        $('#uploaded-files').append('<li><a href="images/'+dataSplit[0]+'">'+fileName+'</a> загружен успешно</li>');
+                    // var dataSplit = data.split(':');
+                    // if(dataSplit[1] == 'загружен успешно') {
+                    //     $('#uploaded-files').append('<li><a href="images/'+dataSplit[0]+'">'+fileName+'</a> загружен успешно</li>');
                                     
-                    } else {
-                        $('#uploaded-files').append('<li><a href="images/'+data+'. Имя файла: '+dataArray[index].name+'</li>');
-                    }
+                    // } else {
+                    //     $('#uploaded-files').append('<li><a href="images/'+data+'. Имя файла: '+dataArray[index].name+'</li>');
+                    // }
                     
                 });
             });

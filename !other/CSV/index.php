@@ -1,9 +1,13 @@
+<?php
+header ("Content-Type: text/html; charset=utf-8");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--[if lt IE 9]><meta http-equiv='X-UA-Compatible' content='IE=edge'><![endif]-->
     <link href="bootstrap.min.css" rel="stylesheet">
     <link href='uploadify.css' rel='stylesheet'>
     <link href="style.css" rel="stylesheet">
@@ -63,7 +67,7 @@
                                     <span>0 Файлов</span>
                                     <a href="javascript:void(0)" class="upload note">Загрузить</a>
                                     <a href="javascript:void(0)" class="delete note">Удалить</a>
-                                    <a href="javascript:void(0)" class="count note">Посчитать</a>
+                                    <!-- <a href="javascript:void(0)" class="count note">Посчитать</a> -->
                                     <!-- Прогресс бар загрузки -->
                                     <div id="loading">
                                         <div id="loading-bar">
@@ -76,11 +80,12 @@
                         </div>
                     </div>
                     <!-- Список загруженных файлов -->
-                    <!--   <div id="file-name-holder">
-                        <ul id="uploaded-files">
-                            <h1>Загруженные файлы</h1>
-                        </ul>
-                    </div>-->
+                      <div id="file-name-holder">
+                      
+                        <div id="uploaded-files">
+                            <h1>Загруженные данные</h1>
+                        </div>
+                    </div>
                 
                 </div>               
                         </div>                          
