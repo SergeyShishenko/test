@@ -46,7 +46,7 @@
         // Функция загрузки изображений на предросмотр
         function loadInView(files) {
             // Показываем обасть предпросмотра
-            $('#uploaded-holder').show();
+            $('#uploaded-holder').css({"display":"table-cell"});
             
             // Для каждого файла
             
@@ -255,7 +255,7 @@
                     // var fileName = dataArray[index].name;
                     ++x;
                     // alert(data);
-                    console.log(x+" : "+data);
+                    // console.log(x+" : "+data);
                     // Изменение бара загрузки
                     // $('#loading-bar .loading-color').css({'width' : totalPercent*(x)+'%'});
                     // // Если загрузка закончилась
@@ -487,3 +487,17 @@
                 // $('#myModal').modal('hide');
             }// else {alert("Вы нажали кнопку отмена");}  
         });
+
+function checkAddress(checkbox)
+{
+    if (checkbox.checked)
+    {
+         $(checkbox).parent().parent().parent().css({"color":"green","font-weight":"700"});
+      
+        // $(checkbox.id).parent().parent().css('color:green');
+    }else{
+        // alert(checkbox.id);
+        $(checkbox).parent().parent().parent().css({"color":"black","font-weight":"400"});
+
+    }
+}

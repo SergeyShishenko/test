@@ -137,30 +137,21 @@ function unique_multidim_array($array, $key) {
 				// создание таблицы begin
 					$array=$data;
 					$exclude=array("0","1","2");// исключаемые индексы
-					echo "<h4>Заказчик: ".$data[1][0]."</h2>";
-					echo "<h4>Объект: ".$data[1][1]."</h2>";
-					echo "<h4>№ заказа: ".$data[1][2]."</h2>";
-
-					// $product2_sum = array_sum(array_column($array, 4));
-					if (array_sum(array_column($array, 4)) === 0){
-						// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";
-						array_push($exclude,"4");
-					}
+					echo "<p><b>Заказчик:</b> ".$data[1][0]."</p>";
+					echo "<p><span><b>Представитель:</b></span> <span><input type='text' class='form-control'  id='recipient-name' value='' required></span></p>";
 					
-
-					if(count(unique_multidim_array($data,8))==2){echo "<h4>Этаж: ".$data[1][8]."</h2>";array_push($exclude,"8"); }
-					// $array = unique_multidim_array($data,8);// проверка на один этаж
-					// echo'<pre>';					
-					// echo "<h4>array_keys : ".print_r($array)."</h2>";					
-					// echo'</pre>';
-
-
-					// <div class="material-switch pull-right">
-					// <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox"/>
-					// <label for="someSwitchOptionSuccess" class="label-success"></label>
-					// </div>
-
-				
+					echo "<p><b>Объект:</b> ".$data[1][1]."</p>";
+					if (array_sum(array_column($array, 4)) === 0){// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";						
+						array_push($exclude,"4");
+					}	
+					if(count(unique_multidim_array($data,8))==2)
+					{
+					echo "<p><b>Этаж:</b> ".$data[1][8]."</p>";array_push($exclude,"8");
+					}
+					echo "<p><b>Помещение:</b> </p>";
+					echo "<p><b>Комплект изделий:</b> </p>";
+					echo "<p><b>№ заказа:</b> ".$data[1][2]."</p>";
+					echo "<p><b>Изделия:</b> </p>";
 					echo "<br>";
 					echo '<table border="1" class="table table-striped table-responsive" >'; 			
 		
@@ -172,7 +163,7 @@ function unique_multidim_array($array, $key) {
 								echo "<td>Выбрать</td>";
 							}else{
 								echo '<td> <div class="material-switch pull-right">
-									<input id="someSwitchOptionSuccess'.$row.'" name="someSwitchOption001" type="checkbox"/>
+									<input id="someSwitchOptionSuccess'.$row.'" name="someSwitchOption001" type="checkbox" onclick="checkAddress(this)"/>
 									<label for="someSwitchOptionSuccess'.$row.'" class="label-success"></label>
 									</div></td>';
 								}
@@ -183,7 +174,38 @@ function unique_multidim_array($array, $key) {
 								
 							
 								if (false === array_search($col, $exclude)){
-									echo "<td>". $array[$row][$col]." </td>";
+									// $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
+									switch ($col) {
+										/////"head"    
+											case "0":
+												$id = 'client_'.$row.$col;												
+												break;
+											case "1":
+												$id = 'address_'.$row.$col;
+												break;
+											case "2":
+												$id = '$numberorder_'.$row.$col;
+												break;
+											case "3":
+												$id = 'product_'.$row.$col;
+												break;
+											case "4":
+												$id = 'product2_'.$row.$col;
+												break;
+											case "5":
+												$id = 'def_'.$row.$col;
+												break;
+											case "6":
+												$id = 'room_'.$row.$col;
+												break;
+											case "7":
+												$id = 'complect_'.$row.$col;
+												break;
+											case "8":
+												$id = 'floor_'.$row.$col;
+												break;
+									}
+									echo '<td id="'.$id.'">'.$array[$row][$col].'</td>';
 								}
 								
 							}

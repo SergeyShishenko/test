@@ -128,5 +128,12 @@
             
         }
 
-        /* color: green;
-        font-weight: 700; */
+        .row {
+            margin-left: 15px; 
+             margin-right: 15px;
+        }
+        .form-control {
+            width: auto;
+            display: table-cell;
+            
+        }
