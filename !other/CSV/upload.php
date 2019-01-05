@@ -153,6 +153,13 @@ function unique_multidim_array($array, $key) {
 					// echo'<pre>';					
 					// echo "<h4>array_keys : ".print_r($array)."</h2>";					
 					// echo'</pre>';
+
+
+					// <div class="material-switch pull-right">
+					// <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox"/>
+					// <label for="someSwitchOptionSuccess" class="label-success"></label>
+					// </div>
+
 				
 					echo "<br>";
 					echo '<table border="1" class="table table-striped table-responsive" >'; 			
@@ -161,8 +168,19 @@ function unique_multidim_array($array, $key) {
 						// echo "$num ". $num; 
 						for ($row=0; $row < $num; $row++) { 
 							echo "<tr>"; 
+							if ($row===0){
+								echo "<td>Выбрать</td>";
+							}else{
+								echo '<td> <div class="material-switch pull-right">
+									<input id="someSwitchOptionSuccess'.$row.'" name="someSwitchOption001" type="checkbox"/>
+									<label for="someSwitchOptionSuccess'.$row.'" class="label-success"></label>
+									</div></td>';
+								}
+
 							$numcol = count ($array[$row]); //колонок 
 							for ($col=0; $col < $numcol; $col++) { 
+
+								
 							
 								if (false === array_search($col, $exclude)){
 									echo "<td>". $array[$row][$col]." </td>";
