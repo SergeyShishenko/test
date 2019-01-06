@@ -1,4 +1,20 @@
-//////// drop
+//////// drop       
+
+        // $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
+        var csvObject = {
+            client: '',
+            address: '',
+            numberorder: '',
+            product: [],
+            product2: [],
+            def: '',
+            room: '',
+            complect: '',
+            floor: ''
+        };
+        var room={}; //помещение
+
+
         var $ = jQuery.noConflict();
 
         // $(document).ready(function() {
@@ -482,7 +498,13 @@ function checkAddress(checkbox)
 {
     if (checkbox.checked)
     {
-         $(checkbox).parent().parent().parent().css({"color":"green","font-weight":"700"});
+        var tr=$(checkbox).parent().parent().parent();
+        tr.css({"color":"green","font-weight":"700"});
+        // alert();
+        room[tr.find("[id^='room_']").text()]=true;
+        for (var prop in room) {
+            alert( prop ); // name, surname, age
+          }
       
         // $(checkbox.id).parent().parent().css('color:green');
     }else{
@@ -491,3 +513,4 @@ function checkAddress(checkbox)
 
     }
 }
+
