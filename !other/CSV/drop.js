@@ -272,6 +272,7 @@
                     //     $('#loading-content').html('Загружается '+fileName);
                     // }
                     restartFiles();
+                    $('#drop-files').hide();
                     $('#uploaded-files').append(data);
                     $('#DelSubmit').show();
                     
@@ -419,6 +420,8 @@
            //Удаляем запись 
            $("body").on("click", "#DelSubmit", function(e) {
             e.preventDefault();
+            var currfile = $('#currfile').val(); 
+            console.log('Файл-'+currfile);
             if (confirm("Удалить?")) {
                 $('#uploaded-files').html('');
                 $('#DelSubmit').hide();
@@ -446,44 +449,31 @@
                 // var DbNumberID = clickedID[1]; //и получаем номер из массива
                 // var tbl = $('input[id="tbl"]').val();                        
                 // var fieldid = $('input[id="fieldid"]').val(); 
-                // // console.log('tbl-'+tbl);
+                
+                console.log('Удаляем-'+currfile+' ...');
 
                 // $('#item_'+DbNumberID).fadeOut("slow");
                 // $('#myModal').modal('hide');  
                 // // return false;
 
-                // //выстраиваем  данные для POST
-                // var myData =    "recordToDelete="+DbNumberID+"&"+
-                //                 "tbl="+tbl+"&"+                                        
-                //                 "fieldid="+fieldid;
-                // jQuery.ajax({
-                //     type: "POST", // HTTP метод  POST или GET
-                //     url: "response-del.php", //url-адрес, по которому будет отправлен запрос
-                //     dataType:"text", // Тип данных
-                //     data:myData, //post переменные
-                //     success:function(response){
-                //     // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-                //     switch (tbl) {                                
-                //         case "obj":
-                //             $('#image-'+DbNumberID).fadeOut("slow");
-                //             break;
-                //         case "category":
-                //             $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
-                //             break;
-                //         case "grupp":
-                //             $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
-                //             break;
-                //         case "head":
-                //             $('#item_'+DbNumberID).fadeOut("slow");
-                //             break;
-                //     }
+                //выстраиваем  данные для POST
+                var myData =    "recordToDelete="+currfile;
+                jQuery.ajax({
+                    type: "POST", // HTTP метод  POST или GET
+                    url: "upload.php", //url-адрес, по которому будет отправлен запрос
+                    dataType:"text", // Тип данных
+                    data:myData, //post переменные
+                    success:function(response){
+                    // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+                    console.log(response);
+                    $('#drop-files').show();
 
-                //     },
-                //     error:function (xhr, ajaxOptions, thrownError){
-                //         //выводим ошибку
-                //         alert(thrownError);
-                //     }
-                // });
+                    },
+                    error:function (xhr, ajaxOptions, thrownError){
+                        //выводим ошибку
+                        alert(thrownError);
+                    }
+                });
                 // $('#myModal').modal('hide');
             }// else {alert("Вы нажали кнопку отмена");}  
         });

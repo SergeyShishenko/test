@@ -12,6 +12,15 @@
 //     die(mysql_error());
 // }
 
+if(isset($_POST["recordToDelete"]) )
+{
+	if (unlink("xlscsv/".$_POST["recordToDelete"])){
+		echo "Файл: ".$_POST["recordToDelete"]." удален!";
+	}else{echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";}
+	exit();
+}
+
+
 // Вытаскиваем необходимые данные
 $file = $_POST['value'];
 $name = $_POST['name'];
@@ -215,7 +224,7 @@ function unique_multidim_array($array, $key) {
 						} //for	
 				
 					echo '</table>'; 
-					echo $filename; 
+					echo '<input type="hidden" id="currfile" value="'.$randomName.'" form="frm">' ; 
 				// создание таблицы end
 
 			}//if file_put_contents

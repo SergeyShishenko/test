@@ -40,20 +40,21 @@ header ("Content-Type: text/html; charset=utf-8");
                     <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
                 <div class="modal-body">
-                     <form id="frm">
-                        <!-- <p>Here settings can be configured...</p> -->
-                        <input type="hidden" id="tbl" value="">
-                        <input type="hidden" id="field" value="">
-                        <input type="hidden" id="fieldid" value="">
-                        <input type="hidden" id="id" value="">
-                        <input type="hidden" id="action" value="">                        
-                        <div class="form-group ">                        
-                            <ul class="list-tbl">        
-                            </ul>
-                            <div id="loading1" class="center">Загрузка...<div class="center"></div></div> 
-                            <div class="row">               
-                    <div id="drop-files" ondragover="return false">
-                        <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo; сюда</p>
+                        <form id="frm">
+                            <!-- <p>Here settings can be configured...</p> -->
+                            <input type="hidden" id="tbl" value="">
+                            <input type="hidden" id="field" value="">
+                            <input type="hidden" id="fieldid" value="">
+                            <input type="hidden" id="id" value="">
+                            <input type="hidden" id="action" value=""> 
+                            <!-- <input type="hidden" id="file" value="">                        -->
+                            <div class="form-group ">                        
+                                <ul class="list-tbl">        
+                                </ul>
+                                <div id="loading1" class="center">Загрузка...<div class="center"></div></div> 
+                                <div class="row">               
+                            <div id="drop-files" ondragover="return false">
+                            <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo; сюда</p>
                         <form >
                             <input type="file" id="uploadbtn" multiple style="display: none;" >
                         </form>
