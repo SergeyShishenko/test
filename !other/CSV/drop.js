@@ -427,9 +427,12 @@
             if (confirm("Удалить?")) {
                 $('#uploaded-files').html('');
                 $('#DelSubmit').hide();
-                for (var prop in room) {
-                    delete room[prop]; 
-                  }
+                // room //Помещение
+                // complect //Комплект изделий
+                // product //Изделия
+                  propdelete(room);
+                  propdelete(complect);
+                  propdelete(product);
                 // // alert("Удаляем!");
                 // // var productList = document.querySelectorAll('#tb-head div.row');
                 // // console.log('productList: ', productList);
@@ -557,6 +560,12 @@ function propoutput(id,obj){
     $(id).text(str);
 }
 
+
+  function propdelete(obj){
+    for (var prop in obj) {
+        delete obj[prop]; 
+      }
+}
 
     $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
         
