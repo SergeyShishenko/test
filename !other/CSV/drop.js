@@ -441,6 +441,9 @@
             if (confirm("Удалить?")) {
                 $('#uploaded-files').html('');
                 $('#DelSubmit').hide();
+                for (var prop in room) {
+                    delete room[prop]; 
+                  }
                 // // alert("Удаляем!");
                 // // var productList = document.querySelectorAll('#tb-head div.row');
                 // // console.log('productList: ', productList);
@@ -496,21 +499,41 @@
 
 function checkAddress(checkbox)
 {
+    var tr=$(checkbox).parent().parent().parent();
+    var keyroom=tr.find("[id^='room_']").text();
     if (checkbox.checked)
-    {
-        var tr=$(checkbox).parent().parent().parent();
-        tr.css({"color":"green","font-weight":"700"});
-        // alert();
-        room[tr.find("[id^='room_']").text()]=true;
-        for (var prop in room) {
-            alert( prop ); // name, surname, age
-          }
+    {        
+        tr.css({"color":"green","font-weight":"700"});       
       
-        // $(checkbox.id).parent().parent().css('color:green');
+        if (keyroom in room) {room[keyroom]++;}else{room[keyroom]=1;}
+        
+       
+        //   propalert(room) ;  
+          propoutput('#room_output',room);
+        
     }else{
-        // alert(checkbox.id);
-        $(checkbox).parent().parent().parent().css({"color":"black","font-weight":"400"});
+        
+        tr.css({"color":"black","font-weight":"400"});
+        if (room[keyroom]>1) {
+            room[keyroom]--;
+            
+        }else{delete room[keyroom];}
+        // propalert(room) ; 
+        propoutput('#room_output',room);
 
     }
 }
 
+function propalert(obj){
+    for (var prop in obj) {
+        alert( prop +' : '+obj[prop]); // name, surname, age
+      } 
+}
+function propoutput(id,obj){
+    var str='';
+    for (var prop in obj) {
+        str=str+" "+prop+",";
+      } 
+      str=str.substring(0, str.length - 1);// удаление последнего символа
+    $(id).text(str);
+}
