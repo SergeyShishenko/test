@@ -1,20 +1,6 @@
 //////// drop       
 
-        // $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
-        var csvObject = {
-            client: '',
-            address: '',
-            numberorder: '',
-            product: [],
-            product2: [],
-            def: '',
-            room: '',
-            complect: '',
-            floor: ''
-        };
-        var room={}; //помещение
-
-
+      
         var $ = jQuery.noConflict();
 
         // $(document).ready(function() {
@@ -497,29 +483,62 @@
             }// else {alert("Вы нажали кнопку отмена");}  
         });
 
+    // $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
+var csvObject = {
+    client: '',
+    address: '',
+    numberorder: '',
+    product: [],
+    product2: [],
+    def: '',
+    room: '',
+    complect: '',
+    floor: ''
+    };
+var room={}; //Помещение
+var complect={}; //Комплект изделий
+var product={}; //Изделия
+
+
+
 function checkAddress(checkbox)
 {
     var tr=$(checkbox).parent().parent().parent();
     var keyroom=tr.find("[id^='room_']").text();
+    var keycomplect=tr.find("[id^='complect_']").text();
+    var keyproduct=tr.find("[id^='product_']").text();
+    var keyproduct2=tr.find("[id^='product2_']").text();
     if (checkbox.checked)
     {        
         tr.css({"color":"green","font-weight":"700"});       
       
         if (keyroom in room) {room[keyroom]++;}else{room[keyroom]=1;}
+        if (keycomplect in complect) {complect[keycomplect]++;}else{complect[keycomplect]=1;}
         
-       
+        if (keyproduct2==''){
+         if (keyproduct in product) {product[keyproduct]++;}else{product[keyproduct]=1;}   
+        }else{
+            if (keyproduct2 in product) {product[keyproduct2]++;}else{product[keyproduct2]=1;}
+        }
+        
+        
+       tr.find("[id^='product_']").text();
         //   propalert(room) ;  
           propoutput('#room_output',room);
+          propoutput('#complect_output',complect);
+          propoutput('#product_output',product);
         
     }else{
         
         tr.css({"color":"black","font-weight":"400"});
-        if (room[keyroom]>1) {
-            room[keyroom]--;
-            
-        }else{delete room[keyroom];}
-        // propalert(room) ; 
+        if (room[keyroom]>1) {room[keyroom]--;}else{delete room[keyroom];}
+        if (complect[keycomplect]>1) {complect[keycomplect]--;}else{delete complect[keycomplect];}
+
+        if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];}
+        
         propoutput('#room_output',room);
+        propoutput('#complect_output',complect);
+        propoutput('#product_output',product);
 
     }
 }
@@ -537,3 +556,16 @@ function propoutput(id,obj){
       str=str.substring(0, str.length - 1);// удаление последнего символа
     $(id).text(str);
 }
+
+
+    $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
+        
+    var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .
+    
+        if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+           
+        $('html, body #myModal ').animate({ scrollTop: $(scroll_el).offset().top }, 1000); // анимируем скроолинг к элементу scroll_el
+       
+        }
+	    return false; // выключаем стандартное действие
+    });

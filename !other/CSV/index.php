@@ -2,16 +2,19 @@
 header ("Content-Type: text/html; charset=utf-8");
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--[if lt IE 9]><meta http-equiv='X-UA-Compatible' content='IE=edge'><![endif]-->
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href='uploadify.css' rel='stylesheet'>
+    <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="font-awesome.css" rel="stylesheet">
+    <link href='uploadify.css' rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="drop.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
@@ -40,6 +43,12 @@ header ("Content-Type: text/html; charset=utf-8");
                     <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                 </div>
                 <div class="modal-body">
+                <!-- <a  href="#DelSubmit"><i class="fa-cart-plus" aria-hidden="true"></i>Вниз</a> -->
+                <a href="#up" id="down" class="go_to btn btn-default badge" title="ВНИЗ" style="margin-left: 15px;">
+                <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+                </a>
+                <!-- <button type="button"  class="go_to" style="margin-left: 10px;"><i class="fa arrow-alt-circle-down" aria-hidden="true"></i> </button> -->
+               
                         <form id="frm">
                             <!-- <p>Here settings can be configured...</p> -->
                             <input type="hidden" id="tbl" value="">
@@ -95,8 +104,11 @@ header ("Content-Type: text/html; charset=utf-8");
                 <div class="modal-footer">
                     <!-- <a href="#openModal">Открыть модальное окно</a> -->
                     <!-- class="close" data-dismiss="modal" -->
+                    <a href="#down" id="up" class="go_to btn btn-default badge" title="ВВЕРХ" style="margin-left: 15px;">
+                    <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                    </a>
                     <a href="#" class="btn btn-danger"   id="DelSubmit">Удалить</a>
-                    <a href="#" class="btn btn-default" data-dismiss="modal">Закрыть</a>
+                    <a href="#" class="btn btn-default elm" data-dismiss="modal">Закрыть</a>
                     <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="ChangeSubmit">Сохранить изменения</a> -->
                     <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="AddSubmit">Добавить</a> -->
 

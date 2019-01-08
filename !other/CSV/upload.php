@@ -155,7 +155,7 @@ function unique_multidim_array($array, $key) {
 					}	
 					if(count(unique_multidim_array($data,8))==2)
 					{
-					echo "<p><b>Этаж:</b><span id=\"floor_output\">".$data[1][8]."</span></p>";array_push($exclude,"8");
+					echo "<p><b>Этаж: </b><span id=\"floor_output\">".$data[1][8]."</span></p>";array_push($exclude,"8");
 					}
 					echo "<p><b>Помещение: </b><span id=\"room_output\"></span> </p>";
 					echo "<p><b>Комплект изделий:</b><span id=\"complect_output\"></span> </p>";
