@@ -210,9 +210,14 @@ elseif ($mime =="xlsx"){
 			$uploaddir = 'xlscsv/';			
 		break;		
 	}
-	require_once('XLSX/index.php'); 
+
+	$randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
+	if(file_put_contents($uploaddir.$randomName, $decodedData)) {		
+		$filename=$uploaddir.$randomName;
+		require_once "$_SERVER[DOCUMENT_ROOT]/www/!other/XLSX/index.php"; 
+		}
 	// echo "Файл XLSX!";
-}
+}//elseif
 
 
 

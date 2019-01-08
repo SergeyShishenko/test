@@ -4,7 +4,8 @@
 require_once "$_SERVER[DOCUMENT_ROOT]/www/Classes/PHPExcel.php";
 
 # Указываем путь до файла .xlsx
-$File = "$_SERVER[DOCUMENT_ROOT]/www/!other/XLSX/prilozhenie-kb-k-dogovoru-2414-obitel.xlsx";
+// $File = "$_SERVER[DOCUMENT_ROOT]/www/!other/XLSX/prilozhenie-kb-k-dogovoru-2414-obitel.xlsx";
+$File = "$_SERVER[DOCUMENT_ROOT]/www/!other/CSV/$filename";
  
 $Excel = PHPExcel_IOFactory::load($File);
  
@@ -31,9 +32,9 @@ for ($i= $Start; $i <= 1000; $i++)
     $Res[] = $Row;
 }
 	 
- echo "<pre>";
-	print_r($Res);
- echo "</pre>";
+//  echo "<pre>";
+// 	print_r($Res);
+//  echo "</pre>";
 
  echo "<br>";
 					echo '<table border="1" class="table table-striped table-responsive" >'; 			
@@ -56,7 +57,8 @@ for ($i= $Start; $i <= 1000; $i++)
                         } //for	
                         
 				
-					echo '</table>'; 
+                    echo '</table>';
+                    echo '<input type="hidden" id="currfile" value="'.$randomName.'" form="frm">' ;  
 
 //  echo "<hr>";
 
