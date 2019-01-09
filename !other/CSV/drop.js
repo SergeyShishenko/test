@@ -546,7 +546,7 @@ function checkAddress(checkbox)
         propoutput('#product_output',product);
 
     }
-}
+}//checkAddress
 
 function propalert(obj){
     for (var prop in obj) {
