@@ -17,6 +17,13 @@
   src: url('./fonts/glyphicons-halflings-regular.eot');
   src: url('./fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('./fonts/glyphicons-halflings-regular.woff') format('woff'), url('./fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('./fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
+
+@font-face {
+  font-family: 'ISOCPEURItalic';
+  src: url('./fonts/ISOCPEURItalic.eot?#iefix') format('embedded-opentype'),  url('./fonts/ISOCPEURItalic.woff') format('woff'), url('./fonts/ISOCPEURItalic.ttf')  format('truetype'), url('./fonts/ISOCPEURItalic.svg#ISOCPEURItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 .fa {
   display: inline-block;
   font-family: FontAwesome;

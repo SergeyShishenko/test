@@ -10,13 +10,13 @@ $File = "$_SERVER[DOCUMENT_ROOT]/www/!other/CSV/$filename";
 $Excel = PHPExcel_IOFactory::load($File);
  
 # С какой строки начинаются данные
-$Start = 9;
+$Start = 8;
 $order=end(explode(" ", $Excel->getActiveSheet()->getCell('F3')->getValue())); 
 $client= $Excel->getActiveSheet()->getCell('C1')->getValue(); 
 $Res = array();
 for ($i= $Start; $i <= 1000; $i++)
 {
-    $Row = new stdClass();
+    $Row = new stdClass(); // пустой класс
     // $Row->id = $i;
     
     $Row->client = $client;
@@ -44,12 +44,31 @@ for ($i= $Start; $i <= 1000; $i++)
                         
 						for ($row=0; $row < $num; $row++) { 
 							echo "<tr>"; 
-							
-                            echo "<td>". $Res[$row]->client." </td>";
-                            echo "<td>". $Res[$row]->order." </td>";
-                            echo "<td>". $Res[$row]->product." </td>";
-                            echo "<td>". $Res[$row]->name." </td>";
-                            echo "<td>". $Res[$row]->price." </td>";
+							if($row==0){
+                                echo "<td>Выбрать</td>";
+                                echo "<td>Заказчик</td>";
+                                echo "<td>Заказ</td>";
+                                echo "<td>". $Res[$row]->product." </td>"; 
+                                echo "<td>№2</td>";// для ручного копирования                       
+                                echo "<td>". $Res[$row]->name." </td>";
+                                echo "<td>". $Res[$row]->price." </td>";
+                                
+                            }else{
+                                echo '<td> <div class="material-switch pull-right">
+                                     <input id="someSwitchOptionSuccess'.$row.'" name="someSwitchOption001" type="checkbox" onclick="checkAddress(this)"/>
+                                     <label for="someSwitchOptionSuccess'.$row.'" class="label-success"></label>
+                                     </div></td>';
+                                echo "<td>". $Res[$row]->client." </td>";
+                                echo "<td>". $Res[$row]->order." </td>";                                
+                                echo "<td>". $Res[$row]->product." </td>"; 
+                                echo "<td></td>";// для ручного копирования                          
+                                echo "<td>". $Res[$row]->name." </td>";
+                                echo "<td>". str_replace(".", ",", $Res[$row]->price)." </td>";
+                                
+                               
+                            }                           
+
+                            
 						
 
 							echo "</tr>"; 

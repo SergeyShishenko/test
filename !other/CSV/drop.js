@@ -513,7 +513,8 @@ function checkAddress(checkbox)
     var keyproduct2=tr.find("[id^='product2_']").text();
     if (checkbox.checked)
     {        
-        tr.css({"color":"green","font-weight":"700"});       
+        // tr.css({"color":"green","font-weight":"700"}); // жирный шрифт 
+        tr.css({"color":"green"});      
       
         if (keyroom in room) {room[keyroom]++;}else{room[keyroom]=1;}
         if (keycomplect in complect) {complect[keycomplect]++;}else{complect[keycomplect]=1;}
@@ -533,7 +534,8 @@ function checkAddress(checkbox)
         
     }else{
         
-        tr.css({"color":"black","font-weight":"400"});
+        // tr.css({"color":"black","font-weight":"400"}); // жирный шрифт 
+        tr.css({"color":"black"});
         if (room[keyroom]>1) {room[keyroom]--;}else{delete room[keyroom];}
         if (complect[keycomplect]>1) {complect[keycomplect]--;}else{delete complect[keycomplect];}
 

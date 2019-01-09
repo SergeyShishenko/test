@@ -1,4 +1,11 @@
-     .modalDialog {
+/* @font-face {
+    font-family: 'ISOCPEURItalic';
+    src: url('ISOCPEURItalic.eot?#iefix') format('embedded-opentype'),  url('ISOCPEURItalic.woff') format('woff'), url('ISOCPEURItalic.ttf')  format('truetype'), url('ISOCPEURItalic.svg#ISOCPEURItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  } */
+body { font-family: 'ISOCPEURItalic' !important; }
+    .modalDialog {
             position: fixed;
             font-family: Arial, Helvetica, sans-serif;
             top: 0;
