@@ -10,18 +10,30 @@ $File = "$_SERVER[DOCUMENT_ROOT]/www/!other/CSV/$filename";
 $Excel = PHPExcel_IOFactory::load($File);
  
 # С какой строки начинаются данные
-$Start = 8;
-$order=end(explode(" ", $Excel->getActiveSheet()->getCell('F3')->getValue())); 
-$client= $Excel->getActiveSheet()->getCell('C1')->getValue(); 
+// '№'
+
+$order=end(explode(" ", $Excel->getActiveSheet()->getCell('Document1')->getValue())); 
+// $client= $Excel->getActiveSheet()->getCell('C1')->getValue(); 
+$client= $Excel->getActiveSheet()->getCell('Customer')->getValue(); 
+// $coord= $Excel->getActiveSheet()->getCell('Customer')->getCoordinate(); // координата ячейки 'C5'
+$coordRow= $Excel->getActiveSheet()->getCell('NumStart')->getRow(); //номер строки '5'
+// $coord= $Excel->getActiveSheet()->getCell('Customer')->getColumn(); //столбец 'C'
+$Start = $coordRow-1;
+$endRow= $Excel->getActiveSheet()->getCell('NumEnd')->getRow()-1; //номер строки '40'
+if(!$endRow) {$endRow=1000;}// пустая ячейка
 $Res = array();
-for ($i= $Start; $i <= 1000; $i++)
+for ($i= $Start; $i <= $endRow; $i++)
 {
+
+    
     $Row = new stdClass(); // пустой класс
     // $Row->id = $i;
-    
+
+    // if($Row->product == null) continue;// пустая ячейка
     $Row->client = $client;
 	$Row->order = $order;	
     $Row->product = $Excel->getActiveSheet()->getCell('A'.$i )->getValue(); 
+    // if($Row->product == $Excel->getActiveSheet()->getCell('A'.($i+1) )->getValue()) continue;// объединенная ячейка
     # Преобразовываем формат даты из MS в привычный
     // $Row->date = date('Y-m-d', PHPExcel_Shared_Date::ExcelToPHP($oRow->date));
     $Row->name = $Excel->getActiveSheet()->getCell('B'.$i )->getValue(); 	
@@ -61,7 +73,7 @@ for ($i= $Start; $i <= 1000; $i++)
                                 echo "<td>". $Res[$row]->client." </td>";
                                 echo "<td>". $Res[$row]->order." </td>";                                
                                 echo "<td>". $Res[$row]->product." </td>"; 
-                                echo "<td></td>";// для ручного копирования                          
+                                echo "<td>".$coord."</td>";// для ручного копирования                          
                                 echo "<td>". $Res[$row]->name." </td>";
                                 echo "<td>". str_replace(".", ",", $Res[$row]->price)." </td>";
                                 
