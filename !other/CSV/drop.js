@@ -499,7 +499,8 @@ function checkAddress(checkbox)
 {
     var tr=$(checkbox).parent().parent().parent();
     var tblid = tr.parent().parent().attr('id');
-    // alert(tblid);
+    var typecheck =$(checkbox).attr('name');
+    // alert($(checkbox).attr('name'));
     // alert(objxlsx[tblid].kd);
     var keyroom=tr.find("[id^='room_']").text();
     var keycomplect=tr.find("[id^='complect_']").text();
@@ -521,8 +522,13 @@ function checkAddress(checkbox)
         }
 
         if (keyproductApp in objxlsx[tblid].product) {objxlsx[tblid].product[keyproductApp]++;}else{objxlsx[tblid].product[keyproductApp]=1;}  
-        // propalert(product) ;
         
+        // установка типа клика
+        objxlsx[tblid][typecheck]=1;
+
+        alert('kd : '+ objxlsx[tblid].kd +', dp : '+ objxlsx[tblid].dp);
+        
+
        tr.find("[id^='product_']").text();
         //   propalert(room) ;  
           propoutput('#room_output',room);
@@ -542,6 +548,9 @@ function checkAddress(checkbox)
         // if (keyproductApp in objxlsx[tblid].product) {objxlsx[tblid].product[keyproductApp]++;}else{objxlsx[tblid].product[keyproductApp]=1;} 
 
         if (objxlsx[tblid].product[keyproductApp]>1) {objxlsx[tblid].product[keyproductApp]--;}else{delete objxlsx[tblid].product[keyproductApp];tr.css({"color":"black"});}
+        // установка типа клика
+        objxlsx[tblid][typecheck]=0;
+        alert('kd : '+ objxlsx[tblid].kd +', dp : '+ objxlsx[tblid].dp);
         
         propoutput('#room_output',room);
         propoutput('#complect_output',complect);
@@ -562,11 +571,7 @@ function propalertObj(obj,name){
      
 }
 function propalertObjx(obj,name,key){
-    // for (var prop in obj) {
-    //     alert( prop +' : '+obj[prop][key]); // name, surname, age
-    //   } 
-
-      
+  
         alert( obj[name][key]); 
       
 }

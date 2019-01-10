@@ -65,12 +65,12 @@ for ($i= $Start; $i <= $endRow; $i++)
                                 
                             }else{
                                 echo '<td> <div class="material-switch pull-right">
-                                     <input id="someSwitchOptionSuccess'.$row.'" name="someSwitchOption001" type="checkbox" onclick="checkAddress(this)"/>
-                                     <label for="someSwitchOptionSuccess'.$row.'" class="label-success"></label>
+                                     <input id="kd'.$row.'" name="kd"  type="checkbox" onclick="checkAddress(this)"/>
+                                     <label for="kd'.$row.'" class="label-success"></label>
                                      </div></td>';
                                 echo '<td> <div class="material-switch pull-right">
-                                     <input id="someSwitchOptionWarning'.$row.'" name="someSwitchOption002" type="checkbox" onclick="checkAddress(this)"/>
-                                     <label for="someSwitchOptionWarning'.$row.'" class="label-warning"></label>
+                                     <input id="dp'.$row.'" name="dp" type="checkbox" onclick="checkAddress(this)"/>
+                                     <label for="dp'.$row.'" class="label-warning"></label>
                                      </div></td>';
                                 echo "<td>". $Res[$row]->client." </td>";
                                 echo "<td>". $Res[$row]->order." </td>";                                
