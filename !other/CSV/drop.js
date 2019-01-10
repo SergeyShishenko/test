@@ -236,6 +236,7 @@
 
         // Загрузка изображений на сервер
         // $('#upload-button .upload').click(function() {
+        var objx = [];
         $("body").on("click","#upload-button .upload",function() {
             // alert("!!");
             
@@ -278,10 +279,12 @@
                     $('#uploaded-files').append(data);
                     var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
                     var DbNumberID = clickedID[0]; //и получаем номер из массива
-                    var objx= new Objx(DbNumberID);
+                    
+                    objx.push(new Objx(DbNumberID));
                     $('#DelSubmit').show();
                     $('#CreateSubmit').show();
-                    alert( objx.name );
+                    propalertObj(objx);
+                    // alert( objx.name );
                     
                     // Формируем в виде списка все загруженные изображения
                     // data формируется в upload.php
@@ -534,6 +537,11 @@ function checkAddress(checkbox)
 function propalert(obj){
     for (var prop in obj) {
         alert( prop +' : '+obj[prop]); // name, surname, age
+      } 
+}
+function propalertObj(obj){
+    for (var prop in obj) {
+        alert( prop +' : '+obj[prop]['name']); // name, surname, age
       } 
 }
 function propoutput(id,obj){
