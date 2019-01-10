@@ -236,7 +236,7 @@
 
         // Загрузка изображений на сервер
         // $('#upload-button .upload').click(function() {
-        var objx = [];
+        var objxlsx = [];
         $("body").on("click","#upload-button .upload",function() {
             // alert("!!");
             
@@ -280,10 +280,14 @@
                     var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
                     var DbNumberID = clickedID[0]; //и получаем номер из массива
                     
-                    objx.push(new Objx(DbNumberID));
+                    // objxlsx.push(new Objx(DbNumberID));
+                    objxlsx[DbNumberID]=(new Objx(DbNumberID));
                     $('#DelSubmit').show();
                     $('#CreateSubmit').show();
-                    propalertObj(objx);
+                    // propalertObjx(objxlsx,'name');                    
+                    // propalertObjx(objxlsx,'kd');
+                    propalertObjx(objxlsx, DbNumberID,'name');
+                    propalertObjx(objxlsx, DbNumberID,'kd');
                     // alert( objx.name );
                     
                     // Формируем в виде списка все загруженные изображения
@@ -304,20 +308,20 @@
         });
         
         // Простые стили для области перетаскивания
-        // $('#drop-files').on('dragenter', function() {
+       
         $("body").on('dragenter',"#drop-files", function() {
             $(this).css({'box-shadow' : 'inset 0px 0px 20px rgba(0, 0, 0, 0.1)', 'border' : '4px dashed #bb2b2b'});
             return false;
         });
         
-        // $('#drop-files').on('drop', function() {
+      
         $("body").on('drop',"#drop-files", function() {
             $(this).css({'box-shadow' : 'none', 'border' : '4px dashed rgba(0,0,0,0.2)'});
             return false;
         });
 
 
-        // $("#files-show").on("click", function() {
+       
         $("body").on('click"',"#files-show", function() {
             $("#dropped-files div[id^='img']").each(function(i,elem) {
                 alert(i + ': ' + $(elem).attr('id'));
@@ -330,7 +334,7 @@
             });
         });
 
-        // });
+      
 
     /////// drop
 
@@ -478,7 +482,9 @@ var excelObject = {
     def: '',
     room: {},
     complect: {},
-    floor: ''
+    floor: '',
+    kd: '0',
+    dp: 0
     };
 var room={}; //Помещение
 var complect={}; //Комплект изделий
@@ -539,10 +545,19 @@ function propalert(obj){
         alert( prop +' : '+obj[prop]); // name, surname, age
       } 
 }
-function propalertObj(obj){
-    for (var prop in obj) {
-        alert( prop +' : '+obj[prop]['name']); // name, surname, age
-      } 
+function propalertObj(obj,name){
+  
+        alert( obj[name]); // name, surname, age
+     
+}
+function propalertObjx(obj,name,key){
+    // for (var prop in obj) {
+    //     alert( prop +' : '+obj[prop][key]); // name, surname, age
+    //   } 
+
+      
+        alert( obj[name][key]); // name, surname, age
+      
 }
 function propoutput(id,obj){
     var str='';
