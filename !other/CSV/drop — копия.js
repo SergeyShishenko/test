@@ -276,12 +276,7 @@
                     restartFiles();
                     $('#drop-files').hide();
                     $('#uploaded-files').append(data);
-                    var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
-                    var DbNumberID = clickedID[0]; //и получаем номер из массива
-                    var objx= new Objx(DbNumberID);
                     $('#DelSubmit').show();
-                    $('#CreateSubmit').show();
-                    alert( objx.name );
                     
                     // Формируем в виде списка все загруженные изображения
                     // data формируется в upload.php
@@ -332,137 +327,164 @@
     /////// drop
 
      // при открытии модального окна
-        $('#myModal').on('show.bs.modal', function (event) {
+     $('#myModal').on('show.bs.modal', function (event) {
            
-            // $('#loading1').css("display", "block");
-                
-            // // получить кнопку, которая его открыло
-            // var button = $(event.relatedTarget);     
-            // var content = button.data('content');
-            // var tbl = button.data('tbl');
-            // var field = button.data('field');
-            // var fieldid = button.data('field-id'); 
-            // var parent = button.data('parent');
-            // var recipient_href = button.data('href');
-            // var recipient_order = button.data('order');
-            // var htmlid = button.data('htmlid');         
-            // var id = button.data('id');
-            // var action =  button.data('action'); 
-            // $('input[id="action"]').val(action); // установка поля}       
-            // var recipient_name =button.data('name'); // Извлечение информации из данных-* атрибутов
+        // $('#loading1').css("display", "block");
+            
+        // // получить кнопку, которая его открыло
+        // var button = $(event.relatedTarget);     
+        // var content = button.data('content');
+        // var tbl = button.data('tbl');
+        // var field = button.data('field');
+        // var fieldid = button.data('field-id'); 
+        // var parent = button.data('parent');
+        // var recipient_href = button.data('href');
+        // var recipient_order = button.data('order');
+        // var htmlid = button.data('htmlid');         
+        // var id = button.data('id');
+        // var action =  button.data('action'); 
+        // $('input[id="action"]').val(action); // установка поля}       
+        // var recipient_name =button.data('name'); // Извлечение информации из данных-* атрибутов
 
-            // // if (typeof recipient_name == typeof undefined) {recipient_name="";}
-            // if (typeof button.data('name') === typeof undefined) {recipient_name="";}
-            // var im = button.attr('src');    
-            // if (content.indexOf("ДОБАВИТЬ") !== -1)
-            // {
-            //     $("#ChangeSubmit").addClass('hidden');
-            //     $("#DelSubmit").addClass('hidden');
-            //     $("#AddSubmit").removeClass('hidden');
-            //     action = "action"; 
-            // }
-            // else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');$("#DelSubmit").removeClass('hidden');}    
-            // $(this).find('#myModalLabel').text(content);      
-            //  if ( typeof(parent) != "undefined" && parent !== "")
-            //  {
-            //     // parent=' $$$'+ parent;
-            //  }
-            //  else{
-            //     parent="";
-            //  }
+        // // if (typeof recipient_name == typeof undefined) {recipient_name="";}
+        // if (typeof button.data('name') === typeof undefined) {recipient_name="";}
+        // var im = button.attr('src');    
+        // if (content.indexOf("ДОБАВИТЬ") !== -1)
+        // {
+        //     $("#ChangeSubmit").addClass('hidden');
+        //     $("#DelSubmit").addClass('hidden');
+        //     $("#AddSubmit").removeClass('hidden');
+        //     action = "action"; 
+        // }
+        // else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');$("#DelSubmit").removeClass('hidden');}    
+        // $(this).find('#myModalLabel').text(content);      
+        //  if ( typeof(parent) != "undefined" && parent !== "")
+        //  {
+        //     // parent=' $$$'+ parent;
+        //  }
+        //  else{
+        //     parent="";
+        //  }
 
-            //                 var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
-            //                 var DbNumberID = clickedID[1]; //и получаем номер из массива
+        //                 var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
+        //                 var DbNumberID = clickedID[1]; //и получаем номер из массива
 
-            //                 var myData =    "content_txt="+ button.data('name') +"&"+
-            //                                 "tbl="+tbl+"&"+
-            //                                 "field="+field+"&"+
-            //                                 "fieldid="+fieldid+"&"+
-            //                                 "parent="+parent+"&"+
-            //                                 "href="+recipient_href+"&"+
-            //                                 "order="+recipient_order+"&"+
-            //                                 "htmlid="+htmlid+"&"+
-            //                                 "action="+action+"&"+
-            //                                 "id="+ id;
-            //                                 // "id="+ DbNumberID;
-            //                 // "name=John&location=Boston"
-            //                 jQuery.ajax({
-            //                     type: "POST", // HTTP метод  POST или GET
-            //                     url: "add-input.php", //url-адрес, по которому будет отправлен запрос
-            //                     dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
-            //                     data:myData, //данные, которые будут отправлены на сервер (post переменные)
-            //                     success:function(response){
-            //                         $('.list-tbl').html(response);
-            //                         $('#loading1').css("display", "none");
-            //                         $("#file-list").sortable();
+        //                 var myData =    "content_txt="+ button.data('name') +"&"+
+        //                                 "tbl="+tbl+"&"+
+        //                                 "field="+field+"&"+
+        //                                 "fieldid="+fieldid+"&"+
+        //                                 "parent="+parent+"&"+
+        //                                 "href="+recipient_href+"&"+
+        //                                 "order="+recipient_order+"&"+
+        //                                 "htmlid="+htmlid+"&"+
+        //                                 "action="+action+"&"+
+        //                                 "id="+ id;
+        //                                 // "id="+ DbNumberID;
+        //                 // "name=John&location=Boston"
+        //                 jQuery.ajax({
+        //                     type: "POST", // HTTP метод  POST или GET
+        //                     url: "add-input.php", //url-адрес, по которому будет отправлен запрос
+        //                     dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
+        //                     data:myData, //данные, которые будут отправлены на сервер (post переменные)
+        //                     success:function(response){
+        //                         $('.list-tbl').html(response);
+        //                         $('#loading1').css("display", "none");
+        //                         $("#file-list").sortable();
 
-            //                     // $("#"+$("#tbl").val()+"_"+ DbNumberID).text($("#recipient-name").val());
-            //                     // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',$("#recipient-name").val());
-            //                     //     // для img
-            //                     // $("#image-"+ DbNumberID).find('img').data('name',$("#recipient-name").val());
-            //                     // // для разделов
-            //                     // $("#item_"+ DbNumberID).find("#"+$("#tbl").val()+"-"+ DbNumberID).data('name',$("#recipient-name").val());
-            //                     // // $("#contentText").val(''); //очищаем текстовое поле после успешной вставки
+        //                     // $("#"+$("#tbl").val()+"_"+ DbNumberID).text($("#recipient-name").val());
+        //                     // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',$("#recipient-name").val());
+        //                     //     // для img
+        //                     // $("#image-"+ DbNumberID).find('img').data('name',$("#recipient-name").val());
+        //                     // // для разделов
+        //                     // $("#item_"+ DbNumberID).find("#"+$("#tbl").val()+"-"+ DbNumberID).data('name',$("#recipient-name").val());
+        //                     // // $("#contentText").val(''); //очищаем текстовое поле после успешной вставки
 
-            //                     },
-            //                     error:function (xhr, ajaxOptions, thrownError){
-            //                         alert(thrownError); //выводим ошибку
-            //                     }
-            //                 });
-            // // заполнение модального окна
+        //                     },
+        //                     error:function (xhr, ajaxOptions, thrownError){
+        //                         alert(thrownError); //выводим ошибку
+        //                     }
+        //                 });
+        // // заполнение модального окна
 
-            // // $(this).find('.modal-body p').text(tbl+' . '+field+' . '+fieldid+' = '+id + parent); 
-            // $(this).find('#tbl').val(tbl);
-            // $(this).find('#field').val(field); 
-            // $(this).find('#fieldid').val(fieldid); 
-            // $(this).find('#id').val(id);  
-            // $(this).find('#recipient-name').val(recipient_name); 
-            // $(this).find('#recipient-href').val(recipient_href);
-            // $(this).find('#recipient-order').val(recipient_order); 
+        // // $(this).find('.modal-body p').text(tbl+' . '+field+' . '+fieldid+' = '+id + parent); 
+        // $(this).find('#tbl').val(tbl);
+        // $(this).find('#field').val(field); 
+        // $(this).find('#fieldid').val(fieldid); 
+        // $(this).find('#id').val(id);  
+        // $(this).find('#recipient-name').val(recipient_name); 
+        // $(this).find('#recipient-href').val(recipient_href);
+        // $(this).find('#recipient-order').val(recipient_order); 
 
-            // $(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
+        // $(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
         
         });
 
            //Удаляем запись 
            $("body").on("click", "#DelSubmit", function(e) {
-                e.preventDefault();
-                var currfile = $('#currfile').val(); 
-                console.log('Файл-'+currfile);
-                if (confirm("Удалить?")) {
-                    $('#uploaded-files').html('');
-                    $('#DelSubmit').hide();
-                    $('#CreateSubmit').hide();
-                    // room //Помещение
-                    // complect //Комплект изделий
-                    // product //Изделия
-                    propdelete(room);
-                    propdelete(complect);
-                    propdelete(product);
+            e.preventDefault();
+            var currfile = $('#currfile').val(); 
+            console.log('Файл-'+currfile);
+            if (confirm("Удалить?")) {
+                $('#uploaded-files').html('');
+                $('#DelSubmit').hide();
+                // room //Помещение
+                // complect //Комплект изделий
+                // product //Изделия
+                  propdelete(room);
+                  propdelete(complect);
+                  propdelete(product);
+                // // alert("Удаляем!");
+                // // var productList = document.querySelectorAll('#tb-head div.row');
+                // // console.log('productList: ', productList);
+                // // for (i = 0; i < productList.length; i++) {
+                // //     console.log('product: ', productList[i]);
+                // //     }
+                // // console.log('ID '+$('span[id="form-id"]').data('val'));
+                // var sdata=$.trim($('span[id="form-id"]').data('val'));
+                // // console.log(sdata);
                 
-                    console.log('Удаляем-'+currfile+' ...');
+                // var productList = $('span[id="name_'+sdata+'"]').parent().parent().parent();
 
-                    //выстраиваем  данные для POST
-                    var myData =    "recordToDelete="+currfile;
-                    jQuery.ajax({
-                        type: "POST", // HTTP метод  POST или GET
-                        url: "upload.php", //url-адрес, по которому будет отправлен запрос
-                        dataType:"text", // Тип данных
-                        data:myData, //post переменные
-                        success:function(response){
-                        // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-                        console.log(response);
-                        $('#drop-files').show();
+                // // console.log('productList: ', productList);
+                // for (i = 0; i < productList.length; i++) {
+                //     console.log('product: ', productList[i]);
+                // }                         
+                
+                // // $('span[id="name_'+sdata+'"]').parent().fadeOut("slow");
+                // // console.log('span[id="name_'+sdata+'"]');
+                // // console.log($('span[id="name_'+sdata+'"]').text());
+                // var clickedID = $('input[id="id"]').val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
+                // var DbNumberID = clickedID[1]; //и получаем номер из массива
+                // var tbl = $('input[id="tbl"]').val();                        
+                // var fieldid = $('input[id="fieldid"]').val(); 
+                
+                console.log('Удаляем-'+currfile+' ...');
 
-                        },
-                        error:function (xhr, ajaxOptions, thrownError){
-                            //выводим ошибку
-                            alert(thrownError);
-                        }
-                    });
-                    // $('#myModal').modal('hide');
-                    }// else {alert("Вы нажали кнопку отмена");}  
-            });
+                // $('#item_'+DbNumberID).fadeOut("slow");
+                // $('#myModal').modal('hide');  
+                // // return false;
+
+                //выстраиваем  данные для POST
+                var myData =    "recordToDelete="+currfile;
+                jQuery.ajax({
+                    type: "POST", // HTTP метод  POST или GET
+                    url: "upload.php", //url-адрес, по которому будет отправлен запрос
+                    dataType:"text", // Тип данных
+                    data:myData, //post переменные
+                    success:function(response){
+                    // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+                    console.log(response);
+                    $('#drop-files').show();
+
+                    },
+                    error:function (xhr, ajaxOptions, thrownError){
+                        //выводим ошибку
+                        alert(thrownError);
+                    }
+                });
+                // $('#myModal').modal('hide');
+            }// else {alert("Вы нажали кнопку отмена");}  
+        });
 
     // $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
 var excelObject = {
@@ -481,11 +503,7 @@ var room={}; //Помещение
 var complect={}; //Комплект изделий
 var product={}; //Изделия
 
-function Objx(name) {
-    this.name = name;
-  }
-Objx.prototype = excelObject;
-  
+
 
 function checkAddress(checkbox)
 {

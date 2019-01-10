@@ -69,7 +69,7 @@
             font-weight: bold;
             display: none;
         }
-        #DelSubmit{display: none;}
+        #DelSubmit,#CreateSubmit{display: none;}
         div.center, p.center, img.center {
             margin-left: auto !important;
             margin-right: auto !important;
