@@ -284,12 +284,11 @@
                     objxlsx[DbNumberID]=(new Objx(DbNumberID));
                     $('#DelSubmit').show();
                     $('#CreateSubmit').show();
-                    // propalertObjx(objxlsx,'name');                    
-                    // propalertObjx(objxlsx,'kd');
-                    propalertObjx(objxlsx, DbNumberID,'name');
-                    propalertObjx(objxlsx, DbNumberID,'kd');
-                    // alert( objx.name );
-                    
+                   
+                    // propalertObjx(objxlsx, DbNumberID,'name');
+                    // propalertObjx(objxlsx, DbNumberID,'kd');
+
+                   
                     // Формируем в виде списка все загруженные изображения
                     // data формируется в upload.php
                     // var dataSplit = data.split(':');
@@ -483,7 +482,7 @@ var excelObject = {
     room: {},
     complect: {},
     floor: '',
-    kd: '0',
+    kd: 0,
     dp: 0
     };
 var room={}; //Помещение
@@ -499,10 +498,14 @@ Objx.prototype = excelObject;
 function checkAddress(checkbox)
 {
     var tr=$(checkbox).parent().parent().parent();
+    var tblid = tr.parent().parent().attr('id');
+    // alert(tblid);
+    // alert(objxlsx[tblid].kd);
     var keyroom=tr.find("[id^='room_']").text();
     var keycomplect=tr.find("[id^='complect_']").text();
     var keyproduct=tr.find("[id^='product_']").text();
     var keyproduct2=tr.find("[id^='product2_']").text();
+    var keyproductApp=tr.find("[id^='productApp']").text();
     if (checkbox.checked)
     {        
         // tr.css({"color":"green","font-weight":"700"}); // жирный шрифт 
@@ -516,6 +519,8 @@ function checkAddress(checkbox)
         }else{
             if (keyproduct2 in product) {product[keyproduct2]++;}else{product[keyproduct2]=1;}
         }
+
+        if (keyproductApp in objxlsx[tblid].product) {objxlsx[tblid].product[keyproductApp]++;}else{objxlsx[tblid].product[keyproductApp]=1;}  
         // propalert(product) ;
         
        tr.find("[id^='product_']").text();
@@ -523,6 +528,7 @@ function checkAddress(checkbox)
           propoutput('#room_output',room);
           propoutput('#complect_output',complect);
           propoutput('#product_output',product);
+          propoutput('#productApp_output',objxlsx[tblid].product);
         
     }else{
         
@@ -532,10 +538,15 @@ function checkAddress(checkbox)
         if (complect[keycomplect]>1) {complect[keycomplect]--;}else{delete complect[keycomplect];tr.css({"color":"black"});}
 
         if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];tr.css({"color":"black"});}
+
+        // if (keyproductApp in objxlsx[tblid].product) {objxlsx[tblid].product[keyproductApp]++;}else{objxlsx[tblid].product[keyproductApp]=1;} 
+
+        if (objxlsx[tblid].product[keyproductApp]>1) {objxlsx[tblid].product[keyproductApp]--;}else{delete objxlsx[tblid].product[keyproductApp];tr.css({"color":"black"});}
         
         propoutput('#room_output',room);
         propoutput('#complect_output',complect);
         propoutput('#product_output',product);
+        propoutput('#productApp_output',objxlsx[tblid].product);
 
     }
 }//checkAddress
@@ -556,7 +567,7 @@ function propalertObjx(obj,name,key){
     //   } 
 
       
-        alert( obj[name][key]); // name, surname, age
+        alert( obj[name][key]); 
       
 }
 function propoutput(id,obj){

@@ -44,7 +44,7 @@ for ($i= $Start; $i <= $endRow; $i++)
 //  echo "<pre>";
 // 	print_r($Res);
 //  echo "</pre>";
- echo "<p><b>Изделия: </b><span id=\"product_output\"></span> </p>";
+ echo "<p><b>Изделия: </b><span id=\"productApp_output\"></span> </p>";
  echo "<br>";
 					echo '<table border="1" class="table table-striped table-responsive" id="'.current(explode(".", $randomName)).'">'; 			
 		
@@ -74,7 +74,7 @@ for ($i= $Start; $i <= $endRow; $i++)
                                      </div></td>';
                                 echo "<td>". $Res[$row]->client." </td>";
                                 echo "<td>". $Res[$row]->order." </td>";                                
-                                echo '<td id="product_'.$row.'">'. $Res[$row]->product. '</td>'; 
+                                echo '<td id="productApp'.$row.'">'. $Res[$row]->product. '</td>'; 
                                 echo "<td>".$coord."</td>";// для ручного копирования                          
                                 echo "<td>". $Res[$row]->name." </td>";
                                 echo "<td>". str_replace(".", ",", $Res[$row]->sum)." </td>";
