@@ -524,7 +524,7 @@ function checkAddress(checkbox)
         }else{
             if (keyproduct2 in product) {product[keyproduct2]++;}else{product[keyproduct2]=1;}
         }
-        
+        // propalert(product) ;
         
        tr.find("[id^='product_']").text();
         //   propalert(room) ;  
@@ -535,11 +535,11 @@ function checkAddress(checkbox)
     }else{
         
         // tr.css({"color":"black","font-weight":"400"}); // жирный шрифт 
-        tr.css({"color":"black"});
-        if (room[keyroom]>1) {room[keyroom]--;}else{delete room[keyroom];}
-        if (complect[keycomplect]>1) {complect[keycomplect]--;}else{delete complect[keycomplect];}
+        // tr.css({"color":"black"});
+        if (room[keyroom]>1) {room[keyroom]--;}else{delete room[keyroom];tr.css({"color":"black"}); }
+        if (complect[keycomplect]>1) {complect[keycomplect]--;}else{delete complect[keycomplect];tr.css({"color":"black"});}
 
-        if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];}
+        if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];tr.css({"color":"black"});}
         
         propoutput('#room_output',room);
         propoutput('#complect_output',complect);
