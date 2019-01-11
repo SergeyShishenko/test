@@ -16,7 +16,24 @@ if(isset($_POST["arr"]) )
 {
 	echo "<pre>";
 	print_r($_POST["arr"]);
- 	echo "</pre>";
+	echo "</pre>";
+	 
+	
+	 foreach ($_POST["arr"] as $key=>$v1)
+	  {
+		echo $key;
+		echo "<br>";
+		echo $v1['id']." ";
+		foreach ($v1 as  $key=>$v2) {
+			echo "row:".$key;
+			
+			echo ' {kd-'.$v2['kd']." ";
+			echo ' dp-'.$v2['dp']."}";
+			echo "<br>";
+		}
+	  }
+		
+	
 	exit();
 }
 

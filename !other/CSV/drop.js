@@ -472,7 +472,7 @@
                     }// else {alert("Вы нажали кнопку отмена");}  
             });
 
-              //Удаляем запись 
+              //Генерация xls
            $("body").on("click", "#CreateSubmit", function(e) {
             // e.preventDefault();
 
@@ -482,7 +482,7 @@
             // objxlsx – массив, который перебирается.
 
             var data;                 
-            data = new Object();
+            data = {};
             objxlsx.forEach(function(item) {
                 // var name =objxlsx[n];
                 var f=item; // ключ 
@@ -512,74 +512,7 @@
                     }
                 });
 
-               //пример
-                // var games = $('.game');
-                // var data;
-                 
-                // data = new Object();
-                // for (i = 0; i < games.length; i++) {  
-                //     data['games[' + i + '][name]'] = $(games[i]).find('.game-name').val();
-                //     data['games[' + i + '][img]']  = $(games[i]).find('.game-img').val();
-                //     data['games[' + i + '][url]']  = $(games[i]).find('.game-url').val();
-                // }
-                 
-                // $.ajax({            
-                //     url: 'upload.php',
-                //     type: "POST",
-                //     data: data
-
-                // });
-
-                //php
-                // foreach($_POST['arr'] as $id => $g) {
-                //     echo "I get game #" . $i . $g['name'];    
-                //     ...
-                // }
-
-
-
-
-
-
-         
-
-            // var myJSONText = JSON.stringify(objxlsx);
-            // alert(myJSONText);
-            // var currfile = $('#currfile').val(); 
-            // console.log('Файл-'+currfile);
-            // if (confirm("Удалить?")) {
-            //     $('#uploaded-files').html('');
-            //     $('#DelSubmit').hide();
-            //     $('#CreateSubmit').hide();
-            //     // room //Помещение
-            //     // complect //Комплект изделий
-            //     // product //Изделия
-            //     propdelete(room);
-            //     propdelete(complect);
-            //     propdelete(product);
-            
-                // console.log('Удаляем-'+currfile+' ...');
-
-                // //выстраиваем  данные для POST
-                // var myData =    "recordToDelete="+currfile;
-                // jQuery.ajax({
-                //     type: "POST", // HTTP метод  POST или GET
-                //     url: "upload.php", //url-адрес, по которому будет отправлен запрос
-                //     dataType:"text", // Тип данных
-                //     data:myData, //post переменные
-                //     success:function(response){
-                //     // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-                //     console.log(response);
-                //     $('#drop-files').show();
-
-                //     },
-                //     error:function (xhr, ajaxOptions, thrownError){
-                //         //выводим ошибку
-                //         alert(thrownError);
-                //     }
-                // });
-                // // $('#myModal').modal('hide');
-                // }// else {alert("Вы нажали кнопку отмена");}  
+          
         });
 
     // $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
