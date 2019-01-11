@@ -12,6 +12,15 @@
 //     die(mysql_error());
 // }
 
+if(isset($_POST["arr"]) )
+{
+	echo "<pre>";
+	print_r($_POST["arr"]);
+ 	echo "</pre>";
+	exit();
+}
+
+
 if(isset($_POST["recordToDelete"]) )
 {
 	if (unlink("xlscsv/".$_POST["recordToDelete"])){
