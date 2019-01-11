@@ -553,9 +553,9 @@ function checkAddress(checkbox)
     var keyproduct=tr.find("[id^='product_']").text();
     var keyproduct2=tr.find("[id^='product2_']").text();
     var keyproductApp=tr.find("[id^='productApp']").text();
-
-    if (!(keyproductApp in objxlsx[tblid])){objxlsx[tblid][keyproductApp]=new Objx(keyproductApp);}// проверка на существование строки в массиве
-
+    if(!!keyproductApp){ 
+        if (!(keyproductApp in objxlsx[tblid])){objxlsx[tblid][keyproductApp]=new Objx(keyproductApp);}// проверка на существование строки в массиве
+    }
     
     // alert(objxlsx[tblid][keyproductApp].name);
     if (checkbox.checked)
@@ -571,14 +571,17 @@ function checkAddress(checkbox)
         }else{
             if (keyproduct2 in product) {product[keyproduct2]++;}else{product[keyproduct2]=1;}
         }
-
-        if (keyproductApp in objxlsx[tblid][keyproductApp].product) {objxlsx[tblid][keyproductApp].product[keyproductApp]++;}else{objxlsx[tblid][keyproductApp].product[keyproductApp]=1;}  
+        if(!!keyproductApp){ 
+           if (keyproductApp in objxlsx[tblid][keyproductApp].product) {objxlsx[tblid][keyproductApp].product[keyproductApp]++;}else{objxlsx[tblid][keyproductApp].product[keyproductApp]=1;}  
+           objxlsx[tblid][keyproductApp][typecheck]=1;
+        }
+         
         
         // установка типа клика
         // alert(typecheck);
         // if (typecheck =="kd"){objxlsx[tblid][keyproductApp].kd=1; }
         // else{objxlsx[tblid][keyproductApp].dp=1;}
-        objxlsx[tblid][keyproductApp][typecheck]=1;
+        
 
         // alert('id : '+keyproductApp+' kd : '+ objxlsx[tblid][keyproductApp].kd +', dp : '+ objxlsx[tblid][keyproductApp].dp);
         
@@ -588,7 +591,9 @@ function checkAddress(checkbox)
           propoutput('#room_output',room);
           propoutput('#complect_output',complect);
           propoutput('#product_output',product);
-          propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
+          if(!!keyproductApp){ 
+            propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
+          }
         
     }else{
         
@@ -600,10 +605,12 @@ function checkAddress(checkbox)
         if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];tr.css({"color":"black"});}
 
         // if (keyproductApp in objxlsx[tblid].product) {objxlsx[tblid].product[keyproductApp]++;}else{objxlsx[tblid].product[keyproductApp]=1;} 
-
-        if (objxlsx[tblid][keyproductApp].product[keyproductApp]>1) {objxlsx[tblid][keyproductApp].product[keyproductApp]--;}else{delete objxlsx[tblid][keyproductApp].product[keyproductApp];tr.css({"color":"black"});}
+        if(!!keyproductApp){ 
+            if (objxlsx[tblid][keyproductApp].product[keyproductApp]>1) {objxlsx[tblid][keyproductApp].product[keyproductApp]--;}else{delete objxlsx[tblid][keyproductApp].product[keyproductApp];tr.css({"color":"black"});}
+            objxlsx[tblid][keyproductApp][typecheck]=0;
+        }
         // установка типа клика
-        objxlsx[tblid][keyproductApp][typecheck]=0;
+        
         // if (typecheck =="kd"){objxlsx[tblid][keyproductApp].kd=0; }
         // else{objxlsx[tblid][keyproductApp].dp=0;}
         // alert('kd : '+ objxlsx[tblid][keyproductApp].kd +', dp : '+ objxlsx[tblid][keyproductApp].dp);
@@ -611,7 +618,9 @@ function checkAddress(checkbox)
         propoutput('#room_output',room);
         propoutput('#complect_output',complect);
         propoutput('#product_output',product);
-        propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
+        if(!!keyproductApp){ 
+            propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
+        }
 
     }
 }//checkAddress
