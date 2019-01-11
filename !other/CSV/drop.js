@@ -237,6 +237,7 @@
         // Загрузка изображений на сервер
         // $('#upload-button .upload').click(function() {
         var objxlsx = [];
+        var DbNumberID='';
         $("body").on("click","#upload-button .upload",function() {
             // alert("!!");
             
@@ -278,9 +279,9 @@
                     $('#drop-files').hide();
                     $('#uploaded-files').append(data);
                     var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
-                    var DbNumberID = clickedID[0]; //и получаем номер из массива
+                    DbNumberID = clickedID[0]; //и получаем номер из массива
                     
-                    // objxlsx.push(new Objx(DbNumberID));
+                    objxlsx.push(DbNumberID);
                     // objxlsx[DbNumberID]=(new Objx(DbNumberID));
                     objxlsx[DbNumberID]=[];
                     $('#DelSubmit').show();
@@ -471,6 +472,63 @@
                     }// else {alert("Вы нажали кнопку отмена");}  
             });
 
+              //Удаляем запись 
+           $("body").on("click", "#CreateSubmit", function(e) {
+            // e.preventDefault();
+
+            // alert('length-'+objxlsx.length);
+            // item – очередной элемент массива.
+            // i – его номер.
+            // objxlsx – массив, который перебирается.
+
+            objxlsx.forEach(function(item) {
+                // var name =objxlsx[n];
+                var f=item; // ключ 
+                    objxlsx[item].forEach(function(item, i) {
+                        alert( f + ": "+i + "- "  + "{ kd=> "+item.kd + ", dp=> "+item.dp +" }" );
+                    });
+                });   
+         
+
+            // var myJSONText = JSON.stringify(objxlsx);
+            // alert(myJSONText);
+            // var currfile = $('#currfile').val(); 
+            // console.log('Файл-'+currfile);
+            // if (confirm("Удалить?")) {
+            //     $('#uploaded-files').html('');
+            //     $('#DelSubmit').hide();
+            //     $('#CreateSubmit').hide();
+            //     // room //Помещение
+            //     // complect //Комплект изделий
+            //     // product //Изделия
+            //     propdelete(room);
+            //     propdelete(complect);
+            //     propdelete(product);
+            
+                // console.log('Удаляем-'+currfile+' ...');
+
+                // //выстраиваем  данные для POST
+                // var myData =    "recordToDelete="+currfile;
+                // jQuery.ajax({
+                //     type: "POST", // HTTP метод  POST или GET
+                //     url: "upload.php", //url-адрес, по которому будет отправлен запрос
+                //     dataType:"text", // Тип данных
+                //     data:myData, //post переменные
+                //     success:function(response){
+                //     // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+                //     console.log(response);
+                //     $('#drop-files').show();
+
+                //     },
+                //     error:function (xhr, ajaxOptions, thrownError){
+                //         //выводим ошибку
+                //         alert(thrownError);
+                //     }
+                // });
+                // // $('#myModal').modal('hide');
+                // }// else {alert("Вы нажали кнопку отмена");}  
+        });
+
     // $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
 var excelObject = {
     id: '',
@@ -536,7 +594,7 @@ function checkAddress(checkbox)
         // else{objxlsx[tblid][keyproductApp].dp=1;}
         objxlsx[tblid][keyproductApp][typecheck]=1;
 
-        alert('kd : '+ objxlsx[tblid][keyproductApp].kd +', dp : '+ objxlsx[tblid][keyproductApp].dp);
+        // alert('id : '+keyproductApp+' kd : '+ objxlsx[tblid][keyproductApp].kd +', dp : '+ objxlsx[tblid][keyproductApp].dp);
         
 
        tr.find("[id^='product_']").text();
@@ -562,7 +620,7 @@ function checkAddress(checkbox)
         objxlsx[tblid][keyproductApp][typecheck]=0;
         // if (typecheck =="kd"){objxlsx[tblid][keyproductApp].kd=0; }
         // else{objxlsx[tblid][keyproductApp].dp=0;}
-        alert('kd : '+ objxlsx[tblid][keyproductApp].kd +', dp : '+ objxlsx[tblid][keyproductApp].dp);
+        // alert('kd : '+ objxlsx[tblid][keyproductApp].kd +', dp : '+ objxlsx[tblid][keyproductApp].dp);
         
         propoutput('#room_output',room);
         propoutput('#complect_output',complect);
