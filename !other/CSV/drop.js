@@ -281,7 +281,8 @@
                     var DbNumberID = clickedID[0]; //и получаем номер из массива
                     
                     // objxlsx.push(new Objx(DbNumberID));
-                    objxlsx[DbNumberID]=(new Objx(DbNumberID));
+                    // objxlsx[DbNumberID]=(new Objx(DbNumberID));
+                    objxlsx[DbNumberID]=[];
                     $('#DelSubmit').show();
                     $('#CreateSubmit').show();
                    
@@ -499,7 +500,8 @@ function checkAddress(checkbox)
 {
     var tr=$(checkbox).parent().parent().parent();
     var tblid = tr.parent().parent().attr('id');
-    var typecheck =$(checkbox).attr('name');
+    var typecheck =$(checkbox).attr('name');// kd,dp
+    
     // alert($(checkbox).attr('name'));
     // alert(objxlsx[tblid].kd);
     var keyroom=tr.find("[id^='room_']").text();
@@ -507,6 +509,11 @@ function checkAddress(checkbox)
     var keyproduct=tr.find("[id^='product_']").text();
     var keyproduct2=tr.find("[id^='product2_']").text();
     var keyproductApp=tr.find("[id^='productApp']").text();
+
+    if (!(keyproductApp in objxlsx[tblid])){objxlsx[tblid][keyproductApp]=new Objx(keyproductApp);}// проверка на существование строки в массиве
+
+    
+    // alert(objxlsx[tblid][keyproductApp].name);
     if (checkbox.checked)
     {        
         // tr.css({"color":"green","font-weight":"700"}); // жирный шрифт 
@@ -521,12 +528,15 @@ function checkAddress(checkbox)
             if (keyproduct2 in product) {product[keyproduct2]++;}else{product[keyproduct2]=1;}
         }
 
-        if (keyproductApp in objxlsx[tblid].product) {objxlsx[tblid].product[keyproductApp]++;}else{objxlsx[tblid].product[keyproductApp]=1;}  
+        if (keyproductApp in objxlsx[tblid][keyproductApp].product) {objxlsx[tblid][keyproductApp].product[keyproductApp]++;}else{objxlsx[tblid][keyproductApp].product[keyproductApp]=1;}  
         
         // установка типа клика
-        objxlsx[tblid][typecheck]=1;
+        // alert(typecheck);
+        // if (typecheck =="kd"){objxlsx[tblid][keyproductApp].kd=1; }
+        // else{objxlsx[tblid][keyproductApp].dp=1;}
+        objxlsx[tblid][keyproductApp][typecheck]=1;
 
-        alert('kd : '+ objxlsx[tblid].kd +', dp : '+ objxlsx[tblid].dp);
+        alert('kd : '+ objxlsx[tblid][keyproductApp].kd +', dp : '+ objxlsx[tblid][keyproductApp].dp);
         
 
        tr.find("[id^='product_']").text();
@@ -534,7 +544,7 @@ function checkAddress(checkbox)
           propoutput('#room_output',room);
           propoutput('#complect_output',complect);
           propoutput('#product_output',product);
-          propoutput('#productApp_output',objxlsx[tblid].product);
+          propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
         
     }else{
         
@@ -547,15 +557,17 @@ function checkAddress(checkbox)
 
         // if (keyproductApp in objxlsx[tblid].product) {objxlsx[tblid].product[keyproductApp]++;}else{objxlsx[tblid].product[keyproductApp]=1;} 
 
-        if (objxlsx[tblid].product[keyproductApp]>1) {objxlsx[tblid].product[keyproductApp]--;}else{delete objxlsx[tblid].product[keyproductApp];tr.css({"color":"black"});}
+        if (objxlsx[tblid][keyproductApp].product[keyproductApp]>1) {objxlsx[tblid][keyproductApp].product[keyproductApp]--;}else{delete objxlsx[tblid][keyproductApp].product[keyproductApp];tr.css({"color":"black"});}
         // установка типа клика
-        objxlsx[tblid][typecheck]=0;
-        alert('kd : '+ objxlsx[tblid].kd +', dp : '+ objxlsx[tblid].dp);
+        objxlsx[tblid][keyproductApp][typecheck]=0;
+        // if (typecheck =="kd"){objxlsx[tblid][keyproductApp].kd=0; }
+        // else{objxlsx[tblid][keyproductApp].dp=0;}
+        alert('kd : '+ objxlsx[tblid][keyproductApp].kd +', dp : '+ objxlsx[tblid][keyproductApp].dp);
         
         propoutput('#room_output',room);
         propoutput('#complect_output',complect);
         propoutput('#product_output',product);
-        propoutput('#productApp_output',objxlsx[tblid].product);
+        propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
 
     }
 }//checkAddress
