@@ -436,14 +436,7 @@
            $("body").on("click", "#DelSubmit", function(e) {
                 e.preventDefault();
                 var currfile = $('#currfile').val(); 
-
-            // alert(objxlsx[DbNumberID][1].product);
-
-                // propdelete(objxlsx,DbNumberID);
-                // return;
-
                 console.log('Файл-'+currfile);
-                
                 if (confirm("Удалить?")) {
                     $('#uploaded-files').html('');
                     $('#DelSubmit').hide();
@@ -453,10 +446,7 @@
                     // product //Изделия
                     propdelete(room);
                     propdelete(complect);
-                    // propdelete(product);
-                    // propdelete(objxlsx[DbNumberID][1].product);
-                    keydelete(objxlsx[DbNumberID]);
-                    propdelete(objxlsx[DbNumberID]);
+                    propdelete(product);
                 
                     console.log('Удаляем-'+currfile+' ...');
 
@@ -616,19 +606,8 @@ function checkAddress(checkbox)
 
         // if (keyproductApp in objxlsx[tblid].product) {objxlsx[tblid].product[keyproductApp]++;}else{objxlsx[tblid].product[keyproductApp]=1;} 
         if(!!keyproductApp){ 
-            if (objxlsx[tblid][keyproductApp].product[keyproductApp]>1) {
-                objxlsx[tblid][keyproductApp].product[keyproductApp]--;
-                objxlsx[tblid][keyproductApp][typecheck]=0;
-                propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
-            }else{
-                delete objxlsx[tblid][keyproductApp].product[keyproductApp];
-                // alert(keyproductApp);
-                propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
-                // propdelete(objxlsx[DbNumberID][keyproductApp].product);
-                delete objxlsx[tblid][keyproductApp];
-                tr.css({"color":"black"});
-            }
-            // objxlsx[tblid][keyproductApp][typecheck]=0;
+            if (objxlsx[tblid][keyproductApp].product[keyproductApp]>1) {objxlsx[tblid][keyproductApp].product[keyproductApp]--;}else{delete objxlsx[tblid][keyproductApp].product[keyproductApp];tr.css({"color":"black"});}
+            objxlsx[tblid][keyproductApp][typecheck]=0;
         }
         // установка типа клика
         
@@ -639,9 +618,9 @@ function checkAddress(checkbox)
         propoutput('#room_output',room);
         propoutput('#complect_output',complect);
         propoutput('#product_output',product);
-        // if(!!keyproductApp){ 
-        //     propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
-        // }
+        if(!!keyproductApp){ 
+            propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
+        }
 
     }
 }//checkAddress
@@ -651,16 +630,9 @@ function propalert(obj){
         alert( prop +' : '+obj[prop]); // name, surname, age
       } 
 }
-function keydelete(obj){
-    for (var prop in obj) {
-        // alert( prop ); 
-        propdelete(objxlsx[DbNumberID][prop].product);
-      } 
-}
 function propalertObj(obj,name){
   
         alert( obj[name]); // name, surname, age
-        
      
 }
 function propalertObjx(obj,name,key){
@@ -684,20 +656,6 @@ function propoutput(id,obj){
       }
 }
 
-function propdelete2(obj,name){
-
-    // obj[name].forEach(function(item) {
-    // // var name =objxlsx[n];
-    // var f=item; // ключ 
-    obj[name].forEach(function(item, i) {
-            alert( i + "- "  + "{ kd=> "+item.kd + ", dp=> "+item.dp +" }" );
-            // data['arr[' + row+ '][name]'] = f;
-            // data['arr[' + f + '][' + i + '][kd]']  = item.kd;
-            // data['arr[' + f + '][' + i + '][dp]']  = item.dp;
-        });
-    // }); 
-
-}
     $('.go_to').click( function(){ // ловим клик по ссылке с классом go_to
         
     var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href, должен быть селектором, т.е. например начинаться с # или .

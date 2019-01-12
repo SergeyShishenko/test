@@ -21,6 +21,7 @@ if(isset($_POST["arr"]) )
 	
 	 foreach ($_POST["arr"] as $key=>$v1)
 	  {
+		echo '<hr>';
 		echo $key;
 		echo "<br>";
 		echo $v1['id']." ";
