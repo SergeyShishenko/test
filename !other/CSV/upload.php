@@ -17,27 +17,32 @@ if(isset($_POST["arr"]) )
 	// echo "<pre>";
 	// print_r($_POST["arr"]);
 	// echo "</pre>";
-	 if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php')) 
+	 if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php')) 
 	 	{
-			require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
+			
+			// echo "localhost !!!!!!!";
+			// exit();
+			require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
 		}
 		else {
-			require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
+			require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
 		}
 
 		$objReader = PHPExcel_IOFactory::createReader('Excel5');
+		// echo var_dump($objReader);
+		// 	exit();
 
-        if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/priсe_template.xls")) {
-			echo $_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/priсe_template.xls";
-			exit();
+        if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls")) {
+			// echo "<br> Найден ".$_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls";
+			// exit();
 			
-			$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/priсe_template.xls");// для localhost !!!!!!!
+			$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls");// для localhost !!!!!!!
 			
         }
         else {
-			echo $_SERVER['SCRIPT_FILENAME'] ;
-			exit();
-			$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/priсe_template.xls");// для сайта !!!!!!!
+			// echo "<br> Не найден -".dirname(__FILE__)."\\PR_template.xls" ;
+			// exit();
+			$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/PR_template.xls");// для сайта !!!!!!!
         }
 		// $objPHPExcel->getActiveSheet()->setCellValue('D1', PHPExcel_Shared_Date::PHPToExcel(time()));
 
@@ -45,8 +50,8 @@ if(isset($_POST["arr"]) )
 	 foreach ($_POST["arr"] as $key=>$v1)
 	  {
 		echo '<hr>';
-		echo "filename ".$key;
-		$filename=$key;
+		echo "filename ".$key.".xlsx";
+		$filename=$key.".xlsx";
 		echo "<br>";
 		echo $v1['id']." ";
 
@@ -75,16 +80,18 @@ if(isset($_POST["arr"]) )
 			echo ' dp-'.$v2['dp']."}";
 			echo "<br>";
 
-
-			$row = $i+$Start;
+			$baseRow = 3;
+			$row = ($i-1)+$baseRow;
 			$objPHPExcel->getActiveSheet()->insertNewRowBefore($row,1);
 
 			
 
 			// $sheet->getColumnDimension('K')->setWidth(40); 
 			$objPHPExcel->getActiveSheet()->setCellValue('A'.$row, 'Шишенко')
-										->setCellValue('F'.$row, 'Шишенко')									
-										->setCellValue('G'.$row, 'Шишенко');
+										->setCellValue('B'.$row, $client)									
+										->setCellValue('C'.$row, $order)									
+										->setCellValue('D'.$row, $i);									
+									
 		}
 		
 
@@ -98,13 +105,14 @@ if(isset($_POST["arr"]) )
 				
 				$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
 				
-				$fname="priсe-".date('m-d-Y-H-i-s').".xls";
+				$fname="price-".date('m-d-Y-H-i-s').".xls";
 
-				if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/priсe_template.xls")) {
-					$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
+				if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls")) {
+					
+					$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
 				}
 				else {
-					$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
+					$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
 				}
 
 				echo "./vpi/".$fname;			
