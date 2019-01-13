@@ -14,25 +14,101 @@
 
 if(isset($_POST["arr"]) )
 {
-	echo "<pre>";
-	print_r($_POST["arr"]);
-	echo "</pre>";
-	 
+	// echo "<pre>";
+	// print_r($_POST["arr"]);
+	// echo "</pre>";
+	 if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php')) 
+	 	{
+			require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
+		}
+		else {
+			require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
+		}
+
+		$objReader = PHPExcel_IOFactory::createReader('Excel5');
+
+        if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/priсe_template.xls")) {
+			echo $_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/priсe_template.xls";
+			exit();
+			
+			$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/priсe_template.xls");// для localhost !!!!!!!
+			
+        }
+        else {
+			echo $_SERVER['SCRIPT_FILENAME'] ;
+			exit();
+			$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/priсe_template.xls");// для сайта !!!!!!!
+        }
+		// $objPHPExcel->getActiveSheet()->setCellValue('D1', PHPExcel_Shared_Date::PHPToExcel(time()));
+
 	
 	 foreach ($_POST["arr"] as $key=>$v1)
 	  {
 		echo '<hr>';
-		echo $key;
+		echo "filename ".$key;
+		$filename=$key;
 		echo "<br>";
 		echo $v1['id']." ";
-		foreach ($v1 as  $key=>$v2) {
-			echo "row:".$key;
+
+			# Указываем путь до файла  .xlsx			
+			$File = "$_SERVER[DOCUMENT_ROOT]/www/!other/CSV/xlscsv/$filename";			
+			$Excel = PHPExcel_IOFactory::load($File);			
+			$order=end(explode(" ", $Excel->getActiveSheet()->getCell('Document1')->getValue())); 		
+			$client= $Excel->getActiveSheet()->getCell('Customer')->getValue(); 		
+			$coordRow= $Excel->getActiveSheet()->getCell('NumStart')->getRow(); //номер строки '5'
+			$coordColSum= $Excel->getActiveSheet()->getCell('Sum')->getColumn(); //столбец 'A'
+			$coordColProduct= $Excel->getActiveSheet()->getCell('NumStart')->getColumn(); //столбец 'O'
+			$coordColName= $Excel->getActiveSheet()->getCell('Name')->getColumn(); //столбец 'B'
+			# С какой строки начинаются данные
+			$Start = $coordRow-1;
+			$endRow= $Excel->getActiveSheet()->getCell('NumEnd')->getRow()-1; //номер строки '40'
+			if(!$endRow) {$endRow=1000;}// пустая ячейка
+			$Res = array();
+
+
+
+		foreach ($v1 as  $i=>$v2) {
+			echo "row:".$i;
+			// $i=$i+$Start;
 			
 			echo ' {kd-'.$v2['kd']." ";
 			echo ' dp-'.$v2['dp']."}";
 			echo "<br>";
+
+
+			$row = $i+$Start;
+			$objPHPExcel->getActiveSheet()->insertNewRowBefore($row,1);
+
+			
+
+			// $sheet->getColumnDimension('K')->setWidth(40); 
+			$objPHPExcel->getActiveSheet()->setCellValue('A'.$row, 'Шишенко')
+										->setCellValue('F'.$row, 'Шишенко')									
+										->setCellValue('G'.$row, 'Шишенко');
 		}
-	  }
+		
+
+	  }//foreach $_POST["arr"]
+
+
+
+				$objPHPExcel->getActiveSheet()->removeRow($baseRow-1,1);//удаление строки
+			
+				// $objPHPExcel->getActiveSheet()->setAutoFilter($objPHPExcel->getActiveSheet()->calculateWorksheetDimension());
+				
+				$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+				
+				$fname="priсe-".date('m-d-Y-H-i-s').".xls";
+
+				if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/priсe_template.xls")) {
+					$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
+				}
+				else {
+					$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
+				}
+
+				echo "./vpi/".$fname;			
+				unset($data);	
 		
 	
 	exit();
@@ -241,7 +317,7 @@ elseif ($mime =="xlsx"){
 	$randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 	if(file_put_contents($uploaddir.$randomName, $decodedData)) {		
 		$filename=$uploaddir.$randomName;
-		require_once "$_SERVER[DOCUMENT_ROOT]/www/!other/XLSX/index.php"; 
+		require_once "$_SERVER[DOCUMENT_ROOT]/www/!other/XLSX/getxlsx.php"; 
 		}
 	// echo "Файл XLSX!";
 }//elseif
