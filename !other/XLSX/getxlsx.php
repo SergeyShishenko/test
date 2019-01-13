@@ -46,7 +46,8 @@ for ($i= $Start; $i <= $endRow; $i++)
 //  echo "</pre>";
  echo "<p><b>Изделия: </b><span id=\"productApp_output\"></span> </p>";
  echo "<br>";
-					echo '<table border="1" class="table table-striped table-responsive" id="'.current(explode(".", $randomName)).'">'; 			
+ $idfile=current(explode(".", $randomName));
+					echo '<table border="1" class="table table-striped table-responsive" id="'.$idfile.'">'; 			
 		
 						$num = count ($Res); //строк с шапкой
                         // echo 'num '. $num; 
@@ -65,8 +66,8 @@ for ($i= $Start; $i <= $endRow; $i++)
                                 
                             }else{
                                 echo '<td> <div class="material-switch pull-right">
-                                     <input id="kd'.$row.'" name="kd"  type="checkbox" onclick="checkAddress(this)"/>
-                                     <label for="kd'.$row.'" class="label-success"></label>
+                                     <input id="kd'.$row.$idfile.'" name="kd"  type="checkbox" onclick="checkAddress(this)"/>
+                                     <label for="kd'.$row.$idfile.'" class="label-success"></label>
                                      </div></td>';
                                 echo '<td> <div class="material-switch pull-right">
                                      <input id="dp'.$row.'" name="dp" type="checkbox" onclick="checkAddress(this)"/>

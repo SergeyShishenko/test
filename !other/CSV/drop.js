@@ -8,7 +8,7 @@
         jQuery.event.props.push('dataTransfer');
         // alert();
         // Максимальное количество загружаемых изображений за одни раз
-        var maxFiles = 1;
+        var maxFiles = 100;
         // var countDOCFiles = 0;
         // var countPDFFiles = 0;
         // var countXLSFiles = 0;
@@ -276,7 +276,7 @@
                     //     $('#loading-content').html('Загружается '+fileName);
                     // }
                     restartFiles();
-                    $('#drop-files').hide();
+                    // $('#drop-files').hide();
                     $('#uploaded-files').append(data);
                     var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
                     DbNumberID = clickedID[0]; //и получаем номер из массива
