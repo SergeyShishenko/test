@@ -71,9 +71,9 @@ if(isset($_POST["arr"]) )
 			$Res = array();
 
 
-
-		foreach ($v1 as  $i=>$v2) {
-			echo "row:".$i;
+$i=0;
+		foreach ($v1 as  $v=>$v2) {
+			echo "row:".$v;
 			// $i=$i+$Start;
 			
 			echo ' {kd-'.$v2['kd']." ";
@@ -81,7 +81,7 @@ if(isset($_POST["arr"]) )
 			echo "<br>";
 
 			$baseRow = 3;
-			$row = ($i-1)+$baseRow;
+			$row = ($i)+$baseRow;
 			$objPHPExcel->getActiveSheet()->insertNewRowBefore($row,1);
 
 			
@@ -90,7 +90,17 @@ if(isset($_POST["arr"]) )
 			$objPHPExcel->getActiveSheet()->setCellValue('A'.$row, 'Шишенко')
 										->setCellValue('B'.$row, $client)									
 										->setCellValue('C'.$row, $order)									
-										->setCellValue('D'.$row, $i);									
+										->setCellValue('D'.$row, $v)									
+										->setCellValue('F'.$row, $Excel->getActiveSheet()->getCell($coordColName.($v+1+$Start) )->getValue() )	
+										->setCellValue('G'.$row, $Excel->getActiveSheet()->getCell($coordColSum.($v+1+$Start) )->getValue() )	
+										->setCellValue('H'.$row, 0.0135 )	
+										->setCellValue('I'.$row, $v2['dp'] )	
+										->setCellValue('J'.$row, '=(G'.$row.'*H'.$row.')*I'.$row )
+										->setCellValue('K'.$row, 0.0135  )	
+										->setCellValue('L'.$row, $v2['kd'] )	
+										->setCellValue('M'.$row, '=(G'.$row.'*K'.$row.')*L'.$row );	
+										$i++;	
+			$objPHPExcel->getActiveSheet()->getRowDimension($row)->setRowHeight(-1);							
 									
 		}
 		
