@@ -225,7 +225,10 @@ function unique_multidim_array($array, $key) {
 			while (($buffer = fgets($handle, 4096)) !== false) {
 				// echo $buffer . "<hr>";
 				list($client,$address,$number_order,,,$complect,$product,$product2,,,,$def,,,,,,,,,,$floor,$room,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
-			
+				$complect = end(explode('/', $complect));
+				$room = explode('/', $room)[0];
+				
+			//                           0        1        2             3        4        5     6     7        8
 				array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor));					
 				
 			}//while
@@ -247,7 +250,10 @@ function unique_multidim_array($array, $key) {
 			}	
 			if(count(unique_multidim_array($data,8))==2)
 			{
-			echo "<p><b>Этаж: </b><span id=\"floor_output\">".$data[1][8]."</span></p>";array_push($exclude,"8");
+				echo "<p><b>Этаж: </b><span id=\"floor_output\">".$data[1][8]."</span></p>";array_push($exclude,"8");
+			}
+			else{
+				echo "<p><b>Этаж: </b><span id=\"floor_output\"></span></p>";	
 			}
 			echo "<p><b>Помещение: </b><span id=\"room_output\"></span> </p>";
 			echo "<p><b>Комплект изделий:</b><span id=\"complect_output\"></span> </p>";
