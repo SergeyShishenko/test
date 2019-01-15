@@ -17,5 +17,16 @@
 //       echo $value;
 // }
 
-echo 'Однажды Арнольд сказал: "I\'ll be back"'
+// echo 'Однажды Арнольд сказал: "I\'ll be back"'
+
+// $hello = 'Hello!';
+// foreach ($hello as $key => $val)
+// {
+// 	echo $val;
+// }
+
+$a = 1;
+$b = 1;
+$c = $a + $b++;
+echo $c;
 ?>
