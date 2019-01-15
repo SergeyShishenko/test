@@ -536,10 +536,11 @@ var excelObject = {
     def: '',
     room: {},
     complect: {},
-    floor: '',
+    floor: {},
     kd: 0,
     dp: 0
     };
+var floor={}; //Этаж
 var room={}; //Помещение
 var complect={}; //Комплект изделий
 var product={}; //Изделия
@@ -562,6 +563,7 @@ function checkAddress(checkbox)
     var keycomplect=tr.find("[id^='complect_']").text();
     var keyproduct=tr.find("[id^='product_']").text();
     var keyproduct2=tr.find("[id^='product2_']").text();
+    var keyfloor=tr.find("[id^='floor_']").text();
     var keyproductApp=tr.find("[id^='productApp']").text();
     if(!!keyproductApp){ 
         if (!(keyproductApp in objxlsx[tblid])){objxlsx[tblid][keyproductApp]=new Objx(keyproductApp);}// проверка на существование строки в массиве
@@ -574,6 +576,9 @@ function checkAddress(checkbox)
         tr.css({"color":"green"});      
       
         if (keyroom in room) {room[keyroom]++;}else{room[keyroom]=1;}
+
+        if (keyfloor){if (keyfloor in floor) {floor[keyfloor]++;}else{floor[keyfloor]=1;}}
+
         if (keycomplect in complect) {complect[keycomplect]++;}else{complect[keycomplect]=1;}
         
         if (keyproduct2==''){
@@ -599,6 +604,7 @@ function checkAddress(checkbox)
        tr.find("[id^='product_']").text();
         //   propalert(room) ;  
           propoutput('#room_output',room);
+          propoutput('#floor_output',floor);
           propoutput('#complect_output',complect);
           propoutput('#product_output',product);
           if(!!keyproductApp){ 
@@ -610,6 +616,10 @@ function checkAddress(checkbox)
         // tr.css({"color":"black","font-weight":"400"}); // жирный шрифт 
         // tr.css({"color":"black"});
         if (room[keyroom]>1) {room[keyroom]--;}else{delete room[keyroom];tr.css({"color":"black"}); }
+
+        if (keyfloor){if (floor[keyfloor]>1) {floor[keyfloor]--;}else{delete floor[keyfloor];tr.css({"color":"black"}); }}
+        
+
         if (complect[keycomplect]>1) {complect[keycomplect]--;}else{delete complect[keycomplect];tr.css({"color":"black"});}
 
         if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];tr.css({"color":"black"});}
@@ -637,6 +647,7 @@ function checkAddress(checkbox)
         // alert('kd : '+ objxlsx[tblid][keyproductApp].kd +', dp : '+ objxlsx[tblid][keyproductApp].dp);
         
         propoutput('#room_output',room);
+        propoutput('#floor_output',floor);
         propoutput('#complect_output',complect);
         propoutput('#product_output',product);
         // if(!!keyproductApp){ 
