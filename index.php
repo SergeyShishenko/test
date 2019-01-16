@@ -4715,7 +4715,7 @@ include 'inc-version-css-js.php';
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <TR>
                                                             <TD data-tooltip="СТЯЖКИ" class="hover mapsite" id="footer143">
-                                                                <p data-img="./dist/images/no-foto.png" id="floating144" data-href="furnitura-dlya-mebeli.php#styazhki">СТЯЖКИ<span><br>~styazhki</span></p>
+                                                                <p data-img="./dist/images/no-foto.png" id="floating144" data-href="furnitura-dlya-mebeli-styazhka16.php#styazhka">СТЯЖКИ<span><br></span></p>
                                                             </TD> 
                                                             <TD>
                                                                 <TABLE >                                                                                          

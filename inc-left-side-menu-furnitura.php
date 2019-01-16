@@ -192,25 +192,26 @@
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-06-106-zashchelka-mebelnaya-magnitnaya">5000502-06-106 защелка мебельная магнитная</a>
                                             </li>                                                                                    
                                         </ul>
-                                    </li>  
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16.php#styazhka">СТЯЖКИ</a>
-                                        <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16.php#styazhka">5000502-07-701 стяжка эксцентриковая односторонняя для 16 мм</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php#styazhka16-dvustoronnyaya">5000502-07-702 стяжка эксцентриковая двухсторонняя для 16 мм</a>
-                                            </li>                                             
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka24.php#styazhka24">5000502-07-703 стяжка эксцентриковая односторонняя для 24 мм</a>
-                                            </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php#styazhka24-dvustoronnyaya">5000502-07-704 стяжка эксцентриковая двухсторонняя для 24 мм</a>
-                                            </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-styazhka-rafix.php#rafix">5000502-07-707 стяжка эксцентриковая усиленная &Oslash;20 для 16 мм</a>
-                                            </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-konfirmat.php#konfirmat">5000502-07-750 конфирмат 7.0Х50</a>
-                                            </li> 
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-konfirmat.php#konfirmat">5000502-07-752 конфирмат 7.0Х70</a>
-                                            </li>                                                                                    
+                                    </li> 
+                                    '; 
+
+                                    include 'inc-goup-menu-styazhka.php';//$styazhka=[]
+                                    echo'
+                                     <li class="menu2">
+                                     ';
+                                     for ($i=0; $i < count($styazhka); $i++) {                                         
+                                        if ($i==0) {
+                                            echo '<a class="list-group-item sub" href="'.$styazhka[$i]['path'].$styazhka[$i]['id'].'">'.$styazhka[$i]['def'].'</a>';
+                                            echo '<ul class="list-group sub_menu2">';
+                                        } else{
+                                            echo '<li><a class="list-group-item sub" href="'.$styazhka[$i]['path'].$styazhka[$i]['id'].'">'.$styazhka[$i]['def'].'</a> </li>';
+                                            } 
+                                      }  
+                                        echo'
                                         </ul>
                                      </li> 
+                                     
+
                                      <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#polkoderzhateli">ПОЛКОДЕРЖАТЕЛИ</a>
                                         <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki">5000502-08-101 PK2 полкодержатель с фиксацией полки</a>
