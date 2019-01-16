@@ -424,27 +424,9 @@ include 'inc-left-side-menu-furnitura.php';
                         </div> <!--/bs-callout bs-callout-warning cont/-->
                     </section> 
                 </article>   
-                </div> <!-- main  -->                
-                <!-- боковое меню блоки дверные начало -->
-                <div class="col-md-2" id="navmain-izdeliya">                    
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
-                        <?php include 'inc-goup-menu-styazhka.php';//$styazhka=[]
-                        $curr=3;
-                        ?>                                    
-                        <ul class="nav bs-sidenav">                                    
-                                <?php    for ($i=0; $i < count($styazhka); $i++) {                                        
-                                if ($i==0) { //группа
-                                    echo '<li><a href="'.$styazhka[$i]['id'].'">'.$styazhka[$i]['def'].'</a>';
-                                    echo '<ul class="nav">';                                           
-                                } else{
-                                    if($i==$curr){$path="";}else{$path=$styazhka[$i]['path'];}                                                
-                                    echo '<li><a href="'.$path.$styazhka[$i]['id'].'">&#9999;&nbsp;'.$styazhka[$i]['def'].'</a> </li>';
-                                    } 
-                                    }  ?> 
-                                
-                                </ul>
-                            </li>                           
-                        </ul>
-                    </div>                  
-                </div><!-- боковое меню блоки дверные конец -->  
+                </div> <!-- main  -->   
+                <?php include 'inc-goup-menu.php';//$styazhka=[]
+                SideMenu($styazhka,3);
+                ?>        
+          
 <?php include 'inc-footer2.php'; ?>

@@ -269,45 +269,10 @@ include 'inc-left-side-menu-furnitura.php';
                          
                         </div> <!--/bs-callout bs-callout-warning cont/-->
                     </section> 
-                </article>
-                    
-                    
-
-                    
+                </article>   
                 </div> <!-- main  -->
-
-                
-
-                <!-- боковое меню блоки дверные начало -->
-                <div class="col-md-2" id="navmain-izdeliya">
-                    
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
-                   
-
-                        <ul class="nav bs-sidenav">
-                            
-                        <li><a href="#styazhki-ekscentrikovye">Стяжки эксцентриковые</a>
-                                <ul class="nav">
-                                    <li><a href="furnitura-dlya-mebeli-styazhka16.php#styazhka">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 16 мм</a></li> 
-                                    <li><a href="furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php#styazhka16-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 16 мм</a></li> 
-                                    <li><a href="furnitura-dlya-mebeli-styazhka24.php#styazhka24">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 24 мм</a></li>
-                                    <li><a href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php#styazhka24-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 24 мм</a></li>
-                                    <li><a href="furnitura-dlya-mebeli-styazhka-rafix.php#rafix">&#9999;&nbsp;Стяжка эксцентриковая усиленная &Oslash;20 для 16 мм</a></li> 
-                                    <li><a href="#konfirmat">&#9999;&nbsp;Конфирматы 7.0х50 и 7.0х70</a></li>  
-                                                                
-                                    <!-- <li><a href="furnitura-dlya-mebeli-movento760H.php#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li> 
-                                    <li><a href="furnitura-dlya-mebeli-movento760H-shelf.php#movento-s-blumotion-760h-shelf">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – выдвижная полка</a></li>                                                                                                 -->
-                                </ul>
-                            </li>                           
-                        </ul>
-                         
-                    </div>
-                  
-                </div><!-- боковое меню блоки дверные конец -->
-
-                 
-            
-            
-
+                <?php include 'inc-goup-menu.php';//$styazhka=[]
+                SideMenu($styazhka,6);
+                ?> 
     
 <?php include 'inc-footer2.php'; ?>
