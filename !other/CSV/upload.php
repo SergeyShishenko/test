@@ -12,11 +12,9 @@
 //     die(mysql_error());
 // }
 
-if(isset($_POST["arr"]) )
+if(isset($_POST["arr"]) )//генерация файла
 {
-	// echo "<pre>";
-	// print_r($_POST["arr"]);
-	// echo "</pre>";
+	
 	 if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php')) 
 	 	{
 			
@@ -49,11 +47,11 @@ if(isset($_POST["arr"]) )
 	
 	 foreach ($_POST["arr"] as $key=>$v1)
 	  {
-		echo '<hr>';
-		echo "filename ".$key.".xlsx";
+		// echo '<hr>';
+		// echo "filename ".$key.".xlsx";
 		$filename=$key.".xlsx";
-		echo "<br>";
-		echo $v1['id']." ";
+		// echo "<br>";
+		// echo $v1['id']." ";
 
 			# Указываем путь до файла  .xlsx			
 			$File = "$_SERVER[DOCUMENT_ROOT]/www/!other/CSV/xlscsv/$filename";			
@@ -73,12 +71,10 @@ if(isset($_POST["arr"]) )
 
 $i=0;
 		foreach ($v1 as  $v=>$v2) {
-			echo "row:".$v;
-			// $i=$i+$Start;
-			
-			echo ' {kd-'.$v2['kd']." ";
-			echo ' dp-'.$v2['dp']."}";
-			echo "<br>";
+			// echo "row:".$v;			
+			// echo ' {kd-'.$v2['kd']." ";
+			// echo ' dp-'.$v2['dp']."}";
+			// echo "<br>";
 
 			$baseRow = 3;
 			$row = ($i)+$baseRow;
@@ -120,17 +116,32 @@ $i=0;
 				if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls")) {
 					
 					$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
+					// $fname=$_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname;
+					//скачивание файла					
+					// header('Location: $_SERVER["DOCUMENT_ROOT"] ."/www/vpi/downloadf.php"');
+					
+					
 				}
 				else {
 					$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
+
+					// $fname=$_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname;
+					//скачивание файла
+					// header('Location: $_SERVER["DOCUMENT_ROOT"] ."/vpi/downloadf.php"');
+
 				}
 
 				echo "./vpi/".$fname;			
 				unset($data);	
+
+
+				
+				
+
 		
 	
 	exit();
-}
+}//isset($_POST["arr"]
 
 
 if(isset($_POST["recordToDelete"]) )

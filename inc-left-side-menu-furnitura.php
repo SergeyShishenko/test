@@ -5,7 +5,9 @@
 // $item_universalnaya_Class = '';
 // $item_katalogi_Class = '';
 ?>
-<?php echo'
+<?php
+include 'inc-goup-menu.php';//$styazhka=[]
+ echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">
             <div class="row">
@@ -194,24 +196,10 @@
                                         </ul>
                                     </li> 
                                     '; 
+                                   
+                                    LeftSideMenu($styazhka);
 
-                                    include 'inc-goup-menu-styazhka.php';//$styazhka=[]
                                     echo'
-                                     <li class="menu2">
-                                     ';
-                                     for ($i=0; $i < count($styazhka); $i++) {                                         
-                                        if ($i==0) { //группа
-                                            echo '<a class="list-group-item sub" href="'.$styazhka[$i]['path'].$styazhka[$i]['id'].'">'.$styazhka[$i]['def'].'</a>';
-                                            echo '<ul class="list-group sub_menu2">';
-                                        } else{
-                                            echo '<li><a class="list-group-item sub" href="'.$styazhka[$i]['path'].$styazhka[$i]['id'].'">'.$styazhka[$i]['def'].'</a> </li>';
-                                            } 
-                                      }  
-                                        echo'
-                                        </ul>
-                                     </li> 
-
-
                                      <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#polkoderzhateli">ПОЛКОДЕРЖАТЕЛИ</a>
                                         <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-08-101-pk2-polkoderzhatel-s-fiksaciey-polki">5000502-08-101 PK2 полкодержатель с фиксацией полки</a>

@@ -425,7 +425,8 @@ include 'inc-left-side-menu-furnitura.php';
                     </section> 
                 </article>    
                 </div> <!-- main  -->
-                <?php include 'inc-goup-menu.php';//$styazhka=[]
+                <?php
+                //  include 'inc-goup-menu.php';//$styazhka=[] -->
                 SideMenu($styazhka,1);
                 ?>    
 <?php include 'inc-footer2.php'; ?>

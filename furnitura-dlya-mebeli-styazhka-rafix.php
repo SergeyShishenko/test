@@ -440,7 +440,8 @@ include 'inc-left-side-menu-furnitura.php';
 
                     
                 </div> <!-- main  -->
-                <?php include 'inc-goup-menu.php';//$styazhka=[]
+                <?php
+                //  include 'inc-goup-menu.php';//$styazhka=[]
                 SideMenu($styazhka,5);
                 ?>   
 <?php include 'inc-footer2.php'; ?>
