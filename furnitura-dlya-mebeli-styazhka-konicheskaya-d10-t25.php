@@ -440,29 +440,26 @@ include 'inc-left-side-menu-furnitura.php';
                 
 
                 <!-- боковое меню блоки дверные начало -->
-                <div class="col-md-2" id="navmain-izdeliya">
-                    
+                <div class="col-md-2" id="navmain-izdeliya">                    
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
-                   
-
-                        <ul class="nav bs-sidenav">
-                            
-                        <li><a href="#styazhki-ekscentrikovye">Стяжки эксцентриковые</a>
-                                <ul class="nav">
-                                    <li><a href="#styazhka">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 16 мм</a></li> 
-                                    <li><a href="furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php#styazhka16-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 16 мм</a></li> 
-                                    <li><a href="furnitura-dlya-mebeli-styazhka24.php#styazhka24">&#9999;&nbsp;Стяжка эксцентриковая односторонняя для плит 24 мм</a></li>
-                                    <li><a href="furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php#styazhka24-dvustoronnyaya">&#9999;&nbsp;Стяжка эксцентриковая двухсторонняя для плит 24 мм</a></li> 
-                                    <li><a href="furnitura-dlya-mebeli-styazhka-rafix.php#rafix">&#9999;&nbsp;Стяжка эксцентриковая усиленная &Oslash;20 для 16 мм</a></li>  
-                                    <li><a href="furnitura-dlya-mebeli-konfirmat.php#konfirmat">&#9999;&nbsp;Конфирматы 7.0х50 и 7.0х70</a></li>                           
-                                    <!-- <li><a href="furnitura-dlya-mebeli-movento760H.php#movento-s-blumotion-760h">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – стандартный ящик</a></li> 
-                                    <li><a href="furnitura-dlya-mebeli-movento760H-shelf.php#movento-s-blumotion-760h-shelf">&#9999;&nbsp;MOVENTO с BLUMOTION – 760H – монтаж ко дну корпуса – выдвижная полка</a></li>                                                                                                 -->
+                        <?php include 'inc-goup-menu-styazhka.php';//$styazhka=[]
+                        $curr=1;
+                        ?>                                    
+                        <ul class="nav bs-sidenav">                                    
+                                <?php    for ($i=0; $i < count($styazhka); $i++) {                                        
+                                if ($i==0) { //группа
+                                    echo '<li><a href="'.$styazhka[$i]['id'].'">'.$styazhka[$i]['def'].'</a>';
+                                    echo '<ul class="nav">';                                           
+                                } else{
+                                    if($i==$curr){$path="";}else{$path=$styazhka[$i]['path'];}                                                
+                                    echo '<li><a href="'.$path.$styazhka[$i]['id'].'">&#9999;&nbsp;'.$styazhka[$i]['def'].'</a> </li>';
+                                    } 
+                                    }  ?> 
+                                
                                 </ul>
                             </li>                           
                         </ul>
-                         
-                    </div>
-                  
+                    </div>                  
                 </div><!-- боковое меню блоки дверные конец -->
 
                  

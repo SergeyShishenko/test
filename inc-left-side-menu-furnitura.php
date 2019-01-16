@@ -200,7 +200,7 @@
                                      <li class="menu2">
                                      ';
                                      for ($i=0; $i < count($styazhka); $i++) {                                         
-                                        if ($i==0) {
+                                        if ($i==0) { //группа
                                             echo '<a class="list-group-item sub" href="'.$styazhka[$i]['path'].$styazhka[$i]['id'].'">'.$styazhka[$i]['def'].'</a>';
                                             echo '<ul class="list-group sub_menu2">';
                                         } else{
@@ -210,7 +210,7 @@
                                         echo'
                                         </ul>
                                      </li> 
-                                     
+
 
                                      <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#polkoderzhateli">ПОЛКОДЕРЖАТЕЛИ</a>
                                         <ul class="list-group sub_menu2">
