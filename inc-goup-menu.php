@@ -1,6 +1,5 @@
 <?php 
 // inc-goup-menu.php
-
 function SideMenu($arr,$curr) //правое меню группа
 {
  echo'
@@ -50,7 +49,7 @@ function LeftSideMenu($arr)// левое меню -> замена <li class="men
 {
     echo'
     <li class="menu2">
-        <a class="list-group-item sub" href="'.$arr[0]['path'].$arr[0]['id'].'">'.$arr[0]['def'].'</a>;
+        <a class="list-group-item sub" href="'.$arr[0]['path'].$arr[0]['id'].'">'.$arr[0]['def'].'</a>
         <ul class="list-group sub_menu2">
     ';
         for ($i=1; $i < count($arr); $i++) { 
@@ -62,35 +61,76 @@ function LeftSideMenu($arr)// левое меню -> замена <li class="men
     ';
 }
 
+function IndexMenu($arr,$num_footer)// index.php
+{
+
+    
+    echo'
+    <TR>
+        <TD  class="hover mapsite" id="footer'.$num_footer.'">
+            <p data-img="./dist/images/'.$arr[0]['img'].'" id="floating'.($num_footer+1).'" data-href="'.$arr[0]['path'].$arr[0]['id'].'">'.$arr[0]['def'].'<span><br></span></p>
+        </TD> 
+        <TD>
+            <TABLE > ';        
+            for ($i=1; $i < count($arr); $i++) {                             
+       echo '   <TR>
+                    <TD class="mapsite" colspan="2" id="'.str_replace("#","flo-",$arr[$i]['id']).'" >
+                        <p data-img="./dist/images/'.$arr[$i]['img'].'" data-href="'.$arr[$i]['path'].$arr[$i]['id'].'">'.$arr[$i]['def'].'<span> <br>~</span></p>
+                    </TD>                                                                         
+                </TR>  
+                <TR><TD></TD></TR> <!--end LEVEL4-->';             
+            }              
+    echo'  </TABLE>
+        </TD>
+    </TR> 
+    <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
+    ';
+
+}
+
 
 /////////////////////////////////////
     $styazhka=[];
     $styazhka[0]=['path'=>"furnitura-dlya-mebeli-styazhka16.php",
                     'id'=>"#styazhka",
+                    'img'=>"no-foto.png",
+                    'keywords'=>"",
                     'def'=>"СТЯЖКИ"];
 
     $styazhka[1]=['path'=>"furnitura-dlya-mebeli-styazhka16.php",
                     'id'=> "#styazhka",
+                    'img'=>"no-foto.png",
+                    'keywords'=>"",
                     'def'=>"Стяжка эксцентриковая односторонняя для плит 16 мм"];
 
     $styazhka[2]=['path'=>"furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php",
                     'id'=> "#styazhka16-dvustoronnyaya",
+                    'img'=>"no-foto.png",
+                    'keywords'=>"",
                     'def'=>"Стяжка эксцентриковая двухсторонняя для плит 16 мм"];
                 
     $styazhka[3]=['path'=>"furnitura-dlya-mebeli-styazhka24.php",
                     'id'=> "#styazhka24",
+                    'img'=>"no-foto.png",
+                    'keywords'=>"",
                     'def'=>"Стяжка эксцентриковая односторонняя для плит 24 мм"];
                 
     $styazhka[4]=['path'=>"furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php",
                     'id'=> "#styazhka24-dvustoronnyaya",
+                    'img'=>"no-foto.png",
+                    'keywords'=>"",
                     'def'=>"Стяжка эксцентриковая двухсторонняя для плит 24 мм"];
                     
     $styazhka[5]=['path'=>"furnitura-dlya-mebeli-styazhka-rafix.php",
                     'id'=> "#rafix",
+                    'img'=>"no-foto.png",
+                    'keywords'=>"",
                     'def'=>"Стяжка эксцентриковая усиленная &Oslash;20 для 16 мм"];
                     
     $styazhka[6]=['path'=>"furnitura-dlya-mebeli-konfirmat.php",
                     'id'=> "#konfirmat",
+                    'img'=>"no-foto.png",
+                    'keywords'=>"",
                     'def'=>"Конфирматы 7.0х50 и 7.0х70"];
 
 /////////////////////////////////////

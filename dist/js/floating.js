@@ -263,7 +263,7 @@ $(function() {
         //   result = result.replace(/<script[^>]*>(?:(?!<\/script>)[^])*<\/script>/ig,""); //удалить
           
           var aref = $(this).data("href");
-        //   var blank = $(this).data("blank");
+          var blank = $(this).data("blank");
                     
           var flo = $(this).parent().attr('id');
           // flo = flo.replace(/.*\#/, '');// id элемента

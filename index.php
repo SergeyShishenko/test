@@ -1,6 +1,7 @@
 <?php
 include 'inc-session-start.php'; 
 include 'inc-version-css-js.php'; 
+include 'inc-goup-menu.php';
 ?>
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">
@@ -4713,62 +4714,11 @@ include 'inc-version-css-js.php';
                                                             </TD>
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->   
-
-                                                        <TR>
-                                                            <TD data-tooltip="СТЯЖКИ" class="hover mapsite" id="footer143">
-                                                                <p data-img="./dist/images/no-foto.png" id="floating144" data-href="furnitura-dlya-mebeli-styazhka16.php#styazhka">СТЯЖКИ<span><br></span></p>
-                                                            </TD> 
-                                                            <TD>
-                                                                <TABLE >                                                                                          
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-16-mm" >
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-16-mm">5000502-07-701 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 16 мм<span> <br>~-5000502-07-701-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-16-mm</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-16-mm" >
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-16-mm">5000502-07-702 стяжка эксцентриковая двухсторонняя MINIFIX, толщина плиты 16 мм<span> <br>~5000502-07-702-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-16-mm</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm" >
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm">5000502-07-703 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 24 мм<span> <br>~5000502-07-703-styazhka-ekscentrikovaya-odnostoronnyaya-minifix-tolshchina-plity-24-mm</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm" >
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm">5000502-07-704 стяжка эксцентриковая двухсторонняя MINIFIX, толщина плиты 24 мм<span> <br>~5000502-07-704-styazhka-ekscentrikovaya-dvuhstoronnyaya-minifix-tolshchina-plity-24-mm</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm" >
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm">5000502-07-707 стяжка эксцентриковая усиленная RAFIX, толщина плиты 16 мм<span> <br>~5000502-07-707-styazhka-ekscentrikovaya-usilennaya-rafix-tolshchina-plity-16-mm</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-750-konfirmat-70h50" >
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-07-750-konfirmat-70h50">5000502-07-750 конфирмат 7.0Х50<span> <br>~5000502-07-750-konfirmat-70h50</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-07-752-konfirmat-70h70" >
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-07-752-konfirmat-70h70">5000502-07-752 конфирмат 7.0Х70<span> <br>~5000502-07-752-konfirmat-70h70</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                             
-                                                                </TABLE>
-                                                            </TD>
-                                                        </TR> 
-                                                        
-                                                        <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
-
+                                                        <!--  -->
+                                                        <?php 
+                                                        IndexMenu($styazhka,143);
+                                                        ?>                                                       
+                                                        <!--  -->  
                                                         <TR>
                                                             <TD data-tooltip="ПОЛКОДЕРЖАТЕЛИ" class="hover mapsite" id="footer144"  >
                                                                     <p data-img="./dist/images/no-foto.png" id="floating145" data-href="furnitura-dlya-mebeli.php#polkoderzhateli">ПОЛКОДЕРЖА<wbr>ТЕЛИ<span><br>~polkoderzhateli</span></p> 
