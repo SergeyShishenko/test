@@ -10,11 +10,29 @@ $File = "$_SERVER[DOCUMENT_ROOT]/www/!other/CSV/$filename";
 $Excel = PHPExcel_IOFactory::load($File);
  
 $order=end(explode(" ", $Excel->getActiveSheet()->getCell('Document1')->getValue())); 
+$coordColSum= $Excel->getActiveSheet()->getCell('Sum')->getColumn(); //столбец 'A'
+// если $order== "" искать вхождение в строке
+if(!$order) {// пустая ячейка
+
+    $orderRow=$Excel->getActiveSheet()->getCell('Document1')->getRow();    
+    $datarow = $Excel->getActiveSheet()->rangeToArray('A'.$orderRow.':' . $coordColSum.$orderRow);   
+    $datarow = array_filter($datarow[0]);    
+    $datarow = array_diff($datarow, array(' '));
+     $order=end(explode(" ",array_shift($datarow)));     
+//      echo "<pre>";
+// 	print_r($order);
+//  echo "</pre>";
+//  exit();
+    // 
+
+}
+
+
 // $client= $Excel->getActiveSheet()->getCell('C1')->getValue(); 
 $client= $Excel->getActiveSheet()->getCell('Customer')->getValue(); 
 // $coord= $Excel->getActiveSheet()->getCell('Customer')->getCoordinate(); // координата ячейки 'C5'
 $coordRow= $Excel->getActiveSheet()->getCell('NumStart')->getRow(); //номер строки '5'
-$coordColSum= $Excel->getActiveSheet()->getCell('Sum')->getColumn(); //столбец 'A'
+
 $coordColProduct= $Excel->getActiveSheet()->getCell('NumStart')->getColumn(); //столбец 'O'
 $coordColName= $Excel->getActiveSheet()->getCell('Name')->getColumn(); //столбец 'B'
 # С какой строки начинаются данные
@@ -60,7 +78,7 @@ for ($i= $Start; $i <= $endRow; $i++)
                                 echo "<td>Заказчик</td>";
                                 echo "<td>Заказ</td>";
                                 echo "<td>". $Res[$row]->product." </td>"; 
-                                echo "<td>№2</td>";// для ручного копирования                       
+                                // echo "<td>№2</td>";// для ручного копирования                       
                                 echo "<td>". $Res[$row]->name." </td>";
                                 echo "<td>". $Res[$row]->sum." </td>";
                                 
@@ -76,7 +94,7 @@ for ($i= $Start; $i <= $endRow; $i++)
                                 echo "<td>". $Res[$row]->client." </td>";
                                 echo "<td>". $Res[$row]->order." </td>";                                
                                 echo '<td id="productApp'.$row.'">'. $Res[$row]->product. '</td>'; 
-                                echo "<td>".$coord."</td>";// для ручного копирования                          
+                                // echo "<td>".$coord."</td>";// для ручного копирования                          
                                 echo "<td>". $Res[$row]->name." </td>";
                                 echo "<td>". str_replace(".", ",", $Res[$row]->sum)." </td>";
                                 
