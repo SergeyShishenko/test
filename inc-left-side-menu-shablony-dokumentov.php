@@ -8,8 +8,11 @@
 // $item_dogovor_Class = '';
 // $item_akty_Class = '';
 // $item_pisma_klientu_Class = '';
+
 ?>
-<?php echo'
+<?php
+include 'inc-goup-menu.php';//$styazhka=[]
+ echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">
         <div class="row">
@@ -21,17 +24,11 @@
                         <li class="menu">                                
                             <a href="shablony-dokumentov-albom-obrazcov.php" class="list-group-item  '.$item_albom_obrazcov_Class.'">Альбом образцов &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
                              <ul class="list-group sub_menu">
-                                <li class="menu2">
-                                    <a  class="list-group-item sub"  href="shablony-dokumentov-albom-obrazcov.php#shablon-alboma-obrazcov">ШАБЛОН АЛЬБОМА ОБРАЗЦОВ</a>
-                                   
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#list-dvizheniya-obrazcov">ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ</a>
-                             
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="shablony-dokumentov-albom-obrazcov.php#obrazec-zapolneniya-albomo-obrazcov">ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ</a>
-                             
-                                </li>
-                                                                 
+                             ';
+                                LeftSideMenu($albomobrazcov);// ШАБЛОН АЛЬБОМА ОБРАЗЦОВ
+                                LeftSideMenu($list_dvizheniya_obrazcov);//ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ
+                                LeftSideMenu($obrazec_albom_oobrazcov);//ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ
+                         echo'                                  
                             </ul> 
                         </li>                     
                       

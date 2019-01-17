@@ -264,35 +264,10 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                    
                    
                 </div> <!-- main  -->
+<?php
+                  // ШАБЛОН АЛЬБОМА ОБРАЗЦОВ,ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ,ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ
+                $arrlist = array($albomobrazcov,$list_dvizheniya_obrazcov,$obrazec_albom_oobrazcov);
+                 SideMenuList($arrlist);
+ ?>                
 
-                <!-- боковое меню блоки дверные начало -->
-                <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
-                        <ul class="nav bs-sidenav">
-                            <li><a href="#shablon-alboma-obrazcov">ШАБЛОН АЛЬБОМА ОБРАЗЦОВ</a>
-                            <ul class="nav">
-                                    <li><a href="#shablon-alboma-obrazcov_1">&#9999;&nbsp;Лист титульный</a>
-                                    </li>
-                                    <li><a href="#shablon-alboma-obrazcov_2">&#9999;&nbsp;Состав альбома образцов</a>
-                                    </li>
-                                    <li><a href="#shablon-alboma-obrazcov_3">&#9999;&nbsp;Размещение изделий на плане</a>
-                                    </li>
-                                    <li><a href="#shablon-alboma-obrazcov_4">&#9999;&nbsp;Образец №</a>
-                                    </li>                                                                      
-                                </ul>
-                            </li> 
-                            <li><a href="#list-dvizheniya-obrazcov">ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ</a>
-                            <ul class="nav">
-                                    <li><a href="#dok--385">&#9999;&nbsp;Док. № 385</a>
-                                    </li>                              
-                                </ul>
-                            </li> 
-                            <li><a href="#obrazec-zapolneniya-albomo-obrazcov">ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ</a>
-                            
-                            </li>                           
-                          
-                                                   
-                        </ul>
-                    </div>
-                </div><!-- боковое меню блоки дверные конец -->
 <?php include 'inc-footer.php'; ?>
