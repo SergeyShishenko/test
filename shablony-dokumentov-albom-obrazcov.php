@@ -256,12 +256,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div>  
                        
                       </section>
-                    </article>
-                   
-
-                   
-                   
-                   
+                    </article>                    
                    
                 </div> <!-- main  -->
 <?php

@@ -216,52 +216,9 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                    
                 </div> <!-- main  -->
 
-                <!-- боковое меню блоки дверные начало -->
-                <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
-                        <ul class="nav bs-sidenav">
-                            <li><a href="#shablon-alboma-dp">АЛЬБОМ ДИЗАЙН-ПРОЕКТА</a>
-                                <ul class="nav">
-                                    <li><a href="#list-titulnyy-dp_1">&#9999;&nbsp;Лист титульный ДП</a>
-                                    </li>
-                                    <li><a href="#shablon-alboma-dp_2">&#9999;&nbsp;Состав проекта</a>
-                                    </li>
-                                    <li><a href="#shablon-alboma-dp_3">&#9999;&nbsp;Ситуационный план</a>
-                                    </li>
-                                    <li><a href="#shablon-alboma-dp_4">&#9999;&nbsp;Обмерный план</a>
-                                    </li>
-                                    
-                                                                      
-                                </ul>
-                            </li>
-                            <li><a href="#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
-                                <ul class="nav">
-                                    <li><a href="#list-titulnyy-vpi">&#9999;&nbsp;5000304-01-000 лист титульный ВПИ</a>
-                                    </li>
-                                                                      
-                                </ul>
-                            </li>
-                            <li><a href="#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ </a>
-                                <ul class="nav">
-                                    <li><a href="#vedomost-furnitury">&#9999;&nbsp;5000304-01-001 ведомость фурнитуры</a>
-                                    </li>                                   
-                                </ul>
-                            </li>
-                            <li><a href="#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ</a>
-                                <ul class="nav">
-                                    <li><a href="#vedomost-stekol-i-zerkal">&#9999;&nbsp;5000304-02-001 ведомость стекол и зеркал</a>
-                                    </li>                                   
-                                </ul>
-                            </li>
-                            <li><a href="#shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ</a>
-                                <ul class="nav">
-                                    <li><a href="#vedomost-materialy-prochie">&#9999;&nbsp;5000304-03-001 ведомость материалы прочие</a>
-                                    </li>                                   
-                                </ul>
-                            </li>                          
-                            
-                                                   
-                        </ul>
-                    </div>
-                </div><!-- боковое меню блоки дверные конец -->
+                <?php
+                  // ШАБЛОН АЛЬБОМА ОБРАЗЦОВ,ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ,ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ
+                  $arrlist = [$shablon_alboma_dp,$list_titulnyy_vpi,$vedomost_furnitury,$vedomost_stekol_zerkal,$materialy_prochie];
+                 SideMenuList($arrlist);
+ ?>   
 <?php include 'inc-footer.php'; ?>

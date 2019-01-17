@@ -259,72 +259,18 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                    
                    
                    
-                </div> <!-- main  -->
+                </div> <!-- main  -->              
 
-                <!-- боковое меню блоки дверные начало -->
-                <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
-                        <ul class="nav bs-sidenav">
-                                                      
-                            <li>
-                                <a href="#listy-titulnye-konstruktorskoy-dokumentacii">ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ</a>
-                                <ul class="nav">
-                                    <li><a href="#list-titulnyy-kd">&#9999;&nbsp;5000301-02-000 лист титульный КД</a>
-                                    </li>
-                                    <li><a href="#pasport-izdeliy-zakaza-kd">&#9999;&nbsp;паспорт изделий заказа КД</a>
-                                    </li>
-                                    <li><a href="#reestr-razdelov-kd">&#9999;&nbsp;реестр разделов КД</a>
-                                  </li>
-                                </ul>
-                                <li><a href="#specifikaciya-konstruktorskaya">СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>
-                                     <ul class="nav">
-                                        <li><a href="#specifikaciya-konstruktorskaya">&#9999;&nbsp;cпецификация конструкторская</a>
-                                        </li>                                                                    
-                                    </ul>
-                                  </li>
-                            </li>
-                            <li><a href="#shablony-dokumentov-list-titulnyy-vpi">ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>
-                                <ul class="nav">
-                                    <li><a href="#list-titulnyy-vpi">&#9999;&nbsp;5000304-01-000 лист титульный ВПИ</a>
-                                    </li>
-                                                                      
-                                </ul>
-                            </li>
-                            
-                            <li>
-                                <a href="#shablony-dokumentov-vedomost-furnitury">ВЕДОМОСТЬ ФУРНИТУРЫ </a>
-                                <ul class="nav">
-                                    <li><a href="#vedomost-furnitury">&#9999;&nbsp;5000304-01-001 ведомость фурнитуры</a>
-                                    </li>                                   
-                                </ul>
-                            </li>
-                            <li><a href="#shablony-dokumentov-vedomost-stekol-i-zerkal">ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ</a>
-                            <ul class="nav">
-                                    <li><a href="#vedomost-stekol-i-zerkal">&#9999;&nbsp;5000304-02-001 ведомость стекол и зеркал</a>
-                                    </li>                                   
-                                </ul>
-                            </li>
-                            <li><a href="#shablony-dokumentov-vedomost-materialy-prochie">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ</a>
-                            <ul class="nav">
-                                    <li><a href="#vedomost-materialy-prochie">&#9999;&nbsp;5000304-03-001 ведомость материалы прочие</a>
-                                    </li>                                   
-                                </ul>
-                            </li>
-                           
-                            <li><a href="#specifikaciya-tehnologichesaya">СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ</a>
-                                <ul class="nav">
-                                    <li><a href="#5000303-02-001-specifikaciya">&#9999;&nbsp;5000303-02-001 спецификация</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="#vedomost-detaley-uchastka-3d">ВЕДОМОСТЬ ДЕТАЛЕЙ УЧАСТКА 3D</a>
-                                <!-- <ul class="nav">
-                                    <li><a href="#5000303-02-001-specifikaciya">&#9999;&nbsp;5000303-02-001 спецификация</a>
-                                    </li>
-                                </ul> -->
-                            </li>
-                                                   
-                        </ul>
-                    </div>
-                </div><!-- боковое меню блоки дверные конец -->
+                <?php
+                  
+                  $arrlist = [$konstr_dok,
+                              $spec_konst,
+                              $list_titulnyy_vpi_kd,
+                              $dok_vpi_kd,
+                              $dok_vsz,
+                              $dok_v_materialy_prochie,
+                              $spec_tehnolog,
+                              $vedomost_detaley_3d];
+                  SideMenuList($arrlist)
+                ?> 
 <?php include 'inc-footer.php'; ?>
