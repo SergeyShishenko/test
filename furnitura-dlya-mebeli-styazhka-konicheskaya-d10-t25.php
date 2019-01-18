@@ -114,68 +114,58 @@ include 'inc-left-side-menu-furnitura.php';
                                 </div>
                             <!--/ ВПИ -->
                             <!-- часть -->
-                                <h2 >Диаметр корпуса стяжки 25 мм</h2>                         
+                                <h2 >Диаметр корпуса стяжки 10 мм</h2>                         
 
                                 <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
                                     <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
                                         <div class="carousel-inner">
 
                                             <div class="item active">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Эксцентрик для плит толщиной 16 мм" data-image="./dist/filesdb/images/Styazhka-EC02ZL.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Эксцентрик для плит толщиной 25 мм" data-image="./dist/filesdb/images/BO04.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Styazhka-EC02ZL.png"
-                                                        data-src="./dist/filesdb/images/Styazhka-EC02ZL.png"
+                                                        src="./dist/filesdb/images/BO04.png"
+                                                        data-src="./dist/filesdb/images/BO04.png"
                                                         class="center-block   img-rounded    bar "
                                                         data-toggle="modal"                                                                                                                    
-                                                        alt="Эксцентрик для плит толщиной 16 мм"
+                                                        alt="Стяжка коническая D10 для плит толщиной от 25 мм"
                                                         data-pdf=""                                                    
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/Styazhka1-960x640.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Чертёж" data-image="./dist/filesdb/images/BO04_sch1.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Styazhka1-960x640.png"
-                                                        data-src="./dist/filesdb/images/Styazhka1-960x640.png"
+                                                        src="./dist/filesdb/images/BO04_sch1.png"
+                                                        data-src="./dist/filesdb/images/BO04_sch1.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
-                                                        alt="Необходимое пространство"                                                        
+                                                        alt="Чертёж"                                                        
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/Styazhka2-960x640.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/BO04_sch2.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Styazhka2-960x640.png"
-                                                        data-src="./dist/filesdb/images/Styazhka2-960x640.png"
+                                                        src="./dist/filesdb/images/BO04_sch2.png"
+                                                        data-src="./dist/filesdb/images/BO04_sch2.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
-                                                        alt="Информация для заказа"                                                        
+                                                        alt="Проектирование"                                                        
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/Styazhka3-960x640.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/BO04_sch3.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Styazhka3-960x640.png" 
-                                                        data-src="./dist/filesdb/images/Styazhka3-960x640.png"
+                                                        src="./dist/filesdb/images/BO04_sch3.png" 
+                                                        data-src="./dist/filesdb/images/BO04_sch3.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                         
                                                         alt="Проектирование"                                                        
                                                     >
                                                 </a>
                                             </div>
-                                            <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/Styazhka4-960x640.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/Styazhka4-960x640.png" 
-                                                        data-src="./dist/filesdb/images/Styazhka4-960x640.png"
-                                                        class="center-block   img-rounded     bar "
-                                                        data-toggle="modal"                                                                                                                         
-                                                        alt="Проектирование"                                                        
-                                                    >
-                                                </a>
-                                            </div>
+                                          
                                             
                                         </div>
                                         <!-- Элементы управления -->
@@ -208,15 +198,17 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <th>Толщина ДСП<br>(A), мм</th>
                                                     <th>L,<br>мм</th>
                                                     <th>I,<br>мм</th>
+                                                    <th>D,<br>мм</th>
                                                     <th>Артикул</th>
                                                     </tr>
 
 
                                                     <tr>
-                                                    <td>16</td>
+                                                    <td>25</td>
+                                                    <td>17,5</td>
                                                     <td>12,5</td>
-                                                    <td>8,0</td>
-                                                    <td><span class="boldstyle">EC02ZL</span></td>
+                                                    <td>10</td>
+                                                    <td><span class="boldstyle">BO06</span></td>
                                                     </tr>
 
 
