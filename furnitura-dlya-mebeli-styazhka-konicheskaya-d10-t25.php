@@ -23,8 +23,8 @@ include 'inc-left-side-menu-furnitura.php';
                     <article    id="styazhki-ekscentrikovye">
                       <section >
                         <div class="page-header"     >
-                          <h1 itemprop="name" id="styazhka">Стяжки эксцентриковые</h1>
-                          <h2 >Стяжка эксцентриковая односторонняя MINIFIX, для плиты 16 мм</h2>
+                          <h1 itemprop="name" id="konicheskaya-d10">Стяжки эксцентриковые</h1>
+                          <h2 >Стяжка коническая D10 для плит толщиной от 25 мм</h2>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
@@ -36,7 +36,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
-                                            <source src="./dist/video/styazhka/styazhka_Minifix.mp4" type="video/mp4">
+                                            <source src="./dist/video/styazhka/styazhka-konicheskaya.mp4" type="video/mp4">
                                         </video>
                                     </div>
                                 </div>                               
@@ -53,7 +53,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">5000502-07-701 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 16 мм</h3>
+                                                <h3 class="blum">Стяжка коническая D10 для плит толщиной от 25 мм</h3>
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
                                                         <thead>
@@ -77,18 +77,25 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody id="calcresult">
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulStyazhka-EC02ZL.png" class="" alt="Эксцентрик" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulBO04.png" class="" alt="Эксцентрик" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="12">EC02ZL</td>
+                                                            <td class="animated" data-objfurnid="12">BO06</td>
                                                             <td>Металл</td> 
-                                                            <td colspan="3">Эксцентрик для плит толщиной 16 мм</td>
+                                                            <td colspan="3">Стяжка коническая D10 для плит толщиной от 25 мм</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulShtok-TE03.png" class="" alt="Шток" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulGR06.png" class="" alt="Винт" title=""></td>
                                                             <td>1</td>
-                                                            <td>TE03</td>
+                                                            <td class="animated" data-objfurnid="12">GR07</td>
                                                             <td>Металл</td>
-                                                            <td>Шток эксцентрика М6 (34&nbsp;мм)</td>
+                                                            <td  colspan="3">Винт стяжки конической BO06</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulTF02.png" class="" alt="Шток" title=""></td>
+                                                            <td>1</td>
+                                                            <td class="animated" data-objfurnid="12">TF02</td>
+                                                            <td>Металл</td>
+                                                            <td  colspan="3">Шток стяжки конической D10, 35&nbsp;мм</td>
                                                         </tr>
                                                         <tr   >
                                                                 <td><img src="./dist/filesdb/images/pagevpi/ArticulFutorka-BU12.png" class="" alt="Футорка" title=""></td>
@@ -106,6 +113,122 @@ include 'inc-left-side-menu-furnitura.php';
                                     </div>
                                 </div>
                             <!--/ ВПИ -->
+                            <!-- часть -->
+                                <h2 >Диаметр корпуса стяжки 25 мм</h2>                         
+
+                                <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
+                                    <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+                                        <div class="carousel-inner">
+
+                                            <div class="item active">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Эксцентрик для плит толщиной 16 мм" data-image="./dist/filesdb/images/Styazhka-EC02ZL.png" data-target="#image-gallery">
+                                                    <img  
+                                                        src="./dist/filesdb/images/Styazhka-EC02ZL.png"
+                                                        data-src="./dist/filesdb/images/Styazhka-EC02ZL.png"
+                                                        class="center-block   img-rounded    bar "
+                                                        data-toggle="modal"                                                                                                                    
+                                                        alt="Эксцентрик для плит толщиной 16 мм"
+                                                        data-pdf=""                                                    
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/Styazhka1-960x640.png" data-target="#image-gallery">
+                                                    <img  
+                                                        src="./dist/filesdb/images/Styazhka1-960x640.png"
+                                                        data-src="./dist/filesdb/images/Styazhka1-960x640.png"
+                                                        class="center-block   img-rounded     bar "
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Необходимое пространство"                                                        
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/Styazhka2-960x640.png" data-target="#image-gallery">
+                                                    <img  
+                                                        src="./dist/filesdb/images/Styazhka2-960x640.png"
+                                                        data-src="./dist/filesdb/images/Styazhka2-960x640.png"
+                                                        class="center-block   img-rounded     bar "
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Информация для заказа"                                                        
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/Styazhka3-960x640.png" data-target="#image-gallery">
+                                                    <img  
+                                                        src="./dist/filesdb/images/Styazhka3-960x640.png" 
+                                                        data-src="./dist/filesdb/images/Styazhka3-960x640.png"
+                                                        class="center-block   img-rounded     bar "
+                                                        data-toggle="modal"                                                                                                                         
+                                                        alt="Проектирование"                                                        
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/Styazhka4-960x640.png" data-target="#image-gallery">
+                                                    <img  
+                                                        src="./dist/filesdb/images/Styazhka4-960x640.png" 
+                                                        data-src="./dist/filesdb/images/Styazhka4-960x640.png"
+                                                        class="center-block   img-rounded     bar "
+                                                        data-toggle="modal"                                                                                                                         
+                                                        alt="Проектирование"                                                        
+                                                    >
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <!-- Элементы управления -->
+                                        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Предыдущий</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Следующий</span>
+                                        </a>
+                                    </div>
+                                </div> 
+
+                                <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
+                                    <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
+                                                border: 1px solid rgb(221, 221, 221);
+                                                box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+                                                border-radius: 4px;
+                                                padding: 15px;
+                                                ">
+                                
+                                        <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
+                                            <div class="row">                                                
+                                                <table class="table table-striped table-responsive">
+                                                    
+                                                    <tbody> 
+
+                                                    <tr>
+                                                    <th>Толщина ДСП<br>(A), мм</th>
+                                                    <th>L,<br>мм</th>
+                                                    <th>I,<br>мм</th>
+                                                    <th>Артикул</th>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                    <td>16</td>
+                                                    <td>12,5</td>
+                                                    <td>8,0</td>
+                                                    <td><span class="boldstyle">EC02ZL</span></td>
+                                                    </tr>
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>                              
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            <!-- /часть --> 
                             <!-- часть -->
                                 <h2 >Под шестигранник 4 мм или под крестовую отвертку PH3</h2>                         
 
@@ -439,7 +562,7 @@ include 'inc-left-side-menu-furnitura.php';
 
                 <?php
                 //  include 'inc-goup-menu.php';//$styazhka=[]
-                SideMenu($styazhka,1);//7
+                SideMenu($styazhka,7);//7
                 ?>  
    
 <?php include 'inc-footer2.php'; ?>

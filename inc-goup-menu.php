@@ -132,6 +132,11 @@ function IndexMenu($arr,$num_footer)// index.php
                     'img'=>"no-foto.png",
                     'keywords'=>"",
                     'def'=>"Конфирматы 7.0х50 и 7.0х70"];
+    $styazhka[7]=['path'=>"furnitura-dlya-mebeli-styazhka-konicheskaya-d10-t25.php",
+                    'id'=> "#konicheskaya-d10",
+                    'img'=>"no-foto.png",
+                    'keywords'=>"",
+                    'def'=>"Стяжка коническая D10 для плит толщиной от 25 мм"];
 
 /////////////////////////////////////
 
