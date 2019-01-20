@@ -53,7 +53,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">Стяжка коническая D10 для плит толщиной от 25 мм</h3>
+                                                <h3 class="blum">5000502-07-710 стяжка коническая D10 для плит толщиной от 25 мм</h3>
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
                                                         <thead>
@@ -79,21 +79,21 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/ArticulBO04.png" class="" alt="Эксцентрик" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="12">BO06</td>
+                                                            <td class="animated" data-objfurnid="19">BO06</td>
                                                             <td>Металл</td> 
                                                             <td colspan="3">Стяжка коническая D10 для плит толщиной от 25 мм</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/ArticulGR06.png" class="" alt="Винт" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="12">GR07</td>
+                                                            <td >GR07</td>
                                                             <td>Металл</td>
                                                             <td  colspan="3">Винт стяжки конической BO06</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/ArticulTF02.png" class="" alt="Шток" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="12">TF02</td>
+                                                            <td >TF02</td>
                                                             <td>Металл</td>
                                                             <td  colspan="3">Шток стяжки конической D10, 35&nbsp;мм</td>
                                                         </tr>
@@ -117,7 +117,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 <h2 >Диаметр корпуса стяжки 10 мм</h2>                         
 
                                 <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
-                                    <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+                                    <div id="carousel1" class="carousel slide" data-ride="carousel" style="display: inline-block;">
                                         <div class="carousel-inner">
 
                                             <div class="item active">
@@ -169,11 +169,11 @@ include 'inc-left-side-menu-furnitura.php';
                                             
                                         </div>
                                         <!-- Элементы управления -->
-                                        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                        <a class="left carousel-control" href="#carousel1" role="button" data-slide="prev">
                                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                             <span class="sr-only">Предыдущий</span>
                                         </a>
-                                        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                        <a class="right carousel-control" href="#carousel1" role="button" data-slide="next">
                                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                             <span class="sr-only">Следующий</span>
                                         </a>
@@ -222,146 +222,29 @@ include 'inc-left-side-menu-furnitura.php';
                                 </div>
                             <!-- /часть --> 
                             <!-- часть -->
-                                <h2 >Под шестигранник 4 мм или под крестовую отвертку PH3</h2>                         
-
-                                <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
-                                    <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
-                                        <div class="carousel-inner">
-
-                                            <div class="item active">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Эксцентрик для плит толщиной 16 мм" data-image="./dist/filesdb/images/Styazhka-EC02ZL.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/Styazhka-EC02ZL.png"
-                                                        data-src="./dist/filesdb/images/Styazhka-EC02ZL.png"
-                                                        class="center-block   img-rounded    bar "
-                                                        data-toggle="modal"                                                                                                                    
-                                                        alt="Эксцентрик для плит толщиной 16 мм"
-                                                        data-pdf=""                                                    
-                                                    >
-                                                </a>
-                                            </div>
-                                            <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/Styazhka1-960x640.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/Styazhka1-960x640.png"
-                                                        data-src="./dist/filesdb/images/Styazhka1-960x640.png"
-                                                        class="center-block   img-rounded     bar "
-                                                        data-toggle="modal"                                                                                                                          
-                                                        alt="Необходимое пространство"                                                        
-                                                    >
-                                                </a>
-                                            </div>
-                                            <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/Styazhka2-960x640.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/Styazhka2-960x640.png"
-                                                        data-src="./dist/filesdb/images/Styazhka2-960x640.png"
-                                                        class="center-block   img-rounded     bar "
-                                                        data-toggle="modal"                                                                                                                          
-                                                        alt="Информация для заказа"                                                        
-                                                    >
-                                                </a>
-                                            </div>
-                                            <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/Styazhka3-960x640.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/Styazhka3-960x640.png" 
-                                                        data-src="./dist/filesdb/images/Styazhka3-960x640.png"
-                                                        class="center-block   img-rounded     bar "
-                                                        data-toggle="modal"                                                                                                                         
-                                                        alt="Проектирование"                                                        
-                                                    >
-                                                </a>
-                                            </div>
-                                            <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/Styazhka4-960x640.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/Styazhka4-960x640.png" 
-                                                        data-src="./dist/filesdb/images/Styazhka4-960x640.png"
-                                                        class="center-block   img-rounded     bar "
-                                                        data-toggle="modal"                                                                                                                         
-                                                        alt="Проектирование"                                                        
-                                                    >
-                                                </a>
-                                            </div>
-                                            
-                                        </div>
-                                        <!-- Элементы управления -->
-                                        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                            <span class="sr-only">Предыдущий</span>
-                                        </a>
-                                        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                            <span class="sr-only">Следующий</span>
-                                        </a>
-                                    </div>
-                                </div> 
-
-                                <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
-                                    <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
-                                                border: 1px solid rgb(221, 221, 221);
-                                                box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
-                                                border-radius: 4px;
-                                                padding: 15px;
-                                                ">
-                                
-                                        <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
-                                            <div class="row">                                                
-                                                <table class="table table-striped table-responsive">
-                                                    
-                                                    <tbody> 
-
-                                                    <tr>
-                                                    <th>Толщина ДСП<br>(A), мм</th>
-                                                    <th>L,<br>мм</th>
-                                                    <th>I,<br>мм</th>
-                                                    <th>Артикул</th>
-                                                    </tr>
-
-
-                                                    <tr>
-                                                    <td>16</td>
-                                                    <td>12,5</td>
-                                                    <td>8,0</td>
-                                                    <td><span class="boldstyle">EC02ZL</span></td>
-                                                    </tr>
-
-
-                                                    </tbody>
-                                                </table>
-                                            </div>                              
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            <!-- /часть --> 
-
-                            <!-- часть -->
-                                <h2 >Шток эксцентрика М6 (34 мм)</h2>                         
+                                <h2 >Винт стяжки конической BO06</h2>                         
 
                                 <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
                                     <div id="carousel2" class="carousel slide" data-ride="carousel" style="display: inline-block;">
                                         <div class="carousel-inner">
 
                                             <div class="item active">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Шток эксцентрика М6 (34 мм)" data-image="./dist/filesdb/images/Shtok-TE03.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Винт" data-image="./dist/filesdb/images/GR06.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Shtok-TE03.png"
-                                                        data-src="./dist/filesdb/images/Shtok-TE03.png"
+                                                        src="./dist/filesdb/images/GR06.png"
+                                                        data-src="./dist/filesdb/images/GR06.png"
                                                         class="center-block   img-rounded    bar "
                                                         data-toggle="modal"                                                                                                                    
-                                                        alt="Шток эксцентрика М6 (34 мм)"
+                                                        alt="Винт стяжки конической BO06"
                                                         data-pdf=""                                                    
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/Shtok1-960x640.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/GR06_sch1.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Shtok1-960x640.png"
-                                                        data-src="./dist/filesdb/images/Shtok1-960x640.png"
+                                                        src="./dist/filesdb/images/GR06_sch1.png"
+                                                        data-src="./dist/filesdb/images/GR06_sch1.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Необходимое пространство"                                                        
@@ -369,17 +252,17 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/Shtok2-960x640.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/BO04_sch3.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Shtok2-960x640.png"
-                                                        data-src="./dist/filesdb/images/SShtok2-960x640.png"
+                                                        src="./dist/filesdb/images/BO04_sch3.png"
+                                                        data-src="./dist/filesdb/images/BO04_sch3.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Информация для заказа"                                                        
                                                     >
                                                 </a>
                                             </div>
-                                        
+                                           
                                             
                                         </div>
                                         <!-- Элементы управления -->
@@ -401,6 +284,100 @@ include 'inc-left-side-menu-furnitura.php';
                                                 border-radius: 4px;
                                                 padding: 15px;
                                                 ">
+                                
+                                        <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
+                                            <div class="row">                                                
+                                                <table class="table table-striped table-responsive">
+                                                    
+                                                    <tbody> 
+
+                                                    <tr>
+                                                    <th>Использовать со стяжкой конической</th>
+                                                    <th>L,<br>мм</th>                                                    
+                                                    <th>Артикул</th>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                    <td>BO06</td>
+                                                    <td>12</td>                                                    
+                                                    <td><span class="boldstyle">GR07</span></td>
+                                                    </tr>
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>                              
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            <!-- /часть --> 
+
+                            <!-- часть -->
+                                <h2 >Шток стяжки конической D10, 35 мм</h2>                         
+
+                                <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
+                                    <div id="carousel3" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+                                        <div class="carousel-inner">
+
+                                            <div class="item active">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Шток стяжки конической D10, 35 мм" data-image="./dist/filesdb/images/TF02.png" data-target="#image-gallery">
+                                                    <img  
+                                                        src="./dist/filesdb/images/TF02.png"
+                                                        data-src="./dist/filesdb/images/TF02.png"
+                                                        class="center-block   img-rounded    bar "
+                                                        data-toggle="modal"                                                                                                                    
+                                                        alt="Шток стяжки конической D10, 35 мм"
+                                                        data-pdf=""                                                    
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/TF02_sch1.png" data-target="#image-gallery">
+                                                    <img  
+                                                        src="./dist/filesdb/images/TF02_sch1.png"
+                                                        data-src="./dist/filesdb/images/TF02_sch1.png"
+                                                        class="center-block   img-rounded     bar "
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Необходимое пространство"                                                        
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/BO04_sch3.png" data-target="#image-gallery">
+                                                    <img  
+                                                        src="./dist/filesdb/images/BO04_sch3.png"
+                                                        data-src="./dist/filesdb/images/BO04_sch3.png"
+                                                        class="center-block   img-rounded     bar "
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Информация для заказа"                                                        
+                                                    >
+                                                </a>
+                                            </div>
+                                        
+                                            
+                                        </div>
+                                        <!-- Элементы управления -->
+                                        <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Предыдущий</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Следующий</span>
+                                        </a>
+                                    </div>
+                                </div> 
+
+                                <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
+                                    <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
+                                                border: 1px solid rgb(221, 221, 221);
+                                                box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+                                                border-radius: 4px;
+                                                padding: 15px;
+                                                ">
 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
@@ -411,16 +388,18 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <tr>
                                                     
                                                     <th>L,<br>мм</th>
-                                                    <th>I,<br>мм</th>
+                                                    <th>L1,<br>мм</th>
+                                                    <th>L2,<br>мм</th>
                                                     <th>Артикул</th>
                                                     </tr>
 
 
                                                     <tr>
                                                 
-                                                    <td>34,5</td>
-                                                    <td>8,0</td>
-                                                    <td><span class="boldstyle">TE03</span></td>
+                                                    <td>35</td>
+                                                    <td>20</td>
+                                                    <td>9</td>
+                                                    <td><span class="boldstyle">TF02</span></td>
                                                     </tr>
 
 
@@ -438,7 +417,7 @@ include 'inc-left-side-menu-furnitura.php';
                                  <h2 >Футорка металлическая с распорным шариком <br>для штоков стяжки эксцентриковой и конической с резьбой М6</h2>                         
                                  
                                 <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
-                                    <div id="carousel3" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+                                    <div id="carousel4" class="carousel slide" data-ride="carousel" style="display: inline-block;">
                                         <div class="carousel-inner">
 
                                             <div class="item active">
@@ -479,11 +458,11 @@ include 'inc-left-side-menu-furnitura.php';
                                             
                                         </div>
                                         <!-- Элементы управления -->
-                                        <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
+                                        <a class="left carousel-control" href="#carousel4" role="button" data-slide="prev">
                                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                             <span class="sr-only">Предыдущий</span>
                                         </a>
-                                        <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
+                                        <a class="right carousel-control" href="#carousel4" role="button" data-slide="next">
                                             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                             <span class="sr-only">Следующий</span>
                                         </a>
