@@ -1,5 +1,5 @@
 <?php
-// furnitura-dlya-mebeli-styazhka-konicheskaya-d10-t25.php
+// furnitura-dlya-mebeli-styazhka-konicheskaya-d10-t16.php
 include 'inc-session-start.php';
 $detaliClass = '';
 $izdeliyaClass = '';
@@ -24,8 +24,8 @@ include 'inc-left-side-menu-furnitura.php';
                     <article    id="styazhki-ekscentrikovye">
                       <section >
                         <div class="page-header"     >
-                          <h1 itemprop="name" id="konicheskaya-d10">Стяжки эксцентриковые</h1>
-                          <h2 >Стяжка коническая D10 для плит толщиной от 25 мм (односторонняя)</h2>
+                          <h1 itemprop="name" id="konicheskaya-d10-16">Стяжки эксцентриковые</h1>
+                          <h2 >Стяжка коническая D10 для плит толщиной от 16 мм (односторонняя)</h2>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
@@ -54,7 +54,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">5000502-07-710 стяжка коническая D10 для плит толщиной от 25 мм (односторонняя)</h3>
+                                                <h3 class="blum">5000502-07-712 стяжка коническая D10 для плит толщиной от 16 мм (односторонняя)</h3>
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
                                                         <thead>
@@ -80,16 +80,16 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/ArticulBO04.png" class="" alt="Эксцентрик" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="19">BO06</td>
+                                                            <td class="animated" data-objfurnid="21">BO04FZ</td>
                                                             <td>Металл</td> 
-                                                            <td colspan="3">Стяжка коническая D10 для плит толщиной от 25 мм</td>
+                                                            <td colspan="3">Стяжка коническая D10 для плит толщиной от 16 мм</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/ArticulGR06.png" class="" alt="Винт" title=""></td>
                                                             <td>1</td>
-                                                            <td >GR07</td>
+                                                            <td >GR06FZ</td>
                                                             <td>Металл</td>
-                                                            <td  colspan="3">Винт стяжки конической BO06</td>
+                                                            <td  colspan="3">Винт стяжки конической BO04</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/ArticulTF02.png" class="" alt="Шток" title=""></td>
@@ -205,11 +205,11 @@ include 'inc-left-side-menu-furnitura.php';
 
 
                                                     <tr>
-                                                    <td>25</td>
-                                                    <td>17,5</td>
-                                                    <td>12,5</td>
+                                                    <td>16</td>
+                                                    <td>13</td>
+                                                    <td>8</td>
                                                     <td>10</td>
-                                                    <td><span class="boldstyle">BO06</span></td>
+                                                    <td><span class="boldstyle">BO04FZ</span></td>
                                                     </tr>
 
 
@@ -223,7 +223,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 </div>
                             <!-- /часть --> 
                             <!-- часть -->
-                                <h2 >Винт стяжки конической BO06</h2>                         
+                                <h2 >Винт стяжки конической BO04</h2>                         
 
                                 <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
                                     <div id="carousel2" class="carousel slide" data-ride="carousel" style="display: inline-block;">
@@ -300,9 +300,9 @@ include 'inc-left-side-menu-furnitura.php';
 
 
                                                     <tr>
-                                                    <td>BO06</td>
-                                                    <td>12</td>                                                    
-                                                    <td><span class="boldstyle">GR07</span></td>
+                                                    <td>BO04FZ</td>
+                                                    <td>8</td>                                                    
+                                                    <td><span class="boldstyle">GR06FZ</span></td>
                                                     </tr>
 
 
@@ -534,7 +534,7 @@ include 'inc-left-side-menu-furnitura.php';
 
                 <?php
                 //  include 'inc-goup-menu.php';//$styazhka=[]
-                SideMenu($styazhka,7);//7
+                SideMenu($styazhka,9);
                 ?>  
    
 <?php include 'inc-footer2.php'; ?>

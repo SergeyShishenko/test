@@ -1,5 +1,5 @@
 <?php
-// furnitura-dlya-mebeli-styazhka-konicheskaya-d10-t25.php
+// furnitura-dlya-mebeli-styazhka-konicheskaya-dvuhstoronnyaya-d10-t25.php
 include 'inc-session-start.php';
 $detaliClass = '';
 $izdeliyaClass = '';
@@ -24,8 +24,8 @@ include 'inc-left-side-menu-furnitura.php';
                     <article    id="styazhki-ekscentrikovye">
                       <section >
                         <div class="page-header"     >
-                          <h1 itemprop="name" id="konicheskaya-d10">Стяжки эксцентриковые</h1>
-                          <h2 >Стяжка коническая D10 для плит толщиной от 25 мм (односторонняя)</h2>
+                          <h1 itemprop="name" id="konicheskaya-dvuhstoronnyaya-d10">Стяжки эксцентриковые</h1>
+                          <h2 >Стяжка коническая D10 для плит толщиной от 25 мм (двухсторонняя)</h2>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
@@ -54,7 +54,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">5000502-07-710 стяжка коническая D10 для плит толщиной от 25 мм (односторонняя)</h3>
+                                                <h3 class="blum">5000502-07-711 стяжка коническая D10 для плит толщиной от 25 мм (двухсторонняя)</h3>
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
                                                         <thead>
@@ -79,28 +79,28 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tbody id="calcresult">
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/ArticulBO04.png" class="" alt="Эксцентрик" title=""></td>
-                                                            <td>1</td>
-                                                            <td class="animated" data-objfurnid="19">BO06</td>
+                                                            <td>2</td>
+                                                            <td class="animated" data-objfurnid="20">BO06</td>
                                                             <td>Металл</td> 
                                                             <td colspan="3">Стяжка коническая D10 для плит толщиной от 25 мм</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/ArticulGR06.png" class="" alt="Винт" title=""></td>
-                                                            <td>1</td>
+                                                            <td>2</td>
                                                             <td >GR07</td>
                                                             <td>Металл</td>
                                                             <td  colspan="3">Винт стяжки конической BO06</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulTF02.png" class="" alt="Шток" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulTFD6-FZ.png" class="" alt="Шток" title=""></td>
                                                             <td>1</td>
-                                                            <td >TF02</td>
+                                                            <td >TFD6 FZ </td>
                                                             <td>Металл</td>
-                                                            <td  colspan="3">Шток стяжки конической D10, 35&nbsp;мм</td>
+                                                            <td  colspan="3">Шток двухсторонний стяжки конической D10, 62&nbsp;мм</td>
                                                         </tr>
                                                         <tr   >
                                                                 <td><img src="./dist/filesdb/images/pagevpi/ArticulFutorka-BU12.png" class="" alt="Футорка" title=""></td>
-                                                                <td>1</td>
+                                                                <td>2</td>
                                                                 <td class="" >BU12 (82-02)</td>
                                                                 <td>Желтый</td> 
                                                                 <td colspan="3">Футорка металлическая с распорным шариком M6</td>
@@ -143,22 +143,11 @@ include 'inc-left-side-menu-furnitura.php';
                                                         alt="Чертёж"                                                        
                                                     >
                                                 </a>
-                                            </div>
-                                            <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/BO04_sch2.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/BO04_sch2.png"
-                                                        data-src="./dist/filesdb/images/BO04_sch2.png"
-                                                        class="center-block   img-rounded     bar "
-                                                        data-toggle="modal"                                                                                                                          
-                                                        alt="Проектирование"                                                        
-                                                    >
-                                                </a>
-                                            </div>
+                                            </div>                                        
                                             <div class="item">
                                                 <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/BO04_sch3.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/BO04_sch3.png" 
+                                                        src="./dist/filesdb/images/BO04_sch4.png" 
                                                         data-src="./dist/filesdb/images/BO04_sch3.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                         
@@ -253,10 +242,10 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/BO04_sch3.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/BO04_sch4.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/BO04_sch3.png"
-                                                        data-src="./dist/filesdb/images/BO04_sch3.png"
+                                                        src="./dist/filesdb/images/BO04_sch4.png"
+                                                        data-src="./dist/filesdb/images/BO04_sch4.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Информация для заказа"                                                        
@@ -317,29 +306,29 @@ include 'inc-left-side-menu-furnitura.php';
                             <!-- /часть --> 
 
                             <!-- часть -->
-                                <h2 >Шток стяжки конической D10, 35 мм</h2>                         
+                                <h2 >Шток двухсторонний стяжки конической D10</h2>                         
 
                                 <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
                                     <div id="carousel3" class="carousel slide" data-ride="carousel" style="display: inline-block;">
                                         <div class="carousel-inner">
 
                                             <div class="item active">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Шток стяжки конической D10, 35 мм" data-image="./dist/filesdb/images/TF02.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Шток двухсторонний стяжки конической D10" data-image="./dist/filesdb/images/TFD6-FZ.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/TF02.png"
-                                                        data-src="./dist/filesdb/images/TF02.png"
+                                                        src="./dist/filesdb/images/TFD6-FZ.png"
+                                                        data-src="./dist/filesdb/images/TFD6-FZ.png"
                                                         class="center-block   img-rounded    bar "
                                                         data-toggle="modal"                                                                                                                    
-                                                        alt="Шток стяжки конической D10, 35 мм"
+                                                        alt="Шток двухсторонний стяжки конической D10"
                                                         data-pdf=""                                                    
                                                     >
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/TF02_sch1.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/TFD6-FZ_sch1.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/TF02_sch1.png"
-                                                        data-src="./dist/filesdb/images/TF02_sch1.png"
+                                                        src="./dist/filesdb/images/TFD6-FZ_sch1.png"
+                                                        data-src="./dist/filesdb/images/TFD6-FZ_sch1.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Необходимое пространство"                                                        
@@ -347,10 +336,21 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/BO04_sch3.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/TFD6-FZ_sch2.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/BO04_sch3.png"
-                                                        data-src="./dist/filesdb/images/BO04_sch3.png"
+                                                        src="./dist/filesdb/images/TFD6-FZ_sch2.png"
+                                                        data-src="./dist/filesdb/images/TFD6-FZ_sch2.png"
+                                                        class="center-block   img-rounded     bar "
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Информация для заказа"                                                        
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/BO04_sch4.png" data-target="#image-gallery">
+                                                    <img  
+                                                        src="./dist/filesdb/images/BO04_sch4.png"
+                                                        data-src="./dist/filesdb/images/BO04_sch4.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Информация для заказа"                                                        
@@ -388,19 +388,18 @@ include 'inc-left-side-menu-furnitura.php';
 
                                                     <tr>
                                                     
-                                                    <th>L,<br>мм</th>
-                                                    <th>L1,<br>мм</th>
-                                                    <th>L2,<br>мм</th>
+                                                    <th>Для толщины плиты,<br>мм</th>
+                                                    <th>Диаметр корпуса стяжки,<br>мм</th>
+                                                    
                                                     <th>Артикул</th>
                                                     </tr>
 
 
                                                     <tr>
                                                 
-                                                    <td>35</td>
-                                                    <td>20</td>
-                                                    <td>9</td>
-                                                    <td><span class="boldstyle">TF02</span></td>
+                                                    <td>16,25</td>
+                                                    <td>10</td>                                                    
+                                                    <td><span class="boldstyle">TFD6 FZ</span></td>
                                                     </tr>
 
 
@@ -534,7 +533,7 @@ include 'inc-left-side-menu-furnitura.php';
 
                 <?php
                 //  include 'inc-goup-menu.php';//$styazhka=[]
-                SideMenu($styazhka,7);//7
+                SideMenu($styazhka,8);//7
                 ?>  
    
 <?php include 'inc-footer2.php'; ?>

@@ -14,12 +14,12 @@
 
 if(isset($_POST["arr"]) )//генерация файла
 {
-	
+	echo "localhost !!!!!!!";
+			exit();
 	 if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php')) 
 	 	{
 			
-			// echo "localhost !!!!!!!";
-			// exit();
+			
 			require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
 		}
 		else {
@@ -43,12 +43,14 @@ if(isset($_POST["arr"]) )//генерация файла
 			$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/PR_template.xls");// для сайта !!!!!!!
         }
 		// $objPHPExcel->getActiveSheet()->setCellValue('D1', PHPExcel_Shared_Date::PHPToExcel(time()));
-
-	
+	 echo "<pre>";
+	 echo print_f($_POST["arr"]);	 
+     echo "</pre>";
+	 exit();
 	 foreach ($_POST["arr"] as $key=>$v1)
 	  {
-		// echo '<hr>';
-		// echo "filename ".$key.".xlsx";
+		echo '<hr>';
+		echo "filename ".$key.".xlsx";
 		$filename=$key.".xlsx";
 		// echo "<br>";
 		// echo $v1['id']." ";
@@ -71,10 +73,10 @@ if(isset($_POST["arr"]) )//генерация файла
 
 $i=0;
 		foreach ($v1 as  $v=>$v2) {
-			// echo "row:".$v;			
-			// echo ' {kd-'.$v2['kd']." ";
-			// echo ' dp-'.$v2['dp']."}";
-			// echo "<br>";
+			echo "row:".$v;			
+			echo ' {kd-'.$v2['kd']." ";
+			echo ' dp-'.$v2['dp']."}";
+			echo "<br>";
 
 			$baseRow = 3;
 			$row = ($i)+$baseRow;
