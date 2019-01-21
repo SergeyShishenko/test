@@ -255,7 +255,7 @@ function unique_multidim_array($array, $key) {
 			$array=$data;
 			$exclude=array("0","1","2");// исключаемые индексы
 			echo "<p><b>Заказчик: </b>".$data[1][0]."</p>";
-			echo "<p><span><b>Представитель:</b></span> <span><input type='text' class='form-control'  id='recipient-name' value='' required></span></p>";
+			echo "<p id='agent' ><span ><b>Представитель:</b></span> <span><input type='text' class='form-control'  id='agent-name' value='' required></span></p>";
 			
 			echo "<p><b>Объект: </b>".$data[1][1]."</p>";
 			if (array_sum(array_column($array, 4)) === 0){// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";						

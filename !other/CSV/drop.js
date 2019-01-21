@@ -738,3 +738,9 @@ function propdelete2(obj,name){
         }
 	    return false; // выключаем стандартное действие
     });
+    $("body").on("click","#agent",function() {
+        $('#agent-name').show();
+    });
+    $("body").on("click","#myModal",function() {
+        $('#agent-name').hide();
+    });
