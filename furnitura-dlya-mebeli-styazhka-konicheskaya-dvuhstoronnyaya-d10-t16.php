@@ -82,7 +82,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td>2</td>
                                                             <td class="animated" data-objfurnid="22">BO04FZ</td>
                                                             <td>Металл</td> 
-                                                            <td colspan="3">Стяжка коническая D10 для плит толщиной от 25 мм</td>
+                                                            <td colspan="3">Стяжка коническая D10 для плит толщиной от 16 мм</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/ArticulGR06.png" class="" alt="Винт" title=""></td>
