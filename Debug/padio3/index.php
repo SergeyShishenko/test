@@ -27,11 +27,13 @@
     <i></i>
     <div>
         <label id="label1" for="item2-state-null">Урочно</label>
-        <label id="label2" for="item2-state-on"></label>
+        <label id="label2" for="item2-state-on">&nbsp;</label>
         <label id="label3" for="item2-state-off">Внеурочно</label>
     </div>
   </span>
 </div>
+
+<div class="half-background">test text</div>
 <!-- <div style="margin-top: 15px;">
   <span class="tristate tristate-rotate">
     <input type="radio" id="item3-state-off" name="item3" value="-1" checked>

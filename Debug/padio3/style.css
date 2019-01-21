@@ -32,22 +32,40 @@
   z-index: 10;
 }
 .tristate > input[type="radio"]:checked + i + div > #label1
- /* ,.tristate > input[type="radio"]:checked + i + div > label +  label  */
+ ,.tristate > input[type="radio"]:checked + i + div > #label2 
  {
   display: none;
 }
-.tristate > input[type="radio"]:checked + input[type="radio"] + i + div > label,
- .tristate > input[type="radio"]:checked + input[type="radio"] + i + div > label + label + label 
+.tristate > input[type="radio"]:checked + input[type="radio"] + i + div > #label1
+ ,.tristate > input[type="radio"]:checked + input[type="radio"] + i + div > #label3
  {
   display: none;
 }
-.tristate > input[type="radio"]:checked + input[type="radio"] + input[type="radio"] + i + div > label + label,
+.tristate > input[type="radio"]:checked + input[type="radio"] + input[type="radio"] + i + div > label + label
 
- .tristate > input[type="radio"]:checked + input[type="radio"] + input[type="radio"] + i + div > label + label 
+ ,.tristate > input[type="radio"]:checked + input[type="radio"] + input[type="radio"] + i + div > label + label 
   {
   display: none;
 }
 .tristate > div {padding-top: 10px;}
+
+
+.half-background{
+  position: relative;
+  border: 1px solid #ccc;
+  width: 135px;
+  margin-top: 10px;
+  text-align:  center;
+}
+.half-background:before{
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 50%;
+  height: 100%;
+  background: #69F0AE;
+  z-index: -1;
+}
+
 /* .tristate > input[type="radio"]:checked + i + label,
  .tristate > input[type="radio"]:checked + i + label + label 
  {
