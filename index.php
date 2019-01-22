@@ -4699,7 +4699,7 @@ include 'inc-goup-menu.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2"  id="flo-5000502-06-100-zashchelka-tipon">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-06-100-zashchelka-tipon" >5000502-06-100 защелка - TIPON<span><br>~5000502-06-100-zashchelka-tipon</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-06-100-zashchelka-tipon" >5000502-06-100 защелка - TIP-ON <span><br>~tipon ешз-щт тип-он типон</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
