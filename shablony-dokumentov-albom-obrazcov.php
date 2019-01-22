@@ -36,13 +36,14 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_1-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                
-                                 alt="Лист титульный"
-                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf"
+                                 alt="Лист титульный"                                 
                                  data-prnt="noPrint"
-                                 data-spng="noPNG" 
+                                 
                                 
                                 ></a>
                              </p>
+                             <!-- data-spng="noPNG"  -->
+                             <!-- data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf" -->
                              <!-- <div class="overlay"></div> -->
                         </div>
                       
@@ -99,9 +100,10 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-toggle="modal"
                                  data-target="#myModal"                                                           
                                  alt="Титульный лист ВПИ"
-                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf"
+                                
                                    ></a>
                              </p>
+                              <!-- data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf" -->
                              <!-- <div class="overlay"></div> -->
                         </div>
 
