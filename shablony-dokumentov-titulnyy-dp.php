@@ -117,7 +117,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                                         
                               <p> <a>
                                   <!-- <img src="./dist/images/list-titulnyy-vpi_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_5-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_5-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                   data-toggle="modal"
                                   data-target="#myModal"                                                                
                                   alt="5000304_01_000 лист титульный ВПИ"

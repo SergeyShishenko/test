@@ -171,15 +171,19 @@ function IndexMenu($arr,$num_footer)// index.php
 
         $albomobrazcov[2]=['path'=>"shablony-dokumentov-albom-obrazcov.php",
                         'id'=> "#shablon-alboma-obrazcov_2",
-                        'def'=>"Состав альбома образцов"];
+                        'def'=>"Таблица образцов для заказчика"];
                     
         $albomobrazcov[3]=['path'=>"shablony-dokumentov-albom-obrazcov.php",
                         'id'=> "#shablon-alboma-obrazcov_3",
-                        'def'=>"Размещение изделий на плане"];
+                        'def'=>"Размещение образцов на плане"];
                     
         $albomobrazcov[4]=['path'=>"shablony-dokumentov-albom-obrazcov.php",
                         'id'=> "#shablon-alboma-obrazcov_4",
-                        'def'=>"Образец №"];
+                        'def'=>"Титульный лист Образец"];
+
+        $albomobrazcov[5]=['path'=>"shablony-dokumentov-albom-obrazcov.php",
+                        'id'=> "#shablon-alboma-obrazcov_5",
+                        'def'=>"Титульный лист ВПИ"];
                         
     /////////////////////////////////////
 

@@ -33,8 +33,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="overlay"></div>
                                                        
                             <p> <a>
-                                <!-- <img src="./dist/images/shablon-alboma-obrazcov2_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_1-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                
                                  alt="Лист титульный"
@@ -49,14 +48,13 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                       
 
                         <h2 id="shablon-alboma-obrazcov_2">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Состав альбома образцов</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Таблица образцов для заказчика</h4>
                                                    
                             <p> <a>
-                                <!-- <img src="./dist/images/shablon-alboma-obrazcov_2-v2.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_2-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                            
-                                 alt="Состав альбома образцов"
+                                 alt="Таблица образцов для заказчика"
                                 
                                    ></a>
                              </p>
@@ -64,11 +62,10 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div>
 
                         <h2 id="shablon-alboma-obrazcov_3">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Размещение изделий на плане</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Размещение образцов на плане</h4>
                                                    
                             <p> <a>
-                                <!-- <img src="./dist/images/shablon-alboma-obrazcov2_3.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_3-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_3-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                             
                                  alt="Размещение изделий на плане"
@@ -79,19 +76,35 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div>
 
                         <h2 id="shablon-alboma-obrazcov_4">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Образец №</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Титульный лист Образец</h4>
                                                    
                             <p> <a>
-                                <!-- <img src="./dist/images/shablon-alboma-obrazcov2_4.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_4-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_4-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                           
-                                 alt="Образец №"
+                                 alt="Титульный лист Образец"
+                                
+                                   ></a>
+                             </p>
+                             <!-- <div class="overlay"></div> -->
+                        </div>
+
+                        <h2 id="shablon-alboma-obrazcov_5">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Титульный лист ВПИ</h4>
+                                                   
+                            <p> <a>
+                                
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_5-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                           
+                                 alt="Титульный лист Образец"
                                  data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf"
                                    ></a>
                              </p>
                              <!-- <div class="overlay"></div> -->
                         </div>
+
                       </section>
                     </article>
                     
@@ -133,7 +146,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                <div class="overlay"></div>                        
                             <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_1-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
@@ -144,7 +157,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_2-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
@@ -155,7 +168,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_3-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_3-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
@@ -166,7 +179,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_4-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_4-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
@@ -177,7 +190,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_5-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_5-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
@@ -188,7 +201,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_6-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_6-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
@@ -199,7 +212,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_7-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_7-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
@@ -210,7 +223,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_8-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_8-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
@@ -221,7 +234,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_9-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_9-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
@@ -232,7 +245,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_10-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_10-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
@@ -243,7 +256,73 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <p> <a>
                                 <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_10-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_11-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_12-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_13-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_14-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_15-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_16-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
+                                 data-pdf="./dist/files/pdf/shablon-alboma-obrazcov-zapolnenie.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             <p> <a>
+                                <!-- <img src="./dist/images/list-dvizheniya-obrazcov_1.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_17-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ"
