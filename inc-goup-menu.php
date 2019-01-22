@@ -248,6 +248,19 @@ function IndexMenu($arr,$num_footer)// index.php
 
     /////////////////////////////////////
 
+        /////////////////////////////////////
+
+        $list_titulnyy_TZ=[];
+        $list_titulnyy_TZ[0]=['path'=>"shablony-dokumentov-titulnyy-dp.php",
+                        'id'=>"#shablony-dokumentov-list-titulnyy-TZ",
+                        'def'=>"ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика"];
+    
+        $list_titulnyy_TZ[1]=['path'=>"shablony-dokumentov-titulnyy-dp.php",
+                        'id'=> "#list-titulnyy-TZ",
+                        'def'=>"5000301-04-001 лист титульный ТЗ для строителей заказчика"];
+    
+        /////////////////////////////////////
+
     /////////////////////////////////////
 
     $vedomost_furnitury=[];

@@ -206,7 +206,32 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                             <!--  data-xls="./dist/files/xls/vedomost-materialy-prochie-v1.xlsx"--> 
                              <div class="overlay"></div>
+                        </div>                        
+                      </section>
+                    </article>
+
+                    <article >
+                      <section >
+                        <div class="page-header">
+                        <h2  id="shablony-dokumentov-list-titulnyy-TZ">&nbsp;</h2> 
+                          <h1 itemprop="name">ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика</h1>
                         </div>
+                        <h2 id="list-titulnyy-TZ">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000301-04-001 лист титульный ТЗ для строителей заказчика</h4>
+                                                       
+                            <p> <a>
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/list-titulnyy-tz_1-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                                
+                                 alt="5000301-04-001 лист титульный ТЗ для строителей заказчика"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                 
+                                   ></a>
+                             </p>
+                            <!--  data-xls="./dist/files/xls/vedomost-materialy-prochie-v1.xlsx"--> 
+                             <div class="overlay"></div>
+                        </div>                        
                       </section>
                     </article>
 
@@ -218,7 +243,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
 
                 <?php
                   // ШАБЛОН АЛЬБОМА ОБРАЗЦОВ,ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ,ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ
-                  $arrlist = [$shablon_alboma_dp,$list_titulnyy_vpi,$vedomost_furnitury,$vedomost_stekol_zerkal,$materialy_prochie];
+                  $arrlist = [$shablon_alboma_dp,$list_titulnyy_vpi,$vedomost_furnitury,$vedomost_stekol_zerkal,$materialy_prochie,$list_titulnyy_TZ];
                  SideMenuList($arrlist);
  ?>   
 <?php include 'inc-footer.php'; ?>

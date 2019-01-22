@@ -47,6 +47,8 @@ include 'inc-goup-menu.php';//$styazhka=[]
                                 LeftSideMenu($vedomost_stekol_zerkal);//ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ
 
                                 LeftSideMenu($materialy_prochie);//ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ
+
+                                LeftSideMenu($list_titulnyy_TZ);//ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика
                         echo'                        
                             </ul>
                         </li>
