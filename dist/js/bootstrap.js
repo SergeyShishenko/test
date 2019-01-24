@@ -1629,6 +1629,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
     this.refresh()
     this.process()
     
+    
   }
 
   ScrollSpy.DEFAULTS = {
@@ -1679,6 +1680,7 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
         && (!offsets[i + 1] || scrollTop <= offsets[i + 1])
         && this.activate( targets[i] )
     }
+    // console.log('nav');
   }
 
   ScrollSpy.prototype.activate = function (target) {
@@ -1703,6 +1705,18 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
     }
 
     active.trigger('activate.bs.scrollspy')
+    
+    
+    var o =$(active).position().top;
+   
+    var sa = $(active).position().top;
+    var sl = $('.vertical-menu li.active').position().top;
+    // console.log('active LI position '+sa);
+    // console.log('active A  position '+sl);    
+    if(sa + sl < 0){$('.vertical-menu').animate({ scrollTop: 0}, 10);}
+    else if(sa + sl > 390){{$('.vertical-menu').animate({ scrollTop: 390}, 10);}}    
+    if (o > 390){$('.vertical-menu').animate({ scrollTop: o },10); }// анимируем скроолинг к элементу 
+    
   }
 
 

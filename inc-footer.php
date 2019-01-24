@@ -21,7 +21,7 @@
         //container: \'.container\',
         //validateDelay: 500,
 		success: function(element){
-			console.log("Element loaded: ", element.nodeName);
+			// console.log("Element loaded: ", element.nodeName);
 		}
     });
     
