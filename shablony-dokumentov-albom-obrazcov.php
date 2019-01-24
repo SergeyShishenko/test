@@ -28,7 +28,10 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <h2  id="shablon-alboma-obrazcov">&nbsp;</h2> 
                           <h1 itemprop="name">ШАБЛОН АЛЬБОМА ОБРАЗЦОВ</h1>
                         </div>
+                        <!-- <p>&nbsp;</p> -->
                         <h2 id="shablon-alboma-obrazcov_1">&nbsp;</h2>
+                        <!-- <a href="./dist/files/xls/117-metodicheskoe-posobie-po-izdeliyam.xls" type="button" class="btn btn-primary"  download="117-metodicheskoe-posobie-po-izdeliyam.xls">Скачать - 117. Методическое пособие по изделиям.xls</a> -->
+
                         <div class="bs-callout bs-callout-warning cont" ><h4>Лист титульный</h4>
                         <div class="overlay"></div>
                                                        
@@ -36,8 +39,9 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_1-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                
-                                 alt="Лист титульный"                                 
+                                 alt="5000301-03-001 лист титульный Альбома Образцов"                                 
                                  data-prnt="noPrint"
+                                 data-xls="./dist/files/xls/list-titulnyy-alboma-obrazcov.xlsx"
                                  
                                 
                                 ></a>
@@ -50,15 +54,20 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
 
                         <h2 id="shablon-alboma-obrazcov_2">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Таблица образцов для заказчика</h4>
-                                                   
+                        <div class="overlay"></div>                          
                             <p> <a>
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_2-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                            
                                  alt="Таблица образцов для заказчика"
+                                 data-prnt="noPrint"
+                                 data-xls="./dist/files/xls/ishodnik-tablicy-obrazcov-dlya-zakazchika.xlsx"
+                                 data-sample="./dist/files/xls/primer-tablicy-obrazcov-dlya-zakazchika.xlsx"
+                                 
                                 
                                    ></a>
                              </p>
+                             <!-- sample -->
                              <!-- <div class="overlay"></div> -->
                         </div>
 
@@ -78,13 +87,16 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
 
                         <h2 id="shablon-alboma-obrazcov_4">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Титульный лист Образец</h4>
-                                                   
+                        <div class="overlay"></div>                           
                             <p> <a>
                                 
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_4-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                           
                                  alt="Титульный лист Образец"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                 data-xls="./dist/files/xls/list-titulnyy-obrazca.xlsx"
                                 
                                    ></a>
                              </p>
@@ -93,18 +105,21 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
 
                         <h2 id="shablon-alboma-obrazcov_5">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Титульный лист ВПИ</h4>
-                                                   
+                         <div class="overlay"></div>                          
                             <p> <a>
                                 
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_5-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                           
                                  alt="Титульный лист ВПИ"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                 data-xls="./dist/files/xls/list-titulnyy-vpi-kd.xlsx"
                                 
                                    ></a>
                              </p>
                               <!-- data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf" -->
-                             <!-- <div class="overlay"></div> -->
+                             <!--  -->
                         </div>
 
                       </section>

@@ -38,7 +38,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="Лист титульный ДП"                               
                                  alt="АЛЬБОМ ДИЗАЙН-ПРОЕКТА"
-                                 data-xls="./dist/files/pdf/shablon-alboma-dp.xlsx"
+                                 data-xls="./dist/files/xls/shablon-alboma-dp.xlsx"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
                                    ></a>
@@ -100,9 +100,6 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                              </p>
                              <!-- <div class="overlay"></div> -->
                         </div>
-
-                      
-                       
                       </section>
                     </article>
 
@@ -113,20 +110,21 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                             <h1 itemprop="name">ЛИСТ ТИТУЛЬНЫЙ ВПИ</h1>
                           </div>
                           <h2 id="list-titulnyy-vpi">&nbsp;</h2>
-                          <div class="bs-callout bs-callout-warning cont" ><h4>5000304-01-000 лист титульный ВПИ</h4>
-                                                        
+                          <div class="bs-callout bs-callout-warning cont" ><h4>5000304-00-001 Лист титульный ВПИ ДП</h4>
+                            <div class="overlay"></div>                            
                               <p> <a>
                                   <!-- <img src="./dist/images/list-titulnyy-vpi_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
                                   <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_5-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                   data-toggle="modal"
                                   data-target="#myModal"                                                                
-                                  alt="5000304_01_000 лист титульный ВПИ"
+                                  alt="5000304-00-001 Лист титульный ВПИ ДП"
                                   data-prnt="noPrint"
-                                 data-spng="noPNG" 
+                                  data-spng="noPNG" 
+                                  data-xls="./dist/files/xls/list-titulnyy-vpi-dp.xlsx"
                                 
                                     ></a>
                               </p>
-                              <!-- <div class="overlay"></div> -->
+                              <!--  -->
                           </div>
                         </section>
                     </article>
@@ -138,22 +136,21 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                           <h1 itemprop="name">ВЕДОМОСТЬ ФУРНИТУРЫ</h1>
                         </div>
                         <h2 id="vedomost-furnitury">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>5000304-01-001 ведомость фурнитуры</h4>
-                                                       
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Ведомость фурнитуры ДП</h4>
+                         <div class="overlay"></div>                              
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-furnitury_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_6-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                 
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
-                                 alt="5000304-01-001 ведомость фурнитуры"
+                                 alt="Ведомость фурнитуры ДП"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
+                                 data-xls="./dist/files/xls/vedomost-furnitury-dp.xlsx"
                                  
                                    ></a>
-                             </p>
-                             <!-- data-xls="./dist/files/xls/vedomost-furnitury-v1.xlsx" -->
-                             <div class="overlay"></div>
+                             </p> 
                         </div>
                       </section>
                     </article>
@@ -165,21 +162,21 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                           <h1 itemprop="name">ВЕДОМОСТЬ СТЕКОЛ И ЗЕРКАЛ</h1>
                         </div>
                         <h2 id="vedomost-stekol-i-zerkal">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>5000304-02-001 ведомость стекол и зеркал</h4>
-                                                       
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Ведомость стекол и зеркал ДП</h4>
+                         <div class="overlay"></div>                              
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-stekol-i-zerkal_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_7-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
-                                 alt="5000304-02-001 ведомость стекол и зеркал"
+                                 alt="Ведомость стекол и зеркал ДП"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
+                                 data-xls="./dist/files/xls/vedomost-stekol-i-zerkal-dp.xlsx"
+                                 
                                  
                                    ></a>
                              </p>
-                             <!-- data-xls="./dist/files/xls/vedomost-stekol-i-zerkal-v1.xlsx" -->
-                             <div class="overlay"></div>
                         </div>
                       </section>
                     </article>
@@ -191,21 +188,19 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                           <h1 itemprop="name">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ</h1>
                         </div>
                         <h2 id="vedomost-materialy-prochie">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>5000304-03-001 ведомость материалы прочие</h4>
-                                                       
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Ведомость материалы прочие ДП</h4>
+                         <div class="overlay"></div>                              
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-materialy-prochie_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_8-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
-                                 alt="5000304-03-001 ведомость материалы прочие"
+                                 alt="Ведомость материалы прочие ДП"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
-                                 
+                                 data-xls="./dist/files/xls/vedomost-materialy-prochie-dp.xlsx"
                                    ></a>
                              </p>
-                            <!--  data-xls="./dist/files/xls/vedomost-materialy-prochie-v1.xlsx"--> 
-                             <div class="overlay"></div>
                         </div>                        
                       </section>
                     </article>
@@ -218,7 +213,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div>
                         <h2 id="list-titulnyy-TZ">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>5000301-04-001 лист титульный ТЗ для строителей заказчика</h4>
-                                                       
+                         <div class="overlay"></div>                              
                             <p> <a>
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/list-titulnyy-tz_1-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
@@ -226,11 +221,10 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  alt="5000301-04-001 лист титульный ТЗ для строителей заказчика"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
+                                 data-xls="./dist/files/xls/list-titulnyy-tz-dlya-stroiteley-zakazchika.xlsx"
                                  
                                    ></a>
-                             </p>
-                            <!--  data-xls="./dist/files/xls/vedomost-materialy-prochie-v1.xlsx"--> 
-                             <div class="overlay"></div>
+                             </p>  
                         </div>                        
                       </section>
                     </article>

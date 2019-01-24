@@ -423,6 +423,8 @@ $(function () {
             var yxls = button.data('yxls');
             var prnt = button.data('prnt');
             var spng = button.data('spng');
+            var sample = button.data('sample');
+            
 
 
             //  console.log(pdf);
@@ -431,6 +433,19 @@ $(function () {
             //    var loge = xls.slice(xls.lastIndexOf("/") + 1);
             //    console.log(loge);
             // alert( log);
+            if (sample !== "non" && typeof(sample) !== "undefined" && sample !== "" && sample !== null)
+            {
+                //  var clickedEXP = sample.split(":"); //Разбиваем строку (Split работает аналогично PHP explode)
+                //  var EXP = clickedEXP[1]; //и получаем тип
+                //  console.log(EXP);
+                 $(this).find('.overlay').append(
+                    //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
+                     '<a href="'+sample+'"  type="button" class="btn btn-info im-download" download="'+alt+sample.slice(sample.lastIndexOf(".") )+'" title= "Скачать образец"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> ОБРАЗЕЦ</a>'
+                    ); 
+            }
+
+
+
             if (spng !== "noPNG" && typeof(im) !== "undefined" )
             {
             $(this).find('.overlay').append(
