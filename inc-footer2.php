@@ -1,11 +1,11 @@
-<?php echo'
+
             </div>
         </div>
     </article>    
     <footer class="bs-footer" role="contentinfo">
         <div class="container">
             <p class="text-center">Сайт был создан проектным подразделением компании "София-Декор" <a href="http://www.sofia-decor.ru">(http://www.sofia-decor.ru)</a> под руководством Черкашина Д.В.</p>
-            <p class="text-center">Разработчик: Шишенко С.В. </p>
+            <p class="text-center">© 2018–<?php echo date("Y");?> Разработчик: Шишенко С.В. </p>
            
         </div>
     </footer> 
@@ -14,12 +14,12 @@
     <script src="./dist/js/bootstrap.js"></script> 
     <script src="./dist/js/application.js"></script> 
     <!--<script src="./dist/js/main.26.04.2018.js"></script> -->
-    <script src="./dist/js/script2.js?v='. $script2Version .'"></script> 
+    <script src="./dist/js/script2.js?v='<?php $script2Version  ?>'"></script> 
 
    <script src="./dist/js/closest.js"></script>
     <script src="./dist/js/blazy.min.js"></script>
     <script src="./dist/js/bootstrap-number-input.js" ></script>
-    <script src="./dist/js/vpi.js?v='. $vpijsVersion .'" ></script>
+    <script src="./dist/js/vpi.js?v='<?php $vpijsVersion  ?>'" ></script>
 	<script>
     window.bLazy = new Blazy({
         //container: \'.container\',
@@ -45,4 +45,3 @@
         </script>
     </body>
 </html>
-';?>
