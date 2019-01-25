@@ -67,7 +67,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
 
                         <h2 id="shablon-alboma-dp_3">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Ситуационый план</h4>
-                                                   
+                         <div class="overlay"></div>                          
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-dp_3.png" class="center-block img-rounded img-thumbnail" -->
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_3-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
@@ -77,15 +77,16 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  alt="Ситуационый план"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
+                                 data-dwg="./dist/files/dwg/shablon-DP-autocad.dwg"
                                 
                                    ></a>
                              </p>
-                             <!-- <div class="overlay"></div> -->
+                             <!--  -->
                         </div>
 
                         <h2 id="shablon-alboma-dp_4">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Обмерный план</h4>
-                                                   
+                         <div class="overlay"></div>                          
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-dp_4.png" class="center-block img-rounded img-thumbnail" -->
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_4-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
@@ -95,10 +96,11 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  alt="Обмерный план"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
+                                 data-dwg="./dist/files/dwg/shablon-DP-autocad.dwg"
                                 
                                    ></a>
                              </p>
-                             <!-- <div class="overlay"></div> -->
+                             <!--  -->
                         </div>
                       </section>
                     </article>
