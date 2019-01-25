@@ -6,7 +6,7 @@
 // $item_katalogi_Class = '';
 ?>
 <?php
-include 'inc-goup-menu.php';//$styazhka=[]
+include 'inc-goup-menu-furnitura-dlya-mebeli.php';//$styazhka=[]
  echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">

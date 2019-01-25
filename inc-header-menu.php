@@ -134,5 +134,6 @@
     </div>
 ';
 include 'inc-header-send-modal.php';
+include 'inc-func.php';
 ?>
 
