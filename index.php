@@ -1,7 +1,9 @@
 <?php
 include 'inc-session-start.php'; 
 include 'inc-version-css-js.php'; 
-include 'inc-goup-menu.php';
+include 'inc-func.php'; 
+include 'inc-goup-menu-furnitura-dlya-mebeli.php';
+include 'inc-goup-menu-shablony-dokumentov.php';
 ?>
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">

@@ -63,19 +63,18 @@ function LeftSideMenu($arr)// левое меню -> замена <li class="men
 
 function IndexMenu($arr,$num_footer)// index.php
 {
-
     
     echo'
     <TR>
         <TD  class="hover mapsite" id="footer'.$num_footer.'">
-            <p data-img="./dist/images/'.$arr[0]['img'].'" id="floating'.($num_footer+1).'" data-href="'.$arr[0]['path'].$arr[0]['id'].'">'.$arr[0]['def'].'<span><br></span></p>
+            <p data-img="'.IndexImagesPath($arr[0]['img']).'" id="floating'.($num_footer+1).'" data-href="'.$arr[0]['path'].$arr[0]['id'].'">'.$arr[0]['def'].'<span><br></span></p>
         </TD> 
         <TD>
             <TABLE > ';        
             for ($i=1; $i < count($arr); $i++) {                             
        echo '   <TR>
                     <TD class="mapsite" colspan="2" id="'.str_replace("#","flo-",$arr[$i]['id']).'" >
-                        <p data-img="./dist/images/'.$arr[$i]['img'].'" data-href="'.$arr[$i]['path'].$arr[$i]['id'].'">'.$arr[$i]['def'].'<span> <br>~</span></p>
+                        <p data-img="'.IndexImagesPath($arr[$i]['img']).'" data-href="'.$arr[$i]['path'].$arr[$i]['id'].'">'.$arr[$i]['def'].'<span> <br>~</span></p>
                     </TD>                                                                         
                 </TR>  
                 <TR><TD></TD></TR> <!--end LEVEL4-->';             
@@ -87,6 +86,38 @@ function IndexMenu($arr,$num_footer)// index.php
     ';
 
 }
+function IndexImagesPath($valimg)// index.php
+{
+    if (!$valimg){return "./dist/images/no-foto.png";}
+    else{return $valimg;}
+}
+
+// function IndexMenu($arr,$num_footer)// index.php
+// {
+
+    
+//     echo'
+//     <TR>
+//         <TD  class="hover mapsite" id="footer'.$num_footer.'">
+//             <p data-img="./dist/images/'.$arr[0]['img'].'" id="floating'.($num_footer+1).'" data-href="'.$arr[0]['path'].$arr[0]['id'].'">'.$arr[0]['def'].'<span><br></span></p>
+//         </TD> 
+//         <TD>
+//             <TABLE > ';        
+//             for ($i=1; $i < count($arr); $i++) {                             
+//        echo '   <TR>
+//                     <TD class="mapsite" colspan="2" id="'.str_replace("#","flo-",$arr[$i]['id']).'" >
+//                         <p data-img="./dist/images/'.$arr[$i]['img'].'" data-href="'.$arr[$i]['path'].$arr[$i]['id'].'">'.$arr[$i]['def'].'<span> <br>~</span></p>
+//                     </TD>                                                                         
+//                 </TR>  
+//                 <TR><TD></TD></TR> <!--end LEVEL4-->';             
+//             }              
+//     echo'  </TABLE>
+//         </TD>
+//     </TR> 
+//     <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
+//     ';
+
+// }
 
 
 
