@@ -132,6 +132,16 @@
         <span class="glyphicon glyphicon-list" ></span>
         </button>
     </div>
+    <div  style="position:fixed; left:0; top:290px;" class="btn-side right-menu">
+    <!-- Button trigger modal +35px -->
+    
+        <button type="button" class="btn btn-default center rmenu"  title="Правое меню">  
+        <span  >&#9999;</span>
+        <span  >&#9999;</span>
+        <span  >&#9999;</span>
+        
+        </button>
+    </div>
 ';
 include 'inc-header-send-modal.php';
 include 'inc-func.php';

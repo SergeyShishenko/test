@@ -27,6 +27,13 @@ include 'inc-left-side-menu-furnitura.php';
                           <h2 >Стяжка эксцентриковая двухсторонняя MINIFIX, для плиты 24 мм</h2>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
+                            <p >&nbsp;</p> 
+                            <div class="bs-callout bs-callout-warning" >
+                            
+                            <p><span class="boldstyle">Применение:</span> для соединения двух деталей (24 мм) перпендикулярно третьей (16 мм)<br>
+                            <span class="boldstyle">Материал:</span> металл</p>                     
+                            
+                        </div>
                             
                             <div class="main-box clearfix"   >   
                                

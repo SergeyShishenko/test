@@ -105,33 +105,35 @@
 </div>
     <!-- /.modal -->
     <div  style="position:fixed; left:0; top:150px; " class="btn-side">
-        <!-- Button trigger modal -->
+        <!-- Button trigger modal +35px -->
         <button type="button" class="btn btn-default  animated tada" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
             <span class=" glyphicon glyphicon-envelope" ></span>
         </button>
        
     </div>
     <div  style="position:fixed; left:0; top:185px;" class="btn-side">
-        <!-- Button trigger modal -->
+        <!-- Button trigger modal +35px -->
         
         <button type="button" class="btn btn-default center" onclick="location.href=\'exit.php\';" title="Выйти">  
         <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
         </button>
     </div>
     <div  style="position:fixed; left:0; top:220px;" class="btn-side">
-    <!-- Button trigger modal -->
+    <!-- Button trigger modal +35px -->
     
         <button type="button" class="btn btn-default center" onclick="location.href=\'index.php\';" title="Карта сайта">  
         <span class="glyphicon glyphicon-home" ></span>
         </button>
     </div>
     <div  style="position:fixed; left:0; top:255px;" class="btn-side left-menu">
-    <!-- Button trigger modal -->
+    <!-- Button trigger modal +35px -->
     
         <button type="button" class="btn btn-default center "  title="Левое меню">  
         <span class="glyphicon glyphicon-list" ></span>
         </button>
     </div>
+  
+   
 ';
 include 'inc-header-send-modal.php';
 include 'inc-func.php';
