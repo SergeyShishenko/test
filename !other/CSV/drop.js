@@ -493,7 +493,15 @@
 
             var data;                 
             data = {};
-            propalert(product);
+            // propalert(product);
+            alert($('#client_output').text());
+            alert($('#agent_output').text());
+            alert($('#address_output').text());
+            alert($('#floor_output').text());
+            alert($('#room_output').text());
+            alert($('#complect_output').text());
+            alert($('#order_output').text());
+            alert($('#product_output').text());
             objxlsx.forEach(function(item) {
                 // var name =objxlsx[n];
                 var f=item; // ключ 
@@ -738,9 +746,31 @@ function propdelete2(obj,name){
         }
 	    return false; // выключаем стандартное действие
     });
-    $("body").on("click","#agent",function() {
-        $('#agent-name').show();
+    $("body").on("click",".changeclick",function() {       
+            
+              $(this).find('input').css({"visibility":"visible"});
+           
+    
     });
-    $("body").on("click","#myModal",function() {
-        $('#agent-name').hide();
+    $("body").on("focusout","#agent-name",function() {
+        $('#agent-name').css({"visibility":"hidden"});
+        $('#agent_output').text($(this).val());
+      });
+    // $("body").on("click","#myModal",function() {
+    //     $('#agent-name').hide();
+    // });
+    $("body").on("keyup",".changeclick > input",function(event){
+        if(event.keyCode == 13){
+            event.preventDefault();
+            var button = $(event.relatedTarget);
+            // alert(button.item);
+            $(button).css({"visibility":"hidden"});
+            $('#agent_output').text($(this).val());
+        }
+    });
+    $('#uploaded-files').click( function(){
+        if ($("#agent-name").css('visibility')=="visible") {
+            $('#agent-name').css({"visibility":"hidden"});
+            $('#agent_output').text($('#agent-name').val());
+            }
     });

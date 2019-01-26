@@ -254,10 +254,10 @@ function unique_multidim_array($array, $key) {
 		// создание таблицы begin
 			$array=$data;
 			$exclude=array("0","1","2");// исключаемые индексы
-			echo "<p><b>Заказчик: </b>".$data[1][0]."</p>";
-			echo "<p id='agent' ><span ><b>Представитель:</b></span> <span><input type='text' class='form-control'  id='agent-name' value='' required></span></p>";
+			echo "<p><b>Заказчик: </b><span id=\"client_output\">".$data[1][0]."<span></p>";
+			echo "<p id='agent' class='changeclick'><b>Представитель: </b><span id=\"agent_output\"></span> <input type='text' class='form-control'  id='agent-name' value='' required></p>";
 			
-			echo "<p><b>Объект: </b>".$data[1][1]."</p>";
+			echo "<p><b>Объект: </b><span id=\"address_output\">".$data[1][1]."<span></p>";
 			if (array_sum(array_column($array, 4)) === 0){// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";						
 				array_push($exclude,"4");
 			}	
@@ -270,8 +270,8 @@ function unique_multidim_array($array, $key) {
 			}
 			echo "<p><b>Помещение: </b><span id=\"room_output\"></span> </p>";
 			echo "<p><b>Комплект изделий:</b><span id=\"complect_output\"></span> </p>";
-			echo "<p><b>№ заказа: </b>".$data[1][2]."</p>";
-			echo "<p><b>Изделия: </b><span id=\"product_output\"></span> </p>";
+			echo "<p><b>№ заказа: </b><span id=\"order_output\">".$data[1][2]."</span></p>";
+			echo "<p  class='changeclick'><b>Изделия: </b><span id=\"product_output\"></span> <input type='text' class='form-control'  id='product-name' value='' required></p>";
 			echo "<br>";
 			echo '<table border="1" class="table table-striped table-responsive" >'; 			
 

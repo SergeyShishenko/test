@@ -144,4 +144,7 @@
             display: table-cell;
             
         }
-        #agent-name{display: none;}
+        #agent-name,#product-name{           
+            visibility: hidden;          
+        }
+       
