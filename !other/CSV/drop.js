@@ -762,15 +762,41 @@ function propdelete2(obj,name){
     $("body").on("keyup",".changeclick > input",function(event){
         if(event.keyCode == 13){
             event.preventDefault();
-            var button = $(event.relatedTarget);
-            // alert(button.item);
-            $(button).css({"visibility":"hidden"});
-            $('#agent_output').text($(this).val());
+           // var button = $(event.relatedTarget);//
+           console.log('#'+currentinput);
+           console.log($(this).val());
+         //   alert( event.relatedTarget.nodeName );
+            $(this).css({"visibility":"hidden"});
+            $(this).parent().find('span').text($(this).val());
         }
     });
     $('#uploaded-files').click( function(){
-        if ($("#agent-name").css('visibility')=="visible") {
-            $('#agent-name').css({"visibility":"hidden"});
-            $('#agent_output').text($('#agent-name').val());
+        if ($('#'+currentinput).css('visibility')=="visible") {
+            $('#'+currentinput).css({"visibility":"hidden"});
+            $('#'+currentspan).text($('#'+currentinput).val());
             }
     });
+
+    // $('.changeclick > input').focusin({a:12, b:"abc"}, function(eventObject){
+    //     var externalData = "a=" + eventObject.data.a + ", b=" + eventObject.data.b;
+    //     alert('Элемент с классом block получил фокус. '+
+    //           'В обработчик этого события переданы данные: ' + externalData );
+    //   });
+    var currentinput='';
+    var currentspan='';
+    $("body").on("focusin",".changeclick > input",function(eventObject){
+        // var externalData = "a=" + eventObject.data.a + ", b=" + eventObject.data.b;
+        console.log($(eventObject.target).parent().find('span').attr('id'));
+        currentspan=$(eventObject.target).parent().find('span').attr('id');
+        currentinput=$(eventObject.target).parent().find('input').attr('id');
+      });
+    // $("body").on("focusin",".changeclick > input",function(){
+    //     alert('Элемент foo получил фокус.');
+    //   });
+    $("body").on("keypress","#product-name",function(e) {      
+            if (e.keyCode < 44 || e.keyCode == 45|| e.keyCode == 47 || e.keyCode > 57) {       
+                return false;        
+            }
+      
+        });
+        
