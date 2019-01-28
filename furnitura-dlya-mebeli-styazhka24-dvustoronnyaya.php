@@ -133,10 +133,10 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/shtok-dvustoronniy3.png" data-target="#image-gallery">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/Styazhka1-960x640.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/shtok-dvustoronniy3.png"
-                                                        data-src="./dist/filesdb/images/shtok-dvustoronniy3.png"
+                                                        src="./dist/filesdb/images/Styazhka1-960x640.png"
+                                                        data-src="./dist/filesdb/images/Styazhka1-960x640.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Необходимое пространство"                                                        
@@ -154,28 +154,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     >
                                                 </a>
                                             </div>
-                                            <!-- <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/Styazhka3-960x640.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/Styazhka3-960x640.png" 
-                                                        data-src="./dist/filesdb/images/Styazhka3-960x640.png"
-                                                        class="center-block   img-rounded     bar "
-                                                        data-toggle="modal"                                                                                                                         
-                                                        alt="Проектирование"                                                        
-                                                    >
-                                                </a>
-                                            </div>
-                                            <div class="item">
-                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Проектирование" data-image="./dist/filesdb/images/Styazhka4-960x640.png" data-target="#image-gallery">
-                                                    <img  
-                                                        src="./dist/filesdb/images/Styazhka4-960x640.png" 
-                                                        data-src="./dist/filesdb/images/Styazhka4-960x640.png"
-                                                        class="center-block   img-rounded     bar "
-                                                        data-toggle="modal"                                                                                                                         
-                                                        alt="Проектирование"                                                        
-                                                    >
-                                                </a>
-                                            </div> -->
+                                       
                                             
                                         </div>
                                         <!-- Элементы управления -->
@@ -268,6 +247,17 @@ include 'inc-left-side-menu-furnitura.php';
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Информация для заказа"                                                        
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/shtok-dvustoronniy3.png" data-target="#image-gallery">
+                                                    <img  
+                                                        src="./dist/filesdb/images/shtok-dvustoronniy3.png"
+                                                        data-src="./dist/filesdb/images/shtok-dvustoronniy3.png"
+                                                        class="center-block   img-rounded     bar "
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Необходимое пространство"                                                        
                                                     >
                                                 </a>
                                             </div>
