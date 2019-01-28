@@ -563,6 +563,7 @@ Objx.prototype = excelObject;
 
 function checkAddress(checkbox)
 {
+    alert($(checkbox).attr('id'));
     var tr=$(checkbox).parent().parent().parent();
     var tblid = tr.parent().parent().attr('id');
     var typecheck =$(checkbox).attr('name');// kd,dp
@@ -765,19 +766,59 @@ function propdelete2(obj,name){
         if(event.keyCode == 13){
             event.preventDefault();
            // var button = $(event.relatedTarget);//
-           console.log('#'+currentinput);
+           console.log('keyCode 13 #'+currentinput);
            console.log($(this).val());
-         //   alert( event.relatedTarget.nodeName );
+          
             $(this).css({"visibility":"hidden"});
             $(this).parent().find('span').text($(this).val());
+            // arr_coma($(this).val());
+            if  (currentinput=='product-name' && $('#'+currentinput).val()){arr_coma($('#'+currentinput).val());}
+            else{ $(this).parent().find('span').text($(this).val());}
+            currentinput='';
         }
     });
     $('#uploaded-files').click( function(){
+        console.log($('#'+currentinput).css('visibility'));
         if ($('#'+currentinput).css('visibility')=="visible") {
+
             $('#'+currentinput).css({"visibility":"hidden"});
             $('#'+currentspan).text($('#'+currentinput).val());
+            console.log('#uploaded-files #'+currentinput);
+            console.log('currentinput.val() '+$('#'+currentinput).val());
+            // if  (currentinput=='product-name' && $('#'+currentinput).val()){arr_coma($('#'+currentinput).val());}
+            
+            currentinput='';
             }
     });
+
+    function arr_coma(val){
+        // 
+        // $.each(files, function(index, file) { 
+        //     console.log(files[index].type);	
+        //     console.log(files[index].name);
+        val=replaceAll(val, '.', ',');
+        $('span#product_output').text(val);
+ var obj =$('#someSwitchOptionSuccess1');
+        checkAddress($('#someSwitchOptionSuccess1'));
+        // checkAddress(obj);
+
+// alert(val);
+            // var arr_s = val.split(","); //Разбиваем строку (Split работает аналогично PHP explode)
+            $("#myCheckbox").attr("checked","checked");
+            // $("input:checkbox").removeAttr("checked");
+            // $("input[name=myCheckbox]").attr("checked","checked");
+           
+    }
+    function escapeRegExp(str) {
+        return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+    }
+     
+    function replaceAll(str, find, replace) {
+        return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+    }     
+       
+
+    
 
     // $('.changeclick > input').focusin({a:12, b:"abc"}, function(eventObject){
     //     var externalData = "a=" + eventObject.data.a + ", b=" + eventObject.data.b;
@@ -795,9 +836,19 @@ function propdelete2(obj,name){
     // $("body").on("focusin",".changeclick > input",function(){
     //     alert('Элемент foo получил фокус.');
     //   });
-    $("body").on("keypress","#product-name",function(e) {      
-            if (e.keyCode < 44 || e.keyCode == 45|| e.keyCode == 47 || e.keyCode > 57) {       
+    var coma=false;
+    $("body").on("keypress","#product-name",function(e) { 
+        // console.log(coma);     
+            if (e.keyCode < 44 || e.keyCode == 45|| e.keyCode == 47 || e.keyCode > 57 ) {       
                 return false;        
+            }
+            else if(e.keyCode==44 || e.keyCode==46)
+            {
+                if(coma==true){return false;}
+                else{coma=true;}
+            }
+            else {
+                coma=false;
             }
       
         });
