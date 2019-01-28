@@ -748,17 +748,19 @@ function propdelete2(obj,name){
     });
     $("body").on("click",".changeclick",function() {       
             
+              $(this).find('input').val($(this).find('span').text());
               $(this).find('input').css({"visibility":"visible"});
+              console.log($(this).find('span').attr('id'));
+              currentspan=$(this).find('span').attr('id');
+              currentinput=$(this).find('input').attr('id');
            
     
     });
-    $("body").on("focusout","#agent-name",function() {
-        $('#agent-name').css({"visibility":"hidden"});
-        $('#agent_output').text($(this).val());
-      });
-    // $("body").on("click","#myModal",function() {
-    //     $('#agent-name').hide();
-    // });
+    // $("body").on("focusout","#agent-name",function() {
+    //     $('#agent-name').css({"visibility":"hidden"});
+    //     $('#agent_output').text($(this).val());
+    //   });
+   
     $("body").on("keyup",".changeclick > input",function(event){
         if(event.keyCode == 13){
             event.preventDefault();

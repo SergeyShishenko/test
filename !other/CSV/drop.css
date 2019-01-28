@@ -147,4 +147,7 @@
         #agent-name,#product-name{           
             visibility: hidden;          
         }
+        .changeclick{
+            cursor: pointer;
+        }
        
