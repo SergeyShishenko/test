@@ -142,7 +142,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-target="#myModal"
                                  data-content="ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ"                               
                                  alt="ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ"
-                                 data-pdf="./dist/files/pdf/list-dvizheniya-obrazcov.pdf"
+                                 data-xls="./dist/files/xls/list-dvizheniya-obrazcov.xlsx"
                                    ></a>
                              </p>
                              
