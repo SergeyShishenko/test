@@ -278,13 +278,16 @@ function unique_multidim_array($array, $key) {
 				$num = count ($array); //строк с шапкой
 				// echo "$num ". $num; 
 				for ($row=0; $row < $num; $row++) { 
+					$some=$array[$row][4];
+					if ($some==""){$some=$array[$row][3];}
 					echo "<tr>"; 
 					if ($row===0){
 						echo "<td>Выбрать</td>";
+
 					}else{
 						echo '<td> <div class="material-switch pull-right">
-							<input id="someSwitchOptionSuccess'.$row.'" name="someSwitchOption001" type="checkbox" onclick="checkAddress(this)"/>
-							<label for="someSwitchOptionSuccess'.$row.'" class="label-success"></label>
+							<input id="someSwitchOptionSuccess'.$some.'" name="someSwitchOption001" type="checkbox" onclick="checkAddress(this)"/>
+							<label for="someSwitchOptionSuccess'.$some.'" class="label-success"></label>
 							</div></td>';
 						}
 

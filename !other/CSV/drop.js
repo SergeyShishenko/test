@@ -238,6 +238,7 @@
         // $('#upload-button .upload').click(function() {
         var objxlsx = [];
         var DbNumberID='';
+        var arr_table=[];
         $("body").on("click","#upload-button .upload",function() {
             // alert("!!");
             
@@ -304,8 +305,14 @@
             // console.log('tr '+ index );
             var c = $(this).find('td[id^="product"]').text();
             var c2 = $(this).find('td[id^="product2"]').text();
-            if (c2==""){console.log('tr' + index + ':' + c); }
-            else{console.log('tr' + index + ':' + c2);}
+            if (c2==""){
+                // console.log('tr' + index + ':' + c); 
+                arr_table[index]=c;
+            }
+            else{
+                // console.log('tr' + index + ':' + c2);
+                arr_table[index]=c2;
+            }
             
             });
                 });
@@ -723,7 +730,11 @@ function propoutput(id,obj){
       str=str.substring(0, str.length - 1);// удаление последнего символа
     $(id).text(str);
 }
-
+function arroutput(arr){
+for (var key in arr) {
+    alert( arr[key] ); // Яблоко, Апельсин, Груша
+  }
+}
 
   function propdelete(obj){
     for (var prop in obj) {
@@ -787,21 +798,21 @@ function propdelete2(obj,name){
             currentinput='';
         }
     });
-    $('#uploaded-files').click( function(){
-        console.log($('#'+currentinput).css('visibility'));
-        if ($('#'+currentinput).css('visibility')=="visible") {
+    // $('#uploaded-files').not('#product_name').click( function(){
+    //     console.log($('#'+currentinput).css('visibility'));
 
-            $('#'+currentinput).css({"visibility":"hidden"});
-            // $('#'+currentspan).text($('#'+currentinput).val());// запись значения input
-            console.log('#uploaded-files #'+currentinput);
-            console.log('currentinput.val() '+$('#'+currentinput).val());
-            // if  (currentinput=='product-name' && $('#'+currentinput).val()){arr_coma($('#'+currentinput).val());}
-            if  (currentinput=='product-name'){arr_coma($('#'+currentinput).val());}
-            else{ $('#'+currentspan).text($('#'+currentinput).val());}
-            currentinput='';
+    //     if ($('#'+currentinput).css('visibility')=="visible") {
+    //         $('#'+currentinput).css({"visibility":"hidden"});
+    //         // $('#'+currentspan).text($('#'+currentinput).val());// запись значения input
+    //         console.log('#uploaded-files #'+currentinput);
+    //         console.log('currentinput.val() '+$('#'+currentinput).val());
+    //         // if  (currentinput=='product-name' && $('#'+currentinput).val()){arr_coma($('#'+currentinput).val());}
+    //         if  (currentinput=='product-name'){arr_coma($('#'+currentinput).val());}
+    //         else{ $('#'+currentspan).text($('#'+currentinput).val());}
+    //         currentinput='';
            
-            }
-    });
+    //     }
+    // });
 
     function arr_coma(val){
         // 
@@ -817,9 +828,16 @@ function propdelete2(obj,name){
         {
             arr_s.pop();//удалить если  последняя , или .
         }
+        // arroutput(arr_table);
 
-        
+        var arr_s = arr_table.filter(x => arr_s.includes(x));
 
+        arr_s.forEach(function(item) {
+            console.log('#someSwitchOptionSuccess'+ item );
+
+            $('#someSwitchOptionSuccess'+item).trigger('click');
+        });
+        // arr_table
 
 
 
@@ -829,7 +847,7 @@ function propdelete2(obj,name){
         //   });
 
 
-         $('#someSwitchOptionSuccess'+ arr_s[0]).trigger('click');
+        //  $('#someSwitchOptionSuccess'+ arr_s[0]).trigger('click');
         // $('span#product_output').text(val);// запись значения input
 //  var obj =$('#someSwitchOptionSuccess1');
 // 
@@ -902,17 +920,18 @@ function propdelete2(obj,name){
         
           
         
-          var arr1 =[1,2,3,4,33];//правильные значения
-          var arr2 =[2,33,17];// проверка на правильность
-          let intersection = arr1.filter(x => arr2.includes(x));
+        //   var arr1 =[1,2,3,4,33];//правильные значения
+        //   var arr2 =[2,33,17];// проверка на правильность
+        //   let intersection = arr1.filter(x => arr2.includes(x));
         //   alert( intersection);
 
           Array.prototype.diff = function(a) {
             return this.filter(function(i) {return a.indexOf(i) < 0;});
         };
 
-        let dif1 = arr1.diff( arr2 ); // проверка на остаток, не выбранные значения
+        // let dif1 = arr1.diff( arr2 ); // проверка на остаток, не выбранные значения
         // alert( dif1);
+
         // $("table.zakaz tr:gt(0) ");
         // $("table.zakaz > tr").each(function (index, value) { 
         //     console.log('tr'+ index );
