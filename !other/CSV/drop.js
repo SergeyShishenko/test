@@ -300,11 +300,20 @@
                     // } else {
                     //     $('#uploaded-files').append('<li><a href="images/'+data+'. Имя файла: '+dataArray[index].name+'</li>');
                     // }
-                    
+                    $("body #uploaded-files table.zakaz  tr:gt(0)").each(function (index, value) { 
+            // console.log('tr '+ index );
+            var c = $(this).find('td[id^="product"]').text();
+            var c2 = $(this).find('td[id^="product2"]').text();
+            if (c2==""){console.log('tr' + index + ':' + c); }
+            else{console.log('tr' + index + ':' + c2);}
+            
+            });
                 });
             });
             // Показываем список загруженных файлов
             $('#uploaded-files').show();
+
+            
             return false;
         });
         
@@ -804,13 +813,20 @@ function propdelete2(obj,name){
         var arr_s = val.split(","); //Разбиваем строку (Split работает аналогично PHP explode)
         arr_s=unique(arr_s);//Оставить уникальные элементы массива
 
+        if (arr_s[arr_s.length - 1]=="." || arr_s[arr_s.length - 1]==","  ) // получить последний элемент
+        {
+            arr_s.pop();//удалить если  последняя , или .
+        }
+
+        
 
 
 
-        $("table.zakaz  tr:gt(0)").each(function (index, value) { 
-            // console.log('tr '+ index );
-            console.log('tr' + index + ':' + $(this).find('td[id^="product2"]').text()); 
-          });
+
+        // $("table.zakaz  tr:gt(0)").each(function (index, value) { 
+        //     // console.log('tr '+ index );
+        //     console.log('tr' + index + ':' + $(this).find('td[id^="product2"]').text()); 
+        //   });
 
 
          $('#someSwitchOptionSuccess'+ arr_s[0]).trigger('click');
