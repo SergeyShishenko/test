@@ -239,6 +239,8 @@
         var objxlsx = [];
         var DbNumberID='';
         var arr_table=[];
+        var arr_sOff=[];
+        var arr_s=[];
         $("body").on("click","#upload-button .upload",function() {
             // alert("!!");
             
@@ -291,6 +293,7 @@
                      room={}; //Помещение
                      complect={}; //Комплект изделий
                      product={}; //Изделия
+                     
                    
                     // propalertObjx(objxlsx, DbNumberID,'name');
                     // propalertObjx(objxlsx, DbNumberID,'kd');
@@ -734,11 +737,7 @@ function propoutput(id,obj){
       str=str.substring(0, str.length - 1);// удаление последнего символа
     $(id).text(str);
 }
-function arroutput(arr){
-for (var key in arr) {
-    alert( arr[key] ); // Яблоко, Апельсин, Груша
-  }
-}
+
 
   function propdelete(obj){
     for (var prop in obj) {
@@ -774,7 +773,7 @@ function propdelete2(obj,name){
     $("body").on("click",".changeclick",function() {       
             
               $(this).find('input').val($(this).find('span').text());
-              $(this).find('input').css({"visibility":"visible"});
+              $(this).find('input').css({"visibility":"visible"}).focus();
               console.log($(this).find('span').attr('id'));
               currentspan=$(this).find('span').attr('id');
               currentinput=$(this).find('input').attr('id');           
@@ -816,7 +815,7 @@ function propdelete2(obj,name){
            
     //     }
     // });
-
+    
     function arr_coma(val){
         // 
         // $.each(files, function(index, file) { 
@@ -824,7 +823,7 @@ function propdelete2(obj,name){
         //     console.log(files[index].name);
         val=replaceAll(val, '.', ',');
          
-        var arr_s = val.split(","); //Разбиваем строку (Split работает аналогично PHP explode)
+        arr_s = val.split(","); //Разбиваем строку (Split работает аналогично PHP explode)
         arr_s=unique(arr_s);//Оставить уникальные элементы массива
 
         if (arr_s[arr_s.length - 1]=="." || arr_s[arr_s.length - 1]==","  ) // получить последний элемент
@@ -833,14 +832,38 @@ function propdelete2(obj,name){
         }
         // arroutput(arr_table);
 
-        var arr_s = arr_table.filter(x => arr_s.includes(x));
+       
+        
+         
+
 
         arr_s.forEach(function(item) {
             console.log('#someSwitchOptionSuccess'+ item );
 
             $('#someSwitchOptionSuccess'+item).trigger('click');
         });
+        
+        
+        //  arr_sOff = array_diff(arr_s, arr_table);
+        //   arrOff(arr_sOff);
+
+        // arr_sOff.forEach(function(item) {
+        //     console.log('arr_sOff'+ item );
+
+        //     $('#someSwitchOptionSuccess'+item).removeAttr("checked");
+
+        // });
+
+       
+// выключить не выбранные
+        // function arrOff(arr){
+        //     for (var key in arr) {
+        //         alert( arr[key] ); // Яблоко, Апельсин, Груша
+        //         // $('#someSwitchOptionSuccess'+arr[key]).removeAttr("checked");
+        //       }
+        //     }
         // arr_table
+        // $("input:checkbox").removeAttr("checked");
 
 
 
@@ -928,9 +951,10 @@ function propdelete2(obj,name){
         //   let intersection = arr1.filter(x => arr2.includes(x));
         //   alert( intersection);
 
-          Array.prototype.diff = function(a) {
-            return this.filter(function(i) {return a.indexOf(i) < 0;});
-        };
+        // Array.prototype.diff = function(a) {
+        //     return this.filter(function(i) {return a.indexOf(i) < 0;});
+        // };
+       
 
         // let dif1 = arr1.diff( arr2 ); // проверка на остаток, не выбранные значения
         // alert( dif1);
@@ -940,3 +964,23 @@ function propdelete2(obj,name){
         //     console.log('tr'+ index );
         //     // console.log('div' + index + ':' + $(this).find('td[id^="product2"]').text()); 
         //   });
+
+        // var arr1 = [1, 2, 3, 4, 5, 6,10];
+        // var arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+
+
+// console.log(array_diff(arr1, arr2));
+
+
+var arrq = [1,2,3,4,5,6,7,8,9],
+    tempDates = [6,7,8,11,1],
+    cq=[];//Разница
+ 
+for (var i = 0; i < arrq.length; i++) {
+  if (tempDates.indexOf(arrq[i]) === -1) {
+    cq.push(arrq[i]);
+  }
+}
+ 
+console.log(cq);
