@@ -287,6 +287,10 @@
                     objxlsx[DbNumberID]=[];
                     $('#DelSubmit').show();
                     $('#CreateSubmit').show();
+                     floor={}; //Этаж
+                     room={}; //Помещение
+                     complect={}; //Комплект изделий
+                     product={}; //Изделия
                    
                     // propalertObjx(objxlsx, DbNumberID,'name');
                     // propalertObjx(objxlsx, DbNumberID,'kd');
@@ -773,8 +777,7 @@ function propdelete2(obj,name){
               $(this).find('input').css({"visibility":"visible"});
               console.log($(this).find('span').attr('id'));
               currentspan=$(this).find('span').attr('id');
-              currentinput=$(this).find('input').attr('id');
-           
+              currentinput=$(this).find('input').attr('id');           
     
     });
     // $("body").on("focusout","#agent-name",function() {
