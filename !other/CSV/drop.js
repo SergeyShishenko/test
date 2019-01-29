@@ -563,7 +563,7 @@ Objx.prototype = excelObject;
 
 function checkAddress(checkbox)
 {
-    alert($(checkbox).attr('id'));
+    // alert($(checkbox).attr('id'));
     var tr=$(checkbox).parent().parent().parent();
     var tblid = tr.parent().parent().attr('id');
     var typecheck =$(checkbox).attr('name');// kd,dp
@@ -770,9 +770,10 @@ function propdelete2(obj,name){
            console.log($(this).val());
           
             $(this).css({"visibility":"hidden"});
-            $(this).parent().find('span').text($(this).val());
+            // $(this).parent().find('span').text($(this).val());// запись значения input
             // arr_coma($(this).val());
-            if  (currentinput=='product-name' && $('#'+currentinput).val()){arr_coma($('#'+currentinput).val());}
+            // if  (currentinput=='product-name' && $('#'+currentinput).val()){arr_coma($('#'+currentinput).val());}
+            if  (currentinput=='product-name'){arr_coma($('#'+currentinput).val());}
             else{ $(this).parent().find('span').text($(this).val());}
             currentinput='';
         }
@@ -782,12 +783,14 @@ function propdelete2(obj,name){
         if ($('#'+currentinput).css('visibility')=="visible") {
 
             $('#'+currentinput).css({"visibility":"hidden"});
-            $('#'+currentspan).text($('#'+currentinput).val());
+            // $('#'+currentspan).text($('#'+currentinput).val());// запись значения input
             console.log('#uploaded-files #'+currentinput);
             console.log('currentinput.val() '+$('#'+currentinput).val());
             // if  (currentinput=='product-name' && $('#'+currentinput).val()){arr_coma($('#'+currentinput).val());}
-            
+            if  (currentinput=='product-name'){arr_coma($('#'+currentinput).val());}
+            else{ $('#'+currentspan).text($('#'+currentinput).val());}
             currentinput='';
+           
             }
     });
 
@@ -797,14 +800,29 @@ function propdelete2(obj,name){
         //     console.log(files[index].type);	
         //     console.log(files[index].name);
         val=replaceAll(val, '.', ',');
-        $('span#product_output').text(val);
- var obj =$('#someSwitchOptionSuccess1');
-        checkAddress($('#someSwitchOptionSuccess1'));
+         
+        var arr_s = val.split(","); //Разбиваем строку (Split работает аналогично PHP explode)
+        arr_s=unique(arr_s);//Оставить уникальные элементы массива
+
+
+
+
+        $("table.zakaz  tr:gt(0)").each(function (index, value) { 
+            // console.log('tr '+ index );
+            console.log('tr' + index + ':' + $(this).find('td[id^="product2"]').text()); 
+          });
+
+
+         $('#someSwitchOptionSuccess'+ arr_s[0]).trigger('click');
+        // $('span#product_output').text(val);// запись значения input
+//  var obj =$('#someSwitchOptionSuccess1');
+// 
+        // checkAddress(obj);
         // checkAddress(obj);
 
 // alert(val);
             // var arr_s = val.split(","); //Разбиваем строку (Split работает аналогично PHP explode)
-            $("#myCheckbox").attr("checked","checked");
+            // $("#myCheckbox").attr("checked","checked");
             // $("input:checkbox").removeAttr("checked");
             // $("input[name=myCheckbox]").attr("checked","checked");
            
@@ -852,4 +870,35 @@ function propdelete2(obj,name){
             }
       
         });
+//Оставить уникальные элементы массива
+        function unique(arr) {
+            var obj = {};
+          
+            for (var i = 0; i < arr.length; i++) {
+              var str = arr[i];
+              obj[str] = true; // запомнить строку в виде свойства объекта
+            }
+          
+            return Object.keys(obj); // или собрать ключи перебором для IE8-
+          }
+          //   alert( unique(strings) ); // кришна, харе, 8-()
+
         
+          
+        
+          var arr1 =[1,2,3,4,33];//правильные значения
+          var arr2 =[2,33,17];// проверка на правильность
+          let intersection = arr1.filter(x => arr2.includes(x));
+        //   alert( intersection);
+
+          Array.prototype.diff = function(a) {
+            return this.filter(function(i) {return a.indexOf(i) < 0;});
+        };
+
+        let dif1 = arr1.diff( arr2 ); // проверка на остаток, не выбранные значения
+        // alert( dif1);
+        // $("table.zakaz tr:gt(0) ");
+        // $("table.zakaz > tr").each(function (index, value) { 
+        //     console.log('tr'+ index );
+        //     // console.log('div' + index + ':' + $(this).find('td[id^="product2"]').text()); 
+        //   });

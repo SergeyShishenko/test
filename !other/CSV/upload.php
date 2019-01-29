@@ -273,7 +273,7 @@ function unique_multidim_array($array, $key) {
 			echo "<p><b>№ заказа: </b><span id=\"order_output\">".$data[1][2]."</span></p>";
 			echo "<p  class='changeclick'><b>Изделия: </b><span id=\"product_output\"></span> <input type='text' class='form-control'  id='product-name' value='' required></p>";
 			echo "<br>";
-			echo '<table border="1" class="table table-striped table-responsive" >'; 			
+			echo '<table border="1" class="table table-striped table-responsive zakaz" >'; 			
 
 				$num = count ($array); //строк с шапкой
 				// echo "$num ". $num; 
