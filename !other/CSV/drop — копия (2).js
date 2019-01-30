@@ -599,8 +599,6 @@ function checkAddress(checkbox)
     var keycomplect=tr.find("[id^='complect_']").text();
     var keyproduct=tr.find("[id^='product_']").text();
     var keyproduct2=tr.find("[id^='product2_']").text();
-    if (keyproduct2!=''){keyproduct=keyproduct2; keyproduct2='';}
-
     var keyfloor=tr.find("[id^='floor_']").text();
     // alert( "до "+floor[keyfloor]);
     // if(keyfloor==""){ 
@@ -837,30 +835,25 @@ function propdelete2(obj,name){
         // arroutput(arr_table);
 
         console.log('arr_prev.length'+ arr_prev.length );
-        
-//  if (arr_prev.length>0){
+ if (arr_prev.length>0){
 
-//        // выключючение предидущих checkbox
-// arr_table.forEach(function(item) {
-//             console.log('arr_sOff'+ item );
+       // выключючение предидущих checkbox
+       arr_prev.forEach(function(item) {
+            console.log('arr_sOff'+ item );
 
-//             // $('#someSwitchOptionSuccess'+item).removeAttr("checked");
-//             $('Off#someSwitchOptionSuccess'+item).trigger('click');
+            // $('#someSwitchOptionSuccess'+item).removeAttr("checked");
+            $('#someSwitchOptionSuccess'+item).trigger('click');
 
-//         });
-//     }
-// выключючение предидущих checkbox
-inputClick(arr_prev);
-// включение выбранных
-inputClick(arr_s);
+        });
+}
          
 console.log('arr_s.length'+ arr_s.length );
         // включение выбранных
-        // arr_s.forEach(function(item) {
-        //     console.log('ON#someSwitchOptionSuccess'+ item );
+        arr_s.forEach(function(item) {
+            console.log('#someSwitchOptionSuccess'+ item );
 
-        //     $('#someSwitchOptionSuccess'+item).trigger('click');
-        // });
+            $('#someSwitchOptionSuccess'+item).trigger('click');
+        });
         
         
         //  arr_sOff = array_diff(arr_s, arr_table);
@@ -1008,15 +1001,3 @@ console.log('arr_s.length'+ arr_s.length );
 // }
  
 // console.log(arr_diff);
-function inputClick(arr){
-    arr.forEach(function(item) {
-        var i=item;
-        console.log('ON#someSwitchOptionSuccess'+ i );
-
-        $('#someSwitchOptionSuccess'+i).trigger('click');
-    });
-}
-shortcut.add("Alt+X",function() {
-    // alert("#product_output");
-    $("#product_output").trigger('click');
-});
