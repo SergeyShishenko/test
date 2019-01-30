@@ -239,7 +239,7 @@
         var objxlsx = [];
         var DbNumberID='';
         var arr_table=[];
-        var arr_sOff=[];
+        // var arr_sOff=[];
         var arr_s=[];
         var arr_prev=[];
         $("body").on("click","#upload-button .upload",function() {
@@ -294,6 +294,9 @@
                      room={}; //Помещение
                      complect={}; //Комплект изделий
                      product={}; //Изделия
+                     arr_s=[];
+                     arr_table=[];
+                     arr_prev=[];
                      
                    
                     // propalertObjx(objxlsx, DbNumberID,'name');
