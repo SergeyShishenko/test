@@ -241,6 +241,7 @@
         var arr_table=[];
         var arr_sOff=[];
         var arr_s=[];
+        var arr_prev=[];
         $("body").on("click","#upload-button .upload",function() {
             // alert("!!");
             
@@ -732,7 +733,8 @@ function propalertObjx(obj,name,key){
 function propoutput(id,obj){
     var str='';
     for (var prop in obj) {
-        str=str+" "+prop+",";
+        // str=str+" "+prop+",";
+        str=str+prop+",";
       } 
       str=str.substring(0, str.length - 1);// удаление последнего символа
     $(id).text(str);
@@ -832,11 +834,21 @@ function propdelete2(obj,name){
         }
         // arroutput(arr_table);
 
-       
-        
+        console.log('arr_prev.length'+ arr_prev.length );
+ if (arr_prev.length>0){
+
+       // выключючение предидущих checkbox
+       arr_prev.forEach(function(item) {
+            console.log('arr_sOff'+ item );
+
+            // $('#someSwitchOptionSuccess'+item).removeAttr("checked");
+            $('#someSwitchOptionSuccess'+item).trigger('click');
+
+        });
+}
          
-
-
+console.log('arr_s.length'+ arr_s.length );
+        // включение выбранных
         arr_s.forEach(function(item) {
             console.log('#someSwitchOptionSuccess'+ item );
 
@@ -847,13 +859,15 @@ function propdelete2(obj,name){
         //  arr_sOff = array_diff(arr_s, arr_table);
         //   arrOff(arr_sOff);
 
-        // arr_sOff.forEach(function(item) {
-        //     console.log('arr_sOff'+ item );
+      arr_prev=[];
+      arr_prev=arr_s;
+      arr_prev.forEach(function(item) {
+        console.log('arr_preve'+ item );
 
-        //     $('#someSwitchOptionSuccess'+item).removeAttr("checked");
+        // $('#someSwitchOptionSuccess'+item).removeAttr("checked");
+        // $('#someSwitchOptionSuccess'+item).trigger('click');
 
-        // });
-
+    });
        
 // выключить не выбранные
         // function arrOff(arr){
@@ -973,14 +987,17 @@ function propdelete2(obj,name){
 // console.log(array_diff(arr1, arr2));
 
 
-var arrq = [1,2,3,4,5,6,7,8,9],
-    tempDates = [6,7,8,11,1],
-    cq=[];//Разница
+// var arr_new = [1,2,3,4,5,6,7,8,9],//новый проверяемый массив
+//     arr_prev = [6,7,8,11,1],// были включены ранее
+//     arr_diff=[];//Разница
+//     // var tempDates = [1,2,3,4,5,6,7,8,9],
+//     //  arrq= [6,7,8,11,1],
+//     // cq=[];//Разница
  
-for (var i = 0; i < arrq.length; i++) {
-  if (tempDates.indexOf(arrq[i]) === -1) {
-    cq.push(arrq[i]);
-  }
-}
+// for (var i = 0; i < arr_new.length; i++) {
+//   if (arr_prev.indexOf(arr_new[i]) === -1) {
+//     arr_diff.push(arr_new[i]);
+//   }
+// }
  
-console.log(cq);
+// console.log(arr_diff);
