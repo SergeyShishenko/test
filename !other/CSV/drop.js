@@ -242,6 +242,8 @@
         // var arr_sOff=[];
         var arr_s=[];
         var arr_prev=[];
+        var currentinput='';
+        var currentspan='';
         $("body").on("click","#upload-button .upload",function() {
             // alert("!!");
             
@@ -781,10 +783,13 @@ function propdelete2(obj,name){
             
               $(this).find('input').val($(this).find('span').text());
               $(this).find('input').css({"visibility":"visible"}).focus();
-              console.log($(this).find('span').attr('id'));
+            //   $(this).find('input').css({"visibility":"visible"});
+              
               currentspan=$(this).find('span').attr('id');
               currentinput=$(this).find('input').attr('id');           
-    
+            console.log('click '+currentspan);
+              console.log(currentinput);
+              console.log('------------');
     });
     // $("body").on("focusout","#agent-name",function() {
     //     $('#agent-name').css({"visibility":"hidden"});
@@ -807,6 +812,12 @@ function propdelete2(obj,name){
             currentinput='';
         }
     });
+    $("body").on("focusin",".changeclick > input",function(eventObject){
+        // var externalData = "a=" + eventObject.data.a + ", b=" + eventObject.data.b;
+        console.log('focusin '+$(eventObject.target).parent().find('span').attr('id'));
+        currentspan=$(eventObject.target).parent().find('span').attr('id');
+        currentinput=$(eventObject.target).parent().find('input').attr('id');
+      });
     // $('#uploaded-files').not('#product_name').click( function(){
     //     console.log($('#'+currentinput).css('visibility'));
 
@@ -927,14 +938,8 @@ console.log('arr_s.length'+ arr_s.length );
     //     alert('Элемент с классом block получил фокус. '+
     //           'В обработчик этого события переданы данные: ' + externalData );
     //   });
-    var currentinput='';
-    var currentspan='';
-    $("body").on("focusin",".changeclick > input",function(eventObject){
-        // var externalData = "a=" + eventObject.data.a + ", b=" + eventObject.data.b;
-        console.log($(eventObject.target).parent().find('span').attr('id'));
-        currentspan=$(eventObject.target).parent().find('span').attr('id');
-        currentinput=$(eventObject.target).parent().find('input').attr('id');
-      });
+    
+    
     // $("body").on("focusin",".changeclick > input",function(){
     //     alert('Элемент foo получил фокус.');
     //   });

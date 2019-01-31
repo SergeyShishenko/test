@@ -144,7 +144,7 @@
             display: table-cell;
             
         }
-        #agent-name,#product-name{           
+        input[id$='-name']{           
             visibility: hidden;          
         }
         .changeclick{

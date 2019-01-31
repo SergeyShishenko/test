@@ -254,24 +254,33 @@ function unique_multidim_array($array, $key) {
 		// создание таблицы begin
 			$array=$data;
 			$exclude=array("0","1","2");// исключаемые индексы
-			echo "<div class='sticky'><p><b>Заказчик: </b><span id=\"client_output\">".$data[1][0]."<span></p>";
-			echo "<p id='agent' class='changeclick'><b>Представитель: </b><span id=\"agent_output\"></span> <input type='text' class='form-control'  id='agent-name' value='' required></p>";
+
+			echo "<div class='sticky'>";
+
+			echo "<p id='client' class='changeclick'><b>Заказчик: </b>           <span id=\"client_output\">".$data[1][0]."</span> <input type='text' class='form-control'  id='client-name' value=''></p>";
+
+			echo "<p id='agent' class='changeclick'><b>Представитель: </b>       <span id=\"agent_output\"></span> <input type='text' class='form-control'  id='agent-name' value=''></p>";
 			
-			echo "<p><b>Объект: </b><span id=\"address_output\">".$data[1][1]."<span></p>";
+			echo "<p id='address' class='changeclick'><b>Объект: </b>            <span id=\"address_output\">".$data[1][1]."</span> <input type='text' class='form-control'  id='address-name' value=''></p>";
 			if (array_sum(array_column($array, 4)) === 0){// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";						
 				array_push($exclude,"4");
 			}	
 			if(count(unique_multidim_array($data,8))==2)
 			{
-				echo "<p><b>Этаж: </b><span id=\"floor_output\">".$data[1][8]."</span></p>";array_push($exclude,"8");
+				echo "<p id='floor' class='changeclick'><b>Этаж: </b>            <span id=\"floor_output\">".$data[1][8]."</span> <input type='text' class='form-control'  id='floor-name' value=''></p>";array_push($exclude,"8");
 			}
 			else{
-				echo "<p><b>Этаж: </b><span id=\"floor_output\"></span></p>";	
+				echo "<p id='floor' class='changeclick'><b>Этаж: </b>            <span id=\"floor_output\"></span> <input type='text' class='form-control'  id='floor-name' value=''></p>";	
 			}
-			echo "<p><b>Помещение: </b><span id=\"room_output\"></span> </p>";
-			echo "<p><b>Комплект изделий:</b><span id=\"complect_output\"></span> </p>";
-			echo "<p><b>№ заказа: </b><span id=\"order_output\">".$data[1][2]."</span></p>";
-			echo "<p  class='changeclick'><b>Изделия: </b><span id=\"product_output\"></span> <input type='text' class='form-control'  id='product-name' value='' required></p></div>";
+			echo "<p id='room' class='changeclick'><b>Помещение: </b>            <span id=\"room_output\"></span> <input type='text' class='form-control'  id='room-name' value=''></p>";
+
+			echo "<p id='complect' class='changeclick'><b>Комплект изделий: </b> <span id=\"complect_output\"></span> <input type='text' class='form-control'  id='complect-name' value=''></p>";
+
+			echo "<p id='order' class='changeclick'><b>№ заказа: </b>            <span id=\"order_output\">".$data[1][2]."</span> <input type='text' class='form-control'  id='order-name' value=''></p>";
+
+			echo "<p class='changeclick'><b>Изделия: </b>                        <span id=\"product_output\"></span> <input type='text' class='form-control'  id='product-name' value=''></p>";
+
+			echo "</div>";
 			// echo "<br>";
 			echo '<table border="1" class="table table-striped table-responsive zakaz" >'; 			
 
