@@ -255,31 +255,38 @@ function unique_multidim_array($array, $key) {
 			$array=$data;
 			$exclude=array("0","1","2");// исключаемые индексы
 
-			echo "<div class='sticky'>";
+			echo "<div class='sticky row row-mod'>";
+				echo "<div class='col-md-11'>";
 
-			echo "<p id='client' class='changeclick'><b>Заказчик: </b>           <span id=\"client_output\">".$data[1][0]."</span> <input type='text' class='form-control' size='40' id='client-name' value=''></p>";
+					echo "<p id='client' class='changeclick'><b>Заказчик: </b>           <span id=\"client_output\">".$data[1][0]."</span> <input type='text' class='form-control' size='40' id='client-name' value=''></p>";
 
-			echo "<p id='agent' class='changeclick'><b>Представитель: </b>       <span id=\"agent_output\"></span> <input type='text' class='form-control' size='40' id='agent-name' value=''></p>";
+					echo "<p id='agent' class='changeclick'><b>Представитель: </b>       <span id=\"agent_output\"></span> <input type='text' class='form-control' size='40' id='agent-name' value=''></p>";
+					
+					echo "<p id='address' class='changeclick'><b>Объект: </b>            <span id=\"address_output\">".$data[1][1]."</span> <input type='text' class='form-control' size='40' id='address-name' value=''></p>";
+					if (array_sum(array_column($array, 4)) === 0){// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";						
+						array_push($exclude,"4");
+					}	
+					if(count(unique_multidim_array($data,8))==2)
+					{
+						echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\">".$data[1][8]."</span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";array_push($exclude,"8");
+					}
+					else{
+						echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\"></span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";	
+					}
+					echo "<p id='room' class=''><b>Помещение: </b>            <span id=\"room_output\"></span> <input type='text' class='form-control' size='40' id='room-name' value=''></p>";
+
+					echo "<p id='complect' class=''><b>Комплект изделий: </b> <span id=\"complect_output\"></span> <input type='text' class='form-control' size='40' id='complect-name' value=''></p>";
+
+					echo "<p id='order' class=''><b>№ заказа: </b>            <span id=\"order_output\">".$data[1][2]."</span> <input type='text' class='form-control' size='40' id='order-name' value=''></p>";
+
+					echo "<p class='changeclick' title='Alt+X'><b>Изделия: </b>                        <span id=\"product_output\"></span> <input type='text' class='form-control' size='40' id='product-name' value=''></p>";
+
+				echo "</div>";
+				echo "<div  class='col-md-1'>
 			
-			echo "<p id='address' class='changeclick'><b>Объект: </b>            <span id=\"address_output\">".$data[1][1]."</span> <input type='text' class='form-control' size='40' id='address-name' value=''></p>";
-			if (array_sum(array_column($array, 4)) === 0){// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";						
-				array_push($exclude,"4");
-			}	
-			if(count(unique_multidim_array($data,8))==2)
-			{
-				echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\">".$data[1][8]."</span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";array_push($exclude,"8");
-			}
-			else{
-				echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\"></span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";	
-			}
-			echo "<p id='room' class=''><b>Помещение: </b>            <span id=\"room_output\"></span> <input type='text' class='form-control' size='40' id='room-name' value=''></p>";
-
-			echo "<p id='complect' class=''><b>Комплект изделий: </b> <span id=\"complect_output\"></span> <input type='text' class='form-control' size='40' id='complect-name' value=''></p>";
-
-			echo "<p id='order' class=''><b>№ заказа: </b>            <span id=\"order_output\">".$data[1][2]."</span> <input type='text' class='form-control' size='40' id='order-name' value=''></p>";
-
-			echo "<p class='changeclick' title='Alt+X'><b>Изделия: </b>                        <span id=\"product_output\"></span> <input type='text' class='form-control' size='40' id='product-name' value=''></p>";
-
+				<button class='btn btn-default' type='button'>Button</button>
+				";
+				echo "</div>";
 			echo "</div>";
 			// echo "<br>";
 			echo '<table border="1" class="table table-striped table-responsive zakaz" >'; 			
@@ -289,22 +296,56 @@ function unique_multidim_array($array, $key) {
 				for ($row=0; $row < $num; $row++) { 
 					$some=$array[$row][4];
 					if ($some==""){$some=$array[$row][3];}
+					$numcol = count ($array[$row]); //колонок 
 					echo "<tr>"; 
 					if ($row===0){
-						echo "<td>Выбрать</td>";
+						echo "<th>Выбрать</th>";
+						// $numcol = count ($array[$row]); //колонок 
+					for ($col=0; $col < $numcol; $col++) { 						
+						if (false === array_search($col, $exclude)){
+							// $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
+							switch ($col) {
+								/////"head"    
+									case "0":
+										$id = 'client_'.$row.$col;												
+										break;
+									case "1":
+										$id = 'address_'.$row.$col;
+										break;
+									case "2":
+										$id = 'numberorder_'.$row.$col;
+										break;
+									case "3":
+										$id = 'product_'.$row.$col;
+										break;
+									case "4":
+										$id = 'product2_'.$row.$col;
+										break;
+									case "5":
+										$id = 'def_'.$row.$col;
+										break;
+									case "6":
+										$id = 'room_'.$row.$col;
+										break;
+									case "7":
+										$id = 'complect_'.$row.$col;
+										break;
+									case "8":
+										$id = 'floor_'.$row.$col;
+										break;
+							}
+							echo '<th id="'.$id.'">'.$array[$row][$col].'</th>';
+						}
+						
+					}//for
 
 					}else{
 						echo '<td> <div class="material-switch pull-right">
 							<input id="someSwitchOptionSuccess'.$some.'" name="someSwitchOption001" type="checkbox" onclick="checkAddress(this)"/>
 							<label for="someSwitchOptionSuccess'.$some.'" class="label-success"></label>
 							</div></td>';
-						}
-
-					$numcol = count ($array[$row]); //колонок 
-					for ($col=0; $col < $numcol; $col++) { 
-
-						
-					
+				// $numcol = count ($array[$row]); //колонок 
+					for ($col=0; $col < $numcol; $col++) { 						
 						if (false === array_search($col, $exclude)){
 							// $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
 							switch ($col) {
@@ -340,7 +381,11 @@ function unique_multidim_array($array, $key) {
 							echo '<td id="'.$id.'">'.$array[$row][$col].'</td>';
 						}
 						
-					}
+					}//for
+
+						}
+
+					
 
 					echo "</tr>"; 
 				
