@@ -791,24 +791,24 @@ function propdelete2(obj,name){
               console.log(currentinput);
               console.log('------------');
     });
-    // $("body").on("focusout","#agent-name",function() {
-    //     $('#agent-name').css({"visibility":"hidden"});
-    //     $('#agent_output').text($(this).val());
-    //   });
+   
    
     $("body").on("keyup",".changeclick > input",function(event){
         if(event.keyCode == 13){
             event.preventDefault();
-           // var button = $(event.relatedTarget);//
+        
            console.log('keyCode 13 #'+currentinput);
            console.log($(this).val());
           
             $(this).css({"visibility":"hidden"});
-            // $(this).parent().find('span').text($(this).val());// запись значения input
-            // arr_coma($(this).val());
-            // if  (currentinput=='product-name' && $('#'+currentinput).val()){arr_coma($('#'+currentinput).val());}
-            if  (currentinput=='product-name'){arr_coma($('#'+currentinput).val());}
-            else{ $(this).parent().find('span').text($(this).val());}
+           
+            if  (currentinput=='product-name')
+            {
+                arr_coma($('#'+currentinput).val());
+            }
+            else{
+                 $(this).parent().find('span').text($(this).val());
+                }
             currentinput='';
         }
     });
@@ -818,21 +818,7 @@ function propdelete2(obj,name){
         currentspan=$(eventObject.target).parent().find('span').attr('id');
         currentinput=$(eventObject.target).parent().find('input').attr('id');
       });
-    // $('#uploaded-files').not('#product_name').click( function(){
-    //     console.log($('#'+currentinput).css('visibility'));
-
-    //     if ($('#'+currentinput).css('visibility')=="visible") {
-    //         $('#'+currentinput).css({"visibility":"hidden"});
-    //         // $('#'+currentspan).text($('#'+currentinput).val());// запись значения input
-    //         console.log('#uploaded-files #'+currentinput);
-    //         console.log('currentinput.val() '+$('#'+currentinput).val());
-    //         // if  (currentinput=='product-name' && $('#'+currentinput).val()){arr_coma($('#'+currentinput).val());}
-    //         if  (currentinput=='product-name'){arr_coma($('#'+currentinput).val());}
-    //         else{ $('#'+currentspan).text($('#'+currentinput).val());}
-    //         currentinput='';
-           
-    //     }
-    // });
+ 
     
     function arr_coma(val){
         // 

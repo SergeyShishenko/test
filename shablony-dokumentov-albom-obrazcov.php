@@ -42,7 +42,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  alt="5000301-03-001 лист титульный Альбома Образцов"                                 
                                  data-prnt="noPrint"
                                  data-xls="./dist/files/xls/list-titulnyy-alboma-obrazcov.xlsx"
-                                 
+                                 data-spng="noPNG" 
                                 
                                 ></a>
                              </p>
@@ -63,6 +63,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-prnt="noPrint"
                                  data-xls="./dist/files/xls/ishodnik-tablicy-obrazcov-dlya-zakazchika.xlsx"
                                  data-sample="./dist/files/xls/primer-tablicy-obrazcov-dlya-zakazchika.xlsx"
+                                 data-spng="noPNG" 
                                  
                                 
                                    ></a>
@@ -143,6 +144,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  data-content="ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ"                               
                                  alt="ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ"
                                  data-xls="./dist/files/xls/list-dvizheniya-obrazcov.xlsx"
+                                 
                                    ></a>
                              </p>
                              
