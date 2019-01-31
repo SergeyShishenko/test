@@ -42,6 +42,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                                  alt="5000301-03-001 лист титульный Альбома Образцов"                                 
                                  data-prnt="noPrint"
                                  data-xls="./dist/files/xls/list-titulnyy-alboma-obrazcov.xlsx"
+                                 data-dwg="./dist/files/xls/list-titulnyy-alboma-obrazcov.dwg"
                                  data-spng="noPNG" 
                                 
                                 ></a>
