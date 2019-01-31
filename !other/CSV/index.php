@@ -40,7 +40,7 @@ header ("Content-Type: text/html; charset=utf-8");
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h4 class="modal-title" id="myModalLabel">Загрузка файла</h4>
+                    <h4 class="modal-title" id="myModalLabel">Генерация титульных листов</h4>
                 </div>
                 <div class="modal-body">
                 <!-- <a  href="#DelSubmit"><i class="fa-cart-plus" aria-hidden="true"></i>Вниз</a> -->
