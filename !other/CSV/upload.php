@@ -279,12 +279,26 @@ function unique_multidim_array($array, $key) {
 
 					echo "<p id='order' class=''><b>№ заказа: </b>            <span id=\"order_output\">".$data[1][2]."</span> <input type='text' class='form-control' size='40' id='order-name' value=''></p>";
 
-					echo "<p class='changeclick' title='Alt+X'><b>Изделия: </b>                        <span id=\"product_output\"></span> <input type='text' class='form-control' size='40' id='product-name' value=''></p>";
+					echo "<p class='changeclick' title='Alt+X'><b>Изделия: </b><span id=\"product_output\"></span> <input type='text' class='form-control' size='40' id='product-name' value=''></p>
+					<label class='checkbox'>
+						<input type='checkbox' value='' id='checkvis' >
+						Скрыть/показать все не выбранные
+					</label>
+					
+					";
 
 				echo "</div>";
 				echo "<div  class='col-md-1'>
 			
-				<button class='btn btn-default' type='button'>Button</button>
+				<p><button class='btn btn-default' type='button'>Button</button></p>
+				<p><button class='btn btn-default' type='button'>Button</button></p>
+				<p><button class='btn btn-default' type='button'>Button</button></p>
+				<p><button class='btn btn-default' type='button'>Button</button></p>
+				<p><button class='btn btn-default' type='button'>Button</button></p>
+				<p><button class='btn btn-default' type='button'>Button</button></p>
+				<p><button class='btn btn-default' type='button'>Button</button></p>
+				<p><button class='btn btn-default' type='button'>Button</button></p>
+				<p><button class='btn btn-default' type='button'>Button</button></p>
 				";
 				echo "</div>";
 			echo "</div>";
@@ -297,8 +311,11 @@ function unique_multidim_array($array, $key) {
 					$some=$array[$row][4];
 					if ($some==""){$some=$array[$row][3];}
 					$numcol = count ($array[$row]); //колонок 
-					echo "<tr>"; 
-					if ($row===0){
+					$check_vis='check-vis';
+					if ($row===0){$check_vis='';}
+					echo '<tr class="'.$check_vis.'">'; 
+
+					if ($row===0){ // шапка
 						echo "<th>Выбрать</th>";
 						// $numcol = count ($array[$row]); //колонок 
 					for ($col=0; $col < $numcol; $col++) { 						
@@ -339,7 +356,7 @@ function unique_multidim_array($array, $key) {
 						
 					}//for
 
-					}else{
+					}else{ // пункты ниже шапки
 						echo '<td> <div class="material-switch pull-right">
 							<input id="someSwitchOptionSuccess'.$some.'" name="someSwitchOption001" type="checkbox" onclick="checkAddress(this)"/>
 							<label for="someSwitchOptionSuccess'.$some.'" class="label-success"></label>

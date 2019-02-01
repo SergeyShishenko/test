@@ -1014,3 +1014,30 @@ shortcut.add("Alt+X",function() {
     // alert("#product_output");
     $("#product_output").trigger('click');
 });
+
+$('tr.check-vis').each(function(){
+    $(this).show();
+});
+
+$("body").on('click','input#checkvis', function() {
+    console.log($(this).is(':checked'));
+    if ($(this).is(':checked')){
+        checkvisH();
+    } else {
+        checkvisS();
+    }
+});
+function checkvisH()
+{
+    $('.check-vis').each(function(){
+            $(this).hide();
+            console.log('Hide');
+        });
+}
+function checkvisS()
+{
+    $('.check-vis').each(function(){
+            $(this).show();
+            console.log('show');
+        });
+}
