@@ -313,7 +313,7 @@ function unique_multidim_array($array, $key) {
 					$numcol = count ($array[$row]); //колонок 
 					$check_vis='check-vis';
 					if ($row===0){$check_vis='';}
-					echo '<tr class="'.$check_vis.'">'; 
+					echo '<tr class="'.$check_vis.' check-visS">'; 
 
 					if ($row===0){ // шапка
 						echo "<th>Выбрать</th>";

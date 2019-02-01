@@ -625,7 +625,9 @@ function checkAddress(checkbox)
     if (checkbox.checked)
     {        
         // tr.css({"color":"green","font-weight":"700"}); // жирный шрифт 
-        tr.css({"color":"green"});      
+        tr.css({"color":"green"}); 
+        tr.removeClass('check-vis');  
+        tr.show();   
       
         if (keyroom in room) {room[keyroom]++;}else{room[keyroom]=1;}
 
@@ -671,16 +673,16 @@ function checkAddress(checkbox)
         
         // tr.css({"color":"black","font-weight":"400"}); // жирный шрифт 
         // tr.css({"color":"black"});
-        if (room[keyroom]>1) {room[keyroom]--;}else{delete room[keyroom];tr.css({"color":"black"}); }
+        if (room[keyroom]>1) {room[keyroom]--;}else{delete room[keyroom];tr.css({"color":"black"});tr.addClass('check-vis');tr.hide();   }
 
         if ((keyfloor !="")){
-            if (floor[keyfloor]>1) {floor[keyfloor]--;}else{delete floor[keyfloor];tr.css({"color":"black"}); }
+            if (floor[keyfloor]>1) {floor[keyfloor]--;}else{delete floor[keyfloor];tr.css({"color":"black"});tr.addClass('check-vis');tr.hide(); }
         }
         
 
-        if (complect[keycomplect]>1) {complect[keycomplect]--;}else{delete complect[keycomplect];tr.css({"color":"black"});}
+        if (complect[keycomplect]>1) {complect[keycomplect]--;}else{delete complect[keycomplect];tr.css({"color":"black"});tr.addClass('check-vis');tr.hide();}
 
-        if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];tr.css({"color":"black"});}
+        if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];tr.css({"color":"black"});tr.addClass('check-vis');tr.hide();}
 
         // if (keyproductApp in objxlsx[tblid].product) {objxlsx[tblid].product[keyproductApp]++;}else{objxlsx[tblid].product[keyproductApp]=1;} 
         if(!!keyproductApp){ 
@@ -1036,7 +1038,7 @@ function checkvisH()
 }
 function checkvisS()
 {
-    $('.check-vis').each(function(){
+    $('.check-visS').each(function(){
             $(this).show();
             console.log('show');
         });
