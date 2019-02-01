@@ -312,11 +312,12 @@ function unique_multidim_array($array, $key) {
 					if ($some==""){$some=$array[$row][3];}
 					$numcol = count ($array[$row]); //колонок 
 					$check_vis='check-vis';
-					if ($row===0){$check_vis='';}
-					echo '<tr class="'.$check_vis.' check-visS">'; 
+					$sticky_table='';
+					if ($row===0){$check_vis='';$sticky_table='sticky-table';}
+					echo '<tr class="'.$check_vis.' check-visS ">'; 
 
 					if ($row===0){ // шапка
-						echo "<th>Выбрать</th>";
+						echo '<th  class="'.$sticky_table.'">Выбрать</th>';
 						// $numcol = count ($array[$row]); //колонок 
 					for ($col=0; $col < $numcol; $col++) { 						
 						if (false === array_search($col, $exclude)){
@@ -351,7 +352,7 @@ function unique_multidim_array($array, $key) {
 										$id = 'floor_'.$row.$col;
 										break;
 							}
-							echo '<th id="'.$id.'">'.$array[$row][$col].'</th>';
+							echo '<th id="'.$id.'" class="'.$sticky_table.'">'.$array[$row][$col].'</th>';
 						}
 						
 					}//for
