@@ -604,17 +604,10 @@ function checkAddress(checkbox)
     var keycomplect=tr.find("[id^='complect_']").text();
     var keyproduct=tr.find("[id^='product_']").text();
     var keyproduct2=tr.find("[id^='product2_']").text();
-    if (keyproduct2!=''){keyproduct=keyproduct2; keyproduct2='';}
+    if (keyproduct2!=''){keyproduct=keyproduct2;}
 
     var keyfloor=tr.find("[id^='floor_']").text();
-    // alert( "до "+floor[keyfloor]);
-    // if(keyfloor==""){ 
-    //     keyfloor=$('#floor_output').text();// проверка на существование 
-        
-    // floor[keyfloor]=0;
-    //    alert( floor[keyfloor]);
-       
-    // }
+    
     
     var keyproductApp=tr.find("[id^='productApp']").text();
     if(!!keyproductApp){ 
@@ -635,15 +628,20 @@ function checkAddress(checkbox)
             if (keyfloor in floor) {floor[keyfloor]++;}else{floor[keyfloor]=1;}
             // if (keyproductApp in objxlsx[tblid][keyproductApp].product) {objxlsx[tblid][keyproductApp].product[keyproductApp]++;}else{objxlsx[tblid][keyproductApp].product[keyproductApp]=1;}  
         }
-        // alert( "после "+floor[keyfloor]);
+      
 
         if (keycomplect in complect) {complect[keycomplect]++;}else{complect[keycomplect]=1;}
+
         
-        if (keyproduct2==''){
+      
          if (keyproduct in product) {product[keyproduct]++;}else{product[keyproduct]=1;}   
-        }else{
-            if (keyproduct2 in product) {product[keyproduct2]++;}else{product[keyproduct2]=1;}
-        }
+       
+        // if (keyproduct2==''){
+        //  if (keyproduct in product) {product[keyproduct]++;}else{product[keyproduct]=1;}   
+        // }else{
+        //     if (keyproduct2 in product) {product[keyproduct2]++;}else{product[keyproduct2]=1;}
+        // }
+
         if(!!keyproductApp){ 
            if (keyproductApp in objxlsx[tblid][keyproductApp].product) {objxlsx[tblid][keyproductApp].product[keyproductApp]++;}else{objxlsx[tblid][keyproductApp].product[keyproductApp]=1;}  
            objxlsx[tblid][keyproductApp][typecheck]=1;
@@ -671,50 +669,62 @@ function checkAddress(checkbox)
         
     }else{
         
-        // tr.css({"color":"black","font-weight":"400"}); // жирный шрифт 
-        // tr.css({"color":"black"});
-        if (room[keyroom]>1) {room[keyroom]--;}else{delete room[keyroom];tr.css({"color":"black"});tr.addClass('check-vis');tr.hide();   }
+            // tr.css({"color":"black","font-weight":"400"}); // жирный шрифт 
+            tr.css({"color":"black"});
+       
+            if ($('input#checkvis').is(':checked')){tr.hide();}
+               
 
-        if ((keyfloor !="")){
-            if (floor[keyfloor]>1) {floor[keyfloor]--;}else{delete floor[keyfloor];tr.css({"color":"black"});tr.addClass('check-vis');tr.hide(); }
-        }
+            if (room[keyroom]>1) {room[keyroom]--;}else{delete room[keyroom];
+                // tr.css({"color":"black"});
+                tr.addClass('check-vis');
+                // tr.hide();
+             }
+
+            if ((keyfloor !="")){ if (floor[keyfloor]>1) {floor[keyfloor]--;}else{delete floor[keyfloor];
+                // tr.css({"color":"black"});
+                tr.addClass('check-vis');
+                // tr.hide();
+             } }
         
 
-        if (complect[keycomplect]>1) {complect[keycomplect]--;}else{delete complect[keycomplect];tr.css({"color":"black"});tr.addClass('check-vis');tr.hide();}
-
-        if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];tr.css({"color":"black"});tr.addClass('check-vis');tr.hide();}
-
-        // if (keyproductApp in objxlsx[tblid].product) {objxlsx[tblid].product[keyproductApp]++;}else{objxlsx[tblid].product[keyproductApp]=1;} 
-        if(!!keyproductApp){ 
-            if (objxlsx[tblid][keyproductApp].product[keyproductApp]>1) {
-                objxlsx[tblid][keyproductApp].product[keyproductApp]--;
-                objxlsx[tblid][keyproductApp][typecheck]=0;
-                propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
-            }else{
-                delete objxlsx[tblid][keyproductApp].product[keyproductApp];
-                // alert(keyproductApp);
-                propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
-                // propdelete(objxlsx[DbNumberID][keyproductApp].product);
-                delete objxlsx[tblid][keyproductApp];
+            if (complect[keycomplect]>1) {complect[keycomplect]--;}else{delete complect[keycomplect];
                 tr.css({"color":"black"});
+                tr.addClass('check-vis');
+                // tr.hide();
             }
-            // objxlsx[tblid][keyproductApp][typecheck]=0;
-        }
-        // установка типа клика
-        
-        // if (typecheck =="kd"){objxlsx[tblid][keyproductApp].kd=0; }
-        // else{objxlsx[tblid][keyproductApp].dp=0;}
-        // alert('kd : '+ objxlsx[tblid][keyproductApp].kd +', dp : '+ objxlsx[tblid][keyproductApp].dp);
-        
-        propoutput('#room_output',room);
-        if (keyfloor !=""){ propoutput('#floor_output',floor);}
-        propoutput('#complect_output',complect);
-        propoutput('#product_output',product);
-        // if(!!keyproductApp){ 
-        //     propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
-        // }
 
-    }
+            if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];
+                // tr.css({"color":"black"});
+                tr.addClass('check-vis');
+                // tr.hide();
+            }
+
+       
+            if(!!keyproductApp){ 
+                if (objxlsx[tblid][keyproductApp].product[keyproductApp]>1) {
+                    objxlsx[tblid][keyproductApp].product[keyproductApp]--;
+                    objxlsx[tblid][keyproductApp][typecheck]=0;
+                    propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
+                }else{
+                    delete objxlsx[tblid][keyproductApp].product[keyproductApp];
+                  
+                    propoutput('#productApp_output',objxlsx[tblid][keyproductApp].product);
+                 
+                    delete objxlsx[tblid][keyproductApp];
+                    // tr.css({"color":"black"});
+                }
+                
+            }         
+            
+           
+            
+            propoutput('#room_output',room);
+            if (keyfloor !=""){ propoutput('#floor_output',floor);}
+            propoutput('#complect_output',complect);
+            propoutput('#product_output',product);
+         
+         }
 }//checkAddress
 
 function propalert(obj){
@@ -800,13 +810,19 @@ function propdelete2(obj,name){
             event.preventDefault();
         
            console.log('keyCode 13 #'+currentinput);
-           console.log($(this).val());
+           console.log('val '+$(this).val());
           
             $(this).css({"visibility":"hidden"});
            
             if  (currentinput=='product-name')
             {
                 arr_coma($('#'+currentinput).val());
+                // выключючение предидущих checkbox
+                inputClick(arr_prev);
+                // включение выбранных
+                inputClick(arr_s);
+                arr_prev=[];
+                arr_prev=arr_s;
             }
             else{
                  $(this).parent().find('span').text($(this).val());
@@ -816,15 +832,20 @@ function propdelete2(obj,name){
     });
     $("body").on("focusin",".changeclick > input",function(eventObject){
         // var externalData = "a=" + eventObject.data.a + ", b=" + eventObject.data.b;
-        console.log('focusin '+$(eventObject.target).parent().find('span').attr('id'));
+        console.log('focusin '+$(eventObject.target).val());
+        arr_coma($(eventObject.target).val());
+                //  inputClick(arr_prev);
+                // включение выбранных
+                // inputClick(arr_s);
+                arr_prev=[];
+                arr_prev=arr_s;
         currentspan=$(eventObject.target).parent().find('span').attr('id');
         currentinput=$(eventObject.target).parent().find('input').attr('id');
       });
  
     
     function arr_coma(val){
-        // 
-        // $.each(files, function(index, file) { 
+     
         //     console.log(files[index].type);	
         //     console.log(files[index].name);
         val=replaceAll(val, '.', ',');
@@ -840,76 +861,26 @@ function propdelete2(obj,name){
 
         console.log('arr_prev.length'+ arr_prev.length );
         
-//  if (arr_prev.length>0){
 
-//        // выключючение предидущих checkbox
-// arr_table.forEach(function(item) {
-//             console.log('arr_sOff'+ item );
+        // // выключючение предидущих checkbox
+        // inputClick(arr_prev);
+        // // включение выбранных
+        // inputClick(arr_s);
+                
+        console.log('arr_s.length'+ arr_s.length );
+        console.log('arr_prev.length'+ arr_prev.length );
+            
 
-//             // $('#someSwitchOptionSuccess'+item).removeAttr("checked");
-//             $('Off#someSwitchOptionSuccess'+item).trigger('click');
+            // arr_prev=[];
+            // arr_prev=arr_s;
 
-//         });
-//     }
-// выключючение предидущих checkbox
-inputClick(arr_prev);
-// включение выбранных
-inputClick(arr_s);
-         
-console.log('arr_s.length'+ arr_s.length );
-        // включение выбранных
-        // arr_s.forEach(function(item) {
-        //     console.log('ON#someSwitchOptionSuccess'+ item );
+            arr_prev.forEach(function(item) {
+                console.log('arr_prev'+ item );
 
-        //     $('#someSwitchOptionSuccess'+item).trigger('click');
-        // });
-        
-        
-        //  arr_sOff = array_diff(arr_s, arr_table);
-        //   arrOff(arr_sOff);
-
-      arr_prev=[];
-      arr_prev=arr_s;
-      arr_prev.forEach(function(item) {
-        console.log('arr_preve'+ item );
-
-        // $('#someSwitchOptionSuccess'+item).removeAttr("checked");
-        // $('#someSwitchOptionSuccess'+item).trigger('click');
-
-    });
-       
-// выключить не выбранные
-        // function arrOff(arr){
-        //     for (var key in arr) {
-        //         alert( arr[key] ); // Яблоко, Апельсин, Груша
-        //         // $('#someSwitchOptionSuccess'+arr[key]).removeAttr("checked");
-        //       }
-        //     }
-        // arr_table
-        // $("input:checkbox").removeAttr("checked");
-
-
-
-        // $("table.zakaz  tr:gt(0)").each(function (index, value) { 
-        //     // console.log('tr '+ index );
-        //     console.log('tr' + index + ':' + $(this).find('td[id^="product2"]').text()); 
-        //   });
-
-
-        //  $('#someSwitchOptionSuccess'+ arr_s[0]).trigger('click');
-        // $('span#product_output').text(val);// запись значения input
-//  var obj =$('#someSwitchOptionSuccess1');
-// 
-        // checkAddress(obj);
-        // checkAddress(obj);
-
-// alert(val);
-            // var arr_s = val.split(","); //Разбиваем строку (Split работает аналогично PHP explode)
-            // $("#myCheckbox").attr("checked","checked");
-            // $("input:checkbox").removeAttr("checked");
-            // $("input[name=myCheckbox]").attr("checked","checked");
+            });    
            
     }
+
     function escapeRegExp(str) {
         return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
     }
@@ -919,18 +890,6 @@ console.log('arr_s.length'+ arr_s.length );
     }     
        
 
-    
-
-    // $('.changeclick > input').focusin({a:12, b:"abc"}, function(eventObject){
-    //     var externalData = "a=" + eventObject.data.a + ", b=" + eventObject.data.b;
-    //     alert('Элемент с классом block получил фокус. '+
-    //           'В обработчик этого события переданы данные: ' + externalData );
-    //   });
-    
-    
-    // $("body").on("focusin",".changeclick > input",function(){
-    //     alert('Элемент foo получил фокус.');
-    //   });
     var coma=false;
     $("body").on("keypress","#product-name",function(e) { 
         // console.log(coma);     
@@ -958,52 +917,7 @@ console.log('arr_s.length'+ arr_s.length );
           
             return Object.keys(obj); // или собрать ключи перебором для IE8-
           }
-          //   alert( unique(strings) ); // кришна, харе, 8-()
-
-        
-          
-        
-        //   var arr1 =[1,2,3,4,33];//правильные значения
-        //   var arr2 =[2,33,17];// проверка на правильность
-        //   let intersection = arr1.filter(x => arr2.includes(x));
-        //   alert( intersection);
-
-        // Array.prototype.diff = function(a) {
-        //     return this.filter(function(i) {return a.indexOf(i) < 0;});
-        // };
-       
-
-        // let dif1 = arr1.diff( arr2 ); // проверка на остаток, не выбранные значения
-        // alert( dif1);
-
-        // $("table.zakaz tr:gt(0) ");
-        // $("table.zakaz > tr").each(function (index, value) { 
-        //     console.log('tr'+ index );
-        //     // console.log('div' + index + ':' + $(this).find('td[id^="product2"]').text()); 
-        //   });
-
-        // var arr1 = [1, 2, 3, 4, 5, 6,10];
-        // var arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-
-
-// console.log(array_diff(arr1, arr2));
-
-
-// var arr_new = [1,2,3,4,5,6,7,8,9],//новый проверяемый массив
-//     arr_prev = [6,7,8,11,1],// были включены ранее
-//     arr_diff=[];//Разница
-//     // var tempDates = [1,2,3,4,5,6,7,8,9],
-//     //  arrq= [6,7,8,11,1],
-//     // cq=[];//Разница
- 
-// for (var i = 0; i < arr_new.length; i++) {
-//   if (arr_prev.indexOf(arr_new[i]) === -1) {
-//     arr_diff.push(arr_new[i]);
-//   }
-// }
- 
-// console.log(arr_diff);
+         
 function inputClick(arr){
     arr.forEach(function(item) {
         var i=item;
@@ -1033,13 +947,13 @@ function checkvisH()
 {
     $('.check-vis').each(function(){
             $(this).hide();
-            console.log('Hide');
+            // console.log('Hide');
         });
 }
 function checkvisS()
 {
     $('.check-visS').each(function(){
             $(this).show();
-            console.log('show');
+            // console.log('show');
         });
 }

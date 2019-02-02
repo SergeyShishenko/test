@@ -159,6 +159,7 @@
             z-index: 100;
             border: 1px solid rgb(39, 39, 39);
             margin-right: 0.5px;
+            box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
             
           }
         .sticky-table {
@@ -170,11 +171,21 @@
             z-index: 110;
             border: 1px solid rgb(39, 39, 39);
             margin-right: 0.5px;
+            box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
             
           }
           p {
             margin: 0 0 1px !important;
         }
         .row-mod{margin-left:0;}
+        tr.table-head > th:first-child{width: 5%;}
+        tr.table-head > th.product_th{width: 6%;}
+        tr.table-head > th.product2_th{width: 6%;}
+        tr.table-head > th.floor_th{width: 5%;}
+        tr.table-head > th.complect_th{width: 10%;}
+        tr.table-head > th.room_th{width: 8%;}
+        /* tr.table-head > th:first-child{width: 5%;} */
+        /* tr.table-head > th:last-child{width: 5%;} */
+     
 
         /* .zakaz{white-space:  nowrap;} */

@@ -312,12 +312,13 @@ function unique_multidim_array($array, $key) {
 					if ($some==""){$some=$array[$row][3];}
 					$numcol = count ($array[$row]); //колонок 
 					$check_vis='check-vis';
+					$check_visS='check-visS';
 					$sticky_table='';
-					if ($row===0){$check_vis='';$sticky_table='sticky-table';}
-					echo '<tr class="'.$check_vis.' check-visS ">'; 
+					if ($row===0){$check_vis='';$sticky_table='sticky-table';$check_visS='';}
+					echo '<tr class="'.$check_vis.' '.$check_visS.' table-head">'; 
 
 					if ($row===0){ // шапка
-						echo '<th  class="'.$sticky_table.'">Выбрать</th>';
+						echo '<th  class="'.$sticky_table.' ">Выбрать</th>';
 						// $numcol = count ($array[$row]); //колонок 
 					for ($col=0; $col < $numcol; $col++) { 						
 						if (false === array_search($col, $exclude)){
@@ -326,33 +327,42 @@ function unique_multidim_array($array, $key) {
 								/////"head"    
 									case "0":
 										$id = 'client_'.$row.$col;												
+										$thclass = 'client_th';												
 										break;
 									case "1":
 										$id = 'address_'.$row.$col;
+										$thclass = 'address_th';
 										break;
 									case "2":
 										$id = 'numberorder_'.$row.$col;
+										$id = 'numberorder_th';
 										break;
 									case "3":
 										$id = 'product_'.$row.$col;
+										$thclass = 'product_th';
 										break;
 									case "4":
 										$id = 'product2_'.$row.$col;
+										$thclass = 'product2_th';
 										break;
 									case "5":
 										$id = 'def_'.$row.$col;
+										$thclass = 'def_th';
 										break;
 									case "6":
 										$id = 'room_'.$row.$col;
+										$thclass = 'room_th';
 										break;
 									case "7":
 										$id = 'complect_'.$row.$col;
+										$thclass = 'complect_th';
 										break;
 									case "8":
 										$id = 'floor_'.$row.$col;
+										$thclass = 'floor_th';
 										break;
 							}
-							echo '<th id="'.$id.'" class="'.$sticky_table.'">'.$array[$row][$col].'</th>';
+							echo '<th id="'.$id.'" class="'.$sticky_table.' '.$thclass.'">'.$array[$row][$col].'</th>';
 						}
 						
 					}//for
