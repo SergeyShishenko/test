@@ -14,6 +14,7 @@ header ("Content-Type: text/html; charset=utf-8");
     <link href='uploadify.css' rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="drop.css" rel="stylesheet">
+    <link href="submit-process.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -124,5 +125,6 @@ header ("Content-Type: text/html; charset=utf-8");
 <script src="bootstrap.js"></script>
 <script src="shortcut.js"></script>
 <script src="drop.js"></script>     
+<script src="submit-process.js"></script>     
 </body>
 </html>

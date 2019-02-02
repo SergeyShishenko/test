@@ -256,7 +256,7 @@ function unique_multidim_array($array, $key) {
 			$exclude=array("0","1","2");// исключаемые индексы
 
 			echo "<div class='sticky row row-mod'>";
-				echo "<div class='col-md-11'>";
+				echo "<div class='col-md-10'>";
 
 					echo "<p id='client' class='changeclick'><b>Заказчик: </b>           <span id=\"client_output\">".$data[1][0]."</span> <input type='text' class='form-control' size='40' id='client-name' value=''></p>";
 
@@ -288,7 +288,7 @@ function unique_multidim_array($array, $key) {
 					";
 
 				echo "</div>";
-				echo "<div  class='col-md-1'>
+				echo "<div  class='col-md-2'>
 			
 				<p><button class='btn btn-default' type='button'>Button</button></p>
 				<p><button class='btn btn-default' type='button'>Button</button></p>
@@ -297,8 +297,14 @@ function unique_multidim_array($array, $key) {
 				<p><button class='btn btn-default' type='button'>Button</button></p>
 				<p><button class='btn btn-default' type='button'>Button</button></p>
 				<p><button class='btn btn-default' type='button'>Button</button></p>
-				<p><button class='btn btn-default' type='button'>Button</button></p>
-				<p><button class='btn btn-default' type='button'>Button</button></p>
+				<p>
+					<button class='button' id='subbutton'>
+					<span class='submit' id='sub'>Submit</span>
+					<span class='loading'><i class='fa fa-refres'></i></span>
+					<span class='check'><i class='fa fa-check'></i></span>
+					</button>
+				</p>
+				<p><button type='button' class='btn btn-primary btn-lg' id='load' data-loading-text='<i class=\"fa fa-spinner fa-spin\" ></i> Обработка'> Генерация ДП </button></p>
 				";
 				echo "</div>";
 			echo "</div>";

@@ -957,3 +957,11 @@ function checkvisS()
             // console.log('show');
         });
 }
+
+$("body").on('click','.btn', function() {
+    var $this = $(this);
+  $this.button('loading');
+    setTimeout(function() {
+       $this.button('reset');
+   }, 8000);
+});
