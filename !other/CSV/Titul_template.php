@@ -73,7 +73,9 @@ date_default_timezone_set('Europe/Moscow');
             $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
         }
 
-        echo "./vpi/".$fname;
+        echo '<a href="../../vpi/'.$fname.'"   type="button" download >'.$fname.'</a>';
+        // echo "<a href=".$_SERVER['DOCUMENT_ROOT']."./www/vpi/".$fname."  type='button' download >$fname</a>";
+        // echo "<br>./vpi/".$fname;
 
 
 ?>
