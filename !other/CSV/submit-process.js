@@ -1,5 +1,5 @@
-var button = $('#subbutton');
-var submit = $('#sub');
+var button = $('.button-gen');
+var submit = $('.submit-gen');
 
 
 // function toggleClass() {
@@ -9,17 +9,30 @@ var submit = $('#sub');
 // function addClass() {
 // 	this.classList.add('finished');
 // }
-$("body").on('click','#subbutton', function() {
+$("body").on('click','.button-gen', function() {
     
-    $( this ).toggleClass( "active" );
+    $( this ).toggleClass( "active-gen" );
     // alert();
 });
-$("body").on('transitionend','#subbutton', function() {
-    $( this ).toggleClass( "active" );
+
+// после генерации
+    $("body").on('transitionend','.button-gen', function() {
+        $( this ).toggleClass( "active-gen" );
+    });
+
+    $("body").on('transitionend','.button-gen', function() {
+        $( this ).addClass( "finished-gen" );
+    });
+// после генерации    
+
+
+$("body").on('click','.finished-gen', function() {
+    
+    $( this ).removeClass( "finished-gen" );
+    $( this ).toggleClass( "active-gen" );
+    
 });
-$("body").on('transitionend','#subbutton', function() {
-    $( this ).addClass( "finished" );
-});
+
 // button.on('click', toggleClass);
 // button.addEventListener('transitionend', toggleClass);
 // button.addEventListener('transitionend', addClass);

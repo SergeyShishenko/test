@@ -963,5 +963,5 @@ $("body").on('click','.btn', function() {
   $this.button('loading');
     setTimeout(function() {
        $this.button('reset');
-   }, 8000);
+   }, 2000);
 });

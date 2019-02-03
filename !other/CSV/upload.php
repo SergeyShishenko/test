@@ -298,13 +298,16 @@ function unique_multidim_array($array, $key) {
 				<p><button class='btn btn-default' type='button'>Button</button></p>
 				<p><button class='btn btn-default' type='button'>Button</button></p>
 				<p>
-					<button class='button' id='subbutton'>
-					<span class='submit' id='sub'>Submit</span>
-					<span class='loading'><i class='fa fa-refres'></i></span>
-					<span class='check'><i class='fa fa-check'></i></span>
-					</button>
+					<a class='button-gen' href='#'>
+					<span class='submit-gen' >Титульники ДП</span>
+					<!--<span class='loading-gen'><i class='fa fa-spinner fa-spin' aria-hidden='true'></i></span>-->
+					<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>
+					<!--<span class='loading-gen'><i class='fa fa-refresh'></i></span>-->
+					<!--<span class='check-gen'><i class='fa fa-check'></i></span>-->
+					<span class='check-gen'><i>Скачать</i></span>
+					</a>
 				</p>
-				<p><button type='button' class='btn btn-primary btn-lg' id='load' data-loading-text='<i class=\"fa fa-spinner fa-spin\" ></i> Обработка'> Генерация ДП </button></p>
+				<p><button type='button' class='btn btn-primary  btn-block' id='load' data-loading-text='<i class=\"fa fa-spinner fa-spin\" ></i> Обработка'> Генерация ДП </button></p>
 				";
 				echo "</div>";
 			echo "</div>";

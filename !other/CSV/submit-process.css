@@ -22,29 +22,31 @@ body {
   height: 100vh;
 } */
 
-.hide {
+.hide-gen {
   display: none;
 }
 
-.button {
+a.button-gen {
   position: relative;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  width: 12.5rem;
+  /* width: 12.5rem; */
+  width: 100%;
   margin: 0;
-  padding: 1.5rem 3.125rem;
+  /* padding: 1.5rem 3.125rem; */
+  padding: 15px 5px;
   background-color: #3498db;
   border: none;
   border-radius: 0.3125rem;
   box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.2);
   color: white;
   font-weight: 300;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   overflow: hidden;
 }
-.button:before {
+a.button-gen:before {
   position: absolute;
   content: '';
   bottom: 0;
@@ -53,63 +55,66 @@ body {
   height: 100%;
   background-color: #54d98c;
 }
-.button span {
+.button-gen span {
   position: absolute;
   line-height: 0;
 }
-.button span i {
+a.button-gen span i {
   transform-origin: center center;
 }
-.button span:nth-of-type(1) {
+a.button-gen span:nth-of-type(1) {
   top: 50%;
   transform: translateY(-50%);
 }
-.button span:nth-of-type(2) {
-  top: 100%;
+a.button-gen span:nth-of-type(2) {
+  top: 110%;
   transform: translateY(0%);
-  font-size: 24px;
+  font-size: 20px;
 }
-.button span:nth-of-type(3) {
+a.button-gen span:nth-of-type(3) {
   display: none;
 }
 
-.active {
+a.active-gen {
   background-color: #2ecc71;
 }
-.active:before {
+a.active-gen:before {
   width: 100%;
   transition: width 3s linear;
 }
-.active span:nth-of-type(1) {
+a.active-gen span:nth-of-type(1) {
   top: -100%;
   transform: translateY(-50%);
 }
-.active span:nth-of-type(2) {
+a.active-gen span:nth-of-type(2) {
   top: 50%;
   transform: translateY(-50%);
 }
-.active span:nth-of-type(2) i {
-  animation: loading 500ms linear infinite;
+a.active-gen span:nth-of-type(2) i {
+  /* animation: loading 500ms linear infinite; */
+  
+ height: 19px;
 }
-.active span:nth-of-type(3) {
+a.active-gen span:nth-of-type(3) {
   display: none;
 }
 
-.finished {
+a.finished-gen {
   background-color: #54d98c;
 }
-.finished .submit {
+a.finished-gen .submit-gen {
   display: none;
 }
-.finished .loading {
+a.finished-gen .loading-gen {
   display: none;
 }
-.finished .check {
+a.finished-gen .check-gen {
   display: block !important;
-  font-size: 24px;
+  /* font-size: 20px; */
+  top: 50%;
   animation: scale 0.5s linear;
 }
-.finished .check i {
+a.finished-gen .check-gen i {
   transform-origin: center center;
 }
 
