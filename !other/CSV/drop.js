@@ -242,6 +242,7 @@
         // var arr_sOff=[];
         var arr_s=[];
         var arr_prev=[];
+        var product_def={};
         var currentinput='';
         var currentspan='';
         $("body").on("click","#upload-button .upload",function() {
@@ -262,25 +263,9 @@
                 //  dataplas= $.merge( {tbl : "obj", field : "name_obj"}, dataArray[index]);
                 $.post('upload.php', dataArray[index] , function(data) {
                 
-                    // var fileName = dataArray[index].name;
+                
                     ++x;
-                    // alert(data);
-                    // console.log(x+" : "+data);
-                    // Изменение бара загрузки
-                    // $('#loading-bar .loading-color').css({'width' : totalPercent*(x)+'%'});
-                    // // Если загрузка закончилась
-                    // if(totalPercent*(x) == 100) {
-                    //     // Загрузка завершена
-                    //     $('#loading-content').html('Загрузка завершена!');
-                        
-                    //     // Вызываем функцию удаления всех изображений после задержки 1 секунда
-                    //     // setTimeout(restartFiles, 1000);
-                    //     restartFiles();
-                    // // если еще продолжается загрузка	
-                    // } else if(totalPercent*(x) < 100) {
-                    //     // Какой файл загружается
-                    //     $('#loading-content').html('Загружается '+fileName);
-                    // }
+                 
                     restartFiles();
                     $('#drop-files').hide();
                     $('#uploaded-files').append(data);
@@ -300,20 +285,7 @@
                      arr_table=[];
                      arr_prev=[];
                      
-                   
-                    // propalertObjx(objxlsx, DbNumberID,'name');
-                    // propalertObjx(objxlsx, DbNumberID,'kd');
-
-                   
-                    // Формируем в виде списка все загруженные изображения
-                    // data формируется в upload.php
-                    // var dataSplit = data.split(':');
-                    // if(dataSplit[1] == 'загружен успешно') {
-                    //     $('#uploaded-files').append('<li><a href="images/'+dataSplit[0]+'">'+fileName+'</a> загружен успешно</li>');
-                                    
-                    // } else {
-                    //     $('#uploaded-files').append('<li><a href="images/'+data+'. Имя файла: '+dataArray[index].name+'</li>');
-                    // }
+                 
                     $("body #uploaded-files table.zakaz  tr:gt(0)").each(function (index, value) { 
             // console.log('tr '+ index );
             var c = $(this).find('td[id^="product"]').text();
@@ -369,96 +341,7 @@
     /////// drop
 
      // при открытии модального окна
-        $('#myModal').on('show.bs.modal', function (event) {
-           
-            // $('#loading1').css("display", "block");
-                
-            // // получить кнопку, которая его открыло
-            // var button = $(event.relatedTarget);     
-            // var content = button.data('content');
-            // var tbl = button.data('tbl');
-            // var field = button.data('field');
-            // var fieldid = button.data('field-id'); 
-            // var parent = button.data('parent');
-            // var recipient_href = button.data('href');
-            // var recipient_order = button.data('order');
-            // var htmlid = button.data('htmlid');         
-            // var id = button.data('id');
-            // var action =  button.data('action'); 
-            // $('input[id="action"]').val(action); // установка поля}       
-            // var recipient_name =button.data('name'); // Извлечение информации из данных-* атрибутов
-
-            // // if (typeof recipient_name == typeof undefined) {recipient_name="";}
-            // if (typeof button.data('name') === typeof undefined) {recipient_name="";}
-            // var im = button.attr('src');    
-            // if (content.indexOf("ДОБАВИТЬ") !== -1)
-            // {
-            //     $("#ChangeSubmit").addClass('hidden');
-            //     $("#DelSubmit").addClass('hidden');
-            //     $("#AddSubmit").removeClass('hidden');
-            //     action = "action"; 
-            // }
-            // else{$("#AddSubmit").addClass('hidden');$("#ChangeSubmit").removeClass('hidden');$("#DelSubmit").removeClass('hidden');}    
-            // $(this).find('#myModalLabel').text(content);      
-            //  if ( typeof(parent) != "undefined" && parent !== "")
-            //  {
-            //     // parent=' $$$'+ parent;
-            //  }
-            //  else{
-            //     parent="";
-            //  }
-
-            //                 var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
-            //                 var DbNumberID = clickedID[1]; //и получаем номер из массива
-
-            //                 var myData =    "content_txt="+ button.data('name') +"&"+
-            //                                 "tbl="+tbl+"&"+
-            //                                 "field="+field+"&"+
-            //                                 "fieldid="+fieldid+"&"+
-            //                                 "parent="+parent+"&"+
-            //                                 "href="+recipient_href+"&"+
-            //                                 "order="+recipient_order+"&"+
-            //                                 "htmlid="+htmlid+"&"+
-            //                                 "action="+action+"&"+
-            //                                 "id="+ id;
-            //                                 // "id="+ DbNumberID;
-            //                 // "name=John&location=Boston"
-            //                 jQuery.ajax({
-            //                     type: "POST", // HTTP метод  POST или GET
-            //                     url: "add-input.php", //url-адрес, по которому будет отправлен запрос
-            //                     dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
-            //                     data:myData, //данные, которые будут отправлены на сервер (post переменные)
-            //                     success:function(response){
-            //                         $('.list-tbl').html(response);
-            //                         $('#loading1').css("display", "none");
-            //                         $("#file-list").sortable();
-
-            //                     // $("#"+$("#tbl").val()+"_"+ DbNumberID).text($("#recipient-name").val());
-            //                     // $("#"+$("#tbl").val()+"_"+ DbNumberID).parent().data('name',$("#recipient-name").val());
-            //                     //     // для img
-            //                     // $("#image-"+ DbNumberID).find('img').data('name',$("#recipient-name").val());
-            //                     // // для разделов
-            //                     // $("#item_"+ DbNumberID).find("#"+$("#tbl").val()+"-"+ DbNumberID).data('name',$("#recipient-name").val());
-            //                     // // $("#contentText").val(''); //очищаем текстовое поле после успешной вставки
-
-            //                     },
-            //                     error:function (xhr, ajaxOptions, thrownError){
-            //                         alert(thrownError); //выводим ошибку
-            //                     }
-            //                 });
-            // // заполнение модального окна
-
-            // // $(this).find('.modal-body p').text(tbl+' . '+field+' . '+fieldid+' = '+id + parent); 
-            // $(this).find('#tbl').val(tbl);
-            // $(this).find('#field').val(field); 
-            // $(this).find('#fieldid').val(fieldid); 
-            // $(this).find('#id').val(id);  
-            // $(this).find('#recipient-name').val(recipient_name); 
-            // $(this).find('#recipient-href').val(recipient_href);
-            // $(this).find('#recipient-order').val(recipient_order); 
-
-            // $(this).find('#im').html('<img src="'+im+'" alt=" "class="center-block img-rounded img-thumbnail">'); 
-        
+        $('#myModal').on('show.bs.modal', function (event) {         
         });
 
            //Удаляем запись 
@@ -473,7 +356,7 @@
 
                 console.log('Файл-'+currfile);
                 
-                if (confirm("Удалить?")) {
+                if (confirm("Очистить?")) {
                     $('#uploaded-files').html('');
                     $('#DelSubmit').hide();
                     $('#CreateSubmit').hide();
@@ -604,6 +487,7 @@ function checkAddress(checkbox)
     var keycomplect=tr.find("[id^='complect_']").text();
     var keyproduct=tr.find("[id^='product_']").text();
     var keyproduct2=tr.find("[id^='product2_']").text();
+    var def=tr.find("[id^='def']").text();
     if (keyproduct2!=''){keyproduct=keyproduct2;}
 
     var keyfloor=tr.find("[id^='floor_']").text();
@@ -626,35 +510,21 @@ function checkAddress(checkbox)
 
         if (keyfloor !=""){
             if (keyfloor in floor) {floor[keyfloor]++;}else{floor[keyfloor]=1;}
-            // if (keyproductApp in objxlsx[tblid][keyproductApp].product) {objxlsx[tblid][keyproductApp].product[keyproductApp]++;}else{objxlsx[tblid][keyproductApp].product[keyproductApp]=1;}  
         }
       
-
         if (keycomplect in complect) {complect[keycomplect]++;}else{complect[keycomplect]=1;}
 
-        
       
-         if (keyproduct in product) {product[keyproduct]++;}else{product[keyproduct]=1;}   
+         if (keyproduct in product) {product[keyproduct]++;
+        }else{product[keyproduct]=1;product_def[keyproduct]=def;
+        }   
        
-        // if (keyproduct2==''){
-        //  if (keyproduct in product) {product[keyproduct]++;}else{product[keyproduct]=1;}   
-        // }else{
-        //     if (keyproduct2 in product) {product[keyproduct2]++;}else{product[keyproduct2]=1;}
-        // }
 
         if(!!keyproductApp){ 
            if (keyproductApp in objxlsx[tblid][keyproductApp].product) {objxlsx[tblid][keyproductApp].product[keyproductApp]++;}else{objxlsx[tblid][keyproductApp].product[keyproductApp]=1;}  
            objxlsx[tblid][keyproductApp][typecheck]=1;
         }
          
-        
-        // установка типа клика
-        // alert(typecheck);
-        // if (typecheck =="kd"){objxlsx[tblid][keyproductApp].kd=1; }
-        // else{objxlsx[tblid][keyproductApp].dp=1;}
-        
-
-        // alert('id : '+keyproductApp+' kd : '+ objxlsx[tblid][keyproductApp].kd +', dp : '+ objxlsx[tblid][keyproductApp].dp);
         
 
        tr.find("[id^='product_']").text();
@@ -694,7 +564,7 @@ function checkAddress(checkbox)
                 // tr.hide();
             }
 
-            if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];
+            if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];delete product_def[keyproduct];
                 // tr.css({"color":"black"});
                 tr.addClass('check-vis');
                 // tr.hide();
@@ -964,4 +834,41 @@ $("body").on('click','.btn', function() {
     setTimeout(function() {
        $this.button('reset');
    }, 2000);
+});
+
+
+
+$("body").on('click','.button-gen:not(".finished-gen")', function() {
+     
+     if($('#product_output').text()==""){alert('Ничего не выбрано! '+$('#product_output').text()); return;}
+    $( this ).toggleClass( "active-gen" );
+    
+});
+
+// после генерации
+    $("body").on('transitionend','.button-gen', function() {
+        $( this ).toggleClass( "active-gen" );
+    });
+
+    $("body").on('transitionend','.button-gen', function() {
+        $( this ).addClass( "finished-gen" );
+    });
+// после генерации    
+
+
+$("body").on('click','.finished-gen', function() {
+
+//    alert('Выбрано! '+$('#product_output').text());
+    alert($('#client_output').text());
+    alert($('#agent_output').text());
+    alert($('#address_output').text());
+    alert($('#floor_output').text());
+    alert($('#room_output').text());
+    alert($('#complect_output').text());
+    alert($('#order_output').text());
+    alert($('#product_output').text());
+    propalert(product_def);
+    $( this ).removeClass( "finished-gen" );
+    // $( this ).toggleClass( "active-gen" );
+    
 });

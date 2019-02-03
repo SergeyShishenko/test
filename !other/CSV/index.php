@@ -108,8 +108,8 @@ header ("Content-Type: text/html; charset=utf-8");
                     <a href="#down" id="up" class="go_to btn btn-default badge" title="ВВЕРХ" style="margin-left: 15px;">
                     <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
                     </a>
-                    <a href="#" class="btn btn-success"   id="CreateSubmit">Создать</a>
-                    <a href="#" class="btn btn-danger"   id="DelSubmit">Удалить</a>
+                    <!-- <a href="#" class="btn btn-success"   id="CreateSubmit">Создать</a> -->
+                    <a href="#" class="btn btn-danger"   id="DelSubmit">Очистить</a>
                     <a href="#" class="btn btn-default elm" data-dismiss="modal">Закрыть</a>
                     <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="ChangeSubmit">Сохранить изменения</a> -->
                     <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="AddSubmit">Добавить</a> -->
@@ -125,6 +125,6 @@ header ("Content-Type: text/html; charset=utf-8");
 <script src="bootstrap.js"></script>
 <script src="shortcut.js"></script>
 <script src="drop.js"></script>     
-<script src="submit-process.js"></script>     
+<!-- <script src="submit-process.js"></script>      -->
 </body>
 </html>

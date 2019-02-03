@@ -23,7 +23,8 @@ body {
 } */
 
 .hide-gen {
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 
 a.button-gen {

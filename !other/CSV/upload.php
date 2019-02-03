@@ -149,8 +149,10 @@ $i=0;
 if(isset($_POST["recordToDelete"]) )
 {
 	if (unlink("xlscsv/".$_POST["recordToDelete"])){
-		echo "Файл: ".$_POST["recordToDelete"]." удален!";
-	}else{echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";}
+		// echo "Файл: ".$_POST["recordToDelete"]." удален!";
+	}else{
+		// echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
+	}
 	exit();
 }
 
@@ -290,15 +292,16 @@ function unique_multidim_array($array, $key) {
 				echo "</div>";
 				echo "<div  class='col-md-2'>
 			
-				<p><button class='btn btn-default' type='button'>Button</button></p>
-				<p><button class='btn btn-default' type='button'>Button</button></p>
-				<p><button class='btn btn-default' type='button'>Button</button></p>
-				<p><button class='btn btn-default' type='button'>Button</button></p>
-				<p><button class='btn btn-default' type='button'>Button</button></p>
-				<p><button class='btn btn-default' type='button'>Button</button></p>
-				<p><button class='btn btn-default' type='button'>Button</button></p>
+				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
+				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
+				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
+				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
+				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
+				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
+				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
+				<p><button type='button' class='btn btn-primary  btn-block hide-gen' id='load' data-loading-text='<i class=\"fa fa-spinner fa-spin\" ></i> Обработка'> Генерация ДП </button></p>
 				<p>
-					<a class='button-gen' href='#'>
+					<a class='button-gen btn-block' href='#'>
 					<span class='submit-gen' >Титульники ДП</span>
 					<!--<span class='loading-gen'><i class='fa fa-spinner fa-spin' aria-hidden='true'></i></span>-->
 					<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>
@@ -307,7 +310,7 @@ function unique_multidim_array($array, $key) {
 					<span class='check-gen'><i>Скачать</i></span>
 					</a>
 				</p>
-				<p><button type='button' class='btn btn-primary  btn-block' id='load' data-loading-text='<i class=\"fa fa-spinner fa-spin\" ></i> Обработка'> Генерация ДП </button></p>
+				
 				";
 				echo "</div>";
 			echo "</div>";
@@ -381,56 +384,63 @@ function unique_multidim_array($array, $key) {
 							<input id="someSwitchOptionSuccess'.$some.'" name="someSwitchOption001" type="checkbox" onclick="checkAddress(this)"/>
 							<label for="someSwitchOptionSuccess'.$some.'" class="label-success"></label>
 							</div></td>';
-				// $numcol = count ($array[$row]); //колонок 
-					for ($col=0; $col < $numcol; $col++) { 						
-						if (false === array_search($col, $exclude)){
-							// $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
-							switch ($col) {
-								/////"head"    
-									case "0":
-										$id = 'client_'.$row.$col;												
-										break;
-									case "1":
-										$id = 'address_'.$row.$col;
-										break;
-									case "2":
-										$id = 'numberorder_'.$row.$col;
-										break;
-									case "3":
-										$id = 'product_'.$row.$col;
-										break;
-									case "4":
-										$id = 'product2_'.$row.$col;
-										break;
-									case "5":
-										$id = 'def_'.$row.$col;
-										break;
-									case "6":
-										$id = 'room_'.$row.$col;
-										break;
-									case "7":
-										$id = 'complect_'.$row.$col;
-										break;
-									case "8":
-										$id = 'floor_'.$row.$col;
-										break;
-							}
-							echo '<td id="'.$id.'">'.$array[$row][$col].'</td>';
-						}
-						
-					}//for
+							// $numcol = count ($array[$row]); //колонок 
+							for ($col=0; $col < $numcol; $col++) { 						
+								if (false === array_search($col, $exclude)){
+									// $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
+									switch ($col) {
+										/////"head"    
+											case "0":
+												$id = 'client_'.$row.$col;												
+												break;
+											case "1":
+												$id = 'address_'.$row.$col;
+												break;
+											case "2":
+												$id = 'numberorder_'.$row.$col;
+												break;
+											case "3":
+												$id = 'product_'.$row.$col;
+												break;
+											case "4":
+												$id = 'product2_'.$row.$col;
+												break;
+											case "5":
+												$id = 'def_'.$some;
+												break;
+											case "6":
+												$id = 'room_'.$row.$col;
+												break;
+											case "7":
+												$id = 'complect_'.$row.$col;
+												break;
+											case "8":
+												$id = 'floor_'.$row.$col;
+												break;
+									}
+									echo '<td id="'.$id.'">'.$array[$row][$col].'</td>';
+								}//if
+								
+							}//for
 
-						}
-
-					
+						}		
 
 					echo "</tr>"; 
 				
 				} //for	
 		
 			echo '</table>'; 
+			// файл
 			echo '<input type="hidden" id="currfile" value="'.$randomName.'" form="frm">' ; 
+
 		// создание таблицы end
+
+		// удаляем файл
+		if (unlink($filename)){
+			// echo "Файл: ".$_POST["recordToDelete"]." удален!";
+		}else{
+			// echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
+		}
 
 	}//if file_put_contents
 	else {
@@ -450,7 +460,9 @@ elseif ($mime =="xlsx"){
 		$filename=$uploaddir.$randomName;
 		require_once "$_SERVER[DOCUMENT_ROOT]/www/!other/XLSX/getxlsx.php"; 
 		}
-	// echo "Файл XLSX!";
+
+
+	
 }//elseif
 
 
