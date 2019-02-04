@@ -844,9 +844,29 @@ $("body").on('click','.button-gen:not(".finished-gen")', function() {
     $( this ).toggleClass( "active-gen" );
     
 });
+dataArrayTitle=[];
 
 // после генерации
     $("body").on('transitionend','.button-gen', function() {
+        // alert('Загрузка');
+        dataArrayTitle.push(
+            {
+                client : $('#client_output').text(),
+                agent : $('#agent_output').text(),
+                address : $('#address_output').text(),
+                floor : $('#floor_output').text(),
+                room : $('#room_output').text(),
+                complect : $('#complect_output').text(),
+                order : $('#order_output').text(),
+                product : $('#product_output').text(),
+                gen : 'kd',
+                arr_product_def : product_def
+
+            }
+        ); 
+
+        generation(dataArrayTitle);
+    
         $( this ).toggleClass( "active-gen" );
     });
 
@@ -856,19 +876,32 @@ $("body").on('click','.button-gen:not(".finished-gen")', function() {
 // после генерации    
 
 
+
+
 $("body").on('click','.finished-gen', function() {
 
+   
+
 //    alert('Выбрано! '+$('#product_output').text());
-    alert($('#client_output').text());
-    alert($('#agent_output').text());
-    alert($('#address_output').text());
-    alert($('#floor_output').text());
-    alert($('#room_output').text());
-    alert($('#complect_output').text());
-    alert($('#order_output').text());
-    alert($('#product_output').text());
-    propalert(product_def);
+    // alert($('#client_output').text());
+    // alert($('#agent_output').text());
+    // alert($('#address_output').text());
+    // alert($('#floor_output').text());
+    // alert($('#room_output').text());
+    // alert($('#complect_output').text());
+    // alert($('#order_output').text());
+    // alert($('#product_output').text());
+    
     $( this ).removeClass( "finished-gen" );
     // $( this ).toggleClass( "active-gen" );
     
 });
+
+function generation(data){
+// propalert(data[0]);
+propalert(data[0].arr_product_def);
+}
+// $.post('title-generation.php', dataArrayTitle , function(data) {                
+    
+//     $('#uploaded-files').append(data);
+// });
