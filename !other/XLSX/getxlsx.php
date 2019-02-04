@@ -10,7 +10,32 @@ $File = "$_SERVER[DOCUMENT_ROOT]/www/!other/CSV/$filename";
 $Excel = PHPExcel_IOFactory::load($File);
  
 $order=end(explode(" ", $Excel->getActiveSheet()->getCell('Document1')->getValue())); 
-$coordColSum= $Excel->getActiveSheet()->getCell('Sum')->getColumn(); //столбец 'A'
+
+
+// $coordColSum= $Excel->getActiveSheet()->getCell('Sum')->getColumn(); //столбец 'A'
+
+try{
+    // $s=1/0;
+    $coordColSum= $Excel->getActiveSheet()->getCell('Sum')->getColumn(); //столбец 'A'
+   
+}catch (Exception $e) {
+    //Выводим сообщение об исключении.
+    // echo $ex->getMessage();
+    // echo 'Поймали исключение<br />';
+    // echo 'Error :' . $e->getMessage() . '<br />';
+    $coordRowSum=$Excel->getActiveSheet()->getCell('Name')->getRow();    
+    // $coordColSum=$Excel->getActiveSheet()->getCell('Name')->getColumn();    
+    $datarow = $Excel->getActiveSheet()->rangeToArray('A'.$coordRowSum.':' . 'AA'.$coordRowSum); 
+    // echo "<pre>";
+	// print_r($datarow[0]);
+    // echo "</pre>";
+    $key = array_search('Сумма', $datarow[0]);
+    $simbol = chr(65+$key);
+    // echo '$sum '.$simbol.$key;
+    $coordColSum= $Excel->getActiveSheet()->getCell($simbol.$key)->getColumn(); //столбец 'A'
+    // exit();
+}
+
 // если $order== "" искать вхождение в строке
 if(!$order) {// пустая ячейка
 

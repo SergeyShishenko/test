@@ -61,7 +61,19 @@ if(isset($_POST["arr"]) )//генерация файла
 			$order=end(explode(" ", $Excel->getActiveSheet()->getCell('Document1')->getValue())); 		
 			$client= $Excel->getActiveSheet()->getCell('Customer')->getValue(); 		
 			$coordRow= $Excel->getActiveSheet()->getCell('NumStart')->getRow(); //номер строки '5'
-			$coordColSum= $Excel->getActiveSheet()->getCell('Sum')->getColumn(); //столбец 'A'
+			try{
+				// $s=1/0;
+				$coordColSum= $Excel->getActiveSheet()->getCell('Sum')->getColumn(); //столбец 'A'
+				
+				
+			}catch (Exception $e) {
+				//Выводим сообщение об исключении.
+				// echo $ex->getMessage();
+				echo 'Поймали исключение<br />';
+				echo 'Error :' . $e->getMessage() . '<br />';
+				exit();
+			}
+
 			$coordColProduct= $Excel->getActiveSheet()->getCell('NumStart')->getColumn(); //столбец 'O'
 			$coordColName= $Excel->getActiveSheet()->getCell('Name')->getColumn(); //столбец 'B'
 			# С какой строки начинаются данные
