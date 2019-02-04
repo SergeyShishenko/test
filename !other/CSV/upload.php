@@ -272,28 +272,28 @@ function unique_multidim_array($array, $key) {
 			echo "<div class='sticky row row-mod'>";
 				echo "<div class='col-md-10'>";
 
-					echo "<p id='client' class='changeclick'><b>Заказчик: </b>           <span id=\"client_output\">".$data[1][0]."</span> <input type='text' class='form-control' size='40' id='client-name' value=''></p>";
+					echo "<p id='client' class='changeclick'><b>Заказчик: </b>           <span id=\"client_output\"  class=\"val\">".$data[1][0]."</span> <input type='text' class='form-control' size='40' id='client-name' value=''></p>";
 
-					echo "<p id='agent' class='changeclick'><b>Представитель: </b>       <span id=\"agent_output\"></span> <input type='text' class='form-control' size='40' id='agent-name' value=''></p>";
+					echo "<p id='agent' class='changeclick'><b>Представитель: </b>       <span id=\"agent_output\"  class=\"val\"></span> <input type='text' class='form-control' size='40' id='agent-name' value=''></p>";
 					
-					echo "<p id='address' class='changeclick'><b>Объект: </b>            <span id=\"address_output\">".$data[1][1]."</span> <input type='text' class='form-control' size='40' id='address-name' value=''></p>";
+					echo "<p id='address' class='changeclick'><b>Объект: </b>            <span id=\"address_output\"  class=\"val\">".$data[1][1]."</span> <input type='text' class='form-control' size='40' id='address-name' value=''></p>";
 					if (array_sum(array_column($array, 4)) === 0){// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";						
 						array_push($exclude,"4");
 					}	
 					if(count(unique_multidim_array($data,8))==2)
 					{
-						echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\">".$data[1][8]."</span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";array_push($exclude,"8");
+						echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\"  class=\"val\">".$data[1][8]."</span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";array_push($exclude,"8");
 					}
 					else{
-						echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\"></span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";	
+						echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\"  class=\"val\"></span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";	
 					}
-					echo "<p id='room' class=''><b>Помещение: </b>            <span id=\"room_output\"></span> <input type='text' class='form-control' size='40' id='room-name' value=''></p>";
+					echo "<p id='room' class=''><b>Помещение: </b>            <span id=\"room_output\"  class=\"val\"></span> <input type='text' class='form-control' size='40' id='room-name' value=''></p>";
 
-					echo "<p id='complect' class=''><b>Комплект изделий: </b> <span id=\"complect_output\"></span> <input type='text' class='form-control' size='40' id='complect-name' value=''></p>";
+					echo "<p id='complect' class='changeclick'><b>Комплект изделий: </b> <span id=\"complectUser_output\"  class=\"val\"></span><span id=\"coma\">&nbsp;</span><span id=\"complect_output\"></span> <input type='text' class='form-control' size='40' id='complectUser-name' value=''></p>";
 
-					echo "<p id='order' class=''><b>№ заказа: </b>            <span id=\"order_output\">".$data[1][2]."</span> <input type='text' class='form-control' size='40' id='order-name' value=''></p>";
+					echo "<p id='order' class=''><b>№ заказа: </b>            <span id=\"order_output\"  class=\"val\">".$data[1][2]."</span> <input type='text' class='form-control' size='40' id='order-name' value=''></p>";
 
-					echo "<p class='changeclick' title='Alt+X'><b>Изделия: </b><span id=\"product_output\"></span> <input type='text' class='form-control' size='40' id='product-name' value=''></p>
+					echo "<p class='changeclick' title='Alt+X'><b>Изделия: </b><span id=\"product_output\"  class=\"val\"></span> <input type='text' class='form-control' size='40' id='product-name' value=''></p>
 					<label class='checkbox'>
 						<input type='checkbox' value='' id='checkvis' >
 						Скрыть/показать все не выбранные

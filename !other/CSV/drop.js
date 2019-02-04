@@ -663,7 +663,7 @@ function propdelete2(obj,name){
     });
     $("body").on("click",".changeclick",function() {       
             
-              $(this).find('input').val($(this).find('span').text());
+              $(this).find('input').val($(this).find('span.val').text());
               $(this).find('input').css({"visibility":"visible"}).focus();
             //   $(this).find('input').css({"visibility":"visible"});
               
@@ -694,8 +694,8 @@ function propdelete2(obj,name){
                 arr_prev=[];
                 arr_prev=arr_s;
             }
-            else{
-                 $(this).parent().find('span').text($(this).val());
+            else {
+                 $(this).parent().find('span.val').text($(this).val());
                 }
             currentinput='';
         }
@@ -703,6 +703,7 @@ function propdelete2(obj,name){
     $("body").on("focusin",".changeclick > input",function(eventObject){
         // var externalData = "a=" + eventObject.data.a + ", b=" + eventObject.data.b;
         console.log('focusin '+$(eventObject.target).val());
+
         arr_coma($(eventObject.target).val());
                 //  inputClick(arr_prev);
                 // включение выбранных
