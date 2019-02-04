@@ -26,6 +26,13 @@ body {
   /* display: none; */
   visibility: hidden;
 }
+.hide-info {
+  display: none;
+  /* visibility: hidden; */
+}
+/* table tr > *:nth-child(8) {
+  display: none;
+} */
 
 a.button-gen {
   position: relative;

@@ -320,21 +320,25 @@ function onScroll(){
 		// $(document).off("scroll");
 		// $(menu_selector + " a.active").removeClass("active");
 		nvfn();
-		var hash = $(this).attr("href");
-        var target = $(hash);
-        // console.log(target.offset().top);
-		$("html, body").animate({
-		    scrollTop: target.offset().top - nv
-		}, 500, function(){
-			window.location.hash = hash;
-			$(document).on("scroll", onScroll);
-        });
-        $("html, body").animate({
-		    scrollTop: target.offset().top - nv
-		}, 500, function(){
-			window.location.hash = hash;
-			$(document).on("scroll", onScroll);
-		});
+        var hash = $(this).attr("href");
+        console.log('hash '+hash.length);
+        if (hash.length>1){
+            var target = $(hash);
+            
+            $("html, body").animate({
+                scrollTop: target.offset().top - nv
+            }, 500, function(){
+                window.location.hash = hash;
+                $(document).on("scroll", onScroll);
+            });
+            $("html, body").animate({
+                scrollTop: target.offset().top - nv
+            }, 500, function(){
+                window.location.hash = hash;
+                $(document).on("scroll", onScroll);
+            });
+        }
+
 	});
 
 //Живой поиск

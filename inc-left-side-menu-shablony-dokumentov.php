@@ -77,6 +77,9 @@ include 'inc-goup-menu-shablony-dokumentov.php';//$styazhka=[]
 
                             </ul>
                         </li>
+                        <li class="menu">
+                            <a href="#" class="list-group-item  dblstr-lg dblstr-xl  dblstr-md dblstr-sm creat">Создать комплект документов</a>
+                        </li>
                        
                                                                                                                  
                     </ul>

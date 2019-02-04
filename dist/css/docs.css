@@ -2346,3 +2346,11 @@ ul.search_result {
   float:left;
   margin-top: -14px;
 }
+.creat:hover{
+  /* background-color: #2ecc43c0 !important; */
+  /* background-color: #2e46cca6 !important; */
+  color: #000 !important;
+  text-shadow: #cccccc 1px 1px 0, #cccccc 2px 2px 0; 
+               /* #555555 3px 3px 0, #555555 4px 4px 0, 
+               #555555 5px 5px 0; */
+}
