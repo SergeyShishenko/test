@@ -251,12 +251,12 @@ function unique_multidim_array($array, $key) {
 		if ($handle) {
 			while (($buffer = fgets($handle, 4096)) !== false) {
 				// echo $buffer . "<hr>";
-				list($client,$address,$number_order,,,$complect,$product,$product2,,,,$def,,,,,,,,,,$floor,$room,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
+				list($client,$address,$number_order,,,$complect,$product,$product2,,,,$def,,,,,$kb,,,,,$floor,$room,$unit,$count,$serialnum,$wood,$veneer,$pic,$numsample,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
 				$complect = end(explode('/', $complect));
 				$room = explode('/', $room)[0];
 				
-			//                           0        1        2             3        4        5     6     7        8
-				array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor));					
+			//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15  16
+				array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb));					
 				
 			}//while
 			if (!feof($handle)) {
@@ -346,47 +346,98 @@ function unique_multidim_array($array, $key) {
 						// $numcol = count ($array[$row]); //колонок 
 					for ($col=0; $col < $numcol; $col++) { 						
 						if (false === array_search($col, $exclude)){
-							// $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
+			//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15  16
+			// array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb));
 							switch ($col) {
 								/////"head"    
 									case "0":
 										$id = 'client_'.$row.$col;												
-										$thclass = 'client_th';												
+										$thclass = 'client_th';	
+										$vis = '';											
 										break;
 									case "1":
 										$id = 'address_'.$row.$col;
 										$thclass = 'address_th';
+										$vis = '';
 										break;
 									case "2":
 										$id = 'numberorder_'.$row.$col;
 										$id = 'numberorder_th';
+										$vis = '';
 										break;
 									case "3":
 										$id = 'product_'.$row.$col;
 										$thclass = 'product_th';
+										$vis = '';
 										break;
 									case "4":
 										$id = 'product2_'.$row.$col;
 										$thclass = 'product2_th';
+										$vis = '';
 										break;
 									case "5":
 										$id = 'def_'.$row.$col;
 										$thclass = 'def_th';
+										$vis = '';
 										break;
 									case "6":
 										$id = 'room_'.$row.$col;
 										$thclass = 'room_th';
+										$vis = '';
 										break;
 									case "7":
 										$id = 'complect_'.$row.$col;
 										$thclass = 'complect_th';
+										$vis = '';
 										break;
 									case "8":
 										$id = 'floor_'.$row.$col;
 										$thclass = 'floor_th';
+										$vis = '';
 										break;
+									case "9"://////////////$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb
+										$id = 'unit_'.$row.$col;												
+										$thclass = 'unit_th';	
+										$vis = 'hide-info';											
+										break;
+									case "10":
+										$id = 'count_'.$row.$col;
+										$thclass = 'count_th';
+										$vis = 'hide-info';
+										break;
+									case "11":
+										$id = 'serialnum_'.$row.$col;
+										$id = 'serialnum_th';
+										$vis = 'hide-info';
+										break;
+									case "12":
+										$id = 'wood_'.$row.$col;
+										$thclass = 'wood_th';
+										$vis = 'hide-info';
+										break;
+									case "13":
+										$id = 'veneer_'.$row.$col;
+										$thclass = 'veneer_th';
+										$vis = 'hide-info';
+										break;
+									case "14":
+										$id = 'numsample_'.$row.$col;
+										$thclass = 'numsample_th';
+										$vis = 'hide-info';
+										break;
+									case "15":
+										$id = 'pic_'.$row.$col;
+										$thclass = 'pic_th';
+										$vis = 'hide-info';
+										break;
+									case "16":
+										$id = 'kb_'.$row.$col;
+										$thclass = 'kb_th';
+										$vis = 'hide-info';
+										break;
+								
 							}
-							echo '<th id="'.$id.'" class="'.$sticky_table.' '.$thclass.'">'.$array[$row][$col].'</th>';
+							echo '<th id="'.$id.'" class="'.$sticky_table.' '.$thclass.' '.$vis.'">'.$array[$row][$col].'</th>';
 						}
 						
 					}//for
@@ -399,38 +450,88 @@ function unique_multidim_array($array, $key) {
 							// $numcol = count ($array[$row]); //колонок 
 							for ($col=0; $col < $numcol; $col++) { 						
 								if (false === array_search($col, $exclude)){
-									// $client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor
+			//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15  16
+			// array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb));
 									switch ($col) {
 										/////"head"    
 											case "0":
-												$id = 'client_'.$row.$col;												
+												$id = 'client_'.$row.$col;	
+												$vis = '';											
 												break;
 											case "1":
 												$id = 'address_'.$row.$col;
+												$vis = '';
 												break;
 											case "2":
 												$id = 'numberorder_'.$row.$col;
+												$vis = '';
 												break;
 											case "3":
 												$id = 'product_'.$row.$col;
+												$vis = '';
 												break;
 											case "4":
 												$id = 'product2_'.$row.$col;
+												$vis = '';
 												break;
 											case "5":
 												$id = 'def_'.$some;
+												$vis = '';
 												break;
 											case "6":
 												$id = 'room_'.$row.$col;
+												$vis = '';
 												break;
 											case "7":
 												$id = 'complect_'.$row.$col;
+												$vis = '';
 												break;
 											case "8":
 												$id = 'floor_'.$row.$col;
+												$vis = '';
+												break;
+											case "9"://////////////$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb
+												$id = 'unit_'.$row.$col;												
+												$thclass = 'unit_th';	
+												$vis = 'hide-info';											
+												break;
+											case "10":
+												$id = 'count_'.$row.$col;
+												$thclass = 'count_th';
+												$vis = 'hide-info';
+												break;
+											case "11":
+												$id = 'serialnum_'.$row.$col;
+												$id = 'serialnum_th';
+												$vis = 'hide-info';
+												break;
+											case "12":
+												$id = 'wood_'.$row.$col;
+												$thclass = 'wood_th';
+												$vis = 'hide-info';
+												break;
+											case "13":
+												$id = 'veneer_'.$row.$col;
+												$thclass = 'veneer_th';
+												$vis = 'hide-info';
+												break;
+											case "14":
+												$id = 'numsample_'.$row.$col;
+												$thclass = 'numsample_th';
+												$vis = 'hide-info';
+												break;
+											case "15":
+												$id = 'pic_'.$row.$col;
+												$thclass = 'pic_th';
+												$vis = 'hide-info';
+												break;
+											case "16":
+												$id = 'kb_'.$row.$col;
+												$thclass = 'kb_th';
+												$vis = 'hide-info';
 												break;
 									}
-									echo '<td id="'.$id.'">'.$array[$row][$col].'</td>';
+									echo '<td id="'.$id.'" class="'.$vis.'">'.$array[$row][$col].'</td>';
 								}//if
 								
 							}//for
