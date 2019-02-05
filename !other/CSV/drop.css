@@ -152,7 +152,7 @@
         }
         .sticky {
             position: sticky;
-            top: -120px;
+            top: -245px;
             min-height: 2em;
             background: rgb(240, 240, 240);
             padding: 15px 15px 0 15px;
@@ -164,7 +164,7 @@
           }
         .sticky-table {
             position: sticky;
-            top: 215px;
+            top: 110px;
             min-height: 2em;
             background: rgb(240, 240, 240);
             padding: 15px 15px 0 15px;

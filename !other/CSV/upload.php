@@ -255,8 +255,8 @@ function unique_multidim_array($array, $key) {
 				$complect = end(explode('/', $complect));
 				$room = explode('/', $room)[0];
 				
-			//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15  16
-				array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb));					
+			//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15   16    17
+				array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP));					
 				
 			}//while
 			if (!feof($handle)) {
@@ -431,8 +431,13 @@ function unique_multidim_array($array, $key) {
 										$vis = 'hide-info';
 										break;
 									case "16":
-										$id = 'kb_'.$row.$col;
-										$thclass = 'kb_th';
+										$id = 'kbKD_'.$row.$col;
+										$thclass = 'kbKD_th';
+										$vis = 'hide-info';
+										break;
+									case "17":
+										$id = 'kbDP_'.$row.$col;
+										$thclass = 'kbDP_th';
 										$vis = 'hide-info';
 										break;
 								
@@ -526,8 +531,13 @@ function unique_multidim_array($array, $key) {
 												$vis = 'hide-info';
 												break;
 											case "16":
-												$id = 'kb_'.$row.$col;
-												$thclass = 'kb_th';
+												$id = 'kbKD_'.$row.$col;
+												$thclass = 'kbKD_th';
+												$vis = 'hide-info';
+												break;
+											case "17":
+												$id = 'kbDP_'.$row.$col;
+												$thclass = 'kbDP_th';
 												$vis = 'hide-info';
 												break;
 									}

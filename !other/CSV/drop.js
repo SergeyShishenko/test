@@ -243,6 +243,7 @@
         var arr_s=[];
         var arr_prev=[];
         var product_def={};
+        
         var currentinput='';
         var currentspan='';
         $("body").on("click","#upload-button .upload",function() {
@@ -488,6 +489,14 @@ function checkAddress(checkbox)
     var keyproduct=tr.find("[id^='product_']").text();
     var keyproduct2=tr.find("[id^='product2_']").text();
     var def=tr.find("[id^='def']").text();
+    var unit=tr.find("[id^='unit']").text();
+    var count=tr.find("[id^='count']").text();
+    var serialnum=tr.find("[id^='serialnum']").text();
+    var wood=tr.find("[id^='wood']").text();
+    var veneer=tr.find("[id^='veneer']").text();
+    var numsample=tr.find("[id^='numsample']").text();
+    var kbKD=tr.find("[id^='kbKD']").text();
+    var kbDP=tr.find("[id^='def']").text();
     if (keyproduct2!=''){keyproduct=keyproduct2;}
 
     var keyfloor=tr.find("[id^='floor_']").text();
@@ -516,11 +525,12 @@ function checkAddress(checkbox)
 
       
          if (keyproduct in product) {product[keyproduct]++;
-        }else{product[keyproduct]=1;product_def[keyproduct]=def;
+        }else{product[keyproduct]=1;
+            product_def[keyproduct]={'def':def};//добавление информации ++
         }   
-       
+        
 
-        if(!!keyproductApp){ 
+        if(!!keyproductApp){
            if (keyproductApp in objxlsx[tblid][keyproductApp].product) {objxlsx[tblid][keyproductApp].product[keyproductApp]++;}else{objxlsx[tblid][keyproductApp].product[keyproductApp]=1;}  
            objxlsx[tblid][keyproductApp][typecheck]=1;
         }
@@ -564,7 +574,8 @@ function checkAddress(checkbox)
                 // tr.hide();
             }
 
-            if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];delete product_def[keyproduct];
+            if (product[keyproduct]>1) {product[keyproduct]--;}else{delete product[keyproduct];
+                delete product_def[keyproduct];//удаление информации
                 // tr.css({"color":"black"});
                 tr.addClass('check-vis');
                 // tr.hide();
@@ -600,6 +611,14 @@ function checkAddress(checkbox)
 function propalert(obj){
     for (var prop in obj) {
         alert( prop +' : '+obj[prop]); // name, surname, age
+      } 
+}
+function propalert2(obj){
+    for (var prop in obj) {
+        // alert( prop +' : '+obj[prop]); // name, surname, age
+        for (var prop2 in prop) {
+            alert( prop2 +' : '+prop[prop2].def); // name, surname, age
+          }
       } 
 }
 function keydelete(obj){
@@ -899,8 +918,10 @@ $("body").on('click','.finished-gen', function() {
 });
 
 function generation(data){
-// propalert(data[0]);
-propalert(data[0].arr_product_def);
+// propalert(data[0]);//шапка
+propalert(data[0]);//шапка
+propalert2(data[0].arr_product_def);
+// alert(data[0].arr_product_def[1].def);
 }
 // $.post('title-generation.php', dataArrayTitle , function(data) {                
     
