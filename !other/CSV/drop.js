@@ -496,7 +496,7 @@ function checkAddress(checkbox)
     var veneer=tr.find("[id^='veneer']").text();
     var numsample=tr.find("[id^='numsample']").text();
     var kbKD=tr.find("[id^='kbKD']").text();
-    var kbDP=tr.find("[id^='def']").text();
+    var kbDP=tr.find("[id^='kbDP']").text();
     if (keyproduct2!=''){keyproduct=keyproduct2;}
 
     var keyfloor=tr.find("[id^='floor_']").text();
@@ -526,7 +526,15 @@ function checkAddress(checkbox)
       
          if (keyproduct in product) {product[keyproduct]++;
         }else{product[keyproduct]=1;
-            product_def[keyproduct]={'def':def};//добавление информации ++
+            product_def[keyproduct]={'def':def,
+                                    'unit':unit,
+                                    'count':count,
+                                    'serialnum':serialnum,
+                                    'wood':wood,
+                                    'veneer':veneer,
+                                    'numsample':numsample,
+                                    'kbKD':kbKD,
+                                    'kbDP':kbDP};//добавление информации ++
         }   
         
 
@@ -864,12 +872,12 @@ $("body").on('click','.button-gen:not(".finished-gen")', function() {
     $( this ).toggleClass( "active-gen" );
     
 });
-dataArrayTitle=[];
+dataArrayTitle={};
 
 // после генерации
     $("body").on('transitionend','.button-gen', function() {
         // alert('Загрузка');
-        dataArrayTitle.push(
+        dataArrayTitle=
             {
                 client : $('#client_output').text(),
                 agent : $('#agent_output').text(),
@@ -882,8 +890,8 @@ dataArrayTitle=[];
                 gen : 'kd',
                 arr_product_def : product_def
 
-            }
-        ); 
+            };
+        
 
         // generation(dataArrayTitle);
         $.post('title-generation.php', dataArrayTitle , function(data) {                
@@ -924,18 +932,18 @@ $("body").on('click','.finished-gen', function() {
     
 });
 
-function generation(data){
-// propalert(data[0]);//шапка
-// propalert(data[0]);//шапка
-// propalert2(data[0].arr_product_def);
-// alert(data[0].arr_product_def[1].def);
-var myData = data[0];
+// function generation(data){
+// // propalert(data[0]);//шапка
+// // propalert(data[0]);//шапка
+// // propalert2(data[0].arr_product_def);
+// // alert(data[0].arr_product_def[1].def);
+// var myData = data;
 
-$.post('title-generation.php', myData , function(data) {                
+// $.post('title-generation.php', myData , function(data) {                
     
-    $('#uploaded-files').append(data);
-});
+//     $('#uploaded-files').append(data);
+// });
 
 
-}
+// }
 // 

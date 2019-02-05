@@ -10,13 +10,32 @@ date_default_timezone_set('Europe/Moscow');
 
 if (isset($_POST['client'])) {
     // $my_var = $_GET['var1'];
+      $arr_product_def=$_POST['arr_product_def'];
     echo "<pre>";
-	 echo printf($_POST['dataArrayTitle[0]']);	 
+  
+	//  echo var_dump($arr_product_def);	 
+    //  echo print_r($arr_product_def);
+     
+     foreach ($arr_product_def as $key => $value) {
+        // $arr[3] будет перезаписываться значениями $arr при каждой итерации цикла
+        echo "{$key} => {$value['def']} <br>";
+        echo "{$key} => {$value['unit']} <br>";
+        echo "{$key} => {$value['count']} <br>";
+        echo "{$key} => {$value['serialnum']} <br>";
+        echo "{$key} => {$value['wood']} <br>";
+        echo "{$key} => {$value['veneer']} <br>";
+        echo "{$key} => {$value['numsample']} <br>";
+        echo "{$key} => {$value['kbKD']} <br>";
+        echo "{$key} => {$value['kbDP']} <br>";
+        echo " <hr>";
+        // print_r($arr);
+    }
+
     echo "</pre>";
-    }else{ echo "Не найден!";}
+    }else{ echo "<br>Не найден!";}
 
 
-
+   
 
 
 

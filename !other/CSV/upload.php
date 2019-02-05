@@ -251,7 +251,7 @@ function unique_multidim_array($array, $key) {
 		if ($handle) {
 			while (($buffer = fgets($handle, 4096)) !== false) {
 				// echo $buffer . "<hr>";
-				list($client,$address,$number_order,,,$complect,$product,$product2,,,,$def,,,,,$kb,,,,,$floor,$room,$unit,$count,$serialnum,$wood,$veneer,$pic,$numsample,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
+				list($client,$address,$number_order,,,$complect,$product,$product2,,,,$def,,,,,$kbKD,$kbDP,,,,$floor,$room,$unit,$count,$serialnum,$wood,$veneer,$pic,$numsample,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
 				$complect = end(explode('/', $complect));
 				$room = explode('/', $room)[0];
 				
