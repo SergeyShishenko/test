@@ -885,7 +885,14 @@ dataArrayTitle=[];
             }
         ); 
 
-        generation(dataArrayTitle);
+        // generation(dataArrayTitle);
+        $.post('title-generation.php', dataArrayTitle , function(data) {                
+    
+            $('#uploaded-files').append(data);
+        });
+        
+
+
     
         $( this ).toggleClass( "active-gen" );
     });
@@ -920,10 +927,15 @@ $("body").on('click','.finished-gen', function() {
 function generation(data){
 // propalert(data[0]);//шапка
 // propalert(data[0]);//шапка
-propalert2(data[0].arr_product_def);
+// propalert2(data[0].arr_product_def);
 // alert(data[0].arr_product_def[1].def);
-}
-// $.post('title-generation.php', dataArrayTitle , function(data) {                
+var myData = data[0];
+
+$.post('title-generation.php', myData , function(data) {                
     
-//     $('#uploaded-files').append(data);
-// });
+    $('#uploaded-files').append(data);
+});
+
+
+}
+// 
