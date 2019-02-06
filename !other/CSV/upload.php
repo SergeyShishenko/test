@@ -310,16 +310,19 @@ function unique_multidim_array($array, $key) {
 				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
 				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
 				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
-				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
-				<p><button type='button' class='btn btn-primary  btn-block hide-gen' id='load' data-loading-text='<i class=\"fa fa-spinner fa-spin\" ></i> Обработка'> Генерация ДП </button></p>
+				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>				
 				<p>
-					<a class='button-gen btn-block' href='#'>
-					<span class='submit-gen' >Титульники ДП</span>
-					<!--<span class='loading-gen'><i class='fa fa-spinner fa-spin' aria-hidden='true'></i></span>-->
-					<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>
-					<!--<span class='loading-gen'><i class='fa fa-refresh'></i></span>-->
-					<!--<span class='check-gen'><i class='fa fa-check'></i></span>-->
-					<span class='check-gen'><i>Скачать</i></span>
+					<a class='button-gen btn-block' id='TKD' href='#'>
+						<span class='submit-gen' >Титульники КД</span>				
+						<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
+						<span class='check-gen'><i>Скачать</i></span>
+					</a>
+				</p>
+				<p>
+					<a class='button-gen btn-block' id='TDP' href='#'>
+						<span class='submit-gen' >Титульники ДП</span>				
+						<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
+						<span class='check-gen'><i>Скачать</i></span>
 					</a>
 				</p>
 				

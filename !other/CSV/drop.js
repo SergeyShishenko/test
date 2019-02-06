@@ -872,11 +872,12 @@ $("body").on('click','.button-gen:not(".finished-gen")', function() {
     $( this ).toggleClass( "active-gen" );
     
 });
+
 dataArrayTitle={};
 
 // после генерации
-    $("body").on('transitionend','.button-gen', function() {
-        // alert('Загрузка');
+    $("body").on('transitionend','.button-gen', function(eventObject) {
+        //  alert($(eventObject.target).attr('id'));
         dataArrayTitle=
             {
                 client : $('#client_output').text(),
@@ -887,14 +888,12 @@ dataArrayTitle={};
                 complect : $('#complect_output').text(),
                 order : $('#order_output').text(),
                 product : $('#product_output').text(),
-                gen : 'dp',
+                gen : $(eventObject.target).attr('id'),// TKD,TDP
                 arr_product_def : product_def
 
-            };
-        
-
-        // generation(dataArrayTitle);
-        $.post('title-generation.php', dataArrayTitle , function(data) {                
+            };   
+      
+        $.post('title-generation.php', dataArrayTitle , function(data) {              
     
             $('#uploaded-files').append(data);
         });
