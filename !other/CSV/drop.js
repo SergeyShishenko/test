@@ -878,6 +878,16 @@ dataArrayTitle={};
 // после генерации
     $("body").on('transitionend','.button-gen', function(eventObject) {
         //  alert($(eventObject.target).attr('id'));
+        var titul='КД';
+        switch ($(eventObject.target).attr('id')) {                                
+            case "TKD":
+                titul='КД';
+                break;
+            case "TDP":
+                 titul='ДП';
+                break;
+        }
+        
         dataArrayTitle=
             {
                 client : $('#client_output').text(),
@@ -895,7 +905,11 @@ dataArrayTitle={};
       
         $.post('title-generation.php', dataArrayTitle , function(data) {              
     
-            $('#uploaded-files').append(data);
+            // $('#uploaded-files').append(data);
+            $(eventObject.target).attr('href', '../../vpi/'+data);
+            $(eventObject.target).attr('download', $('#order_output').text()+'-Комплект '+titul+'.xlsx');
+            
+
         });
         
 
@@ -912,7 +926,7 @@ dataArrayTitle={};
 
 
 
-$("body").on('click','.finished-gen', function() {
+$("body").on('click','.finished-gen', function(eventObject) {
 
    
 
@@ -925,7 +939,8 @@ $("body").on('click','.finished-gen', function() {
     // alert($('#complect_output').text());
     // alert($('#order_output').text());
     // alert($('#product_output').text());
-    
+    $(eventObject.target).attr('href', '#');
+    $(eventObject.target).removeAttr("download");
     $( this ).removeClass( "finished-gen" );
     // $( this ).toggleClass( "active-gen" );
     

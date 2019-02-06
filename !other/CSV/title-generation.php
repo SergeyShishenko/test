@@ -37,16 +37,17 @@ if (isset($_POST['order'])) {
             
         $objReader = PHPExcel_IOFactory::createReader('Excel2007');
 
-        $builder=$_POST['gen'];// TKD,TDP
-        switch ($builder) {
+        $arr_product_def=$_POST['arr_product_def'];
+        $first = current($arr_product_def);
+        switch ($_POST['gen']) {// TKD,TDP	
             /////"head"    
                 case "TKD":
                      $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] .$site."/dist/files/xls/shablon-kd.xlsx"); 
-                     									
+                     $builder=$first['kbKD'];								
                     break;
                 case "TDP":
                      $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] .$site."/dist/files/xls/shablon-alboma-dp.xlsx");
-                   
+                     $builder=$first['kbDP'];		
                 break;
         }
 
@@ -80,10 +81,10 @@ if (isset($_POST['order'])) {
             //     // echo "{$key} => {$value['numsample']} <br>";
             //     // echo "{$key} => {$value['kbKD']} <br>";
             //     // echo "{$key} => {$value['kbDP']} <br>";
-            //     // foreach ($value as $key2 => $value2) {
-            //     //     echo "{$key2} => {$value2} <br>";
+            //     foreach ($value as $key2 => $value2) {
+            //         echo "{$key2} => {$value2} <br>";
 
-            //     // }
+            //     }
             //     // echo " <hr>";
             //     // print_r($arr);
             // }
@@ -93,20 +94,37 @@ if (isset($_POST['order'])) {
             // первый лист
             $objPHPExcel->setActiveSheetIndex(0); 
             $coord= $objPHPExcel->getActiveSheet()->getCell('client')->getColumn().$objPHPExcel->getActiveSheet()->getCell('client')->getRow();
-            $objPHPExcel->getActiveSheet()->setCellValue($coord, $_POST['client']);//Заказчик            
-            // $objPHPExcel->getActiveSheet()->setCellValue('agent', $_POST['agent']);//Представитель            
-            // $objPHPExcel->getActiveSheet()->setCellValue('address', $_POST['address']);//Объект            
-            // $objPHPExcel->getActiveSheet()->setCellValue('floor', $_POST['floor']);//Этаж            
-            // $objPHPExcel->getActiveSheet()->setCellValue('room', $_POST['room']);//Помещение            
-            // $objPHPExcel->getActiveSheet()->setCellValue('complect', $_POST['complect']);//Комплект изделий 
-            // $objPHPExcel->getActiveSheet()->setCellValue('order', $_POST['order']);//№ заказа
-            // $objPHPExcel->getActiveSheet()->setCellValue('product', $_POST['product']);//Изделия              
-            // $objPHPExcel->getActiveSheet()->setCellValue('builder', $builder);//Конструктор   
+            $objPHPExcel->getActiveSheet()->setCellValue($coord, $_POST['client']);//Заказчик  
+
+            $coord= $objPHPExcel->getActiveSheet()->getCell('agent')->getColumn().$objPHPExcel->getActiveSheet()->getCell('agent')->getRow();
+            $objPHPExcel->getActiveSheet()->setCellValue($coord, $_POST['agent']);//Представитель  
+
+            $coord= $objPHPExcel->getActiveSheet()->getCell('address')->getColumn().$objPHPExcel->getActiveSheet()->getCell('address')->getRow();
+            $objPHPExcel->getActiveSheet()->setCellValue($coord, $_POST['address']);//Объект .   
+
+            $coord= $objPHPExcel->getActiveSheet()->getCell('floor')->getColumn().$objPHPExcel->getActiveSheet()->getCell('floor')->getRow();
+            $objPHPExcel->getActiveSheet()->setCellValue($coord, $_POST['floor']);//Этаж     
+
+            $coord= $objPHPExcel->getActiveSheet()->getCell('room')->getColumn().$objPHPExcel->getActiveSheet()->getCell('room')->getRow();            
+            $objPHPExcel->getActiveSheet()->setCellValue($coord, $_POST['room']);//Помещение    
+
+            $coord= $objPHPExcel->getActiveSheet()->getCell('complect')->getColumn().$objPHPExcel->getActiveSheet()->getCell('complect')->getRow();
+            $objPHPExcel->getActiveSheet()->setCellValue($coord, $_POST['complect']);//Комплект изделий 
+
+            $coord= $objPHPExcel->getActiveSheet()->getCell('order')->getColumn().$objPHPExcel->getActiveSheet()->getCell('order')->getRow();
+            $objPHPExcel->getActiveSheet()->setCellValue($coord, $_POST['order']);//№ заказа
+
+            $coord= $objPHPExcel->getActiveSheet()->getCell('product')->getColumn().$objPHPExcel->getActiveSheet()->getCell('product')->getRow();
+            $objPHPExcel->getActiveSheet()->setCellValue($coord, $_POST['product']);//Изделия  
+
+            $coord= $objPHPExcel->getActiveSheet()->getCell('builder')->getColumn().$objPHPExcel->getActiveSheet()->getCell('builder')->getRow();
+            $objPHPExcel->getActiveSheet()->setCellValue($coord, $builder);//Конструктор   
 
             // второй лист
-            // $objPHPExcel->setActiveSheetIndex(1); 
-            // $objPHPExcel->getActiveSheet()->setCellValue('A3', $_POST['order']);//Заказчик    
+            $objPHPExcel->setActiveSheetIndex(1); 
+            $objPHPExcel->getActiveSheet()->setCellValue('A3', $_POST['order']);//Заказ   
 
+            $objPHPExcel->setActiveSheetIndex(0); // активация первого листа
             $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
 
             $fname=$_POST['order']."-".$_POST['gen']."-".date('m-d-Y-H-i-s').".xlsx";
@@ -119,7 +137,8 @@ if (isset($_POST['order'])) {
                 
             // }
 
-            echo '<a href="../../vpi/'.$fname.'"   type="button" download >'.$fname.'</a>';
+            // echo '<a href="../../vpi/'.$fname.'"   type="button" download >'.$fname.'</a>';
+            echo $fname;
             // echo "<a href=".$_SERVER['DOCUMENT_ROOT']."./www/vpi/".$fname."  type='button' download >$fname</a>";
             // echo "<br>./vpi/".$fname;
 

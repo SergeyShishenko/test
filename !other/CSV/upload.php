@@ -319,7 +319,7 @@ function unique_multidim_array($array, $key) {
 					</a>
 				</p>
 				<p>
-					<a class='button-gen btn-block' id='TDP' href='#'>
+					<a class='button-gen btn-block' id='TDP' href='#' type='button'>
 						<span class='submit-gen' >Титульники ДП</span>				
 						<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
 						<span class='check-gen'><i>Скачать</i></span>
