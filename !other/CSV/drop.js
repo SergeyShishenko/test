@@ -887,7 +887,7 @@ dataArrayTitle={};
                 complect : $('#complect_output').text(),
                 order : $('#order_output').text(),
                 product : $('#product_output').text(),
-                gen : 'kd',
+                gen : 'dp',
                 arr_product_def : product_def
 
             };

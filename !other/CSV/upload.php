@@ -298,12 +298,12 @@ function unique_multidim_array($array, $key) {
 						<input type='checkbox' value='' id='checkvis' >
 						Скрыть/показать все не выбранные
 					</label>
-					
+					<br>
 					";
 
 				echo "</div>";
-				echo "<div  class='col-md-2'>
-			
+				echo "<div  class='col-md-2'>	
+				
 				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
 				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
 				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>

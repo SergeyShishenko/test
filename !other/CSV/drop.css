@@ -178,12 +178,14 @@
             margin: 0 0 1px !important;
         }
         .row-mod{margin-left:0;}
+        .table-head{border-top: 1px solid #dddddd;}
         tr.table-head > th:first-child{width: 5%;}
         tr.table-head > th.product_th{width: 6%;}
         tr.table-head > th.product2_th{width: 6%;}
         tr.table-head > th.floor_th{width: 5%;}
         tr.table-head > th.complect_th{width: 10%;}
         tr.table-head > th.room_th{width: 8%;}
+        
         /* tr.table-head > th:first-child{width: 5%;} */
         /* tr.table-head > th:last-child{width: 5%;} */
      
