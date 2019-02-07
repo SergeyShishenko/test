@@ -505,6 +505,8 @@ function checkAddress(checkbox)
     if (keyproduct2!=''){keyproduct=keyproduct2;}
 
     var keyfloor=tr.find("[id^='floor_']").text();
+    var floorTD=keyfloor;
+    if (floorTD==''){floorTD=$('#floor_output').text();}
     // if (keyfloor ==""){keyfloor=$('floor_output').val();}
     // var floor=keyfloor;
     // if (floor==''){floor=keyproduct2;}
@@ -535,7 +537,7 @@ function checkAddress(checkbox)
         }else{product[keyproduct]=1;
             product_def[keyproduct]={'def':def,
                                     'unit':unit,
-                                    'floor':keyfloor,
+                                    'floor':floorTD,
                                     'product':keyproduct,
                                     'room':roomTD,
                                     'count':count,
@@ -920,10 +922,7 @@ dataArrayTitle={};
             $(eventObject.target).attr('download', $('#order_output').text()+'-Комплект '+titul+'.xlsx');
             
 
-        });
-        
-
-
+        });  
     
         $( this ).toggleClass( "active-gen" );
     });
@@ -938,21 +937,11 @@ dataArrayTitle={};
 
 $("body").on('click','.finished-gen', function(eventObject) {
 
-   
-
-//    alert('Выбрано! '+$('#product_output').text());
-    // alert($('#client_output').text());
-    // alert($('#agent_output').text());
-    // alert($('#address_output').text());
-    // alert($('#floor_output').text());
-    // alert($('#room_output').text());
-    // alert($('#complect_output').text());
-    // alert($('#order_output').text());
-    // alert($('#product_output').text());
-    $(eventObject.target).attr('href', '#');
-    $(eventObject.target).removeAttr("download");
-    $( this ).removeClass( "finished-gen" );
-    // $( this ).toggleClass( "active-gen" );
+ 
+    // $(eventObject.target).attr('href', '#');
+    // $(eventObject.target).removeAttr("download");
+    // $( this ).removeClass( "finished-gen" );
+ 
     
 });
 
