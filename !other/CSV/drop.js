@@ -494,13 +494,16 @@ function checkAddress(checkbox)
     var serialnum=tr.find("[id^='serialnum']").text();
     var wood=tr.find("[id^='wood']").text();
     var veneer=tr.find("[id^='veneer']").text();
+    
     var numsample=tr.find("[id^='numsample']").text();
     var kbKD=tr.find("[id^='kbKD']").text();
     var kbDP=tr.find("[id^='kbDP']").text();
     if (keyproduct2!=''){keyproduct=keyproduct2;}
 
     var keyfloor=tr.find("[id^='floor_']").text();
-    
+    if (keyfloor ==""){keyfloor=$('floor_output').val();}
+    // var floor=keyfloor;
+    // if (floor==''){floor=keyproduct2;}
     
     var keyproductApp=tr.find("[id^='productApp']").text();
     if(!!keyproductApp){ 
@@ -528,6 +531,8 @@ function checkAddress(checkbox)
         }else{product[keyproduct]=1;
             product_def[keyproduct]={'def':def,
                                     'unit':unit,
+                                    'floor':keyfloor,
+                                    'product':keyproduct,
                                     'count':count,
                                     'serialnum':serialnum,
                                     'wood':wood,
