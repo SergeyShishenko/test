@@ -510,7 +510,8 @@ function unique_multidim_array($array, $key) {
 												// $phrase  = $array[$row][$col];
 												$healthy = array("янв", "фев", "мар", "апр", "май", "июн", "июл", "авг", "сен", "окт", "ноя", "дек");
 												$yummy   = array('1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12');
-												$array[$row][$col] = str_replace(".",",",str_replace($healthy, $yummy, $array[$row][$col]));
+												// $array[$row][$col] = str_replace(".",",",str_replace($healthy, $yummy, $array[$row][$col]));
+												$array[$row][$col] = (string)str_replace($healthy, $yummy, $array[$row][$col]);
 												$id = 'count_'.$row.$col;
 												$thclass = 'count_th';
 												$vis = 'hide-info';

@@ -115,7 +115,7 @@ if (isset($_POST['order'])) {
             $objPHPExcel->getActiveSheet()->setCellValue($coord, $_POST['order']);//№ заказа
 
             $coord= $objPHPExcel->getActiveSheet()->getCell('product')->getColumn().$objPHPExcel->getActiveSheet()->getCell('product')->getRow();
-            $objPHPExcel->getActiveSheet()->setCellValue($coord, $_POST['product']);//Изделия  
+            $objPHPExcel->getActiveSheet()->setCellValue($coord, (string)$_POST['product']);//Изделия  
 
             $coord= $objPHPExcel->getActiveSheet()->getCell('builder')->getColumn().$objPHPExcel->getActiveSheet()->getCell('builder')->getRow();
             $objPHPExcel->getActiveSheet()->setCellValue($coord, $builder);//Конструктор   
@@ -151,13 +151,16 @@ if (isset($_POST['order'])) {
                 // $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
     
                 // $objPHPExcel->getActiveSheet()->setCellValue('D'.$row, $r+1)
+                $formula = $dataRow['count'];
+                // $formula = '=СУММ(A3,A4)';
                 $objPHPExcel->getActiveSheet()->setCellValue('A'.$row, $_POST['order'])//№ заказа
                                               ->setCellValue('B'.$row, $dataRow['product'])//№ изделия
                                               ->setCellValue('D'.$row, $dataRow['def'])// наименование
                                               ->setCellValue('E'.$row, $dataRow['floor'])//этаж
                                               ->setCellValue('F'.$row, $dataRow['room'])//помещение
                                               ->setCellValue('G'.$row, $dataRow['unit'])//единицы
-                                              ->setCellValue('H'.$row, $dataRow['count'])//количество
+                                            //   ->setCellValue('H'.$row,"="."ТЕКСТ(".$dataRow['count'].";\"0,00\")")//количество
+                                              ->setCellValue('H'.$row, $formula)//количество
                                               ->setCellValue('I'.$row, $dataRow['serialnum'])//серийный
                                               ->setCellValue('K'.$row, $dataRow['wood'])//массив
                                               ->setCellValue('L'.$row, $dataRow['veneer'])//шпон

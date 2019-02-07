@@ -476,6 +476,15 @@ Objx.prototype = excelObject;
 
 function checkAddress(checkbox)
 {
+    $('.finished-gen').each(function( index ) {
+        // console.log( index + ": " + $( this ).text() );
+        $(this).attr('href', '#');
+        $(this).removeAttr("download");
+        $( this ).removeClass( "finished-gen" );
+ 
+    });
+
+
     // alert($(checkbox).attr('id'));
     var tr=$(checkbox).parent().parent().parent();
     var tblid = tr.parent().parent().attr('id');
