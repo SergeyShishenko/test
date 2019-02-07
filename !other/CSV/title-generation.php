@@ -65,7 +65,7 @@ if (isset($_POST['order'])) {
             // echo "Комплект изделий: ".$_POST['complect']."<br>";
             // echo "№ заказа:         ".$_POST['order']."<br>";
             // echo "Изделия:          ".$_POST['product']."<hr>";
-            // builder КОНСТРУКТОР
+            
         
             //  echo var_dump($arr_product_def);	 
             //  echo print_r($arr_product_def);
@@ -163,12 +163,12 @@ if (isset($_POST['order'])) {
                                               ->setCellValue('L'.$row, $dataRow['veneer'])//шпон
                                               ->setCellValue('M'.$row, $dataRow['numsample']);//№ цвета
                                           
-                // $objPHPExcel->getActiveSheet()->getRowDimension($row)->setRowHeight(170);
+                // $objPHPExcel->getActiveSheet()->getRowDimension($row)->setRowHeight(100);
                 $i++;
          
             }
             $objPHPExcel->getActiveSheet()->removeRow($baseRow-1,1);//удаление строки
-
+            foreach($objPHPExcel->getActiveSheet()->getRowDimensions() as $rd) { $rd->setRowHeight(-1); } // изменить высоту всех строк в auto
 
             //----------------------------------
 

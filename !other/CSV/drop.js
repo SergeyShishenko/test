@@ -484,6 +484,10 @@ function checkAddress(checkbox)
     // alert($(checkbox).attr('name'));
     // alert(objxlsx[tblid].kd);
     var keyroom=tr.find("[id^='room_']").text();
+    var roomTD=keyroom;
+    if (roomTD==''){roomTD=$('#room_output').text();}
+
+    
     // alert(keyroom);
     var keycomplect=tr.find("[id^='complect_']").text();
     var keyproduct=tr.find("[id^='product_']").text();
@@ -501,7 +505,7 @@ function checkAddress(checkbox)
     if (keyproduct2!=''){keyproduct=keyproduct2;}
 
     var keyfloor=tr.find("[id^='floor_']").text();
-    if (keyfloor ==""){keyfloor=$('floor_output').val();}
+    // if (keyfloor ==""){keyfloor=$('floor_output').val();}
     // var floor=keyfloor;
     // if (floor==''){floor=keyproduct2;}
     
@@ -533,6 +537,7 @@ function checkAddress(checkbox)
                                     'unit':unit,
                                     'floor':keyfloor,
                                     'product':keyproduct,
+                                    'room':roomTD,
                                     'count':count,
                                     'serialnum':serialnum,
                                     'wood':wood,
