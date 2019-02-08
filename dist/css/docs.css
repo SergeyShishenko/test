@@ -738,7 +738,9 @@ a.navbar-brand{text-align: center;}
     margin: 0 auto 40px !important;
     border-radius: 4px;
   }
- 
+  body{
+    font-size: 9px !important;
+  }
 }
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand {
@@ -1449,15 +1451,14 @@ div.btn-side.right-menu{left:-50px  !important;}
       }
      
 }
-  /* .bs-sidebar.affix {
-    position: relative;
-} */
+
+
 @media (min-width: 200px)and (max-width: 992px){
-  body {
+  /* body {
 
     font-size: 14px !important;
   
-  }
+  } */
   .list-group-item {
       
     padding: 10px 10px !important;

@@ -109,18 +109,18 @@
                                     background=this.result;
                                     break;
                                 case "pdf":
-                                    background='typePDF.png';
+                                    background='./dist/css/typePDF.png';
                                     break;
                                 case "word":
-                                    background='typeDOC.png';
+                                    background='./dist/css/typeDOC.png';
                                     break;
                                 case "excel":
-                                     if (EXP=="csv"){background='CSV.png';break;}
-                                    background='typeXLS.png';
+                                     if (EXP=="csv"){background='./dist/css/CSV.png';break;}
+                                    background='./dist/css/typeXLS.png';
                                     break;
 
                                 case "dwg":
-                                    background='typeDWG.png';
+                                    background='./dist/css/typeDWG.png';
                                     break;
                             }
                             // alert(tmime);

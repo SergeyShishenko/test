@@ -270,7 +270,7 @@ function unique_multidim_array($array, $key) {
 			$exclude=array("0","1","2");// исключаемые индексы
 
 			echo "<div class='sticky row row-mod'>";
-				echo "<div class='col-md-10'>";
+				echo "<div class='col-md-10 col-xs-10 col-lg-10 col-sm-10'>";
 
 					echo "<p id='client' class='changeclick'><b>Заказчик: </b>           <span id=\"client_output\"  class=\"val\">".$data[1][0]."</span> <input type='text' class='form-control' size='40' id='client-name' value=''></p>";
 
@@ -302,7 +302,7 @@ function unique_multidim_array($array, $key) {
 					";
 
 				echo "</div>";
-				echo "<div  class='col-md-2'>	
+				echo "<div  class='col-md-2 col-xs-2 col-lg-2 col-sm-2'>	
 				
 				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
 				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
