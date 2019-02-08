@@ -21,7 +21,7 @@ header ("Content-Type: text/html; charset=utf-8");
 <body>
 <!-- <a href="#openModal">Открыть модальное окно</a> -->
 <br>
-<a href="#" data-toggle="modal" data-target="#myModal" >Открыть модальное окно</a>
+<a href="#" data-toggle="modal" data-target="#GENModal" >Открыть модальное окно</a>
 
  <!-- modal2 -->
  <div id="openModal" class="modalDialog">
@@ -36,12 +36,12 @@ header ("Content-Type: text/html; charset=utf-8");
 <!-- /modal2 -->
 
  <!-- .modal -->
- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal fade" id="GENModal" tabindex="-1" role="dialog" aria-labelledby="GENModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h4 class="modal-title" id="myModalLabel">Генерация титульных листов</h4>
+                    <h4 class="modal-title" id="GENModalLabel">Генерация титульных листов</h4>
                 </div>
                 <div class="modal-body">
                 <!-- <a  href="#DelSubmit"><i class="fa-cart-plus" aria-hidden="true"></i>Вниз</a> -->

@@ -31,7 +31,6 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <!-- <p>&nbsp;</p> -->
                         <h2 id="shablon-alboma-obrazcov_1">&nbsp;</h2>
                         <!-- <a href="./dist/files/xls/117-metodicheskoe-posobie-po-izdeliyam.xls" type="button" class="btn btn-primary"  download="117-metodicheskoe-posobie-po-izdeliyam.xls">Скачать - 117. Методическое пособие по изделиям.xls</a> -->
-
                         <div class="bs-callout bs-callout-warning cont" ><h4>Лист титульный</h4>
                         <div class="overlay"></div>
                                                        

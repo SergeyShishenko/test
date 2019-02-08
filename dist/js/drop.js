@@ -262,7 +262,7 @@
 
                 // загружаем страницу и передаем значения, используя HTTP POST запрос 
                 //  dataplas= $.merge( {tbl : "obj", field : "name_obj"}, dataArray[index]);
-                $.post('upload.php', dataArray[index] , function(data) {
+                $.post('./vpi/upload.php', dataArray[index] , function(data) {
                 
                 
                     ++x;
@@ -377,7 +377,7 @@
                     var myData =    "recordToDelete="+currfile;
                     jQuery.ajax({
                         type: "POST", // HTTP метод  POST или GET
-                        url: "upload.php", //url-адрес, по которому будет отправлен запрос
+                        url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
                         dataType:"text", // Тип данных
                         data:myData, //post переменные
                         success:function(response){
@@ -430,7 +430,7 @@
                 
                 jQuery.ajax({
                     type: "POST", // HTTP метод  POST или GET
-                    url: "upload.php", //url-адрес, по которому будет отправлен запрос
+                    url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
                     dataType:"text", // Тип данных
                     data:data, //post переменные
                     success:function(response){
@@ -924,10 +924,10 @@ dataArrayTitle={};
 
             };   
       
-        $.post('title-generation.php', dataArrayTitle , function(data) {              
+        $.post('./vpi/title-generation.php', dataArrayTitle , function(data) {              
     
             // $('#uploaded-files').append(data);
-            $(eventObject.target).attr('href', '../../vpi/'+data);
+            $(eventObject.target).attr('href', './vpi/'+data);
             $(eventObject.target).attr('download', $('#order_output').text()+'-Комплект '+titul+'.xlsx');
             
 
@@ -953,19 +953,3 @@ $("body").on('click','.finished-gen', function(eventObject) {
  
     
 });
-
-// function generation(data){
-// // propalert(data[0]);//шапка
-// // propalert(data[0]);//шапка
-// // propalert2(data[0].arr_product_def);
-// // alert(data[0].arr_product_def[1].def);
-// var myData = data;
-
-// $.post('title-generation.php', myData , function(data) {                
-    
-//     $('#uploaded-files').append(data);
-// });
-
-
-// }
-// 

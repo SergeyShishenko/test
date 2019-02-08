@@ -1,0 +1,193 @@
+/* @font-face {
+    font-family: 'ISOCPEURItalic';
+    src: url('ISOCPEURItalic.eot?#iefix') format('embedded-opentype'),  url('ISOCPEURItalic.woff') format('woff'), url('ISOCPEURItalic.ttf')  format('truetype'), url('ISOCPEURItalic.svg#ISOCPEURItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  } */
+  .modal-dialog { font-family: 'ISOCPEURItalic' !important; }
+    .modalDialog {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 99999;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            display: none;
+            pointer-events: none;
+        }
+        .modalDialog:target {
+            display: block;
+            pointer-events: auto;
+        }
+        .modalDialog > div {
+            width: 400px;
+            position: relative;
+            margin: 10% auto;
+            padding: 5px 20px 13px 20px;
+            border-radius: 10px;
+            background: #fff;
+            background: -moz-linear-gradient(#fff, #999);
+            background: -webkit-linear-gradient(#fff, #999);
+            background: -o-linear-gradient(#fff, #999);
+        }
+        /* .close {
+            background: #606061;
+            color: #FFFFFF;
+            line-height: 25px;
+            position: absolute;
+            right: -12px;
+            text-align: center;
+            top: -10px;
+            width: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            border-radius: 12px;
+            -moz-box-shadow: 1px 1px 3px #000;
+            -webkit-box-shadow: 1px 1px 3px #000;
+            box-shadow: 1px 1px 3px #000;
+        }
+        .close:hover { background: #00d9ff; } */
+
+
+        .modal-dialog {
+            width: 90% !important;
+            margin: 30px auto;
+        }
+
+
+         /* Ajax on menu */
+         #loading1 {
+            margin-top: 20px;
+            width: 128px;
+            font-weight: bold;
+            display: none;
+        }
+        #DelSubmit,#CreateSubmit{display: none;}
+        div.center, p.center, img.center {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            float: none !important;
+            display: block;
+            text-align: center;
+        }
+        #loading1 div.center {
+            margin-top: 10px;
+            height: 15px;
+            width: 128px;
+            /* background: url(../img/ajax-loaders/ajax-loader-6.gif); */
+            background: url(ajax-loader-6.gif);
+        }
+        .material-switch > input[type="checkbox"] {
+            display: none;   
+        }
+        
+        .material-switch > label {
+            cursor: pointer;
+            height: 0px;
+            position: relative; 
+            width: 40px;  
+        }
+        
+        .material-switch > label::before {
+            background: rgb(0, 0, 0);
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            content: '';
+            height: 16px;
+            margin-top: -8px;
+            position:absolute;
+            opacity: 0.3;
+            transition: all 0.4s ease-in-out;
+            width: 40px;
+        }
+        .material-switch > label::after {
+            background: rgb(255, 255, 255);
+            border-radius: 16px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            content: '';
+            height: 24px;
+            left: -4px;
+            margin-top: -8px;
+            position: absolute;
+            top: -4px;
+            transition: all 0.3s ease-in-out;
+            width: 24px;
+        }
+        .material-switch > input[type="checkbox"]:checked + label::before {
+            background: inherit;
+            opacity: 0.5;
+        }
+        .material-switch > input[type="checkbox"]:checked + label::after {
+            background: inherit;
+            left: 20px;
+        }
+
+        .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+            
+            vertical-align: middle !important;
+            
+        }
+
+        .row {
+            margin-left: 15px; 
+             margin-right: 15px;
+        }
+        .form-control {
+            width: auto;
+            display: table-cell;
+            
+        }
+        input[id$='-name']{           
+            visibility: hidden;          
+        }
+        .changeclick{
+            cursor: pointer;
+        }
+        .sticky {
+            position: sticky;
+            top: -245px;
+            min-height: 2em;
+            background: rgb(240, 240, 240);
+            padding: 15px 15px 0 15px;
+            z-index: 100;
+            border: 1px solid rgb(39, 39, 39);
+            margin-right: 0.5px;
+            box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+            
+          }
+        .sticky-table {
+            position: sticky;
+            top: 110px;
+            min-height: 2em;
+            background: rgb(240, 240, 240);
+            padding: 15px 15px 0 15px;
+            z-index: 110;
+            border: 1px solid rgb(39, 39, 39);
+            margin-right: 0.5px;
+            box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+            
+          }
+          p {
+            margin: 0 0 2px !important;
+        }
+        .row-mod{margin-left:0;}
+        .table-head{border-top: 1px solid #dddddd;}
+        tr.table-head > th:first-child{width: 5%;}
+        tr.table-head > th.product_th{width: 6%;}
+        tr.table-head > th.product2_th{width: 6%;}
+        tr.table-head > th.floor_th{width: 5%;}
+        tr.table-head > th.complect_th{width: 10%;}
+        tr.table-head > th.room_th{width: 8%;}
+        
+        /* tr.table-head > th:first-child{width: 5%;} */
+        /* tr.table-head > th:last-child{width: 5%;} */
+     
+
+        /* .zakaz{white-space:  nowrap;} */
