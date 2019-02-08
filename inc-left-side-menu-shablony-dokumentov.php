@@ -22,7 +22,7 @@ include 'inc-goup-menu-shablony-dokumentov.php';//$styazhka=[]
                     <ul class="list-group">
                         <!-- menu -->
                         <li class="menu">                                
-                            <a href="shablony-dokumentov-albom-obrazcov.php" class="list-group-item  '.$item_albom_obrazcov_Class.'">Альбом образцов &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
+                            <a href="shablony-dokumentov-albom-obrazcov.php" class="list-group-item  '.$item_albom_obrazcov_Class.'">Образцы &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
                              <ul class="list-group sub_menu">
                              ';
                                 LeftSideMenu($albomobrazcov);// ШАБЛОН АЛЬБОМА ОБРАЗЦОВ
