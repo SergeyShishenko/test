@@ -164,7 +164,7 @@
           }
         .sticky-table {
             position: sticky;
-            top: 110px;
+            top: 100px;
             min-height: 2em;
             background: rgb(240, 240, 240);
             padding: 15px 15px 0 15px;
@@ -185,6 +185,11 @@
         tr.table-head > th.floor_th{width: 5%;}
         tr.table-head > th.complect_th{width: 10%;}
         tr.table-head > th.room_th{width: 8%;}
+
+        .btn-gen{
+            /* border:1px solid #000; */
+            position: sticky;
+        }
         
         /* tr.table-head > th:first-child{width: 5%;} */
         /* tr.table-head > th:last-child{width: 5%;} */

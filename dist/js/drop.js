@@ -37,8 +37,9 @@
                 alert('Вы не можете загружать больше '+maxFiles+' файлов!'); 
                 files.length = 0; return;
             }
-        //    $(function() {$("#dropped-files div[id^='img']").sortable();}); 
-        $("#dropped-files").sortable({ cancel: '.note' });
+       
+        // $("#dropped-files").sortable({ cancel: '.note' });
+        // $('#upload-button .upload').trigger('click');
         });
 
         
@@ -48,7 +49,7 @@
         // Функция загрузки изображений на предросмотр
         function loadInView(files) {
             // Показываем обасть предпросмотра
-            $('#uploaded-holder').css({"display":"table-cell"});
+            // $('#uploaded-holder').css({"display":"table-cell"});
             
             // Для каждого файла
             
@@ -134,7 +135,15 @@
                     })(files[index]);
                 // Производим чтение картинки по URI
                 fileReader.readAsDataURL(file);
+                
+                
             });
+            // $("#loading").show();
+            // переменные для работы прогресс бара
+          
+            
+           
+            // $('#upload-button .upload').trigger('click');
             return false;
         }
             
@@ -165,6 +174,9 @@
                     $('#dropped-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].bground+'); background-size: cover;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить файл</a></div>'); 
                 }
             }
+            console.log('Загружен '+dataArray[0].name);
+            // fupload(dataArray);
+            $('#upload-button .upload').trigger('click');
             return false;
         }
         
@@ -246,6 +258,7 @@
         
         var currentinput='';
         var currentspan='';
+
         $("body").on("click","#upload-button .upload",function() {
             // alert("!!");
             
@@ -253,11 +266,70 @@
             $("#loading").show();
             // переменные для работы прогресс бара
             var totalPercent = 100 / dataArray.length;
-            var x = 0;
+            // var x = 0;
             
             $('#loading-content').html('Загружен '+dataArray[0].name);
             // var dataplas=[];
             // Для каждого файла
+            fupload(dataArray);
+
+            // $.each(dataArray, function(index, file) {	
+
+            //     // загружаем страницу и передаем значения, используя HTTP POST запрос 
+            //     //  dataplas= $.merge( {tbl : "obj", field : "name_obj"}, dataArray[index]);
+            //     $.post('./vpi/upload.php', dataArray[index] , function(data) {
+                
+                
+            //         ++x;
+                 
+            //         restartFiles();
+            //         $('#drop-files').hide();
+            //         $('#uploaded-files').append(data);
+            //         var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
+            //         DbNumberID = clickedID[0]; //и получаем номер из массива
+                    
+            //         objxlsx.push(DbNumberID);
+            //         // objxlsx[DbNumberID]=(new Objx(DbNumberID));
+            //         objxlsx[DbNumberID]=[];
+            //         $('#DelSubmit').show();
+            //         $('#CreateSubmit').show();
+            //          floor={}; //Этаж
+            //          room={}; //Помещение
+            //          complect={}; //Комплект изделий
+            //          product={}; //Изделия
+            //          arr_s=[];
+            //          arr_table=[];
+            //          arr_prev=[];
+                     
+                 
+            //         $("body #uploaded-files table.zakaz  tr:gt(0)").each(function (index, value) { 
+            // // console.log('tr '+ index );
+            // var c = $(this).find('td[id^="product"]').text();
+            // var c2 = $(this).find('td[id^="product2"]').text();
+            // if (c2==""){
+            //     // console.log('tr' + index + ':' + c); 
+            //     arr_table[index]=c;
+            // }
+            // else{
+            //     // console.log('tr' + index + ':' + c2);
+            //     arr_table[index]=c2;
+            // }
+            
+            // });
+            //     });
+            // });
+
+
+            // Показываем список загруженных файлов
+            $('#uploaded-files').show();
+
+            
+            return false;
+        });
+
+        function fupload(dataArray){
+            // var x = 0;
+
             $.each(dataArray, function(index, file) {	
 
                 // загружаем страницу и передаем значения, используя HTTP POST запрос 
@@ -265,7 +337,7 @@
                 $.post('./vpi/upload.php', dataArray[index] , function(data) {
                 
                 
-                    ++x;
+                    // ++x;
                  
                     restartFiles();
                     $('#drop-files').hide();
@@ -288,27 +360,23 @@
                      
                  
                     $("body #uploaded-files table.zakaz  tr:gt(0)").each(function (index, value) { 
-            // console.log('tr '+ index );
-            var c = $(this).find('td[id^="product"]').text();
-            var c2 = $(this).find('td[id^="product2"]').text();
-            if (c2==""){
-                // console.log('tr' + index + ':' + c); 
-                arr_table[index]=c;
-            }
-            else{
-                // console.log('tr' + index + ':' + c2);
-                arr_table[index]=c2;
-            }
-            
-            });
-                });
-            });
-            // Показываем список загруженных файлов
-            $('#uploaded-files').show();
+                    // console.log('tr '+ index );
+                    var c = $(this).find('td[id^="product"]').text();
+                    var c2 = $(this).find('td[id^="product2"]').text();
+                    if (c2==""){
+                        // console.log('tr' + index + ':' + c); 
+                        arr_table[index]=c;
+                    }
+                    else{
+                        // console.log('tr' + index + ':' + c2);
+                        arr_table[index]=c2;
+                    }
+                    
+                    });
+                        });
+                    });
 
-            
-            return false;
-        });
+        }
         
         // Простые стили для области перетаскивания
        

@@ -270,7 +270,7 @@ function unique_multidim_array($array, $key) {
 			$exclude=array("0","1","2");// исключаемые индексы
 
 			echo "<div class='sticky row row-mod'>";
-				echo "<div class='col-md-10 col-xs-10 col-lg-10 col-sm-10'>";
+				echo "<div >";
 
 					echo "<p id='client' class='changeclick'><b>Заказчик: </b>           <span id=\"client_output\"  class=\"val\">".$data[1][0]."</span> <input type='text' class='form-control' size='40' id='client-name' value=''></p>";
 
@@ -294,38 +294,34 @@ function unique_multidim_array($array, $key) {
 					echo "<p id='order' class=''><b>№ заказа: </b>            <span id=\"order_output\"  class=\"val\">".$data[1][2]."</span> <input type='text' class='form-control' size='40' id='order-name' value=''></p>";
 
 					echo "<p class='changeclick' title='Alt+X'><b>Изделия: </b><span id=\"product_output\"  class=\"val\"></span> <input type='text' class='form-control' size='40' id='product-name' value=''></p>
-					<label class='checkbox'>
-						<input type='checkbox' value='' id='checkvis' >
-						Скрыть/показать все не выбранные
-					</label>
-					<br>
+					
+					
 					";
 
 				echo "</div>";
-				echo "<div  class='col-md-2 col-xs-2 col-lg-2 col-sm-2'>	
+				echo "<div >	
 				
-				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
-				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
-				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
-				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
-				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
-				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
-				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>				
-				<p>
-					<a class='button-gen btn-block' id='TKD' href='#'>
+				<div class='btn-gen'>	
+
+				<label class='checkbox'>
+						<input type='checkbox' value='' id='checkvis' >
+						Скрыть/показать все не выбранные
+					</label>
+
+			
+					<a class='button-gen ' id='TKD' href='#'>
 						<span class='submit-gen' >Титульники КД</span>				
 						<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
 						<span class='check-gen'><i>Скачать</i></span>
 					</a>
-				</p>
-				<p>
-					<a class='button-gen btn-block' id='TDP' href='#' type='button'>
+				
+					<a class='button-gen ' id='TDP' href='#' type='button'>
 						<span class='submit-gen' >Титульники ДП</span>				
 						<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
 						<span class='check-gen'><i>Скачать</i></span>
 					</a>
-				</p>
 				
+				</div>
 				";
 				echo "</div>";
 			echo "</div>";

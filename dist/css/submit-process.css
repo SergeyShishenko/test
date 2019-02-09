@@ -40,8 +40,8 @@ a.button-gen {
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  /* width: 12.5rem; */
-  width: 100%;
+  width: 12.5rem;
+  /* width: 100%; */
   margin: 0;
   /* padding: 1.5rem 3.125rem; */
   padding: 15px 5px;
@@ -53,6 +53,8 @@ a.button-gen {
   font-weight: 300;
   /* text-transform: uppercase; */
   overflow: hidden;
+  float: right;
+  margin-left: 5px;
 }
 a.button-gen:before {
   position: absolute;
@@ -125,6 +127,7 @@ a.finished-gen .check-gen {
 a.finished-gen .check-gen i {
   transform-origin: center center;
 }
+label.checkbox {float:left;}
 
 @keyframes loading {
   100% {

@@ -19,8 +19,13 @@
    <script src="./dist/js/closest.js"></script>
     <script src="./dist/js/blazy.min.js"></script>
     <script src="./dist/js/bootstrap-number-input.js" ></script>
-    <script src="./dist/js/vpi.js?v='<?php $vpijsVersion  ?>'" ></script>
-	<script>
+    <script src="./dist/js/vpi.js?v='<?php echo $vpijsVersion ; ?>'" ></script>
+	
+         <!-- Генерация -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+    <script src="./dist/js/shortcut.js"></script>
+    <script src="./dist/js/drop.js"></script>  
+    <script>
     window.bLazy = new Blazy({
         //container: \'.container\',
         //validateDelay: 500,
