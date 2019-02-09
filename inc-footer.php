@@ -38,9 +38,10 @@
                                 <div id="loading1" class="center">Загрузка...<div class="center"></div></div> 
                                 <div class="row">               
                             <div id="drop-files" ondragover="return false">
-                            <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo; или &laquo;Приложение КБ.xlsx&raquo; сюда</p>
+                            <!-- <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo; или &laquo;Приложение КБ.xlsx&raquo; сюда</p> -->
+                            <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo;  сюда</p>
                         <form >
-                            <input type="file" id="uploadbtn" multiple style="display: none;" >
+                            <input type="file" id="uploadbtn" multiple  >
                         </form>
                     </div>
                     <!-- Область предпросмотра -->

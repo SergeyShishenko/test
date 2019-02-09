@@ -1,5 +1,6 @@
-//////// drop       
-
+//////// drop 
+      
+// http://xozblog.ru/2012/10/html5-uploader/
       
         var $ = jQuery.noConflict();
 
@@ -15,7 +16,9 @@
         
         // Оповещение по умолчанию
         // var errMessage = 0;
+
         
+
         // Кнопка выбора файлов
         var defaultUploadBtn = $('#uploadbtn');
         
@@ -41,7 +44,25 @@
         // $("#dropped-files").sortable({ cancel: '.note' });
         // $('#upload-button .upload').trigger('click');
         });
+       // При нажатии на кнопку выбора файлов
+   defaultUploadBtn.on('change', function() {
+    // Заполняем массив выбранными изображениями
+    var files = $(this)[0].files;
+    // Проверяем на максимальное количество файлов
+ if (files.length <= maxFiles) {
+    // Передаем массив с файлами в функцию загрузки на предпросмотр
+    loadInView(files);
+         // Очищаем инпут файл путем сброса формы
+         // Или вот так $("#uploadbtn").replaceWith( $("#uploadbtn").val('').clone( true ) );
+         $('#frm').each(function(){
+           this.reset();
+         });
 
+ } else {
+    alert('Вы не можете загружать больше '+maxFiles+' изображений!'); 
+    files.length = 0;
+ }
+});
         
         var ext="";
         // var background="";	
