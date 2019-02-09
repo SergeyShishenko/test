@@ -1,5 +1,5 @@
 //////// drop 
-      
+
 // http://xozblog.ru/2012/10/html5-uploader/
       
         var $ = jQuery.noConflict();
@@ -590,6 +590,8 @@ function checkAddress(checkbox)
     var keycomplect=tr.find("[id^='complect_']").text();
     var keyproduct=tr.find("[id^='product_']").text();
     var keyproduct2=tr.find("[id^='product2_']").text();
+    var productTD=keyproduct;
+    var product2TD=keyproduct2;
     var def=tr.find("[id^='def']").text();
     var unit=tr.find("[id^='unit']").text();
     var count=tr.find("[id^='count']").text();
@@ -636,7 +638,9 @@ function checkAddress(checkbox)
             product_def[keyproduct]={'def':def,
                                     'unit':unit,
                                     'floor':floorTD,
-                                    'product':keyproduct,
+                                    // 'product':keyproduct,
+                                    'product':productTD,
+                                    'product2':product2TD,
                                     'room':roomTD,
                                     'count':count,
                                     'serialnum':serialnum,

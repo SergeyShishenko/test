@@ -121,66 +121,50 @@ if (isset($_POST['order'])) {
             $objPHPExcel->getActiveSheet()->setCellValue($coord, $builder);//Конструктор   
 
 
+           if ( $_POST['gen']=='TKD') {
+                // второй лист
+                $objPHPExcel->setActiveSheetIndex(1); 
 
-            // второй лист
-            $objPHPExcel->setActiveSheetIndex(1); 
-
-
-            // foreach ($arr_product_def as $key => $value) {      
-            //     echo "Изделие {$key} <br>";
-            //     // echo "{$key} => {$value['def']} <br>";
-            //     // echo "{$key} => {$value['unit']} <br>";
-            //     // echo "{$key} => {$value['count']} <br>";
-            //     // echo "{$key} => {$value['serialnum']} <br>";
-            //     // echo "{$key} => {$value['wood']} <br>";
-            //     // echo "{$key} => {$value['veneer']} <br>";
-            //     // echo "{$key} => {$value['numsample']} <br>";
-            //     // echo "{$key} => {$value['kbKD']} <br>";
-            //     // echo "{$key} => {$value['kbDP']} <br>";
+                $baseRow = 4;
+                $i=0;
+                foreach($arr_product_def as $r => $dataRow) {
+                    $row = $baseRow + $i;
+                    $objPHPExcel->getActiveSheet()->insertNewRowBefore($row,1);             
         
-            //----------------------------------
+                    // $sheet->getColumnDimension('K')->setWidth(40); 
+                    // $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для сайта !!!!!!!
+                    // $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
+        
+                    // $objPHPExcel->getActiveSheet()->setCellValue('D'.$row, $r+1)
+                    $formula = $dataRow['count'];
+                    // $formula = '=СУММ(A3,A4)';
+                    $objPHPExcel->getActiveSheet()->setCellValue('A'.$row, $_POST['order'])//№ заказа
+                                                ->setCellValue('B'.$row, $dataRow['product'])//№ изделия
+                                                ->setCellValue('C'.$row, $dataRow['product2'])//№2 изделия
+                                                ->setCellValue('D'.$row, $dataRow['def'])// наименование
+                                                ->setCellValue('E'.$row, $dataRow['floor'])//этаж
+                                                ->setCellValue('F'.$row, $dataRow['room'])//помещение
+                                                ->setCellValue('G'.$row, $dataRow['unit'])//единицы
+                                                //   ->setCellValue('H'.$row,"="."ТЕКСТ(".$dataRow['count'].";\"0,00\")")//количество
+                                                ->setCellValue('H'.$row, $formula)//количество
+                                                ->setCellValue('I'.$row, $dataRow['serialnum'])//серийный
+                                                ->setCellValue('K'.$row, $dataRow['wood'])//массив
+                                                ->setCellValue('L'.$row, $dataRow['veneer'])//шпон
+                                                ->setCellValue('M'.$row, $dataRow['numsample']);//№ цвета
+                                            
+                    // $objPHPExcel->getActiveSheet()->getRowDimension($row)->setRowHeight(100);
+                    $i++;
+            
+                }
+                $objPHPExcel->getActiveSheet()->removeRow($baseRow-1,1);//удаление строки
+                foreach($objPHPExcel->getActiveSheet()->getRowDimensions() as $rd) { $rd->setRowHeight(-1); } // изменить высоту всех строк в auto
 
-            $baseRow = 4;
-            $i=0;
-            foreach($arr_product_def as $r => $dataRow) {
-                $row = $baseRow + $i;
-                $objPHPExcel->getActiveSheet()->insertNewRowBefore($row,1);             
-    
-                // $sheet->getColumnDimension('K')->setWidth(40); 
-                // $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для сайта !!!!!!!
-                // $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
-    
-                // $objPHPExcel->getActiveSheet()->setCellValue('D'.$row, $r+1)
-                $formula = $dataRow['count'];
-                // $formula = '=СУММ(A3,A4)';
-                $objPHPExcel->getActiveSheet()->setCellValue('A'.$row, $_POST['order'])//№ заказа
-                                              ->setCellValue('B'.$row, $dataRow['product'])//№ изделия
-                                              ->setCellValue('D'.$row, $dataRow['def'])// наименование
-                                              ->setCellValue('E'.$row, $dataRow['floor'])//этаж
-                                              ->setCellValue('F'.$row, $dataRow['room'])//помещение
-                                              ->setCellValue('G'.$row, $dataRow['unit'])//единицы
-                                            //   ->setCellValue('H'.$row,"="."ТЕКСТ(".$dataRow['count'].";\"0,00\")")//количество
-                                              ->setCellValue('H'.$row, $formula)//количество
-                                              ->setCellValue('I'.$row, $dataRow['serialnum'])//серийный
-                                              ->setCellValue('K'.$row, $dataRow['wood'])//массив
-                                              ->setCellValue('L'.$row, $dataRow['veneer'])//шпон
-                                              ->setCellValue('M'.$row, $dataRow['numsample']);//№ цвета
-                                          
-                // $objPHPExcel->getActiveSheet()->getRowDimension($row)->setRowHeight(100);
-                $i++;
-         
-            }
-            $objPHPExcel->getActiveSheet()->removeRow($baseRow-1,1);//удаление строки
-            foreach($objPHPExcel->getActiveSheet()->getRowDimensions() as $rd) { $rd->setRowHeight(-1); } // изменить высоту всех строк в auto
+                //----------------------------------
 
-            //----------------------------------
+                $objPHPExcel->setActiveSheetIndex(0); // активация первого листа
 
+            }//if 
 
-
-
-
-
-            $objPHPExcel->setActiveSheetIndex(0); // активация первого листа
             $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
 
             $fname=$_POST['order']."-".$_POST['gen']."-".date('m-d-Y-H-i-s').".xlsx";

@@ -312,13 +312,13 @@ function unique_multidim_array($array, $key) {
 					<a class='button-gen ' id='TKD' href='#'>
 						<span class='submit-gen' >Титульники КД</span>				
 						<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
-						<span class='check-gen'><i>Скачать</i></span>
+						<span class='check-gen' title='КД'><i>Скачать</i></span>
 					</a>
 				
 					<a class='button-gen ' id='TDP' href='#' type='button'>
 						<span class='submit-gen' >Титульники ДП</span>				
 						<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
-						<span class='check-gen'><i>Скачать</i></span>
+						<span class='check-gen' title='ДП'><i>Скачать</i></span>
 					</a>
 				
 				</div>
