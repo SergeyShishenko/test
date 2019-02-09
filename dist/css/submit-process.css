@@ -122,7 +122,7 @@ a.finished-gen .check-gen {
   display: block !important;
   /* font-size: 20px; */
   top: 50%;
-  animation: scale 0.5s linear;
+  /* animation: scale 0.5s linear; */
 }
 a.finished-gen .check-gen i {
   transform-origin: center center;
