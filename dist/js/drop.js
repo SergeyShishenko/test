@@ -601,6 +601,77 @@ function Objx(name) {
   }
 Objx.prototype = excelObject;
   
+$(window).bind('beforeunload',function(){
+
+    //save info somewhere
+    delfiles();
+    // var arrcurrT=[];
+    // $('a.finished-gen').each(function( index ) {
+    //     // console.log( index + ": " + $( this ).text() );
+    //     arrcurrT.push($(this).attr('href'));
+    //     $(this).attr('href', '#');
+    //     $(this).removeAttr("download");
+    //     $( this ).removeClass( "finished-gen" );
+        
+       
+    // });
+    // var myData =  {
+    //     recordToDelete : "xlscsv/"+currfile,
+    //     arrcurrT : arrcurrT
+    //    };
+    //     jQuery.ajax({
+    //     type: "POST", // HTTP метод  POST или GET
+    //     url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
+    //     dataType:"text", // Тип данных
+    //     data:myData, //post переменные
+    //     success:function(response){
+    //     // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+    //     console.log(response);
+    //     // $('#drop-files').show();
+
+    //     },
+    //     error:function (xhr, ajaxOptions, thrownError){
+    //     //выводим ошибку
+    //     alert(thrownError);
+    //     }
+    //     });
+//    return 'are you sure you want to leave?';
+
+});
+
+function delfiles()
+{
+    var arrcurrT=[];
+    $('a.finished-gen').each(function( index ) {
+        // console.log( index + ": " + $( this ).text() );
+        arrcurrT.push($(this).attr('href'));
+        $(this).attr('href', '#');
+        $(this).removeAttr("download");
+        $( this ).removeClass( "finished-gen" );
+        
+       
+    });
+    var myData =  {
+        recordToDelete : "xlscsv/"+currfile,
+        arrcurrT : arrcurrT
+       };
+        jQuery.ajax({
+        type: "POST", // HTTP метод  POST или GET
+        url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
+        dataType:"text", // Тип данных
+        data:myData, //post переменные
+        success:function(response){
+        // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+        console.log(response);
+        // $('#drop-files').show();
+
+        },
+        error:function (xhr, ajaxOptions, thrownError){
+        //выводим ошибку
+        alert(thrownError);
+        }
+        });
+}
 
 function checkAddress(checkbox)
 {

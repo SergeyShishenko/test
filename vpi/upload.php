@@ -12,36 +12,48 @@
 //     die(mysql_error());
 // }
 
+if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php')) {
+	// require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
+	$site='';
+}
+else {
+	// require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
+	$site='/www';
+}
+
+
 if(isset($_POST["arr"]) )//генерация файла
 {
 	echo "localhost !!!!!!!";
 			exit();
-	 if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php')) 
-	 	{
+			require_once ($_SERVER['DOCUMENT_ROOT'] .$site.'/Classes/PHPExcel/IOFactory.php');
+	//  if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php')) 
+	//  	{
 			
 			
-			require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
-		}
-		else {
-			require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
-		}
+	// 		require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
+	// 	}
+	// 	else {
+	// 		require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
+	// 	}
 
 		$objReader = PHPExcel_IOFactory::createReader('Excel5');
 		// echo var_dump($objReader);
 		// 	exit();
-
-        if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls")) {
-			// echo "<br> Найден ".$_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls";
-			// exit();
+$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] .$site."/vpi/templates/PR_template.xls");// для localhost !!!!!!!
+        // if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls")) {
+		// 	// echo "<br> Найден ".$_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls";
+		// 	// exit();
 			
-			$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls");// для localhost !!!!!!!
+		// 	$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] .$site."/vpi/templates/PR_template.xls");// для localhost !!!!!!!
 			
-        }
-        else {
-			// echo "<br> Не найден -".dirname(__FILE__)."\\PR_template.xls" ;
-			// exit();
-			$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/PR_template.xls");// для сайта !!!!!!!
-        }
+			
+        // }
+        // else {
+		// 	// echo "<br> Не найден -".dirname(__FILE__)."\\PR_template.xls" ;
+		// 	// exit();
+		// 	$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/PR_template.xls");// для сайта !!!!!!!
+        // }
 		// $objPHPExcel->getActiveSheet()->setCellValue('D1', PHPExcel_Shared_Date::PHPToExcel(time()));
 	 echo "<pre>";
 	 echo print_f($_POST["arr"]);	 
@@ -56,7 +68,7 @@ if(isset($_POST["arr"]) )//генерация файла
 		// echo $v1['id']." ";
 
 			# Указываем путь до файла  .xlsx			
-			$File = "$_SERVER[DOCUMENT_ROOT]/www/vpi/xlscsv/$filename";			
+			$File = "$_SERVER[DOCUMENT_ROOT]$site/vpi/xlscsv/$filename";			
 			$Excel = PHPExcel_IOFactory::load($File);			
 			$order=end(explode(" ", $Excel->getActiveSheet()->getCell('Document1')->getValue())); 		
 			$client= $Excel->getActiveSheet()->getCell('Customer')->getValue(); 		
@@ -126,24 +138,25 @@ $i=0;
 				$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
 				
 				$fname="price-".date('m-d-Y-H-i-s').".xls";
-
-				if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls")) {
+				$objWriter->save($_SERVER['DOCUMENT_ROOT'] .$site."/vpi/".$fname);// для localhost !!!!!!!
+				// if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/PR_template.xls")) {
 					
-					$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
-					// $fname=$_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname;
-					//скачивание файла					
-					// header('Location: $_SERVER["DOCUMENT_ROOT"] ."/www/vpi/downloadf.php"');
+				// 	$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
+					
+				// 	// $fname=$_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname;
+				// 	//скачивание файла					
+				// 	// header('Location: $_SERVER["DOCUMENT_ROOT"] ."/www/vpi/downloadf.php"');
 					
 					
-				}
-				else {
-					$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
+				// }
+				// else {
+				// 	$objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
 
-					// $fname=$_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname;
-					//скачивание файла
-					// header('Location: $_SERVER["DOCUMENT_ROOT"] ."/vpi/downloadf.php"');
+				// 	// $fname=$_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname;
+				// 	//скачивание файла
+				// 	// header('Location: $_SERVER["DOCUMENT_ROOT"] ."/vpi/downloadf.php"');
 
-				}
+				// }
 
 				echo "./vpi/".$fname;			
 				unset($data);	
@@ -305,7 +318,7 @@ function unique_multidim_array($array, $key) {
 
 					echo "<p id='client' class='changeclick'><b>Заказчик: </b>           <span id=\"client_output\"  class=\"val\">".$data[1][0]."</span> <input type='text' class='form-control' size='40' id='client-name' value=''></p>";
 
-					echo "<p id='agent' class='changeclick'><b>Представитель: </b>       <span id=\"agent_output\"  class=\"val\"></span> <input type='text' class='form-control' size='40' id='agent-name' value=''></p>";
+					echo "<p id='agent' class='changeclick'><b>Представитель: </b>       <span id=\"agent_output\"  class=\"val\"> </span> <input type='text' class='form-control' size='40' id='agent-name' value=''></p>";
 					
 					echo "<p id='address' class='changeclick'><b>Объект: </b>            <span id=\"address_output\"  class=\"val\">".$data[1][1]."</span> <input type='text' class='form-control' size='40' id='address-name' value=''></p>";
 					if (array_sum(array_column($array, 4)) === 0){// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";						
@@ -579,7 +592,9 @@ function unique_multidim_array($array, $key) {
 												$vis = 'hide-info';
 												break;
 									}
-									echo '<td id="'.$id.'" class="'.$vis.'">'.$array[$row][$col].'</td>';
+									$resarr=$array[$row][$col];
+									
+									echo '<td id="'.$id.'" class="'.$vis.'">'.$resarr.'</td>';
 								}//if
 								
 							}//for
@@ -620,7 +635,7 @@ elseif ($mime =="xlsx"){
 	$randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 	if(file_put_contents($uploaddir.$randomName, $decodedData)) {		
 		$filename=$uploaddir.$randomName;
-		require_once "$_SERVER[DOCUMENT_ROOT]/www/vpi/getxlsx.php"; 
+		require_once "$_SERVER[DOCUMENT_ROOT]$site/vpi/getxlsx.php"; 
 		}
 
 
