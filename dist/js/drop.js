@@ -869,6 +869,9 @@ function propdelete2(obj,name){
             currentinput='';
         }
     });
+
+
+
     $("body").on("focusin",".changeclick > input",function(eventObject){
         // var externalData = "a=" + eventObject.data.a + ", b=" + eventObject.data.b;
         console.log('focusin '+$(eventObject.target).val());
@@ -1009,6 +1012,32 @@ $("body").on('click','.btn', function() {
 
 
 $("body").on('click','.button-gen:not(".finished-gen")', function() {
+
+    // alert($("input[id$='-name']").val());
+
+ $("input[id$='-name']").each(function( index, value ) {
+    if ($(this).css("visibility")=='visible'){
+
+        // alert( index + ": " + $(this).val() +" => "+ $(this).css("visibility"));
+        $(this).css({"visibility":"hidden"});
+
+        if  ($(this).attr('id')=='product-name')
+        {
+            arr_coma($('#'+currentinput).val());
+            // выключючение предидущих checkbox
+            inputClick(arr_prev);
+            // включение выбранных
+            inputClick(arr_s);
+            arr_prev=[];
+            arr_prev=arr_s;
+        }
+        else {
+             $(this).parent().find('span.val').text($(this).val());
+            }
+
+    }
+        
+      });
      
      if($('#product_output').text()==""){alert('Ничего не выбрано! '+$('#product_output').text()); return;}
     $( this ).toggleClass( "active-gen" );
