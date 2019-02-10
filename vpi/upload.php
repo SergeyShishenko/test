@@ -166,14 +166,17 @@ if(isset($_POST["recordToDelete"]) )
 	// }else{
 	// 	// echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
 	// }
-	foreach($_POST["arrcurrT"] as $val) { 
-		
-		$get = explode('/', $val);
-		unlink(end($get));
+	if(isset($_POST["arrcurrT"]) )
+	{
+		foreach($_POST["arrcurrT"] as $val) { 
+			
+			$get = explode('/', $val);
+			unlink(end($get));
 
-	 echo "Удален файл: ".end($get)."\n";	 
+		echo "Удален файл: ".end($get)."\n";	 
+		}
 	}
-	exit();
+exit();
 }
 
 
