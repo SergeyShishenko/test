@@ -265,6 +265,26 @@ function unique_multidim_array($array, $key) {
 			
 			fclose($handle);
 		}
+		$reference = array("Заказчик", "Объект", "№ заказа", "№ изделия по приложению", "№ изделия по повт.приложению", "Наименование изделия", "Помещение", "Наименование комплекта", "Этаж", "Ед-ца изм.", "Количество по дог-ру", "Серийный №", "Материал массив", "Материал шпон", "Порядковый № образца цвета заказчика", "Рисунок", "Конструктор", "Исполнитель Диз.проекта");
+		$result = array_diff($reference, $data[0]);
+		// echo "<pre>";
+		// print_r($data[0]);
+		// echo "</pre>";	
+
+
+		if (count($result)>0)
+		{ 
+			echo '<input type="hidden" id="currfile" value="'.$filename.'" form="frm">' ; 
+				unlink($filename); //удаление 
+				echo "Что-то пошло не так. Убедитесь, что файл не поврежден!";
+				exit();
+
+		}
+
+
+		
+		
+
 		// создание таблицы begin
 			$array=$data;
 			$exclude=array("0","1","2");// исключаемые индексы
@@ -578,6 +598,7 @@ function unique_multidim_array($array, $key) {
 		echo "Что-то пошло не так. Убедитесь, что файл не поврежден!";
 	}
 }//if csv
+// XLSX
 elseif ($mime =="xlsx"){
 	switch ($type) {	
 		case "excel":

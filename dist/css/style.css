@@ -109,6 +109,10 @@ div[id^='upload-button'] a {
 #uploadbtn{
 	display: inline-block;    font-size: 14px;
 }
+input#uploadbtn{
+	/* font-family: 'ISOCPEURItalic' !important; */
+	font-style:italic !important;;
+}
 
 div[id^='upload-button'] span {
 	position:relative;

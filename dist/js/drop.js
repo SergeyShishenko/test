@@ -9,13 +9,13 @@
         jQuery.event.props.push('dataTransfer');
         // alert();
         // Максимальное количество загружаемых изображений за одни раз
-        var maxFiles = 2;
+        var maxFiles = 1;
         // var countDOCFiles = 0;
         // var countPDFFiles = 0;
         // var countXLSFiles = 0;
         
         // Оповещение по умолчанию
-        // var errMessage = 0;
+        var errMessage = 0;
 
         
 
@@ -37,7 +37,7 @@
                 // Передаем массив с файлами в функцию загрузки на предпросмотр
                 loadInView(files);
             } else {
-                alert('Вы не можете загружать больше '+maxFiles+' файлов!'); 
+                alert('Вы не можете загружать больше '+maxFiles+' файла!'); 
                 files.length = 0; return;
             }
        
@@ -59,7 +59,7 @@
          });
 
  } else {
-    alert('Вы не можете загружать больше '+maxFiles+' изображений!'); 
+    alert('Вы не можете загружать больше '+maxFiles+' файла!'); 
     files.length = 0;
  }
 });
@@ -75,13 +75,41 @@
             // Для каждого файла
             
             $.each(files, function(index, file) { 
-                console.log(files[index].type);	
-                console.log(files[index].name);	
+                // console.log(files[index].type);	
+                // console.log(files[index].name);	
+
+
+
                 var clickedEXP = files[index].name.split("."); //Разбиваем строку (Split работает аналогично PHP explode)
                 var EXP = clickedEXP[1]; //и получаем номер из массива
                 console.log(EXP);
-            var tmime="";		
+            var tmime="";	
+            
+            
+	// Несколько оповещений при попытке загрузить не изображение
+    if (EXP!="csv") {
+				
+        if(errMessage == 0) {
+            $('#drop-files p').html('Эй! только файлы формата CSV !');
+            ++errMessage;
+        }
+        else if(errMessage == 1) {
+            $('#drop-files p').html('Стоп! Загружаются только файлы с расширением .CSV !');
+            ++errMessage;
+        }
+        else if(errMessage == 2) {
+            $('#drop-files p').html("Не умеешь читать? Только файлы CSV !");
+            ++errMessage;
+        }
+        else if(errMessage == 3) {
+            $('#drop-files p').html("Хорошо! Продолжай в том же духе");
+            errMessage = 0;
+        }
+        return false;
+    }
+
                     if (files[index].type.match('image.*')) {
+
                         if(files[index].type.match('dwg.*')) {						
                             tmime="dwg";
                             // console.log(tmime);	                       
