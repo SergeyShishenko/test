@@ -467,14 +467,23 @@
                 e.preventDefault();
                 var currfile = $('#currfile').val(); 
 
+                
+
             // alert(objxlsx[DbNumberID][1].product);
 
                 // propdelete(objxlsx,DbNumberID);
                 // return;
-
+  var arrcurrT=[];
                 console.log('Файл-'+currfile);
                 
                 if (confirm("Очистить?")) {
+            $("a.finished-gen").each(function(index)
+            {
+                // console.log('href '+$(this).attr('href'));
+                arrcurrT.push($(this).attr('href'));
+
+            });
+
                     $('#uploaded-files').html('');
                     $('#DelSubmit').hide();
                     $('#CreateSubmit').hide();
@@ -491,7 +500,11 @@
                     console.log('Удаляем-'+currfile+' ...');
 
                     //выстраиваем  данные для POST
-                    var myData =    "recordToDelete="+currfile;
+                    // var myData =    "recordToDelete=xlscsv/"+currfile;
+                    var myData =  {
+                                     recordToDelete : "xlscsv/"+currfile,
+                                     arrcurrT : arrcurrT
+                                    };
                     jQuery.ajax({
                         type: "POST", // HTTP метод  POST или GET
                         url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
@@ -1013,8 +1026,8 @@ $("body").on('click','.btn', function() {
 
 $("body").on('click','.button-gen:not(".finished-gen")', function() {
 
-    // alert($("input[id$='-name']").val());
-
+    
+// принудительный ввод значений input
  $("input[id$='-name']").each(function( index, value ) {
     if ($(this).css("visibility")=='visible'){
 
@@ -1094,12 +1107,12 @@ dataArrayTitle={};
 
 
 
-$("body").on('click','.finished-gen', function(eventObject) {
+// $("body").on('click','.finished-gen', function(eventObject) {
 
  
-    // $(eventObject.target).attr('href', '#');
-    // $(eventObject.target).removeAttr("download");
-    // $( this ).removeClass( "finished-gen" );
+//     // $(eventObject.target).attr('href', '#');
+//     // $(eventObject.target).removeAttr("download");
+//     // $( this ).removeClass( "finished-gen" );
  
     
-});
+// });

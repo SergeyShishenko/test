@@ -160,10 +160,18 @@ $i=0;
 
 if(isset($_POST["recordToDelete"]) )
 {
-	if (unlink("xlscsv/".$_POST["recordToDelete"])){
-		// echo "Файл: ".$_POST["recordToDelete"]." удален!";
-	}else{
-		// echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
+	// if (unlink($_POST["recordToDelete"])){
+	// 	// echo "Файл: ".$_POST["recordToDelete"]." удален!";
+		
+	// }else{
+	// 	// echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
+	// }
+	foreach($_POST["arrcurrT"] as $val) { 
+		
+		$get = explode('/', $val);
+		unlink(end($get));
+
+	 echo "Удален файл: ".end($get)."\n";	 
 	}
 	exit();
 }
