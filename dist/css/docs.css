@@ -816,7 +816,9 @@ a.navbar-brand{text-align: center;}
     /* padding-left:60px;
     padding-right:35px; */
   }
-  .glyphicon-search{   margin-right:-140px; font-size: 14px !important; }
+  .glyphicon-search{ 
+      /* margin-right:-140px; */
+     font-size: 14px !important; }
   .nav > li > a {   
     padding: 15px 5px 15px 5px;
     border-left:0.5px dotted #4e4b4b;
@@ -893,7 +895,7 @@ a.navbar-brand{text-align: center;}
     width: 213px !important;
   }
   .zbz-input-clearable {width: 213px;}
-  .glyphicon-search{   margin-right:-205px; }
+  /* .glyphicon-search{   margin-right:-205px; } */
  
 .navbar-form.navbar-right:last-child {
   
@@ -1697,11 +1699,11 @@ h6{font-size: 8px !important;}
   margin-left: -200px;
  
 }
-  .glyphicon-search{
+  /* .glyphicon-search{ */
     
-     margin-right: -140px;
-      padding-left: 28px;
-                     }
+     /* margin-right: -140px; */
+      /* padding-left: 28px; */
+                     /* } */
 
 .search_result a {font-size: 14px !important;}
 

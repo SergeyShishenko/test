@@ -57,21 +57,24 @@ function getPositionSearch(){
 
     var w = getClientWidth();// текущая ширина экрана 
     var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input   
-    mainpage= 25;
+    var mainpage= 0;
     
     switch (true) { // Постоянное значение true вместо w
         // case w >= 0 && w <= 3:
         case w >= 0 && w <= 992:
-            mainpage= 15 - zbz;
+            // mainpage= 15 - zbz;
+            mainpage= -45;
             break;
         case w >= 993 && w <= 1800:
-            mainpage= 25;
+            // mainpage= 25;
+            mainpage= zbz;
             break;
             case w > 1800:
-            mainpage= 41 - zbz;
+            // mainpage= 41 - zbz;
+            mainpage= 0;
             break;
         default:
-            mainpage=51;
+            // mainpage=51;
     }
       
 

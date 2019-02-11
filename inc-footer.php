@@ -99,7 +99,7 @@
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script> 
     <script src="./dist/js/application.js"></script> 
-   <script src="./dist/js/script.js?v='<?php $scriptVersion ?>'"></script>
+   <script src="./dist/js/script.js?v='<?php echo $scriptVersion; ?>'"></script>
 
    <script src="./dist/js/closest.js"></script>
 	<script src="./dist/js/blazy.min.js"></script>

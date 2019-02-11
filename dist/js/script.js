@@ -17,10 +17,12 @@ function getPositionSearch(){
             //     mainpage= 15 - zbz;
             //     break;
             case w >= 0 && w <= 1920:
-                mainpage= 15 - zbz;
+                // mainpage= 15 - zbz;
+                mainpage=-10;
                 break;
                 case w > 1920:
-                mainpage= 15 - zbz;
+                // mainpage= 15 - zbz;
+                mainpage= -10 ;
                 break;
             default:
                 mainpage=51;
