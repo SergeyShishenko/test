@@ -3,9 +3,209 @@
 window.onresize = function(){ getPositionSearch();nvfn(); };
 var mainpage=51;
 
+function browser1()
+{
+	var a;
+if (navigator.userAgent.search(/Safari/) > 0) {a = 'Safari'};
+if (navigator.userAgent.search(/Firefox/) > 0) {a = 'MozillaFirefox'};
+if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {a = 'Internet Explorer'};
+if (navigator.userAgent.search(/Chrome/) > 0) {a = 'Google Chrome'};
+if (navigator.userAgent.search(/YaBrowser/) > 0) {a = 'Яндекс браузер'};
+if (navigator.userAgent.search(/OPR/) > 0) {a = 'Opera'};
+if (navigator.userAgent.search(/Konqueror/) > 0) {a = 'Konqueror'};
+if (navigator.userAgent.search(/Iceweasel/) > 0) {a = 'Debian Iceweasel'};
+if (navigator.userAgent.search(/SeaMonkey/) > 0) {a = 'SeaMonkey'};
+if (navigator.userAgent.search(/Edge/) > 0) {a = 'Microsoft Edge'};
+// alert(a); // В переменной a будет название браузера
+console.log(a);
+}
 
+
+
+function browser2()
+{
+var BrowserDetect = { 
+  init: function () { 
+  this.browser = this.searchString(this.dataBrowser) || "An unknown browser"; 
+  this.version = this.searchVersion(navigator.userAgent) || this.searchVersion(navigator.appVersion) || "an unknown version"; 
+  this.OS = this.searchString(this.dataOS) || "an unknown OS"; 
+  }, 
+  searchString: function (data) { 
+  for (var i=0;i<data.length;i++) { 
+  var dataString = data[i].string; 
+  var dataProp = data[i].prop; 
+  this.versionSearchString = data[i].versionSearch || data[i].identity; 
+  if (dataString) { 
+  if (dataString.indexOf(data[i].subString) != -1) 
+  return data[i].identity; 
+  } 
+  else if (dataProp) 
+  return data[i].identity; 
+  } 
+  }, 
+  searchVersion: function (dataString) { 
+  var index = dataString.indexOf(this.versionSearchString); 
+  if (index == -1) return; 
+  return parseFloat(dataString.substring(index+this.versionSearchString.length+1)); 
+  }, 
+  dataBrowser: [ 
+  { 
+  string: navigator.userAgent, 
+  subString: "YaBrowser", 
+  identity: "YaBrowser", 
+//   identity: "OPR", 
+  versionSearch: "YaBrowser" 
+  }, 
+  { 
+  string: navigator.userAgent, 
+  subString: "Chrome", 
+  identity: "Chrome" 
+  }, 
+  { string: navigator.userAgent, 
+  subString: "OmniWeb", 
+  versionSearch: "OmniWeb/", 
+  identity: "OmniWeb" 
+  }, 
+  { 
+  string: navigator.vendor, 
+  subString: "Apple", 
+  identity: "Safari", 
+  versionSearch: "Version" 
+  }, 
+  { 
+  string: navigator.userAgent, 
+//   identity: "Opera", 
+  identity: "OPR", 
+  versionSearch: "Version" 
+  }, 
+  
+  { 
+  string: navigator.vendor, 
+  subString: "iCab", 
+  identity: "iCab" 
+  }, 
+  { 
+  string: navigator.vendor, 
+  subString: "KDE", 
+  identity: "Konqueror" 
+  }, 
+  { 
+  string: navigator.userAgent, 
+  subString: "Firefox", 
+  identity: "Firefox" 
+  }, 
+  { 
+  string: navigator.vendor, 
+  subString: "Camino", 
+  identity: "Camino" 
+  }, 
+  {  
+  /* For Newer Netscapes (6+) */ 
+  string: navigator.userAgent, 
+  subString: "Netscape", 
+  identity: "Netscape" 
+  }, 
+  { 
+  string: navigator.userAgent, 
+  subString: "MSIE", 
+  identity: "Internet Explorer", 
+  versionSearch: "MSIE" 
+  }, 
+  { 
+  string: navigator.userAgent, 
+  subString: "Gecko", 
+  identity: "Mozilla", 
+  versionSearch: "rv" 
+  }, 
+  {  
+  /* For Older Netscapes (4-) */ 
+  string: navigator.userAgent, 
+  subString: "Mozilla", 
+  identity: "Netscape", 
+  versionSearch: "Mozilla" 
+  } 
+  ], 
+
+  dataOS : [ 
+  { 
+  string: navigator.platform, 
+  subString: "Win", 
+  identity: "Windows" 
+  }, 
+  { 
+  string: navigator.platform, 
+  subString: "Mac", 
+  identity: "Mac" 
+  }, 
+  { 
+  string: navigator.userAgent, 
+  subString: "iPhone", 
+  identity: "iPhone/iPod" 
+  }, 
+  { 
+  string: navigator.platform, 
+  subString: "Linux", 
+  identity: "Linux" 
+  } 
+  ] 
+
+}; 
+BrowserDetect.init(); 
+
+console.log(BrowserDetect.browser+"/"+BrowserDetect.version); 
+// console.log(BrowserDetect.version); 
+// console.log(BrowserDetect.OS);
+// console.log('opera -> '+window.opera);
+}
+
+browser1();
+browser2();
+BrowserDetect={};
+// var uAgent = navigator.userAgent || '';
+
+// var browser = {
+// 	version : (uAgent.match( /.+(?:me|ox|on|rv|it|era|ie)[\/: ]([\d.]+)/ ) || [0,'0'])[1],
+// 	opera : /OPR/i.test(uAgent),
+// 	msie : (/msie/i.test(uAgent) && !/opera/i.test(uAgent)),
+// 	msie6 : (/msie 6/i.test(uAgent) && !/opera/i.test(uAgent)),
+// 	msie7 : (/msie 7/i.test(uAgent) && !/opera/i.test(uAgent)),
+// 	msie8 : (/msie 8/i.test(uAgent) && !/opera/i.test(uAgent)),
+// 	msie9 : (/msie 9/i.test(uAgent) && !/opera/i.test(uAgent)),
+// 	msie10 : (/msie 10/i.test(uAgent) && !/opera/i.test(uAgent)),
+// 	mozilla : /firefox/i.test(uAgent),
+// 	chrome : /chrome/i.test(uAgent),
+// 	safari : (!(/chrome/i.test(uAgent)) && /webkit|safari|khtml/i.test(uAgent)),
+// 	iphone : /iphone/i.test(uAgent),
+// 	ipod : /ipod/i.test(uAgent),
+// 	iphone4 : /iphone.*OS 4/i.test(uAgent),
+// 	ipod4 : /ipod.*OS 4/i.test(uAgent),
+// 	ipad : /ipad/i.test(uAgent),
+// 	ios : /ipad|ipod|iphone/i.test(uAgent),
+// 	android : /android/i.test(uAgent),
+// 	bada : /bada/i.test(uAgent),
+// 	mobile : /iphone|ipod|ipad|opera mini|opera mobi|iemobile/i.test(uAgent),
+// 	msie_mobile : /iemobile/i.test(uAgent),
+// 	safari_mobile : /iphone|ipod|ipad/i.test(uAgent),
+// 	opera_mobile : /opera mini|opera mobi/i.test(uAgent),
+// 	opera_mini : /opera mini/i.test(uAgent),
+// 	mac : /mac/i.test(uAgent),
+// 	webkit : /webkit/i.test(uAgent),
+// 	android_version: parseFloat(uAgent.slice(uAgent.indexOf("Android")+8)) || 0
+// };
+// console.log("browser " + browser.opera);
+// console.log("Вы используете браузер " + navigator.appName);
+var xa = navigator.userAgent;
+console.log("Вы используете браузер " + xa);
+// console.log("Вы используете браузер2 " + navigator.getUserMedia);
+// console.log("Вы используете браузер3 " + navigator.webkitGetUserMedia);
+// console.log("Вы используете браузер4 " + navigator.mozGetUserMedia);
+// console.log("Вы используете браузер5 " + navigator.msGetUserMedia);
+
+              
+// console.log("Версия " + navigator.appVersion);
 function getPositionSearch(){
-
+    
+    
         var w = getClientWidth();// текущая ширина экрана 
         if (w>991)
         {$("#navsub.bs-sidebar").removeClass('click-lef-tmenu');}
