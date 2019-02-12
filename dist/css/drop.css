@@ -140,7 +140,7 @@
              margin-right: 15px;
         }
         .form-control {
-            width: auto;
+            /* width: auto; */
             display: table-cell;
             
         }

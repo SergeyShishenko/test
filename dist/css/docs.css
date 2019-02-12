@@ -795,7 +795,7 @@ a.navbar-brand{text-align: center;}
    padding-left: 20px !important;
   }
   body{
-    font-size: 9px !important;
+    font-size: 8.5px !important;
   }
   .menu2 .list-group-item,.menu2 .list-group,.menu .list-group{
     width: 300PX !important;/*ширина submenu*/   
@@ -810,7 +810,7 @@ a.navbar-brand{text-align: center;}
   }
 
   .navbar-brand {
-    padding-left: 60px ;
+    padding-left: 55px ;
     padding-right: 20px ;
     
     /* padding-left:60px;
@@ -878,7 +878,7 @@ a.navbar-brand{text-align: center;}
    padding-left: 20px !important;
   }
   body{
-    font-size: 13.8px !important;
+    font-size: 12.8px !important;
   }
   .dblstr-lg {padding: 2px 15px !important;}
   .dblstr-menu{padding: 5.5px 5px !important;}
@@ -903,9 +903,9 @@ a.navbar-brand{text-align: center;}
  
 }
   /* .nav > li > a { padding: 15px 15px; } */
-  .navbar-brand {    
+  .navbar > .container .navbar-brand {    
     padding-left:100px ;
-    padding-right:57px ;
+    padding-right:65px ;
   }
    /* менять приизменении окна */
    .img-book {height:1100px !important;}
@@ -935,7 +935,7 @@ a.navbar-brand{text-align: center;}
     margin-right: -15px !important;
   }
   body{
-    font-size: 14px !important;
+    font-size: 13.5px !important;
   }
   .menu2 .list-group-item,.menu2 .list-group,.menu .list-group{
     width: 489PX !important;/*ширина submenu*/   
