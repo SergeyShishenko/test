@@ -35,7 +35,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
-                                            <source src="./dist/video/petli/mebelnaya-petlya-s-vstroennym-dovodchikom-blum-clip-top-blumou.mp4" type="video/mp4">
+                                            <source src="./dist/video/petly/mebelnaya-petlya-s-vstroennym-dovodchikom-blum-clip-top-blumou.mp4" type="video/mp4">
                                         </video>
                                     </div>
                                 </div>                                
