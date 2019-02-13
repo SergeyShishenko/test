@@ -1260,10 +1260,11 @@ include 'inc-left-side-menu-furnitura.php';
                                  
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/IzM8rPYn-Ag?rel=0"
-                                            allowfullscreen></iframe>
+                                        <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                                            <source src="./dist/video/pantografy/pantograf-mebelnyy-lift-superlift.mp4" type="video/mp4">
+                                        </video>
                                     </div>
-                                </div>
+                                </div>                               
                             </div>
                             
                             <div class="row">
@@ -1335,7 +1336,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         </a>
                                     </div>
 
-                                    <div class="overlay"></div>
+                                    <!-- <div class="overlay"></div> -->
                                 </div>
                                 <div class="col-xs-12 col-sm-8 col-md-8"
                                 
@@ -1389,10 +1390,12 @@ include 'inc-left-side-menu-furnitura.php';
                                  
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/n6QfgloIgCk?rel=0"
-                                            allowfullscreen></iframe>
+                                        <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                                            <source src="./dist/video/pantografy/montazh-pantografa-lift800.mp4" type="video/mp4">
+                                        </video>
                                     </div>
-                                </div>
+                                </div>  
+
                             </div>
                             
                             <div class="row">
@@ -1464,7 +1467,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         </a>
                                     </div>
 
-                                    <div class="overlay"></div>
+                                    <!-- <div class="overlay"></div> -->
                                 </div>
                                 <div class="col-xs-12 col-sm-8 col-md-8"
                                 

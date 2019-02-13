@@ -12,107 +12,7 @@ $item_dlya_dvernyh_blokov_Class = '';
 $item_dlya_mebeli_Class = 'active';
 $item_universalnaya_Class = '';
 $item_katalogi_Class = '';
-include 'inc-head2.php';
-echo '        
-        
-        
-        <style>
-          .btn:focus,
-        .btn:active,
-        button:focus,
-        button:active {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-
-        #image-gallery .modal-footer {
-            display: block;
-        }
-
-        .thumb {
-            margin-top: 7.5px;
-            margin-bottom: 7.5px;
-            padding-right: 7.5px;
-            padding-left: 7.5px;
-            text-align: center;
-        }
-
-       
-        /* .modal-dialog {
-             width: auto;
-           margin:30px 30px;
-        } */
-
-        /* .row .row {
-            margin-right: 0;
-            margin-left: 0;
-        } */
-
-        .thumbnail {
-            border: none;
-        }
-        .modal-header .close {
-         margin-top: -20px;
-        }
-        #image-gallery-image{float:none;}
-
-        .embed-responsive, #carousel{
-       
-        box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
-        border-radius: 4px;
-        }
-        #carousel{background: #fff;}
-        a, a:active, a:focus { outline: none; }
-
-        input, textarea {outline:none;}
-        input:active, textarea:active {outline:none;}
-        :focus {outline:none;}
-        textarea {resize:none;}
-        textarea {resize:vertical;}
-        textarea {resize:horizontal;}
-
-        #myTab a {
-            
-            border-left: none;
-        }
-        #myTab li.active a{
-            
-            border-left: 1px solid #dddddd;
-        }
-
-        .overlay {
-            height: 15px;
-        }
-
-
-        .outerP {
-            
-            text-align: center;
-            vertical-align: middle;
-            position: relative;
-           
-        }
-        .innerP {
-            
-
-            height: 100px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    right:0;
-    padding:0 20px 0 20px;
-            
-        }
-
-    </style>  
-
-
-    
-        
-        ';
-
-
+include 'inc-head3.php';
 include 'inc-header-menu3.php';
 include 'inc-left-side-menu-furnitura.php';
 ?> 
@@ -134,10 +34,11 @@ include 'inc-left-side-menu-furnitura.php';
                                  
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/S5nQqMojH5c?rel=0&amp;autoplay=1&amp;loop=1&amp;&amp;playlist=S5nQqMojH5c"
-                                            allowfullscreen autoplay loop frameborder="0"></iframe>
+                                        <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                                            <source src="./dist/video/petli/mebelnaya-petlya-s-vstroennym-dovodchikom-blum-clip-top-blumou.mp4" type="video/mp4">
+                                        </video>
                                     </div>
-                                </div>                               
+                                </div>                                
                             </div>
                             
                             <div class="row" style="margin-bottom: 15px;">

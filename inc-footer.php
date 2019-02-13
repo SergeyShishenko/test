@@ -40,9 +40,9 @@
                             <div id="drop-files" ondragover="return false">
                             <!-- <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo; или &laquo;Приложение КБ.xlsx&raquo; сюда</p> -->
                             <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo;  сюда</p>
-                        <form >
+                        <!-- <form > -->
                             <input type="file" id="uploadbtn" multiple  >
-                        </form>
+                        <!-- </form> -->
                     </div>
                     <!-- Область предпросмотра -->
                     <div id="uploaded-holder"> 

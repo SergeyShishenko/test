@@ -12,56 +12,8 @@ $item_dlya_dvernyh_blokov_Class = '';
 $item_dlya_mebeli_Class = 'active';
 $item_universalnaya_Class = '';
 $item_katalogi_Class = '';
-include 'inc-head2.php';
-echo '        
-        
-        
-        <style>
-          .btn:focus,
-        .btn:active,
-        button:focus,
-        button:active {
-            outline: none !important;
-            box-shadow: none !important;
-        }
-
-        #image-gallery .modal-footer {
-            display: block;
-        }
-
-        .thumb {
-            margin-top: 7.5px;
-            margin-bottom: 7.5px;
-            padding-right: 7.5px;
-            padding-left: 7.5px;
-            text-align: center;
-        }
-
-       
-        /* .modal-dialog {
-             width: auto;
-           margin:30px 30px;
-        } */
-
-        /* .row .row {
-            margin-right: 0;
-            margin-left: 0;
-        } */
-
-        .thumbnail {
-            border: none;
-        }
-        .modal-header .close {
-         margin-top: -20px;
-        }
-        #image-gallery-image{float:none;}
-      
-    </style>  
-        
-        ';
-
-
-include 'inc-header-menu2.php';
+include 'inc-head3.php';
+include 'inc-header-menu3.php';
 include 'inc-left-side-menu-furnitura.php';
 ?> 
                 <!-- main  -->
