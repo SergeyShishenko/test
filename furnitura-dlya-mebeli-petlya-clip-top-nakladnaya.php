@@ -34,11 +34,12 @@ include 'inc-left-side-menu-furnitura.php';
                                  
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <video autoplay loop controls class="embed-responsive-item">
-                                            <source src="https://d2.blum.com/BEC003/clp0015-ctb_pr_rf_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
+                                        <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                                            <source src="./dist/video/petli/clp0015-ctb_pr_rf_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
                                         </video>
                                     </div>
-                                </div>
+                                </div>  
+
                             </div>
                             
                             <div class="row">
@@ -369,8 +370,8 @@ include 'inc-left-side-menu-furnitura.php';
                 </div><!-- боковое меню блоки дверные конец -->
 
                
-              
-    <script src="./dist/js/main.26.04.2018.js"></script> 
+                
+    <!-- <script src="./dist/js/main.26.04.2018.js"></script> 
     <script>
         // var modalId = $('#image-gallery');
 
@@ -470,5 +471,5 @@ include 'inc-left-side-menu-furnitura.php';
                 }
                 e.preventDefault(); // prevent the default action (scroll / move caret)
             });
-    </script>
+    </script> -->
 <?php include 'inc-footer2.php'; ?>
