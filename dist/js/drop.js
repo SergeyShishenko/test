@@ -1146,7 +1146,7 @@ dataArrayTitle={};
                 address : $('#address_output').text(),
                 floor : $('#floor_output').text(),
                 room : $('#room_output').text(),
-                complect : $('#complect_output').text(),
+                complect : $('#complectUser_output').text()+$('#complect_output').text(),
                 order : $('#order_output').text(),
                 product : $('#product_output').text(),
                 gen : $(eventObject.target).attr('id'),// TKD,TDP
