@@ -911,16 +911,22 @@ function propdelete2(obj,name){
 	    return false; // выключаем стандартное действие
     });
     $("body").on("click",".changeclick",function() {       
-            
+        // console.log('focus '+$(this).find('input').is(":focus"));
+        if (!$(this).find('input').is(":focus")){
+            // alert('Not focused');
+       
+
               $(this).find('input').val($(this).find('span.val').text());
               $(this).find('input').css({"visibility":"visible"}).focus();
             //   $(this).find('input').css({"visibility":"visible"});
               
               currentspan=$(this).find('span').attr('id');
               currentinput=$(this).find('input').attr('id');           
-            console.log('click '+currentspan);
-              console.log(currentinput);
-              console.log('------------');
+            // console.log('click '+currentspan);
+            // console.log('focus '+$(this).find('input').is(":focus"));
+            //   console.log(currentinput);
+            //   console.log('------------');
+         }     
     });
    
    
@@ -954,7 +960,7 @@ function propdelete2(obj,name){
 
     $("body").on("focusin",".changeclick > input",function(eventObject){
         // var externalData = "a=" + eventObject.data.a + ", b=" + eventObject.data.b;
-        console.log('focusin '+$(eventObject.target).val());
+        // console.log('focusin '+$(eventObject.target).val());
 
         arr_coma($(eventObject.target).val());
                 //  inputClick(arr_prev);
@@ -982,7 +988,7 @@ function propdelete2(obj,name){
         }
         // arroutput(arr_table);
 
-        console.log('arr_prev.length'+ arr_prev.length );
+        // console.log('arr_prev.length'+ arr_prev.length );
         
 
         // // выключючение предидущих checkbox
@@ -990,15 +996,15 @@ function propdelete2(obj,name){
         // // включение выбранных
         // inputClick(arr_s);
                 
-        console.log('arr_s.length'+ arr_s.length );
-        console.log('arr_prev.length'+ arr_prev.length );
+        // console.log('arr_s.length'+ arr_s.length );
+        // console.log('arr_prev.length'+ arr_prev.length );
             
 
             // arr_prev=[];
             // arr_prev=arr_s;
 
             arr_prev.forEach(function(item) {
-                console.log('arr_prev'+ item );
+                // console.log('arr_prev'+ item );
 
             });    
            
