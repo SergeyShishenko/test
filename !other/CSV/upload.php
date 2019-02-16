@@ -330,7 +330,7 @@ function unique_multidim_array($array, $key) {
 				echo "</div>";
 			echo "</div>";
 			// echo "<br>";
-			echo '<table border="1" class="table table-striped table-responsive zakaz" >'; 			
+			echo '<table border="1" class="table table-striped table-responsive zakaz" id="timeGrid">'; 			
 
 				$num = count ($array); //строк с шапкой
 				// echo "$num ". $num; 

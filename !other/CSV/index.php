@@ -17,6 +17,33 @@ header ("Content-Type: text/html; charset=utf-8");
     <link href="submit-process.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+            /* table.zakaz {
+        width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        } */
+
+        /* .zakaz  td {
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #999;
+        } */
+
+        .pressedTime > td {
+            background-color: #eaedf6  !important;
+            /* color: #ffffff; */
+        }
+
+        .zakaz  td {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+</style>
 </head>
 <body>
 <!-- <a href="#openModal">Открыть модальное окно</a> -->
@@ -120,11 +147,14 @@ header ("Content-Type: text/html; charset=utf-8");
     </div>
  <!-- /.modal -->
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+<!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>  -->
+<script src="../../dist/js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
 <script src="bootstrap.js"></script>
+
 <script src="shortcut.js"></script>
-<script src="drop.js"></script>     
+<script src="drop.js"></script>  
+<script src="selectcell.js"></script>   
 <!-- <script src="submit-process.js"></script>      -->
 </body>
 </html>

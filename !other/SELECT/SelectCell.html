@@ -156,13 +156,14 @@
           <td>100</td>
         </tr>
     </table>
+    <div id="res"></div>
     <script src="../../dist/js/jquery.min.js"></script>
     <script>
     var  selector =   '#timeGrid tr';
-    var td = $(selector),
-    selection = {
+    var tr = $(selector);
+    var selection = {
         single: function(el) {
-            td.not(el).removeClass(this.cl);
+            tr.not(el).removeClass(this.cl);
             this.ctrl(el);
         },
         shift: function(el) {
@@ -173,23 +174,25 @@
                 from = this.last;
                 console.log('От '+from);
                 console.log('До '+till);
-                
+                $('#res').text('От '+from +' '+'До '+till);
             if (from > till) till = [from, from = till][0];
-            td.not(td.eq(this.last)).removeClass(this.cl);
-            td.slice(from, till).add(el).addClass(this.cl);
+            tr.not(tr.eq(this.last)).removeClass(this.cl);
+            tr.slice(from, till).add(el).addClass(this.cl);
         },
         ctrl: function(el) {
             $(el).addClass(this.cl);
             this.last = $(el).index(this.slcr);
             console.log('last '+this.last);
+            $('#res').text('last '+this.last+" => "+tr.eq(this.last).find('td:first').text());
         },
         slcr: selector,
         cl: 'pressedTime',
         last: null
     };
-td.on('click', function(e) {
+tr.on('click', function(e) {
     method = !e.shiftKey && !e.ctrlKey ? 'single' : (e.shiftKey ? 'shift' : 'ctrl');
     selection[method](this);
-});</script>
+});
+</script>
 </body>
 </html>
