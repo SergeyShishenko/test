@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+    padding: 5px;
+    font: 12px verdana;
+}
+
+button {
+    margin:10px 0;
+}
+.nosel {
+            /**
+             * Для эксплорера
+             */
+            -ms-user-select: none;
+
+            /**
+             * Для мозилы
+             */
+            -moz-user-select: none;
+
+            /**
+             * Для конкверора
+             */
+            -khtml-user-select: none;
+
+            /**
+             * Для Сафари и Хрома
+             */
+            -webkit-user-select: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="area">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi aliquid natus quas eius veniam labore officiis necessitatibus! Quis iure praesentium assumenda a beatae quo voluptates laudantium? Iusto culpa in deserunt ipsa voluptatibus delectus asperiores provident cupiditate enim soluta est voluptas quos quisquam excepturi commodi itaque recusandae omnis earum rem.</div>
+<table>
+    <tr>
+        <td>1</td>
+        <td class="nosel">2</td>
+        <td class="nosel">3</td>
+        <td class="nosel">4</td>
+        <td class="nosel">5</td>
+          
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="nosel">2</td>
+        <td class="nosel">3</td>
+        <td class="nosel">4</td>
+        <td class="nosel">5</td>
+          
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="nosel">2</td>
+        <td class="nosel">3</td>
+        <td class="nosel">4</td>
+        <td class="nosel">5</td>
+          
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="nosel">2</td>
+        <td class="nosel">3</td>
+        <td class="nosel">4</td>
+        <td class="nosel">5</td>
+          
+    </tr>
+
+    
+</table>
+<button>Показать выделенный текст</button>
+<div id="result"></div>
+
+<script>
+    document.querySelector("button").onclick = function() {
+    var selection = window.getSelection();
+    document.getElementById("result").innerHTML = "<pre>"+selection+"</pre>";
+}
+</script>
+</body>
+</html>
