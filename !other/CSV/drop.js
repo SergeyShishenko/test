@@ -474,7 +474,7 @@ function Objx(name) {
 Objx.prototype = excelObject;
   
 
-function checkAddress(checkbox)
+function checkAddress(checkbox,s)
 {
     $('.finished-gen').each(function( index ) {
         // console.log( index + ": " + $( this ).text() );
@@ -484,10 +484,14 @@ function checkAddress(checkbox)
  
     });
     
-    $(checkbox).prop('checked', true);
-    checkbox.checked=true;
-    // alert(checkbox);
+    if(s){$(checkbox).prop('checked', true);checkbox.checked=true;}
+    // 
+    // alert($(checkbox).parent().parent().parent().attr('class'));
+    $(checkbox).parent().parent().parent().removeClass('pressedTime');
+    // alert($(checkbox).parent().parent().parent().attr('class'));
     var tr=$(checkbox).parent().parent().parent();
+    // alert(tr.parent().html());
+    
     var tblid = tr.parent().parent().attr('id');
     var typecheck =$(checkbox).attr('name');// kd,dp
     

@@ -47,7 +47,8 @@ var selection = {
     last: null
 };
 $('body').on('click','#timeGrid tr', function(e) {
-    // console.log('click');
+    // console.log($(this).find("[id^='someSwitchOptionSuccess_']").prop('checked'));
+// console.log($(this).find("[id^='someSwitchOptionSuccess']").prop('checked'));
 method = !e.shiftKey && !e.ctrlKey ? 'single' : (e.shiftKey ? 'shift' : 'ctrl');
 selection[method](this);
 });
@@ -59,7 +60,7 @@ $('body').on('click','#sel', function() {
         //выведем индекс и значение массива в консоль
         // console.log('Индекс: ' + index.toString() + '; Значение: ' + value.toString());
         // $('#someSwitchOptionSuccess'+value).trigger('click');
-        checkAddress($('#someSwitchOptionSuccess'+value));
+        checkAddress($('#someSwitchOptionSuccess'+value),true);
       });
     //   inputClick(arrsel);
 });
