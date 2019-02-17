@@ -483,14 +483,15 @@ function checkAddress(checkbox)
         $( this ).removeClass( "finished-gen" );
  
     });
-
-
-    // alert($(checkbox).attr('id'));
+    
+    $(checkbox).prop('checked', true);
+    checkbox.checked=true;
+    // alert(checkbox);
     var tr=$(checkbox).parent().parent().parent();
     var tblid = tr.parent().parent().attr('id');
     var typecheck =$(checkbox).attr('name');// kd,dp
     
-    // alert($(checkbox).attr('name'));
+    // alert(tblid);
     // alert(objxlsx[tblid].kd);
     var keyroom=tr.find("[id^='room_']").text();
     var roomTD=keyroom;
