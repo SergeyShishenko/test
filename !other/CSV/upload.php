@@ -309,8 +309,8 @@ function unique_multidim_array($array, $key) {
 				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
 				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
 				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
-				<p><button class='btn btn-default hide-gen' type='button'>Button</button></p>
-				<p><button class='btn btn-default ' type='button' id='sel'>Button</button></p>				
+				<p><button class='btn btn-default ' type='button' id='selall'>Добавить/снять все</button></p>
+				<p><button class='btn btn-default ' type='button' id='sel'>Добавить выбранное</button></p>				
 				<p>
 					<a class='button-gen btn-block' id='TKD' href='#'>
 						<span class='submit-gen' >Титульники КД</span>				

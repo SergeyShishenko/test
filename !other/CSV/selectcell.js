@@ -60,7 +60,27 @@ $('body').on('click','#sel', function() {
         //выведем индекс и значение массива в консоль
         // console.log('Индекс: ' + index.toString() + '; Значение: ' + value.toString());
         // $('#someSwitchOptionSuccess'+value).trigger('click');
-        checkAddress($('#someSwitchOptionSuccess'+value),true);
+        checkAddress($('#someSwitchOptionSuccess'+value),1);
       });
+    //   inputClick(arrsel);
+});
+var visparam=1;
+$('body').on('click','#selall', function() {
+    
+    // arrsel = arrsel.sort();
+    
+    $.each(arr_table,function(index,value)
+    {      
+        //выведем индекс и значение массива в консоль
+        // console.log('Индекс: ' + index.toString() + '; Значение: ' + value.toString());
+        if ((visparam===2)){
+           $('#someSwitchOptionSuccess'+value).trigger('click'); 
+        }
+        // 
+        checkAddress($('#someSwitchOptionSuccess'+value),visparam);
+        
+      });
+      visparam=visparam==2?1:2;
+      arrsel.length=0;
     //   inputClick(arrsel);
 });

@@ -484,7 +484,9 @@ function checkAddress(checkbox,s)
  
     });
     
-    if(s){$(checkbox).prop('checked', true);checkbox.checked=true;}
+    if(s===1){$(checkbox).prop('checked', true);checkbox.checked=true;}
+    if(s===2){$(checkbox).prop('checked', false);checkbox.checked=false;}
+    // if(s===3){$(checkbox).prop('checked', true);checkbox.checked=true;}
     // 
     // alert($(checkbox).parent().parent().parent().attr('class'));
     $(checkbox).parent().parent().parent().removeClass('pressedTime');
