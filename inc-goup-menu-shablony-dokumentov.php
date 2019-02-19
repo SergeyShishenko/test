@@ -144,6 +144,12 @@
                     'id'=> "#vedomost-materialy-prochie",
                     'def'=>"5000304-03-001 ведомость материалы прочие"];
 
+
+    $sostav_dp=[];
+    $sostav_dp[0]=['path'=>"shablony-dokumentov-titulnyy-dp.php",
+                    'id'=>"#sostav_dp",
+                    'def'=>"СОСТАВ ДИЗАЙН-ПРОЕКТА"];                
+
     /////////////////////////////////////
 //shablony-dokumentov-titulnyy-dp.php
 /////////////////////////////////////  
@@ -230,6 +236,11 @@
     $vedomost_detaley_3d[0]=['path'=>"shablony-dokumentov-titulnyy-kd.php",
                     'id'=>"#vedomost-detaley-uchastka-3d",
                     'def'=>"ВЕДОМОСТЬ ДЕТАЛЕЙ УЧАСТКА 3D"];
+
+    $sostav_kd=[];
+    $sostav_kd[0]=['path'=>"shablony-dokumentov-titulnyy-kd.php",
+                    'id'=>"#sostav_kd",
+                    'def'=>"СОСТАВ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ"]; 
 
  
 //shablony-dokumentov-titulnyy-kd.php                                

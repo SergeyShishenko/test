@@ -265,6 +265,68 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                       
                       </section>
                     </article>
+
+                    <article >
+                      <section >
+                        <div class="page-header">
+                        <h2  id="sostav_kd">&nbsp;</h2> 
+                          <h1 itemprop="name">Состав конструкторской документации</h1>
+                        </div>
+                        <!-- <h2 id="dok--385">&nbsp;</h2> -->
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <!-- <h4>Док. № 385</h4> -->
+                               <div class="overlay"></div>                        
+                            <p> <a>
+                               
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/sostav-kd_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="Лист1"
+                                 data-pdf="./dist/files/pdf/sostav-kd.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                            <p> <a>
+                               
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/sostav-kd_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="Лист2"
+                                 data-pdf="./dist/files/pdf/sostav-kd.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                            <p> <a>
+                               
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/sostav-kd_3-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="Лист3"
+                                 data-pdf="./dist/files/pdf/sostav-kd.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                            <p> <a>
+                               
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/sostav-kd_4-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                               
+                                 alt="Лист4"
+                                 data-pdf="./dist/files/pdf/sostav-kd.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+
+                             
+                             
+                        </div>  
+                       
+                      </section>
+                    </article>   
                    
                    
                    
@@ -279,7 +341,8 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                               $dok_vsz,
                               $dok_v_materialy_prochie,
                               $spec_tehnolog,
-                              $vedomost_detaley_3d];
+                              $vedomost_detaley_3d,
+                              $sostav_kd];
                   SideMenuList($arrlist)
                 ?> 
 <?php include 'inc-footer.php'; ?>

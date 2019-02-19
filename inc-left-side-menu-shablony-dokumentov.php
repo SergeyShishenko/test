@@ -49,6 +49,8 @@ include 'inc-goup-menu-shablony-dokumentov.php';//$styazhka=[]
                                 LeftSideMenu($materialy_prochie);//ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ
 
                                 LeftSideMenu($list_titulnyy_TZ);//ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика
+
+                                LeftSideMenu($sostav_dp);//СОСТАВ ДП
                         echo'                        
                             </ul>
                         </li>
@@ -72,7 +74,9 @@ include 'inc-goup-menu-shablony-dokumentov.php';//$styazhka=[]
                                     
                                 LeftSideMenu($spec_tehnolog);// СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ</a>                             
                                     
-                                LeftSideMenu($vedomost_detaley_3d);// ВЕДОМОСТЬ ДЕТАЛЕЙ УЧАСТКА 3D</a>                             
+                                LeftSideMenu($vedomost_detaley_3d);// ВЕДОМОСТЬ ДЕТАЛЕЙ УЧАСТКА 3D</a> 
+
+                                LeftSideMenu($sostav_kd);//СОСТАВ КД                           
                                 echo'  
 
                             </ul>
