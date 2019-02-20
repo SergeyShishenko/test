@@ -347,10 +347,14 @@ function unique_multidim_array($array, $key) {
 				
 				<div class='btn-gen'>	
 
-				<label class='checkbox'>
+					<label class='checkbox'>
 						<input type='checkbox' value='' id='checkvis' >
 						Скрыть/показать все не выбранные
 					</label>
+					<a class='btnA '  href='#'  id='selall'>Добавить/снять все</a>
+					<a class='btnA '  href='#'  id='sel'>Добавить выбранное</a>
+
+						
 
 			
 					<a class='button-gen ' id='TKD' href='#'>
@@ -370,7 +374,7 @@ function unique_multidim_array($array, $key) {
 				echo "</div>";
 			echo "</div>";
 			// echo "<br>";
-			echo '<table border="1" class="table table-striped table-responsive zakaz" >'; 			
+			echo '<table border="1" class="table table-striped table-responsive zakaz" id="timeGrid">'; 			
 
 				$num = count ($array); //строк с шапкой
 				// echo "$num ". $num; 

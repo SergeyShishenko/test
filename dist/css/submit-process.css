@@ -127,7 +127,7 @@ a.finished-gen .check-gen {
 a.finished-gen .check-gen i {
   transform-origin: center center;
 }
-label.checkbox {float:left;}
+label.checkbox {float:left;    margin-right: 5px;}
 
 @keyframes loading {
   100% {

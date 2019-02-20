@@ -25,6 +25,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
     <script src="./dist/js/shortcut.js"></script>
     <script src="./dist/js/drop.js"></script>  
+    <script src="./dist/js/selectcell.js"></script>
     <script>
     window.bLazy = new Blazy({
         //container: \'.container\',

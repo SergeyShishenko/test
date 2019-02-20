@@ -475,6 +475,7 @@ Objx.prototype = excelObject;
   
 
 function checkAddress(checkbox,s)
+
 {
     $('.finished-gen').each(function( index ) {
         // console.log( index + ": " + $( this ).text() );

@@ -649,7 +649,7 @@ function delfiles()
     }
 }
 
-function checkAddress(checkbox)
+function checkAddress(checkbox,s)
 {
      var arrcurrT=[];
     $('a.finished-gen').each(function( index ) {
@@ -683,6 +683,16 @@ function checkAddress(checkbox)
         });
 
     // alert($(checkbox).attr('id'));
+
+    if(s===1){$(checkbox).prop('checked', true);checkbox.checked=true;}
+    if(s===2){$(checkbox).prop('checked', false);checkbox.checked=false;}
+    // if(s===3){$(checkbox).prop('checked', true);checkbox.checked=true;}
+    // 
+    // alert($(checkbox).parent().parent().parent().attr('class'));
+    $(checkbox).parent().parent().parent().removeClass('pressedTime');
+    // alert($(checkbox).parent().parent().parent().attr('class'));
+
+
     var tr=$(checkbox).parent().parent().parent();
     var tblid = tr.parent().parent().attr('id');
     var typecheck =$(checkbox).attr('name');// kd,dp

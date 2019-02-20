@@ -196,5 +196,75 @@
      
 
         /* .zakaz{white-space:  nowrap;} */
+        .pressedTime > td {
+            background-color: #eaedf6  !important;
+            /* color: #ffffff; */
+        }
 
-       
+        .zakaz  td {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        td[id^='def_']:hover{
+            -webkit-touch-callout: text;
+            -webkit-user-select: text;
+            -khtml-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+            
+        }
+
+        .btnA {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.428571429;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            border-color: #cccccc;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        a.btnA{
+            text-decoration: none;
+            color: #333333;
+            text-decoration: none;
+        }
+
+        .btnA:active, .btnA.active {
+            background-image: none;
+            outline: 0;
+            -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        }
+        .btnA:hover{
+            color: #333333;
+             text-decoration: none; 
+            background-color: #ebebeb;
+            border-color: #adadad;
+        }
+        .btnA:focus {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+        }
+        a.btnA:hover{
+            color: #333333;
+        }
