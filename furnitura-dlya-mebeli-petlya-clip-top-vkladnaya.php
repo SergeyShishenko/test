@@ -28,8 +28,8 @@ include 'inc-left-side-menu-furnitura.php';
                             
                             <div class="main-box clearfix"  id="5000502-01-100-petlya-vkladnaya" >   
                                
-                                <h2 >Артикул: 5000502-01-100</h2>                            
-                                <h2 >Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы</h2> 
+                                <h2 ></h2>                            
+                                <!-- <h2 >Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы</h2>  -->
                                  
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
@@ -51,7 +51,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">5000502-07-701 стяжка эксцентриковая односторонняя MINIFIX, толщина плиты 16 мм</h3>
+                                                <h3 class="blum">5000502-01-100 Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы</h3>
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
                                                         <thead>

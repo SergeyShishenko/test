@@ -1,7 +1,12 @@
-
-
-window.onresize = function(){ getPositionSearch();nvfn(); };
+window.onresize = function(){
+     getPositionSearch();
+     nvfn();
+     
+ };
 var mainpage=51;
+
+
+
 
 function browser1()
 {
@@ -203,52 +208,76 @@ console.log("Вы используете браузер " + xa);
 
               
 // console.log("Версия " + navigator.appVersion);
-function getPositionSearch(){
+function getWH()
+{  
+    var w = window.innerWidth
+    || window.outerWidth
+    || document.documentElement.clientWidth
+    || document.body.clientWidth;
     
-    
-        var w = getClientWidth();// текущая ширина экрана 
-        if (w>991)
-        {$("#navsub.bs-sidebar").removeClass('click-lef-tmenu');}
+    var h = window.innerHeight
+    || outerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
 
-        var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
-        switch (true) { // Постоянное значение true вместо w
-            // case w >= 0 && w <= 3:
-            // case w >= 0 && w <= 992:
-            //     mainpage= 15 - zbz;
-            //     break;
-            case w >= 0 && w <= 1920:
-                // mainpage= 15 - zbz;
-                mainpage=-10;
-                break;
-                case w > 1920:
-                // mainpage= 15 - zbz;
-                mainpage= -10 ;
-                break;
-            default:
-                mainpage=51;
-        }
-          
+//     console.log ("w"+window.outerWidth );// текущая ширина экрана 
+//  console.log ("h"+window.outerHeight );// текущая ширина экрана 
 
-// console.log('mainpage '+ mainpage);        
-        // var c= $('div.container').css('width');
-        var pos = $( '#main-page' ).position().left;
-        var c= $('#main-page').css('width');
-        // console.log('position '+pos);
-        // console.log('width '+c);
-        // console.log('текущая ширина экрана '+ w);
-        // console.log('zbz '+ zbz);
-         c = c.replace("px", "")-mainpage; // -21 удалить латинские символы 
-        //   с= pos + с;
-        // console.log(c);       
-        // c=(w-c)/2+5;
-        //    console.log(c);
-         $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
-         $('.zbz-input-clearable').css({'visibility': 'visible'});
-         $('span.zbz').css('visibility','visible');
-         if($('input.who').val() !== ""){$('span.zbz').css('visibility','hidden');  }
+// var x = document.getElementById("body");
+// x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
+console.log("Ширина внутреннего окна браузера: " + w + ", height: " + h + ".");
+}
+
+
+function getPositionSearch()
+{    
+    // console.log('Ширина экрана '+ document.documentElement.clientWidth);
+    // console.log('Высота экрана '+ document.documentElement.clientHeight);
+    getWH();
+
+    var w = getClientWidth();// текущая ширина экрана 
+    if (w>991)
+    {$("#navsub.bs-sidebar").removeClass('click-lef-tmenu');}
+
+    var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
+    switch (true) { // Постоянное значение true вместо w
+        // case w >= 0 && w <= 3:
+        // case w >= 0 && w <= 992:
+        //     mainpage= 15 - zbz;
+        //     break;
+        case w >= 0 && w <= 1920:
+            // mainpage= 15 - zbz;
+            mainpage=-10;
+            break;
+            case w > 1920:
+            // mainpage= 15 - zbz;
+            mainpage= -10 ;
+            break;
+        default:
+            mainpage=51;
+    }
         
-        //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
-     }
+
+    // console.log('mainpage '+ mainpage);        
+    // var c= $('div.container').css('width');
+    var pos = $( '#main-page' ).position().left;
+    var c= $('#main-page').css('width');
+    // console.log('position '+pos);
+    // console.log('width '+c);
+    // console.log('текущая ширина экрана '+ w);
+    // console.log('zbz '+ zbz);
+        c = c.replace("px", "")-mainpage; // -21 удалить латинские символы 
+    //   с= pos + с;
+    // console.log(c);       
+    // c=(w-c)/2+5;
+    //    console.log(c);
+        $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
+        $('.zbz-input-clearable').css({'visibility': 'visible'});
+        $('span.zbz').css('visibility','visible');
+        if($('input.who').val() !== ""){$('span.zbz').css('visibility','hidden');  }
+    
+    //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
+}
 // текущая ширина экрана   
 function getClientWidth(){
     return document.compatMode=='CSS1Compat' &&
@@ -297,6 +326,11 @@ function getClientWidth(){
 
 
  });
+ console.log ("w"+getClientWidth());// текущая ширина экрана 
+ console.log ("w"+window.outerWidth );// текущая ширина экрана 
+ console.log ("h"+window.outerHeight );// текущая ширина экрана 
+ console.log ("h"+getClientHeight());// текущая ширина экрана 
+
  getPositionSearch();nvfn();
 //  var delta =0;
 $(function () {
@@ -304,6 +338,7 @@ $(function () {
     // $('#navsub  li.menu ul').hide();
     $('#navsub  li.menu').not('.disabled').hover(function () {
         var w = getClientWidth();// текущая ширина экрана 
+        
         if (w>991){
             // delta2 = 0; // счетчик прокрутки колеса sub_menu2
            var colLeftMenu = $(this).parent().children().length; 
