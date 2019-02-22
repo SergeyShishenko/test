@@ -34,13 +34,28 @@ var selection = {
           });
     },
     ctrl: function(el) {
-        $(el).addClass(this.cl);
+        console.log('Class pressedTime - '+$(el).hasClass(this.cl));
+        // $(el).addClass(this.cl);
         this.last = $(el).index(this.slcr);
         console.log('last '+this.last);
+        console.log('method '+method);
         prod2=$(el).find("[id^='product2_']").text();
         prod=$(el).find("[id^='product_']").text();
         if (prod2!=''){prod=prod2;}
-        arrsel.push(prod);
+
+        if (!$(el).hasClass(this.cl)){
+             arrsel.push(prod); 
+             $(el).addClass(this.cl);
+        }
+        else{
+            arrsel=unique(arrsel); 
+            var i = arrsel.indexOf(prod);
+                if (i > -1) {
+                    arrsel.splice(i, 1);
+                    $(el).removeClass(this.cl);
+                }
+        }
+      
         // $('#res').text('last '+this.last+" => "+$('#timeGrid tr').eq(this.last).find('td:first').text());
     },
     slcr: '#timeGrid tr',
@@ -86,3 +101,25 @@ $('body').on('click','#selall', function() {
       arrsel.length=0;
     //   inputClick(arrsel);
 });
+
+
+//////------!!!!!!!!!!!!!!!!!
+
+// var array = [2, 5, 9];
+// console.log(array)
+// var index = array.indexOf(5);
+// if (index > -1) {
+//   array.splice(index, 1);
+// }
+// // array = [2, 9]
+// console.log(array);
+
+//////-------------
+//////-------------!!!!!!!!!!!!!!!
+// var arrzzz = [1, 0, false,5 ,1];
+// arrzzz=unique(arrzzz); 
+// alert( arrzzz.indexOf('5') ); // 1
+// // alert( arr.indexOf(false) ); // 2
+// // alert( arr.indexOf(null) ); // -1
+// alert( arrzzz );
+
