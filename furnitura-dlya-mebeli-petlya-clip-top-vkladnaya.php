@@ -75,25 +75,46 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody id="calcresult">
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulStyazhka-EC02ZL.png" class="" alt="Эксцентрик" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulvkladnaya-5000502-01-100_1.png" class="" alt="Петля" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="12">EC02ZL</td>
+                                                            <td class="animated" data-objfurnid="12">71B9750</td>
                                                             <td>Металл</td> 
-                                                            <td colspan="3">Эксцентрик для плит толщиной 16 мм</td>
+                                                            <td colspan="3">пeтля вкладная CLIP top BLUMOTION</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulShtok-TE03.png" class="" alt="Шток" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulotvetnaya-planka-173L6100.png" class="" alt="планка ответная" title=""></td>
                                                             <td>1</td>
-                                                            <td>TE03</td>
+                                                            <td>173L6100</td>
                                                             <td>Металл</td>
-                                                            <td>Шток эксцентрика М6 (34&nbsp;мм)</td>
+                                                            <td>планка ответная CLIP, подъем 0 мм, регулировка по высоте продольный паз</td>
                                                         </tr>
-                                                        <tr   >
-                                                                <td><img src="./dist/filesdb/images/pagevpi/ArticulFutorka-BU12.png" class="" alt="Футорка" title=""></td>
-                                                                <td>1</td>
-                                                                <td class="" >BU12 (82-02)</td>
-                                                                <td>Желтый</td> 
-                                                                <td colspan="3">Футорка металлическая с распорным шариком M6</td>
+                                                        <tr>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulzaglushka70T3504.png" class="" alt="заглушка под чашку" title=""></td>
+                                                            <td>1</td>
+                                                            <td class="" >70T3504</td>
+                                                            <td>Металл</td> 
+                                                            <td colspan="3">заглушка под чашку петли, без логотипа</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulzaglushka70_1663.png" class="" alt="заглушка на плечо" title=""></td>
+                                                            <td>1</td>
+                                                            <td class="" >70.1663</td>
+                                                            <td>Металл</td> 
+                                                            <td colspan="3">заглушка на плечо петли, без логотипа</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulBU17PN.png" class="" alt="Футорка" title=""></td>
+                                                            <td>4</td>
+                                                            <td class="" >BU17PN</td>
+                                                            <td>Белый</td> 
+                                                            <td colspan="3">футорка пластиковая</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulsamorezy609_1700.png" class="" alt="саморез" title=""></td>
+                                                            <td>4</td>
+                                                            <td class="" >609.1700</td>
+                                                            <td>Металл</td> 
+                                                            <td colspan="3">саморез для крепления петли четырехшарнирной</td>
                                                         </tr>
                                                       
                                                         
