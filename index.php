@@ -121,7 +121,7 @@ include 'inc-goup-menu-shablony-dokumentov.php';
                             <a href="#" class="dblstr-menu">УСТАНОВОЧНЫЕ <br>ДОКУМЕНТЫ</a >                           
                         </li>
                         <li>
-                            <a href="metodichki-dokument-117.php">МЕТОДИЧКИ</a >
+                            <a href="metodichki-BASIS.php">МЕТОДИЧКИ</a >
                             <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
@@ -3786,7 +3786,7 @@ include 'inc-goup-menu-shablony-dokumentov.php';
                                                 <TD>
                                                     <TABLE >
                                                         <TR>
-                                                            <TD data-tooltip="АНКЕТА" class="hover mapsite" id="footer127" >
+                                                            <TD  class="hover mapsite" id="footer127" >
                                                                 <p data-href="metodichki-stp-po-proektnoy-rabote.php#vyhodnye-svedeniya"  data-img="./dist/images/no-foto.png" id="floating1281">Выходные сведения<span> <br>~-katalog-rezby</span></p>
                                                             </TD>                                                                            
                                                             <TD>
@@ -3809,7 +3809,7 @@ include 'inc-goup-menu-shablony-dokumentov.php';
                                                         </TR>
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
-                                                            <TD data-tooltip="АНКЕТА" class="hover mapsite" id="footer1281" >
+                                                            <TD  class="hover mapsite" id="footer1281" >
                                                                 <p data-href="metodichki-stp-po-proektnoy-rabote.php#vizualnaya-chast-proekta"  data-img="./dist/images/no-foto.png" id="floating1282">2. раздел «ВИЗУАЛЬНАЯ ЧАСТЬ ПРОЕКТА»<span> <br>~-katalog-rezby</span></p>
                                                             </TD>                                                                            
                                                             <TD>
@@ -3832,7 +3832,7 @@ include 'inc-goup-menu-shablony-dokumentov.php';
                                                         </TR>
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
-                                                            <TD data-tooltip="АНКЕТА" class="hover mapsite" id="footer1282" >
+                                                            <TD  class="hover mapsite" id="footer1282" >
                                                                 <p data-href="metodichki-stp-po-proektnoy-rabote.php#obmery-inzhenerno-stroitelnaya-chast"  data-img="./dist/images/no-foto.png" id="floating1283">3. раздел «ОБМЕРЫ (ИНЖЕНЕРНО-СТРОИТЕЛЬНАЯ ЧАСТЬ)»<span> <br>~-katalog-rezby</span></p>
                                                             </TD>                                                                            
                                                             <TD>
@@ -3871,7 +3871,7 @@ include 'inc-goup-menu-shablony-dokumentov.php';
                                                         </TR>
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
-                                                            <TD data-tooltip="АНКЕТА" class="hover mapsite" id="footer1283" >
+                                                            <TD  class="hover mapsite" id="footer1283" >
                                                                 <p data-href="metodichki-stp-po-proektnoy-rabote.php#dizayn-proekt-inzhenerno-graficheskaya-chast"  data-img="./dist/images/no-foto.png" id="floating1284">4. раздел «ДИЗАЙН&ndash;ПРОЕКТ (ИНЖЕНЕРНО-ГРАФИЧЕСКАЯ ЧАСТЬ)» <span> <br>~-katalog-rezby</span></p>
                                                             </TD>                                                                            
                                                             <TD>
@@ -3922,7 +3922,7 @@ include 'inc-goup-menu-shablony-dokumentov.php';
                                                         </TR>
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
-                                                            <TD data-tooltip="АНКЕТА" class="hover mapsite" id="footer1284" >
+                                                            <TD  class="hover mapsite" id="footer1284" >
                                                                 <p data-href="metodichki-stp-po-proektnoy-rabote.php#albom-obrazcov-cveta-i-formy"  data-img="./dist/images/no-foto.png" id="floating1285">5. раздел «АЛЬБОМ ОБРАЗЦОВ ЦВЕТА И ФОРМЫ» <span> <br>~-katalog-rezby</span></p>
                                                             </TD>                                                                            
                                                             <TD>
@@ -3958,7 +3958,7 @@ include 'inc-goup-menu-shablony-dokumentov.php';
                                                         </TR>
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                         <TR>
-                                                            <TD data-tooltip="АНКЕТА" class="hover mapsite" id="footer1285" >
+                                                            <TD  class="hover mapsite" id="footer1285" >
                                                                 <p data-href="metodichki-stp-po-proektnoy-rabote.php#tehnicheskoe-zadanie-dlya-zakazchika"  data-img="./dist/images/no-foto.png" id="floating128">6. раздел «ТЕХНИЧЕСКОЕ ЗАДАНИЕ ДЛЯ ЗАКАЗЧИКА»<span> <br>~-katalog-rezby</span></p>
                                                             </TD>                                                                            
                                                             <TD>
@@ -4186,6 +4186,38 @@ include 'inc-goup-menu-shablony-dokumentov.php';
                                                             
                                                     </TABLE>
                                                 </TD>
+                                            </TR> 
+                                            <TR>
+                                                <TD data-tooltip="БАЗИС МЕБЕЛЬЩИК" class="hover mapsite" id="footer31">
+                                                    <p data-href="metodichki-BASIS.php"  data-img="./dist/images/no-foto.png" id="floating318">БАЗИС МЕБЕЛЬЩИК<span><br>~</span></p>
+                                                    <!-- <p data-href="metodichki-stp-po-proektnoy-rabote.php" class="KEYWORDS">ПРОЕКТНАЯ РАБОТА<span><br>~-CNG</span></p> -->
+                                                    
+                                                </TD>
+                                                <TD>
+                                                    <TABLE >
+                                                        <TR>
+                                                            <TD  class="hover mapsite" id="footer12758" >
+                                                                <p data-href="metodichki-BASIS.php#SCRIPTS"  data-img="./dist/images/no-foto.png" id="floating12818">SCRIPTS<span> <br>~</span></p>
+                                                            </TD>                                                                            
+                                                            <TD>
+                                                                <TABLE >                                                                                          
+                                                                    <TR>
+                                                                        <TD class="mapsite" colspan="2"  id="flo-AddOrderProdudtCE">
+                                                                            <p data-href="metodichki-BASIS.php#AddOrderProdudtCE">Добавить свойства: Заказ/ Изделие/ СЕ <span> <br>~</span></p>
+                                                                        </TD>                                                                         
+                                                                    </TR>  
+                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                  
+                                                                              
+                                                                </TABLE>
+                                                            </TD>
+                                                        </TR>
+                                                     
+                                            
+                                                        
+                                                            
+                                                    </TABLE>
+                                                </TD>
                                             </TR>                                                                                                            
                                         </TABLE>
                                     </TD>   
@@ -4207,7 +4239,7 @@ include 'inc-goup-menu-shablony-dokumentov.php';
                                     <TD>
                                         <TABLE >
                                             <TR>
-                                                <TD data-tooltip="ДЛЯ ДВЕРНЫХ БЛОКОВ" class="hover mapsite " id="footer31">
+                                                <TD data-tooltip="ДЛЯ ДВЕРНЫХ БЛОКОВ" class="hover mapsite " id="footer318">
                                                     <p data-href="furnitura-dlya-dvernyh-blokov.php"  data-img="./dist/images/no-foto.png" id="floating32">ФУРНИТУРА для ДВЕРНЫХ БЛОКОВ<span><br>~dlya-dvernyh-blokov</span></p></TD>
                                                 <TD>
                                                     <TABLE >

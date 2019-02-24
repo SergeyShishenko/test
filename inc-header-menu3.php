@@ -86,7 +86,7 @@ else {
                     <a href="#" class="dblstr-menu">УСТАНОВОЧНЫЕ <br>ДОКУМЕНТЫ</a >                           
                 </li>
                 <li '.$metodichkiClass.'>
-                    <a href="metodichki-dokument-117.php">МЕТОДИЧКИ</a>
+                    <a href="metodichki-BASIS.php">МЕТОДИЧКИ</a>
                 </li>
                 <li '.$furnituraClass.'>
                     <a href="furnitura-dlya-dvernyh-blokov.php">ФУРНИТУРА</a>
