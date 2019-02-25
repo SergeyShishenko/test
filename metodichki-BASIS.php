@@ -30,7 +30,7 @@ include 'inc-left-side-menu-metodichki.php';
                         <div class="bs-callout bs-callout-warning cont" >
                          <p> 
                          <h2 itemprop="name" id="AddOrderProdudtCE">Добавить свойства: Заказ/ Изделие/ СЕ </h2>
-                            <a href="./dist/files/js/AddOrderProdudtCE.js" type="button" class="btn btn-primary"  download="AddOrderProdudtCE.js">Скачать - AddOrderProdudtCE.js</a>
+                            <a href="./dist/files/js/AddOrderProductCE.js" type="button" class="btn btn-primary"  download="AddOrderProductCE.js">Скачать - AddOrderProductCE.js</a>
                          </p>
                         
                          </div>
