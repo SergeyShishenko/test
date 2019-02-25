@@ -32,6 +32,14 @@ include 'inc-left-side-menu-metodichki.php';
                          <h2 itemprop="name" id="AddOrderProdudtCE">Добавить свойства: Заказ/ Изделие/ СЕ </h2>
                             <a href="./dist/files/js/AddOrderProductCE.js" type="button" class="btn btn-primary"  download="AddOrderProductCE.js">Скачать - AddOrderProductCE.js</a>
                          </p>
+                         <p >&nbsp;</p> 
+                         <div class="main-box-body clearfix">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                                            <source src="./dist/video/basis/2019-02-25 at 08-17-55.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                          </div> 
                         
                          </div>
                      
