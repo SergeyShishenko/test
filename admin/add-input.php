@@ -819,459 +819,7 @@ switch ($tbl) {
         ';
         mysqli_free_result($Result_obj); 
     /////obj    
-    /////obj_download 
-        $Result_obj_download = mysqli_query($dbconn,"SELECT *  FROM obj_download WHERE obj_id = $DbNumberID");//MySQL запрос
-        $row_obj_download = mysqli_fetch_array($Result_obj_download);//получаем все записи из таблицы
-        
-        echo '<div class="row">
-                <div class="box col-md-12">
-                    <div class="box-inner">
-                        <div class="box-header well" data-original-title="">
-                            <h2><i class="glyphicon glyphicon-list-alt"></i> Файлы для скачивания (obj_download)</h2>    
-                            <div class="box-icon">
-                                <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
-                                        class="glyphicon glyphicon-chevron-down"></i></a>       
-                            </div>
-                        </div>
-                        <div class="box-content"> 
-                    ';
-
-                    // echo '
-                    // <div class="checkbox">
-                    //     <label>
-                    //         <input type="checkbox" id="checkbox">
-                    //         Юридические документы
-                    //     </label>
-                    // </div>
-                    // ';
-                    // echo '<div class="noyri">';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">PDF</span>
-                                    <input type="text" class="form-control" id="recipient-PDF " value="'.$row_obj_download["pdf_obj"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="pdf_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    '; 
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">XLS</span>
-                                    <input type="text" class="form-control" id="recipient-XLS " value="'.$row_obj_download["xls_obj"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="xls_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">DOC</span>
-                                    <input type="text" class="form-control" id="recipient-DOC " value="'.$row_obj_download["doc_obj"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="doc_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">DWG</span>
-                                    <input type="text" class="form-control" id="recipient-DWG" value="'.$row_obj_download["dwg_obj"].'" required>
-                                    <span class="input-group-btn">
-                                        <button type="button" data-tbl="obj_download"  data-field ="dwg_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-
-
-                    // echo '<div class="row">
-                    //         <div class="col-xs-12">
-                    //             <ul class="file-list">
-                    //                 <li class="file">
-                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.doc">
-                    //                         <div class="file-thumbnail file-thumbnail-doc"></div>
-                    //                         <div class="file-info">
-                    //                             <span class="file-ext">doc</span>
-                    //                             <span class="file-name">file-name.</span>
-                    //                         </div>
-                    //                     </a>
-                    //                 </li>
-                    //                 <li class="file">
-                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.xls">
-                    //                         <div class="file-thumbnail file-thumbnail-xls"></div>
-                    //                         <div class="file-info">
-                    //                             <span class="file-ext">xls</span>
-                    //                             <span class="file-name">file-name.</span>
-                    //                         </div>
-                    //                     </a>
-                    //                 </li>
-                    //                 <li class="file">
-                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.pdf">
-                    //                         <div class="file-thumbnail file-thumbnail-pdf"></div>
-                    //                         <div class="file-info">
-                    //                             <span class="file-ext">pdf</span>
-                    //                             <span class="file-name">file-name.</span>
-                    //                         </div>
-                    //                     </a>
-                    //                 </li>
-                    //                 <li class="file">
-                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.zip">
-                    //                         <div class="file-thumbnail file-thumbnail-zip"></div>
-                    //                         <div class="file-info">
-                    //                             <span class="file-ext">zip</span>
-                    //                             <span class="file-name">file-name.</span>
-                    //                         </div>
-                    //                     </a>
-                    //                 </li>
-                    //                 <li class="file">
-                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.zip">
-                    //                         <div class="file-thumbnail file-thumbnail-dwg"></div>
-                    //                         <div class="file-info">
-                    //                             <span class="file-ext">dwg</span>
-                    //                             <span class="file-name">file-name.</span>
-                    //                         </div>
-                    //                     </a>
-                    //                 </li>
-                    //                 <li class="file">
-                    //                     <a class="file-link" href="javascript:void(0)" title="file-name.*">
-                    //                         <div class="file-thumbnail file-thumbnail-att"></div>
-                    //                         <div class="file-info">
-                    //                             <span class="file-ext">*</span>
-                    //                             <span class="file-name">file-name.</span>
-                    //                         </div>
-                    //                     </a>
-                    //                 </li>
-                                    
-                    //                 <li class="file">
-                    //                     <a class="file-link" href="img/0189082606.jpg" title="0189082606.jpg" download="0189082606.jpg">
-                    //                         <div class="file-thumbnail" style="background-image: url(img/0189082606.jpg);"></div>
-                    //                         <div class="file-info">
-                    //                             <span class="file-ext">jpg</span>
-                    //                             <span class="file-name">0189082606.</span>
-                    //                         </div>
-                    //                     </a>
-                    //                     <button class="file-delete-btn delete" title="Delete" type="button">
-                    //                         <span class="glyphicon glyphicon-remove"></span>
-                    //                     </button>
-                    //                 </li>
-                    //             </ul>
-                    //         </div>
-                    //     </div>
-                    // ';
-               
-
-                    // echo '</div><!--class="noyri"-->';
-                    // echo '<div class="yri">';
-
-                    // echo '<div class="row">
-                    //         <div class="input-group col-md-12">
-                    //             <div class="input-group ">                       
-                    //                 <span class="input-group-addon">ЮРИ-PDF</span>
-                    //                 <input type="text" class="form-control" id="recipient-yriPDF " value="'.$row_obj_download["data_ypdf"].'" required>
-                    //                 <span class="input-group-btn">
-                    //                     <button type="button"  data-tbl="obj_download"  data-field ="data_ypdf" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                    //                 </span>
-                    //             </div>
-                    //         </div>
-                    //     </div>
-                    // '; 
-                    // echo '<div class="row">
-                    //         <div class="input-group col-md-12">
-                    //             <div class="input-group ">                       
-                    //                 <span class="input-group-addon">ЮРИ-XLS</span>
-                    //                 <input type="text" class="form-control" id="recipient-yriXLS " value="'.$row_obj_download["data_yxls"].'" required>
-                    //                 <span class="input-group-btn">
-                    //                     <button type="button"  data-tbl="obj_download"  data-field ="data_yxls" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                    //                 </span>
-                    //             </div>
-                    //         </div>
-                    //     </div>
-                    // ';
-                    // echo '<div class="row">
-                    //         <div class="input-group col-md-12">
-                    //             <div class="input-group ">                       
-                    //                 <span class="input-group-addon">ЮРИ-DOC</span>
-                    //                 <input type="text" class="form-control" id="recipient-yriDOC " value="'.$row_obj_download["data_ydoc"].'" required>
-                    //                 <span class="input-group-btn">
-                    //                     <button type="button"  data-tbl="obj_download"  data-field ="data_ydoc" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                    //                 </span>
-                    //             </div>
-                    //         </div>
-                    //     </div>
-                    // ';
-
-                    // echo '</div><!--class="yri"-->';
-
-
-                   
-
-                    if ($row_obj_download["data_spng"] == "noPNG")
-                    {
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">  
-                                <!--<span class="input-group-addon">PNG</span>-->                     
-                                    <span class="input-group-addon">'.$row_obj_download["data_spng"].'</span>                                
-                                    <select class="form-control" id="recipient-PNG">                                
-                                        <option selected value="noPNG">Нет</option>
-                                        <option value="PNG">Да</option>
-                                    </select>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    }
-                    else
-                    {
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">   
-                                <!--<span class="input-group-addon">PNG</span>-->                      
-                                    <span class="input-group-addon">PNG</span>                                
-                                    <select class="form-control" id="recipient-PNG" >                                
-                                        <option value="noPNG">Нет скачивания изображения</option>
-                                        <option selected value="PNG">Есть скачивание изображения</option>
-                                    </select>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-    
-                    }
-
-                    if ($row_obj_download["data_prnt"] == "noPrint")
-                    {
-                        echo '<div class="row">
-                                <div class="input-group col-md-12">
-                                    <div class="input-group ">  
-                                    <!--<span class="input-group-addon">Print</span> -->                    
-                                        <span class="input-group-addon">Печать</span>
-                                        <select class="form-control"  id="recipient-prnt">
-                                            <option selected value="noPrint">Нет</option>
-                                            <option value="Print">Да</option>
-                                        </select>
-                                        <span class="input-group-btn">
-                                            <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        ';
-                    }
-                    else
-                    {
-                        echo '<div class="row">
-                                <div class="input-group col-md-12">
-                                    <div class="input-group ">   
-                                    <!--<span class="input-group-addon">Print</span> -->                    
-                                        <span class="input-group-addon">Печать</span>
-                                        <select class="form-control"  id="recipient-prnt" >
-                                            <option value="noPrint">Нет</option>
-                                            <option selected value="Да">Печать</option>
-                                        </select>
-                                        <span class="input-group-btn">
-                                            <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        ';
-                    }
-                   
-                    echo '
-                        </div>      
-                    </div>
-                </div>            
-            </div><!--/row-->'
-        ;
-        mysqli_free_result($Result_obj_download); 
-    /////obj_download            
-    /////obj_alias             
-        $Result_obj_alias = mysqli_query($dbconn,"SELECT *  FROM obj_alias WHERE obj_id = $DbNumberID");//MySQL запрос      
-        echo '   
-        <div class="row">
-            <div class="box col-md-12">
-                <div class="box-inner">
-                    <div class="box-header well" data-original-title="">
-                        <h2><i class="glyphicon glyphicon-list-alt"></i> Псевдонимы (obj_alias)</h2>    
-                        <div class="box-icon">
-                            <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
-                                    class="glyphicon glyphicon-chevron-down"></i></a>       
-                        </div>
-                    </div>
-                    <div class="box-content obj_alias" > 
-                    ';
-                    $row1="row1";
-                    while($row_obj_alias = mysqli_fetch_array($Result_obj_alias))
-                    {
-                    echo '<div class="row '.$row1.'">
-                                <div class="input-group col-md-12">
-                                    <div class="input-group ">                       
-                                        <span class="input-group-addon">Keywords</span>
-                                        <input type="text" class="form-control" id="recipient-obj_alias__'.$row_obj_alias["obj_alias_id"].'" value="'.$row_obj_alias["keywords_alias"].'" required>
-                                        <span class="input-group-btn">
-                                            <button type="button"  data-tbl="obj_alias"  data-field ="keywords_alias" data-fieldid="obj_alias_id" data-id="alias_'.$row_obj_alias["obj_alias_id"].'" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                            <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
-                                            <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>                                          
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        ';
-                        $row1="";
-                }//while      
-                echo ' 
-                    </div>      
-                </div>
-            </div>            
-        </div><!--/row-->'
-        ;    
-        mysqli_free_result($Result_obj_alias);
-    /////obj_alias
-    /////obj_in_addition             
-        $Result_obj_in_addition = mysqli_query($dbconn,"SELECT *  FROM obj_in_addition WHERE obj_id = $DbNumberID");//MySQL запрос
-        echo '   
-        <div class="row">
-            <div class="box col-md-12">
-                <div class="box-inner">
-                    <div class="box-header well" data-original-title="">
-                        <h2><i class="glyphicon glyphicon-list-alt"></i> Дополнительные страницы (obj_in_addition)</h2>    
-                        <div class="box-icon">
-                            <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
-                                    class="glyphicon glyphicon-chevron-down"></i></a>       
-                        </div>
-                    </div>
-                    <div class="box-content obj_in_addition">   
-                    ';
-                    $row1="row1";
-                    while($row_obj_in_addition = mysqli_fetch_array($Result_obj_in_addition))
-                    {
-                    echo '<div class="row '.$row1.'">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon btn btn-minimize  btn-default  button34">Страница №_ (fname_img_obj_in_addition)<i class="glyphicon glyphicon-chevron-down"></i></span>
-                                    <input type="text" class="form-control" id="recipient-fname_img_obj_in_addition__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["fname_img_obj_in_addition"].'" required>
-                                    <span class="input-group-btn">
-                                            <button type="button" data-tbl="obj_in_addition"  data-field ="fname_img_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                            <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
-                                            <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>  
-                                        <!-- <button type="button" class="btn btn-minimize btn-default button34"><i class="glyphicon glyphicon-chevron-down"></i></button> -->                                                                                   
-                                    </span>
-                                </div>
-                                <div class="box-content">
-                                ';
-
-                                    echo '<div class="row">
-                                                <div class="input-group col-md-12">
-                                                    <div class="input-group ">                       
-                                                        <span class="input-group-addon">html_in_addition_id</span>
-                                                        <input type="text" class="form-control" id="recipient-html_in_addition_id__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["html_in_addition_id"].'" required>
-                                                        <span class="input-group-btn">
-                                                            <button type="button" data-tbl="obj_in_addition" data-field="html_in_addition_id"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                    ';
-                                    echo '<div class="row">
-                                                <div class="input-group col-md-12">
-                                                    <div class="input-group ">                       
-                                                        <span class="input-group-addon">path_img_obj_in_addition</span>
-                                                        <input type="text" class="form-control" id="recipient-path_img_obj_in_addition__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["path_img_obj_in_addition"].'" required>
-                                                        <span class="input-group-btn">
-                                                            <button type="button" data-tbl="obj_in_addition" data-field ="path_img_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                    ';
-                                    echo '<div class="row">
-                                                <div class="input-group col-md-12">
-                                                    <div class="input-group ">                       
-                                                        <span class="input-group-addon">data_href_img_obj_in_addition</span>
-                                                        <input type="text" class="form-control" id="recipient-data_href_img_obj_in_addition__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["data_href_img_obj_in_addition"].'" required>
-                                                        <span class="input-group-btn">
-                                                            <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                    ';
-                                    echo '<div class="row">
-                                                <div class="input-group col-md-12">
-                                                    <div class="input-group ">                       
-                                                        <span class="input-group-addon">fname_img_smoll_obj_in_addition</span>
-                                                        <input type="text" class="form-control" id="recipient-fname_img_smoll_obj_in_addition__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["fname_img_smoll_obj_in_addition"].'" required>
-                                                        <span class="input-group-btn">
-                                                            <button type="button" data-tbl="obj_in_addition" data-field ="fname_img_smoll_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                    ';
-                                    echo '<div class="row">
-                                                <div class="input-group col-md-12">
-                                                    <div class="input-group ">                       
-                                                        <span class="input-group-addon">data_href_img_smoll_obj_in_addition</span>
-                                                        <input type="text" class="form-control" id="recipient-data_href_img_smoll_obj_in_addition__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["data_href_img_smoll_obj_in_addition"].'" required>
-                                                        <span class="input-group-btn">
-                                                            <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_smoll_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                    ';
-                                    echo '<div class="row">
-                                                <div class="input-group col-md-12">
-                                                    <div class="input-group ">                       
-                                                        <span class="input-group-addon">img_def</span>
-                                                        <textarea class="form-control"  id="recipient-img_def__'.$row_obj_in_addition["obj_in_addition_id"].'" name="text">'.$row_obj_in_addition["img_def"].'</textarea>
-                                                        <span class="input-group-btn">
-                                                            <button type="button" data-tbl="obj_in_addition" data-field ="img_def" data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                    ';
-
-                                    echo '
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    $row1="";
-                    }//while   
-                    mysqli_free_result($Result_obj_in_addition); 
-                        echo '
-                    </div>      
-                </div>
-            </div>            
-        </div><!--/row-->'
-        ;
-    /////obj_in_addition  
+   
     /////obj_furnitur_prop            
         $Result_obj_furnitur_prop = mysqli_query($dbconn,"SELECT *  FROM obj_furnitur_prop WHERE obj_id = $DbNumberID");//MySQL запрос
         $row_obj_furnitur_prop = mysqli_fetch_array($Result_obj_furnitur_prop);//получаем все записи из таблицы
@@ -1283,12 +831,12 @@ switch ($tbl) {
                         <h2><i class="glyphicon glyphicon-list-alt"></i> Свойства фурнитуры (obj_furnitur_prop)</h2>    
                         <div class="box-icon">
                             
-                            <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
+                            <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
                             
                                         
                         </div>
                     </div>
-                    <div class="box-content">
+                    <div class="box-content" style="display: block;">
                     ';  
                     
                     echo '<div class="row">
@@ -1410,6 +958,459 @@ switch ($tbl) {
         mysqli_free_result($Result_obj_furnitur_prop);
         echo '</li>';
     /////obj_furnitur_prop 
+     /////obj_download 
+     $Result_obj_download = mysqli_query($dbconn,"SELECT *  FROM obj_download WHERE obj_id = $DbNumberID");//MySQL запрос
+     $row_obj_download = mysqli_fetch_array($Result_obj_download);//получаем все записи из таблицы
+     
+     echo '<div class="row">
+             <div class="box col-md-12">
+                 <div class="box-inner">
+                     <div class="box-header well" data-original-title="">
+                         <h2><i class="glyphicon glyphicon-list-alt"></i> Файлы для скачивания (obj_download)</h2>    
+                         <div class="box-icon">
+                             <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
+                                     class="glyphicon glyphicon-chevron-down"></i></a>       
+                         </div>
+                     </div>
+                     <div class="box-content"> 
+                 ';
+
+                 // echo '
+                 // <div class="checkbox">
+                 //     <label>
+                 //         <input type="checkbox" id="checkbox">
+                 //         Юридические документы
+                 //     </label>
+                 // </div>
+                 // ';
+                 // echo '<div class="noyri">';
+                 echo '<div class="row">
+                         <div class="input-group col-md-12">
+                             <div class="input-group ">                       
+                                 <span class="input-group-addon">PDF</span>
+                                 <input type="text" class="form-control" id="recipient-PDF " value="'.$row_obj_download["pdf_obj"].'" required>
+                                 <span class="input-group-btn">
+                                     <button type="button"  data-tbl="obj_download"  data-field ="pdf_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                 </span>
+                             </div>
+                         </div>
+                     </div>
+                 '; 
+                 echo '<div class="row">
+                         <div class="input-group col-md-12">
+                             <div class="input-group ">                       
+                                 <span class="input-group-addon">XLS</span>
+                                 <input type="text" class="form-control" id="recipient-XLS " value="'.$row_obj_download["xls_obj"].'" required>
+                                 <span class="input-group-btn">
+                                     <button type="button"  data-tbl="obj_download"  data-field ="xls_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                 </span>
+                             </div>
+                         </div>
+                     </div>
+                 ';
+                 echo '<div class="row">
+                         <div class="input-group col-md-12">
+                             <div class="input-group ">                       
+                                 <span class="input-group-addon">DOC</span>
+                                 <input type="text" class="form-control" id="recipient-DOC " value="'.$row_obj_download["doc_obj"].'" required>
+                                 <span class="input-group-btn">
+                                     <button type="button"  data-tbl="obj_download"  data-field ="doc_obj" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                 </span>
+                             </div>
+                         </div>
+                     </div>
+                 ';
+                 echo '<div class="row">
+                         <div class="input-group col-md-12">
+                             <div class="input-group ">                       
+                                 <span class="input-group-addon">DWG</span>
+                                 <input type="text" class="form-control" id="recipient-DWG" value="'.$row_obj_download["dwg_obj"].'" required>
+                                 <span class="input-group-btn">
+                                     <button type="button" data-tbl="obj_download"  data-field ="dwg_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                 </span>
+                             </div>
+                         </div>
+                     </div>
+                 ';
+
+
+                 // echo '<div class="row">
+                 //         <div class="col-xs-12">
+                 //             <ul class="file-list">
+                 //                 <li class="file">
+                 //                     <a class="file-link" href="javascript:void(0)" title="file-name.doc">
+                 //                         <div class="file-thumbnail file-thumbnail-doc"></div>
+                 //                         <div class="file-info">
+                 //                             <span class="file-ext">doc</span>
+                 //                             <span class="file-name">file-name.</span>
+                 //                         </div>
+                 //                     </a>
+                 //                 </li>
+                 //                 <li class="file">
+                 //                     <a class="file-link" href="javascript:void(0)" title="file-name.xls">
+                 //                         <div class="file-thumbnail file-thumbnail-xls"></div>
+                 //                         <div class="file-info">
+                 //                             <span class="file-ext">xls</span>
+                 //                             <span class="file-name">file-name.</span>
+                 //                         </div>
+                 //                     </a>
+                 //                 </li>
+                 //                 <li class="file">
+                 //                     <a class="file-link" href="javascript:void(0)" title="file-name.pdf">
+                 //                         <div class="file-thumbnail file-thumbnail-pdf"></div>
+                 //                         <div class="file-info">
+                 //                             <span class="file-ext">pdf</span>
+                 //                             <span class="file-name">file-name.</span>
+                 //                         </div>
+                 //                     </a>
+                 //                 </li>
+                 //                 <li class="file">
+                 //                     <a class="file-link" href="javascript:void(0)" title="file-name.zip">
+                 //                         <div class="file-thumbnail file-thumbnail-zip"></div>
+                 //                         <div class="file-info">
+                 //                             <span class="file-ext">zip</span>
+                 //                             <span class="file-name">file-name.</span>
+                 //                         </div>
+                 //                     </a>
+                 //                 </li>
+                 //                 <li class="file">
+                 //                     <a class="file-link" href="javascript:void(0)" title="file-name.zip">
+                 //                         <div class="file-thumbnail file-thumbnail-dwg"></div>
+                 //                         <div class="file-info">
+                 //                             <span class="file-ext">dwg</span>
+                 //                             <span class="file-name">file-name.</span>
+                 //                         </div>
+                 //                     </a>
+                 //                 </li>
+                 //                 <li class="file">
+                 //                     <a class="file-link" href="javascript:void(0)" title="file-name.*">
+                 //                         <div class="file-thumbnail file-thumbnail-att"></div>
+                 //                         <div class="file-info">
+                 //                             <span class="file-ext">*</span>
+                 //                             <span class="file-name">file-name.</span>
+                 //                         </div>
+                 //                     </a>
+                 //                 </li>
+                                 
+                 //                 <li class="file">
+                 //                     <a class="file-link" href="img/0189082606.jpg" title="0189082606.jpg" download="0189082606.jpg">
+                 //                         <div class="file-thumbnail" style="background-image: url(img/0189082606.jpg);"></div>
+                 //                         <div class="file-info">
+                 //                             <span class="file-ext">jpg</span>
+                 //                             <span class="file-name">0189082606.</span>
+                 //                         </div>
+                 //                     </a>
+                 //                     <button class="file-delete-btn delete" title="Delete" type="button">
+                 //                         <span class="glyphicon glyphicon-remove"></span>
+                 //                     </button>
+                 //                 </li>
+                 //             </ul>
+                 //         </div>
+                 //     </div>
+                 // ';
+            
+
+                 // echo '</div><!--class="noyri"-->';
+                 // echo '<div class="yri">';
+
+                 // echo '<div class="row">
+                 //         <div class="input-group col-md-12">
+                 //             <div class="input-group ">                       
+                 //                 <span class="input-group-addon">ЮРИ-PDF</span>
+                 //                 <input type="text" class="form-control" id="recipient-yriPDF " value="'.$row_obj_download["data_ypdf"].'" required>
+                 //                 <span class="input-group-btn">
+                 //                     <button type="button"  data-tbl="obj_download"  data-field ="data_ypdf" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                 //                 </span>
+                 //             </div>
+                 //         </div>
+                 //     </div>
+                 // '; 
+                 // echo '<div class="row">
+                 //         <div class="input-group col-md-12">
+                 //             <div class="input-group ">                       
+                 //                 <span class="input-group-addon">ЮРИ-XLS</span>
+                 //                 <input type="text" class="form-control" id="recipient-yriXLS " value="'.$row_obj_download["data_yxls"].'" required>
+                 //                 <span class="input-group-btn">
+                 //                     <button type="button"  data-tbl="obj_download"  data-field ="data_yxls" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                 //                 </span>
+                 //             </div>
+                 //         </div>
+                 //     </div>
+                 // ';
+                 // echo '<div class="row">
+                 //         <div class="input-group col-md-12">
+                 //             <div class="input-group ">                       
+                 //                 <span class="input-group-addon">ЮРИ-DOC</span>
+                 //                 <input type="text" class="form-control" id="recipient-yriDOC " value="'.$row_obj_download["data_ydoc"].'" required>
+                 //                 <span class="input-group-btn">
+                 //                     <button type="button"  data-tbl="obj_download"  data-field ="data_ydoc" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                 //                 </span>
+                 //             </div>
+                 //         </div>
+                 //     </div>
+                 // ';
+
+                 // echo '</div><!--class="yri"-->';
+
+
+                
+
+                 if ($row_obj_download["data_spng"] == "noPNG")
+                 {
+                 echo '<div class="row">
+                         <div class="input-group col-md-12">
+                             <div class="input-group ">  
+                             <!--<span class="input-group-addon">PNG</span>-->                     
+                                 <span class="input-group-addon">'.$row_obj_download["data_spng"].'</span>                                
+                                 <select class="form-control" id="recipient-PNG">                                
+                                     <option selected value="noPNG">Нет</option>
+                                     <option value="PNG">Да</option>
+                                 </select>
+                                 <span class="input-group-btn">
+                                     <button type="button"  data-tbl="obj_download"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                 </span>
+                             </div>
+                         </div>
+                     </div>
+                 ';
+                 }
+                 else
+                 {
+                 echo '<div class="row">
+                         <div class="input-group col-md-12">
+                             <div class="input-group ">   
+                             <!--<span class="input-group-addon">PNG</span>-->                      
+                                 <span class="input-group-addon">PNG</span>                                
+                                 <select class="form-control" id="recipient-PNG" >                                
+                                     <option value="noPNG">Нет скачивания изображения</option>
+                                     <option selected value="PNG">Есть скачивание изображения</option>
+                                 </select>
+                                 <span class="input-group-btn">
+                                     <button type="button"  data-tbl="obj_download"  data-field ="data_spng" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                 </span>
+                             </div>
+                         </div>
+                     </div>
+                 ';
+ 
+                 }
+
+                 if ($row_obj_download["data_prnt"] == "noPrint")
+                 {
+                     echo '<div class="row">
+                             <div class="input-group col-md-12">
+                                 <div class="input-group ">  
+                                 <!--<span class="input-group-addon">Print</span> -->                    
+                                     <span class="input-group-addon">Печать</span>
+                                     <select class="form-control"  id="recipient-prnt">
+                                         <option selected value="noPrint">Нет</option>
+                                         <option value="Print">Да</option>
+                                     </select>
+                                     <span class="input-group-btn">
+                                         <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                     </span>
+                                 </div>
+                             </div>
+                         </div>
+                     ';
+                 }
+                 else
+                 {
+                     echo '<div class="row">
+                             <div class="input-group col-md-12">
+                                 <div class="input-group ">   
+                                 <!--<span class="input-group-addon">Print</span> -->                    
+                                     <span class="input-group-addon">Печать</span>
+                                     <select class="form-control"  id="recipient-prnt" >
+                                         <option value="noPrint">Нет</option>
+                                         <option selected value="Да">Печать</option>
+                                     </select>
+                                     <span class="input-group-btn">
+                                         <button type="button"  data-tbl="obj_download"  data-field ="data_prnt" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                     </span>
+                                 </div>
+                             </div>
+                         </div>
+                     ';
+                 }
+                
+                 echo '
+                     </div>      
+                 </div>
+             </div>            
+         </div><!--/row-->'
+     ;
+     mysqli_free_result($Result_obj_download); 
+ /////obj_download            
+ /////obj_alias             
+     $Result_obj_alias = mysqli_query($dbconn,"SELECT *  FROM obj_alias WHERE obj_id = $DbNumberID");//MySQL запрос      
+     echo '   
+     <div class="row">
+         <div class="box col-md-12">
+             <div class="box-inner">
+                 <div class="box-header well" data-original-title="">
+                     <h2><i class="glyphicon glyphicon-list-alt"></i> Псевдонимы (obj_alias)</h2>    
+                     <div class="box-icon">
+                         <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
+                                 class="glyphicon glyphicon-chevron-down"></i></a>       
+                     </div>
+                 </div>
+                 <div class="box-content obj_alias" > 
+                 ';
+                 $row1="row1";
+                 while($row_obj_alias = mysqli_fetch_array($Result_obj_alias))
+                 {
+                 echo '<div class="row '.$row1.'">
+                             <div class="input-group col-md-12">
+                                 <div class="input-group ">                       
+                                     <span class="input-group-addon">Keywords</span>
+                                     <input type="text" class="form-control" id="recipient-obj_alias__'.$row_obj_alias["obj_alias_id"].'" value="'.$row_obj_alias["keywords_alias"].'" required>
+                                     <span class="input-group-btn">
+                                         <button type="button"  data-tbl="obj_alias"  data-field ="keywords_alias" data-fieldid="obj_alias_id" data-id="alias_'.$row_obj_alias["obj_alias_id"].'" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                         <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
+                                         <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>                                          
+                                     </span>
+                                 </div>
+                             </div>
+                         </div>
+                     ';
+                     $row1="";
+             }//while      
+             echo ' 
+                 </div>      
+             </div>
+         </div>            
+     </div><!--/row-->'
+     ;    
+     mysqli_free_result($Result_obj_alias);
+ /////obj_alias
+ /////obj_in_addition             
+     $Result_obj_in_addition = mysqli_query($dbconn,"SELECT *  FROM obj_in_addition WHERE obj_id = $DbNumberID");//MySQL запрос
+     echo '   
+     <div class="row">
+         <div class="box col-md-12">
+             <div class="box-inner">
+                 <div class="box-header well" data-original-title="">
+                     <h2><i class="glyphicon glyphicon-list-alt"></i> Дополнительные страницы (obj_in_addition)</h2>    
+                     <div class="box-icon">
+                         <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
+                                 class="glyphicon glyphicon-chevron-down"></i></a>       
+                     </div>
+                 </div>
+                 <div class="box-content obj_in_addition">   
+                 ';
+                 $row1="row1";
+                 while($row_obj_in_addition = mysqli_fetch_array($Result_obj_in_addition))
+                 {
+                 echo '<div class="row '.$row1.'">
+                         <div class="input-group col-md-12">
+                             <div class="input-group ">                       
+                                 <span class="input-group-addon btn btn-minimize  btn-default  button34">Страница №_ (fname_img_obj_in_addition)<i class="glyphicon glyphicon-chevron-down"></i></span>
+                                 <input type="text" class="form-control" id="recipient-fname_img_obj_in_addition__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["fname_img_obj_in_addition"].'" required>
+                                 <span class="input-group-btn">
+                                         <button type="button" data-tbl="obj_in_addition"  data-field ="fname_img_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                         <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
+                                         <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>  
+                                     <!-- <button type="button" class="btn btn-minimize btn-default button34"><i class="glyphicon glyphicon-chevron-down"></i></button> -->                                                                                   
+                                 </span>
+                             </div>
+                             <div class="box-content">
+                             ';
+
+                                 echo '<div class="row">
+                                             <div class="input-group col-md-12">
+                                                 <div class="input-group ">                       
+                                                     <span class="input-group-addon">html_in_addition_id</span>
+                                                     <input type="text" class="form-control" id="recipient-html_in_addition_id__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["html_in_addition_id"].'" required>
+                                                     <span class="input-group-btn">
+                                                         <button type="button" data-tbl="obj_in_addition" data-field="html_in_addition_id"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                     </span>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         
+                                 ';
+                                 echo '<div class="row">
+                                             <div class="input-group col-md-12">
+                                                 <div class="input-group ">                       
+                                                     <span class="input-group-addon">path_img_obj_in_addition</span>
+                                                     <input type="text" class="form-control" id="recipient-path_img_obj_in_addition__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["path_img_obj_in_addition"].'" required>
+                                                     <span class="input-group-btn">
+                                                         <button type="button" data-tbl="obj_in_addition" data-field ="path_img_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                     </span>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         
+                                 ';
+                                 echo '<div class="row">
+                                             <div class="input-group col-md-12">
+                                                 <div class="input-group ">                       
+                                                     <span class="input-group-addon">data_href_img_obj_in_addition</span>
+                                                     <input type="text" class="form-control" id="recipient-data_href_img_obj_in_addition__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["data_href_img_obj_in_addition"].'" required>
+                                                     <span class="input-group-btn">
+                                                         <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                     </span>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         
+                                 ';
+                                 echo '<div class="row">
+                                             <div class="input-group col-md-12">
+                                                 <div class="input-group ">                       
+                                                     <span class="input-group-addon">fname_img_smoll_obj_in_addition</span>
+                                                     <input type="text" class="form-control" id="recipient-fname_img_smoll_obj_in_addition__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["fname_img_smoll_obj_in_addition"].'" required>
+                                                     <span class="input-group-btn">
+                                                         <button type="button" data-tbl="obj_in_addition" data-field ="fname_img_smoll_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                     </span>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         
+                                 ';
+                                 echo '<div class="row">
+                                             <div class="input-group col-md-12">
+                                                 <div class="input-group ">                       
+                                                     <span class="input-group-addon">data_href_img_smoll_obj_in_addition</span>
+                                                     <input type="text" class="form-control" id="recipient-data_href_img_smoll_obj_in_addition__'.$row_obj_in_addition["obj_in_addition_id"].'" value="'.$row_obj_in_addition["data_href_img_smoll_obj_in_addition"].'" required>
+                                                     <span class="input-group-btn">
+                                                         <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_smoll_obj_in_addition"  data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                     </span>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         
+                                 ';
+                                 echo '<div class="row">
+                                             <div class="input-group col-md-12">
+                                                 <div class="input-group ">                       
+                                                     <span class="input-group-addon">img_def</span>
+                                                     <textarea class="form-control"  id="recipient-img_def__'.$row_obj_in_addition["obj_in_addition_id"].'" name="text">'.$row_obj_in_addition["img_def"].'</textarea>
+                                                     <span class="input-group-btn">
+                                                         <button type="button" data-tbl="obj_in_addition" data-field ="img_def" data-fieldid="obj_in_addition_id" data-id="addition_'.$row_obj_in_addition["obj_in_addition_id"].'"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
+                                                     </span>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         
+                                 ';
+
+                                 echo '
+                             </div>
+                         </div>
+                     </div>
+                 ';
+                 $row1="";
+                 }//while   
+                 mysqli_free_result($Result_obj_in_addition); 
+                     echo '
+                 </div>      
+             </div>
+         </div>            
+     </div><!--/row-->'
+     ;
+ /////obj_in_addition  
  /////if
     }
     else //add new obj
@@ -1593,302 +1594,7 @@ switch ($tbl) {
             </div>
         ';    
      /////obj    
-     /////obj_download      
-        echo '<div class="row">
-                <div class="box col-md-12">
-                    <div class="box-inner">
-                        <div class="box-header well" data-original-title="">
-                            <h2><i class="glyphicon glyphicon-list-alt"></i> Файлы для скачивания (obj_download)</h2>    
-                            <div class="box-icon">
-                                <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
-                                        class="glyphicon glyphicon-chevron-down"></i></a>       
-                            </div>
-                        </div>
-                        <div class="box-content"> 
-                    ';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">PDF</span>
-                                    <input type="text" class="form-control" id="recipient-PDF " value="" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="pdf_obj"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    '; 
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">XLS</span>
-                                    <input type="text" class="form-control" id="recipient-XLS " value="" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="xls_obj"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">DOC</span>
-                                    <input type="text" class="form-control" id="recipient-DOC " value="" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="doc_obj"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">DWG</span>
-                                    <input type="text" class="form-control" id="recipient-DWG" value="" required>
-                                    <span class="input-group-btn">
-                                        <button type="button" data-tbl="obj_download"  data-field ="dwg_obj"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                
-                                    <span class="input-group-addon">PNG</span>                                
-                                    <select class="form-control" id="recipient-PNG" >                                
-                                        <option value="noPNG">Нет скачивания изображения</option>
-                                        <option selected value="PNG">Есть скачивание изображения</option>
-                                    </select>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_spng"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';                
-                    echo '<div class="row">
-                                <div class="input-group col-md-12">
-                                    <div class="input-group ">  
-                                    <!--<span class="input-group-addon">Print</span> -->                    
-                                        <span class="input-group-addon">Печать</span>
-                                        <select class="form-control"  id="recipient-prnt">
-                                            <option selected value="noPrint">Нет</option>
-                                            <option value="Print">Да</option>
-                                        </select>
-                                        <span class="input-group-btn">
-                                            <button type="button"  data-tbl="obj_download"  data-field ="data_prnt"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                    ';
-                
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">ЮРИ-PDF</span>
-                                    <input type="text" class="form-control" id="recipient-yriPDF " value="" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_ypdf"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    '; 
-                    echo '<div class="row">
-                            <div class="input-group col-md-12">
-                                <div class="input-group ">                       
-                                    <span class="input-group-addon">ЮРИ-XLS</span>
-                                    <input type="text" class="form-control" id="recipient-yriXLS " value="" required>
-                                    <span class="input-group-btn">
-                                        <button type="button"  data-tbl="obj_download"  data-field ="data_yxls"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    ';
-                    echo '<div class="row">
-                                <div class="input-group col-md-12">
-                                    <div class="input-group ">                       
-                                        <span class="input-group-addon">ЮРИ-DOC</span>
-                                        <input type="text" class="form-control" id="recipient-yriDOC " value="" required>
-                                        <span class="input-group-btn">
-                                            <button type="button"  data-tbl="obj_download"  data-field ="data_ydoc"  class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        ';
-                    echo '
-                            </div>      
-                        </div>
-                    </div>            
-                </div><!--/row-->'
-            ;
-    
-     /////obj_download            
-     /////obj_alias   
-        echo '   
-            <div class="row">
-                <div class="box col-md-12">
-                    <div class="box-inner">
-                        <div class="box-header well" data-original-title="">
-                            <h2><i class="glyphicon glyphicon-list-alt"></i> Псевдонимы (obj_alias)</h2>    
-                            <div class="box-icon">
-                                <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
-                                        class="glyphicon glyphicon-chevron-down"></i></a>       
-                            </div>
-                        </div>
-                        <div class="box-content obj_alias" > 
-                        ';
-                        $row1="row1";                 
-                        echo '<div class="row '.$row1.'">
-                                    <div class="input-group col-md-12">
-                                        <div class="input-group ">                       
-                                            <span class="input-group-addon">Keywords</span>
-                                            <input type="text" class="form-control" id="recipient-obj_alias__00" value="" required>
-                                            <span class="input-group-btn">
-                                                <button type="button"  data-tbl="obj_alias"  data-field ="keywords_alias" data-fieldid="obj_alias_id"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
-                                                <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>                                          
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            ';
-                            $row1="";                
-                    echo ' 
-                            </div>      
-                        </div>
-                    </div>            
-                </div><!--/row-->'
-            ;
-     /////obj_alias
-     /////obj_in_addition 
-        echo '   
-            <div class="row">
-                <div class="box col-md-12">
-                    <div class="box-inner">
-                        <div class="box-header well" data-original-title="">
-                            <h2><i class="glyphicon glyphicon-list-alt"></i> Дополнительные страницы (obj_in_addition)</h2>    
-                            <div class="box-icon">
-                                <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i
-                                        class="glyphicon glyphicon-chevron-down"></i></a>       
-                            </div>
-                        </div>
-                        <div class="box-content obj_in_addition">   
-                        ';
-                        $row1="row1";                
-                        echo '<div class="row '.$row1.'">
-                                <div class="input-group col-md-12">
-                                    <div class="input-group ">                       
-                                        <span class="input-group-addon btn btn-minimize  btn-default  button34">Страница №_ (fname_img_obj_in_addition)<i class="glyphicon glyphicon-chevron-down"></i></span>
-                                        <input type="text" class="form-control" id="recipient-fname_img_obj_in_addition__00" value="" required>
-                                        <span class="input-group-btn">
-                                                <button type="button" data-tbl="obj_in_addition"  data-field ="fname_img_obj_in_addition"  data-fieldid="obj_in_addition_id"    class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                <button type="button" class="btn btn-danger button32"><i class="glyphicon glyphicon-trash icon-white"></i></button>
-                                                <button type="button" class="btn btn-primary button33"><i class="glyphicon glyphicon-plus-sign icon-white"></i></button>                                                                                                                       
-                                        </span>
-                                    </div>
-                                    <div class="box-content">
-                                    ';
-
-                                        echo '<div class="row">
-                                                    <div class="input-group col-md-12">
-                                                        <div class="input-group ">                       
-                                                            <span class="input-group-addon">html_in_addition_id</span>
-                                                            <input type="text" class="form-control" id="recipient-html_in_addition_id__00" value="" required>
-                                                            <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field="html_in_addition_id"  data-fieldid="obj_in_addition_id"     class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                        ';
-                                        echo '<div class="row">
-                                                    <div class="input-group col-md-12">
-                                                        <div class="input-group ">                       
-                                                            <span class="input-group-addon">path_img_obj_in_addition</span>
-                                                            <input type="text" class="form-control" id="recipient-path_img_obj_in_addition__00" value="" required>
-                                                            <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field ="path_img_obj_in_addition"  data-fieldid="obj_in_addition_id"     class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                        ';
-                                        echo '<div class="row">
-                                                    <div class="input-group col-md-12">
-                                                        <div class="input-group ">                       
-                                                            <span class="input-group-addon">data_href_img_obj_in_addition</span>
-                                                            <input type="text" class="form-control" id="recipient-data_href_img_obj_in_addition__00" value="" required>
-                                                            <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_obj_in_addition"  data-fieldid="obj_in_addition_id"    class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                        ';
-                                        echo '<div class="row">
-                                                    <div class="input-group col-md-12">
-                                                        <div class="input-group ">                       
-                                                            <span class="input-group-addon">fname_img_smoll_obj_in_addition</span>
-                                                            <input type="text" class="form-control" id="recipient-fname_img_smoll_obj_in_addition__00" value="" required>
-                                                            <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field ="fname_img_smoll_obj_in_addition"  data-fieldid="obj_in_addition_id"     class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                        ';
-                                        echo '<div class="row">
-                                                    <div class="input-group col-md-12">
-                                                        <div class="input-group ">                       
-                                                            <span class="input-group-addon">data_href_img_smoll_obj_in_addition</span>
-                                                            <input type="text" class="form-control" id="recipient-data_href_img_smoll_obj_in_addition__00" value="" required>
-                                                            <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field ="data_href_img_smoll_obj_in_addition"  data-fieldid="obj_in_addition_id"    class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                        ';
-                                        echo '<div class="row">
-                                                    <div class="input-group col-md-12">
-                                                        <div class="input-group ">                       
-                                                            <span class="input-group-addon">img_def</span>
-                                                            <textarea class="form-control"  id="recipient-img_def__00" name="text"></textarea>
-                                                            <span class="input-group-btn">
-                                                                <button type="button" data-tbl="obj_in_addition" data-field ="img_def" data-fieldid="obj_in_addition_id"   class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                        ';
-
-                                        echo '
-                                    </div>
-                                </div>
-                            </div>
-                        ';
-                        $row1="";
-                        
-                            echo '
-                        </div>      
-                    </div>
-                </div>            
-            </div><!--/row-->'
-        ;
-     /////obj_in_addition  
+ 
      /////obj_furnitur_prop 
         echo '    
                 <div class="row">
@@ -1976,7 +1682,8 @@ switch ($tbl) {
         ;
         
         echo '</li>';
-     /////obj_furnitur_prop  
+     /////obj_furnitur_prop 
+      
      mysqli_free_result($Result_obj);   
     }
         break;

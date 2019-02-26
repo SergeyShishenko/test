@@ -1,4 +1,5 @@
 <?php
+error_reporting(-1);
 //подключаем конфигурационный файл бд
 define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
@@ -69,8 +70,9 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                     exit();
                 }                
             // }
-
+           
             $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+           
         }
         else // не obj
         {   
@@ -93,7 +95,10 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
         }
         
         // $sql = "INSERT INTO  `$tbl`(`$field`,`$parent[0]`) VALUES ('$contentToSave','$parent[1]')";
+       
         $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+        
+       
 
         if(!mysqli_query($dbconn,$sql))
         {        
@@ -159,15 +164,23 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
                     }                   
                 }
 
-            }    
+            }   
+            
                 $sql = "UPDATE `$tbl` SET `$field`= $new WHERE `$fieldid`=$id"; 
                         mysqli_query($dbconn,$sql); 
                 
           
             mysqli_free_result($Result);
         }
-
+        //
         $sql = "UPDATE `$tbl` SET `$field`= TRIM('$contentToSave') WHERE `$fieldid`=$id";
+        if ($tbl=="obj" && $field=="name_obj")
+        {
+            
+            mysqli_query($dbconn, "UPDATE `obj` SET `obj_def` = TRIM('$contentToSave') WHERE `obj_id`=$id");
+            mysqli_query($dbconn, "UPDATE `obj_furnitur_prop` SET `name_furnitur_obj_prop` = TRIM('$contentToSave') WHERE `obj_id`=$id");
+            mysqli_query($dbconn, "UPDATE `obj_furnitur_prop` SET `def_obj_prop` = TRIM('$contentToSave') WHERE `obj_id`=$id");
+        }
 
         //  header('HTTP/1.1 400 $sql= '.$sql);        
         // exit();
