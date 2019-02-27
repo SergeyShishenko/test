@@ -62,15 +62,24 @@
 
     <footer class="row">
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
-        <!-- <label>Добавить раздел</label> -->
-                    <input type="text" value="" name="add_section" class="text" size="100" placeholder="Наименование раздела" id="contentText" >                   
-                    <!-- <input type="submit" value="Добавить раздел" name="write" class="button" id="FormSubmit0"> -->
-                    <button type="submit" class="button animated tada" id="FormSubmit" >Добавить раздел  <span class="glyphicon glyphicon-plus-sign"></span>   </button>
-                </div>
+            <!-- <label>Добавить раздел</label> -->
+            <input type="text" value="" name="add_section" class="text" size="100" placeholder="Наименование раздела" id="contentText" >                   
+            <!-- <input type="submit" value="Добавить раздел" name="write" class="button" id="FormSubmit0"> -->
+            <button type="submit" class="button animated tada" id="FormSubmit" >Добавить раздел  <span class="glyphicon glyphicon-plus-sign"></span>   </button>
+        </div>
+        <hr><hr>
+        <div class="col-md-9 col-sm-9 col-xs-12 copyright">
+           
+            <input type="text" value="" name="add_Furn" class="text add" size="100" placeholder="Наименование фурнитуры" id="Furn" >
+            <input type="text" value="" name="add_Art" class="text add" size="100" placeholder="Артикул" id="Art" >
+            <input type="text" value="" name="add_NameFile" class="text add" size="100" placeholder="Имя файла" id="NameFile" >
+            <input type="text" value="" name="add_Bild" class="text add" size="100" placeholder="Производитель" id="Bild" >
+            <input type="text" value="" name="add_Colour" class="text add" size="100" placeholder="Цвет" id="Colour" >
+            <input type="text" value="" name="add_Unit" class="text add" size="100" placeholder="Ед.измерения" id="Unit" >
+            <button type="submit" class="button animated tada" id="AddFurnSubmit" >Добавить новую фурнитуру<span class="glyphicon glyphicon-plus-sign"></span></button>
+        </div>
 
-        <p class="col-md-3 col-sm-3 col-xs-12 powered-by">
-        &copy; <a href="#" >Сергей Шишенко</a> <?php echo date('Y') ?>
-                </p>
+        <p class="col-md-3 col-sm-3 col-xs-12 powered-by">&copy; <a href="#" >Сергей Шишенко</a> <?php echo date('Y') ?></p>
     </footer>
 <?php } ?>
 
@@ -151,6 +160,32 @@
                         success:function(response){
                         $("#responds").append(response);
                         $("#contentText").val(''); //очищаем текстовое поле после успешной вставки
+                        },
+                        error:function (xhr, ajaxOptions, thrownError){
+                            alert(thrownError); //выводим ошибку
+                        }
+                    });
+                });
+
+               // Добавляем новую фурнитуру по шаблону, когда произошел клик по кнопке
+                $("#AddFurnSubmit").click(function (e) {
+                    alert('AddFurnSubmit');
+                    return false;
+                    e.preventDefault();
+                    if($("#Furn").val()==="") //simple validation
+                    {
+                        alert("Введите наименование!");
+                        return false;
+                    }
+                    var myData = "content_txt="+ $("#Furn").val(); //post variables
+                    jQuery.ajax({
+                        type: "POST", // HTTP метод  POST или GET
+                        url: "response.php", //url-адрес, по которому будет отправлен запрос
+                        dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
+                        data:myData, //данные, которые будут отправлены на сервер (post переменные)
+                        success:function(response){
+                        $("#responds").append(response);
+                        $("#Furn").val(''); //очищаем текстовое поле после успешной вставки
                         },
                         error:function (xhr, ajaxOptions, thrownError){
                             alert(thrownError); //выводим ошибку

@@ -5,6 +5,13 @@ define('__ROOT__', dirname(dirname(__FILE__)));
 require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
 
 $dbconn=dbconnect();
+
+
+
+
+
+
+
 //проверяем $_POST["content_txt"] на пустое значение
 if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
 {
