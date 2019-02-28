@@ -3,9 +3,12 @@
     </div><!--/#content.col-md-0-->
 <?php } ?>
 </div><!--/fluid-row-->
-<?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>  
+<?php if (!isset($no_visible_elements) || !$no_visible_elements) { ?>
+  
                 
-        </div> 
+        </div>
+
+   
 
     <hr>
  <!-- .modal -->
@@ -67,25 +70,75 @@
         <hr><hr>
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
            
-            <input type="text" value="Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы" name="add_Furn" class="text add" size="100" placeholder="Наименование фурнитуры" id="Furn" >
-            <input type="text" value="5000502-01-100" name="add_Art" class="text add" size="100" placeholder="Артикул" id="Art" >
-            <input type="text" value="test.png" name="add_NameFile" class="text add" size="100" placeholder="Имя файла" id="NameFile" >
-            <input type="text" value="BLUM" name="add_Bild" class="text add" size="100" placeholder="Производитель" id="Bild" >
-            <input type="text" value="Никелиров." name="add_Colour" class="text add" size="100" placeholder="Цвет" id="Colour" >
-            <input type="text" value="комплектов" name="add_Unit" class="text add" size="100" placeholder="Ед.измерения" id="Unit" >
+            <input type="text" value="" name="add_Furn" class="text add" size="100" placeholder="Наименование фурнитуры" id="Furn" >
+            <input type="text" value="" name="add_Art" class="text add" size="100" placeholder="Артикул" id="Art" >
+            <input type="text" value="" name="add_NameFile" class="text add" size="100" placeholder="Имя файла" id="NameFile" >
+            <input type="text" value="" name="add_Bild" class="text add" size="100" placeholder="Производитель" id="Bild" >
+            <input type="text" value="" name="add_Colour" class="text add" size="100" placeholder="Цвет" id="Colour" >
+            <input type="text" value="" name="add_Unit" class="text add" size="100" placeholder="Ед.измерения" id="Unit" >
             <button type="submit" class="button animated tada" id="AddFurnSubmit" >Добавить новую фурнитуру<span class="glyphicon glyphicon-plus-sign"></span></button>
         </div>
-        <!-- <div id='outputting'></div> -->
-        <div class="col-md-12 col-sm-12 col-xs-12 " id='outputID'>ID -</div>
-        <hr><hr>
-        <div class="col-md-12 col-sm-12 col-xs-12 " style="float:right;">
-        <p class="col-md-12 col-sm-12 col-xs-12 powered-by ">&copy; <a href="#" >Сергей Шишенко</a> <?php echo date('Y') ?></p>
-        </div>
+        <div id='outputting'></div>
+        <div id='outputID'></div>
+
+        <p class="col-md-3 col-sm-3 col-xs-12 powered-by">&copy; <a href="#" >Сергей Шишенко</a> <?php echo date('Y') ?></p>
     </footer>
 <?php } ?>
+
+<!--</div>/.fluid-container-->
+
+<!-- external javascript -->
+
+
+
+
+
+
+<!-- <script src="bower_components/jquery/jquery.min.js"></script> -->
+<!-- <script src="js/jquery.uploadify-3.1.min.js"></script> -->
+
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- <script src="js/jquery-ui.min.js"></script> -->
+<!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<!-- <script src="js/upload.js"></script> -->
+
+
+<!-- library for cookie management -->
+<!-- <script src="js/jquery.cookie.js"></script> -->
+<!-- calender plugin -->
+<!-- <script src='bower_components/moment/min/moment.min.js'></script> -->
+<!-- <script src='bower_components/fullcalendar/dist/fullcalendar.min.js'></script> -->
+<!-- data table plugin -->
+<!-- <script src='js/jquery.dataTables.min.js'></script> -->
+
+<!-- select or dropdown enhancer -->
+<!-- <script src="bower_components/chosen/chosen.jquery.min.js"></script> -->
+<!-- plugin for gallery image view -->
+<!-- <script src="bower_components/colorbox/jquery.colorbox-min.js"></script>  -->
  <script src="bower_components/colorbox/jquery.colorbox.js"></script>
+<!-- notification plugin -->
+<!-- <script src="js/jquery.noty.js"></script> -->
+<!-- library for making tables responsive -->
+<!-- <script src="bower_components/responsive-tables/responsive-tables.js"></script> -->
+<!-- tour plugin -->
+<!-- <script src="bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script> -->
+<!-- star rating plugin -->
+<!-- <script src="js/jquery.raty.min.js"></script> -->
+<!-- for iOS style toggle switch -->
+<!-- <script src="js/jquery.iphone.toggle.js"></script> -->
+<!-- autogrowing textarea plugin -->
+<!-- <script src="js/jquery.autogrow-textarea.js"></script> -->
+<!-- multiple file upload plugin -->
+<!-- <script src="js/jquery.uploadify-3.1.min.js"></script> -->
+<!-- history.js for cross-browser state change on ajax -->
+<!-- <script src="js/jquery.history.js"></script> -->
+
+<!-- application script for Charisma demo -->
+
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script> -->
+<!-- <script src="js/charisma.js"></script> -->
+<!-- <script src="js/javascript.js?v=2"></script> -->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/jquery.uploadify-3.1.min.js"></script>
 <script src="js/charisma.js"></script>
@@ -118,34 +171,23 @@
 
                // Добавляем новую фурнитуру по шаблону, когда произошел клик по кнопке
                 $("#AddFurnSubmit").click(function (e) {
-                    // alert('AddFurnSubmit');
-                    
+                    alert('AddFurnSubmit');
+                    return false;
                     e.preventDefault();
-                     //simple validation
-                    if($("#Furn").val()===""){ alert("Введите Наименование фурнитуры!"); return false;}
-                    if($("#Art").val()===""){ alert("Введите Артикул!"); return false;}
-                    if($("#NameFile").val()===""){ alert("Введите Имя файла!"); return false;}
-                    if($("#Bild").val()===""){ alert("Введите Производитель!"); return false;}
-                    if($("#Colour").val()===""){ alert("Введите Цвет!"); return false;}
-                    if($("#Unit").val()===""){ alert("Введите Ед.измерения!"); return false;}
-                    // return false;
-                    //post variables
-                    // var myData = "content_Furn="+ $("#Furn").val(); 
-                    var myData = "content_Furn="+ $("#Furn").val() +"&"+
-                                 "content_Art="+ $("#Art").val() +"&"+
-                                 "content_NameFile="+ $("#NameFile").val() +"&"+
-                                 "content_Bild="+ $("#Bild").val() +"&"+
-                                 "content_Colour="+ $("#Colour").val() +"&"+
-                                 "content_Unit="+ $("#Unit").val();
-                                
+                    if($("#Furn").val()==="") //simple validation
+                    {
+                        alert("Введите наименование!");
+                        return false;
+                    }
+                    var myData = "content_txt="+ $("#Furn").val(); //post variables
                     jQuery.ajax({
                         type: "POST", // HTTP метод  POST или GET
                         url: "response.php", //url-адрес, по которому будет отправлен запрос
                         dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
                         data:myData, //данные, которые будут отправлены на сервер (post переменные)
                         success:function(response){
-                        $("#outputID").text(response);
-                        // $("#Furn").val(''); //очищаем текстовое поле после успешной вставки
+                        $("#responds").append(response);
+                        $("#Furn").val(''); //очищаем текстовое поле после успешной вставки
                         },
                         error:function (xhr, ajaxOptions, thrownError){
                             alert(thrownError); //выводим ошибку

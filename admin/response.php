@@ -8,6 +8,16 @@ if ($dbconn->connect_errno) {
     printf("Не удалось подключиться: %s\n", $dbconn->connect_error);
     exit();
 }
+
+//проверяем $_POST["content_Furn"] на пустое значение
+if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
+{
+    echo $_POST["content_Furn"];
+}
+
+
+
+
 //проверяем $_POST["content_txt"] на пустое значение
 if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
 {
