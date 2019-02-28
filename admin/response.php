@@ -30,7 +30,20 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
                             mysqli_query($dbconn, "UPDATE `obj` SET `html_id` = $html_id WHERE `obj`.`obj_id`=$id");
                             mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$id')");
                             mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$id')");
-                            mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_id`,`name_furnitur_obj_prop`,`articul_furnitur_obj`,`def_obj_prop`,`made_furnitur_obj`,`color_obj_prop`,`unit_obj_prop`)  VALUES ('$id','$Furn','$Art','$Colour','$Unit')");
+                            mysqli_query($dbconn,
+
+                            //  "INSERT INTO  `obj_furnitur_prop`(`obj_id`,`name_furnitur_obj_prop`,`articul_furnitur_obj`,`def_obj_prop`,`made_furnitur_obj`,`color_obj_prop`,`unit_obj_prop`)  
+                            //  VALUES ('$id','$Furn','$Art','$Colour','$Unit')");
+                             "INSERT INTO  `obj_furnitur_prop`(`obj_furnitur_prop_id`, `name_furnitur_obj_prop`, `articul_furnitur_obj`, `made_furnitur_obj`, `url_furnitur_obj_prop`, `obj_id`, `url_video_obj_prop`, `color_obj_prop`, `def_obj_prop`, `unit_obj_prop`, `fname_img_furn`)  
+                             VALUES (NULL, '$Furn', '$Art', '$Bild', NULL, '$id', NULL, '$Colour', '$Furn', '$Unit', NULL)");
+
+
+
+//INSERT INTO `obj_furnitur_prop` (`obj_furnitur_prop_id`, `name_furnitur_obj_prop`, `articul_furnitur_obj`, `made_furnitur_obj`, `url_furnitur_obj_prop`, `obj_id`, `url_video_obj_prop`, `color_obj_prop`, `def_obj_prop`, `unit_obj_prop`, `fname_img_furn`) VALUES (NULL, 'name_furnitur_obj_prop\r\n', 'articul_furnitur_obj', 'made_furnitur_obj', 'url_furnitur_obj_prop', '24', NULL, 'color_obj_prop', 'def_obj_prop', 'unit_obj_prop', NULL);
+
+
+
+
                             mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$id')");
                              }
                             else{//вывод ошибки                                        
