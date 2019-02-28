@@ -472,7 +472,7 @@ switch ($tbl) {
                 <div class="input-group col-md-12">
                     <div class="input-group ">                       
                         <span class="input-group-addon">Родитель (grupp_id)</span>
-                        <input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required disabled>
+                        <input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required >
                         <span class="input-group-btn">
                             <button type="button" data-tbl="obj" data-field ="grupp_id" class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>
@@ -1441,7 +1441,7 @@ switch ($tbl) {
                 <div class="input-group col-md-12">
                     <div class="input-group ">                       
                         <span class="input-group-addon">Родитель (grupp_id)</span>
-                        <input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required disabled>
+                        <input type="text" class="form-control" id="recipient-parent" value="'.$parent.'" required >
                         <span class="input-group-btn">
                             <button type="button" data-tbl="obj" data-field ="grupp_id"    class="btn btn-default button31 "><i class="glyphicon glyphicon-refresh"></i></button>
                         </span>

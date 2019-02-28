@@ -41,7 +41,11 @@ var se='';
 function CheckObject(obj) {   
     if (IsRoot(obj.Owner)){
         obj.ArtPos = MakeName(obj.Owner,  obj.Name);
-        se=/\d+\.\d+/.exec(obj.Name)[0];
+   if (/\d+\.\d+/.test(obj.Name))
+      {se=/\d+\.\d+/.exec(obj.Name)[0];}
+   else
+         system.log('obj.Name: ' + obj.Name);
+      {se=''; }
     }
     obj.UserProperty['Заказ']=Action.Control.Article.OrderName ;
     obj.UserProperty['Изделие']=Action.Control.Article.Name ;
