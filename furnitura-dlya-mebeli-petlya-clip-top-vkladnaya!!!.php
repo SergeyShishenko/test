@@ -77,7 +77,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulvkladnaya-5000502-01-100_1.png" class="" alt="Петля" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="12">71B9750</td>
+                                                            <td class="animated" data-objfurnid="23">71B9750</td>
                                                             <td>Металл</td> 
                                                             <td colspan="3">пeтля вкладная CLIP top BLUMOTION</td>
                                                         </tr>

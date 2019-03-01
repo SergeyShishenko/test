@@ -84,7 +84,8 @@ if(isset($_POST['ids']))//генерация xls
             {     
                 $furnitur_id=$rowsUser_vpi['obj_furnitur_prop_id'];
                 $furnitur_count=$rowsUser_vpi['count_obj'];
-                $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furnitur_id";// из таблицы вся фурнитура
+                // $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furnitur_id";// из таблицы вся фурнитура
+                $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_id` = $furnitur_id";// из таблицы вся фурнитура
                 $Result=mysqli_query($dbconn,$sql); 
                 $rows = mysqli_fetch_array($Result); 
                 array_push($data,
