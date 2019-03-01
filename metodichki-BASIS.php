@@ -39,6 +39,8 @@ include 'inc-left-side-menu-metodichki.php';
                                             <source src="./dist/video/basis/2019-02-25 at 08-17-55.mp4" type="video/mp4">
                                         </video>
                                     </div>
+                                    <p >Создан: 25/02/2019г.</p>      
+                                    <p >Обновлен: 28/02/2019г.</p>      
                           </div> 
                         
                          </div>
