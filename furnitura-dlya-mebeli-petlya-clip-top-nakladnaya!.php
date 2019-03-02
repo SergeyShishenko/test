@@ -17,187 +17,153 @@ include 'inc-header-menu3.php';
 include 'inc-left-side-menu-furnitura.php';
 ?> 
                 <!-- main  -->
-                <div class="col-md-8 col-md-8-non" role="main" id="main-page">                   
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
+                   
 
-                    <article    id="petli-dlya-fasadov">
+                    <article  id="petli-dlya-fasadov">
                       <section >
-                        <div class="page-header"     >
+                        <div class="page-header"  >
                           <h1 itemprop="name">ПЕТЛИ для ФАСАДОВ</h1>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
-                            
-                            <div class="main-box clearfix"  id="5000502-01-100-petlya-vkladnaya" >   
+                        
+                            <div class="main-box clearfix"  id="5000502-01-101-petlya-nakladnaya">   
                                
-                                <h2 ></h2>                            
-                                <!-- <h2 >Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы</h2>  -->
+                                <h2 >Артикул: 5000502-01-101</h2>                            
+                                <h2 >Петля накладная для профильных дверей 95° CLIP top BLUMOTION 71B9550, чашка петли: на шурупы</h2> 
                                  
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
-                                            <source src="./dist/video/petly/mebelnaya-petlya-s-vstroennym-dovodchikom-blum-clip-top-blumou.mp4" type="video/mp4">
+                                            <source src="./dist/video/petly/clp0015-ctb_pr_rf_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
                                         </video>
                                     </div>
-                                </div>                                
+                                </div>  
+
                             </div>
                             
-                                  <!-- ВПИ -->
-                                  <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
-                                    <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
-                                                border: 1px solid rgb(221, 221, 221);
-                                                box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
-                                                border-radius: 4px;
-                                                padding: 15px;
-                                                ">
-                                
-                                        <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
-                                            <div class="row">                                                
-                                                <h3 class="blum">5000502-01-100 Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы</h3>
-                                                <p>Состав артикула:</p>            
-                                                <table class="table table-striped table-responsive">
-                                                        <thead>
-                                                        <tr>
-                                                            <th>Список</th>
-                                                            <th>К&nbsp;&#8209;&nbsp;во</th>
-                                                            <th>Артикул</th>
-                                                            <th>Цвет&nbsp;/&nbsp;материал</th>
-                                                            <th>Описание</th>
-                                                            <th class="quantity">                                                            
-                                                               <div class="form-group" style="margin-bottom: 0;width: 112px;">				
-                                                                    <input id="add_vpi_count-1"  class="form-control" type="number" value="1" min="1" max="999" style=" width: 70px;margin-left: -1px;">
-                                                                </div>
-                                                                
-                                                            </th>
-                                                            <th class="">
-                                                            
-                                                                <button type="button" id="addvpi" class="btn btn-primary" style="margin-left: 10px;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button>
-                                                            </th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody id="calcresult">
-                                                        <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulvkladnaya-5000502-01-100_1.png" class="" alt="Петля" title=""></td>
-                                                            <td>1</td>
-                                                            <td class="animated" data-objfurnid="23">71B9750</td>
-                                                            <td>Металл</td> 
-                                                            <td colspan="3">пeтля вкладная CLIP top BLUMOTION</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulotvetnaya-planka-173L6100.png" class="" alt="планка ответная" title=""></td>
-                                                            <td>1</td>
-                                                            <td>173L6100</td>
-                                                            <td>Металл</td>
-                                                            <td>планка ответная CLIP, подъем 0 мм, регулировка по высоте продольный паз</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulzaglushka70T3504.png" class="" alt="заглушка под чашку" title=""></td>
-                                                            <td>1</td>
-                                                            <td class="" >70T3504</td>
-                                                            <td>Металл</td> 
-                                                            <td colspan="3">заглушка под чашку петли, без логотипа</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulzaglushka70_1663.png" class="" alt="заглушка на плечо" title=""></td>
-                                                            <td>1</td>
-                                                            <td class="" >70.1663</td>
-                                                            <td>Металл</td> 
-                                                            <td colspan="3">заглушка на плечо петли, без логотипа</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/ArticulBU17PN.png" class="" alt="Футорка" title=""></td>
-                                                            <td>4</td>
-                                                            <td class="" >BU17PN</td>
-                                                            <td>Белый</td> 
-                                                            <td colspan="3">футорка пластиковая</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulsamorezy609_1700.png" class="" alt="саморез" title=""></td>
-                                                            <td>4</td>
-                                                            <td class="" >609.1700</td>
-                                                            <td>Металл</td> 
-                                                            <td colspan="3">саморез для крепления петли четырехшарнирной</td>
-                                                        </tr>
-                                                      
+                            <div class="row">
+                                <div class=" col-xs-6 col-sm-4 col-md-4">
+                                   
+                                    <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Петля накладная для профильных дверей 95°" data-image="./dist/images/nakladnaya-5000502-01-101_1.jpg" data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                    src="./dist/images/nakladnaya-5000502-01-101_1.jpg"
+                                                    data-src="./dist/images/nakladnaya-5000502-01-101_1.jpg"
+                                                    class="center-block   img-rounded img-thumbnail bar "
+                                                    data-toggle="modal"
+                                                                                                                    
+                                                    alt="Петля накладная для профильных дверей 95°"
+                                                    data-pdf="./dist/files/pdf/5000502-01-101-petlya-nakladnaya.pdf"
+                                                    
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Металлическая петля, никелированная" data-image="./dist/images/nakladnaya-5000502-01-101_2.jpg" data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                        src="./dist/images/nakladnaya-5000502-01-101_2.jpg"
+                                                        data-src="./dist/images/nakladnaya-5000502-01-101_2.jpg"
+                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Металлическая петля, никелированная"
                                                         
-                                                        </tbody>
-                                                    </table>
-                                            </div>                              
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Угол открывания 95°" data-image="./dist/images/nakladnaya-5000502-01-101_3.jpg" data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                        src="./dist/images/nakladnaya-5000502-01-101_3.jpg"
+                                                        data-src="./dist/images/nakladnaya-5000502-01-101_3.jpg"
+                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Угол открывания 95°"
+                                                        
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Чашка петли: на шурупы" data-image="./dist/images/nakladnaya-5000502-01-101_4.jpg" data-target="#image-gallery">
+                                                    <img  style="height: 237px;"
+                                                        src="./dist/images/nakladnaya-5000502-01-101_4.jpg" 
+                                                        data-src="./dist/images/nakladnaya-5000502-01-101_4.jpg"
+                                                        class="center-block   img-rounded img-thumbnail  bar "
+                                                        data-toggle="modal"                                                                                                                         
+                                                        alt="Чашка петли: на шурупы"
+                                                        
+                                                    >
+                                                </a>
+                                            </div>
                                         </div>
+                                        <!-- Элементы управления -->
+                                        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                            <span class="sr-only">Предыдущий</span>
+                                        </a>
+                                        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                            <span class="sr-only">Следующий</span>
+                                        </a>
                                     </div>
+
+                                    <div class="overlay"></div>
                                 </div>
-                            <!--/ ВПИ -->
-
-
-                            <div class="row" style="margin-right: -15px;">
-                                <div class=" col-xs-12 col-sm-12 col-md-12">
-                                    <div style="background: #fff;
+                                <div class="col-xs-12 col-sm-8 col-md-8"
+                                
+                                 style="background: #fff;height: 237px;
                                  border: 1px solid rgb(221, 221, 221);
                                  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
                                  border-radius: 4px;
-                                 padding: 15px;
-                                 ">
-                                         <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
-                                            <li class="active"><a href="#harakteristiki" data-toggle="tab">Характеристики</a></li>
-                                            <li ><a href="#instrukciya" data-toggle="tab">Инструкция</a></li>
-                                            <!-- <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#dropdown3" data-toggle="tab">@fat</a></li>
-                                                    <li><a href="#dropdown4" data-toggle="tab">@mdo</a></li>
-                                                </ul>
-                                            </li> -->
-                                        </ul>
-                                        <div id="myTabContent" class="tab-content">
-                                            <div class="tab-pane fade  in active" id="harakteristiki">
-                                                <p>
-                                                    <ul class="stat" style="margin-top: 0px;">
-                                                        <li><b>Петля для толстых и профильных дверей</b></li>
-                                                        <li><b>CLIP top BLUMOTION</b> со встроенным <b>BLUMOTION</b> (с возможностью деактивации)</li> 
-                                                        <li><b>CLIP top </b>с пружиной или без пружины</li>
-                                                        <li>Металлическая петля, никелированная</li>
-                                                        <li>Угол открывания 95°</li>
-                                                        <li>Регулировка фасада в трех плоскостях</li>
-                                                        <li>Удобная регулировка по глубине с помощью механизма шнек</li>
-                                                        <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
-                                                        <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
-                                                    </ul>
-                                                 </p>
-                                            </div>
-                                            <div class="tab-pane fade" id="instrukciya">
-                                                <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons
-                                                    we want to tell you, why we have created it:
-                                                    We didn't like the darkness of most of admin templates, so we created this light one. We didn't like
-                                                    the high contrast of most of admin templates, so we created this unobtrusive one.
-                                                    We searched for a solution of how to make widgets look like real widgets, so we decided that deep
-                                                    background - is what makes widgets look real.</p>
-                                            </div>
-                                            <!-- <div class="tab-pane fade" id="dropdown3">
-                                                <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia
-                                                    banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
-                                                    Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork
-                                                    sustainable tofu synth chambray yr.</p>
-                                            </div>
-                                            <div class="tab-pane fade" id="dropdown4">
-                                                <p>They sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland
-                                                    seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia
-                                                    PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral,
-                                                    mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial
-                                                    keffiyeh echo park vegan.</p>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-  
-                         
+                                 line-height: 1.3;
+                                 "
+                                 >
+                                   
+                                    <!-- <p class="boldstyle f-row">                                        
+                                        <span class="f-left">Материал:</span><span class="f-separator"></span><span class="f-val f-right"> металл/пластик</span>
+                                        <br>
+                                    </p>  
+                                     <p class="boldstyle f-row"> 
+                                        <span class="f-left">Установка:</span><span class="f-separator"></span><span class="f-val f-right"> к боковине "Система 32"</span>
+                                        <br>
+                                    </p> 
+                                    <p class="boldstyle f-row">   
+                                        <span class="f-left">Ширина секции</span><span class="f-separator"></span><span class="f-val f-right"> 750-1150 мм</span>
+                                        <br>
+                                    </p>
+                                    <p class="boldstyle f-row"> 
+                                        <span class="f-left">Нагрузка:</span><span class="f-separator"></span><span class="f-val f-right"> до 20 кг</span>
+                                        <br>
+                                    </p>
+                                    <p class="boldstyle f-row"> 
+                                        <span class="f-left">Производитель:</span><span class="f-separator"></span><span class="f-val f-right"> Ambos (Италия)</span>
+                                        <br>
+                                    </p>
+                                    <p style="margin-bottom: 0px;margin-top: 15px;" class="boldstyle">
+                                         <span>Преимущества:</span>
+                                    </p> -->
+                                    <p></p>
+                                    <ul class="stat" style="margin-top: 0px;">
+                                        <li><b>Петля для толстых и профильных дверей</b></li>
+                                        <li><b>CLIP top BLUMOTION</b>со встроенным <b>BLUMOTION</b> (с возможностью деактивации)</li> 
+                                        <li><b>CLIP top </b>с пружиной или без пружины</li>
+                                        <li>Металлическая петля, никелированная</li>
+                                        <li>Угол открывания 95°</li>
+                                        <li>Регулировка фасада в трех плоскостях</li>
+                                        <li>Удобная регулировка по глубине с помощью механизма шнек</li>
+                                        <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
+                                        <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->
+                                                                               
+                                    </ul>
+                                    <i >Артикул: 5000502-01-101</i> 
+                                </div>                            
+                            </div> 
                             
-                        </div> <!--/bs-callout bs-callout-warning cont/-->
-                    </section> 
-                </article>
+                        </div> 
+                        </section> 
+                    </article>
                     
                     
 
@@ -210,14 +176,14 @@ include 'inc-left-side-menu-furnitura.php';
                             
                             <li><a href="#petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</a>
                                 <ul class="nav">
-                                
-                                    <li><a href="#5000502-01-100-petlya-vkladnaya">&#9999;&nbsp;5000502-01-100 петля вкладная</a>
+                                  
+                                    <li><a href="furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php#5000502-01-100-petlya-vkladnaya">&#9999;&nbsp;5000502-01-100 петля вкладная</a>
                                     </li>
-                                     <li><a href="furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php#5000502-01-101-petlya-nakladnaya">&#9999;&nbsp;5000502-01-101 петля накладная</a>
-                                  </li>
-                                <!--     <li><a href="#5000502-01-102-petlya-polunakladnaya">&#9999;&nbsp;5000502-01-102 петля полунакладная</a>
+                                    <li><a href="#5000502-01-101-petlya-nakladnaya">&#9999;&nbsp;5000502-01-101 петля накладная</a>
                                     </li>
-                                     <li><a  href="#5000502-01-103-petlya-vkladnaya-falshfasadnaya">&#9999;&nbsp;5000502-01-103 петля вкладная фальшфасадная</a>
+                                  <!--    <li><a href="#5000502-01-102-petlya-polunakladnaya">&#9999;&nbsp;5000502-01-102 петля полунакладная</a>
+                                    </li>
+                                    <li><a  href="#5000502-01-103-petlya-vkladnaya-falshfasadnaya">&#9999;&nbsp;5000502-01-103 петля вкладная фальшфасадная</a>
                                     </li>
                                     <li><a  href="#5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya">&#9999;&nbsp;5000502-01-104 петля накладная нулевого вхождения</a>
                                     </li>
@@ -403,7 +369,107 @@ include 'inc-left-side-menu-furnitura.php';
                     </div>
                 </div><!-- боковое меню блоки дверные конец -->
 
+               
                 
-              
-    
+    <!-- <script src="./dist/js/main.26.04.2018.js"></script> 
+    <script>
+        // var modalId = $('#image-gallery');
+
+        $(document)
+            .ready(function () {
+
+                loadGallery(true, 'a.thumbb');
+
+                //This function disables buttons when needed
+                function disableButtons(counter_max, counter_current) {
+                    $('#show-previous-image, #show-next-image')
+                        .show();
+                    if (counter_max === counter_current) {
+                        $('#show-next-image')
+                            .hide();
+                    } else if (counter_current === 1) {
+                        $('#show-previous-image')
+                            .hide();
+                    }
+                }
+
+
+/**
+     *
+     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+     * @param setClickAttr  Sets the attribute for the click handler.
+     */
+
+
+                function loadGallery(setIDs, setClickAttr) {
+                    let current_image,
+                        selector,
+                        counter = 0;
+
+                    $('#show-next-image, #show-previous-image')
+                        .click(function () {
+                            if ($(this)
+                                .attr('id') === 'show-previous-image') {
+                                current_image--;
+                            } else {
+                                current_image++;
+                            }
+
+                            selector = $('[data-image-id="' + current_image + '"]');
+                            updateGallery(selector);
+                        });
+
+                    function updateGallery(selector) {
+                        let $sel = selector;
+                        current_image = $sel.data('image-id');
+                        $('#image-gallery-title')
+                            .text($sel.data('title'));
+                        $('#image-gallery-image')
+                            .attr('src', $sel.data('image'));
+                        disableButtons(counter, $sel.data('image-id'));
+                    }
+
+                    if (setIDs == true) {
+                        $('[data-image-id]')
+                            .each(function () {
+                                counter++;
+                                $(this)
+                                    .attr('data-image-id', counter);
+                            });
+                    }
+                    $(setClickAttr)
+                        .on('click', function () {
+                            updateGallery($(this));
+                        });
+                }
+            });
+
+        // build key actions
+        $(document)
+            .keydown(function (e) {
+                switch (e.which) {
+                    case 37: // left
+                        
+                        // if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
+                        if ($('#show-previous-image').is(":visible")) {
+                        //   alert('left');  
+                            $('#show-previous-image').click();
+                        }
+                        break;
+
+                    case 39: // right
+                        
+                        // if ((modalId.data('bs.modal') || {})._isShown && $('#show-next-image').is(":visible")) {
+                        if ($('#show-next-image').is(":visible")) {
+                            // alert('right');
+                            $('#show-next-image').click();
+                        }
+                        break;
+
+                    default:
+                        return; // exit this handler for other keys
+                }
+                e.preventDefault(); // prevent the default action (scroll / move caret)
+            });
+    </script> -->
 <?php include 'inc-footer2.php'; ?>

@@ -1,5 +1,5 @@
 <?php 
-// inc-goup-menu-furnitura-dlya-mebeli.php
+// inc-goup-menu-furnitura-styazhka.php
 
 $path_img="./dist/filesdb/images/thumbs/";
 /////////////////////////////////////

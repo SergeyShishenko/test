@@ -6,7 +6,8 @@
 // $item_katalogi_Class = '';
 ?>
 <?php
-include 'inc-goup-menu-furnitura-dlya-mebeli.php';//$styazhka=[]
+include 'inc-goup-menu-furnitura-styazhka.php';//$styazhka=[]
+include 'inc-goup-menu-furnitura-petlyB.php';//$petlyB=[]
  echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">
@@ -277,7 +278,7 @@ include 'inc-goup-menu-furnitura-dlya-mebeli.php';//$styazhka=[]
                                 <ul class="list-group sub_menu">
                                     <li class="menu2"><a href="https://www.hafele.ru/INTERSHOP/web/WFS/Haefele-HRF-Site/ru_RU/-/RUB/Static-View/pdfcatalog/ru_RU/DGH-M2009/blaetterkatalog/html/sitemap_1.html" target="_blank" class="list-group-item sub">HAFELE</a>                                       
                                     </li>
-                                    <li class="menu2"><a href="http://publications.blum.com/2016/catalogue/ru/" target="_blank" class="list-group-item sub">BLUM</a>                                       
+                                    <li class="menu2"><a href="http://publications.blum.com/2018/catalogue/ru/" target="_blank" class="list-group-item sub">BLUM</a>                                       
                                     </li>                                        
                                 </ul>
                             </li>                                                      

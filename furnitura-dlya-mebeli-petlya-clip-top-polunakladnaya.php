@@ -1,5 +1,5 @@
 <?php
-//furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php
+//furnitura-dlya-mebeli-petlya-clip-top-polunakladnaya.php
 include 'inc-session-start.php';
 $detaliClass = '';
 $izdeliyaClass = '';
@@ -27,7 +27,7 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
-                            <div class="main-box clearfix"  id="petlya-vkladnaya" >   
+                            <div class="main-box clearfix"  id="petlya-polunakladnaya" >   
                                
                                 <h2 ></h2>                            
                                 <!-- <h2 >Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы</h2>  -->
@@ -35,7 +35,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
-                                            <source src="./dist/video/petly/mebelnaya-petlya-s-vstroennym-dovodchikom-blum-clip-top-blumou.mp4" type="video/mp4">
+                                            <source src="./dist/video/petly/clp0015-ctb_pr_rf_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
                                         </video>
                                     </div>
                                 </div>                                
@@ -52,8 +52,8 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">5000502-01-100</h3>
-                                                <h3 class="blum">Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы</h3>
+                                                <h3 class="blum">5000502-01-102</h3>
+                                                <h3 class="blum">Петля полунакладная для профильных дверей 95° CLIP top BLUMOTION 71B9650, чашка петли: на шурупы</h3>
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
                                                         <thead>
@@ -77,11 +77,11 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody id="calcresult">
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulvkladnaya-5000502-01-100_1.png" class="" alt="Петля" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulnakladnaya-5000502-01-101_1.png" class="" alt="Петля" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="23"><a href="https://publications.blum.com/2018/catalogue/ru/110/#zoom=z" target="_blank">71B9750</a></td>
+                                                            <td class="animated" data-objfurnid="27"><a href="https://publications.blum.com/2018/catalogue/ru/110/#zoom=z" target="_blank">71B9650</a></td>
                                                             <td>Металл</td> 
-                                                            <td colspan="3">пeтля вкладная CLIP top BLUMOTION</td>
+                                                            <td colspan="3">пeтля полунакладная CLIP top BLUMOTION</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulotvetnaya-planka-173L6100.png" class="" alt="планка ответная" title=""></td>
@@ -430,12 +430,7 @@ include 'inc-left-side-menu-furnitura.php';
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-
-
-
-  
+                            </div> 
                          
                             
                         </div> <!--/bs-callout bs-callout-warning cont/-->
@@ -445,12 +440,11 @@ include 'inc-left-side-menu-furnitura.php';
                     
 
                     
-        </div> <!-- main  -->
-
-            <?php
+                </div> <!-- main  -->
+                <?php
         //  include 'inc-goup-menu.php';//$styazhka=[] -->
-        SideMenu($petlyB,1);
-        ?>         
+        SideMenu($petlyB,3);
+        ?>              
               
     
 <?php include 'inc-footer2.php'; ?>
