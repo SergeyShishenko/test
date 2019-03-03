@@ -98,17 +98,17 @@ include 'inc-goup-menu-furnitura-petlyB.php';//$petlyB=[]
                             <li class="menu">
                                 <a href="furnitura-dlya-mebeli.php" class="list-group-item '.$item_dlya_mebeli_Class.'">ДЛЯ МЕБЕЛИ</a>
                                 <ul class="list-group sub_menu">
-                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#petli-dlya-fasadov">ПЕТЛИ для ФАСАДОВ</a>
+                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php#petlya-vkladnaya">ПЕТЛИ для ФАСАДОВ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php#5000502-01-100-petlya-vkladnaya">5000502-01-100 петля вкладная</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php#petlya-vkladnaya">5000502-01-100 петля вкладная</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php#5000502-01-101-petlya-nakladnaya">5000502-01-101 петля накладная</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php#petlya-nakladnaya">5000502-01-101 петля накладная</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-01-102-petlya-polunakladnaya">5000502-01-102 петля полунакладная</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-petlya-clip-top-polunakladnaya.php#petlya-polunakladnaya">5000502-01-102 петля полунакладная</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-01-103-petlya-vkladnaya-falshfasadnaya">5000502-01-103 петля вкладная фальшфасадная</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-petlya-clip-top-vkladnaya-falshfasadnaya.php#petlya-vkladnaya-falshfasadnaya">5000502-01-103 петля вкладная фальшфасадная</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-01-104-petlya-nakladnaya-nulevogo-vhozhdeniya">5000502-01-104 петля накладная нулевого вхождения</a>
+                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-petlya-clip-top-nakladnaya-nulevogo-vhozhdeniya.php#petlya-nakladnaya-nulevogo-vhozhdeniya">5000502-01-104 петля накладная нулевого вхождения</a>
                                             </li>
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-01-110-petlya-vkladnaya-bez-pruzhiny">5000502-01-110 петля вкладная без пружины</a>
                                             </li>
