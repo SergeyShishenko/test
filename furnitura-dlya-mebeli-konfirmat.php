@@ -79,7 +79,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td >Конфирмат 7.0x50</td>
                                                             <td class="quantity">                                                            
                                                                <div class="form-group" style="margin-bottom: 0;width: 112px;">				
-                                                                    <input id="add_vpi_count-1"  class="form-control" type="number" value="0" min="0" step="10"  style=" width: 70px;margin-left: -1px;">
+                                                                    <input id="add_vpi_count-1"  class="form-control" type="number" value="0" min="0" step="10"  >
                                                                 </div>                                                                
                                                             </td>
                                                         </tr>
@@ -91,7 +91,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td >Конфирмат 7.0x70</td>
                                                             <td class="quantity">                                                            
                                                                <div class="form-group" style="margin-bottom: 0;width: 112px;">				
-                                                                    <input id="add_vpi_count-2"  class="form-control" type="number" value="0" min="0" step="10"  style=" width: 70px;margin-left: -1px;">
+                                                                    <input id="add_vpi_count-2"  class="form-control" type="number" value="0" min="0" step="10"  >
                                                                 </div>                                                                
                                                             </td>
                                                         </tr>

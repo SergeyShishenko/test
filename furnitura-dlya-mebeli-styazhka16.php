@@ -65,7 +65,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <th>Описание</th>
                                                             <th class="quantity">                                                            
                                                                <div class="form-group" style="margin-bottom: 0;width: 112px;">				
-                                                                    <input id="add_vpi_count-1"  class="form-control" type="number" value="1" min="1" max="999" style=" width: 70px;margin-left: -1px;">
+                                                                    <input id="add_vpi_count-1"  class="form-control" type="number" value="1" min="1" max="999" >
                                                                 </div>
                                                                 
                                                             </th>

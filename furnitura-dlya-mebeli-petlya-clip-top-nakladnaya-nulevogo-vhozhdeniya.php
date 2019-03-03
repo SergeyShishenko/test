@@ -1,5 +1,5 @@
 <?php
-//furnitura-dlya-mebeli-petlya-clip-top-polunakladnaya.php
+//furnitura-dlya-mebeli-petlya-clip-top-nakladnaya-nulevogo-vhozhdeniya.php
 include 'inc-session-start.php';
 $detaliClass = '';
 $izdeliyaClass = '';
@@ -27,7 +27,7 @@ include 'inc-left-side-menu-furnitura.php';
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
-                            <div class="main-box clearfix"  id="petlya-polunakladnaya" >   
+                            <div class="main-box clearfix"  id="petlya-nakladnaya-nulevogo-vhozhdeniya" >   
                                
                                 <h2 ></h2>                            
                                 <!-- <h2 >Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы</h2>  -->
@@ -35,7 +35,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
-                                            <source src="./dist/video/petly/clp0015-ctb_pr_rf_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
+                                            <source src="./dist/video/petly/blum-petli-155-gradusov.mp4" type="video/mp4">
                                         </video>
                                     </div>
                                 </div>                                
@@ -52,8 +52,8 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">5000502-01-102</h3>
-                                                <h3 class="blum">Петля полунакладная для профильных дверей 95° CLIP top BLUMOTION 71B9650, чашка петли: на шурупы</h3>
+                                                <h3 class="blum">5000502-01-104</h3>
+                                                <h3 class="blum">Петля накладная нулевого вхождения для профильных дверей 155° CLIP top BLUMOTION 71B7550, чашка петли: на шурупы</h3>
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
                                                         <thead>
@@ -77,9 +77,9 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody id="calcresult">
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulpolunakladnaya-5000502-01-102_1.png" class="" alt="Петля" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulnakladnaya-nulevogo-vhozhdeniya-5000502-01-104_1.png" class="" alt="Петля" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="27"><a href="https://publications.blum.com/2018/catalogue/ru/110/#zoom=z" target="_blank">71B9650</a></td>
+                                                            <td class="animated" data-objfurnid="29"><a href="https://publications.blum.com/2018/catalogue/ru/104/#zoom=z" target="_blank">71B7550</a></td>
                                                             <td>Металл</td> 
                                                             <td colspan="3">пeтля полунакладная CLIP top BLUMOTION</td>
                                                         </tr>
@@ -98,9 +98,9 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td colspan="3">заглушка под чашку петли, без логотипа</td>
                                                         </tr>
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulzaglushka70_1663.png" class="" alt="заглушка на плечо" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulzaglushka70_4503.png" class="" alt="заглушка на плечо" title=""></td>
                                                             <td>1</td>
-                                                            <td class="" ><a href="https://publications.blum.com/2018/catalogue/ru/180/#zoom=z" target="_blank">70.1663</a></td>
+                                                            <td class="" ><a href="https://publications.blum.com/2018/catalogue/ru/180/#zoom=z" target="_blank">70.4503</a></td>
                                                             <td>Металл</td> 
                                                             <td colspan="3">заглушка на плечо петли, без логотипа</td>
                                                         </tr>
@@ -176,10 +176,10 @@ include 'inc-left-side-menu-furnitura.php';
 
                 <div class="item active">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Петля в сборе" 
-                    data-image="./dist/filesdb/images/polunakladnaya-5000502-01-102_2.png" data-target="#image-gallery">
+                    data-image="./dist/filesdb/images/vkladnaya-5000502-01-100_2.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/polunakladnaya-5000502-01-102_2.png"
-                            data-src="./dist/filesdb/images/polunakladnaya-5000502-01-102_2.png"
+                            src="./dist/filesdb/images/vkladnaya-5000502-01-100_2.png"
+                            data-src="./dist/filesdb/images/vkladnaya-5000502-01-100_2.png"
                             class="center-block   img-rounded    bar "
                             data-toggle="modal"                                                                                                                    
                             alt="Петля в сборе"
@@ -189,10 +189,10 @@ include 'inc-left-side-menu-furnitura.php';
                 </div>
                 <div class="item">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Петля вкладная" 
-                    data-image="./dist/filesdb/images/polunakladnaya-5000502-01-102_1.png" data-target="#image-gallery">
+                    data-image="./dist/filesdb/images/vkladnaya-5000502-01-100_1.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/polunakladnaya-5000502-01-102_1.png"
-                            data-src="./dist/filesdb/images/polunakladnaya-5000502-01-102_1.png"
+                            src="./dist/filesdb/images/vkladnaya-5000502-01-100_1.png"
+                            data-src="./dist/filesdb/images/vkladnaya-5000502-01-100_1.png"
                             class="center-block   img-rounded     bar "
                             data-toggle="modal"                                                                                                                          
                             alt="Петля вкладная"                                                        
@@ -201,10 +201,10 @@ include 'inc-left-side-menu-furnitura.php';
                 </div>
                 <div class="item">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Вкладная конструкция" 
-                    data-image="./dist/filesdb/images/polunakladnaya-5000502-01-102_1_sch1.png" data-target="#image-gallery">
+                    data-image="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch1.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/polunakladnaya-5000502-01-102_1_sch1.png"
-                            data-src="./dist/filesdb/images/polunakladnaya-5000502-01-102_1_sch1.png"
+                            src="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch1.png"
+                            data-src="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch1.png"
                             class="center-block   img-rounded     bar "
                             data-toggle="modal"                                                                                                                          
                             alt="Вкладная конструкция"                                                        
@@ -213,10 +213,10 @@ include 'inc-left-side-menu-furnitura.php';
                 </div>
                 <div class="item">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Растояние от чашки TB" 
-                    data-image="./dist/filesdb/images/polunakladnaya-5000502-01-102_1_sch2.png" data-target="#image-gallery">
+                    data-image="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch2.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/polunakladnaya-5000502-01-102_1_sch2.png" 
-                            data-src="./dist/filesdb/images/polunakladnaya-5000502-01-102_1_sch2.png"
+                            src="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch2.png" 
+                            data-src="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch2.png"
                             class="center-block   img-rounded     bar "
                             data-toggle="modal"                                                                                                                         
                             alt="Растояние от чашки TB"                                                        
@@ -259,7 +259,7 @@ include 'inc-left-side-menu-furnitura.php';
                             <tr>
                             <td>0</td>
                             <td>5</td>
-                            <td>6.5</td>                                                     
+                            <td>-2</td>                                                     
                             </tr>
                         </tbody>
                     </table>
@@ -443,7 +443,7 @@ include 'inc-left-side-menu-furnitura.php';
                 </div> <!-- main  -->
                 <?php
         //  include 'inc-goup-menu.php';//$styazhka=[] -->
-        SideMenu($petlyB,3);
+        SideMenu($petlyB,5);
         ?>              
               
     

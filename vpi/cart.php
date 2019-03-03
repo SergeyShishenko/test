@@ -47,8 +47,8 @@
 // получаем все записи из таблицы user_vpi
   while($row_vpi = mysqli_fetch_array($Result_vpi))
   {  
-      $furn_id=$row_vpi['obj_furnitur_prop_id'];
-    $Result_furniture = mysqli_query($dbconn,"SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furn_id "); 
+      $furn_id=$row_vpi['obj_id'];
+    $Result_furniture = mysqli_query($dbconn,"SELECT * FROM `obj_furnitur_prop` WHERE `obj_id` = $furn_id "); 
     $furniture = mysqli_fetch_assoc($Result_furniture); 
   echo'   
                                                         

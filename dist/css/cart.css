@@ -8,15 +8,39 @@
 
 .dis{display: none;}
 
-td.quantity > div > div > .input-group-btn:first-child > .btn, td.quantity > div > div >  .input-group-btn:last-child > .btn ,
+/* td.quantity > div > div > .input-group-btn:first-child > .btn, td.quantity > div > div >  .input-group-btn:last-child > .btn ,
 th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div > div >  .input-group-btn:last-child > .btn
-{ height: 33px !important;}
+{ height: 33px !important;} */
 
-[id^='add_vpi_count']{height: 33px;padding: 0;}
+[id^='add_vpi_count']{
+    /* height: 33px; */
+    padding: 0;}
 [id^='vpi_id']{
     width: 70px !important;
      margin-left: -1px;
-      height:33px;
+      /* height:33px; */
+    }
+
+    @media (min-width: 480px) {
+        .btn{
+            font-size: 9px !important;
+            border-radius: 2px;
+          }
+        td.quantity > div > div > .input-group-btn:first-child > .btn, td.quantity > div > div >  .input-group-btn:last-child > .btn ,
+        th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div > div >  .input-group-btn:last-child > .btn
+        {border-radius: 2px;
+             /* padding:5px; */
+             }
+        [id^='add_vpi_count']{height: 26px;padding: 0;}
+        [id^='vpi_id']{
+            /* width: 70px !important;
+            margin-left: -1px; */
+            height:26px;
+        }
+        .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+            /* padding: 0px; */
+            padding-bottom: 8px;
+        }
     }
 
 #loading1  {   

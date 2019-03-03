@@ -23,7 +23,7 @@ include 'inc-left-side-menu-furnitura.php';
                     <article    id="petli-dlya-fasadov">
                       <section >
                         <div class="page-header"     >
-                          <h1 itemprop="name">ПЕТЛИ для ФАСАДОВ</h1>
+                          <h1 itemprop="name">ПЕТЛИ для ФАСАДОВ BLUMOTION</h1>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
@@ -65,7 +65,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <th>Описание</th>
                                                             <th class="quantity">                                                            
                                                                <div class="form-group" style="margin-bottom: 0;width: 112px;">				
-                                                                    <input id="add_vpi_count-1"  class="form-control" type="number" value="1" min="1" max="999" style=" width: 70px;margin-left: -1px;">
+                                                                    <input id="add_vpi_count-1"  class="form-control" type="number" value="1" min="1" max="999" >
                                                                 </div>
                                                                 
                                                             </th>
@@ -189,10 +189,10 @@ include 'inc-left-side-menu-furnitura.php';
                 </div>
                 <div class="item">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Петля вкладная" 
-                    data-image="./dist/filesdb/images/vkladnaya-5000502-01-100_1.png" data-target="#image-gallery">
+                    data-image="./dist/filesdb/images/nakladnaya-5000502-01-101_1.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/vkladnaya-5000502-01-100_1.png"
-                            data-src="./dist/filesdb/images/vkladnaya-5000502-01-100_1.png"
+                            src="./dist/filesdb/images/nakladnaya-5000502-01-101_1.png"
+                            data-src="./dist/filesdb/images/nakladnaya-5000502-01-101_1.png"
                             class="center-block   img-rounded     bar "
                             data-toggle="modal"                                                                                                                          
                             alt="Петля вкладная"                                                        
@@ -201,10 +201,10 @@ include 'inc-left-side-menu-furnitura.php';
                 </div>
                 <div class="item">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Вкладная конструкция" 
-                    data-image="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch1.png" data-target="#image-gallery">
+                    data-image="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch1.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch1.png"
-                            data-src="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch1.png"
+                            src="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch1.png"
+                            data-src="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch1.png"
                             class="center-block   img-rounded     bar "
                             data-toggle="modal"                                                                                                                          
                             alt="Вкладная конструкция"                                                        
@@ -213,10 +213,10 @@ include 'inc-left-side-menu-furnitura.php';
                 </div>
                 <div class="item">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Растояние от чашки TB" 
-                    data-image="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch2.png" data-target="#image-gallery">
+                    data-image="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch2.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch2.png" 
-                            data-src="./dist/filesdb/images/vkladnaya-5000502-01-100_1_sch2.png"
+                            src="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch2.png" 
+                            data-src="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch2.png"
                             class="center-block   img-rounded     bar "
                             data-toggle="modal"                                                                                                                         
                             alt="Растояние от чашки TB"                                                        
@@ -259,7 +259,7 @@ include 'inc-left-side-menu-furnitura.php';
                             <tr>
                             <td>0</td>
                             <td>5</td>
-                            <td>-2</td>                                                     
+                            <td>16</td>                                                     
                             </tr>
                         </tbody>
                     </table>

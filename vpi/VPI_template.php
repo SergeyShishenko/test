@@ -82,9 +82,9 @@ if(isset($_POST['ids']))//генерация xls
     {  
         while ($rowsUser_vpi = mysqli_fetch_array($User_vpi_Result))// заполнение массива пока есть записи текущей сессии
             {     
-                $furnitur_id=$rowsUser_vpi['obj_furnitur_prop_id'];
+                $furnitur_id=$rowsUser_vpi['obj_id'];
                 $furnitur_count=$rowsUser_vpi['count_obj'];
-                // $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = $furnitur_id";// из таблицы вся фурнитура
+                // $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_id` = $furnitur_id";// из таблицы вся фурнитура
                 $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_id` = $furnitur_id";// из таблицы вся фурнитура
                 $Result=mysqli_query($dbconn,$sql); 
                 $rows = mysqli_fetch_array($Result); 
@@ -245,8 +245,10 @@ elseif (isset($_POST['addids'])) {
 
        
 
-        // INSERT INTO `user_vpi` (`vpi_id`, `s_id`, `obj_furnitur_prop_id`, `count_obj`) VALUES (NULL, '1', '1', '5');
-        $sql = "INSERT INTO `user_vpi` (`vpi_id`, `s_id`, `obj_furnitur_prop_id`, `count_obj`) VALUES (NULL, '$s_id', '$furnitur_id', '$furnitur_count')";
+       
+        $sql = "INSERT INTO `user_vpi` (`vpi_id`, `s_id`, `obj_id`, `count_obj`) VALUES (NULL, '$s_id', '$furnitur_id', '$furnitur_count')";
+        // echo    'vpi\VPI_template.php $sql- '.$sql; 
+        // exit(); 
 
         if(mysqli_query($dbconn,$sql))
         {                    
@@ -254,8 +256,9 @@ elseif (isset($_POST['addids'])) {
             // echo print_r($addids);
             
             
-        }else{//вывод ошибки                                        
-            header('HTTP/1.1 500 Looks like mysql error, could not insert record2! '.$_POST["parent"]." ---".$sql." -> ".mysqli_error($dbconn));
+        }else{//вывод ошибки     
+            echo    'vpi\VPI_template.php NO $sql- '.$sql .'Ошибка: '.mysqli_error($dbconn);                               
+            // header('HTTP/1.1 500 Looks like mysql error, could not insert record2! '.$_POST["addids"]." ---".$sql." -> ".mysqli_error($dbconn));
             exit();
         } 
     } //for
