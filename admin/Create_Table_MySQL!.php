@@ -7,7 +7,49 @@ require_once dirname(__ROOT__).'/DATA/TABLES/configDB.php';
 ///////////////////////////////create tables////////////////////////////////////////////////
 
 
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
 
+$query = "CREATE TABLE IF NOT EXISTS user(
+    s_id INT NOT NULL AUTO_INCREMENT,
+    sess_id VARCHAR(40) ,   
+    date_start datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (s_id))";
+// ALTER TABLE `head` ADD COLUMN `number_in_order_head`  INT
+
+if (mysqli_query($dbconn, $query)) echo "Таблица user создана.<br>";
+else echo "Таблица user не создана: ".mysqli_error($dbconn);
+
+mysqli_close($dbconn);
+
+////
+
+
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
+$query = "CREATE TABLE IF NOT EXISTS user_vpi(
+    vpi_id INT NOT NULL AUTO_INCREMENT,   
+    s_id INT,
+    obj_furnitur_prop_id INT,
+    count_obj INT,
+    PRIMARY KEY (vpi_id),
+    FOREIGN KEY (s_id)
+    REFERENCES user(s_id)
+    ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (obj_furnitur_prop_id)
+    REFERENCES obj_furnitur_prop(obj_furnitur_prop_id)    
+    ON UPDATE CASCADE ON DELETE CASCADE )";
+
+if (mysqli_query($dbconn, $query)) echo "Таблица user_vpi создана.<br>";
+else echo "Таблица user_vpi не создана: ".mysqli_error($dbconn);
+
+mysqli_close($dbconn);
+
+
+////
 
 
 
@@ -480,48 +522,6 @@ if (mysqli_query($dbconn, $query)) echo "CHANGE COLUMN img_def в таблице
 else echo "Поле не изменено: ".mysqli_error($dbconn);
 }
 mysqli_close($dbconn);
-
-////
-$dbconn=dbconnect();
-if ( !$dbconn ) die("Error");
-
-$query = "CREATE TABLE IF NOT EXISTS user(
-    s_id INT NOT NULL AUTO_INCREMENT,
-    sess_id VARCHAR(40) ,   
-    date_start datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    PRIMARY KEY (s_id))";
-// ALTER TABLE `head` ADD COLUMN `number_in_order_head`  INT
-
-if (mysqli_query($dbconn, $query)) echo "Таблица user создана.<br>";
-else echo "Таблица user не создана: ".mysqli_error($dbconn);
-
-mysqli_close($dbconn);
-
-////
-
-
-////
-$dbconn=dbconnect();
-if ( !$dbconn ) die("Error");
-
-$query = "CREATE TABLE IF NOT EXISTS user_vpi(
-    vpi_id INT NOT NULL AUTO_INCREMENT,   
-    s_id INT,
-    furn_obj_id INT,
-    count_obj INT,
-    PRIMARY KEY (vpi_id),
-    FOREIGN KEY (s_id)
-    REFERENCES user(s_id)
-    ON UPDATE CASCADE ON DELETE CASCADE
-   )";
-
-if (mysqli_query($dbconn, $query)) echo "Таблица user_vpi создана.<br>";
-else echo "Таблица user_vpi не создана: ".mysqli_error($dbconn);
-
-mysqli_close($dbconn);
-
-
-////
  
 // //$encoding = pg_client_encoding($dbconn);
 
