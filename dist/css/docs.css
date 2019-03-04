@@ -82,7 +82,14 @@ li > span.caret3:hover,li > span.caret2:hover {
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
 } */
-div.btn-side{z-index:1000 !important;}
+div.btn-side{
+  z-index:1000 !important;
+ 
+}
+div.btn-side > .btn{
+ 
+  font-size: 14px !important;
+}
 /* div.btn-side:hover{z-index:1000 !important;} */
 .center{  
   display: block; 
