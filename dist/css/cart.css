@@ -20,7 +20,9 @@ th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div
      margin-left: -1px;
       /* height:33px; */
     }
-
+    .input-group-btn:first-child > .btn {
+        margin-right: -2px;
+    }
     @media (min-width: 480px) {
         .btn{
             font-size: 9px !important;

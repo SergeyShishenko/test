@@ -11,6 +11,7 @@
     </footer> 
     <iframe src="index.php" width="100%" height="600" id="iframe_1"  style="display: none"  ></iframe>
     <script src="./dist/js/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
     <script src="./dist/js/bootstrap.js"></script> 
     <script src="./dist/js/application.js"></script> 
     <!--<script src="./dist/js/main.26.04.2018.js"></script> -->
@@ -22,7 +23,7 @@
     <script src="./dist/js/vpi.js?v='<?php echo $vpijsVersion ; ?>'" ></script>
 	
          <!-- Генерация -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  -->
     <script src="./dist/js/shortcut.js"></script>
     <script src="./dist/js/drop.js"></script>  
     <script src="./dist/js/selectcell.js"></script>
