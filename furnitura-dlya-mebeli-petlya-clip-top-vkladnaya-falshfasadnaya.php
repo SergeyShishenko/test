@@ -35,7 +35,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
-                                            <source src="./dist/video/petly/clp0015-ctb_pr_rf_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
+                                            <source src="./dist/video/petly/clp0011-blumotion-trailer_pr_an_fi_bau_$sall_$amp4720p_$v1.mp4#t=4" type="video/mp4">
                                         </video>
                                     </div>
                                 </div>                                
@@ -258,7 +258,7 @@ include 'inc-left-side-menu-furnitura.php';
     <h5>F Зазор</h5>
     <h5>TB Расстояние от чашки</h5> 
 
-    <!-- <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
+    <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
         <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
                     border: 1px solid rgb(221, 221, 221);
                     box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
@@ -274,12 +274,12 @@ include 'inc-left-side-menu-furnitura.php';
                             <tr>
                             <th>MD <br>Подъем ответной планки<br>мм</th>
                             <th>TB <br>Расстояние от чашки<br>мм</th>
-                            <th>FA <br>Наложение фасада<br>мм</th>                                                       
+                            <th>F <br>Зазор<br>мм</th>                                                       
                             </tr>                            
                             <tr>
-                            <td>0</td>
+                            <td>3</td>
                             <td>5</td>
-                            <td>-2</td>                                                     
+                            <td>3</td>                                                     
                             </tr>
                         </tbody>
                     </table>
@@ -287,7 +287,7 @@ include 'inc-left-side-menu-furnitura.php';
             </div>
 
         </div>
-    </div> -->
+    </div>
 <!-- /часть1 -->
 
 <!-- часть2 -->

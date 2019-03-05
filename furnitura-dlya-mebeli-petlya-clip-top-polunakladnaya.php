@@ -35,7 +35,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
-                                            <source src="./dist/video/petly/clp0015-ctb_pr_rf_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
+                                            <source src="./dist/video/petly/clp0013-blumotion-trailer_pr_an_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
                                         </video>
                                     </div>
                                 </div>                                
