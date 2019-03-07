@@ -28,21 +28,40 @@ include 'inc-left-side-menu-metodichki.php';
                        
                      
                         <div class="bs-callout bs-callout-warning cont" >
-                         <p> 
-                         <h2 itemprop="name" id="AddOrderProdudtCE">Добавить свойства: Заказ/ Изделие/ СЕ </h2>
-                            <a href="./dist/files/js/AddOrderProductCE.js" type="button" class="btn btn-primary"  download="AddOrderProductCE.js">Скачать - AddOrderProductCE.js</a>
-                         </p>
-                         <p >&nbsp;</p> 
-                         <div class="main-box-body clearfix">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
-                                            <source src="./dist/video/basis/2019-02-25 at 08-17-55.mp4" type="video/mp4">
-                                        </video>
-                                    </div>
-                                    <p >Создан: 25/02/2019г.</p>      
-                                    <p >Обновлен: 28/02/2019г.</p>      
-                          </div> 
-                        
+                            <p> 
+                                <h2 itemprop="name" id="AddOrderProdudtCE-v1">Добавить свойства: Заказ/ Изделие/ СЕ </h2>
+                                <a href="./dist/files/js/AddOrderProductCE-v1.js" type="button" class="btn btn-primary"  download="AddOrderProductCE-v1.js">Скачать - AddOrderProductCE-v1.js</a>
+                            </p>
+
+                            <p >&nbsp;</p> 
+                            <div class="main-box-body clearfix">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                                                <source src="./dist/video/basis/2019-02-25 at 08-17-55.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <p >Создан: 25/02/2019г.</p>      
+                                        <p >Обновлен: 28/02/2019г.</p>      
+                            </div> 
+                        </div>
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <p> 
+                                <h2 itemprop="name" id="AddOrderProdudtCE-v2">Добавить свойства: Заказ/ Изделие/ СЕ </h2>
+                                <h3 >Версия 2 - Добавлена проверка на наличие номера перед названием блока сборочной единицы. </h3>
+                                <a href="./dist/files/js/AddOrderProductCE-v2.js" type="button" class="btn btn-primary"  download="AddOrderProductCE-v2.js">Скачать - AddOrderProductCE-v2.js</a>
+                            </p>
+
+                            <p >&nbsp;</p> 
+                            <div class="main-box-body clearfix">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                                                <source src="./dist/video/basis/2019-03-07 at 08-05-27.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <p >Создан: 07/03/2019г.</p>      
+                                             
+                            </div> 
+                            
                          </div>
                      
                       </section>
@@ -57,9 +76,11 @@ include 'inc-left-side-menu-metodichki.php';
                 <div class="col-md-2" id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
-                            <li><a href="#metodicheskoe-posobie-po-izdeliyam">СКРИПТЫ</a>
+                            <li><a href="#SCRIPTS">СКРИПТЫ</a>
                             <ul class="nav">
-                                    <li><a href="#AddOrderProdudtCE">Добавить свойства: Заказ/ Изделие/ СЕ</a>
+                                    <li><a href="#AddOrderProdudtCE-v1">Добавить свойства: Заказ/ Изделие/ СЕ (AddOrderProdudtCE-v1)</a>
+                                    </li>
+                                    <li><a href="#AddOrderProdudtCE-v2">Добавить свойства: Заказ/ Изделие/ СЕ (AddOrderProdudtCE-v2)</a>
                                     </li>
                                                                       
                                 </ul>
