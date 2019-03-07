@@ -1073,13 +1073,13 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
         $x=parseInt($("#input_x").val()); 
         $depthmin =250 + $x + $gap;
         $old_depth=$depthmin;
-        $("span.gap").text($depthmin)
+        $("span.gap2").text($depthmin)
         // alert($depthmin);
         
          if (parseInt($("#box-depth_x_input").val())<$depthmin) 
          {  $("#box-depth_x_input").val($depthmin); }
         // alert($depthmin);
-        $("span.gap").text($depthmin);
+        $("span.gap2").text($depthmin);
         $Radio=2; 
         });
 
@@ -1112,7 +1112,7 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                             if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
                         }else //$Radio==2
                         {
-                            $("#sidestab").removeClass("dis");$gap=15; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);
+                            $("#sidestab").removeClass("dis");$gap=15; $depthmin =250 + $x + $gap;$("span.gap2").text($depthmin);
                             //  value=$("#box-depth_input").val()-$gap;
                             calcsidestab($("span.calcarticul:first").text());
 
@@ -1128,7 +1128,7 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
                             if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
                         }else //$Radio==2
                         {
-                            $("#sidestab").addClass("dis");$gap=3; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);$("#width_box_input_def").css("color", "black");
+                            $("#sidestab").addClass("dis");$gap=3; $depthmin =250 + $x + $gap;$("span.gap2").text($depthmin);$("#width_box_input_def").css("color", "black");
                             if($("#box-depth_x_input").val()<$depthmin){$("#box-depth_x_input").val($depthmin);}
                         }
                       
@@ -1161,12 +1161,12 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
              {
                  $x=parseInt($( this ).val());
                  $depthmin =250 + $x + $gap;
-                 $("span.gap").text($depthmin);
+                 $("span.gap2").text($depthmin);
                  if ($("#box-depth_x_input").val()<$depthmin) 
                  {$("#box-depth_x_input").val($depthmin);$old_depth=$depthmin;}
                  else
                  {
-                     $("#box-depth_def").css("color", "black");$old_depth=parseInt($("#box-depth_x_input").val());
+                     $("#box-depth_def2").css("color", "black");$old_depth=parseInt($("#box-depth_x_input").val());
 
                     //  $old_depth=parseInt($( this ).val());
                      var value=parseInt($("#box-depth_x_input").val())-$gap-$x;
@@ -1183,10 +1183,10 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
              $("#box-depth_x_input").change(function() // вкладной
              {
                   if ($( this ).val()<$depthmin) 
-                    {$( this ).val($old_depth);  $("#box-depth_def").css("color", "red"); }
+                    {$( this ).val($old_depth);  $("#box-depth_def2").css("color", "red"); }
                     else
                     {
-                        $("#box-depth_def").css("color", "black");$old_depth=parseInt($("#box-depth_x_input").val());
+                        $("#box-depth_def2").css("color", "black");$old_depth=parseInt($("#box-depth_x_input").val());
 
                         $old_depth=parseInt($( this ).val());
                         var value=parseInt($( this ).val())-$gap-$x;

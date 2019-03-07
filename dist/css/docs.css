@@ -18,7 +18,12 @@ body {
 }
 } */
 
-
+.defbox{
+  
+  text-align: center;
+  vertical-align: middle;
+  background-color: #edeeef;
+}
 
 table.dim_box_horizontal{
 	

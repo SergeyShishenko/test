@@ -1070,7 +1070,7 @@ include 'inc-left-side-menu-furnitura.php';
                                             <div class="tab-pane fade  in active" id="calc">
                                                 <div class="row col-xs-12 col-sm-12 col-md-12" >
                                                     <h3 class="blum">Расчета фурнитуры, полное выдвижение деревянный ящик, 40 кг</h3>  
-                                                        <div class="row col-xs-12 col-sm-12 col-md-12" style=" margin-bottom: 10px;">
+                                                        <!-- <div class="row col-xs-12 col-sm-12 col-md-12" style=" margin-bottom: 10px;">
                                                             <div    class="col-xs-4 col-sm-4 col-md-4" style="padding-right:0px; padding-left:0px;">
                                                                 <p style="padding: 5px;font-weight: bold;" id="width_box_input_def">Ширина проема (286-1368) </p>
                                                                 <p style="padding: 5px;font-weight: bold;margin-top: -15px;" id="box-depth_def">Глубина проема (MIN <span class="gap">253</span>) </p>
@@ -1089,7 +1089,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     
                                                             <div    class="col-xs-4 col-sm-4 col-md-4 " style="padding-right:0px; padding-left:0px;" >
                                                                 <div class="form-check form-check-inline" style="padding-left: 25px;">
-                                                                <!-- <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" disabled> -->
+                                                               
                                                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" >
                                                                 <label class="form-check-label" for="inlineRadio2">Вкладной фасад </label>
                                                                 
@@ -1099,7 +1099,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 </div>
                                                             </div> 
                                                     
-                                                        </div>                                                           
+                                                        </div>                                                            -->
                                                  
                                                 
                                                         <div    class="col-xs-4 col-sm-4 col-md-4" style="padding-right:0px; padding-left:0px;">
@@ -1117,52 +1117,123 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </div>    
                                                 </div>
                                                 <!-- row  -->
+<!-- 
+                                                <div class="row col-xs-12 col-sm-12 col-md-12" >
+                                                    <div class=" col-xs-4 col-sm-4 col-md-4">                                                                     
+                                                        <div  class="defbox" >
+                                                            <p>Внутренняя ширина короба </p> 
+                                                        </div>                                                   
+                                                    </div> 
+                                                    <div class=" col-xs-4 col-sm-4 col-md-4">
+                                                    <div  class="defbox" >
+                                                            <p>Внутренняя глубина короба </p> 
+                                                        </div>   
+                                                    </div> 
+                                                    <div class=" col-xs-4 col-sm-4 col-md-4">
+                                                    <div  class="defbox" >
+                                                            <p>Внутренняя глубина короба </p> 
+                                                        </div>   
+                                                    </div> 
+
+                                                   
+                                                </div> -->
+                                                <!-- row  -->
+                                                <div class="row col-xs-12 col-sm-12 col-md-12" >
+                                                    <div class=" col-xs-4 col-sm-4 col-md-4">                                                                     
+                                                        <div  class="defbox" >
+                                                        <p style="padding: 5px;font-weight: bold;" id="width_box_input_def">Внутренняя ширина короба<br>(286-1368) </p> 
+                                                        </div>                                                   
+                                                    </div> 
+                                                    <div class=" col-xs-4 col-sm-4 col-md-4">
+                                                    <div  class="defbox" >
+                                                    <p style="padding: 5px;font-weight: bold;" id="box-depth_def">Внутренняя глубина короба<br>(MIN <span class="gap">253</span>) </p>
+                                                        </div>   
+                                                    </div> 
+                                                    <div class=" col-xs-4 col-sm-4 col-md-4">
+                                                    <div  class="defbox" >
+                                                    <p style="padding: 5px;font-weight: bold;" id="box-depth_def2">Внутренняя глубина короба<br>(MIN <span class="gap2">269</span>) </p>
+                                                        </div>   
+                                                    </div> 
+
+                                                   
+                                                </div>
+                                                <!-- row  -->
 
                                                 <div class="row col-xs-12 col-sm-12 col-md-12" >
                                                     <div class=" col-xs-4 col-sm-4 col-md-4">
                                                         <table class="dim_box_horizontal" >
                                                             <tr>
-                                                                <td  style="width: 25%; text-align:right;">|</td>
-                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-left"></span></td>
+                                                                <td  style="width: 10%; text-align:right;"></td>
+                                                                <td></td>
                                                                 <td class="">                         
                                                                 <input type="text" class="form-control only_number " id="width_box_input"  style="width: 100%;padding-left:10px;" value="286">                        
                                                                 </td> 
-                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-right "></span></td>
-                                                                <td  style="width: 25%; text-align:left">|</td>
+                                                                <td></span></td>
+                                                                <td  style="width: 10%; text-align:left"></td>
                                                             </tr>
                                                         </table>
                                                     </div> 
                                                     <div class=" col-xs-4 col-sm-4 col-md-4">
                                                         <table class="dim_box_horizontal" >
                                                             <tr>
-                                                            <td  style="width: 12%; text-align:right;">|</td>
-                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-left"></span></td>
+                                                            <td  style="width: 10%; text-align:right;"></td>
+                                                                <td></td>
                                                                 <td class="">                         
                                                                 <input type="text" class="form-control only_number " id="box-depth_input"  style=" width: 100%;padding-left:10px;" value="253">                        
                                                                 </td> 
-                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-right "></span></td>
-                                                                <td  style="width: 12%; text-align:left;">|</td>
+                                                                <td></td>
+                                                                <td  style="width: 10%; text-align:left;"></td>
                                                             </tr>
                                                         </table>
                                                     </div> 
                                                     <div class=" col-xs-4 col-sm-4 col-md-4">
                                                         <table class="dim_box_horizontal" >
                                                             <tr>
-                                                            <td  style="width: 12%; text-align:right;">|</td>
-                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-left"></span></td>
+                                                            <td  style="width: 12%; text-align:right;"></td>
+                                                                <td></span></td>
                                                                 <td class="">   
                                                                                       
                                                                 <input type="text" class="form-control only_number " id="box-depth_x_input"  style="width: 100%;padding-left:10px" disabled  value="269">
                                                                                        
                                                                 </td> 
-                                                                <td><span class="glyphicon glyphicon glyphicon-arrow-right "></span></td>
-                                                                <td  style="width: 12%; text-align:left">|</td>
+                                                                <td></td>
+                                                                <td  style="width: 12%; text-align:left"></td>
                                                             </tr>
                                                         </table>
                                                     </div> 
 
                                                    
                                                 </div>
+
+                                                <div class="row col-xs-12 col-sm-12 col-md-12" style=" margin-bottom: 10px;">
+                                                            <div    class="col-xs-4 col-sm-4 col-md-4" style="padding-right:0px; padding-left:0px;">
+                                                              
+                                                            </div>
+                                                                
+                                                
+                                                            <div  class="col-xs-4 col-sm-4 col-md-4" style="padding-right:0px; padding-left:0px;">
+                                                                <div class="form-check form-check-inline" style="padding: 5px;padding-left: 15px;">
+                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                                                                <label class="form-check-label" for="inlineRadio1" title="ЖМИ СЮДА!">Накладной фасад</label>
+                                                                
+                                                                
+                                                                </div> 
+                                                            </div> 
+                                                                
+                                                    
+                                                            <div    class="col-xs-4 col-sm-4 col-md-4 " style="padding-right:0px; padding-left:0px;" >
+                                                                <div class="form-check form-check-inline" style="padding-left: 25px;">
+                                                                <!-- <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" disabled> -->
+                                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" >
+                                                                <label class="form-check-label" for="inlineRadio2"  title="ЖМИ СЮДА!">Вкладной фасад </label>
+                                                                
+                                                                    <label class="form-check-label " for="input_x"  title="Толщина фасада"> X=</label>
+                                                                    <input type="text" class="form-control only_number " id="input_x"  style="width: 20%; padding: 6px 10px;" value="16" disabled > 
+                                                                
+                                                                </div>
+                                                            </div> 
+                                                    
+                                                        </div> 
 <!-- / ВЫВОД РЕЗУЛЬТАТА/ -->
 
                                           
