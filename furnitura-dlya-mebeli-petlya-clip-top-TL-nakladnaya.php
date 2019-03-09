@@ -82,7 +82,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulnakladnaya-5000502-01-101_1.png" class="" alt="Петля" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="26"><a href="https://publications.blum.com/2018/catalogue/ru/110/#zoom=z" target="_blank">70T9550.TL</a></td>
+                                                            <td class="animated" data-objfurnid="31"><a href="https://publications.blum.com/2018/catalogue/ru/110/#zoom=z" target="_blank">70T9550.TL</a></td>
                                                             <td>Металл</td> 
                                                             <td colspan="3">пeтля накладная CLIP top BLUMOTION без пружины</td>
                                                         </tr>

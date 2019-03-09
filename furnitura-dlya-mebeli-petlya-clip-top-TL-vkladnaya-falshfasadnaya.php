@@ -82,7 +82,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulvkladnaya-falshfasadnaya-5000502-01-103_1.png" class="" alt="Петля" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="28"><a href="https://publications.blum.com/2018/catalogue/ru/114/#zoom=z" target="_blank">78T9550.TL</a></td>
+                                                            <td class="animated" data-objfurnid="33"><a href="https://publications.blum.com/2018/catalogue/ru/114/#zoom=z" target="_blank">78T9550.TL</a></td>
                                                             <td>Металл</td> 
                                                             <td colspan="3">пeтля под фальшпанель CLIP top BLUMOTION без пружины</td>
                                                         </tr>

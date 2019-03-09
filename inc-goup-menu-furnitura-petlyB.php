@@ -5,7 +5,7 @@ $path_img="./dist/filesdb/images/thumbs/";
 /////////////////////////////////////
     $petlyB=[];
     $petlyB[0]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php",
-                    'id'=>"petlya-vkladnaya",
+                    'id'=>"#petlya-vkladnaya",
                     'img'=> $path_img."tbsALLpetly.png",
                     'keywords'=>"",
                     'def'=>"ПЕТЛИ для ФАСАДОВ BLUMOTION"];    

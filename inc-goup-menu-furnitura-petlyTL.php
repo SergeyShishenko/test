@@ -4,8 +4,8 @@
 $path_img="./dist/filesdb/images/thumbs/";
 /////////////////////////////////////
     $petlyTL=[];
-    $petlyTL[0]=['path'=>"furnitura-dlya-mebeli-petlya-clip-TL-top-vkladnaya.php",
-                    'id'=>"petlya-vkladnaya-TL",
+    $petlyTL[0]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-TL-vkladnaya.php",
+                    'id'=>"#petlya-vkladnaya-TL",
                     'img'=> $path_img."tbsALLpetly.png",
                     'keywords'=>"",
                     'def'=>"ПЕТЛИ для ФАСАДОВ без пружины"];    
