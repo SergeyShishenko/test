@@ -7,5 +7,5 @@ $scriptVersion = 30;
 $script2Version = 20;
 $floatingVersion = 21;
 $vpijsVersion = 12;
-$cartVersion =8;
+$cartVersion =9;
 ?>

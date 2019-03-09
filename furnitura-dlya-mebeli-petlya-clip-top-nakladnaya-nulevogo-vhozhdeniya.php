@@ -54,6 +54,9 @@ include 'inc-left-side-menu-furnitura.php';
                                             <div class="row">                                                
                                                 <h3 class="blum">5000502-01-104</h3>
                                                 <h3 class="blum">Петля накладная нулевого вхождения для профильных дверей 155° CLIP top BLUMOTION 71B7550, чашка петли: на шурупы</h3>
+                                                <p> <a href="furnitura-dlya-mebeli-petlya-clip-top-TL-nakladnaya-nulevogo-vhozhdeniya.php#petlya-nakladnaya-nulevogo-vhozhdeniya-TL" >
+                                                    <b>БЕЗ ПРУЖИНЫ</b> &nbsp;<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i></a>
+                                                </p>  
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
                                                         <thead>
@@ -140,6 +143,7 @@ include 'inc-left-side-menu-furnitura.php';
                                          <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
                                             <li ><a href="#harakteristiki" data-toggle="tab">Характеристики</a></li>
                                             <li  class="active"><a href="#instrukciya" data-toggle="tab">Инструкция</a></li>
+                                            <li  class=""><a href="#weight" data-toggle="tab">Подбор по весу</a></li>
                                             <!-- <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                                                 <ul class="dropdown-menu">
@@ -427,6 +431,17 @@ include 'inc-left-side-menu-furnitura.php';
 
 </div> -->
 <!-- /часть --> 
+                                            </div>
+                                            <div class="tab-pane fade" id="weight">
+                                                <p>
+                                                <a>
+                                                    <img src="./dist/images/petli-dlya-fasadov-podbor-po-vesu_2.png" class="center-block   img-rounded img-thumbnail b-lazy bar img-book b-loaded" 
+                                                    data-toggle="modal" 
+                                                    data-target="#myModal" 
+                                                    alt="ПЕТЛИ для ФАСАДОВ (подбор по весу)">                                                  
+                                                </a>
+                                                </p>
+                                                <a href="https://publications.blum.com/2018/catalogue/ru/694/#zoom=z" target="_blank" type="button" class="btn btn-primary" style="color:#fff;">ИСТОЧНИК - каталог BLUM</a>
                                             </div>
                                             <!-- <div class="tab-pane fade" id="dropdown3">
                                                 <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia

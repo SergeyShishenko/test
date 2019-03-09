@@ -20,14 +20,14 @@ include 'inc-left-side-menu-furnitura.php';
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">                   
 
-                    <article    id="petli-dlya-fasadov">
+                    <article    id="petli-dlya-fasadov-TL">
                       <section >
                         <div class="page-header"     >
-                          <h1 itemprop="name">ПЕТЛИ для ФАСАДОВ BLUMOTION</h1>
+                          <h1 itemprop="name">ПЕТЛИ для ФАСАДОВ без пружины</h1>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
-                            <div class="main-box clearfix"  id="petlya-vkladnaya-falshfasadnaya" >   
+                            <div class="main-box clearfix"  id="petlya-vkladnaya-falshfasadnaya-TL" >   
                                
                                 <h2 ></h2>                            
                                 <!-- <h2 >Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы</h2>  -->
@@ -52,10 +52,10 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">5000502-01-103</h3>
-                                                <h3 class="blum">Петля вкладная под фальшпанель для профильных дверей 95° CLIP top BLUMOTION 79B9550, чашка петли: на шурупы</h3>
-                                                <p> <a href="furnitura-dlya-mebeli-petlya-clip-top-TL-vkladnaya-falshfasadnaya.php#petlya-vkladnaya-falshfasadnaya-TL" >
-                                                    <b>БЕЗ ПРУЖИНЫ</b> &nbsp;<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i></a>
+                                                <h3 class="blum">5000502-01-113</h3>
+                                                <h3 class="blum">Петля вкладная под фальшпанель для профильных дверей 95° CLIP top BLUMOTION без пружины 78T9550.TL, чашка петли: на шурупы</h3>
+                                                <p> <a href="furnitura-dlya-mebeli-petlya-clip-top-vkladnaya-falshfasadnaya.php#petlya-vkladnaya-falshfasadnaya" >
+                                                    <b>С ДОВОДЧИКОМ</b> &nbsp;<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i></a>
                                                 </p>  
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
@@ -82,9 +82,9 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulvkladnaya-falshfasadnaya-5000502-01-103_1.png" class="" alt="Петля" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="28"><a href="https://publications.blum.com/2018/catalogue/ru/114/#zoom=z" target="_blank">79B9550</a></td>
+                                                            <td class="animated" data-objfurnid="28"><a href="https://publications.blum.com/2018/catalogue/ru/114/#zoom=z" target="_blank">78T9550.TL</a></td>
                                                             <td>Металл</td> 
-                                                            <td colspan="3">пeтля под фальшпанель CLIP top BLUMOTION</td>
+                                                            <td colspan="3">пeтля под фальшпанель CLIP top BLUMOTION без пружины</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulotvetnaya-planka-173L6100.png" class="" alt="планка ответная" title=""></td>
@@ -438,17 +438,6 @@ include 'inc-left-side-menu-furnitura.php';
 </div> -->
 <!-- /часть --> 
                                             </div>
-                                            <div class="tab-pane fade" id="weight">
-                                                <p>
-                                                <a>
-                                                    <img src="./dist/images/petli-dlya-fasadov-podbor-po-vesu_2.png" class="center-block   img-rounded img-thumbnail b-lazy bar img-book b-loaded" 
-                                                    data-toggle="modal" 
-                                                    data-target="#myModal" 
-                                                    alt="ПЕТЛИ для ФАСАДОВ (подбор по весу)">                                                  
-                                                </a>
-                                                </p>
-                                                <a href="https://publications.blum.com/2018/catalogue/ru/694/#zoom=z" target="_blank" type="button" class="btn btn-primary" style="color:#fff;">ИСТОЧНИК - каталог BLUM</a>
-                                            </div>
                                             <!-- <div class="tab-pane fade" id="dropdown3">
                                                 <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia
                                                     banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
@@ -479,7 +468,7 @@ include 'inc-left-side-menu-furnitura.php';
                 </div> <!-- main  -->
                 <?php
         //  include 'inc-goup-menu.php';//$styazhka=[] -->
-        SideMenu($petlyB,4);
+        SideMenu($petlyTL,4);
         ?>              
               
     

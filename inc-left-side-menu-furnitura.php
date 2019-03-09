@@ -8,6 +8,7 @@
 <?php
 include 'inc-goup-menu-furnitura-styazhka.php';//$styazhka=[]
 include 'inc-goup-menu-furnitura-petlyB.php';//$petlyB=[]
+include 'inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
  echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">

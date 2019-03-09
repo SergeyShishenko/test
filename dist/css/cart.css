@@ -99,7 +99,7 @@ a:visited,
 a b {
     text-decoration: none;
     cursor: pointer;
-    color: #474747;
+    /* color: #474747; */
 }
 
 button.button:hover,

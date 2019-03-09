@@ -1,5 +1,5 @@
 <?php
-//furnitura-dlya-mebeli-petlya-clip-top-vkladnaya-falshfasadnaya.php
+//furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php
 include 'inc-session-start.php';
 $detaliClass = '';
 $izdeliyaClass = '';
@@ -20,14 +20,14 @@ include 'inc-left-side-menu-furnitura.php';
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">                   
 
-                    <article    id="petli-dlya-fasadov">
+                    <article    id="petli-dlya-fasadov-TL">
                       <section >
                         <div class="page-header"     >
-                          <h1 itemprop="name">ПЕТЛИ для ФАСАДОВ BLUMOTION</h1>
+                          <h1 itemprop="name">ПЕТЛИ для ФАСАДОВ BLUMOTION без пружины</h1>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
                             
-                            <div class="main-box clearfix"  id="petlya-vkladnaya-falshfasadnaya" >   
+                            <div class="main-box clearfix"  id="petlya-nakladnaya-TL" >   
                                
                                 <h2 ></h2>                            
                                 <!-- <h2 >Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы</h2>  -->
@@ -35,7 +35,7 @@ include 'inc-left-side-menu-furnitura.php';
                                 <div class="main-box-body clearfix">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
-                                            <source src="./dist/video/petly/clp0011-blumotion-trailer_pr_an_fi_bau_$sall_$amp4720p_$v1.mp4#t=4" type="video/mp4">
+                                            <source src="./dist/video/petly/clp0015-ctb_pr_rf_fi_bau_$sall_$amp4720p_$v1.mp4" type="video/mp4">
                                         </video>
                                     </div>
                                 </div>                                
@@ -52,10 +52,10 @@ include 'inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum">5000502-01-103</h3>
-                                                <h3 class="blum">Петля вкладная под фальшпанель для профильных дверей 95° CLIP top BLUMOTION 79B9550, чашка петли: на шурупы</h3>
-                                                <p> <a href="furnitura-dlya-mebeli-petlya-clip-top-TL-vkladnaya-falshfasadnaya.php#petlya-vkladnaya-falshfasadnaya-TL" >
-                                                    <b>БЕЗ ПРУЖИНЫ</b> &nbsp;<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i></a>
+                                                <h3 class="blum">5000502-01-111</h3>
+                                                <h3 class="blum">Петля накладная для профильных дверей 95° CLIP top BLUMOTION без пружины 70T9550.TL, чашка петли: на шурупы</h3>
+                                                <p> <a href="furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php#petlya-nakladnaya" >
+                                                    <b>С ДОВОДЧИКОМ</b> &nbsp;<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i></a>
                                                 </p>  
                                                 <p>Состав артикула:</p>            
                                                 <table class="table table-striped table-responsive">
@@ -80,18 +80,18 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </thead>
                                                         <tbody id="calcresult">
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulvkladnaya-falshfasadnaya-5000502-01-103_1.png" class="" alt="Петля" title=""></td>
+                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulnakladnaya-5000502-01-101_1.png" class="" alt="Петля" title=""></td>
                                                             <td>1</td>
-                                                            <td class="animated" data-objfurnid="28"><a href="https://publications.blum.com/2018/catalogue/ru/114/#zoom=z" target="_blank">79B9550</a></td>
+                                                            <td class="animated" data-objfurnid="26"><a href="https://publications.blum.com/2018/catalogue/ru/110/#zoom=z" target="_blank">70T9550.TL</a></td>
                                                             <td>Металл</td> 
-                                                            <td colspan="3">пeтля под фальшпанель CLIP top BLUMOTION</td>
+                                                            <td colspan="3">пeтля накладная CLIP top BLUMOTION без пружины</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulotvetnaya-planka-173L6100.png" class="" alt="планка ответная" title=""></td>
                                                             <td>1</td>
-                                                            <td><a href="https://publications.blum.com/2018/catalogue/ru/175/#zoom=z" target="_blank">173L6130</a></td>
+                                                            <td><a href="https://publications.blum.com/2018/catalogue/ru/175/#zoom=z" target="_blank">173L6100</a></td>
                                                             <td>Металл</td>
-                                                            <td>планка ответная CLIP, подъем 3 мм, регулировка по высоте продольный паз</td>
+                                                            <td>планка ответная CLIP, подъем 0 мм, регулировка по высоте продольный паз</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulzaglushka70T3504.png" class="" alt="заглушка под чашку" title=""></td>
@@ -103,7 +103,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulzaglushka70_1553.png" class="" alt="заглушка на плечо" title=""></td>
                                                             <td>1</td>
-                                                            <td class="" ><a href="https://publications.blum.com/2018/catalogue/ru/180/#zoom=z" target="_blank">70.1503</a></td>
+                                                            <td class="" ><a href="https://publications.blum.com/2018/catalogue/ru/180/#zoom=z" target="_blank">70.1553</a></td>
                                                             <td>Металл</td> 
                                                             <td colspan="3">заглушка на плечо петли, без логотипа</td>
                                                         </tr>
@@ -156,7 +156,7 @@ include 'inc-left-side-menu-furnitura.php';
                                             <div class="tab-pane fade " id="harakteristiki">
                                                 <p>
                                                     <ul class="stat" style="margin-top: 0px;">
-                                                        <li><b>Петля под фальшпанель</b></li>
+                                                        <li><b>Петля для толстых и профильных дверей</b></li>
                                                         <li><b>CLIP top BLUMOTION</b> со встроенным <b>BLUMOTION</b> (с возможностью деактивации)</li> 
                                                         <li><b>CLIP top </b>с пружиной или без пружины</li>
                                                         <li>Металлическая петля, никелированная</li>
@@ -171,9 +171,8 @@ include 'inc-left-side-menu-furnitura.php';
                                             <div class="tab-pane fade in active" id="instrukciya">
 <!-- часть1 -->
     <h4 >Проектирование</h3>                         
-    <h5>Размеры петли и расчет зазоров при заводской настройке (подъем ответной планки = 3 мм)</h5>                         
-    <h5 >Вхождение двери при полном открывании</h5>
-                              
+    <h5>Размеры петли и расчет зазоров при заводской настройке (подъем ответной планки = 0 мм)</h5>                         
+    <h5 >Вхождение двери при полном открывании</h5>                         
 
     <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
         <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
@@ -181,10 +180,10 @@ include 'inc-left-side-menu-furnitura.php';
 
                 <div class="item active">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Петля в сборе" 
-                    data-image="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_2.png" data-target="#image-gallery">
+                    data-image="./dist/filesdb/images/nakladnaya-5000502-01-101_2.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_2.png"
-                            data-src="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_2.png"
+                            src="./dist/filesdb/images/nakladnaya-5000502-01-101_2.png"
+                            data-src="./dist/filesdb/images/nakladnaya-5000502-01-101_2.png"
                             class="center-block   img-rounded    bar "
                             data-toggle="modal"                                                                                                                    
                             alt="Петля в сборе"
@@ -194,49 +193,37 @@ include 'inc-left-side-menu-furnitura.php';
                 </div>
                 <div class="item">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Петля вкладная" 
-                    data-image="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1.png" data-target="#image-gallery">
+                    data-image="./dist/filesdb/images/nakladnaya-5000502-01-101_1.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1.png"
-                            data-src="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1.png"
+                            src="./dist/filesdb/images/nakladnaya-5000502-01-101_1.png"
+                            data-src="./dist/filesdb/images/nakladnaya-5000502-01-101_1.png"
                             class="center-block   img-rounded     bar "
                             data-toggle="modal"                                                                                                                          
                             alt="Петля вкладная"                                                        
                         >
                     </a>
                 </div>
-                <!-- <div class="item">
+                <div class="item">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Вкладная конструкция" 
-                    data-image="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1_sch1.png" data-target="#image-gallery">
+                    data-image="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch1.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1_sch1.png"
-                            data-src="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1_sch1.png"
+                            src="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch1.png"
+                            data-src="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch1.png"
                             class="center-block   img-rounded     bar "
                             data-toggle="modal"                                                                                                                          
                             alt="Вкладная конструкция"                                                        
-                        >
-                    </a>
-                </div> -->
-                <div class="item">
-                    <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Растояние от чашки TB" 
-                    data-image="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1_sch2.png" data-target="#image-gallery">
-                        <img  
-                            src="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1_sch2.png" 
-                            data-src="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1_sch2.png"
-                            class="center-block   img-rounded     bar "
-                            data-toggle="modal"                                                                                                                         
-                            alt="Растояние от чашки TB"                                                        
                         >
                     </a>
                 </div>
-                      <div class="item">
-                    <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Вкладная конструкция" 
-                    data-image="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1_sch3.png" data-target="#image-gallery">
+                <div class="item">
+                    <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Растояние от чашки TB" 
+                    data-image="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch2.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1_sch3.png"
-                            data-src="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1_sch3.png"
+                            src="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch2.png" 
+                            data-src="./dist/filesdb/images/nakladnaya-5000502-01-101_1_sch2.png"
                             class="center-block   img-rounded     bar "
-                            data-toggle="modal"                                                                                                                          
-                            alt="Вкладная конструкция"                                                        
+                            data-toggle="modal"                                                                                                                         
+                            alt="Растояние от чашки TB"                                                        
                         >
                     </a>
                 </div>
@@ -254,13 +241,6 @@ include 'inc-left-side-menu-furnitura.php';
             </a>
         </div>
     </div> 
-    <h5>Стандартное расстояние (от края фальшпанели) до места крепления ответной планки</h5> 
-    <h5>уменьшается на 15.5 мм (= 21.5 мм)</h5>
-    <h5>Необходимо использование ответной планки с подъемом 3 мм, чтобы фальшпанель и</h5>
-    <h5>дверь находились на одном уровне</h5>
-    <h5>F = 8 мм – TB</h5>
-    <h5>F Зазор</h5>
-    <h5>TB Расстояние от чашки</h5> 
 
     <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
         <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
@@ -278,12 +258,12 @@ include 'inc-left-side-menu-furnitura.php';
                             <tr>
                             <th>MD <br>Подъем ответной планки<br>мм</th>
                             <th>TB <br>Расстояние от чашки<br>мм</th>
-                            <th>F <br>Зазор<br>мм</th>                                                       
+                            <th>FA <br>Наложение фасада<br>мм</th>                                                       
                             </tr>                            
                             <tr>
-                            <td>3</td>
+                            <td>0</td>
                             <td>5</td>
-                            <td>3</td>                                                     
+                            <td>16</td>                                                     
                             </tr>
                         </tbody>
                     </table>
@@ -303,10 +283,10 @@ include 'inc-left-side-menu-furnitura.php';
 
                 <div class="item active">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Применение" 
-                    data-image="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1_sch1.png" data-target="#image-gallery">
+                    data-image="./dist/filesdb/images/petly_all_sch1.png" data-target="#image-gallery">
                         <img  
-                            src="./dist/filesdb/images/vkladnaya-falshfasadnaya-5000502-01-103_1_sch1.png"
-                            data-src="./dist/filesdb/vkladnaya-falshfasadnaya-5000502-01-103_1_sch1.png"
+                            src="./dist/filesdb/images/petly_all_sch1.png"
+                            data-src="./dist/filesdb/images/petly_all_sch1.png"
                             class="center-block   img-rounded    bar "
                             data-toggle="modal"                                                                                                                    
                             alt="Применение"
@@ -314,7 +294,19 @@ include 'inc-left-side-menu-furnitura.php';
                         >
                     </a>
                 </div>
-          
+                <div class="item">
+                    <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Минимальный зазор" 
+                    data-image="./dist/filesdb/images/petly_all_sch2.png" data-target="#image-gallery">
+                        <img  
+                            src="./dist/filesdb/images/petly_all_sch2.png"
+                            data-src="./dist/filesdb/images/petly_all_sch2.png"
+                            class="center-block   img-rounded    bar "
+                            data-toggle="modal"                                                                                                                    
+                            alt="Минимальный зазор"
+                            data-pdf=""                                                    
+                        >
+                    </a>
+                </div>
                 <div class="item">
                     <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Регулировка" 
                     data-image="./dist/filesdb/images/petly_all_sch3.png" data-target="#image-gallery">
@@ -477,9 +469,10 @@ include 'inc-left-side-menu-furnitura.php';
 
                     
                 </div> <!-- main  -->
-                <?php
+
+     <?php
         //  include 'inc-goup-menu.php';//$styazhka=[] -->
-        SideMenu($petlyB,4);
+        SideMenu($petlyTL,2);
         ?>              
               
     
