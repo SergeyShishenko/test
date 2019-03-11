@@ -220,12 +220,12 @@ function getWH()
     || document.documentElement.clientHeight
     || document.body.clientHeight;
 
-//     console.log ("w"+window.outerWidth );// текущая ширина экрана 
-//  console.log ("h"+window.outerHeight );// текущая ширина экрана 
+    console.log ("w"+window.outerWidth );// текущая ширина экрана 
+ console.log ("h"+window.outerHeight );// текущая ширина экрана 
 
 // var x = document.getElementById("body");
 // x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
-console.log("Ширина внутреннего окна браузера: " + w + ", height: " + h + ".");
+// console.log("Ширина внутреннего окна браузера: " + w + ", height: " + h + ".");
 }
 
 
@@ -442,10 +442,10 @@ $(function () {
     var child1 =UlSubMenu.length;
     var bottomUl = parseInt($(this ).css('bottom'));
      var triangle =$('#triangle2').data('top');
-    // console.log('triangle ' + triangle);
-    //  console.log('triangle2 ' + $('#triangle2').html());
-    // console.log('child1 ' + child1);
-    // console.log('bottom ' + $(this ).css('bottom'));
+    console.log('triangle ' + triangle);
+     console.log('triangle2 ' + $('#triangle2').html());
+    console.log('child1 ' + child1);
+    console.log('bottom ' + $(this ).css('bottom'));
     if(dy > 0) { 
 
            
