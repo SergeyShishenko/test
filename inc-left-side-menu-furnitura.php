@@ -3,7 +3,9 @@
 // $item_dlya_dvernyh_blokov_Class = 'active';
 // $item_dlya_mebeli_Class = '';
 // $item_universalnaya_Class = '';
+// $item_krepezh_i_metizy_Class = '';//Крепеж и метизы
 // $item_katalogi_Class = '';
+
 ?>
 <?php
 include 'inc-goup-menu-furnitura-styazhka.php';//$styazhka=[]
@@ -256,6 +258,19 @@ include 'inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
                                     </li>                    
                                 </ul>
                             </li>
+                            <li class="menu">
+                                <a href="" class="list-group-item '.$item_krepezh_i_metizy_Class.'">КРЕПЕЖ И МЕТИЗЫ</a>
+                                <ul class="list-group sub_menu">
+                                    <li class="menu2"><a href="#" " class="list-group-item sub">Саморезы</a>  
+                                    <ul class="list-group sub_menu2">
+                                            <li><a class="list-group-item sub" href="#">Саморезы универсальные</a>
+                                            </li>                                                                                                                         
+                                        </ul>                                     
+                                    </li>
+                                    <li class="menu2"><a href="#" class="list-group-item sub">Дюбели</a>                                       
+                                    </li>                                        
+                                </ul>
+                            </li>                                                      
                             <li class="menu">
                                 <a href="" class="list-group-item '.$item_katalogi_Class.'">КАТАЛОГИ</a>
                                 <ul class="list-group sub_menu">
