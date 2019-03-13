@@ -272,12 +272,13 @@
                     $('#uploaded-files').append(data);
                     var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
                     DbNumberID = clickedID[0]; //и получаем номер из массива
-                    
+                    // alert(clickedID[1]);
                     objxlsx.push(DbNumberID);
                     // objxlsx[DbNumberID]=(new Objx(DbNumberID));
                     objxlsx[DbNumberID]=[];
                     $('#DelSubmit').show();
-                    $('#CreateSubmit').show();
+                    if (clickedID[1]=="xlsx"){$('#CreateSubmit').show();}
+                    
                      floor={}; //Этаж
                      room={}; //Помещение
                      complect={}; //Комплект изделий
@@ -395,11 +396,11 @@
                     }// else {alert("Вы нажали кнопку отмена");}  
             });
 
-              //Генерация xls
+              //Генерация prise xls
            $("body").on("click", "#CreateSubmit", function(e) {
             // e.preventDefault();
 
-            // alert('length-'+objxlsx.length);
+            // alert('length-'+objxlsx[0].length);
             // item – очередной элемент массива.
             // i– его номер.
             // objxlsx – массив, который перебирается.
@@ -407,20 +408,22 @@
             var data;                 
             data = {};
             // propalert(product);
-            alert($('#client_output').text());
-            alert($('#agent_output').text());
-            alert($('#address_output').text());
-            alert($('#floor_output').text());
-            alert($('#room_output').text());
-            alert($('#complect_output').text());
-            alert($('#order_output').text());
-            alert($('#product_output').text());
+            // alert($('#client_output').text());
+            // alert($('#agent_output').text());
+            // alert($('#address_output').text());
+            // alert($('#floor_output').text());
+            // alert($('#room_output').text());
+            // alert($('#complect_output').text());
+            // alert($('#order_output').text());
+            // alert($('#product_output').text());
             objxlsx.forEach(function(item) {
                 // var name =objxlsx[n];
                 var f=item; // ключ 
                 // propalert(objxlsx);
+               
+               if (objxlsx[item].length==0) {alert('Ничего не выбрано! '+$('#product_output').text()); return;}
                     objxlsx[item].forEach(function(item, i) {
-                        alert( f + ": "+i + "- "  + "{ kd=> "+item.kd + ", dp=> "+item.dp +" }" );
+                        // alert( f + ": "+i + "- "  + "{ kd=> "+item.kd + ", dp=> "+item.dp +" }" );
                         // data['arr[' + row+ '][name]'] = f;
                         data['arr[' + f + '][' + i + '][kd]']  = item.kd;
                         data['arr[' + f + '][' + i + '][dp]']  = item.dp;

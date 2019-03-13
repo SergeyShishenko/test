@@ -14,8 +14,8 @@
 
 if(isset($_POST["arr"]) )//генерация файла
 {
-	echo "localhost !!!!!!!";
-			exit();
+	// echo "localhost !!!!!!!";
+	// 		exit();
 	 if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php')) 
 	 	{
 			
@@ -43,10 +43,10 @@ if(isset($_POST["arr"]) )//генерация файла
 			$objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/PR_template.xls");// для сайта !!!!!!!
         }
 		// $objPHPExcel->getActiveSheet()->setCellValue('D1', PHPExcel_Shared_Date::PHPToExcel(time()));
-	 echo "<pre>";
-	 echo print_f($_POST["arr"]);	 
-     echo "</pre>";
-	 exit();
+	//  echo "<pre>";
+	//  echo print_r($_POST["arr"]);	 
+    //  echo "</pre>";
+	//  exit();
 	 foreach ($_POST["arr"] as $key=>$v1)
 	  {
 		echo '<hr>';
