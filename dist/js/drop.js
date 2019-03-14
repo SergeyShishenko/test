@@ -1099,7 +1099,7 @@ function checkvisS()
 
 $("body").on('click','.btn', function() {
     var $this = $(this);
-  $this.button('loading');
+//   $this.button('loading');
     setTimeout(function() {
        $this.button('reset');
    }, 2000);

@@ -248,6 +248,7 @@ include 'inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
                                             </li>                                                                                   
                                         </ul>
                                     </li>
+
                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-universalnaya.php#komplekty-furnitury-dlya-montazha">КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА</a>
                                         <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-universalnaya.php#kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">КФДМ блоков дверных (1 комплект на 1 дверной блок)</a>
@@ -255,10 +256,21 @@ include 'inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
                                             <li><a class="list-group-item sub" href="furnitura-universalnaya.php#kfdm-plintusov-1-komplekt-na-10-mp-plintusa">КФДМ плинтусов (1 комплект на 10 м.п. плинтуса)</a>
                                             </li>                                                                                 
                                         </ul>
-                                    </li>                    
+                                    </li> 
+                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-universalnaya-samorezy.php#samorezy">КРЕПЕЖ И МЕТИЗЫ</a>
+                                        <ul class="list-group sub_menu2">
+                                            <li><a class="list-group-item sub" href="furnitura-universalnaya-samorezy.php#samorezy">Саморезы</a>
+                                            </li>
+                                            <li><a class="list-group-item sub" href="furnitura-universalnaya-dyubeli.php#dyubeli">Дюбели</a>
+                                            </li>
+                                                                                                                           
+                                        </ul>
+                                    </li> 
+                                    
+                                    
                                 </ul>
                             </li>
-                            <li class="menu">
+                           <!-- <li class="menu">
                                 <a href="" class="list-group-item '.$item_krepezh_i_metizy_Class.'">КРЕПЕЖ И МЕТИЗЫ</a>
                                 <ul class="list-group sub_menu">
                                     <li class="menu2"><a href="#" " class="list-group-item sub">Саморезы</a>  
@@ -270,7 +282,7 @@ include 'inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
                                     <li class="menu2"><a href="#" class="list-group-item sub">Дюбели</a>                                       
                                     </li>                                        
                                 </ul>
-                            </li>                                                      
+                            </li>    -->                                                  
                             <li class="menu">
                                 <a href="" class="list-group-item '.$item_katalogi_Class.'">КАТАЛОГИ</a>
                                 <ul class="list-group sub_menu">
