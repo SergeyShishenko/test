@@ -411,24 +411,26 @@ $(function () {
 
 // прокрутка колеса мыши sub
 var delta = 0;
+var sub_menu2hover = false;
 
 $('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){
 
 var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
-
-if(dy > 0) {
-   
-     delta =  1  + delta ;
-    console.log('sub_menu up1');
-    console.log(delta); 
-    e.preventDefault();  
-}
-else{    
-     delta =  delta - 1;
-    console.log('sub_menu down1');
-    console.log(delta);
-    e.preventDefault();    
-}
+    if (!sub_menu2hover){
+        if(dy > 0) {
+        
+            delta =  1  + delta ;
+            console.log('sub_menu up1');
+            console.log(delta); 
+            e.preventDefault();  
+        }
+        else{    
+            delta =  delta - 1;
+            console.log('sub_menu down1');
+            console.log(delta);
+            e.preventDefault();    
+        }
+    }
 
 });
 
@@ -484,6 +486,19 @@ else{
     }
 
     });
+
+
+    $( ".sub_menu2" ).hover(
+        function() {
+        //   $( this ).addClass( "hover" );
+        // console.log('addClass( "hover" )');
+        sub_menu2hover = true;
+        }, function() {
+        //   $( this ).removeClass( "hover" );
+        // console.log('removeClass( "hover" )');
+        sub_menu2hover = false;
+        }
+      );
 
 
 
