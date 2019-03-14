@@ -410,27 +410,27 @@ $(function () {
 });
 
 // прокрутка колеса мыши sub
-// var delta = 0;
+var delta = 0;
 
-// $('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){
+$('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){
 
-// var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
+var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
 
-// if(dy > 0) {
+if(dy > 0) {
    
-//      delta =  1  + delta ;
-//     console.log('up1');
-//     console.log(delta); 
-//     e.preventDefault();  
-// }
-// else{    
-//      delta =  delta - 1;
-//     console.log('down1');
-//     console.log(delta);
-//     e.preventDefault();    
-// }
+     delta =  1  + delta ;
+    console.log('sub_menu up1');
+    console.log(delta); 
+    e.preventDefault();  
+}
+else{    
+     delta =  delta - 1;
+    console.log('sub_menu down1');
+    console.log(delta);
+    e.preventDefault();    
+}
 
-// });
+});
 
    // прокрутка колеса мыши sub2 
     var delta2 = 0; 
@@ -451,9 +451,9 @@ $(function () {
            
                 if (bottomUl < bottomMIN ) { 
                     delta2 =  1  + delta2 ;
-                    // console.log('up2');
-                    // console.log(delta2); 
-                    // console.log(bottomMIN);
+                    console.log('sub_menu2 up2');
+                    console.log(delta2); 
+                    console.log(bottomMIN);
                     bottomUl= bottomUl + 40;
                     triangle = triangle + 40;
                     // console.log('bottomUl ' + bottomUl); 
@@ -469,11 +469,11 @@ $(function () {
          
             if (delta2 > 0 ) { 
                 delta2 =  delta2 - 1 ;
-                // console.log('down2');
-                // console.log(delta2);
+                console.log('sub_menu2 down2');
+                console.log(delta2);
                 bottomUl = bottomUl - 40;
                 triangle = triangle - 40;
-                // console.log('bottomUl ' + bottomUl); 
+                console.log('bottomUl ' + bottomUl); 
                 $(this ).css("bottom", bottomUl+"px"); 
                 $('#triangle2').remove();
                 $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');   
