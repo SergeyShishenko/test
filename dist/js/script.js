@@ -292,46 +292,15 @@ function getClientWidth(){
 
  $( document ).ready(function() {
     getPositionSearch();
-    // $(function getPositionSearch(){
-    //     var w = getClientWidth();// текущая ширина экрана  
-    //     var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
-    //     switch (true) { // Постоянное значение true вместо w
-    //         // case w >= 0 && w <= 3:
-    //         case w >= 0 && w <= 1800:
-    //             mainpage= 15 - zbz;
-    //             break;
-    //             case w > 1800:
-    //             mainpage= 41 - zbz;
-    //             break;
-    //         default:
-    //             mainpage=51;
-    //     }             
-    //     // var c= $('div.container').css('width');
-    //     var pos = $( '#main-page' ).position().left;
-    //     var c= $('#main-page').css('width');
-    //     c = c.replace("px", "")-mainpage; // -21удалить латинские символы 
-    //     // console.log(pos);
-    //     console.log(c); 
-    //      $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
-    //      $('.zbz-input-clearable').css({'visibility': 'visible'});
-    //      $('span.zbz').css('visibility','visible');
-    //     //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
-    //     // проверка input search
-    //   if($('input.who').val() !== ""){$('span.zbz').css('visibility','hidden');  }
-    //  });
-
-
      getClientWidth();
-
-
-
  });
- console.log ("w"+getClientWidth());// текущая ширина экрана 
- console.log ("w"+window.outerWidth );// текущая ширина экрана 
- console.log ("h"+window.outerHeight );// текущая ширина экрана 
- console.log ("h"+getClientHeight());// текущая ширина экрана 
+//  console.log ("w"+getClientWidth());// текущая ширина экрана 
+//  console.log ("w"+window.outerWidth );// текущая ширина экрана 
+//  console.log ("h"+window.outerHeight );// текущая ширина экрана 
+//  console.log ("h"+getClientHeight());// текущая ширина экрана 
 
  getPositionSearch();nvfn();
+
 //  var delta =0;
 $(function () {
     // $('#navsub  li.menu2 ul').hide();
@@ -412,24 +381,77 @@ $(function () {
 // прокрутка колеса мыши sub
 var delta = 0;
 var sub_menu2hover = false;
+var bottomMIN1 = 0;
 
 $('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){
 
 var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
     if (!sub_menu2hover){
-        if(dy > 0) {
+
+        var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;    
+        var UlSubMenu = $(this ).children();
+        var child1 =UlSubMenu.length;
+        var bottomUl = parseInt($(this ).css('bottom'));
+        // var triangle =$('#triangle222').data('top');
+    // console.log('triangle ' + triangle);
+    //  console.log('triangle222 ' + $('#triangle2').html());
+    console.log('child122 ' + child1);
+    console.log('bottom22 ' + $(this ).last().css('bottom'));
+        // if(dy > 0) {
         
-            delta =  1  + delta ;
-            console.log('sub_menu up1');
-            console.log(delta); 
-            e.preventDefault();  
-        }
-        else{    
+        //     delta =  1  + delta ;
+        //     console.log('sub_menu up1');
+        //     console.log(delta); 
+        //     bottomUl= bottomUl + 40;
+        //     triangle = triangle + 40;
+        //     // console.log('bottomUl ' + bottomUl); 
+        //     $(this ).css("bottom", bottomUl+"px"); 
+        //     e.preventDefault();  
+        // }
+        // else{    
+        //     delta =  delta - 1;
+        //     console.log('sub_menu down1');
+        //     console.log(delta);
+        //     bottomUl = bottomUl - 40;
+        //     triangle = triangle - 40;
+        //     e.preventDefault();    
+        // }
+        if(dy > 0) { 
+
+           
+            if (bottomUl < bottomMIN1 ) { 
+                delta =  1  + delta ;
+                console.log('sub_menu2 up2');
+                console.log(delta2); 
+                console.log(bottomMIN1);
+                bottomUl= bottomUl + 40;
+                triangle = triangle + 40;
+                // console.log('bottomUl ' + bottomUl); 
+                $(this ).css("bottom", bottomUl+"px"); 
+                $('#triangle2').remove();
+                $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');       
+            }
+            e.preventDefault();      
+         }
+else{ 
+    
+    
+     
+        if (delta > 0 ) { 
             delta =  delta - 1;
-            console.log('sub_menu down1');
-            console.log(delta);
-            e.preventDefault();    
-        }
+            console.log('sub_menu2 down2');
+            console.log(delta2);
+            bottomUl = bottomUl - 40;
+            triangle = triangle - 40;
+            console.log('bottomUl ' + bottomUl); 
+            $(this ).css("bottom", bottomUl+"px"); 
+            $('#triangle2').remove();
+            $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');   
+         }
+    e.preventDefault();  
+    
+        
+}
     }
 
 });
