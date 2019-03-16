@@ -68,10 +68,19 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td class="animated" data-objfurnid="16">KON&nbsp;7.0x50&nbsp;IB</td>
                                                             <td>Металл</td> 
                                                             <td >Конфирмат 7.0x50</td>
-                                                            <td class="quantity">                                                            
-                                                               <div class="form-group" style="margin-bottom: 0;width: 112px;">				
+                                                            <td class="quantity"> 
+
+                                                               <!-- <div class="form-group" style="margin-bottom: 0;width: 112px;">				
                                                                     <input id="add_vpi_count-1"  class="form-control" type="number" value="0" min="0" step="10"  >
-                                                                </div>                                                                
+                                                                </div> -->
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                        <input type="text" class="form-control form-c" value="1" >
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                    </div>
+                                                                </div> 
+
                                                             </td>
                                                         </tr>
                                                         <tr>

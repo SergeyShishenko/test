@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title>Untitled</title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    input.form-control{width: 50px;text-align: center;}
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>
+ $(function() {
+    $(".spinner").each(function(c, b) {
+        $(b).on("click", ".btn-d", function() {
+            var a = $(".form-control", b)[0];
+            $(".btn-d", b).index(this) ? a.value++ : a.value--;
+            0 > a.value && (a.value = 0)
+        })
+    })
+});
+  </script>
+</head>
+
+<body>
+<div class="input-group spinner"> 	
+	<div class="input-group-btn-vertical">
+        <button class="btn btn-d" type="button">&ndash;</button>
+        <input type="text" class="form-control" value="1" >
+		<button class="btn btn-d" type="button">+</button>
+	</div>
+</div>
+<div class="input-group spinner">
+	
+	<div class="input-group-btn-vertical">
+        <button class="btn btn-d" type="button">&ndash;</button>
+        <input type="text" class="form-control" value="1">
+		<button class="btn btn-d" type="button">+</button>
+	</div>
+</div>
+
+</body>
+
+</html>

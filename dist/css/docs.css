@@ -18,6 +18,9 @@ body {
 }
 } */
 
+input.form-c{width: 50px !important;text-align: center;}
+.input-group-btn-vertical{width: max-content;}
+
 .defbox{
   
   text-align: center;

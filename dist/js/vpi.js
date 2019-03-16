@@ -9,6 +9,17 @@
 $("[id^=\'vpi_id\']").bootstrapNumber();
 $("[id^=\'add_vpi_count\']").bootstrapNumber();
 
+// новый input счётчик
+$(function() {
+    $(".spinner").each(function(c, b) {
+        $(b).on("click", ".btn-d", function() {
+            var a = $(".form-control", b)[0];
+            $(".btn-d", b).index(this) ? a.value-- : a.value++;
+            0 > a.value && (a.value = 0)
+        })
+    })
+});
+
 var ids_list = [];// для генерации из корзины
 
 $("body").on("click","#checkout",function() { //СГЕНЕРИРОВАТЬ ВЕДОМОСТЬ
