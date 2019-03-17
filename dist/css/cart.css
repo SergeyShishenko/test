@@ -25,7 +25,7 @@ th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div
     }
     @media (min-width: 480px) {
         .btn{
-            font-size: 9px !important;
+            /* font-size: 9px !important; */
             border-radius: 2px;
           }
         td.quantity > div > div > .input-group-btn:first-child > .btn, td.quantity > div > div >  .input-group-btn:last-child > .btn ,
@@ -52,8 +52,13 @@ th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div
 	float: left;	
     background: url(../images/ajax-loaders/ajax-loader-6.gif);
 }
-td.quantity{width: 140px;}
-td.quantity > div {width: 112px;}
+td.quantity{
+    width: 140px;
+    text-align: right;
+     text-align: -webkit-right;
+     
+    }
+/* td.quantity > div {width: 112px;} */
 td.name p{margin: 0;}
 
 /* td,
@@ -292,7 +297,9 @@ input.button {
 }
 @media (max-width: 767px)
 {
-    #vpi  { display: none; }
+    /* #vpi  { display: none; } */
+    #header #cart .heading { margin-left: 90px; }
+    #header #cart .content { margin-left: 0px;font-size: 9px; }
 }
 @media (min-width: 768px)
 {

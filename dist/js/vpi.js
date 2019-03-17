@@ -9,16 +9,7 @@
 $("[id^=\'vpi_id\']").bootstrapNumber();
 $("[id^=\'add_vpi_count\']").bootstrapNumber();
 
-// новый input счётчик
-$(function() {
-    $(".spinner").each(function(c, b) {
-        $(b).on("click", ".btn-d", function() {
-            var a = $(".form-control", b)[0];
-            $(".btn-d", b).index(this) ? a.value-- : a.value++;
-            0 > a.value && (a.value = 0)
-        })
-    })
-});
+
 
 var ids_list = [];// для генерации из корзины
 
@@ -198,4 +189,19 @@ jQuery(function($){
             
 		}
 	});
+});
+// новый input счётчик
+$(function() {
+    $(".spinner").each(function(c, b) {
+        $(b).on("click", ".btn-default", function() {
+            var a = $(".form-c", b)[0];
+            // console.log($(".btn-default", b).index(this));
+            if($(".btn-default", b).index(this)>0)
+            {a.value++;}
+            else{a.value--;}
+            //  $(".btn-default", b).index(this) ? a.value++ : a.value-- ;
+            // 0 > a.value && (a.value = 0)
+            if (0 > a.value) a.value = 0;
+        });
+    });
 });

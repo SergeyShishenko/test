@@ -56,7 +56,8 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <th>Список</th>
                                                             <!-- <th>К&nbsp;&#8209;&nbsp;во</th> -->
                                                             <th>Артикул</th>
-                                                            <th>Цвет&nbsp;/&nbsp;материал</th>
+                                                            <th>Цвет / материал</th>
+                                                            <!-- <th>Цвет&nbsp;/&nbsp;материал</th> -->
                                                             <th>Описание</th>                                                           
                                                             <th> <button type="button" id="each_addvpi_1" class="btn btn-primary" style="float:right;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button></th>
                                                         </tr>
@@ -75,9 +76,9 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 </div> -->
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
-                                                                        <button class="btn btn-default" type="button">+</button>
-                                                                        <input type="text" class="form-control form-c" value="1" >
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" >
+                                                                        <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
 

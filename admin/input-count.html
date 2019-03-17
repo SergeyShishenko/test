@@ -14,8 +14,11 @@
     $(".spinner").each(function(c, b) {
         $(b).on("click", ".btn-d", function() {
             var a = $(".form-control", b)[0];
-            $(".btn-d", b).index(this) ? a.value++ : a.value--;
-            0 > a.value && (a.value = 0)
+            if($(".btn-d", b).index(this))
+            { a.value++ }
+            else{a.value--;}
+            // a.value = $(".btn-d", b).index(this) ? a.value++ : a.value--;
+            if (0 > a.value) a.value = 0;
         })
     })
 });
