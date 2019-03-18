@@ -17,6 +17,14 @@ body {
     overflow: visible !important;
 }
 } */
+/* .rowspan-border{ */
+  td[rowspan]{
+  border-bottom:1px solid #dddddd;
+  border-left:1px solid #dddddd;
+  border-right:1px solid #dddddd;
+  
+  text-align: center;
+ }
 .input-group-btn-vertical{
   display: inline-table;
   display: inline-flex;
@@ -26,7 +34,7 @@ body {
   
 
 }
-input.form-c{width: 50px !important;text-align: center;vertical-align: bottom;}
+input.form-c{width: 50px !important;text-align: center;vertical-align: bottom; padding:6px 0;}
 @media (max-width: 767px){
 .table-responsive {
    

@@ -42,6 +42,7 @@ th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div
         .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
             /* padding: 0px; */
             padding-bottom: 8px;
+            vertical-align: middle;
         }
     }
 
@@ -55,7 +56,8 @@ th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div
 td.quantity{
     width: 140px;
     text-align: right;
-     text-align: -webkit-right;
+    text-align: -moz-right;
+    text-align: -webkit-right;
      
     }
 /* td.quantity > div {width: 112px;} */

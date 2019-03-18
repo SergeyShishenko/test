@@ -195,10 +195,18 @@ $(function() {
     $(".spinner").each(function(c, b) {
         $(b).on("click", ".btn-default", function() {
             var a = $(".form-c", b)[0];
+            var s = 0;
+            // console.log(parseInt(s));
+            if (a.step==""){s=1;}else{s = parseInt(a.step);}
+            // alert(a.step);
             // console.log($(".btn-default", b).index(this));
             if($(".btn-default", b).index(this)>0)
-            {a.value++;}
-            else{a.value--;}
+            {a.value=parseInt(a.value) + s;
+                // console.log(a.value);
+            }
+            else{a.value=parseInt(a.value) - s;
+                // console.log(a.value);
+            }
             //  $(".btn-default", b).index(this) ? a.value++ : a.value-- ;
             // 0 > a.value && (a.value = 0)
             if (0 > a.value) a.value = 0;
