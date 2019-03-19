@@ -11,6 +11,7 @@
 include 'inc-goup-menu-furnitura-styazhka.php';//$styazhka=[]
 include 'inc-goup-menu-furnitura-petlyB.php';//$petlyB=[]
 include 'inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
+include 'inc-goup-menu-furnitura-samorezy-polnaya.php';//$petlyTL=[]
  echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">
@@ -257,9 +258,9 @@ include 'inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
                                             </li>                                                                                 
                                         </ul>
                                     </li> 
-                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-universalnaya-samorezy.php#samorezy">КРЕПЕЖ И МЕТИЗЫ</a>
+                                    <li class="menu2"><a class="list-group-item sub" href="furnitura-universalnaya-samorezy-polnaya.php#samorezy-polnaya">КРЕПЕЖ И МЕТИЗЫ</a>
                                         <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-universalnaya-samorezy.php#samorezy">Саморезы</a>
+                                            <li><a class="list-group-item sub" href="furnitura-universalnaya-samorezy-polnaya.php#samorezy-polnaya">Саморезы полная резьба</a>
                                             </li>
                                             <li><a class="list-group-item sub" href="furnitura-universalnaya-dyubeli.php#dyubeli">Дюбели</a>
                                             </li>
@@ -270,19 +271,7 @@ include 'inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
                                     
                                 </ul>
                             </li>
-                           <!-- <li class="menu">
-                                <a href="" class="list-group-item '.$item_krepezh_i_metizy_Class.'">КРЕПЕЖ И МЕТИЗЫ</a>
-                                <ul class="list-group sub_menu">
-                                    <li class="menu2"><a href="#" " class="list-group-item sub">Саморезы</a>  
-                                    <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="#">Саморезы универсальные</a>
-                                            </li>                                                                                                                         
-                                        </ul>                                     
-                                    </li>
-                                    <li class="menu2"><a href="#" class="list-group-item sub">Дюбели</a>                                       
-                                    </li>                                        
-                                </ul>
-                            </li>    -->                                                  
+                                                          
                             <li class="menu">
                                 <a href="" class="list-group-item '.$item_katalogi_Class.'">КАТАЛОГИ</a>
                                 <ul class="list-group sub_menu">
