@@ -8,7 +8,8 @@ finishBtn.OnClick = function () {
 
     Make();
     Model.UnSelectAll();
-    alert("Нет номера:\n -"+nonCE.join('\n -'));
+    //alert(nonCE.length);
+    if (nonCE.length>0) alert("Нет номера:\n -"+nonCE.join('\n -'));
     Action.Finish();
 }
 chancelBtn.OnClick = function () {
@@ -42,33 +43,34 @@ function MakeName(owner, prevName) {
 
 var se='';
 function CheckObject(obj) {
-    if (IsRoot(obj.Owner)){
-        obj.ArtPos = MakeName(obj.Owner,  obj.Name);
-   if (/\d+\.\d+/.test(obj.Name))
-      {se=/\d+\.\d+/.exec(obj.Name)[0];
-      system.log(se);
-      }
-   else
+    if (IsRoot(obj.Owner))
+    {
+       obj.ArtPos = MakeName(obj.Owner,  obj.Name);
+       if (/\d+\.\d+/.test(obj.Name))
+          {se=/\d+\.\d+/.exec(obj.Name)[0];
+          system.log(se);
+          }
+       else
+          {se='';
+             if(obj.List) {
+               system.log('obj.Name: ' + obj.Name);
+               system.log('obj.Name: ' + obj.Name+ " typeof(obj): - " + obj.AsList());
+                  //if (confirm("Нет номера CE: "+obj.Name+"\nВыйти и найти?")) {
+                    //Model.UnSelectAll();
+                    //obj.Selected = true;
 
-      {se='';
-       system.log('obj.Name: ' + obj.Name+ " typeof(obj): - " + obj.AsList());
-          //if (confirm("Нет номера CE: "+obj.Name+"\nВыйти и найти?")) {
-            //Model.UnSelectAll();
-            //obj.Selected = true;
-
-           // Action.Cancel();
-
-
-           // }
-              var regexp = new RegExp("TLayer3D");//Слой
-            if   (! regexp.test(obj.AsList())){
-                   nonCE.push(obj.Name);
-               // alert("Нет номера CE:\n - " + obj.Name+ "\ntypeof(obj): - " + obj.AsList());
-
-            }
+                   // Action.Cancel();
 
 
-       }
+                   // }
+                      var regexp = new RegExp("TLayer3D");//Слой
+                    if   (! regexp.test(obj.AsList())){
+                           nonCE.push(obj.Name);
+                       // alert("Нет номера CE:\n - " + obj.Name+ "\ntypeof(obj): - " + obj.AsList());
+
+                    }
+              } //obj.List
+           }// se=''
     }
     obj.UserProperty['Заказ']=Action.Control.Article.OrderName ;
     obj.UserProperty['Изделие']=Action.Control.Article.Name ;
@@ -97,9 +99,15 @@ function forEachInList(list, func) {
     }
 }
 
-forEachInList(Model, function (Object) {  
-    if (Object.Name != 'Габаритная рамка')
-    { Object.Selected = true;}
+forEachInList(Model, function (Object) {
+//system.log(Object.Name+" typeof(Object): - " + Object.constructor.name + "Object.List " + Object.List);
+  var constrName= Object.constructor.name;
+    if (constrName != "TModelLimits" && constrName != "TContour3D") // Габаритная рамка
+    //{ if (constrName != "TContour3D")//TContour3D Вспомогательный контур
+        {Object.Selected = true;}
+   // }
+
+
 
 });
 
