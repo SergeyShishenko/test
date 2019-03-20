@@ -1,20 +1,24 @@
 <?php 
-// inc-goup-menu-furnitura-samorezy-polnaya.php
+// inc-goup-menu-furnitura-samorezy.php
 
 $path_img="./dist/filesdb/images/thumbs/";
 /////////////////////////////////////
-    $samorezyPolnaya=[];
-    $samorezyPolnaya[0]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php",
-                    'id'=>"#samorezy-polnaya",
+    $samorezy=[];
+    $samorezy[0]=['path'=>"furnitura-universalnaya-samorezy-polnaya.php",
                     'img'=> $path_img."tbsALLpetly.png",
                     'keywords'=>"",
                     'def'=>"КРЕПЕЖ И МЕТИЗЫ"];    
 
-    $samorezyPolnaya[1]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-vkladnaya.php",
+    $samorezy[1]=['path'=>"furnitura-universalnaya-samorezy-polnaya.php",
                     'id'=> "#samorezy-polnaya",
                     'img'=> $path_img."tbssamorez-polnaya-rezba.png",
                     'keywords'=>"",
                     'def'=>"Саморезы полная резьба"];
+    $samorezy[2]=['path'=>"furnitura-universalnaya-samorezy-nepolnaya.php",
+                    'id'=> "#samorezy-nepolnaya",
+                    'img'=> $path_img."tbssamorez-polnaya-rezba.png",
+                    'keywords'=>"",
+                    'def'=>"Саморезы неполная резьба"];
 
     // $samorezyPolnaya[2]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php",
     //                 'id'=> "#petlya-nakladnaya",

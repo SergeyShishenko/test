@@ -23,8 +23,8 @@ include 'inc-left-side-menu-furnitura.php';
                     <article    id="krepezh-i-metizy">
                       <section >
                         <div class="page-header"  >
-                            <h1 itemprop="name" id="samorezy-polnaya">КРЕПЕЖ И МЕТИЗЫ</h1>
-                            <h2 >Саморезы полная резьба</h2>                        
+                            <h1 itemprop="name" id="samorezy-nepolnaya">КРЕПЕЖ И МЕТИЗЫ</h1>
+                            <h2 >Саморезы неполная резьба</h2>                        
                         </div>
                            
                         <div class="bs-callout bs-callout-warning cont" > 
@@ -48,14 +48,14 @@ include 'inc-left-side-menu-furnitura.php';
                                     <ul class="stat" style="margin: 0px;">
                                         <li><b>Потайная головка</b></li>
                                         <li><b>Крестовой шлиц PZ</b></li> 
-                                        <li><b>Полная резьба,</b></li>                                                                            
+                                        <li><b>Неполная резьба,</b></li>                                                                            
                                     </ul>
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" >                                                           
                                             <div class="row"> 
                                                 <div class="row"  style="height:120px;  display: inline-flex;"> 
-                                                    <div class="col-xs-6 col-sm-6 col-md-6" ><img src="./dist/filesdb/images/samorez-polnaya-rezba_sch1.png" width="100%" height="100%" class="" alt="Саморез" title=""></div>                                             
-                                                    <div class="col-xs-6 col-sm-6 col-md-6"><img src="./dist/filesdb/images/samorez-polnaya-rezba.png"  width="100%" height="100%" class="" alt="чертёж" title=""></div>
+                                                    <div class="col-xs-6 col-sm-6 col-md-6" ><img src="./dist/filesdb/images/samorez-nepolnaya-rezba_sch1.png" width="100%" height="100%" class="" alt="Саморез" title=""></div>                                             
+                                                    <div class="col-xs-6 col-sm-6 col-md-6"><img src="./dist/filesdb/images/samorez-nepolnaya-rezba.png"  width="100%" height="100%" class="" alt="чертёж" title=""></div>
                                                 </div>                                             
                                                 <!-- <h3 class="blum">5000502-07-750 Конфирмат 7,0Х50</h3>
                                                 <h3 class="blum">5000502-07-752 Конфирмат 7,0Х70</h3> -->
@@ -797,7 +797,7 @@ include 'inc-left-side-menu-furnitura.php';
                 </div> <!-- main  -->
                 <?php
                 //  include 'inc-goup-menu.php';//$styazhka=[]
-                SideMenu($samorezy,1);
+                SideMenu($samorezy,2);
                 ?> 
     
 <?php include 'inc-footer2.php'; ?>
