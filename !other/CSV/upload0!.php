@@ -59,9 +59,7 @@ if(isset($_POST["arr"]) )//генерация файла
 			$File = "$_SERVER[DOCUMENT_ROOT]/www/!other/CSV/xlscsv/$filename";			
 			$Excel = PHPExcel_IOFactory::load($File);	
 
-			$order=end(explode(" ", $Excel->getActiveSheet()->getCell('Document1')->getValue())); 
-			$order = str_replace('№', "", $order);	
-			
+			$order=end(explode(" ", $Excel->getActiveSheet()->getCell('Document1')->getValue())); 	
 				
 			$client= $Excel->getActiveSheet()->getCell('Customer')->getValue(); 		
 			$coordRow= $Excel->getActiveSheet()->getCell('NumStart')->getRow(); //номер строки '5'
@@ -87,22 +85,6 @@ if(isset($_POST["arr"]) )//генерация файла
 					// echo '$sum '.$simbol.$key;
 					$coordColSum= $Excel->getActiveSheet()->getCell($simbol.$key)->getColumn(); //столбец 'A'
 					// exit();
-			}
-
-			if(!$order) {// пустая ячейка
-
-				$orderRow=$Excel->getActiveSheet()->getCell('Document1')->getRow();    
-				$datarow = $Excel->getActiveSheet()->rangeToArray('A'.$orderRow.':' . $coordColSum.$orderRow);   
-				$datarow = array_filter($datarow[0]);    
-				$datarow = array_diff($datarow, array(' '));
-				 $order=end(explode(" ",array_shift($datarow))); 
-				 $order = str_replace('№', "", $order);    
-			//      echo "<pre>";
-			// 	print_r($order);
-			//  echo "</pre>";
-			//  exit();
-				// 
-			
 			}
 
 			$coordColProduct= $Excel->getActiveSheet()->getCell('NumStart')->getColumn(); //столбец 'O'

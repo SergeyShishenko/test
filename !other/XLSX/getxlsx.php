@@ -10,7 +10,8 @@ $File = "$_SERVER[DOCUMENT_ROOT]/www/!other/CSV/$filename";
 $Excel = PHPExcel_IOFactory::load($File);
  
 $order=end(explode(" ", $Excel->getActiveSheet()->getCell('Document1')->getValue())); 
-
+$order = str_replace('№', "", $order);
+// №
 
 // $coordColSum= $Excel->getActiveSheet()->getCell('Sum')->getColumn(); //столбец 'A'
 
@@ -43,7 +44,8 @@ if(!$order) {// пустая ячейка
     $datarow = $Excel->getActiveSheet()->rangeToArray('A'.$orderRow.':' . $coordColSum.$orderRow);   
     $datarow = array_filter($datarow[0]);    
     $datarow = array_diff($datarow, array(' '));
-     $order=end(explode(" ",array_shift($datarow)));     
+     $order=end(explode(" ",array_shift($datarow)));  
+     $order = str_replace('№', "", $order);   
 //      echo "<pre>";
 // 	print_r($order);
 //  echo "</pre>";
