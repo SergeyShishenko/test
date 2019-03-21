@@ -11,16 +11,16 @@ var mainpage=51;
 function browser1()
 {
 	var a;
-if (navigator.userAgent.search(/Safari/) > 0) {a = 'Safari'};
-if (navigator.userAgent.search(/Firefox/) > 0) {a = 'MozillaFirefox'};
-if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {a = 'Internet Explorer'};
-if (navigator.userAgent.search(/Chrome/) > 0) {a = 'Google Chrome'};
-if (navigator.userAgent.search(/YaBrowser/) > 0) {a = 'Яндекс браузер'};
-if (navigator.userAgent.search(/OPR/) > 0) {a = 'Opera'};
-if (navigator.userAgent.search(/Konqueror/) > 0) {a = 'Konqueror'};
-if (navigator.userAgent.search(/Iceweasel/) > 0) {a = 'Debian Iceweasel'};
-if (navigator.userAgent.search(/SeaMonkey/) > 0) {a = 'SeaMonkey'};
-if (navigator.userAgent.search(/Edge/) > 0) {a = 'Microsoft Edge'};
+if (navigator.userAgent.search(/Safari/) > 0) {a = 'Safari';}
+if (navigator.userAgent.search(/Firefox/) > 0) {a = 'MozillaFirefox';}
+if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {a = 'Internet Explorer';}
+if (navigator.userAgent.search(/Chrome/) > 0) {a = 'Google Chrome';}
+if (navigator.userAgent.search(/YaBrowser/) > 0) {a = 'Яндекс браузер';}
+if (navigator.userAgent.search(/OPR/) > 0) {a = 'Opera';}
+if (navigator.userAgent.search(/Konqueror/) > 0) {a = 'Konqueror';}
+if (navigator.userAgent.search(/Iceweasel/) > 0) {a = 'Debian Iceweasel';}
+if (navigator.userAgent.search(/SeaMonkey/) > 0) {a = 'SeaMonkey';}
+if (navigator.userAgent.search(/Edge/) > 0) {a = 'Microsoft Edge';}
 // alert(a); // В переменной a будет название браузера
 console.log(a);
 }
@@ -210,15 +210,9 @@ console.log("Вы используете браузер " + xa);
 // console.log("Версия " + navigator.appVersion);
 function getWH()
 {  
-    var w = window.innerWidth
-    || window.outerWidth
-    || document.documentElement.clientWidth
-    || document.body.clientWidth;
+    var w = window.innerWidth || window.outerWidth || document.documentElement.clientWidth || document.body.clientWidth;
     
-    var h = window.innerHeight
-    || outerHeight
-    || document.documentElement.clientHeight
-    || document.body.clientHeight;
+    var h = window.innerHeight  || outerHeight  || document.documentElement.clientHeight  || document.body.clientHeight;
 
     console.log ("w"+window.outerWidth );// текущая ширина экрана 
  console.log ("h"+window.outerHeight );// текущая ширина экрана 
@@ -302,6 +296,7 @@ function getClientWidth(){
  getPositionSearch();nvfn();
 
 //  var delta =0;
+bottomUl = 0;
 $(function () {
     // $('#navsub  li.menu2 ul').hide();
     // $('#navsub  li.menu ul').hide();
@@ -314,11 +309,12 @@ $(function () {
            var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
            var UlSubMenu = $(this ).children('ul').children();
            var child1 =UlSubMenu.length;
-           var bottomUl = (colLeftMenu-col)*40;
+            bottomUl = (colLeftMenu-col)*40;
            if (child1>col){bottomUl=bottomUl-(child1-col)*40;}       
-        //    console.log("количество левое меню - "+colLeftMenu);
-        //    console.log("номер по порядку выбранного элемента списка - "+col);      
-        //    console.log("количество дочерних элементов - "+child1);   
+           console.log("количество левое меню - "+colLeftMenu);
+           console.log("номер по порядку выбранного элемента списка - "+col);      
+           console.log("количество дочерних элементов - "+child1);   
+           console.log("bottomUl : "+bottomUl);   
            $(this).find('ul.sub_menu').show();
            
         //    var d = getMouseWeel();
@@ -334,6 +330,7 @@ $(function () {
         },
         
         function () {
+            console.log("------------");
             $(this).find('ul.sub_menu').hide();   
             $(this).find('ul.sub_menu > li:nth-child(1)').removeClass('triangle');            
             $('#triangle').remove();      
@@ -346,10 +343,10 @@ $(function () {
            var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
            var UlSubMenu = $(this ).children('ul').children();
            var child1 =UlSubMenu.length;
-           var bottomUl = (colLeftMenu-col)*40+11;
-           if (child1==col){bottomUl=bottomUl-(child1-col)*40+20;}
-           if (child1<col){bottomUl=30+(colLeftMenu-col)*40;}   
-           if (child1>col){bottomUl=bottomUl-(child1-col)*40+20;}       
+           var bottomUl2 = (colLeftMenu-col)*40+11;
+           if (child1==col){bottomUl2=bottomUl2-(child1-col)*40+20;}
+           if (child1<col){bottomUl2=30+(colLeftMenu-col)*40;}   
+           if (child1>col){bottomUl2=bottomUl2-(child1-col)*40+20;}       
         //    console.log("количество левое меню2 - "+colLeftMenu);
         //    console.log("номер по порядку выбранного элемента списка2 - "+col);      
         //    console.log("количество дочерних элементов2 - "+child1);  
@@ -360,7 +357,7 @@ $(function () {
         //    console.log(d);
         //   console.log(dy);
 
-            UlSubMenu.parent().css("bottom", bottomUl+"px"); 
+            UlSubMenu.parent().css("bottom", bottomUl2+"px"); 
            $(this).find('ul.sub_menu2 > li:nth-child(1)').addClass('triangle2');           
            var triangle = (child1-1)*40+11;
           
@@ -385,69 +382,64 @@ var bottomMIN1 = 0;
 
 $('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){
 
-var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
+// var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
     if (!sub_menu2hover){
 
         var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;    
         var UlSubMenu = $(this ).children();
         var child1 =UlSubMenu.length;
-        var bottomUl = parseInt($(this ).css('bottom'));
+         var bottomUl1 = parseInt($(this ).css('bottom'));
+        // var bottomUl1 = bottomUl;
+
         // var triangle =$('#triangle222').data('top');
     // console.log('triangle ' + triangle);
     //  console.log('triangle222 ' + $('#triangle2').html());
     console.log('child122 ' + child1);
-    console.log('bottom22 ' + $(this ).last().css('bottom'));
-        // if(dy > 0) {
-        
-        //     delta =  1  + delta ;
-        //     console.log('sub_menu up1');
-        //     console.log(delta); 
-        //     bottomUl= bottomUl + 40;
-        //     triangle = triangle + 40;
-        //     // console.log('bottomUl ' + bottomUl); 
-        //     $(this ).css("bottom", bottomUl+"px"); 
-        //     e.preventDefault();  
-        // }
-        // else{    
-        //     delta =  delta - 1;
-        //     console.log('sub_menu down1');
-        //     console.log(delta);
-        //     bottomUl = bottomUl - 40;
-        //     triangle = triangle - 40;
-        //     e.preventDefault();    
-        // }
+    console.log('bottomALL ' + $(this ).last().css('bottom'));
+       
         if(dy > 0) { 
 
            
-            if (bottomUl < bottomMIN1 ) { 
+            if (bottomUl1 < 0 ) { 
                 delta =  1  + delta ;
-                console.log('sub_menu2 up2');
-                console.log(delta2); 
-                console.log(bottomMIN1);
-                bottomUl= bottomUl + 40;
+                // console.log('sub_menu2 up2');
+                // console.log(delta2); 
+                // console.log('bottomMIN1 '+bottomMIN1);
+                console.log('bottomUl start '+bottomUl);
+                bottomUl1= bottomUl1 + 40;
                 triangle = triangle + 40;
                 // console.log('bottomUl ' + bottomUl); 
-                $(this ).css("bottom", bottomUl+"px"); 
-                $('#triangle2').remove();
-                $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');       
+                // console.log('bottomUP ' + $(this ).last().css('bottom'));
+                console.log('bottomUl ' + bottomUl1); 
+                $(this ).css("bottom", bottomUl1+"px"); 
+                // $('#triangle2').remove();
+                // $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>'); 
+                // console.log('triangle '+triangle);                    
+                // console.log("<style id=triangle2 data-top="+triangle+">.triangle2::before{top:"+triangle+"px !important;}.triangle2::after{top:"+triangle+"px !important;}</style>");      
             }
             e.preventDefault();      
          }
 else{ 
-    
-    
-     
         if (delta > 0 ) { 
-            delta =  delta - 1;
-            console.log('sub_menu2 down2');
-            console.log(delta2);
-            bottomUl = bottomUl - 40;
-            triangle = triangle - 40;
-            console.log('bottomUl ' + bottomUl); 
-            $(this ).css("bottom", bottomUl+"px"); 
-            $('#triangle2').remove();
-            $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');   
-         }
+            console.log('bottomUl start '+bottomUl);
+                console.log('bottomUl1 ' + bottomUl1); 
+            if (bottomUl1 > bottomUl ) { 
+                delta =  delta - 1;
+                // console.log('sub_menu2 down2');
+                // console.log(delta2);
+                
+                bottomUl1 = bottomUl1 - 40;
+                triangle = triangle - 40;
+                // console.log('bottomDOWN ' + $(this ).last().css('bottom'));
+                console.log('bottomUl1 (-40) ' + bottomUl1); 
+                $(this ).css("bottom", bottomUl1+"px"); 
+                //  $('#triangle').remove();
+                //  $('head').append('<style id="triangle" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>'); 
+                // console.log('triangle '+triangle);             
+                // console.log("<style id=triangle2 data-top="+triangle+">.triangle2::before{top:"+triangle+"px !important;}.triangle2::after{top:"+triangle+"px !important;}</style>"); 
+            }
+         }//delta
+
     e.preventDefault();  
     
         
