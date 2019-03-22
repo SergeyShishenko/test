@@ -297,6 +297,7 @@ function getClientWidth(){
 
 //  var delta =0;
 bottomUl = 0;
+// var nthchild =1;
 $(function () {
     // $('#navsub  li.menu2 ul').hide();
     // $('#navsub  li.menu ul').hide();
@@ -311,10 +312,10 @@ $(function () {
            var child1 =UlSubMenu.length;
             bottomUl = (colLeftMenu-col)*40;
            if (child1>col){bottomUl=bottomUl-(child1-col)*40;}       
-           console.log("количество левое меню - "+colLeftMenu);
-           console.log("номер по порядку выбранного элемента списка - "+col);      
-           console.log("количество дочерних элементов - "+child1);   
-           console.log("bottomUl : "+bottomUl);   
+        //    console.log("количество левое меню - "+colLeftMenu);
+        //    console.log("номер по порядку выбранного элемента списка - "+col);      
+        //    console.log("количество дочерних элементов - "+child1);   
+        //    console.log("bottomUl : "+bottomUl);   
            $(this).find('ul.sub_menu').show();
            
         //    var d = getMouseWeel();
@@ -325,12 +326,12 @@ $(function () {
            $(this).find('ul.sub_menu > li:nth-child(1)').addClass('triangle');           
            var triangle = (child1-1)*40+11;
            if (child1>col){triangle = (col-1)*40+11;}
-           $('head').append('<style id="triangle">.triangle::before{top:'+triangle+'px !important;}.triangle::after{top:'+triangle+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
+           $('head').append('<style id="triangle" data-top="'+triangle+'">.triangle::before{top:'+triangle+'px !important;}.triangle::after{top:'+triangle+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
         }
         },
         
         function () {
-            console.log("------------");
+            // console.log("------------");
             $(this).find('ul.sub_menu').hide();   
             $(this).find('ul.sub_menu > li:nth-child(1)').removeClass('triangle');            
             $('#triangle').remove();      
@@ -359,10 +360,10 @@ $(function () {
 
             UlSubMenu.parent().css("bottom", bottomUl2+"px"); 
            $(this).find('ul.sub_menu2 > li:nth-child(1)').addClass('triangle2');           
-           var triangle = (child1-1)*40+11;
+           var triangle2 = (child1-1)*40+11;
           
-           if (child1>col){triangle = (col-1)*40+11;}
-           $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');  
+           if (child1>col){triangle2 = (col-1)*40+11;}
+           $('head').append('<style id="triangle2" data-top="'+triangle2+'">.triangle2::before{top:'+triangle2+'px !important;}.triangle2::after{top:'+triangle2+'px !important;}</style>');  
            
         },
         function () {
@@ -386,16 +387,20 @@ $('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmouse
     if (!sub_menu2hover){
 
         var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;    
-        var UlSubMenu = $(this ).children();
-        var child1 =UlSubMenu.length;
+        // var UlSubMenu = $(this ).children();
+        // var child1 =UlSubMenu.length;
          var bottomUl1 = parseInt($(this ).css('bottom'));
+         var triangle0 =$('#triangle').data('top');
+        //  console.log('triangle0 ' + triangle0);
         // var bottomUl1 = bottomUl;
 
         // var triangle =$('#triangle222').data('top');
-    // console.log('triangle ' + triangle);
+    // 
     //  console.log('triangle222 ' + $('#triangle2').html());
-    console.log('child122 ' + child1);
-    console.log('bottomALL ' + $(this ).last().css('bottom'));
+    // console.log('child122 ' + child1);
+    // console.log('current ' + $(this).index()+1);
+    // $(this).index()+1;
+    // console.log('bottomALL ' + $(this ).last().css('bottom'));
        
         if(dy > 0) { 
 
@@ -405,15 +410,18 @@ $('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmouse
                 // console.log('sub_menu2 up2');
                 // console.log(delta2); 
                 // console.log('bottomMIN1 '+bottomMIN1);
-                console.log('bottomUl start '+bottomUl);
+                // console.log('bottomUl start '+bottomUl);
                 bottomUl1= bottomUl1 + 40;
-                triangle = triangle + 40;
+                
                 // console.log('bottomUl ' + bottomUl); 
                 // console.log('bottomUP ' + $(this ).last().css('bottom'));
-                console.log('bottomUl ' + bottomUl1); 
+                // console.log('bottomUl ' + bottomUl1); 
                 $(this ).css("bottom", bottomUl1+"px"); 
-                // $('#triangle2').remove();
-                // $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>'); 
+                 triangle0 = triangle0 + 40;
+                 $('#triangle').remove();
+                 $('head').append('<style id="triangle" data-top="'+triangle0+'">.triangle::before{top:'+triangle0+'px !important;}.triangle::after{top:'+triangle0+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
+                //  console.log('<style id="triangle">.triangle::before{top:'+triangle0+'px !important;}.triangle::after{top:'+triangle0+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
+
                 // console.log('triangle '+triangle);                    
                 // console.log("<style id=triangle2 data-top="+triangle+">.triangle2::before{top:"+triangle+"px !important;}.triangle2::after{top:"+triangle+"px !important;}</style>");      
             }
@@ -421,18 +429,23 @@ $('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmouse
          }
 else{ 
         if (delta > 0 ) { 
-            console.log('bottomUl start '+bottomUl);
-                console.log('bottomUl1 ' + bottomUl1); 
+            // console.log('bottomUl start '+bottomUl);
+            //     console.log('bottomUl1 ' + bottomUl1); 
             if (bottomUl1 > bottomUl ) { 
                 delta =  delta - 1;
                 // console.log('sub_menu2 down2');
                 // console.log(delta2);
                 
                 bottomUl1 = bottomUl1 - 40;
-                triangle = triangle - 40;
+                // triangle = triangle - 40;
                 // console.log('bottomDOWN ' + $(this ).last().css('bottom'));
-                console.log('bottomUl1 (-40) ' + bottomUl1); 
+                // console.log('bottomUl1 (-40) ' + bottomUl1); 
                 $(this ).css("bottom", bottomUl1+"px"); 
+                triangle0 = triangle0 - 40;
+                $('#triangle').remove();
+                $('head').append('<style id="triangle" data-top="'+triangle0+'">.triangle::before{top:'+triangle0+'px !important;}.triangle::after{top:'+triangle0+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
+                // console.log('<style id="triangle">.triangle::before{top:'+triangle0+'px !important;}.triangle::after{top:'+triangle0+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
+
                 //  $('#triangle').remove();
                 //  $('head').append('<style id="triangle" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>'); 
                 // console.log('triangle '+triangle);             
@@ -454,28 +467,28 @@ else{
     // var bottomMAX = -929;  
     $('.sub_menu2').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){   
     var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;    
-    var UlSubMenu = $(this ).children();
-    var child1 =UlSubMenu.length;
+    // var UlSubMenu = $(this ).children();
+    // var child1 =UlSubMenu.length;
     var bottomUl = parseInt($(this ).css('bottom'));
-     var triangle =$('#triangle2').data('top');
-    console.log('triangle ' + triangle);
-     console.log('triangle2 ' + $('#triangle2').html());
-    console.log('child1 ' + child1);
-    console.log('bottom ' + $(this ).css('bottom'));
+     var triangle2 =$('#triangle2').data('top');
+    // console.log('triangle2 ' + triangle2);
+    //  console.log('triangle2 ' + $('#triangle2').html());
+    // console.log('child1 ' + child1);
+    // console.log('bottom ' + $(this ).css('bottom'));
     if(dy > 0) { 
 
            
                 if (bottomUl < bottomMIN ) { 
                     delta2 =  1  + delta2 ;
-                    console.log('sub_menu2 up2');
-                    console.log(delta2); 
-                    console.log(bottomMIN);
+                    // console.log('sub_menu2 up2');
+                    // console.log(delta2); 
+                    // console.log(bottomMIN);
                     bottomUl= bottomUl + 40;
-                    triangle = triangle + 40;
+                    triangle2 = triangle2 + 40;
                     // console.log('bottomUl ' + bottomUl); 
                     $(this ).css("bottom", bottomUl+"px"); 
                     $('#triangle2').remove();
-                    $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');       
+                    $('head').append('<style id="triangle2" data-top="'+triangle2+'">.triangle2::before{top:'+triangle2+'px !important;}.triangle2::after{top:'+triangle2+'px !important;}</style>');       
                 }
                 e.preventDefault();      
              }
@@ -485,14 +498,14 @@ else{
          
             if (delta2 > 0 ) { 
                 delta2 =  delta2 - 1 ;
-                console.log('sub_menu2 down2');
-                console.log(delta2);
+                // console.log('sub_menu2 down2');
+                // console.log(delta2);
                 bottomUl = bottomUl - 40;
-                triangle = triangle - 40;
-                console.log('bottomUl ' + bottomUl); 
+                triangle2 = triangle2 - 40;
+                // console.log('bottomUl ' + bottomUl); 
                 $(this ).css("bottom", bottomUl+"px"); 
                 $('#triangle2').remove();
-                $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');   
+                $('head').append('<style id="triangle2" data-top="'+triangle2+'">.triangle2::before{top:'+triangle2+'px !important;}.triangle2::after{top:'+triangle2+'px !important;}</style>');   
              }
         e.preventDefault();  
         
