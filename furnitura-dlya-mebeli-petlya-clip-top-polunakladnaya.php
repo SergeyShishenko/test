@@ -66,12 +66,21 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <th>Артикул</th>
                                                             <th>Цвет&nbsp;/&nbsp;материал</th>
                                                             <th>Описание</th>
-                                                            <th class="quantity">                                                            
+                                                            <!-- <th class="quantity">                                                            
                                                                <div class="form-group" style="margin-bottom: 0;width: 112px;">				
                                                                     <input id="add_vpi_count-1"  class="form-control" type="number" value="1" min="1" max="999" >
                                                                 </div>
                                                                 
-                                                            </th>
+                                                            </th> -->
+                                                            <th class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input  id="add_vpi_count-1" type="text" class="form-control form-c" value="1" min="1" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </th> 
                                                             <th class="">
                                                             
                                                                 <button type="button" id="addvpi" class="btn btn-primary" style="margin-left: 10px;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button>

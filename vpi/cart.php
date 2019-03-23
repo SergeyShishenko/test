@@ -58,11 +58,17 @@
                                                                 </td>
                                                                 <td class="articul">'.$furniture['articul_furnitur_obj'].'</td>
                                                                 <td class="name" ><p>'.$furniture['def_obj_prop'].'</p></td>
-                                                                <td class="quantity" >
-                                                                <div class="form-group" >				
-                                                                    <input id="vpi_id-'.$row_vpi['vpi_id'].'" data-fid="'.$row_vpi['vpi_id'].'" data-change="0" class="form-control" type="number" value="'.$row_vpi['count_obj'].'" min="1" max="999" >
-                                                                </div>
-                                                                </td>
+                                                               
+                                                                <td class="quantity"> 
+                                                                    <div class="input-group spinner"> 	
+                                                                        <div class="input-group-btn-vertical">                                                                        
+                                                                            <button class="btn btn-default" type="button">&ndash;</button>
+                                                                            <input id="vpi_id-'.$row_vpi['vpi_id'].'" data-fid="'.$row_vpi['vpi_id'].'" data-change="0" class="form-control  form-c" type="text" value="'.$row_vpi['count_obj'].'" min="1" max="999" >
+                                                                            <button class="btn btn-default" type="button">+</button>
+                                                                        </div>
+                                                                    </div> 
+                                                                </td> 
+
                                                                 <td class="unit">'.$furniture['unit_obj_prop'].' </td>
                                                                 <td class="remove">
                                                                     <img src="./dist/css/remove-small.png" alt="Удалить" title="Удалить"

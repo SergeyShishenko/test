@@ -463,7 +463,7 @@ else{
 
    // прокрутка колеса мыши sub2 
     var delta2 = 0; 
-     var bottomMIN = -129; 
+     var bottomMIN = 0; 
     // var bottomMAX = -929;  
     $('.sub_menu2').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){   
     var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;    
@@ -529,7 +529,7 @@ else{
 
 
 
-
+//=====================================================
 
 
 
@@ -832,103 +832,9 @@ function PrintImg(src,alt){
   }
 
 
-//   $(".im-download").mousemove(function(e) {
-//     var hovertext = $(this).attr("data-tooltip");
-//     $("#hovertitle").text(hovertext).show();
-//     $("#hovertitle").css('top', e.clientY+12+$(window).scrollTop()).css('left', e.clientX+12);
-//     }).mouseout(function() {$("#hovertitle").hide();});
-
-
-// function CallPrint(strid) {
-//      var prtContent = document.getElementById(strid);
-//      var prtCSS = '<link rel="stylesheet" href="/templates/css/template.css" type="text/css" />';
-//       var WinPrint = window.open('','','left=50,top=50,width=800,height=640,toolbar=0,scrollbars=1,status=0');
-//        WinPrint.document.write('<div id="print" class="contentpane">'); WinPrint.document.write(prtCSS);
-//         WinPrint.document.write(prtContent.innerHTML); WinPrint.document.write('</div>'); WinPrint.document.close();
-//          WinPrint.focus(); WinPrint.print(); WinPrint.close(); prtContent.innerHTML=strOldOne;
-// }
-
-// function makepage(src) {
-//     // We break the closing script tag in half to prevent
-//     // the HTML parser from seeing it as a part of
-//     // the *main* page.
-//     var win = window.open();
-//     win.document.write(
-//     "<html>\n" +
-//       "<head>\n" +
-//       "<title>Temporary Printing Window</title>\n" +
-//       "<script>\n" +
-//       "function step1() {\n" +
-//       "  setTimeout('step2()', 10);\n" +
-//       "}\n" +
-//       "function step2() {\n" +
-//       "  window.print();\n" +
-//       "  window.close();\n" +
-//       "}\n" +
-//       "</scr" + "ipt>\n" +
-//       "</head>\n" +
-//       "<body onLoad='step1()'>\n" +
-//       "<img src='" + src + "'/>\n" +
-//       "</body>\n" +
-//       "</html>\n"
-//     );
-//       win.print();
-// 		win.close();
-//   }
 
 
 
-//   function atoprint(src) {
-//     var atext = '<img src="' + src + '">';
-//     var captext = window.document.title;
-//     var alink = window.document.location;
-//     var prwin = open('');
-//     //prwin.document.open();
-//     prwin.document.writeln(htmls.text3);
-//     prwin.document.writeln('<h1>'+captext+'<\/h1>');
-//     prwin.document.writeln('<div style="position: absolute; height: 600px; top: 150px; width: 700px;">'+atext+'<\/div>');
-//     prwin.document.writeln('<hr><div style="font-size:8pt;margin-top:20px;">© site.ru<\/div>');
-//     prwin.document.writeln('<div style="font-size:8pt;">Страница материала: '+alink+'<\/div>');
-//     prwin.document.writeln('<\/div><\/body><\/html>');
-//     prwin.print();
-//     prwin.close();
-// }
-
-//   <!DOCTYPE html>
-// <meta charset="utf-8" />
-// <button onclick="printImage()">Печать</button>
-// <div id="image"><img src="http://ikeep.ws/uploads/posts/2011-08/1313657478_1235508295_vo_iguasu_br_3.jpg" /></div>
-// <script>
-// function printImage() {
-//     printHTML(document.getElementById('image').innerHTML);
-// }
-
-// function printHTML(html) {
-//     var frame = document.createElement('iframe');
-// 	frame.style.cssText = 'border:none;position:fixed;left:100%;';
-// 	frame.onload = function() {
-// 		var cssText = 'body{display:none} @media print{body{display:block}}';
-// 		var style = this.contentDocument.createElement('style');
-// 		if (style.readyState == 'loading') {
-// 			style.onreadystatechange = function() {
-// 				alert(this.readyState);
-// 				if (this.readyState = 'complete') {
-// 					this.sheet.cssText = cssText;
-// 				}
-// 			}
-// 		} else {
-// 			style.textContent = cssText;
-// 		}
-// 		this.contentDocument.getElementsByTagName('head')[0].appendChild(style);
-// 		this.contentDocument.body.innerHTML = html;
-// 		this.contentWindow.print();
-// 		setTimeout(function(){
-// 			frame.parentNode.removeChild(frame);
-// 		}, 0);
-// 	}
-// 	document.body.appendChild(frame);
-// }
-// </script>
 
 
 // свернуть поиск
@@ -1058,3 +964,7 @@ $( '#other').click(function(){ // задаем функцию при нажат�
      var nv =parseInt($("#navmain").css('height').replace("px", "")) + 0;
     
   });
+
+
+  
+  

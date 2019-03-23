@@ -1161,7 +1161,7 @@ include 'inc-left-side-menu-furnitura.php';
 
                                                 <div class="row col-xs-12 col-sm-12 col-md-12" >
                                                     <div class=" col-xs-4 col-sm-4 col-md-4">
-                                                        <table class="dim_box_horizontal" >
+                                                        <table class="dim_box_horizontal"width="100%">
                                                             <tr>
                                                                 <td  style="width: 10%; text-align:right;"></td>
                                                                 <td></td>
@@ -1174,7 +1174,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </table>
                                                     </div> 
                                                     <div class=" col-xs-4 col-sm-4 col-md-4">
-                                                        <table class="dim_box_horizontal" >
+                                                        <table class="dim_box_horizontal" width="100%">
                                                             <tr>
                                                             <td  style="width: 10%; text-align:right;"></td>
                                                                 <td></td>
@@ -1187,7 +1187,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </table>
                                                     </div> 
                                                     <div class=" col-xs-4 col-sm-4 col-md-4">
-                                                        <table class="dim_box_horizontal" >
+                                                        <table class="dim_box_horizontal" width="100%">
                                                             <tr>
                                                             <td  style="width: 12%; text-align:right;"></td>
                                                                 <td></span></td>
@@ -1248,12 +1248,21 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <th>Артикул</th>
                                                             <th>Цвет&nbsp;/&nbsp;материал</th>
                                                             <th>Описание</th>
-                                                            <th class="quantity">                                                            
+                                                            <!-- <th class="quantity">                                                            
                                                                <div class="form-group" style="margin-bottom: 0;width: 112px;">				
                                                                     <input id="add_vpi_count-1"  class="form-control" type="number" value="1" min="1" max="999" >
                                                                 </div>
                                                                 
-                                                            </th>
+                                                            </th> -->
+                                                            <th class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input  id="add_vpi_count-1" type="text" class="form-control form-c" value="1" min="1" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </th> 
                                                             <th class="">
                                                             
                                                                 <button type="button" id="addvpi" class="btn btn-primary" style="margin-left: 10px;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button>

@@ -77,11 +77,20 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td class="animated" data-objfurnid="16">KON&nbsp;7.0x50&nbsp;IB</td>
                                                             <td>Металл</td> 
                                                             <td >Конфирмат 7.0x50</td>
-                                                            <td class="quantity">                                                            
+                                                            <!-- <td class="quantity">                                                            
                                                                <div class="form-group" style="margin-bottom: 0;width: 112px;">				
                                                                     <input id="add_vpi_count-1"  class="form-control" type="number" value="0" min="0" step="10"  >
                                                                 </div>                                                                
-                                                            </td>
+                                                            </td> -->
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input  id="add_vpi_count-1" type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td> 
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulkonfirmat.png" class="" alt="Эксцентрик" title=""></td>
@@ -89,11 +98,20 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td class="animated" data-objfurnid="17">KON&nbsp;7.0x70&nbsp;IB</td>
                                                             <td>Металл</td> 
                                                             <td >Конфирмат 7.0x70</td>
-                                                            <td class="quantity">                                                            
+                                                            <!-- <td class="quantity">                                                            
                                                                <div class="form-group" style="margin-bottom: 0;width: 112px;">				
                                                                     <input id="add_vpi_count-2"  class="form-control" type="number" value="0" min="0" step="10"  >
                                                                 </div>                                                                
-                                                            </td>
+                                                            </td> -->
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input  id="add_vpi_count-2" type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>  
                                                         </tr>
                                                       
                                                       

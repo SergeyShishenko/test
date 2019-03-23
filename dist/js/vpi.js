@@ -6,8 +6,8 @@
     }
 });
 
-$("[id^=\'vpi_id\']").bootstrapNumber();
-$("[id^=\'add_vpi_count\']").bootstrapNumber();
+// $("[id^=\'vpi_id\']").bootstrapNumber();
+// $("[id^=\'add_vpi_count\']").bootstrapNumber();
 
 
 
@@ -52,13 +52,7 @@ $("body").on("click","#checkout",function() { //СГЕНЕРИРОВАТЬ ВЕ�
     return false;
 });
 
-  // установим обработчик события focusout, элементу с идентификатором foo
-  $('body').on('change',"[id^=\'vpi_id\']",function(){
-    // console.log('Элемент изменен.');
-    $(this).data('change','1');
-    // console.log($(this).data('change'));
-    $('#checkoutd').hide();// скрыть кнопку скачать XLS
-});
+
 
 var add_ids_list = []; // добавление в корзину
 $("body").on("click","[id^=\'addvpi\']",function() {// alert('ВПИ');
@@ -83,7 +77,7 @@ $("body").on("click","[id^=\'addvpi\']",function() {// alert('ВПИ');
     if (cartcontent_vis=="block"){$('#header #cart .content').show();}
     // $('#header #cart .content').show();
 
-    $("[id^=\'vpi_id\']").bootstrapNumber();
+    // $("[id^=\'vpi_id\']").bootstrapNumber();
     $('#loading1').hide();      
     });
 
@@ -118,7 +112,7 @@ $("body").on("click","[id^=\'each_addvpi\']",function() {// alert('ВПИ');
         $('#vpi').html(data);
         if (cartcontent_vis=="block"){$('#header #cart .content').show();}
         
-        $("[id^=\'vpi_id\']").bootstrapNumber();
+        // $("[id^=\'vpi_id\']").bootstrapNumber();
         $('#loading1').hide();      
         }); 
         add_ids_list.length = 0;}
@@ -195,6 +189,7 @@ $(function() {
     $(".spinner").each(function(c, b) {
         $(b).on("click", ".btn-default", function() {
             var a = $(".form-c", b)[0];
+            $(a).data('change','1');
             var s = 0;
             // console.log(parseInt(s));
             if (a.step==""){s=1;}else{s = parseInt(a.step);}
@@ -202,14 +197,23 @@ $(function() {
             // console.log($(".btn-default", b).index(this));
             if($(".btn-default", b).index(this)>0)
             {a.value=parseInt(a.value) + s;
-                // console.log(a.value);
+                console.log(a.value);
+                
+                // console.log('Элемент изменен!.');
             }
             else{a.value=parseInt(a.value) - s;
-                // console.log(a.value);
+                console.log(a.value);
             }
             //  $(".btn-default", b).index(this) ? a.value++ : a.value-- ;
             // 0 > a.value && (a.value = 0)
             if (0 > a.value) a.value = 0;
         });
     });
+});
+  
+$('body').on('change',"[id^=\'vpi_id-\']",function(){
+    console.log('Элемент изменен.');
+   $(this).data('change','1');
+   // console.log($(this).data('change'));
+   $('#checkoutd').hide();// скрыть кнопку скачать XLS
 });

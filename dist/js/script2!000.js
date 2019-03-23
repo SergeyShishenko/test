@@ -1,535 +1,204 @@
-window.onresize = function(){
-  getPositionSearch();
-  nvfn();
-  
-};
+
+
+window.onresize = function(){ getPositionSearch();nvfn(); };
 var mainpage=51;
 
 
+function getPositionSearch(){
 
+        var w = getClientWidth();// текущая ширина экрана 
+        if (w>991)
+        {$("#navsub.bs-sidebar").removeClass('click-lef-tmenu');}
 
-function browser1()
-{
-var a;
-if (navigator.userAgent.search(/Safari/) > 0) {a = 'Safari';}
-if (navigator.userAgent.search(/Firefox/) > 0) {a = 'MozillaFirefox';}
-if (navigator.userAgent.search(/MSIE/) > 0 || navigator.userAgent.search(/NET CLR /) > 0) {a = 'Internet Explorer';}
-if (navigator.userAgent.search(/Chrome/) > 0) {a = 'Google Chrome';}
-if (navigator.userAgent.search(/YaBrowser/) > 0) {a = 'Яндекс браузер';}
-if (navigator.userAgent.search(/OPR/) > 0) {a = 'Opera';}
-if (navigator.userAgent.search(/Konqueror/) > 0) {a = 'Konqueror';}
-if (navigator.userAgent.search(/Iceweasel/) > 0) {a = 'Debian Iceweasel';}
-if (navigator.userAgent.search(/SeaMonkey/) > 0) {a = 'SeaMonkey';}
-if (navigator.userAgent.search(/Edge/) > 0) {a = 'Microsoft Edge';}
-// alert(a); // В переменной a будет название браузера
-console.log(a);
-}
+        var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
+        switch (true) { // Постоянное значение true вместо w
+            // case w >= 0 && w <= 3:
+            // case w >= 0 && w <= 992:
+            //     mainpage= 15 - zbz;
+            //     break;
+            case w >= 0 && w <= 1920:
+                // mainpage= 15 - zbz;
+                mainpage=-10;
+                break;
+                case w > 1920:
+                // mainpage= 15 - zbz;
+                mainpage=-10;
+                break;
+            default:
+                mainpage=51;
+        }
+          
 
-
-
-function browser2()
-{
-var BrowserDetect = { 
-init: function () { 
-this.browser = this.searchString(this.dataBrowser) || "An unknown browser"; 
-this.version = this.searchVersion(navigator.userAgent) || this.searchVersion(navigator.appVersion) || "an unknown version"; 
-this.OS = this.searchString(this.dataOS) || "an unknown OS"; 
-}, 
-searchString: function (data) { 
-for (var i=0;i<data.length;i++) { 
-var dataString = data[i].string; 
-var dataProp = data[i].prop; 
-this.versionSearchString = data[i].versionSearch || data[i].identity; 
-if (dataString) { 
-if (dataString.indexOf(data[i].subString) != -1) 
-return data[i].identity; 
-} 
-else if (dataProp) 
-return data[i].identity; 
-} 
-}, 
-searchVersion: function (dataString) { 
-var index = dataString.indexOf(this.versionSearchString); 
-if (index == -1) return; 
-return parseFloat(dataString.substring(index+this.versionSearchString.length+1)); 
-}, 
-dataBrowser: [ 
-{ 
-string: navigator.userAgent, 
-subString: "YaBrowser", 
-identity: "YaBrowser", 
-//   identity: "OPR", 
-versionSearch: "YaBrowser" 
-}, 
-{ 
-string: navigator.userAgent, 
-subString: "Chrome", 
-identity: "Chrome" 
-}, 
-{ string: navigator.userAgent, 
-subString: "OmniWeb", 
-versionSearch: "OmniWeb/", 
-identity: "OmniWeb" 
-}, 
-{ 
-string: navigator.vendor, 
-subString: "Apple", 
-identity: "Safari", 
-versionSearch: "Version" 
-}, 
-{ 
-string: navigator.userAgent, 
-//   identity: "Opera", 
-identity: "OPR", 
-versionSearch: "Version" 
-}, 
-
-{ 
-string: navigator.vendor, 
-subString: "iCab", 
-identity: "iCab" 
-}, 
-{ 
-string: navigator.vendor, 
-subString: "KDE", 
-identity: "Konqueror" 
-}, 
-{ 
-string: navigator.userAgent, 
-subString: "Firefox", 
-identity: "Firefox" 
-}, 
-{ 
-string: navigator.vendor, 
-subString: "Camino", 
-identity: "Camino" 
-}, 
-{  
-/* For Newer Netscapes (6+) */ 
-string: navigator.userAgent, 
-subString: "Netscape", 
-identity: "Netscape" 
-}, 
-{ 
-string: navigator.userAgent, 
-subString: "MSIE", 
-identity: "Internet Explorer", 
-versionSearch: "MSIE" 
-}, 
-{ 
-string: navigator.userAgent, 
-subString: "Gecko", 
-identity: "Mozilla", 
-versionSearch: "rv" 
-}, 
-{  
-/* For Older Netscapes (4-) */ 
-string: navigator.userAgent, 
-subString: "Mozilla", 
-identity: "Netscape", 
-versionSearch: "Mozilla" 
-} 
-], 
-
-dataOS : [ 
-{ 
-string: navigator.platform, 
-subString: "Win", 
-identity: "Windows" 
-}, 
-{ 
-string: navigator.platform, 
-subString: "Mac", 
-identity: "Mac" 
-}, 
-{ 
-string: navigator.userAgent, 
-subString: "iPhone", 
-identity: "iPhone/iPod" 
-}, 
-{ 
-string: navigator.platform, 
-subString: "Linux", 
-identity: "Linux" 
-} 
-] 
-
-}; 
-BrowserDetect.init(); 
-
-console.log(BrowserDetect.browser+"/"+BrowserDetect.version); 
-// console.log(BrowserDetect.version); 
-// console.log(BrowserDetect.OS);
-// console.log('opera -> '+window.opera);
-}
-
-browser1();
-browser2();
-BrowserDetect={};
-// var uAgent = navigator.userAgent || '';
-
-// var browser = {
-// 	version : (uAgent.match( /.+(?:me|ox|on|rv|it|era|ie)[\/: ]([\d.]+)/ ) || [0,'0'])[1],
-// 	opera : /OPR/i.test(uAgent),
-// 	msie : (/msie/i.test(uAgent) && !/opera/i.test(uAgent)),
-// 	msie6 : (/msie 6/i.test(uAgent) && !/opera/i.test(uAgent)),
-// 	msie7 : (/msie 7/i.test(uAgent) && !/opera/i.test(uAgent)),
-// 	msie8 : (/msie 8/i.test(uAgent) && !/opera/i.test(uAgent)),
-// 	msie9 : (/msie 9/i.test(uAgent) && !/opera/i.test(uAgent)),
-// 	msie10 : (/msie 10/i.test(uAgent) && !/opera/i.test(uAgent)),
-// 	mozilla : /firefox/i.test(uAgent),
-// 	chrome : /chrome/i.test(uAgent),
-// 	safari : (!(/chrome/i.test(uAgent)) && /webkit|safari|khtml/i.test(uAgent)),
-// 	iphone : /iphone/i.test(uAgent),
-// 	ipod : /ipod/i.test(uAgent),
-// 	iphone4 : /iphone.*OS 4/i.test(uAgent),
-// 	ipod4 : /ipod.*OS 4/i.test(uAgent),
-// 	ipad : /ipad/i.test(uAgent),
-// 	ios : /ipad|ipod|iphone/i.test(uAgent),
-// 	android : /android/i.test(uAgent),
-// 	bada : /bada/i.test(uAgent),
-// 	mobile : /iphone|ipod|ipad|opera mini|opera mobi|iemobile/i.test(uAgent),
-// 	msie_mobile : /iemobile/i.test(uAgent),
-// 	safari_mobile : /iphone|ipod|ipad/i.test(uAgent),
-// 	opera_mobile : /opera mini|opera mobi/i.test(uAgent),
-// 	opera_mini : /opera mini/i.test(uAgent),
-// 	mac : /mac/i.test(uAgent),
-// 	webkit : /webkit/i.test(uAgent),
-// 	android_version: parseFloat(uAgent.slice(uAgent.indexOf("Android")+8)) || 0
-// };
-// console.log("browser " + browser.opera);
-// console.log("Вы используете браузер " + navigator.appName);
-var xa = navigator.userAgent;
-console.log("Вы используете браузер " + xa);
-// console.log("Вы используете браузер2 " + navigator.getUserMedia);
-// console.log("Вы используете браузер3 " + navigator.webkitGetUserMedia);
-// console.log("Вы используете браузер4 " + navigator.mozGetUserMedia);
-// console.log("Вы используете браузер5 " + navigator.msGetUserMedia);
-
-           
-// console.log("Версия " + navigator.appVersion);
-function getWH()
-{  
- var w = window.innerWidth || window.outerWidth || document.documentElement.clientWidth || document.body.clientWidth;
- 
- var h = window.innerHeight  || outerHeight  || document.documentElement.clientHeight  || document.body.clientHeight;
-
- console.log ("w"+window.outerWidth );// текущая ширина экрана 
-console.log ("h"+window.outerHeight );// текущая ширина экрана 
-
-// var x = document.getElementById("body");
-// x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
-// console.log("Ширина внутреннего окна браузера: " + w + ", height: " + h + ".");
-}
-
-
-function getPositionSearch()
-{    
- // console.log('Ширина экрана '+ document.documentElement.clientWidth);
- // console.log('Высота экрана '+ document.documentElement.clientHeight);
- getWH();
-
- var w = getClientWidth();// текущая ширина экрана 
- if (w>991)
- {$("#navsub.bs-sidebar").removeClass('click-lef-tmenu');}
-
- var zbz = $('.zbz-input-clearable').css('width').replace("px", ""); //ширина input     
- switch (true) { // Постоянное значение true вместо w
-     // case w >= 0 && w <= 3:
-     // case w >= 0 && w <= 992:
-     //     mainpage= 15 - zbz;
-     //     break;
-     case w >= 0 && w <= 1920:
-         // mainpage= 15 - zbz;
-         mainpage=-10;
-         break;
-         case w > 1920:
-         // mainpage= 15 - zbz;
-         mainpage= -10 ;
-         break;
-     default:
-         mainpage=51;
- }
-     
-
- // console.log('mainpage '+ mainpage);        
- // var c= $('div.container').css('width');
- var pos = $( '#main-page' ).position().left;
- var c= $('#main-page').css('width');
- // console.log('position '+pos);
- // console.log('width '+c);
- // console.log('текущая ширина экрана '+ w);
- // console.log('zbz '+ zbz);
-     c = c.replace("px", "")-mainpage; // -21 удалить латинские символы 
- //   с= pos + с;
- // console.log(c);       
- // c=(w-c)/2+5;
- //    console.log(c);
-     $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
-     $('.zbz-input-clearable').css({'visibility': 'visible'});
-     $('span.zbz').css('visibility','visible');
-     if($('input.who').val() !== ""){$('span.zbz').css('visibility','hidden');  }
- 
- //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
-}
+// console.log('mainpage '+ mainpage);        
+        // var c= $('div.container').css('width');
+        var pos = $( '#main-page' ).position().left;
+        var c= $('#main-page').css('width');
+        // console.log('position '+pos);
+        // console.log('width '+c);
+        // console.log('текущая ширина экрана '+ w);
+        // console.log('zbz '+ zbz);
+         c = c.replace("px", "")-mainpage; // -21 удалить латинские символы 
+        //   с= pos + с;
+        // console.log(c);       
+        // c=(w-c)/2+5;
+        //    console.log(c);
+         $('.navbar-form.navbar-right:last-child').css({'left': pos + c});
+         $('.zbz-input-clearable').css({'visibility': 'visible'});
+         $('span.zbz').css('visibility','visible');
+         if($('input.who').val() !== ""){$('span.zbz').css('visibility','hidden');  }
+        
+        //  $('.navbar-form.navbar-right:last-child').offset({top:30, left:pos});
+     }
 // текущая ширина экрана   
 function getClientWidth(){
- return document.compatMode=='CSS1Compat' &&
-!window.opera?document.documentElement.clientWidth:document.body.clientWidth;
-}
-//текущая высотаэкрана  
-function getClientHeight(){
- return document.compatMode=='CSS1Compat' &&
-!window.opera?document.documentElement.clientHeight:document.body.clientHeight;
-}
+    return document.compatMode=='CSS1Compat' &&
+  !window.opera?document.documentElement.clientWidth:document.body.clientWidth;
+  }
+  //текущая высотаэкрана  
+  function getClientHeight(){
+    return document.compatMode=='CSS1Compat' &&
+  !window.opera?document.documentElement.clientHeight:document.body.clientHeight;
+  }
+  
 
-
-$( document ).ready(function() {
- getPositionSearch();
-  getClientWidth();
-});
-//  console.log ("w"+getClientWidth());// текущая ширина экрана 
-//  console.log ("w"+window.outerWidth );// текущая ширина экрана 
-//  console.log ("h"+window.outerHeight );// текущая ширина экрана 
-//  console.log ("h"+getClientHeight());// текущая ширина экрана 
-
-getPositionSearch();nvfn();
-
-//  var delta =0;
-bottomUl = 0;
-// var nthchild =1;
-$(function () {
- // $('#navsub  li.menu2 ul').hide();
- // $('#navsub  li.menu ul').hide();
- $('#navsub  li.menu').not('.disabled').hover(function () {
-     var w = getClientWidth();// текущая ширина экрана 
-     
-     if (w>991){
-         // delta2 = 0; // счетчик прокрутки колеса sub_menu2
-        var colLeftMenu = $(this).parent().children().length; 
-        var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        var UlSubMenu = $(this ).children('ul').children();
-        var child1 =UlSubMenu.length;
-         bottomUl = (colLeftMenu-col)*40;
-        if (child1>col){bottomUl=bottomUl-(child1-col)*40;}       
-     //    console.log("количество левое меню - "+colLeftMenu);
-     //    console.log("номер по порядку выбранного элемента списка - "+col);      
-     //    console.log("количество дочерних элементов - "+child1);   
-     //    console.log("bottomUl : "+bottomUl);   
-        $(this).find('ul.sub_menu').show();
-        
-     //    var d = getMouseWeel();
-     //    console.log(d);
-     // console.log(dy);
-
-        UlSubMenu.parent().css("bottom", bottomUl+"px"); 
-        $(this).find('ul.sub_menu > li:nth-child(1)').addClass('triangle');           
-        var triangle = (child1-1)*40+11;
-        if (child1>col){triangle = (col-1)*40+11;}
-        $('head').append('<style id="triangle" data-top="'+triangle+'">.triangle::before{top:'+triangle+'px !important;}.triangle::after{top:'+triangle+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
-     }
-     },
-     
-     function () {
-         // console.log("------------");
-         $(this).find('ul.sub_menu').hide();   
-         $(this).find('ul.sub_menu > li:nth-child(1)').removeClass('triangle');            
-         $('#triangle').remove();      
-     }
- );//hover
-
- $('#navsub  li.menu2').not('.disabled').hover(
-     function () {
-        var colLeftMenu = $(this).parent().children().length; 
-        var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        var UlSubMenu = $(this ).children('ul').children();
-        var child1 =UlSubMenu.length;
-        var bottomUl2 = (colLeftMenu-col)*40+11;
-        if (child1==col){bottomUl2=bottomUl2-(child1-col)*40+20;}
-        if (child1<col){bottomUl2=30+(colLeftMenu-col)*40;}   
-        if (child1>col){bottomUl2=bottomUl2-(child1-col)*40+20;}       
-     //    console.log("количество левое меню2 - "+colLeftMenu);
-     //    console.log("номер по порядку выбранного элемента списка2 - "+col);      
-     //    console.log("количество дочерних элементов2 - "+child1);  
-         
-         $(this).find('ul.sub_menu2').show();
-
-     //     var d = getMouseWeel();
-     //    console.log(d);
-     //   console.log(dy);
-
-         UlSubMenu.parent().css("bottom", bottomUl2+"px"); 
-        $(this).find('ul.sub_menu2 > li:nth-child(1)').addClass('triangle2');           
-        var triangle2 = (child1-1)*40+11;
-       
-        if (child1>col){triangle2 = (col-1)*40+11;}
-        $('head').append('<style id="triangle2" data-top="'+triangle2+'">.triangle2::before{top:'+triangle2+'px !important;}.triangle2::after{top:'+triangle2+'px !important;}</style>');  
-        
-     },
-     function () {
-         // console.log($(this));
-         delta2 = 0; 
-         $(this).find('ul.sub_menu2').hide();
-         $(this).find('ul.sub_menu2 > li:nth-child(1)').removeClass('triangle2');            
-         $('#triangle2').remove();  
-     }
- );
-});
-
-// прокрутка колеса мыши sub
-var delta = 0;
-var sub_menu2hover = false;
-var bottomMIN1 = 0;
-
-$('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){
-
-// var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
- if (!sub_menu2hover){
-
-     var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;    
-     // var UlSubMenu = $(this ).children();
-     // var child1 =UlSubMenu.length;
-      var bottomUl1 = parseInt($(this ).css('bottom'));
-      var triangle0 =$('#triangle').data('top');
-     //  console.log('triangle0 ' + triangle0);
-     // var bottomUl1 = bottomUl;
-
-     // var triangle =$('#triangle222').data('top');
- // 
- //  console.log('triangle222 ' + $('#triangle2').html());
- // console.log('child122 ' + child1);
- // console.log('current ' + $(this).index()+1);
- // $(this).index()+1;
- // console.log('bottomALL ' + $(this ).last().css('bottom'));
-    
-     if(dy > 0) { 
-
-        
-         if (bottomUl1 < 0 ) { 
-             delta =  1  + delta ;
-             // console.log('sub_menu2 up2');
-             // console.log(delta2); 
-             // console.log('bottomMIN1 '+bottomMIN1);
-             // console.log('bottomUl start '+bottomUl);
-             bottomUl1= bottomUl1 + 40;
-             
-             // console.log('bottomUl ' + bottomUl); 
-             // console.log('bottomUP ' + $(this ).last().css('bottom'));
-             // console.log('bottomUl ' + bottomUl1); 
-             $(this ).css("bottom", bottomUl1+"px"); 
-              triangle0 = triangle0 + 40;
-              $('#triangle').remove();
-              $('head').append('<style id="triangle" data-top="'+triangle0+'">.triangle::before{top:'+triangle0+'px !important;}.triangle::after{top:'+triangle0+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
-             //  console.log('<style id="triangle">.triangle::before{top:'+triangle0+'px !important;}.triangle::after{top:'+triangle0+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
-
-             // console.log('triangle '+triangle);                    
-             // console.log("<style id=triangle2 data-top="+triangle+">.triangle2::before{top:"+triangle+"px !important;}.triangle2::after{top:"+triangle+"px !important;}</style>");      
-         }
-         e.preventDefault();      
-      }
-else{ 
-     if (delta > 0 ) { 
-         // console.log('bottomUl start '+bottomUl);
-         //     console.log('bottomUl1 ' + bottomUl1); 
-         if (bottomUl1 > bottomUl ) { 
-             delta =  delta - 1;
-             // console.log('sub_menu2 down2');
-             // console.log(delta2);
-             
-             bottomUl1 = bottomUl1 - 40;
-             // triangle = triangle - 40;
-             // console.log('bottomDOWN ' + $(this ).last().css('bottom'));
-             // console.log('bottomUl1 (-40) ' + bottomUl1); 
-             $(this ).css("bottom", bottomUl1+"px"); 
-             triangle0 = triangle0 - 40;
-             $('#triangle').remove();
-             $('head').append('<style id="triangle" data-top="'+triangle0+'">.triangle::before{top:'+triangle0+'px !important;}.triangle::after{top:'+triangle0+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
-             // console.log('<style id="triangle">.triangle::before{top:'+triangle0+'px !important;}.triangle::after{top:'+triangle0+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
-
-             //  $('#triangle').remove();
-             //  $('head').append('<style id="triangle" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>'); 
-             // console.log('triangle '+triangle);             
-             // console.log("<style id=triangle2 data-top="+triangle+">.triangle2::before{top:"+triangle+"px !important;}.triangle2::after{top:"+triangle+"px !important;}</style>"); 
-         }
-      }//delta
-
- e.preventDefault();  
  
-     
-}
- }
+ getPositionSearch();nvfn();
+//  var delta =0;
+$(function () {
+    // $('#navsub  li.menu2 ul').hide();
+    // $('#navsub  li.menu ul').hide();
+    $('#navsub  li.menu').not('.disabled').hover(function () {
+        var w = getClientWidth();// текущая ширина экрана 
+        if (w>991){
+            // delta2 = 0; // счетчик прокрутки колеса sub_menu2
+           var colLeftMenu = $(this).parent().children().length; 
+           var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+           var UlSubMenu = $(this ).children('ul').children();
+           var child1 =UlSubMenu.length;
+           var bottomUl = (colLeftMenu-col)*40;
+           if (child1>col){bottomUl=bottomUl-(child1-col)*40;}       
+        //    console.log("количество левое меню - "+colLeftMenu);
+        //    console.log("номер по порядку выбранного элемента списка - "+col);      
+        //    console.log("количество дочерних элементов - "+child1);   
+           $(this).find('ul.sub_menu').show();
+           
+        //    var d = getMouseWeel();
+        //    console.log(d);
+        // console.log(dy);
 
+           UlSubMenu.parent().css("bottom", bottomUl+"px"); 
+           $(this).find('ul.sub_menu > li:nth-child(1)').addClass('triangle');           
+           var triangle = (child1-1)*40+11;
+           if (child1>col){triangle = (col-1)*40+11;}
+           $('head').append('<style id="triangle">.triangle::before{top:'+triangle+'px !important;}.triangle::after{top:'+triangle+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
+        }
+        },
+        
+        function () {
+            $(this).find('ul.sub_menu').hide();   
+            $(this).find('ul.sub_menu > li:nth-child(1)').removeClass('triangle');            
+            $('#triangle').remove();      
+        }
+    );//hover
+
+    $('#navsub  li.menu2').not('.disabled').hover(
+        function () {
+           var colLeftMenu = $(this).parent().children().length; 
+           var col = $(this).index()+1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+           var UlSubMenu = $(this ).children('ul').children();
+           var child1 =UlSubMenu.length;
+           var bottomUl = (colLeftMenu-col)*40+11;
+           if (child1==col){bottomUl=bottomUl-(child1-col)*40+20;}
+           if (child1<col){bottomUl=30+(colLeftMenu-col)*40;}   
+           if (child1>col){bottomUl=bottomUl-(child1-col)*40+20;}       
+        //    console.log("количество левое меню2 - "+colLeftMenu);
+        //    console.log("номер по порядку выбранного элемента списка2 - "+col);      
+        //    console.log("количество дочерних элементов2 - "+child1);  
+            
+            $(this).find('ul.sub_menu2').show();
+
+        //     var d = getMouseWeel();
+        //    console.log(d);
+        //   console.log(dy);
+
+            UlSubMenu.parent().css("bottom", bottomUl+"px"); 
+           $(this).find('ul.sub_menu2 > li:nth-child(1)').addClass('triangle2');           
+           var triangle = (child1-1)*40+11;
+          
+           if (child1>col){triangle = (col-1)*40+11;}
+           $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');  
+           
+        },
+        function () {
+            // console.log($(this));
+            delta2 = 0; 
+            $(this).find('ul.sub_menu2').hide();
+            $(this).find('ul.sub_menu2 > li:nth-child(1)').removeClass('triangle2');            
+            $('#triangle2').remove();  
+        }
+    );
 });
 
-// прокрутка колеса мыши sub2 
- var delta2 = 0; 
-  var bottomMIN = 0; 
- // var bottomMAX = -929;  
- $('.sub_menu2').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){   
- var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;    
- // var UlSubMenu = $(this ).children();
- // var child1 =UlSubMenu.length;
- var bottomUl = parseInt($(this ).css('bottom'));
-  var triangle2 =$('#triangle2').data('top');
- // console.log('triangle2 ' + triangle2);
- //  console.log('triangle2 ' + $('#triangle2').html());
- // console.log('child1 ' + child1);
- // console.log('bottom ' + $(this ).css('bottom'));
- if(dy > 0) { 
 
-        
-             if (bottomUl < bottomMIN ) { 
-                 delta2 =  1  + delta2 ;
-                 // console.log('sub_menu2 up2');
-                 // console.log(delta2); 
-                 // console.log(bottomMIN);
-                 bottomUl= bottomUl + 40;
-                 triangle2 = triangle2 + 40;
-                 // console.log('bottomUl ' + bottomUl); 
-                 $(this ).css("bottom", bottomUl+"px"); 
-                 $('#triangle2').remove();
-                 $('head').append('<style id="triangle2" data-top="'+triangle2+'">.triangle2::before{top:'+triangle2+'px !important;}.triangle2::after{top:'+triangle2+'px !important;}</style>');       
+
+   // прокрутка колеса мыши sub2 
+    var delta2 = 0; 
+     var bottomMIN = -129; 
+    // var bottomMAX = -929;  
+    $('.sub_menu2').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e){   
+    var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;    
+    var UlSubMenu = $(this ).children();
+    var child1 =UlSubMenu.length;
+    var bottomUl = parseInt($(this ).css('bottom'));
+     var triangle =$('#triangle2').data('top');
+    // console.log('triangle ' + triangle);
+    //  console.log('triangle2 ' + $('#triangle2').html());
+    // console.log('child1 ' + child1);
+    // console.log('bottom ' + $(this ).css('bottom'));
+    if(dy > 0) { 
+
+           
+                if (bottomUl < bottomMIN ) { 
+                    delta2 =  1  + delta2 ;
+                    // console.log('up2');
+                    // console.log(delta2); 
+                    // console.log(bottomMIN);
+                    bottomUl= bottomUl + 40;
+                    triangle = triangle + 40;
+                    // console.log('bottomUl ' + bottomUl); 
+                    $(this ).css("bottom", bottomUl+"px"); 
+                    $('#triangle2').remove();
+                    $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');       
+                }
+                e.preventDefault();      
              }
-             e.preventDefault();      
-          }
- else{ 
-     
-     
-      
-         if (delta2 > 0 ) { 
-             delta2 =  delta2 - 1 ;
-             // console.log('sub_menu2 down2');
-             // console.log(delta2);
-             bottomUl = bottomUl - 40;
-             triangle2 = triangle2 - 40;
-             // console.log('bottomUl ' + bottomUl); 
-             $(this ).css("bottom", bottomUl+"px"); 
-             $('#triangle2').remove();
-             $('head').append('<style id="triangle2" data-top="'+triangle2+'">.triangle2::before{top:'+triangle2+'px !important;}.triangle2::after{top:'+triangle2+'px !important;}</style>');   
-          }
-     e.preventDefault();  
-     
+    else{ 
+        
+        
          
- }
+            if (delta2 > 0 ) { 
+                delta2 =  delta2 - 1 ;
+                // console.log('down2');
+                // console.log(delta2);
+                bottomUl = bottomUl - 40;
+                triangle = triangle - 40;
+                // console.log('bottomUl ' + bottomUl); 
+                $(this ).css("bottom", bottomUl+"px"); 
+                $('#triangle2').remove();
+                $('head').append('<style id="triangle2" data-top="'+triangle+'">.triangle2::before{top:'+triangle+'px !important;}.triangle2::after{top:'+triangle+'px !important;}</style>');   
+             }
+        e.preventDefault();  
+        
+            
+    }
 
- });
-
-
- $( ".sub_menu2" ).hover(
-     function() {
-     //   $( this ).addClass( "hover" );
-     // console.log('addClass( "hover" )');
-     sub_menu2hover = true;
-     }, function() {
-     //   $( this ).removeClass( "hover" );
-     // console.log('removeClass( "hover" )');
-     sub_menu2hover = false;
-     }
-   );
+    });
 
 
 
-//=====================================================
+
+
+
 
 
 
@@ -1152,211 +821,211 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
             //   });
 
 
-            +function ($) {
-                'use strict';
+            // +function ($) {
+            //     'use strict';
               
-                // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
-                // ============================================================
+            //     // CSS TRANSITION SUPPORT (Shoutout: http://www.modernizr.com/)
+            //     // ============================================================
               
-                function transitionEnd() {
-                  var el = document.createElement('bootstrap')
+            //     function transitionEnd() {
+            //       var el = document.createElement('bootstrap')
               
-                  var transEndEventNames = {
-                    WebkitTransition : 'webkitTransitionEnd',
-                    MozTransition    : 'transitionend',
-                    OTransition      : 'oTransitionEnd otransitionend',
-                    transition       : 'transitionend'
-                  }
+            //       var transEndEventNames = {
+            //         WebkitTransition : 'webkitTransitionEnd',
+            //         MozTransition    : 'transitionend',
+            //         OTransition      : 'oTransitionEnd otransitionend',
+            //         transition       : 'transitionend'
+            //       }
               
-                  for (var name in transEndEventNames) {
-                    if (el.style[name] !== undefined) {
-                      return { end: transEndEventNames[name] }
-                    }
-                  }
+            //       for (var name in transEndEventNames) {
+            //         if (el.style[name] !== undefined) {
+            //           return { end: transEndEventNames[name] }
+            //         }
+            //       }
               
-                  return false // explicit for ie8 (  ._.)
-                }
+            //       return false // explicit for ie8 (  ._.)
+            //     }
               
-                // http://blog.alexmaccaw.com/css-transitions
-                $.fn.emulateTransitionEnd = function (duration) {
-                  var called = false
-                  var $el = this
-                  $(this).one('bsTransitionEnd', function () { called = true })
-                  var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
-                  setTimeout(callback, duration)
-                  return this
-                }
+            //     // http://blog.alexmaccaw.com/css-transitions
+            //     $.fn.emulateTransitionEnd = function (duration) {
+            //       var called = false
+            //       var $el = this
+            //       $(this).one('bsTransitionEnd', function () { called = true })
+            //       var callback = function () { if (!called) $($el).trigger($.support.transition.end) }
+            //       setTimeout(callback, duration)
+            //       return this
+            //     }
               
-                $(function () {
-                  $.support.transition = transitionEnd()
+            //     $(function () {
+            //       $.support.transition = transitionEnd()
               
-                  if (!$.support.transition) return
+            //       if (!$.support.transition) return
               
-                  $.event.special.bsTransitionEnd = {
-                    bindType: $.support.transition.end,
-                    delegateType: $.support.transition.end,
-                    handle: function (e) {
-                      if ($(e.target).is(this)) return e.handleObj.handler.apply(this, arguments)
-                    }
-                  }
-                })
+            //       $.event.special.bsTransitionEnd = {
+            //         bindType: $.support.transition.end,
+            //         delegateType: $.support.transition.end,
+            //         handle: function (e) {
+            //           if ($(e.target).is(this)) return e.handleObj.handler.apply(this, arguments)
+            //         }
+            //       }
+            //     })
               
-              }(jQuery);
-              /* ========================================================================
-               * Bootstrap: tab.js v3.3.7
-               * http://getbootstrap.com/javascript/#tabs
-               * ========================================================================
-               * Copyright 2011-2016 Twitter, Inc.
-               * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-               * ======================================================================== */
-              
-              
-              +function ($) {
-                'use strict';
-              
-                // TAB CLASS DEFINITION
-                // ====================
-              
-                var Tab = function (element) {
-                  // jscs:disable requireDollarBeforejQueryAssignment
-                  this.element = $(element)
-                  // jscs:enable requireDollarBeforejQueryAssignment
-                }
-              
-                Tab.VERSION = '3.3.7'
-              
-                Tab.TRANSITION_DURATION = 150
-              
-                Tab.prototype.show = function () {
-                  var $this    = this.element
-                  var $ul      = $this.closest('ul:not(.dropdown-menu)')
-                  var selector = $this.data('target')
-              
-                  if (!selector) {
-                    selector = $this.attr('href')
-                    selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
-                  }
-              
-                  if ($this.parent('li').hasClass('active')) return
-              
-                  var $previous = $ul.find('.active:last a')
-                  var hideEvent = $.Event('hide.bs.tab', {
-                    relatedTarget: $this[0]
-                  })
-                  var showEvent = $.Event('show.bs.tab', {
-                    relatedTarget: $previous[0]
-                  })
-              
-                  $previous.trigger(hideEvent)
-                  $this.trigger(showEvent)
-              
-                  if (showEvent.isDefaultPrevented() || hideEvent.isDefaultPrevented()) return
-              
-                  var $target = $(selector)
-              
-                  this.activate($this.closest('li'), $ul)
-                  this.activate($target, $target.parent(), function () {
-                    $previous.trigger({
-                      type: 'hidden.bs.tab',
-                      relatedTarget: $this[0]
-                    })
-                    $this.trigger({
-                      type: 'shown.bs.tab',
-                      relatedTarget: $previous[0]
-                    })
-                  })
-                }
-              
-                Tab.prototype.activate = function (element, container, callback) {
-                  var $active    = container.find('> .active')
-                  var transition = callback
-                    && $.support.transition
-                    && ($active.length && $active.hasClass('fade') || !!container.find('> .fade').length)
-              
-                  function next() {
-                    $active
-                      .removeClass('active')
-                      .find('> .dropdown-menu > .active')
-                        .removeClass('active')
-                      .end()
-                      .find('[data-toggle="tab"]')
-                        .attr('aria-expanded', false)
-              
-                    element
-                      .addClass('active')
-                      .find('[data-toggle="tab"]')
-                        .attr('aria-expanded', true)
-              
-                    if (transition) {
-                      element[0].offsetWidth // reflow for transition
-                      element.addClass('in')
-                    } else {
-                      element.removeClass('fade')
-                    }
-              
-                    if (element.parent('.dropdown-menu').length) {
-                      element
-                        .closest('li.dropdown')
-                          .addClass('active')
-                        .end()
-                        .find('[data-toggle="tab"]')
-                          .attr('aria-expanded', true)
-                    }
-              
-                    callback && callback()
-                  }
-              
-                  $active.length && transition ?
-                    $active
-                      .one('bsTransitionEnd', next)
-                      .emulateTransitionEnd(Tab.TRANSITION_DURATION) :
-                    next()
-              
-                  $active.removeClass('in')
-                }
+            //   }(jQuery);
+            //   /* ========================================================================
+            //    * Bootstrap: tab.js v3.3.7
+            //    * http://getbootstrap.com/javascript/#tabs
+            //    * ========================================================================
+            //    * Copyright 2011-2016 Twitter, Inc.
+            //    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+            //    * ======================================================================== */
               
               
-                // TAB PLUGIN DEFINITION
-                // =====================
+            //   +function ($) {
+            //     'use strict';
               
-                function Plugin(option) {
-                  return this.each(function () {
-                    var $this = $(this)
-                    var data  = $this.data('bs.tab')
+            //     // TAB CLASS DEFINITION
+            //     // ====================
               
-                    if (!data) $this.data('bs.tab', (data = new Tab(this)))
-                    if (typeof option == 'string') data[option]()
-                  })
-                }
+            //     var Tab = function (element) {
+            //       // jscs:disable requireDollarBeforejQueryAssignment
+            //       this.element = $(element)
+            //       // jscs:enable requireDollarBeforejQueryAssignment
+            //     }
               
-                var old = $.fn.tab
+            //     Tab.VERSION = '3.3.7'
               
-                $.fn.tab             = Plugin
-                $.fn.tab.Constructor = Tab
+            //     Tab.TRANSITION_DURATION = 150
+              
+            //     Tab.prototype.show = function () {
+            //       var $this    = this.element
+            //       var $ul      = $this.closest('ul:not(.dropdown-menu)')
+            //       var selector = $this.data('target')
+              
+            //       if (!selector) {
+            //         selector = $this.attr('href')
+            //         selector = selector && selector.replace(/.*(?=#[^\s]*$)/, '') // strip for ie7
+            //       }
+              
+            //       if ($this.parent('li').hasClass('active')) return
+              
+            //       var $previous = $ul.find('.active:last a')
+            //       var hideEvent = $.Event('hide.bs.tab', {
+            //         relatedTarget: $this[0]
+            //       })
+            //       var showEvent = $.Event('show.bs.tab', {
+            //         relatedTarget: $previous[0]
+            //       })
+              
+            //       $previous.trigger(hideEvent)
+            //       $this.trigger(showEvent)
+              
+            //       if (showEvent.isDefaultPrevented() || hideEvent.isDefaultPrevented()) return
+              
+            //       var $target = $(selector)
+              
+            //       this.activate($this.closest('li'), $ul)
+            //       this.activate($target, $target.parent(), function () {
+            //         $previous.trigger({
+            //           type: 'hidden.bs.tab',
+            //           relatedTarget: $this[0]
+            //         })
+            //         $this.trigger({
+            //           type: 'shown.bs.tab',
+            //           relatedTarget: $previous[0]
+            //         })
+            //       })
+            //     }
+              
+            //     Tab.prototype.activate = function (element, container, callback) {
+            //       var $active    = container.find('> .active')
+            //       var transition = callback
+            //         && $.support.transition
+            //         && ($active.length && $active.hasClass('fade') || !!container.find('> .fade').length)
+              
+            //       function next() {
+            //         $active
+            //           .removeClass('active')
+            //           .find('> .dropdown-menu > .active')
+            //             .removeClass('active')
+            //           .end()
+            //           .find('[data-toggle="tab"]')
+            //             .attr('aria-expanded', false)
+              
+            //         element
+            //           .addClass('active')
+            //           .find('[data-toggle="tab"]')
+            //             .attr('aria-expanded', true)
+              
+            //         if (transition) {
+            //           element[0].offsetWidth // reflow for transition
+            //           element.addClass('in')
+            //         } else {
+            //           element.removeClass('fade')
+            //         }
+              
+            //         if (element.parent('.dropdown-menu').length) {
+            //           element
+            //             .closest('li.dropdown')
+            //               .addClass('active')
+            //             .end()
+            //             .find('[data-toggle="tab"]')
+            //               .attr('aria-expanded', true)
+            //         }
+              
+            //         callback && callback()
+            //       }
+              
+            //       $active.length && transition ?
+            //         $active
+            //           .one('bsTransitionEnd', next)
+            //           .emulateTransitionEnd(Tab.TRANSITION_DURATION) :
+            //         next()
+              
+            //       $active.removeClass('in')
+            //     }
               
               
-                // TAB NO CONFLICT
-                // ===============
+            //     // TAB PLUGIN DEFINITION
+            //     // =====================
               
-                $.fn.tab.noConflict = function () {
-                  $.fn.tab = old
-                  return this
-                }
+            //     function Plugin(option) {
+            //       return this.each(function () {
+            //         var $this = $(this)
+            //         var data  = $this.data('bs.tab')
+              
+            //         if (!data) $this.data('bs.tab', (data = new Tab(this)))
+            //         if (typeof option == 'string') data[option]()
+            //       })
+            //     }
+              
+            //     var old = $.fn.tab
+              
+            //     $.fn.tab             = Plugin
+            //     $.fn.tab.Constructor = Tab
               
               
-                // TAB DATA-API
-                // ============
+            //     // TAB NO CONFLICT
+            //     // ===============
               
-                var clickHandler = function (e) {
-                  e.preventDefault()
-                  Plugin.call($(this), 'show')
-                }
+            //     $.fn.tab.noConflict = function () {
+            //       $.fn.tab = old
+            //       return this
+            //     }
               
-                $(document)
-                  .on('click.bs.tab.data-api', '[data-toggle="tab"]', clickHandler)
-                  .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
               
-              }(jQuery);
+            //     // TAB DATA-API
+            //     // ============
+              
+            //     var clickHandler = function (e) {
+            //       e.preventDefault()
+            //       Plugin.call($(this), 'show')
+            //     }
+              
+            //     $(document)
+            //       .on('click.bs.tab.data-api', '[data-toggle="tab"]', clickHandler)
+            //       .on('click.bs.tab.data-api', '[data-toggle="pill"]', clickHandler)
+              
+            //   }(jQuery);
 
               $( '#other').click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
                 //  скрываем, или отображаем все элементы <div>
@@ -1387,7 +1056,7 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
     $("#box-depth_input").prop("disabled",false);
     $x=0;
     $depthmin =250 + $x + $gap;        
-    $("span.gap").text($depthmin)
+    $("span.gap").text($depthmin);
     if (parseInt($("#box-depth_input").val())<$depthmin) 
          {  $("#box-depth_input").val($depthmin); }
     $Radio=1;
@@ -1404,7 +1073,7 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
         $x=parseInt($("#input_x").val()); 
         $depthmin =250 + $x + $gap;
         $old_depth=$depthmin;
-        $("span.gap2").text($depthmin)
+        $("span.gap2").text($depthmin);
         // alert($depthmin);
         
          if (parseInt($("#box-depth_x_input").val())<$depthmin) 

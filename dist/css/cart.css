@@ -15,11 +15,11 @@ th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div
 [id^='add_vpi_count']{
     /* height: 33px; */
     padding: 0;}
-[id^='vpi_id']{
+/* [id^='vpi_id']{
     width: 70px !important;
      margin-left: -1px;
-      /* height:33px; */
-    }
+     
+    } */
     .input-group-btn:first-child > .btn {
         margin-right: -2px;
     }
@@ -33,12 +33,10 @@ th.quantity > div > div > .input-group-btn:first-child > .btn, th.quantity > div
         {border-radius: 2px;
              /* padding:5px; */
              }
-        [id^='add_vpi_count']{height: 26px;padding: 0;}
-        [id^='vpi_id']{
-            /* width: 70px !important;
-            margin-left: -1px; */
+        /* [id^='add_vpi_count']{height: 26px;padding: 0;} */
+        /* [id^='vpi_id']{           
             height:26px;
-        }
+        } */
         .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
             /* padding: 0px; */
             padding-bottom: 8px;
