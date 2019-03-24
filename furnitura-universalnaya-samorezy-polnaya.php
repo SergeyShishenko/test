@@ -43,7 +43,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 border-radius: 4px;
                                                 padding: 15px;
                                                 ">
-                                 <h4 >Винты самонарезающие для дерева по ТУ 16 40-014-55798700-2006</h4>                                  
+                                 <h4 >Винты самонарезающие для дерева</h4>                                  
                                
                                     <ul class="stat" style="margin: 0px;">
                                         <li><b>Потайная головка</b></li>
@@ -75,12 +75,12 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tbody id="calcresult">
                                                             <!-- 3.0 -->
                                                         <tr> 
-                                                            <td rowspan="9">3.0</td>
+                                                            <td rowspan="7">3.0</td>
                                                             <!-- <td >3.0</td> -->
-                                                            <td class="animated" data-objfurnid="16">10</td> 
-                                                            <td >6</td>
+                                                            <td class="animated" data-objfurnid="16">12</td> 
+                                                            <td >8</td>
                                                             <!-- <td >PZ1</td> -->
-                                                            <td >Саморез <span class="boldstyle">3,0x10</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td >Саморез <span class="boldstyle">3,0x12</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
                                                             <td class="quantity"> 
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
@@ -90,22 +90,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                     </div>
                                                                 </div> 
                                                             </td>                                                            
-                                                        </tr>
-                                                        <tr> 
-                                                            <td class="animated" data-objfurnid="17">13</td> 
-                                                            <td >9</td>
-                                                            <!-- <td >PZ1</td> -->
-                                                            <td >Саморез <span class="boldstyle">3,0x13</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
-                                                            <td class="quantity"> 
-                                                                <div class="input-group spinner"> 	
-                                                                    <div class="input-group-btn-vertical">                                                                        
-                                                                        <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
-                                                                        <button class="btn btn-default" type="button">+</button>
-                                                                    </div>
-                                                                </div> 
-                                                            </td>                                                            
-                                                        </tr>
+                                                        </tr>                                                 
                                                         <tr> 
                                                             <td class="animated" data-objfurnid="17">16</td> 
                                                             <td >12</td>
@@ -181,6 +166,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 </div> 
                                                             </td>                                                            
                                                         </tr>
+                                         
                                                         <tr> 
                                                             <td class="animated" data-objfurnid="17">40</td> 
                                                             <td >36</td>
@@ -196,25 +182,11 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 </div> 
                                                             </td>                                                            
                                                         </tr>
-                                                        <tr> 
-                                                            <td class="animated" data-objfurnid="17">45</td> 
-                                                            <td >41</td>
-                                                            <!-- <td >PZ1</td> -->
-                                                            <td >Саморез <span class="boldstyle">3,0x45</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
-                                                            <td class="quantity"> 
-                                                                <div class="input-group spinner"> 	
-                                                                    <div class="input-group-btn-vertical">                                                                        
-                                                                        <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
-                                                                        <button class="btn btn-default" type="button">+</button>
-                                                                    </div>
-                                                                </div> 
-                                                            </td>                                                            
-                                                        </tr>
+                                         
                                                            <!-- 3.5 -->
                                                           
                                                         <tr> 
-                                                            <td rowspan="9">3.5</td>
+                                                            <td rowspan="7">3.5</td>
                                                             <td class="animated" data-objfurnid="17">13</td> 
                                                             <td >9</td>
                                                             <!-- <td >PZ2</td> -->
@@ -319,47 +291,16 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 </div> 
                                                             </td>                                                            
                                                         </tr>
-                                                        <tr> 
-                                                            <td class="animated" data-objfurnid="17">45</td> 
-                                                            <td >41</td>
-                                                            <!-- <td >PZ2</td> -->
-                                                            <td >Саморез <span class="boldstyle">3,5x45</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
-                                                            <td class="quantity"> 
-                                                                <div class="input-group spinner"> 	
-                                                                    <div class="input-group-btn-vertical">                                                                        
-                                                                        <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
-                                                                        <button class="btn btn-default" type="button">+</button>
-                                                                    </div>
-                                                                </div> 
-                                                            </td>                                                            
-                                                        </tr> 
-                                                        <tr> 
-                                                            
-                                                            <!-- <td >3.0</td> -->
-                                                            <td class="animated" data-objfurnid="16">50</td> 
-                                                            <td >46</td>
-                                                            <!-- <td >PZ2</td> -->
-                                                            <td >Саморез <span class="boldstyle">3,5x50</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
-                                                            <td class="quantity"> 
-                                                                <div class="input-group spinner"> 	
-                                                                    <div class="input-group-btn-vertical">                                                                        
-                                                                        <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" step="10" >
-                                                                        <button class="btn btn-default" type="button">+</button>
-                                                                    </div>
-                                                                </div> 
-                                                            </td>                                                            
-                                                        </tr>
+                                                       
 
                                                           <!-- 4.0 -->
                                                           
                                                           <tr> 
-                                                            <td rowspan="11">4.0</td>
-                                                            <td class="animated" data-objfurnid="17">13</td> 
-                                                            <td >8</td>
+                                                            <td rowspan="9">4.0</td>
+                                                            <td class="animated" data-objfurnid="17">12</td> 
+                                                            <td >7</td>
                                                             <!-- <td >PZ2</td> -->
-                                                            <td >Саморез <span class="boldstyle">4,0x13</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td >Саморез <span class="boldstyle">4,0x12</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
                                                             <td class="quantity"> 
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
@@ -375,6 +316,21 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td >11</td>
                                                             <!-- <td >PZ2</td> -->
                                                             <td >Саморез <span class="boldstyle">4,0x16</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">17</td> 
+                                                            <td >12</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">4,0x17</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
                                                             <td class="quantity"> 
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
@@ -460,22 +416,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 </div> 
                                                             </td>                                                            
                                                         </tr>
-                                                        <tr> 
-                                                            <td class="animated" data-objfurnid="17">45</td> 
-                                                            <td >40</td>
-                                                            <!-- <td >PZ2</td> -->
-                                                            <td >Саморез <span class="boldstyle">4,0x45</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
-                                                            <td class="quantity"> 
-                                                                <div class="input-group spinner"> 	
-                                                                    <div class="input-group-btn-vertical">                                                                        
-                                                                        <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
-                                                                        <button class="btn btn-default" type="button">+</button>
-                                                                    </div>
-                                                                </div> 
-                                                            </td>                                                            
-                                                        </tr> 
-                                                        <tr> 
+                                                        <tr>                                                     
                                                             
                                                             <!-- <td >3.0</td> -->
                                                             <td class="animated" data-objfurnid="16">50</td> 
@@ -492,45 +433,12 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 </div> 
                                                             </td>                                                            
                                                         </tr>
-                                                        <tr> 
-                                                            
-                                                            <!-- <td >3.0</td> -->
-                                                            <td class="animated" data-objfurnid="16">60</td> 
-                                                            <td >55</td>
-                                                            <!-- <td >PZ2</td> -->
-                                                            <td >Саморез <span class="boldstyle">4,0x60</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
-                                                            <td class="quantity"> 
-                                                                <div class="input-group spinner"> 	
-                                                                    <div class="input-group-btn-vertical">                                                                        
-                                                                        <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" step="10" >
-                                                                        <button class="btn btn-default" type="button">+</button>
-                                                                    </div>
-                                                                </div> 
-                                                            </td>                                                            
-                                                        </tr>
-                                                        <tr> 
-                                                            
-                                                            <!-- <td >3.0</td> -->
-                                                            <td class="animated" data-objfurnid="16">70</td> 
-                                                            <td >65</td>
-                                                            <!-- <td >PZ2</td> -->
-                                                            <td >Саморез <span class="boldstyle">4,0x70</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
-                                                            <td class="quantity"> 
-                                                                <div class="input-group spinner"> 	
-                                                                    <div class="input-group-btn-vertical">                                                                        
-                                                                        <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" step="10" >
-                                                                        <button class="btn btn-default" type="button">+</button>
-                                                                    </div>
-                                                                </div> 
-                                                            </td>                                                            
-                                                        </tr>
+                                                    
 
                                                          <!-- 4.5 -->
                                                     
                                                         <tr> 
-                                                            <td rowspan="6">4.5</td>
+                                                            <td rowspan="9">4.5</td>
                                                             <td class="animated" data-objfurnid="17">16</td> 
                                                             <td >11</td>
                                                             <!-- <td >PZ2</td> -->
@@ -610,6 +518,254 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <td >35</td>
                                                             <!-- <td >PZ2</td> -->
                                                             <td >Саморез <span class="boldstyle">4,5x40</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">45</td> 
+                                                            <td >40</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">4,5x45</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">50</td> 
+                                                            <td >45</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">4,5x50</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">60</td> 
+                                                            <td >55</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">4,5x60</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                         <!-- 5.0 -->
+                                                    
+                                                        <tr> 
+                                                            <td rowspan="9">5.0</td>
+                                                            <td class="animated" data-objfurnid="17">20</td> 
+                                                            <td >14</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">4,5x16</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">25</td> 
+                                                            <td >19</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">5,0x20</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                     
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">30</td> 
+                                                            <td >25</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">5,0x30</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">35</td> 
+                                                            <td >30</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">5,0x35</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">40</td> 
+                                                            <td >35</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">5,0x40</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">45</td> 
+                                                            <td >39</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">5,0x45</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">50</td> 
+                                                            <td >44</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">5,0x50</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">60</td> 
+                                                            <td >54</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">5,0x60</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">70</td> 
+                                                            <td >64</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">5,0x70</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                         <!-- 6.0 -->
+                                                    
+                                                    
+                                                             <td rowspan="4">6.0</td>
+                                                            <td class="animated" data-objfurnid="17">30</td> 
+                                                            <td >24</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">6,0x30</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">35</td> 
+                                                            <td >29</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">6,0x35</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">40</td> 
+                                                            <td >34</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">6,0x40</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="quantity"> 
+                                                                <div class="input-group spinner"> 	
+                                                                    <div class="input-group-btn-vertical">                                                                        
+                                                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <button class="btn btn-default" type="button">+</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </td>                                                            
+                                                        </tr>                                                 
+                                                    
+                                                        <tr> 
+                                                            <td class="animated" data-objfurnid="17">60</td> 
+                                                            <td >54</td>
+                                                            <!-- <td >PZ2</td> -->
+                                                            <td >Саморез <span class="boldstyle">6,0x60</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
                                                             <td class="quantity"> 
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
