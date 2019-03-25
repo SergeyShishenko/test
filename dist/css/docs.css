@@ -25,6 +25,8 @@ body {
   
   text-align: center;
  }
+
+ .table #calcresult{border-bottom:1px solid #dddddd;}
 .input-group-btn-vertical{
   display: inline-table;
   display: inline-flex;

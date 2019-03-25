@@ -15,11 +15,12 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
     $Furn=$_POST["content_Furn"];
     $Art=$_POST["content_Art"];
     $NameFile=$_POST["content_NameFile"];
+    $GruppId=$_POST["content_grupp_id"];
     $Bild=$_POST["content_Bild"];
     $Colour=$_POST["content_Colour"];
     $Unit=$_POST["content_Unit"];
  // добавляем новую запись во все таблицы объекта
-                    $sql = " INSERT INTO `obj` (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`, `img_orientation_obj`, `img_alt_obj`, `template_obj`) VALUES (NULL,'$Furn', '2', '', NULL,'$NameFile', NULL, '', NULL, '$Furn', NULL, NULL, 'album', NULL, NULL)";
+                    $sql = " INSERT INTO `obj` (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`, `img_orientation_obj`, `img_alt_obj`, `template_obj`) VALUES (NULL,'$Furn', '$GruppId', '', NULL,'$NameFile', NULL, '', NULL, '$Furn', NULL, NULL, 'album', NULL, NULL)";
                     if(mysqli_query($dbconn,$sql))
                     {                    
                         $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 

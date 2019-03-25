@@ -67,12 +67,13 @@
         <hr><hr>
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
            
-            <input type="text" value="Петля вкладная для профильных дверей 95° CLIP top BLUMOTION 71B9750, чашка петли: на шурупы" name="add_Furn" class="text add" size="100" placeholder="Наименование фурнитуры" id="Furn" >
-            <input type="text" value="5000502-01-100" name="add_Art" class="text add" size="100" placeholder="Артикул" id="Art" >
-            <input type="text" value="test.png" name="add_NameFile" class="text add" size="100" placeholder="Имя файла" id="NameFile" >
-            <input type="text" value="BLUM" name="add_Bild" class="text add" size="100" placeholder="Производитель" id="Bild" >
-            <input type="text" value="Никелиров." name="add_Colour" class="text add" size="100" placeholder="Цвет" id="Colour" >
-            <input type="text" value="комплектов" name="add_Unit" class="text add" size="100" placeholder="Ед.измерения" id="Unit" >
+            <input type="text" value="Саморез 3,0x12 PZ для дерева, полная резьба, потай, оцинкованный" name="add_Furn" class="text add" size="100" placeholder="Наименование фурнитуры" id="Furn" >
+            <input type="text" value="Б/А" name="add_Art" class="text add" size="100" placeholder="Артикул" id="Art" >
+            <input type="text" value="tbssamorez-polnaya-rezba.png" name="add_NameFile" class="text add" size="100" placeholder="Имя файла" id="NameFile" >
+            <input type="text" value="3" name="add_grupp_id" class="text add" size="100" placeholder="grupp_id" id="grupp_id" >
+            <input type="text" value="Стройдвор" name="add_Bild" class="text add" size="100" placeholder="Производитель" id="Bild" >
+            <input type="text" value="Оцинкованный" name="add_Colour" class="text add" size="100" placeholder="Цвет" id="Colour" >
+            <input type="text" value="шт." name="add_Unit" class="text add" size="100" placeholder="Ед.измерения" id="Unit" >
             <button type="submit" class="button animated tada" id="AddFurnSubmit" >Добавить новую фурнитуру<span class="glyphicon glyphicon-plus-sign"></span></button>
         </div>
         <!-- <div id='outputting'></div> -->
@@ -125,6 +126,7 @@
                     if($("#Furn").val()===""){ alert("Введите Наименование фурнитуры!"); return false;}
                     if($("#Art").val()===""){ alert("Введите Артикул!"); return false;}
                     if($("#NameFile").val()===""){ alert("Введите Имя файла!"); return false;}
+                    if($("#grupp_id").val()===""){ alert("Введите номер группы!"); return false;}
                     if($("#Bild").val()===""){ alert("Введите Производитель!"); return false;}
                     if($("#Colour").val()===""){ alert("Введите Цвет!"); return false;}
                     if($("#Unit").val()===""){ alert("Введите Ед.измерения!"); return false;}
@@ -134,6 +136,7 @@
                     var myData = "content_Furn="+ $("#Furn").val() +"&"+
                                  "content_Art="+ $("#Art").val() +"&"+
                                  "content_NameFile="+ $("#NameFile").val() +"&"+
+                                 "content_grupp_id="+ $("#grupp_id").val() +"&"+
                                  "content_Bild="+ $("#Bild").val() +"&"+
                                  "content_Colour="+ $("#Colour").val() +"&"+
                                  "content_Unit="+ $("#Unit").val();
