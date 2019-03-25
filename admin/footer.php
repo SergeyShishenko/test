@@ -72,7 +72,7 @@
             <input type="text" value="tbssamorez-polnaya-rezba.png" name="add_NameFile" class="text add" size="100" placeholder="Имя файла" id="NameFile" >
             <input type="text" value="3" name="add_grupp_id" class="text add" size="100" placeholder="grupp_id" id="grupp_id" >
             <input type="text" value="Стройдвор" name="add_Bild" class="text add" size="100" placeholder="Производитель" id="Bild" >
-            <input type="text" value="Оцинкованный" name="add_Colour" class="text add" size="100" placeholder="Цвет" id="Colour" >
+            <input type="text" value="желтый/белый цинк" name="add_Colour" class="text add" size="100" placeholder="Цвет" id="Colour" >
             <input type="text" value="шт." name="add_Unit" class="text add" size="100" placeholder="Ед.измерения" id="Unit" >
             <button type="submit" class="button animated tada" id="AddFurnSubmit" >Добавить новую фурнитуру<span class="glyphicon glyphicon-plus-sign"></span></button>
         </div>
