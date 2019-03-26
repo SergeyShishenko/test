@@ -186,7 +186,7 @@ jQuery(function($){
 });
 // новый input счётчик
 $(function () {
-    $(".spinner").each(function(c, b) {
+    $("body .spinner").each(function(c, b) {
         $(b).on("click", ".btn-default", 
             function() {
                 var a = $(".form-c", b)[0];
@@ -195,8 +195,8 @@ $(function () {
                 // console.log("uuu "+a.value);
                 aa=parseInt(a.value);
                 var s = 0;
-                // console.log(parseInt(s));
-                if ($(a).data('step')==""){s=1;}else{s = parseInt($(a).data('step'));}
+                // console.log("uuu "+$(a).data('step'));
+                if ($(a).data('step')=="" || $(a).data('step')==undefined){s=1;}else{s = parseInt($(a).data('step'));}
                 // alert(a.step);
                 // console.log($(".btn-default", b).index(this));
                 if($(".btn-default", b).index(this)>0)
@@ -222,37 +222,21 @@ $(function () {
 
 
 
-// $('body').on('click','.spinner').each(function(c, b) {
-//     $(b).on("click", ".btn-default", 
-//         function() {
-//             var a = $(".form-c", b)[0];
-//             $(a).data('change','1');
-//             var parentTR =$(a).parent().parent().parent().parent();
-            
-//             var s = 0;
-//             // console.log(parseInt(s));
-//             if ($(a).data('step')==""){s=1;}else{s = parseInt($(a).data('step'));}
-//             // alert(a.step);
-//             // console.log($(".btn-default", b).index(this));
-//             if($(".btn-default", b).index(this)>0)
-//             {a.value=parseInt(a.value) + s;
-//                 console.log(a.value);
-//                 // console.log($(parentTR).html());
-            
-//                 $(parentTR).addClass('backghover');
-//                 $(a).addClass('backghover');
-//                 // console.log('Элемент изменен!.');
-//             }
-//             else{a.value=parseInt(a.value) - s;
-//                 console.log(a.value);
-//             }
-//             //  $(".btn-default", b).index(this) ? a.value++ : a.value-- ;
-//             // 0 > a.value && (a.value = 0)
-//             if (0 >= a.value) {a.value = 0; $(parentTR).removeClass('backghover'); $(a).removeClass('backghover');}
-//         }
-//     );
-// }); 
-  
+ $('body').on('click','.vpicartPlas',function() {
+
+    var a=$(this).parent().find('input');
+ 
+    $(a).val(parseInt($(a).val())+1);
+
+    //   console.log("!!!"+$(this).parent().find('input').val());
+    })
+ $('body').on('click','.vpicartMinus',function() {
+    
+    var a=$(this).parent().find('input');
+    $(a).val(parseInt($(a).val())-1);
+    if (1 >= $(a).val()) {$(a).val(1);}
+    })
+
 $('body').on('change',"[id^=\'vpi_id-\']",function(){
     console.log('Элемент изменен.');
    $(this).data('change','1');
