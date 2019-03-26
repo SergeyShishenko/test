@@ -313,7 +313,8 @@ input.button {
 {
     #header #cart .heading { margin-left: 150px; }
 }
-
+.table-striped > tbody > tr:hover{color:  mediumblue;}
+.backghover{color: mediumblue;}
 
 /* @media (min-width: 200px) and (max-width: 319px) {
    

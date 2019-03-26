@@ -76,8 +76,8 @@ include 'inc-left-side-menu-furnitura.php';
 
                                                          <!-- 4.0 -->                                                    
                                                         <tr> 
-                                                            <td rowspan="7">4.0</td>
-                                                            <td class="animated" data-objfurnid="80">30</td> 
+                                                            <td  class="boldstyle" rowspan="7">4.0</td>
+                                                            <td class="animated boldstyle" data-objfurnid="80">30</td> 
                                                             <td >18</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,0x30</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -94,7 +94,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                       
                                                         <tr> 
                                                             
-                                                            <td class="animated" data-objfurnid="81">35</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="81">35</td> 
                                                             <td >24</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,0x35</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -110,7 +110,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </tr>
                                                         <tr> 
                                                           
-                                                            <td class="animated" data-objfurnid="82">40</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="82">40</td> 
                                                             <td >24</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,0x40</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -125,7 +125,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr>                                                            
-                                                            <td class="animated" data-objfurnid="83">45</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="83">45</td> 
                                                             <td >30</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,0x45</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -140,7 +140,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="84">50</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="84">50</td> 
                                                             <td >30</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,0x50</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -156,7 +156,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </tr>
                                                       
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="85">55</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="85">55</td> 
                                                             <td >36</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,0x55</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -171,7 +171,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="86">60</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="86">60</td> 
                                                             <td >36</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,0x60</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -189,8 +189,8 @@ include 'inc-left-side-menu-furnitura.php';
                                                  
                                                          <!-- 4.5 -->                                                    
                                                         <tr> 
-                                                            <td rowspan="7">4.5</td>
-                                                            <td class="animated" data-objfurnid="87">35</td> 
+                                                            <td  class="boldstyle" rowspan="7">4.5</td>
+                                                            <td class="animated boldstyle" data-objfurnid="87">35</td> 
                                                             <td >24</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,5x35</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -206,7 +206,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </tr>
                                                         <tr> 
                                                             
-                                                            <td class="animated" data-objfurnid="88">40</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="88">40</td> 
                                                             <td >24</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,5x40</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -222,7 +222,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </tr>
                                                         <tr> 
                                                             
-                                                            <td class="animated" data-objfurnid="89">45</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="89">45</td> 
                                                             <td >27</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,5x45</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -237,7 +237,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="90">50</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="90">50</td> 
                                                             <td >30</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,5x50</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -252,7 +252,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="91">60</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="91">60</td> 
                                                             <td >36</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,5x60</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -267,7 +267,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="92">70</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="92">70</td> 
                                                             <td >42</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,5x70</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -282,7 +282,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="93">80</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="93">80</td> 
                                                             <td >50</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">4,5x80</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -298,10 +298,10 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </tr>
 
                                                          <!-- 5.0 -->                                                          
-                                                         <tr> 
-                                                            <td rowspan="11">5.0</td>                                      
+                                                         <tr > 
+                                                            <td  class="boldstyle" rowspan="11">5.0</td>                                      
                                                       
-                                                            <td class="animated" data-objfurnid="94">40</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="94">40</td> 
                                                             <td >24</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">5,0x40</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -316,7 +316,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="95">45</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="95">45</td> 
                                                             <td >30</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">5,0x45</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -331,7 +331,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr> 
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="96">50</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="96">50</td> 
                                                             <td >30</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">5,0x50</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -346,7 +346,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="97">55</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="97">55</td> 
                                                             <td >36</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">5,0x55</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -361,7 +361,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr>  
-                                                            <td class="animated" data-objfurnid="98">60</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="98">60</td> 
                                                             <td >36</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">5,0x60</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -376,7 +376,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="99">70</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="99">70</td> 
                                                             <td >42</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">5,0x70</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -391,7 +391,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="100">80</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="100">80</td> 
                                                             <td >50</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">5,0x80</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -406,7 +406,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr>
-                                                         <td class="animated" data-objfurnid="101">90</td> 
+                                                         <td class="animated boldstyle" data-objfurnid="101">90</td> 
                                                             <td >60</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">5,0x90</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -421,7 +421,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="102">100</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="102">100</td> 
                                                             <td >60</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">5,0x100</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -436,7 +436,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>                                                     
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="103">110</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="103">110</td> 
                                                             <td >70</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">5,0x110</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -451,7 +451,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="104">120</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="104">120</td> 
                                                             <td >70</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">5,0x120</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -467,9 +467,9 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </tr>
                                                          <!-- 6.0 -->                                                          
                                                         <tr> 
-                                                            <td rowspan="15">6.0</td>                                      
+                                                            <td  class="boldstyle" rowspan="15">6.0</td>                                      
                                                       
-                                                            <td class="animated" data-objfurnid="105">40</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="105">40</td> 
                                                             <td >24</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x40</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -484,7 +484,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>                                                   
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="106">50</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="106">50</td> 
                                                             <td >30</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x50</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -499,7 +499,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>                                                      
                                                         <tr>  
-                                                            <td class="animated" data-objfurnid="107">60</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="107">60</td> 
                                                             <td >36</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x60</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -514,7 +514,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="108">70</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="108">70</td> 
                                                             <td >42</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x70</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -529,7 +529,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="109">80</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="109">80</td> 
                                                             <td >50</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x80</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -544,7 +544,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr>
-                                                         <td class="animated" data-objfurnid="110">90</td> 
+                                                         <td class="animated boldstyle" data-objfurnid="110">90</td> 
                                                             <td >60</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x90</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -559,7 +559,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="111">100</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="111">100</td> 
                                                             <td >60</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x100</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -574,7 +574,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>                                                     
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="112">110</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="112">110</td> 
                                                             <td >70</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x110</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -589,7 +589,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="113">120</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="113">120</td> 
                                                             <td >70</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x120</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -604,7 +604,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="114">140</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="114">140</td> 
                                                             <td >70</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x140</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -619,7 +619,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="115">160</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="115">160</td> 
                                                             <td >70</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x160</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -634,7 +634,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="116">180</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="116">180</td> 
                                                             <td >70</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x180</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -649,7 +649,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="117">200</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="117">200</td> 
                                                             <td >70</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x200</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -664,7 +664,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="118">220</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="118">220</td> 
                                                             <td >70</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x220</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
@@ -679,7 +679,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated" data-objfurnid="119">240</td> 
+                                                            <td class="animated boldstyle" data-objfurnid="119">240</td> 
                                                             <td >70</td>
                                                             
                                                             <td >Саморез <span class="boldstyle">6,0x240</span> PZ для дерева, неполная резьба, потай, оцинкованный</td>
