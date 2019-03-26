@@ -63,7 +63,7 @@
                                                                     <div class="input-group spinner"> 	
                                                                         <div class="input-group-btn-vertical">                                                                        
                                                                             <button class="btn btn-default" type="button">&ndash;</button>
-                                                                            <input id="vpi_id-'.$row_vpi['vpi_id'].'" data-fid="'.$row_vpi['vpi_id'].'" data-change="0" class="form-control  form-c" type="text" value="'.$row_vpi['count_obj'].'" min="1" max="999" >
+                                                                            <input id="vpi_id-'.$row_vpi['vpi_id'].'" data-fid="'.$row_vpi['vpi_id'].'" data-change="0" class="form-control  form-c" type="text" value="'.$row_vpi['count_obj'].'"  >
                                                                             <button class="btn btn-default" type="button">+</button>
                                                                         </div>
                                                                     </div> 

@@ -36,7 +36,7 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
                             //  "INSERT INTO  `obj_furnitur_prop`(`obj_id`,`name_furnitur_obj_prop`,`articul_furnitur_obj`,`def_obj_prop`,`made_furnitur_obj`,`color_obj_prop`,`unit_obj_prop`)  
                             //  VALUES ('$id','$Furn','$Art','$Colour','$Unit')");
                              "INSERT INTO  `obj_furnitur_prop`(`obj_furnitur_prop_id`, `name_furnitur_obj_prop`, `articul_furnitur_obj`, `made_furnitur_obj`, `url_furnitur_obj_prop`, `obj_id`, `url_video_obj_prop`, `color_obj_prop`, `def_obj_prop`, `unit_obj_prop`, `fname_img_furn`)  
-                             VALUES (NULL, '$Furn', '$Art', '$Bild', NULL, '$id', NULL, '$Colour', '$Furn', '$Unit', NULL)");
+                             VALUES (NULL, '$Furn', '$Art', '$Bild', NULL, '$id', NULL, '$Colour', '$Furn', '$Unit', '$NameFile')");
 
 
 
