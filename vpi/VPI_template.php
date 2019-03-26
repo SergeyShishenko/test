@@ -236,7 +236,11 @@ elseif (isset($_POST['addids'])) {
     // $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
     // $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
     // $s_id=$row_user['s_id'];
-    
+    // echo "<pre>";
+    // echo count($addids);
+    // echo print_r($addids);
+    // echo "</pre>";
+    // exit();
     for($i=0;$i<=count($addids)/2;$i=$i+2) 
     { 
         // $obj_furnitur = explode(",", $ids[$i]);
@@ -246,7 +250,7 @@ elseif (isset($_POST['addids'])) {
        
 
        
-        $sql = "INSERT INTO `user_vpi` (`vpi_id`, `s_id`, `obj_id`, `count_obj`) VALUES (NULL, '$s_id', '$furnitur_id', '$furnitur_count')";
+        $sql = "INSERT INTO `user_vpi` (`vpi_id`, `s_id`, `obj_id`, `count_obj`) VALUES (NULL, '$s_id', $furnitur_id, '$furnitur_count')";
         // echo    'vpi\VPI_template.php $sql- '.$sql; 
         // exit(); 
 
@@ -262,7 +266,8 @@ elseif (isset($_POST['addids'])) {
             exit();
         } 
     } //for
-    
+
+    // exit();
     $res   = mysqli_query($dbconn,"SELECT COUNT(s_id) AS count FROM `user_vpi`WHERE `s_id` = $s_id "); 
     $data = mysqli_fetch_assoc($res);  
 

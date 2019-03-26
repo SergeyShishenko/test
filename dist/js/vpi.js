@@ -190,9 +190,10 @@ $(function() {
         $(b).on("click", ".btn-default", function() {
             var a = $(".form-c", b)[0];
             $(a).data('change','1');
+            
             var s = 0;
             // console.log(parseInt(s));
-            if (a.step==""){s=1;}else{s = parseInt(a.step);}
+            if ($(a).data('step')==""){s=1;}else{s = parseInt($(a).data('step'));}
             // alert(a.step);
             // console.log($(".btn-default", b).index(this));
             if($(".btn-default", b).index(this)>0)

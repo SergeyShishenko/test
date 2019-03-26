@@ -85,7 +85,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -100,7 +100,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -115,7 +115,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -130,7 +130,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -145,7 +145,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -160,7 +160,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -176,7 +176,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -195,7 +195,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -210,7 +210,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -225,7 +225,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -240,7 +240,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -255,7 +255,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -270,7 +270,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -285,7 +285,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -305,7 +305,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -320,7 +320,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -335,7 +335,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -350,7 +350,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -365,7 +365,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -380,7 +380,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -395,7 +395,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -410,7 +410,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -427,7 +427,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10"  >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10"  >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -447,7 +447,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -462,7 +462,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -477,7 +477,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -492,7 +492,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -507,7 +507,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -522,7 +522,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -537,7 +537,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -552,7 +552,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -567,7 +567,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -585,7 +585,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -600,7 +600,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -616,7 +616,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -631,7 +631,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -646,7 +646,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -661,7 +661,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -676,7 +676,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -691,7 +691,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -706,7 +706,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -724,7 +724,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -739,7 +739,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -754,7 +754,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
@@ -770,7 +770,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" step="10" >
+                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
                                                                 </div> 
