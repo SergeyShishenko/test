@@ -225,7 +225,7 @@ $(function () {
  $('body').on('click','.vpicartPlas',function() {
 
     var a=$(this).parent().find('input');
- 
+    $(a).data('change','1');
     $(a).val(parseInt($(a).val())+1);
 
     //   console.log("!!!"+$(this).parent().find('input').val());
@@ -233,6 +233,7 @@ $(function () {
  $('body').on('click','.vpicartMinus',function() {
     
     var a=$(this).parent().find('input');
+    $(a).data('change','1');
     $(a).val(parseInt($(a).val())-1);
     if (1 >= $(a).val()) {$(a).val(1);}
     })
