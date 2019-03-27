@@ -6,6 +6,6 @@ $dropVersion=4;
 $scriptVersion = 30;
 $script2Version = 22;
 $floatingVersion = 21;
-$vpijsVersion = 15;
+$vpijsVersion = 16;
 $cartVersion =13;
 ?>

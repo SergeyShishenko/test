@@ -243,3 +243,10 @@ $('body').on('change',"[id^=\'vpi_id-\']",function(){
    // console.log($(this).data('change'));
    $('#checkoutd').hide();// скрыть кнопку скачать XLS
 });
+
+$("body").on("keypress",".form-c",function(e) {       
+        if (e.keyCode < 48  || e.keyCode > 57 ) {       
+            return false;        
+        }        
+  
+    });

@@ -263,8 +263,10 @@ include 'inc-goup-menu-furnitura-samorezy.php';//$petlyTL=[]
                                         <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-universalnaya-samorezy-polnaya.php#samorezy-polnaya">Саморезы полная резьба</a>
                                             </li>
-                                            <li><a class="list-group-item sub" href="furnitura-universalnaya-dyubeli.php#dyubeli">Дюбели</a>
+                                            <li><a class="list-group-item sub" href="furnitura-universalnaya-samorezy-nepolnaya.php#samorezy-nepolnaya">Саморезы неполная резьба</a>
                                             </li>
+                                            <!--<li><a class="list-group-item sub" href="furnitura-universalnaya-dyubeli.php#dyubeli">Дюбели</a>
+                                            </li>-->
                                                                                                                            
                                         </ul>
                                     </li> 
