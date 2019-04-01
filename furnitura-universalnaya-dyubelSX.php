@@ -23,7 +23,7 @@ include 'inc-left-side-menu-furnitura.php';
                     <article    id="krepezh-i-metizy">
                       <section >
                         <div class="page-header"  >
-                            <h1 itemprop="name" id="samorezy-polnaya">КРЕПЕЖ И МЕТИЗЫ</h1>
+                            <h1 itemprop="name" id="dyubelSX">КРЕПЕЖ И МЕТИЗЫ</h1>
                             <h2 >Дюбель SX</h2>                        
                         </div>
                            
@@ -796,7 +796,7 @@ include 'inc-left-side-menu-furnitura.php';
                 </div> <!-- main  -->
                 <?php
                 //  include 'inc-goup-menu.php';//$styazhka=[]
-                SideMenu($samorezy,1);
+                SideMenu($universalnaya,3);
                 ?> 
     
 <?php include 'inc-footer2.php'; ?>

@@ -796,7 +796,7 @@ include 'inc-left-side-menu-furnitura.php';
                 </div> <!-- main  -->
                 <?php
                 //  include 'inc-goup-menu.php';//$styazhka=[]
-                SideMenu($samorezy,1);
+                SideMenu($universalnaya,1);
                 ?> 
     
 <?php include 'inc-footer2.php'; ?>

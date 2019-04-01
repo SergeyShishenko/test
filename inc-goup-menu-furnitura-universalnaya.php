@@ -1,24 +1,29 @@
 <?php 
-// inc-goup-menu-furnitura-samorezy.php
+// inc-goup-menu-furnitura-universalnaya.php
 
 $path_img="./dist/filesdb/images/thumbs/";
 /////////////////////////////////////
-    $samorezy=[];
-    $samorezy[0]=['path'=>"furnitura-universalnaya-samorezy-polnaya.php",
+    $universalnaya=[];
+    $universalnaya[0]=['path'=>"furnitura-universalnaya-samorezy-polnaya.php",
                     'img'=> $path_img."tbsALLpetly.png",
                     'keywords'=>"",
                     'def'=>"КРЕПЕЖ И МЕТИЗЫ"];    
 
-    $samorezy[1]=['path'=>"furnitura-universalnaya-samorezy-polnaya.php",
+    $universalnaya[1]=['path'=>"furnitura-universalnaya-samorezy-polnaya.php",
                     'id'=> "#samorezy-polnaya",
                     'img'=> $path_img."tbssamorez-polnaya-rezba.png",
                     'keywords'=>"",
                     'def'=>"Саморезы полная резьба"];
-    $samorezy[2]=['path'=>"furnitura-universalnaya-samorezy-nepolnaya.php",
+    $universalnaya[2]=['path'=>"furnitura-universalnaya-samorezy-nepolnaya.php",
                     'id'=> "#samorezy-nepolnaya",
                     'img'=> $path_img."tbssamorez-polnaya-rezba.png",
                     'keywords'=>"",
                     'def'=>"Саморезы неполная резьба"];
+    $universalnaya[3]=['path'=>"furnitura-universalnaya-dyubelSX.php",
+                    'id'=> "#dyubelSX",
+                    'img'=> $path_img."tbsSX.png",
+                    'keywords'=>"",
+                    'def'=>"Дюбель SX"];
 
     // $samorezyPolnaya[2]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php",
     //                 'id'=> "#petlya-nakladnaya",
