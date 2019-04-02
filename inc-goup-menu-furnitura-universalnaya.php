@@ -23,7 +23,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'id'=> "#dyubelSX",
                     'img'=> $path_img."tbsSX.png",
                     'keywords'=>"",
-                    'def'=>"Дюбель SX"];
+                    'def'=>"Дюбель SX нейлон"];
 
     // $samorezyPolnaya[2]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php",
     //                 'id'=> "#petlya-nakladnaya",
