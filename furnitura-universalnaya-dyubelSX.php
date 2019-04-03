@@ -212,26 +212,52 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <div class="tab-pane fade " id="opisanie">
                                                     <p>
                                                         <ul class="stat" style="margin-top: 0px;">
-                                                            <li><b>Петля для толстых и профильных дверей</b></li>
-                                                            <li><b>CLIP top BLUMOTION</b> со встроенным <b>BLUMOTION</b> (с возможностью деактивации)</li> 
-                                                            <li><b>CLIP top </b>с пружиной или без пружины</li>
-                                                            <li>Металлическая петля, никелированная</li>
+                                                            <li><b>Нейлоновый распорный дюбель.</b></li>
+                                                            <li>Предназначен для использования в качестве крепления вместе с <b>шурупами</b> по <b>дереву</b> и<b> ДСП</b></li> 
+                                                            <li><b>Удлиненный дюбель SX</b> предназначен для обеспечения максимальной несущей способности в <b>пустотелых строительных материалах, газобетоне и при толстых слоях штукатурки.</b></li>
+                                                         <!--   <li>Металлическая петля, никелированная</li>
                                                             <li>Угол открывания 95°</li>
                                                             <li>Регулировка фасада в трех плоскостях</li>
                                                             <li>Удобная регулировка по глубине с помощью механизма шнек</li>
                                                             <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
-                                                            <!-- <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                             <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
                                                         </ul>
                                                     </p>
                                                 </div>
                                                 <div class="tab-pane fade in active" id="preimushchestva">
                                                     <!-- часть1 -->
-                                                        <h4 >Проектирование</h3>                         
+                                                        <!-- <h4 >Проектирование</h3>                         
                                                         <h5>Размеры петли и расчет зазоров при заводской настройке (подъем ответной планки = 0 мм)</h5>                         
-                                                        <h5 >Вхождение двери при полном открывании</h5>                         
-
+                                                        <h5 >Вхождение двери при полном открывании</h5> -->
+                                                        <ul class="stat" style="margin-top: 0px;">
+                                                          <!--  <li><b>Нейлоновый распорный дюбель.</b></li>
+                                                            <li>Предназначен для использования в качестве крепления вместе с <b>шурупами</b> по <b>дереву</b> и<b> ДСП</b></li> 
+                                                            <li><b>Удлиненный дюбель SX</b> предназначен для обеспечения максимальной несущей способности в <b>пустотелых строительных материалах, газобетоне и при толстых слоях штукатурки.</b></li>
+                                                            <li>Металлическая петля, никелированная</li>
+                                                            <li>Угол открывания 95°</li>
+                                                            <li>Регулировка фасада в трех плоскостях</li>
+                                                            <li>Удобная регулировка по глубине с помощью механизма шнек</li>
+                                                            <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
+                                                             <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                             <li>4 - сторонний распор нейлонового дюбеля обеспечивает надежное сцепление с основой.
+                                                            </li>
+                                                            <li> Специальный стопорный элемент предохраняет дюбель от проворачивания
+                                                            </li>
+                                                            <li> Давление распора, создаваемое в отверстии, а не на шейке дюбеля, предохраняет штукатурку и плитку от повреждения.
+                                                            </li>
+                                                            <li> Легкий и быстрый сквозной монтаж сокращает время, требуемое для установки.
+                                                            </li>
+                                                            <li> Встроенный стопорный элемент от прокручивания – с предварительно установленным шурупом – позволяет осуществлять сквозной монтаж.
+                                                            </li>
+                                                            <li> Кромка дюбеля не позволяет ему заглубляться в отверстие на большую глубину, чем предусмотрено.
+                                                            </li>
+                                                            <li> Температурный диапазон применения от –40°+80°С.
+                                                            </li>
+                                                            <li> Геометрия дюбеля позволяет использовать его в комбинации с шурупами по дереву и шурупами для ДСП диаметром от 2 до 12 мм.
+                                                            </li>
+                                                        </ul>
                                                        
-
+<!-- 
                                                         <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
                                                             <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
                                                                         border: 1px solid rgb(221, 221, 221);
@@ -261,7 +287,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 </div>
 
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                     <!-- /часть1 -->
 
                                                     <!-- часть2 -->
@@ -273,10 +299,10 @@ include 'inc-left-side-menu-furnitura.php';
 
                                                                     <div class="item active">
                                                                         <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Применение" 
-                                                                        data-image="./dist/filesdb/images/petly_all_sch1.png" data-target="#image-gallery">
+                                                                        data-image="./dist/filesdb/images/SX_sch1.png" data-target="#image-gallery">
                                                                             <img  
-                                                                                src="./dist/filesdb/images/petly_all_sch1.png"
-                                                                                data-src="./dist/filesdb/images/petly_all_sch1.png"
+                                                                                src="./dist/filesdb/images/SX_sch1.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch1.png"
                                                                                 class="center-block   img-rounded    bar "
                                                                                 data-toggle="modal"                                                                                                                    
                                                                                 alt="Применение"
@@ -286,10 +312,10 @@ include 'inc-left-side-menu-furnitura.php';
                                                                     </div>
                                                                     <div class="item">
                                                                         <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Минимальный зазор" 
-                                                                        data-image="./dist/filesdb/images/petly_all_sch2.png" data-target="#image-gallery">
+                                                                        data-image="./dist/filesdb/images/SX_sch2.png" data-target="#image-gallery">
                                                                             <img  
-                                                                                src="./dist/filesdb/images/petly_all_sch2.png"
-                                                                                data-src="./dist/filesdb/images/petly_all_sch2.png"
+                                                                                src="./dist/filesdb/images/SX_sch2.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch2.png"
                                                                                 class="center-block   img-rounded    bar "
                                                                                 data-toggle="modal"                                                                                                                    
                                                                                 alt="Минимальный зазор"
@@ -299,10 +325,10 @@ include 'inc-left-side-menu-furnitura.php';
                                                                     </div>
                                                                     <div class="item">
                                                                         <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Регулировка" 
-                                                                        data-image="./dist/filesdb/images/petly_all_sch3.png" data-target="#image-gallery">
+                                                                        data-image="./dist/filesdb/images/SX_sch3.png" data-target="#image-gallery">
                                                                             <img  
-                                                                                src="./dist/filesdb/images/petly_all_sch3.png"
-                                                                                data-src="./dist/filesdb/images/petly_all_sch3.png"
+                                                                                src="./dist/filesdb/images/SX_sch3.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch3.png"
                                                                                 class="center-block   img-rounded    bar "
                                                                                 data-toggle="modal"                                                                                                                    
                                                                                 alt="Регулировка"
@@ -310,12 +336,12 @@ include 'inc-left-side-menu-furnitura.php';
                                                                             >
                                                                         </a>
                                                                     </div>
-                                                                    <div class="item">
+                                                                    <!-- <div class="item">
                                                                         <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Монтаж на саморезы" 
-                                                                        data-image="./dist/filesdb/images/petly_all_sch4.png" data-target="#image-gallery">
+                                                                        data-image="./dist/filesdb/images/SX_sch4.png" data-target="#image-gallery">
                                                                             <img  
-                                                                                src="./dist/filesdb/images/petly_all_sch4.png"
-                                                                                data-src="./dist/filesdb/images/petly_all_sch4.png"
+                                                                                src="./dist/filesdb/images/SX_sch4.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch4.png"
                                                                                 class="center-block   img-rounded    bar "
                                                                                 data-toggle="modal"                                                                                                                    
                                                                                 alt="Монтаж на саморезы"
@@ -325,10 +351,10 @@ include 'inc-left-side-menu-furnitura.php';
                                                                     </div>
                                                                     <div class="item">
                                                                         <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Разметка под футорки" 
-                                                                        data-image="./dist/filesdb/images/petly_all_sch5.png" data-target="#image-gallery">
+                                                                        data-image="./dist/filesdb/images/SX_sch5.png" data-target="#image-gallery">
                                                                             <img  
-                                                                                src="./dist/filesdb/images/petly_all_sch5.png"
-                                                                                data-src="./dist/filesdb/images/petly_all_sch5.png"
+                                                                                src="./dist/filesdb/images/SX_sch5.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch5.png"
                                                                                 class="center-block   img-rounded    bar "
                                                                                 data-toggle="modal"                                                                                                                    
                                                                                 alt="Разметка под футорки"
@@ -338,10 +364,10 @@ include 'inc-left-side-menu-furnitura.php';
                                                                     </div>
                                                                     <div class="item">
                                                                         <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Размеры чашки" 
-                                                                        data-image="./dist/filesdb/images/petly_all_sch6.png" data-target="#image-gallery">
+                                                                        data-image="./dist/filesdb/images/SX_sch6.png" data-target="#image-gallery">
                                                                             <img  
-                                                                                src="./dist/filesdb/images/petly_all_sch6.png"
-                                                                                data-src="./dist/filesdb/images/petly_all_sch6.png"
+                                                                                src="./dist/filesdb/images/SX_sch6.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch6.png"
                                                                                 class="center-block   img-rounded    bar "
                                                                                 data-toggle="modal"                                                                                                                    
                                                                                 alt="Размеры чашки"
@@ -351,20 +377,18 @@ include 'inc-left-side-menu-furnitura.php';
                                                                     </div>
                                                                     <div class="item">
                                                                         <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Крестообразная ответная планка" 
-                                                                        data-image="./dist/filesdb/images/petly_all_sch7.png" data-target="#image-gallery">
+                                                                        data-image="./dist/filesdb/images/SX_sch7.png" data-target="#image-gallery">
                                                                             <img  
-                                                                                src="./dist/filesdb/images/petly_all_sch7.png"
-                                                                                data-src="./dist/filesdb/images/petly_all_sch7.png"
+                                                                                src="./dist/filesdb/images/SX_sch7.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch7.png"
                                                                                 class="center-block   img-rounded    bar "
                                                                                 data-toggle="modal"                                                                                                                    
                                                                                 alt="Крестообразная ответная планка"
                                                                                 data-pdf=""                                                    
                                                                             >
                                                                         </a>
-                                                                    </div>
+                                                                    </div> -->
                                                             
-                                                                
-                                                                    
                                                                 </div>
                                                                 <!-- Элементы управления -->
                                                                 <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
@@ -383,26 +407,174 @@ include 'inc-left-side-menu-furnitura.php';
 
                                                 </div>
                                                 <div class="tab-pane fade" id="stroitelnye-materialy">
-                                                    <p>
-                                                    <a>
-                                                        <img src="./dist/images/petli-dlya-fasadov-podbor-po-vesu_2.png" class="center-block   img-rounded img-thumbnail b-lazy bar img-book b-loaded" 
-                                                        data-toggle="modal" 
-                                                        data-target="#myModal" 
-                                                        alt="ПЕТЛИ для ФАСАДОВ (подбор по весу)">                                                  
-                                                    </a>
-                                                    </p>
-                                                    <a href="https://publications.blum.com/2018/catalogue/ru/694/#zoom=z" target="_blank" type="button" class="btn btn-primary" style="color:#fff;">ИСТОЧНИК - каталог BLUM</a>
+                                                   <!-- часть1 -->
+                                                        <!-- <h4 >Проектирование</h3>                         
+                                                        <h5>Размеры петли и расчет зазоров при заводской настройке (подъем ответной планки = 0 мм)</h5>                         
+                                                        <h5 >Вхождение двери при полном открывании</h5> -->
+                                                        <ul class="stat" style="margin-top: 0px;">
+                                                          <!--  <li><b>Нейлоновый распорный дюбель.</b></li>
+                                                            <li>Предназначен для использования в качестве крепления вместе с <b>шурупами</b> по <b>дереву</b> и<b> ДСП</b></li> 
+                                                            <li><b>Удлиненный дюбель SX</b> предназначен для обеспечения максимальной несущей способности в <b>пустотелых строительных материалах, газобетоне и при толстых слоях штукатурки.</b></li>
+                                                            <li>Металлическая петля, никелированная</li>
+                                                            <li>Угол открывания 95°</li>
+                                                            <li>Регулировка фасада в трех плоскостях</li>
+                                                            <li>Удобная регулировка по глубине с помощью механизма шнек</li>
+                                                            <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
+                                                             <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                           
+                                                            <li> Бетон</li>
+                                                            <li> Кирпич с вертикальными пустотами</li>
+                                                            <li> Пустотелые блоки, выполненные из легкого бетона</li>
+                                                            <li> Пустотелые плиты перекрытий, выполненные из кирпича, бетона и т.п.</li>
+                                                            <li> Перфорированный силикатный кирпич</li>
+                                                            <li> Полнотелый силикатный кирпич</li>
+                                                            <li> Натуральный камень с плотной структуры</li>
+                                                            <li> Газобетон</li>
+                                                            <li> Полнотелые гипсовые панели</li>
+                                                            <li> Полнотелые блоки, выполненные из легкого бетона</li>
+                                                            <li> Полнотелый кирпич</li>
+                                                        </ul>   
+                                                   
+                                                    <!-- /часть1 -->
+                                                    <!-- часть2 -->
+                                                        <h2 ></h2>                         
+
+                                                        <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
+                                                            <div id="carousel3" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+                                                                <div class="carousel-inner">
+
+                                                                    <div class="item active">
+                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Применение" 
+                                                                        data-image="./dist/filesdb/images/SX_sch1.png" data-target="#image-gallery">
+                                                                            <img  
+                                                                                src="./dist/filesdb/images/SX_sch1.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch1.png"
+                                                                                class="center-block   img-rounded    bar "
+                                                                                data-toggle="modal"                                                                                                                    
+                                                                                alt="Применение"
+                                                                                data-pdf=""                                                    
+                                                                            >
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="item">
+                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Минимальный зазор" 
+                                                                        data-image="./dist/filesdb/images/SX_sch2.png" data-target="#image-gallery">
+                                                                            <img  
+                                                                                src="./dist/filesdb/images/SX_sch2.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch2.png"
+                                                                                class="center-block   img-rounded    bar "
+                                                                                data-toggle="modal"                                                                                                                    
+                                                                                alt="Минимальный зазор"
+                                                                                data-pdf=""                                                    
+                                                                            >
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="item">
+                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Регулировка" 
+                                                                        data-image="./dist/filesdb/images/SX_sch3.png" data-target="#image-gallery">
+                                                                            <img  
+                                                                                src="./dist/filesdb/images/SX_sch3.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch3.png"
+                                                                                class="center-block   img-rounded    bar "
+                                                                                data-toggle="modal"                                                                                                                    
+                                                                                alt="Регулировка"
+                                                                                data-pdf=""                                                    
+                                                                            >
+                                                                        </a>
+                                                                    </div>
+                                                                    <!-- <div class="item">
+                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Монтаж на саморезы" 
+                                                                        data-image="./dist/filesdb/images/SX_sch4.png" data-target="#image-gallery">
+                                                                            <img  
+                                                                                src="./dist/filesdb/images/SX_sch4.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch4.png"
+                                                                                class="center-block   img-rounded    bar "
+                                                                                data-toggle="modal"                                                                                                                    
+                                                                                alt="Монтаж на саморезы"
+                                                                                data-pdf=""                                                    
+                                                                            >
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="item">
+                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Разметка под футорки" 
+                                                                        data-image="./dist/filesdb/images/SX_sch5.png" data-target="#image-gallery">
+                                                                            <img  
+                                                                                src="./dist/filesdb/images/SX_sch5.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch5.png"
+                                                                                class="center-block   img-rounded    bar "
+                                                                                data-toggle="modal"                                                                                                                    
+                                                                                alt="Разметка под футорки"
+                                                                                data-pdf=""                                                    
+                                                                            >
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="item">
+                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Размеры чашки" 
+                                                                        data-image="./dist/filesdb/images/SX_sch6.png" data-target="#image-gallery">
+                                                                            <img  
+                                                                                src="./dist/filesdb/images/SX_sch6.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch6.png"
+                                                                                class="center-block   img-rounded    bar "
+                                                                                data-toggle="modal"                                                                                                                    
+                                                                                alt="Размеры чашки"
+                                                                                data-pdf=""                                                    
+                                                                            >
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="item">
+                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Крестообразная ответная планка" 
+                                                                        data-image="./dist/filesdb/images/SX_sch7.png" data-target="#image-gallery">
+                                                                            <img  
+                                                                                src="./dist/filesdb/images/SX_sch7.png"
+                                                                                data-src="./dist/filesdb/images/SX_sch7.png"
+                                                                                class="center-block   img-rounded    bar "
+                                                                                data-toggle="modal"                                                                                                                    
+                                                                                alt="Крестообразная ответная планка"
+                                                                                data-pdf=""                                                    
+                                                                            >
+                                                                        </a>
+                                                                    </div> -->
+                                                            
+                                                                </div>
+                                                                <!-- Элементы управления -->
+                                                                <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
+                                                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                                    <span class="sr-only">Предыдущий</span>
+                                                                </a>
+                                                                <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
+                                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                                    <span class="sr-only">Следующий</span>
+                                                                </a>
+                                                            </div>
+                                                        </div> 
+
+                                                    <!-- /часть2 --> 
+
+
                                                 </div>
                                                 <div class="tab-pane fade" id="primenenie">
-                                                    <p>
-                                                    <a>
-                                                        <img src="./dist/images/petli-dlya-fasadov-podbor-po-vesu_2.png" class="center-block   img-rounded img-thumbnail b-lazy bar img-book b-loaded" 
-                                                        data-toggle="modal" 
-                                                        data-target="#myModal" 
-                                                        alt="ПЕТЛИ для ФАСАДОВ (подбор по весу)">                                                  
-                                                    </a>
-                                                    </p>
-                                                    <a href="https://publications.blum.com/2018/catalogue/ru/694/#zoom=z" target="_blank" type="button" class="btn btn-primary" style="color:#fff;">ИСТОЧНИК - каталог BLUM</a>
+                                                <ul class="stat" style="margin-top: 0px;">
+                                                          <!--  <li><b>Нейлоновый распорный дюбель.</b></li>
+                                                            <li>Предназначен для использования в качестве крепления вместе с <b>шурупами</b> по <b>дереву</b> и<b> ДСП</b></li> 
+                                                            <li><b>Удлиненный дюбель SX</b> предназначен для обеспечения максимальной несущей способности в <b>пустотелых строительных материалах, газобетоне и при толстых слоях штукатурки.</b></li>
+                                                            <li>Металлическая петля, никелированная</li>
+                                                            <li>Угол открывания 95°</li>
+                                                            <li>Регулировка фасада в трех плоскостях</li>
+                                                            <li>Удобная регулировка по глубине с помощью механизма шнек</li>
+                                                            <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
+                                                             <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                           
+                                                             <li> Светильники</li>
+                                                             <li>Стенные шкафы</li>
+                                                             <li> Гардеробы</li>
+                                                             <li>Почтовые ящики</li>
+                                                             <li> Кронштейны для телевизоров</li>
+                                                             <li> Складные ставни</li>
+                                                             <li> Поручни</li>
+                                                             <li>Световые шахты</li>
+                                                             <li>Монтаж ванн и унитазов</li>
+                                                        </ul>   
+                                                    
                                                 </div>
                                                 <div class="tab-pane fade" id="ustanovka">
                                                     <p>
@@ -413,7 +585,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         alt="ПЕТЛИ для ФАСАДОВ (подбор по весу)">                                                  
                                                     </a>
                                                     </p>
-                                                    <a href="https://publications.blum.com/2018/catalogue/ru/694/#zoom=z" target="_blank" type="button" class="btn btn-primary" style="color:#fff;">ИСТОЧНИК - каталог BLUM</a>
+                                                   
                                                 </div>
                                                 <!--
                                                 <div class="tab-pane fade" id="dropdown3">
