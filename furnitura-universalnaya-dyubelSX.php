@@ -437,116 +437,72 @@ include 'inc-left-side-menu-furnitura.php';
                                                    
                                                     <!-- /часть1 -->
                                                     <!-- часть2 -->
-                                                        <h2 ></h2>                         
+                                                    <!-- http://igelpro.ru/KEW_kat.pdf -->
+                                                        <h2 >Основы технологии крепления</h2>                         
+                                                        <h3>1.1 Бетон и стеновые кладочные материалы (полнотелые кирпичи) </h3>                         
+                                                        <h3>1.1.1 Бетон </h3> 
+                                                        <p>
+                                                            Бетон представляет собой смесь связующего материала,
+                                                            воды и специальных добавок. В зависимости от конкретного состава, технологии изготовления, 
+                                                            обработки или назначения этого материала различают несколько типов бетона. В основном используются 
+                                                            нормальные и легкие бетоны. Легкий бетон, в отличие от нормального, содержит такие добавки как 
+                                                            пемза или стиропор (пенополистирол). В качестве связующего в обоих типах бетона применяется цемент. 
+                                                            Облегчающие добавки, используемые в легких бетонах, имеют более низкие механические характеристики, 
+                                                            по сравнению с гравием, входящим в состав нормального бетона. Как правило, это создает худшие 
+                                                            предпосылки для крепления дюбелей в легких бетонах.
+                                                            Европейские технические допуски в области ответственного крепления зазличают бетоны с тещинами и без трещин.
+                                                        </p>                        
+                                                         <h3>1.1.2 Стеновые материалы - полнотелый кирпич сплошной структуры</h3>
+                                                         <p>К этой группе кирпичей относятся полнотелый керамический (рядовой, облицовочный, клинкерный) и силикатный кирпичи. 
+                                                             При закреплении дюбелей в таком кирпиче, как правило, не возникает никаких проблем, благодаря отсутствию в кирпиче внутренних полостей.</p>
+                                                         <h3>1.2. Полнотелый блок пористой структуры</h3>
+                                                         <p>
+                                                            Полнотелые блоки из легкого или ячеистого (пористого) пенобетона или газобетона имеют в своей структуре большое количество пор, 
+                                                            что существенно снижает механические характеристики материала. При креплении в таких блоках рекомендуется использование 
+                                                            специальных дюбелей с удлиненной распорной зоной или дюбелей, 
+                                                            обеспечивающих связывающее, ненапряженное крепление (см. Механизмы крепления).
+                                                         </p>
+                                                         <h3>1.3 Пустотелые кирпичи и блоки</h3>
+                                                         <h3>1.3.1 Пустотелый кирпич сплошной структуры</h3>
+                                                         <p>
+                                                            Такой кирпич состоит из непористого материала и содержит внутренние полости, расположенные либо
+                                                            параллельно, либо перпендикулярно базовой опорной
+                                                            плоскости кирпича. Сечение отверстий, как правило, -
+                                                            круглое, овальное или прямоугольное, причем суммарная
+                                                            площадь поперечного сечения пустот составляет более
+                                                            15% от общей площади опорной плоскости кирпича. К
+                                                            этой группе относятся керамические и силикатные
+                                                            кирпичи с различными геометриями пустот и пустотелые
+                                                            бетонные блоки. Для крепления в таких кирпичах
+                                                            применяют специальные типы дюбелей, которые
+                                                            заполняют пустоты или проходят насквозь через
+                                                            несколько стенок полостей, закрепляясь в них.
+                                                         </p>
+                                                         <h3>1.3.2 Пустотелый блок пористой структуры</h3>
+                                                         <p>
+                                                            Несущая способность таких блоков еще ниже из-за
+                                                            наличия полостей в пористом материале. Проведение
+                                                            крепежных работ требует наиболее тщательного выбора
+                                                            типа дюбеля. Предпочтительно использование дюбелей с
+                                                            удлиненной распорной зоной или дюбелей, реализующих
+                                                            геометрический механизм крепления.
+                                                         </p>
+                                                         <h3>1.4 Плиты / Листы</h3>
+                                                         <p>
+                                                            К этой группе относятся тонкостенные строительные
+                                                            материалы, имеющие достаточно низкие механические
+                                                            характеристики, например гипсокартонные, гипсоволоконные, древесностружечные, асбоцементные,
+                                                            цементностружечные листы или МДФпанели. Такие листы
+                                                            крепятся либо непосредственно на другую строительную
+                                                            основу, или же на некотором расстоянии от нее. При
+                                                            креплении предметов к листовым материалам
+                                                            необходимо использование специальных дюбелей,
+                                                            которые образуют геометрическое крепление на задней
+                                                            стенке листов. Такие крепежные элементы, как правило,
+                                                            имеют название «дюбель для пустотелых конструкций».
+                                                         </p>
 
-                                                        <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
-                                                            <div id="carousel3" class="carousel slide" data-ride="carousel" style="display: inline-block;">
-                                                                <div class="carousel-inner">
-
-                                                                    <div class="item active">
-                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Применение" 
-                                                                        data-image="./dist/filesdb/images/SX_sch1.png" data-target="#image-gallery">
-                                                                            <img  
-                                                                                src="./dist/filesdb/images/SX_sch1.png"
-                                                                                data-src="./dist/filesdb/images/SX_sch1.png"
-                                                                                class="center-block   img-rounded    bar "
-                                                                                data-toggle="modal"                                                                                                                    
-                                                                                alt="Применение"
-                                                                                data-pdf=""                                                    
-                                                                            >
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="item">
-                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Минимальный зазор" 
-                                                                        data-image="./dist/filesdb/images/SX_sch2.png" data-target="#image-gallery">
-                                                                            <img  
-                                                                                src="./dist/filesdb/images/SX_sch2.png"
-                                                                                data-src="./dist/filesdb/images/SX_sch2.png"
-                                                                                class="center-block   img-rounded    bar "
-                                                                                data-toggle="modal"                                                                                                                    
-                                                                                alt="Минимальный зазор"
-                                                                                data-pdf=""                                                    
-                                                                            >
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="item">
-                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Регулировка" 
-                                                                        data-image="./dist/filesdb/images/SX_sch3.png" data-target="#image-gallery">
-                                                                            <img  
-                                                                                src="./dist/filesdb/images/SX_sch3.png"
-                                                                                data-src="./dist/filesdb/images/SX_sch3.png"
-                                                                                class="center-block   img-rounded    bar "
-                                                                                data-toggle="modal"                                                                                                                    
-                                                                                alt="Регулировка"
-                                                                                data-pdf=""                                                    
-                                                                            >
-                                                                        </a>
-                                                                    </div>
-                                                                    <!-- <div class="item">
-                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Монтаж на саморезы" 
-                                                                        data-image="./dist/filesdb/images/SX_sch4.png" data-target="#image-gallery">
-                                                                            <img  
-                                                                                src="./dist/filesdb/images/SX_sch4.png"
-                                                                                data-src="./dist/filesdb/images/SX_sch4.png"
-                                                                                class="center-block   img-rounded    bar "
-                                                                                data-toggle="modal"                                                                                                                    
-                                                                                alt="Монтаж на саморезы"
-                                                                                data-pdf=""                                                    
-                                                                            >
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="item">
-                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Разметка под футорки" 
-                                                                        data-image="./dist/filesdb/images/SX_sch5.png" data-target="#image-gallery">
-                                                                            <img  
-                                                                                src="./dist/filesdb/images/SX_sch5.png"
-                                                                                data-src="./dist/filesdb/images/SX_sch5.png"
-                                                                                class="center-block   img-rounded    bar "
-                                                                                data-toggle="modal"                                                                                                                    
-                                                                                alt="Разметка под футорки"
-                                                                                data-pdf=""                                                    
-                                                                            >
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="item">
-                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Размеры чашки" 
-                                                                        data-image="./dist/filesdb/images/SX_sch6.png" data-target="#image-gallery">
-                                                                            <img  
-                                                                                src="./dist/filesdb/images/SX_sch6.png"
-                                                                                data-src="./dist/filesdb/images/SX_sch6.png"
-                                                                                class="center-block   img-rounded    bar "
-                                                                                data-toggle="modal"                                                                                                                    
-                                                                                alt="Размеры чашки"
-                                                                                data-pdf=""                                                    
-                                                                            >
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="item">
-                                                                        <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Крестообразная ответная планка" 
-                                                                        data-image="./dist/filesdb/images/SX_sch7.png" data-target="#image-gallery">
-                                                                            <img  
-                                                                                src="./dist/filesdb/images/SX_sch7.png"
-                                                                                data-src="./dist/filesdb/images/SX_sch7.png"
-                                                                                class="center-block   img-rounded    bar "
-                                                                                data-toggle="modal"                                                                                                                    
-                                                                                alt="Крестообразная ответная планка"
-                                                                                data-pdf=""                                                    
-                                                                            >
-                                                                        </a>
-                                                                    </div> -->
-                                                            
-                                                                </div>
-                                                                <!-- Элементы управления -->
-                                                                <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
-                                                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                                                    <span class="sr-only">Предыдущий</span>
-                                                                </a>
-                                                                <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
-                                                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                                                    <span class="sr-only">Следующий</span>
-                                                                </a>
-                                                            </div>
-                                                        </div> 
+                                                       
 
                                                     <!-- /часть2 --> 
 
