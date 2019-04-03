@@ -225,6 +225,8 @@
                                 </li> 
                                 <li><a class="list-group-item sub" href="metodichki-stp-po-proektnoy-rabote.php#kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom">КД на ДБ с распашным одностворчатым глухим полотном</a>
                                 </li>                                    
+                                <li><a class="list-group-item sub dblstr-lg dblstr-xl  dblstr-md dblstr-sm creat" href="metodichki-stp-po-proektnoy-rabote.php#shtampergonom">5000404-02-028 обозначение на чертеже отступление от требований эргономики</a>
+                                </li>                                    
                             </ul>
                         </li>          
                     </ul>

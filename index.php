@@ -4179,6 +4179,12 @@ include 'inc-goup-menu-furnitura-petlyB.php';
                                                                             <p data-href="metodichki-stp-po-proektnoy-rabote.php#kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom">КД на ДБ с распашным одностворчатым глухим полотном<span><br>~-5000404-02-101 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
+                                                                    <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
+                                                                    <TR>
+                                                                        <TD data-tooltip="" class="hover mapsite" id="flo-shtampergonom">
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#shtampergonom">5000404-02-028 обозначение на чертеже отступление от требований эргономики<span><br>~5000404-02-028 </span></p>
+                                                                        </TD>                                                             
+                                                                    </TR> 
                                                                       
                                                                 </TABLE>
                                                             </TD>

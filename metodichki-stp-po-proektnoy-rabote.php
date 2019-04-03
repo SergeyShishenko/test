@@ -18,32 +18,18 @@ include 'inc-left-side-menu-metodichki.php';
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
-                    <article >
+                    <!-- <article >
                       <section  >
                         <div class="page-header">
-                          <h1 itemprop="name" id="vyhodnye-svedeniya">ВЫХОДНЫЕ СВЕДЕНИЯ</h1>
+                          <h1 itemprop="name" id="vyhodnye-svedeniya">5000404-02-028 обозначение на чертеже отступление от требований эргономики</h1>
                         </div>
 
                         
-                        <h2 id="list-titulnyy">Лист титульный</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/pdf/listy-titulnye.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/pdf/listy-titulnye.pdf"></a>
-                            </object>
-                            <h2 id="sostav-proekta">&nbsp;</h2>
-                        <h2 >Состав проекта</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <object data="./dist/files/pdf/5000404-01-001-sostav-komplekta-tipovogo-dp.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/pdf/5000404-01-001-sostav-komplekta-tipovogo-dp.pdf"></a>
-                            </object>
-                            <object data="./dist/files/pdf/5000404-01-002-sostav-komplekta-tipovoy-kd.pdf" type="application/pdf" width="100%" height="720px">
-                            alt: <a href="./dist/files/pdf/5000404-01-002-sostav-komplekta-tipovoy-kd.pdf"></a>
-                            </object>
-                            <a href="./dist/files/pdf/komplekt-dokumentov-kd.xlsx" type="button" class="btn btn-primary"  download="komplekt-dokumentov-kd.xlsx">Скачать - Комплект документов КД.xlsx</a>
-
+                        <h2 id="shtampergonom">Штамп по эргономике</h2>
+                     
 
                       </section>
-                    </article>
+                    </article> -->
 
                     <article >
                       <section  >
@@ -420,8 +406,26 @@ include 'inc-left-side-menu-metodichki.php';
                               alt: <a href="./dist/files/pdf/5000404-02-101-kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom.pdf"></a>
                               </object>
   
-                         
-                          <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+                              <h2 id="shtampergonom">5000404-02-028 обозначение на чертеже отступление от требований эргономики</h2>
+                              <div class="bs-callout bs-callout-warning cont" >
+                              <!-- <h4>5000301-02-000 лист титульный КД</h4> -->
+                                <div class="overlay"></div>                  
+                            <p> <a>
+                                <!-- <img src="./dist/images/shablon-kd.png" class="center-block img-rounded img-thumbnail" -->
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/oboznachenie-na-chertezhe-otstuplenie-ot-trebovaniy-ergonomiki_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"
+                                                            
+                                 alt="5000404-02-028 обозначение на чертеже отступление от требований эргономики"
+                                 data-xls=""
+                                 data-pdf="./dist/files/pdf/oboznachenie-na-chertezhe-otstuplenie-ot-trebovaniy-ergonomiki.pdf"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                   ></a>
+                             </p>
+                             
+                        </div>
+                          <!-- <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> -->
                         </section>
                       </article>
 
@@ -436,14 +440,13 @@ include 'inc-left-side-menu-metodichki.php';
                 <div class="col-md-2" id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
-                            <li><a href="#vyhodnye-svedeniya">ВЫХОДНЫЕ СВЕДЕНИЯ</a>
+                            <!-- <li><a href="#vyhodnye-svedeniya">5000404-02-028 обозначение на чертеже отступление от требований эргономики</a>
                                 <ul class="nav">
-                                    <li><a href="#list-titulnyy">&#9999;&nbsp;Лист титульный</a>
+                                    <li><a href="#shtampergonom">&#9999;&nbsp;Штамп по эргономике</a>
                                     </li>
-                                    <li><a href="#sostav-proekta">&#9999;&nbsp;Состав проекта</a>
-                                    </li>                                   
+                                                                     
                                 </ul> 
-                            </li>
+                            </li> -->
                             <li><a href="#vizualnaya-chast-proekta">ВИЗУАЛЬНАЯ ЧАСТЬ ПРОЕКТА</a>
                                 <!-- <ul class="nav">
                                     <li><a href="#polotna-bez-falca">Полотна без фальца</a>
@@ -557,6 +560,8 @@ include 'inc-left-side-menu-metodichki.php';
                                     <li><a href="#obrazec-tz-stroitelyam-zakazchika">&#9999;&nbsp;Образец ТЗ строителям Заказчика</a>
                                     </li>
                                     <li><a href="#kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom">&#9999;&nbsp;КД на ДБ с распашным одностворчатым глухим полотном</a>
+                                    </li>
+                                    <li><a href="#shtampergonom">&#9999;&nbsp;5000404-02-028 обозначение на чертеже отступление от требований эргономики</a>
                                     </li>
                                     
                                 </ul>
