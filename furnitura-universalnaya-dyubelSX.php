@@ -49,8 +49,12 @@ include 'inc-left-side-menu-furnitura.php';
                                         <div class="row col-xs-12 col-sm-12 col-md-12" >                                                           
                                             <div class="row"> 
                                                 <div class="row"  style="height:100px;  display: inline-flex; margin-bottom: 20px;"> 
-                                                    <div class="col-xs-6 col-sm-6 col-md-5" >Дюбель SX<img src="./dist/filesdb/images/SX.png" width="100%" height="100%" class="" alt="Саморез" title=""></div>                                             
-                                                    <div class="col-xs-6 col-sm-6 col-md-7">Дюбель SX - удлиненный<img src="./dist/filesdb/images/SX_long.png"  width="100%" height="100%" class="" alt="чертёж" title=""></div>
+                                                    <div class="col-xs-5 col-sm-5 col-md-5" ><b>Дюбель SX</b><img src="./dist/filesdb/images/SX.png" width="100%" height="100%" class="" alt="SX" title=""></div>                                             
+                                                    <div class="col-xs-7 col-sm-7 col-md-7"><b>Дюбель SX-L - удлиненный</b><img src="./dist/filesdb/images/SX_long.png"  width="100%" height="100%" class="" alt="SX_long" title=""></div>
+                                                </div>                                             
+                                                <div class="row"  style="height:250px;  margin-bottom: 20px;"> 
+                                                    <div class="col-xs-5 col-sm-5 col-md-5" ><img src="./dist/filesdb/images/SX_sch4.png" width="100%" height="100%" class="" alt="SX_sch4" title=""></div>                                             
+                                                    <div class="col-xs-7 col-sm-7 col-md-7"><img src="./dist/filesdb/images/SX_sch5.png"  width="100%" height="100%" class="" alt="SX_sch5" title=""></div>
                                                 </div>                                             
                                                 <!-- <h3 class="blum">5000502-07-750 Конфирмат 7,0Х50</h3>
                                                 <h3 class="blum">5000502-07-752 Конфирмат 7,0Х70</h3> -->
@@ -59,10 +63,12 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <table class="table table-striped table-responsive">
                                                     <thead>
                                                         <tr>
-                                                            <th title="Резьба ,(мм)">Резьба<i><br>&empty;&nbsp;d,&nbsp;(мм)</i></th>
-                                                            <th title="Длина общая ,(мм)">Длина&nbsp;общая<i><br>l,&nbsp;(мм)</i></th>                                                            
-                                                            <th title="Длина резьбы ,(мм)">Длина&nbsp;резьбы <i><br>b,&nbsp;(мм)</i></th>
-                                                            <!-- <th title="Pozidriv (PZ)">Шлиц </th>                                                           -->
+                                                            <th title="Тип ,(мм)">Резьба<i><br>&empty;&nbsp;d,&nbsp;(мм)</i></th>
+                                                            <th title="Артакул">Длина&nbsp;общая<i><br>l,&nbsp;(мм)</i></th>                                                            
+                                                            <th title="Диаметр сверления ,(мм)">Длина&nbsp;резьбы <i><br>b,&nbsp;(мм)</i></th>
+                                                            <th title="Мин.глубина сверления отверстия ,(мм)">Длина&nbsp;резьбы <i><br>b,&nbsp;(мм)</i></th>
+                                                            <th title="Длина дюбеля ,(мм)">Длина&nbsp;резьбы <i><br>b,&nbsp;(мм)</i></th>
+                                                            <th title="Шурупы по дереву и ДСП ,(мм)">Длина&nbsp;резьбы <i><br>b,&nbsp;(мм)</i></th>                                                                                                                  
                                                             <th>Описание</th>                                                           
                                                             <th> <button type="button" id="each_addvpi_1" class="btn btn-primary" style="float:right;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button></th>
                                                         </tr>
@@ -70,7 +76,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <tbody id="calcresult">
                                                             <!-- 3.0 -->
                                                         <tr> 
-                                                            <td  class="boldstyle" rowspan="7">3.0</td>
+                                                            <td  class="boldstyle" >3.0</td>
                                                             
                                                             <td class="animated boldstyle" data-objfurnid="35">12</td> 
                                                             <td >8</td>
