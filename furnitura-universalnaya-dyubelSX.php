@@ -49,8 +49,8 @@ include 'inc-left-side-menu-furnitura.php';
                                         <div class="row col-xs-12 col-sm-12 col-md-12" >                                                           
                                             <div class="row"> 
                                                 <div class="row"  style="height:100px;  display: inline-flex; margin-bottom: 20px;"> 
-                                                    <div class="col-xs-5 col-sm-5 col-md-5" ><b>Дюбель SX</b><img src="./dist/filesdb/images/SX.png" width="100%" height="100%" class="" alt="SX" title=""></div>                                             
-                                                    <div class="col-xs-7 col-sm-7 col-md-7"><b>Дюбель SX-L - удлиненный</b><img src="./dist/filesdb/images/SX_long.png"  width="100%" height="100%" class="" alt="SX_long" title=""></div>
+                                                    <div class="col-xs-5 col-sm-5 col-md-5" ><b>Дюбель SX с кромкой</b><img src="./dist/filesdb/images/SX.png" width="100%" height="100%" class="" alt="SX" title=""></div>                                             
+                                                    <div class="col-xs-7 col-sm-7 col-md-7"><b>Дюбель SXL - с увеличенной глубиной анкеровки, без кромки</b><img src="./dist/filesdb/images/SX_long.png"  width="100%" height="100%" class="" alt="SX_long" title=""></div>
                                                 </div>                                             
                                                 <div class="row"  style="height:250px;  margin-bottom: 20px;"> 
                                                     <div class="col-xs-5 col-sm-5 col-md-5" ><img src="./dist/filesdb/images/SX_sch4.png" width="100%" height="100%" class="" alt="SX_sch4" title=""></div>                                             
@@ -63,40 +63,25 @@ include 'inc-left-side-menu-furnitura.php';
                                                 <table class="table table-striped table-responsive">
                                                     <thead>
                                                         <tr>
-                                                            <th title="Тип ,(мм)">Резьба<i><br>&empty;&nbsp;d,&nbsp;(мм)</i></th>
-                                                            <th title="Артакул">Длина&nbsp;общая<i><br>l,&nbsp;(мм)</i></th>                                                            
-                                                            <th title="Диаметр сверления ,(мм)">Длина&nbsp;резьбы <i><br>b,&nbsp;(мм)</i></th>
-                                                            <th title="Мин.глубина сверления отверстия ,(мм)">Длина&nbsp;резьбы <i><br>b,&nbsp;(мм)</i></th>
-                                                            <th title="Длина дюбеля ,(мм)">Длина&nbsp;резьбы <i><br>b,&nbsp;(мм)</i></th>
-                                                            <th title="Шурупы по дереву и ДСП ,(мм)">Длина&nbsp;резьбы <i><br>b,&nbsp;(мм)</i></th>                                                                                                                  
-                                                            <th>Описание</th>                                                           
+                                                            <th title="Тип" class="t-alg-center">Тип </th>
+                                                            <th title="Артикул" class="t-alg-center">С&nbsp;кромкой Артикул</th>                                                            
+                                                            <th title="Диаметр сверления ,(мм)" class="t-alg-center">Диаметр сверления <i><br>d<sub>o</sub>&nbsp;(мм)</i></th>
+                                                            <th title="Мин.глубина сверления отверстия ,(мм)" class="t-alg-center">Мин. глубина сверления отверстия <i><br>t&nbsp;(мм)</i></th>
+                                                            <th title="Длина дюбеля ,(мм)" class="t-alg-center">Длина дюбеля =&nbsp;мин.глубина анкеровки <i><br>l = h<sub>ef</sub>&nbsp;(мм)</i></th>
+                                                            <th title="Макс. толщина закрепляемого материала,(мм)" class="t-alg-center">Макс.<br>толщина закрепляемого материала <i><br>t<sub>fix</sub>&nbsp;(мм)</i></th>                                                                                                                  
+                                                            <th title="Шурупы по дереву и ДСП ,(мм)" class="t-alg-center">Шурупы<br>по дереву<br>и для ДСП <i><br>d<sub>s</sub> &nbsp;или d<sub>s</sub>&nbsp;x&nbsp;l<sub>s</sub>&nbsp;(&empty;&nbsp;мм)</i></th>                                                           
                                                             <th> <button type="button" id="each_addvpi_1" class="btn btn-primary" style="float:right;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button></th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody id="calcresult">
-                                                            <!-- 3.0 -->
+                                                    <tbody id="calcresult">                                                            
                                                         <tr> 
-                                                            <td  class="boldstyle" >3.0</td>
-                                                            
-                                                            <td class="animated boldstyle" data-objfurnid="35">12</td> 
-                                                            <td >8</td>
-                                                            
-                                                            <td >Саморез <span class="boldstyle">3,0x12</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
-                                                            <td class="quantity"> 
-                                                                <div class="input-group spinner"> 	
-                                                                    <div class="input-group-btn-vertical">                                                                        
-                                                                        <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
-                                                                        <button class="btn btn-default" type="button">+</button>
-                                                                    </div>
-                                                                </div> 
-                                                            </td>                                                            
-                                                        </tr>                                                 
-                                                        <tr> 
-                                                            <td class="animated boldstyle" data-objfurnid="36">16</td> 
-                                                            <td >12</td>
-                                                            
-                                                            <td >Саморез <span class="boldstyle">3,0x16</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="boldstyle" >SX&nbsp;6&nbsp;x&nbsp;30</td>
+                                                            <td class="t-alg-center" >70006</td>                                                            
+                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="35">6</td> <!-- Диаметр сверления -->
+                                                            <td class="t-alg-center">40</td><!-- Мин.глубина сверления -->
+                                                            <td class="t-alg-center boldstyle">30</td><!-- Длина дюбеля = мин.глубина анкеровки -->
+                                                            <td class="t-alg-center">10</td><!-- Макс. толщина закрепляемого материала -->
+                                                            <td class="t-alg-center">4 - 5</td><!-- Шурупы по дереву и ДСП  --> 
                                                             <td class="quantity"> 
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
@@ -108,10 +93,13 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated boldstyle" data-objfurnid="37">20</td> 
-                                                            <td >16</td>
-                                                            
-                                                            <td >Саморез <span class="boldstyle">3,0x20</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="boldstyle" >SX&nbsp;6&nbsp;x&nbsp;50</td>
+                                                            <td class="t-alg-center" >078185</td>                                                            
+                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="35">6</td> <!-- Диаметр сверления -->
+                                                            <td class="t-alg-center">60</td><!-- Мин.глубина сверления -->
+                                                            <td class="t-alg-center boldstyle">50</td><!-- Длина дюбеля = мин.глубина анкеровки -->
+                                                            <td class="t-alg-center">&mdash;</td><!-- Макс. толщина закрепляемого материала -->
+                                                            <td class="t-alg-center">4 - 5</td><!-- Шурупы по дереву и ДСП  --> 
                                                             <td class="quantity"> 
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
@@ -123,10 +111,13 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated boldstyle" data-objfurnid="38">25</td> 
-                                                            <td >21</td>
-                                                            
-                                                            <td >Саморез <span class="boldstyle">3,0x25</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="boldstyle" >SXL&nbsp;6&nbsp;x&nbsp;50*</td>
+                                                            <td class="t-alg-center" >024827</td>                                                            
+                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="35">6</td> <!-- Диаметр сверления -->
+                                                            <td class="t-alg-center">60</td><!-- Мин.глубина сверления -->
+                                                            <td class="t-alg-center boldstyle">50</td><!-- Длина дюбеля = мин.глубина анкеровки -->
+                                                            <td class="t-alg-center">&mdash;</td><!-- Макс. толщина закрепляемого материала -->
+                                                            <td class="t-alg-center">4 - 5</td><!-- Шурупы по дереву и ДСП  --> 
                                                             <td class="quantity"> 
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
@@ -138,10 +129,13 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated boldstyle" data-objfurnid="39">30</td> 
-                                                            <td >26</td>
-                                                            
-                                                            <td >Саморез <span class="boldstyle">3,0x30</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="boldstyle" >SX&nbsp;8&nbsp;x&nbsp;40</td>
+                                                            <td class="t-alg-center" >070008</td>                                                            
+                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="35">8</td> <!-- Диаметр сверления -->
+                                                            <td class="t-alg-center">50</td><!-- Мин.глубина сверления -->
+                                                            <td class="t-alg-center boldstyle">40</td><!-- Длина дюбеля = мин.глубина анкеровки -->
+                                                            <td class="t-alg-center">20</td><!-- Макс. толщина закрепляемого материала -->
+                                                            <td class="t-alg-center">4,5 - 6</td><!-- Шурупы по дереву и ДСП  --> 
                                                             <td class="quantity"> 
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
@@ -153,25 +147,13 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="animated boldstyle" data-objfurnid="40">35</td> 
-                                                            <td >31</td>
-                                                            
-                                                            <td >Саморез <span class="boldstyle">3,0x35</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
-                                                            <td class="quantity"> 
-                                                                <div class="input-group spinner"> 	
-                                                                    <div class="input-group-btn-vertical">                                                                        
-                                                                        <button class="btn btn-default" type="button">&ndash;</button>
-                                                                        <input type="text" class="form-control form-c" value="0" data-step="10" >
-                                                                        <button class="btn btn-default" type="button">+</button>
-                                                                    </div>
-                                                                </div> 
-                                                            </td>                                                            
-                                                        </tr>                                         
-                                                        <tr> 
-                                                            <td class="animated boldstyle" data-objfurnid="41">40</td> 
-                                                            <td >36</td>
-                                                            
-                                                            <td >Саморез <span class="boldstyle">3,0x40</span> PZ для дерева, полная резьба, потай, оцинкованный</td>
+                                                            <td class="boldstyle" >SXL&nbsp;8&nbsp;x&nbsp;65*</td>
+                                                            <td class="t-alg-center" >024828</td>                                                            
+                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="35">8</td> <!-- Диаметр сверления -->
+                                                            <td class="t-alg-center">75</td><!-- Мин.глубина сверления -->
+                                                            <td class="t-alg-center boldstyle">65</td><!-- Длина дюбеля = мин.глубина анкеровки -->
+                                                            <td class="t-alg-center">&mdash;</td><!-- Макс. толщина закрепляемого материала -->
+                                                            <td class="t-alg-center">4,5 - 6</td><!-- Шурупы по дереву и ДСП  --> 
                                                             <td class="quantity"> 
                                                                 <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
@@ -182,9 +164,9 @@ include 'inc-left-side-menu-furnitura.php';
                                                                 </div> 
                                                             </td>                                                            
                                                         </tr>
-                                         
                                                     </tbody>
                                                 </table>
+                                                <p>* без кромки</p>
                                             </div>                              
                                         </div>
                                     </div>
@@ -201,11 +183,11 @@ include 'inc-left-side-menu-furnitura.php';
                                             padding: 15px;
                                             ">
                                             <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
-                                                <li ><a href="#opisanie" data-toggle="tab">Описание</a></li>
-                                                <li  class="active"><a href="#preimushchestva" data-toggle="tab">Преимущества</a></li>
+                                                <li class="active"><a href="#opisanie" data-toggle="tab">Описание</a></li>
+                                                <li  class=""><a href="#preimushchestva" data-toggle="tab">Преимущества</a></li>
                                                 <li  class=""><a href="#stroitelnye-materialy" data-toggle="tab">Строительные материалы</a></li>
                                                 <li  class=""><a href="#primenenie" data-toggle="tab">Применение</a></li>
-                                                <li  class=""><a href="#ustanovka" data-toggle="tab">Установка</a></li>
+                                                <li  class=""><a href="#ustanovka" data-toggle="tab">Монтаж</a></li>
                                                 <li  class=""><a href="#osnovy-tehnologii-krepleniya" data-toggle="tab">Основы технологии крепления</a></li>
                                                 <!-- <li class="dropdown">
                                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -216,7 +198,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                 </li> -->
                                             </ul>
                                             <div id="myTabContent" class="tab-content">
-                                                <div class="tab-pane fade " id="opisanie">
+                                                <div class="tab-pane fade in active" id="opisanie">
                                                     <p>
                                                         <ul class="stat" style="margin-top: 0px;">
                                                             <li><b>Нейлоновый распорный дюбель.</b></li>
@@ -230,8 +212,15 @@ include 'inc-left-side-menu-furnitura.php';
                                                              <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
                                                         </ul>
                                                     </p>
+                                                    <div class="main-box-body clearfix">
+                                                        <div class="embed-responsive embed-responsive-16by9">
+                                                            <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                                                                <source src="./dist/video/krepezh/fischer-neylonovyy-dyubel-ux-i-sx.mp4" type="video/mp4">
+                                                            </video>
+                                                        </div>
+                                                    </div> 
                                                 </div>
-                                                <div class="tab-pane fade in active" id="preimushchestva">
+                                                <div class="tab-pane fade " id="preimushchestva">
                                                     <!-- часть1 -->
                                                         <!-- <h4 >Проектирование</h3>                         
                                                         <h5>Размеры петли и расчет зазоров при заводской настройке (подъем ответной планки = 0 мм)</h5>                         
@@ -447,39 +436,108 @@ include 'inc-left-side-menu-furnitura.php';
 
                                                 </div>
                                                 <div class="tab-pane fade" id="primenenie">
-                                                <ul class="stat" style="margin-top: 0px;">
-                                                          <!--  <li><b>Нейлоновый распорный дюбель.</b></li>
-                                                            <li>Предназначен для использования в качестве крепления вместе с <b>шурупами</b> по <b>дереву</b> и<b> ДСП</b></li> 
-                                                            <li><b>Удлиненный дюбель SX</b> предназначен для обеспечения максимальной несущей способности в <b>пустотелых строительных материалах, газобетоне и при толстых слоях штукатурки.</b></li>
-                                                            <li>Металлическая петля, никелированная</li>
-                                                            <li>Угол открывания 95°</li>
-                                                            <li>Регулировка фасада в трех плоскостях</li>
-                                                            <li>Удобная регулировка по глубине с помощью механизма шнек</li>
-                                                            <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
-                                                             <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
-                                                           
-                                                             <li> Светильники</li>
-                                                             <li>Стенные шкафы</li>
-                                                             <li> Гардеробы</li>
-                                                             <li>Почтовые ящики</li>
-                                                             <li> Кронштейны для телевизоров</li>
-                                                             <li> Складные ставни</li>
-                                                             <li> Поручни</li>
-                                                             <li>Световые шахты</li>
-                                                             <li>Монтаж ванн и унитазов</li>
-                                                        </ul>   
-                                                    
+                                                    <ul class="stat" style="margin-top: 0px;">
+                                                        <!--  <li><b>Нейлоновый распорный дюбель.</b></li>
+                                                        <li>Предназначен для использования в качестве крепления вместе с <b>шурупами</b> по <b>дереву</b> и<b> ДСП</b></li> 
+                                                        <li><b>Удлиненный дюбель SX</b> предназначен для обеспечения максимальной несущей способности в <b>пустотелых строительных материалах, газобетоне и при толстых слоях штукатурки.</b></li>
+                                                        <li>Металлическая петля, никелированная</li>
+                                                        <li>Угол открывания 95°</li>
+                                                        <li>Регулировка фасада в трех плоскостях</li>
+                                                        <li>Удобная регулировка по глубине с помощью механизма шнек</li>
+                                                        <li>Дверь устанавливается и снимается с корпуса без инструмента</li> 
+                                                            <li>При выборе петли <b>INSERTA</b> петля крепится без инструмента</li>     -->                                                                               
+                                                        
+                                                            <li> Светильники</li>
+                                                            <li>Стенные шкафы</li>
+                                                            <li> Гардеробы</li>
+                                                            <li>Почтовые ящики</li>
+                                                            <li> Кронштейны для телевизоров</li>
+                                                            <li> Складные ставни</li>
+                                                            <li> Поручни</li>
+                                                            <li>Световые шахты</li>
+                                                            <li>Монтаж ванн и унитазов</li>
+                                                    </ul> 
+                                                    <!-- часть2 -->
+                                                    <h2 ></h2>                         
+
+<div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
+    <div id="carousel3" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+        <div class="carousel-inner">
+
+            <div class="item active">
+                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Карнизы" 
+                data-image="./dist/filesdb/images/SX_sch6.png" data-target="#image-gallery">
+                    <img  
+                        src="./dist/filesdb/images/SX_sch6.png"
+                        data-src="./dist/filesdb/images/SX_sch6.png"
+                        class="center-block   img-rounded    bar "
+                        data-toggle="modal"                                                                                                                    
+                        alt="Карнизы"
+                        data-pdf=""                                                    
+                    >
+                </a>
+            </div>
+            <div class="item">
+                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Настенные консольные кронштейны" 
+                data-image="./dist/filesdb/images/SX_sch7.png" data-target="#image-gallery">
+                    <img  
+                        src="./dist/filesdb/images/SX_sch7.png"
+                        data-src="./dist/filesdb/images/SX_sch7.png"
+                        class="center-block   img-rounded    bar "
+                        data-toggle="modal"                                                                                                                    
+                        alt="Настенные консольные кронштейны"
+                        data-pdf=""                                                    
+                    >
+                </a>
+            </div>
+            <div class="item">
+                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Кондиционеры" 
+                data-image="./dist/filesdb/images/SX_sch8.png" data-target="#image-gallery">
+                    <img  
+                        src="./dist/filesdb/images/SX_sch8.png"
+                        data-src="./dist/filesdb/images/SX_sch8.png"
+                        class="center-block   img-rounded    bar "
+                        data-toggle="modal"                                                                                                                    
+                        alt="Кондиционеры"
+                        data-pdf=""                                                    
+                    >
+                </a>
+            </div>
+        
+    
+        </div>
+        <!-- Элементы управления -->
+        <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Предыдущий</span>
+        </a>
+        <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Следующий</span>
+        </a>
+    </div>
+</div> 
+
+<!-- /часть2 -->   
+                                                
                                                 </div>
                                                 <div class="tab-pane fade" id="ustanovka">
-                                                    <p>
-                                                    <a>
-                                                        <img src="./dist/images/petli-dlya-fasadov-podbor-po-vesu_2.png" class="center-block   img-rounded img-thumbnail b-lazy bar img-book b-loaded" 
-                                                        data-toggle="modal" 
-                                                        data-target="#myModal" 
-                                                        alt="ПЕТЛИ для ФАСАДОВ (подбор по весу)">                                                  
-                                                    </a>
+                                                <p>
+                                                        <ul class="stat" style="margin-top: 0px;">                                                            
+                                                            <li>Дюбель SX пригоден для предварительного монтажа и сквозного монтажа.</li>
+                                                            <li>При сквозном монтаже следует использовать шуруп максимального диаметра</li>
+                                                            <li>При вворачивании шурупа дюбель SX расширяется в четырех направлениях, обеспечивая надежную анкеровку в строительном материале.</b></li> 
+                                                            <li>Требуемая длина шурупа определяется следующим образом: длина дюбеля + толщина закрепляемого элемента + 1 диаметр шурупа</li>
+                                                            <li>Пригоден для шурупов по дереву, для ДСП и для дистанционных шурупов.</li>                                                                                                                                 
+                                                            <li>В пустотелом кирпиче и газобетоне сверление отверстия следует производить только в режиме вращения сверла (безударное сверление).</li>                                                                                                                                 
+                                                            <li>В целях безопасности <b>не разрешается</b> применять нейлоновые дюбели в конструкциях, находящихся под <b>постоянными растягивающими нагрузками</b>. 
+                                                                Поэтому нейлоновый дюбель <b>не может быть использован</b> для крепления подвесных изделий в <b>потолке</b>, например осветительных приборов.</li>                                                                                                                                 
+                                                        </ul>
                                                     </p>
-                                                   
+                                                    <div class="row"  style="  margin-bottom: 20px;"> 
+                                                    <div class="col-xs-12 col-sm-12 col-md-12" ><b>Предварительный монтаж</b><img src="./dist/filesdb/images/fischer_fix_014_4.jpg" width="100%" height="100%" class="" alt="Предварительный монтаж" title=""></div>                                             
+                                                    <div class="col-xs-12 col-sm-12 col-md-12"><b>Сквозной монтаж</b><img src="./dist/filesdb/images/fischer_fix_014_5.jpg"  width="100%" height="100%" class="" alt="Сквозной монтаж" title=""></div>
+                                                </div> 
                                                 </div>
                                                 <div class="tab-pane fade" id="osnovy-tehnologii-krepleniya">
                                                    <!-- часть1 -->
