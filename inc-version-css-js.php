@@ -1,6 +1,6 @@
 <?php
 $gridVersion = 9;
-$docsVersion = 53;
+$docsVersion = 54;
 $docsfirstVersion=3;
 $dropVersion=4;
 $scriptVersion = 30;

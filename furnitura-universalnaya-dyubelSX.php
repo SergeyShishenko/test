@@ -30,9 +30,7 @@ include 'inc-left-side-menu-furnitura.php';
                         <div class="bs-callout bs-callout-warning cont" > 
                             
                             <div class="main-box clearfix"   >   
-                            <h2 ></h2>
-                                                                                        
-                                                    
+                                <h2 ></h2>                      
                             </div>
                             <!-- ВПИ -->
                                 <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
@@ -174,7 +172,7 @@ include 'inc-left-side-menu-furnitura.php';
                             <!--/ ВПИ -->
                        
                             <!--row-->
-                            <div class="row" style="margin-right: -15px;">
+                                <div class="row" style="margin-bottom: 15px; margin-right: -15px;">
                                     <div class=" col-xs-12 col-sm-12 col-md-12">
                                         <div style="background: #fff;
                                             border: 1px solid rgb(221, 221, 221);
@@ -202,7 +200,10 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <p>
                                                         <ul class="stat" style="margin-top: 0px;">
                                                             <li><b>Нейлоновый распорный дюбель.</b></li>
-                                                            <li>Предназначен для использования в качестве крепления вместе с <b>шурупами</b> по <b>дереву</b> и<b> ДСП</b></li> 
+                                                            <li>Предназначен для использования в качестве крепления вместе с <b>шурупами</b> по <b>дереву</b> и<b> ДСП</b>, 
+                                                            с саморезами и шурупами для дистанционного монтажа ASL  
+                                                            <a href="http://fischer-market.ru/asl-universalnyy-distantsionnyy-shurup-art-59061" target="_blank">(универсальный дистанционный шуруп)</a>
+                                                            </li> 
                                                             <li><b>Удлиненный дюбель SX</b> предназначен для обеспечения максимальной несущей способности в <b>пустотелых строительных материалах, газобетоне и при толстых слоях штукатурки.</b></li>
                                                          <!--   <li>Металлическая петля, никелированная</li>
                                                             <li>Угол открывания 95°</li>
@@ -253,7 +254,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </li>
                                                         </ul>
                                                        
-<!-- 
+                                                        <!-- 
                                                         <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
                                                             <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
                                                                         border: 1px solid rgb(221, 221, 221);
@@ -429,11 +430,8 @@ include 'inc-left-side-menu-furnitura.php';
                                                             <li> Полнотелые гипсовые панели</li>
                                                             <li> Полнотелые блоки, выполненные из легкого бетона</li>
                                                             <li> Полнотелый кирпич</li>
-                                                        </ul>   
-                                                   
+                                                        </ul>                                                      
                                                     <!-- /часть1 -->
-                                               
-
                                                 </div>
                                                 <div class="tab-pane fade" id="primenenie">
                                                     <ul class="stat" style="margin-top: 0px;">
@@ -460,69 +458,68 @@ include 'inc-left-side-menu-furnitura.php';
                                                     <!-- часть2 -->
                                                     <h2 ></h2>                         
 
-<div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
-    <div id="carousel3" class="carousel slide" data-ride="carousel" style="display: inline-block;">
-        <div class="carousel-inner">
+                                                    <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
+                                                        <div id="carousel3" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+                                                            <div class="carousel-inner">
 
-            <div class="item active">
-                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Карнизы" 
-                data-image="./dist/filesdb/images/SX_sch6.png" data-target="#image-gallery">
-                    <img  
-                        src="./dist/filesdb/images/SX_sch6.png"
-                        data-src="./dist/filesdb/images/SX_sch6.png"
-                        class="center-block   img-rounded    bar "
-                        data-toggle="modal"                                                                                                                    
-                        alt="Карнизы"
-                        data-pdf=""                                                    
-                    >
-                </a>
-            </div>
-            <div class="item">
-                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Настенные консольные кронштейны" 
-                data-image="./dist/filesdb/images/SX_sch7.png" data-target="#image-gallery">
-                    <img  
-                        src="./dist/filesdb/images/SX_sch7.png"
-                        data-src="./dist/filesdb/images/SX_sch7.png"
-                        class="center-block   img-rounded    bar "
-                        data-toggle="modal"                                                                                                                    
-                        alt="Настенные консольные кронштейны"
-                        data-pdf=""                                                    
-                    >
-                </a>
-            </div>
-            <div class="item">
-                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Кондиционеры" 
-                data-image="./dist/filesdb/images/SX_sch8.png" data-target="#image-gallery">
-                    <img  
-                        src="./dist/filesdb/images/SX_sch8.png"
-                        data-src="./dist/filesdb/images/SX_sch8.png"
-                        class="center-block   img-rounded    bar "
-                        data-toggle="modal"                                                                                                                    
-                        alt="Кондиционеры"
-                        data-pdf=""                                                    
-                    >
-                </a>
-            </div>
-        
-    
-        </div>
-        <!-- Элементы управления -->
-        <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Предыдущий</span>
-        </a>
-        <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Следующий</span>
-        </a>
-    </div>
-</div> 
-
-<!-- /часть2 -->   
+                                                                <div class="item active">
+                                                                    <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Карнизы" 
+                                                                    data-image="./dist/filesdb/images/SX_sch6.png" data-target="#image-gallery">
+                                                                        <img  
+                                                                            src="./dist/filesdb/images/SX_sch6.png"
+                                                                            data-src="./dist/filesdb/images/SX_sch6.png"
+                                                                            class="center-block   img-rounded    bar "
+                                                                            data-toggle="modal"                                                                                                                    
+                                                                            alt="Карнизы"
+                                                                            data-pdf=""                                                    
+                                                                        >
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item">
+                                                                    <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Настенные консольные кронштейны" 
+                                                                    data-image="./dist/filesdb/images/SX_sch7.png" data-target="#image-gallery">
+                                                                        <img  
+                                                                            src="./dist/filesdb/images/SX_sch7.png"
+                                                                            data-src="./dist/filesdb/images/SX_sch7.png"
+                                                                            class="center-block   img-rounded    bar "
+                                                                            data-toggle="modal"                                                                                                                    
+                                                                            alt="Настенные консольные кронштейны"
+                                                                            data-pdf=""                                                    
+                                                                        >
+                                                                    </a>
+                                                                </div>
+                                                                <div class="item">
+                                                                    <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Кондиционеры" 
+                                                                    data-image="./dist/filesdb/images/SX_sch8.png" data-target="#image-gallery">
+                                                                        <img  
+                                                                            src="./dist/filesdb/images/SX_sch8.png"
+                                                                            data-src="./dist/filesdb/images/SX_sch8.png"
+                                                                            class="center-block   img-rounded    bar "
+                                                                            data-toggle="modal"                                                                                                                    
+                                                                            alt="Кондиционеры"
+                                                                            data-pdf=""                                                    
+                                                                        >
+                                                                    </a>
+                                                                </div>
+                                                            
+                                                        
+                                                            </div>
+                                                            <!-- Элементы управления -->
+                                                            <a class="left carousel-control" href="#carousel3" role="button" data-slide="prev">
+                                                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                                                <span class="sr-only">Предыдущий</span>
+                                                            </a>
+                                                            <a class="right carousel-control" href="#carousel3" role="button" data-slide="next">
+                                                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                                                <span class="sr-only">Следующий</span>
+                                                            </a>
+                                                        </div>
+                                                    </div> 
+                                                    <!-- /часть2 -->   
                                                 
                                                 </div>
                                                 <div class="tab-pane fade" id="ustanovka">
-                                                <p>
+                                                    <p>
                                                         <ul class="stat" style="margin-top: 0px;">                                                            
                                                             <li>Дюбель SX пригоден для предварительного монтажа и сквозного монтажа.</li>
                                                             <li>При сквозном монтаже следует использовать шуруп максимального диаметра</li>
@@ -714,7 +711,137 @@ include 'inc-left-side-menu-furnitura.php';
                                     </div>
                                 </div> 
                             <!--/row-->
-                         
+                            <!--row-->
+                                 <div class="row" style=" margin-left: 15px;">
+                                    <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
+                                                border: 1px solid rgb(221, 221, 221);
+                                                box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+                                                border-radius: 4px;
+                                                padding: 15px;
+                                                ">
+                                        <h4 >Выбор дюбеля под саморез</h4>                                 
+                               
+                                       
+                                            <p class="cont">
+                                                После того, как выбор типа самореза и дюбеля для крепления на стене сделан, останется выбрать, воспользовавшись данными, приведенными в таблице ниже типоразмер самореза и соответствующий ему дюбель. 
+                                                Определиться с диаметром и глубиной отверстия для установки дюбеля.
+</p>       
+                                            <p class="cont">
+                                                В связи с отсутствием международного стандарта на саморезы и дюбеля, многие производители выпускают по своим внутренним стандартам. Поэтому невозможно точно указать все размеры, 
+                                                но в подавляющем числе случаев размеры совпадают с достаточной для практического использования точностью.
+</p>                                         
+                                            
+                                
+                                            <div class="row col-xs-12 col-sm-12 col-md-12" > 
+                                                <!-- <p><b>Таблица подбора дюбеля для выбранного самореза, размер отверстия для выбранного дюбеля</b> </p>                                                -->
+                                                <table class="centered centeredContent table table-striped table-responsive"  cellpadding="2" cellspacing="1">
+                                                    <tbody>
+                                                    <tr>
+                                                    <th colspan="6">Таблица подбора дюбеля для выбранного самореза, размер отверстия для выбранного дюбеля</th>
+                                                    </tr>
+
+                                                    <tr>
+                                                    <th colspan="2">Саморез</th>
+                                                    <th colspan="2">Дюбель</th>
+                                                    <th colspan="2">Отверстие под дюбель</th>
+                                                    </tr>
+
+                                                    <tr>
+                                                    <td class="istyle">Диаметр, мм</td>
+                                                    <td class="istyle">Длина, мм</td>
+                                                    <td class="istyle">Диаметр, мм</td>
+                                                    <td class="istyle">Длина, мм</td>
+                                                    <td class="istyle">Диаметр сверла, мм</td>
+                                                    <td class="istyle">Глубина сверления, мм</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                    <td>3</td>
+                                                    <td>12, 16, 20, 25, 30, 35, 40</td>
+                                                    <td>5</td>
+                                                    <td>12, 16, 20, 25, 30, 35, 40</td>
+                                                    <td>5</td>
+                                                    <td>16, 20, 25, 30, 35, 40, 45</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                    <td>3,5</td>
+                                                    <td>12, 16, 20, 25, 30, 35, 40, 45, 50</td>
+                                                    <td>6</td>
+                                                    <td>12, 16, 20, 25, 30, 35, 40, 45, 50</td>
+                                                    <td>6</td>
+                                                    <td>16, 20, 25, 30, 35, 40, 45, 50, 55</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                    <td>4</td>
+                                                    <td>12, 16, 20, 25, 30, 35, 40, 45, 50, 60, 70</td>
+                                                    <td>5 или 6</td>
+                                                    <td>12, 16, 20, 25, 30, 35, 40, 45, 50, 60, 70</td>
+                                                    <td>5 или 6</td>
+                                                    <td>16, 20, 25, 30, 35, 40, 45, 50, 55, 65, 75</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                    <td>4,5</td>
+                                                    <td>16, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80</td>
+                                                    <td>6 или 8</td>
+                                                    <td>16, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80</td>
+                                                    <td>6 или 8</td>
+                                                    <td>20, 25, 30, 35, 40, 45, 50, 55, 65, 75, 85</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                    <td>5</td>
+                                                    <td>20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100</td>
+                                                    <td>6 или 8</td>
+                                                    <td>16, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100</td>
+                                                    <td>6 или 8</td>
+                                                    <td>20, 25, 30, 35, 40, 45, 50, 55, 65, 75, 85, 95, 105</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                    <td>6</td>
+                                                    <td>40, 45, 50, 60, 70, 80, 90, 100, 120, 140, 160, 180, 200</td>
+                                                    <td>8 или 10</td>
+                                                    <td>40, 45, 50, 60, 70, 80, 90, 100, 120, 140, 160, 180, 200</td>
+                                                    <td>8 или 10</td>
+                                                    <td>45, 50, 55, 65, 75, 85, 95, 105, 130, 150, 170, 190, 220</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                    <td>8</td>
+                                                    <td>40, 45, 50, 60, 70, 80, 90, 100, 120, 140, 160, 180, 200</td>
+                                                    <td>10 или 12 или 14</td>
+                                                    <td>40, 45, 50, 60, 70, 80, 90, 100, 120, 140, 160, 180, 200</td>
+                                                    <td>10 или 12 или 14</td>
+                                                    <td>45, 50, 55, 65, 75, 85, 95, 105, 130, 150, 170, 190, 220</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                    <td>10</td>
+                                                    <td>40, 45, 50, 60, 70, 80, 90, 100, 120, 140, 160, 180, 200, 220, 240, 260</td>
+                                                    <td>12 или 14</td>
+                                                    <td>40, 45, 50, 60, 70, 80, 90, 100, 120, 140, 160, 180, 200, 220, 240, 260</td>
+                                                    <td>12 или 14</td>
+                                                    <td>45, 50, 55, 65, 75, 85, 95, 105, 130, 150, 170, 190, 220, 230, 260, 280</td>
+                                                    </tr>
+
+                                                    </tbody>
+                                                </table>                                             
+                                                
+                                            </div>
+                                        
+                                            <p class="cont">
+                                                Пользоваться таблицей нужно следующим образом. Допустим Вам надо повесить книжную полку с максимально возможным весом 100 кг с креплением на двух петлях на кирпичной стене. 
+                                                Так как полка будет подвешена на два самореза, то нагрузка на один саморез будет составлять 50 кг. 
+                                                Выбираете из таблицы, саморез универсальной резьбой, с полусферической головкой, диаметром 6 мм, длиной не менее 80 мм. Дюбель подойдет стандартный, самый простой.
+                                                 Из таблицы видим, такой типоразмер самореза есть, для него подойдет дюбель диаметром 8 или 10 мм длиной 80 мм. 
+                                                Так как в наличии есть сверло диаметром 8 мм, то выбираем дюбель тоже диаметром 8 мм. Для его установки нужно просверлить отверстие диаметром 8 мм на глубину 85 мм.
+</p>
+                                    </div>
+                                </div>
+                            <!--/row-->
                         </div> <!--/bs-callout bs-callout-warning cont/-->
                     </section> 
                 </article>   
