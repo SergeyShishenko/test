@@ -77,7 +77,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr> 
                                                             <td class="boldstyle" >SX&nbsp;6&nbsp;x&nbsp;30</td>
                                                             <td class="t-alg-center" >70006</td>                                                            
-                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="35">6</td> <!-- Диаметр сверления -->
+                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="120">6</td> <!-- Диаметр сверления -->
                                                             <td class="t-alg-center">40</td><!-- Мин.глубина сверления -->
                                                             <td class="t-alg-center boldstyle">30</td><!-- Длина дюбеля = мин.глубина анкеровки -->
                                                             <td class="t-alg-center">10</td><!-- Макс. толщина закрепляемого материала -->
@@ -93,9 +93,9 @@ include 'inc-left-side-menu-furnitura.php';
                                                             </td>                                                            
                                                         </tr>
                                                         <tr> 
-                                                            <td class="boldstyle" >SX&nbsp;6&nbsp;x&nbsp;50</td>
+                                                            <td class="boldstyle" >SX&nbsp;6&nbsp;x&nbsp;50&nbsp;R</td>
                                                             <td class="t-alg-center" >078185</td>                                                            
-                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="35">6</td> <!-- Диаметр сверления -->
+                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="121">6</td> <!-- Диаметр сверления -->
                                                             <td class="t-alg-center">60</td><!-- Мин.глубина сверления -->
                                                             <td class="t-alg-center boldstyle">50</td><!-- Длина дюбеля = мин.глубина анкеровки -->
                                                             <td class="t-alg-center">&mdash;</td><!-- Макс. толщина закрепляемого материала -->
@@ -113,7 +113,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr> 
                                                             <td class="boldstyle" >SXL&nbsp;6&nbsp;x&nbsp;50*</td>
                                                             <td class="t-alg-center" >024827</td>                                                            
-                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="35">6</td> <!-- Диаметр сверления -->
+                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="122">6</td> <!-- Диаметр сверления -->
                                                             <td class="t-alg-center">60</td><!-- Мин.глубина сверления -->
                                                             <td class="t-alg-center boldstyle">50</td><!-- Длина дюбеля = мин.глубина анкеровки -->
                                                             <td class="t-alg-center">&mdash;</td><!-- Макс. толщина закрепляемого материала -->
@@ -130,8 +130,8 @@ include 'inc-left-side-menu-furnitura.php';
                                                         </tr>
                                                         <tr> 
                                                             <td class="boldstyle" >SX&nbsp;8&nbsp;x&nbsp;40</td>
-                                                            <td class="t-alg-center" >070008</td>                                                            
-                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="35">8</td> <!-- Диаметр сверления -->
+                                                            <td class="t-alg-center" >70008/90</td>                                                            
+                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="123">8</td> <!-- Диаметр сверления -->
                                                             <td class="t-alg-center">50</td><!-- Мин.глубина сверления -->
                                                             <td class="t-alg-center boldstyle">40</td><!-- Длина дюбеля = мин.глубина анкеровки -->
                                                             <td class="t-alg-center">20</td><!-- Макс. толщина закрепляемого материала -->
@@ -149,7 +149,7 @@ include 'inc-left-side-menu-furnitura.php';
                                                         <tr> 
                                                             <td class="boldstyle" >SXL&nbsp;8&nbsp;x&nbsp;65*</td>
                                                             <td class="t-alg-center" >024828</td>                                                            
-                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="35">8</td> <!-- Диаметр сверления -->
+                                                            <td class="animated boldstyle t-alg-center" data-objfurnid="124">8</td> <!-- Диаметр сверления -->
                                                             <td class="t-alg-center">75</td><!-- Мин.глубина сверления -->
                                                             <td class="t-alg-center boldstyle">65</td><!-- Длина дюбеля = мин.глубина анкеровки -->
                                                             <td class="t-alg-center">&mdash;</td><!-- Макс. толщина закрепляемого материала -->
