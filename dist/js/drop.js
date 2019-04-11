@@ -1174,7 +1174,9 @@ dataArrayTitle={};
     
             // $('#uploaded-files').append(data);
             $(eventObject.target).attr('href', './vpi/'+data);
-            $(eventObject.target).attr('download', $('#order_output').text()+'-Комплект '+titul+'.xlsx');
+            var desc = data.split("~");
+            // $(eventObject.target).attr('download', $('#order_output').text()+'-Комплект '+titul+'.xlsx');
+            $(eventObject.target).attr('download', desc[0]+'-Комплект '+titul+'.xlsx');
             
 
         });  

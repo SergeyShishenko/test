@@ -166,8 +166,34 @@ if (isset($_POST['order'])) {
             }//if 
 
             $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+           
+            $prod = explode(",", (string)$_POST['product']);//массив из строки изделий
 
-            $fname=$_POST['order']."-".$_POST['gen']."-".date('m-d-Y-H-i-s').".xlsx";
+            if (count($prod)>3)
+            { 
+                $endgroupp=$prod[1];
+                $first = $prod[0];
+                $str=$prod[0];
+                for($i = 1; $i < count($prod); $i++) { 
+                    if($prod[$i] - $prod[$i-1] != 1) {
+                        if($first != $endgroupp) {$str=$str."-".$endgroupp;}       
+                       // console.log("Конец группы: "+endgroupp);
+                       // console.log("Начало следующей группы: "+prod[i]);
+                       $first=$prod[$i];
+                       $str=$str.",".$prod[$i];
+                       
+                   }
+                      $endgroupp=$prod[$i];
+               }
+               
+               if($first !=$endgroupp){$str=$str."-".$endgroupp;}
+
+            }
+            else{$str=(string)$_POST['product'];}
+
+
+
+            $fname=$_POST['order']."_".$str."~".$_POST['gen']."-".date('m-d-Y-H-i-s').".xlsx";
             $objWriter->save($_SERVER['DOCUMENT_ROOT'] .$site."/vpi/".$fname);
             // if ($site) {
             //     $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
