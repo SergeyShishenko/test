@@ -176,7 +176,15 @@ if (isset($_POST['order'])) {
                 $str=$prod[0];
                 for($i = 1; $i < count($prod); $i++) { 
                     if($prod[$i] - $prod[$i-1] != 1) {
-                        if($first != $endgroupp) {$str=$str."-".$endgroupp;}       
+
+                        // if($first != $endgroupp) {$str=$str."-".$endgroupp;}  
+                        if($first != $endgroupp)
+                            {             
+                                if($first == ($endgroupp-1))
+                                {$str = $str.",".$endgroupp;}
+                                else{$str = $str."-".$endgroupp;}
+                            } 
+
                        // console.log("Конец группы: "+endgroupp);
                        // console.log("Начало следующей группы: "+prod[i]);
                        $first=$prod[$i];
@@ -186,7 +194,13 @@ if (isset($_POST['order'])) {
                       $endgroupp=$prod[$i];
                }
                
-               if($first !=$endgroupp){$str=$str."-".$endgroupp;}
+            //    if($first !=$endgroupp){$str=$str."-".$endgroupp;}
+            if($first != $endgroupp)
+            {             
+                if($first == ($endgroupp-1))
+                {$str = $str.",".$endgroupp;}
+                else{$str = $str."-".$endgroupp;}
+            } 
 
             }
             else{$str=(string)$_POST['product'];}
