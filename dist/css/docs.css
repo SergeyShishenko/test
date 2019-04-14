@@ -1,3 +1,4 @@
+/* dist\css\docs.css */
 body {
   position: relative;
   padding-top: 50px;
@@ -37,10 +38,11 @@ body {
 
 }
 input.form-c{width: 50px !important;text-align: center;vertical-align: bottom; padding:6px 0;}
-@media (max-width: 767px){
+
+@media (max-width: 1820px){
 .table-responsive {
    
-    font-size: 9px;
+    font-size: 12px;
 }
 .input-group-btn-vertical .btn,input.form-c{font-size: 9px;height: auto;}
 }
@@ -839,6 +841,15 @@ a.navbar-brand{text-align: center;}
   body{
     font-size: 8.5px !important;
   }
+
+  /* .table-responsive {
+   
+    font-size: 9px;
+} */
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  padding: 1px;}
+
   .menu2 .list-group-item,.menu2 .list-group,.menu .list-group{
     width: 300PX !important;/*ширина submenu*/   
   }
@@ -1632,6 +1643,7 @@ div.btn-side.right-menu{left:-50px  !important;}
 ul.stat {margin-bottom: 0 !important;}
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+
   ul.search_result {  
     max-width: 700px !important;
     margin-left: -648px !important;
@@ -1771,14 +1783,12 @@ h6{font-size: 8px !important;}
 
 
 
-/* @media (max-width: 1200px) {
-  .col-md-8-non {
- 
-    margin-left: 67px;
-    width: 60%;
-    
-  }
-} */
+@media (max-width: 1200px) {
+   .table-responsive {
+   
+    font-size: 9px;
+}
+}
 /*  */
 
 .bs-docs-section + .bs-docs-section {
@@ -2421,6 +2431,44 @@ table.centered td,table.centered th{
   text-indent: 0px;
   line-height: 1.5 ;
   text-align: justify;
+}
+
+/* Сетка с 5 колонок */
+
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+ 
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+ 
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+ 
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
+ 
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
 }
 
 

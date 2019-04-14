@@ -23,7 +23,12 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'id'=> "#dyubelSX",
                     'img'=> $path_img."tbsSX.png",
                     'keywords'=>"",
-                    'def'=>"Дюбель SX нейлон"];
+                    'def'=>"Дюбель распорный SX нейлон"];
+    $universalnaya[4]=['path'=>"furnitura-universalnaya-dyubelS.php",
+                    'id'=> "#dyubelS",
+                    'img'=> $path_img."tbsS.png",
+                    'keywords'=>"",
+                    'def'=>"Дюбель распорный S нейлон"];
 
     // $samorezyPolnaya[2]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php",
     //                 'id'=> "#petlya-nakladnaya",
