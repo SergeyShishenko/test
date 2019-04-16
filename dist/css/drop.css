@@ -84,6 +84,10 @@
             /* background: url(../img/ajax-loaders/ajax-loader-6.gif); */
             background: url(ajax-loader-6.gif);
         }
+        div.material-switch{
+            margin-right: 5%;
+            padding: 5px;
+        }
         .material-switch > input[type="checkbox"] {
             display: none;   
         }

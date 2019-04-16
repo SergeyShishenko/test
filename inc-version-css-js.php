@@ -1,9 +1,9 @@
 <?php
 // inc-version-css-js.php
 $gridVersion = 9;
-$docsVersion = 55;
+$docsVersion = 56;
 $docsfirstVersion=3;
-$dropVersion=5;
+$dropVersion=6;
 $scriptVersion = 30;
 $script2Version = 22;
 $floatingVersion = 21;

@@ -847,8 +847,8 @@ a.navbar-brand{text-align: center;}
     font-size: 9px;
 } */
 
-.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-  padding: 1px;}
+/* .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  padding: 1px;} */
 
   .menu2 .list-group-item,.menu2 .list-group,.menu .list-group{
     width: 300PX !important;/*ширина submenu*/   
