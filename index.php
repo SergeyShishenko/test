@@ -4182,7 +4182,7 @@ include 'inc-goup-menu-furnitura-petlyB.php';
                                                                     <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
                                                                     <TR>
                                                                         <TD data-tooltip="" class="hover mapsite" id="flo-shtampergonom">
-                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#shtampergonom">5000404-02-028 обозначение на чертеже отступление от требований эргономики<span><br>~5000404-02-028 </span></p>
+                                                                            <p data-href="metodichki-stp-po-proektnoy-rabote.php#shtampergonom">5000404-02-028 обозначение на чертеже (штамп) отступление от требований эргономики<span><br>~5000404-02-028 </span></p>
                                                                         </TD>                                                             
                                                                     </TR> 
                                                                       
