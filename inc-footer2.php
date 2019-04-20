@@ -16,6 +16,7 @@
     <script src="./dist/js/application.js"></script> 
     <!--<script src="./dist/js/main.26.04.2018.js"></script> -->
     <script src="./dist/js/script2.js?v='<?php echo $script2Version; ?>'"></script> 
+    <script src="./dist/js/calcMovento.js"></script>
 
    <script src="./dist/js/closest.js"></script>
     <script src="./dist/js/blazy.min.js"></script>
