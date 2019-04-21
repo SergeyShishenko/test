@@ -4,7 +4,8 @@
     var $old_width=parseInt($("#width_box_input").val());
     var $old_depth=parseInt($("#box-depth_input").val());
     var $old_depth_x=parseInt($("#box-depth_x_input").val());
-    var $x=parseInt($("#input_x").val());   
+    // var $x=parseInt($("#input_x").val());   
+    var $x=0;   
     var $gap=3;
     var $depthmin =253;
     var $Radio=1;
@@ -61,9 +62,10 @@
               {  
                   if ($Radio==1)
                   {
-                    // alert($Radio);
+                    // alert($x);
                     // alert(15+parseInt($("span.calcarticul:first").text(), 10));
                     $gap=15; $depthmin =250 + $x + $gap;$("span.gap").text($depthmin);
+
                     if($("#box-depth_input").val()<= 15+parseInt($("span.calcarticul:first").text(), 10)){ 
                         $("#sidestab").removeClass("dis");
                     }
@@ -93,7 +95,7 @@
                       if($("#box-depth_input").val()<$depthmin){$("#box-depth_input").val($depthmin);}
                   }else //$Radio==2
                   {
-                    alert($Radio);
+                    // alert($Radio);
                       $("#sidestab").addClass("dis");$gap=3; $depthmin =250 + $x + $gap;$("span.gap2").text($depthmin);$("#width_box_input_def").css("color", "black");
                       if($("#box-depth_x_input").val()<$depthmin){$("#box-depth_x_input").val($depthmin);}
                   }
@@ -119,7 +121,7 @@
               var value=$( this ).val()-$gap;
               calcfurn(value);
               calcsidestab($("span.calcarticul:first").text());
-
+// alert(15+parseInt($("span.calcarticul:first").text(), 10));
               if($("#box-depth_input").val()<= 15+parseInt($("span.calcarticul:first").text(), 10) && $("#width_box_input").val>600 ){ 
                 $("#sidestab").removeClass("dis");
             }
