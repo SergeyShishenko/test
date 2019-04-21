@@ -322,52 +322,7 @@
             // Для каждого файла
             fupload(dataArray);
 
-            // $.each(dataArray, function(index, file) {	
-
-            //     // загружаем страницу и передаем значения, используя HTTP POST запрос 
-            //     //  dataplas= $.merge( {tbl : "obj", field : "name_obj"}, dataArray[index]);
-            //     $.post('./vpi/upload.php', dataArray[index] , function(data) {
-                
-                
-            //         ++x;
-                 
-            //         restartFiles();
-            //         $('#drop-files').hide();
-            //         $('#uploaded-files').append(data);
-            //         var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
-            //         DbNumberID = clickedID[0]; //и получаем номер из массива
-                    
-            //         objxlsx.push(DbNumberID);
-            //         // objxlsx[DbNumberID]=(new Objx(DbNumberID));
-            //         objxlsx[DbNumberID]=[];
-            //         $('#DelSubmit').show();
-            //         $('#CreateSubmit').show();
-            //          floor={}; //Этаж
-            //          room={}; //Помещение
-            //          complect={}; //Комплект изделий
-            //          product={}; //Изделия
-            //          arr_s=[];
-            //          arr_table=[];
-            //          arr_prev=[];
-                     
-                 
-            //         $("body #uploaded-files table.zakaz  tr:gt(0)").each(function (index, value) { 
-            // // console.log('tr '+ index );
-            // var c = $(this).find('td[id^="product"]').text();
-            // var c2 = $(this).find('td[id^="product2"]').text();
-            // if (c2==""){
-            //     // console.log('tr' + index + ':' + c); 
-            //     arr_table[index]=c;
-            // }
-            // else{
-            //     // console.log('tr' + index + ':' + c2);
-            //     arr_table[index]=c2;
-            // }
-            
-            // });
-            //     });
-            // });
-
+       
 
             // Показываем список загруженных файлов
             $('#uploaded-files').show();
@@ -390,6 +345,7 @@
                  
                     restartFiles();
                     $('#drop-files').hide();
+                    $('#table-saved-files').hide();
                     $('#uploaded-files').append(data);
                     var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
                     DbNumberID = clickedID[0]; //и получаем номер из массива
@@ -512,6 +468,7 @@
                         // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
                         console.log(response);
                         $('#drop-files').show();
+                        $('#table-saved-files').show();
 
                         },
                         error:function (xhr, ajaxOptions, thrownError){
@@ -638,7 +595,7 @@ function delfiles()
         success:function(response){
         // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
         console.log(response);
-        // $('#drop-files').show();
+        
 
         },
         error:function (xhr, ajaxOptions, thrownError){
@@ -673,7 +630,7 @@ function checkAddress(checkbox,s)
         success:function(response){
         // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
         console.log(response);
-        // $('#drop-files').show();
+        
 
         },
         error:function (xhr, ajaxOptions, thrownError){
@@ -1187,17 +1144,21 @@ dataArrayTitle={};
     $("body").on('transitionend','.button-gen', function() {
         $( this ).addClass( "finished-gen" );
     });
-// после генерации    
+// после генерации end   
 
 
 
+$("#search_order").keyup(function(){
+    _this = this;
+    $.each($("#order_table tbody tr"), function() {
+        if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+           $(this).hide();
+        else
+           $(this).show();                
+    });
+});
 
-// $("body").on('click','.finished-gen', function(eventObject) {
-
- 
-//     // $(eventObject.target).attr('href', '#');
-//     // $(eventObject.target).removeAttr("download");
-//     // $( this ).removeClass( "finished-gen" );
- 
-    
-// });
+$("#order_table tbody td").dblclick(function(){
+    // $(this).parent().find("td:eq(1)");
+    alert($(this).parent().find("td:eq(1)").text());
+  });

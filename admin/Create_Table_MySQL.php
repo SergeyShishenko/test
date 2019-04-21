@@ -6,11 +6,6 @@ define('__ROOT__', dirname(dirname(__FILE__)));
 require_once dirname(__ROOT__).'/DATA/TABLES/configDB.php'; 
 ///////////////////////////////create tables////////////////////////////////////////////////
 
-
-
-
-
-
 ////
 $dbconn=dbconnect();
 if ( !$dbconn ) die("Error");

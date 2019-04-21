@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Живой поиск по таблице с помощью jQuery</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="row">
+            <div class="container">
+                <div class="form-group">
+                    <input type="text" class="form-control pull-right" style="width:20%" id="search_order" placeholder="Поиск по таблице">
+                </div>
+                <br>
+                <table class="table table-striped" id="order_table" cellspacing="0" style="width: 100%;">
+                    <thead>
+                        <tr role="row">
+                            <th>Название</th>                            
+                            <th>Автор</th>							
+                            <th>Дата</th>
+							<th>Просмотры</th>
+                            <th>Категория</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>jQuery, стилизация полей ввода с помощью fancyInput</td>
+                            <td>Алиса</td>
+                            <td>3 ноября 2016 г.</td>
+                            <td>34</td>
+                            <td>jQuery</td>
+                        </tr>
+                        <tr>
+                            <td>JQuery email autocomplete. Автозавершение электронной почты в форме</td>
+                            <td>Алиса</td>
+                            <td>25 августа 2016 г.</td>
+                            <td>56</td>
+                            <td>jQuery</td>
+                        </tr>
+						<tr>
+                            <td>Проверка надежности пароля с помощью jQuery</td>
+                            <td>Алиса</td>
+                            <td>18 августа 2016 г.</td>
+                            <td>68</td>
+                            <td>jQuery</td>
+                        </tr>
+						<tr>
+                            <td>Прогресс бар прокрутки страницы</td>
+                            <td>Алиса</td>
+                            <td>12 августа 2016 г.</td>
+                            <td>99</td>
+                            <td>jQuery</td>
+                        </tr>
+						<tr>
+                            <td>Вывод превью изображений перед загрузкой с помощью JavaScript и HTML5 FileReader()</td>
+                            <td>Алиса</td>
+                            <td>16 июня 2016 г.</td>
+                            <td>99</td>
+                            <td>jQuery</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script>
+        $(document).ready(function(){
+            $("#search_order").keyup(function(){
+                _this = this;
+                $.each($("#order_table tbody tr"), function() {
+                    if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+                       $(this).hide();
+                    else
+                       $(this).show();                
+                });
+            });
+        });
+        </script>
+    </body>
+</html>
