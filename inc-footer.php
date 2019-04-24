@@ -41,55 +41,9 @@
                                 <input type="file" id="uploadbtn" multiple  >
                                 <!-- </form> -->
                             </div>
-                            <div id="table-saved-files" class="row">
-                                <!-- <div class="container"> -->
-                                    <div class="form-group">
-                                        <input type="text" class="form-control pull-right" style="width:20%" id="search_order" placeholder="Поиск по таблице">
-                                    </div>
-                                    <br>
-                                    <table class="table table-striped" id="order_table" cellspacing="0" >
-                                        <thead>
-                                            <tr role="row">
-                                                <th>Заказчик</th>                            
-                                                <th>Номер заказа</th>							
-                                                <th>Руководитель группы</th>                                               
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>jQuery, стилизация полей ввода с помощью fancyInput</td>                                                
-                                                <td>2312</td>
-                                                <td>Александр</td>
-                                            </tr>
-                                            <tr>
-                                                <td>JQuery email autocomplete. Автозавершение электронной почты в форме</td>
-                                                
-                                                <td>2045</td>
-                                                <td>Татьяна</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Проверка надежности пароля с помощью jQuery</td>
-                                                
-                                                <td>2417</td>
-                                               <td>Алексей</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Прогресс бар прокрутки страницы</td>
-                                                
-                                                <td>2384</td>
-                                              <td>Денис</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Вывод превью изображений перед загрузкой с помощью JavaScript и HTML5 FileReader()</td>
-                                                
-                                                <td>2299</td>
-                                               <td>Алиса</td>
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                <!-- </div> -->
-                            </div>
+
+                            <? include 'vpi/inc-list-csv.php'; ?>
+                            
                             <!-- /table-saved-files -->
 
                             <!-- Область предпросмотра -->
