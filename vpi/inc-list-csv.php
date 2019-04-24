@@ -30,16 +30,16 @@
             ';
 
     // //MySQL запрос
-    $Result_co = mysqli_query($dbconn,"SELECT `current_orders.client_current_orders`, `current_orders.number_orders`, `group_leader.name_group_leader` FROM `current_orders` LEFT JOIN `group_leader` ON `current_orders.group_leader_id` = `group_leader.group_leader_id` ORDER BY `current_orders`.`number_orders` ASC");
+    $Result_co = mysqli_query($dbconn,"SELECT current_orders.client_current_orders, current_orders.number_orders, group_leader.name_group_leader FROM current_orders LEFT JOIN group_leader ON current_orders.group_leader_id = group_leader.group_leader_id ORDER BY current_orders.number_orders ASC");
     
    
     // mysqli_query($dbconn,$sql);
     if($Result_co)
                 { 
-                    echo '$Result_co';
+                    // echo '$Result_co';
                  }
                 else{//вывод ошибки                                        
-                    header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '" -> ".mysqli_error($dbconn));
+                    echo mysqli_error($dbconn);
                     exit();
                 } 
 
