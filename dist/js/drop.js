@@ -1154,8 +1154,11 @@ $("#search_order").keyup(function(){
         if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
            $(this).hide();
         else
-           $(this).show();                
+           $(this).show(); 
+        //    console.log(':visible ' +$(this).is(':visible'));               
     });
+    console.log(':visible ' + $("#order_table tbody tr:visible").length);
+    console.log($("#order_table tbody tr:visible").first().find("td:eq(1)").text());
 });
 
 $("#order_table tbody td").dblclick(function(){
