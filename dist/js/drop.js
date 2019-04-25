@@ -1151,6 +1151,7 @@ dataArrayTitle={};
 $("#search_order").keyup(function(){
     _this = this;
     $.each($("#order_table tbody tr"), function() {
+        $(this).removeClass('pressedTime');
         if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
            $(this).hide();
         else
@@ -1159,6 +1160,8 @@ $("#search_order").keyup(function(){
     });
     console.log(':visible ' + $("#order_table tbody tr:visible").length);
     console.log($("#order_table tbody tr:visible").first().find("td:eq(1)").text());
+    $("#order_table tbody tr:visible").first().addClass('pressedTime');
+    
 });
 
 $("#order_table tbody td").dblclick(function(){
