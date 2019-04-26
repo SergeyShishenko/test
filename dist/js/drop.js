@@ -346,6 +346,9 @@
                     restartFiles();
                     $('#drop-files').hide();
                     $('#table-saved-files').hide();
+                    $.each($("#order_table tbody tr"), function() {
+                        $(this).removeClass('pressedTime');                   
+                    });
                     $('#uploaded-files').append(data);
                     var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
                     DbNumberID = clickedID[0]; //и получаем номер из массива
@@ -1161,12 +1164,7 @@ $("#search_order").keyup(function(){
     console.log(':visible ' + $("#order_table tbody tr:visible").length);
     console.log($("#order_table tbody tr:visible").first().find("td:eq(1)").text());
     $("#order_table tbody tr:visible").first().addClass('pressedTime');
-    if(event.keyCode == 13){
-        event.preventDefault();
-     
-        alert( $("#order_table tbody tr.pressedTime").find("td:eq(1)").text());
-
-    }
+ 
    
 });
 
@@ -1183,12 +1181,16 @@ $("#order_table tbody td").click(function(){
     $(this).parent().addClass('pressedTime');
   });
   
-  $("#order_table").keyup(function(){
-    alert("#order_table" );
-    if(event.keyCode == 13){
+
+$( "body" ).keyup(function( event ){ 
+
+        if(event.keyCode == 13){
         event.preventDefault();
-     
-        alert( $("#order_table tbody tr.pressedTime").find("td:eq(1)").text());
+        console.log( $("#order_table tbody tr").is(".pressedTime"));
+       if ($("#order_table tbody tr").is(".pressedTime"))
+        {alert( $("#order_table tbody tr.pressedTime").find("td:eq(1)").text());}
 
     }
-});
+
+ 
+  });
