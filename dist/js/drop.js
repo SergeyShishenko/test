@@ -413,10 +413,10 @@
       
 
     /////// drop
-
-     // при открытии модального окна
-        $('#GENModal').on('show.bs.modal', function (event) {         
-        });
+// при открытии модального окна
+$('#GENModal').on('show.bs.modal', function (event) {         
+});
+     
 
            //Удаляем запись 
            $("body").on("click", "#DelSubmit", function(e) {
@@ -1161,10 +1161,34 @@ $("#search_order").keyup(function(){
     console.log(':visible ' + $("#order_table tbody tr:visible").length);
     console.log($("#order_table tbody tr:visible").first().find("td:eq(1)").text());
     $("#order_table tbody tr:visible").first().addClass('pressedTime');
-    
+    if(event.keyCode == 13){
+        event.preventDefault();
+     
+        alert( $("#order_table tbody tr.pressedTime").find("td:eq(1)").text());
+
+    }
+   
 });
 
 $("#order_table tbody td").dblclick(function(){
     // $(this).parent().find("td:eq(1)");
     alert($(this).parent().find("td:eq(1)").text());
   });
+$("#order_table tbody td").click(function(){
+
+    $.each($("#order_table tbody tr"), function() {
+        $(this).removeClass('pressedTime');                   
+    });
+    
+    $(this).parent().addClass('pressedTime');
+  });
+  
+  $("#order_table").keyup(function(){
+    alert("#order_table" );
+    if(event.keyCode == 13){
+        event.preventDefault();
+     
+        alert( $("#order_table tbody tr.pressedTime").find("td:eq(1)").text());
+
+    }
+});
