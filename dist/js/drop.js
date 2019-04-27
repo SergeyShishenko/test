@@ -1185,14 +1185,29 @@ $( "body" ).keyup(function( event ){
 
             }
     if(event.keyCode == 40){
-    event.preventDefault();
+    // event.preventDefault();
     console.log('вниз');
-    console.log($("#order_table tbody tr.pressedTime").index());
+    // console.log($("#order_table tbody tr:visible").length);
+    // console.log($("#order_table tbody tr.pressedTime:visible").index());
     $('#search_order').blur();
+
+    $currentTr = $("#order_table tbody tr:visible.pressedTime");  
+    $($currentTr).removeClass('pressedTime');    
+    $currentTr = $($currentTr).next();
+    $($currentTr).addClass('pressedTime');
+
+    // console.log('$currentTr.text() '+$($currentTr).length);
+    // $("#order_table tbody tr.pressedTime").next("td:eq(1)")
+
     }
     if(event.keyCode == 38){
-        event.preventDefault();
+        // event.preventDefault();
         console.log('вверх');
+
+        $currentTr = $("#order_table tbody tr:visible.pressedTime");  
+        $($currentTr).removeClass('pressedTime');    
+        $currentTr = $($currentTr).prev();
+        $($currentTr).addClass('pressedTime');
         }
  
   });
@@ -1205,8 +1220,13 @@ $('#GENModal').on('show.bs.modal', function () {
     setTimeout(function () {
          $('#search_order').focus();
          $("#order_table tbody tr:visible").first().addClass('pressedTime');
+         $currentTr = $("#order_table tbody tr:visible.pressedTime");
          }, 500);
+         
+        //  console.log('$currentTr.text() '+$currentTr.length);
 });
+var $currentTr = $("#order_table tbody tr:visible.pressedTime");
+// console.log('$currentTr.text() '+$($currentTr).html());
 $("#search_order").keyup(function(event){
     event.preventDefault();
     _this = this;
