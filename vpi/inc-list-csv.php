@@ -15,7 +15,7 @@
     <div id="table-saved-files" class="row">
     
         <div class="form-group">
-            <input type="text" class="form-control pull-right" style="width:20%" id="search_order" placeholder="Поиск по таблице">
+            <input type="text" class="form-control pull-right" style="width:20%" id="search_order" placeholder="Поиск по таблице" autocomplete="off">
         </div>
         <br>
         <table class="table table-striped" id="order_table" cellspacing="0" >

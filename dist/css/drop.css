@@ -273,3 +273,5 @@
         a.btnA:hover{
             color: #333333;
         }
+
+        #order_table > tbody > tr > td:nth-child(2){font-weight: 600 !important;}

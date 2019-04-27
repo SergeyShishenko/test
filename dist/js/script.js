@@ -22,7 +22,7 @@ if (navigator.userAgent.search(/Iceweasel/) > 0) {a = 'Debian Iceweasel';}
 if (navigator.userAgent.search(/SeaMonkey/) > 0) {a = 'SeaMonkey';}
 if (navigator.userAgent.search(/Edge/) > 0) {a = 'Microsoft Edge';}
 // alert(a); // В переменной a будет название браузера
-console.log(a);
+// console.log(a);
 }
 
 
@@ -157,7 +157,7 @@ var BrowserDetect = {
 }; 
 BrowserDetect.init(); 
 
-console.log(BrowserDetect.browser+"/"+BrowserDetect.version); 
+// console.log(BrowserDetect.browser+"/"+BrowserDetect.version); 
 // console.log(BrowserDetect.version); 
 // console.log(BrowserDetect.OS);
 // console.log('opera -> '+window.opera);
@@ -200,7 +200,7 @@ BrowserDetect={};
 // console.log("browser " + browser.opera);
 // console.log("Вы используете браузер " + navigator.appName);
 var xa = navigator.userAgent;
-console.log("Вы используете браузер " + xa);
+// console.log("Вы используете браузер " + xa);
 // console.log("Вы используете браузер2 " + navigator.getUserMedia);
 // console.log("Вы используете браузер3 " + navigator.webkitGetUserMedia);
 // console.log("Вы используете браузер4 " + navigator.mozGetUserMedia);
@@ -214,8 +214,8 @@ function getWH()
     
     var h = window.innerHeight  || outerHeight  || document.documentElement.clientHeight  || document.body.clientHeight;
 
-    console.log ("w"+window.outerWidth );// текущая ширина экрана 
- console.log ("h"+window.outerHeight );// текущая ширина экрана 
+//     console.log ("w"+window.outerWidth );// текущая ширина экрана 
+//  console.log ("h"+window.outerHeight );// текущая ширина экрана 
 
 // var x = document.getElementById("body");
 // x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";

@@ -416,10 +416,8 @@
       
 
     /////// drop
-// при открытии модального окна
-$('#GENModal').on('show.bs.modal', function (event) {         
-});
-     
+
+
 
            //Удаляем запись 
            $("body").on("click", "#DelSubmit", function(e) {
@@ -472,6 +470,12 @@ $('#GENModal').on('show.bs.modal', function (event) {
                         console.log(response);
                         $('#drop-files').show();
                         $('#table-saved-files').show();
+                        $("#order_table tbody tr:visible").first().addClass('pressedTime');
+                        $('#search_order').focus();
+                        // setTimeout(function () {                            
+                        //     // $("#order_table tbody tr:visible").first().addClass('pressedTime');
+                        //     $('#search_order').focus();
+                        //     }, 500);
 
                         },
                         error:function (xhr, ajaxOptions, thrownError){
@@ -1151,22 +1155,7 @@ dataArrayTitle={};
 
 
 
-$("#search_order").keyup(function(){
-    _this = this;
-    $.each($("#order_table tbody tr"), function() {
-        $(this).removeClass('pressedTime');
-        if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
-           $(this).hide();
-        else
-           $(this).show(); 
-        //    console.log(':visible ' +$(this).is(':visible'));               
-    });
-    console.log(':visible ' + $("#order_table tbody tr:visible").length);
-    console.log($("#order_table tbody tr:visible").first().find("td:eq(1)").text());
-    $("#order_table tbody tr:visible").first().addClass('pressedTime');
- 
-   
-});
+
 
 $("#order_table tbody td").dblclick(function(){
     // $(this).parent().find("td:eq(1)");
@@ -1184,13 +1173,85 @@ $("#order_table tbody td").click(function(){
 
 $( "body" ).keyup(function( event ){ 
 
+// event.preventDefault(); 
+   
+        // 
+        console.log(event.keyCode);
         if(event.keyCode == 13){
-        event.preventDefault();
-        console.log( $("#order_table tbody tr").is(".pressedTime"));
-       if ($("#order_table tbody tr").is(".pressedTime"))
-        {alert( $("#order_table tbody tr.pressedTime").find("td:eq(1)").text());}
+            // alert();
+            console.log( $("#order_table tbody tr").is(".pressedTime"));
+        if ($("#order_table tbody tr").is(".pressedTime"))
+            {alert( $("#order_table tbody tr.pressedTime").find("td:eq(1)").text());}
 
+            }
+    if(event.keyCode == 40){
+    event.preventDefault();
+    console.log('вниз');
+    console.log($("#order_table tbody tr.pressedTime").index());
+    $('#search_order').blur();
     }
-
+    if(event.keyCode == 38){
+        event.preventDefault();
+        console.log('вверх');
+        }
  
   });
+
+  // при открытии модального окна
+$('#GENModal').on('show.bs.modal', function () {  
+  
+    //    $('input#search_order').trigger('focus');
+    // $('input#search_order').focus();
+    setTimeout(function () {
+         $('#search_order').focus();
+         $("#order_table tbody tr:visible").first().addClass('pressedTime');
+         }, 500);
+});
+$("#search_order").keyup(function(event){
+    event.preventDefault();
+    _this = this;
+    // console.log(event.keyCode);
+    // console.log('_this '+$(this).text());
+    // alert();
+    
+    console.log(event.keyCode);
+    if(event.keyCode != 13){
+        $.each($("#order_table tbody tr"), function() {
+            $(this).removeClass('pressedTime');
+            if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+            $(this).hide();
+            else
+            $(this).show(); 
+            //    console.log(':visible ' +$(this).is(':visible'));               
+        });
+    }
+    console.log(':visible ' + $("#order_table tbody tr:visible").length);
+    console.log($("#order_table tbody tr:visible").first().find("td:eq(1)").text());
+    $("#order_table tbody tr:visible").first().addClass('pressedTime');
+ 
+   
+});
+
+// $(function() { //ctrl+F
+//     $(document).keydown(function(objEvent) {
+//     if (objEvent.ctrlKey) {
+//     if (objEvent.keyCode == 70) {
+//     objEvent.preventDefault();
+//     setTimeout(function () {
+//          $('#search_order').focus();
+      
+//          }, 100);
+    
+//     }
+//     }
+//     });
+//     });
+
+    // $(function() { 
+    //     $(document).keydown(function(objEvent) {       
+    //     if (objEvent.keyCode == 40) { objEvent.preventDefault();   }// стрелка вниз
+    //     $('#search_order').blur();
+    //     });
+    //     });
+
+ 

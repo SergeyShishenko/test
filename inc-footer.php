@@ -22,7 +22,7 @@
                     <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
                     </a>                
                 
-                    <form id="frm">                        
+                    <!-- <form id="frm">                         -->
                         <input type="hidden" id="tbl" value="">
                         <input type="hidden" id="field" value="">
                         <input type="hidden" id="fieldid" value="">
@@ -75,7 +75,7 @@
                             </div>
             
                         </div>  
-                    </form>               
+                    <!-- </form>                -->
                 </div> 
             </div>
             <div class="modal-footer">
