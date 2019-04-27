@@ -1192,12 +1192,21 @@ $( "body" ).keyup(function( event ){
     $('#search_order').blur();
 
     $currentTr = $("#order_table tbody tr:visible.pressedTime");  
-    $($currentTr).removeClass('pressedTime');    
-    $currentTr = $($currentTr).next();
+    $($currentTr).removeClass('pressedTime');  
+    // console.log('$currentTr.length '+$($currentTr).next().length);    
+    // console.log('next() '+$($currentTr).next().is(':visible'));
+    while ($($currentTr).next().is(':hidden')) {
+        $currentTr = $($currentTr).next();  
+      }
+
+     if($($currentTr).next().length>0 && $($currentTr).next().is(':visible'))
+      {
+        $currentTr = $($currentTr).next();  
+      }else{$currentTr = $("#order_table tbody tr:visible").first();  }
+    
     $($currentTr).addClass('pressedTime');
 
-    // console.log('$currentTr.text() '+$($currentTr).length);
-    // $("#order_table tbody tr.pressedTime").next("td:eq(1)")
+   
 
     }
     if(event.keyCode == 38){
@@ -1205,8 +1214,21 @@ $( "body" ).keyup(function( event ){
         console.log('вверх');
 
         $currentTr = $("#order_table tbody tr:visible.pressedTime");  
-        $($currentTr).removeClass('pressedTime');    
-        $currentTr = $($currentTr).prev();
+        $($currentTr).removeClass('pressedTime'); 
+    //     console.log('$currentTr.length '+$($currentTr).prev().length);    
+    // console.log('prev() '+$($currentTr).prev().is(':visible'));
+        
+        while ($($currentTr).prev().is(':hidden')) {
+            $currentTr = $($currentTr).prev();  
+          }
+        
+        if($($currentTr).prev().length>0 && $($currentTr).prev().is(':visible'))
+        {
+            $currentTr = $($currentTr).prev();
+        }else{$currentTr = $("#order_table tbody tr:visible").last();  }
+        
+
+
         $($currentTr).addClass('pressedTime');
         }
  
