@@ -1231,6 +1231,9 @@ $('#GENModal').on('show.bs.modal', function () {
   
     //    $('input#search_order').trigger('focus');
     // $('input#search_order').focus();
+    $.each($("#order_table tbody tr"), function() {
+        $(this).removeClass('pressedTime');                   
+    });
     setTimeout(function () {
          $('#search_order').focus();
          $("#order_table tbody tr:visible").first().addClass('pressedTime');
