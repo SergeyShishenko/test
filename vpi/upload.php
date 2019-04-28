@@ -20,7 +20,8 @@ else {
 	// require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
 	$site='/www';
 }
-
+// echo "site $site";
+// exit();
 
 if(isset($_POST["arr"]) )//генерация файла
 {
@@ -294,12 +295,22 @@ function unique_multidim_array($array, $key)
 function fileopenxlscsv($filename)
 {
 
-	// if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php'))
-
+	
+	if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php')) {
+		// require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
+		$site='';
+	}
+	else {
+		// require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
+		$site='/www';
+	}
 	
 	if(isset($_POST["selorder"]) )
 		{
-			$filename=$_SERVER['DOCUMENT_ROOT'] ."/www". $filename;
+			$filename=$_SERVER['DOCUMENT_ROOT'] .$site. $filename;
+			// $objWriter->save($_SERVER['DOCUMENT_ROOT'] .$site."/vpi/".$fname);// для localhost !!!!!!!
+// 			echo "filename $filename";
+// exit();
 		}
 
 	$handle = @fopen($filename, "r");			
