@@ -5,6 +5,7 @@ include 'inc-func.php';
 include 'inc-goup-menu-furnitura-styazhka.php';
 include 'inc-goup-menu-shablony-dokumentov.php';
 include 'inc-goup-menu-furnitura-petlyB.php';
+include 'inc-goup-menu-furnitura-universalnaya.php';
 ?>
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">
@@ -4953,7 +4954,9 @@ include 'inc-goup-menu-furnitura-petlyB.php';
                                                                 </TABLE>
                                                             </TD>
                                                         </TR>                                                        
-                                                            
+                                                        <?php 
+                                                        IndexMenu($universalnaya,153);
+                                                        ?>      
                                                     </TABLE>
                                                 </TD>
                                             </TR> 
