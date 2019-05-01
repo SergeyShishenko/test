@@ -400,90 +400,86 @@ include 'inc-left-side-menu-furnitura.php';
     </div> 
 
 <!-- /часть2 --> 
+<!-- /часть --> 
+    <!-- <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
+        <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
+                    border: 1px solid rgb(221, 221, 221);
+                    box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+                    border-radius: 4px;
+                    padding: 15px;
+                    ">
 
-<!-- <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
-    <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
-                border: 1px solid rgb(221, 221, 221);
-                box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
-                border-radius: 4px;
-                padding: 15px;
-                ">
+            <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
+                <div class="row">                                                
+                    <table class="table table-striped table-responsive">
+                        
+                        <tbody> 
 
-        <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
-            <div class="row">                                                
-                <table class="table table-striped table-responsive">
-                    
-                    <tbody> 
-
-                    <tr>
-                    <th>Толщина ДСП<br>(A), мм</th>
-                    <th>L,<br>мм</th>
-                    <th>I,<br>мм</th>
-                    <th>Артикул</th>
-                    </tr>
-
-
-                    <tr>
-                    <td>16</td>
-                    <td>12,5</td>
-                    <td>8,0</td>
-                    <td><span class="boldstyle">EC02ZL</span></td>
-                    </tr>
+                        <tr>
+                        <th>Толщина ДСП<br>(A), мм</th>
+                        <th>L,<br>мм</th>
+                        <th>I,<br>мм</th>
+                        <th>Артикул</th>
+                        </tr>
 
 
-                    </tbody>
-                </table>
-            </div>                              
+                        <tr>
+                        <td>16</td>
+                        <td>12,5</td>
+                        <td>8,0</td>
+                        <td><span class="boldstyle">EC02ZL</span></td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>                              
+            </div>
+
         </div>
 
-    </div>
-
-</div> -->
+    </div> -->
 <!-- /часть --> 
-                                            </div>
-                                            <div class="tab-pane fade" id="weight">
-                                                <p>
-                                                <a>
-                                                    <img src="./dist/images/petli-dlya-fasadov-podbor-po-vesu_2.png" class="center-block   img-rounded img-thumbnail b-lazy bar img-book b-loaded" 
-                                                    data-toggle="modal" 
-                                                    data-target="#myModal" 
-                                                    alt="ПЕТЛИ для ФАСАДОВ (подбор по весу)">                                                  
-                                                </a>
-                                                </p>
-                                                <a href="https://publications.blum.com/2018/catalogue/ru/694/#zoom=z" target="_blank" type="button" class="btn btn-primary" style="color:#fff;">ИСТОЧНИК - каталог BLUM</a>
-                                            </div>
-                                            <!-- <div class="tab-pane fade" id="dropdown3">
-                                                <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia
-                                                    banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
-                                                    Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
-                                                    blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork
-                                                    sustainable tofu synth chambray yr.</p>
-                                            </div>
-                                            <div class="tab-pane fade" id="dropdown4">
-                                                <p>They sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland
-                                                    seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia
-                                                    PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral,
-                                                    mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial
-                                                    keffiyeh echo park vegan.</p>
-                                            </div> -->
-                                        </div>
-                                    </div>
                                 </div>
-                            </div> 
-                         
-                            
-                        </div> <!--/bs-callout bs-callout-warning cont/-->
-                    </section> 
-                </article>
-                    
-                    
-
-                    
-                </div> <!-- main  -->
-                <?php
-        //  include 'inc-goup-menu.php';//$styazhka=[] -->
-        SideMenu($petlyB,5);
-        ?>              
+                                <div class="tab-pane fade" id="weight">
+                                    <p>
+                                    <a>
+                                        <img src="./dist/images/petli-dlya-fasadov-podbor-po-vesu_2.png" class="center-block   img-rounded img-thumbnail b-lazy bar img-book b-loaded" 
+                                        data-toggle="modal" 
+                                        data-target="#myModal" 
+                                        alt="ПЕТЛИ для ФАСАДОВ (подбор по весу)">                                                  
+                                    </a>
+                                    </p>
+                                    <a href="https://publications.blum.com/2018/catalogue/ru/694/#zoom=z" target="_blank" type="button" class="btn btn-primary" style="color:#fff;">ИСТОЧНИК - каталог BLUM</a>
+                                </div>
+                                <!-- <div class="tab-pane fade" id="dropdown3">
+                                    <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia
+                                        banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
+                                        Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice
+                                        blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork
+                                        sustainable tofu synth chambray yr.</p>
+                                </div>
+                                <div class="tab-pane fade" id="dropdown4">
+                                    <p>They sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland
+                                        seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia
+                                        PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral,
+                                        mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial
+                                        keffiyeh echo park vegan.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+                
+            </div> <!--/bs-callout bs-callout-warning cont/-->
+        </section> 
+    </article>                    
+</div> <!-- main  -->
+<?php
+//  include 'inc-goup-menu.php';//$styazhka=[] -->
+SideMenu($petlyB,5);
+?>              
               
     
 <?php include 'inc-footer2.php'; ?>

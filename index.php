@@ -6,6 +6,7 @@ include 'inc-goup-menu-furnitura-styazhka.php';
 include 'inc-goup-menu-shablony-dokumentov.php';
 include 'inc-goup-menu-furnitura-petlyB.php';
 include 'inc-goup-menu-furnitura-universalnaya.php';
+include 'inc-goup-menu-izdeliya-mebel-korpusnaya.php';
 ?>
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">
@@ -2374,40 +2375,11 @@ include 'inc-goup-menu-furnitura-universalnaya.php';
                                                                         </TD>
                                                                 </TR> 
                                                                 <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
-                                                                <TR>
-                                                                    <TD data-tooltip="СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ" class="hover mapsite" id="footer91" >
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png" id="floating92">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span><br>~- dveri-konstrukcii</span></p> 
-                                                                            <p data-href="" data-img="./dist/images/no-foto.png" class="KEYWORDS">МЕБЕЛЬ КОРПУСНАЯ</p> 
-                                                                    </TD>                                                                            
-                                                                    <TD>
-                                                                        <TABLE >                                                                                          
-                                                                            <TR>
-                                                                                <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                    <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
-                                                                                </TD>                                                                         
-                                                                            </TR>  
-                                                                            <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                            <TR>
-                                                                                <TD class="mapsite" id="flo-">
-                                                                                    <p data-href="" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                                </TD>                                                                         
-                                                                            </TR>
-                                                                            <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                            <TR>
-                                                                                <TD class="mapsite" id="flo-">
-                                                                                    <p data-href="" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                                </TD>                                                                         
-                                                                            </TR>
-                                                                            <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                            <TR>
-                                                                                <TD class="mapsite" id="flo-">
-                                                                                    <p data-href="" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                                </TD>                                                                         
-                                                                            </TR>
-                                                                            <TR><TD></TD></TR> <!--end LEVEL4-->          
-                                                                        </TABLE>
-                                                                    </TD>
-                                                                </TR> 
+                                                                  <!--  -->
+                                                        <?php 
+                                                        IndexMenu($sborochnyeshemy,91);
+                                                        ?>                                                       
+                                                        <!--  -->  
                                                             </TABLE>
                                                         </TD>
                                             </TR> 

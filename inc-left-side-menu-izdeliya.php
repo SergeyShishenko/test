@@ -1,4 +1,5 @@
 <?php
+// inc-left-side-menu-izdeliya.php
 // переменные на странице 
 // $item_bloki_dvernye_Class = 'active';
 // $item_mebel_korpusnaya_Class = '';
@@ -13,7 +14,10 @@
 
 
 ?>
-<?php echo'
+
+<?php 
+include 'inc-goup-menu-izdeliya-mebel-korpusnaya.php';//$sborochnyeshemy=[]
+echo'
 <article itemscope="" itemtype="http://schema.org/WebPage">   
 <div class="container bs-docs-container" >
     <div class="row">                
@@ -89,10 +93,10 @@
                         </ul>
                     </li>
                     <!-- menu -->
-                    <li class="menu  disabled">
+                    <li class="menu  ">
                         <a href="izdeliya-mebel-korpusnaya.php" class="list-group-item '.$item_mebel_korpusnaya_Class.'">МЕБЕЛЬ КОРПУСНАЯ</a>
                         <ul class="list-group sub_menu">
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
+                            <li class="menu2 disabled"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="#">...</a>
                                     </li>
@@ -102,7 +106,7 @@
                                     </li>                                      
                                 </ul>
                             </li>
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady">ШКАФЫ С РАСПАШНЫМИ ФАСАДАМИ</a>
+                            <li class="menu2 disabled"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady">ШКАФЫ С РАСПАШНЫМИ ФАСАДАМИ</a>
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-raspashnye-fasady-nakladnye" >Накладные</a>
                                     </li>
@@ -112,7 +116,7 @@
                                     </li>                                        
                                 </ul>
                             </li>
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady">ШКАФЫ С РАЗДВИЖНЫМИ ФАСАДАМИ</a>
+                            <li class="menu2 disabled"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady">ШКАФЫ С РАЗДВИЖНЫМИ ФАСАДАМИ</a>
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-shkafy-razdvizhnye-fasady-kupe">Фасады купе</a>
                                     </li>
@@ -124,7 +128,7 @@
                                     </li>                                           
                                 </ul>
                             </li>
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-stellazhi">ШКАФЫ БЕЗ ФАСАДОВ (СТЕЛЛАЖИ)</a>
+                            <li class="menu2 disabled"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-stellazhi">ШКАФЫ БЕЗ ФАСАДОВ (СТЕЛЛАЖИ)</a>
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="#">...</a>
                                     </li>
@@ -134,7 +138,7 @@
                                     </li>                                         
                                 </ul>
                             </li>
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-stoly">СТОЛЫ</a>
+                            <li class="menu2 disabled"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-stoly">СТОЛЫ</a>
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="#">...</a>
                                     </li>
@@ -144,16 +148,11 @@
                                     </li>                                         
                                 </ul>
                             </li>
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#sborochnye-shemy-mebel-korpusnaya">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
-                                <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>                                         
-                                </ul>
-                            </li>                                   
+                            
+                            ';
+                            LeftSideMenu($sborochnyeshemy);// СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ
+                           
+                     echo'                                   
                         </ul>
                     </li>
                     <!-- menu -->

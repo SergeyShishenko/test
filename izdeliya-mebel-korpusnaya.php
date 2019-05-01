@@ -20,176 +20,284 @@ include 'inc-head.php';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-izdeliya.php';
 ?> 
-                <!-- main  -->
-                <div class="col-md-8  col-md-8-non" role="main" id="main-page">
-                    <article  >
-                      <section  >
-                        <div class="page-header">
-                          <h1 itemprop="name" id="mebel-korpusnaya-konstrukcii">Конструкции мебели корпусной типовой</h1>
-                        </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi delectus, voluptates eligendi quo exercitationem molestias voluptate aspernatur aliquam similique nihil, officiis fugiat! Obcaecati velit, debitis porro sunt ipsam dignissimos similique?</p>
-               
-                      </section>
-                    </article>
+  <!-- main  -->
+      <div class="col-md-8  col-md-8-non" role="main" id="main-page">
+        <article >
+          <section >
+            <div class="page-header" >                                              
+              <h2 id="sborochnye-shemy">&nbsp;</h2>
+                <h1 itemprop="name" >СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</h1>
+              </div>  
 
-                    <article  >
-                      <section  >
-                        <div class="page-header">
-                          <h1 itemprop="name" id="mebel-korpusnaya-shkafy-razdvizhnye-fasady">Шкафы с раздвижными фасадами</h1>
-                        </div>
-                        <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt harum minus possimus, tempore suscipit fugit nostrum enim hic illum tempora assumenda nemo, vero officiis asperiores, fuga aut. Ex, ratione!</p>
-                        <div class="bs-callout bs-callout-warning" id="jquery-required">
-                          <h4>Lorem ipsum dolor</h4>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                        </div>
+              <h2 id="osnovanie-korpusa-shkafa">&nbsp;</h2>
+              <div class="bs-callout bs-callout-warning cont" ><h4>5000202-99_101 основание корпуса шкафа</h4>
+                      <!-- <div class="overlay"></div>                   -->
+                  <p> <a>
+                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-101-osnovanie-korpusa-shkafa_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                        data-toggle="modal"
+                        data-target="#myModal"
+                                                  
+                        alt="5000202-99_101 основание корпуса шкафа"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                          ></a>
+                  </p>
+                  <p> <a>
+                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-101-osnovanie-korpusa-shkafa_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                        data-toggle="modal"
+                        data-target="#myModal"
+                                                  
+                        alt="5000202-99_101 основание корпуса шкафа"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                          ></a>
+                  </p>
+                    
+              </div>
 
-                        <h2 id="mebel-korpusnaya-shkafy-razdvizhnye-fasady-kupe">&nbsp;</h2>
-                        <h2 >Фасады купе</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
+              <h2 id="stenka-zadnyaya-v-paz-korpusa-shkafa">&nbsp;</h2>
+              <div class="bs-callout bs-callout-warning cont" ><h4>5000202-99_105 стенка задняя В ПАЗ корпуса шкафа</h4>
+                      <!-- <div class="overlay"></div>                   -->
+                  <p> <a>
+                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-105-stenka-zadnyaya-v-paz-korpusa-shkafa_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                        data-toggle="modal"
+                        data-target="#myModal"
+                                                  
+                        alt="5000202-99_105 стенка задняя В ПАЗ корпуса шкафа"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                          ></a>
+                  </p>
+                  <p> <a>
+                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-105-stenka-zadnyaya-v-paz-korpusa-shkafa_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                        data-toggle="modal"
+                        data-target="#myModal"
+                                                  
+                        alt="5000202-99_105 стенка задняя В ПАЗ корпуса шкафа"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                          ></a>
+                  </p>
+                    
+              </div>
 
+              <h2 id="stenka-zadnyaya-nabivnaya-korpusa-shkafa">&nbsp;</h2>
+              <div class="bs-callout bs-callout-warning cont" ><h4>5000202-99_106 стенка задняя НАБИВНАЯ корпуса шкафа</h4>
+                      <!-- <div class="overlay"></div>                   -->
+                  <p> <a>
+                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-106-stenka-zadnyaya-nabivnaya-korpusa-shkafa_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                        data-toggle="modal"
+                        data-target="#myModal"
+                                                  
+                        alt="5000202-99_106 стенка задняя НАБИВНАЯ корпуса шкафа"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                          ></a>
+                  </p>
+                  <p> <a>
+                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-106-stenka-zadnyaya-nabivnaya-korpusa-shkafa_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                        data-toggle="modal"
+                        data-target="#myModal"
+                                                  
+                        alt="5000202-99_106 стенка задняя НАБИВНАЯ корпуса шкафа"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                          ></a>
+                  </p>
+                    
+              </div>
 
-                        <h2 id="mebel-korpusnaya-shkafy-razdvizhnye-fasady-komplanarnye">&nbsp;</h2>
-                        <h2 >Фасады компланарные</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                        </section>
-                    </article>
+              <h2 id="modul-tumba-polnovstraivaemyh-yashchikov">&nbsp;</h2>
+              <div class="bs-callout bs-callout-warning cont" ><h4>5000202-99_125 модуль-тумба полновстраиваемых ящиков</h4>
+                      <!-- <div class="overlay"></div>                   -->
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                          ></a>
+                  </p>
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                      ></a>
+                  </p>
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_3-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                      ></a>
+                  </p>
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_4-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                      ></a>
+                  </p>
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_5-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                      ></a>
+                  </p>
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_6-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                      ></a>
+                  </p>
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_7-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                      ></a>
+                  </p>
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_8-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                      ></a>
+                  </p>
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_9-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                      ></a>
+                  </p>
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_10-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                      ></a>
+                  </p>
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_11-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                      ></a>
+                  </p>
+                  <p> <a>                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000202-99-125-modul-tumba-polnovstraivaemyh-yashchikov_12-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                        data-toggle="modal"
+                        data-target="#myModal"                                                  
+                        alt="5000202-99_125 модуль-тумба полновстраиваемых ящиков"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                      ></a>
+                  </p>
+                    
+              </div>
 
-                    <article  >
-                        <section  >
-                          <div class="page-header">
-                            <h1 itemprop="name" id="mebel-korpusnaya-stellazhi">Шкафы без фасадов (стеллажи)</h1>
-                          </div>
-                          <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt harum minus possimus, tempore suscipit fugit nostrum enim hic illum tempora assumenda nemo, vero officiis asperiores, fuga aut. Ex, ratione!</p>
-                          <div class="bs-callout bs-callout-warning" id="jquery-required">
-                            <h4>Lorem ipsum dolor</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          </div>
-  
-                          <!-- <h2 id="mebel-korpusnaya-stellazhi-">&nbsp;</h2>
-                          <h2 >Фасады купе</h2>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-  
-  
-                          <h2 id="mebel-korpusnaya-stellazhi-">&nbsp;</h2>
-                          <h2 >Фасады компланарные</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p> -->
-                          </section>
-                      </article>
-                      <article  >
-                        <section  >
-                          <div class="page-header">
-                            <h1 itemprop="name" id="mebel-korpusnaya-stoly">Столы</h1>
-                          </div>
-                          <p itemprop="description" class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nesciunt harum minus possimus, tempore suscipit fugit nostrum enim hic illum tempora assumenda nemo, vero officiis asperiores, fuga aut. Ex, ratione!</p>
-                          <div class="bs-callout bs-callout-warning" id="jquery-required">
-                            <h4>Lorem ipsum dolor</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quo reiciendis sed est nihil explicabo animi, illo ea autem necessitatibus iusto odit! Dolores consequuntur aliquid, dolore ullam neque enim voluptate.</p>
-                          </div>
-  
-                          <!-- <h2 id="mebel-korpusnaya-shkafy-razdvizhnye-fasady-kupe">&nbsp;</h2>
-                          <h2 >Фасады купе</h2>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio, placeat ipsam ut dolorum accusantium inventore eligendi esse cum mollitia fugiat quasi deleniti laudantium perspiciatis fugit modi explicabo non officiis.</p>
-  
-  
-                          <h2 id="mebel-korpusnaya-shkafy-razdvizhnye-fasady-komplanarnye">&nbsp;</h2>
-                          <h2 >Фасады компланарные</h2>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum enim ipsum libero placeat quo quam laudantium sed perferendis labore excepturi neque repellendus dolore unde suscipit, sapiente fugiat commodi necessitatibus tenetur.</p> -->
-                          </section>
-                      </article>
-          
-                    <article  >
-                        <section  >
-                          <div class="page-header">
-                            <h1 itemprop="name" id="sborochnye-shemy-mebel-korpusnaya">Сборочно-монтажные схемы</h1>
-                          </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid possimus animi ullam harum officia perferendis sit unde incidunt id eaque? Impedit sequi ullam pariatur veritatis excepturi accusamus, officiis maxime perspiciatis.</p>
-                        </section>
-                    </article>
-                </div> <!-- main  -->
-                <!-- боковое меню блоки дверные начало -->
-                <div class="col-md-2" id="navmain-izdeliya">
-                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
-                        <ul class="nav bs-sidenav">
-                            <li><a href="#mebel-korpusnaya-konstrukcii">Конструкции мебели корпусной типовой</a>
-                            </li>
-                            <li><a href="#mebel-korpusnaya-shkafy-razdvizhnye-fasady">Шкафы с раздвижными фасадами </a>
-                                <ul class="nav">
-                                    <li><a href="#mebel-korpusnaya-shkafy-razdvizhnye-fasady-kupe">Фасады купе</a>
-                                    </li>
-                                    <li><a href="#mebel-korpusnaya-shkafy-razdvizhnye-fasady-komplanarnye">Фасады компланарные</a>
-                                    </li>                                   
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#mebel-korpusnaya-stellazhi">Шкафы без фасадов (стеллажи)</a>
-                                <!-- <ul class="nav">
-                                    <li><a href="#razdvizhnye-polotna-po-stene">Полотна без складывания — раздвижение по стене</a>
-                                    </li>
-                                    <li><a href="#razdvizhnye-polotna-v-penal">Полотна без складывания — раздвижение в пенал</a>
-                                    </li>
-                                    <li><a href="#razdvizhnye-polotna-v-proeme">Полотна без складывания — раздвижение в проеме</a>
-                                  </li>
-                                </ul> -->
-                            </li>
-                            <li>
-                                <a href="#mebel-korpusnaya-stoly">Столы</a>
-                                <!-- <ul class="nav">
-                                    <li><a href="#razdvizhnye-polotna-po-stene">Полотна без складывания — раздвижение по стене</a>
-                                    </li>
-                                    <li><a href="#razdvizhnye-polotna-v-penal">Полотна без складывания — раздвижение в пенал</a>
-                                    </li>
-                                    <li><a href="#razdvizhnye-polotna-v-proeme">Полотна без складывания — раздвижение в проеме</a>
-                                  </li>
-                                </ul> -->
-                            </li>
-                         
-                            
-                            <li><a href="#sborochnye-shemy-mebel-korpusnaya">Сборочно-монтажные схемы</a>
-                            </li>                         
-                        </ul>
-                    </div>
-                </div><!-- боковое меню блоки дверные конец -->
+              <h2 id="uzel-vkladnoe-dno-korpus-shkafa">&nbsp;</h2>
+              <div class="bs-callout bs-callout-warning cont" ><h4>Вкладное дно корпуса шкафа</h4>
+                      <!-- <div class="overlay"></div>                   -->
+                  <p> <a>
+                    
+                      <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/uzel-vkladnoe-dno-korpus-shkafa_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                        data-toggle="modal"
+                        data-target="#myModal"
+                                                  
+                        alt="Вкладное дно корпуса шкафа"
+                        data-xls=""
+                        data-pdf=""
+                        data-prnt="noPrint"
+                        data-spng="noPNG" 
+                          ></a>
+                  </p>               
+                    
+              </div>
+             
+            
+          </section>
+        </article>
+      </div> 
+  <!-- /main  -->
+  <?php  
+  $arrlist = [$sborochnyeshemy];
+              // $spec_konst,
+              // $list_titulnyy_vpi_kd,
+              // $dok_vpi_kd,
+              // $dok_vsz,
+              // $dok_v_materialy_prochie,
+              // $spec_tehnolog,
+              // $vedomost_detaley_3d,
+              // $sostav_kd];
+  SideMenuList($arrlist)
+?> 
+
 <?php include 'inc-footer.php'; ?>
