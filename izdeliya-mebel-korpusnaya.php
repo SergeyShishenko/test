@@ -264,7 +264,7 @@ include 'inc-left-side-menu-izdeliya.php';
               </div>
 
               <h2 id="uzel-vkladnoe-dno-korpus-shkafa">&nbsp;</h2>
-              <div class="bs-callout bs-callout-warning cont" ><h4>Вкладное дно корпуса шкафа</h4>
+              <div class="bs-callout bs-callout-warning cont" ><h4>Вкладное дно корпуса шкафа (отверстия для регулировки опор)</h4>
                       <!-- <div class="overlay"></div>                   -->
                   <p> <a>
                     

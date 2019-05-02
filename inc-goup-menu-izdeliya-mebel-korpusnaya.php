@@ -29,7 +29,7 @@
 
         $sborochnyeshemy[5]=['path'=>"izdeliya-mebel-korpusnaya.php",
                         'id'=> "#uzel-vkladnoe-dno-korpus-shkafa",
-                        'def'=>"Вкладное дно корпуса шкафа"];
+                        'def'=>"Вкладное дно корпуса шкафа (отверстия для регулировки опор)"];
                         
     /////////////////////////////////////
 
