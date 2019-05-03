@@ -17,6 +17,7 @@
 
 <?php 
 include 'inc-goup-menu-izdeliya-mebel-korpusnaya.php';//$sborochnyeshemy=[]
+include 'inc-goup-menu-izdeliya-paneli-stenovye.php';//$panelistenovye=[]
 echo'
 <article itemscope="" itemtype="http://schema.org/WebPage">   
 <div class="container bs-docs-container" >
@@ -156,7 +157,7 @@ echo'
                         </ul>
                     </li>
                     <!-- menu -->
-                    <li class="menu  disabled">
+                    <li class="menu ">
                         <a href="izdeliya-paneli-stenovye.php" class="list-group-item '.$item_paneli_stenovye_Class.'">ПАНЕЛИ СТЕНОВЫЕ</a>
                         <ul class="list-group sub_menu">
                             <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>

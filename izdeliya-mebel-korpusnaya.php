@@ -27,7 +27,8 @@ include 'inc-left-side-menu-izdeliya.php';
             <div class="page-header" >                                              
               <h2 id="sborochnye-shemy">&nbsp;</h2>
                 <h1 itemprop="name" >СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</h1>
-              </div>  
+              </div> 
+               
 
               <h2 id="osnovanie-korpusa-shkafa">&nbsp;</h2>
               <div class="bs-callout bs-callout-warning cont" ><h4>5000202-99_101 основание корпуса шкафа</h4>
