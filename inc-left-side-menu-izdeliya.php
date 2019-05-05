@@ -160,26 +160,11 @@ echo'
                     <li class="menu ">
                         <a href="izdeliya-paneli-stenovye.php" class="list-group-item '.$item_paneli_stenovye_Class.'">ПАНЕЛИ СТЕНОВЫЕ</a>
                         <ul class="list-group sub_menu">
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
-                                <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>                                          
-                                </ul>
-                            </li>
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#sborochnye-shemy-paneli-stenovye">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
-                                <ul class="list-group sub_menu2">
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>
-                                    <li><a class="list-group-item sub" href="#">...</a>
-                                    </li>                                       
-                                </ul>
-                            </li>                    
+                        ';
+                        LeftSideMenu($panelistenovye);// КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ
+                        LeftSideMenu($sborochnyeshemypst);// СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ
+                       
+                    echo'                    
                         </ul>
                     </li>
                     <!-- menu -->
