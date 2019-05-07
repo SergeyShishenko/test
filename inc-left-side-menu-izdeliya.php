@@ -168,10 +168,11 @@ echo'
                         </ul>
                     </li>
                     <!-- menu -->
-                    <li class="menu  disabled">
+                    <li class="menu  ">
                         <a href="izdeliya-karnizy-i-frizy.php" class="list-group-item '.$item_karnizy_i_frizy_Class.'">КАРНИЗЫ И ФРИЗЫ</a>
                         <ul class="list-group sub_menu">
-                            <li class="menu2"><a class="list-group-item sub" href="izdeliya-karnizy-i-frizy.php#izdeliya-karnizy-i-frizy-konstrukcii">КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ</a>
+                            <li class="menu2 disabled">
+                            <a class="list-group-item sub  " href="izdeliya-karnizy-i-frizy.php#izdeliya-karnizy-i-frizy-konstrukcii">КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ</a>
                                 <ul class="list-group sub_menu2">
                                     <li><a class="list-group-item sub" href="#">...</a>
                                     </li>
