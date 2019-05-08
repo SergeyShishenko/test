@@ -35,17 +35,18 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="overlay"></div>
                                                        
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_1-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_1-v3.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                
                                  alt="5000301-03-001 лист титульный Альбома Образцов"                                 
                                  data-prnt="noPrint"
                                  data-xls="./dist/files/xls/list-titulnyy-alboma-obrazcov.xlsx"
-                                 data-dwg="./dist/files/xls/list-titulnyy-alboma-obrazcov.dwg"
+                                  
                                  data-spng="noPNG" 
                                 
                                 ></a>
                              </p>
+                             <!-- data-dwg="./dist/files/xls/list-titulnyy-alboma-obrazcov.dwg"  -->
                              <!-- data-spng="noPNG"  -->
                              <!-- data-pdf="./dist/files/pdf/shablon-alboma-obrazcov.pdf" -->
                              <!-- <div class="overlay"></div> -->
