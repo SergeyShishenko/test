@@ -30,12 +30,13 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </div>
                         <!-- <p>&nbsp;</p> -->
                         <h2 id="shablon-alboma-obrazcov_1">&nbsp;</h2>
+                        <a href="#shablon-alboma-obrazcov_4"  class=""  ><b>Титульный лист ОБРАЗЕЦ</b> &nbsp;<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i></a>
                         <!-- <a href="./dist/files/xls/117-metodicheskoe-posobie-po-izdeliyam.xls" type="button" class="btn btn-primary"  download="117-metodicheskoe-posobie-po-izdeliyam.xls">Скачать - 117. Методическое пособие по изделиям.xls</a> -->
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Лист титульный</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Лист титульный альбома образцов</h4>
                         <div class="overlay"></div>
                                                        
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_1-v3.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_1-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                
                                  alt="5000301-03-001 лист титульный Альбома Образцов"                                 
@@ -92,7 +93,7 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         <div class="overlay"></div>                           
                             <p> <a>
                                 
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_4-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov_1-v3.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                           
                                  alt="Титульный лист Образец"

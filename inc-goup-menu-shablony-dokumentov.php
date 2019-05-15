@@ -13,7 +13,7 @@
 
         $albomobrazcov[1]=['path'=>"shablony-dokumentov-albom-obrazcov.php",
                         'id'=> "#shablon-alboma-obrazcov_1",
-                        'def'=>"Лист титульный"];
+                        'def'=>"Лист титульный альбома образцов"];
 
         $albomobrazcov[2]=['path'=>"shablony-dokumentov-albom-obrazcov.php",
                         'id'=> "#shablon-alboma-obrazcov_2",
