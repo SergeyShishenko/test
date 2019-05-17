@@ -1,5 +1,6 @@
 <?php
 include 'inc-session-start.php';
+// izdeliya-karnizy-i-frizy.php
 $detaliClass = '';
 $izdeliyaClass = 'class="active"';
 $shablonyClass = '';
@@ -64,7 +65,8 @@ include 'inc-left-side-menu-izdeliya.php';
                              <!-- <div class="row"> <iframe width="100%" height="640" src="//sharecad.org/cadframe/load?url=http://www.cadsofttools.com/dwgviewer/floorplan.dwg" scrolling="no"></iframe></div> -->
                              <!-- <div class="row"> <iframe width="100%" height="1180" src="//sharecad.org/cadframe/load?url=http://www.500stp.website/dist/files/dwg/pr-101-20-105.dwg" scrolling="no"></iframe></div> -->
                              <div > <iframe src="https://myhub.autodesk360.com/ue2c0441f/shares/public/SHabee1QT1a327cf2b7a11ae5bad0b6ddfc6?mode=embed" width="100%" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" style="padding: 20px;"></iframe></div>
-                             
+                             <div > <iframe src="https://myhub.autodesk360.com/ue2c0441f/shares/public/SHabee1QT1a327cf2b7acde00e884d655136?mode=embed" width="100%" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" style="padding: 20px;"></iframe></div>
+                             <div > <iframe src="https://myhub.autodesk360.com/ue2c0441f/shares/public/SHabee1QT1a327cf2b7a8203fdb9176d40f5?mode=embed" width="100%" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" style="padding: 20px;"></iframe></div>
                         </div>
                       
                         </section>
