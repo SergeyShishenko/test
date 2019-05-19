@@ -7,6 +7,7 @@ include 'inc-goup-menu-shablony-dokumentov.php';
 include 'inc-goup-menu-furnitura-petlyB.php';
 include 'inc-goup-menu-furnitura-universalnaya.php';
 include 'inc-goup-menu-izdeliya-mebel-korpusnaya.php';
+include 'inc-goup-menu-materialy-stekla-zerkala.php';
 ?>
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">

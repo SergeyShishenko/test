@@ -1,4 +1,6 @@
-<?php echo'
+<?php
+include 'inc-goup-menu-materialy-stekla-zerkala.php';//$steklazerkala=[]
+ echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">
             <div class="row">
@@ -7,66 +9,24 @@
                 <div class="list-group  bs-sidebar hidden-print affix vertical-menu nav bs-sidenav " id="navsub">
                     <ul class="list-group">
                         <!-- menu -->
-                        <li class="menu disabled">                                
+                        <li class="menu ">                                
                             <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php" class="list-group-item '.$item_steklo_zerkalo_Class.'">СТЕКЛО, ЗЕРКАЛО</a>
                             <ul class="list-group sub_menu">
-                                <li class="menu2">
-                                    <a  class="list-group-item sub"  href="#vidy-obrabotki-kromki-stekla-zerkala">Виды обработки кромки стекла, зеркала</a>
-                                    <!-- <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>                                       
-                                    </ul> -->
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="#zerkala-i-stekla-tablica-standartnyh-obrazcov">Зеркала и стекла - таблица стандартных образцов</a>
-                                    <!-- <ul class="list-group sub_menu2">
+                               
+                            ';
+                            LeftSideMenu($steklazerkala);// СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ
+                           
+                     echo' 
+                               <!--  <li class="menu2"><a class="list-group-item sub" href="#zerkala-i-stekla-tablica-standartnyh-obrazcov">Зеркала и стекла - таблица стандартных образцов</a>
+                                    <ul class="list-group sub_menu2">
                                         <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#polotna-bez-falca">Полотна без фальца</a>
                                         </li>
                                         <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#polotna-s-falcem" >Полотна с фальцем</a>
                                         </li>                                         
-                                    </ul> -->
+                                    </ul> 
                                 </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna" >ДВЕРНЫЕ БЛОКИ С РАЗДВИЖНЫМИ ПОЛОТНАМИ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna-po-stene" >Полотна без складывания — раздвижение по стене</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna-v-penal">Полотна без складывания — раздвижение в пенал</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#razdvizhnye-polotna-v-proeme">Полотна без складывания — раздвижение в проеме</a>
-                                        </li>                                           
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#mayatnikovye-polotna" >ДВЕРНЫЕ БЛОКИ С МАЯТНИКОВЫМИ (БАРНЫМИ) ПОЛОТНАМИ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>                                           
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#portaly">ДВЕРНЫЕ БЛОКИ БЕЗ ПОЛОТНН (ПОРТАЛЫ)</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                        
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-bloki-dvernye.php#sborochnye-shemy-polotna">СБОРОЧНО МОНТАЖНЫЕ СХЕМЫ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                       
-                                    </ul>
-                                </li>                                    
+                               -->
+                                                                 
                             </ul>
                         </li>                           
                         <!-- menu -->

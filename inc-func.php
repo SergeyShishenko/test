@@ -123,11 +123,14 @@ function ContentListGoupMenu($arr) //правое меню группа
             // навигация по content
                 $content=$arr[$i]['content'][0];
                 if($content['overlay']){echo '   <div class="overlay"></div>' ; }
+                if($content['no-b-lazy']){$img ='<img src="'.$content["path"].$content["id-name"].$content["version"].'.png" class="center-block img-rounded img-thumbnail"' ; }
+                else{$img ='<img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==    data-src="'.$content['path'].$content['id-name'].$content['version'].'.png" 
+                    class="center-block img-rounded img-thumbnail b-lazy '.$content['orient'].'"' ;}
+
                 echo '
                 <p>
                     <a>            
-                        <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==    data-src="'.$content['path'].$content['id-name'].$content['version'].'.png" 
-                        class="center-block img-rounded img-thumbnail b-lazy '.$content['orient'].'"
+                        '.$img.'
                         data-toggle="modal"
                         data-target="#myModal"                                            
                         alt="'.$content['alt'].'"
@@ -145,11 +148,13 @@ function ContentListGoupMenu($arr) //правое меню группа
             {
                 $content=$arr[$i]['content'][$j];
                 if($content['overlay']){echo '   <div class="overlay"></div>' ; }
+                if($content['no-b-lazy']){$img ='<img src="'.$content["path"].$content["id-name"].$content["version"].'.png" class="center-block img-rounded img-thumbnail"' ; }
+                else{$img ='<img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==    data-src="'.$content['path'].$content['id-name'].$content['version'].'.png" 
+                    class="center-block img-rounded img-thumbnail b-lazy '.$content['orient'].'"' ;}
                 echo '
                 <p>
                     <a>            
-                        <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==    data-src="'.$content['path'].$content['id-name'].$content['version'].'.png" 
-                        class="center-block img-rounded img-thumbnail b-lazy '.$content['orient'].'"
+                       '.$img.'
                         data-toggle="modal"
                         data-target="#myModal"                                            
                         alt="'.$content['alt'].'"
