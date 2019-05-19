@@ -1,21 +1,5 @@
-<?php
-// inc-left-side-menu-izdeliya.php
-// переменные на странице 
-// $item_bloki_dvernye_Class = 'active';
-// $item_mebel_korpusnaya_Class = '';
-// $item_paneli_stenovye_Class = '';
-// $item_karnizy_i_frizy_Class = '';
-// $item_plintusy_i_moldingi_Class = '';
-// $item_ekrany_Class = '';
-// $item_pilyastry_Class = '';
-// $item_potolki_Class = '';
-// $item_lestnicy_Class = '';
-// $item_standartnye_uzly_Class = '';
-
-
-?>
-
 <?php 
+// inc-left-side-menu-izdeliya.php
 include 'inc-goup-menu-izdeliya-mebel-korpusnaya.php';//$sborochnyeshemy=[]
 include 'inc-goup-menu-izdeliya-paneli-stenovye.php';//$panelistenovye=[]
 echo'

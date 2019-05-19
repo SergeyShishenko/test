@@ -1,18 +1,9 @@
 <?php
 include 'inc-session-start.php';
-$detaliClass = '';
-$izdeliyaClass = '';
-$shablonyClass = '';
-$metodichkiClass = '';
-$furnituraClass = '';
-$materialyClass = '';
+include 'inc-menu-value.php';
+include 'inc-menu-value-literatura.php';
 $literaturaClass = 'class="active"';
-
-$item_gost_Class = '';
 $item_snip_Class = 'active';
-$item_sanpin_Class = '';
-$item_sp_svod_pravil_Class = '';
-$item_spravochniki_Class = '';
 include 'inc-head.php';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-literatura.php';

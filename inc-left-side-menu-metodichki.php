@@ -1,11 +1,3 @@
-<?php
-// переменные на странице 
-// $item_dokument_117_Class = 'active';
-// $item_dokument_135_Class = '';
-// $item_ergonomika_Class = '';
-// $item_proektnoy_rabote_Class = '';
-// $item_basis_Class = '';
-?>
 <?php echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">

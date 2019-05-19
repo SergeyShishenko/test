@@ -1,17 +1,9 @@
 <?php
 include 'inc-session-start.php';
-$detaliClass = '';
-$izdeliyaClass = '';
-$shablonyClass = '';
+include 'inc-menu-value.php';
+include 'inc-menu-value-metodichki.php';
 $metodichkiClass = 'class="active"';
-$furnituraClass = '';
-$materialyClass = '';
-$literaturaClass = '';
-
-$item_dokument_117_Class = '';
 $item_dokument_135_Class = 'active';
-$item_ergonomika_Class = '';
-$item_proektnoy_rabote_Class = '';
 include 'inc-head.php';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-metodichki.php';

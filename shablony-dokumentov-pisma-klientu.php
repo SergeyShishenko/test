@@ -1,21 +1,8 @@
 <?php
 include 'inc-session-start.php';
-$detaliClass = '';
-$izdeliyaClass = '';
-$shablonyClass = '';
+include 'inc-menu-value.php';
+include 'inc-menu-value-shablony-dokumentov.php';
 $yrishablonyClass= 'class="active"';
-$metodichkiClass = '';
-$furnituraClass = '';
-$materialyClass = '';
-$literaturaClass = '';
-
-$item_albom_obrazcov_Class = '';
-$item_list_dvizh_obrazcov_Class = '';
-$item_list_titulnyy_dp_Class = '';
-$item_list_titulnyy_kd_Class = '';
-$item_vpi_Class = '';
-$item_dogovor_Class = '';
-$item_akty_Class = '';
 $item_pisma_klientu_Class = 'active';
 include 'inc-head.php';
 include 'inc-header-menu.php';

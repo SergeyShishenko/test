@@ -1,17 +1,9 @@
 <?php
 include 'inc-session-start.php';
-$detaliClass = '';
-$izdeliyaClass = '';
+include 'inc-menu-value.php';
+include 'inc-menu-value-shablony-dokumentov.php';
 $shablonyClass = 'class="active"';
-$metodichkiClass = '';
-$furnituraClass = '';
-$materialyClass = '';
-$literaturaClass = '';
-
-$item_titulniki_Class = '';
-$item_shtampy_chertezhey_Class = '';
 $item_specifikacii_Class = 'active';
-$item_pokupnye_izdeliya_Class = '';
 include 'inc-head.php';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-shablony-dokumentov.php';

@@ -1,20 +1,9 @@
 <?php
 include 'inc-session-start.php';
+include 'inc-menu-value.php';
+include 'inc-menu-value-detali.php';
 $detaliClass = 'class="active"';
-$izdeliyaClass = '';
-$shablonyClass = '';
-$metodichkiClass = '';
-$furnituraClass = '';
-$materialyClass = '';
-$literaturaClass = '';
-
-$item_profili_Class = '';
-$item_reznye_Class = '';
 $item_kamni_Class = 'active';
-$item_rezby_Class = '';
-$item_tokarka_Class = '';
-$item_frezy_Class = '';
-$item_pazy_Class = '';
 include 'inc-head.php';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-detali.php';

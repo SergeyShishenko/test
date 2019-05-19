@@ -1,17 +1,3 @@
-<?php
-// переменные на странице 
-// $item_albom_obrazcov_Class = '';
-// $item_list_dvizh_obrazcov_Class = '';
-// $item_list_titulnyy_dp_Class = '';
-// $item_list_titulnyy_kd_Class = 'active';
-// $item_vpi_Class = '';
-// $item_dogovor_Class = '';
-// $item_akty_Class = '';
-// $item_pisma_klientu_Class = '';
-// $item_dizaynproekt_Class= '';
-
-// dblstr-lg dblstr-xl dblstr-md dblstr-sm
-?>
 <?php echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">

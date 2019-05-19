@@ -1,11 +1,3 @@
-<?php
-// переменные на странице 
-// $item_gost_Class = 'active';
-// $item_snip_Class = '';
-// $item_sanpin_Class = '';
-// $item_sp_svod_pravil_Class = '';
-// $item_spravochniki_Class = '';
-?>
 <?php echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">

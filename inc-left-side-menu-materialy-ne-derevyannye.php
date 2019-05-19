@@ -1,10 +1,3 @@
-<?php
-// переменные на странице 
-// $item_steklo_zerkalo_Class = '';
-// $item_vitrazh_Class = '';
-// $item_metall_Class = '';
-// $item_tkan_kozha_Class = 'active';
-?>
 <?php echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">

@@ -1,17 +1,9 @@
 <?php
 include 'inc-session-start.php';
-$detaliClass = '';
-$izdeliyaClass = '';
-$shablonyClass = '';
-$metodichkiClass = '';
+include 'inc-menu-value.php';
+include 'inc-menu-value-furnitura.php';
 $furnituraClass = 'class="active"';
-$materialyClass = '';
-$literaturaClass = '';
-
-$item_dlya_dvernyh_blokov_Class = '';
 $item_dlya_mebeli_Class = 'active';
-$item_universalnaya_Class = '';
-$item_katalogi_Class = '';
 include 'inc-head.php';
 echo '<style>
         h4, h5, h6 {margin-left: 20px;}

@@ -1,15 +1,3 @@
-<?php
-// переменные на странице 
-// $detaliClass = '';
-// $izdeliyaClass = '';
-// $shablonyClass = 'class="active"';
-// $metodichkiClass = '';
-// $furnituraClass = '';
-// $materialyClass = '';
-// $literaturaClass = '';
-// include 'inc-head.php';
-// include 'inc-header-menu.php';
-?>
 <?php echo'
 </head>
 <body>

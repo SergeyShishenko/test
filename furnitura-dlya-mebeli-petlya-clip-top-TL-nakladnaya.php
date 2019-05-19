@@ -1,18 +1,10 @@
 <?php
 //furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php
 include 'inc-session-start.php';
-$detaliClass = '';
-$izdeliyaClass = '';
-$shablonyClass = '';
-$metodichkiClass = '';
+include 'inc-menu-value.php';
+include 'inc-menu-value-furnitura.php';
 $furnituraClass = 'class="active"';
-$materialyClass = '';
-$literaturaClass = '';
-
-$item_dlya_dvernyh_blokov_Class = '';
 $item_dlya_mebeli_Class = 'active';
-$item_universalnaya_Class = '';
-$item_katalogi_Class = '';
 include 'inc-head3.php';
 include 'inc-header-menu3.php';
 include 'inc-left-side-menu-furnitura.php';

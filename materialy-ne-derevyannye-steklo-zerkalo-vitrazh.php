@@ -1,17 +1,9 @@
 <?php
 include 'inc-session-start.php';
-$detaliClass = '';
-$izdeliyaClass = '';
-$shablonyClass = '';
-$metodichkiClass = '';
-$furnituraClass = '';
+include 'inc-menu-value.php';
+include 'inc-menu-value-materialy.php';
 $materialyClass = 'class="active"';
-$literaturaClass = '';
-
 $item_steklo_zerkalo_Class = 'active';
-$item_vitrazh_Class = '';
-$item_metall_Class = '';
-$item_tkan_kozha_Class = '';
 include 'inc-head.php';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-materialy-ne-derevyannye.php';

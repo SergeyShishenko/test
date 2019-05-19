@@ -1,13 +1,3 @@
-<?php
-// переменные на странице 
-// $item_profili_Class = 'active';
-// $item_reznye_Class = '';
-// $item_kamni_Class = '';
-// $item_rezby_Class = '';
-// $item_tokarka_Class = '';
-// $item_frezy_Class = '';
-// $item_pazy_Class = '';
-?>
 <?php echo'
 <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container" >

@@ -1,21 +1,9 @@
 <?php
 include 'inc-session-start.php';
-$detaliClass = '';
+include 'inc-menu-value.php';
+include 'inc-menu-value-izdeliya.php';
 $izdeliyaClass = 'class="active"';
-$shablonyClass = '';
-$metodichkiClass = '';
-$furnituraClass = '';
-$materialyClass = '';
-$literaturaClass = '';
-
 $item_bloki_dvernye_Class = 'active';
-$item_mebel_korpusnaya_Class = '';
-$item_paneli_stenovye_Class = '';
-$item_karnizy_i_frizy_Class = '';
-$item_plintusy_i_moldingi_Class = '';
-$item_ekrany_Class = '';
-$item_pilyastry_Class = '';
-$item_potolki_Class = '';
 include 'inc-head.php';
 include 'inc-header-menu.php';
 include 'inc-left-side-menu-izdeliya.php';

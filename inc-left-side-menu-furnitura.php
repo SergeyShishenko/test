@@ -1,13 +1,4 @@
 <?php
-// переменные на странице 
-// $item_dlya_dvernyh_blokov_Class = 'active';
-// $item_dlya_mebeli_Class = '';
-// $item_universalnaya_Class = '';
-// $item_krepezh_i_metizy_Class = '';//Крепеж и метизы
-// $item_katalogi_Class = '';
-
-?>
-<?php
 include 'inc-goup-menu-furnitura-styazhka.php';//$styazhka=[]
 include 'inc-goup-menu-furnitura-petlyB.php';//$petlyB=[]
 include 'inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
