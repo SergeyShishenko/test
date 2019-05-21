@@ -1,13 +1,13 @@
 <?php
 //furnitura-dlya-mebeli-petlya-clip-top-nakladnaya-nulevogo-vhozhdeniya.php
-include 'inc-session-start.php';
-include 'inc-menu-value.php';
-include 'inc-menu-value-furnitura.php';
+include 'inc/inc-session-start.php';
+include 'inc/inc-menu-value.php';
+include 'inc/inc-menu-value-furnitura.php';
 $furnituraClass = 'class="active"';
 $item_dlya_mebeli_Class = 'active';
-include 'inc-head3.php';
-include 'inc-header-menu3.php';
-include 'inc-left-side-menu-furnitura.php';
+include 'inc/inc-head3.php';
+include 'inc/inc-header-menu3.php';
+include 'inc/inc-left-side-menu-furnitura.php';
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">                   
@@ -469,9 +469,9 @@ include 'inc-left-side-menu-furnitura.php';
     </article>                    
 </div> <!-- main  -->
 <?php
-//  include 'inc-goup-menu.php';//$styazhka=[] -->
+//  include 'inc/inc-goup-menu.php';//$styazhka=[] -->
 SideMenu($petlyB,5);
 ?>              
               
     
-<?php include 'inc-footer2.php'; ?>
+<?php include 'inc/inc-footer2.php'; ?>

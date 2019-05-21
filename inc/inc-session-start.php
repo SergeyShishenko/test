@@ -4,7 +4,7 @@ ini_set('session.cookie_lifetime', 0);
 // session_set_cookie_params(0);
 session_start();
 $_SESSION['ref'] = $_SERVER['REQUEST_URI'];
-define('__ROOT__', dirname(dirname(__FILE__))); 
+define('__ROOT__', dirname(dirname(dirname(__FILE__)))); 
 // echo __ROOT__.'/DATA/data.php';
 require_once(__ROOT__.'/DATA/data.php'); 
 require_once(__ROOT__.'/DATA/TABLES/configDB.php');

@@ -1,10 +1,10 @@
 <?php
-include 'inc-session-start.php';
-include 'inc-menu-value.php';
-include 'inc-menu-value-furnitura.php';
+include 'inc/inc-session-start.php';
+include 'inc/inc-menu-value.php';
+include 'inc/inc-menu-value-furnitura.php';
 $furnituraClass = 'class="active"';
 $item_dlya_mebeli_Class = 'active';
-include 'inc-head2.php';
+include 'inc/inc-head2.php';
 echo '        
         
         
@@ -53,8 +53,8 @@ echo '
         ';
 
 
-include 'inc-header-menu2.php';
-include 'inc-left-side-menu-furnitura.php';
+include 'inc/inc-header-menu2.php';
+include 'inc/inc-left-side-menu-furnitura.php';
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
@@ -412,4 +412,4 @@ include 'inc-left-side-menu-furnitura.php';
                 
               
    
-<?php include 'inc-footer2.php'; ?>
+<?php include 'inc/inc-footer2.php'; ?>

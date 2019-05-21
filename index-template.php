@@ -1,5 +1,5 @@
 <?php
-include 'inc-session-start.php';
+include 'inc/inc-session-start.php';
 
 // /template-shablony-dokumentov.php?obj_id=1
 

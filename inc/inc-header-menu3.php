@@ -168,8 +168,8 @@ else {
         </button>
     </div>
 ';
-include 'inc-header-send-modal.php';
-include 'inc-func.php';
+include 'inc/inc-header-send-modal.php';
+include 'inc/inc-func.php';
 
 ?>
 

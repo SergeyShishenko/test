@@ -1,5 +1,5 @@
 <?php
-include 'inc-session-start.php';
+include 'inc/inc-session-start.php';
 $detaliClass = '';
 $izdeliyaClass = '';
 $shablonyClass = '';
@@ -18,9 +18,9 @@ $item_dogovor_Class = '';
 $item_dogovor_na_postavku_furnitury_Class = 'active';
 $item_akty_Class = '';
 $item_pisma_klientu_Class = '';
-include 'inc-head.php';
-include 'inc-header-menu.php';
-include 'inc-left-side-menu-yuridicheskie-dokumenty.php';
+include 'inc/inc-head.php';
+include 'inc/inc-header-menu.php';
+include 'inc/inc-left-side-menu-yuridicheskie-dokumenty.php';
 ?> 
                 <!-- main  -->  
                     <div class="col-md-8 col-md-8-non" role="main" id="main-page">
@@ -61,4 +61,4 @@ include 'inc-left-side-menu-yuridicheskie-dokumenty.php';
                             </li> 
                     </div>
                 </div><!-- боковое меню блоки дверные конец -->
-<?php include 'inc-footer.php'; ?>
+<?php include 'inc/inc-footer.php'; ?>

@@ -1,8 +1,8 @@
 <?php
-include 'inc-goup-menu-furnitura-styazhka.php';//$styazhka=[]
-include 'inc-goup-menu-furnitura-petlyB.php';//$petlyB=[]
-include 'inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
-include 'inc-goup-menu-furnitura-universalnaya.php';//$petlyTL=[]
+include 'inc/inc-goup-menu-furnitura-styazhka.php';//$styazhka=[]
+include 'inc/inc-goup-menu-furnitura-petlyB.php';//$petlyB=[]
+include 'inc/inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
+include 'inc/inc-goup-menu-furnitura-universalnaya.php';//$petlyTL=[]
 
  echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   

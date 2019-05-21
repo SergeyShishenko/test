@@ -1,13 +1,13 @@
 <?php
-include 'inc-session-start.php';
+include 'inc/inc-session-start.php';
 // furnitura-dlya-dvernyh-blokov.php
-include 'inc-menu-value.php';
-include 'inc-menu-value-furnitura.php';
+include 'inc/inc-menu-value.php';
+include 'inc/inc-menu-value-furnitura.php';
 $furnituraClass = 'class="active"';
 $item_dlya_dvernyh_blokov_Class = 'active';
-include 'inc-head.php';
-include 'inc-header-menu.php';
-include 'inc-left-side-menu-furnitura.php';
+include 'inc/inc-head.php';
+include 'inc/inc-header-menu.php';
+include 'inc/inc-left-side-menu-furnitura.php';
 
 ?> 
                 <!-- main  -->
@@ -784,4 +784,4 @@ include 'inc-left-side-menu-furnitura.php';
                      
                 </div><!-- боковое меню блоки дверные конец -->
                 
-<?php include 'inc-footer.php'; ?>
+<?php include 'inc/inc-footer.php'; ?>

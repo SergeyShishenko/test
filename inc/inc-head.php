@@ -1,5 +1,5 @@
 <?php 
-include 'inc-version-css-js.php'; 
+include 'inc/inc-version-css-js.php'; 
 echo'<!DOCTYPE html>
 <html lang="ru-RU">
     <head>

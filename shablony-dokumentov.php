@@ -1,5 +1,5 @@
 <?php
-include 'inc-session-start.php';
+include 'inc/inc-session-start.php';
 require_once('DATA/TABLES/table_data.php');
 // $detaliClass = '';
 // $izdeliyaClass = '';
@@ -25,9 +25,9 @@ switch ($category_id) {
 // $item_list_titulnyy_dp_Class = '';
 // $item_list_titulnyy_kd_Class = '';
 
-include 'inc-head.php';
-include 'inc-header-menu.php';
-include 'inc-left-side-menu-shablony-dokumentov.php';
+include 'inc/inc-head.php';
+include 'inc/inc-header-menu.php';
+include 'inc/inc-left-side-menu-shablony-dokumentov.php';
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
@@ -301,4 +301,4 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                         </ul>
                     </div>
                 </div><!-- боковое меню блоки дверные конец -->
-<?php include 'inc-footer.php'; ?>
+<?php include 'inc/inc-footer.php'; ?>

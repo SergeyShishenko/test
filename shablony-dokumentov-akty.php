@@ -1,13 +1,13 @@
 <?php
-include 'inc-session-start.php';
+include 'inc/inc-session-start.php';
 // shablony-dokumentov-akty.php
-include 'inc-menu-value.php';
-include 'inc-menu-value-shablony-dokumentov.php';
+include 'inc/inc-menu-value.php';
+include 'inc/inc-menu-value-shablony-dokumentov.php';
 $yrishablonyClass= 'class="active"';
 $item_akty_Class = 'active';
-include 'inc-head.php';
-include 'inc-header-menu.php';
-include 'inc-left-side-menu-yuridicheskie-dokumenty.php';
+include 'inc/inc-head.php';
+include 'inc/inc-header-menu.php';
+include 'inc/inc-left-side-menu-yuridicheskie-dokumenty.php';
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
@@ -352,4 +352,4 @@ include 'inc-left-side-menu-yuridicheskie-dokumenty.php';
                         </ul>
                     </div>
                 </div><!-- боковое меню блоки дверные конец -->
-<?php include 'inc-footer.php'; ?>
+<?php include 'inc/inc-footer.php'; ?>

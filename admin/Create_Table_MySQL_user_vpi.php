@@ -1,5 +1,5 @@
 <?php
-// include 'inc-session-start.php';
+// include 'inc/inc-session-start.php';
 // include_once("configDB.php");
 define('__ROOT__', dirname(dirname(__FILE__))); 
 // echo dirname(__ROOT__).'/DATA/TABLES/configDB.php';

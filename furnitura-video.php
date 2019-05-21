@@ -1,16 +1,16 @@
 <?php
-include 'inc-session-start.php';
-include 'inc-menu-value.php';
-include 'inc-menu-value-furnitura.php';
+include 'inc/inc-session-start.php';
+include 'inc/inc-menu-value.php';
+include 'inc/inc-menu-value-furnitura.php';
 $furnituraClass = 'class="active"';
 $item_dlya_mebeli_Class = 'active';
-include 'inc-head.php';
+include 'inc/inc-head.php';
 echo '<style>
         h4, h5, h6 {margin-left: 20px;}
         iframe #iframe_mp4 > video{height: 100%;width: 100%;}
      </style>';
-include 'inc-header-menu.php';
-include 'inc-left-side-menu-furnitura.php';
+include 'inc/inc-header-menu.php';
+include 'inc/inc-left-side-menu-furnitura.php';
 ?>
 <!-- main  -->
 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
@@ -540,4 +540,4 @@ var el = frameDoc.getElementsByTagName("head")[0];
 el.parentNode.appendChild(cssLink);
 }
  </script> -->
-<?php include 'inc-footer.php'; ?>
+<?php include 'inc/inc-footer.php'; ?>

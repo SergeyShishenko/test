@@ -1,12 +1,12 @@
 <?php
-include 'inc-session-start.php';
-include 'inc-menu-value.php';
-include 'inc-menu-value-furnitura.php';
+include 'inc/inc-session-start.php';
+include 'inc/inc-menu-value.php';
+include 'inc/inc-menu-value-furnitura.php';
 $furnituraClass = 'class="active"';
 $item_universalnaya_Class = 'active';
-include 'inc-head2.php';
-include 'inc-header-menu3.php';
-include 'inc-left-side-menu-furnitura.php';
+include 'inc/inc-head2.php';
+include 'inc/inc-header-menu3.php';
+include 'inc/inc-left-side-menu-furnitura.php';
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
@@ -387,14 +387,14 @@ include 'inc-left-side-menu-furnitura.php';
 
                                                 </div>
                                                 <div class="tab-pane fade" id="osnovy-tehnologii-krepleniya"> 
-                                                    <?php include 'inc-osnovy-tehnologii-krepleniya.php'; ?>
+                                                    <?php include 'inc/inc-osnovy-tehnologii-krepleniya.php'; ?>
                                                 </div>                                               
                                             </div>
                                         </div>
                                     </div>
                                 </div> 
                             <!--/row-->
-                            <?php include 'inc-vybor-dyubelya-pod-samorez.php'; ?> 
+                            <?php include 'inc/inc-vybor-dyubelya-pod-samorez.php'; ?> 
                            
 
                         </div> <!--/bs-callout bs-callout-warning cont/-->
@@ -402,8 +402,8 @@ include 'inc-left-side-menu-furnitura.php';
                 </article>   
                 </div> <!-- main  -->
                 <?php
-                //  include 'inc-goup-menu.php';//$styazhka=[]
+                //  include 'inc/inc-goup-menu.php';//$styazhka=[]
                 SideMenu($universalnaya,4);
                 ?> 
     
-<?php include 'inc-footer2.php'; ?>
+<?php include 'inc/inc-footer2.php'; ?>

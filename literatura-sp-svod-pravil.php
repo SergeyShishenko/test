@@ -1,12 +1,12 @@
 <?php
-include 'inc-session-start.php';
-include 'inc-menu-value.php';
-include 'inc-menu-value-literatura.php';
+include 'inc/inc-session-start.php';
+include 'inc/inc-menu-value.php';
+include 'inc/inc-menu-value-literatura.php';
 $literaturaClass = 'class="active"';
 $item_sp_svod_pravil_Class = 'active';
-include 'inc-head.php';
-include 'inc-header-menu.php';
-include 'inc-left-side-menu-literatura.php';
+include 'inc/inc-head.php';
+include 'inc/inc-header-menu.php';
+include 'inc/inc-left-side-menu-literatura.php';
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
@@ -165,4 +165,4 @@ include 'inc-left-side-menu-literatura.php';
                         </ul>
                     </div>
                 </div><!-- боковое меню блоки дверные конец -->
-<?php include 'inc-footer.php'; ?>
+<?php include 'inc/inc-footer.php'; ?>

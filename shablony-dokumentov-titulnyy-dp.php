@@ -1,12 +1,12 @@
 <?php
-include 'inc-session-start.php';
-include 'inc-menu-value.php';
-include 'inc-menu-value-shablony-dokumentov.php';
+include 'inc/inc-session-start.php';
+include 'inc/inc-menu-value.php';
+include 'inc/inc-menu-value-shablony-dokumentov.php';
 $shablonyClass = 'class="active"';
 $item_list_titulnyy_dp_Class = 'active';
-include 'inc-head.php';
-include 'inc-header-menu.php';
-include 'inc-left-side-menu-shablony-dokumentov.php';
+include 'inc/inc-head.php';
+include 'inc/inc-header-menu.php';
+include 'inc/inc-left-side-menu-shablony-dokumentov.php';
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
@@ -282,4 +282,4 @@ include 'inc-left-side-menu-shablony-dokumentov.php';
                   $arrlist = [$shablon_alboma_dp,$list_titulnyy_vpi,$vedomost_furnitury,$vedomost_stekol_zerkal,$materialy_prochie,$list_titulnyy_TZ,$sostav_dp];
                  SideMenuList($arrlist);
  ?>   
-<?php include 'inc-footer.php'; ?>
+<?php include 'inc/inc-footer.php'; ?>
