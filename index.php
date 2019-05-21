@@ -2,12 +2,12 @@
 include 'inc/inc-session-start.php'; 
 include 'inc/inc-version-css-js.php'; 
 include 'inc/inc-func.php'; 
-include 'inc/inc-goup-menu-furnitura-styazhka.php';
-include 'inc/inc-goup-menu-shablony-dokumentov.php';
-include 'inc/inc-goup-menu-furnitura-petlyB.php';
-include 'inc/inc-goup-menu-furnitura-universalnaya.php';
-include 'inc/inc-goup-menu-izdeliya-mebel-korpusnaya.php';
-include 'inc/inc-goup-menu-materialy-stekla-zerkala.php';
+include 'inc/goup/inc-goup-menu-furnitura-styazhka.php';
+include 'inc/goup/inc-goup-menu-shablony-dokumentov.php';
+include 'inc/goup/inc-goup-menu-furnitura-petlyB.php';
+include 'inc/goup/inc-goup-menu-furnitura-universalnaya.php';
+include 'inc/goup/inc-goup-menu-izdeliya-mebel-korpusnaya.php';
+include 'inc/goup/inc-goup-menu-materialy-stekla-zerkala.php';
 ?>
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">

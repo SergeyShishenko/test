@@ -1,7 +1,7 @@
 <?php 
 // inc-left-side-menu-izdeliya.php
-include 'inc/inc-goup-menu-izdeliya-mebel-korpusnaya.php';//$sborochnyeshemy=[]
-include 'inc/inc-goup-menu-izdeliya-paneli-stenovye.php';//$panelistenovye=[]
+include 'inc/goup/inc-goup-menu-izdeliya-mebel-korpusnaya.php';//$sborochnyeshemy=[]
+include 'inc/goup/inc-goup-menu-izdeliya-paneli-stenovye.php';//$panelistenovye=[]
 echo'
 <article itemscope="" itemtype="http://schema.org/WebPage">   
 <div class="container bs-docs-container" >

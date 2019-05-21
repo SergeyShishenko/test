@@ -1,5 +1,5 @@
 <?php
-include 'inc/inc-goup-menu-materialy-stekla-zerkala.php';//$steklazerkala=[]
+include 'inc/goup/inc-goup-menu-materialy-stekla-zerkala.php';//$steklazerkala=[]
  echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">

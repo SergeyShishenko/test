@@ -1,5 +1,5 @@
 <?php
-include 'inc/inc-goup-menu-shablony-dokumentov.php';//$styazhka=[]
+include 'inc/goup/inc-goup-menu-shablony-dokumentov.php';//$styazhka=[]
  echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">
