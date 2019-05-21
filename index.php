@@ -2,12 +2,8 @@
 include 'inc/inc-session-start.php'; 
 include 'inc/inc-version-css-js.php'; 
 include 'inc/inc-func.php'; 
-include 'inc/goup/inc-goup-menu-furnitura-styazhka.php';
-include 'inc/goup/inc-goup-menu-shablony-dokumentov.php';
-include 'inc/goup/inc-goup-menu-furnitura-petlyB.php';
-include 'inc/goup/inc-goup-menu-furnitura-universalnaya.php';
-include 'inc/goup/inc-goup-menu-izdeliya-mebel-korpusnaya.php';
-include 'inc/goup/inc-goup-menu-materialy-stekla-zerkala.php';
+// подключение inc-файлов
+foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
 ?>
 <!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">
