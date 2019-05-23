@@ -348,6 +348,17 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                 </a>
                                             </div>
                                             <div class="item">
+                                                <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/TF02_sch2.png" data-target="#image-gallery">
+                                                    <img  
+                                                        src="./dist/filesdb/images/TF02_sch2.png"
+                                                        data-src="./dist/filesdb/images/TF02_sch2.png"
+                                                        class="center-block   img-rounded     bar "
+                                                        data-toggle="modal"                                                                                                                          
+                                                        alt="Необходимое пространство"                                                        
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="item">
                                                 <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/BO04_sch3.png" data-target="#image-gallery">
                                                     <img  
                                                         src="./dist/filesdb/images/BO04_sch3.png"
