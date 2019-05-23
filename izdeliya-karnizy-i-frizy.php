@@ -33,10 +33,11 @@ include 'inc/inc-left-side-menu-izdeliya.php';
                             <h1 itemprop="name" id="sborochnye-shemy-karnizy-i-frizy">Сборочно-монтажные схемы</h1>
                           </div>
                           <h2 id="plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Планы по карнизу с обозначением римскими цифрами</h4>
+                        <div class="bs-callout bs-callout-warning cont" >
+                        <!-- <h4>Планы по карнизу с обозначением римскими цифрами</h4>
                                 <div class="overlay"></div>                  
                             <p> <a>
-                                <!-- <img src="./dist/images/shablon-kd.png" class="center-block img-rounded img-thumbnail" -->
+                               
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_1-v8.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
@@ -47,7 +48,7 @@ include 'inc/inc-left-side-menu-izdeliya.php';
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
                                    ></a>
-                             </p>
+                             </p> -->
 
                              
                              <!-- <div class="row"> <iframe width="100%" height="640" src="//sharecad.org/cadframe/load?url=http://www.cadsofttools.com/dwgviewer/floorplan.dwg" scrolling="no"></iframe></div> -->
