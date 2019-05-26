@@ -112,6 +112,48 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                     </table>
                                             </div>                              
                                         </div>
+
+                                        <div class="row"  style="height:200px;  margin-bottom: 20px;"> 
+                                            <div class="col-xs-7 col-sm-7 col-md-7" ><img src="./dist/filesdb/images/konicheskaya_d10_1_bazis_sch1.png" width="100%" height="100%" class="" alt="bazis_sch1" title=""></div>                                             
+                                            <div class="col-xs-5 col-sm-5 col-md-5"><img src="./dist/filesdb/images/konicheskaya_d10_1_bazis_sch2.png"  width="100%" height="100%" class="" alt="bazis_sch1" title=""></div>
+                                        </div> 
+                                        <div class="row">                                                
+                                                <table class="table table-striped table-responsive">
+                                                    
+                                                    <tbody> 
+
+                                                    <tr>
+                                                    <th>Толщина ДСП<br>мм</th>
+                                                    <th>X,<br>мм</th>
+                                                    <th>D,<br>мм</th>
+                                                    <th>H,<br>мм</th>
+                                                    <th>Y,<br>мм</th>
+                                                    <th>D1,<br>мм</th>
+                                                    <th>H1,<br>мм</th>
+                                                    <th>D2,<br>мм</th>
+                                                    <th>H2,<br>мм</th>
+                                                    <th>A,<br>мм</th>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                    <td>16</td>
+                                                    <td>24</td>
+                                                    <td>8</td>
+                                                    <td>35</td>
+                                                    <td>9</td>
+                                                    <td>8</td>
+                                                    <td>14</td>
+                                                    <td>10</td>
+                                                    <td>14</td>
+                                                    <td>0</td>
+                                                    </tr>
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>  
+
                                     </div>
                                 </div>
                             <!--/ ВПИ -->
@@ -207,8 +249,8 @@ include 'inc/inc-left-side-menu-furnitura.php';
 
                                                     <tr>
                                                     <td>16</td>
-                                                    <td>13</td>
-                                                    <td>8</td>
+                                                    <td>14</td>
+                                                    <td>9</td>
                                                     <td>10</td>
                                                     <td><span class="boldstyle">BO04FZ</span></td>
                                                     </tr>
@@ -384,7 +426,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                     </div>
                                 </div> 
 
-                                <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
+                                <!-- <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
                                     <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
                                                 border: 1px solid rgb(221, 221, 221);
                                                 box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
@@ -423,7 +465,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
 
                                     </div>
 
-                                </div>
+                                </div> -->
                             <!-- /часть --> 
 
                             <!-- часть -->
