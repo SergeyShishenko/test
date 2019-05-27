@@ -399,7 +399,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                     <tr>
                                                 
                                                     <td>35</td>
-                                                    <td>20</td>
+                                                    <td>24</td>
                                                     <td>9</td>
                                                     <td><span class="boldstyle">TF02</span></td>
                                                     </tr>
