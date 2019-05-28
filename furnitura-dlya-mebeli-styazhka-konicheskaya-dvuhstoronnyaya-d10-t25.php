@@ -16,7 +16,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                     <article    id="styazhki-ekscentrikovye">
                       <section >
                         <div class="page-header"     >
-                          <h1 itemprop="name" id="konicheskaya-dvuhstoronnyaya-d10">Стяжки эксцентриковые</h1>
+                          <h1 itemprop="name" id="konicheskaya-dvuhstoronnyaya-d10">Стяжки конические</h1>
                           <h2 >Стяжка коническая D10 для плит толщиной от 25 мм (двухсторонняя)</h2>
                         </div>
                         <div class="bs-callout bs-callout-warning cont" > 
