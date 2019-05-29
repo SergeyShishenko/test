@@ -39,7 +39,7 @@ include 'inc/inc-left-side-menu-metodichki.php';
                             <p> 
                                 <h2 itemprop="name" id="AddOrderProdudtCE-v3">Добавить свойства: Заказ/ Изделие/ СЕ </h2>
                                 <p >Версия 2 - Добавлена проверка на наличие номера перед названием блока сборочной единицы. </p>
-                                <p >Версия 3 - Исправленна ошибка выбора элементов. </p>
+                                <p >Версия 3 - Исправлена ошибка выбора элементов. </p>
                                 <a href="./dist/files/js/AddOrderProductCE-v3.js" type="button" class="btn btn-primary"  download="AddOrderProductCE-v3.js">Скачать - AddOrderProductCE-v3.js</a>
                             </p>
 
