@@ -37,9 +37,10 @@ include 'inc/inc-left-side-menu-metodichki.php';
                         </div>
                         <div class="bs-callout bs-callout-warning cont" >
                             <p> 
-                                <h2 itemprop="name" id="AddOrderProdudtCE-v2">Добавить свойства: Заказ/ Изделие/ СЕ </h2>
-                                <h3 >Версия 2 - Добавлена проверка на наличие номера перед названием блока сборочной единицы. </h3>
-                                <a href="./dist/files/js/AddOrderProductCE-v2.js" type="button" class="btn btn-primary"  download="AddOrderProductCE-v2.js">Скачать - AddOrderProductCE-v2.js</a>
+                                <h2 itemprop="name" id="AddOrderProdudtCE-v3">Добавить свойства: Заказ/ Изделие/ СЕ </h2>
+                                <p >Версия 2 - Добавлена проверка на наличие номера перед названием блока сборочной единицы. </p>
+                                <p >Версия 3 - Исправленна ошибка выбора элементов. </p>
+                                <a href="./dist/files/js/AddOrderProductCE-v3.js" type="button" class="btn btn-primary"  download="AddOrderProductCE-v3.js">Скачать - AddOrderProductCE-v3.js</a>
                             </p>
 
                             <p >&nbsp;</p> 
@@ -50,7 +51,7 @@ include 'inc/inc-left-side-menu-metodichki.php';
                                             </video>
                                         </div>
                                         <p >Создан: 07/03/2019г.</p>
-                                        <p >Обновлен: 19/03/2019г.</p>       
+                                        <p >Обновлен: 29/05/2019г.</p>       
                                              
                             </div> 
                             
@@ -72,7 +73,7 @@ include 'inc/inc-left-side-menu-metodichki.php';
                             <ul class="nav">
                                     <li><a href="#AddOrderProdudtCE-v1">Добавить свойства: Заказ/ Изделие/ СЕ (AddOrderProdudtCE-v1)</a>
                                     </li>
-                                    <li><a href="#AddOrderProdudtCE-v2">Добавить свойства: Заказ/ Изделие/ СЕ (AddOrderProdudtCE-v2)</a>
+                                    <li><a href="#AddOrderProdudtCE-v3">Добавить свойства: Заказ/ Изделие/ СЕ (AddOrderProdudtCE-v3)</a>
                                     </li>
                                                                       
                                 </ul>
