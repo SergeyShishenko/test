@@ -1372,4 +1372,7 @@ $( ".navbar-toggle" ).click(function(){ // задаем функцию при н
 
 
 
-
+              $('.carousel').carousel({
+                // interval: 2000
+                interval: false
+              })
