@@ -198,6 +198,30 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                     <article >
                       <section >
                         <div class="page-header">
+                        <h2  id="list-titulnyy-proektirovshchika">&nbsp;</h2> 
+                          <h1 itemprop="name">ЛИСТ ТИТУЛЬНЫЙ ТЗ для проектировщика</h1>
+                        </div>
+                        <h2 id="list-titulnyy-TZ-proektirovshchika">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000301-01-001 лист титульный ТЗ для проектировщика</h4>
+                         <div class="overlay"></div>                              
+                            <p> <a>
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/tz-dlya-proektirovshchika_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                 data-toggle="modal"
+                                 data-target="#myModal"                                                                
+                                 alt="5000301-01-001 лист титульный ТЗ для проектировщика"
+                                 data-prnt="noPrint"
+                                 data-spng="noPNG" 
+                                 data-xls="./dist/files/xls/5000301-01-001 list-titulnyy-proektirovshchika.xlsx"
+                                 
+                                   ></a>
+                             </p>  
+                        </div>                        
+                      </section>
+                    </article>
+
+                    <article >
+                      <section >
+                        <div class="page-header">
                         <h2  id="shablony-dokumentov-list-titulnyy-TZ">&nbsp;</h2> 
                           <h1 itemprop="name">ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика</h1>
                         </div>
@@ -279,7 +303,7 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
 
                 <?php
                   // ШАБЛОН АЛЬБОМА ОБРАЗЦОВ,ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ,ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ
-                  $arrlist = [$shablon_alboma_dp,$list_titulnyy_vpi,$vedomost_furnitury,$vedomost_stekol_zerkal,$materialy_prochie,$list_titulnyy_TZ,$sostav_dp];
+                  $arrlist = [$shablon_alboma_dp,$list_titulnyy_vpi,$vedomost_furnitury,$vedomost_stekol_zerkal,$materialy_prochie,$list_titulnyy_proektirovshchika,$list_titulnyy_TZ,$sostav_dp];
                  SideMenuList($arrlist);
  ?>   
 <?php include 'inc/inc-footer.php'; ?>

@@ -93,6 +93,18 @@
                     'def'=>"5000304-01-000 лист титульный ВПИ"];
 
     /////////////////////////////////////
+      /////////////////////////////////////
+
+      $list_titulnyy_proektirovshchika=[];
+      $list_titulnyy_proektirovshchika[0]=['path'=>"shablony-dokumentov-titulnyy-dp.php",
+                      'id'=>"#list-titulnyy-proektirovshchika",
+                      'def'=>"ЛИСТ ТИТУЛЬНЫЙ ТЗ для проектировщика"];
+  
+      $list_titulnyy_proektirovshchika[1]=['path'=>"shablony-dokumentov-titulnyy-dp.php",
+                      'id'=> "#list-titulnyy-TZ-proektirovshchika",
+                      'def'=>"5000301-01-001 лист титульный ТЗ для проектировщика"];
+  
+      /////////////////////////////////////
 
         /////////////////////////////////////
 
