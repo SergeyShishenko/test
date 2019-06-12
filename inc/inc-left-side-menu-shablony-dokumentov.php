@@ -36,6 +36,8 @@ include 'inc/goup/inc-goup-menu-shablony-dokumentov.php';//$styazhka=[]
 
                                 LeftSideMenu($materialy_prochie);//ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ
 
+                                LeftSideMenu($list_titulnyy_proektirovshchika);//ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика
+
                                 LeftSideMenu($list_titulnyy_TZ);//ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика
 
                                 LeftSideMenu($sostav_dp);//СОСТАВ ДП
