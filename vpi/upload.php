@@ -178,8 +178,10 @@ $file = $_POST['value'];
 $type = $_POST['type'];//excel
 $id  = $_POST['id'];
 // $field  = $_POST['field'];
-
-
+// echo "<pre>";
+// 	print_r($file);
+// 	echo "</pre>";	
+// exit();
 // Получаем расширение файла
 $getMime = explode('.', $name);
 $mime = end($getMime);
@@ -196,9 +198,14 @@ $mime = end($getMime);
 	$encodedData = str_replace(' ','+',$data[1]);
 	$decodedData = base64_decode($encodedData);
 
+
 if ($mime =="csv")
 {
 	$decodedData = iconv("WINDOWS-1251", "UTF-8", $decodedData);
+// 	echo "<pre>";
+// 	print_r($decodedData);
+// 	echo "</pre>";	
+// exit();
 	// Вы можете использовать данное имя файла, или создать произвольное имя.
 	// Мы будем создавать произвольное имя!
 	$randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
@@ -247,10 +254,11 @@ if ($mime =="csv")
 		
 		fileopenxlscsv($filename);	
 
+
 	}//if file_put_contents
 	else {
 		// Показать сообщение об ошибке, если что-то пойдет не так.
-		echo "Что-то пошло не так. Убедитесь, что файл не поврежден!";
+		echo "Что-то пошло не так. Убедитесь, что файл не поврежден!!!!!!";
 	}
 }//if csv
 // XLSX
@@ -353,20 +361,20 @@ function fileopenxlscsv($filename)
 	// print_r($data[0]);
 	// echo "</pre>";	
 
+// проверка на соответствие START
+	// if (count($result)>0)
+	// { 
+	// 	echo '<input type="hidden" id="currfile" value="'.$filename.'" form="frm">' ; 
 
-	if (count($result)>0)
-	{ 
-		echo '<input type="hidden" id="currfile" value="'.$filename.'" form="frm">' ; 
-
-// УДАЛЕНИЕ ФАЙЛА
-			unlink($filename); //удаление 
+	// 	// УДАЛЕНИЕ ФАЙЛА
+	// 		unlink($filename); //удаление 
 
 
-			echo "Что-то пошло не так. Убедитесь, что файл не поврежден!";
-			exit();
+	// 		echo "Что-то пошло не так. Убедитесь, что файл не поврежден!!!";
+	// 		exit();
 
-	}
-
+	// }
+// проверка на соответствие END
 
 	
 	
