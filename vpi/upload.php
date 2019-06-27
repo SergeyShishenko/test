@@ -326,7 +326,7 @@ function fileopenxlscsv($filename)
 
 	
 	
-
+	$header=true; //заголовок 
 	if ($handle) {
 		while (($buffer = fgets($handle, 4096)) !== false) {
 
@@ -334,6 +334,17 @@ function fileopenxlscsv($filename)
 		{
 			$buffer = iconv("WINDOWS-1251", "UTF-8", $buffer);
 		}
+// 
+if ($header){
+		echo "<pre>";
+		$array=explode(';', $buffer);
+		print_r($array);
+		$key = array_search('Конструктор', $array); // 
+		echo "<Конструктор >".$key;//<Конструктор >16
+		echo "</pre>";
+		$header=false;
+}
+		// exit();
 
 			// echo $buffer . "<hr>";
 			list($client,$address,$number_order,,,$complect,$product,$product2,,,,$def,,,,,$kbKD,$kbDP,,,,$floor,$room,$unit,$count,$serialnum,$wood,$veneer,$pic,$numsample,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
@@ -344,6 +355,7 @@ function fileopenxlscsv($filename)
 			array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP));					
 			
 		}//while
+
 		if (!feof($handle)) {
 			echo "Ошибка: fgets() неожиданно потерпел неудачу\n";
 		}
