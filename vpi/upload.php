@@ -337,17 +337,40 @@ function fileopenxlscsv($filename)
 // 
 if ($header){
 		echo "<pre>";
-		$array=explode(';', $buffer);
-		print_r($array);
-		$key = array_search('Конструктор', $array); // 
-		echo "<Конструктор >".$key;//<Конструктор >16
+		$arraybuffer=explode(';', $buffer);
+		print_r($arraybuffer);
+		$key = array_search('Конструктор', $arraybuffer); // 
+		echo "[".$key."] => ".$arraybuffer[$key];//<Конструктор >16
 		echo "</pre>";
 		$header=false;
 }
 		// exit();
 
 			// echo $buffer . "<hr>";
-			list($client,$address,$number_order,,,$complect,$product,$product2,,,,$def,,,,,$kbKD,$kbDP,,,,$floor,$room,$unit,$count,$serialnum,$wood,$veneer,$pic,$numsample,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
+
+			// $client //Заказчик
+			// $address //Объект
+			// $number_order //№ заказа
+			// $complect //Наименование комплекта
+			// $product //№ изделия по приложению
+			// $product2 //№ изделия по повт.приложению
+			// $def //Наименование изделия
+			// $kbKD //Конструктор
+			// $kbDP //Исполнитель Диз.проекта
+			// $floor //Этаж
+			// $room //Помещение
+			// $unit //Ед-ца изм.
+			// $count //Количество по дог-ру
+			// $serialnum //Серийный №
+			// $wood //Материал массив
+			// $veneer //Материал шпон
+			// $pic //Рисунок
+			// $numsample //Порядковый № образца цвета заказчика
+			// $end //Акт подписан
+			
+			list($client,$address,$number_order, , ,$complect,$product,$product2, , , ,$def, , , , ,$kbKD,$kbDP, , , ,$floor,$room,$unit,$count,$serialnum,$wood,$veneer,$pic,$numsample,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
+
+
 			$complect = end(explode('/', $complect));
 			$room = explode('/', $room)[0];
 			
