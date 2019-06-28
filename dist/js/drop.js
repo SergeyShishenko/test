@@ -684,6 +684,8 @@ function checkAddress(checkbox,s)
     var numsample=tr.find("[id^='numsample']").text();
     var kbKD=tr.find("[id^='kbKD']").text();
     var kbDP=tr.find("[id^='kbDP']").text();
+    var RPG=tr.find("[id^='RPG']").text();
+    var VAP=tr.find("[id^='VAP']").text();
     if (keyproduct2!=''){keyproduct=keyproduct2;}
 
     var keyfloor=tr.find("[id^='floor_']").text();
@@ -730,6 +732,8 @@ function checkAddress(checkbox,s)
                                     'veneer':veneer,
                                     'numsample':numsample,
                                     'kbKD':kbKD,
+                                    'RPG':RPG,
+                                    'VAP':VAP,
                                     'kbDP':kbDP};//добавление информации ++
         }   
         

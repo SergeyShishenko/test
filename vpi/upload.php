@@ -336,6 +336,14 @@ function fileopenxlscsv($filename)
 		}
 // 
 $arraybuffer=explode(';', $buffer);
+
+//  echo "<pre>";		
+// print_r($arraybuffer);
+// // $key = array_search('Конструктор', $arraybuffer); // 
+// // echo "[".$key."] => ".$arraybuffer[$key];//<Конструктор >16
+// // echo "[".array_search('Конструктор', $arraybuffer)."] => ".$arraybuffer[array_search('Конструктор', $arraybuffer)];//<Конструктор >16
+// echo "</pre>";
+
 if ($header){
 		// echo "<pre>";		
 		// print_r($arraybuffer);
@@ -362,6 +370,8 @@ if ($header){
 			$veneer_key= array_search('Материал шпон', $arraybuffer);//Материал шпон
 			$pic_key = array_search('Рисунок', $arraybuffer);//Рисунок
 			$numsample_key = array_search('Порядковый № образца цвета заказчика', $arraybuffer);//Порядковый № образца цвета заказчика
+			$RPG_key = array_search('Руководитель группы', $arraybuffer);//Руководитель группы
+			$VAP_key = array_search('Архитектор проекта', $arraybuffer);//Архитектор проекта
 			// $end //Акт подписан
 		$header=false;
 }
@@ -385,6 +395,8 @@ if ($header){
 			$veneer = $arraybuffer[$veneer_key]; //Материал шпон
 			$pic = $arraybuffer[$pic_key]; //Рисунок
 			$numsample = $arraybuffer[$numsample_key]; //Порядковый № образца цвета заказчика
+			$RPG = $arraybuffer[$RPG_key]; //Руководитель группы
+			$VAP = $arraybuffer[$VAP_key]; //Архитектор проекта
 			// $end //Акт подписан
 
 
@@ -392,7 +404,7 @@ if ($header){
 			$room = explode('/', $room)[0];
 			
 		//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15   16    17
-			array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP));
+			array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP));
 			
 		}//while
 
@@ -515,8 +527,8 @@ if ($header){
 					// $numcol = count ($array[$row]); //колонок 
 				for ($col=0; $col < $numcol; $col++) { 						
 					if (false === array_search($col, $exclude)){
-		//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15  16
-		// array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb));
+		//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15  16  17   18   19
+		// array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,kbKD,kbDP,$RPG,$VAP));
 						switch ($col) {
 							/////"head"    
 								case "0":
@@ -607,6 +619,16 @@ if ($header){
 								case "17":
 									$id = 'kbDP_'.$row.$col;
 									$thclass = 'kbDP_th';
+									$vis = 'hide-info';
+									break;
+								case "18":
+									$id = 'RPG_'.$row.$col;
+									$thclass = 'RPG_th';
+									$vis = 'hide-info';
+									break;
+								case "19":
+									$id = 'VAP_'.$row.$col;
+									$thclass = 'VAP_th';
 									$vis = 'hide-info';
 									break;
 							
@@ -715,6 +737,16 @@ if ($header){
 										case "17":
 											$id = 'kbDP_'.$row.$col;
 											$thclass = 'kbDP_th';
+											$vis = 'hide-info';
+											break;
+										case "18":
+											$id = 'RPG_'.$row.$col;
+											$thclass = 'RPG_th';
+											$vis = 'hide-info';
+											break;
+										case "19":
+											$id = 'VAP_'.$row.$col;
+											$thclass = 'VAP_th';
 											$vis = 'hide-info';
 											break;
 								}

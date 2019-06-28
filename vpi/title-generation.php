@@ -49,8 +49,12 @@ if (isset($_POST['order'])) {
                      $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] .$site."/dist/files/xls/shablon-alboma-dp.xlsx");
                      $builder=$first['kbDP'];		
                 break;
+
+
         }
 
+        $RPG=$first['RPG'];
+        $VAP=$first['VAP'];
         
 
             // $my_var = $_GET['var1'];
@@ -118,7 +122,17 @@ if (isset($_POST['order'])) {
             $objPHPExcel->getActiveSheet()->setCellValue($coord, (string)$_POST['product']);//Изделия  
 
             $coord= $objPHPExcel->getActiveSheet()->getCell('builder')->getColumn().$objPHPExcel->getActiveSheet()->getCell('builder')->getRow();
-            $objPHPExcel->getActiveSheet()->setCellValue($coord, $builder);//Конструктор   
+            $objPHPExcel->getActiveSheet()->setCellValue($coord, $builder);//Конструктор  
+
+            if ( $_POST['gen']=='TKD') { // пока только для КД
+
+                $coord= $objPHPExcel->getActiveSheet()->getCell('RPG')->getColumn().$objPHPExcel->getActiveSheet()->getCell('RPG')->getRow();
+                $objPHPExcel->getActiveSheet()->setCellValue($coord, $RPG);//Руководитель группы  
+
+                $coord= $objPHPExcel->getActiveSheet()->getCell('VAP')->getColumn().$objPHPExcel->getActiveSheet()->getCell('VAP')->getRow();
+                $objPHPExcel->getActiveSheet()->setCellValue($coord, $VAP);//Архитектор 
+            
+            }
 
 
            if ( $_POST['gen']=='TKD') {
