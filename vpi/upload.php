@@ -273,12 +273,36 @@ elseif ($mime =="xlsx")
 	$randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 	if(file_put_contents($uploaddir.$randomName, $decodedData)) {		
 		$filename=$uploaddir.$randomName;
+		// зарплата
 		require_once "$_SERVER[DOCUMENT_ROOT]$site/vpi/getxlsx.php"; 
+
+	
 		}
 
 
 	
-}//elseif
+}//elseif XLS
+elseif ($mime =="xls")
+{
+	switch ($type) {	
+		case "excel":
+			$uploaddir = 'xlscsv/';			
+		break;		
+	}
+
+	$randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
+	if(file_put_contents($uploaddir.$randomName, $decodedData)) {		
+		$filename=$uploaddir.$randomName;
+		// зарплата
+		// require_once "$_SERVER[DOCUMENT_ROOT]$site/vpi/getxlsx.php"; 
+		
+		// Базис-спецификация
+		require_once "$_SERVER[DOCUMENT_ROOT]$site/vpi/getxlsx-bazis-specification.php"; 
+		}
+
+
+	
+}//elseif XLS
 
 ////////////////////////
 

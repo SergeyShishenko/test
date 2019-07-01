@@ -87,26 +87,26 @@
             
             
 	// Несколько оповещений при попытке загрузить не изображение
-    if (EXP!="csv") {
+    // if (EXP!="csv") {
 				
-        if(errMessage == 0) {
-            $('#drop-files p').html('Эй! только файлы формата CSV !');
-            ++errMessage;
-        }
-        else if(errMessage == 1) {
-            $('#drop-files p').html('Стоп! Загружаются только файлы с расширением .CSV !');
-            ++errMessage;
-        }
-        else if(errMessage == 2) {
-            $('#drop-files p').html("Не умеешь читать? Только файлы CSV !");
-            ++errMessage;
-        }
-        else if(errMessage == 3) {
-            $('#drop-files p').html("Хорошо! Продолжай в том же духе");
-            errMessage = 0;
-        }
-        return false;
-    }
+    //     if(errMessage == 0) {
+    //         $('#drop-files p').html('Эй! только файлы формата CSV !');
+    //         ++errMessage;
+    //     }
+    //     else if(errMessage == 1) {
+    //         $('#drop-files p').html('Стоп! Загружаются только файлы с расширением .CSV !');
+    //         ++errMessage;
+    //     }
+    //     else if(errMessage == 2) {
+    //         $('#drop-files p').html("Не умеешь читать? Только файлы CSV !");
+    //         ++errMessage;
+    //     }
+    //     else if(errMessage == 3) {
+    //         $('#drop-files p').html("Хорошо! Продолжай в том же духе");
+    //         errMessage = 0;
+    //     }
+    //     return false;
+    // }
 
                     if (files[index].type.match('image.*')) {
 
