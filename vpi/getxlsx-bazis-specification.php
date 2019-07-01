@@ -1,4 +1,5 @@
 <?php
+// vpi\getxlsx-bazis-specification.php
 # подключаем библиотеку
 // echo "$_SERVER[DOCUMENT_ROOT]/www/Classes/PHPExcel.php";
 require_once "$_SERVER[DOCUMENT_ROOT]/www/Classes/PHPExcel.php";
@@ -9,6 +10,8 @@ $File = "$_SERVER[DOCUMENT_ROOT]/www/vpi/$filename";
  
 $Excel = PHPExcel_IOFactory::load($File);
 //Далее формируем массив из всех листов Excel файла с помощью цикла:
+$row_num=0;
+$col_num=0;
 Foreach($Excel ->getWorksheetIterator() as $worksheet) {
     $lists[] = $worksheet->toArray();
    }
@@ -17,10 +20,21 @@ Foreach($Excel ->getWorksheetIterator() as $worksheet) {
     echo '<table border="1">';
     // Перебор строк
     foreach($list as $row){
+      $row_num++;
       echo '<tr>';
       // Перебор столбцов
       foreach($row as $col){
-        echo '<td>'.$col.'</td>';
+        $col_num++;
+        $pos = strpos($col, "Спецификация");
+        if ($pos === false) {
+          // echo "Строка '$findme' не найдена в строке '$mystring'";
+          echo '<td>'.$col.'</td>';
+      } else {
+          // echo "Строка '$findme' найдена в строке '$mystring'";
+          // echo " в позиции $pos";
+          echo '<td>'.$col.'!!! $row_num-'.$row_num.'</td>';
+      }
+        
     }
     echo '</tr>';
     }
