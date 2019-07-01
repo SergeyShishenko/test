@@ -124,7 +124,7 @@ if (isset($_POST['order'])) {
             $coord= $objPHPExcel->getActiveSheet()->getCell('builder')->getColumn().$objPHPExcel->getActiveSheet()->getCell('builder')->getRow();
             $objPHPExcel->getActiveSheet()->setCellValue($coord, $builder);//Конструктор  
 
-            if ( $_POST['gen']=='TKD') { // пока только для КД
+            // if ( $_POST['gen']=='TKD') { // пока только для КД
 
                 $coord= $objPHPExcel->getActiveSheet()->getCell('RPG')->getColumn().$objPHPExcel->getActiveSheet()->getCell('RPG')->getRow();
                 $objPHPExcel->getActiveSheet()->setCellValue($coord, $RPG);//Руководитель группы  
@@ -132,7 +132,7 @@ if (isset($_POST['order'])) {
                 $coord= $objPHPExcel->getActiveSheet()->getCell('VAP')->getColumn().$objPHPExcel->getActiveSheet()->getCell('VAP')->getRow();
                 $objPHPExcel->getActiveSheet()->setCellValue($coord, $VAP);//Архитектор 
             
-            }
+            // }
 
 
            if ( $_POST['gen']=='TKD') {
