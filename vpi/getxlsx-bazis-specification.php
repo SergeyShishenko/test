@@ -1,5 +1,6 @@
 <?php
 // vpi\getxlsx-bazis-specification.php
+// bazis-specification
 # подключаем библиотеку
 // echo "$_SERVER[DOCUMENT_ROOT]/www/Classes/PHPExcel.php";
 require_once "$_SERVER[DOCUMENT_ROOT]/www/Classes/PHPExcel.php";
@@ -47,7 +48,8 @@ Foreach($Excel ->getWorksheetIterator() as $worksheet) {
     echo '</tr>';
     }
     echo '</table>';
-   }
+    echo 'Всего '.$row_num.' строк';
+   }//foreach($lists as $list)
  
 // $order=end(explode(" ", $Excel->getActiveSheet()->getCell('Document1')->getValue())); 
 
