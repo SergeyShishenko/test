@@ -25,14 +25,22 @@ Foreach($Excel ->getWorksheetIterator() as $worksheet) {
       // Перебор столбцов
       foreach($row as $col){
         $col_num++;
-        $pos = strpos($col, "Спецификация");
-        if ($pos === false) {
+        $pos_panel = strpos($col, "Спецификация на панели");
+        $pos_furn = strpos($col, "Спецификация на крепеж");
+        if ($pos_panel !== false) {
+
+          
+
+           echo '<td>'.$col.' ПАНЕЛИ START-'.($row_num-3).'</td>';
           // echo "Строка '$findme' не найдена в строке '$mystring'";
-          echo '<td>'.$col.'</td>';
-      } else {
+          
+      } else if ($pos_furn !== false) { 
+         echo '<td>'.$col.' ФУРНИТУРА START-'.($row_num-3).'</td>';
           // echo "Строка '$findme' найдена в строке '$mystring'";
           // echo " в позиции $pos";
-          echo '<td>'.$col.'!!! $row_num-'.$row_num.'</td>';
+         
+      } else { 
+        echo '<td>'.$col.'</td>';
       }
         
     }
