@@ -11,9 +11,7 @@ $File = "$_SERVER[DOCUMENT_ROOT]/www/vpi/$filename";
  
 $Excel = PHPExcel_IOFactory::load($File);
 //Далее формируем массив из всех листов Excel файла с помощью цикла:
-$row_num=0;
-$col_num=0;
-$array = array();
+
 
     
 Foreach($Excel ->getWorksheetIterator() as $worksheet) {
@@ -21,9 +19,13 @@ Foreach($Excel ->getWorksheetIterator() as $worksheet) {
    }
   // Вывод сформированного массива в виде HTML таблиц(ы) :
    foreach($lists as $list){
+    $row_num=0;
+    $col_num=0;
+    $array = array();
     echo '<table border="1">';
     // Перебор строк
     foreach($list as $row){
+      $cellIterator=count($row);
       $row_num++;
       echo '<tr>';
       // Перебор столбцов
@@ -31,16 +33,14 @@ Foreach($Excel ->getWorksheetIterator() as $worksheet) {
         $col_num++;
         $pos_panel = strpos($col, "Спецификация на панели");
         $pos_furn = strpos($col, "Спецификация на крепеж");
-        if ($pos_panel !== false) {
+        if ($pos_panel !== false) {         
 
-          
-
-           echo '<td>'.$col.' ПАНЕЛИ START-'.($row_num-3).'</td>';
+           echo '<td>'.$col.' Количество колонок-'.$cellIterator.'</td>';
            $array[] = 'P-'.($row_num-3);
           // echo "Строка '$findme' не найдена в строке '$mystring'";
           
       } else if ($pos_furn !== false) { 
-         echo '<td>'.$col.' ФУРНИТУРА START-'.($row_num-3).'</td>';
+         echo '<td>'.$col.' Количество колонок-'.$cellIterator.'</td>';
          $array[] = 'F-'.($row_num-3);
           // echo "Строка '$findme' найдена в строке '$mystring'";
           // echo " в позиции $pos";
@@ -64,27 +64,30 @@ Foreach($Excel ->getWorksheetIterator() as $worksheet) {
 
 for($i=0;$i<$arr_length;$i++) 
 { 
-  
+
+//   $pieces = explode(" ", $pizza);
+// echo $pieces[0]; // кусок1
+$from_num=(explode("-", $array[$i])[1]);
   $to=$i+1;
   if ($to==$arr_length){
      $last_num=$row_num;
   }else{
-    $last_num=$array[$to];
+    $last_num=(explode("-", $array[$to])[1])-2;
   } 
   
      if (strpos($array[$i], "P") !== false) {
-      echo "<pre>";
+      
 
-      $array_panel[]=$array[$i].'-'.$last_num;
+      $array_panel[]=$from_num.'-'.$last_num;
     }else{
-      $array_furn[]=$array[$i].'-'.$last_num;
+      $array_furn[]=$from_num.'-'.$last_num;
     }
 }
 echo "<pre>";
+echo "panel";
 print_r( $array_panel);
+echo "furn";
+print_r( $array_furn);
 echo "</pre>";	
-echo "<pre>";
-	print_r( $array_furn);
-  echo "</pre>";	
 
  ?>

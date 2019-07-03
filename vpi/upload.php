@@ -297,7 +297,8 @@ elseif ($mime =="xls")
 		// require_once "$_SERVER[DOCUMENT_ROOT]$site/vpi/getxlsx.php"; 
 		
 		// Базис-спецификация
-		require_once "$_SERVER[DOCUMENT_ROOT]$site/vpi/getxlsx-bazis-specification.php"; 
+		// require_once "$_SERVER[DOCUMENT_ROOT]$site/vpi/getxlsx-bazis-specification.php"; 
+		require_once "$_SERVER[DOCUMENT_ROOT]$site/vpi/getxlsx-bazis-specification2.php"; 
 		}
 
 
