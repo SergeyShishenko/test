@@ -20,10 +20,12 @@ date_default_timezone_set('Europe/London');
 <?php
 
 /** Include path **/
-set_include_path(get_include_path() . PATH_SEPARATOR . '../../../Classes/');
+// set_include_path(get_include_path() . PATH_SEPARATOR . '../../../Classes/');
+
 
 /** PHPExcel_IOFactory */
-include 'PHPExcel/IOFactory.php';
+// include 'PHPExcel/IOFactory.php';
+include "$_SERVER[DOCUMENT_ROOT]/www/Classes/PHPExcel.php";
 
 
 $inputFileName = './sampleData/example1.xls';
@@ -34,8 +36,9 @@ $objPHPExcel = PHPExcel_IOFactory::load($inputFileName);
 echo '<hr />';
 
 $sheetData = $objPHPExcel->getActiveSheet()->toArray(null,true,true,true);
+echo "<pre>";
 var_dump($sheetData);
-
+echo "</pre>";
 
 ?>
 <body>

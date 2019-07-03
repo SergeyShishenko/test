@@ -25,9 +25,15 @@ echo '<table border="1">';
 
 // Получили строки и обойдем их в цикле
 $rowIterator = $sheet->getRowIterator();
+  // echo "<pre>";
+  // echo "rowIterator <br>";
+	// print_r( $rowIterator);
+  // echo "</pre>";	
+
 foreach ($rowIterator as $row) {
 	// Получили ячейки текущей строки и обойдем их в цикле
-	$cellIterator = $row->getCellIterator();
+  $cellIterator = $row->getCellIterator();
+  
     $row_num++;
 	echo "<tr>";
 		
@@ -37,18 +43,18 @@ foreach ($rowIterator as $row) {
         $pos_furn = strpos($cell->getCalculatedValue(), "Спецификация на крепеж");
         if ($pos_panel !== false) {         
 
-           echo '<td>'.$cell->getCalculatedValue().' Количество колонок-'.count($cellIterator).'</td>';
+           echo '<td>'.$cell->getCalculatedValue().'  '.$cell->getCoordinate().'</td>';
            $array[] = 'P-'.($row_num-3);
           // echo "Строка '$findme' не найдена в строке '$mystring'";
           
       } else if ($pos_furn !== false) { 
-         echo '<td>'.$cell->getCalculatedValue().' Количество колонок-'.count($cellIterator).'</td>';
+         echo '<td>'.$cell->getCalculatedValue().' '.$cell->getCoordinate().'</td>';
          $array[] = 'F-'.($row_num-3);
           // echo "Строка '$findme' найдена в строке '$mystring'";
           // echo " в позиции $pos";
          
       } else { 
-        echo "<td>" . $cell->getCalculatedValue() .' Количество колонок-'.count($cellIterator). "</td>";
+        echo "<td>" . $cell->getCalculatedValue() .' '.$cell->getCoordinate(). "</td>";
       }
 
         
