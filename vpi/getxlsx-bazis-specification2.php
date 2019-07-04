@@ -43,18 +43,26 @@ foreach ($rowIterator as $row) {
         $pos_furn = strpos($cell->getCalculatedValue(), "Спецификация на крепеж");
         if ($pos_panel !== false) {         
 
-           echo '<td>'.$cell->getCalculatedValue().'  '.$cell->getCoordinate().'</td>';
+           
+          //  if ($cell->getCalculatedValue()){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
+          //  else{echo '<td> пусто</td>';}
+           
            $array[] = 'P-'.($row_num-3);
           // echo "Строка '$findme' не найдена в строке '$mystring'";
           
       } else if ($pos_furn !== false) { 
-         echo '<td>'.$cell->getCalculatedValue().' '.$cell->getCoordinate().'</td>';
+        //  echo '<td>'.$cell->getCalculatedValue().' '.$cell->getCoordinate().'</td>';
+
+        //  if ($cell->getCalculatedValue()==""){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
+        //  else{echo '<td> пусто</td>';}
          $array[] = 'F-'.($row_num-3);
           // echo "Строка '$findme' найдена в строке '$mystring'";
           // echo " в позиции $pos";
          
       } else { 
-        echo "<td>" . $cell->getCalculatedValue() .' '.$cell->getCoordinate(). "</td>";
+        // echo "<td>" . $cell->getCalculatedValue() .' ['.$cell->getCoordinate(). "]</td>";
+        if ($cell->getCalculatedValue()){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
+           else{echo '<td> пусто</td>';}
       }
 
         
@@ -105,7 +113,7 @@ echo "</table>";
 //         echo '</table>';
 //         echo 'Всего '.$row_num.' строк';
 //    }//foreach($lists as $list)
-echo 'Всего '.count($rowIterator).' строк';
+echo 'Всего '.$row_num.' строк';
 
 	echo "<pre>";
 	print_r( $array);
