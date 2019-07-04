@@ -17,6 +17,13 @@ $Excel = PHPExcel_IOFactory::load($File);
 $Excel->setActiveSheetIndex(0);
 // Получаем активный лист
 $sheet = $Excel->getActiveSheet();
+
+$highestRow = $sheet->getHighestRow(); // e.g. 10
+$highestColumn = $sheet->getHighestColumn(); // e.g 'F'
+$highestColumnIndex = PHPExcel_Cell::columnIndexFromString($highestColumn); // e.g. 5
+echo $highestRow .' строк<br>';
+echo $highestColumn  .' Максимальная литера<br>';
+echo $highestColumnIndex .' Максимальная литера по счёту<br>';
 $row_num=0;
 
 $array = array();
@@ -47,7 +54,7 @@ foreach ($rowIterator as $row) {
           //  if ($cell->getCalculatedValue()){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
           //  else{echo '<td> пусто</td>';}
            
-           $array[] = 'P-'.($row_num-3);
+           $array[] = 'P-'.($row_num-3).'-'.$cell->getCoordinate();;
           // echo "Строка '$findme' не найдена в строке '$mystring'";
           
       } else if ($pos_furn !== false) { 
@@ -55,14 +62,15 @@ foreach ($rowIterator as $row) {
 
         //  if ($cell->getCalculatedValue()==""){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
         //  else{echo '<td> пусто</td>';}
-         $array[] = 'F-'.($row_num-3);
+         $array[] = 'F-'.($row_num-3).'-'.$cell->getCoordinate();
           // echo "Строка '$findme' найдена в строке '$mystring'";
           // echo " в позиции $pos";
          
       } else { 
         // echo "<td>" . $cell->getCalculatedValue() .' ['.$cell->getCoordinate(). "]</td>";
-        if ($cell->getCalculatedValue()){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
-           else{echo '<td> пусто</td>';}
+        // if ($cell->getCalculatedValue()){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
+        if ($cell->getCalculatedValue()){echo '<td>'.$cell->getCalculatedValue().'</td>';}
+           else{echo '<td> </td>';}
       }
 
         
