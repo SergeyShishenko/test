@@ -156,6 +156,7 @@ echo "panel";
 print_r( $array_panel);
 echo "furn";
 print_r( $array_furn);
-echo "</pre>";	
+echo "</pre>";
+echo '<input type="hidden" id="currfile" value="'.$randomName.'" form="frm">' ; 	
 
  ?>
