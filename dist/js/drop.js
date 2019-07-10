@@ -423,7 +423,7 @@
            $("body").on("click", "#DelSubmit", function(e) {
                 e.preventDefault();
                 var currfile = $('#currfile').val();                 
-
+// alert('#DelSubmit');
             // alert(objxlsx[DbNumberID][1].product);
 
                 // propdelete(objxlsx,DbNumberID);
@@ -456,6 +456,7 @@
 
                     //выстраиваем  данные для POST
                     // var myData =    "recordToDelete=xlscsv/"+currfile;
+                    alert(currfile );
                     var myData =  {
                                      recordToDelete : "xlscsv/"+currfile,
                                      arrcurrT : arrcurrT
@@ -569,12 +570,39 @@ $(window).bind('beforeunload',function(){
 
 // return 'are you sure you want to leave?';
     //save info somewhere
+   
     delfiles();
+    // return "Данные не сохранены. Точно перейти? "+ $('#currfile').val();
+    
     
   
    
 
 });
+// window.onbeforeunload = function() {
+   
+//     var myData =  {
+//         recordToDelete : "xlscsv/"+$('#currfile').val(),
+//         arrcurrT : arrcurrT
+//        };
+//         jQuery.ajax({
+//         type: "POST", // HTTP метод  POST или GET
+//         url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
+//         dataType:"text", // Тип данных
+//         data:myData, //post переменные
+//         success:function(response){
+//         // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+//         console.log(response);
+        
+
+//         },
+//         error:function (xhr, ajaxOptions, thrownError){
+//         //выводим ошибку
+//         alert(thrownError);
+//         }
+//         });
+     
+//   };
 
 function delfiles()
 {

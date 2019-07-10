@@ -145,12 +145,12 @@ if(isset($_POST["arr"]) )//генерация файла
 
 if(isset($_POST["recordToDelete"]) )
 {
-	// if (unlink($_POST["recordToDelete"])){
-	// 	// echo "Файл: ".$_POST["recordToDelete"]." удален!";
+	if (unlink($_POST["recordToDelete"])){
+		echo "Файл: ".$_POST["recordToDelete"]." удален!";
 		
-	// }else{
-	// 	// echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
-	// }
+	}else{
+		echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
+	}
 	if(isset($_POST["arrcurrT"]) )
 	{
 		foreach($_POST["arrcurrT"] as $val) { 

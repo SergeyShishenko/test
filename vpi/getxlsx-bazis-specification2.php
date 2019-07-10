@@ -158,5 +158,6 @@ echo "furn";
 print_r( $array_furn);
 echo "</pre>";
 echo '<input type="hidden" id="currfile" value="'.$randomName.'" form="frm">' ; 	
+// echo '<input type="hidden" id="currfile" value="'.$File.'" form="frm">' ; 	
 
  ?>
