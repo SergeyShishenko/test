@@ -456,7 +456,7 @@
 
                     //выстраиваем  данные для POST
                     // var myData =    "recordToDelete=xlscsv/"+currfile;
-                    alert(currfile );
+                    // alert(currfile );
                     var myData =  {
                                      recordToDelete : "xlscsv/"+currfile,
                                      arrcurrT : arrcurrT
@@ -566,11 +566,17 @@ function Objx(name) {
   }
 Objx.prototype = excelObject;
   
-$(window).bind('beforeunload',function(){
+$(window).bind('beforeunload',function(e){
 
 // return 'are you sure you want to leave?';
     //save info somewhere
+    // e.preventDefault();
+    
+   console.log($('#currfile').val());
    
+//    return false;
+   
+    
     delfiles();
     // return "Данные не сохранены. Точно перейти? "+ $('#currfile').val();
     
@@ -579,28 +585,30 @@ $(window).bind('beforeunload',function(){
    
 
 });
-// window.onbeforeunload = function() {
-   
-//     var myData =  {
-//         recordToDelete : "xlscsv/"+$('#currfile').val(),
-//         arrcurrT : arrcurrT
-//        };
-//         jQuery.ajax({
-//         type: "POST", // HTTP метод  POST или GET
-//         url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
-//         dataType:"text", // Тип данных
-//         data:myData, //post переменные
-//         success:function(response){
-//         // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-//         console.log(response);
+// window.onbeforeunload = function(e) {
+//     // e.preventDefault();
+//     // alert("thrownError");
+//     // return false;
+//     // var myData =  {
+//     //     recordToDelete : "xlscsv/"+$('#currfile').val(),
+//     //     arrcurrT : arrcurrT
+//     //    };
+//     //     jQuery.ajax({
+//     //     type: "POST", // HTTP метод  POST или GET
+//     //     url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
+//     //     dataType:"text", // Тип данных
+//     //     data:myData, //post переменные
+//     //     success:function(response){
+//     //     // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+//     //     console.log(response);
         
 
-//         },
-//         error:function (xhr, ajaxOptions, thrownError){
-//         //выводим ошибку
-//         alert(thrownError);
-//         }
-//         });
+//     //     },
+//     //     error:function (xhr, ajaxOptions, thrownError){
+//     //     //выводим ошибку
+//     //     alert(thrownError);
+//     //     }
+//     //     });
      
 //   };
 
@@ -639,6 +647,29 @@ function delfiles()
         }
         });
     }
+
+
+    var myData2 =  {
+        recordToDelete : "xlscsv/"+$('#currfile').val(),
+        arrcurrT : arrcurrT
+       };
+        jQuery.ajax({
+        type: "POST", // HTTP метод  POST или GET
+        url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
+        dataType:"text", // Тип данных
+        data:myData2, //post переменные
+        success:function(response){
+        // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+        console.log(response);
+         console.log("Перезагрузка...");
+        
+
+        },
+        error:function (xhr, ajaxOptions, thrownError){
+        //выводим ошибку
+        alert(thrownError);
+        }
+        });
 }
 
 function checkAddress(checkbox,s)
@@ -1196,7 +1227,7 @@ $( "body" ).keyup(function( event ){
 // event.preventDefault(); 
    
         // 
-        console.log(event.keyCode);
+        // console.log(event.keyCode);
         if(event.keyCode == 13){
             // alert();
             console.log( $("#order_table tbody tr").is(".pressedTime"));
