@@ -32,7 +32,11 @@
         $("body").on('drop',"#drop-files", function(e) {	
             // Передаем в files все полученные изображения
             var files = e.dataTransfer.files;
+            //alert(files[0].name);
             // Проверяем на максимальное количество файлов
+           // alert(files[0].name.split(".").slice(-1)[0]);
+            if (files[0].name.split(".").slice(-1)[0] =="CNC")maxFiles=100;
+
             if (files.length <= maxFiles) {
                 // Передаем массив с файлами в функцию загрузки на предпросмотр
                 loadInView(files);
@@ -49,7 +53,7 @@
     // Заполняем массив выбранными изображениями
     var files = $(this)[0].files;
     // Проверяем на максимальное количество файлов
- if (files.length <= maxFiles) {
+ if (  files.length <= maxFiles) {
     // Передаем массив с файлами в функцию загрузки на предпросмотр
     loadInView(files);
          // Очищаем инпут файл путем сброса формы
@@ -75,14 +79,16 @@
             // Для каждого файла
             
             $.each(files, function(index, file) { 
-                // console.log(files[index].type);	
-                // console.log(files[index].name);	
+                 console.log(files[index].type);	
+                 console.log(files[index].name);	
 
 
 
                 var clickedEXP = files[index].name.split("."); //Разбиваем строку (Split работает аналогично PHP explode)
-                var EXP = clickedEXP[1]; //и получаем номер из массива
+                var EXP = clickedEXP.slice(-1)[0]; //и получаем номер из массива
+               // console.log(clickedEXP.slice(-1)[0]);
                 console.log(EXP);
+               // console.log("type "+files[index].type);
             var tmime="";	
             
             
