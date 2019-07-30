@@ -13,12 +13,12 @@
         // var countDOCFiles = 0;
         // var countPDFFiles = 0;
         // var countXLSFiles = 0;
-        
+        var cnc=false;
         // Оповещение по умолчанию
         var errMessage = 0;
 
         
-
+          
         // Кнопка выбора файлов
         var defaultUploadBtn = $('#uploadbtn');
         
@@ -27,6 +27,17 @@
         
         // Область информер о загруженных изображениях - скрыта
         $('#uploaded-files').hide();
+
+        function readFile(object) {
+            // var file = object.files[0];
+            var file = object;
+            var reader = new FileReader();
+            reader.onload = function() {
+            //   document.getElementById('out').innerHTML = reader.result;
+              $('#out').append('<p>'+reader.result+'</p><br>');
+            }
+            reader.readAsText(file);
+          }
         
         // Метод при падении файла в зону загрузки
         $("body").on('drop',"#drop-files", function(e) {	
@@ -35,7 +46,7 @@
             //alert(files[0].name);
             // Проверяем на максимальное количество файлов
            // alert(files[0].name.split(".").slice(-1)[0]);
-            if (files[0].name.split(".").slice(-1)[0] =="CNC")maxFiles=100;
+            if (files[0].name.split(".").slice(-1)[0] =="CNC"){maxFiles=100; cnc=true;}
 
             if (files.length <= maxFiles) {
                 // Передаем массив с файлами в функцию загрузки на предпросмотр
@@ -88,6 +99,9 @@
                 var EXP = clickedEXP.slice(-1)[0]; //и получаем номер из массива
                // console.log(clickedEXP.slice(-1)[0]);
                 console.log(EXP);
+                // console.log(files[0].result);
+                if (cnc){ readFile(file);}
+                 
                // console.log("type "+files[index].type);
             var tmime="";	
             

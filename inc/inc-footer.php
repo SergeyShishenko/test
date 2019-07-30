@@ -41,6 +41,7 @@
                                 <input type="file" id="uploadbtn" multiple  >
                                 <!-- </form> -->
                             </div>
+                            <div id="out"></div>
 
                             <? include 'vpi/inc-list-csv.php'; ?>
                             
