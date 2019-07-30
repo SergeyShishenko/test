@@ -34,7 +34,8 @@
             var reader = new FileReader();
             reader.onload = function() {
             //   document.getElementById('out').innerHTML = reader.result;
-              $('#out').append('<p>'+reader.result+'</p><br>');
+            var text =reader.result;
+              $('#out').append('<p>'+text+'</p><br>');
             }
             reader.readAsText(file);
           }
