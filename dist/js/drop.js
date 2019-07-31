@@ -40,10 +40,24 @@
             text=text.replace(" DS="," x ");
             
               $('#out_CNC').append('<p>'+file.name.slice(0,-4)+" - "+text+' - 1 шт.</p>');
+              
             }
             reader.readAsText(file);
           }
         
+          function sortFiles() {
+            //   alert();
+            $('#out_CNC > p').sort(function(a, b) {
+                // console.log('a '+a.innerHTML);	
+                // console.log('b '+b.innerHTML);
+              var $a = a.innerHTML,
+                $b = b.innerHTML;
+                // console.log('$a '+$a);	
+                // console.log('$b '+$b);	
+              return $a.localeCompare($b);
+            }).appendTo('#out_CNC');
+          }
+
         // Метод при падении файла в зону загрузки
         $("body").on('drop',"#drop-files", function(e) {	
             // Передаем в files все полученные изображения
@@ -51,7 +65,10 @@
             //alert(files[0].name);
             // Проверяем на максимальное количество файлов
            // alert(files[0].name.split(".").slice(-1)[0]);
-            if (files[0].name.split(".").slice(-1)[0] =="CNC"){maxFiles=100; cnc=true;}
+            if (files[0].name.split(".").slice(-1)[0] =="CNC"){
+                maxFiles=100; cnc=true;
+              
+            }
 
             if (files.length <= maxFiles) {
                 // Передаем массив с файлами в функцию загрузки на предпросмотр
@@ -95,8 +112,8 @@
             // Для каждого файла
             
             $.each(files, function(index, file) { 
-                 console.log(files[index].type);	
-                 console.log(files[index].name);	
+                //  console.log(files[index].type);	
+                //  console.log(files[index].name);	
 
 
 
@@ -1431,7 +1448,8 @@ $("#order_table tbody td").click(function(){
 // 
 function PrintElem(elem)
     {
-        Popup($(elem).html());
+        sortFiles();
+       Popup($(elem).html());
     }
  
     function Popup(data)
