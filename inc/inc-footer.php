@@ -42,7 +42,7 @@
                                 <!-- </form> -->
                             </div>
                             <div id="out_CNC"></div>
-                            <input type="button" value="Print Div" onclick="PrintElem('#out_CNC')" />
+                            <input type="button" value="Печать CNC" onclick="PrintElem('#out_CNC')" />
 
 
                             <? include 'vpi/inc-list-csv.php'; ?>
