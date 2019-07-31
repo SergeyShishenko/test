@@ -34,12 +34,17 @@
             var reader = new FileReader();
             reader.onload = function() {
             //   document.getElementById('out').innerHTML = reader.result;
+            var cont_detail=1;// по умолчанию
             var text =reader.result;
             text=text.slice( text.indexOf('DL=')+3, text.indexOf('OFFS'));
             text=text.replace(" DH="," x ");
             text=text.replace(" DS="," x ");
+            var repeatCount=30;
             
-              $('#out_CNC').append('<p>'+file.name.slice(0,-4)+" - "+text+' - 1 шт.</p>');
+            var namef =file.name.slice(0,-4);
+            // alert(namef.length);
+             namef =namef+'...'.repeat(repeatCount-namef.length);
+              $('#out_CNC').append('<p style="width:400px;">'+namef+'<span style="float:right;">'+text+' - '+cont_detail+' шт.</span></p>');
               
             }
             reader.readAsText(file);
