@@ -35,7 +35,11 @@
             reader.onload = function() {
             //   document.getElementById('out').innerHTML = reader.result;
             var text =reader.result;
-              $('#out').append('<p>'+text+'</p><br>');
+            text=text.slice( text.indexOf('DL=')+3, text.indexOf('OFFS'));
+            text=text.replace(" DH="," x ");
+            text=text.replace(" DS="," x ");
+            
+              $('#out_CNC').append('<p>'+file.name.slice(0,-4)+" - "+text+' - 1 шт.</p>');
             }
             reader.readAsText(file);
           }
