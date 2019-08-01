@@ -34,8 +34,11 @@
             var reader = new FileReader();
             reader.onload = function() {
             //   document.getElementById('out').innerHTML = reader.result;
-            var cont_detail=1;// по умолчанию
+            var cont_detail=1;// количество деталей по умолчанию
             var text =reader.result;
+            if(text.indexOf('$=')>0)
+            {cont_detail=text.slice( text.indexOf('$=')+2, text.indexOf('::SIDE='));} 
+            //if(cont_detail==0){cont_detail=1}
             text=text.slice( text.indexOf('DL=')+3, text.indexOf('OFFS'));
             text=text.replace(" DH="," x ");
             text=text.replace(" DS="," x ");
