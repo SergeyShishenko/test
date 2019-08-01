@@ -74,9 +74,9 @@
             // Проверяем на максимальное количество файлов
            // alert(files[0].name.split(".").slice(-1)[0]);
             if (files[0].name.split(".").slice(-1)[0] =="CNC"){
-                maxFiles=100; cnc=true;
-              
+                maxFiles=100; cnc=true;              
             }
+            else{cnc=false;}
 
             if (files.length <= maxFiles) {
                 // Передаем массив с файлами в функцию загрузки на предпросмотр
