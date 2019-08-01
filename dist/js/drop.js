@@ -42,12 +42,12 @@
             text=text.slice( text.indexOf('DL=')+3, text.indexOf('OFFS'));
             text=text.replace(" DH="," x ");
             text=text.replace(" DS="," x ");
-            var repeatCount=30;
+            var repeatCount=40;
             
             var namef =file.name.slice(0,-4);
             // alert(namef.length);
              namef =namef+'...'.repeat(repeatCount-namef.length);
-              $('#out_CNC').append('<p style="width:500px;">'+namef+'<span style="float:right;">'+text+' - '+cont_detail+' шт.</span></p>');
+              $('#out_CNC').append('<p style="width:600px;">'+namef+'<span style="float:right;">'+text+' - '+cont_detail+' шт.</span></p>');
               
             }
             reader.readAsText(file);
