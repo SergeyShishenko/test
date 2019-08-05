@@ -8,7 +8,7 @@ include 'inc/inc-head.php';
 include 'inc/inc-header-menu.php';
 include 'inc/inc-left-side-menu-metodichki.php';
 ?> 
-            <!-- main  -->
+                <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
 
                     <article >
@@ -58,11 +58,14 @@ include 'inc/inc-left-side-menu-metodichki.php';
                          </div>
                      
                       </section>
-                    </article> 
-                </div>
-            <!-- main  -->
+                    </article>
+                    
+               
 
-            <!-- боковое меню блоки дверные начало -->
+
+               
+                </div> <!-- main  -->
+                <!-- боковое меню блоки дверные начало -->
                 <div class="col-md-2" id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
@@ -72,13 +75,11 @@ include 'inc/inc-left-side-menu-metodichki.php';
                                     </li>
                                     <li><a href="#AddOrderProdudtCE-v3">Добавить свойства: Заказ/ Изделие/ СЕ (AddOrderProdudtCE-v3)</a>
                                     </li>
-                                                                    
+                                                                      
                                 </ul>
                             </li>                            
-                                        
+                                          
                         </ul>
                     </div>
-                </div>
-            <!-- боковое меню блоки дверные конец -->
-
+                </div><!-- боковое меню блоки дверные конец -->
 <?php include 'inc/inc-footer.php'; ?>
