@@ -1,0 +1,65 @@
+<?php
+include 'inc/inc-session-start.php';
+include 'inc/inc-menu-value.php';
+include 'inc/inc-menu-value-metodichki.php';
+$metodichkiClass = 'class="active"';
+$item_basis_Class = '';
+$item_sofiapro3_Class = 'active';
+include 'inc/inc-head.php';
+include 'inc/inc-header-menu.php';
+include 'inc/inc-left-side-menu-metodichki.php';
+?> 
+            <!-- main  -->
+                <div class="col-md-8 col-md-8-non" role="main" id="main-page">
+
+                    <article >
+                      <section  >
+                        <div class="page-header">
+                          <h1 itemprop="name" id="SofiaPro">Программа СофияПро-3</h1>
+                        </div>
+                       
+                     
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <p> 
+                                <h2 itemprop="name" id="obyazatelstva">Обязательства </h2>
+                                <!-- <a href="./dist/files/js/AddOrderProductCE-v1.js" type="button" class="btn btn-primary"  download="AddOrderProductCE-v1.js">Скачать - AddOrderProductCE-v1.js</a> -->
+                            </p>
+
+                            <p >&nbsp;</p> 
+                            <div class="main-box-body clearfix">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                                                <source src="./dist/video/SofiaPro3/obyazatelstva.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <!-- <p >Создан: 25/02/2019г.</p>      
+                                        <p >Обновлен: 28/02/2019г.</p>       -->
+                            </div> 
+                        </div>
+                       
+                     
+                      </section>
+                    </article> 
+                </div>
+            <!-- main  -->
+
+            <!-- боковое меню блоки дверные начало -->
+                <div class="col-md-2" id="navmain-izdeliya">
+                    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
+                        <ul class="nav bs-sidenav">
+                            <li><a href="#SofiaPro">Программа СофияПро-3</a>
+                            <ul class="nav">
+                                    <li><a href="#obyazatelstva">Обязательства</a>
+                                    </li>
+                                    <!-- <li><a href="#AddOrderProdudtCE-v3">Добавить свойства: Заказ/ Изделие/ СЕ (AddOrderProdudtCE-v3)</a>
+                                    </li> -->
+                                                                    
+                                </ul>
+                            </li>                            
+                                        
+                        </ul>
+                    </div>
+                </div>
+            <!-- боковое меню блоки дверные конец -->
+
+<?php include 'inc/inc-footer.php'; ?>

@@ -235,7 +235,21 @@
                         </li>
                                         
                     </ul>
-                </li>                                                    
+                </li> 
+                <!-- menu -->
+                <li class="menu ">
+                    <a href="metodichki-SofiaPro3.php" class="list-group-item '.$item_sofiapro3_Class.'">Sofia_Pro-3</a>
+                    <ul class="list-group sub_menu">
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-SofiaPro3.php#SoriaPro">Программа СофияПро-3</a>
+                            <ul class="list-group sub_menu2">
+                                <li><a class="list-group-item sub" href="metodichki-SofiaPro3.php#obyazatelstva">Обязательства</a>
+                                </li>                                                                        
+                            </ul>
+                        </li>
+                                        
+                    </ul>
+                </li> 
+
             </ul>
         </div>
     </div>
