@@ -1477,5 +1477,11 @@ function PrintElem(elem)
  
         return true;
     }
+    function Reset(elem)
+    {
+        $(elem).empty();
+       
+    }
+    
 
  
