@@ -252,6 +252,8 @@
                                 </li>                                                                        
                                 <li><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="metodichki-SofiaPro3.php#addition5">Прикрепление ВПИ, ВФ и Стекол и зеркал к образцам</a>
                                 </li>                                                                        
+                                <li><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="metodichki-SofiaPro3.php#addition6">Упрощено создание повторного приложения (сделать кнопку в заказе)</a>
+                                </li>                                                                        
                                 <li><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="metodichki-SofiaPro3.php#addition8">Во вкладке ДП добавлен № комплекта и возможность оставлять на экране только нужные комплект</a>
                                 </li>                                                                        
                             </ul>

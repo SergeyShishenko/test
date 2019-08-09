@@ -114,7 +114,7 @@ include 'inc/inc-left-side-menu-metodichki.php';
                         </div>
                         
                      
-                        <!-- <div class="bs-callout bs-callout-warning cont" >
+                        <div class="bs-callout bs-callout-warning cont" >
                             <p> 
                                 <h2 itemprop="name" id="addition6">Упростить создание повторного приложения (сделать кнопку в заказе)</h2>
                             </p>
@@ -128,7 +128,7 @@ include 'inc/inc-left-side-menu-metodichki.php';
                                         </div>
                                       
                             </div> 
-                        </div> -->
+                        </div>
 
                         <div class="bs-callout bs-callout-warning cont" >
                             <p> 
@@ -170,9 +170,9 @@ include 'inc/inc-left-side-menu-metodichki.php';
                                     </li>
                                     <li><a href="#addition5">Прикрепление ВПИ, ВФ и Стекол и зеркал к образцам</a>
                                     </li>
-                                    <!-- <li><a href="#addition1">Обязательства</a>
+                                    <li><a href="#addition6">Упрощено создание повторного приложения (сделать кнопку в заказе)</a>
                                     </li>
-                                    <li><a href="#addition1">Обязательства</a>
+                                   <!--  <li><a href="#addition1">Обязательства</a>
                                     </li> -->
                                     <li><a href="#addition8">Во вкладке ДП добавлен № комплекта и возможность оставлять на экране только нужные комплект</a>
                                     </li>
