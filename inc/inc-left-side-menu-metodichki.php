@@ -242,7 +242,17 @@
                     <ul class="list-group sub_menu">
                         <li class="menu2"><a class="list-group-item sub" href="metodichki-SofiaPro3.php#SoriaPro">Программа СофияПро-3</a>
                             <ul class="list-group sub_menu2">
-                                <li><a class="list-group-item sub" href="metodichki-SofiaPro3.php#obyazatelstva">Обязательства</a>
+                                <li><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="metodichki-SofiaPro3.php#addition1">Загрузка ДП, ДП+, КД в заказ</a>
+                                </li>                                                                        
+                                <li><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="metodichki-SofiaPro3.php#addition2">Распечатать бланк Акта к изделиям</a>
+                                </li>                                                                        
+                                <li><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="metodichki-SofiaPro3.php#addition3">Исправлена система отсчета сроков от Заключения договора или Оплаты (более поздней даты)</a>
+                                </li>                                                                        
+                                <li><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="metodichki-SofiaPro3.php#addition4">Функция отметки обязательств по ДП, ГП и Монтажу</a>
+                                </li>                                                                        
+                                <li><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="metodichki-SofiaPro3.php#addition5">Прикрепление ВПИ, ВФ и Стекол и зеркал к образцам</a>
+                                </li>                                                                        
+                                <li><a class="list-group-item sub  dblstr-lg dblstr-xl   dblstr-md dblstr-sm " href="metodichki-SofiaPro3.php#addition8">Во вкладке ДП добавлен № комплекта и возможность оставлять на экране только нужные комплект</a>
                                 </li>                                                                        
                             </ul>
                         </li>
