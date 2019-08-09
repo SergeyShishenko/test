@@ -155,7 +155,7 @@ include 'inc/inc-left-side-menu-metodichki.php';
             <!-- main  -->
 
             <!-- боковое меню блоки дверные начало -->
-                <div class="col-md-2" id="navmain-izdeliya">
+                <!-- <div class="col-md-2" id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >
                         <ul class="nav bs-sidenav">
                             <li><a href="#SofiaPro">Программа СофияПро-3</a>
@@ -171,20 +171,21 @@ include 'inc/inc-left-side-menu-metodichki.php';
                                     <li><a href="#addition5">№5. Прикрепление ВПИ, ВФ и Стекол и зеркал к образцам</a>
                                     </li>
                                     <li><a href="#addition6">№6. Упрощено создание повторного приложения (сделать кнопку в заказе)</a>
-                                    </li>
-                                   <!--  <li><a href="#addition1">Обязательства</a>
-                                    </li> -->
+                                    </li>                                  
                                     <li><a href="#addition7">№7. Во вкладке ДП добавлен № комплекта и возможность оставлять на экране только нужные комплект</a>
-                                    </li>
-                                    <!-- <li><a href="#AddOrderProdudtCE-v3">Добавить свойства: Заказ/ Изделие/ СЕ (AddOrderProdudtCE-v3)</a>
-                                    </li> -->
-                                                                    
+                                    </li>                               
                                 </ul>
                             </li>                            
                                         
                         </ul>
                     </div>
-                </div>
+                </div> -->
             <!-- боковое меню блоки дверные конец -->
+           
 
-<?php include 'inc/inc-footer.php'; ?>
+<?php
+$arrlist = [$SP3];           
+SideMenuList($arrlist);
+ 
+
+include 'inc/inc-footer.php'; ?>

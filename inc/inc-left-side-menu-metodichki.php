@@ -1,4 +1,6 @@
-<?php echo'
+<?php
+include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
+ echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">
     <div class="row">

@@ -16,56 +16,50 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'id'=> "#addition1",
                     'video'=> $path_video."1.mp4",
                     'keywords'=>"",
-                    'def'=>"Загрузка ДП, ДП+, КД в заказ"];
+                    'def'=>"№1. Загрузка ДП, ДП+, КД в заказ"];
 
-    $SP3[2]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php",
+    $SP3[2]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition2",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."2.mp4",
                     'keywords'=>"",
-                    'def'=>"Распечатать бланк Акта к изделиям "];                
+                    'def'=>"№2. Распечатать бланк Акта к изделиям "];                
                 
-    $SP3[3]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-polunakladnaya.php",
+    $SP3[3]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition3",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."3.mp4",
                     'keywords'=>"",
-                    'def'=>"Исправлена система отсчета сроков от Заключения договора или Оплаты (более поздней даты)"];
+                    'def'=>"№3. Исправлена система отсчета сроков от Заключения договора или Оплаты (более поздней даты)"];
 
-    $SP3[4]=['path'=>"metodichki-SofiaPro3-falshfasadnaya.php",
+    $SP3[4]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition4",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."4.mp4",
                     'keywords'=>"",
-                    'def'=>"Функция отметки обязательств по ДП, ГП и Монтажу "];
+                    'def'=>"№3. Функция отметки обязательств по ДП, ГП и Монтажу "];
 
-    $SP3[5]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-nakladnaya-nulevogo-vhozhdeniya.php",
+    $SP3[5]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition5",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."5.mp4",
                     'keywords'=>"",
-                    'def'=>"Прикрепление ВПИ, ВФ и Стекол и зеркал к образцам"];
+                    'def'=>"№5. Прикрепление ВПИ, ВФ и Стекол и зеркал к образцам"];
 
-    $SP3[6]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-nakladnaya-nulevogo-vhozhdeniya.php",
+    $SP3[6]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition6",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."6.mp4",
                     'keywords'=>"",
-                    'def'=>"Упростить создание повторного приложения (сделать кнопку в заказе)"];
+                    'def'=>"№6. Упростить создание повторного приложения (сделать кнопку в заказе)"];
 
-    // $SP3[7]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-nakladnaya-nulevogo-vhozhdeniya.php",
-    //                 'id'=> "#addition7",
-    //                 'img'=> $path_img."tbstest.png",
-    //                 'video'=> $path_video."tbsnakladnaya-nulevogo-vhozhdeniya-5000502-01-104_2.mp4",
-    //                 'keywords'=>"",
-    //                 'def'=>"5000502-01-104 петля накладная нулевого вхождения"];
-
-    $SP3[7]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-nakladnaya-nulevogo-vhozhdeniya.php",
-                    'id'=> "#addition8",
+  
+    $SP3[7]=['path'=>"metodichki-SofiaPro3.php",
+                    'id'=> "#addition7",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."7.mp4",
                     'keywords'=>"",
-                    'def'=>"Во вкладке ДП добавлен № комплекта и возможность оставлять на экране только нужные комплект"];
+                    'def'=>"№7. Во вкладке ДП добавлен № комплекта и возможность оставлять на экране только нужные комплект"];
                 
     
 
