@@ -10,47 +10,55 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'img'=> $path_img."tbstest.png",
                     'video'=> "",                    
                     'keywords'=>"",
+                    'tilde'=>"ыз3",
                     'def'=>"Программа SP3"];    
 
     $SP3[1]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition1",
+                    'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."1.mp4",
-                    'keywords'=>"",
+                    'keywords'=>"SP3 (дополнение 1) - Загрузка ДП, ДП+, КД в заказ",
+                    'tilde'=>"ыз3",
                     'def'=>"№1. Загрузка ДП, ДП+, КД в заказ"];
 
     $SP3[2]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition2",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."2.mp4",
-                    'keywords'=>"",
+                    'keywords'=>"SP3 (дополнение 2) - Распечатать бланк Акта к изделиям ",
+                    'tilde'=>"ыз3",
                     'def'=>"№2. Распечатать бланк Акта к изделиям "];                
                 
     $SP3[3]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition3",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."3.mp4",
-                    'keywords'=>"",
+                    'keywords'=>"SP3 (дополнение 3) - Исправлена система отсчета сроков от Заключения договора или Оплаты (более поздней даты)",
+                    'tilde'=>"ыз3",
                     'def'=>"№3. Исправлена система отсчета сроков от Заключения договора или Оплаты (более поздней даты)"];
 
     $SP3[4]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition4",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."4.mp4",
-                    'keywords'=>"",
-                    'def'=>"№3. Функция отметки обязательств по ДП, ГП и Монтажу "];
+                    'keywords'=>"SP3 (дополнение 4) - Функция отметки обязательств по ДП, ГП и Монтажу",
+                    'tilde'=>"ыз3",
+                    'def'=>"№4. Функция отметки обязательств по ДП, ГП и Монтажу "];
 
     $SP3[5]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition5",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."5.mp4",
-                    'keywords'=>"",
+                    'keywords'=>"SP3 (дополнение 5) -  Прикрепление ВПИ, ВФ и Стекол и зеркал к образцам",
+                    'tilde'=>"ыз3",
                     'def'=>"№5. Прикрепление ВПИ, ВФ и Стекол и зеркал к образцам"];
 
     $SP3[6]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition6",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."6.mp4",
-                    'keywords'=>"",
+                    'keywords'=>"SP3 (дополнение 6) - Упростить создание повторного приложения (сделать кнопку в заказе)",
+                    'tilde'=>"ыз3",
                     'def'=>"№6. Упростить создание повторного приложения (сделать кнопку в заказе)"];
 
   
@@ -58,7 +66,8 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'id'=> "#addition7",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."7.mp4",
-                    'keywords'=>"",
+                    'keywords'=>"SP3 (дополнение 7) - Во вкладке ДП добавлен № комплекта и возможность оставлять на экране только нужные комплект",
+                    'tilde'=>"ыз3",
                     'def'=>"№7. Во вкладке ДП добавлен № комплекта и возможность оставлять на экране только нужные комплект"];
                 
     

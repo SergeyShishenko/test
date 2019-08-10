@@ -18,7 +18,7 @@ function SideMenu($arr,$curr) //правое меню группа
         </ul>
     </div>                  
 </div>
-<!-- боковое меню конец -->  .
+<!-- боковое меню конец -->  
     ';
 }
 
@@ -44,7 +44,7 @@ echo'
     echo'   </ul>
         </div>                  
     </div>
-    <!-- боковое меню конец -->  .
+    <!-- боковое меню конец --> 
     ';
 }
 
@@ -58,7 +58,9 @@ function LeftSideMenu($arr)// левое меню -> замена <li class="men
         <ul class="list-group sub_menu2">
     ';
         for ($i=1; $i < count($arr); $i++) { 
-            echo '<li><a class="list-group-item sub" href="'.$arr[$i]['path'].$arr[$i]['id'].'">'.$arr[$i]['def'].'</a> </li>';            
+            if(strlen($arr[$i]['def'])>130){ $extClass=" dblstr-lg dblstr-xl   dblstr-md dblstr-sm ";}
+            else{ $extClass="";}
+            echo '<li><a class="list-group-item sub '.$extClass.'" href="'.$arr[$i]['path'].$arr[$i]['id'].'">'.$arr[$i]['def'].'</a> </li>';            
         }  
         echo'
         </ul>
@@ -74,14 +76,16 @@ function IndexMenu($arr,$num_footer)// index.php
     echo'
     <TR>
         <TD  class="hover mapsite" id="footer'.$num_footer.'">
-            <p data-img="'.IndexImagesPath($arr[0]['img']).'" id="floating'.($num_footer+1).'" data-href="'.$arr[0]['path'].$arr[0]['id'].'">'.$arr[0]['def'].'<span><br></span></p>
+            <p data-img="'.IndexImagesPath($arr[0]['img']).'" id="floating'.($num_footer+1).'" data-href="'.$arr[0]['path'].$arr[0]['id'].'">'.$arr[0]['def'].'<span><br>~'.$arr[0]['tilde'].'</span></p>
         </TD> 
         <TD>
             <TABLE > ';        
             for ($i=1; $i < count($arr); $i++) {                             
        echo '   <TR>
                     <TD class="mapsite" colspan="2" id="'.str_replace("#","flo-",$arr[$i]['id']).'" >
-                        <p data-img="'.IndexImagesPath($arr[$i]['img']).'" data-href="'.$arr[$i]['path'].$arr[$i]['id'].'">'.$arr[$i]['def'].'<span> <br>~</span></p>
+                        <p data-img="'.IndexImagesPath($arr[$i]['img']).'" data-href="'.$arr[$i]['path'].$arr[$i]['id'].'">'.$arr[$i]['def'].'<span> <br>~'.$arr[0]['tilde'].'</span></p>
+                        <p data-img="'.IndexImagesPath($arr[$i]['img']).'" data-href="'.$arr[$i]['path'].$arr[$i]['id'].'" class="KEYWORDS">'.$arr[$i]['keywords'].'<span> <br>~</span></p>
+                       
                     </TD>                                                                         
                 </TR>  
                 <TR><TD></TD></TR> <!--end LEVEL4-->';             
@@ -169,6 +173,44 @@ function ContentListGoupMenu($arr) //правое меню группа
             }//$arr[$i]['content']  
     echo '</div>  
     ';           
+    }//count($arr)  
+
+    echo '
+    </section>
+</article> 
+    ';    
+}
+
+///////////////////////////////
+
+function ContentListGoupMenuVideo($arr) //правое меню группа
+{
+    echo ' 
+<article  >
+    <section  >
+        <div class="page-header" > 
+             <h2 itemprop="name" id="'.trim($arr[0]['id'], '#').'" >'.$arr[0]['def'].'</h2>
+        </div> 
+        ';  
+
+        for ($i=1; $i < count($arr); $i++)
+        {                                                               
+        echo '
+
+        <h2 id="'.trim($arr[$i]['id'], '#').'">&nbsp;</h2>
+            <div class="bs-callout bs-callout-warning cont" ><h4>'.$arr[$i]['def'].'</h4>
+        
+            
+                <div class="main-box-body clearfix">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                            <source src="'.$arr[$i]['video'].'" type="video/mp4">
+                        </video>
+                    </div>                                            
+                </div> 
+            </div> 
+        ';       
+           
     }//count($arr)  
 
     echo '

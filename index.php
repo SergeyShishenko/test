@@ -4189,13 +4189,12 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                                 </TABLE>
                                                             </TD>
                                                         </TR>
-                                                     
-                                            
-                                                        
-                                                            
                                                     </TABLE>
                                                 </TD>
-                                            </TR>                                                                                                            
+                                            </TR> 
+                                            <?php 
+                                            IndexMenu($SP3,null);
+                                            ?>                                                                                                             
                                         </TABLE>
                                     </TD>   
                                 </TR>                                           
