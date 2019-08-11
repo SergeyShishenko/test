@@ -121,7 +121,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                             <a href="#" class="dblstr-menu">УСТАНОВОЧНЫЕ <br>ДОКУМЕНТЫ</a >                           
                         </li>
                         <li>
-                            <a href="metodichki-BAZIS.php">МЕТОДИЧКИ</a >
+                            <a href="metodichki-SofiaPro3.php">МЕТОДИЧКИ</a >
                             <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
