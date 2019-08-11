@@ -227,11 +227,11 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                 </li> 
                 <!-- menu -->
                 <li class="menu ">
-                    <a href="metodichki-BASIS.php" class="list-group-item '.$item_basis_Class.'">БАЗИС МЕБЕЛЬЩИК</a>
+                    <a href="metodichki-BAZIS.php" class="list-group-item '.$item_basis_Class.'">БАЗИС МЕБЕЛЬЩИК</a>
                     <ul class="list-group sub_menu">
-                        <li class="menu2"><a class="list-group-item sub" href="metodichki-BASIS.php#SCRIPTS">SCRIPTS</a>
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-BAZIS.php#SCRIPTS">SCRIPTS</a>
                             <ul class="list-group sub_menu2">
-                                <li><a class="list-group-item sub" href="metodichki-BASIS.php#AddOrderProdudtCE">Добавить свойства: Заказ/ Изделие/ СЕ </a>
+                                <li><a class="list-group-item sub" href="metodichki-BAZIS.php#AddOrderProdudtCE">Добавить свойства: Заказ/ Изделие/ СЕ </a>
                                 </li>                                                                        
                             </ul>
                         </li>

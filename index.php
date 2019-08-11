@@ -121,7 +121,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                             <a href="#" class="dblstr-menu">УСТАНОВОЧНЫЕ <br>ДОКУМЕНТЫ</a >                           
                         </li>
                         <li>
-                            <a href="metodichki-BASIS.php">МЕТОДИЧКИ</a >
+                            <a href="metodichki-BAZIS.php">МЕТОДИЧКИ</a >
                             <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
@@ -4166,7 +4166,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                             </TR> 
                                             <TR>
                                                 <TD data-tooltip="БАЗИС МЕБЕЛЬЩИК" class="hover mapsite" id="footer31">
-                                                    <p data-href="metodichki-BASIS.php"  data-img="./dist/images/no-foto.png" id="floating318">БАЗИС МЕБЕЛЬЩИК<span><br>~</span></p>
+                                                    <p data-href="metodichki-BAZIS.php"  data-img="./dist/images/no-foto.png" id="floating318">БАЗИС МЕБЕЛЬЩИК<span><br>~</span></p>
                                                     <!-- <p data-href="metodichki-stp-po-proektnoy-rabote.php" class="KEYWORDS">ПРОЕКТНАЯ РАБОТА<span><br>~-CNG</span></p> -->
                                                     
                                                 </TD>
@@ -4174,13 +4174,13 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                     <TABLE >
                                                         <TR>
                                                             <TD  class="hover mapsite" id="footer12758" >
-                                                                <p data-href="metodichki-BASIS.php#SCRIPTS"  data-img="./dist/images/no-foto.png" id="floating12818">SCRIPTS<span> <br>~</span></p>
+                                                                <p data-href="metodichki-BAZIS.php#SCRIPTS"  data-img="./dist/images/no-foto.png" id="floating12818">SCRIPTS<span> <br>~</span></p>
                                                             </TD>                                                                            
                                                             <TD>
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2"  id="flo-AddOrderProdudtCE">
-                                                                            <p data-href="metodichki-BASIS.php#AddOrderProdudtCE">Добавить свойства: Заказ/ Изделие/ СЕ <span> <br>~</span></p>
+                                                                            <p data-href="metodichki-BAZIS.php#AddOrderProdudtCE">Добавить свойства: Заказ/ Изделие/ СЕ <span> <br>~</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 

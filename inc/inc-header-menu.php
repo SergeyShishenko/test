@@ -31,7 +31,7 @@
                             <a href="#" class="dblstr-menu">УСТАНОВОЧНЫЕ <br>ДОКУМЕНТЫ</a >                           
                         </li>
                         <li '.$metodichkiClass.'>
-                            <a href="metodichki-BASIS.php">МЕТОДИЧКИ</a>
+                            <a href="metodichki-SofiaPro3.php">МЕТОДИЧКИ</a>
                         </li>
                         <li '.$furnituraClass.'>
                             <a href="furnitura-dlya-dvernyh-blokov.php">ФУРНИТУРА</a>
