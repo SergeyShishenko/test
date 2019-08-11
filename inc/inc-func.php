@@ -197,11 +197,11 @@ function ContentListGoupMenuVideo($arr) //правое меню группа
         {                                                               
         echo '
 
-        <h2 id="'.trim($arr[$i]['id'], '#').'">&nbsp;</h2>
+        <h6 id="'.trim($arr[$i]['id'], '#').'" >&nbsp;</h6>
             <div class="bs-callout bs-callout-warning cont" ><h4>'.$arr[$i]['def'].'</h4>
         
             
-                <div class="main-box-body clearfix">
+                <div class="main-box-body clearfix" >
                     <div class="embed-responsive embed-responsive-16by9">
                         <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
                             <source src="'.$arr[$i]['video'].'" type="video/mp4">
