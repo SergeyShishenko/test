@@ -11,6 +11,11 @@
     // require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
     // echo dirname(__ROOT__).'/DATA/TABLES/configDB.php';
     $dbconn=dbconnect();
+   // mysql_set_charset('utf8',$dbconn);
+   if (!mysqli_set_charset( $dbconn, 'utf8' )) {
+    echo "Ошибка: не удается установить кодировку.\n";
+    exit;
+}
     echo '
     <div id="table-saved-files" class="row">
     
