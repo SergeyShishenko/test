@@ -110,7 +110,7 @@
 });
         
         var ext="";
-        // var background="";	
+         var background;	
 
         // Функция загрузки изображений на предросмотр
         function loadInView(files) {
@@ -225,8 +225,9 @@
                             }
                             // alert(tmime);
                             
-                     
-                            dataArray.push({name : file.name, value : this.result, bground : background, type : tmime, id : $("#id").val().split("_")[1]});
+                    //  if(background)
+                    //        { dataArray.push({name : file.name, value : this.result, bground : background, type : tmime, id : $("#id").val().split("_")[1]});}
+                           dataArray.push({name : file.name, value : this.result, bground : background, type : tmime, id : $("#id").val().split("_")[1]});
                             addImage((dataArray.length-1));
                             // tmime="";
                         }; 
@@ -400,7 +401,7 @@
                         $(this).removeClass('pressedTime');                   
                     });
                     $('#uploaded-files').append(data);
-                    var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
+                if($("#currfile").val()){var clickedID = $("#currfile").val().split("."); 
                     DbNumberID = clickedID[0]; //и получаем номер из массива
                     
                     objxlsx.push(DbNumberID);
@@ -415,6 +416,9 @@
                      arr_s=[];
                      arr_table=[];
                      arr_prev=[];
+                }
+                    
+                    
                      
                  
                     $("body #uploaded-files table.zakaz  tr:gt(0)").each(function (index, value) { 
