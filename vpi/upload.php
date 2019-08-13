@@ -398,10 +398,12 @@ if ($header){
 			$numsample_key = array_search('Порядковый № образца цвета заказчика', $arraybuffer);//Порядковый № образца цвета заказчика
 			$RPG_key = array_search('Руководитель группы', $arraybuffer);//Руководитель группы
 			$VAP_key = array_search('Архитектор проекта', $arraybuffer);//Архитектор проекта
+			
 			// $end //Акт подписан
 		$header=false;
 }
-		// exit();			
+		// exit();
+		$agent="н.д.";			
 			// list($client,$address,$number_order, , ,$complect,$product,$product2, , , ,$def, , , , ,$kbKD,$kbDP, , , ,$floor,$room,$unit,$count,$serialnum,$wood,$veneer,$pic,$numsample,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
 			$client = $arraybuffer[$client_key];//Заказчик
 			$agent = $arraybuffer[$agent_key];//Предст.заказчика
@@ -474,7 +476,7 @@ if ($header){
 		$array=$data;
 		$exclude=array("0","1","2");// исключаемые индексы
 
-		if (trim($data[1][20])=='н.д.'){$agent_data ="";}else{$agent_data =$data[1][20];}
+		if (trim($data[1][20])=='н.д.' || $data[1][0]==$data[1][20] ){$agent_data ="";}else{$agent_data =$data[1][20];}
         
 		echo "<div class='sticky row row-mod'>";
 			echo "<div >";
