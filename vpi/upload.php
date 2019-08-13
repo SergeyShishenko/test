@@ -378,6 +378,7 @@ if ($header){
 		// echo "</pre>";
 
 			$client_key = array_search('Заказчик', $arraybuffer);//Заказчик
+			$agent_key = array_search('Предст.заказчика', $arraybuffer);//Предст.заказчика
 			$address_key = array_search('Объект', $arraybuffer);//Объект
 			$number_order_key = array_search('№ заказа', $arraybuffer);//№ заказа
 			$complect_key = array_search('Наименование комплекта', $arraybuffer);//Наименование комплекта
@@ -403,6 +404,7 @@ if ($header){
 		// exit();			
 			// list($client,$address,$number_order, , ,$complect,$product,$product2, , , ,$def, , , , ,$kbKD,$kbDP, , , ,$floor,$room,$unit,$count,$serialnum,$wood,$veneer,$pic,$numsample,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
 			$client = $arraybuffer[$client_key];//Заказчик
+			$agent = $arraybuffer[$agent_key];//Предст.заказчика
 			$address  = $arraybuffer[$address_key];//Объект
 			$number_order = $arraybuffer[$number_order_key]; //№ заказа
 			$complect = $arraybuffer[$complect_key]; //Наименование комплекта
@@ -428,8 +430,8 @@ if ($header){
 			$complect = end(explode('/', $complect));
 			$room = explode('/', $room)[0];
 			
-		//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15   16    17
-			array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP));
+		//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15   16    17    18   19   20
+			array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP,$agent));
 			
 		}//while
 
@@ -472,12 +474,14 @@ if ($header){
 		$array=$data;
 		$exclude=array("0","1","2");// исключаемые индексы
 
+		if (trim($data[1][20])=='н.д.'){$agent_data ="";}else{$agent_data =$data[1][20];}
+        
 		echo "<div class='sticky row row-mod'>";
 			echo "<div >";
 
 				echo "<p id='client' class='changeclick'><b>Заказчик: </b>           <span id=\"client_output\"  class=\"val\">".$data[1][0]."</span> <input type='text' class='form-control' size='40' id='client-name' value=''></p>";
 
-				echo "<p id='agent' class='changeclick'><b>Представитель: </b>       <span id=\"agent_output\"  class=\"val\"> </span> <input type='text' class='form-control' size='40' id='agent-name' value=''></p>";
+				echo "<p id='agent' class='changeclick'><b>Представитель: </b>       <span id=\"agent_output\"  class=\"val\">".$agent_data." </span> <input type='text' class='form-control' size='40' id='agent-name' value=''></p>";
 				
 				echo "<p id='address' class='changeclick'><b>Объект: </b>            <span id=\"address_output\"  class=\"val\">".$data[1][1]."</span> <input type='text' class='form-control' size='40' id='address-name' value=''></p>";
 				if (array_sum(array_column($array, 4)) === 0){// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";						
