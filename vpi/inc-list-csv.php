@@ -1,17 +1,7 @@
     <?php
-    // vpi\inc-list-csv.php
+    // vpi\inc-list-csv.php   
 
-    
-
-    //подключаем конфигурационный файл
-    // define('__ROOT__', dirname(dirname(__FILE__))); 
-    // define('__ROOT__', dirname(dirname(__FILE__))); 
-    // echo __ROOT__;
-    // require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
-    // require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
-    // echo dirname(__ROOT__).'/DATA/TABLES/configDB.php';
     $dbconn=dbconnect();
-   // mysql_set_charset('utf8',$dbconn);
    if (!mysqli_set_charset( $dbconn, 'utf8' )) {
     echo "Ошибка: не удается установить кодировку.\n";
     exit;
@@ -39,46 +29,10 @@
     
    
     // mysqli_query($dbconn,$sql);
-    if($Result_co)
-                { 
-                    // echo '$Result_co';
-                 }
-                else{//вывод ошибки                                        
-                    echo mysqli_error($dbconn);
-                    exit();
-                } 
-
+    if(!$Result_co){  echo mysqli_error($dbconn);exit();}//вывод ошибки         
 
     while($row_co = mysqli_fetch_array($Result_co))
-    {        
-//  echo ' <div class="box col-md-12" id="item_'.$row_co["head_id"].'"><!--Раздел--> 
-//             <div class="box-inner">
-//                 <div class="box-header well">
-//                     <h2 ><i class="glyphicon glyphicon-th"></i> <span id="name_head_'.$row_co["client_current_orders"].'">'.$row_co["name_head"].'</span></h2>
-//                     <div class="box-icon">
-//                         <a href="javascript:void(0)" class="btn btn-setting btn-round btn-default" 
-//                             id="head-'.$row_co["head_id"].'"
-//                             data-content="РЕДАКТИРОВАТЬ РАЗДЕЛ"
-//                             data-name="'.$row_co["name_head"].'"
-//                             data-href="'.$row_co["data_href_head"].'"
-//                             data-order="'.$row_co["number_in_order_head"].'"
-//                             data-toggle="modal"
-//                             data-target="#myModal" 
-//                             title="РЕДАКТИРОВАТЬ РАЗДЕЛ" 
-//                             data-tbl="head"
-//                             data-field="name_head"
-//                             data-field-id="head_id"
-//                             data-action="change"
-//                             data-id="head_'.$row_co["head_id"].'"
-//                             >
-//                             <i class="glyphicon glyphicon-edit"></i></a>
-//                         <a href="javascript:void(0)" class="btn btn-minimize btn-round btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>                         
-//                     </div>
-//                 </div>
-//              ';
-
-
-
+    {   
         echo ' 
             <tr>
                 <td>'.$row_co["client_current_orders"].'</td>                                                
@@ -87,9 +41,6 @@
             </tr>
      
             ';
-
-  
-
       
     }//while
               echo '        
@@ -102,8 +53,5 @@
     mysqli_free_result($Result_co);
     //Закрывает соединение с сервером MySQL
     mysqli_close($dbconn);
-
-
-  
     ?>
 

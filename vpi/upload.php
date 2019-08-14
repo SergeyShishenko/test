@@ -800,16 +800,18 @@ if ($header){
 
 	// создание таблицы end
 
-	if(!isset($_POST["selorder"]) )
-	{
-	// удаляем файл
-	if (unlink($filename)){
-		// echo "Файл: ".$_POST["recordToDelete"]." удален!";
-	}else{
-		// echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
-	}	
-	}
+ // удаляем загруженный файл
+ /////////////begin/////////////////
+	// if(!isset($_POST["selorder"]) )
+	// {
 	
+	// 	if (unlink($filename)){
+	// 		// echo "Файл: ".$_POST["recordToDelete"]." удален!";
+	// 	}else{
+	// 		// echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
+	// 	}	
+	// }
+ /////////////end//////////////////	
 
 }
 
