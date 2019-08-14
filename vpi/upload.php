@@ -326,9 +326,7 @@ function unique_multidim_array($array, $key)
 
 
 function fileopenxlscsv($filename)
-{
-
-	
+{	
 	if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php')) {
 		// require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
 		$site='';
@@ -342,8 +340,8 @@ function fileopenxlscsv($filename)
 		{
 			$filename=$_SERVER['DOCUMENT_ROOT'] .$site. $filename;
 			// $objWriter->save($_SERVER['DOCUMENT_ROOT'] .$site."/vpi/".$fname);// для localhost !!!!!!!
-// 			echo "filename $filename";
-// exit();
+	// 			echo "filename $filename";
+	// exit();
 		}
 
 	$handle = @fopen($filename, "r");			
@@ -353,57 +351,58 @@ function fileopenxlscsv($filename)
 	
 	$header=true; //заголовок 
 	if ($handle) {
-		while (($buffer = fgets($handle, 4096)) !== false) {
-
-		if(isset($_POST["selorder"]) )
+		while (($buffer = fgets($handle, 4096)) !== false) 
 		{
-			$buffer = iconv("WINDOWS-1251", "UTF-8", $buffer);
-		}
-// 
-$arraybuffer=explode(';', $buffer);
 
-//  echo "<pre>";		
-// print_r($arraybuffer);
-// // $key = array_search('Конструктор', $arraybuffer); // 
-// // echo "[".$key."] => ".$arraybuffer[$key];//<Конструктор >16
-// // echo "[".array_search('Конструктор', $arraybuffer)."] => ".$arraybuffer[array_search('Конструктор', $arraybuffer)];//<Конструктор >16
-// echo "</pre>";
+			if(isset($_POST["selorder"]) )
+			{
+				$buffer = iconv("WINDOWS-1251", "UTF-8", $buffer);
+			}
+			// 
+			$arraybuffer=explode(';', $buffer);
 
-if ($header){
-		// echo "<pre>";		
-		// print_r($arraybuffer);
-		// $key = array_search('Конструктор', $arraybuffer); // 
-		// echo "[".$key."] => ".$arraybuffer[$key];//<Конструктор >16
-		// // echo "[".array_search('Конструктор', $arraybuffer)."] => ".$arraybuffer[array_search('Конструктор', $arraybuffer)];//<Конструктор >16
-		// echo "</pre>";
+			//  echo "<pre>";		
+			// print_r($arraybuffer);
+			// // $key = array_search('Конструктор', $arraybuffer); // 
+			// // echo "[".$key."] => ".$arraybuffer[$key];//<Конструктор >16
+			// // echo "[".array_search('Конструктор', $arraybuffer)."] => ".$arraybuffer[array_search('Конструктор', $arraybuffer)];//<Конструктор >16
+			// echo "</pre>";
 
-			$client_key = array_search('Заказчик', $arraybuffer);//Заказчик
-			$agent_key = array_search('Предст.заказчика', $arraybuffer);//Предст.заказчика
-			$address_key = array_search('Объект', $arraybuffer);//Объект
-			$number_order_key = array_search('№ заказа', $arraybuffer);//№ заказа
-			$complect_key = array_search('Наименование комплекта', $arraybuffer);//Наименование комплекта
-			$product_key = array_search('№ изделия по приложению', $arraybuffer);//№ изделия по приложению
-			$product2_key = array_search('№ изделия по повт.приложению', $arraybuffer);//№ изделия по повт.приложению
-			$def_key = array_search('Наименование изделия', $arraybuffer);//Наименование изделия
-			$kbKD_key = array_search('Конструктор', $arraybuffer);//Конструктор
-			$kbDP_key = array_search('Исполнитель Диз.проекта', $arraybuffer);//Исполнитель Диз.проекта
-			$floor_key = array_search('Этаж', $arraybuffer);//Этаж
-			$room_key = array_search('Помещение', $arraybuffer);//Помещение
-			$unit_key = array_search('Ед-ца изм.', $arraybuffer);//Ед-ца изм.
-			$count_key = array_search('Количество по дог-ру', $arraybuffer);//Количество по дог-ру
-			$serialnum_key = array_search('Серийный №', $arraybuffer);//Серийный №
-			$wood_key = array_search('Материал массив', $arraybuffer);//Материал массив
-			$veneer_key= array_search('Материал шпон', $arraybuffer);//Материал шпон
-			$pic_key = array_search('Рисунок', $arraybuffer);//Рисунок
-			$numsample_key = array_search('Порядковый № образца цвета заказчика', $arraybuffer);//Порядковый № образца цвета заказчика
-			$RPG_key = array_search('Руководитель группы', $arraybuffer);//Руководитель группы
-			$VAP_key = array_search('Архитектор проекта', $arraybuffer);//Архитектор проекта
-			
-			// $end //Акт подписан
-		$header=false;
-}
-		// exit();
-		$agent="н.д.";			
+			if ($header){
+				// echo "<pre>";		
+				// print_r($arraybuffer);
+				// $key = array_search('Конструктор', $arraybuffer); // 
+				// echo "[".$key."] => ".$arraybuffer[$key];//<Конструктор >16
+				// // echo "[".array_search('Конструктор', $arraybuffer)."] => ".$arraybuffer[array_search('Конструктор', $arraybuffer)];//<Конструктор >16
+				// echo "</pre>";
+
+				$client_key = array_search('Заказчик', $arraybuffer);//Заказчик
+				$agent_key = array_search('Предст.заказчика', $arraybuffer);//Предст.заказчика
+				$address_key = array_search('Объект', $arraybuffer);//Объект
+				$number_order_key = array_search('№ заказа', $arraybuffer);//№ заказа
+				$complect_key = array_search('Наименование комплекта', $arraybuffer);//Наименование комплекта
+				$product_key = array_search('№ изделия по приложению', $arraybuffer);//№ изделия по приложению
+				$product2_key = array_search('№ изделия по повт.приложению', $arraybuffer);//№ изделия по повт.приложению
+				$def_key = array_search('Наименование изделия', $arraybuffer);//Наименование изделия
+				$kbKD_key = array_search('Конструктор', $arraybuffer);//Конструктор
+				$kbDP_key = array_search('Исполнитель Диз.проекта', $arraybuffer);//Исполнитель Диз.проекта
+				$floor_key = array_search('Этаж', $arraybuffer);//Этаж
+				$room_key = array_search('Помещение', $arraybuffer);//Помещение
+				$unit_key = array_search('Ед-ца изм.', $arraybuffer);//Ед-ца изм.
+				$count_key = array_search('Количество по дог-ру', $arraybuffer);//Количество по дог-ру
+				$serialnum_key = array_search('Серийный №', $arraybuffer);//Серийный №
+				$wood_key = array_search('Материал массив', $arraybuffer);//Материал массив
+				$veneer_key= array_search('Материал шпон', $arraybuffer);//Материал шпон
+				$pic_key = array_search('Рисунок', $arraybuffer);//Рисунок
+				$numsample_key = array_search('Порядковый № образца цвета заказчика', $arraybuffer);//Порядковый № образца цвета заказчика
+				$RPG_key = array_search('Руководитель группы', $arraybuffer);//Руководитель группы
+				$VAP_key = array_search('Архитектор проекта', $arraybuffer);//Архитектор проекта
+				
+				// $end //Акт подписан
+				$header=false;
+			}
+			// exit();
+			$agent="н.д.";			
 			// list($client,$address,$number_order, , ,$complect,$product,$product2, , , ,$def, , , , ,$kbKD,$kbDP, , , ,$floor,$room,$unit,$count,$serialnum,$wood,$veneer,$pic,$numsample,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
 			$client = $arraybuffer[$client_key];//Заказчик
 			$agent = $arraybuffer[$agent_key];//Предст.заказчика
@@ -432,14 +431,12 @@ if ($header){
 			$complect = end(explode('/', $complect));
 			$room = explode('/', $room)[0];
 			
-		//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15   16    17    18   19   20
+			//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15   16    17    18   19   20
 			array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP,$agent));
-			
+				
 		}//while
 
-		if (!feof($handle)) {
-			echo "Ошибка: fgets() неожиданно потерпел неудачу\n";
-		}
+		if (!feof($handle)) {echo "Ошибка: fgets() неожиданно потерпел неудачу\n";}
 		
 		fclose($handle);
 	}
@@ -447,27 +444,27 @@ if ($header){
 		echo 'Что-то пошло не так. Убедитесь, что файл не поврежден! $handle '.$filename;
 		exit();
 	}
-// проверка на соответствие START
-	// $reference = array("Заказчик", "Объект", "№ заказа", "№ изделия по приложению", "№ изделия по повт.приложению", "Наименование изделия", "Помещение", "Наименование комплекта", "Этаж", "Ед-ца изм.", "Количество по дог-ру", "Серийный №", "Материал массив", "Материал шпон", "Порядковый № образца цвета заказчика", "Рисунок", "Конструктор", "Исполнитель Диз.проекта");
-	// $result = array_diff($reference, $data[0]);
-	// echo "<pre>";
-	// print_r($data[0]);
-	// echo "</pre>";	
+	// проверка на соответствие START
+		// $reference = array("Заказчик", "Объект", "№ заказа", "№ изделия по приложению", "№ изделия по повт.приложению", "Наименование изделия", "Помещение", "Наименование комплекта", "Этаж", "Ед-ца изм.", "Количество по дог-ру", "Серийный №", "Материал массив", "Материал шпон", "Порядковый № образца цвета заказчика", "Рисунок", "Конструктор", "Исполнитель Диз.проекта");
+		// $result = array_diff($reference, $data[0]);
+		// echo "<pre>";
+		// print_r($data[0]);
+		// echo "</pre>";	
 
 
-	// if (count($result)>0)
-	// { 
-	// 	echo '<input type="hidden" id="currfile" value="'.$filename.'" form="frm">' ; 
+		// if (count($result)>0)
+		// { 
+		// 	echo '<input type="hidden" id="currfile" value="'.$filename.'" form="frm">' ; 
 
-	// 	// УДАЛЕНИЕ ФАЙЛА
-	// 		unlink($filename); //удаление 
+		// 	// УДАЛЕНИЕ ФАЙЛА
+		// 		unlink($filename); //удаление 
 
 
-	// 		echo "Что-то пошло не так. Убедитесь, что файл не поврежден!!!";
-	// 		exit();
+		// 		echo "Что-то пошло не так. Убедитесь, что файл не поврежден!!!";
+		// 		exit();
 
-	// }
-// проверка на соответствие END
+		// }
+	// проверка на соответствие END
 
 	
 	
@@ -796,22 +793,22 @@ if ($header){
 	
 		echo '</table>'; 
 		// файл
-		echo '<input type="hidden" id="currfile" value="'.$randomName.'" form="frm">' ; 
+		echo '<input type="hidden" id="currfile" value="'.$filename.'" form="frm">' ; 
 
-	// создание таблицы end
+		// создание таблицы end
 
- // удаляем загруженный файл
- /////////////begin/////////////////
-	// if(!isset($_POST["selorder"]) )
-	// {
-	
-	// 	if (unlink($filename)){
-	// 		// echo "Файл: ".$_POST["recordToDelete"]." удален!";
-	// 	}else{
-	// 		// echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
-	// 	}	
-	// }
- /////////////end//////////////////	
+		// удаляем загруженный файл
+		/////////////begin/////////////////
+			// if(!isset($_POST["selorder"]) )
+			// {
+			
+			// 	if (unlink($filename)){
+			// 		// echo "Файл: ".$_POST["recordToDelete"]." удален!";
+			// 	}else{
+			// 		// echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
+			// 	}	
+			// }
+		/////////////end//////////////////	
 
 }
 
