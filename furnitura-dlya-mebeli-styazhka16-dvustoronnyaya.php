@@ -89,7 +89,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                             <td>1</td>
                                                             <td>TE11</td>
                                                             <td>Металл</td>
-                                                            <td>Шток эксцентрика двусторонний (34&nbsp;мм)</td>
+                                                            <td>Шток эксцентрика двусторонний (33&nbsp;мм)</td>
                                                         </tr>
                                                         <!-- <tr   >
                                                                 <td><img src="./dist/filesdb/images/pagevpi/ArticulFutorka-BU12.png" class="" alt="Футорка" title=""></td>
@@ -178,7 +178,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                     <tbody> 
 
                                                     <tr>
-                                                    <th>Толщина ДСП<br>(A), мм</th>
+                                                    <th>Толщина ДСП<br>(T), мм</th>
                                                     <th>L,<br>мм</th>
                                                     <th>I,<br>мм</th>
                                                     <th>Артикул</th>
@@ -286,8 +286,9 @@ include 'inc/inc-left-side-menu-furnitura.php';
 
                                                     <tr>
                                                     
-                                                    <th>L,<br>мм</th>
+                                                    <th>A,<br>мм</th>
                                                     <th>L1,<br>мм</th>
+                                                    <th>L,<br>мм</th>
                                                     <th>I,<br>мм</th>
                                                     <th>Артикул</th>
                                                     </tr>
@@ -295,8 +296,9 @@ include 'inc/inc-left-side-menu-furnitura.php';
 
                                                     <tr>
                                                 
-                                                    <td>34,5</td>
+                                                    <td>33</td>
                                                     <td>80</td>
+                                                    <td>32</td>
                                                     <td>8,0</td>
                                                     <td><span class="boldstyle">TE11</span></td>
                                                     </tr>

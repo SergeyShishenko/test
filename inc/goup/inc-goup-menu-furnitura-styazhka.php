@@ -14,31 +14,31 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'id'=> "#styazhka",
                     'img'=> $path_img."tbsFixing.png",
                     'keywords'=>"",
-                    'def'=>"Стяжка эксцентриковая односторонняя для плит 16 мм"];
+                    'def'=>"Стяжка эксцентриковая односторонняя для плит 16 мм 5000502-07-701"];
 
     $styazhka[2]=['path'=>"furnitura-dlya-mebeli-styazhka16-dvustoronnyaya.php",
                     'id'=> "#styazhka16-dvustoronnyaya",
                     'img'=> $path_img."tbslshtok-dvustoronniy.png",
                     'keywords'=>"",
-                    'def'=>"Стяжка эксцентриковая двухсторонняя для плит 16 мм"];
+                    'def'=>"Стяжка эксцентриковая двухсторонняя для плит 16 мм 5000502-07-702"];
                 
     $styazhka[3]=['path'=>"furnitura-dlya-mebeli-styazhka24.php",
                     'id'=> "#styazhka24",
                     'img'=> $path_img."tbsFixing.png",
                     'keywords'=>"",
-                    'def'=>"Стяжка эксцентриковая односторонняя для плит 24 мм"];
+                    'def'=>"Стяжка эксцентриковая односторонняя для плит 24 мм 5000502-07-703"];
                 
     $styazhka[4]=['path'=>"furnitura-dlya-mebeli-styazhka24-dvustoronnyaya.php",
                     'id'=> "#styazhka24-dvustoronnyaya",
                     'img'=> $path_img."tbslshtok-dvustoronniy.png",
                     'keywords'=>"",
-                    'def'=>"Стяжка эксцентриковая двухсторонняя для плит 24 мм"];
+                    'def'=>"Стяжка эксцентриковая двухсторонняя для плит 24 мм 5000502-07-704"];
                     
     $styazhka[5]=['path'=>"furnitura-dlya-mebeli-styazhka-rafix.php",
                     'id'=> "#rafix",
                     'img'=> $path_img."tbsrafix.png",
                     'keywords'=>"",
-                    'def'=>"Стяжка эксцентриковая усиленная &Oslash;20 для 16 мм"];
+                    'def'=>"Стяжка эксцентриковая усиленная &Oslash;20 для 16 мм 5000502-07-707"];
                     
     $styazhka[6]=['path'=>"furnitura-dlya-mebeli-konfirmat.php",
                     'id'=> "#konfirmat",
