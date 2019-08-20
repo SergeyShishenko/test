@@ -1483,8 +1483,10 @@ function PrintElem(elem)
     }
     function Reset(elem)
     {
-        $(elem).empty();
-       
+         $(elem).empty();
+        $('#DelSubmit').show();
+        // $('#CreateSubmit').show();
+        $('#drop-files').show();
     }
     
 
