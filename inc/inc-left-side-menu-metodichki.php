@@ -1,5 +1,8 @@
 <?php
 include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
+//проверка
+    include 'inc/goup/inc-goup-menu-metodichki-ergonomika.php';
+//проверка
  echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">
@@ -70,7 +73,7 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                     </ul>
                 </li>
                 <!-- menu -->
-                <li class="menu disabled">
+                <li class="menu ">
                     <a href="metodichki-ergonomika.php" class="list-group-item '.$item_ergonomika_Class.'">ЭРГОНОМИКА</a>
                     <ul class="list-group sub_menu">
                         <li class="menu2"><a class="list-group-item sub" href="metodichki-ergonomika.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
