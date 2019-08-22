@@ -3604,10 +3604,14 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                             </TR> 
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
-                                                <TD data-tooltip="ЭРГОНОМИКА" class="hover mapsite disabled" id="footer29">
+                                                <TD data-tooltip="ЭРГОНОМИКА" class="hover mapsite" id="footer29">
                                                     <p data-href="metodichki-ergonomika.php"  data-img="./dist/images/no-foto.png" id="floating30">ЭРГОНОМИКА<span><br>~-metodichki-ergonomika</span></p></TD>
                                                 <TD>
                                                     <TABLE >
+                                                        <?php 
+                                                        IndexMenu($vannaya,null);
+                                                        IndexMenu($garderobnaya,null);
+                                                        ?> 
                                                         <TR>
                                                             <TD data-tooltip="ПРИМЕРЫ ЭРГОНОМИЧЕСКИХ РЕШЕНИЙ" class="hover mapsite" id="footer123" >
                                                                 <p data-href="" data-img="./dist/images/no-foto.png" id="floating124">ПРИМЕРЫ ЭРГОНОМИ<wbr>ЧЕСКИХ РЕШЕНИЙ<span> <br>~-katalog-rezby</span></p>

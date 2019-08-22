@@ -76,26 +76,11 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                 <li class="menu ">
                     <a href="metodichki-ergonomika.php" class="list-group-item '.$item_ergonomika_Class.'">ЭРГОНОМИКА</a>
                     <ul class="list-group sub_menu">
-                        <li class="menu2"><a class="list-group-item sub" href="metodichki-ergonomika.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
-                            <ul class="list-group sub_menu2">
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>                                          
-                            </ul>
-                        </li>
-                        <li class="menu2"><a class="list-group-item sub" href="metodichki-ergonomika.php#sborochnye-shemy-paneli-stenovye">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
-                            <ul class="list-group sub_menu2">
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>
-                                <li><a class="list-group-item sub" href="#">...</a>
-                                </li>                                       
-                            </ul>
-                        </li>                    
+                    ';
+                    LeftSideMenu($vannaya);
+                    LeftSideMenu($garderobnaya);
+                   
+                echo'                   
                     </ul>
                 </li>
                 <!-- menu -->

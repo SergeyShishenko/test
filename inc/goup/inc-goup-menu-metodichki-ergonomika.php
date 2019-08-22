@@ -9,11 +9,11 @@
     // SideMenuList($arrlist)
 
         $vannaya=[];
-        $vannaya[0]=['path'=>"izdeliya-paneli-stenovye.php",
+        $vannaya[0]=['path'=>"metodichki-ergonomika.php",
                             'id'=>"#paneli-stenovye-konstrukcii",
-                            'def'=>"КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ"];
+                            'def'=>"Эргономика ванной комнаты"];
 
-        $vannaya[1]=['path'=>"izdeliya-paneli-stenovye.php",
+        $vannaya[1]=['path'=>"metodichki-ergonomika.php",
                             'id'=> "#paneli-poyasa-tipovy-sostav-se",
                             'def'=>"5000203-00_100 панели пояса типовые",
                             'content'=>array(
@@ -259,10 +259,10 @@
                                             )
 
 
-                                        )//content
+                            )//content
                                 
         ];
-        $vannaya[2]=['path'=>"izdeliya-paneli-stenovye.php",
+        $vannaya[2]=['path'=>"metodichki-ergonomika.php",
                             'id'=> "#poyas-panelnyy-yarus-nizhniy",
                             'def'=>"5000203-00_101 пояс панельный ярус нижний",
                             'content'=>array(
@@ -331,7 +331,7 @@
 
                                         )//content
         ];
-        $vannaya[3]=['path'=>"izdeliya-paneli-stenovye.php",
+        $vannaya[3]=['path'=>"metodichki-ergonomika.php",
                            'id'=> "#poyas-panelnyy-yarus-nizhniy-yarus-verhniy",
                            'def'=>"5000203-00_103 пояс панельный ярус нижний, ярус верхний",
                            'content'=>array(
@@ -396,11 +396,11 @@
 
 
     $garderobnaya=[];
-    $garderobnaya[0]=['path'=>"izdeliya-paneli-stenovye.php",
+    $garderobnaya[0]=['path'=>"metodichki-ergonomika.php",
                     'id'=>"#sborochnye-shemy",
                     'def'=>"СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ"];
 
-    $garderobnaya[1]=['path'=>"izdeliya-paneli-stenovye.php",
+    $garderobnaya[1]=['path'=>"metodichki-ergonomika.php",
                     'id'=> "#poyas-panelnyy-shema-montazha",
                     'def'=>"5000203-99_101 пояс панельный схема монтажа",
                     'content'=>array(
@@ -529,7 +529,7 @@
                                 )//content
                         
     ];
-    $garderobnaya[2]=['path'=>"izdeliya-paneli-stenovye.php",
+    $garderobnaya[2]=['path'=>"metodichki-ergonomika.php",
                     'id'=> "#poyas-panelnyy-shema-montazha2",
                     'def'=>"5000203-99_102 пояс панельный схема монтажа",
                     'content'=>array(
@@ -670,7 +670,7 @@
                                 )//content
                         
     ];
-    $garderobnaya[3]=['path'=>"izdeliya-paneli-stenovye.php",
+    $garderobnaya[3]=['path'=>"metodichki-ergonomika.php",
                     'id'=> "#poyas-panelnyy-shema-montazha-s-metallom",
                     'def'=>"5000203-99_105 пояс панельный схема монтажа с металлом",
                     'content'=>array(
@@ -776,7 +776,7 @@
                                 )//content
                         
     ];
-    $garderobnaya[4]=['path'=>"izdeliya-paneli-stenovye.php",
+    $garderobnaya[4]=['path'=>"metodichki-ergonomika.php",
                             'id'=> "#komponovochnoe-reshenie-poyas-ardeko",
                             'def'=>"5000203-99_107 компоновочное решение пояс ардеко",
                             'content'=>array(
