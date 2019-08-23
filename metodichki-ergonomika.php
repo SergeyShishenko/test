@@ -5,7 +5,7 @@ include 'inc/inc-menu-value-metodichki.php';
 // metodichki-ergonomika.php
 $metodichkiClass = 'class="active"';
 $item_ergonomika_Class = 'active';
-include 'inc/inc-head.php';
+include 'inc/inc-head4.php';
 include 'inc/inc-header-menu.php';
 include 'inc/inc-left-side-menu-metodichki.php';
 ?> 
