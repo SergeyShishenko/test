@@ -14,11 +14,12 @@ include 'inc/inc-left-side-menu-metodichki.php';
       <?php 
         ContentListGoupMenu($vannaya);
         ContentListGoupMenu($garderobnaya);
+        ContentListGoupMenu($prihozhaya);
       ?>       
     </div> 
   <!-- /main  -->
           <?php                  
-            $arrlist = [$vannaya,$garderobnaya];           
+            $arrlist = [$vannaya,$garderobnaya,$prihozhaya];           
             SideMenuList($arrlist)
           ?> 
 <?php include 'inc/inc-footer.php'; ?>

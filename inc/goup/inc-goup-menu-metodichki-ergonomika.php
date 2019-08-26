@@ -106,49 +106,7 @@
                             )//content
                                 
         ];
-        // $vannaya[2]=['path'=>"metodichki-ergonomika.php",
-        //                     'id'=> "#poyas-panelnyy-yarus-nizhniy",
-        //                     'def'=>"Test",
-        //                     'content'=>array(
-        //                                 0=>array(
-        //                                     'path'=>$path_img."",
-        //                                     'id-name'=> "test",// имя файла без версии -v?
-        //                                     'version'=>"",
-        //                                     'alt'=>"Test",
-        //                                     'xls'=>"",
-        //                                     'pdf'=>"",
-        //                                     'prnt'=>"noPrint",
-        //                                     'spng'=>"noPNG",                                            
-        //                                     'orient'=>"img-album",//img-book || img-album  
-        //                                     'overlay'=>false 
-        //                                     )                               
-                                       
-
-        //                                 )//content
-        // ];
-        // $vannaya[3]=['path'=>"metodichki-ergonomika.php",
-        //                    'id'=> "#poyas-panelnyy-yarus-nizhniy-yarus-verhniy",
-        //                    'def'=>"Test",
-        //                    'content'=>array(
-        //                                0=>array(
-        //                                    'path'=>$path_img."",
-        //                                    'id-name'=> "test",// имя файла без версии -v?
-        //                                    'version'=>"",
-        //                                    'alt'=>"Пояс панельный два яруса",
-        //                                    'xls'=>"",
-        //                                    'pdf'=>"",
-        //                                    'prnt'=>"noPrint",
-        //                                    'spng'=>"noPNG",                                            
-        //                                    'orient'=>"img-album",//img-book || img-album  
-        //                                    'overlay'=>false 
-        //                                    )
-                                      
-                                    
-
-        //                                )//content
-        // ];
-
-       
+     
                         
     /////////////////////////////////////
 
@@ -220,6 +178,87 @@
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
                                     'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                    )
+                               
+                               
+
+                                )//content
+                        
+    ];
+
+
+    // prihozhaya
+    /////////////////////////////////////
+
+    $path_img="./dist/images/prihozhaya/";
+    $prihozhaya=[];
+    $prihozhaya[0]=['path'=>"metodichki-ergonomika.php",
+                    'id'=>"#ergonomika-prihozhaya",
+                    'def'=>"Эргономика прихожей"];
+
+    $prihozhaya[1]=['path'=>"metodichki-ergonomika.php",
+                    'id'=> "#optimalnye-vysoty",
+                    'def'=>"Стандартные размеры",
+                    'content'=>array(
+                                0=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "prihozhaya-1",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Габариты одежды",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-book",//img-book || img-album  
+                                    'overlay'=>false 
+                                    ),
+                                1=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "prihozhaya-2",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Габариты одежды",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                     ),
+                                2=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "prihozhaya-3",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Габариты одежды",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                    ),
+                                3=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "prihozhaya-4",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Комод",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                4=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "prihozhaya-5",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Габариты одежды",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-book",//img-book || img-album  
                                     'overlay'=>false 
                                     )
                                
