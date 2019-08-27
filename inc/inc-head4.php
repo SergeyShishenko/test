@@ -29,8 +29,6 @@ echo'<!DOCTYPE html>
  
 
     <link rel="shortcut icon" href="shesterenka.png" type="image/x-icon">  
-    <script>
-        if (!name) {name = new Date ().getTime (); location.reload (true)}
-    </script>   
+  
     
 ';?>

@@ -457,7 +457,7 @@
        
         $("body").on('click"',"#files-show", function() {
             $("#dropped-files div[id^='img']").each(function(i,elem) {
-                alert(i + ': ' + $(elem).attr('id'));
+               // alert(i + ': ' + $(elem).attr('id'));
                 // if ($(this).hasClass("stop")) {
                 // 	alert("Остановлено на " + i + "-м пункте списка.");
                 // 	return false;
@@ -535,7 +535,7 @@
                         },
                         error:function (xhr, ajaxOptions, thrownError){
                             //выводим ошибку
-                            alert(thrownError);
+                            console.log(thrownError);
                         }
                     });
                     // $('#GENModal').modal('hide');
@@ -554,20 +554,20 @@
             var data;                 
             data = {};
             // propalert(product);
-            alert($('#client_output').text());
-            alert($('#agent_output').text());
-            alert($('#address_output').text());
-            alert($('#floor_output').text());
-            alert($('#room_output').text());
-            alert($('#complect_output').text());
-            alert($('#order_output').text());
-            alert($('#product_output').text());
+            // alert($('#client_output').text());
+            // alert($('#agent_output').text());
+            // alert($('#address_output').text());
+            // alert($('#floor_output').text());
+            // alert($('#room_output').text());
+            // alert($('#complect_output').text());
+            // alert($('#order_output').text());
+            // alert($('#product_output').text());
             objxlsx.forEach(function(item) {
                 // var name =objxlsx[n];
                 var f=item; // ключ 
                 // propalert(objxlsx);
                     objxlsx[item].forEach(function(item, i) {
-                        alert( f + ": "+i + "- "  + "{ kd=> "+item.kd + ", dp=> "+item.dp +" }" );
+                        // alert( f + ": "+i + "- "  + "{ kd=> "+item.kd + ", dp=> "+item.dp +" }" );
                         // data['arr[' + row+ '][name]'] = f;
                         data['arr[' + f + '][' + i + '][kd]']  = item.kd;
                         data['arr[' + f + '][' + i + '][dp]']  = item.dp;
@@ -588,7 +588,7 @@
                     },
                     error:function (xhr, ajaxOptions, thrownError){
                         //выводим ошибку
-                        alert(thrownError);
+                        console.log(thrownError);
                     }
                 });
 
@@ -697,7 +697,7 @@ function delfiles()
         },
         error:function (xhr, ajaxOptions, thrownError){
         //выводим ошибку
-        alert(thrownError);
+        console.log(thrownError);
         }
         });
     }
@@ -721,7 +721,7 @@ function delfiles()
         },
         error:function (xhr, ajaxOptions, thrownError){
         //выводим ошибку
-        alert(thrownError);
+        console.log(thrownError);
         }
         });
 }
@@ -755,7 +755,7 @@ function checkAddress(checkbox,s)
         },
         error:function (xhr, ajaxOptions, thrownError){
         //выводим ошибку
-        alert(thrownError);
+        console.log(thrownError);
         }
         });
 
@@ -931,14 +931,14 @@ function checkAddress(checkbox,s)
 
 function propalert(obj){
     for (var prop in obj) {
-        alert( prop +' : '+obj[prop]); // name, surname, age
+        console.log( prop +' : '+obj[prop]); // name, surname, age
       } 
 }
 function propalert2(obj){
     for (var prop in obj) {
         // alert( prop +' : '+obj[prop]); // name, surname, age
         for (var prop2 in prop) {
-            alert( prop2 +' : '+prop[prop2].def); // name, surname, age
+            console.log( prop2 +' : '+prop[prop2].def); // name, surname, age
           }
       } 
 }
@@ -950,13 +950,13 @@ function keydelete(obj){
 }
 function propalertObj(obj,name){
   
-        alert( obj[name]); // name, surname, age
+    console.log( obj[name]); // name, surname, age
         
      
 }
 function propalertObjx(obj,name,key){
   
-        alert( obj[name][key]); 
+    console.log( obj[name][key]); 
       
 }
 function propoutput(id,obj){
@@ -982,7 +982,7 @@ function propdelete2(obj,name){
     // // var name =objxlsx[n];
     // var f=item; // ключ 
     obj[name].forEach(function(item, i) {
-            alert( i + "- "  + "{ kd=> "+item.kd + ", dp=> "+item.dp +" }" );
+        console.log( i + "- "  + "{ kd=> "+item.kd + ", dp=> "+item.dp +" }" );
             // data['arr[' + row+ '][name]'] = f;
             // data['arr[' + f + '][' + i + '][kd]']  = item.kd;
             // data['arr[' + f + '][' + i + '][dp]']  = item.dp;
