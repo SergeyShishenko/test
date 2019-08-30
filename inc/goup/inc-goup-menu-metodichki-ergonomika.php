@@ -634,7 +634,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -646,7 +646,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -658,7 +658,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -670,7 +670,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -682,7 +682,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -694,7 +694,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -706,7 +706,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -718,7 +718,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -730,7 +730,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -742,7 +742,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -754,7 +754,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -766,21 +766,10 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-album",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
-                                array(
-                                    'path'=>$path_img."",
-                                    'id-name'=> "antropologiya-14",// имя файла без версии -v?
-                                    'version'=>"",
-                                    'alt'=>"Стандартные размеры",
-                                    'xls'=>"",
-                                    'pdf'=>"",
-                                    'prnt'=>"noPrint",
-                                    'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
-                                    'overlay'=>false 
-                                ),
+                            
                                 array(
                                     'path'=>$path_img."",
                                     'id-name'=> "antropologiya-15",// имя файла без версии -v?
@@ -838,7 +827,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
