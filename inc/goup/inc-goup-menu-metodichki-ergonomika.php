@@ -457,5 +457,492 @@
                         
     ];
 /////////////////////////////////////
+
+    // detskaya
+/////////////////////////////////////
+
+    $path_img="./dist/images/detskaya/";
+    $detskaya=[];
+    $detskaya[0]=['path'=>"metodichki-ergonomika.php",
+                    'id'=>"#ergonomika-detskaya",
+                    'def'=>"Эргономика детской комнаты"];
+
+    $detskaya[1]=['path'=>"metodichki-ergonomika.php",
+                    'id'=> "#detskaya",
+                    'def'=>"Стандартные размеры",
+                    'content'=>array(
+                                0=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "detskaya-1",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                    ),
+                                1=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "detskaya-2",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                     ),
+                                2=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "detskaya-3",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                    ),
+                                3=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "detskaya-4",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                             
+                                4=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "detskaya-6",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                5=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "detskaya-7",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                6=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "detskaya-8",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-book",//img-book || img-album  
+                                    'overlay'=>false 
+                                )
+                               
+
+                                )//content
+                        
+    ];
+/////////////////////////////////////
+
+    // antropologiya
+/////////////////////////////////////
+
+    $path_img="./dist/images/antropologiya/";
+    $antropologiya=[];
+    $antropologiya[0]=['path'=>"metodichki-ergonomika.php",
+                    'id'=>"#ergonomika-antropologiya",
+                    'def'=>"Антропометрические данные человека и рабочие зоны"];
+
+    $antropologiya[1]=['path'=>"metodichki-ergonomika.php",
+                    'id'=> "#antropologiya",
+                    'def'=>"Антропометрические измерения",
+                    'content'=>array(
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-s1",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                    ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-s2",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                    ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-s4",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                    ),                              
+                            
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-s5",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-1",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-2",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-3",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-4",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-5",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-6",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-7",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-8",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-9",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-10",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-11",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-12",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-14",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-15",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-16",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-17",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-18",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-19",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-20",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-21",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-22",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-23",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-24",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-26",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-27",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-28",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                )
+                            
+
+                                )//content
+                        
+    ];
+/////////////////////////////////////    
+
     
    
