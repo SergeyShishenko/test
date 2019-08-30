@@ -240,7 +240,7 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                 </li> 
                 <!-- menu -->
                 <li class="menu disabled">
-                    <a href="metodichki-oshibki-proektirovaniya.php" class="list-group-item dblstr-lg  dblstr-xl  dblstr-md dblstr-sm  '.$item_oshibki_proektirovaniya.'">Распространённые ошибки в проектировании</a>
+                    <a href="metodichki-oshibki-proektirovaniya.php" style="line-height: 1 ;" class="list-group-item dblstr-lg  dblstr-xl  dblstr-md dblstr-sm  '.$item_oshibki_proektirovaniya.'">Распространённые ошибки в проектировании</a>
                     <ul class="list-group sub_menu">
                         <li class="menu2"><a class="list-group-item sub" href="metodichki-BAZIS.php#SCRIPTS">SCRIPTS</a>
                             <ul class="list-group sub_menu2">
