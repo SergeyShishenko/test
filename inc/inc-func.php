@@ -125,11 +125,17 @@ function ContentListGoupMenu($arr) //правое меню группа
             <div class="bs-callout bs-callout-warning cont" ><h4>'.$arr[$i]['def'].'</h4>
         ';    
             // навигация по content
+                
                 $content=$arr[$i]['content'][0];
+                $filename=$content["path"].$content["id-name"].$content["version"].'.png';
+                $size = getimagesize($filename);
+                // "Ширина: " . $size[0] ." Высота: " . $size[1]
+                if($size[0]>$size[1]){$orient="img-album";}else{$orient="img-book"; }               
+                
                 if($content['overlay']){echo '   <div class="overlay"></div>' ; }
-                if($content['no-b-lazy']){$img ='<img src="'.$content["path"].$content["id-name"].$content["version"].'.png" class="center-block img-rounded img-thumbnail"' ; }
-                else{$img ='<img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==    data-src="'.$content['path'].$content['id-name'].$content['version'].'.png" 
-                    class="center-block img-rounded img-thumbnail b-lazy '.$content['orient'].'"' ;}
+                if($content['no-b-lazy']){$img ='<img src="'.$filename.'" class="center-block img-rounded img-thumbnail"' ; }
+                else{$img ='<img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==    data-src="'. $filename.'" 
+                    class="center-block img-rounded img-thumbnail b-lazy '.$orient.'"' ;}
 
                 echo '
                 <p>
@@ -150,11 +156,16 @@ function ContentListGoupMenu($arr) //правое меню группа
 
             for ($j=1; $j < count($arr[$i]['content']); $j++)
             {
-                $content=$arr[$i]['content'][$j];
+               
+                 $content=$arr[$i]['content'][$j];
+                 $filename=$content["path"].$content["id-name"].$content["version"].'.png';
+                 $size = getimagesize($filename);
+                 // "Ширина: " . $size[0] ." Высота: " . $size[1]
+                 if($size[0]>$size[1]){$orient="img-album";}else{$orient="img-book"; }     
                 if($content['overlay']){echo '   <div class="overlay"></div>' ; }
-                if($content['no-b-lazy']){$img ='<img src="'.$content["path"].$content["id-name"].$content["version"].'.png" class="center-block img-rounded img-thumbnail"' ; }
-                else{$img ='<img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==    data-src="'.$content['path'].$content['id-name'].$content['version'].'.png" 
-                    class="center-block img-rounded img-thumbnail b-lazy '.$content['orient'].'"' ;}
+                if($content['no-b-lazy']){$img ='<img src="'.$filename.'" class="center-block img-rounded img-thumbnail"' ; }
+                else{$img ='<img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==    data-src="'. $filename.'" 
+                    class="center-block img-rounded img-thumbnail b-lazy '.$orient.'"' ;}
                 echo '
                 <p>
                     <a>            

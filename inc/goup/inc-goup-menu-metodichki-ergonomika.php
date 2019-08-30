@@ -26,7 +26,7 @@
                                             'pdf'=>"",
                                             'prnt'=>"noPrint",
                                             'spng'=>"noPNG",                                            
-                                            'orient'=>"img-album",//img-book || img-album  
+                                            
                                             'overlay'=>false 
                                             ),
                                         1=>array(
@@ -38,7 +38,7 @@
                                             'pdf'=>"",
                                             'prnt'=>"noPrint",
                                             'spng'=>"noPNG",                                            
-                                            'orient'=>"img-album",//img-book || img-album  
+                                            
                                             'overlay'=>false 
                                              ),
                                         2=>array(
@@ -50,7 +50,7 @@
                                             'pdf'=>"",
                                             'prnt'=>"noPrint",
                                             'spng'=>"noPNG",                                            
-                                            'orient'=>"img-album",//img-book || img-album  
+                                            
                                             'overlay'=>false 
                                             ),
                                         3=>array(
@@ -62,7 +62,7 @@
                                             'pdf'=>"",
                                             'prnt'=>"noPrint",
                                             'spng'=>"noPNG",                                            
-                                            'orient'=>"img-album",//img-book || img-album  
+                                            
                                             'overlay'=>false 
                                             ),
                                         4=>array(
@@ -74,7 +74,7 @@
                                             'pdf'=>"",
                                             'prnt'=>"noPrint",
                                             'spng'=>"noPNG",                                            
-                                            'orient'=>"img-album",//img-book || img-album  
+                                            
                                             'overlay'=>false 
                                             ),
                                         5=>array(
@@ -86,7 +86,7 @@
                                             'pdf'=>"",
                                             'prnt'=>"noPrint",
                                             'spng'=>"noPNG",                                            
-                                            'orient'=>"img-album",//img-book || img-album  
+                                            
                                             'overlay'=>false 
                                             ),
                                         6=>array(
@@ -98,7 +98,7 @@
                                             'pdf'=>"",
                                             'prnt'=>"noPrint",
                                             'spng'=>"noPNG",                                            
-                                            'orient'=>"img-album",//img-book || img-album  
+                                            
                                             'overlay'=>false 
                                             )
                                     
@@ -129,7 +129,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                     ),
                                 1=>array(
@@ -141,7 +141,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book",//img-book || img-album  
                                     'overlay'=>false 
                                      ),
                                 2=>array(
@@ -153,7 +152,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                     ),
                                 3=>array(
@@ -165,7 +164,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                 ),
                                 4=>array(
@@ -177,7 +176,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                     )
                                
@@ -210,7 +209,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book",//img-book || img-album  
                                     'overlay'=>false 
                                     ),
                                 1=>array(
@@ -222,7 +220,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                      ),
                                 2=>array(
@@ -234,7 +232,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                     ),
                                 3=>array(
@@ -246,7 +244,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                 ),
                                 4=>array(
@@ -258,7 +256,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book",//img-book || img-album  
                                     'overlay'=>false 
                                     )
                                
@@ -291,7 +288,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                     ),
                                 1=>array(
@@ -303,7 +300,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                      ),
                                 2=>array(
@@ -315,7 +312,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                     ),
                                 3=>array(
@@ -327,7 +324,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                 ),
                                 4=>array(
@@ -339,7 +336,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 5=>array(
@@ -351,7 +347,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 6=>array(
@@ -363,7 +358,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 7=>array(
@@ -375,7 +369,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 8=>array(
@@ -387,7 +380,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 9=>array(
@@ -399,7 +391,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 10=>array(
@@ -411,7 +402,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 11=>array(
@@ -423,7 +413,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 12=>array(
@@ -435,7 +424,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 13=>array(
@@ -447,7 +435,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                     )
                                
@@ -480,7 +467,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                     ),
                                 1=>array(
@@ -492,7 +479,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                      ),
                                 2=>array(
@@ -504,7 +491,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                     ),
                                 3=>array(
@@ -516,7 +503,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                 ),
                              
@@ -529,7 +516,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 5=>array(
@@ -541,7 +527,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 6=>array(
@@ -553,7 +538,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book",//img-book || img-album  
                                     'overlay'=>false 
                                 )
                                
@@ -585,7 +569,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                   
                                     'overlay'=>false 
                                     ),
                                 array(
@@ -597,7 +581,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                   
                                     'overlay'=>false 
                                     ),
                                 array(
@@ -609,7 +593,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                   
                                     'overlay'=>false 
                                     ),                              
                             
@@ -622,7 +606,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -634,7 +618,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -646,7 +629,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -658,7 +640,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -670,7 +651,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -682,7 +662,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -694,7 +673,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -706,7 +684,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -718,7 +695,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -730,7 +706,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -742,7 +717,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -754,7 +728,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -766,7 +739,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                 ),
                             
@@ -779,7 +752,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -791,7 +763,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -803,7 +774,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -815,7 +785,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -827,7 +796,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-book ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -839,7 +807,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -851,7 +818,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -863,7 +829,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -875,7 +840,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -887,7 +851,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -899,7 +862,6 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album ",//img-book || img-album  
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -911,7 +873,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                 ),
                                 array(
@@ -923,7 +885,7 @@
                                     'pdf'=>"",
                                     'prnt'=>"noPrint",
                                     'spng'=>"noPNG",                                            
-                                    'orient'=>"img-album",//img-book || img-album  
+                                    
                                     'overlay'=>false 
                                 )
                             
