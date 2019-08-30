@@ -5,3 +5,4 @@ $item_ergonomika_Class = '';
 $item_proektnoy_rabote_Class = '';
 $item_basis_Class = '';
 $item_sofiapro3_Class = '';
+$item_oshibki_proektirovaniya = '';

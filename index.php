@@ -3612,6 +3612,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                         IndexMenu($vannaya,null);
                                                         IndexMenu($garderobnaya,null);
                                                         IndexMenu($prihozhaya,null);
+                                                        IndexMenu($stoly,null);
                                                         ?> 
                                                         <TR>
                                                             <TD data-tooltip="ПРИМЕРЫ ЭРГОНОМИЧЕСКИХ РЕШЕНИЙ" class="hover mapsite" id="footer123" >

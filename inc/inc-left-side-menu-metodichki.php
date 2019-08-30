@@ -80,6 +80,7 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                     LeftSideMenu($vannaya);
                     LeftSideMenu($garderobnaya);
                     LeftSideMenu($prihozhaya);
+                    LeftSideMenu($stoly);
                    
                 echo'                   
                     </ul>
@@ -235,6 +236,19 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                         LeftSideMenu($SP3);// АЛЬБОМ ДИЗАЙН-ПРОЕКТА
 
                 echo'             
+                    </ul>
+                </li> 
+                <!-- menu -->
+                <li class="menu disabled">
+                    <a href="metodichki-oshibki-proektirovaniya.php" class="list-group-item dblstr-lg  dblstr-xl  dblstr-md dblstr-sm  '.$item_oshibki_proektirovaniya.'">Распространённые ошибки в проектировании</a>
+                    <ul class="list-group sub_menu">
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-BAZIS.php#SCRIPTS">SCRIPTS</a>
+                            <ul class="list-group sub_menu2">
+                                <li><a class="list-group-item sub" href="metodichki-BAZIS.php#AddOrderProdudtCE">Добавить свойства: Заказ/ Изделие/ СЕ </a>
+                                </li>                                                                        
+                            </ul>
+                        </li>
+                                        
                     </ul>
                 </li> 
 

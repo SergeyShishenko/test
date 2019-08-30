@@ -189,7 +189,7 @@
 
 
     // prihozhaya
-    /////////////////////////////////////
+/////////////////////////////////////
 
     $path_img="./dist/images/prihozhaya/";
     $prihozhaya=[];
@@ -267,5 +267,195 @@
                                 )//content
                         
     ];
+/////////////////////////////////////
+
+    // stoly
+/////////////////////////////////////
+
+    $path_img="./dist/images/stoly/";
+    $stoly=[];
+    $stoly[0]=['path'=>"metodichki-ergonomika.php",
+                    'id'=>"#ergonomika-stoly",
+                    'def'=>"Эргономика столы и стулья"];
+
+    $stoly[1]=['path'=>"metodichki-ergonomika.php",
+                    'id'=> "#stoly",
+                    'def'=>"Стандартные размеры",
+                    'content'=>array(
+                                0=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-1",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                    ),
+                                1=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-2",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                     ),
+                                2=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-3",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                    ),
+                                3=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-4",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                4=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-13",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                5=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-6",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                6=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-7",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                7=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-8",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-book",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                8=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-9",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                9=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-10",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-book",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                10=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-11",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                11=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-12",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                12=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-5",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                ),
+                                13=>array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "stoly-14",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'orient'=>"img-album ",//img-book || img-album  
+                                    'overlay'=>false 
+                                    )
+                               
+                               
+
+                                )//content
+                        
+    ];
+/////////////////////////////////////
     
    

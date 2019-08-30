@@ -4,7 +4,7 @@ include 'inc/inc-menu-value.php';
 include 'inc/inc-menu-value-metodichki.php';
 // metodichki-ergonomika.php
 $metodichkiClass = 'class="active"';
-$item_ergonomika_Class = 'active';
+$item_oshibki_proektirovaniya = 'active';
 include 'inc/inc-head4.php';
 include 'inc/inc-header-menu.php';
 include 'inc/inc-left-side-menu-metodichki.php';
@@ -15,12 +15,12 @@ include 'inc/inc-left-side-menu-metodichki.php';
         ContentListGoupMenu($vannaya);
         ContentListGoupMenu($garderobnaya);
         ContentListGoupMenu($prihozhaya);
-        ContentListGoupMenu($stoly);
+    
       ?>       
     </div> 
   <!-- /main  -->
           <?php                  
-            $arrlist = [$vannaya,$garderobnaya,$prihozhaya,$stoly];           
+            $arrlist = [$vannaya,$garderobnaya,$prihozhaya];           
             SideMenuList($arrlist)
           ?> 
 <?php include 'inc/inc-footer.php'; ?>
