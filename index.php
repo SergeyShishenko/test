@@ -191,7 +191,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                 <div class="navbar-form navbar-right  " id="search">
                     <div class="form-group">    
                         <input type="text" class="form-control who zbz-input-clearable" placeholder="Поиск">                          
-                        <span class="glyphicon glyphicon-search zbz" style="visibility: visible;margin-right: 0px;margin-left: -25px;padding-left:0;"></span>                             
+                        <span class="glyphicon glyphicon-search zbz" style="visibility: visible;margin-right: 20px;margin-left: -25px;padding-left:0;"></span>                             
                     </div>                            
                     <ul class="search_result" style="display: none;"></ul>
                 </div>
