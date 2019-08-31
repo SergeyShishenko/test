@@ -264,13 +264,13 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                         </li>
                         <li class="menu2 "><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#dveri">Двери</a>
                             <ul class="list-group sub_menu2 ">
-                              <li><a class="list-group-item sub disabled" href="metodichki-oshibki-proektirovaniya.php#dveri-raspashnye">Двери распашные</a>
+                              <li class=" disabled"><a class="list-group-item sub " href="metodichki-oshibki-proektirovaniya.php#dveri-raspashnye">Двери распашные</a>
                               </li>                                                                      
-                              <li><a class="list-group-item sub disabled" href="metodichki-oshibki-proektirovaniya.php#dveri-razdvizhnye">Двери раздвижные</a>
+                              <li class=" disabled"><a class="list-group-item sub " href="metodichki-oshibki-proektirovaniya.php#dveri-razdvizhnye">Двери раздвижные</a>
                               </li>                                                                      
-                              <li><a class="list-group-item sub disabled" href="metodichki-oshibki-proektirovaniya.php#dveri-chetyre-polotna">Двери четыре полотна</a>
+                              <li class=" disabled"><a class="list-group-item sub " href="metodichki-oshibki-proektirovaniya.php#dveri-chetyre-polotna">Двери четыре полотна</a>
                               </li>                                                                      
-                              <li><a class="list-group-item sub disabled" href="metodichki-oshibki-proektirovaniya.php#dveri-s-framugoy">Двери с фрамугой</a>
+                              <li class=" disabled"><a class="list-group-item sub " href="metodichki-oshibki-proektirovaniya.php#dveri-s-framugoy">Двери с фрамугой</a>
                               </li>                                                                      
                             </ul>
                         </li>
@@ -283,7 +283,7 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                                         
                         <li class="menu2 "><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#lestnicy">Лестницы</a>
                             <ul class="list-group sub_menu2">
-                            <!--   <li><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#shtornye-nishi">...</a>
+                            <!--   <li ><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#shtornye-nishi">...</a>
                                 </li>  -->                                                                       
                             </ul>
                         </li>
