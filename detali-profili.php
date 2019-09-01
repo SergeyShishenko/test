@@ -93,7 +93,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№100/XX/YY/ZZ штапик прижимной для фасада</h4>
                                                       
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-100-hh-yy-zz.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-100-hh-yy-zz.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                              
@@ -107,7 +107,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-101-26-17">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№101/26/17 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-101-26-17.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-101-26-17.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                           
@@ -121,7 +121,7 @@ include 'inc/inc-left-side-menu-detali.php';
                          <h2 id="pr-101-26-15">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№101/26/15 для карниза</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-101-26-15.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-101-26-15.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                           
@@ -135,7 +135,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-101-30-20">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№101/30/20 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-101-30-20.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-101-30-20.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -149,7 +149,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-101-23-14">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№101/23/14 (штапик для фасадов стекло/витраж)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-101-23-14.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-101-23-14.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -163,7 +163,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-101-20-105">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№101/20/10.5 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-101-20-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-101-20-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -177,7 +177,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-102-19-105">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№102/19/10.5 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-102-19-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-102-19-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -191,7 +191,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-103">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№103 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-103.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-103.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                    
@@ -205,7 +205,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-104-7-5">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№104/7/5 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-104-7-5.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-104-7-5.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -219,7 +219,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-105-13-105">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№105/13/10.5 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-105-13-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-105-13-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -233,7 +233,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-105-195-17">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№105/19.5/17 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-105-195-17.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-105-195-17.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -247,7 +247,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-106">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№106 раскладка</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-106.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-106.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -261,7 +261,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-108">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№108 раскладка</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-108.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-108.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                           
@@ -275,7 +275,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-111">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№111 монтажный</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-111.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-111.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -289,7 +289,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-112">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№112 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-112.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-112.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -303,7 +303,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-113">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№113 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-113.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-113.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -317,7 +317,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-126">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№126 нащельник на двустворчатую дверь</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-126.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-126.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -331,7 +331,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-157">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№157 раскладка</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-157.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-157.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -345,7 +345,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-157-met">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№157/МЕТ раскладка</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-157-met.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-157-met.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -359,7 +359,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-158-19-105-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№158/19/10.5/1 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-158-19-105-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-158-19-105-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -373,7 +373,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-158-28-19-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№158/28/19/1 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-158-28-19-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-158-28-19-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                     
@@ -387,7 +387,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-158-2">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№158/2 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-158-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-158-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -401,7 +401,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-159">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№159 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-159.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-159.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -415,7 +415,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-160">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№160 раскладка</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-160.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-160.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -429,7 +429,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-161-16-105">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№161/16/10.5 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-161-16-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-161-16-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -443,7 +443,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-162">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№162 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-162.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-162.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -457,7 +457,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-163">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№163 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-163.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-163.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -471,7 +471,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-180-18-105">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№180/18/10.5 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-180-18-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-180-18-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -485,7 +485,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-181-18-105">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№181/18/10.5 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-181-18-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-181-18-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -499,7 +499,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-185-18-105">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№185/18/10.5 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-185-18-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-185-18-105.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -513,7 +513,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-190">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№190 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-190.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-190.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                            
@@ -527,7 +527,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-199">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№199 штапик</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-199.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-shtapiki/pr-199.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
