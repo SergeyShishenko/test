@@ -229,7 +229,7 @@ $(function () {
     $(a).val(parseInt($(a).val())+1);
     $('#checkoutd').hide();// скрыть кнопку скачать XLS
     //   console.log("!!!"+$(this).parent().find('input').val());
-    })
+    });
  $('body').on('click','.vpicartMinus',function() {
     
     var a=$(this).parent().find('input');
@@ -237,7 +237,7 @@ $(function () {
     $(a).val(parseInt($(a).val())-1);
     if (1 >= $(a).val()) {$(a).val(1);}
     $('#checkoutd').hide();// скрыть кнопку скачать XLS
-    })
+    });
 
 $('body').on('change',"[id^=\'vpi_id-\']",function(){
     console.log('Элемент изменен.');
