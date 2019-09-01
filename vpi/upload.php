@@ -431,7 +431,7 @@ function fileopenxlscsv($filename)
 			$complect = end(explode('/', $complect));
 			$room = explode('/', $room)[0];
 			
-			//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15   16    17    18   19   20
+			//                           0        1        2             3        4    5     6     7         8      9      10        11     12    13      14        15   16    17    18   19   20
 			array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP,$agent));
 				
 		}//while
@@ -659,6 +659,11 @@ function fileopenxlscsv($filename)
 									$thclass = 'VAP_th';
 									$vis = 'hide-info';
 									break;
+								case "20":
+									$id = 'agent_'.$row.$col;
+									$thclass = 'agent_th';
+									$vis = 'hide-info';
+									break;
 							
 						}
 						echo '<th id="'.$id.'" class="'.$sticky_table.' '.$thclass.' '.$vis.'">'.$array[$row][$col].'</th>';
@@ -775,6 +780,11 @@ function fileopenxlscsv($filename)
 										case "19":
 											$id = 'VAP_'.$row.$col;
 											$thclass = 'VAP_th';
+											$vis = 'hide-info';
+											break;
+										case "20":
+											$id = 'agent_'.$row.$col;
+											$thclass = 'agent_th';
 											$vis = 'hide-info';
 											break;
 								}
