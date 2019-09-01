@@ -241,28 +241,28 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                     </ul>
                 </li> 
                 <!-- menu -->
-                <li class="menu ">
+                <li class="menu  disabled">
                     <a href="metodichki-oshibki-proektirovaniya.php" class="list-group-item dblstr-lg  dblstr-xl  dblstr-md dblstr-sm  '.$item_oshibki_proektirovaniya.'">ошибки в проектировании</a><!--Распространённые  style="line-height: 1 ;"-->
                     <ul class="list-group sub_menu">
-                        <li class="menu2 "><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#shkafy">Шкафы</a>
+                        <li class="menu2  disabled"><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#shkafy">Шкафы</a>
                             <ul class="list-group sub_menu2">
                             <!--    <li><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#shtornye-nishi">...</a>
                                 </li>  -->                                                                       
                             </ul>
                         </li>
-                        <li class="menu2 "><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#shtornye-nishi">Шторные ниши</a>
+                        <li class="menu2  disabled"><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#shtornye-nishi">Шторные ниши</a>
                             <ul class="list-group sub_menu2">
                             <!--   <li><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#shtornye-nishi">...</a>
                                 </li>  -->                                                                       
                             </ul>
                         </li>
-                        <li class="menu2 "><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#panelnyy-poyas">Панельный пояс</a>
+                        <li class="menu2  disabled"><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#panelnyy-poyas">Панельный пояс</a>
                             <ul class="list-group sub_menu2">
                             <!--   <li><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#shtornye-nishi">...</a>
                                 </li>  -->                                                                       
                             </ul>
                         </li>
-                        <li class="menu2 "><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#dveri">Двери</a>
+                        <li class="menu2  disabled"><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#dveri">Двери</a>
                             <ul class="list-group sub_menu2 ">
                               <li class=" disabled"><a class="list-group-item sub " href="metodichki-oshibki-proektirovaniya.php#dveri-raspashnye">Двери распашные</a>
                               </li>                                                                      
@@ -274,14 +274,14 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                               </li>                                                                      
                             </ul>
                         </li>
-                        <li class="menu2 "><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#potolki">Потолки</a>
+                        <li class="menu2  disabled"><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#potolki">Потолки</a>
                             <ul class="list-group sub_menu2">
                             <!--   <li><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#shtornye-nishi">...</a>
                                 </li>  -->                                                                       
                             </ul>
                         </li>
                                         
-                        <li class="menu2 "><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#lestnicy">Лестницы</a>
+                        <li class="menu2  disabled"><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#lestnicy">Лестницы</a>
                             <ul class="list-group sub_menu2">
                             <!--   <li ><a class="list-group-item sub" href="metodichki-oshibki-proektirovaniya.php#shtornye-nishi">...</a>
                                 </li>  -->                                                                       
@@ -291,7 +291,7 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                     </ul>
                 </li> 
                 <!-- menu -->
-                <li class="menu ">
+                <li class="menu  disabled">
                     <a href="metodichki-gabarity-izdeliya.php"  class="list-group-item '.$item_gabarity_izdeliya.'">габариты изделия</a>
                     <ul class="list-group sub_menu">
                         <li class="menu2 disabled"><a class="list-group-item sub" href="metodichki-gabarity-izdeliya.php#pronos-na-obekt">Пронос на объект</a>
