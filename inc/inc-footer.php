@@ -103,7 +103,7 @@
 
  <!-- image-gallery -->
         <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="image-gallery">
-            <div class="modal-dialog-gallery  modal-lg">
+            <div class=" modal-dialog modal-dialog-gallery  modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="image-gallery-title"></h4>

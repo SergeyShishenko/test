@@ -57,7 +57,7 @@
 
 
         .modal-dialog {
-            width: 90% !important;
+            /* width: 90% !important; */
             margin: 30px auto;
         }
 
