@@ -14,9 +14,109 @@ include 'inc/inc-left-side-menu-detali.php';
                       <section  >
                         <div class="page-header cont ">
                           <h1 itemprop="name" id="profili-nakladki">Накладки</h1>
-                        </div>                     
+                        </div>  
+                        
                         <h2 id="profili-nakladki-50">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>МДФ НАКЛАДКА №050/ДШ</h4>
+
+                          <!--gallery -->
+                           <!-- 1 -->
+
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-100-hh-yy-zz.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-100-hh-yy-zz.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                              
+
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-101-20-105.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-101-20-105.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-101-23-14.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-101-23-14.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-101-26-15.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-101-26-15.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-101-26-17.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-101-26-17.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-101-30-20.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-101-30-20.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                           <!-- /1 -->
+
+                           <!-- 2 -->
+
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-102-19-105.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-102-19-105.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                              
+
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-103.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-103.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-104-7-5.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-104-7-5.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-105-13-105.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-105-13-105.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-105-195-17.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-105-195-17.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <!-- <h2>Детали</h2>-->
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-106.png"
+                                      data-target="#image-gallery">
+                                      <img src="./dist/images/profili-shtapiki/Thumbnail/pr-106.png" alt="Another alt text">
+                                  </a>
+                              </div>
+                           <!-- /2 -->  
+
+                        <!--/gallery -->
                                                       
                             <p> <a>
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-nakladki/mdf-nakladka-050-dsh.png" class="center-block img-rounded img-thumbnail b-lazy img-book"

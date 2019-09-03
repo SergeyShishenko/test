@@ -1,0 +1,46 @@
+.btn:focus,
+.btn:active,
+button:focus,
+button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#image-gallery .modal-footer {
+    display: block;
+}
+
+.thumb {
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+    text-align: center;
+}
+
+
+.modal-dialog-gallery {
+    
+   
+       width: 960px;
+     margin: 30px auto;
+}
+
+/* .row .row {
+    margin-right: 0;
+    margin-left: 0;
+} */
+
+.thumbnail {
+    /* border: none; */
+    margin-bottom: 0px;
+}
+.modal-header .close {
+ margin-top: -20px;
+}
+#image-gallery-image{float:none;}
+@media (min-width: 768px){
+.navbar-collapse.collapse {
+    display: none !important;
+    }
+}

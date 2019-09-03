@@ -32,6 +32,7 @@ echo'<!DOCTYPE html>
     <link href="./dist/css/drop.css" rel="stylesheet">
     <link href="./dist/css/submit-process.css" rel="stylesheet">
     <link href="./dist/css/font-awesome.css" rel="stylesheet">
+    <link href="./dist/css/gallery.css" rel="stylesheet">
 
     <link rel="shortcut icon" href="shesterenka.png" type="image/x-icon">  
     <script>
