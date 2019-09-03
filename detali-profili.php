@@ -554,7 +554,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-204m">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№204м (карнизный)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-204m.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-204m.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -568,7 +568,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-214">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№214</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-214.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-214.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -582,7 +582,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-214-k">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№214/К</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-214-k.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-214-k.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -596,7 +596,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-221">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№221</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-221.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-221.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                           
@@ -610,7 +610,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-221-k">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№221/К</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-221-k.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-221-k.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                           
@@ -624,7 +624,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-221-1k">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№221/1К</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-221-1k.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-221-1k.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -638,7 +638,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-221-2k">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№221/2К</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-221-2k.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-221-2k.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                            
@@ -652,7 +652,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-234">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№234</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-234.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-234.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -666,7 +666,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-235">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№235</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-235.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-235.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -680,7 +680,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-238">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№238 (карниз)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-238.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-238.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -694,7 +694,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-251">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№251 (карниз)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-251.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-251.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -708,7 +708,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-252">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№252 (карниз)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-252.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-252.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -722,7 +722,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-263">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№263</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-263.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-263.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -736,7 +736,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-263-k">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№263/К</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-263-k.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-263-k.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -750,7 +750,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-264">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№264</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-264.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-264.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -764,7 +764,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-265">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№265</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-265.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-265.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -778,7 +778,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-266">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№266</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-266.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-266.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -792,7 +792,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-270">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№270</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-270.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-270.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -806,7 +806,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-271">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№271</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-271.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-271.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -820,7 +820,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-272">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№272</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-272.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-272.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -834,7 +834,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-273">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№273</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-273.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-273.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -848,7 +848,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-274">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№274</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-274.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-274.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -862,7 +862,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-275">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№275</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-275.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-275.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -876,7 +876,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-277">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№277</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-277.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-277.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -890,7 +890,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-278">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№278</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-278.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-278.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -904,7 +904,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-279">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№279</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-279.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-279.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -918,7 +918,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-280">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№280</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-280.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-karnizy/pr-280.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -942,7 +942,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-301">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№301</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-301.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-301.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -956,7 +956,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-302">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№302/СОСТАВНОЙ используется с Пр_РЕЗНОЙ_№1011</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-302.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-302.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -970,7 +970,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-303">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№303</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-303.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-303.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                    
@@ -984,7 +984,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-319-60-3">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№319/60/3/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-319-60-3.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-319-60-3.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -998,7 +998,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-319-60-3">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№319/60/3/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-319-60-3.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-319-60-3.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -1012,7 +1012,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-319-80-3">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№319/80/3/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-319-80-3.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-319-80-3.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1026,7 +1026,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-319-100-4">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№319/100/4/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-319-100-4.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-319-100-4.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1040,7 +1040,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-319-120-4">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№319/120/4/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-319-120-4.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-319-120-4.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -1054,7 +1054,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-319-120-6">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№319/120/6/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-319-120-6.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-319-120-6.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1068,7 +1068,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-320-60">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№320/60</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-320-60.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-320-60.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                   
@@ -1082,7 +1082,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-320-80">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№320/80</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-320-80.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-320-80.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -1096,7 +1096,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-320-100">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№320/100</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-320-100.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-320-100.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -1110,7 +1110,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-320-120">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№320/120</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-320-120.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-320-120.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1124,7 +1124,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-323">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№323</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-323.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-323.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1138,7 +1138,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-324">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№324</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-324.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-324.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1152,7 +1152,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-60-2">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/60/2/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-60-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-60-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1166,7 +1166,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-80-3">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/80/3/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-80-3.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-80-3.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1180,7 +1180,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-100-4">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/100/4/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-100-4.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-100-4.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -1194,7 +1194,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-120-4">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/120/4/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-120-4.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-120-4.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1208,7 +1208,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-120-6">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/120/6/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-120-6.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-120-6.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1222,7 +1222,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-168-6">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/168/6/ХХ_YY</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-168-6.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-168-6.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1236,7 +1236,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-60-2-hh-yy-bf">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/60/2/ХХ_YY/БФ</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-60-2-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-60-2-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1250,7 +1250,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-80-3-hh-yy-bf">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/80/3/ХХ_YY/БФ</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-80-3-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-80-3-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1264,7 +1264,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-100-4-hh-yy-bf">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/100/4/ХХ_YY/БФ</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-100-4-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-100-4-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -1278,7 +1278,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-120-4-hh-yy-bf">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/120/4/ХХ_YY/БФ</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-120-4-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-120-4-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1292,7 +1292,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-120-6-hh-yy-bf">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/120/6/ХХ_YY/БФ</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-120-6-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-120-6-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -1306,7 +1306,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-345-168-6-hh-yy-bf">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№345/168/6/ХХ_YY/БФ</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-345-168-6-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-345-168-6-hh-yy-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1320,7 +1320,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-322-80">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№322/80</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-322-80.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-322-80.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                   
@@ -1334,7 +1334,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-359">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№359</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-359.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-359.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                     
@@ -1348,7 +1348,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-361">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№361</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-361.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-361.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1362,7 +1362,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-366">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№366</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-366.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-366.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1376,7 +1376,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-374-120">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№374/120</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-374-120.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-374-120.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1390,7 +1390,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-375">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№375</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-375.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-375.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1404,7 +1404,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-379">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№379</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-379.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-379.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                           
@@ -1418,7 +1418,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-380">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№380</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-380.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-380.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -1432,7 +1432,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-381">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№381</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-381.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-381.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1446,7 +1446,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-382">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№382</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-382.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-382.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1460,7 +1460,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-383">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№383</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-383.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-383.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1474,7 +1474,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-384">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№384</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-384.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-obramlenie/pr-384.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                           
@@ -1498,7 +1498,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-400-hh">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№400/ХХ</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-400-hh.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-400-hh.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -1512,7 +1512,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-401-hh">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№401/ХХ (плинтус)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-401-hh.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-401-hh.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1526,7 +1526,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-413">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№413</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-413.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-413.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1540,7 +1540,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-418-90">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№418/90 (плинтус)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-418-90.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-418-90.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1554,7 +1554,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-418-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№418/1 (плинтус)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-418-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-418-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -1568,7 +1568,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-418f">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№418Ф (плинтус)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-418f.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-418f.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -1582,7 +1582,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-418-paz">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№418/ПАЗ плинтус на экраны радиатора</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-418-paz.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-418-paz.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1596,7 +1596,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-422-14">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№422/14 (полуперила)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-422-14.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-422-14.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1610,7 +1610,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-422-25">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№422/25 (полуперила)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-422-25.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-422-25.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1624,7 +1624,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-427">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№427 (полуперила)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-427.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-427.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1638,7 +1638,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-476">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№476 (плинтус)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-476.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-476.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                     
@@ -1652,7 +1652,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-476-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№476/1 (плинтус)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-476-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-476-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1666,7 +1666,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-476f">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№476Ф (плинтус)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-476f.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-476f.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1680,7 +1680,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-476-paz">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№476/ПАЗ плинтус на экраны радиатора</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-476-paz.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-476-paz.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1694,7 +1694,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-477-31">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№477/31</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-477-31.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-477-31.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1708,7 +1708,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-477-40">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№477/40</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-477-40.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-477-40.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -1722,7 +1722,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-477-59">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№477/59</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-477-59.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-477-59.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1736,7 +1736,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-478-115">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№478/115 (плинтус)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-478-115.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-478-115.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1750,7 +1750,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-480">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№480</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-480.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-plintus/pr-480.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -1776,7 +1776,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-515">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№515</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-515.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-other/pr-515.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1790,7 +1790,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-536">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№536</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-536.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-other/pr-536.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -1804,7 +1804,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-546">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№546</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-546.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-other/pr-546.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1818,7 +1818,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-549">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№549</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-549.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-other/pr-549.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -1832,7 +1832,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-550">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№550</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-550.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-other/pr-550.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1846,7 +1846,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-551">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№551</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-551.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-other/pr-551.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1860,7 +1860,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-552">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№552</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-552.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-other/pr-552.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1874,7 +1874,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-555">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№555</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-555.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-other/pr-555.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1888,7 +1888,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-556">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№556</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-556.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-other/pr-556.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1911,7 +1911,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-601">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№601 (Пр_лестницы)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-601.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-601.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1925,7 +1925,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-627-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№627/1 (перила)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-627-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-627-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1939,7 +1939,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-627-2">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№627/2 (подперильная доска)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-627-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-627-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -1953,7 +1953,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-628-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№628/1 (перила)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-628-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-628-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -1967,7 +1967,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-628-2">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№628/2 (подперильная доска)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-628-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-628-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -1981,7 +1981,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-629">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№629 (Пр_на косоур)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-629.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-629.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -1995,7 +1995,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-629-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№629/1 (Пр_на косоур)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-629-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-629-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -2009,7 +2009,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-629-2">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№629/2 (Пр_на косоур)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-629-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-629-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -2023,7 +2023,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-630-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№630/1 (перила)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-630-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-630-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -2037,7 +2037,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-630-2">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№630/2 (подперильная доска)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-630-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-630-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -2051,7 +2051,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-631-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№631/1 (перила)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-631-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-631-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -2065,7 +2065,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-631-2">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№631/2 (подперильная доска)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-631-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-631-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -2079,7 +2079,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-647-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№647/1 (подушка под балясину)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-647-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-647-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -2093,7 +2093,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-647-2">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№647/2 (подушка под балясину)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-647-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-lestnicy/pr-647-2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -2117,7 +2117,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-762">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№762 (дуб, бук под ротанговую сетку, крашеный)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-762.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-rotangovayasetka/pr-762.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
