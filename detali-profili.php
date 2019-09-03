@@ -19,7 +19,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <div class="bs-callout bs-callout-warning cont" ><h4>МДФ НАКЛАДКА №050/ДШ</h4>
                                                       
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/mdf-nakladka-050-dsh.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-nakladki/mdf-nakladka-050-dsh.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                                
@@ -36,7 +36,7 @@ include 'inc/inc-left-side-menu-detali.php';
                             <!-- <a href=""><img  src="img.jpg" alt="" style="width:200px; height:200px;" data-toggle="modal" data-target="#myModal"class="img-rounded img-thumbnail b-lazy img-book"></a> -->
                            
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/mdf-nakladka-051-dsh.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-nakladki/mdf-nakladka-051-dsh.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                            
@@ -53,7 +53,7 @@ include 'inc/inc-left-side-menu-detali.php';
                             <!-- <a href=""><img  src="img.jpg" alt="" style="width:200px; height:200px;" data-toggle="modal" data-target="#myModal"class="img-rounded img-thumbnail b-lazy img-book"></a> -->
                            
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/mdf-nakladka-052-dsh.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-nakladki/mdf-nakladka-052-dsh.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                           
@@ -69,7 +69,7 @@ include 'inc/inc-left-side-menu-detali.php';
                             <!-- <a href=""><img  src="img.jpg" alt="" style="width:200px; height:200px;" data-toggle="modal" data-target="#myModal"class="img-rounded img-thumbnail b-lazy img-book"></a> -->
                             
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/mdf-nakladka-053-dsh.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-nakladki/mdf-nakladka-053-dsh.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -2140,7 +2140,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-mdf-8">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_МДФ_№8XX/1 или Пр_МДФ_№8XX/2</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-mdf-8.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-raskladki/pr-mdf-8.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -2163,7 +2163,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-karkas-9">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_КАРКАС_№9XX/YY (массив:сосна)</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-karkas-9.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-karkas-9.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -2177,7 +2177,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-karkas-9-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_КАРКАС_№9XX/YY Раскрой реечного щита для изготовления</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-karkas-9-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-karkas-9-1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -2191,7 +2191,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-925">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№925</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-925.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-925.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -2205,7 +2205,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-925-601">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№925/601</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-925-601.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-925-601.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -2219,7 +2219,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-925-602">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№925/602</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-925-602.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-925-602.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -2233,7 +2233,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-925-701">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№925/701</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-925-701.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-925-701.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -2247,7 +2247,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-925-702">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№925/702</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-925-702.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-925-702.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                          
@@ -2261,7 +2261,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-928-24">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№928/24</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-928-24.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-928-24.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -2275,7 +2275,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-932-30">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№932/30</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-932-30.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-932-30.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -2289,7 +2289,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-933">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№933</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-933.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-933.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -2303,7 +2303,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-940">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№940/ХХХ</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-940.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-940.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -2317,7 +2317,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-964">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№964</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-964.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyakarkasov/pr-964.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -2341,7 +2341,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-stol1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№СТОЛ1  || обкладка_столешницы</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-stol1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyastolov/pr-stol1.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                      
@@ -2355,7 +2355,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-stol2">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№СТОЛ2  || над_плинтусом_пилястры</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-stol2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyastolov/pr-stol2.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -2369,7 +2369,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-stol3-60-3-bf">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№СТОЛ3/60/3/БФ  || пилястра</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-stol3-60-3-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyastolov/pr-stol3-60-3-bf.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                       
@@ -2383,7 +2383,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-stol4">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№СТОЛ4  || поясок_верхний_уровень</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-stol4.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyastolov/pr-stol4.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                        
@@ -2397,7 +2397,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-stol5">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№СТОЛ5  || обкладка_столешницы</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-stol5.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyastolov/pr-stol5.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
@@ -2411,7 +2411,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         <h2 id="pr-stol6">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" ><h4>Пр_№СТОЛ6  || обкладка_столешницы</h4>   
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/pr-stol6.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/profili-dlyastolov/pr-stol6.png" class="center-block   img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                         
