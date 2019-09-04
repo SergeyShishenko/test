@@ -985,6 +985,86 @@
                         
     ];
 /////////////////////////////////////    
+    // spalnya
+/////////////////////////////////////
+
+    $path_img="./dist/images/metodichki-spalnya/";
+    $spalnya=[];
+    $spalnya[0]=['path'=>"metodichki-ergonomika.php",
+                    'id'=>"#ergonomika-spalnya",
+                    'def'=>"Эргономика спальни"];
+
+    $spalnya[1]=['path'=>"metodichki-ergonomika.php",
+                    'id'=> "#spalnya",
+                    'def'=>"Спальня",
+                    'content'=>array(
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "spalnya-1",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "spalnya-2",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "spalnya-3",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),                              
+                            
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "spalnya-4",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "spalnya-5",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'overlay'=>false 
+                                )
+                           
+                            
+
+                                )//content
+                        
+    ];
+/////////////////////////////////////    
 
     
    
