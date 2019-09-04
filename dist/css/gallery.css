@@ -39,8 +39,8 @@ button:active {
  margin-top: -20px;
 }
 #image-gallery-image{float:none;}
-@media (min-width: 768px){
+/* @media (min-width: 768px){
 .navbar-collapse.collapse {
     display: none !important;
     }
-}
+} */

@@ -7,7 +7,7 @@
 //izdeliya-mebel-korpusnaya.php
     // $arrlist = [$vannaya,$list_dvizheniya_obrazcov,$obrazec_albom_oobrazcov];
     // SideMenuList($arrlist)
-        $path_img="./dist/images/vannaya/";
+        $path_img="./dist/images/metodichki-vannaya/";
         $vannaya=[];
         $vannaya[0]=['path'=>"metodichki-ergonomika.php",
                             'id'=>"#ergonomika-vannoy-komnaty",
@@ -110,7 +110,7 @@
                         
     /////////////////////////////////////
 
-    $path_img="./dist/images/garderobnaya/";
+    $path_img="./dist/images/metodichki-garderobnaya/";
     $garderobnaya=[];
     $garderobnaya[0]=['path'=>"metodichki-ergonomika.php",
                     'id'=>"#ergonomika-garderobnoy-komnaty",
@@ -190,7 +190,7 @@
     // prihozhaya
 /////////////////////////////////////
 
-    $path_img="./dist/images/prihozhaya/";
+    $path_img="./dist/images/metodichki-prihozhaya/";
     $prihozhaya=[];
     $prihozhaya[0]=['path'=>"metodichki-ergonomika.php",
                     'id'=>"#ergonomika-prihozhaya",
@@ -269,7 +269,7 @@
     // stoly
 /////////////////////////////////////
 
-    $path_img="./dist/images/stoly/";
+    $path_img="./dist/images/metodichki-stoly/";
     $stoly=[];
     $stoly[0]=['path'=>"metodichki-ergonomika.php",
                     'id'=>"#ergonomika-stoly",
@@ -448,7 +448,7 @@
     // detskaya
 /////////////////////////////////////
 
-    $path_img="./dist/images/detskaya/";
+    $path_img="./dist/images/metodichki-detskaya/";
     $detskaya=[];
     $detskaya[0]=['path'=>"metodichki-ergonomika.php",
                     'id'=>"#ergonomika-detskaya",
@@ -550,7 +550,7 @@
     // antropologiya
 /////////////////////////////////////
 
-    $path_img="./dist/images/antropologiya/";
+    $path_img="./dist/images/metodichki-antropologiya/";
     $antropologiya=[];
     $antropologiya[0]=['path'=>"metodichki-ergonomika.php",
                     'id'=>"#ergonomika-antropologiya",
@@ -888,6 +888,97 @@
                                     
                                     'overlay'=>false 
                                 )
+                            
+
+                                )//content
+                        
+    ];
+/////////////////////////////////////    
+    // gostinaya
+/////////////////////////////////////
+
+    $path_img="./dist/images/metodichki-gostinaya/";
+    $gostinaya=[];
+    $gostinaya[0]=['path'=>"metodichki-ergonomika.php",
+                    'id'=>"#ergonomika-gostinaya",
+                    'def'=>"Эргономика гостиной комнаты"];
+
+    $gostinaya[1]=['path'=>"metodichki-ergonomika.php",
+                    'id'=> "#gostinaya",
+                    'def'=>"Гостиная комната",
+                    'content'=>array(
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "gostinaya-1",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "gostinaya-2",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "gostinaya-3",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),                              
+                            
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "gostinaya-4",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "gostinaya-5",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "gostinaya-6",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'overlay'=>false 
+                                )
+                                
                             
 
                                 )//content
