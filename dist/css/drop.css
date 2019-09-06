@@ -56,8 +56,8 @@
         .close:hover { background: #00d9ff; } */
 
 
-        .modal-dialog {
-            /* width: 90% !important; */
+        #GENModal > div.modal-dialog {
+            width: 90% !important;
             margin: 30px auto;
         }
 

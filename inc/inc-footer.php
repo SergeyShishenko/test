@@ -166,7 +166,7 @@
         </script> 
 <!-- gallery -->
 <script>
-        // var modalId = $('#image-gallery');
+        var modalId = $('#image-gallery');
 
         $(document)
             .ready(function () {
@@ -242,7 +242,7 @@
             .keydown(function (e) {
                 switch (e.which) {
                     case 37: // left
-                        // alert('left');
+                        // alert('left '+ modalId.data('bs.modal'));
                         // if ((modalId.data('bs.modal') || {})._isShown && $('#show-previous-image').is(":visible")) {
                         if (modalId.data('bs.modal') && $('#show-previous-image').is(":visible")) {
                             $('#show-previous-image').click();

@@ -11,13 +11,15 @@ button:active {
 }
 
 .thumb {
-    margin-top: 7.5px;
+    /* margin-top: 7.5px; */
     margin-bottom: 7.5px;
     padding-right: 7.5px;
     padding-left: 7.5px;
     text-align: center;
 }
-
+.thumb > h5 {
+margin-left: 0px !important;
+}
 
 .modal-dialog-gallery {
     
