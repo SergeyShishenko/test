@@ -559,6 +559,8 @@ $('#myModal').on('show.bs.modal', function (event) {
 
 
 
+
+
 // index.html
 var menu_selector = ".top-menu"; // Переменная должна содержать название класса или идентификатора, обертки нашего меню. 
 var nv;

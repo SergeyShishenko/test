@@ -116,6 +116,10 @@
                         <img id="image-gallery-image" class="img-responsive col-md-12" src="">
                     </div>
                     <div class="modal-footer">
+
+                    <a href="./dist/files/dwg/pr-400-hh.dwg" type="button"  id ="pr-download" class="btn btn-info im-download" download="Пр_№400/ХХ.dwg" title="Скачать" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>
+
+
                         <button type="button" class="btn btn-secondary float-left" id="show-previous-image">
                             <i class="fa fa-arrow-left"></i>
                         </button>
@@ -207,6 +211,10 @@
                     function updateGallery(selector) {
                         let $sel = selector;
                         current_image = $sel.data('image-id');
+
+                        
+                        $('#pr-download').attr('title',$sel.data('title'));
+                            
                         $('#image-gallery-title')
                             .text($sel.data('title'));
                         $('#image-gallery-image')

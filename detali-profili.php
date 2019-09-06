@@ -24,7 +24,7 @@ include 'inc/inc-left-side-menu-detali.php';
 
                               <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
                                 <!-- <h2>Детали</h2>-->
-                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-100-hh-yy-zz.png"
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="pr-100-hh-yy-zz" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-100-hh-yy-zz.png"
                                       data-target="#image-gallery">
                                       <img src="./dist/images/profili-shtapiki/Thumbnail/pr-100-hh-yy-zz.png" alt="Another alt text">
                                   </a>
@@ -33,7 +33,7 @@ include 'inc/inc-left-side-menu-detali.php';
 
                               <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
                                 <!-- <h2>Детали</h2>-->
-                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-101-20-105.png"
+                                  <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="pr-101-20-105" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-101-20-105.png"
                                       data-target="#image-gallery">
                                       <img src="./dist/images/profili-shtapiki/Thumbnail/pr-101-20-105.png" alt="Another alt text">
                                   </a>
