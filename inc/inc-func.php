@@ -151,7 +151,7 @@ function ContentListGoupMenu($arr) //правое меню группа
                     </a>
                 </p>
                 '; 
-            // навигация по content
+            // навигация по content end
 
 
             for ($j=1; $j < count($arr[$i]['content']); $j++)
