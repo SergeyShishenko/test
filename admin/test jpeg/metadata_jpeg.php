@@ -6,43 +6,46 @@ $exif = exif_read_data('pr-940.jpg', 'IFD0');
 echo $exif===false ? "Не найдено данных заголовка.<br />\n" : "Изображение содержит заголовки<br />\n";
 
 $exif = exif_read_data('pr-940.jpg', 0, true);
-echo "pr-940.jpg:<br />\n";
-echo "Comments: ".$exif['IFD0']['Comments']."<br />\n";
-echo "Title: ".$exif['IFD0']['ImageDescription']."<br />\n";
+// echo "pr-940.jpg:<br />\n";
+// echo "Comments: ".$exif['IFD0']['Comments']."<br />\n";
+// echo "Title: ".$exif['IFD0']['ImageDescription']."<br />\n";
+$Title_prop_jpg = explode("~", $exif['IFD0']['ImageDescription']);
+echo "Имя=> " .$Title_prop_jpg[0]. "<br />\n";
+echo "Описание=> " .$Title_prop_jpg[1]. "<br />\n";
 // mb_convert_encoding($exif['IFD0']['Comments'], "UCS-2LE", "JIS, eucjp-win, sjis-win");
-foreach ($exif as $key => $section) {
-    foreach ($section as $name => $val) {
-        echo "$key.$name: $val <br />\n";
-        // echo "$key.$name:". utf8_decode($val)." <br />\n";
-        // echo "$key.$name:". iconv('UTF-8', 'ASCII',$val)." <br />\n";
-        // echo "$key.$name:". iconv("", "UTF-8", $val)." <br />\n";
+// foreach ($exif as $key => $section) {
+//     foreach ($section as $name => $val) {
+//         echo "$key.$name: $val <br />\n";
+//         // echo "$key.$name:". utf8_decode($val)." <br />\n";
+//         // echo "$key.$name:". iconv('UTF-8', 'ASCII',$val)." <br />\n";
+//         // echo "$key.$name:". iconv("", "UTF-8", $val)." <br />\n";
      
      
-    }
-}
+//     }
+// }
 
-echo "<hr>";
+// echo "<hr>";
 
-$size = getimagesize('pr-940.jpg', $info);
-echo ucs2html($info['APP1'])." <br />\n<hr>";
-echo ucs2html_2($info['APP1'])." <br />\n";
-foreach ($info as $name => $val) {
+// $size = getimagesize('pr-940.jpg', $info);
+// echo ucs2html($info['APP1'])." <br />\n<hr>";
+// echo ucs2html_2($info['APP1'])." <br />\n";
+// foreach ($info as $name => $val) {
     
-    // echo "<br />$name: $val <br />\n";
-    // echo "<br />$name:". mb_convert_encoding($val,"UTF-8" ,"auto")." <br />\n";
-    // echo ucs2html($val)." <br />\n";
-    // echo ucs2html_2($val)." <br />\n";
-    // echo cp1251_utf8( $val )." <br />\n";
-    // echo encoding($val)." <br />\n";
-    // echo "<br />$name:". utf8_decode($val)." <br />\n";
+//     // echo "<br />$name: $val <br />\n";
+//     // echo "<br />$name:". mb_convert_encoding($val,"UTF-8" ,"auto")." <br />\n";
+//     // echo ucs2html($val)." <br />\n";
+//     // echo ucs2html_2($val)." <br />\n";
+//     // echo cp1251_utf8( $val )." <br />\n";
+//     // echo encoding($val)." <br />\n";
+//     // echo "<br />$name:". utf8_decode($val)." <br />\n";
  
     
-    // $iptc = iptcparse($info[$name]);
-    // var_dump($val);
+//     // $iptc = iptcparse($info[$name]);
+//     // var_dump($val);
     
     
  
-}
+// }
 
 
 // if(isset($info['APP1']))
