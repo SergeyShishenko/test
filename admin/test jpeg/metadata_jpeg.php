@@ -9,6 +9,7 @@ $exif = exif_read_data($file, 0, true);
 // echo "pr-940.jpg:<br />\n";
 echo "Title: ".$exif['IFD0']['ImageDescription']."<br />\n";
 echo "Comments: ".ucs2html($exif['IFD0']['Comments'])."<br />\n";
+echo "Keywords: ".ucs2html($exif['IFD0']['Keywords'])."<br />\n";
 
 // echo "<hr>";
 // $Title_prop_jpg = explode("~", $exif['IFD0']['ImageDescription']);
@@ -16,6 +17,9 @@ echo "Comments: ".ucs2html($exif['IFD0']['Comments'])."<br />\n";
 // echo "Описание=> " .$Title_prop_jpg[1]. "<br />\n";
 // echo "<hr>";
 // mb_convert_encoding($exif['IFD0']['Comments'], "UCS-2LE", "JIS, eucjp-win, sjis-win");
+
+
+// все свойства файла
 // foreach ($exif as $key => $section) {
 //     foreach ($section as $name => $val) {
 //         echo "$key.$name: $val <br />\n";
@@ -27,6 +31,8 @@ echo "Comments: ".ucs2html($exif['IFD0']['Comments'])."<br />\n";
      
 //     }
 // }
+
+
 
 // echo "<hr>";
 
