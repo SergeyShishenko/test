@@ -1,23 +1,27 @@
 <?php
-
-echo "pr-940.jpg:<br />\n";
-$exif = exif_read_data('pr-940.jpg', 'IFD0');
+$file="pr-964.jpg";
+echo $file." :<br />\n";
+$exif = exif_read_data($file, 'IFD0');
 
 echo $exif===false ? "Не найдено данных заголовка.<br />\n" : "Изображение содержит заголовки<br />\n";
 
-$exif = exif_read_data('pr-940.jpg', 0, true);
+$exif = exif_read_data($file, 0, true);
 // echo "pr-940.jpg:<br />\n";
-// echo "Comments: ".$exif['IFD0']['Comments']."<br />\n";
-// echo "Title: ".$exif['IFD0']['ImageDescription']."<br />\n";
-$Title_prop_jpg = explode("~", $exif['IFD0']['ImageDescription']);
-echo "Имя=> " .$Title_prop_jpg[0]. "<br />\n";
-echo "Описание=> " .$Title_prop_jpg[1]. "<br />\n";
+echo "Title: ".$exif['IFD0']['ImageDescription']."<br />\n";
+echo "Comments: ".ucs2html($exif['IFD0']['Comments'])."<br />\n";
+
+// echo "<hr>";
+// $Title_prop_jpg = explode("~", $exif['IFD0']['ImageDescription']);
+// echo "Имя=> " .$Title_prop_jpg[0]. "<br />\n";
+// echo "Описание=> " .$Title_prop_jpg[1]. "<br />\n";
+// echo "<hr>";
 // mb_convert_encoding($exif['IFD0']['Comments'], "UCS-2LE", "JIS, eucjp-win, sjis-win");
 // foreach ($exif as $key => $section) {
 //     foreach ($section as $name => $val) {
 //         echo "$key.$name: $val <br />\n";
+//         echo ucs2html($val)." <br />\n";
 //         // echo "$key.$name:". utf8_decode($val)." <br />\n";
-//         // echo "$key.$name:". iconv('UTF-8', 'ASCII',$val)." <br />\n";
+//         // echo "$key.$name:". iconv('ASCII', 'UTF-8',$val)." <br />\n";
 //         // echo "$key.$name:". iconv("", "UTF-8", $val)." <br />\n";
      
      
@@ -26,7 +30,7 @@ echo "Описание=> " .$Title_prop_jpg[1]. "<br />\n";
 
 // echo "<hr>";
 
-// $size = getimagesize('pr-940.jpg', $info);
+// $size = getimagesize($file, $info);
 // echo ucs2html($info['APP1'])." <br />\n<hr>";
 // echo ucs2html_2($info['APP1'])." <br />\n";
 // foreach ($info as $name => $val) {
