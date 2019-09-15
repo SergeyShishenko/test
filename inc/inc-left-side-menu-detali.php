@@ -395,7 +395,7 @@
                         </li>
                         <!-- menu -->
                         <li class="menu disabled">
-                            <a href="detali-profili-reznye.php" class="list-group-item " '.$item_reznye_Class.' ">Профили резные</a>
+                            <a href="detali-profili-reznye.php" class="list-group-item '.$item_reznye_Class.'">Профили резные</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
                                     <ul class="list-group sub_menu2">

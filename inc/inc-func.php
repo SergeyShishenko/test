@@ -69,6 +69,28 @@ function LeftSideMenu($arr)// левое меню -> замена <li class="men
 }
 
 /////////////////////////////////////
+function ListGallery($directory)// левое меню -> замена <li class="menu2"> ->   ';LeftSideMenu($styazhka); echo'
+{
+    //$directory = './dist/images/GALLERY/SHTAPIKI/Thumbnail';
+                                // $scanned_directory = array_diff(scandir($directory.'/Thumbnail'), array('..', '.'));
+    $scanned_directory = scandir($directory.'/Thumbnail');
+  
+        for ($i=2; $i < count($scanned_directory); $i++) { 
+            
+echo '
+                                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                   <!--<h5>Профили</h5>-->
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Профиль гладкий" data-image="'.$directory.'/Original/'.$scanned_directory[$i].'"
+                                        data-target="#image-gallery">
+                                        <img src="'.$directory.'/Thumbnail/'.$scanned_directory[$i].'" alt="Another alt text">
+                                    </a> 
+                                </div>                
+';     
+        }  
+    
+}
+
+/////////////////////////////////////
 
 function IndexMenu($arr,$num_footer)// index.php
 {

@@ -11,7 +11,7 @@ button:active {
 }
 
 .thumb {
-    /* margin-top: 7.5px; */
+    margin-top: 7.5px;
     margin-bottom: 7.5px;
     padding-right: 7.5px;
     padding-left: 7.5px;
@@ -46,3 +46,6 @@ margin-left: 0px !important;
     display: none !important;
     }
 } */
+
+/* .gallery{clear: both;} */
+.gallery-cont{display: flex; flex-wrap: wrap}
