@@ -3,7 +3,7 @@ include 'inc/inc-session-start.php';
 include 'inc/inc-menu-value.php';
 include 'inc/inc-menu-value-detali.php';
 $detaliClass = 'class="active"';
-$item_profili_Class = 'active';
+$item_profile_directory_Class = 'active';
 include 'inc/inc-head.php';
 include 'inc/inc-header-menu.php';
 include 'inc/inc-left-side-menu-detali.php';
@@ -14,7 +14,7 @@ include 'inc/inc-left-side-menu-detali.php';
                     <article class="gallery" >
                         <section  >
                             <div class="page-header cont ">
-                            <h1 itemprop="name" id="profili">Профили</h1>
+                            <h1 itemprop="name" id="profili-gladkie">Профили гладкие</h1>
                             </div> 
                             <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
                               <!--gallery -->   
@@ -36,7 +36,7 @@ include 'inc/inc-left-side-menu-detali.php';
                 <div class="col-md-2"  id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary"  >
                         <ul class="nav bs-sidenav">
-                            <li><a href="#profili">Профили</a>
+                            <li><a href="#profili-gladkie">Профили гладкие</a>
                                 <!-- <ul class="nav">
                                     <li><a href="#profili-nakladki-50" >&#9999;&nbsp;МДФ накладка №050/ДШ</a>
                                     </li>

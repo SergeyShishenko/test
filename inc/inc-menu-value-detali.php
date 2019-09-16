@@ -6,3 +6,4 @@ $item_rezby_Class = '';
 $item_tokarka_Class = '';
 $item_frezy_Class = '';
 $item_pazy_Class = '';
+$item_profile_directory_Class = '';

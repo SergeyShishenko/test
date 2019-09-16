@@ -22,7 +22,7 @@ include 'inc/inc-left-side-menu-detali.php';
                           <!--gallery -->
                            <!-- 1 -->
 
-                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                              <!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
                                 <h5>Детали</h5>
                                   <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="pr-100-hh-yy-zz" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-100-hh-yy-zz.png"
                                       data-target="#image-gallery">
@@ -65,12 +65,12 @@ include 'inc/inc-left-side-menu-detali.php';
                                       data-target="#image-gallery">
                                       <img src="./dist/images/profili-shtapiki/Thumbnail/pr-101-30-20.png" alt="Another alt text">
                                   </a>
-                              </div>
+                              </div> -->
                            <!-- /1 -->
 
                            <!-- 2 -->
 
-                              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                              <!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
                                 <h5>Детали</h5>
                                   <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Im so nice" data-image="./dist/images/profili-shtapiki/Thumbnail/pr-102-19-105.png"
                                       data-target="#image-gallery">
@@ -113,7 +113,7 @@ include 'inc/inc-left-side-menu-detali.php';
                                       data-target="#image-gallery">
                                       <img src="./dist/images/profili-shtapiki/Thumbnail/pr-106.png" alt="Another alt text">
                                   </a>
-                              </div>
+                              </div> -->
                            <!-- /2 -->  
 
                         <!--/gallery -->

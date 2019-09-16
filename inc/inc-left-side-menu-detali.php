@@ -394,6 +394,49 @@
                             </ul>
                         </li>
                         <!-- menu -->
+                        <li class="menu">                                
+                            <a href="detali-gallery-profili.php" class="list-group-item '.$item_profile_directory_Class.'">Каталог профилей &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                            <ul class="list-group sub_menu">
+                                <li class="menu2">
+                                    <a  class="list-group-item sub"  href="detali-profili.php#profili-nakladki">Накладки</a>
+                                  
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="detali-profili.php#shtapiki">Штапики</a>
+                                    
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="detali-profili.php#dlya-karnizov" >Для карнизов</a>
+                                    
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="detali-profili.php#dlya-obramleniya">Для обрамления</a>
+                                   
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="detali-profili.php#plintus-moldingi">Плинтус, молдинги</a>
+                                   
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="detali-profili.php#drugie">Другие</a>
+                                   
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="detali-profili.php#poruchni-lestnicy">Поручни, лестницы</a>
+                                    
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="detali-profili.php#pod-rotangovuyu-setku">Под ротанговую сетку</a>
+                                    
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="detali-profili.php#raskladki">Раскладки</a>
+                                   
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="detali-profili.php#dlya-karkasov">Для каркасов</a>
+                                   
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="detali-profili.php#dlya-stolov">Для столов</a>
+                                    
+                                </li>
+                               
+                                
+                                                                    
+                            </ul>
+                        </li>
+                        <!-- menu -->
                         <li class="menu disabled">
                             <a href="detali-profili-reznye.php" class="list-group-item '.$item_reznye_Class.'">Профили резные</a>
                             <ul class="list-group sub_menu">
