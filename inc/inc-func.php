@@ -74,15 +74,23 @@ function ListGallery($directory)// левое меню -> замена <li class
     //$directory = './dist/images/GALLERY/SHTAPIKI/Thumbnail';
                                 // $scanned_directory = array_diff(scandir($directory.'/Thumbnail'), array('..', '.'));
     $scanned_directory = scandir($directory.'/Thumbnail');
-  
+    
         for ($i=2; $i < count($scanned_directory); $i++) { 
-            
+            $file=$directory.'/Thumbnail/'.$scanned_directory[$i];
+            $exif = exif_read_data($file, 0, true);
+            if ($exif) {
+                $title=$exif['IFD0']['ImageDescription'];
+                $Comments=ucs2html($exif['IFD0']['Comments']);
+                $Keywords=ucs2html($exif['IFD0']['Keywords']);
+            }
+            if (!$title){$title="Профиль гладкий";}
+        
 echo '
                                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
-                                   <!--<h5>Профили</h5>-->
-                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Профиль гладкий" data-image="'.$directory.'/Original/'.$scanned_directory[$i].'"
+                                   <!--<h5>'.$file.'</h5>-->
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="'.$title.'" data-image="'.$directory.'/Original/'.$scanned_directory[$i].'"
                                         data-target="#image-gallery" data-directory="'.$directory.'">
-                                        <img src="'.$directory.'/Thumbnail/'.$scanned_directory[$i].'" alt="Another alt text">
+                                        <img src="'.$directory.'/Thumbnail/'.$scanned_directory[$i].'" alt="'.explode(".", $scanned_directory[$i])[0].'">
                                     </a> 
                                 </div>                
 ';     
@@ -91,7 +99,16 @@ echo '
 }
 
 /////////////////////////////////////
-
+function ucs2html($str) {
+    $str=trim($str); // if you are reading from file
+    $len=strlen($str);
+    $html='';
+    for($i=0;$i<$len;$i+=2)
+        $html.='&#'.hexdec(dechex(ord($str[$i+1])).
+                   sprintf("%02s",dechex(ord($str[$i])))).';';
+    return($html);
+}
+//////////////////////////////////////
 function IndexMenu($arr,$num_footer)// index.php
 {
     

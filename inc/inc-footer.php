@@ -211,9 +211,10 @@
                     function updateGallery(selector) {
                         let $sel = selector;
                         current_image = $sel.data('image-id');
-
+                        let $file = $sel.find('img').attr('alt').split("_")[0];
+                         $file = $file+".dwg";
                         
-                        $('#pr-download').attr('title',$sel.data('title'));
+                        $('#pr-download').attr('href',$sel.data('directory')+'/DWG/'+$file);
                             
                         $('#image-gallery-title')
                             .text($sel.data('title'));
