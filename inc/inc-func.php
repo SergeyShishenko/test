@@ -81,7 +81,7 @@ echo '
                                 <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
                                    <!--<h5>Профили</h5>-->
                                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Профиль гладкий" data-image="'.$directory.'/Original/'.$scanned_directory[$i].'"
-                                        data-target="#image-gallery">
+                                        data-target="#image-gallery" data-directory="'.$directory.'">
                                         <img src="'.$directory.'/Thumbnail/'.$scanned_directory[$i].'" alt="Another alt text">
                                     </a> 
                                 </div>                
