@@ -4513,7 +4513,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-petli-dlya-fasadov-podbor-po-vesu">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#petli-dlya-fasadov-podbor-po-vesu">ПЕТЛИ для ФАСАДОВ (подбор по весу)<span> <br>~petli-dlya-fasadov-podbor-po-vesu</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#petli-dlya-fasadov-podbor-po-vesu">ПЕТЛИ для ФАСАДОВ (подбор по весу)<span> <br>~petli-dlya-fasadov-podbor-po-vesu вес </span></p>
                                                                         </TD>                                                                         
                                                                     </TR>
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->             
