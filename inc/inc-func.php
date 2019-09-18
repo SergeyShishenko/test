@@ -7,7 +7,7 @@ function SideMenu($arr,$curr) //правое меню группа
     <div class="col-md-2" id="navmain-izdeliya">                    
         <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary" >';                                  
     echo'  <ul class="nav bs-sidenav"> '; 
-        echo '<li><a href="'.$arr[0]['id'].'">span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> '.$arr[0]['def'].'</a>';
+        echo '<li><a href="'.$arr[0]['id'].'"><span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> '.$arr[0]['def'].'</a>';
             echo '<ul class="nav">';                                 
                     for ($i=1; $i < count($arr); $i++) { 
                         if($i==$curr){$path="";}else{$path=$arr[$i]['path'];}                                                
