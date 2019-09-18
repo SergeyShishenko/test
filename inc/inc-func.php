@@ -69,7 +69,7 @@ function LeftSideMenu($arr)// левое меню -> замена <li class="men
 }
 
 /////////////////////////////////////
-function ListGallery($directory)// левое меню -> замена <li class="menu2"> ->   ';LeftSideMenu($styazhka); echo'
+function ListGallery($directory,$scale=2)// левое меню -> замена <li class="menu2"> ->   ';LeftSideMenu($styazhka); echo'
 {
     //$directory = './dist/images/GALLERY/SHTAPIKI/Thumbnail';
                                 // $scanned_directory = array_diff(scandir($directory.'/Thumbnail'), array('..', '.'));
@@ -86,7 +86,7 @@ function ListGallery($directory)// левое меню -> замена <li class
             if (!$title){$title="Профиль гладкий";}
         
 echo '
-                                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 thumb">
+                                <div class="col-xs-'.$scale.' col-sm-'.$scale.' col-md-'.$scale.' col-lg-'.$scale.' thumb">
                                    <!--<h5>'.$file.'</h5>-->
                                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="'.$title.'" data-image="'.$directory.'/Original/'.$scanned_directory[$i].'"
                                         data-target="#image-gallery" data-directory="'.$directory.'">

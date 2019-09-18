@@ -19,7 +19,7 @@ include 'inc/inc-left-side-menu-detali.php';
                             <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
                               <!--gallery -->   
                             <div class="bs-callout bs-callout-warning cont gallery-cont" > 
-                                 <?php  ListGallery('./dist/files/GALLERY/SHTAPIKI'); ?>
+                                 <?php  ListGallery('./dist/files/GALLERY/SHTAPIKI',2); ?>
                                  <!--/gallery --> 
                               <!-- <div >&nbsp;.</div>                                                                               -->
                             </div>

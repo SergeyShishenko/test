@@ -186,8 +186,8 @@
                     }
                 }
 
-                //  @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
-                //  @param setClickAttr  Sets the attribute for the click handler.
+                //  @param setIDs        Устанавливает идентификаторы при загрузке DOM. Если используется счетчик PHP, установите значение false.
+                //  @param setClickAttr  Задает атрибут для обработчика щелчков.
 
 
                 function loadGallery(setIDs, setClickAttr) {
