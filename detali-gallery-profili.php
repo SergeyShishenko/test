@@ -21,7 +21,7 @@ include 'inc/inc-left-side-menu-detali.php';
                             <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
                               <!--gallery -->   
                             <div class="bs-callout bs-callout-warning cont gallery-cont" > 
-                                 <?php  ListGallery('./dist/files/GALLERY/NAKLADKI',2,"Накладки"); ?>
+                                 <?php  ListGallery('./dist/files/GALLERY/NAKLADKI',3,"Накладки"); ?>
                                  <!--/gallery --> 
                               <!-- <div >&nbsp;.</div>                                                                               -->
                             </div>
