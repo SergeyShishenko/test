@@ -11,7 +11,7 @@ include 'inc/inc-left-side-menu-detali.php';
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
                 <p>&nbsp;</p>
-                <a href="./dist/files/GALLERY/ALL IN ONE/sborka-profiley-ot-28052019.dwg" type="button" class="btn btn-primary"  download="sborka-profiley-ot-28052019.dwg">Скачать - СБОРКА ПРОФИЛЕЙ (от 28.05.2019).DWG</a>
+                <a href="./dist/files/GALLERY/ALL IN ONE/sborka-profiley-ot-28052019.dwg" type="button" class="btn btn-primary"  download="СБОРКА ПРОФИЛЕЙ (от 28.05.2019).dwg">Скачать - СБОРКА ПРОФИЛЕЙ (от 28.05.2019).DWG</a>
                 <!--  -->
                     <article class="gallery" >
                         <section  >
