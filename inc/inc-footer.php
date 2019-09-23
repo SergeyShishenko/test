@@ -116,7 +116,7 @@
                     </div>
                     <div class="modal-footer">
 
-                    <a href="./dist/files/dwg/pr-400-hh.dwg" type="button"  id ="pr-download" class="btn btn-info im-download" download="Пр_№400/ХХ.dwg" title="Скачать" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>
+                    <a href="./dist/files/dwg/pr-400-hh.dwg" type="button"  id ="pr-download" class="btn btn-info im-download" download="Профиль.dwg" title="Скачать" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>
 
 
                         <button type="button" class="btn btn-secondary float-left" id="show-previous-image">
