@@ -16,7 +16,7 @@
                 <div class="navbar-collapse collapse top-menu">
                     <ul class="nav navbar-nav navbar-link " id="navmain">
                         <li '.$detaliClass.'>
-                            <a href="detali-profili.php">ДЕТАЛИ</a>
+                            <a href="detali-gallery-profili.php">ДЕТАЛИ</a>
                         </li>
                         <li '.$izdeliyaClass.'>
                             <a href="izdeliya-bloki-dvernye.php">ИЗДЕЛИЯ</a>

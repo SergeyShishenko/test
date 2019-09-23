@@ -69,7 +69,7 @@ function LeftSideMenu($arr)// левое меню -> замена <li class="men
 }
 
 /////////////////////////////////////
-function ListGallery($directory,$scale=2)// левое меню -> замена <li class="menu2"> ->   ';LeftSideMenu($styazhka); echo'
+function ListGallery($directory,$scale=2,$titleGallery)// левое меню -> замена <li class="menu2"> ->   ';LeftSideMenu($styazhka); echo'
 {
     //$directory = './dist/images/GALLERY/SHTAPIKI/Thumbnail';
                                 // $scanned_directory = array_diff(scandir($directory.'/Thumbnail'), array('..', '.'));
@@ -83,7 +83,7 @@ function ListGallery($directory,$scale=2)// левое меню -> замена 
                 $Comments=ucs2html($exif['IFD0']['Comments']);
                 $Keywords=ucs2html($exif['IFD0']['Keywords']);
             }
-            if (!$title){$title="Профиль гладкий";}
+            if (!$title){$title=$titleGallery;}
         
 echo '
                                 <div class="col-xs-'.$scale.' col-sm-'.$scale.' col-md-'.$scale.' col-lg-'.$scale.' thumb">
@@ -94,8 +94,7 @@ echo '
                                     </a> 
                                 </div>                
 ';     
-        }  
-    
+        }      
 }
 
 /////////////////////////////////////

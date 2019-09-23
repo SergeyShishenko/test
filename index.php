@@ -64,7 +64,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
 
                     <ul class="nav navbar-nav " id="navmain">
                         <li>
-                            <a href="detali-profili.php">ДЕТАЛИ </a>
+                            <a href="detali-gallery-profili.php">ДЕТАЛИ </a>
                             <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                              <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">

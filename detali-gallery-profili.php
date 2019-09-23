@@ -10,16 +10,98 @@ include 'inc/inc-left-side-menu-detali.php';
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
-              
+                <p>&nbsp;</p>
+                <a href="./dist/files/GALLERY/ALL IN ONE/sborka-profiley-ot-28052019.dwg" type="button" class="btn btn-primary"  download="sborka-profiley-ot-28052019.dwg">Скачать - СБОРКА ПРОФИЛЕЙ (от 28.05.2019).DWG</a>
+                <!--  -->
                     <article class="gallery" >
                         <section  >
                             <div class="page-header cont ">
-                            <h1 itemprop="name" id="profili-gladkie">Профили гладкие</h1>
+                            <h1 itemprop="name" id="NAKLADKI">Накладки</h1>
                             </div> 
                             <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
                               <!--gallery -->   
                             <div class="bs-callout bs-callout-warning cont gallery-cont" > 
-                                 <?php  ListGallery('./dist/files/GALLERY/SHTAPIKI',2); ?>
+                                 <?php  ListGallery('./dist/files/GALLERY/NAKLADKI',2,"Накладки"); ?>
+                                 <!--/gallery --> 
+                              <!-- <div >&nbsp;.</div>                                                                               -->
+                            </div>
+                        </section>
+                    </article > 
+                <!--  -->
+                <!--  -->
+                    <article class="gallery" >
+                        <section  >
+                            <div class="page-header cont ">
+                            <h1 itemprop="name" id="SHTAPIKI">Профили гладкие</h1>
+                            </div> 
+                            <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
+                              <!--gallery -->   
+                            <div class="bs-callout bs-callout-warning cont gallery-cont" > 
+                                 <?php  ListGallery('./dist/files/GALLERY/SHTAPIKI',2,"Профили гладкие"); ?>
+                                 <!--/gallery --> 
+                              <!-- <div >&nbsp;.</div>                                                                               -->
+                            </div>
+                        </section>
+                    </article > 
+                <!--  -->
+                <!--  -->
+                 <article class="gallery" >
+                        <section  >
+                            <div class="page-header cont ">
+                            <h1 itemprop="name" id="PROFILI-REZNYE">Профили резные</h1>
+                            </div> 
+                            <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
+                              <!--gallery -->   
+                            <div class="bs-callout bs-callout-warning cont gallery-cont" > 
+                                 <?php  ListGallery('./dist/files/GALLERY/PROFILI-REZNYE',2,"Профили резные"); ?>
+                                 <!--/gallery --> 
+                              <!-- <div >&nbsp;.</div>                                                                               -->
+                            </div>
+                        </section>
+                    </article > 
+                <!--  -->
+                <!--  -->
+                 <article class="gallery" >
+                        <section  >
+                            <div class="page-header cont ">
+                            <h1 itemprop="name" id="KARNIZY">Карнизы</h1>
+                            </div> 
+                            <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
+                              <!--gallery -->   
+                            <div class="bs-callout bs-callout-warning cont gallery-cont" > 
+                                 <?php  ListGallery('./dist/files/GALLERY/KARNIZY',2,"Карнизы"); ?>
+                                 <!--/gallery --> 
+                              <!-- <div >&nbsp;.</div>                                                                               -->
+                            </div>
+                        </section>
+                    </article > 
+                <!--  -->
+                <!--  -->
+                 <article class="gallery" >
+                        <section  >
+                            <div class="page-header cont ">
+                            <h1 itemprop="name" id="PLINTUSY">Плинтус</h1>
+                            </div> 
+                            <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
+                              <!--gallery -->   
+                            <div class="bs-callout bs-callout-warning cont gallery-cont" > 
+                                 <?php  ListGallery('./dist/files/GALLERY/PLINTUSY',2,"Плинтус"); ?>
+                                 <!--/gallery --> 
+                              <!-- <div >&nbsp;.</div>                                                                               -->
+                            </div>
+                        </section>
+                    </article > 
+                <!--  -->
+                <!--  -->
+                 <article class="gallery" >
+                        <section  >
+                            <div class="page-header cont ">
+                            <h1 itemprop="name" id="NALICHNIKI">Наличники</h1>
+                            </div> 
+                            <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
+                              <!--gallery -->   
+                            <div class="bs-callout bs-callout-warning cont gallery-cont" > 
+                                 <?php  ListGallery('./dist/files/GALLERY/NALICHNIKI',2,"Наличники"); ?>
                                  <!--/gallery --> 
                               <!-- <div >&nbsp;.</div>                                                                               -->
                             </div>
@@ -36,17 +118,17 @@ include 'inc/inc-left-side-menu-detali.php';
                 <div class="col-md-2"  id="navmain-izdeliya">
                     <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary"  >
                         <ul class="nav bs-sidenav">
-                            <li><a href="#profili-gladkie">Профили гладкие</a>
-                                <!-- <ul class="nav">
-                                    <li><a href="#profili-nakladki-50" >&#9999;&nbsp;МДФ накладка №050/ДШ</a>
-                                    </li>
-                                    <li><a href="#profili-nakladki-51" >&#9999;&nbsp;МДФ накладка №051/ДШ</a>
-                                    </li> 
-                                    <li><a href="#profili-nakladki-52" >&#9999;&nbsp;МДФ накладка №052/ДШ</a>
-                                    </li>
-                                    <li><a href="#profili-nakladki-53" >&#9999;&nbsp;МДФ накладка №053/ДШ</a>
-                                    </li>                                    
-                                </ul> -->
+                            <li><a href="#NAKLADKI">Накладки</a>                             
+                            </li>
+                            <li><a href="#SHTAPIKI">Профили гладкие</a>                             
+                            </li>
+                            <li><a href="#PROFILI-REZNYE">Профили резные</a>                             
+                            </li>
+                            <li><a href="#KARNIZY">Карнизы</a>                             
+                            </li>
+                            <li><a href="#PLINTUSY">Плинтус</a>                             
+                            </li>
+                            <li><a href="#NALICHNIKI">Наличники</a>                             
                             </li>
                                                
                         </ul>
