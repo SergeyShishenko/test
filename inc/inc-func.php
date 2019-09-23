@@ -88,7 +88,7 @@ function ListGallery($directory,$scale=2,$titleGallery)// левое меню ->
 echo '
                                 <div class="col-xs-'.$scale.' col-sm-'.$scale.' col-md-'.$scale.' col-lg-'.$scale.' thumb">
                                    <!--<h5>'.$file.'</h5>-->
-                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="'.$title.'" data-image="'.$directory.'/Original/'.$scanned_directory[$i].'"
+                                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"  title="'.$title.'" data-title="'.$title.'" data-image="'.$directory.'/Original/'.$scanned_directory[$i].'"
                                         data-target="#image-gallery" data-directory="'.$directory.'">
                                         <img src="'.$directory.'/Thumbnail/'.$scanned_directory[$i].'" alt="'.explode(".", $scanned_directory[$i])[0].'">
                                     </a> 
