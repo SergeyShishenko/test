@@ -629,6 +629,7 @@ $(function() {
    else {
          $("iframe#iframe_1").load(function(){db_search = $(this).contents().find("table p");});
         }
+        
   $(".who").bind("change keyup input click", function() {
     $(".search_result").empty();    
     if (this.value.length >= 2) {       

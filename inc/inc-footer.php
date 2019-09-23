@@ -167,10 +167,16 @@
 <?php 
 if($item_profile_directory_Class=="active")
 {
+//   echo "
+// <script>alert( document.location.href";
+// // echo $item_profile_directory_Class;
+// echo ");</script>
+// ";  
 echo '<script src="./dist/js/gallery.js"></script>';
 }
 
 ?>
+
 
     </body>
 </html>
