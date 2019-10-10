@@ -51,6 +51,7 @@
               
             }
             reader.readAsText(file);
+            $('#out_CNC').append('<input type="text" id="zakaz" size = "50" placeholder="Путь">');
           }
         
           function sortFiles() {
@@ -64,6 +65,7 @@
                 // console.log('$b '+$b);	
               return $a.localeCompare($b);
             }).appendTo('#out_CNC');
+           
           }
 
         // Метод при падении файла в зону загрузки
@@ -1461,6 +1463,7 @@ $("#order_table tbody td").click(function(){
 function PrintElem(elem)
     {
         sortFiles();
+        $('#zakaz').hide();
        Popup($(elem).html());
     }
  
@@ -1471,6 +1474,8 @@ function PrintElem(elem)
         /*optional stylesheet*/ //mywindow.document.write('<link rel="stylesheet" href="main.css" type="text/css" />');
         mywindow.document.write('</head><body >');
         mywindow.document.write(data);
+        mywindow.document.write('<input type="text"  size = "50" value="'+$('#zakaz').val()+'" style="outline: none ;border: none; ">');
+        
         mywindow.document.write('</body></html>');
  
         mywindow.document.close(); // necessary for IE >= 10
