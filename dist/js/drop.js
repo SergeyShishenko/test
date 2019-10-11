@@ -51,7 +51,7 @@
               
             }
             reader.readAsText(file);
-            $('#out_CNC').append('<input type="text" id="zakaz" size = "50" placeholder="Путь">');
+            
           }
         
           function sortFiles() {
@@ -246,6 +246,7 @@
             
            
             // $('#upload-button .upload').trigger('click');
+            if (cnc){$('#out_CNC').append('<input type="text" id="zakaz" size = "150" placeholder="Путь">');}
             return false;
         }
             
@@ -1474,7 +1475,7 @@ function PrintElem(elem)
         /*optional stylesheet*/ //mywindow.document.write('<link rel="stylesheet" href="main.css" type="text/css" />');
         mywindow.document.write('</head><body >');
         mywindow.document.write(data);
-        mywindow.document.write('<input type="text"  size = "50" value="'+$('#zakaz').val()+'" style="outline: none ;border: none; ">');
+        mywindow.document.write('<input type="text"  size = "150" value="'+$('#zakaz').val()+'" style="outline: none ;border: none; ">');
         
         mywindow.document.write('</body></html>');
  
@@ -1483,7 +1484,7 @@ function PrintElem(elem)
  
         mywindow.print();
         mywindow.close();
- 
+        $('#zakaz').show();
         return true;
     }
     function Reset(elem)
