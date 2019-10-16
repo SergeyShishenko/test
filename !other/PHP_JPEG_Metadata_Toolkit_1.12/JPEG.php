@@ -60,6 +60,15 @@
 *
 * Returns:      headerdata - Array of JPEG header segments
 *               FALSE - if headers could not be read
+* Функция: get_jpeg_header_data
+*
+* Описание: считывает все сегменты заголовка JPEG из файла изображения JPEG в
+* массив
+*
+* Параметры: filename-имя файла для чтения файла JPEG
+*
+* Возвращает: headerdata-массив сегментов заголовка JPEG
+* FALSE - если заголовки не могут быть прочитаны
 *
 ******************************************************************************/
 
@@ -74,7 +83,7 @@ function get_jpeg_header_data( $filename )
         // not being able to open files. The file_exists would have been used, but it
         // does not work with files fetched over http or ftp.
         $filehnd = @fopen($filename, 'rb');
-
+      
         // Check if the file opened successfully
         if ( ! $filehnd  )
         {
@@ -969,5 +978,5 @@ $GLOBALS[ "JPEG_Segment_Descriptions" ] = array(
 ******************************************************************************/
 
 
-
+echo "<p>JPEG.php end</p>\n"; 
 ?>

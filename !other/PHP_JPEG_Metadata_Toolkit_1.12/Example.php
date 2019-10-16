@@ -55,7 +55,7 @@
 
                 <META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
                 <STYLE TYPE="text/css" MEDIA="screen, print, projection">
-                <!--
+               
 
                         BODY { background-color:#505050; color:#F0F0F0 }
                         a  { color:orange  }
@@ -64,27 +64,30 @@
                         .EXIF_Table {  border-collapse: collapse ; border: 1px solid #909000}
                         .EXIF_Table tbody td{border-width: 1px; border-style:solid; border-color: #909000;}
 
-                -->
+             
                 </STYLE>
 
 
                 <?php
                         // Turn off Error Reporting
-                        error_reporting ( 0 );
+                        error_reporting ( -1);
 
                         // Change: Allow this example file to be easily relocatable - as of version 1.11
                         $Toolkit_Dir = "./";     // Ensure dir name includes trailing slash
+                        /* $Toolkit_Dir = "";     // Ensure dir name includes trailing slash */
 
                         // Hide any unknown EXIF tags
                         $GLOBALS['HIDE_UNKNOWN_TAGS'] = TRUE;
 
                         include $Toolkit_Dir . 'Toolkit_Version.php';          // Change: added as of version 1.11
-                        include $Toolkit_Dir . 'JPEG.php';                     // Change: Allow this example file to be easily relocatable - as of version 1.11
-                        include $Toolkit_Dir . 'JFIF.php';
-                        include $Toolkit_Dir . 'PictureInfo.php';
-                        include $Toolkit_Dir . 'XMP.php';
-                        include $Toolkit_Dir . 'Photoshop_IRB.php';
-                        include $Toolkit_Dir . 'EXIF.php';
+                        include $Toolkit_Dir . 'JPEG.php';  
+                        // include $Toolkit_Dir . 'JFIF.php';
+                        // include $Toolkit_Dir . 'PictureInfo.php';
+                        // include $Toolkit_Dir . 'XMP.php';
+                        // include $Toolkit_Dir . 'Photoshop_IRB.php';
+                        echo "<p>EXIF </p>\n";  
+                        include $Toolkit_Dir . 'EXIF.php';                   // Change: Allow this example file to be easily relocatable - as of version 1.11
+
 
                         // Retrieve the JPEG image filename from the http url request
                         if ( ( !array_key_exists( 'jpeg_fname', $_GET ) ) ||
@@ -96,7 +99,7 @@
                                 echo "<p>No image filename defined - use GET method with field: jpeg_fname</p>\n";
                                 echo "<p><a href=\"http://www.ozhiker.com/electronics/pjmt/\" >PHP JPEG Metadata Toolkit version " . $GLOBALS['Toolkit_Version'] . ", Copyright (C) 2004 Evan Hunter</a></p>\n";         // Change: displayed toolkit version numbers to reference Toolkit_Version.php - as of version 1.11
                                 echo "</body>\n";
-                                exit( );
+                                /* exit( ); */
                         }
                         else
                         {

@@ -61,6 +61,66 @@
 *               If you require a different license for commercial or other
 *               purposes, please contact the author: evan@ozhiker.com
 *
+
+
+
+* Имя Файла: Edit_File_Info.РНР
+*
+* Описание: позволяет пользователю редактировать метаданные изображения через интернет
+* точно так же, как Photoshop редактирует данные "File Info" 
+* Этот файл предоставляет только html для формы, содержащей информацию о файле
+* поля ввода. Остальные HTML-файл должен быть организован вызов скрипта.
+* $outputfilename всегда должно быть определено - это имя файла, который
+* изменились ли метаданные после отправки формы
+*
+* Этот файл имеет несколько режимов работы:
+*
+* 1) Если $new_ps_file_info_array определен, то это данные будут использоваться
+* для заполнения полей.
+* 2) Если $new_ps_file_info_array не определен, но $filename определен,
+* затем поля информации о файле будут заполнены из метаданных в указанном файле
+* 3) Если $new_ps_file_info_array не определен, но $filename и $default_ps_file_info_array
+* определяются, после чего поля информации о файле будут заполнены из метаданных
+* в указанном файле, но там, где поля пустые, они будут заполнены из $default_ps_file_info_array
+* 4) в противном случае поля будут пустыми
+*
+* Смотрите Edit_File_Info_Example.PHP для примера использования
+*
+* Автор: Эван Хантер
+*
+* Дата: 17/11/2004
+*
+* Проект: PHP JPEG Metadata Toolkit
+*
+* Пересмотр: 1.11
+*
+* Изменения: 1.10 - > 1.11: изменены отображаемые номера версий инструментария для ссылки на Toolkit_Version.РНР
+*
+* URL-адрес: http://electronics.ozhiker.com
+*
+* Авторское Право: Авторский Ивэн Хантер 2004
+*
+* Лицензия: этот файл является частью PHP JPEG Metadata Toolkit.
+*
+* PHP JPEG Metadata Toolkit является бесплатным программным обеспечением; вы можете
+* распространять его и / или изменять в соответствии с условиями
+* GNU General Public License, опубликованная свободным программным обеспечением
+* Foundation; либо версия 2 Лицензии, либо (по вашему
+* опция) любая более поздняя версия.
+*
+* PHP JPEG Metadata Toolkit распространяется в надежде
+* что это будет полезно, но без каких-либо гарантий; без
+* даже подразумеваемая гарантия товарного состояния или пригодности
+* ДЛЯ ОПРЕДЕЛЕННОЙ ЦЕЛИ.  Смотрите стандартную общественную лицензию GNU 
+* для получения более подробной информации.
+*
+* Вы должны были получить копию GNU General Public
+* Лицензия вместе с PHP JPEG Metadata Toolkit; если нет,
+* напишите в Фонд свободного программного обеспечения, Inc., 59 храм
+* Place, Suite 330, Boston, MA 02111-1307 USA
+*
+* Если вам требуется другая лицензия для коммерческих или других целей
+* цели, пожалуйста, свяжитесь с автором: evan@ozhiker.com
 ***************************************************************************/
 
 
@@ -69,23 +129,29 @@
 
         // Check for operation modes 2 or 3
         // i.e. $filename is defined, and $new_ps_file_info_array is not
+       
         if ( ( ! isset( $new_ps_file_info_array ) ) &&
              ( isset( $filename ) ) &&
              ( is_string( $filename ) ) )
         {
                 // Hide any unknown EXIF tags
                 $GLOBALS['HIDE_UNKNOWN_TAGS'] = TRUE;
-
+ echo "<p> Edit_File_Info.php file $filename</p>\n";
+ 
                 // Accessing the existing file info for the specified file requires these includes
                 include 'JPEG.php';
-                include 'XMP.php';
-                include 'Photoshop_IRB.php';
+                // include 'XMP.php';
+                // include 'Photoshop_IRB.php';
                 include 'EXIF.php';
-                include 'Photoshop_File_Info.php';
+                // include 'Photoshop_File_Info.php';
 
                 // Retrieve the header information from the JPEG file
                 $jpeg_header_data = get_jpeg_header_data( $filename );
-
+               echo "<p>jpeg_header_data </p>\n"; 
+                 echo "<pre>";
+                
+	         echo var_dump($jpeg_header_data);	 
+                 echo "</pre>";
                 // Retrieve EXIF information from the JPEG file
                 $Exif_array = get_EXIF_JPEG( $filename );
 
