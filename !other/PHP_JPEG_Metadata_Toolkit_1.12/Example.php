@@ -81,11 +81,11 @@
 
                         include $Toolkit_Dir . 'Toolkit_Version.php';          // Change: added as of version 1.11
                         include $Toolkit_Dir . 'JPEG.php';  
-                        // include $Toolkit_Dir . 'JFIF.php';
-                        // include $Toolkit_Dir . 'PictureInfo.php';
-                        // include $Toolkit_Dir . 'XMP.php';
-                        // include $Toolkit_Dir . 'Photoshop_IRB.php';
-                        echo "<p>EXIF </p>\n";  
+                        include $Toolkit_Dir . 'JFIF.php';
+                        include $Toolkit_Dir . 'PictureInfo.php';
+                        include $Toolkit_Dir . 'XMP.php';
+                        include $Toolkit_Dir . 'Photoshop_IRB.php';
+                        // echo "<p>EXIF </p>\n";  
                         include $Toolkit_Dir . 'EXIF.php';                   // Change: Allow this example file to be easily relocatable - as of version 1.11
 
 

@@ -978,5 +978,5 @@ $GLOBALS[ "JPEG_Segment_Descriptions" ] = array(
 ******************************************************************************/
 
 
-echo "<p>JPEG.php end</p>\n"; 
+// echo "<p>JPEG.php end</p>\n"; 
 ?>

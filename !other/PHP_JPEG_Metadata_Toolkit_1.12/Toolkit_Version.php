@@ -46,6 +46,6 @@
 ******************************************************************************/
 
 $GLOBALS['Toolkit_Version'] = "1.12";
-echo "<p>Toolkit_Version </p>\n"; 
+// echo "<p>Toolkit_Version </p>\n"; 
 
 ?>
