@@ -129,9 +129,24 @@
                         $Exif_array = get_EXIF_JPEG( $filename );
                         $XMP_array = read_XMP_array_from_text( get_XMP_text( $jpeg_header_data ) );
                         $IRB_array = get_Photoshop_IRB( $jpeg_header_data );
+                        echo "<pre>"; 
+                        echo "<p>Exif_array</p>";                
+                        echo var_dump($Exif_array);	 
+                        echo "</pre>";
+                        // echo "<pre>";  
+                        // echo "<p>XMP_array</p>";              
+                        // echo var_dump($XMP_array);	 
+                        // echo "</pre>";
+                        // echo "<pre>"; 
+                        // echo "<p>$IRB_array</p>";               
+                        // echo var_dump($IRB_array);	 
+                        // echo "</pre>";
 
                         // Update the JPEG header information with the new Photoshop File Info
                         $jpeg_header_data = put_photoshop_file_info( $jpeg_header_data, $new_ps_file_info_array, $Exif_array, $XMP_array, $IRB_array );
+                        echo "<pre>";                
+                                echo var_dump($jpeg_header_data);	 
+                                echo "</pre>";
 
                         // Check if the Update worked
                         if ( $jpeg_header_data == FALSE )

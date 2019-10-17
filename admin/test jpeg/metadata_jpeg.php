@@ -36,26 +36,26 @@ echo "Keywords: ".ucs2html($exif['IFD0']['Keywords'])."<br />\n";
 
 // echo "<hr>";
 
-// $size = getimagesize($file, $info);
+$size = getimagesize($file, $info);
 // echo ucs2html($info['APP1'])." <br />\n<hr>";
 // echo ucs2html_2($info['APP1'])." <br />\n";
-// foreach ($info as $name => $val) {
+foreach ($info as $name => $val) {
     
-//     // echo "<br />$name: $val <br />\n";
-//     // echo "<br />$name:". mb_convert_encoding($val,"UTF-8" ,"auto")." <br />\n";
-//     // echo ucs2html($val)." <br />\n";
-//     // echo ucs2html_2($val)." <br />\n";
-//     // echo cp1251_utf8( $val )." <br />\n";
-//     // echo encoding($val)." <br />\n";
-//     // echo "<br />$name:". utf8_decode($val)." <br />\n";
+    echo "<br />$name: $val <br />\n";
+    // echo "<br />$name:". mb_convert_encoding($val,"UTF-8" ,"auto")." <br />\n";
+    // echo ucs2html($val)." <br />\n";
+    // echo ucs2html_2($val)." <br />\n";
+    // echo cp1251_utf8( $val )." <br />\n";
+    echo encoding($val)." <br />\n";
+    // echo "<br />$name:". utf8_decode($val)." <br />\n";
  
     
-//     // $iptc = iptcparse($info[$name]);
-//     // var_dump($val);
+    $iptc = iptcparse($info[$name]);
+    var_dump($val);
     
     
  
-// }
+}
 
 
 // if(isset($info['APP1']))
