@@ -13,6 +13,11 @@ echo "<p>APP13</p>";
 echo var_dump($iptc_old);	 
 echo "</pre>";
 
+echo "<br>APP13:\n";
+echo "Title: ".$iptc_old['2#120'][0]."<br />\n";
+echo "Comments: ".$iptc_old['2#005'][0]."<br />\n";
+echo "Keywords: ".$iptc_old['2#116'][0]."<br />\n";
+
 $size = GetImageSize ("$file",$info);
 $iptc_old = iptcparse ($info["APP1"]);
 
@@ -26,10 +31,14 @@ echo "<pre>";
 echo "<p>exif</p>";              
 echo var_dump($exif);	 
 echo "</pre>";
-// echo "pr-940.jpg:<br />\n";
+echo "IFD0:\n";
 echo "Title: ".$exif['IFD0']['ImageDescription']."<br />\n";
 echo "Comments: ".ucs2html($exif['IFD0']['Comments'])."<br />\n";
 echo "Keywords: ".ucs2html($exif['IFD0']['Keywords'])."<br />\n";
+echo "<br>APP13:\n";
+echo "Title: ".$exif['APP13']['2#120'][0]."<br />\n";
+echo "Comments: ".ucs2html($exif['APP13']['2#005'][0])."<br />\n";
+echo "Keywords: ".ucs2html($exif['APP13']['2#116'][0])."<br />\n";
 
 // echo "<hr>";
 // $Title_prop_jpg = explode("~", $exif['IFD0']['ImageDescription']);

@@ -32,11 +32,15 @@ $iptc = array(
     '2#005' => 'Object Name',
     '2#007' => 'Edit Status',
     '2#025' => '3333',
+    '2#085' => 'Byline Title',
     '2#116' => 'Шишенко Сергей'
 );
 
 // Преобразование IPTC тэгов в двоичный код
-$data = '';
+// $data = '';
+// $utf8seq = chr(0x1b) . chr(0x25) . chr(0x47);
+// $length = strlen($utf8seq);
+// $data = chr(0x1C) . chr(1) . chr('090') . chr($length >> 8) . chr($length & 0xFF) . $utf8seq;
 
 foreach($iptc as $tag => $string)
 {
