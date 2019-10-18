@@ -1,11 +1,31 @@
 <?php
-$file="pr-964.jpg";
+$file="pr-925.jpg";
 echo $file." :<br />\n";
 $exif = exif_read_data($file, 'IFD0');
 
 echo $exif===false ? "Не найдено данных заголовка.<br />\n" : "Изображение содержит заголовки<br />\n";
 
+$size = GetImageSize ("$file",$info);
+$iptc_old = iptcparse ($info["APP13"]);
+
+echo "<pre>";  
+echo "<p>APP13</p>";              
+echo var_dump($iptc_old);	 
+echo "</pre>";
+
+$size = GetImageSize ("$file",$info);
+$iptc_old = iptcparse ($info["APP1"]);
+
+echo "<pre>";  
+echo "<p>APP1</p>";              
+echo var_dump($iptc_old);	 
+echo "</pre>";
+
 $exif = exif_read_data($file, 0, true);
+echo "<pre>";  
+echo "<p>exif</p>";              
+echo var_dump($exif);	 
+echo "</pre>";
 // echo "pr-940.jpg:<br />\n";
 echo "Title: ".$exif['IFD0']['ImageDescription']."<br />\n";
 echo "Comments: ".ucs2html($exif['IFD0']['Comments'])."<br />\n";
