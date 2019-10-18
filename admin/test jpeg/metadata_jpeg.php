@@ -5,40 +5,45 @@ $exif = exif_read_data($file, 'IFD0');
 
 echo $exif===false ? "Не найдено данных заголовка.<br />\n" : "Изображение содержит заголовки<br />\n";
 
+
+
+// $size = GetImageSize ("$file",$info);
+// $iptc_old = iptcparse ($info["APP1"]);
+
+// echo "<pre>";  
+// echo "<p>APP1</p>";              
+// echo var_dump($iptc_old);	 
+// echo "</pre>";
+
+$exif = exif_read_data($file, 0, true);
+// echo "<pre>";  
+// echo "<p>exif</p>";              
+// echo var_dump($exif);	 
+// echo "</pre>";
+echo "<br>IFD0:<br>";
+echo "Title: ".$exif['IFD0']['ImageDescription']."<br />\n";
+echo "Comments: ".ucs2html($exif['IFD0']['Comments'])."<br />\n";
+echo "Keywords: ".ucs2html($exif['IFD0']['Keywords'])."<br />\n";
+
+
 $size = GetImageSize ("$file",$info);
 $iptc_old = iptcparse ($info["APP13"]);
 
-echo "<pre>";  
-echo "<p>APP13</p>";              
-echo var_dump($iptc_old);	 
-echo "</pre>";
+// echo "<pre>";  
+// echo "<p>APP13</p>";              
+// echo var_dump($iptc_old);	 
+// echo "</pre>";
 
-echo "<br>APP13:\n";
+echo "<br>APP13:<br>";
 echo "Title: ".$iptc_old['2#120'][0]."<br />\n";
 echo "Comments: ".$iptc_old['2#005'][0]."<br />\n";
 echo "Keywords: ".$iptc_old['2#116'][0]."<br />\n";
 
-$size = GetImageSize ("$file",$info);
-$iptc_old = iptcparse ($info["APP1"]);
 
-echo "<pre>";  
-echo "<p>APP1</p>";              
-echo var_dump($iptc_old);	 
-echo "</pre>";
-
-$exif = exif_read_data($file, 0, true);
-echo "<pre>";  
-echo "<p>exif</p>";              
-echo var_dump($exif);	 
-echo "</pre>";
-echo "IFD0:\n";
-echo "Title: ".$exif['IFD0']['ImageDescription']."<br />\n";
-echo "Comments: ".ucs2html($exif['IFD0']['Comments'])."<br />\n";
-echo "Keywords: ".ucs2html($exif['IFD0']['Keywords'])."<br />\n";
-echo "<br>APP13:\n";
-echo "Title: ".$exif['APP13']['2#120'][0]."<br />\n";
-echo "Comments: ".ucs2html($exif['APP13']['2#005'][0])."<br />\n";
-echo "Keywords: ".ucs2html($exif['APP13']['2#116'][0])."<br />\n";
+// echo "<br>APP13:\n";
+// echo "Title: ".$exif['APP13']['2#120'][0]."<br />\n";
+// echo "Comments: ".ucs2html($exif['APP13']['2#005'][0])."<br />\n";
+// echo "Keywords: ".ucs2html($exif['APP13']['2#116'][0])."<br />\n";
 
 // echo "<hr>";
 // $Title_prop_jpg = explode("~", $exif['IFD0']['ImageDescription']);
@@ -65,26 +70,26 @@ echo "Keywords: ".ucs2html($exif['APP13']['2#116'][0])."<br />\n";
 
 // echo "<hr>";
 
-$size = getimagesize($file, $info);
+// $size = getimagesize($file, $info);
 // echo ucs2html($info['APP1'])." <br />\n<hr>";
 // echo ucs2html_2($info['APP1'])." <br />\n";
-foreach ($info as $name => $val) {
+// foreach ($info as $name => $val) {
     
-    echo "<br />$name: $val <br />\n";
-    // echo "<br />$name:". mb_convert_encoding($val,"UTF-8" ,"auto")." <br />\n";
-    // echo ucs2html($val)." <br />\n";
-    // echo ucs2html_2($val)." <br />\n";
-    // echo cp1251_utf8( $val )." <br />\n";
-    echo encoding($val)." <br />\n";
+    // echo "<br />$name: $val <br />\n";
+            // echo "<br />$name:". mb_convert_encoding($val,"UTF-8" ,"auto")." <br />\n";
+            // echo ucs2html($val)." <br />\n";
+            // echo ucs2html_2($val)." <br />\n";
+            // echo cp1251_utf8( $val )." <br />\n";
+    // echo encoding($val)." <br />\n";
     // echo "<br />$name:". utf8_decode($val)." <br />\n";
  
     
-    $iptc = iptcparse($info[$name]);
-    var_dump($val);
+    // $iptc = iptcparse($info[$name]);
+    // var_dump($val);
     
     
  
-}
+// }
 
 
 // if(isset($info['APP1']))

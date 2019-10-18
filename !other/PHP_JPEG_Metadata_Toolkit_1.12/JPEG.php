@@ -101,9 +101,9 @@ function get_jpeg_header_data( $filename )
         // Read the first two characters
         // Читать первые два символа
         $data = network_safe_fread( $filehnd, 2 );
-        echo "<pre>";                
-                        echo var_dump( $data);	 
-        echo "</pre>";
+        // echo "<pre>";                
+        //                 echo var_dump( $data);	 
+        // echo "</pre>";
         // Check that the first two characters are 0xFF 0xDA  (SOI - Start of image)
         if ( $data != "\xFF\xD8" )
         {
@@ -116,9 +116,9 @@ function get_jpeg_header_data( $filename )
 
         // Read the third character Прочитайте третий символ
         $data = network_safe_fread( $filehnd, 2 );
-        echo "<pre>";                
-                        echo var_dump( $data);	 
-        echo "</pre>";
+        // echo "<pre>";                
+        //                 echo var_dump( $data);	 
+        // echo "</pre>";
         // Check that the third character is 0xFF (Start of first segment header)
         if ( $data{0} != "\xFF" )
         {

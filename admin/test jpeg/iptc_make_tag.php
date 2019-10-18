@@ -1,5 +1,5 @@
 <?php
-
+// localhost\www\admin\test jpeg\iptc_make_tag.php
 // iptc_make_tag() функция от Thies C. Arntzen
 function iptc_make_tag($rec, $data, $value)
 {
