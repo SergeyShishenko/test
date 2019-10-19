@@ -1,13 +1,51 @@
 <?php
-$file="pr-925.jpg";
-echo $file." :<br />\n";
-$exif = exif_read_data($file, 'IFD0');
+// F:\OPEN_SERVER\OSPanel\domains\localhost\www\admin\test_jpeg\metadata_jpeg.php
+$filename="pr-925.jpg";
+echo '<html>
+<head>
 
-echo $exif===false ? "Не найдено данных заголовка.<br />\n" : "Изображение содержит заголовки<br />\n";
+                <META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+                <STYLE TYPE="text/css" MEDIA="screen, print, projection">
+                
+
+                .parent {
+                     position: relative;
+                  }
+                  .child {
+                   /* position: absolute;*/
+                    margin:auto auto;
+                    width:50%;
+                
+                  } 
+                       
+                  img {
+                    /* position: absolute;*/
+                    flex-shrink: 0;
+                    width: 100%;
+                    /* height: 100%;*/
+                  }
+              
+                </STYLE>
+</head>
+
+<body >';
+
+echo '<div class="parent">';
+
+echo '<div class="child">';
+
+
+echo "<span><img src=\"$filename\"  alt=\"Изображение\"></span>";
+
+// echo "<p>";
+echo $filename." :<br />\n";
+$exif = exif_read_data($filename, 'IFD0');
+
+echo $exif===false ? "<p>Не найдено данных заголовка.<br />\n</p>" : "<p>Изображение содержит заголовки<br />\n</p>";
 
 
 
-// $size = GetImageSize ("$file",$info);
+// $size = GetImageSize ("$filename",$info);
 // $iptc_old = iptcparse ($info["APP1"]);
 
 // echo "<pre>";  
@@ -15,30 +53,32 @@ echo $exif===false ? "Не найдено данных заголовка.<br />
 // echo var_dump($iptc_old);	 
 // echo "</pre>";
 
-$exif = exif_read_data($file, 0, true);
+$exif = exif_read_data($filename, 0, true);
 // echo "<pre>";  
 // echo "<p>exif</p>";              
 // echo var_dump($exif);	 
 // echo "</pre>";
+echo "<p>";
 echo "<br>IFD0:<br>";
 echo "Title: ".$exif['IFD0']['ImageDescription']."<br />\n";
 echo "Comments: ".ucs2html($exif['IFD0']['Comments'])."<br />\n";
 echo "Keywords: ".ucs2html($exif['IFD0']['Keywords'])."<br />\n";
+echo "</p>";
 
 
-$size = GetImageSize ("$file",$info);
+$size = GetImageSize ("$filename",$info);
 $iptc_old = iptcparse ($info["APP13"]);
 
 // echo "<pre>";  
 // echo "<p>APP13</p>";              
 // echo var_dump($iptc_old);	 
 // echo "</pre>";
-
+echo "<p>";
 echo "<br>APP13:<br>";
 echo "Title: ".$iptc_old['2#120'][0]."<br />\n";
 echo "Comments: ".$iptc_old['2#005'][0]."<br />\n";
 echo "Keywords: ".$iptc_old['2#116'][0]."<br />\n";
-
+echo "</p>";
 
 // echo "<br>APP13:\n";
 // echo "Title: ".$exif['APP13']['2#120'][0]."<br />\n";
@@ -70,7 +110,7 @@ echo "Keywords: ".$iptc_old['2#116'][0]."<br />\n";
 
 // echo "<hr>";
 
-// $size = getimagesize($file, $info);
+// $size = getimagesize($filename, $info);
 // echo ucs2html($info['APP1'])." <br />\n<hr>";
 // echo ucs2html_2($info['APP1'])." <br />\n";
 // foreach ($info as $name => $val) {
@@ -205,4 +245,9 @@ function encoding($string){
     }
 }
 // echo encoding($string);
+// echo "</p>";
+         echo '</div>';
+      echo '</div> '; 
+    echo '</body>';
+echo '</html>';
 ?>
