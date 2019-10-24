@@ -3,6 +3,7 @@ include 'inc/goup/inc-goup-menu-furnitura-styazhka.php';//$styazhka=[]
 include 'inc/goup/inc-goup-menu-furnitura-petlyB.php';//$petlyB=[]
 include 'inc/goup/inc-goup-menu-furnitura-petlyTL.php';//$petlyTL=[]
 include 'inc/goup/inc-goup-menu-furnitura-universalnaya.php';//$petlyTL=[]
+include 'inc/goup/inc-goup-menu-furnitura-dlya-mebeli-shtangi.php';//$shtangi=[]
 
  echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
@@ -185,7 +186,7 @@ include 'inc/goup/inc-goup-menu-furnitura-universalnaya.php';//$petlyTL=[]
                                             </li>                                                                                                                                
                                         </ul>
                                      </li>
-                                     <li class="menu2  disabled"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ</a>
+                                     <li class="menu2  "><a class="list-group-item sub" href="furnitura-dlya-mebeli-shtangi.php#shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ</a>
                                         <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-10-300-shtanga-kruglaya-dlya-veshala">5000502-10-300 штанга круглая для вешала</a>
                                             </li>
