@@ -89,7 +89,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                             <td>1</td>
                                                             <td><a href="https://publications.blum.com/2018/catalogue/ru/175/#zoom=z" target="_blank">173L6100</a></td>
                                                             <td>Металл</td>
-                                                            <td>планка ответная CLIP, подъем 0 мм, регулировка по высоте продольный паз</td>
+                                                            <td colspan="3">планка ответная CLIP, подъем 0 мм, регулировка по высоте продольный паз</td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulzaglushka70T3504.png" class="" alt="заглушка под чашку" title=""></td>
@@ -141,7 +141,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                          <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
                                             <li ><a href="#harakteristiki" data-toggle="tab">Характеристики</a></li>
                                             <li  class="active"><a href="#instrukciya" data-toggle="tab">Инструкция</a></li>
-                                            <li  class=""><a href="#weight" data-toggle="tab">Подбор по весу</a></li>
+                                            <!-- <li  class=""><a href="#weight" data-toggle="tab">Подбор по весу</a></li> -->
                                             <!-- <li class="dropdown">
                                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                                                 <ul class="dropdown-menu">
@@ -240,7 +240,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                     </div>
                                                 </div> 
 
-                                                <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
+                                                <!-- <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
                                                     <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
                                                                 border: 1px solid rgb(221, 221, 221);
                                                                 box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
@@ -250,7 +250,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
 
                                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                                             <div class="row">  
-                                                            <p>Стандартное расстояние от чашки TB</p>                                              
+                                                                <p>Стандартное расстояние от чашки TB</p>                                              
                                                                 <table class="table table-striped table-responsive">                                                    
                                                                     <tbody> 
                                                                         <tr>
@@ -269,11 +269,11 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                         </div>
 
                                                     </div>
-                                                </div>
+                                                </div> -->
                                             <!-- /часть1 -->
 
                                             <!-- часть2 -->
-                                                <h2 ></h2>                         
+                                                <!-- <h2 ></h2>                         
 
                                                 <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
                                                     <div id="carousel2" class="carousel slide" data-ride="carousel" style="display: inline-block;">
@@ -373,9 +373,9 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                     
                                                         
                                                             
-                                                        </div>
+                                                        </div> -->
                                                         <!-- Элементы управления -->
-                                                        <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
+                                                        <!-- <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
                                                             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                                             <span class="sr-only">Предыдущий</span>
                                                         </a>
@@ -384,13 +384,14 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                             <span class="sr-only">Следующий</span>
                                                         </a>
                                                     </div>
-                                                </div> 
+                                                </div>  -->
 
                                             <!-- /часть2 --> 
 
 
                                             </div>
-                                            <div class="tab-pane fade" id="weight">
+
+                                            <!-- <div class="tab-pane fade" id="weight">
                                                 <p>
                                                 <a>
                                                     <img src="./dist/images/petli-dlya-fasadov-podbor-po-vesu_2.png" class="center-block   img-rounded img-thumbnail b-lazy bar img-book b-loaded" 
@@ -400,7 +401,8 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                 </a>
                                                 </p>
                                                 <a href="https://publications.blum.com/2018/catalogue/ru/694/#zoom=z" target="_blank" type="button" class="btn btn-primary" style="color:#fff;">ИСТОЧНИК - каталог BLUM</a>
-                                            </div>
+                                            </div> -->
+
                                             <!-- <div class="tab-pane fade" id="dropdown3">
                                                 <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia
                                                     banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork.
