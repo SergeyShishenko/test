@@ -17,7 +17,7 @@ $path_img_composition_article="./dist/filesdb/images/pagevpi/";
                     'composition_article'=>array( // таблица состава артикула
                         array(                            
                             'img'=>$path_img_composition_article."Articulvkladnaya-5000502-01-100_1.png",
-                            'alt'=>"планка ответная",
+                            'alt'=>"Петля",
                             'count'=> 1,// количество
                             'supplier_articul'=>"71B9750",//артикул поставщика
                             'id_table'=>"23",//data-objfurnid

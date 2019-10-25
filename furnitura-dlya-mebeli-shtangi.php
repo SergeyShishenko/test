@@ -17,6 +17,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                         <div class="page-header"     >
                           <h1 itemprop="name"><? echo $shtangi[0]['def']; ?></h1>
                         </div>
+                        <? $shtangi_curr_page = 1;?>
                         <div class="bs-callout bs-callout-warning cont" id="<?echo str_replace("#","",$shtangi[0]['id']);?>"> 
                             <!-- VIDEO -->
                             <!-- <div class="main-box clearfix"   >                                
@@ -41,8 +42,8 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                 
                                         <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
                                             <div class="row">                                                
-                                                <h3 class="blum"><?echo $shtangi[1]['articul_500STP'];?></h3>
-                                                <h3 class="blum"><?echo $shtangi[1]['def'];?></h3>
+                                                <h3 class="blum"><?echo $shtangi[$shtangi_curr_page]['articul_500STP'];?></h3>
+                                                <h3 class="blum"><?echo $shtangi[$shtangi_curr_page]['def'];?></h3>
                                                 <!-- <p> <a href="furnitura-dlya-mebeli-petlya-clip-top-TL-vkladnaya.php#petlya-vkladnaya-TL" >
                                                     <b>БЕЗ ПРУЖИНЫ</b> &nbsp;<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i></a>
                                                 </p>   -->
@@ -77,12 +78,13 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                         </tr>
                                                         </thead>
                                                         <tbody id="calcresult">
+                                                        <? $i=0; ?>
                                                         <tr>
-                                                            <td><img src="./dist/filesdb/images/pagevpi/Articulvkladnaya-5000502-01-100_1.png" class="" alt="Петля" title=""></td>
-                                                            <td>1</td>
-                                                            <td class="animated" data-objfurnid="23"><a href="https://publications.blum.com/2018/catalogue/ru/110/#zoom=z" target="_blank">71B9750</a></td>
-                                                            <td>Металл</td> 
-                                                            <td colspan="3">пeтля вкладная CLIP top BLUMOTION</td>
+                                                            <td><img src="<?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['img'];?>" class="" alt="<?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['alt'];?>" title=""></td>
+                                                            <td><?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['count'];?></td>
+                                                            <td class="animated" data-objfurnid="<?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['id_table'];?>"><a href="<?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['href_articul'];?>" target="_blank"><?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['supplier_articul'];?></a></td>
+                                                            <td><?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['color_material'];?></td> 
+                                                            <td colspan="3"><?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['def'];?></td>
                                                         </tr>
                                                         <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulotvetnaya-planka-173L6100.png" class="" alt="планка ответная" title=""></td>
