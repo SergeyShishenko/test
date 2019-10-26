@@ -63,30 +63,38 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                                 
                                                             </th> -->
                                                             <th class="quantity"> 
-                                                                <div class="input-group spinner"> 	
+                                                            <!-- счетчик VPI -->
+                                                                <!-- <div class="input-group spinner"> 	
                                                                     <div class="input-group-btn-vertical">                                                                        
                                                                         <button class="btn btn-default" type="button">&ndash;</button>
                                                                         <input  id="add_vpi_count-1" type="text" class="form-control form-c" value="1" min="1" >
                                                                         <button class="btn btn-default" type="button">+</button>
                                                                     </div>
-                                                                </div> 
+                                                                </div>  -->
                                                             </th> 
                                                             <th class="">
-                                                            
-                                                                <button type="button" id="addvpi" class="btn btn-primary" style="margin-left: 10px;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button>
+                                                            <!-- кнопка VPI -->
+                                                                <!-- <button type="button" id="addvpi" class="btn btn-primary" style="margin-left: 10px;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button> -->
+                                                               
                                                             </th>
                                                         </tr>
                                                         </thead>
                                                         <tbody id="calcresult">
-                                                        <? $i=0; ?>
+                                                        
+                                                        <?php
+                                                        for ($i=0; $i < count($shtangi[$shtangi_curr_page]['composition_article']); $i++) {   
+                                                    echo'
                                                         <tr>
-                                                            <td><img src="<?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['img'];?>" class="" alt="<?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['alt'];?>" title=""></td>
-                                                            <td><?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['count'];?></td>
-                                                            <td class="animated" data-objfurnid="<?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['id_table'];?>"><a href="<?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['href_articul'];?>" target="_blank"><?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['supplier_articul'];?></a></td>
-                                                            <td><?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['color_material'];?></td> 
-                                                            <td colspan="3"><?echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['def'];?></td>
+                                                            <td><img src="';echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['img'];echo'" class="" alt="';echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['alt'];echo'" title=""></td>
+                                                            <td>';echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['count'];echo'</td>
+                                                            <td class="animated" data-objfurnid="';echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['id_table'];echo'"><a href="';echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['href_articul'];echo'" target="_blank">';echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['supplier_articul'];echo'</a></td>
+                                                            <td>';echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['color_material'];echo'</td> 
+                                                            <td colspan="3">';echo $shtangi[$shtangi_curr_page]['composition_article'][$i]['def'];echo'</td>
                                                         </tr>
-                                                        <tr>
+                                                    ';
+                                                        }
+                                                        ?>
+                                                        <!-- <tr>
                                                             <td><img src="./dist/filesdb/images/pagevpi/Articulotvetnaya-planka-173L6100.png" class="" alt="планка ответная" title=""></td>
                                                             <td>1</td>
                                                             <td><a href="https://publications.blum.com/2018/catalogue/ru/175/#zoom=z" target="_blank">173L6100</a></td>
@@ -120,7 +128,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                             <td class="" ><a href="https://publications.blum.com/2018/catalogue/ru/214/#zoom=z" target="_blank">609.1700</a></td>
                                                             <td>Металл</td> 
                                                             <td colspan="3">саморез для крепления петли четырехшарнирной</td>
-                                                        </tr>
+                                                        </tr> -->
                                                       
                                                         
                                                         </tbody>
@@ -187,7 +195,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                                         class="center-block   img-rounded    bar "
                                                                         data-toggle="modal"                                                                                                                    
                                                                         alt="Петля в сборе"
-                                                                        data-pdf=""                                                    
+                                                                                                                         
                                                                     >
                                                                 </a>
                                                             </div>

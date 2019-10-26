@@ -1,7 +1,9 @@
 <?php 
 // inc-goup-menu-furnitura-dlya-mebeli-shtangi.php
-$path_img="./dist/filesdb/images/thumbs/";
-$path_img_composition_article="./dist/filesdb/images/pagevpi/";
+$path_img="./dist/filesdb/images/thumbs/";//200x200 для поиска
+$path_img_composition_article="./dist/filesdb/images/pagevpi/";//100х67 для VPI
+// $path_img_carousel="./dist/filesdb/images/carousel/";//800x800 и 960x640
+$path_img_carousel="./dist/filesdb/images/";//800x800 и 960x640
 /////////////////////////////////////
     $shtangi=[];
     $shtangi[0]=['path'=>"furnitura-dlya-mebeli-shtangi.php",
@@ -14,69 +16,44 @@ $path_img_composition_article="./dist/filesdb/images/pagevpi/";
                     'id'=> "#svetilnik-shtanga",
                     'img'=> $path_img."tbsvkladnaya-5000502-01-100_2.png", //200x200 для поиска
                     'keywords'=>"",
-                    'composition_article'=>array( // таблица состава артикула
-                        array(                            
-                            'img'=>$path_img_composition_article."Articulvkladnaya-5000502-01-100_1.png",
-                            'alt'=>"Петля",
-                            'count'=> 1,// количество
-                            'supplier_articul'=>"71B9750",//артикул поставщика
-                            'id_table'=>"23",//data-objfurnid
-                            'href_articul'=>"https://publications.blum.com/2018/catalogue/ru/175/#zoom=z" ,//страница фурнитуры                            
-                            'color_material'=>"Металл",//цвет/материал
-                            'def'=>"пeтля вкладная CLIP top BLUMOTION"  //описание                         
-                            ),
-                        array(
-                            'path'=>$path_img."",
-                            'id-name'=> "spalnya-2",// имя файла без версии -v?
-                            'version'=>"",
-                            'alt'=>"Стандартные размеры",
-                            'xls'=>"",
-                            'pdf'=>"",
-                            'prnt'=>"noPrint",
-                            'spng'=>"noPNG",                                            
-                           
-                            'overlay'=>false 
-                            ),
-                        array(
-                            'path'=>$path_img."",
-                            'id-name'=> "spalnya-3",// имя файла без версии -v?
-                            'version'=>"",
-                            'alt'=>"Стандартные размеры",
-                            'xls'=>"",
-                            'pdf'=>"",
-                            'prnt'=>"noPrint",
-                            'spng'=>"noPNG",                                            
-                           
-                            'overlay'=>false 
-                            ),                              
-                    
-                        array(
-                            'path'=>$path_img."",
-                            'id-name'=> "spalnya-4",// имя файла без версии -v?
-                            'version'=>"",
-                            'alt'=>"Стандартные размеры",
-                            'xls'=>"",
-                            'pdf'=>"",
-                            'prnt'=>"noPrint",
-                            'spng'=>"noPNG",                                            
-                            
-                            'overlay'=>false 
-                        ),
-                        array(
-                            'path'=>$path_img."",
-                            'id-name'=> "spalnya-5",// имя файла без версии -v?
-                            'version'=>"",
-                            'alt'=>"Стандартные размеры",
-                            'xls'=>"",
-                            'pdf'=>"",
-                            'prnt'=>"noPrint",
-                            'spng'=>"noPNG",                                            
-                            'overlay'=>false 
-                        ) 
-                        ),// состав артикула                
-                  
                     'articul_500STP'=>"5000502-10-302",
-                    'def'=>"Светильник штанга для гардероба, под светодиодную ленту"];
+                    'def'=>"Светильник штанга для гардероба, под светодиодную ленту",
+                    'composition_article'=>array( // таблица состава артикула
+                                                    array(                            
+                                                            'img'=>$path_img_composition_article."Articulvkladnaya-5000502-01-100_1.png",//100х67 для VPI
+                                                            'alt'=>"Петля",
+                                                            'count'=> 1,// количество
+                                                            'supplier_articul'=>"71B9750",//артикул поставщика
+                                                            'id_table'=>"23",//data-objfurnid
+                                                            'href_articul'=>"https://publications.blum.com/2018/catalogue/ru/175/#zoom=z" ,//страница фурнитуры                            
+                                                            'color_material'=>"Металл",//цвет/материал
+                                                            'def'=>"пeтля вкладная CLIP top BLUMOTION"  //описание                         
+                                                            ),
+                                                        array(                            
+                                                            'img'=>$path_img_composition_article."Articulvkladnaya-5000502-01-100_1.png", //100х67 для VPI
+                                                            'alt'=>"Петля",
+                                                            'count'=> 1,// количество
+                                                            'supplier_articul'=>"71B9750",//артикул поставщика
+                                                            'id_table'=>"23",//data-objfurnid
+                                                            'href_articul'=>"https://publications.blum.com/2018/catalogue/ru/175/#zoom=z" ,//страница фурнитуры                            
+                                                            'color_material'=>"Металл",//цвет/материал
+                                                            'def'=>"пeтля вкладная CLIP top BLUMOTION"  //описание                         
+                                                            )
+                                            
+                                                ),// состав артикула    
+
+                    'instrukciya_carousel'=>array( // инструкция
+                                                    array(                            
+                                                            'img'=>$path_img_carousel."vkladnaya-5000502-01-100_2.png",//data-image, src, data-src  800x800 и 960x640
+                                                            'alt'=>"Петля",
+                                                            'title'=>"Петля в сборе"// data-title
+                                                            )
+                                                       
+                                            
+                                                )// инструкция               
+                  
+                    
+                ];
 
     $shtangi[2]=['path'=>"furnitura-dlya-mebeli-petlya-clip-top-nakladnaya.php",
                     'id'=> "#petlya-nakladnaya",
