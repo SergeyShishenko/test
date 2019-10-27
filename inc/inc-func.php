@@ -425,7 +425,7 @@ echo'
                 <div class="page-header"     >
                     <h1 itemprop="name">'; echo $arr[0]['def'];echo'</h1>
                 </div>                   
-                <div class="bs-callout bs-callout-warning cont" id="';echo str_replace("#","",$arr[0]['id']);echo'"> ';                   
+                <div class="bs-callout bs-callout-warning cont" id="';echo str_replace("#","",$arr[$curr_page]['id']);echo'"> ';                   
                     VPI($arr,$curr_page);//ВПИ                   
                     TabContent($arr,$curr_page);
                 echo'
