@@ -186,14 +186,11 @@ include 'inc/goup/inc-goup-menu-furnitura-dlya-mebeli-shtangi.php';//$shtangi=[]
                                             </li>                                                                                                                                
                                         </ul>
                                      </li>
-                                     <li class="menu2  "><a class="list-group-item sub" href="furnitura-dlya-mebeli-shtangi.php#shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ</a>
-                                        <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-10-300-shtanga-kruglaya-dlya-veshala">5000502-10-300 штанга круглая для вешала</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala">5000502-10-301 штанга круглая с проходным держателем</a>
-                                            </li>                                                                                    
-                                        </ul>
-                                     </li>
+                                     '; 
+                                   
+                                    LeftSideMenu($shtangi);
+
+                                    echo'
                                      <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ</a>
                                         <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli-pantograf1.php#SUPERLIFT">Пантограф 75-115 см, регул. нагрузки 14-20 кг</a>

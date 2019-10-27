@@ -1,8 +1,8 @@
 <?php 
 // inc-goup-menu-furnitura-dlya-mebeli-shtangi.php
-$path_img="./dist/filesdb/images/thumbs/";//200x200 для поиска
-$path_img_composition_article="./dist/filesdb/images/pagevpi/";//100х67 для VPI
-$path_img_carousel="./dist/filesdb/images/carousel/";//800x800 и 960x640 или 2х3(6х4)
+$path_img="./dist/filesdb/images/thumbs/shtangi/";//200x200 для поиска
+$path_img_composition_article="./dist/filesdb/images/pagevpi/shtangi/";//100х67 для VPI
+$path_img_carousel="./dist/filesdb/images/carousel/shtangi/";//800x800 и 960x640 или 2х3(6х4)
 
 /////////////////////////////////////
     $shtangi=[];

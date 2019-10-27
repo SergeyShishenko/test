@@ -4757,29 +4757,9 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                             </TD>
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
-                                                        <TR>
-                                                            <TD data-tooltip="ШТАНГИ МЕБЕЛЬНЫЕ" class="hover mapsite" id="footer145">
-                                                                <p data-img="./dist/images/no-foto.png" id="floating146" data-href="furnitura-dlya-mebeli.php#shtangi-mebelnye">ШТАНГИ МЕБЕЛЬНЫЕ<span><br>~shtangi-mebelnye</span></p>
-                                                            </TD> 
-                                                            <TD>
-                                                                <TABLE >                                                                                          
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-10-300-shtanga-kruglaya-dlya-veshala" >
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-10-300-shtanga-kruglaya-dlya-veshala">5000502-10-300 штанга круглая для вешала<span> <br>~5000502-10-300-shtanga-kruglaya-dlya-veshala</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                    <TR>
-                                                                        <TD class="mapsite" colspan="2" id="flo-5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala" >
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-dlya-mebeli.php#5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala">5000502-10-301 штанга круглая с проходным держателем для вешала<span> <br>~5000502-10-301-shtanga-kruglaya-s-prohodnym-derzhatelem-dlya-veshala</span></p>
-                                                                        </TD>                                                                         
-                                                                    </TR>  
-                                                                    <TR><TD></TD></TR> <!--end LEVEL4--> 
-                                                                           
-                                                                </TABLE>
-                                                            </TD>
-                                                        </TR>
-                                                        <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
+                                                        <?php                                                                      
+                                                        IndexMenu($shtangi,145);  
+                                                        ?>                                                                        
                                                         <TR>
                                                             <TD data-tooltip=" ПАНТОГРАФЫ" class="hover mapsite " id="footer146">
                                                                 <p data-img="./dist/images/no-foto.png" id="floating147" data-href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ<span><br>~pantografy</span></p>
