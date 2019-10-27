@@ -40,13 +40,34 @@ $path_img_carousel="./dist/filesdb/images/";//800x800 и 960x640
                                                             'def'=>"пeтля вкладная CLIP top BLUMOTION"  //описание                         
                                                             )
                                             
-                                                ),// состав артикула    
-
+                                                ),// состав артикула  
+                    //характеристики 
+                    'harakteristiki_def'=>" <p>
+                                                <ul class='stat' style='margin-top: 0px;'>
+                                                    <li><b>Петля для толстых и профильных дверей</b></li>
+                                                    <li><b>CLIP top BLUMOTION</b> со встроенным <b>BLUMOTION</b> (с возможностью деактивации)</li> 
+                                                    <li><b>CLIP top </b>с пружиной или без пружины</li>
+                                                    <li>Металлическая петля, никелированная</li>
+                                                    <li>Угол открывания 95°</li>
+                                                    <li>Регулировка фасада в трех плоскостях</li>
+                                                    <li>Удобная регулировка по глубине с помощью механизма шнек</li>
+                                                    <li>Дверь устанавливается и снимается с корпуса без инструмента</li>                                                                                                                                
+                                                </ul>
+                                            </p>", 
+                    //инструкции                         
+                    'instrukciya_def'=>"<h4 >Проектирование</h3>", 
                     'instrukciya_carousel'=>array( // инструкция
                                                     array(                            
-                                                            'img'=>$path_img_carousel."vkladnaya-5000502-01-100_2.png",//data-image, src, data-src  800x800 и 960x640
-                                                            'alt'=>"Петля",
-                                                            'title'=>"Петля в сборе"// data-title
+                                                            'img'=>$path_img_carousel."vkladnaya-5000502-01-100_2.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                                            'title'=>"Петля в сборе"// data-title, alt
+                                                    ),
+                                                    array(                            
+                                                            'img'=>$path_img_carousel."vkladnaya-5000502-01-100_1.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                                            'title'=>"Петля вкладная"// data-title, alt
+                                                    ),
+                                                    array(                            
+                                                            'img'=>$path_img_carousel."vkladnaya-5000502-01-100_1_sch1.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                                            'title'=>"Вкладная конструкция"// data-title, alt
                                                             )
                                                        
                                             

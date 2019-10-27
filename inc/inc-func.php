@@ -268,9 +268,177 @@ function ContentListGoupMenuVideo($arr) //правое меню группа
     ';    
 }
 
+/////////////////////////////// ФУРНИТУРА START
+function TabContent($arr,$curr_page) //
+{
+echo ' 
+<div class="row" style="margin-right: -15px;">
+    <div class=" col-xs-12 col-sm-12 col-md-12">
+        <div style="background: #fff;
+            border: 1px solid rgb(221, 221, 221);
+            box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+            border-radius: 4px;
+            padding: 15px;
+            height: 747px;
+                ">
+            <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
+                <li ><a href="#harakteristiki" data-toggle="tab">Характеристики</a></li>
+                <li  class="active"><a href="#instrukciya" data-toggle="tab">Инструкция</a></li> 
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade " id="harakteristiki">
+                '; echo $arr[$curr_page]['harakteristiki_def'];echo'
+                </div>
+                <div class="tab-pane fade in active" id="instrukciya">
+                    <!-- часть1 -->
+                    ';  echo $arr[$curr_page]['instrukciya_def'];echo' 
+                        <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
+                            <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+                                <div class="carousel-inner">
+                                ';                                                        
+                                    for ($i=0; $i < count($arr[$curr_page]['instrukciya_carousel']); $i++) {  
+                                    echo'
+                                        <div class="item ';echo ($i==0 ? 'active' : '');echo'">
+                                            <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="';echo $arr[$curr_page]['instrukciya_carousel'][$i]['title'];echo'" 
+                                            data-image="';echo $arr[$curr_page]['instrukciya_carousel'][$i]['img'];echo'" data-target="#image-gallery">
+                                                <img  
+                                                    src="';echo $arr[$curr_page]['instrukciya_carousel'][$i]['img'];echo'"
+                                                    data-src="';echo $arr[$curr_page]['instrukciya_carousel'][$i]['img'];echo'"
+                                                    class="center-block   img-rounded    bar "
+                                                    data-toggle="modal"                                                                                                                    
+                                                    alt="';echo $arr[$curr_page]['instrukciya_carousel'][$i]['title'];echo'"                                                                                                                         
+                                                >
+                                            </a>
+                                        </div>
+                                        ';
+                                    }
+                             echo '
+                                </div>
+                                <!-- Элементы управления -->
+                                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Предыдущий</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Следующий</span>
+                                </a>
+                            </div>
+                        </div> 
+
+                    <!-- /часть1 -->  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>   
+
+
+ '; 
+}
+
 ///////////////////////////////
 
+function VPI($arr,$curr_page) //
+{
+echo '    
+<div class="row" style="margin-bottom: 15px; margin-left: 15px; padding-top: 15px;">
+    <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
+                border: 1px solid rgb(221, 221, 221);
+                box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+                border-radius: 4px;
+                padding: 15px;
+                ">
 
+        <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
+            <div class="row">                                                
+                <h3 class="blum">';echo $arr[$curr_page]['articul_500STP'];echo'</h3>
+                <h3 class="blum">';echo $arr[$curr_page]['def'];echo'</h3>
+                <!-- <p> <a href="furnitura-dlya-mebeli-petlya-clip-top-TL-vkladnaya.php#petlya-vkladnaya-TL" >
+                    <b>БЕЗ ПРУЖИНЫ</b> &nbsp;<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i></a>
+                </p>   -->
+                <h4 style=" margin-left: 0px !important;">Состав артикула:</h4>            
+                <table class="table table-striped table-responsive">
+                        <thead>
+                        <tr>
+                            <th>Список</th>
+                            <th>К&nbsp;&#8209;&nbsp;во</th>
+                            <th>Артикул</th>
+                            <th>Цвет&nbsp;/&nbsp;материал</th>
+                            <th>Описание</th>
+                            <!-- <th class="quantity">                                                            
+                                <div class="form-group" style="margin-bottom: 0;width: 112px;">				
+                                    <input id="add_vpi_count-1"  class="form-control" type="number" value="1" min="1" max="999" >
+                                </div>
+                                
+                            </th> -->
+                            <th class="quantity"> 
+                            <!-- счетчик VPI -->
+                                <!-- <div class="input-group spinner"> 	
+                                    <div class="input-group-btn-vertical">                                                                        
+                                        <button class="btn btn-default" type="button">&ndash;</button>
+                                        <input  id="add_vpi_count-1" type="text" class="form-control form-c" value="1" min="1" >
+                                        <button class="btn btn-default" type="button">+</button>
+                                    </div>
+                                </div>  -->
+                            </th> 
+                            <th class="">
+                            <!-- кнопка VPI -->
+                                <!-- <button type="button" id="addvpi" class="btn btn-primary" style="margin-left: 10px;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button> -->
+                                
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody id="calcresult">
+                        
+                        ';
+                        for ($i=0; $i < count($arr[$curr_page]['composition_article']); $i++) {   
+                    echo'
+                        <tr>
+                            <td><img src="';echo $arr[$curr_page]['composition_article'][$i]['img'];echo'" class="" alt="';echo $arr[$curr_page]['composition_article'][$i]['alt'];echo'" title=""></td>
+                            <td>';echo $arr[$curr_page]['composition_article'][$i]['count'];echo'</td>
+                            <td class="animated" data-objfurnid="';echo $arr[$curr_page]['composition_article'][$i]['id_table'];echo'"><a href="';echo $arr[$curr_page]['composition_article'][$i]['href_articul'];echo'" target="_blank">';echo $arr[$curr_page]['composition_article'][$i]['supplier_articul'];echo'</a></td>
+                            <td>';echo $arr[$curr_page]['composition_article'][$i]['color_material'];echo'</td> 
+                            <td colspan="3">';echo $arr[$curr_page]['composition_article'][$i]['def'];echo'</td>
+                        </tr>
+                    ';
+                        }
+                        echo'  
+                        </tbody>
+                    </table>
+            </div>                              
+        </div>
+    </div>
+</div>
+';                      
+}
+
+///////////////////////////////
+
+function ContentPage($arr,$curr_page,$article_id) //
+{
+echo' 
+    <!-- main  -->
+    <div class="col-md-8 col-md-8-non" role="main" id="main-page"> 
+        <article  id="';echo $article_id.'">
+            <section >
+                <div class="page-header"     >
+                    <h1 itemprop="name">'; echo $arr[0]['def'];echo'</h1>
+                </div>                   
+                <div class="bs-callout bs-callout-warning cont" id="';echo str_replace("#","",$arr[0]['id']);echo'"> ';                   
+                    VPI($arr,$curr_page);//ВПИ                   
+                    TabContent($arr,$curr_page);
+                echo'
+                </div> <!--/bs-callout bs-callout-warning cont/-->
+            </section> 
+        </article>                     
+    </div>
+<!-- /main  -->
+';
+SideMenu($arr,$curr_page);
+}
+
+/////////////////////////////// ФУРНИТУРА END
 
 
 
