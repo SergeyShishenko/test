@@ -234,72 +234,72 @@ $path_img_carousel="./dist/filesdb/images/carousel/shtangi/";//800x800 и 960x64
     'def'=>"Штанга овальная 15х30, хром, L-3000",
     'composition_article'=>array( // таблица состава артикула
                                     array(                            
-                                            'img'=>$path_img_composition_article."ArticulHW_012_1930_PR-1.png",//100х67 для VPI
-                                            'alt'=>"Профиль-штанга",
+                                            'img'=>$path_img_composition_article."ArticulTA02STCR-1.png",//100х67 для VPI
+                                            'alt'=>"Штанга овальная 15х30, хром, L-3000",
                                             'count'=> 1,// количество
-                                            'supplier_articul'=>"HW.012.1930.PR",//артикул поставщика
+                                            'supplier_articul'=>"TA02STCR",//артикул поставщика
                                             'id_table'=>"00",//data-objfurnid
-                                            'href_articul'=>"https://makmart.ru/WItem/12429/" ,//страница фурнитуры                            
-                                            'color_material'=>"алюминий",//цвет/материал
-                                            'def'=>"Профиль-штанга 1930 для LED подсветки, L=2000 мм"  //описание                         
+                                            'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12605/" ,//страница фурнитуры                            
+                                            'color_material'=>"хром",//цвет/материал
+                                            'def'=>"Штанга овальная 15х30, хром, L-3000"  //описание                         
                                             ),
                                         array(                            
-                                            'img'=>$path_img_composition_article."ArticulHW_012_1930_H1-1.png", //100х67 для VPI
-                                            'alt'=>"Штангодержатель",
+                                            'img'=>$path_img_composition_article."ArticulRT03ZNL-1.png", //100х67 для VPI
+                                            'alt'=>"Штангодержатель для овальной штанги",
                                             'count'=> 2,// количество
-                                            'supplier_articul'=>"HW.012.1930.H1",//артикул поставщика
+                                            'supplier_articul'=>"RT03ZNL",//артикул поставщика
                                             'id_table'=>"00",//data-objfurnid
-                                            'href_articul'=>"https://makmart.ru/WItem/12430/" ,//страница фурнитуры                            
-                                            'color_material'=>"пластик / серый",//цвет/материал
-                                            'def'=>"Штангодержатель для профиль-штанги 1930, цвет серый"  //описание                         
+                                            'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12587/" ,//страница фурнитуры                            
+                                            'color_material'=>"хром",//цвет/материал
+                                            'def'=>"Штангодержатель для овальной штанги"  //описание                         
                                         ),
                                         array(                            
-                                            'img'=>$path_img_composition_article."ArticulHW_012_1930_C1-1.png", //100х67 для VPI
-                                            'alt'=>"Заглушка с отверстием",
+                                            'img'=>$path_img_composition_article."ArticulWA0612SCR-1.png", //100х67 для VPI
+                                            'alt'=>"Штангодержатели для овальной штанги, хром, крепление к боковине и к полке (прав.+лев.)",
                                             'count'=> 1,// количество
-                                            'supplier_articul'=>"HW.012.1930.C1",//артикул поставщика
+                                            'supplier_articul'=>"WA0612SCR",//артикул поставщика
                                             'id_table'=>"00",//data-objfurnid
-                                            'href_articul'=>"https://makmart.ru/WItem/12428/" ,//страница фурнитуры                            
-                                            'color_material'=>"пластик / серый",//цвет/материал
-                                            'def'=>"Заглушка с отверстием для профиль-штанги 1930, цвет серый"  //описание                         
+                                            'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12606/" ,//страница фурнитуры                            
+                                            'color_material'=>"хром",//цвет/материал
+                                            'def'=>"Штангодержатели для овальной штанги, хром, крепление к боковине и к полке (прав.+лев.)"  //описание                         
                                         ),
                                         array(                            
-                                            'img'=>$path_img_composition_article."ArticulHW_012_1707_TR.png", //100х67 для VPI
-                                            'alt'=>"Профиль-рассеиватель",
+                                            'img'=>$path_img_composition_article."ArticulWA0612CCR.png", //100х67 для VPI
+                                            'alt'=>"Штангодержатель для овальной штанги, центральный, хром, крепление к полке",
                                             'count'=> 1,// количество
-                                            'supplier_articul'=>"HW.012.1707.TR",//артикул поставщика
+                                            'supplier_articul'=>"WA0612CCR",//артикул поставщика
                                             'id_table'=>"00",//data-objfurnid
-                                            'href_articul'=>"https://makmart.ru/WItem/8625/" ,//страница фурнитуры                            
-                                            'color_material'=>"Транспарент",//цвет/материал
-                                            'def'=>"Профиль-рассеиватель 1707 для LED подсветки, L=2000мм, отделка транспарент"  //описание                         
+                                            'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12607/" ,//страница фурнитуры                            
+                                            'color_material'=>"хром",//цвет/материал
+                                            'def'=>"Штангодержатель для овальной штанги, центральный, хром, крепление к полке"  //описание                         
                                         ),
                                         array(                            
-                                            'img'=>$path_img_composition_article."ArticulHW_012_1707_FR.png", //100х67 для VPI
-                                            'alt'=>"Профиль-рассеиватель",
-                                            'count'=> 1,// количество
-                                            'supplier_articul'=>"HW.012.1707.FR",//артикул поставщика
+                                            'img'=>$path_img_composition_article."Articul7030CR-1.png", //100х67 для VPI
+                                            'alt'=>"Заглушка для овальной штанги, хром",
+                                            'count'=> 2,// количество
+                                            'supplier_articul'=>"7030CR",//артикул поставщика
                                             'id_table'=>"00",//data-objfurnid
-                                            'href_articul'=>"https://makmart.ru/WItem/8626/" ,//страница фурнитуры                            
-                                            'color_material'=>"Матовый",//цвет/материал
-                                            'def'=>"Профиль-рассеиватель 1707 для LED подсветки, L=2000мм, отделка матовый"  //описание                         
+                                            'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12603/" ,//страница фурнитуры                            
+                                            'color_material'=>"хром",//цвет/материал
+                                            'def'=>"Заглушка для овальной штанги, хром"  //описание                         
                                             )
                             
                                 ),// состав артикула  
     //характеристики 
     'harakteristiki_def'=>" <p>
                                 <ul class='stat' style='margin-top: 0px;'>
-                                    <li><b>Светильник штанга для гардероба</b></li>
-                                    <li>Материал: Алюминий.</li> 
-                                    <li>Цвет: Алюминий.</li>
-                                    <li>Длина: 2000 мм.</li>
-                                    <li>Размер в сечении: 30 х 19 мм.                                                   
-                                    <li>Штанга имеет конструкцию для размещения в ней светодиодной  LED ленты  шириной 8/10 мм.</li>                                                                                                                                                                                
+                                    <li><b>Штанга овальная</b></li>
+                                    <li><b>ГЛУБИНА ШКАФА,ММ: свыше 500.</b></li> 
+                                    <li>Цвет: Хром.</li>
+                                    <li>Длина: 3000 мм.</li>
+                                    <li>Размер в сечении: 30 х 15 мм.                                                   
+                                    <li>Производитель: PULSE (Китай)</li>                                                                                                                                                                                
                                                                                                                                                                  
                                 </ul>
                             </p>", 
     //инструкции                         
     'instrukciya_def'=>"<h4 >Проектирование</h3>
-                        <h5 >Лента светодиодная, источники питания и коннекторы, пожалуйста, отдельно.</h5>
+                       <!-- <h5 >Лента светодиодная, источники питания и коннекторы, пожалуйста, отдельно.</h5>-->
                         ", 
     'instrukciya_carousel'=>array( // инструкция
                                     array(                            
