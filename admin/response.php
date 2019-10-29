@@ -15,6 +15,7 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
     $Furn=$_POST["content_Furn"];
     $Art=$_POST["content_Art"];
     $NameFile=$_POST["content_NameFile"];
+    
     $GruppId=$_POST["content_grupp_id"];
     $Bild=$_POST["content_Bild"];
     $Colour=$_POST["content_Colour"];

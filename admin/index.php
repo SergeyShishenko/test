@@ -1,4 +1,8 @@
-<?php require('header.php'); ?>
+<?php require('header.php');
+  //`grupp` 4 ШТАНГИ МЕБЕЛЬНЫЕ  group_4
+
+?>
+
 <!-- <div>
     <ul class="breadcrumb">
         <li>
@@ -9,6 +13,7 @@
         </li>
     </ul>
 </div> -->
+
 <article id="responds">
     <?php
     //подключаем конфигурационный файл

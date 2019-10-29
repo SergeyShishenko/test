@@ -70,14 +70,14 @@
             <input type="text" value="Саморез 4,0x30 PZ для дерева, неполная резьба, потай, оцинкованный" name="add_Furn" class="text add" size="100" placeholder="Наименование фурнитуры" id="Furn" >
             <input type="text" value="Б/А" name="add_Art" class="text add" size="100" placeholder="Артикул" id="Art" >
             <input type="text" value="samorez-nepolnaya-rezba.png" name="add_NameFile" class="text add" size="100" placeholder="Имя файла" id="NameFile" >
-            <input type="text" value="3" name="add_grupp_id" class="text add" size="100" placeholder="grupp_id" id="grupp_id" >
+            <input type="text" value="4" name="add_grupp_id" class="text add" size="100" placeholder="grupp_id" id="grupp_id" >
             <input type="text" value="Стройдвор" name="add_Bild" class="text add" size="100" placeholder="Производитель" id="Bild" >
             <input type="text" value="желтый/белый цинк" name="add_Colour" class="text add" size="100" placeholder="Цвет" id="Colour" >
             <input type="text" value="шт." name="add_Unit" class="text add" size="100" placeholder="Ед.измерения" id="Unit" >
             <button type="submit" class="button animated tada" id="AddFurnSubmit" >Добавить новую фурнитуру<span class="glyphicon glyphicon-plus-sign"></span></button>
         </div>
         <!-- <div id='outputting'></div> -->
-        <div class="col-md-12 col-sm-12 col-xs-12 " id='outputID'>ID -</div>
+        <div class="col-md-12 col-sm-12 col-xs-12 " id='outputID'>(data-objfurnid)ID -</div>
         <hr><hr>
         <div class="col-md-12 col-sm-12 col-xs-12 " style="float:right;">
         <p class="col-md-12 col-sm-12 col-xs-12 powered-by ">&copy; <a href="#" >Сергей Шишенко</a> <?php echo date('Y') ?></p>
