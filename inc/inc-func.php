@@ -395,7 +395,7 @@ echo '
                         for ($i=0; $i < count($arr[$curr_page]['composition_article']); $i++) {   
                     echo'
                         <tr>
-                            <td><img src="';echo $arr[$curr_page]['composition_article'][$i]['img'];echo'" class="" alt="';echo $arr[$curr_page]['composition_article'][$i]['alt'];echo'" title=""></td>
+                            <td><img src="';echo $arr[$curr_page]['composition_article'][$i]['img'];echo'" class="" alt="';echo $arr[$curr_page]['composition_article'][$i]['def'];echo'" title=""></td>
                             <td>';echo $arr[$curr_page]['composition_article'][$i]['count'];echo'</td>
                             <td class="animated" data-objfurnid="';echo $arr[$curr_page]['composition_article'][$i]['id_table'];echo'"><a href="';echo $arr[$curr_page]['composition_article'][$i]['href_articul'];echo'" target="_blank">';echo $arr[$curr_page]['composition_article'][$i]['supplier_articul'];echo'</a></td>
                             <td>';echo $arr[$curr_page]['composition_article'][$i]['color_material'];echo'</td> 

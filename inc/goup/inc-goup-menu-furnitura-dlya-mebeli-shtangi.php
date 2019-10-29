@@ -58,7 +58,7 @@ $path_img_carousel="./dist/filesdb/images/carousel/shtangi/";//800x800 и 960x64
                                                     <li>Материал: алюминий.</li> 
                                                     <li>Цвет: серебристый.</li>
                                                     <li>Длина: 2500 мм.</li>
-                                                    <li>Размер в сечении: 30 х 15 мм.
+                                                    <li>Размер в сечении: 30 х 15 мм.</li> 
                                                     <li>В комплекте с матовым стеклом из пластика.</li>
                                                     <li>Штанга имеет конструкцию для размещения в ней светодиодной ленты.</li>
                                                     <li>Выдвигающаяся пластмассовая лента служит для приклеивания светодиодной ленты и для изоляции алюминиевого профиля.</li>                                                                                                                                
@@ -170,7 +170,7 @@ $path_img_carousel="./dist/filesdb/images/carousel/shtangi/";//800x800 и 960x64
                                                     <li>Материал: Алюминий.</li> 
                                                     <li>Цвет: Алюминий.</li>
                                                     <li>Длина: 2000 мм.</li>
-                                                    <li>Размер в сечении: 30 х 19 мм.                                                   
+                                                    <li>Размер в сечении: 30 х 19 мм. </li>                                                   
                                                     <li>Штанга имеет конструкцию для размещения в ней светодиодной  LED ленты  шириной 8/10 мм.</li>                                                                                                                                                                                
                                                                                                                                                                                  
                                                 </ul>
@@ -292,7 +292,7 @@ $path_img_carousel="./dist/filesdb/images/carousel/shtangi/";//800x800 и 960x64
                                     <li><b>ГЛУБИНА ШКАФА,ММ: свыше 500.</b></li> 
                                     <li>Цвет: Хром.</li>
                                     <li>Длина: 3000 мм.</li>
-                                    <li>Размер в сечении: 30 х 15 мм.                                                   
+                                    <li>Размер в сечении: 30 х 15 мм.</li>                                                    
                                     <li>Производитель: PULSE (Китай)</li>                                                                                                                                                                                
                                                                                                                                                                  
                                 </ul>
@@ -348,6 +348,186 @@ $path_img_carousel="./dist/filesdb/images/carousel/shtangi/";//800x800 и 960x64
   
     
 ];
+
+$shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi1.php",
+'id'=> "#kruglaya-shtanga",
+'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
+'keywords'=>"",
+'articul_500STP'=>"5000502-10-300",//
+'def'=>"Труба круглая D25 мм, хром, L-1000",
+'composition_article'=>array( // таблица состава артикула
+                                array(                            
+                                        'img'=>$path_img_composition_article."ArticulJOK-004B-CR.png",//100х67 для VPI                                       
+                                        'count'=> 1,// количество
+                                        'supplier_articul'=>"JOK.004B.CR 05",//артикул поставщика
+                                        'id_table'=>"00",//data-objfurnid
+                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/13009/" ,//страница фурнитуры                            
+                                        'color_material'=>"хром",//цвет/материал
+                                        'def'=>"Труба круглая D25 мм, хром, L-1000"  //описание                         
+                                        ),
+                                    array(                            
+                                        'img'=>$path_img_composition_article."ArticulJOK-015B-CR.png", //100х67 для VPI                                      
+                                        'count'=> 2,// количество
+                                        'supplier_articul'=>"JOK.015B.CR 03",//артикул поставщика
+                                        'id_table'=>"00",//data-objfurnid
+                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/60127/" ,//страница фурнитуры                            
+                                        'color_material'=>"хром",//цвет/материал
+                                        'def'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"  //описание                         
+                                    ),
+                                    array(                            
+                                        'img'=>$path_img_composition_article."ArticulUS-KB.png", //100х67 для VPI                                        
+                                        'count'=> 6,// количество
+                                        'supplier_articul'=>" US3,5 X 20 KB/1000ШТ",//артикул поставщика
+                                        'id_table'=>"00",//data-objfurnid
+                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/samorezy/8903/" ,//страница фурнитуры                            
+                                        'color_material'=>"оцинкованный",//цвет/материал
+                                        'def'=>"Саморез с потайной головкой под крест, 3.5 Х 20"  //описание                         
+                                    )
+                               
+                        
+                            ),// состав артикула  
+//характеристики 
+'harakteristiki_def'=>" <p>
+                            <ul class='stat' style='margin-top: 0px;'>
+                                <li><b>Труба круглая D25 мм</b></li>
+                                <li><b>ГЛУБИНА ШКАФА,ММ: свыше 500.</b></li> 
+                                <li>Цвет: Хром.</li>
+                                <li>Длина: 1000 мм.</li>                                                                                
+                                <li>Производитель: PULSE (Китай)</li>                                                                                                                                                                                
+                                                                                                                                                             
+                            </ul>
+                        </p>", 
+//инструкции                         
+'instrukciya_def'=>"<h4 >Проектирование</h3>
+                   <!-- <h5 >Лента светодиодная, источники питания и коннекторы, пожалуйста, отдельно.</h5>-->
+                    ", 
+'instrukciya_carousel'=>array( // инструкция
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-004B-CR.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Труба круглая D25 мм, хром"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-004B_dr.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Труба круглая D25 мм, хром, толщина 0.9 мм"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-015B-CR.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-015B-03_dr.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"// data-title, alt
+                                ),
+                            
+                                array(                            
+                                        'img'=>$path_img_carousel."US-KB.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Саморез с потайной головкой под крест, 3.5 Х 20"// data-title, alt
+                                )                            
+                                   
+                        
+                            )// инструкция               
+
+
+];
+
+$shtangi[5]=['path'=>"furnitura-dlya-mebeli-shtangi2.php",
+'id'=> "#kruglaya-shtanga-s-prohodnym-derzhatelem",
+'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
+'keywords'=>"",
+'articul_500STP'=>"5000502-10-301",//
+'def'=>"Труба круглая D25 мм, хром, L-2000 с проходным держателем",
+'composition_article'=>array( // таблица состава артикула
+                                array(                            
+                                        'img'=>$path_img_composition_article."ArticulJOK-004B-CR.png",//100х67 для VPI                                       
+                                        'count'=> 1,// количество
+                                        'supplier_articul'=>"JOK.004B.CR 05",//артикул поставщика
+                                        'id_table'=>"00",//data-objfurnid
+                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/13009/" ,//страница фурнитуры                            
+                                        'color_material'=>"хром",//цвет/материал
+                                        'def'=>"Труба круглая D25 мм, хром, L-2000"  //описание                         
+                                        ),
+                                    array(                            
+                                        'img'=>$path_img_composition_article."ArticulJOK-015B-CR.png", //100х67 для VPI                                      
+                                        'count'=> 2,// количество
+                                        'supplier_articul'=>"JOK.015B.CR 03",//артикул поставщика
+                                        'id_table'=>"00",//data-objfurnid
+                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/60127/" ,//страница фурнитуры                            
+                                        'color_material'=>"хром",//цвет/материал
+                                        'def'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"  //описание                         
+                                    ),
+                                    array(                            
+                                        'img'=>$path_img_composition_article."Articul306.png", //100х67 для VPI                                      
+                                        'count'=> 1,// количество
+                                        'supplier_articul'=>"306.CR 01",//артикул поставщика
+                                        'id_table'=>"00",//data-objfurnid
+                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/12992/" ,//страница фурнитуры                            
+                                        'color_material'=>"хром",//цвет/материал
+                                        'def'=>"Держатель (трубы проходной) хром"  //описание                         
+                                    ),
+                                    array(                            
+                                        'img'=>$path_img_composition_article."ArticulUS-KB.png", //100х67 для VPI                                        
+                                        'count'=> 9,// количество
+                                        'supplier_articul'=>" US3,5 X 20 KB/1000ШТ",//артикул поставщика
+                                        'id_table'=>"00",//data-objfurnid
+                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/samorezy/8903/" ,//страница фурнитуры                            
+                                        'color_material'=>"оцинкованный",//цвет/материал
+                                        'def'=>"Саморез с потайной головкой под крест, 3.5 Х 20"  //описание                         
+                                    )
+                               
+                        
+                            ),// состав артикула  
+//характеристики 
+'harakteristiki_def'=>" <p>
+                            <ul class='stat' style='margin-top: 0px;'>
+                                <li><b>Труба круглая D25 мм с проходным держателем</b></li>
+                                <li><b>ГЛУБИНА ШКАФА,ММ: свыше 500.</b></li> 
+                                <li>Цвет: Хром.</li>
+                                <li>Длина: 2000 мм.</li>                                                                              
+                                <li>Производитель: PULSE (Китай)</li>                                                                                                                                                                                
+                                                                                                                                                             
+                            </ul>
+                        </p>", 
+//инструкции                         
+'instrukciya_def'=>"<h4 >Проектирование</h3>
+                   <!-- <h5 >Лента светодиодная, источники питания и коннекторы, пожалуйста, отдельно.</h5>-->
+                    ", 
+'instrukciya_carousel'=>array( // инструкция
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-004B-CR.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Труба круглая D25 мм, хром"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-004B_dr.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Труба круглая D25 мм, хром, толщина 0.9 мм"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-015B-CR.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-015B-03_dr.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."306.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Держатель (трубы проходной) хром"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."306-CR-01_dr.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Держатель (трубы проходной) хром"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."US-KB.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Саморез с потайной головкой под крест, 3.5 Х 20"// data-title, alt
+                                )                            
+                                   
+                        
+                            )// инструкция               
+
+
+];
+
+
 
    
                 
