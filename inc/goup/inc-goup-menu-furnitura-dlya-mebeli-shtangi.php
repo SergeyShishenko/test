@@ -8,7 +8,7 @@ $path_img_carousel="./dist/filesdb/images/carousel/shtangi/";//800x800 и 960x64
     $shtangi=[];
     $shtangi[0]=['path'=>"furnitura-dlya-mebeli-shtangi3.php",
                     'id'=>"#svetilnik-shtanga",
-                    'img'=> $path_img."tbsALLpetly.png",//200x200 для поиска
+                    'img'=> $path_img."tbsshtangi.png",//200x200 для поиска
                     'keywords'=>"",
                     'def'=>"ШТАНГИ МЕБЕЛЬНЫЕ"];    
 
@@ -228,7 +228,7 @@ $path_img_carousel="./dist/filesdb/images/carousel/shtangi/";//800x800 и 960x64
     ];
     $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
     'id'=> "#ovalnaya-shtanga",
-    'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
+    'img'=> $path_img."tbsTA02STCR-1.png", //200x200 для поиска
     'keywords'=>"",
     'articul_500STP'=>"",
     'def'=>"Штанга овальная 15х30, хром, L-3000",
@@ -351,8 +351,8 @@ $path_img_carousel="./dist/filesdb/images/carousel/shtangi/";//800x800 и 960x64
 
 $shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi1.php",
 'id'=> "#kruglaya-shtanga",
-'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
-'keywords'=>"",
+'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
+'keywords'=>"Штанга труба круглая D25 мм",
 'articul_500STP'=>"5000502-10-300",//
 'def'=>"Труба круглая D25 мм, хром, L-1000",
 'composition_article'=>array( // таблица состава артикула
@@ -432,8 +432,8 @@ $shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi1.php",
 
 $shtangi[5]=['path'=>"furnitura-dlya-mebeli-shtangi2.php",
 'id'=> "#kruglaya-shtanga-s-prohodnym-derzhatelem",
-'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
-'keywords'=>"",
+'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
+'keywords'=>"Штанга труба круглая D25 мм",
 'articul_500STP'=>"5000502-10-301",//
 'def'=>"Труба круглая D25 мм, хром, L-2000 с проходным держателем",
 'composition_article'=>array( // таблица состава артикула
