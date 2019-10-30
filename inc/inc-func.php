@@ -253,7 +253,7 @@ function ContentListGoupMenuVideo($arr) //правое меню группа
                 <div class="main-box-body clearfix" >
                     <div class="embed-responsive embed-responsive-16by9">
                         <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
-                            <source src="'.$arr[$i]['video'].'" type="video/mp4">
+                            <source src="'.(file_exists($arr[$i]['video']) ? $arr[$i]['video'] : './dist/video/non.mp4') .'" type="video/mp4">
                         </video>
                     </div>                                            
                 </div> 

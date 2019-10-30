@@ -69,14 +69,31 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'keywords'=>"SP3 (дополнение 7) - Во вкладке ДП добавлен № комплекта и возможность оставлять на экране только нужные комплект",
                     'tilde'=>"ыз3",
                     'def'=>"№7. Во вкладке ДП добавлен № комплекта и возможность оставлять на экране только нужные комплект"];
-
+                    
     $SP3[8]=['path'=>"metodichki-SofiaPro3.php",
+                    'id'=> "#addition8",
+                    'img'=> $path_img."tbstest.png",
+                    'video'=> $path_video."8.mp4",
+                    'keywords'=>"SP3 (дополнение 8) - Входная информация от заказчика",
+                    'tilde'=>"ыз3",
+                    'def'=>"№8. Входная информация от заказчика"];
+                    
+    $SP3[9]=['path'=>"metodichki-SofiaPro3.php",
+                    'id'=> "#addition9",
+                    'img'=> $path_img."tbstest.png",
+                    'video'=> $path_video."9.mp4",
+                    'keywords'=>"SP3 (дополнение 9) - Функция ознакомления в Чек листе",
+                    'tilde'=>"ыз3",
+                    'def'=>"№9. Функция ознакомления в Чек листе"];
+
+    $SP3[10]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition16",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."16.mp4",
                     'keywords'=>"SP3 (дополнение 16) - Кнопки нет Факта, есть Факт во вкладке заказа",
                     'tilde'=>"ыз3",
                     'def'=>"№16. Кнопки нет Факта, есть Факт во вкладке заказа"];
+
                 
     
 
