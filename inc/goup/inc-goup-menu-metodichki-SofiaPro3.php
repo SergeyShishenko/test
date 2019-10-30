@@ -85,8 +85,16 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'keywords'=>"SP3 (дополнение 9) - Функция ознакомления в Чек листе",
                     'tilde'=>"ыз3",
                     'def'=>"№9. Функция ознакомления в Чек листе"];
-
+                    
     $SP3[10]=['path'=>"metodichki-SofiaPro3.php",
+                    'id'=> "#addition10",
+                    'img'=> $path_img."tbstest.png",
+                    'video'=> $path_video."10.mp4",
+                    'keywords'=>"SP3 (дополнение 10) - ТЗ от Заказчика и ТЗ для строителей Заказчика. Прикрепление файлов",
+                    'tilde'=>"ыз3",
+                    'def'=>"№10. ТЗ от Заказчика и ТЗ для строителей Заказчика. Прикрепление файлов"];
+
+    $SP3[11]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition16",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."16.mp4",
