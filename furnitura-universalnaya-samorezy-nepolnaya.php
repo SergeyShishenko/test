@@ -54,17 +54,17 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                 <!--  -->
                                                 <!-- <p><a href="https://www.mdm-complect.ru/catalog/konfirmat-styazhka-evrovint/59936/"  target="_blank" title="МДМ-КОМПЛЕКТ" >Артикулы поставщика:</a></p>             -->
                                                 <table class="table table-striped table-responsive">
-                                                        <thead>
-                                                        <tr>
-                                                            <th title="Резьба ,(мм)">Резьба<i><br>&empty;&nbsp;d,&nbsp;(мм)</i></th>
-                                                            <th title="Длина общая ,(мм)">Длина&nbsp;общая<i><br>l,&nbsp;(мм)</i></th>                                                            
-                                                            <th title="Длина резьбы ,(мм)">Длина&nbsp;резьбы <i><br>b,&nbsp;(мм)</i></th>
-                                                            <!-- <th title="Pozidriv (PZ)">Шлиц </th>                                                           -->
-                                                            <th>Описание</th>                                                           
-                                                            <th> <button type="button" id="each_addvpi_1" class="btn btn-primary" style="float:right;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button></th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody id="calcresult"> 
+                                                    <thead>
+                                                    <tr>
+                                                        <th title="Резьба ,(мм)">Резьба<i><br>&empty;&nbsp;d,&nbsp;(мм)</i></th>
+                                                        <th title="Длина общая ,(мм)">Длина&nbsp;общая<i><br>l,&nbsp;(мм)</i></th>                                                            
+                                                        <th title="Длина резьбы ,(мм)">Длина&nbsp;резьбы <i><br>b,&nbsp;(мм)</i></th>
+                                                        <!-- <th title="Pozidriv (PZ)">Шлиц </th>                                                           -->
+                                                        <th>Описание</th>                                                           
+                                                        <th> <button type="button" id="each_addvpi_1" class="btn btn-primary" style="float:right;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button></th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="calcresult"> 
 
                                                          <!-- 4.0 -->                                                    
                                                         <tr> 
@@ -690,8 +690,8 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                       
                                                       
                                                         
-                                                        </tbody>
-                                                    </table>
+                                                    </tbody>
+                                                </table>
                                             </div>                              
                                         </div>
                                     </div>

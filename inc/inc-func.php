@@ -374,17 +374,17 @@ echo '
                             </th> -->
                             <th class="quantity"> 
                             <!-- счетчик VPI -->
-                                <!-- <div class="input-group spinner"> 	
+                                 <div class="input-group spinner"> 	
                                     <div class="input-group-btn-vertical">                                                                        
                                         <button class="btn btn-default" type="button">&ndash;</button>
                                         <input  id="add_vpi_count-1" type="text" class="form-control form-c" value="1" min="1" >
                                         <button class="btn btn-default" type="button">+</button>
                                     </div>
-                                </div>  -->
+                                </div>  
                             </th> 
                             <th class="">
                             <!-- кнопка VPI -->
-                                <!-- <button type="button" id="addvpi" class="btn btn-primary" style="margin-left: 10px;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button> -->
+                                <button type="button" id="addvpi" class="btn btn-primary" style="margin-left: 10px;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button> 
                                 
                             </th>
                         </tr>
@@ -395,9 +395,13 @@ echo '
                         for ($i=0; $i < count($arr[$curr_page]['composition_article']); $i++) {   
                     echo'
                         <tr>
-                            <td><img src="';echo $arr[$curr_page]['composition_article'][$i]['img'];echo'" class="" alt="';echo $arr[$curr_page]['composition_article'][$i]['def'];echo'" title=""></td>
+                            <td><img src="';echo $arr[$curr_page]['composition_article'][$i]['img'];echo'"  alt="';echo $arr[$curr_page]['composition_article'][$i]['def'];echo'" ></td>
                             <td>';echo $arr[$curr_page]['composition_article'][$i]['count'];echo'</td>
-                            <td class="animated" data-objfurnid="';echo $arr[$curr_page]['composition_article'][$i]['id_table'];echo'"><a href="';echo $arr[$curr_page]['composition_article'][$i]['href_articul'];echo'" target="_blank">';echo $arr[$curr_page]['composition_article'][$i]['supplier_articul'];echo'</a></td>
+                            <td   ';
+                            echo ($arr[$curr_page]['composition_article'][$i]['id_table']!=="00") ? 'class="animated" data-objfurnid="'.$arr[$curr_page]['composition_article'][$i]['id_table']."\">" : '>';
+                            //echo 'data-objfurnid="'.$arr[$curr_page]['composition_article'][$i]['id_table'];
+
+                            echo'<a href="';echo $arr[$curr_page]['composition_article'][$i]['href_articul'];echo'" target="_blank">';echo $arr[$curr_page]['composition_article'][$i]['supplier_articul'];echo'</a></td>
                             <td>';echo $arr[$curr_page]['composition_article'][$i]['color_material'];echo'</td> 
                             <td colspan="3">';echo $arr[$curr_page]['composition_article'][$i]['def'];echo'</td>
                         </tr>

@@ -62,7 +62,7 @@ $("body").on("click","[id^=\'addvpi\']",function() {// alert('ВПИ');
     var add_vpi_count = $(this).parent().parent().find('th.quantity > div > div > input');
     var count=add_vpi_count.val();
 
-    var calcresult=$("#calcresult > tr:not(.dis) > td.animated");
+    var calcresult=$("[id^='calcresult'] > tr:not(.dis) > td.animated");
     calcresult.each(function( index ) {// заполнение массива
     console.log( index + ": objFurnId " + $( this ).data('objfurnid') + '; Количество: ' +count  );  
     add_ids_list.push($( this ).data('objfurnid'),count);
