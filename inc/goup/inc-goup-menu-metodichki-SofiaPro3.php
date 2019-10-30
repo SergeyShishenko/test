@@ -5,7 +5,7 @@ $path_video="./dist/video/SofiaPro3/";
 $path_img="./dist/filesdb/images/thumbs/";
 /////////////////////////////////////
     $SP3=[];
-    $SP3[0]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=>"#SofiaPro",
                     'img'=> $path_img."tbstest.png",
                     'video'=> "",                    
@@ -13,7 +13,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"Программа SP3"];    
 
-    $SP3[1]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition1",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."1.mp4",
@@ -21,7 +21,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№1. Загрузка ДП, ДП+, КД в заказ"];
 
-    $SP3[2]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition2",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."2.mp4",
@@ -29,7 +29,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№2. Распечатать бланк Акта к изделиям "];                
                 
-    $SP3[3]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition3",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."3.mp4",
@@ -37,7 +37,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№3. Исправлена система отсчета сроков от Заключения договора или Оплаты (более поздней даты)"];
 
-    $SP3[4]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition4",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."4.mp4",
@@ -45,7 +45,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№4. Функция отметки обязательств по ДП, ГП и Монтажу "];
 
-    $SP3[5]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition5",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."5.mp4",
@@ -53,7 +53,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№5. Прикрепление ВПИ, ВФ и Стекол и зеркал к образцам"];
 
-    $SP3[6]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition6",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."6.mp4",
@@ -62,7 +62,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'def'=>"№6. Упростить создание повторного приложения (сделать кнопку в заказе)"];
 
   
-    $SP3[7]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition7",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."7.mp4",
@@ -70,7 +70,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№7. Во вкладке ДП добавлен № комплекта и возможность оставлять на экране только нужные комплект"];
                     
-    $SP3[8]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition8",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."8.mp4",
@@ -78,7 +78,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№8. Входная информация от заказчика"];
                     
-    $SP3[9]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition9",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."9.mp4",
@@ -86,7 +86,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№9. Функция ознакомления в Чек листе"];
                     
-    $SP3[10]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition10",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."10.mp4",
@@ -94,7 +94,7 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№10. ТЗ от Заказчика и ТЗ для строителей Заказчика. Прикрепление файлов"];
 
-    $SP3[11]=['path'=>"metodichki-SofiaPro3.php",
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition16",
                     'img'=> $path_img."tbstest.png",
                     'video'=> $path_video."16.mp4",
