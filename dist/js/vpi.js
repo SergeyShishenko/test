@@ -59,10 +59,12 @@ $("body").on("click","[id^=\'addvpi\']",function() {// alert('ВПИ');
 // calcresult
  // alert($('#add_vpi_count').data("objfurn"));
     $('#loading1').show();
-    var add_vpi_count = $(this).parent().parent().find('th.quantity > div > div > input');
+    var curr_table =$(this).parent().parent();
+    var add_vpi_count = curr_table.find('th.quantity > div > div > input');
     var count=add_vpi_count.val();
-
-    var calcresult=$("[id^='calcresult'] > tr:not(.dis) > td.animated");
+    // var calcresult=curr_table.find("[id^='calcresult'] > tr:not(.dis) > td.animated");
+    // alert(curr_table.parent().parent().find("[id^='calcresult'] > tr:not(.dis) > td.animated").data('objfurnid'));
+    var calcresult=curr_table.parent().parent().find("[id^='calcresult'] > tr:not(.dis) > td.animated");
     calcresult.each(function( index ) {// заполнение массива
     console.log( index + ": objFurnId " + $( this ).data('objfurnid') + '; Количество: ' +count  );  
     add_ids_list.push($( this ).data('objfurnid'),count);
