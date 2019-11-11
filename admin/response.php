@@ -20,8 +20,11 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
     $Bild=$_POST["content_Bild"];
     $Colour=$_POST["content_Colour"];
     $Unit=$_POST["content_Unit"];
+    $HrefArticul=$_POST["content_HrefArticul"];
+    $typeFurn=$_POST["content_path_img_obj"];
  // добавляем новую запись во все таблицы объекта
-                    $sql = " INSERT INTO `obj` (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`, `img_orientation_obj`, `img_alt_obj`, `template_obj`) VALUES (NULL,'$Furn', '$GruppId', '', NULL,'$NameFile', NULL, '', NULL, '$Furn', NULL, NULL, 'album', NULL, NULL)";
+                    $sql = " INSERT INTO `obj` (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`, `img_orientation_obj`, `img_alt_obj`, `template_obj`)
+                     VALUES (NULL,'$Furn', '$GruppId', '', '$typeFurn','$NameFile', NULL, '', NULL, '$Furn', NULL, NULL, 'album', NULL, NULL)";
                     if(mysqli_query($dbconn,$sql))
                     {                    
                         $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
@@ -37,7 +40,7 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
                             //  "INSERT INTO  `obj_furnitur_prop`(`obj_id`,`name_furnitur_obj_prop`,`articul_furnitur_obj`,`def_obj_prop`,`made_furnitur_obj`,`color_obj_prop`,`unit_obj_prop`)  
                             //  VALUES ('$id','$Furn','$Art','$Colour','$Unit')");
                              "INSERT INTO  `obj_furnitur_prop`(`obj_furnitur_prop_id`, `name_furnitur_obj_prop`, `articul_furnitur_obj`, `made_furnitur_obj`, `url_furnitur_obj_prop`, `obj_id`, `url_video_obj_prop`, `color_obj_prop`, `def_obj_prop`, `unit_obj_prop`, `fname_img_furn`)  
-                             VALUES (NULL, '$Furn', '$Art', '$Bild', NULL, '$id', NULL, '$Colour', '$Furn', '$Unit', '$NameFile')");
+                             VALUES (NULL, '$Furn', '$Art', '$Bild', NULL, '$id', '$HrefArticul', '$Colour', '$Furn', '$Unit', '$NameFile')");
 
 
 

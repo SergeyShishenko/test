@@ -70,9 +70,12 @@ if(isset($_POST['ids']))//генерация xls
    // require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
     $ids=$_POST['ids'];
     $data =  array();
+
     // $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
     // $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
     // $s_id=$row_user['s_id'];
+
+    
 
   // выбираем все записи текущей сессии
     $sql = "SELECT *  FROM `user_vpi` WHERE `s_id` = $s_id";
@@ -83,6 +86,15 @@ if(isset($_POST['ids']))//генерация xls
         while ($rowsUser_vpi = mysqli_fetch_array($User_vpi_Result))// заполнение массива пока есть записи текущей сессии
             {     
                 $furnitur_id=$rowsUser_vpi['obj_id'];
+
+
+                $Result_obj = mysqli_query($dbconn,"SELECT *  FROM `obj` WHERE `obj_id` = '$furnitur_id'");//MySQL запрос
+                $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы               
+                if(isset($row_obj["path_img_obj"]))//тип(директория) фурнитуры в папках thumbs,pagevpi,carousel
+                {$typeFurn=$row_obj["path_img_obj"]."/";}
+                else{$typeFurn='';}
+                mysqli_free_result($Result_obj); 
+
                 $furnitur_count=$rowsUser_vpi['count_obj'];
                 // $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_id` = $furnitur_id";// из таблицы вся фурнитура
                 $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_id` = $furnitur_id";// из таблицы вся фурнитура
@@ -150,11 +162,11 @@ if(isset($_POST['ids']))//генерация xls
             $row = $baseRow + $r;
             $objPHPExcel->getActiveSheet()->insertNewRowBefore($row,1);
 
-            if (file_exists($_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'])) {
-                $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для сайта !!!!!!!
+            if (file_exists($_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'])) {
+                $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'];// для сайта !!!!!!!
             }
             else {
-                $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
+                $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
             }
 
             // $sheet->getColumnDimension('K')->setWidth(40); 
@@ -206,7 +218,7 @@ if(isset($_POST['ids']))//генерация xls
         // echo dirname(__FILE__)."\/vpi-".date('m-d-Y').".xls", EOL;
         $fname="vpi-".date('m-d-Y-H-i-s').".xls";
 
-        if (file_exists($_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'])) {
+        if (file_exists($_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'])) {
             $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
         }
         else {
@@ -317,6 +329,7 @@ elseif (isset($_POST['addids'])) {
 
 
 mysqli_free_result($Result_user); 
+
 mysqli_close($dbconn);
 
 ?>

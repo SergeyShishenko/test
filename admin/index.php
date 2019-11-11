@@ -1,5 +1,7 @@
 <?php require('header.php');
-  //`grupp` 4 ШТАНГИ МЕБЕЛЬНЫЕ  group_4
+//localhost/www/admin/index.php
+
+//добавить группу `grupp` 4 ШТАНГИ МЕБЕЛЬНЫЕ  group_4  (footer.php)
 
 ?>
 
@@ -191,6 +193,7 @@
                                                                                                 <ul class="thumbnails gallery" id="obj-parent-grupp_'.$row_grupp["grupp_id"].'"><!--Объекты-->';                                                                                                 
                                                                                                  $grupp_id= $row_grupp["grupp_id"];
                                                                                                 // $thumbs="/";
+                                                                                                //path_img_obj - тип(директория) фурнитуры в папках thumbs,pagevpi,carousel
                                                                                                 // $active="active";
                                                                                                 // //MySQL запрос
                                                                                             if($Result_obj = mysqli_query($dbconn,"SELECT *  FROM obj WHERE grupp_id = $grupp_id  ORDER BY `obj`.`number_in_order_obj` ASC"))
@@ -199,15 +202,18 @@
                                                                                                 while($row_obj = mysqli_fetch_array($Result_obj))
                                                                                                 {                                                                                                      
                                                                                                     $i =$row_obj["obj_id"];
+                                                                                                    if(isset($row_obj["path_img_obj"]))
+                                                                                                    {$typeFurn=$row_obj["path_img_obj"]."/";}
+                                                                                                    else{$typeFurn='';}
                                                                                                     echo'<li id="image-'. $i.'" class="thumbnail" data-name="'.$row_obj["name_obj"].'">
                                                                                                             <p class="" id="name_obj_'.$row_obj["obj_id"].'">'. $row_obj["name_obj"].'</p>
-                                                                                                            <a style="background:url(../'.PATH__FILES.'images/thumbs/tbs'.$row_obj["fname_img_obj"].');"
+                                                                                                            <a style="background:url(../'.PATH__FILES.'images/thumbs/'.$typeFurn.'tbs'.$row_obj["fname_img_obj"].');"
                                                                                                                 title="'.$row_obj["name_obj"].'"
                                                                                                                 href="../'.PATH__FILES.'images/'.$row_obj["fname_img_obj"].'"                                                                                                                
                                                                                                                 >
                                                                                                                 <img
                                                                                                                     class="grayscale"
-                                                                                                                    src="../'.PATH__FILES.'images/thumbs/tbs'.$row_obj["fname_img_obj"].'"
+                                                                                                                    src="../'.PATH__FILES.'images/thumbs/'.$typeFurn.'tbs'.$row_obj["fname_img_obj"].'"
                                                                                                                     alt="'.$row_obj["name_obj"].'"
                                                                                                                     data-parent="grupp_id-'.$grupp_id.'"
                                                                                                                     data-id="obj_'.$i.'"

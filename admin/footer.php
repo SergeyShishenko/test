@@ -60,20 +60,22 @@
     <footer class="row">
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
             <!-- <label>Добавить раздел</label> -->
-            <input type="text" value="" name="add_section" class="text" size="100" placeholder="Наименование раздела" id="contentText" >                   
+            <input type="text" value="" name="add_section" class="text" size="150" placeholder="Наименование раздела" id="contentText" >                   
             <!-- <input type="submit" value="Добавить раздел" name="write" class="button" id="FormSubmit0"> -->
             <button type="submit" class="button animated tada" id="FormSubmit" >Добавить раздел  <span class="glyphicon glyphicon-plus-sign"></span>   </button>
         </div>
         <hr><hr>
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
            
-            <input type="text" value="Саморез 4,0x30 PZ для дерева, неполная резьба, потай, оцинкованный" name="add_Furn" class="text add" size="100" placeholder="Наименование фурнитуры" id="Furn" >
-            <input type="text" value="Б/А" name="add_Art" class="text add" size="100" placeholder="Артикул" id="Art" >
-            <input type="text" value="samorez-nepolnaya-rezba.png" name="add_NameFile" class="text add" size="100" placeholder="Имя файла" id="NameFile" >
-            <input type="text" value="4" name="add_grupp_id" class="text add" size="100" placeholder="grupp_id" id="grupp_id" >
-            <input type="text" value="Стройдвор" name="add_Bild" class="text add" size="100" placeholder="Производитель" id="Bild" >
-            <input type="text" value="желтый/белый цинк" name="add_Colour" class="text add" size="100" placeholder="Цвет" id="Colour" >
-            <input type="text" value="шт." name="add_Unit" class="text add" size="100" placeholder="Ед.измерения" id="Unit" >
+            <input type="text" value="Светильник штанга для гардероба, под светодиодную ленту 2500 мм" name="add_Furn" class="text add" size="150" placeholder="Наименование фурнитуры" id="Furn" >
+            <input type="text" value="833.72.790" name="add_Art" class="text add" size="150" placeholder="Артикул" id="Art" >
+            <input type="text" value="833_72_790-1.png" name="add_NameFile" class="text add" size="150" placeholder="Имя файла" id="NameFile" >
+            <input type="text" value="4" name="add_grupp_id" class="text add" size="150" placeholder="grupp_id" id="grupp_id" >
+            <input type="text" value="shtangi" name="add_path_img_obj" class="text add" size="150" placeholder="тип(директория) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" > <!--  тип(директория) фурнитуры в папках thumbs,pagevpi,carousel-->
+            <input type="text" value="HAFELE" name="add_Bild" class="text add" size="150" placeholder="Производитель" id="Bild" >
+            <input type="text" value="алюминий" name="add_Colour" class="text add" size="150" placeholder="Цвет" id="Colour" >
+            <input type="text" value="шт." name="add_Unit" class="text add" size="150" placeholder="Ед.измерения" id="Unit" >
+            <input type="text" value="https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/profili-dlya-svetodiodnyh-lent/svetilnik-shtanga-dlya-garderoba-pod-svetodiodnuyu-lentu.html" name="add_href_articul" class="text add" size="150" placeholder="Cсылка на страницу фурнитуры" id="HrefArticul" >
             <button type="submit" class="button animated tada" id="AddFurnSubmit" >Добавить новую фурнитуру<span class="glyphicon glyphicon-plus-sign"></span></button>
         </div>
         <!-- <div id='outputting'></div> -->
@@ -127,9 +129,11 @@
                     if($("#Art").val()===""){ alert("Введите Артикул!"); return false;}
                     if($("#NameFile").val()===""){ alert("Введите Имя файла!"); return false;}
                     if($("#grupp_id").val()===""){ alert("Введите номер группы!"); return false;}
+                    if($("#path_img_obj").val()===""){ alert("Введите тип(директория) фурнитуры в папках thumbs,pagevpi,carousel!"); return false;}
                     if($("#Bild").val()===""){ alert("Введите Производитель!"); return false;}
                     if($("#Colour").val()===""){ alert("Введите Цвет!"); return false;}
                     if($("#Unit").val()===""){ alert("Введите Ед.измерения!"); return false;}
+                    if($("#HrefArticul").val()===""){ alert("Введите ссылку на страницу фурнитуры!"); return false;}
                     // return false;
                     //post variables
                     // var myData = "content_Furn="+ $("#Furn").val(); 
@@ -137,9 +141,11 @@
                                  "content_Art="+ $("#Art").val() +"&"+
                                  "content_NameFile="+ $("#NameFile").val() +"&"+
                                  "content_grupp_id="+ $("#grupp_id").val() +"&"+
+                                 "content_path_img_obj="+ $("#path_img_obj").val() +"&"+
                                  "content_Bild="+ $("#Bild").val() +"&"+
                                  "content_Colour="+ $("#Colour").val() +"&"+
-                                 "content_Unit="+ $("#Unit").val();
+                                 "content_Unit="+ $("#Unit").val() +"&"+
+                                 "content_HrefArticul="+ $("#HrefArticul").val();
                                 
                     jQuery.ajax({
                         type: "POST", // HTTP метод  POST или GET

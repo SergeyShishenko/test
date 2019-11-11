@@ -47,14 +47,21 @@
 // получаем все записи из таблицы user_vpi
   while($row_vpi = mysqli_fetch_array($Result_vpi))
   {  
-      $furn_id=$row_vpi['obj_id'];
+    $furn_id=$row_vpi['obj_id'];
+
+    $Result_obj = mysqli_query($dbconn,"SELECT *  FROM `obj` WHERE `obj_id` = '$furn_id'");//MySQL запрос
+    $row_obj = mysqli_fetch_array($Result_obj);//получаем все записи из таблицы               
+    if(isset($row_obj["path_img_obj"]))//тип(директория) фурнитуры в папках thumbs,pagevpi,carousel
+    {$typeFurn=$row_obj["path_img_obj"]."/";}
+    else{$typeFurn='';}
+
     $Result_furniture = mysqli_query($dbconn,"SELECT * FROM `obj_furnitur_prop` WHERE `obj_id` = $furn_id "); 
     $furniture = mysqli_fetch_assoc($Result_furniture); 
   echo'   
                                                         
                                                             <tr>
                                                                 <td class="image">
-                                                                    <img src="./dist/filesdb/images/thumbs/tbs'.$furniture["fname_img_furn"].'" alt="'.$furniture["name_furnitur_obj_prop"].'"  title="'.$furniture["name_furnitur_obj_prop"].'">
+                                                                    <img src="./dist/filesdb/images/thumbs/'.$typeFurn.'tbs'.$furniture["fname_img_furn"].'" alt="'.$furniture["name_furnitur_obj_prop"].'"  title="'.$furniture["name_furnitur_obj_prop"].'">
                                                                 </td>
                                                                 <td class="articul">'.$furniture['articul_furnitur_obj'].'</td>
                                                                 <td class="name" ><p>'.$furniture['def_obj_prop'].'</p></td>
@@ -78,6 +85,7 @@
     ';       
     }//while
     mysqli_free_result($Result_vpi);
+    mysqli_free_result($Result_obj);
     //Закрывает соединение с сервером MySQL
     // mysqli_close($dbconn); 
     if ($data["count"]==0) {$dis="dis";$cartempty="";}else{$dis="";$cartempty="dis";}       

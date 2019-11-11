@@ -29,8 +29,8 @@ $shtangi[1]=['path'=>"furnitura-dlya-mebeli-shtangi3.php",
                                                         'alt'=>"Светильник штанга",
                                                         'count'=> 1,// количество
                                                         'supplier_articul'=>"833.72.790",//артикул поставщика
-                                                        'id_table'=>"00",//data-objfurnid
-                                                        'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/profili-dlya-svetodiodnyh-lent/svetilnik-shtanga-dlya-garderoba-pod-svetodiodnuyu-lentu.html" ,//страница фурнитуры                            
+                                                        'id_table'=>"129",//data-objfurnid
+                                                        'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/profili-dlya-svetodiodnyh-lent/svetilnik-shtanga-dlya-garderoba-pod-svetodiodnuyu-lentu.html" ,//Cсылка на страницу фурнитуры                            
                                                         'color_material'=>"алюминий",//цвет/материал
                                                         'def'=>"Светильник штанга для гардероба, под светодиодную ленту 2500 мм"  //описание                         
                                                         ),
@@ -40,7 +40,7 @@ $shtangi[1]=['path'=>"furnitura-dlya-mebeli-shtangi3.php",
                                                         'count'=> 2,// количество
                                                         'supplier_articul'=>"803.25.950",//артикул поставщика
                                                         'id_table'=>"00",//data-objfurnid
-                                                        'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/12v/komplektuyushchie-dlya-svetilnikov/derzhatel-ovalnoj-shtangi-cvet-alyuminij.html" ,//страница фурнитуры                            
+                                                        'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/12v/komplektuyushchie-dlya-svetilnikov/derzhatel-ovalnoj-shtangi-cvet-alyuminij.html" ,//Cсылка на страницу фурнитуры                            
                                                         'color_material'=>"цинковое литьё / алюминий",//цвет/материал
                                                         'def'=>"Держатель овальной штанги"  //описание                         
                                                          ),
@@ -50,7 +50,7 @@ $shtangi[1]=['path'=>"furnitura-dlya-mebeli-shtangi3.php",
                                                         'count'=> 1,// количество
                                                         'supplier_articul'=>"802.07.910",//артикул поставщика
                                                         'id_table'=>"00",//data-objfurnid
-                                                        'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/12v/komplektuyushchie-dlya-svetilnikov/derzhatel-srednij-dlya-ovalnoj-shtangi-cvet-alyuminij.html" ,//страница фурнитуры                            
+                                                        'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/12v/komplektuyushchie-dlya-svetilnikov/derzhatel-srednij-dlya-ovalnoj-shtangi-cvet-alyuminij.html" ,//Cсылка на страницу фурнитуры                            
                                                         'color_material'=>"алюминий",//цвет/материал
                                                         'def'=>"Держатель средний для овальной штанги"  //описание                         
                                                         )
@@ -128,7 +128,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"HW.012.1930.PR",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
-                                                                'href_articul'=>"https://makmart.ru/WItem/12429/" ,//страница фурнитуры                            
+                                                                'href_articul'=>"https://makmart.ru/WItem/12429/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"алюминий",//цвет/материал
                                                                 'def'=>"Профиль-штанга 1930 для LED подсветки, L=2000 мм"  //описание                         
                                                                 ),
@@ -138,7 +138,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                                 'count'=> 2,// количество
                                                                 'supplier_articul'=>"HW.012.1930.H1",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
-                                                                'href_articul'=>"https://makmart.ru/WItem/12430/" ,//страница фурнитуры                            
+                                                                'href_articul'=>"https://makmart.ru/WItem/12430/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"пластик / серый",//цвет/материал
                                                                 'def'=>"Штангодержатель для профиль-штанги 1930, цвет серый"  //описание                         
                                                         ),
@@ -148,7 +148,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"HW.012.1930.C1",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
-                                                                'href_articul'=>"https://makmart.ru/WItem/12428/" ,//страница фурнитуры                            
+                                                                'href_articul'=>"https://makmart.ru/WItem/12428/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"пластик / серый",//цвет/материал
                                                                 'def'=>"Заглушка с отверстием для профиль-штанги 1930, цвет серый"  //описание                         
                                                         ),
@@ -158,7 +158,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"HW.012.1707.TR",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
-                                                                'href_articul'=>"https://makmart.ru/WItem/8625/" ,//страница фурнитуры                            
+                                                                'href_articul'=>"https://makmart.ru/WItem/8625/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"Транспарент",//цвет/материал
                                                                 'def'=>"Профиль-рассеиватель 1707 для LED подсветки, L=2000мм, отделка транспарент"  //описание                         
                                                         ),
@@ -168,7 +168,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"HW.012.1707.FR",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
-                                                                'href_articul'=>"https://makmart.ru/WItem/8626/" ,//страница фурнитуры                            
+                                                                'href_articul'=>"https://makmart.ru/WItem/8626/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"Матовый",//цвет/материал
                                                                 'def'=>"Профиль-рассеиватель 1707 для LED подсветки, L=2000мм, отделка матовый"  //описание                         
                                                         )
@@ -257,7 +257,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'count'=> 1,// количество
                                                                         'supplier_articul'=>"TA02STCR",//артикул поставщика
                                                                         'id_table'=>"23",//data-objfurnid
-                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12605/" ,//страница фурнитуры                            
+                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12605/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Штанга овальная 15х30, хром, L-3000"  //описание                         
                                                                         ),
@@ -267,7 +267,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'count'=> 2,// количество
                                                                         'supplier_articul'=>"RT03ZNL",//артикул поставщика
                                                                         'id_table'=>"00",//data-objfurnid
-                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12587/" ,//страница фурнитуры                            
+                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12587/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Штангодержатель для овальной штанги"  //описание                         
                                                                         ),
@@ -277,7 +277,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'count'=> 1,// количество
                                                                         'supplier_articul'=>"WA0612SCR",//артикул поставщика
                                                                         'id_table'=>"00",//data-objfurnid
-                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12606/" ,//страница фурнитуры                            
+                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12606/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Штангодержатели для овальной штанги, хром, крепление к боковине и к полке (прав.+лев.)"  //описание                         
                                                                         ),
@@ -287,7 +287,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'count'=> 1,// количество
                                                                         'supplier_articul'=>"WA0612CCR",//артикул поставщика
                                                                         'id_table'=>"00",//data-objfurnid
-                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12607/" ,//страница фурнитуры                            
+                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12607/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Штангодержатель для овальной штанги, центральный, хром, крепление к полке"  //описание                         
                                                                         ),
@@ -297,7 +297,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'count'=> 2,// количество
                                                                         'supplier_articul'=>"7030CR",//артикул поставщика
                                                                         'id_table'=>"00",//data-objfurnid
-                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12603/" ,//страница фурнитуры                            
+                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12603/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Заглушка для овальной штанги, хром"  //описание                         
                                                                         )
@@ -385,7 +385,7 @@ $shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi1.php",
                                                                         'count'=> 1,// количество
                                                                         'supplier_articul'=>"JOK.004B.CR 05",//артикул поставщика
                                                                         'id_table'=>"00",//data-objfurnid
-                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/13009/" ,//страница фурнитуры                            
+                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/13009/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Труба круглая D25 мм, хром, L-1000"  //описание                         
                                                                         ),
@@ -394,7 +394,7 @@ $shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi1.php",
                                                                         'count'=> 2,// количество
                                                                         'supplier_articul'=>"JOK.015B.CR 03",//артикул поставщика
                                                                         'id_table'=>"00",//data-objfurnid
-                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/60127/" ,//страница фурнитуры                            
+                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/60127/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"  //описание                         
                                                                 ),
@@ -403,7 +403,7 @@ $shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi1.php",
                                                                         'count'=> 6,// количество
                                                                         'supplier_articul'=>" US3,5 X 20 KB/1000ШТ",//артикул поставщика
                                                                         'id_table'=>"00",//data-objfurnid
-                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/samorezy/8903/" ,//страница фурнитуры                            
+                                                                        'href_articul'=>"https://www.mdm-complect.ru/catalog/samorezy/8903/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"оцинкованный",//цвет/материал
                                                                         'def'=>"Саморез с потайной головкой под крест, 3.5 Х 20"  //описание                         
                                                                 )
@@ -472,7 +472,7 @@ $shtangi[5]=['path'=>"furnitura-dlya-mebeli-shtangi2.php",
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"JOK.004B.CR 05",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
-                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/13009/" ,//страница фурнитуры                            
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/13009/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"хром",//цвет/материал
                                                                 'def'=>"Труба круглая D25 мм, хром, L-2000"  //описание                         
                                                                 ),
@@ -481,7 +481,7 @@ $shtangi[5]=['path'=>"furnitura-dlya-mebeli-shtangi2.php",
                                                                 'count'=> 2,// количество
                                                                 'supplier_articul'=>"JOK.015B.CR 03",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
-                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/60127/" ,//страница фурнитуры                            
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/60127/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"хром",//цвет/материал
                                                                 'def'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"  //описание                         
                                                         ),
@@ -490,7 +490,7 @@ $shtangi[5]=['path'=>"furnitura-dlya-mebeli-shtangi2.php",
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"306.CR 01",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
-                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/12992/" ,//страница фурнитуры                            
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/12992/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"хром",//цвет/материал
                                                                 'def'=>"Держатель (трубы проходной) хром"  //описание                         
                                                         ),
@@ -499,7 +499,7 @@ $shtangi[5]=['path'=>"furnitura-dlya-mebeli-shtangi2.php",
                                                                 'count'=> 9,// количество
                                                                 'supplier_articul'=>" US3,5 X 20 KB/1000ШТ",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
-                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/samorezy/8903/" ,//страница фурнитуры                            
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/samorezy/8903/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"оцинкованный",//цвет/материал
                                                                 'def'=>"Саморез с потайной головкой под крест, 3.5 Х 20"  //описание                         
                                                         )
