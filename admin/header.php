@@ -366,6 +366,7 @@
         .file {
             width: 200px  !important;
         }
+        .cls{height: 38px  !important;}
 
     </style>
 </head>

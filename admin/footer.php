@@ -66,16 +66,59 @@
         </div>
         <hr><hr>
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
+      
+
+        <div class="input-group">
+            <span class="input-group-addon cls">X</span>
+            <input type="text" value="Светильник штанга для гардероба, под светодиодную ленту 2500 мм" name="add_Furn" class="form-control text add" placeholder="Наименование фурнитуры"  id="Furn">         
+        </div>       
+      
+        <div class="input-group">
+            <span class="input-group-addon cls">X</span>
+            <input type="text" value="833.72.790" name="add_Art" class="text add form-control" size="150" placeholder="Артикул" id="Art" >        
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon cls">X</span>
+            <input type="text" value="833_72_790-1.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла" id="NameFile" >       
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon cls">X</span>
+            <input type="text" value="4" name="add_grupp_id" class="text add form-control" size="150" placeholder="grupp_id" id="grupp_id" >      
+        </div>
+            
+        <div class="input-group">
+            <span class="input-group-addon cls">X</span>
+            <input type="text" value="shtangi" name="add_path_img_obj" class="text add form-control" size="150" placeholder="тип(директория) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" > <!--  тип(директория) фурнитуры в папках thumbs,pagevpi,carousel-->    
+        </div>
+            
+        <select id="Bild" name="add_Bild" class="text add form-control">
+            <option value="HAFELE">HAFELE</option>
+            <option value="МДМ-КОМПЛЕКТ">МДМ-КОМПЛЕКТ</option>
+            <option value="МАКМАРТ" selected>МАКМАРТ</option>
+            <option value="BLUM" >BLUM</option>
+        </select>
+
+        <div class="input-group">
+            <span class="input-group-addon cls">X</span>
+            <input type="text" value="алюминий" name="add_Colour" class="text add form-control" size="150" placeholder="Цвет" id="Colour" >   
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-addon cls">X</span>
+            <input type="text" value="шт." name="add_Unit" class="text add form-control" size="150" placeholder="Ед.измерения" id="Unit" >  
+        </div> 
+
+         <div class="input-group">
+            <span class="input-group-addon cls">X</span>
+            <input type="text" value="https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/profili-dlya-svetodiodnyh-lent/svetilnik-shtanga-dlya-garderoba-pod-svetodiodnuyu-lentu.html" name="add_href_articul" class="text add form-control" size="150" placeholder="Cсылка на страницу фурнитуры" id="HrefArticul" > 
+        </div>    
+
+            
+
            
-            <input type="text" value="Светильник штанга для гардероба, под светодиодную ленту 2500 мм" name="add_Furn" class="text add" size="150" placeholder="Наименование фурнитуры" id="Furn" >
-            <input type="text" value="833.72.790" name="add_Art" class="text add" size="150" placeholder="Артикул" id="Art" >
-            <input type="text" value="833_72_790-1.png" name="add_NameFile" class="text add" size="150" placeholder="Имя файла" id="NameFile" >
-            <input type="text" value="4" name="add_grupp_id" class="text add" size="150" placeholder="grupp_id" id="grupp_id" >
-            <input type="text" value="shtangi" name="add_path_img_obj" class="text add" size="150" placeholder="тип(директория) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" > <!--  тип(директория) фурнитуры в папках thumbs,pagevpi,carousel-->
-            <input type="text" value="HAFELE" name="add_Bild" class="text add" size="150" placeholder="Производитель" id="Bild" >
-            <input type="text" value="алюминий" name="add_Colour" class="text add" size="150" placeholder="Цвет" id="Colour" >
-            <input type="text" value="шт." name="add_Unit" class="text add" size="150" placeholder="Ед.измерения" id="Unit" >
-            <input type="text" value="https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/profili-dlya-svetodiodnyh-lent/svetilnik-shtanga-dlya-garderoba-pod-svetodiodnuyu-lentu.html" name="add_href_articul" class="text add" size="150" placeholder="Cсылка на страницу фурнитуры" id="HrefArticul" >
+
             <button type="submit" class="button animated tada" id="AddFurnSubmit" >Добавить новую фурнитуру<span class="glyphicon glyphicon-plus-sign"></span></button>
         </div>
         <!-- <div id='outputting'></div> -->
@@ -93,8 +136,20 @@
 <script src="js/jquery.uploadify-3.1.min.js"></script>
 <script src="js/charisma.js"></script>
 <script>
-    // var $ = jQuery.noConflict();
+  
+    
+
+ // var $ = jQuery.noConflict();
    $(document).ready(function() {
+            
+            // изменение цвета выбранных  input
+            $( ".add" ).change(function() {
+                $(this).css("background-color", "LawnGreen ");
+            });
+           // очищение input
+            $( ".cls" ).click(function() {
+                $(this).parent().find('input').val('').css("background-color", "White ");
+            });
             // Добавляем НОВЫЙ РАЗДЕЛ, когда произошел клик по кнопке
                 $("#FormSubmit").click(function (e) {
                     e.preventDefault();

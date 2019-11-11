@@ -25,8 +25,7 @@ $shtangi[1]=['path'=>"furnitura-dlya-mebeli-shtangi3.php",
                                                         'def'=>"Светильник штанга для гардероба, под светодиодную ленту, 2500 мм"  //описание                         
                                                         ),
                                                 array(                            
-                                                        'img'=>$path_img_composition_article."Articul833_72_790-1.png",//100х67 для VPI
-                                                        'alt'=>"Светильник штанга",
+                                                        'img'=>$path_img_composition_article."Articul833_72_790-1.png",//100х67 для VPI                                                        
                                                         'count'=> 1,// количество
                                                         'supplier_articul'=>"833.72.790",//артикул поставщика
                                                         'id_table'=>"129",//data-objfurnid
@@ -35,21 +34,19 @@ $shtangi[1]=['path'=>"furnitura-dlya-mebeli-shtangi3.php",
                                                         'def'=>"Светильник штанга для гардероба, под светодиодную ленту 2500 мм"  //описание                         
                                                         ),
                                                 array(                            
-                                                        'img'=>$path_img_composition_article."Articul803_25_950-1.png", //100х67 для VPI
-                                                        'alt'=>"Держатель",
+                                                        'img'=>$path_img_composition_article."Articul803_25_950-1.png", //100х67 для VPI                                                       
                                                         'count'=> 2,// количество
                                                         'supplier_articul'=>"803.25.950",//артикул поставщика
-                                                        'id_table'=>"00",//data-objfurnid
+                                                        'id_table'=>"130",//data-objfurnid
                                                         'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/12v/komplektuyushchie-dlya-svetilnikov/derzhatel-ovalnoj-shtangi-cvet-alyuminij.html" ,//Cсылка на страницу фурнитуры                            
                                                         'color_material'=>"цинковое литьё / алюминий",//цвет/материал
                                                         'def'=>"Держатель овальной штанги"  //описание                         
                                                          ),
                                                 array(                            
-                                                        'img'=>$path_img_composition_article."Articul802_07_910-1.png", //100х67 для VPI
-                                                        'alt'=>"Держатель",
+                                                        'img'=>$path_img_composition_article."Articul802_07_910-1.png", //100х67 для VPI                                                      
                                                         'count'=> 1,// количество
                                                         'supplier_articul'=>"802.07.910",//артикул поставщика
-                                                        'id_table'=>"00",//data-objfurnid
+                                                        'id_table'=>"131",//data-objfurnid
                                                         'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/12v/komplektuyushchie-dlya-svetilnikov/derzhatel-srednij-dlya-ovalnoj-shtangi-cvet-alyuminij.html" ,//Cсылка на страницу фурнитуры                            
                                                         'color_material'=>"алюминий",//цвет/материал
                                                         'def'=>"Держатель средний для овальной штанги"  //описание                         
@@ -123,28 +120,25 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                                 'def'=>"Профиль-штанга 1930 для LED подсветки, L=2000 мм, отделка алюминий"  //описание                         
                                                                 ),
                                                         array(                            
-                                                                'img'=>$path_img_composition_article."ArticulHW_012_1930_PR-1.png",//100х67 для VPI
-                                                                'alt'=>"Профиль-штанга",
+                                                                'img'=>$path_img_composition_article."ArticulHW_012_1930_PR-1.png",//100х67 для VPI                                                               
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"HW.012.1930.PR",//артикул поставщика
-                                                                'id_table'=>"00",//data-objfurnid
+                                                                'id_table'=>"132",//data-objfurnid
                                                                 'href_articul'=>"https://makmart.ru/WItem/12429/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"алюминий",//цвет/материал
                                                                 'def'=>"Профиль-штанга 1930 для LED подсветки, L=2000 мм"  //описание                         
                                                                 ),
                                                         array(                            
-                                                                'img'=>$path_img_composition_article."ArticulHW_012_1930_H1-1.png", //100х67 для VPI
-                                                                'alt'=>"Штангодержатель",
+                                                                'img'=>$path_img_composition_article."ArticulHW_012_1930_H1-1.png", //100х67 для VPI                                                            
                                                                 'count'=> 2,// количество
                                                                 'supplier_articul'=>"HW.012.1930.H1",//артикул поставщика
-                                                                'id_table'=>"00",//data-objfurnid
+                                                                'id_table'=>"133",//data-objfurnid
                                                                 'href_articul'=>"https://makmart.ru/WItem/12430/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"пластик / серый",//цвет/материал
                                                                 'def'=>"Штангодержатель для профиль-штанги 1930, цвет серый"  //описание                         
                                                         ),
                                                         array(                            
-                                                                'img'=>$path_img_composition_article."ArticulHW_012_1930_C1-1.png", //100х67 для VPI
-                                                                'alt'=>"Заглушка с отверстием",
+                                                                'img'=>$path_img_composition_article."ArticulHW_012_1930_C1-1.png", //100х67 для VPI                                                               
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"HW.012.1930.C1",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
@@ -153,8 +147,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                                 'def'=>"Заглушка с отверстием для профиль-штанги 1930, цвет серый"  //описание                         
                                                         ),
                                                         array(                            
-                                                                'img'=>$path_img_composition_article."ArticulHW_012_1707_TR.png", //100х67 для VPI
-                                                                'alt'=>"Профиль-рассеиватель",
+                                                                'img'=>$path_img_composition_article."ArticulHW_012_1707_TR.png", //100х67 для VPI                                                                
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"HW.012.1707.TR",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
@@ -163,8 +156,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                                 'def'=>"Профиль-рассеиватель 1707 для LED подсветки, L=2000мм, отделка транспарент"  //описание                         
                                                         ),
                                                         array(                            
-                                                                'img'=>$path_img_composition_article."ArticulHW_012_1707_FR.png", //100х67 для VPI
-                                                                'alt'=>"Профиль-рассеиватель",
+                                                                'img'=>$path_img_composition_article."ArticulHW_012_1707_FR.png", //100х67 для VPI                                                               
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"HW.012.1707.FR",//артикул поставщика
                                                                 'id_table'=>"00",//data-objfurnid
@@ -252,8 +244,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         ),
                                                                 
                                                                 array(                            
-                                                                        'img'=>$path_img_composition_article."ArticulTA02STCR-1.png",//100х67 для VPI
-                                                                        'alt'=>"Штанга овальная 15х30, хром, L-3000",
+                                                                        'img'=>$path_img_composition_article."ArticulTA02STCR-1.png",//100х67 для VPI                                                                        
                                                                         'count'=> 1,// количество
                                                                         'supplier_articul'=>"TA02STCR",//артикул поставщика
                                                                         'id_table'=>"23",//data-objfurnid
@@ -262,8 +253,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'def'=>"Штанга овальная 15х30, хром, L-3000"  //описание                         
                                                                         ),
                                                                         array(                            
-                                                                        'img'=>$path_img_composition_article."ArticulRT03ZNL-1.png", //100х67 для VPI
-                                                                        'alt'=>"Штангодержатель для овальной штанги",
+                                                                        'img'=>$path_img_composition_article."ArticulRT03ZNL-1.png", //100х67 для VPI                                                                    
                                                                         'count'=> 2,// количество
                                                                         'supplier_articul'=>"RT03ZNL",//артикул поставщика
                                                                         'id_table'=>"00",//data-objfurnid
@@ -272,8 +262,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'def'=>"Штангодержатель для овальной штанги"  //описание                         
                                                                         ),
                                                                         array(                            
-                                                                        'img'=>$path_img_composition_article."ArticulWA0612SCR-1.png", //100х67 для VPI
-                                                                        'alt'=>"Штангодержатели для овальной штанги, хром, крепление к боковине и к полке (прав.+лев.)",
+                                                                        'img'=>$path_img_composition_article."ArticulWA0612SCR-1.png", //100х67 для VPI                                                                      
                                                                         'count'=> 1,// количество
                                                                         'supplier_articul'=>"WA0612SCR",//артикул поставщика
                                                                         'id_table'=>"00",//data-objfurnid
@@ -282,8 +271,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'def'=>"Штангодержатели для овальной штанги, хром, крепление к боковине и к полке (прав.+лев.)"  //описание                         
                                                                         ),
                                                                         array(                            
-                                                                        'img'=>$path_img_composition_article."ArticulWA0612CCR.png", //100х67 для VPI
-                                                                        'alt'=>"Штангодержатель для овальной штанги, центральный, хром, крепление к полке",
+                                                                        'img'=>$path_img_composition_article."ArticulWA0612CCR.png", //100х67 для VPI                                                                     
                                                                         'count'=> 1,// количество
                                                                         'supplier_articul'=>"WA0612CCR",//артикул поставщика
                                                                         'id_table'=>"00",//data-objfurnid
@@ -292,8 +280,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'def'=>"Штангодержатель для овальной штанги, центральный, хром, крепление к полке"  //описание                         
                                                                         ),
                                                                         array(                            
-                                                                        'img'=>$path_img_composition_article."Articul7030CR-1.png", //100х67 для VPI
-                                                                        'alt'=>"Заглушка для овальной штанги, хром",
+                                                                        'img'=>$path_img_composition_article."Articul7030CR-1.png", //100х67 для VPI                                                                     
                                                                         'count'=> 2,// количество
                                                                         'supplier_articul'=>"7030CR",//артикул поставщика
                                                                         'id_table'=>"00",//data-objfurnid
