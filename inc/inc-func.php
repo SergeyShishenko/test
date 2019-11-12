@@ -1099,6 +1099,87 @@ function VPI($arr,$curr_page) //
 
 ///////////////////////////////
 
+function VPI2($arr,$curr_page) //
+{
+    for ($j=0; $j < count($arr[$curr_page]['composition_article']); $j++) { 
+        $a=$arr[$curr_page]['composition_article'][$j];
+        echo '    
+        <div class="row" style="margin-bottom: 15px; margin-left: 15px; padding-top: 15px;">
+            <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
+                        border: 1px solid rgb(221, 221, 221);
+                        box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+                        border-radius: 4px;
+                        padding: 15px;
+                        ">
+
+                <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
+                    <div class="row">                                                
+                        <h3 class="blum">';echo $a[0]['articul_500STP'];echo'</h3>
+                        <h3 class="blum">';echo $a[0]['def'];echo'</h3>
+                        <!-- <p> <a href="furnitura-dlya-mebeli-petlya-clip-top-TL-vkladnaya.php#petlya-vkladnaya-TL" >
+                            <b>БЕЗ ПРУЖИНЫ</b> &nbsp;<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i></a>
+                        </p>   -->
+                        <h4 style=" margin-left: 0px !important;">Состав артикула:</h4>            
+                        <table class="table table-striped table-responsive">
+                                <thead>
+                                <tr>
+                                    <th>Список</th>                               
+                                    <th>Артикул</th>
+                                    <th>Цвет&nbsp;/&nbsp;материал</th>
+                                    <th>Описание</th> 
+                                    <th class="">
+                                    <!-- кнопка VPI -->
+                                        <button type="button" id="each_addvpi_1" class="btn btn-primary" style="float:right;"><i class="fa fa-cart-plus fa-lg" aria-hidden="true"></i> ВПИ</button>                                         
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="calcresult">
+                                
+                                ';
+                            
+                                for ($i=1; $i < count($a); $i++) {   
+                            echo'
+                                <tr>
+                                    <td><img src="';echo $a[$i]['img'];echo'"  alt="';echo $a[$i]['def'];echo'" ></td>                                   
+                                    <td   ';
+                                    echo ($a[$i]['id_table']!=="00") ? 'class="animated" data-objfurnid="'.$a[$i]['id_table']."\">" : '>';
+                                    //echo 'data-objfurnid="'.$a[$i]['id_table'];
+
+                                    echo'<a href="';echo $a[$i]['href_articul'];echo'" target="_blank">';echo $a[$i]['supplier_articul'];echo'</a></td>
+                                    <td>';echo $a[$i]['color_material'];echo'</td> 
+                                    <td >';echo $a[$i]['def'];echo'</td>
+                                    <td class="quantity"> 
+                                    <div class="input-group spinner"> 	
+                                        <div class="input-group-btn-vertical">                                                                        
+                                            <button class="btn btn-default" type="button">&ndash;</button>
+                                            <input type="text" class="form-control form-c" value="0" data-step="1" >
+                                            <button class="btn btn-default" type="button">+</button>
+                                        </div>
+                                    </div> 
+                                </td> 
+                                </tr>
+                            ';
+                                }
+                                echo'  
+                                </tbody>
+                            </table>
+                    </div>                              
+                </div>
+            </div>
+        </div>
+        ';
+    }
+    echo' 
+
+    <!-- следущая таблица комплект ВПИ -->
+  
+
+
+    ';                      
+}
+
+///////////////////////////////
+
 function ContentPage($arr,$curr_page,$article_id) //
 {
 echo' 
@@ -1110,7 +1191,7 @@ echo'
                     <h1 itemprop="name">'; echo $arr[0]['def'];echo'</h1>
                 </div>                   
                 <div class="bs-callout bs-callout-warning cont" id="';echo str_replace("#","",$arr[$curr_page]['id']);echo'"> ';                   
-                    VPI($arr,$curr_page);//ВПИ                   
+                    VPI2($arr,$curr_page);//ВПИ                   
                     TabContent($arr,$curr_page);
                 echo'
                 </div> <!--/bs-callout bs-callout-warning cont/-->
