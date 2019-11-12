@@ -22,6 +22,7 @@ $shtangi[1]=['path'=>"furnitura-dlya-mebeli-shtangi3.php",
                                                 array( // таблица состава артикула
                                                 array(   
                                                         'articul_500STP'=>"", //артикул 500СТП
+                                                        'id_table'=>"",//data-objfurnid
                                                         'def'=>"Светильник штанга для гардероба, под светодиодную ленту, 2500 мм"  //описание                         
                                                         ),
                                                 array(                            
@@ -117,6 +118,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                 array( // таблица состава артикула
                                                         array(   
                                                                 'articul_500STP'=>"5000000", //артикул 500СТП
+                                                                'id_table'=>"142",//data-objfurnid
                                                                 'def'=>"Профиль-штанга 1930 для LED подсветки, L=2000 мм, отделка алюминий"  //описание                         
                                                                 ),
                                                         array(                            
@@ -240,6 +242,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                         array(  // таблица состава артикула
                                                                 array(   
                                                                         'articul_500STP'=>"", //артикул 500СТП
+                                                                        'id_table'=>"",//data-objfurnid
                                                                         'def'=>"Штанга овальная 15х30, хром, L-3000"  //описание                         
                                                                         ),
                                                                 
@@ -365,6 +368,7 @@ $shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi1.php",
                                                         array( // таблица состава артикула
                                                                 array(   
                                                                         'articul_500STP'=>"5000502-10-300", //артикул 500СТП
+                                                                        'id_table'=>"142",//data-objfurnid
                                                                         'def'=>"Труба круглая D25 мм, хром, L-1000"  //описание                         
                                                                         ),
                                                                 array(                            
@@ -452,6 +456,7 @@ $shtangi[5]=['path'=>"furnitura-dlya-mebeli-shtangi2.php",
                                                 array( // таблица состава артикула
                                                         array(   
                                                                 'articul_500STP'=>"5000502-10-301", //артикул 500СТП
+                                                                'id_table'=>"142",//data-objfurnid
                                                                 'def'=>"Труба круглая D25 мм, хром, L-2000 с проходным держателем"  //описание                         
                                                                 ),
                                                         array(                            
