@@ -80,7 +80,7 @@
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="833_72_790-1.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла" id="NameFile" >       
+            <input type="text" value="833_72_790-1.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла изображения" id="NameFile" >       
         </div>
 
         <div class="input-group">

@@ -366,7 +366,10 @@
         .file {
             width: 200px  !important;
         }
-        .cls{height: 38px  !important;}
+        .cls{
+            height: 38px  !important;
+            cursor:pointer;
+        }
 
     </style>
 </head>

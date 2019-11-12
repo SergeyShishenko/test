@@ -141,7 +141,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                                 'img'=>$path_img_composition_article."ArticulHW_012_1930_C1-1.png", //100х67 для VPI                                                               
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"HW.012.1930.C1",//артикул поставщика
-                                                                'id_table'=>"00",//data-objfurnid
+                                                                'id_table'=>"134",//data-objfurnid
                                                                 'href_articul'=>"https://makmart.ru/WItem/12428/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"пластик / серый",//цвет/материал
                                                                 'def'=>"Заглушка с отверстием для профиль-штанги 1930, цвет серый"  //описание                         
@@ -150,7 +150,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                                 'img'=>$path_img_composition_article."ArticulHW_012_1707_TR.png", //100х67 для VPI                                                                
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"HW.012.1707.TR",//артикул поставщика
-                                                                'id_table'=>"00",//data-objfurnid
+                                                                'id_table'=>"135",//data-objfurnid
                                                                 'href_articul'=>"https://makmart.ru/WItem/8625/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"Транспарент",//цвет/материал
                                                                 'def'=>"Профиль-рассеиватель 1707 для LED подсветки, L=2000мм, отделка транспарент"  //описание                         
@@ -159,7 +159,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                                                                 'img'=>$path_img_composition_article."ArticulHW_012_1707_FR.png", //100х67 для VPI                                                               
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"HW.012.1707.FR",//артикул поставщика
-                                                                'id_table'=>"00",//data-objfurnid
+                                                                'id_table'=>"136",//data-objfurnid
                                                                 'href_articul'=>"https://makmart.ru/WItem/8626/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"Матовый",//цвет/материал
                                                                 'def'=>"Профиль-рассеиватель 1707 для LED подсветки, L=2000мм, отделка матовый"  //описание                         
@@ -247,7 +247,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'img'=>$path_img_composition_article."ArticulTA02STCR-1.png",//100х67 для VPI                                                                        
                                                                         'count'=> 1,// количество
                                                                         'supplier_articul'=>"TA02STCR",//артикул поставщика
-                                                                        'id_table'=>"23",//data-objfurnid
+                                                                        'id_table'=>"137",//data-objfurnid
                                                                         'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12605/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Штанга овальная 15х30, хром, L-3000"  //описание                         
@@ -256,7 +256,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'img'=>$path_img_composition_article."ArticulRT03ZNL-1.png", //100х67 для VPI                                                                    
                                                                         'count'=> 2,// количество
                                                                         'supplier_articul'=>"RT03ZNL",//артикул поставщика
-                                                                        'id_table'=>"00",//data-objfurnid
+                                                                        'id_table'=>"138",//data-objfurnid
                                                                         'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12587/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Штангодержатель для овальной штанги"  //описание                         
@@ -265,7 +265,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'img'=>$path_img_composition_article."ArticulWA0612SCR-1.png", //100х67 для VPI                                                                      
                                                                         'count'=> 1,// количество
                                                                         'supplier_articul'=>"WA0612SCR",//артикул поставщика
-                                                                        'id_table'=>"00",//data-objfurnid
+                                                                        'id_table'=>"139",//data-objfurnid
                                                                         'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12606/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Штангодержатели для овальной штанги, хром, крепление к боковине и к полке (прав.+лев.)"  //описание                         
@@ -274,7 +274,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'img'=>$path_img_composition_article."ArticulWA0612CCR.png", //100х67 для VPI                                                                     
                                                                         'count'=> 1,// количество
                                                                         'supplier_articul'=>"WA0612CCR",//артикул поставщика
-                                                                        'id_table'=>"00",//data-objfurnid
+                                                                        'id_table'=>"140",//data-objfurnid
                                                                         'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12607/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Штангодержатель для овальной штанги, центральный, хром, крепление к полке"  //описание                         
@@ -283,7 +283,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
                                                                         'img'=>$path_img_composition_article."Articul7030CR-1.png", //100х67 для VPI                                                                     
                                                                         'count'=> 2,// количество
                                                                         'supplier_articul'=>"7030CR",//артикул поставщика
-                                                                        'id_table'=>"00",//data-objfurnid
+                                                                        'id_table'=>"141",//data-objfurnid
                                                                         'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/12603/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Заглушка для овальной штанги, хром"  //описание                         
@@ -371,7 +371,7 @@ $shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi1.php",
                                                                         'img'=>$path_img_composition_article."ArticulJOK-004B-CR.png",//100х67 для VPI                                       
                                                                         'count'=> 1,// количество
                                                                         'supplier_articul'=>"JOK.004B.CR 05",//артикул поставщика
-                                                                        'id_table'=>"00",//data-objfurnid
+                                                                        'id_table'=>"142",//data-objfurnid
                                                                         'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/13009/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Труба круглая D25 мм, хром, L-1000"  //описание                         
@@ -380,7 +380,7 @@ $shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi1.php",
                                                                         'img'=>$path_img_composition_article."ArticulJOK-015B-CR.png", //100х67 для VPI                                      
                                                                         'count'=> 2,// количество
                                                                         'supplier_articul'=>"JOK.015B.CR 03",//артикул поставщика
-                                                                        'id_table'=>"00",//data-objfurnid
+                                                                        'id_table'=>"143",//data-objfurnid
                                                                         'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/60127/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"хром",//цвет/материал
                                                                         'def'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"  //описание                         
@@ -388,8 +388,8 @@ $shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi1.php",
                                                                 array(                            
                                                                         'img'=>$path_img_composition_article."ArticulUS-KB.png", //100х67 для VPI                                        
                                                                         'count'=> 6,// количество
-                                                                        'supplier_articul'=>" US3,5 X 20 KB/1000ШТ",//артикул поставщика
-                                                                        'id_table'=>"00",//data-objfurnid
+                                                                        'supplier_articul'=>"US3,5 X 20 KB/1000ШТ",//артикул поставщика
+                                                                        'id_table'=>"144",//data-objfurnid
                                                                         'href_articul'=>"https://www.mdm-complect.ru/catalog/samorezy/8903/" ,//Cсылка на страницу фурнитуры                            
                                                                         'color_material'=>"оцинкованный",//цвет/материал
                                                                         'def'=>"Саморез с потайной головкой под крест, 3.5 Х 20"  //описание                         
@@ -458,7 +458,7 @@ $shtangi[5]=['path'=>"furnitura-dlya-mebeli-shtangi2.php",
                                                                 'img'=>$path_img_composition_article."ArticulJOK-004B-CR.png",//100х67 для VPI                                       
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"JOK.004B.CR 05",//артикул поставщика
-                                                                'id_table'=>"00",//data-objfurnid
+                                                                'id_table'=>"142",//data-objfurnid
                                                                 'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/13009/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"хром",//цвет/материал
                                                                 'def'=>"Труба круглая D25 мм, хром, L-2000"  //описание                         
@@ -467,7 +467,7 @@ $shtangi[5]=['path'=>"furnitura-dlya-mebeli-shtangi2.php",
                                                                 'img'=>$path_img_composition_article."ArticulJOK-015B-CR.png", //100х67 для VPI                                      
                                                                 'count'=> 2,// количество
                                                                 'supplier_articul'=>"JOK.015B.CR 03",//артикул поставщика
-                                                                'id_table'=>"00",//data-objfurnid
+                                                                'id_table'=>"143",//data-objfurnid
                                                                 'href_articul'=>"https://www.mdm-complect.ru/catalog/shtangi/60127/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"хром",//цвет/материал
                                                                 'def'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"  //описание                         
@@ -476,7 +476,7 @@ $shtangi[5]=['path'=>"furnitura-dlya-mebeli-shtangi2.php",
                                                                 'img'=>$path_img_composition_article."Articul306.png", //100х67 для VPI                                      
                                                                 'count'=> 1,// количество
                                                                 'supplier_articul'=>"306.CR 01",//артикул поставщика
-                                                                'id_table'=>"00",//data-objfurnid
+                                                                'id_table'=>"145",//data-objfurnid
                                                                 'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/12992/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"хром",//цвет/материал
                                                                 'def'=>"Держатель (трубы проходной) хром"  //описание                         
@@ -485,7 +485,7 @@ $shtangi[5]=['path'=>"furnitura-dlya-mebeli-shtangi2.php",
                                                                 'img'=>$path_img_composition_article."ArticulUS-KB.png", //100х67 для VPI                                        
                                                                 'count'=> 9,// количество
                                                                 'supplier_articul'=>" US3,5 X 20 KB/1000ШТ",//артикул поставщика
-                                                                'id_table'=>"00",//data-objfurnid
+                                                                'id_table'=>"144",//data-objfurnid
                                                                 'href_articul'=>"https://www.mdm-complect.ru/catalog/samorezy/8903/" ,//Cсылка на страницу фурнитуры                            
                                                                 'color_material'=>"оцинкованный",//цвет/материал
                                                                 'def'=>"Саморез с потайной головкой под крест, 3.5 Х 20"  //описание                         
