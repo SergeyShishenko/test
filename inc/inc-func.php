@@ -1101,7 +1101,10 @@ function VPI($arr,$curr_page) //
 
 function VPI2($arr,$curr_page) //
 {
-    for ($j=0; $j < count($arr[$curr_page]['composition_article']); $j++) {
+    $countarr = count($arr[$curr_page]['composition_article']);
+     ($countarr < 2) ? $marginbottom='margin-bottom: 15px;' : $marginbottom='';
+   
+    for ($j=0; $j < $countarr; $j++) {
         
         
         $a=$arr[$curr_page]['composition_article'][$j];
@@ -1120,10 +1123,8 @@ function VPI2($arr,$curr_page) //
                         <div class="row">                                                
                             <h3 class="blum">';echo $a[0]['articul_500STP'];echo'</h3>
                             <h3 class="blum">';echo $a[0]['def'];echo'</h3>
-                            <!-- <p> <a href="furnitura-dlya-mebeli-petlya-clip-top-TL-vkladnaya.php#petlya-vkladnaya-TL" >
-                                <b>БЕЗ ПРУЖИНЫ</b> &nbsp;<i class="glyphicon glyphicon-arrow-right" aria-hidden="true"></i></a>
-                            </p>   -->
-                            <h4 style=" margin-left: 0px !important;">Состав артикула:</h4>            
+                          
+                                     
                             <table class="table table-striped table-responsive">
                                     <thead>
                                     <tr>
@@ -1175,7 +1176,7 @@ function VPI2($arr,$curr_page) //
         }else  // выбор артикула 500STP
         {
             echo '    
-            <div class="row" style="margin-bottom: 15px; margin-left: 15px; padding-top: 15px;">
+            <div class="row" style="'; echo $marginbottom ; echo ' margin-left: 15px; padding-top: 15px;">
                 <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
                             border: 1px solid rgb(221, 221, 221);
                             box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
