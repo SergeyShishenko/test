@@ -625,6 +625,8 @@ function onScroll(){
 //Живой поиск
 var db_search;
 $(function() {
+
+    
   if (!$("#iframe_1").length) { db_search = $("table p");}
    else {
          $("iframe#iframe_1").load(function(){db_search = $(this).contents().find("table p");});
