@@ -176,7 +176,14 @@ if($item_profile_directory_Class=="active")
 // // echo $item_profile_directory_Class;
 // echo ");</script>
 // ";  
-echo '<script src="./dist/js/gallery.js"></script>';
+echo 
+'<script src="./dist/js/gallery.js"></script>
+<script src="./dist/js/live-search-gallery.js"></script>';
+}
+else{
+    echo 
+'<script src="./dist/js/live-search.js"></script>';
+
 }
 
 ?>
