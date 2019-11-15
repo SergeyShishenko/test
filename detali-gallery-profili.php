@@ -134,4 +134,7 @@ include 'inc/inc-left-side-menu-detali.php';
                         </ul>
                     </div>
                 </div><!-- боковое меню блоки дверные конец -->
-<?php include 'inc/inc-footer.php'; ?>
+<?php
+$notFrame=true;//нет Frame
+ include 'inc/inc-footer.php';
+  ?>

@@ -132,7 +132,11 @@
         </div>
  <!--/image-gallery  -->
 
-    <iframe src="index.php" width="100%" height="600" id="iframe_1"  style="display: none"  ></iframe>
+ <? if (!isset($notFrame)) {echo '<iframe src="index.php" width="100%" height="600" id="iframe_1"  style="display: none"  ></iframe>'; } ?>
+
+    <!-- <iframe src="index.php" width="100%" height="600" id="iframe_1"  style="display: none"  ></iframe> -->
+
+
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script> 
     <script src="./dist/js/application.js"></script> 
