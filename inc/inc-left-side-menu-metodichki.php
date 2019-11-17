@@ -86,6 +86,7 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                     LeftSideMenu($gostinaya);
                     LeftSideMenu($spalnya);
                     LeftSideMenu($aktovyyzal);
+                    LeftSideMenu($kuhnya);
                    
                 echo'                   
                     </ul>

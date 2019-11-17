@@ -1277,6 +1277,218 @@
                         
     ];
 /////////////////////////////////////    
+    // kuhnya
+/////////////////////////////////////
+
+    $path_img="./dist/images/metodichki-kuhnya/";
+    $kuhnya=[];
+    $kuhnya[0]=['path'=>"metodichki-ergonomika.php",
+                    'id'=>"#ergonomika-kuhnya",
+                    'def'=>"Эргономика кухни"];
+
+    $kuhnya[1]=['path'=>"metodichki-ergonomika.php",
+                    'id'=> "#kuhnya",
+                    'def'=>"Кухня",
+                    'content'=>array(
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-1",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-2",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-3",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),                              
+                            
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-4",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-5",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-6",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-7",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-8",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-9",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-10",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-11",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-12",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-13",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-14",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-15",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "kuhnya-16",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'overlay'=>false 
+                                )
+                           
+                            
+
+                                )//content
+                        
+    ];
+/////////////////////////////////////    
 
     
    

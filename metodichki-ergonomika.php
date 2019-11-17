@@ -21,11 +21,12 @@ include 'inc/inc-left-side-menu-metodichki.php';
         ContentListGoupMenu($gostinaya);
         ContentListGoupMenu($spalnya);
         ContentListGoupMenu($aktovyyzal);
+        ContentListGoupMenu($kuhnya);
       ?>       
     </div> 
   <!-- /main  -->
           <?php                  
-            $arrlist = [$vannaya,$garderobnaya,$prihozhaya,$stoly,$detskaya,$antropologiya,$gostinaya,$spalnya,$aktovyyzal];           
+            $arrlist = [$vannaya,$garderobnaya,$prihozhaya,$stoly,$detskaya,$antropologiya,$gostinaya,$spalnya,$aktovyyzal,$kuhnya];           
             SideMenuList($arrlist)
           ?> 
 <?php include 'inc/inc-footer.php'; ?>
