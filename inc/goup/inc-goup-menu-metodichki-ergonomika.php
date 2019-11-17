@@ -1065,6 +1065,218 @@
                         
     ];
 /////////////////////////////////////    
+    // aktovyyzal
+/////////////////////////////////////
+
+    $path_img="./dist/images/metodichki-aktovyy-zal/";
+    $aktovyyzal=[];
+    $aktovyyzal[0]=['path'=>"metodichki-ergonomika.php",
+                    'id'=>"#ergonomika-aktovyyzal",
+                    'def'=>"Эргономика актового зала"];
+
+    $aktovyyzal[1]=['path'=>"metodichki-ergonomika.php",
+                    'id'=> "#aktovyyzal",
+                    'def'=>"Актовый зал",
+                    'content'=>array(
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-1",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-2",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-3",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                   
+                                    'overlay'=>false 
+                                    ),                              
+                            
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-4",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-5",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-6",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-7",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-8",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-9",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-10",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-11",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-12",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-13",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-14",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-15",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
+                                ),
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "aktovyyzal-16",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    'overlay'=>false 
+                                )
+                           
+                            
+
+                                )//content
+                        
+    ];
+/////////////////////////////////////    
 
     
    
