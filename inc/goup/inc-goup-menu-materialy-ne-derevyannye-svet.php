@@ -506,9 +506,51 @@ $svet[3]=['path'=>"materialy-ne-derevyannye-svet-transformatory.php",
                                         </ul>
                                         </p>", 
                 //инструкции                         
-                'instrukciya_def'=>"<h4 >Проектирование</h3>
-                                <!-- <h5 >Лента светодиодная, источники питания и коннекторы, пожалуйста, отдельно.</h5>-->
-                                ", 
+                'instrukciya_def'=>'
+                <h4>Калькулятор подбора блока питания для светодиодной ленты</h4>
+                <div id="calc" class="row">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="padding: 5px;" width="60px">Вид</td>
+                            <td style="padding: 5px;">
+                            <div><select name="n_type">
+                            <option value="4.8">SMD 3528 60 светодиодов/метр 4,8 Вт/метр</option>
+                            <option value="7.2">SMD 3528 90 светодиодов/метр 7,2 Вт/метр</option>
+                            <option selected value="9.6">SMD 3528 120 светодиодов/метр 9,6 Вт/метр</option>
+                            <option value="19.2">SMD 3528 240 светодиодов/метр 19,2 Вт/метр</option>
+                            <option value="12">SMD 2835 120 светодиодов/метр 12 Вт/метр</option>
+                            <option value="7.2">SMD 5050 (5060) 30 светодиодов/метр 7,2 Вт/метр</option>
+                            <option value="14.4">SMD 5050 (5060) 60 светодиодов/метр 14,4 Вт/метр</option>
+                            <option value="24">SMD 3014 240 светодиодов/метр 24 Вт/метр</option>
+                            </select></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;" width="60px">Напряжение питания</td>
+                            <td style="padding: 5px;">
+                            <div><select name="n_v">
+                            <option value="12">12V</option>
+                            <option value="24">24V</option>
+                            </select></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;">Длина, м</td>
+                            <td style="padding: 5px;"><input value="5" name="n_len" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 5px;"><button onclick="Start(); return false;">Рассчитать</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding-top: 15px; padding-bottom: 15px;">
+                            <div id="result" style="color: #1CA768;font-size:16px;">&nbsp;</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                                ', 
                 'instrukciya_carousel'=>array( // инструкция
                                 array(                            
                                         'img'=>$path_img_carousel."JOK-004B-CR.png",//data-image, src, data-src  800x800 и 960x640                                                            

@@ -28,6 +28,7 @@
     <script src="./dist/js/shortcut.js"></script>
     <script src="./dist/js/drop.js"></script>  
     <script src="./dist/js/selectcell.js"></script>
+    <script src="./dist/js/calac-bloka-pitaniya.js"></script>
     <script>
     window.bLazy = new Blazy({
         //container: \'.container\',
