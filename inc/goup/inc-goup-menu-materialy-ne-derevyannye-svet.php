@@ -190,7 +190,7 @@ $svet[1]=['path'=>"materialy-ne-derevyannye-svet-lenta.php",
                             Производитель
                         </td>
                         <td>
-                                                                                <a href=h'ttps://arlight.ru ' rel='nofollow' target='_blank'>Arlight</a>
+                                                                                <a href='https://arlight.ru ' rel='nofollow' target='_blank'>Arlight</a>
                                                                 </td>
                     </tr>
                 </tbody></table>
