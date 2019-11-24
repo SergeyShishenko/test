@@ -279,7 +279,7 @@ echo '
             box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
             border-radius: 4px;
             padding: 15px;
-            height: 747px;
+            
                 ">
             <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
                 <li ><a href="#harakteristiki" data-toggle="tab">Характеристики</a></li>

@@ -5086,7 +5086,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                             <tr><TD>&nbsp;  </TD></tr> <!--end LEVEL3-->                                                                        
                                                             <TR>
                                                                 <TD data-tooltip="" class="hover mapsite">
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png">Зеркала и стекла - таблица стандартных образцов<span><br>~-11701tablica-dlin-shirin-tolshchin-dlya-specifikacii</span></p>
+                                                                    <p data-href="" data-img="./dist/images/no-foto.png">Лента<span><br>~-11701tablica-dlin-shirin-tolshchin-dlya-specifikacii</span></p>
                                                                 </TD>                                                             
                                                             </TR>
                                                             

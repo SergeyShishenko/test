@@ -1,5 +1,6 @@
 <?php
 include 'inc/goup/inc-goup-menu-materialy-stekla-zerkala.php';//$steklazerkala=[]
+include 'inc/goup/inc-goup-menu-materialy-ne-derevyannye-svet.php';//$svet=[]
  echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">
@@ -163,6 +164,32 @@ include 'inc/goup/inc-goup-menu-materialy-stekla-zerkala.php';//$steklazerkala=[
                         <!-- menu -->
                         <li class="menu disabled">
                             <a href="materialy-ne-derevyannye-tkan-kozha.php" class="list-group-item '.$item_tkan_kozha_Class.'">ТКАНЬ, КОЖА</a>
+                            <ul class="list-group sub_menu">
+                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
+                                    <ul class="list-group sub_menu2">
+                                        <li><a class="list-group-item sub" href="#">...</a>
+                                        </li>
+                                        <li><a class="list-group-item sub" href="#">...</a>
+                                        </li>
+                                        <li><a class="list-group-item sub" href="#">...</a>
+                                        </li>                                          
+                                    </ul>
+                                </li>
+                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#sborochnye-shemy-paneli-stenovye">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
+                                    <ul class="list-group sub_menu2">
+                                        <li><a class="list-group-item sub" href="#">...</a>
+                                        </li>
+                                        <li><a class="list-group-item sub" href="#">...</a>
+                                        </li>
+                                        <li><a class="list-group-item sub" href="#">...</a>
+                                        </li>                                       
+                                    </ul>
+                                </li>                    
+                            </ul>
+                        </li>                                                      
+                        <!-- menu -->
+                        <li class="menu ">
+                            <a href="materialy-ne-derevyannye-svet-lenta.php" class="list-group-item '.$item_svet_Class.'">СВЕТ</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
                                     <ul class="list-group sub_menu2">
