@@ -6,13 +6,13 @@ $path_img_carousel="./dist/filesdb/images/carousel/svet/";//800x800 и 960x640 �
 
 /////////////////////////////////////
 $svet=[];
-$svet[0]=['path'=>"materialy-ne-derevyannye-svet-lenta.php",
+$svet[0]=['path'=>"materialy-ne-derevyannye-svet.php?node=lenta",//node
                 'id'=>"#svet",
                 'img'=> $path_img."tbssvet.png",//200x200 для поиска
                 'keywords'=>"",
                 'def'=>"СВЕТ"];    
 
-$svet[1]=['path'=>"materialy-ne-derevyannye-svet-lenta.php",
+$svet[1]=['path'=>"materialy-ne-derevyannye-svet.php?node=lenta",
                 'id'=> "#LED-lenta",
                 'img'=> $path_img."tbs833_72_790-1.png", //200x200 для поиска
                 'keywords'=>"",
@@ -234,7 +234,7 @@ $svet[1]=['path'=>"materialy-ne-derevyannye-svet-lenta.php",
                 
                 
 ];
-$svet[2]=['path'=>"materialy-ne-derevyannye-svet-profil.php",
+$svet[2]=['path'=>"materialy-ne-derevyannye-svet.php?node=profily",
                 'id'=> "#alyuminievyy-profil",
                 'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
                 'keywords'=>"",
@@ -358,11 +358,239 @@ $svet[2]=['path'=>"materialy-ne-derevyannye-svet-profil.php",
                 
                 
 ];
-$svet[3]=['path'=>"materialy-ne-derevyannye-svet-transformatory.php",
+$svet[3]=['path'=>"materialy-ne-derevyannye-svet.php?node=transformatory",
                 'id'=> "#transformatory",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
                 'keywords'=>"Трансформаторы",
                 'def'=>"Трансформаторы",  //описание   для меню  
+
+                'composition_article'=>array( 
+
+                                                array( // таблица состава артикула
+                                                        array(   
+                                                                'articul_500STP'=>"", //артикул 500СТП
+                                                                'id_table'=>"147",//data-objfurnid
+                                                                'def'=>"Труба круглая D25 мм, хром, L-1000"  //описание                         
+                                                                ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."ArticulJOK-004B-CR.png",//100х67 для VPI                                       
+                                                                'count'=> 1,// количество
+                                                                'supplier_articul'=>"JOK.004B.CR 05",//артикул поставщика
+                                                                'id_table'=>"142",//data-objfurnid
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/13009/" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"хром",//цвет/материал
+                                                                'def'=>"Труба круглая D25 мм, хром, L-1000"  //описание                         
+                                                                ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."ArticulJOK-015B-CR.png", //100х67 для VPI                                      
+                                                                'count'=> 2,// количество
+                                                                'supplier_articul'=>"JOK.015B.CR 03",//артикул поставщика
+                                                                'id_table'=>"143",//data-objfurnid
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/svet/60127/" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"хром",//цвет/материал
+                                                                'def'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"  //описание                         
+                                                        ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."ArticulUS-KB.png", //100х67 для VPI                                        
+                                                                'count'=> 6,// количество
+                                                                'supplier_articul'=>"US3,5 X 20 KB/1000ШТ",//артикул поставщика
+                                                                'id_table'=>"144",//data-objfurnid
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/samorezy/8903/" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"оцинкованный",//цвет/материал
+                                                                'def'=>"Саморез с потайной головкой под крест, 3.5 Х 20"  //описание                         
+                                                        )
+                                                
+                                                
+                                                ),// состав артикула 
+                                                array( // таблица состава артикула
+                                                        
+                                                        array(   
+                                                                'articul_500STP'=>"", //артикул 500СТП
+                                                                'id_table'=>"146",//data-objfurnid
+                                                                'def'=>"Труба круглая D25 мм, хром, L-2000 с проходным держателем"  //описание                         
+                                                                ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."ArticulJOK-004B-CR.png",//100х67 для VPI                                       
+                                                                'count'=> 1,// количество
+                                                                'supplier_articul'=>"JOK.004B.CR 05",//артикул поставщика
+                                                                'id_table'=>"142",//data-objfurnid
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/13009/" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"хром",//цвет/материал
+                                                                'def'=>"Труба круглая D25 мм, хром, L-2000"  //описание                         
+                                                                ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."ArticulJOK-015B-CR.png", //100х67 для VPI                                      
+                                                                'count'=> 2,// количество
+                                                                'supplier_articul'=>"JOK.015B.CR 03",//артикул поставщика
+                                                                'id_table'=>"143",//data-objfurnid
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/svet/60127/" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"хром",//цвет/материал
+                                                                'def'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"  //описание                         
+                                                        ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."Articul306.png", //100х67 для VPI                                      
+                                                                'count'=> 1,// количество
+                                                                'supplier_articul'=>"306.CR 01",//артикул поставщика
+                                                                'id_table'=>"145",//data-objfurnid
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/12992/" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"хром",//цвет/материал
+                                                                'def'=>"Держатель (трубы проходной) хром"  //описание                         
+                                                        ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."ArticulUS-KB.png", //100х67 для VPI                                        
+                                                                'count'=> 9,// количество
+                                                                'supplier_articul'=>" US3,5 X 20 KB/1000ШТ",//артикул поставщика
+                                                                'id_table'=>"144",//data-objfurnid
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/samorezy/8903/" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"оцинкованный",//цвет/материал
+                                                                'def'=>"Саморез с потайной головкой под крест, 3.5 Х 20"  //описание                         
+                                                        )
+                                        
+                                                
+                                                ),// состав артикула  
+                                                array( // таблица состава артикула
+                                                        array(   
+                                                                'articul_500STP'=>"", //артикул 500СТП
+                                                                'id_table'=>"",//data-objfurnid
+                                                                'def'=>"Комплектующие:"  //описание                         
+                                                                ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."ArticulJOK-004B-CR.png",//100х67 для VPI                                       
+                                                                'count'=> 1,// количество
+                                                                'supplier_articul'=>"JOK.004B.CR 05",//артикул поставщика
+                                                                'id_table'=>"142",//data-objfurnid
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/13009/" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"хром",//цвет/материал
+                                                                'def'=>"Труба круглая D25 мм, хром, L-3000"  //описание                         
+                                                                ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."ArticulJOK-015B-CR.png", //100х67 для VPI                                      
+                                                                'count'=> 2,// количество
+                                                                'supplier_articul'=>"JOK.015B.CR 03",//артикул поставщика
+                                                                'id_table'=>"143",//data-objfurnid
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/svet/60127/" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"хром",//цвет/материал
+                                                                'def'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"  //описание                         
+                                                        ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."Articul306.png", //100х67 для VPI                                      
+                                                                'count'=> 1,// количество
+                                                                'supplier_articul'=>"306.CR 01",//артикул поставщика
+                                                                'id_table'=>"145",//data-objfurnid
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/12992/" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"хром",//цвет/материал
+                                                                'def'=>"Держатель (трубы проходной) хром"  //описание                         
+                                                        ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."ArticulUS-KB.png", //100х67 для VPI                                        
+                                                                'count'=> 9,// количество
+                                                                'supplier_articul'=>" US3,5 X 20 KB/1000ШТ",//артикул поставщика
+                                                                'id_table'=>"144",//data-objfurnid
+                                                                'href_articul'=>"https://www.mdm-complect.ru/catalog/samorezy/8903/" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"оцинкованный",//цвет/материал
+                                                                'def'=>"Саморез с потайной головкой под крест, 3.5 Х 20"  //описание                         
+                                                        )
+                                                
+                                                
+                                                )// состав артикула  
+                                         ),// массив артикулов 
+                //характеристики 
+                'harakteristiki_def'=>" <p>
+                                        <ul class='stat' style='margin-top: 0px;'>
+                                                <li><b>Труба круглая D25 мм с проходным держателем</b></li>
+                                                <li><b>ГЛУБИНА ШКАФА,ММ: свыше 500.</b></li> 
+                                                <li>Цвет: Хром.</li>
+                                                <li>Длина: 3000 мм.</li>                                                                              
+                                                <li>Производитель: PULSE (Китай)</li>                                                                                                                                                                                
+                                                                                                                                                                        
+                                        </ul>
+                                        </p>", 
+                //инструкции                         
+                'instrukciya_def'=>'
+                <h4>Калькулятор подбора блока питания для светодиодной ленты</h4>
+                <div id="calc" class="row">
+                <table width="100%">
+                    <tbody>
+                        <tr>
+                            <td style="padding: 5px;" width="60px">Вид</td>
+                            <td style="padding: 5px;">
+                            <div><select name="n_type">
+                            <option value="4.8">SMD 3528 60 светодиодов/метр 4,8 Вт/метр</option>
+                            <option value="7.2">SMD 3528 90 светодиодов/метр 7,2 Вт/метр</option>
+                            <option selected value="9.6">SMD 3528 120 светодиодов/метр 9,6 Вт/метр</option>
+                            <option value="19.2">SMD 3528 240 светодиодов/метр 19,2 Вт/метр</option>
+                            <option value="12">SMD 2835 120 светодиодов/метр 12 Вт/метр</option>
+                            <option value="7.2">SMD 5050 (5060) 30 светодиодов/метр 7,2 Вт/метр</option>
+                            <option value="14.4">SMD 5050 (5060) 60 светодиодов/метр 14,4 Вт/метр</option>
+                            <option value="24">SMD 3014 240 светодиодов/метр 24 Вт/метр</option>
+                            </select></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;" width="60px">Напряжение питания</td>
+                            <td style="padding: 5px;">
+                            <div><select name="n_v">
+                            <option value="12">12V</option>
+                            <option value="24">24V</option>
+                            </select></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px;">Длина, м</td>
+                            <td style="padding: 5px;"><input value="5" name="n_len" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding: 5px;"><button onclick="Start(); return false;">Рассчитать</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding-top: 15px; padding-bottom: 15px;">
+                            <div id="result" style="color: #1CA768;font-size:16px;">&nbsp;</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                                ', 
+                'instrukciya_carousel'=>array( // инструкция
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-004B-CR.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Труба круглая D25 мм, хром"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-004B_dr.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Труба круглая D25 мм, хром, толщина 0.9 мм"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-015B-CR.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."JOK-015B-03_dr.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Консоль-крепление к плоскости D=25мм (зажимная шпилька)"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."306.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Держатель (трубы проходной) хром"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."306-CR-01_dr.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Держатель (трубы проходной) хром"// data-title, alt
+                                ),
+                                array(                            
+                                        'img'=>$path_img_carousel."US-KB.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                        'title'=>"Саморез с потайной головкой под крест, 3.5 Х 20"// data-title, alt
+                                )                            
+                                
+                        
+                        )// инструкция               
+
+
+];
+$svet[4]=['path'=>"materialy-ne-derevyannye-svet.php?node=accessories",
+                'id'=> "#accessories",
+                'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
+                'keywords'=>"Аксессуары",
+                'def'=>"Аксессуары",  //описание   для меню  
 
                 'composition_article'=>array( 
 

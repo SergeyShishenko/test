@@ -6,13 +6,13 @@ $path_img_carousel="./dist/filesdb/images/carousel/shtangi/";//800x800 и 960x64
 
 /////////////////////////////////////
 $shtangi=[];
-$shtangi[0]=['path'=>"furnitura-dlya-mebeli-shtangi3.php",
+$shtangi[0]=['path'=>"furnitura-dlya-mebeli-shtangi.php?node=shtangi_1",
                 'id'=>"#svetilnik-shtanga",
                 'img'=> $path_img."tbsshtangi.png",//200x200 для поиска
                 'keywords'=>"",
                 'def'=>"ШТАНГИ МЕБЕЛЬНЫЕ"];    
 
-$shtangi[1]=['path'=>"furnitura-dlya-mebeli-shtangi3.php",
+$shtangi[1]=['path'=>"furnitura-dlya-mebeli-shtangi.php?node=shtangi_1",
                 'id'=> "#svetilnik-shtanga",
                 'img'=> $path_img."tbs833_72_790-1.png", //200x200 для поиска
                 'keywords'=>"",
@@ -108,7 +108,7 @@ $shtangi[1]=['path'=>"furnitura-dlya-mebeli-shtangi3.php",
                 
                 
 ];
-$shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
+$shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi.php?node=shtangi_2",
                 'id'=> "#profil-shtanga",
                 'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
                 'keywords'=>"",
@@ -232,7 +232,7 @@ $shtangi[2]=['path'=>"furnitura-dlya-mebeli-shtangi4.php",
                 
                 
 ];
-$shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
+$shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi.php?node=shtangi_3",
                         'id'=> "#ovalnaya-shtanga",
                         'img'=> $path_img."tbsTA02STCR-1.png", //200x200 для поиска
                         'keywords'=>"",
@@ -360,7 +360,7 @@ $shtangi[3]=['path'=>"furnitura-dlya-mebeli-shtangi5.php",
 
 
 
-$shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi1.php",
+$shtangi[4]=['path'=>"furnitura-dlya-mebeli-shtangi.php?node=shtangi_4",
                 'id'=> "#kruglaya-shtanga-s-prohodnym-derzhatelem",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
                 'keywords'=>"Штанга труба круглая D25 мм",
