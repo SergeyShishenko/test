@@ -313,8 +313,8 @@ $svet[2]=['path'=>"materialy-ne-derevyannye-svet.php?node=profily",
                                 ", 
                 'instrukciya_carousel'=>array( // инструкция
                                                 array(                            
-                                                        'img'=>$path_img_carousel."HW_012_1930_PR-1.png",//data-image, src, data-src  800x800 и 960x640                                                            
-                                                        'title'=>"Профиль-штанга 1930 для LED подсветки, L=2000 мм, отделка алюминий"// data-title, alt
+                                                        'img'=>$path_img_carousel."LSP-FM2-ALU-2000-0_dr.webp",//data-image, src, data-src  800x800 и 960x640                                                            
+                                                        'title'=>"Профиль FM2, врезной увеличенной высоты, 22х12мм, L-2000"// data-title, alt
                                                 ),
                                                 array(                            
                                                         'img'=>$path_img_carousel."HW_012_1930_PR-2.png",//data-image, src, data-src  800x800 и 960x640                                                            
