@@ -20,38 +20,38 @@ $svet[1]=['path'=>"materialy-ne-derevyannye-svet.php?node=lenta",
                 
                 'composition_article'=>array( 
                                                 array( // таблица состава артикула
-                                                array(   
-                                                        'articul_500STP'=>"", //артикул 500СТП
-                                                        'id_table'=>"",//data-objfurnid
-                                                        'def'=>"СВЕТОДИОДНАЯ ЛЕНТА RT 2-5000 12V COOL 8K 2X (3528, 600 LED, LUX) 120 LED НА 1М"  //описание                         
-                                                        ),
-                                                array(                            
-                                                        'img'=>$path_img_composition_article."Articul833_72_790-1.png",//100х67 для VPI                                                        
-                                                        'count'=> 1,// количество
-                                                        'supplier_articul'=>"833.72.790",//артикул поставщика
-                                                        'id_table'=>"129",//data-objfurnid
-                                                        'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/profili-dlya-svetodiodnyh-lent/svetilnik-shtanga-dlya-garderoba-pod-svetodiodnuyu-lentu.html" ,//Cсылка на страницу фурнитуры                            
-                                                        'color_material'=>"алюминий",//цвет/материал
-                                                        'def'=>"Светильник штанга для гардероба, под светодиодную ленту 2500 мм"  //описание                         
-                                                        ),
-                                                array(                            
-                                                        'img'=>$path_img_composition_article."Articul803_25_950-1.png", //100х67 для VPI                                                       
-                                                        'count'=> 2,// количество
-                                                        'supplier_articul'=>"803.25.950",//артикул поставщика
-                                                        'id_table'=>"130",//data-objfurnid
-                                                        'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/12v/komplektuyushchie-dlya-svetilnikov/derzhatel-ovalnoj-svet-cvet-alyuminij.html" ,//Cсылка на страницу фурнитуры                            
-                                                        'color_material'=>"цинковое литьё / алюминий",//цвет/материал
-                                                        'def'=>"Держатель овальной штанги"  //описание                         
-                                                         ),
-                                                array(                            
-                                                        'img'=>$path_img_composition_article."Articul802_07_910-1.png", //100х67 для VPI                                                      
-                                                        'count'=> 1,// количество
-                                                        'supplier_articul'=>"802.07.910",//артикул поставщика
-                                                        'id_table'=>"131",//data-objfurnid
-                                                        'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/12v/komplektuyushchie-dlya-svetilnikov/derzhatel-srednij-dlya-ovalnoj-svet-cvet-alyuminij.html" ,//Cсылка на страницу фурнитуры                            
-                                                        'color_material'=>"алюминий",//цвет/материал
-                                                        'def'=>"Держатель средний для овальной штанги"  //описание                         
-                                                        )
+                                                        array(   
+                                                                'articul_500STP'=>"", //артикул 500СТП
+                                                                'id_table'=>"",//data-objfurnid
+                                                                'def'=>"СВЕТОДИОДНАЯ ЛЕНТА RT 2-5000 12V COOL 8K 2X (3528, 600 LED, LUX) 120 LED НА 1М"  //описание                         
+                                                                ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."Articul833_72_790-1.png",//100х67 для VPI                                                        
+                                                                'count'=> 1,// количество
+                                                                'supplier_articul'=>"833.72.790",//артикул поставщика
+                                                                'id_table'=>"129",//data-objfurnid
+                                                                'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/profili-dlya-svetodiodnyh-lent/svetilnik-shtanga-dlya-garderoba-pod-svetodiodnuyu-lentu.html" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"алюминий",//цвет/материал
+                                                                'def'=>"Светильник штанга для гардероба, под светодиодную ленту 2500 мм"  //описание                         
+                                                                ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."Articul803_25_950-1.png", //100х67 для VPI                                                       
+                                                                'count'=> 2,// количество
+                                                                'supplier_articul'=>"803.25.950",//артикул поставщика
+                                                                'id_table'=>"130",//data-objfurnid
+                                                                'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/12v/komplektuyushchie-dlya-svetilnikov/derzhatel-ovalnoj-svet-cvet-alyuminij.html" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"цинковое литьё / алюминий",//цвет/материал
+                                                                'def'=>"Держатель овальной штанги"  //описание                         
+                                                                ),
+                                                        array(                            
+                                                                'img'=>$path_img_composition_article."Articul802_07_910-1.png", //100х67 для VPI                                                      
+                                                                'count'=> 1,// количество
+                                                                'supplier_articul'=>"802.07.910",//артикул поставщика
+                                                                'id_table'=>"131",//data-objfurnid
+                                                                'href_articul'=>"https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/12v/komplektuyushchie-dlya-svetilnikov/derzhatel-srednij-dlya-ovalnoj-svet-cvet-alyuminij.html" ,//Cсылка на страницу фурнитуры                            
+                                                                'color_material'=>"алюминий",//цвет/материал
+                                                                'def'=>"Держатель средний для овальной штанги"  //описание                         
+                                                                )
                                         
                                                  )// состав артикула  
                                         ),// массив артикулов 
@@ -201,34 +201,14 @@ $svet[1]=['path'=>"materialy-ne-derevyannye-svet.php?node=lenta",
                                 ", 
                 'instrukciya_carousel'=>array( // инструкция
                                                 array(                            
-                                                        'img'=>$path_img_carousel."833_72_790-1.png",//data-image, src, data-src  800x800 и 960x640                                                            
-                                                        'title'=>"Профиль-штанга 1930 для LED подсветки, L=2000 мм, отделка алюминий"// data-title, alt
+                                                        'img'=>$path_img_carousel."LS-3528-IP33-4-8.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                                        'title'=>"Лента"// data-title, alt
                                                 ),
+                                             
                                                 array(                            
-                                                        'img'=>$path_img_carousel."833_72_790-2.png",//data-image, src, data-src  800x800 и 960x640                                                            
-                                                        'title'=>"Профиль-штанга 1930 для LED подсветки, L=2000 мм, отделка алюминий"// data-title, alt
-                                                ),
-                                                array(                            
-                                                        'img'=>$path_img_carousel."803_25_950-3.png",//data-image, src, data-src  800x800 и 960x640                                                            
-                                                        'title'=>"Профиль-штанга 1930 для LED подсветки, L=2000 мм, отделка алюминий"// data-title, alt
-                                                ),
-                                                array(                            
-                                                        'img'=>$path_img_carousel."803_25_950-1.png",//data-image, src, data-src  800x800 и 960x640                                                            
-                                                        'title'=>"Вкладная конструкция"// data-title, alt
-                                                ),
-                                                array(                            
-                                                        'img'=>$path_img_carousel."803_25_950-2.png",//data-image, src, data-src  800x800 и 960x640                                                            
-                                                        'title'=>"Вкладная конструкция"// data-title, alt
-                                                ),
-                                                array(                            
-                                                        'img'=>$path_img_carousel."802_07_910-1.png",//data-image, src, data-src  800x800 и 960x640                                                            
-                                                        'title'=>"Вкладная конструкция"// data-title, alt
-                                                ),
-                                                array(                            
-                                                        'img'=>$path_img_carousel."802_07_910-2.png",//data-image, src, data-src  800x800 и 960x640                                                            
-                                                        'title'=>"Вкладная конструкция"// data-title, alt
-                                                        )
-                                                
+                                                        'img'=>$path_img_carousel."LS-2835-4-8_sch.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                                        'title'=>"Ленту можно резать, кратность реза равна 50 мм"// data-title, alt
+                                                )
                                         
                                         )// инструкция               
                 
