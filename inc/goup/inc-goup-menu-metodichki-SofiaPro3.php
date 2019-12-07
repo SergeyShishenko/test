@@ -94,6 +94,16 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№10. ТЗ от Заказчика и ТЗ для строителей Заказчика. Прикрепление файлов"];
 
+
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
+                    'id'=> "#addition11",
+                    'img'=> $path_img."tbstest.png",
+                    'video'=> $path_video."11.mp4",
+                    'keywords'=>"SP3 (дополнение 11) - Заполнение бланка образцов",
+                    'tilde'=>"ыз3",
+                    'def'=>"№11. Заполнение бланка образцов"];
+
+
     $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition16",
                     'img'=> $path_img."tbstest.png",
@@ -101,6 +111,8 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'keywords'=>"SP3 (дополнение 16) - Кнопки нет Факта, есть Факт во вкладке заказа",
                     'tilde'=>"ыз3",
                     'def'=>"№16. Кнопки нет Факта, есть Факт во вкладке заказа"];
+
+    
 
                 
     
