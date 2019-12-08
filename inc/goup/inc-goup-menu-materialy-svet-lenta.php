@@ -214,7 +214,7 @@ $lenta[1]=['path'=>"materialy-svet.php?group=lenta&node=lenta",
                 
                 
 ];
-$lenta[2]=['path'=>"materialy-svet.php?node=profily",
+$lenta[2]=['path'=>"materialy-svet.php?group=lenta&node=lenta",
                 'id'=> "#alyuminievyy-profil",
                 'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
                 'keywords'=>"",
@@ -338,7 +338,7 @@ $lenta[2]=['path'=>"materialy-svet.php?node=profily",
                 
                 
 ];
-$lenta[3]=['path'=>"materialy-svet.php?node=transformatory",
+$lenta[3]=['path'=>"materialy-svet.php?group=lenta&node=lenta",
                 'id'=> "#transformatory",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
                 'keywords'=>"Трансформаторы",
@@ -566,7 +566,7 @@ $lenta[3]=['path'=>"materialy-svet.php?node=transformatory",
 
 
 ];
-$lenta[4]=['path'=>"materialy-svet.php?node=accessories",
+$lenta[4]=['path'=>"materialy-svet.php?group=lenta&node=lenta",
                 'id'=> "#accessories",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
                 'keywords'=>"Аксессуары",

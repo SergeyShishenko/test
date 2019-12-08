@@ -1267,24 +1267,30 @@ function VPI2($arr,$curr_page) //
 function ContentPage($arr,$curr_page,$article_id) //
 {
 echo' 
-    <!-- main  -->
+<!-- main  -->
     <div class="col-md-8 col-md-8-non" role="main" id="main-page"> 
-        <article  id="';echo $article_id.'">
+';
+for ($i=0; $i < count($arr); $i++) { 
+    echo '
+        <article  id="';echo str_replace("#","",$arr[$i][0]['id']).'">
             <section >
                 <div class="page-header"     >
-                    <h1 itemprop="name">'; echo $arr[0]['def'];echo'</h1>
+                    <h1 itemprop="name">'; echo $arr[$i][0]['def'];echo'</h1>
                 </div>                   
-                <div class="bs-callout bs-callout-warning cont" id="';echo str_replace("#","",$arr[$curr_page]['id']);echo'"> ';                   
-                    VPI2($arr,$curr_page);//ВПИ                   
-                    TabContent($arr,$curr_page);
+                <div class="bs-callout bs-callout-warning cont" id="';echo str_replace("#","",$arr[$i][$curr_page]['id']);echo'"> ';                   
+                    VPI2($arr[$i],$curr_page);//ВПИ                   
+                    TabContent($arr[$i],$curr_page);
                 echo'
                 </div> <!--/bs-callout bs-callout-warning cont/-->
             </section> 
-        </article>                     
+        </article> 
+    ';    
+} 
+echo '
     </div>
 <!-- /main  -->
 ';
-SideMenu($arr,$curr_page);
+// SideMenu($arr,$curr_page);
 }
 
 /////////////////////////////// ФУРНИТУРА END

@@ -10,7 +10,7 @@ $transformatory[0]=['path'=>"materialy-svet.php?group=transformatory&node=transf
                 'id'=>"#transformatory",
                 'img'=> $path_img."tbssvet.png",//200x200 для поиска
                 'keywords'=>"",
-                'def'=>"Трансформаторы"];    
+                'def'=>"ТРАНСФОРМАТОРЫ"];    
 
 $transformatory[1]=['path'=>"materialy-svet.php?group=transformatory&node=transformatory",
                 'id'=> "#LED-transformatory",
@@ -566,7 +566,7 @@ $transformatory[3]=['path'=>"materialy-svet.php?group=transformatory&node=transf
 
 
 ];
-$transformatory[4]=['path'=>"materialy-svet.php?node=accessories",
+$transformatory[4]=['path'=>"materialy-svet.php?group=transformatory&node=transformatory",
                 'id'=> "#accessories",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
                 'keywords'=>"Аксессуары",

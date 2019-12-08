@@ -10,7 +10,7 @@ $alumprofily[0]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",//n
                 'id'=>"#alumprofily",
                 'img'=> $path_img."tbssvet.png",//200x200 для поиска
                 'keywords'=>"",
-                'def'=>"Алюминевый профиль"];    
+                'def'=>"АЛЮМИНЕВЫЙ ПРОФИЛь"];    
 
 $alumprofily[1]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                 'id'=> "#LED-alumprofily",
@@ -338,7 +338,7 @@ $alumprofily[2]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                 
                 
 ];
-$alumprofily[3]=['path'=>"materialy-svet.php?node=transformatory",
+$alumprofily[3]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                 'id'=> "#transformatory",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
                 'keywords'=>"Трансформаторы",
@@ -566,7 +566,7 @@ $alumprofily[3]=['path'=>"materialy-svet.php?node=transformatory",
 
 
 ];
-$alumprofily[4]=['path'=>"materialy-svet.php?node=accessories",
+$alumprofily[4]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                 'id'=> "#accessories",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
                 'keywords'=>"Аксессуары",

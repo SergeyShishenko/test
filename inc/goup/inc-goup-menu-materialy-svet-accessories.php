@@ -10,7 +10,7 @@ $accessories[0]=['path'=>"materialy-svet.php?group=accessories&node=accessories"
                 'id'=>"#accessories",
                 'img'=> $path_img."tbssvet.png",//200x200 для поиска
                 'keywords'=>"",
-                'def'=>"Аксессуары"];    
+                'def'=>"АКСЕССУАРЫ"];    
 
 $accessories[1]=['path'=>"materialy-svet.php?group=accessories&node=accessories",
                 'id'=> "#LED-accessories",
@@ -215,7 +215,7 @@ $accessories[1]=['path'=>"materialy-svet.php?group=accessories&node=accessories"
                 
 ];
 $accessories[2]=['path'=>"materialy-svet.php?group=accessories&node=accessories",
-                'id'=> "#alyuminievyy-profil",
+                'id'=> "#accessories",
                 'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
                 'keywords'=>"",
                 'def'=>"Алюминиевый профиль для светодиодных лент",  //описание для меню
