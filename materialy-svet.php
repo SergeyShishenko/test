@@ -8,8 +8,12 @@ include 'inc/inc-head3.php';
 include 'inc/inc-header-menu3.php';
 include 'inc/inc-left-side-menu-materialy.php';
 
+if (isset($_GET["group"])) {
+    $article_id =$_GET["group"];// название группы и имя массива группы
+}else{
+   $article_id ="svet";// название группы и имя массива группы 
+}
 
-$article_id ="svet";// название группы и имя массива группы
 
 // $curr_page = 1;// индекс элемента в группе
 switch ($_GET["node"]) {

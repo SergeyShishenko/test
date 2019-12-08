@@ -1,6 +1,9 @@
 <?php
-include 'inc/goup/inc-goup-menu-materialy-stekla-zerkala.php';//$steklazerkala=[]
-include 'inc/goup/inc-goup-menu-materialy-svet.php';//$svet=[]
+// include 'inc/goup/inc-goup-menu-materialy-stekla-zerkala.php';//$steklazerkala=[]
+// include 'inc/goup/inc-goup-menu-materialy-svet.php';//$svet=[]
+// include 'inc/goup/inc-goup-menu-materialy-svet-lenta.php';//$lenta=[]
+// подключение inc-файлов
+foreach (glob("inc/goup/inc-goup-menu-materialy*.php") as $filename) { include $filename ;}
  echo'
     <article itemscope="" itemtype="http://schema.org/WebPage">   
     <div class="container bs-docs-container">
@@ -191,7 +194,7 @@ include 'inc/goup/inc-goup-menu-materialy-svet.php';//$svet=[]
                         <li class="menu ">
                             <a href="materialy-svet.php?node=lenta" class="list-group-item '.$item_svet_Class.'">СВЕТ</a>
                             <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">СВЕТОДИОДНАЯ ЛЕНТА</a>
+                                <li class="menu2"><a class="list-group-item sub" href="materialy-svet.php?group=lenta&node=lenta">СВЕТОДИОДНАЯ ЛЕНТА</a>
                                     <ul class="list-group sub_menu2">
                                         <li><a class="list-group-item sub" href="#">...</a>
                                         </li>
@@ -201,7 +204,7 @@ include 'inc/goup/inc-goup-menu-materialy-svet.php';//$svet=[]
                                         </li>                                          
                                     </ul>
                                 </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#sborochnye-shemy-paneli-stenovye">АЛЮМИНЕВЫЙ ПРОФИЛЬ</a>
+                                <li class="menu2"><a class="list-group-item sub" href="materialy-svet.php?group=alumprofily&node=profily">АЛЮМИНЕВЫЙ ПРОФИЛЬ</a>
                                     <ul class="list-group sub_menu2">
                                         <li><a class="list-group-item sub" href="#">...</a>
                                         </li>
@@ -211,7 +214,7 @@ include 'inc/goup/inc-goup-menu-materialy-svet.php';//$svet=[]
                                         </li>                                       
                                     </ul>
                                 </li>                    
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#sborochnye-shemy-paneli-stenovye">ТРАНСФОРМАТОРЫ</a>
+                                <li class="menu2"><a class="list-group-item sub" href="materialy-svet.php?group=transformatory&node=transformatory">ТРАНСФОРМАТОРЫ</a>
                                     <ul class="list-group sub_menu2">
                                         <li><a class="list-group-item sub" href="#">...</a>
                                         </li>
@@ -221,7 +224,7 @@ include 'inc/goup/inc-goup-menu-materialy-svet.php';//$svet=[]
                                         </li>                                       
                                     </ul>
                                 </li>                    
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#sborochnye-shemy-paneli-stenovye">АКСЕССУАРЫ</a>
+                                <li class="menu2"><a class="list-group-item sub" href="materialy-svet.php?group=accessories&node=accessories">АКСЕССУАРЫ</a>
                                     <ul class="list-group sub_menu2">
                                         <li><a class="list-group-item sub" href="#">...</a>
                                         </li>
