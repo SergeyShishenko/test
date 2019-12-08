@@ -42,7 +42,7 @@ echo'
                         <a href="furnitura-katalogi.php">ФУРНИТУРА</a>
                     </li>
                     <li '.$materialyClass.'>
-                        <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>
+                        <a href="materialy-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ</a>
                     </li>
                     <li '.$literaturaClass.'>
                         <a href="literatura-gost.php">ЛИТЕРАТУРА</a>

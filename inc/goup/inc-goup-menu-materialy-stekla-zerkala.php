@@ -7,11 +7,11 @@
     // SideMenuList($arrlist)
 
         $steklazerkala=[];
-        $steklazerkala[0]=['path'=>"materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php",
+        $steklazerkala[0]=['path'=>"materialy-steklo-zerkalo-vitrazh.php",
                             'id'=>"#vidy-obrabotki-kromki-stekla-zerkala",
                             'def'=>"ОБРАБОТКА КРОМКИ СТЕКЛА, ЗЕРКАЛА"];
 
-        $steklazerkala[1]=['path'=>"materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php",
+        $steklazerkala[1]=['path'=>"materialy-steklo-zerkalo-vitrazh.php",
                             'id'=> "#vidy-obrabotki-kromki-stekla-zerkala-foto",
                             'def'=>"виды обработки торца стекла",
                             'content'=>array(

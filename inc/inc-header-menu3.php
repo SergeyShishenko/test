@@ -80,7 +80,7 @@ else {
                     <a href="furnitura-dlya-dvernyh-blokov.php">ФУРНИТУРА</a>
                 </li>
                 <li '.$materialyClass.'>
-                    <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ</a>
+                    <a href="materialy-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ</a>
                 </li>
                 <li '.$literaturaClass.' class=" disabled">
                 <a href="literatura-gost.php">ЛИТЕРАТУРА</a>

@@ -152,7 +152,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                             </ul> -->
                         </li>
                         <li>
-                            <a href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ</a>
+                            <a href="materialy-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ</a>
                             <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
                             <!-- <span class="caret"></span>
                             <ul class="dropdown-menu">
@@ -4975,9 +4975,9 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
 
 
                     <!-- МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ --> 
-                    <TR id="materialy-ne-derevyannye-steklo-zerkalo-vitrazh">
+                    <TR id="materialy-steklo-zerkalo-vitrazh">
                         <TD  data-tooltip="МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ" class="hover mapsite first-main disabled" id="footer5">
-                                <p  data-href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php"  data-img="./dist/images/no-foto.png" id="floating6">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ <span><br>~- materialy-ne-derevyannye-steklo-zerkalo-vitrazh</span></p>
+                                <p  data-href="materialy-steklo-zerkalo-vitrazh.php"  data-img="./dist/images/no-foto.png" id="floating6">МАТЕРИАЛЫ НЕ ДЕРЕВЯННЫЕ <span><br>~- materialy-steklo-zerkalo-vitrazh</span></p>
                         </TD>
                         <TD>
                             <TABLE >                               
@@ -4986,7 +4986,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                         <TABLE >
                                             <TR>
                                                 <TD data-tooltip="СТЕКЛО, ЗЕРКАЛО" class="hover mapsite  disabled" id="footer35">
-                                                        <p data-href="materialy-ne-derevyannye-steklo-zerkalo-vitrazh.php"  data-img="./dist/images/no-foto.png" id="floating36">СТЕКЛО, ЗЕРКАЛО<span><br>~- steklo-zerkalo</span></p> 
+                                                        <p data-href="materialy-steklo-zerkalo-vitrazh.php"  data-img="./dist/images/no-foto.png" id="floating36">СТЕКЛО, ЗЕРКАЛО<span><br>~- steklo-zerkalo</span></p> 
                                                         
                                                         <TD>
                                                             <TABLE >
@@ -5009,7 +5009,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                             <TR><TD>&nbsp;  </TD></TR> <!--end LEVEL2-->      
                                             <TR>
                                                 <TD data-tooltip="ВИТРАЖ" class="hover mapsite disabled" id="footer36">
-                                                    <p data-href="materialy-ne-derevyannye-vitrazh.php"  data-img="./dist/images/no-foto.png" id="floating37">ВИТРАЖ<span><br>~-materialy-ne-derevyannye-vitrazh</span></p></TD>
+                                                    <p data-href="materialy-vitrazh.php"  data-img="./dist/images/no-foto.png" id="floating37">ВИТРАЖ<span><br>~-materialy-vitrazh</span></p></TD>
                                                     <TD>
                                                         <TABLE >
                                                             <TR>
@@ -5031,7 +5031,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
                                                 <TD data-tooltip="МЕТАЛЛ" class="hover mapsite " id="footer37">
-                                                    <p data-href="materialy-ne-derevyannye-metall.php"  data-img="./dist/images/no-foto.png" id="floating38">МЕТАЛЛ<span><br>~-metall</span></p></TD>
+                                                    <p data-href="materialy-metall.php"  data-img="./dist/images/no-foto.png" id="floating38">МЕТАЛЛ<span><br>~-metall</span></p></TD>
                                                     <TD>
                                                         <TABLE >
                                                             <TR>
@@ -5053,7 +5053,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
                                                 <TD data-tooltip="ТКАНЬ, КОЖА" class="hover mapsite disabled" id="footer38">
-                                                    <p data-href="materialy-ne-derevyannye-tkan-kozha.php"  data-img="./dist/images/no-foto.png" id="floating39">ТКАНЬ, КОЖА<span><br>~-tkan-kozha</span></p></TD>
+                                                    <p data-href="materialy-tkan-kozha.php"  data-img="./dist/images/no-foto.png" id="floating39">ТКАНЬ, КОЖА<span><br>~-tkan-kozha</span></p></TD>
                                                     <TD>
                                                         <TABLE >
                                                             <TR>
@@ -5075,7 +5075,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                             <TR><TD> &nbsp; </TD><TD></TD></TR> <!--end LEVEL2-->  
                                             <TR>
                                                 <TD data-tooltip="СВЕТ" class="hover mapsite " id="footer39">
-                                                    <p data-href="materialy-ne-derevyannye-tkan-kozha.php"  data-img="./dist/images/no-foto.png" id="floating40">СВЕТ<span><br>~-tkan-kozha</span></p></TD>
+                                                    <p data-href="materialy-tkan-kozha.php"  data-img="./dist/images/no-foto.png" id="floating40">СВЕТ<span><br>~-tkan-kozha</span></p></TD>
                                                     <TD>
                                                         <TABLE >
                                                             <TR>
