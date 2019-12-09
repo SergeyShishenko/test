@@ -165,7 +165,7 @@
     $info_o_teh=[];
     $info_o_teh[0]=['path'=>"shablony-dokumentov-titulnyy-dp.php",
                     'id'=>"#info_o_teh",
-                    'def'=>"ТЗ на проектирование, предоставляемой Заказчиком"]; 
+                    'def'=>"Техническое задание на проектирование от заказчика"]; 
 
     /////////////////////////////////////
 //shablony-dokumentov-titulnyy-dp.php
