@@ -41,6 +41,8 @@ include 'inc/goup/inc-goup-menu-shablony-dokumentov.php';//$styazhka=[]
                                 LeftSideMenu($list_titulnyy_TZ);//ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика
 
                                 LeftSideMenu($sostav_dp);//СОСТАВ ДП
+                                
+                                LeftSideMenu($info_o_teh);//Техническое Задание на проектирование, предоставляемой Заказчиком
                         echo'                        
                             </ul>
                         </li>

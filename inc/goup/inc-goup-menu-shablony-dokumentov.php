@@ -160,7 +160,12 @@
     $sostav_dp=[];
     $sostav_dp[0]=['path'=>"shablony-dokumentov-titulnyy-dp.php",
                     'id'=>"#sostav_dp",
-                    'def'=>"СОСТАВ ДИЗАЙН-ПРОЕКТА"];                
+                    'def'=>"СОСТАВ ДИЗАЙН-ПРОЕКТА"];  
+                    
+    $info_o_teh=[];
+    $info_o_teh[0]=['path'=>"shablony-dokumentov-titulnyy-dp.php",
+                    'id'=>"#info_o_teh",
+                    'def'=>"ТЗ на проектирование, предоставляемой Заказчиком"]; 
 
     /////////////////////////////////////
 //shablony-dokumentov-titulnyy-dp.php
@@ -253,6 +258,7 @@
     $sostav_kd[0]=['path'=>"shablony-dokumentov-titulnyy-kd.php",
                     'id'=>"#sostav_kd",
                     'def'=>"СОСТАВ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ"]; 
+  
 
  
 //shablony-dokumentov-titulnyy-kd.php                                
