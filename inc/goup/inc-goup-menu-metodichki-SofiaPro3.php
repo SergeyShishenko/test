@@ -103,6 +103,14 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№11. Заполнение бланка образцов"];
 
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
+                    'id'=> "#addition12",
+                    'img'=> $path_img."tbstest.png",
+                    'video'=> $path_video."12.mp4",
+                    'keywords'=>"SP3 (дополнение 12) - Копирование в буфер из СП3 Чек-лист Вопросы заказчику",
+                    'tilde'=>"ыз3",
+                    'def'=>"№12. Копирование в буфер из СП3 Чек-лист Вопросы заказчику"];
+
 
     $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition16",
