@@ -51,14 +51,15 @@ echo'
 ///////////////////////////////////////
 
 function LeftSideMenu($arr)// левое меню -> замена <li class="menu2"> ->   ';LeftSideMenu($styazhka); echo'
-{
+{   
+   
     echo'
     <li class="menu2">
-        <a class="list-group-item sub" href="'.$arr[0]['path'].$arr[0]['id'].'">'.$arr[0]['def'].'</a>
+        <a class="list-group-item sub '.СheckForLength($arr[0]['def']).'" href="'.$arr[0]['path'].$arr[0]['id'].'">'.$arr[0]['def'].'</a>
         <ul class="list-group sub_menu2">
     ';
         for ($i=1; $i < count($arr); $i++) { 
-            if(strlen($arr[$i]['def'])>130){ $extClass=" dblstr-lg dblstr-xl   dblstr-md dblstr-sm ";}
+            if(strlen($arr[$i]['def'])>60){ $extClass=" dblstr-lg dblstr-xl  dblstr-md dblstr-sm ";}
             else{ $extClass="";}
             echo '<li><a class="list-group-item sub '.$extClass.'" href="'.$arr[$i]['path'].$arr[$i]['id'].'">'.$arr[$i]['def'].'</a> </li>';            
         }  
@@ -66,6 +67,13 @@ function LeftSideMenu($arr)// левое меню -> замена <li class="men
         </ul>
     </li> 
     ';
+}
+
+function СheckForLength($str)
+{
+    if(strlen($str)>100){ $extClass=" dblstr-lg dblstr-xl  dblstr-md dblstr-sm ";}
+    else{ $extClass="";}
+    return $extClass;
 }
 
 /////////////////////////////////////

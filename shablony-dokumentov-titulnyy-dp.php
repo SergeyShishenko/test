@@ -298,7 +298,7 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                       <section >
                         <div class="page-header">
                         <h2  id="info_o_teh">&nbsp;</h2> 
-                          <h1 itemprop="name">Техническое задание на проектирование от заказчика</h1>
+                          <h1 itemprop="name">Информация о технических устройствах, предоставленная Заказчиком</h1>
                         </div>
                         <!-- <h2 id="dok--385">&nbsp;</h2> -->
                         <div class="bs-callout bs-callout-warning cont" >
