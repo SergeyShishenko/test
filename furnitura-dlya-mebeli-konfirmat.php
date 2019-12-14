@@ -283,7 +283,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                 </div> <!-- main  -->
                 <?php
                 //  include 'inc/goup/inc-goup-menu.php';//$styazhka=[]
-                SideMenu($styazhka,6);
+                sideMenu($styazhka,6);
                 ?> 
     
 <?php include 'inc/inc-footer2.php'; ?>

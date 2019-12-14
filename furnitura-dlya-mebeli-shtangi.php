@@ -11,6 +11,6 @@ include 'inc/inc-left-side-menu-furnitura.php';
 $article_id ="shtangi";// название группы и имя массива группы
 $curr_page = explode("_", $_GET["node"])[1];// индекс элемента в группе
 $much_arr=[$$article_id];
-ContentPage($much_arr,$curr_page,$article_id);  
-SideMenu($$article_id,$curr_page);
+contentPage($much_arr,$curr_page,$article_id);  
+sideMenu($$article_id,$curr_page);
 include 'inc/inc-footer2.php'; 

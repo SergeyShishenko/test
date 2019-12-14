@@ -153,7 +153,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                 </ul>
                                             </li> -->
                                         </ul>
-                                        <div id="myTabContent" class="tab-content">
+                                        <div id="mytabContent" class="tab-content">
                                             <div class="tab-pane fade " id="harakteristiki">
                                                 <p>
                                                     <ul class="stat" style="margin-top: 0px;">
@@ -474,7 +474,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                 </div> <!-- main  -->
                 <?php
         //  include 'inc/goup/inc-goup-menu.php';//$styazhka=[] -->
-        SideMenu($petlyTL,5);
+        sideMenu($petlyTL,5);
         ?>              
               
     

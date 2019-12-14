@@ -193,7 +193,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                             <li class=" active"><a href="#calc" data-toggle="tab">Калькулятор</a></li>
                                             
                                         </ul>
-                                        <div id="myTabContent" class="tab-content">                                            
+                                        <div id="mytabContent" class="tab-content">                                            
                                             <div class="tab-pane fade" id="harakteristiki">
                                                 <p>
                                                     <ul class="stat" style="margin-top: 0px;">
