@@ -4,11 +4,14 @@
     // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
+
         {
-            "type": "node",
+            "type": "php",
             "request": "launch",
-            "name": "Launch Program",
-            "program": "${workspaceFolder}/Debug\\test.js"
+            "name": "Run using local PHP Interpreter",
+            "program": "${file}",
+            "runtimeExecutable": "F:\\OPEN_SERVER\\OSPanel\\modules\\php\\PHP_7.1-x64\\php.exe"
         }
     ]
 }
