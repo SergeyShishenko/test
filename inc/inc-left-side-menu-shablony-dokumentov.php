@@ -13,9 +13,9 @@ include 'inc/goup/inc-goup-menu-shablony-dokumentov.php';//$styazhka=[]
                             <a href="shablony-dokumentov-albom-obrazcov.php" class="list-group-item  '.$item_albom_obrazcov_Class.'">Образцы &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
                              <ul class="list-group sub_menu">
                              ';
-                                LeftSideMenu($albomobrazcov);// ШАБЛОН АЛЬБОМА ОБРАЗЦОВ
-                                LeftSideMenu($list_dvizheniya_obrazcov);//ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ
-                                LeftSideMenu($obrazec_albom_oobrazcov);//ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ
+                                leftSdeMenu($albomobrazcov);// ШАБЛОН АЛЬБОМА ОБРАЗЦОВ
+                                leftSdeMenu($list_dvizheniya_obrazcov);//ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ
+                                leftSdeMenu($obrazec_albom_oobrazcov);//ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ
                          echo'                                  
                             </ul> 
                         </li>                     
@@ -26,23 +26,23 @@ include 'inc/goup/inc-goup-menu-shablony-dokumentov.php';//$styazhka=[]
                             <ul class="list-group sub_menu">
                             ';                            
                             // $arrlist = [$shablon_alboma_dp,$list_titulnyy_vpi,$vedomost_furnitury,$vedomost_stekol_zerkal,$materialy_prochie];
-                                LeftSideMenu($shablon_alboma_dp);// АЛЬБОМ ДИЗАЙН-ПРОЕКТА
+                                leftSdeMenu($shablon_alboma_dp);// АЛЬБОМ ДИЗАЙН-ПРОЕКТА
 
-                                LeftSideMenu($list_titulnyy_vpi);//ЛИСТ ТИТУЛЬНЫЙ ВПИ
+                                leftSdeMenu($list_titulnyy_vpi);//ЛИСТ ТИТУЛЬНЫЙ ВПИ
 
-                                LeftSideMenu($vedomost_furnitury);//ВЕДОМОСТЬ ФУРНИТУРЫ
+                                leftSdeMenu($vedomost_furnitury);//ВЕДОМОСТЬ ФУРНИТУРЫ
 
-                                LeftSideMenu($vedomost_stekol_zerkal);//ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ
+                                leftSdeMenu($vedomost_stekol_zerkal);//ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ
 
-                                LeftSideMenu($materialy_prochie);//ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ
+                                leftSdeMenu($materialy_prochie);//ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ
 
-                                LeftSideMenu($list_titulnyy_proektirovshchika);//ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика
+                                leftSdeMenu($list_titulnyy_proektirovshchika);//ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика
 
-                                LeftSideMenu($list_titulnyy_TZ);//ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика
+                                leftSdeMenu($list_titulnyy_TZ);//ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика
 
-                                LeftSideMenu($sostav_dp);//СОСТАВ ДП
+                                leftSdeMenu($sostav_dp);//СОСТАВ ДП
                                 
-                                LeftSideMenu($info_o_teh);//Техническое Задание на проектирование, предоставляемой Заказчиком
+                                leftSdeMenu($info_o_teh);//Техническое Задание на проектирование, предоставляемой Заказчиком
                         echo'                        
                             </ul>
                         </li>
@@ -52,23 +52,23 @@ include 'inc/goup/inc-goup-menu-shablony-dokumentov.php';//$styazhka=[]
                             <ul class="list-group sub_menu">
                             '; 
                             
-                                LeftSideMenu($konstr_dok); // ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ                                                       
+                                leftSdeMenu($konstr_dok); // ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ                                                       
                                     
-                                LeftSideMenu($spec_konst);// СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>                             
+                                leftSdeMenu($spec_konst);// СПЕЦИФИКАЦИЯ КОНСТРУКТОРСКАЯ</a>                             
         
-                                LeftSideMenu($list_titulnyy_vpi_kd);// ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>                             
+                                leftSdeMenu($list_titulnyy_vpi_kd);// ЛИСТ ТИТУЛЬНЫЙ ВПИ</a>                             
                                 
-                                LeftSideMenu($dok_vpi_kd);// ВЕДОМОСТЬ ФУРНИТУРЫ</a>                             
+                                leftSdeMenu($dok_vpi_kd);// ВЕДОМОСТЬ ФУРНИТУРЫ</a>                             
                                 
-                                LeftSideMenu($dok_vsz);// ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ</a>                             
+                                leftSdeMenu($dok_vsz);// ВЕДОМОСТЬ СТЕКОЛ и ЗЕРКАЛ</a>                             
                                     
-                                LeftSideMenu($dok_v_materialy_prochie);// ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ</a>                             
+                                leftSdeMenu($dok_v_materialy_prochie);// ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ</a>                             
                                     
-                                LeftSideMenu($spec_tehnolog);// СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ</a>                             
+                                leftSdeMenu($spec_tehnolog);// СПЕЦИФИКАЦИЯ ТЕХНОЛОГИЧЕСКАЯ</a>                             
                                     
-                                LeftSideMenu($vedomost_detaley_3d);// ВЕДОМОСТЬ ДЕТАЛЕЙ УЧАСТКА 3D</a> 
+                                leftSdeMenu($vedomost_detaley_3d);// ВЕДОМОСТЬ ДЕТАЛЕЙ УЧАСТКА 3D</a> 
 
-                                LeftSideMenu($sostav_kd);//СОСТАВ КД                           
+                                leftSdeMenu($sostav_kd);//СОСТАВ КД                           
                                 echo'  
 
                             </ul>

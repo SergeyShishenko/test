@@ -135,7 +135,7 @@ echo'
                             </li>
                             
                             ';
-                            LeftSideMenu($sborochnyeshemy);// СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ
+                            leftSdeMenu($sborochnyeshemy);// СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ
                            
                      echo'                                   
                         </ul>
@@ -145,8 +145,8 @@ echo'
                         <a href="izdeliya-paneli-stenovye.php" class="list-group-item '.$item_paneli_stenovye_Class.'">ПАНЕЛИ СТЕНОВЫЕ</a>
                         <ul class="list-group sub_menu">
                         ';
-                        LeftSideMenu($panelistenovye);// КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ
-                        LeftSideMenu($sborochnyeshemypst);// СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ
+                        leftSdeMenu($panelistenovye);// КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ
+                        leftSdeMenu($sborochnyeshemypst);// СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ
                        
                     echo'                    
                         </ul>

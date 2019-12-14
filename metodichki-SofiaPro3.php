@@ -12,12 +12,12 @@ include 'inc/inc-left-side-menu-metodichki.php';
     <!-- main  -->
     <div class="col-md-8 col-md-8-non" role="main" id="main-page">                
  <?php  
-    ContentListGoupMenuVideo($SP3);    
+    contentListGoupMenuVideo($SP3);    
  ?> 
     </div>
     <!-- main  --> 
 <?php
 $arrlist = [$SP3];           
-SideMenuList($arrlist);
+sideMenuList($arrlist);
 include 'inc/inc-footer.php';
  ?>

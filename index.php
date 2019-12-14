@@ -2374,7 +2374,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                                 <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                                   <!--  -->
                                                         <?php 
-                                                        IndexMenu($sborochnyeshemy,91);
+                                                        indexMenu($sborochnyeshemy,91);
                                                         ?>                                                       
                                                         <!--  -->  
                                                             </TABLE>
@@ -3609,16 +3609,16 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                 <TD>
                                                     <TABLE >
                                                         <?php 
-                                                        IndexMenu($vannaya,null);
-                                                        IndexMenu($garderobnaya,null);
-                                                        IndexMenu($prihozhaya,null);
-                                                        IndexMenu($stoly,null);
-                                                        IndexMenu($detskaya,null);
-                                                        IndexMenu($antropologiya,null);
-                                                        IndexMenu($gostinaya,null);
-                                                        IndexMenu($spalnya,null);
-                                                        IndexMenu($aktovyyzal,null);
-                                                        IndexMenu($kuhnya,null);
+                                                        indexMenu($vannaya,null);
+                                                        indexMenu($garderobnaya,null);
+                                                        indexMenu($prihozhaya,null);
+                                                        indexMenu($stoly,null);
+                                                        indexMenu($detskaya,null);
+                                                        indexMenu($antropologiya,null);
+                                                        indexMenu($gostinaya,null);
+                                                        indexMenu($spalnya,null);
+                                                        indexMenu($aktovyyzal,null);
+                                                        indexMenu($kuhnya,null);
                                                         ?> 
                                                         <TR>
                                                             <TD data-tooltip="ПРИМЕРЫ ЭРГОНОМИЧЕСКИХ РЕШЕНИЙ" class="hover mapsite" id="footer123" >
@@ -4205,7 +4205,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                 </TD>
                                             </TR> 
                                             <?php 
-                                            IndexMenu($SP3,null);
+                                            indexMenu($SP3,null);
                                             ?>                                                                                                             
                                         </TABLE>
                                     </TD>   
@@ -4739,7 +4739,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->   
                                                         <!--  -->
                                                         <?php 
-                                                        IndexMenu($styazhka,143);
+                                                        indexMenu($styazhka,143);
                                                         ?>                                                       
                                                         <!--  -->  
                                                         <TR>
@@ -4760,7 +4760,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                         </TR> 
                                                         <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3-->                                                                        
                                                         <?php                                                                      
-                                                        IndexMenu($shtangi,145);  
+                                                        indexMenu($shtangi,145);  
                                                         ?>                                                                        
                                                         <TR>
                                                             <TD data-tooltip=" ПАНТОГРАФЫ" class="hover mapsite " id="footer146">
@@ -4915,7 +4915,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                             </TD>
                                                         </TR>                                                        
                                                         <?php 
-                                                        IndexMenu($universalnaya,153);
+                                                        indexMenu($universalnaya,153);
                                                         ?>      
                                                     </TABLE>
                                                 </TD>

@@ -34,16 +34,16 @@ switch ($_GET["node"]) {
         break;  
 }
 
-// ContentPage($$article_id,$curr_page,$article_id); 
+// contentPage($$article_id,$curr_page,$article_id); 
 // $much_arr=[$$article_id];
 $much_arr=[$lenta,$alumprofily,$transformatory,$accessories];
-ContentPage($much_arr,$curr_page,$article_id); 
+contentPage($much_arr,$curr_page,$article_id); 
 
 
-// SideMenu($$article_id,$curr_page); 
+// sideMenu($$article_id,$curr_page); 
 
 // $arrlist = [$$article_id];//группы в боковом меню
 $arrlist = [$lenta,$alumprofily,$transformatory,$accessories];//группы в боковом меню
-SideMenuList($arrlist);
+sideMenuList($arrlist);
 
 include 'inc/inc-footer2.php'; 

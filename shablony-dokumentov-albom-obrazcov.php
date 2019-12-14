@@ -350,7 +350,7 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
 <?php
                   // ШАБЛОН АЛЬБОМА ОБРАЗЦОВ,ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ,ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ
                 $arrlist = array($albomobrazcov,$list_dvizheniya_obrazcov,$obrazec_albom_oobrazcov);
-                 SideMenuList($arrlist);
+                 sideMenuList($arrlist);
  ?>                
 
 <?php include 'inc/inc-footer.php'; ?>

@@ -4,7 +4,7 @@
 /////////////////////////////////////
 
     // $arrlist = [$steklazerkala,$list_dvizheniya_obrazcov,$obrazec_albom_oobrazcov];
-    // SideMenuList($arrlist)
+    // sideMenuList($arrlist)
 
         $steklazerkala=[];
         $steklazerkala[0]=['path'=>"materialy-steklo-zerkalo-vitrazh.php",

@@ -4,7 +4,7 @@
 /////////////////////////////////////
 //shablony-dokumentov-albom-obrazcov.php 
     // $arrlist = [$albomobrazcov,$list_dvizheniya_obrazcov,$obrazec_albom_oobrazcov];
-    // SideMenuList($arrlist)
+    // sideMenuList($arrlist)
 
         $albomobrazcov=[];
         $albomobrazcov[0]=['path'=>"shablony-dokumentov-albom-obrazcov.php",
@@ -56,7 +56,7 @@
 /////////////////////////////////////
 //shablony-dokumentov-titulnyy-dp.php
     // $arrlist = [shablon_alboma_dp,$list_titulnyy_vpi,$vedomost_furnitury,$vedomost_stekol_zerkal,$materialy_prochie];
-    // SideMenuList($arrlist)
+    // sideMenuList($arrlist)
 
     $shablon_alboma_dp=[];
     $shablon_alboma_dp[0]=['path'=>"shablony-dokumentov-titulnyy-dp.php",
@@ -175,7 +175,7 @@
 ///////////////////////////////////// 
 //shablony-dokumentov-titulnyy-kd.php  
     // $arrlist = [$konstr_dok,$spec_konst,$list_titulnyy_vpi_kd,$dok_vsz,$dok_v_materialy_prochie,$spec_tehnolog,$vedomost_detaley_3d];
-    // SideMenuList($arrlist)
+    // sideMenuList($arrlist)
     $konstr_dok=[];//ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ
     $konstr_dok[0]=['path'=>"shablony-dokumentov-titulnyy-kd.php",
                     'id'=>"#listy-titulnye-konstruktorskoy-dokumentacii",

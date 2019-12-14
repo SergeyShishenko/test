@@ -98,8 +98,8 @@ include 'inc/goup/inc-goup-menu-furnitura-dlya-mebeli-shtangi.php';//$shtangi=[]
 
                                    '; 
                                    
-                                    LeftSideMenu($petlyB);
-                                    LeftSideMenu($petlyTL);
+                                    leftSdeMenu($petlyB);
+                                    leftSdeMenu($petlyTL);
 
                                     echo'
 
@@ -177,7 +177,7 @@ include 'inc/goup/inc-goup-menu-furnitura-dlya-mebeli-shtangi.php';//$shtangi=[]
                                     </li> 
                                     '; 
                                    
-                                    LeftSideMenu($styazhka);
+                                    leftSdeMenu($styazhka);
 
                                     echo'
                                      <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#polkoderzhateli">ПОЛКОДЕРЖАТЕЛИ</a>
@@ -188,7 +188,7 @@ include 'inc/goup/inc-goup-menu-furnitura-dlya-mebeli-shtangi.php';//$shtangi=[]
                                      </li>
                                      '; 
                                    
-                                    LeftSideMenu($shtangi);
+                                    leftSdeMenu($shtangi);
 
                                     echo'
                                      <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pantografy"> ПАНТОГРАФЫ</a>
@@ -250,7 +250,7 @@ include 'inc/goup/inc-goup-menu-furnitura-dlya-mebeli-shtangi.php';//$shtangi=[]
                                     </li> 
                                     '; 
                                    
-                                    LeftSideMenu($universalnaya);
+                                    leftSdeMenu($universalnaya);
 
                                     echo'
                                     

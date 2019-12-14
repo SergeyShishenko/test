@@ -12,13 +12,13 @@ include 'inc/inc-left-side-menu-izdeliya.php';
   <!-- main  -->
     <div class="col-md-8 col-md-8-non" role="main" id="main-page">       
       <?php 
-        ContentListGoupMenu($panelistenovye);
-        ContentListGoupMenu($sborochnyeshemypst);
+        contentListGoupMenu($panelistenovye);
+        contentListGoupMenu($sborochnyeshemypst);
       ?>       
     </div> 
   <!-- /main  -->
           <?php                  
             $arrlist = [$panelistenovye,$sborochnyeshemypst];           
-            SideMenuList($arrlist)
+            sideMenuList($arrlist)
           ?> 
 <?php include 'inc/inc-footer.php'; ?>

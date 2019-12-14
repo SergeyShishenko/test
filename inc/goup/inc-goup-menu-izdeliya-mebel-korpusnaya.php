@@ -4,7 +4,7 @@
 /////////////////////////////////////
 //izdeliya-mebel-korpusnaya.php
     // $arrlist = [$sborochnyeshemy,$list_dvizheniya_obrazcov,$obrazec_albom_oobrazcov];
-    // SideMenuList($arrlist)
+    // sideMenuList($arrlist)
 
         $sborochnyeshemy=[];
         $sborochnyeshemy[0]=['path'=>"izdeliya-mebel-korpusnaya.php",

@@ -13,8 +13,8 @@ include 'inc/inc-left-side-menu-materialy.php';
   <div class="col-md-8 col-md-8-non" role="main" id="main-page">
 
   <?php 
-    ContentListGoupMenu($steklazerkala);
-    // ContentListGoupMenu($sborochnyeshemypst);
+    contentListGoupMenu($steklazerkala);
+    // contentListGoupMenu($sborochnyeshemypst);
   ?>                  
 
       <!-- <article >
@@ -39,6 +39,6 @@ include 'inc/inc-left-side-menu-materialy.php';
   </div> <!-- main  -->
 <?php                  
   $arrlist = [$steklazerkala];           
-  SideMenuList($arrlist)
+  sideMenuList($arrlist)
 ?> 
 <?php include 'inc/inc-footer.php'; ?>

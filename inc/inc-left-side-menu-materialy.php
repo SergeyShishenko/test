@@ -18,7 +18,7 @@ foreach (glob("inc/goup/inc-goup-menu-materialy*.php") as $filename) { include $
                             <ul class="list-group sub_menu">
                                
                             ';
-                            LeftSideMenu($steklazerkala);// СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ
+                            leftSdeMenu($steklazerkala);// СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ
                            
                      echo' 
                                <!--  <li class="menu2"><a class="list-group-item sub" href="#zerkala-i-stekla-tablica-standartnyh-obrazcov">Зеркала и стекла - таблица стандартных образцов</a>

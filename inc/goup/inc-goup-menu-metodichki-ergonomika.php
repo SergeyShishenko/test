@@ -4,7 +4,7 @@
 // inc\goup\inc-goup-menu-metodichki-ergonomika-vannaya.php
 //izdeliya-mebel-korpusnaya.php
     // $arrlist = [$vannaya,$list_dvizheniya_obrazcov,$obrazec_albom_oobrazcov];
-    // SideMenuList($arrlist)
+    // sideMenuList($arrlist)
 
 
     // vannaya

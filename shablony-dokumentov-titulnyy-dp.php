@@ -340,6 +340,6 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                 <?php
                   // ШАБЛОН АЛЬБОМА ОБРАЗЦОВ,ЛИСТ ДВИЖЕНИЯ ОБРАЗЦОВ,ОБРАЗЕЦ ЗАПОЛНЕНИЯ АЛЬБОМА ОБРАЗЦОВ
                   $arrlist = [$shablon_alboma_dp,$list_titulnyy_vpi,$vedomost_furnitury,$vedomost_stekol_zerkal,$materialy_prochie,$list_titulnyy_proektirovshchika,$list_titulnyy_TZ,$sostav_dp,$info_o_teh];
-                 SideMenuList($arrlist);
+                 sideMenuList($arrlist);
  ?>   
 <?php include 'inc/inc-footer.php'; ?>

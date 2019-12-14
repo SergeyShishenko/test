@@ -77,16 +77,16 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                     <a href="metodichki-ergonomika.php" class="list-group-item '.$item_ergonomika_Class.'">ЭРГОНОМИКА</a>
                     <ul class="list-group sub_menu">
                     ';
-                    LeftSideMenu($vannaya);
-                    LeftSideMenu($garderobnaya);
-                    LeftSideMenu($prihozhaya);
-                    LeftSideMenu($stoly);
-                    LeftSideMenu($detskaya);
-                    LeftSideMenu($antropologiya);
-                    LeftSideMenu($gostinaya);
-                    LeftSideMenu($spalnya);
-                    LeftSideMenu($aktovyyzal);
-                    LeftSideMenu($kuhnya);
+                    leftSdeMenu($vannaya);
+                    leftSdeMenu($garderobnaya);
+                    leftSdeMenu($prihozhaya);
+                    leftSdeMenu($stoly);
+                    leftSdeMenu($detskaya);
+                    leftSdeMenu($antropologiya);
+                    leftSdeMenu($gostinaya);
+                    leftSdeMenu($spalnya);
+                    leftSdeMenu($aktovyyzal);
+                    leftSdeMenu($kuhnya);
                    
                 echo'                   
                     </ul>
@@ -239,7 +239,7 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                     <a href="metodichki-SofiaPro3.php" class="list-group-item '.$item_sofiapro3_Class.'">Sofia_Pro-3</a>
                     <ul class="list-group sub_menu">
                     ';                            
-                        LeftSideMenu($SP3);// АЛЬБОМ ДИЗАЙН-ПРОЕКТА
+                        leftSdeMenu($SP3);// АЛЬБОМ ДИЗАЙН-ПРОЕКТА
 
                 echo'             
                     </ul>

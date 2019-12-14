@@ -286,7 +286,7 @@ include 'inc/inc-left-side-menu-izdeliya.php';
               // $spec_tehnolog,
               // $vedomost_detaley_3d,
               // $sostav_kd];
-  SideMenuList($arrlist)
+  sideMenuList($arrlist)
 ?> 
 
 <?php include 'inc/inc-footer.php'; ?>
