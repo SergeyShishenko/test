@@ -36,14 +36,15 @@ switch ($_GET["node"]) {
 
 // contentPage($$article_id,$curr_page,$article_id); 
 // $much_arr=[$$article_id];
-$much_arr=[$lenta,$alumprofily,$transformatory,$accessories];
-contentPage($much_arr,$curr_page,$article_id); 
+// $much_arr=[$lenta,$alumprofily,$transformatory,$accessories];
+$much_arr=[$$article_id];
+contentPage2($much_arr,$curr_page,$article_id); 
 
 
 // sideMenu($$article_id,$curr_page); 
 
 // $arrlist = [$$article_id];//группы в боковом меню
 $arrlist = [$lenta,$alumprofily,$transformatory,$accessories];//группы в боковом меню
-sideMenuList($arrlist);
+sideMenuListPages($arrlist);
 
 include 'inc/inc-footer2.php'; 

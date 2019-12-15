@@ -13,10 +13,10 @@ $accessories[0]=['path'=>"materialy-svet.php?group=accessories&node=accessories"
                 'def'=>"АКСЕССУАРЫ"];    
 
 $accessories[1]=['path'=>"materialy-svet.php?group=accessories&node=accessories",
-                'id'=> "#LED-accessories",
+                'id'=> "#LED-accessories1",
                 'img'=> $path_img."tbs833_72_790-1.png", //200x200 для поиска
                 'keywords'=>"",
-                'def'=>"Аксессуары",  //описание для меню
+                'def'=>"Аксессуары1",  //описание для меню
                 
                 'composition_article'=>array( 
                                                 array( // таблица состава артикула
@@ -215,10 +215,10 @@ $accessories[1]=['path'=>"materialy-svet.php?group=accessories&node=accessories"
                 
 ];
 $accessories[2]=['path'=>"materialy-svet.php?group=accessories&node=accessories",
-                'id'=> "#accessories",
+                'id'=> "#LED-accessories2",
                 'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
                 'keywords'=>"",
-                'def'=>"Алюминиевый профиль для светодиодных лент",  //описание для меню
+                'def'=>"Аксессуары2",  //описание для меню
                 
                 'composition_article'=>array( 
                                                 array( // таблица состава артикула
@@ -339,10 +339,10 @@ $accessories[2]=['path'=>"materialy-svet.php?group=accessories&node=accessories"
                 
 ];
 $accessories[3]=['path'=>"materialy-svet.php?group=accessories&node=accessories",
-                'id'=> "#accessories",
+                'id'=> "#LED-accessories3",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
                 'keywords'=>"Аксессуары",
-                'def'=>"Аксессуары",  //описание   для меню  
+                'def'=>"Аксессуары3",  //описание   для меню  
 
                 'composition_article'=>array( 
 
@@ -567,10 +567,10 @@ $accessories[3]=['path'=>"materialy-svet.php?group=accessories&node=accessories"
 
 ];
 $accessories[4]=['path'=>"materialy-svet.php?group=accessories&node=accessories",
-                'id'=> "#accessories",
+                'id'=> "#LED-accessories4",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
                 'keywords'=>"Аксессуары",
-                'def'=>"Аксессуары",  //описание   для меню  
+                'def'=>"Аксессуары4",  //описание   для меню  
 
                 'composition_article'=>array( 
 

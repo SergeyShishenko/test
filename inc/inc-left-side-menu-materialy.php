@@ -192,7 +192,7 @@ foreach (glob("inc/goup/inc-goup-menu-materialy*.php") as $filename) { include $
                         </li>                                                      
                         <!-- menu -->
                         <li class="menu ">
-                            <a href="materialy-svet.php?node=lenta" class="list-group-item '.$item_svet_Class.'">СВЕТ</a>
+                            <a href="materialy-svet.php?group=lenta&node=lenta" class="list-group-item '.$item_svet_Class.'">СВЕТ</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="materialy-svet.php?group=lenta&node=lenta">СВЕТОДИОДНАЯ ЛЕНТА</a>
                                     <ul class="list-group sub_menu2">

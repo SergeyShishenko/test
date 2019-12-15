@@ -13,10 +13,10 @@ $transformatory[0]=['path'=>"materialy-svet.php?group=transformatory&node=transf
                 'def'=>"ТРАНСФОРМАТОРЫ"];    
 
 $transformatory[1]=['path'=>"materialy-svet.php?group=transformatory&node=transformatory",
-                'id'=> "#LED-transformatory",
+                'id'=> "#LED-transformatory1",
                 'img'=> $path_img."tbs833_72_790-1.png", //200x200 для поиска
                 'keywords'=>"",
-                'def'=>"Трансформаторы",  //описание для меню
+                'def'=>"Трансформаторы1",  //описание для меню
                 
                 'composition_article'=>array( 
                                                 array( // таблица состава артикула
@@ -215,10 +215,10 @@ $transformatory[1]=['path'=>"materialy-svet.php?group=transformatory&node=transf
                 
 ];
 $transformatory[2]=['path'=>"materialy-svet.php?group=transformatory&node=transformatory",
-                'id'=> "#alyuminievyy-profil",
+                'id'=> "#LED-transformatory2",
                 'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
                 'keywords'=>"",
-                'def'=>"Алюминиевый профиль для светодиодных лент",  //описание для меню
+                'def'=>"Трансформаторы2",  //описание для меню
                 
                 'composition_article'=>array( 
                                                 array( // таблица состава артикула
@@ -339,10 +339,10 @@ $transformatory[2]=['path'=>"materialy-svet.php?group=transformatory&node=transf
                 
 ];
 $transformatory[3]=['path'=>"materialy-svet.php?group=transformatory&node=transformatory",
-                'id'=> "#transformatory",
+                'id'=> "#LED-transformatory3",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
                 'keywords'=>"Трансформаторы",
-                'def'=>"Трансформаторы",  //описание   для меню  
+                'def'=>"Трансформаторы3",  //описание   для меню  
 
                 'composition_article'=>array( 
 
@@ -567,10 +567,10 @@ $transformatory[3]=['path'=>"materialy-svet.php?group=transformatory&node=transf
 
 ];
 $transformatory[4]=['path'=>"materialy-svet.php?group=transformatory&node=transformatory",
-                'id'=> "#accessories",
+                'id'=> "#LED-transformatory4",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
-                'keywords'=>"Аксессуары",
-                'def'=>"Аксессуары",  //описание   для меню  
+                'keywords'=>"Трансформаторы",
+                'def'=>"Трансформаторы4",  //описание   для меню  
 
                 'composition_article'=>array( 
 

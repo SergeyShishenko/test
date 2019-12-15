@@ -13,10 +13,10 @@ $alumprofily[0]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",//n
                 'def'=>"АЛЮМИНЕВЫЙ ПРОФИЛь"];    
 
 $alumprofily[1]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
-                'id'=> "#LED-alumprofily",
+                'id'=> "#LED-alumprofily1",
                 'img'=> $path_img."tbs833_72_790-1.png", //200x200 для поиска
                 'keywords'=>"",
-                'def'=>"Алюминевый профиль",  //описание для меню
+                'def'=>"Алюминевый профиль1",  //описание для меню
                 
                 'composition_article'=>array( 
                                                 array( // таблица состава артикула
@@ -199,7 +199,7 @@ $alumprofily[1]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                 'instrukciya_def'=>"<h4 >Проектирование</h3>
                                 <h5 >Светодиодную ленту, драйвер напряжения 12V, сенсор открытия двери и крепления заказывайте, пожалуйста, отдельно.</h5>
                                 ", 
-                'instrukciya_carousel'=>array( // инструкция
+                'instrukciya_carousel'=>array( // карусель
                                                 array(                            
                                                         'img'=>$path_img_carousel."LS-3528-IP33-4-8.png",//data-image, src, data-src  800x800 и 960x640                                                            
                                                         'title'=>"Лента"// data-title, alt
@@ -210,12 +210,12 @@ $alumprofily[1]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                                                         'title'=>"Ленту можно резать, кратность реза равна 50 мм"// data-title, alt
                                                 )
                                         
-                                        )// инструкция               
+                )// карусель               
                 
                 
 ];
 $alumprofily[2]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
-                'id'=> "#alyuminievyy-profil",
+                'id'=> "#LED-alumprofily2",
                 'img'=> $path_img."tbsHW_012_1930_PR-1.png", //200x200 для поиска
                 'keywords'=>"",
                 'def'=>"Алюминиевый профиль для светодиодных лент",  //описание для меню
@@ -291,7 +291,7 @@ $alumprofily[2]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                 'instrukciya_def'=>"<h4 >Проектирование</h3>
                                 <h5 >Лента светодиодная, источники питания и коннекторы, пожалуйста, отдельно.</h5>
                                 ", 
-                'instrukciya_carousel'=>array( // инструкция
+                'instrukciya_carousel'=>array( // карусель
                                                 array(                            
                                                         'img'=>$path_img_carousel."LSP-FM2-ALU-2000-0_dr.webp",//data-image, src, data-src  800x800 и 960x640                                                            
                                                         'title'=>"Профиль FM2, врезной увеличенной высоты, 22х12мм, L-2000"// data-title, alt
@@ -334,15 +334,15 @@ $alumprofily[2]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                                                         )
                                                 
                                         
-                                        )// инструкция               
+                )// карусел               
                 
                 
 ];
 $alumprofily[3]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
-                'id'=> "#transformatory",
+                'id'=> "#LED-alumprofily3",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
-                'keywords'=>"Трансформаторы",
-                'def'=>"Трансформаторы",  //описание   для меню  
+                'keywords'=>"Алюминевый профиль3",
+                'def'=>"Алюминевый профиль3",  //описание   для меню  
 
                 'composition_article'=>array( 
 
@@ -531,7 +531,7 @@ $alumprofily[3]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                 </table>
             </div>
                                 ', 
-                'instrukciya_carousel'=>array( // инструкция
+                'instrukciya_carousel'=>array( // карусель
                                 array(                            
                                         'img'=>$path_img_carousel."JOK-004B-CR.png",//data-image, src, data-src  800x800 и 960x640                                                            
                                         'title'=>"Труба круглая D25 мм, хром"// data-title, alt
@@ -562,15 +562,15 @@ $alumprofily[3]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                                 )                            
                                 
                         
-                        )// инструкция               
+                )// карусель               
 
 
 ];
 $alumprofily[4]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
-                'id'=> "#accessories",
+                'id'=> "#LED-alumprofily4",
                 'img'=> $path_img."tbsJOK-004B-CR.png", //200x200 для поиска
-                'keywords'=>"Аксессуары",
-                'def'=>"Аксессуары",  //описание   для меню  
+                'keywords'=>"Алюминевый профиль4",
+                'def'=>"Алюминевый профиль4",  //описание   для меню  
 
                 'composition_article'=>array( 
 
@@ -759,7 +759,7 @@ $alumprofily[4]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                 </table>
             </div>
                                 ', 
-                'instrukciya_carousel'=>array( // инструкция
+                'instrukciya_carousel'=>array( // карусель
                                 array(                            
                                         'img'=>$path_img_carousel."JOK-004B-CR.png",//data-image, src, data-src  800x800 и 960x640                                                            
                                         'title'=>"Труба круглая D25 мм, хром"// data-title, alt
@@ -790,7 +790,7 @@ $alumprofily[4]=['path'=>"materialy-svet.php?group=alumprofily&node=profily",
                                 )                            
                                 
                         
-                        )// инструкция               
+                )// карусель               
 
 
 ];

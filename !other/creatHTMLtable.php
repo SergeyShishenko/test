@@ -1,24 +1,38 @@
 <?php
 // !other\creatHTMLtable.php
-$array = [
-    [
-        "photo" => "0.jpg",
-        "id" => "http://vk.com/id0",
-        "name" => "Жекі"
-    ],
-    [
-        "photo" => "1.jpg",
-        "id" => "https://vk.com/id1",
-        "name" => "Рижий Олександр"
-    ]
-    ];
+$arr =    [
+                ["Толщина ДСП (A), мм",//Sf
+                 "L, мм",//Lm
+                 "I, мм",//Im
+                 "D, мм",//Dm
+                 "Артикул",//Ar
+                ],
+                [  // массив данных 
+                   [ "Sf" => "0.jpg",
+                    "Lm" => "http://vk.com/id0",
+                    "Im" => "Жекі",
+                    "Dm" => "Жекі",
+                    "Ar" => "Жекі"
+                     ]                   
+                ]              
+             ];
   ?>
-  <?php foreach ($array as $a) { ?>
-<tr>
-    <th>
-      <p><?=$a["photo"]?></p>
-    </th>
-    <td>
-        <a href="<?=$a["id"]?>"> <?=$a["name"]?> </a>
-    </td>
-</tr> <?php } ?>  
+<table border="1">                        
+    <tbody> 
+        <tr>  
+    <?php foreach($arr[0] as $key=>$val) {  ?>    
+            <th><?= $val?></th>     
+ <?php }?> 
+        </tr>
+         
+<?php foreach($arr[1] as $key=>$val) {  ?> 
+        <tr>  
+        <?php foreach($val as $a) {  ?> 
+            <td><?= $a?></td>           
+         <?php }?> 
+        </tr> 
+     
+ <?php }?> 
+    </tbody>
+</table>  
+ 

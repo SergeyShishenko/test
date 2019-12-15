@@ -85,7 +85,7 @@
     ';       
     }//while
     mysqli_free_result($Result_vpi);
-    mysqli_free_result($Result_obj);
+    // mysqli_free_result($Result_obj);
     //Закрывает соединение с сервером MySQL
     // mysqli_close($dbconn); 
     if ($data["count"]==0) {$dis="dis";$cartempty="";}else{$dis="";$cartempty="dis";}       
