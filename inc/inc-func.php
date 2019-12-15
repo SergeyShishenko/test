@@ -277,7 +277,7 @@ function contentListGoupMenuVideo($arr) //правое меню группа
 }
 
 /////////////////////////////// ФУРНИТУРА START
-function tabContent($arr,$curr_page) //
+function tabContent($arr,$curr_page,$iterator) //
 {
 echo ' 
 <div class="row" style="margin-right: -15px;">
@@ -289,19 +289,19 @@ echo '
             padding: 15px;
             
                 ">
-            <ul id="myTab" class="nav nav-tabs" style="margin-bottom: 15px;">
-                <li ><a href="#harakteristiki" data-toggle="tab">Характеристики</a></li>
-                <li  class="active"><a href="#instrukciya" data-toggle="tab">Инструкция</a></li> 
+            <ul id="myTab'.$iterator.'" class="nav nav-tabs" style="margin-bottom: 15px;">
+                <li ><a href="#harakteristiki'.$iterator.'" data-toggle="tab">Характеристики</a></li>
+                <li  class="active"><a href="#instrukciya'.$iterator.'" data-toggle="tab">Инструкция</a></li> 
             </ul>
-            <div id="mytabContent" class="tab-content">
-                <div class="tab-pane fade " id="harakteristiki">
+            <div id="myTabContent'.$iterator.'" class="tab-content">
+                <div class="tab-pane fade " id="harakteristiki'.$iterator.'">
                 '; echo $arr[$curr_page]['harakteristiki_def'];echo'
                 </div>
-                <div class="tab-pane fade in active" id="instrukciya">
+                <div class="tab-pane fade in active" id="instrukciya'.$iterator.'">
                     <!-- часть1 -->
                     ';  echo $arr[$curr_page]['instrukciya_def'];echo' 
                         <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
-                            <div id="carousel" class="carousel slide" data-ride="carousel" style="display: inline-block;">
+                            <div id="carousel'.$iterator.'" class="carousel slide" data-ride="carousel" style="display: inline-block;">
                                 <div class="carousel-inner">
                                 ';                                                        
                                     for ($i=0; $i < count($arr[$curr_page]['instrukciya_carousel']); $i++) {  
@@ -323,11 +323,11 @@ echo '
                              echo '
                                 </div>
                                 <!-- Элементы управления -->
-                                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                                <a class="left carousel-control" href="#carousel'.$iterator.'" role="button" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                     <span class="sr-only">Предыдущий</span>
                                 </a>
-                                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                                <a class="right carousel-control" href="#carousel'.$iterator.'" role="button" data-slide="next">
                                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                     <span class="sr-only">Следующий</span>
                                 </a>
@@ -531,7 +531,8 @@ for ($i=0; $i < count($arr); $i++) {
                 </div>                   
                 <div class="bs-callout bs-callout-warning cont" id="';echo str_replace("#","",$arr[$i][$curr_page]['id']);echo'"> ';                   
                     tblVPI($arr[$i],$curr_page);//ВПИ                   
-                    tabContent($arr[$i],$curr_page);
+                    tabContent($arr[$i],$curr_page,$i);
+                    propertiesTableContent($arr[$i],$curr_page);
                 echo'
                 </div> <!--/bs-callout bs-callout-warning cont/-->
             </section> 
@@ -544,6 +545,49 @@ echo '
 ';
 // sideMenu($arr,$curr_page);
 }
+
+?>  
+<?php
+// start function
+function propertiesTableContent($arr,$curr_page)
+{
+?>    
+   <div class="row" style="margin-top: 15px; margin-left: 15px;">
+        <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
+            border: 1px solid rgb(221, 221, 221);
+            box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+            border-radius: 4px;
+            padding: 15px;
+            ">    
+            <div class="row col-xs-12 col-sm-12 col-md-12" style="margin-top: 20px;">                                                           
+                <div class="row">                                                
+                    <table class="table table-striped table-responsive">                        
+                        <tbody> 
+                            <tr>
+                                <th>Толщина ДСП<br>(A), мм</th>
+                                <th>L,<br>мм</th>
+                                <th>I,<br>мм</th>
+                                <th>D,<br>мм</th>
+                                <th>Артикул</th>
+                            </tr>
+                                <tr>
+                                <td>25</td>
+                                <td>17,5</td>
+                                <td>12,5</td>
+                                <td>10</td>
+                                <td><span class="boldstyle">BO06</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>                              
+            </div>
+        </div>
+   </div>                             
+
+<?php
+} // end function
+?>
+<?php
 
 /////////////////////////////// ФУРНИТУРА END
 
