@@ -807,7 +807,7 @@ echo '
 }//contentPage
 ///////////////////////////////
 
-function contentPage2($arr,$curr_page,$article_id) //
+function contentPage2($arr,$curr_page) //
 {
 echo' 
 <!-- main  -->
