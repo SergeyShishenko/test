@@ -146,12 +146,14 @@ $lenta_hot_white[2]=[
                 ", 
         'instrukciya_carousel'=> [// карусель
                                         [                             
-                                                'img'=>$path_img_carousel."LS-3528-IP33-4-8.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                                // 'img'=>$path_img_carousel."LS-3528-IP33-4-8.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                                'img'=>'https://via.placeholder.com/800x800',//data-image, src, data-src  800x800 и 960x640                                                            
                                                 'title'=>"Лента"// data-title, alt
                                         ],
                                         
                                         [                           
-                                                'img'=>$path_img_carousel."LS-2835-4-8_sch.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                                // 'img'=>$path_img_carousel."LS-2835-4-8_sch.png",//data-image, src, data-src  800x800 и 960x640                                                            
+                                                'img'=>'https://via.placeholder.com/960x640',//data-image, src, data-src  800x800 и 960x640                                                            
                                                 'title'=>"Ленту можно резать, кратность реза равна 50 мм"// data-title, alt
                                         ]                      
         ],// карусель  
