@@ -647,10 +647,17 @@ function tblVPI2($arr) //
                                     
                                     ';
                                 
-                                    for ($i=1; $i < count($a); $i++) {   
+                                    for ($i=1; $i < count($a); $i++) {  
+
+                                        if (file_exists($a[$i]['img'])) {
+                                            $img=$a[$i]['img'];//Файл существует
+                                        } else {
+                                            $img ="./dist/filesdb/images/pagevpi/no-foto.png";//Файл  не существует
+                                        }
+
                                 echo'
                                     <tr>
-                                        <td><img src="';echo $a[$i]['img'];echo'"  alt="';echo $a[$i]['def'];echo'" ></td>                                   
+                                        <td><img src="';echo $img;echo'"  alt="';echo $a[$i]['def'];echo'" ></td>                                   
                                         <td   ';
                                         echo ($a[$i]['id_table']!=="00") ? 'class="animated" data-objfurnid="'.$a[$i]['id_table']."\">" : '>';
                                         //echo 'data-objfurnid="'.$a[$i]['id_table'];
@@ -733,9 +740,14 @@ function tblVPI2($arr) //
                                     ';
                                 
                                     for ($i=1; $i < count($a); $i++) {   
+                                        if (file_exists($a[$i]['img'])) {
+                                            $img=$a[$i]['img'];//Файл существует
+                                        } else {
+                                            $img ="./dist/filesdb/images/pagevpi/no-foto.png";//Файл  не существует
+                                        }
                                 echo'
                                     <tr>
-                                        <td><img src="';echo $a[$i]['img'];echo'"  alt="';echo $a[$i]['def'];echo'" ></td>
+                                        <td><img src="';echo $img;echo'"  alt="';echo $a[$i]['def'];echo'" ></td>
                                         <td>';echo $a[$i]['count'];echo'</td>
                                         <td   ';
                                         echo ($i==1) ? 'class="animated" data-objfurnid="'.$a[0]['id_table']."\">" : '>';

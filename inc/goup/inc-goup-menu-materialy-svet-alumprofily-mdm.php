@@ -3,26 +3,26 @@
 $path_img="./dist/filesdb/images/thumbs/svet/";//200x200 для поиска shtangi
 $path_img_composition_article="./dist/filesdb/images/pagevpi/svet/";//100х67 для VPI
 $path_img_carousel="./dist/filesdb/images/carousel/svet/";//800x800 и 960x640 или 2х3(6х4)
-$path_page="materialy-svet.php?node=lenta_hot_white_mdm";
+$path_page="materialy-svet.php?node=alumprofily_mdm";
 $component_data="inc/ComponentData/materialy/svet/arlight/lenta_hot_white/";
-$id="#LED-lenta";
+$id="#LED-alumprofily";
 $num=0;
 /////////////////////////////////////  КЛЮЧИ МАССИВА ИСПРАВИТЬ В ВЕРХНИЙ РЕГИСТР
-$lenta_hot_white_mdm=[];
-$lenta_hot_white_mdm[$num]=[
+$alumprofily_mdm=[];
+$alumprofily_mdm[$num]=[
         'path'=>$path_page,//node
         'id'=>$id."-main",
         'img'=> $path_img."tbssvet.png",//200x200 для поиска
         'keywords'=>"",
-        'def'=>"СВЕТОДИОДНАЯ ЛЕНТА, ТЕПЛЫЙ БЕЛЫЙ, МДМ&#8209;КОМПЛЕКТ"
+        'def'=>"АЛЮМИНЕВЫЙ ПРОФИЛь, МДМ&#8209;КОМПЛЕКТ"
 ];    
 $num++;
-$lenta_hot_white_mdm[$num]=[
+$alumprofily_mdm[$num]=[
         'path'=>$path_page,
         'id'=> $id.$num,
         'img'=> $path_img."tbs833_72_790-1.png", //200x200 для поиска
         'keywords'=>"",
-        'def'=>"Светодиодная лента 4.8W",  //описание для меню        
+        'def'=>"Алюминевый профиль".$num,  //описание для меню        
         'composition_article'=>[ 
                                 [// таблица состава артикула
                                         [
@@ -99,12 +99,12 @@ $lenta_hot_white_mdm[$num]=[
         ]// таблица свойств              
 ];
 $num++;
-$lenta_hot_white_mdm[$num]=[
+$alumprofily_mdm[$num]=[
         'path'=>$path_page,
         'id'=> $id.$num,
         'img'=> $path_img."tbs833_72_790-1.png", //200x200 для поиска
         'keywords'=>"",
-        'def'=>"Светодиодная лента 9.6W",  //описание для меню        
+        'def'=>"Алюминевый профиль".$num,  //описание для меню        
         'composition_article'=>[ 
                                 [// таблица состава артикула
                                         [
@@ -181,12 +181,12 @@ $lenta_hot_white_mdm[$num]=[
         ]// таблица свойств              
 ];
 $num++;
-$lenta_hot_white_mdm[$num]=[
+$alumprofily_mdm[$num]=[
         'path'=>$path_page,
         'id'=> $id.$num,
         'img'=> $path_img."tbs833_72_790-1.png", //200x200 для поиска
         'keywords'=>"",
-        'def'=>"Светодиодная лента 14.4W",  //описание для меню        
+        'def'=>"Алюминевый профиль".$num,  //описание для меню        
         'composition_article'=>[ 
                                 [// таблица состава артикула
                                         [

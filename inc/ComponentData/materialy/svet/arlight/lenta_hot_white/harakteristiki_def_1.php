@@ -128,7 +128,7 @@ $harakteristiki_def_1=" <div id='parameters' style='display: block;'>
                                                 </tr>						
                                                 <tr>
                                                         <td>Производитель</td>
-                                                        <td><a href='https://arlight.ru ' rel='nofollow' target='_blank'>Arlight</a></td>
+                                                        <td><a href='https://arlight.ru/catalog/product/svetodiodnaya-lenta-rt-2-5000-12v-cool-8k-2x-3528-600-led-lux-013239-b/' rel='nofollow' target='_blank'>Arlight</a></td>
                                                 </tr>
                                         </tbody>
                                 </table>

@@ -194,46 +194,13 @@ foreach (glob("inc/goup/inc-goup-menu-materialy*.php") as $filename) { include $
                         <li class="menu ">
                             <a href="materialy-svet.php?group=lenta_hot_white&node=lenta_hot_white" class="list-group-item '.$item_svet_Class.'">СВЕТ</a>
                             <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="materialy-svet.php?group=lenta_hot_white&node=lenta_hot_white">СВЕТОДИОДНАЯ ЛЕНТА</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                          
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="materialy-svet.php?group=alumprofily&node=profily">АЛЮМИНЕВЫЙ ПРОФИЛЬ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                       
-                                    </ul>
-                                </li>                    
-                                <li class="menu2"><a class="list-group-item sub" href="materialy-svet.php?group=transformatory&node=transformatory">ТРАНСФОРМАТОРЫ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                       
-                                    </ul>
-                                </li>                    
-                                <li class="menu2"><a class="list-group-item sub" href="materialy-svet.php?group=accessories&node=accessories">АКСЕССУАРЫ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#">...</a>
-                                        </li>                                       
-                                    </ul>
-                                </li>                    
+                            ';
+                            leftSdeMenu($lenta_hot_white_mdm);// СВЕТОДИОДНАЯ ЛЕНТА, ТЕПЛЫЙ БЕЛЫЙ, МДМ&#8209;КОМПЛЕКТ
+                            leftSdeMenu($alumprofily_mdm);// АЛЮМИНЕВЫЙ ПРОФИЛь, МДМ&#8209;КОМПЛЕКТ
+                            leftSdeMenu($transformatory_mdm);// ТРАНСФОРМАТОРЫ, МДМ&#8209;КОМПЛЕКТ
+                            leftSdeMenu($accessories_mdm);// АКСЕССУАРЫ, МДМ&#8209;КОМПЛЕКТ
+                          
+                        echo'                      
                             </ul>
                         </li>                                                      
                     </ul>
