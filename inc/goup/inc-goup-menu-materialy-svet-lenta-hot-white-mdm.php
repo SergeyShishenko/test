@@ -5,7 +5,7 @@ $path_img_composition_article="./dist/filesdb/images/pagevpi/svet/";//100х67 д
 $path_img_carousel="./dist/filesdb/images/carousel/svet/";//800x800 и 960x640 или 2х3(6х4)
 $path_page="materialy-svet.php?node=lenta_hot_white_mdm";
 $component_data="inc/ComponentData/materialy/svet/arlight/lenta_hot_white/";
-$id="#LED-lenta";
+$id="#LED-lenta-hot";
 $num=0;
 /////////////////////////////////////  КЛЮЧИ МАССИВА ИСПРАВИТЬ В ВЕРХНИЙ РЕГИСТР
 $lenta_hot_white_mdm=[];
@@ -14,7 +14,7 @@ $lenta_hot_white_mdm[$num]=[
         'id'=>$id."-main",
         'img'=> $path_img."tbssvet.png",//200x200 для поиска
         'keywords'=>"",
-        'def'=>"СВЕТОДИОДНАЯ ЛЕНТА, ТЕПЛЫЙ БЕЛЫЙ, МДМ&#8209;КОМПЛЕКТ"
+        'def'=>"СВЕТОДИОДНАЯ ЛЕНТА, ТЕПЛЫЙ БЕЛЫЙ 2800&#8209;3500К, МДМ&#8209;КОМПЛЕКТ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='hiddenChar'>.</span>"
 ];    
 $num++;
 $lenta_hot_white_mdm[$num]=[

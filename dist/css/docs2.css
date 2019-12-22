@@ -96,3 +96,6 @@ body + div {
     display: none !important;
   }
   /* .creat:hover{background-color: #2ecc71;} */
+  span.hiddenChar {
+    color: transparent !important;
+}

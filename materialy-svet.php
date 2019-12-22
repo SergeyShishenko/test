@@ -23,54 +23,45 @@ if (isset($_GET["node"])) {
 
 
 // $curr_page = 1;// индекс элемента в количестве групп в боковом меню 
-switch ($_GET["node"]) {
-    case "lenta_hot_white_mdm":
-        $curr_page = 1;
-        break;
-    case "profily_mdm":
-        $curr_page = 2;
-        break;
-    case "transformatory_mdm":
-        $curr_page = 3;
-        break;
-    case "accessories_mdm":
-        $curr_page = 4;
-        break;
-    default:
-        $curr_page = 1;
-        break;  
-}
+// switch ($_GET["node"]) {
+//     case "lenta_hot_white_mdm":
+//         $curr_page = 1;
+//         break;
+//     case "profily_mdm":
+//         $curr_page = 2;
+//         break;
+//     case "transformatory_mdm":
+//         $curr_page = 3;
+//         break;
+//     case "accessories_mdm":
+//         $curr_page = 4;
+//         break;
+//     default:
+//         $curr_page = 1;
+//         break;  
+// }
 
 // contentPage($$article_id,$curr_page,$article_id); 
 // $much_arr=[$$article_id];
 // $much_arr=[$lenta,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];
 $much_arr=[$$article_id];
-// $much_arr=[$lenta_hot_white_mdm];
-contentPage2($much_arr,$curr_page); 
+// $much_arr=[$lenta_hot_white_mdm,$lenta_neutral_white_mdm];
+contentPage2($much_arr); 
 
 
 // sideMenu($$article_id,$curr_page); 
 
 // $arrlist = [$$article_id];//группы в боковом меню
 // $_GET["group"] // МДМ HAFELE ARLIGHT
-switch ($article_id) {
-    case "lenta_hot_white_mdm":
-        $arrlist = [$lenta_hot_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
-        break;
-    case "profily":
-        $arrlist = [$lenta_hot_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
-        break;
-    case "transformatory":
-        $arrlist = [$lenta_hot_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
-        break;
-    case "accessories":
-        $arrlist = [$lenta_hot_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
-        break;
+switch ($_GET["group"]) {
+    case "mdm":
+        $arrlist = [$lenta_hot_white_mdm,$lenta_neutral_white_mdm,$lenta_cold_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
+        break;   
     default:
-        $arrlist = [$lenta_hot_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
+        $arrlist = [$lenta_hot_white_mdm,$lenta_neutral_white_mdm,$lenta_cold_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
         break;  
 }
- $arrlist = [$lenta_hot_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
+//  $arrlist = [$lenta_hot_white_mdm,$lenta_neutral_white_mdm,$lenta_cold_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
 sideMenuListPages($arrlist);
 
 include 'inc/inc-footer2.php'; 

@@ -819,7 +819,7 @@ echo '
 }//contentPage
 ///////////////////////////////
 
-function contentPage2($arr,$curr_page) //
+function contentPage2($arr) //
 {
 echo' 
 <!-- main  -->

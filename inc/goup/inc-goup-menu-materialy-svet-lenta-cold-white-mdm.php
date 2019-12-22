@@ -3,26 +3,26 @@
 $path_img="./dist/filesdb/images/thumbs/svet/";//200x200 для поиска shtangi
 $path_img_composition_article="./dist/filesdb/images/pagevpi/svet/";//100х67 для VPI
 $path_img_carousel="./dist/filesdb/images/carousel/svet/";//800x800 и 960x640 или 2х3(6х4)
-$path_page="materialy-svet.php?group=mdm&group=mdm&node=transformatory_mdm";
-$component_data="inc/ComponentData/materialy/svet/arlight/lenta_hot_white/";
-$id="#LED-transformatory";
+$path_page="materialy-svet.php?group=mdm&node=lenta_cold_white_mdm";
+$component_data="inc/ComponentData/materialy/svet/arlight/lenta_cold_white/";
+$id="#LED-lenta-cold";
 $num=0;
 /////////////////////////////////////  КЛЮЧИ МАССИВА ИСПРАВИТЬ В ВЕРХНИЙ РЕГИСТР
-$transformatory_mdm=[];
-$transformatory_mdm[$num]=[
+$lenta_cold_white_mdm=[];
+$lenta_cold_white_mdm[$num]=[
         'path'=>$path_page,//node
         'id'=>$id."-main",
         'img'=> $path_img."tbssvet.png",//200x200 для поиска
         'keywords'=>"",
-        'def'=>"ТРАНСФОРМАТОРЫ, МДМ&#8209;КОМПЛЕКТ"
+        'def'=>"СВЕТОДИОДНАЯ ЛЕНТА, ХОЛОДНЫЙ БЕЛЫЙ 5000&#8209;6400К, МДМ&#8209;КОМПЛЕКТ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='hiddenChar'>.</span>"
 ];    
 $num++;
-$transformatory_mdm[$num]=[
+$lenta_cold_white_mdm[$num]=[
         'path'=>$path_page,
         'id'=> $id.$num,
         'img'=> $path_img."tbs833_72_790-1.png", //200x200 для поиска
         'keywords'=>"",
-        'def'=>"Трансформатор".$num,  //описание для меню        
+        'def'=>"Светодиодная лента 4.8W",  //описание для меню        
         'composition_article'=>[ 
                                 [// таблица состава артикула
                                         [
@@ -99,12 +99,12 @@ $transformatory_mdm[$num]=[
         ]// таблица свойств              
 ];
 $num++;
-$transformatory_mdm[$num]=[
+$lenta_cold_white_mdm[$num]=[
         'path'=>$path_page,
         'id'=> $id.$num,
         'img'=> $path_img."tbs833_72_790-1.png", //200x200 для поиска
         'keywords'=>"",
-        'def'=>"Трансформатор".$num,  //описание для меню        
+        'def'=>"Светодиодная лента 9.6W",  //описание для меню        
         'composition_article'=>[ 
                                 [// таблица состава артикула
                                         [
@@ -181,12 +181,12 @@ $transformatory_mdm[$num]=[
         ]// таблица свойств              
 ];
 $num++;
-$transformatory_mdm[$num]=[
+$lenta_cold_white_mdm[$num]=[
         'path'=>$path_page,
         'id'=> $id.$num,
         'img'=> $path_img."tbs833_72_790-1.png", //200x200 для поиска
         'keywords'=>"",
-        'def'=>"Трансформатор".$num,  //описание для меню        
+        'def'=>"Светодиодная лента 14.4W",  //описание для меню        
         'composition_article'=>[ 
                                 [// таблица состава артикула
                                         [

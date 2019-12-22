@@ -3,7 +3,7 @@
 $path_img="./dist/filesdb/images/thumbs/svet/";//200x200 для поиска shtangi
 $path_img_composition_article="./dist/filesdb/images/pagevpi/svet/";//100х67 для VPI
 $path_img_carousel="./dist/filesdb/images/carousel/svet/";//800x800 и 960x640 или 2х3(6х4)
-$path_page="materialy-svet.php?node=alumprofily_mdm";
+$path_page="materialy-svet.php?group=mdm&node=alumprofily_mdm";
 $component_data="inc/ComponentData/materialy/svet/arlight/lenta_hot_white/";
 $id="#LED-alumprofily";
 $num=0;
@@ -14,7 +14,7 @@ $alumprofily_mdm[$num]=[
         'id'=>$id."-main",
         'img'=> $path_img."tbssvet.png",//200x200 для поиска
         'keywords'=>"",
-        'def'=>"АЛЮМИНЕВЫЙ ПРОФИЛь, МДМ&#8209;КОМПЛЕКТ"
+        'def'=>"АЛЮМИНЕВЫЙ ПРОФИЛЬ, МДМ&#8209;КОМПЛЕКТ"
 ];    
 $num++;
 $alumprofily_mdm[$num]=[

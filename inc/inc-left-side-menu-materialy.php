@@ -196,6 +196,8 @@ foreach (glob("inc/goup/inc-goup-menu-materialy*.php") as $filename) { include $
                             <ul class="list-group sub_menu">
                             ';
                             leftSdeMenu($lenta_hot_white_mdm);// СВЕТОДИОДНАЯ ЛЕНТА, ТЕПЛЫЙ БЕЛЫЙ, МДМ&#8209;КОМПЛЕКТ
+                            leftSdeMenu($lenta_neutral_white_mdm);// СВЕТОДИОДНАЯ ЛЕНТА, нейтральный БЕЛЫЙ, МДМ&#8209;КОМПЛЕКТ
+                            leftSdeMenu($lenta_cold_white_mdm);// СВЕТОДИОДНАЯ ЛЕНТА, холодный БЕЛЫЙ, МДМ&#8209;КОМПЛЕКТ
                             leftSdeMenu($alumprofily_mdm);// АЛЮМИНЕВЫЙ ПРОФИЛь, МДМ&#8209;КОМПЛЕКТ
                             leftSdeMenu($transformatory_mdm);// ТРАНСФОРМАТОРЫ, МДМ&#8209;КОМПЛЕКТ
                             leftSdeMenu($accessories_mdm);// АКСЕССУАРЫ, МДМ&#8209;КОМПЛЕКТ
