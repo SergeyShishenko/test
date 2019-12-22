@@ -7,6 +7,8 @@ $path_page="materialy-svet.php?node=lenta_hot_white_mdm";
 $component_data="inc/ComponentData/materialy/svet/arlight/lenta_hot_white/";
 $id="#LED-lenta-hot";
 $num=0;
+require_once('./Classes/Templates/ParseTPL.php');
+$harakteristikiTPL= new ParseTPL;
 /////////////////////////////////////  КЛЮЧИ МАССИВА ИСПРАВИТЬ В ВЕРХНИЙ РЕГИСТР
 $lenta_hot_white_mdm=[];
 $lenta_hot_white_mdm[$num]=[
@@ -17,6 +19,14 @@ $lenta_hot_white_mdm[$num]=[
         'def'=>"СВЕТОДИОДНАЯ ЛЕНТА, ТЕПЛЫЙ БЕЛЫЙ 2800&#8209;3500К, МДМ&#8209;КОМПЛЕКТ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='hiddenChar'>.</span>"
 ];    
 $num++;
+
+$harakteristikiTPL->get_tpl('inc/ComponentData/materialy/svet/mdm/tpl/harakteristiki_lenta.tpl');
+$harakteristikiTPL->set_tpl('{COLORTEMPERATURE}','нейтральный белый 4000-4500К');//ЦВЕТОВАЯ ТЕМПЕРАТУРА
+$harakteristikiTPL->set_tpl('{POWER}','4,8');//МОЩНОСТЬ, ВТ/М.П
+$harakteristikiTPL->set_tpl('{DENSITYDIODES}','60');//ПЛОТНОСТЬ ДИОДОВ НА МЕТР
+$harakteristikiTPL->set_tpl('{LINK}','https://www.mdm-complect.ru/catalog/svetodiodnaya-lenta/49890/');//ССЫЛКА НА СТРАНИЦУ ПОСТАВЩИКА
+$harakteristikiTPL->tpl_parse();
+
 $lenta_hot_white_mdm[$num]=[
         'path'=>$path_page,
         'id'=> $id.$num,
@@ -61,7 +71,7 @@ $lenta_hot_white_mdm[$num]=[
                                 ]// состав артикула  
         ],// массив артикулов 
         //характеристики 
-        'harakteristiki_def'=> include $component_data.'harakteristiki_def_1.php', 
+        'harakteristiki_def'=> $harakteristikiTPL->template, 
         //инструкции                         
         'instrukciya_def'=>"<h4 >Проектирование</h4>
                 <h5 >Светодиодную ленту, драйвер напряжения 12V, сенсор открытия двери и крепления заказывайте, пожалуйста, отдельно.</h5>
