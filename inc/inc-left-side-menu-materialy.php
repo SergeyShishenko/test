@@ -192,7 +192,7 @@ foreach (glob("inc/goup/inc-goup-menu-materialy*.php") as $filename) { include $
                         </li>                                                      
                         <!-- menu -->
                         <li class="menu ">
-                            <a href="materialy-svet.php?group=lenta_hot_white&node=lenta_hot_white" class="list-group-item '.$item_svet_Class.'">СВЕТ</a>
+                            <a href="materialy-svet.php?group=mdm&node=lenta_hot_white_mdm" class="list-group-item '.$item_svet_Class.'">СВЕТ</a>
                             <ul class="list-group sub_menu">
                             ';
                             leftSdeMenu($lenta_hot_white_mdm);// СВЕТОДИОДНАЯ ЛЕНТА, ТЕПЛЫЙ БЕЛЫЙ, МДМ&#8209;КОМПЛЕКТ
