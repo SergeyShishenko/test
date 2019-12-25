@@ -520,13 +520,13 @@ function fileopenxlscsv($filename)
 
 		
 				<a class='button-gen ' id='TKD' href='#'>
-					<span class='submit-gen' >Титульники КД</span>				
+					<span class='submit-gen' >Титульный КД</span>				
 					<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
 					<span class='check-gen' title='КД'><i>Скачать</i></span>
 				</a>
 			
 				<a class='button-gen ' id='TDP' href='#' type='button'>
-					<span class='submit-gen' >Титульники ДП</span>				
+					<span class='submit-gen' >Титульный ДП</span>				
 					<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
 					<span class='check-gen' title='ДП'><i>Скачать</i></span>
 				</a>
