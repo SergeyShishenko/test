@@ -111,6 +111,14 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№12. Копирование в буфер из СП3 Чек-лист Вопросы заказчику"];
 
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
+                    'id'=> "#addition13",
+                    'img'=> $path_img."tbstest.png",
+                    'video'=> $path_video."13.mp4",
+                    'keywords'=>"SP3 (дополнение 13) - ДП и образцы невозможно изготовить - отметки в Чек-листе",
+                    'tilde'=>"ыз3",
+                    'def'=>"№13. ДП и образцы невозможно изготовить - отметки в Чек-листе"];
+
 
     $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition16",
