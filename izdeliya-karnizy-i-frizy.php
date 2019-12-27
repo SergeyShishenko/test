@@ -35,7 +35,7 @@ include 'inc/inc-left-side-menu-izdeliya.php';
 
                           <h2 id="plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1">&nbsp;</h2>
                         <div class="bs-callout bs-callout-warning cont" >
-                          <h4>5000204-99-400 планы по карнизу с обозначением римскими цифрами 1</h4>
+                          <h4>5000204-99-400 план по карнизу с обозначением римскими цифрами</h4>
                                   <div class="overlay"></div>                  
                               <p> <a>                                
                                   <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
@@ -155,7 +155,7 @@ include 'inc/inc-left-side-menu-izdeliya.php';
                             
                             <li><a href="#sborochnye-shemy-karnizy-i-frizy">Сборочно-монтажные схемы</a>
                             <ul class="nav">
-                                    <li><a href="#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1">5000204-99-400 планы по карнизу с обозначением римскими цифрами 1</a>
+                                    <li><a href="#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1">5000204-99-400 план по карнизу с обозначением римскими цифрами</a>
                                     </li>
                                     <li><a href="#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-2">План по карнизу, узлы</a>
                                     </li>

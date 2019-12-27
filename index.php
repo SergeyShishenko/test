@@ -2505,7 +2505,8 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="izdeliya-karnizy-i-frizy.php#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1" data-img="./dist/images/no-foto.png">5000204-99-400 План по карнизу<span> <br>~-5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1</span></p>
+                                                                                <p data-href="izdeliya-karnizy-i-frizy.php#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1" data-img="./dist/images/no-foto.png">5000204-99-400 план по карнизу<span> <br>~-5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1</span></p>
+                                                                                <p class="KEYWORDS" data-href="izdeliya-karnizy-i-frizy.php#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1">5000204-99-400 план по карнизу с обозначением римскими цифрами</p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
