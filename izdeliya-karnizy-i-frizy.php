@@ -32,30 +32,92 @@ include 'inc/inc-left-side-menu-izdeliya.php';
                           <div class="page-header">
                             <h1 itemprop="name" id="sborochnye-shemy-karnizy-i-frizy">Сборочно-монтажные схемы</h1>
                           </div>
-                          <h2 id="plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" >
-                        <!-- <h4>Планы по карнизу с обозначением римскими цифрами</h4>
-                                <div class="overlay"></div>                  
-                            <p> <a>
-                               
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_1-v8.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
-                                 data-toggle="modal"
-                                 data-target="#myModal"
-                                                            
-                                 alt="5000301_02_000 лист титульный КД"
-                                 data-xls="./dist/files/xls/shablon-kd.xlsx"
-                                 data-pdf=""
-                                 data-prnt="noPrint"
-                                 data-spng="noPNG" 
-                                   ></a>
-                             </p> -->
 
-                             
-                             <!-- <div class="row"> <iframe width="100%" height="640" src="//sharecad.org/cadframe/load?url=http://www.cadsofttools.com/dwgviewer/floorplan.dwg" scrolling="no"></iframe></div> -->
-                             <!-- <div class="row"> <iframe width="100%" height="1180" src="//sharecad.org/cadframe/load?url=http://www.500stp.website/dist/files/dwg/pr-101-20-105.dwg" scrolling="no"></iframe></div> -->
-                             <div > <iframe src="https://myhub.autodesk360.com/ue2c0441f/shares/public/SHabee1QT1a327cf2b7a11ae5bad0b6ddfc6?mode=embed" width="100%" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" style="padding: 20px;"></iframe></div>
-                             <div > <iframe src="https://myhub.autodesk360.com/ue2c0441f/shares/public/SHabee1QT1a327cf2b7acde00e884d655136?mode=embed" width="100%" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" style="padding: 20px;"></iframe></div>
-                             <div > <iframe src="https://myhub.autodesk360.com/ue2c0441f/shares/public/SHabee1QT1a327cf2b7a8203fdb9176d40f5?mode=embed" width="100%" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0" style="padding: 20px;"></iframe></div>
+                          <h2 id="plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                          <h4>5000204-99-400 планы по карнизу с обозначением римскими цифрами 1</h4>
+                                  <div class="overlay"></div>                  
+                              <p> <a>                                
+                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                  data-toggle="modal"
+                                  data-target="#myModal"                                                              
+                                  alt="5000204-99_400"
+                                  data-xls=""
+                                  data-pdf="./dist/files/pdf/5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1.pdf"
+                                  data-prnt="noPrint"
+                                  data-spng="noPNG" 
+                                    ></a>
+                              </p>
+                        </div>
+                      
+
+                          <h2 id="plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-2">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                          <h4>План по карнизу, узлы</h4>
+                                  <div class="overlay"></div>                  
+                              <p> <a>                                
+                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                  data-toggle="modal"
+                                  data-target="#myModal"                                                              
+                                  alt="5000204-99_400"
+                                  data-xls=""
+                                  data-pdf="./dist/files/pdf/5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-2.pdf"
+                                  data-prnt="noPrint"
+                                  data-spng="noPNG" 
+                                    ></a>
+                              </p>
+                        </div>
+                      
+
+                          <h2 id="plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-3">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                          <h4>План по карнизу, сечения по стенам</h4>
+                                  <div class="overlay"></div>                  
+                              <p> <a>                                
+                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-3.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                  data-toggle="modal"
+                                  data-target="#myModal"                                                              
+                                  alt="5000204-99_400"
+                                  data-xls=""
+                                  data-pdf="./dist/files/pdf/5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-3.pdf"
+                                  data-prnt="noPrint"
+                                  data-spng="noPNG" 
+                                    ></a>
+                              </p>
+                        </div>
+                      
+
+                          <h2 id="plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-4">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                          <h4>План по карнизу, сечения по шкафам</h4>
+                                  <div class="overlay"></div>                  
+                              <p> <a>                                
+                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-4.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                  data-toggle="modal"
+                                  data-target="#myModal"                                                              
+                                  alt="5000204-99_400"
+                                  data-xls=""
+                                  data-pdf="./dist/files/pdf/5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-4.pdf"
+                                  data-prnt="noPrint"
+                                  data-spng="noPNG" 
+                                    ></a>
+                              </p>
+                        </div>
+                          <h2 id="plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-5">&nbsp;</h2>
+                        <div class="bs-callout bs-callout-warning cont" >
+                          <h4>План по карнизу, сечения шторного фартука</h4>
+                                  <div class="overlay"></div>                  
+                              <p> <a>                                
+                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-5.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                  data-toggle="modal"
+                                  data-target="#myModal"                                                              
+                                  alt="5000204-99_400"
+                                  data-xls=""
+                                  data-pdf="./dist/files/pdf/5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-5.pdf"
+                                  data-prnt="noPrint"
+                                  data-spng="noPNG" 
+                                    ></a>
+                              </p>
                         </div>
                       
                         </section>
@@ -93,7 +155,15 @@ include 'inc/inc-left-side-menu-izdeliya.php';
                             
                             <li><a href="#sborochnye-shemy-karnizy-i-frizy">Сборочно-монтажные схемы</a>
                             <ul class="nav">
-                                    <li><a href="#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi">Планы по карнизу с обозначением римскими цифрами</a>
+                                    <li><a href="#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1">5000204-99-400 планы по карнизу с обозначением римскими цифрами 1</a>
+                                    </li>
+                                    <li><a href="#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-2">План по карнизу, узлы</a>
+                                    </li>
+                                    <li><a href="#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-3">План по карнизу, сечения по стенам</a>
+                                    </li>
+                                    <li><a href="#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-4">План по карнизу, сечения по шкафам</a>
+                                    </li>
+                                    <li><a href="#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-5">План по карнизу, сечения шторного фартука</a>
                                     </li>
                                                                   
                                 </ul>

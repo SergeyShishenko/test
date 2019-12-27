@@ -2499,34 +2499,41 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
                                                             <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
                                                             <TR>
                                                                 <TD data-tooltip="СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ" class="hover mapsite" id="footer95">
-                                                                    <p data-href="" data-img="./dist/images/no-foto.png" id="floating96">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
+                                                                    <p data-href="izdeliya-karnizy-i-frizy.php#sborochnye-shemy-karnizy-i-frizy" data-img="./dist/images/no-foto.png" id="floating96">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ<span> <br>~-katalog-lepniny</span></p>
                                                                 </TD>                                                                            
                                                                 <TD>
                                                                     <TABLE >                                                                                          
                                                                         <TR>
                                                                             <TD class="mapsite" colspan="2" id="flo-">                                                                            
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">5000201-00-100-01.01 Полотно блока дверного глухое ПЦО<span> <br>~-polotno-bloka-dvernogo-gluhoe-pco</span></p>
+                                                                                <p data-href="izdeliya-karnizy-i-frizy.php#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1" data-img="./dist/images/no-foto.png">5000204-99-400 План по карнизу<span> <br>~-5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-1</span></p>
                                                                             </TD>                                                                         
                                                                         </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                            <TD class="mapsite"  id="flo-">                                                                            
+                                                                                <p data-href="izdeliya-karnizy-i-frizy.php#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-2" data-img="./dist/images/no-foto.png">План по карнизу, узлы<span> <br>~-5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-2</span></p>
                                                                             </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->  
-                                                                        <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
-                                                                            </TD>                                                                         
-                                                                        </TR>
+                                                                        </TR>  
                                                                         <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                         <TR>
-                                                                            <TD class="mapsite" id="flo-">
-                                                                                <p data-href="" data-img="./dist/images/no-foto.png">Архив профилей <span> <br>~-arhiv-profiley</span></p>
+                                                                            <TD class="mapsite"  id="flo-">                                                                            
+                                                                                <p data-href="izdeliya-karnizy-i-frizy.php#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-3" data-img="./dist/images/no-foto.png">План по карнизу, сечения по стенам<span> <br>~-5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-3</span></p>
                                                                             </TD>                                                                         
-                                                                        </TR>
-                                                                        <TR><TD></TD></TR> <!--end LEVEL4-->          
+                                                                        </TR>  
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                        <TR>
+                                                                            <TD class="mapsite"  id="flo-">                                                                            
+                                                                                <p data-href="izdeliya-karnizy-i-frizy.php#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-4" data-img="./dist/images/no-foto.png">План по карнизу, сечения по шкафам<span> <br>~-5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-4</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>  
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                        <TR>
+                                                                            <TD class="mapsite"  id="flo-">                                                                            
+                                                                                <p data-href="izdeliya-karnizy-i-frizy.php#plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-5" data-img="./dist/images/no-foto.png">План по карнизу, сечения шторного фартука<span> <br>~-5000204-99-400-plany-po-karnizu-s-oboznacheniem-rimskimi-ciframi-4</span></p>
+                                                                            </TD>                                                                         
+                                                                        </TR>  
+                                                                        <TR><TD></TD></TR> <!--end LEVEL4--> 
+                                                                         
                                                                     </TABLE>
                                                                 </TD>
                                                             </TR>                                                       
