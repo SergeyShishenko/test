@@ -34,7 +34,9 @@ $(".who").bind("change keyup input click", function() {
            else
            { aimg = "./dist/images/no-foto.png";        
            }   
-           $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'"  >' + result + "</a></li>"  );         
+
+           
+           $(".search_result").append('<li><a href="' + aref + '"><img src="' + aimg +'" onerror="if (this.src != \'./dist/images/no-foto.png\') this.src = \'./dist/images/no-foto.png\';"  >' + result + "</a></li>"  );         
         }
       });
     }
