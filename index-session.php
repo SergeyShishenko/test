@@ -5,8 +5,9 @@ session_set_cookie_params(0);
 session_start();
 $s_id=session_id();
 define('__ROOT__', dirname(dirname(__FILE__))); 
-require_once(__ROOT__.'/DATA/data.php'); 
-// require_once('DATA/data.php');
+
+require_once(__ROOT__.'/DATA/data.php'); // переменные $enter_login = "sofia"; $enter_passw = "202cb962ac59075b964b07152d234b70";
+
 $err = '';
 if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
 
@@ -14,7 +15,11 @@ if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
 
 //    echo $_SERVER['REQUEST_URI'] . '<br>';
 //  echo $_SESSION['ref'];
+
 if (isset($_POST['login']) && isset($_POST['passw'])) {
+
+
+  
    $_POST['passw'] = md5($_POST['passw']);
    if ($_POST['login']===$enter_login && 
       $_POST['passw']===$enter_passw) {
@@ -22,12 +27,16 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
       $_SESSION['sess_login'] = $_POST['login'];
       $_SESSION['sess_pass'] = $_POST['passw'];
 
+      
+
       require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
       $dbconn=dbconnect();
-
+      // Генерируем случайное число и шифруем его
+      $hash = md5(generateCode(10));
+      setcookie("hash", $hash, time()+60*60*24*30);// 24 часа
 
       $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `sess_id` LIKE '%".$s_id."%'");
-      if (mysqli_num_rows($result) > 0) {//есть
+      if (mysqli_num_rows($result) > 0) {//есть запись
        
        $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `sess_id` LIKE '%".$s_id."%'");
       }
