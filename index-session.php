@@ -1,9 +1,10 @@
 <?php
 ini_set('session.gc_maxlifetime', 86400);// 24 часа
-ini_set('session.cookie_lifetime', 0);
-session_set_cookie_params(0);
+// ini_set('session.cookie_lifetime', 0);
+// session_set_cookie_params(0);
 session_start();
 $s_id=session_id();
+
 define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once(__ROOT__.'/DATA/TABLES/configDB.php');
 $dbconn=dbconnect();
@@ -40,21 +41,42 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
 
     $_SESSION['sess_login'] = $_POST['login'];
     $_SESSION['sess_pass'] = $_POST['passw'];
-   
-    
-    // Генерируем случайное число и шифруем его
-    // $hash = md5(generateCode(10));
-    // setcookie("hash", $hash, time()+60*60*24*30);// 24 часа
-
-    $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `sess_id` LIKE '%".$s_id."%'");
+    $hash=$_COOKIE["hash"];
+    // echo '$s_id ' . $s_id . '<br>';
+    // var_dump($_SESSION);
+    // var_dump($_COOKIE);
+    // exit();
+    if (is_null($hash)){
+      $hash="-";  
+  }
+    $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `hash_id` LIKE '%".$hash."%'");
     if (mysqli_num_rows($result) > 0) {//есть запись
     
-    $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `sess_id` LIKE '%".$s_id."%'");
+    $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `hash_id` LIKE '%".$hash."%'");
+
+    // echo '$hash ' . $hash . '<br>';
+    // exit();
     }
     else{
-      $result = mysqli_query($dbconn,"INSERT INTO `user` (`s_id`, `sess_id`, `date_start`) VALUES (NULL, '$s_id', CURRENT_TIMESTAMP)");
+      // Генерируем случайное число и шифруем его
+    $hash = sha1(generateCode(10));
+    setcookie("hash", $hash, time()+60*60*24*30);// 24 часа
+    $_COOKIE["hash"] = $hash;
+      $result = mysqli_query($dbconn,"INSERT INTO `user` (`s_id`, `sess_id`, `date_start`, `hash_id`) VALUES (NULL,'$s_id', CURRENT_TIMESTAMP, '$hash')");
+
       
     }
+    // $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `sess_id` LIKE '%".$s_id."%'");
+    // if (mysqli_num_rows($result) > 0) {//есть запись
+    
+    // $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `sess_id` LIKE '%".$s_id."%'");
+    // // echo '$s_id ' . $s_id . '<br>';
+    // // exit();
+    // }
+    // else{
+    //   $result = mysqli_query($dbconn,"INSERT INTO `user` (`s_id`, `sess_id`, `date_start`) VALUES (NULL, '$s_id', CURRENT_TIMESTAMP)");
+      
+    // }
 
 
     mysqli_close($dbconn);
@@ -62,6 +84,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
     // header('Location: index.php');
 
     // var_dump($_POST);
+    // echo '$s_id ' . $s_id . '<br>';
     // exit();
     header('Location:'.$_SESSION['ref']);
     unset($_SESSION['ref']);

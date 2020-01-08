@@ -1,22 +1,20 @@
 <?php
 
-  $hash=$_COOKIE["hash"];
-  if (is_null($hash)){
-    $hash="-";  
-}
+  $sess_id=session_id();
 
-//   $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `hash_id` LIKE '%".$hash."%'");
-//   if (mysqli_num_rows($result) > 0) {//есть
+
+  $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `sess_id` LIKE '%".$sess_id."%'");
+  if (mysqli_num_rows($result) > 0) {//есть
    
-//    $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `hash_id` LIKE '%".$hash."%'");
-//   }
-//   else{
-//     $result = mysqli_query($dbconn,"INSERT INTO `user` (`s_id`, `hash_id`, `date_start`) VALUES (NULL, '$hash', CURRENT_TIMESTAMP)");
+   $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `sess_id` LIKE '%".$sess_id."%'");
+  }
+  else{
+    $result = mysqli_query($dbconn,"INSERT INTO `user` (`s_id`, `sess_id`, `date_start`) VALUES (NULL, '$sess_id', CURRENT_TIMESTAMP)");
     
-//   }
+  }
 
 
-    $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `hash_id` = '$hash'");//MySQL запрос
+    $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
     $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
     $s_id=$row_user['s_id'];
 
