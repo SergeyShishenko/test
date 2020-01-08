@@ -12,13 +12,16 @@ require_once(__ROOT__.'/DATA/TABLES/configDB.php'); // подключение к
 $dbconn=dbconnect();
 // проверка сессии
 $hash=$_COOKIE["hash"];
+$login= $_SESSION['sess_login'];
+$escape_string_login=mysqli_real_escape_string($dbconn, $login);
 if (is_null($hash)){
     $hash="-";  
 }
-$result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `hash_id` LIKE '%".$hash."%'");
+$result = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LIKE '%".$hash."%'");
     if (mysqli_num_rows($result) > 0) {//есть запись
     
-    $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `hash_id` LIKE '%".$hash."%'");
+    // $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `hash_id` LIKE '%".$hash."%'");
+    $result = mysqli_query($dbconn,"UPDATE `sofia_users` SET `user_sess_date_start` = CURRENT_TIMESTAMP WHERE user_login='$escape_string_login'");
 
     // echo '$hash ' . $hash . '<br>';
     // var_dump($hash);

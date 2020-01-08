@@ -44,7 +44,10 @@ else {
 
 // require_once(dirname($_SERVER['DOCUMENT_ROOT']).'/DATA/TABLES/configDB.php');// для сайта !!!!!!!
 // require_once($_SERVER['DOCUMENT_ROOT'].'/DATA/TABLES/configDB.php');// для localhost !!!!!!!
+
 $sess_id=session_id();
+$hash=$_COOKIE["hash"];
+
 $dbconn=dbconnect();
 if (!mysqli_set_charset($dbconn, "utf8")) {
     printf("Ошибка при загрузке набора символов utf8: %s\n", mysqli_error($link));
@@ -53,9 +56,9 @@ if (!mysqli_set_charset($dbconn, "utf8")) {
     //printf("Текущий набор символов: %s\n", mysqli_character_set_name($link));
 }
 /** PHPExcel_IOFactory */
-$Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
+$Result_user = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LIKE '%".$hash."%'");
 $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
-$s_id=$row_user['s_id'];
+$user_sofia_id=$row_user['user_sofia_id'];
 
 if(isset($_POST['ids']))//генерация xls
 {
@@ -73,12 +76,12 @@ if(isset($_POST['ids']))//генерация xls
 
     // $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
     // $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
-    // $s_id=$row_user['s_id'];
+    // $hash=$row_user['s_id'];
 
     
 
   // выбираем все записи текущей сессии
-    $sql = "SELECT *  FROM `user_vpi` WHERE `s_id` = $s_id";
+    $sql = "SELECT *  FROM `user_vpi` WHERE vpi_hash_id = '$hash'";
     $User_vpi_Result=mysqli_query($dbconn,$sql);
 
     if($User_vpi_Result)
@@ -247,8 +250,9 @@ elseif (isset($_POST['addids'])) {
     $count=count($addids);
     // $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
     // $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
-    // $s_id=$row_user['s_id'];
+    // $hash=$row_user['s_id'];
     // echo "<pre>";
+    // echo $hash.'<br>';
     // echo $count.'<br>';
     // echo print_r($addids);
     // echo "</pre>";
@@ -263,7 +267,7 @@ elseif (isset($_POST['addids'])) {
        
 
        
-        $sql = "INSERT INTO `user_vpi` (`vpi_id`, `s_id`, `obj_id`, `count_obj`) VALUES (NULL, '$s_id', $furnitur_id, '$furnitur_count')";
+        $sql = "INSERT INTO `user_vpi` (`vpi_id`, vpi_hash_id, `obj_id`, `count_obj`) VALUES (NULL, '$hash', $furnitur_id, '$furnitur_count')";
         // echo    'vpi\VPI_template.php $sql- '.$sql; 
         //  echo   $i.'<br>'. $sql.'<br>'; 
         // exit(); 
@@ -282,7 +286,7 @@ elseif (isset($_POST['addids'])) {
     } //for
 
     // exit();
-    $res   = mysqli_query($dbconn,"SELECT COUNT(s_id) AS count FROM `user_vpi`WHERE `s_id` = $s_id "); 
+    $res   = mysqli_query($dbconn,"SELECT COUNT(vpi_hash_id) AS count FROM `user_vpi`WHERE vpi_hash_id = '$hash' "); 
     $data = mysqli_fetch_assoc($res);  
 
     // echo $data['count'];
@@ -296,7 +300,7 @@ elseif (isset($_POST['addids'])) {
     // обновление количества 
     $count_obj=$_POST['val'];
     $vpi_id=$_POST['fid'];
-    $sql = "UPDATE `user_vpi` SET `count_obj`='$count_obj' WHERE `vpi_id` = $vpi_id";
+    $sql = "UPDATE `user_vpi` SET `count_obj`='$count_obj' WHERE `vpi_id` = '$vpi_id'";
             // mysqli_query($dbconn,$sql);
             if(mysqli_query($dbconn,$sql))
                         { 

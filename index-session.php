@@ -41,6 +41,8 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
 
     $_SESSION['sess_login'] = $_POST['login'];
     $_SESSION['sess_pass'] = $_POST['passw'];
+    $login= $_SESSION['sess_login'];
+    $escape_string_login=mysqli_real_escape_string($dbconn, $login);
     $hash=$_COOKIE["hash"];
     // echo '$s_id ' . $s_id . '<br>';
     // var_dump($_SESSION);
@@ -49,20 +51,34 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
     if (is_null($hash)){
       $hash="-";  
   }
-    $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `hash_id` LIKE '%".$hash."%'");
+    $result = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LIKE '%".$hash."%'");
     if (mysqli_num_rows($result) > 0) {//есть запись
+      
     
-    $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `hash_id` LIKE '%".$hash."%'");
+    $result = mysqli_query($dbconn,"UPDATE `sofia_users` SET `user_sess_date_start` = CURRENT_TIMESTAMP WHERE user_login='$escape_string_login'");
 
-    // echo '$hash ' . $hash . '<br>';
+    // echo '$escape_string_login ' . $escape_string_login . '<br>';
     // exit();
+    
     }
     else{
       // Генерируем случайное число и шифруем его
-    $hash = sha1(generateCode(10));
+    $hash = sha1(trim(generateCode(6)));//f4ab52644d28932c185b6a4403e440309381292e
     setcookie("hash", $hash, time()+60*60*24*30);// 24 часа
     $_COOKIE["hash"] = $hash;
-      $result = mysqli_query($dbconn,"INSERT INTO `user` (`s_id`, `sess_id`, `date_start`, `hash_id`) VALUES (NULL,'$s_id', CURRENT_TIMESTAMP, '$hash')");
+    setcookie("login", $login, time()+60*60*24*30);// 24 часа
+    $_COOKIE["login"] = $login;
+    // $escape_string_login=mysqli_real_escape_string($dbconn, $login);
+
+
+    // (`user_sofia_id`, `user_login`, `user_password`, `user_hash`, `user_mail`, `user_salt`, `user_sess_id`, `user_sess_date_start`) VALUES (NULL, '', '', NULL, NULL, NULL, NULL, NULL);
+      // $result = mysqli_query($dbconn,"INSERT INTO `sofia_users` (`s_id`, `sess_id`, `date_start`, `hash_id`) VALUES (NULL,'$s_id', CURRENT_TIMESTAMP, '$hash')");
+      $result = mysqli_query($dbconn,"UPDATE `sofia_users` SET `user_hash` = '$hash', `user_sess_date_start` = CURRENT_TIMESTAMP WHERE user_login = '$escape_string_login'");
+
+      // printf("Сообщение ошибки: %s\n", mysqli_error($dbconn));
+      // echo '<br>$escape_string_login = ' . $escape_string_login . '<br>';
+      // echo '$hash = ' . $hash . '<br>';
+      // exit();
 
       
     }

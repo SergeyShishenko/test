@@ -8,7 +8,7 @@ $query = "CREATE TABLE IF NOT EXISTS sofia_users(
     user_sofia_id INT NOT NULL AUTO_INCREMENT,
     user_login VARCHAR(40) NOT NULL,
     user_password VARCHAR(40) NOT NULL,
-    user_hash VARCHAR(32) ,
+    user_hash VARCHAR(40) ,
     user_mail VARCHAR(50) ,
     user_salt VARCHAR(4) ,
     user_sess_id VARCHAR(40) ,
