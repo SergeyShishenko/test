@@ -5,10 +5,16 @@ session_set_cookie_params(0);
 session_start();
 $s_id=session_id();
 define('__ROOT__', dirname(dirname(__FILE__))); 
+require_once(__ROOT__.'/DATA/TABLES/configDB.php');
+$dbconn=dbconnect();
+$err = []; 
+// require_once(__ROOT__.'/DATA/data.php'); // переменные $enter_login = "sofia"; $enter_passw = "202cb962ac59075b964b07152d234b70";
 
-require_once(__ROOT__.'/DATA/data.php'); // переменные $enter_login = "sofia"; $enter_passw = "202cb962ac59075b964b07152d234b70";
+$err2 = '';
 
-$err = '';
+
+
+
 if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
 
 // if (strpos($_SERVER['HTTP_REFERER'], 'index-session.php')=== false){$ref = $_SERVER['HTTP_REFERER']; }
@@ -18,67 +24,54 @@ if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
 
 if (isset($_POST['login']) && isset($_POST['passw'])) {
 
+  $err = authorization($_POST['login'],$_POST['passw'],$dbconn,$err);
 
-  
-   $_POST['passw'] = md5($_POST['passw']);
-   if ($_POST['login']===$enter_login && 
-      $_POST['passw']===$enter_passw) {
-      // session_start();
-      $_SESSION['sess_login'] = $_POST['login'];
-      $_SESSION['sess_pass'] = $_POST['passw'];
 
+  if (count($err) > 0) {
+    foreach($err AS $error){
+        echo "<b>" . $error . "</b><br>";
+    } 
+    $err2 = '<div style="color: red;text-align: center;margin-bottom: -30px;"><b>';
+    $err2 .= 'Логин или пароль введены неверно!';
+    $err2 .= '</b></div>';
+
+  }
+  else{ // нет ошибок
+
+    $_SESSION['sess_login'] = $_POST['login'];
+    $_SESSION['sess_pass'] = $_POST['passw'];
+   
+    
+    // Генерируем случайное число и шифруем его
+    // $hash = md5(generateCode(10));
+    // setcookie("hash", $hash, time()+60*60*24*30);// 24 часа
+
+    $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `sess_id` LIKE '%".$s_id."%'");
+    if (mysqli_num_rows($result) > 0) {//есть запись
+    
+    $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `sess_id` LIKE '%".$s_id."%'");
+    }
+    else{
+      $result = mysqli_query($dbconn,"INSERT INTO `user` (`s_id`, `sess_id`, `date_start`) VALUES (NULL, '$s_id', CURRENT_TIMESTAMP)");
       
-
-      require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
-      $dbconn=dbconnect();
-      // Генерируем случайное число и шифруем его
-      $hash = md5(generateCode(10));
-      setcookie("hash", $hash, time()+60*60*24*30);// 24 часа
-
-      $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `sess_id` LIKE '%".$s_id."%'");
-      if (mysqli_num_rows($result) > 0) {//есть запись
-       
-       $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `sess_id` LIKE '%".$s_id."%'");
-      }
-      else{
-        $result = mysqli_query($dbconn,"INSERT INTO `user` (`s_id`, `sess_id`, `date_start`) VALUES (NULL, '$s_id', CURRENT_TIMESTAMP)");
-        
-      }
+    }
 
 
+    mysqli_close($dbconn);
+    // header('Location: secure.php');
+    // header('Location: index.php');
 
+    // var_dump($_POST);
+    // exit();
+    header('Location:'.$_SESSION['ref']);
+    unset($_SESSION['ref']);
+    exit();
 
-      mysqli_close($dbconn);
-      // header('Location: secure.php');
-      // header('Location: index.php');
-      header('Location:'.$_SESSION['ref']);
-      unset($_SESSION['ref']);
-      exit();
-   }
-   else {
-      $err = '<div style="color: red;text-align: center;margin-bottom: -30px;"><b>';
-      $err .= 'Логин или пароль введены неверно!';
-      $err .= '</b></div>';
-   }
+  }
+ 
 }
 ?>
-<!-- <form action="index-session.php" method="POST">
 
- <div align="center" style="padding: 250px 0 0 0">
-  <table border="0" cellspacing="0" width="200">
-   <caption><b>Вход на сайт</b></caption>
-   <tr><td align="right"><b>Логин:</b></td>
-   <td><input type="text" name="login"></td></tr>
-   <tr><td align="right"><b>Пароль:</b></td>
-   <td><input type="password" name="passw"></td></tr>
-   <tr>
-   <td align="center" colspan="2">
-    <input type="submit" value="Войти">
-  </td></tr></table>
-  
-  
- </div>
-</form> -->
 
 <!DOCTYPE html>
 <html  >
@@ -120,7 +113,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
        <hgroup>
       <h1>Вход на сайт</h1>
       <h3>Здравствуйте! Авторизируйтесь, пожалуйста.</h3>
-      <?php echo $err; ?>
+      <?php echo $err2; ?>
       </hgroup>
       <form action="index-session.php" method="POST">
       <div class="group">
