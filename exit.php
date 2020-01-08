@@ -3,7 +3,13 @@ session_start();
 // echo'<pre>';
 // Print_r ($_SESSION);
 // echo'</pre>';
-
+// очистить таблицу user_vpi
+// define('__ROOT__', dirname(dirname(dirname(__FILE__)))); 
+require_once(dirname(dirname(__FILE__)).'/DATA/TABLES/configDB.php'); // подключение к базе данных
+$dbconn=dbconnect();
+$hash=$_COOKIE["hash"];
+mysqli_query($dbconn,"DELETE FROM `user_vpi` WHERE `vpi_hash_id`='$hash'");
+mysqli_close($dbconn); 
 // Удаляем cookies
 if (isset($_SERVER['HTTP_COOKIE'])) {
     $cookies = explode(';', $_SERVER['HTTP_COOKIE']);

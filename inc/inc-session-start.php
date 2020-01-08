@@ -3,7 +3,7 @@ ini_set('session.gc_maxlifetime', 43200);// 12 часов
 // ini_set('session.cookie_lifetime', 0);
 // session_set_cookie_params(0);
 session_start();
-$s_id=session_id();
+// $s_id=session_id();
 
 
 $_SESSION['ref'] = $_SERVER['REQUEST_URI'];
