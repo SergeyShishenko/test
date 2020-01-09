@@ -1,7 +1,7 @@
 <?php
 // inc-version-css-js.php
 $gridVersion = 9;
-$docsVersion = 56;
+$docsVersion = 57;
 $docs2Version = 3;// inc\inc-head2.php, inc\inc-head3.php
 $docsfirstVersion=3;
 $dropVersion=11;

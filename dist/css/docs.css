@@ -117,7 +117,7 @@ li > span.caret3:hover,li > span.caret2:hover {
   border-left: 6px solid transparent;
 } */
 div.btn-side{
-  z-index:1000 !important;
+  z-index:10000 !important;
  
 }
 div.btn-side > .btn{

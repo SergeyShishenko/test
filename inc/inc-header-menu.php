@@ -93,6 +93,24 @@
         </div><!-- /.modal-dialog -->
     </div>
     <!-- /.modal -->
+    <div  style="position:fixed; left:0; top:115px; " class="btn-side">
+        <!-- Button trigger modal -->
+        <div class="btn-group dropright">
+            <button type="button" class="btn btn-default dropdown-toggle animated tada" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-user" ></span>
+            </button>
+            <div class="dropdown-menu" x-placement="right-start" style="position: absolute; transform: translate3d(45px, 0px, 0px); top: 0px; left: 0px; z-index: 1100">
+               
+                <ul style="padding: 10px;">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+            </div>       
+    </div>
     <div  style="position:fixed; left:0; top:150px; " class="btn-side">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-default  animated tada" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
