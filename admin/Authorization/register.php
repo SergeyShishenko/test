@@ -22,8 +22,9 @@ if(isset($_POST['submit'])){
     // }
 
     # Если нет ошибок, то добавляем в БД нового пользователя
-   
-    if(count($err) == 0){
+    // if(count($err) == 0){
+    if (in_array("Пользователя с таким логином не существует в базе данных", $err) && count($err) == 1 || count($err) == 0) {
+    
         
         $login = $_POST['login'];        
 
