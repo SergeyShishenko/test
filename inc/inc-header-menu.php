@@ -95,51 +95,72 @@
     <!-- /.modal -->
     <div  style="position:fixed; left:0; top:115px; " class="btn-side">
         <!-- Button trigger modal -->
-        <div class="btn-group dropright">
-            <button type="button" class="btn btn-default dropdown-toggle animated tada" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="btn-group  ">
+            <button type="button" class="btn btn-default  animated tada user-toggle"  aria-haspopup="true" aria-expanded="false">
             <span class="glyphicon glyphicon-user" ></span>
             </button>
-            <div class="dropdown-menu" x-placement="right-start" style="position: absolute; transform: translate3d(45px, 0px, 0px); top: 0px; left: 0px; z-index: 1100">
+            <div class="profile"  style="position: absolute; transform: translate3d(45px, 0px, 0px); top: 0px; left: 0px; z-index: 1100; background-color: #ffffff;">
                
-                <ul style="padding: 10px;">
-                    <li><a href="#">HTML</a></li>
-                    <li><a href="#">CSS</a></li>
-                    <li><a href="#">JavaScript</a></li>
+                <ul class="user ">
+                    <li>Профиль: <b>'.$_COOKIE['login'].'</b></li>
                     <li class="divider"></li>
-                    <li><a href="#">About Us</a></li>
+                    <li>
+                        <div class="btn btn-default" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            Link with href
+                        </div>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">JavaScript</a></li>
+                    
+                    <li class="divider"></li>
+                     <li>
+                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение администратору сайта">
+                        <span class=" glyphicon glyphicon-envelope" ><span> Письмо администратору</span></span>
+                    </button>
+                    </li>
+                    <li>
+                    <button type="button" class="btn btn-default " onclick="location.href=\'exit.php\';" title="Выйти">  
+                     <span class="glyphicon glyphicon-log-out" aria-hidden="true"> Выйти</span>
+                    </button>
+                    </li>
                 </ul>
             </div>
             </div>       
     </div>
-    <div  style="position:fixed; left:0; top:150px; " class="btn-side">
-        <!-- Button trigger modal -->
+    <!-- <div  style="position:fixed; left:0; top:150px; " class="btn-side">
+        
         <button type="button" class="btn btn-default  animated tada" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
             <span class=" glyphicon glyphicon-envelope" ></span>
         </button>
        
     </div>
     <div  style="position:fixed; left:0; top:185px;" class="btn-side">
-        <!-- Button trigger modal -->
+        
         
         <button type="button" class="btn btn-default center" onclick="location.href=\'exit.php\';" title="Выйти">  
         <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
         </button>
     </div>
     <div  style="position:fixed; left:0; top:220px;" class="btn-side">
-    <!-- Button trigger modal -->
+    
     
         <button type="button" class="btn btn-default center" onclick="location.href=\'index.php\';" title="Карта сайта">  
         <span class="glyphicon glyphicon-home" ></span>
         </button>
     </div>
-    <div  style="position:fixed; left:0; top:255px;" class="btn-side left-menu">
+    -->
+    <div  style="position:fixed; left:0; top:150px;" class="btn-side left-menu">
     <!-- Button trigger modal -->
     
         <button type="button" class="btn btn-default center "  title="Левое меню">  
         <span class="glyphicon glyphicon-list" ></span>
         </button>
     </div>
-    <div  style="position:fixed; left:0; top:290px;" class="btn-side right-menu">
+    <div  style="position:fixed; left:0; top:185px;" class="btn-side right-menu">
     <!-- Button trigger modal +35px -->
     
         <button type="button" class="btn btn-default center rmenu"  title="Правое меню">  
@@ -149,6 +170,8 @@
         
         </button>
     </div>
+
+    
 ';
 include 'inc/inc-header-send-modal.php';
 include 'inc/inc-func.php';

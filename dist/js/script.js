@@ -287,6 +287,14 @@ function getClientWidth(){
  $( document ).ready(function() {
     getPositionSearch();
      getClientWidth();
+
+
+
+     $( ".user-toggle" ).click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
+	    $( ".profile" ).toggle(); //  скрываем, или отображаем все элементы <div>
+	  });
+
+
  });
 //  console.log ("w"+getClientWidth());// текущая ширина экрана 
 //  console.log ("w"+window.outerWidth );// текущая ширина экрана 
