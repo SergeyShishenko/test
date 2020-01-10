@@ -2473,18 +2473,27 @@ table.centered td,table.centered th{
 ul.user{
   padding: 15px;
 }
-ul.user>li{
+ul.user>li:not(.divider){
   padding: 5px;
 }
 
 .divider {
-  padding: 0;
+  /* padding: 0; */
+  /* width: 100%; */
+  height: 1px;
+  margin: 9px 1px;
+  /* margin: -5px 0 5px; */
+  /* overflow: hidden; */
+  background-color: #e5e5e5;
+  /* border-bottom: 1px solid #ffffff; */
 }
 
 .profile{
   display: none;
   min-width: 250px;
+  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3), 0 0 10px rgba(100,100,100,0.3);
 }
+.user-toggle{box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3), 0 0 10px rgba(100,100,100,0.3);}
 span.glyphicon>span {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: absolute;
