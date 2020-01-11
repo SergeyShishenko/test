@@ -1,0 +1,327 @@
+.gnc-link {
+    position: relative;
+    z-index: 1;
+}
+
+.gnc-service-logo {
+    max-width: 40px;
+    max-height: 40px;
+
+    flex-shrink: 0;
+}
+
+.gnc-notifications-item__menu {
+    z-index: 3;
+    height: 24px;
+}
+
+.gnc-notification-list__service .gnc-service-logo {
+    max-width: 24px;
+    max-height: 24px;
+}
+.gnc-notifications-item__menu-kebab .gnc-service-logo {
+    max-width: 22px;
+    max-height: 22px;
+    margin: 1px 1px;
+
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.gnc-avatar {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.gnc-avatar__service-circle {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+}
+
+.gnc-avatar__service-circle_small {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+
+    transform: scale(.5) translate(32px, 38px);
+}
+
+.gnc-avatar__user {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 40px;
+
+    object-fit: cover;
+}
+
+.gnc-notifications-item__preview-image {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 4px;
+    background-size: cover;
+}
+
+.gnc-notifications-item-wrapper {
+    position: relative;
+
+    display: none;
+
+    font-size: 0;
+    user-select: none;
+    white-space: nowrap;
+    direction: rtl;
+
+    background: #fff;
+    box-shadow: inset 0 1px 0 0 rgba(0,0,0,.05);
+
+    transition: background-color .1s;
+}
+
+.gnc-notifications-item-wrapper:first-of-type {
+    box-shadow: none;
+}
+
+.gnc-notifications-item-wrapper_not-viewed {
+    background: #e6efff;
+}
+
+.gnc-notification-center_hoverable .gnc-notifications-item-wrapper:hover {
+    background: #f2f2f2;
+}
+.gnc-notification-center_hoverable .gnc-notifications-item-wrapper_not-viewed:hover {
+    background: #d9e7ff;
+}
+.gnc-notifications-item {
+    display: inline-block;
+
+    width: 100%;
+
+    vertical-align: top;
+    direction: ltr;
+}
+.gnc-notifications-item_not-viewed .gnc-notifications-item__inner {
+    padding-right: 0;
+}
+.gnc-notifications-item__inner {
+    display: flex;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    padding-right: 24px;
+
+    cursor: pointer;
+    white-space: normal;
+
+    flex-shrink: 0;
+}
+.gnc-notifications-item_is-viewed {
+    transition: transform .15s ease-out;
+}
+.gnc-notifications-item_is-viewed .gnc-notification-message__span,
+.gnc-notifications-item_is-viewed .gnc-notifications-item__content {
+    font-weight: normal;
+}
+.gnc-notifications-item__avatar {
+    position: relative;
+
+    width: 40px;
+    margin-right: 12px;
+
+    flex-shrink: 0;
+}
+.gnc-notifications-item__avatar .gnc-link {
+    display: block;
+
+    width: 40px;
+    height: 40px;
+}
+.gnc-notifications-item__content {
+    overflow: hidden;
+
+    margin-right: auto;
+
+    font-size: 13px;
+    line-height: 15px;
+
+    color: #000;
+
+    flex-basis: 100%;
+}
+.gnc-notifications-item__misc {
+    margin-top: 4px;
+}
+.gnc-notifications-item__preview {
+    overflow: hidden;
+
+    margin-left: 12px;
+
+    text-align: right;
+
+    flex-shrink: 0;
+}
+
+.gnc-notification-header__kebab {
+    position: relative;
+
+    height: 24px;
+}
+
+.gnc-notifications-item__menu-kebab {
+    z-index: 1;
+
+    cursor: pointer;
+
+    opacity: 0;
+    background: none;
+}
+
+
+.gnc-notification-header__filter .gnc-notifications-item__menu-kebab svg {
+    margin-right: 6px;
+}
+.gnc-notifications-item__menu-kebab_visible {
+    opacity: .4;
+}
+.gnc-notifications-item__menu-kebab_visible:hover {
+    opacity: 1;
+}
+
+.gnc-notification-header__logo .gnc-notifications-item__menu-kebab_visible {
+    width: 24px;
+    height: 24px;
+
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.gnc-notification-header__logo .gnc-notifications-item__menu-kebab_visible:hover {
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.2);
+}
+
+.gnc-notification-header__filter .gnc-notifications-item__popup-option {
+    opacity: 1;
+    display: flex;
+    align-items: center;
+}
+
+.gnc-notification-header__filter .gnc-notifications-item__popup-option.gnc-notification-list__current-service {
+    cursor: initial;
+
+    opacity: .5;
+}
+
+.gnc-notification-header__filter .gnc-notification-list__service-name {
+    margin-left: 8px;
+}
+
+.gnc-notifications-item:hover .gnc-notifications-item__menu-kebab {
+    opacity: .4;
+}
+.gnc-notifications-item:hover .gnc-notifications-item__menu-kebab:hover {
+    opacity: 1;
+}
+
+.gnc-notifications-item__popup {
+    position: absolute;
+    z-index: 2;
+    top: 46px;
+    right: 3px;
+
+    display: block;
+    visibility: hidden;
+
+    padding: 6px 0;
+
+    cursor: pointer;
+
+    opacity: 0;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+
+    transition-duration: 150ms;
+    transition-property: top, visibility, opacity;
+}
+.gnc-notifications-item__popup_visible {
+    z-index: 3;
+    top: 36px;
+
+    visibility: visible;
+
+    opacity: 1;
+}
+.gnc-notifications-item__popup-option {
+    height: 28px;
+    padding: 0 14px;
+
+    font-size: 13px;
+    line-height: 28px;
+
+    color: #000;
+}
+
+.gnc-notifications-item__popup-option:hover {
+    background-color: #eceef2;
+}
+
+.gnc-notification-list__current-service:hover {
+    background-color: inherit;
+}
+
+.gnc-notifications-item__menu-kebab_absolute {
+    position: absolute;
+}
+.gnc-notification-message {
+    white-space: pre-line;
+}
+.gnc-notification-message__span {
+    height: 32px;
+    margin-right: auto;
+
+    font-size: 13px;
+    font-weight: bold;
+    word-wrap: break-word;
+    word-break: break-word;
+
+    color: #000;
+
+    align-self: end;
+}
+.relative-date {
+    width: 91px;
+    height: 15px;
+
+    font-size: 13px;
+
+    color: rgba(0,0,0,.3);
+}
+.gnc-notification-center_hoverable .gnc-link_see-more {
+    display: inline-block;
+
+    padding-top: 12px;
+
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+
+    color: #999;
+}
+.gnc-notification-center_hoverable .gnc-link_see-more:hover {
+    color: #000;
+}

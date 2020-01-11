@@ -2501,5 +2501,23 @@ span.glyphicon>span {
   
 }
 
+.button_icon_alert:after {
+  position: absolute;
+  top: -14px;
+  right: -18px;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  content: "";
+  /* background-color: #fc0d1c; */
+  background-color: #5bc0de;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+#collapseInfo{background-color: aliceblue;}
+.card-body{padding: 0 10px 0 10px;}
+
+
 
 
