@@ -35,5 +35,3 @@ include 'inc/inc-header.php';
 include 'inc/inc-personal-profile.php';
 include 'inc/inc-header-send-modal.php';
 include 'inc/inc-func.php';
-
-

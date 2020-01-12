@@ -20,7 +20,11 @@
                         </div>
                         <div class="collapse" id="collapseExample">
                             <div class="card card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                Изменить пароль
+                                <div><input id="password" name="password" type="password" placeholder="Пароль" autocomplete="new-password"></div>
+                                <div><input id="password-check" name="password-check" type="password" placeholder="Подтверждение пароля" title="">
+                                <label for="password-check"></label>
+                                </div>
                             </div>
                         </div>
                     </li>

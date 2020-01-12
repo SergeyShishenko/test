@@ -1,6 +1,7 @@
 <?php 
 include 'inc/inc-version-css-js.php'; 
-echo'<!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="ru-RU"  prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="UTF-8" />
@@ -22,8 +23,8 @@ echo'<!DOCTYPE html>
     <title>500.СТП</title>
     <link href="./dist/css/bootstrap.css" rel="stylesheet">
     <link href="./dist/css/animate.min.css" rel="stylesheet">       
-    <link href="./dist/css/docs.css?v='. $docsVersion .'" rel="stylesheet">
-    <link href="./dist/css/docs-first.css?v='. $docsfirstVersion .'" rel="stylesheet">
+    <link href="./dist/css/docs.css?v=<?php echo $docsVersion ;?>" rel="stylesheet">
+    <link href="./dist/css/docs-first.css?v=<?php echo  $docsfirstVersion ;?>" rel="stylesheet">
     <link href="./dist/css/gnc.css" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">-->
     <link rel="stylesheet" href="./dist/css/font-awesome.min.css">
@@ -40,5 +41,3 @@ echo'<!DOCTYPE html>
     <script>
         if (!name) {name = new Date ().getTime (); location.reload (true)}
     </script>   
-    
-';?>

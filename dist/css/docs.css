@@ -2519,5 +2519,24 @@ span.glyphicon>span {
 .card-body{padding: 0 10px 0 10px;}
 
 
+#password-check:invalid + label::after{
+	/* background: #fdd;  */
+	/* position: relative; */
+    /* right: 35px;  */
+   color: red;
+	content: "\2718";
+	/* display: inline-block; */
+	/* font-size: 60px; */
+}
+#password-check:valid + label::after {
+	/* background: #fdd;  */
+	/* position: relative; */
+    /* right: 35px;  */
+   color: green;
+	content: "\2714";
+	/* display: inline-block; */
+	/* font-size: 60px; */
+}
+
 
 
