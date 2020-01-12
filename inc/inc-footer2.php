@@ -29,6 +29,7 @@
     <script src="./dist/js/drop.js"></script>  
     <script src="./dist/js/selectcell.js"></script>
     <script src="./dist/js/calc-bloka-pitaniya.js"></script>
+    <script src="./dist/js/password-check.js"></script>
     <script>
     window.bLazy = new Blazy({
         //container: \'.container\',
@@ -46,13 +47,7 @@
         <script>
             if (!name) {name = new Date ().getTime (); location.reload (true)}
         </script> 
-        <script>
-      
-        
-
-       
-        </script>
-
+    
 <?php 
 if($item_profile_directory_Class=="active")
 {

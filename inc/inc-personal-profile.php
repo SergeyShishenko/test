@@ -15,17 +15,64 @@
                     <li>Профиль<br><b><?php echo $_COOKIE['login']?></b></li>
                     <li class="divider"></li>
                     <li>
-                        <div class="btn btn-default" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="btn btn-default" data-toggle="collapse" href="#collapseSetting" role="button" aria-expanded="false" aria-controls="collapseExample">
                         <span class="glyphicon glyphicon-cog" ><span> Настройки</span></span>
                         </div>
-                        <div class="collapse" id="collapseExample">
+                        <div class="collapse" id="collapseSetting">
                             <div class="card card-body">
-                                Изменить пароль
-                                <div><input id="password" name="password" type="password" placeholder="Пароль" autocomplete="new-password"></div>
-                                <div><input id="password-check" name="password-check" type="password" placeholder="Подтверждение пароля" title="">
-                                <label for="password-check"></label>
-                                </div>
+                               <form class=""> 
+                                    <div class="divider"></div>
+                                    <!-- <b>Изменить пароль</b> -->
+                               
+                                    <div class="form-group">
+                                        <!-- <div class="divider"></div> -->
+
+                                        <div class="form-group  has-success has-feedback">
+                                            <label class="control-label" for="password">Новый пароль</label>
+                                            <input type="password" class="form-control" id="password" aria-describedby="password" style="display:inline-block;">
+                                            <label for="password"></label>                                         
+                                        </div>
+
+                                        <div class="form-group  has-success has-feedback">
+                                            <label class="control-label" for="password-check">Подтверждение пароля</label>
+                                            <input type="password" class="form-control" id="password-check" aria-describedby="password-check" style="display:inline-block;">                                         
+                                            <label for="password-check"></label>                                          
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <div class="">
+                                            <button type="submit" class="btn btn-success "><b>Сохранить</b></button>
+                                        </div>                                        
+                                    </div>
+                                    
+                                </form> 
+                               <div class="divider"></div>  
+                               <form class="">                                
+                                    <!-- <div class="form-group"> -->
+                                        <!-- <div class="divider"></div> -->
+
+                                        <div class="form-group  has-success has-feedback">
+                                            <label class="control-label" for="email" >E-mail&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                            <input type="email" class="form-control" id="email" aria-describedby="email" style="display:inline-block;">
+                                            <!-- <label for="email"></label>                                          -->
+                                        </div>
+
+                                    <!-- </div> -->
+                                    
+                                    <div class="form-group">
+                                        <div class="">
+                                            <button type="submit" class="btn btn-success "><b>Подтвердить</b></button>
+                                        </div>                                        
+                                    </div>
+                                    
+                                </form> 
+                                <div class="divider"></div>  
                             </div>
+                             
+                            
+                            
+                            
                         </div>
                     </li>
                     <li>

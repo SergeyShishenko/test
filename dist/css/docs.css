@@ -2490,7 +2490,9 @@ ul.user>li:not(.divider){
 
 .profile{
   display: none;
-  min-width: 250px;
+  overflow: auto;
+  min-width: 305px;
+  max-height: 630px;
   box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3), 0 0 10px rgba(100,100,100,0.3);
 }
 .user-toggle{box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3), 0 0 10px rgba(100,100,100,0.3);}
@@ -2515,28 +2517,26 @@ span.glyphicon>span {
   border-radius: 50%;
 }
 
-#collapseInfo{background-color: aliceblue;}
+#collapseInfo,#collapseSetting{background-color: aliceblue;}
 .card-body{padding: 0 10px 0 10px;}
 
 
-#password-check:invalid + label::after{
-	/* background: #fdd;  */
-	/* position: relative; */
-    /* right: 35px;  */
-   color: red;
+input[type=password]:invalid + label::after{
+  color: red;
 	content: "\2718";
-	/* display: inline-block; */
-	/* font-size: 60px; */
 }
-#password-check:valid + label::after {
-	/* background: #fdd;  */
-	/* position: relative; */
-    /* right: 35px;  */
+input[type=password]:valid + label::after {
    color: green;
 	content: "\2714";
-	/* display: inline-block; */
-	/* font-size: 60px; */
 }
+/* input[type=email] + label::after {
+   color: green;
+	content: "\1F582";
+} */
+/* input[type=password] + label{
+  display: initial !important;
+} */
+
 
 
 

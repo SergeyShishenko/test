@@ -149,7 +149,7 @@
     <script src="./dist/js/shortcut.js"></script>
     <script src="./dist/js/drop.js?v='<?php echo $dropVersion; ?>'"></script>  
     <script src="./dist/js/selectcell.js"></script>
-
+    <script src="./dist/js/password-check.js"></script>
 	<script>
     window.bLazy = new Blazy({
         //container: \'.container\',
@@ -160,6 +160,7 @@
     });
     
     </script>
+   
     <script>
         // Перезагрузить текущую страницу, без использования кэша     
         //$(document).ready(function(){ window.location.reload(true);}
