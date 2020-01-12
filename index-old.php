@@ -36,15 +36,185 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
   pointer-events: none;
 }  */
 /* .modal-open{overflow:auto;} */
-</style>   
+</style>
+
+   
 </head> 
+
 <body>
-<?php 
-$cart=false; // корзина
-include 'inc/inc-header.php';
-include 'inc/inc-personal-profile.php';
-include 'inc/inc-header-send-modal.php';
-?>        
+    <header class="navbar navbar-inverse navbar-fixed-top"  >
+
+        <div class="container">
+  
+            <!-- Static navbar -->
+            <div class="navbar navbar-inverse " role="navigation">
+                <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">500.СТП</a >
+                </div>
+                <!--.nav-collapse -->
+                
+
+                <div class="navbar-collapse collapse top-menu">
+
+                    <ul class="nav navbar-nav " id="navmain">
+                        <li>
+                            <a href="detali-gallery-profili.php">ДЕТАЛИ </a>
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
+                             <!-- <span class="caret"></span>
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="#floating8" >ПРОФИЛИ ГЛАДКИЕ</a>
+                                </li>
+                                <li><a class="" href="#floating9" >ПРОФИЛИ РЕЗНЫЕ</a>
+                                </li> 
+                                <li><a class="" href="#floating10" >КАМНИ</a>
+                                </li> 
+                                <li><a class="" href="#floating11" >РЕЗЬБЫ</a>
+                                </li> 
+                                <li><a class="" href="#floating12" >ТОКАРКА</a>
+                                </li>
+                                <li><a class="" href="#floating13" >ФРЕЗЫ</a>
+                                </li> 
+                                <li><a class="" href="#floating14" >ПАЗЫ</a>
+                                </li>                                                                              
+                            </ul>                            -->
+                        </li>
+                        <li>
+                            <a href="izdeliya-bloki-dvernye.php">ИЗДЕЛИЯ</a >
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
+                          
+                           <!--  <ul class="dropdown-menu">
+                                <li><a class="" href="#floating15" >БЛОКИ ДВЕРНЫЕ</a>
+                                </li>
+                                <li><a class="" href="#floating16" >МЕБЕЛЬ КОРПУСНАЯ</a>
+                                </li> 
+                                <li><a class="" href="#floating17" >ПАНЕЛИ СТЕНОВЫЕ</a>
+                                </li> 
+                                <li><a class="" href="#floating18" >КАРНИЗЫ И ФРИЗЫ</a>
+                                </li> 
+                                <li><a class="" href="#floating19" >ПЛИНТУСЫ И МОЛДИНГИ</a>
+                                </li>
+                                <li><a class="" href="#floating20" >ЭКРАНЫ РАДИАТОРОВ</a>
+                                </li> 
+                                <li><a class="" href="#floating21" >ПИЛЯСТРЫ</a>
+                                </li>
+                                <li><a class="" href="#floating22" >ПОТОЛКИ</a>
+                                </li>
+                                <li><a class="" href="#floating523" >ЛЕСТНИЦЫ</a>
+                                </li> 
+                                <li><a class="" href="#floating23" >СТАНДАРТНЫЕ УЗЛЫ</a>
+                                </li>                                                                               
+                            </ul>                              -->
+                        </li>
+                        <li >
+                            <a href="shablony-dokumentov-titulnyy-kd.php" class="dblstr-menu">ШАБЛОНЫ <br>ДОКУМЕНТОВ</a>
+                        </li>
+                        <li >                            
+                            <a href="yuridicheskie-dokumenty.php" class="dblstr-menu">ЮРИДИЧЕСКИЕ <br>ДОКУМЕНТЫ</a >                           
+                        </li>
+                        <li  class=" disabled">                            
+                            <a href="#" class="dblstr-menu">УСТАНОВОЧНЫЕ <br>ДОКУМЕНТЫ</a >                           
+                        </li>
+                        <li>
+                            <a href="metodichki-SofiaPro3.php">МЕТОДИЧКИ</a >
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
+                            <!-- <span class="caret"></span>
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="#floating28" >ДОКУМЕНТ 117</a>
+                                </li>
+                                <li><a class="" href="#floating29" >ДОКУМЕНТ 135</a>
+                                </li> 
+                                <li><a class="" href="#floating30" >ЭРГОНОМИКА</a>
+                                </li> 
+                                <li><a class="" href="#floating31" >ПРОЕКТНАЯ РАБОТА</a>
+                                </li>                                                                                                                     
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="furnitura-dlya-dvernyh-blokov.php">ФУРНИТУРА</a >
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
+                            <!-- <span class="caret"></span>
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="#floating32" >ДЛЯ ДВЕРНЫХ БЛОКОВ</a>
+                                </li>
+                                <li><a class="" href="#floating33" >ДЛЯ МЕБЕЛИ</a>
+                                </li> 
+                                <li><a class="" href="#floating34" >УНИВЕРСАЛЬНАЯ</a>
+                                </li> 
+                                <li  ><a class="" href="#floating35" >КАТАЛОГИ</a>
+                                </li> 
+                                                                                                                
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="materialy-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ</a>
+                            <!-- <span class="caret2 glyphicon glyphicon-eye-open" aria-hidden="true" title="Перейти на страницу"></span> -->
+                            <!-- <span class="caret"></span>
+                            <ul class="dropdown-menu">
+                                <li><a class="" href="#floating36" >СТЕКЛО, ЗЕРКАЛО</a>
+                                </li>
+                                <li><a class="" href="#floating37" >ВИТРАЖ</a>
+                                </li> 
+                                <li><a class="" href="#floating38" >МЕТАЛЛ</a>
+                                </li> 
+                                <li><a class="" href="#floating39" >ТКАНЬ, КОЖА</a>
+                                </li> 
+                                <li><a class="" href="#floating40" >СВЕТ</a>
+                                </li>                                                                                                                       
+                            </ul> -->
+                        </li>
+                        <li  class=" disabled">
+                        <a href="literatura-gost.php">ЛИТЕРАТУРА</a>
+                        </li>
+                        
+                        <!--<li  id="other">
+                            <a href="#" title="ЕЩЁ">&#10010;</a >
+                         
+                             <span class="caret3"></span> 
+                            <ul class="dropdown-menu  dropdown-menu-right">
+                                <li '.$literaturaClass.' class=" disabled">
+                                <a href="literatura-gost.php">ЛИТЕРАТУРА</a>
+                                </li>
+                                <li><a href="furnitura-video.php" >Видео</a>
+                                </li> 
+                                                                                                                                                     
+                            </ul> 
+                        </li>-->
+                    </ul>   
+                </div>
+                
+                <div class="navbar-form navbar-right  " id="search">
+                    <div class="form-group">    
+                        <input type="text" class="form-control who zbz-input-clearable" placeholder="Поиск">                          
+                        <span class="glyphicon glyphicon-search zbz" style="visibility: visible;margin-right: 20px;margin-left: -25px;padding-left:0;"></span>                             
+                    </div>                            
+                    <ul class="search_result" style="display: none;"></ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>      
+        </div> <!-- /container -->
+    </header>
+  
+    <div  style="position:fixed; left:0; top:150px; " class="btn-side">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-default animated tada" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение">
+            <span class=" glyphicon glyphicon-envelope" ></span>
+        </button>
+    </div>
+    <div  style="position:fixed; left:0; top:185px;" class="btn-side">
+        <!-- Button trigger modal -->        
+        <button type="button" class="btn btn-default center " onclick="location.href='exit.php';" title="Выйти">  
+        <span class="glyphicon glyphicon-log-out" aria-hidden="true" title="Перейти на страницу"></span>
+        </button>
+    </div>
+    <?php 
+    include 'inc/inc-header-send-modal.php';
+    ?>        
     <article itemscope="" itemtype="http://schema.org/WebPage" id="main-izdeliya">
 
         <div class="container bs-docs-container">
