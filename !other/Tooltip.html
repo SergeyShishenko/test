@@ -1,0 +1,109 @@
+<!-- !other\Tooltip.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="bootstrap.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+            .tooltip1 {
+              position: relative;
+              display: inline-block;
+              border-bottom: 1px dotted black;
+              opacity: 1;
+            }
+            
+            .tooltip1 .tooltiptext {
+              visibility: hidden;
+              width: 120px;
+              background-color: #555;
+              color: #fff;
+              text-align: center;
+              border-radius: 6px;
+              padding: 5px 0;
+              position: absolute;
+              z-index: 1;
+              bottom: 125%;
+              left: 50%;
+              margin-left: -60px;
+              opacity: 0;
+              transition: opacity 0.3s;
+            }
+            
+            .tooltip1 .tooltiptext::after {
+              content: "";
+              position: absolute;
+              top: 100%;
+              left: 50%;
+              margin-left: -5px;
+              border-width: 5px;
+              border-style: solid;
+              border-color: #555 transparent transparent transparent;
+            }
+            
+            .tooltip1:hover .tooltiptext {
+              visibility: visible;
+              opacity: 1;
+            }
+            </style>
+              <style>
+                    /* Tooltip */
+                    .test + .tooltip > .tooltip-inner {
+                        background-color: #73AD21; 
+                        color: #FFFFFF; 
+                        border: 1px solid green; 
+                        padding: 15px;
+                        font-size: 20px;
+                    }
+                    /* Tooltip on top */
+                    .test + .tooltip.top > .tooltip-arrow {
+                        border-top: 5px solid green;
+                    }
+                    /* Tooltip on bottom */
+                    .test + .tooltip.bottom > .tooltip-arrow {
+                        border-bottom: 5px solid blue;
+                    }
+                    /* Tooltip on left */
+                    .test + .tooltip.left > .tooltip-arrow {
+                        border-left: 5px solid red;
+                    }
+                    /* Tooltip on right */
+                    .test + .tooltip.right > .tooltip-arrow {
+                        border-right: 5px solid green;
+                    }
+                    </style>
+</head>
+<body style="text-align:center;">
+        <h1>Подсказка</h1>
+
+        <p>Наведите указатель мыши на текст ниже:</p>
+        
+        <div class="tooltip1">Наведите курсор на меня
+          <span class="tooltiptext">E-mail нужен для подключения к вашей учетной записи функции "Востановить пароль"</span>
+        </div>
+
+
+        <div class="container">
+                <h3>Tooltip CSS Example</h3>
+                <ul class="list-inline">
+                  <li><a class="test" href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+                  <li><a class="test" href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
+                  <li><a class="test" href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+                  <li><a class="test" href="#" data-toggle="tooltip" data-placement="right" title=" Right Right Right Right Right">Right</a></li>
+                </ul>
+              </div>
+
+
+ <script src="jquery.min.js"></script>       
+ <script src="bootstrap.js"></script>
+
+ <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+        </script>
+ 
+</body>
+</html>

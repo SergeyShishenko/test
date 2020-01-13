@@ -53,8 +53,8 @@
                                         <!-- <div class="divider"></div> -->
 
                                         <div class="form-group  has-success has-feedback">
-                                            <label class="control-label" for="email" >E-mail&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                            <input type="email" class="form-control" id="email" aria-describedby="email" style="display:inline-block;">
+                                            <label class="control-label" for="email-check" >E-mail&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                            <input type="email" class="form-control" id="email-check" aria-describedby="email-check" style="display:inline-block;"  required>
                                             <!-- <label for="email"></label>                                          -->
                                         </div>
 
