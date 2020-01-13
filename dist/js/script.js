@@ -294,7 +294,7 @@ function getClientWidth(){
 	    $( ".profile" ).toggle(); //  скрываем, или отображаем все элементы <div>
 	  });
 
-
+      $('[data-toggle="tooltip"]').tooltip(); 
  });
 //  console.log ("w"+getClientWidth());// текущая ширина экрана 
 //  console.log ("w"+window.outerWidth );// текущая ширина экрана 

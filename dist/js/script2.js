@@ -291,7 +291,7 @@ $( document ).ready(function() {
   $( ".user-toggle" ).click(function(){ // задаем функцию при нажатиии на элемент с классом toggle
     $( ".profile" ).toggle(); //  скрываем, или отображаем все элементы <div>
   });
-
+  $('[data-toggle="tooltip"]').tooltip(); 
 });
 //  console.log ("w"+getClientWidth());// текущая ширина экрана 
 //  console.log ("w"+window.outerWidth );// текущая ширина экрана 

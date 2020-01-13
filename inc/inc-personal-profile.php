@@ -54,15 +54,19 @@
 
                                         <div class="form-group  has-success has-feedback">
                                             <label class="control-label" for="email-check" >E-mail&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                            
                                             <input type="email" class="form-control" id="email-check" aria-describedby="email-check" style="display:inline-block;"  required>
-                                            <!-- <label for="email"></label>                                          -->
+                                            <!-- <label for="email-check"></label>   -->
+                                            <div class="tool" data-toggle="tooltip" data-placement="left" title="E-mail нужен для подключения к Вашей учетной записи функции «Забыли пароль»"><i class="fa fa-question-circle" aria-hidden="true" ></i></div>
+                                            <!-- <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>                                        -->
                                         </div>
 
                                     <!-- </div> -->
                                     
                                     <div class="form-group">
                                         <div class="">
-                                            <button type="submit" class="btn btn-success "><b>Подтвердить</b></button>
+                                            <button type="submit" class="btn btn-success " id="subemail"><b>Подтвердить</b></button>
+                                            <!-- <label for="subemail"></label> -->
                                         </div>                                        
                                     </div>
                                     
