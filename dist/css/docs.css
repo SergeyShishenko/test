@@ -2552,9 +2552,9 @@ input[type=password]:valid + label::after {
 }
  /* Tooltip */
  .tool + .tooltip > .tooltip-inner {
-  background-color: gray; 
-  color: #FFFFFF; 
-  border: 1px solid rgb(71, 71, 71); 
+  background-color: #b2dbff; 
+  color: rgb(39, 39, 39); 
+  border: 1px solid #7dc2ff; 
   padding: 15px;
   font-size: 14px;
 }
@@ -2568,7 +2568,7 @@ input[type=password]:valid + label::after {
 }
 /* Tooltip on left */
 .tool + .tooltip.left > .tooltip-arrow {
-  border-left: 5px solid gray;
+  border-left: 5px solid #7dc2ff;
 }
 /* Tooltip on right */
 .tool + .tooltip.right > .tooltip-arrow {
