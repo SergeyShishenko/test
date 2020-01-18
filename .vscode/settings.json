@@ -1,3 +1,4 @@
 {
     //"php.validate.executablePath": "C:/WebServers/usr/bin/php.exe"
+    "php.validate.executablePath": "D:\\OpenServer\\OSPanel\\modules\\php\\PHP_5.6\\php.exe"
 }
