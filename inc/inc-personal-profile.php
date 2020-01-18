@@ -1,6 +1,8 @@
 <?php
 // inc\inc-personal-profile.php
  $info=true;// новые уведомления для профиля
+ $emailaccess=true;// наличие адреса
+//  $emailaccess=false;// наличие адреса
  $info ? $class_info_alert="button_icon_alert": $class_info_alert="" ;
  ?>
 <div  style="position:fixed; left:0; top:115px; " class="btn-side">
@@ -14,7 +16,7 @@
                 <ul class="user ">
                     <li>Профиль<br><b><?php echo $_COOKIE['login']?></b></li>
                     <li class="divider"></li>
-                    <li>
+                    <li class="sett">
                         <div class="btn btn-default" data-toggle="collapse" href="#collapseSetting" role="button" aria-expanded="false" aria-controls="collapseExample">
                         <span class="glyphicon glyphicon-cog" ><span> Настройки</span></span>
                         </div>
@@ -36,7 +38,7 @@
                                         <div class="form-group  has-success has-feedback">
                                             <label class="control-label" for="password-check">Подтверждение пароля</label>
                                             <input type="password" class="form-control" id="password-check" aria-describedby="password-check" style="display:inline-block;">                                         
-                                            <label for="password-check"></label>                                          
+                                            <label for="password-check" ></label>                                          
                                         </div>
                                     </div>
                                     
@@ -47,30 +49,51 @@
                                     </div>
                                     
                                 </form> 
+
+
+
                                <div class="divider"></div>  
-                               <form class="">                                
-                                    <!-- <div class="form-group"> -->
+                            <?php if ($emailaccess){?>
+                               <form id="emailaccess"> 
+                                     <div class="form-group">
+                                        <div class="form-group  has-success has-feedback ">  
+                                            <label class="control-label mail" for="email-check" >E-mail</label>                              
+                                            <input type="email" class="form-control disable edit" id="email-check" aria-describedby="email-check" style="display:inline-block;"  readonly  value="email@example.com">
+                                            <label for="email-check" id="emailedit"  class="tool" data-toggle="tooltip" data-placement="left" title="Редактировать"></label> 
+                                            <!-- $('#emailedit').prop('readonly', true);               -->
+                                        </div> 
+                                    </div>
+                                </form> 
+                                <?php }else{ ?>
+
+                                    <form id="emailaccess">                                
+                                    <div class="form-group">
                                         <!-- <div class="divider"></div> -->
 
-                                        <div class="form-group  has-success has-feedback">
-                                            <label class="control-label" for="email-check" >E-mail&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                        <div class="form-group  has-success has-feedback ">
+                                            <label class="control-label mail" for="email-check" >E-mail</label>
                                             
-                                            <input type="email" class="form-control" id="email-check" aria-describedby="email-check" style="display:inline-block;"  required>
-                                            <!-- <label for="email-check"></label>   -->
-                                            <div class="tool" data-toggle="tooltip" data-placement="left" title="E-mail нужен для подключения к Вашей учетной записи функции «Забыли пароль»"><i class="fa fa-question-circle" aria-hidden="true" ></i></div>
+                                            <input type="email" class="form-control " id="email-check" aria-describedby="email-check" style="display:inline-block;"  required >
+                                            <!-- <input type="email" class="form-control disable" id="email-check" aria-describedby="email-check" style="display:inline-block;"  readonly  value="email@example.com"> -->
+                                            <label for="email-check" class="tool" data-toggle="tooltip" data-placement="left" title="Восстановление пароля"></label>  
+                                            
+                                            <!-- <div class="tool" data-toggle="tooltip" data-placement="left" title="«Восстановление пароля»"><i class="fa fa-question-circle" aria-hidden="true" ></i></div> -->
                                             <!-- <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>                                        -->
                                         </div>
 
-                                    <!-- </div> -->
                                     
-                                    <div class="form-group">
-                                        <div class="">
-                                            <button type="submit" class="btn btn-success " id="subemail"><b>Подтвердить</b></button>
-                                            <!-- <label for="subemail"></label> -->
-                                        </div>                                        
+                                        
+                                        <div class="form-group">
+                                            <div class="">
+                                                <button type="submit" class="btn btn-success " id="subemail"><b>Подтвердить</b></button>
+                                                <!-- <label for="subemail"></label> -->
+                                            </div>                                        
+                                        </div>
                                     </div>
-                                    
-                                </form> 
+
+
+                                    <?php } ?>
+
                                 <div class="divider"></div>  
                             </div>
                              
@@ -113,8 +136,9 @@
                     
                     <li class="divider"></li>
                      <li>
-                    <button type="button" class="btn btn-default " data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение администратору сайта">
-                        <span class="glyphicon glyphicon-send" ><span> Письмо администратору</span></span>
+                    <button type="button" class="btn btn-default link" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение разработчику сайта">
+                        <!-- <span class="glyphicon glyphicon-send" ><span> Письмо администратору</span></span> -->
+                        <span class="glyphicon glyphicon-envelope" ><span class=""> info@500stp.website</span></span>
                     </button>
                     </li>
                     <li>

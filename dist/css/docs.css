@@ -2488,13 +2488,7 @@ ul.user>li:not(.divider){
   /* border-bottom: 1px solid #ffffff; */
 }
 
-.profile{
-  display: none;
-  overflow: auto;
-  min-width: 305px;
-  max-height: 630px;
-  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3), 0 0 10px rgba(100,100,100,0.3);
-}
+
 .user-toggle{box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3), 0 0 10px rgba(100,100,100,0.3);}
 span.glyphicon>span {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2529,10 +2523,16 @@ input[type=password]:valid + label::after {
    color: green;
 	content: "\2714";
 }
-/* input[type=email] + label::after {
+input[type=email] + label::after {
    color: green;
-	content: "\1F582";
-} */
+	/* content: "\1F582"; */
+	content: "?";
+}
+input[type=email].edit + label::after {
+  color:darkred;
+  content: "\1F589";
+  font-size: 18px;
+}
 /* input[type=password] + label{
   display: initial !important;
 } */
@@ -2541,10 +2541,9 @@ input[type=password]:valid + label::after {
  content: "\00BF";
  font-weight: 500;
 } */
-#email-check + div {
-  
+#email-check + div {  
   float: right;
-  margin-top: 5px;
+  margin-top: 10px;
   font-size: 20px;  
   margin-right: 15px;
   /* color: #4cae4c; */
@@ -2553,10 +2552,12 @@ input[type=password]:valid + label::after {
  /* Tooltip */
  .tool + .tooltip > .tooltip-inner {
   background-color: #b2dbff; 
-  color: rgb(39, 39, 39); 
+  /* color: rgb(39, 39, 39);  */
+  color: rgb(17, 17, 17); 
   border: 1px solid #7dc2ff; 
   padding: 15px;
   font-size: 14px;
+  font-weight: 600;
 }
 /* Tooltip on top */
 .tool + .tooltip.top > .tooltip-arrow {
@@ -2574,9 +2575,24 @@ input[type=password]:valid + label::after {
 .tool + .tooltip.right > .tooltip-arrow {
   border-right: 5px solid green;
 }
-.tooltip.in {
-  opacity: 1;
-  /* filter: alpha(opacity=90); */
+/* прозрачность подсказки*/
+/* .tooltip.in {
+  opacity: 1; 
+} */
+
+.link{
+  color:rgb(28, 93, 160);
 }
-
-
+.sett{
+  width: 270px;
+}
+.mail{
+  width: 200px;
+}
+.profile{
+  display: none;
+  overflow: auto;
+  min-width: 270px;
+  max-height: 610px;
+  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3), 0 0 10px rgba(100,100,100,0.3);
+}
