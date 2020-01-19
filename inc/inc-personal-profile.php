@@ -5,7 +5,7 @@
 //  $emailaccess=false;// наличие адреса
  $info ? $class_info_alert="button_icon_alert": $class_info_alert="" ;
  ?>
-<div  style="position:fixed; left:0; top:115px; " class="btn-side">
+<div  style="position:fixed; left:0; top:80px; " class="btn-side">
         <!-- Button trigger modal -->
         <div class="btn-group  ">
             <button type="button" class="btn btn-default  animated tada user-toggle "  aria-haspopup="true" aria-expanded="false">
@@ -31,13 +31,13 @@
 
                                         <div class="form-group  has-success has-feedback">
                                             <label class="control-label" for="password">Новый пароль</label>
-                                            <input type="password" class="form-control" id="password" aria-describedby="password" style="display:inline-block;">
+                                            <input type="password" class="form-control" id="password" aria-describedby="password" style="display:inline-block;" >
                                             <label for="password"></label>                                         
                                         </div>
 
                                         <div class="form-group  has-success has-feedback">
                                             <label class="control-label" for="password-check">Подтверждение пароля</label>
-                                            <input type="password" class="form-control" id="password-check" aria-describedby="password-check" style="display:inline-block;">                                         
+                                            <input type="password" class="form-control" id="password-check" aria-describedby="password-check" style="display:inline-block;" >                                         
                                             <label for="password-check" ></label>                                          
                                         </div>
                                     </div>
@@ -58,9 +58,9 @@
                                      <div class="form-group">
                                         <div class="form-group  has-success has-feedback ">  
                                             <label class="control-label mail" for="email-check" >E-mail</label>                              
-                                            <input type="email" class="form-control disable edit" id="email-check" aria-describedby="email-check" style="display:inline-block;"  readonly  value="email@example.com">
-                                            <label for="email-check" id="emailedit"  class="tool" data-toggle="tooltip" data-placement="left" title="Редактировать"></label> 
-                                            <!-- $('#emailedit').prop('readonly', true);               -->
+                                            <input type="email" class="form-control edit" id="email-check" aria-describedby="email-check" style="display:inline-block;"  readonly  value="email@example.com">
+                                            <label for="email-check" id="emailedit"  class="tool" data-toggle="tooltip" data-placement="left" title="Редактировать" onclick='emailedit();'></label> 
+                                           
                                         </div> 
                                     </div>
                                 </form> 
@@ -84,9 +84,8 @@
                                     
                                         
                                         <div class="form-group">
-                                            <div class="">
-                                                <button type="submit" class="btn btn-success " id="subemail"><b>Подтвердить</b></button>
-                                                <!-- <label for="subemail"></label> -->
+                                            <div >
+                                                <button type="submit" class="btn btn-success " id="subemail"><b>Подтвердить</b></button>                                               
                                             </div>                                        
                                         </div>
                                     </div>
@@ -172,14 +171,14 @@
         </button>
     </div>
     -->
-    <div  style="position:fixed; left:0; top:150px;" class="btn-side left-menu">
+    <div  style="position:fixed; left:0; top:115px;" class="btn-side left-menu">
     <!-- Button trigger modal -->
     
         <button type="button" class="btn btn-default center "  title="Левое меню">  
         <span class="glyphicon glyphicon-list" ></span>
         </button>
     </div>
-    <div  style="position:fixed; left:0; top:185px;" class="btn-side right-menu">
+    <div  style="position:fixed; left:0; top:150px;" class="btn-side right-menu">
     <!-- Button trigger modal +35px -->
     
         <button type="button" class="btn btn-default center rmenu"  title="Правое меню">  

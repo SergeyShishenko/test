@@ -2596,3 +2596,8 @@ input[type=email].edit + label::after {
   max-height: 610px;
   box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3), 0 0 10px rgba(100,100,100,0.3);
 }
+ul.user > li > button{
+  outline: none !important;
+  -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+  -webkit-tap-highlight-color: transparent !important;
+}

@@ -55,7 +55,7 @@ include 'inc/inc-header-send-modal.php';
 
             <div class="row" id="main-page">
                 <div class="page-header">
-                    <h1>Карта сайта</h1> 
+                    <h1 style="padding-left:35px;"> Карта сайта</h1> 
             
                 </div>
 
@@ -5189,6 +5189,7 @@ include 'inc/inc-header-send-modal.php';
     <script src="./dist/js/application.js"></script> 
     <script src="./dist/js/script.js?v=<?php echo $scriptVersion; ?>"></script>   
     <script src="./dist/js/floating.js?v=<?php echo $floatingVersion; ?>"></script> 
+    <script src="./dist/js/password-check.js"></script>
    
     <!-- <script src="./dist/js/jquery.color.js"></script>  -->
     <!-- <script>
