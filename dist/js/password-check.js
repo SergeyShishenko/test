@@ -52,4 +52,29 @@ for( let i = 0; i < tooltip.length; i++){ // проходим циклом по 
 
 }
 
+function changepass(){
+
+    // alert(getCookie("login"));
+    var request = new XMLHttpRequest();   
+    var body = 'login=' +  getCookie ( "login" ) +
+    '&chpass=' + document.getElementById('password').value;
+    // console.log(body);
+    request.open('POST','users/changepass.php',true);
+    request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    request.addEventListener('readystatechange', function() {
+      if ((request.readyState==4) && (request.status==200)) {
+        var w = document.getElementById('addpass');
+        w.innerHTML = request.responseText;
+      }
+    });
+   request.send(body);
+  }
+  
+  function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+  }
+
 

@@ -22,7 +22,7 @@
                         </div>
                         <div class="collapse" id="collapseSetting">
                             <div class="card card-body">
-                               <form class=""> 
+                               <div class="form" > 
                                     <div class="divider"></div>
                                     <!-- <b>Изменить пароль</b> -->
                                
@@ -44,11 +44,14 @@
                                     
                                     <div class="form-group">
                                         <div class="">
-                                            <button type="submit" class="btn btn-success "><b>Сохранить</b></button>
-                                        </div>                                        
+                                            <button type="submit" class="btn btn-success " onclick="changepass();"><b>Сохранить</b></button>
+                                            <div id="addpass"></div> 
+                                        </div> 
+                                                                              
                                     </div>
                                     
-                                </form> 
+                </div><!-- form --> 
+
 
 
 
