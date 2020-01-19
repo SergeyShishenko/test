@@ -45,7 +45,7 @@
                                     <div class="form-group">
                                         <div class="">
                                             <button type="submit" class="btn btn-success " onclick="changepass();"><b>Сохранить</b></button>
-                                            <div id="addpass"></div> 
+                                            <div id="addpass" class="settingprofile"></div> 
                                         </div> 
                                                                               
                                     </div>
@@ -57,7 +57,7 @@
 
                                <div class="divider"></div>  
                             <?php if ($emailaccess){?>
-                               <form id="emailaccess"> 
+                               <div id="emailaccess"> 
                                      <div class="form-group">
                                         <div class="form-group  has-success has-feedback ">  
                                             <label class="control-label mail" for="email-check" >E-mail</label>                              
@@ -66,10 +66,10 @@
                                            
                                         </div> 
                                     </div>
-                                </form> 
+                                </div> 
                                 <?php }else{ ?>
 
-                                    <form id="emailaccess">                                
+                                <div id="emailaccess">                                
                                     <div class="form-group">
                                         <!-- <div class="divider"></div> -->
 
@@ -88,7 +88,8 @@
                                         
                                         <div class="form-group">
                                             <div >
-                                                <button type="submit" class="btn btn-success " id="subemail"><b>Подтвердить</b></button>                                               
+                                                <button type="submit" class="btn btn-success " id="subemail" onclick='emailaccess();' ><b>Подтвердить</b></button> 
+                                                <div id="activate" class="activationmail">&nbsp;</div>                                               
                                             </div>                                        
                                         </div>
                                     </div>

@@ -13,6 +13,9 @@ $query = "CREATE TABLE IF NOT EXISTS sofia_users(
     user_salt VARCHAR(4) ,
     user_sess_id VARCHAR(40) ,
     user_sess_date_start datetime ,
+    user_activation VARCHAR(40) ,
+    user_status INT NOT NULL DEFAULT '0',
+    user_role VARCHAR(20) DEFAULT 'user',
     PRIMARY KEY (user_sofia_id))";
 // ALTER TABLE `head` ADD COLUMN `number_in_order_head`  INT
 

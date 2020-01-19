@@ -37,7 +37,7 @@ b.value="";
 b.setAttribute("required",true);;
 // b.setCustomValidity('Введите корректный адрес электронной почты!');
 let div = document.createElement('div');
-div.innerHTML = '<button type="submit" class="btn btn-success " id="subemail"><b>Подтвердить</b></button>' 
+div.innerHTML = '<button type="submit" class="btn btn-success " id="subemail"  onclick="emailaccess();"><b>Подтвердить</b></button><div id="activate" class="activationmail">&nbsp;</div>  ' 
 let divP = document.createElement('div');
 divP.className = "form-group";
 divP.append(div); 
@@ -53,7 +53,6 @@ for( let i = 0; i < tooltip.length; i++){ // проходим циклом по 
 }
 
 function changepass(){
-
     // alert(getCookie("login"));
     var request = new XMLHttpRequest();   
     var body = 'login=' +  getCookie ( "login" ) +
@@ -69,12 +68,32 @@ function changepass(){
     });
    request.send(body);
   }
-  
+
   function getCookie(name) {
     let matches = document.cookie.match(new RegExp(
       "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
     ));
     return matches ? decodeURIComponent(matches[1]) : undefined;
   }
+
+  function emailaccess(){
+    // let email = document.querySelector("#activate");
+    // email.innerHTML = 'Вам отправлено письмо со ссылкой для подтверждения!';
+    // alert(getCookie("login"));
+    var request = new XMLHttpRequest();   
+    var body = 'login=' +  getCookie ( "login" ) +
+    '&Email=' + document.getElementById('email-check').value;
+    // console.log(body);
+    request.open('POST','RECALL/sendactivationmail.php',true);
+    request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    request.addEventListener('readystatechange', function() {
+      if ((request.readyState==4) && (request.status==200)) {
+        var w = document.getElementById('activate');
+        w.innerHTML = request.responseText;
+      }
+    });
+   request.send(body);
+  }
+
 
 
