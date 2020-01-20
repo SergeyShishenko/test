@@ -29,9 +29,9 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
 
 
   if (count($err) > 0) {
-    foreach($err AS $error){
-        echo "<b>" . $error . "</b><br>";
-    } 
+    // foreach($err AS $error){
+    //     // echo "<b>" . $error . "</b><br>";
+    // } 
     $err2 = '<div style="color: red;text-align: center;margin-bottom: -30px;"><b>';
     $err2 .= 'Логин или пароль введены неверно!';
     $err2 .= '</b></div>';
@@ -152,11 +152,15 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
        <hgroup>
       <h1>Вход на сайт</h1>
       <h3>Здравствуйте! Авторизируйтесь, пожалуйста.</h3>
-      <?php echo $err2; ?>
+      <?php 
+      foreach($err AS $error){
+         echo "<b>" . $error . "</b><br>";
+    } 
+       ?>
       </hgroup>
       <form action="index-session.php" method="POST">
       <div class="group">
-        <input type="text" name="login" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
+        <input type="text" name="login" autocomplete='' class="used" value="<?php echo $_POST['login'];?>"><span class="highlight"></span><span class="bar"></span>
         <label>Логин</label>
       </div>
       <div class="group">

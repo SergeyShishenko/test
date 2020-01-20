@@ -1,7 +1,20 @@
 <?php
 // inc\inc-personal-profile.php
+ require_once (dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php'); // подключение к базе данных
+ $dbconn=dbconnect();
+ $login=$_COOKIE['login'];
+ $res=mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_login`='$login' AND `user_status`= 1");
+ if(mysqli_num_rows($res) > 0){
+    $emailaccess=true;// наличие адреса 
+    $email=mysqli_fetch_assoc($res)['user_mail']; 
+    
+ }
+ else{
+    $emailaccess=false;// наличие адреса 
+ }
+
  $info=true;// новые уведомления для профиля
- $emailaccess=true;// наличие адреса
+ 
 //  $emailaccess=false;// наличие адреса
  $info ? $class_info_alert="button_icon_alert": $class_info_alert="" ;
  ?>
@@ -14,7 +27,7 @@
             <div class="profile"  style="position: absolute; transform: translate3d(45px, 0px, 0px); top: 0px; left: 0px; z-index: 1100; background-color: #ffffff;">
                
                 <ul class="user ">
-                    <li>Профиль<br><b><?php echo $_COOKIE['login']?></b></li>
+                    <li>Профиль<br><b><?php echo $login?></b></li>
                     <li class="divider"></li>
                     <li class="sett">
                         <div class="btn btn-default" data-toggle="collapse" href="#collapseSetting" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -61,7 +74,7 @@
                                      <div class="form-group">
                                         <div class="form-group  has-success has-feedback ">  
                                             <label class="control-label mail" for="email-check" >E-mail</label>                              
-                                            <input type="email" class="form-control edit" id="email-check" aria-describedby="email-check" style="display:inline-block;"  readonly  value="email@example.com">
+                                            <input type="email" class="form-control edit" id="email-check" aria-describedby="email-check" style="display:inline-block;"  readonly  value="<?php echo $email?>">
                                             <label for="email-check" id="emailedit"  class="tool" data-toggle="tooltip" data-placement="left" title="Редактировать" onclick='emailedit();'></label> 
                                            
                                         </div> 
