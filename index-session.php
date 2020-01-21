@@ -153,9 +153,12 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
       <h1>Вход на сайт</h1>
       <h3>Здравствуйте! Авторизируйтесь, пожалуйста.</h3>
       <?php 
+      echo $_POST['loginnewpass'];
       foreach($err AS $error){
          echo "<b>" . $error . "</b><br>";
     } 
+    // $newpass = false;
+    $newpass = true;
        ?>
       </hgroup>
       <form action="index-session.php" method="POST">
@@ -172,7 +175,15 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
         ?>
       <button  class="button buttonBlue" type="submit" value="Войти">Вход
         <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-      </button>  
+      </button> 
+     
+        <?php if($newpass){ ?>
+        <button type="submit" class="btn btn-link btn-block" form='loginnewpass' >ПОЛУЧИТЬ НОВЫЙ ПАРОЛЬ</button>
+        
+        <?php } ?>
+      </form>
+      <form action="index-session.php" method="POST" id="loginnewpass" style="display:none;">
+        <input type="hidden" name="loginnewpass" value="<?php echo $_POST['login']; ?>">
       </form>
     </div>
 
