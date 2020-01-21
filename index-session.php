@@ -39,7 +39,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
   }
   else{ // нет ошибок
 
-    $_SESSION['sess_login'] = $_POST['login'];
+    $_SESSION['sess_login'] = $_POST['login'];  
     $_SESSION['sess_pass'] = $_POST['passw'];
     $login= $_SESSION['sess_login'];
     $escape_string_login=mysqli_real_escape_string($dbconn, $login);
@@ -152,27 +152,33 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
        <hgroup>
       <h1>Вход на сайт</h1>
       <h3>Здравствуйте! Авторизируйтесь, пожалуйста.</h3>
-      <?php 
-      echo $_POST['loginnewpass'];
-      foreach($err AS $error){
-         echo "<b>" . $error . "</b><br>";
-    } 
-    // $newpass = false;
-    $newpass = true;
-       ?>
+      <div style="color: blue;text-align: center;margin-bottom: -40px; height: 56.667px;"><b>
+  
+              <?php 
+                echo $_POST['loginnewpass'];
+                if (isset($_POST['loginnewpass'])){ 
+                  $login = $_POST['loginnewpass'];
+                }else{
+                  $login = $_POST['login'];
+                }
+                foreach($err AS $error){
+                  echo "<b>" . $error . "</b><br>";
+                } 
+               // $newpass = false;
+                $newpass = true;
+              ?>
+       </b></div>
       </hgroup>
       <form action="index-session.php" method="POST">
       <div class="group">
-        <input type="text" name="login" autocomplete='' class="used" value="<?php echo $_POST['login'];?>"><span class="highlight"></span><span class="bar"></span>
+        <input type="text" name="login" autocomplete='' class="used" value="<?php echo $login;?>"><span class="highlight"></span><span class="bar"></span>
         <label>Логин</label>
       </div>
       <div class="group">
         <input type="password" name="passw" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
         <label>Пароль</label>
       </div>     
-      <?php
-      //  echo $_SESSION['ref'];
-        ?>
+     
       <button  class="button buttonBlue" type="submit" value="Войти">Вход
         <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
       </button> 
@@ -183,7 +189,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
         <?php } ?>
       </form>
       <form action="index-session.php" method="POST" id="loginnewpass" style="display:none;">
-        <input type="hidden" name="loginnewpass" value="<?php echo $_POST['login']; ?>">
+        <input type="hidden" name="loginnewpass" value="<?php echo $login; ?>">
       </form>
     </div>
 
