@@ -84,7 +84,7 @@ function changepass(){
     var body = 'login=' +  getCookie ( "login" ) +
     '&Email=' + document.getElementById('email-check').value;
     // console.log(body);
-    request.open('POST','RECALL/sendactivationmail.php',true);
+    request.open('POST','users/sendactivationmail.php',true);
     request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     request.addEventListener('readystatechange', function() {
       if ((request.readyState==4) && (request.status==200)) {

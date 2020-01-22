@@ -1,5 +1,7 @@
 <?php
-require_once '../RECALL/inc-mail.php';
+define('__ROOT__', dirname(dirname(dirname(__FILE__)))); 
+require_once(__ROOT__.'/DATA/TABLES/inc-mail.php'); // 
+
 
 // $message = "Имя: {$_POST['name']}<br>"; // добавляем имя в текст
 // $message .= "Телефон: {$_POST['phone']}<br><br>"; // добавляем телефон в текст
