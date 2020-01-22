@@ -29,7 +29,9 @@ else {
 }
 // $base_url=$_SERVER['DOCUMENT_ROOT'] .$site."/users/activation.php?code=";
 $base_url=$site."/users/activation.php?do=";
+
 require_once (dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/inc-mail.php'); 
+// echo (dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/inc-mail.php');
 // define('__ROOT__', dirname(dirname(dirname(__FILE__)))); 
 // require_once(__ROOT__.'/DATA/TABLES/inc-mail.php'); // 
 // echo __ROOT__.'/DATA/TABLES/inc-mail.php';
