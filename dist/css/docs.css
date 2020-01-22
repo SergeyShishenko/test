@@ -907,7 +907,7 @@ a.navbar-brand{text-align: center;}
 }
 }
 #mySendModal >div.modal-dialog{
-  max-width: 480px !important;
+  /* max-width: 480px !important; */
    margin:auto;
    
   }

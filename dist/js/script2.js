@@ -994,7 +994,7 @@ $(function(){
 		e.preventDefault();
 		var data = $(this).serialize();
 		$.ajax({
-			url: './RECALL/mail.php',
+			url: 'users/mail.php',
 			type: 'POST',
 			data: data,
 			beforeSend: function(){
