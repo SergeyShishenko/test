@@ -22,6 +22,14 @@ if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
 
 //    echo $_SERVER['REQUEST_URI'] . '<br>';
 //  echo $_SESSION['ref'];
+if (isset($_SESSION['gpass']) && isset($_SESSION['glogin'])) {
+  $_POST['login']=$_SESSION['glogin'];
+  $_POST['passw']=$_SESSION['gpass'];
+  unset($_SESSION['glogin']);
+  unset($_SESSION['gpass']);
+
+  // echo ($_POST['passw']);
+}
 
 if (isset($_POST['login']) && isset($_POST['passw'])) {
 
@@ -188,7 +196,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
         
         <?php } ?>
       </form>
-      <form action="index-session.php" method="POST" id="loginnewpass" style="display:none;">
+      <form action="users/generateNewPass.php" method="POST" id="loginnewpass" style="display:none;">
         <input type="hidden" name="loginnewpass" value="<?php echo $login; ?>">
       </form>
     </div>

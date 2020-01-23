@@ -5,6 +5,7 @@
 // $message .= "Телефон: {$_POST['phone']}<br><br>"; // добавляем телефон в текст
 // $message .= "{$_POST['message']}"; // добавляем сообщение в текст
 // $message = "{$_POST['message']}"; // добавляем сообщение в текст
+session_start();
 require_once (dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php'); // подключение к базе данных
  $dbconn=dbconnect();
  $mailadres=mysqli_real_escape_string($dbconn,$_POST['Email']);

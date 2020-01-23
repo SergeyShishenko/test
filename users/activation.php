@@ -1,5 +1,6 @@
 <?php
 // users\activation.php
+session_start();
  require_once (dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php'); // подключение к базе данных
  $dbconn=dbconnect();
  $err = []; 
