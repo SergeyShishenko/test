@@ -56,26 +56,26 @@ $mail->SMTPOptions = array(
 
 // узнать ip адрес
  
-$client  = @$_SERVER['HTTP_CLIENT_IP'];
-$forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
-$remote  = @$_SERVER['REMOTE_ADDR'];
+// $client  = @$_SERVER['HTTP_CLIENT_IP'];
+// $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+// $remote  = @$_SERVER['REMOTE_ADDR'];
  
-if(filter_var($client, FILTER_VALIDATE_IP)) $ip = $client;
-elseif(filter_var($forward, FILTER_VALIDATE_IP)) $ip = $forward;
-else $ip = $remote;
+// if(filter_var($client, FILTER_VALIDATE_IP)) $ip = $client;
+// elseif(filter_var($forward, FILTER_VALIDATE_IP)) $ip = $forward;
+// else $ip = $remote;
  
 // название файла в youtube https://youtu.be/rT2qBoTtB-U
 // $youtube="rT2qBoTtB-U";
 // $youtube="nWdH_vYaQk4";
 // $youtube="uLMm-fsyZyI";
-$youtube="GlsmBD7z8eY";
+// $youtube="GlsmBD7z8eY";
 
 // Письмо
 $mail->isHTML(true);
-$mail->Subject = 'Добавлен титульный лист';
-$mail->Body = $message ."<br>". $mailadres
+$mail->Subject = 'Сообщение с сайта 500СТП';
+$mail->Body = $message ."<br>". $mailadres;
 // . $_SERVER['HTTP_REFERER']."<br>"
-. "<a href=\"https://500stp.website/shablony-dokumentov-titulnyy-dp.php#list-titulnyy-proektirovshchika\">ЛИСТ ТИТУЛЬНЫЙ ТЗ для проектировщика</a><br>"
+// . "<a href=\"https://500stp.website/shablony-dokumentov-titulnyy-dp.php#list-titulnyy-proektirovshchika\">ЛИСТ ТИТУЛЬНЫЙ ТЗ для проектировщика</a><br>"
 // . "<a href=\"https://500stp.website/shablony-dokumentov-titulnyy-dp.php\">АЛЬБОМ ДИЗАЙН-ПРОЕКТА </a><br>"
 // . "<a href=\"https://500stp.website/shablony-dokumentov-albom-obrazcov.php\">ШАБЛОН АЛЬБОМА ОБРАЗЦОВ </a><br>"
 // . "<a href=\"https://500stp.website/izdeliya-mebel-korpusnaya.php#stenka-zadnyaya-v-paz-korpusa-shkafa\">5000202-99_105 стенка задняя В ПАЗ корпуса шкафа </a> <br>"
@@ -94,17 +94,17 @@ $mail->Body = $message ."<br>". $mailadres
 // <a href=\"https://youtu.be/eQqX-N3Vmu0\"><img src='https://i.ytimg.com/vi/eQqX-N3Vmu0/hqdefault.jpg'  alt='bunny2' width=\"320\" height=\"240\" /></a>
 // </video>"
 
-."<video width=\"320\" height=\"240\" poster='https://i.ytimg.com/vi/$youtube/hqdefault.jpg' controls=\"controls\" alt='VIDEO'>
-<source type=\"video/mp4\" src=\"img/mov_bbb.mp4\"></source>
-<source type=\"video/ogg\" src=\"img/mov_bbb.ogg\"></source>
-<source type=\"video/webm\" src=\"img/mov_bbb.webm\"></source>
-<a href=\"https://youtu.be/$youtube\"><img src='https://i.ytimg.com/vi/$youtube/hqdefault.jpg'  alt='VIDEO' width=\"320\" height=\"240\" /></a>
-</video>"
+// ."<video width=\"320\" height=\"240\" poster='https://i.ytimg.com/vi/$youtube/hqdefault.jpg' controls=\"controls\" alt='VIDEO'>
+// <source type=\"video/mp4\" src=\"img/mov_bbb.mp4\"></source>
+// <source type=\"video/ogg\" src=\"img/mov_bbb.ogg\"></source>
+// <source type=\"video/webm\" src=\"img/mov_bbb.webm\"></source>
+// <a href=\"https://youtu.be/$youtube\"><img src='https://i.ytimg.com/vi/$youtube/hqdefault.jpg'  alt='VIDEO' width=\"320\" height=\"240\" /></a>
+// </video>"
 
-."<hr>Логин: sofia <br>Пароль: 123"
+// ."<hr>Логин: sofia <br>Пароль: 123"
 
 
-;
+// ;
 
 if( $mail->send() ){
 	echo '<p style="color: green; ">Ваше сообщение отправлено!</p>

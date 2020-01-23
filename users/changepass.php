@@ -27,29 +27,29 @@ if(isset($_POST['login']) && isset($_POST['chpass'])){
                     // echo "<b>Соль</b>{$salt}<br>";
                    
                     exit();
-                }
-                else{
-                 
-                    printf("Ошибка: %s\n", mysqli_error($dbconn));
-                    exit();
+                    }
+                    else{
+                    
+                        printf("Ошибка: %s\n", mysqli_error($dbconn));
+                        exit();
+                    }  
+
+            }
+
+        if(count($err) == 0){
+
+            // echo "<b>Логин: {$_POST['login']} </b><br>";
+            echo "<b>Новый пароль: {$_POST['chpass']} </b><br>";
+            }else{
+                echo "<b>Неудача!</b><br>";
+                // print "<b>При регистрации произошли следующие ошибки:</b><br>";
+                foreach($err AS $error){
+                    print $error."<br>";
                 }  
-
-    }
-
-    if(count($err) == 0){
-
-    // echo "<b>Логин: {$_POST['login']} </b><br>";
-    echo "<b>Новый пароль: {$_POST['chpass']} </b><br>";
+        }
     }else{
-        echo "<b>Неудача!</b><br>";
-        // print "<b>При регистрации произошли следующие ошибки:</b><br>";
-        foreach($err AS $error){
-            print $error."<br>";
-        }  
-    }
-}else{
     echo "<b>Неудача!</b><br>";
-}
+    }
 
 
 // function check_login($login,$dbconn,$err){

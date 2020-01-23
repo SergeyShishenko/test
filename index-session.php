@@ -196,7 +196,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
         
         <?php } ?>
       </form>
-      <form action="users/generateNewPass.php" method="POST" id="loginnewpass" style="display:none;">
+      <form action="users/sendNewPass.php" method="POST" id="loginnewpass" style="display:none;">
         <input type="hidden" name="loginnewpass" value="<?php echo $login; ?>">
       </form>
     </div>
