@@ -255,3 +255,9 @@ footer img {
 footer img:hover { opacity: .83; }
 
 footer img:focus , footer a:focus { outline: none; }
+
+.btn-link {
+    outline: none !important;
+    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+    -webkit-tap-highlight-color: transparent !important;
+}
