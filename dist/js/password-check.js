@@ -94,6 +94,24 @@ function changepass(){
     });
    request.send(body);
   }
+  function sendNewPass(){
+    // let email = document.querySelector("#activate");
+    // email.innerHTML = 'Вам отправлено письмо со ссылкой для подтверждения!';
+    // alert(getCookie("login"));
+    var request = new XMLHttpRequest();   
+    var body = 'login=' +  document.getElementById('loginnewpass').value;
+    // alert(body);
+     console.log(body);
+    request.open('POST','users/sendNewPass.php',true);
+    request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    request.addEventListener('readystatechange', function() {
+      if ((request.readyState==4) && (request.status==200)) {
+        var w = document.getElementById('say');
+        w.innerHTML = request.responseText;
+      }
+    });
+   request.send(body);
+  }
 
 
 

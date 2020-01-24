@@ -160,7 +160,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
        <hgroup>
       <h1>Вход на сайт</h1>
       <h3>Здравствуйте! Авторизируйтесь, пожалуйста.</h3>
-      <div style="color: blue;text-align: center;margin-bottom: -40px; height: 56.667px;"><b>
+      <div style="color: blue;text-align: center;margin-bottom: -40px; height: 56.667px;" id="say"><b>
   
               <?php 
                 echo $_POST['loginnewpass'];
@@ -192,13 +192,14 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
       </button> 
      
         <?php if($newpass){ ?>
-        <button type="submit" class="btn btn-link btn-block" form='loginnewpass' >ПОЛУЧИТЬ НОВЫЙ ПАРОЛЬ</button>
+        <button type="button" class="btn btn-link btn-block" onclick="sendNewPass();" >ПОЛУЧИТЬ НОВЫЙ ПАРОЛЬ</button>
         
         <?php } ?>
       </form>
-      <form action="users/sendNewPass.php" method="POST" id="loginnewpass" style="display:none;">
-        <input type="hidden" name="loginnewpass" value="<?php echo $login; ?>">
-      </form>
+
+      <!-- <form action="users/sendNewPass.php" method="POST" id="loginnewpass" style="display:none;"> -->
+        <input type="hidden" name="loginnewpass" id="loginnewpass" value="<?php echo $login; ?>">
+      <!-- </form> -->
     </div>
 
     
