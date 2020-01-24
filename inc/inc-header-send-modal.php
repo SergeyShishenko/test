@@ -1,6 +1,6 @@
 <?php
 // inc-header-send-modal
- echo'   
+?>
  <!-- Modal -->
 <div class="modal fade" id="mySendModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
     <div class="modal-dialog"  role="document">
@@ -9,7 +9,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: 0px;">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabel"> Отправка сообщения автору сайта</h4>
+                <h4 class="modal-title" id="myModalLabel"> Отправка сообщения</h4>
             </div>
             <div class="modal-body">
                 <form class="form-horizontal" id="recall">
@@ -18,8 +18,8 @@
                             <textarea id="message" class="form-control" style="width: 100%;" rows="5" name="message" placeholder="Введите сообщение"
                                 required></textarea>
                                 <br>
-                                <label for="Email"  style=" margin-top: 20px;font-weight: normal;padding-left: 15px;font-size:14px;">Обратная связь (не обязательно) </label>
-                                <input type="email" class="form-control" style="width: 100%;" id="Email" name="Email"  placeholder="Email">
+                                <!-- <label for="Email"  style=" margin-top: 20px;font-weight: normal;padding-left: 15px;font-size:14px;">Обратная связь (не обязательно) </label>
+                                <input type="email" class="form-control" style="width: 100%;" id="Email" name="Email"  placeholder="Email"> -->
                                 <br>
                         </div>
                         
@@ -35,4 +35,4 @@
     </div>
 </div>
     <!-- /Modal -->
-';?>
+

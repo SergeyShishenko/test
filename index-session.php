@@ -10,6 +10,7 @@ require_once(__ROOT__.'/DATA/TABLES/configDB.php');
 $dbconn=dbconnect();
 $err = []; 
 $newpass = false;
+include 'inc/inc-version-css-js.php';
 // require_once(__ROOT__.'/DATA/data.php'); // переменные $enter_login = "sofia"; $enter_passw = "202cb962ac59075b964b07152d234b70";
 
 $err2 = '';
@@ -153,7 +154,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
     <title>500.СТП</title>
       <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
       <link href="./dist/css/cover.css" rel="stylesheet">
-      <link rel="stylesheet" href="./dist/css/style-form.css">
+      <link rel="stylesheet" href="./dist/css/style-form.css?v=<?php echo $styleform; ?>">
       <link rel="shortcut icon" href="Lock-Icon.png" type="image/x-icon">  
 </head>
 <body>
@@ -270,6 +271,6 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
 
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
-    <script  src="./dist/js/index-form.js"></script>
+    <script  src="./dist/js/index-form.js?v=<?php echo $indexform; ?> "></script>
 </body>
 </html>

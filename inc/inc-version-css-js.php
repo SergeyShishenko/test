@@ -10,4 +10,5 @@ $script2Version = 26;
 $floatingVersion = 21;
 $vpijsVersion = 19;
 $cartVersion =13;
-?>
+$styleform =2;
+$indexform =2;

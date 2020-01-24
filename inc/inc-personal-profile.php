@@ -153,7 +153,7 @@
                     
                     <li class="divider"></li>
                      <li>
-                    <button type="button" class="btn btn-default link" data-toggle="modal" data-target="#mySendModal" title="Отправить сообщение разработчику сайта">
+                    <button type="button" class="btn btn-default link" data-toggle="modal" data-target="#mySendModal" title="Написать в службу поддержки">
                         <!-- <span class="glyphicon glyphicon-send" ><span> Письмо администратору</span></span> -->
                         <span class="glyphicon glyphicon-envelope" ><span class=""> info@500stp.website</span></span>
                     </button>

@@ -1,5 +1,5 @@
 <?php
-// users\activation.php
+// users\activation.php активация почты
 session_start();
  require_once (dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php'); // подключение к базе данных
  $dbconn=dbconnect();
@@ -17,19 +17,23 @@ session_start();
         if(mysqli_num_rows($count) == 1)
         {
         mysqli_query($dbconn,"UPDATE sofia_users SET `user_status`= 1 WHERE user_activation='$code'");
-        $msg="Ваш email подтвержден"; 
+        header('Location:../messages/messages.php?msg=1'); 
+        // $msg="Ваш email подтвержден."; //msg=1
         }
         else
         {
-        $msg ="Ваш email уже подтвержден.";
+            header('Location:../messages/messages.php?msg=2'); 
+        // $msg ="Ваш email уже подтвержден.";//msg=2
         }
     }else{
-        $msg ="Неверный код подтверждения.";
+        header('Location:../messages/messages.php?msg=3'); 
+        // $msg ="Неверный код подтверждения.";//msg=3
         }
  
  }else{
-    $msg ="Неверный код подтверждения.";
+    header('Location:../messages/messages.php?msg=3'); 
+    // $msg ="Неверный код подтверждения.";//msg=13
     }
 ?>
 
-<?php echo $msg; ?>
+<?php //echo $msg; ?>
