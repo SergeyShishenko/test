@@ -5,18 +5,21 @@
 // $message .= "Телефон: {$_POST['phone']}<br><br>"; // добавляем телефон в текст
 // $message .= "{$_POST['message']}"; // добавляем сообщение в текст
 // $message = "{$_POST['message']}"; // добавляем сообщение в текст
-session_start();
+// session_start();
 require_once (dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php'); // подключение к базе данных
  $dbconn=dbconnect();
 //  $mailadres=mysqli_real_escape_string($dbconn,$_POST['Email']);
  $login =$_POST['loginnewpass'];
-//  echo $login;
+//   echo $login;
+
 //  $code=sha1(generateCode(6));
 
 
  $salt = generateCode(4);
- $gpassword= generateCode(6);
- $password = sha1($gpassword.$salt); 
+//  echo $salt;
+ $gpassword = generateCode(6);
+ $password = sha1(trim($gpassword).$salt); 
+ 
 
  $res=mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_login` = '$login'");
  if(mysqli_num_rows($res) > 0)
@@ -65,15 +68,16 @@ $mail->Subject = 'Сообщение с сайта 500СТП';
 $mail->Body = 'Здравствуйте, '.$login.'! 
 <br/> <br/> 
 Как Вы и просили, Ваш пароль был переустановлен. Новая информация о пароле следующая:<br>
-Пароль пользователя: '.$gpassword;
+Новый пароль: <b>'.$gpassword.'<b>';
+
 
 
 if( $mail->send() ){
-	echo 'Вам отправлено письмо со ссылкой для подтверждения!';
+	echo 'На адрес <b>'.$mailadres.'</b> отправлено письмо со ссылкой для подтверждения!';
 
 }else{
 	echo '<p style="color: red; padding: 6px;">Ошибка!</p>';
 	echo '<p style="color: red;">'.$mail->ErrorInfo.'</p>';
 	
 }
-// exit();
+exit();

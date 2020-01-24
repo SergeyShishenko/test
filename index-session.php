@@ -9,6 +9,7 @@ define('__ROOT__', dirname(dirname(__FILE__)));
 require_once(__ROOT__.'/DATA/TABLES/configDB.php');
 $dbconn=dbconnect();
 $err = []; 
+$newpass = false;
 // require_once(__ROOT__.'/DATA/data.php'); // переменные $enter_login = "sofia"; $enter_passw = "202cb962ac59075b964b07152d234b70";
 
 $err2 = '';
@@ -22,21 +23,32 @@ if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
 
 //    echo $_SERVER['REQUEST_URI'] . '<br>';
 //  echo $_SESSION['ref'];
-if (isset($_SESSION['gpass']) && isset($_SESSION['glogin'])) {
-  $_POST['login']=$_SESSION['glogin'];
-  $_POST['passw']=$_SESSION['gpass'];
-  unset($_SESSION['glogin']);
-  unset($_SESSION['gpass']);
+// if (isset($_SESSION['gpass']) && isset($_SESSION['glogin'])) {
+//   $_POST['login']=$_SESSION['glogin'];
+//   $_POST['passw']=$_SESSION['gpass'];
+//   unset($_SESSION['glogin']);
+//   unset($_SESSION['gpass']);
 
-  // echo ($_POST['passw']);
-}
-
+//   // echo ($_POST['passw']);
+// }
+// echo ($_POST['passw']);
+// echo ($_POST['login']);
 if (isset($_POST['login']) && isset($_POST['passw'])) {
 
   $err = authorization($_POST['login'],$_POST['passw'],$dbconn,$err);
 
 
-  if (count($err) > 0) {
+  if  (in_array("Пользователь с таким логином существует в базе данных", $err)){
+    // удаление
+    if(($delete_key = array_search("Пользователь с таким логином существует в базе данных", $err)) !== false)
+      {
+          unset($err[$delete_key]);
+      }
+  }
+
+// var_dump($err) ;
+
+  if (count($err) > 1) {
     // foreach($err AS $error){
     //     // echo "<b>" . $error . "</b><br>";
     // } 
@@ -169,11 +181,52 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
                 }else{
                   $login = $_POST['login'];
                 }
+
+
+              // if  (in_array("Пользователь с таким логином существует в базе данных", $err)){
+              //   // удаление
+              //   if(($delete_key = array_search("Пользователь с таким логином существует в базе данных", $err)) !== false)
+              //     {
+              //         unset($err[$delete_key]);
+              //     }
+              // }
+              // поиск email
+           
+              foreach ($err as  $key=>$val){
+                if (strpos($val, 'email:')!==false){
+                  // $email = $val;
+                  $email = explode(":", $val);
+                    // echo "<b>" . $email[1] . "</b><br>";
+                  unset($err[$key]);
+                 
+                }
+              }
+
+              if ($email[1] != ""){
+                  // echo "<b>" . $email[1] . "</b><br>";
+                  $newpass = true;
+                }else{
+                  $newpass = false;
+                  // if(($delete_key = array_search("email:", $err)) !== false)
+                  // {
+                  //     unset($err[$delete_key]);
+                  // }
+                }
+               
                 foreach($err AS $error){
                   echo "<b>" . $error . "</b><br>";
                 } 
-               // $newpass = false;
-                $newpass = true;
+
+              
+                  // echo "<b>" .$err2 . "</b><br>"; 
+                  // echo "<b>" .$email[1] . "</b><br>"; 
+               
+
+               
+                
+
+            
+                
               ?>
        </b></div>
       </hgroup>

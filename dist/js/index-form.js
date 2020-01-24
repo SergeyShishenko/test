@@ -43,7 +43,7 @@ function sendNewPass(){
     // email.innerHTML = 'Вам отправлено письмо со ссылкой для подтверждения!';
     // alert(getCookie("login"));
     var request = new XMLHttpRequest();   
-    var body = 'login=' +  document.getElementById('loginnewpass').value;
+    var body = 'loginnewpass=' +  document.getElementById('loginnewpass').value;
     // alert(body);
      console.log(body);
     request.open('POST','users/sendNewPass.php',true);
