@@ -6,6 +6,8 @@
 // $message .= "{$_POST['message']}"; // добавляем сообщение в текст
 // $message = "{$_POST['message']}"; // добавляем сообщение в текст
 // session_start();
+// echo $_POST['loginnewpass'];
+if (isset($_POST['loginnewpass'])){
 require_once (dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php'); // подключение к базе данных
  $dbconn=dbconnect();
 //  $mailadres=mysqli_real_escape_string($dbconn,$_POST['Email']);
@@ -67,8 +69,7 @@ $mail->isHTML(true);
 $mail->Subject = 'Ваш новый пароль для доступа на сайт 500СТП';
 $mail->Body = 'Здравствуйте, <b>'.$login.'</b>! 
 <br/> <br/> 
-Как Вы и просили, Ваш пароль был переустановлен.<br>
-Новый пароль: <b>'.$gpassword.'</b><br><br>
+Ваш новый пароль: <b>'.$gpassword.'</b><br><br>
 С уважением,<br>
 Служба поддержки пользователей проекта www.500stp.website.'
 ;
@@ -76,6 +77,8 @@ $mail->Body = 'Здравствуйте, <b>'.$login.'</b>!
 
 
 if( $mail->send() ){
+
+    // перенаправить на страницу вывода информации
 	echo 'На адрес <b>'.$mailadres.'</b> отправлено письмо со ссылкой для подтверждения!';
 
 }else{
@@ -83,4 +86,7 @@ if( $mail->send() ){
 	echo '<p style="color: red;">'.$mail->ErrorInfo.'</p>';
 	
 }
-exit();
+// unset($_POST['loginnewpass']);
+}//isset($_POST['loginnewpass'];
+
+
