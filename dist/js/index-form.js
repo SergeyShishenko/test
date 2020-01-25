@@ -38,20 +38,23 @@ $(window, document, undefined).ready(function() {
 
 });
 
-function sendNewPass(){
+function sendNewPass(e){
     // let email = document.querySelector("#activate");
     // email.innerHTML = 'Вам отправлено письмо со ссылкой для подтверждения!';
     // alert(getCookie("login"));
     var request = new XMLHttpRequest();   
     var body = 'loginnewpass=' +  document.getElementById('loginnewpass').value;
     // alert(body);
-     console.log(body);
+    //  console.log(body);
     request.open('POST','users/sendNewPass.php',true);
     request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     request.addEventListener('readystatechange', function() {
       if ((request.readyState==4) && (request.status==200)) {
         var w = document.getElementById('say');
         w.innerHTML = request.responseText;
+        setTimeout(function () {          
+          e.remove();
+        }, 500);
       }
     });
    request.send(body);

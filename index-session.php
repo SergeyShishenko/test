@@ -155,6 +155,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
       <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
       <link href="./dist/css/cover.css" rel="stylesheet">
       <link rel="stylesheet" href="./dist/css/style-form.css?v=<?php echo $styleform; ?>">
+      <link rel="stylesheet" href="./dist/css/3dButton.css">
       <link rel="shortcut icon" href="Lock-Icon.png" type="image/x-icon">  
 </head>
 <body>
@@ -246,7 +247,9 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
       </button> 
      
         <?php if($newpass){ ?>
-        <button type="button" class="btn btn-link btn-block" onclick="sendNewPass();" >ПОЛУЧИТЬ НОВЫЙ ПАРОЛЬ</button>
+        <!-- <button type="button" class="btn btn-link btn-block" onclick="sendNewPass();" >ПОЛУЧИТЬ НОВЫЙ ПАРОЛЬ</button> -->
+        <a href="#" class="btn-link" tabindex="0" onclick="sendNewPass(this);"></a>
+        <!-- <a href="#" class="btn-link" tabindex="0" onclick="proba(this);"></a> -->
         
         <?php } ?>
       </form>
@@ -272,5 +275,24 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
     <script  src="./dist/js/index-form.js?v=<?php echo $indexform; ?> "></script>
+    <script>
+      function proba(e){
+
+        // var clicked = false;
+        console.log('Клик');
+    // return function () {
+      // var s=this;
+      // console.log(e);
+            setTimeout(function (s) {
+              // this.parentNode.removeChild(this);
+              // console.log(e);
+              e.remove();
+            }, 1000);
+       
+      
+    // }
+        
+  }
+    </script>
 </body>
 </html>
