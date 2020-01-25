@@ -1149,10 +1149,11 @@ function inputClick(arr){
         $('#someSwitchOptionSuccess'+i).trigger('click');
     });
 }
-shortcut.add("Alt+X",function() {
-    // alert("#product_output");
-    $("#product_output").trigger('click');
-});
+// dist/js/shortcut.js
+// shortcut.add("Alt+X",function() {
+//     // alert("#product_output");
+//     $("#product_output").trigger('click');
+// });
 
 $('tr.check-vis').each(function(){
     $(this).show();

@@ -25,7 +25,7 @@
 	
          <!-- Генерация -->
     <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  -->
-    <script src="./dist/js/shortcut.js"></script>
+    <!-- <script src="./dist/js/shortcut.js"></script> -->
     <script src="./dist/js/drop.js"></script>  
     <script src="./dist/js/selectcell.js"></script>
     <script src="./dist/js/calc-bloka-pitaniya.js"></script>

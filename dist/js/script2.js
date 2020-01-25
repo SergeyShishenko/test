@@ -285,6 +285,7 @@ function getClientHeight(){
 
 
 $( document ).ready(function() {
+  
  getPositionSearch();
   getClientWidth();
   
@@ -292,6 +293,8 @@ $( document ).ready(function() {
     $( ".profile" ).toggle(); //  скрываем, или отображаем все элементы <div>
   });
   $('[data-toggle="tooltip"]').tooltip(); 
+  console.log($('input.who').val(''));
+  $('input.who').val('');
 });
 //  console.log ("w"+getClientWidth());// текущая ширина экрана 
 //  console.log ("w"+window.outerWidth );// текущая ширина экрана 

@@ -499,7 +499,7 @@ function fileopenxlscsv($filename)
 
 				echo "<p id='order' class=''><b>№ заказа: </b>            <span id=\"order_output\"  class=\"val\">".$data[1][2]."</span> <input type='text' class='form-control' size='40' id='order-name' value=''></p>";
 
-				echo "<p class='changeclick' title='Alt+X'><b>Изделия: </b><span id=\"product_output\"  class=\"val\"></span> <input type='text' class='form-control' size='40' id='product-name' value=''></p>
+				echo "<p class='changeclick' ><b>Изделия: </b><span id=\"product_output\"  class=\"val\"></span> <input type='text' class='form-control' size='40' id='product-name' value=''></p>
 				
 				
 				";
