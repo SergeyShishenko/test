@@ -16,8 +16,12 @@ $query = "CREATE TABLE IF NOT EXISTS sofia_users(
     user_activation VARCHAR(40) ,
     user_status INT NOT NULL DEFAULT '0',
     user_role VARCHAR(20) DEFAULT 'user',
+    user_last_page VARCHAR(255) DEFAULT 'index.php',
     PRIMARY KEY (user_sofia_id))";
 // ALTER TABLE `head` ADD COLUMN `number_in_order_head`  INT
+// ALTER TABLE `sofia_users` ADD `user_last_page` VARCHAR(255) NOT NULL DEFAULT 'index.php' AFTER `user_role`;
+
+
 
 if (mysqli_query($dbconn, $query)) echo "Таблица sofia_users создана.<br>";
 else echo "Таблица не создана: ".mysqli_error($dbconn);

@@ -7,6 +7,7 @@
  $res=mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_login`='$login'");
  $data = mysqli_fetch_assoc($res);
  $email=$data['user_mail']; 
+ $role=$data['user_role']; 
  if($data['user_status'] == 1){
     $emailaccess=true;// наличие адреса     
  }
@@ -30,6 +31,8 @@
                 <ul class="user ">
                     <li>Профиль<br><b><?php echo $login?></b></li>
                     <li class="divider"></li>
+                    <!-- sett -->
+                    <?php if($role !="guest"){ ?>
                     <li class="sett">
                         <div class="btn btn-default" data-toggle="collapse" href="#collapseSetting" role="button" aria-expanded="false" aria-controls="collapseExample">
                         <span class="glyphicon glyphicon-cog" ><span> Настройки</span></span>
@@ -64,13 +67,9 @@
                                                                               
                                     </div>
                                     
-                </div><!-- form --> 
-
-
-
-
+                                </div><!-- form --> 
                                <div class="divider"></div>  
-                            <?php if ($emailaccess){?>
+                                <?php if ($emailaccess){?>
                                <div id="emailaccess"> 
                                      <div class="form-group">
                                         <div class="form-group  has-success has-feedback ">  
@@ -113,12 +112,12 @@
 
                                 <div class="divider"></div>  
                             </div>
-                             
-                            
-                            
-                            
                         </div>
                     </li>
+                    <?php } ?>
+                    <!-- /sett -->
+
+                    
                     <li>
                     <button type="button" class="btn btn-default "   title="Новости"  data-toggle="collapse" href="#collapseInfo" role="button" aria-expanded="false" aria-controls="collapseInfo">
                         <span class="glyphicon glyphicon-info-sign <?php echo $class_info_alert;?>" ><span> Информация</span></span>
