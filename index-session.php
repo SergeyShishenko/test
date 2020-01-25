@@ -11,29 +11,11 @@ $dbconn=dbconnect();
 $err = []; 
 $newpass = false;
 include 'inc/inc-version-css-js.php';
-// require_once(__ROOT__.'/DATA/data.php'); // переменные $enter_login = "sofia"; $enter_passw = "202cb962ac59075b964b07152d234b70";
-
 $err2 = '';
-
-
-
-
-if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
+// if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
 
 // if (strpos($_SERVER['HTTP_REFERER'], 'index-session.php')=== false){$ref = $_SERVER['HTTP_REFERER']; }
 
-//    echo $_SERVER['REQUEST_URI'] . '<br>';
-//  echo $_SESSION['ref'];
-// if (isset($_SESSION['gpass']) && isset($_SESSION['glogin'])) {
-//   $_POST['login']=$_SESSION['glogin'];
-//   $_POST['passw']=$_SESSION['gpass'];
-//   unset($_SESSION['glogin']);
-//   unset($_SESSION['gpass']);
-
-//   // echo ($_POST['passw']);
-// }
-// echo ($_POST['passw']);
-// echo ($_POST['login']);
 if (isset($_POST['login']) && isset($_POST['passw'])) {
 
   $err = authorization($_POST['login'],$_POST['passw'],$dbconn,$err);
@@ -69,12 +51,10 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
     // var_dump($_SESSION);
     // var_dump($_COOKIE);
     // exit();
-    if (is_null($hash)){
-      $hash="-";  
-  }
+    if (is_null($hash)){ $hash="-";  }
+
     $result = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LIKE '%".$hash."%'");
-    if (mysqli_num_rows($result) > 0) {//есть запись
-      
+    if (mysqli_num_rows($result) > 0) {//есть запись   
     
     $result = mysqli_query($dbconn,"UPDATE `sofia_users` SET `user_sess_date_start` = CURRENT_TIMESTAMP WHERE user_login='$escape_string_login'");
 
@@ -90,39 +70,17 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
     setcookie("login", $login, time()+60*60*24*30);// 24 часа
     $_COOKIE["login"] = $login;
     // $escape_string_login=mysqli_real_escape_string($dbconn, $login);
-
-
+    $res=mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_login`='$login'");
+    $data = mysqli_fetch_assoc($res);
+    $_SESSION['ref']=$data['user_last_page']; 
     // (`user_sofia_id`, `user_login`, `user_password`, `user_hash`, `user_mail`, `user_salt`, `user_sess_id`, `user_sess_date_start`) VALUES (NULL, '', '', NULL, NULL, NULL, NULL, NULL);
       // $result = mysqli_query($dbconn,"INSERT INTO `sofia_users` (`s_id`, `sess_id`, `date_start`, `hash_id`) VALUES (NULL,'$s_id', CURRENT_TIMESTAMP, '$hash')");
       $result = mysqli_query($dbconn,"UPDATE `sofia_users` SET `user_hash` = '$hash', `user_sess_date_start` = CURRENT_TIMESTAMP WHERE user_login = '$escape_string_login'");
 
-      // printf("Сообщение ошибки: %s\n", mysqli_error($dbconn));
-      // echo '<br>$escape_string_login = ' . $escape_string_login . '<br>';
-      // echo '$hash = ' . $hash . '<br>';
-      // exit();
-
-      
     }
-    // $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `sess_id` LIKE '%".$s_id."%'");
-    // if (mysqli_num_rows($result) > 0) {//есть запись
     
-    // $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `sess_id` LIKE '%".$s_id."%'");
-    // // echo '$s_id ' . $s_id . '<br>';
-    // // exit();
-    // }
-    // else{
-    //   $result = mysqli_query($dbconn,"INSERT INTO `user` (`s_id`, `sess_id`, `date_start`) VALUES (NULL, '$s_id', CURRENT_TIMESTAMP)");
-      
-    // }
-
-
-    mysqli_close($dbconn);
-    // header('Location: secure.php');
-    // header('Location: index.php');
-
-    // var_dump($_POST);
-    // echo '$s_id ' . $s_id . '<br>';
-    // exit();
+    mysqli_close($dbconn);  
+    if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
     header('Location:'.$_SESSION['ref']);
     unset($_SESSION['ref']);
     exit();
@@ -159,140 +117,85 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
       <link rel="shortcut icon" href="Lock-Icon.png" type="image/x-icon">  
 </head>
 <body>
-
-
-
-   <div class="site-wrapper">
-
-   <div class="site-wrapper-inner">
-
-  <div class="cover-container">
-
+<div class="site-wrapper">
+  <div class="site-wrapper-inner">
+    <div class="cover-container"> 
+      <div class="inner cover">
+        <hgroup>
+        <h1>Вход на сайт</h1>
+        <h3>Здравствуйте! Авторизируйтесь, пожалуйста.</h3>
+        <div style="color: blue;text-align: center;margin-bottom: -40px; height: 56.667px;" id="say"><b>
     
-
-    <div class="inner cover">
-       <hgroup>
-      <h1>Вход на сайт</h1>
-      <h3>Здравствуйте! Авторизируйтесь, пожалуйста.</h3>
-      <div style="color: blue;text-align: center;margin-bottom: -40px; height: 56.667px;" id="say"><b>
-  
-              <?php 
-                echo $_POST['loginnewpass'];
-                if (isset($_POST['loginnewpass'])){ 
-                  $login = $_POST['loginnewpass'];
-                }else{
-                  $login = $_POST['login'];
-                }
+                <?php 
+                  echo $_POST['loginnewpass'];
+                  if (isset($_POST['loginnewpass'])){ 
+                    $login = $_POST['loginnewpass'];
+                  }else{
+                    $login = $_POST['login'];
+                  }
 
 
-              // if  (in_array("Пользователь с таким логином существует в базе данных", $err)){
-              //   // удаление
-              //   if(($delete_key = array_search("Пользователь с таким логином существует в базе данных", $err)) !== false)
-              //     {
-              //         unset($err[$delete_key]);
-              //     }
-              // }
-              // поиск email
-           
-              foreach ($err as  $key=>$val){
-                if (strpos($val, 'email:')!==false){
-                  // $email = $val;
-                  $email = explode(":", $val);
-                    // echo "<b>" . $email[1] . "</b><br>";
-                  unset($err[$key]);
-                 
-                }
-              }
-
-              if ($email[1] != ""){
-                  // echo "<b>" . $email[1] . "</b><br>";
-                  $newpass = true;
-                }else{
-                  $newpass = false;
-                  // if(($delete_key = array_search("email:", $err)) !== false)
-                  // {
-                  //     unset($err[$delete_key]);
-                  // }
-                }
-               
-                foreach($err AS $error){
-                  echo "<b>" . $error . "</b><br>";
-                } 
-
-              
-                  // echo "<b>" .$err2 . "</b><br>"; 
-                  // echo "<b>" .$email[1] . "</b><br>"; 
-               
-
-               
-                
-
+                // if  (in_array("Пользователь с таким логином существует в базе данных", $err)){
+                //   // удаление
+                //   if(($delete_key = array_search("Пользователь с таким логином существует в базе данных", $err)) !== false)
+                //     {
+                //         unset($err[$delete_key]);
+                //     }
+                // }
+                // поиск email
             
+                foreach ($err as  $key=>$val){
+                  if (strpos($val, 'email:')!==false){
+                    // $email = $val;
+                    $email = explode(":", $val);
+                      // echo "<b>" . $email[1] . "</b><br>";
+                    unset($err[$key]);
+                  
+                  }
+                }
+
+                if ($email[1] != ""){
+                    // echo "<b>" . $email[1] . "</b><br>";
+                    $newpass = true;
+                  }else{
+                    $newpass = false;
+                    // if(($delete_key = array_search("email:", $err)) !== false)
+                    // {
+                    //     unset($err[$delete_key]);
+                    // }
+                  }
                 
-              ?>
-       </b></div>
-      </hgroup>
-      <form action="index-session.php" method="POST">
-      <div class="group">
-        <input type="text" name="login" autocomplete='' class="used" value="<?php echo $login;?>"><span class="highlight"></span><span class="bar"></span>
-        <label>Логин</label>
-      </div>
-      <div class="group">
-        <input type="password" name="passw" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
-        <label>Пароль</label>
-      </div>     
-     
-      <button  class="button buttonBlue" type="submit" value="Войти">Вход
-        <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
-      </button> 
-     
-        <?php if($newpass){ ?>
-        <!-- <button type="button" class="btn btn-link btn-block" onclick="sendNewPass();" >ПОЛУЧИТЬ НОВЫЙ ПАРОЛЬ</button> -->
-        <a href="#" class="btn-link" tabindex="0" onclick="sendNewPass(this);"></a>
-        <!-- <a href="#" class="btn-link" tabindex="0" onclick="proba(this);"></a> -->
-        
-        <?php } ?>
-      </form>
-
-      <!-- <form action="users/sendNewPass.php" method="POST" id="loginnewpass" style="display:none;"> -->
-        <input type="hidden" name="loginnewpass" id="loginnewpass" value="<?php echo $login; ?>">
-      <!-- </form> -->
-    </div>
-
-    
-
-  </div>
-
-</div>
-
-</div>
-
-
-
-  
-   
-
-
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
-    <script  src="./dist/js/index-form.js?v=<?php echo $indexform; ?> "></script>
-    <script>
-      function proba(e){
-
-        // var clicked = false;
-        console.log('Клик');
-    // return function () {
-      // var s=this;
-      // console.log(e);
-            setTimeout(function (s) {
-              // this.parentNode.removeChild(this);
-              // console.log(e);
-              e.remove();
-            }, 1000);
-       
+                  foreach($err AS $error){
+                    echo "<b>" . $error . "</b><br>";
+                  } 
+                
+                ?>
+        </b></div>
+        </hgroup>
+        <form action="index-session.php" method="POST">
+        <div class="group">
+          <input type="text" name="login" autocomplete='' class="used" value="<?php echo $login;?>"><span class="highlight"></span><span class="bar"></span>
+          <label>Логин</label>
+        </div>
+        <div class="group">
+          <input type="password" name="passw" autocomplete='' class="used"><span class="highlight"></span><span class="bar"></span>
+          <label>Пароль</label>
+        </div>     
       
-    // }
-        
-  }
-    </script>
+        <button  class="button buttonBlue" type="submit" value="Войти">Вход
+          <div class="ripples buttonRipples"><span class="ripplesCircle"></span></div>
+        </button> 
+      
+          <?php if($newpass){ ?>      
+          <a href="#" class="btn-link" tabindex="0" onclick="sendNewPass(this);"></a>
+          <?php } ?>
+        </form>     
+          <input type="hidden" name="loginnewpass" id="loginnewpass" value="<?php echo $login; ?>">     
+      </div> 
+    </div>
+  </div>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+<script  src="./dist/js/index-form.js?v=<?php echo $indexform; ?> "></script> 
 </body>
 </html>

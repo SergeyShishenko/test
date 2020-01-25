@@ -1,5 +1,6 @@
 <?php
 include 'inc/inc-session-start.php'; 
+mysqli_close($dbconn);  
 include 'inc/inc-version-css-js.php'; 
 include 'inc/inc-func.php'; 
 // подключение inc-файлов
