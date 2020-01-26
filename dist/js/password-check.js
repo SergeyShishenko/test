@@ -76,7 +76,7 @@ function changepass(){
     return matches ? decodeURIComponent(matches[1]) : undefined;
   }
 
-  function emailaccess(){
+  function emailaccess0(){
     // let email = document.querySelector("#activate");
     // email.innerHTML = 'Вам отправлено письмо со ссылкой для подтверждения!';
     // alert(getCookie("login"));
@@ -85,7 +85,7 @@ function changepass(){
     '&Email=' + document.getElementById('email-check').value;
     // console.log(body);
     request.open('POST','users/sendactivationmail.php',true);
-    request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+     request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     request.addEventListener('readystatechange', function() {
       if ((request.readyState==4) && (request.status==200)) {
         var w = document.getElementById('activate');
@@ -93,6 +93,27 @@ function changepass(){
       }
     });
    request.send(body);
+  }
+  function emailaccess(){   
+    var body = 'login=' +  getCookie ( "login" ) +
+    '&Email=' + document.getElementById('email-check').value;
+    // console.log("ajax "+body);
+   jQuery.ajax({
+    type: "GET", // HTTP метод  POST или GET
+    url: "users/sendactivationmail.php", //url-адрес, по которому будет отправлен запрос
+    dataType:"text", // Тип данных
+    data:body, //post переменные
+    success:function(response){
+    // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+    console.log(response);
+    $('#activate').text(response);    
+    },
+    error:function (xhr, ajaxOptions, thrownError){
+        //выводим ошибку
+        console.log(thrownError);
+    }
+});
+
   }
   // function sendNewPass(){
   //   // let email = document.querySelector("#activate");
