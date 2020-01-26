@@ -9,98 +9,107 @@
         </div>
     </footer> 
 <!-- .modal -->
-<!-- Генерация -->
-<div class="modal fade" id="GENModal" tabindex="-1" role="dialog" aria-labelledby="GENModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" style="margin-top: -2px !important;">×</button>
-                    <h4 class="modal-title" id="GENModalLabel">Генерация титульных листов</h4>
-                </div>
-                <div class="modal-body">                  
-                    <a href="#up" id="down" class="go_to btn btn-default badge" title="ВНИЗ" style="margin-left: 15px;">
-                    <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
-                    </a>                
-                
-                    <!-- <form id="frm">                         -->
-                        <input type="hidden" id="tbl" value="">
-                        <input type="hidden" id="field" value="">
-                        <input type="hidden" id="fieldid" value="">
-                        <input type="hidden" id="id" value="">
-                        <input type="hidden" id="action" value="">                       
-                        <div class="form-group ">                        
-                            <ul class="list-tbl">        
-                            </ul>
-                            <div id="loading1" class="center">Загрузка...<div class="center"></div>
-                        </div> 
-                        <div class="row">               
-                            <div id="drop-files" ondragover="return false">
-                                <!-- <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo; или &laquo;Приложение КБ.xlsx&raquo; сюда</p> -->
-                                <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo;  сюда</p>
-                                <!-- <form > -->
-                                <input type="file" id="uploadbtn" multiple  >
-                                <!-- </form> -->
-                            </div>
-                            <div id="out_CNC"></div>
-                            <input type="button" value="Печать CNC" onclick="PrintElem('#out_CNC')" />
-                            <input type="button" value="Очистить" onclick="Reset('#out_CNC')" />
+<?php 
+    if($shablonyClass=='class="active"'){
+?>
+<!-- Генерация комплектов документов-->
+    <div class="modal fade" id="GENModal" tabindex="-1" role="dialog" aria-labelledby="GENModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" style="margin-top: -2px !important;">×</button>
+                        <h4 class="modal-title" id="GENModalLabel">Генерация титульных листов</h4>
+                    </div>
+                    <div class="modal-body">                  
+                        <a href="#up" id="down" class="go_to btn btn-default badge" title="ВНИЗ" style="margin-left: 15px;">
+                        <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+                        </a>                
+                    
+                        <!-- <form id="frm">                         -->
+                            <input type="hidden" id="tbl" value="">
+                            <input type="hidden" id="field" value="">
+                            <input type="hidden" id="fieldid" value="">
+                            <input type="hidden" id="id" value="">
+                            <input type="hidden" id="action" value="">                       
+                            <div class="form-group ">                        
+                                <ul class="list-tbl">        
+                                </ul>
+                                <div id="loading1" class="center">Загрузка...<div class="center"></div>
+                            </div> 
+                            <div class="row">               
+                                <div id="drop-files" ondragover="return false">
+                                    <!-- <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo; или &laquo;Приложение КБ.xlsx&raquo; сюда</p> -->
+                                    <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo;  сюда</p>
+                                    <!-- <form > -->
+                                    <input type="file" id="uploadbtn" multiple  >
+                                    <!-- </form> -->
+                                </div>
+                                <div id="out_CNC"></div>
+                                <input type="button" value="Печать CNC" onclick="PrintElem('#out_CNC')" />
+                                <input type="button" value="Очистить" onclick="Reset('#out_CNC')" />
 
 
-                            <? include 'vpi/inc-list-csv.php'; ?>
-                            
-                            <!-- /table-saved-files -->
+                                <? include 'vpi/inc-list-csv.php'; ?>
+                                
+                                <!-- /table-saved-files -->
 
-                            <!-- Область предпросмотра -->
-                            <div id="uploaded-holder"> 
-                                <div id="dropped-files">
-                                    <!-- Кнопки загрузить и удалить, а также количество файлов -->
-                                    <div id="upload-button" class="note">
-                                        <div class="center note">
-                                            <span>0 Файлов</span>
-                                            <a href="javascript:void(0)" class="upload note">Загрузить</a>
-                                            <a href="javascript:void(0)" class="delete note">Удалить</a>
-                                            <!-- <a href="javascript:void(0)" class="count note">Посчитать</a> -->
-                                            <!-- Прогресс бар загрузки -->
-                                            <div id="loading">
-                                                <div id="loading-bar">
-                                                    <div class="loading-color"></div>
+                                <!-- Область предпросмотра -->
+                                <div id="uploaded-holder"> 
+                                    <div id="dropped-files">
+                                        <!-- Кнопки загрузить и удалить, а также количество файлов -->
+                                        <div id="upload-button" class="note">
+                                            <div class="center note">
+                                                <span>0 Файлов</span>
+                                                <a href="javascript:void(0)" class="upload note">Загрузить</a>
+                                                <a href="javascript:void(0)" class="delete note">Удалить</a>
+                                                <!-- <a href="javascript:void(0)" class="count note">Посчитать</a> -->
+                                                <!-- Прогресс бар загрузки -->
+                                                <div id="loading">
+                                                    <div id="loading-bar">
+                                                        <div class="loading-color"></div>
+                                                    </div>
+                                                    <div id="loading-content"></div>
                                                 </div>
-                                                <div id="loading-content"></div>
                                             </div>
-                                        </div>
-                                    </div>  
+                                        </div>  
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- Список загруженных файлов -->
-                            <div id="file-name-holder">                      
-                                <div id="uploaded-files">
-                                    <!-- <h1>Загруженные данные:</h1> -->
+                                <!-- Список загруженных файлов -->
+                                <div id="file-name-holder">                      
+                                    <div id="uploaded-files">
+                                        <!-- <h1>Загруженные данные:</h1> -->
+                                    </div>
                                 </div>
-                            </div>
-            
-                        </div>  
-                    <!-- </form>                -->
-                </div> 
-            </div>
-            <div class="modal-footer">
-                <!-- <a href="#openModal">Открыть модальное окно</a> -->
-                <!-- class="close" data-dismiss="modal" -->
-                <a href="#down" id="up" class="go_to btn btn-default badge" title="ВВЕРХ" style="margin-left: 15px;">
-                <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
-                </a>
-                <!-- <a href="#" class="btn btn-success"   id="CreateSubmit">Создать</a> -->
-                <a href="#" class="btn btn-danger"   id="DelSubmit">Очистить</a>
-                <a href="#" class="btn btn-default elm" data-dismiss="modal">Закрыть</a>
-                <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="ChangeSubmit">Сохранить изменения</a> -->
-                <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="AddSubmit">Добавить</a> -->
+                
+                            </div>  
+                        <!-- </form>                -->
+                    </div> 
+                </div>
+                <div class="modal-footer">
+                    <!-- <a href="#openModal">Открыть модальное окно</a> -->
+                    <!-- class="close" data-dismiss="modal" -->
+                    <a href="#down" id="up" class="go_to btn btn-default badge" title="ВВЕРХ" style="margin-left: 15px;">
+                    <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                    </a>
+                    <!-- <a href="#" class="btn btn-success"   id="CreateSubmit">Создать</a> -->
+                    <a href="#" class="btn btn-danger"   id="DelSubmit">Очистить</a>
+                    <a href="#" class="btn btn-default elm" data-dismiss="modal">Закрыть</a>
+                    <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="ChangeSubmit">Сохранить изменения</a> -->
+                    <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="AddSubmit">Добавить</a> -->
 
+                </div>
             </div>
         </div>
     </div>
-</div>
- <!-- /.modal -->
-
- <!-- image-gallery -->
+<!-- /Генерация комплектов документов -->
+<?php 
+    }
+?>
+ 
+ <?php 
+    if($item_profile_directory_Class == 'active'){
+?>
+ <!-- image-gallery-->
         <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="image-gallery">
             <div class=" modal-dialog modal-dialog-gallery  modal-lg">
                 <div class="modal-content">
@@ -131,7 +140,10 @@
             </div>
         </div>
  <!--/image-gallery  -->
-
+ <?php 
+    }
+?>
+<!-- /.modal -->
  <? if (!isset($notFrame)) {echo '<iframe src="index.php" width="100%" height="600" id="iframe_1"  style="display: none"  ></iframe>'; } ?>
 
     <!-- <iframe src="index.php" width="100%" height="600" id="iframe_1"  style="display: none"  ></iframe> -->
@@ -147,9 +159,12 @@
     <!-- Генерация -->
     <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  -->
     <!-- <script src="./dist/js/shortcut.js"></script> -->
+    <!-- <?php echo $role; ?> -->
     <script src="./dist/js/drop.js?v='<?php echo $dropVersion; ?>'"></script>  
     <script src="./dist/js/selectcell.js"></script>
-    <script src="./dist/js/password-check.js"></script>
+    <?php if($role !="guest"){ ?>
+        <script src="./dist/js/password-check.js?<?php echo $role; ?>"></script>
+    <?php } ?>
 	<script>
     window.bLazy = new Blazy({
         //container: \'.container\',

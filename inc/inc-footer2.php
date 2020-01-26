@@ -29,7 +29,9 @@
     <script src="./dist/js/drop.js"></script>  
     <script src="./dist/js/selectcell.js"></script>
     <script src="./dist/js/calc-bloka-pitaniya.js"></script>
-    <script src="./dist/js/password-check.js"></script>
+    <?php if($role !="guest"){ ?>
+    <script src="./dist/js/password-check.js?<?php echo $role; ?>"></script>
+    <?php } ?>
     <script>
     window.bLazy = new Blazy({
         //container: \'.container\',

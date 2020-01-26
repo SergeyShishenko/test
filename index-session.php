@@ -172,13 +172,13 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
                 ?>
         </b></div>
         </hgroup>
-        <form action="index-session.php" method="POST" autocomplete="false">
+        <form action="index-session.php" method="POST" >
         <div class="group">
-          <input type="text" name="login" autocomplete='off' class="used" value="<?php echo $login;?>"><span class="highlight"></span><span class="bar"></span>
+          <input type="text" name="login"  class="used" value="<?php echo $login;?>"><span class="highlight"></span><span class="bar"></span>
           <label>Логин</label>
         </div>
         <div class="group">
-          <input type="password" name="passw" autocomplete="new-password" class="used"><span class="highlight"></span><span class="bar"></span>
+          <input type="password" name="passw"  class="used"><span class="highlight"></span><span class="bar"></span>
           <label>Пароль</label>
         </div>     
       
@@ -189,10 +189,7 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
           <?php if($newpass){ ?>      
           <a href="#" class="btn-link" tabindex="0" onclick="sendNewPass(this);"></a>
           <?php } ?>
-          <div style="display:none">
-              <input type="text">
-              <input type="password">
-          </div>
+         
         </form>     
           <input type="hidden" name="loginnewpass" id="loginnewpass" value="<?php echo $login; ?>">     
       </div> 

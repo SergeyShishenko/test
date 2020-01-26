@@ -5190,7 +5190,9 @@ include 'inc/inc-header-send-modal.php';
     <script src="./dist/js/application.js"></script> 
     <script src="./dist/js/script.js?v=<?php echo $scriptVersion; ?>"></script>   
     <script src="./dist/js/floating.js?v=<?php echo $floatingVersion; ?>"></script> 
-    <script src="./dist/js/password-check.js"></script>
+    <?php if($role !="guest"){ ?>
+        <script src="./dist/js/password-check.js?<?php echo $role; ?>"></script>
+    <?php } ?>
    
     <!-- <script src="./dist/js/jquery.color.js"></script>  -->
     <!-- <script>
