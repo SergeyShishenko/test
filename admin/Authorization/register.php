@@ -23,7 +23,9 @@ if(isset($_POST['submit'])){
 
     # Если нет ошибок, то добавляем в БД нового пользователя
     // if(count($err) == 0){
-    if (in_array("Пользователя с таким логином не существует в базе данных", $err) && count($err) == 1 || count($err) == 0) {
+    // if (in_array("Пользователя с таким логином не существует в базе данных", $err) && count($err) == 1 || count($err) == 0) {
+    if (in_array("Пользователя с таким логином не существует в базе данных", $err) && count($err) == 2) {
+   
     
         
         $login = $_POST['login'];        
@@ -33,9 +35,10 @@ if(isset($_POST['submit'])){
         $password = sha1(trim($_POST['password']).$salt);       
 
        
-        if (mysqli_query($dbconn,"INSERT INTO `sofia_users` (`user_sofia_id`, `user_login`, `user_password`, `user_hash`, `user_mail`, `user_salt`, `user_sess_id`, `user_sess_date_start`) VALUES (NULL, '$login', '$password', NULL, NULL, '$salt', NULL, CURRENT_TIMESTAMP)")) {
+        if (mysqli_query($dbconn,"INSERT INTO `sofia_users` (`user_login`, `user_password`, `user_salt`, `user_sess_date_start`,`user_activation`) VALUES ('$login', '$password','$salt', CURRENT_TIMESTAMP, '-')")) {
             // header("Location: login.php"); exit();
             print "<b>Вы успешно зарегистрировались!</b><br>";
+            echo "Логин:<b> {$login}</b><br> Пароль:<b> {$_POST['password']}</b><br> Соль:<b> {$salt}</b><br>";
             print "<a href='register.php'>Вернуться</a><br>";
             exit();
         }
@@ -55,47 +58,7 @@ if(isset($_POST['submit'])){
 
 }
 
-// function check_login($login,$dbconn,$err){
-//      # проверям логин
-//      if(!preg_match("/^[a-zA-Z0-9_-]+$/",$login)){ 
-//          $err[] = "Логин может состоять только из букв английского алфавита и цифр"; 
-//      } 
- 
-//      if(strlen($login) < 3 or strlen($login) > 40){ 
-//          $err[] = "Логин должен быть не меньше 3-х символов и не больше 40"; 
-//      }     
- 
-//      # проверяем, не сущестует ли пользователя с таким именем
-//     $escape_string_login=mysqli_real_escape_string($dbconn, $login);
- 
-//     $query = mysqli_query($dbconn,"SELECT COUNT(user_sofia_id) AS count FROM sofia_users WHERE user_login='$escape_string_login'");
-//     $data = mysqli_fetch_assoc($query); 
-//     $count = $data['count']; 
- 
-//      // print "<b>count:</b> $count <br>";
-//      // var_dump($data);
-//      // var_dump($count);
-//      // var_dump(!is_null($count));
-//      // exit();
-//      if($count > 0){ 
-//          $err[] = "Пользователь с таким логином уже существует в базе данных"; 
-//      }
 
-//  return $err;
-// }
-// function check_pass($pass,$dbconn,$err){
-//      # проверям логин
-//      if(!preg_match("/^[a-zA-Z0-9_-]+$/",$pass)){ 
-//          $err[] = "Пароль может состоять только из букв английского алфавита и цифр"; 
-//      } 
- 
-//      if(strlen($pass) < 6 or strlen($pass) > 40){ 
-//          $err[] = "Пароль должен быть не меньше 6-х символов и не больше 40"; 
-//      }     
-   
-
-//  return $err;
-// }
 mysqli_close($dbconn);
 ?>
 
@@ -105,19 +68,19 @@ mysqli_close($dbconn);
 
 <form method="POST">
 
-Логин <input id="login" name="login" type="text" value="<?php echo $_POST['login'] ?>"><br>
+    Логин <input id="login" name="login" type="text" value="<?php echo $_POST['login'] ?>"><br><br>
 
-Пароль <input id="password" name="password" type="password" autocomplete="new-password"><br>
+    Пароль <input id="password" name="password" type="password" autocomplete="new-password"><br><br>
 
-<input name="submit" type="submit" value="Зарегистрироваться"><br>
+    <input name="submit" type="submit" value="Зарегистрироваться"><br>
 </form>
 
 <hr>
 
-Сгенерированный пароль <input id="generatepass" name="generatepass" type="text" value="<?php #echo generateCode(6); ?>"><br>
-<input name="generatesubmit" type="submit" value="Сгенерировать пароль" onClick="generateCode()"><br>
-<input name="changepass" type="submit" value="Изменить пароль" onClick="changepass()"><br>
-<input name="readlogin" type="submit" value="Данные Логина" onClick="readlogin()"><br>
+Сгенерированный пароль <input id="generatepass" name="generatepass" readonly type="text" value="<?php #echo generateCode(6); ?>" ><br><br>
+<input name="generatesubmit" type="submit" value="Сгенерировать пароль" onClick="generateCode()" ><br><br>
+<input name="changepass" type="submit" value="Изменить пароль" onClick="changepass()"><br><br>
+<input name="readlogin" type="submit" value="Данные Логина" onClick="readlogin()"><br><br>
 <p id="changepass"></p>
 
 
@@ -131,7 +94,11 @@ function generateCode(){
   request.addEventListener('readystatechange', function() {
     if ((request.readyState==4) && (request.status==200)) {
       var welcome = document.getElementById('generatepass');
+      var welcome2 = document.getElementById('password');
       welcome.value = request.responseText;
+      welcome.readOnly = true;
+      welcome.disabled = true;
+      welcome2.value = request.responseText;
     }
   });
  request.send();

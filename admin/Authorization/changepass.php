@@ -23,7 +23,7 @@ if(isset($_POST['login']) && isset($_POST['chpass'])){
                 if (mysqli_query($dbconn,"UPDATE `sofia_users` SET `user_password` = '$password', `user_salt` = '$salt' WHERE `user_login` = '$login'")) {
                     // header("Location: login.php"); exit();
                     echo "<b>Пароль изменен!</b><br>";
-                    echo "<b>Соль</b>{$salt}<br>";
+                    echo "Логин:<b> {$login}</b><br> Пароль:<b> {$_POST['chpass']}</b><br> Соль:<b> {$salt}</b><br>";
                    
                     exit();
                 }
@@ -51,46 +51,5 @@ if(isset($_POST['login']) && isset($_POST['chpass'])){
 }
 
 
-// function check_login($login,$dbconn,$err){
-//     # проверям логин
-//     if(!preg_match("/^[a-zA-Z0-9_-]+$/",$login)){ 
-//         $err[] = "Логин может состоять только из букв английского алфавита и цифр"; 
-//     } 
-
-//     if(strlen($login) < 3 or strlen($login) > 40){ 
-//         $err[] = "Логин должен быть не меньше 3-х символов и не больше 40"; 
-//     }     
-
-//     # проверяем, не сущестует ли пользователя с таким именем
-//    $escape_string_login=mysqli_real_escape_string($dbconn, $login);
-
-//    $query = mysqli_query($dbconn,"SELECT COUNT(user_sofia_id) AS count FROM sofia_users WHERE user_login='$escape_string_login'");
-//    $data = mysqli_fetch_assoc($query); 
-//    $count = $data['count']; 
-
-//     // print "<b>count:</b> $count <br>";
-//     // var_dump($data);
-//     // var_dump($count);
-//     // var_dump(!is_null($count));
-//     // exit();
-//     if($count > 0){ 
-//         $err[] = "Пользователь с таким логином существует в базе данных"; 
-//     }
-
-// return $err;
-// }
-// function check_pass($pass,$dbconn,$err){
-//     # проверям логин
-//     if(!preg_match("/^[a-zA-Z0-9_-]+$/",$pass)){ 
-//         $err[] = "Пароль может состоять только из букв английского алфавита и цифр"; 
-//     } 
-
-//     if(strlen($pass) < 6 or strlen($pass) > 40){ 
-//         $err[] = "Пароль должен быть не меньше 6-х символов и не больше 40"; 
-//     }     
-  
-
-// return $err;
-// }
 mysqli_close($dbconn);
 ?>
