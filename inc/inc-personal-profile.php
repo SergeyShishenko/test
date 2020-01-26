@@ -123,10 +123,16 @@
                         <span class="glyphicon glyphicon-info-sign <?php echo $class_info_alert;?>" ><span> Информация</span></span>
                     </button>
                     <div class="collapse" id="collapseInfo">
+
+                            <div class="divider"></div>                            
+                                <?php if (!$emailaccess){?>
+
+                                <div class="card card-body">
+                                    Зарегистрируйте свою электронную почту, и Вам будет доступна функция<br><b>«Восстановление пароля»</b> !                                
+                                </div>
+
+                                <?php }?>
                             <div class="divider"></div>
-                            <div class="card card-body">
-                                Появилась новая функция1!                                
-                            </div>
                             <!-- <div class="gnc-notifications-item__menu ">
                                 <div class="gnc-notifications-item__menu-kebab ">
                                     <svg width="24" height="24"><path d="M0 0h24v24H0z" fill="none">                                        
@@ -137,16 +143,16 @@
                                     <div class="gnc-notifications-item__popup-option "><span>Отметить прочитанным</span></div>
                                 </div>
                             </div> -->
-                            <div class="divider"></div>
+                           <!--  <div class="divider"></div>
                             <div class="card card-body">
                                 Появилась новая функция2!
-                            </div>
+                            </div> -->
 <!--  -->
 <!-- <div class="gnc-notifications-item-wrapper service-ugc" data-id="ee5068cd-d0f5268b-f8781ab2-21cfe524"><div class="gnc-notifications-item gnc-notifications-item_is-viewed"><a class="gnc-notifications-item__link" href="https://yandex.ru/ugcpub/cabinet?utm_content=org_rating_followup&amp;ugc_id=bell_1567939426747_215752&amp;main_tab=reviews&amp;reviews_tab=org&amp;boostId=%2Fsprav%2F61216934718&amp;editBoostId=%2Fsprav%2F61216934718&amp;utm_source=bell" rel="noopener noreferrer" target="_blank"><div class="gnc-notifications-item__inner gnc-notifications-item__inner_desktop"><div class="gnc-notifications-item__avatar"><div class="gnc-avatar gnc-avatar__service-circle" style="position: relative; transform: none;"><img class="gnc-service-logo" src="https://avatars.mds.yandex.net/get-ya_notification_center/469573/ugc_new/svg"></div></div><div class="gnc-notifications-item__content"><div class="gnc-notification-message">Вы поставили «<span class="gnc-notification-message__span">Станция МЦК Окружная</span>» оценку «<span class="gnc-notification-message__span">5</span>». Расскажите, пожалуйста, почему?</div><div class="gnc-notifications-item__misc"><span class="relative-date" title="08.09.2019 14:59">08.09.2019 14:59</span></div></div><div class="gnc-notifications-item__preview"><div class="gnc-notifications-item__preview-image" style="background-image: url(&quot;https://avatars.mds.yandex.net/get-altay/492546/2a0000015f13921553f336549dffb18444e9/L&quot;);"></div></div></div></a></div></div> -->
 
 <!--  -->
 
-                            <div class="divider"></div>
+                            
                         </div>
                     </li>
                     
