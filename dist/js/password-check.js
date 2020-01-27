@@ -76,24 +76,26 @@ function changepass(){
     return matches ? decodeURIComponent(matches[1]) : undefined;
   }
 
-  function emailaccess0(){
-    // let email = document.querySelector("#activate");
-    // email.innerHTML = 'Вам отправлено письмо со ссылкой для подтверждения!';
-    // alert(getCookie("login"));
-    var request = new XMLHttpRequest();   
-    var body = 'login=' +  getCookie ( "login" ) +
-    '&Email=' + document.getElementById('email-check').value;
-    // console.log(body);
-    request.open('POST','users/sendactivationmail.php',true);
-     request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    request.addEventListener('readystatechange', function() {
-      if ((request.readyState==4) && (request.status==200)) {
-        var w = document.getElementById('activate');
-        w.innerHTML = request.responseText;
-      }
-    });
-   request.send(body);
-  }
+  // function emailaccess0(){
+  //   // let email = document.querySelector("#activate");
+  //   // email.innerHTML = 'Вам отправлено письмо со ссылкой для подтверждения!';
+  //   // alert(getCookie("login"));
+  //   var request = new XMLHttpRequest();   
+  //   var body = 'login=' +  getCookie ( "login" ) +
+  //   '&Email=' + document.getElementById('email-check').value;
+  //   // console.log(body);
+  //   request.open('POST','users/sendactivationmail.php',true);
+  //    request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  //   request.addEventListener('readystatechange', function() {
+  //     if ((request.readyState==4) && (request.status==200)) {
+  //       var w = document.getElementById('activate');
+  //       w.innerHTML = request.responseText;
+  //     }
+  //   });
+  //  request.send(body);
+  // }
+
+
   function emailaccess(){   
     var body = 'login=' +  getCookie ( "login" ) +
     '&Email=' + document.getElementById('email-check').value;
@@ -133,6 +135,23 @@ function changepass(){
   //   });
   //  request.send(body);
   // }
+
+  function checkemailaccess() {
+    
+  
+    let timerId = setInterval(function() {
+      let access= false;
+      // проверка базы
+      // users\checkemailaccess.php
+     
+      if (access) {
+        clearInterval(timerId);
+      }
+      
+    }, 15000);
+  }
+  
+  
 
 
 
