@@ -10,15 +10,15 @@ if(isset($_POST['login']) && isset($_POST['Email'])){
     {
         $data = mysqli_fetch_assoc($res);
         if ($data['user_status']==1 && $data['user_mail']==$mailadres){
-         echo true;
+         echo 1;
         }else{
-            echo false; 
+            echo 0; 
         }
 
     }else{
         printf("Ошибка: %s\n", mysqli_error($dbconn));
     exit();
     } 
-    }
+    
 }
 ?>

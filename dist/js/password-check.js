@@ -99,16 +99,18 @@ function changepass(){
   function emailaccess(){   
     var body = 'login=' +  getCookie ( "login" ) +
     '&Email=' + document.getElementById('email-check').value;
-    // console.log("ajax "+body);
+    console.log("ajax "+body);
    jQuery.ajax({
-    type: "GET", // HTTP метод  POST или GET
+    type: "POST", // HTTP метод  POST или GET
     url: "users/sendactivationmail.php", //url-адрес, по которому будет отправлен запрос
     dataType:"text", // Тип данных
     data:body, //post переменные
     success:function(response){
     // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
     console.log(response);
-    $('#activate').text(response);    
+    $('#activate').text(response);   
+    // запуск проверки активации 
+    checkemailaccess() 
     },
     error:function (xhr, ajaxOptions, thrownError){
         //выводим ошибку
@@ -140,15 +142,41 @@ function changepass(){
     
   
     let timerId = setInterval(function() {
-      let access= false;
+      // let access= false;
+      var body = 'login=' +  getCookie("login") + 
+      '&Email=' + document.getElementById('email-check').value;
       // проверка базы
       // users\checkemailaccess.php
+      jQuery.ajax({
+        type: "POST", // HTTP метод  POST или GET
+        url: "users/checkemailaccess.php", //url-адрес, по которому будет отправлен запрос
+        dataType:"text", // Тип данных
+        data:body, //post переменные
+        success:function(response){
+        // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+        console.log(response);
+
+        // $('#activate').text(response); 
+        if (response==1) {
+          clearInterval(timerId);
+        }
+        
+        
+        },
+        error:function (xhr, ajaxOptions, thrownError){
+            //выводим ошибку
+            console.log(thrownError);
+        }
+    });
+    
+
+
      
-      if (access) {
-        clearInterval(timerId);
-      }
+      // if (access) {
+      //   clearInterval(timerId);
+      // }
       
-    }, 15000);
+    }, 5000);
   }
   
   
