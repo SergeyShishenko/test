@@ -61,7 +61,8 @@ if( $mail->send() ){
 	echo 'Вам отправлено письмо со ссылкой для подтверждения!';
 
 }else{
-	echo '<p style="color: red; padding: 6px;">Ошибка!</p>';
-	echo '<p style="color: red;">'.$mail->ErrorInfo.'</p>';
+	// echo '<p style="color: red; padding: 6px;">Ошибка!</p>';
+	// echo '<p style="color: red;">'.$mail->ErrorInfo.'</p>';
+	echo 'Ошибка! ' . $mail->ErrorInfo;	
 	
 }

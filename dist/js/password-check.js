@@ -1,4 +1,4 @@
-
+// dist\js\password-check.js
 document.addEventListener('DOMContentLoaded', function () {
     // alert("DOMContentLoaded");
     var pass1 = document.querySelector('#password'),
@@ -78,116 +78,80 @@ function changepass(){
     return matches ? decodeURIComponent(matches[1]) : undefined;
   }
 
-  // function emailaccess0(){
-  //   // let email = document.querySelector("#activate");
-  //   // email.innerHTML = 'Вам отправлено письмо со ссылкой для подтверждения!';
-  //   // alert(getCookie("login"));
-  //   var request = new XMLHttpRequest();   
-  //   var body = 'login=' +  getCookie ( "login" ) +
-  //   '&Email=' + document.getElementById('email-check').value;
-  //   // console.log(body);
-  //   request.open('POST','users/sendactivationmail.php',true);
-  //    request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  //   request.addEventListener('readystatechange', function() {
-  //     if ((request.readyState==4) && (request.status==200)) {
-  //       var w = document.getElementById('activate');
-  //       w.innerHTML = request.responseText;
-  //     }
-  //   });
-  //  request.send(body);
-  // }
 
-
-  function emailaccess(){   
-    var body = 'login=' +  getCookie ( "login" ) +
-    '&Email=' + document.getElementById('email-check').value;
-    console.log("ajax "+body);
-   jQuery.ajax({
-    type: "POST", // HTTP метод  POST или GET
-    url: "users/sendactivationmail.php", //url-адрес, по которому будет отправлен запрос
-    dataType:"text", // Тип данных
-    data:body, //post переменные
-    success:function(response){
-    // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-    console.log(response);
-    $('#activate').text(response);   
-    // запуск проверки активации 
-    checkemailaccess() 
-    },
-    error:function (xhr, ajaxOptions, thrownError){
-        //выводим ошибку
-        console.log(thrownError);
-    }
-});
-
-  }
-  // function sendNewPass(){
-  //   // let email = document.querySelector("#activate");
-  //   // email.innerHTML = 'Вам отправлено письмо со ссылкой для подтверждения!';
-  //   // alert(getCookie("login"));
-  //   var request = new XMLHttpRequest();   
-  //   var body = 'login=' +  document.getElementById('loginnewpass').value;
-  //   // alert(body);
-  //    console.log(body);
-  //   request.open('POST','users/sendNewPass.php',true);
-  //   request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  //   request.addEventListener('readystatechange', function() {
-  //     if ((request.readyState==4) && (request.status==200)) {
-  //       var w = document.getElementById('say');
-  //       w.innerHTML = request.responseText;
-  //     }
-  //   });
-  //  request.send(body);
-  // }
-
-  function checkemailaccess() {
-    
-  
-    let timerId = setInterval(function() {
-      // let access= false;
-      var body = 'login=' +  getCookie("login") + 
-      '&Email=' + document.getElementById('email-check').value;
-      // проверка базы
-      // users\checkemailaccess.php
+  function emailaccess(){  
+    $("#activationmail").show();
+    let login = getCookie ( "login" ); 
+    let Email = document.getElementById('email-check').value; 
+    let body = 'login=' +  login + '&Email=' + Email;
+    // console.log("ajax "+body);
       jQuery.ajax({
         type: "POST", // HTTP метод  POST или GET
-        url: "users/checkemailaccess.php", //url-адрес, по которому будет отправлен запрос
+        url: "users/sendactivationmail.php", //url-адрес, по которому будет отправлен запрос
         dataType:"text", // Тип данных
         data:body, //post переменные
         success:function(response){
         // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-        console.log(response);
-
-        // $('#activate').text(response); 
-        if (response==1) {
-          clearInterval(timerId);
-        }
-        // document.getElementById("activationmail").hidden=true;
-   
-// label.remove();
-    
-        // $("#emailedit").show();
-        $("#activationmail").hide();
-        $("#question").hide();
-        $("#emailedit").show();
-        document.getElementById("email-check").readOnly = true;
-        
+        // console.log(response);
+        $('#activate').text(response);   
+        // запуск проверки активации 
+        checkemailaccess(login,Email); 
         },
         error:function (xhr, ajaxOptions, thrownError){
             //выводим ошибку
             console.log(thrownError);
         }
     });
-    
 
-
-     
-      // if (access) {
-      //   clearInterval(timerId);
-      // }
-      
-    }, 5000);
   }
+ 
+
+  function checkemailaccess(login,Email) {    
+  
+    let timerId = setInterval(function() {
+          // let access= false;
+          let body = 'login=' +  login +  '&Email=' + Email;
+
+          // проверка базы
+          // users\checkemailaccess.php
+          jQuery.ajax({
+                type: "POST", // HTTP метод  POST или GET
+                url: "users/checkemailaccess.php", //url-адрес, по которому будет отправлен запрос
+                dataType:"text", // Тип данных
+                data:body, //post переменные
+                success:function(response){
+                // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+                // console.log(response);
+
+                // $('#activate').text(response); 
+                if (response==1) {
+                  clearInterval(timerId);
+                $("#activationmail").hide();
+                $("#question").hide();
+                $("#emailedit").show();
+                document.getElementById("email-check").readOnly = true;
+                }else if(response==2){
+                  clearInterval(timerId);
+                }
+            
+                },
+                error:function (xhr, ajaxOptions, thrownError){
+                    //выводим ошибку
+                    console.log(thrownError);
+                }
+            });
+
+          
+        }, 5000);
+  }
+
+  let login = getCookie ( "login" ); 
+  let Email = document.getElementById('email-check').value; 
+  // console.log(Email);
+  if (Email!="" && typeof Email !== 'undefined'){
+    checkemailaccess(login,Email);
+  }
+  
   
   
 

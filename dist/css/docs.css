@@ -2528,7 +2528,7 @@ input[type=email] + label::after {
 	/* content: "\1F582"; */
 	content: "?";
 }
-input[type=email].edit + label::after {
+input[type=email].edit + label::after,label#emailedit::after {
   color:darkred;
   content: "\1F589";
   font-size: 18px;

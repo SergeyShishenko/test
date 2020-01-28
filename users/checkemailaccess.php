@@ -20,5 +20,8 @@ if(isset($_POST['login']) && isset($_POST['Email'])){
     exit();
     } 
     
+}else{
+    echo 2; 
 }
+
 ?>
