@@ -42,8 +42,10 @@ let divP = document.createElement('div');
 divP.className = "form-group";
 divP.append(div); 
 document.querySelector("#emailaccess").append(divP); 
-let label = document.querySelector("#emailedit");
-label.remove();
+// let label = document.querySelector("#emailedit");
+// label.remove();
+// label.style.display = "none";
+$("#emailedit").hide();
 // tooltip fade left in
 let tooltip = document.getElementsByClassName( "tooltip fade left in");
 for( let i = 0; i < tooltip.length; i++){ // проходим циклом по всем элементам массивоподобного объекта
@@ -160,7 +162,15 @@ function changepass(){
         if (response==1) {
           clearInterval(timerId);
         }
-        
+        // document.getElementById("activationmail").hidden=true;
+   
+// label.remove();
+    
+        // $("#emailedit").show();
+        $("#activationmail").hide();
+        $("#question").hide();
+        $("#emailedit").show();
+        document.getElementById("email-check").readOnly = true;
         
         },
         error:function (xhr, ajaxOptions, thrownError){

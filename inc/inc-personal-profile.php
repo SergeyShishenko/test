@@ -91,7 +91,7 @@
                                             
                                             <input type="email" class="form-control " id="email-check" aria-describedby="email-check" style="display:inline-block;"  required value="<?php echo $email?>">
                                             <!-- <input type="email" class="form-control disable" id="email-check" aria-describedby="email-check" style="display:inline-block;"  readonly  value="email@example.com"> -->
-                                            <label for="email-check" class="tool" data-toggle="tooltip" data-placement="left" title="Восстановление пароля"></label>  
+                                            <label for="email-check" class="tool" data-toggle="tooltip" data-placement="left" title="Восстановление пароля" id="question"></label>  
                                             
                                             <!-- <div class="tool" data-toggle="tooltip" data-placement="left" title="«Восстановление пароля»"><i class="fa fa-question-circle" aria-hidden="true" ></i></div> -->
                                             <!-- <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>                                        -->
@@ -99,7 +99,7 @@
 
                                     
                                         
-                                        <div class="form-group">
+                                        <div class="form-group" id="activationmail">
                                             <div >
                                                 <button type="submit" class="btn btn-success " id="subemail" onclick='emailaccess();' ><b>Подтвердить</b></button> 
                                                 <div id="activate" class="activationmail">&nbsp;</div>                                               
