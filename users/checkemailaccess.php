@@ -9,7 +9,7 @@ if(isset($_POST['login']) && isset($_POST['Email'])){
     if(mysqli_num_rows($res) > 0)
     {
         $data = mysqli_fetch_assoc($res);
-        if ($data['user_status']==1 && $data['user_mail']==$mailadres){
+        if ($data['user_status']==1 ){
          echo 1;
         }else{
             echo 0; 
