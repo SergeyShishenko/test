@@ -40,6 +40,7 @@ let div = document.createElement('div');
 div.innerHTML = '<button type="submit" class="btn btn-success " id="subemail"  onclick="emailaccess();"><b>Подтвердить</b></button><div id="activate" class="activationmail">&nbsp;</div>  ' 
 let divP = document.createElement('div');
 divP.className = "form-group";
+divP.id = "activationmail";
 divP.append(div); 
 document.querySelector("#emailaccess").append(divP); 
 // let label = document.querySelector("#emailedit");
@@ -81,6 +82,7 @@ function changepass(){
 
   function emailaccess(){  
     $("#activationmail").show();
+    $("#activate").show();
     let login = getCookie ( "login" ); 
     let Email = document.getElementById('email-check').value; 
     let body = 'login=' +  login + '&Email=' + Email;
@@ -127,6 +129,7 @@ function changepass(){
                 if (response==1) {
                   clearInterval(timerId);
                 $("#activationmail").hide();
+                $("#activate").hide();
                 $("#question").hide();
                 $("#emailedit").show();
                 document.getElementById("email-check").readOnly = true;

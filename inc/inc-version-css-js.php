@@ -12,4 +12,4 @@ $vpijsVersion = 19;
 $cartVersion =13;
 $styleform =2;
 $indexform =4;
-$passworCheck =2;//inc\inc-footer.php, index.php
+$passworCheck =3;//inc\inc-footer.php, index.php
