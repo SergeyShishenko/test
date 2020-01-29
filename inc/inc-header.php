@@ -16,6 +16,11 @@
                     <li <?php echo $detaliClass;?> >
                         <a href="detali-gallery-profili.php">ДЕТАЛИ</a>
                     </li>
+
+                    <li <?php echo $assemblyUnitClass;?> class=" disabled">
+                    <a href="materialy-svet.php"  class="dblstr-menu">СБОРОЧНЫЕ <br>ЕДИНИЦЫ</a>
+                    </li>
+                    
                     <li <?php echo $izdeliyaClass;?> >
                         <a href="izdeliya-bloki-dvernye.php">ИЗДЕЛИЯ</a>
                     </li>
@@ -37,9 +42,9 @@
                     <li <?php echo $materialyClass;?>>
                         <a href="materialy-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ</a>
                     </li>
-                    <li <?php echo $literaturaClass;?> class=" disabled">
+                    <!-- <li <?php// echo $literaturaClass;?> class=" disabled">
                     <a href="literatura-gost.php">ЛИТЕРАТУРА</a>
-                    </li>
+                    </li> -->
                     
                     <!--<li  id="other">
                         <a href="#" title="ЕЩЁ">&#10010;</a >

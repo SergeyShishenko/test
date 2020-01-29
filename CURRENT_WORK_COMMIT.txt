@@ -1,0 +1,6 @@
+Текущий коммит: assemblyUnit start 
+    (Добавление на сайт пункта меню "СБОРОЧНЫЕ ЕДИНИЦЫ")
+    ИЗМЕНЕНИЯ: 
+        sborochnye-edinicy.php
+        inc\inc-header.php
+        inc\inc-menu-value.php

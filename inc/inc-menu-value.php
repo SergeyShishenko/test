@@ -1,5 +1,6 @@
 <?php
 $detaliClass = '';
+$assemblyUnitClass = '';
 $izdeliyaClass = '';
 $shablonyClass = '';
 $yrishablonyClass= '';
