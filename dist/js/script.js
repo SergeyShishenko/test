@@ -1016,7 +1016,7 @@ jQuery(function($){
 $(function(){
 	$('#recall').submit(function(e){
 		e.preventDefault();
-		var data = $(this).serialize();
+		var data = $(this).serialize()+'&login=' +  getCookie ( "login" );
 		$.ajax({
 			url: 'users/mail.php',
 			type: 'POST',

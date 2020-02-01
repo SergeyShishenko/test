@@ -9,7 +9,7 @@ require_once(__ROOT__.'/DATA/TABLES/inc-mail.php'); //
 // $message .= "Телефон: {$_POST['phone']}<br><br>"; // добавляем телефон в текст
 // $message .= "{$_POST['message']}"; // добавляем сообщение в текст
 $message = "{$_POST['message']}"; // добавляем сообщение в текст
-$mailadres ="{$_POST['Email']}";
+$login ="{$_POST['login']}";
 
 // $mail->addAddress('slashd@mail.ru','Ян');// Email получателя
 // $mail->addAddress('nedelko.iv.serg@ya.ru','Иван');// Email получателя
@@ -73,7 +73,7 @@ $mail->SMTPOptions = array(
 // Письмо
 $mail->isHTML(true);
 $mail->Subject = 'Сообщение с сайта 500СТП';
-$mail->Body = $message ."<br>". $mailadres;
+$mail->Body = $message ."<br>Сообщение от <b>". $login . "</b>";
 // . $_SERVER['HTTP_REFERER']."<br>"
 // . "<a href=\"https://500stp.website/shablony-dokumentov-titulnyy-dp.php#list-titulnyy-proektirovshchika\">ЛИСТ ТИТУЛЬНЫЙ ТЗ для проектировщика</a><br>"
 // . "<a href=\"https://500stp.website/shablony-dokumentov-titulnyy-dp.php\">АЛЬБОМ ДИЗАЙН-ПРОЕКТА </a><br>"
