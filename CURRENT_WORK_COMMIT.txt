@@ -3,8 +3,15 @@ assemblyUnit start 01.29.20
     (Добавление на сайт пункта меню "СБОРОЧНЫЕ ЕДИНИЦЫ")
     ИЗМЕНЕНИЯ: 
         sborochnye-edinicy.php
+        detali-gallery-profili.php
+
+        inc\goup\inc-goup-menu-sborochnye-karnizy.php
+        
         inc\inc-header.php
         inc\inc-menu-value.php
         inc\inc-left-side-menu-sborochnye.php 
         inc\inc-menu-value-sborochnye.php
-        inc\goup\inc-goup-menu-sborochnye-karnizy.php
+        inc\inc-footer.php
+        
+        
+        

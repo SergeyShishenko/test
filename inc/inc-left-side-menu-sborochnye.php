@@ -12,7 +12,7 @@ foreach (glob("inc/goup/inc-goup-menu-sborochnye*.php") as $filename) { include 
                     <ul class="list-group">
                     <!-- menu -->
                     <li class="menu">                                
-                        <a href="detali-gallery-profili.php" class="list-group-item '.$item_profile_directory_Class.'">Каталог профилей &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                        <a href="detali-gallery-profili.php" class="list-group-item <?php echo $item_assembly_karnizy_Class;?>">Карнизы</a>
                         <ul class="list-group sub_menu">
                             <li class="menu2">
                                 <a  class="list-group-item sub"  href="detali-gallery-profili.php#NAKLADKI">Накладки</a>
@@ -40,8 +40,8 @@ foreach (glob("inc/goup/inc-goup-menu-sborochnye*.php") as $filename) { include 
                         </ul>
                     </li>
                         <!-- menu -->
-                        <li class="menu">                                
-                            <a href="detali-profili.php" class="list-group-item dblstr-lg dblstr-xl   dblstr-md dblstr-sm '.$item_profili_Class.'">Профили гладкие (устаревшие)</a>
+                        <li class="menu  disabled">                                
+                            <a href="detali-profili.php" class="list-group-item   <?php echo $item_assembly_plintusy_Class;?>">Плинтусы</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2">
                                     <a  class="list-group-item sub"  href="detali-profili.php#profili-nakladki">Накладки</a>
@@ -429,7 +429,7 @@ foreach (glob("inc/goup/inc-goup-menu-sborochnye*.php") as $filename) { include 
                        
                         <!-- menu -->
                         <li class="menu disabled">
-                            <a href="detali-profili-reznye.php" class="list-group-item '.$item_reznye_Class.'">Профили резные</a>
+                            <a href="detali-profili-reznye.php" class="list-group-item <?php echo $item_assembly_nalichniki_Class;?>">Наличники</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
                                     <ul class="list-group sub_menu2">
@@ -494,157 +494,7 @@ foreach (glob("inc/goup/inc-goup-menu-sborochnye*.php") as $filename) { include 
                                     </ul>
                                 </li>                                   
                             </ul>
-                        </li>
-                        <!-- menu -->
-                        <li class="menu  disabled">
-                            <a href="detali-kamni.php" class="list-group-item '.$item_kamni_Class.'">Камни</a>
-                            <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#paneli-stenovye-konstrukcii">КОНСТРУКЦИИ ПАНЕЛЕЙ СТЕНОВЫХ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>                                          
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-paneli-stenovye.php#sborochnye-shemy-paneli-stenovye">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>                                       
-                                    </ul>
-                                </li>                    
-                            </ul>
-                        </li>
-                        <!-- menu -->
-                        <li class="menu  disabled">
-                                <a href="detali-rezby.php" class="list-group-item '.$item_rezby_Class.'">Резьбы</a>
-                                <ul class="list-group sub_menu">
-                                    <li class="menu2"><a class="list-group-item sub" href="detali-rezby.php#rozetka">Розетка</a>
-                                        <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>                                          
-                                        </ul>
-                                    </li>
-                                    <li class="menu2"><a class="list-group-item sub" href="detali-rezby.php#kapitel">Капитель</a>
-                                        <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>                                       
-                                        </ul>
-                                    </li>
-                                    <li class="menu2"><a class="list-group-item sub" href="detali-rezby.php#konsol">Консоль</a>
-                                        <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>                                       
-                                        </ul>
-                                    </li>  
-                                    <li class="menu2"><a class="list-group-item sub" href="detali-rezby.php#barelef">Барельеф</a>
-                                        <ul class="list-group sub_menu2">
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>
-                                            <li><a class="list-group-item sub" href="#" >...</a>
-                                            </li>                                       
-                                        </ul>
-                                    </li>                      
-                                </ul>
-                            </li>
-                        <!-- menu -->
-                        <li class="menu disabled">
-                            <a href="detali-tokarka.php" class="list-group-item '.$item_tokarka_Class.'">Токарка</a>
-                            <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-karnizy-i-frizy.php#izdeliya-karnizy-i-frizy-konstrukcii">КОНСТРУКЦИИ КАРНИЗОВ И ФРИЗОВ ТИПОВЫХ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>                                         
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-karnizy-i-frizy.php#sborochnye-shemy-karnizy-i-frizy">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>                                   
-                                    </ul>
-                                </li>     
-                            </ul>
-                        </li>
-                        <!-- menu -->
-                        <li class="menu disabled">
-                            <a href="detali-frezy.php" class="list-group-item '.$item_frezy_Class.'">Фрезы</a>
-                            <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-plintusy-i-moldingi.php#plintusy-i-moldingi-konstrukcii">КОНСТРУКЦИИ ПЛИНТУСОВ И МОЛДИНГОВ ТИПОВЫХ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>                                        
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-plintusy-i-moldingi.php#sborochnye-shemy-plintusy-i-moldingi">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>                                      
-                                    </ul>
-                                </li>                                
-                            </ul>
-                        </li>
-                        <!-- menu -->
-                        <li class="menu disabled">
-                            <a href="detali-pazy.php" class="list-group-item '.$item_pazy_Class.'">Пазы</a>
-                            <ul class="list-group sub_menu">
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-ekrany-radiatorov.php#ekrany-radiatorov-konstrukcii">КОНСТРУКЦИИ ЭКРАНОВ РАДИАТОРОВ ТИПОВЫХ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>                                       
-                                    </ul>
-                                </li>
-                                <li class="menu2"><a class="list-group-item sub" href="izdeliya-ekrany-radiatorov.php#sborochnye-shemy-ekrany-radiatorov">СБОРОЧНО-МОНТАЖНЫЕ СХЕМЫ</a>
-                                    <ul class="list-group sub_menu2">
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>
-                                        <li><a class="list-group-item sub" href="#" >...</a>
-                                        </li>                                      
-                                    </ul>
-                                </li>                                
-                            </ul>
-                        </li>
+                        </li>                       
                                                 
                     </ul>
                 </div>

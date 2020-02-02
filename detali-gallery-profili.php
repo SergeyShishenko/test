@@ -4,6 +4,7 @@ include 'inc/inc-menu-value.php';
 include 'inc/inc-menu-value-detali.php';
 $detaliClass = 'class="active"';
 $item_profile_directory_Class = 'active';
+$galleryShow=true;
 include 'inc/inc-head.php';
 include 'inc/inc-header-menu.php';
 include 'inc/inc-left-side-menu-detali.php';

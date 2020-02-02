@@ -4,65 +4,139 @@ include 'inc/inc-session-start.php';
 include 'inc/inc-menu-value.php';
 include 'inc/inc-menu-value-sborochnye.php';
 $assemblyUnitClass = 'class="active"';
-$item_svet_Class = 'active';
-include 'inc/inc-head3.php';
-include 'inc/inc-header-menu3.php';
+$item_assembly_karnizy_Class = 'active';
+$galleryShow=true;
+include 'inc/inc-head.php';
+include 'inc/inc-header-menu.php';
 include 'inc/inc-left-side-menu-sborochnye.php';
+?>
+<!-- main  -->
+<div class="col-md-8 col-md-8-non" role="main" id="main-page">
+<p>&nbsp;</p>
+<!-- <a href="./dist/files/GALLERY/ALL IN ONE/sborka-profiley-ot-28052019.dwg" type="button" class="btn btn-primary"  download="СБОРКА ПРОФИЛЕЙ (от 28.05.2019).dwg">Скачать - СБОРКА ПРОФИЛЕЙ (от 28.05.2019).DWG</a> -->
+<!--  -->
+    <article class="gallery" >
+        <section  >
+            <div class="page-header cont ">
+            <h1 itemprop="name" id="NAKLADKI">Накладки</h1>
+            </div> 
+            <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
+              <!--gallery -->   
+            <div class="bs-callout bs-callout-warning cont gallery-cont" > 
+                 <?php  ListGallery('./dist/files/GALLERY/NAKLADKI',3,"Накладки"); ?>
+                 <!--/gallery --> 
+              <!-- <div >&nbsp;.</div>                                                                               -->
+            </div>
+        </section>
+    </article > 
+<!--  -->
+<!--  -->
+    <article class="gallery" >
+        <section  >
+            <div class="page-header cont ">
+            <h1 itemprop="name" id="SHTAPIKI">Профили гладкие</h1>
+            </div> 
+            <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
+              <!--gallery -->   
+            <div class="bs-callout bs-callout-warning cont gallery-cont" > 
+                 <?php  ListGallery('./dist/files/GALLERY/SHTAPIKI',2,"Профили гладкие"); ?>
+                 <!--/gallery --> 
+              <!-- <div >&nbsp;.</div>                                                                               -->
+            </div>
+        </section>
+    </article > 
+<!--  -->
+<!--  -->
+ <article class="gallery" >
+        <section  >
+            <div class="page-header cont ">
+            <h1 itemprop="name" id="PROFILI-REZNYE">Профили резные</h1>
+            </div> 
+            <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
+              <!--gallery -->   
+            <div class="bs-callout bs-callout-warning cont gallery-cont" > 
+                 <?php  ListGallery('./dist/files/GALLERY/PROFILI-REZNYE',2,"Профили резные"); ?>
+                 <!--/gallery --> 
+              <!-- <div >&nbsp;.</div>                                                                               -->
+            </div>
+        </section>
+    </article > 
+<!--  -->
+<!--  -->
+ <article class="gallery" >
+        <section  >
+            <div class="page-header cont ">
+            <h1 itemprop="name" id="KARNIZY">Карнизы</h1>
+            </div> 
+            <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
+              <!--gallery -->   
+            <div class="bs-callout bs-callout-warning cont gallery-cont" > 
+                 <?php  ListGallery('./dist/files/GALLERY/KARNIZY',2,"Карнизы"); ?>
+                 <!--/gallery --> 
+              <!-- <div >&nbsp;.</div>                                                                               -->
+            </div>
+        </section>
+    </article > 
+<!--  -->
+<!--  -->
+ <article class="gallery" >
+        <section  >
+            <div class="page-header cont ">
+            <h1 itemprop="name" id="PLINTUSY">Плинтус</h1>
+            </div> 
+            <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
+              <!--gallery -->   
+            <div class="bs-callout bs-callout-warning cont gallery-cont" > 
+                 <?php  ListGallery('./dist/files/GALLERY/PLINTUSY',2,"Плинтус"); ?>
+                 <!--/gallery --> 
+              <!-- <div >&nbsp;.</div>                                                                               -->
+            </div>
+        </section>
+    </article > 
+<!--  -->
+<!--  -->
+ <article class="gallery" >
+        <section  >
+            <div class="page-header cont ">
+            <h1 itemprop="name" id="NALICHNIKI">Наличники</h1>
+            </div> 
+            <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
+              <!--gallery -->   
+            <div class="bs-callout bs-callout-warning cont gallery-cont" > 
+                 <?php  ListGallery('./dist/files/GALLERY/NALICHNIKI',2,"Наличники"); ?>
+                 <!--/gallery --> 
+              <!-- <div >&nbsp;.</div>                                                                               -->
+            </div>
+        </section>
+    </article > 
+<!--  -->
+ 
 
-// materialy-svet.php?group=lenta_hot_white&node=lenta_hot_white
-// if (isset($_GET["group"])) {
-//     $article_id =$_GET["group"];// название группы и имя массива группы lenta
-// }else{
-//    $article_id ="svet";// название группы и имя массива группы 
-// }
-// materialy-svet.php?group=lenta_hot_white&node=lenta_hot_white
-if (isset($_GET["node"])) {
-    $article_id =$_GET["node"];// название группы и имя массива группы lenta
-}else{
-   $article_id ="svet";// название группы и имя массива группы 
-}
 
-
-// $curr_page = 1;// индекс элемента в количестве групп в боковом меню 
-// switch ($_GET["node"]) {
-//     case "lenta_hot_white_mdm":
-//         $curr_page = 1;
-//         break;
-//     case "profily_mdm":
-//         $curr_page = 2;
-//         break;
-//     case "transformatory_mdm":
-//         $curr_page = 3;
-//         break;
-//     case "accessories_mdm":
-//         $curr_page = 4;
-//         break;
-//     default:
-//         $curr_page = 1;
-//         break;  
-// }
-
-// contentPage($$article_id,$curr_page,$article_id); 
-// $much_arr=[$$article_id];
-// $much_arr=[$lenta,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];
-$much_arr=[$$article_id];
-// $much_arr=[$lenta_hot_white_mdm,$lenta_neutral_white_mdm];
-contentPage2($much_arr); 
-
-
-// sideMenu($$article_id,$curr_page); 
-
-// $arrlist = [$$article_id];//группы в боковом меню
-// $_GET["group"] // МДМ HAFELE ARLIGHT
-switch ($_GET["group"]) {
-    case "mdm":
-        $arrlist = [$lenta_hot_white_mdm,$lenta_neutral_white_mdm,$lenta_cold_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
-        break;   
-    default:
-        $arrlist = [$lenta_hot_white_mdm,$lenta_neutral_white_mdm,$lenta_cold_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
-        break;  
-}
-//  $arrlist = [$lenta_hot_white_mdm,$lenta_neutral_white_mdm,$lenta_cold_white_mdm,$alumprofily_mdm,$transformatory_mdm,$accessories_mdm];//группы в боковом меню
-sideMenuListPages($arrlist);
-
-include 'inc/inc-footer2.php'; 
+   
+    
+</div> <!-- main  -->                
+<!-- боковое меню блоки дверные начало -->
+<div class="col-md-2"  id="navmain-izdeliya">
+    <div class="bs-sidebar hidden-print affix vertical-menu " role="complementary"  >
+        <ul class="nav bs-sidenav">
+            <li><a href="#NAKLADKI">Накладки</a>                             
+            </li>
+            <li><a href="#SHTAPIKI">Профили гладкие</a>                             
+            </li>
+            <li><a href="#PROFILI-REZNYE">Профили резные</a>                             
+            </li>
+            <li><a href="#KARNIZY">Карнизы</a>                             
+            </li>
+            <li><a href="#PLINTUSY">Плинтус</a>                             
+            </li>
+            <li><a href="#NALICHNIKI">Наличники</a>                             
+            </li>
+                               
+        </ul>
+    </div>
+</div><!-- боковое меню блоки дверные конец -->
+<?php
+$notFrame=true;//нет Frame
+include 'inc/inc-footer.php';
+?>

@@ -107,7 +107,7 @@
 ?>
  
  <?php 
-    if($item_profile_directory_Class == 'active'){
+    if($galleryShow){
 ?>
  <!-- image-gallery-->
         <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="image-gallery">
@@ -185,8 +185,7 @@
         </script> 
 <!-- gallery -->
 <?php 
-if($item_profile_directory_Class=="active")
-{
+if($galleryShow){
 //   echo "
 // <script>alert( document.location.href";
 // // echo $item_profile_directory_Class;
