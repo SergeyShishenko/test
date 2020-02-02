@@ -1,6 +1,10 @@
-Текущий коммит: assemblyUnit start 
+assemblyUnit start 01.29.20
+Текущий коммит: assemblyUnit 02.02.20 
     (Добавление на сайт пункта меню "СБОРОЧНЫЕ ЕДИНИЦЫ")
     ИЗМЕНЕНИЯ: 
         sborochnye-edinicy.php
         inc\inc-header.php
         inc\inc-menu-value.php
+        inc\inc-left-side-menu-sborochnye.php 
+        inc\inc-menu-value-sborochnye.php
+        inc\goup\inc-goup-menu-sborochnye-karnizy.php

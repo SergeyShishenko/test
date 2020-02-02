@@ -17,8 +17,9 @@
                         <a href="detali-gallery-profili.php">ДЕТАЛИ</a>
                     </li>
 
-                    <li <?php echo $assemblyUnitClass;?> class=" disabled">
-                    <a href="materialy-svet.php"  class="dblstr-menu">СБОРОЧНЫЕ <br>ЕДИНИЦЫ</a>
+                    <li <?php echo $assemblyUnitClass;?> class=" ">
+                    <!-- <li <?php// echo $assemblyUnitClass;?> class=" disabled"> -->
+                    <a href="sborochnye-edinicy.php"  class="dblstr-menu">СБОРОЧНЫЕ <br>ЕДИНИЦЫ</a>
                     </li>
                     
                     <li <?php echo $izdeliyaClass;?> >

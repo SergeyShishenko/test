@@ -2,12 +2,12 @@
 // sborochnye-edinicy.php
 include 'inc/inc-session-start.php';
 include 'inc/inc-menu-value.php';
-include 'inc/inc-menu-value-materialy.php';
+include 'inc/inc-menu-value-sborochnye.php';
 $assemblyUnitClass = 'class="active"';
 $item_svet_Class = 'active';
 include 'inc/inc-head3.php';
 include 'inc/inc-header-menu3.php';
-include 'inc/inc-left-side-menu-materialy.php';
+include 'inc/inc-left-side-menu-sborochnye.php';
 
 // materialy-svet.php?group=lenta_hot_white&node=lenta_hot_white
 // if (isset($_GET["group"])) {
