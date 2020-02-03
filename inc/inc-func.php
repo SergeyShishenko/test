@@ -1,5 +1,5 @@
 <?php 
-// inc-func.php
+// inc\inc-func.php
 function sideMenu($arr,$curr) //правое меню группа
 {
  echo'
@@ -100,7 +100,7 @@ function checkForLength($str)
 }
 
 /////////////////////////////////////
-function ListGallery($directory,$scale=2,$titleGallery)// левое меню -> замена <li class="menu2"> ->   ';leftSdeMenu($styazhka); echo'
+function listGallery($directory,$scale=2,$titleGallery)// левое меню -> замена <li class="menu2"> ->   ';leftSdeMenu($styazhka); echo'
 {
     //$directory = './dist/images/GALLERY/SHTAPIKI/Thumbnail';
                                 // $scanned_directory = array_diff(scandir($directory.'/Thumbnail'), array('..', '.'));
@@ -108,12 +108,18 @@ function ListGallery($directory,$scale=2,$titleGallery)// левое меню ->
     
         for ($i=2; $i < count($scanned_directory); $i++) { 
             $file=$directory.'/Thumbnail/'.$scanned_directory[$i];
-            $exif = exif_read_data($file, 0, true);
-            if ($exif) {
-                $title=$exif['IFD0']['ImageDescription'];
-                $Comments=ucs2html($exif['IFD0']['Comments']);
-                $Keywords=ucs2html($exif['IFD0']['Keywords']);
+            // file_exists($file)
+            if (exif_imagetype($file) == 2) { //JEPEG            
+
+                    $exif = exif_read_data($file, 0, true);                
+                    if ($exif) {
+                        $title=$exif['IFD0']['ImageDescription'];
+                        $Comments=ucs2html($exif['IFD0']['Comments']);
+                        $Keywords=ucs2html($exif['IFD0']['Keywords']);
+                    }
             }
+
+
             if (!$title){$title=$titleGallery;}
         
 echo '

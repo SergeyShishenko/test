@@ -22,7 +22,7 @@ include 'inc/inc-left-side-menu-detali.php';
                             <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
                               <!--gallery -->   
                             <div class="bs-callout bs-callout-warning cont gallery-cont" > 
-                                 <?php  ListGallery('./dist/files/GALLERY/NAKLADKI',3,"Накладки"); ?>
+                                 <?php  listGallery('./dist/files/GALLERY/NAKLADKI',3,"Накладки"); ?>
                                  <!--/gallery --> 
                               <!-- <div >&nbsp;.</div>                                                                               -->
                             </div>
@@ -38,7 +38,7 @@ include 'inc/inc-left-side-menu-detali.php';
                             <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
                               <!--gallery -->   
                             <div class="bs-callout bs-callout-warning cont gallery-cont" > 
-                                 <?php  ListGallery('./dist/files/GALLERY/SHTAPIKI',2,"Профили гладкие"); ?>
+                                 <?php  listGallery('./dist/files/GALLERY/SHTAPIKI',2,"Профили гладкие"); ?>
                                  <!--/gallery --> 
                               <!-- <div >&nbsp;.</div>                                                                               -->
                             </div>
@@ -54,7 +54,7 @@ include 'inc/inc-left-side-menu-detali.php';
                             <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
                               <!--gallery -->   
                             <div class="bs-callout bs-callout-warning cont gallery-cont" > 
-                                 <?php  ListGallery('./dist/files/GALLERY/PROFILI-REZNYE',2,"Профили резные"); ?>
+                                 <?php  listGallery('./dist/files/GALLERY/PROFILI-REZNYE',2,"Профили резные"); ?>
                                  <!--/gallery --> 
                               <!-- <div >&nbsp;.</div>                                                                               -->
                             </div>
@@ -70,7 +70,7 @@ include 'inc/inc-left-side-menu-detali.php';
                             <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
                               <!--gallery -->   
                             <div class="bs-callout bs-callout-warning cont gallery-cont" > 
-                                 <?php  ListGallery('./dist/files/GALLERY/KARNIZY',2,"Карнизы"); ?>
+                                 <?php  listGallery('./dist/files/GALLERY/KARNIZY',2,"Карнизы"); ?>
                                  <!--/gallery --> 
                               <!-- <div >&nbsp;.</div>                                                                               -->
                             </div>
@@ -86,7 +86,7 @@ include 'inc/inc-left-side-menu-detali.php';
                             <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
                               <!--gallery -->   
                             <div class="bs-callout bs-callout-warning cont gallery-cont" > 
-                                 <?php  ListGallery('./dist/files/GALLERY/PLINTUSY',2,"Плинтус"); ?>
+                                 <?php  listGallery('./dist/files/GALLERY/PLINTUSY',2,"Плинтус"); ?>
                                  <!--/gallery --> 
                               <!-- <div >&nbsp;.</div>                                                                               -->
                             </div>
@@ -102,7 +102,7 @@ include 'inc/inc-left-side-menu-detali.php';
                             <!-- <h2 id="profili-nakladki-50">&nbsp;</h2> -->
                               <!--gallery -->   
                             <div class="bs-callout bs-callout-warning cont gallery-cont" > 
-                                 <?php  ListGallery('./dist/files/GALLERY/NALICHNIKI',2,"Наличники"); ?>
+                                 <?php  listGallery('./dist/files/GALLERY/NALICHNIKI',2,"Наличники"); ?>
                                  <!--/gallery --> 
                               <!-- <div >&nbsp;.</div>                                                                               -->
                             </div>
