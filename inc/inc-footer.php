@@ -115,6 +115,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="image-gallery-title"></h4>
+                        <button    id ="pr-move" class="btn btn-info im-download"  title="Переместить в СЕ"><i class="glyphicon glyphicon-move" aria-hidden="true"></i> Переместить в СЕ</button>
                         <button type="button" class="close" data-dismiss="modal">
                             <span aria-hidden="true">×</span>
                             <span class="sr-only">Close</span>
@@ -124,8 +125,9 @@
                         <img id="image-gallery-image" class="img-responsive col-md-12" src="">
                     </div>
                     <div class="modal-footer">
-
+     
                     <a href="./dist/files/dwg/pr-400-hh.dwg" type="button"  id ="pr-download" class="btn btn-info im-download" download="Профиль.dwg" title="Скачать" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>
+               
 
 
                         <button type="button" class="btn btn-secondary float-left" id="show-previous-image">
@@ -202,6 +204,43 @@ else{
 }
 
 ?>
+<script>
+$("#pr-move").click(function() {
+    let m1 = $(this).parent().parent().find("#image-gallery-image").attr("src").slice(1);;
+    let m2 = $(this).parent().parent().find("#pr-download").attr("href").slice(1);;
+    // let m3 = $(this).parent().parent().find("#image-gallery-image").attr("src");
+    // let m1new = m1.replace("GALLERY", "GALLERY/SBOROCHNYE-EDINICY");
+    // let m2new = m2.replace("GALLERY", "GALLERY/SBOROCHNYE-EDINICY");
+    // SBOROCHNYE-EDINICY
+    // alert( m1 +"\n" + m2 + "\n\n" +"Перенести?")
+    if(confirm( m1 +"\n" + m2 + "\n\n" +"Перенести?")){
+
+      let data = "img="+ m1 +'&dwg=' + m2;
+		$.ajax({
+			url: 'users/moveFileToSE.php',
+			type: 'POST',
+			data: data,
+			// beforeSend: function(){
+			// 	$('#submit').next().text('Отправляю...');
+			// },
+			success: function(res){
+				// $('#recall').find('input').val('');
+                // $('#submit').next().html(res);
+                // alert ("Файлы перенесены");
+                alert (res);
+			},
+			error: function(){
+				alert('Ошибка!');
+			}
+		});  
+
+    }
+
+    
+    
+});
+</script>
+
 
 
     </body>
