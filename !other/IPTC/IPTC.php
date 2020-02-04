@@ -1,5 +1,6 @@
 <?
 // !other\IPTC\IPTC.php
+define("IPTC_OBJECT_AEERIBUTE", "004");
 define("IPTC_OBJECT_NAME", "005");
 define("IPTC_EDIT_STATUS", "007");
 define("IPTC_PRIORITY", "010");
@@ -31,6 +32,8 @@ define("IPTC_SOURCE", "115");
 define("IPTC_COPYRIGHT_STRING", "116");
 define("IPTC_CAPTION", "120");
 define("IPTC_LOCAL_CAPTION", "121");
+define("IPTC_REFERENCE_SUBJECT", "12");
+define("IPTC_CAPTION_SUBJECT", "122");
 
 class IPTC
 {
@@ -126,6 +129,7 @@ class IPTC
         imagejpeg($img, $this->file, 100);
     }
 }
+////////////
 function ucs2html($str) {
     $str=trim($str); // if you are reading from file
     $len=strlen($str);
@@ -135,16 +139,31 @@ function ucs2html($str) {
                    sprintf("%02s",dechex(ord($str[$i])))).';';
     return($html);
 }
-
+///////////////
 $file = "photo.jpg";
 $objIPTC = new IPTC($file);
 
-//set title
-$objIPTC->setValue(IPTC_HEADLINE, ucs2html("Запись в картинку"));
+//set title 
+// iconv("UTF-8", "ISO-8859-1//TRANSLIT", "Запись в картинку");
+// $objIPTC->setValue(IPTC_HEADLINE, ucs2html("Запись в картинку"));
+// $objIPTC->setValue(IPTC_HEADLINE, iconv("UTF-8","UTF-8",  "Запись в картинку"));
+$objIPTC->setValue(IPTC_COPYRIGHT_STRING, iconv("UTF-8","UTF-8",  "Авторские права"));
+$objIPTC->setValue(IPTC_BYLINE, iconv("UTF-8","UTF-8",  "Шишенко"));
+$objIPTC->setValue(IPTC_OBJECT_AEERIBUTE, iconv("UTF-8","UTF-8",  "IPTC_OBJECT_AEERIBUTE"));
+$objIPTC->setValue(IPTC_KEYWORDS,iconv("UTF-8","UTF-8",  "Теги"));
 
 //set description
 // $objIPTC->setValue(IPTC_CAPTION, "Some words describing what can be seen in this picture.");
-$objIPTC->setValue(IPTC_CAPTION, ucs2html("Карниз по русски"));
+$objIPTC->setValue(IPTC_CAPTION, iconv("UTF-8","UTF-8",  "Карниз №1"));
 
-echo $objIPTC->getValue(IPTC_HEADLINE);
+$text = $objIPTC->getValue(IPTC_CAPTION);
+echo $text . "<br>";
+
+
+
+
+echo 'Исходная строка        : ', $text, "<br>";
+echo 'С добавлением TRANSLIT : ', iconv("UTF-8", "ISO-8859-1//TRANSLIT", $text),"<br>";
+echo 'С добавлением IGNORE   : ', iconv("UTF-8", "ISO-8859-1//IGNORE", $text), "<br>";
+echo 'Обычное преобразование : ', iconv("UTF-8", "ISO-8859-1", $text), "<br>";
 ?>
