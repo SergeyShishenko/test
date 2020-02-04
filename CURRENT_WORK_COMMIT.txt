@@ -1,5 +1,6 @@
 assemblyUnit start 01.29.20
 assemblyUnit 02.02.20
+assemblyUnit 04.02.20
 Текущий коммит: assemblyUnit 03.02.20 
     (Добавление на сайт пункта меню "СБОРОЧНЫЕ ЕДИНИЦЫ")
     ИЗМЕНЕНИЯ: 
