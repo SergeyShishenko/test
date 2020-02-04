@@ -12,23 +12,35 @@ foreach (glob("inc/goup/inc-goup-menu-sborochnye*.php") as $filename) { include 
                     <ul class="list-group">
                     <!-- menu -->
                     <li class="menu">                                
-                        <a href="detali-gallery-profili.php" class="list-group-item <?php echo $item_assembly_karnizy_Class;?>">Карнизы</a>
-                        
+                        <a href="sborochnye-edinicy.php" class="list-group-item <?php echo $item_assembly_karnizy_Class;?>  dblstr-lg dblstr-xl  dblstr-md dblstr-sm">Сборочная единица (профили)</a>
+                        <ul class="list-group sub_menu">
+                          
+                            <li class="menu2"><a class="list-group-item sub" href="sborochnye-edinicy.php#KARNIZY">Карнизы</a>
+                               
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="sborochnye-edinicy.php#PLINTUSY">Плинтусы</a>
+                               
+                            </li>
+                            <li class="menu2"><a class="list-group-item sub" href="sborochnye-edinicy.php#NALICHNIKI">Наличники</a>
+                               
+                            </li>
+                                                          
+                        </ul>
                     </li>
                         <!-- menu -->
-                        <li class="menu  disabled">                                
-                            <a href="detali-profili.php" class="list-group-item   <?php echo $item_assembly_plintusy_Class;?>">Плинтусы</a>
+                        <!-- <li class="menu  disabled">                                
+                            <a href="detali-profili.php" class="list-group-item   <?php #echo $item_assembly_plintusy_Class;?>">Плинтусы</a>
                            
-                        </li>
+                        </li> -->
                        
                         <!-- menu -->
-                        <li class="menu disabled">
-                            <a href="detali-profili-reznye.php" class="list-group-item <?php echo $item_assembly_nalichniki_Class;?>">Наличники</a>
+                        <!-- <li class="menu disabled">
+                            <a href="detali-profili-reznye.php" class="list-group-item <?php #echo $item_assembly_nalichniki_Class;?>">Наличники</a>
                             
-                        </li>                       
+                        </li>                        -->
                         <!-- menu -->
-                        <li class="menu disabled">
-                            <a href="detali-profili-reznye.php" class="list-group-item <?php echo $item_assembly_poluperila_Class;?>">Полуперила</a>
+                        <!-- <li class="menu disabled">
+                            <a href="detali-profili-reznye.php" class="list-group-item <?php #echo $item_assembly_poluperila_Class;?>">Полуперила</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2"><a class="list-group-item sub" href="izdeliya-mebel-korpusnaya.php#mebel-korpusnaya-konstrukcii">КОНСТРУКЦИИ МЕБЕЛИ КОРПУСНОЙ ТИПОВОЙ</a>
                                     <ul class="list-group sub_menu2">
@@ -93,7 +105,7 @@ foreach (glob("inc/goup/inc-goup-menu-sborochnye*.php") as $filename) { include 
                                     </ul>
                                 </li>                                   
                             </ul>
-                        </li>                       
+                        </li>                        -->
                                                 
                     </ul>
                 </div>
