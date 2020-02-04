@@ -115,7 +115,9 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="image-gallery-title"></h4>
+                        <?php if($role =="admin"){ ?>
                         <button    id ="pr-move" class="btn btn-info im-download"  title="Переместить в СЕ"><i class="glyphicon glyphicon-move" aria-hidden="true"></i> Переместить в СЕ</button>
+                        <?php } ?>
                         <button type="button" class="close" data-dismiss="modal">
                             <span aria-hidden="true">×</span>
                             <span class="sr-only">Close</span>

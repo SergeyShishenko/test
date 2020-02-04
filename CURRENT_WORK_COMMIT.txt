@@ -4,9 +4,7 @@ assemblyUnit 02.02.20
     (Добавление на сайт пункта меню "СБОРОЧНЫЕ ЕДИНИЦЫ")
     ИЗМЕНЕНИЯ: 
         sborochnye-edinicy.php
-        detali-gallery-profili.php
-
-        inc\goup\inc-goup-menu-sborochnye-karnizy.php
+        detali-gallery-profili.php       
         
         inc\inc-header.php
         inc\inc-menu-value.php
