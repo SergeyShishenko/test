@@ -44,75 +44,30 @@
 *
 *               If you require a different license for commercial or other
 *               purposes, please contact the author: evan@ozhiker.com
-
-* Имя Файла: Edit_File_Info_Example.РНР
 *
-* Описание: пример файла, показывающий, как edit_file_info позволяет пользователю редактировать
-* метаданные изображения через интернет, таким же образом
-* что Photoshop редактирует данные "информация о файле" 
-*
-* Автор: Эван Хантер
-*
-* Дата: 17/11/2004
-*
-* Проект: PHP JPEG Metadata Toolkit
-*
-* Пересмотр: 1.12
-*
-* Изменения: 1.10 - > 1.11: изменены отображаемые номера версий инструментария для ссылки на Toolkit_Version.РНР
-* 1.11 - > 1.12: добавлен синтаксический анализ имени файла для предотвращения атак, изменен на использование переменной _GET
-*
-* URL-адрес: http://electronics.ozhiker.com
-*
-* Авторское Право: Авторский Ивэн Хантер 2004
-*
-* Лицензия: этот файл является частью PHP JPEG Metadata Toolkit.
-*
-* PHP JPEG Metadata Toolkit является бесплатным программным обеспечением; вы можете
-* распространять его и / или изменять в соответствии с условиями
-* GNU General Public License, опубликованная свободным программным обеспечением
-* Foundation; либо версия 2 Лицензии, либо (по вашему
-* опция) любая более поздняя версия.
-*
-* PHP JPEG Metadata Toolkit распространяется в надежде
-* что это будет полезно, но без каких-либо гарантий; без
-* даже подразумеваемая гарантия товарного состояния или пригодности
-* ДЛЯ ОПРЕДЕЛЕННОЙ ЦЕЛИ.  Смотрите стандартную общественную лицензию GNU 
-* для получения более подробной информации.
-*
-* Вы должны были получить копию GNU General Public
-* Лицензия вместе с PHP JPEG Metadata Toolkit; если нет,
-* напишите в Фонд свободного программного обеспечения, Inc., 59 храм
-* Place, Suite 330, Boston, MA 02111-1307 USA
-*
-* Если вам требуется другая лицензия для коммерческих или других целей
-* цели, пожалуйста, свяжитесь с автором: evan@ozhiker.com
-*
-***************************************************************************
--->
+***************************************************************************-->
 
         <head>
 
                 <META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
                 <STYLE TYPE="text/css" MEDIA="screen, print, projection">
-                
+                <!--
 
-                         BODY { background-color:#505050; color:#F0F0F0 }
+                        BODY { background-color:#505050; color:#F0F0F0 }
                         a  { color:orange  }
                         .EXIF_Main_Heading { color:red }
                         .EXIF_Secondary_Heading{ color: orange}
                         .EXIF_Table {  border-collapse: collapse ; border: 1px solid #909000}
-                        .EXIF_Table tbody td{border-width: 1px; border-style:solid; border-color: #909000;} 
-                       
+                        .EXIF_Table tbody td{border-width: 1px; border-style:solid; border-color: #909000;}
 
-              
+                -->
                 </STYLE>
 
 
                 <?php
                         // Turn off Error Reporting
-                        error_reporting (-1 );
-                       
+                        error_reporting ( 0 );
+
                         include 'Toolkit_Version.php';          // Change: added as of version 1.11
 
                         // Retrieve the JPEG image filename from the http url request
@@ -126,8 +81,6 @@
                                 echo "<p><a href=\"http://www.ozhiker.com/electronics/pjmt/\" >PHP JPEG Metadata Toolkit version " . $GLOBALS['Toolkit_Version'] . ", Copyright (C) 2004 Evan Hunter</a></p>\n";         // Change: displayed toolkit version numbers to reference Toolkit_Version.php - as of version 1.11
                                 echo "</body>\n";
                                 exit( );
-
-                               
 
                         }
                         else
@@ -164,7 +117,7 @@
                         echo "<H1>Edit Photoshop File Info details for $filename</H1>";
 
                         // Output a link to display the full metadata
-                        echo "<p><a href=\"Example.php?jpeg_fname=" . $filename . "\" >Просмотр полной информации о метаданных</a></p>\n";
+                        echo "<p><a href=\"Example.php?jpeg_fname=" . $filename . "\" >View Full Metatdata Information</a></p>\n";
 
 
                         // Display a small copy of the image

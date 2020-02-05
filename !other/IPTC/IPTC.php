@@ -1,5 +1,6 @@
 <?
 // !other\IPTC\IPTC.php
+// header('Content-Type: text/html; charset=utf-8');
 define("IPTC_OBJECT_AEERIBUTE", "004");
 define("IPTC_OBJECT_NAME", "005");
 define("IPTC_EDIT_STATUS", "007");
@@ -147,14 +148,26 @@ $objIPTC = new IPTC($file);
 // iconv("UTF-8", "ISO-8859-1//TRANSLIT", "Запись в картинку");
 // $objIPTC->setValue(IPTC_HEADLINE, ucs2html("Запись в картинку"));
 // $objIPTC->setValue(IPTC_HEADLINE, iconv("UTF-8","UTF-8",  "Запись в картинку"));
-$objIPTC->setValue(IPTC_COPYRIGHT_STRING, iconv("UTF-8","UTF-8",  "Авторские права"));
-$objIPTC->setValue(IPTC_BYLINE, iconv("UTF-8","UTF-8",  "Шишенко"));
-$objIPTC->setValue(IPTC_OBJECT_AEERIBUTE, iconv("UTF-8","UTF-8",  "IPTC_OBJECT_AEERIBUTE"));
-$objIPTC->setValue(IPTC_KEYWORDS,iconv("UTF-8","UTF-8",  "Теги"));
+
+
+// $objIPTC->setValue(IPTC_COPYRIGHT_STRING, iconv("UTF-8","UTF-8",  "Авторские права"));
+// $objIPTC->setValue(IPTC_BYLINE, iconv("UTF-8","UTF-8",  "Шишенко"));
+// $objIPTC->setValue("045", iconv("UTF-8","UTF-8",  "IPTC_OBJECT_AEERIBUTE"));
+// $objIPTC->setValue(IPTC_KEYWORDS,iconv("UTF-8","UTF-8",  "Теги"));
+
+
+$objIPTC->setValue(IPTC_COPYRIGHT_STRING, "IPTC_COPYRIGHT_STRING Авторские права");
+$objIPTC->setValue(IPTC_BYLINE,  "IPTC_BYLINE Шишенко");
+$objIPTC->setValue("044", "IPTC_OBJECT_AEERIBUTE");
+$objIPTC->setValue(IPTC_KEYWORDS, "IPTC_KEYWORDS Теги");
 
 //set description
 // $objIPTC->setValue(IPTC_CAPTION, "Some words describing what can be seen in this picture.");
-$objIPTC->setValue(IPTC_CAPTION, iconv("UTF-8","UTF-8",  "Карниз №1"));
+$text="Карниз №1";
+echo mb_detect_encoding($text) . "<br>";
+$convertedText = mb_convert_encoding($text, 'utf-8', mb_detect_encoding($text));
+$objIPTC->setValue(IPTC_CAPTION,  $convertedText);
+$objIPTC->dump();
 
 $text = $objIPTC->getValue(IPTC_CAPTION);
 echo $text . "<br>";

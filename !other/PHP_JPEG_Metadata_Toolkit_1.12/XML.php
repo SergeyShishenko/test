@@ -138,8 +138,7 @@ function read_xml_array_from_text( $xmltext )
         // of the XML data, where each tag has a level number attached.
         // This is very difficult to work with, so it needs to be
         // converted to a tree structure before being returned
-        $ex = xml_get_children($newvals, $i=0);
-        return $ex;
+        return xml_get_children($newvals, $i=0);
 
 }
 
@@ -284,23 +283,10 @@ function write_xml_array_to_text( $xmlarray, $indentlevel )
 *
 * Returns:      children - the tree structure array containing XML elements
 *               FALSE - if an error occured
-* Описание: используется функцией read_xml_array_from_text.
-* Эта функция рекурсивно преобразует значения, полученные из
-* функция xml_parse_into_struct в массив древовидной структуры,
-* гораздо полезнее и проще в использовании.
-*
-* Параметры: input_xml_array-плоский массив извлеченных XML-элементов
-* из xml_parse_into_struct
-* $item_num-номер элемента, при котором выполняется преобразование
-* должен начинаться (обычно ноль при вызове из другого
-* функция, это используется для рекурсии)
-*
-* Возвращает: children-массив древовидной структуры, содержащий элементы XML
-* FALSE-если произошла ошибка
 *
 ******************************************************************************/
 
-function xml_get_children( $input_xml_array, $item_num )
+function xml_get_children( &$input_xml_array, &$item_num )
 {
 
         // Make an array to receive the output XML tree structure
@@ -311,7 +297,7 @@ function xml_get_children( $input_xml_array, $item_num )
         while ( $item_num < count( $input_xml_array ) )
         {
                 // Retrieve the current array element
-                $v = $input_xml_array[ $item_num++ ];
+                $v = &$input_xml_array[ $item_num++ ];
 
                 // Check what type of XML array element this is, and process accordingly
 

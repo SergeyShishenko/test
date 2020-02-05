@@ -80,31 +80,31 @@ echo "Comments: ".$iptc_old['2#005'][0]."<br />\n";
 echo "Keywords: ".$iptc_old['2#116'][0]."<br />\n";
 echo "</p>";
 
-// echo "<br>APP13:\n";
-// echo "Title: ".$exif['APP13']['2#120'][0]."<br />\n";
-// echo "Comments: ".ucs2html($exif['APP13']['2#005'][0])."<br />\n";
-// echo "Keywords: ".ucs2html($exif['APP13']['2#116'][0])."<br />\n";
+echo "<br>APP13:\n";
+echo "Title: ".$exif['APP13']['2#120'][0]."<br />\n";
+echo "Comments: ".ucs2html($exif['APP13']['2#005'][0])."<br />\n";
+echo "Keywords: ".ucs2html($exif['APP13']['2#116'][0])."<br />\n";
 
-// echo "<hr>";
-// $Title_prop_jpg = explode("~", $exif['IFD0']['ImageDescription']);
-// echo "Имя=> " .$Title_prop_jpg[0]. "<br />\n";
-// echo "Описание=> " .$Title_prop_jpg[1]. "<br />\n";
-// echo "<hr>";
-// mb_convert_encoding($exif['IFD0']['Comments'], "UCS-2LE", "JIS, eucjp-win, sjis-win");
+echo "<hr>";
+$Title_prop_jpg = explode("~", $exif['IFD0']['ImageDescription']);
+echo "Имя=> " .$Title_prop_jpg[0]. "<br />\n";
+echo "Описание=> " .$Title_prop_jpg[1]. "<br />\n";
+echo "<hr>";
+mb_convert_encoding($exif['IFD0']['Comments'], "UCS-2LE", "JIS, eucjp-win, sjis-win");
 
 
 // все свойства файла
-// foreach ($exif as $key => $section) {
-//     foreach ($section as $name => $val) {
-//         echo "$key.$name: $val <br />\n";
-//         echo ucs2html($val)." <br />\n";
-//         // echo "$key.$name:". utf8_decode($val)." <br />\n";
-//         // echo "$key.$name:". iconv('ASCII', 'UTF-8',$val)." <br />\n";
-//         // echo "$key.$name:". iconv("", "UTF-8", $val)." <br />\n";
+foreach ($exif as $key => $section) {
+    foreach ($section as $name => $val) {
+        echo "$key.$name: $val <br />\n";
+        echo ucs2html($val)." <br />\n";
+        // echo "$key.$name:". utf8_decode($val)." <br />\n";
+        // echo "$key.$name:". iconv('ASCII', 'UTF-8',$val)." <br />\n";
+        // echo "$key.$name:". iconv("", "UTF-8", $val)." <br />\n";
      
      
-//     }
-// }
+    }
+}
 
 
 

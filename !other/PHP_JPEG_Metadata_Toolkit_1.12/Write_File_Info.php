@@ -54,7 +54,8 @@
         <head>
                 <META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
                 <STYLE TYPE="text/css" MEDIA="screen, print, projection">
-              
+                <!--
+
                         BODY { background-color:#505050; color:#F0F0F0 }
                         a  { color:orange  }
                         .EXIF_Main_Heading { color:red }
@@ -62,7 +63,7 @@
                         .EXIF_Table {  border-collapse: collapse ; border: 1px solid #909000}
                         .EXIF_Table tbody td{border-width: 1px; border-style:solid; border-color: #909000;}
 
-              
+                -->
                 </STYLE>
 
                 <title>Writing Photoshop File Info Metadata</title>
@@ -76,7 +77,7 @@
 
                 <?php
                         // Turn off Error Reporting
-                        error_reporting ( -1 );          // Change: changed to no reporting -  as of version 1.11
+                        error_reporting ( 0 );          // Change: changed to no reporting -  as of version 1.11
 
                         include 'Toolkit_Version.php';  // Change: added as of version 1.11
 
@@ -89,11 +90,8 @@
 
 
                         // Copy all of the HTML Posted variables into an array
-                        $new_ps_file_info_array = $GLOBALS['_POST'];
-                        echo "<pre>";  
-                        echo "<p>EditJPEG</p>";               
-                        echo var_dump($_POST);	 
-                        echo "</pre>";
+                        $new_ps_file_info_array = $GLOBALS['HTTP_POST_VARS'];
+
                         // Some characters are escaped with backslashes in HTML Posted variable
                         // Cycle through each of the HTML Posted variables, and strip out the slashes
                         foreach( $new_ps_file_info_array as $var_key => $var_val )
@@ -114,10 +112,7 @@
                         $path_parts = pathinfo( $filename );
                         if ( strcasecmp( $path_parts["extension"], "jpg" ) != 0 )
                         {
-                                echo "Incorrect File Type - JPEG Only\n"." extension ".$path_parts["extension"];
-                                // echo "<pre>";                
-                                // echo var_dump($path_parts);	 
-                                // echo "</pre>";
+                                echo "Incorrect File Type - JPEG Only\n";
                                 exit( );
                         }
                         // Change: removed limitation on file being in current directory - as of version 1.11
@@ -130,24 +125,9 @@
                         $Exif_array = get_EXIF_JPEG( $filename );
                         $XMP_array = read_XMP_array_from_text( get_XMP_text( $jpeg_header_data ) );
                         $IRB_array = get_Photoshop_IRB( $jpeg_header_data );
-                        // echo "<pre>"; 
-                        // echo "<p>Exif_array</p>";                
-                        // echo var_dump($Exif_array);	 
-                        // echo "</pre>";
-                        // echo "<pre>";  
-                        // echo "<p>XMP_array</p>";              
-                        // echo var_dump($XMP_array);	 
-                        // echo "</pre>";
-                        // echo "<pre>"; 
-                        // echo "<p>$IRB_array</p>";               
-                        // echo var_dump($IRB_array);	 
-                        // echo "</pre>";
 
                         // Update the JPEG header information with the new Photoshop File Info
                         $jpeg_header_data = put_photoshop_file_info( $jpeg_header_data, $new_ps_file_info_array, $Exif_array, $XMP_array, $IRB_array );
-                        // echo "<pre>";                
-                        //         echo var_dump($jpeg_header_data);	 
-                        //         echo "</pre>";
 
                         // Check if the Update worked
                         if ( $jpeg_header_data == FALSE )

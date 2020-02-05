@@ -60,15 +60,6 @@
 *
 * Returns:      headerdata - Array of JPEG header segments
 *               FALSE - if headers could not be read
-* Функция: get_jpeg_header_data
-*
-* Описание: считывает все сегменты заголовка JPEG из файла изображения JPEG в
-* массив
-*
-* Параметры: filename-имя файла для чтения файла JPEG
-*
-* Возвращает: headerdata-массив сегментов заголовка JPEG
-* FALSE - если заголовки не могут быть прочитаны
 *
 ******************************************************************************/
 
@@ -76,20 +67,15 @@ function get_jpeg_header_data( $filename )
 {
 
         // prevent refresh from aborting file operations and hosing file
-        //предотвратить обновление от прерывания операций с файлами и шлангов файл
         ignore_user_abort(true);
 
 
         // Attempt to open the jpeg file - the at symbol supresses the error message about
         // not being able to open files. The file_exists would have been used, but it
         // does not work with files fetched over http or ftp.
-        // Попытка открыть файл jpeg-символ at подавляет сообщение об ошибке
-        // не удается открыть файлы. File_exists были бы использованы, но это
-        // не работает с файлами, полученными через http или ftp.
-        $filehnd = @fopen($filename, 'r');
-      
+        $filehnd = @fopen($filename, 'rb');
+
         // Check if the file opened successfully
-        // Проверьте, успешно ли открыт файл
         if ( ! $filehnd  )
         {
                 // Could't open the file - exit
@@ -99,31 +85,25 @@ function get_jpeg_header_data( $filename )
 
 
         // Read the first two characters
-        // Читать первые два символа
         $data = network_safe_fread( $filehnd, 2 );
-        // echo "<pre>";                
-        //                 echo var_dump( $data);	 
-        // echo "</pre>";
+
         // Check that the first two characters are 0xFF 0xDA  (SOI - Start of image)
         if ( $data != "\xFF\xD8" )
         {
                 // No SOI (FF D8) at start of file - This probably isn't a JPEG file - close file and return;
-                echo "<p>Это, вероятно, не файл JPEG</p>\n";
+                echo "<p>This probably is not a JPEG file</p>\n";
                 fclose($filehnd);
                 return FALSE;
         }
 
 
-        // Read the third character Прочитайте третий символ
+        // Read the third character
         $data = network_safe_fread( $filehnd, 2 );
-        // echo "<pre>";                
-        //                 echo var_dump( $data);	 
-        // echo "</pre>";
+
         // Check that the third character is 0xFF (Start of first segment header)
         if ( $data{0} != "\xFF" )
         {
                 // NO FF found - close file and return - JPEG is probably corrupted
-                //Не найдено FF-закрыть файл и вернуть-JPEG, вероятно, поврежден
                 fclose($filehnd);
                 return FALSE;
         }
@@ -841,8 +821,6 @@ function network_safe_fread( $file_handle, $length )
 
         // Keep reading data from the file until either EOF occurs or we have
         // retrieved the requested number of bytes
-        // Продолжайте читать данные из файла, пока не произойдет EOF, или у нас есть
-        // извлек запрошенное количество байт
 
         while ( ( !feof( $file_handle ) ) && ( strlen($data) < $length ) )
         {
@@ -991,5 +969,5 @@ $GLOBALS[ "JPEG_Segment_Descriptions" ] = array(
 ******************************************************************************/
 
 
-// echo "<p>JPEG.php end</p>\n"; 
+
 ?>
