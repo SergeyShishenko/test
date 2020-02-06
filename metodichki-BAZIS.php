@@ -35,6 +35,7 @@ include 'inc/inc-left-side-menu-metodichki.php';
                                         <p >Обновлен: 28/02/2019г.</p>      
                             </div> 
                         </div>
+
                         <div class="bs-callout bs-callout-warning cont" >
                             <p> 
                                 <h2 itemprop="name" id="AddOrderProdudtCE-v3">Добавить свойства: Заказ/ Изделие/ СЕ </h2>
@@ -55,7 +56,28 @@ include 'inc/inc-left-side-menu-metodichki.php';
                                              
                             </div> 
                             
-                         </div>
+                        </div>
+
+                        <div class="bs-callout bs-callout-warning cont" >
+                            <p> 
+                                <h2 itemprop="name" id="SortCE-v1">Сортировка блоков по СЕ</h2>
+                                
+                                <a href="./dist/files/js/SortCE-v1.js" type="button" class="btn btn-primary"  download="SortCE-v1.js">Скачать - SortCE-v1.js</a>
+                            </p>
+
+                            <p >&nbsp;</p> 
+                            <div class="main-box-body clearfix">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <video preload="auto" autoplay="true" loop="true" muted="muted" controls class="embed-responsive-item">
+                                                <source src="./dist/video/basis/2020-02-05 at 17-39-39.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                        <p >Создан: 16/01/2020г.</p>
+                                               
+                                             
+                            </div> 
+                            
+                        </div>
                      
                       </section>
                     </article> 
@@ -71,6 +93,8 @@ include 'inc/inc-left-side-menu-metodichki.php';
                                     <li><a href="#AddOrderProdudtCE-v1">Добавить свойства: Заказ/ Изделие/ СЕ (AddOrderProdudtCE-v1)</a>
                                     </li>
                                     <li><a href="#AddOrderProdudtCE-v3">Добавить свойства: Заказ/ Изделие/ СЕ (AddOrderProdudtCE-v3)</a>
+                                    </li>
+                                    <li><a href="#SortCE-v1">Сортировка блоков по СЕ (SortCE-v1)</a>
                                     </li>
                                                                     
                                 </ul>
