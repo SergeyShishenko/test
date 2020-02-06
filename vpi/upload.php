@@ -1,5 +1,5 @@
 <?php
-
+// vpi\upload.php
 //  //подключаем конфигурационный файл
 //  define('__ROOT__', dirname(dirname(__FILE__))); 
 //  // require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
@@ -380,12 +380,28 @@ function fileopenxlscsv($filename)
 				$agent_key = array_search('Предст.заказчика', $arraybuffer);//Предст.заказчика
 				$address_key = array_search('Объект', $arraybuffer);//Объект
 				$number_order_key = array_search('№ заказа', $arraybuffer);//№ заказа
+				$number_complect_key = array_search('№ комплекта', $arraybuffer);//№ комплекта
 				$complect_key = array_search('Наименование комплекта', $arraybuffer);//Наименование комплекта
 				$product_key = array_search('№ изделия по приложению', $arraybuffer);//№ изделия по приложению
 				$product2_key = array_search('№ изделия по повт.приложению', $arraybuffer);//№ изделия по повт.приложению
 				$def_key = array_search('Наименование изделия', $arraybuffer);//Наименование изделия
-				$kbKD_key = array_search('Конструктор', $arraybuffer);//Конструктор
-				$kbDP_key = array_search('Исполнитель Диз.проекта', $arraybuffer);//Исполнитель Диз.проекта
+
+				$check_val = array_search('Конструктор', $arraybuffer);//Конструктор
+				if ($check_val !== false){
+					$kbKD_key=$check_val;
+				}else{
+					$kbKD_key="Не назначен";
+				}
+			
+
+				$check_val = array_search('Исполнитель Диз.проекта', $arraybuffer);//Исполнитель Диз.проекта				
+				if ($check_val !== false){
+					$kbKD_key=$check_val;
+				}else{
+					$kbKD_key="Не назначен";
+				}
+
+
 				$floor_key = array_search('Этаж', $arraybuffer);//Этаж
 				$room_key = array_search('Помещение', $arraybuffer);//Помещение
 				$unit_key = array_search('Ед-ца изм.', $arraybuffer);//Ед-ца изм.
@@ -404,10 +420,11 @@ function fileopenxlscsv($filename)
 			// exit();
 			$agent="н.д.";			
 			// list($client,$address,$number_order, , ,$complect,$product,$product2, , , ,$def, , , , ,$kbKD,$kbDP, , , ,$floor,$room,$unit,$count,$serialnum,$wood,$veneer,$pic,$numsample,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,$end) = explode(';', $buffer);
-			$client = $arraybuffer[$client_key];//Заказчик
+			// $kbKD="нет";
 			$agent = $arraybuffer[$agent_key];//Предст.заказчика
 			$address  = $arraybuffer[$address_key];//Объект
 			$number_order = $arraybuffer[$number_order_key]; //№ заказа
+			$number_complect = $arraybuffer[$number_complect_key]; //№ комплекта
 			$complect = $arraybuffer[$complect_key]; //Наименование комплекта
 			$product = $arraybuffer[$product_key]; //№ изделия по приложению
 			$product2 = $arraybuffer[$product2_key]; //№ изделия по повт.приложению
@@ -426,13 +443,13 @@ function fileopenxlscsv($filename)
 			$RPG = $arraybuffer[$RPG_key]; //Руководитель группы
 			$VAP = $arraybuffer[$VAP_key]; //Архитектор проекта
 			// $end //Акт подписан
-
+			$client = $arraybuffer[$client_key]." проверка " . $kbKD;//Заказчик
 
 			$complect = end(explode('/', $complect));
 			$room = explode('/', $room)[0];
 			
-			//                           0        1        2             3        4    5     6     7         8      9      10        11     12    13      14        15   16    17    18   19   20
-			array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP,$agent));
+			//                           0        1        2             3        4    5     6     7         8      9      10        11     12    13      14        15   16    17    18   19   20        21
+			array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP,$agent,$number_complect));
 				
 		}//while
 
@@ -664,6 +681,11 @@ function fileopenxlscsv($filename)
 									$thclass = 'agent_th';
 									$vis = 'hide-info';
 									break;
+								case "21":
+									$id = 'number_complect_'.$row.$col;
+									$thclass = 'number_complect_th';
+									$vis = 'hide-info';
+									break;
 							
 						}
 						echo '<th id="'.$id.'" class="'.$sticky_table.' '.$thclass.' '.$vis.'">'.$array[$row][$col].'</th>';
@@ -785,6 +807,11 @@ function fileopenxlscsv($filename)
 										case "20":
 											$id = 'agent_'.$row.$col;
 											$thclass = 'agent_th';
+											$vis = 'hide-info';
+											break;
+										case "21":
+											$id = 'number_complect_'.$row.$col;
+											$thclass = 'number_complect_th';
 											$vis = 'hide-info';
 											break;
 								}

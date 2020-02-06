@@ -1,20 +1,9 @@
-assemblyUnit start 01.29.20
-assemblyUnit 02.02.20
-assemblyUnit 04.02.20
-Текущий коммит: assemblyUnit 03.02.20 
-    (Добавление на сайт пункта меню "СБОРОЧНЫЕ ЕДИНИЦЫ")
-    ИЗМЕНЕНИЯ: 
-        sborochnye-edinicy.php
-        detali-gallery-profili.php       
-        
-        inc\inc-header.php
-        inc\inc-menu-value.php
-        inc\inc-left-side-menu-sborochnye.php 
-        inc\inc-menu-value-sborochnye.php
-        inc\inc-footer.php
-        inc\inc-func.php
+csv start 06.02.20 
 
-        dist\files\GALLERY\SBOROCHNYE-EDINICY\ ВСЕ ФАЙЛЫ И ПАПКИ
+Текущий коммит: csv 06.02.20 
+    (Генерация титульных листов, добавление фильтра № комплекта")
+    ИЗМЕНЕНИЯ: 
+        vpi\upload.php
         
         
         
