@@ -47,6 +47,8 @@ class IPTC
 
         $size = getimagesize($filename, $info);
 
+         $this->dumpinfo($filename);
+
         if(isset($info["APP13"])) $this->meta = iptcparse($info["APP13"]);
 
         $this->file = $filename;
@@ -120,6 +122,25 @@ class IPTC
         print_r($this->meta);
         echo "</pre>";
     }
+    function dumpinfo($filename)
+    {
+        // echo "<pre>";
+        // print_r($info);
+        // print_r($info["APP1"]);
+        
+        // echo "</pre>";
+
+            //  $exif = exif_read_data('tests/test1.jpg', 'IFD0');
+            // echo $exif===false ? "Не найдено данных заголовка.<br />\n" : "Изображение содержит заголовки<br />\n";
+
+            $exif = exif_read_data($filename, 0, true);
+            // echo "test2.jpg:<br />\n";
+            foreach ($exif as $key => $section) {
+                foreach ($section as $name => $val) {
+                    echo "$key.$name: $val<br />\n";
+                }
+            }
+    }
 
     #requires GD library installed
     function removeAllTags()
@@ -164,7 +185,7 @@ $objIPTC->setValue(IPTC_KEYWORDS, "IPTC_KEYWORDS Теги");
 //set description
 // $objIPTC->setValue(IPTC_CAPTION, "Some words describing what can be seen in this picture.");
 $text="Карниз №1";
-echo mb_detect_encoding($text) . "<br>";
+// echo mb_detect_encoding($text) . "<br>";
 $convertedText = mb_convert_encoding($text, 'utf-8', mb_detect_encoding($text));
 $objIPTC->setValue(IPTC_CAPTION,  $convertedText);
 $objIPTC->dump();
