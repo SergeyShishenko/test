@@ -205,6 +205,13 @@ else{
 
 }
 
+if ($shablonyClass=='class="active"'){
+
+    echo '
+   
+    <script src="./dist/js/checkselect.js"></script>'; 
+}
+
 ?>
 <script>
 $("#pr-move").click(function() {

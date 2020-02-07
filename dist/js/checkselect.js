@@ -4,11 +4,12 @@
 		if (checked) {
 			$(target).find('select option:first').html('Выбрано: ' + checked);
 		} else {
-			$(target).find('select option:first').html('Выберите из списка');
+			$(target).find('select option:first').html('Список');
 		}
 	}
 
 	$.fn.checkselect = function() {
+        // alert(this);
 		this.wrapInner('<div class="checkselect-popup"></div>');
 		this.prepend(
 			'<div class="checkselect-control">' +
@@ -43,4 +44,4 @@
 	};
 })(jQuery);	
 
-$('.checkselect').checkselect();
+// $('.checkselect').checkselect();

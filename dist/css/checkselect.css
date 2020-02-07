@@ -1,8 +1,10 @@
 .checkselect {
 	position: relative;
 	display: inline-block;
-	min-width: 200px;
-	text-align: left;
+	/* min-width: 200px; */
+	min-width: 106px;
+    text-align: left;
+    /* font-size: 12px; */
 }
 .checkselect-control {
 	position: relative;
@@ -82,4 +84,7 @@
 	font-weight: 700;
 	font-size: 1em;
 	line-height: 1.1;
+}
+#number_complect_05 > div > div.checkselect-control > select{
+    font-size: 12px;
 }

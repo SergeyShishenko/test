@@ -625,7 +625,7 @@ function fileopenxlscsv($filename)
 								case "9":
 									$id = 'floor_'.$row.$col;
 									$thclass = 'floor_th';
-									$vis = 'hide-info';
+									$vis = '';
 									break;
 								case "10"://////////////$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb
 									$id = 'unit_'.$row.$col;												
@@ -691,7 +691,28 @@ function fileopenxlscsv($filename)
 							
 						}
 
-						echo '<th id="'.$id.'" class="'.$sticky_table.' '.$thclass.' '.$vis.'">'.$array[$row][$col].'</th>';
+						if (stristr($id, 'number_complect_') !== FALSE){
+							// <label><input type="checkbox" name="brands[]" value="1" checked>Google Inc.</label>
+							echo '<th id="'.$id.'" class="'.$sticky_table.' '.$thclass.' '.$vis.'">'.$array[$row][$col].'
+							
+							<div class="checkselect">
+									<label><input type="checkbox" name="brands[]" value="1" >Google Inc.</label>
+									<label><input type="checkbox" name="brands[]" value="2" >Apple Inc.</label>
+									<label><input type="checkbox" name="brands[]" value="3">Microsoft</label>
+									<label><input type="checkbox" name="brands[]" value="4">AT&T</label>
+									<label><input type="checkbox" name="brands[]" value="5">Facebook</label>
+									<label><input type="checkbox" name="brands[]" value="6">Visa</label>
+									<label><input type="checkbox" name="brands[]" value="7">Amazon</label>
+									<label><input type="checkbox" name="brands[]" value="8">Verizon</label>
+									<label><input type="checkbox" name="brands[]" value="9">McDonalds</label>
+								
+								</div>
+							</th>';
+						}else{
+							echo '<th id="'.$id.'" class="'.$sticky_table.' '.$thclass.' '.$vis.'">'.$array[$row][$col].'</th>';
+						}
+
+						
 					}
 					
 				}//for
@@ -748,7 +769,7 @@ function fileopenxlscsv($filename)
 									
 										case "9":
 											$id = 'floor_'.$row.$col;
-											$vis = 'hide-info';
+											$vis = '';
 											break;
 										case "10"://////////////$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb
 											$id = 'unit_'.$row.$col;												
@@ -836,6 +857,7 @@ function fileopenxlscsv($filename)
 		echo '</table>'; 
 		// файл
 		echo '<input type="hidden" id="currfile" value="'.$filename.'" form="frm">' ; 
+		echo "<script>$('.checkselect').checkselect();</script>" ; 
 
 		// создание таблицы end
 
