@@ -448,8 +448,8 @@ function fileopenxlscsv($filename)
 			$complect = end(explode('/', $complect));
 			$room = explode('/', $room)[0];
 			
-			//                           0        1        2             3        4              5      6     7         8      9      10        11     12    13      14       15     16    17    18   19   20     21
-			array_push($data, array($client,$address,$number_order,$product,$product2,$number_complect,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP,$agent));
+			//                           0        1        2             3        4              5      6         7    8      9      10        11     12    13      14       15     16    17    18   19   20     21
+			array_push($data, array($client,$address,$number_order,$product,$product2,$number_complect,$complect,$def,$room,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP,$agent));
 				
 		}//while
 
@@ -607,20 +607,21 @@ function fileopenxlscsv($filename)
 									$vis = '';
 									break;
 								case "6":
-									$id = 'def_'.$row.$col;
-									$thclass = 'def_th';
-									$vis = '';
-									break;
-								case "7":
-									$id = 'room_'.$row.$col;
-									$thclass = 'room_th';
-									$vis = '';
-									break;
-								case "8":
 									$id = 'complect_'.$row.$col;
 									$thclass = 'complect_th';
 									$vis = '';
 									break;
+								case "7":
+									$id = 'def_'.$row.$col;
+									$thclass = 'def_th';
+									$vis = '';
+									break;
+								case "8":
+									$id = 'room_'.$row.$col;
+									$thclass = 'room_th';
+									$vis = '';
+									break;
+								
 								case "9":
 									$id = 'floor_'.$row.$col;
 									$thclass = 'floor_th';
@@ -733,17 +734,18 @@ function fileopenxlscsv($filename)
 											$vis = '';
 											break;
 										case "6":
-											$id = 'def_'.$some;
-											$vis = '';
-											break;
-										case "7":
-											$id = 'room_'.$row.$col;
-											$vis = '';
-											break;
-										case "8":
 											$id = 'complect_'.$row.$col;
 											$vis = '';
 											break;
+										case "7":
+											$id = 'def_'.$some;
+											$vis = '';
+											break;
+										case "8":
+											$id = 'room_'.$row.$col;
+											$vis = '';
+											break;
+									
 										case "9":
 											$id = 'floor_'.$row.$col;
 											$vis = 'hide-info';
