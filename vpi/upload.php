@@ -448,8 +448,8 @@ function fileopenxlscsv($filename)
 			$complect = end(explode('/', $complect));
 			$room = explode('/', $room)[0];
 			
-			//                           0        1        2             3        4    5     6     7         8      9      10        11     12    13      14        15   16    17    18   19   20        21
-			array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP,$agent,$number_complect));
+			//                           0        1        2             3        4              5      6     7         8      9      10        11     12    13      14       15     16    17    18   19   20     21
+			array_push($data, array($client,$address,$number_order,$product,$product2,$number_complect,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP,$agent));
 				
 		}//while
 
@@ -490,7 +490,7 @@ function fileopenxlscsv($filename)
 		$array=$data;
 		$exclude=array("0","1","2");// исключаемые индексы
 
-		if (trim($data[1][20])=='н.д.' || $data[1][0]==$data[1][20] ){$agent_data ="";}else{$agent_data =$data[1][20];}
+		// if (trim($data[1][20])=='н.д.' || $data[1][0]==$data[1][20] ){$agent_data ="";}else{$agent_data =$data[1][20];}
         
 		echo "<div class='sticky row row-mod'>";
 			echo "<div >";
@@ -572,8 +572,8 @@ function fileopenxlscsv($filename)
 					// $numcol = count ($array[$row]); //колонок 
 				for ($col=0; $col < $numcol; $col++) { 						
 					if (false === array_search($col, $exclude)){
-		//                           0        1        2             3        4        5     6     7         8      9      10        11     12    13      14        15  16  17   18   19
-		// array_push($data, array($client,$address,$number_order,$product,$product2,$def,$room,$complect,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,kbKD,kbDP,$RPG,$VAP));
+		
+
 						switch ($col) {
 							/////"head"    
 								case "0":
@@ -602,92 +602,94 @@ function fileopenxlscsv($filename)
 									$vis = '';
 									break;
 								case "5":
+									$id = 'number_complect_'.$row.$col;
+									$thclass = 'number_complect_th';
+									$vis = '';
+									break;
+								case "6":
 									$id = 'def_'.$row.$col;
 									$thclass = 'def_th';
 									$vis = '';
 									break;
-								case "6":
+								case "7":
 									$id = 'room_'.$row.$col;
 									$thclass = 'room_th';
 									$vis = '';
 									break;
-								case "7":
+								case "8":
 									$id = 'complect_'.$row.$col;
 									$thclass = 'complect_th';
 									$vis = '';
 									break;
-								case "8":
+								case "9":
 									$id = 'floor_'.$row.$col;
 									$thclass = 'floor_th';
-									$vis = '';
+									$vis = 'hide-info';
 									break;
-								case "9"://////////////$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb
+								case "10"://////////////$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb
 									$id = 'unit_'.$row.$col;												
 									$thclass = 'unit_th';	
 									$vis = 'hide-info';											
 									break;
-								case "10":
+								case "11":
 									$id = 'count_'.$row.$col;
 									$thclass = 'count_th';
 									$vis = 'hide-info';
 									break;
-								case "11":
+								case "12":
 									$id = 'serialnum_'.$row.$col;
 									$id = 'serialnum_th';
 									$vis = 'hide-info';
 									break;
-								case "12":
+								case "13":
 									$id = 'wood_'.$row.$col;
 									$thclass = 'wood_th';
 									$vis = 'hide-info';
 									break;
-								case "13":
+								case "14":
 									$id = 'veneer_'.$row.$col;
 									$thclass = 'veneer_th';
 									$vis = 'hide-info';
 									break;
-								case "14":
+								case "15":
 									$id = 'numsample_'.$row.$col;
 									$thclass = 'numsample_th';
 									$vis = 'hide-info';
 									break;
-								case "15":
+								case "16":
 									$id = 'pic_'.$row.$col;
 									$thclass = 'pic_th';
 									$vis = 'hide-info';
 									break;
-								case "16":
+								case "17":
 									$id = 'kbKD_'.$row.$col;
 									$thclass = 'kbKD_th';
 									$vis = 'hide-info';
 									break;
-								case "17":
+								case "18":
 									$id = 'kbDP_'.$row.$col;
 									$thclass = 'kbDP_th';
 									$vis = 'hide-info';
 									break;
-								case "18":
+								case "19":
 									$id = 'RPG_'.$row.$col;
 									$thclass = 'RPG_th';
 									$vis = 'hide-info';
 									break;
-								case "19":
+								case "20":
 									$id = 'VAP_'.$row.$col;
 									$thclass = 'VAP_th';
 									$vis = 'hide-info';
 									break;
-								case "20":
+								case "21":
 									$id = 'agent_'.$row.$col;
 									$thclass = 'agent_th';
 									$vis = 'hide-info';
 									break;
-								case "21":
-									$id = 'number_complect_'.$row.$col;
-									$thclass = 'number_complect_th';
-									$vis = 'hide-info';
-									break;
+							
 							
 						}
+
 						echo '<th id="'.$id.'" class="'.$sticky_table.' '.$thclass.' '.$vis.'">'.$array[$row][$col].'</th>';
 					}
 					
@@ -726,27 +728,32 @@ function fileopenxlscsv($filename)
 											$vis = '';
 											break;
 										case "5":
-											$id = 'def_'.$some;
+											$id = 'number_complect_'.$row.$col;
+											$thclass = 'number_complect_th';
 											$vis = '';
 											break;
 										case "6":
-											$id = 'room_'.$row.$col;
+											$id = 'def_'.$some;
 											$vis = '';
 											break;
 										case "7":
-											$id = 'complect_'.$row.$col;
+											$id = 'room_'.$row.$col;
 											$vis = '';
 											break;
 										case "8":
-											$id = 'floor_'.$row.$col;
+											$id = 'complect_'.$row.$col;
 											$vis = '';
 											break;
-										case "9"://////////////$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb
+										case "9":
+											$id = 'floor_'.$row.$col;
+											$vis = 'hide-info';
+											break;
+										case "10"://////////////$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kb
 											$id = 'unit_'.$row.$col;												
 											$thclass = 'unit_th';	
 											$vis = 'hide-info';											
 											break;
-										case "10":
+										case "11":
 
 										// присваивает: You should eat pizza, beer, and ice cream every day
 											// $phrase  = "You should eat fruits, vegetables, and fiber every day.";
@@ -759,61 +766,57 @@ function fileopenxlscsv($filename)
 											$thclass = 'count_th';
 											$vis = 'hide-info';
 											break;
-										case "11":
+										case "12":
 											$id = 'serialnum_'.$row.$col;
 											$id = 'serialnum_th';
 											$vis = 'hide-info';
 											break;
-										case "12":
+										case "13":
 											$id = 'wood_'.$row.$col;
 											$thclass = 'wood_th';
 											$vis = 'hide-info';
 											break;
-										case "13":
+										case "14":
 											$id = 'veneer_'.$row.$col;
 											$thclass = 'veneer_th';
 											$vis = 'hide-info';
 											break;
-										case "14":
+										case "15":
 											$id = 'numsample_'.$row.$col;
 											$thclass = 'numsample_th';
 											$vis = 'hide-info';
 											break;
-										case "15":
+										case "16":
 											$id = 'pic_'.$row.$col;
 											$thclass = 'pic_th';
 											$vis = 'hide-info';
 											break;
-										case "16":
+										case "17":
 											$id = 'kbKD_'.$row.$col;
 											$thclass = 'kbKD_th';
 											$vis = 'hide-info';
 											break;
-										case "17":
+										case "18":
 											$id = 'kbDP_'.$row.$col;
 											$thclass = 'kbDP_th';
 											$vis = 'hide-info';
 											break;
-										case "18":
+										case "19":
 											$id = 'RPG_'.$row.$col;
 											$thclass = 'RPG_th';
 											$vis = 'hide-info';
 											break;
-										case "19":
+										case "20":
 											$id = 'VAP_'.$row.$col;
 											$thclass = 'VAP_th';
 											$vis = 'hide-info';
 											break;
-										case "20":
+										case "21":
 											$id = 'agent_'.$row.$col;
 											$thclass = 'agent_th';
 											$vis = 'hide-info';
 											break;
-										case "21":
-											$id = 'number_complect_'.$row.$col;
-											$thclass = 'number_complect_th';
-											$vis = 'hide-info';
-											break;
+										
 								}
 								$resarr=$array[$row][$col];
 								
