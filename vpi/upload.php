@@ -488,6 +488,17 @@ function fileopenxlscsv($filename)
 
 	// создание таблицы begin
 		$array=$data;
+	// сохранение номеров комплектов
+		$arr_number_complect=array();
+		for ($row=1; $row < count ($array); $row++) { 			
+			array_push($arr_number_complect,$array[$row][5]);
+		}
+		// $arr_number_complect = array_unique($arr_number_complect);
+		// sort($arr_number_complect);
+		array_flip(array_flip($arr_number_complect));
+		
+
+
 		$exclude=array("0","1","2");// исключаемые индексы
 
 		// if (trim($data[1][20])=='н.д.' || $data[1][0]==$data[1][20] ){$agent_data ="";}else{$agent_data =$data[1][20];}
@@ -695,17 +706,30 @@ function fileopenxlscsv($filename)
 							// <label><input type="checkbox" name="brands[]" value="1" checked>Google Inc.</label>
 							echo '<th id="'.$id.'" class="'.$sticky_table.' '.$thclass.' '.$vis.'">'.$array[$row][$col].'
 							
-							<div class="checkselect">
-									<label><input type="checkbox" name="brands[]" value="1" >Google Inc.</label>
-									<label><input type="checkbox" name="brands[]" value="2" >Apple Inc.</label>
-									<label><input type="checkbox" name="brands[]" value="3">Microsoft</label>
-									<label><input type="checkbox" name="brands[]" value="4">AT&T</label>
-									<label><input type="checkbox" name="brands[]" value="5">Facebook</label>
-									<label><input type="checkbox" name="brands[]" value="6">Visa</label>
-									<label><input type="checkbox" name="brands[]" value="7">Amazon</label>
-									<label><input type="checkbox" name="brands[]" value="8">Verizon</label>
-									<label><input type="checkbox" name="brands[]" value="9">McDonalds</label>
+							<div class="checkselect">'							
+							;
+							// foreach ($arr as &$value) {
 								
+							// 	$value = $value * 2;
+							// }
+							// var_dump($arr_number_complect);
+
+							$v=1;
+							for ($r=0; $r < count ($arr_number_complect); $r++) { 
+								echo '	<label><input type="checkbox" name="brands[]" value="'. $v .'" >'. $arr_number_complect[$r].'</label>';
+								$v++;
+							}
+							
+									
+									// <label><input type="checkbox" name="brands[]" value="2" >Apple Inc.</label>
+									// <label><input type="checkbox" name="brands[]" value="3">Microsoft</label>
+									// <label><input type="checkbox" name="brands[]" value="4">AT&T</label>
+									// <label><input type="checkbox" name="brands[]" value="5">Facebook</label>
+									// <label><input type="checkbox" name="brands[]" value="6">Visa</label>
+									// <label><input type="checkbox" name="brands[]" value="7">Amazon</label>
+									// <label><input type="checkbox" name="brands[]" value="8">Verizon</label>
+									// <label><input type="checkbox" name="brands[]" value="9">McDonalds</label>
+							echo '	
 								</div>
 							</th>';
 						}else{
