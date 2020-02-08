@@ -489,13 +489,13 @@ function fileopenxlscsv($filename)
 	// создание таблицы begin
 		$array=$data;
 	// сохранение номеров комплектов
-		$arr_number_complect=array();
+		$arrS_number_complect=array();
 		for ($row=1; $row < count ($array); $row++) { 			
-			array_push($arr_number_complect,$array[$row][5]);
+			array_push($arrS_number_complect,$array[$row][5]);
 		}
-		// $arr_number_complect = array_unique($arr_number_complect);
-		// sort($arr_number_complect);
-		array_flip(array_flip($arr_number_complect));
+		$arr_number_complect = array_unique($arrS_number_complect);
+		sort($arr_number_complect);
+		// array_flip(array_flip($arr_number_complect));
 		
 
 
@@ -717,6 +717,7 @@ function fileopenxlscsv($filename)
 							$v=1;
 							for ($r=0; $r < count ($arr_number_complect); $r++) { 
 								echo '	<label><input type="checkbox" name="brands[]" value="'. $v .'" >'. $arr_number_complect[$r].'</label>';
+								// echo '	<label><input type="checkbox" name="brands[]" value="'. $v .'" >'. count ($arr_number_complect).'</label>';
 								$v++;
 							}
 							
@@ -871,6 +872,8 @@ function fileopenxlscsv($filename)
 							}//if
 							
 						}//for
+
+						// var_dump($arr_number_complect);
 
 					}		
 
