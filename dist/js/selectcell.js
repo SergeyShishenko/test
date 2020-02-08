@@ -37,8 +37,8 @@ var selection = {
         console.log('Class pressedTime - '+$(el).hasClass(this.cl));
         // $(el).addClass(this.cl);
         this.last = $(el).index(this.slcr);
-        console.log('last '+this.last);
-        console.log('method '+method);
+        // console.log('last '+this.last);
+        // console.log('method '+method);
         prod2=$(el).find("[id^='product2_']").text();
         prod=$(el).find("[id^='product_']").text();
         if (prod2!=''){prod=prod2;}

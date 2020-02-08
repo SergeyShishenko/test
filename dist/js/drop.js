@@ -682,6 +682,7 @@ function delfiles()
        
     });
     // alert(arrcurrT.length);
+    // console.log('arrcurrT.length '+arrcurrT.length);
     if (arrcurrT.length>0){
     var myData =  {
         recordToDelete : "xlscsv/"+currfile,
@@ -705,7 +706,7 @@ function delfiles()
         });
     }
 
-
+    // console.log('arrcurrT.length '+arrcurrT.length);
     var myData2 =  {
         recordToDelete : "xlscsv/"+$('#currfile').val(),
         arrcurrT : arrcurrT

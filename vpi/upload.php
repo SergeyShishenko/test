@@ -149,7 +149,7 @@ if(isset($_POST["recordToDelete"]) )
 		echo "Файл: ".$_POST["recordToDelete"]." удален!";
 		
 	}else{
-		echo "Ошибка! Файл: ".$_POST["recordToDelete"]." не удален!";
+		echo "Ошибка(recordToDelete)! Файл: ".$_POST["recordToDelete"]." не удален!";
 	}
 	if(isset($_POST["arrcurrT"]) )
 	{

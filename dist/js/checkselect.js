@@ -30,22 +30,40 @@
 			console.log("data-num="+datanum);
 			console.log(':checked '+$(this).is(':checked'));
 			console.log('parent '+$('td[id^=number_complect]').data('num'));
-			// var data = $('td[id^=number_complect]').each(function() {
-			// 	return $(this).data("num") === datanum;
-			// });
+			// pressedTime
 			var data = $('td[id^=number_complect]');
 			console.log('data '+data.length);
-			$.each(data, function(i, item) {
 
-				// console.log(datanum +"__"+$(data[i]).data('num') === datanum);
-				if (datanum == $(data[i]).data('num')){
-					// console.log(datanum +"__"+$(data[i]).data('num'));
-					console.log(data[i]);
-					// console.log($(data[i]).parent().find('input[id^=someSwitchOptionSuccess]').attr('id'));
-					$(data[i]).parent().find('input[id^=someSwitchOptionSuccess]').trigger('click');
-				}
-				
-			});
+			if ($(this).is(':checked'))	{  //если включен  
+				$.each(data, function(i, item) {
+
+					if (datanum == $(data[i]).data('num')){				
+						console.log(data[i]);
+						let p=$(data[i]).parent();	
+						console.log("hasClass "+p.hasClass('check-vis'));	
+						if(p.hasClass('check-vis')){
+							p.find('input[id^=someSwitchOptionSuccess]').trigger('click');
+						}
+						
+					}		
+					
+				});
+			}else{// выключен
+
+				$.each(data, function(i, item) {
+
+					if (datanum == $(data[i]).data('num')){				
+						console.log(data[i]);
+						let p=$(data[i]).parent();
+						console.log("hasClass "+p.hasClass('check-vis'));				
+						if(!p.hasClass('check-vis')){
+							p.find('input[id^=someSwitchOptionSuccess]').trigger('click');
+						}
+					}		
+					
+				});
+
+			}
 
 		});
 
