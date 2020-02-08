@@ -9,6 +9,9 @@ csv 06.02.20
         dist\css\checkselect.css
         inc\inc-head.php
         inc\inc-footer.php
+        inc\inc-version-css-js.php
+        dist\js\drop.js
+        dist\js\selectcell.js
 
         для работы:
         !other\checkselect sample.html
