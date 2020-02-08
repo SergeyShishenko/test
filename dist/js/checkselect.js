@@ -1,15 +1,17 @@
 (function($) {
 	function setChecked(target) {
+		
 		var checked = $(target).find("input[type='checkbox']:checked").length;
 		if (checked) {
 			$(target).find('select option:first').html('Выбрано: ' + checked);
+
 		} else {
 			$(target).find('select option:first').html('Список');
 		}
 	}
 
 	$.fn.checkselect = function() {
-        // alert(this);
+        
 		this.wrapInner('<div class="checkselect-popup"></div>');
 		this.prepend(
 			'<div class="checkselect-control">' +
@@ -20,9 +22,11 @@
 
 		this.each(function(){
 			setChecked(this);
+			
 		});		
 		this.find('input[type="checkbox"]').click(function(){
 			setChecked($(this).parents('.checkselect'));
+			console.log("data-num="+$(this).parent().text());
 		});
 
 		this.parent().find('.checkselect-control').on('click', function(){
@@ -37,7 +41,9 @@
 		});
 
 		$('html, body').on('click', function(e){
+			
 			if ($(e.target).closest('.checkselect').length == 0){
+				
 				$('.checkselect-popup').css('display', 'none');
 			}
 		});

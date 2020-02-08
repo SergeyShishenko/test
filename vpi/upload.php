@@ -867,8 +867,14 @@ function fileopenxlscsv($filename)
 										
 								}
 								$resarr=$array[$row][$col];
-								
-								echo '<td id="'.$id.'" class="'.$vis.'">'.$resarr.'</td>';
+								// data-num="'.$id."__".$resarr.''.	if (stristr($id, 'number_complect_') !== FALSE){} . '
+								if (stristr($id, 'number_complect_') !== FALSE){
+									// $datanum ='data-num="number_complect__'.$resarr.' "';
+									$datanum ='data-num="'.$resarr.'"';
+								}else{
+									$datanum ="";
+								}
+								echo '<td id="'.$id.'" class="'.$vis.'" '.$datanum.' >'.$resarr.'</td>';
 							}//if
 							
 						}//for
@@ -884,7 +890,11 @@ function fileopenxlscsv($filename)
 		echo '</table>'; 
 		// файл
 		echo '<input type="hidden" id="currfile" value="'.$filename.'" form="frm">' ; 
-		echo "<script>$('.checkselect').checkselect();</script>" ; 
+		echo "<script>
+		$('.checkselect').checkselect();
+		//  var arrch=['1','2'];
+		//  inputClick(arrch);
+		</script>" ; 
 
 		// создание таблицы end
 
