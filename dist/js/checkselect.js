@@ -26,7 +26,27 @@
 		});		
 		this.find('input[type="checkbox"]').click(function(){
 			setChecked($(this).parents('.checkselect'));
-			console.log("data-num="+$(this).parent().text());
+			var datanum = $(this).parent().text();
+			console.log("data-num="+datanum);
+			console.log(':checked '+$(this).is(':checked'));
+			console.log('parent '+$('td[id^=number_complect]').data('num'));
+			// var data = $('td[id^=number_complect]').each(function() {
+			// 	return $(this).data("num") === datanum;
+			// });
+			var data = $('td[id^=number_complect]');
+			console.log('data '+data.length);
+			$.each(data, function(i, item) {
+
+				// console.log(datanum +"__"+$(data[i]).data('num') === datanum);
+				if (datanum == $(data[i]).data('num')){
+					// console.log(datanum +"__"+$(data[i]).data('num'));
+					console.log(data[i]);
+					// console.log($(data[i]).parent().find('input[id^=someSwitchOptionSuccess]').attr('id'));
+					$(data[i]).parent().find('input[id^=someSwitchOptionSuccess]').trigger('click');
+				}
+				
+			});
+
 		});
 
 		this.parent().find('.checkselect-control').on('click', function(){

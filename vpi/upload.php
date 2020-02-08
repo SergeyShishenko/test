@@ -722,7 +722,7 @@ function fileopenxlscsv($filename)
 							}
 							
 									
-									// <label><input type="checkbox" name="brands[]" value="2" >Apple Inc.</label>
+									// <label><input type="checkbox" name="brands[]" value="2"  checked>Apple Inc.</label>
 									// <label><input type="checkbox" name="brands[]" value="3">Microsoft</label>
 									// <label><input type="checkbox" name="brands[]" value="4">AT&T</label>
 									// <label><input type="checkbox" name="brands[]" value="5">Facebook</label>
