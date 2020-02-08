@@ -1,7 +1,7 @@
 csv start 06.02.20 
 csv 06.02.20
 
-Текущий коммит: csv 07.02.20 
+Текущий коммит: csv 09.02.20 
     (Генерация титульных листов, добавление фильтра № комплекта")
     ИЗМЕНЕНИЯ: 
         vpi\upload.php
@@ -9,6 +9,7 @@ csv 06.02.20
         dist\css\checkselect.css
         inc\inc-head.php
         inc\inc-footer.php
+        inc\inc-footer2.php
         inc\inc-version-css-js.php
         dist\js\drop.js
         dist\js\selectcell.js

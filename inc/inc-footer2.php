@@ -27,7 +27,7 @@
     <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  -->
     <!-- <script src="./dist/js/shortcut.js"></script> -->
     <script src="./dist/js/drop.js"></script>  
-    <script src="./dist/js/selectcell.js"></script>
+    <script src="./dist/js/selectcell.js?<?php echo $selectcell; ?>"></script>
     <script src="./dist/js/calc-bloka-pitaniya.js"></script>
     <?php if($role !="guest"){ ?>
     <script src="./dist/js/password-check.js?<?php echo $role; ?>"></script>

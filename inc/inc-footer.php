@@ -165,7 +165,7 @@
     <!-- <script src="./dist/js/shortcut.js"></script> -->
     <!-- <?php echo $role; ?> -->
     <script src="./dist/js/drop.js?v='<?php echo $dropVersion; ?>'"></script>  
-    <script src="./dist/js/selectcell.js"></script>
+    <script src="./dist/js/selectcell.js?<?php echo $selectcell; ?>"></script>
     <?php if($role !="guest"){ ?>
         <script src="./dist/js/password-check.js?<?php echo $passworCheck; ?>"></script>
     <?php } ?>

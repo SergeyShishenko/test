@@ -27,20 +27,20 @@
 		this.find('input[type="checkbox"]').click(function(){
 			setChecked($(this).parents('.checkselect'));
 			var datanum = $(this).parent().text();
-			console.log("data-num="+datanum);
-			console.log(':checked '+$(this).is(':checked'));
-			console.log('parent '+$('td[id^=number_complect]').data('num'));
+			// console.log("data-num="+datanum);
+			// console.log(':checked '+$(this).is(':checked'));
+			// console.log('parent '+$('td[id^=number_complect]').data('num'));
 			// pressedTime
 			var data = $('td[id^=number_complect]');
-			console.log('data '+data.length);
+			// console.log('data '+data.length);
 
 			if ($(this).is(':checked'))	{  //если включен  
 				$.each(data, function(i, item) {
 
 					if (datanum == $(data[i]).data('num')){				
-						console.log(data[i]);
+						// console.log(data[i]);
 						let p=$(data[i]).parent();	
-						console.log("hasClass "+p.hasClass('check-vis'));	
+						// console.log("hasClass "+p.hasClass('check-vis'));	
 						if(p.hasClass('check-vis')){
 							p.find('input[id^=someSwitchOptionSuccess]').trigger('click');
 						}
@@ -53,9 +53,9 @@
 				$.each(data, function(i, item) {
 
 					if (datanum == $(data[i]).data('num')){				
-						console.log(data[i]);
+						// console.log(data[i]);
 						let p=$(data[i]).parent();
-						console.log("hasClass "+p.hasClass('check-vis'));				
+						// console.log("hasClass "+p.hasClass('check-vis'));				
 						if(!p.hasClass('check-vis')){
 							p.find('input[id^=someSwitchOptionSuccess]').trigger('click');
 						}
@@ -77,13 +77,13 @@
 				$popup.css('display', 'none');
 			}
 		});
-
+// скрытие при клике на html, body
 		$('html, body').on('click', function(e){
 			
-			if ($(e.target).closest('.checkselect').length == 0){
+			// if ($(e.target).closest('.checkselect').length == 0){
 				
-				$('.checkselect-popup').css('display', 'none');
-			}
+			// 	$('.checkselect-popup').css('display', 'none');
+			// }
 		});
 	};
 })(jQuery);	

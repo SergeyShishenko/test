@@ -1,4 +1,4 @@
-
+// dist\js\selectcell.js
 var arrsel=[];
 var prod=0;
 var prod2=0;
@@ -15,8 +15,8 @@ var selection = {
         // arrsel.length=0;
         var till = $(el).index(this.slcr),
             from = this.last;
-            console.log('От '+from);
-            console.log('До '+till);
+            // console.log('От '+from);
+            // console.log('До '+till);
             // $('#res').text('От '+from +' '+'До '+till);
         if (from > till) till = [from, from = till][0];//console.log('till '+till);
         $('#timeGrid tr').not($('#timeGrid tr').eq(this.last)).removeClass(this.cl);
@@ -34,7 +34,7 @@ var selection = {
           });
     },
     ctrl: function(el) {
-        console.log('Class pressedTime - '+$(el).hasClass(this.cl));
+        // console.log('Class pressedTime - '+$(el).hasClass(this.cl));
         // $(el).addClass(this.cl);
         this.last = $(el).index(this.slcr);
         // console.log('last '+this.last);
@@ -64,7 +64,7 @@ var selection = {
 };
 $('body').on('click','#timeGrid tr', function(e) {
     // alert();
-    console.log($(this).find("[id^='someSwitchOptionSuccess_']").prop('checked'));
+    // console.log($(this).find("[id^='someSwitchOptionSuccess_']").prop('checked'));
 // console.log($(this).find("[id^='someSwitchOptionSuccess']").prop('checked'));
 method = !e.shiftKey && !e.ctrlKey ? 'single' : (e.shiftKey ? 'shift' : 'ctrl');
 selection[method](this);

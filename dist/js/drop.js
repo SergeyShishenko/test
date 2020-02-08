@@ -515,7 +515,7 @@
                     // var myData =    "recordToDelete=xlscsv/"+currfile;
                     // alert(currfile );
                     var myData =  {
-                                     recordToDelete : "xlscsv/"+currfile,
+                                     recordToDelete : "vpi/"+currfile,
                                      arrcurrT : arrcurrT
                                     };
                     jQuery.ajax({
@@ -685,7 +685,7 @@ function delfiles()
     // console.log('arrcurrT.length '+arrcurrT.length);
     if (arrcurrT.length>0){
     var myData =  {
-        recordToDelete : "xlscsv/"+currfile,
+        recordToDelete : "vpi/"+currfile,
         arrcurrT : arrcurrT
        };
         jQuery.ajax({
@@ -708,7 +708,7 @@ function delfiles()
 
     // console.log('arrcurrT.length '+arrcurrT.length);
     var myData2 =  {
-        recordToDelete : "xlscsv/"+$('#currfile').val(),
+        recordToDelete : "vpi/"+$('#currfile').val(),
         arrcurrT : arrcurrT
        };
         jQuery.ajax({
@@ -742,8 +742,10 @@ function checkAddress(checkbox,s)
         
        
     });
+
+    // alert($("#currfile").val());
     var myData =  {
-        recordToDelete : "xlscsv/"+currfile,
+        recordToDelete : $("#currfile").val(),
         arrcurrT : arrcurrT
        };
         jQuery.ajax({

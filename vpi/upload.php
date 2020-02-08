@@ -145,12 +145,18 @@ if(isset($_POST["arr"]) )//генерация файла
 
 if(isset($_POST["recordToDelete"]) )
 {
-	if (unlink($_POST["recordToDelete"])){
-		echo "Файл: ".$_POST["recordToDelete"]." удален!";
-		
-	}else{
-		echo "Ошибка(recordToDelete)! Файл: ".$_POST["recordToDelete"]." не удален!";
-	}
+
+	if (file_exists($_POST["recordToDelete"])) {
+			if (unlink($_POST["recordToDelete"])){
+				echo "Файл: ".$_POST["recordToDelete"]." удален!";
+				
+			}else{
+				echo "Ошибка(recordToDelete)! Файл: ".$_POST["recordToDelete"]." не удален!";
+			}
+		}
+
+
+
 	if(isset($_POST["arrcurrT"]) )
 	{
 		foreach($_POST["arrcurrT"] as $val) { 
@@ -338,6 +344,8 @@ function fileopenxlscsv($filename)
 	
 	if(isset($_POST["selorder"]) )
 		{
+			$fileDrop=end(explode("/",$filename));
+			// $filename=$_SERVER['DOCUMENT_ROOT'] .$site. $filename;
 			$filename=$_SERVER['DOCUMENT_ROOT'] .$site. $filename;
 			// $objWriter->save($_SERVER['DOCUMENT_ROOT'] .$site."/vpi/".$fname);// для localhost !!!!!!!
 	// 			echo "filename $filename";
@@ -889,7 +897,7 @@ function fileopenxlscsv($filename)
 	
 		echo '</table>'; 
 		// файл
-		echo '<input type="hidden" id="currfile" value="'.$filename.'" form="frm">' ; 
+		echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ; 
 		echo "<script>
 		$('.checkselect').checkselect();
 		//  var arrch=['1','2'];
