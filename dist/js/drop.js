@@ -393,10 +393,6 @@
                 // загружаем страницу и передаем значения, используя HTTP POST запрос 
                 //  dataplas= $.merge( {tbl : "obj", field : "name_obj"}, dataArray[index]);
                 $.post('./vpi/upload.php', dataArray[index] , function(data) {
-                
-                
-                    // ++x;
-                 
                     restartFiles();
                     $('#drop-files').hide();
                     $('#table-saved-files').hide();
@@ -404,24 +400,24 @@
                         $(this).removeClass('pressedTime');                   
                     });
                     $('#uploaded-files').append(data);
-                if($("#currfile").val()){var clickedID = $("#currfile").val().split("."); 
-                    DbNumberID = clickedID[0]; //и получаем номер из массива
-                    
-                    objxlsx.push(DbNumberID);
-                    // objxlsx[DbNumberID]=(new Objx(DbNumberID));
-                    objxlsx[DbNumberID]=[];
-                    $('#DelSubmit').show();
-                    $('#CreateSubmit').show();
-                     floor={}; //Этаж
-                     room={}; //Помещение
-                     complect={}; //Комплект изделий
-                     product={}; //Изделия
-                     arr_s=[];
-                     arr_table=[];
-                     arr_prev=[];
-                }
-                    
-                    
+                     if($("#currfile").val()){var clickedID = $("#currfile").val().split("."); 
+                            DbNumberID = clickedID[0]; //и получаем номер из массива
+                            
+                            objxlsx.push(DbNumberID);
+                            // objxlsx[DbNumberID]=(new Objx(DbNumberID));
+                            objxlsx[DbNumberID]=[];
+                            // $('#DelSubmit').show();
+                            $('#CreateSubmit').show();
+                            floor={}; //Этаж
+                            room={}; //Помещение
+                            complect={}; //Комплект изделий
+                            product={}; //Изделия
+                            arr_s=[];
+                            arr_table=[];
+                            arr_prev=[];
+                        }
+                            
+                     $('#DelSubmit').show();
                      
                  
                     $("body #uploaded-files table.zakaz  tr:gt(0)").each(function (index, value) { 
@@ -438,8 +434,11 @@
                     }
                     
                     });
-                        });
-                    });
+                });
+                
+
+
+            });
 
         }
         
@@ -515,7 +514,8 @@
                     // var myData =    "recordToDelete=xlscsv/"+currfile;
                     // alert(currfile );
                     var myData =  {
-                                     recordToDelete : "vpi/"+currfile,
+                                    //  recordToDelete : "vpi/"+currfile,
+                                     recordToDelete : currfile,
                                      arrcurrT : arrcurrT
                                     };
                     jQuery.ajax({
@@ -642,32 +642,32 @@ $(window).bind('beforeunload',function(e){
    
 
 });
-// window.onbeforeunload = function(e) {
-//     // e.preventDefault();
-//     // alert("thrownError");
-//     // return false;
-//     // var myData =  {
-//     //     recordToDelete : "xlscsv/"+$('#currfile').val(),
-//     //     arrcurrT : arrcurrT
-//     //    };
-//     //     jQuery.ajax({
-//     //     type: "POST", // HTTP метод  POST или GET
-//     //     url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
-//     //     dataType:"text", // Тип данных
-//     //     data:myData, //post переменные
-//     //     success:function(response){
-//     //     // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-//     //     console.log(response);
+window.onbeforeunload = function(e) {
+    e.preventDefault();
+    // alert("thrownError");
+    // return false;
+    var myData =  {
+        recordToDelete : $('#currfile').val()
+        // arrcurrT : arrcurrT
+       };
+        jQuery.ajax({
+        type: "POST", // HTTP метод  POST или GET
+        url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
+        dataType:"text", // Тип данных
+        data:myData, //post переменные
+        success:function(response){
+        // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+        console.log(response);
         
 
-//     //     },
-//     //     error:function (xhr, ajaxOptions, thrownError){
-//     //     //выводим ошибку
-//     //     alert(thrownError);
-//     //     }
-//     //     });
+        },
+        error:function (xhr, ajaxOptions, thrownError){
+        //выводим ошибку
+        alert(thrownError);
+        }
+        });
      
-//   };
+  };
 
 function delfiles()
 {
@@ -1408,62 +1408,72 @@ $("#order_table tbody td").click(function(){
   });
   
   function fnselcsv(f){
-    // $(this).parent().find("td:eq(1)");
-    // alert($(this).parent().find("td:eq(1)").text());
-    // dataArray.push({name : file.name, value : this.result, bground : background, type : tmime, id : $("#id").val().split("_")[1]});
-    // dataArray.push({selorder : $(this).parent().find("td:eq(1)").text()+".csv",type : "excel"});
-    $.post('./vpi/upload.php', {selorder : "/vpi/xlscsv/"+f+".csv"} , function(data)
-    {
+            // $(this).parent().find("td:eq(1)");
+            // alert($(this).parent().find("td:eq(1)").text());
+            // dataArray.push({name : file.name, value : this.result, bground : background, type : tmime, id : $("#id").val().split("_")[1]});
+            // dataArray.push({selorder : $(this).parent().find("td:eq(1)").text()+".csv",type : "excel"});
+    //  var jqxhr = $.post('./vpi/upload.php', {selorder : "/vpi/xlscsv/"+f+".csv"} , function(data)
+     $.post('./vpi/upload.php', {selorder : "/vpi/xlscsv/"+f+".csv"} , function(data)
+            {
+                        
+                        
+                // ++x;
+            
+                // restartFiles();
+                $('#drop-files').hide();
+                $('#table-saved-files').hide();
+                $.each($("#order_table tbody tr"), function() {
+                    $(this).removeClass('pressedTime');                   
+                });
+                // alert(data);
+                $('#uploaded-files').append(data);
+                $('#uploaded-files').show();
+
+                // console.log('$("#currfile").val() '+ $("#currfile").val() );
+                var currfileval=$("#currfile").val();
+                if (typeof(currfileval) !== "undefined" && currfileval !== "" && currfileval !== null){
+
+                    var clickedID = currfileval.split("."); //Разбиваем строку (Split работает аналогично PHP explode)
+                    DbNumberID = clickedID[0]; //и получаем номер из массива
+                    
+                    objxlsx.push(DbNumberID);
+                    // objxlsx[DbNumberID]=(new Objx(DbNumberID));
+                    objxlsx[DbNumberID]=[];
+                }
+
+
+
+                $('#DelSubmit').show();
+                $('#CreateSubmit').show();
+                floor={}; //Этаж
+                room={}; //Помещение
+                complect={}; //Комплект изделий
+                product={}; //Изделия
+                arr_s=[];
+                arr_table=[];
+                arr_prev=[];
                 
+            
+                $("body #uploaded-files table.zakaz  tr:gt(0)").each(function (index, value) { 
+                // console.log('tr '+ index );
+                var c = $(this).find('td[id^="product"]').text();
+                var c2 = $(this).find('td[id^="product2"]').text();
+                if (c2==""){
+                    // console.log('tr' + index + ':' + c); 
+                    arr_table[index]=c;
+                }
+                else{
+                    // console.log('tr' + index + ':' + c2);
+                    arr_table[index]=c2;
+                }
                 
-        // ++x;
-     
-        // restartFiles();
-        $('#drop-files').hide();
-        $('#table-saved-files').hide();
-        $.each($("#order_table tbody tr"), function() {
-            $(this).removeClass('pressedTime');                   
-        });
-        // alert(data);
-        $('#uploaded-files').append(data);
-        $('#uploaded-files').show();
+                });
+            });//$.post
+            // jqxhr.fail(function() {
+            //     alert( "fail" );
+            //   });
 
-
-
-        var clickedID = $("#currfile").val().split("."); //Разбиваем строку (Split работает аналогично PHP explode)
-        DbNumberID = clickedID[0]; //и получаем номер из массива
-        
-        objxlsx.push(DbNumberID);
-        // objxlsx[DbNumberID]=(new Objx(DbNumberID));
-        objxlsx[DbNumberID]=[];
-        $('#DelSubmit').show();
-        $('#CreateSubmit').show();
-         floor={}; //Этаж
-         room={}; //Помещение
-         complect={}; //Комплект изделий
-         product={}; //Изделия
-         arr_s=[];
-         arr_table=[];
-         arr_prev=[];
-         
-     
-        $("body #uploaded-files table.zakaz  tr:gt(0)").each(function (index, value) { 
-        // console.log('tr '+ index );
-        var c = $(this).find('td[id^="product"]').text();
-        var c2 = $(this).find('td[id^="product2"]').text();
-        if (c2==""){
-            // console.log('tr' + index + ':' + c); 
-            arr_table[index]=c;
         }
-        else{
-            // console.log('tr' + index + ':' + c2);
-            arr_table[index]=c2;
-        }
-        
-        });
-    });//$.post
-
-}
 // 
 function PrintElem(elem)
     {

@@ -238,7 +238,8 @@ if ($mime =="csv")
 			// 	$tbl="obj_download";
 			// 	break;
 			case "excel":
-				$uploaddir = 'xlscsv/';
+				// $uploaddir = 'xlscsv/';
+				$uploaddir = '';
 				// $field="xls_obj";
 				// $tbl="obj_download";
 				break;
@@ -341,10 +342,10 @@ function fileopenxlscsv($filename)
 		// require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
 		$site='/www';
 	}
-	
+	$fileDrop=end(explode("/",$filename));
 	if(isset($_POST["selorder"]) )
 		{
-			$fileDrop=end(explode("/",$filename));
+			// $fileDrop=end(explode("/",$filename));
 			// $filename=$_SERVER['DOCUMENT_ROOT'] .$site. $filename;
 			$filename=$_SERVER['DOCUMENT_ROOT'] .$site. $filename;
 			// $objWriter->save($_SERVER['DOCUMENT_ROOT'] .$site."/vpi/".$fname);// для localhost !!!!!!!
@@ -433,6 +434,8 @@ function fileopenxlscsv($filename)
 			$address  = $arraybuffer[$address_key];//Объект
 			$number_order = $arraybuffer[$number_order_key]; //№ заказа
 			$number_complect = $arraybuffer[$number_complect_key]; //№ комплекта
+
+
 			$complect = $arraybuffer[$complect_key]; //Наименование комплекта
 			$product = $arraybuffer[$product_key]; //№ изделия по приложению
 			$product2 = $arraybuffer[$product2_key]; //№ изделия по повт.приложению
@@ -498,11 +501,33 @@ function fileopenxlscsv($filename)
 		$array=$data;
 	// сохранение номеров комплектов
 		$arrS_number_complect=array();
-		for ($row=1; $row < count ($array); $row++) { 			
+		for ($row=1; $row < count ($array); $row++) { 
+			
+			// echo "номер комплекта ".$array[$row][5]."<br>";
+			if ($array[$row][5]==""){
+				$array[$row][5]="--";
+			}
+
 			array_push($arrS_number_complect,$array[$row][5]);
 		}
 		$arr_number_complect = array_unique($arrS_number_complect);
 		sort($arr_number_complect);
+
+		// var_dump($arr_number_complect);
+
+		// exit();
+
+    //    // пастое значение
+	//    $arr_number_complect = array_replace(
+	// 	$arr_number_complect,
+	// 		array_fill_keys(
+	// 			array_keys(
+	// 				preg_grep('/^$/', $arr_number_complect)
+	// 			),
+	// 			'-'
+	// 		)
+	// 	);
+		
 		// array_flip(array_flip($arr_number_complect));
 		
 
