@@ -893,6 +893,19 @@
                                     'spng'=>"noPNG",                                            
                                     
                                     'overlay'=>false 
+                                ),
+                            
+                                array(
+                                    'path'=>$path_img."",
+                                    'id-name'=> "antropologiya-30",// имя файла без версии -v?
+                                    'version'=>"",
+                                    'alt'=>"Стандартные размеры",
+                                    'xls'=>"",
+                                    'pdf'=>"",
+                                    'prnt'=>"noPrint",
+                                    'spng'=>"noPNG",                                            
+                                    
+                                    'overlay'=>false 
                                 )
                             
 
