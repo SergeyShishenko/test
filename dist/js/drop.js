@@ -642,32 +642,32 @@ $(window).bind('beforeunload',function(e){
    
 
 });
-window.onbeforeunload = function(e) {
-    e.preventDefault();
-    // alert("thrownError");
-    // return false;
-    var myData =  {
-        recordToDelete : $('#currfile').val()
-        // arrcurrT : arrcurrT
-       };
-        jQuery.ajax({
-        type: "POST", // HTTP метод  POST или GET
-        url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
-        dataType:"text", // Тип данных
-        data:myData, //post переменные
-        success:function(response){
-        // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-        console.log(response);
+// window.onbeforeunload = function(e) {
+//     e.preventDefault();
+//     // alert("thrownError");
+//     // return false;
+//     var myData =  {
+//         recordToDelete : $('#currfile').val()
+//         // arrcurrT : arrcurrT
+//        };
+//         jQuery.ajax({
+//         type: "POST", // HTTP метод  POST или GET
+//         url: "./vpi/upload.php", //url-адрес, по которому будет отправлен запрос
+//         dataType:"text", // Тип данных
+//         data:myData, //post переменные
+//         success:function(response){
+//         // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+//         console.log(response);
         
 
-        },
-        error:function (xhr, ajaxOptions, thrownError){
-        //выводим ошибку
-        alert(thrownError);
-        }
-        });
+//         },
+//         error:function (xhr, ajaxOptions, thrownError){
+//         //выводим ошибку
+//         alert(thrownError);
+//         }
+//         });
      
-  };
+//   };
 
 function delfiles()
 {
