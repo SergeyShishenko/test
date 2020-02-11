@@ -1,21 +1,14 @@
-csv start 06.02.20 
-csv 06.02.20
+bazisspecification2 start 11.02.20 
 
-Текущий коммит: csv 09.02.20 
-    (Генерация титульных листов, добавление фильтра № комплекта")
+
+Текущий коммит: bazisspecification2 11.02.20 
+    ("Запись спецификайии из базиса в ведомость")
     ИЗМЕНЕНИЯ: 
         vpi\upload.php
-        dist\js\checkselect.js
-        dist\css\checkselect.css
-        inc\inc-head.php
-        inc\inc-footer.php
-        inc\inc-footer2.php
-        inc\inc-version-css-js.php
-        dist\js\drop.js
-        dist\js\selectcell.js
-
-        для работы:
-        !other\checkselect sample.html
+        vpi\getxlsx-bazis-specification2.php
+        
+       
+       
         
         
         

@@ -1,5 +1,5 @@
 <?php
-// vpi\getxlsx-bazis-specification.php
+// vpi\getxlsx-bazis-specification2.php
 // bazis specification2
 # подключаем библиотеку
 // echo "$_SERVER[DOCUMENT_ROOT]/www/Classes/PHPExcel.php";
@@ -21,6 +21,7 @@ $sheet = $Excel->getActiveSheet();
 $highestRow = $sheet->getHighestRow(); // e.g. 10
 $highestColumn = $sheet->getHighestColumn(); // e.g 'F'
 $highestColumnIndex = PHPExcel_Cell::columnIndexFromString($highestColumn); // e.g. 5
+echo $_POST['name'] .'<br>';
 echo $highestRow .' строк<br>';
 echo $highestColumn  .' Максимальная литера<br>';
 echo $highestColumnIndex .' Максимальная литера по счёту<br>';
@@ -54,7 +55,7 @@ foreach ($rowIterator as $row) {
           //  if ($cell->getCalculatedValue()){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
           //  else{echo '<td> пусто</td>';}
            
-           $array[] = 'P-'.($row_num-3).'-'.$cell->getCoordinate();;
+           $array[] = 'Panel-'.($row_num-3).'-'.$cell->getCoordinate();;
           // echo "Строка '$findme' не найдена в строке '$mystring'";
           
       } else if ($pos_furn !== false) { 
@@ -62,7 +63,7 @@ foreach ($rowIterator as $row) {
 
         //  if ($cell->getCalculatedValue()==""){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
         //  else{echo '<td> пусто</td>';}
-         $array[] = 'F-'.($row_num-3).'-'.$cell->getCoordinate();
+         $array[] = 'Furniture-'.($row_num-3).'-'.$cell->getCoordinate();
           // echo "Строка '$findme' найдена в строке '$mystring'";
           // echo " в позиции $pos";
          
@@ -143,7 +144,7 @@ echo 'Всего '.$row_num.' строк';
         $last_num=(explode("-", $array[$to])[1])-2;
     } 
     
-        if (strpos($array[$i], "P") !== false) {
+        if (strpos($array[$i], "Panel") !== false) {
         
 
         $array_panel[]=$from_num.'-'.$last_num;
@@ -157,7 +158,7 @@ print_r( $array_panel);
 echo "furn";
 print_r( $array_furn);
 echo "</pre>";
-echo '<input type="hidden" id="currfile" value="'.$randomName.'" form="frm">' ; 	
+echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ; 	
 // echo '<input type="hidden" id="currfile" value="'.$File.'" form="frm">' ; 	
 
  ?>

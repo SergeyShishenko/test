@@ -293,14 +293,17 @@ elseif ($mime =="xls")
 {
 	switch ($type) {	
 		case "excel":
-			$uploaddir = 'xlscsv/';			
+			// $uploaddir = 'xlscsv/';			
+			$uploaddir = '';			
 		break;		
 	}
 
 	$randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 	if(file_put_contents($uploaddir.$randomName, $decodedData)) {		
 		$filename=$uploaddir.$randomName;
-		// зарплата
+		$fileDrop=end(explode("/",$filename));
+		
+		
 		// require_once "$_SERVER[DOCUMENT_ROOT]$site/vpi/getxlsx.php"; 
 		
 		// Базис-спецификация
