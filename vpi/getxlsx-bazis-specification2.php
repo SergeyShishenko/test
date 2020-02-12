@@ -214,35 +214,47 @@ echo "</pre>";
     echo "<br>The worksheet ".$worksheetTitle." has ";
     echo $nrColumns . ' columns (A-' . $highestColumn . ') ';
     echo ' and ' . $highestRow . ' row.';
-    echo '<br>Data: <table border="1">';
+    // echo '<br>Data: <table border="1">';
+    $separator=":";
     for ($row = 1; $row <= $highestRow; ++ $row) {
-      echo '<tr>';
-      readRowByNember($row,$sheet,$highestColumnIndex);
-      echo '</tr>';
+      // echo '<tr>';
+     $arrRow = readRowByNember($row,$sheet,$highestColumnIndex,$separator);
+      // foreach ($arrRow as $row) {
+      //   echo '<td>' . $row . '</td>';
+      // }
+      // echo "<pre>";
+      // print_r( $array_panel);
+      // echo "</pre>";
+      // echo '</tr>';
+      echo "<pre>";
+    print_r( $arrRow);
+    echo "</pre>";
     }
-    echo '</table>';
+    // echo '</table>';
 
 /////////////////////////////////////////////////
 function readRowByNember($row,$sheet,$highestColumnIndex,$separator=""){
   
-  
+  $arr=array();
   // echo '<td>' . $highestColumnIndex . '</td>';
         for ($col = 0; $col < $highestColumnIndex; ++ $col) {
             $cell = $sheet->getCellByColumnAndRow($col, $row);
             $val = $cell->getValue();
             $dataType = PHPExcel_Cell_DataType::dataTypeForValue($val);
             // echo '<td>' . $val . '<br>(Typ ' . $dataType . ')</td>';
-            echo '<td>' . $val . $separator . '</td>';
+            array_push($arr,$val);
+            // echo '<td>' . $val . $separator . '</td>';
         }
+        return $arr;
         
 }
 /////////////////////////////////////////////////
-$separator=":";
-readRowByNember(6,$sheet,$highestColumnIndex,$separator);
-echo '<br>';
-readRowByNember(64,$sheet,$highestColumnIndex,$separator);
+// $separator=":";
+// print_r(readRowByNember(6,$sheet,$highestColumnIndex,$separator));//!!!
+// echo '<br>';
+// print_r(readRowByNember(64,$sheet,$highestColumnIndex,$separator));//!!!
 
 echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ; 	
-// echo '<input type="hidden" id="currfile" value="'.$File.'" form="frm">' ; 	
+
 
  ?>
