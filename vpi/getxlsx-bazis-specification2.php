@@ -28,6 +28,7 @@ echo $highestColumnIndex .' Максимальная литера по счёт�
 $row_num=0;
 
 $array = array();
+$furniture = array();
     
 echo '<table border="1">';
 
@@ -44,33 +45,32 @@ foreach ($rowIterator as $row) {
   
     $row_num++;
 	echo "<tr>";
-		
-	foreach ($cellIterator as $cell) {
+  echo '<td>'.$row_num.'</td>';
+	foreach ($cellIterator as $cell) {   
 
         $pos_panel = strpos($cell->getCalculatedValue(), "Спецификация на панели");
         $pos_furn = strpos($cell->getCalculatedValue(), "Спецификация на крепеж");
-        if ($pos_panel !== false) {         
 
-           
+        if ($pos_panel !== false) {
           //  if ($cell->getCalculatedValue()){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
-          //  else{echo '<td> пусто</td>';}
-           
+          //  else{echo '<td> пусто</td>';}           
            $array[] = 'Panel-'.($row_num-3).'-'.$cell->getCoordinate();;
-          // echo "Строка '$findme' не найдена в строке '$mystring'";
-          
+          // echo "Строка '$findme' не найдена в строке '$mystring'";          
       } else if ($pos_furn !== false) { 
         //  echo '<td>'.$cell->getCalculatedValue().' '.$cell->getCoordinate().'</td>';
 
         //  if ($cell->getCalculatedValue()==""){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
         //  else{echo '<td> пусто</td>';}
-         $array[] = 'Furniture-'.($row_num-3).'-'.$cell->getCoordinate();
+         $array[] = 'Furniture-'.($row_num-3).'-'.$cell->getCoordinate();        
           // echo "Строка '$findme' найдена в строке '$mystring'";
           // echo " в позиции $pos";
          
       } else { 
         // echo "<td>" . $cell->getCalculatedValue() .' ['.$cell->getCoordinate(). "]</td>";
         // if ($cell->getCalculatedValue()){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
-        if ($cell->getCalculatedValue()){echo '<td>'.$cell->getCalculatedValue().'</td>';}
+        if ($cell->getCalculatedValue()){
+          echo '<td>'.$cell->getCalculatedValue().'</td>';
+        }
            else{echo '<td> </td>';}
       }
 
@@ -82,6 +82,9 @@ foreach ($rowIterator as $row) {
 	echo "</tr>";
 }//$row
 echo "</table>";
+
+
+
   // Вывод сформированного массива в виде HTML таблиц(ы) :
 //    foreach($lists as $list){
 //     $row_num=0;
@@ -158,6 +161,24 @@ print_r( $array_panel);
 echo "furn";
 print_r( $array_furn);
 echo "</pre>";
+
+
+// $row_num=0;
+// foreach ($rowIterator as $row) {
+// 	// Получили ячейки текущей строки и обойдем их в цикле
+//   $cellIterator = $row->getCellIterator();
+  
+//     $row_num++;
+
+// 	foreach ($cellIterator as $cell) {
+//     echo "<pre>";
+//     echo $row_num;
+	  
+//     echo $cell->getCalculatedValue();	
+// 	}//$cell	
+
+// }//$
+
 echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ; 	
 // echo '<input type="hidden" id="currfile" value="'.$File.'" form="frm">' ; 	
 
