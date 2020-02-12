@@ -17,14 +17,15 @@ $Excel = PHPExcel_IOFactory::load($File);
 $Excel->setActiveSheetIndex(0);
 // Получаем активный лист
 $sheet = $Excel->getActiveSheet();
+$worksheetTitle = $sheet->getTitle();
 
 $highestRow = $sheet->getHighestRow(); // e.g. 10
 $highestColumn = $sheet->getHighestColumn(); // e.g 'F'
 $highestColumnIndex = PHPExcel_Cell::columnIndexFromString($highestColumn); // e.g. 5
 echo $_POST['name'] .'<br>';
-echo $highestRow .' строк<br>';
+echo $highestRow .' строк<br>'; // начало с 1
 echo $highestColumn  .' Максимальная литера<br>';
-echo $highestColumnIndex .' Максимальная литера по счёту<br>';
+echo $highestColumnIndex .' Максимальная литера по счёту<br>'; // начало с 1
 $row_num=0;
 
 $array = array();
@@ -45,7 +46,7 @@ foreach ($rowIterator as $row) {
   
     $row_num++;
 	echo "<tr>";
-  echo '<td>'.$row_num.'</td>';
+  // echo '<td>'.$row_num.'</td>';
 	foreach ($cellIterator as $cell) {   
 
         $pos_panel = strpos($cell->getCalculatedValue(), "Спецификация на панели");
@@ -184,7 +185,8 @@ echo '
 Для получения значения ячейки, в листе сначала должна быть найдена ячейка с использованием метода getCellByColumnAndRow. Значение ячейки может быть получено с помощью следующей команды:
 ';
 echo "<pre>";
-echo '$objPHPExcel->getActiveSheet()->getCellByColumnAndRow(1, 8)->getValue()';
+echo '$objPHPExcel->getActiveSheet()->getCellByColumnAndRow(0, 10)->getValue()<br>';
+echo $sheet->getCellByColumnAndRow(0, 10)->getValue();// колонки с 0, строки с 1
 echo "</pre>";
 
 // $row_num=0;
@@ -202,6 +204,43 @@ echo "</pre>";
 // 	}//$cell	
 
 // }//$
+
+
+/////////////////////////////////////////////////
+
+
+
+    $nrColumns = ord($highestColumn) - 64;
+    echo "<br>The worksheet ".$worksheetTitle." has ";
+    echo $nrColumns . ' columns (A-' . $highestColumn . ') ';
+    echo ' and ' . $highestRow . ' row.';
+    echo '<br>Data: <table border="1">';
+    for ($row = 1; $row <= $highestRow; ++ $row) {
+      echo '<tr>';
+      readRowByNember($row,$sheet,$highestColumnIndex);
+      echo '</tr>';
+    }
+    echo '</table>';
+
+/////////////////////////////////////////////////
+function readRowByNember($row,$sheet,$highestColumnIndex,$separator=""){
+  
+  
+  // echo '<td>' . $highestColumnIndex . '</td>';
+        for ($col = 0; $col < $highestColumnIndex; ++ $col) {
+            $cell = $sheet->getCellByColumnAndRow($col, $row);
+            $val = $cell->getValue();
+            $dataType = PHPExcel_Cell_DataType::dataTypeForValue($val);
+            // echo '<td>' . $val . '<br>(Typ ' . $dataType . ')</td>';
+            echo '<td>' . $val . $separator . '</td>';
+        }
+        
+}
+/////////////////////////////////////////////////
+$separator=":";
+readRowByNember(6,$sheet,$highestColumnIndex,$separator);
+echo '<br>';
+readRowByNember(64,$sheet,$highestColumnIndex,$separator);
 
 echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ; 	
 // echo '<input type="hidden" id="currfile" value="'.$File.'" form="frm">' ; 	
