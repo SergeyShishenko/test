@@ -65,15 +65,16 @@ foreach ($rowIterator as $row) {
           // echo "Строка '$findme' найдена в строке '$mystring'";
           // echo " в позиции $pos";
          
-      } else { 
-        // echo "<td>" . $cell->getCalculatedValue() .' ['.$cell->getCoordinate(). "]</td>";
-        // if ($cell->getCalculatedValue()){echo '<td>'.$cell->getCalculatedValue().'  ('.$cell->getCoordinate().')</td>';}
-        if ($cell->getCalculatedValue()){
-          echo '<td>'.$cell->getCalculatedValue().'</td>';
-        }
-           else{echo '<td> </td>';}
       }
-
+      //  else { 
+        
+      //   if ($cell->getCalculatedValue()){
+        
+      //     echo '<td>'.$cell->getValue().'</td>';
+      //   }
+      //      else{echo '<td> </td>';}
+      // }
+      echo '<td>'.$cell->getValue().'</td>';
         
         
 
@@ -125,11 +126,28 @@ echo "</table>";
 //         echo '</table>';
 //         echo 'Всего '.$row_num.' строк';
 //    }//foreach($lists as $list)
+
+
+
+
 echo 'Всего '.$row_num.' строк';
+// echo 'Всего '.count($cellIterator).' строк';
+
+
+
+
+// echo "<pre>";
+// 	print_r( $cellIterator);
+//   echo "</pre>";
+
 
 	echo "<pre>";
 	print_r( $array);
   echo "</pre>";	
+
+
+
+
   $array_panel = array();
   $array_furn = array();
   $arr_length = count($array); 
@@ -161,7 +179,13 @@ print_r( $array_panel);
 echo "furn";
 print_r( $array_furn);
 echo "</pre>";
-
+echo '
+ПОЛУЧЕНИЕ ЗНАЧЕНИЯ ЯЧЕЙКИ ПО СТРОКАМ И СТОЛБЦАМ
+Для получения значения ячейки, в листе сначала должна быть найдена ячейка с использованием метода getCellByColumnAndRow. Значение ячейки может быть получено с помощью следующей команды:
+';
+echo "<pre>";
+echo '$objPHPExcel->getActiveSheet()->getCellByColumnAndRow(1, 8)->getValue()';
+echo "</pre>";
 
 // $row_num=0;
 // foreach ($rowIterator as $row) {
