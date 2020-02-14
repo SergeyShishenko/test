@@ -39,7 +39,7 @@
 
 					if (datanum == $(data[i]).data('num')){				
 						// console.log(data[i]);
-						let p=$(data[i]).parent();	
+						var p=$(data[i]).parent();	
 						// console.log("hasClass "+p.hasClass('check-vis'));	
 						if(p.hasClass('check-vis')){
 							p.find('input[id^=someSwitchOptionSuccess]').trigger('click');
@@ -54,7 +54,7 @@
 
 					if (datanum == $(data[i]).data('num')){				
 						// console.log(data[i]);
-						let p=$(data[i]).parent();
+						var p=$(data[i]).parent();
 						// console.log("hasClass "+p.hasClass('check-vis'));				
 						if(!p.hasClass('check-vis')){
 							p.find('input[id^=someSwitchOptionSuccess]').trigger('click');

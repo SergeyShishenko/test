@@ -215,8 +215,8 @@ if ($shablonyClass=='class="active"'){
 ?>
 <script>
 $("#pr-move").click(function() {
-    let m1 = $(this).parent().parent().find("#image-gallery-image").attr("src").slice(1);;
-    let m2 = $(this).parent().parent().find("#pr-download").attr("href").slice(1);;
+    var m1 = $(this).parent().parent().find("#image-gallery-image").attr("src").slice(1);;
+    var m2 = $(this).parent().parent().find("#pr-download").attr("href").slice(1);;
     // let m3 = $(this).parent().parent().find("#image-gallery-image").attr("src");
     // let m1new = m1.replace("GALLERY", "GALLERY/SBOROCHNYE-EDINICY");
     // let m2new = m2.replace("GALLERY", "GALLERY/SBOROCHNYE-EDINICY");
@@ -224,7 +224,7 @@ $("#pr-move").click(function() {
     // alert( m1 +"\n" + m2 + "\n\n" +"Перенести?")
     if(confirm( m1 +"\n" + m2 + "\n\n" +"Перенести?")){
 
-      let data = "img="+ m1 +'&dwg=' + m2;
+      var data = "img="+ m1 +'&dwg=' + m2;
 		$.ajax({
 			url: 'users/moveFileToSE.php',
 			type: 'POST',
