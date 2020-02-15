@@ -1,11 +1,14 @@
 bazisspecification2 start 11.02.20 
 
 
-Текущий коммит: bazisspecification2 11.02.20 
+Текущий коммит: bazisspecification3 15.02.20 
     ("Запись спецификайии из базиса в ведомость")
     ИЗМЕНЕНИЯ: 
         vpi\upload.php
-        vpi\getxlsx-bazis-specification2.php
+        vpi\getxlsx-bazis-specification3.php
+        vendor\
+        vpi\htmlStringToXLS.php
+
         
        
        
