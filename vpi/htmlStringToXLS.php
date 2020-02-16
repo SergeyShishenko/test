@@ -6,7 +6,8 @@ if(file_exists($_SERVER['DOCUMENT_ROOT'] . '/www/index.php')){
     $site = $_SERVER['DOCUMENT_ROOT'] ."./"; 
 }
 // echo $_SERVER['DOCUMENT_ROOT'] . '/www/index.php';
-echo $site . 'vendor/autoload.php';
+// echo $site . 'vendor/autoload.php';
+echo __DIR__ . PHP_EOL ;
 require $site . 'vendor/autoload.php';
 $htmlString = '<table>
 <tr>
