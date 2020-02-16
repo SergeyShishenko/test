@@ -151,4 +151,4 @@ class SimpleImage {
 //       <input type="submit" name="submit" value="Upload" />
 //     </form>';
 //   echo $form;
-}
+// }
