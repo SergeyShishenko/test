@@ -408,9 +408,9 @@ function fileopenxlscsv($filename)
 
 				$check_val = array_search('Исполнитель Диз.проекта', $arraybuffer);//Исполнитель Диз.проекта				
 				if ($check_val !== false){
-					$kbKD_key=$check_val;
+					$kbDP_key=$check_val;
 				}else{
-					$kbKD_key="Не назначен";
+					$kbDP_key="Не назначен";
 				}
 
 
@@ -537,7 +537,7 @@ function fileopenxlscsv($filename)
 
 		$exclude=array("0","1","2");// исключаемые индексы
 
-		// if (trim($data[1][20])=='н.д.' || $data[1][0]==$data[1][20] ){$agent_data ="";}else{$agent_data =$data[1][20];}
+		if (trim($data[1][21])=='н.д.' || $data[1][0]==$data[1][21] ){$agent_data ="";}else{$agent_data =$data[1][21];}
         
 		echo "<div class='sticky row row-mod'>";
 			echo "<div >";
