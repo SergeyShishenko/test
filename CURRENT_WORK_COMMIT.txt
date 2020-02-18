@@ -8,6 +8,9 @@ bazisspecification2 start 11.02.20
         vpi\getxlsx-bazis-specification3.php
         vendor\
         vpi\htmlStringToXLS.php
+        vpi\VPI_templatePhpSpreadsheet.php
+
+        dist\js\vpi.js
 
         
        
