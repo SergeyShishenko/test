@@ -19,7 +19,8 @@ require $site . 'vendor/phpoffice/phpspreadsheet/samples/Header.php';
 $helper->log('Load from Xls template');
 $reader = IOFactory::createReader('Xls');
 // echo __DIR__ . '/../templates/30template.xls';
-$spreadsheet = $reader->load($site . 'vpi/templates/300template.xls');
+$templatefile='300Template.xls';
+$spreadsheet = $reader->load($site . 'vpi/templates/' . $templatefile);
 
 $helper->log('Add new data to the template');
 $data = [['title' => 'Excel for dummies',
@@ -52,8 +53,16 @@ foreach ($data as $r => $dataRow) {
 $spreadsheet->getActiveSheet()->removeRow($baseRow - 1, 1);
 
 // Save
-// $helper->write($spreadsheet, __FILE__);
-// $helper->write($spreadsheet, __FILE__);
-echo __DIR__. '\\WRITE\\';
-$helper->write(__DIR__. '\\WRITE\\', 'write300.xls');
+// $helper->write($spreadsheet, __DIR__);
+$helper->write($spreadsheet, "BE300_Template.xls");
+$path = sys_get_temp_dir().'/phpspreadsheet/';
+rename($path . 'BE300_Template.xls', __DIR__ ."/WRITE/". 'RE300_Template.xls');
+// echo __FILE__;
+// echo __DIR__;
+// $helper->write(__DIR__. '\\WRITE\\', 'write300.xls');
 // $helper->write($site . 'WRITE/write30.xls');
+
+// $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
+// $spreadsheet = $reader->load("05featuredemo.xlsx");
+// $writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, "Xlsx");
+// $writer->save("05featuredemo.xlsx");
