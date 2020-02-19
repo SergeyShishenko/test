@@ -176,19 +176,28 @@ if(isset($_POST['ids']))//генерация xls
         // $objWriter->save(str_replace('.php', '.xls', __FILE__));
         // echo dirname(__FILE__)."\/vpi-".date('m-d-Y').".xls", EOL;
         $fname="vpi-".date('m-d-Y-H-i-s').".xls";
+        
 
         
 
 
         $helper->write($spreadsheet, $fname);
         $path = sys_get_temp_dir().'/phpspreadsheet/';
+        // $fnameX=$path . $fname.".xlsx";
         rename($path . $fname, __DIR__ ."/WRITE/". $fname);
-        // удалить xlsx...
+        rename($path . $fname."x", __DIR__ ."/WRITE/". $fname."x");
+        // удалить xlsx... 
+        $un=  __DIR__ ."/WRITE/". $fname."x" ;   
+        unlink($un);
 
 
         // $arr_output["output"]=__DIR__ ."/WRITE/". $fname;
         // echo __DIR__ ."/WRITE/". $fname;
+
         echo "vpi/WRITE/". $fname;
+        // echo $un;
+        // echo "<br>";
+        
 
         // $writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');
         // $writer->save(__DIR__ ."/WRITE/". $fname);
