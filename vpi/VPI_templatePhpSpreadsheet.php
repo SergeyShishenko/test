@@ -1,4 +1,5 @@
 <?php
+// vpi\VPI_templatePhpSpreadsheet.php
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
 use PhpOffice\PhpSpreadsheet\Worksheet\Drawing as drawing; // Instead PHPExcel_Worksheet_Drawing
@@ -56,6 +57,7 @@ if(isset($_POST['ids']))//генерация xls
    // require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
     $ids=$_POST['ids'];
     $data =  array();
+    $arr_output =  array();
 
     // $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
     // $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
@@ -114,25 +116,7 @@ if(isset($_POST['ids']))//генерация xls
 
 
 
-
-        // $objReader = PHPExcel_IOFactory::createReader('Excel5');
-
-        // if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/" . $templatefile)) {
-        //     $spreadsheet = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/" . $templatefile);// для сайта !!!!!!!
-        // }
-        // else {
-        //     $spreadsheet = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/" . $templatefile);// для localhost !!!!!!!
-        // }
-    
-
-        // $spreadsheet = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/VPI_template.xls");// для сайта !!!!!!!
-        // $spreadsheet = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/VPI_template.xls");// для localhost !!!!!!!
-
-     
-
-        // $spreadsheet->getActiveSheet()->setCellValue('D1', PHPExcel_Shared_Date::PHPToExcel(time()));
-
-        $baseRow = 4;
+        $baseRow = 3;
         foreach($data as $r => $dataRow) {
             $row = $baseRow + $r;
             $spreadsheet->getActiveSheet()->insertNewRowBefore($row,1);
@@ -193,31 +177,24 @@ if(isset($_POST['ids']))//генерация xls
         // echo dirname(__FILE__)."\/vpi-".date('m-d-Y').".xls", EOL;
         $fname="vpi-".date('m-d-Y-H-i-s').".xls";
 
+        
+
 
         $helper->write($spreadsheet, $fname);
         $path = sys_get_temp_dir().'/phpspreadsheet/';
         rename($path . $fname, __DIR__ ."/WRITE/". $fname);
-
-        // if (file_exists($_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'])) {
-        //     $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
-        // }
-        // else {
-        //     $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
-        // }
-
-        // $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
-        // $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/".$fname);// для localhost !!!!!!!
-        echo "./vpi/".$fname;
-        // echo date('H:i:s') , " Файл, записанный из " , str_replace('.php', '.xls', pathinfo(__FILE__, PATHINFO_BASENAME)) , EOL;
+        // удалить xlsx...
 
 
-        // Echo memory peak usage
-        // echo date('H:i:s') , " Пиковое использование памяти: " , (memory_get_peak_usage(true) / 1024 / 1024) , " MB" , EOL;
+        $arr_output['output']=__DIR__ ."/WRITE/". $fname;
 
-        // Echo done
-        // echo date('H:i:s') , " Запись файла завершена" , EOL;
-        // echo 'Файл был создан в дериктории ' , getcwd() , EOL;
+        // $writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');
+        // $writer->save(__DIR__ ."/WRITE/". $fname);
+
+        echo json_encode($arr_output['output']);
+      
         unset($data);
+        unset($arr_output);
     // генерация
 }
 elseif (isset($_POST['addids'])) {

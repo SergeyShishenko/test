@@ -25,7 +25,7 @@ $("body").on("click","#checkout",function() { //СГЕНЕРИРОВАТЬ ВЕ�
         // console.log( index + ": change-" + $( this ).data('change') );
         if ($( this ).data('change')=="1"){
             
-            $.post('vpi/VPI_template.php', {'change': '1','fid': $( this ).data('fid'),'val': $( this ).val()}, function(data) { 
+            $.post('vpi/VPI_templatePhpSpreadsheet.php', {'change': '1','fid': $( this ).data('fid'),'val': $( this ).val()}, function(data) { 
                 console.log(data);
                 $( this ).data('change','0');
            
@@ -40,10 +40,12 @@ $("body").on("click","#checkout",function() { //СГЕНЕРИРОВАТЬ ВЕ�
     // ids_list.push('2,15');// ids_list.push('obj_furnitur_prop_id : 2, count : 15'); 
     
     // загружаем страницу и передаем значения, используя HTTP POST запрос       
-        $.post('vpi/VPI_template.php', {'ids[]': ids_list}, function(data) { 
-            console.log(data);
+        $.post('vpi/VPI_templatePhpSpreadsheet.php', {'ids[]': ids_list}, function(data) { 
+            // console.log(data);
+            var arr=JSON.parse(data);
+            console.log(arr['output']);
             // href="./vpi/vpi-12-10-2018-06-44-55.xls"
-            $('#checkoutd').attr("href", data);
+            $('#checkoutd').attr("href", arr['output']);
             $('#checkoutd').show();
             $('#loading1').hide();
         });
@@ -73,7 +75,7 @@ $("body").on("click","[id^=\'addvpi\']",function() {// alert('ВПИ');
 
      var cartcontent_vis = $('#header #cart .content').css('display');
   // загружаем страницу и передаем значения, используя HTTP POST запрос       
-    $.post('vpi/VPI_template.php', {'addids[]': add_ids_list}, function(data) { 
+    $.post('vpi/VPI_templatePhpSpreadsheet.php', {'addids[]': add_ids_list}, function(data) { 
     // console.log(data);
     $('#vpi').html(data);
     if (cartcontent_vis=="block"){$('#header #cart .content').show();}
@@ -109,7 +111,7 @@ $("body").on("click","[id^=\'each_addvpi\']",function() {// alert('ВПИ');
     if(count_all>0)
         {var cartcontent_vis = $('#header #cart .content').css('display');
         // загружаем страницу и передаем значения, используя HTTP POST запрос       
-        $.post('vpi/VPI_template.php', {'addids[]': add_ids_list}, function(data) { 
+        $.post('vpi/VPI_templatePhpSpreadsheet.php', {'addids[]': add_ids_list}, function(data) { 
     
         $('#vpi').html(data);
         if (cartcontent_vis=="block"){$('#header #cart .content').show();}
@@ -148,7 +150,7 @@ $('body').on('click', 'td.remove img', function() {
     }     
     
     $('#loading1').show();
-    $.post('vpi/VPI_template.php', {'del': DbNumberID}, function(data) { 
+    $.post('vpi/VPI_templatePhpSpreadsheet.php', {'del': DbNumberID}, function(data) { 
     console.log(data);
     $('#loading1').hide();
     });
