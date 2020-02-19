@@ -51,13 +51,13 @@ if(isset($_POST['ids']))//генерация xls
     // else {
     //     require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
     // }
-    require $site . 'vendor/phpoffice/phpspreadsheet/samples/Header.php';
+    require $site . 'vendor/phpoffice/phpspreadsheet/samples/HeaderVPI.php';
 
     // require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
    // require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
     $ids=$_POST['ids'];
     $data =  array();
-    $arr_output =  array();
+    // $arr_output =  array();
 
     // $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
     // $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
@@ -108,7 +108,7 @@ if(isset($_POST['ids']))//генерация xls
     // генерация
         // echo date('H:i:s') , " Загрузка из шаблона Excel5" , EOL;
 
-        $helper->log('Load from Xls template');
+        // $helper->log('Load from Xls template');
         $reader = IOFactory::createReader('Xls');
         // echo __DIR__ . '/../templates/30template.xls';
         $templatefile='VPI_template.xls';
@@ -116,7 +116,7 @@ if(isset($_POST['ids']))//генерация xls
 
 
 
-        $baseRow = 3;
+        $baseRow = 4;
         foreach($data as $r => $dataRow) {
             $row = $baseRow + $r;
             $spreadsheet->getActiveSheet()->insertNewRowBefore($row,1);
@@ -164,7 +164,7 @@ if(isset($_POST['ids']))//генерация xls
                 // $objDrawing->getShadow()->setDirection(45);  
             } 
         }
-        // $spreadsheet->getActiveSheet()->removeRow($baseRow-1,1);//удаление строки
+        $spreadsheet->getActiveSheet()->removeRow($baseRow-1,1);//удаление строки
         // // Always include the complete filter range!
         // // Excel does support setting only the caption
         // // row, but that's not a best practise...
@@ -186,15 +186,17 @@ if(isset($_POST['ids']))//генерация xls
         // удалить xlsx...
 
 
-        $arr_output['output']=__DIR__ ."/WRITE/". $fname;
+        // $arr_output["output"]=__DIR__ ."/WRITE/". $fname;
+        // echo __DIR__ ."/WRITE/". $fname;
+        echo "vpi/WRITE/". $fname;
 
         // $writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, 'Xlsx');
         // $writer->save(__DIR__ ."/WRITE/". $fname);
 
-        echo json_encode($arr_output['output']);
+        // echo json_encode($arr_output);
       
         unset($data);
-        unset($arr_output);
+        // unset($arr_output);
     // генерация
 }
 elseif (isset($_POST['addids'])) {

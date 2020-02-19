@@ -41,11 +41,11 @@ $("body").on("click","#checkout",function() { //СГЕНЕРИРОВАТЬ ВЕ�
     
     // загружаем страницу и передаем значения, используя HTTP POST запрос       
         $.post('vpi/VPI_templatePhpSpreadsheet.php', {'ids[]': ids_list}, function(data) { 
-            // console.log(data);
-            var arr=JSON.parse(data);
-            console.log(arr['output']);
+            console.log(data);
+            // var arr=JSON.parse(data);
+            // console.log(arr["output"]);
             // href="./vpi/vpi-12-10-2018-06-44-55.xls"
-            $('#checkoutd').attr("href", arr['output']);
+            $('#checkoutd').attr("href", data);
             $('#checkoutd').show();
             $('#loading1').hide();
         });
