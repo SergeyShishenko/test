@@ -9,6 +9,7 @@ bazisspecification2 start 11.02.20
         vendor\
         vpi\htmlStringToXLS.php
         vpi\VPI_templatePhpSpreadsheet.php
+        inc\inc-version-css-js.php
 
         dist\js\vpi.js
 

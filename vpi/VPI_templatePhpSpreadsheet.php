@@ -38,33 +38,18 @@ if (!mysqli_set_charset($dbconn, "utf8")) {
 } else {
     //printf("Текущий набор символов: %s\n", mysqli_character_set_name($link));
 }
-/** PHPExcel_IOFactory */
+
 $Result_user = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LIKE '%".$hash."%'");
 $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
 $user_sofia_id=$row_user['user_sofia_id'];
 
 if(isset($_POST['ids']))//генерация xls
-{
-    // if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php')) {
-    //     require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
-    // }
-    // else {
-    //     require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
-    // }
+{  
     require $site . 'vendor/phpoffice/phpspreadsheet/samples/HeaderVPI.php';
-
-    // require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
-   // require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
     $ids=$_POST['ids'];
+
+
     $data =  array();
-    // $arr_output =  array();
-
-    // $Result_user = mysqli_query($dbconn,"SELECT *  FROM `user` WHERE `sess_id` = '$sess_id'");//MySQL запрос
-    // $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
-    // $hash=$row_user['s_id'];
-
-    
-
   // выбираем все записи текущей сессии
     $sql = "SELECT *  FROM `user_vpi` WHERE vpi_hash_id = '$hash'";
     $User_vpi_Result=mysqli_query($dbconn,$sql);
