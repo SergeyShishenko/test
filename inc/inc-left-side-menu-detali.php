@@ -37,7 +37,7 @@
                     </li>
                         <!-- menu -->
                         <li class="menu">                                
-                            <a href="detali-profili.php" class="list-group-item dblstr-lg dblstr-xl   dblstr-md dblstr-sm '.$item_profili_Class.'">Профили гладкие (устаревшие)</a>
+                            <a href="detali-profili.php" class="list-group-item dblstr-lg dblstr-xl   dblstr-md dblstr-sm '.$item_profili_Class.'">Профили гладкие (архив)</a>
                             <ul class="list-group sub_menu">
                                 <li class="menu2">
                                     <a  class="list-group-item sub"  href="detali-profili.php#profili-nakladki">Накладки</a>
