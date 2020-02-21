@@ -1484,7 +1484,7 @@ function PrintElem(elem)
  
     function Popup(data)
     {
-        var mywindow = window.open('', 'Печать CNC', 'height=500,width=600');
+        var mywindow = window.open('', 'Печать CNC', 'height=600,width=840');
         mywindow.document.write('<html><head><title>Печать CNC</title>');
         /*optional stylesheet*/ //mywindow.document.write('<link rel="stylesheet" href="main.css" type="text/css" />');
         mywindow.document.write('</head><body >');
