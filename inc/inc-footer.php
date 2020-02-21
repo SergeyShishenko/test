@@ -44,10 +44,11 @@
                                     <input type="file" id="uploadbtn" multiple  >
                                     <!-- </form> -->
                                 </div>
+                                <?php if($role =="admin"){ ?>
                                 <div id="out_CNC"></div>
                                 <input type="button" value="Печать CNC" onclick="PrintElem('#out_CNC')" />
                                 <input type="button" value="Очистить" onclick="Reset('#out_CNC')" />
-
+                                <?php } ?>
 
                                 <? include 'vpi/inc-list-csv.php'; ?>
                                 
