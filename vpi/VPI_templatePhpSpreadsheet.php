@@ -135,7 +135,7 @@ if(isset($_POST['ids']))//генерация xls
                 // $sheet->getRowDimension(2)->setRowHeight(190);
                 // $logo->setWorksheet($sheet);
                 // $spreadsheet->getActiveSheet()->setCellValue('K'.$row, $imagePath);
-                $objDrawing = new drawing();;
+                $objDrawing = new drawing();
                 $objDrawing->setWorksheet($spreadsheet->getActiveSheet());                                          
                 $objDrawing->setName('Paid');
                 $objDrawing->setDescription('Paid');
