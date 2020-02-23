@@ -28,7 +28,7 @@ $worksheetTitle = $sheet->getTitle();
 
 $highestRow = $sheet->getHighestRow(); // e.g. 10
 $highestColumn = $sheet->getHighestColumn(); // e.g 'F'
-$highestColumnIndex = \PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFromString($highestColumn); // e.g. 5
+$highestColumnIndex = Coord::columnIndexFromString($highestColumn); // e.g. 5
 // echo $_POST['name'] .'<br>';
 // echo $highestRow .' строк<br>'; // начало с 1
 // echo $highestColumn  .' Максимальная литера<br>';
@@ -39,6 +39,7 @@ $cell_num=0;
 
 $array = array();
 $furniture = array();
+$arrIndex = array();
     
 // echo '<table border="1">';
 
@@ -73,39 +74,30 @@ foreach ($rowIterator as $row) {
 
             switch ($cell->getCalculatedValue()) {
               case "Заказ":
-                $order=$cell->getCoordinate();
+                $arrIndex[0] =get_colomn_index($cell); 
                   break;
               case "Изделие":
-                $product=$cell->getCoordinate();
+                $arrIndex[1]=get_colomn_index($cell); 
                   break;
               case "СЕ":
-                $SE=$cell->getCoordinate();
+                $arrIndex[2]=get_colomn_index($cell); 
                   break;
               case "Поз.":
-                $pos_=$cell->getCoordinate();
+                $arrIndex[3]=get_colomn_index($cell); 
                   break;
               case "Артикул":
-                $articul=$cell->getCoordinate();
-                preg_match('/^[A-Z]+/', $articul, $matches);
-                $articul2=\PhpOffice\PhpSpreadsheet\Cell\Coordinate::columnIndexFromString($matches[0]);
-                // $articul2=$matches[0];
+                $arrIndex[4]=get_colomn_index($cell);                
                   break;
               case "Наименование":
-                $def=$cell->getCoordinate();
+                $arrIndex[5]=get_colomn_index($cell); 
                   break;
               case "Кол-во":
-                $count_=$cell->getCoordinate();
+                $arrIndex[6]=get_colomn_index($cell); 
                   break;
               case "Примечание":
-                $note=$cell->getCoordinate();
+                $arrIndex[7]=get_colomn_index($cell); 
                   break;
              
-              // case 1:
-              //     echo "i равно 1";
-              //     break;
-              // case 2:
-              //     echo "i равно 2";
-              //     break;
             }
           }
 
@@ -116,8 +108,8 @@ foreach ($rowIterator as $row) {
 	// echo "</tr>";
 }//$row
 // echo "</table>";
-echo '$articul '.$articul;
-echo '<br>$articul2 '.$articul2;
+
+
 // print_r($matches);
 
 
@@ -176,9 +168,9 @@ echo '<br>$articul2 '.$articul2;
 //   echo "</pre>";
 
 
-	echo "<pre>";
-	print_r( $array);
-  echo "</pre>";	
+	// echo "<pre>";
+	// print_r( $array);
+  // echo "</pre>";	
 
 
 
@@ -225,7 +217,8 @@ for($i=0;$i<count($array_furn);$i++)
   echo '<br><table border="1">';
   for($j=$from_num;$j<$to;$j++) 
   {
-    readRowByNember($j,$sheet,$highestColumnIndex);
+    // readRowByNember1($j,$sheet,$highestColumnIndex);//удалить
+    readRowByNember2($j,$sheet,$arrIndex);
   }
   echo '</table>';
 
@@ -292,23 +285,42 @@ for($i=0;$i<count($array_furn);$i++)
     // echo '</table>';
 
 /////////////////////////////////////////////////
-function readRowByNember($row,$sheet,$highestColumnIndex,$separator=""){
+// function readRowByNember1($row,$sheet,$highestColumnIndex,$separator=""){
   
-  // $arr=array();
-  // echo '<td>' . $highestColumnIndex . '</td>';
-  echo '<tr>';
-        for ($col = 1; $col < $highestColumnIndex; ++ $col) {
-            $cell = $sheet->getCellByColumnAndRow($col, $row);
-            $val = $cell->getValue();
-            // $dataType = \PhpOffice\PhpSpreadsheet\Cell\DataType::TYPE_STRING;
-            // echo '<td>' . $val . '<br>(Typ ' . $dataType . ')</td>';
-            // array_push($arr,$val);
-            // echo '<td>' . $val . $separator . '</td>';
-            echo '<td>' . $val .  '</td>';
-        }
-  echo '</tr>';
-        return $arr;
+//   // $arr=array();
+//   // echo '<td>' . $highestColumnIndex . '</td>';
+//   echo '<tr>';
+//         for ($col = 1; $col < $highestColumnIndex; ++ $col) {
+//             $cell = $sheet->getCellByColumnAndRow($col, $row);
+//             $val = $cell->getValue();
+//             // $dataType = \PhpOffice\PhpSpreadsheet\Cell\DataType::TYPE_STRING;
+//             // echo '<td>' . $val . '<br>(Typ ' . $dataType . ')</td>';
+//             // array_push($arr,$val);
+//             // echo '<td>' . $val . $separator . '</td>';
+//             echo '<td>' . $val .' $'. $articulIndex . '</td>';
+//         }
+//   echo '</tr>';
+//         return $arr;
         
+// }
+function readRowByNember($row,$sheet,$arrIndex){  
+  // $arr=array();  
+  echo '<tr>';    
+        foreach ( $arrIndex as $index ) {           
+            $cell = $sheet->getCellByColumnAndRow($index, $row);
+            $val = $cell->getValue();         
+            echo '<td>' . $val .'</td>';         
+          }          
+  echo '</tr>';
+        return $arr;        
+}
+
+function get_colomn_index($cell){
+  preg_match('/^[A-Z]+/', $cell->getCoordinate(), $matches);  
+  // $Cell_Index = Coord::columnIndexFromString($matches[0]);
+  // echo $cell->getValue() ." - ".$Cell_Index . "<br>";
+  // return $Cell_Index;
+  return Coord::columnIndexFromString($matches[0]);
 }
 /////////////////////////////////////////////////
 // $separator=":";
