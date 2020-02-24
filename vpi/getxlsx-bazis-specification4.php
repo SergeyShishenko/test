@@ -4,11 +4,13 @@
 require_once '../vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xls;
-use \PhpOffice\PhpSpreadsheet\Cell\DataType;
+// use \PhpOffice\PhpSpreadsheet\Cell\DataType as DType;
 use \PhpOffice\PhpSpreadsheet\Cell\Coordinate as Coord;
 # Указываем путь до файла .xlsx
 $File = $_SERVER['DOCUMENT_ROOT'] . "/www/vpi/$filename";
-$reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls(); 
+echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
+$reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
+$reader->setReadDataOnly(true); 
 $Excel =  $reader->load($File);;
 //Далее формируем массив из всех листов Excel файла с помощью цикла:
 // Устанавливаем индекс активного листа
@@ -26,6 +28,8 @@ $highestColumnIndex = Coord::columnIndexFromString($highestColumn); // e.g. 5
 // echo $highestColumnIndex .' Максимальная литера по счёту<br>'; // начало с 1
 $row_num=0;
 $cell_num=0;
+$Order=0;
+$Product=0;
 // $head=false;
 
 $array = array();
@@ -126,28 +130,51 @@ for($i=0;$i<count($array_furn);$i++)
   $from_num=$num[0];
   $to=$num[1];
   echo "from " . $from_num . " to " . $to . "<br>";
+  // $Order=0;
+  // $Product=0;
+  $Order = $sheet->getCellByColumnAndRow(2, $from_num)->getValue();
+  $Product = $sheet->getCellByColumnAndRow(2, $from_num+1)->getValue();
+  echo "Order " . $Order. "<br>"; 
+  echo "Product " . $Product. "<br>"; 
   echo '<br><table border="1">';
-  for($j=$from_num;$j<$to;$j++) 
+  for($j=$from_num+4;$j<$to;$j++) 
   {  
-    readRowByNember($j,$sheet,$arrIndex);
+    readRowByNember($j,$sheet,$arrIndex,$Order,$Product);
   }
   echo '</table>';
 }
 
-function readRowByNember($row,$sheet,$arrIndex){  
+function readRowByNember($row,$sheet,$arrIndex,$Order,$Product){  
   // $arr=array();  
   echo '<tr>';    
         foreach ( $arrIndex as $index ) {           
             $cell = $sheet->getCellByColumnAndRow($index, $row);
-            $val = $cell->getValue();         
-            echo '<td>' . $val .'</td>';         
+            // $val = $cell->getCalculatedValue();
+
+            switch ($index) {
+              case 1:
+                $cell->getCalculatedValue() ? $val = $cell->getCalculatedValue() : $val = $Order;
+              break;
+              case 2:
+                $cell->getCalculatedValue() ? $val = $cell->getCalculatedValue() : $val = $Product;
+              break;
+              default;
+                $val = $cell->getCalculatedValue();
+              break;
+            }
+            
+         
+
+            echo '<td>' . $val .'</td>';  
+            // $dataType = DType::TYPE_STRING;
+             
           }          
   echo '</tr>';
-        return $arr;        
+        // return $arr;        
 }
 
 function get_colomn_index($cell){
   preg_match('/^[A-Z]+/', $cell->getCoordinate(), $matches); 
   return Coord::columnIndexFromString($matches[0]);
 }
-echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
+// echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
