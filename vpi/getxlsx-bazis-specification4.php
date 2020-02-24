@@ -178,3 +178,22 @@ function get_colomn_index($cell){
   return Coord::columnIndexFromString($matches[0]);
 }
 // echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
+
+// проверка строки артикула из входящего файла
+function strip_data($text)
+{
+    $quotes = array ("\x27", "\x22", "\x60", "\t", "\n", "\r", "*", "%", "<", ">", "?", "!" );
+    // $goodquotes = array ("-", "+", "#" );
+    $goodquotes = array ( "+", "#" );
+    $repquotes = array ("\-", "\+", "\#" );
+    $text = trim( strip_tags( $text ) );
+    $text = str_replace( $quotes, '', $text );
+    $text = str_replace( $goodquotes, $repquotes, $text );
+    $text = ereg_replace(" +", " ", $text);
+            
+    return $text;
+}
+//Пример использования фильтрации:
+// $input_text = strip_data($_GET['input_text']);
+// $input_text = htmlspecialchars($input_text);
+// $input_text = mysqli_real_escape_string($dbconn,$input_text);

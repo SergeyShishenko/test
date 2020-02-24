@@ -13,6 +13,8 @@ bazisspecification2 start 11.02.20
 
         dist\js\vpi.js
 
+       \TABLES\configDB.php
+
         
        
        
