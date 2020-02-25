@@ -64,28 +64,28 @@ foreach ($rowIterator as $row) {
 
             switch ($cell->getCalculatedValue()) {
               case "Заказ":
-                $arrIndex[0] =get_colomn_index($cell); 
+                $arrIndex[0] =get_colomn_index($cell); //1
                   break;
               case "Изделие":
-                $arrIndex[1]=get_colomn_index($cell); 
+                $arrIndex[1]=get_colomn_index($cell); //2
                   break;
               case "СЕ":
-                $arrIndex[2]=get_colomn_index($cell); 
+                $arrIndex[2]=get_colomn_index($cell); //3
                   break;
               case "Поз.":
-                $arrIndex[3]=get_colomn_index($cell); 
+                $arrIndex[3]=get_colomn_index($cell); //4
                   break;
               case "Артикул":
-                $arrIndex[4]=get_colomn_index($cell);                
+                $arrIndex[4]=get_colomn_index($cell); //5               
                   break;
               case "Наименование":
-                $arrIndex[5]=get_colomn_index($cell); 
+                $arrIndex[5]=get_colomn_index($cell); //6
                   break;
               case "Кол-во":
-                $arrIndex[6]=get_colomn_index($cell); 
+                $arrIndex[6]=get_colomn_index($cell); //8
                   break;
               case "Примечание":
-                $arrIndex[7]=get_colomn_index($cell); 
+                $arrIndex[7]=get_colomn_index($cell); //9
                   break;             
             }
           }
@@ -128,6 +128,7 @@ for($i=0;$i<count($array_furn);$i++)
 { 
   $num=explode("-", $array_furn[$i]);
   $from_num=$num[0];
+  $start_num=$from_num+4;
   $to=$num[1];
   echo "from " . $from_num . " to " . $to . "<br>";
   // $Order=0;
@@ -136,39 +137,63 @@ for($i=0;$i<count($array_furn);$i++)
   $Product = $sheet->getCellByColumnAndRow(2, $from_num+1)->getValue();
   echo "Order " . $Order. "<br>"; 
   echo "Product " . $Product. "<br>"; 
-  echo '<br><table border="1">';
-  for($j=$from_num+4;$j<$to;$j++) 
+  // echo "<pre>";
+  // echo "arrIndex";
+  // print_r( $arrIndex);
+  // echo "</pre>";
+  echo '<br><table border="1" style="width: 100%;">';
+  for($j=$start_num;$j<$to;$j++) 
   {  
-    readRowByNember($j,$sheet,$arrIndex,$Order,$Product);
+    readRowByNember($j,$sheet,$arrIndex,$Order,$Product,$start_num);
   }
   echo '</table>';
 }
 
-function readRowByNember($row,$sheet,$arrIndex,$Order,$Product){  
+function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num){  
   // $arr=array();  
   echo '<tr>';    
-        foreach ( $arrIndex as $index ) {           
-            $cell = $sheet->getCellByColumnAndRow($index, $row);
-            // $val = $cell->getCalculatedValue();
+        // foreach ( $arrIndex as $index ) {           
+        //     $cell = $sheet->getCellByColumnAndRow($index, $row);
+        //     // $val = $cell->getCalculatedValue();
 
-            switch ($index) {
-              case 1:
-                $cell->getCalculatedValue() ? $val = $cell->getCalculatedValue() : $val = $Order;
-              break;
-              case 2:
-                $cell->getCalculatedValue() ? $val = $cell->getCalculatedValue() : $val = $Product;
-              break;
-              default;
-                $val = $cell->getCalculatedValue();
-              break;
-            }
+        //     switch ($index) {
+        //       case 1:
+        //         $cell->getCalculatedValue() ? $val = $cell->getCalculatedValue() : $val = $Order;
+        //       break;
+        //       case 2:
+        //         $cell->getCalculatedValue() ? $val = $cell->getCalculatedValue() : $val = $Product;
+        //       break;
+        //       default;
+        //         $val = $cell->getCalculatedValue();
+        //       break;
+        //     }
             
          
+            $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() : $val = $Order;
+            echo '<td>' . $val .'</td>';  //1
+            $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() : $val = $Product;
+            echo '<td>' . $val .'</td>';  //2
 
-            echo '<td>' . $val .'</td>';  
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //3
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() .'</td>';  //4
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue() .'</td>';  //5
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //6
+            if ($row==$start_num){
+              echo '<td>' . 'Поставщик' .'</td>';  //7
+              echo '<td>' . 'Цвет' .'</td>';  //8
+              echo '<td>' . 'Ед.измерения' .'</td>';  //9
+
+            }else{
+              echo '<td>' . '' .'</td>';  //7
+            echo '<td>' . '' .'</td>';  //8
+            echo '<td>' . '' .'</td>';  //9
+            }
+            
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() .'</td>';  //10
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  //11
             // $dataType = DType::TYPE_STRING;
              
-          }          
+          // }          
   echo '</tr>';
         // return $arr;        
 }
