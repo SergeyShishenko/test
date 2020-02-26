@@ -142,7 +142,7 @@ for($i=0;$i<count($array_furn);$i++)
   // print_r( $arrIndex);
   // echo "</pre>";
   echo '<br><table border="1" style="width: 100%;">';
-  for($j=$start_num;$j<$to;$j++) 
+  for($j=$start_num;$j<=$to;$j++) 
   {  
     readRowByNember($j,$sheet,$arrIndex,$Order,$Product,$start_num);
   }
@@ -176,7 +176,14 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num){
 
             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //3
             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() .'</td>';  //4
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue() .'</td>';  //5
+            $articul = trim($sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue()); //5 Артикул
+            if ($articul !="" && $row != $start_num){
+              // var_dump($articul);exit();
+                echo '<td>' . htmlspecialchars($articul) .'</td>'; 
+            }else{
+              echo '<td>' . $articul .'</td>'; 
+            }
+            
             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //6
             if ($row==$start_num){
               echo '<td>' . 'Поставщик' .'</td>';  //7
@@ -204,21 +211,7 @@ function get_colomn_index($cell){
 }
 // echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
 
-// проверка строки артикула из входящего файла
-function strip_data($text)
-{
-    $quotes = array ("\x27", "\x22", "\x60", "\t", "\n", "\r", "*", "%", "<", ">", "?", "!" );
-    // $goodquotes = array ("-", "+", "#" );
-    $goodquotes = array ( "+", "#" );
-    $repquotes = array ("\-", "\+", "\#" );
-    $text = trim( strip_tags( $text ) );
-    $text = str_replace( $quotes, '', $text );
-    $text = str_replace( $goodquotes, $repquotes, $text );
-    $text = ereg_replace(" +", " ", $text);
-            
-    return $text;
-}
-//Пример использования фильтрации:
+// Пимер использования фильтрации:
 // $input_text = strip_data($_GET['input_text']);
 // $input_text = htmlspecialchars($input_text);
 // $input_text = mysqli_real_escape_string($dbconn,$input_text);
