@@ -6,6 +6,11 @@ use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xls;
 // use \PhpOffice\PhpSpreadsheet\Cell\DataType as DType;
 use \PhpOffice\PhpSpreadsheet\Cell\Coordinate as Coord;
+
+// define('__ROOT__', dirname(dirname(__FILE__))); 
+require_once dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php' ;
+require_once dirname(dirname(__FILE__)).'/vendor/MyClass/class_DataBase.php';
+
 # Указываем путь до файла .xlsx
 $File = $_SERVER['DOCUMENT_ROOT'] . "/www/vpi/$filename";
 echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
@@ -209,9 +214,12 @@ function get_colomn_index($cell){
   preg_match('/^[A-Z]+/', $cell->getCoordinate(), $matches); 
   return Coord::columnIndexFromString($matches[0]);
 }
-// echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
 
-// Пимер использования фильтрации:
-// $input_text = strip_data($_GET['input_text']);
-// $input_text = htmlspecialchars($input_text);
-// $input_text = mysqli_real_escape_string($dbconn,$input_text);
+
+$db = class_DataBase::getDB(); // Создаём объект базы данных
+$query = "SELECT * FROM `obj_furnitur_prop` WHERE `color_obj_prop` = {?} AND `made_furnitur_obj` = {?}";
+$table = $db->select($query, array("Оцинкованный", "BLUM")); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+$query = "SELECT `user_login` FROM `sofia_users` WHERE `user_mail` = {?}";
+$login = $db->selectCell($query, array("serge-meb@mail.ru"));// Запрос должен вывести конкретную ячейку, поэтому вызываем метод selectCell()
+// var_dump($table);
+var_dump($login);
