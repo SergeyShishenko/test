@@ -244,4 +244,5 @@ function get_colomn_index($cell){
   }
 ////!!!!!!!!!!!!!!!!!!!!!!!//////
 
-// ДОБАВИТЬ ПСЕВДОНИМЫ ALIAS  АРТИКУЛОВ
+// ДОБАВИТЬ ПСЕВДОНИМЫ ALIAS  АРТИКУЛОВ SELECT * FROM table1,table2 WHERE table1.name='vasya' AND table2.firstname='pupkin';
+// obj_furnitur_alias_articul

@@ -1,4 +1,5 @@
 <?php
+// admin\Create_Table_MySQL!.php
 // include 'inc/inc-session-start.php';
 // include_once("configDB.php");
 define('__ROOT__', dirname(dirname(__FILE__))); 
@@ -522,6 +523,25 @@ if (mysqli_query($dbconn, $query)) echo "CHANGE COLUMN img_def в таблице
 else echo "Поле не изменено: ".mysqli_error($dbconn);
 }
 mysqli_close($dbconn);
+
+
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
+$query = "CREATE TABLE IF NOT EXISTS obj_furnitur_alias_articul(
+    alias_articul_id INT NOT NULL AUTO_INCREMENT,
+    obj_furnitur_prop_id INT,
+    alias_articul VARCHAR(255),
+    PRIMARY KEY (alias_articul_id))";
+
+if (mysqli_query($dbconn, $query)) echo "Таблица obj_furnitur_alias_articul создана.<br>";
+else echo "Таблица obj_furnitur_alias_articul не создана: ".mysqli_error($dbconn);
+
+mysqli_close($dbconn);
+
+
+////
  
 // //$encoding = pg_client_encoding($dbconn);
 
