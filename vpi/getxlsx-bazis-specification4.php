@@ -189,25 +189,28 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
               $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} ";
                $table = $db->select($query, array($articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
                 if ($table){
-                  echo '<td>' . $table[0]['articul_furnitur_obj'] .' !!!</td>'; 
+                  echo '<td>' . $table[0]['articul_furnitur_obj'] .' </td>'; 
+                  echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  //6
                 }else{
                   echo '<td>' . $articul .'</td>'; 
+                  echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //6
                 }
                 
             }else{
               echo '<td>' . $articul .'</td>'; 
+             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //6
             }
             
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //6
+            // echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //6
             if ($row==$start_num){
               echo '<td>' . 'Поставщик' .'</td>';  //7
               echo '<td>' . 'Цвет' .'</td>';  //8
               echo '<td>' . 'Ед.измерения' .'</td>';  //9
 
             }else{
-              echo '<td>' . '' .'</td>';  //7
-            echo '<td>' . '' .'</td>';  //8
-            echo '<td>' . '' .'</td>';  //9
+              echo '<td>' . $table[0]['made_furnitur_obj'] .'</td>';  //7
+            echo '<td>' . $table[0]['color_obj_prop'] .'</td>';  //8
+            echo '<td>' . $table[0]['unit_obj_prop'] .'</td>';  //9
             }
             
             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() .'</td>';  //10
@@ -240,3 +243,5 @@ function get_colomn_index($cell){
     echo "{$key} => {$value} <br> "; 
   }
 ////!!!!!!!!!!!!!!!!!!!!!!!//////
+
+// ДОБАВИТЬ ПСЕВДОНИМЫ ALIAS  АРТИКУЛОВ
