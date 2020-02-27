@@ -146,15 +146,17 @@ for($i=0;$i<count($array_furn);$i++)
   // echo "arrIndex";
   // print_r( $arrIndex);
   // echo "</pre>";
+  $db = class_DataBase::getDB(); // Создаём объект базы данных
   echo '<br><table border="1" style="width: 100%;">';
   for($j=$start_num;$j<=$to;$j++) 
   {  
-    readRowByNember($j,$sheet,$arrIndex,$Order,$Product,$start_num);
+    readRowByNember($j,$sheet,$arrIndex,$Order,$Product,$start_num,$db);
   }
   echo '</table>';
 }
 
-function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num){  
+function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){  
+
   // $arr=array();  
   echo '<tr>';    
         // foreach ( $arrIndex as $index ) {           
@@ -181,10 +183,17 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num){
 
             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //3
             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() .'</td>';  //4
-            $articul = trim($sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue()); //5 Артикул
+            $articul = htmlspecialchars(trim($sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue())); //5 Артикул
             if ($articul !="" && $row != $start_num){
               // var_dump($articul);exit();
-                echo '<td>' . htmlspecialchars($articul) .'</td>'; 
+              $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} ";
+               $table = $db->select($query, array($articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+                if ($table){
+                  echo '<td>' . $table[0]['articul_furnitur_obj'] .' !!!</td>'; 
+                }else{
+                  echo '<td>' . $articul .'</td>'; 
+                }
+                
             }else{
               echo '<td>' . $articul .'</td>'; 
             }
@@ -215,11 +224,19 @@ function get_colomn_index($cell){
   return Coord::columnIndexFromString($matches[0]);
 }
 
-
-$db = class_DataBase::getDB(); // Создаём объект базы данных
-$query = "SELECT * FROM `obj_furnitur_prop` WHERE `color_obj_prop` = {?} AND `made_furnitur_obj` = {?}";
-$table = $db->select($query, array("Оцинкованный", "BLUM")); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
-$query = "SELECT `user_login` FROM `sofia_users` WHERE `user_mail` = {?}";
-$login = $db->selectCell($query, array("serge-meb@mail.ru"));// Запрос должен вывести конкретную ячейку, поэтому вызываем метод selectCell()
-// var_dump($table);
-var_dump($login);
+////!!!!!!!!!!!!!!!!!!!!!!!//////
+  $db = class_DataBase::getDB(); // Создаём объект базы данных
+  // $query = "SELECT * FROM `obj_furnitur_prop` WHERE `color_obj_prop` = {?} AND `made_furnitur_obj` = {?}";
+  $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} ";
+  $table = $db->select($query, array(htmlspecialchars("050104"))); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+  // $table = $db->select($query, array("Оцинкованный", "BLUM")); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+  // $query = "SELECT `user_login` FROM `sofia_users` WHERE `user_mail` = {?}";
+  // $login = $db->selectCell($query, array("serge-meb@mail.ru"));// Запрос должен вывести конкретную ячейку, поэтому вызываем метод selectCell()
+  echo "<pre>";
+  var_dump($table);
+  echo "</pre>";
+  // var_dump($login);
+  foreach ( $table[0] as $key => $value ) {  
+    echo "{$key} => {$value} <br> "; 
+  }
+////!!!!!!!!!!!!!!!!!!!!!!!//////
