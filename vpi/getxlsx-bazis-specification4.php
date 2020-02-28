@@ -121,12 +121,12 @@ foreach ($rowIterator as $row) {
         $array_furn[]=$from_num.'-'.$last_num;
         }
     }
-echo "<pre>";
-// echo "panel";
-// print_r( $array_panel);
-echo "furn";
-print_r( $array_furn);
-echo "</pre>";
+// echo "<pre>";
+// // echo "panel";
+// // print_r( $array_panel);
+// echo "furn";
+// print_r( $array_furn);
+// echo "</pre>";
 
 
 for($i=0;$i<count($array_furn);$i++) 
@@ -135,13 +135,13 @@ for($i=0;$i<count($array_furn);$i++)
   $from_num=$num[0];
   $start_num=$from_num+4;
   $to=$num[1];
-  echo "from " . $from_num . " to " . $to . "<br>";
+  // echo "from " . $from_num . " to " . $to . "<br>";
   // $Order=0;
   // $Product=0;
   $Order = $sheet->getCellByColumnAndRow(2, $from_num)->getValue();
   $Product = $sheet->getCellByColumnAndRow(2, $from_num+1)->getValue();
-  echo "Order " . $Order. "<br>"; 
-  echo "Product " . $Product. "<br>"; 
+  // echo "Order " . $Order. "<br>"; 
+  // echo "Product " . $Product. "<br>"; 
   // echo "<pre>";
   // echo "arrIndex";
   // print_r( $arrIndex);
@@ -189,7 +189,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
               $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} ";
                $table = $db->select($query, array($articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
                 if ($table){
-                  echo '<td>' . $table[0]['articul_furnitur_obj'] .' </td>'; 
+                  echo '<td style="color: green;">' . $table[0]['articul_furnitur_obj'] .' </td>'; 
                   echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  //6
                 }else{
                   echo '<td>' . $articul .'</td>'; 
@@ -228,20 +228,20 @@ function get_colomn_index($cell){
 }
 
 ////!!!!!!!!!!!!!!!!!!!!!!!//////
-  $db = class_DataBase::getDB(); // Создаём объект базы данных
-  // $query = "SELECT * FROM `obj_furnitur_prop` WHERE `color_obj_prop` = {?} AND `made_furnitur_obj` = {?}";
-  $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} ";
-  $table = $db->select($query, array(htmlspecialchars("050104"))); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+  // $db = class_DataBase::getDB(); // Создаём объект базы данных
+  // // $query = "SELECT * FROM `obj_furnitur_prop` WHERE `color_obj_prop` = {?} AND `made_furnitur_obj` = {?}";
+  // $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} ";
+  // $table = $db->select($query, array(htmlspecialchars("050104"))); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
   // $table = $db->select($query, array("Оцинкованный", "BLUM")); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
   // $query = "SELECT `user_login` FROM `sofia_users` WHERE `user_mail` = {?}";
   // $login = $db->selectCell($query, array("serge-meb@mail.ru"));// Запрос должен вывести конкретную ячейку, поэтому вызываем метод selectCell()
-  echo "<pre>";
-  var_dump($table);
-  echo "</pre>";
-  // var_dump($login);
-  foreach ( $table[0] as $key => $value ) {  
-    echo "{$key} => {$value} <br> "; 
-  }
+  // echo "<pre>";
+  // var_dump($table);
+  // echo "</pre>";
+  // // var_dump($login);
+  // foreach ( $table[0] as $key => $value ) {  
+  //   echo "{$key} => {$value} <br> "; 
+  // }
 ////!!!!!!!!!!!!!!!!!!!!!!!//////
 
 // ДОБАВИТЬ ПСЕВДОНИМЫ ALIAS  АРТИКУЛОВ SELECT * FROM table1,table2 WHERE table1.name='vasya' AND table2.firstname='pupkin';

@@ -15,6 +15,10 @@ bazisspecification2 start 11.02.20
 
        \TABLES\configDB.php
 
+       obj_furnitur_prop таблица с alias
+
+
+
         
        
        

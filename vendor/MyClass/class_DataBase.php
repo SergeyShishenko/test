@@ -17,7 +17,8 @@ class class_DataBase {
     private function __construct() {
       $this->mysqli = new mysqli(DBoutput::$dbHost, DBoutput::$mysql_user, DBoutput::$mysql_password, DBoutput::$my_db);
       $this->mysqli->query("SET lc_time_names = 'ru_RU'");
-      $this->mysqli->query("SET NAMES 'utf8'");
+      // $this->mysqli->query("SET NAMES 'utf8'");
+      $this->mysqli->set_charset("utf8");
     }
 
   /* Вспомогательный метод, который заменяет "символ значения в запросе" на конкретное значение, которое проходит через "функции безопасности" */
