@@ -186,7 +186,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
             $articul = htmlspecialchars(trim($sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue())); //5 Артикул
             if ($articul !="" && $row != $start_num){
               // var_dump($articul);exit();
-              $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} ";
+              $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} OR `articul_alias1` = {?} OR `articul_alias2` = {?} OR `articul_alias3` = {?} ";
                $table = $db->select($query, array($articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
                 if ($table){
                   echo '<td style="color: green;">' . $table[0]['articul_furnitur_obj'] .' </td>'; 

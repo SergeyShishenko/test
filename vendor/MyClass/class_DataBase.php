@@ -27,7 +27,8 @@ class class_DataBase {
       for ($i = 0; $i < count($params); $i++) {
         $pos = strpos($query, $this->sym_query);
         $arg = "'".$this->mysqli->real_escape_string($params[$i])."'";
-        $query = substr_replace($query, $arg, $pos, strlen($this->sym_query));
+        // $query = substr_replace($query, $arg, $pos, strlen($this->sym_query));
+        $query = str_replace($this->sym_query, $arg, $query);
     }
     }
     return $query;
