@@ -303,7 +303,7 @@
 		// arr=arrdata;
 
 		
-		// console.log(arr);
+		// console.log(ids);
 		// $.post('2.php', arr , function(data) {              
 		jQuery.ajax({
         type: "POST", // HTTP метод  POST или GET
