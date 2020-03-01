@@ -5,11 +5,14 @@ bazisspecification2 start 11.02.20
     ("Запись спецификайии из базиса в ведомость")
     ИЗМЕНЕНИЯ: 
         vpi\upload.php
-        vpi\getxlsx-bazis-specification4.php
-        vendor\
+        vpi\getxlsx-bazis-specification4.php        
         vpi\htmlStringToXLS.php
         vpi\VPI_templatePhpSpreadsheet.php
+        vpi\vpi_template_bazis.php
+
         inc\inc-version-css-js.php
+
+        vendor\(ВСЁ)
 
         dist\js\vpi.js
         dist\js\drop.js

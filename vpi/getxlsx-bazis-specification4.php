@@ -256,18 +256,15 @@ for (let i = 0; i < tables.length; i++) {
 $('#vpibazis').click(function() {
   ids=JSON.stringify(arrdata);
   // arr=arrdata;  
-  // console.log(ids);
-  // $.post('2.php', arr , function(data) {              
+  // console.log(ids);            
   jQuery.ajax({
       type: 'POST', // HTTP метод  POST или GET
-      url: 'vpi/2.php', //url-адрес, по которому будет отправлен запрос
+      url: 'vpi/vpi_template_bazis.php', //url-адрес, по которому будет отправлен запрос
       dataType:'text', // Тип данных
       data: {ids}, //post переменные
       success:function(response){
       // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-      console.log(response);
-      
-
+      console.log(response); 
       },
       error:function (xhr, ajaxOptions, thrownError){
       //выводим ошибку
