@@ -147,7 +147,7 @@ for($i=0;$i<count($array_furn);$i++)
   // print_r( $arrIndex);
   // echo "</pre>";
   $db = class_DataBase::getDB(); // Создаём объект базы данных
-  echo '<br><table border="1" style="width: 100%;">';
+  echo '<br><table border="1" style="width: 100%;" class="tblVPI">';
   for($j=$start_num;$j<=$to;$j++) 
   {  
     readRowByNember($j,$sheet,$arrIndex,$Order,$Product,$start_num,$db);
@@ -229,6 +229,31 @@ echo "
 <span class='check-gen' title='ВПИ'><i>Скачать</i></span>
 </a>
 <input type='hidden' id='product_output' value='ВПИ'>
+<script>
+var arrdata = {}
+
+tables = document.querySelectorAll('.tblVPI')
+
+// table
+for (let i = 0; i < tables.length; i++) {
+    arrdata['table' + i] = []
+    var currTable = tables[i]
+    var currRows = tables[i].querySelectorAll('tr')
+
+    // tr без шапки
+    for (let j = 1; j < currRows.length; j++) {
+        arrdata['table' + i][j] = []
+        var currRow = currRows[j]
+        var cells = currRow.querySelectorAll('td')
+
+        // td
+        for (let k = 0; k < cells.length; k++) {
+            arrdata['table' + i][j][k] = cells[k].textContent
+        }
+    }
+}
+console.log(arrdata);
+</script>
 ";
 
 function get_colomn_index($cell){
