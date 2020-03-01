@@ -152,4 +152,5 @@ unlink($un);
 // $arr_output["output"]=__DIR__ ."/WRITE/". $fname;
 // echo __DIR__ ."/WRITE/". $fname;
 
-echo "vpi/WRITE/". $fname;
+// echo "vpi/WRITE/". $fname;
+echo $fname;

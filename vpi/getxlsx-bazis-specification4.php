@@ -222,7 +222,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
         // return $arr;        
 }
 
-echo "
+echo "<br>
 <a class='button-gen vpi-gen' id='vpibazis' href='javascript:void(0)' type='button'>
 <span class='submit-gen' >ВПИ</span>				
 <span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
@@ -253,7 +253,8 @@ for (let i = 0; i < tables.length; i++) {
     }
 }
 //console.log(arrdata);
-$('#vpibazis').click(function() {
+//$('#vpibazis:not(.active-gen)').click(function() {
+  $('body').on('click','#vpibazis:not(\".finished-gen\")', function() {
   ids=JSON.stringify(arrdata);
   // arr=arrdata;  
   // console.log(ids);            
@@ -265,9 +266,10 @@ $('#vpibazis').click(function() {
       success:function(response){
       // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
       console.log(response); 
-      $('#vpibazis').attr('href', response);
-      var desc = response.split('~'); 
-      $('#vpibazis').attr('download', desc[0]+'_ВПИ.xls');
+      //$('#vpibazis').removeClass('button-gen');
+      $('#vpibazis').attr('href', 'vpi/WRITE/'+response);
+      //var desc = response.split('~'); 
+      $('#vpibazis').attr('download', response);
       },
       error:function (xhr, ajaxOptions, thrownError){
       //выводим ошибку
