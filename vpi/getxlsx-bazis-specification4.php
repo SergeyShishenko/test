@@ -223,7 +223,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
 }
 
 echo "
-<a class='button-gen ' id='vpibazis' href='#' type='button'>
+<a class='button-gen ' id='vpibazis' href='javascript:void(0)' type='button'>
 <span class='submit-gen' >ВПИ</span>				
 <span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
 <span class='check-gen' title='ВПИ'><i>Скачать</i></span>
@@ -252,7 +252,29 @@ for (let i = 0; i < tables.length; i++) {
         }
     }
 }
-console.log(arrdata);
+//console.log(arrdata);
+$('#vpibazis').click(function() {
+  ids=JSON.stringify(arrdata);
+  // arr=arrdata;  
+  // console.log(ids);
+  // $.post('2.php', arr , function(data) {              
+  jQuery.ajax({
+      type: 'POST', // HTTP метод  POST или GET
+      url: 'vpi/2.php', //url-адрес, по которому будет отправлен запрос
+      dataType:'text', // Тип данных
+      data: {ids}, //post переменные
+      success:function(response){
+      // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+      console.log(response);
+      
+
+      },
+      error:function (xhr, ajaxOptions, thrownError){
+      //выводим ошибку
+      console.log(thrownError);
+      }
+      });
+  });
 </script>
 ";
 
