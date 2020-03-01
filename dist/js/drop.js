@@ -1235,7 +1235,7 @@ $("body").on('click','.button-gen:not(".finished-gen")', function() {
 dataArrayTitle={};
 
 // после генерации
-    $("body").on('transitionend','.button-gen', function(eventObject) {
+    $("body").on('transitionend','.button-gen:not(".vpi-gen")', function(eventObject) {
         //  alert($(eventObject.target).attr('id'));
         var titul='КД';
         switch ($(eventObject.target).attr('id')) {                                

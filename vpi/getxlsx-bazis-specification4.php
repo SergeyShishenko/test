@@ -223,7 +223,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
 }
 
 echo "
-<a class='button-gen ' id='vpibazis' href='javascript:void(0)' type='button'>
+<a class='button-gen vpi-gen' id='vpibazis' href='javascript:void(0)' type='button'>
 <span class='submit-gen' >ВПИ</span>				
 <span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
 <span class='check-gen' title='ВПИ'><i>Скачать</i></span>
@@ -265,6 +265,9 @@ $('#vpibazis').click(function() {
       success:function(response){
       // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
       console.log(response); 
+      $('#vpibazis').attr('href', response);
+      var desc = response.split('~'); 
+      $('#vpibazis').attr('download', desc[0]+'_ВПИ.xls');
       },
       error:function (xhr, ajaxOptions, thrownError){
       //выводим ошибку
