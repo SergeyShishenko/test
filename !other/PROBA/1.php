@@ -253,6 +253,7 @@
 
     <button class="btn">кнопка</button>
     <button class="btn2">AJAX</button>
+   
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script>
     $('.btn').click(function() {

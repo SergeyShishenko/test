@@ -1223,7 +1223,11 @@ $("body").on('click','.button-gen:not(".finished-gen")', function() {
         
       });
      
-     if($('#product_output').text()==""){alert('Ничего не выбрано! '+$('#product_output').text()); return;}
+     if($('#product_output').text()==""){
+         if($('#product_output').val()!="ВПИ"){
+             alert('Ничего не выбрано! '+$('#product_output').text()); return;  
+         }       
+     }
     $( this ).toggleClass( "active-gen" );
     
 });

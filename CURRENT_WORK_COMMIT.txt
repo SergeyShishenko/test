@@ -12,6 +12,7 @@ bazisspecification2 start 11.02.20
         inc\inc-version-css-js.php
 
         dist\js\vpi.js
+        dist\js\drop.js
 
        \TABLES\configDB.php
 

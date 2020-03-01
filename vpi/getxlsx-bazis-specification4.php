@@ -222,6 +222,15 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
         // return $arr;        
 }
 
+echo "
+<a class='button-gen ' id='vpibazis' href='#' type='button'>
+<span class='submit-gen' >ВПИ</span>				
+<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
+<span class='check-gen' title='ВПИ'><i>Скачать</i></span>
+</a>
+<input type='hidden' id='product_output' value='ВПИ'>
+";
+
 function get_colomn_index($cell){
   preg_match('/^[A-Z]+/', $cell->getCoordinate(), $matches); 
   return Coord::columnIndexFromString($matches[0]);
