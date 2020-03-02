@@ -102,7 +102,7 @@ for ($r=1; $r < count($arr->table0); $r++) {
         ->setCellValue('I'.$row, $tr[8])
         ->setCellValue('J'.$row, $tr[9])
         ->setCellValue('K'.$row, $tr[10]);
-        $spreadsheet->getActiveSheet()->getRowDimension($row)->setRowHeight(100);
+        $spreadsheet->getActiveSheet()->getRowDimension($row)->setRowHeight(-1);
 }
 // foreach ($data as $r => $dataRow) {
 //     $row = $baseRow + $r;
