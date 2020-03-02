@@ -124,57 +124,107 @@ foreach ($rowIterator as $row) {
 // echo "<pre>";
 // // echo "panel";
 // // print_r( $array_panel);
-// echo "furn";
+// echo "furn  count " . count($array_furn) . "<br>";
 // print_r( $array_furn);
 // echo "</pre>";
 
+if(count($array_furn)!=0){
+    for($i=0;$i<count($array_furn);$i++) 
+    { 
+      $num=explode("-", $array_furn[$i]);
+      $from_num=$num[0];
+      $start_num=$from_num+4;
+      $to=$num[1];
+      // echo "from " . $from_num . " to " . $to . "<br>";
+      // $Order=0;
+      // $Product=0;
+      $Order = $sheet->getCellByColumnAndRow(2, $from_num)->getValue();
+      $Product = $sheet->getCellByColumnAndRow(2, $from_num+1)->getValue();
+      // echo "Order " . $Order. "<br>"; 
+      // echo "Product " . $Product. "<br>"; 
+      // echo "<pre>";
+      // echo "arrIndex";
+      // print_r( $arrIndex);
+      // echo "</pre>";
+      $db = class_DataBase::getDB(); // Создаём объект базы данных
+      echo '<br><table border="1" style="width: 100%;" class="tblVPI">';
+      for($j=$start_num;$j<=$to;$j++) 
+      {  
+        readRowByNember($j,$sheet,$arrIndex,$Order,$Product,$start_num,$db);
+      }
+      echo '</table>';
+    }
 
-for($i=0;$i<count($array_furn);$i++) 
-{ 
-  $num=explode("-", $array_furn[$i]);
-  $from_num=$num[0];
-  $start_num=$from_num+4;
-  $to=$num[1];
-  // echo "from " . $from_num . " to " . $to . "<br>";
-  // $Order=0;
-  // $Product=0;
-  $Order = $sheet->getCellByColumnAndRow(2, $from_num)->getValue();
-  $Product = $sheet->getCellByColumnAndRow(2, $from_num+1)->getValue();
-  // echo "Order " . $Order. "<br>"; 
-  // echo "Product " . $Product. "<br>"; 
-  // echo "<pre>";
-  // echo "arrIndex";
-  // print_r( $arrIndex);
-  // echo "</pre>";
-  $db = class_DataBase::getDB(); // Создаём объект базы данных
-  echo '<br><table border="1" style="width: 100%;" class="tblVPI">';
-  for($j=$start_num;$j<=$to;$j++) 
-  {  
-    readRowByNember($j,$sheet,$arrIndex,$Order,$Product,$start_num,$db);
-  }
-  echo '</table>';
+    echo "<br>
+    <a class='button-gen vpi-gen' id='vpibazis' href='javascript:void(0)' type='button'>
+    <span class='submit-gen' >ВПИ</span>				
+    <span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
+    <span class='check-gen' title='ВПИ'><i>Скачать</i></span>
+    </a>
+    <input type='hidden' id='product_output' value='ВПИ'>
+    <script>
+    var arrdata = {}
+
+    tables = document.querySelectorAll('.tblVPI')
+
+    // table
+    for (let i = 0; i < tables.length; i++) {
+        arrdata['table' + i] = []
+        var currTable = tables[i]
+        var currRows = tables[i].querySelectorAll('tr')
+
+        // tr без шапки
+        for (let j = 1; j < currRows.length; j++) {
+            arrdata['table' + i][j] = []
+            var currRow = currRows[j]
+            var cells = currRow.querySelectorAll('td')
+
+            // td
+            for (let k = 0; k < cells.length; k++) {
+                arrdata['table' + i][j][k] = cells[k].textContent
+            }
+        }
+    }
+    //console.log(arrdata);
+    //$('#vpibazis:not(.active-gen)').click(function() {
+      $('body').on('click','#vpibazis:not(\".finished-gen\")', function() {
+      ids=JSON.stringify(arrdata);
+      // arr=arrdata;  
+      // console.log(ids);            
+      jQuery.ajax({
+          type: 'POST', // HTTP метод  POST или GET
+          url: 'vpi/vpi_template_bazis.php', //url-адрес, по которому будет отправлен запрос
+          dataType:'text', // Тип данных
+          data: {ids}, //post переменные
+          success:function(response){
+          // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+          console.log(response); 
+          //$('#vpibazis').removeClass('button-gen');
+          $('#vpibazis').attr('href', 'vpi/WRITE/'+response);
+          //var desc = response.split('~'); 
+          $('#vpibazis').attr('download', response);
+          },
+          error:function (xhr, ajaxOptions, thrownError){
+          //выводим ошибку
+          console.log(thrownError);
+          }
+          });
+      });
+    </script>
+    ";
+}else{
+  echo 'Файл не содержит спецификацию Базис-Мебельщика';
+}
+
+function get_colomn_index($cell){
+  preg_match('/^[A-Z]+/', $cell->getCoordinate(), $matches); 
+  return Coord::columnIndexFromString($matches[0]);
 }
 
 function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){  
 
   // $arr=array();  
-  echo '<tr>';    
-        // foreach ( $arrIndex as $index ) {           
-        //     $cell = $sheet->getCellByColumnAndRow($index, $row);
-        //     // $val = $cell->getCalculatedValue();
-
-        //     switch ($index) {
-        //       case 1:
-        //         $cell->getCalculatedValue() ? $val = $cell->getCalculatedValue() : $val = $Order;
-        //       break;
-        //       case 2:
-        //         $cell->getCalculatedValue() ? $val = $cell->getCalculatedValue() : $val = $Product;
-        //       break;
-        //       default;
-        //         $val = $cell->getCalculatedValue();
-        //       break;
-        //     }
-            
+  echo '<tr>'; 
          
             $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() : $val = $Order;
             echo '<td>' . $val .'</td>';  //1
@@ -220,69 +270,6 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
           // }          
   echo '</tr>';
         // return $arr;        
-}
-
-echo "<br>
-<a class='button-gen vpi-gen' id='vpibazis' href='javascript:void(0)' type='button'>
-<span class='submit-gen' >ВПИ</span>				
-<span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
-<span class='check-gen' title='ВПИ'><i>Скачать</i></span>
-</a>
-<input type='hidden' id='product_output' value='ВПИ'>
-<script>
-var arrdata = {}
-
-tables = document.querySelectorAll('.tblVPI')
-
-// table
-for (let i = 0; i < tables.length; i++) {
-    arrdata['table' + i] = []
-    var currTable = tables[i]
-    var currRows = tables[i].querySelectorAll('tr')
-
-    // tr без шапки
-    for (let j = 1; j < currRows.length; j++) {
-        arrdata['table' + i][j] = []
-        var currRow = currRows[j]
-        var cells = currRow.querySelectorAll('td')
-
-        // td
-        for (let k = 0; k < cells.length; k++) {
-            arrdata['table' + i][j][k] = cells[k].textContent
-        }
-    }
-}
-//console.log(arrdata);
-//$('#vpibazis:not(.active-gen)').click(function() {
-  $('body').on('click','#vpibazis:not(\".finished-gen\")', function() {
-  ids=JSON.stringify(arrdata);
-  // arr=arrdata;  
-  // console.log(ids);            
-  jQuery.ajax({
-      type: 'POST', // HTTP метод  POST или GET
-      url: 'vpi/vpi_template_bazis.php', //url-адрес, по которому будет отправлен запрос
-      dataType:'text', // Тип данных
-      data: {ids}, //post переменные
-      success:function(response){
-      // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-      console.log(response); 
-      //$('#vpibazis').removeClass('button-gen');
-      $('#vpibazis').attr('href', 'vpi/WRITE/'+response);
-      //var desc = response.split('~'); 
-      $('#vpibazis').attr('download', response);
-      },
-      error:function (xhr, ajaxOptions, thrownError){
-      //выводим ошибку
-      console.log(thrownError);
-      }
-      });
-  });
-</script>
-";
-
-function get_colomn_index($cell){
-  preg_match('/^[A-Z]+/', $cell->getCoordinate(), $matches); 
-  return Coord::columnIndexFromString($matches[0]);
 }
 
 ////!!!!!!!!!!!!!!!!!!!!!!!//////

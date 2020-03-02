@@ -208,10 +208,10 @@ $mime = end($getMime);
 if ($mime =="csv")
 {
 	$decodedData = iconv("WINDOWS-1251", "UTF-8", $decodedData);
-// 	echo "<pre>";
-// 	print_r($decodedData);
-// 	echo "</pre>";	
-// exit();
+	// 	echo "<pre>";
+	// 	print_r($decodedData);
+	// 	echo "</pre>";	
+	// exit();
 	// Вы можете использовать данное имя файла, или создать произвольное имя.
 	// Мы будем создавать произвольное имя!
 	$randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
@@ -268,8 +268,7 @@ if ($mime =="csv")
 		echo "Что-то пошло не так. Убедитесь, что файл не поврежден!!!!!!";
 	}
 }//if csv
-// XLSX
-elseif ($mime =="xlsx")
+elseif ($mime =="xlsx")// XLSX
 {
 	switch ($type) {	
 		case "excel":
@@ -280,9 +279,11 @@ elseif ($mime =="xlsx")
 	$randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 	if(file_put_contents($uploaddir.$randomName, $decodedData)) {		
 		$filename=$uploaddir.$randomName;
-		// зарплата
-		require_once "$_SERVER[DOCUMENT_ROOT]$site/vpi/getxlsx.php"; 
 
+		// зарплата
+		// require_once "$_SERVER[DOCUMENT_ROOT]$site/vpi/getxlsx.php"; 
+		echo 'Файл не содержит спецификацию Базис-Мебельщика';	
+		exit();
 	
 		}
 
