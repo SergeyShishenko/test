@@ -66,34 +66,35 @@
         </div>
         <hr><hr>
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
-      
+
+      <p>admin\footer.php (стр.70)</p>      
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="Светильник штанга для гардероба, под светодиодную ленту 2500 мм" name="add_Furn" class="form-control text add" placeholder="Наименование фурнитуры"  id="Furn">         
+            <input type="text" value="Светильник штанга для гардероба, под светодиодную ленту 2500 мм" name="add_Furn" class="form-control text add" placeholder="Наименование фурнитуры"  id="Furn" title="Наименование фурнитуры">         
         </div>       
       
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="833.72.790" name="add_Art" class="text add form-control" size="150" placeholder="Артикул" id="Art" >        
+            <input type="text" value="833.72.790" name="add_Art" class="text add form-control" size="150" placeholder="Артикул" id="Art" title="Артикул">        
         </div>
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="833_72_790-1.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла изображения" id="NameFile" >       
+            <input type="text" value="833_72_790-1.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла изображения" id="NameFile" title="Имя файла изображения">       
         </div>
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="4" name="add_grupp_id" class="text add form-control" size="150" placeholder="grupp_id" id="grupp_id" >      
+            <input type="text" value="4" name="add_grupp_id" class="text add form-control" size="150" placeholder="grupp_id" id="grupp_id" title="Номер группы (4-фурнитура) ">      
         </div>
             
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="shtangi" name="add_path_img_obj" class="text add form-control" size="150" placeholder="тип(директория) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" > <!--  тип(директория) фурнитуры в папках thumbs,pagevpi,carousel-->    
+            <input type="text" value="shtangi" name="add_path_img_obj" class="text add form-control" size="150" placeholder="тип(директория) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" title="тип(директория) фурнитуры в папках thumbs,pagevpi,carousel" > <!--  тип(директория) фурнитуры в папках thumbs,pagevpi,carousel-->    
         </div>
             
-        <select id="Bild" name="add_Bild" class="text add form-control">
+        <select id="Bild" name="add_Bild" class="text add form-control" title="Производитель" >
             <option value="HAFELE">HAFELE</option>
             <option value="МДМ-КОМПЛЕКТ">МДМ-КОМПЛЕКТ</option>
             <option value="МАКМАРТ" selected>МАКМАРТ</option>
@@ -102,17 +103,17 @@
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="алюминий" name="add_Colour" class="text add form-control" size="150" placeholder="Цвет" id="Colour" >   
+            <input type="text" value="алюминий" name="add_Colour" class="text add form-control" size="150" placeholder="Цвет" id="Colour"  title="Цвет">   
         </div>
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="шт." name="add_Unit" class="text add form-control" size="150" placeholder="Ед.измерения" id="Unit" >  
+            <input type="text" value="шт." name="add_Unit" class="text add form-control" size="150" placeholder="Ед.измерения" id="Unit"  title="Ед.измерения">  
         </div> 
 
          <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/profili-dlya-svetodiodnyh-lent/svetilnik-shtanga-dlya-garderoba-pod-svetodiodnuyu-lentu.html" name="add_href_articul" class="text add form-control" size="150" placeholder="Cсылка на страницу фурнитуры" id="HrefArticul" > 
+            <input type="text" value="https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/profili-dlya-svetodiodnyh-lent/svetilnik-shtanga-dlya-garderoba-pod-svetodiodnuyu-lentu.html" name="add_href_articul" class="text add form-control" size="150" placeholder="Cсылка на страницу фурнитуры" id="HrefArticul" title="Cсылка на страницу фурнитуры"> 
         </div>    
 
             
