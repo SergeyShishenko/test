@@ -81,17 +81,30 @@
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="833_72_790-1.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла изображения" id="NameFile" title="Имя файла изображения">       
+            <input type="text" value="" name="add_Alias1" class="text add form-control" size="150" placeholder="Псевдоним Артикула" id="Alias1"  title="Псевдоним Артикула">  
+        </div>  
+        <div class="input-group">
+            <span class="input-group-addon cls">X</span>
+            <input type="text" value="" name="add_Alias2" class="text add form-control" size="150" placeholder="Псевдоним Артикула" id="Alias2"  title="Псевдоним Артикула">  
+        </div>  
+        <div class="input-group">
+            <span class="input-group-addon cls">X</span>
+            <input type="text" value="" name="add_Alias3" class="text add form-control" size="150" placeholder="Псевдоним Артикула" id="Alias3"  title="Псевдоним Артикула">  
+        </div>  
+
+        <div class="input-group">
+            <span class="input-group-addon cls">X</span>
+            <input type="text" value="test.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла изображения" id="NameFile" title="Имя файла изображения">       
         </div>
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="4" name="add_grupp_id" class="text add form-control" size="150" placeholder="grupp_id" id="grupp_id" title="Номер группы (4-фурнитура) ">      
+            <input type="text" value="4" name="add_grupp_id" class="text add form-control" size="150" placeholder="grupp_id" id="grupp_id" title="Номер группы (1-МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ,2-ПЕТЛИ для ФАСАДОВ, 3-КРЕПЕЖ И МЕТИЗЫ, 4-ШТАНГИ МЕБЕЛЬНЫЕ) ">      
         </div>
             
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="shtangi" name="add_path_img_obj" class="text add form-control" size="150" placeholder="тип(директория) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" title="тип(директория) фурнитуры в папках thumbs,pagevpi,carousel" > <!--  тип(директория) фурнитуры в папках thumbs,pagevpi,carousel-->    
+            <input type="text" value="shtangi" name="add_path_img_obj" class="text add form-control" size="150" placeholder="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" title="тип(директория) фурнитуры в папках thumbs,pagevpi,carousel" > <!--  тип(директория) фурнитуры в папках thumbs,pagevpi,carousel-->    
         </div>
             
         <select id="Bild" name="add_Bild" class="text add form-control" title="Производитель" >
@@ -114,7 +127,9 @@
          <div class="input-group">
             <span class="input-group-addon cls">X</span>
             <input type="text" value="https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/profili-dlya-svetodiodnyh-lent/svetilnik-shtanga-dlya-garderoba-pod-svetodiodnuyu-lentu.html" name="add_href_articul" class="text add form-control" size="150" placeholder="Cсылка на страницу фурнитуры" id="HrefArticul" title="Cсылка на страницу фурнитуры"> 
-        </div>    
+        </div>   
+
+        
 
             
 
@@ -183,7 +198,7 @@
                      //simple validation
                     if($("#Furn").val()===""){ alert("Введите Наименование фурнитуры!"); return false;}
                     if($("#Art").val()===""){ alert("Введите Артикул!"); return false;}
-                    if($("#NameFile").val()===""){ alert("Введите Имя файла!"); return false;}
+                    if($("#NameFile").val()===""){ alert("Введите Имя файла изображения!"); return false;}
                     if($("#grupp_id").val()===""){ alert("Введите номер группы!"); return false;}
                     if($("#path_img_obj").val()===""){ alert("Введите тип(директория) фурнитуры в папках thumbs,pagevpi,carousel!"); return false;}
                     if($("#Bild").val()===""){ alert("Введите Производитель!"); return false;}
@@ -195,6 +210,9 @@
                     // var myData = "content_Furn="+ $("#Furn").val(); 
                     var myData = "content_Furn="+ $("#Furn").val() +"&"+
                                  "content_Art="+ $("#Art").val() +"&"+
+                                 "content_Alias1="+ $("#Alias1").val() +"&"+
+                                 "content_Alias2="+ $("#Alias2").val() +"&"+
+                                 "content_Alias3="+ $("#Alias3").val() +"&"+
                                  "content_NameFile="+ $("#NameFile").val() +"&"+
                                  "content_grupp_id="+ $("#grupp_id").val() +"&"+
                                  "content_path_img_obj="+ $("#path_img_obj").val() +"&"+

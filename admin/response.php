@@ -14,8 +14,10 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
 {
     $Furn=$_POST["content_Furn"];
     $Art=$_POST["content_Art"];
-    $NameFile=$_POST["content_NameFile"];
-    
+    $Alias1=$_POST["content_Alias1"];
+    $Alias2=$_POST["content_Alias2"];
+    $Alias3=$_POST["content_Alias3"];
+    $NameFile=$_POST["content_NameFile"];    
     $GruppId=$_POST["content_grupp_id"];
     $Bild=$_POST["content_Bild"];
     $Colour=$_POST["content_Colour"];
@@ -35,12 +37,12 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
                             mysqli_query($dbconn, "UPDATE `obj` SET `html_id` = $html_id WHERE `obj`.`obj_id`=$id");
                             mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$id')");
                             mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$id')");
-                            mysqli_query($dbconn,
-
-                            //  "INSERT INTO  `obj_furnitur_prop`(`obj_id`,`name_furnitur_obj_prop`,`articul_furnitur_obj`,`def_obj_prop`,`made_furnitur_obj`,`color_obj_prop`,`unit_obj_prop`)  
-                            //  VALUES ('$id','$Furn','$Art','$Colour','$Unit')");
-                             "INSERT INTO  `obj_furnitur_prop`(`obj_furnitur_prop_id`, `name_furnitur_obj_prop`, `articul_furnitur_obj`, `made_furnitur_obj`, `url_furnitur_obj_prop`, `obj_id`, `url_video_obj_prop`, `color_obj_prop`, `def_obj_prop`, `unit_obj_prop`, `fname_img_furn`)  
-                             VALUES (NULL, '$Furn', '$Art', '$Bild', NULL, '$id', '$HrefArticul', '$Colour', '$Furn', '$Unit', '$NameFile')");
+                           
+                           if( !mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_furnitur_prop_id`, `name_furnitur_obj_prop`, `articul_furnitur_obj`, `articul_alias1`, `articul_alias2`, `articul_alias3`, `made_furnitur_obj`, `url_furnitur_obj_prop`, `obj_id`, `url_video_obj_prop`, `color_obj_prop`, `def_obj_prop`, `unit_obj_prop`, `fname_img_furn`)  
+                             VALUES (NULL, '$Furn', '$Art', '$Alias1', '$Alias2', '$Alias3', '$Bild', NULL, '$id', '$HrefArticul', '$Colour', '$Furn', '$Unit', '$NameFile')")){
+                                header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.$sql." -> ".mysqli_error($dbconn));
+                                // exit();
+                             }
 
 
 
