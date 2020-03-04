@@ -75,7 +75,7 @@
             //alert(files[0].name);
             // Проверяем на максимальное количество файлов
            // alert(files[0].name.split(".").slice(-1)[0]);
-            if (files[0].name.split(".").slice(-1)[0] =="CNC"){
+            if (files[0].name.split(".").slice(-1)[0] =="CNC" || files[0].name.split(".").slice(-1)[0] =="cnc"){
                 maxFiles=100; cnc=true;              
             }
             else{cnc=false;}
