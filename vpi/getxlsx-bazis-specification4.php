@@ -39,6 +39,7 @@ $Product=0;
 
 $array = array();
 $furniture = array();
+// $doc = array();
 $arrIndex = array();
     
 // echo '<table border="1">';
@@ -56,12 +57,15 @@ foreach ($rowIterator as $row) {
     $cell_num++;
         $pos_panel = strpos($cell->getCalculatedValue(), "Спецификация на панели");
         $pos_furn = strpos($cell->getCalculatedValue(), "Спецификация на крепеж");
+        $pos_Doc = strpos($cell->getCalculatedValue(), "док. 5000304-01-001 ВЕДОМОСТЬ ФУРНИТУРЫ");
 
         if ($pos_panel !== false) { 
            $array[] = 'Panel-'.($row_num-3).'-'.$cell->getCoordinate();                   
           } else if ($pos_furn !== false) {
             $array[] = 'Furniture-'.($row_num-3).'-'.$cell->getCoordinate(); 
             $head=$row_num+1;
+          } else if ($pos_Doc !== false) {
+            $array[] = 'Doc-'.($row_num).'-'.$cell->getCoordinate();  
           }
 
           if($head == $row_num){
@@ -104,6 +108,7 @@ foreach ($rowIterator as $row) {
 
   $array_panel = array();
   $array_furn = array();
+  $array_doc = array();
   $arr_length = count($array); 
 
     for($i=0;$i<$arr_length;$i++) 
@@ -117,16 +122,21 @@ foreach ($rowIterator as $row) {
     }     
         if (strpos($array[$i], "Panel") !== false) { 
         $array_panel[]=$from_num.'-'.$last_num;
-        }else{
+        }elseif (strpos($array[$i], "Furniture") !== false){
         $array_furn[]=$from_num.'-'.$last_num;
-        }
+        }elseif (strpos($array[$i], "Doc") !== false){
+          $array_doc[]=$from_num.'-'.$last_num;
+          }
     }
-// echo "<pre>";
-// // echo "panel";
-// // print_r( $array_panel);
-// echo "furn  count " . count($array_furn) . "<br>";
-// print_r( $array_furn);
-// echo "</pre>";
+echo "<pre>";
+print_r( $array);
+echo "panel";
+print_r( $array_panel);
+echo "furn  count " . count($array_furn) . "<br>";
+print_r( $array_furn);
+echo "Doc";
+print_r( $array_doc);
+echo "</pre>";
 
 if(count($array_furn)!=0){
     for($i=0;$i<count($array_furn);$i++) 
