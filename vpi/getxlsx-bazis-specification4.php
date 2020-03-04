@@ -128,15 +128,15 @@ foreach ($rowIterator as $row) {
           $array_doc[]=$from_num.'-'.$last_num;
           }
     }
-echo "<pre>";
-print_r( $array);
-echo "panel";
-print_r( $array_panel);
-echo "furn  count " . count($array_furn) . "<br>";
-print_r( $array_furn);
-echo "Doc";
-print_r( $array_doc);
-echo "</pre>";
+// echo "<pre>";
+// print_r( $array);
+// echo "panel";
+// print_r( $array_panel);
+// echo "furn  count " . count($array_furn) . "<br>";
+// print_r( $array_furn);
+// echo "Doc";
+// print_r( $array_doc);
+// echo "</pre>";
 
 if(count($array_furn)!=0){
     for($i=0;$i<count($array_furn);$i++) 
@@ -222,6 +222,69 @@ if(count($array_furn)!=0){
       });
     </script>
     ";
+
+}elseif(count($array_doc)!=0){
+  echo '<table border="1">';
+  foreach ($rowIterator as $row) {
+    // Получили ячейки текущей строки и обойдем их в цикле
+    $cellIterator = $row->getCellIterator();
+    
+      $row_num++;
+    echo "<tr>";
+    // echo '<td>'.$row_num.'</td>';
+    foreach ($cellIterator as $cell) {   
+      $cell_num++;
+          // $pos_panel = strpos($cell->getCalculatedValue(), "Спецификация на панели");
+          // $pos_furn = strpos($cell->getCalculatedValue(), "Спецификация на крепеж");
+          // $pos_Doc = strpos($cell->getCalculatedValue(), "док. 5000304-01-001 ВЕДОМОСТЬ ФУРНИТУРЫ");
+  
+          // if ($pos_panel !== false) { 
+          //    $array[] = 'Panel-'.($row_num-3).'-'.$cell->getCoordinate();                   
+          //   } else if ($pos_furn !== false) {
+          //     $array[] = 'Furniture-'.($row_num-3).'-'.$cell->getCoordinate(); 
+          //     $head=$row_num+1;
+          //   } else if ($pos_Doc !== false) {
+          //     $array[] = 'Doc-'.($row_num).'-'.$cell->getCoordinate();  
+          //   }
+  
+            // if($head == $row_num){
+            //   // $articul=strpos($cell->getCalculatedValue(), "Артикул");
+  
+            //   switch ($cell->getCalculatedValue()) {
+            //     case "Заказ":
+            //       $arrIndex[0] =get_colomn_index($cell); //1
+            //         break;
+            //     case "Изделие":
+            //       $arrIndex[1]=get_colomn_index($cell); //2
+            //         break;
+            //     case "СЕ":
+            //       $arrIndex[2]=get_colomn_index($cell); //3
+            //         break;
+            //     case "Поз.":
+            //       $arrIndex[3]=get_colomn_index($cell); //4
+            //         break;
+            //     case "Артикул":
+            //       $arrIndex[4]=get_colomn_index($cell); //5               
+            //         break;
+            //     case "Наименование":
+            //       $arrIndex[5]=get_colomn_index($cell); //6
+            //         break;
+            //     case "Кол-во":
+            //       $arrIndex[6]=get_colomn_index($cell); //8
+            //         break;
+            //     case "Примечание":
+            //       $arrIndex[7]=get_colomn_index($cell); //9
+            //         break;             
+            //   }
+            // }
+  
+        echo '<td>'.$cell->getValue().'</td>';
+  
+    }//$cell	
+    echo "</tr>";
+  }//$row
+  echo "</table>";
+
 }else{
   echo 'Файл не содержит спецификацию Базис-Мебельщика';
 }
