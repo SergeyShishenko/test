@@ -104,7 +104,7 @@
             
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="shtangi" name="add_path_img_obj" class="text add form-control" size="150" placeholder="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" title="тип(директория) фурнитуры в папках thumbs,pagevpi,carousel" > <!--  тип(директория) фурнитуры в папках thumbs,pagevpi,carousel-->    
+            <input type="text" value="shtangi" name="add_path_img_obj" class="text add form-control" size="150" placeholder="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" title="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel"> <!--  тип(директория) фурнитуры в папках thumbs,pagevpi,carousel-->    
         </div>
             
         <select id="Bild" name="add_Bild" class="text add form-control" title="Производитель" >
