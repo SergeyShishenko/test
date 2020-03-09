@@ -99,14 +99,20 @@
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="4" name="add_grupp_id" class="text add form-control" size="150" placeholder="grupp_id" id="grupp_id" title="Номер группы (1-МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ,2-ПЕТЛИ для ФАСАДОВ, 3-КРЕПЕЖ И МЕТИЗЫ, 4-ШТАНГИ МЕБЕЛЬНЫЕ) ">      
+            <input type="text" value="3" name="add_grupp_id" class="text add form-control" size="150" placeholder="grupp_id" id="grupp_id" title="Номер группы (1-МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ,2-ПЕТЛИ для ФАСАДОВ, 3-КРЕПЕЖ И МЕТИЗЫ, 4-ШТАНГИ МЕБЕЛЬНЫЕ) ">      
         </div>
             
-        <div class="input-group">
+        <!-- <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="shtangi" name="add_path_img_obj" class="text add form-control" size="150" placeholder="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" title="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel"> <!--  тип(директория) фурнитуры в папках thumbs,pagevpi,carousel-->    
-        </div>
+            <input type="text" value="shtangi" name="add_path_img_obj" class="text add form-control" size="150" placeholder="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" title="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel">    
+        </div> -->
             
+        <select id="path_img_obj" name="add_path_img_obj" class="text add form-control" title="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel" >
+            <option value="shtangi">Штанги</option>
+            <option value="svet">Свет</option>
+            <option value="metizy" selected>Метизы</option>            
+        </select>
+
         <select id="Bild" name="add_Bild" class="text add form-control" title="Производитель" >
             <option value="HAFELE">HAFELE</option>
             <option value="МДМ-КОМПЛЕКТ">МДМ-КОМПЛЕКТ</option>
