@@ -2,16 +2,22 @@
 //подключаем конфигурационный файл бд
 define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
+require_once dirname(dirname(__FILE__)).'/vendor/MyClass/class_DataBase.php';
 
 $dbconn=dbconnect();
 if ($dbconn->connect_errno) {
     printf("Не удалось подключиться: %s\n", $dbconn->connect_error);
     exit();
 }
-
+$db = class_DataBase::getDB(); // Создаём объект базы данных
 //проверяем $_POST["content_Furn"] на пустое значение
 if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
 {
+
+// проверка на существование артикула в Базе
+
+
+
     $Furn=$_POST["content_Furn"];
     $Art=$_POST["content_Art"];
     $Alias1=$_POST["content_Alias1"];
@@ -24,6 +30,13 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
     $Unit=$_POST["content_Unit"];
     $HrefArticul=$_POST["content_HrefArticul"];
     $typeFurn=$_POST["content_path_img_obj"];
+
+   if (arniculCheck ($Art,$db)){exit();}
+   if (arniculCheck ($Alias1,$db)){exit();}
+   if (arniculCheck ($Alias2,$db)){exit();}
+   if (arniculCheck ($Alias3,$db)){exit();}
+
+
  // добавляем новую запись во все таблицы объекта
                     $sql = " INSERT INTO `obj` (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`, `img_orientation_obj`, `img_alt_obj`, `template_obj`)
                      VALUES (NULL,'$Furn', '$GruppId', '', '$typeFurn','$NameFile', NULL, '', NULL, '$Furn', NULL, NULL, 'album', NULL, NULL)";
@@ -381,4 +394,21 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
 //     header('HTTP/1.1 500 Error occurred, Could not process request!');
 //     exit();
 // }
+
+function arniculCheck ($articul,$db){
+    if($articul !=""){
+        $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} OR `articul_alias1` = {?} OR `articul_alias2` = {?} OR `articul_alias3` = {?} ";
+        $table = $db->select($query, array($articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+        if ($table){
+            echo "Артикул уже внесен в Базу Данных!";
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+   
+
+}
+
 ?>

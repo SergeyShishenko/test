@@ -125,10 +125,17 @@
             <input type="text" value="алюминий" name="add_Colour" class="text add form-control" size="150" placeholder="Цвет" id="Colour"  title="Цвет">   
         </div>
 
-        <div class="input-group">
+        <!-- <div class="input-group">
             <span class="input-group-addon cls">X</span>
             <input type="text" value="шт." name="add_Unit" class="text add form-control" size="150" placeholder="Ед.измерения" id="Unit"  title="Ед.измерения">  
-        </div> 
+        </div>  -->
+
+        <select id="Unit" name="add_Unit" class="text add form-control" title="Ед.измерения" >
+            <option value="шт." selected>Шт.</option>
+            <option value="комплектов">Комплект</option>
+            <option value="м" >Метр</option>            
+        </select>
+
 
          <div class="input-group">
             <span class="input-group-addon cls">X</span>
