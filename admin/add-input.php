@@ -95,6 +95,7 @@ switch ($tbl) {
                                 <option '.$selected.' value="'.$i.'">'.$i.'</option>                                                           
                             ';
                         }//for
+                 
                         echo '
                             </select>                        
                         <span class="input-group-btn">
@@ -410,6 +411,9 @@ switch ($tbl) {
                                             <option '.$selected.' value="'.$i.'">'.$i.'</option>                                                           
                                         ';
                                     }//for
+                                    echo '                            
+                                            <option '.$selected.' value="'.($data['count']+2) .'">'. ($data['count']+2) .'</option>                                                           
+                                        ';
                                     echo '
                                     </select> 
                                 <span class="input-group-btn">

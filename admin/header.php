@@ -72,6 +72,7 @@
         }
                 .nav-tabs.nav-tabs-left > li, .nav-tabs.nav-tabs-right > li {
             float: none;
+            border-bottom: 1px solid #dddddd;
         }
 
         .nav-tabs > li {
