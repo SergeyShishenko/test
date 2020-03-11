@@ -373,18 +373,18 @@ switch ($tbl) {
                 ';
             echo '</li>';
             echo '<li id="tb-head" class="active">';
-            echo '<div class="row">
-                        <div class="input-group col-md-12">
-                            <div class="input-group ">                      
-                                <span class="input-group-addon">Идентификатор (html_id)</span>
-                                <input type="text" class="form-control" id="recipient-html-id" value="" required>
-                                <span class="input-group-btn">
-                                    <button type="button"   data-tbl="grupp"  data-field ="html_id" data-action="action"  class="btn  btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                ';
+            // echo '<div class="row">
+            //             <div class="input-group col-md-12">
+            //                 <div class="input-group ">                      
+            //                     <span class="input-group-addon">Идентификатор (html_id)</span>
+            //                     <input type="text" class="form-control" id="recipient-html-id" value="" required>
+            //                     <span class="input-group-btn">
+            //                         <button type="button"   data-tbl="grupp"  data-field ="html_id" data-action="action"  class="btn  btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+            //                     </span>
+            //                 </div>
+            //             </div>
+            //         </div>
+            //     ';
 
             echo '<div class="row">
                         <div class="input-group col-md-12">
@@ -408,7 +408,7 @@ switch ($tbl) {
                                     for ($i = 1; $i <= $data['count']+1; $i++) { 
                                         if ($i==$data['count']+1){$selected="selected";}else{$selected="";}                          
                                         echo '                            
-                                            <option '.$selected.' value="'.$i.'">'.$i.'</option>                                                           
+                                            <option  value="'.$i.'">'.$i.'</option>                                                           
                                         ';
                                     }//for
                                     echo '                            
@@ -417,7 +417,7 @@ switch ($tbl) {
                                     echo '
                                     </select> 
                                 <span class="input-group-btn">
-                                    <button type="button" data-tbl="grupp"  data-field ="number_in_order_grupp" data-action="action"  class="btn btn-default button31"><i class="glyphicon glyphicon-refresh"></i></button>
+                                    <button type="button" data-tbl="grupp"  data-field ="number_in_order_grupp" data-action="action"  class="btn btn-default button31 btn-warning"><i class="glyphicon glyphicon-refresh"></i></button>
                                 </span>
                             </div>
                         </div>
