@@ -214,7 +214,7 @@ include 'inc/goup/inc-goup-menu-furnitura-dlya-mebeli-shtangi.php';//$shtangi=[]
                                         </ul>
                                      </li>
                                    
-                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#natyazhiteli-dlya-fasadov">НАТЯЖИТЕЛИ для ФАСАДОВ</a>
+                                     <li class="menu2"><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#natyazhiteli-dlya-fasadov">ВЫПРЯМИТЕЛИ для ФАСАДОВ</a>
                                         <ul class="list-group sub_menu2">
                                             <li><a class="list-group-item sub" href="furnitura-dlya-mebeli.php#pivot-tn-103-2329-02">Pivot TN 103.2329.02</a>
                                             </li>                                                                                                                               
