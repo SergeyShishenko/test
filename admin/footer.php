@@ -139,13 +139,13 @@
             <option value="metizy" >Метизы</option>            
             <option value="other" selected>Разное</option>            
         </select>
-
-        <select id="Bild" name="add_Bild" class="text add form-control" title="Производитель" >
+        <input type="text" list="listBild" id="Bild" class="text add form-control" placeholder="Производитель">
+        <datalist id="listBild" name="add_Bild"  title="Производитель" >
             <option value="HAFELE">HAFELE</option>
             <option value="МДМ-КОМПЛЕКТ">МДМ-КОМПЛЕКТ</option>
             <option value="МАКМАРТ" selected>МАКМАРТ</option>
             <option value="BLUM" >BLUM</option>
-        </select>
+        </datalist>
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
