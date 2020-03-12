@@ -97,10 +97,36 @@
             <input type="text" value="test.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла изображения" id="NameFile" title="Имя файла изображения">       
         </div>
 
-        <div class="input-group">
+        <!-- <div class="input-group">
             <span class="input-group-addon cls">X</span>
             <input type="text" value="3" name="add_grupp_id" class="text add form-control" size="150" placeholder="grupp_id" id="grupp_id" title="Номер группы (1-МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ,2-ПЕТЛИ для ФАСАДОВ, 3-КРЕПЕЖ И МЕТИЗЫ, 4-ШТАНГИ МЕБЕЛЬНЫЕ) ">      
-        </div>
+        </div> -->
+
+        <select id="grupp_id" name="add_grupp_id" class="text add form-control" title="Номер группы (1-МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ,2-ПЕТЛИ для ФАСАДОВ, 3-КРЕПЕЖ И МЕТИЗЫ, 4-ШТАНГИ МЕБЕЛЬНЫЕ) " >
+            <option value="1">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ</option>
+            <option value="2">ПЕТЛИ для ФАСАДОВ</option>
+            <option value="3" >КРЕПЕЖ И МЕТИЗЫ</option>            
+            <option value="4" selected>ШТАНГИ МЕБЕЛЬНЫЕ</option>            
+            <option value="5" >МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ФАСАДОВ</option>            
+            <option value="6" >МЕХАНИЗМЫ ПОДЪЕМНЫЕ для ФАСАДОВ</option>            
+            <option value="7" >ОПОРЫ</option>            
+            <option value="8" >ЗАЩЕЛКИ МЕБЕЛЬНЫЕ</option>            
+            <option value="9" >ПОЛКОДЕРЖАТЕЛИ</option>            
+            <option value="10" >ПАНТОГРАФЫ</option>            
+            <option value="11" >РУЧКИ</option>            
+            <option value="12" >МЕХАНИЗМЫ для РАЗДВИЖНЫХ СТОЛОВ</option>            
+            <option value="13" >ВЫПРЯМИТЕЛИ для ФАСАДОВ</option>            
+            <option value="14" >МЕХАНИЗМЫ для ОБУВНИЦ</option>            
+            <option value="15" >ЗАЩЕЛКИ УНИВЕРСАЛЬНЫЕ</option>            
+            <option value="16" >КОМПЛЕКТЫ ФУРНИТУРЫ ДЛЯ МОНТАЖА</option>            
+            <option value="17" >ПЕТЛИ для ПОЛОТЕН ДВЕРНЫХ</option>            
+            <option value="18" >МЕХАНИЗМЫ РАЗДВИЖЕНИЯ для ПОЛОТЕН ДВЕРНЫХ</option>            
+            <option value="19" >ЗАМКИ для ПОЛОТЕН ДВЕРНЫХ</option>            
+            <option value="20" >ПОРОГИ АВТОМАТИЧЕСКИЕ для ПОЛОТЕН ДВЕРНЫХ</option>            
+            <option value="21" >РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ</option>            
+            <option value="22" >ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ</option>            
+            <option value="23" >УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ</option>            
+        </select>
             
         <!-- <div class="input-group">
             <span class="input-group-addon cls">X</span>
@@ -110,7 +136,8 @@
         <select id="path_img_obj" name="add_path_img_obj" class="text add form-control" title="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel" >
             <option value="shtangi">Штанги</option>
             <option value="svet">Свет</option>
-            <option value="metizy" selected>Метизы</option>            
+            <option value="metizy" >Метизы</option>            
+            <option value="other" selected>Разное</option>            
         </select>
 
         <select id="Bild" name="add_Bild" class="text add form-control" title="Производитель" >
@@ -139,7 +166,7 @@
 
          <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="https://hafele-shop.ru/catalog/sistemy-osveshcheniya/svetodiodnye-loox/profili-dlya-svetodiodnyh-lent/svetilnik-shtanga-dlya-garderoba-pod-svetodiodnuyu-lentu.html" name="add_href_articul" class="text add form-control" size="150" placeholder="Cсылка на страницу фурнитуры" id="HrefArticul" title="Cсылка на страницу фурнитуры"> 
+            <input type="text" value="https://500stp.website/furnitura-dlya-mebeli.php" name="add_href_articul" class="text add form-control" size="150" placeholder="Cсылка на страницу фурнитуры" id="HrefArticul" title="Cсылка на страницу фурнитуры"> 
         </div>   
 
         
