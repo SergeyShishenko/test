@@ -269,16 +269,20 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
               $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} OR `articul_alias1` = {?} OR `articul_alias2` = {?} OR `articul_alias3` = {?} ";
                $table = $db->select($query, array($articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
                 if ($table){ //Если есть в БД
-                  echo '<td style="color: green;">' . $table[0]['articul_furnitur_obj'] .' </td>'; //Артикул
-                  echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  //Наименование
+                  echo '<td style="color: green;">' . $table[0]['articul_furnitur_obj'] .' </td>'; // Артикул
+                  echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  // Наименование
                 }else{ //Если нет в БД
+                  $table = array();
                   echo '<td>' . $articul .'</td>'; //Артикул
-                  echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //Наименование
+                  echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
+               var_dump (findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue()));// Поиск ключевого слова
                 }
                 
             }else{ // если ячейка Артикул пустая
+              $table = array();
               echo '<td>' . $articul .'</td>'; //Артикул
-             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //Наименование
+             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
+             findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue());// Поиск ключевого слова
             } 
 
             
@@ -288,20 +292,40 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
               echo '<td>' . 'Ед.измерения' .'</td>';  //9
 
             }else{ //данные, если есть
-              echo '<td>' . $table[0]['made_furnitur_obj'] .'</td>';  //'Поставщик'
-              echo '<td>' . $table[0]['color_obj_prop'] .'</td>';  //Цвет
-              echo '<td>' . $table[0]['unit_obj_prop'] .'</td>';  //Ед.измерения
+              echo '<td>' . $table[0]['made_furnitur_obj'] .'</td>';  // Поставщик
+              echo '<td>' . $table[0]['color_obj_prop'] .'</td>';  // Цвет
+              echo '<td>' . $table[0]['unit_obj_prop'] .'</td>';  // Ед.измерения
             }
 
             
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() .'</td>';  //Кол-во
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  //Примечание
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() .'</td>';  // Кол-во
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  // Примечание
             // $dataType = DType::TYPE_STRING;
              
           // }          
   echo '</tr>';
         // return $arr;        
 }
+
+function findStrByKeyword($mystring,$findme='САМОРЕЗ'){
+$mystring = mb_strtoupper($mystring, 'UTF-8');
+// $findme   = 'САМОРЕЗ';
+$pos = strpos($mystring, $findme);
+    if ($pos === false) {
+      echo "Строка '$findme' не найдена в строке '$mystring'<br>";
+      return false;
+  } else {
+      echo "Строка '$findme' найдена в строке '$mystring'<br>";
+      echo " в позиции $pos <br>";
+      // $table[0]['made_furnitur_obj']="Стройдвор";  //'Поставщик'
+      // $table[0]['color_obj_prop']="желтый/белый цинк";  //Цвет
+      // $table[0]['unit_obj_prop']="Шт.";//Ед.измерения
+      // return true;
+      // return ($table[0]['made_furnitur_obj']=>"Стройдвор",$table[0]['color_obj_prop']=>"желтый/белый цинк",$table[0]['unit_obj_prop']=>"Шт.");
+      return array ("Стройдвор","желтый/белый цинк","Шт.");
+  }
+}
+
 
 ////!!!!!!!!!!!!!!!!!!!!!!!//////
   // $db = class_DataBase::getDB(); // Создаём объект базы данных
