@@ -233,52 +233,9 @@ if(count($array_furn)!=0){
     echo "<tr>";
     // echo '<td>'.$row_num.'</td>';
     foreach ($cellIterator as $cell) {   
-      $cell_num++;
-          // $pos_panel = strpos($cell->getCalculatedValue(), "Спецификация на панели");
-          // $pos_furn = strpos($cell->getCalculatedValue(), "Спецификация на крепеж");
-          // $pos_Doc = strpos($cell->getCalculatedValue(), "док. 5000304-01-001 ВЕДОМОСТЬ ФУРНИТУРЫ");
+      $cell_num++;          
   
-          // if ($pos_panel !== false) { 
-          //    $array[] = 'Panel-'.($row_num-3).'-'.$cell->getCoordinate();                   
-          //   } else if ($pos_furn !== false) {
-          //     $array[] = 'Furniture-'.($row_num-3).'-'.$cell->getCoordinate(); 
-          //     $head=$row_num+1;
-          //   } else if ($pos_Doc !== false) {
-          //     $array[] = 'Doc-'.($row_num).'-'.$cell->getCoordinate();  
-          //   }
-  
-            // if($head == $row_num){
-            //   // $articul=strpos($cell->getCalculatedValue(), "Артикул");
-  
-            //   switch ($cell->getCalculatedValue()) {
-            //     case "Заказ":
-            //       $arrIndex[0] =get_colomn_index($cell); //1
-            //         break;
-            //     case "Изделие":
-            //       $arrIndex[1]=get_colomn_index($cell); //2
-            //         break;
-            //     case "СЕ":
-            //       $arrIndex[2]=get_colomn_index($cell); //3
-            //         break;
-            //     case "Поз.":
-            //       $arrIndex[3]=get_colomn_index($cell); //4
-            //         break;
-            //     case "Артикул":
-            //       $arrIndex[4]=get_colomn_index($cell); //5               
-            //         break;
-            //     case "Наименование":
-            //       $arrIndex[5]=get_colomn_index($cell); //6
-            //         break;
-            //     case "Кол-во":
-            //       $arrIndex[6]=get_colomn_index($cell); //8
-            //         break;
-            //     case "Примечание":
-            //       $arrIndex[7]=get_colomn_index($cell); //9
-            //         break;             
-            //   }
-            // }
-  
-        echo '<td>'.$cell->getValue().'</td>';
+      echo '<td>'.$cell->getValue().'</td>';
   
     }//$cell	
     echo "</tr>";
@@ -299,45 +256,46 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
   // $arr=array();  
   echo '<tr>'; 
          
-            $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() : $val = $Order;
+            $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() : $val = $Order;//Заказ
             echo '<td>' . $val .'</td>';  //1
-            $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() : $val = $Product;
+            $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() : $val = $Product;//Изделие
             echo '<td>' . $val .'</td>';  //2
 
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //3
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() .'</td>';  //4
-            $articul = htmlspecialchars(trim($sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue())); //5 Артикул
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //СЕ
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() .'</td>';  //Поз.
+            $articul = htmlspecialchars(trim($sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue())); //Артикул
             if ($articul !="" && $row != $start_num){
               // var_dump($articul);exit();
               $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} OR `articul_alias1` = {?} OR `articul_alias2` = {?} OR `articul_alias3` = {?} ";
                $table = $db->select($query, array($articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
-                if ($table){
-                  echo '<td style="color: green;">' . $table[0]['articul_furnitur_obj'] .' </td>'; 
-                  echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  //6
-                }else{
-                  echo '<td>' . $articul .'</td>'; 
-                  echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //6
+                if ($table){ //Если есть в БД
+                  echo '<td style="color: green;">' . $table[0]['articul_furnitur_obj'] .' </td>'; //Артикул
+                  echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  //Наименование
+                }else{ //Если нет в БД
+                  echo '<td>' . $articul .'</td>'; //Артикул
+                  echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //Наименование
                 }
                 
-            }else{
-              echo '<td>' . $articul .'</td>'; 
-             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //6
-            }
+            }else{ // если ячейка Артикул пустая
+              echo '<td>' . $articul .'</td>'; //Артикул
+             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //Наименование
+            } 
+
             
-            // echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  //6
-            if ($row==$start_num){
+            if ($row==$start_num){// Недостающие колонки если первая строка
               echo '<td>' . 'Поставщик' .'</td>';  //7
               echo '<td>' . 'Цвет' .'</td>';  //8
               echo '<td>' . 'Ед.измерения' .'</td>';  //9
 
-            }else{
-              echo '<td>' . $table[0]['made_furnitur_obj'] .'</td>';  //7
-            echo '<td>' . $table[0]['color_obj_prop'] .'</td>';  //8
-            echo '<td>' . $table[0]['unit_obj_prop'] .'</td>';  //9
+            }else{ //данные, если есть
+              echo '<td>' . $table[0]['made_furnitur_obj'] .'</td>';  //'Поставщик'
+              echo '<td>' . $table[0]['color_obj_prop'] .'</td>';  //Цвет
+              echo '<td>' . $table[0]['unit_obj_prop'] .'</td>';  //Ед.измерения
             }
+
             
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() .'</td>';  //10
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  //11
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() .'</td>';  //Кол-во
+            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  //Примечание
             // $dataType = DType::TYPE_STRING;
              
           // }          
