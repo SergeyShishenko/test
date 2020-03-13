@@ -110,6 +110,7 @@ foreach ($rowIterator as $row) {
   $array_furn = array();
   $array_doc = array();
   $arr_length = count($array); 
+  $made_furnitur = array();
 
     for($i=0;$i<$arr_length;$i++) 
     {
@@ -272,17 +273,17 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
                   echo '<td style="color: green;">' . $table[0]['articul_furnitur_obj'] .' </td>'; // Артикул
                   echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  // Наименование
                 }else{ //Если нет в БД
-                  $table = array();
+                  
                   echo '<td>' . $articul .'</td>'; //Артикул
                   echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
-               var_dump (findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue()));// Поиск ключевого слова
+                  $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),array('САМОРЕЗ', 'ШУРУП'));// Поиск ключевого слова
                 }
                 
             }else{ // если ячейка Артикул пустая
               $table = array();
               echo '<td>' . $articul .'</td>'; //Артикул
              echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
-             findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue());// Поиск ключевого слова
+             $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),array('САМОРЕЗ', 'ШУРУП'));// Поиск ключевого слова
             } 
 
             
@@ -292,9 +293,13 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
               echo '<td>' . 'Ед.измерения' .'</td>';  //9
 
             }else{ //данные, если есть
-              echo '<td>' . $table[0]['made_furnitur_obj'] .'</td>';  // Поставщик
-              echo '<td>' . $table[0]['color_obj_prop'] .'</td>';  // Цвет
-              echo '<td>' . $table[0]['unit_obj_prop'] .'</td>';  // Ед.измерения
+             
+              $table[0]['made_furnitur_obj'] ? $val = $table[0]['made_furnitur_obj'] : $val = $made_furnitur[0];
+              echo '<td>' . $val .'</td>';  // Поставщик
+              $table[0]['color_obj_prop'] ? $val = $table[0]['color_obj_prop'] : $val = $made_furnitur[1];
+              echo '<td>' . $val .'</td>';  // Цвет
+              $table[0]['unit_obj_prop'] ? $val = $table[0]['unit_obj_prop'] : $val = $made_furnitur[2];
+              echo '<td>' . $val .'</td>';  // Ед.измерения
             }
 
             
@@ -307,26 +312,57 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
         // return $arr;        
 }
 
-function findStrByKeyword($mystring,$findme='САМОРЕЗ'){
-$mystring = mb_strtoupper($mystring, 'UTF-8');
-// $findme   = 'САМОРЕЗ';
-$pos = strpos($mystring, $findme);
-    if ($pos === false) {
-      echo "Строка '$findme' не найдена в строке '$mystring'<br>";
-      return false;
-  } else {
-      echo "Строка '$findme' найдена в строке '$mystring'<br>";
-      echo " в позиции $pos <br>";
-      // $table[0]['made_furnitur_obj']="Стройдвор";  //'Поставщик'
-      // $table[0]['color_obj_prop']="желтый/белый цинк";  //Цвет
-      // $table[0]['unit_obj_prop']="Шт.";//Ед.измерения
-      // return true;
-      // return ($table[0]['made_furnitur_obj']=>"Стройдвор",$table[0]['color_obj_prop']=>"желтый/белый цинк",$table[0]['unit_obj_prop']=>"Шт.");
-      return array ("Стройдвор","желтый/белый цинк","Шт.");
+function findStrByKeyword($haystack,$needles){
+  $haystack = mb_strtoupper($haystack, 'UTF-8');
+
+
+if ( is_array($needles) ) {
+  foreach ($needles as $str) {
+      if ( is_array($str) ) {
+          $pos = strpos_array($haystack, $str);
+      } else {
+          $pos = strpos($haystack, $str);
+      }
+      if ($pos !== FALSE) {
+          // return $pos;
+          return array ("Стройдвор","желтый/белый цинк","шт.");
+      }
+  }
+} else {
+  // $findme   = 'САМОРЕЗ';
+  $pos = strpos($haystack, $needles);
+      if ($pos === false) {
+        // echo "Строка '$findme' не найдена в строке '$haystack'<br>";
+        return false;
+    } else {
+       
+        return array ("Стройдвор","желтый/белый цинк","шт.");
+    }
   }
 }
 
 
+
+
+
+
+
+// function strpos_array($haystack, $needles) {
+//     if ( is_array($needles) ) {
+//         foreach ($needles as $str) {
+//             if ( is_array($str) ) {
+//                 $pos = strpos_array($haystack, $str);
+//             } else {
+//                 $pos = strpos($haystack, $str);
+//             }
+//             if ($pos !== FALSE) {
+//                 return $pos;
+//             }
+//         }
+//     } else {
+//         return strpos($haystack, $needles);
+//     }
+// }
 ////!!!!!!!!!!!!!!!!!!!!!!!//////
   // $db = class_DataBase::getDB(); // Создаём объект базы данных
   // // $query = "SELECT * FROM `obj_furnitur_prop` WHERE `color_obj_prop` = {?} AND `made_furnitur_obj` = {?}";
