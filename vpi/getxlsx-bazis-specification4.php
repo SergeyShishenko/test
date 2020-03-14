@@ -41,6 +41,7 @@ $array = array();
 $furniture = array();
 // $doc = array();
 $arrIndex = array();
+// $arr_keyword=array("САМОРЕЗ", "ШУРУП");
     
 // echo '<table border="1">';
 
@@ -111,6 +112,7 @@ foreach ($rowIterator as $row) {
   $array_doc = array();
   $arr_length = count($array); 
   $made_furnitur = array();
+ 
 
     for($i=0;$i<$arr_length;$i++) 
     {
@@ -252,7 +254,7 @@ function get_colomn_index($cell){
   return Coord::columnIndexFromString($matches[0]);
 }
 
-function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){  
+function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$arr_keyword=array("САМОРЕЗ ", "ШУРУП", "КОНФИРМАТ", "ЕВРОВИНТ")){  
 
   // $arr=array();  
   echo '<tr>'; 
@@ -276,14 +278,14 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
                   
                   echo '<td>' . $articul .'</td>'; //Артикул
                   echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
-                  $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),array('САМОРЕЗ', 'ШУРУП'));// Поиск ключевого слова
+                  $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
                 }
                 
             }else{ // если ячейка Артикул пустая
               $table = array();
               echo '<td>' . $articul .'</td>'; //Артикул
              echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
-             $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),array('САМОРЕЗ', 'ШУРУП'));// Поиск ключевого слова
+             $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
             } 
 
             
@@ -312,31 +314,31 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db){
         // return $arr;        
 }
 
-function findStrByKeyword($haystack,$needles){
-  $haystack = mb_strtoupper($haystack, 'UTF-8');
+function findStrByKeyword($stringcheck,$keyword){
+  $stringcheck = mb_strtoupper($stringcheck, 'UTF-8');
 
 
-if ( is_array($needles) ) {
-  foreach ($needles as $str) {
+if ( is_array($keyword) ) {
+  foreach ($keyword as $str) {
       if ( is_array($str) ) {
-          $pos = strpos_array($haystack, $str);
+          $pos = findStrByKeyword($stringcheck, $str);
       } else {
-          $pos = strpos($haystack, $str);
+          $pos = strpos($stringcheck, $str);
       }
       if ($pos !== FALSE) {
           // return $pos;
-          return array ("Стройдвор","желтый/белый цинк","шт.");
+          return array ("Стройдвор","металл","шт.");
       }
   }
 } else {
   // $findme   = 'САМОРЕЗ';
-  $pos = strpos($haystack, $needles);
+  $pos = strpos($stringcheck, $keyword);
       if ($pos === false) {
-        // echo "Строка '$findme' не найдена в строке '$haystack'<br>";
+        // echo "Строка '$findme' не найдена в строке '$stringcheck'<br>";
         return false;
     } else {
        
-        return array ("Стройдвор","желтый/белый цинк","шт.");
+        return array ("Стройдвор","металл","шт.");
     }
   }
 }
@@ -347,20 +349,20 @@ if ( is_array($needles) ) {
 
 
 
-// function strpos_array($haystack, $needles) {
-//     if ( is_array($needles) ) {
-//         foreach ($needles as $str) {
+// function strpos_array($stringcheck, $keyword) {
+//     if ( is_array($keyword) ) {
+//         foreach ($keyword as $str) {
 //             if ( is_array($str) ) {
-//                 $pos = strpos_array($haystack, $str);
+//                 $pos = strpos_array($stringcheck, $str);
 //             } else {
-//                 $pos = strpos($haystack, $str);
+//                 $pos = strpos($stringcheck, $str);
 //             }
 //             if ($pos !== FALSE) {
 //                 return $pos;
 //             }
 //         }
 //     } else {
-//         return strpos($haystack, $needles);
+//         return strpos($stringcheck, $keyword);
 //     }
 // }
 ////!!!!!!!!!!!!!!!!!!!!!!!//////
