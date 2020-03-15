@@ -1,4 +1,13 @@
 <?php require('header.php');
+
+$loader = require_once '../Classes/Autoloader.php';
+// require_once '../Classes/Autoloader.php';
+
+// // function addNamspacePath($namespace, $root_path)
+$loader->addNamspacePath('Test', dirname(__DIR__) . '/Classes/Test/');
+// echo dirname(__DIR__) . '/Classes/Test/';
+$my = new \Test\Test("Привет из класса!");
+// Этот класс будет загружен автоматически
 //localhost/www/admin/index.php
 
 //добавить группу `grupp` 4 ШТАНГИ МЕБЕЛЬНЫЕ  group_4  (footer.php)
@@ -17,6 +26,8 @@
 </div> -->
 
 <article id="responds">
+<p>_<?php echo $my->getOutput(); ?>_</p>
+
     <?php
     //подключаем конфигурационный файл
     define('__ROOT__', dirname(dirname(__FILE__))); 
@@ -27,6 +38,9 @@
     // //MySQL запрос
     $Result_head = mysqli_query($dbconn,"SELECT * FROM head ORDER BY `head`.`number_in_order_head` ASC");
     // получаем все записи из таблицы head
+
+    
+
     while($row_head = mysqli_fetch_array($Result_head))
     {        
  echo ' <div class="box col-md-12" id="item_'.$row_head["head_id"].'"><!--Раздел--> 

@@ -12,6 +12,8 @@ bazisspecification2 start 11.02.20
         vpi\templates\VPI_template.xls
 
         inc\inc-version-css-js.php
+        
+        Classes\Autoloader.php
 
         vendor\(ВСЁ)
 
