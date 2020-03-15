@@ -1,4 +1,5 @@
 <?php
+// Classes\simplehtmldom_1_9_1\example\hafele_selector.php
 // example of how to use basic selector to retrieve HTML contents
 include('../simple_html_dom.php');
  
