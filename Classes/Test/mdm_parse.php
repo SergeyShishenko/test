@@ -24,31 +24,55 @@ use DiDom\Exceptions\InvalidSelectorException;
 //////////////
 
 
+$url='https://hafeleshop.ru/catalog/mebelnaya-furnitura/litcevaya-furnitura/mebelnye-opory/63767900-element-regulirovki-tcokolya-stal-otcinkov/';
+// $url='https://www.mdm-complect.ru/catalog/opory-kolesnye/13006/';
+// $document = new Document('https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/60124/', true);
+$pq5=parse_url($url)['host'];
+$document = new Document($url, true);
 
-$document = new Document('https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/60124/', true);
+switch (true) {
+    case (strpos($pq5, 'hafele')!== false):
+        echo "HAFELE", "<br>";
+        
+        break;
+    case (strpos($pq5, 'mdm-complect')!== false):
+        echo "МДМ-КОМПЛЕКТ", "<br>";
+        $posts = $document->find('.product-title-box h1' );
+// var_dump($posts[0]);
+        if (!is_null($posts[0])){
+        $pq=$posts[0]->text();// наименование  
+        }
+        $posts = $document->find('.product-title-box p' );
 
-$posts = $document->find('.product-title-box');
+        if (!is_null($posts[0])){
+            $pq2=str_replace("Артикул: ", "", $posts[0]->text());// артикул
+        }
 
-foreach($posts as $post) {
-    echo $post->text(), "\n";
+        $posts = $document->first('#tab01 p' );
+        // echo $posts, "<br>";
+        if (!is_null($posts)){
+            $pq3=$posts->lastChild()->text();// материал
+        }
+
+
+
+        $n=$document->count('.f-val')-1;
+        if ($n>0){
+            $pq4 = $document->find('.f-val')[$n]->text();// единица измерения
+        }
+        break;  
+        
+    default: echo "Стройдвор"; break;
 }
+echo $pq;
+echo '<br>';
+echo $pq2;
+echo '<br>';
+echo $pq3;
+echo '<br>';
+echo $pq4;
+echo '<br>';
+echo $pq5;
+echo '<br>';
 
-// $arr=[];
-// foreach ($hentry as $el) {
-//   $pq = pq($el)->find('h1')->text(); // Это аналог $ в jQuery
-//   $pq2 = pq($el)->find('p')->text(); // Это аналог $ в jQuery
-// }
-// $hentry = $document->find('div#tab01');
-// foreach ($hentry as $el) { 
-//   $pq3 = pq($el)->find('p:first')->text(); // Это аналог $ в jQuery
-// }
-// $hentry = $document->find('div.f-val');
-// $pq4 = pq($hentry)->find('span[itemprop="brand"]')->html(); // Это аналог $ в jQuery
 
-// echo $pq;
-// echo '<br>';
-// echo $pq2;
-// echo '<br>';
-// echo $pq3;
-// echo '<br>';
-// echo $pq4;
