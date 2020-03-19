@@ -26,7 +26,8 @@ use DiDom\Exceptions\InvalidSelectorException;
 
 // $url='https://hafeleshop.ru/catalog/mebelnaya-furnitura/litcevaya-furnitura/mebelnye-opory/63767900-element-regulirovki-tcokolya-stal-otcinkov/';
 // $url='https://makmart.ru/WItem/14813/';
-$url='https://makmart.ru/WItem/16311/';
+// $url='https://makmart.ru/WItem/16311/';
+$url='https://makmart.ru/WItem/865/';
 // $url='https://www.mdm-complect.ru/catalog/opory-kolesnye/13006/';
 // $document = new Document('https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/60124/', true);
 $pq5=parse_url($url)['host'];
@@ -81,9 +82,34 @@ switch (true) {
         $posts = $document->find('.tdDots' ); // материал
         // echo $posts->child(3),'<br>' ;
         // foreach($posts as $post){
-            foreach($posts[0]->nextSiblings('td') as $e){
-            // echo $e->innerHtml(), '<br>';
-            echo $e->text(), '<br>';
+            // foreach($posts[0]->nextSiblings('td') as $e){
+            // // echo $e->innerHtml(), '<br>';
+            // // echo $e->text(), '<br>';
+            // }
+            echo $document->first('.tdDots' )->text(), '<br>';
+           
+            $p = $document->first('.tdDots' )->parent()->innerHtml();
+            //  echo count($p),"<br>";
+             echo $p,"<br>";
+            // echo $document->find('.tdDots' )[0]->innerHtml(), '<br>';
+            for ($i=1; $i < count($p); $i++){
+                echo $p[$i]->text(), '<br>';
+                
+            }
+            ////////
+            $post=$posts[0]->nextSiblings('td');
+            // echo count($post), '<br>';
+            for ($i=1; $i < count($post); $i++){
+                echo $post[$i]->text(), '<br>';
+                
+            }
+
+            ////////
+            $post=$posts[0]->nextSiblings('td');
+            // echo count($post), '<br>';
+            for ($i=1; $i < count($post); $i++){
+                echo $post[$i]->text(), '<br>';
+                
             }
             // var_dump($e->nextSiblings());
         // }
