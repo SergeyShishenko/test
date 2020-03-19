@@ -1,5 +1,5 @@
 <?php
-// Classes\Test\mdm_parse.php
+// Classes\Test\pack_parse.php
 ///////////////
 require_once( dirname(__DIR__) . '/DiDom/ClassAttribute.php');
 require_once( dirname(__DIR__) . '/DiDom/Document.php');
@@ -24,7 +24,8 @@ use DiDom\Exceptions\InvalidSelectorException;
 //////////////
 
 
-$url='https://hafeleshop.ru/catalog/mebelnaya-furnitura/litcevaya-furnitura/mebelnye-opory/63767900-element-regulirovki-tcokolya-stal-otcinkov/';
+// $url='https://hafeleshop.ru/catalog/mebelnaya-furnitura/litcevaya-furnitura/mebelnye-opory/63767900-element-regulirovki-tcokolya-stal-otcinkov/';
+$url='https://makmart.ru/WItem/14813/';
 // $url='https://www.mdm-complect.ru/catalog/opory-kolesnye/13006/';
 // $document = new Document('https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/60124/', true);
 $pq5=parse_url($url)['host'];
@@ -33,9 +34,15 @@ $document = new Document($url, true);
 switch (true) {
     case (strpos($pq5, 'hafele')!== false):
         echo "HAFELE", "<br>";
-        foreach($html->find('div.content-product-main-header') as $e)
-        echo $e->plaintext . '<br>';
-        echo $html->find('span.articles_text')[0]->plaintext . '<br>';
+        $posts = $document->find('.content-product-main-header' );
+        $pq=$posts[0]->text();// наименование 
+        // foreach($document->find('div.content-product-main-header') as $e)
+        // echo $e->plaintext . '<br>';
+        $posts =  $document->find('span.articles_text')[0]->text() . '<br>';
+        // echo $posts;
+        if (!is_null($posts)){
+            $pq2=$posts;// артикул
+        }
         
         break;
     case (strpos($pq5, 'mdm-complect')!== false):
@@ -63,17 +70,30 @@ switch (true) {
         if ($n>0){
             $pq4 = $document->find('.f-val')[$n]->text();// единица измерения
         }
-        break;  
+        break; 
+        case (strpos($pq5, 'makmart')!== false):
+        echo "МАКМАРТ", "<br>";
+        $posts = $document->find('.featuresBlock h3' );
+        $pq = $posts[0]->text();// наименование
+        $posts = $document->find('.click-select' );
+        $pq2 = $posts[0]->text();// артикул
+        $posts = $document->find('.tdDots' )->nextSibling(); // материал
+        echo $posts ;
+        // echo '<pre>';
+        // var_dump($posts) ;
+        // echo '</pre>';
+        // featuresBlock
+        break;
         
-    default: echo "Стройдвор"; break;
+    default: echo "Информации не найдено!"; break;
 }
-echo $pq;
+echo $pq; // наименование 
 echo '<br>';
-echo $pq2;
+echo $pq2; // артикул
 echo '<br>';
-echo $pq3;
+echo $pq3; // материал
 echo '<br>';
-echo $pq4;
+echo $pq4; // единица измерения
 echo '<br>';
 echo $pq5;
 echo '<br>';
