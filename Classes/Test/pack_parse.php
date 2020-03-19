@@ -25,7 +25,8 @@ use DiDom\Exceptions\InvalidSelectorException;
 
 
 // $url='https://hafeleshop.ru/catalog/mebelnaya-furnitura/litcevaya-furnitura/mebelnye-opory/63767900-element-regulirovki-tcokolya-stal-otcinkov/';
-$url='https://makmart.ru/WItem/14813/';
+// $url='https://makmart.ru/WItem/14813/';
+$url='https://makmart.ru/WItem/16311/';
 // $url='https://www.mdm-complect.ru/catalog/opory-kolesnye/13006/';
 // $document = new Document('https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/60124/', true);
 $pq5=parse_url($url)['host'];
@@ -77,8 +78,17 @@ switch (true) {
         $pq = $posts[0]->text();// наименование
         $posts = $document->find('.click-select' );
         $pq2 = $posts[0]->text();// артикул
-        $posts = $document->find('.tdDots' )->nextSibling(); // материал
-        echo $posts ;
+        $posts = $document->find('.tdDots' ); // материал
+        // echo $posts->child(3),'<br>' ;
+        // foreach($posts as $post){
+            foreach($posts[0]->nextSiblings('td') as $e){
+            // echo $e->innerHtml(), '<br>';
+            echo $e->text(), '<br>';
+            }
+            // var_dump($e->nextSiblings());
+        // }
+       
+        // echo $posts ;
         // echo '<pre>';
         // var_dump($posts) ;
         // echo '</pre>';
