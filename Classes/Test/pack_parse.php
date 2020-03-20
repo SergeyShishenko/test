@@ -22,11 +22,12 @@ use DiDom\Query;
 use DiDom\StyleAttribute;
 use DiDom\Exceptions\InvalidSelectorException;
 //////////////
+$url='https://hafele-shop.ru/catalog/mebelnaya-furnitura/nozhki-kolyosa-i-opory/opory-mebelnye/mebelnaya-opora-s-regulirovkoj-nesushhaya-sposobnost-150-kg.html';
 // $url='https://hafeleshop.ru/catalog/mebelnaya-furnitura/litcevaya-furnitura/mebelnye-opory/63767900-element-regulirovki-tcokolya-stal-otcinkov/';
 // $url='https://makmart.ru/WItem/14813/';
 // $url='https://makmart.ru/WItem/16311/';
 // $url='https://makmart.ru/WItem/865/';
-$url='https://makmart.ru/WItem/14397/';
+// $url='https://makmart.ru/WItem/14397/';
 // $url='https://www.mdm-complect.ru/catalog/opory-kolesnye/13006/';
 // $document = new Document('https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/60124/', true);
 $pq5=parse_url($url)['host'];

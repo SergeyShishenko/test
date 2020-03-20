@@ -273,7 +273,7 @@
                         data:myData, //данные, которые будут отправлены на сервер (post переменные)
                         success:function(response){
                         $("#outputID").text(response);
-                        // $("#Furn").val(''); //очищаем текстовое поле после успешной вставки
+                      
                         },
                         error:function (xhr, ajaxOptions, thrownError){
                             alert(thrownError); //выводим ошибку
@@ -282,31 +282,25 @@
                 });
                 $("#parse").click(function (e) {
                     if($("#HrefArticul").val()===""){ alert("Введите ссылку на страницу фурнитуры!"); return false;}
-                    alert($("#HrefArticul").val());
+                 
                     
-                    // e.preventDefault();
-                    //  //simple validation
-                    // if($("#Furn").val()===""){ alert("Введите Наименование фурнитуры!"); return false;}
-                    // if($("#Art").val()===""){ alert("Введите Артикул!"); return false;}
-                    // if($("#NameFile").val()===""){ alert("Введите Имя файла изображения!"); return false;}
-                    // if($("#grupp_id").val()===""){ alert("Введите номер группы!"); return false;}
-                    // if($("#path_img_obj").val()===""){ alert("Введите тип(директория) фурнитуры в папках thumbs,pagevpi,carousel!"); return false;}
-                    // if($("#Bild").val()===""){ alert("Введите Производитель!"); return false;}
-                    // if($("#Colour").val()===""){ alert("Введите Цвет!"); return false;}
-                    // if($("#Unit").val()===""){ alert("Введите Ед.измерения!"); return false;}
-                    // if($("#HrefArticul").val()===""){ alert("Введите ссылку на страницу фурнитуры!"); return false;}
-                    // // return false;
-                    // //post variables
-                    // // var myData = "content_Furn="+ $("#Furn").val(); 
+                    e.preventDefault();
+                 
                     var Data = "content_HrefArticul="+ $("#HrefArticul").val();
                                 
                     jQuery.ajax({
                         type: "POST", // HTTP метод  POST или GET
                         url: "pack_parse.php", //url-адрес, по которому будет отправлен запрос
                         dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
-                        data:myData, //данные, которые будут отправлены на сервер (post переменные)
+                        data:Data, //данные, которые будут отправлены на сервер (post переменные)
                         success:function(response){
-                        $("#outputID").text(response);
+                        // $("#outputID").text(response);
+                        var arr=JSON.parse(response);
+                        // $("#Furn").val(''); //очищаем текстовое поле после успешной вставки
+                        // console.log(arr);
+                        $.each( arr, function( key, value ) {
+                        console.log(key + " -> "+ value);
+                        });
                         // $("#Furn").val(''); //очищаем текстовое поле после успешной вставки
                         },
                         error:function (xhr, ajaxOptions, thrownError){
