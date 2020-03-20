@@ -166,16 +166,21 @@
 
          <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="https://500stp.website/furnitura-dlya-mebeli.php" name="add_href_articul" class="text add form-control" size="150" placeholder="Cсылка на страницу фурнитуры" id="HrefArticul" title="Cсылка на страницу фурнитуры"> 
+            <input type="text" value name="add_href_articul" class="text add form-control" size="150" placeholder="Cсылка на страницу фурнитуры" id="HrefArticul" title="Cсылка на страницу фурнитуры"> 
+             
         </div>   
-
+        <!-- <div class="text-right"> -->
+        <div >
+            <button type="submit" class="button btn-success" id="parse" >PARSE SITE  <span class="glyphicon glyphicon-list-alt"></span></button>
+        </div>
+        <br>
         
 
             
 
            
 
-            <button type="submit" class="button animated tada" id="AddFurnSubmit" >Добавить новую фурнитуру<span class="glyphicon glyphicon-plus-sign"></span></button>
+            <button type="submit" class="button animated tada btn-primary" id="AddFurnSubmit" >Добавить новую фурнитуру <span class="glyphicon glyphicon-plus-sign"></span></button>
         </div>
         <!-- <div id='outputting'></div> -->
         <div class="col-md-12 col-sm-12 col-xs-12 " id='outputID'>(data-objfurnid)ID -</div>
