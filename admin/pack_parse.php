@@ -41,69 +41,70 @@ if(isset($_POST["content_HrefArticul"]) && strlen($_POST["content_HrefArticul"])
         switch (true) {
             case (strpos($pq5, 'hafele')!== false):
                 // echo "HAFELE", "<br>";
-                $arr_res['bild']='HAFELE';
+                $arr_res['Bild']='HAFELE';
                 $posts = $document->find('.content-product-main-header' );
                 $pq=$posts[0]->text();// наименование  
-                $arr_res['name']=$pq;       
-                $posts =  $document->find('span.articles_text')[0]->text() . '<br>';        
+                $arr_res['Furn']=trim($pq);       
+                $posts =  $document->find('span.articles_text')[0]->text();        
                 if (!is_null($posts)){
                     $pq2=$posts;// артикул
-                    $arr_res['articul']=$pq2;// артикул
+                    $arr_res['Art']=trim($pq2);// артикул
                 }        
                 break;
             case (strpos($pq5, 'mdm-complect')!== false):
                 // echo "МДМ-КОМПЛЕКТ", "<br>";
-                $arr_res['bild']='МДМ-КОМПЛЕКТ';
+                $arr_res['Bild']='МДМ-КОМПЛЕКТ';
                 $posts = $document->find('.product-title-box h1' );
 
                 if (!is_null($posts[0])){
                 $pq=$posts[0]->text();// наименование 
-                $arr_res['name']=$pq; 
+                $arr_res['Furn']=trim($pq); 
                 }
                 $posts = $document->find('.product-title-box p' );
 
                 if (!is_null($posts[0])){
                     $pq2=str_replace("Артикул: ", "", $posts[0]->text());// артикул
-                    $arr_res['articul']=$pq2;// артикул
+                    $arr_res['Art']=trim($pq2);// артикул
                 }
 
                 $posts = $document->first('#tab01 p' );
                 // echo $posts, "<br>";
                 if (!is_null($posts)){
                     $pq3=$posts->lastChild()->text();// материал
-                    $arr_res['colour']=$pq3;
+                    $arr_res['Colour']=trim($pq3);
                 }
 
                 $n=$document->count('.f-val')-1;
                 if ($n>0){
                     $pq4 = $document->find('.f-val')[$n]->text();// единица измерения
-                    $arr_res['unit']=$pq4;
+                    $arr_res['Unit']=trim($pq4);
                 }
                 break; 
                 case (strpos($pq5, 'makmart')!== false):
                 // echo "МАКМАРТ", "<br>";
-                $arr_res['bild']='МАКМАРТ';
+                $arr_res['Bild']='МАКМАРТ';
                 $posts = $document->find('.featuresBlock h3' );
                 $pq = $posts[0]->text();// наименование
-                $arr_res['name']=$pq;
+                $arr_res['Furn']=trim($pq);
                 $posts = $document->find('.click-select' );
                 $pq2 = $posts[0]->text();// артикул
-                $arr_res['articul']=$pq2;
+                $arr_res['Art']=trim($pq2);
                 $posts = $document->find('.tdDots' ); // материал      
                 
                 $string = $document->first('.tdDots' )->parent()->innerHtml();
                 $string = str_replace(['<span>','</span>'], '|', $string);            
+                $string = str_replace(['<td>','</td>','<td class="tdDots">','<tr>','</tr>'], '', $string);            
                 $arr = explode("|", $string);
 
                 for ($i=0; $i < count($arr); $i++){
                     // echo $arr[$i], '<br>'; // вывод всех элементов
                     if ($arr[$i]=="Материал:"){
                         $pq3=$arr[$i+1]; // материал   Colour
-                        $arr_res['colour']=$pq3;// материал 
+                        $arr_res['Colour']=trim($pq3);// материал 
                     }
                     if ($arr[$i]=="Упаковка:"||$arr[$i]=="Единица измерения:"){
                         $pq4=preg_replace('/\d+\s/', '', $arr[$i+1]); // единица измерения 
-                        $arr_res['unit']=$pq4;  
+                        $arr_res['Unit']=trim($pq4);  
                     }                             
                 } 
                 break;        

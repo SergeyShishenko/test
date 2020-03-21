@@ -157,11 +157,18 @@
             <input type="text" value="шт." name="add_Unit" class="text add form-control" size="150" placeholder="Ед.измерения" id="Unit"  title="Ед.измерения">  
         </div>  -->
 
-        <select id="Unit" name="add_Unit" class="text add form-control" title="Ед.измерения" >
+        <!-- <select id="Unit" name="add_Unit" class="text add form-control" title="Ед.измерения" >
             <option value="шт." selected>Шт.</option>
             <option value="комплектов">Комплект</option>
             <option value="м" >Метр</option>            
-        </select>
+        </select> -->
+
+        <input type="text" list="listUnit" id="Unit" class="text add form-control" placeholder="Ед.измерения">
+        <datalist id="listUnit" name="add_Unit"  title="Ед.измерения" >
+            <option value="шт." selected>Шт.</option>
+            <option value="комплектов">Комплект</option>
+            <option value="м" >Метр</option> 
+        </datalist>
 
 
          <div class="input-group">
@@ -201,7 +208,7 @@
     
 
  // var $ = jQuery.noConflict();
-   $(document).ready(function() {
+    $(document).ready(function() {
             
             // изменение цвета выбранных  input
             $( ".add" ).change(function() {
@@ -280,13 +287,26 @@
                         }
                     });
                 });
+
+
+
                 $("#parse").click(function (e) {
-                    if($("#HrefArticul").val()===""){ alert("Введите ссылку на страницу фурнитуры!"); return false;}
-                 
-                    
+                    if($("#HrefArticul").val()===""){
+                         alert("Введите ссылку на страницу фурнитуры!"); return false;
+                         }
+
+                    if(!isValidURL($("#HrefArticul").val())){
+                        alert("Не верная ссылка!"); return false;
+                        }   
                     e.preventDefault();
+                    console.clear();
+
                  
-                    var Data = "content_HrefArticul="+ $("#HrefArticul").val();
+                        $( ".add" ).each(function( index ) {
+                             $( this ).css("background-color", "White ");
+                        });
+                       var Href= $("#HrefArticul").val().replace('\'', '');
+                    var Data = "content_HrefArticul="+ Href;
                                 
                     jQuery.ajax({
                         type: "POST", // HTTP метод  POST или GET
@@ -294,14 +314,24 @@
                         dataType:"text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
                         data:Data, //данные, которые будут отправлены на сервер (post переменные)
                         success:function(response){
-                        // $("#outputID").text(response);
+                        
                         var arr=JSON.parse(response);
-                        // $("#Furn").val(''); //очищаем текстовое поле после успешной вставки
-                        // console.log(arr);
+                        // var key='Furn';
+                        // var variable=arr[key];
+                        // console.log('arr[key] '+arr[key]);
+                        insertRes(arr,'Furn');
+                        insertRes(arr,'Art');
+                        insertRes(arr,'Bild');
+                        insertRes(arr,'Colour');
+                        insertRes(arr,'Unit');
+                        $("#outputID").text(arr['err']);                     
+                       
+                       
+
                         $.each( arr, function( key, value ) {
                         console.log(key + " -> "+ value);
                         });
-                        // $("#Furn").val(''); //очищаем текстовое поле после успешной вставки
+                        
                         },
                         error:function (xhr, ajaxOptions, thrownError){
                             alert(thrownError); //выводим ошибку
@@ -662,21 +692,21 @@
 
  
   // Обновляем запись, когда произошел клик по кнопке refresh
-  var obj = null;
-  $("body").on( "click","button.btn.button31.btn-warning" , function (e) {
+    var obj = null;
+     $("body").on( "click","button.btn.button31.btn-warning" , function (e) {
 
-    e.preventDefault();
-    obj = this; 
-    var recipient = $(obj).parent().parent().find($("[id*='recipient']")); // значение    
-    var parent =$('span[id="form-parent"]').data('val');
-    var val = recipient.val();    
-    val = $.trim(val);
+        e.preventDefault();
+        obj = this; 
+        var recipient = $(obj).parent().parent().find($("[id*='recipient']")); // значение    
+        var parent =$('span[id="form-parent"]').data('val');
+        var val = recipient.val();    
+        val = $.trim(val);
 
-    if(val==="") //simple validation
-    {
-        alert("Введите наименование!");
-        return false;
-    }  
+        if(val==="") //simple validation
+        {
+            alert("Введите наименование!");
+            return false;
+        }  
         if ( typeof($(obj).data('fieldid')) !== "undefined" && $(obj).data('fieldid') !== "")
          {
             $('input[id="fieldid"]').val($(obj).data('fieldid')).val(); // установка поля
@@ -692,16 +722,16 @@
         
         $('input[id="field"]').val($(obj).data('field')).val(); // установка поля
         $('input[id="tbl"]').val($(obj).data('tbl')).val(); // установка поля
-    var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
-    var DbNumberID = clickedID[1]; //и получаем номер из массива
+        var clickedID = $("#id").val().split("_"); //Разбиваем строку (Split работает аналогично PHP explode)
+        var DbNumberID = clickedID[1]; //и получаем номер из массива
 
-    var myData = "content_txt="+ recipient.val() +"&"+
-                "tbl="+ $("#tbl").val() +"&"+
-                "field="+ $("#field").val() +"&"+
-                "fieldid="+ $("#fieldid").val() +"&"+
-                "action="+ $("#action").val() +"&"+
-                "parent="+ parent +"&"+
-                "id="+ DbNumberID;
+        var myData = "content_txt="+ recipient.val() +"&"+
+                    "tbl="+ $("#tbl").val() +"&"+
+                    "field="+ $("#field").val() +"&"+
+                    "fieldid="+ $("#fieldid").val() +"&"+
+                    "action="+ $("#action").val() +"&"+
+                    "parent="+ parent +"&"+
+                    "id="+ DbNumberID;
         // "name=John&location=Boston"
         jQuery.ajax({
             type: "POST", // HTTP метод  POST или GET
@@ -731,10 +761,10 @@
         e.preventDefault();
                     // alert('btn-warning');
                     $(this).parent().find('.input-group-btn > button.button31').addClass('btn-warning');            
-                }); 
+    }); 
 
-  $("body").on( "click","button.btn.btn-primary.button33" , function (e) {
-    e.preventDefault(); 
+    $("body").on( "click","button.btn.btn-primary.button33" , function (e) {
+        e.preventDefault(); 
       if ($(this).parent().parent().parent().parent().parent().hasClass('obj_in_addition'))
         {$(this).parent().parent().parent().parent().parent().append('<div class="row">'+
             '<div class="input-group col-md-12">'+
@@ -842,15 +872,15 @@
     
             
     $("body").on( "click","button.btn.btn-danger.button32" , function (e) {
-    e.preventDefault();
-    //get image id
-    // alert($(this).parent().parent().parent().parent().hasClass('row1'));
-    $(this).parent().parent().parent().parent().not('.row1').fadeOut();
-    if ($(this).parent().parent().parent().parent().hasClass('row1')) {
-        $(this).parents('.input-group').find('input').val('');
-        $(this).parents('.input-group-btn').find('.button31').addClass('btn-warning');
-    }
-    
+        e.preventDefault();
+        //get image id
+        // alert($(this).parent().parent().parent().parent().hasClass('row1'));
+        $(this).parent().parent().parent().parent().not('.row1').fadeOut();
+        if ($(this).parent().parent().parent().parent().hasClass('row1')) {
+            $(this).parents('.input-group').find('input').val('');
+            $(this).parents('.input-group-btn').find('.button31').addClass('btn-warning');
+        }
+        
     });
 
 
@@ -892,8 +922,8 @@
                 alert('Вы не можете загружать больше '+maxFiles+' файлов!'); 
                 files.length = 0; return;
             }
-        //    $(function() {$("#dropped-files div[id^='img']").sortable();}); 
-        $("#dropped-files").sortable({ cancel: '.note' });
+            //    $(function() {$("#dropped-files div[id^='img']").sortable();}); 
+            $("#dropped-files").sortable({ cancel: '.note' });
         });
 
         
@@ -1170,8 +1200,22 @@
             });
         });
 
-        // });
+    // валидация URL
+        function isValidURL(url){
+            var RegExp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
 
+            if(RegExp.test(url)){
+                return true;
+            }else{
+                return false;
+            }
+        } 
+
+        function insertRes(arr,key){
+            if(typeof(arr[key]) != "undefined" && arr[key] !== null){
+                $("#"+key).val(arr[key]).css("background-color", "LawnGreen ");
+            }
+        }
     /////// drop
 </script>
 <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
