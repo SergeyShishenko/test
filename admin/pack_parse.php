@@ -36,10 +36,11 @@ if(isset($_POST["content_HrefArticul"]) && strlen($_POST["content_HrefArticul"])
         $arr_res = array(); 
 
         $pq5=parse_url($url)['host'];
+        $pq6=parse_url($url)['scheme'] . '://';
         $document = new Document($url, true);
 
         switch (true) {
-            case (strpos($pq5, 'hafele')!== false):
+            case (strpos($pq5, 'hafeleshop')!== false):
                 // echo "HAFELE", "<br>";
                 $arr_res['Bild']='HAFELE';
                 $posts = $document->find('.content-product-main-header' );
@@ -49,8 +50,11 @@ if(isset($_POST["content_HrefArticul"]) && strlen($_POST["content_HrefArticul"])
                 if (!is_null($posts)){
                     $pq2=$posts;// артикул
                     $arr_res['Art']=trim($pq2);// артикул
-                }        
-                break;
+                } 
+                $posts = $document->find('.fancybox img' );
+                $arr_res['NameFile'] = $pq6 . $pq5 . $posts[0]->attr('src');        
+            break;
+
             case (strpos($pq5, 'mdm-complect')!== false):
                 // echo "МДМ-КОМПЛЕКТ", "<br>";
                 $arr_res['Bild']='МДМ-КОМПЛЕКТ';
@@ -79,8 +83,13 @@ if(isset($_POST["content_HrefArticul"]) && strlen($_POST["content_HrefArticul"])
                     $pq4 = $document->find('.f-val')[$n]->text();// единица измерения
                     $arr_res['Unit']=trim($pq4);
                 }
-                break; 
-                case (strpos($pq5, 'makmart')!== false):
+                $posts = $document->find('.photos-box  a  picture  img' );
+                $arr_res['NameFile'] = $pq6 . $pq5 . $posts[0]->attr('src'); 
+    
+            break; 
+
+
+            case (strpos($pq5, 'makmart')!== false):
                 // echo "МАКМАРТ", "<br>";
                 $arr_res['Bild']='МАКМАРТ';
                 $posts = $document->find('.featuresBlock h3' );
@@ -107,10 +116,13 @@ if(isset($_POST["content_HrefArticul"]) && strlen($_POST["content_HrefArticul"])
                         $arr_res['Unit']=trim($pq4);  
                     }                             
                 } 
-                break;        
+                $posts = $document->find('.bigImg  a    img' );
+                $arr_res['NameFile'] = $pq6 . $pq5 . $posts[0]->attr('src'); 
+            break;
+
             default:
-            //  echo "Информации не найдено!";
-            $arr_res['err']="Информации не найдено!";
+                //  echo "Информации не найдено!";
+                $arr_res['err']="Информации не найдено!";
              break;
         }
 

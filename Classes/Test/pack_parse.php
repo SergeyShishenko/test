@@ -1,5 +1,6 @@
 <?php
 // Classes\Test\pack_parse.php
+// https://логинов.com/dev/parsing-php-didom.html
 ///////////////
 require_once( dirname(__DIR__) . '/DiDom/ClassAttribute.php');
 require_once( dirname(__DIR__) . '/DiDom/Document.php');
@@ -22,8 +23,8 @@ use DiDom\Query;
 use DiDom\StyleAttribute;
 use DiDom\Exceptions\InvalidSelectorException;
 //////////////
-$url='https://hafele-shop.ru/catalog/mebelnaya-furnitura/nozhki-kolyosa-i-opory/opory-mebelnye/mebelnaya-opora-s-regulirovkoj-nesushhaya-sposobnost-150-kg.html';
-// $url='https://hafeleshop.ru/catalog/mebelnaya-furnitura/litcevaya-furnitura/mebelnye-opory/63767900-element-regulirovki-tcokolya-stal-otcinkov/';
+// $url='https://hafele-shop.ru/catalog/mebelnaya-furnitura/nozhki-kolyosa-i-opory/opory-mebelnye/mebelnaya-opora-s-regulirovkoj-nesushhaya-sposobnost-150-kg.html';
+$url='https://hafeleshop.ru/catalog/mebelnaya-furnitura/litcevaya-furnitura/mebelnye-opory/63767900-element-regulirovki-tcokolya-stal-otcinkov/';
 // $url='https://makmart.ru/WItem/14813/';
 // $url='https://makmart.ru/WItem/16311/';
 // $url='https://makmart.ru/WItem/865/';
@@ -31,6 +32,7 @@ $url='https://hafele-shop.ru/catalog/mebelnaya-furnitura/nozhki-kolyosa-i-opory/
 // $url='https://www.mdm-complect.ru/catalog/opory-kolesnye/13006/';
 // $document = new Document('https://www.mdm-complect.ru/catalog/sistema-joker-i-uno/60124/', true);
 $pq5=parse_url($url)['host'];
+$pq6=parse_url($url)['scheme'] . '://';
 $document = new Document($url, true);
 
 switch (true) {
@@ -41,7 +43,9 @@ switch (true) {
         $posts =  $document->find('span.articles_text')[0]->text() . '<br>';        
         if (!is_null($posts)){
             $pq2=$posts;// артикул
-        }        
+        }  
+        $posts = $document->find('.fancybox img' );
+        echo $pq6 . $pq5 . $posts[0]->attr('src'),'<br>';       
         break;
     case (strpos($pq5, 'mdm-complect')!== false):
         echo "МДМ-КОМПЛЕКТ", "<br>";
@@ -66,6 +70,13 @@ switch (true) {
         if ($n>0){
             $pq4 = $document->find('.f-val')[$n]->text();// единица измерения
         }
+
+        $posts = $document->find('.photos-box  a  picture  img' );
+        echo $pq6.$pq5 . $posts[0]->attr('src'),"<br>";    
+                // foreach($posts as $post) {
+                //     // $arr_res['path_img_obj'] =  $post->attr('src');
+                //     echo $post->attr('src'),"<br>";
+                // }
         break; 
         case (strpos($pq5, 'makmart')!== false):
         echo "МАКМАРТ", "<br>";
@@ -88,6 +99,9 @@ switch (true) {
                 $pq4=preg_replace('/\d+\s/', '', $arr[$i+1]); // единица измерения   
             }                             
         } 
+        $posts = $document->find('.bigImg  a    img' );
+        echo $pq6 . $pq5 . $posts[0]->attr('src'),'<br>'; 
+        // bigImg
         break;        
     default: echo "Информации не найдено!"; break;
 }

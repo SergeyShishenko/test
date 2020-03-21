@@ -67,7 +67,7 @@
         <hr><hr>
         <div class="col-md-9 col-sm-9 col-xs-12 copyright">
 
-      <p>admin\footer.php (стр.70)</p>      
+      <p>admin\footer.php (строка 70)</p>      
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
@@ -97,11 +97,6 @@
             <input type="text" value="test.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла изображения" id="NameFile" title="Имя файла изображения">       
         </div>
 
-        <!-- <div class="input-group">
-            <span class="input-group-addon cls">X</span>
-            <input type="text" value="3" name="add_grupp_id" class="text add form-control" size="150" placeholder="grupp_id" id="grupp_id" title="Номер группы (1-МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ,2-ПЕТЛИ для ФАСАДОВ, 3-КРЕПЕЖ И МЕТИЗЫ, 4-ШТАНГИ МЕБЕЛЬНЫЕ) ">      
-        </div> -->
-
         <select id="grupp_id" name="add_grupp_id" class="text add form-control" title="Номер группы (1-МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ,2-ПЕТЛИ для ФАСАДОВ, 3-КРЕПЕЖ И МЕТИЗЫ, 4-ШТАНГИ МЕБЕЛЬНЫЕ) " >
             <option value="1">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ</option>
             <option value="2">ПЕТЛИ для ФАСАДОВ</option>
@@ -126,12 +121,8 @@
             <option value="21" >РИГЕЛИ (ШПИНГАЛЕТЫ) для ПОЛОТЕН ДВЕРНЫХ</option>            
             <option value="22" >ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ</option>            
             <option value="23" >УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ</option>            
-        </select>
-            
-        <!-- <div class="input-group">
-            <span class="input-group-addon cls">X</span>
-            <input type="text" value="shtangi" name="add_path_img_obj" class="text add form-control" size="150" placeholder="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel" id="path_img_obj" title="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel">    
-        </div> -->
+        </select>           
+        
             
         <select id="path_img_obj" name="add_path_img_obj" class="text add form-control" title="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel" >
             <option value="shtangi">Штанги</option>
@@ -139,33 +130,26 @@
             <option value="metizy" >Метизы</option>            
             <option value="other" selected>Разное</option>            
         </select>
+
         <input type="text" list="listBild" id="Bild" class="text add form-control" placeholder="Производитель">
         <datalist id="listBild" name="add_Bild"  title="Производитель" >
             <option value="HAFELE">HAFELE</option>
             <option value="МДМ-КОМПЛЕКТ">МДМ-КОМПЛЕКТ</option>
-            <option value="МАКМАРТ" selected>МАКМАРТ</option>
+            <option value="МАКМАРТ" >МАКМАРТ</option>
             <option value="BLUM" >BLUM</option>
+        </datalist>    
+
+        <input type="text" list="listColour" id="Colour" class="text add form-control" placeholder="Цвет">
+        <datalist id="listColour" name="add_Colour"  title="Цвет" >
+            <option value="алюминий">алюминий</option>
+            <option value="сталь">сталь</option>
+            <option value="Оцинкованный" >Оцинкованный</option>
+            <option value="металл" >металл</option>
         </datalist>
-
-        <div class="input-group">
-            <span class="input-group-addon cls">X</span>
-            <input type="text" value="алюминий" name="add_Colour" class="text add form-control" size="150" placeholder="Цвет" id="Colour"  title="Цвет">   
-        </div>
-
-        <!-- <div class="input-group">
-            <span class="input-group-addon cls">X</span>
-            <input type="text" value="шт." name="add_Unit" class="text add form-control" size="150" placeholder="Ед.измерения" id="Unit"  title="Ед.измерения">  
-        </div>  -->
-
-        <!-- <select id="Unit" name="add_Unit" class="text add form-control" title="Ед.измерения" >
-            <option value="шт." selected>Шт.</option>
-            <option value="комплектов">Комплект</option>
-            <option value="м" >Метр</option>            
-        </select> -->
 
         <input type="text" list="listUnit" id="Unit" class="text add form-control" placeholder="Ед.измерения">
         <datalist id="listUnit" name="add_Unit"  title="Ед.измерения" >
-            <option value="шт." selected>Шт.</option>
+            <option value="шт." >Шт.</option>
             <option value="комплектов">Комплект</option>
             <option value="м" >Метр</option> 
         </datalist>
@@ -324,6 +308,7 @@
                         insertRes(arr,'Bild');
                         insertRes(arr,'Colour');
                         insertRes(arr,'Unit');
+                        insertRes(arr,'NameFile');
                         $("#outputID").text(arr['err']);                     
                        
                        
