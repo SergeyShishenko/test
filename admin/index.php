@@ -1,5 +1,6 @@
-<?php require('header.php');
-
+<?php
+// admin\index.php
+require('header.php');
 $loader = require_once '../Classes/Autoloader.php';
 // require_once '../Classes/Autoloader.php';
 
