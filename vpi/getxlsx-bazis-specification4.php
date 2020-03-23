@@ -168,7 +168,7 @@ if(count($array_furn)!=0){
       // echo '<br><table border="1" style="width: 100%;" class="tblVPI">';
       for($j=$start_num;$j<=$to;$j++) 
       {  
-        readRowByNember($j,$sheet,$arrIndex,$Order,$Product,$start_num,$db);
+        readRowByNember($j,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i);
       }
       if ($i===count($array_furn)-1){
         echo '</table>';
@@ -262,7 +262,8 @@ function get_colomn_index($cell){
   return Coord::columnIndexFromString($matches[0]);
 }
 
-function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$arr_keyword=array("САМОРЕЗ ", "ШУРУП", "КОНФИРМАТ", "ЕВРОВИНТ")){  
+// function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i,$arr_keyword=array("САМОРЕЗ ", "ШУРУП", "КОНФИРМАТ", "ЕВРОВИНТ")){  
+function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i,$arr_keyword=array("САМОРЕЗ ", "ШУРУП", "КОНФИРМАТ")){  
 
   // $arr=array();  
   echo '<tr>'; 
@@ -275,7 +276,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$a
             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //СЕ
             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() .'</td>';  //Поз.
             $articul = htmlspecialchars(trim($sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue())); //Артикул
-            if ($articul !="" && $row != $start_num){
+            if ($articul !="" && $articul !="Артикул"){
               // var_dump($articul);exit();
               $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} OR `articul_alias1` = {?} OR `articul_alias2` = {?} OR `articul_alias3` = {?} ";
                $table = $db->select($query, array($articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
@@ -297,7 +298,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$a
             } 
 
             
-            if ($row==$start_num){// Недостающие колонки если первая строка
+            if ($row==$start_num && $i===0){// Недостающие колонки если первая строка
               echo '<td>' . 'Поставщик' .'</td>';  //7
               echo '<td>' . 'Цвет' .'</td>';  //8
               echo '<td>' . 'Ед.измерения' .'</td>';  //9
