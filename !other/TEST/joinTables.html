@@ -1,0 +1,60 @@
+<!-- !other\TEST\1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <table id="myTable">
+                <tr>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>o</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                </tr>
+            </table>
+            <button type="button" onclick="Tclick();"><span> Выполнить</span></button>
+    <script>
+        function Tclick(){
+                var table = document.getElementById( "myTable" );
+
+                for ( var i = 0; i < table.rows.length; i++ ) {
+
+                    for ( var j = 0; j < table.rows[0].cells.length; j++ ) {
+                        //  alert("indexes x:" + i + " y:" + j + " = " + table.rows[i].cells[j].innerHTML);
+                        if (table.rows[i].cells[0].innerHTML === table.rows[i].cells[j].innerHTML){
+                            // alert(true);
+                        }else{
+                            // alert(false);
+                             var ell = table.rows[i].cells[0].closest("tr"); // tr element (ваша строчка)
+                                ell.parentElement.removeChild(ell);
+                       
+                        }                        
+                    }
+                } 
+            }
+
+
+    </script>
+
+  
+</body>
+</html>
