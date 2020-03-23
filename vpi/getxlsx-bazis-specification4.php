@@ -147,6 +147,11 @@ if(count($array_furn)!=0){
       $num=explode("-", $array_furn[$i]);
       $from_num=$num[0];
       $start_num=$from_num+4;
+      if ($i>0){
+        $start_num++;
+      }else{
+        echo '<br><table border="1" style="width: 100%;" class="tblVPI">';
+      }
       $to=$num[1];
       // echo "from " . $from_num . " to " . $to . "<br>";
       // $Order=0;
@@ -160,12 +165,15 @@ if(count($array_furn)!=0){
       // print_r( $arrIndex);
       // echo "</pre>";
       $db = class_DataBase::getDB(); // Создаём объект базы данных
-      echo '<br><table border="1" style="width: 100%;" class="tblVPI">';
+      // echo '<br><table border="1" style="width: 100%;" class="tblVPI">';
       for($j=$start_num;$j<=$to;$j++) 
       {  
         readRowByNember($j,$sheet,$arrIndex,$Order,$Product,$start_num,$db);
       }
-      echo '</table>';
+      if ($i===count($array_furn)-1){
+        echo '</table>';
+      }
+      
     }
 
     echo "<br>
