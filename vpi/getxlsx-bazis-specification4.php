@@ -150,7 +150,7 @@ if(count($array_furn)!=0){
       if ($i>0){
         $start_num++;
       }else{
-        echo '<br><table border="1" style="width: 100%;" class="tblVPI">';
+        echo '<br><table border="1" style="width: 100%;" class="tblVPI" id="tblVPI">';
       }
       $to=$num[1];
       // echo "from " . $from_num . " to " . $to . "<br>";
@@ -231,6 +231,10 @@ if(count($array_furn)!=0){
           }
           });
       });
+
+
+    // запуск объеденения строк
+    Tclick();
     </script>
     ";
 

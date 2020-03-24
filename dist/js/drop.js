@@ -1512,6 +1512,50 @@ function PrintElem(elem)
         // $('#CreateSubmit').show();
         $('#drop-files').show();
     }
+
+    // объединение строк таблицы спецификации
+
+    function Tclick() {
+        var table = document.getElementById('tblVPI');
+        // console.log('Tclick');
+        // console.log(table.rows.length);
+        // var i = 0;
+        // var rowscount=table.rows.length;
+        var ch= true;
+            while (ch) {
+                console.log('Tclick');
+                ch=checkTr(table);
+            }//while
+
+    }
+
+
+    function checkTr(table){
+        var i = 1;
+        rowscount=table.rows.length;
+        console.log(rowscount);
+        while (i < rowscount-1) {
+            console.log(table.rows[i].cells[3].innerHTML +" ~ "+ table.rows[i+1].cells[3].innerHTML);
+            // console.log(table.rows[i].cells[4].innerHTML +" ~ "+ table.rows[i+1].cells[4].innerHTML);
+            // console.log(table.rows[i].cells[5].innerHTML +" ~ "+ table.rows[i+1].cells[5].innerHTML);
+         
+                if (table.rows[i].cells[3].innerHTML === table.rows[i+1].cells[3].innerHTML && table.rows[i].cells[4].innerHTML === table.rows[i+1].cells[4].innerHTML
+             && table.rows[i].cells[5].innerHTML === table.rows[i+1].cells[5].innerHTML ) {
+                
+                table.rows[i].cells[9].innerHTML=parseInt(table.rows[i].cells[9].innerHTML, 10) + parseInt(table.rows[i+1].cells[9].innerHTML, 10);
+                //  alert(table.rows[i].cells[9].innerHTML);
+                var ell = table.rows[i+1].cells[0].closest('tr'); // tr element (ваша строчка)
+                ell.parentElement.removeChild(ell);
+                console.log('REMOVE');
+                return true;
+                // rowscount=document.getElementById('tblVPI').rows.length;
+
+            }
+                i++;  
+                console.log('NEXT');
+            }//while
+            return false;
+    }
     
 
  
