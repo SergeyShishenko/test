@@ -1,60 +1,193 @@
-<!-- !other\TEST\1.html -->
+<!-- !other\TEST\joinTables.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
-        <table id="myTable">
-                <tr>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                </tr>
-                <tr>
-                    <td>o</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                </tr>
-                <tr>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                    <td>x</td>
-                </tr>
-            </table>
-            <button type="button" onclick="Tclick();"><span> Выполнить</span></button>
+    <!-- <table id="myTable">
+        <tr>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+        </tr>
+        <tr>
+            <td>o</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+        </tr>
+        <tr>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+        </tr>
+    </table> -->
+
+    <table border="1" style="width: 100%;" class="tblVPI" id="myTable">
+        <tbody>
+            <tr>
+                <td>Заказ</td>
+                <td>Изделие</td>
+                <td>СЕ</td>
+                <td>Поз.</td>
+                <td>Артикул</td>
+                <td>Наименование</td>
+                <td>Поставщик</td>
+                <td>Цвет</td>
+                <td>Ед.измерения</td>
+                <td>Кол-во</td>
+                <td>Примечание</td>
+            </tr>
+            <tr>
+                <td>1777</td>
+                <td>23</td>
+                <td></td>
+                <td>22</td>
+                <td></td>
+                <td>1777 КДЗ_23 модель.sat</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1777</td>
+                <td>23_1.1 Корпус</td>
+                <td></td>
+                <td></td>
+                <td style="color: green;">5000502-07-712 </td>
+                <td>Стяжка коническая D10 для плит толщиной от 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>комплектов</td>
+                <td>63</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1777</td>
+                <td>23</td>
+                <td>1.1</td>
+                <td></td>
+                <td style="color: green;">5000502-07-752 </td>
+                <td>Конфирмат 7,0Х70 для плит толщиной 25 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>шт.</td>
+                <td>4</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1777</td>
+                <td>23</td>
+                <td>1.1</td>
+                <td></td>
+                <td style="color: green;">5000502-07-750 </td>
+                <td>Конфирмат 7,0Х50 для плит толщиной 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>шт.</td>
+                <td>4</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1777</td>
+                <td>23</td>
+                <td>1.1</td>
+                <td></td>
+                <td style="color: green;">5000502-07-750 </td>
+                <td>Конфирмат 7,0Х50 для плит толщиной 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>шт.</td>
+                <td>4</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1777</td>
+                <td>23</td>
+                <td>1.1</td>
+                <td></td>
+                <td style="color: green;">5000502-07-750 </td>
+                <td>Конфирмат 7,0Х50 для плит толщиной 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>шт.</td>
+                <td>4</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1777</td>
+                <td>23_1.2 Корпус</td>
+                <td></td>
+                <td></td>
+                <td style="color: green;">5000502-07-712 </td>
+                <td>Стяжка коническая D10 для плит толщиной от 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>комплектов</td>
+                <td>18</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1777</td>
+                <td>23</td>
+                <td>3.1</td>
+                <td></td>
+                <td style="color: green;">5000502-01-101 </td>
+                <td>Петля накладная для профильных дверей 95° CLIP top BLUMOTION 71B9550, чашка петли: на шурупы</td>
+                <td>BLUM</td>
+                <td>Никелиров.</td>
+                <td>комплектов</td>
+                <td>16</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" onclick="Tclick();"><span> Выполнить</span></button>
     <script>
-        function Tclick(){
-                var table = document.getElementById( "myTable" );
+        function Tclick() {
+            var table = document.getElementById("myTable");
 
-                for ( var i = 0; i < table.rows.length; i++ ) {
+            for (var i = 0; i < table.rows.length-1; i++) {//количество строк
 
-                    for ( var j = 0; j < table.rows[0].cells.length; j++ ) {
-                        //  alert("indexes x:" + i + " y:" + j + " = " + table.rows[i].cells[j].innerHTML);
-                        if (table.rows[i].cells[0].innerHTML === table.rows[i].cells[j].innerHTML){
-                            // alert(true);
-                        }else{
-                            // alert(false);
-                             var ell = table.rows[i].cells[0].closest("tr"); // tr element (ваша строчка)
-                                ell.parentElement.removeChild(ell);
-                       
-                        }                        
-                    }
-                } 
+                if (table.rows[i].cells[3].innerHTML === table.rows[i+1].cells[3].innerHTML && table.rows[i].cells[4].innerHTML === table.rows[i+1].cells[4].innerHTML
+                 && table.rows[i].cells[5].innerHTML === table.rows[i+1].cells[5].innerHTML ) {
+                    
+                    table.rows[i].cells[9].innerHTML=parseInt(table.rows[i].cells[9].innerHTML, 10) + parseInt(table.rows[i+1].cells[9].innerHTML, 10);
+                    //  alert(table.rows[i].cells[9].innerHTML);
+                    var ell = table.rows[i+1].cells[0].closest("tr"); // tr element (ваша строчка)
+                    ell.parentElement.removeChild(ell);
+
+                }
+
+                // for (var j = 0; j < table.rows[0].cells.length; j++) {//количество столбцов
+                //     //  alert("indexes x:" + i + " y:" + j + " = " + table.rows[i].cells[j].innerHTML);
+                //     if (table.rows[i].cells[j].innerHTML === table.rows[i].cells[j].innerHTML) {
+                //         // alert(true);
+                //     } else {
+                //         // alert(false);
+                //         var ell = table.rows[i].cells[0].closest("tr"); // tr element (ваша строчка)
+                //         ell.parentElement.removeChild(ell);
+
+                //     }
+                // }
             }
-
-
+        }
     </script>
 
-  
+
 </body>
+
 </html>
