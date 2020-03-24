@@ -77,6 +77,19 @@
             </tr>
             <tr>
                 <td>1777</td>
+                <td>23_1.1 Корпус</td>
+                <td></td>
+                <td></td>
+                <td style="color: green;">5000502-07-712 </td>
+                <td>Стяжка коническая D10 для плит толщиной от 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>комплектов</td>
+                <td>63</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1777</td>
                 <td>23</td>
                 <td>1.1</td>
                 <td></td>
@@ -153,6 +166,19 @@
                 <td>16</td>
                 <td></td>
             </tr>
+            <tr>
+                <td>1777</td>
+                <td>23</td>
+                <td>3.1</td>
+                <td></td>
+                <td style="color: green;">5000502-01-101 </td>
+                <td>Петля накладная для профильных дверей 95° CLIP top BLUMOTION 71B9550, чашка петли: на шурупы</td>
+                <td>BLUM</td>
+                <td>Никелиров.</td>
+                <td>комплектов</td>
+                <td>16</td>
+                <td></td>
+            </tr>
         </tbody>
     </table>
     <button type="button" onclick="Tclick();"><span> Выполнить</span></button>
@@ -160,30 +186,63 @@
         function Tclick() {
             var table = document.getElementById("myTable");
 
-            for (var i = 0; i < table.rows.length-1; i++) {//количество строк
 
-                if (table.rows[i].cells[3].innerHTML === table.rows[i+1].cells[3].innerHTML && table.rows[i].cells[4].innerHTML === table.rows[i+1].cells[4].innerHTML
+            var i = 0;
+            var rowscount=table.rows.length;
+            var ch= true;
+                while (ch) {
+                    ch=checkTr(table);
+                }//while
+
+
+            // for (var i = 0; i < table.rows.length-1; i++) {//количество строк
+
+            //     if (table.rows[i].cells[3].innerHTML === table.rows[i+1].cells[3].innerHTML && table.rows[i].cells[4].innerHTML === table.rows[i+1].cells[4].innerHTML
+            //      && table.rows[i].cells[5].innerHTML === table.rows[i+1].cells[5].innerHTML ) {
+                    
+            //         table.rows[i].cells[9].innerHTML=parseInt(table.rows[i].cells[9].innerHTML, 10) + parseInt(table.rows[i+1].cells[9].innerHTML, 10);
+            //         //  alert(table.rows[i].cells[9].innerHTML);
+            //         var ell = table.rows[i+1].cells[0].closest("tr"); // tr element (ваша строчка)
+            //         ell.parentElement.removeChild(ell);
+
+            //     }
+
+                
+
+            //     // for (var j = 0; j < table.rows[0].cells.length; j++) {//количество столбцов
+            //     //     //  alert("indexes x:" + i + " y:" + j + " = " + table.rows[i].cells[j].innerHTML);
+            //     //     if (table.rows[i].cells[j].innerHTML === table.rows[i].cells[j].innerHTML) {
+            //     //         // alert(true);
+            //     //     } else {
+            //     //         // alert(false);
+            //     //         var ell = table.rows[i].cells[0].closest("tr"); // tr element (ваша строчка)
+            //     //         ell.parentElement.removeChild(ell);
+
+            //     //     }
+            //     // }
+            // }//for 
+        }
+
+
+        function checkTr(table){
+            var i = 0;
+            rowscount=table.rows.length;
+            while (i < rowscount-1) {
+                    // echo $i++;
+                    if (table.rows[i].cells[3].innerHTML === table.rows[i+1].cells[3].innerHTML && table.rows[i].cells[4].innerHTML === table.rows[i+1].cells[4].innerHTML
                  && table.rows[i].cells[5].innerHTML === table.rows[i+1].cells[5].innerHTML ) {
                     
                     table.rows[i].cells[9].innerHTML=parseInt(table.rows[i].cells[9].innerHTML, 10) + parseInt(table.rows[i+1].cells[9].innerHTML, 10);
                     //  alert(table.rows[i].cells[9].innerHTML);
                     var ell = table.rows[i+1].cells[0].closest("tr"); // tr element (ваша строчка)
                     ell.parentElement.removeChild(ell);
+                    return true;
+                    // rowscount=document.getElementById("myTable").rows.length;
 
                 }
-
-                // for (var j = 0; j < table.rows[0].cells.length; j++) {//количество столбцов
-                //     //  alert("indexes x:" + i + " y:" + j + " = " + table.rows[i].cells[j].innerHTML);
-                //     if (table.rows[i].cells[j].innerHTML === table.rows[i].cells[j].innerHTML) {
-                //         // alert(true);
-                //     } else {
-                //         // alert(false);
-                //         var ell = table.rows[i].cells[0].closest("tr"); // tr element (ваша строчка)
-                //         ell.parentElement.removeChild(ell);
-
-                //     }
-                // }
-            }
+                    i++;  
+                }//while
+                return false;
         }
     </script>
 
