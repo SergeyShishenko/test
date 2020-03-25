@@ -1589,7 +1589,7 @@ function PrintElem(elem)
     }
 
 
-    $('body').on('click','#vpibazis:not(\".finished-gen\")', function() {
+    $('body').on('click','#vpibazis:not(".finished-gen")', function() {
         ids=JSON.stringify(arrdata);
         // arr=arrdata;  
         // console.log(ids);            
