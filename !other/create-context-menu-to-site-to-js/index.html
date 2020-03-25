@@ -1,0 +1,320 @@
+<!-- !other\create-context-menu-to-site-to-js\index.html -->
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Создаем контекстное меню для сайта на JS | Демонстрация для сайта RUDEBOX</title>
+    
+    <link media="screen" href="demo/styles/demo.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css'>
+<link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500'>
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+<!-- Используется только для демонстрации -->
+<!-- <div id="controls">
+<div align=right><a class="close" title="Закрыть" onclick="document.getElementById('controls').style.display='none';">X</a></div>
+  
+<div id="yandex_ad"></div>
+
+</div> -->
+<table cellpadding="0" cellspacing="0" id="demo_navi">
+  <tr>
+    <td width="220"><a href="/ " rel="nofollow" ><div class="logo"><b><font color=#c3e425>RUDE</font>BOX</b></div></a></td><td width="45"><div class="demo">DEMO</div></td>
+	<td style="text-overflow: ellipsis;"><a href="/create-context-menu-to-site-to-js" class="go-bottom" rel="nofollow" ><div class="name">Создаем контекстное меню для сайта на JS</div></a></td>
+  </tr>
+</table>
+
+
+
+    <menu class="menu">
+    <li class="menu-item">
+        <button type="button" class="menu-btn" data-element="element" onclick="alert(this.dataset.element);hideMenu();" id='del'>
+            <i class="fa fa-folder-open"></i>
+            <span class="menu-text">Удалить строку</span>
+        </button>
+    </li>
+    <li class="menu-item disabled">
+        <button type="button" class="menu-btn">
+            <span class="menu-text">Добавить строку</span>
+        </button>
+    </li>
+    <!-- <li class="menu-separator"></li>
+    <li class="menu-item">
+        <button type="button" class="menu-btn">
+            <i class="fa fa-reply"></i>
+            <span class="menu-text">Обновить</span>
+        </button>
+    </li>
+    <li class="menu-item">
+        <button type="button" class="menu-btn">
+            <i class="fa fa-star"></i>
+            <span class="menu-text">В закладки</span>
+        </button>
+    </li>
+    <li class="menu-item submenu">
+        <button type="button" class="menu-btn">
+            <i class="fa fa-users"></i>
+            <span class="menu-text">Социальность</span>
+        </button>
+        <menu class="menu">
+            <li class="menu-item">
+                <button type="button" class="menu-btn">
+                    <i class="fa fa-comment"></i>
+                    <span class="menu-text">Комментарии</span>
+                </button>
+            </li>
+            <li class="menu-item submenu">
+                <button type="button" class="menu-btn">
+                    <i class="fa fa-share"></i>
+                    <span class="menu-text">Поделиться</span>
+                </button>
+                <menu class="menu">
+                    <li class="menu-item">
+                        <button type="button" class="menu-btn">
+                            <i class="fa fa-twitter"></i>
+                            <span class="menu-text">Twitter</span>
+                        </button>
+                    </li>
+                    <li class="menu-item">
+                        <button type="button" class="menu-btn">
+                            <i class="fa fa-facebook-official"></i>
+                            <span class="menu-text">Facebook</span>
+                        </button>
+                    </li>
+                    <li class="menu-item">
+                        <button type="button" class="menu-btn">
+                            <i class="fa fa-google-plus"></i>
+                            <span class="menu-text">Google Plus</span>
+                        </button>
+                    </li>
+                    <li class="menu-item">
+                        <button type="button" class="menu-btn">
+                            <i class="fa fa-envelope"></i>
+                            <span class="menu-text">Email</span>
+                        </button>
+                    </li>
+                </menu>
+            </li>
+        </menu>
+    </li>
+    <li class="menu-separator"></li>
+    <li class="menu-item">
+        <button type="button" class="menu-btn">
+            <i class="fa fa-download"></i>
+            <span class="menu-text">Сохранить</span>
+        </button>
+    </li>
+    <li class="menu-item">
+        <button type="button" class="menu-btn">
+            <i class="fa fa-edit"></i>
+            <span class="menu-text">Изменить</span>
+        </button>
+    </li>
+    <li class="menu-item">
+        <button type="button" class="menu-btn">
+            <i class="fa fa-trash"></i>
+            <span class="menu-text">Удалить</span>
+        </button>
+    </li> -->
+</menu>
+
+<div class="container">
+    <h1>Нажмите правую клавишу мыши</h1>
+    <table border="1" style="width: 100%;" class="tblVPI" id="tblVPI">
+        <tbody>
+            <tr id="tr1">
+                <td>Заказ</td>
+                <td>Изделие</td>
+                <td>СЕ</td>
+                <td>Поз.</td>
+                <td>Артикул</td>
+                <td>Наименование</td>
+                <td>Поставщик</td>
+                <td>Цвет</td>
+                <td>Ед.измерения</td>
+                <td>Кол-во</td>
+                <td>Примечание</td>
+            </tr>
+            <tr id="tr2">
+                <td>1777</td>
+                <td>23</td>
+                <td>1.1</td>
+                <td></td>
+                <td style="color: green;">5000502-07-750 </td>
+                <td>Конфирмат 7,0Х50 для плит толщиной 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>шт.</td>
+                <td>4</td>
+                <td></td>
+            </tr>
+            <tr id="tr3">
+                <td>1777</td>
+                <td>23</td>
+                <td></td>
+                <td>22</td>
+                <td></td>
+                <td>1777 КДЗ_23 модель.sat</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+            </tr>
+            <tr  id="tr4">
+                <td>1777</td>
+                <td>23_1.1 Корпус</td>
+                <td></td>
+                <td></td>
+                <td style="color: green;">5000502-07-712 </td>
+                <td>Стяжка коническая D10 для плит толщиной от 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>комплектов</td>
+                <td>63</td>
+                <td></td>
+            </tr>
+            <tr  id="tr5">
+                <td>1777</td>
+                <td>23</td>
+                <td>1.1</td>
+                <td></td>
+                <td style="color: green;">5000502-07-750 </td>
+                <td>Конфирмат 7,0Х50 для плит толщиной 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>шт.</td>
+                <td>4</td>
+                <td></td>
+            </tr>
+            <tr  id="tr6">
+                <td>1777</td>
+                <td>23_1.1 Корпус</td>
+                <td></td>
+                <td></td>
+                <td style="color: green;">5000502-07-712 </td>
+                <td>Стяжка коническая D10 для плит толщиной от 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>комплектов</td>
+                <td>63</td>
+                <td></td>
+            </tr>
+            <tr id="tr7">
+                <td>1777</td>
+                <td>23</td>
+                <td>1.1</td>
+                <td></td>
+                <td style="color: green;">5000502-07-752 </td>
+                <td>Конфирмат 7,0Х70 для плит толщиной 25 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>шт.</td>
+                <td>4</td>
+                <td></td>
+            </tr>
+            <tr id="tr8">
+                <td>1777</td>
+                <td>23</td>
+                <td>1.1</td>
+                <td></td>
+                <td style="color: green;">5000502-07-750 </td>
+                <td>Конфирмат 7,0Х50 для плит толщиной 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>шт.</td>
+                <td>4</td>
+                <td></td>
+            </tr>
+            <tr id="tr9">
+                <td>1777</td>
+                <td>23</td>
+                <td>1.1</td>
+                <td></td>
+                <td style="color: green;">5000502-07-750 </td>
+                <td>Конфирмат 7,0Х50 для плит толщиной 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>шт.</td>
+                <td>4</td>
+                <td></td>
+            </tr>
+            <tr id="tr10">
+                <td>1777</td>
+                <td>23</td>
+                <td>1.1</td>
+                <td></td>
+                <td style="color: green;">5000502-07-750 </td>
+                <td>Конфирмат 7,0Х50 для плит толщиной 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>шт.</td>
+                <td>4</td>
+                <td></td>
+            </tr>
+            <tr id="tr11">
+                <td>1777</td>
+                <td>23_1.2 Корпус</td>
+                <td></td>
+                <td></td>
+                <td style="color: green;">5000502-07-712 </td>
+                <td>Стяжка коническая D10 для плит толщиной от 16 мм</td>
+                <td>МДМ-КОМПЛЕКТ</td>
+                <td>металл</td>
+                <td>комплектов</td>
+                <td>18</td>
+                <td></td>
+            </tr>
+            <tr id="tr12">
+                <td>1777</td>
+                <td>23</td>
+                <td>3.1</td>
+                <td></td>
+                <td style="color: green;">5000502-01-101 </td>
+                <td>Петля накладная для профильных дверей 95° CLIP top BLUMOTION 71B9550, чашка петли: на шурупы</td>
+                <td>BLUM</td>
+                <td>Никелиров.</td>
+                <td>комплектов</td>
+                <td>16</td>
+                <td></td>
+            </tr>
+            <tr id="tr13">
+                <td>1777</td>
+                <td>23</td>
+                <td>3.1</td>
+                <td></td>
+                <td style="color: green;">5000502-01-101 </td>
+                <td>Петля накладная для профильных дверей 95° CLIP top BLUMOTION 71B9550, чашка петли: на шурупы</td>
+                <td>BLUM</td>
+                <td>Никелиров.</td>
+                <td>комплектов</td>
+                <td>16</td>
+                <td></td>
+            </tr>
+            <tr id="tr14">
+                <td>1777</td>
+                <td>23</td>
+                <td></td>
+                <td>22</td>
+                <td></td>
+                <td>1777 КДЗ_23 модель.sat</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
