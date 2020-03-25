@@ -1514,13 +1514,39 @@ function PrintElem(elem)
     }
 
     // объединение строк таблицы спецификации
-
+    var arrdata = {}
     function Tclick() {       
         var i = 0;          
         var ch= true;
             while (ch) {
                 ch=checkTr();
             }//while
+
+
+            //сохранение таблицы в массив
+            tables = document.querySelectorAll('.tblVPI')
+
+            // table
+            for (let i = 0; i < tables.length; i++) {
+                arrdata['table' + i] = []
+                var currTable = tables[i]
+                var currRows = tables[i].querySelectorAll('tr')
+        
+                // tr без шапки
+                for (let j = 1; j < currRows.length; j++) {
+                    arrdata['table' + i][j] = []
+                    var currRow = currRows[j]
+                    var cells = currRow.querySelectorAll('td')
+        
+                    // td
+                    for (let k = 0; k < cells.length; k++) {
+                        arrdata['table' + i][j][k] = cells[k].textContent
+                    }
+                }
+            }
+
+
+
     }
 
 
@@ -1561,6 +1587,31 @@ function PrintElem(elem)
             }//while
             return res ;
     }
+
+
+    $('body').on('click','#vpibazis:not(\".finished-gen\")', function() {
+        ids=JSON.stringify(arrdata);
+        // arr=arrdata;  
+        // console.log(ids);            
+        jQuery.ajax({
+            type: 'POST', // HTTP метод  POST или GET
+            url: 'vpi/vpi_template_bazis.php', //url-адрес, по которому будет отправлен запрос
+            dataType:'text', // Тип данных
+            data: {ids}, //post переменные
+            success:function(response){
+            // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+            console.log(response); 
+            //$('#vpibazis').removeClass('button-gen');
+            $('#vpibazis').attr('href', 'vpi/WRITE/'+response);
+            //var desc = response.split('~'); 
+            $('#vpibazis').attr('download', response);
+            },
+            error:function (xhr, ajaxOptions, thrownError){
+            //выводим ошибку
+            console.log(thrownError);
+            }
+            });
+        });
     
 
  
