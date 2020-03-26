@@ -31,7 +31,8 @@
 
     <menu class="menu">
     <li class="menu-item">
-        <button type="button" class="menu-btn" data-element="element" onclick="alert(this.dataset.element);hideMenu();" id='del'>
+        <!-- <button type="button" class="menu-btn" data-element="element" onclick="alert(this.dataset.element);delSel(this);" id='del'> -->
+        <button type="button" class="menu-btn" data-element="element" onclick="delSel(this);" id='del'>
             <i class="fa fa-trash-o"></i>
             <span class="menu-text">Удалить строку</span>
         </button>
@@ -126,7 +127,7 @@
     <h1>Нажмите правую клавишу мыши</h1>
     <table border="1" style="width: 100%;" class="tblVPI" id="tblVPI">
         <tbody>
-            <tr id="tr1">
+            <tr id="tr1" >
                 <td>Заказ</td>
                 <td>Изделие</td>
                 <td>СЕ</td>

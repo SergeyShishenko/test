@@ -6,6 +6,10 @@ html {
     /* background: #000000 url(header.jpg) no-repeat center top;   */
 }
 
+.sel{
+    background-color: #eaedf6 !important;
+}
+
 .container {
     left: 0;
     margin: auto;
