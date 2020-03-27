@@ -35,7 +35,12 @@ function delSel(tr){
     del=document.getElementById('del').dataset.element;
     // console.log(del);
     ell=document.getElementById(del);
-    ell.parentElement.removeChild(ell);
+    ell.parentElement.removeChild(ell);  
+   
+    vpibazis=document.getElementById('vpibazis');
+    vpibazis.classList.remove('active-gen', 'finished-gen');
+    vpibazis.removeAttribute('download');
+    vpibazis.setAttribute('href', 'javascript:void(0)')
     // var ell = table.rows[j].cells[0].closest("tr"); // tr element (ваша строчка)
     // document.getElementById(tr.dataset.element).parentElement.removeChild(tr.dataset.element); 
 }
