@@ -186,6 +186,8 @@ if(count($array_furn)!=0){
     <script>  
     // запуск объеденения строк
     Tclick();
+    document.querySelectorAll('#tblVPI  tr:not(.head-cm)')
+    .forEach(e => e.addEventListener('contextmenu', onContextMenu, false)); 
     </script>
     ";
 
@@ -220,8 +222,11 @@ function get_colomn_index($cell){
 // function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i,$arr_keyword=array("САМОРЕЗ ", "ШУРУП", "КОНФИРМАТ", "ЕВРОВИНТ")){  
 function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i,$arr_keyword=array("САМОРЕЗ ", "ШУРУП", "КОНФИРМАТ")){  
 
-  // $arr=array();  
-  echo '<tr>'; 
+  // $arr=array();
+  ($row==$start_num && $i===0) ? $head=" class='head-cm' " : $head="" ;
+  $id="tr".$row."\"";
+  
+  echo '<tr id="'.$id. $head .'>'; 
          
             $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() : $val = $Order;//Заказ
             echo '<td>' . $val .'</td>';  //1

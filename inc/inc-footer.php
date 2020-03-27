@@ -102,6 +102,105 @@
             </div>
         </div>
     </div>
+    <menu class="menu-cm">
+        <li class="menu-item-cm">
+            <!-- <button type="button" class="menu-btn" data-element="element" onclick="alert(this.dataset.element);delSel(this);" id='del'> -->
+            <button type="button" class="menu-btn-cm" data-element="element" onclick="delSel(this);" id='del'>
+                <i class="fa fa-trash-o"></i>
+                <span class="menu-text-cm">Удалить строку</span>
+            </button>
+        </li>
+        <!-- <li class="menu-item disabled">
+            <button type="button" class="menu-btn">
+                    <i class="fa fa-plus"></i>
+                <span class="menu-text">Добавить строку</span>
+            </button>
+        </li> -->
+        <li class="menu-item-cm ">
+            <button type="button" class="menu-btn-cm" onclick="hideMenu();">
+                <i class="fa fa-times-circle"></i>
+                <span class="menu-text-cm">Отменить</span>
+            </button>
+        </li>
+        <!-- <li class="menu-separator-cm"></li>
+        <li class="menu-item-cm">
+            <button type="button" class="menu-btn-cm">
+                <i class="fa fa-reply"></i>
+                <span class="menu-text-cm">Обновить</span>
+            </button>
+        </li>
+        <li class="menu-item-cm">
+            <button type="button" class="menu-btn-cm">
+                <i class="fa fa-star"></i>
+                <span class="menu-text-cm">В закладки</span>
+            </button>
+        </li>
+        <li class="menu-item-cm submenu-cm">
+            <button type="button" class="menu-btn-cm">
+                <i class="fa fa-users"></i>
+                <span class="menu-text-cm">Социальность</span>
+            </button>
+            <menu class="menu-cm">
+                <li class="menu-item-cm">
+                    <button type="button" class="menu-btn-cm">
+                        <i class="fa fa-comment"></i>
+                        <span class="menu-text-cm">Комментарии</span>
+                    </button>
+                </li>
+                <li class="menu-item-cm submenu-cm">
+                    <button type="button" class="menu-btn-cm">
+                        <i class="fa fa-share"></i>
+                        <span class="menu-text-cm">Поделиться</span>
+                    </button>
+                    <menu class="menu-cm">
+                        <li class="menu-item-cm">
+                            <button type="button" class="menu-btn-cm">
+                                <i class="fa fa-twitter"></i>
+                                <span class="menu-text-cm">Twitter</span>
+                            </button>
+                        </li>
+                        <li class="menu-item-cm">
+                            <button type="button" class="menu-btn-cm">
+                                <i class="fa fa-facebook-official"></i>
+                                <span class="menu-text-cm">Facebook</span>
+                            </button>
+                        </li>
+                        <li class="menu-item-cm">
+                            <button type="button" class="menu-btn-cm">
+                                <i class="fa fa-google-plus"></i>
+                                <span class="menu-text-cm">Google Plus</span>
+                            </button>
+                        </li>
+                        <li class="menu-item-cm">
+                            <button type="button" class="menu-btn-cm">
+                                <i class="fa fa-envelope"></i>
+                                <span class="menu-text-cm">Email</span>
+                            </button>
+                        </li>
+                    </menu>
+                </li>
+            </menu>
+        </li>
+        <li class="menu-separator-cm"></li>
+        <li class="menu-item-cm">
+            <button type="button" class="menu-btn-cm">
+                <i class="fa fa-download"></i>
+                <span class="menu-text-cm">Сохранить</span>
+            </button>
+        </li>
+        <li class="menu-item-cm">
+            <button type="button" class="menu-btn-cm">
+                <i class="fa fa-edit"></i>
+                <span class="menu-text-cm">Изменить</span>
+            </button>
+        </li>
+        <li class="menu-item-cm">
+            <button type="button" class="menu-btn-cm">
+                <i class="fa fa-trash"></i>
+                <span class="menu-text-cm">Удалить</span>
+            </button>
+        </li> -->
+    </menu>
 <!-- /Генерация комплектов документов -->
 <?php 
     }
@@ -167,6 +266,7 @@
     <!-- <?php echo $role; ?> -->
     <script src="./dist/js/drop.js?v='<?php echo $dropVersion; ?>'"></script>  
     <script src="./dist/js/selectcell.js?<?php echo $selectcell; ?>"></script>
+    <script src="./dist/js/сontextMenu.js"></script>
     <?php if($role !="guest"){ ?>
         <script src="./dist/js/password-check.js?<?php echo $passworCheck; ?>"></script>
     <?php } ?>

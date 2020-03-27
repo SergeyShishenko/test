@@ -1590,6 +1590,9 @@ function PrintElem(elem)
 
 
     $('body').on('click','#vpibazis:not(".finished-gen")', function() {
+        arrdata = {};
+        Tclick();
+
         ids=JSON.stringify(arrdata);
         // arr=arrdata;  
         // console.log(ids);            
