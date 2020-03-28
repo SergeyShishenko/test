@@ -52,7 +52,7 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
                             mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$id')");
                            
                            if( !mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_furnitur_prop_id`, `name_furnitur_obj_prop`, `articul_furnitur_obj`, `articul_alias1`, `articul_alias2`, `articul_alias3`, `made_furnitur_obj`, `url_furnitur_obj_prop`, `obj_id`, `url_video_obj_prop`, `color_obj_prop`, `def_obj_prop`, `unit_obj_prop`, `fname_img_furn`)  
-                             VALUES (NULL, '$Furn', '$Art', '$Alias1', '$Alias2', '$Alias3', '$Bild', NULL, '$id', '$HrefArticul', '$Colour', '$Furn', '$Unit', '$NameFile')")){
+                             VALUES (NULL, '$Furn', '$Art', '$Alias1', '$Alias2', '$Alias3', '$Bild',$HrefArticul',  '$id', 'NULL, '$Colour', '$Furn', '$Unit', '$NameFile')")){
                                 header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.$sql." -> ".mysqli_error($dbconn));
                                 // exit();
                              }
