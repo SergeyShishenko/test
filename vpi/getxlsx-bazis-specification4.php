@@ -12,7 +12,7 @@ require_once dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php' ;
 require_once dirname(dirname(__FILE__)).'/vendor/MyClass/class_DataBase.php';
 
 # Указываем путь до файла .xlsx
-$File = $_SERVER['DOCUMENT_ROOT'] . "/www/vpi/$filename";
+$File = $_SERVER['DOCUMENT_ROOT'] . "/www/vpi/$filename";//localhost
 echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
 $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
 $reader->setReadDataOnly(true); 

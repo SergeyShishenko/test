@@ -18,7 +18,7 @@ date_default_timezone_set('Europe/Moscow');
 
 if (file_exists(dirname($_SERVER['DOCUMENT_ROOT']).'/DATA/TABLES/configDB.php')) {
     require_once(dirname($_SERVER['DOCUMENT_ROOT']).'/DATA/TABLES/configDB.php');// для сайта !!!!!!!    
-    $site = $_SERVER['DOCUMENT_ROOT'] ."./"; 
+    $site = $_SERVER['DOCUMENT_ROOT'] ."/"; 
 }
 else {
     require_once($_SERVER['DOCUMENT_ROOT'].'/DATA/TABLES/configDB.php');// для localhost !!!!!!!
@@ -167,6 +167,7 @@ if(isset($_POST['ids']))//генерация xls
 
 
         $helper->write($spreadsheet, $fname);
+        // echo 'sys_get_temp_dir() '.sys_get_temp_dir();
         $path = sys_get_temp_dir().'/phpspreadsheet/';
         // $fnameX=$path . $fname.".xlsx";
         rename($path . $fname, __DIR__ ."/WRITE/". $fname);
