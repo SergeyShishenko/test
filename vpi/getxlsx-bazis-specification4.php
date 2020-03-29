@@ -13,6 +13,7 @@ require_once dirname(dirname(__FILE__)).'/vendor/MyClass/class_DataBase.php';
 
 # Указываем путь до файла .xlsx
 $File = $_SERVER['DOCUMENT_ROOT'] . "/www/vpi/$filename";//localhost
+// $File = $_SERVER['DOCUMENT_ROOT'] . "/vpi/$filename";//site
 echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
 $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
 $reader->setReadDataOnly(true); 
@@ -265,12 +266,12 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
 
             }else{ //данные, если есть
              
-              $table[0]['made_furnitur_obj'] ? $val = $table[0]['made_furnitur_obj'] : $val = $made_furnitur[0];
-              echo '<td>' . $val .'</td>';  // Поставщик
-              $table[0]['color_obj_prop'] ? $val = $table[0]['color_obj_prop'] : $val = $made_furnitur[1];
-              echo '<td>' . $val .'</td>';  // Цвет
-              $table[0]['unit_obj_prop'] ? $val = $table[0]['unit_obj_prop'] : $val = $made_furnitur[2];
-              echo '<td>' . $val .'</td>';  // Ед.измерения
+              $table[0]['made_furnitur_obj'] ? $val ='<td>' .  $table[0]['made_furnitur_obj'] : $val = '<td style="color: green;">' .  $made_furnitur[0];
+              echo $val .'</td>';  // Поставщик
+              $table[0]['color_obj_prop'] ? $val ='<td>' .  $table[0]['color_obj_prop'] : $val = '<td style="color: green;">' .  $made_furnitur[1];
+              echo $val .'</td>';  // Цвет
+              $table[0]['unit_obj_prop'] ? $val ='<td>' .  $table[0]['unit_obj_prop'] : $val = '<td style="color: green;">' .  $made_furnitur[2];
+              echo $val .'</td>';  // Ед.измерения
             }
 
             
