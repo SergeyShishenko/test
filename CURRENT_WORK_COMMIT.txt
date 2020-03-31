@@ -1,12 +1,11 @@
-bazisspecification4
-
-Текущий коммит: bazisspecification4 15.02.20 
+Текущий коммит: bazisspecification4
     ("Запись спецификайии из базиса в ведомость")
     ИЗМЕНЕНИЯ: 
        БАЗА ДАННЫХ:
        sofia_users.sql
        obj_furnitur_prop.sql таблица с alias ИЗМЕНЕНА 31.03.2020
             id 153 -> 5000502-05-501
+            id 181-183
 
 
 
