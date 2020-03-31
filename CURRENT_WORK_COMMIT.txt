@@ -1,34 +1,12 @@
-bazisspecification2 start 11.02.20 
-
+bazisspecification4
 
 Текущий коммит: bazisspecification4 15.02.20 
     ("Запись спецификайии из базиса в ведомость")
     ИЗМЕНЕНИЯ: 
-        *vpi\upload.php
-        *vpi\getxlsx-bazis-specification4.php        
-        *vpi\htmlStringToXLS.php
-        *vpi\VPI_templatePhpSpreadsheet.php
-        *vpi\vpi_template_bazis.php
-        *vpi\templates\VPI_template.xls
-
-        *inc\inc-version-css-js.php
-        *inc\inc-head.php
-        *inc\inc-footer.php
-
-        *Classes\Autoloader.php       
-        *Classes\DiDom\(ВСЁ)
-
-        *vendor\(ВСЁ)
-
-        *dist\js\vpi.js
-        *dist\js\drop.js
-        *dist\js\сontextMenu.js
-
-        *dist\css\сontextMenu.css
-
-       *\TABLES\configDB.php
-
-       obj_furnitur_prop таблица с alias
+       БАЗА ДАННЫХ:
+       sofia_users.sql
+       obj_furnitur_prop.sql таблица с alias ИЗМЕНЕНА 31.03.2020
+            id 153 -> 5000502-05-501
 
 
 
