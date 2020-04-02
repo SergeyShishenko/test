@@ -103,13 +103,7 @@
         </div>
     </div>
     <menu class="menu-cm">
-        <li class="menu-item-cm">
-            <!-- <button type="button" class="menu-btn" data-element="element" onclick="alert(this.dataset.element);delSel(this);" id='del'> -->
-            <button type="button" class="menu-btn-cm" data-element="element" onclick="delSel(this);" id='del'>
-                <i class="fa fa-trash-o"></i>
-                <span class="menu-text-cm">Удалить строку</span>
-            </button>
-        </li>
+        
         <!-- <li class="menu-item disabled">
             <button type="button" class="menu-btn">
                     <i class="fa fa-plus"></i>
@@ -121,8 +115,15 @@
         <img  id="menu_img"
             src="./dist/filesdb/images/test.png" 
             width="200"                                                                                                             
-            alt="Растояние от чашки TB"                                                        
+            alt=""                                                        
         >
+        </li>
+        <li class="menu-item-cm">
+            <!-- <button type="button" class="menu-btn" data-element="element" onclick="alert(this.dataset.element);delSel(this);" id='del'> -->
+            <button type="button" class="menu-btn-cm" data-element="element" onclick="delSel(this);" id='del'>
+                <i class="fa fa-trash-o"></i>
+                <span class="menu-text-cm">Удалить строку</span>
+            </button>
         </li>
         <li class="menu-separator-cm"></li>
         <li class="menu-item-cm ">

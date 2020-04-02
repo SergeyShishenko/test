@@ -247,14 +247,14 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
                   echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  // Наименование
                 }else{ //Если нет в БД
                   
-                  echo '<td>' . $articul .'</td>'; //Артикул
+                  echo '<td data-src="./dist/filesdb/images/test.png">' . $articul .'</td>'; //Артикул
                   echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
                   $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
                 }
                 
             }else{ // если ячейка Артикул пустая
               $table = array();
-              echo '<td>' . $articul .'</td>'; //Артикул
+              echo '<td  data-src="./dist/filesdb/images/test.png">' . $articul .'</td>'; //Артикул
              echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
              $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
             } 

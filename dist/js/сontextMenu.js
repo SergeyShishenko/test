@@ -23,7 +23,8 @@ function onContextMenu(e){
     menu.classList.add('show-menu-cm');
     document.getElementById('del').dataset.element=e.target.closest('tr').id;
     // alert (e.target.closest('tr td:nth-child(5)').dataset.src)
-    document.getElementById('menu_img').src=e.target.closest('tr td:nth-child(5)').dataset.src;
+    // document.getElementById('menu_img').src=e.target.closest('tr td:nth-child(5)').dataset.src;
+    document.getElementById('menu_img').src=e.target.closest('tr').childNodes[4].dataset.src;
 }
 
 // function onMouseDown(e){
