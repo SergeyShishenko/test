@@ -116,13 +116,22 @@
                 <span class="menu-text">Добавить строку</span>
             </button>
         </li> -->
+        <li class="menu-separator-cm"></li>
+        <li class="menu-item-cm">
+        <img  id="menu_img"
+            src="./dist/filesdb/images/test.png" 
+            width="200"                                                                                                             
+            alt="Растояние от чашки TB"                                                        
+        >
+        </li>
+        <li class="menu-separator-cm"></li>
         <li class="menu-item-cm ">
             <button type="button" class="menu-btn-cm" onclick="hideMenu();">
                 <i class="fa fa-times-circle"></i>
                 <span class="menu-text-cm">Отменить</span>
             </button>
         </li>
-        <!-- <li class="menu-separator-cm"></li>
+        <!-- 
         <li class="menu-item-cm">
             <button type="button" class="menu-btn-cm">
                 <i class="fa fa-reply"></i>

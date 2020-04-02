@@ -165,6 +165,7 @@ if(count($array_furn)!=0){
       // echo "arrIndex";
       // print_r( $arrIndex);
       // echo "</pre>";
+      $dbconn=dbconnect();
       $db = class_DataBase::getDB(); // Создаём объект базы данных
       // echo '<br><table border="1" style="width: 100%;" class="tblVPI">';
       for($j=$start_num;$j<=$to;$j++) 
@@ -242,7 +243,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
               $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} OR `articul_alias1` = {?} OR `articul_alias2` = {?} OR `articul_alias3` = {?} ";
                $table = $db->select($query, array($articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
                 if ($table){ //Если есть в БД
-                  echo '<td style="color: green;">' . $table[0]['articul_furnitur_obj'] .' </td>'; // Артикул
+                  echo '<td style="color: green;" id="obj_' . $table[0]['obj_furnitur_prop_id'] .'" data-src="'.$table[0]['fname_img_furn'].'">' . $table[0]['articul_furnitur_obj'] .' </td>'; // Артикул
                   echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  // Наименование
                 }else{ //Если нет в БД
                   

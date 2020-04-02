@@ -29,7 +29,7 @@ h2 {
 
 .menu-cm {
     position: absolute;
-    width: 150px;
+    /* width: 150px; */
     padding: 2px;
     margin: 0;
     border: 1px solid #bbb;
