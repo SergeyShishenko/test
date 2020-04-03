@@ -498,6 +498,7 @@
                     $('#uploaded-files').html('');
                     $('#DelSubmit').hide();
                     $('#CreateSubmit').hide();
+                    hideMenu(); 
                     // room //Помещение
                     // complect //Комплект изделий
                     // product //Изделия

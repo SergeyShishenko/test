@@ -56,6 +56,11 @@ function removeSel(){
       wrapObj[i].classList.remove('sel');
     }
 }
+// скрытие контекстного меню при скроле
+$('#GENModal').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel click', function(e){
+    hideMenu(); 
+}
+);
 
 // document.querySelectorAll('#tblVPI  tr:not(.head-cm)')
 // .forEach(e => e.addEventListener('contextmenu', onContextMenu, false)); 

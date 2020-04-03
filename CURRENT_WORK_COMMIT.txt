@@ -3,8 +3,13 @@
 
     ИЗМЕНЕНИЯ: 
         inc\inc-footer.php
+        inc\inc-version-css-js.php
+
         dist\css\сontextMenu.css
+
         dist\js\сontextMenu.js
+        dist\js\drop.js
+
         vpi\getxlsx-bazis-specification4.php
 
     БАЗА ДАННЫХ:
@@ -14,11 +19,14 @@
             id 153 -> 5000502-05-501
             id 181-183
 
+
     ОБНОВИЛ*:
-    Работа*
+    Работа
     Дом*
     Ноут
     Сайт  
+
+    расчет позиции контекстного меню в зависимости от координат клика
 
    
 
