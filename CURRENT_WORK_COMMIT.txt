@@ -11,6 +11,7 @@
         dist\js\drop.js
 
         vpi\getxlsx-bazis-specification4.php
+        vpi\getDataBaseVPI.php
 
     БАЗА ДАННЫХ:
         sofia_users.sql

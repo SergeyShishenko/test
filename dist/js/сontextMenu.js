@@ -1,5 +1,6 @@
 // dist\js\сontextMenu.js
 var menu = document.querySelector('.menu-cm');
+
 // var tblVPI = document.querySelector('.tblVPI');
 // var chancel_cmenu = document.getElementById('chancel_cmenu');
 // var domRect=chancel_cmenu.getBoundingClientRect();
@@ -85,6 +86,7 @@ function onContextMenu(e){
  
     // document.addEventListener('mousedown', onMouseDown, false);
     // console.log(e.target.closest('tr').id);
+    getDataBaseVPI(e.target.closest('tr').childNodes[4].id)
     tr=e.target.closest('tr').classList.add('sel');
     menu.classList.add('show-menu-cm');
     document.getElementById('del').dataset.element=e.target.closest('tr').id;
@@ -128,5 +130,41 @@ $('#GENModal').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmouse
 }
 );
 
+function getDataBaseVPI(e) {
+
+console.log(e);
+
+var IdData =  {
+    //  recordToDelete : "vpi/"+currfile,
+     id : e    
+    };
+
+    jQuery.ajax({
+        type: "POST", // HTTP метод  POST или GET
+        url: "./vpi/getDataBaseVPI.php", //url-адрес, по которому будет отправлен запрос
+        dataType:"text", // Тип данных
+        data:IdData, //post переменные
+        success:function(response){
+        // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
+        console.log(response);
+        // $('#drop-files').show(); 
+
+        },
+        error:function (xhr, ajaxOptions, thrownError){
+            //выводим ошибку
+            console.log(thrownError);
+        }
+    });
+}  
+
+function toggle(el) {
+    el.style.display = (el.style.display == 'none') ? 'block' : 'none'
+  }
+
+
+  function buttonToggle(el) {
+// console.log(el.closest('li').childNodes[3]);
+    toggle(el.closest('li').childNodes[3]);
+  }
 // document.querySelectorAll('#tblVPI  tr:not(.head-cm)')
 // .forEach(e => e.addEventListener('contextmenu', onContextMenu, false)); 

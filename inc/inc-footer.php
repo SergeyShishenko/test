@@ -111,59 +111,24 @@
                 <span class="menu-text">Добавить строку</span>
             </button>
         </li> -->
-        <li class="menu-separator-cm"></li>
-        <li class="menu-item-cm">
-        <img  id="menu_img"
-            src="./dist/filesdb/images/test.png" 
-            width="200"                                                                                                             
-            alt=""                                                        
-        >
-        </li>
-        <li class="menu-item-cm">
-            <!-- <button type="button" class="menu-btn" data-element="element" onclick="alert(this.dataset.element);delSel(this);" id='del'> -->
-            <button type="button" class="menu-btn-cm" data-element="element" onclick="delSel(this);" id='del'>
-                <i class="fa fa-trash-o"></i>
-                <span class="menu-text-cm">Удалить строку</span>
-            </button>
-        </li>
-        <li class="menu-separator-cm"></li>
-        <li class="menu-item-cm ">
-            <button type="button" class="menu-btn-cm" onclick="hideMenu();" id="chancel_cmenu">
-                <i class="fa fa-times-circle"></i>
-                <span class="menu-text-cm">Отменить</span>
-            </button>
-        </li>
-        <!-- 
-        <li class="menu-item-cm">
-            <button type="button" class="menu-btn-cm">
-                <i class="fa fa-reply"></i>
-                <span class="menu-text-cm">Обновить</span>
-            </button>
-        </li>
-        <li class="menu-item-cm">
-            <button type="button" class="menu-btn-cm">
-                <i class="fa fa-star"></i>
-                <span class="menu-text-cm">В закладки</span>
-            </button>
-        </li>
         <li class="menu-item-cm submenu-cm">
             <button type="button" class="menu-btn-cm">
                 <i class="fa fa-users"></i>
-                <span class="menu-text-cm">Социальность</span>
+                <span class="menu-text-cm">Комплектующие</span>
             </button>
             <menu class="menu-cm">
                 <li class="menu-item-cm">
-                    <button type="button" class="menu-btn-cm">
-                        <i class="fa fa-comment"></i>
+                    <button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);">                       
                         <span class="menu-text-cm">Комментарии</span>
                     </button>
+                    <img style="display:none;"  src="./dist/filesdb/images/test.png"  width="200"  alt="" >
                 </li>
-                <li class="menu-item-cm submenu-cm">
-                    <button type="button" class="menu-btn-cm">
-                        <i class="fa fa-share"></i>
-                        <span class="menu-text-cm">Поделиться</span>
+                <li class="menu-item-cm">
+                    <button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);">                     
+                        <span class="menu-text-cm">Поделиться</span>                        
                     </button>
-                    <menu class="menu-cm">
+                    <img style="display:none;"  src="./dist/filesdb/images/test.png"  width="200"  alt="" >
+                    <!-- <menu class="menu-cm">
                         <li class="menu-item-cm">
                             <button type="button" class="menu-btn-cm">
                                 <i class="fa fa-twitter"></i>
@@ -188,10 +153,47 @@
                                 <span class="menu-text-cm">Email</span>
                             </button>
                         </li>
-                    </menu>
+                    </menu> -->
                 </li>
             </menu>
         </li>
+        <li class="menu-separator-cm"></li>
+        <li class="menu-item-cm">
+        <img  id="menu_img"
+            src="./dist/filesdb/images/test.png" 
+            width="200"                                                                                                             
+            alt=""                                                        
+        >
+        </li>
+        <li class="menu-item-cm">
+            <!-- <button type="button" class="menu-btn" data-element="element" onclick="alert(this.dataset.element);delSel(this);" id='del'> -->
+            <button type="button" class="menu-btn-cm" data-element="element" onclick="delSel(this);" id='del'>
+                <i class="fa fa-trash-o"></i>
+                <span class="menu-text-cm">Удалить строку</span>
+            </button>
+        </li>
+        <li class="menu-separator-cm"></li>
+        <li class="menu-item-cm ">
+            <button type="button" class="menu-btn-cm" onclick="hideMenu();" id="chancel_cmenu">
+                <i class="fa fa-times-circle"></i>
+                <span class="menu-text-cm">Закрыть</span>
+            </button>
+        </li>
+        <!-- 
+        <li class="menu-item-cm">
+            <button type="button" class="menu-btn-cm">
+                <i class="fa fa-reply"></i>
+                <span class="menu-text-cm">Обновить</span>
+            </button>
+        </li>
+        <li class="menu-item-cm">
+            <button type="button" class="menu-btn-cm">
+                <i class="fa fa-star"></i>
+                <span class="menu-text-cm">В закладки</span>
+            </button>
+        </li> -->
+      
+        <!-- 
         <li class="menu-separator-cm"></li>
         <li class="menu-item-cm">
             <button type="button" class="menu-btn-cm">
