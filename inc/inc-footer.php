@@ -102,6 +102,7 @@
             </div>
         </div>
     </div>
+    <!-- /GENModal -->
     <menu class="menu-cm">
         
         <!-- <li class="menu-item disabled">
@@ -127,7 +128,7 @@
         </li>
         <li class="menu-separator-cm"></li>
         <li class="menu-item-cm ">
-            <button type="button" class="menu-btn-cm" onclick="hideMenu();">
+            <button type="button" class="menu-btn-cm" onclick="hideMenu();" id="chancel_cmenu">
                 <i class="fa fa-times-circle"></i>
                 <span class="menu-text-cm">Отменить</span>
             </button>

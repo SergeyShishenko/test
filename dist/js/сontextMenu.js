@@ -1,13 +1,76 @@
 // dist\js\сontextMenu.js
 var menu = document.querySelector('.menu-cm');
+// var tblVPI = document.querySelector('.tblVPI');
+// var chancel_cmenu = document.getElementById('chancel_cmenu');
+// var domRect=chancel_cmenu.getBoundingClientRect();
+var winpage=document.documentElement.clientHeight;
 
 function showMenu(x, y){
+    console.log('==========');
+
+    // console.log('Ширина '+getClientWidth());
+    // console.log('Высота окна '+getClientHeight());
+    
+    console.log('Высота окна '+winpage);
+    // console.log('Высота body '+document.body.clientHeight);
+
+    var tblVPI = document.getElementById('tblVPI');
+    // var chancel_cmenu = document.getElementById('chancel_cmenu');
+    // console.log('Смещение по высоте chancel_cmenu '+chancel_cmenu.offsetY);
+    
+    // info.innerHTML = "Top: " + domRect.top +
+    // "<br>Right: " + domRect.right +
+    // "<br>Bottom: " + domRect.bottom +
+    // "<br>Left: " + domRect.left +
+    // "<br>Width: " + domRect.width +
+    // "<br>Height: " + domRect.height; 
+// var menu = document.querySelector('.menu-cm');
+
+    // console.log('chancel_cmenu '+is_visible(chancel_cmenu));
+    // var xtbl=tblVPI.offsetX==undefined?tblVPI.layerX:tblVPI.offsetX
+    // var ytbl=tblVPI.offsetY==undefined?tblVPI.layerY:tblVPI.offsetY
+    // console.log('xtbl '+xtbl);
+    // console.log('ytbl '+ytbl);
+    // console.log('Ширина tblVPI '+tblVPI.clientWidth);
+    console.log('Высота tblVPI '+tblVPI.clientHeight);
+    // console.log('Ширина меню '+menu.clientWidth);
+    console.log('Высота меню '+menu.clientHeight);
+    // // console.log("left "+x);
+    // console.log("top "+y);
+    // console.log("нижняя граница меню "+(y + menu.clientHeight));
+    
     menu.style.left = x + 'px';
     menu.style.top = y + 'px';
     menu.classList.add('show-menu-cm');
+       // положение кнопки отменить в меню
+    //    chancel_cmenu = document.getElementById('chancel_cmenu');
+    // var domRect=menu.getBoundingClientRect();
+    //    fundomRect(y); 
+    // console.log('domRect.bottom '+domRect.bottom);   
+    
+    // var div= winpage-domRect.bottom;
+    // if(div<0) {
+    //    console.log('разница  '+(div)); 
+    //    console.log('menu.style.top  '+ (y-Math.abs(div)) + 'px'); 
+    //     menu.style.top = (y-Math.abs(div)) + 'px';
+    //     // menu.style.top = (y-Math.abs(div)) + 'px';
+    // } 
+
     
 }
+// function is_visible(e) {return e.offsetWidth > 0 || e.offsetHeight > 0;}
 
+// function fundomRect(y){
+//     e=document.querySelector('.menu-cm');
+//     domRect=e.getBoundingClientRect();
+//     var div= winpage-domRect.bottom;
+//     if(div<0) {
+//         console.log('разница  '+(div)); 
+//         console.log('menu.style.top  '+ (y-Math.abs(div)) + 'px'); 
+//          e.style.top = (y-Math.abs(div)) + 'px';
+//          // menu.style.top = (y-Math.abs(div)) + 'px';
+//      }  
+// }
 function hideMenu(){
     menu.classList.remove('show-menu-cm'); 
     removeSel();  
@@ -16,7 +79,10 @@ function hideMenu(){
 function onContextMenu(e){
     e.preventDefault();
     removeSel();
+    // fundomRect(e.pageY); 
     showMenu(e.pageX, e.pageY);
+    
+ 
     // document.addEventListener('mousedown', onMouseDown, false);
     // console.log(e.target.closest('tr').id);
     tr=e.target.closest('tr').classList.add('sel');
