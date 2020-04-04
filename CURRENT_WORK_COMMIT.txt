@@ -4,6 +4,7 @@
     ИЗМЕНЕНИЯ: 
         inc\inc-footer.php
         inc\inc-version-css-js.php
+        inc\inc-left-side-menu-shablony-dokumentov.php
 
         dist\css\сontextMenu.css
 
@@ -12,6 +13,8 @@
 
         vpi\getxlsx-bazis-specification4.php
         vpi\getDataBaseVPI.php
+
+        
 
     БАЗА ДАННЫХ:
         sofia_users.sql
@@ -27,7 +30,7 @@
     Ноут
     Сайт  
 
-    расчет позиции контекстного меню в зависимости от координат клика
+    
 
    
 

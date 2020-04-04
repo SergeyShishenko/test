@@ -1616,6 +1616,11 @@ function PrintElem(elem)
             }
             });
         });
-    
-
+    // триггер на клик
+    // var event = new Event("click");
+    // <button id="elem" onclick="alert('Клик!');">Автоклик</button>
+    // elem.dispatchEvent(event);
+function triggerClick(){    
+    $('#GENModal').modal('show');
+}
  

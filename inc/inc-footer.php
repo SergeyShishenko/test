@@ -113,7 +113,7 @@
         </li> -->
         <li class="menu-item-cm submenu-cm">
             <button type="button" class="menu-btn-cm">
-                <i class="fa fa-users"></i>
+                <i class="fa fa-list-alt"></i>
                 <span class="menu-text-cm">Комплектующие</span>
             </button>
             <menu class="menu-cm">
