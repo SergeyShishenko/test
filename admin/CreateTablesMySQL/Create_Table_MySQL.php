@@ -1,7 +1,8 @@
 <?php
+// admin\CreateTablesMySQL\Create_Table_MySQL.php
 // include 'inc/inc-session-start.php';
 // include_once("configDB.php");
-define('__ROOT__', dirname(dirname(__FILE__))); 
+define('__ROOT__',dirname( dirname(dirname(__FILE__)))); 
 // echo dirname(__ROOT__).'/DATA/TABLES/configDB.php';
 require_once dirname(__ROOT__).'/DATA/TABLES/configDB.php'; 
 ///////////////////////////////create tables////////////////////////////////////////////////
@@ -512,6 +513,26 @@ $query = "CREATE TABLE IF NOT EXISTS user_vpi(
 
 if (mysqli_query($dbconn, $query)) echo "Таблица user_vpi создана.<br>";
 else echo "Таблица user_vpi не создана: ".mysqli_error($dbconn);
+
+mysqli_close($dbconn);
+
+
+////
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
+$query = "CREATE TABLE IF NOT EXISTS obj_owner_furnitur(
+    obj_owner_furnitur_id INT NOT NULL AUTO_INCREMENT,   
+    obj_furnitur_prop_id INT COMMENT 'ID фурнитуры',
+    owner_obj_furnitur_prop_id INT COMMENT 'ID фурнитуры Хозяина',   
+    PRIMARY KEY (obj_owner_furnitur_id),
+    FOREIGN KEY (obj_furnitur_prop_id) REFERENCES obj_furnitur_prop(obj_furnitur_prop_id),
+    FOREIGN KEY (owner_obj_furnitur_prop_id) REFERENCES obj_furnitur_prop(obj_furnitur_prop_id)   
+   )";
+
+if (mysqli_query($dbconn, $query)) echo "Таблица obj_owner_furnitur создана.<br>";
+else echo "Таблица obj_owner_furnitur не создана: ".mysqli_error($dbconn);
 
 mysqli_close($dbconn);
 
