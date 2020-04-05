@@ -29,7 +29,7 @@ h2 {
 
 .menu-cm {
     position: absolute;
-    width: 200px;
+    width: 206px;
     padding: 2px;
     margin: 0;
     border: 1px solid #bbb;
@@ -38,7 +38,7 @@ h2 {
     background: linear-gradient(to bottom, #fff 0%, #e5e5e5 100px, #e5e5e5 100%);
     z-index: 100;
     border-radius: 3px;
-    box-shadow: 1px 1px 4px rgba(0,0,0,.2);
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
     opacity: 0;
     -webkit-transform: translate(0, 15px) scale(.95);
     transform: translate(0, 15px) scale(.95);

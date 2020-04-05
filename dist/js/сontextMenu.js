@@ -5,14 +5,17 @@ var menu = document.querySelector('.menu-cm');
 // var chancel_cmenu = document.getElementById('chancel_cmenu');
 // var domRect=chancel_cmenu.getBoundingClientRect();
 var winpage=document.documentElement.clientHeight;
+// var loadImg='<img src="dist/css/ajax-loader-7.gif" alt="Загрузка..." style="padding-left: 35px;">';
+var loadImg='<img src="dist/css/ajax-loader-7.gif" alt="Загрузка..." style="width: 200px;">';
 
 function showMenu(x, y){
+    $("#contextmenu").html(loadImg);
     console.log('==========');
 
     // console.log('Ширина '+getClientWidth());
     // console.log('Высота окна '+getClientHeight());
     
-    console.log('Высота окна '+winpage);
+    // console.log('Высота окна '+winpage);//!!!
     // console.log('Высота body '+document.body.clientHeight);
 
     var tblVPI = document.getElementById('tblVPI');
@@ -33,9 +36,9 @@ function showMenu(x, y){
     // console.log('xtbl '+xtbl);
     // console.log('ytbl '+ytbl);
     // console.log('Ширина tblVPI '+tblVPI.clientWidth);
-    console.log('Высота tblVPI '+tblVPI.clientHeight);
+    // console.log('Высота tblVPI '+tblVPI.clientHeight);//!!!
     // console.log('Ширина меню '+menu.clientWidth);
-    console.log('Высота меню '+menu.clientHeight);
+    // console.log('Высота меню '+menu.clientHeight);//!!!
     // // console.log("left "+x);
     // console.log("top "+y);
     // console.log("нижняя граница меню "+(y + menu.clientHeight));
@@ -75,24 +78,22 @@ function showMenu(x, y){
 function hideMenu(){
     menu.classList.remove('show-menu-cm'); 
     removeSel();  
+    $("#contextmenu").html(loadImg);
 }
 
 function onContextMenu(e){
     e.preventDefault();
     removeSel();
-    // fundomRect(e.pageY); 
+ 
     showMenu(e.pageX, e.pageY);
     
- 
-    // document.addEventListener('mousedown', onMouseDown, false);
-    // console.log(e.target.closest('tr').id);
-    getDataBaseVPI(e.target.closest('tr').childNodes[4].id)
+
+    getDataBaseVPI(e.target.closest('tr').childNodes[4].id,e.target.closest('tr').id)
     tr=e.target.closest('tr').classList.add('sel');
     menu.classList.add('show-menu-cm');
-    document.getElementById('del').dataset.element=e.target.closest('tr').id;
-    // alert (e.target.closest('tr td:nth-child(5)').dataset.src)
-    // document.getElementById('menu_img').src=e.target.closest('tr td:nth-child(5)').dataset.src;
-    document.getElementById('menu_img').src=e.target.closest('tr').childNodes[4].dataset.src;
+    // document.getElementById('del').dataset.element=e.target.closest('tr').id;   
+    // document.getElementById('menu_img').src=e.target.closest('tr').childNodes[4].dataset.src;
+
 }
 
 // function onMouseDown(e){
@@ -101,7 +102,7 @@ function onContextMenu(e){
 // }
 
 function delSel(tr){
-    hideMenu(); 
+    
     document.getElementById(tr.dataset.element).classList.remove('sel'); 
     del=document.getElementById('del').dataset.element;
     // console.log(del);
@@ -114,6 +115,7 @@ function delSel(tr){
     vpibazis.setAttribute('href', 'javascript:void(0)')
     // var ell = table.rows[j].cells[0].closest("tr"); // tr element (ваша строчка)
     // document.getElementById(tr.dataset.element).parentElement.removeChild(tr.dataset.element); 
+    hideMenu(); 
 }
 
 function removeSel(){
@@ -130,15 +132,15 @@ $('#GENModal').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmouse
 }
 );
 
-function getDataBaseVPI(e) {
+function getDataBaseVPI(el,del) {
+console.log("JS:"+el+" del:"+del);
 
-console.log(e);
-
-var IdData =  {
-    //  recordToDelete : "vpi/"+currfile,
-     id : e    
-    };
-
+// var IdData =  {
+//     //  recordToDelete : "vpi/"+currfile,
+//      id : el    
+//     };
+// if(el!=""){
+    var IdData = "id="+el+"&del="+del;  
     jQuery.ajax({
         type: "POST", // HTTP метод  POST или GET
         url: "./vpi/getDataBaseVPI.php", //url-адрес, по которому будет отправлен запрос
@@ -146,8 +148,9 @@ var IdData =  {
         data:IdData, //post переменные
         success:function(response){
         // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-        console.log(response);
-        // $('#drop-files').show(); 
+        // console.log(response);
+     
+        $("#contextmenu").html(response);
 
         },
         error:function (xhr, ajaxOptions, thrownError){
@@ -155,6 +158,7 @@ var IdData =  {
             console.log(thrownError);
         }
     });
+// }
 }  
 
 function toggle(el) {

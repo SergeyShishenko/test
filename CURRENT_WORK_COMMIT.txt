@@ -7,6 +7,7 @@
         inc\inc-left-side-menu-shablony-dokumentov.php
 
         dist\css\сontextMenu.css
+        dist\css\ajax-loader-7.gif
 
         dist\js\сontextMenu.js
         dist\js\drop.js
