@@ -275,8 +275,9 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
               echo $val .'</td>';  // Ед.измерения
             }
 
+            $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() ? $countFurn=$sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() : $countFurn=1;
             
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() .'</td>';  // Кол-во
+            echo '<td>' . $countFurn .'</td>';  // Кол-во
             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  // Примечание
             // $dataType = DType::TYPE_STRING;
              

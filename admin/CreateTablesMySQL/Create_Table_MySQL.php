@@ -525,10 +525,13 @@ if ( !$dbconn ) die("Error");
 $query = "CREATE TABLE IF NOT EXISTS obj_owner_furnitur(
     obj_owner_furnitur_id INT NOT NULL AUTO_INCREMENT,   
     obj_furnitur_prop_id INT COMMENT 'ID фурнитуры',
-    owner_obj_furnitur_prop_id INT COMMENT 'ID фурнитуры Хозяина',   
+    -- used_with_obj_furnitur_prop_id INT COMMENT 'Используется с',
+    owner_obj_furnitur_prop_id INT COMMENT 'ID фурнитуры Хозяина',       
     PRIMARY KEY (obj_owner_furnitur_id),
     FOREIGN KEY (obj_furnitur_prop_id) REFERENCES obj_furnitur_prop(obj_furnitur_prop_id),
+    -- FOREIGN KEY (used_with_obj_furnitur_prop_id) REFERENCES obj_furnitur_prop(obj_furnitur_prop_id),  
     FOREIGN KEY (owner_obj_furnitur_prop_id) REFERENCES obj_furnitur_prop(obj_furnitur_prop_id)   
+     
    )";
 
 if (mysqli_query($dbconn, $query)) echo "Таблица obj_owner_furnitur создана.<br>";

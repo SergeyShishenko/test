@@ -30,7 +30,7 @@ if (isset($_POST["del"])) {
 	<li class="menu-item-cm submenu-cm">
 		<button type="button" class="menu-btn-cm">
 			<i class="fa fa-list-alt"></i>
-			<span class="menu-text-cm">Комплектующие</span>
+			<span class="menu-text-cm">Состав :</span>
 		</button>
 		<menu class="menu-cm">
 			<li class="menu-item-cm">
