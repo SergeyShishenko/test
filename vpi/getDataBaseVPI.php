@@ -24,27 +24,37 @@ if (isset($_POST["del"])) {
 	 }
 	 $imgfurn = isset($imgfurn) ? $imgfurn : './dist/filesdb/images/test.png';
 
+
 ?>
 <!-- <menu class="menu-cm" id="contextmenu">     -->
-<?php if ($_POST["id"] !=""){?>
+
+<?php if (strpos($table[0]['unit_obj_prop'], 'комплект') !== false ){
+
+	$query = "SELECT * FROM `obj_owner_furnitur` WHERE `owner_obj_furnitur_prop_id` = {?}";
+	$composit = $db->select($query, array($id)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+
+?>
 	<li class="menu-item-cm submenu-cm">
 		<button type="button" class="menu-btn-cm">
 			<i class="fa fa-list-alt"></i>
-			<span class="menu-text-cm">Состав :</span>
+			<span class="menu-text-cm">Состав комплекта:</span>
 		</button>
+
+
 		<menu class="menu-cm">
+		<?php for ($i=0;$i<count($composit);$i++){
+			$query = "SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = {?}";
+			$clist = $db->select($query, array($composit[$i]['obj_furnitur_prop_id']));
+			$imgfurncurr = $clist[0]['fname_img_furn'];
+			$imgfurncurr = isset($imgfurncurr) ? $imgfurncurr : './dist/filesdb/images/test.png';
+		?>
 			<li class="menu-item-cm">
-				<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);">                       
-					<span class="menu-text-cm">Комментарии</span>
+				<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);" title="<?php echo $clist[0]['def_obj_prop'];?>">                       
+					<span class="menu-text-cm clip"><?php echo $clist[0]['def_obj_prop'];?></span>
 				</button>
-				<img style="display:none;"  src="./dist/filesdb/images/test.png"  width="200"  alt="" >
+				<img style="display:none;"  src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
 			</li>
-			<li class="menu-item-cm">
-				<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);">                     
-					<span class="menu-text-cm">Поделиться</span>                        
-				</button>
-				<img style="display:none;"  src="./dist/filesdb/images/test.png"  width="200"  alt="" > 			
-			</li>
+		<?php } ?>
 		</menu>
 	</li>
 <?php }?>
