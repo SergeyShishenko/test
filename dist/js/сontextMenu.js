@@ -127,7 +127,8 @@ function removeSel(){
     }
 }
 // скрытие контекстного меню при скроле
-$('#GENModal').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel click', function(e){
+// $('#GENModal').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel click', function(e){
+$('#GENModal').bind('click', function(e){
     hideMenu(); 
 }
 );

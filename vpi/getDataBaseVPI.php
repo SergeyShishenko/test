@@ -57,7 +57,42 @@ if (isset($_POST["del"])) {
 		<?php } ?>
 		</menu>
 	</li>
-<?php }?>
+<?php
+ }else{// если не комплект
+
+
+	$query = "SELECT * FROM `obj_owner_furnitur` WHERE `obj_furnitur_prop_id` = {?}";
+	$Used_with = $db->select($query, array($id)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+
+?>
+	<li class="menu-item-cm submenu-cm">
+		<button type="button" class="menu-btn-cm">
+			<i class="fa fa-list-alt"></i>
+			<span class="menu-text-cm">Используется с:</span>
+		</button>
+
+
+		<menu class="menu-cm">
+		<?php for ($i=0;$i<count($Used_with);$i++){
+			$query = "SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = {?}";
+			$clist = $db->select($query, array($Used_with[$i]['owner_obj_furnitur_prop_id']));
+			$imgfurncurr = $clist[0]['fname_img_furn'];
+			$imgfurncurr = isset($imgfurncurr) ? $imgfurncurr : './dist/filesdb/images/test.png';
+		?>
+			<li class="menu-item-cm">
+				<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);" title="<?php echo $clist[0]['def_obj_prop'];?>">                       
+					<span class="menu-text-cm clip"><?php echo $clist[0]['def_obj_prop'];?></span>
+				</button>
+				<img style="display:none;"  src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
+			</li>
+		<?php } ?>
+		</menu>
+	</li>
+<?php
+
+
+ }
+?>
 
 	<li class="menu-separator-cm"></li>
 	<li class="menu-item-cm">
