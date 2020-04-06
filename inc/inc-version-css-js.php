@@ -14,3 +14,4 @@ $styleform =2;
 $indexform =4;
 $selectcell =2;//dist\js\selectcell.js
 $passworCheck =3;//inc\inc-footer.php, index.php
+$сontextMenu=1;//inc\inc-footer.php,

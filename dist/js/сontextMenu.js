@@ -169,6 +169,12 @@ function toggle(el) {
 
   function buttonToggle(el) {
 // console.log(el.closest('li').childNodes[3]);
+var imgsub = document.querySelectorAll('.togg');
+for(var i = 0; i < imgsub.length; i++){
+    imgsub[i].style.display="none";
+    console.log(imgsub[i]);
+    }
+
     toggle(el.closest('li').childNodes[3]);
   }
 // document.querySelectorAll('#tblVPI  tr:not(.head-cm)')

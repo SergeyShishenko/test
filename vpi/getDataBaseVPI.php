@@ -52,7 +52,7 @@ if (isset($_POST["del"])) {
 				<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);" title="<?php echo $clist[0]['def_obj_prop'];?>">                       
 					<span class="menu-text-cm clip"><?php echo $clist[0]['def_obj_prop'];?></span>
 				</button>
-				<img style="display:none;"  src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
+				<img style="display:none;" class="togg"  src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
 			</li>
 		<?php } ?>
 		</menu>
