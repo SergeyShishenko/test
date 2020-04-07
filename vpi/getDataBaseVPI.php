@@ -35,13 +35,13 @@ if (isset($_POST["del"])) {
 
 ?>
 	<li class="menu-item-cm submenu-cm">
-		<button type="button" class="menu-btn-cm">
+		<button type="button" class="menu-btn-cm contextm-toggle">
 			<i class="fa fa-list-alt"></i>
 			<span class="menu-text-cm">Состав комплекта:</span>
 		</button>
 
 
-		<menu class="menu-cm">
+		<menu class="menu-cm cm">
 		<?php for ($i=0;$i<count($composit);$i++){
 			$query = "SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = {?}";
 			$clist = $db->select($query, array($composit[$i]['obj_furnitur_prop_id']));
@@ -66,13 +66,13 @@ if (isset($_POST["del"])) {
 	if (count($Used_with)>0){
 ?>
 	<li class="menu-item-cm submenu-cm">
-		<button type="button" class="menu-btn-cm">
+		<button type="button" class="menu-btn-cm contextm-toggle">
 			<i class="fa fa-list-alt"></i>
 			<span class="menu-text-cm">Используется с:</span>
 		</button>
 
 
-		<menu class="menu-cm">
+		<menu class="menu-cm cm">
 		<?php for ($i=0;$i<count($Used_with);$i++){
 			$query = "SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = {?}";
 			$clist = $db->select($query, array($Used_with[$i]['owner_obj_furnitur_prop_id']));
@@ -94,7 +94,7 @@ if (isset($_POST["del"])) {
  }
 ?>
 
-	<li class="menu-separator-cm"></li>
+	<!-- <li class="menu-separator-cm"></li> -->
 	<li class="menu-item-cm">
 		<!-- <img   src="./dist/filesdb/images/test.png"  width="200"  alt="" >  -->
 		<img   src="<?php echo $imgfurn;?>"  width="200"  alt="" > 
@@ -106,7 +106,7 @@ if (isset($_POST["del"])) {
 			<span class="menu-text-cm">Удалить строку</span>
 		</button>
 	</li>
-	<li class="menu-separator-cm"></li>
+	<!-- <li class="menu-separator-cm"></li> -->
 	<li class="menu-item-cm ">
 		<button type="button" class="menu-btn-cm" onclick="hideMenu();" id="chancel_cmenu">
 			<i class="fa fa-times-circle"></i>

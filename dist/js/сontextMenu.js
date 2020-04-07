@@ -167,10 +167,10 @@ if (pos){
 //     }
 // });
 
-$('#GENModal').bind('click', function(e){
-    hideMenu(); 
-}
-);
+// $('#GENModal').bind('click', function(e){
+//     hideMenu(); 
+// }
+// );
 
 function getDataBaseVPI(el,del) {
 console.log("JS:"+el+" del:"+del);
@@ -211,10 +211,15 @@ function toggle(el) {
 var imgsub = document.querySelectorAll('.togg');
 for(var i = 0; i < imgsub.length; i++){
     imgsub[i].style.display="none";
-    console.log(imgsub[i]);
+    // console.log(imgsub[i]);
     }
 
     toggle(el.closest('li').childNodes[3]);
   }
 // document.querySelectorAll('#tblVPI  tr:not(.head-cm)')
 // .forEach(e => e.addEventListener('contextmenu', onContextMenu, false)); 
+
+$("body").on("click","button.contextm-toggle", function() { 
+    // console.log('toggle');
+    $(".cm").toggle(); //  скрываем, или отображаем все элементы <div>
+  });

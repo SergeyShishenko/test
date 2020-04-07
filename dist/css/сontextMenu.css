@@ -39,7 +39,8 @@ h2 {
     z-index: 100;
     border-radius: 3px;
     box-shadow: 5px 5px 5px rgba(0,0,0,.2);
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
     -webkit-transform: translate(0, 15px) scale(.95);
     transform: translate(0, 15px) scale(.95);
     transition: transform 0.1s ease-out, opacity 0.1s ease-out;
@@ -80,6 +81,7 @@ h2 {
     white-space: nowrap;
     padding: 6px 8px;
     border-radius: 3px;
+    border-bottom: solid 1px #afafaf;
 }
 
 .menu-btn-cm::-moz-focus-inner,
@@ -149,18 +151,26 @@ h2 {
     left: 99%;
 }
 
-.show-menu-cm,
+/* .show-menu-cm,
 .menu-item-cm:hover > .menu-cm {
     opacity: 1;
     -webkit-transform: translate(0, 0) scale(1);
     transform: translate(0, 0) scale(1);
     pointer-events: auto;
+} */
+.show-menu-cm,
+.menu-item-cm > .menu-cm {
+    display: block;
+    opacity: 1;
+     -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+    pointer-events: auto;
 }
 
-.menu-item-cm:hover > .menu-cm {
+/* .menu-item-cm:hover > .menu-cm {
     -webkit-transition-delay: 100ms;
     transition-delay: 300ms;
-}
+} */
 
 
 .img-sub > span{
@@ -173,13 +183,29 @@ img.sub:hover{
     display: block;
 } */
 span.clip {
-    white-space: nowrap; /* ????????? ??????? ????? */
-    overflow: hidden; /* ???????? ???, ??? ?? ?????????? ? ??????? */
-    display: block;
-   /* background: #fc0; /* ???? ???? */
-    /*padding: 5px; /* ???? ?????? ?????? */
-    text-overflow: ellipsis; /* ????????? ?????????? */
+    white-space: nowrap; 
+    overflow: hidden; 
+    display: block; 
+    text-overflow: ellipsis; 
    }
    img.togg{
     border-top: solid 3px #3498db ;
    }
+   .menu-cm.cm{
+    display: none; 
+   }
+
+   /* .block {
+    background: green;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+   }
+   .block::after {
+    content: ''; 
+    position: absolute; 
+    left: 20px; bottom: -20px; 
+    border: 10px solid transparent; 
+    border-top: 10px solid green; 
+   } */
