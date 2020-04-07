@@ -13,7 +13,7 @@
     if($shablonyClass=='class="active"'){
 ?>
 <!-- Генерация комплектов документов-->
-    <div class="modal fade" id="GENModal" tabindex="-1" role="dialog" aria-labelledby="GENModalLabel" aria-hidden="true">
+    <div class="modal fade" id="GENModal" tabindex="-1" role="dialog" aria-labelledby="GENModalLabel" aria-hidden="true" style="margin-right: -30px;">
         <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">

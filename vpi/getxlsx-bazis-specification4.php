@@ -234,9 +234,13 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
             echo '<td>' . $val .'</td>';  //1
             $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() : $val = $Product;//Изделие
             echo '<td>' . $val .'</td>';  //2
-
+            // $posPart = $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue();
+            if ($row==$start_num && $i===0){
+             $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() ? $posPart = $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() : $posPart ="Поз."; 
+            }
+            
             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //СЕ
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() .'</td>';  //Поз.
+            echo '<td>' . $posPart .'</td>';  //Поз.
             $articul = htmlspecialchars(trim($sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue())); //Артикул
             if ($articul !="" && $articul !="Артикул"){
               // var_dump($articul);exit();
