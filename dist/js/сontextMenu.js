@@ -132,9 +132,9 @@ function removeSel(){
 var pos = $('.sel').offset();
 if (pos){
     // console.log( pos ); // выводим в консоль объект с двуми значениями (позиция элемента <p>)
-    console.log( menu.style.top + " = "+ parseInt(menu.style.top, 10)); // выводим в консоль значение ключа top (позиция элемента <p> от верхнего края)
-    console.log( pos.top ); // выводим в консоль значение ключа top (позиция элемента <p> от верхнего края)
-    console.log("Разница " + (parseInt(menu.style.top, 10) - pos.top) );
+    // console.log( menu.style.top + " = "+ parseInt(menu.style.top, 10)); // выводим в консоль значение ключа top (позиция элемента <p> от верхнего края)
+    // console.log( pos.top ); // выводим в консоль значение ключа top (позиция элемента <p> от верхнего края)
+    // console.log("Разница " + (parseInt(menu.style.top, 10) - pos.top) );
     // console.log( pos.left ) 
     var div=parseInt(menu.style.top, 10) - pos.top;
    menu.style.top = (pos.top-90) + 'px'; 

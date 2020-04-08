@@ -68,7 +68,8 @@ if (isset($_POST["del"])) {
 	<li class="menu-item-cm submenu-cm">
 		<button type="button" class="menu-btn-cm contextm-toggle">
 			<i class="fa fa-list-alt"></i>
-			<span class="menu-text-cm">Используется с:</span>
+			<!-- Используется с: -->
+			<span class="menu-text-cm">Входит в состав:</span>
 		</button>
 
 
@@ -87,12 +88,20 @@ if (isset($_POST["del"])) {
 			</li>
 		<?php } ?>
 		</menu>
+		<li class="menu-item-cm submenu-cm">
+			<button type="button" class="menu-btn-cm contextm-toggle">
+			<i class="fa fa-handshake-o" aria-hidden="true"></i>
+				<!-- Используется с: -->
+				<span class="menu-text-cm">Используется с:</span>
+			</button>
+		</li>	
 	</li>
 <?php
 }//if
 
  }
 ?>
+	
 
 	<!-- <li class="menu-separator-cm"></li> -->
 	<li class="menu-item-cm">

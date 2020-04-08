@@ -541,6 +541,28 @@ mysqli_close($dbconn);
 
 
 ////
+
+////
+$dbconn=dbconnect();
+if ( !$dbconn ) die("Error");
+
+$res = mysqli_query($dbconn,"SELECT `used_with_obj_furnitur_prop_id` FROM `obj_owner_furnitur` WHERE 0");
+if ($res) {
+echo "Поле 'used_with_obj_furnitur_prop_id' существует.<br>";
+}
+else {
+    $query = "ALTER TABLE `obj_owner_furnitur` ADD COLUMN `used_with_obj_furnitur_prop_id` INT COMMENT 'ID фурнитуры Используется с:'";
+if (mysqli_query($dbconn, $query)) echo "ADD COLUMN used_with_obj_furnitur_prop_id в таблицу obj_owner_furnitur.<br>";
+else echo "Поле не добавленно: ".mysqli_error($dbconn);
+
+$query = "ALTER TABLE `obj_owner_furnitur` ADD FOREIGN KEY (used_with_obj_furnitur_prop_id) REFERENCES obj_furnitur_prop(obj_furnitur_prop_id);";
+if (mysqli_query($dbconn, $query)) echo "Внешний ключ добавлен к used_with_obj_furnitur_prop_id .<br>";
+else echo "Внешний ключ не добавленно: ".mysqli_error($dbconn);
+
+}
+mysqli_close($dbconn);
+
+////
  
 // //$encoding = pg_client_encoding($dbconn);
 
