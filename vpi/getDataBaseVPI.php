@@ -66,14 +66,14 @@ if (isset($_POST["del"])) {
 	if (count($Used_with)>0){
 ?>
 	<li class="menu-item-cm submenu-cm">
-		<button type="button" class="menu-btn-cm contextm-toggle">
+		<button type="button" class="menu-btn-cm contextm-toggle" data-togg="cm2">
 			<i class="fa fa-list-alt"></i>
 			<!-- Используется с: -->
 			<span class="menu-text-cm">Входит в состав:</span>
 		</button>
 
 
-		<menu class="menu-cm cm">
+		<menu class="menu-cm cm" id="cm1">
 		<?php for ($i=0;$i<count($Used_with);$i++){
 			$query = "SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = {?}";
 			$clist = $db->select($query, array($Used_with[$i]['owner_obj_furnitur_prop_id']));
@@ -89,11 +89,19 @@ if (isset($_POST["del"])) {
 		<?php } ?>
 		</menu>
 		<li class="menu-item-cm submenu-cm">
-			<button type="button" class="menu-btn-cm contextm-toggle">
+			<button type="button" class="menu-btn-cm contextm-toggle" data-togg="cm1">
 			<i class="fa fa-handshake-o" aria-hidden="true"></i>
 				<!-- Используется с: -->
 				<span class="menu-text-cm">Используется с:</span>
 			</button>
+			<menu class="menu-cm cm"  id="cm2">
+				<li class="menu-item-cm">
+					<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);" title="Проба">                       
+						<span class="menu-text-cm clip">Проба</span>
+					</button>
+					<img style="display:none;" class="togg" src="./dist/filesdb/images/test.png"  width="200"  alt="Проба" >
+				</li>
+			</menu>
 		</li>	
 	</li>
 <?php

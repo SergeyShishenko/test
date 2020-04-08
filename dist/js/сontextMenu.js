@@ -171,6 +171,9 @@ if (pos){
 //     hideMenu(); 
 // }
 // );
+$('#GENModal').on('hide.bs.modal', function() {
+    hideMenu();
+  })
 
 function getDataBaseVPI(el,del) {
 console.log("JS:"+el+" del:"+del);
@@ -201,25 +204,40 @@ console.log("JS:"+el+" del:"+del);
 // }
 }  
 
-function toggle(el) {
-    el.style.display = (el.style.display == 'none') ? 'block' : 'none'
-  }
+// function toggle(el) {
+//     el.style.display = (el.style.display == 'none') ? 'block' : 'none'
+//   }
 
 
   function buttonToggle(el) {
-// console.log(el.closest('li').childNodes[3]);
-var imgsub = document.querySelectorAll('.togg');
-for(var i = 0; i < imgsub.length; i++){
-    imgsub[i].style.display="none";
-    // console.log(imgsub[i]);
-    }
-
-    toggle(el.closest('li').childNodes[3]);
+// console.log(el);
+// var imgsub = document.querySelectorAll('.togg');
+// for(var i = 0; i < imgsub.length; i++){
+//     imgsub[i].style.display="none";
+//     // console.log(imgsub[i]);
+//     }
+$(el).next().toggle();
+    // toggle(el.closest('li').childNodes[3]);
   }
 // document.querySelectorAll('#tblVPI  tr:not(.head-cm)')
 // .forEach(e => e.addEventListener('contextmenu', onContextMenu, false)); 
 
-$("body").on("click","button.contextm-toggle", function() { 
-    // console.log('toggle');
-    $(".cm").toggle(); //  скрываем, или отображаем все элементы <div>
+$("body").on("click","button.contextm-toggle", function(e) { 
+    console.log(e.target);
+    // $("menu .menu-cm.cm").hide(); //  скрываем, или отображаем все элементы <div>
+    var m=$(e.target).parent().data('togg');
+    if (typeof m === "undefined"){
+        // console.log("m");
+        if ($(e.target).data('togg')=="cm1"){
+          m="cm2";  
+        }else{
+            m="cm1"; 
+        }
+        
+    }
+    console.log(m);
+    $("#"+m).hide();
+    $(e.target).parent().parent().find('menu').toggle();
+    
+    // 
   });
