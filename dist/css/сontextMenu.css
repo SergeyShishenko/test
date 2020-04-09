@@ -194,6 +194,9 @@ span.clip {
    .menu-cm.cm{
     display: none; 
    }
+   p.menu-p{
+    background: white; 
+   }
 
    /* .block {
     background: green;

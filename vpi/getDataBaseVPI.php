@@ -53,6 +53,7 @@ if (isset($_POST["del"])) {
 					<span class="menu-text-cm clip"><?php echo $clist[0]['def_obj_prop'];?></span>
 				</button>
 				<img style="display:none;" class="togg"  src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
+				<p class="menu-p"><a href="#">Арт. <?php echo $clist[0]['articul_furnitur_obj'];?>; ID-<?php echo $clist[0]['obj_furnitur_prop_id'];?></a></p>
 			</li>
 		<?php } ?>
 		</menu>
@@ -85,6 +86,7 @@ if (isset($_POST["del"])) {
 					<span class="menu-text-cm clip"><?php echo $clist[0]['def_obj_prop'];?></span>
 				</button>
 				<img style="display:none;" class="togg" src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
+				<p class="menu-p"><a href="#">Арт. <?php echo $clist[0]['articul_furnitur_obj'];?>; ID-<?php echo $clist[0]['obj_furnitur_prop_id'];?></a></p>
 			</li>
 		<?php } ?>
 		</menu>
@@ -100,6 +102,7 @@ if (isset($_POST["del"])) {
 						<span class="menu-text-cm clip">Проба</span>
 					</button>
 					<img style="display:none;" class="togg" src="./dist/filesdb/images/test.png"  width="200"  alt="Проба" >
+					<p class="menu-p"><a href="#">Арт.</a></p>
 				</li>
 			</menu>
 		</li>	
