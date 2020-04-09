@@ -60,57 +60,73 @@ if (isset($_POST["del"])) {
 	</li>
 <?php
  }else{// если не комплект
+	$query = "SELECT * FROM `obj_owner_furnitur` WHERE `obj_furnitur_prop_id` = {?}  AND `owner_obj_furnitur_prop_id` IS NOT NULL";
+	$Be_a_part = $db->select($query, array($id)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+	if (count($Be_a_part)>0){
+			?>
+		<li class="menu-item-cm submenu-cm">
+			<button type="button" class="menu-btn-cm contextm-toggle" data-togg="cm2">
+				<i class="fa fa-list-alt"></i>
+				<!-- Используется с: -->
+				<span class="menu-text-cm">Входит в состав:</span>
+			</button>
 
 
-	$query = "SELECT * FROM `obj_owner_furnitur` WHERE `obj_furnitur_prop_id` = {?}";
-	$Used_with = $db->select($query, array($id)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
-	if (count($Used_with)>0){
-?>
-	<li class="menu-item-cm submenu-cm">
-		<button type="button" class="menu-btn-cm contextm-toggle" data-togg="cm2">
-			<i class="fa fa-list-alt"></i>
-			<!-- Используется с: -->
-			<span class="menu-text-cm">Входит в состав:</span>
-		</button>
+			<menu class="menu-cm cm" id="cm1">
+			<?php for ($i=0;$i<count($Be_a_part);$i++){
+				$query = "SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = {?}";
+				$clist = $db->select($query, array($Be_a_part[$i]['owner_obj_furnitur_prop_id']));
+				$imgfurncurr = $clist[0]['fname_img_furn'];
+				$imgfurncurr = isset($imgfurncurr) ? $imgfurncurr : './dist/filesdb/images/test.png';
+			?>
+				<li class="menu-item-cm">
+					<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);" title="<?php echo $clist[0]['def_obj_prop'];?>">                       
+						<span class="menu-text-cm clip"><?php echo $clist[0]['def_obj_prop'];?></span>
+					</button>
+					<img style="display:none;" class="togg" src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
+					<p class="menu-p"><a href="#">Арт. <?php echo $clist[0]['articul_furnitur_obj'];?>; ID-<?php echo $clist[0]['obj_furnitur_prop_id'];?></a></p>
+				</li>
+			<?php } ?>
+			</menu>			
+		</li>
+	<?php
+	}//if count($Be_a_part)>0
 
-
-		<menu class="menu-cm cm" id="cm1">
-		<?php for ($i=0;$i<count($Used_with);$i++){
-			$query = "SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = {?}";
-			$clist = $db->select($query, array($Used_with[$i]['owner_obj_furnitur_prop_id']));
-			$imgfurncurr = $clist[0]['fname_img_furn'];
-			$imgfurncurr = isset($imgfurncurr) ? $imgfurncurr : './dist/filesdb/images/test.png';
-		?>
-			<li class="menu-item-cm">
-				<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);" title="<?php echo $clist[0]['def_obj_prop'];?>">                       
-					<span class="menu-text-cm clip"><?php echo $clist[0]['def_obj_prop'];?></span>
-				</button>
-				<img style="display:none;" class="togg" src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
-				<p class="menu-p"><a href="#">Арт. <?php echo $clist[0]['articul_furnitur_obj'];?>; ID-<?php echo $clist[0]['obj_furnitur_prop_id'];?></a></p>
-			</li>
-		<?php } ?>
-		</menu>
+	///////////////
+	$query = "SELECT * FROM `obj_owner_furnitur` WHERE `used_with_obj_furnitur_prop_id` = {?} ";
+	$used_with = $db->select($query, array($id)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+	if (count($used_with)>0){
+			?>
 		<li class="menu-item-cm submenu-cm">
 			<button type="button" class="menu-btn-cm contextm-toggle" data-togg="cm1">
-			<i class="fa fa-handshake-o" aria-hidden="true"></i>
+				<i class="fa fa-list-alt"></i>
 				<!-- Используется с: -->
 				<span class="menu-text-cm">Используется с:</span>
 			</button>
-			<menu class="menu-cm cm"  id="cm2">
-				<li class="menu-item-cm">
-					<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);" title="Проба">                       
-						<span class="menu-text-cm clip">Проба</span>
-					</button>
-					<img style="display:none;" class="togg" src="./dist/filesdb/images/test.png"  width="200"  alt="Проба" >
-					<p class="menu-p"><a href="#">Арт.</a></p>
-				</li>
-			</menu>
-		</li>	
-	</li>
-<?php
-}//if
 
- }
+
+			<menu class="menu-cm cm" id="cm2">
+			<?php for ($i=0;$i<count($used_with);$i++){
+				$query = "SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = {?}";
+				$ulist = $db->select($query, array($used_with[$i]['obj_furnitur_prop_id']));
+				$imgfurncurr = $ulist[0]['fname_img_furn'];
+				$imgfurncurr = isset($imgfurncurr) ? $imgfurncurr : './dist/filesdb/images/test.png';
+			?>
+				<li class="menu-item-cm">
+					<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);" title="<?php echo $ulist[0]['def_obj_prop'];?>">                       
+						<span class="menu-text-cm clip"><?php echo $ulist[0]['def_obj_prop'];?></span>
+					</button>
+					<img style="display:none;" class="togg" src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $ulist[0]['def_obj_prop'];?>" >
+					<p class="menu-p"><a href="#">Арт. <?php echo $ulist[0]['articul_furnitur_obj'];?>; ID-<?php echo $ulist[0]['obj_furnitur_prop_id'];?></a></p>
+				</li>
+			<?php } ?>
+			</menu>				
+		</li>
+	<?php
+	}//if count($Be_a_part)>0
+	///////////////
+
+ }// если не комплект
 ?>
 	
 

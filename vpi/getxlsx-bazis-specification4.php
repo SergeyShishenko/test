@@ -282,7 +282,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
             $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() ? $countFurn=$sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() : $countFurn=1;
             
             echo '<td>' . $countFurn .'</td>';  // Кол-во
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  // Примечание
+            echo '<td title="ID-' . $table[0]['obj_furnitur_prop_id'] .'">' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  // Примечание
             // $dataType = DType::TYPE_STRING;
              
           // }          
