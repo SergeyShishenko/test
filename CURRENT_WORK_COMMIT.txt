@@ -14,6 +14,7 @@
 
         vpi\getxlsx-bazis-specification4.php
         vpi\getDataBaseVPI.php
+        vpi\templates\blank.xls
 
         
 

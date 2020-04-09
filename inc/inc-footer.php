@@ -48,6 +48,7 @@
                                 <div id="out_CNC"></div>
                                 <input type="button" value="Печать CNC" onclick="PrintElem('#out_CNC')" />
                                 <input type="button" value="Очистить" onclick="Reset('#out_CNC')" />
+                                <input type="button" value="Бланк ВПИ" onclick="blankVPI()" />
                                 <?php } ?>
 
                                 <? include 'vpi/inc-list-csv.php'; ?>

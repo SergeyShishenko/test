@@ -10,7 +10,9 @@ use \PhpOffice\PhpSpreadsheet\Cell\Coordinate as Coord;
 // define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php' ;
 require_once dirname(dirname(__FILE__)).'/vendor/MyClass/class_DataBase.php';
-
+if (!isset($filename)){$filename="templates/blank.xls";}
+// echo $filename;
+// exit();
 # Указываем путь до файла .xlsx
 $File = $_SERVER['DOCUMENT_ROOT'] . "/www/vpi/$filename";//localhost
 // $File = $_SERVER['DOCUMENT_ROOT'] . "/vpi/$filename";//site
@@ -253,14 +255,14 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
                   
                   echo '<td data-src="./dist/filesdb/images/test.png">' . $articul .'</td>'; //Артикул
                   echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
-                  $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
+                  // $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
                 }
                 
             }else{ // если ячейка Артикул пустая
               $table = array();
               echo '<td  data-src="./dist/filesdb/images/test.png">' . $articul .'</td>'; //Артикул
              echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
-             $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
+            //  $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
             } 
 
             

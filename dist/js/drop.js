@@ -1623,4 +1623,14 @@ function PrintElem(elem)
 function triggerClick(){    
     $('#GENModal').modal('show');
 }
+function blankVPI(){   
+    $.post('./vpi/getxlsx-bazis-specification4.php',  function(data) {
+      
+        $('#drop-files').hide();
+        $('#table-saved-files').hide(); 
+        // $('#uploaded-files');     
+        $('#uploaded-files').show().append(data);
+    }); 
+    
+}
  
