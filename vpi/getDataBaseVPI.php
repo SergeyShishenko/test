@@ -35,13 +35,13 @@ if (isset($_POST["del"])) {
 
 ?>
 	<li class="menu-item-cm submenu-cm">
-		<button type="button" class="menu-btn-cm contextm-toggle">
+		<button type="button" class="menu-btn-cm contextm-toggle" data-togg="cm2">
 			<i class="fa fa-list-alt"></i>
 			<span class="menu-text-cm">Состав комплекта:</span>
 		</button>
 
 
-		<menu class="menu-cm cm">
+		<menu class="menu-cm cm" id="cm1">
 		<?php for ($i=0;$i<count($composit);$i++){
 			$query = "SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = {?}";
 			$clist = $db->select($query, array($composit[$i]['obj_furnitur_prop_id']));
@@ -53,7 +53,7 @@ if (isset($_POST["del"])) {
 					<span class="menu-text-cm clip"><?php echo $clist[0]['def_obj_prop'];?></span>
 				</button>
 				<img style="display:none;" class="togg"  src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
-				<p class="menu-p"><a href="#">Арт. <?php echo $clist[0]['articul_furnitur_obj'];?>; ID-<?php echo $clist[0]['obj_furnitur_prop_id'];?></a></p>
+				<p class="menu-p"><a href="#"><?php echo $clist[0]['articul_furnitur_obj'];?>; ID-<?php echo $clist[0]['obj_furnitur_prop_id'];?></a></p>
 			</li>
 		<?php } ?>
 		</menu>
@@ -84,7 +84,7 @@ if (isset($_POST["del"])) {
 						<span class="menu-text-cm clip"><?php echo $clist[0]['def_obj_prop'];?></span>
 					</button>
 					<img style="display:none;" class="togg" src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
-					<p class="menu-p"><a href="#">Арт. <?php echo $clist[0]['articul_furnitur_obj'];?>; ID-<?php echo $clist[0]['obj_furnitur_prop_id'];?></a></p>
+					<p class="menu-p"><a href="#"><?php echo $clist[0]['articul_furnitur_obj'];?>; ID-<?php echo $clist[0]['obj_furnitur_prop_id'];?></a></p>
 				</li>
 			<?php } ?>
 			</menu>			
@@ -99,7 +99,7 @@ if (isset($_POST["del"])) {
 			?>
 		<li class="menu-item-cm submenu-cm">
 			<button type="button" class="menu-btn-cm contextm-toggle" data-togg="cm1">
-				<i class="fa fa-list-alt"></i>
+			<i class="fa fa-handshake-o" aria-hidden="true"></i>
 				<!-- Используется с: -->
 				<span class="menu-text-cm">Используется с:</span>
 			</button>
@@ -117,7 +117,7 @@ if (isset($_POST["del"])) {
 						<span class="menu-text-cm clip"><?php echo $ulist[0]['def_obj_prop'];?></span>
 					</button>
 					<img style="display:none;" class="togg" src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $ulist[0]['def_obj_prop'];?>" >
-					<p class="menu-p"><a href="#">Арт. <?php echo $ulist[0]['articul_furnitur_obj'];?>; ID-<?php echo $ulist[0]['obj_furnitur_prop_id'];?></a></p>
+					<p class="menu-p"><a href="#"><?php echo $ulist[0]['articul_furnitur_obj'];?>; ID-<?php echo $ulist[0]['obj_furnitur_prop_id'];?></a></p>
 				</li>
 			<?php } ?>
 			</menu>				

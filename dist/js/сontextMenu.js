@@ -226,18 +226,29 @@ $("body").on("click","button.contextm-toggle", function(e) {
     console.log(e.target);
     // $("menu .menu-cm.cm").hide(); //  скрываем, или отображаем все элементы <div>
     var m=$(e.target).parent().data('togg');
+    console.log(m);
     if (typeof m === "undefined"){
         // console.log("m");
         if ($(e.target).data('togg')=="cm1"){
-          m="cm2";  
+        //   m="cm2";  
+          $("#cm1").hide();
+        //   $(e.target).parent().parent().find('menu').toggle();
+          $("#cm2").toggle();
         }else{
-            m="cm1"; 
+            // m="cm2"; 
+            $("#cm2").hide();
+            // $(e.target).parent().parent().find('menu').toggle();
+            $("#cm1").toggle();
         }
         
+    }else{
+        console.log(m);
+        $("#"+m).hide();
+    $(e.target).parent().parent().find('menu').toggle();
     }
     console.log(m);
-    $("#"+m).hide();
-    $(e.target).parent().parent().find('menu').toggle();
+    // console.log(e.target);
+    // 
     
     // 
   });

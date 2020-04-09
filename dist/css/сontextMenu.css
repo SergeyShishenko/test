@@ -196,6 +196,8 @@ span.clip {
    }
    p.menu-p{
     background: white; 
+    font-size: 10px;
+    text-align: right;
    }
 
    /* .block {
