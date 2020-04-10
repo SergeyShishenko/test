@@ -11,6 +11,7 @@
 
         dist\js\сontextMenu.js
         dist\js\drop.js
+        dist\filesdb\images\mov01g4_TIPON.png
 
         vpi\getxlsx-bazis-specification4.php
         vpi\getDataBaseVPI.php

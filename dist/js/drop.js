@@ -1560,15 +1560,17 @@ function PrintElem(elem)
             // проверка на пустую строку
             if (table.rows[i].cells[4].innerHTML === "" && table.rows[i].cells[5].innerHTML === ""){
                 var ell = table.rows[i].cells[0].closest("tr"); // tr element (ваша строчка)
-                ell.parentElement.removeChild(ell);
+                ell.parentElement.removeChild(ell);// удаление пустой строки
             }
                
 
                 for (var j = i+1; j < table.rows.length; j++){
 
 
-                        if (table.rows[i].cells[3].innerHTML === table.rows[j].cells[3].innerHTML && table.rows[i].cells[4].innerHTML === table.rows[j].cells[4].innerHTML
-                        && table.rows[i].cells[5].innerHTML === table.rows[j].cells[5].innerHTML ) {
+                        if ( parseFloat(table.rows[i].cells[3].innerHTML) ===  parseFloat(table.rows[j].cells[3].innerHTML) //СЕ                        
+                         && table.rows[i].cells[4].innerHTML === table.rows[j].cells[4].innerHTML //пос.
+                         && table.rows[i].cells[5].innerHTML === table.rows[j].cells[5].innerHTML //арт.
+                         ) {
                         
                         table.rows[i].cells[9].innerHTML=parseInt(table.rows[i].cells[9].innerHTML, 10) + parseInt(table.rows[j].cells[9].innerHTML, 10);                           
                         var ell = table.rows[j].cells[0].closest("tr"); // tr element (ваша строчка)
@@ -1579,7 +1581,7 @@ function PrintElem(elem)
                                // проверка на пустую строку
                                 if (table.rows[j].cells[4].innerHTML === "" && table.rows[j].cells[5].innerHTML === ""){
                                     var ell = table.rows[j].cells[0].closest("tr"); // tr element (ваша строчка)
-                                    ell.parentElement.removeChild(ell);
+                                    ell.parentElement.removeChild(ell);// удаление пустой строки
                                 } 
                         }
                      

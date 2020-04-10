@@ -258,11 +258,26 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
                   // $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
                 }
                 
-            }else{ // если ячейка Артикул пустая
-              $table = array();
-              echo '<td  data-src="./dist/filesdb/images/test.png">' . $articul .'</td>'; //Артикул
-             echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
-            //  $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
+            }else { // если ячейка Артикул пустая
+
+              //////////////////////
+              $query = "SELECT * FROM `obj_furnitur_prop` WHERE `name_furnitur_obj_prop` = {?}  ";
+              $table = $db->select($query, array($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue())); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+              if ($table){ //Если есть в БД
+                echo '<td style="color: green;" id="obj_' . $table[0]['obj_furnitur_prop_id'] .'" data-src="'.$table[0]['fname_img_furn'].'">' . $table[0]['articul_furnitur_obj'] .' </td>'; // Артикул
+                echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  // Наименование
+              }else{ //Если нет в БД
+                
+                $table = array();
+                echo '<td  data-src="./dist/filesdb/images/test.png">' . $articul .'</td>'; //Артикул
+                echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
+                // $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
+              }
+
+              /////////////////////
+
+             
+            
             } 
 
             
