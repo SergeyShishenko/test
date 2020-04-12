@@ -1566,10 +1566,12 @@ function PrintElem(elem)
 
                 for (var j = i+1; j < table.rows.length; j++){
 
-
-                        if ( parseFloat(table.rows[i].cells[3].innerHTML) ===  parseFloat(table.rows[j].cells[3].innerHTML) //СЕ                        
-                         && table.rows[i].cells[4].innerHTML === table.rows[j].cells[4].innerHTML //пос.
-                         && table.rows[i].cells[5].innerHTML === table.rows[j].cells[5].innerHTML //арт.
+                        // if ( String(table.rows[i].cells[3].innerHTML) ===  String(table.rows[j].cells[3].innerHTML) //СЕ 
+                        // if ( parseFloat(table.rows[i].cells[3].innerHTML) ===  parseFloat(table.rows[j].cells[3].innerHTML) //СЕ                        
+                        if ( table.rows[i].cells[2].innerHTML ===  table.rows[j].cells[2].innerHTML //СЕ                        
+                          && table.rows[i].cells[3].innerHTML ===  table.rows[j].cells[3].innerHTML //поз.                       
+                          && table.rows[i].cells[4].innerHTML ===  table.rows[j].cells[4].innerHTML //арт.
+                          && table.rows[i].cells[5].innerHTML ===  table.rows[j].cells[5].innerHTML //наименование.
                          ) {
                         
                         table.rows[i].cells[9].innerHTML=parseInt(table.rows[i].cells[9].innerHTML, 10) + parseInt(table.rows[j].cells[9].innerHTML, 10);                           
@@ -1586,6 +1588,9 @@ function PrintElem(elem)
                         }
                      
                  }//for
+                /////////////////////////////////
+                // table.rows[i].cells[2].innerHTML = table.rows[i].cells[2].innerHTML +"( "+parseFloat( table.rows[i].cells[2].innerHTML)+ " )"; //СЕ                        
+                //////////////////////////////////
                 i++;  
             }//while
             return res ;
