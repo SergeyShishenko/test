@@ -12,10 +12,13 @@
         dist\js\сontextMenu.js
         dist\js\drop.js
         dist\filesdb\images\mov01g4_TIPON.png
+        dist\filesdb\images\T51_7601.png
 
         vpi\getxlsx-bazis-specification4.php
         vpi\getDataBaseVPI.php
         vpi\templates\blank.xls
+
+        furnitura-dlya-mebeli-movento.php
 
         
 
