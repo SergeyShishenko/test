@@ -17,6 +17,7 @@
         dist\filesdb\images\mov.png
         dist\filesdb\images\val_tip-on.png
         dist\filesdb\images\shesterny_tip-on.png
+        dist\filesdb\images\mov-tip-on.png
 
         vpi\getxlsx-bazis-specification4.php
         vpi\getDataBaseVPI.php
