@@ -119,6 +119,22 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'tilde'=>"ыз3",
                     'def'=>"№13. ДП и образцы невозможно изготовить - отметки в Чек-листе"];
 
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
+                    'id'=> "#addition14",
+                    'img'=> $path_img."tbstest.png",
+                    'video'=> $path_video."14.mp4",
+                    'keywords'=>"SP3 (дополнение 14) - СТАТУС ДП значки",
+                    'tilde'=>"ыз3",
+                    'def'=>"№14. СТАТУС ДП значки"];
+
+    $SP3[]=['path'=>"metodichki-SofiaPro3.php",
+                    'id'=> "#addition15",
+                    'img'=> $path_img."tbstest.png",
+                    'video'=> $path_video."15.mp4",
+                    'keywords'=>"SP3 (дополнение 15) - Входная информация от заказчика, Обмеры, ТЗ для проектирования",
+                    'tilde'=>"ыз3",
+                    'def'=>"№15. Входная информация от заказчика, Обмеры, ТЗ для проектирования"];
+
 
     $SP3[]=['path'=>"metodichki-SofiaPro3.php",
                     'id'=> "#addition16",
