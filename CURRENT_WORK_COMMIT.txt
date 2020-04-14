@@ -13,6 +13,10 @@
         dist\js\drop.js
         dist\filesdb\images\mov01g4_TIPON.png
         dist\filesdb\images\T51_7601.png
+        dist\filesdb\images\PK2.png
+        dist\filesdb\images\mov.png
+        dist\filesdb\images\val_tip-on.png
+        dist\filesdb\images\shesterny_tip-on.png
 
         vpi\getxlsx-bazis-specification4.php
         vpi\getDataBaseVPI.php

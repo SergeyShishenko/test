@@ -28,7 +28,7 @@ if (isset($_POST["del"])) {
 ?>
 <!-- <menu class="menu-cm" id="contextmenu">     -->
 
-<?php if (strpos($table[0]['unit_obj_prop'], 'комплект') !== false ){
+<?php if (strpos($table[0]['unit_obj_prop'], 'комплект') !== false && $table[0]['obj_indivisible_complect']!=1){
 
 	$query = "SELECT * FROM `obj_owner_furnitur` WHERE `owner_obj_furnitur_prop_id` = {?}";
 	$composit = $db->select($query, array($id)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
