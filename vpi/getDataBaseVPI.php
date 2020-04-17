@@ -47,13 +47,19 @@ if (isset($_POST["del"])) {
 			$clist = $db->select($query, array($composit[$i]['obj_furnitur_prop_id']));
 			$imgfurncurr = $clist[0]['fname_img_furn'];
 			$imgfurncurr = isset($imgfurncurr) ? $imgfurncurr : './dist/filesdb/images/test.png';
+			$objurl=$clist[0]['url_furnitur_obj_prop'];
+			if (is_null($objurl)){
+				$objurl="javascript:void(0)";
+			}else{
+				$objurl="".$objurl.'" target="_blank"';
+			}
 		?>
 			<li class="menu-item-cm">
 				<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);" title="<?php echo $clist[0]['def_obj_prop'];?>">                       
 					<span class="menu-text-cm clip"><?php echo $clist[0]['def_obj_prop'];?></span>
 				</button>
 				<img style="display:none;" class="togg"  src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
-				<p class="menu-p"><a href="#"><?php echo $clist[0]['articul_furnitur_obj'];?>; ID-<?php echo $clist[0]['obj_furnitur_prop_id'];?></a></p>
+				<p class="menu-p"><a href="<?php echo $objurl;?>"><?php echo $clist[0]['articul_furnitur_obj'];?></a></p>
 			</li>
 		<?php } ?>
 		</menu>
@@ -78,13 +84,19 @@ if (isset($_POST["del"])) {
 				$clist = $db->select($query, array($Be_a_part[$i]['owner_obj_furnitur_prop_id']));
 				$imgfurncurr = $clist[0]['fname_img_furn'];
 				$imgfurncurr = isset($imgfurncurr) ? $imgfurncurr : './dist/filesdb/images/test.png';
+				$objurl=$clist[0]['url_furnitur_obj_prop'];
+				if (is_null($objurl)){
+					$objurl="javascript:void(0)";
+				}else{
+					$objurl="".$objurl.'" target="_blank"';
+				}
 			?>
 				<li class="menu-item-cm">
 					<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);" title="<?php echo $clist[0]['def_obj_prop'];?>">                       
 						<span class="menu-text-cm clip"><?php echo $clist[0]['def_obj_prop'];?></span>
 					</button>
 					<img style="display:none;" class="togg" src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $clist[0]['def_obj_prop'];?>" >
-					<p class="menu-p"><a href="#"><?php echo $clist[0]['articul_furnitur_obj'];?>; ID-<?php echo $clist[0]['obj_furnitur_prop_id'];?></a></p>
+					<p class="menu-p"><a href="<?php echo $objurl;?>"><?php echo $clist[0]['articul_furnitur_obj'];?></a></p>
 				</li>
 			<?php } ?>
 			</menu>			
@@ -111,13 +123,19 @@ if (isset($_POST["del"])) {
 				$ulist = $db->select($query, array($used_with[$i]['obj_furnitur_prop_id']));
 				$imgfurncurr = $ulist[0]['fname_img_furn'];
 				$imgfurncurr = isset($imgfurncurr) ? $imgfurncurr : './dist/filesdb/images/test.png';
+				$objurl=$ulist[0]['url_furnitur_obj_prop'];
+				if (is_null($objurl)){
+					$objurl="javascript:void(0)";
+				}else{
+					$objurl="".$objurl.'" target="_blank"';
+				}
 			?>
 				<li class="menu-item-cm">
 					<button type="button" class="menu-btn-cm img-sub" onclick="buttonToggle(this);" title="<?php echo $ulist[0]['def_obj_prop'];?>">                       
 						<span class="menu-text-cm clip"><?php echo $ulist[0]['def_obj_prop'];?></span>
 					</button>
 					<img style="display:none;" class="togg" src="<?php echo $imgfurncurr;?>"  width="200"  alt="<?php echo $ulist[0]['def_obj_prop'];?>" >
-					<p class="menu-p"><a href="#"><?php echo $ulist[0]['articul_furnitur_obj'];?>; ID-<?php echo $ulist[0]['obj_furnitur_prop_id'];?></a></p>
+					<p class="menu-p"><a href=<?php echo $objurl;?>><?php echo $clist[0]['articul_furnitur_obj'];?></a></p>
 				</li>
 			<?php } ?>
 			</menu>				
