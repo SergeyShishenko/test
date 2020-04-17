@@ -94,7 +94,7 @@
 
         <div class="input-group">
             <span class="input-group-addon cls">X</span>
-            <input type="text" value="test.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла изображения" id="NameFile" title="Имя файла изображения">       
+            <input type="text" value="./dist/filesdb/images/test.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла изображения" id="NameFile" title="Имя файла изображения">       
         </div>
 
         <select id="grupp_id" name="add_grupp_id" class="text add form-control" title="Номер группы (1-МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ,2-ПЕТЛИ для ФАСАДОВ, 3-КРЕПЕЖ И МЕТИЗЫ, 4-ШТАНГИ МЕБЕЛЬНЫЕ) " >
@@ -144,14 +144,15 @@
             <option value="алюминий">алюминий</option>
             <option value="сталь">сталь</option>
             <option value="Оцинкованный" >Оцинкованный</option>
+            <option value="Никелиров." >Никелиров.</option>
             <option value="металл" >металл</option>
         </datalist>
 
         <input type="text" list="listUnit" id="Unit" class="text add form-control" placeholder="Ед.измерения">
         <datalist id="listUnit" name="add_Unit"  title="Ед.измерения" >
-            <option value="шт." >Шт.</option>
-            <option value="комплектов">Комплект</option>
-            <option value="м" >Метр</option> 
+            <option value="шт." >шт.</option>
+            <option value="комплектов">комплектов</option>
+            <option value="м" >м</option> 
         </datalist>
 
 
