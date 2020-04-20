@@ -24,6 +24,7 @@
         dist\filesdb\images\70_1503.png
         dist\filesdb\images\70_1663.png
         dist\filesdb\images\70_4503.png
+        dist\filesdb\images\175H9160.png
 
         vpi\getxlsx-bazis-specification4.php
         vpi\getDataBaseVPI.php
