@@ -196,6 +196,7 @@ if(count($array_furn)!=0){
     $('#blankVPI').find('span.loading-gen').css({'top':'110%'});
     $('#blankVPI').find('span.submit-gen').show();
     $('#blankVPI').hide();
+    $('#DelSubmit').show();
     </script>
     ";
 
@@ -303,7 +304,8 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
             $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() ? $countFurn=$sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() : $countFurn=1;
             
             echo '<td>' . $countFurn .'</td>';  // Кол-во
-            echo '<td title="ID-' . $table[0]['obj_furnitur_prop_id'] .'">ID-' . $table[0]['obj_furnitur_prop_id'] . '  ' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  // Примечание
+            $table[0]['obj_furnitur_prop_id'] ? $titleNote=' title="ID-' . $table[0]['obj_furnitur_prop_id'] .'"' : $titleNote='';
+            echo '<td ' . $titleNote .'>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  // Примечание
             // $dataType = DType::TYPE_STRING;
              
           // }          

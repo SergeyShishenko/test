@@ -528,9 +528,11 @@
                         // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
                         console.log(response);
                         $('#drop-files').show();
+                        $('#blankVPI').show();
                         $('#table-saved-files').show();
-                        $("#order_table tbody tr:visible").first().addClass('pressedTime');
+                        $("#order_table tbody tr:visible").first().addClass('pressedTime');                        
                         $('#search_order').focus();
+                        
                         // setTimeout(function () {                            
                         //     // $("#order_table tbody tr:visible").first().addClass('pressedTime');
                         //     $('#search_order').focus();
