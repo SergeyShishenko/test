@@ -5,9 +5,11 @@
         inc\inc-footer.php
         inc\inc-version-css-js.php
         inc\inc-left-side-menu-shablony-dokumentov.php
+        inc\inc-head.php
 
         dist\css\сontextMenu.css
         dist\css\ajax-loader-7.gif
+        dist\css\vpiDB-search.css
 
         dist\js\сontextMenu.js
         dist\js\drop.js
