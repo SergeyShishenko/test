@@ -1196,7 +1196,7 @@ $("body").on('click','.btn', function() {
 
 
 
-$("body").on('click','.button-gen:not(".finished-gen")', function() {
+$("body").on('click','.button-gen:not(".finished-gen"):not("#blankVPI")', function() {
 
     
 // принудительный ввод значений input
@@ -1231,6 +1231,13 @@ $("body").on('click','.button-gen:not(".finished-gen")', function() {
      }
     $( this ).toggleClass( "active-gen" );
     
+});
+
+$("body").on('click','#blankVPI', function() {
+
+    $(this).find('span.submit-gen').hide();
+    $(this).find('span.loading-gen').css({"top":"5px"});
+
 });
 
 dataArrayTitle={};
@@ -1277,7 +1284,7 @@ dataArrayTitle={};
         $( this ).toggleClass( "active-gen" );
     });
 
-    $("body").on('transitionend','.button-gen', function() {
+    $("body").on('transitionend','.button-gen:not(".vpi-gen")', function() {
         $( this ).addClass( "finished-gen" );
     });
 // после генерации end   
@@ -1612,10 +1619,11 @@ function PrintElem(elem)
             success:function(response){
             // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
             console.log(response); 
-            //$('#vpibazis').removeClass('button-gen');
-            $('#vpibazis').attr('href', 'vpi/WRITE/'+response);
-            //var desc = response.split('~'); 
-            $('#vpibazis').attr('download', response);
+            
+            $('#vpibazis').attr('href', 'vpi/WRITE/'+response).attr('download', response).addClass( "finished-gen" );
+           
+            // $('#vpibazis').attr('download', response);
+            // $('#vpibazis').addClass( "finished-gen" );
             },
             error:function (xhr, ajaxOptions, thrownError){
             //выводим ошибку

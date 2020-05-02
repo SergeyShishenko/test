@@ -48,9 +48,15 @@
                                 <div id="out_CNC"></div>
                                 <input type="button" value="Печать CNC" onclick="PrintElem('#out_CNC')" />
                                 <input type="button" value="Очистить" onclick="Reset('#out_CNC')" />
-                                <input type="button" value="Пустой бланк ВПИ" onclick="blankVPI()" />
+                                
                                 <?php } ?>
+                                <!-- <input type="button" value="Пустой бланк ВПИ" onclick="blankVPI()" /> -->
 
+                                <a class='button-gen' id='blankVPI' href='javascript:void(0)' type='button' onclick="blankVPI()" style="float: left;">
+                                    <span class='submit-gen' >Пустой бланк ВПИ</span>				
+                                    <span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
+                                    <!-- <span class='check-gen' title='ВПИ'><i>Скачать</i></span> -->
+                                </a>
                                 <? include 'vpi/inc-list-csv.php'; ?>
                                 
                                 <!-- /table-saved-files -->
