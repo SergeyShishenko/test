@@ -2,3 +2,21 @@
 .edit-controls {
     position: absolute;
   }
+  #add_search_Furn,.add-search-Furn{
+    width: 100% !important;
+    width: -moz-available !important;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available !important;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available !important;
+    width: available !important;
+    
+  }
+  .add-search-Furn{
+    box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3), 0 -0.5em 10px rgba(100,100,100,0.3);
+  }
+  /* .glyphicon:empty {
+    width: auto  !important;
+} */
+.tblsearch{
+max-height: 340px;
+overflow: auto;
+}

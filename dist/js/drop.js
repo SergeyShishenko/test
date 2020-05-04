@@ -1369,6 +1369,12 @@ $('#GENModal').on('show.bs.modal', function () {
   
     //    $('input#search_order').trigger('focus');
     // $('input#search_order').focus();
+    
+    var h=window.innerHeight  || outerHeight  || document.documentElement.clientHeight  || document.body.clientHeight;
+    console.log('Высота экрана '+ h);
+    var mb= h-150;
+    $('#GENModal > div.modal-dialog').css({'margin-bottom' : mb+'px'});
+
     $.each($("#order_table tbody tr"), function() {
         $(this).removeClass('pressedTime');                   
     });
