@@ -16,7 +16,7 @@
   /* .glyphicon:empty {
     width: auto  !important;
 } */
-.tblsearch{
+.divtblsearch{
 max-height: 340px;
 overflow: auto;
 }

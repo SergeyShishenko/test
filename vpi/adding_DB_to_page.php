@@ -9,7 +9,9 @@ $query = "SELECT * FROM `obj_furnitur_prop`";
 	 if ($tblDB){ 
         for($i=0;$i<count($tblDB);$i++) {  
             echo '<tr>';           
-                // echo '<td>'.($i+1).'</td>';
+                // echo '<td>'.($i+1).'</td>';               
+                // echo '<td>ID-'.$tblDB[$i]['obj_furnitur_prop_id'].'</td>';               
+                echo '<td><img src="'.$tblDB[$i]['fname_img_furn'].'" alt="imgDB" style="width: 100px;"></td>';
                 echo '<td>'.$tblDB[$i]['articul_furnitur_obj'].'</td>';
                 echo '<td>'.$tblDB[$i]['name_furnitur_obj_prop'].'</td>';
             echo '</tr>';
