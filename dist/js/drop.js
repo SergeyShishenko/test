@@ -1305,7 +1305,21 @@ $( "body" ).keyup(function( event ){
         // console.log(event.keyCode);
         if(event.keyCode == 13){
             // alert();
-            console.log( $("#order_table tbody tr").is(".pressedTime"));
+            // console.log( $("#order_table tbody tr").is(".pressedTime"));
+            // console.log( $("#tblsearch tbody tr").is(".pressedTime"));
+
+            // ввод даных из таблице DB vpi
+        if ($("#tblsearch tbody tr").is(".pressedTime"))
+            {
+               console.log($('.sel3').attr('id'));
+               console.log($('.pressedTime ').data('id'));
+            //    childNodes[4]
+            var ch =document.getElementById($('.sel3').attr('id'));
+            ch.childNodes[4].innerText=$('.pressedTime ').data('articul');
+               
+               
+            }
+
         if ($("#order_table tbody tr").is(".pressedTime"))
             {
                 
@@ -1653,14 +1667,6 @@ function blankVPI(){
         $('#table-saved-files').hide(); 
         // $('#uploaded-files');     
         $('#uploaded-files').show().append(data);
-    }); 
-    
-}
- 
-function addingDB(){   
-    $.post('./vpi/adding_DB_to_page.php',  function(data) {
-      
-        $('#addingDB').append(data);
     }); 
     
 }

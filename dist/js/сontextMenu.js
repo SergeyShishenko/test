@@ -88,7 +88,7 @@ function onContextMenu(e){
     showMenu(e.pageX, e.pageY);
     
 
-    getDataBaseVPI(e.target.closest('tr').childNodes[4].id,e.target.closest('tr').id)
+    getDataBaseVPI(e.target.closest('tr').childNodes[4].dataset.id,e.target.closest('tr').id)
     tr=e.target.closest('tr').classList.add('sel');
     menu.classList.add('show-menu-cm');
     // document.getElementById('del').dataset.element=e.target.closest('tr').id;   

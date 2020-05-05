@@ -38,7 +38,8 @@ function addSearch(e){
   $(e).closest('tr').after('<tr class="trsearch"><td colspan="11">'+
                                  '<div class="input-group add-search-Furn" style="margin-top: 10px;">'+
                                  '<span class="input-group-addon glyphicon glyphicon-search " aria-hidden="true"  style="top: 0px;"></span>'+
-                                 '<input type="text" value="'+inputVal+'" name="add_search_Furn" class="form-control" placeholder="Наименование фурнитуры или артикул"  id="add_search_Furn">'+         
+                                 '<input type="text" value="'+inputVal+'" name="add_search_Furn" class="form-control" placeholder="Наименование фурнитуры или артикул"  id="add_search_Furn">'+ 
+                                 '<span class="input-group-addon" style="cursor:pointer;" onclick="trsearchRemove();removeSel2(\'sel3\');">X</span>'+        
                                  '</div><div  class="divtblsearch"><table class=" table table-striped" id="tblsearch">'+
                                   $("#addingDB").html() +
                               '</table></div></td></td></tr>');
@@ -51,7 +52,8 @@ function addSearch(e){
                                 else
                                 $(this).show(); 
                                 //    console.log(':visible ' +$(this).is(':visible'));               
-                            });                         
+                            });   
+                            $("#tblsearch tbody tr:visible").first().addClass('pressedTime');                      
 }
 
 
@@ -69,12 +71,15 @@ $("body").on('keyup',"#add_search_Furn",function(event){
     if(event.keyCode != 13){
         $.each($("#tblsearch tbody tr"), function() {
             $(this).removeClass('pressedTime');
-            if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+            if($(this).text().toLowerCase().indexOf($(_this).val().trim().toLowerCase()) === -1 || $(_this).val().trim()=="" )
             $(this).hide();
             else
             $(this).show(); 
             //    console.log(':visible ' +$(this).is(':visible'));               
         });
+    }else{
+        console.log('key Enter'); 
+        console.log($('.sel3').data('id'));
     }
     // console.log(':visible search ' + $("#tblsearch tbody tr:visible").length);
     // console.log($("#tblsearch tbody tr:visible").first().find("td:eq(1)").text());
@@ -82,37 +87,18 @@ $("body").on('keyup',"#add_search_Furn",function(event){
  
    
 });
-// function searchChange(event){
-//   event.preventDefault();
-//   _this = this;
-//   console.log(event.keyCode);
-//   console.log('_this '+$(this).text());
-//   // alert();
+
+
+$("body").on("dblclick","#tblsearch tbody td",function(){
   
-//   console.log(event.keyCode);
-//   if(event.keyCode != 13){
-//       $.each($("#tblsearch tbody tr"), function() {
-//           $(this).removeClass('pressedTime');
-//           if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
-//           $(this).hide();
-//           else
-//           $(this).show(); 
-//           //    console.log(':visible ' +$(this).is(':visible'));               
-//       });
-//   }
-//   console.log(':visible search ' + $("#tblsearch tbody tr:visible").length);
-//   console.log($("#tblsearch tbody tr:visible").first().find("td:eq(1)").text());
-//   $("#tblsearch tbody tr:visible").first().addClass('pressedTime');
-
- 
-// };
-
-
-$("#tblsearch tbody td").dblclick(function(){
-    fnselcsv($(this).parent().find("td:eq(1)").text());
+    console.log('dblclick')
+    // fnselcsv($(this).parent().find("td:eq(1)").text());
     
 });
-$("#tblsearch tbody td").click(function(){
+
+$("body").on("click","#tblsearch tbody td",function(){
+
+    console.log('click')
 
     $.each($("#tblsearch tbody tr"), function() {
         $(this).removeClass('pressedTime');                   
@@ -120,3 +106,16 @@ $("#tblsearch tbody td").click(function(){
     
     $(this).parent().addClass('pressedTime');
   });
+
+  function trsearchRemove(){
+      $('.trsearch').remove();
+  }
+  function addingDB(){  
+    $('#addingDB').empty();
+    $.post('./vpi/adding_DB_to_page.php',  function(data) {
+      
+        $('#addingDB').append(data);
+    }); 
+    
+}
+ 
