@@ -23,3 +23,6 @@ overflow: auto;
 #addingDB{
   display: none;
 }
+#tblsearch{
+  font-size: 18px;
+}

@@ -7,7 +7,7 @@ $("body").on('click', 'table#tblVPI tr td:nth-child(5):not(.edit),table#tblVPI t
     $(td).addClass('edit');
     $(td).parent().addClass('sel2');
     td.insertAdjacentHTML("beforeEnd",
-    '<div class="edit-controls"><button class="edit-ok" onclick="addSearch(this)" data-val="'+$(td).text()+'">Поиск</button></div>'   
+    '<div class="edit-controls"><button class="edit-ok" onclick="addSearch(this)" data-val="'+$(td).text()+'">База данных</button></div>'   
   );
 });
 $("body").on('mouseleave', 'table#tblVPI tr td:nth-child(5),table#tblVPI tr td:nth-child(6)', function(e) {
@@ -40,7 +40,7 @@ function addSearch(e){
                                  '<span class="input-group-addon glyphicon glyphicon-search " aria-hidden="true"  style="top: 0px;"></span>'+
                                  '<input type="text" value="'+inputVal+'" name="add_search_Furn" class="form-control" placeholder="Наименование фурнитуры или артикул"  id="add_search_Furn">'+ 
                                  '<span class="input-group-addon" style="cursor:pointer;" onclick="trsearchRemove();removeSel2(\'sel3\');">X</span>'+        
-                                 '</div><div  class="divtblsearch"><table class=" table table-striped" id="tblsearch">'+
+                                 '</div><div  class="divtblsearch"><table class="zakaz table table-striped" id="tblsearch">'+
                                   $("#addingDB").html() +
                               '</table></div></td></td></tr>');
    
@@ -79,7 +79,7 @@ $("body").on('keyup',"#add_search_Furn",function(event){
         });
     }else{
         console.log('key Enter'); 
-        console.log($('.sel3').data('id'));
+        // console.log($('.sel3').data('id'));
     }
     // console.log(':visible search ' + $("#tblsearch tbody tr:visible").length);
     // console.log($("#tblsearch tbody tr:visible").first().find("td:eq(1)").text());
@@ -91,8 +91,15 @@ $("body").on('keyup',"#add_search_Furn",function(event){
 
 $("body").on("dblclick","#tblsearch tbody td",function(){
   
-    console.log('dblclick')
+    // console.log('dblclick')
     // fnselcsv($(this).parent().find("td:eq(1)").text());
+    var ch =document.getElementById($('.sel3').attr('id'));
+            ch.childNodes[4].innerText=$('.pressedTime ').data('articul');
+            ch.childNodes[5].innerText=$('.pressedTime ').data('name');
+            ch.childNodes[6].innerText=$('.pressedTime ').data('made');
+            ch.childNodes[7].innerText=$('.pressedTime ').data('color');
+            ch.childNodes[8].innerText=$('.pressedTime ').data('unit');
+            ch.childNodes[4].style.color = "green"; 
     
 });
 

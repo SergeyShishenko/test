@@ -259,7 +259,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
                   echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  // Наименование
                 }else{ //Если нет в БД
                   
-                  echo '<td data-src="./dist/filesdb/images/test.png">' . $articul .'</td>'; //Артикул
+                  echo '<td data-src="./dist/filesdb/images/test.png" style="color: rgb(51, 51, 51);">' . $articul .'</td>'; //Артикул
                   echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
                   // $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
                 }
@@ -275,7 +275,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
               }else{ //Если нет в БД
                 
                 $table = array();
-                echo '<td  data-src="./dist/filesdb/images/test.png">' . $articul .'</td>'; //Артикул
+                echo '<td  data-src="./dist/filesdb/images/test.png" style="color: rgb(51, 51, 51);">' . $articul .'</td>'; //Артикул
                 echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue() .'</td>';  // Наименование
                 // $made_furnitur = findStrByKeyword($sheet->getCellByColumnAndRow($arrIndex[5], $row)->getCalculatedValue(),$arr_keyword);// Поиск ключевого слова
               }
@@ -294,11 +294,11 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
 
             }else{ //данные, если есть
              
-              $table[0]['made_furnitur_obj'] ? $val ='<td>' .  $table[0]['made_furnitur_obj'] : $val = '<td style="color: green;">' .  $made_furnitur[0];
+              $table[0]['made_furnitur_obj'] ? $val ='<td>' .  $table[0]['made_furnitur_obj'] : $val = '<td >' .  $made_furnitur[0];
               echo $val .'</td>';  // Поставщик
-              $table[0]['color_obj_prop'] ? $val ='<td>' .  $table[0]['color_obj_prop'] : $val = '<td style="color: green;">' .  $made_furnitur[1];
+              $table[0]['color_obj_prop'] ? $val ='<td>' .  $table[0]['color_obj_prop'] : $val = '<td >' .  $made_furnitur[1];
               echo $val .'</td>';  // Цвет
-              $table[0]['unit_obj_prop'] ? $val ='<td>' .  $table[0]['unit_obj_prop'] : $val = '<td style="color: green;">' .  $made_furnitur[2];
+              $table[0]['unit_obj_prop'] ? $val ='<td>' .  $table[0]['unit_obj_prop'] : $val = '<td >' .  $made_furnitur[2];
               echo $val .'</td>';  // Ед.измерения
             }
 
