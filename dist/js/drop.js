@@ -1657,3 +1657,11 @@ function blankVPI(){
     
 }
  
+function addingDB(){   
+    $.post('./vpi/adding_DB_to_page.php',  function(data) {
+      
+        $('#addingDB').append(data);
+    }); 
+    
+}
+ 

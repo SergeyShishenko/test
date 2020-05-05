@@ -109,7 +109,9 @@
             </div>
         </div>
     </div>
-    <!-- /GENModal -->
+    <!-- /GENModal -->   
+    <div id="addingDB">        
+    </div>    
     <menu class="menu-cm" id="contextmenu">       
     </menu>
 <!-- /Генерация комплектов документов -->

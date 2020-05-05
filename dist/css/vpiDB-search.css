@@ -20,3 +20,6 @@
 max-height: 340px;
 overflow: auto;
 }
+#addingDB{
+  display: none;
+}

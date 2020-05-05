@@ -31,6 +31,7 @@
 
         vpi\getxlsx-bazis-specification4.php
         vpi\getDataBaseVPI.php
+        vpi\adding_DB_to_page.php
         vpi\templates\blank.xls
 
         furnitura-dlya-mebeli-movento.php

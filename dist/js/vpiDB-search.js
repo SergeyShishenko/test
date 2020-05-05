@@ -1,8 +1,6 @@
 // dist\js\vpiDB-search.js
-
 // $("body").on('mouseenter', 'table#tblVPI tr td:nth-child(5)', function(e) {
-$("body").on('click', 'table#tblVPI tr td:nth-child(5):not(.edit),table#tblVPI tr td:nth-child(6):not(.edit)', function(e) {
-    
+$("body").on('click', 'table#tblVPI tr td:nth-child(5):not(.edit),table#tblVPI tr td:nth-child(6):not(.edit)', function(e) {    
     // $('.trsearch').remove();
     var td =e.target;    
     // console.log( "handlerIn "+td.closest('tr').childNodes[4].id);
@@ -41,7 +39,7 @@ function addSearch(e){
                                  '<span class="input-group-addon glyphicon glyphicon-search " aria-hidden="true"  style="top: 0px;"></span>'+
                                  '<input type="text" value="'+$(e).data('val')+'" name="add_search_Furn" class="form-control" placeholder="Наименование фурнитуры или артикул"  id="add_search_Furn">'+         
                                  '</div><div  class="tblsearch"><table class=" table table-striped">'+
-                                  $("#order_table").html() +
+                                  $("#addingDB").html() +
                               '</table></div></td></td></tr>');
    
    

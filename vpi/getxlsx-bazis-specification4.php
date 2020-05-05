@@ -197,6 +197,7 @@ if(count($array_furn)!=0){
     $('#blankVPI').find('span.submit-gen').show();
     $('#blankVPI').hide();
     $('#DelSubmit').show();
+    addingDB();
     </script>
     ";
 
