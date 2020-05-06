@@ -1293,7 +1293,17 @@ dataArrayTitle={};
 
 
 
-
+function chsel3(ch){
+    ch.childNodes[4].innerText=$('.pressedTime').data('articul');            
+    ch.childNodes[5].innerText=$('.pressedTime').data('name');
+    ch.childNodes[6].innerText=$('.pressedTime').data('made');
+    ch.childNodes[7].innerText=$('.pressedTime').data('color');
+    ch.childNodes[8].innerText=$('.pressedTime').data('unit');
+    // console.log(ch.childNodes[4].style.color);
+    ch.childNodes[4].style.color = "green";
+    ch.childNodes[4].dataset.src = $('.pressedTime').data('src'); 
+    ch.childNodes[4].dataset.id = 'obj_'+$('.pressedTime').data('id');  
+}
 
 
 
@@ -1315,13 +1325,8 @@ $( "body" ).keyup(function( event ){
                console.log($('.pressedTime ').data('id'));
             //    childNodes[4]
             var ch =document.getElementById($('.sel3').attr('id'));
-            ch.childNodes[4].innerText=$('.pressedTime ').data('articul');            
-            ch.childNodes[5].innerText=$('.pressedTime ').data('name');
-            ch.childNodes[6].innerText=$('.pressedTime ').data('made');
-            ch.childNodes[7].innerText=$('.pressedTime ').data('color');
-            ch.childNodes[8].innerText=$('.pressedTime ').data('unit');
-            // console.log(ch.childNodes[4].style.color);
-            ch.childNodes[4].style.color = "green";   
+            chsel3(ch);
+             
                
             }
 

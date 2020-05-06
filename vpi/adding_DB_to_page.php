@@ -10,6 +10,7 @@ $query = "SELECT * FROM `obj_furnitur_prop`";
         for($i=0;$i<count($tblDB);$i++) {  
             echo '<tr data-id="'.$tblDB[$i]['obj_furnitur_prop_id'].'" 
             data-made="'.$tblDB[$i]['made_furnitur_obj'].'" 
+            data-src="'.$tblDB[$i]['fname_img_furn'].'" 
             data-articul="'.$tblDB[$i]['articul_furnitur_obj'].'" 
             data-name="'.$tblDB[$i]['name_furnitur_obj_prop'].'" 
             data-color="'.$tblDB[$i]['color_obj_prop'].'" 

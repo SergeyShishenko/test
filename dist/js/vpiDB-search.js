@@ -94,12 +94,7 @@ $("body").on("dblclick","#tblsearch tbody td",function(){
     // console.log('dblclick')
     // fnselcsv($(this).parent().find("td:eq(1)").text());
     var ch =document.getElementById($('.sel3').attr('id'));
-            ch.childNodes[4].innerText=$('.pressedTime ').data('articul');
-            ch.childNodes[5].innerText=$('.pressedTime ').data('name');
-            ch.childNodes[6].innerText=$('.pressedTime ').data('made');
-            ch.childNodes[7].innerText=$('.pressedTime ').data('color');
-            ch.childNodes[8].innerText=$('.pressedTime ').data('unit');
-            ch.childNodes[4].style.color = "green"; 
+    chsel3(ch);
     
 });
 
@@ -126,23 +121,40 @@ $("body").on("click","#tblsearch tbody td",function(){
     
 }
   function addingNewRow(){  
+    console.log('===============');
     // var tbl =document.querySelectorAll('#tblVPI');
     var table = document.getElementById('tblVPI');
     var rows = table.querySelectorAll('[id^=tr]');
     console.log(rows);
     console.log(rows.length);
-    
-    //  var tr=tbl.childNodes;
-    // console.log(tr);
-    for (i = 0; i < rows.length; i++) {
-        console.log(rows[i].id);
-        }
+    var prefId="tr";
+    var condition=false;
+    var j=0;
+    // var newId=prefId+j;
+    do {
+        j=j+1;
+        var newId=prefId+j;
+        console.log('Curr_newId '+newId);
+        for (i = 0; i < rows.length; i++) {
+            console.log(rows[i].id);            
+            console.log(newId==rows[i].id);            
+            if (newId==rows[i].id){
+                console.log('newId '+newId);
+                condition=true;  
+            }
+            
+        }        
+            
+    //   } while (condition);
+      } while (j<20 && condition );
+    console.log('newId '+newId);
+    condition=false;
     // for (i = 0; i < massiv.length; i++) {
     //     if (peremennaya == massiv[i]) {
     //     alert("Мы нашли "+massiv[i])
     //     }
     //     }
-    $('#tblVPI tr:last').after('<tr>'+
+    $('#tblVPI tr:last').after('<tr id="'+newId+'">'+
                                '<td></td>'+
                                '<td></td>'+
                                '<td></td>'+
@@ -152,10 +164,10 @@ $("body").on("click","#tblsearch tbody td",function(){
                                '<td></td>'+
                                '<td></td>'+
                                '<td></td>'+
-                               '<td></td>'+
+                               '<td>1</td>'+
                                '<td></td>'+
                                '</tr>');
    
-    
+document.querySelectorAll('#tblVPI  tr:not(.head-cm)').forEach(e => e.addEventListener('contextmenu', onContextMenu, false));  
 }
  
