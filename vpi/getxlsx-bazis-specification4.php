@@ -186,7 +186,10 @@ if(count($array_furn)!=0){
     <span class='loading-gen'><i class='fa fa-spinner fa-pulse '></i></span>				
     <span class='check-gen' title='ВПИ'><i>Скачать</i></span>
     </a>
-    <input type='hidden' id='product_output' value='ВПИ'>
+    <input type='hidden' id='product_output' value='ВПИ'> 
+    <input type=\"button\"  id='addingNewRow' value=\"Добавить строку\" onclick=\"addingNewRow()\" />
+    
+    
     <script>  
     // запуск объеденения строк
     Tclick();

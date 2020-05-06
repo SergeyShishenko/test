@@ -34,7 +34,7 @@ function addSearch(e){
   $('.trsearch').remove();
   removeSel2('sel3');
   $(e).closest('tr').addClass('sel3');
-  var inputVal=$(e).data('val').trim();
+  var inputVal=String($(e).data('val')).trim();
   $(e).closest('tr').after('<tr class="trsearch"><td colspan="11">'+
                                  '<div class="input-group add-search-Furn" style="margin-top: 10px;">'+
                                  '<span class="input-group-addon glyphicon glyphicon-search " aria-hidden="true"  style="top: 0px;"></span>'+
@@ -123,6 +123,39 @@ $("body").on("click","#tblsearch tbody td",function(){
       
         $('#addingDB').append(data);
     }); 
+    
+}
+  function addingNewRow(){  
+    // var tbl =document.querySelectorAll('#tblVPI');
+    var table = document.getElementById('tblVPI');
+    var rows = table.querySelectorAll('[id^=tr]');
+    console.log(rows);
+    console.log(rows.length);
+    
+    //  var tr=tbl.childNodes;
+    // console.log(tr);
+    for (i = 0; i < rows.length; i++) {
+        console.log(rows[i].id);
+        }
+    // for (i = 0; i < massiv.length; i++) {
+    //     if (peremennaya == massiv[i]) {
+    //     alert("Мы нашли "+massiv[i])
+    //     }
+    //     }
+    $('#tblVPI tr:last').after('<tr>'+
+                               '<td></td>'+
+                               '<td></td>'+
+                               '<td></td>'+
+                               '<td></td>'+
+                               '<td>-</td>'+
+                               '<td>-</td>'+
+                               '<td></td>'+
+                               '<td></td>'+
+                               '<td></td>'+
+                               '<td></td>'+
+                               '<td></td>'+
+                               '</tr>');
+   
     
 }
  
