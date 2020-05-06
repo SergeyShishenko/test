@@ -121,33 +121,34 @@ $("body").on("click","#tblsearch tbody td",function(){
     
 }
   function addingNewRow(){  
-    console.log('===============');
+    // console.log('===============');
     // var tbl =document.querySelectorAll('#tblVPI');
     var table = document.getElementById('tblVPI');
     var rows = table.querySelectorAll('[id^=tr]');
-    console.log(rows);
-    console.log(rows.length);
+    // console.log(rows);
+    // console.log(rows.length);
     var prefId="tr";
     var condition=false;
     var j=0;
     // var newId=prefId+j;
     do {
+        condition=false;
         j=j+1;
         var newId=prefId+j;
         console.log('Curr_newId '+newId);
         for (i = 0; i < rows.length; i++) {
-            console.log(rows[i].id);            
-            console.log(newId==rows[i].id);            
+            // console.log(rows[i].id);            
+            // console.log(newId==rows[i].id);            
             if (newId==rows[i].id){
-                console.log('newId '+newId);
+                // console.log('newId '+newId);
                 condition=true;  
             }
             
         }        
             
-    //   } while (condition);
-      } while (j<20 && condition );
-    console.log('newId '+newId);
+      } while (condition);
+    //   } while (j<20 && condition );
+    // console.log('newId '+newId);
     condition=false;
     // for (i = 0; i < massiv.length; i++) {
     //     if (peremennaya == massiv[i]) {
@@ -170,4 +171,17 @@ $("body").on("click","#tblsearch tbody td",function(){
    
 document.querySelectorAll('#tblVPI  tr:not(.head-cm)').forEach(e => e.addEventListener('contextmenu', onContextMenu, false));  
 }
- 
+function chsel3(ch){
+    
+    var pr=$('.pressedTime').last();
+    // console.log('pr '+$(pr));
+    ch.childNodes[4].innerText=pr.data('articul');            
+    ch.childNodes[5].innerText=pr.data('name');
+    ch.childNodes[6].innerText=pr.data('made');
+    ch.childNodes[7].innerText=pr.data('color');
+    ch.childNodes[8].innerText=pr.data('unit');
+    // console.log(ch.childNodes[4].style.color);
+    ch.childNodes[4].style.color = "green";
+    ch.childNodes[4].dataset.src = pr.data('src'); 
+    ch.childNodes[4].dataset.id = 'obj_'+pr.data('id');  
+}

@@ -1293,17 +1293,17 @@ dataArrayTitle={};
 
 
 
-function chsel3(ch){
-    ch.childNodes[4].innerText=$('.pressedTime').data('articul');            
-    ch.childNodes[5].innerText=$('.pressedTime').data('name');
-    ch.childNodes[6].innerText=$('.pressedTime').data('made');
-    ch.childNodes[7].innerText=$('.pressedTime').data('color');
-    ch.childNodes[8].innerText=$('.pressedTime').data('unit');
-    // console.log(ch.childNodes[4].style.color);
-    ch.childNodes[4].style.color = "green";
-    ch.childNodes[4].dataset.src = $('.pressedTime').data('src'); 
-    ch.childNodes[4].dataset.id = 'obj_'+$('.pressedTime').data('id');  
-}
+// function chsel3(ch){
+//     ch.childNodes[4].innerText=$('.pressedTime').data('articul');            
+//     ch.childNodes[5].innerText=$('.pressedTime').data('name');
+//     ch.childNodes[6].innerText=$('.pressedTime').data('made');
+//     ch.childNodes[7].innerText=$('.pressedTime').data('color');
+//     ch.childNodes[8].innerText=$('.pressedTime').data('unit');
+//     // console.log(ch.childNodes[4].style.color);
+//     ch.childNodes[4].style.color = "green";
+//     ch.childNodes[4].dataset.src = $('.pressedTime').data('src'); 
+//     ch.childNodes[4].dataset.id = 'obj_'+$('.pressedTime').data('id');  
+// }
 
 
 
@@ -1322,7 +1322,8 @@ $( "body" ).keyup(function( event ){
         if ($("#tblsearch tbody tr").is(".pressedTime"))
             {
                console.log($('.sel3').attr('id'));
-               console.log($('.pressedTime ').data('id'));
+               console.log($('.pressedTime').data('id'));
+               console.log($('.pressedTime'));
             //    childNodes[4]
             var ch =document.getElementById($('.sel3').attr('id'));
             chsel3(ch);
@@ -1675,6 +1676,9 @@ function blankVPI(){
       
         $('#drop-files').hide();
         $('#table-saved-files').hide(); 
+        $.each($("#tblsearch tbody tr"), function() {
+            $(this).removeClass('pressedTime');                   
+        });
         // $('#uploaded-files');     
         $('#uploaded-files').show().append(data);
     }); 
