@@ -1,6 +1,6 @@
 // dist\js\vpiDB-search.js
 // $("body").on('mouseenter', 'table#tblVPI tr td:nth-child(5)', function(e) {
-$("body").on('click', 'table#tblVPI tr td:nth-child(5):not(.edit),table#tblVPI tr td:nth-child(6):not(.edit)', function(e) {    
+$("body").on('click', 'table#tblVPI tr:not(.head-cm) td:nth-child(5):not(.edit),table#tblVPI tr:not(.head-cm) td:nth-child(6):not(.edit)', function(e) {    
     // $('.trsearch').remove();
     var td =e.target;    
     // console.log( "handlerIn "+td.closest('tr').childNodes[4].id);
@@ -33,6 +33,7 @@ function removeSel2(sel){
 function addSearch(e){
   $('.trsearch').remove();
   removeSel2('sel3');
+  $('#addingNewRow').hide(); 
   $(e).closest('tr').addClass('sel3');
   var inputVal=String($(e).data('val')).trim();
   $(e).closest('tr').after('<tr class="trsearch"><td colspan="11">'+
@@ -67,7 +68,7 @@ $("body").on('keyup',"#add_search_Furn",function(event){
     // console.log('_this '+$(this).text());
     // alert();
     
-    console.log(event.keyCode);
+    // console.log(event.keyCode);
     if(event.keyCode != 13){
         $.each($("#tblsearch tbody tr"), function() {
             $(this).removeClass('pressedTime');
@@ -78,7 +79,7 @@ $("body").on('keyup',"#add_search_Furn",function(event){
             //    console.log(':visible ' +$(this).is(':visible'));               
         });
     }else{
-        console.log('key Enter'); 
+        // console.log('key Enter'); 
         // console.log($('.sel3').data('id'));
     }
     // console.log(':visible search ' + $("#tblsearch tbody tr:visible").length);
@@ -100,7 +101,7 @@ $("body").on("dblclick","#tblsearch tbody td",function(){
 
 $("body").on("click","#tblsearch tbody td",function(){
 
-    console.log('click')
+    // console.log('click')
 
     $.each($("#tblsearch tbody tr"), function() {
         $(this).removeClass('pressedTime');                   
@@ -111,6 +112,7 @@ $("body").on("click","#tblsearch tbody td",function(){
 
   function trsearchRemove(){
       $('.trsearch').remove();
+      $('#addingNewRow').show(); 
   }
   function addingDB(){  
     $('#addingDB').empty();
@@ -135,7 +137,7 @@ $("body").on("click","#tblsearch tbody td",function(){
         condition=false;
         j=j+1;
         var newId=prefId+j;
-        console.log('Curr_newId '+newId);
+        // console.log('Curr_newId '+newId);
         for (i = 0; i < rows.length; i++) {
             // console.log(rows[i].id);            
             // console.log(newId==rows[i].id);            
@@ -156,8 +158,8 @@ $("body").on("click","#tblsearch tbody td",function(){
     //     }
     //     }
     $('#tblVPI tr:last').after('<tr id="'+newId+'">'+
-                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"></td>'+
-                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"></td>'+
+                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()" onfocusout="GlobalOrderProduct()">'+GlobalOrder+'</td>'+
+                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"  onfocusout="GlobalOrderProduct()">'+GlobalProduct+'</td>'+
                                '<td></td>'+
                                '<td></td>'+
                                '<td>-</td>'+
@@ -189,5 +191,15 @@ function chsel3(ch){
 function onlyNumberInt(){
     if (event.keyCode != 43 && event.keyCode < 48 || event.keyCode > 57)
     event.preventDefault();
+}
+var GlobalOrder;
+var GlobalProduct;
+function GlobalOrderProduct(){
+    
+    GlobalOrder=$('#tblVPI').find('tr:nth-child(2)').find('td:nth-child(1)').text();
+    GlobalProduct=$('#tblVPI').find('tr:nth-child(2)').find('td:nth-child(2)').text();
+
+    // console.log("Заказ "+GlobalOrder);
+    // console.log("Изделие "+GlobalProduct);
 }
  

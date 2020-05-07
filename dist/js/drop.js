@@ -1639,6 +1639,8 @@ function PrintElem(elem)
 
 
     $('body').on('click','#vpibazis:not(".finished-gen")', function() {
+        trsearchRemove();
+        removeSel2('sel3');
         arrdata = {};
         Tclick();
 
@@ -1672,19 +1674,20 @@ function PrintElem(elem)
 function triggerClick(){    
     $('#GENModal').modal('show');
 }
-function blankVPI(){ 
+function blankVPI(){   
+    
 
     $.each($("#order_table tbody tr"), function() {
         $(this).removeClass('pressedTime');                   
     });
 
-    $('#order_table').hide(); 
+    $('#table-saved-files').hide(); 
 
      
     $.post('./vpi/getxlsx-bazis-specification4.php',  function(data) {
       
         $('#drop-files').hide();
-        $('#table-saved-files').hide(); 
+        // $('#table-saved-files').hide(); 
         $.each($("#tblsearch tbody tr"), function() {
             $(this).removeClass('pressedTime');                   
         });

@@ -200,6 +200,7 @@ if(count($array_furn)!=0){
     $('#blankVPI').hide();
     $('#DelSubmit').show();
     addingDB();
+    GlobalOrderProduct();
     </script>
     ";
 
@@ -235,15 +236,18 @@ function get_colomn_index($cell){
 function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i,$arr_keyword=array("САМОРЕЗ ", "ШУРУП", "КОНФИРМАТ")){  
 
   // $arr=array();
-  ($row==$start_num && $i===0) ? $head=" class='head-cm' " : $head="" ;
+  ($row==$start_num && $i===0) ? $head=" class='head-cm' "  : $head="" ;
+  ($head=="") ? $contenteditable=" contenteditable='true' onKeyPress='onlyNumberInt()' "  : $contenteditable="" ;
+
+  // $contenteditable=""
   $id="tr".$row."\"";
   
   echo '<tr id="'.$id. $head .'>'; 
          
             $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() : $val = $Order;//Заказ
-            echo '<td  contenteditable=\'true\' onKeyPress="onlyNumberInt()">' . $val .'</td>';  //1
+            echo '<td  '.$contenteditable.'>' . $val .'</td>';  //1
             $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() : $val = $Product;//Изделие
-            echo '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">' . $val .'</td>';  //2
+            echo '<td '.$contenteditable.'>' . $val .'</td>';  //2
             // $posPart = $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue();
             if ($row==$start_num && $i===0){
              $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() ? $posPart = $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() : $posPart ="Поз."; 
