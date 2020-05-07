@@ -156,8 +156,8 @@ $("body").on("click","#tblsearch tbody td",function(){
     //     }
     //     }
     $('#tblVPI tr:last').after('<tr id="'+newId+'">'+
-                               '<td></td>'+
-                               '<td></td>'+
+                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"></td>'+
+                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"></td>'+
                                '<td></td>'+
                                '<td></td>'+
                                '<td>-</td>'+
@@ -165,7 +165,7 @@ $("body").on("click","#tblsearch tbody td",function(){
                                '<td></td>'+
                                '<td></td>'+
                                '<td></td>'+
-                               '<td>1</td>'+
+                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">1</td>'+
                                '<td></td>'+
                                '</tr>');
    
@@ -185,3 +185,9 @@ function chsel3(ch){
     ch.childNodes[4].dataset.src = pr.data('src'); 
     ch.childNodes[4].dataset.id = 'obj_'+pr.data('id');  
 }
+
+function onlyNumberInt(){
+    if (event.keyCode != 43 && event.keyCode < 48 || event.keyCode > 57)
+    event.preventDefault();
+}
+ 

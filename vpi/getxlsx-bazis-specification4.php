@@ -241,9 +241,9 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
   echo '<tr id="'.$id. $head .'>'; 
          
             $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[0], $row)->getCalculatedValue() : $val = $Order;//Заказ
-            echo '<td>' . $val .'</td>';  //1
+            echo '<td  contenteditable=\'true\' onKeyPress="onlyNumberInt()">' . $val .'</td>';  //1
             $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() ? $val = $sheet->getCellByColumnAndRow($arrIndex[1], $row)->getCalculatedValue() : $val = $Product;//Изделие
-            echo '<td>' . $val .'</td>';  //2
+            echo '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">' . $val .'</td>';  //2
             // $posPart = $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue();
             if ($row==$start_num && $i===0){
              $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() ? $posPart = $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() : $posPart ="Поз."; 
@@ -306,7 +306,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
 
             $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() ? $countFurn=$sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() : $countFurn=1;
             
-            echo '<td>' . $countFurn .'</td>';  // Кол-во
+            echo '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">' . $countFurn .'</td>';  // Кол-во
             $table[0]['obj_furnitur_prop_id'] ? $titleNote=' title="ID-' . $table[0]['obj_furnitur_prop_id'] .'"' : $titleNote='';
             echo '<td ' . $titleNote .'>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  // Примечание
             // $dataType = DType::TYPE_STRING;

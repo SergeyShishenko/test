@@ -529,6 +529,7 @@
                         console.log(response);
                         $('#drop-files').show();
                         $('#blankVPI').show();
+                        $('#order_table').show();
                         $('#table-saved-files').show();
                         $("#order_table tbody tr:visible").first().addClass('pressedTime');                        
                         $('#search_order').focus();
@@ -1236,7 +1237,7 @@ $("body").on('click','.button-gen:not(".finished-gen"):not("#blankVPI")', functi
 });
 
 $("body").on('click','#blankVPI', function() {
-
+    
     $(this).find('span.submit-gen').hide();
     $(this).find('span.loading-gen').css({"top":"5px"});
 
@@ -1671,7 +1672,15 @@ function PrintElem(elem)
 function triggerClick(){    
     $('#GENModal').modal('show');
 }
-function blankVPI(){   
+function blankVPI(){ 
+
+    $.each($("#order_table tbody tr"), function() {
+        $(this).removeClass('pressedTime');                   
+    });
+
+    $('#order_table').hide(); 
+
+     
     $.post('./vpi/getxlsx-bazis-specification4.php',  function(data) {
       
         $('#drop-files').hide();
@@ -1684,4 +1693,5 @@ function blankVPI(){
     }); 
     
 }
- 
+
+
