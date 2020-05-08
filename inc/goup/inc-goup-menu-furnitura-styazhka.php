@@ -49,22 +49,22 @@ $path_img="./dist/filesdb/images/thumbs/";
                     'id'=> "#konicheskaya-d10",
                     'img'=> $path_img."tbskonicheskaya-styazhka.png",
                     'keywords'=>"",
-                    'def'=>"Стяжка коническая D10 для плит толщиной от 25 мм (односторонняя)"];
+                    'def'=>"Стяжка коническая D10 для плит толщиной от 25 мм (односторонняя) 5000502-07-710"];
     $styazhka[8]=['path'=>"furnitura-dlya-mebeli-styazhka-konicheskaya-dvuhstoronnyaya-d10-t25.php",
                     'id'=> "#konicheskaya-dvuhstoronnyaya-d10",
                     'img'=> $path_img."tbskonicheskaya-styazhka2.png",
                     'keywords'=>"",
-                    'def'=>"Стяжка коническая D10 для плит толщиной от 25 мм (двухсторонняя)"];
+                    'def'=>"Стяжка коническая D10 для плит толщиной от 25 мм (двухсторонняя) 5000502-07-711"];
     $styazhka[9]=['path'=>"furnitura-dlya-mebeli-styazhka-konicheskaya-d10-t16.php",
                     'id'=> "#konicheskaya-d10-16",
                     'img'=> $path_img."tbskonicheskaya-styazhka.png",
                     'keywords'=>"",
-                    'def'=>"Стяжка коническая D10 для плит толщиной от 16 мм (односторонняя)"];
+                    'def'=>"Стяжка коническая D10 для плит толщиной от 16 мм (односторонняя) 5000502-07-712"];
     $styazhka[10]=['path'=>"furnitura-dlya-mebeli-styazhka-konicheskaya-dvuhstoronnyaya-d10-t16.php",
                     'id'=> "#konicheskaya-dvuhstoronnyaya-d10-16",
                     'img'=> $path_img."tbskonicheskaya-styazhka2.png",
                     'keywords'=>"",
-                    'def'=>"Стяжка коническая D10 для плит толщиной от 16 мм (двухсторонняя)"];
+                    'def'=>"Стяжка коническая D10 для плит толщиной от 16 мм (двухсторонняя) 5000502-07-713"];
 
 /////////////////////////////////////
 

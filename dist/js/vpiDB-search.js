@@ -31,6 +31,7 @@ function removeSel2(sel){
     }
 }
 function addSearch(e){
+    hideMenu();
   $('.trsearch').remove();
   removeSel2('sel3');
   $('#addingNewRow').hide(); 
@@ -125,6 +126,7 @@ $("body").on("click","#tblsearch tbody td",function(){
   function addingNewRow(){  
     // console.log('===============');
     // var tbl =document.querySelectorAll('#tblVPI');
+    hideMenu();
     var table = document.getElementById('tblVPI');
     var rows = table.querySelectorAll('[id^=tr]');
     // console.log(rows);
@@ -186,6 +188,7 @@ function chsel3(ch){
     ch.childNodes[4].style.color = "green";
     ch.childNodes[4].dataset.src = pr.data('src'); 
     ch.childNodes[4].dataset.id = 'obj_'+pr.data('id');  
+    ch.childNodes[10].setAttribute('title', 'ID-'+pr.data('id')); 
 }
 
 function onlyNumberInt(){

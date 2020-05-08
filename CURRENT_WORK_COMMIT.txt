@@ -1,61 +1,43 @@
-Текущий коммит: bazisspecification4
+Текущий коммит: vpiDB
     ("Запись спецификации из базиса в ведомость")
 
     ИЗМЕНЕНИЯ: 
-        inc\inc-footer.php*
-        inc\inc-version-css-js.php*
-        inc\inc-left-side-menu-shablony-dokumentov.php*
-        inc\inc-head.php*
+       
+       dist\filesdb\images\5000502-06-106.png* 
+       dist\filesdb\images\5000502-06-100.png*
+       dist\filesdb\images\10049_dr_mbf.png *
+       dist\filesdb\images\10049_sch_mbf.png*
+       dist\filesdb\images\10049.png*
+       dist\filesdb\images\konicheskaya-styazhka.png*
+       dist\filesdb\images\956A1004.png*
+       dist\filesdb\images\956A1201.png*
 
-        dist\css\сontextMenu.css*
-        dist\css\ajax-loader-7.gif*
-        dist\css\vpiDB-search.css*
+       dist\filesdb\images\pagevpi\Articul10049.png*
 
-        dist\js\сontextMenu.js*
-        dist\js\drop.js*
-        dist\js\vpiDB-search.js*
-        dist\filesdb\images\mov01g4_TIPON.png*
-        dist\filesdb\images\T51_7601.png*
-        dist\filesdb\images\PK2.png*
-        dist\filesdb\images\mov.png*
-        dist\filesdb\images\val_tip-on.png*
-        dist\filesdb\images\shesterny_tip-on.png*
-        dist\filesdb\images\mov-tip-on.png*
-        dist\filesdb\images\otvetnaya-planka-173L6100.png*
-        dist\filesdb\images\70T3504.png*
-        dist\filesdb\images\70_1503.png*
-        dist\filesdb\images\70_1503.png*
-        dist\filesdb\images\70_1663.png*
-        dist\filesdb\images\70_4503.png*
-        dist\filesdb\images\175H9160.png*
-        dist\filesdb\images\carousel\shtangi\5000502-10-300.png*
-        dist\filesdb\images\carousel\shtangi\5000502-10-301.png*
+       dist\js\vpiDB-search.js * 
 
-        vpi\getxlsx-bazis-specification4.php*
-        vpi\getDataBaseVPI.php*
-        vpi\adding_DB_to_page.php*
-        vpi\templates\blank.xls*
+       furnitura-dlya-mebeli-styazhka-konicheskaya-d10-t16.php* 
+       furnitura-dlya-mebeli-styazhka-konicheskaya-d10-t25.php  *
 
-        furnitura-dlya-mebeli-movento.php*
-
+       inc\goup\inc-goup-menu-furnitura-styazhka.php *
         
 
     БАЗА ДАННЫХ:
         sofia_users.sql(НЕ МЕНЯТЬ!)
 
-        obj.sql*
-        obj_alias *
-        obj_download *
-        obj_furnitur_prop.sql таблица с alias *
-        obj_in_addition *              
-        obj_owner_furnitur (новая) *   
+        obj.sql* 
+        obj_alias * 
+        obj_download * 
+        obj_furnitur_prop.sql* 
+        obj_in_addition *               
+        obj_owner_furnitur  * 
 
 
     ОБНОВИЛ*:
     Работа
     Дом*
     Ноут
-    Сайт * 
+    Сайт*  
 
     
 

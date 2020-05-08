@@ -100,11 +100,11 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                             <td  colspan="3">Шток стяжки конической D10, 35&nbsp;мм</td>
                                                         </tr>
                                                         <tr   >
-                                                                <td><img src="./dist/filesdb/images/pagevpi/ArticulFutorka-BU12.png" class="" alt="Футорка" title=""></td>
+                                                                <td><img src="./dist/filesdb/images/pagevpi/Articul10049.png" class="" alt="Футорка" title=""></td>
                                                                 <td>1</td>
-                                                                <td class="" >BU12 (82-02)</td>
-                                                                <td>Желтый</td> 
-                                                                <td colspan="3">Футорка металлическая с распорным шариком M6</td>
+                                                                <td class="" >10049 / 1000 ШТ</td>
+                                                                <td>белый</td> 
+                                                                <td colspan="3">Футорка пластиковая D8, М6 Х 11</td>
                                                         </tr>
                                                       
                                                         
@@ -143,7 +143,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                     <td>35</td>
                                                     <td>9</td>
                                                     <td>8</td>
-                                                    <td>14</td>
+                                                    <td>11</td>
                                                     <td>10</td>
                                                     <td>14</td>
                                                     <td>0</td>
@@ -469,7 +469,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                             <!-- /часть --> 
 
                             <!-- часть -->
-                                 <h2 >Футорка металлическая с распорным шариком <br>для штоков стяжки эксцентриковой и конической с резьбой М6</h2>                         
+                                 <h2 >Футорка пластиковая D8, М6 Х 11</h2>                         
                                  
                                 <div class="row" style="margin-bottom: 15px; margin-left: 15px;">   
                                     <div id="carousel4" class="carousel slide" data-ride="carousel" style="display: inline-block;">
@@ -478,8 +478,8 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                             <div class="item active">
                                                 <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Футорка металлическая с распорным шариком M6" data-image="./dist/filesdb/images/Futorka-BU12.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Futorka-BU12.png"
-                                                        data-src="./dist/filesdb/images/Futorka-BU12.png"
+                                                        src="./dist/filesdb/images/10049.png"
+                                                        data-src="./dist/filesdb/images/10049.png"
                                                         class="center-block   img-rounded    bar "
                                                         data-toggle="modal"                                                                                                                    
                                                         alt="Футорка металлическая с распорным шариком M6"
@@ -490,8 +490,8 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                             <div class="item">
                                                 <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Необходимое пространство" data-image="./dist/filesdb/images/Futorka1-960x640.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Futorka1-960x640.png"
-                                                        data-src="./dist/filesdb/images/Futorka1-960x640.png"
+                                                        src="./dist/filesdb/images/10049_dr_mbf.png"
+                                                        data-src="./dist/filesdb/images/10049_dr_mbf.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Необходимое пространство"                                                        
@@ -501,8 +501,8 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                             <div class="item">
                                                 <a class="thumbb" href="#" data-image-id="" data-toggle="modal" data-title="Информация для заказа" data-image="./dist/filesdb/images/Futorka2-960x640.png" data-target="#image-gallery">
                                                     <img  
-                                                        src="./dist/filesdb/images/Futorka2-960x640.png"
-                                                        data-src="./dist/filesdb/images/Futorka2-960x640.png"
+                                                        src="./dist/filesdb/images/10049_sch_mbf.png"
+                                                        data-src="./dist/filesdb/images/10049_sch_mbf.png"
                                                         class="center-block   img-rounded     bar "
                                                         data-toggle="modal"                                                                                                                          
                                                         alt="Информация для заказа"                                                        
@@ -524,7 +524,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                     </div>
                                 </div> 
 
-                                <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
+                                <!-- <div class="row" style="margin-bottom: 15px; margin-left: 15px;">
                                     <div class="row col-xs-12 col-sm-12 col-md-12" style="background: #fff;
                                                 border: 1px solid rgb(221, 221, 221);
                                                 box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
@@ -551,7 +551,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
                                                        
                                                         <tr>
                                                         <td>6</td>
-                                                        <td>желтый</td>
+                                                        <td>белый</td>
                                                         <td>12</td>
                                                         <td>8</td>
                                                         <td>8</td>
@@ -568,7 +568,7 @@ include 'inc/inc-left-side-menu-furnitura.php';
 
                                     </div>
 
-                                </div>
+                                </div> -->
                             <!-- /часть --> 
 
 

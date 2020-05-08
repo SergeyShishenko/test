@@ -93,7 +93,7 @@
         </div>  
 
         <div class="input-group">
-            <span class="input-group-addon cls">X</span>
+            <span class="input-group-addon cls by-default">X</span>
             <input type="text" value="./dist/filesdb/images/test.png" name="add_NameFile" class="text add form-control" size="150" placeholder="Имя файла изображения" id="NameFile" title="Имя файла изображения">       
         </div>
 
@@ -146,6 +146,7 @@
             <option value="Оцинкованный" >Оцинкованный</option>
             <option value="Никелиров." >Никелиров.</option>
             <option value="металл" >металл</option>
+            <option value="Платиново-серый (RAL 7036)" >Платиново-серый (RAL 7036)</option>
         </datalist>
 
         <input type="text" list="listUnit" id="Unit" class="text add form-control" placeholder="Ед.измерения">
@@ -200,8 +201,12 @@
                 $(this).css("background-color", "LawnGreen ");
             });
            // очищение input
-            $( ".cls" ).click(function() {
+
+            $( ".cls:not(.by-default)" ).click(function() {
                 $(this).parent().find('input').val('').css("background-color", "White ");
+            });
+            $( ".by-default" ).click(function() {
+                $(this).parent().find('input').val('./dist/filesdb/images/test.png').css("background-color", "White ");
             });
             // Добавляем НОВЫЙ РАЗДЕЛ, когда произошел клик по кнопке
                 $("#FormSubmit").click(function (e) {
