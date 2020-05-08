@@ -1,59 +1,61 @@
 Текущий коммит: bazisspecification4
-    ("Запись спецификайии из базиса в ведомость")
+    ("Запись спецификации из базиса в ведомость")
 
     ИЗМЕНЕНИЯ: 
-        inc\inc-footer.php
-        inc\inc-version-css-js.php
-        inc\inc-left-side-menu-shablony-dokumentov.php
-        inc\inc-head.php
+        inc\inc-footer.php*
+        inc\inc-version-css-js.php*
+        inc\inc-left-side-menu-shablony-dokumentov.php*
+        inc\inc-head.php*
 
-        dist\css\сontextMenu.css
-        dist\css\ajax-loader-7.gif
-        dist\css\vpiDB-search.css
+        dist\css\сontextMenu.css*
+        dist\css\ajax-loader-7.gif*
+        dist\css\vpiDB-search.css*
 
-        dist\js\сontextMenu.js
-        dist\js\drop.js
-        dist\js\vpiDB-search.js
-        dist\filesdb\images\mov01g4_TIPON.png
-        dist\filesdb\images\T51_7601.png
-        dist\filesdb\images\PK2.png
-        dist\filesdb\images\mov.png
-        dist\filesdb\images\val_tip-on.png
-        dist\filesdb\images\shesterny_tip-on.png
-        dist\filesdb\images\mov-tip-on.png
-        dist\filesdb\images\otvetnaya-planka-173L6100.png
-        dist\filesdb\images\70T3504.png
-        dist\filesdb\images\70_1503.png
-        dist\filesdb\images\70_1503.png
-        dist\filesdb\images\70_1663.png
-        dist\filesdb\images\70_4503.png
-        dist\filesdb\images\175H9160.png
-        dist\filesdb\images\carousel\shtangi\5000502-10-300.png
-        dist\filesdb\images\carousel\shtangi\5000502-10-301.png
+        dist\js\сontextMenu.js*
+        dist\js\drop.js*
+        dist\js\vpiDB-search.js*
+        dist\filesdb\images\mov01g4_TIPON.png*
+        dist\filesdb\images\T51_7601.png*
+        dist\filesdb\images\PK2.png*
+        dist\filesdb\images\mov.png*
+        dist\filesdb\images\val_tip-on.png*
+        dist\filesdb\images\shesterny_tip-on.png*
+        dist\filesdb\images\mov-tip-on.png*
+        dist\filesdb\images\otvetnaya-planka-173L6100.png*
+        dist\filesdb\images\70T3504.png*
+        dist\filesdb\images\70_1503.png*
+        dist\filesdb\images\70_1503.png*
+        dist\filesdb\images\70_1663.png*
+        dist\filesdb\images\70_4503.png*
+        dist\filesdb\images\175H9160.png*
+        dist\filesdb\images\carousel\shtangi\5000502-10-300.png*
+        dist\filesdb\images\carousel\shtangi\5000502-10-301.png*
 
-        vpi\getxlsx-bazis-specification4.php
-        vpi\getDataBaseVPI.php
-        vpi\adding_DB_to_page.php
-        vpi\templates\blank.xls
+        vpi\getxlsx-bazis-specification4.php*
+        vpi\getDataBaseVPI.php*
+        vpi\adding_DB_to_page.php*
+        vpi\templates\blank.xls*
 
-        furnitura-dlya-mebeli-movento.php
+        furnitura-dlya-mebeli-movento.php*
 
         
 
     БАЗА ДАННЫХ:
-        sofia_users.sql
-        obj.sql
-        obj_furnitur_prop.sql таблица с alias ИЗМЕНЕНА 31.03.2020
-            id 153 -> 5000502-05-501
-            id 181-183
-        obj_owner_furnitur (новая)    
+        sofia_users.sql(НЕ МЕНЯТЬ!)
+
+        obj.sql*
+        obj_alias *
+        obj_download *
+        obj_furnitur_prop.sql таблица с alias *
+        obj_in_addition *              
+        obj_owner_furnitur (новая) *   
 
 
     ОБНОВИЛ*:
     Работа
     Дом*
     Ноут
-    Сайт  
+    Сайт * 
 
     
 

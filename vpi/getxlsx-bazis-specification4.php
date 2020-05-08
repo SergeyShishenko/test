@@ -14,8 +14,12 @@ if (!isset($filename)){$filename="templates/blank.xls";}
 // echo $filename;
 // exit();
 # Указываем путь до файла .xlsx
+
 $File = $_SERVER['DOCUMENT_ROOT'] . "/www/vpi/$filename";//localhost
-// $File = $_SERVER['DOCUMENT_ROOT'] . "/vpi/$filename";//site
+if (!file_exists($File)) {
+  $File = $_SERVER['DOCUMENT_ROOT'] . "/vpi/$filename";//site
+}
+
 echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
 $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
 $reader->setReadDataOnly(true); 
