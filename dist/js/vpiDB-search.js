@@ -188,7 +188,7 @@ function chsel3(ch){
     ch.childNodes[4].style.color = "green";
     ch.childNodes[4].dataset.src = pr.data('src'); 
     ch.childNodes[4].dataset.id = 'obj_'+pr.data('id');  
-    ch.childNodes[10].setAttribute('title', 'ID-'+pr.data('id')); 
+    ch.childNodes[9].setAttribute('title', 'ID-'+pr.data('id')); 
 }
 
 function onlyNumberInt(){
