@@ -184,7 +184,7 @@
                         console.log(tmime);				 
                         
                     }
-                    if(tmime==""){
+                    if(tmime===""){
                         // var clickedEXP = files[index].name.split("."); //Разбиваем строку (Split работает аналогично PHP explode)
                         // tmime = clickedEXP[1]; //и получаем номер из массива
                         // console.log(tmime);
@@ -424,7 +424,7 @@
                     // console.log('tr '+ index );
                     var c = $(this).find('td[id^="product"]').text();
                     var c2 = $(this).find('td[id^="product2"]').text();
-                    if (c2==""){
+                    if (c2===""){
                         // console.log('tr' + index + ':' + c); 
                         arr_table[index]=c;
                     }
@@ -1227,7 +1227,7 @@ $("body").on('click','.button-gen:not(".finished-gen"):not("#blankVPI")', functi
         
       });
      
-     if($('#product_output').text()==""){
+     if($('#product_output').text()===""){
          if($('#product_output').val()!="ВПИ"){
              alert('Ничего не выбрано! '+$('#product_output').text()); return;  
          }       
@@ -1504,7 +1504,7 @@ $("#order_table tbody td").click(function(){
                 // console.log('tr '+ index );
                 var c = $(this).find('td[id^="product"]').text();
                 var c2 = $(this).find('td[id^="product2"]').text();
-                if (c2==""){
+                if (c2===""){
                     // console.log('tr' + index + ':' + c); 
                     arr_table[index]=c;
                 }
@@ -1609,8 +1609,9 @@ function PrintElem(elem)
 
                         // if ( String(table.rows[i].cells[3].innerHTML) ===  String(table.rows[j].cells[3].innerHTML) //СЕ 
                         // if ( parseFloat(table.rows[i].cells[3].innerHTML) ===  parseFloat(table.rows[j].cells[3].innerHTML) //СЕ                        
-                        if ( table.rows[i].cells[2].innerHTML ===  table.rows[j].cells[2].innerHTML //СЕ                        
-                          && table.rows[i].cells[3].innerHTML ===  table.rows[j].cells[3].innerHTML //поз.                       
+                        if (
+                            // table.rows[i].cells[2].innerHTML ===  table.rows[j].cells[2].innerHTML &&//СЕ                        
+                           table.rows[i].cells[3].innerHTML ===  table.rows[j].cells[3].innerHTML //поз.                       
                           && table.rows[i].cells[4].innerHTML ===  table.rows[j].cells[4].innerHTML //арт.
                           && table.rows[i].cells[5].innerHTML ===  table.rows[j].cells[5].innerHTML //наименование.
                          ) {
