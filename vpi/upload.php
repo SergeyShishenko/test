@@ -462,7 +462,17 @@ function fileopenxlscsv($filename)
 			$client = $arraybuffer[$client_key]." проверка " . $kbKD;//Заказчик
 
 			$complect = end(explode('/', $complect));
-			$room = explode('/', $room)[0];
+
+			
+
+			if (strpos($room, '/') === false) {
+				//echo "Строка '$findme' не найдена в строке '$mystring'";
+			} else {
+				//echo "Строка '$findme' найдена в строке '$mystring'";
+				//echo " в позиции $pos";
+				$room = explode('/', $room)[0];
+			}
+			
 			
 			//                           0        1        2             3        4              5      6         7    8      9      10        11     12    13      14       15     16    17    18   19   20     21
 			array_push($data, array($client,$address,$number_order,$product,$product2,$number_complect,$complect,$def,$room,$floor,$unit,$count,$serialnum,$wood,$veneer,$numsample,$pic,$kbKD,$kbDP,$RPG,$VAP,$agent));
@@ -552,14 +562,14 @@ function fileopenxlscsv($filename)
 				if (array_sum(array_column($array, 4)) === 0){// echo "<h4>№ изделия по повт.приложению: ".$product2_sum."</h2>";						
 					array_push($exclude,"4");
 				}	
-				if(count(unique_multidim_array($data,8))==2)
-				{
-					echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\"  class=\"val\">".$data[1][8]."</span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";array_push($exclude,"8");
-				}
-				else{
-					echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\"  class=\"val\"></span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";	
-				}
-				echo "<p id='room' class=''><b>Помещение: </b>            <span id=\"room_output\"  class=\"val\"></span> <input type='text' class='form-control' size='40' id='room-name' value=''></p>";
+				//if(count(unique_multidim_array($data,8))==2)
+				//{
+					echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\"  class=\"val\">".$data[1][9]."</span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";array_push($exclude,"8");
+				//}
+				//else{
+				//	echo "<p id='floor' class=''><b>Этаж: </b>            <span id=\"floor_output\"  class=\"val\"></span> <input type='text' class='form-control' size='40' id='floor-name' value=''></p>";	
+			//	}
+				echo "<p id='room' class=''><b>Помещение: </b>            <span id=\"room_output\"  class=\"val\">".$data[1][8]."</span> <input type='text' class='form-control' size='40' id='room-name' value=''></p>";
 
 				echo "<p id='complect' class='changeclick'><b>Комплект изделий: </b> <span id=\"complectUser_output\"  class=\"val\"></span><span id=\"coma\">&nbsp;</span><span id=\"complect_output\"></span> <input type='text' class='form-control' size='40' id='complectUser-name' value=''></p>";
 

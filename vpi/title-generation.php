@@ -42,18 +42,20 @@ if (isset($_POST['order'])) {
         switch ($_POST['gen']) {// TKD,TDP	
             /////"head"    
                 case "TKD":
-                     $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] .$site."/dist/files/xls/shablon-kd.xlsx"); 
-                     $builder=$first['kbKD'];								
+                     $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] .$site."/dist/files/xls/shablon-pz.xlsx"); 
+                     $builder=$first['kbKD'];	
+                     
                     break;
                 case "TDP":
                      $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] .$site."/dist/files/xls/shablon-alboma-dp.xlsx");
-                     $builder=$first['kbDP'];		
+                     $builder=$first['kbDP'];
+                     $RPG=$first['RPG'];
                 break;
 
 
         }
 
-        $RPG=$first['RPG'];
+        
         $VAP=$first['VAP'];
         
 
@@ -124,15 +126,17 @@ if (isset($_POST['order'])) {
             $coord= $objPHPExcel->getActiveSheet()->getCell('builder')->getColumn().$objPHPExcel->getActiveSheet()->getCell('builder')->getRow();
             $objPHPExcel->getActiveSheet()->setCellValue($coord, $builder);//Конструктор  
 
-            // if ( $_POST['gen']=='TKD') { // пока только для КД
+             if ( $_POST['gen']=='TDP') { // пока только для КД
 
                 $coord= $objPHPExcel->getActiveSheet()->getCell('RPG')->getColumn().$objPHPExcel->getActiveSheet()->getCell('RPG')->getRow();
                 $objPHPExcel->getActiveSheet()->setCellValue($coord, $RPG);//Руководитель группы  
-
+                
+              }
+              
                 $coord= $objPHPExcel->getActiveSheet()->getCell('VAP')->getColumn().$objPHPExcel->getActiveSheet()->getCell('VAP')->getRow();
                 $objPHPExcel->getActiveSheet()->setCellValue($coord, $VAP);//Архитектор 
             
-            // }
+          
 
 
            if ( $_POST['gen']=='TKD') {
