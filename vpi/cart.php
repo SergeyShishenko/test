@@ -81,7 +81,8 @@
                                                                             
                                                                                 <tr>
                                                                                     <td class="image">
-                                                                                        <img src="./dist/filesdb/images/thumbs/'.$typeFurn.'tbs'.$furniture["fname_img_furn"].'" alt="'.$furniture["name_furnitur_obj_prop"].'"  title="'.$furniture["name_furnitur_obj_prop"].'">
+                                                                                        <!-- <img src="./dist/filesdb/images/thumbs/'.$typeFurn.'tbs'.$furniture["fname_img_furn"].'" alt="'.$furniture["name_furnitur_obj_prop"].'"  title="'.$furniture["name_furnitur_obj_prop"].'">-->
+                                                                                        <img src="'.$furniture["fname_img_furn"].'" alt="'.$furniture["name_furnitur_obj_prop"].'"  title="'.$furniture["name_furnitur_obj_prop"].'">
                                                                                     </td>
                                                                                     <td class="articul">'.$furniture['articul_furnitur_obj'].'</td>
                                                                                     <td class="name" ><p>'.$furniture['def_obj_prop'].'</p></td>
