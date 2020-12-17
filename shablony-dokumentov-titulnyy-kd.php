@@ -16,19 +16,19 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                       <section >
                       <div class="page-header" >                                              
                         <h2 id="listy-titulnye-konstruktorskoy-dokumentacii">&nbsp;</h2>
-                          <h1 itemprop="name" >ЛИСТЫ ТИТУЛЬНЫЕ КОНСТРУКТОРСКОЙ ДОКУМЕНТАЦИИ</h1>
+                          <h1 itemprop="name" >ЛИСТЫ ТИТУЛЬНЫЕ ПРОИЗВОДСТВЕННОГО ЗАДАНИЯ</h1>
                         </div>                      
                         <h2 id="list-titulnyy-kd">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>5000301-02-000 лист титульный КД</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Лист титульный ПЗ</h4>
                                 <div class="overlay"></div>                  
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-kd.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_1-v10.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_1-v12.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                                             
-                                 alt="5000301_02_000 лист титульный КД"
-                                 data-xls="./dist/files/xls/shablon-kd.xlsx"
+                                 alt="Лист титульный ПЗ"
+                                 data-xls="./dist/files/xls/shablon-pz.xlsx"
                                  data-pdf=""
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
