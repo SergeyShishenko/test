@@ -156,6 +156,7 @@ if(isset($_POST['ids']))//генерация xls
                 $objDrawing->setCoordinates('K'.$row);
                 $objDrawing->setOffsetX(10);
                 $objDrawing->setOffsetY(10);
+                $objDrawing->setHeight(200);
                 // $objDrawing->setRotation(25);
                 // $objDrawing->getShadow()->setVisible(true);
                 // $objDrawing->getShadow()->setDirection(45);  
