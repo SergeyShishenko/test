@@ -106,12 +106,24 @@ if(isset($_POST['ids']))//генерация xls
             $row = $baseRow + $r;
             $spreadsheet->getActiveSheet()->insertNewRowBefore($row,1);
 
-            if (file_exists($_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'])) {
-                $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'];// для сайта !!!!!!!
+            // if (file_exists($_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'])) {
+            //     $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'];// для сайта !!!!!!!
+            // }
+            // else {
+            //     $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
+            // }
+
+            if (file_exists($_SERVER['DOCUMENT_ROOT'] . $dataRow['fname_img_furn'])) {
+                $imagePath = $_SERVER['DOCUMENT_ROOT'] . $dataRow['fname_img_furn'];// для сайта !!!!!!!
             }
             else {
-                $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
+                $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/'. $dataRow['fname_img_furn'];// для localhost !!!!!!!
             }
+
+
+
+
+
 
             // $sheet->getColumnDimension('K')->setWidth(40); 
             // $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для сайта !!!!!!!
