@@ -113,11 +113,12 @@ if(isset($_POST['ids']))//генерация xls
             //     $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
             // }
 
-            if (file_exists($_SERVER['DOCUMENT_ROOT'] . $dataRow['fname_img_furn'])) {
-                $imagePath = $_SERVER['DOCUMENT_ROOT'] . $dataRow['fname_img_furn'];// для сайта !!!!!!!
+            if (file_exists($_SERVER['DOCUMENT_ROOT'] .'/www/'. $dataRow['fname_img_furn'])) {
+                $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/'. $dataRow['fname_img_furn'];// для localhost !!!!!!!
             }
             else {
-                $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/'. $dataRow['fname_img_furn'];// для localhost !!!!!!!
+                
+                $imagePath = $_SERVER['DOCUMENT_ROOT'] . str_replace("\\", "/", ltrim($dataRow['fname_img_furn'],"."));// для сайта !!!!!!!
             }
 
 
@@ -135,8 +136,9 @@ if(isset($_POST['ids']))//генерация xls
                                         ->setCellValue('G'.$row, $dataRow['made_furnitur_obj'])
                                         ->setCellValue('H'.$row, $dataRow['color_obj_prop'])
                                         ->setCellValue('I'.$row, $dataRow['unit_obj_prop'])
+                                        // ->setCellValue('L'.$row, $imagePath)
                                         ->setCellValue('J'.$row, $dataRow['count']);
-                                        // ->setCellValue('K'.$row, $imagePath);
+                                        
             $spreadsheet->getActiveSheet()->getRowDimension($row)->setRowHeight(170);
             if (file_exists($imagePath)) {
                 // $logo = new PHPExcel_Worksheet_Drawing();
