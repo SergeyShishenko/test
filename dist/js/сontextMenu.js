@@ -109,13 +109,23 @@ function delSel(tr){
     ell=document.getElementById(del);
     ell.parentElement.removeChild(ell);  
    
-    vpibazis=document.getElementById('vpibazis');
-    vpibazis.classList.remove('active-gen', 'finished-gen');
-    vpibazis.removeAttribute('download');
-    vpibazis.setAttribute('href', 'javascript:void(0)')
+    // vpibazis=document.getElementById('vpibazis');
+    // vpibazis.classList.remove('active-gen', 'finished-gen');
+    // vpibazis.removeAttribute('download');
+    // vpibazis.setAttribute('href', 'javascript:void(0)')
+    resetVpibazis();
+
     // var ell = table.rows[j].cells[0].closest("tr"); // tr element (ваша строчка)
     // document.getElementById(tr.dataset.element).parentElement.removeChild(tr.dataset.element); 
     hideMenu(); 
+}
+reset
+
+function resetVpibazis(){   
+    vpibazis=document.getElementById('vpibazis');
+    vpibazis.classList.remove('active-gen', 'finished-gen');
+    vpibazis.removeAttribute('download');
+    vpibazis.setAttribute('href', 'javascript:void(0)')  
 }
 
 function removeSel(){

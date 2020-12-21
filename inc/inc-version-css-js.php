@@ -14,4 +14,5 @@ $styleform =2;
 $indexform =4;
 $selectcell =2;//dist\js\selectcell.js
 $passworCheck =3;//inc\inc-footer.php, index.php
-$сontextMenu=1;//inc\inc-footer.php,
+$сontextMenu=2;//inc\inc-footer.php,
+$vpiDBsearch=2;//inc\inc-footer.php,-> dist\js\vpiDB-search.js

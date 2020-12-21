@@ -174,6 +174,11 @@ $("body").on("click","#tblsearch tbody td",function(){
                                '</tr>');
    
 document.querySelectorAll('#tblVPI  tr:not(.head-cm)').forEach(e => e.addEventListener('contextmenu', onContextMenu, false));  
+resetVpibazis();
+// vpibazis=document.getElementById('vpibazis');
+// vpibazis.classList.remove('active-gen', 'finished-gen');
+// vpibazis.removeAttribute('download');
+// vpibazis.setAttribute('href', 'javascript:void(0)')  
 }
 function chsel3(ch){
     
