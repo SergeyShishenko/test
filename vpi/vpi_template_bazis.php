@@ -137,7 +137,14 @@ for ($r=1; $r < count($arr->table0); $r++) {
 $spreadsheet->getActiveSheet()->removeRow(3,1);//удаление строки
 
 // Save
-$fname="vpi-".date('m-d-Y-H-i-s').".xls";  
+$pref="";
+
+if (isset($tr[0])){
+    $pref=$tr[0]."_".$tr[1]."_";
+}
+    
+
+$fname= $pref."vpi-".date('m-d-Y-H-i-s').".xls";  
 
 $helper->write($spreadsheet, $fname);
 $path = sys_get_temp_dir().'/phpspreadsheet/';
