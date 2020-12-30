@@ -119,7 +119,7 @@ function delSel(tr){
     // document.getElementById(tr.dataset.element).parentElement.removeChild(tr.dataset.element); 
     hideMenu(); 
 }
-reset
+
 
 function resetVpibazis(){   
     vpibazis=document.getElementById('vpibazis');
