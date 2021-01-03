@@ -159,7 +159,7 @@ $('#GENModal').on('hide.bs.modal', function() {
   })
 
 function getDataBaseVPI(el,del) {
-console.log("JS:"+el+" del:"+del);
+//console.log("JS:"+el+" del:"+del);
 
 // var IdData =  {
 //     //  recordToDelete : "vpi/"+currfile,
@@ -181,7 +181,7 @@ console.log("JS:"+el+" del:"+del);
         },
         error:function (xhr, ajaxOptions, thrownError){
             //выводим ошибку
-            console.log(thrownError);
+           // console.log(thrownError);
         }
     });
 // }
@@ -206,10 +206,10 @@ $(el).next().toggle();
 // .forEach(e => e.addEventListener('contextmenu', onContextMenu, false)); 
 
 $("body").on("click","button.contextm-toggle", function(e) { 
-    console.log(e.target);
+    //console.log(e.target);
     // $("menu .menu-cm.cm").hide(); //  скрываем, или отображаем все элементы <div>
     var m=$(e.target).parent().data('togg');
-    console.log(m);
+    //console.log(m);
     if (typeof m === "undefined"){
         // console.log("m");
         if ($(e.target).data('togg')=="cm1"){
@@ -225,11 +225,11 @@ $("body").on("click","button.contextm-toggle", function(e) {
         }
         
     }else{
-        console.log(m);
+      //  console.log(m);
         $("#"+m).hide();
     $(e.target).parent().parent().find('menu').toggle();
     }
-    console.log(m);
+   // console.log(m);
     // console.log(e.target);
     // 
     

@@ -23,7 +23,7 @@ foreach (glob("inc/goup/inc-goup*.php") as $filename) { include $filename ;}
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:locale" content="ru_RU" />
     <link rel="image_src" href="https://www.500stp.website/dist/css/prew500stp.jpg"/>
-    <meta name="yandex-verification" content="07a17e6c1df2c2b2" />
+    <!-- <meta name="yandex-verification" content="07a17e6c1df2c2b2" /> -->
     <title>500.СТП</title>
     <link href="./dist/css/bootstrap.css" rel="stylesheet">
     <link href="./dist/css/animate.min.css" rel="stylesheet">    

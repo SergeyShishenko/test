@@ -16,8 +16,7 @@ echo'<!DOCTYPE html>
     <meta property="og:url" content= "https://500stp.website" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:locale" content="ru_RU" />
-    <link rel="image_src" href="https://www.500stp.website/dist/css/prew500stp.jpg"/>
-    <meta name="yandex-verification" content="07a17e6c1df2c2b2" />
+    <link rel="image_src" href="https://www.500stp.website/dist/css/prew500stp.jpg"/> 
 
     <title>500.СТП</title>
     <link href="./dist/css/bootstrap.css" rel="stylesheet">

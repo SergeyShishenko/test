@@ -296,6 +296,7 @@ function getClientWidth(){
 	  });
 
       $('[data-toggle="tooltip"]').tooltip(); 
+    //   alert($('input.who').val());
       console.log($('input.who').val());
       $('input.who').val('');
 
@@ -339,7 +340,8 @@ $(function () {
            $(this).find('ul.sub_menu > li:nth-child(1)').addClass('triangle');           
            var triangle = (child1-1)*40+11;
            if (child1>col){triangle = (col-1)*40+11;}
-           $('head').append('<style id="triangle" data-top="'+triangle+'">.triangle::before{top:'+triangle+'px !important;}.triangle::after{top:'+triangle+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');              
+           $('head').append('<style id="triangle" data-top="'+triangle+'">.triangle::before{top:'+triangle+'px !important;}.triangle::after{top:'+triangle+'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');    
+                     
         }
         },
         
