@@ -1,4 +1,7 @@
 // dist\js\сontextMenu.js
+// переопределение контекстного меню в vpi\getxlsx-bazis-specification4.php строка 200
+
+
 var menu = document.querySelector('.menu-cm');
 
 // var tblVPI = document.querySelector('.tblVPI');
@@ -82,7 +85,9 @@ function hideMenu(){
 }
 
 function onContextMenu(e){
+
     e.preventDefault();
+   // console.log('onContextMenu');
     removeSel();
  
     showMenu(e.pageX, e.pageY);
