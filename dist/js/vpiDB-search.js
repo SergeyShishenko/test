@@ -95,8 +95,9 @@ $("body").on("dblclick","#tblsearch tbody td",function(){
   
     // console.log('dblclick')
     // fnselcsv($(this).parent().find("td:eq(1)").text());
-    var ch =document.getElementById($('.sel3').attr('id'));
-    chsel3(ch);
+    var ch =document.getElementById($('.sel3').attr('id')); //  выбраная строка с id=tr2 в таблице id="tblVPI"
+    var pr=$('.pressedTime').last(); // выбраная строка в таблице базы данных на странице id="tblsearch"
+    chsel3(ch,pr);
     
 });
 
@@ -116,6 +117,7 @@ $("body").on("click","#tblsearch tbody td",function(){
       $('#addingNewRow').show(); 
   }
   function addingDB(){  
+      
     $('#addingDB').empty();
     $.post('./vpi/adding_DB_to_page.php',  function(data) {
       
@@ -132,7 +134,7 @@ $("body").on("click","#tblsearch tbody td",function(){
     // console.log(rows);
     // console.log(rows.length);
     var prefId="tr";
-    var condition=false;
+    var condition=false;//состояние
     var j=0;
     // var newId=prefId+j;
     do {
@@ -180,9 +182,11 @@ resetVpibazis();
 // vpibazis.removeAttribute('download');
 // vpibazis.setAttribute('href', 'javascript:void(0)')  
 }
-function chsel3(ch){
-    
-    var pr=$('.pressedTime').last();
+
+
+function chsel3(ch,pr){
+   
+   // var pr=$('.pressedTime').last();
     // console.log('pr '+$(pr));
     ch.childNodes[4].innerText=pr.data('articul');            
     ch.childNodes[5].innerText=pr.data('name');

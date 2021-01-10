@@ -240,3 +240,10 @@ $("body").on("click","button.contextm-toggle", function(e) {
     
     // 
   });
+
+  // разбить комплект
+  function splitAset (){
+    trsearchRemove();
+    removeSel2('sel3');
+    addingNewRow();
+  }
