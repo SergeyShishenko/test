@@ -242,7 +242,7 @@ $("body").on("click","button.contextm-toggle", function(e) {
   });
 
   // разбить комплект
-  function splitAset (count,tr){
+  function splitAset1 (count,tr){
 
     trsearchRemove();
     removeSel2('sel3');
@@ -254,6 +254,38 @@ $("body").on("click","button.contextm-toggle", function(e) {
         let log=addingNewRow();
       console.log (log);
       }
+
+   
+
+  }
+
+  // разбить комплект
+  function splitAset (count,tr){
+
+    trsearchRemove();
+    removeSel2('sel3');
+    var el = document.getElementById(tr.dataset.parent);
+    var newId="ggg";
+    $("#"+el.id).after('<tr id="'+newId+'">'+
+                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()" onfocusout="GlobalOrderProduct()">'+GlobalOrder+'</td>'+
+                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"  onfocusout="GlobalOrderProduct()">'+GlobalProduct+'</td>'+
+                               '<td></td>'+
+                               '<td></td>'+
+                               '<td>-</td>'+
+                               '<td>-</td>'+
+                               '<td></td>'+
+                               '<td></td>'+
+                               '<td></td>'+
+                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">1</td>'+
+                               '<td></td>'+
+                               '</tr>');
+     console.log(el.id);
+    // // console.log(document.getElementById(tr.dataset.parent).getAttribute(id));
+
+    // for(let i = 0;i<count;i++){
+    //     let log=addingNewRow();
+    //   console.log (log);
+    //   }
 
    
 
