@@ -242,8 +242,19 @@ $("body").on("click","button.contextm-toggle", function(e) {
   });
 
   // разбить комплект
-  function splitAset (){
+  function splitAset (count,tr){
+
     trsearchRemove();
     removeSel2('sel3');
-    addingNewRow();
+    let el = document.getElementById(tr.dataset.parent);
+    console.log(el.id);
+    // console.log(document.getElementById(tr.dataset.parent).getAttribute(id));
+
+    for(let i = 0;i<count;i++){
+        let log=addingNewRow();
+      console.log (log);
+      }
+
+   
+
   }

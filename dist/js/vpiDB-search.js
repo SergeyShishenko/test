@@ -181,14 +181,17 @@ resetVpibazis();
 // vpibazis.classList.remove('active-gen', 'finished-gen');
 // vpibazis.removeAttribute('download');
 // vpibazis.setAttribute('href', 'javascript:void(0)')  
+return newId
 }
 
 
 function chsel3(ch,pr){
+
+    // *** var ch =document.getElementById($('.sel3').attr('id'));   выбраная строка с id=tr2 в таблице id="tblVPI"
+    // *** var pr=$('.pressedTime').last();  выбраная строка в таблице базы данных на странице id="tblsearch"
    
-   // var pr=$('.pressedTime').last();
-    // console.log('pr '+$(pr));
-    ch.childNodes[4].innerText=pr.data('articul');            
+   
+    ch.childNodes[4].innerText=pr.data('articul');             
     ch.childNodes[5].innerText=pr.data('name');
     ch.childNodes[6].innerText=pr.data('made');
     ch.childNodes[7].innerText=pr.data('color');

@@ -59,12 +59,12 @@
 								 if ($clist[0]['obj_indivisible_complect'] ){ echo "комплектов" ;} else {echo "шт.";}
 								 echo "  ID-".$clist[0]['obj_furnitur_prop_id'];//
 								 ?>"><a href="<?php echo $objurl;?>"><?php echo $clist[0]['articul_furnitur_obj'];?></a></p>
-							</li>;
+							</li>
 						<?php } ?>
 					</menu>
 			</li>
 			<li class="menu-item-cm ">
-				<button type="button" class="menu-btn-cm" onclick="splitAset();" id="chancel_cmenu">
+				<button type="button" class="menu-btn-cm" onclick="splitAset(<?php echo count($composit)-1;?>,this);" id="splitAset" data-parent="<?php echo $_POST["del"];?>" title="<?php echo $_POST["del"];?>">
 					<i class="fa fa-chain-broken"></i>
 					<span class="menu-text-cm">Разбить комплект</span>
 				</button>
