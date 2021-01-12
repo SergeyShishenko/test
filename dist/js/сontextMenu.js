@@ -259,34 +259,47 @@ $("body").on("click","button.contextm-toggle", function(e) {
 
   }
 
-  // разбить комплект
-  function splitAset (count,tr){
+  // разбить комплект проба!
+  function splitAset (count,tr,strId){
 
     trsearchRemove();
     removeSel2('sel3');
+    var arrId = strId.split(',');
+    console.log(arrId);
     var el = document.getElementById(tr.dataset.parent);
-    var newId = createNewId();
-    $("#"+el.id).after('<tr id="'+newId+'">'+
-                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()" onfocusout="GlobalOrderProduct()">'+GlobalOrder+'</td>'+
-                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"  onfocusout="GlobalOrderProduct()">'+GlobalProduct+'</td>'+
-                               '<td></td>'+
-                               '<td></td>'+
-                               '<td>-</td>'+
-                               '<td>-</td>'+
-                               '<td></td>'+
-                               '<td></td>'+
-                               '<td></td>'+
-                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">1</td>'+
-                               '<td></td>'+
-                               '</tr>');
-     console.log(el.id);
-    // // console.log(document.getElementById(tr.dataset.parent).getAttribute(id));
+    console.log("Комплект "+el.id);
 
-    // for(let i = 0;i<count;i++){
-    //     let log=addingNewRow();
-    //   console.log (log);
-    //   }
+    for(let i = 0;i<count-1;i++){
+      var newId = createNewId();
+      var trInnerstr = trInner(newId);
+      $("#"+el.id).after(trInnerstr);
+      
+        console.log("Новая строка "+newId); 
+ 
+      } 
+      hideMenu(); 
+      redefiningContextMenu()
+  }
 
-   
+ 
 
+  function trInner(newId){ // пустая строка
+    return '<tr id="'+newId+'">'+
+    '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()" onfocusout="GlobalOrderProduct()">'+GlobalOrder+'</td>'+
+    '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"  onfocusout="GlobalOrderProduct()">'+GlobalProduct+'</td>'+
+    '<td></td>'+
+    '<td></td>'+
+    '<td>-</td>'+
+    '<td>-</td>'+
+    '<td></td>'+
+    '<td></td>'+
+    '<td></td>'+
+    '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">1</td>'+
+    '<td></td>'+
+    '</tr>';
+
+  }
+
+  function redefiningContextMenu(){
+    document.querySelectorAll('#tblVPI  tr:not(.head-cm)').forEach(e => e.addEventListener('contextmenu', onContextMenu, false)); 
   }

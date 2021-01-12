@@ -130,55 +130,13 @@ $("body").on("click","#tblsearch tbody td",function(){
     // var tbl =document.querySelectorAll('#tblVPI');
     hideMenu();
     var newId = createNewId();
-    // var table = document.getElementById('tblVPI');
-    // var rows = table.querySelectorAll('[id^=tr]');
-    // // console.log(rows);
-    // // console.log(rows.length);
-    // var prefId="tr";
-    // var condition=false;//состояние
-    // var j=0;
-    // // var newId=prefId+j;
-    // do {
-    //     condition=false;
-    //     j=j+1;
-    //     var newId=prefId+j;
-    //     // console.log('Curr_newId '+newId);
-    //     for (i = 0; i < rows.length; i++) {
-    //         // console.log(rows[i].id);            
-    //         // console.log(newId==rows[i].id);            
-    //         if (newId==rows[i].id){
-    //             // console.log('newId '+newId);
-    //             condition=true;  
-    //         }
-            
-    //     }        
-            
-    //   } while (condition);
-    // //   } while (j<20 && condition );
-    // // console.log('newId '+newId);
-    // condition=false;
-    // // for (i = 0; i < massiv.length; i++) {
-    // //     if (peremennaya == massiv[i]) {
-    // //     alert("Мы нашли "+massiv[i])
-    // //     }
-    // //     }
-    $('#tblVPI tr:last').after('<tr id="'+newId+'">'+
-                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()" onfocusout="GlobalOrderProduct()">'+GlobalOrder+'</td>'+
-                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"  onfocusout="GlobalOrderProduct()">'+GlobalProduct+'</td>'+
-                               '<td></td>'+
-                               '<td></td>'+
-                               '<td>-</td>'+
-                               '<td>-</td>'+
-                               '<td></td>'+
-                               '<td></td>'+
-                               '<td></td>'+
-                               '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">1</td>'+
-                               '<td></td>'+
-                               '</tr>');
    
-document.querySelectorAll('#tblVPI  tr:not(.head-cm)').forEach(e => e.addEventListener('contextmenu', onContextMenu, false));  
-resetVpibazis();
-// return newId
+    var trInnerstr = trInner(newId);
+    $('#tblVPI tr:last').after(trInnerstr);
+    redefiningContextMenu();   
+    
+    resetVpibazis();
+    // return newId
 }
 
 function createNewId(){
@@ -201,19 +159,6 @@ function createNewId(){
       } while (condition);
     condition=false;
 
-    // $('#tblVPI tr:last').after('<tr id="'+newId+'">'+
-    //                            '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()" onfocusout="GlobalOrderProduct()">'+GlobalOrder+'</td>'+
-    //                            '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"  onfocusout="GlobalOrderProduct()">'+GlobalProduct+'</td>'+
-    //                            '<td></td>'+
-    //                            '<td></td>'+
-    //                            '<td>-</td>'+
-    //                            '<td>-</td>'+
-    //                            '<td></td>'+
-    //                            '<td></td>'+
-    //                            '<td></td>'+
-    //                            '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">1</td>'+
-    //                            '<td></td>'+
-    //                            '</tr>');
      return newId
     
 }

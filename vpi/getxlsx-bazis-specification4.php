@@ -197,7 +197,7 @@ if(count($array_furn)!=0){
     <script>  
     // запуск объеденения строк
     Tclick();
-    document.querySelectorAll('#tblVPI  tr:not(.head-cm)').forEach(e => e.addEventListener('contextmenu', onContextMenu, false)); 
+    redefiningContextMenu();    
     //скрыть кнопку пустой бланк
     $('#blankVPI').find('span.loading-gen').css({'top':'110%'});
     $('#blankVPI').find('span.submit-gen').show();
