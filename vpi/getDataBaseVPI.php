@@ -36,7 +36,7 @@
 				</button>				
 					<menu class="menu-cm cm" id="cm1">
 						<?php 
-						$strId="";
+						$strId="{";
 						for ($i=0;$i<count($composit);$i++){
 							$query = "SELECT * FROM `obj_furnitur_prop` WHERE `obj_furnitur_prop_id` = {?}";
 							$clist = $db->select($query, array($composit[$i]['obj_furnitur_prop_id']));
@@ -59,14 +59,14 @@
 								 echo $composit[$i]['number_in_set']." - ";
 								 if ($clist[0]['obj_indivisible_complect'] ){ echo "комплектов" ;} else {echo "шт.";}
 								 echo "  ID-".$clist[0]['obj_furnitur_prop_id'];//
-								 $strId.=$clist[0]['obj_furnitur_prop_id'].",";
+								 $strId.="'".$clist[0]['obj_furnitur_prop_id']."':".$composit[$i]['number_in_set'].",";
 								 ?>"><a href="<?php echo $objurl;?>"><?php echo $clist[0]['articul_furnitur_obj'];?></a></p>
 							</li>
 						<?php } ?>
 					</menu>
 			</li>
 			<li class="menu-item-cm ">
-				<button type="button" class="menu-btn-cm" onclick="splitAset(<?php echo count($composit);?>,this,'<?php echo rtrim($strId,',');?>');" id="splitAset" data-parent="<?php echo $_POST["del"];?>" title="<?php echo rtrim($strId,',');?>">
+				<button type="button" class="menu-btn-cm" onclick="splitAset(this,<?php echo rtrim($strId,',').'}';?>);" id="splitAset" data-parent="<?php echo $_POST["del"];?>" title="<?php echo rtrim($strId,',').'}';?>">
 					<i class="fa fa-chain-broken"></i>
 					<span class="menu-text-cm">Разбить комплект</span>
 				</button>

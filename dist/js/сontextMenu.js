@@ -241,44 +241,35 @@ $("body").on("click","button.contextm-toggle", function(e) {
     // 
   });
 
-  // разбить комплект
-  function splitAset1 (count,tr){
-
-    trsearchRemove();
-    removeSel2('sel3');
-    let el = document.getElementById(tr.dataset.parent);
-    console.log(el.id);
-    // console.log(document.getElementById(tr.dataset.parent).getAttribute(id));
-
-    for(let i = 0;i<count;i++){
-        let log=addingNewRow();
-      console.log (log);
-      }
-
-   
-
-  }
+  
 
   // разбить комплект проба!
-  function splitAset (count,tr,strId){
-
+  function splitAset (tr,strId){
     trsearchRemove();
     removeSel2('sel3');
-    var arrId = strId.split(',');
-    console.log(arrId);
+   
     var el = document.getElementById(tr.dataset.parent);
     console.log("Комплект "+el.id);
+      
+    Object.keys(strId).forEach(function(key) {     
+    
+      console.log('key: '+ key +' = ' + strId[key]);
 
-    for(let i = 0;i<count-1;i++){
       var newId = createNewId();
       var trInnerstr = trInner(newId);
       $("#"+el.id).after(trInnerstr);
       
         console.log("Новая строка "+newId); 
- 
-      } 
-      hideMenu(); 
-      redefiningContextMenu()
+    
+    });    
+
+    var ell=document.getElementById(el.id);
+    ell.parentElement.removeChild(ell);  
+      
+    hideMenu(); 
+    redefiningContextMenu();
+    resetVpibazis();     
+      
   }
 
  
