@@ -15,4 +15,4 @@ $indexform =4;
 $selectcell =2;//dist\js\selectcell.js
 $passworCheck =3;//inc\inc-footer.php, index.php
 $сontextMenu=6;//inc\inc-footer.php,
-$vpiDBsearch=4;//inc\inc-footer.php,-> dist\js\vpiDB-search.js
+$vpiDBsearch=5;//inc\inc-footer.php,-> dist\js\vpiDB-search.js

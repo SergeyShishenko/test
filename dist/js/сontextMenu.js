@@ -265,7 +265,7 @@ $("body").on("click","button.contextm-toggle", function(e) {
     trsearchRemove();
     removeSel2('sel3');
     var el = document.getElementById(tr.dataset.parent);
-    var newId="ggg";
+    var newId = createNewId();
     $("#"+el.id).after('<tr id="'+newId+'">'+
                                '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()" onfocusout="GlobalOrderProduct()">'+GlobalOrder+'</td>'+
                                '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"  onfocusout="GlobalOrderProduct()">'+GlobalProduct+'</td>'+
