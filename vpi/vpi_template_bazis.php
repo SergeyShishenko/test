@@ -147,7 +147,7 @@ if (isset($tr[0])){
     
 
 $fname= $pref."vpi-".date('m-d-Y-H-i-s').".xls";  
-
+$fname=ltrim($fname,'_');// убрать подчеркивание если нет номера заказа
 $helper->write($spreadsheet, $fname);
 $path = sys_get_temp_dir().'/phpspreadsheet/';
 // $fnameX=$path . $fname.".xlsx";

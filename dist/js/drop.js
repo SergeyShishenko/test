@@ -1657,7 +1657,7 @@ function PrintElem(elem)
             // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
             console.log(response); 
             
-            $('#vpibazis').attr('href', 'vpi/WRITE/'+response).attr('download', response).addClass( "finished-gen" );
+            $('#vpibazis').attr('href', 'vpi/WRITE/'+response).attr('download', response.replace("vpi","ВПИ")).addClass( "finished-gen" );
            
             // $('#vpibazis').attr('download', response);
             // $('#vpibazis').addClass( "finished-gen" );

@@ -163,11 +163,20 @@ function createNewId(){
     
 }
 
-function chsel3(ch,pr){
+function chsel3(ch,pr,multiplier,number_in_set){
 
     // *** var ch =document.getElementById($('.sel3').attr('id'));   выбраная строка с id=tr2 в таблице id="tblVPI"
-    // *** var pr=$('.pressedTime').last();  выбраная строка в таблице базы данных на странице id="tblsearch"
-   
+    // ** var pr=$('.pressedTime').last();  выбраная строка в таблице базы данных на странице id="tblsearch"
+   //***  multiplier множитель */
+   //**   number_in_set количество в комплекте */
+
+   if (multiplier !== "non" && typeof(multiplier) !== "undefined" &&  multiplier !== "" &&  multiplier !== null){
+    // multiplier=1;
+    // number_in_set = parseInt(ch.childNodes[9].innerText, 10)
+    ch.childNodes[9].innerText= number_in_set * multiplier;
+       
+   }
+    
    
     ch.childNodes[4].innerText=pr.data('articul');             
     ch.childNodes[5].innerText=pr.data('name');
@@ -177,7 +186,10 @@ function chsel3(ch,pr){
     // console.log(ch.childNodes[4].style.color);
     ch.childNodes[4].style.color = "green";
     ch.childNodes[4].dataset.src = pr.data('src'); 
-    ch.childNodes[4].dataset.id = 'obj_'+pr.data('id');  
+    ch.childNodes[4].dataset.id = 'obj_'+pr.data('id'); 
+    // количество 
+    
+   
     ch.childNodes[9].setAttribute('title', 'ID-'+pr.data('id')); 
 }
 
