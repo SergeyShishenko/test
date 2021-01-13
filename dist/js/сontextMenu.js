@@ -257,26 +257,18 @@ $("body").on("click","button.contextm-toggle", function(e) {
 
       var newId = createNewId();
       var trInnerstr = trInner(newId);
-     $("#"+el.id).after(trInnerstr);
-    //  resetVpibazis();    
-    //  var ch = $("#"+newId);
-     var ch =document.getElementById(newId);
-     console.log("Новая строка "+newId);
-        console.log("Новая строка "+newId);
+      $("#"+el.id).after(trInnerstr);
+      //  resetVpibazis();    
+      //  var ch = $("#"+newId);
+      var ch =document.getElementById(newId);    
 
-    // **  var ch =document.getElementById($('.sel3').attr('id'));   выбраная строка с id=tr2 в таблице id="tblVPI"
-    // **  var pr=$('.pressedTime').last();  выбраная строка в таблице базы данных на странице id="tblsearch"
-    // **  multiplier множитель */
-    // **  number_in_set количество в комплекте */
-    // var table = document.getElementById('tblsearch');
-    var row =  $("#tblsearch").data("id", key);
-    // console.log("row  "+row );
-    // var multiplier =  strId[key];
-    var multiplier =  parseInt(el.childNodes[9].innerText, 10);
-    console.log("multiplier  "+multiplier );
-   
-    
-        chsel3(ch,row,multiplier,strId[key]); 
+      // **  var ch =document.getElementById($('.sel3').attr('id'));   выбраная строка с id=tr2 в таблице id="tblVPI"
+      // **  var pr=$('.pressedTime').last();  выбраная строка в таблице базы данных на странице id="tblsearch"
+      // **  multiplier множитель */
+      // **  number_in_set количество в комплекте */   
+      var row=$('[data-id='+key+']');    
+      var multiplier =  parseInt(el.childNodes[9].innerText, 10);    
+      chsel3(ch,row,multiplier,strId[key]); 
     
     });    
 
