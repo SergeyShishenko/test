@@ -97,7 +97,7 @@ $("body").on("dblclick","#tblsearch tbody td",function(){
     // fnselcsv($(this).parent().find("td:eq(1)").text());
     var ch =document.getElementById($('.sel3').attr('id')); //  выбраная строка с id=tr2 в таблице id="tblVPI"
     var pr=$('.pressedTime').last(); // выбраная строка в таблице базы данных на странице id="tblsearch"
-    chsel3(ch,pr);
+    chsel3(ch,pr,null,null,ch.childNodes[2].innerText);
     
 });
 
@@ -177,7 +177,12 @@ function chsel3(ch,pr,multiplier,number_in_set,CE){
     ch.childNodes[9].innerText= number_in_set * multiplier;
        
    }
+   if (CE === "non" || typeof(CE) === "undefined" ||  CE === "" ||  CE === null){
+       CE="";
+   }
    // добавить номер СЕ из новой строчки
+
+//    console.log("CE "+ch.childNodes[2].innerText);
     ch.childNodes[2].innerText=CE; 
     ch.childNodes[4].innerText=pr.data('articul');             
     ch.childNodes[5].innerText=pr.data('name');
@@ -198,6 +203,11 @@ function onlyNumberInt(){
     if (event.keyCode != 43 && event.keyCode < 48 || event.keyCode > 57)
     event.preventDefault();
 }
+
+function checkFloatKey(key) {
+    return (key >= '0' && key <= '9') || key == '.' ;
+    // return (key >= '0' && key <= '9') || key == '.' || key == '(' || key == ')' || key == '-';
+  }
 var GlobalOrder;
 var GlobalProduct;
 function GlobalOrderProduct(){

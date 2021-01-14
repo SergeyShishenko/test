@@ -243,6 +243,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
   ($row==$start_num && $i===0) ? $head=" class='head-cm' "  : $head="" ;
   ($head=="") ? $contenteditable=" contenteditable='true' onKeyPress='onlyNumberInt();' "  : $contenteditable="" ;
   $contenteditableSTR=" contenteditable='true'";
+  $contenteditableFloat = "contenteditable=\'true\' onkeydown=\"return checkFloatKey(event.key)\" onfocusout=\"GlobalOrderProduct()\"";
   // $contenteditable=""
   $id="tr".$row."\"";
   
@@ -257,7 +258,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
              $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() ? $posPart = $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() : $posPart ="Поз."; 
             }
             
-            echo '<td '.$contenteditable.' id="CE_'.$id.'">' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //СЕ
+            echo '<td '.$contenteditableFloat.' id="CE_'.$id.'">' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //СЕ
             echo '<td '.$contenteditable.'>' . $posPart .'</td>';  //Поз.
             $articul = htmlspecialchars(trim($sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue())); //Артикул
             if ($articul !="" && $articul !="Артикул"){
@@ -314,7 +315,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
 
             $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() ? $countFurn=$sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() : $countFurn=1;
             
-            echo '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">' . $countFurn .'</td>';  // Кол-во
+            echo '<td '.$contenteditableFloat . $countFurn .'</td>';  // Кол-во
             $table[0]['obj_furnitur_prop_id'] ? $titleNote=' title="ID-' . $table[0]['obj_furnitur_prop_id'] .'"' : $titleNote='';
             echo '<td ' .$contenteditable. ' ' . $titleNote .'>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  // Примечание
             // $dataType = DType::TYPE_STRING;

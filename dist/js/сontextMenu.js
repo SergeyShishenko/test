@@ -283,19 +283,20 @@ $("body").on("click","button.contextm-toggle", function(e) {
  
 
   function trInner(newId){ // пустая строка
-    var contenteditable = "contenteditable=\'true\' onKeyPress=\"onlyNumberInt();\" onfocusout=\"GlobalOrderProduct();\"";
+     var contenteditable = "contenteditable=\'true\' onKeyPress=\"onlyNumberInt();\" onfocusout=\"GlobalOrderProduct();\"";
+    var contenteditableFloat = "contenteditable=\'true\' onkeydown=\"return checkFloatKey(event.key)\" onfocusout=\"GlobalOrderProduct()\"";
     var contenteditableSTR = "contenteditable=\'true\' ";
     return '<tr id="'+newId+'">'+
     '<td '+contenteditable+'>'+GlobalOrder+'</td>'+
     '<td  '+contenteditable+'>'+GlobalProduct+'</td>'+
-    '<td '+contenteditable+' id="CE_'+newId+'"></td>'+
+    '<td '+contenteditableFloat+' id="CE_'+newId+'"></td>'+
     '<td '+contenteditable+'></td>'+
     '<td>-</td>'+
     '<td>-</td>'+
     '<td '+contenteditableSTR+'></td>'+
     '<td '+contenteditableSTR+'></td>'+
     '<td '+contenteditableSTR+'></td>'+
-    '<td '+contenteditable+'>1</td>'+
+    '<td '+contenteditableFloat+'>1</td>'+
     '<td ></td>'+
     '</tr>';
 
