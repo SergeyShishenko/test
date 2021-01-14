@@ -33,7 +33,7 @@ include 'inc/inc-version-css-js.php';
     <link href="./dist/css/uploadify.css" rel="stylesheet">
     <link href="./dist/css/style.css" rel="stylesheet">
     <link href="./dist/css/drop.css" rel="stylesheet">
-    <link href="./dist/css/сontextMenu.css" rel="stylesheet">
+    <link href="./dist/css/сontextMenu.css?v=<?php echo $сontextMenu ;?>" rel="stylesheet">
     <link href="./dist/css/vpiDB-search.css" rel="stylesheet">
     <link href="./dist/css/checkselect.css" rel="stylesheet">
     <link href="./dist/css/submit-process.css" rel="stylesheet">

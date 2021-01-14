@@ -123,6 +123,7 @@ function delSel(tr){
     // var ell = table.rows[j].cells[0].closest("tr"); // tr element (ваша строчка)
     // document.getElementById(tr.dataset.element).parentElement.removeChild(tr.dataset.element); 
     hideMenu(); 
+    trsearchRemove();
 }
 
 

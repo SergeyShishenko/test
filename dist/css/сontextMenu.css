@@ -214,3 +214,17 @@ span.clip {
     border: 10px solid transparent; 
     border-top: 10px solid green; 
    } */
+
+
+
+ /* артикул  */
+   table#tblVPI tr td:nth-child(5) { 
+    /* background: #ccc; */
+    width: 8%;
+}
+
+/* наименование  */
+   table#tblVPI tr td:nth-child(6) {
+    /* background: #ccc; */
+    width: 40%;
+}
