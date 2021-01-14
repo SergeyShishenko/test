@@ -163,12 +163,13 @@ function createNewId(){
     
 }
 
-function chsel3(ch,pr,multiplier,number_in_set){
+function chsel3(ch,pr,multiplier,number_in_set,CE){
 
     // *** var ch =document.getElementById($('.sel3').attr('id'));   выбраная строка с id=tr2 в таблице id="tblVPI"
     // ** var pr=$('.pressedTime').last();  выбраная строка в таблице базы данных на странице id="tblsearch"
    //***  multiplier множитель */
    //**   number_in_set количество в комплекте */
+   //**   CE номер  */
 
    if (multiplier !== "non" && typeof(multiplier) !== "undefined" &&  multiplier !== "" &&  multiplier !== null){
     // multiplier=1;
@@ -176,8 +177,8 @@ function chsel3(ch,pr,multiplier,number_in_set){
     ch.childNodes[9].innerText= number_in_set * multiplier;
        
    }
-    
-   
+   // добавить номер СЕ из новой строчки
+    ch.childNodes[2].innerText=CE; 
     ch.childNodes[4].innerText=pr.data('articul');             
     ch.childNodes[5].innerText=pr.data('name');
     ch.childNodes[6].innerText=pr.data('made');

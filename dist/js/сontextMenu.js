@@ -250,12 +250,10 @@ $("body").on("click","button.contextm-toggle", function(e) {
     removeSel2('sel3');
    
     var el = document.getElementById(tr.dataset.parent);
-    console.log("Комплект "+el.id);
+    // console.log("Комплект "+el.id);
       
     Object.keys(strId).forEach(function(key) {     
-    
-      console.log('key: '+ key +' = ' + strId[key]);
-
+      // console.log('key: '+ key +' = ' + strId[key]);
       var newId = createNewId();
       var trInnerstr = trInner(newId);
       $("#"+el.id).after(trInnerstr);
@@ -269,7 +267,7 @@ $("body").on("click","button.contextm-toggle", function(e) {
       // **  number_in_set количество в комплекте */   
       var row=$('[data-id='+key+']');    
       var multiplier =  parseInt(el.childNodes[9].innerText, 10);    
-      chsel3(ch,row,multiplier,strId[key]); 
+      chsel3(ch,row,multiplier,strId[key],el.childNodes[2].innerText); 
     
     });    
 
@@ -285,21 +283,42 @@ $("body").on("click","button.contextm-toggle", function(e) {
  
 
   function trInner(newId){ // пустая строка
+    var contenteditable = "contenteditable=\'true\' onKeyPress=\"onlyNumberInt();\" onfocusout=\"GlobalOrderProduct();\"";
+    var contenteditableSTR = "contenteditable=\'true\' ";
     return '<tr id="'+newId+'">'+
-    '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()" onfocusout="GlobalOrderProduct()">'+GlobalOrder+'</td>'+
-    '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"  onfocusout="GlobalOrderProduct()">'+GlobalProduct+'</td>'+
-    '<td></td>'+
-    '<td></td>'+
+    '<td '+contenteditable+'>'+GlobalOrder+'</td>'+
+    '<td  '+contenteditable+'>'+GlobalProduct+'</td>'+
+    '<td '+contenteditable+' id="CE_'+newId+'"></td>'+
+    '<td '+contenteditable+'></td>'+
     '<td>-</td>'+
     '<td>-</td>'+
-    '<td></td>'+
-    '<td></td>'+
-    '<td></td>'+
-    '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">1</td>'+
-    '<td></td>'+
+    '<td '+contenteditableSTR+'></td>'+
+    '<td '+contenteditableSTR+'></td>'+
+    '<td '+contenteditableSTR+'></td>'+
+    '<td '+contenteditable+'>1</td>'+
+    '<td ></td>'+
     '</tr>';
 
   }
+
+  // function trInner(newId){ // пустая строка
+  //   var contenteditable = 'contenteditable=\'true\' onKeyPress="onlyNumberInt()" onfocusout="GlobalOrderProduct()';
+  //   return '<tr id="'+newId+'">'+
+  //   '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()" onfocusout="GlobalOrderProduct()">'+GlobalOrder+'</td>'+
+  //   '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()"  onfocusout="GlobalOrderProduct()">'+GlobalProduct+'</td>'+
+  //   '<td></td>'+
+  //   '<td></td>'+
+  //   '<td>-</td>'+
+  //   '<td>-</td>'+
+  //   '<td></td>'+
+  //   '<td></td>'+
+  //   '<td></td>'+
+  //   '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">1</td>'+
+  //   '<td></td>'+
+  //   '</tr>';
+
+  // }
+
 
   function redefiningContextMenu(){
     document.querySelectorAll('#tblVPI  tr:not(.head-cm)').forEach(e => e.addEventListener('contextmenu', onContextMenu, false)); 

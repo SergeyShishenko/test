@@ -241,8 +241,8 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
 
   // $arr=array();
   ($row==$start_num && $i===0) ? $head=" class='head-cm' "  : $head="" ;
-  ($head=="") ? $contenteditable=" contenteditable='true' onKeyPress='onlyNumberInt()' "  : $contenteditable="" ;
-
+  ($head=="") ? $contenteditable=" contenteditable='true' onKeyPress='onlyNumberInt();' "  : $contenteditable="" ;
+  $contenteditableSTR=" contenteditable='true'";
   // $contenteditable=""
   $id="tr".$row."\"";
   
@@ -257,8 +257,8 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
              $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() ? $posPart = $sheet->getCellByColumnAndRow($arrIndex[3], $row)->getCalculatedValue() : $posPart ="Поз."; 
             }
             
-            echo '<td>' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //СЕ
-            echo '<td>' . $posPart .'</td>';  //Поз.
+            echo '<td '.$contenteditable.' id="CE_'.$id.'">' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //СЕ
+            echo '<td '.$contenteditable.'>' . $posPart .'</td>';  //Поз.
             $articul = htmlspecialchars(trim($sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue())); //Артикул
             if ($articul !="" && $articul !="Артикул"){
               // var_dump($articul);exit();
@@ -304,11 +304,11 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
 
             }else{ //данные, если есть
              
-              $table[0]['made_furnitur_obj'] ? $val ='<td>' .  $table[0]['made_furnitur_obj'] : $val = '<td >' .  $made_furnitur[0];
+              $table[0]['made_furnitur_obj'] ? $val ='<td '.$contenteditableSTR.'>' .  $table[0]['made_furnitur_obj'] : $val = '<td '.$contenteditableSTR.' >' .  $made_furnitur[0];
               echo $val .'</td>';  // Поставщик
-              $table[0]['color_obj_prop'] ? $val ='<td>' .  $table[0]['color_obj_prop'] : $val = '<td >' .  $made_furnitur[1];
+              $table[0]['color_obj_prop'] ? $val ='<td '.$contenteditableSTR.'>' .  $table[0]['color_obj_prop'] : $val = '<td '.$contenteditableSTR.'>' .  $made_furnitur[1];
               echo $val .'</td>';  // Цвет
-              $table[0]['unit_obj_prop'] ? $val ='<td>' .  $table[0]['unit_obj_prop'] : $val = '<td >' .  $made_furnitur[2];
+              $table[0]['unit_obj_prop'] ? $val ='<td '.$contenteditableSTR.'>' .  $table[0]['unit_obj_prop'] : $val = '<td '.$contenteditableSTR.'>' .  $made_furnitur[2];
               echo $val .'</td>';  // Ед.измерения
             }
 
@@ -316,7 +316,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
             
             echo '<td contenteditable=\'true\' onKeyPress="onlyNumberInt()">' . $countFurn .'</td>';  // Кол-во
             $table[0]['obj_furnitur_prop_id'] ? $titleNote=' title="ID-' . $table[0]['obj_furnitur_prop_id'] .'"' : $titleNote='';
-            echo '<td ' . $titleNote .'>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  // Примечание
+            echo '<td ' .$contenteditable. ' ' . $titleNote .'>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  // Примечание
             // $dataType = DType::TYPE_STRING;
              
           // }          
