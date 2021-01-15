@@ -242,10 +242,11 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
   // $arr=array();
   ($row==$start_num && $i===0) ? $head=" class='head-cm' "  : $head="" ;
   // ($head=="") ? $contenteditable=" contenteditable='true' onKeyPress='onlyNumberInt();' "  : $contenteditable="" ;
-  ($head=="") ? $contenteditable=" contenteditable='true' onkeydown=\"return checkNumberA(event.key,null)\" "  : $contenteditable="" ;
+  ($head=="") ? $contenteditable=" contenteditable='true' onkeydown=\"return checkNumberA(event.key,null)\" onfocusout=\"GlobalOrderProduct()\""  : $contenteditable="" ;
   $contenteditableSTR=" contenteditable='true'";
-  $contenteditableFloat = "contenteditable='true' onkeydown=\"return checkNumberA(event.key,'.')\" onfocusout=\"GlobalOrderProduct()\"";
-  $contenteditableComa = "contenteditable='true' onkeydown=\"return checkNumberA(event.key,',')\" onfocusout=\"GlobalOrderProduct()\"";
+  $contenteditablePos = "contenteditable='true' onkeydown=\"return checkNumberA(event.key,null)\"";
+  $contenteditableFloat = "contenteditable='true' onkeydown=\"return checkNumberA(event.key,'.')\"";
+  $contenteditableComa = "contenteditable='true' onkeydown=\"return checkNumberA(event.key,',')\" ";
   // $contenteditable=""
   $id="tr".$row."\"";
   
@@ -261,7 +262,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
             }
             
             echo '<td '.$contenteditableFloat.' id="CE_'.$id.'">' . $sheet->getCellByColumnAndRow($arrIndex[2], $row)->getCalculatedValue() .'</td>';  //СЕ
-            echo '<td '.$contenteditable.'>' . $posPart .'</td>';  //Поз.
+            echo '<td '.$contenteditablePos.'>' . $posPart .'</td>';  //Поз.
             $articul = htmlspecialchars(trim($sheet->getCellByColumnAndRow($arrIndex[4], $row)->getCalculatedValue())); //Артикул
             if ($articul !="" && $articul !="Артикул"){
               // var_dump($articul);exit();

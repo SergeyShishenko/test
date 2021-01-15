@@ -277,21 +277,22 @@ $("body").on("click","button.contextm-toggle", function(e) {
     hideMenu(); 
     redefiningContextMenu();
     resetVpibazis();   
-      
+    delete ch;
   }
 
  
 
   function trInner(newId){ // пустая строка
      var contenteditable = "contenteditable=\'true\' onkeydown=\"return checkNumberA(event.key,null)\"  onfocusout=\"GlobalOrderProduct();\"";
-    var contenteditableFloat = "contenteditable=\'true\' onkeydown=\"return checkNumberA(event.key,\'.\')\"  onfocusout=\"GlobalOrderProduct()\"";
-    var contenteditableComa = "contenteditable=\'true\' onkeydown=\"return checkNumberA(event.key,\',\')\"  onfocusout=\"GlobalOrderProduct()\"";
+     var contenteditablePos = "contenteditable=\'true\' onkeydown=\"return checkNumberA(event.key,null)\" ";
+    var contenteditableFloat = "contenteditable=\'true\' onkeydown=\"return checkNumberA(event.key,\'.\')\" ";
+    var contenteditableComa = "contenteditable=\'true\' onkeydown=\"return checkNumberA(event.key,\',\')\"  ";
     var contenteditableSTR = "contenteditable=\'true\' ";
     return '<tr id="'+newId+'">'+
     '<td '+contenteditable+'>'+GlobalOrder+'</td>'+
     '<td  '+contenteditable+'>'+GlobalProduct+'</td>'+
     '<td '+contenteditableFloat+' id="CE_'+newId+'"></td>'+
-    '<td '+contenteditable+'></td>'+
+    '<td '+contenteditablePos+'></td>'+
     '<td>-</td>'+
     '<td>-</td>'+
     '<td '+contenteditableSTR+'></td>'+
