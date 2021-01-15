@@ -283,8 +283,9 @@ $("body").on("click","button.contextm-toggle", function(e) {
  
 
   function trInner(newId){ // пустая строка
-     var contenteditable = "contenteditable=\'true\' onKeyPress=\"onlyNumberInt();\" onfocusout=\"GlobalOrderProduct();\"";
-    var contenteditableFloat = "contenteditable=\'true\' onkeydown=\"return checkFloatKey(event.key)\" onfocusout=\"GlobalOrderProduct()\"";
+     var contenteditable = "contenteditable=\'true\' onkeydown=\"return checkNumberA(event.key,null)\"  onfocusout=\"GlobalOrderProduct();\"";
+    var contenteditableFloat = "contenteditable=\'true\' onkeydown=\"return checkNumberA(event.key,\'.\')\"  onfocusout=\"GlobalOrderProduct()\"";
+    var contenteditableComa = "contenteditable=\'true\' onkeydown=\"return checkNumberA(event.key,\',\')\"  onfocusout=\"GlobalOrderProduct()\"";
     var contenteditableSTR = "contenteditable=\'true\' ";
     return '<tr id="'+newId+'">'+
     '<td '+contenteditable+'>'+GlobalOrder+'</td>'+
@@ -296,7 +297,7 @@ $("body").on("click","button.contextm-toggle", function(e) {
     '<td '+contenteditableSTR+'></td>'+
     '<td '+contenteditableSTR+'></td>'+
     '<td '+contenteditableSTR+'></td>'+
-    '<td '+contenteditableFloat+'>1</td>'+
+    '<td '+contenteditableComa+'>1</td>'+
     '<td ></td>'+
     '</tr>';
 

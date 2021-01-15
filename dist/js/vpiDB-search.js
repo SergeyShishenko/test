@@ -208,6 +208,17 @@ function checkFloatKey(key) {
     return (key >= '0' && key <= '9') || key == '.' ;
     // return (key >= '0' && key <= '9') || key == '.' || key == '(' || key == ')' || key == '-';
   }
+
+  function checkNumberA(key,coma) {
+    if (coma !== null){
+      return (key >= '0' && key <= '9') || key == coma || key == 'Backspace';  
+    } else{
+     return (key >= '0' && key <= '9');  
+    }
+    
+    
+  }
+
 var GlobalOrder;
 var GlobalProduct;
 function GlobalOrderProduct(){

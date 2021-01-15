@@ -241,9 +241,11 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
 
   // $arr=array();
   ($row==$start_num && $i===0) ? $head=" class='head-cm' "  : $head="" ;
-  ($head=="") ? $contenteditable=" contenteditable='true' onKeyPress='onlyNumberInt();' "  : $contenteditable="" ;
+  // ($head=="") ? $contenteditable=" contenteditable='true' onKeyPress='onlyNumberInt();' "  : $contenteditable="" ;
+  ($head=="") ? $contenteditable=" contenteditable='true' onkeydown=\"return checkNumberA(event.key,null)\" "  : $contenteditable="" ;
   $contenteditableSTR=" contenteditable='true'";
-  $contenteditableFloat = "contenteditable=\'true\' onkeydown=\"return checkFloatKey(event.key)\" onfocusout=\"GlobalOrderProduct()\"";
+  $contenteditableFloat = "contenteditable='true' onkeydown=\"return checkNumberA(event.key,'.')\" onfocusout=\"GlobalOrderProduct()\"";
+  $contenteditableComa = "contenteditable='true' onkeydown=\"return checkNumberA(event.key,',')\" onfocusout=\"GlobalOrderProduct()\"";
   // $contenteditable=""
   $id="tr".$row."\"";
   
@@ -315,7 +317,7 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
 
             $sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() ? $countFurn=$sheet->getCellByColumnAndRow($arrIndex[6], $row)->getCalculatedValue() : $countFurn=1;
             
-            echo '<td '.$contenteditableFloat . $countFurn .'</td>';  // Кол-во
+            echo '<td '.$contenteditableComa. '>' . $countFurn .'</td>';  // Кол-во
             $table[0]['obj_furnitur_prop_id'] ? $titleNote=' title="ID-' . $table[0]['obj_furnitur_prop_id'] .'"' : $titleNote='';
             echo '<td ' .$contenteditable. ' ' . $titleNote .'>' . $sheet->getCellByColumnAndRow($arrIndex[7], $row)->getCalculatedValue() .'</td>';  // Примечание
             // $dataType = DType::TYPE_STRING;
