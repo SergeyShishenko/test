@@ -29,5 +29,17 @@
 </head>
 <body>
 <img id="capcha" src="imagecreate.php" height="200" width="200" class="flip-vertical"/>
+<br>
+<?php
+// include "cnc.php";
+ include "classes_cnc/class_CNC.php";
+ $fcnc = new class_CNC('files/6.1_13_1.CNC');
+
+echo $fcnc->outputCNC();
+ 
+//  echo $fcnc->getNumStrCNC(0);
+//  echo "<br>";
+//  echo $fcnc->countStr();
+ ?>
 </body>
 </html>
