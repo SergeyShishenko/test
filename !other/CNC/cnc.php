@@ -1,4 +1,5 @@
 <?php 
+// !other\CNC\cnc.php
 $file = file_get_contents('6.1_13_1.CNC', FALSE, NULL, 34);//читаем с 35-го символа
 echo $file;
 
