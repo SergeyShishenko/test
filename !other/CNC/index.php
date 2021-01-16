@@ -35,11 +35,11 @@
  include "classes_cnc/class_CNC.php";
  $fcnc = new class_CNC('files/6.1_13_1.CNC');
 
+// 
+echo "<pre>";
+var_dump( $fcnc->findVal(2,"DL"));
+echo "</pre>";
 echo $fcnc->outputCNC();
-
-//  echo $fcnc->getNumStrCNC(0);
-//  echo "<br>";
-//  echo $fcnc->countStr();
  ?>
 </body>
 </html>
