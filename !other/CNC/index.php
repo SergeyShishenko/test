@@ -36,7 +36,7 @@
  $fcnc = new class_CNC('files/6.1_13_1.CNC');
 
 echo $fcnc->outputCNC();
- 
+
 //  echo $fcnc->getNumStrCNC(0);
 //  echo "<br>";
 //  echo $fcnc->countStr();
