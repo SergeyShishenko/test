@@ -37,7 +37,7 @@ class class_CNC
        
         for($i=0; $i < count($this->$arrStr); $i++) {
             echo "<br>";
-            echo $this->getStrByNum($i);
+            echo $i."~".$this->getStrByNum($i);
         
          }
     }
@@ -54,11 +54,21 @@ class class_CNC
         $row=$this->getStrByNum($numrow);
         $arr = explode($separator, $row);
          $arr =array_map(function($p) { return explode($this->mod,$p); }, $arr);
-        // if ($mod != null){
 
-
-        // }
-        return $arr;
+         foreach ($arr as $k => $innerarr) {
+            // $arr[3] будет перезаписываться значениями $arr при каждой итерации цикла
+            // echo "{$k} <br>";
+            // foreach ($innerarr as $j => $value) {
+            for($j=0; $j < count($innerarr); $j++) {
+                if ($innerarr[$j]==$key){
+                   echo "{$key} = {$innerarr[$j+1]} <br>"; 
+                   return $innerarr[$j+1];
+                }
+                
+            }
+            // print_r($arr);
+        }
+        // return $arr;
 
     }
 

@@ -36,9 +36,16 @@
  $fcnc = new class_CNC('files/6.1_13_1.CNC');
 
 // 
-echo "<pre>";
-var_dump( $fcnc->findVal(2,"DL"));
-echo "</pre>";
+// echo "<pre>";
+// var_dump( $fcnc->findVal(2,"DL"));
+// echo "</pre>";
+// echo "<pre>";
+// var_dump( $fcnc->findVal(49,"#3"));
+// echo "</pre>";
+echo $fcnc->findVal(2,"DL")."<br>";
+echo $fcnc->findVal(2,"DH")."<br>";
+echo $fcnc->findVal(2,"DS")."<br>";
+
 echo $fcnc->outputCNC();
  ?>
 </body>
