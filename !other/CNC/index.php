@@ -42,9 +42,19 @@
 // echo "<pre>";
 // var_dump( $fcnc->findVal(49,"#3"));
 // echo "</pre>";
-echo $fcnc->findVal(2,"DL")."<br>";
-echo $fcnc->findVal(2,"DH")."<br>";
-echo $fcnc->findVal(2,"DS")."<br>";
+
+// echo $fcnc->findVal(2,"DL")."<br>";
+echo $fcnc->nameFile()."<br>";
+echo "Длина = ".$fcnc->getDL()."<br>";
+echo "Ширина = ".$fcnc->getDH()."<br>";
+echo "Толщина = ".$fcnc->getDS()."<br>";
+
+
+
+
+// echo $fcnc->findVal(2,"DH")."<br>";
+// echo $fcnc->findVal(2,"DS")."<br>";
+echo $fcnc->findNumByStr("W#89{")."<br>";
 
 echo $fcnc->outputCNC();
  ?>
