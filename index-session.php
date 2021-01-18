@@ -196,7 +196,8 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
     </div>
   </div>
 </div>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> 
+<!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>  -->
+<script src="./dist/js/jquery.min.js"></script>
 <script  src="./dist/js/index-form.js?v=<?php echo $indexform; ?> "></script> 
 </body>
 </html>
