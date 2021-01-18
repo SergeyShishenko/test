@@ -56,6 +56,8 @@ echo "Толщина = ".$fcnc->getDS()."<br>";
 // echo $fcnc->findVal(2,"DS")."<br>";
 echo $fcnc->findNumByStr("W#89{")."<br>";
 
+
+echo $fcnc->checkCNC();
 echo $fcnc->outputCNC();
  ?>
 </body>

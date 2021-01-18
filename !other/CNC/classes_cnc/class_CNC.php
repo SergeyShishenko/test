@@ -167,7 +167,7 @@ class class_CNC
      *
      * @var Sthing
      */
-    private $currentBlock; 
+    private $currentBlock="start"; 
 
 
 
@@ -271,6 +271,56 @@ class class_CNC
                 // echo "{$key} = {$innerarr[$j+1]} <br>"; 
                return "Номер строки ".$i;
             }
+         }
+    }
+
+    public function checkCNC(){
+       
+        for($i=0; $i < count($this->$arrStr); $i++) {        
+            $chstr = $this->$arrStr[$i];        
+            if (strpos($chstr, "SIDE#1{") !== false){
+                $this->currentBlock = "SIDE#1{";
+            //    echo $this->currentBlock."<br>";
+            }
+            if (strpos($chstr, "SIDE#2{") !== false){
+                $this->currentBlock = "SIDE#2{";
+            //    echo $this->currentBlock."<br>";
+            }
+            if (strpos($chstr, "SIDE#3{") !== false){
+                $this->currentBlock = "SIDE#3{";
+            //    echo $this->currentBlock."<br>";
+            }
+            if (strpos($chstr, "SIDE#4{") !== false){
+                $this->currentBlock = "SIDE#4{";
+            //    echo $this->currentBlock."<br>";
+            }
+            if (strpos($chstr, "SIDE#5{") !== false){
+                $this->currentBlock = "SIDE#5{";
+            //    echo $this->currentBlock."<br>";
+            }
+            if (strpos($chstr, "SIDE#6{") !== false){
+                $this->currentBlock = "SIDE#6{";
+            //    echo $this->currentBlock."<br>";
+            }
+            switch ($this->currentBlock) {
+                case "SIDE#1{":
+                    echo "Пласть"."<br>";
+                    break;
+                case "SIDE#3{":
+                    echo "Торец снизу"."<br>";
+                    break;
+                case "SIDE#4{":
+                    echo "Торец справа"."<br>";
+                    break;
+                case "SIDE#5{":
+                    echo "Торец сверху"."<br>";
+                    break;
+                case "SIDE#6{":
+                    echo "Торец слева"."<br>";
+                    break;
+             
+            }
+        
          }
     }
 
