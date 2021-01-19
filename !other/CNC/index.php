@@ -33,7 +33,7 @@
 <?php
 // include "cnc.php";
  include "classes_cnc/class_CNC.php";
- $fcnc = new class_CNC('files/6.1_140_1.CNC');
+ $fcnc = new class_CNC('files/1.1_81_1.CNC');
 
 // 
 // echo "<pre>";
@@ -54,9 +54,9 @@ echo "Толщина = ".$fcnc->getDS()."<br>";
 
 // echo $fcnc->findVal(2,"DH")."<br>";
 // echo $fcnc->findVal(2,"DS")."<br>";
-echo $fcnc->findNumByStr("W#89{")."<br>";
+// echo $fcnc->findNumByStr("W#89{")."<br>";
 
-
+echo $fcnc->outputCNC();
 echo $fcnc->checkCNC();
 echo $fcnc->outputCNC();
  ?>
