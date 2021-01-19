@@ -33,7 +33,7 @@
 <?php
 // include "cnc.php";
  include "classes_cnc/class_CNC.php";
- $fcnc = new class_CNC('files/6.1_13_1.CNC');
+ $fcnc = new class_CNC('files/6.1_140_1.CNC');
 
 // 
 // echo "<pre>";

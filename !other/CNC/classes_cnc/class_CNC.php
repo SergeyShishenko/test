@@ -277,46 +277,65 @@ class class_CNC
     public function checkCNC(){
        
         for($i=0; $i < count($this->$arrStr); $i++) {        
-            $chstr = $this->$arrStr[$i];        
-            if (strpos($chstr, "SIDE#1{") !== false){
-                $this->currentBlock = "SIDE#1{";
-            //    echo $this->currentBlock."<br>";
+                  
+            if (strpos($this->$arrStr[$i], "SIDE#1{") !== false){
+                $this->currentBlock = "SIDE#1{";            
             }
-            if (strpos($chstr, "SIDE#2{") !== false){
-                $this->currentBlock = "SIDE#2{";
-            //    echo $this->currentBlock."<br>";
+            if (strpos($this->$arrStr[$i], "SIDE#2{") !== false){
+                $this->currentBlock = "SIDE#2{";            
             }
-            if (strpos($chstr, "SIDE#3{") !== false){
-                $this->currentBlock = "SIDE#3{";
-            //    echo $this->currentBlock."<br>";
+            if (strpos($this->$arrStr[$i], "SIDE#3{") !== false){
+                $this->currentBlock = "SIDE#3{";            
             }
-            if (strpos($chstr, "SIDE#4{") !== false){
-                $this->currentBlock = "SIDE#4{";
-            //    echo $this->currentBlock."<br>";
+            if (strpos($this->$arrStr[$i], "SIDE#4{") !== false){
+                $this->currentBlock = "SIDE#4{";            
             }
-            if (strpos($chstr, "SIDE#5{") !== false){
-                $this->currentBlock = "SIDE#5{";
-            //    echo $this->currentBlock."<br>";
+            if (strpos($this->$arrStr[$i], "SIDE#5{") !== false){
+                $this->currentBlock = "SIDE#5{";            
             }
-            if (strpos($chstr, "SIDE#6{") !== false){
-                $this->currentBlock = "SIDE#6{";
-            //    echo $this->currentBlock."<br>";
+            if (strpos($this->$arrStr[$i], "SIDE#6{") !== false){
+                $this->currentBlock = "SIDE#6{";            
             }
             switch ($this->currentBlock) {
                 case "SIDE#1{":
                     echo "Пласть"."<br>";
+                    if (strpos($this->$arrStr[$i], "W#81{") !== false){                  
+                       echo "W#81{<br>"; // Сверление
+                       echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления
+                       echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>";// Диаметр сверления
+                    }
                     break;
                 case "SIDE#3{":
                     echo "Торец снизу"."<br>";
+                    if (strpos($this->$arrStr[$i], "W#81{") !== false){                  
+                        echo "W#81{<br>"; // Сверление
+                        echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления
+                        echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>";// Диаметр сверления
+                     }
                     break;
                 case "SIDE#4{":
                     echo "Торец справа"."<br>";
+                    if (strpos($this->$arrStr[$i], "W#81{") !== false){                  
+                        echo "W#81{<br>"; // Сверление
+                        echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления
+                        echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>";// Диаметр сверления
+                     }
                     break;
                 case "SIDE#5{":
                     echo "Торец сверху"."<br>";
+                    if (strpos($this->$arrStr[$i], "W#81{") !== false){                  
+                        echo "W#81{<br>"; // Сверление
+                        echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления
+                        echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>";// Диаметр сверления
+                     }
                     break;
                 case "SIDE#6{":
                     echo "Торец слева"."<br>";
+                    if (strpos($this->$arrStr[$i], "W#81{") !== false){                  
+                        echo "W#81{<br>"; // Сверление
+                        echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления 
+                        echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>";// Диаметр сверления   
+                     }
                     break;
              
             }
