@@ -32,8 +32,15 @@
 <br>
 <?php
 // include "cnc.php";
+
+ include "classes_cnc/class_ReadingCNCfiles.php";
  include "classes_cnc/class_CNC.php";
+ 
+
+ $cncsess= new class_ReadingCNCfiles('files');
  $fcnc = new class_CNC('files/1.1_81_1.CNC');
+
+ $cncsess->output();
 
 // 
 // echo "<pre>";
@@ -44,6 +51,7 @@
 // echo "</pre>";
 
 // echo $fcnc->findVal(2,"DL")."<br>";
+
 echo $fcnc->nameFile()."<br>";
 echo "Длина = ".$fcnc->getDL()."<br>";
 echo "Ширина = ".$fcnc->getDH()."<br>";
@@ -56,9 +64,15 @@ echo "Толщина = ".$fcnc->getDS()."<br>";
 // echo $fcnc->findVal(2,"DS")."<br>";
 // echo $fcnc->findNumByStr("W#89{")."<br>";
 
+
+
 echo $fcnc->outputCNC();
+echo "<br>****************<br>";
 echo $fcnc->checkCNC();
+echo "<br>****************<br>";
 echo $fcnc->outputCNC();
+
+
  ?>
 </body>
 </html>

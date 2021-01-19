@@ -302,11 +302,11 @@ class class_CNC
                     if (strpos($this->$arrStr[$i], "W#81{") !== false){                  
                        echo "W#81{<br>"; // Сверление
                        echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления
-                       echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>";// Диаметр сверления
+                       echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>br>";// Диаметр сверления
                     }
             }
             if ($this->currentBlock == "SIDE#3{" || $this->currentBlock == "SIDE#4{" || $this->currentBlock == "SIDE#5{" || $this->currentBlock == "SIDE#6{"  ){
-                echo "Торец ".$this->currentBlock."<br>";
+                // echo "Торец ".$this->currentBlock."<br>";
                     if (strpos($this->$arrStr[$i], "W#81{") !== false){ 
                         $this->checkDepth($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
                      }
@@ -357,11 +357,20 @@ class class_CNC
 
     private function checkDepth($depth,$diam,$i){
 
-        echo  $depth ."<br>";// Глубина сверления  
-        echo  "Диаметр ".$diam."<br>";// Диаметр сверления
+        
         if ($diam == 5 && $depth < -35 ){
-            echo  "Ошибка!<br>";
+            echo  $depth ."<br>";// Глубина сверления  
+            echo  "Диаметр ".$diam."<br>";// Диаметр сверления
+            echo "В тореце ".$this->currentBlock."<br>";
+            echo  "Ошибка!<br><br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-35', $this->$arrStr[$i]);
+        } 
+        if ($diam == 8 && $depth < -39 ){
+            echo  $depth ."<br>";// Глубина сверления  
+            echo  "Диаметр ".$diam."<br>";// Диаметр сверления
+            echo "В тореце ".$this->currentBlock."<br>";
+            echo  "Ошибка!<br><br>";
+            $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
         } 
 
     }
