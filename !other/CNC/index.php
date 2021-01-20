@@ -39,6 +39,8 @@
 
  $cncsess= new class_ReadingCNCfiles('files/1');
  $fcnc = new class_CNC('files/1/1.1_81_1.CNC');
+ echo "<br>++++++++++++++++<br><br>";
+ var_dump($cncsess->getArr());
 
  echo "<br>****************<br><br>";
  $cncsess->output();
