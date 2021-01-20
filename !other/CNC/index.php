@@ -41,6 +41,7 @@
  $fcnc = new class_CNC('files/1/1.1_81_1.CNC');
  echo "<br>++++++++++++++++<br><br>";
 
+
 //   $cncsess->getArr();
 
  echo "<br>****************<br><br>";
@@ -58,8 +59,9 @@ echo "Толщина = ".$fcnc->getDS()."<br>";
 echo "<br>****************<br>";
 echo $fcnc->checkCNC();
 echo "<br>****************<br>";
-// echo $fcnc->outputCNC();
- $fcnc->correctionRecord();
+echo $fcnc->err;
+echo $fcnc->outputCNC();
+$fcnc->correctionRecord();
 
 
  ?>

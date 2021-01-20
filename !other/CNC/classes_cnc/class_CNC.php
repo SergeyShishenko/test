@@ -169,6 +169,10 @@ class class_CNC
      */
     private $currentBlock="start"; 
 
+    private $currentRow=-1; 
+
+    public $err="";
+
 
 
     public function __construct($fileCNC) {
@@ -276,61 +280,70 @@ class class_CNC
 
     public function checkCNC(){
        
-        for($i=0; $i < count($this->$arrStr); $i++) {        
+        for($i=0; $i < count($this->$arrStr); $i++) { 
+            
+            if ($this->currentRow >= 0){
+                $this->currentRow++;
+            }
                   
             if (strpos($this->$arrStr[$i], "SIDE#1{") !== false){
-                $this->currentBlock = "SIDE#1{";            
+                $this->currentBlock = "SIDE#1{";
+                    $this->currentRow=0;            
             }
             if (strpos($this->$arrStr[$i], "SIDE#2{") !== false){
-                $this->currentBlock = "SIDE#2{";            
+                $this->currentBlock = "SIDE#2{";
+                    $this->currentRow=0;             
             }
             if (strpos($this->$arrStr[$i], "SIDE#3{") !== false){
-                $this->currentBlock = "SIDE#3{";            
+                $this->currentBlock = "SIDE#3{";
+                    $this->currentRow=0;             
             }
             if (strpos($this->$arrStr[$i], "SIDE#4{") !== false){
-                $this->currentBlock = "SIDE#4{";            
+                $this->currentBlock = "SIDE#4{"; 
+                    $this->currentRow=0;            
             }
             if (strpos($this->$arrStr[$i], "SIDE#5{") !== false){
-                $this->currentBlock = "SIDE#5{";            
+                $this->currentBlock = "SIDE#5{";
+                    $this->currentRow=0;             
             }
             if (strpos($this->$arrStr[$i], "SIDE#6{") !== false){
-                $this->currentBlock = "SIDE#6{";            
+                $this->currentBlock = "SIDE#6{"; 
+                    $this->currentRow=0;            
             }
+
+
 
             if ($this->currentBlock == "SIDE#1{"){
                 
-                    if (strpos($this->$arrStr[$i], "W#81{") !== false){ 
-                       echo "Поверхность 1"."<br>";                 
-                       echo "W#81{<br>"; // Сверление
+                    if (strpos($this->$arrStr[$i], "W#81{") !== false){ // Сверление
+                       echo "Поверхность 1"."<br>"
+                       ."Строка ". $this->currentRow ."<br>";
                        echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления
-                       echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>br>";// Диаметр сверления
+                       echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>***<br>";// Диаметр сверления
                     }
             }
-            if ($this->currentBlock == "SIDE#3{" || $this->currentBlock == "SIDE#4{" || $this->currentBlock == "SIDE#5{" || $this->currentBlock == "SIDE#6{"  ){
-                // echo "Торец ".$this->currentBlock."<br>";
+            if ($this->currentBlock == "SIDE#3{" || $this->currentBlock == "SIDE#4{" || $this->currentBlock == "SIDE#5{" || $this->currentBlock == "SIDE#6{"  ){              
                     if (strpos($this->$arrStr[$i], "W#81{") !== false){ 
-                        $this->checkDepth($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
+                        $this->checkDepth3($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
                      }
             }           
         
         }
      }
 
-    private function checkDepth($depth,$diam,$i){
-
-        
-        if ($diam == 5 && $depth < -35 ){
-            echo  $depth ."<br>";// Глубина сверления  
-            echo  "Диаметр ".$diam."<br>";// Диаметр сверления
-            echo "Поверхность ".substr($this->currentBlock, -2,1)."<br>";
-            echo  "Ошибка!<br><br>";
+    private function checkDepth3($depth,$diam,$i){        
+        if ($diam == 5 && $depth < -35 ){ 
+           $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." " 
+            ."Строка ". $this->currentRow 
+            ." диаметр ".$diam."; глубина ".$depth
+            ." (Ошибка!) исправлено: -35<br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-35', $this->$arrStr[$i]);
         } 
         if ($diam == 8 && $depth < -39 ){
-            echo  $depth ."<br>";// Глубина сверления  
-            echo  "Диаметр ".$diam."<br>";// Диаметр сверления
-            echo "Поверхность ".substr($this->currentBlock, -2,1)."<br>";
-            echo  "Ошибка!<br><br>";
+            $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." "
+            ."Строка ". $this->currentRow 
+            ." диаметр ".$diam."; глубина ".$depth
+            ." (Ошибка!) исправлено: -38<br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
         } 
 
