@@ -21,7 +21,7 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                             <div class="overlay"></div>                           
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-dp_1.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_1-v4.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-dp_1-v5.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Лист титульный ДП"                               

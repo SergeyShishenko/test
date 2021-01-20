@@ -18,7 +18,7 @@ class class_ReadingCNCfiles
             echo "Директория не найдена<br>";
         }
            
-
+        $this->addObj();
     } 
     /**
      * Вывод всех имен файлов 
@@ -41,7 +41,7 @@ class class_ReadingCNCfiles
 
     public function getArr(){
 
-        return $this->arrNameFile;
+        return $this->arrFile;
     }
 }
 
