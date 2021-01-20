@@ -298,8 +298,9 @@ class class_CNC
             }
 
             if ($this->currentBlock == "SIDE#1{"){
-                echo "Пласть"."<br>";
-                    if (strpos($this->$arrStr[$i], "W#81{") !== false){                  
+                
+                    if (strpos($this->$arrStr[$i], "W#81{") !== false){ 
+                       echo "Поверхность 1"."<br>";                 
                        echo "W#81{<br>"; // Сверление
                        echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления
                        echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>br>";// Диаметр сверления
@@ -310,47 +311,7 @@ class class_CNC
                     if (strpos($this->$arrStr[$i], "W#81{") !== false){ 
                         $this->checkDepth($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
                      }
-            }
-            // switch ($this->currentBlock) {
-            //     case "SIDE#1{":
-            //         echo "Пласть"."<br>";
-            //         if (strpos($this->$arrStr[$i], "W#81{") !== false){                  
-            //            echo "W#81{<br>"; // Сверление
-            //            echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления
-            //            echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>";// Диаметр сверления
-            //         }
-            //         break;
-            //     case "SIDE#3{" :
-            //         echo "Торец ".$this->currentBlock."<br>";
-            //         if (strpos($this->$arrStr[$i], "W#81{") !== false){                  
-                     
-            //             $this->checkDepth($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
-            //          }
-            //         break;
-                // case "SIDE#4{":
-                //     echo "Торец справа"."<br>";
-                //     if (strpos($this->$arrStr[$i], "W#81{") !== false){                  
-                       
-                //             $this->checkDepth($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
-                //      }
-                //     break;
-                // case "SIDE#5{":
-                //     echo "Торец сверху"."<br>";
-                //     if (strpos($this->$arrStr[$i], "W#81{") !== false){                
-                      
-                //             $this->checkDepth($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
-
-                //      }
-                //     break;
-                // case "SIDE#6{":
-                //     echo "Торец слева"."<br>";
-                //     if (strpos($this->$arrStr[$i], "W#81{") !== false){                  
-                 
-                //             $this->checkDepth($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
-                //      }
-                //     break;
-             
-    //         }
+            }           
         
         }
      }
@@ -361,14 +322,14 @@ class class_CNC
         if ($diam == 5 && $depth < -35 ){
             echo  $depth ."<br>";// Глубина сверления  
             echo  "Диаметр ".$diam."<br>";// Диаметр сверления
-            echo "В тореце ".$this->currentBlock."<br>";
+            echo "Поверхность ".substr($this->currentBlock, -2,1)."<br>";
             echo  "Ошибка!<br><br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-35', $this->$arrStr[$i]);
         } 
         if ($diam == 8 && $depth < -39 ){
             echo  $depth ."<br>";// Глубина сверления  
             echo  "Диаметр ".$diam."<br>";// Диаметр сверления
-            echo "В тореце ".$this->currentBlock."<br>";
+            echo "Поверхность ".substr($this->currentBlock, -2,1)."<br>";
             echo  "Ошибка!<br><br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
         } 

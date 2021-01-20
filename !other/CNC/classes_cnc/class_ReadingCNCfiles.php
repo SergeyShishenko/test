@@ -20,6 +20,7 @@ class class_ReadingCNCfiles
            
         $this->addObj();
     } 
+    
     /**
      * Вывод всех имен файлов 
      *
@@ -31,17 +32,28 @@ class class_ReadingCNCfiles
 
         }
     }
+
+
     private function addObj(){
         for ($i=0; $i < count($this->arrNameFile); $i++) { 
-            $this->arrFile[$i]=$this->arrNameFile[$i];
+            $this->arrFile[$i]=new class_CNC( $this->folderCNC."/".$this->arrNameFile[$i]);
 
         }
+
     }
 
 
     public function getArr(){
 
-        return $this->arrFile;
+        for ($i=0; $i < count($this->arrFile); $i++) { 
+           echo  $this->arrFile[$i]->nameFile()." ........ "
+           .$this->arrFile[$i]->getDL()." x "
+           .$this->arrFile[$i]->getDH()." x "
+           .$this->arrFile[$i]->getDS()
+           ."<br>";
+
+        }
+      
     }
 }
 

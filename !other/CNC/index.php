@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="CHPU.bmp" type="image/x-icon">  
-    <title>Document</title>
+    <title>ЧПУ</title>
     <style>
     /* Для отражения по горизонтали */
     .flip-horizontal{
@@ -40,23 +40,25 @@
  $cncsess= new class_ReadingCNCfiles('files/1');
  $fcnc = new class_CNC('files/1/1.1_81_1.CNC');
  echo "<br>++++++++++++++++<br><br>";
- var_dump($cncsess->getArr());
+
+//   $cncsess->getArr();
 
  echo "<br>****************<br><br>";
- $cncsess->output();
+//  $cncsess->output();// вывод всех наименований
+//  $cncsess->getArr();// вывод всех наименований
 
-echo "<br>****************<br><br>";
+echo "<br>!!!!!!!!!<br><br>";
 echo $fcnc->nameFile()."<br>";
 echo "Длина = ".$fcnc->getDL()."<br>";
 echo "Ширина = ".$fcnc->getDH()."<br>";
 echo "Толщина = ".$fcnc->getDS()."<br>";
 
 
-echo $fcnc->outputCNC();
+// echo $fcnc->outputCNC();
 echo "<br>****************<br>";
 echo $fcnc->checkCNC();
 echo "<br>****************<br>";
-echo $fcnc->outputCNC();
+// echo $fcnc->outputCNC();
  $fcnc->correctionRecord();
 
 
