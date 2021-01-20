@@ -375,6 +375,11 @@ class class_CNC
 
     }
 
+    public function correctionRecord(){  
+
+        file_put_contents("files/correct1/".$this->nameFile() , implode("\n", $this->$arrStr ));
+    }
+
 }// end class
 
 ?>
