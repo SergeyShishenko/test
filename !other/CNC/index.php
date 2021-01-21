@@ -55,12 +55,13 @@ echo "Ширина = ".$fcnc->getDH()."<br>";
 echo "Толщина = ".$fcnc->getDS()."<br>";
 
 
-// echo $fcnc->outputCNC();
+echo $fcnc->outputCNC();
 echo "<br>****************<br>";
 echo $fcnc->checkCNC();
 echo "<br>****************<br>";
 echo $fcnc->err;
 echo $fcnc->outputCNC();
+
 $fcnc->correctionRecord();
 
 
