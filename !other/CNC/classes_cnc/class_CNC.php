@@ -378,9 +378,14 @@ class class_CNC
 
     }
 
-    public function correctionRecord(){  
+    public function correctionRecord(){ 
+        $correct_folder= "correct1";// сделать свойством
+        $dir = "files/".$correct_folder ."/"; // Например /var/www/localhost/public
+        if (!file_exists($dir)) { 
+            mkdir($dir, 0777, true);
+        }
 
-        file_put_contents("files/correct1/".$this->nameFile() , implode("\n", $this->$arrStr ));
+        file_put_contents($dir.$this->nameFile() , implode("\n", $this->$arrStr ));
     }
 
 }// end class
