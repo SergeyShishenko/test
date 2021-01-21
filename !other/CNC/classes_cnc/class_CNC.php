@@ -316,12 +316,15 @@ class class_CNC
             if ($this->currentBlock == "SIDE#1{"){
                 
                     if (strpos($this->$arrStr[$i], "W#81{") !== false){ // Сверление
-                       echo "Поверхность 1"."<br>"
-                       ."Строка ". $this->currentRow ."<br>";
-                       echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления
-                       echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>***<br>";// Диаметр сверления
+                    //    echo "Поверхность 1"."<br>"
+                    //    ."Строка ". $this->currentRow ."<br>";
+                    //    echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления
+                    //    echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>***<br>";// Диаметр сверления
+                       $this->checkDepth1($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
                     }
             }
+
+
             if ($this->currentBlock == "SIDE#3{" || $this->currentBlock == "SIDE#4{" || $this->currentBlock == "SIDE#5{" || $this->currentBlock == "SIDE#6{"  ){              
                     if (strpos($this->$arrStr[$i], "W#81{") !== false){ 
                         $this->checkDepth3($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
@@ -346,6 +349,24 @@ class class_CNC
             ." (Ошибка!) исправлено: -38<br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
         } 
+
+    }
+    private function checkDepth1($depth,$diam,$i){  
+        echo "Строка ". $this->currentRow . " ".($this->DS-3)." < ". abs($depth) . " && ". abs($depth) . " <= " . ($this->DS) ."<br>";
+        if (($this->DS-3) < abs($depth) && abs($depth) <= $this->DS ){ 
+           $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." " 
+            ."Строка ". $this->currentRow 
+            ." диаметр ".$diam."; глубина ".$depth
+            ." (Ошибка!) исправлено: ?<br>";
+            // $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-3 5', $this->$arrStr[$i]);
+        } 
+        // if ($diam == 8 && $depth < -39 ){
+        //     $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." "
+        //     ."Строка ". $this->currentRow 
+        //     ." диаметр ".$diam."; глубина ".$depth
+        //     ." (Ошибка!) исправлено: -38<br>";
+        //     $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
+        // } 
 
     }
 
