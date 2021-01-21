@@ -313,13 +313,8 @@ class class_CNC
 
 
 
-            if ($this->currentBlock == "SIDE#1{"){
-                
-                    if (strpos($this->$arrStr[$i], "W#81{") !== false){ // Сверление
-                    //    echo "Поверхность 1"."<br>"
-                    //    ."Строка ". $this->currentRow ."<br>";
-                    //    echo  $this->findVal($this->$arrStr[$i],"#3")."<br>";// Глубина сверления
-                    //    echo  "Диаметр ".$this->findVal($this->$arrStr[$i],"#1002")."<br>***<br>";// Диаметр сверления
+            if ($this->currentBlock == "SIDE#1{") {                
+                    if (strpos($this->$arrStr[$i], "W#81{") !== false){ // Сверление                 
                        $this->checkDepth1($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
                     }
             }
@@ -331,7 +326,12 @@ class class_CNC
                      }
             }           
         
-        }
+        }// for
+
+       if ($this->err != ""){
+            $this->correctionRecord();
+       }
+
      }
 
     private function checkDepth3($depth,$diam,$i){        
@@ -352,7 +352,7 @@ class class_CNC
 
     }
     private function checkDepth1($depth,$diam,$i){  
-        echo "Строка ". $this->currentRow . " ".($this->DS-3)." < ". abs($depth) . " && ". abs($depth) . " < " . ($this->DS) ."<br>";
+        // echo "Строка ". $this->currentRow . " ".($this->DS-3)." < ". abs($depth) . " && ". abs($depth) . " < " . ($this->DS) ."<br>";
         if (($this->DS-3) < abs($depth) && abs($depth) < $this->DS ){ 
            $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." " 
             ."Строка ". $this->currentRow 

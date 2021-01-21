@@ -39,30 +39,39 @@
 
  $cncsess= new class_ReadingCNCfiles('files/1');
  $fcnc = new class_CNC('files/1/1.1_81_1.CNC');
- echo "<br>++++++++++++++++<br><br>";
+//  $fcnc = new class_CNC('files/1/1.1_82_1.CNC');
+
+$cncsess->checkAllCNC();
+
+
+
+  echo "<br>++++++++++++++++<br><br>";
 
 
 //   $cncsess->getArr();
 
- echo "<br>****************<br><br>";
+//  echo "<br>****************<br><br>";
 //  $cncsess->output();// вывод всех наименований
 //  $cncsess->getArr();// вывод всех наименований
 
-echo "<br>!!!!!!!!!<br><br>";
-echo $fcnc->nameFile()."<br>";
-echo "Длина = ".$fcnc->getDL()."<br>";
-echo "Ширина = ".$fcnc->getDH()."<br>";
-echo "Толщина = ".$fcnc->getDS()."<br>";
+// echo "<br>!!!!!!!!!<br><br>";
+
+// echo $fcnc->nameFile()."<br>";
+// echo "Длина = ".$fcnc->getDL()."<br>";
+// echo "Ширина = ".$fcnc->getDH()."<br>";
+// echo "Толщина = ".$fcnc->getDS()."<br>";
 
 
-echo $fcnc->outputCNC();
-echo "<br>****************<br>";
-echo $fcnc->checkCNC();
-echo "<br>****************<br>";
-echo $fcnc->err;
-echo $fcnc->outputCNC();
+// echo $fcnc->outputCNC();
+// echo "<br>****************<br>";
+// echo $fcnc->checkCNC();
+// echo "<br>***ОШИБКИ***<br>";
+// echo $fcnc->err;
+// // var_dump($fcnc->err);
+// echo "<br>****************<br>";
+// echo $fcnc->outputCNC();
 
-$fcnc->correctionRecord();
+// $fcnc->correctionRecord();
 
 
  ?>
