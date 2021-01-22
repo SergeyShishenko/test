@@ -9,7 +9,7 @@
         jQuery.event.props.push('dataTransfer');
         // alert();
         // Максимальное количество загружаемых изображений за одни раз
-        var maxFiles = 1;
+        // var maxFiles = 1000;
         // var countDOCFiles = 0;
         // var countPDFFiles = 0;
         // var countXLSFiles = 0;
@@ -74,19 +74,14 @@
             var files = e.dataTransfer.files;
             //alert(files[0].name);
             // Проверяем на максимальное количество файлов
-           // alert(files[0].name.split(".").slice(-1)[0]);
+            alert(files[0].name.split(".").slice(-1)[0]);
             if (files[0].name.split(".").slice(-1)[0] =="CNC" || files[0].name.split(".").slice(-1)[0] =="cnc"){
-                maxFiles=100; cnc=true;              
+                // maxFiles=100;
+                 cnc=true;              
             }
             else{cnc=false;}
-
-            if (files.length <= maxFiles) {
-                // Передаем массив с файлами в функцию загрузки на предпросмотр
-                loadInView(files);
-            } else {
-                alert('Вы не можете загружать больше '+maxFiles+' файла!'); 
-                files.length = 0; return;
-            }
+            loadInView(files);
+            
        
         // $("#dropped-files").sortable({ cancel: '.note' });
         // $('#upload-button .upload').trigger('click');
@@ -96,7 +91,8 @@
     // Заполняем массив выбранными изображениями
     var files = $(this)[0].files;
     // Проверяем на максимальное количество файлов
- if (  files.length <= maxFiles) {
+
+
     // Передаем массив с файлами в функцию загрузки на предпросмотр
     loadInView(files);
          // Очищаем инпут файл путем сброса формы
@@ -105,10 +101,6 @@
            this.reset();
          });
 
- } else {
-    alert('Вы не можете загружать больше '+maxFiles+' файла!'); 
-    files.length = 0;
- }
 });
         
         var ext="";
@@ -121,7 +113,7 @@
             
             // Для каждого файла
             
-            $.each(files, function(index, file) { 
+            $.each(files, function(index) { 
                 //  console.log(files[index].type);	
                 //  console.log(files[index].name);	
 
@@ -130,73 +122,71 @@
                 var clickedEXP = files[index].name.split("."); //Разбиваем строку (Split работает аналогично PHP explode)
                 var EXP = clickedEXP.slice(-1)[0]; //и получаем номер из массива
                // console.log(clickedEXP.slice(-1)[0]);
-                console.log(EXP);
+                // console.log(EXP);
                 // console.log(files[0].result);
-                if (cnc){ readFile(file);}
+                // if (cnc){ readFile(file);}
                  
                // console.log("type "+files[index].type);
-            var tmime="";	
+            // var tmime="";	
             
             
-	// Несколько оповещений при попытке загрузить не изображение
-    // if (EXP!="csv") {
+	// // Несколько оповещений при попытке загрузить не изображение
+    // // if (EXP!="csv") {
 				
-    //     if(errMessage == 0) {
-    //         $('#drop-files p').html('Эй! только файлы формата CSV !');
-    //         ++errMessage;
-    //     }
-    //     else if(errMessage == 1) {
-    //         $('#drop-files p').html('Стоп! Загружаются только файлы с расширением .CSV !');
-    //         ++errMessage;
-    //     }
-    //     else if(errMessage == 2) {
-    //         $('#drop-files p').html("Не умеешь читать? Только файлы CSV !");
-    //         ++errMessage;
-    //     }
-    //     else if(errMessage == 3) {
-    //         $('#drop-files p').html("Хорошо! Продолжай в том же духе");
-    //         errMessage = 0;
-    //     }
-    //     return false;
-    // }
+    // //     if(errMessage == 0) {
+    // //         $('#drop-files p').html('Эй! только файлы формата CSV !');
+    // //         ++errMessage;
+    // //     }
+    // //     else if(errMessage == 1) {
+    // //         $('#drop-files p').html('Стоп! Загружаются только файлы с расширением .CSV !');
+    // //         ++errMessage;
+    // //     }
+    // //     else if(errMessage == 2) {
+    // //         $('#drop-files p').html("Не умеешь читать? Только файлы CSV !");
+    // //         ++errMessage;
+    // //     }
+    // //     else if(errMessage == 3) {
+    // //         $('#drop-files p').html("Хорошо! Продолжай в том же духе");
+    // //         errMessage = 0;
+    // //     }
+    // //     return false;
+    // // }
 
-                    if (files[index].type.match('image.*')) {
+    //                 if (files[index].type.match('image.*')) {
 
-                        if(files[index].type.match('dwg.*')) {						
-                            tmime="dwg";
-                            // console.log(tmime);	                       
-                        }else{tmime="img";
-                        // console.log(tmime);	
-                        }
-                    }else if(files[index].type.match('pdf.*')) {
-                        // alert("PDF"); 
-                        tmime="pdf";
-                        // console.log(tmime);									
+    //                     if(files[index].type.match('dwg.*')) {						
+    //                         tmime="dwg";
+    //                         // console.log(tmime);	                       
+    //                     }else{tmime="img";
+    //                     // console.log(tmime);	
+    //                     }
+    //                 }else if(files[index].type.match('pdf.*')) {
+    //                     // alert("PDF"); 
+    //                     tmime="pdf";
+    //                     // console.log(tmime);									
                         
-                    }else if(files[index].type.match('word.*')) {
-                        // alert("word");
-                        tmime="word";
-                        // console.log(tmime);
-                        // countDOCFiles++;				
-                    }else if((files[index].type.match('sheet.*')) || (files[index].type.match('excel.*'))) {
-                        // alert("excel");
-                        tmime="excel";	
-                        console.log(tmime);				 
+    //                 }else if(files[index].type.match('word.*')) {
+    //                     // alert("word");
+    //                     tmime="word";
+    //                     // console.log(tmime);
+    //                     // countDOCFiles++;				
+    //                 }else if((files[index].type.match('sheet.*')) || (files[index].type.match('excel.*'))) {
+    //                     // alert("excel");
+    //                     tmime="excel";	
+    //                     console.log(tmime);				 
                         
-                    }
-                    if(tmime===""){
-                        // var clickedEXP = files[index].name.split("."); //Разбиваем строку (Split работает аналогично PHP explode)
-                        // tmime = clickedEXP[1]; //и получаем номер из массива
-                        // console.log(tmime);
-                        }
+    //                 }
+                    // if(tmime===""){
+                    //     var clickedEXP = files[index].name.split("."); //Разбиваем строку (Split работает аналогично PHP explode)
+                    //     tmime = clickedEXP[1]; //и получаем номер из массива
+                    //     console.log(tmime);
+                    //     }
 
-                    $('#upload-button').css({'display' : 'block'});
-                    // Проверяем количество загружаемых элементов
-                    if((dataArray.length+files.length) <= maxFiles) {
-                    	// показываем область с кнопками
-                    	$('#upload-button').css({'display' : 'block'});
-                    } 
-                    else { alert('Вы не можете загружать больше '+maxFiles+' файла!'); return; }
+                    // $('#upload-button').css({'display' : 'block'});
+                    // // Проверяем количество загружаемых элементов
+                  
+                    // 	$('#upload-button').css({'display' : 'block'});
+                    
                     
                     // Создаем новый экземпляра FileReader
                     var fileReader = new FileReader();
@@ -206,37 +196,37 @@
                         
                         return function(e) {
                             // Помещаем URI изображения в массив
-                            switch (tmime) {                                
-                                case "img":
-                                    background=this.result;
-                                    break;
-                                case "pdf":
-                                    background='./dist/css/typePDF.png';
-                                    break;
-                                case "word":
-                                    background='./dist/css/typeDOC.png';
-                                    break;
-                                case "excel":
-                                     if (EXP=="csv"){background='./dist/css/CSV.png';break;}
-                                    background='./dist/css/typeXLS.png';
-                                    break;
+                            // switch (tmime) {                                
+                            //     case "img":
+                            //         background=this.result;
+                            //         break;
+                            //     case "pdf":
+                            //         background='./dist/css/typePDF.png';
+                            //         break;
+                            //     case "word":
+                            //         background='./dist/css/typeDOC.png';
+                            //         break;
+                            //     case "excel":
+                            //          if (EXP=="csv"){background='./dist/css/CSV.png';break;}
+                            //         background='./dist/css/typeXLS.png';
+                            //         break;
 
-                                case "dwg":
-                                    background='./dist/css/typeDWG.png';
-                                    break;
-                            }
+                            //     case "dwg":
+                            //         background='./dist/css/typeDWG.png';
+                            //         break;
+                            // }
                             // alert(tmime);
                             
                     //  if(background)
                     //        { dataArray.push({name : file.name, value : this.result, bground : background, type : tmime, id : $("#id").val().split("_")[1]});}
-                           dataArray.push({name : file.name, value : this.result, bground : background, type : tmime, id : $("#id").val().split("_")[1]});
-                            addImage((dataArray.length-1));
+                           dataArray.push({name : files[index].name, value : this.result, type : EXP});
+                            // addImage((dataArray.length-1));
                             // tmime="";
                         }; 
                             
                     })(files[index]);
                 // Производим чтение картинки по URI
-                fileReader.readAsDataURL(file);
+                // fileReader.readAsDataURL(file);
                 
                 
             });
@@ -246,98 +236,22 @@
             
            
             // $('#upload-button .upload').trigger('click');
-            if (cnc){$('#out_CNC').append('<input type="text" id="zakaz" size = "150" placeholder="Путь">');}
-            return false;
-        }
-            
-        // Процедура добавления эскизов на страницу
-        function addImage(ind) {
-            // Если индекс отрицательный значит выводим весь массив изображений
-            if (ind < 0 ) { 
-            start = 0; end = dataArray.length; 
-            } else {
-            // иначе только определенное изображение 
-            start = ind; end = ind+1; } 
-            // Оповещения о загруженных файлах
-            if(dataArray.length == 0) {
-                // Если пустой массив скрываем кнопки и всю область
-                $('#upload-button').hide();
-                $('#uploaded-holder').hide();
-            } else if (dataArray.length == 1) {
-                $('#upload-button span').html("Был выбран " + dataArray[0].name);
-            } else {
-                $('#upload-button span').html(dataArray.length+" файлов были выбраны");
-            }
-            // Цикл для каждого элемента массива
-            for (i = start; i < end; i++) {
-                // размещаем загруженные изображения
-                // alert(dataArray[i].name);
-                // string.indexOf(substring) !== -1;
-                if($('#dropped-files > .image').length <= maxFiles) { 
-                    $('#dropped-files').append('<div id="img-'+i+'" class="image" style="background: url('+dataArray[i].bground+'); background-size: cover;"> <a href="#" id="drop-'+i+'" class="drop-button">Удалить файл</a></div>'); 
-                }
-            }
-            console.log('Загружен '+dataArray[0].name);
+            // if (cnc){$('#out_CNC').append('<input type="text" id="zakaz" size = "150" placeholder="Путь">');}
+            // return false;
+            console.log(dataArray);
             // fupload(dataArray);
-            $('#upload-button .upload').trigger('click');
-            return false;
         }
-        
-        // Функция удаления всех изображений
-        function restartFiles() {
-        
-            // Установим бар загрузки в значение по умолчанию
-            $('#loading-bar .loading-color').css({'width' : '0%'});
-            $('#loading').css({'display' : 'none'});
-            $('#loading-content').html(' ');
             
-            // Удаляем все изображения на странице и скрываем кнопки
-            $('#upload-button').hide();
-            $('#dropped-files > .image').remove();
-            $('#uploaded-holder').hide();
+     
         
-            // Очищаем массив
-            dataArray.length = 0;
-            
-            return false;
-        }
-        
-        // Удаление только выбранного изображения 
-        $("body").on("click","#dropped-files a[id^='drop']", function() {
-            // получаем название id
-            var elid = $(this).attr('id');
-            // создаем массив для разделенных строк
-            var temp = [];
-            // делим строку id на 2 части
-            temp = elid.split('-');
-            // получаем значение после тире тоесть индекс изображения в массиве
-            dataArray.splice(temp[1],1);
-            // Удаляем старые эскизы
-            $('#dropped-files > .image').remove();
-            // Обновляем эскизи в соответсвии с обновленным массивом
-            addImage(-1);		
-        });
+     
+     
         
         // Удалить все изображения кнопка 
         // $('#dropped-files #upload-button .delete').click(restartFiles);
-        $("body").on("click","#dropped-files #upload-button .delete", restartFiles);
+        // $("body").on("click","#dropped-files #upload-button .delete", restartFiles);
 
-        // Удаление только ТЕКУЩЕГО выбранного изображения 
-		$("body").on("click",".del", function() {
-			// alert('!');
-			// получаем название id
-			  $(this).parent().remove();
-			// создаем массив для разделенных строк
-			// var temp = [];
-			// // делим строку id на 2 части
-			// temp = elid.split('-');
-			// // получаем значение после тире тоесть индекс изображения в массиве
-			// dataArray.splice(temp[1],1);
-			// // Удаляем старые эскизы
-			// $('#dropped-files > .image').remove();
-			// // Обновляем эскизи в соответсвии с обновленным массивом
-			// addImage(-1);		
-		});
+      
 	
         
 
@@ -389,51 +303,11 @@
             // var x = 0;
 
             $.each(dataArray, function(index, file) {	
-
+                console.log(index);
                 // загружаем страницу и передаем значения, используя HTTP POST запрос 
                 //  dataplas= $.merge( {tbl : "obj", field : "name_obj"}, dataArray[index]);
-                $.post('./vpi/upload.php', dataArray[index] , function(data) {
-                    restartFiles();
-                    $('#drop-files').hide();
-                    $('#table-saved-files').hide();
-                    $.each($("#order_table tbody tr"), function() {
-                        $(this).removeClass('pressedTime');                   
-                    });
-                    $('#uploaded-files').append(data);
-                     if($("#currfile").val()){var clickedID = $("#currfile").val().split("."); 
-                            DbNumberID = clickedID[0]; //и получаем номер из массива
-                            
-                            objxlsx.push(DbNumberID);
-                            // objxlsx[DbNumberID]=(new Objx(DbNumberID));
-                            objxlsx[DbNumberID]=[];
-                            // $('#DelSubmit').show();
-                            $('#CreateSubmit').show();
-                            floor={}; //Этаж
-                            room={}; //Помещение
-                            complect={}; //Комплект изделий
-                            product={}; //Изделия
-                            arr_s=[];
-                            arr_table=[];
-                            arr_prev=[];
-                        }
-                            
-                     $('#DelSubmit').show();
-                     
-                 
-                    $("body #uploaded-files table.zakaz  tr:gt(0)").each(function (index, value) { 
-                    // console.log('tr '+ index );
-                    var c = $(this).find('td[id^="product"]').text();
-                    var c2 = $(this).find('td[id^="product2"]').text();
-                    if (c2===""){
-                        // console.log('tr' + index + ':' + c); 
-                        arr_table[index]=c;
-                    }
-                    else{
-                        // console.log('tr' + index + ':' + c2);
-                        arr_table[index]=c2;
-                    }
-                    
-                    });
+                $.post('upload.php', dataArray[index] , function(data) {
+            // alert(data);
                 });
                 
 
