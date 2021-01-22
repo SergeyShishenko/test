@@ -77,6 +77,7 @@
     * W#81{  операция
     * :: WTp точка
     * WS = 9  номер операции
+    * W$=комментарий
     * #1=1037.504  X
     * #2=377.5     Y
     * #3=-17       Z глубина
@@ -341,6 +342,7 @@ class class_CNC
             ." диаметр ".$diam."; глубина ".$depth
             ." (Ошибка!) исправлено-: -35<br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-35', $this->$arrStr[$i]);
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if ($diam == 8 && $depth < -39 ){
             $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." "
@@ -348,6 +350,8 @@ class class_CNC
             ." диаметр ".$diam."; глубина ".$depth
             ." (Ошибка!) исправлено-: -38<br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
+            
         } 
 
     }
@@ -359,6 +363,7 @@ class class_CNC
             ." диаметр ".$diam."; глубина ".$depth
             ." (Ошибка!) исправлено-:-".($this->DS-3)."<br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS-3), $this->$arrStr[$i]);
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if (abs($depth) >= $this->DS && abs($depth) < ($this->DS+4)) { 
            $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." " 
@@ -366,6 +371,7 @@ class class_CNC
             ." диаметр ".$diam."; глубина ".$depth
             ." (Ошибка!) исправлено+:-".($this->DS+4)."<br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if (abs($depth) > ($this->DS+4)){ 
            $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." " 
@@ -373,6 +379,7 @@ class class_CNC
             ." диаметр ".$diam."; глубина ".$depth
             ." (Ошибка!) исправлено-: -".($this->DS+4)."<br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         
 
