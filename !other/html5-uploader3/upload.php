@@ -87,7 +87,7 @@ if (!isset($_FILES[$input_name])) {
 		}
 	}
 	$data[] = $rand_folder;
-	$data[] = $path;
+	// $data[] = $path;
 }
  
 // Вывод сообщений о результате загрузки.
