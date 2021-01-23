@@ -33,7 +33,7 @@ $(document).ready(function() {
          var file = event.dataTransfer.files[0];
         // var files = event.dataTransfer.files;
 
-        // alert(file.name);
+         console.log(file);
         
         // Проверяем размер файла
         if (file.size > maxFileSize) {
@@ -62,31 +62,31 @@ $(document).ready(function() {
           
           }
 
-        // xhr.open('POST', 'upload.php',true);
-        // xhr.setRequestHeader('X-FILE-NAME', file.name);
-        // xhr.send(file);
+        xhr.open('POST', 'upload.php',true);
+        xhr.setRequestHeader('X-FILE-NAME', file.name);
+        xhr.send(file);
         // alert(xhr.responseText);
-        xhr.open("POST", file.name, true);
-            // Устанавливаем заголовки
-            xhr.setRequestHeader("Content-Type", "multipart/form-data");
-            xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-            xhr.setRequestHeader("X-File-Name", file.name);//application/octet-stream
-            xhr.setRequestHeader("X-File-Size", file.size);
-            xhr.setRequestHeader("X-File-Type", file.type);
+        // xhr.open("POST", 'upload.php', true);
+        //     // Устанавливаем заголовки
+        //     xhr.setRequestHeader("Content-Type", "multipart/form-data");
+        //     xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+        //     xhr.setRequestHeader("X-File-Name", file.name);//application/octet-stream
+        //     xhr.setRequestHeader("X-File-Size", file.size);
+        //     xhr.setRequestHeader("X-File-Type", file.type);
 
-            var formData = new FormData();
-            formData.append(file.name, file);
-            //xhr.send(formData);
+        //     var formData = new FormData();
+        //     formData.append(file.name, file);
+        //     //xhr.send(formData);
 
-            // Формируем тело запроса
-            // var body = reader.result;
-            if (xhr.sendAsBinary) {
-                // только для firefox
-                xhr.sendAsBinary(formData);
-            } else {
-                // chrome (так гласит спецификация W3C)
-                xhr.send(formData);
-            }
+        //     // Формируем тело запроса
+        //     // var body = reader.result;
+        //     if (xhr.sendAsBinary) {
+        //         // только для firefox
+        //         xhr.sendAsBinary(formData);
+        //     } else {
+        //         // chrome (так гласит спецификация W3C)
+        //         xhr.send(formData);
+        //     }
     
 
     };

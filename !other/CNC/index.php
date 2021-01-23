@@ -50,13 +50,14 @@
   <tr>
       <!--Создаём столбец таблицы-->
       <td>
-        <form action="upload.php" method="post">        
+        <!-- <form action="upload.php" method="post">        
             <div id="dropZone">
                 Для загрузки, перетащите файл сюда.
+                <input type="file" id="uploadbtn" multiple >
             </div>
             <div id="response"></div>
-        </form> 
-    <?php   // include "inc-drop-proba.php"; ?>
+        </form>  -->
+    <?php    include "inc-drop-proba.php"; ?>
       </td>
   </tr>
 </table>
@@ -173,7 +174,8 @@ style="margin-left:5px;" - отступ названия от маркера-->
 //   echo "<br>++++++++++++++++<br><br>";
 ?> 
     <script src="js/jquery.min.js"></script>  
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/javascript.js"></script>
     <!-- <script src="js/dropCNC.js"></script> -->
 </body>
 </html>
