@@ -44,7 +44,7 @@
 
 
   ?>
-<?php    include "inc-drop.php"; ?>
+<?php  //  include "inc-drop.php"; ?>
   <table border="1" background=""  cellpadding="10"
   style="width:100%; border-radius:5px;">
   <!--Создаём строку таблицы-->
@@ -58,7 +58,7 @@
             </div>
             <div id="response"></div>
         </form>  -->
-    <?php    //include "inc-drop.php"; ?>
+    <?php    include "inc-drop.php"; ?>
       </td>
   </tr>
 </table>

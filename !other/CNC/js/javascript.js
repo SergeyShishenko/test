@@ -21,6 +21,8 @@ $(document).ready(function() {
 	
 	// Метод при падении файла в зону загрузки
 	$('#drop-files').on('drop', function(e) {	
+
+		$('#file-name-holder').empty();
 		// Передаем в files все полученные изображения
 		var files = e.dataTransfer.files;
 
@@ -50,41 +52,13 @@ $(document).ready(function() {
 			}
 		});
 
-	// // Для каждого файла
-	// $.each(files, function(index, file) {
-						
-	// 	// console.log(index);
-	// console.log(file.name);
-	// 	var fileReader = new FileReader();
-	// 		// Инициируем функцию FileReader
-	// 		fileReader.onload = (function(file) {
-				
-	// 			return function(e) {
-	// 				// Помещаем URI изображения в массив
-					
-	// 				dataArray.push({name : file.name, value : this.result});
-	// 				// addImage((dataArray.length-1));
-	// 			}; 
-					
-	// 		})(files[index]);
-	// 	});
-		
-		
-	// 		// Для каждого файла
-	// 		$.each(dataArray, function(index, file) {	
-	// 			// загружаем страницу и передаем значения, используя HTTP POST запрос 
-	// 			$.post('upload.php', dataArray[index], function(data) {				
-	// 				console.log(data);
-	// 			});
-	// 		});
-		
 	});
 	
 	// При нажатии на кнопку выбора файлов
 	defaultUploadBtn.on('change', loadingFiles);
 	
 	function loadingFiles() {
-
+		$('#file-name-holder').empty();	
 		if (window.FormData === undefined){
 			alert('В вашем браузере FormData не поддерживается')
 		} else {
@@ -116,35 +90,7 @@ $(document).ready(function() {
 		}
 	}
 		
-	// Процедура добавления эскизов на страницу
 
-	
-	// Функция удаления всех изображений
-
-	
-	// // Удаление только выбранного изображения 
-	// $("#dropped-files").on("click","a[id^='drop']", function() {
-	// 	// получаем название id
- 	// 	var elid = $(this).attr('id');
-	// 	// создаем массив для разделенных строк
-	// 	// var temp = new Array();
-	// 	var temp = [];
-	// 	// делим строку id на 2 части
-	// 	temp = elid.split('-');
-	// 	// получаем значение после тире тоесть индекс изображения в массиве
-	// 	dataArray.splice(temp[1],1);
-	// 	// Удаляем старые эскизы
-	// 	$('#dropped-files > .image').remove();
-	// 	// Обновляем эскизи в соответсвии с обновленным массивом
-	// 	addImage(-1);		
-	// });
-
-	// Удаление только выбранного изображения 
-
-	
-
-	
-	
 	
 	// Простые стили для области перетаскивания
 	$('#drop-files').on('dragenter', function() {
@@ -162,7 +108,8 @@ $(document).ready(function() {
 
 	//  var dircnc='72971716';
 
-	$( "#delFolder" ).click(function(){    
+	$( "#delFolder" ).click(function(){ 
+		$('#file-name-holder').empty();   
 		var dir= { del : $('#dircnc').val() };   
 	   $.post('remove-directory.php', {del: $('#dircnc').val()}, function(data){
 		   $('#file-name-holder').append(data+'<br>');

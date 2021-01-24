@@ -2,7 +2,7 @@
 	<!-- <center><a href="gallery.php" class="nav">Перейти в галерею</a></center> -->
 	<!-- Область для перетаскивания -->
 	<div id="drop-files" ondragover="return false">
-		<p>Перетащите изображение сюда</p>
+		<p>Перетащите файлы CNC сюда</p>
         <!-- <form id="frm"> -->
 			<input type="file" id="uploadbtn" multiple >			
 		<!-- </form> -->

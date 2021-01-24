@@ -5,7 +5,7 @@ if (file_exists($path)) {
     // echo "Файл $path существует";
     removeDirectory($path);
 } else {
-    echo "Папка $path не существует";
+    echo "Папка $path не существует!";
 }
   function removeDirectory($dir) {
     if ($objs = glob($dir."/*")) {
@@ -14,6 +14,6 @@ if (file_exists($path)) {
        }
     }
     rmdir($dir);
-    echo " Папка удалена!";
+    echo "Папка $dir удалена!";
   }
 ?>
