@@ -6,7 +6,7 @@
     <title>Загрузка файлов на сервер</title>
 </head>
 <body>
-<input type="file" multiple id="js-file">
+<input type="file" multiple id="uploadbtn">
  
  <div id="result">
      <!-- Результат из upload.php -->
@@ -16,12 +16,12 @@
   
  <script src="js/jquery.min.js"></script>
  <script>
- $("#js-file").change(function(){
+ $("#uploadbtn").change(function(){
      if (window.FormData === undefined){
          alert('В вашем браузере FormData не поддерживается')
      } else {
          var formData = new FormData();
-         $.each($("#js-file")[0].files,function(key, input){
+         $.each($("#uploadbtn")[0].files,function(key, input){
              formData.append('file[]', input);
          });
   
@@ -38,11 +38,11 @@
                 //  data.forEach(function(msg) {
                 //      $('#result').append(msg);                         
                 //  });
-                 $('#result').append("Загружено "+Object.keys(data).length+' файлов<br>');
+                 $('#result').append("Загружено "+(Object.keys(data).length-1)+' файлов<br>');
                  var lastKey = Object.keys(data).sort().reverse()[0];
                  var lastValue = data[lastKey];
                
-                 $('#result').append(lastValue+'<br>');
+                 $('#dircnc').val(lastValue);
              }
          });
      }
@@ -53,10 +53,10 @@
  $( "#delFolder" ).click(function(){    
      var dir= { del : $('#dircnc').val() };   
     $.post('remove-directory.php', {del: $('#dircnc').val()}, function(data){
-	$('#result').append(data+'<br>');
-});
+	    $('#result').append(data+'<br>');
+    });
 
-     });
+ });
 
 
 

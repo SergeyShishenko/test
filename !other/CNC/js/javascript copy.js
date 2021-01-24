@@ -26,7 +26,7 @@ $(document).ready(function() {
 		// Проверяем на максимальное количество файлов
 		if (files.length <= maxFiles) {
 			// Передаем массив с файлами в функцию загрузки на предпросмотр
-			loadInView(files);
+			f(files);
 		} else {
 			alert('Вы не можете загружать больше '+maxFiles+' изображений!'); 
 			files.length = 0; return;

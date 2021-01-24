@@ -1,16 +1,22 @@
-<div class="content"> 
-<div id="drop-files" ondragover="return false">
-           <!-- <p>Перетащите файл &laquo;Заказ_ХХХХ.csv&raquo; или &laquo;Приложение КБ.xlsx&raquo; сюда</p> -->
-           <p>Перетащите файл &laquo;CNC&raquo;  сюда</p>
-           <!-- <form > -->
-           <form id="frm">
-			    <input type="file" id="uploadbtn" multiple style="display: none;">			
-		   </form><input type="file" id="uploadbtn" multiple  >
-           <div id="result">
-                <!-- Результат из upload.php -->
-            </div>
-           <!-- </form> -->
-       </div>
+<div class="content">
+	<!-- <center><a href="gallery.php" class="nav">Перейти в галерею</a></center> -->
+	<!-- Область для перетаскивания -->
+	<div id="drop-files" ondragover="return false">
+		<p>Перетащите изображение сюда</p>
+        <!-- <form id="frm"> -->
+			<input type="file" id="uploadbtn" multiple >			
+		<!-- </form> -->
+		
+	</div><!-- drop-files -->
+    <!-- Область предпросмотра -->
+	
+	<!-- Список загруженных файлов -->
+	<div id="file-name-holder">
+	
+		</ul>
+	</div>
+    
+</div>
        <input type="text" id="dircnc"><br>
  <button type="button" id="delFolder">Удалить папку</button>
 

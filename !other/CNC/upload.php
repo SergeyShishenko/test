@@ -28,6 +28,7 @@ $data = array();
  
 if (!isset($_FILES[$input_name])) {
 	$error = 'Файлы не загружены.';
+	$data[] = 'Файлы не загружены.';
 } else {
 	// Преобразуем массив $_FILES в удобный вид для перебора в foreach.
 	$files = array();
