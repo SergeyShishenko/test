@@ -1,7 +1,7 @@
 <?php
 // !other\CNC\zip\index.php
 	$error = "";		//error holder
-	if(isset($_POST['createpdf'])){
+	if(isset($_POST['createzip'])){
 		$post = $_POST;		
 		$file_folder = "files/";	// folder to load files
 		if(extension_loaded('zip')){	// Checking ZIP extension is available
@@ -9,7 +9,7 @@
 				$zip = new ZipArchive();			// Load zip library	
 				$zip_name = time().".zip";			// Zip name
 				if($zip->open($zip_name, ZIPARCHIVE::CREATE)!==TRUE){		// Opening zip file to load files
-					$error .=  "* Sorry ZIP creation failed at this time<br/>";
+					$error .=  "* К сожалению создание ZIP не удалось в это время<br/>";
 				}
 				foreach($post['files'] as $file){				
 					$zip->addFile($file_folder.$file);			// Adding files into zip
@@ -25,9 +25,9 @@
 				}
 				
 			}else
-				$error .= "* Please select file to zip <br/>";
+				$error .= "* Пожалуйста, выберите файл для zip-архива <br/>";
 		}else
-			$error .= "* You dont have ZIP extension<br/>";
+			$error .= "* У вас нет расширения ZIP <br/>";
 	}
 ?>
 <!DOCTYPE html>
@@ -70,7 +70,7 @@
     </tr>
     <tr>
       <td colspan="3" align="center">
-        <input type="submit" name="createpdf" style="border:0px; background-color:#800040; color:#FFF; padding:10px; cursor:pointer; font-weight:bold; border-radius:5px;" value="Download as ZIP" />&nbsp;
+        <input type="submit" name="createzip" style="border:0px; background-color:#800040; color:#FFF; padding:10px; cursor:pointer; font-weight:bold; border-radius:5px;" value="Download as ZIP" />&nbsp;
           <input type="reset" name="reset" style="border:0px; background-color:#D3D3D3; color:#000; font-weight:bold; padding:10px; cursor:pointer; border-radius:5px;" value="Reset" />
       </td>
       </tr>
