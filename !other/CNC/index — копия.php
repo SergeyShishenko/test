@@ -57,7 +57,7 @@
             </div>
             <div id="response"></div>
         </form>  -->
-    <?php    include "inc-drop.php"; ?>
+    <?php    include "inc-drop-proba.php"; ?>
       </td>
   </tr>
 </table>
@@ -175,86 +175,7 @@ style="margin-left:5px;" - отступ названия от маркера-->
 ?> 
     <script src="js/jquery.min.js"></script>  
     <!-- <script src="js/script.js"></script> -->
-    <!-- <script src="js/javascript.js"></script> -->
+    <script src="js/javascript.js"></script>
     <!-- <script src="js/dropCNC.js"></script> -->
-    <script>
-    var $ = jQuery.noConflict();
-    $("#uploadbtn").change(function(){
-    jQuery.event.props.push('dataTransfer');
-	
-	// Максимальное количество загружаемых изображений за одни раз
-	var maxFiles = 1;
-	
-	// Оповещение по умолчанию
-	var errMessage = 0;
-	
-	// Кнопка выбора файлов
-	var defaultUploadBtn = $('#uploadbtn');
-	
-	// Массив для всех изображений
-	var dataArray = [];
-        //+++++++++
-        if (window.FormData === undefined){
-            alert('В вашем браузере FormData не поддерживается')
-        } else {
-            var formData = new FormData();
-            $.each($("#uploadbtn")[0].files,function(key, input){
-                formData.append('file[]', input);
-            });
-    
-            $.ajax({
-                type: "POST",
-                url: 'upload.php',
-                cache: false,
-                contentType: false,
-                processData: false,
-                data: formData,
-                dataType : 'json',
-                success: function(data){
-
-                    //  data.forEach(function(msg) {
-                    //      $('#result').append(msg);                         
-                    //  });
-                    $('#result').append("Загружено "+(Object.keys(data).length-1)+' файлов<br>');
-                    var lastKey = Object.keys(data).sort().reverse()[0];
-                    var lastValue = data[lastKey];
-                
-                    //  $('#result').append(lastValue+'<br>');
-                    $('#dircnc').val(lastValue);
-                }
-            });
-        }
-    });
- 
-//  var dircnc='72971716';
-
-    $( "#delFolder" ).click(function(){    
-        var dir= { del : $('#dircnc').val() };   
-        $.post('remove-directory.php', {del: $('#dircnc').val()}, function(data){
-        $('#result').append(data+'<br>');
-    });
-
-
-	// Простые стили для области перетаскивания
-	$('#drop-files').on('dragenter', function() {
-        console.log('File(s) dragenter');
-		$(this).css({'box-shadow' : 'inset 0px 0px 20px rgba(0, 0, 0, 0.1)', 'border' : '4px dashed #bb2b2b'});
-		return false;
-	});
-	
-	$('#drop-files').on('drop', function() {
-        console.log('File(s) drop');
-		$(this).css({'box-shadow' : 'none', 'border' : '4px dashed rgba(0,0,0,0.2)'});
-		return false;
-    });
-    
-
-
-
-});
-
-
-
- </script>
 </body>
 </html>
