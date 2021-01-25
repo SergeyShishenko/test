@@ -57,7 +57,8 @@ class class_ReadingCNCfiles
     }
     public function checkAllCNC(){
 
-        $data= array();
+         $data;
+        $j=0;
 
         for ($i=0; $i < count($this->arrFile); $i++) {             
            
@@ -72,13 +73,15 @@ class class_ReadingCNCfiles
                 // echo "<br>***ОШИБКИ***<br>";
                 // echo $this->arrFile[$i]->err;
                 // echo "<br>****************<br>";
-                $data['name']=$this->arrFile[$i]->nameFile();
-                $data['DL']=$this->arrFile[$i]->getDL();
-                $data['DH']=$this->arrFile[$i]->getDH();
-                $data['DS']=$this->arrFile[$i]->getDS();
-                $data['err']= $this->arrFile[$i]->err;
+                $data[$j]['name']=$this->arrFile[$i]->nameFile();
+                $data[$j]['DL']=$this->arrFile[$i]->getDL();
+                $data[$j]['DH']=$this->arrFile[$i]->getDH();
+                $data[$j]['DS']=$this->arrFile[$i]->getDS();
+                $data[$j]['err']= $this->arrFile[$i]->err;
 
-                return $data;            
+                $j=$j+1;
+
+                           
                
 
             }
@@ -87,8 +90,9 @@ class class_ReadingCNCfiles
            
 
         }
-      
+      return $data; 
     }
+    
 }
 
 ?>

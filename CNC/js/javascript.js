@@ -44,19 +44,17 @@ $(document).ready(function() {
 			   //  data.forEach(function(msg) {
 			   //      $('#file-name-holder').append(msg);                         
 			   //  });
-				$('#file-name-holder').append("Загружено "+(Object.keys(data).length-1)+' файлов<br>');
-				var lastKey = Object.keys(data).sort().reverse()[0];
-				var lastValue = data[lastKey];
-				 console.log('lastValue '+Object.keys(lastValue));
-				 console.log("lastValue['name'] "+lastValue['name'][3]);
-				// lastValue.forEach(function(item, i, arr) {
-				// 	console.log( i + ": " + item + " (массив:" + arr + ")" );
-				//   });		
-				// lastValue.forEach(function(msg) {
-				// 	// $('#file-name-holder').append(msg);                         
-				// 	console.log(msg);                         
-				// });			  
-				// $('#dircnc').val(lastValue);
+				$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');
+				// var lastKey = Object.keys(data).sort().reverse()[0];
+				var lastKey = Object.keys(data).reverse()[0];			
+				var lastValue = data[lastKey];			
+				 lastValue.forEach(function(item, i, arr) {			
+					console.log("lastValue.name "+lastValue[i]['name']);//DL,DH,DS,err					
+					console.log("lastValue.DL "+lastValue[i]['DL']);
+					console.log("lastValue.DH "+lastValue[i]['DH']);
+					console.log("lastValue.DS "+lastValue[i]['DS']);
+					console.log("lastValue.err "+lastValue[i]['err']);
+				  });				
 				$('#dircnc').val(data[0]);
 			}
 		});
@@ -89,19 +87,16 @@ $(document).ready(function() {
 				   //  data.forEach(function(msg) {
 				   //      $('#file-name-holder').append(msg);                         
 				   //  });
-					$('#file-name-holder').append("Загружено "+(Object.keys(data).length-1)+' файлов<br>');
-					var lastKey = Object.keys(data).sort().reverse()[0];
+					$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');
+					var lastKey = Object.keys(data).reverse()[0];					
 					var lastValue = data[lastKey];
-					console.log('lastValue '+Object.keys(lastValue));
-					console.log("lastValue['name'] "+lastValue['name'][3]);
-					// lastValue.forEach(function(item, i, arr) {
-					// 	console.log( i + ": " + item + " (массив:" + arr + ")" );
-					//   });	
-					// lastValue.forEach(function(msg) {
-				    //     // $('#file-name-holder').append(msg);                         
-				    //     console.log(msg);                         
-				    // });				  
-					// $('#dircnc').val(lastValue);
+					lastValue.forEach(function(item, i, arr) {			
+						console.log("lastValue.name "+lastValue[i]['name']);//DL,DH,DS,err					
+						console.log("lastValue.DL "+lastValue[i]['DL']);
+						console.log("lastValue.DH "+lastValue[i]['DH']);
+						console.log("lastValue.DS "+lastValue[i]['DS']);
+						console.log("lastValue.err "+lastValue[i]['err']);
+					  });
 					$('#dircnc').val(data[0]);
 				}
 			});

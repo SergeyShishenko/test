@@ -230,7 +230,7 @@ class class_CNC
     public function outputCNC(){
        
         for($i=0; $i < count($this->$arrStr); $i++) {
-            echo "<br>";
+            echo "\n";
             // echo $i."~";
             echo $this->getStrByNum($i);
         
@@ -253,7 +253,7 @@ class class_CNC
          foreach ($arr as $k => $innerarr) {         
             for($j=0; $j < count($innerarr); $j++) {
                 if ($innerarr[$j]==$key){
-                    // echo "{$key} = {$innerarr[$j+1]} <br>"; 
+                    // echo "{$key} = {$innerarr[$j+1]} \n"; 
                    return $innerarr[$j+1];
                 }
                 
@@ -271,9 +271,9 @@ class class_CNC
     public function findNumByStr($substr){
        
         for($i=0; $i < count($this->$arrStr); $i++) {
-           // echo $this->$arrStr[$i]."<br>";
+           // echo $this->$arrStr[$i]."\n";
             if (strstr($this->$arrStr[$i], $substr)){
-                // echo "{$key} = {$innerarr[$j+1]} <br>"; 
+                // echo "{$key} = {$innerarr[$j+1]} \n"; 
                return "Номер строки ".$i;
             }
          }
@@ -340,7 +340,7 @@ class class_CNC
            $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." " 
             ."Строка ". $this->currentRow 
             ." диаметр ".$diam."; глубина ".$depth
-            ." (Ошибка!) исправлено-: -35<br>";
+            ." (Ошибка!) исправлено-: -35\n";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-35', $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
@@ -348,7 +348,7 @@ class class_CNC
             $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." "
             ."Строка ". $this->currentRow 
             ." диаметр ".$diam."; глубина ".$depth
-            ." (Ошибка!) исправлено-: -38<br>";
+            ." (Ошибка!) исправлено-: -38\n";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
             
@@ -356,12 +356,12 @@ class class_CNC
 
     }
     private function checkDepth1($depth,$diam,$i){  
-        // echo "Строка ". $this->currentRow . " ".($this->DS-3)." < ". abs($depth) . " && ". abs($depth) . " < " . ($this->DS) ."<br>";
+        // echo "Строка ". $this->currentRow . " ".($this->DS-3)." < ". abs($depth) . " && ". abs($depth) . " < " . ($this->DS) ."\n";
         if (($this->DS-3) < abs($depth) && abs($depth) < $this->DS ){ 
            $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." " 
             ."Строка ". $this->currentRow 
             ." диаметр ".$diam."; глубина ".$depth
-            ." (Ошибка!) исправлено-:-".($this->DS-3)."<br>";
+            ." (Ошибка!) исправлено-:-".($this->DS-3)."\n";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS-3), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
@@ -369,7 +369,7 @@ class class_CNC
            $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." " 
             ."Строка ". $this->currentRow 
             ." диаметр ".$diam."; глубина ".$depth
-            ." (Ошибка!) исправлено+:-".($this->DS+4)."<br>";
+            ." (Ошибка!) исправлено+:-".($this->DS+4)."\n";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
@@ -377,7 +377,7 @@ class class_CNC
            $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." " 
             ."Строка ". $this->currentRow 
             ." диаметр ".$diam."; глубина ".$depth
-            ." (Ошибка!) исправлено-: -".($this->DS+4)."<br>";
+            ." (Ошибка!) исправлено-: -".($this->DS+4)."\n";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
