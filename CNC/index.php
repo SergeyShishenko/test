@@ -39,20 +39,17 @@
  
 
  $cncsess= new class_ReadingCNCfiles('files/1');
- $fcnc = new class_CNC('files/1/1.1_81_1.CNC');
+//  $fcnc = new class_CNC('files/1/1.1_81_1.CNC');
 //  $fcnc = new class_CNC('files/1/1.1_82_1.CNC');
 
 
   ?>
 <?php  //  include "inc-drop.php"; ?>
-  <table border="1" background=""  cellpadding="10"
-  style="width:100%; border-radius:5px;">
-  <!--Создаём строку таблицы-->
-  <tr>
-      <!--Создаём столбец таблицы-->
+  <table border="1" background=""  cellpadding="10"  style="width:100%; border-radius:5px;"> 
+  <tr>      
       <td>
-      <a href="../shablony-dokumentov-titulnyy-kd.php" class="nav">Вернуться на сайт</a>
-    <?php    include "inc-drop.php"; ?>
+            <a href="../shablony-dokumentov-titulnyy-kd.php" class="nav">Вернуться на сайт</a>
+            <?php    include "inc-drop.php"; ?>
       </td>
   </tr>
 </table>
@@ -78,59 +75,38 @@
               времени.</p>
          
       </td>
-
       <td bgcolor="#e9e9f7">
           <h3>Меню</h3>       
           <p>             
-              <a href="">
-                  <!--Картинка маркера перед названием страницы-->
-                  <!-- <img src="http://trueimages.ru/img/00/06/f4fffdb5.png"> -->
-                  <!--Название страницы
-style="margin-left:5px;" - отступ названия от маркера-->
-                  <span style="margin-left:5px;">Страница</span></a>
-              <!--Закрываем абзац-->
+              <a href=""><span style="margin-left:5px;">Страница</span></a>              
           </p>
           <p>
-              <a href="">
-                  <!-- <img src="http://trueimages.ru/img/31/ab/4dcb087c2ae4305edcd15171696.jpg"> -->
-                  <span style="margin-left:5px;">Страница 1</span;></a>
-          </p>
+              <a href=""><span style="margin-left:5px;">Страница 1</span;></a></p>
           <p>
-              <a href="">
-                  <!-- <img src="http://trueimages.ru/img/31/ab/4dcb087c2ae4305edcd15171696.jpg"> -->
-                  <span style="margin-left:5px;">Страница 2</span></a>
-          </p>
-          <!--Закрываем строку Меню-->
+              <a href=""><span style="margin-left:5px;">Страница 2</span></a>
+          </p>          
       </td>
-  </tr>
-  <!--Создаём строку с дополнительной информацией-->
-  <tr>
-      <!--Ячейка с дополнительной информацией-->
+  </tr> 
+  <tr>      
       <td bgcolor="#e9e9f7" align="center">
           <h3>Общая информация</h3>
-          <p>Текст общей информации или реклама</p>
-          <!--Закрываем ячейку с общей информацией
-и таблицу основного контента-->
+          <p>Текст общей информации или реклама</p> 
       </td>
   </tr>
 </table>
 
 <!--ПОДВАЛ-->
 
-<!--Создаём таблицу подвала-->
-<table border="1" bgcolor="#d4d4f1" height="100" cellpadding="10"
-  style="width:100%; border-radius:5px;">
-  <!--Создаём строку.-->
-  <tr>
-      <!--Создаём столбец-->
-      <th>
-          <h3>Подвал</h3>
-          <!--Закрываем таблицу подвала. При желании в подвале можно
-сделать несколько строк и столбцов-->
-      </th>
-  </tr>
-</table>
-<!--Закрываем таблицу контейнера-->
+
+    <table border="1" bgcolor="#d4d4f1" height="100" cellpadding="10"
+    style="width:100%; border-radius:5px;">  
+    <tr>      
+        <th>
+            <h3>Подвал</h3>
+        </th>
+    </tr>
+    </table>
+
 </td>
 </tr>
 </table>
