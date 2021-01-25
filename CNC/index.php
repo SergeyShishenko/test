@@ -38,7 +38,7 @@
  include "classes_cnc/class_CNC.php";
  
 
- $cncsess= new class_ReadingCNCfiles('files/1');
+ $cncsess= new class_ReadingCNCfiles('files/');
 //  $fcnc = new class_CNC('files/1/1.1_81_1.CNC');
 //  $fcnc = new class_CNC('files/1/1.1_82_1.CNC');
 

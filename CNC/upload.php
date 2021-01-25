@@ -25,7 +25,7 @@ mkdir($path, 0777, true);
 
 
 $data = array();
- 
+$data[] = $rand_folder; 
 if (!isset($_FILES[$input_name])) {
 	$error = 'Файлы не загружены.';
 	$data[] = 'Файлы не загружены.';
@@ -87,7 +87,7 @@ if (!isset($_FILES[$input_name])) {
 			$data[] = '<p style="color: red">' . $error . '</p>';  
 		}
 	}
-	$data[] = $rand_folder;
+	
 	// $data[] = $path;
 }
  

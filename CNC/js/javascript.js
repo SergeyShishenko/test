@@ -23,7 +23,7 @@ $(document).ready(function() {
 	$('#drop-files').on('drop', function(e) {	
 
 		$('#file-name-holder').empty();
-		// Передаем в files все полученные изображения
+		// Передаем в files все полученные файлы
 		var files = e.dataTransfer.files;
 
 		var formData = new FormData();
@@ -40,15 +40,15 @@ $(document).ready(function() {
 			data: formData,
 			dataType : 'json',
 			success: function(data){
-
+//  alert(data[0]);
 			   //  data.forEach(function(msg) {
 			   //      $('#file-name-holder').append(msg);                         
 			   //  });
 				$('#file-name-holder').append("Загружено "+(Object.keys(data).length-1)+' файлов<br>');
-				var lastKey = Object.keys(data).sort().reverse()[0];
-				var lastValue = data[lastKey];
-			  
-				$('#dircnc').val(lastValue);
+				// var lastKey = Object.keys(data).sort().reverse()[0];
+				// var lastValue = data[lastKey];			  
+				// $('#dircnc').val(lastValue);
+				$('#dircnc').val(data[0]);
 			}
 		});
 
@@ -81,10 +81,10 @@ $(document).ready(function() {
 				   //      $('#file-name-holder').append(msg);                         
 				   //  });
 					$('#file-name-holder').append("Загружено "+(Object.keys(data).length-1)+' файлов<br>');
-					var lastKey = Object.keys(data).sort().reverse()[0];
-					var lastValue = data[lastKey];
-				  
-					$('#dircnc').val(lastValue);
+					// var lastKey = Object.keys(data).sort().reverse()[0];
+					// var lastValue = data[lastKey];				  
+					// $('#dircnc').val(lastValue);
+					$('#dircnc').val(data[0]);
 				}
 			});
 		}
