@@ -7,17 +7,15 @@
 		<!-- </form> -->
 		
 	</div><!-- drop-files -->
-    <!-- Область предпросмотра -->
+   
 	
 	<!-- Список загруженных файлов -->
-	<div id="file-name-holder">
 	
-		</ul>
-	</div>
     
 </div>
-       <input type="text" id="dircnc"><br>
- <button type="button" id="delFolder">Удалить папку</button>
+<div id="file-name-holder"></div>
+<input type="text" id="dircnc"><br>
+<button type="button" id="delFolder">Удалить папку</button>
 
       
 </div> 

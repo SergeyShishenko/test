@@ -82,6 +82,8 @@ if (!isset($_FILES[$input_name])) {
 		
 		if (!empty($success)) {
 			$data[] = '<p style="color: green">' . $success . '</p>';  
+
+
 		}
 		if (!empty($error)) {
 			$data[] = '<p style="color: red">' . $error . '</p>';  
@@ -89,6 +91,13 @@ if (!isset($_FILES[$input_name])) {
 	}
 	
 	// $data[] = $path;
+}
+
+
+if (!empty($success)) {
+			
+	include "checkCPU.php";
+			
 }
  
 // Вывод сообщений о результате загрузки.

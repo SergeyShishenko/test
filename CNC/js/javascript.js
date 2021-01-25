@@ -45,8 +45,17 @@ $(document).ready(function() {
 			   //      $('#file-name-holder').append(msg);                         
 			   //  });
 				$('#file-name-holder').append("Загружено "+(Object.keys(data).length-1)+' файлов<br>');
-				// var lastKey = Object.keys(data).sort().reverse()[0];
-				// var lastValue = data[lastKey];			  
+				var lastKey = Object.keys(data).sort().reverse()[0];
+				var lastValue = data[lastKey];
+				 console.log('lastValue '+Object.keys(lastValue));
+				 console.log("lastValue['name'] "+lastValue['name'][3]);
+				// lastValue.forEach(function(item, i, arr) {
+				// 	console.log( i + ": " + item + " (массив:" + arr + ")" );
+				//   });		
+				// lastValue.forEach(function(msg) {
+				// 	// $('#file-name-holder').append(msg);                         
+				// 	console.log(msg);                         
+				// });			  
 				// $('#dircnc').val(lastValue);
 				$('#dircnc').val(data[0]);
 			}
@@ -81,8 +90,17 @@ $(document).ready(function() {
 				   //      $('#file-name-holder').append(msg);                         
 				   //  });
 					$('#file-name-holder').append("Загружено "+(Object.keys(data).length-1)+' файлов<br>');
-					// var lastKey = Object.keys(data).sort().reverse()[0];
-					// var lastValue = data[lastKey];				  
+					var lastKey = Object.keys(data).sort().reverse()[0];
+					var lastValue = data[lastKey];
+					console.log('lastValue '+Object.keys(lastValue));
+					console.log("lastValue['name'] "+lastValue['name'][3]);
+					// lastValue.forEach(function(item, i, arr) {
+					// 	console.log( i + ": " + item + " (массив:" + arr + ")" );
+					//   });	
+					// lastValue.forEach(function(msg) {
+				    //     // $('#file-name-holder').append(msg);                         
+				    //     console.log(msg);                         
+				    // });				  
 					// $('#dircnc').val(lastValue);
 					$('#dircnc').val(data[0]);
 				}

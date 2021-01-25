@@ -34,17 +34,17 @@
 <?php
 // include "cnc.php";
 
- include "classes_cnc/class_ReadingCNCfiles.php";
- include "classes_cnc/class_CNC.php";
+//  include "classes_cnc/class_ReadingCNCfiles.php";
+//  include "classes_cnc/class_CNC.php";
  
 
- $cncsess= new class_ReadingCNCfiles('files/');
+//  $cncsess= new class_ReadingCNCfiles('files/');
 //  $fcnc = new class_CNC('files/1/1.1_81_1.CNC');
 //  $fcnc = new class_CNC('files/1/1.1_82_1.CNC');
 
 
   ?>
-<?php  //  include "inc-drop.php"; ?>
+
   <table border="1" background=""  cellpadding="10"  style="width:100%; border-radius:5px;"> 
   <tr>      
       <td>
@@ -53,6 +53,8 @@
       </td>
   </tr>
 </table>
+
+
 <table border="1" bgcolor="#e9e9f7" cellpadding="10" style="width:100%; border-radius:5px;"> 
   <tr>
       <td rowspan="2" style="width:80%">

@@ -57,19 +57,29 @@ class class_ReadingCNCfiles
     }
     public function checkAllCNC(){
 
+        $data= array();
+
         for ($i=0; $i < count($this->arrFile); $i++) {             
            
             $this->arrFile[$i]->checkCNC();
 
             if($this->arrFile[$i]->err !=""){
-                echo $this->arrFile[$i]->nameFile()."<br>";
-                echo "Длина = ".$this->arrFile[$i]->getDL()."<br>";
-                echo "Ширина = ".$this->arrFile[$i]->getDH()."<br>";
-                echo "Толщина = ".$this->arrFile[$i]->getDS()."<br>";
+                // echo $this->arrFile[$i]->nameFile()."<br>";
+                // echo "Длина = ".$this->arrFile[$i]->getDL()."<br>";
+                // echo "Ширина = ".$this->arrFile[$i]->getDH()."<br>";
+                // echo "Толщина = ".$this->arrFile[$i]->getDS()."<br>";
 
-                echo "<br>***ОШИБКИ***<br>";
-                echo $this->arrFile[$i]->err;
-                echo "<br>****************<br>";
+                // echo "<br>***ОШИБКИ***<br>";
+                // echo $this->arrFile[$i]->err;
+                // echo "<br>****************<br>";
+                $data['name']=$this->arrFile[$i]->nameFile();
+                $data['DL']=$this->arrFile[$i]->getDL();
+                $data['DH']=$this->arrFile[$i]->getDH();
+                $data['DS']=$this->arrFile[$i]->getDS();
+                $data['err']= $this->arrFile[$i]->err;
+
+                return $data;            
+               
 
             }
 

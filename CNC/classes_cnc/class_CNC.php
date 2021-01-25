@@ -387,7 +387,7 @@ class class_CNC
 
     public function correctionRecord(){ 
         $correct_folder= "correct1";// сделать свойством
-        $dir = "files/".$correct_folder ."/"; // Например /var/www/localhost/public
+        $dir = "uploads/".$correct_folder ."/"; // Например /var/www/localhost/public
         if (!file_exists($dir)) { 
             mkdir($dir, 0777, true);
         }
