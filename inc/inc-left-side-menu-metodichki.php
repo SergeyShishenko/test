@@ -123,6 +123,8 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                         </li>
                         <li class="menu2"><a class="list-group-item sub" href="metodichki-stp-po-proektnoy-rabote.php#dizayn-proekt-inzhenerno-graficheskaya-chast">ДИЗАЙН-ПРОЕКТ (ИНЖЕНЕРНО-ГРАФИЧЕСКАЯ ЧАСТЬ)</a>
                             <ul class="list-group sub_menu2">
+                                <li><a class="list-group-item sub" href="metodichki-stp-po-proektnoy-rabote.php#proverka-dp-pered-peredachey-v-pto">Проверка ДП перед передачей в ПТО</a>
+                                </li>
                                 <li><a class="list-group-item sub" href="metodichki-stp-po-proektnoy-rabote.php#plan-poetazhnyy-s-ukazaniem-nomerov-izdeliy">План поэтажный с указанием номеров изделий</a>
                                 </li>
                                 <li><a class="list-group-item sub" href="metodichki-stp-po-proektnoy-rabote.php#plan-pomeshcheniya-s-ukazaniem-nomerov-izdeliy">План помещения с указанием номеров изделий</a>

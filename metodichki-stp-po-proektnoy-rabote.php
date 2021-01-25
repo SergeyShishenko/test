@@ -74,10 +74,29 @@ include 'inc/inc-left-side-menu-metodichki.php';
                           <div class="page-header">
                             <h1 itemprop="name" id="dizayn-proekt-inzhenerno-graficheskaya-chast">ДИЗАЙН-ПРОЕКТ (инженерно-графическая часть)</h1>
                           </div>
+
+
+                          <h2 id="proverka-dp-pered-peredachey-v-pto">Проверка ДП перед передачей в ПТО</h2>
+                                <div class="bs-callout bs-callout-warning cont" >
+                             
+                                <div class="overlay"></div>                  
+                                <p> <a>
+                                    <!-- <img src="./dist/images/shablon-kd.png" class="center-block img-rounded img-thumbnail" -->
+                                    <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/proverka-dp-pered-peredachey-v-pto-1.png" class="center-block img-rounded img-thumbnail b-lazy img-book"
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                                                
+                                    alt="Проверка ДП перед передачей в ПТО"
+                                    data-xls=""
+                                    data-pdf=""
+                                    data-prnt="noPrint"
+                                    data-spng="noPNG" 
+                                    ></a>
+                                </p>
                           
-                          <object data="./dist/files/pdf/5000404-00-03-razdel-03-obmery.pdf" type="application/pdf" width="100%" height="720px">
+                          <!-- <object data="./dist/files/pdf/5000404-00-03-razdel-03-obmery.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/pdf/5000404-00-03-razdel-03-obmery.pdf"></a>
-                              </object>
+                              </object> -->
   
   
                           <h2 id="plan-poetazhnyy-s-ukazaniem-nomerov-izdeliy">&nbsp;</h2>
@@ -397,24 +416,26 @@ include 'inc/inc-left-side-menu-metodichki.php';
                           <object data="./dist/files/pdf/5000404-02-101-kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom.pdf" type="application/pdf" width="100%" height="720px">
                               alt: <a href="./dist/files/pdf/5000404-02-101-kd-na-db-s-raspashnym-odnostvorchatym-gluhim-polotnom.pdf"></a>
                               </object>
+
   
-                              <h2 id="shtampergonom">5000404-02-028 обозначение на чертеже отступление от требований эргономики</h2>
-                              <div class="bs-callout bs-callout-warning cont" >
-                              <!-- <h4>5000301-02-000 лист титульный КД</h4> -->
+                                <h2 id="shtampergonom">5000404-02-028 обозначение на чертеже отступление от требований эргономики</h2>
+                                <div class="bs-callout bs-callout-warning cont" >
+                                <!-- <h4>5000301-02-000 лист титульный КД</h4> -->
                                 <div class="overlay"></div>                  
-                            <p> <a>
-                                <!-- <img src="./dist/images/shablon-kd.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/oboznachenie-na-chertezhe-otstuplenie-ot-trebovaniy-ergonomiki_1-v3.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
-                                 data-toggle="modal"
-                                 data-target="#myModal"
-                                                            
-                                 alt="5000404-02-028 обозначение на чертеже отступление от требований эргономики"
-                                 data-xls=""
-                                 data-pdf="./dist/files/pdf/oboznachenie-na-chertezhe-otstuplenie-ot-trebovaniy-ergonomiki.pdf"
-                                 data-prnt="noPrint"
-                                 data-spng="noPNG" 
-                                   ></a>
-                             </p>
+                                <p> <a>
+                                    <!-- <img src="./dist/images/shablon-kd.png" class="center-block img-rounded img-thumbnail" -->
+                                    <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/oboznachenie-na-chertezhe-otstuplenie-ot-trebovaniy-ergonomiki_1-v3.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                    data-toggle="modal"
+                                    data-target="#myModal"
+                                                                
+                                    alt="5000404-02-028 обозначение на чертеже отступление от требований эргономики"
+                                    data-xls=""
+                                    data-pdf="./dist/files/pdf/oboznachenie-na-chertezhe-otstuplenie-ot-trebovaniy-ergonomiki.pdf"
+                                    data-prnt="noPrint"
+                                    data-spng="noPNG" 
+                                    ></a>
+                                </p>
+
                              
                         </div>
                           <!-- <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> -->
@@ -460,6 +481,8 @@ include 'inc/inc-left-side-menu-metodichki.php';
                             </li>
                             <li><a href="#dizayn-proekt-inzhenerno-graficheskaya-chast">ДИЗАЙН-ПРОЕКТ (ИНЖЕНЕРНО-ГРАФИЧЕСКАЯ ЧАСТЬ)</a>
                                 <ul class="nav">
+                                    <li><a href="#proverka-dp-pered-peredachey-v-pto">&#9999;&nbsp;Проверка ДП перед передачей в ПТО</a>
+                                    </li>
                                     <li><a href="#plan-poetazhnyy-s-ukazaniem-nomerov-izdeliy">&#9999;&nbsp;План поэтажный с указанием номеров изделий</a>
                                     </li>
                                     <li><a href="#plan-pomeshcheniya-s-ukazaniem-nomerov-izdeliy">&#9999;&nbsp;План помещения с указанием номеров изделий</a>
