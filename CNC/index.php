@@ -51,7 +51,7 @@
   <tr>
       <!--Создаём столбец таблицы-->
       <td>
-      <a href="../../shablony-dokumentov-titulnyy-kd.php" class="nav">Вернуться на сайт</a>
+      <a href="../shablony-dokumentov-titulnyy-kd.php" class="nav">Вернуться на сайт</a>
     <?php    include "inc-drop.php"; ?>
       </td>
   </tr>

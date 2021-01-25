@@ -48,6 +48,7 @@
                                 <div id="out_CNC"></div>
                                 <input type="button" value="Печать CNC" onclick="PrintElem('#out_CNC')" />
                                 <input type="button" value="Очистить" onclick="Reset('#out_CNC')" />
+                                <a href="CNC/" class="button">Проверка ЧПУ</a>
                                 
                                 <?php } ?>
                                 <!-- <input type="button" value="Пустой бланк ВПИ" onclick="blankVPI()" /> -->
