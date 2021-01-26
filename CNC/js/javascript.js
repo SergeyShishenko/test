@@ -87,20 +87,28 @@ $(document).ready(function() {
 	}
 		
 	function printErr(data) {
+		$('#tableoutput').empty();
 		var lastKey = Object.keys(data).reverse()[0];					
 		var lastValue = data[lastKey];
 		
 		if (typeof(lastValue) !== "undefined" && lastValue !== "" && lastValue !== null){
-			console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
-			lastValue.forEach(function(item, i, arr) {			
-				console.log("lastValue.name "+lastValue[i]['name']);//DL,DH,DS,err					
-				console.log("lastValue.DL "+lastValue[i]['DL']);
-				console.log("lastValue.DH "+lastValue[i]['DH']);
-				console.log("lastValue.DS "+lastValue[i]['DS']);
-				console.log("lastValue.err "+lastValue[i]['err']);
+			$('#tableoutput').append("<tr><td><h2>Найдены ошибки в "+lastValue.length +" файлах!</h2></td></tr>")
+			// console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
+			lastValue.forEach(function(item, i, arr) {	
+				$('#tableoutput').append("<tr><td><h2>"+lastValue[i]['name']+"</h2>"
+				+lastValue[i]['DL']+" x "+lastValue[i]['DH']+" x "+lastValue[i]['DS']+"<br>"
+				+lastValue[i]['err']
+				+"</td></tr>"
+				)		
+				// console.log("lastValue.name "+lastValue[i]['name']);//DL,DH,DS,err					
+				// console.log("lastValue.DL "+lastValue[i]['DL']);
+				// console.log("lastValue.DH "+lastValue[i]['DH']);
+				// console.log("lastValue.DS "+lastValue[i]['DS']);
+				// console.log("lastValue.err "+lastValue[i]['err']);
 			});
 		}else{
-			console.log("Ошибок нет!");
+			// console.log("Ошибок нет!");
+			$('#tableoutput').append("<tr><td><h2>Ошибок нет!</h2></td></tr>")
 		}
 
 	}

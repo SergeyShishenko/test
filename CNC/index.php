@@ -55,7 +55,7 @@
 </table>
 
 
-<table border="1" bgcolor="#e9e9f7" cellpadding="10" style="width:100%; border-radius:5px;"> 
+<table border="1" bgcolor="#e9e9f7" cellpadding="10" style="width:100%; border-radius:5px;" id="tableoutput"> 
   <tr>
       <!-- <td rowspan="2" style="width:80%"> -->
       <td >
@@ -88,8 +88,8 @@
           <p>
               <a href=""><span style="margin-left:5px;">Страница 2</span></a>
           </p>          
-      </td>
-  </tr>  -->
+      </td> -->
+  </tr> 
   <!-- <tr>      
       <td bgcolor="#e9e9f7" align="center">
           <h3>Общая информация</h3>
