@@ -45,16 +45,7 @@ $(document).ready(function() {
 			   //      $('#file-name-holder').append(msg);                         
 			   //  });
 				$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');
-				// var lastKey = Object.keys(data).sort().reverse()[0];
-				var lastKey = Object.keys(data).reverse()[0];			
-				var lastValue = data[lastKey];			
-				 lastValue.forEach(function(item, i, arr) {			
-					console.log("lastValue.name "+lastValue[i]['name']);//DL,DH,DS,err					
-					console.log("lastValue.DL "+lastValue[i]['DL']);
-					console.log("lastValue.DH "+lastValue[i]['DH']);
-					console.log("lastValue.DS "+lastValue[i]['DS']);
-					console.log("lastValue.err "+lastValue[i]['err']);
-				  });				
+				printErr(data);			
 				$('#dircnc').val(data[0]);
 			}
 		});
@@ -88,22 +79,31 @@ $(document).ready(function() {
 				   //      $('#file-name-holder').append(msg);                         
 				   //  });
 					$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');
-					var lastKey = Object.keys(data).reverse()[0];					
-					var lastValue = data[lastKey];
-					lastValue.forEach(function(item, i, arr) {			
-						console.log("lastValue.name "+lastValue[i]['name']);//DL,DH,DS,err					
-						console.log("lastValue.DL "+lastValue[i]['DL']);
-						console.log("lastValue.DH "+lastValue[i]['DH']);
-						console.log("lastValue.DS "+lastValue[i]['DS']);
-						console.log("lastValue.err "+lastValue[i]['err']);
-					  });
+					printErr(data);
 					$('#dircnc').val(data[0]);
 				}
 			});
 		}
 	}
 		
+	function printErr(data) {
+		var lastKey = Object.keys(data).reverse()[0];					
+		var lastValue = data[lastKey];
+		
+		if (typeof(lastValue) !== "undefined" && lastValue !== "" && lastValue !== null){
+			console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
+			lastValue.forEach(function(item, i, arr) {			
+				console.log("lastValue.name "+lastValue[i]['name']);//DL,DH,DS,err					
+				console.log("lastValue.DL "+lastValue[i]['DL']);
+				console.log("lastValue.DH "+lastValue[i]['DH']);
+				console.log("lastValue.DS "+lastValue[i]['DS']);
+				console.log("lastValue.err "+lastValue[i]['err']);
+			});
+		}else{
+			console.log("Ошибок нет!");
+		}
 
+	}
 	
 	// Простые стили для области перетаскивания
 	$('#drop-files').on('dragenter', function() {
