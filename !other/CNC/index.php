@@ -39,6 +39,7 @@
  
 
  $cncsess= new class_ReadingCNCfiles('files/1');
+//  $fcnc = new class_CNC('files/correct1/1.1_81_1.CNC');
  $fcnc = new class_CNC('files/1/1.1_81_1.CNC');
 //  $fcnc = new class_CNC('files/1/1.1_82_1.CNC');
 
@@ -144,10 +145,12 @@ style="margin-left:5px;" - отступ названия от маркера-->
 
 // echo "<br>!!!!!!!!!<br><br>";
 
-// echo $fcnc->nameFile()."<br>";
-// echo "Длина = ".$fcnc->getDL()."<br>";
-// echo "Ширина = ".$fcnc->getDH()."<br>";
-// echo "Толщина = ".$fcnc->getDS()."<br>";
+echo $fcnc->nameFile()."<br>";
+echo "Длина = ".$fcnc->getDL()."<br>";
+echo "Ширина = ".$fcnc->getDH()."<br>";
+echo "Толщина = ".$fcnc->getDS()."<br>";
+// $fcnc->outputCNC()."<br>";
+var_dump($fcnc->getArr());
 
 
 // echo $fcnc->outputCNC();

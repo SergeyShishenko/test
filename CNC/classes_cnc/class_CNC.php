@@ -232,7 +232,7 @@ class class_CNC
     public function outputCNC(){
        
         for($i=0; $i < count($this->$arrStr); $i++) {
-            echo "\n";
+            // echo "\n";
             // echo $i."~";
             echo $this->getStrByNum($i);
         
@@ -279,6 +279,11 @@ class class_CNC
                return "Номер строки ".$i;
             }
          }
+    }
+    public function getArr(){       
+           
+               return $this->$arrStr;           
+         
     }
 
     public function checkCNC(){
@@ -344,7 +349,7 @@ class class_CNC
             ." диаметр ".$diam."; глубина ".$depth
             ." (Ошибка!) исправлено-: -35\n";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-35', $this->$arrStr[$i]);
-            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if ($diam == 8 && $depth < -39 ){
             $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." "
@@ -352,7 +357,7 @@ class class_CNC
             ." диаметр ".$diam."; глубина ".$depth
             ." (Ошибка!) исправлено-: -38\n";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
-            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
             
         } 
 
@@ -365,7 +370,7 @@ class class_CNC
             ." диаметр ".$diam."; глубина ".$depth
             ." (Ошибка!) исправлено-:-".($this->DS-3)."\n";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS-3), $this->$arrStr[$i]);
-            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if (abs($depth) >= $this->DS && abs($depth) < ($this->DS+4)) { 
            $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." " 
@@ -373,7 +378,7 @@ class class_CNC
             ." диаметр ".$diam."; глубина ".$depth
             ." (Ошибка!) исправлено+:-".($this->DS+4)."\n";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
-            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if (abs($depth) > ($this->DS+4)){ 
            $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)." " 
@@ -381,7 +386,7 @@ class class_CNC
             ." диаметр ".$diam."; глубина ".$depth
             ." (Ошибка!) исправлено-: -".($this->DS+4)."\n";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
-            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed ', strpos($this->$arrStr[$i], '#', 2), 0);
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         
 
@@ -396,7 +401,8 @@ class class_CNC
             mkdir($dir, 0777, true);
         }
 
-        file_put_contents($dir.$this->nameFile() , implode("\n", $this->$arrStr ));
+        // file_put_contents($dir.$this->nameFile() , implode("\n", $this->$arrStr ));
+        file_put_contents($dir.$this->nameFile() , implode("", $this->$arrStr ));
     }
 
 }// end class

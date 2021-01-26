@@ -222,6 +222,12 @@ class class_CNC
         return basename($this->pathfile, ".cnc");
     }
 
+    public function getArr(){       
+           
+        return $this->$arrStr;           
+  
+}
+
 
     /**
      * Вывод всех строк файла
