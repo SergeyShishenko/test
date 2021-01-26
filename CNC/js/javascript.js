@@ -95,10 +95,10 @@ $(document).ready(function() {
 			$('#tableoutput').append("<tr><td><h2>Найдены ошибки в "+lastValue.length +" файлах!</h2></td></tr>")
 			// console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
 			lastValue.forEach(function(item, i, arr) {	
-				$('#tableoutput').append("<tr><td><h2>"+lastValue[i]['name']+"</h2>"
+				$('#tableoutput').append("<tr><td><h2>"+lastValue[i]['name']+"</h2><p>"
 				+lastValue[i]['DL']+" x "+lastValue[i]['DH']+" x "+lastValue[i]['DS']+"<br>"
 				+lastValue[i]['err']
-				+"</td></tr>"
+				+"</p></td></tr>"
 				)		
 				// console.log("lastValue.name "+lastValue[i]['name']);//DL,DH,DS,err					
 				// console.log("lastValue.DL "+lastValue[i]['DL']);

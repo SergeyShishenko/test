@@ -1,6 +1,6 @@
 body {
 	/* background:url("background.png"); */
-	font-size: 62.5%;
+	/* font-size: 62.5%; */
 	font-family: Arial, sans-serif;
 	padding: 0; margin:0;
 }
@@ -236,4 +236,11 @@ a.nav:hover {
     color:#000;
 }
 
+#tableoutput td  {
+	text-align: center ;
+	line-height: 1.5;
+}
 
+#ok {
+	color:green;
+}
