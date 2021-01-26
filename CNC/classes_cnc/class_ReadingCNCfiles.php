@@ -5,9 +5,11 @@ class class_ReadingCNCfiles
     private $arrNameFile ;
     private $arrFile ;
     private $folderCNC ;
+    private $rand_folder ;
 
     public function __construct($folderCNC) {
         $this->folderCNC = $folderCNC;
+        $this->rand_folder = explode( '/', $folderCNC )[1];
         if (file_exists($folderCNC)) {
         $this->arrNameFile=scandir($folderCNC);
        
@@ -36,7 +38,7 @@ class class_ReadingCNCfiles
 
     private function addObj(){
         for ($i=0; $i < count($this->arrNameFile); $i++) { 
-            $this->arrFile[$i]=new class_CNC( $this->folderCNC."/".$this->arrNameFile[$i]);
+            $this->arrFile[$i]=new class_CNC( $this->folderCNC."/".$this->arrNameFile[$i],$this->rand_folder);
 
         }
 

@@ -173,12 +173,14 @@ class class_CNC
     private $currentRow=-1; 
 
     public $err="";
+    private $rand_folder;
 
 
 
-    public function __construct($fileCNC) {
+    public function __construct($fileCNC, $folder) {
 
         $this->pathfile=$fileCNC;
+        $this->rand_folder = $folder;
         $this->$arrStr=file($fileCNC);
         $this->DL = $this->findVal($this->getStrByNum(2),"DL");
         $this->DH = $this->findVal($this->getStrByNum(2),"DH");
@@ -386,8 +388,10 @@ class class_CNC
     }
 
     public function correctionRecord(){ 
-        $correct_folder= "correct1";// сделать свойством
-        $dir = "uploads/".$correct_folder ."/"; // Например /var/www/localhost/public
+        // $correct_folder= "correct1";// сделать свойством
+
+        $dir = "uploads/correct".$this->rand_folder ."/"; // Например /var/www/localhost/public
+        // $dir = "uploads/correct/"; // Например /var/www/localhost/public
         if (!file_exists($dir)) { 
             mkdir($dir, 0777, true);
         }

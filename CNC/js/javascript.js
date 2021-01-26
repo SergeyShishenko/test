@@ -5,16 +5,16 @@ $(document).ready(function() {
 	jQuery.event.props.push('dataTransfer');
 	
 	// Максимальное количество загружаемых изображений за одни раз
-	var maxFiles = 1;
+	// var maxFiles = 1;
 	
 	// Оповещение по умолчанию
-	var errMessage = 0;
+	// var errMessage = 0;
 	
 	// Кнопка выбора файлов
 	var defaultUploadBtn = $('#uploadbtn');
 	
 	// Массив для всех изображений
-	var dataArray = [];
+	// var dataArray = [];
 	
 	// Область информер о загруженных изображениях - скрыта
 	$('#uploaded-files').hide();

@@ -57,7 +57,8 @@
 
 <table border="1" bgcolor="#e9e9f7" cellpadding="10" style="width:100%; border-radius:5px;"> 
   <tr>
-      <td rowspan="2" style="width:80%">
+      <!-- <td rowspan="2" style="width:80%"> -->
+      <td >
           <h2>Страница</h2>
           <!--Начинаем абзац с красной строки-->
           <p style="text-indent:20px">
@@ -77,7 +78,7 @@
               времени.</p>
          
       </td>
-      <td bgcolor="#e9e9f7">
+      <!-- <td bgcolor="#e9e9f7">
           <h3>Меню</h3>       
           <p>             
               <a href=""><span style="margin-left:5px;">Страница</span></a>              
@@ -88,13 +89,13 @@
               <a href=""><span style="margin-left:5px;">Страница 2</span></a>
           </p>          
       </td>
-  </tr> 
-  <tr>      
+  </tr>  -->
+  <!-- <tr>      
       <td bgcolor="#e9e9f7" align="center">
           <h3>Общая информация</h3>
           <p>Текст общей информации или реклама</p> 
       </td>
-  </tr>
+  </tr> -->
 </table>
 
 <!--ПОДВАЛ-->
