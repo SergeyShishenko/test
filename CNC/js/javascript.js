@@ -141,7 +141,7 @@ $(document).ready(function() {
 	$('#createzip').on('click', function() {
 		// var corrfolder= { createzip : $('#dircnc').val() }; 
 		$.post('createzip.php', { createzip : $('#dircnc').val() }, function(data){
-			 $('#file-name-holder').append(data+'<br>');
+			//  $('#file-name-holder').append(data+'<br>');
 		});
 	}
 	);
