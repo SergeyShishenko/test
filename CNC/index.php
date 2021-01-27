@@ -47,6 +47,7 @@
             box-shadow:
             0 -1px rgba(10,21,28,.9) inset,
             0 1px rgba(255,255,255,.5) inset;
+            cursor:pointer;
             }
             input.button22:hover {
             background: linear-gradient(#d2dfea, #71828c);
@@ -63,6 +64,10 @@
             z-index: -1;
             border-radius: 8px;
             background: linear-gradient(rgba(200,200,200,.5), rgba(240,240,240,.5));
+            }
+            .disabled {
+            pointer-events: none;  /**<-----------*/
+            opacity: 0.2;
             }
     </style>
 </head>
@@ -116,8 +121,9 @@
     <tr>      
         <td align="center">
         <input type="button" name="createzip"  
-        disabled 
-        value="Скачать архив ZIP" class="button22" onclick="alert('Скачать архив ZIP');" />
+      
+        value="Скачать архив ZIP" class="button22 disabled" onclick="alert('Скачать архив ZIP');" />
+        <!-- value="Скачать архив ZIP" class="button22 disabled" onclick="alert('Скачать архив ZIP');" /> -->
         
         </td>
     </tr>
