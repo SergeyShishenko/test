@@ -131,12 +131,20 @@ $(document).ready(function() {
 
 	$( "#delFolder" ).click(function(){ 
 		$('#file-name-holder').empty();   
-		var dir= { del : $('#dircnc').val() };   
+		// var dir= { del : $('#dircnc').val() };   
 	   $.post('remove-directory.php', {del: $('#dircnc').val()}, function(data){
 		   $('#file-name-holder').append(data+'<br>');
 	   });
    
 	});
+
+	$('#createzip').on('click', function() {
+		// var corrfolder= { createzip : $('#dircnc').val() }; 
+		$.post('createzip.php', { createzip : $('#dircnc').val() }, function(data){
+			 $('#file-name-holder').append(data+'<br>');
+		});
+	}
+	);
 
 
 	// Перезагрузить текущую страницу, без использования кэша

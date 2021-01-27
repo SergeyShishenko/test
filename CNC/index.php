@@ -120,9 +120,8 @@
     <!-- class="button22" -->
     <tr>      
         <td align="center">
-        <input type="button" name="createzip"  
-      
-        value="Скачать архив ZIP" class="button22 disabled" onclick="alert('Скачать архив ZIP');" />
+        <input type="button" id="createzip"       
+        value="Скачать архив ZIP" class="button22 " />
         <!-- value="Скачать архив ZIP" class="button22 disabled" onclick="alert('Скачать архив ZIP');" /> -->
         
         </td>
