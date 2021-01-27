@@ -2,7 +2,7 @@
 	$error = "";		//error holder
 	if(isset($_POST['createzip'])){
 		$post = $_POST;		
-		$file_folder = "files/";	// folder to load files
+		$file_folder = "uploads/";	// folder to load files
 		if(extension_loaded('zip')){	// Checking ZIP extension is available
 			if(isset($post['files']) and count($post['files']) > 0){	// Checking files are selected
 				$zip = new ZipArchive();			// Load zip library	
@@ -11,7 +11,7 @@
 					$error .=  "* К сожалению создание ZIP не удалось в это время<br/>";
 				}
 				foreach($post['files'] as $file){				
-					$zip->addFile($file_folder.$file);			// Adding files into zip
+					$zip->addFile($file_folder.$file);			// Добавление файлов в архив zip
 				}
 				$zip->close();
 				if(file_exists($zip_name)){

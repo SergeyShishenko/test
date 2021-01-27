@@ -26,6 +26,44 @@
         filter: FlipV;
         -ms-filter: "FlipV";
         }
+
+        /* кнопка */
+        input.button22 {
+            position: relative;
+            display: inline-block;
+            /* width: 6em; */
+            height: 2.5em;
+            line-height: 2.4em;
+            vertical-align: middle;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            color: #000;
+            outline: none;
+            border: 1px solid rgba(110,121,128,.8);
+            border-top-color: rgba(0,0,0,.3);
+            border-radius: 5px;
+            background: rgb(206, 220, 231) linear-gradient(rgb(206,220,231), rgb(89,106,114));
+            box-shadow:
+            0 -1px rgba(10,21,28,.9) inset,
+            0 1px rgba(255,255,255,.5) inset;
+            }
+            input.button22:hover {
+            background: linear-gradient(#d2dfea, #71828c);
+            }
+            input.button22:active {
+            line-height: 2.6em;
+            background: linear-gradient(#bac6cf, #c5d3de 20%, #71828c);
+            box-shadow: 0 -1px rgba(255,255,255,.4) inset;
+            }
+            input.button22:before {
+            content: "";
+            position: absolute;
+            top: -10px; right: -10px; bottom: -10px; left: -10px;
+            z-index: -1;
+            border-radius: 8px;
+            background: linear-gradient(rgba(200,200,200,.5), rgba(240,240,240,.5));
+            }
     </style>
 </head>
 <body>
@@ -59,54 +97,29 @@
   <tr>
       <!-- <td rowspan="2" style="width:80%"> -->
       <td >
-          <h2>Страница</h2>
+          <h2>Проверяемые ошибки</h2>
           <!--Начинаем абзац с красной строки-->
-          <p >
-              Здравствуйте уважаемые будущие веб-мастера!
-              Мне 55 лет и я рад приветствовать Вас на своём сайте.
-              Этот сайт первый, который я разработал самостоятельно,
-              а до этого умел только входить в интернет.</p>
-
-          <p >Почему я решил его сделать?
-              За те 3 месяца, пока разбирался в
-              сайтостроении и создавал этот ресурс обнаружилось,
-              что авторы руководств по созданию
-              сайтов считают многие нюансы само собой разумеющимися
-              и не обращают на них внимание
-              А мне, учитывая возраст и «опыт», было не просто
-              понять как раз эти нюансы, они отнимали больше всего
-              времени.</p>
-         
+          <p> Ошибка №1: Проверка глубины сверления в торцах деталей. Максимальная глубина сверления:  &Oslash;5 = -35 мм;  &Oslash;8 = -39 мм; </p> 
       </td>
-      <!-- <td bgcolor="#e9e9f7">
-          <h3>Меню</h3>       
-          <p>             
-              <a href=""><span style="margin-left:5px;">Страница</span></a>              
-          </p>
-          <p>
-              <a href=""><span style="margin-left:5px;">Страница 1</span;></a></p>
-          <p>
-              <a href=""><span style="margin-left:5px;">Страница 2</span></a>
-          </p>          
-      </td> -->
   </tr> 
-  <!-- <tr>      
-      <td bgcolor="#e9e9f7" align="center">
-          <h3>Общая информация</h3>
-          <p>Текст общей информации или реклама</p> 
-      </td>
-  </tr> -->
+ 
 </table>
 
 <!--ПОДВАЛ-->
 
 
-    <table border="1" bgcolor="#d4d4f1" height="100" cellpadding="10"
+    <table border="1" bgcolor="#e9e9f7" height="100" cellpadding="10"
     style="width:100%; border-radius:5px;">  
+    <!-- disabled -->
+    <!-- style="border:0px; background-color:#800040; color:#FFF; padding:10px; cursor:pointer; font-weight:bold; border-radius:5px;"  -->
+    <!-- class="button22" -->
     <tr>      
-        <th>
-            <h3>Подвал</h3>
-        </th>
+        <td align="center">
+        <input type="button" name="createzip"  
+        disabled 
+        value="Скачать архив ZIP" class="button22" onclick="alert('Скачать архив ZIP');" />
+        
+        </td>
     </tr>
     </table>
 
