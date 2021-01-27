@@ -16,9 +16,12 @@
 
 				foreach($arrfiles as $file){
 					$error .= $file_folder.$file." ";					
-					$zip->addFile($file);			// Добавление файлов в архив zip
+					$zip->addFile($file,basename($file));			// Добавление файлов в архив zip
 				}
 				$zip->close();
+
+				
+				
 
 				if(file_exists($zip_name)){
 					// push to download the zip
@@ -27,17 +30,22 @@
 					readfile($zip_name);
 					// remove zip file is exists in temp path
 					// unlink($zip_name);
+					// echo json_encode($zip_name, JSON_UNESCAPED_UNICODE);
 				}
 				
 			}else
 				$error .= "* Пожалуйста, выберите файл для zip-архива <br/>";
+				// header('Content-Type: application/json');
+				// echo json_encode($error, JSON_UNESCAPED_UNICODE);
+				// exit();
+
 		}else
 			$error .= "* У вас нет расширения ZIP <br/>";
+			// header('Content-Type: application/json');
+			// echo json_encode($error, JSON_UNESCAPED_UNICODE);
+			// exit();
 	}
-	// Вывод сообщений о результате загрузки.
-// header('Content-Type: application/json');
-// // echo json_encode($zip_name, JSON_UNESCAPED_UNICODE);
-// echo json_encode($error, JSON_UNESCAPED_UNICODE);
-// // echo json_encode($arrfiles, JSON_UNESCAPED_UNICODE);
-// exit();
+	// header('Content-Type: application/json');
+				
+
 ?>
