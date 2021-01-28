@@ -221,7 +221,7 @@ class class_CNC
     }
 
     public function nameFile(){
-        return basename($this->pathfile, ".cnc");
+        return basename($this->pathfile);
     }
 
 

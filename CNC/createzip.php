@@ -14,7 +14,7 @@
 
 				foreach($arrfiles as $file){
 					// $error .= $file_folder.$file." ";					
-					$zip->addFile($file,basename($file, ".cnc"));			// Добавление файлов в архив zip
+					$zip->addFile($file,basename($file));			// Добавление файлов в архив zip
 				}
 				$zip->close();				
 
