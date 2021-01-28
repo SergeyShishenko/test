@@ -34,7 +34,7 @@ body {
   display: none;
 } */
 
-a.button-gen {
+a.button-gen, a.button-chpu {
   position: relative;
   display: flex;
   /* flex-direction: column; */
@@ -56,7 +56,7 @@ a.button-gen {
   float: right;
   margin-left: 5px;
 }
-a.button-gen:before {
+a.button-gen:before, a.button-chpu:before {
   position: absolute;
   content: '';
   bottom: 0;
@@ -65,23 +65,23 @@ a.button-gen:before {
   height: 100%;
   background-color: #54d98c;
 }
-a.button-gen span {
+a.button-gen span, a.button-chpu span {
   position: absolute;
   line-height: 0;
 }
-a.button-gen span i {
+a.button-gen span i, a.button-chpu span i {
   transform-origin: center center;
 }
-a.button-gen span:nth-of-type(1) {
+a.button-gen span:nth-of-type(1), a.button-chpu span:nth-of-type(1) {
   top: 50%;
   transform: translateY(-50%);
 }
-a.button-gen span:nth-of-type(2) {
+a.button-gen span:nth-of-type(2), a.button-chpu span:nth-of-type(2) {
   top: 110%;
   transform: translateY(0%);
   font-size: 20px;
 }
-a.button-gen span:nth-of-type(3) {
+a.button-gen span:nth-of-type(3), a.button-chpu span:nth-of-type(3) {
   display: none;
 }
 
