@@ -1,3 +1,6 @@
+<?php 
+include "createzip.php";
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -87,6 +90,10 @@
 
 
   ?>
+  <form name="zips" method="post">
+  <?php if(!empty($error)) { ?>
+  <p style=" border:#C10000 1px solid; background-color:#FFA8A8; color:#B00000;padding:8px; width:588px; margin:0 auto 10px;"><?php echo $error; ?></p>
+  <?php } ?>
 
   <table border="1" background=""  cellpadding="10"  style="width:100%; border-radius:5px;"> 
   <tr>      
@@ -120,7 +127,7 @@
     <!-- class="button22" -->
     <tr>      
         <td align="center">
-        <input type="button" id="createzip"       
+        <input type="submit" name="createzip"       
         value="Скачать архив ZIP" class="button22 " />
         <!-- value="Скачать архив ZIP" class="button22 disabled" onclick="alert('Скачать архив ZIP');" /> -->
         
@@ -131,7 +138,7 @@
 </td>
 </tr>
 </table>
-
+</form>
 <?php
 //   $cncsess->getArr();
 

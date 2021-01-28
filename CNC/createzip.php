@@ -1,11 +1,12 @@
 <?php
 	$error = "";			//error holder
-	if(isset($_POST['createzip'])){
+	if(isset($_POST['folder'])){
 		$post = $_POST;		
 		$file_folder = "uploads/";	// folder to load files
 		if(extension_loaded('zip')){	// Checking ZIP extension is available
-
-			$arrfiles = glob("uploads/correct".$_POST['createzip']."/*");
+			$error .= 'folder '.$post['folder']." <br/>";
+			// $error .= 'createzip '.$post['createzip']." <br/>";
+			$arrfiles = glob("uploads/correct".$post['folder']."/*");
 			if(isset($arrfiles) and count($arrfiles) > 0){	// Checking files are selected
 				$zip = new ZipArchive();			// Load zip library	
 				$zip_name = time().".zip";	// Zip name
@@ -29,23 +30,17 @@
 					header('Content-Disposition: attachment; filename="'.$zip_name.'"');					
 					readfile($zip_name);
 					// remove zip file is exists in temp path
-					// unlink($zip_name);
-					// echo json_encode($zip_name, JSON_UNESCAPED_UNICODE);
+					unlink($zip_name);
+					
 				}
 				
 			}else
 				$error .= "* Пожалуйста, выберите файл для zip-архива <br/>";
-				// header('Content-Type: application/json');
-				// echo json_encode($error, JSON_UNESCAPED_UNICODE);
+			
 				// exit();
 
 		}else
 			$error .= "* У вас нет расширения ZIP <br/>";
-			// header('Content-Type: application/json');
-			// echo json_encode($error, JSON_UNESCAPED_UNICODE);
-			// exit();
+			
 	}
-	// header('Content-Type: application/json');
-				
-
-?>
+	?>

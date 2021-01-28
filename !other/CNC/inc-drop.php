@@ -16,7 +16,7 @@
 	</div>
     
 </div>
-       <input type="text" id="dircnc"><br>
+       <input type="text" id="dircnc" name="folder"><br>
  <button type="button" id="delFolder">Удалить папку</button>
 
       

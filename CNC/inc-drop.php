@@ -14,7 +14,7 @@
     
 </div>
 <div id="file-name-holder"></div>
-<input type="text" id="dircnc" value="838054388"><br>
+<input type="text" id="dircnc"  name="folder" ><br>
 <button type="button" id="delFolder">Удалить папку</button>
 
       
