@@ -347,7 +347,7 @@ class class_CNC
     private function checkDepth3($depth,$diam,$i){        
         if ($diam == 5 && $depth < -35 ){ 
 
-            printErr($depth, $diam, 35);
+            $this->printErr($depth, $diam, 35);
         //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
         //     .", строка ". $this->currentRow 
         //     ." => &Oslash; ".$diam."; глубина ".$depth
@@ -357,7 +357,7 @@ class class_CNC
         } 
         if ($diam == 8 && $depth < -39 ){
 
-            printErr($depth, $diam, 39);
+            $this->printErr($depth, $diam, 39);
             // $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)
             // .", строка ". $this->currentRow 
             // ." => &Oslash; ".$diam."; глубина ".$depth
@@ -371,7 +371,7 @@ class class_CNC
     private function checkDepth1($depth,$diam,$i){  
         // echo ", строка ". $this->currentRow . " ".($this->DS-3)." < ". abs($depth) . " && ". abs($depth) . " < " . ($this->DS) ."\n";
         if (($this->DS-3) < abs($depth) && abs($depth) < $this->DS ){ 
-            printErr($depth, $diam, ($this->DS-3));
+            $this->printErr($depth, $diam, ($this->DS-3));
         //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
         //     .", строка ". $this->currentRow 
         //     ." => &Oslash; ".$diam."; глубина ".$depth
@@ -380,7 +380,7 @@ class class_CNC
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if (abs($depth) >= $this->DS && abs($depth) < ($this->DS+4)) { 
-            printErr($depth, $diam, ($this->DS+4));
+            $this->printErr($depth, $diam, ($this->DS+4));
         //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
         //     .", строка ". $this->currentRow 
         //     ." => &Oslash; ".$diam."; глубина ".$depth
@@ -389,7 +389,7 @@ class class_CNC
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if (abs($depth) > ($this->DS+4)){ 
-            printErr($depth, $diam, ($this->DS+4));
+            $this->printErr($depth, $diam, ($this->DS+4));
         //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
         //     .", строка ". $this->currentRow 
         //     ." => &Oslash; ".$diam."; глубина ".$depth
