@@ -4,7 +4,7 @@
 		$post = $_POST;		
 		$file_folder = "uploads/";	// folder to load files
 		if(extension_loaded('zip')){	// Checking ZIP extension is available
-			$error .= 'folder '.$post['folder']." <br/>";
+			// $error .= 'folder '.$post['folder']." <br/>";
 			// $error .= 'createzip '.$post['createzip']." <br/>";
 			$arrfiles = glob("uploads/correct".$post['folder']."/*");
 			if(isset($arrfiles) and count($arrfiles) > 0){	// Checking files are selected
@@ -12,7 +12,7 @@
 				$zip_name = time().".zip";	// Zip name
 				// $error .= "zip_name ".$zip_name;		
 				if($zip->open($zip_name, ZIPARCHIVE::CREATE)!==TRUE){		// Opening zip file to load files
-					$error .=  "* К сожалению создание ZIP не удалось в это время<br/>";
+					$error .=  "* К сожалению создание ZIP в это время невозможно<br/>";
 				}
 
 				foreach($arrfiles as $file){
@@ -35,7 +35,7 @@
 				}
 				
 			}else
-				$error .= "* Пожалуйста, выберите файл для zip-архива <br/>";
+				$error .= "* Пожалуйста, загрузите следущие файлы для проверки <br>";
 			
 				// exit();
 

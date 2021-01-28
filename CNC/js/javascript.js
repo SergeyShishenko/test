@@ -88,6 +88,7 @@ $(document).ready(function() {
 		
 	function printErr(data) {
 		$('#tableoutput').empty();
+		$('#err').remove();
 		var lastKey = Object.keys(data).reverse()[0];					
 		var lastValue = data[lastKey];
 		
