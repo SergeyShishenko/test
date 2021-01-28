@@ -11,26 +11,7 @@ include "createzip.php";
     <title>ЧПУ</title>
     <link rel="stylesheet" href="CSS/style.css">
     <style>
-    /* Для отражения по горизонтали */
-    .flip-horizontal{
-        -moz-transform: scale(-1, 1);
-        -webkit-transform: scale(-1, 1);
-        -o-transform: scale(-1, 1);
-        transform: scale(-1, 1);
-        filter: FlipH;
-        -ms-filter: "FlipH";
-        }
-    /* Для отражения по вертикали */
-    .flip-vertical{
-        -moz-transform: scale(1,-1);
-        -webkit-transform: scale(1, -1);
-        -o-transform: scale(1, -1);
-        transform: scale(1, -1);
-        filter: FlipV;
-        -ms-filter: "FlipV";
-        }
-
-        /* кнопка */
+      /* кнопка */
         input.button22 {
             position: relative;
             display: inline-block;
@@ -75,11 +56,8 @@ include "createzip.php";
     </style>
 </head>
 <body>
-<!-- <img id="capcha" src="imagecreate.php" height="200" width="200" class="flip-vertical"/> -->
 <br>
 <?php
-// include "cnc.php";
-
 //  include "classes_cnc/class_ReadingCNCfiles.php";
 //  include "classes_cnc/class_CNC.php";
  
