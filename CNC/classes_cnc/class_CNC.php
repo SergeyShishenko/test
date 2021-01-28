@@ -346,18 +346,22 @@ class class_CNC
 
     private function checkDepth3($depth,$diam,$i){        
         if ($diam == 5 && $depth < -35 ){ 
-           $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
-            .", строка ". $this->currentRow 
-            ." => &Oslash; ".$diam."; глубина ".$depth
-            ." &mdash; (Ошибка!) исправлено:  -35 <span id='ok'>&#9745;</span> <br>";
+
+            printErr($depth, $diam, 35);
+        //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
+        //     .", строка ". $this->currentRow 
+        //     ." => &Oslash; ".$diam."; глубина ".$depth
+        //     ." &mdash; (Ошибка!) исправлено:  -35 <span id='ok'>&#9745;</span> <br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-35', $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if ($diam == 8 && $depth < -39 ){
-            $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)
-            .", строка ". $this->currentRow 
-            ." => &Oslash; ".$diam."; глубина ".$depth
-            ." &mdash; (Ошибка!) исправлено:  -39 <span id='ok'>&#9745;</span> <br>";
+
+            printErr($depth, $diam, 39);
+            // $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)
+            // .", строка ". $this->currentRow 
+            // ." => &Oslash; ".$diam."; глубина ".$depth
+            // ." &mdash; (Ошибка!) исправлено:  -39 <span id='ok'>&#9745;</span> <br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
             
@@ -367,31 +371,41 @@ class class_CNC
     private function checkDepth1($depth,$diam,$i){  
         // echo ", строка ". $this->currentRow . " ".($this->DS-3)." < ". abs($depth) . " && ". abs($depth) . " < " . ($this->DS) ."\n";
         if (($this->DS-3) < abs($depth) && abs($depth) < $this->DS ){ 
-           $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
-            .", строка ". $this->currentRow 
-            ." => &Oslash; ".$diam."; глубина ".$depth
-            ." &mdash; (Ошибка!) исправлено: -".($this->DS-3)." <span id='ok'>&#9745;</span> <br>";
+            printErr($depth, $diam, ($this->DS-3));
+        //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
+        //     .", строка ". $this->currentRow 
+        //     ." => &Oslash; ".$diam."; глубина ".$depth
+        //     ." &mdash; (Ошибка!) исправлено: -".($this->DS-3)." <span id='ok'>&#9745;</span> <br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS-3), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if (abs($depth) >= $this->DS && abs($depth) < ($this->DS+4)) { 
-           $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
-            .", строка ". $this->currentRow 
-            ." => &Oslash; ".$diam."; глубина ".$depth
-            ." &mdash; (Ошибка!) исправлено: -".($this->DS+4)." <span id='ok'>&#9745;</span> <br>";
+            printErr($depth, $diam, ($this->DS+4));
+        //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
+        //     .", строка ". $this->currentRow 
+        //     ." => &Oslash; ".$diam."; глубина ".$depth
+        //     ." &mdash; (Ошибка!) исправлено: -".($this->DS+4)." <span id='ok'>&#9745;</span> <br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if (abs($depth) > ($this->DS+4)){ 
-           $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
-            .", строка ". $this->currentRow 
-            ." => &Oslash; ".$diam."; глубина ".$depth
-            ." &mdash; (Ошибка!) исправлено:  -".($this->DS+4)." <span id='ok'>&#9745;</span> <br>";
+            printErr($depth, $diam, ($this->DS+4));
+        //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
+        //     .", строка ". $this->currentRow 
+        //     ." => &Oslash; ".$diam."; глубина ".$depth
+        //     ." &mdash; (Ошибка!) исправлено:  -".($this->DS+4)." <span id='ok'>&#9745;</span> <br>";
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         
 
+    }
+
+    private function printErr($depth, $diam, $edit){ 
+        $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
+            .", строка ". $this->currentRow 
+            ." => &Oslash; ".$diam."; глубина ".$depth
+            ." &mdash; (Ошибка!) исправлено:  -". $edit ." <span id='ok'>&#9745;</span> <br>";
     }
 
     public function correctionRecord(){ 
