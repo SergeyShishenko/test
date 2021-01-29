@@ -88,15 +88,16 @@ $(document).ready(function() {
 		
 	function printErr(data) {
 		// $('#tableoutput').empty();
-		$('#tableoutput').children( 'tr:not(:first)' ).empty();
+		$('#tableoutput tbody').children( 'tr:not(:first)' ).remove();
 		// .children( 'tr:not(:first)' )
 		$('#err').remove();
 		var lastKey = Object.keys(data).reverse()[0];// последний элемент с ошибками					
 		var lastValue = data[lastKey];
-		
+		console.log("Object.entries(data) "+Object.entries(data));
+		console.log("Object.values(data) "+Object.values(data));
 		if (typeof(lastValue) !== "undefined" && lastValue !== "" && lastValue !== null){
 			$('#tableoutput').append("<tr><td><h2>Найдены ошибки в "+lastValue.length +" файлах!</h2></td></tr>")
-			// console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
+			 console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
 			lastValue.forEach(function(item, i, arr) {	
 				$('#tableoutput').append("<tr><td><h2>"+lastValue[i]['name']+"</h2><p>"
 				+lastValue[i]['DL']+" x "+lastValue[i]['DH']+" x "+lastValue[i]['DS']+"<br>"

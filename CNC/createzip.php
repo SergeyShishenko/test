@@ -4,7 +4,7 @@
 		$post = $_POST;		
 		$file_folder = "uploads/";	// folder to load files
 		if(extension_loaded('zip')){	// Checking ZIP extension is available		
-			$arrfiles = glob("uploads/correct".$post['folder']."/*");
+			$arrfiles = glob("uploads/correct".$post['folder']."/*.{cnc,CNC}", GLOB_BRACE);
 			if(isset($arrfiles) and count($arrfiles) > 0){	// Checking files are selected
 				$zip = new ZipArchive();			// Load zip library	
 				$zip_name = time().".zip";	// Zip name				

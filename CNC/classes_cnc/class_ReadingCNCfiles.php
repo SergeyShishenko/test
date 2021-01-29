@@ -81,7 +81,7 @@ class class_ReadingCNCfiles
                 $data[$j]['DS']=$this->arrFile[$i]->getDS();
                 $data[$j]['err']= $this->arrFile[$i]->err;
 
-                $j=$j+1;
+                $j++;
 
                            
                
@@ -92,7 +92,14 @@ class class_ReadingCNCfiles
            
 
         }
-      return $data; 
+        return $data; 
+        // if (sizeof($data)){
+        //   return $data;   
+        // }else{
+        //     $data[0]['name']="пусто";
+        //     return $data; 
+        // }
+      
     }
     
 }
