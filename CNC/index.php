@@ -70,7 +70,7 @@ include "createzip.php";
   ?>
   <form name="zips" method="post">
   <?php if(!empty($error)) { ?>
-  <p id="err" style=" border:#C10000 1px solid; background-color:#FFA8A8; color:#B00000;padding:8px; width:588px; margin:0 auto 10px;"><?php echo $error; ?></p>
+  <p id="err" style=" border:#C10000 1px solid; background-color:#FFA8A8; color:#B00000;padding:8px; width:588px; margin:0 auto 10px; text-align: center;"><?php echo $error; ?></p>
   <?php } ?>
 
   <table border="1" background=""  cellpadding="10"  style="width:100%; border-radius:5px;"> 
@@ -86,10 +86,11 @@ include "createzip.php";
 <table border="1" bgcolor="#e9e9f7" cellpadding="10" style="width:100%; border-radius:5px;" id="tableoutput"> 
   <tr>
       <!-- <td rowspan="2" style="width:80%"> -->
-      <td >
-          <h2>Проверяемые ошибки</h2>
-          <!--Начинаем абзац с красной строки-->
-          <p> Ошибка №1: Проверка глубины сверления в торцах деталей. Максимальная глубина сверления:  &Oslash;5 = -35 мм;  &Oslash;8 = -39 мм; </p> 
+      <td id="def_err">
+          <h2>Проверяемые ошибки</h2>         
+          <p> Ошибка #1: Проверка глубины сверления в торцах деталей. Максимальная глубина сверления:  &Oslash;5 = -35 мм;  &Oslash;8 = -39 мм; </p> 
+          <p> Ошибка #2: Проверка на максимальную глубину сверления в пласть детали; </p> 
+          <p> Ошибка #3: Проверка на чистовой выход сквозного сверления; </p> 
       </td>
   </tr> 
  

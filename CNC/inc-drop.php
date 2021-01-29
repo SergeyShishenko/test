@@ -9,6 +9,6 @@
 	<!-- Список загруженных файлов -->    
 </div>
 <div id="file-name-holder"></div>
-<input type="text" id="dircnc"  name="folder" ><br>
-<button type="button" id="delFolder">Удалить папку</button>      
+<input  id="dircnc"  name="folder" type="hidden"><br>
+<button type="button" id="delFolder">Удалить всю папку uploads</button>      
 </div> 

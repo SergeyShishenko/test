@@ -78,18 +78,20 @@ $(document).ready(function() {
 				   //  data.forEach(function(msg) {
 				   //      $('#file-name-holder').append(msg);                         
 				   //  });
-					$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');
+					$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');// предпоследний массив 
 					printErr(data);
-					$('#dircnc').val(data[0]);
+					$('#dircnc').val(data[0]);// имя папки
 				}
 			});
 		}
 	}
 		
 	function printErr(data) {
-		$('#tableoutput').empty();
+		// $('#tableoutput').empty();
+		$('#tableoutput').children( 'tr:not(:first)' ).empty();
+		// .children( 'tr:not(:first)' )
 		$('#err').remove();
-		var lastKey = Object.keys(data).reverse()[0];					
+		var lastKey = Object.keys(data).reverse()[0];// последний элемент с ошибками					
 		var lastValue = data[lastKey];
 		
 		if (typeof(lastValue) !== "undefined" && lastValue !== "" && lastValue !== null){
@@ -132,8 +134,9 @@ $(document).ready(function() {
 
 	$( "#delFolder" ).click(function(){ 
 		$('#file-name-holder').empty();   
-		// var dir= { del : $('#dircnc').val() };   
-	   $.post('remove-directory.php', {del: $('#dircnc').val()}, function(data){
+		// var delfolder =  $('#dircnc').val();// from input
+		var delfolder = "";// удалить всю папку uploads
+	   $.post('remove-directory.php', {del: delfolder}, function(data){
 		   $('#file-name-holder').append(data+'<br>');
 	   });
    
