@@ -25,33 +25,34 @@ $(document).ready(function() {
 		$('#file-name-holder').empty();
 		// Передаем в files все полученные файлы
 		var files = e.dataTransfer.files;
-		var dataArray = [];
-		var formData = new FormData();
-		$.each(files,function(key, input){
-			if (input.name.split(".").slice(-1)[0] =="CNC" || input.name.split(".").slice(-1)[0] =="cnc"){
-				formData.append('file[]', input);
-				dataArray.push({name : input.name});
-				}
-		});
-		console.log(dataArray.length);
+		loadingFilesAllMetod(files);
+		// var dataArray = [];
+		// var formData = new FormData();
+		// $.each(files,function(key, input){
+		// 	if (input.name.split(".").slice(-1)[0] =="CNC" || input.name.split(".").slice(-1)[0] =="cnc"){
+		// 		formData.append('file[]', input);
+		// 		dataArray.push({name : input.name});
+		// 		}
+		// });
+		// console.log(dataArray.length);
 
-		if(dataArray.length>0){
+		// if(dataArray.length>0){
 		
-			$.ajax({
-				type: "POST",
-				url: 'upload.php',
-				cache: false,
-				contentType: false,
-				processData: false,
-				data: formData,
-				dataType : 'json',
-				success: function(data){
-					$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');
-					printErr(data);			
-					$('#dircnc').val(data[0]);
-				}
-			});
-		}
+		// 	$.ajax({
+		// 		type: "POST",
+		// 		url: 'upload.php',
+		// 		cache: false,
+		// 		contentType: false,
+		// 		processData: false,
+		// 		data: formData,
+		// 		dataType : 'json',
+		// 		success: function(data){
+		// 			$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');
+		// 			printErr(data);			
+		// 			$('#dircnc').val(data[0]);
+		// 		}
+		// 	});
+		// }
 
 	});
 	
@@ -60,19 +61,59 @@ $(document).ready(function() {
 	
 	function loadingFiles() {
 		$('#file-name-holder').empty();	
+		// console.log($("#uploadbtn")[0].files);
+		loadingFilesAllMetod($("#uploadbtn")[0].files);
+		// var dataArray = [];
+		// if (window.FormData === undefined){
+		// 	alert('В вашем браузере FormData не поддерживается')
+		// } else {
+		// 	var formData = new FormData();
+		// 	$.each($("#uploadbtn")[0].files,function(key, input){
+		// 		if (input.name.split(".").slice(-1)[0] =="CNC" || input.name.split(".").slice(-1)[0] =="cnc"){
+		// 		formData.append('file[]', input);
+		// 		dataArray.push({name : input.name});
+		// 		}
+		// 	});
+
+		// 	console.log(dataArray.length);
+		// 	if(dataArray.length>0){	 
+		// 		$.ajax({
+		// 			type: "POST",
+		// 			url: 'upload.php',
+		// 			cache: false,
+		// 			contentType: false,
+		// 			processData: false,
+		// 			data: formData,
+		// 			dataType : 'json',
+		// 			success: function(data){
+	
+		// 			//  data.forEach(function(msg) {
+		// 			//      $('#file-name-holder').append(msg);                         
+		// 			//  });
+		// 				$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');// предпоследний массив 
+		// 				printErr(data);
+		// 				$('#dircnc').val(data[0]);// имя папки
+		// 			}
+		// 		});
+		// 	}
+		// }
+	}
+
+	function loadingFilesAllMetod(files){
 		var dataArray = [];
 		if (window.FormData === undefined){
 			alert('В вашем браузере FormData не поддерживается')
 		} else {
 			var formData = new FormData();
-			$.each($("#uploadbtn")[0].files,function(key, input){
+
+			$.each(files,function(key, input){
 				if (input.name.split(".").slice(-1)[0] =="CNC" || input.name.split(".").slice(-1)[0] =="cnc"){
 				formData.append('file[]', input);
 				dataArray.push({name : input.name});
 				}
 			});
 
-			console.log(dataArray.length);
+			// console.log(dataArray.length);
 			if(dataArray.length>0){	 
 				$.ajax({
 					type: "POST",
@@ -94,31 +135,26 @@ $(document).ready(function() {
 				});
 			}
 		}
+
 	}
-		
+	
 	function printErr(data) {
 		// $('#tableoutput').empty();
-		$('#tableoutput tbody').children( 'tr:not(:first)' ).remove();
-		// .children( 'tr:not(:first)' )
+		$('#tableoutput tbody').children( 'tr:not(:first)' ).remove();	
 		$('#err').remove();
 		var lastKey = Object.keys(data).reverse()[0];// последний элемент с ошибками					
 		var lastValue = data[lastKey];
-		console.log("Object.entries(data) "+Object.entries(data));
-		console.log("Object.values(data) "+Object.values(data));
+		// console.log("Object.entries(data) "+Object.entries(data));//!!!
+		// console.log("Object.values(data) "+Object.values(data));//!!!
 		if (typeof(lastValue) !== "undefined" && lastValue !== "" && lastValue !== null){
 			$('#tableoutput').append("<tr><td><h2>Найдены ошибки в "+lastValue.length +" файлах!</h2></td></tr>")
-			 console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
+			//  console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
 			lastValue.forEach(function(item, i, arr) {	
 				$('#tableoutput').append("<tr><td><h2>"+lastValue[i]['name']+"</h2><p>"
 				+lastValue[i]['DL']+" x "+lastValue[i]['DH']+" x "+lastValue[i]['DS']+"<br>"
 				+lastValue[i]['err']
 				+"</p></td></tr>"
-				)		
-				// console.log("lastValue.name "+lastValue[i]['name']);//DL,DH,DS,err					
-				// console.log("lastValue.DL "+lastValue[i]['DL']);
-				// console.log("lastValue.DH "+lastValue[i]['DH']);
-				// console.log("lastValue.DS "+lastValue[i]['DS']);
-				// console.log("lastValue.err "+lastValue[i]['err']);
+				)			
 			});
 		}else{
 			// console.log("Ошибок нет!");
