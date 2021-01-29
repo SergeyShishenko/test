@@ -62,10 +62,13 @@ if (!isset($_FILES[$input_name])) {
 				$error = 'Недопустимый тип файла';
 			} elseif (strtolower($parts['extension'])!='cnc') {
 				$error = 'Недопустимый тип файла';
+				// $error = false;
 			} elseif (!empty($allow) && !in_array(strtolower($parts['extension']), $allow)) {
 				$error = 'Недопустимый тип файла';
+				// $error = false;
 			} elseif (!empty($deny) && in_array(strtolower($parts['extension']), $deny)) {
 				$error = 'Недопустимый тип файла';
+				// $error = false;
 			} else {
 				// Перемещаем файл в директорию.
 			
@@ -86,7 +89,8 @@ if (!isset($_FILES[$input_name])) {
 
 		}
 		if (!empty($error)) {
-			$data[] = '<p style="color: red">' . $error . '</p>';  
+			// $data[] = '<p style="color: red">' . $error . '</p>';  
+			$data[] = null;  
 		}
 	}
 	

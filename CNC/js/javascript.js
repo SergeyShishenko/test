@@ -13,8 +13,8 @@ $(document).ready(function() {
 	// Кнопка выбора файлов
 	var defaultUploadBtn = $('#uploadbtn');
 	
-	// Массив для всех изображений
-	// var dataArray = [];
+	
+	
 	
 	// Область информер о загруженных изображениях - скрыта
 	$('#uploaded-files').hide();
@@ -25,46 +25,18 @@ $(document).ready(function() {
 		$('#file-name-holder').empty();
 		// Передаем в files все полученные файлы
 		var files = e.dataTransfer.files;
-
+		var dataArray = [];
 		var formData = new FormData();
 		$.each(files,function(key, input){
-			formData.append('file[]', input);
-		});
- 
-		$.ajax({
-			type: "POST",
-			url: 'upload.php',
-			cache: false,
-			contentType: false,
-			processData: false,
-			data: formData,
-			dataType : 'json',
-			success: function(data){
-//  alert(data[0]);
-			   //  data.forEach(function(msg) {
-			   //      $('#file-name-holder').append(msg);                         
-			   //  });
-				$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');
-				printErr(data);			
-				$('#dircnc').val(data[0]);
-			}
-		});
-
-	});
-	
-	// При нажатии на кнопку выбора файлов
-	defaultUploadBtn.on('change', loadingFiles);
-	
-	function loadingFiles() {
-		$('#file-name-holder').empty();	
-		if (window.FormData === undefined){
-			alert('В вашем браузере FormData не поддерживается')
-		} else {
-			var formData = new FormData();
-			$.each($("#uploadbtn")[0].files,function(key, input){
+			if (input.name.split(".").slice(-1)[0] =="CNC" || input.name.split(".").slice(-1)[0] =="cnc"){
 				formData.append('file[]', input);
-			});
-	 
+				dataArray.push({name : input.name});
+				}
+		});
+		console.log(dataArray.length);
+
+		if(dataArray.length>0){
+		
 			$.ajax({
 				type: "POST",
 				url: 'upload.php',
@@ -74,15 +46,53 @@ $(document).ready(function() {
 				data: formData,
 				dataType : 'json',
 				success: function(data){
-   
-				   //  data.forEach(function(msg) {
-				   //      $('#file-name-holder').append(msg);                         
-				   //  });
-					$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');// предпоследний массив 
-					printErr(data);
-					$('#dircnc').val(data[0]);// имя папки
+					$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');
+					printErr(data);			
+					$('#dircnc').val(data[0]);
 				}
 			});
+		}
+
+	});
+	
+	// При нажатии на кнопку выбора файлов
+	defaultUploadBtn.on('change', loadingFiles);
+	
+	function loadingFiles() {
+		$('#file-name-holder').empty();	
+		var dataArray = [];
+		if (window.FormData === undefined){
+			alert('В вашем браузере FormData не поддерживается')
+		} else {
+			var formData = new FormData();
+			$.each($("#uploadbtn")[0].files,function(key, input){
+				if (input.name.split(".").slice(-1)[0] =="CNC" || input.name.split(".").slice(-1)[0] =="cnc"){
+				formData.append('file[]', input);
+				dataArray.push({name : input.name});
+				}
+			});
+
+			console.log(dataArray.length);
+			if(dataArray.length>0){	 
+				$.ajax({
+					type: "POST",
+					url: 'upload.php',
+					cache: false,
+					contentType: false,
+					processData: false,
+					data: formData,
+					dataType : 'json',
+					success: function(data){
+	
+					//  data.forEach(function(msg) {
+					//      $('#file-name-holder').append(msg);                         
+					//  });
+						$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');// предпоследний массив 
+						printErr(data);
+						$('#dircnc').val(data[0]);// имя папки
+					}
+				});
+			}
 		}
 	}
 		
