@@ -319,14 +319,11 @@ class class_CNC
                     $this->currentRow=0;            
             }
 
-
-
             if ($this->currentBlock == "SIDE#1{") {                
                     if (strpos($this->$arrStr[$i], "W#81{") !== false){ // Сверление                 
                        $this->checkDepth1($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
                     }
             }
-
 
             if ($this->currentBlock == "SIDE#3{" || $this->currentBlock == "SIDE#4{" || $this->currentBlock == "SIDE#5{" || $this->currentBlock == "SIDE#6{"  ){              
                     if (strpos($this->$arrStr[$i], "W#81{") !== false){ 
@@ -343,57 +340,41 @@ class class_CNC
      }
 
     //  &#9888;	Внимание!
-
+// проверка торцы
     private function checkDepth3($depth,$diam,$i){        
         if ($diam == 5 && $depth < -35 ){ 
 
-            $this->printErr($depth, $diam, 35, 1);
-        //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
-        //     .", строка ". $this->currentRow 
-        //     ." => &Oslash; ".$diam."; глубина ".$depth
-        //     ." &mdash; (Ошибка!) исправлено:  -35 <span id='ok'>&#9745;</span> <br>";
+            $this->printErr($depth, $diam, 35, 1);  //Ошибка #1: Проверка глубины сверления в торцах деталей. Максимальная глубина сверления     
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-35', $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
         if ($diam == 8 && $depth < -39 ){
 
-            $this->printErr($depth, $diam, 39, 1);
-            // $this->err.= "Поверхность ".substr($this->currentBlock, -2,1)
-            // .", строка ". $this->currentRow 
-            // ." => &Oslash; ".$diam."; глубина ".$depth
-            // ." &mdash; (Ошибка!) исправлено:  -39 <span id='ok'>&#9745;</span> <br>";
+            $this->printErr($depth, $diam, 39, 1);  //Ошибка #1: Проверка глубины сверления в торцах деталей. Максимальная глубина сверления     
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
             
         } 
 
     }
-    private function checkDepth1($depth,$diam,$i){  
-        // echo ", строка ". $this->currentRow . " ".($this->DS-3)." < ". abs($depth) . " && ". abs($depth) . " < " . ($this->DS) ."\n";
+
+    // проверка пласть
+    private function checkDepth1($depth,$diam,$i){    
+
         if (($this->DS-3) < abs($depth) && abs($depth) < $this->DS ){ 
-            $this->printErr($depth, $diam, ($this->DS-3), 2);
-        //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
-        //     .", строка ". $this->currentRow 
-        //     ." => &Oslash; ".$diam."; глубина ".$depth
-        //     ." &mdash; (Ошибка!) исправлено: -".($this->DS-3)." <span id='ok'>&#9745;</span> <br>";
+            $this->printErr($depth, $diam, ($this->DS-3), 2);  //Ошибка #2: Проверка на максимальную глубину сверления в пласть детали    
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS-3), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
+
         if (abs($depth) >= $this->DS && abs($depth) < ($this->DS+4)) { 
-            $this->printErr($depth, $diam, ($this->DS+4), 3);
-        //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
-        //     .", строка ". $this->currentRow 
-        //     ." => &Oslash; ".$diam."; глубина ".$depth
-        //     ." &mdash; (Ошибка!) исправлено: -".($this->DS+4)." <span id='ok'>&#9745;</span> <br>";
+            $this->printErr($depth, $diam, ($this->DS+4), 3); //Ошибка #3: Проверка на чистовой выход сквозного сверления    
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
+
         if (abs($depth) > ($this->DS+4)){ 
-            $this->printErr($depth, $diam, ($this->DS+4), 3);
-        //    $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
-        //     .", строка ". $this->currentRow 
-        //     ." => &Oslash; ".$diam."; глубина ".$depth
-        //     ." &mdash; (Ошибка!) исправлено:  -".($this->DS+4)." <span id='ok'>&#9745;</span> <br>";
+            $this->printErr($depth, $diam, ($this->DS+4), 3);  //Ошибка #3: Проверка на чистовой выход сквозного сверления     
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
         } 
