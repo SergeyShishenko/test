@@ -5,7 +5,7 @@ $(document).ready(function() {
 	jQuery.event.props.push('dataTransfer');
 	
 	// Максимальное количество загружаемых изображений за одни раз
-	// var maxFiles = 1;
+	 var maxFiles = 256;
 	
 	// Оповещение по умолчанию
 	// var errMessage = 0;
@@ -113,8 +113,8 @@ $(document).ready(function() {
 				}
 			});
 
-			// console.log(dataArray.length);
-			if(dataArray.length>0){	 
+			 console.log("dataArray.length "+dataArray.length);
+			if(0 > dataArray.length <= maxFiles){	 
 				$.ajax({
 					type: "POST",
 					url: 'upload.php',
@@ -133,6 +133,8 @@ $(document).ready(function() {
 						$('#dircnc').val(data[0]);// имя папки
 					}
 				});
+			}else{
+				$('#file-name-holder').append('Вы не можете загружать больше '+maxFiles+' файлов!<br>');
 			}
 		}
 
