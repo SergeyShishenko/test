@@ -141,8 +141,8 @@ $(document).ready(function() {
 	}
 	
 	function printErr(data) {
-		// $('#tableoutput').empty();
-		$('#tableoutput tbody').children( 'tr:not(:first)' ).remove();	
+		$('#tableoutput').empty();
+		// $('#tableoutput tbody').children( 'tr:not(:first)' ).remove();// оставить первую строку	
 		$('#err').remove();
 		var lastKey = Object.keys(data).reverse()[0];// последний элемент с ошибками					
 		var lastValue = data[lastKey];

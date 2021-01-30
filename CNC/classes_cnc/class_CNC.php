@@ -386,7 +386,7 @@ class class_CNC
         $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
             .", стр. ". $this->currentRow 
             ." => &Oslash; ".$diam."; Z ".$depth
-            ." &mdash; {Ошибка #".$numerr."} исправлено: Z -". $edit ." <span id='ok'>&#9745;</span> <br>";
+            ." &mdash; <span class='numerr' data-tooltip='$numerr'>{Ошибка #".$numerr."}</span> исправлено: Z -". $edit ." <span id='ok'>&#9745;</span> <br>";
     }
 
     public function correctionRecord(){ 
