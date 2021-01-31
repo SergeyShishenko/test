@@ -55,6 +55,11 @@
                                 <!-- <a href="CNC/" class="button">Проверка ЧПУ</a> -->
                                 
                                 <?php } ?>
+
+                                <a class='button-chpu'  href="CNC/" type='button'  style="float: left;">
+                                    <span  >Проверка ЧПУ</span>                                 
+                                </a>
+
                                 <!-- <input type="button" value="Пустой бланк ВПИ" onclick="blankVPI()" /> -->
 
                                 <a class='button-gen' id='blankVPI' href='javascript:void(0)' type='button' onclick="blankVPI()" style="float: left;">
