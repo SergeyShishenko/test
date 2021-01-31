@@ -36,7 +36,7 @@ include 'inc/inc-version-css-js.php';
     <link href="./dist/css/сontextMenu.css?v=<?php echo $сontextMenu ;?>" rel="stylesheet">
     <link href="./dist/css/vpiDB-search.css" rel="stylesheet">
     <link href="./dist/css/checkselect.css" rel="stylesheet">
-    <link href="./dist/css/submit-process.css" rel="stylesheet">
+    <link href="./dist/css/submit-process.css?v=3" rel="stylesheet">
     <link href="./dist/css/font-awesome.css" rel="stylesheet">
     <link href="./dist/css/gallery.css" rel="stylesheet">
     

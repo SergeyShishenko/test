@@ -54,7 +54,8 @@ $result = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LI
         // if(!isset($_SESSION['sess_login']) || !isset($_SESSION['sess_pass']) ) { header($loc);    exit();}
 
     }
-   
+    $data = mysqli_fetch_assoc($result);
+    $role=$data['user_role']; 
 
     
 
