@@ -359,6 +359,9 @@ class class_CNC
     }
 
     // проверка пласть
+    // function returns_nothing(): void {
+    //     return; // valid
+    // }
     private function checkDepth1($depth,$diam,$i){    
 
         if (($this->DS-3) < abs($depth) && abs($depth) < $this->DS ){ 
