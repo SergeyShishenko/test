@@ -82,7 +82,7 @@
     * #2=377.5     Y
     * #3=-17       Z глубина
     * #8015=0 абсолютные коолдинаты
-    * #1002=8 &Oslash;
+    * #1002=8 &Oslash; диаметр
     * #205= инструмент - убрать
     * #201=1  тип машины
     * #1001=1 сквозное/глухое  1/0
@@ -341,55 +341,67 @@ class class_CNC
 
     //  &#9888;	Внимание!
 // проверка торцы
-    private function checkDepth3($depth,$diam,$i){        
+    private function checkDepth3($depth,$diam,$i): void {        
         if ($diam == 5 && $depth < -35 ){ 
 
             $this->printErr($depth, $diam, 35, 1);  //Ошибка #1: Проверка глубины сверления в торцах деталей. Максимальная глубина сверления     
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-35', $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
+            return; 
         } 
         if ($diam == 8 && $depth < -39 ){
 
             $this->printErr($depth, $diam, 39, 1);  //Ошибка #1: Проверка глубины сверления в торцах деталей. Максимальная глубина сверления     
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
+            return; 
             
         } 
 
     }
 
-    // проверка пласть
-    // function returns_nothing(): void {
-    //     return; // valid
-    // }
-    private function checkDepth1($depth,$diam,$i){    
+    // проверка пласть  
+    private function checkDepth1($depth,$diam,$i): void {    
 
+        if (abs($diam)  < 4 ){ 
+            $this->printErr($depth, $diam, 1.5 , 4);  //Ошибка #4: Проверка на правильность установки наколки    
+            $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-1.5', $this->$arrStr[$i]); // новая глубина
+            $this->$arrStr[$i] = str_replace('#1002='.$this->findVal($this->$arrStr[$i],"#1002"), '#1002=4', $this->$arrStr[$i]); // новый диаметр
+            $this->$arrStr[$i] = str_replace('#1001='.$this->findVal($this->$arrStr[$i],"#1001"), '#1001=1', $this->$arrStr[$i]); // новый тип сверления - сквозное
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);// комментарий
+            return; 
+        } 
         if (($this->DS-3) < abs($depth) && abs($depth) < $this->DS ){ 
             $this->printErr($depth, $diam, ($this->DS-3), 2);  //Ошибка #2: Проверка на максимальную глубину сверления в пласть детали    
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS-3), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
+            return; 
         } 
 
         if (abs($depth) >= $this->DS && abs($depth) < ($this->DS+4)) { 
             $this->printErr($depth, $diam, ($this->DS+4), 3); //Ошибка #3: Проверка на чистовой выход сквозного сверления    
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
+            return; 
         } 
 
         if (abs($depth) > ($this->DS+4)){ 
             $this->printErr($depth, $diam, ($this->DS+4), 3);  //Ошибка #3: Проверка на чистовой выход сквозного сверления     
             $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
             $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
+            return; 
         } 
         
 
     }
 
     private function printErr($depth, $diam, $edit, $numerr){ 
+        $chdiam="";
+        if ($numerr == 4){$chdiam='; &Oslash 4';}
         $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 
             .", стр. ". $this->currentRow 
             ." => &Oslash; ".$diam."; Z ".$depth
-            ." &mdash; <span class='numerr' data-tooltip='$numerr'>{Ошибка #".$numerr."}</span> исправлено: Z -". $edit ." <span id='ok'>&#9745;</span> <br>";
+            ." &mdash; <span class='numerr' data-tooltip='$numerr'>{Ошибка #".$numerr."}</span> исправлено: Z -". $edit . $chdiam ." <span id='ok'>&#9745;</span> <br>";
     }
 
     public function correctionRecord(){ 

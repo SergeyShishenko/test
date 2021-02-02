@@ -20,6 +20,9 @@ let tooltipElem;
         case '3':  
         tooltipHtml = "Недостаточная глубина для сквозного сверления";
           break;      
+        case '4':  
+        tooltipHtml = "Неверная установка наколки";
+          break;      
         // default:
         //     tooltipHtml = "?";
         //   break

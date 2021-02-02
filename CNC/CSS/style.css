@@ -262,7 +262,9 @@ a.nav:hover {
 	text-align: center ;
 	line-height: 1.5;
 }
-
+.serr{
+	text-align: left;
+}
 #ok {
 	color:green;
 }
