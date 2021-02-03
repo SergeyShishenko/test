@@ -23,6 +23,9 @@ let tooltipElem;
         case '4':  
         tooltipHtml = "Неверная установка наколки";
           break;      
+        case 'w1':  
+        tooltipHtml = "Отверстие слишком близко к кромки детали";
+          break;      
         // default:
         //     tooltipHtml = "?";
         //   break

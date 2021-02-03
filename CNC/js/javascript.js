@@ -11,10 +11,7 @@ $(document).ready(function() {
 	// var errMessage = 0;
 	
 	// Кнопка выбора файлов
-	var defaultUploadBtn = $('#uploadbtn');
-	
-	
-	
+	var defaultUploadBtn = $('#uploadbtn');	
 	
 	// Область информер о загруженных изображениях - скрыта
 	$('#uploaded-files').hide();
@@ -26,34 +23,6 @@ $(document).ready(function() {
 		// Передаем в files все полученные файлы
 		var files = e.dataTransfer.files;
 		loadingFilesAllMetod(files);
-		// var dataArray = [];
-		// var formData = new FormData();
-		// $.each(files,function(key, input){
-		// 	if (input.name.split(".").slice(-1)[0] =="CNC" || input.name.split(".").slice(-1)[0] =="cnc"){
-		// 		formData.append('file[]', input);
-		// 		dataArray.push({name : input.name});
-		// 		}
-		// });
-		// console.log(dataArray.length);
-
-		// if(dataArray.length>0){
-		
-		// 	$.ajax({
-		// 		type: "POST",
-		// 		url: 'upload.php',
-		// 		cache: false,
-		// 		contentType: false,
-		// 		processData: false,
-		// 		data: formData,
-		// 		dataType : 'json',
-		// 		success: function(data){
-		// 			$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');
-		// 			printErr(data);			
-		// 			$('#dircnc').val(data[0]);
-		// 		}
-		// 	});
-		// }
-
 	});
 	
 	// При нажатии на кнопку выбора файлов
@@ -63,40 +32,6 @@ $(document).ready(function() {
 		$('#file-name-holder').empty();	
 		// console.log($("#uploadbtn")[0].files);
 		loadingFilesAllMetod($("#uploadbtn")[0].files);
-		// var dataArray = [];
-		// if (window.FormData === undefined){
-		// 	alert('В вашем браузере FormData не поддерживается')
-		// } else {
-		// 	var formData = new FormData();
-		// 	$.each($("#uploadbtn")[0].files,function(key, input){
-		// 		if (input.name.split(".").slice(-1)[0] =="CNC" || input.name.split(".").slice(-1)[0] =="cnc"){
-		// 		formData.append('file[]', input);
-		// 		dataArray.push({name : input.name});
-		// 		}
-		// 	});
-
-		// 	console.log(dataArray.length);
-		// 	if(dataArray.length>0){	 
-		// 		$.ajax({
-		// 			type: "POST",
-		// 			url: 'upload.php',
-		// 			cache: false,
-		// 			contentType: false,
-		// 			processData: false,
-		// 			data: formData,
-		// 			dataType : 'json',
-		// 			success: function(data){
-	
-		// 			//  data.forEach(function(msg) {
-		// 			//      $('#file-name-holder').append(msg);                         
-		// 			//  });
-		// 				$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');// предпоследний массив 
-		// 				printErr(data);
-		// 				$('#dircnc').val(data[0]);// имя папки
-		// 			}
-		// 		});
-		// 	}
-		// }
 	}
 
 	function loadingFilesAllMetod(files){
@@ -152,9 +87,16 @@ $(document).ready(function() {
 			$('#tableoutput').append("<tr><td><h2>Найдены ошибки в "+lastValue.length +" файлах!</h2></td></tr>")
 			//  console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
 			lastValue.forEach(function(item, i, arr) {	
+				
+                if (typeof(lastValue[i]['err']) !== "undefined" && lastValue[i]['err'] !== "" && lastValue[i]['err'] !== null){
+					var msg = lastValue[i]['err'];
+				} else if(typeof(lastValue[i]['warning']) !== "undefined" && lastValue[i]['warning'] !== "" && lastValue[i]['warning'] !== null){
+					var msg = lastValue[i]['warning'];
+				}
+				
 				$('#tableoutput').append("<tr><td><h2>"+lastValue[i]['name']+"</h2><p>"
 				+lastValue[i]['DL']+" x "+lastValue[i]['DH']+" x "+lastValue[i]['DS']+"<br>"
-				+lastValue[i]['err']
+				+msg
 				+"</p></td></tr>"
 				)			
 			});

@@ -100,7 +100,7 @@ if (!isset($_FILES[$input_name])) {
 
 if (!empty($success)) {
 			
-	include "checkCPU.php";
+	$data[] = include "checkCPU.php";
 			
 }
  

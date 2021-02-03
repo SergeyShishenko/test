@@ -172,7 +172,10 @@ class class_CNC
 
     private $currentRow=-1; 
 
-    public $err="";
+    public $err=""; // ошибки 
+
+    public $warning=""; // предупреждения
+
     private $rand_folder;
 
 
@@ -333,7 +336,7 @@ class class_CNC
         
         }// for
 
-       if ($this->err != ""){
+       if ($this->warning == "" &&  $this->err != ""){
             $this->correctionRecord();
        }
 
@@ -364,12 +367,15 @@ class class_CNC
     private function checkDepth1($depth,$diam,$i): void {    
 
         if (abs($diam)  < 4 ){ 
-            $this->printErr($depth, $diam, 1.5 , 4);  //Ошибка #4: Проверка на правильность установки наколки    
-            $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-1.5', $this->$arrStr[$i]); // новая глубина
-            $this->$arrStr[$i] = str_replace('#1002='.$this->findVal($this->$arrStr[$i],"#1002"), '#1002=4', $this->$arrStr[$i]); // новый диаметр
-            $this->$arrStr[$i] = str_replace('#1001='.$this->findVal($this->$arrStr[$i],"#1001"), '#1001=1', $this->$arrStr[$i]); // новый тип сверления - сквозное
-            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);// комментарий
-            return; 
+
+            if (!$this->printWarning(1)){
+                $this->printErr($depth, $diam, 1.5 , 4);  //Ошибка #4: Проверка на правильность установки наколки    
+                $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-1.5', $this->$arrStr[$i]); // новая глубина
+                $this->$arrStr[$i] = str_replace('#1002='.$this->findVal($this->$arrStr[$i],"#1002"), '#1002=4', $this->$arrStr[$i]); // новый диаметр
+                $this->$arrStr[$i] = str_replace('#1001='.$this->findVal($this->$arrStr[$i],"#1001"), '#1001=1', $this->$arrStr[$i]); // новый тип сверления - сквозное
+                $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);// комментарий                 
+            }
+           return; 
         } 
         if (($this->DS-3) < abs($depth) && abs($depth) < $this->DS ){ 
             $this->printErr($depth, $diam, ($this->DS-3), 2);  //Ошибка #2: Проверка на максимальную глубину сверления в пласть детали    
@@ -402,6 +408,11 @@ class class_CNC
             .", стр. ". $this->currentRow 
             ." => &Oslash; ".$diam."; Z ".$depth
             ." &mdash; <span class='numerr' data-tooltip='$numerr'>{Ошибка #".$numerr."}</span> исправлено: Z -". $edit . $chdiam ." <span id='ok'>&#9745;</span> <br>";
+    }
+
+    private function printWarning($numerr){       
+        $this->warning.= "<span class='numerr' data-tooltip='w".$numerr."'>{Предупреждение #".$numerr."}</span>  <span id='warning'>&#9888;</span> <br>";
+        return true;
     }
 
     public function correctionRecord(){ 
