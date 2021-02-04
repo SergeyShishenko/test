@@ -88,16 +88,19 @@ $(document).ready(function() {
 		if (typeof(lastValue) !== "undefined" && lastValue !== "" && lastValue !== null){
 			$('#tableoutput').append("<tr><td><h2>Найдены ошибки в "+lastValue.length +" файлах!</h2></td></tr>")
 			//  console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
+			var me=0;
+			var mw=0;
 			lastValue.forEach(function(item, i, arr) {	
 				var msgerr="";
 				var msgwarning="";
-				// console.log("warning "+lastValue[i]['warning']);
-				// console.log("err "+lastValue[i]['err']);
+				
                 if (typeof(lastValue[i]['err']) !== "undefined" && lastValue[i]['err'] !== "" && lastValue[i]['err'] !== null){
 					msgerr = lastValue[i]['err'];
+					me++;
 				} 
 				if(typeof(lastValue[i]['warning']) !== "undefined" && lastValue[i]['warning'] !== "" && lastValue[i]['warning'] !== null){
 					msgwarning = lastValue[i]['warning'];
+					mw++;
 				}
 				
 				$('#tableoutput').append("<tr><td><h2>"+lastValue[i]['name']+"</h2><p>"
@@ -107,6 +110,11 @@ $(document).ready(function() {
 				+"</p></td></tr>"
 				)			
 			});
+			// $('#tableoutput tbody tr:first td h2').val("warning "+me);
+			$('#tableoutput td').eq(0).html('<h2>Ошибок '+me+'</h2><h2>Предупреждений '+mw+'</h2>');
+			//  console.log("warning "+mw); 
+			//  console.log("err "+me);
+
 		}else{
 			// console.log("Ошибок нет!");
 			$('#tableoutput').append("<tr><td><h2>Ошибок нет!</h2></td></tr>")
@@ -125,9 +133,6 @@ $(document).ready(function() {
 		return false;
 	});
 
-	
-
-
 	//  var dircnc='72971716';
 
 	$( "#delFolder" ).click(function(){ 
@@ -139,15 +144,6 @@ $(document).ready(function() {
 	   });
    
 	});
-
-	// $('#createzip').on('click', function() {
-	// 	// var corrfolder= { createzip : $('#dircnc').val() }; 
-	// 	$.post('createzip.php', { createzip : $('#dircnc').val() }, function(data){
-	// 		 $('#file-name-holder').append(data+'<br>');
-	// 	});
-	// }
-	// );
-
 
 	// Перезагрузить текущую страницу, без использования кэша
 	// document.location.reload(true);
