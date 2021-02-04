@@ -351,7 +351,12 @@ class class_CNC
                     if (strpos($this->$arrStr[$i], "W#81{") !== false){ // Сверление                 
                        $this->checkDepth1($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
                     }
-            }
+                    if (strpos($this->$arrStr[$i], "W#1050{") !== false){ // Пила по Х    
+                        // #8510=-50      Координата X начальной точки
+                        // #8517=2387+50  Координата X конечной точки             
+                       $this->checkSaw($this->findVal($this->$arrStr[$i],"#8510"),$this->findVal($this->$arrStr[$i],"#8517"),$i);
+                    }
+            } // if "SIDE#1{"
 
             if ($this->currentBlock == "SIDE#3{" || $this->currentBlock == "SIDE#4{" || $this->currentBlock == "SIDE#5{" || $this->currentBlock == "SIDE#6{"  ){              
                     if (strpos($this->$arrStr[$i], "W#81{") !== false){ 
@@ -429,6 +434,30 @@ class class_CNC
 
     }
 
+    // проверка на вход/выход пилы
+    private function checkSaw($xi,$xf,$i){ 
+
+        if ($xi == 0 &&  $xf == $this->DL){   
+            // #8510=-50      Координата X начальной точки
+            // #8517=2387+50  Координата X конечной точки                 
+            $this->printErrSaw(5);  //Ошибка #5: Проверка на вход/выход пилы   
+            $this->$arrStr[$i] = str_replace('#8510=0', '#8510=-50', $this->$arrStr[$i]); // новый вход
+            $this->$arrStr[$i] = str_replace('#8517='.$this->DL, '#8517=l+50', $this->$arrStr[$i]); // новый выход           
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);// комментарий 
+            return; 
+        } 
+        if ( $xi == $this->DL && $xf == 0 ){   
+            // #8510=-50      Координата X начальной точки
+            // #8517=2387+50  Координата X конечной точки                 
+            $this->printErrSaw(5);  //Ошибка #5: Проверка на вход/выход пилы   
+            $this->$arrStr[$i] = str_replace('#8510='.$this->DL, '#8510=l+50', $this->$arrStr[$i]); // новый вход
+            $this->$arrStr[$i] = str_replace('#8517=0', '#8517=-50', $this->$arrStr[$i]); // новый выход           
+            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);// комментарий 
+            return; 
+        } 
+
+    }
+
     private function printErr($depth, $diam, $edit, $numerr){ 
         $chdiam="";
         if ($numerr == 4){$chdiam='; &Oslash 4';}
@@ -436,6 +465,12 @@ class class_CNC
             .", стр. ". $this->currentRow 
             ." => &Oslash; ".$diam."; Z ".$depth
             ." &mdash; <span class='numerr' data-tooltip='$numerr'>{Ошибка #".$numerr."}</span> исправлено: Z -". $edit . $chdiam ." <span id='ok'>&#9745;</span> <br>";
+    }
+
+    private function printErrSaw($numerr){
+        $this->err.= "Поверхность 1"
+            .", стр. ". $this->currentRow            
+            ."<span class='numerr' data-tooltip='$numerr'>{Ошибка #".$numerr."}</span> исправлено: Вход  -50; Выход  + 50 <span id='ok'>&#9745;</span> <br>";
     }
 
     private function printWarning($diam, $i){  
