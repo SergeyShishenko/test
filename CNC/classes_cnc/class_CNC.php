@@ -361,7 +361,10 @@ class class_CNC
         
         }// for
 
-       if ($this->warning == "" &&  $this->err != ""){
+    //    if ($this->warning == "" &&  $this->err != ""){
+    //         $this->correctionRecord();
+    //    }
+       if ( $this->err != ""){
             $this->correctionRecord();
        }
 
@@ -390,7 +393,8 @@ class class_CNC
 
     // проверка пласть  
     private function checkDepth1($depth,$diam,$i): void {    
-        if (!$this->printWarning($i)){
+            $this->printWarning($diam, $i); // проверка на предупреждения
+        // if (!$this->printWarning($i)){
             if (abs($diam)  < 4 ){                 
                     $this->printErr($depth, $diam, 1.5 , 4);  //Ошибка #4: Проверка на правильность установки наколки    
                     $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-1.5', $this->$arrStr[$i]); // новая глубина
@@ -421,7 +425,7 @@ class class_CNC
             } 
 
 
-        }// printWarning   
+        // }// printWarning   
 
     }
 
@@ -434,7 +438,7 @@ class class_CNC
             ." &mdash; <span class='numerr' data-tooltip='$numerr'>{Ошибка #".$numerr."}</span> исправлено: Z -". $edit . $chdiam ." <span id='ok'>&#9745;</span> <br>";
     }
 
-    private function printWarning($i){  
+    private function printWarning($diam, $i){  
 
         $x=$this->findVal($this->$arrStr[$i],"#1"); //значение по х
         $y=$this->findVal($this->$arrStr[$i],"#2"); //значение по н
@@ -444,11 +448,11 @@ class class_CNC
             $numerr="1";
            $this->warning.= "Поверхность ".substr($this->currentBlock, -2,1) 
            .", стр. ". $this->currentRow 
-           ."<span class='numerr' data-tooltip='w".$numerr."'>{Предупреждение #".$numerr."}</span>  <span id='warning'>&#9888;</span> <br>"; 
-           return true;
+           ."<span class='numerr warning' data-tooltip='w".$numerr."'>{Предупреждение #".$numerr."} &Oslash; ".$diam."; X ".$x."; Y ".$y." </span><span id='warning'> &#9888;</span> <br>"; 
+        //    return true;
         }
         
-        return false;
+        // return false;
     }
 
 

@@ -81,22 +81,29 @@ $(document).ready(function() {
 		$('#err').remove();
 		var lastKey = Object.keys(data).reverse()[0];// последний элемент с ошибками					
 		var lastValue = data[lastKey];
+		// console.log("Object.keys(data) "+Object.keys(data));
 		// console.log("Object.entries(data) "+Object.entries(data));//!!!
 		// console.log("Object.values(data) "+Object.values(data));//!!!
+		
 		if (typeof(lastValue) !== "undefined" && lastValue !== "" && lastValue !== null){
 			$('#tableoutput').append("<tr><td><h2>Найдены ошибки в "+lastValue.length +" файлах!</h2></td></tr>")
 			//  console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
 			lastValue.forEach(function(item, i, arr) {	
-				
+				var msgerr="";
+				var msgwarning="";
+				// console.log("warning "+lastValue[i]['warning']);
+				// console.log("err "+lastValue[i]['err']);
                 if (typeof(lastValue[i]['err']) !== "undefined" && lastValue[i]['err'] !== "" && lastValue[i]['err'] !== null){
-					var msg = lastValue[i]['err'];
-				} else if(typeof(lastValue[i]['warning']) !== "undefined" && lastValue[i]['warning'] !== "" && lastValue[i]['warning'] !== null){
-					var msg = lastValue[i]['warning'];
+					msgerr = lastValue[i]['err'];
+				} 
+				if(typeof(lastValue[i]['warning']) !== "undefined" && lastValue[i]['warning'] !== "" && lastValue[i]['warning'] !== null){
+					msgwarning = lastValue[i]['warning'];
 				}
 				
 				$('#tableoutput').append("<tr><td><h2>"+lastValue[i]['name']+"</h2><p>"
 				+lastValue[i]['DL']+" x "+lastValue[i]['DH']+" x "+lastValue[i]['DS']+"<br>"
-				+msg
+				+msgerr
+				+msgwarning
 				+"</p></td></tr>"
 				)			
 			});

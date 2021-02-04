@@ -75,7 +75,8 @@ class class_ReadingCNCfiles
                 $data[$j]['DS']=$this->arrFile[$i]->getDS();
                 $data[$j]['warning']= $this->arrFile[$i]->warning;
                 $j++; 
-            }elseif($this->arrFile[$i]->err !=""){          
+            }
+            if($this->arrFile[$i]->err !=""){          
                 $data[$j]['name']=$this->arrFile[$i]->nameFile();
                 $data[$j]['DL']=$this->arrFile[$i]->getDL();
                 $data[$j]['DH']=$this->arrFile[$i]->getDH();
