@@ -152,4 +152,17 @@ $(document).ready(function() {
 	// Перезагрузить текущую страницу, без использования кэша
 	// document.location.reload(true);
 
+// Скролл верх и вниз
+	$(function(){
+		$('#scroll_top').click(function(){
+			$('html, body').animate({scrollTop: 0}, 600);//600
+			return false;
+		});
+		
+		$('#scroll_bottom').click(function(){
+			$('html, body').animate({scrollTop: $(document).height() - $(window).height()}, 600);//600
+			return false;
+		});
+	});
+
 });

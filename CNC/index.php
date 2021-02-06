@@ -11,6 +11,7 @@ include "createzip.php";
     <link rel="shortcut icon" href="CHPU.bmp" type="image/x-icon">  
     <title>ЧПУ</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/scroll_panel.css">
     <style>
       /* кнопка */
         input.button22 {
@@ -69,6 +70,10 @@ include "createzip.php";
 
 
   ?>
+  <div class="scroll_panel">
+	<a href="#" id="scroll_top"><span>↑ Наверх</span></a>
+	<a href="#" id="scroll_bottom"><span>↓ Вниз</span></a>
+</div>
   <form name="zips" method="post">
   <?php if(!empty($error)) { ?>
   <p id="err" style=" border:#C10000 1px solid; background-color:#FFA8A8; color:#B00000;padding:8px; width:588px; margin:0 auto 10px; text-align: center;"><?php echo $error; ?></p>
