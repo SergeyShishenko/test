@@ -41,6 +41,9 @@ $(document).ready(function() {
 		} else {
 			var formData = new FormData();
 
+			$('#tableoutput').empty();
+			$('#tableoutput').append("<tr><td><div id='loading1' ></div></td></tr>");
+
 			$.each(files,function(key, input){
 				if (input.name.split(".").slice(-1)[0] =="CNC" || input.name.split(".").slice(-1)[0] =="cnc"){
 				formData.append('file[]', input);
@@ -86,7 +89,7 @@ $(document).ready(function() {
 		// console.log("Object.values(data) "+Object.values(data));//!!!
 		
 		if (typeof(lastValue) !== "undefined" && lastValue !== "" && lastValue !== null){
-			$('#tableoutput').append("<tr><td><h2>Найдены ошибки в "+lastValue.length +" файлах!</h2></td></tr>")
+			// $('#tableoutput').append("<tr><td><h2>Найдены ошибки в "+lastValue.length +" файлах!</h2></td></tr>")
 			//  console.log("Найдены ошибки в "+lastValue.length+ " файлах!");
 			var me=0;
 			var mw=0;
@@ -111,7 +114,8 @@ $(document).ready(function() {
 				)			
 			});
 			// $('#tableoutput tbody tr:first td h2').val("warning "+me);
-			$('#tableoutput td').eq(0).html('<h2>Ошибок '+me+'</h2><h2>Предупреждений '+mw+'</h2>');
+			$('#tableoutput td').eq(0).html('<h2 style="margin:0;">Найдены ошибоки в '+ num_word(me,arrvariant)+',</h2><h2 style="margin:0;">предупреждения в '+num_word(mw,arrvariant)+'</h2>');
+		
 			//  console.log("warning "+mw); 
 			//  console.log("err "+me);
 

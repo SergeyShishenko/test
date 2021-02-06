@@ -262,6 +262,7 @@ a.nav:hover {
 	text-align: center ;
 	line-height: 1.5;
 }
+
 .serr{
 	text-align: left;
 }
@@ -271,3 +272,15 @@ a.nav:hover {
 #warning,.warning {
 	color:red;
 }
+
+#loading1 {
+    height: 15px;
+    width: 128px;
+	margin: 0 auto;
+    /* display: none; */
+    /* float: left; */
+    background: url(../img/ajax-loader-6.gif);
+}
+
+
+
