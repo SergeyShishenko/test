@@ -10,7 +10,7 @@ include "createzip.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="CHPU.bmp" type="image/x-icon">  
     <title>ЧПУ</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style.css?v2">
     <link rel="stylesheet" href="CSS/scroll_panel.css">
     <style>
       /* кнопка */
@@ -165,8 +165,8 @@ include "createzip.php";
 ?> 
     <script src="js/jquery.min.js"></script>  
     <script src="js/num_word.js"></script>
-    <script src="js/javascript.js"></script>
-    <script src="js/tooltip.js"></script>
+    <script src="js/javascript.js?v2"></script>
+    <script src="js/tooltip.js?v2"></script>
     <!-- <script src="js/dropCNC.js"></script> -->
     <script>
     // запрет повторной отправки формы
