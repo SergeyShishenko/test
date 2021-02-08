@@ -103,7 +103,10 @@ $(document).ready(function() {
 				} 
 				if(typeof(lastValue[i]['warning']) !== "undefined" && lastValue[i]['warning'] !== "" && lastValue[i]['warning'] !== null){
 					msgwarning = lastValue[i]['warning'];
+					// console.log("Найдены warning в " + lastValue[i]['warning']);
 					mw++;
+					// console.log("mw++ " + mw++);
+					
 				}
 				
 				$('#tableoutput').append("<tr><td><h2>"+lastValue[i]['name']+"</h2><p>"
@@ -114,7 +117,10 @@ $(document).ready(function() {
 				)			
 			});
 			// $('#tableoutput tbody tr:first td h2').val("warning "+me);
-			$('#tableoutput td').eq(0).html('<h2 style="margin:0;">Найдены ошибоки в '+ num_word(me,arrvariant)+',</h2><h2 style="margin:0;">предупреждения в '+num_word(mw,arrvariant)+'</h2>');
+
+			// .prepend
+			$('#tableoutput').prepend('<tr><td><h2 style="margin:0;">Найдены ошибки в '+ num_word(me,arrvariant)+',</h2><h2 style="margin:0;">предупреждения в '+num_word(mw,arrvariant)+'</h2></td></tr>');
+			// $('#tableoutput td').eq(0).html('<h2 style="margin:0;">Найдены ошибоки в '+ num_word(me,arrvariant)+',</h2><h2 style="margin:0;">предупреждения в '+num_word(mw,arrvariant)+'</h2>');
 		
 			//  console.log("warning "+mw); 
 			//  console.log("err "+me);
