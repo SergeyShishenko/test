@@ -11,6 +11,19 @@
     .hover:hover{
         stroke:aqua; 
     }
+    .container {
+        width: 25%;
+        height: 0;
+        padding-top: 25%;
+        position: relative;
+        overflow: hidden;
+}
+
+    .adaptive {
+        position: absolute;
+        top: 0;
+        left: 0;
+}
     </style>
 
 </head>
@@ -111,5 +124,22 @@
             <!--the red rectangle outside viewing area  svg   -->
             <rect x="390" y="165" width="100" height="100" fill="rgba(244,47,39, 0.6)"  stroke="rgba(244,47,39, 0.75)" stroke-width="2"/>
         </svg>
+
+        <div class="container" >
+        <svg class="adaptive" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 401 401">
+       
+            <!-- SVG content -->
+            <!--colored circles in corners of  the canvas  -->
+            <circle class="hover" cx="55" cy="55" r="50" fill="rgba(20,255,24, 0.5)"  stroke="rgba(6,90,6, 0.75)" stroke-width="2"/>
+            <circle class="hover" cx="350" cy="55" r="50" fill="rgba(57,65,212, 0.5)"  stroke="rgba(26,31,167, 0.75)" stroke-width="2"/>
+            <circle class="hover" cx="350" cy="350" r="50" fill="rgba(212,30,75, 0.5)"  stroke="rgba(212,30,75, 0.75)" stroke-width="2"/>
+            <circle class="hover" cx="55" cy="350" r="50" fill="rgba(255,221,0, 0.5)"  stroke="rgba(169,146,0, 0.75)" stroke-width="2"/>
+        
+            <!--the red rectangle outside viewing area  svg   -->
+            <rect class="hover" x="390" y="165" width="100" height="100" fill="rgba(244,47,39, 0.6)"  stroke="rgba(244,47,39, 0.75)" stroke-width="2"/>
+        </svg>
+</div>
+
+
 </body>
 </html>
