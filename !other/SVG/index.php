@@ -94,7 +94,8 @@
             <circle cx="55" cy="350" r="50" fill="rgba(255,221,0, 0.5)"  stroke="rgba(169,146,0, 0.75)" stroke-width="2"/>
         
             <!--the red rectangle outside viewing area  svg   -->
-            <rect x="390" y="165" width="100" height="100" fill="rgba(244,47,39, 0.6)"  stroke="rgba(244,47,39, 0.75)" stroke-width="2"/>
+            <!-- <rect x="390" y="165" width="100" height="100" fill="rgba(244,47,39, 0.6)"  stroke="rgba(244,47,39, 0.75)" stroke-width="2"/> -->
+            <rect class="hover" x="390" y="165" width="35" height="5" fill="rgba(20,255,24, 0.5)"  stroke="green" stroke-width="2" stroke-dasharray="5"/>
         </svg>
         <BR>
         <!-- Увеличение масштаба М2:1 -->
@@ -120,26 +121,53 @@
             <circle cx="55" cy="55" r="50" fill="rgba(20,255,24, 0.5)"  stroke="rgba(6,90,6, 0.75)" stroke-width="2"/>
             <circle cx="350" cy="55" r="50" fill="rgba(57,65,212, 0.5)"  stroke="rgba(26,31,167, 0.75)" stroke-width="2"/>
             <circle cx="350" cy="350" r="50" fill="rgba(212,30,75, 0.5)"  stroke="rgba(212,30,75, 0.75)" stroke-width="2"/>
-            <circle cx="55" cy="350" r="50" fill="rgba(255,221,0, 0.5)"  stroke="rgba(169,146,0, 0.75)" stroke-width="2"/>
+            <circle cx="55" cy="350" r="50" fill="rgba(255,221,0, 0.5)"  stroke="rgba(169,146,0, 0.75)" stroke-width="2" />
         
             <!--the red rectangle outside viewing area  svg   -->
+           
             <rect x="390" y="165" width="100" height="100" fill="rgba(244,47,39, 0.6)"  stroke="rgba(244,47,39, 0.75)" stroke-width="2"/>
         </svg>
 
-        <div class="container" >
-        <svg class="adaptive" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 401 401">
-       
-            <!-- SVG content -->
-            <!--colored circles in corners of  the canvas  -->
-            <circle class="hover" cx="55" cy="55" r="50" fill="rgba(20,255,24, 0.5)"  stroke="rgba(6,90,6, 0.75)" stroke-width="2"/>
-            <circle class="hover" cx="350" cy="55" r="50" fill="rgba(57,65,212, 0.5)"  stroke="rgba(26,31,167, 0.75)" stroke-width="2"/>
-            <circle class="hover" cx="350" cy="350" r="50" fill="rgba(212,30,75, 0.5)"  stroke="rgba(212,30,75, 0.75)" stroke-width="2"/>
-            <circle class="hover" cx="55" cy="350" r="50" fill="rgba(255,221,0, 0.5)"  stroke="rgba(169,146,0, 0.75)" stroke-width="2"/>
         
-            <!--the red rectangle outside viewing area  svg   -->
-            <rect class="hover" x="390" y="165" width="100" height="100" fill="rgba(244,47,39, 0.6)"  stroke="rgba(244,47,39, 0.75)" stroke-width="2"/>
+<!-- http://css.yoksel.ru/svg-fill-and-stroke/ -->
+        <svg width="300" height="160">
+        <path d="M 20 20 h 260"
+            stroke="purple" stroke-width="1"
+            stroke-dasharray="1" />
+        <path d="M 20 40 h 260"
+            stroke="mediumspringgreen" stroke-width="15"
+            stroke-dasharray="1 3" />
+        <path d="M 20 60 h 260"
+            stroke="orangered" stroke-width="1"
+            stroke-dasharray="5%" />
+        <path d="M 20 80 h 260"
+            stroke="green" stroke-width="1"
+            stroke-dasharray="1 5" />
+        <path d="M 20 100 h 260"
+            stroke="steelblue" stroke-width="1"
+            stroke-dasharray="2 7 6" />
+        <path d="M 20 120 h 260"
+            stroke="orange" stroke-width="5"
+            stroke-dasharray="5" />
+        <path d="M 20 140 h 260"
+            stroke="mediumseagreen" stroke-width="1"
+            stroke-dasharray="12% 5%" />
         </svg>
-</div>
+
+        <div class="container" >
+            <svg class="adaptive" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 401 401">
+        
+                <!-- SVG content -->
+                <!--colored circles in corners of  the canvas  -->
+                <circle class="hover" cx="55" cy="55" r="50" fill="rgba(20,255,24, 0.5)"  stroke="rgba(6,90,6, 0.75)" stroke-width="2"/>
+                <circle class="hover" cx="350" cy="55" r="50" fill="rgba(57,65,212, 0.5)"  stroke="rgba(26,31,167, 0.75)" stroke-width="2"/>
+                <circle class="hover" cx="350" cy="350" r="50" fill="rgba(212,30,75, 0.5)"  stroke="rgba(212,30,75, 0.75)" stroke-width="2"/>
+                <circle class="hover" cx="55" cy="350" r="50" fill="rgba(255,221,0, 0.5)"  stroke="rgba(169,146,0, 0.75)" stroke-width="2"/>
+            
+                <!--the red rectangle outside viewing area  svg   -->
+                <rect class="hover" x="390" y="165" width="100" height="100" fill="rgba(244,47,39, 0.6)"  stroke="rgba(244,47,39, 0.75)" stroke-width="2"/>
+            </svg>
+        </div>
 
 
 </body>
