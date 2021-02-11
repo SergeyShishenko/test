@@ -12,14 +12,14 @@ if (($handle = fopen("test.csv", "r")) !== FALSE) {
             // for ($c=0; $c < $num; $c++) {
             //     echo "_" . $data[$c] ;
             // } 
-
-            $data[0]=str_replace(",", ".", $data[0]);// № Заказа
-            $data[1]=str_replace(",", ".", $data[1]);// № Изделия
-            $data[2]=str_replace(",", ".", $data[2]);// № СЕ/пСЕ
-            $data[3]=str_replace(",", ".", $data[3]);// № Детали
-            $data[4]=str_replace(",", ".", $data[4]);// № Детали
-            $data[5]=str_replace(",", ".", $data[5]);// № Детали
-            $data[6]=str_replace(",", ".", $data[6]);// № Детали
+            // $result = preg_replace('/[^ a-zа-я\d.]/ui', '', $string );
+            $data[0]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[0])));// № Заказа
+            $data[1]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[1])));// № Изделия
+            $data[2]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[2])));// № СЕ/пСЕ
+            $data[3]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[3])));// № Детали
+            $data[4]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[4])));// № Детали
+            $data[5]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[5])));// № Детали
+            $data[6]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[6])));// № Детали
             // echo  " (№ Заказа: ". $order.") " ;          
             // echo  " (№ Изделия: ". $product.") " ;          
             // echo  " (№ СЕ/пСЕ: ". $SE .") ";          
@@ -27,7 +27,7 @@ if (($handle = fopen("test.csv", "r")) !== FALSE) {
             // echo  " (Длина: ". $DL .") ";          
             // echo  " (Ширина: ". $DH.") " ;          
             // echo  " (Толщина: ". $DS .") "; 
-            // if (str_replace(",", ".", $data[5]) == 1673.5) {
+            // if (preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[5]))) == 1673.5) {
             //     echo  " (Равно ". $data[5] .") ";
             // }
             $arrAllCSV[]=$data;         
