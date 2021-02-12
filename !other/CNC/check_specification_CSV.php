@@ -11,13 +11,19 @@
 <pre>
 <?php
 
-$m1 = array('Наташа', 'Марина', 'Катя', 'Анжела', 'Виктория'); 
-var_dump($m1); 
-$m2 = array('Наташа', 'Катя', 'Анжела');
-var_dump($m2);
-foreach ($m1 as $name) {
-    echo $name . (in_array($name, $m2) ? ' - Есть' : ' - Нет').'<br>';
-}
+// $m1 = array('Наташа', 'Марина', 'Катя', 'Анжела', 'Виктория'); 
+// var_dump($m1); 
+// $m2 = array('Наташа', 'Катя', 'Анжела');
+// var_dump($m2);
+// foreach ($m1 as $name) {
+//     echo $name . (in_array($name, $m2) ? ' - Есть' : ' - Нет').'<br>';
+// }
+
+// if (strcasecmp($var1, $var2) == 0) {
+//     echo '$var1 равно $var2 при сравнении без учёта регистра';
+// }
+
+
 echo "<br>**************<br>";
 // !other\CNC\check_specification_CSV.php
 $row = 1;
@@ -54,9 +60,31 @@ if (($handle = fopen("test.csv", "r")) !== FALSE) {
        $row++;
     }
     fclose($handle);
-    var_dump($arrAllCSV);
+    // var_dump($arrAllCSV);
+}
+$arrCHPU=['1.1_32_1','1.1_31_1','1.1_1_2','1.5_32_1','5.1_3_1','3.7_80_1'];
+foreach ($arrCHPU as $var2){
+// $var2='1.1_32';substr_count($text, 'is')
+echo substr_count($var2, '_')."<br>";// количество "_"
+$var2=substr($var2,0,strrpos($var2, '_'));// удаление послнднего символа после "_" и его тоже
+    $find=false;
+
+    foreach ($arrAllCSV as $str) {
+        // echo $str[2]."_".$str[3].'<br>';
+
+        $var1=$str[2]."_".$str[3];
+        
+        if (strcasecmp($var1, $var2) == 0) {
+        echo "$var1 ok! <br>";
+        $find=true;
+        }
+    }
+    if (!$find){ echo "$var2 нет в спецификации <br>";}
 }
 
+// $foo = "0123456789a123456789b123456789c";
+// echo $foo."<br>";
+// var_dump(substr($foo,0,strrpos($foo, '7')));
 ?>
 </pre>
 </body>
