@@ -1,5 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <link rel="shortcut icon" href="working.bmp" type="image/x-icon">    
+
+</head>
+<body>
 <pre>
 <?php
+
+$m1 = array('Наташа', 'Марина', 'Катя', 'Анжела', 'Виктория'); 
+var_dump($m1); 
+$m2 = array('Наташа', 'Катя', 'Анжела');
+var_dump($m2);
+foreach ($m1 as $name) {
+    echo $name . (in_array($name, $m2) ? ' - Есть' : ' - Нет').'<br>';
+}
+echo "<br>**************<br>";
 // !other\CNC\check_specification_CSV.php
 $row = 1;
 // $arrstr[];
@@ -37,5 +56,8 @@ if (($handle = fopen("test.csv", "r")) !== FALSE) {
     fclose($handle);
     var_dump($arrAllCSV);
 }
+
 ?>
 </pre>
+</body>
+</html>
