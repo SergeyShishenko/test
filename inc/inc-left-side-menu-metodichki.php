@@ -221,6 +221,13 @@ include 'inc/goup/inc-goup-menu-metodichki-SofiaPro3.php';//$SP3=[]
                                 </li>                                    
                             </ul>
                         </li>          
+                        <li class="menu2"><a class="list-group-item sub" href="metodichki-stp-po-proektnoy-rabote.php#proverka-dp" >Проверка ДП </a>
+                            <ul class="list-group sub_menu2">
+                                <li><a class="list-group-item sub" href="metodichki-stp-po-proektnoy-rabote.php#proverka-dp-pered-peredachey-v-pto">Проверка ДП перед передачей в ПТО</a>
+                                </li>
+                                                             
+                            </ul>
+                        </li>          
                     </ul>
                 </li> 
                 <!-- menu -->

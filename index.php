@@ -4010,6 +4010,24 @@ include 'inc/inc-header-send-modal.php';
                                                                 </TABLE>
                                                             </TD>
                                                         </TR>
+                                                        <tr><TD> &nbsp; </TD><TD></TD></tr> <!--end LEVEL3--> 
+                                                        <TR>
+                                                            <TD data-tooltip="ПРОВЕРКА ДП" class="hover mapsite" id="footer1299" >
+                                                                <p data-href="metodichki-stp-po-proektnoy-rabote.php#proverka-dp"  data-img="./dist/images/no-foto.png" id="floating1300">ПРОВЕРКА ДП<span> <br>~-GHJDTHRF</span></p>
+                                                            </TD>                                                                            
+                                                            <TD>
+                                                                <TABLE >
+                                                                    <TR>
+                                                                        <TD data-tooltip="" class="hover mapsite"  colspan="2"  id="flo-obrazec-zapolneniya-dok-vedomost-furnitury">
+                                                                                <p data-href="metodichki-stp-po-proektnoy-rabote.php#proverka-dp-pered-peredachey-v-pto" data-img="./dist/images/proverka-dp-pered-peredachey-v-pto-1.png">Проверка ДП перед передачей в ПТО<span><br>~-ghjdthrf lg gthtl gthtlfxtq d gnj </span></p> 
+                                                                        </TD>
+                                                                    </TR> 
+                                                                    <tr><TD> &nbsp; </TD></tr> <!--end LEVEL3-->                                                                        
+                                                                
+                                                                      
+                                                                </TABLE>
+                                                            </TD>
+                                                        </TR>
                                                         
                                                             
                                                     </TABLE>
