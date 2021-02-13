@@ -62,24 +62,42 @@ if (($handle = fopen("test.csv", "r")) !== FALSE) {
     fclose($handle);
     // var_dump($arrAllCSV);
 }
-$arrCHPU=['1.1_32_1','1.1_31_1','1.1_1_2','1.5_32_1','5.1_3_1','3.7_80_1'];
-foreach ($arrCHPU as $var2){
+// include "classes_cnc/class_ReadingCNCfiles.php";
+//  include "classes_cnc/class_CNC.php";
+ 
+
+//  $cncsess= new class_ReadingCNCfiles('files/1');
+
+//  $fcnc = new class_CNC('files/1/1.1_81_1.CNC');
+
+$arrCHPU[] = include "specificationCHPU.php";
+//  var_dump($arrCHPU);
+// $arrCHPU=['1.1_32_1','1.1_31_1','1.1_1_2','1.5_32_1','5.1_3_1','3.7_80_1'];
+foreach ($arrCHPU[0] as $var2){
+    // echo $var2['name'].'_<br>';
 // $var2='1.1_32';substr_count($text, 'is')
-echo substr_count($var2, '_')."<br>";// количество "_"
-$var2=substr($var2,0,strrpos($var2, '_'));// удаление послнднего символа после "_" и его тоже
+// echo substr_count($var2, '_')."<br>";// количество "_"
+// $var2=substr($var2,0,strrpos($var2, '_'));// удаление послнднего символа после "_" и его тоже
     $find=false;
 
     foreach ($arrAllCSV as $str) {
         // echo $str[2]."_".$str[3].'<br>';
 
         $var1=$str[2]."_".$str[3];
+        $varSTR4=$str[4]." x ".$str[5]." x ".$str[6];
+        $var3=$var2['DL'] ." x ".$var2['DH']." x ".$var2['DS'];
         
-        if (strcasecmp($var1, $var2) == 0) {
-        echo "$var1 ok! <br>";
+        if (strcasecmp($var1, $var2['name']) == 0) {
+        echo "$var1 ok! ". $var3. ' AND '.$varSTR4;
+        if (strcasecmp($var3, $varSTR4) == 0) {
+            echo " - Размеры совпадают" . " <br>";
+        }else{
+            echo " - Размеры неверные" . " <br>";
+        }
         $find=true;
         }
     }
-    if (!$find){ echo "$var2 нет в спецификации <br>";}
+    if (!$find){ echo $var2['name'] . " нет в спецификации <br>";}
 }
 
 // $foo = "0123456789a123456789b123456789c";

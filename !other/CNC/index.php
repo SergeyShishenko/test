@@ -150,7 +150,7 @@ echo "Длина = ".$fcnc->getDL()."<br>";
 echo "Ширина = ".$fcnc->getDH()."<br>";
 echo "Толщина = ".$fcnc->getDS()."<br>";
 // $fcnc->outputCNC()."<br>";
-var_dump($fcnc->getArr());
+// var_dump($fcnc->getArr());
 
 
 // echo $fcnc->outputCNC();

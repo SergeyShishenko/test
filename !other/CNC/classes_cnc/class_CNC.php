@@ -131,6 +131,8 @@ class class_CNC
     */
     private $pathfile; 
 
+    private $arrSpecification; 
+
     /**
      * Текущий блок
      * OFFS{						; Раздел зарезервировано для назначения программы кусок смещения.
@@ -220,6 +222,24 @@ class class_CNC
 
     public function nameFile(){
         return basename($this->pathfile, ".cnc");
+    }
+
+    public function getSpecification(){
+//         substr_count($var2, '_')."<br>";// количество "_"
+// $var2=substr($var2,0,strrpos($var2, '_'));// удаление послнднего символа после "_" и его тоже
+        $var2=basename($this->pathfile);
+
+        // if (substr_count($var2, '_')){
+        //   $this->arrSpecification['name']=substr($var2,0,strrpos($var2, '_'));  
+        // }else{
+        //  $this->arrSpecification['name']=substr($var2,0,strrpos($var2, '.'));
+        // }
+        
+        $this->arrSpecification['name']=substr($var2,0,strrpos($var2, '_')); // строка до последнего "_"
+        $this->arrSpecification['DL']=trim($this->DL);
+        $this->arrSpecification['DS']=trim($this->DS);
+        $this->arrSpecification['DH']=trim($this->DH);
+        return $this->arrSpecification;
     }
 
     public function getArr(){       

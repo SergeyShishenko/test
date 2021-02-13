@@ -4,6 +4,7 @@ class class_ReadingCNCfiles
 {
     private $arrNameFile ;
     private $arrFile ;
+    private $arrSpecification ;
     private $folderCNC ;
 
     public function __construct($folderCNC) {
@@ -71,14 +72,22 @@ class class_ReadingCNCfiles
                 echo $this->arrFile[$i]->err;
                 echo "<br>****************<br>";
 
-            }
-
-            
-           
-
-        }
-      
+            } 
+        }      
     }
+    public function specificationAllCNC(){
+
+        for ($i=0; $i < count($this->arrFile); $i++) {             
+           
+            $this->arrSpecification[$i]=$this->arrFile[$i]->getSpecification();
+        } 
+        return $this->arrSpecification;
+
+    }
+
+
+
+
 }
 
 ?>
