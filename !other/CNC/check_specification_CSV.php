@@ -29,7 +29,7 @@ echo "<br>**************<br>";
 $row = 1;
 // $arrstr[];
 // $arrAllCSV[];
-if (($handle = fopen("test.csv", "r")) !== FALSE) {
+if (($handle = fopen("test_numpart.csv", "r")) !== FALSE) {
     while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {  // строка  до 1000 символов    
         if ($row > 1){
             // echo "<br>Строка $row: -> ";
@@ -77,27 +77,33 @@ foreach ($arrCHPU[0] as $var2){
     // echo $var2['name'].'_<br>';
 // $var2='1.1_32';substr_count($text, 'is')
 // echo substr_count($var2, '_')."<br>";// количество "_"
+    $div_count= substr_count($var2['name'], '_');// количество "_"
 // $var2=substr($var2,0,strrpos($var2, '_'));// удаление послнднего символа после "_" и его тоже
     $find=false;
 
     foreach ($arrAllCSV as $str) {
         // echo $str[2]."_".$str[3].'<br>';
 
-        $var1=$str[2]."_".$str[3];
+        // echo $var2['name']."=".$div_count."<br>";
+        if ($div_count==1){
+          $var1=$str[2]."_".$str[3];  
+        }elseif($div_count===0){
+            $var1=$str[3];  
+        }
         $varSTR4=$str[4]." x ".$str[5]." x ".$str[6];
         $var3=$var2['DL'] ." x ".$var2['DH']." x ".$var2['DS'];
         
         if (strcasecmp($var1, $var2['name']) == 0) {
         echo "$var1 ok! ". $var3. ' AND '.$varSTR4;
         if (strcasecmp($var3, $varSTR4) == 0) {
-            echo " - Размеры совпадают" . " <br>";
+            echo "<span style='color:green'> - Размеры совпадают" . "</span> <br>";
         }else{
-            echo " - Размеры неверные" . " <br>";
+            echo "<span style='color:red'> - Размеры неверные" . "</span> <br>";
         }
         $find=true;
         }
     }
-    if (!$find){ echo $var2['name'] . " нет в спецификации <br>";}
+    if (!$find){ echo $var2['name'] . "<span style='color:blue'> нет в спецификации </span> <br>";}
 }
 
 // $foo = "0123456789a123456789b123456789c";

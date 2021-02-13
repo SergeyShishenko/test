@@ -236,11 +236,16 @@ class class_CNC
         // }
         
         $this->arrSpecification['name']=substr($var2,0,strrpos($var2, '_')); // строка до последнего "_"
-        $this->arrSpecification['DL']=trim($this->DL);
-        $this->arrSpecification['DS']=trim($this->DS);
-        $this->arrSpecification['DH']=trim($this->DH);
+        $this->arrSpecification['DL']=round(trim($this->DL), 1);
+        $this->arrSpecification['DS']=round(trim($this->DS), 1);
+        $this->arrSpecification['DH']=round(trim($this->DH), 1);
         return $this->arrSpecification;
     }
+
+    // private function toFixed($number, $fix = 1) {
+    //     $arr = explode('.', $number);
+    //     return isset($arr[1]) ? floatval($arr[0] . "." . substr($arr[1], 0, $fix)) : $number;
+    // }
 
     public function getArr(){       
            
