@@ -11,62 +11,16 @@
 <pre>
 <?php
 
-// $m1 = array('Наташа', 'Марина', 'Катя', 'Анжела', 'Виктория'); 
-// var_dump($m1); 
-// $m2 = array('Наташа', 'Катя', 'Анжела');
-// var_dump($m2);
-// foreach ($m1 as $name) {
-//     echo $name . (in_array($name, $m2) ? ' - Есть' : ' - Нет').'<br>';
-// }
-
-// if (strcasecmp($var1, $var2) == 0) {
-//     echo '$var1 равно $var2 при сравнении без учёта регистра';
-// }
-
-
-echo "<br>**************<br>";
 // !other\CNC\check_specification_CSV.php
 
-////////////
-    // $row = 1;
-    // if (($handle = fopen("test_numpart.csv", "r")) !== FALSE) {
-    //     while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {  // строка  до 1000 символов    
-    //         if ($row > 1){
-        
-    //             $data[0]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[0])));// № Заказа
-    //             $data[1]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[1])));// № Изделия
-    //             $data[2]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[2])));// № СЕ/пСЕ
-    //             $data[3]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[3])));// № Детали
-    //             $data[4]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[4])));// № Детали
-    //             $data[5]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[5])));// № Детали
-    //             $data[6]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[6])));// № Детали
-        
-    //             $arrAllCSV[]=$data;         
-    //     }
-    //     $row++;
-    //     }
-    //     fclose($handle);
-    //     // var_dump($arrAllCSV);
-    // }
-/////////////
-
+$pathFile='files/2578_4_SE';
 $arrAllCSV[] = include "specificationCSV.php";
-// var_dump($arrAllCSV);
 $arrCHPU[] = include "specificationCHPU.php";
-// var_dump($arrCHPU);
-// $arrCHPU=['1.1_32_1','1.1_31_1','1.1_1_2','1.5_32_1','5.1_3_1','3.7_80_1'];
+
 foreach ($arrCHPU[0] as $var2){
-    // echo $var2['name'].'_<br>';
-// $var2='1.1_32';substr_count($text, 'is')
-// echo substr_count($var2, '_')."<br>";// количество "_"
     $div_count= substr_count($var2['name'], '_');// количество "_"
-// $var2=substr($var2,0,strrpos($var2, '_'));// удаление послнднего символа после "_" и его тоже
     $find=false;
-
-    foreach ($arrAllCSV[0] as $str) {
-        // echo $str[2]."_".$str[3].'<br>';
-
-        // echo $var2['name']."=".$div_count."<br>";
+    foreach ($arrAllCSV[0] as $str) {  
         if ($div_count==1){
           $var1=$str[2]."_".$str[3];  
         }elseif($div_count===0){
@@ -88,9 +42,6 @@ foreach ($arrCHPU[0] as $var2){
     if (!$find){ echo $var2['name'] . "<span style='color:blue'> нет в спецификации </span> <br>";}
 }
 
-// $foo = "0123456789a123456789b123456789c";
-// echo $foo."<br>";
-// var_dump(substr($foo,0,strrpos($foo, '7')));
 ?>
 </pre>
 </body>
