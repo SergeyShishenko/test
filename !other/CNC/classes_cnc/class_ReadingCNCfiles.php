@@ -10,17 +10,27 @@ class class_ReadingCNCfiles
     public function __construct($folderCNC) {
         $this->folderCNC = $folderCNC;
         if (file_exists($folderCNC)) {
+        // $this->arrNameFile=array_diff(scandir($folderCNC), array('..', '.','.csv'));
         $this->arrNameFile=scandir($folderCNC);
-       
         array_shift($this->arrNameFile);// удаление  '.'
         array_shift($this->arrNameFile);// удаление  '..'
             
         }else{
             echo "Директория не найдена<br>";
         }
+
+        $this->arrNameFile=$this->array_preg_diff($this->arrNameFile, '/[cC][sS][vV]/');
            
+        // $this->output();
         $this->addObj();
     } 
+
+    private function array_preg_diff($a, $p) {
+        foreach ($a as $i => $v)
+            if (preg_match($p, $v))
+                unset($a[$i]);
+        return $a;
+    }
     
     /**
      * Вывод всех имен файлов 

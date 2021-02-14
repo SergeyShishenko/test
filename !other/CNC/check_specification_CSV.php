@@ -26,52 +26,34 @@
 
 echo "<br>**************<br>";
 // !other\CNC\check_specification_CSV.php
-$row = 1;
-// $arrstr[];
-// $arrAllCSV[];
-if (($handle = fopen("test_numpart.csv", "r")) !== FALSE) {
-    while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {  // строка  до 1000 символов    
-        if ($row > 1){
-            // echo "<br>Строка $row: -> ";
-            // $num = count($data);        
-            // for ($c=0; $c < $num; $c++) {
-            //     echo "_" . $data[$c] ;
-            // } 
-            // $result = preg_replace('/[^ a-zа-я\d.]/ui', '', $string );
-            $data[0]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[0])));// № Заказа
-            $data[1]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[1])));// № Изделия
-            $data[2]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[2])));// № СЕ/пСЕ
-            $data[3]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[3])));// № Детали
-            $data[4]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[4])));// № Детали
-            $data[5]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[5])));// № Детали
-            $data[6]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[6])));// № Детали
-            // echo  " (№ Заказа: ". $order.") " ;          
-            // echo  " (№ Изделия: ". $product.") " ;          
-            // echo  " (№ СЕ/пСЕ: ". $SE .") ";          
-            // echo  " (№ Детали: ". $numpart.") " ;          
-            // echo  " (Длина: ". $DL .") ";          
-            // echo  " (Ширина: ". $DH.") " ;          
-            // echo  " (Толщина: ". $DS .") "; 
-            // if (preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[5]))) == 1673.5) {
-            //     echo  " (Равно ". $data[5] .") ";
-            // }
-            $arrAllCSV[]=$data;         
-       }
-       $row++;
-    }
-    fclose($handle);
-    // var_dump($arrAllCSV);
-}
-// include "classes_cnc/class_ReadingCNCfiles.php";
-//  include "classes_cnc/class_CNC.php";
- 
 
-//  $cncsess= new class_ReadingCNCfiles('files/1');
+////////////
+    // $row = 1;
+    // if (($handle = fopen("test_numpart.csv", "r")) !== FALSE) {
+    //     while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {  // строка  до 1000 символов    
+    //         if ($row > 1){
+        
+    //             $data[0]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[0])));// № Заказа
+    //             $data[1]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[1])));// № Изделия
+    //             $data[2]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[2])));// № СЕ/пСЕ
+    //             $data[3]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[3])));// № Детали
+    //             $data[4]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[4])));// № Детали
+    //             $data[5]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[5])));// № Детали
+    //             $data[6]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[6])));// № Детали
+        
+    //             $arrAllCSV[]=$data;         
+    //     }
+    //     $row++;
+    //     }
+    //     fclose($handle);
+    //     // var_dump($arrAllCSV);
+    // }
+/////////////
 
-//  $fcnc = new class_CNC('files/1/1.1_81_1.CNC');
-
+$arrAllCSV[] = include "specificationCSV.php";
+// var_dump($arrAllCSV);
 $arrCHPU[] = include "specificationCHPU.php";
-//  var_dump($arrCHPU);
+// var_dump($arrCHPU);
 // $arrCHPU=['1.1_32_1','1.1_31_1','1.1_1_2','1.5_32_1','5.1_3_1','3.7_80_1'];
 foreach ($arrCHPU[0] as $var2){
     // echo $var2['name'].'_<br>';
@@ -81,7 +63,7 @@ foreach ($arrCHPU[0] as $var2){
 // $var2=substr($var2,0,strrpos($var2, '_'));// удаление послнднего символа после "_" и его тоже
     $find=false;
 
-    foreach ($arrAllCSV as $str) {
+    foreach ($arrAllCSV[0] as $str) {
         // echo $str[2]."_".$str[3].'<br>';
 
         // echo $var2['name']."=".$div_count."<br>";

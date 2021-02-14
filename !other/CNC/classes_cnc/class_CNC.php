@@ -225,16 +225,7 @@ class class_CNC
     }
 
     public function getSpecification(){
-//         substr_count($var2, '_')."<br>";// количество "_"
-// $var2=substr($var2,0,strrpos($var2, '_'));// удаление послнднего символа после "_" и его тоже
-        $var2=basename($this->pathfile);
-
-        // if (substr_count($var2, '_')){
-        //   $this->arrSpecification['name']=substr($var2,0,strrpos($var2, '_'));  
-        // }else{
-        //  $this->arrSpecification['name']=substr($var2,0,strrpos($var2, '.'));
-        // }
-        
+        $var2=basename($this->pathfile);        
         $this->arrSpecification['name']=substr($var2,0,strrpos($var2, '_')); // строка до последнего "_"
         $this->arrSpecification['DL']=round(trim($this->DL), 1);
         $this->arrSpecification['DS']=round(trim($this->DS), 1);
