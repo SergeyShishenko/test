@@ -45,7 +45,11 @@ $(document).ready(function() {
 			$('#tableoutput').append("<tr><td><div id='loading1' ></div></td></tr>");
 
 			$.each(files,function(key, input){
-				if (input.name.split(".").slice(-1)[0] =="CNC" || input.name.split(".").slice(-1)[0] =="cnc"){
+				if (input.name.split(".").slice(-1)[0] =="CNC" || 
+				input.name.split(".").slice(-1)[0] =="cnc" || 
+				input.name.split(".").slice(-1)[0] =="CSV" || 
+				input.name.split(".").slice(-1)[0] =="csv" 
+				){
 				formData.append('file[]', input);
 				dataArray.push({name : input.name});
 				}

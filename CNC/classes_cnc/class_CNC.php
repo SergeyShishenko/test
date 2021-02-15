@@ -252,6 +252,15 @@ class class_CNC
         return basename($this->pathfile);
     }
 
+    public function getSpecification(){
+        $var2=basename($this->pathfile);        
+        $this->arrSpecification['name']=substr($var2,0,strrpos($var2, '_')); // строка до последнего "_"
+        $this->arrSpecification['DL']=round(trim($this->DL), 1);
+        $this->arrSpecification['DS']=round(trim($this->DS), 1);
+        $this->arrSpecification['DH']=round(trim($this->DH), 1);
+        return $this->arrSpecification;
+    }
+
 
     /**
      * Вывод всех строк файла

@@ -19,9 +19,17 @@ class class_ReadingCNCfiles
         }else{
             echo "Директория не найдена<br>";
         }
-           
+
+         $this->arrNameFile=$this->array_preg_diff($this->arrNameFile, '/[cC][sS][vV]/');  
         $this->addObj();
     } 
+
+    private function array_preg_diff($a, $p) {
+        foreach ($a as $i => $v)
+            if (preg_match($p, $v))
+                unset($a[$i]);
+        return $a;
+    }
     
     /**
      * Вывод всех имен файлов 

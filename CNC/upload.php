@@ -60,7 +60,7 @@ if (!isset($_FILES[$input_name])) {
 			
 			if (empty($name) || empty($parts['extension'])) {
 				$error = 'Недопустимый тип файла';
-			} elseif (strtolower($parts['extension'])!='cnc') {
+			} elseif (strtolower($parts['extension'])!='cnc'&& strtolower($parts['extension'])!='csv') {
 				$error = 'Недопустимый тип файла';
 				// $error = false;
 			} elseif (!empty($allow) && !in_array(strtolower($parts['extension']), $allow)) {
