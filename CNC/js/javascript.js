@@ -57,6 +57,7 @@ $(document).ready(function() {
 
 			 console.log("dataArray.length "+dataArray.length);
 			if(0 > dataArray.length <= maxFiles){	 
+				formData.append('dircnc[]', $('#dircnc').val());
 				$.ajax({
 					type: "POST",
 					url: 'upload.php',

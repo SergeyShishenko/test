@@ -17,15 +17,26 @@ $deny = array(
  
 // Директория куда будут загружаться файлы.
 // уникальное имя папки
-$rand_folder=rand();
+if ($_POST["dircnc"][0] !==""){
+	$folder_current=$_POST["dircnc"][0];
+	$path = __DIR__ . '/uploads/'.$folder_current.'/';
+}else{
+	$rand_folder=rand();
+	$folder_current=$rand_folder;
+	$path = __DIR__ . '/uploads/'.$folder_current.'/';	
+	mkdir($path, 0777, true);	
+}
 
-$path = __DIR__ . '/uploads/'.$rand_folder.'/';
 
-mkdir($path, 0777, true);				
+
+
+// $path = __DIR__ . '/uploads/'.$folder_current.'/';
+
+// mkdir($path, 0777, true);				
 
 
 $data = array();
-$data[] = $rand_folder; 
+$data[] = $folder_current; 
 if (!isset($_FILES[$input_name])) {
 	$error = 'Файлы не загружены.';
 	$data[] = 'Файлы не загружены.';
