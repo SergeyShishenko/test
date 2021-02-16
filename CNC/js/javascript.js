@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 			$('#tableoutput').empty();
 			$('#tableoutput').append("<tr><td><div id='loading1' ></div></td></tr>");
-			var flagCSV=false;
+			// var flagCSV=false; // нет CSV
 			$.each(files,function(key, input){
 				var exp = input.name.split(".").slice(-1)[0].toUpperCase();
 				console.log(exp);
@@ -51,18 +51,21 @@ $(document).ready(function() {
 				formData.append('file[]', input);
 				dataArray.push({name : input.name});
 				}
-				if (exp =="CSV" ){
-					// formData.append('dircnc', $('#dircnc').val());	
-					// console.log("*****");
-					flagCSV=true;
+				// if (exp =="CSV" ){
+				// 	// formData.append('dircnc', $('#dircnc').val());	
+				// 	// console.log("*****");
+				// 	flagCSV=true;
 					
-				}
+				// }
 
 			});
 
+
+			//ДОБАВИТЬ КНОПКУ ОЧИСТИТЬ И ЗАМЕНА CSV НА НОВЫЙ ФАЙЛ
+
 			 console.log("dataArray.length "+dataArray.length);
-			if(dataArray.length > 0 && dataArray.length <= maxFiles){
-				if(!flagCSV){$('#dircnc').val("");}
+			if(dataArray.length > 0 && dataArray.length <= maxFiles){				
+				// if(!flagCSV){$('#dircnc').val("");}// если нет CSV
 				formData.append('dircnc', $('#dircnc').val());	
 				$.ajax({
 					type: "POST",
@@ -159,6 +162,7 @@ $(document).ready(function() {
 		$('#file-name-holder').empty();   
 		// var delfolder =  $('#dircnc').val();// from input
 		var delfolder = "";// удалить всю папку uploads
+		$('#dircnc').val("");
 	   $.post('remove-directory.php', {del: delfolder}, function(data){
 		   $('#file-name-holder').append(data+'<br>');
 	   });
