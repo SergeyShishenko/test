@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 			$('#tableoutput').empty();
 			$('#tableoutput').append("<tr><td><div id='loading1' ></div></td></tr>");
-
+			var flagCSV=false;
 			$.each(files,function(key, input){
 				var exp = input.name.split(".").slice(-1)[0].toUpperCase();
 				console.log(exp);
@@ -51,16 +51,18 @@ $(document).ready(function() {
 				formData.append('file[]', input);
 				dataArray.push({name : input.name});
 				}
-				// if (exp =="CSV" ){
-				// 	formData.append('dircnc', $('#dircnc').val());	
-				// 	// console.log(formData.get('dircnc'));
-				// 	// console.log(formData.get('dircnc').length);// если ноль, то пусто
-				// }
+				if (exp =="CSV" ){
+					// formData.append('dircnc', $('#dircnc').val());	
+					// console.log("*****");
+					flagCSV=true;
+					
+				}
 
 			});
 
 			 console.log("dataArray.length "+dataArray.length);
 			if(dataArray.length > 0 && dataArray.length <= maxFiles){
+				if(!flagCSV){$('#dircnc').val("");}
 				formData.append('dircnc', $('#dircnc').val());	
 				$.ajax({
 					type: "POST",
