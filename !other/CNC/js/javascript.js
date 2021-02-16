@@ -118,6 +118,35 @@ $(document).ready(function() {
 	});
 
 
+
+	$('#checkSpecification').on('click', function() {	
+
+		var formData = new FormData();
+		formData.append('path', '2578_4_SE');
+		// alert(formData.get('path'));
+		$.ajax({
+			type: "POST",
+			url: 'check_specification_CSV.php',
+			cache: false,
+			contentType: false,
+			processData: false,
+			data: formData,
+			// dataType : 'json',
+			dataType : 'text',
+			success: function(data){
+
+			   //  data.forEach(function(msg) {
+			   //      $('#file-name-holder').append(msg);                         
+			   //  });
+			//    alert(data);
+				$('#report').append(data);
+			
+			}
+		});
+
+	});
+
+
 	// Перезагрузить текущую страницу, без использования кэша
 	// document.location.reload(true);
 

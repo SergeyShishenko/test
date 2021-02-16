@@ -1,0 +1,26 @@
+Текущий коммит: specCSV
+    ("Проверка спецификации с программами ЧПУ")
+
+    ИЗМЕНЕНИЯ: 
+    !other\CNC\index.php
+    !other\CNC\js\javascript.js
+    !other\CNC\inc-drop.php
+    !other\CNC\check_specification_CSV.php
+
+
+
+       
+     
+
+    
+
+   
+
+
+
+        
+       
+       
+        
+        
+        

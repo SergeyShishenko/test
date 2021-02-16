@@ -18,6 +18,7 @@
 </div>
        <input type="text" id="dircnc" name="folder"><br>
  <button type="button" id="delFolder">Удалить папку</button>
+ <button type="button" id="checkSpecification">Проверить спецификацию</button>
 
       
 </div> 

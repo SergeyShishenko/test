@@ -135,7 +135,7 @@ style="margin-left:5px;" - отступ названия от маркера-->
 </td>
 </tr>
 </table>
-
+<div id="report"></div>
 <?php
 //   $cncsess->getArr();
 
@@ -145,10 +145,10 @@ style="margin-left:5px;" - отступ названия от маркера-->
 
 // echo "<br>!!!!!!!!!<br><br>";
 
-echo $fcnc->nameFile()."<br>";
-echo "Длина = ".$fcnc->getDL()."<br>";
-echo "Ширина = ".$fcnc->getDH()."<br>";
-echo "Толщина = ".$fcnc->getDS()."<br>";
+// echo $fcnc->nameFile()."<br>";
+// echo "Длина = ".$fcnc->getDL()."<br>";
+// echo "Ширина = ".$fcnc->getDH()."<br>";
+// echo "Толщина = ".$fcnc->getDS()."<br>";
 // $fcnc->outputCNC()."<br>";
 // var_dump($fcnc->getArr());
 

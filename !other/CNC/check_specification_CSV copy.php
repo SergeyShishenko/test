@@ -1,9 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <link rel="shortcut icon" href="working.bmp" type="image/x-icon">    
+
+</head>
+<body>
+<pre>
 <?php
+
 // !other\CNC\check_specification_CSV.php
 
 // $pathFile='files/1';
-
-$pathFile='files/'.$_POST['path'];
+$pathFile='files/2578_4_SE';
 // $pathFile='files/2578_4_numpart';
 $arrAllCSV[] = include "specificationCSV.php";
 // echo count($arrAllCSV[0])."<br>";
@@ -40,3 +51,7 @@ if (count($arrAllCSV[0])>0){
     $report .= "Нет файла спецификации!";
 }
 echo $report;
+?>
+</pre>
+</body>
+</html>
