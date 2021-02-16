@@ -17,8 +17,12 @@ $deny = array(
  
 // Директория куда будут загружаться файлы.
 // уникальное имя папки
-if ($_POST["dircnc"][0] !==""){
-	$folder_current=$_POST["dircnc"][0];
+// if (!file_exists(__DIR__ . '/uploads/')) {
+// 	mkdir(__DIR__ . '/uploads/', 0777, true);	
+
+// }
+if ($_POST["dircnc"] !==""){
+	$folder_current=$_POST["dircnc"];
 	$path = __DIR__ . '/uploads/'.$folder_current.'/';
 }else{
 	$rand_folder=rand();

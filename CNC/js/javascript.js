@@ -45,19 +45,23 @@ $(document).ready(function() {
 			$('#tableoutput').append("<tr><td><div id='loading1' ></div></td></tr>");
 
 			$.each(files,function(key, input){
-				if (input.name.split(".").slice(-1)[0] =="CNC" || 
-				input.name.split(".").slice(-1)[0] =="cnc" || 
-				input.name.split(".").slice(-1)[0] =="CSV" || 
-				input.name.split(".").slice(-1)[0] =="csv" 
-				){
+				var exp = input.name.split(".").slice(-1)[0].toUpperCase();
+				console.log(exp);
+				if (exp =="CNC" ||	exp =="CSV" ){
 				formData.append('file[]', input);
 				dataArray.push({name : input.name});
 				}
+				// if (exp =="CSV" ){
+				// 	formData.append('dircnc', $('#dircnc').val());	
+				// 	// console.log(formData.get('dircnc'));
+				// 	// console.log(formData.get('dircnc').length);// если ноль, то пусто
+				// }
+
 			});
 
 			 console.log("dataArray.length "+dataArray.length);
-			if(0 > dataArray.length <= maxFiles){	 
-				formData.append('dircnc[]', $('#dircnc').val());
+			if(dataArray.length > 0 && dataArray.length <= maxFiles){
+				formData.append('dircnc', $('#dircnc').val());	
 				$.ajax({
 					type: "POST",
 					url: 'upload.php',
@@ -68,16 +72,15 @@ $(document).ready(function() {
 					dataType : 'json',
 					success: function(data){
 	
-					//  data.forEach(function(msg) {
-					//      $('#file-name-holder').append(msg);                         
-					//  });
 						$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');// предпоследний массив 
 						printErr(data);
 						$('#dircnc').val(data[0]);// имя папки
 					}
 				});
-			}else{
+			}else if (dataArray.length > maxFiles){
 				$('#file-name-holder').append('Вы не можете загружать больше '+maxFiles+' файлов!<br>');
+			}else{
+				$('#file-name-holder').append('Не верный тип файла!<br>');
 			}
 		}
 
