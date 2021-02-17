@@ -130,6 +130,8 @@ include "createzip.php";
 </tr>
 </table>
 </form>
+
+<div id="report"></div>
 <?php
 //   $cncsess->getArr();
 

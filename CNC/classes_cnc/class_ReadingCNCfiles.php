@@ -102,6 +102,17 @@ class class_ReadingCNCfiles
         // }
       
     }
+
+    public function specificationAllCNC(){
+
+        for ($i=0; $i < count($this->arrFile); $i++) {             
+           
+            $this->arrSpecification[$i]=$this->arrFile[$i]->getSpecification();
+        } 
+        return $this->arrSpecification;
+
+    }
+
     
 }
 

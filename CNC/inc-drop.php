@@ -10,6 +10,8 @@
 </div>
 <div id="file-name-holder"></div>
 <input  id="dircnc"  name="folder" type="hidden"><br>
+<!-- <input  id="dircnc"  name="folder" disabled><br> -->
+
 <?php if($role =="admin"){ ?>
 <button type="button" id="delFolder">Удалить всю папку uploads</button>   
 <?php } ?>   

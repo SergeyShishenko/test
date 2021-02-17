@@ -80,6 +80,7 @@ $(document).ready(function() {
 						$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');// предпоследний массив 
 						printErr(data);
 						$('#dircnc').val(data[0]);// имя папки
+						checkSpecification(data[0]);
 					}
 				});
 			}else if (dataArray.length > maxFiles){
@@ -169,8 +170,7 @@ $(document).ready(function() {
    
 	});
 
-	// Перезагрузить текущую страницу, без использования кэша
-	// document.location.reload(true);
+	
 
 // Скролл верх и вниз
 	$(function(){
@@ -184,5 +184,38 @@ $(document).ready(function() {
 			return false;
 		});
 	});
+
+
+// проверка спецификации
+	function checkSpecification(folder) {	
+
+		var formData = new FormData();
+		formData.append('path',folder );//folder = '2578_4_SE'
+		// alert(formData.get('path'));
+		$.ajax({
+			type: "POST",
+			url: 'check_specification_CSV.php',
+			cache: false,
+			contentType: false,
+			processData: false,
+			data: formData,
+			// dataType : 'json',
+			dataType : 'text',
+			success: function(data){
+
+			   //  data.forEach(function(msg) {
+			   //      $('#file-name-holder').append(msg);                         
+			   //  });
+			//    alert(data);
+				$('#report').append(data);
+			
+			}
+		});
+
+	}
+
+
+	// Перезагрузить текущую страницу, без использования кэша
+	// document.location.reload(true);
 
 });

@@ -44,6 +44,9 @@ $(document).ready(function() {
 			   //  data.forEach(function(msg) {
 			   //      $('#file-name-holder').append(msg);                         
 			   //  });
+			   	// console.log("Object.keys(data) "+Object.keys(data));
+		 		// console.log("Object.entries(data) "+Object.entries(data));//!!!
+				// console.log("Object.values(data) "+Object.values(data));//!!!
 				$('#file-name-holder').append("Загружено "+(Object.keys(data).length-1)+' файлов<br>');
 				var lastKey = Object.keys(data).sort().reverse()[0];
 				var lastValue = data[lastKey];
