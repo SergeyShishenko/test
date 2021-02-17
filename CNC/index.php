@@ -91,7 +91,7 @@ include "createzip.php";
 
 <table border="1" bgcolor="#e9e9f7" cellpadding="10" style="width:100%; border-radius:5px;" id="tableoutput"> 
   <tr>
-      <!-- <td rowspan="2" style="width:80%"> -->
+      
       <td id="def_err">
           
            <div style="position:relative;margin: 0 auto;width: 50%;">  
@@ -112,16 +112,11 @@ include "createzip.php";
 
 
     <table border="1" bgcolor="#e9e9f7" height="100" cellpadding="10"
-    style="width:100%; border-radius:5px;">  
-    <!-- disabled -->
-    <!-- style="border:0px; background-color:#800040; color:#FFF; padding:10px; cursor:pointer; font-weight:bold; border-radius:5px;"  -->
-    <!-- class="button22" -->
+    style="width:100%; border-radius:5px;">   
     <tr>      
         <td align="center">
         <input type="submit" name="createzip"       
-        value="Скачать архив ZIP" class="button22 " />
-        <!-- value="Скачать архив ZIP" class="button22 disabled" onclick="alert('Скачать архив ZIP');" /> -->
-        
+        value="Скачать архив ZIP" class="button22 " />  
         </td>
     </tr>
     </table>
@@ -130,41 +125,15 @@ include "createzip.php";
 </tr>
 </table>
 </form>
+<table border="1" bgcolor="#e9e9f7" height="100" cellpadding="10" id="report"
+    style="width:100%; border-radius:5px;">  
 
-<div id="report"></div>
-<?php
-//   $cncsess->getArr();
-
-//  echo "<br>****************<br><br>";
-//  $cncsess->output();// вывод всех наименований
-//  $cncsess->getArr();// вывод всех наименований
-
-// echo "<br>!!!!!!!!!<br><br>";
-
-// echo $fcnc->nameFile()."<br>";
-// echo "Длина = ".$fcnc->getDL()."<br>";
-// echo "Ширина = ".$fcnc->getDH()."<br>";
-// echo "Толщина = ".$fcnc->getDS()."<br>";
-
-
-// echo $fcnc->outputCNC();
-// echo "<br>****************<br>";
-// echo $fcnc->checkCNC();
-// echo "<br>***ОШИБКИ***<br>";
-// echo $fcnc->err;
-// // var_dump($fcnc->err);
-// echo "<br>****************<br>";
-// echo $fcnc->outputCNC();
-
-// $fcnc->correctionRecord();
-
-
-
-
-// $cncsess->checkAllCNC();
-
-//   echo "<br>++++++++++++++++<br><br>";
-?> 
+    <!-- <tr>      
+        <td align="center">        
+        </td>
+    </tr> -->
+    </table>
+<!-- <div id="report"></div> -->
     <script src="js/jquery.min.js"></script>  
     <script src="js/num_word.js"></script>
     <script src="js/javascript.js?v2"></script>

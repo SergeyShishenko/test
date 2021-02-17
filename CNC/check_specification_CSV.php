@@ -25,18 +25,20 @@ if (count($arrAllCSV[0])>0){
             $var3=$var2['DL'] ." x ".$var2['DH']." x ".$var2['DS'];
             
             if (strcasecmp($var1, $var2['name']) == 0) {
-                $report .= "$var1 ok! ". $var3. ' AND '.$varSTR4;
+                // $report .= "<tr><td align='center'>". $var1 . "ok! ". $var3. ' AND '.$varSTR4;
+                $report .= "<tr><td align='center'><b>". $var1 ."</b>" ;
             if (strcasecmp($var3, $varSTR4) == 0) {
-                $report .= "<span style='color:green'> - Размеры совпадают" . "</span> <br>";
+                $report .= "<span style='color:green'> - Размеры совпадают" . "</span> </td></tr>";
             }else{
-                $report .= "<span style='color:red'> - Размеры неверные" . "</span> <br>";
+                $report .= "<span style='color:red'> - Размеры неверные" . "</span> </td></tr>";
             }
             $find=true;
             }
         }
-        if (!$find){ $report .= $var2['name'] . "<span style='color:blue'> нет в спецификации </span> <br>";}
+        if (!$find){ $report .= "<tr><td align='center'><b>". $var2['name'] ."</b>"  . "<span style='color:blue'> - Нет в спецификации </span> </td></tr>";}
     }
 }else{
-    $report .= "Нет файла спецификации!";
+    $report .= "<tr><td  align='center'>Нет файла спецификации!</td></tr>";
 }
+// echo '<tr><td>'.$report.'</td></tr>';
 echo $report;
