@@ -61,12 +61,13 @@ $(document).ready(function() {
 			});
 
 
-			//ДОБАВИТЬ КНОПКУ ОЧИСТИТЬ И ЗАМЕНА CSV НА НОВЫЙ ФАЙЛ
+			// ЗАМЕНА CSV НА НОВЫЙ ФАЙЛ при генерации в экселе и при загрузке на сервер
 
 			 console.log("dataArray.length "+dataArray.length);
 			if(dataArray.length > 0 && dataArray.length <= maxFiles){				
 				// if(!flagCSV){$('#dircnc').val("");}// если нет CSV
-				formData.append('dircnc', $('#dircnc').val());	
+				formData.append('dircnc', $('#dircnc').val());
+				$('#report').empty(); 	
 				$.ajax({
 					type: "POST",
 					url: 'upload.php',
@@ -169,6 +170,23 @@ $(document).ready(function() {
 	   });
    
 	});
+	$( "#clear" ).click(function(){ 
+		var delfolder =  $('#dircnc').val();// from input
+		if (delfolder !==""){
+			$('#file-name-holder').empty();  
+			$('#tableoutput').empty(); 
+			$('#report').empty(); 
+			$('#err').remove();
+			
+			// var delfolder = "";// удалить всю папку uploads
+			$('#dircnc').val("");
+			$.post('remove-directory.php', {del: delfolder}, function(data){
+				$('#file-name-holder').append(data+'<br>');
+			});
+			document.location.reload();
+		}
+   
+	});
 
 	
 
@@ -216,6 +234,6 @@ $(document).ready(function() {
 
 
 	// Перезагрузить текущую страницу, без использования кэша
-	// document.location.reload(true);
+	// document.location.reload();
 
 });
