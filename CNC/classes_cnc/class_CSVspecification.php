@@ -43,6 +43,10 @@
             return $this->arrAllCSV;
 
         }   
+        public function   getName(){
+            return $this->CSV;
+
+        }   
 
     }
 ?>

@@ -86,8 +86,13 @@ if (!isset($_FILES[$input_name])) {
 				// $error = false;
 			} else {
 				// Перемещаем файл в директорию.
-			
-			
+				if(strtolower($parts['extension'])=='csv'){
+					foreach (glob($path.'*.[cC][sS][vV]') as $file) {
+						unlink($file);
+					}
+					// array_map('unlink', glob($path.'*.[cC][sS][vV]'));
+				}
+				
 
 				if (move_uploaded_file($file['tmp_name'], $path . $name)) {
 					// Далее можно сохранить название файла в БД и т.п.

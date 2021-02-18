@@ -5,13 +5,16 @@
 
 $pathFile='uploads/'.$_POST['path'];
 // $pathFile='files/2578_4_numpart';
-$arrAllCSV[] = include "specificationCSV.php";
+$arr = include "specificationCSV.php";
+$arrAllCSV[] = $arr[0];
 // echo count($arrAllCSV[0])."<br>";
-// var_dump($arrAllCSV)
+// var_dump($arrAllCSV);
 $report="";
+$report=var_dump($arr);
+
 if (count($arrAllCSV[0])>0){
     $arrCHPU[] = include "specificationCHPU.php";
-
+    $report .= "<tr><td align='center'><b>". basename($arr[1]) ."</b></td></tr>" ;
     foreach ($arrCHPU[0] as $var2){
         $div_count= substr_count($var2['name'], '_');// количество "_"
         $find=false;
