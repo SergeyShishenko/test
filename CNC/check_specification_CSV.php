@@ -10,10 +10,10 @@ $arrAllCSV[] = $arr[0];
 // echo count($arrAllCSV[0])."<br>";
 // var_dump($arrAllCSV);
 $report="";
-$report=var_dump($arr);
-
-if (count($arrAllCSV[0])>0){
-    $arrCHPU[] = include "specificationCHPU.php";
+// $report=var_dump($arr);
+$arrCHPU[] = include "specificationCHPU.php";
+if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
+    
     $report .= "<tr><td align='center'><b>". basename($arr[1]) ."</b></td></tr>" ;
     foreach ($arrCHPU[0] as $var2){
         $div_count= substr_count($var2['name'], '_');// количество "_"
@@ -41,7 +41,12 @@ if (count($arrAllCSV[0])>0){
         if (!$find){ $report .= "<tr><td align='center'><b>". $var2['name'] ."</b>"  . "<span style='color:blue'> - Нет в спецификации </span> </td></tr>";}
     }
 }else{
+    if (count($arrAllCSV[0])==0){
     $report .= "<tr><td  align='center'>Нет файла спецификации!</td></tr>";
+    }
+    if (count($arrCHPU[0])==0){
+        $report .= "<tr><td  align='center'>Нет файлов для проверки!</td></tr>";
+        }
 }
 // echo '<tr><td>'.$report.'</td></tr>';
 echo $report;

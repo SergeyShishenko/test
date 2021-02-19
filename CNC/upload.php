@@ -87,10 +87,11 @@ if (!isset($_FILES[$input_name])) {
 			} else {
 				// Перемещаем файл в директорию.
 				if(strtolower($parts['extension'])=='csv'){
-					foreach (glob($path.'*.[cC][sS][vV]') as $file) {
-						unlink($file);
-					}
-					// array_map('unlink', glob($path.'*.[cC][sS][vV]'));
+					// foreach (glob($path.'*.[cC][sS][vV]') as $file) {
+					// 	unlink($file);
+						
+					// }
+					array_map('unlink', glob($path.'*.[cC][sS][vV]'));
 				}
 				
 
