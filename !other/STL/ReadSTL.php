@@ -47,9 +47,9 @@
 // };
  
 
-//  $filename = "box.STL";
+ $filename = "box.STL";
 //  $filename = "box1000.STL";
- $filename = "arca.STL";
+//  $filename = "arca.STL";
  $sum=0;
 
 
@@ -61,37 +61,39 @@ $content = unpack('i', fread($handle, 4));
 echo "<br> Всего треугольников: ".$content[1] . "<br>";
 echo "<hr>";
   for ($j = 1; $j <= $content[1]; $j++){
-    // echo "Треугольник - $j<br>"; 
+    echo "Треугольник - $j<br>"; 
     $NormalX=unpack('f', fread($handle, 4))[1];
     $NormalY=unpack('f', fread($handle, 4))[1];
     $NormalZ=unpack('f', fread($handle, 4))[1];
-    // echo "Нормаль: " . $NormalX . " " . $NormalY . " " . $NormalZ . "<br>";
+    echo "Нормаль: " . $NormalX . " " . $NormalY . " " . $NormalZ . "<br>";
+    echo "Колинеарность: ". checkColinear($NormalX, $NormalY, $NormalZ) . "<br>";
+    echo "Сонаправленность: ". directional($NormalX, $NormalY, $NormalZ) . "<br>";
 
     $Vertex_1_X=unpack('f', fread($handle, 4))[1];
     $Vertex_1_Y=unpack('f', fread($handle, 4))[1];
     $Vertex_1_Z=unpack('f', fread($handle, 4))[1];
     $arrVert1=[$Vertex_1_X, $Vertex_1_Y, $Vertex_1_Z];
-    // echo "Вершина1: " . $Vertex_1_X . " " . $Vertex_1_Y. " " . $Vertex_1_Z. "<br>";
+    echo "Вершина1: " . $Vertex_1_X . " " . $Vertex_1_Y. " " . $Vertex_1_Z. "<br>";
 
     $Vertex_2_X=unpack('f', fread($handle, 4))[1];
     $Vertex_2_Y=unpack('f', fread($handle, 4))[1];
     $Vertex_2_Z=unpack('f', fread($handle, 4))[1];
     $arrVert2=[$Vertex_2_X ,$Vertex_2_Y, $Vertex_2_Z];
-    // echo "Вершина2: " . $Vertex_2_X . " " . $Vertex_2_Y. " " . $Vertex_2_Z. "<br>";
+    echo "Вершина2: " . $Vertex_2_X . " " . $Vertex_2_Y. " " . $Vertex_2_Z. "<br>";
 
     $Vertex_3_X=unpack('f', fread($handle, 4))[1];
     $Vertex_3_Y=unpack('f', fread($handle, 4))[1];
     $Vertex_3_Z=unpack('f', fread($handle, 4))[1];
     $arrVert3=[$Vertex_3_X, $Vertex_3_Y, $Vertex_3_Z];
-    // echo "Вершина3: " . $Vertex_3_X . " " . $Vertex_3_Y. " " . $Vertex_3_Z. "<br>";
+    echo "Вершина3: " . $Vertex_3_X . " " . $Vertex_3_Y. " " . $Vertex_3_Z. "<br>";
     
     unpack('s', fread($handle, 2))[1]; // END
     // echo unpack('s', fread($handle, 2))[1]. "<br>";
     $strain=square($arrVert1,$arrVert2,$arrVert3);
-    // echo "S = " . $strain;
+    echo "S = " . $strain;
     $sum += $strain;
     
-    // echo "<hr>";
+    echo "<hr>";
     }
     echo "S-Solid = " . ($sum / 1000000) ." м.кв.";
     echo "<script>alert('S-Solid = " . ($sum / 1000000) ." м.кв.');</script>";
@@ -110,6 +112,31 @@ function square($arrVert1,$arrVert2,$arrVert3){ // полупериметр
                                  ($halfMeter-sqrt(pow($arrVert1[0]-$arrVert3[0],2) + pow($arrVert1[1]-$arrVert3[1],2) + pow($arrVert1[2]-$arrVert3[2],2)))
                 );
     return $square ;
+}
+
+// a = {$ax; $ay; $az} и b = {$bx; $by; $bz}
+// a × b = {$ay*$bz - $az*$by; $az*$bx - $ax*$bz; $ax*$by - $ay*$bx}
+// i ($ay*$bz - $az*$by) - j ($ax*$bz - $az*$bx) + k ($ax*$by - $ay*$bx)
+function checkColinear($ax, $ay, $az){
+    $bx =0; $by=0; $bz=-1;
+    $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
+    if ($Colinear==0) {
+        return "Yes"; 
+     } else{
+         return "No"; 
+     } 
+   
+}
+// сонаправленные векторы
+function directional($ax, $ay, $az){
+    $bx =0; $by=0; $bz=-1;
+    $directional=$ax*$bx + $ay*$by + $az*$bz;
+    if ($directional>0) {
+       return "Yes"; 
+    } else{
+        return "No"; 
+    } 
+    
 }
 
 // Рассчитайте площадь (S) по формуле Герона - извлеките корень из произведения полупериметра на разность между ним и длиной каждой из сторон. 
@@ -145,5 +172,5 @@ function square($arrVert1,$arrVert2,$arrVert3){ // полупериметр
 // (Z₁-Z₃)²)).
 
 
-// Подробнее: https://www.kakprosto.ru/kak-124513-kak-nayti-ploshchad-treugolnika-po-trem-tochkam#ixzz6myrXMJFt
+// Подробнее: https://www.kakprosto.ru/kak-124513-kak-n$ayti-ploshchad-treugolnika-po-trem-tochkam#ixzz6myrXMJFt
 ?>
