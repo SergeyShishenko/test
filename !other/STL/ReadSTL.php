@@ -47,16 +47,11 @@
 // };
  
 
-// $filename = "C:/xampp/tmp/" .basename($_FILES['uploadfile']['tmp_name']);
- $filename = "box.STL";
+//  $filename = "box.STL";
+//  $filename = "box1000.STL";
+ $filename = "arca.STL";
  $sum=0;
 
-// $handle = fopen($filename, "rb");
-// $contents = fread($handle, filesize($filename));
-// fclose($handle);
-// // var_dump(unpack('f', "\x99\x99\$arrVert1[0]9\$arrVert3[0]f"));
-// // var_dump(unpack('f', $contents));
-// var_dump($contents);
 
 $handle = fopen($filename, "rb");
 $name = fread($handle, 80);
@@ -65,66 +60,49 @@ $content = unpack('i', fread($handle, 4));
 echo "<br> Всего треугольников: ".$content[1] . "<br>";
 echo "<hr>";
   for ($j = 1; $j <= $content[1]; $j++){
-    echo "Треугольник - $j<br>"; 
+    // echo "Треугольник - $j<br>"; 
     $NormalX=unpack('f', fread($handle, 4))[1];
     $NormalY=unpack('f', fread($handle, 4))[1];
     $NormalZ=unpack('f', fread($handle, 4))[1];
-    echo "Нормаль: " . $NormalX . " " . $NormalY . " " . $NormalZ . "<br>";
+    // echo "Нормаль: " . $NormalX . " " . $NormalY . " " . $NormalZ . "<br>";
 
     $Vertex_1_X=unpack('f', fread($handle, 4))[1];
     $Vertex_1_Y=unpack('f', fread($handle, 4))[1];
     $Vertex_1_Z=unpack('f', fread($handle, 4))[1];
     $arrVert1=[$Vertex_1_X, $Vertex_1_Y, $Vertex_1_Z];
-    echo "Вершина1: " . $Vertex_1_X . " " . $Vertex_1_Y. " " . $Vertex_1_Z. "<br>";
+    // echo "Вершина1: " . $Vertex_1_X . " " . $Vertex_1_Y. " " . $Vertex_1_Z. "<br>";
 
     $Vertex_2_X=unpack('f', fread($handle, 4))[1];
     $Vertex_2_Y=unpack('f', fread($handle, 4))[1];
     $Vertex_2_Z=unpack('f', fread($handle, 4))[1];
     $arrVert2=[$Vertex_2_X ,$Vertex_2_Y, $Vertex_2_Z];
-    echo "Вершина2: " . $Vertex_2_X . " " . $Vertex_2_Y. " " . $Vertex_2_Z. "<br>";
+    // echo "Вершина2: " . $Vertex_2_X . " " . $Vertex_2_Y. " " . $Vertex_2_Z. "<br>";
 
     $Vertex_3_X=unpack('f', fread($handle, 4))[1];
     $Vertex_3_Y=unpack('f', fread($handle, 4))[1];
     $Vertex_3_Z=unpack('f', fread($handle, 4))[1];
     $arrVert3=[$Vertex_3_X, $Vertex_3_Y, $Vertex_3_Z];
-    echo "Вершина3: " . $Vertex_3_X . " " . $Vertex_3_Y. " " . $Vertex_3_Z. "<br>";
+    // echo "Вершина3: " . $Vertex_3_X . " " . $Vertex_3_Y. " " . $Vertex_3_Z. "<br>";
     
     unpack('s', fread($handle, 2))[1]; // END
     // echo unpack('s', fread($handle, 2))[1]. "<br>";
     $strain=square($arrVert1,$arrVert2,$arrVert3);
-    echo "S = " . $strain;
+    // echo "S = " . $strain;
     $sum += $strain;
     
-    echo "<hr>";
+    // echo "<hr>";
     }
 
-    echo "S-Solid = " .$sum;
-// Для упрощения расчетов введите вспомогательную переменную - полупериметр (Р).
-// Из названия понятно, что это половина суммы длин всех сторон:
-// Р = ½*(AB+BC+AC) = 0.5*(√((X₁-X₂)² + (Y₁-Y₂)² + (Z₁-Z₂)²) + √((X₂-X₃)² + (Y₂-Y₃)² + (Z₂-Z₃)²) + √((X₁-X₃)² + (Y₁-Y₃)² + (Z₁-Z₃)²)
-// vertex_1 2.22934 -0.992723 -0.862826  X_1 Y_1 Z_1 $arrVert1[0] $arrVert1[1] $arrVert1[2]
-// vertex_2 2.41037 -0.777999 -0.841105  X_2 Y_2 Z_2 $arrVert2[0] $arrVert2[1] $arrVert2[2]
-// vertex_3 2.40731 -0.97498 -0.805091   X_3 Y_3 Z_3 $arrVert3[0] $arrVert3[1] $arrVert3[2]
+    echo "<script>alert('S-Solid = " . ($sum / 1000000) ." м');</script>";
+
 function square($arrVert1,$arrVert2,$arrVert3){ // полупериметр
-//  Р = ½*(AB+BC+AC) = 
-//  ½*(√((X₁-X₂)² + 
-//  (Y₁-Y₂)² + 
-//  (Z₁-Z₂)²) + 
-//  √((X₂-X₃)² + 
-//  (Y₂-Y₃)² + 
-//  (Z₂-Z₃)²) + 
-//  √((X₁-X₃)² + 
-//  (Y₁-Y₃)² + 
-//  (Z₁-Z₃)²)
+
     $halfMeter= 0.5 * (sqrt(pow($arrVert1[0] - $arrVert2[0],2) + pow($arrVert1[1] - $arrVert2[1],2) +  pow($arrVert1[2] - $arrVert2[2],2)) +  
                        sqrt(pow($arrVert2[0] - $arrVert3[0],2) + pow($arrVert2[1] - $arrVert3[1],2) +  pow($arrVert2[2] - $arrVert3[2],2)) +  
                        sqrt(pow($arrVert1[0] - $arrVert3[0],2) + pow($arrVert1[1] - $arrVert3[1],2) +  pow($arrVert1[2] - $arrVert3[2],2))
                         );
                         
 
-// √( P*(P-√((X₁-X₂)² +                 (Y₁-Y₂)² +                          (Z₁-Z₂)²))*
-//      (P-√((X₂-X₃)² +                 (Y₂-Y₃)² +                          (Z₂-Z₃)²))*
-//      (P-√((X₁-X₃)² +                 (Y₁-Y₃)² +                          (Z₁-Z₃)²)
 
     $square = sqrt( $halfMeter * ($halfMeter-sqrt(pow($arrVert1[0]-$arrVert2[0],2) + pow($arrVert1[1]-$arrVert2[1],2) + pow($arrVert1[2]-$arrVert2[2],2))) * 
                                  ($halfMeter-sqrt(pow($arrVert2[0]-$arrVert3[0],2) + pow($arrVert2[1]-$arrVert3[1],2) + pow($arrVert2[2]-$arrVert3[2],2))) * 
