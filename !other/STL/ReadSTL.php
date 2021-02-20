@@ -55,7 +55,8 @@
 
 $handle = fopen($filename, "rb");
 $name = fread($handle, 80);
-echo "Заголовок: ".$name;
+// echo "Заголовок: ". $name ;
+echo "Файл: ". $filename ;
 $content = unpack('i', fread($handle, 4));
 echo "<br> Всего треугольников: ".$content[1] . "<br>";
 echo "<hr>";
@@ -92,8 +93,8 @@ echo "<hr>";
     
     // echo "<hr>";
     }
-
-    echo "<script>alert('S-Solid = " . ($sum / 1000000) ." м');</script>";
+    echo "S-Solid = " . ($sum / 1000000) ." м.кв.";
+    echo "<script>alert('S-Solid = " . ($sum / 1000000) ." м.кв.');</script>";
 
 function square($arrVert1,$arrVert2,$arrVert3){ // полупериметр
 
