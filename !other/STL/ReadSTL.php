@@ -54,7 +54,9 @@
 
 
 $handle = fopen($filename, "rb");
-$name = fread($handle, 80);
+
+fseek($handle,80);// пропускаем заголовок
+// $name = fread($handle, 80);
 // echo "Заголовок: ". $name ;
 echo "Файл: ". $filename ;
 $content = unpack('i', fread($handle, 4));
