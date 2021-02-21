@@ -81,41 +81,62 @@
             $content = unpack('i', fread($handle, 4));
             $this->countTriangles = $content[1];
             // echo "<br> Всего треугольников: ".$content[1] . "<br>";
-            echo "<hr>";
+            // echo "<hr>";
             for ($j = 1; $j <= $this->countTriangles; $j++){
-                echo "Треугольник - $j<br>"; 
+                // echo "Треугольник - $j<br>"; 
                 $NormalX=unpack('f', fread($handle, 4))[1];
                 $NormalY=unpack('f', fread($handle, 4))[1];
                 $NormalZ=unpack('f', fread($handle, 4))[1];
-                echo "Нормаль: " . $NormalX . " " . $NormalY . " " . $NormalZ . "<br>";
-                echo "Колинеарность: ". $this->checkColinear($NormalX, $NormalY, $NormalZ) . "<br>";
-                echo "Сонаправленность: ". $this->directional($NormalX, $NormalY, $NormalZ) . "<br>";
+                $this->arrTriangles[$j]['normal']=[ $NormalX , $NormalY , $NormalZ];
+                // echo "Нормаль: " .  $this->arrTriangles[$j]['normal'][0] . " " 
+                // .$this->arrTriangles[$j]['normal'][1] . " " 
+                // . $this->arrTriangles[$j]['normal'][2] . "<br>";
+               
+                $this->arrTriangles[$j]['colinear']=$this->checkColinear($NormalX, $NormalY, $NormalZ);
+                //  echo "Колинеарность: ". $this->arrTriangles[$j]['colinear'] . "<br>";
+                 $this->arrTriangles[$j]['directional']=$this->directional($NormalX, $NormalY, $NormalZ);
+                // echo "Сонаправленность: ". $this->arrTriangles[$j]['directional'] . "<br>";
 
                 $Vertex_1_X=unpack('f', fread($handle, 4))[1];
                 $Vertex_1_Y=unpack('f', fread($handle, 4))[1];
                 $Vertex_1_Z=unpack('f', fread($handle, 4))[1];
-                $arrVert1=[$Vertex_1_X, $Vertex_1_Y, $Vertex_1_Z];
-                echo "Вершина1: " . $Vertex_1_X . " " . $Vertex_1_Y. " " . $Vertex_1_Z. "<br>";
+                $this->arrTriangles[$j]['vertex1']=[$Vertex_1_X, $Vertex_1_Y, $Vertex_1_Z];
+               
+                // echo "Вершина1: "   . $this->arrTriangles[$j]['vertex1'][0] . " " 
+                //                     . $this->arrTriangles[$j]['vertex1'][1]. " " 
+                //                     . $this->arrTriangles[$j]['vertex1'][2]. "<br>";
 
                 $Vertex_2_X=unpack('f', fread($handle, 4))[1];
                 $Vertex_2_Y=unpack('f', fread($handle, 4))[1];
                 $Vertex_2_Z=unpack('f', fread($handle, 4))[1];
-                $arrVert2=[$Vertex_2_X ,$Vertex_2_Y, $Vertex_2_Z];
-                echo "Вершина2: " . $Vertex_2_X . " " . $Vertex_2_Y. " " . $Vertex_2_Z. "<br>";
+                $this->arrTriangles[$j]['vertex2']=[$Vertex_2_X, $Vertex_2_Y, $Vertex_2_Z];
+           
+                // echo "Вершина2: "   . $this->arrTriangles[$j]['vertex2'][0] . " " 
+                //                     . $this->arrTriangles[$j]['vertex2'][1]. " " 
+                //                     . $this->arrTriangles[$j]['vertex2'][2]. "<br>";
 
                 $Vertex_3_X=unpack('f', fread($handle, 4))[1];
                 $Vertex_3_Y=unpack('f', fread($handle, 4))[1];
                 $Vertex_3_Z=unpack('f', fread($handle, 4))[1];
-                $arrVert3=[$Vertex_3_X, $Vertex_3_Y, $Vertex_3_Z];
-                echo "Вершина3: " . $Vertex_3_X . " " . $Vertex_3_Y. " " . $Vertex_3_Z. "<br>";
+                $this->arrTriangles[$j]['vertex3']=[$Vertex_3_X, $Vertex_3_Y, $Vertex_3_Z];
+              
+                // echo "Вершина3: "   . $this->arrTriangles[$j]['vertex3'][0] . " " 
+                //                     . $this->arrTriangles[$j]['vertex3'][1]. " " 
+                //                     . $this->arrTriangles[$j]['vertex3'][2]. "<br>";
                 
+
                 unpack('s', fread($handle, 2))[1]; // END
-                // echo unpack('s', fread($handle, 2))[1]. "<br>";
-                $strain=$this->square($arrVert1,$arrVert2,$arrVert3);
-                echo "S = " . $strain;
-                $this->totalSum += $strain;
                 
-                echo "<hr>";
+                
+                
+                $this->arrTriangles[$j]['strain']=$this->square($this->arrTriangles[$j]['vertex1'],
+                                                                $this->arrTriangles[$j]['vertex2'],
+                                                                $this->arrTriangles[$j]['vertex3']
+                                                            );
+                // echo "S = " . $this->arrTriangles[$j]['strain'];
+                $this->totalSum += $this->arrTriangles[$j]['strain'];
+                
+                // echo "<hr>";
             }// for
 
             echo "S-Solid = " . ($this->totalSum / 1000000) ." м.кв.";
@@ -165,6 +186,35 @@
         }
         public function getCountTriangles(){
            return $this->countTriangles;
+           
+        }
+        public function getTriangles(){
+
+            for($j=1; $j <= $this->countTriangles; $j++) {
+                echo "<hr>";
+                echo "Треугольник - $j<br>"; 
+                echo "Нормаль: " .  $this->arrTriangles[$j]['normal'][0] . " " 
+                .$this->arrTriangles[$j]['normal'][1] . " " 
+                . $this->arrTriangles[$j]['normal'][2] . "<br>";
+                echo "Колинеарность: ". $this->arrTriangles[$j]['colinear'] . "<br>";
+                echo "Сонаправленность: ". $this->arrTriangles[$j]['directional'] . "<br>";
+
+                echo "Вершина1: "   . $this->arrTriangles[$j]['vertex1'][0] . " " 
+                . $this->arrTriangles[$j]['vertex1'][1]. " " 
+                . $this->arrTriangles[$j]['vertex1'][2]. "<br>";
+
+                echo "Вершина2: "   . $this->arrTriangles[$j]['vertex2'][0] . " " 
+                                    . $this->arrTriangles[$j]['vertex2'][1]. " " 
+                                    . $this->arrTriangles[$j]['vertex2'][2]. "<br>";
+
+                echo "Вершина3: "   . $this->arrTriangles[$j]['vertex3'][0] . " " 
+                . $this->arrTriangles[$j]['vertex3'][1]. " " 
+                . $this->arrTriangles[$j]['vertex3'][2]. "<br>";
+
+                echo "S = " . $this->arrTriangles[$j]['strain'];
+            
+             }//for
+        
            
         }
 
