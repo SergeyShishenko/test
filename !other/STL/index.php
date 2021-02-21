@@ -8,12 +8,26 @@
     <title>Чтение STL</title>
 </head>
 <body>
- <?php  
- include "classes_stl/class_ReadSTL.php"; 
- $stl= new class_ReadSTL("box.STL");
- echo "<br> Всего треугольников: " . $stl->getCountTriangles() . "<br>";
- echo "<script>alert('S-Solid = " . ($stl->getTotalSum() / 1000000) ." м.кв.');</script>";
- $stl->getTriangles();
- ?>   
+<script>obj= <?php echo include "ReadSTL.php"; ?>; 
+function forEach(data, callback){
+  for(var key in data){
+    if(data.hasOwnProperty(key)){
+      callback(key, data[key]);
+    }
+  }
+}
+function fcallback(key, value){
+    document.write(key + ': ' +
+    "<br>"+
+    '..normal '+
+     value['normal'][0] +" "+ value['normal'][1] +" "+ value['normal'][2] 
+     +"<br>"+
+     value['colinear']+"<br>"
+     )  
+
+}
+forEach(obj, fcallback)
+
+</script>   
 </body>
 </html>
