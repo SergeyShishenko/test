@@ -79,10 +79,9 @@
           
             // echo "Файл: ". $fileSTL ;
             $content = unpack('i', fread($handle, 4));
-            $this->countTriangles = $content[1];
-            // echo "<br> Всего треугольников: ".$content[1] . "<br>";
+            echo "<br> Всего треугольников: ".$content[1] . "<br>";
             echo "<hr>";
-            for ($j = 1; $j <= $this->countTriangles; $j++){
+            for ($j = 1; $j <= $content[1]; $j++){
                 echo "Треугольник - $j<br>"; 
                 $NormalX=unpack('f', fread($handle, 4))[1];
                 $NormalY=unpack('f', fread($handle, 4))[1];
@@ -113,17 +112,17 @@
                 // echo unpack('s', fread($handle, 2))[1]. "<br>";
                 $strain=$this->square($arrVert1,$arrVert2,$arrVert3);
                 echo "S = " . $strain;
-                $this->totalSum += $strain;
+                $sum += $strain;
                 
                 echo "<hr>";
             }// for
 
-            echo "S-Solid = " . ($this->totalSum / 1000000) ." м.кв.";
-            // echo "<script>alert('S-Solid = " . ($this->totalSum / 1000000) ." м.кв.');</script>";
+            echo "S-Solid = " . ($sum / 1000000) ." м.кв.";
+            echo "<script>alert('S-Solid = " . ($sum / 1000000) ." м.кв.');</script>";
         }
 
         // площадь треугольника по его вершинам
-        private function square($arrVert1,$arrVert2,$arrVert3){ 
+        function square($arrVert1,$arrVert2,$arrVert3){ 
             // полупериметр
             $halfMeter= 0.5 * (sqrt(pow($arrVert1[0] - $arrVert2[0],2) + pow($arrVert1[1] - $arrVert2[1],2) +  pow($arrVert1[2] - $arrVert2[2],2)) +  
                                sqrt(pow($arrVert2[0] - $arrVert3[0],2) + pow($arrVert2[1] - $arrVert3[1],2) +  pow($arrVert2[2] - $arrVert3[2],2)) +  
@@ -137,7 +136,7 @@
         }
 
         // сонаправленные векторы к  (0 0 -1)
-        private function directional($ax, $ay, $az){
+        function directional($ax, $ay, $az){
             $bx =0; $by=0; $bz=-1;
             $directional=$ax*$bx + $ay*$by + $az*$bz;
             if ($directional>0) {
@@ -148,7 +147,7 @@
             
         }
         // проверка на колинеарность векторов к оси Z
-        private function checkColinear($ax, $ay, $az){
+        function checkColinear($ax, $ay, $az){
             $bx =0; $by=0; $bz=-1;
             $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
             if ($Colinear==0) {
@@ -156,15 +155,6 @@
              } else{
                  return "No"; 
              } 
-           
-        }
-
-        public function getTotalSum(){
-           return $this->totalSum;
-           
-        }
-        public function getCountTriangles(){
-           return $this->countTriangles;
            
         }
 
