@@ -8,6 +8,10 @@
     <title>Чтение STL</title>
 </head>
 <body>
+<?php
+// https://habr.com/ru/post/345024/
+ echo memory_get_peak_usage() , "<br>";
+ ?>
 <script>obj= <?php echo include "ReadSTL.php"; ?>; 
 function forEach(data, callback){
   for(var key in data){
