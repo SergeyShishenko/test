@@ -10,7 +10,9 @@
 <body>
 <?php
 // https://habr.com/ru/post/345024/
- echo memory_get_peak_usage() , "<br>";
+//  echo memory_get_peak_usage() , "<br>";
+include  dirname(__DIR__)."/sitepoint-performant-reading-of-big-files-in-php-master/memory.php";
+echo "<br>";
  ?>
 <script>obj= <?php echo include "ReadSTL.php"; ?>; 
 function forEach(data, callback){
