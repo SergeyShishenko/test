@@ -201,6 +201,7 @@
         }
 
         public function getData(){
+            $this->arrTriangles['totalsum']=$this->totalSum;
             return json_encode($this->arrTriangles);
         }
 

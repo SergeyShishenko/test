@@ -17,13 +17,25 @@ function forEach(data, callback){
   }
 }
 function fcallback(key, value){
-    document.write(key + ': ' +
-    "<br>"+
-    '..normal '+
-     value['normal'][0] +" "+ value['normal'][1] +" "+ value['normal'][2] 
-     +"<br>"+
-     value['colinear']+"<br>"
-     )  
+  if (key!=="totalsum"){
+      document.write(key + ': ' 
+      + "<br>"
+      + '..normal: '
+      + value['normal'][0] +" "+ value['normal'][1] +" "+ value['normal'][2]  + "<br>"
+      + '..колинеарно: ' + value['colinear']+"<br>"
+      + '..соноправлен: ' + value['directional']+"<br>"
+      + '..вершина1: ' 
+      + value['vertex1'][0] +" "+ value['vertex1'][1] +" "+ value['vertex1'][2] + " <br>"
+      + '..вершина2: ' 
+      + value['vertex2'][0] +" "+ value['vertex2'][1] +" "+ value['vertex2'][2] + " <br>"
+      + '..вершина3: ' 
+      + value['vertex3'][0] +" "+ value['vertex3'][1] +" "+ value['vertex3'][2] + " <br>"
+      + '..площадь: ' + value['strain']+" мм&sup2;<br>"
+      );
+    } else{
+      document.write("<br>****<br>");
+      document.write("Площадь поверхности: " + parseFloat((value / 1000000).toFixed(3)) +" м&sup2");
+    } 
 
 }
 forEach(obj, fcallback)

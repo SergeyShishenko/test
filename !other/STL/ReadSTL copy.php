@@ -47,8 +47,8 @@
 // };
  
 
- $filename = "box.STL";
-//  $filename = "box1000.STL";
+//  $filename = "box.STL";
+ $filename = "box1000.STL";
 //  $filename = "arca.STL";
  $sum=0;
 
