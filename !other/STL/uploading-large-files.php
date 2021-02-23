@@ -20,23 +20,25 @@
     <script>
     // Далее на странице находится раздел сценария - и вот где тяжелая атлетика будет происходить.
       const input = document.querySelector('#video-url-example');
-      const url ="https://sandbox.api.video/upload?token=to1R5LOYV0091XN3GQva27OS";
-      var chunkCounter;
+    //   const url ="https://sandbox.api.video/upload?token=to1R5LOYV0091XN3GQva27OS";
+    const url ="upload.php"
+      var chunkCounter = 0;
       //break into 1 MB chunks for demo purposes
-      const chunkSize = 1000000;  
+      const chunkSize = 100;  
       var videoId = "";
       var playerUrl = "";
 
 // Далее мы создаем EventListener на входе - когда файл добавляется, разделить файл и начать процесс загрузки:
       input.addEventListener('change', () => {
         const file = input.files[0];
+
         var numberofChunks = Math.ceil(file.size/chunkSize);
-        document.getElementById("video-information").innerHTML = "There will be " + numberofChunks + " chunks uploaded."
+        document.getElementById("video-information").innerHTML = "Будет загруженно " + numberofChunks + " кусков из "+file.size
         var start =0; 
         var chunkEnd = start + chunkSize;
         //upload the first chunk to get the videoId
         createChunk(videoId, start);
-
+    //   });
         // Теперь мы называем функцию createChunk.
         function createChunk(videoId, start, end){
             chunkCounter++;
@@ -45,12 +47,12 @@
             const chunk = file.slice(start, chunkEnd);
             console.log("i created a chunk of video" + start + "-" + chunkEnd + "minus 1    ");
             const chunkForm = new FormData();
-            if(videoId.length >0){
-                //we have a videoId
-                chunkForm.append('videoId', videoId);
-                console.log("added videoId");   
+            // if(videoId.length >0){
+            //     //we have a videoId
+            //     chunkForm.append('videoId', videoId);
+            //     console.log("added videoId");   
 
-            }
+            // }
             chunkForm.append('file', chunk);
             console.log("added file");
 
@@ -58,6 +60,7 @@
             //created the chunk, now upload iit
             uploadChunk(chunkForm, start, chunkEnd);
         }
+        
 // Загрузка куска
 // Давайте пройдитесь по функции uploadChunk:
 function uploadChunk(chunkForm, start, chunkEnd){
@@ -68,7 +71,7 @@ function uploadChunk(chunkForm, start, chunkEnd){
             var contentRange = "bytes "+ start+"-"+ blobEnd+"/"+file.size;
             oReq.setRequestHeader("Content-Range",contentRange);
             console.log("Content-Range", contentRange);
-
+// }
             // Заголовок будет выглядеть так:
             // Content-Range: bytes 0-999999/4582884
 
@@ -108,14 +111,15 @@ function uploadChunk(chunkForm, start, chunkEnd){
                             }
                             else{
                                 //the video is fully uploaded. there will now be a url in the response
-                                playerUrl = resp.assets.player;
+                                // playerUrl = resp.assets.player;
                                 console.log("all uploaded! Watch here: ",playerUrl ) ;
                                 document.getElementById("video-information").innerHTML = "all uploaded! Watch the video <a href=\'" + playerUrl +"\' target=\'_blank\'>here</a>" ;
                             }
 
               };
-              oReq.send(chunkForm);
 
+              oReq.send(chunkForm);}
+});
       </script>
 </body>
 </html>
