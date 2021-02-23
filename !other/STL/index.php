@@ -13,6 +13,9 @@
 //  echo memory_get_peak_usage() , "<br>";
 include  dirname(__DIR__)."/sitepoint-performant-reading-of-big-files-in-php-master/memory.php";
 echo "<br>";
+require "classes_stl/class_generator.php"; 
+class_generator::gen();
+
  ?>
 <script>obj= <?php echo include "ReadSTL.php"; ?>; 
 function forEach(data, callback){
