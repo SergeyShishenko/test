@@ -126,6 +126,12 @@ class class_CNC
     private $arrStr ; 
 
     /**
+	 * Массив существующих инструментов W#81 - диаметр сверла: #1002=8  и тип: #1001=1 сквозное/глухое  1/0
+	 * @var Array $arrStr
+	 */
+    private $arrToolsW81Side1 = array('4:1','5:1','5:0','8:1','8:0','10:0','15:0','18:0','20:0','35:0') ; 
+
+    /**
 	 *Второй разделитель
 	 * @var String $mod для findVal
 	 */ 
@@ -495,6 +501,20 @@ class class_CNC
            ."<span class='numerr warning' data-tooltip='w".$numerr."'>{Предупреждение #".$numerr."} &Oslash; ".$diam."; X ".$x."; Y ".$y." </span><span id='warning'> &#9888;</span> <br>"; 
         //    return true;
         }
+        if ($diam >= 4 ){
+            // Массив существующих инструментов W#81 - диаметр сверла: #1002=8  и тип: #1001=1 сквозное/глухое  1/0
+            $in=$diam.':'.$this->findVal($this->$arrStr[$i],"#1001");
+          if(!in_array($in, $this->arrToolsW81Side1)) {
+
+            $numerr="2";
+            if ($this->findVal($this->$arrStr[$i],"#1001")=== "0" ) {$through=' глухое ';}else{$through=' сквозное '; } 
+            $this->warning.= "Поверхность ".substr($this->currentBlock, -2,1) 
+            .", стр. ". $this->currentRow 
+            ."<span class='numerr warning' data-tooltip='w".$numerr."'>{Предупреждение #".$numerr."} &Oslash; ".$diam." -".$through."; Нет такого инструмента </span><span id='warning'> &#9888;</span> <br>"; 
+
+          }
+        }
+        
         
         // return false;
     }

@@ -29,6 +29,9 @@ let tooltipElem;
         case 'w1':  
         tooltipHtml = "Отверстие слишком близко к кромки детали";
           break;      
+        case 'w2':  
+        tooltipHtml = "Предупреждение #2: Инструмент не найден";
+          break;      
         // default:
         //     tooltipHtml = "?";
         //   break
