@@ -25,7 +25,7 @@
       var chunkCounter = 0;
       //break into 1 MB chunks for demo purposes
       const chunkSize = 100;  
-      var videoId = "";
+      var sessId = "";
       var playerUrl = "";
 
 // Далее мы создаем EventListener на входе - когда файл добавляется, разделить файл и начать процесс загрузки:
@@ -36,25 +36,25 @@
         document.getElementById("video-information").innerHTML = "Будет загруженно " + numberofChunks + " кусков из "+file.size
         var start =0; 
         var chunkEnd = start + chunkSize;
-        //upload the first chunk to get the videoId
-        createChunk(videoId, start);
+        //upload the first chunk to get the sessId
+        createChunk(sessId, start);
     //   });
         // Теперь мы называем функцию createChunk.
-        function createChunk(videoId, start, end){
+        function createChunk(sessId, start, end){
             chunkCounter++;
-            console.log("created chunk: ", chunkCounter);
+            console.log("Создан кусок: ", chunkCounter);
             chunkEnd = Math.min(start + chunkSize , file.size );
             const chunk = file.slice(start, chunkEnd);
-            console.log("i created a chunk of video" + start + "-" + chunkEnd + "minus 1    ");
+            console.log("Создан кусок файла" + start + "-" + chunkEnd + "минус 1    ");
             const chunkForm = new FormData();
-            // if(videoId.length >0){
-            //     //we have a videoId
-            //     chunkForm.append('videoId', videoId);
-            //     console.log("added videoId");   
+            // if(sessId.length >0){
+            //     //we have a sessId
+            //     chunkForm.append('sessId', sessId);
+            //     console.log("added sessId");   
 
             // }
             chunkForm.append('file', chunk);
-            console.log("added file");
+            console.log("добавлен файл");
 
 
             //created the chunk, now upload iit
@@ -68,9 +68,9 @@ function uploadChunk(chunkForm, start, chunkEnd){
             oReq.upload.addEventListener("progress", updateProgress);   
             oReq.open("POST", url, true);
             var blobEnd = chunkEnd-1;
-            var contentRange = "bytes "+ start+"-"+ blobEnd+"/"+file.size;
-            oReq.setRequestHeader("Content-Range",contentRange);
-            console.log("Content-Range", contentRange);
+            var contentRange = "байтов "+ start+"-"+ blobEnd+"/"+file.size;
+            // oReq.setRequestHeader("Content-Range",contentRange);
+            // console.log("Content-Range", contentRange);
 // }
             // Заголовок будет выглядеть так:
             // Content-Range: bytes 0-999999/4582884
@@ -81,11 +81,11 @@ function uploadChunk(chunkForm, start, chunkEnd){
                 var percentComplete = Math.round(oEvent.loaded / oEvent.total * 100);
 
                 var totalPercentComplete = Math.round((chunkCounter -1)/numberofChunks*100 +percentComplete/numberofChunks);
-                document.getElementById("chunk-information").innerHTML = "Chunk # " + chunkCounter + " is " + percentComplete + "% uploaded. Total uploaded: " + totalPercentComplete +"%";
+                document.getElementById("chunk-information").innerHTML = "Кусок # " + chunkCounter + " is " + percentComplete + "% закачанный. Всего загружено: " + totalPercentComplete +"%";
             //  console.log (percentComplete);
                 // ...
               } else {
-                  console.log ("not computable");
+                  console.log ("не совместимо");
                 // Unable to compute progress information since the total size is unknown
               }
             }
@@ -93,12 +93,12 @@ function uploadChunk(chunkForm, start, chunkEnd){
             // Как только кусок полностью загружен, мы запускаем следующий код (в случае загрузки).
             oReq.onload = function (oEvent) {
                            // Uploaded.
-                            console.log("uploaded chunk" );
+                            console.log("загруженный кусок" );
                             console.log("oReq.response", oReq.response);
                             var resp = JSON.parse(oReq.response)
-                            videoId = resp.videoId;
+                            sessId = resp.sessId;
                             //playerUrl = resp.assets.player;
-                            console.log("videoId",videoId);
+                            console.log("sessId",sessId);
 
                             //now we have the video ID - loop through and add the remaining chunks
                             //we start one chunk in, as we have uploaded the first one.
@@ -107,7 +107,7 @@ function uploadChunk(chunkForm, start, chunkEnd){
                             //if start is smaller than file size - we have more to still upload
                             if(start<file.size){
                                 //create the new chunk
-                                createChunk(videoId, start);
+                                createChunk(sessId, start);
                             }
                             else{
                                 //the video is fully uploaded. there will now be a url in the response
