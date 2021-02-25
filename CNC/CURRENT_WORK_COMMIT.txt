@@ -4,4 +4,6 @@
     ИЗМЕНЕНИЯ: 
     CNC\index.php
     CNC\classes_cnc\class_CNC.php
-    CNC\js\tooltip.js        
+    CNC\js\tooltip.js  
+
+    site - обновил 25.02.21      
