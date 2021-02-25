@@ -17,12 +17,12 @@ $deny = array(
  
 // Директория куда будут загружаться файлы.
 // уникальное имя папки
-$rand_folder=rand();
+$rand_folder=rand().rand().rand();
 // $rand_folder=1;
 
-$path = __DIR__ . '/uploads/'.$rand_folder.'/';
+// $path = __DIR__ . '/uploads/'.$rand_folder.'/';
 
-mkdir($path, 0777, true);				
+// mkdir($path, 0777, true);				
 
 
 $data = array();
@@ -72,14 +72,14 @@ if (!isset($_FILES[$input_name])) {
 			} else {
 				// Перемещаем файл в директорию.
 			
-			
+				$success = 'Файл «' . $name . '» успешно прочитан.';
 
-				if (move_uploaded_file($file['tmp_name'], $path . $name)) {
-					// Далее можно сохранить название файла в БД и т.п.
-					$success = 'Файл «' . $name . '» успешно загружен.';
-				} else {
-					$error = 'Не удалось загрузить файл.';
-				}
+				// if (move_uploaded_file($file['tmp_name'], $path . $name)) {
+				// 	// Далее можно сохранить название файла в БД и т.п.
+				// 	$success = 'Файл «' . $name . '» успешно загружен.';
+				// } else {
+				// 	$error = 'Не удалось загрузить файл.';
+				// }
 			}
 		}
 		
@@ -94,7 +94,8 @@ if (!isset($_FILES[$input_name])) {
 	// $data[] = $path;
 }
  
-// Вывод сообщений о результате загрузки.
-header('Content-Type: application/json');
+// // Вывод сообщений о результате загрузки.
+// header('Content-Type: application/json');
 echo json_encode($data, JSON_UNESCAPED_UNICODE);
-exit();
+
+// exit();
