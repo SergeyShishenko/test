@@ -93,7 +93,11 @@ if (!isset($_FILES[$input_name])) {
 	$data["sessId"] = $rand_folder;
 	// $data[] = $path;
 }
- 
+ // ждать 2 секунды
+// usleep(2000000);
+
+usleep(100);
+
 // // Вывод сообщений о результате загрузки.
 // header('Content-Type: application/json');
 echo json_encode($data, JSON_UNESCAPED_UNICODE);
