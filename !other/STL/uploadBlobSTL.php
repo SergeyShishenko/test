@@ -84,10 +84,10 @@ if (!isset($_FILES[$input_name])) {
 		}
 		
 		if (!empty($success)) {
-			$data[] = '<p style="color: green">' . $success . '</p>';  
+			$data[] = $success ;  
 		}
 		if (!empty($error)) {
-			$data[] = '<p style="color: red">' . $error . '</p>';  
+			$data[] = $error ;  
 		}
 	}
 	$data["sessId"] = $rand_folder;
@@ -96,10 +96,12 @@ if (!isset($_FILES[$input_name])) {
  // ждать 2 секунды
 // usleep(2000000);
 
-usleep(100);
+// usleep(1000);
 
 // // Вывод сообщений о результате загрузки.
-// header('Content-Type: application/json');
+// net::ERR_CONNECTION_RESET ОШИБКА!
+header('Content-Type: application/json');
 echo json_encode($data, JSON_UNESCAPED_UNICODE);
-
 // exit();
+?>
+

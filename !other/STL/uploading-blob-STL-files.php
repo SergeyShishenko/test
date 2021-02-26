@@ -16,8 +16,9 @@
 
 
     <br>
-    <div id="video-information" style="width: 50%"></div>
+
     <div id="chunk-information" style="width: 50%"></div>
+    <div id="video-information" style="width: 50%"></div>
 
     <script>
     // Далее на странице находится раздел сценария - и вот где тяжелая атлетика будет происходить.
@@ -32,51 +33,55 @@
     var file;
     var numberofChunks;
     var start = 0;
+    let dend, dstart;
     // Далее мы создаем EventListener на входе - когда файл добавляется, разделить файл и начать процесс загрузки:
     input.addEventListener('change', () => {
-       file = input.files[0];
+        dstart = new Date();
+        file = input.files[0];
 
         // var numberofChunks = Math.ceil(file.size/chunkSize);
         numberofChunks = (file.size - 84) / 200 + 1;
         document.getElementById("video-information").innerHTML = "Будет загруженно " + numberofChunks +
             " кусков из " + file.size
-        
+
         var chunkEnd = start + chunkSize;
         //upload the first chunk to get the sessId
         createChunk();
         // var chunkSize = 50;
         //   });
-      
+
     });
 
-      // Теперь мы называем функцию createChunk.
-      function createChunk() {
-            chunkCounter++;
-            console.log("Создан кусок: ", chunkCounter);
-            chunkEnd = Math.min(start + chunkSize, file.size);
-            
-            var chunk = file.slice(start, chunkEnd);
-            console.log("Создан кусок файла " + start + "-" + chunkEnd + " минус 1    ");
-            var chunkForm = new FormData();
-            // if(sessId.length >0){
-            //     //we have a sessId
-            //     chunkForm.append('sessId', sessId);
-            //     console.log("added sessId");   
+    // Теперь мы называем функцию createChunk.
+    function createChunk() {
+        chunkCounter++;
+        console.log("Создан кусок: ", chunkCounter);
+        chunkEnd = Math.min(start + chunkSize, file.size);
 
-            // }
-            chunkForm.append('file', chunk);
-            console.log("Кусок добавлен");
-            chunkSize = 200;
-            
+        var chunk = file.slice(start, chunkEnd);
+        console.log("Создан кусок файла " + start + "-" + chunkEnd + " минус 1    ");
+        var chunkForm = new FormData();
+        // if(sessId.length >0){
+        //     //we have a sessId
+        //     chunkForm.append('sessId', sessId);
+        //     console.log("added sessId");   
 
-            //created the chunk, now upload iit
-            uploadChunk(chunkForm,  chunkEnd);
-            if (chunkEnd == 84){start=-116;}
-            // chunkSize=50;
+        // }
+        chunkForm.append('file', chunk);
+        console.log("Кусок добавлен");
+        chunkSize = 200;
+
+
+        //created the chunk, now upload iit
+        uploadChunk(chunkForm, chunkEnd);
+        if (chunkEnd == 84) {
+            start = -116;
         }
+        // chunkSize=50;
+    }
     // Загрузка куска
 
-    function uploadChunk(chunkForm,  chunkEnd) {
+    function uploadChunk(chunkForm, chunkEnd) {
         var oReq = new XMLHttpRequest();
         oReq.upload.addEventListener("progress", updateProgress);
         oReq.open("POST", url, true);
@@ -91,10 +96,10 @@
 
                 var totalPercentComplete = Math.round((chunkCounter - 1) / numberofChunks * 100 +
                     percentComplete / numberofChunks);
-                document.getElementById("chunk-information").innerHTML = "Кусок # " + chunkCounter + " - " +
-                    percentComplete + "% закачанный. Всего загружено: " + totalPercentComplete + "%";
-                //  console.log (percentComplete);
-                // ...
+                document.getElementById("chunk-information").innerHTML = "Кусок # " + chunkCounter + ". " +
+                    // percentComplete + "% закачан.
+                    "Загружено: " + totalPercentComplete + "%";
+
             } else {
                 console.log("не совместимо");
                 // Unable to compute progress information since the total size is unknown
@@ -121,7 +126,15 @@
 
                 // console.log("all uploaded! Watch here: ",playerUrl ) ;
                 // document.getElementById("video-information").innerHTML = "all uploaded! Watch the video <a href=\'" + playerUrl +"\' target=\'_blank\'>here</a>" ;
-                document.getElementById("video-information").innerHTML = "Всё загруженно!";
+                    for (let i = 0; i < 1000; i++) {
+                    Math.sqrt(i);
+                    }
+                dend = new Date();
+                let duration=dend.getTime() - dstart.getTime();
+                console.log(duration+' ms');
+                document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(duration);
+
+                
             }
 
         };
@@ -129,6 +142,23 @@
         oReq.send(chunkForm);
     }
     // });
+
+    function msToTime(duration) {
+        var milliseconds = parseInt((duration % 1000) / 100),
+            seconds = Math.floor((duration / 1000) % 60),
+            minutes = Math.floor((duration / (1000 * 60)) % 60),
+            hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+
+        hours = (hours < 10) ? "0" + hours : hours;
+        minutes = (minutes < 10) ? "0" + minutes : minutes;
+        seconds = (seconds < 10) ? "0" + seconds : seconds;
+
+        return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
+    }
+    // console.log(msToTime(300000))
+
+    // millisToMinutesAndSeconds(298999); // "4:59"
+    // millisToMinutesAndSeconds(60999);  // "1:01"
     </script>
 </body>
 
