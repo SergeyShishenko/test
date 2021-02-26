@@ -17,7 +17,7 @@ $deny = array(
  
 // Директория куда будут загружаться файлы.
 // уникальное имя папки
-$rand_folder=rand().rand().rand();
+$rand_folder=rand();
 // $rand_folder=1;
 
 // $path = __DIR__ . '/uploads/'.$rand_folder.'/';
@@ -72,7 +72,7 @@ if (!isset($_FILES[$input_name])) {
 			} else {
 				// Перемещаем файл в директорию.
 			
-				$success = 'Файл «' . $name . '» успешно прочитан.';
+				$success = 'Кусок «' . $name . '» успешно прочитан: '. $_POST['fname']." (".$file['size']." байт)";
 
 				// if (move_uploaded_file($file['tmp_name'], $path . $name)) {
 				// 	// Далее можно сохранить название файла в БД и т.п.

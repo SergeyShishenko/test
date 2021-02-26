@@ -45,13 +45,13 @@
     const input = document.querySelector('#video-url-example');
     var elem = document.getElementById("greenBar");
 
-    // const url = "uploadBlobSTL.php"
-    const url = "uploadBlobSTLwrite.php"
+    const url = "uploadBlobSTL.php"
+    // const url = "uploadBlobSTLwrite.php"
     var chunkCounter = 0;
     //break into 1 MB chunks for demo purposes
     var chunkSize = 84;
     var sessId = "";
-    var playerUrl = "";
+    // var playerUrl = "";
     var file;
     var numberofChunks;
     var start = 0;
@@ -60,6 +60,9 @@
     const chunkSize84 = chunkSize50 - 84;
     // Далее мы создаем EventListener на входе - когда файл добавляется, разделить файл и начать процесс загрузки:
     input.addEventListener('change', () => {
+        start = 0;
+        chunkSize = 84;
+        chunkCounter = 0;
         dstart = new Date();
         file = input.files[0];
 
@@ -93,6 +96,8 @@
 
         // }
         chunkForm.append('file', chunk);
+        chunkForm.append('fname', file.name);
+        // console.log(file.name);
         console.log("Кусок добавлен");
         chunkSize = chunkSize50;
 
