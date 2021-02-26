@@ -6,24 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Загрузка файла STL</title>
+    <style>
+    #greyProgress {
+        /* width: 100%; */
+        width: 30%;
+        background-color: #ddd;
+    }
+
+    #greenBar {
+        width: 10%;
+        height: 30px;
+        background-color: #4CAF50;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+    }
+    </style>
 </head>
 
 <body>
-    <br>
+
+    
     <input type="file" id="video-url-example">
     <br>
-
-
-
+<br>
+    <div id="greyProgress">
+        <div id="greenBar">0%</div>
+    </div>
     <br>
-
-    <div id="chunk-information" style="width: 50%"></div>
+    
+    <div id="video-information1" style="width: 50%"></div>
     <div id="video-information" style="width: 50%"></div>
+    <div id="chunk-information" style="width: 50%"></div>
+
 
     <script>
     // Далее на странице находится раздел сценария - и вот где тяжелая атлетика будет происходить.
     const input = document.querySelector('#video-url-example');
-    
+    var elem = document.getElementById("greenBar");
+
     // const url = "uploadBlobSTL.php"
     const url = "uploadBlobSTLwrite.php"
     var chunkCounter = 0;
@@ -35,7 +56,7 @@
     var numberofChunks;
     var start = 0;
     let dend, dstart;
-    const chunkSize50 = 50000000;
+    const chunkSize50 = 50000000/2;
     const chunkSize84 = chunkSize50 - 84;
     // Далее мы создаем EventListener на входе - когда файл добавляется, разделить файл и начать процесс загрузки:
     input.addEventListener('change', () => {
@@ -43,9 +64,10 @@
         file = input.files[0];
 
         // var numberofChunks = Math.ceil(file.size/chunkSize);
-        numberofChunks = (file.size - 84) / chunkSize50 + 1;
-        document.getElementById("video-information").innerHTML = "Будет загруженно " + numberofChunks +
-            " кусков из " + file.size
+        numberofChunks = Math.ceil((file.size - 84) / chunkSize50 + 1);
+        document.getElementById("video-information1").innerHTML = file.size + " байт поделено на " +
+            numberofChunks +
+            " куска."
 
         var chunkEnd = start + chunkSize;
         //upload the first chunk to get the sessId
@@ -90,7 +112,7 @@
         oReq.open("POST", url, true);
         var blobEnd = chunkEnd - 1;
         var contentRange = "байтов " + start + " - " + blobEnd + "/" + file.size;
-
+        console.log(contentRange);
 
         // загрузить обновления прогресса
         function updateProgress(oEvent) {
@@ -99,14 +121,16 @@
 
                 var totalPercentComplete = Math.round((chunkCounter - 1) / numberofChunks * 100 +
                     percentComplete / numberofChunks);
-                document.getElementById("chunk-information").innerHTML = "Кусок # " + chunkCounter + ". " +
-                    // percentComplete + "% закачан.
-                    "Загружено: " + totalPercentComplete + "%";
+                // document.getElementById("chunk-information").innerHTML = "Кусок # " + chunkCounter + ". " +
+                //     // percentComplete + "% закачан.
+                //     "Загружено: " + totalPercentComplete + "%";
+                    Pssbar(totalPercentComplete) ;
 
             } else {
                 console.log("не совместимо");
                 // Unable to compute progress information since the total size is unknown
             }
+
         }
 
         // Как только кусок полностью загружен, мы запускаем следующий код (в случае загрузки).
@@ -129,15 +153,16 @@
 
                 // console.log("all uploaded! Watch here: ",playerUrl ) ;
                 // document.getElementById("video-information").innerHTML = "all uploaded! Watch the video <a href=\'" + playerUrl +"\' target=\'_blank\'>here</a>" ;
-                    for (let i = 0; i < 1000; i++) {
+                for (let i = 0; i < 1000; i++) {
                     Math.sqrt(i);
-                    }
+                }
                 dend = new Date();
-                let duration=dend.getTime() - dstart.getTime();
-                console.log(duration+' ms');
-                document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(duration);
+                let duration = dend.getTime() - dstart.getTime();
+                console.log(duration + ' ms');
+                document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(
+                    duration);
 
-                
+
             }
 
         };
@@ -162,6 +187,11 @@
 
     // millisToMinutesAndSeconds(298999); // "4:59"
     // millisToMinutesAndSeconds(60999);  // "1:01"
+
+    function Pssbar(pr) {
+        elem.style.width = pr + '%'; 
+        elem.innerHTML = pr * 1  + '%';
+    }
     </script>
 </body>
 
