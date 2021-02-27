@@ -90,7 +90,15 @@ if (!isset($_FILES[$input_name])) {
 			$data[] = $error ;  
 		}
 	}
-	$data["sessId"] = $rand_folder;
+
+	if (!empty($success)) {
+			
+		include "ReadSTL_blob.php";
+		$data["sessId"] = $rand_folder;
+				
+	}
+
+	
 	// $data[] = $path;
 }
  // ждать 2 секунды
