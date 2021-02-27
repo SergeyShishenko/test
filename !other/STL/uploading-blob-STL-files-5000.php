@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="stl.png" type="image/x-icon"> 
     <title>Загрузка файла STL</title>
     <style>
     #greyProgress {
@@ -14,13 +15,73 @@
     }
 
     #greenBar {
-        width: 10%;
+        width: 50%;
         height: 30px;
-        background-color: #4CAF50;
+        background: green;
         text-align: center;
         line-height: 30px;
         color: white;
+      
+        
     }
+ 
+
+
+
+.meter > div {
+  display: block;
+  height: 30%;
+  
+  position: relative;
+  overflow: hidden;
+}
+.meter > div:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+    
+
+
+
+
+
+
+}
+    
     </style>
 </head>
 
@@ -30,8 +91,8 @@
     <input type="file" id="video-url-example">
     <br>
 <br>
-    <div id="greyProgress">
-        <div id="greenBar">0%</div>
+    <div id="greyProgress" class="meter">
+        <div id="greenBar"></div>
     </div>
     <br>
     
