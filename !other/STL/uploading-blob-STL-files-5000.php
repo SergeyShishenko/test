@@ -15,7 +15,7 @@
     }
 
     #greenBar {
-        width: 50%;
+        width: 0%;
         height: 30px;
         background: green;
         text-align: center;
@@ -91,7 +91,7 @@
     <input type="file" id="video-url-example">
     <br>
 <br>
-    <div id="greyProgress" class="meter">
+    <div id="greyProgress" class="">
         <div id="greenBar"></div>
     </div>
     <br>
@@ -103,6 +103,7 @@
 
     <script>
     // Далее на странице находится раздел сценария - и вот где тяжелая атлетика будет происходить.
+    var greyProgress = document.getElementById("greyProgress");
     const input = document.querySelector('#video-url-example');
     var elem = document.getElementById("greenBar");
 
@@ -121,6 +122,8 @@
     const chunkSize84 = chunkSize50 - 84;
     // Далее мы создаем EventListener на входе - когда файл добавляется, разделить файл и начать процесс загрузки:
     input.addEventListener('change', () => {
+        greyProgress.classList.add("meter"); // добавить класс 
+        document.getElementById("video-information").innerHTML="";
         start = 0;
         chunkSize = 84;
         chunkCounter = 0;
@@ -131,7 +134,7 @@
         numberofChunks = Math.ceil((file.size - 84) / chunkSize50 + 1);
         document.getElementById("video-information1").innerHTML = file.size + " байт поделено на " +
             numberofChunks +
-            " куска."
+            " частей."
 
         var chunkEnd = start + chunkSize;
         //upload the first chunk to get the sessId
@@ -144,11 +147,11 @@
     // Теперь мы называем функцию createChunk.
     function createChunk() {
         chunkCounter++;
-        console.log("Создан кусок: ", chunkCounter);
+        console.log("Создана часть: ", chunkCounter);
         chunkEnd = Math.min(start + chunkSize, file.size);
 
         var chunk = file.slice(start, chunkEnd);
-        console.log("Создан кусок файла " + start + "-" + chunkEnd + " минус 1    ");
+        console.log("Создан часть файла " + start + "-" + chunkEnd + " минус 1    ");
         var chunkForm = new FormData();
         // if(sessId.length >0){
         //     //we have a sessId
@@ -159,7 +162,7 @@
         chunkForm.append('file', chunk);
         chunkForm.append('fname', file.name);
         // console.log(file.name);
-        console.log("Кусок добавлен");
+        console.log("часть добавлен");
         chunkSize = chunkSize50;
 
 
@@ -187,9 +190,9 @@
 
                 var totalPercentComplete = Math.round((chunkCounter - 1) / numberofChunks * 100 +
                     percentComplete / numberofChunks);
-                // document.getElementById("chunk-information").innerHTML = "Кусок # " + chunkCounter + ". " +
-                //     // percentComplete + "% закачан.
-                //     "Загружено: " + totalPercentComplete + "%";
+                document.getElementById("chunk-information").innerHTML = "Загрузка части #" + chunkCounter + ": " +
+                    percentComplete + "%.";
+                    // "Загружено: " + totalPercentComplete + "%";
                     Pssbar(totalPercentComplete) ;
 
             } else {
@@ -199,10 +202,10 @@
 
         }
 
-        // Как только кусок полностью загружен, мы запускаем следующий код (в случае загрузки).
+        // Как только часть полностью загружен, мы запускаем следующий код (в случае загрузки).
         oReq.onload = function(oEvent) {
             // Uploaded.
-            console.log("загруженный кусок");
+            console.log("загруженная часть");
             console.log("oReq.response", oReq.response);
             var resp = JSON.parse(oReq.response)
             sessId = resp.sessId;
@@ -225,10 +228,13 @@
                 dend = new Date();
                 let duration = dend.getTime() - dstart.getTime();
                 console.log(duration + ' ms');
+                document.getElementById("chunk-information").innerHTML ="";
                 document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(
                     duration);
 
-
+                    
+                        // greyProgress.classList.add("class-name"); // добавить класс 
+                        greyProgress.classList.remove("meter"); // удалить класс 
             }
 
         };
