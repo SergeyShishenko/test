@@ -14,31 +14,36 @@ if ($file['size']==84){
     // $data["content"] =  $chunk. " по 50 байт";return;
     // $arrTriangles[];
     for ($j = 1; $j <= $chunk; $j++){
-        $arrTriangles[$j]['num'] = "Треугольник - $j"; 
+        // $arrTriangles[$j]['num'] = "Треугольник - $j"; 
         $NormalX=unpack('f', fread($handle, 4))[1];
         $NormalY=unpack('f', fread($handle, 4))[1];
         $NormalZ=unpack('f', fread($handle, 4))[1];
-        $arrTriangles[$j]['normal'] = "Нормаль: " . $NormalX . " " . $NormalY . " " . $NormalZ ;
-        $arrTriangles[$j]['colinear'] =  "Колинеарность: ". checkColinear($NormalX, $NormalY, $NormalZ) ;
-        $arrTriangles[$j]['directional'] = "Сонаправленность: ". directional($NormalX, $NormalY, $NormalZ);
+        // $arrTriangles[$j]['normal'] = "Нормаль: " . $NormalX . " " . $NormalY . " " . $NormalZ ;
+        $arrTriangles[$j]['normal'] = [$NormalX , $NormalY , $NormalZ ] ;
+        // $arrTriangles[$j]['colinear'] =  "Колинеарность: ". checkColinear($NormalX, $NormalY, $NormalZ) ;
+        // $arrTriangles[$j]['directional'] = "Сонаправленность: ". directional($NormalX, $NormalY, $NormalZ);
+        $arrTriangles[$j]['directional'] = directional($NormalX, $NormalY, $NormalZ);
 
         $Vertex_1_X=unpack('f', fread($handle, 4))[1];
         $Vertex_1_Y=unpack('f', fread($handle, 4))[1];
         $Vertex_1_Z=unpack('f', fread($handle, 4))[1];
         $arrVert1=[$Vertex_1_X, $Vertex_1_Y, $Vertex_1_Z];
-        $arrTriangles[$j]['vertex1'] = "Вершина1: " . $Vertex_1_X . " " . $Vertex_1_Y. " " . $Vertex_1_Z;
+        // $arrTriangles[$j]['vertex1'] = "Вершина1: " . $Vertex_1_X . " " . $Vertex_1_Y. " " . $Vertex_1_Z;
+        $arrTriangles[$j]['vertex1'] = $arrVert1;
 
         $Vertex_2_X=unpack('f', fread($handle, 4))[1];
         $Vertex_2_Y=unpack('f', fread($handle, 4))[1];
         $Vertex_2_Z=unpack('f', fread($handle, 4))[1];
         $arrVert2=[$Vertex_2_X ,$Vertex_2_Y, $Vertex_2_Z];
-        $arrTriangles[$j]['vertex2'] =  "Вершина2: " . $Vertex_2_X . " " . $Vertex_2_Y. " " . $Vertex_2_Z;
+        // $arrTriangles[$j]['vertex2'] =  "Вершина2: " . $Vertex_2_X . " " . $Vertex_2_Y. " " . $Vertex_2_Z;
+        $arrTriangles[$j]['vertex2'] =  $arrVert2 ;
 
         $Vertex_3_X=unpack('f', fread($handle, 4))[1];
         $Vertex_3_Y=unpack('f', fread($handle, 4))[1];
         $Vertex_3_Z=unpack('f', fread($handle, 4))[1];
         $arrVert3=[$Vertex_3_X, $Vertex_3_Y, $Vertex_3_Z];
-        $arrTriangles[$j]['vertex3'] =  "Вершина3: " . $Vertex_3_X . " " . $Vertex_3_Y. " " . $Vertex_3_Z;
+        // $arrTriangles[$j]['vertex3'] =  "Вершина3: " . $Vertex_3_X . " " . $Vertex_3_Y. " " . $Vertex_3_Z;
+        $arrTriangles[$j]['vertex3'] =  $arrVert3;
         
         unpack('s', fread($handle, 2))[1]; // END
         // echo unpack('s', fread($handle, 2))[1]. "<br>";
@@ -88,16 +93,43 @@ function checkColinear($ax, $ay, $az){
      } 
    
 }
-// сонаправленные векторы
+// сонаправленные векторы Front, Back, Top, Bottom, Left, Right, General
 function directional($ax, $ay, $az){
-    $bx =0; $by=0; $bz=-1;
+    $bx =0; $by=0; $bz=-1; // Bottom
     $directional=$ax*$bx + $ay*$by + $az*$bz;
-    if ($directional>0) {
-       return "Yes"; 
-    } else{
-        return "No"; 
+    if ($directional > 0) {
+       return "Bottom"; 
     } 
-    
+    $bx =0; $by=0; $bz=1; // Top
+    $directional=$ax*$bx + $ay*$by + $az*$bz;
+    if ($directional > 0) {
+       return "Top"; 
+    } 
+      
+    $bx =0; $by=1; $bz=0; // Front
+    $directional=$ax*$bx + $ay*$by + $az*$bz;
+    if ($directional > 0) {
+       return "Front"; 
+    } 
+
+    $bx =0; $by=-1; $bz=0; // Back
+    $directional=$ax*$bx + $ay*$by + $az*$bz;
+    if ($directional > 0) {
+       return "Back"; 
+    } 
+
+    $bx =-1; $by=0; $bz=0; // Left
+    $directional=$ax*$bx + $ay*$by + $az*$bz;
+    if ($directional > 0) {
+       return "Left"; 
+    } 
+    $bx =1; $by=0; $bz=0; // Right
+    $directional=$ax*$bx + $ay*$by + $az*$bz;
+    if ($directional > 0) {
+       return "Right"; 
+    } 
+      
+    return "General"; 
 }
 
 

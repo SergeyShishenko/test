@@ -100,6 +100,7 @@
     <div id="video-information" style="width: 50%"></div>
     <div id="chunk-information" style="width: 50%"></div>
     <div id="response-information" style="width: 50%">Загрузите файл STL</div>
+    <div id="info3" style="width: 50%"></div>
 
 
     <script>
@@ -109,6 +110,7 @@
     var elem = document.getElementById("greenBar");
     var respinfo = document.getElementById("response-information");
     var info1 = document.getElementById("video-information1");
+    var info3 = document.getElementById("info3");
 
     const url = "uploadBlobSTL.php"
     // const url = "uploadBlobSTLwrite.php"
@@ -220,6 +222,7 @@
                      totalArea += resp.totalarea ;
                     // respinfo.insertAdjacentHTML('beforeend',"Площадь поверхности: " + parseFloat((resp.totalarea / 1000000).toFixed(3)) +" м&sup2<br>");
                     respinfo.innerHTML = "Площадь поверхности: " + parseFloat((totalArea / 1000000).toFixed(3)) +" м&sup2";
+                    forEach(resp, fcallback)
                 }else{
                     info1.insertAdjacentHTML('beforeend'," Triangles: " + resp.head);
                 }
@@ -279,6 +282,70 @@
         elem.style.width = pr + '%'; 
         elem.innerHTML = pr * 1  + '%';
     }
+
+    function forEach(data, callback) {
+            for (var key in data) {
+                if (data.hasOwnProperty(key)) {
+                    callback(key, data[key]);
+                }
+            }
+        }
+
+        function fcallback(key, value) {
+            if (key == "data") {
+
+                
+
+                // if (data.hasOwnProperty(key)) {
+                //     callback(key, data[key]);
+                // info3.insertAdjacentHTML('beforeend',key + ': ' + data2 + "<BR>");
+                info3.insertAdjacentHTML('beforeend',key +" : " + value + "<BR>");
+                info3.insertAdjacentHTML('beforeend',Object.keys(value).length+ "<BR>");
+                info3.insertAdjacentHTML('beforeend',value[1]['normal']+ "<BR>");
+                info3.insertAdjacentHTML('beforeend',value[1]['normal'][0]+ "<BR>");
+                info3.insertAdjacentHTML('beforeend',value[1]['normal'][1]+ "<BR>");
+                info3.insertAdjacentHTML('beforeend',value[1]['normal'][2]+ "<BR>");
+                // value.forEach(function(item, i, arr) {	
+                //     info3.insertAdjacentHTML('beforeend',value[item]['normal'] + "<BR>");
+                // }
+                // );
+                // info3.insertAdjacentHTML('beforeend',(key + ': ' +
+                //     "<br>" +
+                //     '..normal: ' +
+                //     // value['normal'][0] + " " + value['normal'][1] + " " + value['normal'][2] + "<br>" +
+                //     value['normal'] +"<br>" +
+                //     // '..колинеарно: ' + value['colinear'] + "<br>" +
+                //     '..соноправлен: ' + value['directional'] + "<br>" +
+                //     // '..вершина1: ' +
+                //     // value['vertex1'][0] + " " + value['vertex1'][1] + " " + value['vertex1'][2] + " <br>" +
+                //     // '..вершина2: ' +
+                //     // value['vertex2'][0] + " " + value['vertex2'][1] + " " + value['vertex2'][2] + " <br>" +
+                //     // '..вершина3: ' +
+                //     // value['vertex3'][0] + " " + value['vertex3'][1] + " " + value['vertex3'][2] + " <br>" +
+                //     '..площадь: ' + value['strain'] + " мм&sup2;<br>"
+                // ));
+
+                // }
+            
+
+                // info3.insertAdjacentHTML('beforeend',(key + ': ' +
+                //     "<br>" +
+                //     '..normal: ' +
+                //     // value['normal'][0] + " " + value['normal'][1] + " " + value['normal'][2] + "<br>" +
+                //     value['normal'] +"<br>" +
+                //     // '..колинеарно: ' + value['colinear'] + "<br>" +
+                //     '..соноправлен: ' + value['directional'] + "<br>" +
+                //     // '..вершина1: ' +
+                //     // value['vertex1'][0] + " " + value['vertex1'][1] + " " + value['vertex1'][2] + " <br>" +
+                //     // '..вершина2: ' +
+                //     // value['vertex2'][0] + " " + value['vertex2'][1] + " " + value['vertex2'][2] + " <br>" +
+                //     // '..вершина3: ' +
+                //     // value['vertex3'][0] + " " + value['vertex3'][1] + " " + value['vertex3'][2] + " <br>" +
+                //     '..площадь: ' + value['strain'] + " мм&sup2;<br>"
+                // ));
+
+            } 
+        }
     </script>
 </body>
 
