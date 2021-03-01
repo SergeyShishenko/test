@@ -99,6 +99,7 @@
     <div id="video-information1" style="width: 50%"></div>
     <div id="video-information" style="width: 50%"></div>
     <div id="chunk-information" style="width: 50%"></div>
+    <div id="response-information" style="width: 50%">Загрузите файл STL</div>
 
 
     <script>
@@ -106,6 +107,7 @@
     var greyProgress = document.getElementById("greyProgress");
     const input = document.querySelector('#video-url-example');
     var elem = document.getElementById("greenBar");
+    var respinfo = document.getElementById("response-information");
 
     const url = "uploadBlobSTL.php"
     // const url = "uploadBlobSTLwrite.php"
@@ -124,6 +126,7 @@
     input.addEventListener('change', () => {
         greyProgress.classList.add("meter"); // добавить класс 
         document.getElementById("video-information").innerHTML="";
+        respinfo.innerHTML="";
         start = 0;
         chunkSize = 84;
         chunkCounter = 0;
@@ -208,7 +211,12 @@
             console.log("загруженная часть");
             console.log("oReq.response", oReq.response);
             var resp = JSON.parse(oReq.response)
-            sessId = resp.sessId;
+            sessId = resp.sessId; 
+            // div.insertAdjacentHTML('afterend', '<p>Пока</p>');   
+            if (resp.hasOwnProperty('totalarea')) {
+                    respinfo.insertAdjacentHTML('beforeend',"Площадь поверхности: " + parseFloat((resp.totalarea / 1000000).toFixed(3)) +" м&sup2<br>");
+                }
+            
 
             console.log("sessId", sessId);
 
@@ -232,7 +240,7 @@
                 document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(
                     duration);
 
-                    
+                   
                         // greyProgress.classList.add("class-name"); // добавить класс 
                         greyProgress.classList.remove("meter"); // удалить класс 
             }
