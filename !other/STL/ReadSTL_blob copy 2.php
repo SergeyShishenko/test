@@ -6,44 +6,38 @@ if ($file['size']==84){
     fseek($handle,80);// пропускаем заголовок
     $content = unpack('i', fread($handle, 4));    
     fclose($handle);
-    // $data["head"] =  $content[1]. " треугольников";return; 
-    $data["head"] =  $content[1];return; 
+    $data["head"] =  $content[1]. " треугольников";return; 
 }else{
     $handle = fopen($file['tmp_name'], "rb");
     $chunk=$file['size']/50;
     // $data["content"] =  $chunk. " по 50 байт";return;
     // $arrTriangles[];
     for ($j = 1; $j <= $chunk; $j++){
-        // $arrTriangles[$j]['num'] = "Треугольник - $j"; 
+        $arrTriangles[$j]['num'] = "Треугольник - $j"; 
         $NormalX=unpack('f', fread($handle, 4))[1];
         $NormalY=unpack('f', fread($handle, 4))[1];
         $NormalZ=unpack('f', fread($handle, 4))[1];
-        // $arrTriangles[$j]['normal'] = "Нормаль: " . $NormalX . " " . $NormalY . " " . $NormalZ ;
-        $arrTriangles[$j]['normal'] = [$NormalX , $NormalY , $NormalZ ] ;
-        // $arrTriangles[$j]['colinear'] =  "Колинеарность: ". checkColinear($NormalX, $NormalY, $NormalZ) ;
-        // $arrTriangles[$j]['directional'] = "Сонаправленность: ". directional($NormalX, $NormalY, $NormalZ);
-        $arrTriangles[$j]['directional'] = checkColinear($NormalX, $NormalY, $NormalZ);
+        $arrTriangles[$j]['normal'] = "Нормаль: " . $NormalX . " " . $NormalY . " " . $NormalZ ;
+        $arrTriangles[$j]['colinear'] =  "Колинеарность: ". checkColinear($NormalX, $NormalY, $NormalZ) ;
+        $arrTriangles[$j]['directional'] = "Сонаправленность: ". directional($NormalX, $NormalY, $NormalZ);
 
         $Vertex_1_X=unpack('f', fread($handle, 4))[1];
         $Vertex_1_Y=unpack('f', fread($handle, 4))[1];
         $Vertex_1_Z=unpack('f', fread($handle, 4))[1];
         $arrVert1=[$Vertex_1_X, $Vertex_1_Y, $Vertex_1_Z];
-        // $arrTriangles[$j]['vertex1'] = "Вершина1: " . $Vertex_1_X . " " . $Vertex_1_Y. " " . $Vertex_1_Z;
-        $arrTriangles[$j]['vertex1'] = $arrVert1;
+        $arrTriangles[$j]['vertex1'] = "Вершина1: " . $Vertex_1_X . " " . $Vertex_1_Y. " " . $Vertex_1_Z;
 
         $Vertex_2_X=unpack('f', fread($handle, 4))[1];
         $Vertex_2_Y=unpack('f', fread($handle, 4))[1];
         $Vertex_2_Z=unpack('f', fread($handle, 4))[1];
         $arrVert2=[$Vertex_2_X ,$Vertex_2_Y, $Vertex_2_Z];
-        // $arrTriangles[$j]['vertex2'] =  "Вершина2: " . $Vertex_2_X . " " . $Vertex_2_Y. " " . $Vertex_2_Z;
-        $arrTriangles[$j]['vertex2'] =  $arrVert2 ;
+        $arrTriangles[$j]['vertex2'] =  "Вершина2: " . $Vertex_2_X . " " . $Vertex_2_Y. " " . $Vertex_2_Z;
 
         $Vertex_3_X=unpack('f', fread($handle, 4))[1];
         $Vertex_3_Y=unpack('f', fread($handle, 4))[1];
         $Vertex_3_Z=unpack('f', fread($handle, 4))[1];
         $arrVert3=[$Vertex_3_X, $Vertex_3_Y, $Vertex_3_Z];
-        // $arrTriangles[$j]['vertex3'] =  "Вершина3: " . $Vertex_3_X . " " . $Vertex_3_Y. " " . $Vertex_3_Z;
-        $arrTriangles[$j]['vertex3'] =  $arrVert3;
+        $arrTriangles[$j]['vertex3'] =  "Вершина3: " . $Vertex_3_X . " " . $Vertex_3_Y. " " . $Vertex_3_Z;
         
         unpack('s', fread($handle, 2))[1]; // END
         // echo unpack('s', fread($handle, 2))[1]. "<br>";
@@ -83,48 +77,24 @@ function square($arrVert1,$arrVert2,$arrVert3){ // полупериметр
 // a = {$ax; $ay; $az} и b = {$bx; $by; $bz}
 // a × b = {$ay*$bz - $az*$by; $az*$bx - $ax*$bz; $ax*$by - $ay*$bx}
 // i ($ay*$bz - $az*$by) - j ($ax*$bz - $az*$bx) + k ($ax*$by - $ay*$bx)
-function checkColinear($ax, $ay, $az){ 
-     $bx =0; $by=0; $bz=-1; // Bottom
-     $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
-        if ($Colinear==0) {
-            if ( directional($ax, $ay, $az, $bx, $by, $bz)){
-                return "Bottom"; 
-            } else{
-                return "Top"; 
-            }
-        } 
-   
-     $bx =0; $by=1; $bz=0; // Front
-     $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
-        if ($Colinear==0) {        
-            if ( directional($ax, $ay, $az, $bx, $by, $bz)){
-                return "Front"; 
-            } else{
-                return "Back"; 
-            }
-        } 
- 
-     $bx =-1; $by=0; $bz=0; // Left
-     $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
-    if ($Colinear==0) {        
-        if ( directional($ax, $ay, $az, $bx, $by, $bz)){
-            return "Left"; 
-        } else{
-            return "Right"; 
-        }
-     }    
-       
-     return "General"; 
+function checkColinear($ax, $ay, $az){
+    $bx =0; $by=0; $bz=-1;
+    $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
+    if ($Colinear==0) {
+        return "Yes"; 
+     } else{
+         return "No"; 
+     } 
    
 }
-
 // сонаправленные векторы
-function directional($ax, $ay, $az, $bx, $by, $bz){
-    
-    if (($ax*$bx + $ay*$by + $az*$bz) > 0) {
-       return true; 
+function directional($ax, $ay, $az){
+    $bx =0; $by=0; $bz=-1;
+    $directional=$ax*$bx + $ay*$by + $az*$bz;
+    if ($directional>0) {
+       return "Yes"; 
     } else{
-        return false; 
+        return "No"; 
     } 
     
 }

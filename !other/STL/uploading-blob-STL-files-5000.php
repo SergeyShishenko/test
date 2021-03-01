@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="stl.png" type="image/x-icon"> 
+    <link rel="shortcut icon" href="stl.png" type="image/x-icon">
     <title>Загрузка файла STL</title>
     <style>
     #greyProgress {
@@ -21,86 +21,150 @@
         text-align: center;
         line-height: 30px;
         color: white;
-      
-        
+
+
     }
- 
-
-
-
-.meter > div {
-  display: block;
-  height: 30%;
-  
-  position: relative;
-  overflow: hidden;
-}
-.meter > div:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-image: linear-gradient(
-    -45deg,
-    rgba(255, 255, 255, 0.2) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, 0.2) 50%,
-    rgba(255, 255, 255, 0.2) 75%,
-    transparent 75%,
-    transparent
-  );
-  z-index: 1;
-  background-size: 50px 50px;
-  animation: move 2s linear infinite;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  overflow: hidden;
-}
-
-
-
-@keyframes move {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 50px 50px;
-  }
-}
-
-    
 
 
 
 
+    .meter>div {
+        display: block;
+        height: 30%;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    .meter>div:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: linear-gradient(-45deg,
+                rgba(255, 255, 255, 0.2) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.2) 50%,
+                rgba(255, 255, 255, 0.2) 75%,
+                transparent 75%,
+                transparent);
+        z-index: 1;
+        background-size: 50px 50px;
+        animation: move 2s linear infinite;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        overflow: hidden;
+    }
 
 
-}
-    
+
+    @keyframes move {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: 50px 50px;
+        }
+    }
+
+    /* checkbox */
+    /* .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            
+            user-select: none;
+        } */
+
+
+
+        ul {
+            list-style-type: none;
+            }
+
+    }
     </style>
 </head>
 
 <body>
 
-    
+
     <input type="file" id="video-url-example">
     <br>
-<br>
+    <br>
     <div id="greyProgress" class="">
         <div id="greenBar"></div>
     </div>
     <br>
-    
+
     <div id="video-information1" style="width: 50%"></div>
     <div id="video-information" style="width: 50%"></div>
     <div id="chunk-information" style="width: 50%"></div>
     <div id="response-information" style="width: 50%">Загрузите файл STL</div>
     <div id="info3" style="width: 50%"></div>
+    <form name="Sum">
+        <!-- Front, Back, Top, Bottom, Left, Right, General -->
+        <ul>
+    
+        <li class="container" id="Front">
+            <input type="checkbox"  value="">
+            Спереди: 
+            <span class="checkmark">0</span>
+        </li>
+
+        <li class="container" id="Back">
+            <input type="checkbox"  value="">
+            Сзади: 
+            <span class="checkmark">0</span>
+        </li>
+
+        <li class="container" id="Top">
+            <input type="checkbox"  value="">
+            Сверху: 
+            <span class="checkmark">0</span>
+        </li>
+
+        <li class="container" id="Bottom">
+            <input type="checkbox"  value="">
+            Снизу: 
+            <span class="checkmark">0</span>
+        </li>
+
+        <li class="container" id="Left">
+            <input type="checkbox"  value="">
+            Слева: 
+            <span class="checkmark">0</span>
+        </li>
+
+        <li class="container" id="Right">
+            <input type="checkbox"  value="">
+            Справа: 
+            <span class="checkmark">0</span>
+        </li>
+        <li class="container" id="General">
+            <input type="checkbox"  value="">
+            Общий вид: 
+            <span class="checkmark">0</span>
+        </li>
+        <output id="rezultat">Площадь поверхности:  0</output>
+        </ul>
+    </form>
+
+
+    <!-- <li id="Right">Справа<input type="checkbox" name="a" value="1417"> 1417</li>
+   <li><input type="checkbox" name="a" value="1680" checked> 1680</li>
+   <li><input type="checkbox" name="a" value="1883" checked> 1883</li>
+   <li><input type="checkbox" name="a" value="1934"> 1934</li>
+   <li><input type="checkbox" name="a" value="2010"> 2010</li> -->
+
 
 
     <script>
@@ -116,6 +180,8 @@
     // const url = "uploadBlobSTLwrite.php"
     var chunkCounter = 0;
     var totalArea;
+    var dbFront, dbBack, dbTop, dbBottom, dbLeft, dbRight, dbGeneral;
+
     //break into 1 MB chunks for demo purposes
     var chunkSize = 84;
     var sessId = "";
@@ -124,19 +190,20 @@
     var numberofChunks;
     var start = 0;
     let dend, dstart;
-    const chunkSize50 = 50000000/2;
+    const chunkSize50 = 50000000 / 2;
     const chunkSize84 = chunkSize50 - 84;
     // Далее мы создаем EventListener на входе - когда файл добавляется, разделить файл и начать процесс загрузки:
     input.addEventListener('change', () => {
         greyProgress.classList.add("meter"); // добавить класс 
-        document.getElementById("video-information").innerHTML="";
-        respinfo.innerHTML="";
+        document.getElementById("video-information").innerHTML = "";
+        respinfo.innerHTML = "";
         start = 0;
         chunkSize = 84;
         chunkCounter = 0;
         dstart = new Date();
         file = input.files[0];
-        totalArea=0;
+        totalArea = 0;
+        dbFront = dbBack = dbTop = dbBottom = dbLeft = dbRight = dbGeneral = 0;
 
         // var numberofChunks = Math.ceil(file.size/chunkSize);
         numberofChunks = Math.ceil((file.size - 84) / chunkSize50 + 1);
@@ -200,8 +267,8 @@
                     percentComplete / numberofChunks);
                 document.getElementById("chunk-information").innerHTML = "Загрузка части #" + chunkCounter + ": " +
                     percentComplete + "%.";
-                    // "Загружено: " + totalPercentComplete + "%";
-                    Pssbar(totalPercentComplete) ;
+                // "Загружено: " + totalPercentComplete + "%";
+                Pssbar(totalPercentComplete);
 
             } else {
                 console.log("не совместимо");
@@ -216,17 +283,18 @@
             console.log("загруженная часть");
             console.log("oReq.response", oReq.response);
             var resp = JSON.parse(oReq.response)
-            sessId = resp.sessId; 
-            // div.insertAdjacentHTML('afterend', '<p>Пока</p>');   
+            sessId = resp.sessId;
+            // div.insertAdjacentHTML('afterend', '<li>Пока</p>');   
             if (resp.hasOwnProperty('totalarea')) {
-                     totalArea += resp.totalarea ;
-                    // respinfo.insertAdjacentHTML('beforeend',"Площадь поверхности: " + parseFloat((resp.totalarea / 1000000).toFixed(3)) +" м&sup2<br>");
-                    respinfo.innerHTML = "Площадь поверхности: " + parseFloat((totalArea / 1000000).toFixed(3)) +" м&sup2";
-                    forEach(resp, fcallback)
-                }else{
-                    info1.insertAdjacentHTML('beforeend'," Triangles: " + resp.head);
-                }
-            
+                totalArea += resp.totalarea;
+                // respinfo.insertAdjacentHTML('beforeend',"Площадь поверхности: " + parseFloat((resp.totalarea / 1000000).toFixed(3)) +" м&sup2<br>");
+                respinfo.innerHTML = "Площадь поверхности: " + parseFloat((totalArea / 1000000).toFixed(3)) +
+                    " м&sup2";
+                forEach(resp, fcallback)
+            } else {
+                info1.insertAdjacentHTML('beforeend', " Triangles: " + resp.head);
+            }
+
 
             console.log("sessId", sessId);
 
@@ -246,13 +314,13 @@
                 dend = new Date();
                 let duration = dend.getTime() - dstart.getTime();
                 console.log(duration + ' ms');
-                document.getElementById("chunk-information").innerHTML ="";
+                document.getElementById("chunk-information").innerHTML = "";
                 document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(
                     duration);
 
-                   
-                        // greyProgress.classList.add("class-name"); // добавить класс 
-                        greyProgress.classList.remove("meter"); // удалить класс 
+                    document.getElementById("rezultat").innerHTML = "Площадь поверхности: " + parseFloat((totalArea / 1000000).toFixed(3)) + " м&sup2";
+                // greyProgress.classList.add("class-name"); // добавить класс 
+                greyProgress.classList.remove("meter"); // удалить класс 
             }
 
         };
@@ -279,73 +347,74 @@
     // millisToMinutesAndSeconds(60999);  // "1:01"
 
     function Pssbar(pr) {
-        elem.style.width = pr + '%'; 
-        elem.innerHTML = pr * 1  + '%';
+        elem.style.width = pr + '%';
+        elem.innerHTML = pr * 1 + '%';
     }
 
     function forEach(data, callback) {
-            for (var key in data) {
-                if (data.hasOwnProperty(key)) {
-                    callback(key, data[key]);
-                }
+        for (var key in data) {
+            if (data.hasOwnProperty(key)) {
+                callback(key, data[key]);
             }
         }
+    }
 
-        function fcallback(key, value) {
-            if (key == "data") {
+    function fcallback(key, value) {
+        if (key == "data") {
 
-                
+            for (let i = 1; i <= Object.keys(value).length; i++) {
+                // info3.insertAdjacentHTML('beforeend', "#" + i + "<BR>");
+                // info3.insertAdjacentHTML('beforeend', "normal: " + value[i]['normal'] + "<BR>");
+                // info3.insertAdjacentHTML('beforeend', "directional: " + value[i]['directional'] + "<BR>");
+                // info3.insertAdjacentHTML('beforeend', "vertex1: " + value[i]['vertex1'] + "<BR>");
+                // info3.insertAdjacentHTML('beforeend', "vertex1: " + value[i]['vertex2'] + "<BR>");
+                // info3.insertAdjacentHTML('beforeend', "vertex3: " + value[i]['vertex3'] + "<BR>");
+                info3.insertAdjacentHTML('beforeend', "area: " + value[i]['area'] + " мм&sup2<BR>");
+                info3.insertAdjacentHTML('beforeend', "<hr>");
+                // Front, Back, Top, Bottom, Left, Right, General
+                switch (value[i]['directional']) {
+                    case 'Front':
+                        dbFront = value[i]['area'];
+                        break;
+                    case 'Back':
+                        dbBack += value[i]['area'];
+                        break;
+                    case 'Top':
+                        dbTop += value[i]['area'];
+                        break;
+                    case 'Bottom':
+                        dbBottom += value[i]['area'];
+                        break;
+                    case 'Left':
+                        dbLeft += value[i]['area'];
+                        break;
+                    case 'Right':
+                        dbRight += value[i]['area'];
+                        break;
+                    case 'General':
+                        dbGeneral += value[i]['area'];
+                        break;
+                        // default:
+                        //     db = "?";
+                        //   break
+                }
+            }
 
-                // if (data.hasOwnProperty(key)) {
-                //     callback(key, data[key]);
-                // info3.insertAdjacentHTML('beforeend',key + ': ' + data2 + "<BR>");
-                info3.insertAdjacentHTML('beforeend',key +" : " + value + "<BR>");
-                info3.insertAdjacentHTML('beforeend',Object.keys(value).length+ "<BR>");
-                info3.insertAdjacentHTML('beforeend',value[1]['normal']+ "<BR>");
-                info3.insertAdjacentHTML('beforeend',value[1]['normal'][0]+ "<BR>");
-                info3.insertAdjacentHTML('beforeend',value[1]['normal'][1]+ "<BR>");
-                info3.insertAdjacentHTML('beforeend',value[1]['normal'][2]+ "<BR>");
-                // value.forEach(function(item, i, arr) {	
-                //     info3.insertAdjacentHTML('beforeend',value[item]['normal'] + "<BR>");
-                // }
-                // );
-                // info3.insertAdjacentHTML('beforeend',(key + ': ' +
-                //     "<br>" +
-                //     '..normal: ' +
-                //     // value['normal'][0] + " " + value['normal'][1] + " " + value['normal'][2] + "<br>" +
-                //     value['normal'] +"<br>" +
-                //     // '..колинеарно: ' + value['colinear'] + "<br>" +
-                //     '..соноправлен: ' + value['directional'] + "<br>" +
-                //     // '..вершина1: ' +
-                //     // value['vertex1'][0] + " " + value['vertex1'][1] + " " + value['vertex1'][2] + " <br>" +
-                //     // '..вершина2: ' +
-                //     // value['vertex2'][0] + " " + value['vertex2'][1] + " " + value['vertex2'][2] + " <br>" +
-                //     // '..вершина3: ' +
-                //     // value['vertex3'][0] + " " + value['vertex3'][1] + " " + value['vertex3'][2] + " <br>" +
-                //     '..площадь: ' + value['strain'] + " мм&sup2;<br>"
-                // ));
-
-                // }
-            
-
-                // info3.insertAdjacentHTML('beforeend',(key + ': ' +
-                //     "<br>" +
-                //     '..normal: ' +
-                //     // value['normal'][0] + " " + value['normal'][1] + " " + value['normal'][2] + "<br>" +
-                //     value['normal'] +"<br>" +
-                //     // '..колинеарно: ' + value['colinear'] + "<br>" +
-                //     '..соноправлен: ' + value['directional'] + "<br>" +
-                //     // '..вершина1: ' +
-                //     // value['vertex1'][0] + " " + value['vertex1'][1] + " " + value['vertex1'][2] + " <br>" +
-                //     // '..вершина2: ' +
-                //     // value['vertex2'][0] + " " + value['vertex2'][1] + " " + value['vertex2'][2] + " <br>" +
-                //     // '..вершина3: ' +
-                //     // value['vertex3'][0] + " " + value['vertex3'][1] + " " + value['vertex3'][2] + " <br>" +
-                //     '..площадь: ' + value['strain'] + " мм&sup2;<br>"
-                // ));
-
-            } 
         }
+    }
+    //// totalsum
+    var s = document.forms.Sum,
+        d = s.querySelectorAll('input[type="checkbox"]:not([value]), input[type="checkbox"][value=""]');
+    for (var i = 0; i < d.length; i++) // чтобы не было написано NaN, убираем в disabled пункты, где не прописаны значения
+        d[i].disabled = true;
+    s.onchange = function() { // начало работы функции сложения
+        var n = s.querySelectorAll('[type="checkbox"]'),
+            itog = 0;
+        for (var j = 0; j < n.length; j++)
+            n[j].checked ? itog += parseFloat(n[j].value) : itog;
+        document.getElementById('rezultat').innerHTML = 'Площадь поверхности: ' + itog;
+    }
+    
     </script>
 </body>
 
