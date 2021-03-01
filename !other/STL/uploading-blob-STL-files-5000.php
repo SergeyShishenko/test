@@ -108,10 +108,12 @@
     const input = document.querySelector('#video-url-example');
     var elem = document.getElementById("greenBar");
     var respinfo = document.getElementById("response-information");
+    var info1 = document.getElementById("video-information1");
 
     const url = "uploadBlobSTL.php"
     // const url = "uploadBlobSTLwrite.php"
     var chunkCounter = 0;
+    var totalArea;
     //break into 1 MB chunks for demo purposes
     var chunkSize = 84;
     var sessId = "";
@@ -132,10 +134,11 @@
         chunkCounter = 0;
         dstart = new Date();
         file = input.files[0];
+        totalArea=0;
 
         // var numberofChunks = Math.ceil(file.size/chunkSize);
         numberofChunks = Math.ceil((file.size - 84) / chunkSize50 + 1);
-        document.getElementById("video-information1").innerHTML = file.size + " байт поделено на " +
+        info1.innerHTML = file.size + " байт поделено на " +
             numberofChunks +
             " частей."
 
@@ -214,7 +217,11 @@
             sessId = resp.sessId; 
             // div.insertAdjacentHTML('afterend', '<p>Пока</p>');   
             if (resp.hasOwnProperty('totalarea')) {
-                    respinfo.insertAdjacentHTML('beforeend',"Площадь поверхности: " + parseFloat((resp.totalarea / 1000000).toFixed(3)) +" м&sup2<br>");
+                     totalArea += resp.totalarea ;
+                    // respinfo.insertAdjacentHTML('beforeend',"Площадь поверхности: " + parseFloat((resp.totalarea / 1000000).toFixed(3)) +" м&sup2<br>");
+                    respinfo.innerHTML = "Площадь поверхности: " + parseFloat((totalArea / 1000000).toFixed(3)) +" м&sup2";
+                }else{
+                    info1.insertAdjacentHTML('beforeend'," Triangles: " + resp.head);
                 }
             
 

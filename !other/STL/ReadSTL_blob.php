@@ -6,7 +6,8 @@ if ($file['size']==84){
     fseek($handle,80);// пропускаем заголовок
     $content = unpack('i', fread($handle, 4));    
     fclose($handle);
-    $data["head"] =  $content[1]. " треугольников";return; 
+    // $data["head"] =  $content[1]. " треугольников";return; 
+    $data["head"] =  $content[1];return; 
 }else{
     $handle = fopen($file['tmp_name'], "rb");
     $chunk=$file['size']/50;
