@@ -330,6 +330,7 @@
                 let duration = dend.getTime() - dstart.getTime();
                 console.log(duration + ' ms');
                 document.getElementById("chunk-information").innerHTML = "";
+                // document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(duration);
                 document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(duration);
 
                 document.getElementById("rezultat").innerHTML = "Площадь поверхности: " + мsup2(totalArea) +" м&sup2";
@@ -339,7 +340,7 @@
                     var arr=dataArray[i]['data'];
                     // console.log("dataArray[i]['data'].length "+Object.keys(arr).length);
                     for (let j = 1 ; j <= Object.keys(arr).length; j++) {
-                        console.log(arr[j]['area']);
+                        console.log(arr[j]['directional']);
                     }
 
                     // arr.forEach(function(item, i, arr) {
@@ -355,6 +356,11 @@
                 }
                 // greyProgress.classList.add("class-name"); // добавить класс 
                 greyProgress.classList.remove("meter"); // удалить класс 
+
+                dend = new Date();
+                duration = dend.getTime() - dstart.getTime();
+                document.getElementById("video-information").innerHTML = "Обработка закончена: " + msToTime(duration);
+                console.log(duration + ' ms');
             }
 
         };
