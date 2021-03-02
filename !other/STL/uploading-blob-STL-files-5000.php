@@ -114,45 +114,45 @@
         <!-- Front, Back, Top, Bottom, Left, Right, General -->
         <ul>
     
-        <li class="container" id="Front">
-            <input type="checkbox"  value="">
+        <li class="container" >
+            <input type="checkbox" id="Front"  value="0" checked>
             Спереди: 
-            <span class="checkmark">0</span>
+            <span class="checkmark Front">0</span>
         </li>
 
-        <li class="container" id="Back">
-            <input type="checkbox"  value="">
+        <li class="container" >
+            <input type="checkbox" id="Back"  value="0" checked>
             Сзади: 
-            <span class="checkmark">0</span>
+            <span class="checkmark Back">0</span>
         </li>
 
-        <li class="container" id="Top">
-            <input type="checkbox"  value="">
+        <li class="container" >
+            <input type="checkbox" id="Top"  value="0" checked>
             Сверху: 
-            <span class="checkmark">0</span>
+            <span class="checkmark Top">0</span>
         </li>
 
-        <li class="container" id="Bottom">
-            <input type="checkbox"  value="">
-            Снизу: 
-            <span class="checkmark">0</span>
+        <li class="container" >
+            <input type="checkbox" id="Bottom"  value="0" checked>
+            <b>Снизу:</b> 
+            <span class="checkmark Bottom">0</span>
         </li>
 
-        <li class="container" id="Left">
-            <input type="checkbox"  value="">
+        <li class="container" >
+            <input type="checkbox"  id="Left" value="0" checked>
             Слева: 
-            <span class="checkmark">0</span>
+            <span class="checkmark Left">0</span>
         </li>
 
-        <li class="container" id="Right">
-            <input type="checkbox"  value="">
+        <li class="container" >
+            <input type="checkbox" id="Right"  value="0" checked>
             Справа: 
-            <span class="checkmark">0</span>
+            <span class="checkmark Right">0</span>
         </li>
-        <li class="container" id="General">
-            <input type="checkbox"  value="">
+        <li class="container" >
+            <input type="checkbox" id="General"  value="0" checked>
             Общий вид: 
-            <span class="checkmark">0</span>
+            <span class="checkmark General">0</span>
         </li>
         <output id="rezultat">Площадь поверхности:  0</output>
         </ul>
@@ -204,6 +204,13 @@
         file = input.files[0];
         totalArea = 0;
         dbFront = dbBack = dbTop = dbBottom = dbLeft = dbRight = dbGeneral = 0;
+
+        var r= document.forms.Sum.querySelectorAll('[type="checkbox"]')           
+        for (var j = 0; j < r.length; j++){
+            r[j].value=0;
+            r[j].disabled = false;
+        }
+            
 
         // var numberofChunks = Math.ceil(file.size/chunkSize);
         numberofChunks = Math.ceil((file.size - 84) / chunkSize50 + 1);
@@ -288,7 +295,7 @@
             if (resp.hasOwnProperty('totalarea')) {
                 totalArea += resp.totalarea;
                 // respinfo.insertAdjacentHTML('beforeend',"Площадь поверхности: " + parseFloat((resp.totalarea / 1000000).toFixed(3)) +" м&sup2<br>");
-                respinfo.innerHTML = "Площадь поверхности: " + parseFloat((totalArea / 1000000).toFixed(3)) +
+                respinfo.innerHTML = "Площадь поверхности: " + мsup2(totalArea) +
                     " м&sup2";
                 forEach(resp, fcallback)
             } else {
@@ -318,7 +325,11 @@
                 document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(
                     duration);
 
-                    document.getElementById("rezultat").innerHTML = "Площадь поверхности: " + parseFloat((totalArea / 1000000).toFixed(3)) + " м&sup2";
+                    document.getElementById("rezultat").innerHTML = "Площадь поверхности: " + мsup2(totalArea) + " м&sup2";
+
+                    let t = s.querySelectorAll('input[type="checkbox"][value="0"]');
+                    for (var i = 0; i < t.length; i++) // чтобы не было написано NaN, убираем в disabled пункты, где не прописаны значения
+                        t[i].disabled = true;
                 // greyProgress.classList.add("class-name"); // добавить класс 
                 greyProgress.classList.remove("meter"); // удалить класс 
             }
@@ -369,30 +380,45 @@
                 // info3.insertAdjacentHTML('beforeend', "vertex1: " + value[i]['vertex1'] + "<BR>");
                 // info3.insertAdjacentHTML('beforeend', "vertex1: " + value[i]['vertex2'] + "<BR>");
                 // info3.insertAdjacentHTML('beforeend', "vertex3: " + value[i]['vertex3'] + "<BR>");
-                info3.insertAdjacentHTML('beforeend', "area: " + value[i]['area'] + " мм&sup2<BR>");
-                info3.insertAdjacentHTML('beforeend', "<hr>");
+                // info3.insertAdjacentHTML('beforeend', "area: " + value[i]['area'] + " мм&sup2<BR>");
+                // info3.insertAdjacentHTML('beforeend', "<hr>");
+
                 // Front, Back, Top, Bottom, Left, Right, General
                 switch (value[i]['directional']) {
                     case 'Front':
-                        dbFront = value[i]['area'];
+                        dbFront += value[i]['area'];
+                        document.getElementById("Front").value=dbFront;
+                        document.getElementsByClassName('Front')[0].innerHTML=мsup2(dbFront);
                         break;
                     case 'Back':
                         dbBack += value[i]['area'];
+                        document.getElementById("Back").value=dbBack;
+                        document.getElementsByClassName('Back')[0].innerHTML=мsup2(dbBack);
                         break;
                     case 'Top':
                         dbTop += value[i]['area'];
+                        document.getElementById("Top").value=dbTop;
+                        document.getElementsByClassName('Top')[0].innerHTML=мsup2(dbTop);
                         break;
                     case 'Bottom':
                         dbBottom += value[i]['area'];
+                        document.getElementById("Bottom").value=dbBottom;
+                        document.getElementsByClassName('Bottom')[0].innerHTML=мsup2(dbBottom);
                         break;
                     case 'Left':
                         dbLeft += value[i]['area'];
+                        document.getElementById("Left").value=dbLeft ;
+                        document.getElementsByClassName('Left')[0].innerHTML=мsup2(dbLeft) ;
                         break;
                     case 'Right':
                         dbRight += value[i]['area'];
+                        document.getElementById("Right").value=dbRight;
+                        document.getElementsByClassName('Right')[0].innerHTML=мsup2(dbRight);
                         break;
                     case 'General':
                         dbGeneral += value[i]['area'];
+                        document.getElementById("General").value=dbGeneral;
+                        document.getElementsByClassName('General')[0].innerHTML=мsup2(dbGeneral);
                         break;
                         // default:
                         //     db = "?";
@@ -412,7 +438,11 @@
             itog = 0;
         for (var j = 0; j < n.length; j++)
             n[j].checked ? itog += parseFloat(n[j].value) : itog;
-        document.getElementById('rezultat').innerHTML = 'Площадь поверхности: ' + itog;
+        document.getElementById('rezultat').innerHTML = 'Площадь поверхности: ' + мsup2(itog) + " м&sup2";
+    }
+
+    function мsup2(val) {
+       return  parseFloat((val / 1000000).toFixed(4));
     }
     
     </script>
