@@ -44,13 +44,13 @@
         bottom: 0;
         right: 0;
         background-image: linear-gradient(-45deg,
-                rgba(255, 255, 255, 0.2) 25%,
-                transparent 25%,
-                transparent 50%,
-                rgba(255, 255, 255, 0.2) 50%,
-                rgba(255, 255, 255, 0.2) 75%,
-                transparent 75%,
-                transparent);
+            rgba(255, 255, 255, 0.2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0.2) 75%,
+            transparent 75%,
+            transparent);
         z-index: 1;
         background-size: 50px 50px;
         animation: move 2s linear infinite;
@@ -86,9 +86,9 @@
 
 
 
-        ul {
-            list-style-type: none;
-            }
+    ul {
+        list-style-type: none;
+    }
 
     }
     </style>
@@ -113,48 +113,48 @@
     <form name="Sum">
         <!-- Front, Back, Top, Bottom, Left, Right, General -->
         <ul>
-    
-        <li class="container" >
-            <input type="checkbox" id="Front"  value="0" checked>
-            Спереди: 
-            <span class="checkmark Front">0</span>
-        </li>
 
-        <li class="container" >
-            <input type="checkbox" id="Back"  value="0" checked>
-            Сзади: 
-            <span class="checkmark Back">0</span>
-        </li>
+            <li class="container">
+                <input type="checkbox" id="Front" value="0" checked>
+                Спереди:
+                <span class="checkmark Front">0</span>
+            </li>
 
-        <li class="container" >
-            <input type="checkbox" id="Top"  value="0" checked>
-            Сверху: 
-            <span class="checkmark Top">0</span>
-        </li>
+            <li class="container">
+                <input type="checkbox" id="Back" value="0" checked>
+                Сзади:
+                <span class="checkmark Back">0</span>
+            </li>
 
-        <li class="container" >
-            <input type="checkbox" id="Bottom"  value="0" checked>
-            <b>Снизу:</b> 
-            <span class="checkmark Bottom">0</span>
-        </li>
+            <li class="container">
+                <input type="checkbox" id="Top" value="0" checked>
+                Сверху:
+                <span class="checkmark Top">0</span>
+            </li>
 
-        <li class="container" >
-            <input type="checkbox"  id="Left" value="0" checked>
-            Слева: 
-            <span class="checkmark Left">0</span>
-        </li>
+            <li class="container">
+                <input type="checkbox" id="Bottom" value="0" checked>
+                <b>Снизу:</b>
+                <span class="checkmark Bottom">0</span>
+            </li>
 
-        <li class="container" >
-            <input type="checkbox" id="Right"  value="0" checked>
-            Справа: 
-            <span class="checkmark Right">0</span>
-        </li>
-        <li class="container" >
-            <input type="checkbox" id="General"  value="0" checked>
-            Общий вид: 
-            <span class="checkmark General">0</span>
-        </li>
-        <output id="rezultat">Площадь поверхности:  0</output>
+            <li class="container">
+                <input type="checkbox" id="Left" value="0" checked>
+                Слева:
+                <span class="checkmark Left">0</span>
+            </li>
+
+            <li class="container">
+                <input type="checkbox" id="Right" value="0" checked>
+                Справа:
+                <span class="checkmark Right">0</span>
+            </li>
+            <li class="container">
+                <input type="checkbox" id="General" value="0" checked>
+                Общий вид:
+                <span class="checkmark General">0</span>
+            </li>
+            <output id="rezultat">Площадь поверхности: 0</output>
         </ul>
     </form>
 
@@ -204,13 +204,18 @@
         file = input.files[0];
         totalArea = 0;
         dbFront = dbBack = dbTop = dbBottom = dbLeft = dbRight = dbGeneral = 0;
-
-        var r= document.forms.Sum.querySelectorAll('[type="checkbox"]')           
-        for (var j = 0; j < r.length; j++){
-            r[j].value=0;
-            r[j].disabled = false;
+        document.getElementById("rezultat").innerHTML = "Площадь поверхности: 0 м&sup2";
+        var r1 = document.forms.Sum.querySelectorAll('[type="checkbox"]');
+        for (var j = 0; j < r1.length; j++) {
+            r1[j].value = 0;
+            r1[j].disabled = false;
         }
-            
+        var c1 = document.forms.Sum.getElementsByClassName('checkmark');
+        for (var j = 0; j < c1.length; j++) {
+            c1[j].innerHTML = 0;
+            // r[j].disabled = false;
+        }
+       
 
         // var numberofChunks = Math.ceil(file.size/chunkSize);
         numberofChunks = Math.ceil((file.size - 84) / chunkSize50 + 1);
@@ -325,11 +330,14 @@
                 document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(
                     duration);
 
-                    document.getElementById("rezultat").innerHTML = "Площадь поверхности: " + мsup2(totalArea) + " м&sup2";
+                document.getElementById("rezultat").innerHTML = "Площадь поверхности: " + мsup2(totalArea) +
+                    " м&sup2";
 
-                    let t = s.querySelectorAll('input[type="checkbox"][value="0"]');
-                    for (var i = 0; i < t.length; i++) // чтобы не было написано NaN, убираем в disabled пункты, где не прописаны значения
-                        t[i].disabled = true;
+                let t5 = document.forms.Sum.querySelectorAll('input[type="checkbox"][value="0"]');
+                for (var i = 0; i < t5.length; i++) // чтобы не было написано NaN, убираем в disabled пункты, где не прописаны значения
+                {
+                    t5[i].disabled = true;
+                }
                 // greyProgress.classList.add("class-name"); // добавить класс 
                 greyProgress.classList.remove("meter"); // удалить класс 
             }
@@ -387,38 +395,38 @@
                 switch (value[i]['directional']) {
                     case 'Front':
                         dbFront += value[i]['area'];
-                        document.getElementById("Front").value=dbFront;
-                        document.getElementsByClassName('Front')[0].innerHTML=мsup2(dbFront);
+                        document.getElementById("Front").value = dbFront;
+                        document.getElementsByClassName('Front')[0].innerHTML = мsup2(dbFront);
                         break;
                     case 'Back':
                         dbBack += value[i]['area'];
-                        document.getElementById("Back").value=dbBack;
-                        document.getElementsByClassName('Back')[0].innerHTML=мsup2(dbBack);
+                        document.getElementById("Back").value = dbBack;
+                        document.getElementsByClassName('Back')[0].innerHTML = мsup2(dbBack);
                         break;
                     case 'Top':
                         dbTop += value[i]['area'];
-                        document.getElementById("Top").value=dbTop;
-                        document.getElementsByClassName('Top')[0].innerHTML=мsup2(dbTop);
+                        document.getElementById("Top").value = dbTop;
+                        document.getElementsByClassName('Top')[0].innerHTML = мsup2(dbTop);
                         break;
                     case 'Bottom':
                         dbBottom += value[i]['area'];
-                        document.getElementById("Bottom").value=dbBottom;
-                        document.getElementsByClassName('Bottom')[0].innerHTML=мsup2(dbBottom);
+                        document.getElementById("Bottom").value = dbBottom;
+                        document.getElementsByClassName('Bottom')[0].innerHTML = мsup2(dbBottom);
                         break;
                     case 'Left':
                         dbLeft += value[i]['area'];
-                        document.getElementById("Left").value=dbLeft ;
-                        document.getElementsByClassName('Left')[0].innerHTML=мsup2(dbLeft) ;
+                        document.getElementById("Left").value = dbLeft;
+                        document.getElementsByClassName('Left')[0].innerHTML = мsup2(dbLeft);
                         break;
                     case 'Right':
                         dbRight += value[i]['area'];
-                        document.getElementById("Right").value=dbRight;
-                        document.getElementsByClassName('Right')[0].innerHTML=мsup2(dbRight);
+                        document.getElementById("Right").value = dbRight;
+                        document.getElementsByClassName('Right')[0].innerHTML = мsup2(dbRight);
                         break;
                     case 'General':
                         dbGeneral += value[i]['area'];
-                        document.getElementById("General").value=dbGeneral;
-                        document.getElementsByClassName('General')[0].innerHTML=мsup2(dbGeneral);
+                        document.getElementById("General").value = dbGeneral;
+                        document.getElementsByClassName('General')[0].innerHTML = мsup2(dbGeneral);
                         break;
                         // default:
                         //     db = "?";
@@ -429,22 +437,26 @@
         }
     }
     //// totalsum
-    var s = document.forms.Sum,
-        d = s.querySelectorAll('input[type="checkbox"]:not([value]), input[type="checkbox"][value=""]');
-    for (var i = 0; i < d.length; i++) // чтобы не было написано NaN, убираем в disabled пункты, где не прописаны значения
-        d[i].disabled = true;
-    s.onchange = function() { // начало работы функции сложения
-        var n = s.querySelectorAll('[type="checkbox"]'),
+    var s1 = document.forms.Sum,
+        d5 = s1.querySelectorAll('input[type="checkbox"]:not([value]), input[type="checkbox"][value=""]');
+    for (var i = 0; i < d5
+        .length; i++) // чтобы не было написано NaN, убираем в disabled пункты, где не прописаны значения
+    {
+        d5[i].disabled = true;
+    }
+    s1.onchange = function() { // начало работы функции сложения
+        var n1 = s1.querySelectorAll('[type="checkbox"]'),
             itog = 0;
-        for (var j = 0; j < n.length; j++)
-            n[j].checked ? itog += parseFloat(n[j].value) : itog;
-        document.getElementById('rezultat').innerHTML = 'Площадь поверхности: ' + мsup2(itog) + " м&sup2";
+        for (var j = 0; j < n1.length; j++) {
+            n1[j].checked ? itog += parseFloat(n1[j].value) : itog;
+            document.getElementById('rezultat').innerHTML = 'Площадь поверхности: ' + мsup2(itog) + " м&sup2";
+        }
+
     }
 
     function мsup2(val) {
-       return  parseFloat((val / 1000000).toFixed(4));
+        return parseFloat((val / 1000000).toFixed(4));
     }
-    
     </script>
 </body>
 
