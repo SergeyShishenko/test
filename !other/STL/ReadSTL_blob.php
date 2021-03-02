@@ -13,6 +13,7 @@ if ($file['size']==84){
     $chunk=$file['size']/50;
     // $data["content"] =  $chunk. " по 50 байт";return;
     // $arrTriangles[];
+    $sum=$Front=$Back=$Top=$Bottom=$Left=$Right=$General=0;
     for ($j = 1; $j <= $chunk; $j++){
         // $arrTriangles[$j]['num'] = "Треугольник - $j"; 
         $NormalX=unpack('f', fread($handle, 4))[1];
@@ -22,7 +23,8 @@ if ($file['size']==84){
         $arrTriangles[$j]['normal'] = [$NormalX , $NormalY , $NormalZ ] ;
         // $arrTriangles[$j]['colinear'] =  "Колинеарность: ". checkColinear($NormalX, $NormalY, $NormalZ) ;
         // $arrTriangles[$j]['directional'] = "Сонаправленность: ". directional($NormalX, $NormalY, $NormalZ);
-        $arrTriangles[$j]['directional'] = checkColinear($NormalX, $NormalY, $NormalZ);
+        // $arrTriangles[$j]['directional'] = checkColinear($NormalX, $NormalY, $NormalZ);
+        $directional = checkColinear($NormalX, $NormalY, $NormalZ);
 
         $Vertex_1_X=unpack('f', fread($handle, 4))[1];
         $Vertex_1_Y=unpack('f', fread($handle, 4))[1];
@@ -46,17 +48,57 @@ if ($file['size']==84){
         $arrTriangles[$j]['vertex3'] =  $arrVert3;
         
         unpack('s', fread($handle, 2))[1]; // END
-        // echo unpack('s', fread($handle, 2))[1]. "<br>";
+       
         $strain=square($arrVert1,$arrVert2,$arrVert3);
-        $arrTriangles[$j]['area'] =  $strain;
+        // $arrTriangles[$j]['area'] =  $strain;
         $sum += $strain;
+
+
+        switch ($directional) {
+            case 'Front':
+                $Front += $strain;
+              
+                break;
+            case 'Back':
+                $Back += $strain;
+              
+                break;
+            case 'Top':
+                $Top += $strain;
+            
+                break;
+            case 'Bottom':
+                $Bottom += $strain;
+             
+                break;
+            case 'Left':
+                $Left += $strain;
+             
+                break;
+            case 'Right':
+                $Right += $strain;
+             
+                break;
+            case 'General':
+                $General += $strain;
+             
+                break;
+                
+        }
         
         // echo "<hr>";
     }// for
    
     fclose($handle);
     $data["totalarea"]=$sum;
-     $data["data"]=$arrTriangles;return;
+    $data["Front"]=$Front;
+    $data["Back"]=$Back;
+    $data["Top"]=$Top;
+    $data["Bottom"]=$Bottom;
+    $data["Left"]=$Left;
+    $data["Right"]=$Right;
+    $data["General"]=$General;
+    $data["data"]=$arrTriangles;return;
     // echo "S-Solid = " . ($sum / 1000000) ." м.кв.";
     // echo "<script>alert('S-Solid = " . ($sum / 1000000) ." м.кв.');</script>";
 }

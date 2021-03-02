@@ -44,13 +44,13 @@
         bottom: 0;
         right: 0;
         background-image: linear-gradient(-45deg,
-            rgba(255, 255, 255, 0.2) 25%,
-            transparent 25%,
-            transparent 50%,
-            rgba(255, 255, 255, 0.2) 50%,
-            rgba(255, 255, 255, 0.2) 75%,
-            transparent 75%,
-            transparent);
+                rgba(255, 255, 255, 0.2) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.2) 50%,
+                rgba(255, 255, 255, 0.2) 75%,
+                transparent 75%,
+                transparent);
         z-index: 1;
         background-size: 50px 50px;
         animation: move 2s linear infinite;
@@ -217,7 +217,7 @@
             c1[j].innerHTML = 0;
             // r[j].disabled = false;
         }
-       
+
 
         // var numberofChunks = Math.ceil(file.size/chunkSize);
         numberofChunks = Math.ceil((file.size - 84) / chunkSize50 + 1);
@@ -304,6 +304,38 @@
                 // respinfo.insertAdjacentHTML('beforeend',"Площадь поверхности: " + parseFloat((resp.totalarea / 1000000).toFixed(3)) +" м&sup2<br>");
                 respinfo.innerHTML = "Площадь поверхности: " + мsup2(totalArea) + " м&sup2";
                 dataArray.push(resp);
+
+                         dbFront += resp.Front;
+                         document.getElementById("Front").value = dbFront;
+                         document.getElementsByClassName('Front')[0].innerHTML = мsup2(dbFront);
+                    // console.log(resp.Back);
+                         dbBack += resp.Back;
+                         document.getElementById("Back").value = dbBack;
+                         document.getElementsByClassName('Back')[0].innerHTML = мsup2(dbBack);
+                    // console.log(resp.Top);
+                          dbTop += resp.Top;
+                         document.getElementById("Top").value = dbTop;
+                         document.getElementsByClassName('Top')[0].innerHTML = мsup2(dbTop);
+                    // console.log(resp.Bottom);
+                         dbBottom += resp.Bottom;
+                         document.getElementById("Bottom").value = dbBottom;
+                         document.getElementsByClassName('Bottom')[0].innerHTML = мsup2(dbBottom);
+                    // console.log(resp.Left);
+                         dbLeft += resp.Left;
+                         document.getElementById("Left").value = dbLeft;
+                         document.getElementsByClassName('Left')[0].innerHTML = мsup2(dbLeft);
+                    // console.log(resp.Right);
+                         dbRight += resp.Right;
+                         document.getElementById("Right").value = dbRight;
+                         document.getElementsByClassName('Right')[0].innerHTML = мsup2(dbRight);
+                    // console.log(resp.General);
+                         dbGeneral += resp.General;
+                         document.getElementById("General").value = dbGeneral;
+                         document.getElementsByClassName('General')[0].innerHTML = мsup2(dbGeneral);
+                         document.getElementById("rezultat").innerHTML = "Площадь поверхности: " + мsup2(totalArea) +
+                    " м&sup2";
+
+
                 // forEachm(resp, fcallback);
                 // forEachm2(resp);
             } else {
@@ -331,36 +363,65 @@
                 console.log(duration + ' ms');
                 document.getElementById("chunk-information").innerHTML = "";
                 // document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(duration);
-                document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(duration);
+                document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(
+                    duration);
 
-                document.getElementById("rezultat").innerHTML = "Площадь поверхности: " + мsup2(totalArea) +" м&sup2";
+                document.getElementById("rezultat").innerHTML = "Площадь поверхности: " + мsup2(totalArea) +
+                    " м&sup2";
+                    // Front, Back, Top, Bottom, Left, Right, General
+                    // dbFront, dbBack, dbTop, dbBottom, dbLeft, dbRight, dbGeneral;
+                    // console.log(resp.Front);
+                    //      dbFront += resp.Front;
+                    //      document.getElementById("Front").value = dbFront;
+                    //      document.getElementsByClassName('Front')[0].innerHTML = мsup2(dbFront);
+                    // // console.log(resp.Back);
+                    //      dbBack += resp.dbBack;
+                    //      document.getElementById("Back").value = dbBack;
+                    //      document.getElementsByClassName('Back')[0].innerHTML = мsup2(dbBack);
+                    // // console.log(resp.Top);
+                    //       dbTop += resp.Top;
+                    //      document.getElementById("Top").value = dbTop;
+                    //      document.getElementsByClassName('Top')[0].innerHTML = мsup2(dbTop);
+                    // // console.log(resp.Bottom);
+                    //      dbBottom += resp.Bottom;
+                    //      document.getElementById("Bottom").value = dbBottom;
+                    //      document.getElementsByClassName('Bottom')[0].innerHTML = мsup2(dbBottom);
+                    // // console.log(resp.Left);
+                    //      dbLeft += resp.Left;
+                    //      document.getElementById("Left").value = dbLeft;
+                    //      document.getElementsByClassName('Left')[0].innerHTML = мsup2(dbLeft);
+                    // // console.log(resp.Right);
+                    //      dbRight += resp.Right;
+                    //      document.getElementById("Right").value = dbRight;
+                    //      document.getElementsByClassName('Right')[0].innerHTML = мsup2(dbRight);
+                    // // console.log(resp.General);
+                    //      dbGeneral += resp.General;
+                    //      document.getElementById("General").value = dbGeneral;
+                    //      document.getElementsByClassName('General')[0].innerHTML = мsup2(dbGeneral);
 
-                console.log("dataArray.lenght: "+dataArray.length);
-                for (let i = 0 ; i < dataArray.length; i++) {
-                    var arr=dataArray[i]['data'];
-                    // console.log("dataArray[i]['data'].length "+Object.keys(arr).length);
-                    for (let j = 1 ; j <= Object.keys(arr).length; j++) {
-                        console.log(arr[j]['directional']);
-                    }
-
-                    // arr.forEach(function(item, i, arr) {
-                    //     console.log( i + ": " + item + " (массив:" + arr + ")" );
-                    //     });
-                                            // console.log(dataArray[i]['data'][1]['area']);
-                    }
+                // resp.totalareaconsole.log("dataArray.lenght: " + dataArray.length);
+                // for (let i = 0; i < dataArray.length; i++) {
+                //     var arr = dataArray[i]['data'];
+                //     // console.log("dataArray[i]['data'].length "+Object.keys(arr).length);
+                //     for (let j = 1; j <= Object.keys(arr).length; j++) {
+                //         console.log(arr[j]['directional']);
+                //     }
+                // }
 
                 var t5 = document.forms.Sum.querySelectorAll('input[type="checkbox"][value="0"]');
-                for (var i = 0; i < t5.length; i++) // чтобы не было написано NaN, убираем в disabled пункты, где не прописаны значения
+                for (var i = 0; i < t5
+                    .length; i++) // чтобы не было написано NaN, убираем в disabled пункты, где не прописаны значения
                 {
                     t5[i].disabled = true;
                 }
                 // greyProgress.classList.add("class-name"); // добавить класс 
                 greyProgress.classList.remove("meter"); // удалить класс 
 
-                dend = new Date();
-                duration = dend.getTime() - dstart.getTime();
-                document.getElementById("video-information").innerHTML = "Обработка закончена: " + msToTime(duration);
-                console.log(duration + ' ms');
+                // dend = new Date();
+                // duration = dend.getTime() - dstart.getTime();
+                // document.getElementById("video-information").innerHTML = "Обработка закончена: " + msToTime(
+                //     duration);
+                // console.log(duration + ' ms');
             }
 
         };
@@ -398,10 +459,11 @@
             }
         }
     }
+
     function forEachm2(data) {
-        info3.insertAdjacentHTML('beforeend', "normal: " +Object.keys(data['data']).length + "<BR>");
+        info3.insertAdjacentHTML('beforeend', "normal: " + Object.keys(data['data']).length + "<BR>");
         for (var i = 1; i <= Object.keys(data['data']).length; i++) {
-        info3.insertAdjacentHTML('beforeend', "area: " + data['data'][i]['area'] + "<BR>");
+            info3.insertAdjacentHTML('beforeend', "area: " + data['data'][i]['area'] + "<BR>");
         }
     }
 
