@@ -10,7 +10,7 @@
     <style>
     #greyProgress {
         /* width: 100%; */
-        width: 30%;
+        width: 40%;
         background-color: #ddd;
     }
 
@@ -97,14 +97,14 @@
 
     #drop-area {
         border: 2px dashed #ccc;
-        border-radius: 20px;
+        /* border-radius: 20px; */
         /* width: 480px; */
         width: 50%;
         /* margin: 50px auto; */
         padding: 20px;
         float: right;
         height: 180px;
-      
+        text-align: center;
         margin-right: 50px;
     }
 
@@ -129,8 +129,8 @@
         margin-bottom: 40px;
     }
         .box__file {
-        /* width: 0.1px; */
-        /* height: 0.1px; */
+        width: 0.1px;
+        height: 0.1px;
         opacity: 0;
         overflow: hidden;
         /* position: absolute; */
@@ -144,19 +144,25 @@
     display: inline-block;
     overflow: hidden;
 }
+.box.has-advanced-upload {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+}
     
     </style>
 </head>
 
 <body>
 <!-- https://css-tricks.com/examples/DragAndDropFileUploading//? источник -->
-    <div id="drop-area" class="box__input box">
+    <div id="drop-area" class=" box has-advanced-upload">
         <div class="box__input ">
         <svg class="box__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="43" viewBox="0 0 50 43"><path d="M48.4 26.5c-.9 0-1.7.7-1.7 1.7v11.6h-43.3v-11.6c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v13.2c0 .9.7 1.7 1.7 1.7h46.7c.9 0 1.7-.7 1.7-1.7v-13.2c0-1-.7-1.7-1.7-1.7zm-24.5 6.1c.3.3.8.5 1.2.5.4 0 .9-.2 1.2-.5l10-11.6c.7-.7.7-1.7 0-2.4s-1.7-.7-2.4 0l-7.1 8.3v-25.3c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v25.3l-7.1-8.3c-.7-.7-1.7-.7-2.4 0s-.7 1.7 0 2.4l10 11.6z"></path></svg>
-        
-        </div>
-    <input type="file" id="video-url-example"  class="box__file">
+         <input type="file" id="video-url-example"  class="box__file">
     <label for="video-url-example"><strong>Выберите файл</strong><span class="box__dragndrop"> или перетащите его сюда</span>.</label>
+        </div>
+   
     </div>
     <!-- <br> -->
     <!-- <br> -->
@@ -215,7 +221,7 @@
                     Общий вид:
                     <span class="checkmark General">0</span>
                 </li>
-                <output id="rezultat">Площадь поверхности: 0</output>
+                <output id="rezultat">Сумма площадей всех граней: 0</output>
             </ul>
         </form>
     </div>
@@ -268,7 +274,7 @@
         // totalArea = 0;
         // dataArray = [];
         // dbFront = dbBack = dbTop = dbBottom = dbLeft = dbRight = dbGeneral = 0;
-        // document.getElementById("rezultat").innerHTML = "Площадь поверхности: 0 м&sup2";
+        // document.getElementById("rezultat").innerHTML = "Сумма площадей всех граней: 0 м&sup2";
         // var r1 = document.forms.Sum.querySelectorAll('[type="checkbox"]');
         // for (var j = 0; j < r1.length; j++) {
         //     r1[j].value = 0;
@@ -363,8 +369,8 @@
             // div.insertAdjacentHTML('afterend', '<li>Пока</p>');   
             if (resp.hasOwnProperty('totalarea')) {
                 totalArea += resp.totalarea;
-                // respinfo.insertAdjacentHTML('beforeend',"Площадь поверхности: " + parseFloat((resp.totalarea / 1000000).toFixed(3)) +" м&sup2<br>");
-                respinfo.innerHTML = "Площадь поверхности: " + мsup2(totalArea) + " м&sup2";
+                // respinfo.insertAdjacentHTML('beforeend',"Сумма площадей всех граней: " + parseFloat((resp.totalarea / 1000000).toFixed(3)) +" м&sup2<br>");
+                respinfo.innerHTML = "Общая площадь поверхности: " + мsup2(totalArea) + " м&sup2";
                 dataArray.push(resp);
 
                 dbFront += resp.Front;
@@ -394,7 +400,7 @@
                 dbGeneral += resp.General;
                 document.getElementById("General").value = dbGeneral;
                 document.getElementsByClassName('General')[0].innerHTML = мsup2(dbGeneral);
-                document.getElementById("rezultat").innerHTML = "Площадь поверхности: " + мsup2(totalArea) +
+                document.getElementById("rezultat").innerHTML = "Сумма площадей всех граней: " + мsup2(totalArea) +
                     " м&sup2";
 
 
@@ -428,7 +434,7 @@
                 document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(
                     duration);
 
-                document.getElementById("rezultat").innerHTML = "Площадь поверхности: " + мsup2(totalArea) +
+                document.getElementById("rezultat").innerHTML = "Сумма площадей всех граней: " + мsup2(totalArea) +
                     " м&sup2";
                 // Front, Back, Top, Bottom, Left, Right, General
                 // dbFront, dbBack, dbTop, dbBottom, dbLeft, dbRight, dbGeneral;
@@ -604,7 +610,7 @@
             itog = 0;
         for (var j = 0; j < n1.length; j++) {
             n1[j].checked ? itog += parseFloat(n1[j].value) : itog;
-            document.getElementById('rezultat').innerHTML = 'Площадь поверхности: ' + мsup2(itog) + " м&sup2";
+            document.getElementById('rezultat').innerHTML = 'Сумма площадей всех граней: ' + мsup2(itog) + " м&sup2";
         }
 
     }
@@ -670,7 +676,7 @@ function handleFiles(files) {
         totalArea = 0;
         dataArray = [];
         dbFront = dbBack = dbTop = dbBottom = dbLeft = dbRight = dbGeneral = 0;
-        document.getElementById("rezultat").innerHTML = "Площадь поверхности: 0 м&sup2";
+        document.getElementById("rezultat").innerHTML = "Сумма площадей всех граней: 0 м&sup2";
         var r1 = document.forms.Sum.querySelectorAll('[type="checkbox"]');
         for (var j = 0; j < r1.length; j++) {
             r1[j].value = 0;
@@ -683,7 +689,7 @@ function handleFiles(files) {
         }
 
         numberofChunks = Math.ceil((file.size - 84) / chunkSize50 + 1);
-        info1.innerHTML = file.size + " байт поделено на " +
+        info1.innerHTML =file.name+": "+ file.size + " байт поделено на " +
             numberofChunks +
             " частей."
 
