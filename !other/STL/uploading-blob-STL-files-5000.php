@@ -17,7 +17,8 @@
     #greenBar {
         width: 0%;
         height: 30px;
-        background: green;
+        /* background: green; */
+        background: #FCBC51;
         text-align: center;
         line-height: 30px;
         color: white;
@@ -25,7 +26,9 @@
 
     }
 
-
+    .ok{
+        background: green !important;
+    }
 
 
     .meter>div {
@@ -97,7 +100,7 @@
 <body>
 
 
-    <input type="file" id="video-url-example">
+    <input type="file" id="video-url-example" style=" WIDTH: 50%;">
     <br>
     <br>
     <div id="greyProgress" class="">
@@ -196,6 +199,7 @@
     // Далее мы создаем EventListener на входе - когда файл добавляется, разделить файл и начать процесс загрузки:
     input.addEventListener('change', () => {
         greyProgress.classList.add("meter"); // добавить класс 
+        document.getElementById("greenBar").classList.remove("ok");
         document.getElementById("video-information").innerHTML = "";
         respinfo.innerHTML = "";
         start = 0;
@@ -416,6 +420,9 @@
                 }
                 // greyProgress.classList.add("class-name"); // добавить класс 
                 greyProgress.classList.remove("meter"); // удалить класс 
+             
+                document.getElementById("greenBar").classList.add("ok"); // добавить класс 
+                
 
                 // dend = new Date();
                 // duration = dend.getTime() - dstart.getTime();
