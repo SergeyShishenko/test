@@ -156,7 +156,7 @@
         
         </div>
     <input type="file" id="video-url-example"  class="box__file">
-    <label for="video-url-example"><strong>Выберите файл</strong><span class="box__dragndrop"> Выберите файл или перетащите его сюда</span>.</label>
+    <label for="video-url-example"><strong>Выберите файл</strong><span class="box__dragndrop"> или перетащите его сюда</span>.</label>
     </div>
     <!-- <br> -->
     <!-- <br> -->
@@ -166,11 +166,11 @@
         </div>
         <br>
         
-        <div id="video-information1" style="width: 50%"></div>
-        <div id="video-information" style="width: 50%"></div>
-        <div id="chunk-information" style="width: 50%"></div>
-        <div id="response-information" style="width: 50%">Загрузите файл STL</div>
-        <div id="info3" style="width: 50%"></div>
+        <div id="video-information1" style="width: 40%"></div>
+        <div id="video-information" style="width: 40%"></div>
+        <div id="chunk-information" style="width: 40%"></div>
+        <div id="response-information" style="width: 40%">Загрузите файл STL</div>
+        <div id="info3" style="width: 40%"></div>
         <form name="Sum">
             <!-- Front, Back, Top, Bottom, Left, Right, General -->
             <ul>
