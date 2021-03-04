@@ -1,86 +1,72 @@
 var container, camera, scene, renderer;
+var cube, mesh;
+var controls;
 
 init();
 animate();
 
-function init() {
+function init(){
+
   container = document.createElement("div");
   document.body.appendChild(container);
 
-  // renderer
+    renderer = new THREE.WebGLRenderer( {antialias:true} );
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+    renderer.setSize (width, height);
+    document.body.appendChild (renderer.domElement);
 
-  renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  container.appendChild(renderer.domElement);
+    scene = new THREE.Scene();
+    
+    // var cubeGeometry = new THREE.BoxGeometry (10,10,10);
+    // var cubeMaterial = new THREE.MeshBasicMaterial ({color: 0x1ec876});
+    // cube = new THREE.Mesh (cubeGeometry, cubeMaterial);
 
-  // scene
+    // cube.position.set (0, 0, 0);
+    // scene.add (cube);
+    var loader = new THREE.STLLoader();
+    // var stl="DW-1274(800)-010R.stl";
+    var stl="DW-1274(800)-009.stl";
+    // var stl="box.stl";
+    loader.load(stl, function(geometry) {
+      // material = new THREE.MeshPhongMaterial({ color: 0xff5533 });
+      material = new THREE.MeshBasicMaterial ({color: 0x1ec876});
+  
+      mesh = new THREE.Mesh(geometry, material);
+      // mesh.scale.set(0.01,0.01,0.01);
+      // mesh.scale.set(0.1,0.1,0.1);
+      mesh.position.set (0, 0, 0);
+      scene.add(mesh);
+      renderer.render(scene, camera);
+    });
+      // renderer.render(scene, camera);
 
-  scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera (45, width/height, 0.1, 10000);
+    // camera.position.y = 160;
+    // camera.position.z = 400;
+    camera.position.y = 160;
+    camera.position.z = 400;
+    camera.lookAt (new THREE.Vector3(0,0,0));
 
-  // camera
+    controls = new THREE.OrbitControls (camera, renderer.domElement);
+    
+    var gridXZ = new THREE.GridHelper(100, 100);
+    gridXZ.setColors( new THREE.Color(0xff0000), new THREE.Color(0xffffff) );
+    scene.add(gridXZ);
 
-  camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    10000
-  );
-  const controls = new OrbitControls( camera, renderer.domElement );
-  // camera.position.set(3, 0.5, 3);
-  camera.position.set( 0, 20, 100 );
-  controls.update();
-  // camera.position.set(0, 0, 100);
-  scene.add(camera); // required, because we are adding a light as a child of the camera
-
-  // lights
-
-  scene.add(new THREE.AmbientLight(0x222222));
-
-  var light = new THREE.PointLight(0xffffff, 0.8);
-  camera.add(light);
-
-  // object
-
-  var loader = new THREE.STLLoader();
-  // var stl="DW-1274(800)-010R.stl";
-  // var stl="DW-1274(800)-009.stl";
-  var stl="box.stl";
-  loader.load(stl, function(geometry) {
-    var material = new THREE.MeshPhongMaterial({ color: 0xff5533 });
-
-    var mesh = new THREE.Mesh(geometry, material);
-    // mesh.scale.set(0.01,0.01,0.01);
-    // mesh.scale.set(0.1,0.1,0.1);
-
-    scene.add(mesh);
-    renderer.render(scene, camera);
-  });
-
-  window.addEventListener("resize", onWindowResize, false);
 }
 
-function onWindowResize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
-
-  camera.updateProjectionMatrix();
-
-  // renderer.setSize(window.innerWidth, window.innerHeight);
+function animate()
+{
+    controls.update();
+    requestAnimationFrame ( animate );  
+    renderer.render (scene, camera);
 }
 
-function animate() {
-  requestAnimationFrame(animate);
-  controls.update();
-  render();
-}
 
-function render() {
-  var timer = Date.now() * 0.0005;
 
-  camera.position.x = Math.cos(timer) * 5;
-  camera.position.y = Math.sin(timer) * 5;
-  // camera.position.z = Math.sin(timer) * 5;
-
-  camera.lookAt(scene.position);
-
-  renderer.render(scene, camera);
-}
+controls = new THREE.OrbitControls( camera, renderer.domElement );
+controls.enableDamping = true;
+controls.dampingFactor = 0.25;
+controls.enableZoom = true;
+controls.autoRotate = true;
