@@ -3,6 +3,7 @@ var container, camera, scene, renderer;
 var cube, mesh;
 var controls;
 var stl="box.stl";
+var input = document.querySelector('#STL');
 init();
 animate();
 
@@ -14,7 +15,7 @@ function init(){
   var container = document.getElementById('canvas');
     renderer = new THREE.WebGLRenderer( {antialias:true} );
     var width = window.innerWidth;
-    var height = window.innerHeight;
+    var height = window.innerHeight-250;
     renderer.setSize (width, height);
     document.body.appendChild (renderer.domElement);
 
@@ -60,8 +61,8 @@ function init(){
       //
       // renderer.render(scene, camera);
 
-    camera = new THREE.PerspectiveCamera (45, width/height, 0.1, 1000);
-    camera.position.y = 400;
+    camera = new THREE.PerspectiveCamera (20, width/height, 0.1, 10000);
+    camera.position.y = 500;
     camera.position.x = 400;
     // camera.position.y = 160;
     camera.position.z = -400;
@@ -76,6 +77,28 @@ function init(){
     scene.add(gridXZ);
 
 }
+
+
+input.addEventListener('change', () => {
+  
+
+  file = input.files[0];
+  alert(file);
+  var loader = new THREE.STLLoader();
+  loader.load(file.name, function (geometry) {
+
+    material = new THREE.MeshNormalMaterial();
+
+    mesh = new THREE.Mesh(geometry, material);
+
+    mesh.position.set(0, 0, 0);
+    scene.add(mesh);
+    animate();
+
+
+
+  });
+});
 
 function animate()
 {

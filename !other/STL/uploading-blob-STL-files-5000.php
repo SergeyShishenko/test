@@ -8,161 +8,171 @@
     <link rel="shortcut icon" href="stl.png" type="image/x-icon">
     <title>Загрузка файла STL</title>
     <style>
-    #greyProgress {
-        /* width: 100%; */
-        width: 40%;
-        background-color: #ddd;
-    }
-
-    #greenBar {
-        width: 0%;
-        height: 30px;
-        /* background: green; */
-        background: #FCBC51;
-        text-align: center;
-        line-height: 30px;
-        color: white;
-
-
-    }
-
-    .ok {
-        background: green !important;
-    }
-
-
-    .meter>div {
-        display: block;
-        height: 30%;
-
-        position: relative;
-        overflow: hidden;
-    }
-
-    .meter>div:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-image: linear-gradient(-45deg,
-            rgba(255, 255, 255, 0.2) 25%,
-            transparent 25%,
-            transparent 50%,
-            rgba(255, 255, 255, 0.2) 50%,
-            rgba(255, 255, 255, 0.2) 75%,
-            transparent 75%,
-            transparent);
-        z-index: 1;
-        background-size: 50px 50px;
-        animation: move 2s linear infinite;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        overflow: hidden;
-    }
-
-
-
-    @keyframes move {
-        0% {
-            background-position: 0 0;
+        #greyProgress {
+            /* width: 100%; */
+            width: 40%;
+            background-color: #ddd;
         }
 
-        100% {
-            background-position: 50px 50px;
-        }
-    }
+        #greenBar {
+            width: 0%;
+            height: 30px;
+            /* background: green; */
+            background: #FCBC51;
+            text-align: center;
+            line-height: 30px;
+            color: white;
 
-    /* checkbox */
-    /* .container {
+
+        }
+
+        .ok {
+            background: green !important;
+        }
+
+
+        .meter>div {
             display: block;
+            height: 30%;
+
             position: relative;
-            padding-left: 35px;
-            margin-bottom: 12px;
-            cursor: pointer;
-            
-            user-select: none;
-        } */
+            overflow: hidden;
+        }
+
+        .meter>div:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-image: linear-gradient(-45deg,
+                rgba(255, 255, 255, 0.2) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.2) 50%,
+                rgba(255, 255, 255, 0.2) 75%,
+                transparent 75%,
+                transparent);
+            z-index: 1;
+            background-size: 50px 50px;
+            animation: move 2s linear infinite;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            overflow: hidden;
+        }
 
 
 
-    ul {
-        list-style-type: none;
-    }
+        @keyframes move {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 50px 50px;
+            }
+        }
+
+        /* checkbox */
+        /* .container {
+                        display: block;
+                        position: relative;
+                        padding-left: 35px;
+                        margin-bottom: 12px;
+                        cursor: pointer;
+                        
+                        user-select: none;
+                    } */
 
 
 
-    #drop-area {
-        border: 2px dashed #ccc;
-        /* border-radius: 20px; */
-        /* width: 480px; */
-        width: 50%;
-        /* margin: 50px auto; */
-        padding: 20px;
-        float: right;
-        height: 180px;
-        text-align: center;
-        margin-right: 50px;
-    }
+        ul {
+            list-style-type: none;
+        }
 
-    #drop-area.highlight {
-        border-color: purple;
-    }
-    .row{
-          margin-top: 50px;
-          margin-left: 50px;
-    }
-    .box {
-    font-size: 1.25rem;
-    background-color: #c8dadf;
-    position: relative;
-    /* padding: 100px 20px; */
-    }
-    .box__icon {
-        width: 100%;
-        height: 80px;
-        fill: #92b0b3;
-        display: block;
-        margin-bottom: 40px;
-    }
+
+
+        #drop-area {
+            border: 2px dashed #ccc;
+            /* border-radius: 20px; */
+            /* width: 480px; */
+            width: 50%;
+            /* margin: 50px auto; */
+            padding: 20px;
+            float: right;
+            height: 180px;
+            text-align: center;
+            margin-right: 50px;
+        }
+
+        #drop-area.highlight {
+            border-color: purple;
+        }
+
+        .row {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .box {
+            font-size: 1.25rem;
+            background-color: #c8dadf;
+            position: relative;
+            /* padding: 100px 20px; */
+        }
+
+        .box__icon {
+            width: 100%;
+            height: 80px;
+            fill: #92b0b3;
+            display: block;
+            margin-bottom: 40px;
+        }
+
         .box__file {
-        width: 0.1px;
-        height: 0.1px;
-        opacity: 0;
-        overflow: hidden;
-        /* position: absolute; */
-        z-index: -1;
-    }
-    .box__file + label {
-    max-width: 80%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: pointer;
-    display: inline-block;
-    overflow: hidden;
-}
-.box.has-advanced-upload {
-    outline: 2px dashed #92b0b3;
-    outline-offset: -10px;
-    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
-    transition: outline-offset .15s ease-in-out, background-color .15s linear;
-}
-    
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0;
+            overflow: hidden;
+            /* position: absolute; */
+            z-index: -1;
+        }
+
+        .box__file+label {
+            max-width: 80%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            cursor: pointer;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        .box.has-advanced-upload {
+            outline: 2px dashed #92b0b3;
+            outline-offset: -10px;
+            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            transition: outline-offset .15s ease-in-out, background-color .15s linear;
+        }
     </style>
 </head>
 
 <body>
-<!-- https://css-tricks.com/examples/DragAndDropFileUploading//? источник -->
+    <!-- https://css-tricks.com/examples/DragAndDropFileUploading//? источник -->
     <div id="drop-area" class=" box has-advanced-upload">
         <div class="box__input ">
-        <svg class="box__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="43" viewBox="0 0 50 43"><path d="M48.4 26.5c-.9 0-1.7.7-1.7 1.7v11.6h-43.3v-11.6c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v13.2c0 .9.7 1.7 1.7 1.7h46.7c.9 0 1.7-.7 1.7-1.7v-13.2c0-1-.7-1.7-1.7-1.7zm-24.5 6.1c.3.3.8.5 1.2.5.4 0 .9-.2 1.2-.5l10-11.6c.7-.7.7-1.7 0-2.4s-1.7-.7-2.4 0l-7.1 8.3v-25.3c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v25.3l-7.1-8.3c-.7-.7-1.7-.7-2.4 0s-.7 1.7 0 2.4l10 11.6z"></path></svg>
-         <input type="file" id="video-url-example"  class="box__file">
-    <label for="video-url-example"><strong>Выберите файл</strong><span class="box__dragndrop"> или перетащите его сюда</span>.</label>
+            <svg class="box__icon" xmlns="http://www.w3.org/2000/svg" width="50" height="43" viewBox="0 0 50 43">
+                <path
+                    d="M48.4 26.5c-.9 0-1.7.7-1.7 1.7v11.6h-43.3v-11.6c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v13.2c0 .9.7 1.7 1.7 1.7h46.7c.9 0 1.7-.7 1.7-1.7v-13.2c0-1-.7-1.7-1.7-1.7zm-24.5 6.1c.3.3.8.5 1.2.5.4 0 .9-.2 1.2-.5l10-11.6c.7-.7.7-1.7 0-2.4s-1.7-.7-2.4 0l-7.1 8.3v-25.3c0-.9-.7-1.7-1.7-1.7s-1.7.7-1.7 1.7v25.3l-7.1-8.3c-.7-.7-1.7-.7-2.4 0s-.7 1.7 0 2.4l10 11.6z">
+                </path>
+            </svg>
+            <input type="file" id="video-url-example" class="box__file">
+            <label for="video-url-example"><strong>Выберите файл</strong><span class="box__dragndrop"> или перетащите
+                    его сюда</span>.</label>
         </div>
-   
+
     </div>
     <!-- <br> -->
     <!-- <br> -->
@@ -171,7 +181,7 @@
             <div id="greenBar"></div>
         </div>
         <br>
-        
+
         <div id="video-information1" style="width: 40%"></div>
         <div id="video-information" style="width: 40%"></div>
         <div id="chunk-information" style="width: 40%"></div>
@@ -479,7 +489,7 @@
                 var t5 = document.forms.Sum.querySelectorAll('input[type="checkbox"][value="0"]');
                 for (var i = 0; i < t5
                     .length; i++
-                    ) // чтобы не было написано NaN, убираем в disabled пункты, где не прописаны значения
+                ) // чтобы не было написано NaN, убираем в disabled пункты, где не прописаны значения
                 {
                     t5[i].disabled = true;
                 }
@@ -610,7 +620,8 @@
             itog = 0;
         for (var j = 0; j < n1.length; j++) {
             n1[j].checked ? itog += parseFloat(n1[j].value) : itog;
-            document.getElementById('rezultat').innerHTML = 'Сумма площадей всех граней: ' + мsup2(itog) + " м&sup2";
+            document.getElementById('rezultat').innerHTML = 'Сумма площадей всех граней: ' + мsup2(itog) +
+            " м&sup2";
         }
 
     }
@@ -620,50 +631,53 @@
     }
 
 
-// ************************ Drag and drop ***************** //
-let dropArea = document.getElementById("drop-area")
+    // ************************ Drag and drop ***************** //
+    let dropArea = document.getElementById("drop-area")
 
-// Prevent default drag behaviors
-;['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
-  dropArea.addEventListener(eventName, preventDefaults, false)   
-  document.body.addEventListener(eventName, preventDefaults, false)
-})
+    // Prevent default drag behaviors
+    ;
+    ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+        dropArea.addEventListener(eventName, preventDefaults, false)
+        document.body.addEventListener(eventName, preventDefaults, false)
+    })
 
-// Highlight drop area when item is dragged over it
-;['dragenter', 'dragover'].forEach(eventName => {
-  dropArea.addEventListener(eventName, highlight, false)
-})
+    // Highlight drop area when item is dragged over it
+    ;
+    ['dragenter', 'dragover'].forEach(eventName => {
+        dropArea.addEventListener(eventName, highlight, false)
+    })
 
-;['dragleave', 'drop'].forEach(eventName => {
-  dropArea.addEventListener(eventName, unhighlight, false)
-})
+    ;
+    ['dragleave', 'drop'].forEach(eventName => {
+        dropArea.addEventListener(eventName, unhighlight, false)
+    })
 
-// Handle dropped files
-dropArea.addEventListener('drop', handleDrop, false)
+    // Handle dropped files
+    dropArea.addEventListener('drop', handleDrop, false)
 
-function preventDefaults (e) {
-  e.preventDefault()
-  e.stopPropagation()
-}
+    function preventDefaults(e) {
+        e.preventDefault()
+        e.stopPropagation()
+    }
 
-function highlight(e) {
-  dropArea.classList.add('highlight')
-}
+    function highlight(e) {
+        dropArea.classList.add('highlight')
+    }
 
-function unhighlight(e) {
-  dropArea.classList.remove('active')
-}
+    function unhighlight(e) {
+        dropArea.classList.remove('active')
+    }
 
-function handleDrop(e) {
-  var dt = e.dataTransfer
-  var files = dt.files
+    function handleDrop(e) {
+        var dt = e.dataTransfer
+        var files = dt.files
 
-  handleFiles(files)
-}
+        handleFiles(files)
+    }
 
-function handleFiles(files) {
+    function handleFiles(files) {
 
-    greyProgress.classList.add("meter"); // добавить класс 
+        greyProgress.classList.add("meter"); // добавить класс 
         document.getElementById("greenBar").classList.remove("ok");
         document.getElementById("video-information").innerHTML = "";
         respinfo.innerHTML = "";
@@ -685,30 +699,28 @@ function handleFiles(files) {
         var c1 = document.forms.Sum.getElementsByClassName('checkmark');
         for (var j = 0; j < c1.length; j++) {
             c1[j].innerHTML = 0;
-           
+
         }
 
         numberofChunks = Math.ceil((file.size - 84) / chunkSize50 + 1);
-        info1.innerHTML =file.name+": "+ file.size + " байт поделено на " +
+        info1.innerHTML = file.name + ": " + file.size + " байт поделено на " +
             numberofChunks +
             " частей."
 
         var chunkEnd = start + chunkSize;
-      
+
         createChunk();
-      
 
 
-}
 
-var inpElem = document.body.children[0],
+    }
+
+    var inpElem = document.body.children[0],
         label = inpElem.nextElementSibling;
     inpElem.onclick = function() {
         label.checked = true;
     };
     inpElem.click();
-
-
     </script>
 </body>
 
