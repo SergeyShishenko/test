@@ -2,7 +2,7 @@
 var container, camera, scene, renderer;
 var cube, mesh;
 var controls;
-
+var stl="box.stl";
 init();
 animate();
 
@@ -26,23 +26,23 @@ function init(){
 
     // cube.position.set (0, 0, 0);
     // scene.add (cube);
-    var loader = new THREE.STLLoader();
+    // var loader = new THREE.STLLoader();
     // var stl="DW-1274(800)-010R.stl";
     // var stl="DW-1274(800)-009.stl";
-    var stl="box.stl";
+    
     // var stl="DW-1270-007R.stl";
-    loader.load(stl, function(geometry) {
-      // material = new THREE.MeshPhongMaterial({ color: 0xff5533 });
-      // material = new THREE.MeshBasicMaterial ({color: 0x1ec876});
-      material = new THREE.MeshNormalMaterial();
+    // loader.load(stl, function(geometry) {
+    //   // material = new THREE.MeshPhongMaterial({ color: 0xff5533 });
+    //   // material = new THREE.MeshBasicMaterial ({color: 0x1ec876});
+    //   material = new THREE.MeshNormalMaterial();
   
-      mesh = new THREE.Mesh(geometry, material);
-      // mesh.scale.set(0.01,0.01,0.01);
-      // mesh.scale.set(0.1,0.1,0.1);
-      mesh.position.set (0, 0, 0);
-      scene.add(mesh);
-      renderer.render(scene, camera);
-    });
+    //   mesh = new THREE.Mesh(geometry, material);
+    //   // mesh.scale.set(0.01,0.01,0.01);
+    //   // mesh.scale.set(0.1,0.1,0.1);
+    //   mesh.position.set (0, 0, 0);
+    //   scene.add(mesh);
+    //   renderer.render(scene, camera);
+    // });
 
     	// lights
 
@@ -100,7 +100,21 @@ window.addEventListener( 'resize', onWindowResize );
 
 					// hemiLight.visible = ! hemiLight.visible;
 					// hemiLightHelper.visible = ! hemiLightHelper.visible;
-alert('click');
+// alert(stl);
+var loader = new THREE.STLLoader();
+loader.load(stl, function(geometry) {
+  // material = new THREE.MeshPhongMaterial({ color: 0xff5533 });
+  // material = new THREE.MeshBasicMaterial ({color: 0x1ec876});
+  material = new THREE.MeshNormalMaterial();
+
+  mesh = new THREE.Mesh(geometry, material);
+  // mesh.scale.set(0.01,0.01,0.01);
+  // mesh.scale.set(0.1,0.1,0.1);
+  mesh.position.set (0, 0, 0);
+  scene.add(mesh);
+  animate();
+  // renderer.render(scene, camera);
+});
 				} );
 
 
