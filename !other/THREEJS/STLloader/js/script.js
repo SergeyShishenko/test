@@ -84,6 +84,25 @@ function animate()
     renderer.render (scene, camera);
 }
 
+function onWindowResize() {
+
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+
+  renderer.setSize( window.innerWidth, window.innerHeight );
+
+}
+
+window.addEventListener( 'resize', onWindowResize );
+
+				const hemisphereButton = document.getElementById( 'hemisphereButton' );
+				hemisphereButton.addEventListener( 'click', function () {
+
+					// hemiLight.visible = ! hemiLight.visible;
+					// hemiLightHelper.visible = ! hemiLightHelper.visible;
+alert('click');
+				} );
+
 
 
 controls = new THREE.OrbitControls( camera, renderer.domElement );
