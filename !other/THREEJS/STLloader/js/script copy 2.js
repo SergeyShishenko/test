@@ -2,7 +2,7 @@
 var container, camera, scene, renderer;
 var cube, mesh;
 var controls;
-// var stl="box.stl";
+var stl="box.stl";
 var input = document.querySelector('#STL');
 init();
 animate();
@@ -112,10 +112,9 @@ input.addEventListener( 'change', function( event ) {
       // mesh.castShadow = true;
       // mesh.receiveShadow = true;
       // scene.add( mesh );
-      // alert(contents);
+      alert(contents);
         var loader = new THREE.STLLoader();
-  // loader.load(contents, function (geometry) {});
-  geometry = loader.parse( contents )
+  loader.load(contents, function (geometry) {
 
     material = new THREE.MeshNormalMaterial();
 
@@ -124,7 +123,7 @@ input.addEventListener( 'change', function( event ) {
     mesh.position.set(0, 0, 0);
     scene.add(mesh);
     animate();
-  
+  });
   }, false );
   if ( reader.readAsBinaryString !== undefined ) {
       reader.readAsBinaryString( file );
