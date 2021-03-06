@@ -36,27 +36,18 @@ function init(){
 
 
 
-    camera = new THREE.PerspectiveCamera (20, width/height, 0.1, 50000);
-    // camera.position.y = 500;
-    // camera.position.x = 400; 
-    // camera.position.z = -400;
+    camera = new THREE.PerspectiveCamera (20, width/height, 0.1, 50000);   
     camera.position.y = 200;
     camera.position.x = 400;
  
     camera.position.z = -200;
-   
-    
-    // camera.lookAt (new THREE.Vector3(0,0,0));
+
 
     controls = new THREE.OrbitControls (camera, renderer.domElement);
-    
-    // var gridXZ = new THREE.GridHelper(100, 10);
-   
-    // scene.add(gridXZ);
-    // scene.add(new THREE.AmbientLight(0xffffff, 1.0));
+ 
 
 var sizeBound = new THREE.Vector3(4, 4, 4);
-// var sizeBound = new THREE.Vector3(200, 200, 200);
+
 
 var b = new THREE.Mesh(new THREE.BoxBufferGeometry(sizeBound.x, sizeBound.y, sizeBound.z), new THREE.MeshBasicMaterial());
 boxHelper = new THREE.BoxHelper(b,0x03fc2c );
@@ -80,10 +71,11 @@ input.addEventListener( 'change', function( event ) {
     // material = new THREE.MeshNormalMaterial();
   
     // material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
-    const material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 } );
+    var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 } );
     
 
     mesh = new THREE.Mesh(geometry, material);
+    mesh.name = 'nameMeshObject';
 
     scaleToFit(mesh, sizeBound); // умещаем в заданные размеры
 
@@ -97,8 +89,7 @@ input.addEventListener( 'change', function( event ) {
     camera.position.x = 10;
  
     camera.position.z = -5;
-    controls.autoRotate =false;
-    // boxHelper.material.color.set(0x000000);
+    controls.autoRotate =false; 
     boxHelper.visible=false;
     animate();
   
@@ -159,24 +150,17 @@ function scaleToFit(obj, bound) {
 
   }
 
+ var removeEnt = document.getElementById('removeEnt');
+removeEnt.addEventListener('click',  function removeEntity() { 
+  scene.remove( scene.children[4]);//mesh
+  animate();
+}); 
+
+ 
+
 window.addEventListener( 'resize', onWindowResize );
 
-// const hemisphereButton = document.getElementById('hemisphereButton');
-// hemisphereButton.addEventListener('click', function () {
 
-//     var loader = new THREE.STLLoader();
-//     loader.load(stl, function (geometry) {
-
-//         material = new THREE.MeshNormalMaterial();
-
-//         mesh = new THREE.Mesh(geometry, material);
-
-//         mesh.position.set(0, 0, 0);
-//         scene.add(mesh);
-//         animate();
-
-//     });
-// });
 
 
 
