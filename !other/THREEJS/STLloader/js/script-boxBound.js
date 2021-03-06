@@ -23,10 +23,20 @@ function init(){
     document.body.appendChild (renderer.domElement);
 
     scene = new THREE.Scene();
+    scene.background = new THREE.Color( 0x72645b );
+				// scene.fog = new THREE.Fog( 0x72645b, 2, 15 );
     
-    
+    // Lights
 
-    camera = new THREE.PerspectiveCamera (20, width/height, 0.1, 10000);
+    scene.add( new THREE.HemisphereLight( 0x443333, 0x111122 ) );
+
+    addShadowedLight( 1, 1, 1, 0xffffff, 1.35 );
+    addShadowedLight( 0.5, 1, - 1, 0xffaa00, 1 );
+
+
+
+
+    camera = new THREE.PerspectiveCamera (20, width/height, 0.1, 50000);
     // camera.position.y = 500;
     // camera.position.x = 400; 
     // camera.position.z = -400;
@@ -67,7 +77,11 @@ input.addEventListener( 'change', function( event ) {
   
   geometry = loader.parse( contents )
 
-    material = new THREE.MeshNormalMaterial();
+    // material = new THREE.MeshNormalMaterial();
+  
+    // material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
+    const material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 } );
+    
 
     mesh = new THREE.Mesh(geometry, material);
 
@@ -122,6 +136,27 @@ function scaleToFit(obj, bound) {
     let vScale = new THREE.Vector3().copy(bound).divide(size);
     let scale = Math.min(vScale.x, Math.min(vScale.y, vScale.z));
     obj.scale.setScalar(scale);
+  }
+
+  function addShadowedLight( x, y, z, color, intensity ) {
+
+    const directionalLight = new THREE.DirectionalLight( color, intensity );
+    directionalLight.position.set( x, y, z );
+    scene.add( directionalLight );
+
+    directionalLight.castShadow = true;
+
+    const d = 1;
+    directionalLight.shadow.camera.left = - d;
+    directionalLight.shadow.camera.right = d;
+    directionalLight.shadow.camera.top = d;
+    directionalLight.shadow.camera.bottom = - d;
+
+    directionalLight.shadow.camera.near = 1;
+    directionalLight.shadow.camera.far = 4;
+
+    directionalLight.shadow.bias = - 0.002;
+
   }
 
 window.addEventListener( 'resize', onWindowResize );
