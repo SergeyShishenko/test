@@ -4,6 +4,7 @@ var container, camera, scene, renderer;
 var cube, mesh;
 var controls;
 var boxHelper;
+var light;
 // var stl="box.stl";
 var input = document.querySelector('#STL');
 var sizeBound = new THREE.Vector3(4, 4, 4);
@@ -23,14 +24,19 @@ function init(){
     document.body.appendChild (renderer.domElement);
 
     scene = new THREE.Scene();
-    scene.background = new THREE.Color( 0x72645b );
+    // scene.background = new THREE.Color( 0x72645b );
+    scene.background = new THREE.Color( 0xdddddd );
 				// scene.fog = new THREE.Fog( 0x72645b, 2, 15 );
     
     // Lights
+    //  light = new THREE.AmbientLight(0xffffff);
+    // scene.add( new THREE.AmbientLight(0xffffff) );
+    // scene.add(light);
 
-    scene.add( new THREE.HemisphereLight( 0x443333, 0x111122 ) );
+    // scene.add( new THREE.HemisphereLight( 0x443333, 0x111122 ) );
 
     addShadowedLight( 1, 1, 1, 0xffffff, 1.35 );
+    addShadowedLight( -1, -1, -1, 0xdddd00, 1 );
     addShadowedLight( 0.5, 1, - 1, 0xffaa00, 1 );
 
 
@@ -59,6 +65,7 @@ scene.add(boxHelper);
 
 
 input.addEventListener( 'change', function( event ) {
+  // removeEntity();
   var file = this.files[ 0 ];
   var reader = new FileReader();
   reader.addEventListener( 'load', function ( event ) {
@@ -68,12 +75,12 @@ input.addEventListener( 'change', function( event ) {
   
   geometry = loader.parse( contents )
 
-    // material = new THREE.MeshNormalMaterial();
+  // var  material = new THREE.MeshNormalMaterial();
   
-    // material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
+  //  var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
     var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 } );
     
-
+    removeEntity();
     mesh = new THREE.Mesh(geometry, material);
     mesh.name = 'nameMeshObject';
 
@@ -85,12 +92,21 @@ input.addEventListener( 'change', function( event ) {
 
     
     scene.add(mesh);
-    camera.position.y = 5;
-    camera.position.x = 10;
- 
-    camera.position.z = -5;
+    // camera.position.y = 5;
+    // camera.position.x = 10; 
+    // camera.position.z = -5;
+    camera.position.y = 0;
+    camera.position.x = 0; 
+    camera.position.z = 15;
+
     controls.autoRotate =false; 
     boxHelper.visible=false;
+
+    // camera.position.z = -400;
+
+    // camera.up.set(0, 0, 1);    
+    //  camera.lookAt (new THREE.Vector3(0,0,1));
+
     animate();
   
   }, false );
@@ -142,6 +158,10 @@ function scaleToFit(obj, bound) {
     directionalLight.shadow.camera.right = d;
     directionalLight.shadow.camera.top = d;
     directionalLight.shadow.camera.bottom = - d;
+    // directionalLight.shadow.camera.left = d;
+    // directionalLight.shadow.camera.right = d;
+    // directionalLight.shadow.camera.top = d;
+    // directionalLight.shadow.camera.bottom = d;
 
     directionalLight.shadow.camera.near = 1;
     directionalLight.shadow.camera.far = 4;
@@ -150,13 +170,14 @@ function scaleToFit(obj, bound) {
 
   }
 
- var removeEnt = document.getElementById('removeEnt');
-removeEnt.addEventListener('click',  function removeEntity() { 
-  scene.remove( scene.children[4]);//mesh
-  animate();
-}); 
+//  var removeEnt = document.getElementById('removeEnt');
+// removeEnt.addEventListener('click',   removeEntity() ); 
 
- 
+function removeEntity() { 
+  //  alert(scene.children.length);
+    scene.remove( scene.children[4]);//mesh
+    animate();
+  }
 
 window.addEventListener( 'resize', onWindowResize );
 
