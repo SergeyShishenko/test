@@ -60,12 +60,16 @@ boxHelper = new THREE.BoxHelper(b,0x03fc2c );
 
 scene.add(boxHelper);
 
+
+
+				setupInset();
+
 }
 
 
 
 input.addEventListener( 'change', function( event ) {
-  // removeEntity();
+  
   var file = this.files[ 0 ];
   var reader = new FileReader();
   reader.addEventListener( 'load', function ( event ) {
@@ -122,9 +126,21 @@ input.addEventListener( 'change', function( event ) {
 
 function animate()
 {
+    requestAnimationFrame ( animate ); 
     controls.update();
-    requestAnimationFrame ( animate );  
-    renderer.render (scene, camera);
+
+    	//copy position of the camera into inset
+      camera2.position.copy( camera.position );
+      camera2.position.sub( controls.target );
+      camera2.position.setLength( 300 );
+      camera2.lookAt( scene2.position );
+
+      renderer.render( scene, camera );
+      renderer2.render( scene2, camera2 );
+
+      // stats.update();
+     
+    
 }
 
 function onWindowResize() {
@@ -191,6 +207,34 @@ controls.dampingFactor = 0.25;
 controls.enableZoom = true;
 controls.autoRotate = true;
 // controls.autoRotate = false;
+
+
+//////https://threejs.org/examples/webgl_loader_nrrd.html
+function setupInset() {
+
+  const insetWidth = 150, insetHeight = 150;
+  container2 = document.getElementById( 'inset' );
+  container2.width = insetWidth;
+  container2.height = insetHeight;
+
+  // renderer
+  renderer2 = new THREE.WebGLRenderer( { alpha: true } );
+  renderer2.setClearColor( 0x000000, 0 );
+  renderer2.setSize( insetWidth, insetHeight );
+  container2.appendChild( renderer2.domElement );
+
+  // scene
+  scene2 = new THREE.Scene();
+
+  // camera
+  camera2 = new THREE.PerspectiveCamera( 50, insetWidth / insetHeight, 1, 1000 );
+  camera2.up = camera.up; // important!
+
+  // axes
+  axes2 = new THREE.AxesHelper( 100 );
+  scene2.add( axes2 );
+
+}
 
 
 
