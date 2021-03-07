@@ -36,7 +36,7 @@ function init(){
     // scene.add( new THREE.HemisphereLight( 0x443333, 0x111122 ) );
 
     addShadowedLight( 1, 1, 1, 0xffffff, 1.35 );
-    addShadowedLight( -1, -1, -1, 0xdddd00, 1 );
+    // addShadowedLight( -1, -1, -1, 0xdddd00, 1 );
     addShadowedLight( 0.5, 1, - 1, 0xffaa00, 1 );
 
 
@@ -77,8 +77,8 @@ input.addEventListener( 'change', function( event ) {
 
   // var  material = new THREE.MeshNormalMaterial();
   
-  //  var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200 } );
-    var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 } );
+   var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide } );
+    // var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide} );
     
     removeEntity();
     mesh = new THREE.Mesh(geometry, material);
@@ -175,7 +175,7 @@ function scaleToFit(obj, bound) {
 
 function removeEntity() { 
   //  alert(scene.children.length);
-    scene.remove( scene.children[4]);//mesh
+    scene.remove( scene.children[3]);//mesh
     animate();
   }
 
