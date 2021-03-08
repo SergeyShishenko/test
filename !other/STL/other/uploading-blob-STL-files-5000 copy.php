@@ -269,19 +269,55 @@
     const chunkSize50 = 50000000 / 2;
     const chunkSize84 = chunkSize50 - 84;
     var dataArray = [];
-    
+    // Далее мы создаем EventListener на входе - когда файл добавляется, разделить файл и начать процесс загрузки:
     input.addEventListener('change', () => {
+        // greyProgress.classList.add("meter"); // добавить класс 
+        // document.getElementById("greenBar").classList.remove("ok");
+        // document.getElementById("video-information").innerHTML = "";
+        // respinfo.innerHTML = "";
+        // start = 0;
+        // chunkSize = 84;
+        // chunkCounter = 0;
+        // dstart = new Date();
+        // file = input.files[0];
+        // totalArea = 0;
+        // dataArray = [];
+        // dbFront = dbBack = dbTop = dbBottom = dbLeft = dbRight = dbGeneral = 0;
+        // document.getElementById("rezultat").innerHTML = "Сумма площадей всех граней: 0 м&sup2";
+        // var r1 = document.forms.Sum.querySelectorAll('[type="checkbox"]');
+        // for (var j = 0; j < r1.length; j++) {
+        //     r1[j].value = 0;
+        //     r1[j].disabled = false;
+        // }
+        // var c1 = document.forms.Sum.getElementsByClassName('checkmark');
+        // for (var j = 0; j < c1.length; j++) {
+        //     c1[j].innerHTML = 0;
+        //     // r[j].disabled = false;
+        // }
+
         handleFiles(input.files);
+        // // var numberofChunks = Math.ceil(file.size/chunkSize);
+        // numberofChunks = Math.ceil((file.size - 84) / chunkSize50 + 1);
+        // info1.innerHTML = file.size + " байт поделено на " +
+        //     numberofChunks +
+        //     " частей."
+
+        // var chunkEnd = start + chunkSize;
+        // //upload the first chunk to get the sessId
+        // createChunk();
+        // // var chunkSize = 50;
+        // //   });
+
     });
 
     // Теперь мы называем функцию createChunk.
     function createChunk() {
         chunkCounter++;
-        console.log("Часть: ", chunkCounter);
+        console.log("Создана часть: ", chunkCounter);
         chunkEnd = Math.min(start + chunkSize, file.size);
 
         var chunk = file.slice(start, chunkEnd);
-        // console.log("Создан часть файла " + start + "-" + chunkEnd + " минус 1    ");
+        console.log("Создан часть файла " + start + "-" + chunkEnd + " минус 1    ");
         var chunkForm = new FormData();
         // if(sessId.length >0){
         //     //we have a sessId
@@ -292,7 +328,7 @@
         chunkForm.append('file', chunk);
         chunkForm.append('fname', file.name);
         // console.log(file.name);
-        // console.log("часть добавлен");
+        console.log("часть добавлен");
         chunkSize = chunkSize50;
 
 
@@ -311,7 +347,7 @@
         oReq.open("POST", url, true);
         var blobEnd = chunkEnd - 1;
         var contentRange = "байтов " + start + " - " + blobEnd + "/" + file.size;
-        // console.log(contentRange);
+        console.log(contentRange);
 
         // загрузить обновления прогресса
         function updateProgress(oEvent) {
@@ -335,7 +371,7 @@
         // Как только часть полностью загружен, мы запускаем следующий код (в случае загрузки).
         oReq.onload = function(oEvent) {
             // Uploaded.
-            // console.log("загруженная часть");
+            console.log("загруженная часть");
             console.log("oReq.response", oReq.response);
             var resp = JSON.parse(oReq.response)
             sessId = resp.sessId;
@@ -404,7 +440,7 @@
                 console.log(duration + ' ms');
                 document.getElementById("chunk-information").innerHTML = "";
                 // document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(duration);
-                document.getElementById("video-information").innerHTML = "Всё посчитано! Прошло: " + msToTime(
+                document.getElementById("video-information").innerHTML = "Всё загруженно! Прошло: " + msToTime(
                     duration);
 
                 document.getElementById("rezultat").innerHTML = "Сумма площадей всех граней: " + мsup2(totalArea) +

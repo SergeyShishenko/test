@@ -5,47 +5,42 @@ if ($file['size']==84){
     $handle = fopen($file['tmp_name'], "rb");
     fseek($handle,80);// пропускаем заголовок
     $content = unpack('i', fread($handle, 4));    
-    fclose($handle);
-    // $data["head"] =  $content[1]. " треугольников";return; 
+    fclose($handle);  
     $data["head"] =  $content[1];return; 
 }else{
     $handle = fopen($file['tmp_name'], "rb");
-    $chunk=$file['size']/50;
-    // $data["content"] =  $chunk. " по 50 байт";return;
-    // $arrTriangles[];
+    $chunk=$file['size']/50;   
     $sum=$Front=$Back=$Top=$Bottom=$Left=$Right=$General=0;
     for ($j = 1; $j <= $chunk; $j++){
         // $arrTriangles[$j]['num'] = "Треугольник - $j"; 
         $NormalX=unpack('f', fread($handle, 4))[1];
         $NormalY=unpack('f', fread($handle, 4))[1];
         $NormalZ=unpack('f', fread($handle, 4))[1];
-        // $arrTriangles[$j]['normal'] = "Нормаль: " . $NormalX . " " . $NormalY . " " . $NormalZ ;
-        $arrTriangles[$j]['normal'] = [$NormalX , $NormalY , $NormalZ ] ;
-        // $arrTriangles[$j]['colinear'] =  "Колинеарность: ". checkColinear($NormalX, $NormalY, $NormalZ) ;
-        // $arrTriangles[$j]['directional'] = "Сонаправленность: ". directional($NormalX, $NormalY, $NormalZ);
-        // $arrTriangles[$j]['directional'] = checkColinear($NormalX, $NormalY, $NormalZ);
+       
+        // $arrTriangles[$j]['normal'] = [$NormalX , $NormalY , $NormalZ ] ;
+       
         $directional = checkColinear($NormalX, $NormalY, $NormalZ);
 
         $Vertex_1_X=unpack('f', fread($handle, 4))[1];
         $Vertex_1_Y=unpack('f', fread($handle, 4))[1];
         $Vertex_1_Z=unpack('f', fread($handle, 4))[1];
-        $arrVert1=[$Vertex_1_X, $Vertex_1_Y, $Vertex_1_Z];
-        // $arrTriangles[$j]['vertex1'] = "Вершина1: " . $Vertex_1_X . " " . $Vertex_1_Y. " " . $Vertex_1_Z;
-        $arrTriangles[$j]['vertex1'] = $arrVert1;
+        $arrVert1=[$Vertex_1_X, $Vertex_1_Y, $Vertex_1_Z];  
+
+        // $arrTriangles[$j]['vertex1'] = $arrVert1;
 
         $Vertex_2_X=unpack('f', fread($handle, 4))[1];
         $Vertex_2_Y=unpack('f', fread($handle, 4))[1];
         $Vertex_2_Z=unpack('f', fread($handle, 4))[1];
-        $arrVert2=[$Vertex_2_X ,$Vertex_2_Y, $Vertex_2_Z];
-        // $arrTriangles[$j]['vertex2'] =  "Вершина2: " . $Vertex_2_X . " " . $Vertex_2_Y. " " . $Vertex_2_Z;
-        $arrTriangles[$j]['vertex2'] =  $arrVert2 ;
+        $arrVert2=[$Vertex_2_X ,$Vertex_2_Y, $Vertex_2_Z];  
+
+        // $arrTriangles[$j]['vertex2'] =  $arrVert2 ;
 
         $Vertex_3_X=unpack('f', fread($handle, 4))[1];
         $Vertex_3_Y=unpack('f', fread($handle, 4))[1];
         $Vertex_3_Z=unpack('f', fread($handle, 4))[1];
-        $arrVert3=[$Vertex_3_X, $Vertex_3_Y, $Vertex_3_Z];
-        // $arrTriangles[$j]['vertex3'] =  "Вершина3: " . $Vertex_3_X . " " . $Vertex_3_Y. " " . $Vertex_3_Z;
-        $arrTriangles[$j]['vertex3'] =  $arrVert3;
+        $arrVert3=[$Vertex_3_X, $Vertex_3_Y, $Vertex_3_Z];   
+
+        // $arrTriangles[$j]['vertex3'] =  $arrVert3;
         
         unpack('s', fread($handle, 2))[1]; // END
        
@@ -99,12 +94,8 @@ if ($file['size']==84){
     $data["Right"]=$Right;
     $data["General"]=$General;
     $data["data"]=$arrTriangles;return;
-    // echo "S-Solid = " . ($sum / 1000000) ." м.кв.";
-    // echo "<script>alert('S-Solid = " . ($sum / 1000000) ." м.кв.');</script>";
+  
 }
-
-
-
 
 function square($arrVert1,$arrVert2,$arrVert3){ // полупериметр
 
