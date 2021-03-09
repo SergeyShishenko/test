@@ -13,6 +13,8 @@ animate();
 
 function init(){
 
+
+
   var container = document.getElementById('canvas');
     renderer = new THREE.WebGLRenderer( {antialias:true} );
     var width = window.innerWidth;
@@ -65,13 +67,15 @@ scene.add(boxHelper);
 }
 
 
+
 input.addEventListener( 'change', function( event ) {
   
-  var file = this.files[0];
+  var file = this.files[ 0 ];
   var reader = new FileReader();
   reader.addEventListener( 'load', function ( event ) {
-  var contents = event.target.result; 
-  var loader = new THREE.STLLoader();
+      var contents = event.target.result;
+ 
+        var loader = new THREE.STLLoader();
   
   geometry = loader.parse( contents )
 
@@ -116,6 +120,9 @@ input.addEventListener( 'change', function( event ) {
       reader.readAsArrayBuffer( file );
   }
 } );
+
+
+
 
 function animate()
 {
@@ -179,6 +186,9 @@ function scaleToFit(obj, bound) {
 
   }
 
+//  var removeEnt = document.getElementById('removeEnt');
+// removeEnt.addEventListener('click',   removeEntity() ); 
+
 function removeEntity() { 
   //  alert(scene.children.length);
     scene.remove( scene.children[3]);//mesh
@@ -186,6 +196,10 @@ function removeEntity() {
   }
 
 window.addEventListener( 'resize', onWindowResize );
+
+
+
+
 
 controls = new THREE.OrbitControls( camera, renderer.domElement );
 controls.enableDamping = true;
@@ -198,29 +212,29 @@ controls.autoRotate = true;
 //////https://threejs.org/examples/webgl_loader_nrrd.html
 function setupInset() {
 
-    const insetWidth = 150, insetHeight = 150;
-    container2 = document.getElementById( 'inset' );
-    container2.width = insetWidth;
-    container2.height = insetHeight;
+  const insetWidth = 150, insetHeight = 150;
+  container2 = document.getElementById( 'inset' );
+  container2.width = insetWidth;
+  container2.height = insetHeight;
 
-    // renderer
-    renderer2 = new THREE.WebGLRenderer( { alpha: true } );
-    renderer2.setClearColor( 0x000000, 0 );
-    renderer2.setSize( insetWidth, insetHeight );
-    container2.appendChild( renderer2.domElement );
+  // renderer
+  renderer2 = new THREE.WebGLRenderer( { alpha: true } );
+  renderer2.setClearColor( 0x000000, 0 );
+  renderer2.setSize( insetWidth, insetHeight );
+  container2.appendChild( renderer2.domElement );
 
-    // scene
-    scene2 = new THREE.Scene();
+  // scene
+  scene2 = new THREE.Scene();
 
-    // camera
-    camera2 = new THREE.PerspectiveCamera( 50, insetWidth / insetHeight, 1, 1000 );
-    camera2.up = camera.up; // important!
+  // camera
+  camera2 = new THREE.PerspectiveCamera( 50, insetWidth / insetHeight, 1, 1000 );
+  camera2.up = camera.up; // important!
 
-    // axes
-    axes2 = new THREE.AxesHelper( 100 );
-    scene2.add( axes2 );
+  // axes
+  axes2 = new THREE.AxesHelper( 100 );
+  scene2.add( axes2 );
 
-  }
+}
 
 
 
