@@ -72,57 +72,59 @@ input.addEventListener( 'change', () =>  {
   // handleFiles(this.files);
 
     
-    /////////  
+   
       //  file = this.files;
         file = input.files[0];
-      var reader = new FileReader();
-      reader.addEventListener( 'load', function ( event ) {
-          var contents = event.target.result; 
-          var loader = new THREE.STLLoader();
+        loadSTL();
+    /////////     
+      // var reader = new FileReader();
+      // reader.addEventListener( 'load', function ( event ) {
+      //     var contents = event.target.result; 
+      //     var loader = new THREE.STLLoader();
           
-          geometry = loader.parse( contents )
+      //     geometry = loader.parse( contents )
 
-          // var  material = new THREE.MeshNormalMaterial();
+      //     // var  material = new THREE.MeshNormalMaterial();
           
-          var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide } );
-            // var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide} );
+      //     var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide } );
+      //       // var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide} );
             
-            removeEntity();
-            mesh = new THREE.Mesh(geometry, material);
-            mesh.name = 'nameMeshObject';
+      //       removeEntity();
+      //       mesh = new THREE.Mesh(geometry, material);
+      //       mesh.name = 'nameMeshObject';
 
-            scaleToFit(mesh, sizeBound); // умещаем в заданные размеры
+      //       scaleToFit(mesh, sizeBound); // умещаем в заданные размеры
 
-            let b = new THREE.Box3().setFromObject(mesh);
-            mesh.position.sub(b.getCenter()); // центрируем
-            // mesh.position.y -= (sizeBound.y - b.getSize().y) * 0.5; // опускаем к "полу"
+      //       let b = new THREE.Box3().setFromObject(mesh);
+      //       mesh.position.sub(b.getCenter()); // центрируем
+      //       // mesh.position.y -= (sizeBound.y - b.getSize().y) * 0.5; // опускаем к "полу"
 
             
-            scene.add(mesh);
-            // camera.position.y = 5;
-            // camera.position.x = 10; 
-            // camera.position.z = -5;
-            camera.position.y = 0;
-            camera.position.x = 0; 
-            camera.position.z = 15;
+      //       scene.add(mesh);
+      //       // camera.position.y = 5;
+      //       // camera.position.x = 10; 
+      //       // camera.position.z = -5;
+      //       camera.position.y = 0;
+      //       camera.position.x = 0; 
+      //       camera.position.z = 15;
 
-            controls.autoRotate =false; 
-            boxHelper.visible=false;
+      //       controls.autoRotate =false; 
+      //       boxHelper.visible=false;
 
-            // camera.position.z = -400;
+      //       // camera.position.z = -400;
 
-            // camera.up.set(0, 0, 1);    
-            //  camera.lookAt (new THREE.Vector3(0,0,1));
+      //       // camera.up.set(0, 0, 1);    
+      //       //  camera.lookAt (new THREE.Vector3(0,0,1));
 
-            animate();
+      //       animate();
           
-        }, false );
+      //   }, false );
 
-        if ( reader.readAsBinaryString !== undefined ) {
-            reader.readAsBinaryString( file );
-        } else {
-            reader.readAsArrayBuffer( file );
-        }
+      //   if ( reader.readAsBinaryString !== undefined ) {
+      //       reader.readAsBinaryString( file );
+      //   } else {
+      //       reader.readAsArrayBuffer( file );
+      //   }
 
     ///////// 
 
@@ -130,6 +132,57 @@ input.addEventListener( 'change', () =>  {
   // handleFiles(this.files);
   handleFiles();
 } );
+
+function loadSTL(){
+  var reader = new FileReader();
+  reader.addEventListener( 'load', function ( event ) {
+      var contents = event.target.result; 
+      var loader = new THREE.STLLoader();
+      
+      geometry = loader.parse( contents )
+
+      // var  material = new THREE.MeshNormalMaterial();
+      
+      var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide } );
+        // var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide} );
+        
+        removeEntity();
+        mesh = new THREE.Mesh(geometry, material);
+        mesh.name = 'nameMeshObject';
+
+        scaleToFit(mesh, sizeBound); // умещаем в заданные размеры
+
+        let b = new THREE.Box3().setFromObject(mesh);
+        mesh.position.sub(b.getCenter()); // центрируем
+        // mesh.position.y -= (sizeBound.y - b.getSize().y) * 0.5; // опускаем к "полу"
+
+        
+        scene.add(mesh);
+        // camera.position.y = 5;
+        // camera.position.x = 10; 
+        // camera.position.z = -5;
+        camera.position.y = 0;
+        camera.position.x = 0; 
+        camera.position.z = 15;
+
+        controls.autoRotate =false; 
+        boxHelper.visible=false;
+
+        // camera.position.z = -400;
+
+        // camera.up.set(0, 0, 1);    
+        //  camera.lookAt (new THREE.Vector3(0,0,1));
+
+        animate();
+      
+    }, false );
+
+    if ( reader.readAsBinaryString !== undefined ) {
+        reader.readAsBinaryString( file );
+    } else {
+        reader.readAsArrayBuffer( file );
+    }
+}
 
 function animate()
 {

@@ -277,6 +277,7 @@ function handleDrop(e) {
     var files = dt.files;
     file = files[0];
     // handleFiles(files);
+    loadSTL();
     handleFiles();
 }
 
