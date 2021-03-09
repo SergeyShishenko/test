@@ -65,72 +65,11 @@ scene.add(boxHelper);
 }
 
 
-// input.addEventListener( 'change', function( event ) {
 input.addEventListener( 'change', () =>  {
-
-  // // Площадь поверхности
-  // handleFiles(this.files);
-
-    
-   
-      //  file = this.files;
-        file = input.files[0];
-        loadSTL();
-    /////////     
-      // var reader = new FileReader();
-      // reader.addEventListener( 'load', function ( event ) {
-      //     var contents = event.target.result; 
-      //     var loader = new THREE.STLLoader();
-          
-      //     geometry = loader.parse( contents )
-
-      //     // var  material = new THREE.MeshNormalMaterial();
-          
-      //     var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide } );
-      //       // var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide} );
-            
-      //       removeEntity();
-      //       mesh = new THREE.Mesh(geometry, material);
-      //       mesh.name = 'nameMeshObject';
-
-      //       scaleToFit(mesh, sizeBound); // умещаем в заданные размеры
-
-      //       let b = new THREE.Box3().setFromObject(mesh);
-      //       mesh.position.sub(b.getCenter()); // центрируем
-      //       // mesh.position.y -= (sizeBound.y - b.getSize().y) * 0.5; // опускаем к "полу"
-
-            
-      //       scene.add(mesh);
-      //       // camera.position.y = 5;
-      //       // camera.position.x = 10; 
-      //       // camera.position.z = -5;
-      //       camera.position.y = 0;
-      //       camera.position.x = 0; 
-      //       camera.position.z = 15;
-
-      //       controls.autoRotate =false; 
-      //       boxHelper.visible=false;
-
-      //       // camera.position.z = -400;
-
-      //       // camera.up.set(0, 0, 1);    
-      //       //  camera.lookAt (new THREE.Vector3(0,0,1));
-
-      //       animate();
-          
-      //   }, false );
-
-      //   if ( reader.readAsBinaryString !== undefined ) {
-      //       reader.readAsBinaryString( file );
-      //   } else {
-      //       reader.readAsArrayBuffer( file );
-      //   }
-
-    ///////// 
-
-    // // Площадь поверхности
-  // handleFiles(this.files);
-  handleFiles();
+    file = input.files[0];
+    loadSTL();
+    // // Площадь поверхности    
+    handleFiles();
 } );
 
 function loadSTL(){
@@ -140,6 +79,17 @@ function loadSTL(){
       var loader = new THREE.STLLoader();
       
       geometry = loader.parse( contents )
+
+      console.log('Object.keys(geometry).length '+Object.keys(geometry).length);
+      console.log('Object.keys(geometry) '+Object.keys(geometry));// uuid,name,type,index,attributes,morphAttributes,morphTargetsRelative,groups,boundingBox,boundingSphere,drawRange,userData
+
+      for ( var i = 0; i < Object.keys(geometry).length; i++ ) 
+      {
+        // face = sphereGeometry.faces[ i ];	
+        // face.color.setRGB( 0, 0, 0.8 * Math.random() + 0.2 );	
+        console.log(geometry.attributes	);
+        console.log(geometry.attributes['normal']['array'][0]+" "+geometry.attributes['normal']['array'][1]+" "+geometry.attributes['normal']['array'][2]	);
+      }
 
       // var  material = new THREE.MeshNormalMaterial();
       
