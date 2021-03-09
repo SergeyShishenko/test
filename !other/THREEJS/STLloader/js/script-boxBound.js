@@ -82,13 +82,25 @@ function loadSTL(){
 
       console.log('Object.keys(geometry).length '+Object.keys(geometry).length);
       console.log('Object.keys(geometry) '+Object.keys(geometry));// uuid,name,type,index,attributes,morphAttributes,morphTargetsRelative,groups,boundingBox,boundingSphere,drawRange,userData
+      console.log(geometry.attributes['normal']['array'].length);
+      for ( var j = 0; j < geometry.attributes['normal']['array'].length; j=j+3 ) 
+      {
+        // console.log(j +" "+ geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
+        console.log(geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
+      }
 
       for ( var i = 0; i < Object.keys(geometry).length; i++ ) 
       {
         // face = sphereGeometry.faces[ i ];	
         // face.color.setRGB( 0, 0, 0.8 * Math.random() + 0.2 );	
         console.log(geometry.attributes	);
-        console.log(geometry.attributes['normal']['array'][0]+" "+geometry.attributes['normal']['array'][1]+" "+geometry.attributes['normal']['array'][2]	);
+        console.log(geometry.attributes.normal.count	);
+          // for ( var j = 0; j < geometry.attributes.normal.count; j=j+3 ) 
+          // {
+          //   console.log(geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
+          // }
+        
+        // console.log(geometry.attributes['normal']['array'][0]+" "+geometry.attributes['normal']['array'][1]+" "+geometry.attributes['normal']['array'][2]	);
       }
 
       // var  material = new THREE.MeshNormalMaterial();
