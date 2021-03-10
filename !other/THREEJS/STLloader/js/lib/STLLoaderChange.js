@@ -251,9 +251,22 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 						colors[ componentIdx + 2 ] = b;
 
 					} else{ // эксперемент
-						colors[ componentIdx ] = 220/250;
-						colors[ componentIdx + 1 ] = 185/250;
-						colors[ componentIdx + 2 ] = 9/250;
+						// // зеленый 
+						// colors[ componentIdx ] =       0/255;
+						// colors[ componentIdx + 1 ] = 255/255;
+						// colors[ componentIdx + 2 ] =   0/255;
+						// // красный 
+						// colors[ componentIdx ] =   255/255;
+						// colors[ componentIdx + 1 ] = 0/255;
+						// colors[ componentIdx + 2 ] = 0/255;
+						// // синий 
+						// colors[ componentIdx ] =       0/255;
+						// colors[ componentIdx + 1 ] =   0/255;
+						// colors[ componentIdx + 2 ] = 255/255;
+					
+						colors[ componentIdx ] =       normalX;;
+						colors[ componentIdx + 1 ] =   normalY;
+						colors[ componentIdx + 2 ] = normalZ;
 					}
 
 				}
@@ -273,7 +286,7 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 				geometry.setAttribute( 'color', new THREE.BufferAttribute( colors, 3 ) );
 				geometry.hasColors = true;
 				// geometry.alpha = alpha;
-				geometry.alpha = 0;
+				geometry.alpha = 1;
 			}
 
 			return geometry;

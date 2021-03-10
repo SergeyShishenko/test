@@ -31,14 +31,25 @@ function init(){
     // scene.add( new THREE.AmbientLight(0xffffff) );
     // scene.add(light);
 
+    
+
+    addShadowedLight( 0.5, 0.5, 1, 0xffffff, 1.35 );
+    addShadowedLight( 0.5, 1, 0.5, 0xffffff, 1.35 );
+    addShadowedLight( 1, 0.5, 0.5, 0xffffff, 1.35 );
+    addShadowedLight( 0.5, 0.5, -1, 0xffffff, 1.35 );
+    addShadowedLight( 0.5, -1, 0.5, 0xffffff, 1.35 );
+    addShadowedLight( -1, 0.5, 0.5, 0xffffff, 1.35 );
+    // // addShadowedLight( 1, 1, 1, 0xffffff, 1.35 );
+    // addShadowedLight( 0.5, -1, 1, 0xffffff, 1 );
+    addShadowedLight( -0.5, -0.5, -0.5, 0xdddd00, 1 );
+    addShadowedLight( -0.5, 0.5, -0.5, 0xdddd00, 1 );
+    // // addShadowedLight( 1, 1, 1, 0xffffff, 1.35 );
+    // // addShadowedLight( 0.5, 0.5, 0.5, 0xffffff, 1.35 );
+    // addShadowedLight( 0.5, 1, - 1, 0xffaa00, 1 );
+
     // scene.add( new THREE.HemisphereLight( 0x443333, 0x111122 ) );
-    // var light = new THREE.AmbientLight( 0x404040 ); // soft white light
-    //   scene.add( light );
-
-    addShadowedLight( 1, 1, 1, 0xffffff, 1.35 );
-    // addShadowedLight( -1, -1, -1, 0xdddd00, 1 );
-    addShadowedLight( 0.5, 1, - 1, 0xffaa00, 1 );
-
+    
+      // scene.add( new THREE.AmbientLight( 0x404040 ) );
 
     //////////////////////////////////////////////////////////////////////
 
@@ -103,37 +114,36 @@ function loadSTL(){
       
       geometry = loader.parse( contents )
       // uuid,name,type,index,attributes,morphAttributes,morphTargetsRelative,groups,boundingBox,boundingSphere,drawRange,userData
-      console.log('Object.keys(geometry).length '+Object.keys(geometry).length);
-      console.log('Object.keys(geometry) '+Object.keys(geometry));
-      console.log(geometry.attributes['normal']['array'].length);
+      // console.log('Object.keys(geometry).length '+Object.keys(geometry).length);
+      // console.log('Object.keys(geometry) '+Object.keys(geometry));
+      // console.log(geometry.attributes['normal']['array'].length);
       // console.log(geometry.getAttribute['normal']);
-      for ( var j = 0; j < geometry.attributes['normal']['array'].length; j=j+3 ) 
-      {
-        // console.log(j +" "+ geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
-        console.log(geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
-      }
+      // for ( var j = 0; j < geometry.attributes['normal']['array'].length; j=j+3 ) 
+      // {
+      //   // console.log(j +" "+ geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
+      //   // console.log(geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
+      // }
 
-      for ( var i = 0; i < Object.keys(geometry).length; i++ ) 
-      {
-        // face = sphereGeometry.faces[ i ];	
-        // face.color.setRGB( 0, 0, 0.8 * Math.random() + 0.2 );	
+      // for ( var i = 0; i < Object.keys(geometry).length; i++ ) 
+      // {
+       
         
-        console.log(geometry.attributes	);
-        console.log(geometry.attributes.normal.count	);
-        console.log(geometry.attributes.groups	);
-          // for ( var j = 0; j < geometry.attributes.normal.count; j=j+3 ) 
-          // {
-          //   console.log(geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
-          // }
+      //   // console.log(geometry.attributes	);
+      //   // console.log(geometry.attributes.normal.count	);
+      //   // console.log(geometry.attributes.groups	);
+      //     // for ( var j = 0; j < geometry.attributes.normal.count; j=j+3 ) 
+      //     // {
+      //     //   console.log(geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
+      //     // }
         
-        // console.log(geometry.attributes['normal']['array'][0]+" "+geometry.attributes['normal']['array'][1]+" "+geometry.attributes['normal']['array'][2]	);
-      }
+      //   // console.log(geometry.attributes['normal']['array'][0]+" "+geometry.attributes['normal']['array'][1]+" "+geometry.attributes['normal']['array'][2]	);
+      // }
 
       // var  material = new THREE.MeshNormalMaterial();
       
       // var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide } );//,vertexColors: THREE.FaceColors
-      var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide ,vertexColors: THREE.FaceColors} );//
-        // var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide} );
+      // var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide ,vertexColors: THREE.FaceColors} );//
+        var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
         
         removeEntity();
         mesh = new THREE.Mesh(geometry, material);
