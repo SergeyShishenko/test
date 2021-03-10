@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/uploading.css">
     <link rel="shortcut icon" href="favicon.ico">
     <script src="js/lib/three.js"></script>
-    <script src="js/lib/STLLoader.js"></script>
+    <!-- <script src="js/lib/STLLoader.js"></script> -->
+    <script src="js/lib/STLLoaderChange.js"></script>
     <script src="js/lib/OrbitControls.js"></script>    
     <title>STL loader</title>
 </head>

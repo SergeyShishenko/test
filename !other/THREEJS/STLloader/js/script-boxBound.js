@@ -40,6 +40,27 @@ function init(){
     addShadowedLight( 0.5, 1, - 1, 0xffaa00, 1 );
 
 
+    //////////////////////////////////////////////////////////////////////
+
+	// this material causes a mesh to use colors assigned to faces
+	// var faceColorMaterial = new THREE.MeshBasicMaterial( 
+  //   { color: 0xffffff, vertexColors: THREE.FaceColors } );
+    
+  //   var sphereGeometry = new THREE.SphereGeometry( 80, 32, 16 );
+  //   for ( var i = 0; i < sphereGeometry.faces.length; i++ ) 
+  //   {
+  //     face = sphereGeometry.faces[ i ];	
+  //     face.color.setRGB( 0, 0, 0.8 * Math.random() + 0.2 );		
+  //   }
+  //   var sphere = new THREE.Mesh( sphereGeometry, faceColorMaterial );
+  //   sphere.position.set(0, 50, 0);
+  //   scene.add(sphere);
+    
+  //   targetList.push(sphere);
+    
+    //////////////////////////////////////////////////////////////////////
+
+
 
 
     camera = new THREE.PerspectiveCamera (20, width/height, 0.1, 50000);   
