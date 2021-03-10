@@ -131,8 +131,8 @@ function loadSTL(){
 
       // var  material = new THREE.MeshNormalMaterial();
       
-      var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide } );//,vertexColors: THREE.FaceColors
-      // var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide ,vertexColors: THREE.FaceColors} );//
+      // var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide } );//,vertexColors: THREE.FaceColors
+      var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide ,vertexColors: THREE.FaceColors} );//
         // var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide} );
         
         removeEntity();

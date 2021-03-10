@@ -198,7 +198,8 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 			var vertices = new Float32Array( faces * 3 * 3 );
 			var normals = new Float32Array( faces * 3 * 3 );
-
+			var colors = new Float32Array( faces * 3 * 3 );
+			
 			for ( var face = 0; face < faces; face ++ ) {
 
 				var start = dataOffset + face * faceLength;
@@ -227,7 +228,7 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 					}
 
 				}else{//эксперемент
-					colors = new Float32Array( faces * 3 * 3 );
+					
 				}
 
 				for ( var i = 1; i <= 3; i ++ ) {
@@ -250,9 +251,9 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 						colors[ componentIdx + 2 ] = b;
 
 					} else{ // эксперемент
-						colors[ componentIdx ] = 220;
-						colors[ componentIdx + 1 ] = 185;
-						colors[ componentIdx + 2 ] = 9;
+						colors[ componentIdx ] = 220/250;
+						colors[ componentIdx + 1 ] = 185/250;
+						colors[ componentIdx + 2 ] = 9/250;
 					}
 
 				}
