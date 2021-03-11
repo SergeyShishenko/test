@@ -35,33 +35,11 @@ function init(){
 0
     addShadowedLight( 5, 10, 5, 0xffffff, 1);// зелёный
     addShadowedLight( 10, 5, 5, 0xffffff, 1 );// красный
-    addShadowedLight( 0, 0, -10, 0xffffff, 1 );// желтый
+    addShadowedLight( 5, 5, -10, 0xffffff, 1 );// желтый
     addShadowedLight( 5, 5, 10, 0xffffff, 1 ); // синий
-    addShadowedLight( -10, 0, 0, 0xffffff, 1 ); // голубой
-    addShadowedLight( 0, -10, 0, 0xffffff, 1 ); // MAGENTA
-    // addShadowedLight( 5, 5, -10, 0xffffff, 1.35 ); // желтый
-    // addShadowedLight( -1, -1, -1, 0xffffff, 1 );
-    // addShadowedLight( 10, -10, 10, 0xffffff, 1 );
-    // addShadowedLight( 10, 10, 10, 0xffffff, 1 );
-    // addShadowedLight( -10, 10, 10, 0xffffff, 1 );
-    // addShadowedLight( 1, 0, 0, 0xffffff, 1 );
-    // addShadowedLight( 1, 1, 0, 0xffffff, 1 );
-    // addShadowedLight( 0, -10, 0, 0xffffff, 1 );
-    // addShadowedLight( 0, 0, -10, 0xffffff, 1 );
-    // addShadowedLight( -10, 0, 0, 0xffffff, 1 );
-
-
-    // addShadowedLight( -10, -10, 10, 0xffffff, 1.35 );
-    // addShadowedLight( 10, 0, 10, 0xffffff, 1.35 );
-    // addShadowedLight( -10, 0, 10, 0xffffff, 1.35 );
-    // addShadowedLight( 0.5, 1, 0.5, 0xffffff, 1.35 );
-    // addShadowedLight( 1, 0.5, 0.5, 0xffffff, 1.35 );
-    // addShadowedLight( 0.5, 0.5, -1, 0xffffff, 1.35 );
-    // addShadowedLight( 0.5, -1, 0.5, 0xffffff, 1.35 );
-    // addShadowedLight( -1, 0.5, 0.5, 0xffffff, 1.35 );
-
-    // // addShadowedLight( 1, 1, 1, 0xffffff, 1.35 );
-    // addShadowedLight( 0.5, -1, 1, 0xffffff, 1 );
+    addShadowedLight( -10, 5, 5, 0xffffff, 1 ); // голубой
+    addShadowedLight( 5, -10, 5, 0xffffff, 1 ); // MAGENTA
+    // addShadowedLight( -5, 10, -5, 0xffffff, 1 ); // 
 
     // addShadowedLight( -0.5, -0.5, -0.5, 0xdddd00, 1 );
     // addShadowedLight( -0.5, 0.5, -0.5, 0xdddd00, 1 );
@@ -107,7 +85,8 @@ function init(){
     controls = new THREE.OrbitControls (camera, renderer.domElement);
  
 
-var sizeBound = new THREE.Vector3(4, 4, 4);
+// var sizeBound = new THREE.Vector3(4, 4, 4);
+var sizeBound = new THREE.Vector3(0, 0, 0);
 
 
 var b = new THREE.Mesh(new THREE.BoxBufferGeometry(sizeBound.x, sizeBound.y, sizeBound.z), new THREE.MeshBasicMaterial());
@@ -254,10 +233,10 @@ function scaleToFit(obj, bound) {
     // directionalLight.castShadow = true;
     directionalLight.castShadow = false;
 
-    // const d = 10;
-    // directionalLight.shadow.camera.left = - d;
-    // directionalLight.shadow.camera.right = d;
-    // directionalLight.shadow.camera.top = d;
+    const d = 1;
+    directionalLight.shadow.camera.left = - d;
+    directionalLight.shadow.camera.right = d;
+    directionalLight.shadow.camera.top = d;
     // directionalLight.shadow.camera.bottom = - d;
 
     // directionalLight.shadow.camera.left = d;
@@ -265,10 +244,10 @@ function scaleToFit(obj, bound) {
     // directionalLight.shadow.camera.top = d;
     // directionalLight.shadow.camera.bottom = d;
 
-    // directionalLight.shadow.camera.near = 0.01;//1//
-    // directionalLight.shadow.camera.far = 1000;//4
+    directionalLight.shadow.camera.near = 0.01;//1//
+    directionalLight.shadow.camera.far = 10000;//4
 
-    // directionalLight.shadow.bias = - 0.002;
+    directionalLight.shadow.bias = - 0.002;
 
   }
 

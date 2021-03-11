@@ -17,3 +17,21 @@ input{
     bottom: 20px;
     z-index: 100;
 }
+.container[id='#Front']{
+    color: blue;
+}
+#Back{
+    color: yellow;
+}
+#Top{
+    color: green;
+}
+#Bottom{
+    color: magenta;
+}
+#Left{
+    color: cyan;
+}
+#Right{
+    color: red;
+}

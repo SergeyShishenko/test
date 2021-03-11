@@ -251,22 +251,50 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 						colors[ componentIdx + 2 ] = b;
 
 					} else{ // эксперемент
-						// // зеленый 
-						// colors[ componentIdx ] =       0/255;
-						// colors[ componentIdx + 1 ] = 255/255;
-						// colors[ componentIdx + 2 ] =   0/255;
-						// // красный 
-						// colors[ componentIdx ] =   255/255;
-						// colors[ componentIdx + 1 ] = 0/255;
-						// colors[ componentIdx + 2 ] = 0/255;
-						// // синий 
-						// colors[ componentIdx ] =       0/255;
-						// colors[ componentIdx + 1 ] =   0/255;
-						// colors[ componentIdx + 2 ] = 255/255;
+						if(normalX===0 && normalY===1 && normalZ===0){
+							// зеленый сверху
+							colors[ componentIdx ] =       0/255;
+							colors[ componentIdx + 1 ] = 255/255;
+							colors[ componentIdx + 2 ] =   0/255;
+						}else if(normalX===1 && normalY===0 && normalZ===0){
+							// красный справа
+							colors[ componentIdx ] =   255/255;
+							colors[ componentIdx + 1 ] = 0/255;
+							colors[ componentIdx + 2 ] = 0/255;						
+						}else if(normalX===0 && normalY===0 && normalZ===1){
+							// синий спереди
+							colors[ componentIdx ] =       0/255;
+							colors[ componentIdx + 1 ] =   0/255;
+							colors[ componentIdx + 2 ] = 255/255;
+						}else if(normalX===0 && normalY===0 && normalZ===-1){
+							// жёлтый сзади
+							colors[ componentIdx ] =     255/255;
+							colors[ componentIdx + 1 ] = 255/255;
+							colors[ componentIdx + 2 ] =   0/255;
+						}else if(normalX===-1 && normalY===0 && normalZ===0){
+							// слева голубой
+							colors[ componentIdx ] =       0/255;
+							colors[ componentIdx + 1 ] = 255/255;
+							colors[ componentIdx + 2 ] = 255/255;
+						}else if(normalX===0 && normalY===-1 && normalZ===0){
+							// снизу пурпурный
+							colors[ componentIdx ] =     255/255;
+							colors[ componentIdx + 1 ] = 0/255;
+							colors[ componentIdx + 2 ] = 255/255;
+						}else {
+							// общий вид
+							colors[ componentIdx ] =     190/255;
+							colors[ componentIdx + 1 ] = 190/255;
+							colors[ componentIdx + 2 ] = 190/255;
+						}
+						
+						
+						
+						
 					
-						colors[ componentIdx ] =       normalX;;
-						colors[ componentIdx + 1 ] =   normalY;
-						colors[ componentIdx + 2 ] = normalZ;
+						// colors[ componentIdx ] =       normalX;;
+						// colors[ componentIdx + 1 ] =   normalY;
+						// colors[ componentIdx + 2 ] = normalZ;
 					}
 
 				}
