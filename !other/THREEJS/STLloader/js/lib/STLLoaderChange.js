@@ -252,12 +252,12 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 					} else{ // эксперемент
 						if(normalX===0 && normalY===1 && normalZ===0){
-							// зеленый сверху
+							// зеленый сверху Top
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] = 255/255;
 							colors[ componentIdx + 2 ] =   0/255;
 						}else if(normalX===1 && normalY===0 && normalZ===0){
-							// красный справа
+							// красный справа Right
 							colors[ componentIdx ] =   255/255;
 							colors[ componentIdx + 1 ] = 0/255;
 							colors[ componentIdx + 2 ] = 0/255;						

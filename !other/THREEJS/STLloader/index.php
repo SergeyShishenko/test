@@ -44,42 +44,42 @@
         <!-- Front, Back, Top, Bottom, Left, Right, General -->
         <ul style="  padding-left: 0px;">
 
-            <li class="container">
+            <li class="container" style=" color: blue;">
                 <input type="checkbox" id="Front" value="0" checked>
                 Спереди:
                 <span class="checkmark Front">0</span>
             </li>
 
-            <li class="container">
+            <li class="container" style="color: yellow;">
                 <input type="checkbox" id="Back" value="0" checked>
                 Сзади:
                 <span class="checkmark Back">0</span>
             </li>
 
-            <li class="container">
+            <li class="container" style="color: green;">
                 <input type="checkbox" id="Top" value="0" checked>
                 Сверху:
                 <span class="checkmark Top">0</span>
             </li>
 
-            <li class="container">
+            <li class="container" style="color: magenta;">
                 <input type="checkbox" id="Bottom" value="0" checked>
                 <b>Снизу:</b>
                 <span class="checkmark Bottom">0</span>
             </li>
 
-            <li class="container">
+            <li class="container" style="color: cyan;">
                 <input type="checkbox" id="Left" value="0" checked>
                 Слева:
                 <span class="checkmark Left">0</span>
             </li>
 
-            <li class="container">
+            <li class="container" style="color: red;">
                 <input type="checkbox" id="Right" value="0" checked>
                 Справа:
                 <span class="checkmark Right">0</span>
             </li>
-            <li class="container">
+            <li class="container" >
                 <input type="checkbox" id="General" value="0" checked>
                 Общий вид:
                 <span class="checkmark General">0</span>

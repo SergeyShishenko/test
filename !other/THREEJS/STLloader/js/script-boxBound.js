@@ -145,8 +145,8 @@ function loadSTL(){
       
       // var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide } );//,vertexColors: THREE.FaceColors
       // var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide ,vertexColors: THREE.FaceColors} );//
-        // var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
-        var  material = new THREE.MeshPhongMaterial( { color: 0xFFFFFF, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
+        var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
+        // var  material = new THREE.MeshPhongMaterial( { color: 0xFFFFFF, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
         
         removeEntity();
         mesh = new THREE.Mesh(geometry, material);
@@ -158,14 +158,20 @@ function loadSTL(){
         mesh.position.sub(b.getCenter()); // центрируем
         // mesh.position.y -= (sizeBound.y - b.getSize().y) * 0.5; // опускаем к "полу"
 
-        
+        // camera.up.set(0, 0, 1);    
+        //  camera.lookAt (new THREE.Vector3(0,0,1));
         scene.add(mesh);
         // camera.position.y = 5;
         // camera.position.x = 10; 
         // camera.position.z = -5;
+        
         camera.position.y = 0;
         camera.position.x = 0; 
         camera.position.z = 15;
+
+        // camera.position.y = 15;
+        // camera.position.x = 0; 
+        // camera.position.z = 0;
 
         controls.autoRotate =false; 
         boxHelper.visible=false;
@@ -173,7 +179,7 @@ function loadSTL(){
         // camera.position.z = -400;
 
         // camera.up.set(0, 0, 1);    
-        //  camera.lookAt (new THREE.Vector3(0,0,1));
+        //  camera.lookAt (new THREE.Vector3(1,0,0));
 
         animate();
       
@@ -230,8 +236,8 @@ function scaleToFit(obj, bound) {
     // directionalLight.target.position.set(0, 0, 0);
     scene.add( directionalLight );
 
-    // directionalLight.castShadow = true;
-    directionalLight.castShadow = false;
+    directionalLight.castShadow = true;
+    // directionalLight.castShadow = false;
 
     const d = 1;
     directionalLight.shadow.camera.left = - d;
@@ -244,8 +250,8 @@ function scaleToFit(obj, bound) {
     // directionalLight.shadow.camera.top = d;
     // directionalLight.shadow.camera.bottom = d;
 
-    directionalLight.shadow.camera.near = 0.01;//1//
-    directionalLight.shadow.camera.far = 10000;//4
+    directionalLight.shadow.camera.near = 1;//1//
+    directionalLight.shadow.camera.far = 4;//4
 
     directionalLight.shadow.bias = - 0.002;
 
@@ -253,7 +259,8 @@ function scaleToFit(obj, bound) {
 
 function removeEntity() { 
   //  alert(scene.children.length);
-    scene.remove( scene.children[3]);//mesh
+    // scene.remove( scene.children[6]);//mesh
+    scene.remove( scene.children[scene.children.length-1]);//mesh
     animate();
   }
 
