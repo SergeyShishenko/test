@@ -32,17 +32,40 @@ function init(){
     // scene.add(light);
 
     
+0
+    addShadowedLight( 5, 10, 5, 0xffffff, 1);// зелёный
+    addShadowedLight( 10, 5, 5, 0xffffff, 1 );// красный
+    addShadowedLight( 0, 0, -10, 0xffffff, 1 );// желтый
+    addShadowedLight( 5, 5, 10, 0xffffff, 1 ); // синий
+    addShadowedLight( -10, 0, 0, 0xffffff, 1 ); // голубой
+    addShadowedLight( 0, -10, 0, 0xffffff, 1 ); // MAGENTA
+    // addShadowedLight( 5, 5, -10, 0xffffff, 1.35 ); // желтый
+    // addShadowedLight( -1, -1, -1, 0xffffff, 1 );
+    // addShadowedLight( 10, -10, 10, 0xffffff, 1 );
+    // addShadowedLight( 10, 10, 10, 0xffffff, 1 );
+    // addShadowedLight( -10, 10, 10, 0xffffff, 1 );
+    // addShadowedLight( 1, 0, 0, 0xffffff, 1 );
+    // addShadowedLight( 1, 1, 0, 0xffffff, 1 );
+    // addShadowedLight( 0, -10, 0, 0xffffff, 1 );
+    // addShadowedLight( 0, 0, -10, 0xffffff, 1 );
+    // addShadowedLight( -10, 0, 0, 0xffffff, 1 );
 
-    addShadowedLight( 0.5, 0.5, 1, 0xffffff, 1.35 );
-    addShadowedLight( 0.5, 1, 0.5, 0xffffff, 1.35 );
-    addShadowedLight( 1, 0.5, 0.5, 0xffffff, 1.35 );
-    addShadowedLight( 0.5, 0.5, -1, 0xffffff, 1.35 );
-    addShadowedLight( 0.5, -1, 0.5, 0xffffff, 1.35 );
-    addShadowedLight( -1, 0.5, 0.5, 0xffffff, 1.35 );
+
+    // addShadowedLight( -10, -10, 10, 0xffffff, 1.35 );
+    // addShadowedLight( 10, 0, 10, 0xffffff, 1.35 );
+    // addShadowedLight( -10, 0, 10, 0xffffff, 1.35 );
+    // addShadowedLight( 0.5, 1, 0.5, 0xffffff, 1.35 );
+    // addShadowedLight( 1, 0.5, 0.5, 0xffffff, 1.35 );
+    // addShadowedLight( 0.5, 0.5, -1, 0xffffff, 1.35 );
+    // addShadowedLight( 0.5, -1, 0.5, 0xffffff, 1.35 );
+    // addShadowedLight( -1, 0.5, 0.5, 0xffffff, 1.35 );
+
     // // addShadowedLight( 1, 1, 1, 0xffffff, 1.35 );
     // addShadowedLight( 0.5, -1, 1, 0xffffff, 1 );
-    addShadowedLight( -0.5, -0.5, -0.5, 0xdddd00, 1 );
-    addShadowedLight( -0.5, 0.5, -0.5, 0xdddd00, 1 );
+
+    // addShadowedLight( -0.5, -0.5, -0.5, 0xdddd00, 1 );
+    // addShadowedLight( -0.5, 0.5, -0.5, 0xdddd00, 1 );
+
     // // addShadowedLight( 1, 1, 1, 0xffffff, 1.35 );
     // // addShadowedLight( 0.5, 0.5, 0.5, 0xffffff, 1.35 );
     // addShadowedLight( 0.5, 1, - 1, 0xffaa00, 1 );
@@ -143,7 +166,8 @@ function loadSTL(){
       
       // var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide } );//,vertexColors: THREE.FaceColors
       // var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide ,vertexColors: THREE.FaceColors} );//
-        var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
+        // var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
+        var  material = new THREE.MeshPhongMaterial( { color: 0xFFFFFF, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
         
         removeEntity();
         mesh = new THREE.Mesh(geometry, material);
@@ -224,24 +248,27 @@ function scaleToFit(obj, bound) {
 
     const directionalLight = new THREE.DirectionalLight( color, intensity );
     directionalLight.position.set( x, y, z );
+    // directionalLight.target.position.set(0, 0, 0);
     scene.add( directionalLight );
 
-    directionalLight.castShadow = true;
+    // directionalLight.castShadow = true;
+    directionalLight.castShadow = false;
 
-    const d = 1;
-    directionalLight.shadow.camera.left = - d;
-    directionalLight.shadow.camera.right = d;
-    directionalLight.shadow.camera.top = d;
-    directionalLight.shadow.camera.bottom = - d;
+    // const d = 10;
+    // directionalLight.shadow.camera.left = - d;
+    // directionalLight.shadow.camera.right = d;
+    // directionalLight.shadow.camera.top = d;
+    // directionalLight.shadow.camera.bottom = - d;
+
     // directionalLight.shadow.camera.left = d;
     // directionalLight.shadow.camera.right = d;
     // directionalLight.shadow.camera.top = d;
     // directionalLight.shadow.camera.bottom = d;
 
-    directionalLight.shadow.camera.near = 1;
-    directionalLight.shadow.camera.far = 4;
+    // directionalLight.shadow.camera.near = 0.01;//1//
+    // directionalLight.shadow.camera.far = 1000;//4
 
-    directionalLight.shadow.bias = - 0.002;
+    // directionalLight.shadow.bias = - 0.002;
 
   }
 
