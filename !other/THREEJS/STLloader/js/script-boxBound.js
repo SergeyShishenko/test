@@ -301,5 +301,48 @@ function setupInset() {
 
   }
 
+const dir_ft = document.getElementById('dir_ft');
+dir_ft.addEventListener('click', function () {
+  camera.position.y = 0;
+  camera.position.x = 0;
+  camera.position.z = 15;
+  animate();
+});
+const dir_bk = document.getElementById('dir_bk');
+dir_bk.addEventListener('click', function () {
+  camera.position.y = 0;
+  camera.position.x = 0;
+  camera.position.z = -15;
+  animate();
+});
+const dir_tp = document.getElementById('dir_tp');
+dir_tp.addEventListener('click', function () {
+  camera.position.y = 15;
+  camera.position.x = 0;
+  camera.position.z = 0;
+  animate();
+});
+const dir_bm = document.getElementById('dir_bm');
+dir_bm.addEventListener('click', function () {
+  camera.position.y = -15;
+  camera.position.x = 0;
+  camera.position.z = 0;
+  animate();
+});
+const dir_lt = document.getElementById('dir_lt');
+dir_lt.addEventListener('click', function () {
+  camera.position.y = 0;
+  camera.position.x = -15;
+  camera.position.z = 0;
+  animate();
+});
+const dir_rt = document.getElementById('dir_rt');
+dir_rt.addEventListener('click', function () {
+  camera.position.y = 0;
+  camera.position.x = 15;
+  camera.position.z = 0;
+  animate();
+});
+
 
 

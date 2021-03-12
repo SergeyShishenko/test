@@ -45,41 +45,48 @@
         <ul style="  padding-left: 0px;">
 
             <li class="container" style=" color: blue;">
+                <input type="button" class="btn-dir" id="dir_ft" value="Спереди" >
                 <input type="checkbox" id="Front" value="0" checked>
-                Спереди:
+                <!-- Спереди: -->
                 <span class="checkmark Front">0</span>
             </li>
 
             <li class="container" style="color: yellow;">
+            <input type="button" class="btn-dir" id="dir_bk" value="Сзади">
                 <input type="checkbox" id="Back" value="0" checked>
-                Сзади:
+                <!-- Сзади: -->
                 <span class="checkmark Back">0</span>
             </li>
 
             <li class="container" style="color: green;">
+            <input type="button" class="btn-dir" id="dir_tp" value="Сверху">
                 <input type="checkbox" id="Top" value="0" checked>
-                Сверху:
+                <!-- Сверху: -->
                 <span class="checkmark Top">0</span>
             </li>
 
             <li class="container" style="color: magenta;">
+            <input type="button" class="btn-dir" id="dir_bm" value="Снизу">
                 <input type="checkbox" id="Bottom" value="0" checked>
-                <b>Снизу:</b>
+                <!-- <b>Снизу:</b> -->
                 <span class="checkmark Bottom">0</span>
             </li>
 
             <li class="container" style="color: cyan;">
+            <input type="button" class="btn-dir" id="dir_lt" value="Слева">
                 <input type="checkbox" id="Left" value="0" checked>
-                Слева:
+                <!-- Слева: -->
                 <span class="checkmark Left">0</span>
             </li>
 
             <li class="container" style="color: red;">
+            <input type="button" class="btn-dir" id="dir_rt" value=" Справа">
                 <input type="checkbox" id="Right" value="0" checked>
-                Справа:
+                <!-- Справа: -->
                 <span class="checkmark Right">0</span>
             </li>
             <li class="container" >
+            <!-- <input type="button" class="btn-dir" id="dir_" value=" Спереди "> -->
                 <input type="checkbox" id="General" value="0" checked>
                 Общий вид:
                 <span class="checkmark General">0</span>
