@@ -117,18 +117,17 @@ function square($arrVert1,$arrVert2,$arrVert3){ // полупериметр
 // a × b = {$ay*$bz - $az*$by; $az*$bx - $ax*$bz; $ax*$by - $ay*$bx}
 // i ($ay*$bz - $az*$by) - j ($ax*$bz - $az*$bx) + k ($ax*$by - $ay*$bx)
 function checkColinear($ax, $ay, $az){ 
-     $bx =0; $by=1; $bz=0; // Top
+     $bx =0; $by=0; $bz=-1; // Bottom
      $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
         if ($Colinear==0) {
             if ( directional($ax, $ay, $az, $bx, $by, $bz)){
-                return "Top"; 
-            } else{
-                
                 return "Bottom"; 
+            } else{
+                return "Top"; 
             }
         } 
    
-     $bx =0; $by=0; $bz=1; // Front
+     $bx =0; $by=1; $bz=0; // Front
      $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
         if ($Colinear==0) {        
             if ( directional($ax, $ay, $az, $bx, $by, $bz)){
@@ -138,14 +137,13 @@ function checkColinear($ax, $ay, $az){
             }
         } 
  
-     $bx =1; $by=0; $bz=0; // Right
+     $bx =-1; $by=0; $bz=0; // Left
      $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
     if ($Colinear==0) {        
         if ( directional($ax, $ay, $az, $bx, $by, $bz)){
-             return "Right";
+            return "Left"; 
         } else{
-             
-            return "Left";
+            return "Right"; 
         }
      }    
        

@@ -251,41 +251,36 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 						colors[ componentIdx + 2 ] = b;
 
 					} else{ // эксперемент
-						if(normalX===0.0 && normalY===1.0 && normalZ===0.0){
+						if(normalX===0 && normalY===1 && normalZ===0){
 							// зеленый сверху Top
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] = 255/255;
 							colors[ componentIdx + 2 ] =   0/255;
-						}else if(normalX===0.0 && normalY===-1.0 && normalZ===0.0){
-							
-							// пурпурный снизу  Back
-							colors[ componentIdx ] =     255/255;
+						}else if(normalX===1 && normalY===0 && normalZ===0){
+							// красный справа Right
+							colors[ componentIdx ] =   255/255;
 							colors[ componentIdx + 1 ] = 0/255;
-							colors[ componentIdx + 2 ] = 255/255;
-												
-						}else if(normalX===0.0 && normalY===0.0 && normalZ===1.0){
-							// синий спереди Front
+							colors[ componentIdx + 2 ] = 0/255;						
+						}else if(normalX===0 && normalY===0 && normalZ===1){
+							// синий спереди
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] =   0/255;
 							colors[ componentIdx + 2 ] = 255/255;
-						}else if(normalX===0.0 && normalY===0.0 && normalZ===-1.0){
+						}else if(normalX===0 && normalY===0 && normalZ===-1){
 							// жёлтый сзади Bottom
 							colors[ componentIdx ] =     255/255;
 							colors[ componentIdx + 1 ] = 255/255;
 							colors[ componentIdx + 2 ] =   0/255;
-							
-						}else if(normalX===1.0 && normalY===0.0 && normalZ===0.0){
-							// красный справа Right
-							colors[ componentIdx ] =   255/255;
-							colors[ componentIdx + 1 ] = 0/255;
-							colors[ componentIdx + 2 ] = 0/255;	
-							
-						}else if(normalX===-1.0 && normalY===0.0 && normalZ===0.0){
-							// голубой слева Left
+						}else if(normalX===-1 && normalY===0 && normalZ===0){
+							// слева голубой
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] = 255/255;
 							colors[ componentIdx + 2 ] = 255/255;
-						
+						}else if(normalX===0 && normalY===-1 && normalZ===0){
+							// снизу пурпурный
+							colors[ componentIdx ] =     255/255;
+							colors[ componentIdx + 1 ] = 0/255;
+							colors[ componentIdx + 2 ] = 255/255;
 						}else {
 							// общий вид
 							colors[ componentIdx ] =     190/255;

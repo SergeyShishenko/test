@@ -33,12 +33,13 @@ function init(){
 
     
 0
-    addShadowedLight( 5, 10, 5, 0xffffff, 1);// зелёный
-    addShadowedLight( 10, 5, 5, 0xffffff, 1 );// красный
-    addShadowedLight( 5, 5, -10, 0xffffff, 1 );// желтый
-    addShadowedLight( 5, 5, 10, 0xffffff, 1 ); // синий
-    addShadowedLight( -10, 5, 5, 0xffffff, 1 ); // голубой
-    addShadowedLight( 5, -10, 5, 0xffffff, 1 ); // MAGENTA
+    addShadowedLight( 5, 10, 5, 0xffffff, 1.35);// зелёный
+    addShadowedLight( 5, 5, 10, 0xffffff, 1.35);// синий
+    addShadowedLight( -10, 5, 5, 0xffffff, 1.35 );// красный
+    addShadowedLight( 5, 5, -10, 0xffffff, 1.35);// желтый
+    // addShadowedLight( 5, 5, 10, 0xffffff, 1.35 ); // голубой
+    addShadowedLight( 5, -10, 5, 0xffffff, 1.35 ); // MAGENTA
+
     // addShadowedLight( -5, 10, -5, 0xffffff, 1 ); // 
 
     // addShadowedLight( -0.5, -0.5, -0.5, 0xdddd00, 1 );
