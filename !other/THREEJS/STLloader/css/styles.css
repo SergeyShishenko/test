@@ -18,9 +18,9 @@ input{
     z-index: 100;
 }
 form{
-    background-color: rgb(233, 233, 241);
+    /* background-color: rgb(233, 233, 241); */
     width: 20%;
 }
 .btn-dir{
-    width: 70px;
+    width: 85px;
 }

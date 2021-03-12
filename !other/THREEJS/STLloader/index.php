@@ -44,51 +44,51 @@
         <!-- Front, Back, Top, Bottom, Left, Right, General -->
         <ul style="  padding-left: 0px;">
 
-            <li class="container" style=" color: blue;">
-                <input type="button" class="btn-dir" id="dir_ft" value="Спереди" >
+            <li class="container" >
+                <input type="button" class="btn-dir" id="dir_ft" value="Спереди" style="background-color: DodgerBlue;">
                 <input type="checkbox" id="Front" value="0" checked>
                 <!-- Спереди: -->
                 <span class="checkmark Front">0</span>
             </li>
 
-            <li class="container" style="color: yellow;">
-            <input type="button" class="btn-dir" id="dir_bk" value="Сзади">
+            <li class="container" >
+            <input type="button" class="btn-dir" id="dir_bk" value="Сзади" style="background-color: Gold;">
                 <input type="checkbox" id="Back" value="0" checked>
                 <!-- Сзади: -->
                 <span class="checkmark Back">0</span>
             </li>
 
-            <li class="container" style="color: green;">
-            <input type="button" class="btn-dir" id="dir_tp" value="Сверху">
+            <li class="container" >
+            <input type="button" class="btn-dir" id="dir_tp" value="Сверху" style="background-color: Lawngreen;">
                 <input type="checkbox" id="Top" value="0" checked>
                 <!-- Сверху: -->
                 <span class="checkmark Top">0</span>
             </li>
 
-            <li class="container" style="color: magenta;">
-            <input type="button" class="btn-dir" id="dir_bm" value="Снизу">
+            <li class="container" >
+            <input type="button" class="btn-dir" id="dir_bm" value="Снизу" style="background-color: magenta;">
                 <input type="checkbox" id="Bottom" value="0" checked>
                 <!-- <b>Снизу:</b> -->
                 <span class="checkmark Bottom">0</span>
             </li>
 
-            <li class="container" style="color: cyan;">
-            <input type="button" class="btn-dir" id="dir_lt" value="Слева">
+            <li class="container" >
+            <input type="button" class="btn-dir" id="dir_lt" value="Слева" style="background-color: cyan;">
                 <input type="checkbox" id="Left" value="0" checked>
                 <!-- Слева: -->
                 <span class="checkmark Left">0</span>
             </li>
 
-            <li class="container" style="color: red;">
-            <input type="button" class="btn-dir" id="dir_rt" value=" Справа">
+            <li class="container" >
+            <input type="button" class="btn-dir" id="dir_rt" value="Справа" style="background-color: Tomato	;">
                 <input type="checkbox" id="Right" value="0" checked>
                 <!-- Справа: -->
                 <span class="checkmark Right">0</span>
             </li>
             <li class="container" >
-            <!-- <input type="button" class="btn-dir" id="dir_" value=" Спереди "> -->
+            <input type="button" class="btn-dir" id="dir_g" value="Общий вид" >
                 <input type="checkbox" id="General" value="0" checked>
-                Общий вид:
+                <!-- Общий вид: -->
                 <span class="checkmark General">0</span>
             </li>
             <output id="rezultat">Сумма площадей всех граней: 0</output>

@@ -145,8 +145,8 @@ function loadSTL(){
       
       // var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide } );//,vertexColors: THREE.FaceColors
       // var material = new THREE.MeshPhongMaterial( { color: 0xff5533, specular: 0x111111, shininess: 200, side: THREE.DoubleSide ,vertexColors: THREE.FaceColors} );//
-        var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
-        // var  material = new THREE.MeshPhongMaterial( { color: 0xFFFFFF, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
+        // var  material = new THREE.MeshPhongMaterial( { color: 0xAAAAAA, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
+        var  material = new THREE.MeshPhongMaterial( { color: 0xFFFFFF, specular: 0x111111, shininess: 200 , side: THREE.DoubleSide,vertexColors: THREE.FaceColors} );
         
         removeEntity();
         mesh = new THREE.Mesh(geometry, material);
@@ -341,6 +341,13 @@ dir_rt.addEventListener('click', function () {
   camera.position.y = 0;
   camera.position.x = 15;
   camera.position.z = 0;
+  animate();
+});
+const dir_g = document.getElementById('dir_g');
+dir_g.addEventListener('click', function () {
+  camera.position.y = 10;
+  camera.position.x = -10;
+  camera.position.z = 10;
   animate();
 });
 
