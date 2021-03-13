@@ -5,6 +5,7 @@ var cube, mesh;
 var controls;
 var boxHelper;
 var light;
+var geometry;
 // var stl="box.stl";
 // var input = document.querySelector('#STL');
 var sizeBound = new THREE.Vector3(4, 4, 4);
@@ -131,13 +132,15 @@ function loadSTL(){
       // {
        
         
-      //   // console.log(geometry.attributes	);
+        // console.log(geometry.attributes	);// !!!!
+        
       //   // console.log(geometry.attributes.normal.count	);
       //   // console.log(geometry.attributes.groups	);
-      //     // for ( var j = 0; j < geometry.attributes.normal.count; j=j+3 ) 
-      //     // {
-      //     //   console.log(geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
-      //     // }
+
+          // for ( var j = 0; j < geometry.attributes.normal.count; j=j+3 ) 
+          // {
+          //   console.log(geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
+          // }
         
       //   // console.log(geometry.attributes['normal']['array'][0]+" "+geometry.attributes['normal']['array'][1]+" "+geometry.attributes['normal']['array'][2]	);
       // }
@@ -350,6 +353,15 @@ dir_g.addEventListener('click', function () {
   camera.position.x = -10;
   camera.position.z = 10;
   animate();
+  // console.log("colors "+geometry.attributes['color']['array'].length);
+  // var colors = geometry.attributes['color']['array'];
+  // console.log("colors "+colors.length);
+  
+  // for ( var j = 0; j < geometry.attributes.color.count; j=j+3 ) 
+  // {
+  //   console.log(geometry.attributes['color']['array'][j]+" "+geometry.attributes['color']['array'][j+1]+" "+geometry.attributes['color']['array'][j+2]	);
+  // }
+   
 });
 
 
