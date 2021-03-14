@@ -88,7 +88,7 @@ function init(){
  
 
 // var sizeBound = new THREE.Vector3(4, 4, 4);
-var sizeBound = new THREE.Vector3(0, 0, 0);
+// var sizeBound = new THREE.Vector3(0, 0, 0);
 
 
 var b = new THREE.Mesh(new THREE.BoxBufferGeometry(sizeBound.x, sizeBound.y, sizeBound.z), new THREE.MeshBasicMaterial());

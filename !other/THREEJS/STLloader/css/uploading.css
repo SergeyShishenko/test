@@ -1,6 +1,6 @@
 #greyProgress {
     /* width: 100%; */
-    width: 40%;
+    /* width: 40%; */
     background-color: #ddd;
 }
 
@@ -107,9 +107,9 @@ ul {
 
 .row {
     /* margin-top: 50px; */
-    margin-left: 50px;
+    margin-left: 10px;
     position: absolute;
-    width: 100%;
+    width: 200px;
 }
 
 .box {
