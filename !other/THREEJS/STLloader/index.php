@@ -59,8 +59,28 @@
             </li>
 
             <li class="container" >
-            <input type="button" class="btn-dir" id="dir_tp" value="Сверху" style="background-color: Lawngreen;">
-                <input type="checkbox" id="Top" value="0" checked>
+            <!-- <input type="button" class="btn-dir" id="dir_tp" value="Сверху" style="background-color: Lawngreen;"> -->
+            <div class="menu-box" title="Сверху" id="dir_tp">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 101 101" >
+            <!-- x(вправо), y(вниз)-->
+            <g fill-opacity="0.6" stroke="black" stroke-width="0.5px">
+               <!-- back -->
+                <polygon points="30,0 100,0 100,70 30,70"  fill="none"/>
+                 <!-- front -->
+                <polygon  points="0,30 70,30 70,100 0,100 " fill="none" />
+                <!-- top -->
+                <polygon class="hover" points="0,30 30,0 100,0 70,30 " fill="green" />
+                <!-- bottom-->
+                <polygon   points="0,100 30,70 100,70 70,100 " fill="none" />
+                <!-- right-->
+                <polygon  points="70,30 100,0 100,70 70,100 " fill="none" />
+                <!-- left-->
+                <polygon  points="0,30 30,0 30,70 0,100 "fill="none" />
+            </g>
+        </svg>
+    </div>
+     
+                            <input type="checkbox" id="Top" value="0" checked>
                 <!-- Сверху: -->
                 <span class="checkmark Top">0</span>
             </li>

@@ -24,3 +24,17 @@ form{
 .btn-dir{
     width: 85px;
 }
+
+/* svg menu */
+.hover:hover {
+    stroke: aqua;
+}
+.menu-box, .menu-box>svg {
+    width: 10px;
+    height: 10px;
+
+}
+.menu-box{
+    /* margin:5px; */
+    cursor:pointer;
+}
