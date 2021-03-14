@@ -207,23 +207,23 @@
 
                             <g fill-opacity="0.6" stroke="black" stroke-width="0.5px">
 
-                                <polygon class="hover"  points="30,0 100,0 100,70 30,70"
-                                fill="none"  />
-
+                                <!-- <polygon class="hover"  points="30,0 100,0 100,70 30,70"
+                                fill="none"  /> -->
+                                <!-- front -->
                                 <polygon class="hover" points="0,30 70,30 70,100 0,100 "
-                                fill="none" />
-
+                                fill="#939191" />
+                                <!-- top -->
                                 <polygon class="hover"  points="0,30 30,0 100,0 70,30 "
-                                fill="none"  />
+                                fill="#c8c5c5"  />
 
-                                <polygon class="hover" points="0,100 30,70 100,70 70,100 "
-                                fill="none"  />
-
+                                <!-- <polygon class="hover" points="0,100 30,70 100,70 70,100 "
+                                fill="none"  /> -->
+                                <!-- right-->
                                 <polygon class="hover" points="70,30 100,0 100,70 70,100 "
-                                fill="none"  />
+                                fill="#b8b5b5"  />
 
-                                <polygon class="hover" points="0,30 30,0 30,70 0,100 "
-                                fill="none"  />
+                                <!-- <polygon class="hover" points="0,30 30,0 30,70 0,100 "
+                                fill="none"  /> -->
                             </g>
                         </svg>
                     </div>
