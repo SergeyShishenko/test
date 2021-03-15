@@ -179,6 +179,7 @@ function uploadChunk(chunkForm, chunkEnd) {
             greyProgress.classList.remove("meter"); // удалить класс 
 
             document.getElementById("greenBar").classList.add("ok"); // добавить класс 
+            controls.autoRotate =false; 
         }
 
     };

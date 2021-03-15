@@ -160,6 +160,7 @@ function loadSTL(){
 
         let b = new THREE.Box3().setFromObject(mesh);
         mesh.position.sub(b.getCenter()); // центрируем
+        // mesh.position.getCenter(b); // центрируем
         // mesh.position.y -= (sizeBound.y - b.getSize().y) * 0.5; // опускаем к "полу"
 
         // camera.up.set(0, 0, 1);    
@@ -177,7 +178,7 @@ function loadSTL(){
         // camera.position.x = 0; 
         // camera.position.z = 0;
 
-        controls.autoRotate =false; 
+        // controls.autoRotate =false; 
         boxHelper.visible=false;
 
         // camera.position.z = -400;
