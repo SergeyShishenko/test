@@ -33,7 +33,7 @@ function init(){
     // scene.add(light);
 
     
-0
+
     addShadowedLight( 5, 10, 5, 0xffffff, 0.35);// зелёный
     addShadowedLight( 5, 5, 10, 0xffffff, 0.35);// синий
     addShadowedLight( -10, 5, 5, 0xffffff, 0.35 );// красный

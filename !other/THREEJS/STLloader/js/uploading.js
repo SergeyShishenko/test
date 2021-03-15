@@ -284,6 +284,7 @@ function handleDrop(e) {
 
 // function handleFiles(files) {
 function handleFiles() {
+    controls.autoRotate =true;
 
     greyProgress.classList.add("meter"); // добавить класс 
     document.getElementById("greenBar").classList.remove("ok");

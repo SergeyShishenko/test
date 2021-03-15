@@ -17,7 +17,7 @@ if ($file['size']==84){
         $NormalY=unpack('f', fread($handle, 4))[1];
         $NormalZ=unpack('f', fread($handle, 4))[1];
        
-        // $arrTriangles[$j]['normal'] = [$NormalX , $NormalY , $NormalZ ] ;
+        $arrTriangles[$j]['normal'] = [$NormalX , $NormalY , $NormalZ ] ;
        
         $directional = checkColinear($NormalX, $NormalY, $NormalZ);
 

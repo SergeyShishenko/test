@@ -167,7 +167,6 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 			var r, g, b, hasColors = false, colors;
 			var defaultR, defaultG, defaultB, alpha;
-			const accuracy =0.00001;
 
 			// process STL header
 			// check for default color in header ("COLOR=rgba" sequence).
@@ -252,37 +251,36 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 						colors[ componentIdx + 2 ] = b;
 
 					} else{ // эксперемент
-
-						if((normalX >= 0.0 && normalX <= accuracy) && normalY===1.0 && (normalZ >= 0.0 && normalZ <= accuracy)){
+						if(normalX===0.0 && normalY===1.0 && normalZ===0.0){
 							// зеленый сверху Top
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] = 255/255;
 							colors[ componentIdx + 2 ] =   0/255;
-						}else if((normalX >= 0.0 && normalX <= accuracy) && (normalY >=(-1.0) && normalY <=(-accuracy)) && (normalZ >= 0.0 && normalZ <= accuracy)){
+						}else if(normalX===0.0 && normalY===-1.0 && normalZ===0.0){
 							
 							// пурпурный снизу  Back
 							colors[ componentIdx ] =     255/255;
 							colors[ componentIdx + 1 ] = 0/255;
 							colors[ componentIdx + 2 ] = 255/255;
 												
-						}else if((normalX >= 0.0 && normalX <= accuracy) && (normalY >= 0.0 && normalY <= accuracy) && normalZ===1.0){
+						}else if(normalX===0.0 && normalY===0.0 && normalZ===1.0){
 							// синий спереди Front
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] =   0/255;
 							colors[ componentIdx + 2 ] = 255/255;
-						}else if((normalX >= 0.0 && normalX <= accuracy) && (normalY >= 0.0 && normalY <= accuracy) && (normalZ >=(-1.0) && normalZ <=(-accuracy))){
+						}else if(normalX===0.0 && normalY===0.0 && normalZ===-1.0){
 							// жёлтый сзади Bottom
 							colors[ componentIdx ] =     255/255;
 							colors[ componentIdx + 1 ] = 255/255;
 							colors[ componentIdx + 2 ] =   0/255;
 							
-						}else if(normalX===1.0 && (normalY >= 0.0 && normalY <= accuracy) && (normalZ >= 0.0 && normalZ <= accuracy)){
+						}else if(normalX===1.0 && normalY===0.0 && normalZ===0.0){
 							// красный справа Right
 							colors[ componentIdx ] =   255/255;
 							colors[ componentIdx + 1 ] = 0/255;
 							colors[ componentIdx + 2 ] = 0/255;	
 							
-						}else if(normalX===-1.0 && (normalY >= 0.0 && normalY <= accuracy) && (normalZ >= 0.0 && normalZ <= accuracy)){
+						}else if(normalX===-1.0 && normalY===0.0 && normalZ===0.0){
 							// голубой слева Left
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] = 255/255;
