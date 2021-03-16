@@ -167,6 +167,8 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 			var r, g, b, hasColors = false, colors;
 			var defaultR, defaultG, defaultB, alpha;
+
+
 			const accuracy = 0.001;
 
 			// process STL header
@@ -251,11 +253,14 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 						colors[ componentIdx + 1 ] = g;
 						colors[ componentIdx + 2 ] = b;
 
-					} else{ // эксперемент
+					} 
+					else
+					{ // эксперемент
 
-						// if((normalX >-1 && normalX < accuracy) && (normalY >=1 && (normalY-1) < accuracy) && (normalZ >-1 && normalZ < accuracy)){
-						if((normalX >=0 && normalX < accuracy) && (normalY > 0  && (normalY-1) <= accuracy) && (normalZ >=0 && normalZ < accuracy)){
-						// if(normalX===0 && normalY===1 && normalZ===0){
+						// ////if((normalX >-1 && normalX < accuracy) && (normalY >=1 && (normalY-1) < accuracy) && (normalZ >-1 && normalZ < accuracy)){
+						// if((normalX >-1 && normalX < accuracy) && (normalY > 0  && (1/normalY-1) <= accuracy) && (normalZ >-1 && normalZ < accuracy)){
+						// //// if(normalX===0 && normalY===1 && normalZ===0){
+						 if(+normalX.toFixed(1)==0 && +normalY.toFixed(1)==1 && +normalZ.toFixed(1)==0){
 							// зеленый сверху Top (normalX===0 && normalY===1 && normalZ===0)
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] = 255/255;
