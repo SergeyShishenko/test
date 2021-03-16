@@ -77,10 +77,9 @@ function init(){
 
 
 
-    camera = new THREE.PerspectiveCamera (20, width/height, 0.1, 50000);   
-    camera.position.y = 200;
-    camera.position.x = 400;
- 
+    camera = new THREE.PerspectiveCamera (20, width/height, 0.1, 50000);  
+      camera.position.y = 200;
+    camera.position.x = 400; 
     camera.position.z = -200;
 
 
@@ -106,6 +105,8 @@ setupInset();
 
 input.addEventListener( 'change', () =>  {
     file = input.files[0];
+   
+    boxHelper.visible=true;
     loadSTL();
     // // Площадь поверхности    
     handleFiles();
@@ -178,25 +179,21 @@ function loadSTL(){
         // camera.up.set(0, 0, 1);    
         //  camera.lookAt (new THREE.Vector3(0,0,1));
         scene.add(mesh);
-        // camera.position.y = 5;
-        // camera.position.x = 10; 
+        
         // camera.position.z = -5;
         
         camera.position.y = 0;
         camera.position.x = 0; 
         camera.position.z = 15;
 
-        // camera.position.y = 15;
-        // camera.position.x = 0; 
-        // camera.position.z = 0;
+        
 
         // controls.autoRotate =false; 
         boxHelper.visible=false;
+       
+    
 
-        // camera.position.z = -400;
-
-        // camera.up.set(0, 0, 1);    
-        //  camera.lookAt (new THREE.Vector3(1,0,0));
+      
 
         animate();
       
@@ -260,12 +257,9 @@ function scaleToFit(obj, bound) {
     directionalLight.shadow.camera.left = - d;
     directionalLight.shadow.camera.right = d;
     directionalLight.shadow.camera.top = d;
-    // directionalLight.shadow.camera.bottom = - d;
+    directionalLight.shadow.camera.bottom = - d;
 
-    // directionalLight.shadow.camera.left = d;
-    // directionalLight.shadow.camera.right = d;
-    // directionalLight.shadow.camera.top = d;
-    // directionalLight.shadow.camera.bottom = d;
+    
 
     directionalLight.shadow.camera.near = 1;//1//
     directionalLight.shadow.camera.far = 4;//4
@@ -309,8 +303,8 @@ function setupInset() {
     scene2 = new THREE.Scene();
 
     // camera
-    // camera2 = new THREE.PerspectiveCamera( 50, insetWidth / insetHeight, 1, 1000 );
-    camera2 = new THREE.OrthographicCamera( 45, insetWidth / insetHeight, 1, 1000 );
+    camera2 = new THREE.PerspectiveCamera( 50, insetWidth / insetHeight, 1, 1000 );
+    // camera2 = new THREE.OrthographicCamera( 45, insetWidth / insetHeight, 1, 1000 );
     camera2.up = camera.up; // important!
 
     // axes

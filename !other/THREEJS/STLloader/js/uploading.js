@@ -180,6 +180,9 @@ function uploadChunk(chunkForm, chunkEnd) {
 
             document.getElementById("greenBar").classList.add("ok"); // добавить класс 
             controls.autoRotate =false; 
+            camera.position.y = 5;
+            camera.position.x = -5;
+            camera.position.z = 5;
         }
 
     };
