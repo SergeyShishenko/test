@@ -97,8 +97,9 @@ boxHelper = new THREE.BoxHelper(b,0x03fc2c );
 scene.add(boxHelper);
 
 
+// document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 
-				setupInset();
+setupInset();
 
 }
 
@@ -109,6 +110,17 @@ input.addEventListener( 'change', () =>  {
     // // Площадь поверхности    
     handleFiles();
 } );
+
+function onDocumentMouseMove( event ) 
+{
+	// the following line would stop any other event handler from firing
+	// (such as the mouse's TrackballControls)
+	event.preventDefault();
+	
+	// update the mouse variable
+	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+}
 
 function loadSTL(){
   var reader = new FileReader();
@@ -297,7 +309,8 @@ function setupInset() {
     scene2 = new THREE.Scene();
 
     // camera
-    camera2 = new THREE.PerspectiveCamera( 50, insetWidth / insetHeight, 1, 1000 );
+    // camera2 = new THREE.PerspectiveCamera( 50, insetWidth / insetHeight, 1, 1000 );
+    camera2 = new THREE.OrthographicCamera( 45, insetWidth / insetHeight, 1, 1000 );
     camera2.up = camera.up; // important!
 
     // axes
