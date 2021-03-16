@@ -167,7 +167,7 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 			var r, g, b, hasColors = false, colors;
 			var defaultR, defaultG, defaultB, alpha;
-			const accuracy =0.00001;
+			const accuracy = 0.0001;
 
 			// process STL header
 			// check for default color in header ("COLOR=rgba" sequence).
@@ -253,36 +253,37 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 					} else{ // эксперемент
 
-						if((normalX >= 0.0 && normalX <= accuracy) && normalY===1.0 && (normalZ >= 0.0 && normalZ <= accuracy)){
+						if((normalX >-1 && normalX <= accuracy) && (normalY >=1 && (normalY-1) <=accuracy) && (normalZ >-1 && normalZ <= accuracy)){
 							// зеленый сверху Top
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] = 255/255;
 							colors[ componentIdx + 2 ] =   0/255;
-						}else if((normalX >= 0.0 && normalX <= accuracy) && (normalY >=(-1.0) && normalY <=(-accuracy)) && (normalZ >= 0.0 && normalZ <= accuracy)){
+						}else if((normalX >-1 && normalX <= accuracy) && (normalY <  0 && normalY >=-1 && (normalY+1) <=accuracy) && (normalZ >-1 && normalZ <= accuracy)){
 							
 							// пурпурный снизу  Back
 							colors[ componentIdx ] =     255/255;
 							colors[ componentIdx + 1 ] = 0/255;
 							colors[ componentIdx + 2 ] = 255/255;
 												
-						}else if((normalX >= 0.0 && normalX <= accuracy) && (normalY >= 0.0 && normalY <= accuracy) && normalZ===1.0){
+						}else if((normalX >-1 && normalX <= accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ >=1 && (normalZ -1) <=accuracy)){
 							// синий спереди Front
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] =   0/255;
 							colors[ componentIdx + 2 ] = 255/255;
-						}else if((normalX >= 0.0 && normalX <= accuracy) && (normalY >= 0.0 && normalY <= accuracy) && (normalZ >=(-1.0) && normalZ <=(-accuracy))){
+						}else if((normalX >-1 && normalX <= accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ<0 && normalZ >=-1 && (normalZ+1) <=accuracy)){
 							// жёлтый сзади Bottom
+							// console.log("normal Bottom "+normalX+" ; "+normalY+" ; "+normalZ);
 							colors[ componentIdx ] =     255/255;
 							colors[ componentIdx + 1 ] = 255/255;
 							colors[ componentIdx + 2 ] =   0/255;
 							
-						}else if(normalX===1.0 && (normalY >= 0.0 && normalY <= accuracy) && (normalZ >= 0.0 && normalZ <= accuracy)){
+						}else if((normalX >=1 && (normalX -1) <=accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ >-1 && normalZ <= accuracy)){
 							// красный справа Right
 							colors[ componentIdx ] =   255/255;
 							colors[ componentIdx + 1 ] = 0/255;
 							colors[ componentIdx + 2 ] = 0/255;	
 							
-						}else if(normalX===-1.0 && (normalY >= 0.0 && normalY <= accuracy) && (normalZ >= 0.0 && normalZ <= accuracy)){
+						}else if((normalX < 0 && normalX >=(-1) && (normalX+1) <=accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ >-1 && normalZ <= accuracy)){
 							// голубой слева Left
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] = 255/255;
@@ -290,6 +291,7 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 						
 						}else {
 							// общий вид
+							// console.log("normal общий вид "+normalX+" ; "+normalY+" ; "+normalZ);
 							colors[ componentIdx ] =     190/255;
 							colors[ componentIdx + 1 ] = 190/255;
 							colors[ componentIdx + 2 ] = 190/255;
