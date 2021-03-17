@@ -74,7 +74,7 @@ function uploadChunk(chunkForm, chunkEnd) {
             var totalPercentComplete = Math.round((chunkCounter - 1) / numberofChunks * 100 +
                 percentComplete / numberofChunks);
             document.getElementById("chunk-information").innerHTML = "Загрузка части #" + chunkCounter + ": " +
-                percentComplete + "%.";
+                percentComplete + "%. /&#160;"+ numberofChunks ;
             // "Загружено: " + totalPercentComplete + "%";
             Pssbar(totalPercentComplete);
 
@@ -96,7 +96,7 @@ function uploadChunk(chunkForm, chunkEnd) {
         if (resp.hasOwnProperty('totalarea')) {
             totalArea += resp.totalarea;
             // respinfo.insertAdjacentHTML('beforeend',"Сумма площадей всех граней: " + parseFloat((resp.totalarea / 1000000).toFixed(3)) +" м&sup2<br>");
-            respinfo.innerHTML = "Общая площадь поверхности: " + мsup2(totalArea) + " м&sup2";
+            respinfo.innerHTML = "Total: " + мsup2(totalArea) + " м&sup2<br>Размер: "+"<br>X:&#160;"+sizeX+"<br>Y:&#160;"+sizeY+"<br>Z:&#160;"+sizeZ;;
             dataArray.push(resp);
 
             dbFront += resp.Front;
@@ -133,7 +133,7 @@ function uploadChunk(chunkForm, chunkEnd) {
             // forEachm(resp, fcallback);
             // forEachm2(resp);
         } else {
-            info1.insertAdjacentHTML('beforeend', " Triangles: " + resp.head);
+            info1.insertAdjacentHTML('beforeend', "<wbr>Triangles:&#160;" + resp.head);
         }
 
 
@@ -155,7 +155,7 @@ function uploadChunk(chunkForm, chunkEnd) {
             console.log(duration + ' ms');
             document.getElementById("chunk-information").innerHTML = "";
             // document.getElementById("information").innerHTML = "Всё загруженно! Прошло: " + msToTime(duration);
-            document.getElementById("information").innerHTML = "Всё посчитано! Прошло: " + msToTime(
+            document.getElementById("information").innerHTML = "Прошло: " + msToTime(
                 duration);
 
                 // inpElem.click();
@@ -315,9 +315,10 @@ function handleFiles() {
     }
 
     numberofChunks = Math.ceil((file.size - 84) / chunkSize50 + 1);
-    info1.innerHTML = file.name + ": " + file.size + " байт поделено на " +
-        numberofChunks +
-        " частей."
+    info1.innerHTML = file.name + "<wbr>: " + file.size + "&#160;байт<wbr> ";
+    // +"поделено на " +
+    //     numberofChunks +
+    //     " частей."
 
     var chunkEnd = start + chunkSize;
 
