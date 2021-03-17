@@ -167,11 +167,15 @@ function loadSTL(){
         
         removeEntity();
         mesh = new THREE.Mesh(geometry, material);
-        mesh.name = 'nameMeshObject';
+        // mesh.name = 'nameMeshObject';
 
         scaleToFit(mesh, sizeBound); // умещаем в заданные размеры
 
         let b = new THREE.Box3().setFromObject(mesh);
+        // let modelBoundingBox = new THREE.Box3().setFromObject(geometry);
+   
+
+        
         mesh.position.sub(b.getCenter()); // центрируем
         // mesh.position.getCenter(b); // центрируем
         // mesh.position.y -= (sizeBound.y - b.getSize().y) * 0.5; // опускаем к "полу"
@@ -238,6 +242,8 @@ function scaleToFit(obj, bound) {
     let box = new THREE.Box3().setFromObject(obj);
     let size = new THREE.Vector3();
     box.getSize(size);
+    console.warn("setFromObject "+ (+size.x.toFixed(3))+" "+ (+size.y.toFixed(3))+" "+ (+size.z.toFixed(3)));
+        // Console.LOG("setFromObject "+modelBoundingBox.max.x );
     let vScale = new THREE.Vector3().copy(bound).divide(size);
     let scale = Math.min(vScale.x, Math.min(vScale.y, vScale.z));
     obj.scale.setScalar(scale);
