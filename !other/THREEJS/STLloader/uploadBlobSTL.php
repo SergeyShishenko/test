@@ -92,9 +92,12 @@ if (!isset($_FILES[$input_name])) {
 	}
 
 	if (!empty($success)) {
+
+
 			
 		include "ReadSTL_blob.php";
 		$data["sessId"] = $rand_folder;
+		$data["accuracy"]=$_POST['accuracy'];
 				
 	}
 

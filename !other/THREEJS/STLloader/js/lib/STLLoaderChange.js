@@ -169,7 +169,7 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 			var defaultR, defaultG, defaultB, alpha;
 
 
-			var accuracy = 1;
+			// var accuracy = 1;
 
 			// process STL header
 			// check for default color in header ("COLOR=rgba" sequence).
@@ -261,7 +261,7 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 						// if((normalX >-1 && normalX < accuracy) && (normalY > 0  && (1/normalY-1) <= accuracy) && (normalZ >-1 && normalZ < accuracy)){
 						// //// if(normalX===0 && normalY===1 && normalZ===0){
 							// 123.95.toFixed( 1 ) = "124.0"
-							accuracy = 2; //1 - учитывается отклонение; 2,3 - не учитывается
+							// accuracy = 2; //1 - учитывается отклонение; 2,3 - не учитывается
 							let X= +normalX.toFixed(accuracy);
 							let Y= +normalY.toFixed(accuracy);
 							let Z= +normalZ.toFixed(accuracy);

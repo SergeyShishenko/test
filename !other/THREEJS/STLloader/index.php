@@ -30,10 +30,11 @@
         </div>
         <!-- точность -->
         <!-- <input type="range" min="1" max="5" id="size"   oninput="accuracy()"    value="3"></p> -->
-        <input type="range" min="1" max="3" id="accuracy"   class="slider"    value="1">
+        <input type="range" min="0" max="5" id="accuracy"   class="slider"    value="0">
         <div class="box__dragndrop">
 
-        Точность: <span id="demo"></span>
+        Допуск параллельности: <span id="demo"></span>
+        <input type="button" value=" Пересчитать " onclick="Recalculate()">
         </div>
         <!-- https://html5css.ru/edithtm/index.php -->
     </div>

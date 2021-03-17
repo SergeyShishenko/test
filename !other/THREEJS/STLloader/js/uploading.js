@@ -22,6 +22,7 @@ let dend, dstart;
 const chunkSize50 = 50000000 / 2;
 const chunkSize84 = chunkSize50 - 84;
 var dataArray = [];
+var accuracy=5;
 
 // input.addEventListener('change', () => {
 //     handleFiles(input.files);
@@ -44,6 +45,7 @@ function createChunk() {
     // }
     chunkForm.append('file', chunk);
     chunkForm.append('fname', file.name);
+    chunkForm.append('accuracy', accuracy);
     // console.log(file.name);
     // console.log("часть добавлен");
     chunkSize = chunkSize50;
@@ -334,6 +336,13 @@ output.innerHTML = slider.value;
 
 slider.oninput = function() {
     output.innerHTML = this.value;
+    accuracy=5-this.value;
+  }
+
+  function Recalculate(){
+    // alert(file.name);
+    loadSTL();
+    handleFiles();
   }
 
 // var inpElem = document.body.children[0],

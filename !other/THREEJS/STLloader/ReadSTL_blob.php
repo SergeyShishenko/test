@@ -8,6 +8,7 @@ if ($file['size']==84){
     fclose($handle);  
     $data["head"] =  $content[1];return; 
 }else{
+    $accuracy=$_POST['accuracy'];
     $handle = fopen($file['tmp_name'], "rb");
     $chunk=$file['size']/50;   
     $sum=$Front=$Back=$Top=$Bottom=$Left=$Right=$General=0;
@@ -20,7 +21,7 @@ if ($file['size']==84){
         // $arrTriangles[$j]['normal'] = [$NormalX , $NormalY , $NormalZ ] ;
        
         // $directional = checkColinear($NormalX, $NormalY, $NormalZ);
-        $directional = checkColinear(round($NormalX,1), round($NormalY,1), round($NormalZ,1));
+        $directional = checkColinear(round($NormalX,$accuracy), round($NormalY,$accuracy), round($NormalZ,$accuracy));
 
         $Vertex_1_X=unpack('f', fread($handle, 4))[1];
         $Vertex_1_Y=unpack('f', fread($handle, 4))[1];
