@@ -328,6 +328,14 @@ function handleFiles() {
 
 }
 
+var slider = document.getElementById("accuracy");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+    output.innerHTML = this.value;
+  }
+
 // var inpElem = document.body.children[0],
 //     label = inpElem.nextElementSibling;
 // inpElem.onclick = function() {

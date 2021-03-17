@@ -28,7 +28,14 @@
             <label for="inputSTL"><strong>Выберите файл</strong><span class="box__dragndrop"> или перетащите
                     его сюда</span>.</label>
         </div>
+        <!-- точность -->
+        <!-- <input type="range" min="1" max="5" id="size"   oninput="accuracy()"    value="3"></p> -->
+        <input type="range" min="1" max="3" id="accuracy"   class="slider"    value="1">
+        <div class="box__dragndrop">
 
+        Точность: <span id="demo"></span>
+        </div>
+        <!-- https://html5css.ru/edithtm/index.php -->
     </div>
     <!-- <br> -->
     <!-- <br> -->
