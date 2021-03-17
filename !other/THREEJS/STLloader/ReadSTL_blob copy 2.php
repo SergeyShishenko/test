@@ -19,8 +19,7 @@ if ($file['size']==84){
        
         // $arrTriangles[$j]['normal'] = [$NormalX , $NormalY , $NormalZ ] ;
        
-        // $directional = checkColinear($NormalX, $NormalY, $NormalZ);
-        $directional = checkColinear(round($NormalX,1), round($NormalY,1), round($NormalZ,1));
+        $directional = checkColinear($NormalX, $NormalY, $NormalZ);
 
         $Vertex_1_X=unpack('f', fread($handle, 4))[1];
         $Vertex_1_Y=unpack('f', fread($handle, 4))[1];

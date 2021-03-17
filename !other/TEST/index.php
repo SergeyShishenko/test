@@ -1,4 +1,5 @@
 ﻿<?php
+// !other\TEST\index.php
 // $great = 'здорово';
 // echo "Это { $great}";
 
@@ -25,8 +26,9 @@
 // 	echo $val;
 // }
 
-$a = 1;
-$b = 1;
-$c = $a + $b++;
-echo $c;
+// $a = 1;
+// $b = 1;
+// $c = $a + $b++;
+// echo $c;
+var_dump(round(0.95,1));
 ?>

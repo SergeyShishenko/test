@@ -260,37 +260,46 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 						// ////if((normalX >-1 && normalX < accuracy) && (normalY >=1 && (normalY-1) < accuracy) && (normalZ >-1 && normalZ < accuracy)){
 						// if((normalX >-1 && normalX < accuracy) && (normalY > 0  && (1/normalY-1) <= accuracy) && (normalZ >-1 && normalZ < accuracy)){
 						// //// if(normalX===0 && normalY===1 && normalZ===0){
-						 if(+normalX.toFixed(1)==0 && +normalY.toFixed(1)==1 && +normalZ.toFixed(1)==0){
+							// 123.95.toFixed( 1 ) = "124.0"
+							let X= +normalX.toFixed(1);
+							let Y= +normalY.toFixed(1);
+							let Z= +normalZ.toFixed(1);
+						 if(X==0 && Y==1 && Z==0){
+						//  if(Math.round(normalX)==0 && Math.round(normalY)==1 && Math.round(normalZ)==0){
 							// зеленый сверху Top (normalX===0 && normalY===1 && normalZ===0)
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] = 255/255;
 							colors[ componentIdx + 2 ] =   0/255;
-						}else if((normalX >-1 && normalX <= accuracy) && (normalY <  0 && normalY >=-1 && (normalY+1) <=accuracy) && (normalZ >-1 && normalZ <= accuracy)){
-							
-							// пурпурный снизу  Back
+						// }else if((normalX >-1 && normalX <= accuracy) && (normalY <  0 && normalY >=-1 && (normalY+1) <=accuracy) && (normalZ >-1 && normalZ <= accuracy)){
+						}else if(X==0 && Y==-1 && Z==0){							
+							// пурпурный снизу  Bottom
 							colors[ componentIdx ] =     255/255;
 							colors[ componentIdx + 1 ] = 0/255;
 							colors[ componentIdx + 2 ] = 255/255;
 												
-						}else if((normalX >-1 && normalX <= accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ >=1 && (normalZ -1) <=accuracy)){
+						// }else if((normalX >-1 && normalX <= accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ >=1 && (normalZ -1) <=accuracy)){
+						}else if(X==0 && Y==0 && Z==1){
 							// синий спереди Front
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] =   0/255;
 							colors[ componentIdx + 2 ] = 255/255;
-						}else if((normalX >-1 && normalX <= accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ<0 && normalZ >=-1 && (normalZ+1) <=accuracy)){
-							// жёлтый сзади Bottom
-							// console.log("normal Bottom "+normalX+" ; "+normalY+" ; "+normalZ);
+						// }else if((normalX >-1 && normalX <= accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ<0 && normalZ >=-1 && (normalZ+1) <=accuracy)){
+						}else if(X==0 && Y==0 && Z==-1){
+							// жёлтый сзади Back
+							// console.log("normal  "+normalX+" ; "+normalY+" ; "+normalZ);
 							colors[ componentIdx ] =     255/255;
 							colors[ componentIdx + 1 ] = 255/255;
 							colors[ componentIdx + 2 ] =   0/255;
 							
-						}else if((normalX >=1 && (normalX -1) <=accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ >-1 && normalZ <= accuracy)){
+						// }else if((normalX >=1 && (normalX -1) <=accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ >-1 && normalZ <= accuracy)){
+						}else if(X==1 && Y==0 && Z==0){
 							// красный справа Right
 							colors[ componentIdx ] =   255/255;
 							colors[ componentIdx + 1 ] = 0/255;
 							colors[ componentIdx + 2 ] = 0/255;	
 							
-						}else if((normalX < 0 && normalX >=(-1) && (normalX+1) <=accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ >-1 && normalZ <= accuracy)){
+						// }else if((normalX < 0 && normalX >=(-1) && (normalX+1) <=accuracy) && (normalY >-1 && normalY <= accuracy) && (normalZ >-1 && normalZ <= accuracy)){
+						}else if(X==-1 && Y==0 && Z==0){
 							// голубой слева Left
 							colors[ componentIdx ] =       0/255;
 							colors[ componentIdx + 1 ] = 255/255;
