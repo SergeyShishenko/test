@@ -22,7 +22,7 @@ let dend, dstart;
 const chunkSize50 = 50000000 / 2;
 const chunkSize84 = chunkSize50 - 84;
 var dataArray = [];
-var accuracy=5;
+var realaccuracy = accuracy = 4;
 
 // input.addEventListener('change', () => {
 //     handleFiles(input.files);
@@ -336,13 +336,16 @@ output.innerHTML = slider.value;
 
 slider.oninput = function() {
     output.innerHTML = this.value;
-    accuracy=5-this.value;
+    accuracy=realaccuracy-this.value;
   }
 
   function Recalculate(){
-    // alert(file.name);
+    if ( file !== undefined ) {
+        // alert(file);
     loadSTL();
     handleFiles();
+    } 
+    
   }
 
 // var inpElem = document.body.children[0],

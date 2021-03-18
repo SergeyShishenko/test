@@ -30,11 +30,12 @@
         </div>
         <!-- точность -->
         <!-- <input type="range" min="1" max="5" id="size"   oninput="accuracy()"    value="3"></p> -->
-        <input type="range" min="0" max="5" id="accuracy"   class="slider"    value="0">
-        <div class="box__dragndrop">
+        <input type="range" min="0" max="4" id="accuracy"   class="slider"    value="0">
+        <div class="box__dragndrop" >
 
-        Допуск параллельности: <span id="demo"></span>
-        <input type="button" value=" Пересчитать " onclick="Recalculate()">
+        <span class="title_" data-title="Допустимая погрешность параллельности грани к базовой плоскости. 0&#160;=>&#160;параллельно">Допуск</span> параллельности: <span id="demo"></span>
+        <!-- <input type="button" value=" Пересчитать " onclick="Recalculate()"> -->
+        <button id="recalc" onclick="Recalculate()">Пересчитать</button>
         </div>
         <!-- https://html5css.ru/edithtm/index.php -->
     </div>
