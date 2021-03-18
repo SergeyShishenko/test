@@ -59,6 +59,9 @@
                                 <a class='button-chpu'  href="CNC/" type='button'  style="float: left;">
                                     <span  >Проверка ЧПУ</span>                                 
                                 </a>
+                                <a class='button-chpu'  href="STL/" type='button'  style="float: left;">
+                                    <span  >STL</span>                                 
+                                </a>
 
                                 <!-- <input type="button" value="Пустой бланк ВПИ" onclick="blankVPI()" /> -->
 
