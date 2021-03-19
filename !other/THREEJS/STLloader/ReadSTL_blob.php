@@ -118,42 +118,93 @@ function square($arrVert1,$arrVert2,$arrVert3){ // полупериметр
 // a = {$ax; $ay; $az} и b = {$bx; $by; $bz}
 // a × b = {$ay*$bz - $az*$by; $az*$bx - $ax*$bz; $ax*$by - $ay*$bx}
 // i ($ay*$bz - $az*$by) - j ($ax*$bz - $az*$bx) + k ($ax*$by - $ay*$bx)
-function checkColinear($ax, $ay, $az){ 
-     $bx =0; $by=1; $bz=0; // Top
-     $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
-        if ($Colinear==0) {
-            if ( directional($ax, $ay, $az, $bx, $by, $bz)){
-                return "Top"; 
-            } else{
-                
-                return "Bottom"; 
-            }
-        } 
-   
-     $bx =0; $by=0; $bz=1; // Front
-     $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
-        if ($Colinear==0) {        
-            if ( directional($ax, $ay, $az, $bx, $by, $bz)){
-                return "Front"; 
-            } else{
-                return "Back"; 
-            }
-        } 
- 
-     $bx =1; $by=0; $bz=0; // Right
-     $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
-    if ($Colinear==0) {        
-        if ( directional($ax, $ay, $az, $bx, $by, $bz)){
-             return "Right";
-        } else{
-             
-            return "Left";
+
+function checkColinear($X, $Y, $Z){ 
+    // let X= +normalX.toFixed(accuracy);
+    // let Y= +normalY.toFixed(accuracy);
+    // let Z= +normalZ.toFixed(accuracy);
+
+    if($X==0 && $Y==1 && $Z==0){        
+            // зеленый сверху Top 
+            // colors[ componentIdx ] =       0/255;
+            // colors[ componentIdx + 1 ] = 255/255;
+            // colors[ componentIdx + 2 ] =   0/255;
+            return "Top";  
         }
-     }    
-       
-     return "General"; 
+    if($X==0 && $Y==-1 && $Z==0){           
+            // зеленый сверху Top
+            // colors[ componentIdx ] =       0/255;
+            // colors[ componentIdx + 1 ] = 255/255;
+            // colors[ componentIdx + 2 ] =   0/255;
+            return "Bottom"; 
+        }
+    if($X==0 && $Y==0 && $Z==1){
+        // синий спереди Front
+        // colors[ componentIdx ] =       0/255;
+        // colors[ componentIdx + 1 ] =   0/255;
+        // colors[ componentIdx + 2 ] = 255/255;
+        return "Front";
+    }
+    if($X==0 && $Y==0 && $Z==-1){
+        // жёлтый сзади Back        
+        // colors[ componentIdx ] =     255/255;
+        // colors[ componentIdx + 1 ] = 255/255;
+        // colors[ componentIdx + 2 ] =   0/255;
+        return "Back"; 
+    }
+    if($X==1 && $Y==0 && $Z==0){
+        // красный справа Right
+        // colors[ componentIdx ] =   255/255;
+        // colors[ componentIdx + 1 ] = 0/255;
+        // colors[ componentIdx + 2 ] = 0/255;	
+        return "Right";
+    }
+    if($X==-1 && $Y==0 && $Z==0){
+        // голубой слева Left
+        // colors[ componentIdx ] =       0/255;
+        // colors[ componentIdx + 1 ] = 255/255;
+        // colors[ componentIdx + 2 ] = 255/255;
+        return "Left";
+    }
+    
+        // общий вид
+    return "General"; 
+
+    //  $bx =0; $by=1; $bz=0; // Top
+    //  $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
+    //     if ($Colinear==0) {
+    //         if ( directional($ax, $ay, $az, $bx, $by, $bz)){
+    //             return "Top"; 
+    //         } else{
+                
+    //             return "Bottom"; 
+    //         }
+    //     } 
    
-}
+    //  $bx =0; $by=0; $bz=1; // Front
+    //  $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
+    //     if ($Colinear==0) {        
+    //         if ( directional($ax, $ay, $az, $bx, $by, $bz)){
+    //             return "Front"; 
+    //         } else{
+    //             return "Back"; 
+    //         }
+    //     } 
+ 
+    //  $bx =1; $by=0; $bz=0; // Right
+    //  $Colinear=$ay*$bz - $az*$by - $ax*$bz - $az*$bx + $ax*$by - $ay*$bx;   
+    // if ($Colinear==0) {        
+    //     if ( directional($ax, $ay, $az, $bx, $by, $bz)){
+    //          return "Right";
+    //     } else{
+             
+    //         return "Left";
+    //     }
+    //  }    
+       
+    //  return "General"; 
+   
+}// end checkColinear
 
 // сонаправленные векторы
 function directional($ax, $ay, $az, $bx, $by, $bz){
