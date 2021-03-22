@@ -127,13 +127,14 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 			// https://en.wikipedia.org/wiki/Byte_order_mark#Byte_order_marks_by_encoding
 			// Search for "solid" to start anywhere after those prefixes.
 
-			// US-ASCII ordinal values for 's', 'o', 'l', 'i', 'd'
+			// Порядковые значения US-ASCII для 's', 'o', 'l', 'i', 'd'
 
 			var solid = [ 115, 111, 108, 105, 100 ];
 
 			for ( var off = 0; off < 5; off ++ ) {
 
 				// If "solid" text is matched to the current offset, declare it to be an ASCII STL.
+				// Если "solid" текст соответствует текущему смещению, объявите его ASCII STL.
 
 				if ( matchDataViewAt( solid, reader, off ) ) return false;
 
@@ -360,6 +361,9 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 			var vertices = [];
 			var normals = [];
+			var colors = [];
+			// var area = 0;
+			var inum=0;
 
 			var normal = new THREE.Vector3();
 
@@ -393,8 +397,23 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 					while ( ( result = patternVertex.exec( text ) ) !== null ) {
 
+						// console.log(++inum);
+
+						// var vb = parseFloat( result[ 2 ] );
+						// var vc =  parseFloat( result[ 3 ] );
+
+						// https://stackoverflow.com/questions/29839777/how-to-use-three-triangle-in-three-js
+
+						// var t = new THREE.Triangle(va,vb,vc);
+						
+						// area = area + t.getArea();
+						// console.log(area);
+						// vertices.push( va, vb, vc );
+
 						vertices.push( parseFloat( result[ 1 ] ), parseFloat( result[ 2 ] ), parseFloat( result[ 3 ] ) );
+						
 						normals.push( normal.x, normal.y, normal.z );
+						colors.push( 0.7450980392156863, 0.7450980392156863, 0.7450980392156863 );
 						vertexCountPerFace ++;
 						endVertex ++;
 
@@ -404,7 +423,7 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 					if ( normalCountPerFace !== 1 ) {
 
-						console.error( 'THREE.STLLoader: Something isn\'t right with the normal of face number ' + faceCounter );
+						console.error( 'THREE.STLLoader: Что-то не так с нормалью грани ' + faceCounter );
 
 					}
 
@@ -412,7 +431,7 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 					if ( vertexCountPerFace !== 3 ) {
 
-						console.error( 'THREE.STLLoader: Something isn\'t right with the vertices of face number ' + faceCounter );
+						console.error( 'THREE.STLLoader: Что-то не так с числом вершин грани ' + faceCounter );
 
 					}
 
@@ -430,6 +449,9 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 			geometry.setAttribute( 'position', new THREE.Float32BufferAttribute( vertices, 3 ) );
 			geometry.setAttribute( 'normal', new THREE.Float32BufferAttribute( normals, 3 ) );
+			geometry.setAttribute( 'color', new THREE.Float32BufferAttribute( colors, 3 ) );
+
+			// console.log("area "+ area);
 
 			return geometry;
 

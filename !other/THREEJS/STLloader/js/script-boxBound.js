@@ -136,6 +136,8 @@ function loadSTL(){
       // console.log('Object.keys(geometry) '+Object.keys(geometry));
       // console.log(geometry.attributes['normal']['array'].length);
       // console.log(geometry.getAttribute['normal']);
+      // console.log(geometry.getAttribute['color']);
+      // console.log(geometry.getAttribute['color']);
       // for ( var j = 0; j < geometry.attributes['normal']['array'].length; j=j+3 ) 
       // {
       //   // console.log(j +" "+ geometry.attributes['normal']['array'][j]+" "+geometry.attributes['normal']['array'][j+1]+" "+geometry.attributes['normal']['array'][j+2]	);
@@ -148,7 +150,8 @@ function loadSTL(){
         
         // console.log(geometry.attributes	);// !!!!
         
-      //   // console.log(geometry.attributes.normal.count	);
+        // console.log(geometry.attributes.normal.length	);
+        console.log(geometry.attributes.color.length	);
       //   // console.log(geometry.attributes.groups	);
 
           // for ( var j = 0; j < geometry.attributes.normal.count; j=j+3 ) 
