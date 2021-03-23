@@ -31,9 +31,15 @@ var LifeexampleClass = (function () {
   // Функция доступная только внутри класса.
   function privateFunction() {
     let parent = document.querySelector('#output');
-    parent.append("\nИз тела класса вызван приватный метод: [privateFunction] ");
-    parent.append("\nПриватный метод обратился к приватному полю: [privateField1 = '" + privateField1 + "']");
-    parent.append("\nПриватный метод обратился к публичному полю: [publicField1 = '" + this.publicField1 + "']");
+    let p1=document.createElement('p');
+    let p2=document.createElement('p');
+    let p3=document.createElement('p');
+
+    p1.innerHTML="!4! Из тела класса вызван приватный метод: [privateFunction] ";    
+    p2.innerHTML="!5! Приватный метод обратился к приватному полю: [privateField1 = '" + privateField1 + "']";
+    p3.innerHTML="!6! Приватный метод обратился к публичному полю: [publicField1 = '" + this.publicField1 + "']";
+    parent.append(p1,p2,p3);
+    
     return true;
   }
 
@@ -45,14 +51,19 @@ var LifeexampleClass = (function () {
 
     // Публичный метод класса.  
     init: function () {
-      parent.append("\nВызван публичный метод класса: [init]");
 
-      // Обращение к приватному полю, доступному как внутри класса так и из вне.
-      parent.append("\nМетод [init] обратился к приватному полю [privateField2=" + privateField2 + ']');
+      let parent = document.querySelector('#output');
+    let p1=document.createElement('p');
+    let p2=document.createElement('p');
+    let p3=document.createElement('p');
 
-      // Обращение к публичному полю, доступному как внутри класса так и из вне.
-      parent.append("\nМетод [init] обратился к публичному полю [publicField2=" + this.publicField2 + ']');
+    p1.innerHTML="!1! Вызван публичный метод класса: [init]";
+    // Обращение к приватному полю, доступному как внутри класса так и из вне.    
+    p2.innerHTML="!2! Метод [init] обратился к приватному полю [privateField2=" + privateField2 + ']';
+    // Обращение к публичному полю, доступному как внутри класса так и из вне.
+    p3.innerHTML="!3! Метод [init] обратился к публичному полю [publicField2=" + this.publicField2 + ']';
 
+      parent.append(p1,p2,p3);
       
 
       // Вызов приватной функции доступной только внутри класса.
@@ -62,27 +73,41 @@ var LifeexampleClass = (function () {
   }
 })();
 
+  // let parent = document.querySelector('#output');
+  let p1=document.createElement('p');
+
 // обращение к приватному полю, доступному только внутри класса.
-parent.append("\nСнаружи класса произошла попытка обратиться к приватному полю [privateField1] результат = " + LifeexampleClass.privateField1);
+p1.innerHTML="!0! Снаружи класса произошла попытка обратиться к приватному полю [privateField1] результат = " + LifeexampleClass.privateField1;
+parent.append(p1);
 
 
 try {
   // обращение к приватному методу, доступному только внутри класса следующая строка вызовет ошибку
   LifeexampleClass.privateFunction()
-  parent.append("\nУдалось обратиться к приватному методу класса! [Ошибка в архитектуре класса]");
+  let p2=document.createElement('p');
+  p2.innerHTML="Удалось обратиться к приватному методу класса! [Ошибка в архитектуре класса]";
+  parent.append(p2);
 } catch (err) {
-  parent.append("\nПроизошла ошибка " + err + "! Обращение к приватному методу класса запрещено!");
+  let p2=document.createElement('p');
+  p2.innerHTML="Произошла ошибка " + err + "! Обращение к приватному методу класса запрещено!";
+  parent.append(p2);
+  // parent.append("\nПроизошла ошибка " + err + "! Обращение к приватному методу класса запрещено!");
 }
-
+let p3=document.createElement('p');
+let p4=document.createElement('p');
 // обращение к публичному полю, доступному как внутри класса так и из вне.
-parent.append("\nСнаружи класса произошла попытка обратиться к публичному полю [publicField1] результат = " + LifeexampleClass.publicField1);
+p3.innerHTML="Снаружи класса произошла попытка обратиться к публичному полю [publicField1] результат = " + LifeexampleClass.publicField1
+parent.append(p3);
+// parent.append("\nСнаружи класса произошла попытка обратиться к публичному полю [publicField1] результат = " + LifeexampleClass.publicField1);
 
 
 try {
   // обращение к публичному методу, доступному как внутри класса так и из вне.
   LifeexampleClass.init()
 } catch (err) {
-  parent.append("\nНе удалось обратиться к публичному методу класса! [Ошибка в архитектуре класса]");
+  p4.innerHTML="Не удалось обратиться к публичному методу класса! [Ошибка в архитектуре класса]"
+  
+  parent.append(p4);
 }
 ///////Класс на JS заданный через function
 // A car "javascript class"
