@@ -1,7 +1,8 @@
 html{background-color:#FFFFFF;color:#383838;}
 ::-moz-selection{background:#444444;color:#DDDDDD;}
 ::selection{background:#444444;color:#DDDDDD;}
-#documenter_sidebar #documenter_logo{background-image:url(../images/image_1.png);}
+/* #documenter_sidebar #documenter_logo{background-image:url(../images/image_1.png);} */
+#documenter_sidebar #documenter_logo{background-image:url(../images/admin_panel.png);}
 a{color:#0000FF;}
 .btn {
   border-radius:3px;

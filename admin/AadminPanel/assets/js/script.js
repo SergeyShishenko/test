@@ -33,6 +33,7 @@ $(document).ready(function() {
 		
 		$('a[href^=#]').bind('click touchstart',function(){
 			hash = $(this).attr('href');
+			console.log(hash);
 			$.scrollTo.window().queue([]).stop();
 			goTo(hash);
 			return false;
@@ -117,7 +118,8 @@ $(document).ready(function() {
 		});
 		if(changehash !== false){
 			var l = location;
-			location.href = (l.protocol+'//'+l.host+l.pathname+'#!/'+hash.substr(1));
+			// location.href = (l.protocol+'//'+l.host+l.pathname+'#!/'+hash.substr(1));
+			location.href = (l.protocol+'//'+l.host+l.pathname+'#'+hash.substr(1));
 		}
 		win.bind('hashchange', hashchange);
 	}
