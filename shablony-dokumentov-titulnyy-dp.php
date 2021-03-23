@@ -130,7 +130,7 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                          <div class="overlay"></div>                              
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-furnitury_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000304-01-001-vedomost-furnitury-dp-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000304-01-001-vedomost-furnitury-dp-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                 
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
@@ -156,7 +156,7 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                          <div class="overlay"></div>                              
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-stekol-i-zerkal_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000304-02-001-vedomost-stekol-i-zerkal-dp-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000304-02-001-vedomost-stekol-i-zerkal-dp-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="Ведомость стекол и зеркал ДП"
@@ -182,7 +182,7 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                          <div class="overlay"></div>                              
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-materialy-prochie_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000304-03-001-vedomost-materialy-prochie-dp-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000304-03-001-vedomost-materialy-prochie-dp-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="Ведомость материалы прочие ДП"

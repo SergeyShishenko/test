@@ -109,14 +109,14 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                             <h1 itemprop="name">ЛИСТ ТИТУЛЬНЫЙ ВПИ</h1>
                           </div>
                           <h2 id="list-titulnyy-vpi">&nbsp;</h2>
-                          <div class="bs-callout bs-callout-warning cont" ><h4>5000304-01-000 лист титульный ВПИ КД</h4>
+                          <div class="bs-callout bs-callout-warning cont" ><h4>5000304-01-000 лист титульный ВПИ ПЗ</h4>
                            <div class="overlay"></div>                             
                               <p> <a>
                                   <!-- <img src="./dist/images/list-titulnyy-vpi_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
                                   <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_5-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                   data-toggle="modal"
                                   data-target="#myModal"                                                                
-                                  alt="Лист титульный ВПИ КД"
+                                  alt="Лист титульный ВПИ ПЗ"
                                   data-prnt="noPrint"
                                   data-spng="noPNG" 
                                   data-xls="./dist/files/xls/list-titulnyy-vpi-kd.xlsx"
@@ -134,17 +134,17 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                           <h1 itemprop="name">ВЕДОМОСТЬ ФУРНИТУРЫ </h1>
                         </div>
                         <h2 id="vedomost-furnitury">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Ведомость фурнитуры КД</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Ведомость фурнитуры ПЗ</h4>
                          <div class="overlay"></div>                              
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-furnitury_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_6-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000304-01-002-vedomost-furnitury-pz-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
-                                 alt="Ведомость фурнитуры КД"
+                                 alt="Ведомость фурнитуры ПЗ"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
-                                 data-xls="./dist/files/xls/vedomost-furnitury-kd.xlsx"
+                                 data-xls="./dist/files/xls/5000304-01-002-vedomost-furnitury-pz.xlsx"
                                    ></a>
                              </p>
                              <!--  -->
@@ -159,17 +159,17 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                           <h1 itemprop="name" >ВЕДОМОСТЬ СТЕКОЛ И ЗЕРКАЛ</h1>
                         </div>
                         <h2 id="vedomost-stekol-i-zerkal">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" ><h4>Ведомость стекол и зеркал КД</h4>
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Ведомость стекол и зеркал ПЗ</h4>
                           <div class="overlay"></div>                             
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-stekol-i-zerkal_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_7-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000304-02-002-vedomost-stekol-i-zerkal-pz-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="Ведомость стекол и зеркал КД"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
-                                 data-xls="./dist/files/xls/vedomost-stekol-i-zerkal-kd.xlsx"
+                                 data-xls="./dist/files/xls/5000304-02-002-vedomost-stekol-i-zerkal-pz.xlsx"
                                    ></a>
                              </p>
                              <!--  -->
@@ -188,13 +188,13 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                           <div class="overlay"></div>                             
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-materialy-prochie_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-kd_8-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/5000304-03-002-vedomost-materialy-prochie-pz-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
-                                 alt="Ведомость материалы прочие КД"
+                                 alt="Ведомость материалы прочие ПЗ"
                                  data-prnt="noPrint"
                                  data-spng="noPNG" 
-                                 data-xls="./dist/files/xls/vedomost-materialy-prochie-kd.xlsx"
+                                 data-xls="./dist/files/xls/5000304-03-002-vedomost-materialy-prochie-pz.xlsx"
                                
                                    ></a>
                              </p>
