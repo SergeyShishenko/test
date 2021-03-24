@@ -17,4 +17,6 @@ require_once 'core/controller.php';
 	> и др.
 */
 require_once 'core/route.php';
+define('__ROOTR__', dirname(dirname(__FILE__)));
+// echo  __ROOTR__."<br>";
 Route::start(); // запускаем маршрутизатор

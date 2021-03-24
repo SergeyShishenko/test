@@ -11,20 +11,20 @@ class Route
 	static function start()
 	{
 		// контроллер и действие по умолчанию
-		$controller_name = 'AdminDashboard';
+		$controller_name = 'Main';
 		$action_name = 'index';
 		
 		$routes = explode('/', $_SERVER['REQUEST_URI']);
-        // echo var_dump($routes);
+        $len= count($routes);
 		// получаем имя контроллера
 		// if ( !empty($routes[1]) )
 		// {	
 		// 	$controller_name = $routes[1];
 		// }
 		// получаем имя контроллера
-		if ( !empty($routes[2]) )
+		if ( !empty($routes[$len-1]) )
 		{	
-			$controller_name = $routes[2];
+			$controller_name = $routes[$len-1];
 		}
 		
 		// // получаем имя экшена
@@ -33,20 +33,20 @@ class Route
 		// 	$action_name = $routes[2];
 		// }
 		// получаем имя экшена
-		if ( !empty($routes[3]) )
+		if ( !empty($routes[$len]) )
 		{
-			$action_name = basename($routes[3],".php");
+			$action_name = basename($routes[$len-1],".php");
 		}
 
 		// добавляем префиксы
 		$model_name = 'Model_'.$controller_name;
 		$controller_name = 'Controller_'.$controller_name;
 		$action_name = 'action_'.$action_name;
-		define('__ROOTR__', dirname(dirname(dirname(__FILE__)))); // было
-		echo  __ROOTR__."<br>";
-		echo "Model: $model_name <br>";
-		echo "Controller: $controller_name <br>";
-		echo "Action: $action_name <br>";
+		// define('__ROOTR__', dirname(dirname(__FILE__))); 
+		// echo  __ROOTR__."<br>";
+		// echo "Model: $model_name <br>";
+		// echo "Controller: $controller_name <br>";
+		// echo "Action: $action_name <br>";
 		
 
 		// подцепляем файл с классом модели (файла модели может и не быть)
@@ -66,7 +66,7 @@ class Route
 		if(file_exists($controller_path))
 		{
 			include $controller_path;
-			echo "Найден " . $controller_path."<br>";
+			// echo "Найден " . $controller_path."<br>";
 		}
 		else
 		{
@@ -80,7 +80,7 @@ class Route
 		// создаем контроллер
 		$controller = new $controller_name;
 		$action = $action_name;
-		echo "имя класса " . get_class($controller). "<br>";
+		// echo "имя класса " . get_class($controller). "<br>";
 		if(method_exists($controller, $action))
 		{
 			// вызываем действие контроллера

@@ -1,6 +1,6 @@
 <?php
 
-class Model_AdminDashboard extends Model
+class Model_Main extends Model
 {
 	
 	public function get_data()
