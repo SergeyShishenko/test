@@ -1,5 +1,4 @@
 <?php
-
 /*
 Класс-маршрутизатор для определения запрашиваемой страницы.
 > цепляет классы контроллеров и моделей;
@@ -57,7 +56,9 @@ class Route
 		{
 			include __ROOTR__."/application/models/".$model_file;
 		}else{
-			echo "Файл не найден ". $model_path; exit();
+			// echo "Файл не найден ". $model_path; exit();
+			self::ErrorPage404();
+
 		}
 
 		// подцепляем файл с классом контроллера
@@ -74,7 +75,7 @@ class Route
 			правильно было бы кинуть здесь исключение,
 			но для упрощения сразу сделаем редирект на страницу 404
 			*/
-			Route::ErrorPage404();
+			self::ErrorPage404();
 		}
 		
 		// создаем контроллер
@@ -90,20 +91,46 @@ class Route
 		{
 			echo "метод ". $action . " не найден!";
 			// здесь также разумнее было бы кинуть исключение
-			// Route::ErrorPage404();
+			// self::ErrorPage404();
 		}
 	
 	}
 
 	static function ErrorPage404(){
+		
 		// echo dirname(dirname(__FILE__)).'/views/404_view.php';
 		// echo "ErrorPage404()";
         // $host = 'http://'.$_SERVER['HTTP_HOST'].'/';
-        $host = dirname(dirname(__FILE__)).'/views/404_view.php';
+        // $host = dirname(dirname(__FILE__)).'/views/404_view.php';
         // $host = dirname(dirname(__FILE__)).'/';
         // header('HTTP/1.1 404 Not Found');
 		// header("Status: 404 Not Found");
-		header('Location:'.$host);
+		// header('Location:'.$host."404");
+		$model_name = 'Model_404';
+		$controller_name = 'Controller_404';
+		// $action_name = 'action_'.$action_name;
+		// создаем контроллер
+		require_once __ROOTR__."/application/controllers/controller_404.php";
+
+		$controller = new Controller_404();
+		$action = 'action_index';
+		// echo "имя класса " . get_class($controller). "<br>";
+		if(method_exists($controller, $action))
+		{
+			// вызываем действие контроллера
+			// echo "метод ". $action . " найден!";
+			$controller->$action();
+			exit();
+		}
+		else
+		{
+			
+			echo "метод ". $action . " не найден!";
+			exit();
+			// здесь также разумнее было бы кинуть исключение
+			// self::ErrorPage404();
+		}
+		
     }
     
 }
