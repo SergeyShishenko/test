@@ -18,19 +18,19 @@
 
 	<meta name="date" content="1970-01-01T01:00:00+01:00">
 
-	<link rel="stylesheet" href="css/documenter_style.css" media="all">
-	<!-- <link rel="stylesheet" href="css/theme.css" media="all"> -->
-	<!-- <link rel="stylesheet" href="js/google-code-prettify/prettify.css" media="screen"> -->
-	<!-- <script src="js/google-code-prettify/prettify.js"></script> -->
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<!-- <link rel="stylesheet" href="assets/css/theme.css" media="all"> -->
+	<!-- <link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen"> -->
+	<!-- <script src="assets/js/google-code-prettify/prettify.js"></script> -->
 
-	<link rel="stylesheet" href="css/doc.css" media="screen">
+	<link rel="stylesheet" href="assets/css/doc.css" media="screen">
 
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
 
-	<script src="js/jquery.js"></script>
+	<script src="assets/js/jquery.js"></script>
 
-	<!-- <script src="js/jquery.scrollTo.js"></script>
-	<script src="js/jquery.easing.js"></script>  -->
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
 
 	<script>document.createElement('section'); var duration = '500', easing = 'swing';</script>
 
@@ -932,7 +932,7 @@
 				<hr class="notop">
 			</div>
 			<p> Javascript files are splited into three files.<br>
-				The files are located at <code>javascripts</code></p>
+				The files are located at <code>assets/javascripts</code></p>
 			<ul>
 				<li> theme.js</li>
 				<li> theme.custom.js</li>
@@ -940,7 +940,7 @@
 			</ul>
 			<p> &nbsp;</p>
 			<h4 id="javascript_theme">Theme</h4>
-			<p> The file are located at <code>javascripts/theme.js</code><br>
+			<p> The file are located at <code>assets/javascripts/theme.js</code><br>
 				<br>
 				The main theme file contains:
 			</p>
@@ -950,7 +950,7 @@
 			</ul>
 			<p> &nbsp;</p>
 			<h4 id="javascript_theme_custom">Theme - Custom</h4>
-			<p> The file are located at <code>javascripts/theme.custom.js</code></p>
+			<p> The file are located at <code>assets/javascripts/theme.custom.js</code></p>
 			<p> You can place here all of your code customization, and also extend the theme plugins.<br>
 				This is the safest way to do your customizations and easily theme version without losing your
 				modifications.<br>
@@ -973,7 +973,7 @@
 	});
 </pre>
 			<h4 id="javascript_theme_initializators">Theme - Initializators</h4>
-			<p> The file are located at <code>javascripts/theme.init.js</code></p>
+			<p> The file are located at <code>assets/javascripts/theme.init.js</code></p>
 			<p> This file have a collection of javascript plugin initializators</p>
 		</section>
 		<section id="customization_styles">
@@ -1031,11 +1031,11 @@
 				demo and show the color right away.</p>
 			<p> Generate your own skin color using the Preview on ThemeForest:</p>
 			<p> <br>
-				<img alt="" src="images/image_2.jpg">
+				<img alt="" src="assets/images/image_2.jpg">
 			</p>
 			<p> &nbsp;</p>
 			<p> You don&#39;t need to use LESS in your project, after you done customizing your skin you may want to
-				grab the generated code and save it in a file (stylesheets/skins/default.css).</p>
+				grab the generated code and save it in a file (assets/stylesheets/skins/default.css).</p>
 			<p> <strong>Make sure that the path to the skin file is correct (In the HTML).</strong></p>
 			<p> &nbsp;</p>
 		</section>
@@ -1133,22 +1133,22 @@
 			<p> <strong>Steps to use the admin extension:</strong></p>
 			<p> 1) Add the CSS files for that specific page (in this example, based on
 				feature-admin-forms-advanced.html):</p>
-			<p> <img src="images/image_5.jpg"></p>
+			<p> <img src="assets/images/image_5.jpg"></p>
 			<p> &nbsp;</p>
 			<p> (Make sure the paths for the admin match with your own structure, in this example, the path is
 				/admin/...)</p>
 			<p> &nbsp;</p>
 			<p> 2) Add the JS files for that specific page:</p>
-			<p> <img src="images/image_6.jpg"></p>
+			<p> <img src="assets/images/image_6.jpg"></p>
 			<p> &nbsp;</p>
 			<p> (Consider to combine and compress all those files on your project)</p>
 			<p> &nbsp;</p>
 			<p> 3) That&#39;s it, now you can start to use the features from the admin as seen in the preview.</p>
-			<p> <img src="images/image_3.jpg"><br>
+			<p> <img src="assets/images/image_3.jpg"><br>
 				&nbsp;</p>
 			<p> <strong>SKIN: </strong>If you want to change the color skin, don&#39;t forget to generate the extension
-				skin file and save in the file (stylesheets/skins/extension.css):</p>
-			<p> <img src="images/image_4.jpg"></p>
+				skin file and save in the file (assets/stylesheets/skins/extension.css):</p>
+			<p> <img src="assets/images/image_4.jpg"></p>
 		</section>
 		<section id="source_credits">
 			<div class="page-header">
@@ -1233,9 +1233,9 @@
 		</section>
 
 	</div>
-	<script src="js/script.js"></script>
-	<!-- <script src="js/theme.init.js"></script>
-	<script src="js/theme.js"></script> -->
+	<script src="assets/js/script.js"></script>
+	<!-- <script src="assets/js/theme.init.js"></script>
+	<script src="assets/js/theme.js"></script> -->
 </body>
 
 </html>
