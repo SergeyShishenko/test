@@ -32,7 +32,7 @@
 	<!-- <script src="js/jquery.scrollTo.js"></script>
 	<script src="js/jquery.easing.js"></script>  -->
 
-	<script>document.createElement('section'); var duration = '500', easing = 'swing';</script>
+	<!-- <script>document.createElement('section'); var duration = '500', easing = 'swing';</script> -->
 
 
 	<style>
@@ -46,13 +46,13 @@
 		<a href="#documenter_cover" id="documenter_logo"></a>
 		<ul id="documenter_nav">
 			<!-- <li><a class="current" href="#documenter_cover">Start</a></li> -->
-			<li><a href="main" title="Гравная" class="current" >Главная</a></li>
+			<li><a href="main" title="Гравная" class="" >Главная</a></li>
 			<li><a href="tips" title="Tips">Tips</a></li>
 			
 			<li><a href="files_structure" title="Files Structure">Files Structure</a></li>
 			<li><a href="html_structure" title="HTML Structure">HTML Structure</a></li>
-			<li><a href="css" title="CSS">CSS</a></li>
-			<li><a href="javascript" title="Javascript">Javascript</a></li>
+			<li><a href="css"  title="CSS">CSS</a></li>
+			<li><a href="js" title="Javascript">Javascript</a></li>
 			<li><a href="customization_styles" title="Customization & Styles">Customization & Styles</a></li>
 			<li><a href="skin" title="Skin">Skin</a></li>
 			<li><a href="icons" title="Icons">Icons</a></li>
@@ -65,18 +65,21 @@
 			made with the <a href="http://rxa.li/documenter">Documenter v2.0</a>
 		</div>
 	</div>
-	<div id="documenter_content">
+	<script>
+	var sel="<?php echo explode("_", $content_view)[0];?>";
+	if (sel !== "404"){
+		// alert('a[href="'+sel+'"]');
+	element = document.querySelector('a[href="'+sel+'"]');
+	element.classList.add("current");	
+	}
 	
-
+	</script>
 	
+	<div id="documenter_content">	
 		<?php include __ROOTR__.'/application/views/'.$content_view; ?>
-		
-		
-
 	</div>
-	<script src="js/script.js"></script>
-	<!-- <script src="js/theme.init.js"></script>
-	<script src="js/theme.js"></script> -->
+	<!-- <script src="js/script.js"></script> -->
+
 </body>
 
 </html>

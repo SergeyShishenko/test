@@ -33,7 +33,7 @@ hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
 #documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
 #documenter_sidebar ul{border-top:1px solid #AAAAAA;}
 #documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
-#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+#documenter_sidebar ul a:hover{background:#797575;color:#DDDDDD;border-top:1px solid #444444;}
 #documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
 #documenter_copyright{display:block !important;visibility:visible !important;}
 

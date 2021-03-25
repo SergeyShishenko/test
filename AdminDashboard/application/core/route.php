@@ -46,6 +46,7 @@ class Route
 		// echo "Model: $model_name <br>";
 		// echo "Controller: $controller_name <br>";
 		// echo "Action: $action_name <br>";
+		// exit();
 		
 
 		// подцепляем файл с классом модели (файла модели может и не быть)

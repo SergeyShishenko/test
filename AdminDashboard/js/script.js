@@ -26,6 +26,10 @@ $(document).ready(function() {
 		window.open($(this).attr('href'));
 		return false;
 	});
+	// $('a').bind('click',function(){
+	// 	// window.open($(this).attr('href'));
+	// 	// return false;
+	// });
 	
 	//IE 8 and lower doesn't like the smooth pagescroll
 	if(!badIE){
