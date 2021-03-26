@@ -14,16 +14,20 @@ class Route
 		$action_name = 'index';
 		
 		$routes = explode('/', $_SERVER['REQUEST_URI']);
-        $len= count($routes);
+
+		// $len= count($routes);
+		
+		$key = array_search('AdminDashboard', $routes);
 		// получаем имя контроллера
 		// if ( !empty($routes[1]) )
 		// {	
 		// 	$controller_name = $routes[1];
 		// }
 		// получаем имя контроллера
-		if ( !empty($routes[$len-1]) )
+		// echo $key;
+		if ( !empty($routes[$key+1]) )
 		{	
-			$controller_name = $routes[$len-1];
+			$controller_name = $routes[$key+1];
 		}
 		
 		// // получаем имя экшена
@@ -32,9 +36,9 @@ class Route
 		// 	$action_name = $routes[2];
 		// }
 		// получаем имя экшена
-		if ( !empty($routes[$len]) )
+		if ( !empty($routes[$key+2]) )
 		{
-			$action_name = basename($routes[$len-1],".php");
+			$action_name = basename($routes[$key+2],".php");
 		}
 
 		// добавляем префиксы
@@ -90,7 +94,8 @@ class Route
 		}
 		else
 		{
-			echo "метод ". $action . " не найден!";
+			// echo "метод ". $action . " не найден!";
+			$controller->action_index();
 			// здесь также разумнее было бы кинуть исключение
 			// self::ErrorPage404();
 		}

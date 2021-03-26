@@ -1,4 +1,4 @@
 <h1>404</h1>
 <p>
-<img src="images/404.png">
+<img src="<?php echo $dir; ?>/images/404.png">
 </p>

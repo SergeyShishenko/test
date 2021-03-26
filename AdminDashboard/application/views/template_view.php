@@ -1,3 +1,4 @@
+<?php $dir="/www/AdminDashboard"; ?>
 <!DOCTYPE html>
 <!-- F:\YandexDisk\web\!!!Шаблон Admin - панель\Шаблон Admin - панель\!!!!!!portoadmin\themeforest-8539472-porto-admin-responsive-html5-template\Documentation -->
 <!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
@@ -18,16 +19,16 @@
 
 	<meta name="date" content="1970-01-01T01:00:00+01:00"> -->
 
-	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="<?php echo $dir; ?>/css/documenter_style.css" media="all">
 	<!-- <link rel="stylesheet" href="css/theme.css" media="all"> -->
 	<!-- <link rel="stylesheet" href="js/google-code-prettify/prettify.css" media="screen"> -->
 	<!-- <script src="js/google-code-prettify/prettify.js"></script> -->
 
-	<link rel="stylesheet" href="css/doc.css" media="screen">
+	<link rel="stylesheet" href="<?php echo $dir; ?>/css/doc.css" media="screen">
 
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
 
-	<script src="js/jquery.js"></script>
+	<script src="<?php echo $dir; ?>/js/jquery.js"></script>
 
 	<!-- <script src="js/jquery.scrollTo.js"></script>
 	<script src="js/jquery.easing.js"></script>  -->
@@ -46,8 +47,8 @@
 		<a href="#documenter_cover" id="documenter_logo"></a>
 		<ul id="documenter_nav">
 			<!-- <li><a class="current" href="#documenter_cover">Start</a></li> -->
-			<li><a href="main" title="Гравная" class="" >Главная</a></li>
-			<li><a href="tips" title="Tips">Tips</a></li>
+			<li><a href="<?php echo $dir; ?>/main" title="Гравная" class="" >Главная</a></li>
+			<li><a href="<?php echo $dir; ?>/tips" title="Tips">Tips</a></li>
 			
 			<li><a href="files_structure" title="Files Structure">Files Structure</a></li>
 			<li><a href="html_structure" title="HTML Structure">HTML Structure</a></li>
@@ -69,13 +70,16 @@
 	var sel="<?php echo explode("_", $content_view)[0];?>";
 	if (sel !== "404"){
 		// alert('a[href="'+sel+'"]');
-	element = document.querySelector('a[href="'+sel+'"]');
+		// sel=<?php echo $dir; ?>+ "/"+sel;
+		// console.log(sel);
+	element = document.querySelector('a[href$="'+sel+'"]');
 	element.classList.add("current");	
 	}
 	
 	</script>
 	
 	<div id="documenter_content">	
+	<?php //echo $content_view; ?>
 		<?php include __ROOTR__.'/application/views/'.$content_view; ?>
 	</div>
 	<!-- <script src="js/script.js"></script> -->
