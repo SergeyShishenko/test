@@ -1,9 +1,15 @@
-﻿Options All -Indexes
-# ErrorDocument 403 %{HTTP_HOST} /www/err/error403.php 
-ErrorDocument 403 err/error403.php 
+﻿AddType "text/html; charset=utf-8" .htm .html
+AddDefaultCharset utf-8
+Options All -Indexes
+# ErrorDocument 401 %{HTTP_HOST} /www/err/error403.php 
 
-# Redirect 403 /error403.php 
+# ErrorDocument 401 "<html><head><title>Error</title></head><body><h1>Ошибка авторизации</h1></body></html>"
+# Redirect 403 /error403.html 
+
+#   RewriteBase %{HTTP_HOST}/www/AdminDashboard
+ErrorDocument 403 http://localhost/www/AdminDashboard/err/error403.php 
 RewriteEngine On
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php [L]

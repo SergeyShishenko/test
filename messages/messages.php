@@ -17,7 +17,7 @@ switch ($_GET['msg']) {
     $msg = 'Привет!';
 } 
 }else{
-$msg = 'Привет!';
+$msg = 'Forbidden';
 }
 ?>
 <!DOCTYPE html>
