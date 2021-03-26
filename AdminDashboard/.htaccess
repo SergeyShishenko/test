@@ -1,5 +1,8 @@
 ﻿Options All -Indexes
-#ErrorDocument 403 /error403.php 
+# ErrorDocument 403 %{HTTP_HOST} /www/err/error403.php 
+ErrorDocument 403 err/error403.php 
+
+# Redirect 403 /error403.php 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
