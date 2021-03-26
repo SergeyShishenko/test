@@ -1,4 +1,9 @@
-<?php $dir="/www/AdminDashboard"; ?>
+<?php
+// include '../inc/inc-session-start.php';
+// session_start();
+
+ $dir="/www/AdminDashboard"; 
+ ?>
 <!DOCTYPE html>
 <!-- F:\YandexDisk\web\!!!Шаблон Admin - панель\Шаблон Admin - панель\!!!!!!portoadmin\themeforest-8539472-porto-admin-responsive-html5-template\Documentation -->
 <!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
@@ -60,7 +65,8 @@
 			<li><a href="effects" title="Effects">Effects</a></li>
 			<li><a href="admin_extension" title="Admin Extension">Admin Extension</a></li>
 			<li><a href="source_credits" title="Source & Credits">Source & Credits</a></li>
-			<li><a href="../../index-session.php" title="Вернуться на сайт">Вернуться на сайт</a></li>
+			<li><a href="../shablony-dokumentov-titulnyy-kd.php" class="nav">Вернуться на сайт</a></li>
+			
 		</ul>
 		<div id="documenter_copyright">Copyright Okler Themes 2014<br>
 			made with the <a href="http://rxa.li/documenter">Documenter v2.0</a>
