@@ -31,7 +31,7 @@
 
 	<link rel="stylesheet" href="<?php echo $dir; ?>/css/doc.css" media="screen">
 
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="<?php echo $dir; ?>/favicon.png" />
 
 	<script src="<?php echo $dir; ?>/js/jquery.js"></script>
 

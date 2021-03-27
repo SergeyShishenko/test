@@ -8,7 +8,7 @@ session_start();
 $ref = $_SERVER['REQUEST_URI'];
 // echo basename($ref);
 $_SESSION['ref'] = $ref;
-
+// abstract function dbconnect(){};
 define('__ROOT__', dirname(dirname(dirname(__FILE__)))); // было
 // require_once(__ROOT__.'/DATA/TABLES/configDB.php'); // подключение к базе данных
 
