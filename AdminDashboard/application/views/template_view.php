@@ -54,15 +54,15 @@
 			<!-- <li><a class="current" href="#documenter_cover">Start</a></li> -->
 			<li><a href="<?php echo $dir; ?>/main" title="Гравная" class="" >Главная</a></li>
 			<li><a href="<?php echo $dir; ?>/tips" title="Tips">Tips</a></li>
-			
-			<li><a href="files_structure" title="Files Structure">Files Structure</a></li>
+			<li><a href="<?php echo $dir; ?>/sofiausers" title="SofiaUsers">Sofia Users</a></li>			 
+			<li><a href="<?php echo $dir; ?>/portfolio" title="Portfolio">Portfolio</a></li>
 			<li><a href="html_structure" title="HTML Structure">HTML Structure</a></li>
 			<li><a href="css"  title="CSS">CSS</a></li>
 			<li><a href="js" title="Javascript">Javascript</a></li>
 			<li><a href="customization_styles" title="Customization & Styles">Customization & Styles</a></li>
 			<li><a href="skin" title="Skin">Skin</a></li>
 			<li><a href="icons" title="Icons">Icons</a></li>
-			<li><a href="effects" title="Effects">Effects</a></li>
+			
 			<li><a href="admin_extension" title="Admin Extension">Admin Extension</a></li>
 			<li><a href="source_credits" title="Source & Credits">Source & Credits</a></li>
 			<li><a href="../shablony-dokumentov-titulnyy-kd.php" class="nav">Вернуться на сайт</a></li>
