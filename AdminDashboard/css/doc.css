@@ -62,10 +62,10 @@ table {
   border-top: 1px solid #dddddd;
 }
 
-.table th:first-child,
+/* .table th:first-child,
 .table td:first-child {
   width: 200px;
-}
+} */
 
 .table th {
   font-weight: bold;

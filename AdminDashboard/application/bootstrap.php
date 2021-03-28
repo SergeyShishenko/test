@@ -28,6 +28,7 @@ $result = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LI
 		$data = mysqli_fetch_assoc($result);
 		$role=$data['user_role']; 
     }
+mysqli_free_result($result);
     
 // echo "role ".$role;
 // exit();
