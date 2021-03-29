@@ -5,7 +5,7 @@
             <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss=""></a>
         </div>
 
-        <h2 class="panel-title">Sofia Users</h2>
+        <h2 class="panel-title">Пользователи</h2>
     </header>
     <div class="panel-body" style="display: block;">
         <table class="table table-bordered table-striped table-condensed mb-none">
