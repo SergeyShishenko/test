@@ -27,6 +27,10 @@ a{color:#0000FF;}
   border-color: #bfbfbf;
    /* background-color: #;  */
 }
+a.disabled{
+  pointer-events: none;
+  color: #bfbfbf;
+}
 
 hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
 #documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}

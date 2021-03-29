@@ -13,7 +13,7 @@
 </head>
 <body>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
-    <div class="instructions"> <?php echo $msg; ?></div>
+    <div class="instructions" onclick="history.back();"> <?php echo $msg; ?></div>
     <canvas></canvas>
     <script src="../../messages/js/index.js"></script>
 </body>

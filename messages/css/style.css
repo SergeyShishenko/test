@@ -27,6 +27,8 @@ canvas {
   border: 3px solid #fff;
   border-radius: 6px;
   padding: 8px;
+  z-index: 20;
+  cursor: pointer;
 }
 .babbl {
   background: #b1ecff;
