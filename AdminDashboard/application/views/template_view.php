@@ -59,7 +59,7 @@
 			<!-- <li><a href="html_structure" title="HTML Structure">HTML Structure</a></li> -->
 			<!-- <li><a href="css"  title="CSS">CSS</a></li> -->
 			<!-- <li><a href="js" title="Javascript">Javascript</a></li> -->
-			<!-- <li><a href="customization_styles" title="Customization & Styles">Customization & Styles</a></li> -->
+			<li><a class="disabled" href="customization_styles" title="Customization & Styles">Customization & Styles</a></li>
 			<!-- <li><a href="skin" title="Skin">Skin</a></li>
 			<li><a href="icons" title="Icons">Icons</a></li> -->
 			

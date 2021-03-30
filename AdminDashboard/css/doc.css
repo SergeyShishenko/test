@@ -27,9 +27,9 @@ a{color:#0000FF;}
   border-color: #bfbfbf;
    /* background-color: #;  */
 }
-a.disabled{
+#documenter_sidebar ul a.disabled{
   pointer-events: none;
-  color: #bfbfbf;
+  color: #a7a7a7;
 }
 
 hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
