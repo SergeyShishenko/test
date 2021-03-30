@@ -3,18 +3,24 @@
 class Model_Login extends Model
 {
 	//  private $data;
-	private $dbconn;
+	public $dbconn;
+	public $err;
 	
 	public function get_data()
 	{	
 		$this->dbconn=$GLOBALS['dbconn'];
 		// Здесь мы просто сэмулируем реальные данные.
-		mysqli_close($this->dbconn);
+		// mysqli_close($this->dbconn);
 		// return array
 
 
 		if(isset($_POST['login']) && isset($_POST['password']))
 		{
+			$this->err[]=class_Authorization::check_login($_POST['login'],$this->dbconn,$this->err);
+			$this->err[]=class_Authorization::check_pass($_POST['password'],$this->dbconn,$this->err);
+			
+			echo var_dump($this->err);;
+			// return;
 			$login = $_POST['login'];
 			$password =$_POST['password'];
 		
