@@ -25,9 +25,9 @@
     }
 </script>
 <?php
-if (isset($data)){extract($data);}  ?>
-<?php if($login_status=="access_granted") { ?>
-<p style="color:green">Регистрация прошла успешно.</p>
-<?php } elseif($login_status=="access_denied") { ?>
-<p style="color:red">Логин и/или пароль введены неверно.</p>
-<?php } ?>
+
+if (isset($data)){
+	foreach($data[0]  as $val){	echo'<span style="color:blue">'.$val.'</span><br>';}
+	foreach($data[1]  as $val){	echo'<span  style="color:blue">'.$val.'</span><br>';}
+}  ?>
+

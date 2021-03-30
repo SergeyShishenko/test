@@ -16,30 +16,33 @@ class Model_Login extends Model
 
 		if(isset($_POST['login']) && isset($_POST['password']))
 		{
-			$this->err[]=class_Authorization::check_login($_POST['login'],$this->dbconn,$this->err);
-			$this->err[]=class_Authorization::check_pass($_POST['password'],$this->dbconn,$this->err);
+			$this->err[]=class_Authorization::check_login($_POST['login'],$this->dbconn);
+			$this->err[]=class_Authorization::check_pass($_POST['password']);
 			
-			echo var_dump($this->err);;
+			// echo var_dump($this->err);
 			// return;
-			$login = $_POST['login'];
-			$password =$_POST['password'];
+			// $login = $_POST['login'];
+			// $password =$_POST['password'];
 		
 			
-			if($login=="admin" && $password=="12345")
-			{
-				$data["login_status"] = "access_granted";
+			// if($login=="admin" && $password=="12345")
+			// {
+			// 	$data["login_status"] = "access_granted";
 			
-			}
-			else
-			{
-				$data["login_status"] = "access_denied";
-			}
+			// }
+			// else
+			// {
+			// 	$data["login_status"] = "access_denied";
+			// }
+			// $data[]=$this->err;
 		}
-		else
-		{
-			$data["login_status"] = "";
-		}
-		return $data;
+		// else
+		// {
+		// 	$data["login_status"] = "";
+		// }
+		
+		// return $data;
+		return $this->err;
 	}
 
 }

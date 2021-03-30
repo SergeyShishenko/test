@@ -23,11 +23,11 @@ class class_Authorization
 
     // авторизация
 
-   public static function authorization($login,$pass,$dbconn,$err){
+   public static function authorization($login,$pass,$dbconn){
         if(isset($login) && isset($pass)){
-            self::$err[]=self::check_login($login,$dbconn,$err);
-            self::$err[]=self::check_pass($pass,$dbconn,$err);
-            if (in_array("Пользователь с таким логином существует в базе данных", $err)) {
+            self::$err[]=self::check_login($login,$dbconn);
+            self::$err[]=self::check_pass($pass);
+            if (in_array("Пользователь с таким логином существует в базе данных", self::$err)) {
                     // echo "Нашел (\"Пользователь с таким логином существует в базе данных\")<br>";          
                 
                 // $login = $_POST['login'];        
@@ -83,7 +83,7 @@ class class_Authorization
                         
                         printf("Ошибка2: %s\n", mysqli_error($dbconn));
                         // var_dump($Result_user);
-                        foreach($err AS $error){
+                        foreach(self::$err AS $error){
                             echo "<b>" . $error . "</b><br>";
                         } 
                         // exit();         
@@ -102,7 +102,7 @@ class class_Authorization
 
 
 
-   public static function check_login($login,$dbconn,$err){
+   public static function check_login($login,$dbconn){
         # проверям логин
         // if(!preg_match("/^[a-zA-Z0-9_-]+$/",$login)){ 
             
@@ -139,28 +139,29 @@ class class_Authorization
             //  echo "Пользователь с таким логином существует в базе данных -" . var_dump(self::$err);
         }elseif($count == 0){
             self::$err[] = "Пользователя с таким логином не существует в базе данных";
-            self::$err[] =  "email:";
+            // self::$err[] =  "email:";
         }
 
     return self::$err;
     }
 
-   public static function check_pass($pass,$dbconn,$err){
+   public static function check_pass($pass){
         # проверям логин
         //  $em=true;
+        $errpass=[];
         if(!preg_match("/^[a-zA-Z0-9_-]+$/",$pass)){ 
-            self::$err[] = "Пароль может состоять только из букв английского алфавита и цифр"; 
+            $errpass[] = "Пароль может состоять только из букв английского алфавита и цифр"; 
             // self::$err[] =  "email:";
             // $em=false;
         } 
 
         if(strlen($pass) < 6 or strlen($pass) > 40){ 
-            self::$err[] = "Пароль должен быть не меньше 6-х символов и не больше 40"; 
+            $errpass[] = "Пароль должен быть не меньше 6-х символов и не больше 40"; 
             // if ($em) {self::$err[] =  "email:";}
         }     
     
-
-    return self::$err;
+     
+    return $errpass;
     }
 
 
