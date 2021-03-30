@@ -18,6 +18,9 @@ require_once 'core/controller.php';
 */
 // echo dirname(dirname(dirname(dirname(__FILE__)))); 
 require_once dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/configDB.php';
+// require_once dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase.php';
+// echo dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase.php';exit();
+// $db = class_DataBase::getDB(); // Создаём объект базы данных
 $dbconn=dbconnect();
 $hash=$_COOKIE["hash"];
 $login= $_COOKIE['login'];
