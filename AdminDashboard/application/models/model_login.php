@@ -19,7 +19,12 @@ class Model_Login extends Model
 			return $this->err;
 		}
 
-		if(isset($_POST['login']) && isset($_POST['password']))
+		if (isset($_POST['changepass'])){ 
+			$this->err['changepass']=class_SofiaUsers::changepass($this->dbconn,$_POST['login'],$_POST['password']);
+			return $this->err;
+		}
+
+		if(isset($_POST['login']) && isset($_POST['password']) && isset($_POST['newregister']))
 		{
 			$this->err[]=class_SofiaUsers::check_login($_POST['login'],$this->dbconn);
 			$this->err[]=class_SofiaUsers::check_pass($_POST['password']);

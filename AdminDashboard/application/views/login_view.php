@@ -22,7 +22,7 @@
 
             </tr>
             <th colspan="2" style="text-align: right">
-                <input type="submit" value="Зарегистрировать" name="btn" style="width: 150px; height: 30px;"></th>
+                <input type="submit" value="Зарегистрировать" name="newregister" style="width: 150px; height: 30px;"></th>
         </table>
         <!-- </form> -->
 </p>
@@ -31,11 +31,12 @@
     value="<?php echo $data['generateCode'][0] ?>" disabled><br><br>
 
 <input name="generatesubmit" type="submit" value="Сгенерировать пароль"><br><br>
+<input name="changepass" type="submit" value="Изменить пароль" ><br><br>
 </form>
 <!-- <input name="generatesubmit" type="submit" value="Сгенерировать пароль" onClick="generateCode()"><br><br>
-<input name="changepass" type="submit" value="Изменить пароль" onClick="changepass()"><br><br>
+
 <input name="readlogin" type="submit" value="Данные Логина" onClick="readlogin()"><br><br> -->
-<p id="changepass"></p>
+<!-- <p id="changepass"></p> -->
 
 <script>
 // запрет повторной отправки формы
@@ -63,6 +64,7 @@ if (isset($data)){
 	// var_dump($data);
 	// echo "</pre>";
 	// echo isset($data['generateCode'][0])."<br>";
+	// echo isset($data['changepass'][0])."<br>";
 	foreach($data as $key){
 		// echo'<span style="color:blue">'.key($data).'</span><br>';
 	if (key($data)!=="generateCode"){
