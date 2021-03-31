@@ -1,6 +1,6 @@
 <?php
-// AdminDashboard\application\more\class_Authorization.php
-class class_Authorization
+// AdminDashboard\application\more\class_SofiaUsers.php
+class class_SofiaUsers
 {
     public static $err ;
     // private $dbconn;

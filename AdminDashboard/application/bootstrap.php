@@ -18,7 +18,7 @@ require_once 'core/controller.php';
 */
 // echo dirname(dirname(dirname(dirname(__FILE__)))); 
 require_once dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/configDB.php';
-include "application/more/class_Authorization.php";
+include "application/more/class_SofiaUsers.php";
 // require_once dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase.php';
 // echo dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase.php';exit();
 // $db = class_DataBase::getDB(); // Создаём объект базы данных
