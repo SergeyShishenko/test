@@ -15,7 +15,7 @@ class Model_Login extends Model
 		// mysqli_close($this->dbconn);
 		// return array
 		if (isset($_POST['generatesubmit'])){ 
-			$this->err[]=array("generatesubmit");
+			$this->err['generateCode']=array(class_SofiaUsers::generateCode(8));
 			return $this->err;
 		}
 

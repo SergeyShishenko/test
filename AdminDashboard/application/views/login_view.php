@@ -20,7 +20,7 @@
 </p>
 <form action="" method="post">
 Сгенерированный пароль <input id="generatepass" name="generatepass" readonly type="text"
-    value="<?php #echo generateCode(6); ?>"><br><br>
+    value="<?php echo $data['generateCode'][0] ?>" disabled><br><br>
 
 <input name="generatesubmit" type="submit" value="Сгенерировать пароль" ><br><br>
 </form>	
@@ -57,9 +57,15 @@ if (isset($data)){
 	// echo "<pre>";
 	// var_dump($data);
 	// echo "</pre>";
-	// echo count($data)."<br>";
-	for($i=0;$i<count($data);$i++){
-		foreach($data[$i]  as $val){	echo'<span style="color:blue">'.$val.'</span><br>';}
+	// echo $data['generateCode'][0]."<br>";
+	foreach($data as $key){
+		// echo'<span style="color:blue">'.key($data).'</span><br>';
+	if (key($data)!=="generateCode"){
+		foreach($key  as $val){
+				echo'<span style="color:blue">'.$val.'</span><br>';
+			}
+	}
+		
 	}
 	
 	// foreach($data[1]  as $val){	echo'<span  style="color:blue">'.$val.'</span><br>';}
