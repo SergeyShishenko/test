@@ -92,5 +92,36 @@ class class_SofiaUsers
 
     }
 
+    public static function newregister($dbconn, $login, $pass){
+             # Убераем лишние пробелы и делаем двойное шифрование
+             $checkpass = self::check_pass($pass);
+             if(count($checkpass)>0) {
+                return $checkpass; 
+             } 
+             $checklogin = self::check_login($login,$dbconn);
+             if (in_array("Пользователь с таким логином существует в базе данных", $checklogin)){
+            //  if(count($checklogin)>0) {
+                return $checklogin; 
+             } 
+
+             $salt=self::generateCode(4);
+             $password = sha1(trim($pass).$salt);       
+     
+            
+                if (mysqli_query($dbconn,"INSERT INTO `sofia_users` (`user_login`, `user_password`, `user_salt`, `user_sess_date_start`,`user_activation`) VALUES ('$login', '$password','$salt', CURRENT_TIMESTAMP, '-')")) {
+                    // header("Location: login.php"); exit();
+                    self::$err[]= "<b>Вы успешно зарегистрировались!</b><br>";
+                    self::$err[]= "Логин:<b> {$login}</b><br> Пароль:<b> {$pass}</b><br> Соль:<b> {$salt}</b><br>";
+                   
+                    return self::$err;
+                }
+             else{
+              
+                self::$err[]="Ошибка: %s\n". mysqli_error($dbconn);
+                 return self::$err;
+             }  
+
+    }
+
 }// end class
 ?>
