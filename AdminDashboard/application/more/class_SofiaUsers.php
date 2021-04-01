@@ -19,7 +19,8 @@ class class_SofiaUsers
    public static function check_login($login,$dbconn){
         # проверям логин
         // if(!preg_match("/^[a-zA-Z0-9_-]+$/",$login)){             
-        if(!preg_match("/[-a-zA-Z0-9\._]/",$login)){ 
+        // if(!preg_match("/[-a-zA-Z0-9]/",$login)){ 
+        if(!preg_match("/[a-zA-Z0-9]/",$login)){ 
             self::$err[] = "Логин может состоять только из букв английского алфавита и цифр"; 
         } 
 
