@@ -93,6 +93,7 @@ class class_SofiaUsers
 
             //  удаление из err "Пользователя с таким логином не существует в базе данных"; 
              self::$err = array_diff(self::$err, array("Пользователя с таким логином не существует в базе данных"));
+             if(count(self::$err)>0){return self::$err;}
             //  $salt=self::generateCode(4);
             //  $password = sha1(trim($pass).$salt);   
             $salt=  mysqli_real_escape_string($dbconn,self::generateCode(4));
@@ -115,35 +116,21 @@ class class_SofiaUsers
 
     }
 
-    public static function deluser($dbconn, $login){
-         
-        // self::$err[]= "<b>Удаление $login!</b><br>";
-        // return self::$err;
-             
-        // $checkpass = self::check_pass($pass);
-        // if(count($checkpass)>0) {
-        //     return $checkpass; 
-        // } 
+    public static function deluser($dbconn, $login){     
         $checklogin = self::check_login($login,$dbconn);
         if (in_array("Пользователь с таким логином существует в базе данных", $checklogin)){ 
             //  удаление из err"Пользователь с таким логином существует в базе данных"; 
             self::$err = array_diff(self::$err, array("Пользователь с таким логином существует в базе данных"));
-            //  $salt=self::generateCode(4);
-            //  $password = sha1(trim($pass).$salt);   
-            // $salt=  mysqli_real_escape_string($dbconn,self::generateCode(4));
-            // $password = mysqli_real_escape_string($dbconn,sha1(trim($pass).$salt));
-            $login= mysqli_real_escape_string($dbconn, $login);    
-            
-            
+            if(count(self::$err)>0){return self::$err;}
+            // self::$err[]="err ".count(self::$err);
+        
+            $login= mysqli_real_escape_string($dbconn, $login); 
             if (mysqli_query($dbconn,"DELETE FROM  `sofia_users` WHERE `user_login` = '$login'")) {
                 // header("Location: login.php"); exit();
-                self::$err[]= "<b>Учетная запись пользователя $login удалена!</b><br>";
-                // self::$err[]= "Логин:<b> {$login}</b><br> Пароль:<b> {$pass}</b><br> Соль:<b> {$salt}</b><br>";
-            
+                self::$err[]= "<b>Учетная запись пользователя $login удалена!</b><br>"; 
                 return self::$err;
             }
-            else{
-            
+            else{            
                 self::$err[]="Ошибка: %s\n". mysqli_error($dbconn);
                 return self::$err;
             }  

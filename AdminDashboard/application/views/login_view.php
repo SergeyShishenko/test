@@ -65,7 +65,7 @@ function del(login){
     }else{
       return false  
     }
-    
+    // return  confirm('Удалить учетную запись '+login+' ?')      
 }
 </script>
 <?php
