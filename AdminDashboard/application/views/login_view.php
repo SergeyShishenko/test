@@ -28,11 +28,13 @@
 </p>
 <!-- <form action="" method="post"> -->
 
-<input name="generatesubmit" type="submit" value="Сгенерировать пароль"> <input id="generatepass" style="width:60px;" name="generatepass" readonly type="text"   value="<?php echo $data['generateCode'][0] ?>" disabled>
+<input name="generatesubmit" type="submit" value="Сгенерировать пароль" > 
+<input id="generatepass" style="width:60px;" name="generatepass" readonly type="text"   value="<?php echo $data['generateCode'][0] ?>" disabled>
 <br><br>
 
 <!-- <input name="generatesubmit" type="submit" value="Сгенерировать пароль"><br><br> -->
 <input name="changepass" type="submit" value="Изменить пароль" ><br><br>
+<input name="deluser" type="submit" value="Удалить учетную запись" onclick="return del(login.value)"><br><br>
 </form>
 <!-- <input name="generatesubmit" type="submit" value="Сгенерировать пароль" onClick="generateCode()"><br><br>
 
@@ -44,8 +46,7 @@
 if (window.history.replaceState) {
     window.history.replaceState(null, null, window.location.href);
 }
-
-
+// let login = "Пользователь";
 function show_hide_password(target) {
     var input = document.getElementById('password-input');
     if (input.getAttribute('type') == 'password') {
@@ -56,6 +57,15 @@ function show_hide_password(target) {
         input.setAttribute('type', 'password');
     }
     return false;
+}
+function del(login){
+   
+    if (login!==""){
+        return  confirm('Удалить учетную запись '+login+' ?')  
+    }else{
+      return false  
+    }
+    
 }
 </script>
 <?php

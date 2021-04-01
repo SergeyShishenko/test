@@ -14,6 +14,10 @@ class Model_Login extends Model
 		// Здесь мы просто сэмулируем реальные данные.
 		// mysqli_close($this->dbconn);
 		// return array
+		if (isset($_POST['deluser'])){ 
+			$this->err['deluser']=class_SofiaUsers::deluser($this->dbconn,$_POST['login']);
+			return $this->err;
+		}
 		if (isset($_POST['generatesubmit'])){ 
 			$this->err['generateCode']=array(class_SofiaUsers::generateCode(8));
 			return $this->err;

@@ -6,17 +6,12 @@ class class_SofiaUsers
     
 // Функция для генерации случайной строки
    public static function generateCode($length=6) {
-
         $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPRQSTUVWXYZ0123456789-";
-
         $code = "";
-
         $clen = strlen($chars) - 1;  
         while (strlen($code) < $length) {
-
                 $code .= $chars[mt_rand(0,$clen)];  
         }
-
         return $code;
 
     }   
@@ -26,14 +21,11 @@ class class_SofiaUsers
         // if(!preg_match("/^[a-zA-Z0-9_-]+$/",$login)){             
         if(!preg_match("/[-a-zA-Z0-9\._]/",$login)){ 
             self::$err[] = "Логин может состоять только из букв английского алфавита и цифр"; 
-
         } 
 
         if(strlen($login) < 3 or strlen($login) > 40){ 
             self::$err[] = "Логин должен быть не меньше 3-х символов и не больше 40"; 
-        }  
-
-        
+        }          
 
         # проверяем, не сущестует ли пользователя с таким именем
         $escape_string_login=mysqli_real_escape_string($dbconn, $login);
@@ -45,7 +37,6 @@ class class_SofiaUsers
         }elseif($count == 0){
             self::$err[] = "Пользователя с таким логином не существует в базе данных";            
         }
-
         return self::$err;
     }
 
@@ -57,13 +48,7 @@ class class_SofiaUsers
 
         if(strlen($pass) < 6 or strlen($pass) > 40){ 
             $errpass[] = "Пароль должен быть не меньше 6-х символов и не больше 40";            
-        }    
-
-        // echo "<pre>";
-        // var_dump($errpass);
-        // echo "<br>".count($errpass);
-        // echo "</pre>";
-     
+        }   
         return $errpass;
     }
 
@@ -106,7 +91,7 @@ class class_SofiaUsers
                 return $checklogin; 
              } 
 
-            //  удаление "Пользователя с таким логином не существует в базе данных"; 
+            //  удаление из err "Пользователя с таким логином не существует в базе данных"; 
              self::$err = array_diff(self::$err, array("Пользователя с таким логином не существует в базе данных"));
             //  $salt=self::generateCode(4);
             //  $password = sha1(trim($pass).$salt);   
@@ -128,6 +113,42 @@ class class_SofiaUsers
                  return self::$err;
              }  
 
+    }
+
+    public static function deluser($dbconn, $login){
+         
+        // self::$err[]= "<b>Удаление $login!</b><br>";
+        // return self::$err;
+             
+        // $checkpass = self::check_pass($pass);
+        // if(count($checkpass)>0) {
+        //     return $checkpass; 
+        // } 
+        $checklogin = self::check_login($login,$dbconn);
+        if (in_array("Пользователь с таким логином существует в базе данных", $checklogin)){ 
+            //  удаление из err"Пользователь с таким логином существует в базе данных"; 
+            self::$err = array_diff(self::$err, array("Пользователь с таким логином существует в базе данных"));
+            //  $salt=self::generateCode(4);
+            //  $password = sha1(trim($pass).$salt);   
+            // $salt=  mysqli_real_escape_string($dbconn,self::generateCode(4));
+            // $password = mysqli_real_escape_string($dbconn,sha1(trim($pass).$salt));
+            $login= mysqli_real_escape_string($dbconn, $login);    
+            
+            
+            if (mysqli_query($dbconn,"DELETE FROM  `sofia_users` WHERE `user_login` = '$login'")) {
+                // header("Location: login.php"); exit();
+                self::$err[]= "<b>Учетная запись пользователя $login удалена!</b><br>";
+                // self::$err[]= "Логин:<b> {$login}</b><br> Пароль:<b> {$pass}</b><br> Соль:<b> {$salt}</b><br>";
+            
+                return self::$err;
+            }
+            else{
+            
+                self::$err[]="Ошибка: %s\n". mysqli_error($dbconn);
+                return self::$err;
+            }  
+        } 
+        return self::$err;
     }
 
 }// end class
