@@ -27,10 +27,11 @@
         <!-- </form> -->
 </p>
 <!-- <form action="" method="post"> -->
-Сгенерированный пароль <input id="generatepass" name="generatepass" readonly type="text"
-    value="<?php echo $data['generateCode'][0] ?>" disabled><br><br>
 
-<input name="generatesubmit" type="submit" value="Сгенерировать пароль"><br><br>
+<input name="generatesubmit" type="submit" value="Сгенерировать пароль"> <input id="generatepass" style="width:60px;" name="generatepass" readonly type="text"   value="<?php echo $data['generateCode'][0] ?>" disabled>
+<br><br>
+
+<!-- <input name="generatesubmit" type="submit" value="Сгенерировать пароль"><br><br> -->
 <input name="changepass" type="submit" value="Изменить пароль" ><br><br>
 </form>
 <!-- <input name="generatesubmit" type="submit" value="Сгенерировать пароль" onClick="generateCode()"><br><br>
