@@ -55,7 +55,8 @@
 			<li><a href="<?php echo $dir; ?>/main" title="Гравная" class="" >Главная</a></li>
 			<!-- <li><a href="<?php //echo $dir; ?>/tips" title="Советы">Советы</a></li> -->
 			<li><a href="<?php echo $dir; ?>/sofiausers" title="SofiaUsers">Пользователи</a></li>			 
-			<li><a href="<?php echo $dir; ?>/PHPINFO" title="PHPINFO">PHPINFO</a></li>
+			<li><a href="<?php echo $dir; ?>/kit" title="OwnerFurnitur">Комплектация фурнитуры</a></li>			 
+			
 			<!-- <li><a href="<?php// echo $dir; ?>/portfolio" title="Portfolio">Portfolio</a></li> -->
 			<!-- <li><a href="html_structure" title="HTML Structure">HTML Structure</a></li> -->
 			<!-- <li><a href="css"  title="CSS">CSS</a></li> -->
@@ -65,8 +66,9 @@
 			<li><a href="icons" title="Icons">Icons</a></li> -->
 			
 			<li><a  href="<?php echo $dir; ?>/login" title="Регистрация пользователя">Регистрация пользователя</a></li>
-			<li><a class="disabled" href="customization_styles" title="Customization & Styles">Customization & Styles</a></li>
+			<!-- <li><a class="disabled" href="customization_styles" title="Customization & Styles">Customization & Styles</a></li> -->
 			<!-- <li><a href="source_credits" title="Source & Credits">Source & Credits</a></li> -->
+			<li><a class="disabled" href="<?php echo $dir; ?>/PHPINFO" title="PHPINFO">PHPINFO</a></li>
 			<li><a href="../shablony-dokumentov-titulnyy-kd.php" class="nav">Вернуться на сайт</a></li>
 			
 		</ul>
