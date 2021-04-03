@@ -60,4 +60,5 @@ $result = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LI
     
 
     // mysqli_close($dbconn);  
+  
 

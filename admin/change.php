@@ -208,6 +208,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
     
    
         mysqli_close($dbconn);
+        unset($GLOBALS['dbconn']);
         echo $obj.$id ; //response
 
   

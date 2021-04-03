@@ -1694,5 +1694,6 @@ switch ($tbl) {
 /////"obj"        
 }
 mysqli_close($dbconn);
+unset($GLOBALS['dbconn']);
 
 ?>

@@ -24,6 +24,7 @@ if (mysqli_query($dbconn, $query)) echo "Таблица group_leader созда�
 else echo "Таблица не создана: ".mysqli_error($dbconn);
 
 mysqli_close($dbconn);
+unset($GLOBALS['dbconn']);
 
 
 ////
@@ -49,6 +50,7 @@ if (mysqli_query($dbconn, $query)) echo "Таблица current_orders созд�
 else echo "Таблица не создана: ".mysqli_error($dbconn);
 
 mysqli_close($dbconn);
+unset($GLOBALS['dbconn']);
 
 
 ////
@@ -65,6 +67,7 @@ if (mysqli_query($dbconn, $query)) echo "ADD COLUMN filename_current_orders в �
 else echo "Поле не добавленно: ".mysqli_error($dbconn);
 }
 mysqli_close($dbconn);
+unset($GLOBALS['dbconn']);
 
 ////
 

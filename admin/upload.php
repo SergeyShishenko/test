@@ -122,5 +122,6 @@ $randomName = substr_replace(sha1(microtime(true)), '', 8).'.'.$mime;
 // }
 
 mysqli_close($dbconn);
+unset($GLOBALS['dbconn']);
 
 ?>

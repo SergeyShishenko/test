@@ -94,4 +94,5 @@ if(isset($_POST['login']) && isset($_POST['chpass'])){
 // return $err;
 // }
 mysqli_close($dbconn);
+unset($GLOBALS['dbconn']);
 ?>

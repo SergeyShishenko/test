@@ -9,7 +9,7 @@ class Model_Login extends Model
 	public function get_data()
 	{	
 		// $this->dbconn=$GLOBALS['dbconn']; 
-		$this->dbconn=new mysqli(DBoutput::$dbHost, DBoutput::$mysql_user, DBoutput::$mysql_password, DBoutput::$my_db);; 
+		$this->dbconn=new mysqli(DBoutput::$dbHost, DBoutput::$mysql_user, DBoutput::$mysql_password, DBoutput::$my_db); 
 		// $this->dbconn=class_DataBase::getDB();; 
 		// Здесь мы просто сэмулируем реальные данные.
 		// mysqli_close($this->dbconn);

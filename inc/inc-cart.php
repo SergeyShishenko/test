@@ -17,6 +17,7 @@
         require_once($_SERVER['DOCUMENT_ROOT'].'/www/vpi/cart.php');// для localhost
     }
     mysqli_close($dbconn); 
+    unset($GLOBALS['dbconn']);
 ?>
 </div>                                 
 <!-- КОРЗИНА -->

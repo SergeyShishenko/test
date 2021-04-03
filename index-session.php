@@ -79,7 +79,8 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
 
     }
     
-    mysqli_close($dbconn);  
+    mysqli_close($dbconn);
+    unset($GLOBALS['dbconn']); 
     if(  !isset($_SESSION['ref'] )  )  {$_SESSION['ref'] = 'index.php';}
     header('Location:'.$_SESSION['ref']);
     unset($_SESSION['ref']);

@@ -301,5 +301,6 @@ elseif (isset($_POST['addids'])) {
 mysqli_free_result($Result_user); 
 
 mysqli_close($dbconn);
+unset($GLOBALS['dbconn']);
 
 ?>

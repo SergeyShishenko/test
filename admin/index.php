@@ -283,6 +283,7 @@ $my = new \Test\Test("Привет из класса!");
     mysqli_free_result($Result_head);
     //Закрывает соединение с сервером MySQL
     mysqli_close($dbconn);
+    unset($GLOBALS['dbconn']);
     ?>
 
 </article>

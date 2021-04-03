@@ -27,3 +27,4 @@ if (mysqli_query($dbconn, $query)) echo "Таблица sofia_users создан
 else echo "Таблица не создана: ".mysqli_error($dbconn);
 
 mysqli_close($dbconn);
+unset($GLOBALS['dbconn']);

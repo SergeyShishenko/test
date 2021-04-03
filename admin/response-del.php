@@ -30,6 +30,7 @@ if(isset($idToDelete)&& strlen($idToDelete)>0 && is_numeric($idToDelete))
         exit();
     }
     mysqli_close($dbconn);
+    unset($GLOBALS['dbconn']);
 
 }
 else{

@@ -132,5 +132,6 @@ if (count($err) > 0) {
 // }
 
 mysqli_close($dbconn);
+unset($GLOBALS['dbconn']);
 
 ?>

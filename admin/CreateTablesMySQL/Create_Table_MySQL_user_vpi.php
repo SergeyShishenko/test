@@ -26,6 +26,7 @@ if (mysqli_query($dbconn, $query)) echo "Таблица user_vpi создана.
 else echo "Таблица user_vpi не создана: ".mysqli_error($dbconn);
 
 mysqli_close($dbconn);
+unset($GLOBALS['dbconn']);
 
 
 ////

@@ -336,6 +336,7 @@ if(isset($_POST["content_txt"]) && strlen($_POST["content_txt"])>0)
 
                     <?php  
                     mysqli_close($dbconn);
+                    unset($GLOBALS['dbconn']);
 
                 }else{
                     //вывод ошибки

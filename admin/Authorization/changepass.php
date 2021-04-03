@@ -52,4 +52,5 @@ if(isset($_POST['login']) && isset($_POST['chpass'])){
 
 
 mysqli_close($dbconn);
+unset($GLOBALS['dbconn']);
 ?>
