@@ -12,12 +12,12 @@
             <thead>
                 <tr>
                     <!-- <th class="text-right hidden-xs hidden-sm">user_sofia_id</th> -->
-                    <th class="">id</th>
-                    <th class="hidden-xs hidden-sm">user_login</th>
-                    <th class="hidden-xs hidden-sm">user_mail</th>
-                    <th class="text-right">user_role</th>                    
-                    <th class="text-right hidden-xs">user_last_page</th>
-                    <th class="text-right">user_sess_date_start</th>
+                    <th class="sticky-table ">id</th>
+                    <th class="sticky-table hidden-xs hidden-sm">user_login</th>
+                    <th class="sticky-table hidden-xs hidden-sm">user_mail</th>
+                    <th class="sticky-table text-right">user_role</th>                    
+                    <th class="sticky-table text-right hidden-xs">user_last_page</th>
+                    <th class="sticky-table text-right">user_sess_date_start</th>
                   
                 </tr>
             </thead>

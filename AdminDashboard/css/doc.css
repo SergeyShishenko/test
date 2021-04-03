@@ -344,3 +344,16 @@ table th[class*="span"],
 .password-control.view {
 	background: url(../images/no-view.svg) 0 0 no-repeat;
 }
+
+.sticky-table {
+  position: sticky;
+  top: -1px;
+  min-height: 2em;
+  background: rgb(240, 240, 240);
+  padding: 15px 15px 0 15px;
+  z-index: 110;
+  /* border: 1px solid rgb(39, 39, 39); */
+  margin-right: 0.5px;
+  box-shadow: 0.5em 0.5em 10px rgba(100,100,100,0.3);
+  
+}
