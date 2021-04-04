@@ -96,12 +96,14 @@ if(isset($_POST['ids']))//генерация xls
         // $helper->log('Load from Xls template');
         $reader = IOFactory::createReader('Xls');
         // echo __DIR__ . '/../templates/30template.xls';
-        $templatefile='VPI_template.xls';
+        // $templatefile='VPI_template.xls';
+        $templatefile='VPI_template_pz.xls';
         $spreadsheet = $reader->load($site . 'vpi/templates/' . $templatefile);
 
 
 
-        $baseRow = 4;
+        // $baseRow = 4;
+        $baseRow = 9;//VPI_template_pz.xls
         foreach($data as $r => $dataRow) {
             $row = $baseRow + $r;
             $spreadsheet->getActiveSheet()->insertNewRowBefore($row,1);
@@ -131,13 +133,24 @@ if(isset($_POST['ids']))//генерация xls
             // $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
 
             // $spreadsheet->getActiveSheet()->setCellValue('D'.$row, $r+1)
-            $spreadsheet->getActiveSheet()->setCellValue('E'.$row, $dataRow['articul_furnitur_obj'])
-                                        ->setCellValue('F'.$row, $dataRow['name_furnitur_obj_prop'])
-                                        ->setCellValue('G'.$row, $dataRow['made_furnitur_obj'])
-                                        ->setCellValue('H'.$row, $dataRow['color_obj_prop'])
-                                        ->setCellValue('I'.$row, $dataRow['unit_obj_prop'])
-                                        // ->setCellValue('L'.$row, $imagePath)
-                                        ->setCellValue('J'.$row, $dataRow['count']);
+            $spreadsheet->getActiveSheet()
+            // ->setCellValue('E'.$row, $dataRow['articul_furnitur_obj'])
+            //                             ->setCellValue('F'.$row, $dataRow['name_furnitur_obj_prop'])
+            //                             ->setCellValue('G'.$row, $dataRow['made_furnitur_obj'])
+            //                             ->setCellValue('H'.$row, $dataRow['color_obj_prop'])
+            //                             ->setCellValue('I'.$row, $dataRow['unit_obj_prop'])
+            //                             // ->setCellValue('L'.$row, $imagePath)
+            //                             ->setCellValue('J'.$row, $dataRow['count']);
+            ->setCellValue('A'.$row, "")
+            ->setCellValue('B'.$row, "")
+            ->setCellValue('C'.$row, "")
+            ->setCellValue('D'.$row, "")
+            ->setCellValue('G'.$row, $dataRow['articul_furnitur_obj'])
+            ->setCellValue('H'.$row, $dataRow['name_furnitur_obj_prop'])
+            ->setCellValue('I'.$row, $dataRow['made_furnitur_obj'])
+            ->setCellValue('J'.$row, $dataRow['color_obj_prop'])
+            ->setCellValue('K'.$row, $dataRow['unit_obj_prop'])
+            ->setCellValue('L'.$row, $dataRow['count']);
                                         
             $spreadsheet->getActiveSheet()->getRowDimension($row)->setRowHeight(170);
             if (file_exists($imagePath)) {
@@ -155,7 +168,8 @@ if(isset($_POST['ids']))//генерация xls
                 $objDrawing->setDescription('Paid');
                 // $objDrawing->setPath('./images/paid.png');
                 $objDrawing->setPath($imagePath);
-                $objDrawing->setCoordinates('K'.$row);
+                // $objDrawing->setCoordinates('K'.$row);
+                $objDrawing->setCoordinates('M'.$row);
                 $objDrawing->setOffsetX(10);
                 $objDrawing->setOffsetY(10);
                 $objDrawing->setHeight(200);
@@ -175,7 +189,7 @@ if(isset($_POST['ids']))//генерация xls
         // $objWriter = PHPExcel_IOFactory::createWriter($spreadsheet, 'Excel5');
         // $objWriter->save(str_replace('.php', '.xls', __FILE__));
         // echo dirname(__FILE__)."\/vpi-".date('m-d-Y').".xls", EOL;
-        $fname="vpi-".date('m-d-Y-H-i-s').".xls";
+        $fname=" ВПИ-".date('m-d-Y-H-i-s').".xls";
         
 
         

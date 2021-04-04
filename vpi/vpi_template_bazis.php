@@ -56,7 +56,9 @@ require $site . 'vendor/phpoffice/phpspreadsheet/samples/HeaderVPI.php';
 // $helper->log('Load from Xls template');
 $reader = IOFactory::createReader('Xls');
 // echo __DIR__ . '/../templates/30template.xls';
-$templatefile='VPI_template.xls';
+
+// $templatefile='VPI_template.xls';
+$templatefile='VPI_template_pz.xls';
 $spreadsheet = $reader->load($site . 'vpi/templates/' . $templatefile);
 
 // $helper->log('Add new data to the template');
@@ -76,7 +78,8 @@ $spreadsheet = $reader->load($site . 'vpi/templates/' . $templatefile);
 
 $spreadsheet->getActiveSheet()->setCellValue('D1', Date::PHPToExcel(time()));
 
-$baseRow = 3;
+// $baseRow = 3;//VPI_template.xls
+$baseRow = 7;//VPI_template_pz.xls
 // foreach ($data as $r => $dataRow) {
 //     $row = $baseRow + $r;
 //     $spreadsheet->getActiveSheet()->insertNewRowBefore($row, 1);
@@ -93,17 +96,21 @@ $baseRow = 3;
 for ($r=1; $r < count($arr->table0); $r++) { 
     $tr=$arr->table0[$r];   
         $row = $baseRow + $r;
-        $spreadsheet->getActiveSheet()->setCellValue('A'.$row, $tr[0])
-        ->setCellValue('B'.$row, $tr[1])
-        ->setCellValue('C'.$row, $tr[2])
-        ->setCellValue('D'.$row, $tr[3])
-        ->setCellValue('E'.$row, $tr[4])
-        ->setCellValue('F'.$row, $tr[5])
-        ->setCellValue('G'.$row, $tr[6])
-        ->setCellValue('H'.$row, $tr[7])
-        ->setCellValue('I'.$row, $tr[8])
-        ->setCellValue('J'.$row, $tr[9])
-        ->setCellValue('K'.$row, $tr[10]);
+        $spreadsheet->getActiveSheet()
+        ->setCellValue('A'.$row, "")
+        ->setCellValue('B'.$row, "")
+        ->setCellValue('C'.$row, $tr[0])
+        ->setCellValue('D'.$row, $tr[1])
+        ->setCellValue('E'.$row, $tr[2])
+        ->setCellValue('F'.$row, $tr[3])
+        ->setCellValue('G'.$row, $tr[4])
+        ->setCellValue('H'.$row, $tr[5])
+        ->setCellValue('I'.$row, $tr[6])
+        ->setCellValue('J'.$row, $tr[7])
+        ->setCellValue('K'.$row, $tr[8])
+        ->setCellValue('L'.$row, $tr[9])
+        ->setCellValue('M'.$row, $tr[10])
+        ;
         $spreadsheet->getActiveSheet()->getRowDimension($row)->setRowHeight(-1);
 }
 // foreach ($data as $r => $dataRow) {

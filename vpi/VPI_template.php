@@ -123,12 +123,13 @@ if(isset($_POST['ids']))//генерация xls
     // генерация
         // echo date('H:i:s') , " Загрузка из шаблона Excel5" , EOL;
         $objReader = PHPExcel_IOFactory::createReader('Excel5');
-
-        if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/VPI_template.xls")) {
-            $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/VPI_template.xls");// для сайта !!!!!!!
+        // $templatefile='VPI_template.xls';
+        $templatefile='VPI_template_pz.xls';
+        if (file_exists($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/".$templatefile)) {
+            $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/vpi/templates/".$templatefile);// для сайта !!!!!!!
         }
         else {
-            $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/VPI_template.xls");// для localhost !!!!!!!
+            $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] ."/www/vpi/templates/".$templatefile);// для localhost !!!!!!!
         }
     
 
@@ -160,7 +161,8 @@ if(isset($_POST['ids']))//генерация xls
 
         $objPHPExcel->getActiveSheet()->setCellValue('D1', PHPExcel_Shared_Date::PHPToExcel(time()));
 
-        $baseRow = 4;
+        // $baseRow = 4;
+        $baseRow = 7;//VPI_template_pz.xls
         foreach($data as $r => $dataRow) {
             $row = $baseRow + $r;
             $objPHPExcel->getActiveSheet()->insertNewRowBefore($row,1);
@@ -177,12 +179,17 @@ if(isset($_POST['ids']))//генерация xls
             // $imagePath = $_SERVER['DOCUMENT_ROOT'] .'/www/dist/filesdb/images/thumbs/tbs' . $dataRow['fname_img_furn'];// для localhost !!!!!!!
 
             // $objPHPExcel->getActiveSheet()->setCellValue('D'.$row, $r+1)
-            $objPHPExcel->getActiveSheet()->setCellValue('E'.$row, $dataRow['articul_furnitur_obj'])
-                                        ->setCellValue('F'.$row, $dataRow['name_furnitur_obj_prop'])
-                                        ->setCellValue('G'.$row, $dataRow['made_furnitur_obj'])
-                                        ->setCellValue('H'.$row, $dataRow['color_obj_prop'])
-                                        ->setCellValue('I'.$row, $dataRow['unit_obj_prop'])
-                                        ->setCellValue('J'.$row, $dataRow['count']);
+            $objPHPExcel->getActiveSheet()
+            ->setCellValue('A'.$row, "")
+            ->setCellValue('B'.$row, "")
+            ->setCellValue('C'.$row, "")
+            ->setCellValue('D'.$row, "")
+            ->setCellValue('G'.$row, $dataRow['articul_furnitur_obj'])
+            ->setCellValue('H'.$row, $dataRow['name_furnitur_obj_prop'])
+            ->setCellValue('I'.$row, $dataRow['made_furnitur_obj'])
+            ->setCellValue('J'.$row, $dataRow['color_obj_prop'])
+            ->setCellValue('K'.$row, $dataRow['unit_obj_prop'])
+            ->setCellValue('L'.$row, $dataRow['count']);
                                         // ->setCellValue('K'.$row, $imagePath);
             $objPHPExcel->getActiveSheet()->getRowDimension($row)->setRowHeight(170);
             if (file_exists($imagePath)) {
@@ -200,7 +207,8 @@ if(isset($_POST['ids']))//генерация xls
                 $objDrawing->setDescription('Paid');
                 // $objDrawing->setPath('./images/paid.png');
                 $objDrawing->setPath($imagePath);
-                $objDrawing->setCoordinates('K'.$row);
+                // $objDrawing->setCoordinates('K'.$row);
+                $objDrawing->setCoordinates('M'.$row);
                 $objDrawing->setOffsetX(10);
                 $objDrawing->setOffsetY(10);
                 // $objDrawing->setRotation(25);
@@ -219,7 +227,7 @@ if(isset($_POST['ids']))//генерация xls
         $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
         // $objWriter->save(str_replace('.php', '.xls', __FILE__));
         // echo dirname(__FILE__)."\/vpi-".date('m-d-Y').".xls", EOL;
-        $fname="vpi-".date('m-d-Y-H-i-s').".xls";
+        $fname="ВПИ-".date('m-d-Y-H-i-s').".xls";
 
         if (file_exists($_SERVER['DOCUMENT_ROOT'] .'/dist/filesdb/images/thumbs/'.$typeFurn.'tbs' . $dataRow['fname_img_furn'])) {
             $objWriter->save($_SERVER['DOCUMENT_ROOT'] ."/vpi/".$fname);// для сайта !!!!!!!
