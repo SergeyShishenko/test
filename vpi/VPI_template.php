@@ -159,7 +159,7 @@ if(isset($_POST['ids']))//генерация xls
         // 				   )
         // 			 );
 
-        $objPHPExcel->getActiveSheet()->setCellValue('D1', PHPExcel_Shared_Date::PHPToExcel(time()));
+        // $objPHPExcel->getActiveSheet()->setCellValue('D1', PHPExcel_Shared_Date::PHPToExcel(time()));
 
         // $baseRow = 4;
         $baseRow = 7;//VPI_template_pz.xls
@@ -216,7 +216,9 @@ if(isset($_POST['ids']))//генерация xls
                 // $objDrawing->getShadow()->setDirection(45);  
             } 
         }
-        $objPHPExcel->getActiveSheet()->removeRow($baseRow-1,1);//удаление строки
+        // $objPHPExcel->getActiveSheet()->removeRow($baseRow-1,1);//удаление строки
+        $spreadsheet->getActiveSheet()->removeRow($baseRow+1,1);//удаление строки
+        $spreadsheet->getActiveSheet()->freezePane('A8');
         // // Always include the complete filter range!
         // // Excel does support setting only the caption
         // // row, but that's not a best practise...
