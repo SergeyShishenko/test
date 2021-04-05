@@ -89,7 +89,7 @@ for ($r=1; $r < count($arr->table0); $r++) {
         $spreadsheet->getActiveSheet()->getRowDimension($row)->setRowHeight(-1);
 }
 //   $spreadsheet->getActiveSheet()->getRowDimension($row)->setRowHeight(170);
-$spreadsheet->getActiveSheet()->removeRow($baseRow+1,1);//удаление строки
+// $spreadsheet->getActiveSheet()->removeRow($baseRow+1,1);//удаление строки
 $spreadsheet->getActiveSheet()->freezePane('A8');
 
 // Save
