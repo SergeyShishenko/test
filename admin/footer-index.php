@@ -261,7 +261,9 @@ $(document).ready(function() {
         $(".add").each(function(index) {
             $(this).css("background-color", "White ");
         });
-        var Href = $("#HrefArticul").val().replace('\'', '');
+        // var Href = $("#HrefArticul").val().replace('\'', '');
+        var Href = $("#HrefArticul").val();
+        Href = Href.replace(/\\/g, '')
         var Data = "content_HrefArticul=" + Href;
 
         jQuery.ajax({
@@ -311,6 +313,7 @@ $(document).ready(function() {
         var RegExp = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
 
         if (RegExp.test(url)) {
+            // console.log(url); 
             return true;
         } else {
             return false;
