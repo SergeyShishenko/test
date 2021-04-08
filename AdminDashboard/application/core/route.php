@@ -28,6 +28,8 @@ class Route
 		if ( !empty($routes[$key+1]) )
 		{	
 			$controller_name = $routes[$key+1];
+			// $controller_name=str_replace(".", "", $controller_name);
+			// echo $controller_name; 
 		}
 		
 		// // получаем имя экшена

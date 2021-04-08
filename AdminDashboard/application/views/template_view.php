@@ -3,6 +3,7 @@
 // session_start();
 
  $dir="/www/AdminDashboard"; 
+ $bdir="/www"; 
  ?>
 <!DOCTYPE html>
 <!-- F:\YandexDisk\web\!!!Шаблон Admin - панель\Шаблон Admin - панель\!!!!!!portoadmin\themeforest-8539472-porto-admin-responsive-html5-template\Documentation -->
@@ -69,7 +70,7 @@
 			<!-- <li><a class="disabled" href="customization_styles" title="Customization & Styles">Customization & Styles</a></li> -->
 			<!-- <li><a href="source_credits" title="Source & Credits">Source & Credits</a></li> -->
 			<li><a class="disabled" href="<?php echo $dir; ?>/PHPINFO" title="PHPINFO">PHPINFO</a></li>
-			<li><a href="../shablony-dokumentov-titulnyy-kd.php" class="nav">Вернуться на сайт</a></li>
+			<li><a href="<?php echo $bdir; ?>/shablony-dokumentov-titulnyy-kd.php" class="nav">Вернуться на сайт</a></li>
 			
 		</ul>
 		<div id="documenter_copyright">Панель управления сайтом<br>

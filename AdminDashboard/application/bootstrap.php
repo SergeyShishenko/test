@@ -38,7 +38,7 @@ mysqli_free_result($result);
 // exit();
 if ($role !== "admin"){
 ?>
-	<script>document.location.href="../shablony-dokumentov-titulnyy-kd.php"</script>
+	<script>document.location.href=dirname(__FILE__)."/shablony-dokumentov-titulnyy-kd.php"</script>
 <?php
 	   exit();
 }
