@@ -1,0 +1,60 @@
+.row {
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.form-control-label {
+    color: #317eac;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+
+/* высота  input*/
+
+
+.input-group {
+    margin-bottom: 5px;
+}
+
+.input-group-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child),
+.input-group .form-control:not(:first-child):not(:last-child) {
+
+    height: 40px;
+}
+
+.input-group-addon:first-child {
+
+    height: 40px;
+}
+
+.input-group-btn:last-child>.btn,
+.input-group-btn:last-child>.btn-group {
+
+    height: 40px;
+
+}
+
+/* убрать подсветку последнего select */
+.input-group-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child),
+.input-group .form-control:not(:first-child):not(:last-child) {
+    /* border-radius: 0px; */
+    border-radius: 4px;
+}
+
+
+.file {
+    width: 200px !important;
+}
+
+.cls {
+    height: 38px !important;
+    cursor: pointer;
+}

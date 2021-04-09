@@ -56,8 +56,8 @@
 			<li><a href="<?php echo $dir; ?>/main" title="Гравная" class="" >Главная</a></li>
 			<!-- <li><a href="<?php //echo $dir; ?>/tips" title="Советы">Советы</a></li> -->
 			<li><a href="<?php echo $dir; ?>/sofiausers" title="SofiaUsers">Пользователи</a></li>			 
-			<li><a href="<?php echo $dir; ?>/kit" title="OwnerFurnitur">Комплектация фурнитуры</a></li>			 
-			
+			<li><a href="<?php echo $dir; ?>/kit" title="OwnerFurnitur">Комплектация фурнитуры</a></li>	
+			<li><a href="<?php echo $dir; ?>/addfurn" title="AddFurn">AddFurn</a></li>
 			<!-- <li><a href="<?php// echo $dir; ?>/portfolio" title="Portfolio">Portfolio</a></li> -->
 			<!-- <li><a href="html_structure" title="HTML Structure">HTML Structure</a></li> -->
 			<!-- <li><a href="css"  title="CSS">CSS</a></li> -->
