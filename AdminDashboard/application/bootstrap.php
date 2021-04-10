@@ -1,8 +1,12 @@
 <?php
 // подключаем файлы ядра
-require_once 'core/model.php';
-require_once 'core/view.php';
-require_once 'core/controller.php';
+define('PATH__CORE', dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/'); 
+require_once PATH__CORE .'configDB.php';
+include PATH__CORE .'class_SofiaUsers.php';
+// ECHO PATH__CORE .'core/model.php';
+require_once PATH__CORE .'core/model.php';
+require_once PATH__CORE .'core/view.php';
+require_once PATH__CORE .'core/controller.php';
 /*
 Здесь обычно подключаются дополнительные модули, реализующие различный функционал:
 	> аутентификацию
@@ -17,8 +21,10 @@ require_once 'core/controller.php';
 	> и др.
 */
 // echo dirname(dirname(dirname(dirname(__FILE__)))); 
-require_once dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/configDB.php';
-include dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/class_SofiaUsers.php';
+
+// require_once dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/configDB.php';
+// include dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/class_SofiaUsers.php';
+
 // include "application/more/class_SofiaUsers.php";
 // require_once dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase.php';
 // echo dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase.php';exit();
@@ -47,7 +53,8 @@ if ($role !== "admin"){
 
 // echo"</pre>";
 //  exit();
-require_once 'core/route.php';
+// require_once 'core/route.php';
+require_once PATH__CORE .'core/route.php';
 define('__ROOTR__', dirname(dirname(__FILE__)));
 // echo  __ROOTR__."<br>";
 Route::start(); // запускаем маршрутизатор
