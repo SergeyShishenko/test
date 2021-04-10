@@ -3,7 +3,6 @@
 define('PATH__CORE', dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/'); 
 require_once PATH__CORE .'configDB.php';
 include PATH__CORE .'class_SofiaUsers.php';
-// ECHO PATH__CORE .'core/model.php';
 require_once PATH__CORE .'core/model.php';
 require_once PATH__CORE .'core/view.php';
 require_once PATH__CORE .'core/controller.php';
@@ -20,15 +19,7 @@ require_once PATH__CORE .'core/controller.php';
 	> Backup
 	> и др.
 */
-// echo dirname(dirname(dirname(dirname(__FILE__)))); 
 
-// require_once dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/configDB.php';
-// include dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/class_SofiaUsers.php';
-
-// include "application/more/class_SofiaUsers.php";
-// require_once dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase.php';
-// echo dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase.php';exit();
-// $db = class_DataBase::getDB(); // Создаём объект базы данных
 $dbconn=dbconnect();
 $hash=mysqli_real_escape_string($dbconn, $_COOKIE['hash']);
 // $login= $_COOKIE['login'];

@@ -7,9 +7,7 @@ class Model_Login extends Model
 	public $err;
 	
 	public function get_data()
-	{	
-		
-		// $this->dbconn=new mysqli(DBoutput::$dbHost, DBoutput::$mysql_user, DBoutput::$mysql_password, DBoutput::$my_db); 
+	{		
 
 		if(isset($_POST['login'])){
 			$login=mysqli_real_escape_string($this->dbconn, $_POST['login']);

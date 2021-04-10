@@ -13,33 +13,33 @@
                 <tr>
                     <!-- <th class="text-right hidden-xs hidden-sm">user_sofia_id</th> -->
                     <th class="sticky-table ">id</th>
-                    <th class="sticky-table hidden-xs hidden-sm">user_login</th>
-                    <th class="sticky-table hidden-xs hidden-sm">user_mail</th>
-                    <th class="sticky-table text-right">user_role</th>                    
-                    <th class="sticky-table text-right hidden-xs">user_last_page</th>
-                    <th class="sticky-table text-right">user_sess_date_start</th>
+                    <th class="sticky-table hidden-xs hidden-sm">login</th>
+                    <th class="sticky-table hidden-xs hidden-sm">mail</th>
+                    <th class="sticky-table text-right">status</th>                    
+                    <th class="sticky-table text-right hidden-xs">last page</th>
+                    <th class="sticky-table text-right">date start</th>
                   
                 </tr>
             </thead>
             <tbody>
                 <?php
 
-                // var_dump($data);exit();
-            //    echo  count($data);exit();
+
 
 	foreach($data as $row)
 	{
 		echo 
 		'<tr>
-            <td class="">'.$row['user_sofia_id'].'</td>
-			<td>'.$row['user_login'].'</td>
-			<td class="hidden-xs hidden-sm">'.$row['user_mail'].'.</td>
-			<td class="text-right">'.$row['user_role'].'</td>			
-			<td class="text-right hidden-xs">'.$row['user_last_page'].'</td>
-			<td class="text-right hidden-xs">'.$row['user_sess_date_start'].'</td>
+            <td class="">'.$row[DBfield::$usid].'</td>
+			<td>'.$row[DBfield::$usl].'</td>
+			<td class="hidden-xs hidden-sm">'.$row[DBfield::$usm].'.</td>
+			<td class="text-right">'.$row[DBfield::$usr].'</td>			
+			<td class="text-right hidden-xs">'.$row[DBfield::$uslp].'</td>
+			<td class="text-right hidden-xs">'.$row[DBfield::$ussds].'</td>
 		
 		</tr>';
 	}
+
 	
 ?>
             </tbody>

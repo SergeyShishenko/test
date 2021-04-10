@@ -24,11 +24,11 @@
 	{
 		echo 
 		'<tr>
-            <td class="">'.$row['obj_owner_furnitur_id'].'</td>
-			<td>'.$row['obj_furnitur_prop_id'].'</td>
-			<td class="hidden-xs hidden-sm">'.$row['owner_obj_furnitur_prop_id'].'.</td>
-			<td class="text-right">'.$row['used_with_obj_furnitur_prop_id'].'</td>			
-			<td class="text-right hidden-xs">'.$row['number_in_set'].'</td>
+            <td class="">'.$row[DBfield::$oofi].'</td>
+			<td>'.$row[DBfield::$ofpi].'</td>
+			<td class="hidden-xs hidden-sm">'.$row[DBfield::$oofpi].'.</td>
+			<td class="text-right">'.$row[DBfield::$uwofpi].'</td>			
+			<td class="text-right hidden-xs">'.$row[DBfield::$nis].'</td>
 	
 		
 		</tr>';
