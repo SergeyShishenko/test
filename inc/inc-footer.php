@@ -185,6 +185,9 @@
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script> 
     <script src="./dist/js/application.js"></script> 
+    <?php if($role !="guest"){ ?>
+        <script src="./dist/js/password-check.js?<?php echo $passworCheck; ?>"></script>
+    <?php } ?>
    <script src="./dist/js/script.js?v='<?php echo $scriptVersion; ?>'"></script>
 
    <script src="./dist/js/closest.js"></script>
@@ -197,9 +200,7 @@
     <script src="./dist/js/selectcell.js?<?php echo $selectcell; ?>"></script>
     <script src="./dist/js/сontextMenu.js?<?php echo $сontextMenu; ?>"></script>
     <script src="./dist/js/vpiDB-search.js?<?php echo $vpiDBsearch; ?>"></script>
-    <?php if($role !="guest"){ ?>
-        <script src="./dist/js/password-check.js?<?php echo $passworCheck; ?>"></script>
-    <?php } ?>
+   
 	<script>
     window.bLazy = new Blazy({
         //container: \'.container\',

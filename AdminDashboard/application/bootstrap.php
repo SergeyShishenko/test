@@ -24,8 +24,8 @@ include "application/more/class_SofiaUsers.php";
 // $db = class_DataBase::getDB(); // Создаём объект базы данных
 $dbconn=dbconnect();
 $hash=$_COOKIE["hash"];
-$login= $_COOKIE['login'];
-$escape_string_login=mysqli_real_escape_string($dbconn, $login);
+// $login= $_COOKIE['login'];
+$escape_string_login=mysqli_real_escape_string($dbconn, $_COOKIE['login']);
 if (is_null($hash)){ $hash="-"; }
 $result = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LIKE '%".$hash."%'");
     if (mysqli_num_rows($result) > 0) {//есть запись   
