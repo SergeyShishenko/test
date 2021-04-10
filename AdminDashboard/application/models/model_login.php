@@ -8,14 +8,19 @@ class Model_Login extends Model
 	
 	public function get_data()
 	{	
-		// $this->dbconn=$GLOBALS['dbconn']; 
+		
 		$this->dbconn=new mysqli(DBoutput::$dbHost, DBoutput::$mysql_user, DBoutput::$mysql_password, DBoutput::$my_db); 
-		// $this->dbconn=class_DataBase::getDB();; 
-		// Здесь мы просто сэмулируем реальные данные.
-		// mysqli_close($this->dbconn);
-		// return array
+
+		if(isset($_POST['login'])){
+			$login=mysqli_real_escape_string($this->dbconn, $_POST['login']);
+		}
+		if(isset($_POST['password'])){
+			$password=mysqli_real_escape_string($this->dbconn, $_POST['password']);
+		}
+		
+	
 		if (isset($_POST['deluser'])){ 
-			$this->err['deluser']=class_SofiaUsers::deluser($this->dbconn,$_POST['login']);
+			$this->err['deluser']=class_SofiaUsers::deluser($this->dbconn,$login);
 			return $this->err;
 		}
 		if (isset($_POST['generatesubmit'])){ 
@@ -24,15 +29,14 @@ class Model_Login extends Model
 		}
 
 		if (isset($_POST['changepass'])){ 
-			$this->err['changepass']=class_SofiaUsers::changepass($this->dbconn,$_POST['login'],$_POST['password']);
+			$this->err['changepass']=class_SofiaUsers::changepass($this->dbconn,$login,$password);
 			return $this->err;
 		}
 
 		if(isset($_POST['login']) && isset($_POST['password']) && isset($_POST['newregister']))
 		{
-			// $this->err[]=class_SofiaUsers::check_login($_POST['login'],$this->dbconn);
-			// $this->err[]=class_SofiaUsers::check_pass($_POST['password']);
-			$this->err[]=class_SofiaUsers::newregister($this->dbconn,$_POST['login'],$_POST['password']);
+			
+			$this->err[]=class_SofiaUsers::newregister($this->dbconn,$login,$password);
 		
 		}
 	
