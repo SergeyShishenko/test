@@ -9,7 +9,9 @@ session_start();
 require_once (dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php'); // подключение к базе данных
  $dbconn=dbconnect();
  $mailadres=mysqli_real_escape_string($dbconn,$_POST['Email']);
- $login =$_POST['login'];
+ 
+//  $login =$_POST['login'];
+ $login =mysqli_real_escape_string($dbconn, $_POST['login']);;
  $code=sha1(generateCode(6));
 //  echo $mailadres;
 //  exit();

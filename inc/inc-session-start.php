@@ -27,9 +27,9 @@ require_once(__ROOT__.'/DATA/TABLES/configDB.php'); // подключение к
 
 $dbconn=dbconnect();
 // проверка сессии
-$hash=$_COOKIE["hash"];
-$login= $_SESSION['sess_login'];
-$escape_string_login=mysqli_real_escape_string($dbconn, $login);
+$hash=mysqli_real_escape_string($dbconn, $_COOKIE['hash']);
+// $login= $_SESSION['sess_login'];
+// $escape_string_login=mysqli_real_escape_string($dbconn, $login);
 if (is_null($hash)){ $hash="-"; }
 
 

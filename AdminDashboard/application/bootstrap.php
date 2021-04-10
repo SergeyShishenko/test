@@ -18,14 +18,15 @@ require_once 'core/controller.php';
 */
 // echo dirname(dirname(dirname(dirname(__FILE__)))); 
 require_once dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/configDB.php';
-include "application/more/class_SofiaUsers.php";
+include dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/class_SofiaUsers.php';
+// include "application/more/class_SofiaUsers.php";
 // require_once dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase.php';
 // echo dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase.php';exit();
 // $db = class_DataBase::getDB(); // Создаём объект базы данных
 $dbconn=dbconnect();
-$hash=$_COOKIE["hash"];
+$hash=mysqli_real_escape_string($dbconn, $_COOKIE['hash']);
 // $login= $_COOKIE['login'];
-$escape_string_login=mysqli_real_escape_string($dbconn, $_COOKIE['login']);
+// $escape_string_login=mysqli_real_escape_string($dbconn, $_COOKIE['login']);
 if (is_null($hash)){ $hash="-"; }
 $result = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LIKE '%".$hash."%'");
     if (mysqli_num_rows($result) > 0) {//есть запись   
