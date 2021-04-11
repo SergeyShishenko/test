@@ -30,12 +30,12 @@
 	{
 		echo 
 		'<tr>
-            <td class="">'.$row[DBfield::$usid].'</td>
-			<td>'.$row[DBfield::$usl].'</td>
-			<td class="hidden-xs hidden-sm">'.$row[DBfield::$usm].'.</td>
-			<td class="text-right">'.$row[DBfield::$usr].'</td>			
-			<td class="text-right hidden-xs">'.$row[DBfield::$uslp].'</td>
-			<td class="text-right hidden-xs">'.$row[DBfield::$ussds].'</td>
+            <td class="">'.$row[DBfield::usid].'</td>
+			<td>'.$row[DBfield::usl].'</td>
+			<td class="hidden-xs hidden-sm">'.$row[DBfield::usm].'.</td>
+			<td class="text-right">'.$row[DBfield::usr].'</td>			
+			<td class="text-right hidden-xs">'.$row[DBfield::uslp].'</td>
+			<td class="text-right hidden-xs">'.$row[DBfield::ussds].'</td>
 		
 		</tr>';
 	}

@@ -24,11 +24,11 @@
 	{
 		echo 
 		'<tr>
-            <td class="">'.$row[DBfield::$oofi].'</td>
-			<td>'.$row[DBfield::$ofpi].'</td>
-			<td class="hidden-xs hidden-sm">'.$row[DBfield::$oofpi].'.</td>
-			<td class="text-right">'.$row[DBfield::$uwofpi].'</td>			
-			<td class="text-right hidden-xs">'.$row[DBfield::$nis].'</td>
+            <td class="">'.$row[DBfield::oofi].'</td>
+			<td>'.$row[DBfield::ofpi].'</td>
+			<td class="hidden-xs hidden-sm">'.$row[DBfield::oofpi].'.</td>
+			<td class="text-right">'.$row[DBfield::uwofpi].'</td>			
+			<td class="text-right hidden-xs">'.$row[DBfield::nis].'</td>
 	
 		
 		</tr>';
