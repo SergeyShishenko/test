@@ -19,6 +19,7 @@
 
 	<title>Админ панель</title>
 
+	<meta name="description" content="<?php echo Route::$contr_name; ?>">
 	<!-- <meta name="description" content="">
 	<meta name="author" content="Okler Themes">
 	<meta name="copyright" content="Okler Themes">
