@@ -1,15 +1,16 @@
 <?php
  ///////////////
-        require_once( dirname(__DIR__) . '/Classes/DiDom/ClassAttribute.php');
-        require_once( dirname(__DIR__) . '/Classes/DiDom/Document.php');
-        require_once( dirname(__DIR__) . '/Classes/DiDom/Node.php');
-        require_once( dirname(__DIR__) . '/Classes/DiDom/DocumentFragment.php');
-        require_once( dirname(__DIR__) . '/Classes/DiDom/Element.php');
-        require_once( dirname(__DIR__) . '/Classes/DiDom/Encoder.php');
-        require_once( dirname(__DIR__) . '/Classes/DiDom/Errors.php');
-        require_once( dirname(__DIR__) . '/Classes/DiDom/Query.php');
-        require_once( dirname(__DIR__) . '/Classes/DiDom/StyleAttribute.php');
-        require_once( dirname(__DIR__) . '/Classes/DiDom/Exceptions/InvalidSelectorException.php');
+//  echo dirname(dirname(dirname(__DIR__)))  ;
+        require_once( dirname(dirname(dirname(__DIR__)))  . '/Classes/DiDom/ClassAttribute.php');
+        require_once( dirname(dirname(dirname(__DIR__)))  . '/Classes/DiDom/Document.php');
+        require_once( dirname(dirname(dirname(__DIR__)))  . '/Classes/DiDom/Node.php');
+        require_once( dirname(dirname(dirname(__DIR__)))  . '/Classes/DiDom/DocumentFragment.php');
+        require_once( dirname(dirname(dirname(__DIR__)))  . '/Classes/DiDom/Element.php');
+        require_once( dirname(dirname(dirname(__DIR__)))  . '/Classes/DiDom/Encoder.php');
+        require_once( dirname(dirname(dirname(__DIR__)))  . '/Classes/DiDom/Errors.php');
+        require_once( dirname(dirname(dirname(__DIR__)))  . '/Classes/DiDom/Query.php');
+        require_once( dirname(dirname(dirname(__DIR__)))  . '/Classes/DiDom/StyleAttribute.php');
+        require_once( dirname(dirname(dirname(__DIR__)))  . '/Classes/DiDom/Exceptions/InvalidSelectorException.php');
         use DiDom\ClassAttribute;
         use DiDom\Document;
         use DiDom\Node;

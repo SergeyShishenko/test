@@ -111,11 +111,11 @@ $(document).ready(function() {
 
         jQuery.ajax({
             type: "POST", // HTTP метод  POST или GET
-            url: "pack_parse.php", //url-адрес, по которому будет отправлен запрос
+            url: "application/more/pack_parse.php", //url-адрес, по которому будет отправлен запрос
             dataType: "text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
             data: Data, //данные, которые будут отправлены на сервер (post переменные)
             success: function(response) {
-
+                // console.log(response);
                 var arr = JSON.parse(response);
                 // var key='Furn';
                 // var variable=arr[key];
