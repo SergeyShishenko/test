@@ -114,7 +114,7 @@
 
     <button type="submit" class="button animated tada btn-primary" id="AddFurnSubmit">Добавить новую фурнитуру <span
             class="glyphicon glyphicon-plus-sign"></span></button>
-    </div>
+    <!-- </div> -->
     <!-- <div id='outputting'></div> -->
     <div class="col-md-12 col-sm-12 col-xs-12 " id='outputID'>(data-objfurnid)ID -</div>
 

@@ -74,7 +74,7 @@ $(document).ready(function() {
 
         jQuery.ajax({
             type: "POST", // HTTP метод  POST или GET
-            url: "response.php", //url-адрес, по которому будет отправлен запрос
+            url: "application/more/response.php", //url-адрес, по которому будет отправлен запрос
             dataType: "text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
             data: myData, //данные, которые будут отправлены на сервер (post переменные)
             success: function(response) {
