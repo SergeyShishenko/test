@@ -3,12 +3,8 @@
 define('__ROOT__', dirname(dirname(__FILE__))); 
 // echo dirname(__ROOT__).'/DATA/TABLES/configDB.php';
 require_once dirname(dirname(__ROOT__)).'/DATA/TABLES/configDB.php'; 
-require_once dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase.php';
 $dbconn=dbconnect();
-
 $db = class_DataBase::getDB(); // Создаём объект базы данных
-
-
 $query = "SELECT *  FROM `obj_furnitur_prop` ";
 $table = $db->select($query); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
 

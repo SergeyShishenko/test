@@ -9,7 +9,6 @@ use \PhpOffice\PhpSpreadsheet\Cell\Coordinate as Coord;
 
 // define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php' ;
-require_once dirname(dirname(__FILE__)).'/vendor/MyClass/class_DataBase.php';
 if (!isset($filename)){$filename="templates/blank.xls";}
 // echo $filename;
 // exit();
@@ -172,7 +171,7 @@ if(count($array_furn)!=0){
       // print_r( $arrIndex);
       // echo "</pre>";
       $dbconn=dbconnect();
-      $db = class_DataBase::getDB(); // Создаём объект базы данных
+      $db= class_DataBase::getDB(); // Создаём объект базы данных
       // echo '<br><table border="1" style="width: 100%;" class="tblVPI">';
       for($j=$start_num;$j<=$to;$j++) 
       {  

@@ -2,7 +2,7 @@
 //подключаем конфигурационный файл бд
 define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
-require_once dirname(dirname(__FILE__)).'/vendor/MyClass/class_DataBase.php';
+// require_once dirname(dirname(__FILE__)).'/vendor/MyClass/class_DataBase.php';
 
 $dbconn=dbconnect();
 if ($dbconn->connect_errno) {

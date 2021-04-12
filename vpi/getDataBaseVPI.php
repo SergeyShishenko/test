@@ -8,8 +8,6 @@
 	}
 
 	require_once dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php' ;
-	require_once dirname(dirname(__FILE__)).'/vendor/MyClass/class_DataBase.php';
-
 	// $dbconn=dbconnect();
 	$db = class_DataBase::getDB(); // Создаём объект базы данных
 	// echo "<pre>";

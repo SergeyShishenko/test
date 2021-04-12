@@ -1,7 +1,6 @@
 <?php
 // vpi\adding_DB_to_page.php
 require_once dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php' ;
-require_once dirname(dirname(__FILE__)).'/vendor/MyClass/class_DataBase.php';
 $db = class_DataBase::getDB(); // Создаём объект базы данных
 
 $query = "SELECT * FROM `obj_furnitur_prop`";

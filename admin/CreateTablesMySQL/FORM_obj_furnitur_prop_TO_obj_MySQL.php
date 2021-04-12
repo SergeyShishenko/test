@@ -7,7 +7,6 @@ require_once dirname(dirname(dirname(__FILE__))).'/vendor/MyClass/class_DataBase
 $dbconn=dbconnect();
 
 $db = class_DataBase::getDB(); // Создаём объект базы данных
-
 $arrForm_ID=array(200,201,202,203,204,205,206,207,208);
 $query = "SELECT *  FROM `obj_furnitur_prop` ";
 $table = $db->select($query); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
