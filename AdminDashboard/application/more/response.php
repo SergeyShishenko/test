@@ -18,18 +18,18 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
 
 
 
-    $Furn=$_POST["content_Furn"];
-    $Art=$_POST["content_Art"];
-    $Alias1=$_POST["content_Alias1"];
-    $Alias2=$_POST["content_Alias2"];
-    $Alias3=$_POST["content_Alias3"];
-    $NameFile=$_POST["content_NameFile"];    
-    $GruppId=$_POST["content_grupp_id"];
-    $Bild=$_POST["content_Bild"];
-    $Colour=$_POST["content_Colour"];
-    $Unit=$_POST["content_Unit"];
-    $HrefArticul=$_POST["content_HrefArticul"];
-    $typeFurn=$_POST["content_path_img_obj"];
+    $Furn=mysqli_real_escape_string($dbconn, $_POST["content_Furn"]);
+    $Art=mysqli_real_escape_string($dbconn, $_POST["content_Art"]);
+    $Alias1=mysqli_real_escape_string($dbconn, $_POST["content_Alias1"]);
+    $Alias2=mysqli_real_escape_string($dbconn, $_POST["content_Alias2"]);
+    $Alias3=mysqli_real_escape_string($dbconn, $_POST["content_Alias3"]);
+    $NameFile=mysqli_real_escape_string($dbconn, $_POST["content_NameFile"]);    
+    $GruppId=mysqli_real_escape_string($dbconn, $_POST["content_grupp_id"]);
+    $Bild=mysqli_real_escape_string($dbconn, $_POST["content_Bild"]);
+    $Colour=mysqli_real_escape_string($dbconn, $_POST["content_Colour"]);
+    $Unit=mysqli_real_escape_string($dbconn, $_POST["content_Unit"]);
+    $HrefArticul=mysqli_real_escape_string($dbconn, $_POST["content_HrefArticul"]);
+    $typeFurn=mysqli_real_escape_string($dbconn, $_POST["content_path_img_obj"]);
 
    if (arniculCheck ($Art,$db)){exit();}
    if (arniculCheck ($Alias1,$db)){exit();}
