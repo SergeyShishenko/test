@@ -1,9 +1,5 @@
 <?php
-//подключаем конфигурационный файл бд
-// define('__ROOT__', dirname(dirname(dirname(dirname(__FILE__))); 
 require_once(dirname(dirname(dirname(dirname(dirname(__FILE__))))).'/DATA/TABLES/configDB.php'); 
-// require_once dirname(dirname(__FILE__)).'/vendor/MyClass/class_DataBase.php';
-
 $dbconn=dbconnect();
 if ($dbconn->connect_errno) {
     printf("Не удалось подключиться: %s\n", $dbconn->connect_error);
@@ -13,11 +9,7 @@ $db = class_DataBase::getDB(); // Создаём объект базы данн�
 //проверяем $_POST["content_Furn"] на пустое значение
 if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
 {
-
     // проверка на существование артикула в Базе
-
-
-
     $Furn=mysqli_real_escape_string($dbconn, $_POST["content_Furn"]);
     $Art=mysqli_real_escape_string($dbconn, $_POST["content_Art"]);
     $Alias1=mysqli_real_escape_string($dbconn, $_POST["content_Alias1"]);
@@ -44,32 +36,33 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
                     {                    
                         $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
                         $html_id = "obj_".$id;
-                        $sql = "UPDATE `obj` SET `html_id`='$html_id' WHERE `obj_id`=$id";
+                        $sql = "UPDATE `obj` SET `html_id`='$html_id' WHERE `obj_id`='$id'";
                         if(mysqli_query($dbconn,$sql))
                             { 
-                            mysqli_query($dbconn, "UPDATE `obj` SET `html_id` = $html_id WHERE `obj`.`obj_id`=$id");
+                            mysqli_query($dbconn, "UPDATE `obj` SET `html_id` = '$html_id' WHERE `obj`.`obj_id`='$id'");
                             mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$id')");
                             mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$id')");
                            
                            if( !mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_furnitur_prop_id`, `name_furnitur_obj_prop`, `articul_furnitur_obj`, `articul_alias1`, `articul_alias2`, `articul_alias3`, `made_furnitur_obj`, `url_furnitur_obj_prop`, `obj_id`, `url_video_obj_prop`, `color_obj_prop`, `def_obj_prop`, `unit_obj_prop`, `fname_img_furn`)  
                              VALUES (NULL, '$Furn', '$Art', '$Alias1', '$Alias2', '$Alias3', '$Bild', '$HrefArticul', '$id', NULL, '$Colour', '$Furn', '$Unit', '$NameFile')")){
-                                header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.$sql." -> ".mysqli_error($dbconn));
+                                header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.mysqli_error($dbconn));
                                 // exit();
                              }
 
                             mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$id')");
                              }
                             else{//вывод ошибки                                        
-                                header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.$sql." -> ".mysqli_error($dbconn));
+                                header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.mysqli_error($dbconn));
                                 exit();
                             } 
                         
                     }else{//вывод ошибки                                        
-                        header('HTTP/1.1 500 Looks like mysql error, could not insert record2! '.$_POST["parent"]." ---".$sql." -> ".mysqli_error($dbconn));
+                        header('HTTP/1.1 500 Looks like mysql error, could not insert record2! '.mysqli_error($dbconn));
                         exit();
                     }  
 
-
+                    mysqli_close($dbconn);
+                    unset($GLOBALS['dbconn']); 
     echo $html_id;
 }
 

@@ -18,8 +18,16 @@ class Model_Login extends Model
 		
 	
 		if (isset($_POST['deluser'])){ 
-			$this->err['deluser']=class_SofiaUsers::deluser($this->dbconn,$login);
-			return $this->err;
+			if(class_SofiaUsers::check_dellogin($login)){				
+				$this->err['deluser']=array("Нельзя удалить");
+				return $this->err;
+			}else{
+				// $this->err['deluser']=array("Удалить");
+				// return $this->err;
+				$this->err['deluser']=class_SofiaUsers::deluser($this->dbconn,$login);
+				return $this->err;
+			}
+			
 		}
 		if (isset($_POST['generatesubmit'])){ 
 			$this->err['generateCode']=array(class_SofiaUsers::generateCode(8));
