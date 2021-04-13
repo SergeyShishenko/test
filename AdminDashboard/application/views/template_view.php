@@ -25,8 +25,12 @@
     <link rel="stylesheet" href="<?php echo $dir; ?>/css/animate.min.css">
     <link rel="stylesheet" href="<?php echo $dir; ?>/css/addfurn.css">
     <?php }	?>
+   
     <link rel="stylesheet" href="<?php echo $dir; ?>/css/doc.css" media="screen">
-
+ <?php if(Route::$contr_name=="login") { ?>
+    <link rel="stylesheet" href="<?php echo $dir; ?>/css/skeleton.css">
+   
+    <?php }	?>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $dir; ?>/favicon.png" />
 
 
@@ -82,10 +86,10 @@
 
 <script src="<?php echo $dir; ?>/js/jquery.js"></script>
     <?php if(Route::$contr_name=="addfurn") { ?>
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
-    <script src="<?php echo $dir; ?>/js/addfurn.js"></script>
-   
-    
+    <script src="<?php echo $dir; ?>/js/addfurn.js"></script>    
+    <?php }?>
+    <?php if(Route::$contr_name=="login") { ?>
+    <script src="<?php echo $dir; ?>/js/seourl.js"></script>    
     <?php }?>
 </body>
 
