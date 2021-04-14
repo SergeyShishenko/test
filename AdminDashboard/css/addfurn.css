@@ -1,6 +1,6 @@
 .row {
 
-    margin-left: 15px;
+    margin-left: 0px;
     margin-right: 15px;
 
 }
@@ -58,3 +58,22 @@ textarea {
     height: 38px !important;
     cursor: pointer;
 }
+div.image
+  {
+  /* width: 200px; */
+  width: 30%;
+  height: 228px;
+  /* border: 1px solid Red; */
+  float: right;
+  }
+img
+  {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+  }
+  .sell{
+    float: right;
+    width: 70%;
+  }

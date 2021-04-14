@@ -79,6 +79,8 @@ $(document).ready(function() {
             data: myData, //данные, которые будут отправлены на сервер (post переменные)
             success: function(response) {
                 $("#outputID").text(response);
+              
+                
 
             },
             error: function(xhr, ajaxOptions, thrownError) {
@@ -127,7 +129,7 @@ $(document).ready(function() {
                 insertRes(arr, 'Unit');
                 insertRes(arr, 'NameFile');
                 $("#outputID").text(arr['err']);
-
+                document.getElementById('parseim').src=arr['NameFile'];
 
 
                 $.each(arr, function(key, value) {

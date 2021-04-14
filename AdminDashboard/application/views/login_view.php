@@ -1,4 +1,5 @@
-<h1>Регистрация нового пользователя</h1>
+<section class="row" id="login">
+<h2 class="panel-title">Регистрация нового пользователя</h2>
 <p>
 <form action="" method="post">
     <table class="login">
@@ -69,7 +70,7 @@
         <div class="clearfix"></div>
     </div>
 </div>
-
+</section>
 <script>
 // запрет повторной отправки формы
 if (window.history.replaceState) {

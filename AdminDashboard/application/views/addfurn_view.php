@@ -1,7 +1,6 @@
+
 <section class="row" id="addfurn">
-
-
-
+<h2 class="panel-title">Добавление фурнитуры в базу данных</h2>
     <div class="input-group">
         <span class="input-group-addon cls">X</span>
         <input type="text" value="Светильник штанга для гардероба, под светодиодную ленту 2500 мм" name="add_Furn"
@@ -35,7 +34,8 @@
         <input type="text" value="./dist/filesdb/images/test.png" name="add_NameFile" class="text add form-control"
             size="150" placeholder="Имя файла изображения" id="NameFile" title="Имя файла изображения">
     </div>
-
+    <div class="image"><img id="parseim" src="../dist/filesdb/images/test.png"></div>
+    <div class="sell">
     <select id="grupp_id" name="add_grupp_id" class="text add form-control"
         title="Номер группы (1-МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ,2-ПЕТЛИ для ФАСАДОВ, 3-КРЕПЕЖ И МЕТИЗЫ, 4-ШТАНГИ МЕБЕЛЬНЫЕ) ">
         <option value="1">МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ</option>
@@ -62,8 +62,8 @@
         <option value="22">ДОВОДЧИКИ для ПОЛОТЕН ДВЕРНЫХ</option>
         <option value="23">УПОРЫ НАПОЛЬНЫЕ и НАСТЕННЫЕ</option>
     </select>
-
-
+    </div>
+    <div class="sell">
     <select id="path_img_obj" name="add_path_img_obj" class="text add form-control"
         title="тип(директория: shtangi, svet, metizy) фурнитуры в папках thumbs,pagevpi,carousel">
         <option value="shtangi">Штанги</option>
@@ -71,7 +71,8 @@
         <option value="metizy">Метизы</option>
         <option value="other" selected>Разное</option>
     </select>
-
+    </div>
+    <div class="sell">
     <input type="text" list="listBild" id="Bild" class="text add form-control" placeholder="Производитель">
     <datalist id="listBild" name="add_Bild" title="Производитель">
         <option value="HAFELE">HAFELE</option>
@@ -79,7 +80,8 @@
         <option value="МАКМАРТ">МАКМАРТ</option>
         <option value="BLUM">BLUM</option>
     </datalist>
-
+    </div>
+    <div class="sell">
     <input type="text" list="listColour" id="Colour" class="text add form-control" placeholder="Цвет">
     <datalist id="listColour" name="add_Colour" title="Цвет">
         <option value="алюминий">алюминий</option>
@@ -89,15 +91,17 @@
         <option value="металл">металл</option>
         <option value="Платиново-серый (RAL 7036)">Платиново-серый (RAL 7036)</option>
     </datalist>
-
+    </div>
+    <div class="sell">
     <input type="text" list="listUnit" id="Unit" class="text add form-control" placeholder="Ед.измерения">
     <datalist id="listUnit" name="add_Unit" title="Ед.измерения">
         <option value="шт.">шт.</option>
         <option value="комплектов">комплектов</option>
         <option value="м">м</option>
     </datalist>
+    </div>
 
-
+    
     <div class="input-group">
         <span class="input-group-addon cls">X</span>
         <input type="text" value name="add_href_articul" class="text add form-control" size="150"
