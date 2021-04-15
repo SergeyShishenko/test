@@ -40,11 +40,16 @@ if(isset($_POST["content_HrefArticul"]) && strlen($_POST["content_HrefArticul"])
         $pq6=parse_url($url)['scheme'] . '://';
         $document = new Document($url, true);
 
+//        $arr_res['err']="На ".$pq5." Информации не найдено!".$document;
+// echo json_encode($arr_res);exit();
         switch (true) {
             case (strpos($pq5, 'hafeleshop')!== false):
                 // echo "HAFELE", "<br>";
                 $arr_res['Bild']='HAFELE';
                 $posts = $document->find('.content-product-main-header' );
+
+                echo json_encode($posts);exit();
+                
                 $pq=$posts[0]->text();// наименование  
                 $arr_res['Furn']=trim($pq);       
                 $posts =  $document->find('span.articles_text')[0]->text();        
@@ -123,7 +128,7 @@ if(isset($_POST["content_HrefArticul"]) && strlen($_POST["content_HrefArticul"])
 
             default:
                 //  echo "Информации не найдено!";
-                $arr_res['err']="Информации не найдено!";
+                $arr_res['err']="На ".$pq5." Информации не найдено!";
              break;
         }
 

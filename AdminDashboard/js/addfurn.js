@@ -117,7 +117,7 @@ $(document).ready(function() {
             dataType: "text", // Тип данных,  которые пришлет сервер в ответ на запрос ,например, HTML, json
             data: Data, //данные, которые будут отправлены на сервер (post переменные)
             success: function(response) {
-                // console.log(response);
+                console.log(response);
                 var arr = JSON.parse(response);
                 // var key='Furn';
                 // var variable=arr[key];
