@@ -25,11 +25,11 @@
     <link rel="stylesheet" href="<?php echo $dir; ?>/css/animate.min.css">
     <link rel="stylesheet" href="<?php echo $dir; ?>/css/addfurn.css">
     <?php }	?>
-   
+
     <link rel="stylesheet" href="<?php echo $dir; ?>/css/doc.css" media="screen">
- <?php if(Route::$contr_name=="login") { ?>
+    <?php if(Route::$contr_name=="login") { ?>
     <link rel="stylesheet" href="<?php echo $dir; ?>/css/skeleton.css">
-   
+
     <?php }	?>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $dir; ?>/favicon.png" />
 
@@ -79,17 +79,69 @@
     }
     </script>
 
-    <div id="documenter_content">      
+    <div id="documenter_content">
         <?php include __ROOTR__.'/application/views/'.$content_view; ?>
     </div>
 
 
-<script src="<?php echo $dir; ?>/js/jquery.js"></script>
+    <script src="<?php echo $dir; ?>/js/jquery.js"></script>
     <?php if(Route::$contr_name=="addfurn") { ?>
-    <script src="<?php echo $dir; ?>/js/addfurn.js"></script>    
+    <script src="<?php echo $dir; ?>/js/addfurn.js"></script>
     <?php }?>
     <?php if(Route::$contr_name=="login") { ?>
-    <script src="<?php echo $dir; ?>/js/seourl.js"></script>    
+    <script src="<?php echo $dir; ?>/js/seourl.js"></script>
+    <?php }?>
+    <?php if(Route::$contr_name=="main") {
+        $firstName="Вася";
+        $lastName="Пупкин";
+         ?>
+        <!-- <script src="<?php //echo $dir; ?>/js/main.js"></script> -->
+        <script id="scrt">
+        'use strict';
+
+        class User {  
+            
+            #firstName;
+            #lastName;
+            constructor(firstName, lastName) {
+            this.#firstName = firstName;
+            this.#lastName = lastName;
+            }
+        
+            // геттер
+            get fullName() {
+            return `${this.#firstName} ${this.#lastName}`;
+            }
+        
+            // сеттер
+            // set fullName(newValue) {
+            //   [this.firstName, this.lastName] = newValue.split(' ');
+            // }
+        
+            // вычисляемое название метода
+            ["test".toUpperCase()]() {
+                console.log("PASSED!");
+            }
+
+            static createGuest() {
+                return new User("Гость", "Сайта");
+            }
+        
+        };
+            let user = new User("<?php echo $firstName;?>","<?php echo $lastName;?>");      
+            let guest = User.createGuest();
+            let description = document.getElementById("scrt");
+
+        </script>
+        <script>            
+            description.remove();
+            console.log(typeof(user));
+            user.TEST(); // PASSED!        
+            console.log(user.fullName); // Иван Петров        
+            console.log(guest.fullName);
+            console.log(guest.firstName);
+            console.log(Object.getOwnPropertyNames(User.prototype));
+        </script>
     <?php }?>
 </body>
 
