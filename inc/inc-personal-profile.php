@@ -154,6 +154,24 @@
 
                         <?php }?>
                         <div class="divider"></div>
+
+                        <?php if (($role !="guest")&&($role !="user") ){?>
+
+                            <div class="card card-body">
+                            <?php 
+                            $client  = @$_SERVER['HTTP_CLIENT_IP'];
+                            $forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+                            $remote  = @$_SERVER['REMOTE_ADDR'];
+                            
+                            if(filter_var($client, FILTER_VALIDATE_IP)) $ip = $client;
+                            elseif(filter_var($forward, FILTER_VALIDATE_IP)) $ip = $forward;
+                            else $ip = $remote;
+                            
+                            echo "<p>$ip</p>";
+                            ?>
+                            </div>
+
+                        <?php }?>
                         <!-- <div class="gnc-notifications-item__menu ">
                                 <div class="gnc-notifications-item__menu-kebab ">
                                     <svg width="24" height="24"><path d="M0 0h24v24H0z" fill="none">                                        
