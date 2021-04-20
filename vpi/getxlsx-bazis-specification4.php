@@ -164,6 +164,8 @@ if(count($array_furn)!=0){
       // $Product=0;
       $Order = $sheet->getCellByColumnAndRow(2, $from_num)->getValue();
       $Product = $sheet->getCellByColumnAndRow(2, $from_num+1)->getValue();
+      $Product =explode("/", $Product)[0];
+     
       // echo "Order " . $Order. "<br>"; 
       // echo "Product " . $Product. "<br>"; 
       // echo "<pre>";
