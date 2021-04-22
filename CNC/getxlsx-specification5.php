@@ -4,14 +4,28 @@
 require_once '../vendor/autoload.php';
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xls;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 // use \PhpOffice\PhpSpreadsheet\Cell\DataType as DType;
 use \PhpOffice\PhpSpreadsheet\Cell\Coordinate as Coord;
+
+
 
 // define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php' ;
 if (!isset($filename)){$filename="templates/blank.xls";}
+// if (!isset($filename)){$filename="CNC/test/2533_8,9,338 (пом14).xlsx";}
+
+// $path_parts = pathinfo('/www/htdocs/inc/lib.inc.php');
+
+
+// $path_parts = pathinfo($filename);
+
+// echo '<b>dirname: </b>',$path_parts['dirname'], "<br>";
+// echo '<b>basename: </b>',$path_parts['basename'], "<br>";
+// echo '<b>extension: </b>',$path_parts['extension'], "<br>";
+// echo '<b>filename: </b>',$path_parts['filename'], "<br>"; // начиная с PHP 5.2.0
 // echo $filename;
-// exit();
+ //exit();
 # Указываем путь до файла .xlsx
 
 $File = $_SERVER['DOCUMENT_ROOT'] . "/www/vpi/$filename";//localhost
@@ -19,8 +33,14 @@ if (!file_exists($File)) {
   $File = $_SERVER['DOCUMENT_ROOT'] . "/vpi/$filename";//site
 }
 
-echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
-$reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
+// echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
+
+
+
+// $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xls();
+$reader = getReaderTypeFromExtension($filename);// подбор класса по расширению
+
+
 $reader->setReadDataOnly(true); 
 $Excel =  $reader->load($File);;
 //Далее формируем массив из всех листов Excel файла с помощью цикла:
@@ -369,6 +389,45 @@ if ( is_array($keyword) ) {
 
 
 
+function getReaderTypeFromExtension($filename)
+    {
+        $pathinfo = pathinfo($filename);
+        if (!isset($pathinfo['extension'])) {
+            return null;
+        }
+
+        switch (strtolower($pathinfo['extension'])) {
+            case 'xlsx': // Excel (OfficeOpenXML) Spreadsheet
+            case 'xlsm': // Excel (OfficeOpenXML) Macro Spreadsheet (macros will be discarded)
+            case 'xltx': // Excel (OfficeOpenXML) Template
+            case 'xltm': // Excel (OfficeOpenXML) Macro Template (macros will be discarded)
+                // return 'Xlsx';
+                return new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
+            case 'xls': // Excel (BIFF) Spreadsheet
+            case 'xlt': // Excel (BIFF) Template
+                // return 'Xls';
+                return new \PhpOffice\PhpSpreadsheet\Reader\Xls();
+            case 'ods': // Open/Libre Offic Calc
+            case 'ots': // Open/Libre Offic Calc Template
+                return 'Ods';
+            case 'slk':
+                return 'Slk';
+            case 'xml': // Excel 2003 SpreadSheetML
+                return 'Xml';
+            case 'gnumeric':
+                return 'Gnumeric';
+            case 'htm':
+            case 'html':
+                return 'Html';
+            case 'csv':
+                // Do nothing
+                // We must not try to use CSV reader since it loads
+                // all files including Excel files etc.
+                return null;
+            default:
+                return null;
+        }
+    }
 
 
 
