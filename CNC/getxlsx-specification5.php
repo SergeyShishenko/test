@@ -12,8 +12,18 @@ use \PhpOffice\PhpSpreadsheet\Cell\Coordinate as Coord;
 
 // define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php' ;
-if (!isset($filename)){$filename="templates/blank.xls";}
-// if (!isset($filename)){$filename="CNC/test/2533_8,9,338 (пом14).xlsx";}
+// if (!isset($filename)){$filename="templates/blank.xls";}
+// $File = $_SERVER['DOCUMENT_ROOT'] . "/www/vpi/$filename";//localhost
+// if (!file_exists($File)) {
+//   $File = $_SERVER['DOCUMENT_ROOT'] . "/vpi/$filename";//site
+// }
+
+
+if (!isset($filename)){$filename="test/2533_8,9,338 (пом14).xlsx";}
+$File = $_SERVER['DOCUMENT_ROOT'] . "/www/CNC/$filename";//localhost
+if (!file_exists($File)) {
+  $File = $_SERVER['DOCUMENT_ROOT'] . "/CNC/$filename";//site
+}
 
 // $path_parts = pathinfo('/www/htdocs/inc/lib.inc.php');
 
@@ -28,10 +38,7 @@ if (!isset($filename)){$filename="templates/blank.xls";}
  //exit();
 # Указываем путь до файла .xlsx
 
-$File = $_SERVER['DOCUMENT_ROOT'] . "/www/vpi/$filename";//localhost
-if (!file_exists($File)) {
-  $File = $_SERVER['DOCUMENT_ROOT'] . "/vpi/$filename";//site
-}
+
 
 // echo '<input type="hidden" id="currfile" value="'.$fileDrop.'" form="frm">' ;
 
@@ -67,14 +74,14 @@ $highestColumnIndex = Coord::columnIndexFromString($highestColumn); // e.g. 5
 // echo $highestColumnIndex .' Максимальная литера по счёту<br>'; // начало с 1
 $row_num=0;
 $cell_num=0;
-$Order=0;
-$Product=0;
-// $head=false;
+// $Order=0;
+// $Product=0;
+// // $head=false;
 
-$array = array();
-$furniture = array();
-// $doc = array();
-$arrIndex = array();
+// $array = array();
+// $furniture = array();
+// // $doc = array();
+// $arrIndex = array();
 // $arr_keyword=array("САМОРЕЗ", "ШУРУП");
     
 // echo '<table border="1">';
@@ -90,55 +97,60 @@ foreach ($rowIterator as $row) {
   // echo '<td>'.$row_num.'</td>';
 	foreach ($cellIterator as $cell) {   
     $cell_num++;
-        $pos_panel = strpos($cell->getCalculatedValue(), "Спецификация на панели");
-        $pos_furn = strpos($cell->getCalculatedValue(), "Спецификация на крепеж");
-        $pos_Doc = strpos($cell->getCalculatedValue(), "док. 5000304-01-001 ВЕДОМОСТЬ ФУРНИТУРЫ");
+    echo $cell->getCalculatedValue()." ";
+        // $pos_panel = strpos($cell->getCalculatedValue(), "Спецификация на панели");
+        // $pos_furn = strpos($cell->getCalculatedValue(), "Спецификация на крепеж");
+        // $pos_Doc = strpos($cell->getCalculatedValue(), "док. 5000304-01-001 ВЕДОМОСТЬ ФУРНИТУРЫ");
 
-        if ($pos_panel !== false) { 
-           $array[] = 'Panel-'.($row_num-3).'-'.$cell->getCoordinate();                   
-          } else if ($pos_furn !== false) {
-            $array[] = 'Furniture-'.($row_num-3).'-'.$cell->getCoordinate(); 
-            $head=$row_num+1;
-          } else if ($pos_Doc !== false) {
-            $array[] = 'Doc-'.($row_num).'-'.$cell->getCoordinate();  
-          }
+        // if ($pos_panel !== false) { 
+        //    $array[] = 'Panel-'.($row_num-3).'-'.$cell->getCoordinate();                   
+        //   } else if ($pos_furn !== false) {
+        //     $array[] = 'Furniture-'.($row_num-3).'-'.$cell->getCoordinate(); 
+        //     $head=$row_num+1;
+        //   } else if ($pos_Doc !== false) {
+        //     $array[] = 'Doc-'.($row_num).'-'.$cell->getCoordinate();  
+        //   }
 
-          if($head == $row_num){
-            // $articul=strpos($cell->getCalculatedValue(), "Артикул");
+        //   if($head == $row_num){
+        //     // $articul=strpos($cell->getCalculatedValue(), "Артикул");
 
-            switch ($cell->getCalculatedValue()) {
-              case "Заказ":
-                $arrIndex[0] =get_colomn_index($cell); //1
-                  break;
-              case "Изделие":
-                $arrIndex[1]=get_colomn_index($cell); //2
-                  break;
-              case "СЕ":
-                $arrIndex[2]=get_colomn_index($cell); //3
-                  break;
-              case "Поз.":
-                $arrIndex[3]=get_colomn_index($cell); //4
-                  break;
-              case "Артикул":
-                $arrIndex[4]=get_colomn_index($cell); //5               
-                  break;
-              case "Наименование":
-                $arrIndex[5]=get_colomn_index($cell); //6
-                  break;
-              case "Кол-во":
-                $arrIndex[6]=get_colomn_index($cell); //8
-                  break;
-              case "Примечание":
-                $arrIndex[7]=get_colomn_index($cell); //9
-                  break;             
-            }
-          }
+        //     switch ($cell->getCalculatedValue()) {
+        //       case "Заказ":
+        //         $arrIndex[0] =get_colomn_index($cell); //1
+        //           break;
+        //       case "Изделие":
+        //         $arrIndex[1]=get_colomn_index($cell); //2
+        //           break;
+        //       case "СЕ":
+        //         $arrIndex[2]=get_colomn_index($cell); //3
+        //           break;
+        //       case "Поз.":
+        //         $arrIndex[3]=get_colomn_index($cell); //4
+        //           break;
+        //       case "Артикул":
+        //         $arrIndex[4]=get_colomn_index($cell); //5               
+        //           break;
+        //       case "Наименование":
+        //         $arrIndex[5]=get_colomn_index($cell); //6
+        //           break;
+        //       case "Кол-во":
+        //         $arrIndex[6]=get_colomn_index($cell); //8
+        //           break;
+        //       case "Примечание":
+        //         $arrIndex[7]=get_colomn_index($cell); //9
+        //           break;             
+        //     }
+        //   }
 
       // echo '<td>'.$cell->getValue().'</td>';
 
-	}//$cell	
+  }//$cell
+
+  echo "<br>";
 	// echo "</tr>";
 }//$row
+
+exit();
 // echo "</table>";
 
   $array_panel = array();
@@ -164,7 +176,7 @@ foreach ($rowIterator as $row) {
         }elseif (strpos($array[$i], "Doc") !== false){
           $array_doc[]=$from_num.'-'.$last_num;
           }
-    }
+}
 // echo "<pre>";
 // print_r( $array);
 // echo "panel";
