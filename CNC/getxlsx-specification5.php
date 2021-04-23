@@ -10,7 +10,8 @@ use \PhpOffice\PhpSpreadsheet\Cell\Coordinate as Coord;
 
 require_once dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php' ;
 
-if (!isset($filename)){$filename="test/2533_8,9,338 (пом14).xlsx";}
+//if (!isset($filename)){$filename="test/2533_8,9,338 (пом14).xlsx";}
+if (!isset($filename)){$filename="test/1111_6_Спецификации.xls";}
 $File = $_SERVER['DOCUMENT_ROOT'] . "/www/CNC/$filename";//localhost
 if (!file_exists($File)) {
   $File = $_SERVER['DOCUMENT_ROOT'] . "/CNC/$filename";//site

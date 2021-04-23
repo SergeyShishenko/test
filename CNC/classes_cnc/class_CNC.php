@@ -216,9 +216,11 @@ class class_CNC
         $this->pathfile=$fileCNC;
         $this->rand_folder = $folder;
         $this->$arrStr=file($fileCNC);
-        $this->DL = $this->findVal($this->getStrByNum(2),"DL");
-        $this->DH = $this->findVal($this->getStrByNum(2),"DH");
-        $this->DS = $this->findVal($this->getStrByNum(2),"DS");        
+        $num=2;
+        if(is_null($this->findVal($this->getStrByNum($num),"DL"))){$num=3;}
+        $this->DL = $this->findVal($this->getStrByNum($num),"DL");
+        $this->DH = $this->findVal($this->getStrByNum($num),"DH");
+        $this->DS = $this->findVal($this->getStrByNum($num),"DS");        
 
     } 
 
