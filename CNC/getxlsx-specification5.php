@@ -36,7 +36,7 @@ $highestColumnIndex = Coord::columnIndexFromString($highestColumn); // e.g. 5
 if (strpos($sheet->getCellByColumnAndRow(3, 1)->getCalculatedValue(), "СЕ/пСЕ")==false){
   exit();
     }
-//echo strpos($sheet->getCellByColumnAndRow(3, 1)->getCalculatedValue(), "СЕ/пСЕ"),"<br>";//№ СЕ/пСЕ
+
 $list=[];
  $list[]=array("№  Заказа", "№  Изделия", "№ СЕ/пСЕ" , "№ Детали" , "Длина" , "Ширина" , "Толщина");
 for ($row = 2; $row <= $highestRow; ++$row) {
@@ -75,12 +75,6 @@ foreach ($list as $fields) {
 }
 
 exit();
-
-
-function get_colomn_index($cell){
-  preg_match('/^[A-Z]+/', $cell->getCoordinate(), $matches); 
-  return Coord::columnIndexFromString($matches[0]);
-}
 
 function getReaderTypeFromExtension($filename) {
     $pathinfo = pathinfo($filename);
