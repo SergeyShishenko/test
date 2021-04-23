@@ -36,13 +36,16 @@ if (strpos($sheet->getCellByColumnAndRow(3, 1)->getCalculatedValue(), "СЕ/пС
   exit();
     }
 //echo strpos($sheet->getCellByColumnAndRow(3, 1)->getCalculatedValue(), "СЕ/пСЕ"),"<br>";//№ СЕ/пСЕ
-
+$list=[];
+ $list[]=array("№  Заказа", "№  Изделия", "№ СЕ/пСЕ" , "№ Детали" , "Длина" , "Ширина" , "Толщина");
 for ($row = 2; $row <= $highestRow; ++$row) {
   // for ($col = 1; $col <= $highestColumnIndex; ++$col) {
   //     $value = $sheet->getCellByColumnAndRow($col, $row)->getCalculatedValue();
   //     echo $value." | "; 
   // }
+ 
   if ( $sheet->getCellByColumnAndRow(4, $row)->getCalculatedValue()) {   
+
       echo $sheet->getCellByColumnAndRow(1, $row)->getCalculatedValue()." | "; 
       echo $sheet->getCellByColumnAndRow(2, $row)->getCalculatedValue()." | "; 
       echo $sheet->getCellByColumnAndRow(3, $row)->getCalculatedValue()." | "; 
@@ -50,10 +53,26 @@ for ($row = 2; $row <= $highestRow; ++$row) {
       echo $sheet->getCellByColumnAndRow(10, $row)->getCalculatedValue()." | "; 
       echo $sheet->getCellByColumnAndRow(11, $row)->getCalculatedValue()." | "; 
       echo $sheet->getCellByColumnAndRow(12, $row)->getCalculatedValue();   
-  echo "<br>";
+      echo "<br>";
+      $list[]=array(
+        $sheet->getCellByColumnAndRow(1, $row)->getCalculatedValue(),
+        $sheet->getCellByColumnAndRow(2, $row)->getCalculatedValue(),
+        $sheet->getCellByColumnAndRow(3, $row)->getCalculatedValue(),
+        $sheet->getCellByColumnAndRow(4, $row)->getCalculatedValue(),
+        $sheet->getCellByColumnAndRow(10, $row)->getCalculatedValue(),
+        $sheet->getCellByColumnAndRow(11, $row)->getCalculatedValue(),
+        $sheet->getCellByColumnAndRow(12, $row)->getCalculatedValue()
+      );
   }
 }
 // №  Заказа ; №  Изделия ; № СЕ/пСЕ ; № Детали ; Длина ; Ширина ; Толщина 
+
+$fp = fopen('file.csv', 'w');
+
+foreach ($list as $fields) {
+    fputcsv($fp, $fields,";");
+}
+
 exit();
 
 
