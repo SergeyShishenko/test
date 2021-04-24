@@ -10,15 +10,15 @@ use \PhpOffice\PhpSpreadsheet\Cell\Coordinate as Coord;
 require_once dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php' ;
 
 //if (!isset($filename)){$filename="test/2533_8,9,338 (пом14).xlsx";}
-if (!isset($filename)){$filename="test/1111_6_Спецификации.xls";}
-$File = $_SERVER['DOCUMENT_ROOT'] . "/www/CNC/$filename";//localhost
-if (!file_exists($File)) {
-  $File = $_SERVER['DOCUMENT_ROOT'] . "/CNC/$filename";//site
-}
+// if (!isset($filename)){$filename="test/1111_6_Спецификации.xls";}
+// $File = $_SERVER['DOCUMENT_ROOT'] . "/www/CNC/$filename";//localhost
+// if (!file_exists($File)) {
+//   $File = $_SERVER['DOCUMENT_ROOT'] . "/CNC/$filename";//site
+// }
 $getReaderType = getReaderTypeFromExtension($filename);// подбор класса по расширению
 $reader = $getReaderType[0];// подбор класса по расширению
 $reader->setReadDataOnly(true); 
-$Excel =  $reader->load($File);;
+$Excel =  $reader->load($filename);;
 
 // Устанавливаем индекс активного листа
 $Excel->setActiveSheetIndex(0);
@@ -35,7 +35,7 @@ $highestColumnIndex = Coord::columnIndexFromString($highestColumn); // e.g. 5
 
 if (strpos($sheet->getCellByColumnAndRow(3, 1)->getCalculatedValue(), "СЕ/пСЕ")==false){
     return false;
-  exit();
+//   exit();
     }
 
 $list=[];
@@ -83,7 +83,7 @@ if (file_exists("temp/".$namecsvfile)) {
     echo "Файл $namecsvfile НЕ существует!";
     return false;
 }
-exit();
+// exit();
 
 function getReaderTypeFromExtension($filename) {
     $pathinfo = pathinfo($filename);

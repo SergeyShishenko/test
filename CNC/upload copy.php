@@ -60,8 +60,11 @@ if (!isset($_FILES[$input_name])) {
  
 	foreach ($files as $file) {
 		$error = $success = '';
- 		$extension=strtolower($parts['extension']);
-
+		//$error = $file;
+		$pathinfo = pathinfo($file[0]);
+ 		// $extension=strtolower($parts['extension']);
+ 		$extension=strtolower($pathinfo['extension']);
+		 $error = $extension;break;
 		// Проверим на ошибки загрузки.
 		if (!empty($file['error']) || empty($file['tmp_name'])) {
 			$error = 'Не удалось загрузить файл.';
@@ -75,17 +78,18 @@ if (!isset($_FILES[$input_name])) {
 			$parts = pathinfo($name);
 			
 			if (empty($name) || empty($parts['extension'])) {
-				$error = 'Недопустимый тип файла';
-			} elseif ($extension!='cnc'&& $extension!='csv') {
-				$error = 'Недопустимый тип файла';
+				$error = 'Недопустимый тип файла1';
+			} elseif ($extension!='cnc' && $extension!='csv' && $extension!='xls' && $extension!='xlsx') {
+				$error = 'Недопустимый тип -> '.$extension;
 				// $error = false;
 			} elseif (!empty($allow) && !in_array($extension, $allow)) {
-				$error = 'Недопустимый тип файла';
+				$error = 'Недопустимый тип файла2';
 				// $error = false;
 			} elseif (!empty($deny) && in_array($extension, $deny)) {
-				$error = 'Недопустимый тип файла';
+				$error = 'Недопустимый тип файла3';
 				// $error = false;
 			} else {
+				$error = $file['tmp_name'];break;
 				// Перемещаем файл в директорию.
 				if($extension=='csv'){				
 					array_map('unlink', glob($path.'*.[cC][sS][vV]'));					
@@ -94,14 +98,14 @@ if (!isset($_FILES[$input_name])) {
 				if($extension=='xls' || $extension=='xlsx' ){
 					$filename=$file['tmp_name'];
 					// $data[0]['name']=$filename; 
-					// $error = $filename;
+					 
 				//ECHO $filename; EXIT();
 					$fxls= include "getxlsx-specification6.php";
 					if($fxls){
 					array_map('unlink', glob($path.'*.[cC][sS][vV]'));
 					rename("temp/".$fxls, $path . $fxls);					
 					//move_uploaded_file("test/1111_6_Спецификации.xls", $path . $name);	
-					break;
+					 break;
 					}
 				}
 				
@@ -121,9 +125,9 @@ if (!isset($_FILES[$input_name])) {
 
 		}
 		if (!empty($error)) {
-			//  $data[] = '<p style="color: red">' . $error . '</p>';  
+			  $data[] = '<p style="color: red">' . $error . '</p>';  
 		
-			// $data[] = null;  
+			 ///$data[] = null;  
 			
 		}
 	}
