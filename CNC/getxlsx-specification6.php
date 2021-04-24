@@ -77,10 +77,10 @@ foreach ($list as $fields) {
 fclose($fp);
 
 if (file_exists("temp/".$namecsvfile)) {
-    echo "Файл $namecsvfile существует!";
+    // echo "Файл $namecsvfile существует!";
     return $namecsvfile;
 }else{
-    echo "Файл $namecsvfile НЕ существует!";
+    // echo "Файл $namecsvfile НЕ существует!";
     return false;
 }
 // exit();

@@ -1,4 +1,5 @@
 <?php
+ 
 // Название <input type="file">
 $input_name = 'file';
  
@@ -95,17 +96,24 @@ if (!isset($_FILES[$input_name])) {
 					array_map('unlink', glob($path.'*.[cC][sS][vV]'));					
 					
 				}
-				if($extension=='xls' || $extension=='xlsx' ){					
-					$filename=__DIR__ ."/temp/" . $name;					
-					move_uploaded_file($file['tmp_name'], $filename);
-					$fxls= include "getxlsx-specification6.php";
-					if($fxls){
-						array_map('unlink', glob($path.'*.[cC][sS][vV]'));
-						rename(__DIR__ ."/temp/".$fxls, $path . $fxls);
-						unlink($filename);	
-						$success = 'Файл «' . $name . '» успешно загружен.';
-					}
-				}elseif (move_uploaded_file($file['tmp_name'], $path . $name)) {
+				if($extension=='xls' || $extension=='xlsx' ){
+					// $filename=$file['tmp_name'];
+					// $data[0]['name']=$filename; 
+					  $error = $parts['basename'];
+					  
+					//ECHO $filename; EXIT();
+
+					// $fxls= include "getxlsx-specification6.php";
+					// if($fxls){
+					// array_map('unlink', glob($path.'*.[cC][sS][vV]'));
+					// rename("temp/".$fxls, $path . $fxls);					
+					// ///// move_uploaded_file("test/1111_6_Спецификации.xls", $path . $name);	
+					// break;
+					// }
+				}
+				
+
+				if (move_uploaded_file($file['tmp_name'], $path . $name)) {
 					// Далее можно сохранить название файла в БД и т.п.
 					$success = 'Файл «' . $name . '» успешно загружен.';
 				} else {
@@ -120,9 +128,9 @@ if (!isset($_FILES[$input_name])) {
 
 		}
 		if (!empty($error)) {
-			 // $data[] = '<p style="color: red">' . $error . '</p>';  
+			  $data[] = '<p style="color: red">' . $error . '</p>';  
 		
-			 $data[] = null;  
+			// $data[] = null;  
 			
 		}
 	}
