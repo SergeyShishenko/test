@@ -5,18 +5,19 @@
          * Массив строк файла
          * @var Array $arrAllCSV
          */
-        private $arrAllCSV ; 
-        private $CSV ; 
+        private $arrAllCSV=[] ; 
+        private $CSV=[]; 
 
         /**
          * @param mixed $fileCSV имя файла csv  test_numpart.csv
          */
 
         public function __construct($fileCSV) {  
+            $data=[];
+            $this->CSV=glob($fileCSV.'/*.[cC][sS][vV]')[0];   
             
-            $this->CSV=glob($fileCSV.'/*.[cC][sS][vV]')[0];      
         //    echo count($this->CSV);
-           if (count($this->CSV)>0){
+           if ($this->isarr()){
                 $row = 1;    
                 if (($handle = fopen($this->CSV, "r")) !== FALSE) {
                     while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {  // строка  до 1000 символов    
@@ -29,7 +30,7 @@
                             $data[5]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[5])));// № Детали
                             $data[6]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[6])));// № Детали
                         
-                            $this->arrAllCSV[]=$data;         
+                            $this->arrAllCSV=$data;         
                     }
                     $row++;
                     }
@@ -46,7 +47,15 @@
         public function   getName(){
             return $this->CSV;
 
-        }   
+        }  
+        private function   isarr(){
+            if (is_array($this->CSV)) {
+                return true;
+            }  
+            return false;
+        }  
+        
+        
 
     }
 ?>

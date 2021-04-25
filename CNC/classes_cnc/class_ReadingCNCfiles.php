@@ -69,7 +69,7 @@ class class_ReadingCNCfiles
 
     public function checkAllCNC(){
 
-        //$data;
+        $data=[];
         $j=0;
 
         for ($i=0; $i < count($this->arrFile); $i++) {             

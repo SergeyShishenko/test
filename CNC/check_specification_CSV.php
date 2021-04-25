@@ -6,17 +6,17 @@
 $pathFile='uploads/'.$_POST['path'];
 // $pathFile='files/2578_4_numpart';
 $arr = include "specificationCSV.php";
+
 $arrAllCSV[] = $arr[0];
 // echo count($arrAllCSV[0])."<br>";
 // var_dump($arrAllCSV);
 $report="";
 // $report=var_dump($arr);
 $arrCHPU[] = include "specificationCHPU.php";
+//var_dump($arrCHPU);
 if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
     
-    
-    
-    $report .= "<tr><td align='center'><b>". basename($arr[1]) . "</b></td></tr>" ;
+    $report .= "<tr><td align='center'><b>". basename($arr[1]) ."</b></td></tr>" ;
     foreach ($arrCHPU[0] as $var2){
         $div_count= substr_count($var2['name'], '_');// количество "_"
         $find=false;
@@ -35,7 +35,7 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
             if (strcasecmp($var3, $varSTR4) == 0) {
                 $report .= "<span style='color:green'> - Размеры совпадают" . "</span> </td></tr>";
             }else{
-                $report .= "<span style='color:red'> - ".$var3." Размеры неверные" . "</span> </td></tr>";
+                $report .= "<span style='color:red'> - Размеры неверные" . "</span> </td></tr>";
             }
             $find=true;
             }
@@ -51,8 +51,4 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
         }
 }
 // echo '<tr><td>'.$report.'</td></tr>';
-
-
-  echo $report;
-//echo json_encode($arrAllCSV[0], JSON_UNESCAPED_UNICODE);
-
+echo $report;

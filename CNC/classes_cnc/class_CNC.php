@@ -123,7 +123,7 @@ class class_CNC
 	 * Массив строк файла
 	 * @var Array $arrStr
 	 */
-    private $arrStr ; 
+    private $arrStr=[] ; 
 
     /**
 	 * Массив существующих инструментов W#81 - диаметр сверла: #1002=8  и тип: #1001=1 сквозное/глухое  1/0
@@ -215,12 +215,12 @@ class class_CNC
 
         $this->pathfile=$fileCNC;
         $this->rand_folder = $folder;
-        $this->$arrStr=file($fileCNC);
+        $this->arrStr=file($fileCNC);
         $num=2;
         if(is_null($this->findVal($this->getStrByNum($num),"DL"))){$num=3;}
         $this->DL = $this->findVal($this->getStrByNum($num),"DL");
         $this->DH = $this->findVal($this->getStrByNum($num),"DH");
-        $this->DS = $this->findVal($this->getStrByNum($num),"DS");        
+        $this->DS = $this->findVal($this->getStrByNum($num),"DS");         
 
     } 
 
@@ -229,7 +229,7 @@ class class_CNC
      * @return string
     */ 
     public function getStrByNum($i){
-        return $this->$arrStr[$i];
+        return $this->arrStr[$i];
     }
 
     /**
@@ -276,7 +276,7 @@ class class_CNC
     */
     public function outputCNC(){
        
-        for($i=0; $i < count($this->$arrStr); $i++) {
+        for($i=0; $i < count($this->arrStr); $i++) {
             // echo "\n";
             // echo $i."~";
             echo $this->getStrByNum($i);
@@ -317,9 +317,9 @@ class class_CNC
 
     public function findNumByStr($substr){
        
-        for($i=0; $i < count($this->$arrStr); $i++) {
-           // echo $this->$arrStr[$i]."\n";
-            if (strstr($this->$arrStr[$i], $substr)){
+        for($i=0; $i < count($this->arrStr); $i++) {
+           // echo $this->arrStr[$i]."\n";
+            if (strstr($this->arrStr[$i], $substr)){
                 // echo "{$key} = {$innerarr[$j+1]} \n"; 
                return "Номер строки ".$i;
             }
@@ -327,57 +327,57 @@ class class_CNC
     }
     public function getArr(){       
            
-               return $this->$arrStr;           
+               return $this->arrStr;           
          
     }
 
     public function checkCNC(){
        
-        for($i=0; $i < count($this->$arrStr); $i++) { 
+        for($i=0; $i < count($this->arrStr); $i++) { 
             
             if ($this->currentRow >= 0){
                 $this->currentRow++;
             }
                   
-            if (strpos($this->$arrStr[$i], "SIDE#1{") !== false){
+            if (strpos($this->arrStr[$i], "SIDE#1{") !== false){
                 $this->currentBlock = "SIDE#1{";
                     $this->currentRow=0;            
             }
-            if (strpos($this->$arrStr[$i], "SIDE#2{") !== false){
+            if (strpos($this->arrStr[$i], "SIDE#2{") !== false){
                 $this->currentBlock = "SIDE#2{";
                     $this->currentRow=0;             
             }
-            if (strpos($this->$arrStr[$i], "SIDE#3{") !== false){
+            if (strpos($this->arrStr[$i], "SIDE#3{") !== false){
                 $this->currentBlock = "SIDE#3{";
                     $this->currentRow=0;             
             }
-            if (strpos($this->$arrStr[$i], "SIDE#4{") !== false){
+            if (strpos($this->arrStr[$i], "SIDE#4{") !== false){
                 $this->currentBlock = "SIDE#4{"; 
                     $this->currentRow=0;            
             }
-            if (strpos($this->$arrStr[$i], "SIDE#5{") !== false){
+            if (strpos($this->arrStr[$i], "SIDE#5{") !== false){
                 $this->currentBlock = "SIDE#5{";
                     $this->currentRow=0;             
             }
-            if (strpos($this->$arrStr[$i], "SIDE#6{") !== false){
+            if (strpos($this->arrStr[$i], "SIDE#6{") !== false){
                 $this->currentBlock = "SIDE#6{"; 
                     $this->currentRow=0;            
             }
 
             if ($this->currentBlock == "SIDE#1{") {                
-                    if (strpos($this->$arrStr[$i], "W#81{") !== false){ // Сверление                 
-                       $this->checkDepth1($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
+                    if (strpos($this->arrStr[$i], "W#81{") !== false){ // Сверление                 
+                       $this->checkDepth1($this->findVal($this->arrStr[$i],"#3"),$this->findVal($this->arrStr[$i],"#1002"),$i);
                     }
-                    if (strpos($this->$arrStr[$i], "W#1050{") !== false){ // Пила по Х    
+                    if (strpos($this->arrStr[$i], "W#1050{") !== false){ // Пила по Х    
                         // #8510=-50      Координата X начальной точки
                         // #8517=2387+50  Координата X конечной точки             
-                       $this->checkSaw($this->findVal($this->$arrStr[$i],"#8510"),$this->findVal($this->$arrStr[$i],"#8517"),$i);
+                       $this->checkSaw($this->findVal($this->arrStr[$i],"#8510"),$this->findVal($this->arrStr[$i],"#8517"),$i);
                     }
             } // if "SIDE#1{"
 
             if ($this->currentBlock == "SIDE#3{" || $this->currentBlock == "SIDE#4{" || $this->currentBlock == "SIDE#5{" || $this->currentBlock == "SIDE#6{"  ){              
-                    if (strpos($this->$arrStr[$i], "W#81{") !== false){ 
-                        $this->checkDepth3($this->findVal($this->$arrStr[$i],"#3"),$this->findVal($this->$arrStr[$i],"#1002"),$i);
+                    if (strpos($this->arrStr[$i], "W#81{") !== false){ 
+                        $this->checkDepth3($this->findVal($this->arrStr[$i],"#3"),$this->findVal($this->arrStr[$i],"#1002"),$i);
                      }
             }           
         
@@ -398,15 +398,15 @@ class class_CNC
         if ($diam == 5 && $depth < -35 ){ 
 
             $this->printErr($depth, $diam, 35, 1);  //Ошибка #1: Проверка глубины сверления в торцах деталей. Максимальная глубина сверления     
-            $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-35', $this->$arrStr[$i]);
-            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
+            $this->arrStr[$i] = str_replace('#3='.$depth, '#3=-35', $this->arrStr[$i]);
+            $this->arrStr[$i] = substr_replace($this->arrStr[$i], 'W$=changed   ', strpos($this->arrStr[$i], '#', 2), 0);
             return; 
         } 
         if ($diam == 8 && $depth < -39 ){
 
             $this->printErr($depth, $diam, 39, 1);  //Ошибка #1: Проверка глубины сверления в торцах деталей. Максимальная глубина сверления     
-            $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->$arrStr[$i]);
-            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
+            $this->arrStr[$i] = str_replace('#3='.$depth, '#3=-39', $this->arrStr[$i]);
+            $this->arrStr[$i] = substr_replace($this->arrStr[$i], 'W$=changed   ', strpos($this->arrStr[$i], '#', 2), 0);
             return; 
             
         } 
@@ -419,30 +419,30 @@ class class_CNC
         // if (!$this->printWarning($i)){
             if (abs($diam)  < 4 ){                 
                     $this->printErr($depth, $diam, 1.5 , 4);  //Ошибка #4: Проверка на правильность установки наколки    
-                    $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-1.5', $this->$arrStr[$i]); // новая глубина
-                    $this->$arrStr[$i] = str_replace('#1002='.$this->findVal($this->$arrStr[$i],"#1002"), '#1002=4', $this->$arrStr[$i]); // новый диаметр
-                    $this->$arrStr[$i] = str_replace('#1001='.$this->findVal($this->$arrStr[$i],"#1001"), '#1001=1', $this->$arrStr[$i]); // новый тип сверления - сквозное
-                    $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);// комментарий 
+                    $this->arrStr[$i] = str_replace('#3='.$depth, '#3=-1.5', $this->arrStr[$i]); // новая глубина
+                    $this->arrStr[$i] = str_replace('#1002='.$this->findVal($this->arrStr[$i],"#1002"), '#1002=4', $this->arrStr[$i]); // новый диаметр
+                    $this->arrStr[$i] = str_replace('#1001='.$this->findVal($this->arrStr[$i],"#1001"), '#1001=1', $this->arrStr[$i]); // новый тип сверления - сквозное
+                    $this->arrStr[$i] = substr_replace($this->arrStr[$i], 'W$=changed   ', strpos($this->arrStr[$i], '#', 2), 0);// комментарий 
                     return; 
             } 
             if (($this->DS-3) < abs($depth) && abs($depth) < $this->DS ){ 
                     $this->printErr($depth, $diam, ($this->DS-3), 2);  //Ошибка #2: Проверка на максимальную глубину сверления в пласть детали    
-                    $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS-3), $this->$arrStr[$i]);
-                    $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
+                    $this->arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS-3), $this->arrStr[$i]);
+                    $this->arrStr[$i] = substr_replace($this->arrStr[$i], 'W$=changed   ', strpos($this->arrStr[$i], '#', 2), 0);
                     return; 
             } 
 
             if (abs($depth) >= $this->DS && abs($depth) < ($this->DS+4)) { 
                     $this->printErr($depth, $diam, ($this->DS+4), 3); //Ошибка #3: Проверка на чистовой выход сквозного сверления    
-                    $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
-                    $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
+                    $this->arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->arrStr[$i]);
+                    $this->arrStr[$i] = substr_replace($this->arrStr[$i], 'W$=changed   ', strpos($this->arrStr[$i], '#', 2), 0);
                     return; 
             } 
 
             if (abs($depth) > ($this->DS+4)){ 
                     $this->printErr($depth, $diam, ($this->DS+4), 3);  //Ошибка #3: Проверка на чистовой выход сквозного сверления     
-                    $this->$arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->$arrStr[$i]);
-                    $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);
+                    $this->arrStr[$i] = str_replace('#3='.$depth, '#3=-'.($this->DS+4), $this->arrStr[$i]);
+                    $this->arrStr[$i] = substr_replace($this->arrStr[$i], 'W$=changed   ', strpos($this->arrStr[$i], '#', 2), 0);
                     return; 
             } 
 
@@ -458,18 +458,18 @@ class class_CNC
             // #8510=-50      Координата X начальной точки
             // #8517=2387+50  Координата X конечной точки                 
             $this->printErrSaw(5);  //Ошибка #5: Проверка на вход/выход пилы   
-            $this->$arrStr[$i] = str_replace('#8510=0', '#8510=-50', $this->$arrStr[$i]); // новый вход
-            $this->$arrStr[$i] = str_replace('#8517='.$this->DL, '#8517=l+50', $this->$arrStr[$i]); // новый выход           
-            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);// комментарий 
+            $this->arrStr[$i] = str_replace('#8510=0', '#8510=-50', $this->arrStr[$i]); // новый вход
+            $this->arrStr[$i] = str_replace('#8517='.$this->DL, '#8517=l+50', $this->arrStr[$i]); // новый выход           
+            $this->arrStr[$i] = substr_replace($this->arrStr[$i], 'W$=changed   ', strpos($this->arrStr[$i], '#', 2), 0);// комментарий 
             return; 
         } 
         if ( $xi == $this->DL && $xf == 0 ){   
             // #8510=-50      Координата X начальной точки
             // #8517=2387+50  Координата X конечной точки                 
             $this->printErrSaw(5);  //Ошибка #5: Проверка на вход/выход пилы   
-            $this->$arrStr[$i] = str_replace('#8510='.$this->DL, '#8510=l+50', $this->$arrStr[$i]); // новый вход
-            $this->$arrStr[$i] = str_replace('#8517=0', '#8517=-50', $this->$arrStr[$i]); // новый выход           
-            $this->$arrStr[$i] = substr_replace($this->$arrStr[$i], 'W$=changed   ', strpos($this->$arrStr[$i], '#', 2), 0);// комментарий 
+            $this->arrStr[$i] = str_replace('#8510='.$this->DL, '#8510=l+50', $this->arrStr[$i]); // новый вход
+            $this->arrStr[$i] = str_replace('#8517=0', '#8517=-50', $this->arrStr[$i]); // новый выход           
+            $this->arrStr[$i] = substr_replace($this->arrStr[$i], 'W$=changed   ', strpos($this->arrStr[$i], '#', 2), 0);// комментарий 
             return; 
         } 
 
@@ -492,8 +492,8 @@ class class_CNC
 
     private function printWarning($diam, $i){  
 
-        $x=$this->findVal($this->$arrStr[$i],"#1"); //значение по х
-        $y=$this->findVal($this->$arrStr[$i],"#2"); //значение по н
+        $x=$this->findVal($this->arrStr[$i],"#1"); //значение по х
+        $y=$this->findVal($this->arrStr[$i],"#2"); //значение по н
         $m = 7; // минимальный отступ
 
         if ($x < $m || $x > ($this->DL - $m) || $y < $m || $y > ($this->DH - $m)){
@@ -505,11 +505,11 @@ class class_CNC
         }
         if ($diam >= 4 ){
             // Массив существующих инструментов W#81 - диаметр сверла: #1002=8  и тип: #1001=1 сквозное/глухое  1/0
-            $in=$diam.':'.$this->findVal($this->$arrStr[$i],"#1001");
+            $in=$diam.':'.$this->findVal($this->arrStr[$i],"#1001");
           if(!in_array($in, $this->arrToolsW81Side1)) {
 
             $numerr="2";
-            if ($this->findVal($this->$arrStr[$i],"#1001")=== "0" ) {$through=' глухое ';}else{$through=' сквозное '; } 
+            if ($this->findVal($this->arrStr[$i],"#1001")=== "0" ) {$through=' глухое ';}else{$through=' сквозное '; } 
             $this->warning.= "Поверхность ".substr($this->currentBlock, -2,1) 
             .", стр. ". $this->currentRow 
             ."<span class='numerr warning' data-tooltip='w".$numerr."'>{Предупреждение #".$numerr."} &Oslash; ".$diam." -".$through."; Нет такого инструмента </span><span id='warning'> &#9888;</span> <br>"; 
@@ -531,8 +531,8 @@ class class_CNC
             mkdir($dir, 0777, true);
         }
 
-        // file_put_contents($dir.$this->nameFile() , implode("\n", $this->$arrStr ));
-        file_put_contents($dir.$this->nameFile() , implode("", $this->$arrStr ));
+        // file_put_contents($dir.$this->nameFile() , implode("\n", $this->arrStr ));
+        file_put_contents($dir.$this->nameFile() , implode("", $this->arrStr ));
     }
 
 }// end class
