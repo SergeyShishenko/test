@@ -81,6 +81,7 @@ $(document).ready(function() {
 						$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');// предпоследний массив 
 						printErr(data);
 						$('#dircnc').val(data[0]);// имя папки
+						console.log("data[0] "+data[0]);
 						checkSpecification(data[0]);
 					}
 				});
@@ -100,8 +101,8 @@ $(document).ready(function() {
 		var lastKey = Object.keys(data).reverse()[0];// последний элемент с ошибками					
 		var lastValue = data[lastKey];
 		// console.log("Object.keys(data) "+Object.keys(data));
-		// console.log("Object.entries(data) "+Object.entries(data));//!!!
-		// console.log("Object.values(data) "+Object.values(data));//!!!
+		console.log("Object.entries(data) "+Object.entries(data));//!!!
+		console.log("Object.values(data) "+Object.values(data));//!!!
 		
 		if (typeof(lastValue) !== "undefined" && lastValue !== "" && lastValue !== null){
 			// $('#tableoutput').append("<tr><td><h2>Найдены ошибки в "+lastValue.length +" файлах!</h2></td></tr>")

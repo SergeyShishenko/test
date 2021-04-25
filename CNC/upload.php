@@ -91,7 +91,7 @@ if (!isset($_FILES[$input_name])) {
 					// 	unlink($file);
 						
 					// }
-					array_map('unlink', glob($path.'*.[cC][sS][vV]'));
+					$success = 'unlink '.array_map('unlink', glob($path.'*.[cC][sS][vV]'));
 				}
 				
 

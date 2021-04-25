@@ -81,6 +81,7 @@ $(document).ready(function() {
 						$('#file-name-holder').append("Загружено "+(Object.keys(data).length-2)+' файлов<br>');// предпоследний массив 
 						printErr(data);
 						$('#dircnc').val(data[0]);// имя папки
+						
 						checkSpecification(data[0]);
 					}
 				});
