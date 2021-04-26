@@ -28,6 +28,7 @@ if ($_POST["dircnc"] !==""){
 	$rand_folder=rand();
 	$folder_current=$rand_folder;
 	$path = __DIR__ . '/uploads/'.$folder_current.'/';	
+
 	mkdir($path, 0777, true);	
 }
 

@@ -47,6 +47,7 @@ class class_ReadingCNCfiles
     private function addObj(){
         for ($i=0; $i < count($this->arrNameFile); $i++) { 
             $this->arrFile[$i]=new class_CNC( $this->folderCNC."/".$this->arrNameFile[$i],$this->rand_folder);
+            // $this->arrFile[$i]=new class_CNC( $this->folderCNC.$this->arrNameFile[$i],$this->rand_folder);
 
         }
 

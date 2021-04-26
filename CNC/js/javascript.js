@@ -207,7 +207,7 @@ $(document).ready(function() {
 
 // проверка спецификации
 	function checkSpecification(folder) {	
-
+console.log("checkSpecification( "+folder+" )");
 		var formData = new FormData();
 		formData.append('path',folder );//folder = '2578_4_SE'
 		// alert(formData.get('path'));
