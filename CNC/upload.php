@@ -1,7 +1,11 @@
 <?php
   //include "classes_cnc/Logger.php";
- include '../Classes/Logger.php';
-//  Logger::$PATH = dirname(__FILE__);
+//  include '../Classes/Logger.php';
+//  require_once dirname(__DIR__ ). '/Classes/Logger.php';
+ 
+//   Logger::$PATH = dirname(__FILE__);
+//   Logger::$PATH = __DIR__;
+//   Logger::$PATH = dirname(__FILE__);
 
 // Название <input type="file">
 $input_name = 'file';

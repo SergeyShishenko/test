@@ -1,5 +1,7 @@
 <?php
 // http://easy-code.ru/lesson/logger-php
+//namespace Classes;
+
 class Logger 
 {
     //статические переменные
