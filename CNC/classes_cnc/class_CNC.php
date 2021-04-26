@@ -215,6 +215,8 @@ class class_CNC
 
         $this->pathfile=$fileCNC;
         $this->rand_folder = $folder;
+        Logger::$PATH = dirname(__FILE__);
+        Logger::getLogger('log_class_CNC')->log($fileCNC);
         $this->arrStr=file($fileCNC);
         $num=2;
         if(is_null($this->findVal($this->getStrByNum($num),"DL"))){$num=3;}

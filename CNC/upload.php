@@ -1,5 +1,8 @@
 <?php
- 
+  //include "classes_cnc/Logger.php";
+ include '../Classes/Logger.php';
+//  Logger::$PATH = dirname(__FILE__);
+
 // Название <input type="file">
 $input_name = 'file';
  

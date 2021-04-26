@@ -2,7 +2,7 @@
 
 class class_ReadingCNCfiles
 {
-    private $arrNameFile ;
+    private $arrNameFile=[] ;
     private $arrFile ;
     private $folderCNC ;
     private $rand_folder ;
