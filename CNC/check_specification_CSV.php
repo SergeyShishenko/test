@@ -1,12 +1,9 @@
 <?php
 // ВЫЗОВ ИЗ CNC\js\javascript.js -> function checkSpecification(folder)
-// !other\CNC\check_specification_CSV.php
+// CNC\check_specification_CSV.php
 
-// $pathFile='files/1';
-
-// include dirname(dirname(__DIR__ )). '/Classes/Logger.php';
-// Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
-// Logger::getLogger('log_class_CNC')->log($fileCNC);
+include_once dirname(__DIR__ ). '/Classes/Logger.php';
+Logger::$PATH = dirname(__FILE__)."/LOGS";
 
 $pathFile='uploads/'.$_POST['path'];
 // $pathFile='files/2578_4_numpart';
@@ -55,5 +52,5 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
         $report .= "<tr><td  align='center'>Нет файлов для проверки!</td></tr>";
         }
 }
-// echo '<tr><td>'.$report.'</td></tr>';
+Logger::getLogger('log_class_CNC')->log("return CNC\check_specification_CSV.php ");
 echo $report;

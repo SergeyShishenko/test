@@ -1,5 +1,5 @@
 <?php 
-
+include_once dirname(dirname(__DIR__ )). '/Classes/Logger.php';
 class class_ReadingCNCfiles
 {
     private $arrNameFile=[] ;
@@ -9,19 +9,27 @@ class class_ReadingCNCfiles
 
     public function __construct($folderCNC) {
         $this->folderCNC = $folderCNC;
+      
         $this->rand_folder = explode( '/', $folderCNC )[1];
+
+        Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
+        Logger::getLogger('log_class_CNC')->log("class_ReadingCNCfiles folderCNC -> ". $folderCNC);
+
         if (file_exists($folderCNC)) {
         $this->arrNameFile=scandir($folderCNC);
        
         array_shift($this->arrNameFile);// удаление  '.'
         array_shift($this->arrNameFile);// удаление  '..'
+
+        $this->arrNameFile=$this->array_preg_diff($this->arrNameFile, '/[cC][sS][vV]/');  
+        $this->addObj();
             
         }else{
             echo "Директория не найдена<br>";
         }
 
-         $this->arrNameFile=$this->array_preg_diff($this->arrNameFile, '/[cC][sS][vV]/');  
-        $this->addObj();
+        //  $this->arrNameFile=$this->array_preg_diff($this->arrNameFile, '/[cC][sS][vV]/');  
+        // $this->addObj();
     } 
 
     private function array_preg_diff($a, $p) {
@@ -46,7 +54,7 @@ class class_ReadingCNCfiles
 
     private function addObj(){
         for ($i=0; $i < count($this->arrNameFile); $i++) { 
-            $this->arrFile[$i]=new class_CNC( $this->folderCNC."/".$this->arrNameFile[$i],$this->rand_folder);
+            $this->arrFile[$i]=new class_CNC( $this->folderCNC."/".$this->arrNameFile[$i],$this->rand_folder,"class_ReadingCNCfiles");
             // $this->arrFile[$i]=new class_CNC( $this->folderCNC.$this->arrNameFile[$i],$this->rand_folder);
 
         }

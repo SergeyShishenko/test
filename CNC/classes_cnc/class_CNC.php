@@ -211,13 +211,14 @@ class class_CNC
 
 
 
-    public function __construct($fileCNC, $folder) {
+    public function __construct($fileCNC, $folder, $caller) {
 
         $this->pathfile=$fileCNC;
         $this->rand_folder = $folder;
       
         Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
-        Logger::getLogger('log_class_CNC')->log($fileCNC);
+        Logger::getLogger('log_class_CNC')->log("caller -> ".$caller);
+        Logger::getLogger('log_class_CNC')->log("fileCNC -> ".$fileCNC);
 
         $this->arrStr=file($fileCNC);
         $num=2;
