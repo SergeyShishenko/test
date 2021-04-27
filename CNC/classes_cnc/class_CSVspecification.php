@@ -36,7 +36,7 @@
                             $data[5]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[5])));// № Детали
                             $data[6]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[6])));// № Детали
                         
-                            $this->arrAllCSV=$data;         
+                            $this->arrAllCSV[]=$data;         
                     }
                     $row++;
                     }

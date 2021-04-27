@@ -197,9 +197,10 @@ class class_CNC
      * SIDE#6{
      * }SIDE
      *
-     * @var Sthing
+     * @var String
      */
-    private $currentBlock="start"; 
+    private $currentBlock='start'; 
+    // private $currentBlock; 
 
     private $currentRow=-1; 
 
@@ -303,8 +304,10 @@ class class_CNC
         $arr = explode($separator, $row);
          $arr =array_map(function($p) { return explode($this->mod,$p); }, $arr);
 
-         foreach ($arr as $k => $innerarr) {         
-            for($j=0; $j < count($innerarr); $j++) {
+        //  foreach ($arr as $k => $innerarr) {         
+         foreach ($arr as $innerarr) {  
+            $arr_inn[] = $innerarr;       
+            for($j=0; $j < count($arr_inn); $j++) {
                 if ($innerarr[$j]==$key){
                     // echo "{$key} = {$innerarr[$j+1]} \n"; 
                    return $innerarr[$j+1];
@@ -399,8 +402,8 @@ class class_CNC
      }
 
     //  &#9888;	Внимание!
-// проверка торцы
-    private function checkDepth3($depth,$diam,$i): void {        
+// проверка торцы: void
+    private function checkDepth3($depth,$diam,$i) {        
         if ($diam == 5 && $depth < -35 ){ 
 
             $this->printErr($depth, $diam, 35, 1);  //Ошибка #1: Проверка глубины сверления в торцах деталей. Максимальная глубина сверления     
@@ -481,7 +484,7 @@ class class_CNC
 
     }
 
-    private function printErr($depth, $diam, $edit, $numerr){ 
+    private function printErr($depth, $diam, $edit, $numerr): void{ 
         $chdiam="";
         if ($numerr == 4){$chdiam='; &Oslash 4';}
         $this->err.= "Поверхность ".substr($this->currentBlock, -2,1) 

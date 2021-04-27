@@ -23,6 +23,7 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
         $div_count= substr_count($var2['name'], '_');// количество "_"
         $find=false;
         foreach ($arrAllCSV[0] as $str) {  
+            Logger::getLogger('log_class_CNC')->log("str ".$str);
             if ($div_count==1){
             $var1=$str[2]."_".$str[3];  
             }elseif($div_count===0){
@@ -30,7 +31,7 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
             }
             $varSTR4=$str[4]." x ".$str[5]." x ".$str[6];
             $var3=$var2['DL'] ." x ".$var2['DH']." x ".$var2['DS'];
-            
+            Logger::getLogger('log_class_CNC')->log("var1=".$var1."  "."var2['name'] ".$var2['name']);
             if (strcasecmp($var1, $var2['name']) == 0) {
                 // $report .= "<tr><td align='center'>". $var1 . "ok! ". $var3. ' AND '.$varSTR4;
                 $report .= "<tr><td align='center'><b>". $var1 ."</b>" ;
