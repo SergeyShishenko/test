@@ -1,7 +1,12 @@
 <?php
+// ВЫЗОВ ИЗ CNC\js\javascript.js -> function checkSpecification(folder)
 // !other\CNC\check_specification_CSV.php
 
 // $pathFile='files/1';
+
+// include dirname(dirname(__DIR__ )). '/Classes/Logger.php';
+// Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
+// Logger::getLogger('log_class_CNC')->log($fileCNC);
 
 $pathFile='uploads/'.$_POST['path'];
 // $pathFile='files/2578_4_numpart';

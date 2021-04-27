@@ -1,5 +1,5 @@
 <?php
-include dirname(dirname(__DIR__ )). '/Classes/Logger.php';
+include_once dirname(dirname(__DIR__ )). '/Classes/Logger.php';
 /**
 *               5
 *       *   *   *   *   *
@@ -265,7 +265,8 @@ class class_CNC
     }
 
     public function getSpecification(){
-        $var2=basename($this->pathfile);        
+        $var2=basename($this->pathfile);  
+        Logger::getLogger('log_class_CNC')->log("getSpecification -> ".$var2);      
         $this->arrSpecification['name']=substr($var2,0,strrpos($var2, '_')); // строка до последнего "_"
         $this->arrSpecification['DL']=round(trim($this->DL), 1);
         $this->arrSpecification['DS']=round(trim($this->DS), 1);

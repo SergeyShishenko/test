@@ -1,4 +1,6 @@
 <?php
+// include_once dirname(dirname(__DIR__ )). '/Classes/Logger.php';
+
     class class_CSVspecification
     {
             /**
@@ -14,10 +16,14 @@
 
         public function __construct($fileCSV) {  
             $data=[];
-            $this->CSV=glob($fileCSV.'/*.[cC][sS][vV]')[0];   
+            $this->CSV=glob($fileCSV.'/*.[cC][sS][vV]')[0];  
             
+            // Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
+            Logger::getLogger('log_class_CNC')->log("CSV = ".$this->CSV);
+            Logger::getLogger('log_class_CNC')->log("exists()= ".$this->exists());
         //    echo count($this->CSV);
-           if ($this->isarr()){
+           if ($this->exists()){
+           Logger::getLogger('log_class_CNC')->log("exists()= ".$this->exists());
                 $row = 1;    
                 if (($handle = fopen($this->CSV, "r")) !== FALSE) {
                     while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {  // строка  до 1000 символов    
@@ -48,8 +54,9 @@
             return $this->CSV;
 
         }  
-        private function   isarr(){
-            if (is_array($this->CSV)) {
+        private function   exists(){
+            
+            if (file_exists($this->CSV)) {
                 return true;
             }  
             return false;
