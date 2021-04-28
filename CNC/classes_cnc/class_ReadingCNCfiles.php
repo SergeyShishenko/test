@@ -23,7 +23,7 @@ class class_ReadingCNCfiles
         // array_shift($this->arrNameFile);// удаление  '.'
         // array_shift($this->arrNameFile);// удаление  '..'
 
-        $this->arrNameFile=$this->array_preg_diff($this->arrNameFile, '/[cC][sS][vV]/');  
+        // $this->arrNameFile=$this->array_preg_diff($this->arrNameFile, '/[cC][sS][vV]/');  
         // $this->arrNameFile=$this->array_preg_diff($this->arrNameFile, '/[^\.$]/');  
         $this->addObj();
             
