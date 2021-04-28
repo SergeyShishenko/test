@@ -217,7 +217,7 @@ class class_CNC
         $this->pathfile=$fileCNC;
         $this->rand_folder = $folder;
             Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
-            Logger::getLogger('log_class_CNC')->log("caller -> ".$caller);
+           // Logger::getLogger('log_class_CNC')->log("caller -> ".$caller);
 
         if (is_file($fileCNC)){      
             
@@ -549,6 +549,15 @@ class class_CNC
 
         // file_put_contents($dir.$this->nameFile() , implode("\n", $this->arrStr ));
         file_put_contents($dir.$this->nameFile() , implode("", $this->arrStr ));
+    }
+
+    public function getReaderTypeFromExtension($filename) {
+        $pathinfo = pathinfo($filename);
+        if (!isset($pathinfo['extension'])) {
+            return null;
+        }else{
+            return $pathinfo['extension']; 
+        }
     }
 
 }// end class

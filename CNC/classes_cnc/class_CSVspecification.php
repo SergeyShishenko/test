@@ -1,6 +1,6 @@
 <?php
 // include_once dirname(dirname(__DIR__ )). '/Classes/Logger.php';
-
+// вызов из CNC\specificationCSV.php
     class class_CSVspecification
     {
             /**
@@ -20,7 +20,7 @@
             
             // Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
             Logger::getLogger('log_class_CNC')->log("CSV = ".$this->CSV);
-            Logger::getLogger('log_class_CNC')->log("exists()= ".$this->exists());
+          //  Logger::getLogger('log_class_CNC')->log("exists()= ".$this->exists());
         //    echo count($this->CSV);
            if ($this->exists()){
            Logger::getLogger('log_class_CNC')->log("exists()= ".$this->exists());

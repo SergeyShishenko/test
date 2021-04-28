@@ -9,7 +9,7 @@ $pathFile='uploads/'.$_POST['path'];
 
 $arr = include "specificationCSV.php";
 
-$arrAllCSV[] = $arr[0];
+$arrAllCSV[] = $arr[0];// CSV file
 
 $report="";
 

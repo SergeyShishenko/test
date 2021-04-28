@@ -1,4 +1,5 @@
-<?php 
+<?php
+// вызов из CNC\check_specification_CSV.php
 include_once dirname(__DIR__ ). '/Classes/Logger.php';
 Logger::$PATH = dirname(__FILE__)."/LOGS";
 include "classes_cnc/class_CSVspecification.php";

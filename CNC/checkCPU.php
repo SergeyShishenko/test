@@ -9,4 +9,5 @@ $cncsess= new class_ReadingCNCfiles('uploads/'.$folder_current);
 // $cncsess->output();
 Logger::getLogger('log_class_CNC')->log("return CNC\checkCPU.php ");
 return $cncsess->checkAllCNC();
+Logger::getLogger('log_class_CNC')->log("***");
 ?>
