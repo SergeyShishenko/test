@@ -17,6 +17,8 @@ class class_ReadingCNCfiles
 
         if (file_exists($folderCNC)) {
         $this->arrNameFile=scandir($folderCNC);
+
+        $this->output();
        
         array_shift($this->arrNameFile);// удаление  '.'
         array_shift($this->arrNameFile);// удаление  '..'
@@ -46,7 +48,8 @@ class class_ReadingCNCfiles
      */
     public function output(){
         for ($i=0; $i < count($this->arrNameFile); $i++) { 
-            echo $this->folderCNC."/".$this->arrNameFile[$i]."<br>";
+            Logger::getLogger('log_class_CNC')->log("arrNameFile[$i] -> ". $this->arrNameFile[$i]);
+            // echo $this->folderCNC."/".$this->arrNameFile[$i]."<br>";
 
         }
     }

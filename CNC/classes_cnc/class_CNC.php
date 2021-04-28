@@ -216,18 +216,22 @@ class class_CNC
 
         $this->pathfile=$fileCNC;
         $this->rand_folder = $folder;
-      
-        Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
-        Logger::getLogger('log_class_CNC')->log("caller -> ".$caller);
-        Logger::getLogger('log_class_CNC')->log("fileCNC -> ".$fileCNC);
+            Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
+            Logger::getLogger('log_class_CNC')->log("caller -> ".$caller);
 
-        $this->arrStr=file($fileCNC);
-        $num=2;
-        if(is_null($this->findVal($this->getStrByNum($num),"DL"))){$num=3;}
-        $this->DL = $this->findVal($this->getStrByNum($num),"DL");
-        $this->DH = $this->findVal($this->getStrByNum($num),"DH");
-        $this->DS = $this->findVal($this->getStrByNum($num),"DS");         
+        if (is_file($fileCNC)){      
+            
+            Logger::getLogger('log_class_CNC')->log("fileCNC -> ".$fileCNC);
 
+            $this->arrStr=file($fileCNC);
+            $num=2;
+            if(is_null($this->findVal($this->getStrByNum($num),"DL"))){$num=3;}
+            $this->DL = $this->findVal($this->getStrByNum($num),"DL");
+            $this->DH = $this->findVal($this->getStrByNum($num),"DH");
+            $this->DS = $this->findVal($this->getStrByNum($num),"DS");         
+        }else{
+            Logger::getLogger('log_class_CNC')->log("fileCNC -> не файл");
+        }
     } 
 
     /**
