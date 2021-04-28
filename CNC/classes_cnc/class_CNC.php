@@ -221,7 +221,7 @@ class class_CNC
 
         if (is_file($fileCNC)){      
             
-            Logger::getLogger('log_class_CNC')->log("fileCNC -> ".$fileCNC);
+            // Logger::getLogger('log_class_CNC')->log("fileCNC -> ".$fileCNC);
 
             $this->arrStr=file($fileCNC);
             $num=2;
@@ -268,6 +268,9 @@ class class_CNC
 
     public function nameFile(){
         return basename($this->pathfile);
+    }
+    public function pathfile(){
+        return $this->pathfile;
     }
 
     public function getSpecification(){

@@ -46,7 +46,7 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
             $find=true;
             }
         }
-        if (!$find){ $report .= "<tr><td align='center'><b>". $var2['name'] ."</b>"  . "<span style='color:blue'> - Нет в спецификации </span> </td></tr>";}
+        if (!$find && $var2['name'] !==""){ $report .= "<tr><td align='center'><b>". $var2['name'] ."</b>"  . "<span style='color:blue'> - Нет в спецификации </span> </td></tr>";}
     }
 }else{
     if (count($arrAllCSV[0])==0){
@@ -57,4 +57,5 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
         }
 }
 Logger::getLogger('log_class_CNC')->log("return CNC\check_specification_CSV.php ");
+Logger::getLogger('log_class_CNC')->log("***");
 echo $report;
