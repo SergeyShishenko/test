@@ -18,12 +18,13 @@ class class_ReadingCNCfiles
         if (file_exists($folderCNC)) {
         $this->arrNameFile=scandir($folderCNC);
 
-        $this->output();
+         $this->output();
        
-        array_shift($this->arrNameFile);// удаление  '.'
-        array_shift($this->arrNameFile);// удаление  '..'
+        // array_shift($this->arrNameFile);// удаление  '.'
+        // array_shift($this->arrNameFile);// удаление  '..'
 
         $this->arrNameFile=$this->array_preg_diff($this->arrNameFile, '/[cC][sS][vV]/');  
+        // $this->arrNameFile=$this->array_preg_diff($this->arrNameFile, '/[^\.$]/');  
         $this->addObj();
             
         }else{
@@ -37,6 +38,7 @@ class class_ReadingCNCfiles
     private function array_preg_diff($a, $p) {
         foreach ($a as $i => $v)
             if (preg_match($p, $v))
+            Logger::getLogger('log_class_CNC')->log(" unset() -> ".$a[$i] );
                 unset($a[$i]);
         return $a;
     }
@@ -57,6 +59,7 @@ class class_ReadingCNCfiles
 
     private function addObj(){
         for ($i=0; $i < count($this->arrNameFile); $i++) { 
+            Logger::getLogger('log_class_CNC')->log("arrFile[$i] -> ".$this->folderCNC."/". $this->arrNameFile[$i]);
             $this->arrFile[$i]=new class_CNC( $this->folderCNC."/".$this->arrNameFile[$i],$this->rand_folder,"class_ReadingCNCfiles");
             // $this->arrFile[$i]=new class_CNC( $this->folderCNC.$this->arrNameFile[$i],$this->rand_folder);
 
