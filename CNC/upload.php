@@ -80,35 +80,54 @@ if (!isset($_FILES[$input_name])) {
 			$name = mb_eregi_replace($pattern, '-', $file['name']);
 			$name = mb_ereg_replace('[-]+', '-', $name);
 			$parts = pathinfo($name);
-			
+			$extension=strtolower($parts['extension']);
 			if (empty($name) || empty($parts['extension'])) {
 				$error = 'Недопустимый тип файла';
-			} elseif (strtolower($parts['extension'])!='cnc'&& strtolower($parts['extension'])!='csv') {
+			// } elseif ($extension!='cnc'&& $extension!='csv') {
+			} elseif ($extension!='cnc'&& $extension!='csv'
+						&& $extension!='xls'&& $extension!='xlsx') {
 				$error = 'Недопустимый тип файла';
-				// $error = false;
-			} elseif (!empty($allow) && !in_array(strtolower($parts['extension']), $allow)) {
+				
+			} elseif (!empty($allow) && !in_array($extension, $allow)) {
 				$error = 'Недопустимый тип файла';
-				// $error = false;
-			} elseif (!empty($deny) && in_array(strtolower($parts['extension']), $deny)) {
+				
+			} elseif (!empty($deny) && in_array($extension, $deny)) {
 				$error = 'Недопустимый тип файла';
-				// $error = false;
+				
 			} else {
 				// Перемещаем файл в директорию.
-				if(strtolower($parts['extension'])=='csv'){
-					// foreach (glob($path.'*.[cC][sS][vV]') as $file) {
-					// 	unlink($file);
-						
-					// }
+				
+				if($extension=='csv'){				
 					$success = 'unlink '.array_map('unlink', glob($path.'*.[cC][sS][vV]'));
 				}
-				
-
-				if (move_uploaded_file($file['tmp_name'], $path . $name)) {
+				////***XLS */
+				if($extension=='xls' || $extension=='xlsx' ){					
+					$filename=__DIR__ ."/temp/" . $name;					
+					move_uploaded_file($file['tmp_name'], $filename);
+					$fxls= include "getxlsx-specification6.php";
+					if($fxls){
+						array_map('unlink', glob($path.'*.[cC][sS][vV]'));
+						rename(__DIR__ ."/temp/".$fxls, $path . $fxls);
+						unlink($filename);	
+						$success = 'Файл «' . $name . '» успешно загружен.';
+					}else {
+						$error = 'Не удалось загрузить файл.';
+					}
+				}elseif (move_uploaded_file($file['tmp_name'], $path . $name)) {
 					// Далее можно сохранить название файла в БД и т.п.
 					$success = 'Файл «' . $name . '» успешно загружен.';
 				} else {
 					$error = 'Не удалось загрузить файл.';
 				}
+				////***XLS */
+				
+
+				// if (move_uploaded_file($file['tmp_name'], $path . $name)) {
+				
+				// 	$success = 'Файл «' . $name . '» успешно загружен.';
+				// } else {
+				// 	$error = 'Не удалось загрузить файл.';
+				// }
 			}
 		}
 		
@@ -118,12 +137,12 @@ if (!isset($_FILES[$input_name])) {
 
 		}
 		if (!empty($error)) {
-			// $data[] = '<p style="color: red">' . $error . '</p>';  
+		
 			$data[] = null;  
 		}
 	}
 	
-	// $data[] = $path;
+	
 }
 
 

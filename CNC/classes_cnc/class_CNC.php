@@ -216,12 +216,12 @@ class class_CNC
 
         $this->pathfile=$fileCNC;
         $this->rand_folder = $folder;
-            // Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
+            Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
            // Logger::getLogger('log_class_CNC')->log("caller -> ".$caller);
 
         if (is_file($fileCNC)){      
             
-            // Logger::getLogger('log_class_CNC')->log("fileCNC -> ".$fileCNC);
+            Logger::getLogger('log_class_CNC')->log("fileCNC -> ".$fileCNC);
 
             $this->arrStr=file($fileCNC);
             $num=2;

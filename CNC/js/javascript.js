@@ -47,7 +47,7 @@ $(document).ready(function() {
 			$.each(files,function(key, input){
 				var exp = input.name.split(".").slice(-1)[0].toUpperCase();
 				console.log(exp);
-				if (exp =="CNC" ||	exp =="CSV" ){
+				if (exp =="CNC" ||	exp =="CSV" ||	exp =="XLS" ||	exp =="XLSX" ){
 				formData.append('file[]', input);
 				dataArray.push({name : input.name});
 				}
