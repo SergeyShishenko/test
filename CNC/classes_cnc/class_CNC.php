@@ -216,7 +216,7 @@ class class_CNC
 
         $this->pathfile=$fileCNC;
         $this->rand_folder = $folder;
-            Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
+            // Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
            // Logger::getLogger('log_class_CNC')->log("caller -> ".$caller);
 
         if (is_file($fileCNC)){      
@@ -230,7 +230,7 @@ class class_CNC
             $this->DH = $this->findVal($this->getStrByNum($num),"DH");
             $this->DS = $this->findVal($this->getStrByNum($num),"DS");         
         }else{
-            Logger::getLogger('log_class_CNC')->log("fileCNC -> не файл");
+            // Logger::getLogger('log_class_CNC')->log("fileCNC -> не файл");
         }
     } 
 
@@ -275,7 +275,7 @@ class class_CNC
 
     public function getSpecification(){
         $var2=basename($this->pathfile);  
-        Logger::getLogger('log_class_CNC')->log("getSpecification -> ".$var2);      
+        // Logger::getLogger('log_class_CNC')->log("getSpecification -> ".$var2);      
         $this->arrSpecification['name']=substr($var2,0,strrpos($var2, '_')); // строка до последнего "_"
         $this->arrSpecification['DL']=round(trim($this->DL), 1);
         $this->arrSpecification['DS']=round(trim($this->DS), 1);

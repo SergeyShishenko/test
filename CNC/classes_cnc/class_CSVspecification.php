@@ -19,11 +19,11 @@
             $this->CSV=glob($fileCSV.'/*.[cC][sS][vV]')[0];  
             
             // Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
-            Logger::getLogger('log_class_CNC')->log("CSV = ".$this->CSV);
+            // Logger::getLogger('log_class_CNC')->log("CSV = ".$this->CSV);
           //  Logger::getLogger('log_class_CNC')->log("exists()= ".$this->exists());
         //    echo count($this->CSV);
            if ($this->exists()){
-           Logger::getLogger('log_class_CNC')->log("exists()= ".$this->exists());
+        //    Logger::getLogger('log_class_CNC')->log("exists()= ".$this->exists());
                 $row = 1;    
                 if (($handle = fopen($this->CSV, "r")) !== FALSE) {
                     while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {  // строка  до 1000 символов    

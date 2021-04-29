@@ -1,7 +1,7 @@
 <?php
 // вызов из CNC\check_specification_CSV.php
 include_once dirname(__DIR__ ). '/Classes/Logger.php';
-Logger::$PATH = dirname(__FILE__)."/LOGS";
+// Logger::$PATH = dirname(__FILE__)."/LOGS";
 include "classes_cnc/class_CSVspecification.php";
 if (file_exists($pathFile)) {
     $scsv= new class_CSVspecification($pathFile);

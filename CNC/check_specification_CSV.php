@@ -3,7 +3,7 @@
 // CNC\check_specification_CSV.php
 
 include_once dirname(__DIR__ ). '/Classes/Logger.php';
-Logger::$PATH = dirname(__FILE__)."/LOGS";
+// Logger::$PATH = dirname(__FILE__)."/LOGS";
 
 $pathFile='uploads/'.$_POST['path'];
 
@@ -56,6 +56,6 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
         $report .= "<tr><td  align='center'>Нет файлов для проверки!</td></tr>";
         }
 }
-Logger::getLogger('log_class_CNC')->log("return CNC\check_specification_CSV.php ");
-Logger::getLogger('log_class_CNC')->log("***");
+// Logger::getLogger('log_class_CNC')->log("return CNC\check_specification_CSV.php ");
+// Logger::getLogger('log_class_CNC')->log("***");
 echo $report;
