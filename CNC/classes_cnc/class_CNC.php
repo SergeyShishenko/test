@@ -163,6 +163,13 @@ class class_CNC
     private $pathfile; 
 
     /**
+    * Комментарий
+    *
+    * @var String
+    */
+    private $comment=""; 
+
+    /**
      * Текущий блок
      * OFFS{						; Раздел зарезервировано для назначения программы кусок смещения.
      * }OFFS
@@ -216,16 +223,26 @@ class class_CNC
 
         $this->pathfile=$fileCNC;
         $this->rand_folder = $folder;
-            Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
+             Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
            // Logger::getLogger('log_class_CNC')->log("caller -> ".$caller);
 
         if (is_file($fileCNC)){      
             
-            Logger::getLogger('log_class_CNC')->log("fileCNC -> ".$fileCNC);
+            // Logger::getLogger('log_class_CNC')->log("fileCNC -> ".$fileCNC);
 
             $this->arrStr=file($fileCNC);
-            $num=2;
-            if(is_null($this->findVal($this->getStrByNum($num),"DL"))){$num=3;}
+            $note=$this->findVal($this->getStrByNum(1),"$","`");
+            $note=mb_convert_encoding($note, "UTF-8",'Windows-1251');
+            Logger::getLogger('log_class_CNC')->log("is_null NOTE -> ". $note );
+            if($note!==""){
+                $this->comment = $note;
+                Logger::getLogger('log_class_CNC')->log("Комментарий NOTE -> ".$this->comment);
+                $num=3;
+            }
+            $num=2;            
+            if(is_null($this->findVal($this->getStrByNum($num),"DL"))){
+                $num=3;
+            }
             $this->DL = $this->findVal($this->getStrByNum($num),"DL");
             $this->DH = $this->findVal($this->getStrByNum($num),"DH");
             $this->DS = $this->findVal($this->getStrByNum($num),"DS");         
@@ -306,11 +323,13 @@ class class_CNC
      * @return  null|Float
     */
     public function findVal($row,$key,String $separator=" ",String $mod = '='){   
-        $this->mod=$mod;
+        
         // $row=$this->getStrByNum($numrow);
         $arr = explode($separator, $row);
+        if($mod){
+        $this->mod=$mod;
          $arr =array_map(function($p) { return explode($this->mod,$p); }, $arr);
-
+        }
         //  foreach ($arr as $k => $innerarr) {         
          foreach ($arr as $innerarr) {  
             $arr_inn[] = $innerarr;       
