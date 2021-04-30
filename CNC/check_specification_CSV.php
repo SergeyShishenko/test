@@ -33,6 +33,7 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
             }
             $varSTR4=$str[4]." x ".$str[5]." x ".$str[6];
             $var3=$var2['DL'] ." x ".$var2['DH']." x ".$var2['DS'];
+            $order="( Заказ ".$str[0]."/".$str[1]." )";
 
             // Logger::getLogger('log_class_CNC')->log("var1=".$var1."  "."var2['name'] ".$var2['name']);
 
@@ -40,14 +41,14 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
              
                 $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$var2['comment']." "."<b>". $var1 ."</b>" ;
             if (strcasecmp($var3, $varSTR4) == 0) {
-                $report .= "<span style='color:green'> - Размеры совпадают" . "</span> </td></tr>";
+                $report .= "<span style='color:green'> - Размеры совпадают " . "</span>".$order." </td></tr>";
             }else{
-                $report .= "<span style='color:red'> - Размеры неверные" . "</span> </td></tr>";
+                $report .= "<span style='color:red'> - Размеры неверные " . "</span>".$order." </td></tr>";
             }
             $find=true;
             }
         }
-        if (!$find && $var2['name'] !==""){ $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$var2['comment']." "."<b>"  . "<span style='color:blue'> - Нет в спецификации </span> </td></tr>";}
+        if (!$find && $var2['name'] !==""){ $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$var2['comment']." "."<b>"  . "<span style='color:blue'> - Нет в спецификации </span>".$order." </td></tr>";}
         $num++;
     }
 }else{
