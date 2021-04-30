@@ -70,10 +70,20 @@ class Logger
     }
  
     protected function _write($string){
-        fwrite($this->fp, $string);
- 
-       // echo $string;
+        fwrite($this->fp, $string); 
+       
     }
+
+    protected function _writeArr($arr){
+        foreach ($arr as $str) {
+            if (is_array($str)){
+                $this->_writeArr($str);
+            }
+            fwrite($this->fp, $str);
+        }       
+    }
+
+
  
     public function __destruct(){
         fclose($this->fp);
