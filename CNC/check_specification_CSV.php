@@ -18,6 +18,7 @@ $arrCHPU[] = include "specificationCHPU.php";
 if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
     
     $report .= "<tr><td align='center'><b>". basename($arr[1]) ."</b></td></tr>" ;
+    $num=1;
     foreach ($arrCHPU[0] as $var2){
         $div_count= substr_count($var2['name'], '_');// количество "_"
         $find=false;
@@ -37,7 +38,7 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
 
             if (strcasecmp($var1, $var2['name']) == 0) {
              
-                $report .= "<tr><td align='center'><b>". $var1 ."</b>" ;
+                $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$var2['comment']." "."<b>". $var1 ."</b>" ;
             if (strcasecmp($var3, $varSTR4) == 0) {
                 $report .= "<span style='color:green'> - Размеры совпадают" . "</span> </td></tr>";
             }else{
@@ -46,7 +47,8 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
             $find=true;
             }
         }
-        if (!$find && $var2['name'] !==""){ $report .= "<tr><td align='center'><b>". $var2['name'] ."</b>"  . "<span style='color:blue'> - Нет в спецификации </span> </td></tr>";}
+        if (!$find && $var2['name'] !==""){ $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$var2['comment']." "."<b>"  . "<span style='color:blue'> - Нет в спецификации </span> </td></tr>";}
+        $num++;
     }
 }else{
     if (count($arrAllCSV[0])==0){

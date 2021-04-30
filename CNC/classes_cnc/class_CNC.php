@@ -231,12 +231,13 @@ class class_CNC
             // Logger::getLogger('log_class_CNC')->log("fileCNC -> ".$fileCNC);
 
             $this->arrStr=file($fileCNC);
-            $note=$this->findVal($this->getStrByNum(1),"$","`");
+            $note=$this->findVal(strtolower($this->getStrByNum(1)),"$","`");
+            $note=mb_convert_case($note, MB_CASE_LOWER, "Windows-1251");;
             $note=mb_convert_encoding($note, "UTF-8",'Windows-1251');
-            Logger::getLogger('log_class_CNC')->log("is_null NOTE -> ". $note );
+            // Logger::getLogger('log_class_CNC')->log("is_null NOTE -> ". $note );
             if($note!==""){
                 $this->comment = $note;
-                Logger::getLogger('log_class_CNC')->log("Комментарий NOTE -> ".$this->comment);
+                // Logger::getLogger('log_class_CNC')->log("Комментарий NOTE -> ".$this->comment);
                 $num=3;
             }
             $num=2;            
@@ -297,6 +298,7 @@ class class_CNC
         $this->arrSpecification['DL']=round(trim($this->DL), 1);
         $this->arrSpecification['DS']=round(trim($this->DS), 1);
         $this->arrSpecification['DH']=round(trim($this->DH), 1);
+        $this->arrSpecification['comment']=htmlentities(trim($this->comment));
         return $this->arrSpecification;
     }
 
