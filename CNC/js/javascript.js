@@ -207,7 +207,7 @@ $(document).ready(function() {
 
 // проверка спецификации
 	function checkSpecification(folder,sel=0) {	
-// console.log("checkSpecification( "+folder+" )");
+ console.log("checkSpecification( "+folder+", sel="+sel+" )");
 		var formData = new FormData();
 		formData.append('path',folder );//folder = '2578_4_SE'
 		formData.append('sel',sel );//ключ заказа
@@ -235,7 +235,11 @@ $(document).ready(function() {
 	}
 
 	// $('#file-name-holder').onChange='checkSpecification(".$_POST['path'].",selectedIndex);'"
-	$('#pr').change(checkSpecification($("#pr").data("folder"),this.selectedIndex));
+
+	$("body").on("change","#pr", function() {
+		checkSpecification($("#pr").data("folder"),this.selectedIndex)
+	});
+	// $('#pr').change(checkSpecification($("#pr").data("folder"),this.selectedIndex));
 	// Перезагрузить текущую страницу, без использования кэша
 	// document.location.reload();
 

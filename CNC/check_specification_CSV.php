@@ -18,8 +18,9 @@ $arrCHPU[] = include "specificationCHPU.php";
 // на странице сделать выпадающий список изделий заказа
 // если изделий больше одного
 // и по выбору изделия запускать проверку передавая ключ из массива всех изделий спецификации
-//  Logger::getLogger('log_class_CNC')->log($arrAllCSV);
-// Logger::getLogger('log_class_CNC')->log($arr[3]);
+//   Logger::getLogger('log_class_CNC')->log($arrAllCSV);
+//   Logger::getLogger('log_class_CNC')->log($arr[3]);
+//Logger::getLogger('log_class_CNC')->log($arrCHPU[0]);
 
 $dis="";
 // if (count($arr[3])>1){
@@ -31,9 +32,19 @@ $dis="";
 if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
     
     $report .= "<tr><td align='center'><b>". basename($arr[1]) ."</b></td></tr>" ;
-    foreach ($arr[3] as $pr){
-        $option .="<option>$pr";
-    }    
+
+    // foreach ($arr[3] as $pr){
+    //     $option .="<option >$pr";
+    // } 
+    // selected 
+    for($j=0;$j<count($arr[3]);$j++) {
+        if($j==$_POST['sel']){
+            $sd="selected";
+        }else{
+            $sd="";
+        }
+        $option .="<option $sd>".$arr[3][$j];
+    } 
 // name='product' onChange='checkSpecification(".$_POST['path'].",selectedIndex);'
     $report .= "<tr>
                     <td align='center'>Заказ ".$arr[2]."/ Изделие                         
@@ -48,7 +59,7 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
         $find=false;
          $i=$_POST['sel'];
         // for($i=0;$i<count($arrAllCSV);$i++){
-            foreach ($arrAllCSV[$i] as $str) {            
+            foreach ($arrAllCSV[0][$i] as $str) {            
                 //   Logger::getLogger('log_class_CNC')->log($str);
                 if ($div_count==1){
                 $var1=$str[2]."_".$str[3];  
@@ -58,8 +69,9 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
                 $varSTR4=$str[4]." x ".$str[5]." x ".$str[6];
                 $var3=$var2['DL'] ." x ".$var2['DH']." x ".$var2['DS'];
 
+               
+                 $order="";
                 // $order="( Заказ ".$str[0]."/".$str[1]." )";
-                $order="";
 
                 // Logger::getLogger('log_class_CNC')->log("var1=".$var1."  "."var2['name'] ".$var2['name']);
 

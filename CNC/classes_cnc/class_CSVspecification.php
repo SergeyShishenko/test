@@ -7,7 +7,8 @@
         * Массив строк файла
         * @var Array $arrAllCSV
         */
-        private $arrAllCSV=[] ; 
+        private $arrAllCSV = []; 
+       
         private $CSV=[]; 
 
         /**
@@ -32,7 +33,7 @@
             $data=[];
             $this->CSV=glob($fileCSV.'/*.[cC][sS][vV]')[0];  
             
-            // Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
+            Logger::$PATH = dirname(dirname(__FILE__))."/LOGS";
             // Logger::getLogger('log_class_CNC')->log("CSV = ".$this->CSV);
             // Logger::getLogger('log_class_CNC')->log("exists()= ".$this->exists());
             // echo count($this->CSV);
@@ -52,16 +53,28 @@
                             } 
                             
                             
-                            $data[0]=$this->order;                            
-                            $data[1]=$Product;
-                            $data[2]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[2])));// № СЕ/пСЕ
-                            $data[3]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[3])));// № Детали
-                            $data[4]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[4])));// № Длина
-                            $data[5]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[5])));// № Ширина
-                            $data[6]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[6])));// № Толщина
-                        
-                            $this->arrAllCSV[]=$data;         
+                            $dataR[0]=$this->order;                            
+                            $dataR[1]=$Product;
+                            $dataR[2]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[2])));// № СЕ/пСЕ
+                            $dataR[3]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[3])));// № Детали
+                            $dataR[4]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[4])));// № Длина
+                            $dataR[5]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[5])));// № Ширина
+                            $dataR[6]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[6])));// № Толщина
+
+                          
+                             $index=array_search($Product, $this->arrProducts);
+                            //  Logger::getLogger('log_class_CNC')->log("array_search(Product, this->arrProducts) = ".$index);
+                            //  Logger::getLogger('log_class_CNC')->log("count = ".count($this->arrAllCSV[$index]));
+                             
+                            if (count($this->arrAllCSV[$index])==0){
+                                $this->arrAllCSV[$index]= array($dataR) ;
+                            }else{
+                               array_push( $this->arrAllCSV[$index], $dataR); 
+                            }
+                            // array_push( $this->arrAllCSV[0], $data);
+                            // $this->arrAllCSV[array_search($Product, $this->arrProducts)]=$data;         
                         }
+                          
                          $row++;
                     }
                     fclose($handle);        
