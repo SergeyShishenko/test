@@ -206,10 +206,11 @@ $(document).ready(function() {
 
 
 // проверка спецификации
-	function checkSpecification(folder) {	
+	function checkSpecification(folder,sel=0) {	
 // console.log("checkSpecification( "+folder+" )");
 		var formData = new FormData();
 		formData.append('path',folder );//folder = '2578_4_SE'
+		formData.append('sel',sel );//ключ заказа
 		// alert(formData.get('path'));
 		$.ajax({
 			type: "POST",

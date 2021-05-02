@@ -9,7 +9,7 @@ if (file_exists($pathFile)) {
     // Logger::getLogger('log_class_CNC')->log("scsv->getSpecification() ".$scsv->getSpecification()[0]);
     // Logger::getLogger('log_class_CNC')->log("scsv->getName() ".$scsv->getName());
 
-    return array ($scsv->getSpecification(),$scsv->getName());
+    return array ($scsv->getSpecification(),$scsv->getName(),$scsv->getOrder(),$scsv->getArrProducts());
 }else{
     return false;
 }

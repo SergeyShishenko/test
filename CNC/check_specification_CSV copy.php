@@ -12,42 +12,21 @@ $arr = include "specificationCSV.php";
 $arrAllCSV[] = $arr[0];// CSV file
 
 $report="";
-$option ="";
 
 $arrCHPU[] = include "specificationCHPU.php";
 // на странице сделать выпадающий список изделий заказа
 // если изделий больше одного
 // и по выбору изделия запускать проверку передавая ключ из массива всех изделий спецификации
-//  Logger::getLogger('log_class_CNC')->log($arrAllCSV);
-// Logger::getLogger('log_class_CNC')->log($arr[3]);
-
-$dis="";
-// if (count($arr[3])>1){
-//     $dis="";
-// }else{
-//   $dis="disabled";  
-// }
-
+ Logger::getLogger('log_class_CNC')->log($arrAllCSV);
+//Logger::getLogger('log_class_CNC')->log($arrCHPU);
 if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
     
     $report .= "<tr><td align='center'><b>". basename($arr[1]) ."</b></td></tr>" ;
-    foreach ($arr[3] as $pr){
-    $option .="<option>$pr";
-    }    
-
-    $report .= "<tr>
-                    <td align='center'>Заказ ".$arr[2]."/ Изделие 
-                        <select name='product' onChange='alert(selectedIndex);'; ".$dis.">
-                        ".$option."
-                        </select>
-                     </td>
-                </tr>" ;
     $num=1;
     foreach ($arrCHPU[0] as $var2){
         $div_count= substr_count($var2['name'], '_');// количество "_"
         $find=false;
-         $i=$_POST['sel'];
-        // for($i=0;$i<count($arrAllCSV);$i++){
+        for($i=0;$i<count($arrAllCSV);$i++){
             foreach ($arrAllCSV[$i] as $str) {            
                 //   Logger::getLogger('log_class_CNC')->log($str);
                 if ($div_count==1){
@@ -57,9 +36,7 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
                 }
                 $varSTR4=$str[4]." x ".$str[5]." x ".$str[6];
                 $var3=$var2['DL'] ." x ".$var2['DH']." x ".$var2['DS'];
-
-                // $order="( Заказ ".$str[0]."/".$str[1]." )";
-                $order="";
+                $order="( Заказ ".$str[0]."/".$str[1]." )";
 
                 // Logger::getLogger('log_class_CNC')->log("var1=".$var1."  "."var2['name'] ".$var2['name']);
 
@@ -74,9 +51,9 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
                 $find=true;
                 }
             }
-            if (!$find && $var2['name'] !==""){ $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$var2['comment']." "."<b>"  . "<span style='color:blue'> - Нет в спецификации </span>".$order." </td></tr>";}
-            $num++;   
-        // } 
+         if (!$find && $var2['name'] !==""){ $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$var2['comment']." "."<b>"  . "<span style='color:blue'> - Нет в спецификации </span>".$order." </td></tr>";}
+        $num++;   
+        } 
     }
 }else{
     if (count($arrAllCSV[0])==0){
