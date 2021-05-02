@@ -32,12 +32,12 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
     
     $report .= "<tr><td align='center'><b>". basename($arr[1]) ."</b></td></tr>" ;
     foreach ($arr[3] as $pr){
-    $option .="<option>$pr";
+        $option .="<option>$pr";
     }    
-
+// name='product' onChange='checkSpecification(".$_POST['path'].",selectedIndex);'
     $report .= "<tr>
-                    <td align='center'>Заказ ".$arr[2]."/ Изделие 
-                        <select name='product' onChange='alert(selectedIndex);'; ".$dis.">
+                    <td align='center'>Заказ ".$arr[2]."/ Изделие                         
+                        <select name='pr' id='pr' data-folder='".$_POST['path']."' ".$dis.">
                         ".$option."
                         </select>
                      </td>

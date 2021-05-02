@@ -234,7 +234,8 @@ $(document).ready(function() {
 
 	}
 
-
+	// $('#file-name-holder').onChange='checkSpecification(".$_POST['path'].",selectedIndex);'"
+	$('#pr').change(checkSpecification($("#pr").data("folder"),this.selectedIndex));
 	// Перезагрузить текущую страницу, без использования кэша
 	// document.location.reload();
 
