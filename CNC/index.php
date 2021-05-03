@@ -137,7 +137,7 @@ include "createzip.php";
 <!-- <div id="report"></div> -->
     <script src="js/jquery.min.js"></script>  
     <script src="js/num_word.js"></script>
-    <script src="js/javascript.js?v2"></script>
+    <script src="js/javascript.js?v3"></script>
     <script src="js/tooltip.js?v3"></script>
     <!-- <script src="js/dropCNC.js"></script> -->
     <script>

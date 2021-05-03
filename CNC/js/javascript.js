@@ -222,7 +222,7 @@ $(document).ready(function() {
 			// dataType : 'json',
 			dataType : 'text',
 			success: function(data){
-
+				$('#report').empty(); 
 			   //  data.forEach(function(msg) {
 			   //      $('#file-name-holder').append(msg);                         
 			   //  });
