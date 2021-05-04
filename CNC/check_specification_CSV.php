@@ -86,7 +86,10 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
                 $find=true;
                 }
             }
-            if (!$find && $var2['name'] !==""){ $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$var2['comment']." "."<b>"  . "<span style='color:blue'> - Нет в спецификации </span>".$order." </td></tr>";}
+            if (!$find && $var2['name'] !==""){ 
+                // ДОБАВИТЬ ИМЯ CNC $var2['name']
+                $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$var2['comment']." "."<b>". $var2['name'] ."</b>"  . "<span style='color:blue'> - Нет в спецификации </span>".$order." </td></tr>";
+            }
             $num++;   
         // } 
     }

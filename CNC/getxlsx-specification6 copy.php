@@ -9,39 +9,36 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use \PhpOffice\PhpSpreadsheet\Cell\Coordinate as Coord;
 require_once dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php' ;
 
-// include_once dirname(__DIR__ ). '/Classes/Logger.php';
-// Logger::$PATH = dirname(__FILE__)."/LOGS";
-
-
+//if (!isset($filename)){$filename="test/2533_8,9,338 (пом14).xlsx";}
+// if (!isset($filename)){$filename="test/1111_6_Спецификации.xls";}
+// $File = $_SERVER['DOCUMENT_ROOT'] . "/www/CNC/$filename";//localhost
+// if (!file_exists($File)) {
+//   $File = $_SERVER['DOCUMENT_ROOT'] . "/CNC/$filename";//site
+// }
 $getReaderType = getReaderTypeFromExtension($filename);// подбор класса по расширению
 $reader = $getReaderType[0];// подбор класса по расширению
 $reader->setReadDataOnly(true); 
-$Excel =  $reader->load($filename);
+$Excel =  $reader->load($filename);;
 
 // Устанавливаем индекс активного листа
 
 
 $sheetCount = $Excel->getSheetCount();
-//  Logger::getLogger('log_class_CNC')->log("count -> ".$sheetCount);
-$find=false;
+
 for ($i = 0; $i < $sheetCount; $i++) {
 
-    $sheet = $Excel->getSheet($i);
-    // Logger::getLogger('log_class_CNC')->log("strpos -> ".strpos($sheet->getCellByColumnAndRow(3, 1)->getCalculatedValue(), "СЕ/пСЕ"));
+$sheet = $Excel->getSheet($i);
     if (strpos($sheet->getCellByColumnAndRow(3, 1)->getCalculatedValue(), "СЕ/пСЕ")!==false){
-        $Excel->setActiveSheetIndex($i);
+        $Excel->setActiveSheetIndex(0);
 // Получаем активный лист
         $sheet = $Excel->getActiveSheet();
-        // $worksheetTitle = $sheet->getTitle();
-        $find=true;
+        $worksheetTitle = $sheet->getTitle();
         // return false;
     //   exit();
         }    
 
-}//for
-if (!$find){  return false;
-        //   exit();
-        }
+}
+
 // $Excel->setActiveSheetIndex(0);
 // // Получаем активный лист
 // $sheet = $Excel->getActiveSheet();
@@ -54,10 +51,10 @@ $highestColumnIndex = Coord::columnIndexFromString($highestColumn); // e.g. 5
 // echo $sheet->getCellByColumnAndRow(1, 1)->getCalculatedValue(),"<br>";//№ Заказа
 // echo $sheet->getCellByColumnAndRow(3, 1)->getCalculatedValue(),"<br>";//№ Изделия
 
-// if (strpos($sheet->getCellByColumnAndRow(3, 1)->getCalculatedValue(), "СЕ/пСЕ")==false){
-//     return false;
-// //   exit();
-//     }
+if (strpos($sheet->getCellByColumnAndRow(3, 1)->getCalculatedValue(), "СЕ/пСЕ")==false){
+    return false;
+//   exit();
+    }
 
 $list=[];
  $list[]=array("№  Заказа", "№  Изделия", "№ СЕ/пСЕ" , "№ Детали" , "Длина" , "Ширина" , "Толщина");
