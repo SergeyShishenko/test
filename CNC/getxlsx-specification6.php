@@ -84,7 +84,8 @@ for ($row = 2; $row <= $highestRow; ++$row) {
         $sheet->getCellByColumnAndRow(4, $row)->getCalculatedValue(),
         $sheet->getCellByColumnAndRow(10, $row)->getCalculatedValue(),
         $sheet->getCellByColumnAndRow(11, $row)->getCalculatedValue(),
-        $sheet->getCellByColumnAndRow(12, $row)->getCalculatedValue()
+        $sheet->getCellByColumnAndRow(12, $row)->getCalculatedValue(),
+        $sheet->getCellByColumnAndRow(5, $row)->getCalculatedValue()
       );
   }
 }

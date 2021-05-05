@@ -10,7 +10,7 @@ include "createzip.php";
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="CHPU.bmp" type="image/x-icon">  
     <title>ЧПУ</title>
-    <link rel="stylesheet" href="CSS/style.css?v2">
+    <link rel="stylesheet" href="CSS/style.css?v3">
     <link rel="stylesheet" href="CSS/scroll_panel.css">
     <style>
       /* кнопка */

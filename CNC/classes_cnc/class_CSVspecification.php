@@ -60,6 +60,7 @@
                             $dataR[4]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[4])));// № Длина
                             $dataR[5]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[5])));// № Ширина
                             $dataR[6]=preg_replace('/[^ a-zа-я\d.]/ui', '',trim(str_replace(",", ".", $data[6])));// № Толщина
+                            $dataR[7]=preg_replace('/[^ a-zа-я_\d.]/ui', '',trim(str_replace(",", ".", $data[7])));// Наименование
 
                           
                              $index=array_search($Product, $this->arrProducts);

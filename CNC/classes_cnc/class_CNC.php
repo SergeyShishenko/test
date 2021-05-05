@@ -232,7 +232,7 @@ class class_CNC
 
             $this->arrStr=file($fileCNC);
             $note=$this->findVal(strtolower($this->getStrByNum(1)),"$","`");
-            $note=mb_convert_case($note, MB_CASE_LOWER, "Windows-1251");;
+            $note=mb_convert_case($note, MB_CASE_LOWER, "Windows-1251");
             $note=mb_convert_encoding($note, "UTF-8",'Windows-1251');
             // Logger::getLogger('log_class_CNC')->log("is_null NOTE -> ". $note );
             if($note!==""){

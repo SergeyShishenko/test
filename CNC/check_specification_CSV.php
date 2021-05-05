@@ -31,7 +31,7 @@ $dis="";
 
 if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
     
-    $report .= "<tr><td align='center' colspan='2'><b>". basename($arr[1]) ."</b></td></tr>" ;
+    $report .= "<tr><td align='center' colspan='2'><b>". basename($arr[1],".csv") ."</b></td></tr>" ;
 
     // foreach ($arr[3] as $pr){
     //     $option .="<option >$pr";
@@ -47,7 +47,7 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
     } 
 // name='product' onChange='checkSpecification(".$_POST['path'].",selectedIndex);'
     $report .= "<tr>
-                    <td align='center' colspan='2'>Заказ ".$arr[2]."/ Изделие                         
+                    <td align='center' colspan='2'>Заказ <b>".$arr[2]."</b> / Изделие                         
                         <select name='pr' id='pr' data-folder='".$_POST['path']."' ".$dis.">
                         ".$option."
                         </select>
@@ -68,13 +68,15 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
                 }
                 $csv4=$str[4]." x ".$str[5]." x ".$str[6];
                 $cnc4=$cnc['DL'] ." x ".$cnc['DH']." x ".$cnc['DS'];
-
+                $note=$str[7];
+                $note=mb_convert_case($note, MB_CASE_LOWER, "UTF-8");
+                $note=mb_convert_encoding($note, "UTF-8");
                
                  $order="";
                 // $order="( Заказ ".$str[0]."/".$str[1]." )";
 
                 // Logger::getLogger('log_class_CNC')->log("var1=".$csv."  "."var2['name'] ".$cnc['name']);
-                $reportCHPU="<tr><td align='right'><span style='color:rgb(106 90 205)'><i>".$cnc['fname'].".</i></span> ".$cnc['comment']." (".$cnc4.") "."<b><i>поз.</i>".$cnc['name']."</b></td>" ;
+                $reportCHPU="<tr><td align='right'><span style='color:rgb(106 90 205)'><i>".$cnc['fname'].".</i></span> ".$cnc['comment']." (".$cnc4.") "."<b><i>поз. </i>".$cnc['name']."</b></td>" ;
                 if (strcasecmp($csv, $cnc['name']) == 0) {
                 
                     // $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$cnc['comment']." "."<b>". $csv ."</b>" ;
@@ -86,7 +88,7 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
                     $report .= "<td align='left'><span style='color:green'> - Размеры совпадают " . "</span>".$order." </td></tr>";
                     // break ;
                     }else{
-                         $report .= "<td align='left'><span style='color:red'> - Размеры неверные " . "</span>(".$csv4.") <b><i>поз.</i>".$str[2]."_".$str[3]."</b></td></tr>";
+                         $report .= "<td align='left'><span style='color:red'> - Размеры неверные </span><b><i>поз. </i>".$str[2]."_".$str[3]."</b>" . " (".$csv4.") ".$note." </td></tr>";
                     // 
 
                     }
