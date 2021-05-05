@@ -282,5 +282,7 @@ a.nav:hover {
     background: url(../img/ajax-loader-6.gif);
 }
 
-
+#report > tbody > tr:nth-child(3) > td:nth-child(1){
+	width: 50%;
+}
 

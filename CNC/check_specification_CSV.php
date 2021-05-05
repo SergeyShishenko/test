@@ -31,7 +31,7 @@ $dis="";
 
 if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
     
-    $report .= "<tr><td align='center'><b>". basename($arr[1]) ."</b></td></tr>" ;
+    $report .= "<tr><td align='center' colspan='2'><b>". basename($arr[1]) ."</b></td></tr>" ;
 
     // foreach ($arr[3] as $pr){
     //     $option .="<option >$pr";
@@ -47,52 +47,66 @@ if (count($arrAllCSV[0])>0 && count($arrCHPU[0])>0){
     } 
 // name='product' onChange='checkSpecification(".$_POST['path'].",selectedIndex);'
     $report .= "<tr>
-                    <td align='center'>Заказ ".$arr[2]."/ Изделие                         
+                    <td align='center' colspan='2'>Заказ ".$arr[2]."/ Изделие                         
                         <select name='pr' id='pr' data-folder='".$_POST['path']."' ".$dis.">
                         ".$option."
                         </select>
                      </td>
                 </tr>" ;
     $num=1;
-    foreach ($arrCHPU[0] as $var2){
-        $div_count= substr_count($var2['name'], '_');// количество "_"
+    foreach ($arrCHPU[0] as $cnc){
+        $div_count= substr_count($cnc['name'], '_');// количество "_"
         $find=false;
          $i=$_POST['sel'];
-        // for($i=0;$i<count($arrAllCSV);$i++){
+        
             foreach ($arrAllCSV[0][$i] as $str) {            
                 //   Logger::getLogger('log_class_CNC')->log($str);
                 if ($div_count==1){
-                $var1=$str[2]."_".$str[3];  
+                $csv=$str[2]."_".$str[3];  
                 }elseif($div_count===0){
-                    $var1=$str[3];  
+                    $csv=$str[3];  
                 }
-                $varSTR4=$str[4]." x ".$str[5]." x ".$str[6];
-                $var3=$var2['DL'] ." x ".$var2['DH']." x ".$var2['DS'];
+                $csv4=$str[4]." x ".$str[5]." x ".$str[6];
+                $cnc4=$cnc['DL'] ." x ".$cnc['DH']." x ".$cnc['DS'];
 
                
                  $order="";
                 // $order="( Заказ ".$str[0]."/".$str[1]." )";
 
-                // Logger::getLogger('log_class_CNC')->log("var1=".$var1."  "."var2['name'] ".$var2['name']);
-
-                if (strcasecmp($var1, $var2['name']) == 0) {
+                // Logger::getLogger('log_class_CNC')->log("var1=".$csv."  "."var2['name'] ".$cnc['name']);
+                $reportCHPU="<tr><td align='right'><span style='color:rgb(106 90 205)'><i>".$cnc['fname'].".</i></span> ".$cnc['comment']." (".$cnc4.") "."<b><i>поз.</i>".$cnc['name']."</b></td>" ;
+                if (strcasecmp($csv, $cnc['name']) == 0) {
                 
-                    $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$var2['comment']." "."<b>". $var1 ."</b>" ;
-                if (strcasecmp($var3, $varSTR4) == 0) {
-                    $report .= "<span style='color:green'> - Размеры совпадают " . "</span>".$order." </td></tr>";
-                }else{
-                    $report .= "<span style='color:red'> - Размеры неверные " . "</span>".$order." </td></tr>";
-                }
+                    // $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$cnc['comment']." "."<b>". $csv ."</b>" ;
+
+                    // $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$cnc['fname'].".</i></span> ".$cnc['comment']." "."<b>". $csv ."</b>" ;
+
+                    $report .= $reportCHPU;
+                    if (strcasecmp($cnc4, $csv4) == 0) {
+                    $report .= "<td align='left'><span style='color:green'> - Размеры совпадают " . "</span>".$order." </td></tr>";
+                    // break ;
+                    }else{
+                         $report .= "<td align='left'><span style='color:red'> - Размеры неверные " . "</span>(".$csv4.") <b><i>поз.</i>".$str[2]."_".$str[3]."</b></td></tr>";
+                    // 
+
+                    }
                 $find=true;
+                // break ;
                 }
-            }
-            if (!$find && $var2['name'] !==""){ 
-                // ДОБАВИТЬ ИМЯ CNC $var2['name']
-                $report .= "<tr><td align='center'><span style='color:rgb(106 90 205)'><i>".$num.".</i></span> ".$var2['comment']." "."<b>". $var2['name'] ."</b>"  . "<span style='color:blue'> - Нет в спецификации </span>".$order." </td></tr>";
+            }//foreach ($arrAllCSV[0][$i] as $str)
+
+            if (!$find && $cnc['name'] !==""){ 
+                // ДОБАВИТЬ ИМЯ CNC $cnc['name']
+                // .$num.".</i></span> ".$cnc['comment']." "."<b>".$cnc['name'] ."</b>"  
+                $report .= $reportCHPU 
+                . "<td align='left'><span style='color:blue'> - Нет в спецификации </span>".$order." </td></tr>";
+                
+                
+                // break ;
             }
             $num++;   
-        // } 
-    }
+       
+    }//foreach ($arrCHPU[0] as $cnc){
 }else{
     if (count($arrAllCSV[0])==0){
     $report .= "<tr><td  align='center'>Нет файла спецификации!</td></tr>";

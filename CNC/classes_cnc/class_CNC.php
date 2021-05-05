@@ -295,6 +295,7 @@ class class_CNC
         $var2=basename($this->pathfile);  
         // Logger::getLogger('log_class_CNC')->log("getSpecification -> ".$var2);      
         $this->arrSpecification['name']=substr($var2,0,strrpos($var2, '_')); // строка до последнего "_"
+        $this->arrSpecification['fname']=$var2; // имя файла
         $this->arrSpecification['DL']=round(trim($this->DL), 1);
         $this->arrSpecification['DS']=round(trim($this->DS), 1);
         $this->arrSpecification['DH']=round(trim($this->DH), 1);
