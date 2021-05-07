@@ -42,6 +42,50 @@
     vpi_template_bazis.php
     VPI_template.php
     VPI_templatePhpSpreadsheet.php
+    
+    ******
+    dbconn:
+    exit.php
+    index-session.php
+    index.php
+
+    admin\add-input.php
+    admin\change.php
+    admin\footer-index.php
+    admin\index.php
+    admin\response-del.php
+    admin\response.php
+    admin\upload.php
+    admin\CreateTablesMySQL\Create_Table_MySQL current orders.php
+    admin\CreateTablesMySQL\Create_Table_MySQL_user_vpi.php
+    admin\CreateTablesMySQL\Create_Table_MySQL!.php
+    admin\CreateTablesMySQL\Create_Table_MySQL.php
+    admin\CreateTablesMySQL\FORM_obj_furnitur_prop_TO_obj_MySQL.php
+    admin\CreateTablesMySQL\replacement_field_MySQL.php
+
+    AdminDashboard\application\bootstrap.php
+    AdminDashboard\application\models\model_kit.php
+    AdminDashboard\application\models\model_login.php
+    AdminDashboard\application\models\model_sofiausers.php
+    AdminDashboard\application\more\response.php
+
+    inc\inc-cart.php
+    inc\inc-menu-value.php
+    inc\inc-personal-profile.php
+    inc\inc-session-start.php
+    users\activation.php
+    users\changepass.php
+    users\checkemailaccess.php
+    users\sendactivationmail.php
+    users\sendNewPass.php
+    vpi\cart.php
+    vpi\getDataBaseVPI.php
+    vpi\getxlsx-bazis-specification4.php
+    vpi\inc-list-csv.php
+    vpi\upload.php
+    vpi\VPI_template.php
+    vpi\VPI_templatePhpSpreadsheet.php
+
 
     
 
