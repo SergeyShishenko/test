@@ -63,10 +63,10 @@
     admin\CreateTablesMySQL\FORM_obj_furnitur_prop_TO_obj_MySQL.php
     admin\CreateTablesMySQL\replacement_field_MySQL.php
 
-    AdminDashboard\application\bootstrap.php
-    AdminDashboard\application\models\model_kit.php
-    AdminDashboard\application\models\model_login.php
-    AdminDashboard\application\models\model_sofiausers.php
+    *AdminDashboard\application\bootstrap.php
+    *AdminDashboard\application\models\model_kit.php
+    ***AdminDashboard\application\models\model_login.php
+    *AdminDashboard\application\models\model_sofiausers.php
     AdminDashboard\application\more\response.php
 
     inc\inc-cart.php
