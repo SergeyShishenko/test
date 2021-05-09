@@ -10,18 +10,18 @@ $db = class_DataBase::getDB(); // Создаём объект базы данн�
 if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
 {
     // проверка на существование артикула в Базе
-    $Furn=mysqli_real_escape_string($dbconn, $_POST["content_Furn"]);
-    $Art=mysqli_real_escape_string($dbconn, $_POST["content_Art"]);
-    $Alias1=mysqli_real_escape_string($dbconn, $_POST["content_Alias1"]);
-    $Alias2=mysqli_real_escape_string($dbconn, $_POST["content_Alias2"]);
-    $Alias3=mysqli_real_escape_string($dbconn, $_POST["content_Alias3"]);
-    $NameFile=mysqli_real_escape_string($dbconn, $_POST["content_NameFile"]);    
-    $GruppId=mysqli_real_escape_string($dbconn, $_POST["content_grupp_id"]);
-    $Bild=mysqli_real_escape_string($dbconn, $_POST["content_Bild"]);
-    $Colour=mysqli_real_escape_string($dbconn, $_POST["content_Colour"]);
-    $Unit=mysqli_real_escape_string($dbconn, $_POST["content_Unit"]);
-    $HrefArticul=mysqli_real_escape_string($dbconn, $_POST["content_HrefArticul"]);
-    $typeFurn=mysqli_real_escape_string($dbconn, $_POST["content_path_img_obj"]);
+    $Furn=$db->realEscape($_POST["content_Furn"]);
+    $Art=$db->realEscape($_POST["content_Art"]);
+    $Alias1=$db->realEscape($_POST["content_Alias1"]);
+    $Alias2=$db->realEscape($_POST["content_Alias2"]);
+    $Alias3=$db->realEscape($_POST["content_Alias3"]);
+    $NameFile=$db->realEscape($_POST["content_NameFile"]);    
+    $GruppId=$db->realEscape($_POST["content_grupp_id"]);
+    $Bild=$db->realEscape($_POST["content_Bild"]);
+    $Colour=$db->realEscape($_POST["content_Colour"]);
+    $Unit=$db->realEscape($_POST["content_Unit"]);
+    $HrefArticul=$db->realEscape($_POST["content_HrefArticul"]);
+    $typeFurn=$db->realEscape($_POST["content_path_img_obj"]);
 
    if (arniculCheck ($Art,$db)){exit();}
    if (arniculCheck ($Alias1,$db)){exit();}
