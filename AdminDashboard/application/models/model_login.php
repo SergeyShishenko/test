@@ -8,38 +8,43 @@ class Model_Login extends Model
 	
 	public function get_data()
 	{		
-
-		if(isset($_POST['login'])){
-			$login=mysqli_real_escape_string($this->dbconn, $_POST['login']);
+		// class_SofiaUsers::USER
+		// class_SofiaUsers::USPASS
+		// class_SofiaUsers::USDEL
+		// class_SofiaUsers::USGENSUB
+		// class_SofiaUsers::USCHPASS
+		// class_SofiaUsers::USNREG
+		if(isset($_POST[class_SofiaUsers::USER])){
+			$login=mysqli_real_escape_string($this->dbconn, $_POST[class_SofiaUsers::USER]);
 		}
-		if(isset($_POST['password'])){
-			$password=mysqli_real_escape_string($this->dbconn, $_POST['password']);
+		if(isset($_POST[class_SofiaUsers::USPASS])){
+			$password=mysqli_real_escape_string($this->dbconn, $_POST[class_SofiaUsers::USPASS]);
 		}
 		
 	
-		if (isset($_POST['deluser'])){ 
+		if (isset($_POST[class_SofiaUsers::USDEL])){ 
 			if(class_SofiaUsers::check_dellogin($login)){				
-				$this->err['deluser']=array("Нельзя удалить");
+				$this->err[class_SofiaUsers::USDEL]=array("Нельзя удалить");
 				return $this->err;
 			}else{
-				// $this->err['deluser']=array("Удалить");
+				// $this->err[class_SofiaUsers::USDEL]=array("Удалить");
 				// return $this->err;
-				$this->err['deluser']=class_SofiaUsers::deluser($this->dbconn,$login);
+				$this->err[class_SofiaUsers::USDEL]=class_SofiaUsers::deluser($this->dbconn,$login);
 				return $this->err;
 			}
 			
 		}
-		if (isset($_POST['generatesubmit'])){ 
+		if (isset($_POST[class_SofiaUsers::USGENSUB])){ 
 			$this->err['generateCode']=array(class_SofiaUsers::generateCode(8));
 			return $this->err;
 		}
 
-		if (isset($_POST['changepass'])){ 
-			$this->err['changepass']=class_SofiaUsers::changepass($this->dbconn,$login,$password);
+		if (isset($_POST[class_SofiaUsers::USCHPASS])){ 
+			$this->err[class_SofiaUsers::USCHPASS]=class_SofiaUsers::changepass($this->dbconn,$login,$password);
 			return $this->err;
 		}
 
-		if(isset($_POST['login']) && isset($_POST['password']) && isset($_POST['newregister']))
+		if(isset($_POST[class_SofiaUsers::USER]) && isset($_POST[class_SofiaUsers::USPASS]) && isset($_POST[class_SofiaUsers::USNREG]))
 		{
 			
 			$this->err[]=class_SofiaUsers::newregister($this->dbconn,$login,$password);

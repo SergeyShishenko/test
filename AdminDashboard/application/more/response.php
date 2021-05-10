@@ -1,10 +1,7 @@
 <?php
-require_once(dirname(dirname(dirname(dirname(dirname(__FILE__))))).'/DATA/TABLES/configDB.php'); 
-$dbconn=dbconnect();
-if ($dbconn->connect_errno) {
-    printf("Не удалось подключиться: %s\n", $dbconn->connect_error);
-    exit();
-}
+// require_once(dirname(dirname(dirname(dirname(dirname(__FILE__))))).'/DATA/TABLES/configDB.php'); 
+require_once( $_SERVER['DOCUMENT_ROOT'] . '/DATA/TABLES/configDB.php'); 
+
 $db = class_DataBase::getDB(); // Создаём объект базы данных
 //проверяем $_POST["content_Furn"] на пустое значение
 if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
@@ -28,60 +25,8 @@ if(isset($_POST["content_Furn"]) && strlen($_POST["content_Furn"])>0)
    if (arniculCheck ($Alias2,$db)){exit();}
    if (arniculCheck ($Alias3,$db)){exit();}
 
-
-    // добавляем новую запись во все таблицы объекта
-                    $sql = " INSERT INTO `obj` (`obj_id`, `name_obj`, `grupp_id`, `html_id`, `path_img_obj`, `fname_img_obj`, `data_href_img_obj`, `fname_img_smoll_obj`, `data_href_img_smoll_obj`, `obj_def`, `number_in_order_obj`, `characteristic_obj`, `img_orientation_obj`, `img_alt_obj`, `template_obj`)
-                     VALUES (NULL,'$Furn', '$GruppId', '', '$typeFurn','$NameFile', NULL, '', NULL, '$Furn', NULL, NULL, 'album', NULL, NULL)";
-                    if(mysqli_query($dbconn,$sql))
-                    {                    
-                        $id = mysqli_insert_id($dbconn); //Get ID of last inserted record from MySQL 
-                        $html_id = "obj_".$id;
-                        $sql = "UPDATE `obj` SET `html_id`='$html_id' WHERE `obj_id`='$id'";
-                        if(mysqli_query($dbconn,$sql))
-                            { 
-                            mysqli_query($dbconn, "UPDATE `obj` SET `html_id` = '$html_id' WHERE `obj`.`obj_id`='$id'");
-                            mysqli_query($dbconn, "INSERT INTO  `obj_alias`(`obj_id`) VALUES ('$id')");
-                            mysqli_query($dbconn, "INSERT INTO  `obj_download`(`obj_id`) VALUES ('$id')");
-                           
-                           if( !mysqli_query($dbconn, "INSERT INTO  `obj_furnitur_prop`(`obj_furnitur_prop_id`, `name_furnitur_obj_prop`, `articul_furnitur_obj`, `articul_alias1`, `articul_alias2`, `articul_alias3`, `made_furnitur_obj`, `url_furnitur_obj_prop`, `obj_id`, `url_video_obj_prop`, `color_obj_prop`, `def_obj_prop`, `unit_obj_prop`, `fname_img_furn`)  
-                             VALUES (NULL, '$Furn', '$Art', '$Alias1', '$Alias2', '$Alias3', '$Bild', '$HrefArticul', '$id', NULL, '$Colour', '$Furn', '$Unit', '$NameFile')")){
-                                header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.mysqli_error($dbconn));
-                                // exit();
-                             }
-
-                            mysqli_query($dbconn, "INSERT INTO  `obj_in_addition`(`obj_id`) VALUES ('$id')");
-                             }
-                            else{//вывод ошибки                                        
-                                header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.mysqli_error($dbconn));
-                                exit();
-                            } 
-                        
-                    }else{//вывод ошибки                                        
-                        header('HTTP/1.1 500 Looks like mysql error, could not insert record2! '.mysqli_error($dbconn));
-                        exit();
-                    }  
-
-                    mysqli_close($dbconn);
-                    unset($GLOBALS['dbconn']); 
-    echo $html_id;
+     echo include($_SERVER['DOCUMENT_ROOT'] . '/DATA/TABLES/inc_obj_furnitur.php');
 }
 
-
-
-function arniculCheck ($articul,$db){
-    if($articul !=""){
-        $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} OR `articul_alias1` = {?} OR `articul_alias2` = {?} OR `articul_alias3` = {?} ";
-        $table = $db->select($query, array($articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
-        if ($table){
-            echo "Артикул уже внесен в Базу Данных!";
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-   
-
-}
 
 ?>

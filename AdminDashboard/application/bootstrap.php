@@ -1,6 +1,7 @@
 <?php
 // подключаем файлы ядра
-define('PATH__CORE', dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/'); 
+// define('PATH__CORE', dirname(dirname(dirname(dirname(__FILE__)))) . '/DATA/TABLES/'); 
+define('PATH__CORE',  $_SERVER['DOCUMENT_ROOT'] . '/DATA/TABLES/'); 
 require_once PATH__CORE .'configDB.php';
 include PATH__CORE .'class_SofiaUsers.php';
 include PATH__CORE .'class_QuerySofia.php';
