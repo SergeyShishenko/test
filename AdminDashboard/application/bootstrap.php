@@ -24,8 +24,9 @@ require_once PATH__CORE .'core/controller.php';
 
 if (class_QuerySofia::getQS()->getRole() !== DBfield::AROLE){
 ?>
-	<?php echo dirname(dirname(dirname(__FILE__)))."/shablony-dokumentov-titulnyy-kd.php";?>
-	<script>document.location.href="/www/shablony-dokumentov-titulnyy-kd.php"</script>
+	<?php //echo dirname(dirname(dirname(__FILE__)))."/shablony-dokumentov-titulnyy-kd.php";?>
+	<?php //echo SiteRoot::getRoot()."/shablony-dokumentov-titulnyy-kd.php";?>
+	<script>document.location.href ="<?php echo SiteRoot::getRoot() ?>/shablony-dokumentov-titulnyy-kd.php"</script>
 <?php
 	   exit();
 }
