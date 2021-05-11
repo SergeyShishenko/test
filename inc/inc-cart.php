@@ -10,12 +10,20 @@
         //printf("Текущий набор символов: %s\n", mysqli_character_set_name($link));
     }
 
-    if (file_exists($_SERVER['DOCUMENT_ROOT'].'/vpi/cart.php')) {
-        require_once($_SERVER['DOCUMENT_ROOT'].'/vpi/cart.php');// для сайта !!!!!!!
-    }
-    else {
-        require_once($_SERVER['DOCUMENT_ROOT'].'/www/vpi/cart.php');// для localhost
-    }
+    // SiteRoot::getRoot()
+
+    // if (file_exists($_SERVER['DOCUMENT_ROOT'].'/vpi/cart.php')) {
+    //     require_once($_SERVER['DOCUMENT_ROOT'].'/vpi/cart.php');// для сайта !!!!!!!
+    // }
+    // else {
+    //     require_once($_SERVER['DOCUMENT_ROOT'].'/www/vpi/cart.php');// для localhost
+    // }
+
+   
+    require_once($_SERVER['DOCUMENT_ROOT'] . SiteRoot::getRoot() . '/vpi/cart.php');
+    
+ 
+
     mysqli_close($dbconn); 
     unset($GLOBALS['dbconn']);
 ?>

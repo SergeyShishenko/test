@@ -86,6 +86,24 @@
     vpi\VPI_template.php
     vpi\VPI_templatePhpSpreadsheet.php
 
+*******
+www - vpi\VPI_template.php
+
+*inc\inc-cart.php
+vpi\title-generation.php
+vpi\getDataBaseVPI.php
+vpi\upload.php
+vpi\VPI_templatePhpSpreadsheet.php
+vpi\vpi_template_bazis.php
+vpi\300_Template.php
+vpi\htmlStringToXLS.php
+users\sendNewPass.php
+users\sendactivationmail.php
+
+
+
+
+
 
     
 
