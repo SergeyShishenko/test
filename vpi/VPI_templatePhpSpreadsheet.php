@@ -6,7 +6,7 @@ use PhpOffice\PhpSpreadsheet\Worksheet\Drawing as drawing; // Instead PHPExcel_W
 session_start();
 
 
-
+// exit();
 /** Error reporting */
 error_reporting(E_ALL);
 ini_set('display_errors', TRUE);
@@ -29,9 +29,12 @@ else {
 // require_once($_SERVER['DOCUMENT_ROOT'].'/DATA/TABLES/configDB.php');// для localhost !!!!!!!
 
 $sess_id=session_id();
-$hash=$_COOKIE["hash"];
+// $hash=$_COOKIE["hash"];
+
 
 $dbconn=dbconnect();
+$hash=mysqli_real_escape_string($dbconn, $_COOKIE['hash']);
+
 if (!mysqli_set_charset($dbconn, "utf8")) {
     printf("Ошибка при загрузке набора символов utf8: %s\n", mysqli_error($link));
     exit();
@@ -39,7 +42,7 @@ if (!mysqli_set_charset($dbconn, "utf8")) {
     //printf("Текущий набор символов: %s\n", mysqli_character_set_name($link));
 }
 
-$Result_user = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LIKE '%".$hash."%'");
+$Result_user = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` = '$hash'");
 $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
 $user_sofia_id=$row_user['user_sofia_id'];
 
@@ -70,7 +73,7 @@ if(isset($_POST['ids']))//генерация xls
 
                 $furnitur_count=$rowsUser_vpi['count_obj'];
                 // $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_id` = $furnitur_id";// из таблицы вся фурнитура
-                $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_id` = $furnitur_id";// из таблицы вся фурнитура
+                $sql = "SELECT *  FROM `obj_furnitur_prop` WHERE `obj_id` = '$furnitur_id'";// из таблицы вся фурнитура
                 $Result=mysqli_query($dbconn,$sql); 
                 $rows = mysqli_fetch_array($Result); 
                 array_push($data,
@@ -260,7 +263,7 @@ elseif (isset($_POST['addids'])) {
             
             
         }else{//вывод ошибки     
-            echo    'vpi\VPI_template.php NO $sql- '.$sql .'Ошибка: '.mysqli_error($dbconn);                               
+            // echo    'vpi\VPI_template.php NO $sql- '.$sql .'Ошибка: '.mysqli_error($dbconn);                               
             // header('HTTP/1.1 500 Looks like mysql error, could not insert record2! '.$_POST["addids"]." ---".$sql." -> ".mysqli_error($dbconn));
             exit();
         } 
@@ -288,7 +291,7 @@ elseif (isset($_POST['addids'])) {
                             echo "обновленно ".$_POST['fid']."=>".$_POST['val'];
                          }
                         else{//вывод ошибки                                        
-                            header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.$sql." -> ".mysqli_error($dbconn));
+                            header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.mysqli_error($dbconn));
                             exit();
                         } 
     
@@ -305,7 +308,7 @@ elseif (isset($_POST['addids'])) {
                             echo "Запись удалена ID-".$_POST['del'];
                          }
                         else{//вывод ошибки                                        
-                            header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.$sql." -> ".mysqli_error($dbconn));
+                            header('HTTP/1.1 500 Looks like mysql error, could not insert record1! '.mysqli_error($dbconn));
                             exit();
                         } 
     

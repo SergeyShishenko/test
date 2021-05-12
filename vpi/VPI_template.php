@@ -46,9 +46,12 @@ else {
 // require_once($_SERVER['DOCUMENT_ROOT'].'/DATA/TABLES/configDB.php');// для localhost !!!!!!!
 
 $sess_id=session_id();
-$hash=$_COOKIE["hash"];
+// $hash=$_COOKIE["hash"];
+
 
 $dbconn=dbconnect();
+$hash=mysqli_real_escape_string($dbconn, $_COOKIE['hash']);
+
 if (!mysqli_set_charset($dbconn, "utf8")) {
     printf("Ошибка при загрузке набора символов utf8: %s\n", mysqli_error($link));
     exit();
@@ -56,7 +59,7 @@ if (!mysqli_set_charset($dbconn, "utf8")) {
     //printf("Текущий набор символов: %s\n", mysqli_character_set_name($link));
 }
 /** PHPExcel_IOFactory */
-$Result_user = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LIKE '%".$hash."%'");
+$Result_user = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` = '$hash'");
 $row_user = mysqli_fetch_array($Result_user);//получаем все записи из таблицы
 $user_sofia_id=$row_user['user_sofia_id'];
 

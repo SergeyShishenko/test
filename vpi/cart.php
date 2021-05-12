@@ -1,22 +1,12 @@
 <?php
 
-  $hash=$_COOKIE["hash"];
+//   $hash=$_COOKIE["hash"];
+  $hash=mysqli_real_escape_string($dbconn, $_COOKIE['hash']);
   if (is_null($hash)){
     $hash="-";  
     }
 
-//   $result = mysqli_query($dbconn,"SELECT * FROM `user` WHERE `hash_id` LIKE '%".$hash."%'");
-//   if (mysqli_num_rows($result) > 0) {//есть
-   
-//    $result = mysqli_query($dbconn,"UPDATE `user` SET `date_start` = CURRENT_TIMESTAMP WHERE `hash_id` LIKE '%".$hash."%'");
-//   }
-//   else{
-//     $result = mysqli_query($dbconn,"INSERT INTO `user` (`vpi_hash_id`, `hash_id`, `date_start`) VALUES (NULL, '$hash', CURRENT_TIMESTAMP)");
-    
-//   }
-
-
-    $Result_user = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LIKE '%".$hash."%'");
+    $Result_user = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` = '$hash'");
 
     // if (mysqli_num_rows($Result_user) > 0) {//есть запись
         if ($Result_user){

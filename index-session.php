@@ -46,14 +46,12 @@ if (isset($_POST['login']) && isset($_POST['passw'])) {
     $_SESSION['sess_pass'] = $_POST['passw'];
     $login= $_SESSION['sess_login'];
     $escape_string_login=mysqli_real_escape_string($dbconn, $login);
-    $hash=$_COOKIE["hash"];
-    // echo '$s_id ' . $s_id . '<br>';
-    // var_dump($_SESSION);
-    // var_dump($_COOKIE);
-    // exit();
+    $hash=mysqli_real_escape_string($dbconn, $_COOKIE['hash']);
+    // $hash=checkHash($_COOKIE["hash"]);
+   
     if (is_null($hash)){ $hash="-";  }
 
-    $result = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` LIKE '%".$hash."%'");
+    $result = mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_hash` = '$hash'");
     if (mysqli_num_rows($result) > 0) {//есть запись   
     
     $result = mysqli_query($dbconn,"UPDATE `sofia_users` SET `user_sess_date_start` = CURRENT_TIMESTAMP WHERE user_login='$escape_string_login'");

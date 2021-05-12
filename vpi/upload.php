@@ -1,27 +1,12 @@
 <?php
 // vpi\upload.php
-//  //подключаем конфигурационный файл
-//  define('__ROOT__', dirname(dirname(__FILE__))); 
-//  // require_once(__ROOT__.'/DATA/TABLES/configDB.php'); 
-//  require_once(dirname(__ROOT__).'/DATA/TABLES/configDB.php'); 
-
-//  $dbconn=dbconnect();
-// // echo  PATH__FILES ."!!!!!!!!!!!!!!";
-// // exit();
-// if ( !$dbconn ) {
-//     die(mysql_error());
-// }
 
 if (file_exists($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php')) {
-	// require_once ($_SERVER['DOCUMENT_ROOT'] . '/Classes/PHPExcel/IOFactory.php');// для сайта !!!!!!!
 	$site='';
 }
-else {
-	// require_once ($_SERVER['DOCUMENT_ROOT'] . '/www/Classes/PHPExcel/IOFactory.php');// localhost !!!!!!!
+else {	
 	$site='/www';
 }
-// echo "site $site";
-// exit();
 
 if(isset($_POST["arr"]) )//генерация файла
 {
