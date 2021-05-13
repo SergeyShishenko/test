@@ -4760,13 +4760,15 @@ include 'inc/inc-header-send-modal.php';
                                                                 <TABLE >                                                                                          
                                                                     <TR>
                                                                         <TD class="mapsite" colspan="2" id="flo-kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">
-                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-universalnaya.php#kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">5000590-90-101 КФДМ блоков дверных (1 комплект на 1 дверной блок)<span> <br>~kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok</span></p>
+                                                                            <p data-img="./dist/images/no-foto.png" data-href="furnitura-universalnaya.php#kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok">5000590-90-101 КФДМ блоков дверных (1 комплект на 1 дверной блок)<span> <br>~kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok </span></p>
+                                                                            <p data-href="furnitura-universalnaya.php#kfdm-blokov-dvernyh-1-komplekt-na-1-dvernoy-blok" class="KEYWORDS">кмдф 1 для дверей<span><br>~rvla</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4--> 
                                                                     <TR>
                                                                         <TD class="mapsite" id="flo-kfdm-plintusov-1-komplekt-na-10-mp-plintusa">
                                                                             <p data-img="./dist/images/no-foto.png" data-href="furnitura-universalnaya.php#kfdm-plintusov-1-komplekt-na-10-mp-plintusa">5000590-90-105 КФДМ плинтусов (1 комплект на 10 м.п. плинтуса)<span> <br>~kfdm-plintusov-1-komplekt-na-10-mp-plintusa</span></p>
+                                                                            <p data-href="furnitura-universalnaya.php#kfdm-plintusov-1-komplekt-na-10-mp-plintusa" class="KEYWORDS">кмдф для плинтуса<span><br>~rvla</span></p>
                                                                         </TD>                                                                         
                                                                     </TR>  
                                                                     <TR><TD></TD></TR> <!--end LEVEL4-->                                                                            
