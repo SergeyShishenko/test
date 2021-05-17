@@ -7,9 +7,11 @@ session_start();
 // define('__ROOT__', dirname(dirname(dirname(__FILE__)))); 
 require_once(dirname(dirname(__FILE__)).'/DATA/TABLES/configDB.php'); // подключение к базе данных
 $dbconn=dbconnect();
-$hash=$_COOKIE["hash"];
+$hash=mysqli_real_escape_string($dbconn, $_COOKIE['hash']);
+// $hash=$_COOKIE["hash"];
 mysqli_query($dbconn,"DELETE FROM `user_vpi` WHERE `vpi_hash_id`='$hash'");
 mysqli_close($dbconn); 
+unset($GLOBALS['dbconn']);
 // Удаляем cookies
 if (isset($_SERVER['HTTP_COOKIE'])) {
     $cookies = explode(';', $_SERVER['HTTP_COOKIE']);

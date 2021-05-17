@@ -51,6 +51,7 @@ $sess_id=session_id();
 
 $dbconn=dbconnect();
 $hash=mysqli_real_escape_string($dbconn, $_COOKIE['hash']);
+if (is_null($hash)){ $hash="-"; }
 
 if (!mysqli_set_charset($dbconn, "utf8")) {
     printf("Ошибка при загрузке набора символов utf8: %s\n", mysqli_error($link));
