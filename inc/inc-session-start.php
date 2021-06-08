@@ -10,7 +10,6 @@ if(file_exists($_SERVER['DOCUMENT_ROOT'] . '/www/index.php')){
 
 
 
-
 // ini_set('session.gc_maxlifetime', 43200);// 12 часов
 // // ini_set('session.cookie_lifetime', 0);
 // // session_set_cookie_params(0);
