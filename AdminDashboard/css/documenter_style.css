@@ -36,7 +36,7 @@ footer, header, section {
 a{ color:#6F6F6F; text-decoration:none; cursor:pointer; }
 a:hover { text-decoration:underline }
 p, ul, ol{
-	margin:18px 0;
+	margin:18px 0 !important;
 	line-height:1.5em;
 }
 li{
