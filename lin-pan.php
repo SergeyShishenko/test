@@ -9,7 +9,5 @@ if(file_exists($_SERVER['DOCUMENT_ROOT'] . '/www/index.php')){
      $site=dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/icq/';          
     }
 include  $site.'/ajax-s.php';
-
-// header('Location:AdminDashboard/');    exit();
 exit();
 ?>
