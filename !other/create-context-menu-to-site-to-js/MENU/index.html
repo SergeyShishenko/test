@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Создаем контекстное меню для сайта </title>  
+        <link rel="stylesheet" href="css/сontextMenu.css">
+  </head>
+  <body>
+    <menu class="menu">
+        <li class="menu-item">
+            <button type="button" class="menu-btn">
+                <i class="fa fa-folder-open"></i>
+                <span class="menu-text">Открыть</span>
+            </button>
+        </li>
+        <li class="menu-item disabled">
+            <button type="button" class="menu-btn">
+                <span class="menu-text">Открыть в новом окне</span>
+            </button>
+        </li>
+        <li class="menu-separator"></li>
+        <li class="menu-item">
+            <button type="button" class="menu-btn">
+                <i class="fa fa-reply"></i>
+                <span class="menu-text">Обновить</span>
+            </button>
+        </li>
+        <li class="menu-item">
+            <button type="button" class="menu-btn">
+                <i class="fa fa-star"></i>
+                <span class="menu-text">В закладки</span>
+            </button>
+        </li>
+        <li class="menu-item submenu">
+            <button type="button" class="menu-btn">
+                <i class="fa fa-users"></i>
+                <span class="menu-text">Социальность</span>
+            </button>
+            <menu class="menu">
+                <li class="menu-item">
+                    <button type="button" class="menu-btn">
+                        <i class="fa fa-comment"></i>
+                        <span class="menu-text">Комментарии</span>
+                    </button>
+                </li>
+                <li class="menu-item submenu">
+                    <button type="button" class="menu-btn">
+                        <i class="fa fa-share"></i>
+                        <span class="menu-text">Поделиться</span>
+                    </button>
+                    <menu class="menu">
+                        <li class="menu-item">
+                            <button type="button" class="menu-btn">
+                                <i class="fa fa-twitter"></i>
+                                <span class="menu-text">Twitter</span>
+                            </button>
+                        </li>
+                        <li class="menu-item">
+                            <button type="button" class="menu-btn">
+                                <i class="fa fa-facebook-official"></i>
+                                <span class="menu-text">Facebook</span>
+                            </button>
+                        </li>
+                        <li class="menu-item">
+                            <button type="button" class="menu-btn">
+                                <i class="fa fa-google-plus"></i>
+                                <span class="menu-text">Google Plus</span>
+                            </button>
+                        </li>
+                        <li class="menu-item">
+                            <button type="button" class="menu-btn">
+                                <i class="fa fa-envelope"></i>
+                                <span class="menu-text">Email</span>
+                            </button>
+                        </li>
+                    </menu>
+                </li>
+            </menu>
+        </li>
+        <li class="menu-separator"></li>
+        <li class="menu-item">
+            <button type="button" class="menu-btn">
+                <i class="fa fa-download"></i>
+                <span class="menu-text">Сохранить</span>
+            </button>
+        </li>
+        <li class="menu-item">
+            <button type="button" class="menu-btn">
+                <i class="fa fa-edit"></i>
+                <span class="menu-text">Изменить</span>
+            </button>
+        </li>
+        <li class="menu-item">
+            <button type="button" class="menu-btn">
+                <i class="fa fa-trash"></i>
+                <span class="menu-text">Удалить</span>
+            </button>
+        </li>
+    </menu>
+
+    <div class="container">
+        <h1>Нажмите правую клавишу мыши</h1>
+    </div>
+        
+    <script src="js/context-menu.js"></script> 
+  </body>
+</html>
