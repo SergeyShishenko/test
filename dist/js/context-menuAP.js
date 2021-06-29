@@ -17,7 +17,7 @@ function onContextMenu(e){
 }
 
 function onMouseDown(e){
-    hideMenu();
+    // hideMenu();
     document.removeEventListener('mousedown', onMouseDown);
 }
 
