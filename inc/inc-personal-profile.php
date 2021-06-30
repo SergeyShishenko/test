@@ -1,9 +1,10 @@
 <?php
 // inc\inc-personal-profile.php
+session_start();
  require_once (dirname(dirname(dirname(__FILE__))).'/DATA/TABLES/configDB.php'); // подключение к базе данных
  $dbconn=dbconnect();
 //  $login=$_COOKIE['login'];
- $login=mysqli_real_escape_string($dbconn, $_COOKIE['login']);
+ $login=mysqli_real_escape_string($dbconn, $_SESSION['sess_login']);
 //  $res=mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_login`='$login' AND `user_status`= 1");
  $res=mysqli_query($dbconn,"SELECT * FROM `sofia_users` WHERE `user_login`='$login'");
  $data = mysqli_fetch_assoc($res);

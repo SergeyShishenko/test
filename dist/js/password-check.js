@@ -58,8 +58,9 @@ for( let i = 0; i < tooltip.length; i++){ // проходим циклом по 
 function changepass(){
     // alert(getCookie("login"));
     var request = new XMLHttpRequest();   
-    var body = 'login=' +  getCookie ( "login" ) +
-    '&chpass=' + document.getElementById('password').value;
+    // var body = 'login=' +  getCookie ( "login" ) +
+    // '&chpass=' + document.getElementById('password').value;
+    var body = 'chpass=' + document.getElementById('password').value;
     // console.log(body);
     request.open('POST','users/changepass.php',true);
     request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -83,9 +84,10 @@ function changepass(){
   function emailaccess(){  
     $("#activationmail").show();
     $("#activate").show();
-    let login = getCookie ( "login" ); 
+    // let login = getCookie ( "login" ); 
     let Email = document.getElementById('email-check').value; 
-    let body = 'login=' +  login + '&Email=' + Email;
+    // let body = 'login=' +  login + '&Email=' + Email;
+    let body = 'Email=' + Email;
     // console.log("ajax "+body);
       jQuery.ajax({
         type: "POST", // HTTP метод  POST или GET
@@ -97,7 +99,7 @@ function changepass(){
         // console.log(response);
         $('#activate').text(response);   
         // запуск проверки активации 
-        checkemailaccess(login,Email); 
+        checkemailaccess(Email); 
         },
         error:function (xhr, ajaxOptions, thrownError){
             //выводим ошибку
@@ -112,7 +114,7 @@ function changepass(){
   
     let timerId = setInterval(function() {
           // let access= false;
-          let body = 'login=' +  login +  '&Email=' + Email;
+          let body = 'Email=' + Email;
 
           // проверка базы
           // users\checkemailaccess.php
