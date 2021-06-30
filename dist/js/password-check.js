@@ -110,7 +110,7 @@ function changepass(){
   }
  
 
-  function checkemailaccess(login,Email) {    
+  function checkemailaccess(Email) {    
   
     let timerId = setInterval(function() {
           // let access= false;
@@ -125,7 +125,7 @@ function changepass(){
                 data:body, //post переменные
                 success:function(response){
                 // в случае успеха, скрываем, выбранный пользователем для удаления, элемент
-                // console.log(response);
+                 console.log(response);
 
                 // $('#activate').text(response); 
                 if (response==1) {
@@ -135,6 +135,7 @@ function changepass(){
                 $("#question").hide();
                 $("#emailedit").show();
                 document.getElementById("email-check").readOnly = true;
+                // document.getElementById("email-check").value = Email;
                 }else if(response==2){
                   clearInterval(timerId);
                 }
