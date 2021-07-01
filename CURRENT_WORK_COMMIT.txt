@@ -108,11 +108,15 @@ model login
 dist\js\password-check.js
 dist\js\index-form.js
 dist\js\script.js
+index.php
+CNC\inc-drop.php
 
 inc\inc-head.php ! НАДО ?
 
 inc\inc-personal-profile.php
 inc\inc-session-start.php
+inc\inc-footer.php
+inc\inc-footer2.php
 vpi\getxlsx-bazis-specification4.php
 F:\OpenServer_5.3.8\domains\localhost\DATA\TABLES\*
 F:\OpenServer_5.3.8\domains\localhost\DATA\TABLES\index-session.php
