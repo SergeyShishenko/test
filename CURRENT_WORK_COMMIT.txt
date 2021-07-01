@@ -108,6 +108,9 @@ model login
 dist\js\password-check.js
 dist\js\index-form.js
 dist\js\script.js
+
+inc\inc-head.php ! НАДО ?
+
 inc\inc-personal-profile.php
 inc\inc-session-start.php
 vpi\getxlsx-bazis-specification4.php
