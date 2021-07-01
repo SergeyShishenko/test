@@ -111,7 +111,9 @@ dist\js\script.js
 inc\inc-personal-profile.php
 inc\inc-session-start.php
 vpi\getxlsx-bazis-specification4.php
+F:\OpenServer_5.3.8\domains\localhost\DATA\TABLES\*
 F:\OpenServer_5.3.8\domains\localhost\DATA\TABLES\index-session.php
+F:\OpenServer_5.3.8\domains\localhost\DATA\TABLES\inc-menu-value.php
 
 
 
