@@ -29,8 +29,8 @@
     <script src="./dist/js/drop.js"></script>  
     <script src="./dist/js/selectcell.js?<?php echo $selectcell; ?>"></script>
     <script src="./dist/js/calc-bloka-pitaniya.js"></script>
-    <?php if($role !="guest"){ ?>
-    <script src="./dist/js/password-check.js?<?php echo $role; ?>"></script>
+    <?php if($role !=DBfield::GROLE){ ?> 
+    <script src="./dist/js/password-check.js"></script>
     <?php } ?>
     <script>
     window.bLazy = new Blazy({

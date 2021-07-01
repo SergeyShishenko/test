@@ -5211,7 +5211,7 @@ include 'inc/inc-header-send-modal.php';
     <script src="./dist/js/application.js"></script> 
     <script src="./dist/js/script.js?v=<?php echo $scriptVersion; ?>"></script>   
     <script src="./dist/js/floating.js?v=<?php echo $floatingVersion; ?>"></script> 
-    <?php if($role !="guest"){ ?>
+    <?php if($role !=DBfield::GROLE){ ?>
         <script src="./dist/js/password-check.js?<?php echo $passworCheck; ?>"></script>
     <?php } ?>
    

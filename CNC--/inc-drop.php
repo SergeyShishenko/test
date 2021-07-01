@@ -12,8 +12,8 @@
 <input  id="dircnc"  name="folder" type="hidden"><br>
 <!-- <input  id="dircnc"  name="folder" disabled><br> -->
 
-<?php if($role =="admin"){ ?>
-<button type="button" id="delFolder" style="float:right;">Удалить всю папку uploads</button>   
+<?php if($role ==DBfield::AROLE){ ?>
+<button type="button" id="delFolder" style="float:right;">Удалить всю папку uploads!</button>   
 <?php } ?>  
 <button type="button" id="clear">Очистить</button>  
 </div> 

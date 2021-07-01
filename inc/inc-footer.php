@@ -44,7 +44,7 @@
                                     <input type="file" id="uploadbtn" multiple  >
                                     <!-- </form> -->
                                 </div>
-                                <?php if($role =="admin"){ ?>
+                                <?php if($role == DBfield::AROLE){ ?>
                                 <div id="out_CNC"></div>
                                 <input type="button" value="Печать CNC" onclick="PrintElem('#out_CNC')" />
                                 <input type="button" value="Очистить" onclick="Reset('#out_CNC')" />
@@ -144,7 +144,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title" id="image-gallery-title"></h4>
-                        <?php if($role =="admin"){ ?>
+                        <?php if($role ==DBfield::AROLE){ ?>
                         <button    id ="pr-move" class="btn btn-info im-download"  title="Переместить в СЕ"><i class="glyphicon glyphicon-move" aria-hidden="true"></i> Переместить в СЕ</button>
                         <?php } ?>
                         <button type="button" class="close" data-dismiss="modal">
@@ -185,7 +185,7 @@
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/bootstrap.js"></script> 
     <script src="./dist/js/application.js"></script> 
-    <?php if($role !="guest"){ ?>
+    <?php if($role != DBfield::GROLE){ ?>
         <script src="./dist/js/password-check.js?<?php echo $passworCheck; ?>"></script>
     <?php } ?>
    <script src="./dist/js/script.js?v='<?php echo $scriptVersion; ?>'"></script>
@@ -195,7 +195,7 @@
     <!-- Генерация -->
     <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>  -->
     <!-- <script src="./dist/js/shortcut.js"></script> -->
-    <!-- <?php echo $role; ?> -->
+    <!--  -->
     <script src="./dist/js/drop.js?v='<?php echo $dropVersion; ?>'"></script>  
     <script src="./dist/js/selectcell.js?<?php echo $selectcell; ?>"></script>
     <script src="./dist/js/сontextMenu.js?<?php echo $сontextMenu; ?>"></script>
