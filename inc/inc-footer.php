@@ -48,9 +48,9 @@
                                 <div id="out_CNC"></div>
                                 <input type="button" value="Печать CNC" onclick="PrintElem('#out_CNC')" />
                                 <input type="button" value="Очистить" onclick="Reset('#out_CNC')" />
-                                <a class='button-chpu'  href="lin-pan.php" type='button'  style="float: left;">
+                                <!-- <a class='button-chpu'  href="lin-pan.php" type='button'  style="float: left;">
                                     <span  >Admin Panel</span>                                 
-                                </a>
+                                </a> -->
                                 <!-- <input type="button" value="Проверка ЧПУ" onClick="window.location='CNC/'"  /> -->
                                 <!-- <a class='button-chpu'  href="CNC/" type='button'  style="float: left;">
                                     <span  >Проверка ЧПУ</span>                                 
