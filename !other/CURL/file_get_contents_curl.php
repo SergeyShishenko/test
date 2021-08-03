@@ -21,5 +21,7 @@
 
     // var_dump(file_get_contents_curl('https://500stp.website'));//curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     // file_get_contents_curl('https://500stp.website');
+    // file_get_contents_curl('http://localhost/www/');
+    
  
 ?>
