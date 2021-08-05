@@ -1248,10 +1248,10 @@ dataArrayTitle={};
 // после генерации
     $("body").on('transitionend','.button-gen:not(".vpi-gen")', function(eventObject) {
         //  alert($(eventObject.target).attr('id'));
-        var titul='КД';
+        var titul='ПЗ';
         switch ($(eventObject.target).attr('id')) {                                
             case "TKD":
-                titul='КД';
+                titul='ПЗ';
                 break;
             case "TDP":
                  titul='ДП';
