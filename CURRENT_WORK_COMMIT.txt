@@ -75,32 +75,36 @@
     inc\inc-menu-value.php
     inc\inc-personal-profile.php
     inc\inc-session-start.php
-    users\activation.php
-    users\changepass.php
-    users\checkemailaccess.php
-    users\sendactivationmail.php
-    users\sendNewPass.php
-    vpi\cart.php
-    vpi\getDataBaseVPI.php
-    vpi\getxlsx-bazis-specification4.php
-    vpi\inc-list-csv.php
-    vpi\upload.php
-    vpi\VPI_template.php
-    vpi\VPI_templatePhpSpreadsheet.php
+
+
+    !!!users\activation.php
+    !!!users\changepass.php
+    !!!users\checkemailaccess.php
+    !!!users\sendactivationmail.php
+    !!!users\sendNewPass.php
+
+    !!!vpi\cart.php
+    !!!vpi\getDataBaseVPI.php
+    !!!vpi\getxlsx-bazis-specification4.php
+    !!!vpi\inc-list-csv.php
+    !!!vpi\upload.php
+    !!!vpi\VPI_template.php
+    !!!vpi\VPI_templatePhpSpreadsheet.php
 
 *******
-www - vpi\VPI_template.php
+www - !!!vpi\VPI_template.php
 
 *inc\inc-cart.php
-vpi\title-generation.php
-vpi\getDataBaseVPI.php
-vpi\upload.php
-vpi\VPI_templatePhpSpreadsheet.php
-vpi\vpi_template_bazis.php
-vpi\300_Template.php
-vpi\htmlStringToXLS.php
-users\sendNewPass.php
-users\sendactivationmail.php
+!!!vpi\title-generation.php
+!!!vpi\getDataBaseVPI.php
+!!!vpi\upload.php
+!!!vpi\VPI_templatePhpSpreadsheet.php
+!!!vpi\vpi_template_bazis.php
+!!!vpi\300_Template.php
+!!!vpi\htmlStringToXLS.php
+!!!
+!!!users\sendNewPass.php
+!!!users\sendactivationmail.php
 
 
 
@@ -110,16 +114,26 @@ model login
 dist\js\password-check.js
 dist\js\index-form.js
 dist\js\script.js
+
+
 index.php
-CNC\inc-drop.php
+!!!CNC\inc-drop.php
 
 inc\inc-head.php ! НАДО ?
 
-inc\inc-personal-profile.php
-inc\inc-session-start.php
-inc\inc-footer.php
-inc\inc-footer2.php
-vpi\getxlsx-bazis-specification4.php
+!!!inc\inc-personal-profile.php
+!!!inc\inc-session-start.php
+!!!inc\inc-footer.php
+!!!inc\inc-footer2.php
+!!!inc\inc-cart.php
+!!!inc\inc-menu-value.php
+
+
+
+
+!!!vpi\getxlsx-bazis-specification4.php
+
+
 F:\OpenServer_5.3.8\domains\localhost\DATA\TABLES\*
 F:\OpenServer_5.3.8\domains\localhost\DATA\TABLES\index-session.php
 F:\OpenServer_5.3.8\domains\localhost\DATA\TABLES\inc-menu-value.php
