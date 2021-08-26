@@ -40,7 +40,7 @@ if (class_QuerySofia::getQS()->getRole() !== DBfield::AROLE){
 ?>
 	<?php //echo dirname(dirname(dirname(__FILE__)))."/shablony-dokumentov-titulnyy-kd.php";?>
 	<?php //echo SiteRoot::getRoot()."/shablony-dokumentov-titulnyy-kd.php";?>
-	<script>document.location.href ="<?php echo SiteRoot::getRoot() ?>/shablony-dokumentov-titulnyy-kd.php"</script>
+	<script>document.location.href ="<?php echo SiteRoot::getRoot() ?>/index.php"</script>
 <?php
 	   exit();
 }
