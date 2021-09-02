@@ -15,7 +15,8 @@ use chillerlan\QRCode\{QRCode, QROptions};
 // require_once __DIR__.'/../vendor/autoload.php';
 require_once dirname(dirname(dirname(dirname(__FILE__)))).'/autoload.php';
 
-$data = 'https://www.youtube.com/watch?v=DLzxrzFCyOs&t=43s';
+// $data = 'https://www.youtube.com/watch?v=DLzxrzFCyOs&t=43s';
+$data = 'https://tlgg.ru/M1Tlmm_bot?start=allowance';
 $gzip = true;
 
 $options = new QROptions([
