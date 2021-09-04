@@ -23,7 +23,7 @@ $options = new QROptions([
 	'version'      => 7,
 	'outputType'   => QRCode::OUTPUT_MARKUP_SVG,
 	'eccLevel'     => QRCode::ECC_L,
-	'scale'        => 5,
+	'scale'        => 4,
 	'addQuietzone' => true,
 	'cssClass'     => 'my-css-class',
 	'svgOpacity'   => 1.0,
@@ -67,13 +67,13 @@ $options = new QROptions([
 
 $qrcode = (new QRCode($options))->render($data);
 
-header('Content-type: image/svg+xml');
+// header('Content-type: image/svg+xml');
 
-if($gzip === true){
-	header('Vary: Accept-Encoding');
-	header('Content-Encoding: gzip');
-	$qrcode = gzencode($qrcode ,9);
-}
+// if($gzip === true){
+// 	header('Vary: Accept-Encoding');
+// 	header('Content-Encoding: gzip');
+// 	$qrcode = gzencode($qrcode ,9);
+// }
 echo $qrcode;
 
 
