@@ -1,0 +1,30 @@
+Array
+(
+    [update_id] => 40xxxx93
+    [message] => Array
+        (
+            [message_id] => 7x4
+            [from] => Array
+                (
+                    [id] => 18xxxxx77
+                    [is_bot] => 
+                    [first_name] => Сергей
+                    [last_name] => Шxxxко
+                    [username] => ssxxxxxko
+                    [language_code] => ru
+                )
+
+            [chat] => Array
+                (
+                    [id] => 18xxxxx77
+                    [first_name] => Сергей
+                    [last_name] => Шxxxко
+                    [username] => ssxxxxxko
+                    [type] => private
+                )
+
+            [date] => 1630904590
+            [text] => привет
+        )
+
+)

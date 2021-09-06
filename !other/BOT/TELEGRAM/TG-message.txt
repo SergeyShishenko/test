@@ -1,0 +1,63 @@
+Array
+(
+    [update_id] => 40xxxx92
+    [callback_query] => Array
+        (
+            [id] => 80xxxxxxxxx08
+            [from] => Array
+                (
+                    [id] => 18xxxxx77
+                    [is_bot] => 
+                    [first_name] => Сергей
+                    [last_name] => Шиxxxxко
+                    [username] => ssxxxxxko
+                    [language_code] => ru
+                )
+
+            [message] => Array
+                (
+                    [message_id] => 7x3
+                    [from] => Array
+                        (
+                            [id] => 19xxxxx57
+                            [is_bot] => 1
+                            [first_name] => Мой_Бот
+                            [username] => My_bot
+                        )
+
+                    [chat] => Array
+                        (
+                            [id] => 18xxxxxxx77
+                            [first_name] => Сергей
+                            [last_name] => Шxxxxxко
+                            [username] => ssxxxxko
+                            [type] => private
+                        )
+
+                    [date] => 16xxxxx88
+                    [text] => Нет данных
+                    [reply_markup] => Array
+                        (
+                            [inline_keyboard] => Array
+                                (
+                                    [0] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [text] => регистрация
+                                                    [callback_data] => регистрация
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+            [chat_instance] => -16xxxxxxxx82
+            [data] => регистрация
+        )
+
+)
