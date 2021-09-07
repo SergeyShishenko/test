@@ -154,6 +154,7 @@ TABLES
 
 DATA\TABLES\inc-session-start.php
 DATA\TABLES\index-session.php
+DATA\TABLES\exit.php
 
 
 
