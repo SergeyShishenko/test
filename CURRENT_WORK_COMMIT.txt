@@ -143,9 +143,17 @@ F:\OpenServer_5.3.8\domains\localhost\DATA\TABLES\inc-menu-value.php
 
 last
 
-DATA\TABLES\icq\ajax-s.php
-send_msg.php
-DATA\TABLES\configDB.php
+!DATA\TABLES\icq\ajax-s.php
+!send_msg.php
+!DATA\TABLES\configDB.php
+
+//========= 07.09.21 =========
+TABLES
+
+*hash
+
+DATA\TABLES\inc-session-start.php
+DATA\TABLES\index-session.php
 
 
 
