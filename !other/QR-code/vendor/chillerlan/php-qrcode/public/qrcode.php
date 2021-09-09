@@ -1,4 +1,5 @@
 <?php
+//QR-code\vendor\chillerlan\php-qrcode\public\qrcode.php
 /**
  * @filesource   qrcode.php
  * @created      18.11.2017
@@ -12,8 +13,9 @@ namespace chillerlan\QRCodePublic;
 use chillerlan\QRCode\QRCode;
 use chillerlan\QRCode\QROptions;
 
-require_once '../vendor/autoload.php';
-
+// require_once '../vendor/autoload.php';
+require_once dirname(dirname(dirname(dirname(__FILE__)))).'/autoload.php';
+// echo dirname(dirname(dirname(dirname(__FILE__)))).'/autoload.php';
 try{
 
 	$moduleValues = [
