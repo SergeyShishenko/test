@@ -1,4 +1,5 @@
 <?php
+// localhost\www\!other\QR-code\vendor\chillerlan\php-qrcode\examples\svg.php
 /**
  *
  * @filesource   svg.php
@@ -19,6 +20,15 @@ require_once dirname(dirname(dirname(dirname(__FILE__)))).'/autoload.php';
 $data = 'https://tlgg.ru/M1Tlmm_bot?start=allowance';
 $gzip = true;
 
+// <linearGradient id="g2">
+// <stop offset="0%" stop-color="#39F" />
+// <stop offset="100%" stop-color="#F3F" />
+// </linearGradient>
+// <linearGradient id="g1">
+// <stop offset="0%" stop-color="#F3F" />
+// <stop offset="100%" stop-color="#39F" />
+// </linearGradient>
+
 $options = new QROptions([
 	'version'      => 7,
 	'outputType'   => QRCode::OUTPUT_MARKUP_SVG,
@@ -29,12 +39,12 @@ $options = new QROptions([
 	'svgOpacity'   => 1.0,
 	'svgDefs'      => '
 		<linearGradient id="g2">
-			<stop offset="0%" stop-color="#39F" />
-			<stop offset="100%" stop-color="#F3F" />
+			<stop offset="0%" stop-color="#4a89dc" />
+			<stop offset="100%" stop-color="#4a89dc" />
 		</linearGradient>
 		<linearGradient id="g1">
-			<stop offset="0%" stop-color="#F3F" />
-			<stop offset="100%" stop-color="#39F" />
+			<stop offset="0%" stop-color="#4a89dc" />
+			<stop offset="100%" stop-color="#4a89dc" />
 		</linearGradient>
 		<style>rect{shape-rendering:crispEdges}</style>',
 	'moduleValues' => [
