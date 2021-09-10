@@ -1,4 +1,5 @@
 <?php
+
 // localhost\www\!other\QR-code\vendor\chillerlan\php-qrcode\examples\svg.php
 /**
  *
@@ -12,12 +13,13 @@
 namespace chillerlan\QRCodeExamples;
 
 use chillerlan\QRCode\{QRCode, QROptions};
-
+session_start();
+//echo session_id();
 // require_once __DIR__.'/../vendor/autoload.php';
 require_once dirname(dirname(dirname(dirname(__FILE__)))).'/autoload.php';
 
 // $data = 'https://www.youtube.com/watch?v=DLzxrzFCyOs&t=43s';
-$data = 'https://tlgg.ru/M1Tlmm_bot?start=allowance';
+$data = 'https://tlgg.ru/M1Tlmm_bot?start=visit:'.session_id();
 $gzip = true;
 
 // <linearGradient id="g2">
