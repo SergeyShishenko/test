@@ -19,7 +19,10 @@ session_start();
 require_once dirname(dirname(dirname(dirname(__FILE__)))).'/autoload.php';
 
 // $data = 'https://www.youtube.com/watch?v=DLzxrzFCyOs&t=43s';
-$data = 'https://tlgg.ru/M1Tlmm_bot?start=visit:'.session_id();
+$data = 'https://tlgg.ru/M1Tlmm_bot?start=visit__'.session_id();
+// $data = 'https://tlgg.ru/M1Tlmm_bot?start=visit:1234567890';
+// $data = 'https://tlgg.ru/M1Tlmm_bot?start=visit__test';
+// $data = 'https://tlgg.ru/M1Tlmm_bot?start=allowance';
 $gzip = true;
 
 // <linearGradient id="g2">
