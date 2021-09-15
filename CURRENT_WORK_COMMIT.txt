@@ -158,6 +158,7 @@ DATA\TABLES\exit.php
 DATA\TABLES\configDB.php
 DATA\TABLES\CreatTableTg.php
 DATA\TABLES\tgaccess.php
+\tgaccess.php
 DATA\TABLES\firstTgRecord.php
 
 
