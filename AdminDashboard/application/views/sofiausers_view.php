@@ -18,6 +18,7 @@
                     <th class="sticky-table text-right">status</th>                    
                     <th class="sticky-table text-right hidden-xs">last page</th>
                     <th class="sticky-table text-right">date start</th>
+                    <th class="sticky-table text-right">telephone</th>
                   
                 </tr>
             </thead>
@@ -36,6 +37,8 @@
 			<td class="text-right">'.$row[DBfield::usr].'</td>			
 			<td class="text-right hidden-xs">'.$row[DBfield::uslp].'</td>
 			<td class="text-right hidden-xs">'.$row[DBfield::ussds].'</td>
+			<td class="text-right hidden-xs">'.$row[DBfield::usph].'</td>
+			
 		
 		</tr>';
 	}

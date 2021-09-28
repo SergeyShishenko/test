@@ -88,6 +88,9 @@
     <?php if(Route::$contr_name=="addfurn") { ?>
     <script src="<?php echo $dir; ?>/js/addfurn.js"></script>
     <?php }?>
+    <?php if(Route::$contr_name=="sofiausers") { ?>
+    <script src="<?php echo $dir; ?>/js/sofiausers.js"></script>
+    <?php }?>
     <?php if(Route::$contr_name=="login") { ?>
     <script src="<?php echo $dir; ?>/js/seourl.js"></script>
     <?php }?>

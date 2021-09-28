@@ -152,17 +152,23 @@ TABLES
 
 *hash tg
 
-DATA\TABLES\inc-session-start.php
-DATA\TABLES\index-session.php
-DATA\TABLES\exit.php
+*DATA\TABLES\inc-session-start.php
+*DATA\TABLES\index-session.php
+*DATA\TABLES\exit.php
+*DATA\TABLES\configDB.php
+--DATA\TABLES\CreatTableTg.php
+*DATA\TABLES\tgaccess.php
+*\tgaccess.php
+--DATA\TABLES\firstTgRecord.php
+
+//========== 28.09.21 ==========
+
+/reg tg
+
+\AdminDashboard\application\views\sofiausers_view.php
+\AdminDashboard\application\views\template_view.php
+\AdminDashboard\js\sofiausers.js
 DATA\TABLES\configDB.php
-DATA\TABLES\CreatTableTg.php
-DATA\TABLES\tgaccess.php
-\tgaccess.php
-DATA\TABLES\firstTgRecord.php
-
-
-
 
 
     
