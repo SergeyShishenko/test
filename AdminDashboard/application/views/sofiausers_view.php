@@ -31,7 +31,7 @@
 	{
 		echo 
 		'<tr>
-            <td class="">'.$row[DBfield::usid].'</td>
+            <td class="usid">'.$row[DBfield::usid].'</td>
 			<td>'.$row[DBfield::usl].'</td>
 			<td class="hidden-xs hidden-sm">'.$row[DBfield::usm].'.</td>
 			<td class="text-right">'.$row[DBfield::usr].'</td>			
