@@ -33,7 +33,15 @@
     <?php }	?>
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo $dir; ?>/favicon.png" />
 
-
+    <style>
+        .raz { 
+        -moz-appearance: textfield;
+        width:100px;
+        }
+        .raz::-webkit-inner-spin-button { 
+        display: none;
+        }
+</style>
 
 </head>
 
