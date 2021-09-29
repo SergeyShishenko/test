@@ -21,21 +21,23 @@ $(document).ready(function() {
 		$('#edit').focus();
 		$('#edit').blur(function()	{
 			var val = $(this).val();
-				if(val.length != "11"){
+				if(val.length != "11" ){
 				alert("Ошибка в номере!");
 				$(this).parent().empty().html(oldval);
+				}else if(val == oldval ){
+					console.log("Номер не изменён.");
 				}else{
 					// alert($(this).parent().parent().find('.usid').html());
 					// dataArray=["tel:"+$(this).parent().parent().attr("id"),"id:"+val]
 					// {selorder :
 					var tel=$(this).parent().parent().find('.usid').html();
 					// var tel='tel';
-					dataArray={tel: tel, id: val}
+					dataArray={id: tel, tel: val}
 					
 					// alert(location.href);
 					// $.post('application/more/user_telephone.php', {tel: $(this).parent().parent().attr("id"), id: val}, function(data) {
 					$.post('application/more/user_telephone.php', dataArray, function(data) {
-						alert(data);
+						console.log(data);
 
 					});
 					// alert($(this).parent().parent().find('.usid').html());
