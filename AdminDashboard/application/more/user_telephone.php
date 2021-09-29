@@ -1,5 +1,5 @@
 <?php
- file_put_contents('DEBUG-message.txt', print_r($_POST, true));exit();
+//  file_put_contents('DEBUG-message.txt', print_r($_POST, true));exit();
 //  file_put_contents('DEBUG-message.txt', print_r("Запись", true));exit();
 // return  "local!"; exit();
 return include($_SERVER['DOCUMENT_ROOT'] . '/DATA/TABLES/users/user_telephone.php');
