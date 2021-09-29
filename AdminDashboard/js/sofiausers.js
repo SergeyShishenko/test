@@ -25,8 +25,20 @@ $(document).ready(function() {
 				alert("Ошибка в номере!");
 				$(this).parent().empty().html(oldval);
 				}else{
-					// alert($(this).parent().parent().attr("id"));
-					alert($(this).parent().parent().find('.usid').html());
+					// alert($(this).parent().parent().find('.usid').html());
+					// dataArray=["tel:"+$(this).parent().parent().attr("id"),"id:"+val]
+					// {selorder :
+					var tel=$(this).parent().parent().find('.usid').html();
+					// var tel='tel';
+					dataArray={tel: tel, id: val}
+					
+					// alert(location.href);
+					// $.post('application/more/user_telephone.php', {tel: $(this).parent().parent().attr("id"), id: val}, function(data) {
+					$.post('application/more/user_telephone.php', dataArray, function(data) {
+						alert(data);
+
+					});
+					// alert($(this).parent().parent().find('.usid').html());
 					$(this).parent().empty().html(val);
 					// console.log($(this).parent().parent().find('.usid'));
 					

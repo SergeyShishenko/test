@@ -168,7 +168,10 @@ TABLES
 \AdminDashboard\application\views\sofiausers_view.php
 \AdminDashboard\application\views\template_view.php
 \AdminDashboard\js\sofiausers.js
+\AdminDashboard\application\more\user_telephone.php
 DATA\TABLES\configDB.php
+DATA\TABLES\users\user_telephone.php
+
 
 
     
