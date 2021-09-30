@@ -90,7 +90,8 @@ if(isset($_POST["content_HrefArticul"]) && strlen($_POST["content_HrefArticul"])
                     $arr_res['Unit']=trim($pq4);
                 }
                 $posts = $document->find('.photos-box  a  picture  img' );
-                $arr_res['NameFile'] = $pq6 . $pq5 . $posts[0]->attr('src'); 
+                // $arr_res['NameFile'] = $pq6 . $pq5 . $posts[0]->attr('src'); 
+                $arr_res['NameFile'] =$posts[0]->attr('src'); 
     
             break; 
 

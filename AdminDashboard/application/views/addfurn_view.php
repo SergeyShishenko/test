@@ -34,7 +34,7 @@
         <input type="text" value="./dist/filesdb/images/test.png" name="add_NameFile" class="text add form-control"
             size="150" placeholder="Имя файла изображения" id="NameFile" title="Имя файла изображения">
     </div>
-    <div class="image"><img id="parseim" src="../dist/filesdb/images/test.png"></div>
+    <div class="image"><img id="parseim" src="./dist/filesdb/images/test.png"></div>
     <div class="sell">
     <select id="grupp_id" name="add_grupp_id" class="text add form-control"
         title="Номер группы (1-МЕХАНИЗМЫ ВЫДВИЖЕНИЯ ДЛЯ ЯЩИКОВ,2-ПЕТЛИ для ФАСАДОВ, 3-КРЕПЕЖ И МЕТИЗЫ, 4-ШТАНГИ МЕБЕЛЬНЫЕ) ">
