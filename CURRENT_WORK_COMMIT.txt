@@ -171,6 +171,8 @@ TABLES
 \AdminDashboard\application\more\user_telephone.php
 DATA\TABLES\configDB.php
 DATA\TABLES\users\user_telephone.php
+DATA\TABLES\inc-session-start.php
+DATA\TABLES\index-session.php
 
 
 
