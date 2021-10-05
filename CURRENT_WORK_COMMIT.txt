@@ -175,13 +175,13 @@ TABLES
 *DATA\TABLES\configDB.php
 *DATA\TABLES\inc-session-start.php
 
- DATA\TABLES\index-session.php
+ *DATA\TABLES\index-session.php
 
 *DATA\TABLES\invitation.php
 
 *DATA\TABLES\users\user_telephone.php
 
-QR-code\vendor\chillerlan\php-qrcode\examples\svg.php
+*QR-code\vendor\chillerlan\php-qrcode\examples\svg.php
 
 
     
