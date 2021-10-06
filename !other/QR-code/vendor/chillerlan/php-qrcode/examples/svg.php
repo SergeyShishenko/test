@@ -22,13 +22,18 @@ require_once dirname(dirname(dirname(dirname(__FILE__)))).'/autoload.php';
 
 if(file_exists($_SERVER['DOCUMENT_ROOT'] . '/www/index.php')){ 
     //  echo  "local"; exit();
-		require_once  $_SERVER['DOCUMENT_ROOT'] .'/DATA/TABLES/configDB.php';//local
+		require_once  $_SERVER['DOCUMENT_ROOT'] .'/DATA/TABLES/configDB.php';//local		
     }else{
-		require_once  dirname($_SERVER['DOCUMENT_ROOT']) .'/DATA/TABLES/configDB.php';//!!!!!!!!!
+		require_once  dirname($_SERVER['DOCUMENT_ROOT']) .'/DATA/TABLES/configDB.php';//!!!!!!!!!		
     }
 
 // $data = 'https://www.youtube.com/watch?v=DLzxrzFCyOs&t=43s';
-$data = 'https://tlgg.ru/'._TGNAMEBOT_.'?start=visit__'.session_id();
+// $data = 'https://tlgg.ru/'._TGNAMEBOT_.'?start=visit__'.session_id();
+$data = 'https://tlgg.ru/'._TGNAMEBOT_.'?start=visit__'.$QRtok;
+// $data = _TGNAMEBOT_.'?start=visit__'.$_SESSION['sess_QR'];
+
+
+
 // $data = 'https://tlgg.ru/M1Tlmm_bot?start=visit:1234567890';
 // $data = 'https://tlgg.ru/M1Tlmm_bot?start=visit__test';
 // $data = 'https://tlgg.ru/M1Tlmm_bot?start=allowance';
