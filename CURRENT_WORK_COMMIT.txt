@@ -188,11 +188,11 @@ TABLES
 
 /reg tg2   
 
-\QR-code\vendor\chillerlan\php-qrcode\examples\svg.php   - 32
-\DATA\TABLES\invitation.php  - 6
+*\QR-code\vendor\chillerlan\php-qrcode\examples\svg.php   - 32
+*\DATA\TABLES\invitation.php  - 6
 **\DATA\TABLES\inc-session-start.php 
-\DATA\TABLES\index-session.php  - 7,9,10,126,127,407,412
-\DATA\TABLES\tgaccess.php  - 10,25
+*\DATA\TABLES\index-session.php  - 7,9,10,126,127,407,412
+*\DATA\TABLES\tgaccess.php  - 10,25
 
 
 
