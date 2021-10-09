@@ -22,8 +22,10 @@ $(document).ready(function() {
 		$('#edit').blur(function()	{
 			var val = $(this).val();
 				if(val.length != "11" ){
-				alert("Ошибка в номере!");
-				$(this).parent().empty().html(oldval);
+					if (val.length !="0"){
+						alert("Ошибка в номере! "+val.length);						
+					}
+						$(this).parent().empty().html(oldval);
 				}else if(val == oldval ){
 					console.log("Номер не изменён.");
 				}else{
