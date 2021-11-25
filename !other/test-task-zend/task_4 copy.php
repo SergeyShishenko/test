@@ -67,30 +67,21 @@ curl_setopt($curl, CURLOPT_HEADER, false);
 // $chars = preg_split('/<table id=\"bizon_api_news_list\"*<table>/', $page, -1, PREG_SPLIT_NO_EMPTY);
 // $chars = preg_split('/bizon_api_news_list/', $page, -1, PREG_SPLIT_NO_EMPTY);
 // print_r($chars);
- $news=explode('<!--Блок новостей-->', $page, -1)[1];
- $news=explode('<!--Блок новостей END-->', $news, -1)[0];
+ $news=explode('Блок новостей', $page, -1)[1];
 //  $news=explode('titles', $page, -1)[1];
-//  $news=explode('"bizon_api_news_row">', $news);
+ $news=explode('bizon_api_news_row', $news);
 
-//  $news=array_shift($news);// удаление -->
-   echo $news;
-//  foreach ($news as $val) {
-//     // if(preg_match("/(td)(.*?)(\/td)/",$val,$matches))
-  
-//     echo $val ;
+//  echo $news[1];
+ foreach ($news as $val) {
+    // if(preg_match("/(td)(.*?)(\/td)/",$val,$matches))
+     var_dump($val)  ;
     
-//     // $tr=explode('tr', $val);
-//     // foreach ($tr as $val_tr) {
-//     //     echo $val_td."<hr>" ;
-//     // }
+    // $tr=explode('tr', $val);
+    // foreach ($tr as $val_tr) {
+    //     echo $val_td."<hr>" ;
+    // }
 
-// }
-
-// for($i = 1; $i < count($news); ++$i){
-//     echo $news[$i] ;
-    
-// }
-
+}
 // Разделителями могут быть слеши, точки или дефисы
 // $date = "04/30/1973";
 // list($month, $day, $year) = split('[/.bizon_api_news_list]', $page);
