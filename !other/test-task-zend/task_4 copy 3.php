@@ -48,9 +48,9 @@ curl_setopt($curl, CURLOPT_HEADER, false);
 
  foreach ($res[1] as $val) {
     
-    
+    echo "<hr>" ;
    
-    preg_match_all('/([^\s].+?)<a[^>]+?href\s*?=\s*?["\'](.+?)["\'][^>]*?>(.+?)<\/a>/su', $val, $dat, PREG_PATTERN_ORDER);
+    preg_match_all('/([^\s].+?)<a[^>]+?href\s*?=\s*?["\'](.+?)["\'][^>]*?>(.+?)<\/a>/su', $val, $dat);
     // echo "<pre>";
     //    var_dump( $dat);
     //    echo "</pre>";
@@ -59,7 +59,7 @@ curl_setopt($curl, CURLOPT_HEADER, false);
      echo $dat[2][0];
      echo "<br>";
      echo $dat[3][0];
-echo "<hr>" ;
+
 
 }
 
