@@ -73,32 +73,18 @@ curl_setopt($curl, CURLOPT_HEADER, false);
 //  $news=explode('"bizon_api_news_row">', $news);
 
 //  $news=array_shift($news);// удаление -->
-// var_dump($news);
    echo $news;
+//  foreach ($news as $val) {
+//     // if(preg_match("/(td)(.*?)(\/td)/",$val,$matches))
   
-   preg_match_all('/<tr[^>]+?class\s*?=\s*?["\']bizon_api_news_row["\'][^>]*?>(.+?)<\/tr>/su', $news, $res, PREG_PATTERN_ORDER);
-//    echo "<pre>";
-//    var_dump( $res[1]);
-//    echo "</pre>";
-// echo $res[1];
- foreach ($res[1] as $val) {
-    // if(preg_match("/(td)(.*?)(\/td)/",$val,$matches))
-    echo "<hr>" ;
-    preg_match_all('|([^\s].+?)<[^>]+>(.+?)</[^a>]+>|su', $val, $dat);
-    // echo "<pre>";
-    //    var_dump( $dat);
-    //    echo "</pre>";
-     echo $dat[1][0];
-     echo "<br>";
-     echo $dat[2][0];
-    //  echo $dat[0][1];
+//     echo $val ;
     
-    // $tr=explode('tr', $val);
-    // foreach ($res as $val) {
-    //     echo $val."<hr>" ;
-    // }
+//     // $tr=explode('tr', $val);
+//     // foreach ($tr as $val_tr) {
+//     //     echo $val_td."<hr>" ;
+//     // }
 
-}
+// }
 
 // for($i = 1; $i < count($news); ++$i){
 //     echo $news[$i] ;
