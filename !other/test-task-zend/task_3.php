@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>task_3</title>
-</head>
+/**
+* Создать скрипт, который в папке /datafiles найдет все файлы,
+* имена которых состоят из цифр и букв латинского алфавита,
+* имеют расширение ixt и выведет на экран имена этих файлов,
+* упорядоченных по имени.
+*
+* Задание должно быть выполнено с использованием регулярных выражений.
+* Весь код должен быть прокомментирован в стиле PHPDocumentor'а.
 
-<body>
-    <?php
-        foreach (glob("datafiles/[0-9a-z].ixt") as $filename) {
-            echo basename($filename) . "<br>";
-        } 
+*/
 
-        $dir = "datafiles/";
+$dir = "datafiles/";
 
 // Открыть известный каталог и начать считывать его содержимое
 if (is_dir($dir)) {
@@ -23,18 +20,11 @@ if (is_dir($dir)) {
 
             if ($file != "." && $file != "..") {
                 preg_match('/[a-z0-9]+\.ixt/',basename ($file),$matches);
-                    if ($matches[0]){
-                        echo  $matches[0] . "<br>";
-                    }
-                
-
-            }
-            
+                if ($matches[0]){
+                    echo  $matches[0] . "<br>";
+                } 
+            }   
         }
         closedir($dh);
     }
 }
-    ?>
-</body>
-
-</html>
