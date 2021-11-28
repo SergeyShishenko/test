@@ -23,7 +23,10 @@ echo $db->cteate_table_bills_ru_events();
 echo "<br>";
 
 
-
+/**
+ * Вывод на результатов в браузер
+ * и добавление их в базу данных
+ */
 foreach ($parse->getNews() as $val) {
     echo $val['date']."<br>";
     echo $val['url']."<br>";
@@ -37,6 +40,15 @@ foreach ($parse->getNews() as $val) {
     echo "<hr>";
 }
 
+/**
+ * Вставка данных в таблицу
+ *
+ * @param class_DataBase $db
+ * @param string $date_news (DATETIME - формат: YYYY-MM-DD HH:MI:SS)
+ * @param string $title_news
+ * @param string $url_news
+ * @return void
+ */
 function addNews($db, $date_news,  $title_news, $url_news){
     $query ="INSERT INTO  `bills_ru_events` (`id`,`date_news`, `title_news`, `url_news`) VALUES (NULL, {?}, {?}, {?}) ";
     if  ($db->query($query, array($date_news, $title_news, $url_news))) {

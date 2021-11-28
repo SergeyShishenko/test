@@ -5,3 +5,4 @@ RECALL
 Diploma
 dist/files/yri
 xdebug
+!other/test-task-zend/classes/class_DBoutput_copy.php

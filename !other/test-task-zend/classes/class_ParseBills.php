@@ -1,18 +1,58 @@
 <?php
 
+/**
+*   Закачивания страницы www.bills.ru, 
+*   из страницы извлекает даты, заголовки, ссылки в блоке "события на долговом рынке", 
+*   сохраняет в таблицу bills_ru_events, имеющей такую структуру:
+
+*   id	целое, автоинкрементарное
+*   date	в формате год-месяц-день часы:минуты:секунды
+*   title	строковое не более 230 символов
+*   url	строковое не более 240 символов, уникальное
+*   
+*/
+
 class class_ParseBills
-{    
+{ 
+    /**
+     * Полученная страница
+     *
+     * @var string
+     */   
     private $page;
+
+    /**
+     * Извлеченные данные
+     *
+     * @var array
+     */
     private $arr_data = [];  
+
+    /**
+     * Преобразование имени месяца в номер месяца в году
+     *
+     * @var array
+     */
     private $month = array(
         '01'=>'янв', '02'=>'фев', '03'=>'мар', '04'=>'апр', '05'=>'май', '06'=>'июн', 
         '07'=>'июл', '08'=>'авг', '09'=>'сен', '10'=>'окт', '11'=>'ноя', '12'=>'дек' 
     );  
 
+    /**
+     * Адрес страницй
+     *
+     * @param string $address (url)
+     */
     public function __construct($address) {        
         $this->getUrlContent($address);
     }     
 
+    /**
+     * Получение страницы
+     *
+     * @param string $address (url)
+     * @return void
+     */
     private function getUrlContent($address): void{       
         $curl = curl_init($address);
         curl_setopt ($curl, CURLOPT_RETURNTRANSFER, 1);
@@ -23,6 +63,11 @@ class class_ParseBills
         curl_close($curl);
     }
 
+    /**
+     * Парсинг страницы
+     *
+     * @return array
+     */
     public function getNews(){
         $news=explode('<!--Блок новостей-->', $this->page, -1)[1];
         $news=explode('<!--Блок новостей END-->', $news, -1)[0];  
