@@ -3,7 +3,11 @@
 class class_ParseBills
 {    
     private $page;
-    private $arr_data = [];    
+    private $arr_data = [];  
+    private $month = array(
+        '01'=>'янв', '02'=>'фев', '03'=>'мар', '04'=>'апр', '05'=>'май', '06'=>'июн', 
+        '07'=>'июл', '08'=>'авг', '09'=>'сен', '10'=>'окт', '11'=>'ноя', '12'=>'дек' 
+    );  
 
     public function __construct($address) {        
         $this->getUrlContent($address);
@@ -28,8 +32,8 @@ class class_ParseBills
             preg_match_all('|([^\s].+?)<a[^>]+?href\s*?=\s*?["\'](.+?)["\'][^>]*?>(.+?)<\/a>|su', $val, $dat, PREG_PATTERN_ORDER);
             
             $s = explode(' ', $dat[1][0]);           
-            $n['date']=  date('Y'). "-" . $s[14] . "-". $s[13] ;//год.месяц.день    
-            $n['link']=trim($dat[2][0]);//ссылка
+            $n['date']=  date('Y'). "-" . array_search($s[14], $this->month) . "-". $s[13] ;//год.месяц.день    
+            $n['url']=trim($dat[2][0]);//ссылка
             $n['title']=trim($dat[3][0]);//заголовок
             array_push($this->arr_data,$n);
         }

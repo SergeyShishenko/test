@@ -63,7 +63,10 @@ class class_DataBase {
       if ($this->mysqli->insert_id === 0) return true;
       else return $this->mysqli->insert_id;
     }
-    else return false;
+    else {
+      echo "<br>".mysqli_error($this->mysqli)."<br>";
+      return false;
+    }
   }
 
   /* Преобразование result_set в двумерный массив */
@@ -82,7 +85,8 @@ class class_DataBase {
   public function cteate_table_bills_ru_events(){
     $query = "CREATE TABLE IF NOT EXISTS bills_ru_events(
       id INT NOT NULL AUTO_INCREMENT,
-      date_news DATETIME , 
+      -- date_news DATETIME , 
+      date_news DATETIME NOT NULL , 
       title_news VARCHAR(230) , 
       url_news VARCHAR(240) , 
       PRIMARY KEY (id))";     
@@ -91,16 +95,7 @@ class class_DataBase {
     else return "Таблица bills_ru_events не создана: ".mysqli_error($this->mysqli);
 
   }
-
-  // private function add(){
-//     $query ="INSERT INTO  `bills_ru_events` (`id`, `date_news`, `title_news`, `url_news`) VALUES (NULL, {?}, {?}, {?}) ";
-//     if  ($this->DBtg->query($query, array($this->date_news, $this->title_news, $this->url_news))) {
-//         return true;
-//     }else{
-//         return false;
-//     }
-
-// }
+  
 
   /* При уничтожении объекта закрывается соединение с базой данных */
   public function __destruct() {

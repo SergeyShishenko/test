@@ -26,8 +26,26 @@ echo "<br>";
 
 foreach ($parse->getNews() as $val) {
     echo $val['date']."<br>";
-    echo $val['link']."<br>";
-    echo $val['title']."<hr>";
+    echo $val['url']."<br>";
+    echo $val['title'];
+   
+    if (addNews($db,$val['date'], $val['title'], $val['url'] )){
+        echo "<br>Ok";
+    }else{
+        echo "<br>Error";
+    }
+    echo "<hr>";
 }
+
+function addNews($db, $date_news,  $title_news, $url_news){
+    $query ="INSERT INTO  `bills_ru_events` (`id`,`date_news`, `title_news`, `url_news`) VALUES (NULL, {?}, {?}, {?}) ";
+    if  ($db->query($query, array($date_news, $title_news, $url_news))) {
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
 
   
