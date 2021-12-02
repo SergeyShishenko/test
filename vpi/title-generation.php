@@ -43,7 +43,8 @@ if (isset($_POST['order'])) {
             /////"head"    
                 case "TKD":
                      $objPHPExcel = $objReader->load($_SERVER['DOCUMENT_ROOT'] .$site."/dist/files/xls/shablon-pz.xlsx"); 
-                     $builder=$first['kbKD'];	
+                    //  $builder=$first['kbKD'];	
+                     $builder=$first['kbDP'];
                      
                     break;
                 case "TDP":
