@@ -268,7 +268,8 @@ function readRowByNember($row,$sheet,$arrIndex,$Order,$Product,$start_num,$db,$i
             if ($articul !="" && $articul !="Артикул"){
               // var_dump($articul);exit();
               $query = "SELECT * FROM `obj_furnitur_prop` WHERE `articul_furnitur_obj` = {?} OR `articul_alias1` = {?} OR `articul_alias2` = {?} OR `articul_alias3` = {?} ";
-               $table = $db->select($query, array($articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+               $table = $db->select($query, array($articul,$articul,$articul,$articul)); // Запрос явно должен вывести таблицу, поэтому вызываем метод select()
+              //  var_dump($table);exit();
                 if ($table){ //Если есть в БД
                   echo '<td style="color: green;" data-id="obj_' . $table[0]['obj_furnitur_prop_id'] .'" data-src="'.$table[0]['fname_img_furn'].'">' . $table[0]['articul_furnitur_obj'] .' </td>'; // Артикул
                   echo '<td>' . $table[0]['name_furnitur_obj_prop'] .'</td>';  // Наименование
