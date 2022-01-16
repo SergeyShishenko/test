@@ -190,6 +190,10 @@ a[title]:hover{cursor: help}
 .overlay{height: 25px;
   margin-bottom: 20px;
 }
+.overlayRight{height: 25px;
+  margin-bottom: 20px;
+  float:right;
+}
 .overlay a:not(:first-child){margin-left: 5px;}
 /* .zbz-input-clearable::after {
   content: "\e003";

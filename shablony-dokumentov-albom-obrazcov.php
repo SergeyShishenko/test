@@ -7,6 +7,9 @@ $item_albom_obrazcov_Class = 'active';
 include 'inc/inc-head.php';
 include 'inc/inc-header-menu.php';
 include 'inc/inc-left-side-menu-shablony-dokumentov.php';
+include 'Classes/class_ScanDir.php';
+$scan = new class_ScanDir("./dist/images/",'/shablon-alboma-obrazcov-zapolnenie_1(.*)/');
+// $scanx = new class_ScanDir("./dist/files/xls/",'/list-titulnyy-alboma-obrazcov(.*)/');
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
@@ -24,7 +27,7 @@ include 'inc/inc-left-side-menu-shablony-dokumentov.php';
                         <div class="overlay"></div>
                                                        
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/shablon-alboma-obrazcov-zapolnenie_1-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  data-src="./dist/images/<?php echo $scan->getNameFile();?>" class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                
                                  alt="5000301-03-001 лист титульный Альбома Образцов"                                 

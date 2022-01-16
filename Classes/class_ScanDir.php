@@ -27,13 +27,13 @@ class class_ScanDir
 
     /**
      * Путь к сканируемой директории
-     * Без последнего слеша "/"
+    
      *
      * @param string $path
      */
     public function __construct($path, $strreg)
     {
-        $this->dir=$path."/";
+        $this->dir=$path;
         $this->scan($strreg);
     }
 
