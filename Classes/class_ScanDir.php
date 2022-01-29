@@ -85,7 +85,7 @@ class class_ScanDir
         // foreach ($this->arr as $val) {
         //     echo  $val . "<hr>";
         // }
-        return $this->arr[0];
+        return $this->dir.$this->arr[0];
 
     }
 }

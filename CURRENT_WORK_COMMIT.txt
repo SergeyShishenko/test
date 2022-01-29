@@ -198,6 +198,16 @@ TABLES
 tokens
 tokens
 
+
+ ИЗМЕНЕНИЯ: 
+
+ === modalUnload ===
+
+ script.js -> row:575
+ inc-header-menu.php -> row:8
+ Classes/class_ScanDir.php
+ dist/images/kd/
+
         
        
        

@@ -8,7 +8,14 @@ include 'inc/inc-head.php';
 include 'inc/inc-header-menu.php';
 include 'inc/inc-left-side-menu-shablony-dokumentov.php';
 include 'Classes/class_ScanDir.php';
-$scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
+$scan = [];
+$scan[0] = null;
+$scan[1] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_1(.*)/');
+$scan[2] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_2(.*)/');
+$scan[3] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_3(.*)/');
+$scan[4] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_4(.*)/');
+$scan[5] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_5(.*)/');
+// echo $scan[0]->getNameFile();
 // $scanx = new class_ScanDir("./dist/files/xls/",'/list-titulnyy-alboma-obrazcov(.*)/');
 ?>
 <!-- main  -->
@@ -24,23 +31,36 @@ $scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
       <h2 id="list-titulnyy-kd">&nbsp;</h2>
       <div class="bs-callout bs-callout-warning cont">
         <h4>Лист титульный ПЗ</h4>
-         <div class="overlayRight">
-        <a href=""  type="button" class="btn btn-info im-download"  title= "Скачать образец"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> ОБРАЗЕЦ</a>
+        <div class="overlayRight">    
+          <button           
+            class="btn btn-info" 
+            title="Загрузить новые данные" 
+            data-toggle="modal"  
+            data-target="#modalUnload"
+            data-info="Загрузка новых файлов"
+            >
+            <!-- <i class="glyphicon glyphicon glyphicon-load" aria-hidden="true"></i> -->
+            <i class="glyphicon glyphicon-open" aria-hidden="true"></i>
+            <?php echo $role;?>
+          </button>
         </div>
         <div class="overlay"></div>
-        
+
         <p> <a>
             <!-- <img src="./dist/images/shablon-kd.png" class="center-block img-rounded img-thumbnail" -->
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/<?php echo $scan->getNameFile();?>"  class="center-block img-rounded img-thumbnail b-lazy img-album"
-             data-toggle="modal" 
-             data-target="#myModal" 
-             alt="Лист титульный ПЗ" 
-             data-xls="./dist/files/xls/shablon-pz.xlsx" 
-             data-pdf="" data-prnt="noPrint" 
-             data-spng="noPNG">
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="<?php echo $scan[1]->getNameFile();?>" 
+            class="center-block img-rounded img-thumbnail b-lazy img-album" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="Лист титульный ПЗ" 
+            data-xls="./dist/files/xls/shablon-pz.xlsx" 
+            data-pdf="" 
+            data-prnt="noPrint" 
+            data-spng="noPNG">
           </a>
         </p>
-       
+
       </div>
 
 
@@ -50,7 +70,12 @@ $scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
 
         <p> <a>
             <!-- <img src="./dist/images/5000301-01-001-pasport-izdeliy-zakaza-kd.png" class="center-block img-rounded img-thumbnail" -->
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/shablon-kd_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album" data-toggle="modal" data-target="#myModal" alt="5000301-01-001 паспорт изделий заказа КД">
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="<?php echo $scan[2]->getNameFile();//kd_2 ?>" 
+            class="center-block img-rounded img-thumbnail b-lazy img-album" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="5000301-01-001 паспорт изделий заказа КД">
           </a>
         </p>
         <!-- <div class="overlay"></div> -->
@@ -62,7 +87,12 @@ $scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
 
         <p> <a>
             <!-- <img src="./dist/images/5000301-01-001-reestr-razdelov-kd.png" class="center-block img-rounded img-thumbnail" -->
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/shablon-kd_3-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album" data-toggle="modal" data-target="#myModal" alt="5000301-02-000 лист титульный КД">
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="<?php echo $scan[3]->getNameFile();?>" 
+            class="center-block img-rounded img-thumbnail b-lazy img-album" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="5000301-02-000 лист титульный КД">
           </a>
         </p>
         <!-- <div id='hovertitle'></div> -->
@@ -86,7 +116,12 @@ $scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
 
         <p> <a>
             <!-- <img src="./dist/images/5000301-01-001-reestr-razdelov-kd.png" class="center-block img-rounded img-thumbnail" -->
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/shablon-kd_4-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album" data-toggle="modal" data-target="#myModal" alt="Спецификация конструкторская">
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="<?php echo $scan[4]->getNameFile();?>" 
+            class="center-block img-rounded img-thumbnail b-lazy img-album" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="Спецификация конструкторская">
           </a>
         </p>
         <!-- <div id='hovertitle'></div> -->
@@ -108,7 +143,15 @@ $scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
         <div class="overlay"></div>
         <p> <a>
             <!-- <img src="./dist/images/list-titulnyy-vpi_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/shablon-kd_5-v2.png" class="center-block img-rounded img-thumbnail b-lazy img-album" data-toggle="modal" data-target="#myModal" alt="Лист титульный ВПИ ПЗ" data-prnt="noPrint" data-spng="noPNG" data-xls="./dist/files/xls/list-titulnyy-vpi-kd.xlsx">
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="<?php echo $scan[5]->getNameFile();?>" 
+            class="center-block img-rounded img-thumbnail b-lazy img-album" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="Лист титульный ВПИ ПЗ" 
+            data-prnt="noPrint" 
+            data-spng="noPNG" 
+            data-xls="./dist/files/xls/list-titulnyy-vpi-kd.xlsx">
           </a>
         </p>
         <!--  -->
@@ -128,7 +171,15 @@ $scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
         <div class="overlay"></div>
         <p> <a>
             <!-- <img src="./dist/images/vedomost-furnitury_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/5000304-01-002-vedomost-furnitury-pz-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album" data-toggle="modal" data-target="#myModal" alt="Ведомость фурнитуры ПЗ" data-prnt="noPrint" data-spng="noPNG" data-xls="./dist/files/xls/5000304-01-002-vedomost-furnitury-pz.xlsx">
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="./dist/images/5000304-01-002-vedomost-furnitury-pz-v1.png" 
+            class="center-block img-rounded img-thumbnail b-lazy img-album" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="Ведомость фурнитуры ПЗ" 
+            data-prnt="noPrint" 
+            data-spng="noPNG" 
+            data-xls="./dist/files/xls/5000304-01-002-vedomost-furnitury-pz.xlsx">
           </a>
         </p>
         <!--  -->
@@ -148,7 +199,15 @@ $scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
         <div class="overlay"></div>
         <p> <a>
             <!-- <img src="./dist/images/vedomost-stekol-i-zerkal_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/5000304-02-002-vedomost-stekol-i-zerkal-pz-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album" data-toggle="modal" data-target="#myModal" alt="Ведомость стекол и зеркал КД" data-prnt="noPrint" data-spng="noPNG" data-xls="./dist/files/xls/5000304-02-002-vedomost-stekol-i-zerkal-pz.xlsx">
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="./dist/images/5000304-02-002-vedomost-stekol-i-zerkal-pz-v1.png" 
+            class="center-block img-rounded img-thumbnail b-lazy img-album" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="Ведомость стекол и зеркал КД" 
+            data-prnt="noPrint" 
+            data-spng="noPNG" 
+            data-xls="./dist/files/xls/5000304-02-002-vedomost-stekol-i-zerkal-pz.xlsx">
           </a>
         </p>
         <!--  -->
@@ -168,7 +227,15 @@ $scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
         <div class="overlay"></div>
         <p> <a>
             <!-- <img src="./dist/images/vedomost-materialy-prochie_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/5000304-03-002-vedomost-materialy-prochie-pz-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album" data-toggle="modal" data-target="#myModal" alt="Ведомость материалы прочие ПЗ" data-prnt="noPrint" data-spng="noPNG" data-xls="./dist/files/xls/5000304-03-002-vedomost-materialy-prochie-pz.xlsx">
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="./dist/images/5000304-03-002-vedomost-materialy-prochie-pz-v1.png" 
+            class="center-block img-rounded img-thumbnail b-lazy img-album" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="Ведомость материалы прочие ПЗ" 
+            data-prnt="noPrint" 
+            data-spng="noPNG" 
+            data-xls="./dist/files/xls/5000304-03-002-vedomost-materialy-prochie-pz.xlsx">
           </a>
         </p>
         <!--  -->
@@ -190,7 +257,13 @@ $scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
         <div class="overlay"></div>
         <p> <a>
             <!-- <img src="./dist/images/5000303-02-001-specifikaciya_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/5000303-02-001-specifikaciya_1.png" class="center-block img-rounded img-thumbnail b-lazy img-album" data-toggle="modal" data-target="#myModal" alt="5000303-02-001 спецификация" data-xls="./dist/files/xls/5000303-02-001-specifikaciya.xlsx">
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="./dist/images/5000303-02-001-specifikaciya_1.png" 
+            class="center-block img-rounded img-thumbnail b-lazy img-album" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="5000303-02-001 спецификация" 
+            data-xls="./dist/files/xls/5000303-02-001-specifikaciya.xlsx">
           </a>
         </p>
 
@@ -211,7 +284,13 @@ $scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
         <div class="overlay"></div>
         <p> <a>
             <!-- <img src="./dist/images/5000303-02-001-specifikaciya_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/vedomost-detaley-uchastka-3d_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-album" data-toggle="modal" data-target="#myModal" alt="ВЕДОМОСТЬ ДЕТАЛЕЙ УЧАСТКА 3D" data-xls="./dist/files/xls/vedomost-detaley-uchastka-3d.xlsx">
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="./dist/images/vedomost-detaley-uchastka-3d_1-v1.png" 
+            class="center-block img-rounded img-thumbnail b-lazy img-album" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="ВЕДОМОСТЬ ДЕТАЛЕЙ УЧАСТКА 3D" 
+            data-xls="./dist/files/xls/vedomost-detaley-uchastka-3d.xlsx">
           </a>
         </p>
 
@@ -232,19 +311,51 @@ $scan = new class_ScanDir("./dist/images/",'/shablon-kd_1(.*)/');
         <div class="overlay"></div>
         <p> <a>
 
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/sostav-kd_1-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book" data-toggle="modal" data-target="#myModal" alt="Лист1" data-pdf="./dist/files/pdf/sostav-kd.pdf" data-prnt="noPrint" data-spng="noPNG"></a>
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="./dist/images/sostav-kd_1-v1.png" 
+            class="center-block img-rounded img-thumbnail b-lazy img-book" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="Лист1" 
+            data-pdf="./dist/files/pdf/sostav-kd.pdf" 
+            data-prnt="noPrint" 
+            data-spng="noPNG"></a>
         </p>
         <p> <a>
 
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/sostav-kd_2-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book" data-toggle="modal" data-target="#myModal" alt="Лист2" data-pdf="./dist/files/pdf/sostav-kd.pdf" data-prnt="noPrint" data-spng="noPNG"></a>
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="./dist/images/sostav-kd_2-v1.png" 
+            class="center-block img-rounded img-thumbnail b-lazy img-book" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="Лист2" 
+            data-pdf="./dist/files/pdf/sostav-kd.pdf" 
+            data-prnt="noPrint" 
+            data-spng="noPNG"></a>
         </p>
         <p> <a>
 
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/sostav-kd_3-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book" data-toggle="modal" data-target="#myModal" alt="Лист3" data-pdf="./dist/files/pdf/sostav-kd.pdf" data-prnt="noPrint" data-spng="noPNG"></a>
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="./dist/images/sostav-kd_3-v1.png" 
+            class="center-block img-rounded img-thumbnail b-lazy img-book" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="Лист3" 
+            data-pdf="./dist/files/pdf/sostav-kd.pdf" 
+            data-prnt="noPrint" 
+            data-spng="noPNG"></a>
         </p>
         <p> <a>
 
-            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== data-src="./dist/images/sostav-kd_4-v1.png" class="center-block img-rounded img-thumbnail b-lazy img-book" data-toggle="modal" data-target="#myModal" alt="Лист4" data-pdf="./dist/files/pdf/sostav-kd.pdf" data-prnt="noPrint" data-spng="noPNG"></a>
+            <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
+            data-src="./dist/images/sostav-kd_4-v1.png" 
+            class="center-block img-rounded img-thumbnail b-lazy img-book" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            alt="Лист4" 
+            data-pdf="./dist/files/pdf/sostav-kd.pdf" 
+            data-prnt="noPrint" 
+            data-spng="noPNG"></a>
         </p>
 
 

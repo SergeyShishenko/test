@@ -571,6 +571,25 @@ $('#myModal').on('show.bs.modal', function (event) {
     // <a href="img.jpg" type="button" class="btn btn-primary"download="img.jpg" id="im-download">Сохранить картинку</a>
   });
 
+// при открытии модального окна
+$('#modalUnload').on('show.bs.modal', function (event) {
+
+    // получить кнопку, которая его открыло
+    var button = $(event.relatedTarget); 
+    // извлечь информацию из атрибута data-content
+    // var content = button.data('content'); 
+    var info = button.data('info'); 
+    // .parent().find("#image-gallery-image").attr("src")
+    var unl = button.parent().parent().find("img").attr('src');
+    // вывести эту информацию в элемент, имеющий id="content"
+    $("body").css("overflow-y", "scroll");
+  
+    $(this).find('#modalUnloadLabel').text(info); 
+   
+    $(this).find('#unl').html('Текущий файл ' + unl); 
+ 
+  });
+
 
 
 
