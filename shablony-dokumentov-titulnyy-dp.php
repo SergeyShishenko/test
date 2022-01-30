@@ -8,7 +8,7 @@ include 'inc/inc-head.php';
 include 'inc/inc-header-menu.php';
 include 'inc/inc-left-side-menu-shablony-dokumentov.php';
 include 'Classes/class_ScanDir.php';
-$scan = new class_ScanDir("./dist/images/",'/shablon-alboma-dp_1(.*)/');
+$scan = new class_ScanDir("./dist/images/",'shablon-alboma-dp_1');
 ?> 
                 <!-- main  -->
                 <div class="col-md-8 col-md-8-non" role="main" id="main-page">

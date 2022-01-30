@@ -203,10 +203,12 @@ tokens
 
  === modalUnload ===
 
- script.js -> row:575
- inc-header-menu.php -> row:8
- Classes/class_ScanDir.php
- dist/images/kd/
+ script.js -> row:567-610
+ inc-header-menu.php -> row:33-81
+ Classes\class_ScanDir.php
+ dist\images\kd\
+ dist\css\docs.css -> row:193
+ upload
 
         
        

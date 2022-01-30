@@ -8,7 +8,7 @@ include 'inc/inc-head.php';
 include 'inc/inc-header-menu.php';
 include 'inc/inc-left-side-menu-shablony-dokumentov.php';
 include 'Classes/class_ScanDir.php';
-$scan = new class_ScanDir("./dist/images/",'/shablon-alboma-obrazcov-zapolnenie_1(.*)/');
+$scan = new class_ScanDir("./dist/images/",'shablon-alboma-obrazcov-zapolnenie_1');
 // $scanx = new class_ScanDir("./dist/files/xls/",'/list-titulnyy-alboma-obrazcov(.*)/');
 ?> 
                 <!-- main  -->

@@ -39,7 +39,11 @@
                     <h4 class="modal-title" id="modalUnloadLabel">modalUnload</h4>
                 </div>
                 <div class="modal-body  full-screen" style="font-size: medium; padding: 10px;">
-                    <input id="sortpicture" type="file" name="sortpic" />
+
+               
+                    <input id="sortpicture" type="file" name="sortpic" multiple>
+               
+                    
                     <!-- <button id="upload">Upload</button> -->
 
                     <div id="unl" data-dismiss="modal" >
@@ -61,7 +65,24 @@
         </div>
     </div>
     <!-- /.modalUnload -->
+    
     <?php
+    ($role==="admin" || $role==="moderator")?
+    $overlayRight=
+    '<div class="overlayRight">    
+    <button          
+      class="btn btn-info" 
+      title="Загрузить новые данные" 
+      data-toggle="modal"  
+      data-target="#modalUnload"
+      data-info="Загрузка новых файлов"
+      >           
+      <i class="glyphicon glyphicon-open" aria-hidden="true"></i>
+      Загрузка файлов
+    </button>
+    </div>'
+    :"";
+
     include 'inc/inc-personal-profile.php';
     include 'inc/inc-header-send-modal.php';
     include 'inc/inc-func.php';

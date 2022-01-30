@@ -11,6 +11,13 @@
 
 class class_ScanDir
 {
+
+    /**
+     * шаблон сканируемого файла
+     *
+     * @var string
+     */
+    public $strreg;
     /**
      * Путь к сканируемой папке
      *
@@ -23,7 +30,7 @@ class class_ScanDir
      *
      * @var array
      */
-    private $arr=[];
+    private $arr = [];
 
     /**
      * Путь к сканируемой директории
@@ -33,8 +40,17 @@ class class_ScanDir
      */
     public function __construct($path, $strreg)
     {
-        $this->dir=$path;
-        $this->scan($strreg);
+        $this->dir = $path;
+        $this->strreg = $strreg;
+        $this->scan("/".$strreg."(.*)/");
+    }
+
+    public function getPattern()
+    {
+        // $vowels = array("/","(.*)");
+        // $res = str_replace($vowels, "", $this->strreg);
+
+        return $this->strreg;
     }
 
     /**
@@ -42,23 +58,23 @@ class class_ScanDir
      *
      * @return void
      */
-    private function scan($strreg): void{
+    private function scan($strreg): void
+    {
         if (is_dir($this->dir)) {
             if ($dh = opendir($this->dir)) {
                 while (($file = readdir($dh)) !== false) {
-        
+
                     if ($file != "." && $file != "..") {
                         // preg_match('/[a-z0-9]+\.ixt/',basename ($file),$matches);
-                        preg_match($strreg,basename ($file),$matches);
-                        if ($matches[0]){                            
-                            $this->arr[]=$matches[0];
-                        } 
-                    }   
+                        preg_match($strreg, basename($file), $matches);
+                        if ($matches[0]) {
+                            $this->arr[] = $matches[0];
+                        }
+                    }
                 }
                 closedir($dh);
             }
         }
-
     }
 
     /**
@@ -66,26 +82,26 @@ class class_ScanDir
      *
      * @return void
      */
-    public function getScan(): void{
+    public function getScan(): void
+    {
         asort($this->arr);
         // arsort($this->arr);
         foreach ($this->arr as $val) {
             echo  $val . "<hr>";
         }
-
     }
     /**
      * Вывод результатов сканирования в браузер
      *
      * @return string Имя найденого файла
      */
-    public function getNameFile(){
+    public function getNameFile()
+    {
         // asort($this->arr);
         arsort($this->arr);
         // foreach ($this->arr as $val) {
         //     echo  $val . "<hr>";
         // }
-        return $this->dir.$this->arr[0];
-
+        return $this->dir . $this->arr[0];
     }
 }

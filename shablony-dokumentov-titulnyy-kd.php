@@ -8,15 +8,18 @@ include 'inc/inc-head.php';
 include 'inc/inc-header-menu.php';
 include 'inc/inc-left-side-menu-shablony-dokumentov.php';
 include 'Classes/class_ScanDir.php';
+// $pattern
 $scan = [];
+$path = "./dist/images/kd/";
 $scan[0] = null;
-$scan[1] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_1(.*)/');
-$scan[2] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_2(.*)/');
-$scan[3] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_3(.*)/');
-$scan[4] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_4(.*)/');
-$scan[5] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_5(.*)/');
+$scan[1] = new class_ScanDir($path, 'shablon-kd_1');
+$scan[2] = new class_ScanDir($path, 'shablon-kd_2');
+$scan[3] = new class_ScanDir($path, 'shablon-kd_3');
+$scan[4] = new class_ScanDir($path, 'shablon-kd_4');
+$scan[5] = new class_ScanDir($path, 'shablon-kd_5');
 // echo $scan[0]->getNameFile();
 // $scanx = new class_ScanDir("./dist/files/xls/",'/list-titulnyy-alboma-obrazcov(.*)/');
+
 ?>
 <!-- main  -->
 <div class="col-md-8 col-md-8-non" role="main" id="main-page">
@@ -31,25 +34,15 @@ $scan[5] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_5(.*)/');
       <h2 id="list-titulnyy-kd">&nbsp;</h2>
       <div class="bs-callout bs-callout-warning cont">
         <h4>Лист титульный ПЗ</h4>
-        <div class="overlayRight">    
-          <button           
-            class="btn btn-info" 
-            title="Загрузить новые данные" 
-            data-toggle="modal"  
-            data-target="#modalUnload"
-            data-info="Загрузка новых файлов"
-            >
-            <!-- <i class="glyphicon glyphicon glyphicon-load" aria-hidden="true"></i> -->
-            <i class="glyphicon glyphicon-open" aria-hidden="true"></i>
-            <?php echo $role;?>
-          </button>
-        </div>
+        <?php echo $overlayRight;?>     
         <div class="overlay"></div>
 
         <p> <a>
             <!-- <img src="./dist/images/shablon-kd.png" class="center-block img-rounded img-thumbnail" -->
             <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
-            data-src="<?php echo $scan[1]->getNameFile();?>" 
+            data-src="<?php echo $scan[1]->getNameFile();?>"             
+            data-pattern="<?php echo $scan[1]->getPattern(); ?>"
+            data-path="<?php echo $path; ?>"
             class="center-block img-rounded img-thumbnail b-lazy img-album" 
             data-toggle="modal" 
             data-target="#myModal" 
@@ -67,11 +60,14 @@ $scan[5] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_5(.*)/');
       <h2 id="pasport-izdeliy-zakaza-kd">&nbsp;</h2>
       <div class="bs-callout bs-callout-warning cont">
         <h4>паспорт изделий заказа КД</h4>
+        <?php echo $overlayRight;?>
 
         <p> <a>
             <!-- <img src="./dist/images/5000301-01-001-pasport-izdeliy-zakaza-kd.png" class="center-block img-rounded img-thumbnail" -->
             <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
             data-src="<?php echo $scan[2]->getNameFile();//kd_2 ?>" 
+            data-pattern="<?php echo $scan[2]->getPattern(); ?>"
+            data-path="<?php echo $path; ?>"
             class="center-block img-rounded img-thumbnail b-lazy img-album" 
             data-toggle="modal" 
             data-target="#myModal" 
@@ -84,11 +80,14 @@ $scan[5] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_5(.*)/');
       <h2 id="reestr-razdelov-kd">&nbsp;</h2>
       <div class="bs-callout bs-callout-warning cont">
         <h4>реестр разделов КД</h4>
+        <?php echo $overlayRight;?>
 
         <p> <a>
             <!-- <img src="./dist/images/5000301-01-001-reestr-razdelov-kd.png" class="center-block img-rounded img-thumbnail" -->
             <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
             data-src="<?php echo $scan[3]->getNameFile();?>" 
+            data-pattern="<?php echo $scan[3]->getPattern(); ?>"
+            data-path="<?php echo $path; ?>"
             class="center-block img-rounded img-thumbnail b-lazy img-album" 
             data-toggle="modal" 
             data-target="#myModal" 
@@ -113,11 +112,14 @@ $scan[5] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_5(.*)/');
       <h2 id="specifikaciya-konstruktorskaya">&nbsp;</h2>
       <div class="bs-callout bs-callout-warning cont">
         <h4>Спецификация конструкторская</h4>
+        <?php echo $overlayRight;?>
 
         <p> <a>
             <!-- <img src="./dist/images/5000301-01-001-reestr-razdelov-kd.png" class="center-block img-rounded img-thumbnail" -->
             <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
             data-src="<?php echo $scan[4]->getNameFile();?>" 
+            data-pattern="<?php echo $scan[4]->getPattern(); ?>"
+            data-path="<?php echo $path; ?>"
             class="center-block img-rounded img-thumbnail b-lazy img-album" 
             data-toggle="modal" 
             data-target="#myModal" 
@@ -140,11 +142,14 @@ $scan[5] = new class_ScanDir("./dist/images/kd/", '/shablon-kd_5(.*)/');
       <h2 id="list-titulnyy-vpi">&nbsp;</h2>
       <div class="bs-callout bs-callout-warning cont">
         <h4>5000304-01-000 лист титульный ВПИ ПЗ</h4>
+        <?php echo $overlayRight;?>
         <div class="overlay"></div>
         <p> <a>
             <!-- <img src="./dist/images/list-titulnyy-vpi_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
             <img src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
             data-src="<?php echo $scan[5]->getNameFile();?>" 
+            data-pattern="<?php echo $scan[5]->getPattern(); ?>"
+            data-path="<?php echo $path; ?>"
             class="center-block img-rounded img-thumbnail b-lazy img-album" 
             data-toggle="modal" 
             data-target="#myModal" 
