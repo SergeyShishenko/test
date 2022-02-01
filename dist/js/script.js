@@ -604,7 +604,7 @@ $('#upload').on('click', function() {
     });
 
     // form_data.append('file', file_data);
-    // form_data.append('files', files);
+    form_data.append('xls', 'xls');
     // alert(form_data.values);
     $.ajax({
         url: 'upload.php',

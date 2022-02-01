@@ -81,7 +81,7 @@ if (!isset($_FILES[$input_name])) {
                     }
 
 
-                    echo "ok -> " . $newfile. "\n";
+                    echo "ok -> ".$_POST['xls'] ."  ". $newfile. "\n";
                 }
             }
         }

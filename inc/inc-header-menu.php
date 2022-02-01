@@ -46,7 +46,7 @@
                     
                     <!-- <button id="upload">Upload</button> -->
 
-                    <div id="unl" data-dismiss="modal" >
+                    <div id="unl"  >
                     </div>
 
                 </div>
