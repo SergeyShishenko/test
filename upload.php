@@ -81,7 +81,8 @@ if (!isset($_FILES[$input_name])) {
                     }
 
 
-                    echo "ok -> ".$_POST['xls'] ."  ". $newfile. "\n";
+                    // echo "ok -> ".$_POST['xls'] ."  ". $newfile. "\n";
+                    echo json_encode(["ok", $newfile]);
                 }
             }
         }

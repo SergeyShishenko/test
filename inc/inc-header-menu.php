@@ -54,7 +54,7 @@
                     <!-- <a href="#openModal">Открыть модальное окно</a> -->
                     <!-- class="close" data-dismiss="modal" -->
                     <!-- <a href="#" class="btn btn-danger" id="DelSubmit">Удалить</a> -->
-                    <a href="#" class="btn btn-primary " data-dismiss="modal" id="upload">Upload</a>
+                    <a href="#" class="btn btn-primary "  id="upload">Upload</a>
                     <a href="#" class="btn btn-default" data-dismiss="modal">Закрыть</a>
                     <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="ChangeSubmit">Сохранить изменения</a> -->
                     <!-- <a href="#" class="btn btn-primary " data-dismiss="modal" id="AddSubmit">Добавить</a> -->

@@ -564,6 +564,8 @@ $('#myModal').on('show.bs.modal', function(event) {
     // <a href="img.jpg" type="button" class="btn btn-primary"download="img.jpg" id="im-download">Сохранить картинку</a>
 });
 
+var modalUnload = new Object();
+
 // при открытии модального окна
 $('#modalUnload').on('show.bs.modal', function(event) {
 
@@ -571,19 +573,27 @@ $('#modalUnload').on('show.bs.modal', function(event) {
     var button = $(event.relatedTarget);
     // извлечь информацию из атрибута data-content
     // var content = button.data('content'); 
-    var info = button.data('info');
+    modalUnload.info = button.data('info');
     // .parent().find("#image-gallery-image").attr("src")
-    var unl = button.parent().parent().find("img").attr('src');
-    var pattern = button.parent().parent().find("img").data('pattern');
-    var $path = button.parent().parent().find("img").data('path');
+    modalUnload.img = button.parent().parent().find("img");
+    modalUnload.unl = modalUnload.img.attr('src');
+    modalUnload.pattern = button.parent().parent().find("img").data('pattern');
+    modalUnload.path = button.parent().parent().find("img").data('path');
+    var iver = modalUnload.unl.lastIndexOf('-v');
+    var iexp = modalUnload.unl.lastIndexOf('.');
+    // alert(0 - iver);
+    modalUnload.ver = modalUnload.unl.slice(iver + 2, iexp);
+
+
     // вывести эту информацию в элемент, имеющий id="content"
     $("body").css("overflow-y", "scroll");
 
-    $(this).find('#modalUnloadLabel').text(info);
+    $(this).find('#modalUnloadLabel').text(modalUnload.info);
 
-    $(this).find('#unl').html('Текущий файл: ' + unl +
-        "<br>" + "Шаблон: " + pattern +
-        "<br>" + "Путь: " + $path);
+    $(this).find('#unl').html('Текущий файл: ' + modalUnload.unl +
+        "<br>" + "Шаблон: " + modalUnload.pattern +
+        "<br>" + "Путь: " + modalUnload.path +
+        "<br>" + "ver: " + modalUnload.ver);
 
 });
 
@@ -605,6 +615,7 @@ $('#upload').on('click', function() {
 
     // form_data.append('file', file_data);
     form_data.append('xls', 'xls');
+    form_data.append('ver', modalUnload.ver);
     // alert(form_data.values);
     $.ajax({
         url: 'upload.php',
@@ -616,7 +627,18 @@ $('#upload').on('click', function() {
         type: 'post',
         success: function(php_script_response) {
             // alert(php_script_response);
-            alert(php_script_response);
+
+            var response = $.parseJSON(php_script_response);
+
+            if (response[0] == "ok") {
+                
+                // alert("\"" +'./'+response[1]+"\"");
+                // alert(modalUnload.img.attr('src'));
+                // $(modalUnload.img).attr('src') = "\"" +'./'+response[1]+"\"";
+                $(modalUnload.img).attr('src','./'+response[1]);
+                $('#unl').html(response[1]);
+            }
+            // alert(php_script_response);
         }
     });
 });
