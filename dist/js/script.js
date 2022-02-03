@@ -1,4 +1,4 @@
-window.onresize = function() {
+window.onresize = function () {
     getPositionSearch();
     nvfn();
 
@@ -28,12 +28,12 @@ function browser1() {
 
 function browser2() {
     var BrowserDetect = {
-        init: function() {
+        init: function () {
             this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
             this.version = this.searchVersion(navigator.userAgent) || this.searchVersion(navigator.appVersion) || "an unknown version";
             this.OS = this.searchString(this.dataOS) || "an unknown OS";
         },
-        searchString: function(data) {
+        searchString: function (data) {
             for (var i = 0; i < data.length; i++) {
                 var dataString = data[i].string;
                 var dataProp = data[i].prop;
@@ -45,109 +45,109 @@ function browser2() {
                     return data[i].identity;
             }
         },
-        searchVersion: function(dataString) {
+        searchVersion: function (dataString) {
             var index = dataString.indexOf(this.versionSearchString);
             if (index == -1) return;
             return parseFloat(dataString.substring(index + this.versionSearchString.length + 1));
         },
         dataBrowser: [{
-                string: navigator.userAgent,
-                subString: "YaBrowser",
-                identity: "YaBrowser",
-                //   identity: "OPR", 
-                versionSearch: "YaBrowser"
-            },
-            {
-                string: navigator.userAgent,
-                subString: "Chrome",
-                identity: "Chrome"
-            },
-            {
-                string: navigator.userAgent,
-                subString: "OmniWeb",
-                versionSearch: "OmniWeb/",
-                identity: "OmniWeb"
-            },
-            {
-                string: navigator.vendor,
-                subString: "Apple",
-                identity: "Safari",
-                versionSearch: "Version"
-            },
-            {
-                string: navigator.userAgent,
-                //   identity: "Opera", 
-                identity: "OPR",
-                versionSearch: "Version"
-            },
+            string: navigator.userAgent,
+            subString: "YaBrowser",
+            identity: "YaBrowser",
+            //   identity: "OPR", 
+            versionSearch: "YaBrowser"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "Chrome",
+            identity: "Chrome"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "OmniWeb",
+            versionSearch: "OmniWeb/",
+            identity: "OmniWeb"
+        },
+        {
+            string: navigator.vendor,
+            subString: "Apple",
+            identity: "Safari",
+            versionSearch: "Version"
+        },
+        {
+            string: navigator.userAgent,
+            //   identity: "Opera", 
+            identity: "OPR",
+            versionSearch: "Version"
+        },
 
-            {
-                string: navigator.vendor,
-                subString: "iCab",
-                identity: "iCab"
-            },
-            {
-                string: navigator.vendor,
-                subString: "KDE",
-                identity: "Konqueror"
-            },
-            {
-                string: navigator.userAgent,
-                subString: "Firefox",
-                identity: "Firefox"
-            },
-            {
-                string: navigator.vendor,
-                subString: "Camino",
-                identity: "Camino"
-            },
-            {
-                /* For Newer Netscapes (6+) */
-                string: navigator.userAgent,
-                subString: "Netscape",
-                identity: "Netscape"
-            },
-            {
-                string: navigator.userAgent,
-                subString: "MSIE",
-                identity: "Internet Explorer",
-                versionSearch: "MSIE"
-            },
-            {
-                string: navigator.userAgent,
-                subString: "Gecko",
-                identity: "Mozilla",
-                versionSearch: "rv"
-            },
-            {
-                /* For Older Netscapes (4-) */
-                string: navigator.userAgent,
-                subString: "Mozilla",
-                identity: "Netscape",
-                versionSearch: "Mozilla"
-            }
+        {
+            string: navigator.vendor,
+            subString: "iCab",
+            identity: "iCab"
+        },
+        {
+            string: navigator.vendor,
+            subString: "KDE",
+            identity: "Konqueror"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "Firefox",
+            identity: "Firefox"
+        },
+        {
+            string: navigator.vendor,
+            subString: "Camino",
+            identity: "Camino"
+        },
+        {
+            /* For Newer Netscapes (6+) */
+            string: navigator.userAgent,
+            subString: "Netscape",
+            identity: "Netscape"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "MSIE",
+            identity: "Internet Explorer",
+            versionSearch: "MSIE"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "Gecko",
+            identity: "Mozilla",
+            versionSearch: "rv"
+        },
+        {
+            /* For Older Netscapes (4-) */
+            string: navigator.userAgent,
+            subString: "Mozilla",
+            identity: "Netscape",
+            versionSearch: "Mozilla"
+        }
         ],
 
         dataOS: [{
-                string: navigator.platform,
-                subString: "Win",
-                identity: "Windows"
-            },
-            {
-                string: navigator.platform,
-                subString: "Mac",
-                identity: "Mac"
-            },
-            {
-                string: navigator.userAgent,
-                subString: "iPhone",
-                identity: "iPhone/iPod"
-            },
-            {
-                string: navigator.platform,
-                subString: "Linux",
-                identity: "Linux"
-            }
+            string: navigator.platform,
+            subString: "Win",
+            identity: "Windows"
+        },
+        {
+            string: navigator.platform,
+            subString: "Mac",
+            identity: "Mac"
+        },
+        {
+            string: navigator.userAgent,
+            subString: "iPhone",
+            identity: "iPhone/iPod"
+        },
+        {
+            string: navigator.platform,
+            subString: "Linux",
+            identity: "Linux"
+        }
         ]
 
     };
@@ -277,14 +277,14 @@ function getClientHeight() {
 }
 
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     getPositionSearch();
     getClientWidth();
 
 
 
-    $(".user-toggle").click(function() { // задаем функцию при нажатиии на элемент с классом toggle
+    $(".user-toggle").click(function () { // задаем функцию при нажатиии на элемент с классом toggle
         $(".profile").toggle(); //  скрываем, или отображаем все элементы <div>
     });
 
@@ -306,40 +306,40 @@ nvfn();
 //  var delta =0;
 bottomUl = 0;
 // var nthchild =1;
-$(function() {
+$(function () {
     // $('#navsub  li.menu2 ul').hide();
     // $('#navsub  li.menu ul').hide();
-    $('#navsub  li.menu').not('.disabled').hover(function() {
-            var w = getClientWidth(); // текущая ширина экрана 
+    $('#navsub  li.menu').not('.disabled').hover(function () {
+        var w = getClientWidth(); // текущая ширина экрана 
 
-            if (w > 991) {
-                // delta2 = 0; // счетчик прокрутки колеса sub_menu2
-                var colLeftMenu = $(this).parent().children().length;
-                var col = $(this).index() + 1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                var UlSubMenu = $(this).children('ul').children();
-                var child1 = UlSubMenu.length;
-                bottomUl = (colLeftMenu - col) * 40;
-                if (child1 > col) { bottomUl = bottomUl - (child1 - col) * 40; }
-                //    console.log("количество левое меню - "+colLeftMenu);
-                //    console.log("номер по порядку выбранного элемента списка - "+col);      
-                //    console.log("количество дочерних элементов - "+child1);   
-                //    console.log("bottomUl : "+bottomUl);   
-                $(this).find('ul.sub_menu').show();
+        if (w > 991) {
+            // delta2 = 0; // счетчик прокрутки колеса sub_menu2
+            var colLeftMenu = $(this).parent().children().length;
+            var col = $(this).index() + 1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            var UlSubMenu = $(this).children('ul').children();
+            var child1 = UlSubMenu.length;
+            bottomUl = (colLeftMenu - col) * 40;
+            if (child1 > col) { bottomUl = bottomUl - (child1 - col) * 40; }
+            //    console.log("количество левое меню - "+colLeftMenu);
+            //    console.log("номер по порядку выбранного элемента списка - "+col);      
+            //    console.log("количество дочерних элементов - "+child1);   
+            //    console.log("bottomUl : "+bottomUl);   
+            $(this).find('ul.sub_menu').show();
 
-                //    var d = getMouseWeel();
-                //    console.log(d);
-                // console.log(dy);
+            //    var d = getMouseWeel();
+            //    console.log(d);
+            // console.log(dy);
 
-                UlSubMenu.parent().css("bottom", bottomUl + "px");
-                $(this).find('ul.sub_menu > li:nth-child(1)').addClass('triangle');
-                var triangle = (child1 - 1) * 40 + 11;
-                if (child1 > col) { triangle = (col - 1) * 40 + 11; }
-                $('head').append('<style id="triangle" data-top="' + triangle + '">.triangle::before{top:' + triangle + 'px !important;}.triangle::after{top:' + triangle + 'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');
+            UlSubMenu.parent().css("bottom", bottomUl + "px");
+            $(this).find('ul.sub_menu > li:nth-child(1)').addClass('triangle');
+            var triangle = (child1 - 1) * 40 + 11;
+            if (child1 > col) { triangle = (col - 1) * 40 + 11; }
+            $('head').append('<style id="triangle" data-top="' + triangle + '">.triangle::before{top:' + triangle + 'px !important;}.triangle::after{top:' + triangle + 'px !important;}a.list-group-item.active::after{border:none !important;border-right:none !important}</style>');
 
-            }
-        },
+        }
+    },
 
-        function() {
+        function () {
             // console.log("------------");
             $(this).find('ul.sub_menu').hide();
             $(this).find('ul.sub_menu > li:nth-child(1)').removeClass('triangle');
@@ -348,7 +348,7 @@ $(function() {
     ); //hover
 
     $('#navsub  li.menu2').not('.disabled').hover(
-        function() {
+        function () {
             var colLeftMenu = $(this).parent().children().length;
             var col = $(this).index() + 1; // номер по порядку выбранного элемента списка!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             var UlSubMenu = $(this).children('ul').children();
@@ -375,7 +375,7 @@ $(function() {
             $('head').append('<style id="triangle2" data-top="' + triangle2 + '">.triangle2::before{top:' + triangle2 + 'px !important;}.triangle2::after{top:' + triangle2 + 'px !important;}</style>');
 
         },
-        function() {
+        function () {
             // console.log($(this));
             delta2 = 0;
             $(this).find('ul.sub_menu2').hide();
@@ -390,7 +390,7 @@ var delta = 0;
 var sub_menu2hover = false;
 var bottomMIN1 = 0;
 
-$('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e) {
+$('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function (e) {
 
     // var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
     if (!sub_menu2hover) {
@@ -473,7 +473,7 @@ $('.sub_menu').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmouse
 var delta2 = 0;
 var bottomMIN = 0;
 // var bottomMAX = -929;  
-$('.sub_menu2').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function(e) {
+$('.sub_menu2').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmousewheel', function (e) {
     var dy = e.originalEvent.deltaY || e.originalEvent.wheelDelta;
     // var UlSubMenu = $(this ).children();
     // var child1 =UlSubMenu.length;
@@ -523,12 +523,12 @@ $('.sub_menu2').bind('mousewheel DOMMouseScroll MozMousePixelScroll wheel onmous
 
 
 $(".sub_menu2").hover(
-    function() {
+    function () {
         //   $( this ).addClass( "hover" );
         // console.log('addClass( "hover" )');
         sub_menu2hover = true;
     },
-    function() {
+    function () {
         //   $( this ).removeClass( "hover" );
         // console.log('removeClass( "hover" )');
         sub_menu2hover = false;
@@ -538,12 +538,8 @@ $(".sub_menu2").hover(
 
 
 //=====================================================
-
-
-
-
 // при открытии модального окна
-$('#myModal').on('show.bs.modal', function(event) {
+$('#myModal').on('show.bs.modal', function (event) {
 
     // получить кнопку, которая его открыло
     var button = $(event.relatedTarget);
@@ -564,85 +560,74 @@ $('#myModal').on('show.bs.modal', function(event) {
     // <a href="img.jpg" type="button" class="btn btn-primary"download="img.jpg" id="im-download">Сохранить картинку</a>
 });
 
-var modalUnload = new Object();
 
-// при открытии модального окна
-$('#modalUnload').on('show.bs.modal', function(event) {
+//=====================================================
 
-    // получить кнопку, которая его открыло
-    var button = $(event.relatedTarget);
-    // извлечь информацию из атрибута data-content
-    // var content = button.data('content'); 
-    modalUnload.info = button.data('info');
-    // .parent().find("#image-gallery-image").attr("src")
-    modalUnload.img = button.parent().parent().find("img");
-    modalUnload.unl = modalUnload.img.attr('src');
-    modalUnload.pattern = button.parent().parent().find("img").data('pattern');
-    modalUnload.path = button.parent().parent().find("img").data('path');
-    var iver = modalUnload.unl.lastIndexOf('-v');
-    var iexp = modalUnload.unl.lastIndexOf('.');
-    // alert(0 - iver);
-    modalUnload.ver = modalUnload.unl.slice(iver + 2, iexp);
+    var modalUnload = new Object();
 
+    // при открытии модального окна
+    $('#modalUnload').on('show.bs.modal', function (event) {
 
-    // вывести эту информацию в элемент, имеющий id="content"
-    $("body").css("overflow-y", "scroll");
-
-    $(this).find('#modalUnloadLabel').text(modalUnload.info);
-
-    $(this).find('#unl').html('Текущий файл: ' + modalUnload.unl +
-        "<br>" + "Шаблон: " + modalUnload.pattern +
-        "<br>" + "Путь: " + modalUnload.path +
-        "<br>" + "ver: " + modalUnload.ver);
-
-});
+        // получить кнопку, которая его открыло
+        var button = $(event.relatedTarget); 
+        modalUnload.info = button.data('info');  
+        modalUnload.img = button.parent().parent().find("img");
+        modalUnload.unl = modalUnload.img.attr('src');
+        modalUnload.pattern = button.parent().parent().find("img").data('pattern');
+        modalUnload.path = button.parent().parent().find("img").data('path');
+        modalUnload.xls = button.parent().parent().find("img").data('xls');
+        var iver = modalUnload.unl.lastIndexOf('-v');
+        var iexp = modalUnload.unl.lastIndexOf('.');  
+        modalUnload.ver = modalUnload.unl.slice(iver + 2, iexp);
 
 
-$('#upload').on('click', function() {
-    // var file_data = $('#sortpicture').prop('files');
-    // var formData = new FormData();
-    // $("form#edit-account").serializeArray().forEach(function(field) {
-    //     formData.append(field.name, field.value)
-    // });
-    var form_data = new FormData();
-    // var file_data = $('#sortpicture').prop('files');
-    // var files = [];
-    // alert(file_data.length);
-    $.each($('#sortpicture')[0].files, function(key, input) {
-        // alert(key);
-        form_data.append('file[]', input);
+        // вывести эту информацию в элемент, имеющий id="content"
+        $("body").css("overflow-y", "scroll");
+
+        $(this).find('#modalUnloadLabel').text(modalUnload.info);
+
+        $(this).find('#unl').html('Текущий файл: ' + modalUnload.unl +
+            "<br>" + "Шаблон: " + modalUnload.pattern +
+            "<br>" + "Путь: " + modalUnload.path +
+            "<br>" + "xls: " + modalUnload.xls +
+            "<br>" + "ver: " + modalUnload.ver);
+
     });
 
-    // form_data.append('file', file_data);
-    form_data.append('xls', 'xls');
-    form_data.append('ver', modalUnload.ver);
-    // alert(form_data.values);
-    $.ajax({
-        url: 'upload.php',
-        dataType: 'text',
-        cache: false,
-        contentType: false,
-        processData: false,
-        data: form_data,
-        type: 'post',
-        success: function(php_script_response) {
-            // alert(php_script_response);
 
-            var response = $.parseJSON(php_script_response);
-
-            if (response[0] == "ok") {
-                
-                // alert("\"" +'./'+response[1]+"\"");
-                // alert(modalUnload.img.attr('src'));
-                // $(modalUnload.img).attr('src') = "\"" +'./'+response[1]+"\"";
-                $(modalUnload.img).attr('src','./'+response[1]);
+    $('#upload').on('click', function () {   
+        var form_data = new FormData();   
+        $.each($('#sortpicture')[0].files, function (key, input) {     
+            form_data.append('file[]', input);
+        });
+        
+        form_data.append('xls', modalUnload.xls);
+        form_data.append('ver', modalUnload.ver);
+        form_data.append('pattern', modalUnload.pattern);
+        form_data.append('path', modalUnload.path);
+        
+        $.ajax({
+            url: 'upload.php',
+            dataType: 'text',
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: form_data,
+            type: 'post',
+            success: function (php_script_response) { 
+                var response = $.parseJSON(php_script_response);
+                if (response[0] == "ok") {
+                    const allowIMG = ['png', 'jpeg', 'jpg'];               
+                    if (allowIMG.includes(response[2])) {
+                        $(modalUnload.img).attr('src', './' + response[1]);
+                    }
+                }
                 $('#unl').html(response[1]);
+                
             }
-            // alert(php_script_response);
-        }
+        });
     });
-});
-
+//=====================================================
 
 
 
@@ -660,7 +645,7 @@ function onScroll() {
     // console.log(nv);
     // $(".search_result").hide();
     var scroll_top = $(document).scrollTop();
-    $(menu_selector + " a").not("ul.dropdown-menu li a").each(function() {
+    $(menu_selector + " a").not("ul.dropdown-menu li a").each(function () {
         var hash = $(this).attr("href");
         // alert(hash);
         var target = $(hash);
@@ -681,7 +666,7 @@ function onScroll() {
 
 $(document).on("scroll", onScroll);
 
-$("a[href^=#]").not("a[href=#carousel],a.thumbb").click(function(e) {
+$("a[href^=#]").not("a[href=#carousel],a.thumbb").click(function (e) {
     // alert();
     e.preventDefault();
 
@@ -696,13 +681,13 @@ $("a[href^=#]").not("a[href=#carousel],a.thumbb").click(function(e) {
 
         $("html, body").animate({
             scrollTop: target.offset().top - nv
-        }, 500, function() {
+        }, 500, function () {
             window.location.hash = hash;
             $(document).on("scroll", onScroll);
         });
         $("html, body").animate({
             scrollTop: target.offset().top - nv
-        }, 500, function() {
+        }, 500, function () {
             window.location.hash = hash;
             $(document).on("scroll", onScroll);
         });
@@ -853,9 +838,9 @@ $("a[href^=#]").not("a[href=#carousel],a.thumbb").click(function(e) {
 
 
 // кнопки при наведении на изображение
-$(function() {
+$(function () {
     $('.cont').hover(
-        function() {
+        function () {
             $(this).find(".overlay .btn").remove();
             // получить кнопку, которая его открыло
             var button = $(this).find("img");
@@ -886,7 +871,7 @@ $(function() {
             //    var loge = xls.slice(xls.lastIndexOf("/") + 1);
             //    console.log(loge);
             // alert( log);
-            if (sample !== "non" && typeof(sample) !== "undefined" && sample !== "" && sample !== null) {
+            if (sample !== "non" && typeof (sample) !== "undefined" && sample !== "" && sample !== null) {
                 //  var clickedEXP = sample.split(":"); //Разбиваем строку (Split работает аналогично PHP explode)
                 //  var EXP = clickedEXP[1]; //и получаем тип
                 //  console.log(EXP);
@@ -898,7 +883,7 @@ $(function() {
 
 
 
-            if (spng !== "noPNG" && typeof(im) !== "undefined") {
+            if (spng !== "noPNG" && typeof (im) !== "undefined") {
                 $(this).find('.overlay').append(
                     // '<a href="'+im+'"  type="button" class="btn btn-info im-download"download="'+im+'"  id="im-download1"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
                     '<a href="' + im + '"  type="button" class="btn btn-info im-download" download="' + alt + im.slice(im.lastIndexOf(".")) + '" title= "Скачать" ><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> PNG</a>'
@@ -906,43 +891,43 @@ $(function() {
             }
 
 
-            if (dwg !== "non" && typeof(dwg) !== "undefined" && dwg !== "" && dwg !== null) {
+            if (dwg !== "non" && typeof (dwg) !== "undefined" && dwg !== "" && dwg !== null) {
                 $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                     '<a href="' + "./dist/files/dwg/" + dwg.slice(dwg.lastIndexOf("/") + 1) + '"  type="button" class="btn btn-info im-download" download="' + alt + dwg.slice(dwg.lastIndexOf(".")) + '" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                 );
             }
-            if (xls !== "non" && typeof(xls) != "undefined" && xls !== "" && xls !== null) {
+            if (xls !== "non" && typeof (xls) != "undefined" && xls !== "" && xls !== null) {
                 $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                     '<a href="' + "./dist/files/xls/" + xls.slice(xls.lastIndexOf("/") + 1) + '"  type="button" class="btn btn-info im-download" download="' + alt + xls.slice(xls.lastIndexOf(".")) + '" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
                 );
             }
-            if (doc !== "non" && typeof(doc) != "undefined" && doc !== "" && doc !== null) {
+            if (doc !== "non" && typeof (doc) != "undefined" && doc !== "" && doc !== null) {
                 $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                     '<a href="' + "./dist/files/doc/" + doc.slice(doc.lastIndexOf("/") + 1) + '"  type="button" class="btn btn-info im-download" download="' + alt + doc.slice(doc.lastIndexOf(".")) + '" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
                 );
             }
-            if (yxls !== "non" && typeof(yxls) != "undefined" && yxls !== "" && yxls !== null) {
+            if (yxls !== "non" && typeof (yxls) != "undefined" && yxls !== "" && yxls !== null) {
                 $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                     '<a href="' + "./dist/files/yri/" + yxls.slice(yxls.lastIndexOf("/") + 1) + '"  type="button" class="btn btn-info im-download" download="' + alt + yxls.slice(yxls.lastIndexOf(".")) + '" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> XLS</a>'
                 );
             }
-            if (ydoc !== "non" && typeof(ydoc) != "undefined" && ydoc !== "" && ydoc !== null) {
+            if (ydoc !== "non" && typeof (ydoc) != "undefined" && ydoc !== "" && ydoc !== null) {
                 $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                     '<a href="' + "./dist/files/yri/" + ydoc.slice(ydoc.lastIndexOf("/") + 1) + '"  type="button" class="btn btn-info im-download" download="' + alt + ydoc.slice(ydoc.lastIndexOf(".")) + '" title= "Скачать"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DOC</a>'
                 );
             }
-            if (pdf !== "non" && typeof(pdf) != "undefined" && pdf !== "" && pdf !== null) {
+            if (pdf !== "non" && typeof (pdf) != "undefined" && pdf !== "" && pdf !== null) {
                 $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                     '<a href="' + "./dist/files/pdf/" + pdf.slice(pdf.lastIndexOf("/") + 1) + '"  target="_blank" type="button" class="btn btn-info im-download" title= "Открыть PDF в новой вкладке" ><i class="glyphicon glyphicon-open" aria-hidden="true"></i> PDF</a>'
                 );
             }
-            if (ypdf !== "non" && typeof(ypdf) != "undefined" && ypdf !== "" && ypdf !== null) {
+            if (ypdf !== "non" && typeof (ypdf) != "undefined" && ypdf !== "" && ypdf !== null) {
                 $(this).find('.overlay').append(
                     //  '<a href="'+dwg+'"  type="button" class="btn btn-info im-download"download="'+dwg+'" id="im-download2"><i class="glyphicon glyphicon glyphicon-save" aria-hidden="true"></i> DWG</a>'
                     '<a href="' + "./dist/files/yri/" + ypdf.slice(ypdf.lastIndexOf("/") + 1) + '"  target="_blank" type="button" class="btn btn-info im-download" title= "Открыть PDF в новой вкладке" ><i class="glyphicon glyphicon-open" aria-hidden="true"></i> PDF</a>'
@@ -962,7 +947,7 @@ $(function() {
 
             $(this).find(".overlay .btn").fadeIn(600);
         },
-        function() {
+        function () {
             $(this).find(".overlay .btn").fadeOut(600);
 
 
@@ -998,8 +983,8 @@ function PrintImg(src, alt) {
 
 
 // свернуть поиск
-jQuery(function($) {
-    $(document).mouseup(function(e) { // событие клика по веб-документу
+jQuery(function ($) {
+    $(document).mouseup(function (e) { // событие клика по веб-документу
         var div = $("#search"); // тут указываем ID элемента
         // если клик был не по нашему блоку
         if (!div.is(e.target) && div.has(e.target).length === 0) { // и не по его дочерним элементам 
@@ -1021,7 +1006,7 @@ jQuery(function($) {
 // кнопка очистки поиска
 
 
-(function($) {
+(function ($) {
     var input_class = 'zbz-input-clearable',
         input_class_x = input_class + '__x',
         input_class_x_over = input_class + '__x-over',
@@ -1038,12 +1023,12 @@ jQuery(function($) {
         return v ? 'addClass' : 'removeClass';
     }
 
-    $(document).on(event_names, input_selector, function() {
+    $(document).on(event_names, input_selector, function () {
         $(this)[tog(this.value)](input_class_x);
 
     });
 
-    $(document).on('mousemove', input_selector_x, function(e) {
+    $(document).on('mousemove', input_selector_x, function (e) {
         var input = $(this),
             input_width = this.offsetWidth,
             input_height = this.offsetHeight,
@@ -1066,34 +1051,34 @@ jQuery(function($) {
         $(this)[tog(is_over_cross)](input_class_x_over);
     });
 
-    $(document).on('click', input_selector_x_over, function() {
+    $(document).on('click', input_selector_x_over, function () {
         $(this).removeClass([input_class_x, input_class_x_over].join(' ')).val('').trigger('input');
         $('span.zbz').css('visibility', 'visible');
     });
 
-    $(function() {
+    $(function () {
         $(input_selector).trigger(event_main);
 
     });
 
 })(jQuery);
 
-$(function() {
-    $('#recall').submit(function(e) {
+$(function () {
+    $('#recall').submit(function (e) {
         e.preventDefault();
         var data = $(this).serialize() + '&login=' + getCookie("login");
         $.ajax({
             url: 'users/mail.php',
             type: 'POST',
             data: data,
-            beforeSend: function() {
+            beforeSend: function () {
                 $('#submit').next().text('Отправляю...');
             },
-            success: function(res) {
+            success: function (res) {
                 $('#recall').find('input').val('');
                 $('#submit').next().html(res);
             },
-            error: function() {
+            error: function () {
                 alert('Ошибка!');
             }
         });
@@ -1101,18 +1086,18 @@ $(function() {
 });
 
 
-$(".navbar-toggle").click(function() { // задаем функцию при нажатиии на элемент с классом toggle
+$(".navbar-toggle").click(function () { // задаем функцию при нажатиии на элемент с классом toggle
     //  скрываем, или отображаем все элементы <div>
     $(".navbar-form").toggle();
 });
 
-$(".left-menu").click(function() { // задаем функцию при нажатиии на элемент с классом toggle
+$(".left-menu").click(function () { // задаем функцию при нажатиии на элемент с классом toggle
     //  скрываем, или отображаем все элементы <div>
     $("#navsub.bs-sidebar").toggleClass('click-lef-tmenu', 'click-lef-tmenu-in');
 });
 //  #navsub.bs-sidebar .toggleClass('click-leftmenu');
 
-$('#other').click(function() { // задаем функцию при нажатиии на элемент с классом toggle
+$('#other').click(function () { // задаем функцию при нажатиии на элемент с классом toggle
     //  скрываем, или отображаем все элементы <div>
     //    alert();
     $('.dropdown-menu').not($(this).parent().find('.dropdown-menu')).hide();
