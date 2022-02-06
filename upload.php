@@ -1,6 +1,7 @@
 <?php
 // Название <input type="file">
 $input_name = 'file';
+$response = [];
 
 // Разрешенные расширения файлов.
 $allow = array('png', 'jpeg', 'jpg', 'xls', 'xlsx');
@@ -24,7 +25,8 @@ $deny = array(
 // echo var_dump($_FILES['file']);exit;
 // echo var_dump($_POST);exit;
 if (!isset($_FILES[$input_name])) {
-    echo json_encode(["err",'Файлы не загружены.']);
+    $response[] = ["err", 'Файлы не загружены.', null];
+    // echo json_encode(["err",'Файлы не загружены.', null]);
 } else {
     // Преобразуем массив $_FILES в удобный вид для перебора в foreach.
     $files = array();
@@ -46,9 +48,11 @@ if (!isset($_FILES[$input_name])) {
 
         // Проверим на ошибки загрузки.
         if (!empty($file['error']) || empty($file['tmp_name'])) {
-            echo json_encode(["err",'Не удалось загрузить файл.']);
+            // echo json_encode(["err", 'Не удалось загрузить файл.', null]);
+            $response[] =  ["err", 'Не удалось загрузить файл.', null];
         } elseif ($file['tmp_name'] == 'none' || !is_uploaded_file($file['tmp_name'])) {
-            echo json_encode(["err",'Не удалось загрузить файл.']);
+            // echo json_encode(["err", 'Не удалось загрузить файл.', null]);
+            $response[] =  ["err", 'Не удалось загрузить файл.', null];
         } else {
 
             // $pattern = "[^a-zа-яё0-9,~!@#%^-_\$\?\(\)\{\}\[\]\.]";
@@ -62,11 +66,14 @@ if (!isset($_FILES[$input_name])) {
             $parts = pathinfo($name);
             $extension = strtolower($parts['extension']);
             if (empty($name) || empty($parts['extension'])) {
-                echo json_encode(["err",'Недопустимый тип файла err#1']);
+                // echo json_encode(["err", 'Недопустимый тип файла err#1', null]);
+                $response[] =  ["err", 'Недопустимый тип файла err#1', null];
             } elseif (!empty($allow) && !in_array($extension, $allow)) {
-                echo json_encode(["err",'Недопустимый тип файла err#2']);
+                // echo json_encode(["err", 'Недопустимый тип файла err#2', null]);
+                $response[] =  ["err", 'Недопустимый тип файла err#2', null];
             } elseif (!empty($deny) && in_array($extension, $deny)) {
-                echo json_encode(["err",'Недопустимый тип файла err#3']);
+                // echo json_encode(["err", 'Недопустимый тип файла err#3', null]);
+                $response[] =  ["err", 'Недопустимый тип файла err#3', null];
             } else {
 
                 if ($xlsFlag) {
@@ -95,12 +102,15 @@ if (!isset($_FILES[$input_name])) {
                         //     }
                         // }
 
-                        echo json_encode(["ok", $newfile, $extension]);
+                        // echo json_encode(["ok", $newfile, $extension]);
+                        $response[] =  ["ok", $newfile, $extension];
                     }
                 } else {
-                    echo json_encode(["no","Загрузка отменена"]);
+                    // echo json_encode(["no", "Загрузка отменена", null]);
+                    $response[] =  ["no", "Загрузка отменена", null];
                 }
             }
         }
-    }
+    } //foreach
 }
+echo json_encode($response);

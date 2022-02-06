@@ -563,70 +563,75 @@ $('#myModal').on('show.bs.modal', function (event) {
 
 //=====================================================
 
-    var modalUnload = new Object();
+var modalUnload = new Object();
 
-    // при открытии модального окна
-    $('#modalUnload').on('show.bs.modal', function (event) {
+// при открытии модального окна
+$('#modalUnload').on('show.bs.modal', function (event) {
 
-        // получить кнопку, которая его открыло
-        var button = $(event.relatedTarget); 
-        modalUnload.info = button.data('info');  
-        modalUnload.img = button.parent().parent().find("img");
-        modalUnload.unl = modalUnload.img.attr('src');
-        modalUnload.pattern = button.parent().parent().find("img").data('pattern');
-        modalUnload.path = button.parent().parent().find("img").data('path');
-        modalUnload.xls = button.parent().parent().find("img").data('xls');
-        var iver = modalUnload.unl.lastIndexOf('-v');
-        var iexp = modalUnload.unl.lastIndexOf('.');  
-        modalUnload.ver = modalUnload.unl.slice(iver + 2, iexp);
+    // получить кнопку, которая его открыло
+    var button = $(event.relatedTarget);
+    modalUnload.info = button.data('info');
+    modalUnload.img = button.parent().parent().find("img");
+    modalUnload.unl = modalUnload.img.attr('src');
+    modalUnload.pattern = button.parent().parent().find("img").data('pattern');
+    modalUnload.path = button.parent().parent().find("img").data('path');
+    modalUnload.xls = button.parent().parent().find("img").data('xls');
+    var iver = modalUnload.unl.lastIndexOf('-v');
+    var iexp = modalUnload.unl.lastIndexOf('.');
+    modalUnload.ver = modalUnload.unl.slice(iver + 2, iexp);
 
 
-        // вывести эту информацию в элемент, имеющий id="content"
-        $("body").css("overflow-y", "scroll");
+    // вывести эту информацию в элемент, имеющий id="content"
+    $("body").css("overflow-y", "scroll");
 
-        $(this).find('#modalUnloadLabel').text(modalUnload.info);
+    $(this).find('#modalUnloadLabel').text(modalUnload.info);
 
-        $(this).find('#unl').html('Текущий файл: ' + modalUnload.unl +
-            "<br>" + "Шаблон: " + modalUnload.pattern +
-            "<br>" + "Путь: " + modalUnload.path +
-            "<br>" + "xls: " + modalUnload.xls +
-            "<br>" + "ver: " + modalUnload.ver);
+    $(this).find('#unl').html('Текущий файл: ' + modalUnload.unl +
+        "<br>" + "Шаблон: " + modalUnload.pattern +
+        "<br>" + "Путь: " + modalUnload.path +
+        "<br>" + "xls: " + modalUnload.xls +
+        "<br>" + "ver: " + modalUnload.ver);
 
+});
+
+
+$('#upload').on('click', function () {
+    var form_data = new FormData();
+    $.each($('#sortpicture')[0].files, function (key, input) {
+        form_data.append('file[]', input);
     });
 
+    form_data.append('xls', modalUnload.xls);
+    form_data.append('ver', modalUnload.ver);
+    form_data.append('pattern', modalUnload.pattern);
+    form_data.append('path', modalUnload.path);
 
-    $('#upload').on('click', function () {   
-        var form_data = new FormData();   
-        $.each($('#sortpicture')[0].files, function (key, input) {     
-            form_data.append('file[]', input);
-        });
-        
-        form_data.append('xls', modalUnload.xls);
-        form_data.append('ver', modalUnload.ver);
-        form_data.append('pattern', modalUnload.pattern);
-        form_data.append('path', modalUnload.path);
-        
-        $.ajax({
-            url: 'upload.php',
-            dataType: 'text',
-            cache: false,
-            contentType: false,
-            processData: false,
-            data: form_data,
-            type: 'post',
-            success: function (php_script_response) { 
-                var response = $.parseJSON(php_script_response);
-                if (response[0] == "ok") {
-                    const allowIMG = ['png', 'jpeg', 'jpg'];               
-                    if (allowIMG.includes(response[2])) {
-                        $(modalUnload.img).attr('src', './' + response[1]);
+    $.ajax({
+        url: 'upload.php',
+        dataType: 'text',
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: form_data,
+        type: 'post',
+        success: function (php_script_response) {
+            var response = $.parseJSON(php_script_response);
+
+            $('#unl').empty();
+
+            response.forEach(function (res) {
+                // console.log(res)               
+                if (res[0] == "ok") {
+                    const allowIMG = ['png', 'jpeg', 'jpg'];
+                    if (allowIMG.includes(res[2])) {
+                        $(modalUnload.img).attr('src', './' + res[1]);
                     }
                 }
-                $('#unl').html(response[1]);
-                
-            }
-        });
+                $('#unl').append('<br>'+res[1]);
+            });
+        }
     });
+});
 //=====================================================
 
 
