@@ -17,6 +17,8 @@ $scan[2] = new class_ScanDir($path, 'shablon-kd_2');
 $scan[3] = new class_ScanDir($path, 'shablon-kd_3');
 $scan[4] = new class_ScanDir($path, 'shablon-kd_4');
 $scan[5] = new class_ScanDir($path, 'shablon-kd_5');
+// $s=new class_ScanDir($path, 'shablon-kd_1');
+// $s->getScan();
 // echo $scan[0]->getNameFile();
 // $scanx = new class_ScanDir("./dist/files/xls/",'/list-titulnyy-alboma-obrazcov(.*)/');
 

@@ -208,7 +208,10 @@ tokens
  Classes\class_ScanDir.php
  dist\images\kd\
  dist\css\docs.css -> row:193
- upload
+
+
+ upload.php
+ script.js -> row:598-634
 
         
        
