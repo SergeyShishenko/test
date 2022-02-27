@@ -77,15 +77,17 @@ if (!isset($_FILES[$input_name])) {
             } else {
 
                 if ($xlsFlag) {
-                    $newfile = 'uploads/' . "my_new_filename." . $extension;
+                    // $newfile = 'uploads/' . "my_new_filename." . $extension;
+                    $newfile = $_POST['xls'];
                 }
 
 
-                if (in_array($extension, $allowIMG)) {
+                if (in_array($extension, $allowIMG)) { //'png', 'jpeg', 'jpg'
                     $r = +$_POST['ver'];
                     do {
                         $r += 1;
-                        $newfile = "uploads/" . $_POST['pattern'] . "-v" . $r . "." . $extension;
+                        // $newfile = "uploads/" . $_POST['pattern'] . "-v" . $r . "." . $extension;
+                        $newfile = $_POST['path'] . $_POST['pattern'] . "-v" . $r . "." . $extension;
                         // echo "rand -> " . $newfile . "\n";
                     } while (file_exists($newfile));
                     $imgFlag = true;
@@ -94,14 +96,15 @@ if (!isset($_FILES[$input_name])) {
                 // Перемещаем файл в директорию. 
                 if ($imgFlag || $xlsFlag) {
                     if (move_uploaded_file($file['tmp_name'], $newfile)) {
-                        // удаление
-                        // $delfile = 'uploads/my_new_filename-v1182837040.png';
-                        // if (file_exists($delfile)) {
-                        //     if (unlink($delfile)) {
-                        //         echo "delete -> " . $delfile . "\n";
-                        //     }
-                        // }
-
+                        if ($imgFlag) {
+                            // удаление
+                            $delfile = $_POST['path'] . $_POST['pattern'] . "-v" . $_POST['ver'] . "." . $extension;
+                            if (file_exists($delfile)) {
+                                if (unlink($delfile)) {
+                                    $response[] =  ["del", $delfile, null];
+                                }
+                            }
+                        }
                         // echo json_encode(["ok", $newfile, $extension]);
                         $response[] =  ["ok", $newfile, $extension];
                     }

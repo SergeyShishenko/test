@@ -18,7 +18,8 @@
                     </li>
 
                     <li <?php echo $assemblyUnitClass;?> class=" ">
-                    <!-- <li <?php// echo $assemblyUnitClass;?> class=" disabled"> -->
+                    <!-- <li 
+                    <?php // echo $assemblyUnitClass;?> class=" disabled"> -->
                     <a href="sborochnye-edinicy.php"  class="dblstr-menu">СБОРОЧНЫЕ <br>ЕДИНИЦЫ</a>
                     </li>
                     
@@ -43,7 +44,8 @@
                     <li <?php echo $materialyClass;?>>
                         <a href="materialy-steklo-zerkalo-vitrazh.php">МАТЕРИАЛЫ</a>
                     </li>
-                    <!-- <li <?php// echo $literaturaClass;?> class=" disabled">
+                    <!-- <li
+                     <?php // echo $literaturaClass;?> class=" disabled">
                     <a href="literatura-gost.php">ЛИТЕРАТУРА</a>
                     </li> -->
                     

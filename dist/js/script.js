@@ -559,7 +559,16 @@ $('#myModal').on('show.bs.modal', function (event) {
     // $(this).find('#im-download').html('<button type="button" class="btn btn-default" data-dismiss="modal">Close</button> <a href="'+im+'" type="button" class="btn btn-primary"download="'+im+'" >Сохранить картинку</a>'); 
     // <a href="img.jpg" type="button" class="btn btn-primary"download="img.jpg" id="im-download">Сохранить картинку</a>
 });
+$('#modalUnloadClose').on('click', function () {
+    $('#sortpicture').val("");
+    $('.content_block').hide();
+});
 
+$('.content_toggle').click(function () {
+    $('.content_block').slideToggle(300);
+    
+    return false;
+});
 
 //=====================================================
 
@@ -585,12 +594,13 @@ $('#modalUnload').on('show.bs.modal', function (event) {
     $("body").css("overflow-y", "scroll");
 
     $(this).find('#modalUnloadLabel').text(modalUnload.info);
-
-    $(this).find('#unl').html('Текущий файл: ' + modalUnload.unl +
+    xlslog = (typeof modalUnload.xls === 'undefined') ? "недоступен" : modalUnload.xls;
+    $(this).find('#unl').html('<br>Текущий файл изображения: ' + modalUnload.unl +
         "<br>" + "Шаблон: " + modalUnload.pattern +
         "<br>" + "Путь: " + modalUnload.path +
-        "<br>" + "xls: " + modalUnload.xls +
-        "<br>" + "ver: " + modalUnload.ver);
+        "<br>" + "Текущая версия файла: " + modalUnload.ver +
+        "<br>" + "Текущий файл excel: " + xlslog
+    );
 
 });
 
@@ -624,11 +634,22 @@ $('#upload').on('click', function () {
                 if (res[0] == "ok") {
                     const allowIMG = ['png', 'jpeg', 'jpg'];
                     if (allowIMG.includes(res[2])) {
-                        $(modalUnload.img).attr('src', './' + res[1]);
+                        // $(modalUnload.img).attr('src', './' + res[1]);
+                        // alert(res[1]);
+                        $(modalUnload.img).attr('src', res[1]);
                     }
+                    $('#unl').append('<br>Загружен: ' + res[1]);
+                } else if (res[0] == "del") {
+                    $('#unl').append('<br>Удалён: ' + res[1]);
+                } else if (res[0] == "no") {
+                    $('#unl').append('<br>Ошибка : ' + res[1]);
                 }
-                $('#unl').append('<br>'+res[1]);
+
+                $('.content_block').hide();
+
             });
+
+            // $('#sortpicture').val("");
         }
     });
 });
