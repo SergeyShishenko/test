@@ -13,6 +13,7 @@ $scan = [];
 $path = "./dist/images/dp/";
 $item;
 $scan[0] = null;
+
 // $scan = new class_ScanDir("./dist/images/",'shablon-alboma-dp_1');
 ?> 
                 <!-- main  -->
@@ -36,7 +37,7 @@ $scan[0] = null;
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
                                 data-src="<?php echo $scan[$item]->getNameFile();?>"             
                                 data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                data-path="<?php echo $path; ?>"  
+                                data-path="<?php echo $path; ?>" 
                                 class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
@@ -52,21 +53,13 @@ $scan[0] = null;
                       
 
                         <h2 id="shablon-alboma-dp_2">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" >
-                          <h4>Состав проекта</h4>
-                            <?php 
-                              $item=2;
-                              $scan[$item] = new class_ScanDir($path, 'shablon-alboma-dp_2');
-                              echo $overlayRight;
-                              ?> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Состав проекта</h4>
                                                    
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-dp_2.png" class="center-block img-rounded img-thumbnail" -->
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                 data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                 data-path="<?php echo $path; ?>" 
-                                 class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                data-src="./dist/images/shablon-alboma-dp_2-v2.png" 
+                                class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Состав проекта"                               
@@ -80,21 +73,13 @@ $scan[0] = null;
                         </div>
 
                         <h2 id="shablon-alboma-dp_3">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" >
-                          <h4>Ситуационый план</h4>
-                          <?php 
-                            $item=3;
-                            $scan[$item] = new class_ScanDir($path, 'shablon-alboma-dp_3');
-                            echo $overlayRight;
-                            ?> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Ситуационый план</h4>
                          <div class="overlay"></div>                          
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-dp_3.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                data-path="<?php echo $path; ?>" 
-                                 class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
+                                data-src="./dist/images/shablon-alboma-dp_3-v2.png" 
+                                class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Ситуационый план"                               
@@ -109,21 +94,13 @@ $scan[0] = null;
                         </div>
 
                         <h2 id="shablon-alboma-dp_4">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" >
-                          <h4>Обмерный план</h4>
-                            <?php 
-                              $item=4;
-                              $scan[$item] = new class_ScanDir($path, 'shablon-alboma-dp_4');
-                              echo $overlayRight;
-                              ?> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Обмерный план</h4>
                          <div class="overlay"></div>                          
                             <p> <a>
                                 <!-- <img src="./dist/images/shablon-alboma-dp_4.png" class="center-block img-rounded img-thumbnail" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                data-path="<?php echo $path; ?>" 
-                                 class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
+                                data-src="./dist/images/shablon-alboma-dp_4-v2.png" 
+                                class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"
                                  data-content="Обмерный план"                               
@@ -146,20 +123,12 @@ $scan[0] = null;
                             <h1 itemprop="name">ЛИСТ ТИТУЛЬНЫЙ ВПИ</h1>
                           </div>
                           <h2 id="list-titulnyy-vpi">&nbsp;</h2>
-                          <div class="bs-callout bs-callout-warning cont" >
-                            <h4>5000304-00-001 Лист титульный ВПИ ДП</h4>
-                            <?php 
-                              $item=5;
-                              $scan[$item] = new class_ScanDir($path, 'shablon-alboma-dp_5');
-                              echo $overlayRight;
-                              ?> 
+                          <div class="bs-callout bs-callout-warning cont" ><h4>5000304-00-001 Лист титульный ВПИ ДП</h4>
                             <div class="overlay"></div>                            
                               <p> <a>
                                   <!-- <img src="./dist/images/list-titulnyy-vpi_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
-                                  data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                  data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                  data-path="<?php echo $path; ?>" 
+                                  <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
+                                  data-src="./dist/images/shablon-alboma-dp_5-v2.png" 
                                   class="center-block img-rounded img-thumbnail b-lazy img-album"
                                   data-toggle="modal"
                                   data-target="#myModal"                                                                
@@ -182,22 +151,13 @@ $scan[0] = null;
                           <h1 itemprop="name">ВЕДОМОСТЬ ФУРНИТУРЫ</h1>
                         </div>
                         <h2 id="vedomost-furnitury">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" >
-                          <h4>Ведомость фурнитуры ДП</h4>
-                          <?php 
-                          $item=6;
-                          $scan[$item] = new class_ScanDir($path, '5000304-01-001-vedomost-furnitury-dp');
-                          echo $overlayRight;
-                          ?> 
-                           <div class="overlay"></div>                              
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Ведомость фурнитуры ДП</h4>
+                         <div class="overlay"></div>                              
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-furnitury_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                data-path="<?php echo $path; ?>" 
-                                class="center-block img-rounded img-thumbnail b-lazy img-album"
-                                
+                                data-src="./dist/images/5000304-01-001-vedomost-furnitury-dp-v1.png" 
+                                class="center-block img-rounded img-thumbnail b-lazy img-album"                                
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="Ведомость фурнитуры ДП"
@@ -218,21 +178,13 @@ $scan[0] = null;
                           <h1 itemprop="name">ВЕДОМОСТЬ СТЕКОЛ И ЗЕРКАЛ</h1>
                         </div>
                         <h2 id="vedomost-stekol-i-zerkal">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" >
-                          <h4>Ведомость стекол и зеркал ДП</h4>
-                          <?php 
-                          $item=7;
-                          $scan[$item] = new class_ScanDir($path, '5000304-02-001-vedomost-stekol-i-zerkal-dp');
-                          echo $overlayRight;
-                          ?> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Ведомость стекол и зеркал ДП</h4>
                          <div class="overlay"></div>                              
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-stekol-i-zerkal_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                 data-path="<?php echo $path; ?>" 
-                                 class="center-block img-rounded img-thumbnail b-lazy img-album"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
+                                data-src="./dist/images/5000304-02-001-vedomost-stekol-i-zerkal-dp-v1.png" 
+                                class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
                                  alt="Ведомость стекол и зеркал ДП"
@@ -254,21 +206,12 @@ $scan[0] = null;
                           <h1 itemprop="name">ВЕДОМОСТЬ МАТЕРИАЛЫ ПРОЧИЕ</h1>
                         </div>
                         <h2 id="vedomost-materialy-prochie">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" >
-                          <h4>Ведомость материалы прочие ДП</h4>
-                          <?php 
-                          $item=8;
-                          $scan[$item] = new class_ScanDir($path, '5000304-03-001-vedomost-materialy-prochie-dp');
-                          echo $overlayRight;
-                          ?> 
-                          
+                        <div class="bs-callout bs-callout-warning cont" ><h4>Ведомость материалы прочие ДП</h4>
                          <div class="overlay"></div>                              
                             <p> <a>
                                 <!-- <img src="./dist/images/vedomost-materialy-prochie_1.png" class="center-block img-rounded img-thumbnail b-lazy bar img-album" -->
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                data-path="<?php echo $path; ?>"
+                                data-src="./dist/images/5000304-03-001-vedomost-materialy-prochie-dp-v1.png" 
                                 class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
@@ -289,19 +232,11 @@ $scan[0] = null;
                           <h1 itemprop="name">ЛИСТ ТИТУЛЬНЫЙ ТЗ для проектировщика</h1>
                         </div>
                         <h2 id="list-titulnyy-TZ-proektirovshchika">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" >
-                          <h4>5000301-01-001 лист титульный ТЗ для проектировщика</h4>
-                          <?php 
-                          $item=9;
-                          $scan[$item] = new class_ScanDir($path, 'tz-dlya-proektirovshchika_1');
-                          echo $overlayRight;
-                          ?> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000301-01-001 лист титульный ТЗ для проектировщика</h4>
                          <div class="overlay"></div>                              
                             <p> <a>
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                data-path="<?php echo $path; ?>" 
+                                data-src="./dist/images/tz-dlya-proektirovshchika_1-v1.png" 
                                 class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
@@ -323,19 +258,11 @@ $scan[0] = null;
                           <h1 itemprop="name">ЛИСТ ТИТУЛЬНЫЙ ТЗ для строителей заказчика</h1>
                         </div>
                         <h2 id="list-titulnyy-TZ">&nbsp;</h2>
-                        <div class="bs-callout bs-callout-warning cont" >
-                          <h4>5000301-04-001 лист титульный ТЗ для строителей заказчика</h4>
-                          <?php 
-                            $item=10;
-                            $scan[$item] = new class_ScanDir($path, 'list-titulnyy-tz_1');
-                            echo $overlayRight;
-                          ?> 
+                        <div class="bs-callout bs-callout-warning cont" ><h4>5000301-04-001 лист титульный ТЗ для строителей заказчика</h4>
                          <div class="overlay"></div>                              
                             <p> <a>
-                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==                                 
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                data-path="<?php echo $path; ?>"
+                                <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
+                                data-src="./dist/images/list-titulnyy-tz_1-v2.png" 
                                 class="center-block img-rounded img-thumbnail b-lazy img-album"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                                
@@ -360,19 +287,12 @@ $scan[0] = null;
                         <!-- <h2 id="dok--385">&nbsp;</h2> -->
                         <div class="bs-callout bs-callout-warning cont" >
                             <!-- <h4>Док. № 385</h4> -->
-                            <?php 
-                             $item=11;
-                             $scan[$item] = new class_ScanDir($path, 'sostav-dp_1');
-                             echo $overlayRight;
-                            ?>
                                <div class="overlay"></div>                        
                             <p> <a>
                                
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                 data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                 data-path="<?php echo $path; ?>"
-                                 class="center-block img-rounded img-thumbnail b-lazy img-book"
+                                data-src="./dist/images/sostav-dp_1-v1.png" 
+                                class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="Лист1"
@@ -381,19 +301,11 @@ $scan[0] = null;
                                  data-spng="noPNG" 
                                    ></a>
                              </p>
-                             <div>
-                             <?php 
-                              $item=12;
-                              $scan[$item] = new class_ScanDir($path, 'sostav-dp_2');
-                              echo $overlayRight;
-                              ?>
                             <p> <a>
                                
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                 data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                 data-path="<?php echo $path; ?>" 
-                                 class="center-block img-rounded img-thumbnail b-lazy img-book"
+                                data-src="./dist/images/sostav-dp_2-v1.png" 
+                                class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="Лист2"
@@ -402,19 +314,10 @@ $scan[0] = null;
                                  data-spng="noPNG" 
                                    ></a>
                              </p>
-                            </div>
-                             <div>
-                             <?php 
-                              $item=13;
-                              $scan[$item] = new class_ScanDir($path, 'sostav-dp_3');
-                              echo $overlayRight;
-                              ?>
                             <p> <a>
                                
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                data-path="<?php echo $path; ?>" 
+                                data-src="./dist/images/sostav-dp_3-v1.png" 
                                 class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
@@ -424,7 +327,6 @@ $scan[0] = null;
                                  data-spng="noPNG" 
                                    ></a>
                              </p>
-                            </div>
 
                              
                              
@@ -441,18 +343,11 @@ $scan[0] = null;
                         <!-- <h2 id="dok--385">&nbsp;</h2> -->
                         <div class="bs-callout bs-callout-warning cont" >
                             <!-- <h4>Док. № 385</h4> -->
-                              <?php 
-                              $item=14;
-                              $scan[$item] = new class_ScanDir($path, 'info-o-teh-ustroystvah-predostavlyaemyh-zakazchikom_1');
-                              echo $overlayRight;
-                              ?>
                                <div class="overlay"></div>                        
                             <p> <a>
                                
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                data-path="<?php echo $path; ?>" 
+                                data-src="./dist/images/info-o-teh-ustroystvah-predostavlyaemyh-zakazchikom_1-v1.png" 
                                 class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
@@ -462,20 +357,11 @@ $scan[0] = null;
                                  data-spng="noPNG" 
                                    ></a>
                              </p> 
-                            
-                             <div>
-                             <?php 
-                              $item=15;
-                              $scan[$item] = new class_ScanDir($path, 'info-o-teh-ustroystvah-predostavlyaemyh-zakazchikom_2');
-                              echo $overlayRight;
-                              ?>
                             <p> <a>
                                
                                 <img  src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==  
-                                data-src="<?php echo $scan[$item]->getNameFile();?>"             
-                                 data-pattern="<?php echo $scan[$item]->getPattern(); ?>"
-                                 data-path="<?php echo $path; ?>" 
-                                 class="center-block img-rounded img-thumbnail b-lazy img-book"
+                                data-src="./dist/images/info-o-teh-ustroystvah-predostavlyaemyh-zakazchikom_2-v1.png" 
+                                class="center-block img-rounded img-thumbnail b-lazy img-book"
                                  data-toggle="modal"
                                  data-target="#myModal"                                                               
                                  alt="Лист2"
@@ -484,7 +370,6 @@ $scan[0] = null;
                                  data-spng="noPNG" 
                                    ></a>
                              </p> 
-                          </div>
                         </div>  
                        
                       </section>
