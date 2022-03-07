@@ -138,7 +138,7 @@ $scan[0] = null;
         <?php 
         $item=5;
         $scan[$item] = new class_ScanDir('./dist/images/kd/', 'shablon-kd_'.$item);
-        echo $overlayRight;
+       // echo $overlayRight;
         ?>
         <div class="overlay"></div>
         <p> <a>
